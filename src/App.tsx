@@ -3,7 +3,7 @@ import type { VocabData, Realm } from './types/vocab.ts';
 import { gameStore } from './store/gameStore.ts';
 import { soundEngine } from './audio/soundEngine.ts';
 import { WorldMap } from './components/WorldMap.tsx';
-import { GameCanvas } from './components/GameCanvas.tsx';
+import { SoulKnightGame } from './components/SoulKnightGame.tsx';
 import { Shop } from './components/Shop.tsx';
 import { Grimoire } from './components/Grimoire.tsx';
 import { 
@@ -204,7 +204,7 @@ export const App: React.FC = () => {
         )}
 
         {currentScreen === 'combat' && selectedRealm && (
-          <GameCanvas
+          <SoulKnightGame
             realm={selectedRealm}
             onExit={handleExitToMap}
           />
