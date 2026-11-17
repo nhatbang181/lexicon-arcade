@@ -4,19 +4,20 @@ import { gameStore } from './store/gameStore.ts';
 import { soundEngine } from './audio/soundEngine.ts';
 import { WorldMap } from './components/WorldMap.tsx';
 import { IOEArenaGame } from './components/ioe/IOEArenaGame.tsx';
+import { ArcadeHub } from './components/arcade/ArcadeHub.tsx';
 import { SoulKnightGame } from './components/SoulKnightGame.tsx';
 import { Shop } from './components/Shop.tsx';
 import { Grimoire } from './components/Grimoire.tsx';
 import { StrategyHandbook } from './components/StrategyHandbook.tsx';
 import { Volume2, VolumeX } from 'lucide-react';
 
-type ScreenMode = 'ioe_arena' | 'world_map' | 'soul_knight' | 'handbook' | 'shop' | 'grimoire';
+type ScreenMode = 'arcade' | 'ioe_arena' | 'world_map' | 'soul_knight' | 'handbook' | 'shop' | 'grimoire';
 
 export const App: React.FC = () => {
   const [vocabData, setVocabData] = useState<VocabData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [currentScreen, setCurrentScreen] = useState<ScreenMode>('ioe_arena');
+  const [currentScreen, setCurrentScreen] = useState<ScreenMode>('arcade');
   const [selectedRealm, setSelectedRealm] = useState<Realm | null>(null);
 
   // Store state
@@ -69,7 +70,7 @@ export const App: React.FC = () => {
   };
 
   const handleExitToMap = () => {
-    setCurrentScreen('world_map');
+    setCurrentScreen('arcade');
   };
 
   const toggleSound = () => {
@@ -79,7 +80,7 @@ export const App: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#090b14] text-slate-100 font-pixel">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#090b14] text-slate-100 font-arcade">
         <div className="w-16 h-16 mb-4 flex items-center justify-center">
           <img
             src="/assets/soul_knight/knight/idle_0.png"
@@ -87,9 +88,9 @@ export const App: React.FC = () => {
             className="w-16 h-16 object-contain pixelated animate-bounce"
           />
         </div>
-        <h1 className="text-xl font-bold text-amber-400">IOE ARENA: IELTS 8.0</h1>
+        <h1 className="text-xl font-bold text-amber-400">THE LEXICON ARCADE</h1>
         <p className="text-xs text-slate-400 mt-3 font-mono">
-          Loading 1,437 Pure Vocab Cards & Challenges...
+          Loading 1,437 IELTS 8.0 Runes & Games...
         </p>
       </div>
     );
@@ -97,7 +98,7 @@ export const App: React.FC = () => {
 
   if (error || !vocabData) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#090b14] text-slate-100 text-center font-pixel">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#090b14] text-slate-100 text-center font-arcade">
         <div className="pixel-frame-grey p-6 max-w-md">
           <h2 className="text-sm font-bold text-red-400">ERROR LOADING VOCABULARY</h2>
           <p className="text-xs font-mono text-slate-300 mt-3">{error}</p>
@@ -115,24 +116,35 @@ export const App: React.FC = () => {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           {/* Logo & Title */}
           <div
-            onClick={() => setCurrentScreen('world_map')}
+            onClick={() => setCurrentScreen('arcade')}
             className="flex items-center gap-3 cursor-pointer group"
           >
             <div className="w-10 h-10 bg-slate-900 border-2 border-amber-500 rounded-xl flex items-center justify-center p-1 shadow-md group-hover:scale-105 transition-transform">
-              <span className="text-xl">🏆</span>
+              <span className="text-xl">🕹️</span>
             </div>
             <div>
-              <span className="text-xs font-pixel text-amber-400 tracking-wider">
-                IOE ARENA
+              <span className="text-xs font-arcade font-bold text-amber-400 tracking-wider">
+                LEXICON ARCADE
               </span>
-              <span className="block text-[9px] text-slate-400 font-pixel mt-0.5">
-                IELTS 8.0 OLYMPIC
+              <span className="block text-[10px] text-slate-400 font-arcade mt-0.5">
+                IELTS 8.0 GAMING
               </span>
             </div>
           </div>
 
           {/* Retro Navigation Tabs */}
           <nav className="flex items-center gap-2 flex-wrap">
+            <button
+              onClick={() => setCurrentScreen('arcade')}
+              className={`px-3 py-1.5 text-xs font-arcade font-bold transition-all cursor-pointer ${
+                currentScreen === 'arcade'
+                  ? 'pixel-btn-yellow shadow-md'
+                  : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
+              }`}
+            >
+              🕹️ ARCADE ZONE
+            </button>
+
             <button
               onClick={() => setCurrentScreen('ioe_arena')}
               className={`px-3 py-1.5 text-xs font-arcade font-bold transition-all cursor-pointer ${
@@ -141,7 +153,7 @@ export const App: React.FC = () => {
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
               }`}
             >
-              🏆 IOE ARENA
+              🏆 ĐẤU TRƯỜNG IOE
             </button>
 
             <button
@@ -163,7 +175,7 @@ export const App: React.FC = () => {
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
               }`}
             >
-              🗺️ CHỦ ĐỀ
+              🗺️ 12 CHỦ ĐỀ
             </button>
 
             <button
@@ -217,6 +229,21 @@ export const App: React.FC = () => {
 
       {/* Main Screen Content */}
       <main className="flex-1 pb-8">
+        {currentScreen === 'arcade' && (
+          <ArcadeHub
+            vocabData={vocabData}
+            onLaunchIOEArena={(realm) => {
+              setSelectedRealm(realm);
+              setCurrentScreen('ioe_arena');
+            }}
+            onLaunchSoulKnight={(realm) => {
+              setSelectedRealm(realm);
+              setCurrentScreen('soul_knight');
+            }}
+            onExit={handleExitToMap}
+          />
+        )}
+
         {currentScreen === 'ioe_arena' && activeRealm && (
           <IOEArenaGame
             realm={activeRealm}
