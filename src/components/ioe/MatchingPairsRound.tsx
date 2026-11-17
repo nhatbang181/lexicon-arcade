@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import type { MatchingRoundData, MatchingCard } from '../../types/ioe.ts';
 import { soundEngine } from '../../audio/soundEngine.ts';
 import { speakEnglish } from '../../utils/speech.ts';
@@ -14,30 +14,46 @@ interface MatchingPairsRoundProps {
 export const MatchingPairsRound: React.FC<MatchingPairsRoundProps> = ({
   data,
   onSuccess,
-  onFail,
+  onFail: _onFail,
   onTimeout,
   combo,
 }) => {
-  const [cards, setCards] = useState<MatchingCard[]>([]);
-  const [flippedIds, setFlippedIds] = useState<string[]>([]);
+  const [selectedLeft, setSelectedLeft] = useState<MatchingCard | null>(null);
+  const [selectedRight, setSelectedRight] = useState<MatchingCard | null>(null);
   const [matchedPairIds, setMatchedPairIds] = useState<Set<string>>(new Set());
-  const [isEvaluating, setIsEvaluating] = useState<boolean>(false);
-  const [timeLeft, setTimeLeft] = useState<number>(60);
-  const [mismatchedIds, setMismatchedIds] = useState<string[]>([]);
+  const [mismatchedPair, setMismatchedPair] = useState<{ leftId: string; rightId: string } | null>(null);
+  const [timeLeft, setTimeLeft] = useState<number>(45);
   const [roundCompleted, setRoundCompleted] = useState<boolean>(false);
 
-  // Initialize cards
+  // Split cards into Left Side (Part 1) and Right Side (Part 2), shuffle right side
+  const { leftCards, rightCards } = useMemo(() => {
+    const lefts: MatchingCard[] = [];
+    const rights: MatchingCard[] = [];
+
+    data.cards.forEach((card) => {
+      if (card.id.endsWith('_A')) {
+        lefts.push(card);
+      } else {
+        rights.push(card);
+      }
+    });
+
+    // Shuffle rights so they don't align directly opposite their pairs
+    const shuffledRights = [...rights].sort(() => 0.5 - Math.random());
+    return { leftCards: lefts, rightCards: shuffledRights };
+  }, [data]);
+
+  // Reset state on data change
   useEffect(() => {
-    setCards(data.cards);
-    setFlippedIds([]);
+    setSelectedLeft(null);
+    setSelectedRight(null);
     setMatchedPairIds(new Set());
-    setIsEvaluating(false);
-    setTimeLeft(60);
-    setMismatchedIds([]);
+    setMismatchedPair(null);
+    setTimeLeft(45);
     setRoundCompleted(false);
   }, [data]);
 
-  // Timer countdown
+  // Timer countdown (45 seconds)
   useEffect(() => {
     if (roundCompleted) return;
 
@@ -56,69 +72,77 @@ export const MatchingPairsRound: React.FC<MatchingPairsRoundProps> = ({
     return () => clearInterval(timer);
   }, [roundCompleted, onTimeout]);
 
-  // Card click handler
-  const handleCardClick = useCallback(
-    (card: MatchingCard) => {
-      if (isEvaluating || roundCompleted) return;
-      // Cannot click if already matched or currently flipped
-      if (matchedPairIds.has(card.pairId) || flippedIds.includes(card.id)) return;
+  // Evaluate match when both sides are selected
+  const evaluateMatch = useCallback(
+    (left: MatchingCard, right: MatchingCard) => {
+      if (left.pairId === right.pairId) {
+        // MATCH!
+        soundEngine.playCoinSound();
+        if (left.type !== 'meaning' && right.type !== 'meaning') {
+          speakEnglish(`${left.text} ${right.text}`);
+        }
 
-      soundEngine.playAttackSound();
-      const newFlipped = [...flippedIds, card.id];
-      setFlippedIds(newFlipped);
+        const newMatched = new Set(matchedPairIds);
+        newMatched.add(left.pairId);
+        setMatchedPairIds(newMatched);
+        setSelectedLeft(null);
+        setSelectedRight(null);
 
-      // If this is the second card flipped, evaluate match
-      if (newFlipped.length === 2) {
-        setIsEvaluating(true);
-        const [firstId, secondId] = newFlipped;
-        const firstCard = cards.find((c) => c.id === firstId);
-        const secondCard = cards.find((c) => c.id === secondId);
-
-        if (firstCard && secondCard && firstCard.pairId === secondCard.pairId) {
-          // MATCH!
-          soundEngine.playCoinSound();
-          if (firstCard.type !== 'meaning') {
-            speakEnglish(`${firstCard.text} ${secondCard.text}`);
-          }
-
-          const newMatched = new Set(matchedPairIds);
-          newMatched.add(firstCard.pairId);
-          setMatchedPairIds(newMatched);
-          setFlippedIds([]);
-          setIsEvaluating(false);
-
-          // Check if all pairs matched
-          if (newMatched.size >= data.totalPairs) {
-            setRoundCompleted(true);
-            soundEngine.playVictorySound();
-            const baseScore = 200;
-            const timeBonus = timeLeft * 4;
-            const comboBonus = (combo || 1) * 30;
-            const totalScore = baseScore + timeBonus + comboBonus;
-
-            setTimeout(() => {
-              onSuccess(totalScore);
-            }, 1200);
-          }
-        } else {
-          // MISMATCH!
-          soundEngine.playBuzzerSound();
-          setMismatchedIds([firstId, secondId]);
-          onFail(`${firstCard?.text || ''} ≠ ${secondCard?.text || ''}`);
+        // Check if all pairs cleared
+        if (newMatched.size >= data.totalPairs) {
+          setRoundCompleted(true);
+          soundEngine.playVictorySound();
+          const baseScore = 200;
+          const timeBonus = timeLeft * 4;
+          const comboBonus = (combo || 1) * 30;
+          const totalScore = baseScore + timeBonus + comboBonus;
 
           setTimeout(() => {
-            setFlippedIds([]);
-            setMismatchedIds([]);
-            setIsEvaluating(false);
-          }, 900);
+            onSuccess(totalScore);
+          }, 1200);
         }
+      } else {
+        // MISMATCH - Fair mechanics: NO heart penalty!
+        // Just resets combo and briefly flashes red
+        soundEngine.playBuzzerSound();
+        setMismatchedPair({ leftId: left.id, rightId: right.id });
+
+        setTimeout(() => {
+          setSelectedLeft(null);
+          setSelectedRight(null);
+          setMismatchedPair(null);
+        }, 500);
       }
     },
-    [isEvaluating, roundCompleted, matchedPairIds, flippedIds, cards, data.totalPairs, timeLeft, combo, onSuccess, onFail]
+    [matchedPairIds, data.totalPairs, timeLeft, combo, onSuccess]
   );
 
-  const timerPercent = Math.max(0, Math.min(100, (timeLeft / 60) * 100));
-  const timerColor = timeLeft > 15 ? 'bg-amber-400' : 'bg-red-500 animate-pulse';
+  // Click handler for left side
+  const handleLeftClick = (card: MatchingCard) => {
+    if (matchedPairIds.has(card.pairId) || mismatchedPair || roundCompleted) return;
+
+    soundEngine.playAttackSound();
+    setSelectedLeft(card);
+
+    if (selectedRight) {
+      evaluateMatch(card, selectedRight);
+    }
+  };
+
+  // Click handler for right side
+  const handleRightClick = (card: MatchingCard) => {
+    if (matchedPairIds.has(card.pairId) || mismatchedPair || roundCompleted) return;
+
+    soundEngine.playAttackSound();
+    setSelectedRight(card);
+
+    if (selectedLeft) {
+      evaluateMatch(selectedLeft, card);
+    }
+  };
+
+  const timerPercent = Math.max(0, Math.min(100, (timeLeft / 45) * 100));
+  const timerColor = timeLeft > 12 ? 'bg-amber-400' : 'bg-red-500 animate-pulse';
 
   return (
     <div className="w-full max-w-4xl mx-auto flex flex-col items-center">
@@ -130,12 +154,12 @@ export const MatchingPairsRound: React.FC<MatchingPairsRoundProps> = ({
               ROUND 2
             </span>
             <h2 className="text-sm font-arcade font-bold text-amber-300 tracking-wide">
-              MATCHING PAIRS / CẶP BÀI TRÙNG
+              COLLOCATION LINK / NỐI CẶP TỪ
             </h2>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-xs font-arcade font-bold text-emerald-400">
-              Ghép: {matchedPairIds.size}/{data.totalPairs}
+              Đã nối: {matchedPairIds.size}/{data.totalPairs}
             </span>
             <span className="text-xs font-pixel text-amber-400">⏱️ {timeLeft}s</span>
           </div>
@@ -149,58 +173,137 @@ export const MatchingPairsRound: React.FC<MatchingPairsRoundProps> = ({
           />
         </div>
 
-        <div className="text-xs text-stone-300 bg-stone-900/80 p-2.5 rounded border border-amber-800/40 flex items-center justify-between">
-          <span>Tìm các cặp tương ứng: Collocations (cụm đi cùng nhau) hoặc Từ đồng nghĩa (Synonyms)</span>
-          <span className="font-mono text-amber-300">Combo hiện tại: x{combo || 1}</span>
+        <div className="text-xs text-stone-300 bg-stone-900/80 p-3 rounded border border-amber-800/40 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="text-amber-400 font-bold">💡 Hướng dẫn:</span>
+            <span>Chọn 1 thẻ ở Cột Trái và 1 thẻ tương ứng ở Cột Phải để ghép cặp Collocation / Đồng nghĩa.</span>
+          </div>
+          <span className="font-arcade text-xs text-amber-300 hidden sm:inline">x{combo || 1} COMBO</span>
         </div>
       </div>
 
-      {/* 12-Card Grid */}
-      <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4 mb-4">
-        {cards.map((card) => {
-          const isMatched = matchedPairIds.has(card.pairId);
-          const isFlipped = flippedIds.includes(card.id) || isMatched;
-          const isError = mismatchedIds.includes(card.id);
+      {/* 2-Column Matching Board */}
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        {/* Left Column (Part 1 / Root Word) */}
+        <div className="space-y-3">
+          <div className="text-xs font-arcade font-bold text-amber-300/90 text-center tracking-wider mb-2">
+            CỘT TRÁI (VẾ 1)
+          </div>
 
-          return (
-            <button
-              key={card.id}
-              type="button"
-              onClick={() => handleCardClick(card)}
-              disabled={isMatched || isEvaluating}
-              className={`min-h-[110px] sm:min-h-[125px] p-3 rounded-lg flex flex-col items-center justify-center text-center transition-all duration-200 select-none relative shadow-lg ${
-                isMatched
-                  ? 'bg-emerald-950/80 border-2 border-emerald-400 text-emerald-200 opacity-90 scale-95'
-                  : isFlipped
-                  ? isError
+          {leftCards.map((card, idx) => {
+            const isMatched = matchedPairIds.has(card.pairId);
+            const isSelected = selectedLeft?.id === card.id;
+            const isMismatched = mismatchedPair?.leftId === card.id;
+
+            return (
+              <button
+                key={card.id}
+                type="button"
+                onClick={() => handleLeftClick(card)}
+                disabled={isMatched || roundCompleted}
+                className={`w-full min-h-[58px] p-3.5 rounded-lg flex items-center justify-between text-left transition-all duration-150 select-none ${
+                  isMatched
+                    ? 'bg-emerald-950/70 border-2 border-emerald-500/80 text-emerald-200 opacity-60 cursor-default scale-98'
+                    : isMismatched
                     ? 'bg-red-950/90 border-2 border-red-500 text-red-200 animate-shake'
-                    : 'bg-stone-800 border-2 border-amber-400 text-amber-200 scale-102 shadow-amber-400/20 shadow-xl'
-                  : 'bg-stone-900 border-2 border-stone-700 hover:border-amber-500/70 hover:bg-stone-850 cursor-pointer active:scale-95'
-              }`}
-            >
-              {isFlipped ? (
-                <>
-                  {card.categoryLabel && (
-                    <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-stone-950/70 text-amber-400/80 mb-1 border border-stone-800">
-                      {card.categoryLabel}
-                    </span>
-                  )}
-                  <span className="text-sm sm:text-base font-semibold leading-snug break-words">
+                    : isSelected
+                    ? 'bg-amber-400 text-stone-950 border-2 border-amber-200 shadow-amber-400/40 shadow-lg scale-102 font-bold'
+                    : 'bg-stone-900 border-2 border-stone-700 hover:border-amber-400/80 hover:bg-stone-850 text-stone-100 cursor-pointer active:scale-98'
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <span
+                    className={`w-7 h-7 rounded flex items-center justify-center font-mono text-xs font-bold ${
+                      isSelected
+                        ? 'bg-stone-950 text-amber-300'
+                        : isMatched
+                        ? 'bg-emerald-900 text-emerald-300'
+                        : 'bg-stone-950 border border-stone-700 text-stone-400'
+                    }`}
+                  >
+                    {idx + 1}
+                  </span>
+                  <span className="text-sm sm:text-base font-semibold">
                     {card.text}
                   </span>
-                  {isMatched && (
-                    <span className="text-xs text-emerald-400 font-pixel mt-1">✓ MATCH</span>
-                  )}
-                </>
-              ) : (
-                <div className="flex flex-col items-center justify-center gap-1">
-                  <span className="text-2xl text-amber-500/70 font-pixel">?</span>
-                  <span className="text-[10px] text-stone-500 font-mono">BẤM LẬT THẺ</span>
                 </div>
-              )}
-            </button>
-          );
-        })}
+
+                {isMatched ? (
+                  <span className="text-xs font-arcade font-bold text-emerald-400">✓ ĐÃ GHÉP</span>
+                ) : isSelected ? (
+                  <span className="text-[10px] font-arcade font-bold bg-stone-950 px-2 py-0.5 rounded text-amber-300">
+                    ĐANG CHỌN
+                  </span>
+                ) : (
+                  <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-stone-950/80 text-stone-400 border border-stone-800">
+                    {card.categoryLabel || 'Từ'}
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Right Column (Part 2 / Matching Partner) */}
+        <div className="space-y-3">
+          <div className="text-xs font-arcade font-bold text-amber-300/90 text-center tracking-wider mb-2">
+            CỘT PHẢI (VẾ 2 ĐỐI ỨNG)
+          </div>
+
+          {rightCards.map((card, idx) => {
+            const isMatched = matchedPairIds.has(card.pairId);
+            const isSelected = selectedRight?.id === card.id;
+            const isMismatched = mismatchedPair?.rightId === card.id;
+            const letter = String.fromCharCode(65 + idx); // A, B, C, D...
+
+            return (
+              <button
+                key={card.id}
+                type="button"
+                onClick={() => handleRightClick(card)}
+                disabled={isMatched || roundCompleted}
+                className={`w-full min-h-[58px] p-3.5 rounded-lg flex items-center justify-between text-left transition-all duration-150 select-none ${
+                  isMatched
+                    ? 'bg-emerald-950/70 border-2 border-emerald-500/80 text-emerald-200 opacity-60 cursor-default scale-98'
+                    : isMismatched
+                    ? 'bg-red-950/90 border-2 border-red-500 text-red-200 animate-shake'
+                    : isSelected
+                    ? 'bg-amber-400 text-stone-950 border-2 border-amber-200 shadow-amber-400/40 shadow-lg scale-102 font-bold'
+                    : 'bg-stone-900 border-2 border-stone-700 hover:border-amber-400/80 hover:bg-stone-850 text-stone-100 cursor-pointer active:scale-98'
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <span
+                    className={`w-7 h-7 rounded flex items-center justify-center font-mono text-xs font-bold ${
+                      isSelected
+                        ? 'bg-stone-950 text-amber-300'
+                        : isMatched
+                        ? 'bg-emerald-900 text-emerald-300'
+                        : 'bg-stone-950 border border-stone-700 text-stone-400'
+                    }`}
+                  >
+                    {letter}
+                  </span>
+                  <span className="text-sm sm:text-base font-semibold">
+                    {card.text}
+                  </span>
+                </div>
+
+                {isMatched ? (
+                  <span className="text-xs font-arcade font-bold text-emerald-400">✓ ĐÃ GHÉP</span>
+                ) : isSelected ? (
+                  <span className="text-[10px] font-arcade font-bold bg-stone-950 px-2 py-0.5 rounded text-amber-300">
+                    ĐANG CHỌN
+                  </span>
+                ) : (
+                  <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-stone-950/80 text-stone-400 border border-stone-800">
+                    {card.categoryLabel || 'Cặp'}
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

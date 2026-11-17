@@ -110,7 +110,7 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
     const { scrambleWord, audioWord, clozeWord } = selectRoundCandidates(realmWords);
 
     setScrambleQ(generateScrambleQuestion(scrambleWord));
-    setMatchingData(generateMatchingRound(realmWords, 6));
+    setMatchingData(generateMatchingRound(realmWords, 4));
     setAudioQ(generateAudioQuestion(audioWord));
     setClozeQ(generateClozeQuestion(clozeWord, realmWords));
 
@@ -154,7 +154,7 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
     );
 
     setScrambleQ(generateScrambleQuestion(scrambleWord));
-    setMatchingData(generateMatchingRound([...practiceWords, ...realmWords], 6));
+    setMatchingData(generateMatchingRound([...practiceWords, ...realmWords], 4));
     setAudioQ(generateAudioQuestion(audioWord));
     setClozeQ(generateClozeQuestion(clozeWord, [...practiceWords, ...realmWords]));
 
