@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import type { Realm } from '../../types/vocab.ts';
 import { soundEngine } from '../../audio/soundEngine.ts';
 
 interface IOEGameHUDProps {
@@ -9,6 +10,8 @@ interface IOEGameHUDProps {
   roundIndex: number;
   totalRounds?: number;
   realmName: string;
+  allRealms?: Realm[];
+  onSwitchRealm?: (realm: Realm) => void;
   onOpenMistakes: () => void;
   mistakeCount: number;
   onExit: () => void;
@@ -22,6 +25,8 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
   roundIndex,
   totalRounds = 4,
   realmName,
+  allRealms,
+  onSwitchRealm,
   onOpenMistakes,
   mistakeCount,
   onExit,
@@ -33,6 +38,15 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
     setIsMuted(muted);
   };
 
+  const handleRealmChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    if (!allRealms || !onSwitchRealm) return;
+    const targetRealm = allRealms.find((r) => r.id === e.target.value);
+    if (targetRealm) {
+      soundEngine.playAttackSound();
+      onSwitchRealm(targetRealm);
+    }
+  };
+
   return (
     <header className="w-full max-w-5xl mx-auto mb-6 select-none">
       <div className="pixel-frame-brown p-3.5 bg-stone-900/95 flex flex-wrap items-center justify-between gap-4 border-amber-900/80 shadow-2xl">
@@ -41,7 +55,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
           <button
             type="button"
             onClick={onExit}
-            className="pixel-btn-red px-2.5 py-1.5 text-[11px] flex items-center gap-1.5"
+            className="pixel-btn-red px-2.5 py-1.5 text-[11px] flex items-center gap-1.5 cursor-pointer"
             title="Thoát về bản đồ chủ đề"
           >
             <span>◀</span>
@@ -49,10 +63,25 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
           </button>
 
           <div className="flex flex-col">
-            <span className="text-[10px] font-pixel text-amber-400/90 tracking-wider">
-              {realmName.toUpperCase()}
-            </span>
-            <div className="flex items-center gap-2">
+            {allRealms && allRealms.length > 0 && onSwitchRealm ? (
+              <select
+                value={allRealms.find((r) => r.name === realmName)?.id || ''}
+                onChange={handleRealmChange}
+                className="bg-stone-950 text-amber-300 font-pixel text-[10px] px-2 py-1 rounded border border-amber-800/80 focus:outline-none focus:border-amber-400 cursor-pointer"
+              >
+                {allRealms.map((r) => (
+                  <option key={r.id} value={r.id} className="bg-stone-900 text-stone-200">
+                    {r.name} ({r.words.length})
+                  </option>
+                ))}
+              </select>
+            ) : (
+              <span className="text-[10px] font-pixel text-amber-400/90 tracking-wider">
+                {realmName.toUpperCase()}
+              </span>
+            )}
+
+            <div className="flex items-center gap-2 mt-1">
               <span className="px-2 py-0.5 text-[10px] font-pixel bg-indigo-950 text-indigo-300 border border-indigo-700 rounded">
                 CHẶNG {roundIndex}/{totalRounds}
               </span>
@@ -102,7 +131,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
           <button
             type="button"
             onClick={onOpenMistakes}
-            className="pixel-btn-blue px-2.5 py-1.5 text-[10px] flex items-center gap-1.5 relative"
+            className="pixel-btn-blue px-2.5 py-1.5 text-[10px] flex items-center gap-1.5 relative cursor-pointer"
             title="Xem ngân hàng các từ bị sai"
           >
             <span>📚</span>
@@ -118,7 +147,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
           <button
             type="button"
             onClick={handleToggleMute}
-            className="p-1.5 text-stone-400 hover:text-amber-300 transition-colors"
+            className="p-1.5 text-stone-400 hover:text-amber-300 transition-colors cursor-pointer"
             title={isMuted ? 'Bật âm thanh' : 'Tắt âm thanh'}
           >
             <span className="text-base">{isMuted ? '🔇' : '🔊'}</span>

@@ -1,0 +1,440 @@
+{
+  "title": "IELTS 8.0 Master Strategy Handbook",
+  "totalStrategies": 62,
+  "strategies": [
+    {
+      "id": "w_1794758007610_1794758007610",
+      "title": "Overall được làm tròn thế nào?",
+      "category": "The Scholastic Citadel",
+      "answer": "Trung bình 4 kỹ năng: phần lẻ .25 làm tròn lên .5; .75 làm tròn lên điểm nguyên; dưới .25 làm tròn xuống.",
+      "detail": "Ví dụ: 7.25 → 7.5; 7.75 → 8.0; 7.125 → 7.0."
+    },
+    {
+      "id": "w_1794758007611_1794758007611",
+      "title": "Tổ hợp điểm an toàn nhất cho 8.0 overall?",
+      "category": "The Scholastic Citadel",
+      "answer": "Listening 8.5 + Reading 8.5 + Writing 7 + Speaking 7 = 31 → 7.75 → 8.0.",
+      "detail": "Cách dễ nhất là lấy gần tối đa Listening và Reading để bù cho Writing."
+    },
+    {
+      "id": "w_1794758007612_1794758007612",
+      "title": "Listening 8.0 / 8.5 / 9.0 cần bao nhiêu câu đúng?",
+      "category": "The Scholastic Citadel",
+      "answer": "Khoảng 35–36 = 8.0; 37–38 = 8.5; 39–40 = 9.0 (trên 40 câu).",
+      "detail": "Bảng quy đổi có thể lệch nhẹ giữa các đề. Reading Academic cũng gần như vậy."
+    },
+    {
+      "id": "w_1794758007613_1794758007613",
+      "title": "Viết sai chính tả trong Listening có được điểm không?",
+      "category": "The Scholastic Citadel",
+      "answer": "Không. Sai chính tả là sai câu. Cả chính tả Anh và Mỹ đều được chấp nhận.",
+      "detail": "Luyện chính tả số, ngày tháng, tên riêng được đánh vần."
+    },
+    {
+      "id": "w_1794758007614_1794758007614",
+      "title": "Bẫy phổ biến nhất trong Listening là gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Người nói đổi ý hoặc sửa lại thông tin (actually…, sorry, I mean…, no, wait…). Đáp án là thông tin cuối cùng.",
+      "detail": "Nghe đến hết ý rồi mới ghi, đừng ghi ngay từ đầu tiên khớp."
+    },
+    {
+      "id": "w_1794758007615_1794758007615",
+      "title": "Thi trên máy tính có 10 phút chép đáp án như thi giấy không?",
+      "category": "The Scholastic Citadel",
+      "answer": "Không. Thi máy chỉ có 2 phút cuối để kiểm tra lại.",
+      "detail": "Phải gõ đáp án ngay trong lúc nghe."
+    },
+    {
+      "id": "w_1794758007616_1794758007616",
+      "title": "Khác nhau giữa TRUE/FALSE/NOT GIVEN và YES/NO/NOT GIVEN?",
+      "category": "The Scholastic Citadel",
+      "answer": "T/F/NG hỏi về thông tin, sự thật trong bài. Y/N/NG hỏi về quan điểm, nhận định của tác giả.",
+      "detail": "Cách làm giống nhau, chỉ khác bản chất câu hỏi."
+    },
+    {
+      "id": "w_1794758007617_1794758007617",
+      "title": "Phân biệt FALSE và NOT GIVEN?",
+      "category": "The Scholastic Citadel",
+      "answer": "FALSE: bài nói điều ngược lại với câu hỏi. NOT GIVEN: bài không nhắc đến, hoặc không đủ thông tin để kết luận.",
+      "detail": "Đừng dùng kiến thức bên ngoài. Chỉ dựa vào chữ trong bài."
+    },
+    {
+      "id": "w_1794758007618_1794758007618",
+      "title": "Vượt giới hạn từ (NO MORE THAN TWO WORDS) thì sao?",
+      "category": "The Scholastic Citadel",
+      "answer": "Sai cả câu, dù nội dung đúng.",
+      "detail": "Đọc kỹ yêu cầu: 'AND/OR A NUMBER' nghĩa là được thêm một con số."
+    },
+    {
+      "id": "w_1794758007619_1794758007619",
+      "title": "Câu hỏi nào KHÔNG theo thứ tự xuất hiện trong bài?",
+      "category": "The Scholastic Citadel",
+      "answer": "Matching headings, matching information/features và câu hỏi tóm tắt toàn bài. Hầu hết dạng khác đi theo thứ tự.",
+      "detail": "Với dạng theo thứ tự, đáp án câu sau nằm sau đáp án câu trước."
+    },
+    {
+      "id": "w_1794758007620_1794758007620",
+      "title": "Chiến thuật Matching headings?",
+      "category": "The Scholastic Citadel",
+      "answer": "Chọn heading phản ánh ý chính của cả đoạn, không chỉ khớp một từ khóa. Đọc câu chủ đề và câu cuối đoạn trước.",
+      "detail": "Heading 'bẫy' thường lặp đúng một từ trong đoạn nhưng chỉ nói một chi tiết nhỏ."
+    },
+    {
+      "id": "w_1794758007621_1794758007621",
+      "title": "Phân bổ thời gian Reading 60 phút?",
+      "category": "The Scholastic Citadel",
+      "answer": "Khoảng 17 – 20 – 23 phút cho Passage 1 – 2 – 3. Không có thêm thời gian chép đáp án.",
+      "detail": "Passage 3 khó nhất, nên để dư thời gian cho nó."
+    },
+    {
+      "id": "w_1794758007622_1794758007622",
+      "title": "Vì sao đáp án hiếm khi trùng nguyên từ trong câu hỏi?",
+      "category": "The Scholastic Citadel",
+      "answer": "Đề dùng paraphrase: đổi từ đồng nghĩa, đổi dạng từ, đổi cấu trúc câu.",
+      "detail": "Học deck Paraphrase giúp nhận ra đáp án nhanh hơn."
+    },
+    {
+      "id": "w_1794758007623_1794758007623",
+      "title": "4 tiêu chí chấm Writing?",
+      "category": "The Scholastic Citadel",
+      "answer": "Task Achievement (Task 1) / Task Response (Task 2), Coherence & Cohesion, Lexical Resource, Grammatical Range & Accuracy. Mỗi tiêu chí 25%.",
+      "detail": "Điểm mỗi bài là trung bình 4 tiêu chí."
+    },
+    {
+      "id": "w_1794758007624_1794758007624",
+      "title": "Task 1 và Task 2 tính điểm thế nào?",
+      "category": "The Scholastic Citadel",
+      "answer": "Task 2 có trọng số gấp đôi Task 1.",
+      "detail": "Nên dành khoảng 40 phút cho Task 2, 20 phút cho Task 1."
+    },
+    {
+      "id": "w_1794758007625_1794758007625",
+      "title": "Số từ tối thiểu?",
+      "category": "The Scholastic Citadel",
+      "answer": "Task 1: 150 từ. Task 2: 250 từ. Thiếu từ bị trừ điểm tiêu chí Task Achievement/Response.",
+      "detail": "Viết dài quá mức không được thêm điểm. Khoảng 170–190 và 270–320 từ là vừa."
+    },
+    {
+      "id": "w_1794758007626_1794758007626",
+      "title": "Task 1 Academic cần gì để đạt 7+ Task Achievement?",
+      "category": "The Scholastic Citadel",
+      "answer": "Có overview rõ ràng nêu xu hướng, đặc điểm chính; chọn lọc và so sánh số liệu quan trọng; không nêu ý kiến cá nhân.",
+      "detail": "Thiếu overview gần như không thể vượt band 6 tiêu chí này."
+    },
+    {
+      "id": "w_1794758007627_1794758007627",
+      "title": "Band 8 Task Response khác band 7 ở đâu?",
+      "category": "The Scholastic Citadel",
+      "answer": "Band 8: trả lời đủ mọi phần của đề, ý được phát triển tốt với giải thích và ví dụ liên quan. Band 7: đủ các phần nhưng có ý còn khái quát hoặc phát triển chưa tới.",
+      "detail": "Mỗi đoạn thân bài: 1 ý chính, giải thích sâu, có ví dụ cụ thể."
+    },
+    {
+      "id": "w_1794758007628_1794758007628",
+      "title": "Band 8 Coherence & Cohesion cần gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Sắp xếp ý logic, mỗi đoạn một trọng tâm rõ ràng, dùng từ nối tự nhiên và ít lỗi. Lạm dụng từ nối máy móc sẽ bị kéo điểm xuống.",
+      "detail": "Dùng cả từ thay thế (this, these, such), không chỉ từ nối đầu câu."
+    },
+    {
+      "id": "w_1794758007629_1794758007629",
+      "title": "Band 8 Lexical Resource cần gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Từ vựng đa dạng, dùng linh hoạt và chính xác; dùng tốt từ ít phổ biến và collocation; chỉ thỉnh thoảng sai chọn từ.",
+      "detail": "Collocation đúng quan trọng hơn từ 'khủng' dùng sai."
+    },
+    {
+      "id": "w_1794758007630_1794758007630",
+      "title": "Band 8 Grammatical Range & Accuracy cần gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Nhiều cấu trúc câu đa dạng, phần lớn câu không có lỗi; lỗi chỉ hiếm và không hệ thống.",
+      "detail": "Ưu tiên chính xác: câu phức đúng có giá trị hơn câu siêu dài có lỗi."
+    },
+    {
+      "id": "w_1794758007631_1794758007631",
+      "title": "Câu mẫu học thuộc (memorised language) bị chấm thế nào?",
+      "category": "The Scholastic Citadel",
+      "answer": "Giám khảo được hướng dẫn nhận ra và không ghi nhận các câu học thuộc không gắn với đề.",
+      "detail": "Học cấu trúc, rồi viết câu riêng cho từng đề."
+    },
+    {
+      "id": "w_1794758007632_1794758007632",
+      "title": "Viết lệch đề (off-topic) hậu quả gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Điểm Task Response bị giới hạn rất thấp, kéo cả bài xuống.",
+      "detail": "Gạch chân từ khóa đề, đảm bảo trả lời đúng câu hỏi được hỏi."
+    },
+    {
+      "id": "w_1794758007633_1794758007633",
+      "title": "Dạng 'To what extent do you agree?' cần chú ý gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Nêu quan điểm rõ ràng ngay mở bài và giữ nhất quán đến kết bài.",
+      "detail": "Quan điểm mập mờ hoặc đổi giữa chừng làm giảm Task Response."
+    },
+    {
+      "id": "w_1794758007634_1794758007634",
+      "title": "4 tiêu chí chấm Speaking?",
+      "category": "The Scholastic Citadel",
+      "answer": "Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, Pronunciation. Mỗi tiêu chí 25%.",
+      "detail": "Không có điểm cho 'ý tưởng hay'; chấm cách bạn nói."
+    },
+    {
+      "id": "w_1794758007635_1794758007635",
+      "title": "Cấu trúc và thời gian bài Speaking?",
+      "category": "The Scholastic Citadel",
+      "answer": "Tổng 11–14 phút. Part 1: 4–5 phút. Part 2: 1 phút chuẩn bị, nói 1–2 phút. Part 3: 4–5 phút.",
+      "detail": "Part 2 cố nói đủ gần 2 phút."
+    },
+    {
+      "id": "w_1794758007636_1794758007636",
+      "title": "Band 8 Fluency & Coherence là gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Nói trôi chảy, chỉ thỉnh thoảng ngập ngừng và chủ yếu là để nghĩ ý, không phải để tìm từ; phát triển ý mạch lạc.",
+      "detail": "Dùng cụm câu giờ tự nhiên: That's an interesting question… / Let me think…"
+    },
+    {
+      "id": "w_1794758007637_1794758007637",
+      "title": "Band 8 Pronunciation cần gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Dùng đa dạng đặc điểm phát âm: trọng âm từ và câu, ngữ điệu, nối âm; dễ hiểu suốt bài; giọng mẹ đẻ ảnh hưởng rất ít.",
+      "detail": "Không cần giọng Anh hay Mỹ. Cần rõ ràng và có ngữ điệu."
+    },
+    {
+      "id": "w_1794758007638_1794758007638",
+      "title": "Cách trả lời Part 3 để lên band 7–8?",
+      "category": "The Scholastic Citadel",
+      "answer": "Ý chính → lý do → ví dụ cụ thể → hệ quả hoặc so sánh. Dùng rào đón (it depends, generally speaking).",
+      "detail": "Part 3 hỏi ý kiến xã hội, không phải trải nghiệm cá nhân."
+    },
+    {
+      "id": "w_1794758007639_1794758007639",
+      "title": "Dùng idiom thế nào cho đúng?",
+      "category": "The Scholastic Citadel",
+      "answer": "Ít mà đúng, tự nhiên. Idiom gượng ép hoặc sai ngữ cảnh làm giảm điểm Lexical Resource.",
+      "detail": "Collocation và cụm động từ tự nhiên hiệu quả hơn idiom hiếm."
+    },
+    {
+      "id": "w_1794758007640_1794758007640",
+      "title": "Các cấu trúc ngữ pháp nên có trong Writing/Speaking band 8?",
+      "category": "The Scholastic Citadel",
+      "answer": "Mệnh đề quan hệ (cả rút gọn), câu điều kiện (cả đảo ngữ), bị động khách quan (It is believed that…), câu chẻ (What… is…), mệnh đề phân từ, danh từ hóa.",
+      "detail": "Dùng tự nhiên, đúng chỗ; độ chính xác quan trọng ngang độ đa dạng."
+    },
+    {
+      "id": "w_1794758007641_1794758007641",
+      "title": "Rào đón (hedging) là gì và vì sao quan trọng?",
+      "category": "The Scholastic Citadel",
+      "answer": "Làm mềm khẳng định: may, might, tend to, arguably, it could be argued that. Giúp lập luận học thuật, tránh khái quát quá mức.",
+      "detail": "Câu tuyệt đối kiểu 'All young people are addicted to phones' dễ bị coi là thiếu tinh tế."
+    },
+    {
+      "id": "w_1794758007642_1794758007642",
+      "title": "Lỗi ngữ pháp hay gặp làm mất band 7+ của người Việt?",
+      "category": "The Scholastic Citadel",
+      "answer": "Mạo từ a/an/the, số ít số nhiều, sự hòa hợp chủ ngữ – động từ, sai dạng từ (economic/economical), thiếu chủ ngữ hoặc động từ.",
+      "detail": "Ghi các lỗi này vào deck 6. Lỗi sai sau mỗi bài được chữa."
+    },
+    {
+      "id": "w_1794760000056_1794760000056",
+      "title": "Cách ôn Anki hiệu quả nhất?",
+      "category": "The Scholastic Citadel",
+      "answer": "Ôn mỗi ngày, không bỏ ngày. Trả lời trong đầu (hoặc nói to) trước khi lật thẻ, chấm Again thật thà khi quên.",
+      "detail": "Đây là gợi nhớ chủ động (active recall) kết hợp lặp lại ngắt quãng; bỏ vài ngày là thẻ dồn rất nặng."
+    },
+    {
+      "id": "w_1794760000057_1794760000057",
+      "title": "Chữa một đề Listening/Reading đúng cách?",
+      "category": "The Scholastic Citadel",
+      "answer": "Không chỉ đếm điểm. Với mỗi câu sai: tìm câu chứa đáp án trong transcript/bài, gạch cặp paraphrase, ghi lý do sai vào Error Log.",
+      "detail": "Chữa kỹ 1 đề có giá trị hơn làm vội 3 đề."
+    },
+    {
+      "id": "w_1794760000058_1794760000058",
+      "title": "Chép chính tả (dictation) làm thế nào?",
+      "category": "The Scholastic Citadel",
+      "answer": "Chọn 1–2 phút Listening Part 3–4, nghe từng câu, dừng và chép lại từng chữ, rồi so với transcript và ghi từ sai.",
+      "detail": "Luyện được cả chính tả, nối âm và từ chức năng hay bị nuốt."
+    },
+    {
+      "id": "w_1794760000059_1794760000059",
+      "title": "Shadowing là gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Nghe một đoạn ngắn và nói đuổi theo gần như cùng lúc, bắt chước ngữ điệu, trọng âm, nhịp.",
+      "detail": "10 phút mỗi ngày giúp Pronunciation và Fluency trong Speaking."
+    },
+    {
+      "id": "w_1794760000060_1794760000060",
+      "title": "Sau khi được chữa Writing nên làm gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Viết lại cả bài theo góp ý trong vòng 24 giờ, và đưa lỗi lặp lại vào deck 6. Lỗi sai.",
+      "detail": "Sửa lỗi của chính mình là cách nhanh nhất để lên điểm Grammar và Lexical."
+    },
+    {
+      "id": "w_1794760000061_1794760000061",
+      "title": "Luyện Speaking một mình thế nào?",
+      "category": "The Scholastic Citadel",
+      "answer": "Ghi âm câu trả lời, nghe lại, ghi 2–3 lỗi (ngập ngừng, sai ngữ pháp, phát âm), rồi trả lời lại cùng câu hỏi.",
+      "detail": "Lần nói thứ hai luôn tốt hơn: đó là lúc bạn học thật."
+    },
+    {
+      "id": "w_1794760000062_1794760000062",
+      "title": "Học từ vựng theo cách nào để dùng được trong Writing/Speaking?",
+      "category": "The Scholastic Citadel",
+      "answer": "Học theo cụm (collocation) và câu ví dụ, không học từ đơn lẻ; dùng ngay 3 từ mới trong bài viết tuần đó.",
+      "detail": "Từ chỉ nhận ra được thì giúp Reading; từ dùng được mới giúp Writing/Speaking."
+    },
+    {
+      "id": "w_1794760000063_1794760000063",
+      "title": "Đọc báo tiếng Anh thế nào để có lợi cho Reading?",
+      "category": "The Scholastic Citadel",
+      "answer": "Đọc 1 lần lấy ý chính trong thời gian giới hạn, lần 2 gạch từ và cấu trúc, cuối cùng tóm tắt 3 câu bằng lời của mình.",
+      "detail": "Tóm tắt bằng lời của mình chính là luyện paraphrase."
+    },
+    {
+      "id": "w_1794760000064_1794760000064",
+      "title": "Thi thử full test cần chú ý gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Làm liền một mạch, đúng giờ, trên máy tính, không tạm dừng; sau đó chữa ngay hôm sau.",
+      "detail": "Giúp quen sức bền và giao diện thi máy."
+    },
+    {
+      "id": "w_1794760000065_1794760000065",
+      "title": "Error Log dùng để làm gì?",
+      "category": "The Scholastic Citadel",
+      "answer": "Ghi mọi lỗi theo loại (bẫy paraphrase, chính tả, Not Given, ngữ pháp…). Mỗi Chủ nhật đọc lại và tìm 1 loại lỗi lặp nhiều nhất để sửa tuần sau.",
+      "detail": "Điểm tăng nhanh nhất khi xử lý lỗi lặp lại, không phải khi học thêm cái mới."
+    },
+    {
+      "id": "w_1794758007405_1794758007408",
+      "title": "Overall, it is clear that",
+      "category": "The Collocation Arena",
+      "answer": "câu mở đoạn tổng quan (overview) – bắt buộc để có Task Achievement 7+",
+      "detail": "câu mở đoạn tổng quan (overview) – bắt buộc để có Task Achievement 7+"
+    },
+    {
+      "id": "w_1794760813596_1794760813596",
+      "title": "That's an interesting question.",
+      "category": "The Collocation Arena",
+      "answer": "câu giờ tự nhiên khi gặp câu hỏi lạ (Part 3)",
+      "detail": "câu giờ tự nhiên khi gặp câu hỏi lạ (Part 3)"
+    },
+    {
+      "id": "w_1794760813597_1794760813597",
+      "title": "Let me think for a second.",
+      "category": "The Collocation Arena",
+      "answer": "xin vài giây suy nghĩ",
+      "detail": "xin vài giây suy nghĩ"
+    },
+    {
+      "id": "w_1794760813600_1794760813600",
+      "title": "As far as I'm concerned",
+      "category": "The Collocation Arena",
+      "answer": "theo quan điểm của tôi (trang trọng hơn)",
+      "detail": "theo quan điểm của tôi (trang trọng hơn)"
+    },
+    {
+      "id": "w_1794760813891_1794760813891",
+      "title": "Cách dùng 1 phút chuẩn bị Part 2?",
+      "category": "The Collocation Arena",
+      "answer": "Ghi 4–6 từ khóa theo các gợi ý của cue card, thêm 1 chi tiết cụ thể (tên, thời gian, nơi chốn) và 1 cảm xúc. Không viết câu hoàn chỉnh.",
+      "detail": "Nói theo thứ tự gợi ý trên thẻ để không bị bí ý."
+    },
+    {
+      "id": "w_1794760813892_1794760813892",
+      "title": "Khung kể chuyện chung cho Part 2 (2 phút)?",
+      "category": "The Collocation Arena",
+      "answer": "Mở đầu nêu chủ đề → bối cảnh (khi nào, ở đâu, với ai) → diễn biến chính với 2–3 chi tiết cụ thể → cảm xúc lúc đó → vì sao đáng nhớ / bài học.",
+      "detail": "Chi tiết cụ thể và cảm xúc giúp nói đủ 2 phút tự nhiên."
+    },
+    {
+      "id": "w_1794760813893_1794760813893",
+      "title": "Cue card 'Describe a person' triển khai thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Họ là ai và quen thế nào → ngoại hình hoặc tính cách nổi bật (kèm 1 ví dụ hành động) → một kỷ niệm cụ thể → vì sao người đó ảnh hưởng đến bạn.",
+      "detail": "Dùng tính từ tính cách đa dạng: down-to-earth, easy-going, inspiring, supportive."
+    },
+    {
+      "id": "w_1794760813894_1794760813894",
+      "title": "Cue card 'Describe a place' triển khai thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Tên và vị trí → lần đầu đến, đi với ai → mô tả bằng giác quan (nhìn, nghe, mùi) → hoạt động ở đó → cảm nhận và có muốn quay lại không.",
+      "detail": "Mô tả bằng giác quan giúp tăng điểm Lexical Resource."
+    },
+    {
+      "id": "w_1794760813895_1794760813895",
+      "title": "Cue card 'Describe an object / thing you own' triển khai thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Đó là gì, có từ khi nào, ai tặng hoặc mua ở đâu → hình dáng, công dụng → bạn dùng nó thế nào → vì sao quan trọng với bạn.",
+      "detail": "Có thể biến đồ vật thành một câu chuyện nhỏ để dễ nói đủ thời gian."
+    },
+    {
+      "id": "w_1794760813896_1794760813896",
+      "title": "Cue card 'Describe an event / experience' triển khai thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Khi nào, ở đâu → chuẩn bị gì trước đó → điều gì xảy ra (theo trình tự) → có gì bất ngờ → cảm xúc và bài học.",
+      "detail": "Dùng thì quá khứ chính xác: past simple, past continuous, past perfect."
+    },
+    {
+      "id": "w_1794760813897_1794760813897",
+      "title": "Nếu nói hết ý trước 2 phút thì làm gì?",
+      "category": "The Collocation Arena",
+      "answer": "Mở rộng bằng: so sánh với hiện tại, nói về điều bạn muốn làm lần sau, hoặc nêu cảm nghĩ của người khác về chuyện đó.",
+      "detail": "Giám khảo sẽ dừng bạn; cứ nói cho đến khi được ngắt."
+    },
+    {
+      "id": "w_1794760813898_1794760813898",
+      "title": "Không có trải nghiệm đúng với cue card thì sao?",
+      "category": "The Collocation Arena",
+      "answer": "Được phép kể một câu chuyện hợp lý hoặc mượn trải nghiệm của người quen. Giám khảo chấm cách nói, không kiểm tra sự thật.",
+      "detail": "Chọn câu chuyện bạn có nhiều từ vựng để kể nhất."
+    },
+    {
+      "id": "w_1794760813899_1794760813899",
+      "title": "Khung trả lời một câu Part 3?",
+      "category": "The Collocation Arena",
+      "answer": "Nêu ý chính → lý do → ví dụ cụ thể (xã hội hoặc bản thân) → hệ quả hoặc mặt trái → chốt lại. Khoảng 4–6 câu.",
+      "detail": "Part 3 hỏi về xã hội nói chung, không chỉ về bạn."
+    },
+    {
+      "id": "w_1794760813900_1794760813900",
+      "title": "Câu hỏi so sánh (So sánh X và Y / quá khứ và hiện tại) trả lời thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Nêu điểm khác chính → giải thích nguyên nhân → ví dụ → (tuỳ chọn) điểm giống nhau.",
+      "detail": "Dùng: whereas, compared to, used to, these days."
+    },
+    {
+      "id": "w_1794760813901_1794760813901",
+      "title": "Câu hỏi nguyên nhân (Why do people…?) trả lời thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Đưa 2 nguyên nhân, mỗi nguyên nhân kèm giải thích ngắn hoặc ví dụ; có thể nói nguyên nhân nào quan trọng hơn.",
+      "detail": "Dùng: one reason is…, another factor is…, perhaps the main reason is…"
+    },
+    {
+      "id": "w_1794760813902_1794760813902",
+      "title": "Câu hỏi giải pháp (How can we solve…?) trả lời thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Đề xuất 1–2 giải pháp → ai thực hiện (chính phủ, trường, cá nhân) → vì sao hiệu quả → hạn chế có thể có.",
+      "detail": "Dùng câu điều kiện: if the government invested more in…, it would…"
+    },
+    {
+      "id": "w_1794760813903_1794760813903",
+      "title": "Câu hỏi dự đoán tương lai trả lời thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Dự đoán có rào đón → lý do dựa trên xu hướng hiện nay → ví dụ → tác động tốt hoặc xấu.",
+      "detail": "Dùng: I'd imagine…, it's quite likely that…, in the long run…"
+    },
+    {
+      "id": "w_1794760813904_1794760813904",
+      "title": "Câu hỏi đánh giá (Is it good or bad…?) trả lời thế nào?",
+      "category": "The Collocation Arena",
+      "answer": "Thừa nhận cả hai mặt → nghiêng về một bên và giải thích vì sao → ví dụ.",
+      "detail": "Tránh trả lời một chiều tuyệt đối; dùng having said that, on balance."
+    },
+    {
+      "id": "w_1794760813905_1794760813905",
+      "title": "Trả lời Part 1 dài bao nhiêu là vừa?",
+      "category": "The Collocation Arena",
+      "answer": "2–3 câu: trả lời trực tiếp → lý do hoặc chi tiết → (tuỳ chọn) một ví dụ hay so sánh nhỏ.",
+      "detail": "Quá ngắn thì thiếu Fluency; quá dài thì giám khảo sẽ cắt."
+    }
+  ]
+}

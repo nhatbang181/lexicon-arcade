@@ -38,6 +38,7 @@ export interface AudioQuestion {
   pos: string;
   meaning: string;
   correctAnswer: string;
+  acceptedAnswers?: string[];
   realmId: string;
 }
 

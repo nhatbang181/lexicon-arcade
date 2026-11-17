@@ -9,6 +9,7 @@ interface MistakeBankModalProps {
   mistakes: MistakeRecord[];
   onRemoveMistake: (id: string) => void;
   onClearAll: () => void;
+  onPracticeMistakes?: () => void;
 }
 
 export const MistakeBankModal: React.FC<MistakeBankModalProps> = ({
@@ -17,6 +18,7 @@ export const MistakeBankModal: React.FC<MistakeBankModalProps> = ({
   mistakes,
   onRemoveMistake,
   onClearAll,
+  onPracticeMistakes,
 }) => {
   if (!isOpen) return null;
 
@@ -49,7 +51,7 @@ export const MistakeBankModal: React.FC<MistakeBankModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="pixel-btn-red px-2.5 py-1 text-xs"
+            className="pixel-btn-red px-2.5 py-1 text-xs cursor-pointer"
           >
             ✕ ĐÓNG
           </button>
@@ -119,7 +121,7 @@ export const MistakeBankModal: React.FC<MistakeBankModalProps> = ({
                   <button
                     type="button"
                     onClick={() => handleMastered(record.id)}
-                    className="pixel-btn-green px-3 py-1.5 text-[10px] whitespace-nowrap"
+                    className="pixel-btn-green px-3 py-1.5 text-[10px] whitespace-nowrap cursor-pointer"
                     title="Đã nhớ từ này, xóa khỏi sổ tay"
                   >
                     ✓ ĐÃ THUỘC
@@ -132,17 +134,31 @@ export const MistakeBankModal: React.FC<MistakeBankModalProps> = ({
 
         {/* Footer */}
         {mistakes.length > 0 && (
-          <div className="pt-4 border-t border-amber-900/60 mt-4 flex items-center justify-between">
+          <div className="pt-4 border-t border-amber-900/60 mt-4 flex flex-wrap items-center justify-between gap-3">
             <span className="text-xs text-stone-400">
               Tổng cộng: <strong className="text-amber-300">{mistakes.length}</strong> từ
             </span>
-            <button
-              type="button"
-              onClick={onClearAll}
-              className="text-xs text-red-400/80 hover:text-red-300 underline cursor-pointer"
-            >
-              Xóa tất cả
-            </button>
+
+            <div className="flex items-center gap-3">
+              {onPracticeMistakes && (
+                <button
+                  type="button"
+                  onClick={onPracticeMistakes}
+                  className="pixel-btn-yellow px-4 py-1.5 text-[11px] flex items-center gap-1.5 cursor-pointer"
+                >
+                  <span>⚡</span>
+                  <span>LUYỆN TẬP LẠI NGAY</span>
+                </button>
+              )}
+
+              <button
+                type="button"
+                onClick={onClearAll}
+                className="text-xs text-red-400/80 hover:text-red-300 underline cursor-pointer"
+              >
+                Xóa tất cả
+              </button>
+            </div>
           </div>
         )}
       </div>

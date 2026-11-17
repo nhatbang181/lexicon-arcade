@@ -7,9 +7,10 @@ import { IOEArenaGame } from './components/ioe/IOEArenaGame.tsx';
 import { SoulKnightGame } from './components/SoulKnightGame.tsx';
 import { Shop } from './components/Shop.tsx';
 import { Grimoire } from './components/Grimoire.tsx';
+import { StrategyHandbook } from './components/StrategyHandbook.tsx';
 import { Volume2, VolumeX } from 'lucide-react';
 
-type ScreenMode = 'ioe_arena' | 'world_map' | 'soul_knight' | 'shop' | 'grimoire';
+type ScreenMode = 'ioe_arena' | 'world_map' | 'soul_knight' | 'handbook' | 'shop' | 'grimoire';
 
 export const App: React.FC = () => {
   const [vocabData, setVocabData] = useState<VocabData | null>(null);
@@ -88,7 +89,7 @@ export const App: React.FC = () => {
         </div>
         <h1 className="text-xl font-bold text-amber-400">IOE ARENA: IELTS 8.0</h1>
         <p className="text-xs text-slate-400 mt-3 font-mono">
-          Loading 1,499 Anki Vocab Cards & Challenges...
+          Loading 1,437 Pure Vocab Cards & Challenges...
         </p>
       </div>
     );
@@ -131,10 +132,10 @@ export const App: React.FC = () => {
           </div>
 
           {/* Retro Navigation Tabs */}
-          <nav className="flex items-center gap-2">
+          <nav className="flex items-center gap-2 flex-wrap">
             <button
               onClick={() => setCurrentScreen('ioe_arena')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all ${
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
                 currentScreen === 'ioe_arena'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
@@ -144,8 +145,19 @@ export const App: React.FC = () => {
             </button>
 
             <button
+              onClick={() => setCurrentScreen('handbook')}
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
+                currentScreen === 'handbook'
+                  ? 'pixel-btn-yellow shadow-md'
+                  : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
+              }`}
+            >
+              💡 CẨM NANG 8.0
+            </button>
+
+            <button
               onClick={() => setCurrentScreen('world_map')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all ${
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
                 currentScreen === 'world_map'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
@@ -155,19 +167,8 @@ export const App: React.FC = () => {
             </button>
 
             <button
-              onClick={() => setCurrentScreen('soul_knight')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all ${
-                currentScreen === 'soul_knight'
-                  ? 'pixel-btn-yellow shadow-md'
-                  : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
-              }`}
-            >
-              ⚔️ SOUL KNIGHT
-            </button>
-
-            <button
               onClick={() => setCurrentScreen('grimoire')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all ${
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
                 currentScreen === 'grimoire'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
@@ -177,14 +178,14 @@ export const App: React.FC = () => {
             </button>
 
             <button
-              onClick={() => setCurrentScreen('shop')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all hidden sm:block ${
-                currentScreen === 'shop'
+              onClick={() => setCurrentScreen('soul_knight')}
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer hidden md:block ${
+                currentScreen === 'soul_knight'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
               }`}
             >
-              CỬA HÀNG
+              ⚔️ SOUL KNIGHT
             </button>
           </nav>
 
@@ -201,7 +202,7 @@ export const App: React.FC = () => {
 
             <button
               onClick={toggleSound}
-              className="p-2 rounded-xl bg-slate-900 border-2 border-slate-800 text-slate-400 hover:text-slate-100 transition-colors"
+              className="p-2 rounded-xl bg-slate-900 border-2 border-slate-800 text-slate-400 hover:text-slate-100 transition-colors cursor-pointer"
               title={isMuted ? 'Bật âm thanh' : 'Tắt âm thanh'}
             >
               {isMuted ? (
@@ -219,8 +220,16 @@ export const App: React.FC = () => {
         {currentScreen === 'ioe_arena' && activeRealm && (
           <IOEArenaGame
             realm={activeRealm}
+            allRealms={vocabData.realms}
+            onSelectRealm={handleSelectRealm}
             onExit={handleExitToMap}
             onNextRealm={handleNextRealm}
+          />
+        )}
+
+        {currentScreen === 'handbook' && (
+          <StrategyHandbook
+            onExit={handleExitToMap}
           />
         )}
 

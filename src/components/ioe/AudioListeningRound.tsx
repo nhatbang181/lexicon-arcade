@@ -77,8 +77,11 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
 
       const cleanInput = userInput.trim().toLowerCase();
       const cleanTarget = question.correctAnswer.toLowerCase();
+      const accepted = (question.acceptedAnswers || []).map((a) => a.toLowerCase().trim());
 
-      if (cleanInput === cleanTarget) {
+      const isMatch = cleanInput === cleanTarget || accepted.includes(cleanInput);
+
+      if (isMatch) {
         // Correct!
         setIsAnswered(true);
         soundEngine.playVictorySound();
@@ -101,8 +104,20 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
         onFail(userInput.trim());
       }
     },
-    [userInput, question.correctAnswer, question.audioText, isAnswered, timeLeft, combo, showIpaHint, onSuccess, onFail]
+    [userInput, question.correctAnswer, question.acceptedAnswers, question.audioText, isAnswered, timeLeft, combo, showIpaHint, onSuccess, onFail]
   );
+
+  // Keyboard shortcut (Alt+A or Ctrl+Space to replay audio)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.altKey && e.key.toLowerCase() === 'a') || (e.ctrlKey && e.key === ' ')) {
+        e.preventDefault();
+        playAudio(0.9);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [playAudio]);
 
   const timerPercent = Math.max(0, Math.min(100, (timeLeft / 30) * 100));
   const timerColor = timeLeft > 10 ? 'bg-amber-400' : 'bg-red-500 animate-pulse';
@@ -140,8 +155,9 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
             onClick={() => playAudio(0.9)}
             disabled={isPlayingAudio}
             className={`pixel-btn-yellow px-5 py-2.5 text-xs flex items-center gap-2 ${
-              isPlayingAudio ? 'animate-pulse' : ''
+              isPlayingAudio ? 'animate-pulse ring-2 ring-amber-300' : ''
             }`}
+            title="Phím tắt: Alt+A"
           >
             <span>🔊</span>
             <span>{isPlayingAudio ? 'ĐANG PHÁT...' : 'NGHE PHÁT ÂM (1.0x)'}</span>
@@ -210,7 +226,7 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
             disabled={isAnswered}
-            placeholder="Gõ từ bạn nghe được..."
+            placeholder="Gõ từ bạn nghe được... (Bấm Enter)"
             className="w-full px-4 py-3 bg-stone-950 text-amber-200 font-mono text-lg rounded-lg border-2 border-stone-700 focus:border-amber-400 focus:outline-none placeholder:text-stone-600"
             autoComplete="off"
             autoCorrect="off"
@@ -226,7 +242,7 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
         <button
           type="submit"
           disabled={isAnswered || !userInput.trim()}
-          className="w-full sm:w-auto pixel-btn-green px-6 py-3 text-xs flex items-center justify-center gap-2 whitespace-nowrap disabled:opacity-40 disabled:cursor-not-allowed"
+          className="w-full sm:w-auto pixel-btn-green px-6 py-3 text-xs flex items-center justify-center gap-2 whitespace-nowrap disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
         >
           <span>XÁC NHẬN</span>
           <span>↵</span>

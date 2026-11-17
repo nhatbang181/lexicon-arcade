@@ -8,6 +8,7 @@ import type {
   ClozeQuestion 
 } from '../../types/ioe.ts';
 import { 
+  selectRoundCandidates,
   generateScrambleQuestion, 
   generateMatchingRound, 
   generateAudioQuestion, 
@@ -24,6 +25,8 @@ import { MistakeBankModal } from './MistakeBankModal.tsx';
 
 interface IOEArenaGameProps {
   realm: Realm;
+  allRealms?: Realm[];
+  onSelectRealm?: (realm: Realm) => void;
   onExit: () => void;
   onNextRealm: () => void;
 }
@@ -32,6 +35,8 @@ const STORAGE_MISTAKES_KEY = 'ioe_mistakes';
 
 export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
   realm,
+  allRealms,
+  onSelectRealm,
   onExit,
   onNextRealm,
 }) => {
@@ -43,6 +48,7 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
   const [maxCombo, setMaxCombo] = useState<number>(1);
   const [isGameOver, setIsGameOver] = useState<boolean>(false);
   const [isVictory, setIsVictory] = useState<boolean>(false);
+  const [isPracticeMode, setIsPracticeMode] = useState<boolean>(false);
 
   // Mistake bank modal state
   const [isMistakeModalOpen, setIsMistakeModalOpen] = useState<boolean>(false);
@@ -95,23 +101,18 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
   const [matchingData, setMatchingData] = useState<MatchingRoundData | null>(null);
   const [audioQ, setAudioQ] = useState<AudioQuestion | null>(null);
   const [clozeQ, setClozeQ] = useState<ClozeQuestion | null>(null);
-  const [activeTargetWord, setActiveTargetWord] = useState<VocabWord | null>(null);
 
   // Setup round questions
   const initChallenge = useCallback(() => {
     if (!realmWords || realmWords.length === 0) return;
 
-    // Pick random target words
-    const shuffled = [...realmWords].sort(() => 0.5 - Math.random());
-    const word1 = shuffled[0];
-    const word3 = shuffled[1] || shuffled[0];
-    const word4 = shuffled[2] || shuffled[0];
+    // Use smart word selector
+    const { scrambleWord, audioWord, clozeWord } = selectRoundCandidates(realmWords);
 
-    setActiveTargetWord(word1);
-    setScrambleQ(generateScrambleQuestion(word1));
+    setScrambleQ(generateScrambleQuestion(scrambleWord));
     setMatchingData(generateMatchingRound(realmWords, 6));
-    setAudioQ(generateAudioQuestion(word3));
-    setClozeQ(generateClozeQuestion(word4, realmWords));
+    setAudioQ(generateAudioQuestion(audioWord));
+    setClozeQ(generateClozeQuestion(clozeWord, realmWords));
 
     setCurrentRound(1);
     setHearts(3);
@@ -120,11 +121,51 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
     setMaxCombo(1);
     setIsGameOver(false);
     setIsVictory(false);
+    setIsPracticeMode(false);
   }, [realmWords]);
 
   useEffect(() => {
     initChallenge();
   }, [initChallenge]);
+
+  // Practice mode: launch challenge focusing on mistake words
+  const handlePracticeMistakes = useCallback(() => {
+    if (mistakes.length === 0) return;
+
+    setIsMistakeModalOpen(false);
+    setIsPracticeMode(true);
+
+    // Convert mistakes into mock VocabWord
+    const practiceWords: VocabWord[] = mistakes.map((m) => ({
+      id: m.id,
+      word: m.word,
+      ipa: m.ipa || '',
+      pos: m.pos || 'vocabulary',
+      meaning: m.meaning,
+      definition: m.meaning,
+      collocations: [],
+      example: m.contextSentence || `Practice target: ${m.word}`,
+      synonyms: [],
+      realmId: m.realmId || realm.id,
+    }));
+
+    const { scrambleWord, audioWord, clozeWord } = selectRoundCandidates(
+      practiceWords.length >= 3 ? practiceWords : [...practiceWords, ...realmWords]
+    );
+
+    setScrambleQ(generateScrambleQuestion(scrambleWord));
+    setMatchingData(generateMatchingRound([...practiceWords, ...realmWords], 6));
+    setAudioQ(generateAudioQuestion(audioWord));
+    setClozeQ(generateClozeQuestion(clozeWord, [...practiceWords, ...realmWords]));
+
+    setCurrentRound(1);
+    setHearts(3);
+    setScore(0);
+    setCombo(1);
+    setMaxCombo(1);
+    setIsGameOver(false);
+    setIsVictory(false);
+  }, [mistakes, realm.id, realmWords]);
 
   // Round success handler
   const handleSuccess = (earnedScore: number) => {
@@ -213,7 +254,7 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
 
   return (
     <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col p-4 sm:p-6 custom-scrollbar">
-      {/* HUD Header */}
+      {/* HUD Header with Realm Switcher */}
       <IOEGameHUD
         hearts={hearts}
         maxHearts={3}
@@ -221,7 +262,9 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
         combo={combo}
         roundIndex={currentRound}
         totalRounds={4}
-        realmName={realm.name}
+        realmName={isPracticeMode ? '⚡ ÔN TẬP TỪ SAI' : realm.name}
+        allRealms={allRealms}
+        onSwitchRealm={onSelectRealm}
         onOpenMistakes={() => setIsMistakeModalOpen(true)}
         mistakeCount={mistakes.length}
         onExit={onExit}
@@ -235,7 +278,7 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
             maxCombo={maxCombo}
             heartsRemaining={hearts}
             totalWordsLearned={currentRound * 3}
-            realmName={realm.name}
+            realmName={isPracticeMode ? '⚡ ÔN TẬP TỪ SAI' : realm.name}
             isVictory={isVictory}
             onPlayAgain={initChallenge}
             onNextRealm={onNextRealm}
@@ -287,13 +330,14 @@ export const IOEArenaGame: React.FC<IOEArenaGameProps> = ({
         )}
       </main>
 
-      {/* Mistake Bank Modal */}
+      {/* Mistake Bank Modal with Practice Trigger */}
       <MistakeBankModal
         isOpen={isMistakeModalOpen}
         onClose={() => setIsMistakeModalOpen(false)}
         mistakes={mistakes}
         onRemoveMistake={removeMistake}
         onClearAll={clearAllMistakes}
+        onPracticeMistakes={handlePracticeMistakes}
       />
     </div>
   );

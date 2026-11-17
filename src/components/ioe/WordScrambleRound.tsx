@@ -32,6 +32,7 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
   const [isAnswered, setIsAnswered] = useState<boolean>(false);
   const [isError, setIsError] = useState<boolean>(false);
   const [timeLeft, setTimeLeft] = useState<number>(30);
+  const [hintsUsed, setHintsUsed] = useState<number>(0);
 
   // Setup tiles when question changes
   useEffect(() => {
@@ -46,6 +47,7 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
       setIsAnswered(false);
       setIsError(false);
       setTimeLeft(30);
+      setHintsUsed(0);
     });
   }, [question]);
 
@@ -83,7 +85,8 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
         const baseScore = 100;
         const timeBonus = timeLeft * 5;
         const comboBonus = (combo || 1) * 20;
-        const totalScore = baseScore + timeBonus + comboBonus;
+        const hintPenalty = hintsUsed * 15;
+        const totalScore = Math.max(30, baseScore + timeBonus + comboBonus - hintPenalty);
 
         setTimeout(() => {
           onSuccess(totalScore);
@@ -96,7 +99,7 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
         onFail(userWord);
       }
     },
-    [question.originalWord, timeLeft, combo, onSuccess, onFail]
+    [question.originalWord, timeLeft, combo, hintsUsed, onSuccess, onFail]
   );
 
   // Pick tile from available bank
@@ -151,6 +154,25 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
     setSelectedTiles([]);
   }, [isAnswered, question.scrambledLetters]);
 
+  // Provide 1 letter hint
+  const handleHint = useCallback(() => {
+    if (isAnswered || selectedTiles.length >= question.originalWord.length) return;
+
+    const nextIndex = selectedTiles.length;
+    const expectedChar = question.originalWord[nextIndex]?.toLowerCase();
+    if (!expectedChar) return;
+
+    const matchingTile = availableTiles.find(
+      (t) => t.char.toLowerCase() === expectedChar
+    );
+
+    if (matchingTile) {
+      soundEngine.playCoinSound();
+      setHintsUsed((prev) => prev + 1);
+      handleSelectTile(matchingTile);
+    }
+  }, [isAnswered, selectedTiles.length, question.originalWord, availableTiles, handleSelectTile]);
+
   // Physical keyboard listener
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -166,6 +188,10 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
         e.preventDefault();
         handleReset();
         return;
+      }
+
+      if (e.key === ' ') {
+        e.preventDefault();
       }
 
       const key = e.key.toLowerCase();
@@ -303,7 +329,7 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
       </div>
 
       {/* Control Buttons */}
-      <div className="flex items-center gap-3 w-full justify-center">
+      <div className="flex flex-wrap items-center gap-3 w-full justify-center">
         <button
           type="button"
           onClick={handleBackspace}
@@ -312,6 +338,17 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
         >
           <span>⌫</span>
           <span>XÓA (Backspace)</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={handleHint}
+          disabled={availableTiles.length === 0 || isAnswered}
+          className="pixel-btn-blue px-4 py-2 text-xs flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed"
+          title="Gợi ý chữ cái tiếp theo (-15 điểm)"
+        >
+          <span>💡</span>
+          <span>GỢI Ý 1 KÝ TỰ</span>
         </button>
 
         <button
