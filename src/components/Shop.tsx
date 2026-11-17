@@ -1,214 +1,242 @@
 import React, { useState } from 'react';
 import type { PlayerState, Item } from '../types/game.ts';
-import { SHOP_ITEMS } from '../data/shopItems.ts';
 import { gameStore } from '../store/gameStore.ts';
-import { 
-  ArrowLeft, Coins, Shield, Swords, Wand2, Shirt, 
-  Crown, Gem, Heart, Zap, Sparkles, Check, Package
-} from 'lucide-react';
+import { ArrowLeft, Check, Coins } from 'lucide-react';
 
 interface ShopProps {
   player: PlayerState;
   onExit: () => void;
 }
 
-const RARITY_COLORS: Record<string, { border: string; bg: string; text: string }> = {
-  common: { border: 'border-slate-700', bg: 'bg-slate-800/40', text: 'text-slate-400' },
-  rare: { border: 'border-blue-500/50', bg: 'bg-blue-950/30', text: 'text-blue-400' },
-  epic: { border: 'border-purple-500/50', bg: 'bg-purple-950/30', text: 'text-purple-400' },
-  legendary: { border: 'border-amber-500/60', bg: 'bg-amber-950/40', text: 'text-amber-400' }
-};
+interface PixelPedestalItem {
+  id: string;
+  name: string;
+  type: 'weapon' | 'potion' | 'relic';
+  sprite: string;
+  price: number;
+  damage?: number;
+  energyCost?: number;
+  desc: string;
+  rarity: 'Common' | 'Rare' | 'Legendary';
+}
+
+const PEDESTAL_ITEMS: PixelPedestalItem[] = [
+  {
+    id: 'sword_knight',
+    name: "Knight's Broadsword",
+    type: 'weapon',
+    sprite: '/assets/soul_knight/weapons/sword_knight.png',
+    price: 30,
+    damage: 35,
+    energyCost: 0,
+    desc: "Sweeping blade slash. Slices through monsters and DEFLECTS enemy bullets back at them!",
+    rarity: 'Common'
+  },
+  {
+    id: 'sword_katana',
+    name: "Katana of Fluency",
+    type: 'weapon',
+    sprite: '/assets/soul_knight/weapons/sword_katana.png',
+    price: 90,
+    damage: 48,
+    energyCost: 0,
+    desc: "Rapid razor-sharp slashes with +25% Critical Strike chance.",
+    rarity: 'Rare'
+  },
+  {
+    id: 'sword_anime',
+    name: "Grand Claymore of Band 9.0",
+    type: 'weapon',
+    sprite: '/assets/soul_knight/weapons/sword_anime.png',
+    price: 220,
+    damage: 75,
+    energyCost: 2,
+    desc: "Enormous holy anime blade unleashing wide golden shockwave slashes.",
+    rarity: 'Legendary'
+  },
+  {
+    id: 'staff_red',
+    name: "Staff of Conflagration",
+    type: 'weapon',
+    sprite: '/assets/soul_knight/weapons/staff_red.png',
+    price: 120,
+    damage: 26,
+    energyCost: 3,
+    desc: "Fires triple homing fireballs towards your crosshair.",
+    rarity: 'Rare'
+  },
+  {
+    id: 'staff_green',
+    name: "Staff of Arcane Collocations",
+    type: 'weapon',
+    sprite: '/assets/soul_knight/weapons/staff_green.png',
+    price: 110,
+    damage: 34,
+    energyCost: 2,
+    desc: "Shoots piercing emerald plasma bolts that ricochet off dungeon stone walls.",
+    rarity: 'Rare'
+  },
+  {
+    id: 'bow',
+    name: "Recurve Bow of the Scribe",
+    type: 'weapon',
+    sprite: '/assets/soul_knight/weapons/bow.png',
+    price: 95,
+    damage: 55,
+    energyCost: 2,
+    desc: "High velocity piercing arrows that punch through monster lines.",
+    rarity: 'Rare'
+  },
+  {
+    id: 'hammer',
+    name: "Goliath Word Hammer",
+    type: 'weapon',
+    sprite: '/assets/soul_knight/weapons/hammer.png',
+    price: 150,
+    damage: 65,
+    energyCost: 3,
+    desc: "Smashes the floor with a 360-degree destructive shockwave ring.",
+    rarity: 'Legendary'
+  },
+  {
+    id: 'pot_heal',
+    name: "Health Elixir Flask",
+    type: 'potion',
+    sprite: '/assets/soul_knight/items/potion_red.png',
+    price: 25,
+    desc: "Instantly restores +4 HP to survive deeper dungeon rooms.",
+    rarity: 'Common'
+  },
+  {
+    id: 'pot_mana',
+    name: "Mana Energy Flask",
+    type: 'potion',
+    sprite: '/assets/soul_knight/items/potion_blue.png',
+    price: 20,
+    desc: "Restores +100 Energy to fuel heavy magic staff volleys.",
+    rarity: 'Common'
+  }
+];
 
 export const Shop: React.FC<ShopProps> = ({ player, onExit }) => {
-  const [filter, setFilter] = useState<'all' | 'weapon' | 'armor' | 'relic' | 'potion'>('all');
   const [feedback, setFeedback] = useState<string | null>(null);
 
-  const filteredItems = SHOP_ITEMS.filter(it => filter === 'all' || it.type === filter);
-
-  const isEquipped = (item: Item) => {
-    return (
-      player.equipped.weapon?.id.startsWith(item.id) ||
-      player.equipped.armor?.id.startsWith(item.id) ||
-      player.equipped.relic?.id.startsWith(item.id)
-    );
-  };
-
-  const hasInInventory = (item: Item) => {
-    return player.inventory.some(it => it.id.startsWith(item.id));
-  };
-
-  const handleBuy = (item: Item) => {
+  const handleBuy = (item: PixelPedestalItem) => {
     if (player.gold < item.price) {
-      setFeedback("Not enough gold to acquire this item!");
+      setFeedback("NOT ENOUGH COINS IN THE PURSE!");
       setTimeout(() => setFeedback(null), 2500);
       return;
     }
 
-    const ok = gameStore.buyItem(item);
-    if (ok) {
-      setFeedback(`Acquired ${item.name}!`);
-      setTimeout(() => setFeedback(null), 2500);
-    }
-  };
-
-  const handleEquip = (item: Item) => {
-    const owned = player.inventory.find(it => it.id.startsWith(item.id));
-    if (owned) {
-      gameStore.equipItem(owned);
-      setFeedback(`Equipped ${item.name}!`);
-      setTimeout(() => setFeedback(null), 2500);
-    }
+    player.gold -= item.price;
+    setFeedback(`ACQUIRED ${item.name.toUpperCase()}!`);
+    setTimeout(() => setFeedback(null), 2500);
   };
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6 space-y-6">
-      {/* Header */}
-      <div className="flex items-center justify-between bg-slate-900/90 border border-slate-800 rounded-2xl p-4 backdrop-blur-md">
+      {/* Top Header */}
+      <div className="flex items-center justify-between">
         <button
           onClick={onExit}
-          className="flex items-center gap-2 text-xs font-bold text-slate-300 hover:text-amber-400 bg-slate-800 hover:bg-slate-700/80 px-3 py-2 rounded-xl transition-colors"
+          className="pixel-btn-blue px-3 py-2 text-[10px] flex items-center gap-2"
         >
-          <ArrowLeft className="w-4 h-4" />
-          Return to Map
+          <ArrowLeft className="w-3.5 h-3.5" />
+          <span>RETURN TO LOBBY</span>
         </button>
 
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2 bg-amber-500/10 border border-amber-500/30 px-3.5 py-1.5 rounded-xl">
-            <Coins className="w-4 h-4 text-amber-400" />
-            <span className="text-xs text-slate-300">Your Coffers:</span>
-            <span className="font-bold text-amber-300 font-mono text-sm">{player.gold} Gold</span>
-          </div>
+        <div className="flex items-center gap-2 pixel-frame-grey px-4 py-2">
+          <img src="/assets/soul_knight/items/coin_0.png" alt="coin" className="w-5 h-5 pixelated" />
+          <span className="font-pixel text-xs text-amber-400">{player.gold} GOLD</span>
         </div>
       </div>
 
-      {/* Merchant Welcome Banner */}
-      <div className="bg-gradient-to-r from-amber-950/40 via-slate-900 to-slate-900 border border-amber-500/30 rounded-2xl p-5 flex items-center gap-4">
-        <div className="w-14 h-14 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-3xl">
-          🧙
+      {/* Trader Banner */}
+      <div className="pixel-frame-brown p-5 flex items-center gap-5">
+        <div className="w-16 h-16 bg-slate-900 border-2 border-amber-500 rounded-xl flex items-center justify-center p-2 shrink-0">
+          <img
+            src="/assets/soul_knight/weapons/staff_red.png"
+            alt="Trader"
+            className="w-12 h-12 object-contain pixelated drop-shadow"
+          />
         </div>
         <div>
-          <h2 className="text-lg font-bold font-rpg text-amber-300">
-            Arch-Librarian's Emporium
+          <h2 className="text-sm font-pixel text-amber-300">
+            DUNGEON PEDESTAL TRADER
           </h2>
-          <p className="text-xs text-slate-400 mt-0.5">
-            "Gold won from defeating lexical beasts may be exchanged for enchanted instruments, protective robes, and memory talismans."
+          <p className="text-xs font-mono text-amber-100/80 mt-1">
+            "Spend dungeon coins won from vanquished monsters on legendary swords, staves, bows, and recovery flasks."
           </p>
         </div>
       </div>
 
       {feedback && (
-        <div className="px-4 py-2.5 bg-amber-500/20 border border-amber-500/40 rounded-xl text-xs font-semibold text-amber-300 text-center animate-pulse">
+        <div className="pixel-frame-grey p-2.5 text-center text-xs font-pixel text-amber-400 animate-pulse">
           {feedback}
         </div>
       )}
 
-      {/* Filter Tabs */}
-      <div className="flex gap-2 border-b border-slate-800 pb-3">
-        {(['all', 'weapon', 'armor', 'relic', 'potion'] as const).map(tab => (
-          <button
-            key={tab}
-            onClick={() => setFilter(tab)}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold capitalize transition-all ${
-              filter === tab
-                ? 'bg-amber-500 text-slate-950 shadow-md'
-                : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800'
-            }`}
+      {/* Items Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {PEDESTAL_ITEMS.map((item) => (
+          <div
+            key={item.id}
+            className="pixel-frame-grey p-4 flex flex-col justify-between hover:-translate-y-1 transition-transform"
           >
-            {tab}
-          </button>
-        ))}
-      </div>
+            <div>
+              <div className="flex items-start justify-between mb-3">
+                <span className={`text-[9px] font-pixel px-2 py-0.5 rounded ${
+                  item.rarity === 'Legendary'
+                    ? 'bg-amber-500 text-black'
+                    : item.rarity === 'Rare'
+                    ? 'bg-blue-500 text-white'
+                    : 'bg-slate-700 text-slate-200'
+                }`}>
+                  {item.rarity}
+                </span>
 
-      {/* Item Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredItems.map(item => {
-          const equipped = isEquipped(item);
-          const owned = hasInInventory(item);
-          const rarity = RARITY_COLORS[item.rarity];
-
-          return (
-            <div
-              key={item.id}
-              className={`bg-slate-900/90 border ${rarity.border} rounded-2xl p-5 flex flex-col justify-between transition-all hover:-translate-y-0.5 shadow-lg`}
-            >
-              <div>
-                <div className="flex items-start justify-between mb-2">
-                  <span className={`text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full ${rarity.bg} ${rarity.text}`}>
-                    {item.rarity} · {item.type}
-                  </span>
-
-                  <div className="flex items-center gap-1 text-xs font-bold text-amber-400 font-mono">
-                    <Coins className="w-3.5 h-3.5" />
-                    <span>{item.price}</span>
-                  </div>
+                <div className="flex items-center gap-1 font-pixel text-xs text-amber-400">
+                  <img src="/assets/soul_knight/items/coin_0.png" alt="coin" className="w-4 h-4 pixelated" />
+                  <span>{item.price}</span>
                 </div>
-
-                <h3 className="text-base font-bold text-slate-100 font-rpg mt-1">
-                  {item.name}
-                </h3>
-                <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                  {item.desc}
-                </p>
-
-                {/* Stat Bonuses */}
-                {item.statBonus && (
-                  <div className="mt-3 flex flex-wrap gap-1.5 font-mono text-[11px]">
-                    {item.statBonus.attack && (
-                      <span className="bg-red-950/50 text-red-300 border border-red-800/40 px-2 py-0.5 rounded">
-                        +{item.statBonus.attack} ATK
-                      </span>
-                    )}
-                    {item.statBonus.defense && (
-                      <span className="bg-blue-950/50 text-blue-300 border border-blue-800/40 px-2 py-0.5 rounded">
-                        +{item.statBonus.defense} DEF
-                      </span>
-                    )}
-                    {item.statBonus.hp && (
-                      <span className="bg-emerald-950/50 text-emerald-300 border border-emerald-800/40 px-2 py-0.5 rounded">
-                        +{item.statBonus.hp} HP
-                      </span>
-                    )}
-                    {item.statBonus.mp && (
-                      <span className="bg-indigo-950/50 text-indigo-300 border border-indigo-800/40 px-2 py-0.5 rounded">
-                        +{item.statBonus.mp} MP
-                      </span>
-                    )}
-                    {item.statBonus.critRate && (
-                      <span className="bg-amber-950/50 text-amber-300 border border-amber-800/40 px-2 py-0.5 rounded">
-                        +{Math.round(item.statBonus.critRate * 100)}% CRIT
-                      </span>
-                    )}
-                  </div>
-                )}
               </div>
 
-              {/* Action Buttons */}
-              <div className="mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between">
-                {equipped ? (
-                  <span className="flex items-center gap-1 text-xs font-bold text-emerald-400">
-                    <Check className="w-4 h-4" /> Equipped
-                  </span>
-                ) : owned && item.type !== 'potion' ? (
-                  <button
-                    onClick={() => handleEquip(item)}
-                    className="w-full py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold rounded-xl transition-all shadow-md"
-                  >
-                    Equip Item
-                  </button>
-                ) : (
-                  <button
-                    onClick={() => handleBuy(item)}
-                    disabled={player.gold < item.price}
-                    className="w-full py-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 disabled:opacity-40 disabled:cursor-not-allowed text-slate-950 text-xs font-bold rounded-xl transition-all shadow-md flex items-center justify-center gap-1.5"
-                  >
-                    <Coins className="w-3.5 h-3.5" />
-                    <span>Purchase ({item.price} Gold)</span>
-                  </button>
-                )}
+              {/* Sprite Pedestal */}
+              <div className="w-full h-24 bg-slate-950/70 border-2 border-slate-800 rounded-xl flex items-center justify-center p-3 mb-3 shadow-inner">
+                <img
+                  src={item.sprite}
+                  alt={item.name}
+                  className="max-h-16 max-w-16 object-contain pixelated drop-shadow-[0_4px_10px_rgba(251,191,36,0.4)]"
+                />
               </div>
+
+              <h3 className="text-xs font-pixel text-slate-100 leading-snug">
+                {item.name}
+              </h3>
+              <p className="text-xs font-mono text-slate-400 mt-2 leading-relaxed">
+                {item.desc}
+              </p>
+
+              {item.damage !== undefined && (
+                <div className="mt-3 flex items-center gap-3 font-mono text-[11px]">
+                  <span className="text-red-400 font-bold">⚔️ {item.damage} ATK</span>
+                  <span className="text-blue-400 font-bold">⚡ {item.energyCost} MP</span>
+                </div>
+              )}
             </div>
-          );
-        })}
+
+            <div className="mt-4 pt-3 border-t-2 border-slate-800">
+              <button
+                onClick={() => handleBuy(item)}
+                disabled={player.gold < item.price}
+                className="w-full pixel-btn-yellow py-2 text-[10px] flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed shadow"
+              >
+                <span>PURCHASE</span>
+                <span className="text-[9px]">({item.price}G)</span>
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

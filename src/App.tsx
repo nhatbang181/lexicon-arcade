@@ -6,10 +6,7 @@ import { WorldMap } from './components/WorldMap.tsx';
 import { SoulKnightGame } from './components/SoulKnightGame.tsx';
 import { Shop } from './components/Shop.tsx';
 import { Grimoire } from './components/Grimoire.tsx';
-import { 
-  Shield, Swords, Coins, Heart, Zap, Volume2, VolumeX, 
-  BookOpen, Sparkles, Trophy, Flame, HelpCircle
-} from 'lucide-react';
+import { Volume2, VolumeX } from 'lucide-react';
 
 type ScreenMode = 'world_map' | 'combat' | 'shop' | 'grimoire';
 
@@ -22,7 +19,6 @@ export const App: React.FC = () => {
 
   // Store state
   const [player, setPlayer] = useState(gameStore.getPlayer());
-  const [totalStats, setTotalStats] = useState(gameStore.getTotalStats());
   const [srs, setSrs] = useState(gameStore.getSRS());
   const [isMuted, setIsMuted] = useState(soundEngine.isMuted());
 
@@ -30,13 +26,12 @@ export const App: React.FC = () => {
   useEffect(() => {
     const unsub = gameStore.subscribe(() => {
       setPlayer(gameStore.getPlayer());
-      setTotalStats(gameStore.getTotalStats());
       setSrs(gameStore.getSRS());
     });
     return unsub;
   }, []);
 
-  // Fetch pre-extracted Anki vocab dataset
+  // Fetch Anki vocab dataset
   useEffect(() => {
     fetch('/data/anki_vocab.json')
       .then(res => {
@@ -49,7 +44,7 @@ export const App: React.FC = () => {
       })
       .catch(err => {
         console.error("Failed to load vocab dataset:", err);
-        setError("Could not load Anki vocabulary dataset. Please run scripts/extract_anki.py.");
+        setError("Could not load Anki vocabulary dataset.");
         setLoading(false);
       });
   }, []);
@@ -72,117 +67,105 @@ export const App: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-slate-950 text-slate-100">
-        <div className="w-16 h-16 rounded-2xl bg-amber-500/10 border-2 border-amber-500/40 flex items-center justify-center text-4xl animate-bounce mb-4 shadow-xl">
-          ⚔️
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#090b14] text-slate-100 font-pixel">
+        <div className="w-16 h-16 mb-4 flex items-center justify-center">
+          <img
+            src="/assets/soul_knight/knight/idle_0.png"
+            alt="Soul Knight"
+            className="w-16 h-16 object-contain pixelated animate-bounce"
+          />
         </div>
-        <h1 className="text-2xl font-bold font-rpg text-amber-400">LEXICON QUEST</h1>
-        <p className="text-xs text-slate-400 mt-2 font-mono">Loading 1,499 IELTS 8.0 vocabulary relics from Anki...</p>
+        <h1 className="text-xl font-bold text-amber-400">SOUL KNIGHT</h1>
+        <p className="text-xs text-slate-400 mt-3 font-mono">Loading 1,499 IELTS 8.0 Runes & Dungeons...</p>
       </div>
     );
   }
 
   if (error || !vocabData) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-slate-950 text-slate-100 text-center">
-        <div className="p-4 bg-red-950/40 border border-red-500/40 rounded-2xl max-w-md">
-          <h2 className="text-lg font-bold text-red-400">Dataset Load Error</h2>
-          <p className="text-xs text-slate-300 mt-2">{error}</p>
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#090b14] text-slate-100 text-center font-pixel">
+        <div className="pixel-frame-grey p-6 max-w-md">
+          <h2 className="text-sm font-bold text-red-400">ERROR LOADING DUNGEONS</h2>
+          <p className="text-xs font-mono text-slate-300 mt-3">{error}</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-amber-500 selection:text-slate-950">
-      {/* Top Main Navigation Bar */}
-      <header className="sticky top-0 z-40 bg-slate-950/90 border-b border-slate-800/80 backdrop-blur-md px-4 py-2.5">
+    <div className="min-h-screen bg-[#090b14] text-slate-100 flex flex-col select-none">
+      {/* RETRO SOUL KNIGHT TOP HUD HEADER */}
+      <header className="sticky top-0 z-40 bg-[#090b14]/95 border-b-2 border-slate-800 backdrop-blur-md px-4 py-2.5">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           {/* Logo & Title */}
           <div 
             onClick={handleExitToMap}
-            className="flex items-center gap-2.5 cursor-pointer group"
+            className="flex items-center gap-3 cursor-pointer group"
           >
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-xl shadow-lg group-hover:scale-105 transition-transform">
-              ⚔️
+            <div className="w-10 h-10 bg-slate-900 border-2 border-amber-500 rounded-xl flex items-center justify-center p-1 shadow-md group-hover:scale-105 transition-transform">
+              <img
+                src="/assets/soul_knight/knight/idle_0.png"
+                alt="Soul Knight"
+                className="w-8 h-8 object-contain pixelated"
+              />
             </div>
             <div>
-              <span className="text-sm font-black font-rpg tracking-wider text-amber-400">
-                LEXICON QUEST
+              <span className="text-xs font-pixel text-amber-400 tracking-wider">
+                SOUL KNIGHT
               </span>
-              <span className="block text-[10px] text-slate-400 font-mono -mt-1">
-                IELTS 8.0 RPG
+              <span className="block text-[9px] text-slate-400 font-pixel mt-0.5">
+                LEXICON 8.0
               </span>
             </div>
           </div>
 
-          {/* Navigation Tabs */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-900 border border-slate-800 p-1 rounded-xl text-xs font-semibold">
+          {/* Retro Navigation Tabs */}
+          <nav className="flex items-center gap-2">
             <button
               onClick={() => setCurrentScreen('world_map')}
-              className={`px-3 py-1.5 rounded-lg transition-all ${
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all ${
                 currentScreen === 'world_map'
-                  ? 'bg-amber-500 text-slate-950 font-bold shadow'
-                  : 'text-slate-400 hover:text-slate-200'
+                  ? 'pixel-btn-yellow shadow-md'
+                  : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
               }`}
             >
-              Realms Map
+              PORTALS
             </button>
 
             <button
               onClick={() => setCurrentScreen('shop')}
-              className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all ${
                 currentScreen === 'shop'
-                  ? 'bg-amber-500 text-slate-950 font-bold shadow'
-                  : 'text-slate-400 hover:text-slate-200'
+                  ? 'pixel-btn-yellow shadow-md'
+                  : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
               }`}
             >
-              <Coins className="w-3.5 h-3.5 text-amber-400" />
-              <span>Merchant Guild</span>
+              TRADER
             </button>
 
             <button
               onClick={() => setCurrentScreen('grimoire')}
-              className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
+              className={`px-3 py-1.5 text-[10px] font-pixel transition-all ${
                 currentScreen === 'grimoire'
-                  ? 'bg-amber-500 text-slate-950 font-bold shadow'
-                  : 'text-slate-400 hover:text-slate-200'
+                  ? 'pixel-btn-yellow shadow-md'
+                  : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
               }`}
             >
-              <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
-              <span>Grimoire Codex</span>
+              CODEX
             </button>
           </nav>
 
-          {/* Player Mini HUD */}
+          {/* Player Mini Gold & Audio Toggle */}
           <div className="flex items-center gap-3">
-            {/* Level & EXP */}
-            <div className="hidden sm:flex flex-col items-end text-right">
-              <div className="flex items-center gap-1.5">
-                <span className="text-xs font-bold text-slate-200 font-rpg">{player.name}</span>
-                <span className="text-[10px] font-mono font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 px-1 rounded">
-                  Lv.{player.level}
-                </span>
-              </div>
-              <div className="w-24 h-1.5 bg-slate-800 rounded-full overflow-hidden mt-1">
-                <div
-                  className="h-full bg-amber-400"
-                  style={{ width: `${Math.min(100, (player.exp / player.maxExp) * 100)}%` }}
-                />
-              </div>
-            </div>
-
-            {/* Gold */}
-            <div className="flex items-center gap-1 text-xs font-mono font-bold bg-slate-900 border border-slate-800 px-2.5 py-1.5 rounded-xl text-amber-400">
-              <Coins className="w-3.5 h-3.5" />
+            <div className="flex items-center gap-1.5 bg-slate-900 border-2 border-slate-800 px-3 py-1.5 rounded-xl text-xs font-pixel text-amber-400">
+              <img src="/assets/soul_knight/items/coin_0.png" alt="coin" className="w-4 h-4 pixelated" />
               <span>{player.gold}</span>
             </div>
 
-            {/* Audio Toggle */}
             <button
               onClick={toggleSound}
-              className="p-2 rounded-xl text-slate-400 hover:text-slate-200 hover:bg-slate-900 border border-slate-800 transition-colors"
-              title={isMuted ? "Unmute sound effects" : "Mute sound effects"}
+              className="p-2 rounded-xl bg-slate-900 border-2 border-slate-800 text-slate-400 hover:text-slate-100 transition-colors"
+              title={isMuted ? "Unmute sound" : "Mute sound"}
             >
               {isMuted ? <VolumeX className="w-4 h-4 text-red-400" /> : <Volume2 className="w-4 h-4 text-emerald-400" />}
             </button>
@@ -190,8 +173,8 @@ export const App: React.FC = () => {
         </div>
       </header>
 
-      {/* Main Content Area */}
-      <main className="flex-1 pb-12">
+      {/* Main Screen Content */}
+      <main className="flex-1 pb-8">
         {currentScreen === 'world_map' && (
           <WorldMap
             vocabData={vocabData}
