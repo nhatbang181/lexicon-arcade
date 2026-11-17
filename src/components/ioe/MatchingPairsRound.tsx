@@ -129,12 +129,12 @@ export const MatchingPairsRound: React.FC<MatchingPairsRoundProps> = ({
             <span className="px-2.5 py-1 text-xs font-pixel bg-amber-500 text-stone-950 rounded shadow">
               ROUND 2
             </span>
-            <h2 className="text-sm font-pixel text-amber-300">
+            <h2 className="text-sm font-arcade font-bold text-amber-300 tracking-wide">
               MATCHING PAIRS / CẶP BÀI TRÙNG
             </h2>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-xs font-pixel text-emerald-400">
+            <span className="text-xs font-arcade font-bold text-emerald-400">
               Ghép: {matchedPairIds.size}/{data.totalPairs}
             </span>
             <span className="text-xs font-pixel text-amber-400">⏱️ {timeLeft}s</span>

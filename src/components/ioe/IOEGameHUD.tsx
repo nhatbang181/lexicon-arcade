@@ -55,7 +55,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
           <button
             type="button"
             onClick={onExit}
-            className="pixel-btn-red px-2.5 py-1.5 text-[11px] flex items-center gap-1.5 cursor-pointer"
+            className="pixel-btn-red px-2.5 py-1.5 text-xs flex items-center gap-1.5 cursor-pointer"
             title="Thoát về bản đồ chủ đề"
           >
             <span>◀</span>
@@ -67,7 +67,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
               <select
                 value={allRealms.find((r) => r.name === realmName)?.id || ''}
                 onChange={handleRealmChange}
-                className="bg-stone-950 text-amber-300 font-pixel text-[10px] px-2 py-1 rounded border border-amber-800/80 focus:outline-none focus:border-amber-400 cursor-pointer"
+                className="bg-stone-950 text-amber-300 font-arcade font-bold text-xs px-2.5 py-1 rounded border border-amber-800/80 focus:outline-none focus:border-amber-400 cursor-pointer"
               >
                 {allRealms.map((r) => (
                   <option key={r.id} value={r.id} className="bg-stone-900 text-stone-200">
@@ -76,13 +76,13 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
                 ))}
               </select>
             ) : (
-              <span className="text-[10px] font-pixel text-amber-400/90 tracking-wider">
+              <span className="text-xs font-arcade font-bold text-amber-400/90 tracking-wider">
                 {realmName.toUpperCase()}
               </span>
             )}
 
             <div className="flex items-center gap-2 mt-1">
-              <span className="px-2 py-0.5 text-[10px] font-pixel bg-indigo-950 text-indigo-300 border border-indigo-700 rounded">
+              <span className="px-2 py-0.5 text-xs font-arcade font-bold bg-indigo-950 text-indigo-300 border border-indigo-700 rounded">
                 CHẶNG {roundIndex}/{totalRounds}
               </span>
             </div>
@@ -112,7 +112,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
           {combo > 1 && (
             <div className="flex items-center gap-1 px-2.5 py-1 bg-amber-500/20 border border-amber-400/60 rounded-md text-amber-300 animate-pulse">
               <span className="text-xs">🔥</span>
-              <span className="font-pixel text-[11px] font-bold">x{combo} COMBO!</span>
+              <span className="font-arcade text-xs font-bold">x{combo} COMBO!</span>
             </div>
           )}
         </div>
@@ -121,7 +121,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
         <div className="flex items-center gap-3">
           {/* Score Counter */}
           <div className="flex flex-col items-end">
-            <span className="text-[10px] font-mono text-stone-400">ĐIỂM SỐ</span>
+            <span className="text-xs font-arcade text-stone-400">ĐIỂM SỐ</span>
             <span className="font-pixel text-sm sm:text-base text-amber-300 drop-shadow">
               {score.toLocaleString()}
             </span>
@@ -131,7 +131,7 @@ export const IOEGameHUD: React.FC<IOEGameHUDProps> = ({
           <button
             type="button"
             onClick={onOpenMistakes}
-            className="pixel-btn-blue px-2.5 py-1.5 text-[10px] flex items-center gap-1.5 relative cursor-pointer"
+            className="pixel-btn-blue px-3 py-1.5 text-xs flex items-center gap-1.5 relative cursor-pointer"
             title="Xem ngân hàng các từ bị sai"
           >
             <span>📚</span>

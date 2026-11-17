@@ -88,11 +88,11 @@ export const IOERoundSummary: React.FC<IOERoundSummaryProps> = ({
     <div className="w-full max-w-2xl mx-auto my-6 p-6 pixel-frame-brown bg-stone-900/95 text-stone-100 shadow-2xl flex flex-col items-center select-none">
       {/* Result Title */}
       <div className="text-center mb-6">
-        <span className="text-xs font-pixel text-amber-400/90 uppercase tracking-widest block mb-2">
+        <span className="text-xs font-arcade font-bold text-amber-400/90 uppercase tracking-widest block mb-2">
           {realmName}
         </span>
         <h1
-          className={`text-2xl sm:text-3xl font-pixel uppercase tracking-wide ${
+          className={`text-2xl sm:text-3xl font-arcade font-bold uppercase tracking-wide ${
             isVictory ? 'text-amber-300 animate-bounce' : 'text-red-400'
           }`}
         >
@@ -106,7 +106,7 @@ export const IOERoundSummary: React.FC<IOERoundSummaryProps> = ({
           <span className="text-5xl sm:text-6xl mb-2 filter drop-shadow-[0_0_12px_rgba(245,158,11,0.5)]">
             {medal.badge}
           </span>
-          <h3 className={`text-base sm:text-lg font-pixel ${medal.color} mb-1`}>
+          <h3 className={`text-base sm:text-lg font-arcade font-bold ${medal.color} mb-1`}>
             {medal.title}
           </h3>
           <p className="text-xs sm:text-sm text-stone-300">{medal.desc}</p>

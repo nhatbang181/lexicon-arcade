@@ -40,7 +40,7 @@ export const MistakeBankModal: React.FC<MistakeBankModalProps> = ({
           <div className="flex items-center gap-3">
             <span className="text-xl">📚</span>
             <div>
-              <h2 className="text-base sm:text-lg font-pixel text-amber-300">
+              <h2 className="text-base sm:text-lg font-arcade font-bold text-amber-300">
                 SỔ TAY ÔN TẬP / MISTAKE BANK
               </h2>
               <p className="text-xs text-stone-400">
@@ -62,7 +62,7 @@ export const MistakeBankModal: React.FC<MistakeBankModalProps> = ({
           {mistakes.length === 0 ? (
             <div className="py-12 flex flex-col items-center justify-center text-center text-stone-400">
               <span className="text-4xl mb-3">🌟</span>
-              <p className="font-pixel text-xs text-amber-200 mb-1">
+              <p className="font-arcade font-bold text-xs text-amber-200 mb-1">
                 SỔ TAY TRỐNG!
               </p>
               <p className="text-xs">

@@ -117,7 +117,7 @@ export const ContextClozeRound: React.FC<ContextClozeRoundProps> = ({
             <span className="px-2.5 py-1 text-xs font-pixel bg-amber-500 text-stone-950 rounded shadow">
               ROUND 4
             </span>
-            <h2 className="text-sm font-pixel text-amber-300">
+            <h2 className="text-sm font-arcade font-bold text-amber-300 tracking-wide">
               CONTEXT MASTERY / ĐIỀN KHUYẾT NGỮ CẢNH
             </h2>
           </div>
@@ -151,7 +151,7 @@ export const ContextClozeRound: React.FC<ContextClozeRoundProps> = ({
 
           {isAnswered && (
             <div className="mt-3 p-3 bg-stone-950/90 rounded border border-amber-600/40 text-xs sm:text-sm text-stone-300 whitespace-pre-line animate-fadeIn">
-              <span className="text-amber-400 font-pixel text-xs block mb-1">📖 GIẢI THÍCH CHI TIẾT:</span>
+              <span className="text-amber-400 font-arcade font-bold text-xs block mb-1">📖 GIẢI THÍCH CHI TIẾT:</span>
               {question.explanation}
             </div>
           )}
@@ -194,10 +194,10 @@ export const ContextClozeRound: React.FC<ContextClozeRoundProps> = ({
               </div>
 
               {isAnswered && isCorrect && (
-                <span className="text-emerald-400 font-pixel text-xs">✓ ĐÚNG</span>
+                <span className="text-emerald-400 font-arcade font-bold text-xs">✓ ĐÚNG</span>
               )}
               {isAnswered && isSelected && !isCorrect && (
-                <span className="text-red-400 font-pixel text-xs">✗ SAI</span>
+                <span className="text-red-400 font-arcade font-bold text-xs">✗ SAI</span>
               )}
             </button>
           );

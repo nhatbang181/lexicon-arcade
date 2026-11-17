@@ -82,7 +82,7 @@ export const StrategyHandbook: React.FC<StrategyHandbookProps> = ({ onExit }) =>
           <div className="flex items-center gap-3">
             <span className="text-3xl">💡</span>
             <div>
-              <h1 className="text-lg sm:text-xl font-pixel text-amber-300">
+              <h1 className="text-lg sm:text-xl font-arcade font-bold text-amber-300">
                 CẨM NANG BÍ QUYẾT IELTS 8.0
               </h1>
               <p className="text-xs text-stone-400 mt-1">
@@ -120,7 +120,7 @@ export const StrategyHandbook: React.FC<StrategyHandbookProps> = ({ onExit }) =>
                 key={cat}
                 type="button"
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-2.5 py-1 text-[10px] font-pixel rounded transition-colors cursor-pointer ${
+                className={`px-2.5 py-1 text-xs font-arcade font-bold rounded transition-colors cursor-pointer ${
                   selectedCategory === cat
                     ? 'bg-amber-500 text-stone-950 font-bold'
                     : 'bg-stone-950 text-stone-400 border border-stone-800 hover:text-stone-200'

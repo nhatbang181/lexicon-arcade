@@ -102,12 +102,19 @@
           "id": "w_1740297119309_1740297119309",
           "word": "embrace",
           "ipa": "",
-          "pos": "",
-          "meaning": "If you embrace a change, political system, or idea, you accept it and start supporting it or believing in it. 欣然接受，支持（变革、政治体制、观点等）He embraces the new information age...他迎接新的信息时代的到来。The new rules have been embraced by government watchdog organizations.",
-          "definition": "If you embrace a change, political system, or idea, you accept it and start supporting it or believing in it. 欣然接受，支持（变革、政治体制、观点等）He embraces the new information age...他迎接新的信息时代的到来。The new rules have been embraced by government watchdog organizations.",
-          "collocations": [],
-          "example": "If you embrace a change, political system, or idea, you accept it and start supporting it or believing in it.",
-          "synonyms": [],
+          "pos": "verb",
+          "meaning": "đón nhận, chấp nhận và ủng hộ nhiệt tình",
+          "definition": "If you embrace a change, political system, or idea, you accept it and start supporting it or believing in it.",
+          "collocations": [
+            "eagerly embrace",
+            "embrace change"
+          ],
+          "example": "He eagerly embraces the new information age and its technological innovations.",
+          "synonyms": [
+            "adopt",
+            "welcome",
+            "accept"
+          ],
           "realmId": "education"
         },
         {
@@ -138,48 +145,76 @@
           "id": "w_1740299091245_1740299091245",
           "word": "incorporated",
           "ipa": "",
-          "pos": "",
-          "meaning": "If one thing incorporates another thing, it includes the other thing. 包含;吸收The new cars will incorporate a number of major improvements.",
-          "definition": "If one thing incorporates another thing, it includes the other thing. 包含;吸收The new cars will incorporate a number of major improvements.",
-          "collocations": [],
-          "example": "If one thing incorporates another thing, it includes the other thing.",
-          "synonyms": [],
+          "pos": "verb",
+          "meaning": "sáp nhập, kết hợp, bao gồm nhiều yếu tố",
+          "definition": "If one thing incorporates another thing, it includes it as part of a whole.",
+          "collocations": [
+            "incorporate features",
+            "fully incorporated"
+          ],
+          "example": "The new design will incorporate a number of major technological improvements.",
+          "synonyms": [
+            "integrate",
+            "include",
+            "assimilate"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1740300082701_1740300082701",
           "word": "rehabilitation",
           "ipa": "",
-          "pos": "",
-          "meaning": "To rehabilitate someone who has been ill or in prison means to help them to live a normal life again. To rehabilitate someone who has a drug or alcohol problem means to help them stop using drugs or alcohol. 使康复;使戒毒(或戒酒);改造(罪犯)Considerable efforts have been made to rehabilitate patients who have suffered in this way.",
-          "definition": "To rehabilitate someone who has been ill or in prison means to help them to live a normal life again. To rehabilitate someone who has a drug or alcohol problem means to help them stop using drugs or alcohol. 使康复;使戒毒(或戒酒);改造(罪犯)Considerable efforts have been made to rehabilitate patients who have suffered in this way.",
-          "collocations": [],
-          "example": "To rehabilitate someone who has been ill or in prison means to help them to live a normal life again.",
-          "synonyms": [],
+          "pos": "noun",
+          "meaning": "sự phục hồi chức năng, phục hồi sức khỏe hoặc tái hòa nhập cộng đồng",
+          "definition": "The process of helping someone to live a healthy, useful, or normal life again after being ill or in prison.",
+          "collocations": [
+            "rehabilitation programme",
+            "physical rehabilitation"
+          ],
+          "example": "Considerable efforts have been made to support the rehabilitation of injured patients.",
+          "synonyms": [
+            "recovery",
+            "restoration",
+            "reintegration"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1740300143035_1740300143035",
           "word": "brisk",
           "ipa": "",
-          "pos": "",
-          "meaning": "A brisk activity or action is done quickly and in an energetic way. 轻快的；生气勃勃的Taking a brisk walk can often induce a feeling of well-being...快步行走常常会使人感到身心舒畅。The horse broke into a brisk trot.",
-          "definition": "A brisk activity or action is done quickly and in an energetic way. 轻快的；生气勃勃的Taking a brisk walk can often induce a feeling of well-being...快步行走常常会使人感到身心舒畅。The horse broke into a brisk trot.",
-          "collocations": [],
-          "example": "A brisk activity or action is done quickly and in an energetic way.",
-          "synonyms": [],
+          "pos": "adjective",
+          "meaning": "nhanh nhẹn, lẹ làng, sôi nổi",
+          "definition": "Quick, energetic, and active.",
+          "collocations": [
+            "brisk walk",
+            "brisk pace"
+          ],
+          "example": "Taking a brisk walk in the morning can often induce a feeling of well-being.",
+          "synonyms": [
+            "quick",
+            "energetic",
+            "lively"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1740300297287_1740300297287",
           "word": "spatial",
           "ipa": "",
-          "pos": "",
-          "meaning": "spatial is used to describe things relating to areas. 空间的;与空间有关的...the spatial distribution of black employment and population in South Africa.南非黑人就业与人口的空间分布...spatial constraints.",
-          "definition": "spatial is used to describe things relating to areas. 空间的;与空间有关的...the spatial distribution of black employment and population in South Africa.南非黑人就业与人口的空间分布...spatial constraints.",
-          "collocations": [],
-          "example": "spatial is used to describe things relating to areas.",
-          "synonyms": [],
+          "pos": "adjective",
+          "meaning": "thuộc về không gian, định vị không gian",
+          "definition": "Relating to the position, area, and size of things in space.",
+          "collocations": [
+            "spatial distribution",
+            "spatial awareness"
+          ],
+          "example": "The researcher studied the spatial distribution of urban population in metropolitan areas.",
+          "synonyms": [
+            "geographical",
+            "dimensional",
+            "locational"
+          ],
           "realmId": "education"
         },
         {
@@ -199,35 +234,56 @@
           "word": "rampant",
           "ipa": "",
           "pos": "adjective",
-          "meaning": "ADJ-GRADEDIf you describe something bad, such as a crime or disease, as rampant, you mean that it is very common and is increasing in an uncontrolled way. （犯罪）猖獗的；（疾病）蔓延的Inflation is rampant and industry in decline.通胀势头严重，工业不断下滑。...the rampant corruption of the administration.",
-          "definition": "ADJ-GRADEDIf you describe something bad, such as a crime or disease, as rampant, you mean that it is very common and is increasing in an uncontrolled way. （犯罪）猖獗的；（疾病）蔓延的Inflation is rampant and industry in decline.通胀势头严重，工业不断下滑。...the rampant corruption of the administration.",
-          "collocations": [],
-          "example": "ADJ-GRADEDIf you describe something bad, such as a crime or disease, as rampant, you mean that it is very common and is increasing in an uncontrolled way.",
-          "synonyms": [],
+          "meaning": "lan tràn, hoành hành mất kiểm soát (tệ nạn, lạm phát, dịch bệnh)",
+          "definition": "Existing or spreading everywhere in a way that is very difficult to control.",
+          "collocations": [
+            "rampant inflation",
+            "rampant corruption"
+          ],
+          "example": "Rampant inflation and high unemployment have severely damaged the local economy.",
+          "synonyms": [
+            "uncontrolled",
+            "widespread",
+            "unchecked"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1740306822946_1740306822952",
           "word": "regime",
           "ipa": "",
-          "pos": "",
-          "meaning": "f you refer to a government or system of running a country as a regime, you are critical of it because you think it is not democratic and uses unacceptable methods. 政权，政体（指非民主且统治手段不被认可的政府或政权体系）...the collapse of the Fascist regime at the end of the war...在战争末期法西斯政权的倒台Pujol was imprisoned and tortured under the Franco regime",
-          "definition": "f you refer to a government or system of running a country as a regime, you are critical of it because you think it is not democratic and uses unacceptable methods. 政权，政体（指非民主且统治手段不被认可的政府或政权体系）...the collapse of the Fascist regime at the end of the war...在战争末期法西斯政权的倒台Pujol was imprisoned and tortured under the Franco regime",
-          "collocations": [],
-          "example": "f you refer to a government or system of running a country as a regime, you are critical of it because you think it is not democratic and uses unacceptable methods.",
-          "synonyms": [],
+          "pos": "noun",
+          "meaning": "chế độ chính trị, chính thể cai trị",
+          "definition": "A method or system of government, especially an authoritarian one.",
+          "collocations": [
+            "authoritarian regime",
+            "regime change"
+          ],
+          "example": "The authoritarian regime imposed strict restrictions on freedom of the press.",
+          "synonyms": [
+            "government",
+            "administration",
+            "authority"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1740379112528_1740379112530",
           "word": "daunting",
           "ipa": "",
-          "pos": "",
-          "meaning": "Something that is daunting makes you feel slightly afraid or worried about dealing with it. 使人畏惧的;令人胆怯的;让人气馁的They were faced with the daunting task of restoring the house...他们面临着修复房子的艰巨任务。The move to Prague was a daunting prospect for the bishop...",
-          "definition": "Something that is daunting makes you feel slightly afraid or worried about dealing with it. 使人畏惧的;令人胆怯的;让人气馁的They were faced with the daunting task of restoring the house...他们面临着修复房子的艰巨任务。The move to Prague was a daunting prospect for the bishop...",
-          "collocations": [],
-          "example": "Something that is daunting makes you feel slightly afraid or worried about dealing with it.",
-          "synonyms": [],
+          "pos": "adjective",
+          "meaning": "nản lòng, gây thoái chí, đầy thử thách khó khăn",
+          "definition": "Making you feel slightly afraid or worried about dealing with something difficult.",
+          "collocations": [
+            "daunting task",
+            "daunting prospect"
+          ],
+          "example": "They were faced with the daunting task of restoring the historic cathedral after the fire.",
+          "synonyms": [
+            "intimidating",
+            "challenging",
+            "formidable"
+          ],
           "realmId": "education"
         },
         {
@@ -270,12 +326,19 @@
           "id": "w_1740379945438_1740379945438",
           "word": "breakneck",
           "ipa": "",
-          "pos": "",
-          "meaning": "If you say that something happens or travels at breakneck speed, you mean that it happens or travels very fast. （速度）极快的Jack drove to Mayfair at breakneck speed.",
-          "definition": "If you say that something happens or travels at breakneck speed, you mean that it happens or travels very fast. （速度）极快的Jack drove to Mayfair at breakneck speed.",
-          "collocations": [],
-          "example": "If you say that something happens or travels at breakneck speed, you mean that it happens or travels very fast.",
-          "synonyms": [],
+          "pos": "adjective",
+          "meaning": "nhanh đến chóng mặt, tốc độ nguy hiểm",
+          "definition": "Extremely fast and dangerous.",
+          "collocations": [
+            "breakneck speed",
+            "breakneck pace"
+          ],
+          "example": "Modern technology has developed at breakneck speed over the past two decades.",
+          "synonyms": [
+            "rapid",
+            "lightning-fast",
+            "headlong"
+          ],
           "realmId": "education"
         },
         {
@@ -439,11 +502,18 @@
           "word": "integrity",
           "ipa": "",
           "pos": "noun",
-          "meaning": "N-UNCOUNTIf you have integrity, you are honest and firm in your moral principles. 正直;诚实I have always regarded him as a man of integrity...我一直认为他正直诚实。He was praised for his fairness and high integrity.",
-          "definition": "N-UNCOUNTIf you have integrity, you are honest and firm in your moral principles. 正直;诚实I have always regarded him as a man of integrity...我一直认为他正直诚实。He was praised for his fairness and high integrity.",
-          "collocations": [],
-          "example": "N-UNCOUNTIf you have integrity, you are honest and firm in your moral principles.",
-          "synonyms": [],
+          "meaning": "sự chính trực, liêm khiết, vẹn toàn đạo đức",
+          "definition": "The quality of being honest and having strong moral principles.",
+          "collocations": [
+            "high integrity",
+            "moral integrity"
+          ],
+          "example": "He is widely respected throughout the academic community for his intellectual integrity.",
+          "synonyms": [
+            "honesty",
+            "uprightness",
+            "probity"
+          ],
           "realmId": "education"
         },
         {
@@ -451,23 +521,36 @@
           "word": "puree",
           "ipa": "",
           "pos": "noun",
-          "meaning": "N-VARpuree is food which has been crushed or beaten so that it forms a thick, smooth liquid. 酱；糊；泥...a can of tomato puree...一罐西红柿酱Push the potatoes through a sieve to make a puree.",
-          "definition": "N-VARpuree is food which has been crushed or beaten so that it forms a thick, smooth liquid. 酱；糊；泥...a can of tomato puree...一罐西红柿酱Push the potatoes through a sieve to make a puree.",
-          "collocations": [],
-          "example": "酱；糊；泥...a can of tomato puree...一罐西红柿酱Push the potatoes through a sieve to make a puree.",
-          "synonyms": [],
+          "meaning": "thức ăn nghiền nhuyễn, xúp đặc",
+          "definition": "Food that has been crushed or blended until it forms a smooth, thick liquid.",
+          "collocations": [
+            "tomato puree",
+            "vegetable puree"
+          ],
+          "example": "Push the cooked vegetables through a sieve to make a smooth puree.",
+          "synonyms": [
+            "paste",
+            "mash",
+            "coulis"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1740920676957_1740920676957",
           "word": "plums",
           "ipa": "",
-          "pos": "",
-          "meaning": "A plum is a small, sweet fruit with a smooth red or yellow skin and a stone in the middle. 李子；梅子",
-          "definition": "A plum is a small, sweet fruit with a smooth red or yellow skin and a stone in the middle. 李子；梅子",
-          "collocations": [],
-          "example": "A plum is a small, sweet fruit with a smooth red or yellow skin and a stone in the middle.",
-          "synonyms": [],
+          "pos": "noun",
+          "meaning": "quả mận",
+          "definition": "A small, sweet fruit with smooth purple or red skin and a hard stone inside.",
+          "collocations": [
+            "ripe plums",
+            "plum orchard"
+          ],
+          "example": "Ripe plums were harvested from the orchard during the late summer.",
+          "synonyms": [
+            "fruit",
+            "stone fruit"
+          ],
           "realmId": "education"
         },
         {
@@ -559,35 +642,54 @@
           "word": "slender",
           "ipa": "",
           "pos": "adjective",
-          "meaning": "ADJ-GRADEDA slender person is attractively thin and graceful. 苗条的;纤细的;修长的She was slender, with delicate wrists and ankles.她身量苗条，手腕和脚踝曲线玲珑。...a tall, slender figure in a straw hat...",
-          "definition": "ADJ-GRADEDA slender person is attractively thin and graceful. 苗条的;纤细的;修长的She was slender, with delicate wrists and ankles.她身量苗条，手腕和脚踝曲线玲珑。...a tall, slender figure in a straw hat...",
-          "collocations": [],
-          "example": "ADJ-GRADEDA slender person is attractively thin and graceful.",
-          "synonyms": [],
+          "meaning": "thon thả, mảnh mai, thanh thoát",
+          "definition": "Attractively thin, graceful, or slight in build.",
+          "collocations": [
+            "slender figure",
+            "slender build"
+          ],
+          "example": "She had a slender figure and elegant posture that drew admiration.",
+          "synonyms": [
+            "slim",
+            "lean",
+            "graceful"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1741016891461_1741016891461",
           "word": "insemination",
           "ipa": "",
-          "pos": "",
-          "meaning": "/ɪnˌsemɪ'neɪʃn/ VERBTo inseminate a woman or female animal means to put a male's sperm into her in order to make her pregnant. 使受精;使怀孕The gadget is used to artificially inseminate cows.这个器具被用来为母牛实施人工授精。",
-          "definition": "/ɪnˌsemɪ'neɪʃn/ VERBTo inseminate a woman or female animal means to put a male's sperm into her in order to make her pregnant. 使受精;使怀孕The gadget is used to artificially inseminate cows.这个器具被用来为母牛实施人工授精。",
-          "collocations": [],
-          "example": "/ɪnˌsemɪ'neɪʃn/ VERBTo inseminate a woman or female animal means to put a male's sperm into her in order to make her pregnant.",
-          "synonyms": [],
+          "pos": "noun",
+          "meaning": "sự thụ tinh, đưa tinh trùng vào cơ quan sinh sản",
+          "definition": "The introduction of semen into a female reproductive organ to cause pregnancy.",
+          "collocations": [
+            "artificial insemination"
+          ],
+          "example": "Artificial insemination is widely used in modern agriculture to breed livestock.",
+          "synonyms": [
+            "fertilization",
+            "impregnation"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1741016917374_1741016917374",
           "word": "strut",
           "ipa": "",
-          "pos": "",
-          "meaning": "/strʌt/ ★☆☆☆☆ VERBSomeone who struts walks in a proud way, with their head held high and their chest out, as if they are very important. 趾高气扬地走;昂首阔步He struts around town like he owns the place.他在城里大摇大摆地晃荡，好像那是他的地盘。He got up to strut his stuff on the dance-floor.他起身到舞池里炫耀自己的舞技。",
-          "definition": "/strʌt/ ★☆☆☆☆ VERBSomeone who struts walks in a proud way, with their head held high and their chest out, as if they are very important. 趾高气扬地走;昂首阔步He struts around town like he owns the place.他在城里大摇大摆地晃荡，好像那是他的地盘。He got up to strut his stuff on the dance-floor.他起身到舞池里炫耀自己的舞技。",
-          "collocations": [],
-          "example": "趾高气扬地走;昂首阔步He struts around town like he owns the place.他在城里大摇大摆地晃荡，好像那是他的地盘。He got up to strut his stuff on the dance-floor.他起身到舞池里炫耀自己的舞技。",
-          "synonyms": [],
+          "pos": "verb",
+          "meaning": "bước đi vênh váo, dáng đi nghênh ngang kiêu hãnh",
+          "definition": "To walk in a proud, confident way, with your chest out and head held high.",
+          "collocations": [
+            "strut confidently",
+            "strut around"
+          ],
+          "example": "He struts around the conference room as if he owns the entire corporation.",
+          "synonyms": [
+            "stride",
+            "swagger",
+            "parade"
+          ],
           "realmId": "education"
         },
         {
@@ -606,24 +708,37 @@
           "id": "w_1741092321876_1741092321876",
           "word": "contender",
           "ipa": "",
-          "pos": "",
-          "meaning": "/kənˈtendə(r)/ ★★☆☆☆ N-COUNTA contender is someone who takes part in a competition. 竞争者;争夺者Her trainer said yesterday that she would be a strong contender for a place in Britain's Olympic squad...她的教练昨天说，她将是英国奥运代表队席位的有力争夺者。Our British Affairs correspondent reports on how the three contenders reacted to the news of the resignation.我们的“英国国内事务”记者报道了3名竞争者对辞职消息的反应。",
-          "definition": "/kənˈtendə(r)/ ★★☆☆☆ N-COUNTA contender is someone who takes part in a competition. 竞争者;争夺者Her trainer said yesterday that she would be a strong contender for a place in Britain's Olympic squad...她的教练昨天说，她将是英国奥运代表队席位的有力争夺者。Our British Affairs correspondent reports on how the three contenders reacted to the news of the resignation.我们的“英国国内事务”记者报道了3名竞争者对辞职消息的反应。",
-          "collocations": [],
-          "example": "/kənˈtendə(r)/ ★★☆☆☆ N-COUNTA contender is someone who takes part in a competition.",
-          "synonyms": [],
+          "pos": "noun",
+          "meaning": "đối thủ cạnh tranh, ứng cử viên tiềm năng",
+          "definition": "A person or team with a chance of winning a competition or election.",
+          "collocations": [
+            "strong contender",
+            "leading contender"
+          ],
+          "example": "Her coach believes she will be a strong contender for an Olympic medal this year.",
+          "synonyms": [
+            "competitor",
+            "candidate",
+            "challenger"
+          ],
           "realmId": "education"
         },
         {
           "id": "w_1741092450165_1741092450166",
           "word": "electrocution",
           "ipa": "",
-          "pos": "",
-          "meaning": "/ɪˌlektrə'kju:ʃn/ VERBIf someone is electrocuted, they are accidentally killed or badly injured when they touch something connected to a source of electricity. 使触电身亡;用电击伤Three people were electrocuted by falling power-lines...3个人碰到落下的电缆，触电身亡。He accidentally electrocuted himself.他意外触电身亡。",
-          "definition": "/ɪˌlektrə'kju:ʃn/ VERBIf someone is electrocuted, they are accidentally killed or badly injured when they touch something connected to a source of electricity. 使触电身亡;用电击伤Three people were electrocuted by falling power-lines...3个人碰到落下的电缆，触电身亡。He accidentally electrocuted himself.他意外触电身亡。",
-          "collocations": [],
-          "example": "/ɪˌlektrə'kju:ʃn/ VERBIf someone is electrocuted, they are accidentally killed or badly injured when they touch something connected to a source of electricity.",
-          "synonyms": [],
+          "pos": "noun",
+          "meaning": "sự điện giật gây tử vong hoặc chấn thương nghiêm trọng",
+          "definition": "Death or severe injury caused by an electric shock.",
+          "collocations": [
+            "accidental electrocution",
+            "risk of electrocution"
+          ],
+          "example": "Safety regulations were introduced to prevent accidental electrocution on construction sites.",
+          "synonyms": [
+            "electric shock",
+            "fatal shock"
+          ],
           "realmId": "education"
         },
         {
@@ -642,12 +757,19 @@
           "id": "w_1741870907429_1741870907429",
           "word": "recurrence",
           "ipa": "",
-          "pos": "",
-          "meaning": "/rɪˈkʌrəns/ ★☆☆☆☆ N-VARIf there is a recurrence of something, it happens again. 复发；重现；再现Police are out in force to prevent a recurrence of the violence.警方出动大量警力防止暴力事件再次发生。",
-          "definition": "/rɪˈkʌrəns/ ★☆☆☆☆ N-VARIf there is a recurrence of something, it happens again. 复发；重现；再现Police are out in force to prevent a recurrence of the violence.警方出动大量警力防止暴力事件再次发生。",
-          "collocations": [],
-          "example": "/rɪˈkʌrəns/ ★☆☆☆☆ N-VARIf there is a recurrence of something, it happens again.",
-          "synonyms": [],
+          "pos": "noun",
+          "meaning": "sự tái phát, sự xảy ra lặp lại",
+          "definition": "An occasion when something unpleasant happens again.",
+          "collocations": [
+            "prevent a recurrence",
+            "frequent recurrence"
+          ],
+          "example": "Doctors monitored the patient closely to prevent any recurrence of the illness.",
+          "synonyms": [
+            "repetition",
+            "relapse",
+            "reappearance"
+          ],
           "realmId": "education"
         },
         {

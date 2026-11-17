@@ -135,7 +135,7 @@ export const App: React.FC = () => {
           <nav className="flex items-center gap-2 flex-wrap">
             <button
               onClick={() => setCurrentScreen('ioe_arena')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
+              className={`px-3 py-1.5 text-xs font-arcade font-bold transition-all cursor-pointer ${
                 currentScreen === 'ioe_arena'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
@@ -146,7 +146,7 @@ export const App: React.FC = () => {
 
             <button
               onClick={() => setCurrentScreen('handbook')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
+              className={`px-3 py-1.5 text-xs font-arcade font-bold transition-all cursor-pointer ${
                 currentScreen === 'handbook'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
@@ -157,7 +157,7 @@ export const App: React.FC = () => {
 
             <button
               onClick={() => setCurrentScreen('world_map')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
+              className={`px-3 py-1.5 text-xs font-arcade font-bold transition-all cursor-pointer ${
                 currentScreen === 'world_map'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
@@ -168,7 +168,7 @@ export const App: React.FC = () => {
 
             <button
               onClick={() => setCurrentScreen('grimoire')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer ${
+              className={`px-3 py-1.5 text-xs font-arcade font-bold transition-all cursor-pointer ${
                 currentScreen === 'grimoire'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'
@@ -179,7 +179,7 @@ export const App: React.FC = () => {
 
             <button
               onClick={() => setCurrentScreen('soul_knight')}
-              className={`px-3 py-1.5 text-[10px] font-pixel transition-all cursor-pointer hidden md:block ${
+              className={`px-3 py-1.5 text-xs font-arcade font-bold transition-all cursor-pointer hidden md:block ${
                 currentScreen === 'soul_knight'
                   ? 'pixel-btn-yellow shadow-md'
                   : 'bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 rounded-lg'

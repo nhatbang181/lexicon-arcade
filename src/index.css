@@ -2,17 +2,30 @@
 
 @layer base {
   body {
-    font-family: 'JetBrains Mono', system-ui, sans-serif;
+    font-family: 'Be Vietnam Pro', 'JetBrains Mono', system-ui, sans-serif;
     image-rendering: pixelated;
   }
   
+  /* Retro Pixel Font with Vietnamese Fallback */
   .font-pixel {
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'Press Start 2P', 'Chakra Petch', monospace;
     letter-spacing: -0.05em;
   }
 
+  /* Arcade Cyber / Retro Gaming Font with 100% Full Vietnamese Diacritics */
+  .font-arcade {
+    font-family: 'Chakra Petch', 'JetBrains Mono', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  /* Clean Academic Vietnamese Font for Reading & Definitions */
+  .font-vietnam {
+    font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  }
+
   .font-retro {
-    font-family: 'Silkscreen', cursive;
+    font-family: 'Silkscreen', 'Chakra Petch', cursive;
   }
 
   .font-rpg {
@@ -42,14 +55,16 @@
   image-rendering: pixelated;
 }
 
-/* Authentic Pixel Buttons */
+/* Authentic Pixel Buttons with Full Vietnamese Support */
 .pixel-btn-yellow {
   border-style: solid;
   border-width: 8px;
   border-image: url('/assets/ui/btn_yellow.png') 16 fill repeat;
   image-rendering: pixelated;
   color: #451a03;
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Chakra Petch', 'Press Start 2P', 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: transform 0.08s ease;
 }
@@ -64,7 +79,9 @@
   border-image: url('/assets/ui/btn_blue.png') 16 fill repeat;
   image-rendering: pixelated;
   color: #ffffff;
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Chakra Petch', 'Press Start 2P', 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: transform 0.08s ease;
 }
@@ -79,7 +96,9 @@
   border-image: url('/assets/ui/btn_green.png') 16 fill repeat;
   image-rendering: pixelated;
   color: #ffffff;
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Chakra Petch', 'Press Start 2P', 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: transform 0.08s ease;
 }
@@ -94,9 +113,15 @@
   border-image: url('/assets/ui/btn_red.png') 16 fill repeat;
   image-rendering: pixelated;
   color: #ffffff;
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Chakra Petch', 'Press Start 2P', 'JetBrains Mono', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: transform 0.08s ease;
+}
+.pixel-btn-red:active {
+  border-image: url('/assets/ui/btn_red_pressed.png') 16 fill repeat;
+  transform: translateY(2px);
 }
 
 /* Pixel Art Image rendering */

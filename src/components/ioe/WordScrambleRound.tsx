@@ -223,7 +223,7 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
             <span className="px-2.5 py-1 text-xs font-pixel bg-amber-500 text-stone-950 rounded shadow">
               ROUND 1
             </span>
-            <h2 className="text-sm font-pixel text-amber-300">
+            <h2 className="text-sm font-arcade font-bold text-amber-300 tracking-wide">
               DEFEAT THE WORD / SẮP XẾP KÝ TỰ
             </h2>
           </div>
@@ -274,7 +274,7 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
           isError ? 'animate-shake border-red-500' : ''
         } ${isAnswered ? 'border-emerald-500 shadow-emerald-500/20 shadow-lg' : ''}`}
       >
-        <div className="text-xs font-pixel text-stone-400 mb-3 uppercase tracking-wider">
+        <div className="text-xs font-arcade font-bold text-stone-400 mb-3 uppercase tracking-wider">
           {isAnswered ? '✓ CHÍNH XÁC!' : 'Ô ĐIỀN TỪ (Gõ phím hoặc bấm ô)'}
         </div>
 
@@ -304,7 +304,7 @@ export const WordScrambleRound: React.FC<WordScrambleRoundProps> = ({
 
       {/* Scrambled Letter Bank */}
       <div className="w-full pixel-frame-tan p-4 mb-4 flex flex-col items-center bg-stone-900/60">
-        <div className="text-xs font-pixel text-amber-200 mb-3 uppercase tracking-wider">
+        <div className="text-xs font-arcade font-bold text-amber-200 mb-3 uppercase tracking-wider">
           KÝ TỰ KHẢ DỤNG
         </div>
 

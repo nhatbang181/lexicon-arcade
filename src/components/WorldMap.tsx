@@ -58,7 +58,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({
                 <span className="text-[10px] font-pixel bg-amber-500 text-black px-2 py-0.5 rounded shadow">
                   IELTS 8.0 DUNGEON LOBBY
                 </span>
-                <span className="text-xs font-mono text-amber-200/80">· 1,499 Ancient Runes</span>
+                <span className="text-xs font-mono text-amber-200/80">· {vocabData.metadata.totalWords} Ancient Runes</span>
               </div>
               <h1 className="text-2xl md:text-3xl font-black font-pixel text-amber-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] tracking-tight">
                 SOUL KNIGHT: LEXICON

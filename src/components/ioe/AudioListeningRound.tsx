@@ -131,7 +131,7 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
             <span className="px-2.5 py-1 text-xs font-pixel bg-amber-500 text-stone-950 rounded shadow">
               ROUND 3
             </span>
-            <h2 className="text-sm font-pixel text-amber-300">
+            <h2 className="text-sm font-arcade font-bold text-amber-300 tracking-wide">
               AUDIO OBSTACLE / NGHE VÀ ĐIỀN TỪ
             </h2>
           </div>
@@ -177,7 +177,7 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
             <button
               type="button"
               onClick={() => setShowIpaHint(true)}
-              className="text-xs font-pixel text-amber-400/80 hover:text-amber-300 underline underline-offset-4 cursor-pointer"
+              className="text-xs font-arcade font-bold text-amber-400/80 hover:text-amber-300 underline underline-offset-4 cursor-pointer"
             >
               [ 💡 XEM PHIÊN ÂM IPA ]
             </button>
@@ -233,7 +233,7 @@ export const AudioListeningRound: React.FC<AudioListeningRoundProps> = ({
             spellCheck="false"
           />
           {isAnswered && (
-            <span className="absolute right-3 top-3 text-emerald-400 font-pixel text-xs">
+            <span className="absolute right-3 top-3 text-emerald-400 font-arcade font-bold text-xs">
               ✓ ĐÚNG!
             </span>
           )}
