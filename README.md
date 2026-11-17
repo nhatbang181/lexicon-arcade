@@ -1,67 +1,48 @@
-# ⚔️ LEXICON QUEST: The Realm of IELTS 8.0 RPG
+# ⚔️ LEXICON SURVIVORS: 2D Roguelike Action RPG
 
-> **Chuyển hóa 1.499+ từ vựng IELTS 8.0 trong Anki thành tựa game RPG nhập vai chiến đấu đầy lôi cuốn, chú trọng tối đa hiệu quả ghi nhớ sâu.**
-
----
-
-## 🌟 Tính Năng Nổi Bật & Triết Lý Học Tập (Learning Science)
-
-1. **Active Recall Chiến Đấu (Context Cloze Strike)**:
-   - Thay vì lật thẻ bị động, người chơi phải trực tiếp gõ chính xác từ vựng bị thiếu trong câu ví dụ học thuật thực tế (hoặc chọn đáp án nhanh).
-   - **Cơ chế thưởng**: Gõ từ trực tiếp (Active Recall) kích hoạt **Critical Strike (+50% sát thương chí mạng)**, khuyến khích tối đa phản xạ viết đúng chính tả.
-
-2. **Chuỗi Combo Collocations (Collocation Combo)**:
-   - Đánh bại khiên quái vật bằng cách ghép đúng cụm collocations tự nhiên (ví dụ: *rely on* + *rote learning*, *national* + *curriculum*), giúp người chơi ghi nhớ cách dùng từ theo cụm chuẩn band 8.0+.
-
-3. **Phản Đòn Bằng Từ Đồng Nghĩa (Synonym Parry)**:
-   - Nhận diện từ đồng nghĩa học thuật hoặc định nghĩa chuẩn xác để dựng khiên phòng thủ và phản lại sát thương của boss.
-
-4. **Luyện Nghe & Phát Âm Tức Thì (Phonetic Speech)**:
-   - Tích hợp chuẩn âm thanh bản ngữ (Web Speech API) và phiên âm quốc tế IPA cho mọi từ vựng trong game, giúp khắc sâu phát âm chuẩn Anh/Mỹ ngay trong nhịp đánh.
-
-5. **Thuật Toán Lặp Lại Ngắt Quãng & Hệ Thống Nemesis (Spaced Repetition)**:
-   - Dựa trên hệ thống Leitner 5 hộp: Từ vựng trả lời đúng sẽ thăng cấp sao (Box 1 -> Box 5).
-   - Từ vựng làm sai lập tức trở thành **Nemesis Beast** (Quái vật định mệnh) với tần suất xuất hiện dày đặc ở các tầng hầm tiếp theo cho đến khi bạn thuần thục.
-
-6. **Hệ Thống RPG Chuẩn Chỉ**:
-   - **Level, EXP, HP, MP, Vàng**: Thăng cấp tăng chỉ số sức mạnh, máu và mana.
-   - **Merchant Guild (Cửa hàng trang bị)**: Dùng vàng kiếm được từ các trận đánh để mua kiếm tăng ATK, áo giáp giảm sát thương khi làm sai, bình máu và cổ vật thần bí (tăng EXP, tăng tỉ lệ chí mạng).
-   - **Grimoire Codex (Bách khoa toàn thư từ vựng)**: Tìm kiếm tra cứu hơn 1.499 từ vựng theo chủ đề, nghe phát âm, xem ví dụ, collocations và mức độ sao thuần thục.
+> **Tựa game 2D Roguelike sinh tồn thực thụ kết hợp đồ họa Pixel Art từ Kenney, điều khiển nhân vật trực tiếp bằng phím WASD để né đàn quái vật và kích hoạt bom nổ dọn màn hình bằng từ vựng IELTS 8.0!**
 
 ---
 
-## 🗺️ 12 Vùng Đất / Chủ Đề (IELTS Realms)
+## 🎮 Cách Chơi & Cơ Chế Gameplay Thực Thụ
 
-- **The Scholastic Citadel**: Chủ đề *Education* (200 từ)
-- **The Primordial Wilds**: Chủ đề *Environment* (194 từ)
-- **The Cyber Foundry**: Chủ đề *Technology* (200 từ)
-- **The Sanctuary of Vitae**: Chủ đề *Health* (198 từ)
-- **The Merchant Metropolis**: Chủ đề *Work & Economy* (206 từ)
-- **The Shadow Underworld**: Chủ đề *Society & Crime* (202 từ)
-- **The Broadcasting Spire**: Chủ đề *Media* (206 từ)
-- **The Steam Transit Hub**: Chủ đề *Urban & Transport* (200 từ)
-- **The Astral Observatory**: Chủ đề *Science & Research* (202 từ)
-- **The Global Pantheon**: Chủ đề *Culture & Globalisation* (204 từ)
-- **The Spire of Erudition**: Bộ *Academic Word List (AWL Sublists 1 & 2)* (120 từ)
-- **The Collocation Arena**: Chuyên đề *Collocations, Paraphrase & Speaking*
+### 1. Điều Khiển Nhân Vật Pixel (60 FPS Canvas Engine)
+- **Di chuyển**: Sử dụng các phím **W, A, S, D** hoặc **Phím Mũi Tên** để điều khiển hiệp sĩ chạy 8 hướng trong hầm ngục ngẫu nhiên.
+- **Trượt mượt mà trên tường (Smooth Wall Sliding)**: Không bị kẹt tường khi di chuyển né quái vật.
+- **Camera theo sát nhân vật**: Camera mượt mà lấy nhân vật làm trung tâm với hiệu ứng ánh sáng đuốc trong hầm ngục tối.
+
+### 2. Vũ Khí Tự Động & Lên Cấp Kiểu Roguelike (Vampire Survivors style)
+- **Quả cầu từ vựng xoay vòng (Orbiting Lexicon Orbs)**: Xoay liên tục quanh người bạn, chém tan quái vật lại gần.
+- **Dao găm bạc tự ngắm (Silver Quills)**: Tự động bắn vào quái vật gần nhất, xuyên qua nhiều mục tiêu.
+- **Sấm sét lan (Chain Lightning)**: Giáng sét giật liên hoàn tiêu diệt nhiều quái cùng lúc.
+- **Hút ngọc kinh nghiệm (EXP Gems)**: Quái chết sẽ rơi ngọc EXP xanh, đỏ, vàng. Khi lại gần, ngọc sẽ tự động bay về phía bạn.
+- **Nâng cấp ngẫu nhiên khi lên cấp (Level Up)**: Chọn 1 trong 3 thẻ bài nâng cấp sức mạnh (thêm quả cầu, tăng tốc chạy, tăng sát thương, hồi máu).
+
+### 3. Cơ Chế Học Từ Vựng: "Phong Ấn Cổ Ngữ & Bom Dọn Sàn"
+- **Quái Tinh Anh (Elite Monster) & Rương Kho Báu**:
+  - Khi quái tinh anh lại gần hoặc khi bạn chạm vào rương kho báu, một **Cổ Ngữ Ngữ Cảnh (Lexical Barrier)** sẽ hiện lên ngay trên màn hình.
+  - Bạn chỉ cần bấm nhanh phím số **[1], [2], [3], [4]** ngay trong lúc đang di chuyển né quái!
+  - **KHI GIẢI ĐÚNG**: 
+    - Kích hoạt **SMART BOMB / NOVA THẦN THÁNH**: Phát nổ quét sạch 600 sát thương toàn bộ quái vật trên màn hình!
+    - Giọng đọc tiếng Anh bản ngữ (Web Speech API) sẽ lập tức phát âm từ vựng và câu ví dụ để khắc sâu vào não bộ ngay khoảnh khắc hưng phấn nhất!
+    - Rơi ra lượng lớn Vàng và Ngọc EXP quý hiếm.
+  - **KHI GIẢI SAI**:
+    - Nhân vật bị điện giật trừ 20 HP và từ đó được ghi nhớ vào hệ thống Spaced Repetition (Leitner Box 1) để tiếp tục thử thách bạn ở các màn sau.
 
 ---
 
-## 🚀 Hướng Dẫn Khởi Chạy Nhanh
+## 🕹️ Phím Tắt Nhanh
+| Phím | Hành Động |
+|---|---|
+| **W, A, S, D** hoặc **Mũi tên** | Di chuyển hiệp sĩ trong hầm ngục |
+| **Phím 1, 2, 3, 4** | Chọn nhanh đáp án để kích nổ Bom Cổ Ngữ |
+| **M** | Bật / Tắt âm thanh hiệu ứng |
 
-### Cách 1: Chạy bằng file Batch (Khuyên dùng)
-Chỉ cần nhấp đúp chuột vào file:
-```
-run_game.bat
-```
-File sẽ tự động kiểm tra dữ liệu Anki, khởi động server và mở trình duyệt tại `http://localhost:5173`.
+---
 
-### Cách 2: Khởi chạy thủ công qua Terminal
-```powershell
-# 1. Đồng bộ lại dữ liệu mới nhất từ Anki (nếu có thẻ mới)
-python scripts/extract_anki.py
+## 🚀 Khởi Động Game
+Chỉ cần nhấp đúp vào file:
+📂 `run_game.bat`
 
-# 2. Khởi chạy game
-npm run dev
-```
-Mở trình duyệt truy cập: `http://localhost:5173`
+Hoặc truy cập trực tiếp trên trình duyệt:
+👉 **[http://localhost:5173](http://localhost:5173)**
