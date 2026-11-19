@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Search, Lightbulb, CheckCircle2, ChevronDown, ChevronUp } from 'lucide-react';
 import { soundEngine } from '../audio/soundEngine.ts';
+import { getAssetPath } from '../utils/paths.ts';
 
 interface StrategyItem {
   id: string;
@@ -27,7 +28,7 @@ export const StrategyHandbook: React.FC<StrategyHandbookProps> = ({ onExit }) =>
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
   useEffect(() => {
-    fetch('/data/ielts_strategies.json')
+    fetch(getAssetPath('/data/ielts_strategies.json'))
       .then((res) => res.json())
       .then((d: StrategyData) => setData(d))
       .catch((err) => console.error('Failed to load strategies:', err));

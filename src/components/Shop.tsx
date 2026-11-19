@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import type { PlayerState, Item } from '../types/game.ts';
 import { gameStore } from '../store/gameStore.ts';
 import { ArrowLeft, Check, Coins } from 'lucide-react';
+import { getAssetPath } from '../utils/paths.ts';
 
 interface ShopProps {
   player: PlayerState;
@@ -146,7 +147,7 @@ export const Shop: React.FC<ShopProps> = ({ player, onExit }) => {
         </button>
 
         <div className="flex items-center gap-2 pixel-frame-grey px-4 py-2">
-          <img src="/assets/soul_knight/items/coin_0.png" alt="coin" className="w-5 h-5 pixelated" />
+          <img src={getAssetPath('/assets/soul_knight/items/coin_0.png')} alt="coin" className="w-5 h-5 pixelated" />
           <span className="font-pixel text-xs text-amber-400">{player.gold} GOLD</span>
         </div>
       </div>
@@ -155,7 +156,7 @@ export const Shop: React.FC<ShopProps> = ({ player, onExit }) => {
       <div className="pixel-frame-brown p-5 flex items-center gap-5">
         <div className="w-16 h-16 bg-slate-900 border-2 border-amber-500 rounded-xl flex items-center justify-center p-2 shrink-0">
           <img
-            src="/assets/soul_knight/weapons/staff_red.png"
+            src={getAssetPath('/assets/soul_knight/weapons/staff_red.png')}
             alt="Trader"
             className="w-12 h-12 object-contain pixelated drop-shadow"
           />
@@ -196,7 +197,7 @@ export const Shop: React.FC<ShopProps> = ({ player, onExit }) => {
                 </span>
 
                 <div className="flex items-center gap-1 font-pixel text-xs text-amber-400">
-                  <img src="/assets/soul_knight/items/coin_0.png" alt="coin" className="w-4 h-4 pixelated" />
+                  <img src={getAssetPath('/assets/soul_knight/items/coin_0.png')} alt="coin" className="w-4 h-4 pixelated" />
                   <span>{item.price}</span>
                 </div>
               </div>
@@ -204,7 +205,7 @@ export const Shop: React.FC<ShopProps> = ({ player, onExit }) => {
               {/* Sprite Pedestal */}
               <div className="w-full h-24 bg-slate-950/70 border-2 border-slate-800 rounded-xl flex items-center justify-center p-3 mb-3 shadow-inner">
                 <img
-                  src={item.sprite}
+                  src={getAssetPath(item.sprite)}
                   alt={item.name}
                   className="max-h-16 max-w-16 object-contain pixelated drop-shadow-[0_4px_10px_rgba(251,191,36,0.4)]"
                 />

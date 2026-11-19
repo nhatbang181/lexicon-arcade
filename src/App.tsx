@@ -10,6 +10,7 @@ import { Shop } from './components/Shop.tsx';
 import { Grimoire } from './components/Grimoire.tsx';
 import { StrategyHandbook } from './components/StrategyHandbook.tsx';
 import { Volume2, VolumeX } from 'lucide-react';
+import { getAssetPath } from './utils/paths.ts';
 
 type ScreenMode = 'arcade' | 'ioe_arena' | 'world_map' | 'soul_knight' | 'handbook' | 'shop' | 'grimoire';
 
@@ -36,7 +37,7 @@ export const App: React.FC = () => {
 
   // Fetch Anki vocab dataset
   useEffect(() => {
-    fetch('/data/anki_vocab.json')
+    fetch(getAssetPath('/data/anki_vocab.json'))
       .then((res) => {
         if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
         return res.json();
@@ -83,7 +84,7 @@ export const App: React.FC = () => {
       <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-[#090b14] text-slate-100 font-arcade">
         <div className="w-16 h-16 mb-4 flex items-center justify-center">
           <img
-            src="/assets/soul_knight/knight/idle_0.png"
+            src={getAssetPath('/assets/soul_knight/knight/idle_0.png')}
             alt="Hero"
             className="w-16 h-16 object-contain pixelated animate-bounce"
           />

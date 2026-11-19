@@ -4,6 +4,7 @@ import type { PlayerState, SRSMap } from '../types/game.ts';
 import { 
   Coins, BookOpen, Skull, Trophy, Play, Sparkles, Flame, Shield
 } from 'lucide-react';
+import { getAssetPath } from '../utils/paths.ts';
 
 interface WorldMapProps {
   vocabData: VocabData;
@@ -47,7 +48,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({
             {/* Animated Knight Avatar */}
             <div className="w-20 h-20 bg-slate-900/80 border-4 border-amber-600/80 rounded-2xl flex items-center justify-center p-2 shadow-inner">
               <img
-                src="/assets/soul_knight/knight/idle_0.png"
+                src={getAssetPath('/assets/soul_knight/knight/idle_0.png')}
                 alt="Soul Knight"
                 className="w-16 h-16 object-contain pixelated drop-shadow-[0_4px_10px_rgba(251,191,36,0.5)] animate-pulse"
               />
@@ -75,7 +76,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({
               onClick={onOpenShop}
               className="pixel-btn-yellow px-4 py-3 flex items-center gap-2 text-[11px] shadow-lg hover:scale-105"
             >
-              <img src="/assets/soul_knight/items/coin_0.png" alt="coin" className="w-5 h-5 pixelated" />
+              <img src={getAssetPath('/assets/soul_knight/items/coin_0.png')} alt="coin" className="w-5 h-5 pixelated" />
               <span>TRADER GUILD</span>
             </button>
 
@@ -127,7 +128,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({
                   <div className="flex items-start justify-between mb-3">
                     <div className="w-14 h-14 bg-slate-900 border-2 border-slate-700 rounded-xl flex items-center justify-center p-2 shadow-inner group-hover:border-amber-400 transition-colors">
                       <img
-                        src={previewSprite}
+                        src={getAssetPath(previewSprite)}
                         alt={realm.name}
                         className="w-10 h-10 object-contain pixelated drop-shadow group-hover:scale-110 transition-transform"
                       />

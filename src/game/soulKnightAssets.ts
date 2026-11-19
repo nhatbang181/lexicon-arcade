@@ -1,4 +1,5 @@
 // Asset loader for genuine Soul Knight (0x72) pixel art
+import { getAssetPath } from '../utils/paths.ts';
 
 export interface ImageCache {
   [path: string]: HTMLImageElement;
@@ -74,7 +75,7 @@ export class SoulKnightAssets {
       this.totalCount = this.paths.length;
       for (const p of this.paths) {
         const img = new Image();
-        img.src = p;
+        img.src = getAssetPath(p);
         img.onload = () => {
           this.loadedCount++;
           if (this.loadedCount >= this.totalCount) {
