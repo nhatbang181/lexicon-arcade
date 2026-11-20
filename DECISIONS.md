@@ -33,3 +33,4 @@
 
 ## D. Nhật ký quyết định nhỏ (worker ghi tiếp bên dưới)
 - 2026-11-20 · claude-code · Chuyển docs V1/V2 vào `docs/archive/v1-2026-11-17/` · gom tài liệu, tránh worker làm theo plan cũ.
+- 2026-11-20 · r-shell / r-core / r-assets · Chốt M0: dùng `ts-fsrs@6.0.0`, `zod@4.6.7`, `howler` audio sprite chuẩn hóa −20 LUFS (hỗ trợ cả 12 tên cue chính lẫn 8 alias trong `docs/10`), lazy-load `src/legacy/App.tsx` tại `#/legacy`.
