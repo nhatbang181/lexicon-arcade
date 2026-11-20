@@ -1,0 +1,368 @@
+[
+    {
+        "answers":  [
+                        {
+                            "qid":  "p2_004_q01",
+                            "answer":  "NO"
+                        },
+                        {
+                            "qid":  "p2_004_q02",
+                            "answer":  "YES"
+                        },
+                        {
+                            "qid":  "p2_004_q03",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p2_004_q04",
+                            "answer":  "NO"
+                        },
+                        {
+                            "qid":  "p2_004_q05",
+                            "answer":  "NO"
+                        },
+                        {
+                            "qid":  "p2_004_q06",
+                            "answer":  "YES"
+                        },
+                        {
+                            "qid":  "p2_004_q07",
+                            "answer":  "i"
+                        },
+                        {
+                            "qid":  "p2_004_q08",
+                            "answer":  "ii"
+                        },
+                        {
+                            "qid":  "p2_004_q09",
+                            "answer":  "iii"
+                        },
+                        {
+                            "qid":  "p2_004_q10",
+                            "answer":  "iv"
+                        },
+                        {
+                            "qid":  "p2_004_q11",
+                            "answer":  "v"
+                        },
+                        {
+                            "qid":  "p2_004_q12",
+                            "answer":  "F"
+                        },
+                        {
+                            "qid":  "p2_004_q13",
+                            "answer":  "E"
+                        },
+                        {
+                            "qid":  "p2_004_q14",
+                            "answer":  "D"
+                        }
+                    ],
+        "passageId":  "rp:p2_004"
+    },
+    {
+        "answers":  [
+                        {
+                            "qid":  "p3_001_q01",
+                            "answer":  "NO"
+                        },
+                        {
+                            "qid":  "p3_001_q02",
+                            "answer":  "YES"
+                        },
+                        {
+                            "qid":  "p3_001_q03",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p3_001_q04",
+                            "answer":  "NO"
+                        },
+                        {
+                            "qid":  "p3_001_q05",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p3_001_q06",
+                            "answer":  "YES"
+                        },
+                        {
+                            "qid":  "p3_001_q07",
+                            "answer":  "v"
+                        },
+                        {
+                            "qid":  "p3_001_q08",
+                            "answer":  "vii"
+                        },
+                        {
+                            "qid":  "p3_001_q09",
+                            "answer":  "i"
+                        },
+                        {
+                            "qid":  "p3_001_q10",
+                            "answer":  "ii"
+                        },
+                        {
+                            "qid":  "p3_001_q11",
+                            "answer":  "iv"
+                        },
+                        {
+                            "qid":  "p3_001_q12",
+                            "answer":  "closure"
+                        },
+                        {
+                            "qid":  "p3_001_q13",
+                            "answer":  "intuition"
+                        },
+                        {
+                            "qid":  "p3_001_q14",
+                            "answer":  "hypothesis"
+                        }
+                    ],
+        "passageId":  "rp:p3_001"
+    },
+    {
+        "answers":  [
+                        {
+                            "qid":  "p1_001_q01",
+                            "answer":  "TRUE"
+                        },
+                        {
+                            "qid":  "p1_001_q02",
+                            "answer":  "FALSE"
+                        },
+                        {
+                            "qid":  "p1_001_q03",
+                            "answer":  "TRUE"
+                        },
+                        {
+                            "qid":  "p1_001_q04",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p1_001_q05",
+                            "answer":  "FALSE"
+                        },
+                        {
+                            "qid":  "p1_001_q06",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p1_001_q07",
+                            "answer":  "iii"
+                        },
+                        {
+                            "qid":  "p1_001_q08",
+                            "answer":  "v"
+                        },
+                        {
+                            "qid":  "p1_001_q09",
+                            "answer":  "i"
+                        },
+                        {
+                            "qid":  "p1_001_q10",
+                            "answer":  "ii"
+                        },
+                        {
+                            "qid":  "p1_001_q11",
+                            "answer":  "iv"
+                        },
+                        {
+                            "qid":  "p1_001_q12",
+                            "answer":  "sodium"
+                        },
+                        {
+                            "qid":  "p1_001_q13",
+                            "answer":  "freshness"
+                        },
+                        {
+                            "qid":  "p1_001_q14",
+                            "answer":  "fertilisers"
+                        }
+                    ],
+        "passageId":  "rp:p1_001"
+    },
+    {
+        "answers":  [
+                        {
+                            "qid":  "p3_res_001_q01",
+                            "answer":  "YES"
+                        },
+                        {
+                            "qid":  "p3_res_001_q02",
+                            "answer":  "NO"
+                        },
+                        {
+                            "qid":  "p3_res_001_q03",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p3_res_001_q04",
+                            "answer":  "YES"
+                        },
+                        {
+                            "qid":  "p3_res_001_q05",
+                            "answer":  "NO"
+                        },
+                        {
+                            "qid":  "p3_res_001_q06",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p3_res_001_q07",
+                            "answer":  "iv"
+                        },
+                        {
+                            "qid":  "p3_res_001_q08",
+                            "answer":  "vi"
+                        },
+                        {
+                            "qid":  "p3_res_001_q09",
+                            "answer":  "i"
+                        },
+                        {
+                            "qid":  "p3_res_001_q10",
+                            "answer":  "v"
+                        },
+                        {
+                            "qid":  "p3_res_001_q11",
+                            "answer":  "ii"
+                        },
+                        {
+                            "qid":  "p3_res_001_q12",
+                            "answer":  "minerals"
+                        },
+                        {
+                            "qid":  "p3_res_001_q13",
+                            "answer":  "inventories"
+                        },
+                        {
+                            "qid":  "p3_res_001_q14",
+                            "answer":  "losses"
+                        }
+                    ],
+        "passageId":  "rp:p3_res_001"
+    },
+    {
+        "answers":  [
+                        {
+                            "qid":  "p1_res_001_q01",
+                            "answer":  "TRUE"
+                        },
+                        {
+                            "qid":  "p1_res_001_q02",
+                            "answer":  "FALSE"
+                        },
+                        {
+                            "qid":  "p1_res_001_q03",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p1_res_001_q04",
+                            "answer":  "TRUE"
+                        },
+                        {
+                            "qid":  "p1_res_001_q05",
+                            "answer":  "FALSE"
+                        },
+                        {
+                            "qid":  "p1_res_001_q06",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p1_res_001_q07",
+                            "answer":  "iv"
+                        },
+                        {
+                            "qid":  "p1_res_001_q08",
+                            "answer":  "ii"
+                        },
+                        {
+                            "qid":  "p1_res_001_q09",
+                            "answer":  "vii"
+                        },
+                        {
+                            "qid":  "p1_res_001_q10",
+                            "answer":  "iii"
+                        },
+                        {
+                            "qid":  "p1_res_001_q11",
+                            "answer":  "vi"
+                        },
+                        {
+                            "qid":  "p1_res_001_q12",
+                            "answer":  "2"
+                        },
+                        {
+                            "qid":  "p1_res_001_q13",
+                            "answer":  "evaporation"
+                        },
+                        {
+                            "qid":  "p1_res_001_q14",
+                            "answer":  "40"
+                        }
+                    ],
+        "passageId":  "rp:p1_res_001"
+    },
+    {
+        "answers":  [
+                        {
+                            "qid":  "p2_001_q01",
+                            "answer":  "FALSE"
+                        },
+                        {
+                            "qid":  "p2_001_q02",
+                            "answer":  "TRUE"
+                        },
+                        {
+                            "qid":  "p2_001_q03",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p2_001_q04",
+                            "answer":  "FALSE"
+                        },
+                        {
+                            "qid":  "p2_001_q05",
+                            "answer":  "TRUE"
+                        },
+                        {
+                            "qid":  "p2_001_q06",
+                            "answer":  "NOT GIVEN"
+                        },
+                        {
+                            "qid":  "p2_001_q07",
+                            "answer":  "i"
+                        },
+                        {
+                            "qid":  "p2_001_q08",
+                            "answer":  "ii"
+                        },
+                        {
+                            "qid":  "p2_001_q09",
+                            "answer":  "iii"
+                        },
+                        {
+                            "qid":  "p2_001_q10",
+                            "answer":  "iv"
+                        },
+                        {
+                            "qid":  "p2_001_q11",
+                            "answer":  "v"
+                        },
+                        {
+                            "qid":  "p2_001_q12",
+                            "answer":  "reservoir"
+                        },
+                        {
+                            "qid":  "p2_001_q13",
+                            "answer":  "sediment"
+                        },
+                        {
+                            "qid":  "p2_001_q14",
+                            "answer":  "grit"
+                        }
+                    ],
+        "passageId":  "rp:p2_001"
+    }
+]

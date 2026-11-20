@@ -1,0 +1,90 @@
+{
+  "evaluatedPassages": 6,
+  "totalMatched": 83,
+  "totalQuestions": 84,
+  "overallAccuracyPct": 98.81,
+  "allPass": false,
+  "passages": [
+    {
+      "passageId": "rp:p1_001",
+      "level": "P1",
+      "reserved": false,
+      "matched": 14,
+      "total": 14,
+      "accuracyPct": 100,
+      "pass": true,
+      "mismatches": []
+    },
+    {
+      "passageId": "rp:p1_res_001",
+      "level": "P1",
+      "reserved": true,
+      "matched": 14,
+      "total": 14,
+      "accuracyPct": 100,
+      "pass": true,
+      "mismatches": []
+    },
+    {
+      "passageId": "rp:p2_001",
+      "level": "P2",
+      "reserved": false,
+      "matched": 14,
+      "total": 14,
+      "accuracyPct": 100,
+      "pass": true,
+      "mismatches": []
+    },
+    {
+      "passageId": "rp:p2_004",
+      "level": "P2",
+      "reserved": false,
+      "matched": 13,
+      "total": 14,
+      "accuracyPct": 92.86,
+      "pass": false,
+      "mismatches": [
+        {
+          "passageId": "rp:p2_004",
+          "qid": "p2_004_q05",
+          "number": 5,
+          "type": "ynng",
+          "prompt": "Technical colleges have already begun expanding intake to replace retiring metrology technicians.",
+          "expected": "NOT GIVEN",
+          "received": "NO"
+        }
+      ]
+    },
+    {
+      "passageId": "rp:p3_001",
+      "level": "P3",
+      "reserved": false,
+      "matched": 14,
+      "total": 14,
+      "accuracyPct": 100,
+      "pass": true,
+      "mismatches": []
+    },
+    {
+      "passageId": "rp:p3_res_001",
+      "level": "P3",
+      "reserved": true,
+      "matched": 14,
+      "total": 14,
+      "accuracyPct": 100,
+      "pass": true,
+      "mismatches": []
+    }
+  ],
+  "mismatches": [
+    {
+      "passageId": "rp:p2_004",
+      "qid": "p2_004_q05",
+      "number": 5,
+      "type": "ynng",
+      "prompt": "Technical colleges have already begun expanding intake to replace retiring metrology technicians.",
+      "expected": "NOT GIVEN",
+      "received": "NO"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "passages":  6,
+    "mismatches":  [
+                       {
+                           "gold":  "NOT GIVEN",
+                           "type":  "ynng",
+                           "qid":  "p2_004_q05",
+                           "cause":  "ambiguous prompt",
+                           "blind":  "NO",
+                           "analysis":  "Para E: technical colleges are replacing retirees more slowly than they retire. Statement \"already begun expanding intake\" is not stated; blind read it as contradicted. Defensible either way. Recommend rewording e.g. \"Technical colleges have fully replaced retiring technicians\" (NO) or keep NG."
+                       }
+                   ],
+    "rate":  98.81,
+    "questions":  84,
+    "blind_answers":  "data-src/reading/blind_answers.json",
+    "matched":  83,
+    "validate_data":  "FAIL (env): Cannot find package zod - npm install missing; not a data verdict",
+    "verifier":  "rv-data-reading"
+}
