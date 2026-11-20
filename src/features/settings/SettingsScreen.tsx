@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useLocation } from 'wouter';
 import {
   Sun,
@@ -12,9 +12,17 @@ import {
   Archive,
   ArrowUpRight,
   ShieldCheck,
+  AlertTriangle,
 } from 'lucide-react';
-import { Card, Button, Pill, Toast } from '../../design/components';
+import { Card, Button, Pill, Toast, Modal, type ToastTone } from '../../design/components';
 import { useTheme, useAudio, type AppTheme } from '../../app/providers';
+import {
+  exportBackup,
+  importBackup,
+  verifyBackup,
+  type BackupEnvelope,
+} from '../../core/storage/backup';
+import { profileRepo } from '../../core/storage/repos/profileRepo';
 
 const BAND_OPTIONS = [6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0];
 
@@ -23,7 +31,101 @@ export const SettingsScreen: React.FC = () => {
   const { theme, setTheme, targetBands, setTargetBands, dailyGoalMin, setDailyGoalMin } =
     useTheme();
   const { sfxVolume, setSfxVolume, muted, toggleMute } = useAudio();
-  const [notice, setNotice] = useState<string | null>(null);
+  const [notice, setNotice] = useState<{ tone: ToastTone; title: string; desc?: string } | null>(
+    null,
+  );
+  const [exporting, setExporting] = useState(false);
+  const [importing, setImporting] = useState(false);
+  const [pendingRestore, setPendingRestore] = useState<{
+    rawText: string;
+    envelope: BackupEnvelope;
+  } | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+
+  const handleExportBackup = async () => {
+    setExporting(true);
+    try {
+      const envelope = await exportBackup();
+      const json = JSON.stringify(envelope, null, 2);
+      const blob = new Blob([json], { type: 'application/json;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const dateStamp = envelope.exportedAt.slice(0, 10);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `lexicon-arcade-backup-${dateStamp}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      setNotice({
+        tone: 'correct',
+        title: 'Đã xuất bản sao lưu JSON thành công',
+        desc: `Gồm ${envelope.data.cards.length} thẻ SRS, ${envelope.data.attempts.length} phiên học và ${envelope.data.essays.length} bài viết.`,
+      });
+    } catch (err) {
+      setNotice({
+        tone: 'wrong',
+        title: 'Không thể xuất sao lưu',
+        desc: err instanceof Error ? err.message : 'Lỗi không xác định.',
+      });
+    } finally {
+      setExporting(false);
+    }
+  };
+
+  const handleFileSelected = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = '';
+    if (!file) return;
+
+    try {
+      const text = await file.text();
+      const check = verifyBackup(text);
+      if (!check.valid || !check.envelope) {
+        setNotice({
+          tone: 'wrong',
+          title: 'File sao lưu không hợp lệ hoặc bị hỏng',
+          desc: check.error ?? 'Không khớp checksum toàn vẹn.',
+        });
+        return;
+      }
+      setPendingRestore({ rawText: text, envelope: check.envelope });
+    } catch (err) {
+      setNotice({
+        tone: 'wrong',
+        title: 'Không thể đọc file sao lưu',
+        desc: err instanceof Error ? err.message : 'Lỗi đọc file.',
+      });
+    }
+  };
+
+  const handleConfirmRestore = async () => {
+    if (!pendingRestore) return;
+    setImporting(true);
+    try {
+      const { restoredCounts } = await importBackup(pendingRestore.rawText);
+      const restoredProfile = await profileRepo.get();
+      if (restoredProfile) {
+        setTargetBands(restoredProfile.targetBands);
+        setDailyGoalMin(restoredProfile.dailyGoalMin);
+      }
+      setPendingRestore(null);
+      setNotice({
+        tone: 'correct',
+        title: 'Khôi phục dữ liệu thành công',
+        desc: `Đã khôi phục ${restoredCounts.cards} thẻ SRS, ${restoredCounts.attempts} phiên học và ${restoredCounts.reviews} lượt ôn tập.`,
+      });
+    } catch (err) {
+      setNotice({
+        tone: 'wrong',
+        title: 'Khôi phục thất bại',
+        desc: err instanceof Error ? err.message : 'Lỗi ghi IndexedDB.',
+      });
+    } finally {
+      setImporting(false);
+    }
+  };
 
   const themeOptions: Array<{ id: AppTheme; label: string; desc: string; icon: React.ReactNode }> =
     [
@@ -60,8 +162,9 @@ export const SettingsScreen: React.FC = () => {
 
       {notice && (
         <Toast
-          tone="info"
-          title={notice}
+          tone={notice.tone}
+          title={notice.title}
+          description={notice.desc}
           onDismiss={() => setNotice(null)}
         />
       )}
@@ -152,12 +255,14 @@ export const SettingsScreen: React.FC = () => {
               <select
                 id={`target-band-${sk.key}`}
                 value={targetBands[sk.key]}
-                onChange={(e) =>
-                  setTargetBands((prev) => ({
-                    ...prev,
-                    [sk.key]: parseFloat(e.target.value),
-                  }))
-                }
+                onChange={(e) => {
+                  const val = parseFloat(e.target.value);
+                  setTargetBands((prev) => {
+                    const next = { ...prev, [sk.key]: val };
+                    void profileRepo.update({ targetBands: next });
+                    return next;
+                  });
+                }}
                 className="w-full px-2.5 py-1.5 rounded border text-sm font-bold tabular-nums"
                 style={{
                   fontFamily: 'var(--font-mono)',
@@ -181,12 +286,15 @@ export const SettingsScreen: React.FC = () => {
             Thời lượng mục tiêu mỗi ngày:
           </span>
           <div className="flex items-center gap-2">
-            {[15, 30, 45, 60].map((min) => (
+            {[15, 30, 45, 60, 90].map((min) => (
               <Button
                 key={min}
                 size="sm"
                 variant={dailyGoalMin === min ? 'primary' : 'secondary'}
-                onClick={() => setDailyGoalMin(min)}
+                onClick={() => {
+                  setDailyGoalMin(min);
+                  void profileRepo.update({ dailyGoalMin: min });
+                }}
               >
                 {min} phút
               </Button>
@@ -256,18 +364,113 @@ export const SettingsScreen: React.FC = () => {
           <Button
             variant="secondary"
             leftIcon={<Download className="w-4 h-4" />}
-            onClick={() => setNotice('Đã chuẩn bị gói sao lưu JSON (khung M0).')}
+            onClick={() => void handleExportBackup()}
+            disabled={exporting}
+            data-testid="settings-export-backup"
           >
-            Xuất bản sao lưu (.json)
+            {exporting ? 'Đang xuất...' : 'Xuất bản sao lưu (.json)'}
           </Button>
           <Button
             variant="secondary"
             leftIcon={<Upload className="w-4 h-4" />}
-            onClick={() => setNotice('Chức năng khôi phục sao lưu sẽ kết nối Dexie ở mốc tiếp theo.')}
+            onClick={() => fileInputRef.current?.click()}
+            disabled={importing}
+            data-testid="settings-import-backup"
           >
-            Khôi phục từ file
+            {importing ? 'Đang khôi phục...' : 'Khôi phục từ file'}
           </Button>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept=".json,application/json"
+            className="hidden"
+            onChange={(e) => void handleFileSelected(e)}
+            aria-label="Chọn file sao lưu JSON"
+          />
         </div>
+
+        <Modal
+          open={pendingRestore !== null}
+          onClose={() => !importing && setPendingRestore(null)}
+          title="Xác nhận khôi phục dữ liệu"
+          subtitle="Dữ liệu IndexedDB hiện tại trên trình duyệt sẽ được thay thế toàn bộ bằng bản sao lưu này."
+          footer={
+            <>
+              <Button
+                variant="secondary"
+                onClick={() => setPendingRestore(null)}
+                disabled={importing}
+              >
+                Huỷ
+              </Button>
+              <Button
+                variant="primary"
+                skill="info"
+                onClick={() => void handleConfirmRestore()}
+                disabled={importing}
+                data-testid="settings-confirm-restore"
+              >
+                {importing ? 'Đang khôi phục...' : 'Xác nhận khôi phục'}
+              </Button>
+            </>
+          }
+        >
+          {pendingRestore && (
+            <div className="space-y-3">
+              <div
+                className="p-3 rounded-[var(--radius-md)] border flex items-start gap-2.5 text-xs"
+                style={{
+                  backgroundColor:
+                    'color-mix(in srgb, var(--color-partial) 12%, var(--color-surface-2))',
+                  borderColor: 'var(--color-partial)',
+                  color: 'var(--color-text)',
+                }}
+              >
+                <AlertTriangle
+                  className="w-4 h-4 shrink-0 mt-0.5"
+                  style={{ color: 'var(--color-partial)' }}
+                />
+                <span>
+                  Hành động này sẽ ghi đè dữ liệu hiện tại. Hãy xuất bản sao lưu trước nếu bạn muốn
+                  giữ lại tiến độ hiện tại.
+                </span>
+              </div>
+              <div
+                className="p-3 rounded-[var(--radius-md)] border space-y-1 text-xs"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                  color: 'var(--color-text-dim)',
+                }}
+              >
+                <div>
+                  Thời điểm xuất:{' '}
+                  <strong style={{ color: 'var(--color-text)' }}>
+                    {new Date(pendingRestore.envelope.exportedAt).toLocaleString('vi-VN')}
+                  </strong>
+                </div>
+                <div>
+                  Số thẻ SRS:{' '}
+                  <strong style={{ color: 'var(--color-text)' }}>
+                    {pendingRestore.envelope.data.cards.length}
+                  </strong>
+                </div>
+                <div>
+                  Số phiên học:{' '}
+                  <strong style={{ color: 'var(--color-text)' }}>
+                    {pendingRestore.envelope.data.attempts.length}
+                  </strong>
+                </div>
+                <div>
+                  Lượt ôn tập:{' '}
+                  <strong style={{ color: 'var(--color-text)' }}>
+                    {pendingRestore.envelope.data.reviews.length}
+                  </strong>
+                </div>
+              </div>
+            </div>
+          )}
+        </Modal>
       </Card>
 
       {/* 5. Kho lưu trữ V1/V2 (Legacy) */}

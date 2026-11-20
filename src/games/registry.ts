@@ -22,6 +22,8 @@ export interface GameProps {
   onExit: (result?: unknown) => void;
 }
 
+export type GameStatus = 'ready' | 'coming_soon';
+
 export interface GameDefinition {
   id: GameId;
   code: string;
@@ -30,6 +32,7 @@ export interface GameDefinition {
   title: string;
   subtitleVi: string;
   milestone: string;
+  status?: GameStatus;
   estMinutes: [number, number];
   requires: { ai?: boolean; mic?: boolean; audio?: boolean };
   modes: Array<'training' | 'exam' | 'sprint'>;
@@ -185,13 +188,31 @@ const GAME_METAS: GameMeta[] = [
   },
 ];
 
-export const GAME_REGISTRY: GameDefinition[] = GAME_METAS.map((meta) => ({
-  ...meta,
-  load: () =>
-    import('../app/GamePlaceholder').then((m) => ({
-      default: m.createGamePlaceholder(meta),
-    })),
-}));
+const READY_GAME_LOADERS: Partial<
+  Record<GameId, () => Promise<{ default: React.ComponentType<GameProps> }>>
+> = {
+  v1: () => import('./v1-daily-run').then((m) => ({ default: m.V1DailyRun })),
+  v2: () => import('./v2-collocation-forge'),
+  v3: () => import('./v3-paraphrase-radar'),
+};
+
+export const GAME_REGISTRY: GameDefinition[] = GAME_METAS.map((meta) => {
+  const realLoader = READY_GAME_LOADERS[meta.id];
+  return {
+    ...meta,
+    status: realLoader ? 'ready' : 'coming_soon',
+    load:
+      realLoader ??
+      (() =>
+        import('../app/GamePlaceholder').then((m) => ({
+          default: m.createGamePlaceholder(meta),
+        }))),
+  };
+});
+
+export function isGameReady(gameId: GameId): boolean {
+  return GAME_REGISTRY.find((g) => g.id === gameId)?.status === 'ready';
+}
 
 export function getGameById(id: string): GameDefinition | undefined {
   const normalized = id.toLowerCase();

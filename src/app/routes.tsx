@@ -3,11 +3,10 @@ import { Route, Switch } from 'wouter';
 import { TodayScreen } from './screens/TodayScreen';
 import { HubScreen } from './screens/HubScreen';
 import { PlayScreen } from './screens/PlayScreen';
-import {
-  StatsPlaceholderScreen,
-  LibraryPlaceholderScreen,
-  PlacementPlaceholderScreen,
-} from './screens/PlaceholderScreens';
+import { LibraryPlaceholderScreen } from './screens/PlaceholderScreens';
+import { OnboardingScreen } from '../features/onboarding';
+import { PlacementScreen } from '../features/placement';
+import { StatsScreen } from '../features/stats';
 import { SettingsScreen } from '../features/settings';
 import { DevComponentsScreen } from './screens/DevComponentsScreen';
 import { LegacyScreen } from './screens/LegacyScreen';
@@ -26,10 +25,10 @@ export const AppRoutes: React.FC = () => {
         <Route path="/exam">
           {() => <PlayScreen gameId="x1" />}
         </Route>
-        <Route path="/stats" component={StatsPlaceholderScreen} />
+        <Route path="/stats" component={StatsScreen} />
         <Route path="/library" component={LibraryPlaceholderScreen} />
-        <Route path="/placement" component={PlacementPlaceholderScreen} />
-        <Route path="/onboarding" component={PlacementPlaceholderScreen} />
+        <Route path="/placement" component={PlacementScreen} />
+        <Route path="/onboarding" component={OnboardingScreen} />
         <Route path="/settings" component={SettingsScreen} />
         <Route path="/dev/components" component={DevComponentsScreen} />
         <Route path="/legacy" component={LegacyScreen} />
