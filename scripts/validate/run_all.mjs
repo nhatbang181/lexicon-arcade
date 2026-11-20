@@ -29,10 +29,19 @@ import {
   PlacementVocabSchema,
   ReadingPassageSchema,
   ReadingQTypeSchema,
+  ListeningEpisodeSchema,
+  ListeningQTypeSchema,
+  DictationItemSchema,
   TopicSchema,
   ManifestSchema,
   ProvenanceSchema,
 } from '../../src/core/content/schemas.ts';
+import {
+  countIeltsTokens,
+  checkWordLimit,
+  normalizeWordLimit,
+  canonicalizeIeltsExpression,
+} from '../../data-src/listening/_ielts_tokens.mjs';
 import { LEGACY_FILES, countPayloadItems, sha256NormalizedLf } from '../data/60_build_manifest.mjs';
 
 const ROOT = process.cwd();
@@ -1126,6 +1135,439 @@ if (fs.existsSync(readingDir)) {
       `P1:${levelCounts.P1.training}+${levelCounts.P1.reserved}, P2:${levelCounts.P2.training}+${levelCounts.P2.reserved}, P3:${levelCounts.P3.training}+${levelCounts.P3.reserved}; ` +
       `${totalReadingQuestions} questions; ${rqSummary})`
   );
+}
+
+// ---------------------------------------------------------------------------
+// 7c. Validate public/data/listening/** & [INV-L1..L4] + Dictation
+// ---------------------------------------------------------------------------
+
+const LISTENING_COMPLETION_TYPES = new Set([
+  'form_completion',
+  'note_completion',
+  'table_completion',
+  'flowchart_completion',
+  'sentence_completion',
+  'summary_completion',
+  'short_answer',
+]);
+
+function normalizeListeningEvidence(s) {
+  return String(s || '')
+    .toLowerCase()
+    .replace(/£|\$|€/g, ' ')
+    .replace(/[,.;:!?()"]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function listeningAnswerFoundInLine(acceptedAns, lineText, ttsText = '') {
+  const combinedRaw = `${lineText} ${ttsText || ''}`;
+  const normLine = normalizeListeningEvidence(combinedRaw);
+  const normAns = normalizeListeningEvidence(acceptedAns);
+  if (!normAns) return false;
+  if (normLine.includes(normAns)) return true;
+
+  const flatLine = normLine.replace(/[\s-]+/g, '');
+  const flatAns = normAns.replace(/[\s-]+/g, '');
+  if (flatAns.length >= 2 && flatLine.includes(flatAns)) return true;
+
+  const spelledRe = /\b(?:[A-Za-z][\s,-]+){2,}[A-Za-z]\b/g;
+  const matches = combinedRaw.match(spelledRe) || [];
+  for (const m of matches) {
+    const collapsed = m.replace(/[^A-Za-z]/g, '').toLowerCase();
+    if (collapsed === flatAns || collapsed.includes(flatAns)) return true;
+  }
+
+  const canonAns = canonicalizeIeltsExpression(acceptedAns).canonical;
+  const canonLine = canonicalizeIeltsExpression(lineText).canonical;
+  const canonTts = ttsText ? canonicalizeIeltsExpression(ttsText).canonical : '';
+  if (canonAns && (canonLine.includes(canonAns) || (canonTts && canonTts.includes(canonAns)))) {
+    return true;
+  }
+
+  const digitsAns = acceptedAns.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  const digitsLine = combinedRaw.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  if (/\d/.test(digitsAns) && digitsAns.length >= 3 && digitsLine.includes(digitsAns)) {
+    return true;
+  }
+
+  const ansTokens = canonAns.split(' ').filter(Boolean);
+  if (ansTokens.length >= 2) {
+    const linePool = `${canonLine} ${canonTts}`;
+    if (ansTokens.every((t) => linePool.includes(t))) return true;
+  }
+
+  return false;
+}
+
+const ListeningIndexEntrySchema = z.object({
+  id: z.string().startsWith('lep:'),
+  file: z.string().regex(/^data\/listening\/episodes\/[a-z0-9_]+\.json$/),
+  part: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]),
+  reserved: z.boolean(),
+  title: z.string().min(1),
+  contextEn: z.string().min(1),
+  difficulty: z.number().int().min(1).max(10),
+  accents: z.array(z.enum(['uk', 'us', 'au', 'nz', 'ca'])).min(1),
+  channel: z.enum(['normal', 'phone']),
+  audioPath: z.string().regex(/^audio\/listening\/[a-z0-9_]+\.mp3$/),
+  durationSec: z.number().positive(),
+  questionCount: z.literal(10),
+  questionTypes: z.array(ListeningQTypeSchema).min(1),
+  hasMap: z.boolean(),
+  trapCount: z.number().int().min(3),
+});
+
+const listeningDir = path.join(PUBLIC_DATA, 'listening');
+const listeningEpisodesDir = path.join(listeningDir, 'episodes');
+
+if (fs.existsSync(listeningDir)) {
+  const listeningIndex = readJsonChecked('listening/index.json');
+  const diskEpisodeFiles = fs.existsSync(listeningEpisodesDir)
+    ? fs
+        .readdirSync(listeningEpisodesDir)
+        .filter((f) => f.endsWith('.json'))
+        .sort()
+    : [];
+
+  const listenIndexByFile = new Map();
+  if (Array.isArray(listeningIndex)) {
+    for (let i = 0; i < listeningIndex.length; i++) {
+      const entry = listeningIndex[i];
+      const parsed = ListeningIndexEntrySchema.safeParse(entry);
+      if (!parsed.success) {
+        fail(
+          `listening/index.json[${i}] (${entry?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      const fname = path.basename(entry.file);
+      if (listenIndexByFile.has(fname)) {
+        fail(`listening/index.json duplicate file reference: ${entry.file}`);
+      }
+      listenIndexByFile.set(fname, entry);
+      if (!fs.existsSync(path.join(PUBLIC_DIR, entry.file))) {
+        fail(`listening/index.json references missing episode file: public/${entry.file}`);
+      }
+    }
+  } else if (listeningIndex !== null) {
+    fail('listening/index.json must be a JSON array');
+  }
+
+  for (const fname of diskEpisodeFiles) {
+    if (!listenIndexByFile.has(fname)) {
+      fail(`public/data/listening/episodes/${fname} is missing from listening/index.json`);
+    }
+  }
+
+  let lTraining = 0;
+  let lReserved = 0;
+  let lTotalQs = 0;
+  let lMapEpisodes = 0;
+  let lEdgeEpisodes = 0;
+  let lBlindVerified = 0;
+  let lAudioPresent = 0;
+  const partCounts = {
+    1: { training: 0, reserved: 0 },
+    2: { training: 0, reserved: 0 },
+    3: { training: 0, reserved: 0 },
+    4: { training: 0, reserved: 0 },
+  };
+
+  for (const fname of diskEpisodeFiles) {
+    const relPath = `listening/episodes/${fname}`;
+    const ep = readJsonChecked(relPath);
+    if (!ep) continue;
+
+    const parsed = ListeningEpisodeSchema.safeParse(ep);
+    if (!parsed.success) {
+      fail(
+        `${relPath} (${ep?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+          .slice(0, 3)
+          .map((e) => `${e.path.join('.')}: ${e.message}`)
+          .join('; ')}`
+      );
+      continue;
+    }
+
+    checkProvenanceInv(ep, relPath);
+    registerGlobalId(ep.id, relPath);
+
+    if (ep.provenance?.qa?.blindSolve === 'pass') {
+      lBlindVerified++;
+    } else if (REQUIRE_BLIND) {
+      fail(`[INV-L7] ${relPath} (${ep.id}): provenance.qa.blindSolve must be "pass"`);
+    }
+
+    const isReserved = ep.reserved === true;
+    if (isReserved) {
+      lReserved++;
+      partCounts[ep.part].reserved++;
+    } else {
+      lTraining++;
+      partCounts[ep.part].training++;
+    }
+
+    const slug = ep.id.replace(/^lep:/, '');
+    const expectedAudio = `audio/listening/${slug}.mp3`;
+    if (ep.audio.path !== expectedAudio) {
+      fail(`${ep.id}: audio.path "${ep.audio.path}" !== "${expectedAudio}"`);
+    } else {
+      const fullAudio = path.join(PUBLIC_DIR, ep.audio.path);
+      if (fs.existsSync(fullAudio) && fs.statSync(fullAudio).size > 0) {
+        lAudioPresent++;
+      } else if (REQUIRE_AUDIO) {
+        fail(`[INV-L5] Missing listening audio file for ${ep.id}: public/${ep.audio.path}`);
+      }
+    }
+
+    if (ep.speakers.some((s) => ['au', 'nz', 'ca'].includes(s.accent))) {
+      lEdgeEpisodes++;
+    }
+
+    const speakerIds = new Set(ep.speakers.map((s) => s.id));
+    const lineById = new Map();
+    const lineIdxById = new Map();
+    ep.script.forEach((line, idx) => {
+      if (lineById.has(line.lineId)) fail(`${ep.id}: duplicate script lineId "${line.lineId}"`);
+      if (!speakerIds.has(line.speakerId)) fail(`${ep.id}: unknown script speakerId "${line.speakerId}"`);
+      lineById.set(line.lineId, line);
+      lineIdxById.set(line.lineId, idx);
+    });
+
+    const seenNums = new Set();
+    let epQs = 0;
+    let completionQs = 0;
+    let trapCount = 0;
+    let hasP1SelfOrNum = false;
+    let hasP1Spelling = false;
+    let epHasMap = false;
+    const allQsForOrder = [];
+
+    for (const g of ep.questionGroups) {
+      const isCompletion = LISTENING_COMPLETION_TYPES.has(g.type);
+      const wlSpec = g.wordLimit ? normalizeWordLimit(g.wordLimit) : null;
+      if (isCompletion && !wlSpec) {
+        fail(`[INV-L2] ${ep.id} ${g.groupId}: completion group missing wordLimit`);
+      }
+      if (g.type === 'map_labelling') {
+        if (!g.map) {
+          fail(`${ep.id} ${g.groupId}: map_labelling missing MapSpec`);
+        } else {
+          epHasMap = true;
+          if (g.map.slots.length < 8) {
+            fail(`${ep.id} ${g.groupId}: MapSpec has ${g.map.slots.length} slots (minimum >= 8)`);
+          }
+        }
+      }
+
+      const slotKeys = new Set((g.map?.slots || []).map((s) => s.key));
+      for (const q of g.questions) {
+        registerGlobalId(q.qid, relPath);
+        if (seenNums.has(q.number)) fail(`[INV-L1] ${ep.id}: duplicate question number ${q.number}`);
+        seenNums.add(q.number);
+        epQs++;
+        lTotalQs++;
+        allQsForOrder.push(q);
+
+        const evLine = lineById.get(q.evidence.lineId);
+        if (!evLine) {
+          fail(`[INV-L3] ${ep.id} ${q.qid}: unknown evidence.lineId "${q.evidence.lineId}"`);
+        }
+
+        if (isCompletion) {
+          completionQs++;
+          if (!q.answer.accepted || q.answer.accepted.length === 0) {
+            fail(`[INV-L2] ${ep.id} ${q.qid}: missing completion accepted[]`);
+          } else {
+            for (const ans of q.answer.accepted) {
+              if (wlSpec) {
+                const { wordCount: wc, numberCount: nc } = countIeltsTokens(ans);
+                if (!checkWordLimit(wc, nc, wlSpec)) {
+                  fail(`[INV-L2] ${ep.id} ${q.qid}: "${ans}" violates wordLimit`);
+                }
+              }
+              if (evLine && !listeningAnswerFoundInLine(ans, evLine.text, evLine.ttsText)) {
+                fail(`[INV-L3] ${ep.id} ${q.qid}: "${ans}" not found in evidence line ${q.evidence.lineId}`);
+              }
+            }
+          }
+        } else if (g.type === 'map_labelling') {
+          for (const k of q.answer.keys || []) {
+            if (!slotKeys.has(k)) fail(`${ep.id} ${q.qid}: map answer key "${k}" not in MapSpec.slots`);
+          }
+        }
+
+        for (const tr of q.traps) {
+          trapCount++;
+          if (!lineById.has(tr.lineId)) {
+            fail(`[INV-L4] ${ep.id} ${q.qid}: unknown trap lineId "${tr.lineId}"`);
+          }
+          if (tr.type === 'self_correction' || tr.type === 'distractor_number') hasP1SelfOrNum = true;
+          if (tr.type === 'spelling_out') hasP1Spelling = true;
+        }
+      }
+    }
+
+    // [INV-L1]
+    if (epQs !== 10) fail(`[INV-L1] ${ep.id}: expected 10 questions, got ${epQs}`);
+    for (let n = 1; n <= 10; n++) {
+      if (!seenNums.has(n)) fail(`[INV-L1] ${ep.id}: missing question number ${n}`);
+    }
+    if ((ep.part === 1 || ep.part === 4) && completionQs < 6) {
+      fail(`[INV-L1] ${ep.id}: Part ${ep.part} requires >= 6 completion questions (got ${completionQs})`);
+    }
+
+    // Evidence ordering
+    allQsForOrder.sort((a, b) => a.number - b.number);
+    let prevEvIdx = -1;
+    for (const q of allQsForOrder) {
+      const idx = lineIdxById.get(q.evidence.lineId);
+      if (typeof idx === 'number') {
+        if (idx < prevEvIdx) {
+          fail(`${ep.id} ${q.qid}: evidence line ${q.evidence.lineId} out of audio order`);
+        }
+        prevEvIdx = idx;
+      }
+    }
+
+    // [INV-L4]
+    if (trapCount < 3) fail(`[INV-L4] ${ep.id}: has ${trapCount} traps (minimum >= 3)`);
+    if (ep.part === 1) {
+      if (!hasP1SelfOrNum) fail(`[INV-L4] ${ep.id}: Part 1 requires >= 1 self_correction or distractor_number`);
+      if (!hasP1Spelling) fail(`[INV-L4] ${ep.id}: Part 1 requires >= 1 spelling_out`);
+    }
+
+    if (epHasMap) lMapEpisodes++;
+
+    // Cross-check index entry
+    const idxEntry = listenIndexByFile.get(fname);
+    if (idxEntry) {
+      if (idxEntry.id !== ep.id) fail(`listening/index.json id mismatch for ${fname}`);
+      if (idxEntry.part !== ep.part) fail(`listening/index.json part mismatch for ${ep.id}`);
+      if (idxEntry.reserved !== isReserved) fail(`listening/index.json reserved mismatch for ${ep.id}`);
+      if (idxEntry.hasMap !== epHasMap) fail(`listening/index.json hasMap mismatch for ${ep.id}`);
+      if (idxEntry.trapCount !== trapCount) fail(`listening/index.json trapCount mismatch for ${ep.id}`);
+      if (idxEntry.audioPath !== ep.audio.path) fail(`listening/index.json audioPath mismatch for ${ep.id}`);
+    }
+  }
+
+  const lTotal = lTraining + lReserved;
+  if (lTraining < 24) fail(`listening: only ${lTraining} training episodes (MVP minimum >= 24)`);
+  if (lReserved < 8) fail(`listening: only ${lReserved} reserved episodes (MVP minimum >= 8)`);
+  for (const pt of [1, 2, 3, 4]) {
+    if (partCounts[pt].training < 6) fail(`listening: Part ${pt} training has ${partCounts[pt].training} (minimum >= 6)`);
+    if (partCounts[pt].reserved < 2) fail(`listening: Part ${pt} reserved has ${partCounts[pt].reserved} (minimum >= 2)`);
+  }
+  if (lMapEpisodes < 4) fail(`listening: only ${lMapEpisodes} MapSpec episodes (minimum >= 4)`);
+  if (lEdgeEpisodes < 6) fail(`listening: only ${lEdgeEpisodes} AU/NZ/CA episodes (target ~25%, minimum >= 6)`);
+
+  if (lAudioPresent < lTotal && !REQUIRE_AUDIO) {
+    warnings.push(
+      `[INV-L5] ${lTotal - lAudioPresent}/${lTotal} listening episode MP3s pending audio render (pass --require-audio to enforce).`
+    );
+  }
+  if (lBlindVerified < lTotal && !REQUIRE_BLIND) {
+    warnings.push(
+      `[INV-L7] ${lTotal - lBlindVerified}/${lTotal} listening episodes pending rv-data-listening blind-solve (pass --require-blind to enforce).`
+    );
+  }
+
+  summary.push(
+    `listening/episodes: ${lTotal} episodes (${lTraining} training + ${lReserved} reserved; ` +
+      `P1:${partCounts[1].training}+${partCounts[1].reserved}, P2:${partCounts[2].training}+${partCounts[2].reserved}, ` +
+      `P3:${partCounts[3].training}+${partCounts[3].reserved}, P4:${partCounts[4].training}+${partCounts[4].reserved}; ` +
+      `${lTotalQs} questions; ${lMapEpisodes} MapSpecs; ${lEdgeEpisodes} AU/NZ/CA)`
+  );
+
+  // Validate public/data/listening/dictation.json
+  const dictation = readJsonChecked('listening/dictation.json');
+  if (Array.isArray(dictation)) {
+    if (dictation.length < 300) {
+      fail(`listening/dictation.json has ${dictation.length} items (MVP minimum >= 300)`);
+    }
+    const dLevelCounts = {};
+    const dAccentCounts = { uk: 0, us: 0, au: 0 };
+    const seenDictTexts = new Set();
+    let dAudioPresent = 0;
+    let dL5PlusTotal = 0;
+    let dL5PlusAu = 0;
+
+    for (let i = 0; i < dictation.length; i++) {
+      const d = dictation[i];
+      const parsed = DictationItemSchema.safeParse(d);
+      if (!parsed.success) {
+        fail(
+          `listening/dictation.json[${i}] (${d?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      checkProvenanceInv(d, 'listening/dictation.json');
+      registerGlobalId(d.id, 'listening/dictation.json');
+
+      const normText = d.text.trim().toLowerCase();
+      if (seenDictTexts.has(normText)) {
+        fail(`listening/dictation.json duplicate text in ${d.id}`);
+      }
+      seenDictTexts.add(normText);
+
+      const toks = d.text.trim().split(/\s+/).filter(Boolean);
+      if (toks.length < 6 || toks.length > 28) {
+        fail(`listening/dictation.json ${d.id}: word count ${toks.length} outside [6, 28]`);
+      }
+      for (let fi = 0; fi < d.focus.length; fi++) {
+        if (d.focus[fi].tokenIndex >= toks.length) {
+          fail(`listening/dictation.json ${d.id} focus[${fi}].tokenIndex=${d.focus[fi].tokenIndex} >= ${toks.length}`);
+        }
+      }
+
+      if (!/^audio\/dictation\/dict_[a-z0-9_]+\.mp3$/.test(d.audio)) {
+        fail(`listening/dictation.json ${d.id}: invalid audio path "${d.audio}"`);
+      } else {
+        const fullAudio = path.join(PUBLIC_DIR, d.audio);
+        if (fs.existsSync(fullAudio) && fs.statSync(fullAudio).size > 0) {
+          dAudioPresent++;
+        } else if (REQUIRE_AUDIO) {
+          fail(`[INV-D1] Missing dictation audio for ${d.id}: public/${d.audio}`);
+        }
+      }
+
+      dLevelCounts[d.level] = (dLevelCounts[d.level] || 0) + 1;
+      dAccentCounts[d.accent] = (dAccentCounts[d.accent] || 0) + 1;
+      if (d.level >= 5) {
+        dL5PlusTotal++;
+        if (d.accent === 'au') dL5PlusAu++;
+      }
+    }
+
+    for (const lvl of [1, 2, 3, 4, 5, 6]) {
+      if ((dLevelCounts[lvl] || 0) < 40) {
+        fail(`listening/dictation.json level ${lvl} has ${dLevelCounts[lvl] || 0} items (minimum >= 40)`);
+      }
+    }
+    if (dL5PlusTotal > 0 && dL5PlusAu / dL5PlusTotal < 0.15) {
+      fail(`listening/dictation.json level 5+ AU share=${dL5PlusAu}/${dL5PlusTotal} (< 15% minimum)`);
+    }
+
+    if (dAudioPresent < dictation.length && !REQUIRE_AUDIO) {
+      warnings.push(
+        `[INV-D1] ${dictation.length - dAudioPresent}/${dictation.length} dictation MP3s pending audio render (pass --require-audio to enforce).`
+      );
+    }
+
+    const lvlStr = [1, 2, 3, 4, 5, 6].map((l) => `L${l}:${dLevelCounts[l] || 0}`).join(' ');
+    summary.push(
+      `listening/dictation.json: ${dictation.length} items (${lvlStr}; uk:${dAccentCounts.uk}/us:${dAccentCounts.us}/au:${dAccentCounts.au})`
+    );
+  } else if (dictation !== null) {
+    fail('listening/dictation.json must be a JSON array');
+  }
 }
 
 // ---------------------------------------------------------------------------

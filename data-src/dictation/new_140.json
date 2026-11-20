@@ -1,0 +1,1251 @@
+[
+  {
+    "level": 1,
+    "text": "The main library opens at eight every weekday morning.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "opens", "feature": "final_consonant", "tipVi": "Nghe rõ âm cuối /z/ của động từ số ít 'opens'.", "ipaConnected": "/ˈəʊpənz ət/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Please leave your student card at the front desk.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "card", "feature": "linking", "tipVi": "'card at' nối âm phụ âm cuối /d/ sang nguyên âm /æ/.", "ipaConnected": "/kɑːd ət/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Our morning bus stops right outside the science building.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "stops", "feature": "final_consonant", "tipVi": "Âm cuối -s trong 'stops' đọc là /s/ gọn trước 'right'.", "ipaConnected": "/stɒps raɪt/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "The coffee shop closes early on Sunday afternoons.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "afternoons", "feature": "final_consonant", "tipVi": "Danh từ số nhiều 'afternoons' chỉ thói quen lặp lại mỗi Chủ nhật.", "ipaConnected": "/ˌɑːftəˈnuːnz/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Every locker requires a small coin to lock safely.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "a", "feature": "weak_form", "tipVi": "Mạo từ 'a' đọc rất nhẹ /ə/ trước 'small coin'.", "ipaConnected": "/ə smɔːl/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Free drinking water is available near the south exit.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "is", "feature": "linking", "tipVi": "'is available' nối âm /z/ sang nguyên âm đầu /ə/.", "ipaConnected": "/ɪz əˈveɪləbl/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "New members receive a welcome pack during their induction.",
+    "features": ["academic"],
+    "focusSpecs": [
+      { "word": "induction", "feature": "academic", "tipVi": "'induction' (buổi định hướng) hay gặp trong Part 1/2.", "ipaConnected": "/ɪnˈdʌkʃn/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Please turn off your mobile phone inside the lecture hall.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "turn", "feature": "linking", "tipVi": "'turn off' nối âm /n/ sang /ɒ/ thành /tɜːnɒf/.", "ipaConnected": "/tɜːn ɒf/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "The swimming pool stays open until nine every evening.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "stays", "feature": "final_consonant", "tipVi": "Nghe âm /z/ cuối 'stays' nối sang 'open'.", "ipaConnected": "/steɪz ˈəʊpən/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Bicycles must be parked beside the east garden gate.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "parked", "feature": "final_consonant", "tipVi": "Đuôi -ed trong 'parked' đọc /t/ nhẹ trước 'beside'.", "ipaConnected": "/pɑːkt bɪˈsaɪd/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Guided museum walks start from the central courtyard.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "walks", "feature": "final_consonant", "tipVi": "Chú ý số nhiều 'walks' nên động từ 'start' không có -s.", "ipaConnected": "/wɔːks stɑːt/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Hot meals are served daily from noon until two.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "served", "feature": "final_consonant", "tipVi": "Đuôi -ed /d/ trong 'served' dễ bị nuốt trước 'daily'.", "ipaConnected": "/sɜːvd ˈdeɪli/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "You can borrow three books with a temporary pass.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "can", "feature": "weak_form", "tipVi": "'can' ở thể khẳng định đọc yếu /kən/.", "ipaConnected": "/juː kən ˈbɒrəʊ/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "The ferry crosses the harbour every twenty minutes.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "crosses", "feature": "final_consonant", "tipVi": "Âm tiết thêm /ɪz/ ở 'crosses' rất quan trọng để nhận ra thì hiện tại.", "ipaConnected": "/ˈkrɒsɪz ðə/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Visitors should wear sturdy shoes on the forest trail.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "shoes", "feature": "final_consonant", "tipVi": "Nghe âm cuối /z/ của số nhiều 'shoes' nối sang 'on'.", "ipaConnected": "/ʃuːz ɒn/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "The reception desk keeps spare maps for new guests.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "maps", "feature": "final_consonant", "tipVi": "Âm cuối -s của 'maps' dễ bị chìm trước 'for'.", "ipaConnected": "/mæps fə/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Our art studio provides paper and paint for beginners.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "provides", "feature": "final_consonant", "tipVi": "Chủ ngữ số ít 'studio' đi với động từ 'provides'.", "ipaConnected": "/prəˈvaɪdz ˈpeɪpə/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Heavy bags cannot be taken into the exhibition rooms.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "rooms", "feature": "final_consonant", "tipVi": "Số nhiều 'rooms' kết thúc bằng /mz/.", "ipaConnected": "/ruːmz/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "The train ticket includes a free transfer to downtown.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "includes", "feature": "final_consonant", "tipVi": "'includes a' nối âm /z/ sang /ə/.", "ipaConnected": "/ɪnˈkluːdz ə/" }
+    ]
+  },
+  {
+    "level": 1,
+    "text": "Please return borrowed headphones before leaving the audio lab.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "borrowed", "feature": "final_consonant", "tipVi": "Phân từ 'borrowed' có âm cuối /d/ nhẹ trước 'headphones'.", "ipaConnected": "/ˈbɒrəʊd ˈhedfəʊnz/" }
+    ]
+  },
+
+  {
+    "level": 2,
+    "text": "The booking reference number for your cottage is four eight nine two.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "four", "feature": "numbers", "tipVi": "Mã đặt phòng đọc tách từng chữ số: 4-8-9-2.", "ipaConnected": "/fɔːr eɪt naɪn tuː/" }
+    ],
+    "acceptedVariants": ["The booking reference number for your cottage is 4892."]
+  },
+  {
+    "level": 2,
+    "text": "Annual gym membership costs thirty five pounds per month.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "thirty", "feature": "numbers", "tipVi": "Phân biệt 'thirty' /ˈθɜːti/ với 'thirteen' /ˌθɜːˈtiːn/ nhờ trọng âm.", "ipaConnected": "/ˈθɜːti faɪv/" }
+    ],
+    "acceptedVariants": ["Annual gym membership costs 35 pounds per month.", "Annual gym membership costs £35 per month."]
+  },
+  {
+    "level": 2,
+    "text": "Your train departs from platform seven at quarter past ten.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "quarter", "feature": "numbers", "tipVi": "'quarter past ten' tương đương 10:15.", "ipaConnected": "/ˈkwɔːtə pɑːst ten/" }
+    ],
+    "acceptedVariants": ["Your train departs from platform 7 at 10:15."]
+  },
+  {
+    "level": 2,
+    "text": "Please send the signed invoice to twenty four Elmwood Avenue.",
+    "features": ["numbers", "names"],
+    "focusSpecs": [
+      { "word": "Elmwood", "feature": "names", "tipVi": "Tên đường ghép 'Elmwood' không tách khoảng trắng.", "ipaConnected": "/ˈelmwʊd ˈævənjuː/" }
+    ],
+    "acceptedVariants": ["Please send the signed invoice to 24 Elmwood Avenue."]
+  },
+  {
+    "level": 2,
+    "text": "The pottery workshop begins on the nineteenth of October.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "nineteenth", "feature": "numbers", "tipVi": "Phân biệt 'nineteenth' (19th) với 'ninetieth' (90th).", "ipaConnected": "/ˌnaɪnˈtiːnθ əv/" }
+    ],
+    "acceptedVariants": ["The pottery workshop begins on 19 October.", "The pottery workshop begins on 19th October."]
+  },
+  {
+    "level": 2,
+    "text": "Call the clinic office on zero two zero seven nine four six.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "zero", "feature": "numbers", "tipVi": "Đọc dãy số điện thoại theo nhịp 3-4 chữ số.", "ipaConnected": "/ˈzɪərəʊ tuː ˈzɪərəʊ/" }
+    ],
+    "acceptedVariants": ["Call the clinic office on 020 7946.", "Call the clinic office on 0207946."]
+  },
+  {
+    "level": 2,
+    "text": "A refundable deposit of sixty pounds secures your summer room.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "sixty", "feature": "numbers", "tipVi": "Trọng âm đầu ở 'sixty' khác với trọng âm sau ở 'sixteen'.", "ipaConnected": "/ˈsɪksti paʊndz/" }
+    ],
+    "acceptedVariants": ["A refundable deposit of 60 pounds secures your summer room.", "A refundable deposit of £60 secures your summer room."]
+  },
+  {
+    "level": 2,
+    "text": "Dr Fletcher holds office hours between two thirty and four.",
+    "features": ["numbers", "names"],
+    "focusSpecs": [
+      { "word": "Fletcher", "feature": "names", "tipVi": "Chú ý chính tả họ phổ biến 'Fletcher' có chữ 't' trước 'ch'.", "ipaConnected": "/ˈfletʃə/" }
+    ],
+    "acceptedVariants": ["Dr Fletcher holds office hours between 2:30 and 4."]
+  },
+  {
+    "level": 2,
+    "text": "Tickets for children under twelve are discounted by fifteen percent.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "fifteen", "feature": "numbers", "tipVi": "Nghe âm /iːn/ kéo dài của 'fifteen' để tránh nhầm với 'fifty'.", "ipaConnected": "/ˌfɪfˈtiːn pəˈsent/" }
+    ],
+    "acceptedVariants": ["Tickets for children under 12 are discounted by 15%.", "Tickets for children under 12 are discounted by 15 percent."]
+  },
+  {
+    "level": 2,
+    "text": "The coastal trail measures nearly eighteen kilometres from start to finish.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "eighteen", "feature": "numbers", "tipVi": "Trọng âm ở âm tiết thứ hai giúp nhận ra 'eighteen' thay vì 'eighty'.", "ipaConnected": "/ˌeɪˈtiːn ˈkɪləmiːtəz/" }
+    ],
+    "acceptedVariants": ["The coastal trail measures nearly 18 kilometres from start to finish.", "The coastal trail measures nearly 18 kilometers from start to finish."]
+  },
+  {
+    "level": 2,
+    "text": "Our annual charity run takes place on the twelfth of April.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "twelfth", "feature": "numbers", "tipVi": "Chú ý chữ 'f' trong chính tả 'twelfth' (không phải twelth).", "ipaConnected": "/twelfθ əv/" }
+    ],
+    "acceptedVariants": ["Our annual charity run takes place on 12 April.", "Our annual charity run takes place on 12th April."]
+  },
+  {
+    "level": 2,
+    "text": "Please ask for Miss Caldwell when you arrive at reception.",
+    "features": ["names"],
+    "focusSpecs": [
+      { "word": "Caldwell", "feature": "names", "tipVi": "Họ 'Caldwell' kết thúc bằng hai chữ 'l' (double l).", "ipaConnected": "/ˈkɔːldwel/" }
+    ]
+  },
+  {
+    "level": 2,
+    "text": "The evening shuttle leaves Gate four at twenty to eight.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "twenty", "feature": "numbers", "tipVi": "'twenty to eight' nghĩa là 7:40 (tám giờ kém hai mươi).", "ipaConnected": "/ˈtwenti tə eɪt/" }
+    ],
+    "acceptedVariants": ["The evening shuttle leaves Gate 4 at 7:40."]
+  },
+  {
+    "level": 2,
+    "text": "Parking costs four pounds fifty for stays over three hours.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "fifty", "feature": "numbers", "tipVi": "'four pounds fifty' = £4.50, không nói từ 'pence'.", "ipaConnected": "/fɔː paʊndz ˈfɪfti/" }
+    ],
+    "acceptedVariants": ["Parking costs £4.50 for stays over 3 hours.", "Parking costs 4.50 pounds for stays over 3 hours."]
+  },
+  {
+    "level": 2,
+    "text": "The seminar room seats a maximum of forty eight students.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "forty", "feature": "numbers", "tipVi": "Chú ý 'forty' KHÔNG có chữ 'u' (khác với 'four').", "ipaConnected": "/ˈfɔːti eɪt/" }
+    ],
+    "acceptedVariants": ["The seminar room seats a maximum of 48 students."]
+  },
+  {
+    "level": 2,
+    "text": "Rent is due on the first Monday of every calendar month.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "calendar", "feature": "academic", "tipVi": "Chính tả 'calendar' kết thúc bằng -ar, không phải -er.", "ipaConnected": "/ˈkælɪndə/" }
+    ],
+    "acceptedVariants": ["Rent is due on the 1st Monday of every calendar month."]
+  },
+  {
+    "level": 2,
+    "text": "The parcel weighed exactly two point seven kilograms at the counter.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "point", "feature": "numbers", "tipVi": "Số thập phân tiếng Anh đọc 'point': 2.7.", "ipaConnected": "/tuː pɔɪnt ˈsevn/" }
+    ],
+    "acceptedVariants": ["The parcel weighed exactly 2.7 kilograms at the counter.", "The parcel weighed exactly 2.7 kg at the counter."]
+  },
+  {
+    "level": 2,
+    "text": "Mr Whittaker left a spare key with the building caretaker.",
+    "features": ["names"],
+    "focusSpecs": [
+      { "word": "Whittaker", "feature": "names", "tipVi": "Tên riêng 'Whittaker' có chữ 'h' sau 'W' và hai chữ 't'.", "ipaConnected": "/ˈwɪtəkə/" }
+    ]
+  },
+  {
+    "level": 2,
+    "text": "The museum gallery opened in nineteen seventy four after full restoration.",
+    "features": ["numbers"],
+    "focusSpecs": [
+      { "word": "seventy", "feature": "numbers", "tipVi": "Năm đọc tách hai cặp số: nineteen seventy four (1974).", "ipaConnected": "/ˌnaɪntiːn ˈsevnti fɔː/" }
+    ],
+    "acceptedVariants": ["The museum gallery opened in 1974 after full restoration."]
+  },
+
+  {
+    "level": 3,
+    "text": "The researchers collected water samples from twelve coastal stations yesterday.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "collected", "feature": "final_consonant", "tipVi": "Đuôi -ed sau /t/ đọc rõ thành âm tiết /ɪd/.", "ipaConnected": "/kəˈlektɪd/" },
+      { "word": "samples", "feature": "final_consonant", "tipVi": "Chú ý âm cuối -s số nhiều ở cả 'samples' và 'stations'.", "ipaConnected": "/ˈsɑːmplz/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Several volunteers helped repair wooden benches along the northern ridge.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "helped", "feature": "final_consonant", "tipVi": "Âm /t/ cuối 'helped' rất khẽ trước phụ âm /r/ của 'repair'.", "ipaConnected": "/helpt rɪˈpeə/" },
+      { "word": "benches", "feature": "final_consonant", "tipVi": "Số nhiều 'benches' có âm /ɪz/ rõ ở cuối.", "ipaConnected": "/ˈbentʃɪz/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Most participants completed the second questionnaire faster than expected.",
+    "features": ["final_consonant", "academic"],
+    "focusSpecs": [
+      { "word": "participants", "feature": "final_consonant", "tipVi": "Nghe âm cuối /ts/ số nhiều sau lượng từ 'Most'.", "ipaConnected": "/pɑːˈtɪsɪpənts/" },
+      { "word": "expected", "feature": "final_consonant", "tipVi": "Đuôi -ed /ɪd/ ở cuối câu hay bị rơi khi gõ nhanh.", "ipaConnected": "/ɪkˈspektɪd/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Cold winds damaged dozens of young saplings across the hillside.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "damaged", "feature": "final_consonant", "tipVi": "Đuôi -ed /d/ trong 'damaged' gộp sát với chữ 'd' đầu 'dozens'.", "ipaConnected": "/ˈdæmɪdʒd ˈdʌznz/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "The council replaced broken streetlights before the dark winter months.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "replaced", "feature": "final_consonant", "tipVi": "Nghe đuôi -ed /t/ trong 'replaced' để không viết nhầm hiện tại.", "ipaConnected": "/rɪˈpleɪst ˈbrəʊkən/" },
+      { "word": "months", "feature": "final_consonant", "tipVi": "Cụm phụ âm cuối /nθs/ trong 'months' thường giảm còn /ns/.", "ipaConnected": "/mʌnθs/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Students checked their laboratory notebooks and recorded every temperature change.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "checked", "feature": "final_consonant", "tipVi": "Âm /kt/ cuối 'checked' rất dễ bị bỏ sót trước 'their'.", "ipaConnected": "/tʃekt ðeə/" },
+      { "word": "notebooks", "feature": "final_consonant", "tipVi": "Số nhiều 'notebooks' nối âm /s/ sang 'and'.", "ipaConnected": "/ˈnəʊtbʊks ənd/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "The curator packed fragile ceramic bowls inside lined wooden crates.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "packed", "feature": "final_consonant", "tipVi": "Đuôi -ed /t/ trong 'packed' lướt nhanh trước 'fragile'.", "ipaConnected": "/pækt ˈfrædʒaɪl/" },
+      { "word": "crates", "feature": "final_consonant", "tipVi": "Danh từ số nhiều 'crates' có âm /ts/ rõ.", "ipaConnected": "/kreɪts/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Local farmers noticed fewer insects after the unusually wet spring.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "noticed", "feature": "final_consonant", "tipVi": "Đuôi -ed /t/ trong 'noticed' nhỏ âm trước 'fewer'.", "ipaConnected": "/ˈnəʊtɪst ˈfjuːə/" },
+      { "word": "insects", "feature": "final_consonant", "tipVi": "Cụm /kts/ ở cuối 'insects' cần nghe rõ -s sau 'fewer'.", "ipaConnected": "/ˈɪnsekts/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Engineers tested three bridge supports under heavy simulated wind loads.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "supports", "feature": "final_consonant", "tipVi": "'supports' là danh từ số nhiều sau số đếm 'three'.", "ipaConnected": "/səˈpɔːts/" },
+      { "word": "loads", "feature": "final_consonant", "tipVi": "Chú ý âm cuối /dz/ của 'loads'.", "ipaConnected": "/ləʊdz/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "The committee approved two grants for community gardens last autumn.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "approved", "feature": "final_consonant", "tipVi": "Âm /d/ cuối 'approved' nối nhẹ trước 'two'.", "ipaConnected": "/əˈpruːvd tuː/" },
+      { "word": "grants", "feature": "final_consonant", "tipVi": "Số nhiều 'grants' (khoản tài trợ) có âm /ts/.", "ipaConnected": "/ɡrɑːnts/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Divers photographed coral reefs while measuring seasonal ocean temperatures.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "photographed", "feature": "final_consonant", "tipVi": "Đuôi -ed /t/ sau âm /f/ trong 'photographed' rất dễ sót.", "ipaConnected": "/ˈfəʊtəɡrɑːft/" },
+      { "word": "reefs", "feature": "final_consonant", "tipVi": "Số nhiều 'reefs' (rặng san hô) thêm -s, không đổi thành -ves.", "ipaConnected": "/riːfs/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Our department updated the reading lists for all undergraduate modules.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "lists", "feature": "final_consonant", "tipVi": "Cụm /sts/ trong 'lists' rất khó nghe trước 'for'.", "ipaConnected": "/lɪsts fə/" },
+      { "word": "modules", "feature": "final_consonant", "tipVi": "Danh từ số nhiều 'modules' sau 'all undergraduate'.", "ipaConnected": "/ˈmɒdjuːlz/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Early merchants traded dried spices and woven textiles across ports.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "dried", "feature": "final_consonant", "tipVi": "Tính từ phân từ 'dried' có âm /d/ trước 'spices'.", "ipaConnected": "/draɪd ˈspaɪsɪz/" },
+      { "word": "textiles", "feature": "final_consonant", "tipVi": "Nghe âm /z/ cuối 'textiles' (hàng dệt may).", "ipaConnected": "/ˈtekstaɪlz/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "The librarian sorted archived newspapers into labelled cardboard boxes.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "archived", "feature": "final_consonant", "tipVi": "Phân từ 'archived' (lưu trữ) có đuôi -ed /d/.", "ipaConnected": "/ˈɑːkaɪvd/" },
+      { "word": "labelled", "feature": "final_consonant", "tipVi": "Chính tả UK 'labelled' có hai chữ 'l' (US: labeled).", "ipaConnected": "/ˈleɪbld/" }
+    ],
+    "acceptedVariants": ["The librarian sorted archived newspapers into labeled cardboard boxes."]
+  },
+  {
+    "level": 3,
+    "text": "Technicians calibrated the acoustic sensors before recording nocturnal bird calls.",
+    "features": ["final_consonant", "academic"],
+    "focusSpecs": [
+      { "word": "calibrated", "feature": "final_consonant", "tipVi": "Động từ học thuật 'calibrated' (hiệu chuẩn) đọc đủ âm /ɪd/.", "ipaConnected": "/ˈkælɪbreɪtɪd/" },
+      { "word": "sensors", "feature": "final_consonant", "tipVi": "Số nhiều 'sensors' kết thúc bằng /z/.", "ipaConnected": "/ˈsensəz/" }
+    ]
+  },
+  {
+    "level": 3,
+    "text": "Several architects praised the curved timber beams in the ceiling.",
+    "features": ["final_consonant"],
+    "focusSpecs": [
+      { "word": "praised", "feature": "final_consonant", "tipVi": "Đuôi -ed /d/ trong 'praised' rất mảnh trước 'the'.", "ipaConnected": "/preɪzd ðə/" },
+      { "word": "curved", "feature": "final_consonant", "tipVi": "Tính từ 'curved' (uốn cong) cần đủ đuôi -ed.", "ipaConnected": "/kɜːvd ˈtɪmbə/" }
+    ]
+  },
+
+  {
+    "level": 4,
+    "text": "A number of students have applied for a place on the summer field course.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "of", "feature": "weak_form", "tipVi": "'number of' đọc lướt thành /ˈnʌmbər əv/.", "ipaConnected": "/ˈnʌmbər əv/" },
+      { "word": "have", "feature": "weak_form", "tipVi": "Trợ động từ 'have' giảm âm thành /əv/ sau 'students'.", "ipaConnected": "/ˈstjuːdənts əv/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "Most of the survey forms were returned to the coordinator at the end of May.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "were", "feature": "weak_form", "tipVi": "'were' đọc yếu /wə/ trước 'returned', dễ bỏ sót.", "ipaConnected": "/wə rɪˈtɜːnd/" },
+      { "word": "to", "feature": "weak_form", "tipVi": "Giới từ 'to' giảm thành /tə/ trước 'the coordinator'.", "ipaConnected": "/tə ðə/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "You should have checked the timetable before booking a flight to the conference.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "have", "feature": "weak_form", "tipVi": "'should have' đọc nối rất yếu /ʃʊdəv/, tránh viết nhầm thành 'should of'.", "ipaConnected": "/ʃʊd əv tʃekt/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "The shortage of affordable housing has become a major concern for city planners.",
+    "features": ["weak_form", "academic"],
+    "focusSpecs": [
+      { "word": "of", "feature": "weak_form", "tipVi": "'shortage of' nối nhẹ /ˈʃɔːtɪdʒ əv/.", "ipaConnected": "/ˈʃɔːtɪdʒ əv/" },
+      { "word": "for", "feature": "weak_form", "tipVi": "Giới từ 'for' đọc yếu /fə/ trước 'city'.", "ipaConnected": "/fə ˈsɪti/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "There are at least four factors that can affect the quality of the soil.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "are", "feature": "weak_form", "tipVi": "'There are at' nối nhanh /ðeər ər ət/.", "ipaConnected": "/ðeər ər ət/" },
+      { "word": "can", "feature": "weak_form", "tipVi": "'that can' giảm âm thành /ðət kən/.", "ipaConnected": "/ðət kən əˈfekt/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "She was asked to prepare a brief summary of the findings for her tutor.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "was", "feature": "weak_form", "tipVi": "'was' đọc yếu /wəz/ nối vào 'asked'.", "ipaConnected": "/wəz ɑːskt/" },
+      { "word": "for", "feature": "weak_form", "tipVi": "'for her' đọc nhanh /fər ɜː/.", "ipaConnected": "/fər ɜː/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "Access to clean drinking water was restricted during the dry season in the valley.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "to", "feature": "weak_form", "tipVi": "'Access to' giảm âm /tə/ rất ngắn.", "ipaConnected": "/ˈækses tə/" },
+      { "word": "in", "feature": "weak_form", "tipVi": "Cụm 'in the' đọc nhẹ /ɪn ðə/.", "ipaConnected": "/ɪn ðə ˈvæli/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "Both of the speakers agreed that an early draft of the report was needed.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "of", "feature": "weak_form", "tipVi": "'Both of the' đọc lướt /bəʊθ əv ðə/.", "ipaConnected": "/bəʊθ əv ðə/" },
+      { "word": "an", "feature": "weak_form", "tipVi": "Mạo từ 'an' đọc yếu /ən/ trước 'early'.", "ipaConnected": "/ðət ən ˈɜːli/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "We were told to wait at the entrance until a member of staff arrived.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "were", "feature": "weak_form", "tipVi": "'We were' đọc gọn /wiː wə/.", "ipaConnected": "/wiː wə təʊld/" },
+      { "word": "at", "feature": "weak_form", "tipVi": "'at the' lướt thành /ət ðə/.", "ipaConnected": "/ət ði ˈentrəns/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "A proportion of the budget has been set aside for the repair of roofs.",
+    "features": ["weak_form", "academic"],
+    "focusSpecs": [
+      { "word": "has", "feature": "weak_form", "tipVi": "'has been' giảm âm thành /həz bɪn/.", "ipaConnected": "/həz bɪn set/" },
+      { "word": "of", "feature": "weak_form", "tipVi": "Cả hai chữ 'of' đều đọc rất nhẹ /əv/.", "ipaConnected": "/rɪˈpeər əv/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "The purpose of this lecture is to compare two methods of storing solar energy.",
+    "features": ["weak_form", "academic"],
+    "focusSpecs": [
+      { "word": "to", "feature": "weak_form", "tipVi": "'is to compare' đọc lướt /ɪz tə kəmˈpeə/.", "ipaConnected": "/ɪz tə kəmˈpeə/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "Some of the data had to be discarded because the batteries had run down.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "had", "feature": "weak_form", "tipVi": "'had to be' giảm âm /hæd tə bi/.", "ipaConnected": "/hæd tə bi/" },
+      { "word": "because", "feature": "weak_form", "tipVi": "'because the' nối gọn /bɪˈkəz ðə/.", "ipaConnected": "/bɪˈkəz ðə/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "It is essential for applicants to attach a copy of their degree to the email.",
+    "features": ["weak_form", "academic"],
+    "focusSpecs": [
+      { "word": "for", "feature": "weak_form", "tipVi": "'for applicants' nối âm /r/ yếu /fər ˈæplɪkənts/.", "ipaConnected": "/fər ˈæplɪkənts/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "The level of noise from the motorway was higher than the team had anticipated.",
+    "features": ["weak_form", "academic"],
+    "focusSpecs": [
+      { "word": "than", "feature": "weak_form", "tipVi": "'than' đọc yếu /ðən/, tránh nhầm với 'then'.", "ipaConnected": "/ˈhaɪə ðən ðə/" }
+    ]
+  },
+  {
+    "level": 4,
+    "text": "Each of the groups will present an outline of its proposal at the workshop.",
+    "features": ["weak_form"],
+    "focusSpecs": [
+      { "word": "an", "feature": "weak_form", "tipVi": "'present an outline' nối phụ âm /t/ sang /ən/.", "ipaConnected": "/prɪˈzent ən ˈaʊtlaɪn/" }
+    ]
+  },
+
+  {
+    "level": 5,
+    "text": "An increase in coastal rainfall has accelerated erosion along the cliffs over recent decades.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "increase", "feature": "linking", "tipVi": "'increase in' nối âm /s/ sang /ɪn/ thành /ɪnˈkriːs ɪn/.", "ipaConnected": "/ˈɪnkriːs ɪn/" },
+      { "word": "accelerated", "feature": "academic", "tipVi": "Động từ 'accelerated' (tăng tốc) có hai chữ 'c', một chữ 'l'.", "ipaConnected": "/əkˈseləreɪtɪd/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Turning now to urban transport, dedicated bus lanes can cut peak journey times dramatically.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "cut", "feature": "linking", "tipVi": "Âm /t/ ở cuối 'cut' chặn hơi trước 'peak'.", "ipaConnected": "/kʌt piːk/" },
+      { "word": "dramatically", "feature": "academic", "tipVi": "Trạng từ 'dramatically' thường mất âm tiết 'a' khi nói nhanh /drəˈmætɪkli/.", "ipaConnected": "/drəˈmætɪkli/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "When ancient canals silted up, farmers built stone channels to redirect mountain runoff.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "silted", "feature": "linking", "tipVi": "'silted up' nối phụ âm /d/ sang /ʌp/.", "ipaConnected": "/ˈsɪltɪd ʌp/" },
+      { "word": "runoff", "feature": "academic", "tipVi": "'runoff' (dòng chảy tràn) viết liền hoặc có gạch nối.", "ipaConnected": "/ˈrʌnɒf/" }
+    ],
+    "acceptedVariants": ["When ancient canals silted up, farmers built stone channels to redirect mountain run-off."]
+  },
+  {
+    "level": 5,
+    "text": "Researchers observed a striking link between evening screen exposure and delayed sleep onset.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "observed", "feature": "linking", "tipVi": "'observed a' nối âm /d/ sang /ə/ nghe như 'observ-da'.", "ipaConnected": "/əbˈzɜːvd ə/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Once the timber dries out thoroughly, craftsmen seal every joint with natural beeswax.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "dries", "feature": "linking", "tipVi": "'dries out' nối âm /z/ sang /aʊt/.", "ipaConnected": "/draɪz aʊt/" },
+      { "word": "seal", "feature": "linking", "tipVi": "'seal every' nối âm /l/ sang nguyên âm /e/.", "ipaConnected": "/siːl ˈevri/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "A clear advantage of permeable paving is that storm water filters straight into the ground.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "advantage", "feature": "linking", "tipVi": "'clear advantage of' nối /r/ sang /ə/ và /dʒ/ sang /əv/.", "ipaConnected": "/klɪər ədˈvɑːntɪdʒ əv/" },
+      { "word": "permeable", "feature": "academic", "tipVi": "Tính từ học thuật 'permeable' (thấm nước được).", "ipaConnected": "/ˈpɜːmiəbl/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "If an alarm goes off unexpectedly, visitors must follow the green exit signs immediately.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "goes", "feature": "linking", "tipVi": "'goes off unexpectedly' nối liền ba từ /ɡəʊz ɒf ˌʌnɪkˈspektɪdli/.", "ipaConnected": "/ɡəʊz ɒf/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "The panel reached an agreement on funding only after reviewing every regional impact assessment.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "reached", "feature": "linking", "tipVi": "'reached an' nối đuôi /t/ sang /ən/.", "ipaConnected": "/riːtʃt ən/" },
+      { "word": "assessment", "feature": "academic", "tipVi": "Chính tả 'assessment' có hai cặp 'ss'.", "ipaConnected": "/əˈsesmənt/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Warm ocean currents carry heat northward and keep harbour ice from forming in winter.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "harbour", "feature": "academic", "tipVi": "Chính tả UK 'harbour' (US: harbor).", "ipaConnected": "/ˈhɑːbər aɪs/" }
+    ],
+    "acceptedVariants": ["Warm ocean currents carry heat northward and keep harbor ice from forming in winter."]
+  },
+  {
+    "level": 5,
+    "text": "During the excavation, archaeologists uncovered an intact kiln used for firing terracotta tiles.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "uncovered", "feature": "linking", "tipVi": "'uncovered an intact' nối âm liên hoàn /d-ə-n-ɪ/.", "ipaConnected": "/ʌnˈkʌvəd ən ɪnˈtækt/" },
+      { "word": "excavation", "feature": "academic", "tipVi": "'excavation' (cuộc khai quật) rất hay xuất hiện ở Part 4.", "ipaConnected": "/ˌekskəˈveɪʃn/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Before setting up the acoustic recorders, check each battery pack and secure the waterproof lid.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "setting", "feature": "linking", "tipVi": "'setting up' nối /ŋ/ sang /ʌp/.", "ipaConnected": "/ˈsetɪŋ ʌp/" },
+      { "word": "check", "feature": "linking", "tipVi": "'check each' nối phụ âm /k/ sang nguyên âm /iː/.", "ipaConnected": "/tʃek iːtʃ/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Several alpine species migrate upward in spring as snow melts away from rocky slopes.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "melts", "feature": "linking", "tipVi": "'melts away' nối âm cuối /ts/ sang /ə/.", "ipaConnected": "/melts əˈweɪ/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "One drawback of rapid urban expansion is the loss of natural floodplains outside cities.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "drawback", "feature": "linking", "tipVi": "'drawback of' nối /k/ sang /əv/.", "ipaConnected": "/ˈdrɔːbæk əv/" },
+      { "word": "floodplains", "feature": "academic", "tipVi": "Danh từ ghép 'floodplains' (đồng bằng ngập lụt) có -s số nhiều.", "ipaConnected": "/ˈflʌdpleɪnz/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "By switching over to reusable crates, the wholesale market cut packaging waste in half.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "switching", "feature": "linking", "tipVi": "'switching over' nối /ŋ/ sang /əʊ/.", "ipaConnected": "/ˈswɪtʃɪŋ ˈəʊvə/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "The survey points out that commuters value reliable departure times more than lower fares.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "points", "feature": "linking", "tipVi": "'points out' nối cụm /ts/ sang /aʊt/.", "ipaConnected": "/pɔɪnts aʊt/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Deep roots bind loose sand together and slow down the movement of coastal dunes.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "slow", "feature": "linking", "tipVi": "'slow down' có âm nối /w/ mượt giữa hai từ.", "ipaConnected": "/sləʊ daʊn/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "In contrast to earlier estimates, recent satellite images show a steady recovery in forest cover.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "show", "feature": "linking", "tipVi": "'show a' nối bằng bán nguyên âm /w/.", "ipaConnected": "/ʃəʊ ə ˈstedi/" },
+      { "word": "satellite", "feature": "academic", "tipVi": "Chính tả 'satellite': một 't', hai 'l'.", "ipaConnected": "/ˈsætəlaɪt/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "When two air masses collide over warm water, pressure drops off rapidly within hours.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "drops", "feature": "linking", "tipVi": "'drops off' nối /s/ sang /ɒf/.", "ipaConnected": "/drɒps ɒf/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "The exhibition traces how handwoven wool blankets evolved into an iconic regional trade good.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "evolved", "feature": "linking", "tipVi": "'evolved into an' nối âm liên tiếp /d-ɪ-tu-ən/.", "ipaConnected": "/ɪˈvɒlvd ˈɪntu ən/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Although the prototype worked well indoors, salt spray corroded its outer casing within weeks.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "worked", "feature": "linking", "tipVi": "'worked well indoors' nối âm /l/ của 'well' sang 'indoors'.", "ipaConnected": "/wɜːkt wel ɪnˈdɔːz/" },
+      { "word": "corroded", "feature": "academic", "tipVi": "Động từ 'corroded' (ăn mòn) có hai chữ 'r'.", "ipaConnected": "/kəˈrəʊdɪd/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Volunteers clean up the tidal marsh every autumn before migratory waders return from the north.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "clean", "feature": "linking", "tipVi": "'clean up' nối /n/ sang /ʌp/.", "ipaConnected": "/kliːn ʌp/" },
+      { "word": "migratory", "feature": "academic", "tipVi": "Tính từ 'migratory' (di cư) hay gặp ở bài giảng sinh học.", "ipaConnected": "/ˈmaɪɡrətri/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "A sharp rise in timber prices forced builders to look into locally quarried limestone instead.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "look", "feature": "linking", "tipVi": "'look into' nối phụ âm /k/ sang /ɪn/.", "ipaConnected": "/lʊk ˈɪntə/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Because the estuary narrows sharply inland, incoming tides pile up into a steep rolling wave.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "pile", "feature": "linking", "tipVi": "'pile up into' nối /l-ʌ-p-ɪ/ rất mượt.", "ipaConnected": "/paɪl ʌp ˈɪntə/" },
+      { "word": "estuary", "feature": "academic", "tipVi": "'estuary' (cửa sông) thường xuất hiện ở Part 4 địa lý.", "ipaConnected": "/ˈestʃuəri/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "By drawing on oral histories from retired sailors, the archive captures everyday harbour dialects.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "drawing", "feature": "linking", "tipVi": "'drawing on' nối /ŋ/ sang /ɒn/.", "ipaConnected": "/ˈdrɔːɪŋ ɒn/" }
+    ],
+    "acceptedVariants": ["By drawing on oral histories from retired sailors, the archive captures everyday harbor dialects."]
+  },
+  {
+    "level": 5,
+    "text": "If soil temperatures stay above freezing, microbial activity breaks down organic matter much faster.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "breaks", "feature": "linking", "tipVi": "'breaks down' và 'stay above' (nối /j/) tạo nhịp nhanh.", "ipaConnected": "/breɪks daʊn/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Rather than tearing down the old warehouse, the city converted it into a public market.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "converted", "feature": "linking", "tipVi": "'converted it into' nối âm liên hoàn /ɪd-ɪ-t-ɪn/.", "ipaConnected": "/kənˈvɜːtɪd ɪt ˈɪntə/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Each acoustic panel absorbs echo at low frequencies without muffling the speaker on stage.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "absorbs", "feature": "linking", "tipVi": "'absorbs echo' nối /z/ sang /e/.", "ipaConnected": "/əbˈzɔːbz ˈekəʊ/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "The pilot study ran over eighteen months and tracked electricity savings across ninety homes.",
+    "features": ["linking", "numbers"],
+    "focusSpecs": [
+      { "word": "ran", "feature": "linking", "tipVi": "'ran over eighteen' nối âm /n-əʊ-vər-eɪ/.", "ipaConnected": "/ræn ˈəʊvər eɪˈtiːn/" }
+    ],
+    "acceptedVariants": ["The pilot study ran over 18 months and tracked electricity savings across 90 homes."]
+  },
+  {
+    "level": 5,
+    "text": "When daylight fades in autumn, deciduous trees pull valuable nutrients back into their trunks.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "fades", "feature": "linking", "tipVi": "'fades in autumn' nối /z-ɪ-n-ɔː/.", "ipaConnected": "/feɪdz ɪn ˈɔːtəm/" },
+      { "word": "nutrients", "feature": "academic", "tipVi": "Số nhiều 'nutrients' (dưỡng chất) có đuôi -ts.", "ipaConnected": "/ˈnjuːtriənts/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "The committee set out clear guidelines to prevent conflicts of interest during grant reviews.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "set", "feature": "linking", "tipVi": "'set out' nối /t/ (hoặc âm vỗ /ɾ/ ở giọng US/AU) sang /aʊt/.", "ipaConnected": "/set aʊt/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "Local bee populations bounced back once wildflowers were planted along railway embankments.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "bounced", "feature": "linking", "tipVi": "Âm /t/ trong 'bounced' hòa gần như biến mất trước 'back'.", "ipaConnected": "/baʊnst bæk/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "An unexpected power cut held up the morning ferry service for almost an hour.",
+    "features": ["linking"],
+    "focusSpecs": [
+      { "word": "held", "feature": "linking", "tipVi": "'held up' nối /d/ sang /ʌp/.", "ipaConnected": "/held ʌp/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "By cooling air through damp clay walls, desert builders kept interior rooms remarkably comfortable.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "kept", "feature": "linking", "tipVi": "'kept interior' nối /t/ sang /ɪn/.", "ipaConnected": "/kept ɪnˈtɪəriə/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "The report wraps up with three practical recommendations for improving rural broadband access.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "wraps", "feature": "linking", "tipVi": "'wraps up' nối /s/ sang /ʌp/.", "ipaConnected": "/ræps ʌp/" },
+      { "word": "recommendations", "feature": "academic", "tipVi": "Chính tả 'recommendations': một 'c', hai 'm', có -s.", "ipaConnected": "/ˌrekəmenˈdeɪʃnz/" }
+    ]
+  },
+  {
+    "level": 5,
+    "text": "As glacier ice melts away, dark rock underneath absorbs far more incoming solar radiation.",
+    "features": ["linking", "academic"],
+    "focusSpecs": [
+      { "word": "melts", "feature": "linking", "tipVi": "'melts away' nối /ts/ sang /ə/.", "ipaConnected": "/melts əˈweɪ/" }
+    ]
+  },
+
+  {
+    "level": 6,
+    "text": "We won't be able to finalise the questionnaire until the ethics panel signs off on our revised consent form.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "won't", "feature": "contraction", "tipVi": "'won't be' thường nuốt âm /t/ trước /b/: /wəʊn bi/.", "ipaConnected": "/wəʊnt bi/" },
+      { "word": "finalise", "feature": "academic", "tipVi": "Chính tả UK 'finalise' (chấp nhận US 'finalize').", "ipaConnected": "/ˈfaɪnəlaɪz/" }
+    ],
+    "acceptedVariants": ["We will not be able to finalize the questionnaire until the ethics panel signs off on our revised consent form.", "We won't be able to finalize the questionnaire until the ethics panel signs off on our revised consent form."]
+  },
+  {
+    "level": 6,
+    "text": "They couldn't replicate the first experiment because the humidity inside the greenhouse wasn't kept constant.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "couldn't", "feature": "contraction", "tipVi": "Âm /t/ cuối 'couldn't' bị nuốt trước 'replicate'.", "ipaConnected": "/ˈkʊdn ˈreplɪkeɪt/" },
+      { "word": "wasn't", "feature": "contraction", "tipVi": "'wasn't kept' nuốt /t/ giữa hai phụ âm /n/ và /k/.", "ipaConnected": "/ˈwɒzn kept/" }
+    ],
+    "acceptedVariants": ["They could not replicate the first experiment because the humidity inside the greenhouse was not kept constant."]
+  },
+  {
+    "level": 6,
+    "text": "It's worth noting that next week's seminar hasn't been cancelled, although it's moved to a larger theatre.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "next", "feature": "elision", "tipVi": "'next week's' nuốt /t/ trong 'next': /neks wiːks/.", "ipaConnected": "/neks wiːks/" },
+      { "word": "hasn't", "feature": "contraction", "tipVi": "'hasn't been' đọc rất nhanh /ˈhæzn bɪn/.", "ipaConnected": "/ˈhæzn bɪn/" }
+    ],
+    "acceptedVariants": ["It is worth noting that next week's seminar has not been canceled, although it has moved to a larger theater."]
+  },
+  {
+    "level": 6,
+    "text": "We've found that most commuters didn't switch to cycling until separated lanes were built past the junction.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "We've", "feature": "contraction", "tipVi": "'We've found' gộp âm /v/ vào /f/ của 'found'.", "ipaConnected": "/wiːv faʊnd/" },
+      { "word": "didn't", "feature": "contraction", "tipVi": "'didn't switch' nuốt /t/ thành /ˈdɪdn swɪtʃ/.", "ipaConnected": "/ˈdɪdn swɪtʃ/" }
+    ],
+    "acceptedVariants": ["We have found that most commuters did not switch to cycling until separated lanes were built past the junction."]
+  },
+  {
+    "level": 6,
+    "text": "There's plenty of compelling evidence that urban trees reduce peak street temperatures by several degrees.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "There's", "feature": "contraction", "tipVi": "'There's' kết nối nhanh trước danh từ không đếm được 'plenty of evidence'.", "ipaConnected": "/ðeəz ˈplenti əv/" },
+      { "word": "compelling", "feature": "academic", "tipVi": "Collocation học thuật: 'compelling evidence' (bằng chứng thuyết phục).", "ipaConnected": "/kəmˈpelɪŋ/" }
+    ],
+    "acceptedVariants": ["There is plenty of compelling evidence that urban trees reduce peak street temperatures by several degrees."]
+  },
+  {
+    "level": 6,
+    "text": "I wouldn't rely on a single survey when there's such a wide margin of sampling error.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "wouldn't", "feature": "contraction", "tipVi": "'wouldn't rely' nuốt /t/ thành /ˈwʊdn rɪˈlaɪ/.", "ipaConnected": "/ˈwʊdn rɪˈlaɪ/" }
+    ],
+    "acceptedVariants": ["I would not rely on a single survey when there is such a wide margin of sampling error."]
+  },
+  {
+    "level": 6,
+    "text": "Although the museum's facade looks ancient, it's actually been rebuilt twice since the late nineteenth century.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "it's", "feature": "contraction", "tipVi": "'it's actually been' là viết tắt của 'it has', không phải 'it is'.", "ipaConnected": "/ɪts ˈæktʃuəli bɪn/" },
+      { "word": "rebuilt", "feature": "elision", "tipVi": "'rebuilt twice' ghép hai âm /t/ lại thành một lần bật.", "ipaConnected": "/ˌriːˈbɪlt twaɪs/" }
+    ],
+    "acceptedVariants": ["Although the museum's facade looks ancient, it has actually been rebuilt twice since the late 19th century."]
+  },
+  {
+    "level": 6,
+    "text": "You'd expect older stone bridges to crack first, yet most structural damage starts around steel joints.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "You'd", "feature": "contraction", "tipVi": "'You'd expect' (= You would expect) nối âm /d/ sang /ɪk/.", "ipaConnected": "/juːd ɪkˈspekt/" },
+      { "word": "most", "feature": "elision", "tipVi": "'most structural' thường nuốt /t/ thành /məʊs ˈstrʌktʃərəl/.", "ipaConnected": "/məʊs ˈstrʌktʃərəl/" }
+    ],
+    "acceptedVariants": ["You would expect older stone bridges to crack first, yet most structural damage starts around steel joints."]
+  },
+  {
+    "level": 6,
+    "text": "We shouldn't overlook the maintenance costs, because they'll easily exceed the initial installation fee within five years.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "shouldn't", "feature": "contraction", "tipVi": "'shouldn't overlook' nối /t/ sang nguyên âm /əʊ/.", "ipaConnected": "/ˈʃʊdnt ˌəʊvəˈlʊk/" },
+      { "word": "they'll", "feature": "contraction", "tipVi": "'they'll' nghe rất gọn /ðeɪl/, dễ nhầm thành 'they'.", "ipaConnected": "/ðeɪl ˈiːzəli/" }
+    ],
+    "acceptedVariants": ["We should not overlook the maintenance costs, because they will easily exceed the initial installation fee within 5 years."]
+  },
+  {
+    "level": 6,
+    "text": "What's particularly striking about deep sea fish is that they don't rely on sunlight for navigation.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "What's", "feature": "contraction", "tipVi": "'What's particularly' nối nhanh /wɒts pəˈtɪkjələli/.", "ipaConnected": "/wɒts pəˈtɪkjələli/" },
+      { "word": "don't", "feature": "elision", "tipVi": "'don't rely' nuốt /t/ thành /dəʊn rɪˈlaɪ/.", "ipaConnected": "/dəʊn rɪˈlaɪ/" }
+    ],
+    "acceptedVariants": ["What is particularly striking about deep sea fish is that they do not rely on sunlight for navigation."]
+  },
+  {
+    "level": 6,
+    "text": "They'd originally planned to interview fifty residents, but couldn't recruit enough volunteers before the deadline.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "They'd", "feature": "contraction", "tipVi": "'They'd' (= They had) nối mượt sang 'originally'.", "ipaConnected": "/ðeɪd əˈrɪdʒənəli/" },
+      { "word": "couldn't", "feature": "elision", "tipVi": "'couldn't recruit' nuốt âm /t/ giữa /n/ và /r/.", "ipaConnected": "/ˈkʊdn rɪˈkruːt/" }
+    ],
+    "acceptedVariants": ["They had originally planned to interview 50 residents, but could not recruit enough volunteers before the deadline."]
+  },
+  {
+    "level": 6,
+    "text": "If the compost pile doesn't reach sixty degrees, weed seeds won't break down during the cycle.",
+    "features": ["contraction", "elision", "numbers"],
+    "focusSpecs": [
+      { "word": "doesn't", "feature": "contraction", "tipVi": "'doesn't reach' nuốt /t/ thành /ˈdʌzn riːtʃ/.", "ipaConnected": "/ˈdʌzn riːtʃ/" },
+      { "word": "won't", "feature": "elision", "tipVi": "'won't break' đọc gần như /wəʊm breɪk/ (đồng hóa âm mũi).", "ipaConnected": "/wəʊm breɪk/" }
+    ],
+    "acceptedVariants": ["If the compost pile does not reach 60 degrees, weed seeds will not break down during the cycle."]
+  },
+  {
+    "level": 6,
+    "text": "It isn't clear whether the policy actually lowered emissions, or whether milder winters simply cut heating demand.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "isn't", "feature": "contraction", "tipVi": "'isn't clear' nuốt /t/ thành /ˈɪzn klɪə/.", "ipaConnected": "/ˈɪzn klɪə/" },
+      { "word": "emissions", "feature": "academic", "tipVi": "Chính tả 'emissions': một 'm', hai 's', số nhiều.", "ipaConnected": "/ɪˈmɪʃnz/" }
+    ],
+    "acceptedVariants": ["It is not clear whether the policy actually lowered emissions, or whether milder winters simply cut heating demand."]
+  },
+  {
+    "level": 6,
+    "text": "Last month's audit revealed that nearly a third of the sensors hadn't been calibrated since winter.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "Last", "feature": "elision", "tipVi": "'Last month's' nuốt /t/ cuối 'last' trước /m/.", "ipaConnected": "/lɑːs mʌnθs/" },
+      { "word": "hadn't", "feature": "contraction", "tipVi": "'hadn't been' đọc nhanh /ˈhædn bɪn/.", "ipaConnected": "/ˈhædn bɪn/" }
+    ],
+    "acceptedVariants": ["Last month's audit revealed that nearly a third of the sensors had not been calibrated since winter."]
+  },
+  {
+    "level": 6,
+    "text": "She's argued convincingly that small regional libraries aren't just quiet study spaces, but vital civic hubs.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "She's", "feature": "contraction", "tipVi": "'She's argued' là viết tắt của 'She has argued'.", "ipaConnected": "/ʃiːz ˈɑːɡjuːd/" },
+      { "word": "aren't", "feature": "elision", "tipVi": "'aren't just' nuốt /t/ thành /ɑːn dʒʌst/.", "ipaConnected": "/ɑːn dʒʌst/" }
+    ],
+    "acceptedVariants": ["She has argued convincingly that small regional libraries are not just quiet study spaces, but vital civic hubs."]
+  },
+  {
+    "level": 6,
+    "text": "You mustn't assume that two variables are causally linked merely because their graphs move in parallel.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "mustn't", "feature": "contraction", "tipVi": "Chữ 't' đầu trong 'mustn't' hoàn toàn câm: /ˈmʌsnt/.", "ipaConnected": "/ˈmʌsnt əˈsjuːm/" },
+      { "word": "parallel", "feature": "academic", "tipVi": "Chính tả khó 'parallel': một 'r', hai 'l' giữa, một 'l' cuối.", "ipaConnected": "/ˈpærəlel/" }
+    ],
+    "acceptedVariants": ["You must not assume that two variables are causally linked merely because their graphs move in parallel."]
+  },
+  {
+    "level": 6,
+    "text": "Once we've sorted the raw transcripts, we'll compare how younger and older speakers pronounce those vowels.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "we've", "feature": "contraction", "tipVi": "'we've sorted' đọc gọn /wiːv ˈsɔːtɪd/.", "ipaConnected": "/wiːv ˈsɔːtɪd/" },
+      { "word": "we'll", "feature": "contraction", "tipVi": "'we'll compare' nghe ngắn /wɪl kəmˈpeə/.", "ipaConnected": "/wɪl kəmˈpeə/" }
+    ],
+    "acceptedVariants": ["Once we have sorted the raw transcripts, we will compare how younger and older speakers pronounce those vowels."]
+  },
+  {
+    "level": 6,
+    "text": "Although desalination plants don't depend on rainfall, they're still constrained by high electricity costs and brine disposal.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "they're", "feature": "contraction", "tipVi": "Phân biệt 'they're' (= they are) với 'their' theo ngữ pháp 'still constrained'.", "ipaConnected": "/ðeə stɪl/" },
+      { "word": "desalination", "feature": "academic", "tipVi": "Thuật ngữ 'desalination' (khử mặn nước biển) hay gặp ở Part 3/4.", "ipaConnected": "/ˌdiːˌsælɪˈneɪʃn/" }
+    ],
+    "acceptedVariants": ["Although desalination plants do not depend on rainfall, they are still constrained by high electricity costs and brine disposal."]
+  },
+  {
+    "level": 6,
+    "text": "Most people don't realise that underground fungal networks transfer carbon between neighbouring trees across an entire forest.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "don't", "feature": "elision", "tipVi": "'don't realise' nuốt /t/ thành /dəʊn ˈrɪəlaɪz/.", "ipaConnected": "/dəʊn ˈrɪəlaɪz/" },
+      { "word": "neighbouring", "feature": "academic", "tipVi": "Chính tả UK 'neighbouring' (US: neighboring).", "ipaConnected": "/ˈneɪbərɪŋ/" }
+    ],
+    "acceptedVariants": ["Most people do not realize that underground fungal networks transfer carbon between neighboring trees across an entire forest.", "Most people don't realize that underground fungal networks transfer carbon between neighboring trees across an entire forest."]
+  },
+  {
+    "level": 6,
+    "text": "The lecturer pointed out that medieval guilds weren't merely trade clubs, as they also regulated apprenticeship standards.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "weren't", "feature": "contraction", "tipVi": "'weren't merely' nuốt /t/ thành /wɜːn ˈmɪəli/.", "ipaConnected": "/wɜːn ˈmɪəli/" },
+      { "word": "apprenticeship", "feature": "academic", "tipVi": "Chính tả 'apprenticeship' có hai chữ 'p'.", "ipaConnected": "/əˈprentɪsʃɪp/" }
+    ],
+    "acceptedVariants": ["The lecturer pointed out that medieval guilds were not merely trade clubs, as they also regulated apprenticeship standards."]
+  },
+  {
+    "level": 6,
+    "text": "I'd have thought the limestone steps would wear down faster, yet they've survived centuries of heavy footfall.",
+    "features": ["contraction", "weak_form"],
+    "focusSpecs": [
+      { "word": "I'd", "feature": "contraction", "tipVi": "'I'd have thought' đọc liền rất nhanh /aɪdəv θɔːt/.", "ipaConnected": "/aɪdəv θɔːt/" },
+      { "word": "they've", "feature": "contraction", "tipVi": "'they've survived' lướt âm /v/ sang /s/.", "ipaConnected": "/ðeɪv səˈvaɪvd/" }
+    ],
+    "acceptedVariants": ["I would have thought the limestone steps would wear down faster, yet they have survived centuries of heavy footfall."]
+  },
+  {
+    "level": 6,
+    "text": "Because the sample size wasn't large enough, we can't draw firm conclusions about long term health effects.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "can't", "feature": "contraction", "tipVi": "'can't draw' đọc /kɑːn drɔː/ (UK) hoặc /kæn drɔː/ (US), cần nghe nguyên âm dài/ngắn.", "ipaConnected": "/kɑːn drɔː/" }
+    ],
+    "acceptedVariants": ["Because the sample size was not large enough, we cannot draw firm conclusions about long-term health effects.", "Because the sample size wasn't large enough, we can't draw firm conclusions about long-term health effects."]
+  },
+  {
+    "level": 6,
+    "text": "It's easy to underestimate how quickly invasive weeds spread once native ground cover has been disturbed.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "underestimate", "feature": "academic", "tipVi": "Động từ ghép 'underestimate' (đánh giá thấp) viết liền không dấu gạch nối.", "ipaConnected": "/ˌʌndərˈestɪmeɪt/" }
+    ],
+    "acceptedVariants": ["It is easy to underestimate how quickly invasive weeds spread once native ground cover has been disturbed."]
+  },
+  {
+    "level": 6,
+    "text": "Next term's fieldwork won't require overnight camping, since we've arranged hostel accommodation near the coastal observatory.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "Next", "feature": "elision", "tipVi": "'Next term's' nuốt /t/ ở 'next' trước /t/ của 'term'.", "ipaConnected": "/neks tɜːmz/" },
+      { "word": "accommodation", "feature": "academic", "tipVi": "Từ bẫy kinh điển: 2 chữ 'c', 2 chữ 'm', không có -s.", "ipaConnected": "/əˌkɒməˈdeɪʃn/" }
+    ],
+    "acceptedVariants": ["Next term's fieldwork will not require overnight camping, since we have arranged hostel accommodation near the coastal observatory."]
+  },
+  {
+    "level": 6,
+    "text": "They haven't decided which statistical test to run yet, because some questionnaire responses are still incomplete.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "haven't", "feature": "contraction", "tipVi": "'haven't decided' nuốt /t/ trước /d/.", "ipaConnected": "/ˈhævn dɪˈsaɪdɪd/" }
+    ],
+    "acceptedVariants": ["They have not decided which statistical test to run yet, because some questionnaire responses are still incomplete."]
+  },
+  {
+    "level": 6,
+    "text": "Even though self healing concrete costs more initially, it doesn't need frequent repairs in salty marine air.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "doesn't", "feature": "contraction", "tipVi": "'doesn't need' nuốt /t/ thành /ˈdʌzn niːd/.", "ipaConnected": "/ˈdʌzn niːd/" }
+    ],
+    "acceptedVariants": ["Even though self-healing concrete costs more initially, it does not need frequent repairs in salty marine air.", "Even though self-healing concrete costs more initially, it doesn't need frequent repairs in salty marine air."]
+  },
+  {
+    "level": 6,
+    "text": "He'd expected the glacier cores to show uniform layers, yet there's distinct volcanic ash trapped at several depths.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "He'd", "feature": "contraction", "tipVi": "'He'd expected' (= He had expected) nghe nhẹ /hiːd/.", "ipaConnected": "/hiːd ɪkˈspektɪd/" }
+    ],
+    "acceptedVariants": ["He had expected the glacier cores to show uniform layers, yet there is distinct volcanic ash trapped at several depths."]
+  },
+  {
+    "level": 6,
+    "text": "We'd better check the tide tables tonight so we don't get cut off on the sandbar tomorrow.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "We'd", "feature": "contraction", "tipVi": "'We'd better' (= We had better) đọc nhanh /wiːd ˈbetə/.", "ipaConnected": "/wiːd ˈbetə/" },
+      { "word": "don't", "feature": "elision", "tipVi": "'don't get' nuốt /t/ thành /dəʊn ɡet/.", "ipaConnected": "/dəʊn ɡet/" }
+    ],
+    "acceptedVariants": ["We had better check the tide tables tonight so we do not get cut off on the sandbar tomorrow."]
+  },
+  {
+    "level": 6,
+    "text": "Although the acoustics aren't ideal in the old hall, we've positioned extra microphones to capture clear dialogue.",
+    "features": ["contraction", "academic"],
+    "focusSpecs": [
+      { "word": "acoustics", "feature": "academic", "tipVi": "'acoustics' (âm học) luôn có -s khi chỉ đặc tính âm thanh của phòng.", "ipaConnected": "/əˈkuːstɪks/" }
+    ],
+    "acceptedVariants": ["Although the acoustics are not ideal in the old hall, we have positioned extra microphones to capture clear dialogue."]
+  },
+  {
+    "level": 6,
+    "text": "You won't notice the subtle shift in pitch unless you're listening closely with studio quality headphones.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "you're", "feature": "contraction", "tipVi": "'you're listening' đọc yếu /jə ˈlɪsnɪŋ/, dễ nhầm sang 'your'.", "ipaConnected": "/jə ˈlɪsnɪŋ/" },
+      { "word": "subtle", "feature": "academic", "tipVi": "Chữ 'b' trong 'subtle' hoàn toàn câm: /ˈsʌtl/.", "ipaConnected": "/ˈsʌtl/" }
+    ],
+    "acceptedVariants": ["You will not notice the subtle shift in pitch unless you are listening closely with studio-quality headphones."]
+  },
+  {
+    "level": 6,
+    "text": "They're planning to expand the rooftop beehives next spring, provided that local residents don't object to the proposal.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "They're", "feature": "contraction", "tipVi": "'They're planning' đọc nhanh /ðeə ˈplænɪŋ/.", "ipaConnected": "/ðeə ˈplænɪŋ/" },
+      { "word": "next", "feature": "elision", "tipVi": "'next spring' nuốt /t/ thành /neks sprɪŋ/.", "ipaConnected": "/neks sprɪŋ/" }
+    ],
+    "acceptedVariants": ["They are planning to expand the rooftop beehives next spring, provided that local residents do not object to the proposal."]
+  },
+  {
+    "level": 6,
+    "text": "If you haven't backed up your field recordings yet, please copy them onto the shared drive before noon.",
+    "features": ["contraction", "elision"],
+    "focusSpecs": [
+      { "word": "backed", "feature": "elision", "tipVi": "'backed up' nối âm /t/ sang /ʌp/: /bækt ʌp/.", "ipaConnected": "/bækt ʌp/" }
+    ],
+    "acceptedVariants": ["If you have not backed up your field recordings yet, please copy them onto the shared drive before noon."]
+  },
+  {
+    "level": 6,
+    "text": "What's been most encouraging isn't just the higher crop yield, but the sharp drop in synthetic fertiliser use.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "What's", "feature": "contraction", "tipVi": "'What's been' (= What has been) đọc nối gọn /wɒts bɪn/.", "ipaConnected": "/wɒts bɪn/" },
+      { "word": "fertiliser", "feature": "academic", "tipVi": "Chính tả UK 'fertiliser' (US: fertilizer).", "ipaConnected": "/ˈfɜːtəlaɪzə/" }
+    ],
+    "acceptedVariants": ["What has been most encouraging is not just the higher crop yield, but the sharp drop in synthetic fertilizer use.", "What's been most encouraging isn't just the higher crop yield, but the sharp drop in synthetic fertilizer use."]
+  },
+  {
+    "level": 6,
+    "text": "I didn't think bilingual children would mix up the two word lists, yet fatigue clearly slowed their recall.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "didn't", "feature": "elision", "tipVi": "'didn't think' nuốt /t/ thành /ˈdɪdn θɪŋk/.", "ipaConnected": "/ˈdɪdn θɪŋk/" },
+      { "word": "fatigue", "feature": "academic", "tipVi": "Chính tả 'fatigue' (sự mệt mỏi) có đuôi -gue.", "ipaConnected": "/fəˈtiːɡ/" }
+    ],
+    "acceptedVariants": ["I did not think bilingual children would mix up the two word lists, yet fatigue clearly slowed their recall."]
+  },
+  {
+    "level": 6,
+    "text": "Most coastal councils can't afford massive sea walls, so they're investing in salt marshes to absorb storm surges.",
+    "features": ["contraction", "elision", "academic"],
+    "focusSpecs": [
+      { "word": "Most", "feature": "elision", "tipVi": "'Most coastal' nuốt /t/ thành /məʊs ˈkəʊstl/.", "ipaConnected": "/məʊs ˈkəʊstl/" },
+      { "word": "they're", "feature": "contraction", "tipVi": "'so they're investing' đọc liền /səʊ ðeər ɪnˈvestɪŋ/.", "ipaConnected": "/ðeər ɪnˈvestɪŋ/" }
+    ],
+    "acceptedVariants": ["Most coastal councils cannot afford massive sea walls, so they are investing in salt marshes to absorb storm surges."]
+  }
+]

@@ -1,0 +1,281 @@
+{
+  "id": "lep:p1_res_001",
+  "part": 1,
+  "reserved": true,
+  "title": "Meadowbrook Rail Lost Property Report",
+  "contextEn": "A rail passenger phones a railway station lost property office to report a bag left behind on an express train.",
+  "difficulty": 4,
+  "speakers": [
+    {
+      "id": "clerk",
+      "name": "Sophie Hargrave",
+      "role": "Lost Property Clerk",
+      "accent": "uk"
+    },
+    {
+      "id": "caller",
+      "name": "Trevor Maddox",
+      "role": "Rail Passenger",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "clerk",
+      "text": "Good afternoon, Meadowbrook Rail Lost Property Office, Sophie speaking. How can I help?"
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Oh, hello Sophie. I am rather annoyed with myself because I left a bag on the overhead rack of my train this morning."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "clerk",
+      "text": "Do not worry, we log items from every arriving service, so there is a good chance it will turn up. Let me open a report for you. Could I take your full name?"
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Yes, it is Trevor Maddox. That is M-A-D-D-O-X, double D in the middle."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "clerk",
+      "text": "Maddox, double D, thank you. Which train service were you travelling on this morning?"
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Um, I meant to catch the 10:50 express from Central... oh sorry, my bus was delayed so I missed that one and boarded the 11:20 express instead."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "clerk",
+      "text": "Right, the 11:20 express heading north to Brampton. Did you travel all the way to Brampton?"
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "No, I got off two stops earlier at Cromwell. I only realised I had forgotten the bag once I walked through the ticket barriers."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "clerk",
+      "text": "Okay, alighted at Cromwell. Do you remember your carriage and seat number so we can alert the cleaners at Brampton?"
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "Yes, I was in Coach D. My printed ticket says seat 14, though a family asked to sit together around a table, so I swapped with them and moved down to seat 42."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "clerk",
+      "text": "Very kind of you, and helpful to know! So rack above seat 42 in Coach D. Could you describe the bag for me?"
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "Well, I kept my black leather briefcase on my lap, so that is safe. The one I left behind is a medium backpack made of navy canvas with brass zips."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "clerk",
+      "text": "Navy canvas backpack, brass zips. And is there anything valuable inside, like a laptop or a wallet, that helps us verify ownership?"
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Thankfully my laptop and wallet were in my briefcase and coat pocket. Inside the backpack is a sketchbook and a pair of silver wireless headphones in a grey case."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "clerk",
+      "text": "Great, wireless headphones and a sketchbook noted. Let me generate your case reference number... that is MR749P... oh, hold on, let me squint at the font again. Sorry, the last letter is B for Bravo, so MR749B."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "M-R-seven-four-nine-B, written down. If the cleaners hand it in at Brampton, how does collection work?"
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "clerk",
+      "text": "All lost property from that line is brought back to our central office here at Meadowbrook Station by six this evening. Just bring photo ID and your reference code."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Where exactly is the lost property desk inside Meadowbrook Station? Is it next to the ticket office by platform 2?"
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "clerk",
+      "text": "No, platform 2 only has ticket sales and travel enquiries. Our lost property counter is down the concourse opposite platform 6."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Opposite platform 6, got it. Is there an administration fee when I pick it up?"
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "clerk",
+      "text": "Yes, small items like umbrellas cost £3, courier delivery is £15, and in-person collection for a standard bag or backpack is £8."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Eight pounds in person is completely fair. I am away on a work trip next week, so how long do you hold unclaimed bags?"
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "clerk",
+      "text": "We used to store items for 90 days, though under our updated policy we keep unclaimed bags for 30 days before donating them to local charities."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Thirty days gives me plenty of time. Thank you so much for your help, Sophie."
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "clerk",
+      "text": "You are welcome, Trevor. We will phone you as soon as the backpack arrives at our desk!"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Meadowbrook Rail - Lost Property Report",
+        "rows": [
+          {
+            "label": "Passenger first name",
+            "value": "Trevor"
+          },
+          {
+            "label": "Passenger surname",
+            "blankQid": "lep_p1_res_001_q01"
+          },
+          {
+            "label": "Train departure time",
+            "blankQid": "lep_p1_res_001_q02",
+            "suffix": "a.m."
+          },
+          {
+            "label": "Station alighted at",
+            "blankQid": "lep_p1_res_001_q03"
+          },
+          {
+            "label": "Actual seat number (Coach D)",
+            "blankQid": "lep_p1_res_001_q04"
+          },
+          {
+            "label": "Backpack colour and fabric",
+            "blankQid": "lep_p1_res_001_q05"
+          },
+          {
+            "label": "Valuable item inside",
+            "value": "wireless",
+            "blankQid": "lep_p1_res_001_q06"
+          },
+          {
+            "label": "Case reference number",
+            "blankQid": "lep_p1_res_001_q07"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_res_001_q01",
+          "number": 1,
+          "prompt": "Passenger's surname"
+        },
+        {
+          "qid": "lep_p1_res_001_q02",
+          "number": 2,
+          "prompt": "Departure time of the train boarded (before 'a.m.')"
+        },
+        {
+          "qid": "lep_p1_res_001_q03",
+          "number": 3,
+          "prompt": "Station where the passenger got off the train"
+        },
+        {
+          "qid": "lep_p1_res_001_q04",
+          "number": 4,
+          "prompt": "Seat number where the passenger actually sat"
+        },
+        {
+          "qid": "lep_p1_res_001_q05",
+          "number": 5,
+          "prompt": "Colour and material of the lost backpack"
+        },
+        {
+          "qid": "lep_p1_res_001_q06",
+          "number": 6,
+          "prompt": "Valuable electronic item inside the bag (wireless ...)"
+        },
+        {
+          "qid": "lep_p1_res_001_q07",
+          "number": 7,
+          "prompt": "Lost property case reference code"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_notes",
+      "type": "note_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Collection & Storage Notes",
+        "rows": [
+          {
+            "label": "Lost property desk location",
+            "value": "opposite platform",
+            "blankQid": "lep_p1_res_001_q08"
+          },
+          {
+            "label": "In-person bag collection fee (£)",
+            "blankQid": "lep_p1_res_001_q09"
+          },
+          {
+            "label": "Storage limit before charity donation",
+            "blankQid": "lep_p1_res_001_q10",
+            "suffix": "days"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_res_001_q08",
+          "number": 8,
+          "prompt": "Platform number opposite the lost property counter"
+        },
+        {
+          "qid": "lep_p1_res_001_q09",
+          "number": 9,
+          "prompt": "Administration fee for collecting a backpack in person (in pounds)"
+        },
+        {
+          "qid": "lep_p1_res_001_q10",
+          "number": 10,
+          "prompt": "Maximum number of days unclaimed bags are stored"
+        }
+      ]
+    }
+  ]
+}

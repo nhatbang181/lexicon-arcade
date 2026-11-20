@@ -1,0 +1,501 @@
+{
+  "id": "lep:p4_005",
+  "part": 4,
+  "reserved": false,
+  "title": "Mycorrhizal Networks in Boreal Conifer Forests",
+  "contextEn": "A forest ecology lecturer examines how underground fungal networks link boreal conifers, transfer resources, spark scientific debate, and influence forestry and climate policy.",
+  "difficulty": 9,
+  "speakers": [
+    {
+      "id": "lec",
+      "name": "Dr. Claire Tremblay",
+      "role": "University Lecturer",
+      "voice": "edge:en-CA-ClaraNeural",
+      "accent": "ca"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "lec",
+      "text": "Good morning, everyone. Stretching in an unbroken green belt across northern Canada, Scandinavia, and Siberia, the boreal forest forms the largest terrestrial biome on Earth. Above ground it can look remarkably uniform, dominated by just a handful of hardy spruce, pine, and fir species adapted to long subarctic winters. Beneath the spongy mossy floor, however, lies an astonishingly dense, intricate web of symbiotic fungi.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "lec",
+      "text": "To understand why northern conifers depend so heavily on fungal partners, consider the harshness of boreal soil. Moisture is rarely the limiting factor during the brief thaw; rather, freezing winters and acidic fallen needles slow bacterial decay so severely that trees suffer a chronic shortage of usable nitrogen.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "lec",
+      "text": "Conifer roots on their own are relatively thick, coarse, and inefficient at foraging through tightly packed organic litter, especially when essential elements remain locked inside tough plant polymers.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "lec",
+      "text": "By wrapping root tips in sheaths of microscopic ectomycorrhizal filaments, fungi expand a tree's effective absorptive surface hundreds of times over. The partnership is strictly reciprocal: in return for scarce soil minerals, the host conifer channels up to a third of its photosynthetic sugars downward to nourish the fungal colony.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "lec",
+      "text": "Because a single fungal individual can colonize the roots of dozens of adjacent trees simultaneously, forest stands become physically interconnected underground across remarkably broad patches of woodland.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "lec",
+      "text": "Let's turn now to what actually moves through these common mycorrhizal networks, and how ecologists interpret those flows.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "lec",
+      "text": "By exposing mature canopy trees to trace amounts of harmless carbon isotopes, researchers demonstrated that carbon moves rapidly down trunk tissues, across fungal bridges, and into shaded seedlings struggling beneath dense foliage.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "lec",
+      "text": "Water and dissolved minerals can likewise shift along subtle pressure gradients during dry midsummer spells, buffering shallow-rooted youngsters when the top layer of forest moss dries out.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "lec",
+      "text": "Even more intriguing is biochemical communication. When bark beetles bore into an injured spruce, stress compounds travel through the fungal threads into neighbouring trees, prompting unharmed conifers to synthesize bitter chemical defences before the insects even reach them.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "lec",
+      "text": "Yet ecologists caution against painting this network as a selfless forest charity. Detailed measurements reveal that fungi act like shrewd brokers, stockpiling scarce nutrients and trading them preferentially with hosts that pay the highest carbon price, creating competitive underground markets rather than altruistic communes.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "lec",
+      "text": "Understanding this tension between cooperation and fungal self-interest has become a central theme in modern plant ecology.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "lec",
+      "text": "Moving on from ecological mechanisms, let's examine why several prominent researchers urge healthy scepticism toward sweeping claims about forest-wide sharing.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "lec",
+      "text": "Separating genuine fungal-bridge transport from ordinary passive seepage through damp soil is technically demanding. To isolate the pathway, field teams bury ultra-fine nylon mesh screens that block neighbouring tree roots while allowing slender fungal fibres to grow straight through.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "lec",
+      "text": "Even when isotope tracers clearly cross those mesh screens, critics point out that the absolute quantities transferred are often modest compared with what a healthy sapling fixes through its own sunlit needles, and much of the carbon stays inside the fungus itself.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "lec",
+      "text": "Furthermore, a large share of the most dramatic survival boosts come from controlled greenhouse pots using sterilized soil. When ecologists try to reproduce those gains across complex wild sites, the results are far more variable, and sometimes connected seedlings perform no better than isolated ones.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "lec",
+      "text": "In short, underground links are undeniably real and ecologically significant, yet their net benefit to any individual tree depends heavily on species mix, soil chemistry, and local competition for light.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "lec",
+      "text": "Finally, let's consider what boreal mycorrhizal research means in practical terms for sustainable timber forestry and global climate accounting.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "lec",
+      "text": "Traditional industrial clear-cutting strips away the entire canopy at once, exposing soil to heat and starving host-dependent fungi. Applying commercial synthetic fertilizer rarely restores natural fungal diversity. Instead, retention forestry leaves scattered mature legacy trees standing across a cut block to act as a living reservoir that swiftly inoculates newly planted saplings.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "lec",
+      "text": "Beyond timber regeneration, these hidden fungal webs also play an unexpectedly large role in regulating Earth's global carbon budget.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "lec",
+      "text": "For decades, climate modellers assumed decaying surface needles accounted for almost all boreal soil carbon. Recent molecular profiling overturned that view, showing that slow-decaying dead fungal tissues actually drive more than half of long-term underground storage across northern conifer zones.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "lec",
+      "text": "That finding makes northern warming doubly concerning: hotter, drier summers are triggering increasingly intense wildfires that burn deep into the upper organic soil, destroying the very fungal communities that lock carbon away. Protecting boreal resilience therefore means safeguarding both the canopy above and the living network below. Thank you.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p4_005.mp3",
+    "durationSec": 365,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1",
+      "type": "note_completion",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Mycorrhizal Networks in Boreal Forests",
+        "rows": [
+          {
+            "label": "Boreal soil challenge: Cold acidic conditions cause a chronic shortage of usable",
+            "blankQid": "lep_p4_005_q01",
+            "suffix": ""
+          },
+          {
+            "label": "Symbiosis: In return for minerals, conifers supply fungi with photosynthetic",
+            "blankQid": "lep_p4_005_q02",
+            "suffix": ""
+          },
+          {
+            "label": "Network flows: Mature trees transfer carbon through fungal links to shaded",
+            "blankQid": "lep_p4_005_q03",
+            "suffix": "below"
+          },
+          {
+            "label": "Warning signals prompt unharmed trees to produce chemical",
+            "blankQid": "lep_p4_005_q04",
+            "suffix": "before pests arrive"
+          },
+          {
+            "label": "Fungal nutrient trading resembles competitive underground",
+            "blankQid": "lep_p4_005_q05",
+            "suffix": "rather than charities"
+          },
+          {
+            "label": "Research methods: Fine mesh screens block tree roots while letting fungal",
+            "blankQid": "lep_p4_005_q06",
+            "suffix": "pass through"
+          },
+          {
+            "label": "Survival gains in greenhouse pots rarely replicate consistently across wild",
+            "blankQid": "lep_p4_005_q07",
+            "suffix": ""
+          },
+          {
+            "label": "Forestry and climate: Retained mature trees act as a living",
+            "blankQid": "lep_p4_005_q08",
+            "suffix": "to inoculate new saplings"
+          },
+          {
+            "label": "Dead fungal tissues drive over half of long-term underground carbon",
+            "blankQid": "lep_p4_005_q09",
+            "suffix": ""
+          },
+          {
+            "label": "Warming northern regions face more severe",
+            "blankQid": "lep_p4_005_q10",
+            "suffix": "that burn organic soil layers"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p4_005_q01",
+          "number": 1,
+          "prompt": "Cold acidic boreal conditions cause a chronic shortage of usable ____.",
+          "answer": {
+            "accepted": [
+              "nitrogen"
+            ]
+          },
+          "evidence": {
+            "lineId": "l02",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "moisture",
+              "explanationVi": "Giảng viên loại trừ 'moisture' (hiếm khi là yếu tố giới hạn) và khẳng định cây thiếu 'nitrogen'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q02",
+          "number": 2,
+          "prompt": "In return for minerals, conifers supply fungi with photosynthetic ____.",
+          "answer": {
+            "accepted": [
+              "sugars"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "plural_singular",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Phải điền dạng số nhiều 'sugars' đúng như bài giảng."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q03",
+          "number": 3,
+          "prompt": "Mature trees transfer carbon through fungal links to shaded ____ below.",
+          "answer": {
+            "accepted": [
+              "seedlings"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "plural_singular",
+              "lineId": "l07",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Danh từ số nhiều 'seedlings' bắt buộc có -s."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q04",
+          "number": 4,
+          "prompt": "Warning signals prompt unharmed trees to produce chemical ____ before pests arrive.",
+          "answer": {
+            "accepted": [
+              "defences",
+              "defenses"
+            ]
+          },
+          "evidence": {
+            "lineId": "l09",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l09",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "'produce' diễn đạt lại 'synthesize'; chấp nhận cả chính tả Anh 'defences' và Mỹ 'defenses'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q05",
+          "number": 5,
+          "prompt": "Fungal nutrient trading resembles competitive underground ____ rather than charities.",
+          "answer": {
+            "accepted": [
+              "markets"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l10",
+              "start": 0,
+              "end": 0,
+              "decoy": "charity",
+              "explanationVi": "Bài giảng bác bỏ hình ảnh 'charity' và mô tả cơ chế như những 'markets' cạnh tranh."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q06",
+          "number": 6,
+          "prompt": "Fine mesh screens block tree roots while letting fungal ____ pass through.",
+          "answer": {
+            "accepted": [
+              "fibres",
+              "fibers"
+            ]
+          },
+          "evidence": {
+            "lineId": "l13",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "plural_singular",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Cần dạng số nhiều 'fibres/fibers' (chấp nhận cả biến thể Anh-Mỹ)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q07",
+          "number": 7,
+          "prompt": "Survival gains in greenhouse pots rarely replicate consistently across wild ____.",
+          "answer": {
+            "accepted": [
+              "sites"
+            ]
+          },
+          "evidence": {
+            "lineId": "l15",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "homophone_minimal_pair",
+              "lineId": "l15",
+              "start": 0,
+              "end": 0,
+              "decoy": "sights",
+              "explanationVi": "'sites' (địa điểm thực địa) đồng âm với 'sights' (cảnh quan/tầm nhìn)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q08",
+          "number": 8,
+          "prompt": "Retained mature trees act as a living ____ to inoculate new saplings.",
+          "answer": {
+            "accepted": [
+              "reservoir"
+            ]
+          },
+          "evidence": {
+            "lineId": "l18",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "signpost_skip",
+              "lineId": "l18",
+              "start": 0,
+              "end": 0,
+              "decoy": "fertilizer",
+              "explanationVi": "Người nói nhắc qua phân bón hóa học ('fertilizer') không hiệu quả trước khi chốt vai trò 'reservoir' của cây trưởng thành."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q09",
+          "number": 9,
+          "prompt": "Dead fungal tissues drive over half of long-term underground carbon ____.",
+          "answer": {
+            "accepted": [
+              "storage"
+            ]
+          },
+          "evidence": {
+            "lineId": "l20",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l20",
+              "start": 0,
+              "end": 0,
+              "decoy": "needles",
+              "explanationVi": "Giả thuyết cũ quy cho lá kim rụng ('needles') đã bị bác bỏ; mô nấm chết quyết định quá trình 'storage'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_005_q10",
+          "number": 10,
+          "prompt": "Warming northern regions face more severe ____ that burn organic soil layers.",
+          "answer": {
+            "accepted": [
+              "wildfires"
+            ]
+          },
+          "evidence": {
+            "lineId": "l21",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "'more severe' diễn đạt lại 'increasingly intense' ngay trước danh từ số nhiều 'wildfires'."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "edge-tts (personal use)",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "id": "lep:p3_003",
+  "part": 3,
+  "reserved": false,
+  "title": "Acoustic Monitoring of Coastal Seabirds",
+  "contextEn": "Two ecology postgraduates, Chloe and Marcus, review an automated sound-recording survey of nocturnal seabird colonies along rocky coastal headlands.",
+  "difficulty": 7,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Chloe",
+      "role": "Ecology postgraduate",
+      "accent": "au"
+    },
+    {
+      "id": "s2",
+      "name": "Marcus",
+      "role": "Ecology postgraduate",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Hey Marcus, I have finished compiling the autumn sound files from all five headlands. Before our seminar presentation on Thursday, let us make sure we explain our technical choices clearly."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s2",
+      "text": "Definitely. Someone is bound to ask why we went with passive acoustic loggers instead of thermal-imaging cameras."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "Right. People often assume cameras startle nesting birds or drain solar packs too fast, though modern thermal units are completely silent and run on small panels without trouble."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s2",
+      "text": "The decisive factor was visibility: thick sea fog rolls over those cliffs half the nights in autumn, blinding infrared optics, whereas sound loggers keep recording reliably right through zero-visibility mist."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Good, I will put that on slide two. We should also mention why we had to relocate the microphone housings in week two."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s2",
+      "text": "Originally we feared salt spray would corrode the circuit boards or high spring tides would swamp the tripods, yet our waterproof seals held up and the tripods sat well above the spray line."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Instead, we came back to find curious gulls had pecked every single foam windshield to shreds, so we had to tuck the units beneath overhanging ledges with wire guards."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s2",
+      "text": "That still makes me laugh. Now, about surf interference: constant crashing waves nearly buried the lower-frequency bird calls in our early clips."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Remember you suggested switching to narrow directional shotgun microphones, and I thought about recording solely on flat, calm nights?"
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s2",
+      "text": "Yes, and both ideas fell apart quickly: directional mics miss birds flying in from the side, while skipping windy nights skews the attendance data. Applying a high-pass frequency filter during post-processing stripped out the low rumble cleanly without losing bird calls."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "That worked better than expected. Moving to the automated call-classifier software: are you still uneasy about trusting its species counts?"
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s2",
+      "text": "It runs smoothly on an ordinary laptop, so computing cost is not an issue, and since we are tracking adult returns we are not trying to pick up faint chicks deep inside burrows."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s2",
+      "text": "What genuinely worries me is the pre-dawn rush, when dozens of birds vocalise simultaneously; overlapping calls confuse the algorithm and cause it to undercount peak activity."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Which is why we need a manual listening audit. At first I proposed listening to every single recording taken on full-moon nights, or maybe only checking clips flagged as low-confidence by the software."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s2",
+      "text": "Full-moon nights are unusually quiet so that would bias our error estimate, and checking only low-confidence clips ignores false positives the model feels overly sure about."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "True. So we agree to manually verify a random ten-percent subsample drawn evenly across all weather conditions instead."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s2",
+      "text": "Deal. Now let us run through the five coastal stations and check the standout finding we are highlighting for each one. First, Gannet Point."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "I expected bright moonlit nights to bring heavy vocal activity there, yet the colonies went almost silent under clear skies. Instead, call rates climbed sharply whenever thick overcast cloud blocked the moonlight."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s2",
+      "text": "Probably to dodge visual predators. Next is Redcliff Stack. Did the birds arrive any earlier in the season compared with the five-year archive?"
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s1",
+      "text": "No, their arrival dates matched historical norms within two days. What stood out was nightly timing: peak calling shifted well past midnight once walkers finally cleared the cliff-top footpath."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s2",
+      "text": "Interesting adaptation. Third is Kelp Bay Headland. Recreational drones are strictly banned in that reserve, so aerial disturbance was zero."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s1",
+      "text": "Right, yet our spectrograms revealed an abrupt drop in seabird vocalisations every evening along the outer channel, lining up to the minute with the high-speed ferry schedule."
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s2",
+      "text": "That is a stark contrast. Fourth is Shearwater Crag. Obviously birds favoured sheltered limestone ledges there, just as they did at every other site."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s1",
+      "text": "Sure, nothing unusual about ledge choice. The genuine surprise at Shearwater Crag was isolating a low rhythmic churring call belonging to a vagrant storm-petrel species almost never logged along this coastline."
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "s2",
+      "text": "That clip will wake up the whole seminar room. Finally, Lighthouse Spit. There is no ferry lane anywhere near that headland."
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "s1",
+      "text": "True, shipping noise was negligible. What showed up repeatedly on our sunset recordings was the unmistakable whine of hobbyist drones hovering near the cliffs, triggering twenty-minute bouts of complete colony silence."
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "s2",
+      "text": "That gives conservation wardens concrete evidence to act on. Let us export those five sample clips for the slides."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_003_q01",
+          "number": 1,
+          "prompt": "Why did Chloe and Marcus choose passive acoustic loggers over thermal cameras?\nA. Loggers continue working effectively during dense coastal fog.\nB. Thermal cameras disturb nesting seabirds with mechanical noise.\nC. Thermal cameras consume too much power for solar panels."
+        },
+        {
+          "qid": "lep_p3_003_q02",
+          "number": 2,
+          "prompt": "What forced the researchers to relocate the microphone housings in week two?\nA. Salt spray corroded the internal electronic boards.\nB. Gulls tore apart the protective foam windshields.\nC. Unusually high spring tides flooded the tripods."
+        },
+        {
+          "qid": "lep_p3_003_q03",
+          "number": 3,
+          "prompt": "How do the students decide to deal with background surf noise?\nA. Switch to narrow directional microphones.\nB. Restrict recording to calm, low-swell nights.\nC. Use a high-pass filter when processing the audio."
+        },
+        {
+          "qid": "lep_p3_003_q04",
+          "number": 4,
+          "prompt": "What limitation of the automated call-classifier concerns Marcus most?\nA. It fails to detect quiet chicks inside deep burrows.\nB. It undercounts overlapping calls during peak vocal periods.\nC. It demands costly external computing servers."
+        },
+        {
+          "qid": "lep_p3_003_q05",
+          "number": 5,
+          "prompt": "Which recordings do they agree to check by manual listening?\nA. A random ten-percent sample covering all weather types.\nB. Every audio file recorded during full-moon nights.\nC. Only clips given low confidence scores by the classifier."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_matching",
+      "type": "matching",
+      "instructions": "What standout finding was recorded at each monitoring station? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 6-10.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Earlier seasonal arrival than five years ago"
+        },
+        {
+          "key": "B",
+          "text": "Sharp drop in calls near ferry channel"
+        },
+        {
+          "key": "C",
+          "text": "Unexpected presence of a rare vagrant species"
+        },
+        {
+          "key": "D",
+          "text": "Strong preference for sheltered limestone ledges"
+        },
+        {
+          "key": "E",
+          "text": "Shift in peak vocal activity after midnight"
+        },
+        {
+          "key": "F",
+          "text": "Higher calling rates during overcast skies"
+        },
+        {
+          "key": "G",
+          "text": "Frequent disturbance by recreational drones"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_003_q06",
+          "number": 6,
+          "prompt": "Gannet Point"
+        },
+        {
+          "qid": "lep_p3_003_q07",
+          "number": 7,
+          "prompt": "Redcliff Stack"
+        },
+        {
+          "qid": "lep_p3_003_q08",
+          "number": 8,
+          "prompt": "Kelp Bay Headland"
+        },
+        {
+          "qid": "lep_p3_003_q09",
+          "number": 9,
+          "prompt": "Shearwater Crag"
+        },
+        {
+          "qid": "lep_p3_003_q10",
+          "number": 10,
+          "prompt": "Lighthouse Spit"
+        }
+      ]
+    }
+  ]
+}

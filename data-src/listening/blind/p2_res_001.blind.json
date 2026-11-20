@@ -1,0 +1,376 @@
+{
+  "id": "lep:p2_res_001",
+  "part": 2,
+  "reserved": true,
+  "title": "Alderwood Folk and Craft Village Guide",
+  "contextEn": "A heritage village guide welcomes visitors to Alderwood Folk and Craft Village, explains its origins and daily operations, and introduces key locations on the village map.",
+  "difficulty": 5,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Harriet Cole",
+      "role": "Heritage Village Guide",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Good morning, everyone, and a warm welcome to Alderwood Folk and Craft Village. My name is Harriet Cole, and I am one of the heritage guides here. Before you wander down to the village green, let me share a few facts about how the village came together, today's schedule, and your walking map."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "People often imagine that every timber-framed cottage here has stood in Alderwood Valley since the seventeenth century, or else assume we built modern concrete replicas in the 1970s. In reality, we never use concrete copies, and only our stone watermill down by the brook was originally standing on this site."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "Almost all of the historic cottages were saved from demolition across neighbouring counties: preservation teams carefully dismantled them timber by timber, numbered every beam and brick, and rebuilt them right here on our grounds."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s1",
+      "text": "If you are hoping to see the working flour mill in action, please note that it will only be grinding grain this afternoon from two o'clock. After last night's heavy rainfall, the brook is running nice and full, and the morning school visit we expected actually cancelled because their coach broke down."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "The reason the mill wheel is still this morning is that our head miller is using the quiet hours to dress the granite millstone -- chiselling fresh grinding grooves into the stone and rebalancing the main shaft."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s1",
+      "text": "Many families also enjoy our horse-drawn wagon rides around the green. There is no need to reserve seats online the day before, and children under eight ride free every day of the week, including weekends. Just keep in mind that we rest our shire horses between twelve-thirty and one-thirty, so the wagon stops running during the lunch hour."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "While browsing our craft cottages, do remember that our makers are independent artisans who keep their own proceeds rather than donating them to a national charity. Because mobile reception down in the valley is patchy, several workshops such as the potter and the weaver only accept cash."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "If you pick up delicate stoneware bowls or heavy willow baskets early in the day, however, you do not need to carry them around: simply ask the craftsperson to attach a tag, and our porters will hold your parcel safely at the North Gatehouse desk until you are ready to leave."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Now let's unfold your village map. We are standing at the North Gatehouse on the northern edge of the village, just south of Mill Lane. Walking straight south down High Street takes you towards the wide Village Green in the centre, while Alder Brook flows east to west along the southern boundary."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "First, if you fancy a pot of tea before exploring, head down High Street from the North Gatehouse. You will see two cottages facing each other across High Street north of the Village Green. The one on your left, on the eastern side, is our old schoolhouse, which is closed today while thatchers repair the straw roof."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "The Village Tea Room is directly across High Street on your right, sitting on the western side of High Street just north of the Village Green."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "From the Tea Room, stroll further west into the north-western quadrant of the village, staying south of Mill Lane and well north of Weaver's Lane. There you will find the Basket Weaver's Cottage, with bundles of soaked willow drying outside its door."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "Crossing over to the far north-eastern corner of the map, south of Mill Lane and well north of Orchard Walk, stands our nineteenth-century Print Shop, where you can watch hand-set metal type being inked on an iron press."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Next, let's head south of the lanes towards Alder Brook. Follow Weaver's Lane all the way west from the Village Green, then turn south towards the brook. The large building tucked into the far south-western corner, just north of Alder Brook, is our Pottery Kiln Barn."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Walking east along the northern bank of Alder Brook from the pottery, you will first pass a smaller barn just south-west of the Village Green. That is our wagon stable where the horses rest at midday, so continue a little further east."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Right on the northern bank of Alder Brook, directly south of the centre of the Village Green, sits the Woodturner's Workshop, where wooden bowls are shaped on a foot-powered pole lathe."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "Finally, walk east from the Village Green along Orchard Walk towards the eastern edge of the map. Just north of the eastern end of Orchard Walk -- directly north of the Stone Watermill and south of the Print Shop -- you will find our fragrant Apothecary Herb Garden."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Please keep an eye on the time for our afternoon mill grinding at two o'clock, and do ask any costumed demonstrator if you would like to try a craft tool yourself. Enjoy your day at Alderwood."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_res_001_q01",
+          "number": 1,
+          "prompt": "How were most of the historic cottages at Alderwood Village acquired?\nA. They were dismantled elsewhere and rebuilt on the site.\nB. They were built in the 1970s as concrete copies.\nC. They had originally stood in the valley since the seventeenth century."
+        },
+        {
+          "qid": "lep_p2_res_001_q02",
+          "number": 2,
+          "prompt": "Why is the village's working flour mill operating only in the afternoon today?\nA. Morning school groups have booked the entire mill.\nB. The granite millstone is being serviced this morning.\nC. Water levels in Alder Brook are too low before midday."
+        },
+        {
+          "qid": "lep_p2_res_001_q03",
+          "number": 3,
+          "prompt": "What should visitors know about the horse-drawn wagon rides?\nA. Seats must be reserved online a day in advance.\nB. Rides pause for an hour over lunchtime.\nC. Children under eight ride free only on weekdays."
+        },
+        {
+          "qid": "lep_p2_res_001_q04",
+          "number": 4,
+          "prompt": "What does Harriet say about buying handmade goods from the village craftspeople?\nA. All workshops accept contactless card payments.\nB. Fragile items can be stored at the gatehouse until departure.\nC. All sales income goes to a national museum charity."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_map",
+      "type": "map_labelling",
+      "instructions": "Label the map of Alderwood Folk and Craft Village. Write the correct letter, A-H, next to questions 5-10.",
+      "map": {
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "youAreHere": {
+          "x": 400,
+          "y": 78
+        },
+        "shapes": [
+          {
+            "id": "road_mill",
+            "kind": "road",
+            "x": 40,
+            "y": 25,
+            "w": 720,
+            "h": 35,
+            "label": "Mill Lane"
+          },
+          {
+            "id": "ent_north",
+            "kind": "entrance",
+            "x": 345,
+            "y": 60,
+            "w": 110,
+            "h": 35,
+            "label": "North Gatehouse"
+          },
+          {
+            "id": "path_high",
+            "kind": "path",
+            "x": 388,
+            "y": 95,
+            "w": 24,
+            "h": 175,
+            "label": "High Street"
+          },
+          {
+            "id": "park_green",
+            "kind": "park",
+            "x": 270,
+            "y": 270,
+            "w": 260,
+            "h": 120,
+            "label": "Village Green"
+          },
+          {
+            "id": "path_weaver",
+            "kind": "path",
+            "x": 90,
+            "y": 318,
+            "w": 180,
+            "h": 22,
+            "label": "Weaver's Lane"
+          },
+          {
+            "id": "path_orchard",
+            "kind": "path",
+            "x": 530,
+            "y": 318,
+            "w": 180,
+            "h": 22,
+            "label": "Orchard Walk"
+          },
+          {
+            "id": "bldg_mill",
+            "kind": "building",
+            "x": 575,
+            "y": 400,
+            "w": 130,
+            "h": 60,
+            "label": "Stone Watermill"
+          },
+          {
+            "id": "water_brook",
+            "kind": "water",
+            "x": 40,
+            "y": 470,
+            "w": 720,
+            "h": 55,
+            "label": "Alder Brook"
+          },
+          {
+            "id": "bldg_a",
+            "kind": "building",
+            "x": 125,
+            "y": 125,
+            "w": 80,
+            "h": 60
+          },
+          {
+            "id": "bldg_b",
+            "kind": "building",
+            "x": 275,
+            "y": 140,
+            "w": 80,
+            "h": 60
+          },
+          {
+            "id": "bldg_c",
+            "kind": "building",
+            "x": 445,
+            "y": 140,
+            "w": 80,
+            "h": 60
+          },
+          {
+            "id": "bldg_d",
+            "kind": "building",
+            "x": 595,
+            "y": 125,
+            "w": 80,
+            "h": 60
+          },
+          {
+            "id": "bldg_e",
+            "kind": "building",
+            "x": 95,
+            "y": 385,
+            "w": 85,
+            "h": 65
+          },
+          {
+            "id": "bldg_f",
+            "kind": "building",
+            "x": 215,
+            "y": 398,
+            "w": 80,
+            "h": 55
+          },
+          {
+            "id": "bldg_g",
+            "kind": "building",
+            "x": 385,
+            "y": 400,
+            "w": 90,
+            "h": 55
+          },
+          {
+            "id": "bldg_h",
+            "kind": "building",
+            "x": 640,
+            "y": 240,
+            "w": 85,
+            "h": 60
+          }
+        ],
+        "slots": [
+          {
+            "key": "A",
+            "x": 165,
+            "y": 155
+          },
+          {
+            "key": "B",
+            "x": 315,
+            "y": 170
+          },
+          {
+            "key": "C",
+            "x": 485,
+            "y": 170
+          },
+          {
+            "key": "D",
+            "x": 635,
+            "y": 155
+          },
+          {
+            "key": "E",
+            "x": 137,
+            "y": 417
+          },
+          {
+            "key": "F",
+            "x": 255,
+            "y": 425
+          },
+          {
+            "key": "G",
+            "x": 430,
+            "y": 427
+          },
+          {
+            "key": "H",
+            "x": 682,
+            "y": 270
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p2_res_001_q05",
+          "number": 5,
+          "prompt": "Village Tea Room"
+        },
+        {
+          "qid": "lep_p2_res_001_q06",
+          "number": 6,
+          "prompt": "Basket Weaver's Cottage"
+        },
+        {
+          "qid": "lep_p2_res_001_q07",
+          "number": 7,
+          "prompt": "Print Shop"
+        },
+        {
+          "qid": "lep_p2_res_001_q08",
+          "number": 8,
+          "prompt": "Pottery Kiln Barn"
+        },
+        {
+          "qid": "lep_p2_res_001_q09",
+          "number": 9,
+          "prompt": "Woodturner's Workshop"
+        },
+        {
+          "qid": "lep_p2_res_001_q10",
+          "number": 10,
+          "prompt": "Apothecary Herb Garden"
+        }
+      ]
+    }
+  ]
+}

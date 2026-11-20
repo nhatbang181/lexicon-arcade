@@ -1,0 +1,257 @@
+{
+  "id": "lep:p4_006",
+  "part": 4,
+  "reserved": false,
+  "title": "The Economics of Historical Spice Trade Guilds",
+  "contextEn": "An economic history lecturer analyses why maritime spice trade guilds formed, how they managed monopolies and risk, and what eventually eroded their dominance.",
+  "difficulty": 9,
+  "speakers": [
+    {
+      "id": "lec",
+      "name": "Dr. Owen Maddox",
+      "role": "University Lecturer",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "lec",
+      "text": "Good afternoon, everyone. Between the late medieval era and the eighteenth century, small sacks of dried flower buds, aromatic bark, and wrinkled seeds harvested in distant tropical archipelagos commanded prices per gram rivalling pure silver across European market halls. Today we are examining the merchant guilds and chartered syndicates that financed, policed, and governed this extraordinary intercontinental commerce."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "lec",
+      "text": "First, why did independent traders band together into tight-knit guilds instead of operating solo? An oceanic voyage to buy pepper, cloves, or cinnamon exposed merchants to monsoons, reefs, and piracy on a scale that could bankrupt any lone family house. Forming a guild allowed backers to pool vessels and spread financial risk across multiple voyages simultaneously."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "lec",
+      "text": "That institutional cushion transformed speculative, all-or-nothing maritime expeditions into repeatable commercial enterprises that could absorb the occasional lost hull without collapsing the entire port economy."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "lec",
+      "text": "It is also worth correcting a stubborn popular myth about European demand. Textbooks once claimed wealthy households bought pepper primarily to disguise the flavour of spoiling meat. In reality, aristocratic kitchens could easily afford fresh cuts; rare exotic spices were prized overwhelmingly as visible emblems of social status at banquets."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "lec",
+      "text": "Because noble buyers and apothecaries paid fortunes for authentic aroma and purity, guilds also enforced rigorous quality inspections at port warehouses, weighing incoming consignments and imposing heavy fines on anyone caught diluting ground pepper with cheap husks or crushed seeds."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "lec",
+      "text": "Equally vital was dispute resolution. Commercial quarrels over damaged bales or unpaid brokerage fees were rarely referred to sluggish royal courts. Instead, members submitted grievances to an internal merchant council empowered to issue binding settlements within days."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "lec",
+      "text": "Let's turn now to the market mechanisms these guilds employed to protect their monopolies and stabilize returns."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "lec",
+      "text": "Controlling supply was the cornerstone of guild profitability. Rather than flooding European auction halls whenever tropical islands produced a bumper harvest, powerful trading houses deliberately burned surplus stockpiles so wholesale prices would never collapse."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "lec",
+      "text": "Maintaining commercial exclusivity across ten thousand kilometres of ocean demanded tight information security as well, because even a single leaked itinerary could invite rival fleets into a lucrative island market."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "lec",
+      "text": "While rivals frequently tried to copy hull carpentry or rigging layouts, the most jealously guarded corporate assets were navigational secrets. Detailed coastal charts marking seasonal currents and safe anchorages were locked in guarded strongrooms and handed only to sworn shipmasters."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "lec",
+      "text": "On the financial side, spice syndicates helped pioneer modern capital tools. To persuade cautious urban savers to fund voyages lasting years, maritime houses developed pooled voyage insurance that automatically reimbursed subscribers whenever a vessel sank or went missing."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "lec",
+      "text": "Together, strict supply quotas, navigational secrecy, and shared underwriting instruments allowed leading European guilds to dominate intercontinental luxury trade for several lucrative generations."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "lec",
+      "text": "Moving on to the quantitative record and eventual decline of these monopolies, let's examine how margins and logistics shifted between the seventeenth and late eighteenth centuries."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "lec",
+      "text": "Early economic historians guessed that damp holds and shipboard rodents ruined roughly 50 percent of every spice consignment. Yet careful audits of surviving customs ledgers show actual transit spoilage averaged much closer to 25 percent, leaving enormous net margins on intact cargo."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "lec",
+      "text": "Those extraordinary profit margins, however, acted like a magnet, guaranteeing relentless diplomatic pressure and clandestine expeditions by competing European powers determined to break the monopoly at its botanical source."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "lec",
+      "text": "Despite strict port searches and harsh penalties, rival colonial botanists eventually smuggled live spice cuttings out of tightly guarded islands and established thriving plantations across the Indian Ocean and the Caribbean."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "lec",
+      "text": "At the very same time, steady advances in maritime architecture and global navigation were quietly revolutionizing long-haul voyage economics."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "lec",
+      "text": "In the early guild era, a heavy merchant convoy routinely needed up to 36 months to complete a round trip and settle its ledger books. By the late eighteenth century, copper-sheathed, streamlined hulls slashed typical turnaround times to just 14 months, flooding European ports with frequent competing shipments."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "lec",
+      "text": "As global supply multiplied and retail prices tumbled steadily decade after decade, pepper, cinnamon, and nutmeg ceased to be aristocratic status trophies and entered ordinary middle-class domestic kitchens."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "lec",
+      "text": "Faced with shrinking commodity margins, former guild financiers gradually wound down spice monopolies and redirected their accumulated capital into modernising deep-water harbours across northern Europe."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "lec",
+      "text": "Ironically, the very commercial institutions built to defend artificial scarcity ended up creating the accounting practices, underwriting networks, and port infrastructure that laid the foundations for modern globalised shipping. Thank you for your attention."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1",
+      "type": "note_completion",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "template": {
+        "title": "Historical Spice Trade Guilds: Origins and Monopoly Controls",
+        "rows": [
+          {
+            "label": "Formation: Guilds pooled vessels to distribute maritime financial",
+            "blankQid": "lep_p4_006_q01",
+            "suffix": "across multiple voyages"
+          },
+          {
+            "label": "Demand: Aristocratic households valued rare spices mainly as symbols of social",
+            "blankQid": "lep_p4_006_q02",
+            "suffix": ""
+          },
+          {
+            "label": "Governance: Commercial disputes were resolved rapidly by an internal merchant",
+            "blankQid": "lep_p4_006_q03",
+            "suffix": ""
+          },
+          {
+            "label": "Supply control: After abundant harvests, syndicates deliberately burned excess",
+            "blankQid": "lep_p4_006_q04",
+            "suffix": "to keep prices high"
+          },
+          {
+            "label": "Secrecy: Detailed navigational",
+            "blankQid": "lep_p4_006_q05",
+            "suffix": "were locked away from competitors"
+          },
+          {
+            "label": "Finance: Syndicates attracted cautious savers by creating pooled voyage",
+            "blankQid": "lep_p4_006_q06",
+            "suffix": ""
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p4_006_q01",
+          "number": 1,
+          "prompt": "Guilds pooled vessels to distribute maritime financial ____ across multiple voyages."
+        },
+        {
+          "qid": "lep_p4_006_q02",
+          "number": 2,
+          "prompt": "Aristocratic households valued rare spices mainly as symbols of social ____."
+        },
+        {
+          "qid": "lep_p4_006_q03",
+          "number": 3,
+          "prompt": "Commercial disputes were resolved rapidly by an internal merchant ____."
+        },
+        {
+          "qid": "lep_p4_006_q04",
+          "number": 4,
+          "prompt": "After abundant harvests, syndicates deliberately burned excess ____ to keep prices high."
+        },
+        {
+          "qid": "lep_p4_006_q05",
+          "number": 5,
+          "prompt": "Detailed navigational ____ were locked away from competitors."
+        },
+        {
+          "qid": "lep_p4_006_q06",
+          "number": 6,
+          "prompt": "Syndicates attracted cautious savers by creating pooled voyage ____."
+        }
+      ]
+    },
+    {
+      "groupId": "g2",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Trade Volumes and the Decline of Spice Monopolies",
+        "rows": [
+          {
+            "label": "Audits of customs ledgers indicate transit spoilage averaged about",
+            "blankQid": "lep_p4_006_q07",
+            "suffix": "of a shipment."
+          },
+          {
+            "label": "Monopolies weakened once rival botanists smuggled live",
+            "blankQid": "lep_p4_006_q08",
+            "suffix": "to new tropical plantations."
+          },
+          {
+            "label": "Streamlined copper-sheathed ships reduced typical round-trip turnaround times to",
+            "blankQid": "lep_p4_006_q09",
+            "suffix": "."
+          },
+          {
+            "label": "As spice margins fell, former guild financiers reinvested capital in modernising deep-water",
+            "blankQid": "lep_p4_006_q10",
+            "suffix": "."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p4_006_q07",
+          "number": 7,
+          "prompt": "Audits of customs ledgers indicate transit spoilage averaged about ____ of a shipment."
+        },
+        {
+          "qid": "lep_p4_006_q08",
+          "number": 8,
+          "prompt": "Monopolies weakened once rival botanists smuggled live ____ to new tropical plantations."
+        },
+        {
+          "qid": "lep_p4_006_q09",
+          "number": 9,
+          "prompt": "Streamlined copper-sheathed ships reduced typical round-trip turnaround times to ____."
+        },
+        {
+          "qid": "lep_p4_006_q10",
+          "number": 10,
+          "prompt": "As spice margins fell, former guild financiers reinvested capital in modernising deep-water ____."
+        }
+      ]
+    }
+  ]
+}

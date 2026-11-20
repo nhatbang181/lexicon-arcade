@@ -1,0 +1,296 @@
+{
+  "id": "lep:p1_002",
+  "part": 1,
+  "reserved": false,
+  "title": "Willow Creek Holiday Cottage Booking",
+  "contextEn": "An American visitor phones a UK holiday letting agent to reserve a countryside cottage and check arrival arrangements.",
+  "difficulty": 3,
+  "speakers": [
+    {
+      "id": "agent",
+      "name": "Claire Sutton",
+      "role": "Letting Agent",
+      "accent": "uk"
+    },
+    {
+      "id": "caller",
+      "name": "Daniel Aldridge",
+      "role": "Guest",
+      "accent": "us"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "agent",
+      "text": "Good afternoon, Willow Creek Holiday Cottages, Claire speaking. How can I help you?"
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Hi Claire, I am calling from Boston to book one of your countryside cottages for next month."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "agent",
+      "text": "Oh, wonderful! I would be happy to arrange that for you. Could I start by taking your name, please?"
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Sure, it is Daniel Aldridge. Let me spell the last name for you: A-L-D-R-I-D-G-E."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "agent",
+      "text": "Thank you, Mr Aldridge. Now, did you have a particular cottage in mind from our website?"
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "I was looking at Fern Cottage, since it is right next to the stream, though we are bringing my sister's small terrier with us."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "agent",
+      "text": "Ah, Fern Cottage has an open lawn with no gate, so we do not recommend it for dogs. Heather Cottage has a fully enclosed back garden and is free during June."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "Oh, that sounds much safer. Let us book Heather Cottage instead then."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "agent",
+      "text": "Lovely choice, it has a great wood stove too. What date were you planning to arrive?"
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "Um, we leave Boston on 18 June... oh, hang on, it is an overnight flight, so we actually land and arrive at the cottage on 19 June."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "agent",
+      "text": "Good catch! So check-in on 19 June. And how many nights would you like to stay? Most guests take a 4-night short break or a full 7-night week."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "We have a wedding in London on the seventh evening, so we need to check out a day early. Could we do 6 nights?"
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "agent",
+      "text": "Certainly, 6 nights is completely fine in June. Could I take a UK mobile number where we can reach you once you arrive?"
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Yes, I will give you my sister's mobile since she lives in Bristol. It is 07834 912 054... wait, let me double-check my note. Sorry, it ends in 055, so 07834 912 055."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "agent",
+      "text": "Got that, ending in oh five five. Now let me calculate the rental fee for you. The base rate for six nights is £680, plus there is a £40 pet cleaning fee, bringing the total rental cost to £720."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Okay, £720 in total. Is there a security deposit on top of that?"
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "agent",
+      "text": "Only a £150 damage hold on arrival, which is refunded within two days of checkout. How would you like to pay for the booking today?"
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "I was thinking of sending a bank transfer, though international transfers can take three business days. Let me just pay by debit card right now so the dates are locked in."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "agent",
+      "text": "That is much quicker. I will send you a secure debit card payment link by email once we hang up. Before we finish, let me run through a few arrival notes for Heather Cottage."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Yes please, especially about getting the keys if our drive from the airport runs late."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "agent",
+      "text": "You do not need to worry about arriving late because we use a coded key safe. Last summer it was mounted beside the front porch, though we recently moved it next to the wooden shed at the side of the driveway."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Right, next to the shed, not the porch. And what is the earliest time we can get into the cottage?"
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "agent",
+      "text": "Normally check-in is at 4:00 p.m., um, let me check the cleaning roster for Friday the nineteenth... oh, actually the housekeepers finish early that afternoon, so you can check in from 3:30 p.m."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Oh, 3:30 is fantastic after a long flight. Are there shops nearby where we can pick up groceries?"
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "agent",
+      "text": "Yes, there is a small bakery in the village that shuts on Monday, and a wonderful local farm shop half a mile down the lane. Just keep in mind the farm shop is closed every Wednesday."
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "caller",
+      "text": "Okay, farm shop closed on Wednesday. I will note that down so we stock up beforehand."
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "agent",
+      "text": "Perfect. I will email your booking summary and the key code twenty-four hours before you arrive. Have a smooth flight over, Daniel!"
+    },
+    {
+      "lineId": "l28",
+      "speakerId": "caller",
+      "text": "Thanks a lot, Claire. Really looking forward to it!"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Willow Creek Cottages - Booking Form",
+        "rows": [
+          {
+            "label": "Guest first name",
+            "value": "Daniel"
+          },
+          {
+            "label": "Guest surname",
+            "blankQid": "lep_p1_002_q01"
+          },
+          {
+            "label": "Cottage reserved",
+            "blankQid": "lep_p1_002_q02",
+            "suffix": "Cottage"
+          },
+          {
+            "label": "Arrival date",
+            "blankQid": "lep_p1_002_q03"
+          },
+          {
+            "label": "Length of stay",
+            "blankQid": "lep_p1_002_q04",
+            "suffix": "nights"
+          },
+          {
+            "label": "UK contact phone",
+            "blankQid": "lep_p1_002_q05"
+          },
+          {
+            "label": "Total rental cost (£)",
+            "blankQid": "lep_p1_002_q06"
+          },
+          {
+            "label": "Payment method",
+            "blankQid": "lep_p1_002_q07"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_002_q01",
+          "number": 1,
+          "prompt": "Guest's surname"
+        },
+        {
+          "qid": "lep_p1_002_q02",
+          "number": 2,
+          "prompt": "Name of cottage booked (before 'Cottage')"
+        },
+        {
+          "qid": "lep_p1_002_q03",
+          "number": 3,
+          "prompt": "Date of arrival at the cottage"
+        },
+        {
+          "qid": "lep_p1_002_q04",
+          "number": 4,
+          "prompt": "Number of nights booked"
+        },
+        {
+          "qid": "lep_p1_002_q05",
+          "number": 5,
+          "prompt": "UK mobile contact number"
+        },
+        {
+          "qid": "lep_p1_002_q06",
+          "number": 6,
+          "prompt": "Total rental cost including pet fee (in pounds)"
+        },
+        {
+          "qid": "lep_p1_002_q07",
+          "number": 7,
+          "prompt": "Chosen method of payment"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_notes",
+      "type": "note_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Arrival & Local Notes",
+        "rows": [
+          {
+            "label": "Key safe location",
+            "value": "next to the wooden",
+            "blankQid": "lep_p1_002_q08"
+          },
+          {
+            "label": "Earliest check-in time",
+            "blankQid": "lep_p1_002_q09",
+            "suffix": "p.m."
+          },
+          {
+            "label": "Local farm shop closed on",
+            "blankQid": "lep_p1_002_q10"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_002_q08",
+          "number": 8,
+          "prompt": "Current location of the key safe (next to the wooden ...)"
+        },
+        {
+          "qid": "lep_p1_002_q09",
+          "number": 9,
+          "prompt": "Earliest check-in time arranged for Friday (before 'p.m.')"
+        },
+        {
+          "qid": "lep_p1_002_q10",
+          "number": 10,
+          "prompt": "Day of the week the local farm shop is closed"
+        }
+      ]
+    }
+  ]
+}

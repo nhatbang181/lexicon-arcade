@@ -1,0 +1,284 @@
+{
+  "id": "lep:p3_res_001",
+  "part": 3,
+  "reserved": true,
+  "title": "Solar Desalination Prototype Review",
+  "contextEn": "Two mechanical engineering students, Sam and Elena, review performance data and field-readiness upgrades for their passive solar desalination still.",
+  "difficulty": 7,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Sam",
+      "role": "Mechanical engineering student",
+      "accent": "uk"
+    },
+    {
+      "id": "s2",
+      "name": "Elena",
+      "role": "Mechanical engineering student",
+      "accent": "us"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Elena, I finished plotting our seven-day rooftop test of the passive solar still. Days one to three hit our target yield, then freshwater output fell by a third on day four."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s2",
+      "text": "I saw that dip too. At first I checked the acrylic cover seam for vapour cracks and pulled the weather log for cloud cover."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "The seals stayed completely airtight and we had unbroken sunshine all week. When I lifted the lid on Friday morning, white salt crystals had crusted across the black wicking cloth, reflecting sunlight instead of absorbing it."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s2",
+      "text": "Ah, salt fouling explains that sharp drop. Speaking of the absorber, I am glad I swapped out our matte-painted metal tray for woven carbon fabric before this run."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Wait, was that because the matte paint started peeling in saltwater, or because the physics lab donated the carbon roll for free?"
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s2",
+      "text": "Neither — the paint held fine and we had to purchase the roll out of our grant. Woven carbon fabric draws seawater upward evenly by capillary action, keeping a paper-thin film that evaporates far faster than a deep basin."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Makes total sense. Now, on the condensation side, we still lost droplets dripping straight back into the brine tank before reaching the gutter."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s2",
+      "text": "I remember you suggesting we double the thickness of the top glass sheet or coat the underside with anti-fog detergent."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Right, you convinced me thick glass holds too much heat and slows cooling, and detergent residue would contaminate drinking water. Tilting the condensing cover to a steeper thirty-degree angle lets droplets glide cleanly down into the trough."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s2",
+      "text": "Agreed, steeper glass is simple and safe. How are you feeling about our night-time heat-storage layer underneath the tray?"
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "Well, switching from heavy gravel beds to sealed copper tubes of paraffin wax solved the portability problem, and none of the tubes leaked a drop."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "What still bothers me is thermal lag: adding extra heat storage gives us an hour of dusk output, yet it noticeably delays how quickly the brine warms up every morning."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s2",
+      "text": "Good observation, we should quantify that trade-off in the report. Next, for our village deployment section, which design features are genuinely essential if remote coastal communities are going to adopt this unit?"
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Definitely skip motorized dual-axis sun-trackers: sea air corrodes small gears within months. And a smartphone alert app for brine flushing is pointless where cellular coverage is patchy."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s2",
+      "text": "Nor do we need built-in ultraviolet sterilising lamps, because solar distillation already removes bacteria and salts. One thing we absolutely must preserve is using standard gaskets and hoses that villagers can buy at any ordinary hardware shop."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Yes, locally sourced spare seals keep maintenance realistic. And equally vital is our flat-pack modular frame."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s2",
+      "text": "Right, when the frames stack flat, twenty units fit inside a single pickup truck or coastal fishing boat without shipping damage."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Great, spare hardware-shop seals and flat-stacking frames are our two core village priorities. Let us wrap up by recording our final testing verdict on four key prototype components. First, the distillate collection gutter."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s2",
+      "text": "Structurally it caught every drop without leaking, so I almost ticked it as ready. Then our water chemistry check picked up trace aluminium leaching from the coated channel, so it has to be swapped for a food-grade stainless steel version."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s1",
+      "text": "Good catch. Second is the brine flush outlet. We already fitted marine-grade stainless bolts there, so corrosion is zero."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s2",
+      "text": "No rust at all, yet the narrow eight-millimetre outlet choked repeatedly on thick salt sludge during evening drains. We need to fit a noticeably wider drainage valve."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s1",
+      "text": "Noted. Third, the sidewall timber casing. Obviously we would never shade a solar still from afternoon sun, though our thermal camera did spot a real weakness there."
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s2",
+      "text": "Yes, heat poured straight out through the thin plywood walls whenever sea breezes picked up. Lining those sides with thicker closed-cell foam insulation will boost internal vapour temperatures."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s1",
+      "text": "Finally, the silicone perimeter gasket. It is already certified food-safe and held an airtight seal across twenty harsh heating and cooling cycles."
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "s2",
+      "text": "Completely reliable, no redesign required at all. Let us update the engineering log and order those three replacement parts tomorrow."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_001_q01",
+          "number": 1,
+          "prompt": "What caused freshwater output to drop by one third on day four of testing?\nA. Vapour escaped through cracks along the acrylic cover seam.\nB. Prolonged cloud cover lowered afternoon solar intensity.\nC. Salt deposits built up across the surface of the wicking cloth."
+        },
+        {
+          "qid": "lep_p3_res_001_q02",
+          "number": 2,
+          "prompt": "Why did Elena replace the matte-painted metal tray with woven carbon fabric?\nA. It pulls a thin, even layer of seawater upward for faster evaporation.\nB. The original matte coating peeled away after saltwater exposure.\nC. The physics department supplied the carbon fabric free of charge."
+        },
+        {
+          "qid": "lep_p3_res_001_q03",
+          "number": 3,
+          "prompt": "How do Sam and Elena decide to reduce water droplets falling back into the brine?\nA. Fit a thicker glass cover over the evaporation chamber.\nB. Increase the tilt angle of the condensing cover.\nC. Apply an anti-fog detergent coating inside the glass."
+        },
+        {
+          "qid": "lep_p3_res_001_q04",
+          "number": 4,
+          "prompt": "What drawback of the night-time heat-storage layer still concerns Sam?\nA. Paraffin wax tubes risk leaking into the freshwater trough.\nB. Gravel storage beds make the prototype too heavy to carry.\nC. Extra thermal mass slows down morning heating of the brine."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO design features do Sam and Elena agree are essential for rural village adoption?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Spare seals available from ordinary hardware shops"
+        },
+        {
+          "key": "B",
+          "text": "Smartphone app alerts for brine flushing"
+        },
+        {
+          "key": "C",
+          "text": "Modular frames that stack flat for transport"
+        },
+        {
+          "key": "D",
+          "text": "Motorized dual-axis sun-tracking mounts"
+        },
+        {
+          "key": "E",
+          "text": "Built-in ultraviolet sterilising lamps"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_001_q05",
+          "number": 5,
+          "prompt": "First essential feature for rural village adoption (choose TWO letters, A-E)"
+        },
+        {
+          "qid": "lep_p3_res_001_q06",
+          "number": 6,
+          "prompt": "Second essential feature for rural village adoption (choose TWO letters, A-E)"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_matching",
+      "type": "matching",
+      "instructions": "What testing verdict do Sam and Elena record for each prototype component? Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 7-10.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Performs reliably with no redesign needed"
+        },
+        {
+          "key": "B",
+          "text": "Needs corrosion-resistant fasteners"
+        },
+        {
+          "key": "C",
+          "text": "Requires a wider drainage valve"
+        },
+        {
+          "key": "D",
+          "text": "Must be shaded from afternoon glare"
+        },
+        {
+          "key": "E",
+          "text": "Should be replaced with a food-grade alternative"
+        },
+        {
+          "key": "F",
+          "text": "Needs thicker foam insulation"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_001_q07",
+          "number": 7,
+          "prompt": "Distillate collection gutter"
+        },
+        {
+          "qid": "lep_p3_res_001_q08",
+          "number": 8,
+          "prompt": "Brine flush outlet"
+        },
+        {
+          "qid": "lep_p3_res_001_q09",
+          "number": 9,
+          "prompt": "Sidewall timber casing"
+        },
+        {
+          "qid": "lep_p3_res_001_q10",
+          "number": 10,
+          "prompt": "Silicone perimeter gasket"
+        }
+      ]
+    }
+  ]
+}

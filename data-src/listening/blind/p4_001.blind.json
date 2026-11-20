@@ -1,0 +1,241 @@
+{
+  "id": "lep:p4_001",
+  "part": 4,
+  "reserved": false,
+  "title": "Ancient Underground Aqueducts of Arid Plateaus",
+  "contextEn": "A university lecturer gives a talk about the engineering, governance, and modern conservation of ancient underground aqueducts in arid plateau regions.",
+  "difficulty": 7,
+  "speakers": [
+    {
+      "id": "lec",
+      "name": "Dr. Alistair Vance",
+      "role": "University Lecturer",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "lec",
+      "text": "Good morning, everyone. Today we are examining one of the most resilient hydraulic inventions of the ancient world: gravity-fed underground aqueducts built across arid high plateaus, known regionally as qanats, karez, or foggaras."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "lec",
+      "text": "At first glance, permanent agriculture seems impossible on dry upland plains where rivers vanish for most of the year. People often assume these subterranean systems collect desert rainfall, yet rainfall across such plateaus is far too sporadic to sustain towns. Instead, builders tapped deep gravel aquifers along mountain foothills that are recharged each spring by seasonal snowmelt."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "lec",
+      "text": "From that upland water table, a gently sloping tunnel carries water purely by gravity for distances ranging from a few kilometres to more than fifty kilometres, emerging smoothly at ground level beside cultivated fields."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "lec",
+      "text": "Why go to the extraordinary effort of tunnelling underground rather than digging an open ditch? In scorching, wind-swept climates, surface canals can lose well over half their volume to dry air. Keeping the channel buried underground drastically curbs water loss through evaporation, while also protecting the supply from blowing dust and contamination."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "lec",
+      "text": "Let's turn now to how these remarkable galleries were actually planned and constructed without modern surveying equipment or motorised machinery."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "lec",
+      "text": "Work began with sinking a trial well high up the alluvial fan until miners struck a reliable aquifer. Before cutting the main conduit, master surveyors had to calculate a remarkably gentle gradient, typically around one metre of drop per kilometre. If the floor was too flat, water stagnated; if it was too steep, fast currents scoured away the tunnel bed."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "lec",
+      "text": "Actual excavation started at the lower outlet and moved gradually uphill toward the mother well, so that any groundwater seepage drained naturally behind the workers rather than flooding the workface."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "lec",
+      "text": "From the air, a qanat resembles a line of giant ant hills marching across the desert. Those rings of spoil mark vertical access shafts spaced roughly every thirty to fifty metres. Students sometimes think those shafts were dug primarily to draw drinking water along the route, though in fact they were too narrow for public use. Their true dual role was hoisting out excavated rock and maintaining steady ventilation for crews working far below ground."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "lec",
+      "text": "Tunnel stability depended heavily on local geology. Through compact limestone or hard clay, a bare arched passage could stand for centuries. Where the bore cut across loose sandy strata, however, artisans fitted interlocking terracotta rings along the interior walls so the ceiling would not cave in."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "lec",
+      "text": "Because every metre was chipped by hand with iron picks and hauled up in leather buckets, completing a major regional line could occupy several generations of specialist tunnellers."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "lec",
+      "text": "Moving on from engineering, let's examine how plateau communities governed water distribution and organised long-term upkeep."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "lec",
+      "text": "Once the stream reached the village outlet, access was strictly regulated rather than open to whoever arrived first. Families held formal, timed water shares that could be inherited, leased, or traded independently of the land itself."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "lec",
+      "text": "To measure each household's turn accurately, an appointed water keeper floated a perforated copper bowl inside a larger basin. Each time the small bowl filled and sank, a single unit of time elapsed, and sluice gates were shifted to the next plot."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "lec",
+      "text": "Ownership also carried collective obligations for maintenance. At least twice a year, trained crews descended the access shafts to scrape away hardened mineral crust and cut back invasive tree roots that pierced the tunnel lining and blocked the current."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "lec",
+      "text": "This shared stewardship created strong social cohesion, because neglecting even one collapsed section upstream deprived every downstream farmer of water."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "lec",
+      "text": "Finally, let's consider why so many of these centuries-old networks declined in the modern period, and why planners are taking renewed interest in them today."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "lec",
+      "text": "Although prolonged drought is often blamed for drying out historic galleries, hydrological records tell a different story. The primary driver of abandonment since the mid-twentieth century has been deep mechanised pumps extracting groundwater faster than aquifers can recharge, pulling the water table below the mother well."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "lec",
+      "text": "Unlike a gravity gallery, which automatically stops flowing once aquifer levels dip slightly and thus cannot overdraw its reserve, industrial boreholes continue extracting water until the entire basin is depleted."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "lec",
+      "text": "Economic shifts have compounded the problem. Rehabilitating a damaged gallery requires intensive skilled labour, yet younger villagers increasingly move to cities in search of salaried careers, leaving few apprentices to learn traditional tunnelling methods."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "lec",
+      "text": "Even so, conservation programmes across several arid regions have shown encouraging results. Where local cooperatives have cleaned and stabilized surviving lines, the dependable cool outflow has revived historic orchards that had stood dry for decades."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "lec",
+      "text": "As energy costs rise and aquifers face mounting stress, these zero-fuel gravity aqueducts offer hydrologists a proven blueprint for sustainable desert water management. Thank you for listening."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1",
+      "type": "note_completion",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "template": {
+        "title": "Ancient Underground Aqueducts (Qanats)",
+        "rows": [
+          {
+            "label": "Origin and purpose: Upland aquifers are replenished each spring by seasonal",
+            "blankQid": "lep_p4_001_q01",
+            "suffix": ""
+          },
+          {
+            "label": "Subterranean routing prevents major water loss caused by",
+            "blankQid": "lep_p4_001_q02",
+            "suffix": ""
+          },
+          {
+            "label": "Construction: Master surveyors calculate a gentle",
+            "blankQid": "lep_p4_001_q03",
+            "suffix": "to stop floor erosion"
+          },
+          {
+            "label": "Vertical access shafts allow debris removal and provide steady",
+            "blankQid": "lep_p4_001_q04",
+            "suffix": "for workers"
+          },
+          {
+            "label": "Unstable sandy sections are reinforced with ceramic",
+            "blankQid": "lep_p4_001_q05",
+            "suffix": "against collapse"
+          },
+          {
+            "label": "Governance and upkeep: Households obtained irrigation rights via timed",
+            "blankQid": "lep_p4_001_q06",
+            "suffix": "that could be inherited or traded"
+          },
+          {
+            "label": "Maintenance crews clear mineral crust and encroaching tree",
+            "blankQid": "lep_p4_001_q07",
+            "suffix": "twice a year"
+          },
+          {
+            "label": "Modern status: Main cause of falling water tables has been deep",
+            "blankQid": "lep_p4_001_q08",
+            "suffix": "overdrawing aquifers"
+          },
+          {
+            "label": "Restoring galleries is difficult due to shortages of skilled",
+            "blankQid": "lep_p4_001_q09",
+            "suffix": "in rural areas"
+          },
+          {
+            "label": "Rehabilitated channels have successfully revived historic",
+            "blankQid": "lep_p4_001_q10",
+            "suffix": "in dry villages"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p4_001_q01",
+          "number": 1,
+          "prompt": "Upland aquifers are replenished each spring by seasonal ____."
+        },
+        {
+          "qid": "lep_p4_001_q02",
+          "number": 2,
+          "prompt": "Subterranean routing prevents major water loss caused by ____."
+        },
+        {
+          "qid": "lep_p4_001_q03",
+          "number": 3,
+          "prompt": "Master surveyors calculate a gentle ____ to stop floor erosion."
+        },
+        {
+          "qid": "lep_p4_001_q04",
+          "number": 4,
+          "prompt": "Vertical access shafts allow debris removal and provide steady ____ for workers."
+        },
+        {
+          "qid": "lep_p4_001_q05",
+          "number": 5,
+          "prompt": "Unstable sandy sections are reinforced with ceramic ____ against collapse."
+        },
+        {
+          "qid": "lep_p4_001_q06",
+          "number": 6,
+          "prompt": "Households obtained irrigation rights via timed ____ that could be inherited or traded."
+        },
+        {
+          "qid": "lep_p4_001_q07",
+          "number": 7,
+          "prompt": "Maintenance crews clear mineral crust and encroaching tree ____ twice a year."
+        },
+        {
+          "qid": "lep_p4_001_q08",
+          "number": 8,
+          "prompt": "Main cause of falling water tables has been deep ____ overdrawing aquifers."
+        },
+        {
+          "qid": "lep_p4_001_q09",
+          "number": 9,
+          "prompt": "Restoring galleries is difficult due to shortages of skilled ____ in rural areas."
+        },
+        {
+          "qid": "lep_p4_001_q10",
+          "number": 10,
+          "prompt": "Rehabilitated channels have successfully revived historic ____ in dry villages."
+        }
+      ]
+    }
+  ]
+}

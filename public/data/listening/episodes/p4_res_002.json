@@ -1,0 +1,508 @@
+{
+  "id": "lep:p4_res_002",
+  "part": 4,
+  "reserved": true,
+  "title": "Self-Healing Bio-Concrete in Marine Infrastructure",
+  "contextEn": "A civil engineering lecturer discusses how bacteria-infused bio-concrete repairs saltwater cracks in marine structures, along with field results and economic barriers.",
+  "difficulty": 9,
+  "speakers": [
+    {
+      "id": "lec",
+      "name": "Dr. Nathan Caldwell",
+      "role": "University Lecturer",
+      "voice": "am_michael",
+      "accent": "us"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "lec",
+      "text": "Welcome everyone. Concrete is the structural backbone of coastal infrastructure worldwide, from storm seawalls and suspension-bridge foundations to deep-water port terminals. Yet salty ocean spray and relentless tidal cycles are remarkably hostile to conventional reinforced concrete, often cutting expected service lives in half. Today we are looking at why civil engineers are turning to living microbiology for a durable solution.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "lec",
+      "text": "Even carefully mixed concrete inevitably forms microscopic hairline fissures as it cures and flexes under pounding waves. On its own, a sub-millimeter crack poses little danger to the stone paste. The real threat starts when chloride-rich seawater seeps inside and reaches the embedded steel rebar, triggering rapid internal corrosion.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "lec",
+      "text": "As the embedded steel rusts inside the beam, the iron oxide expands to several times its original metallic volume, exerting immense outward tensile stress against the surrounding stone.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "lec",
+      "text": "That outward force flakes off chunks of outer concrete, exposing even more metal to the ocean spray. Patching coastal structures every decade places enormous strain on municipal maintenance budgets around the world.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "lec",
+      "text": "To break this costly cycle of cracking, spalling, and emergency demolition, materials scientists have spent the past two decades perfecting self-healing bio-concrete designed specifically for wet environments.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "lec",
+      "text": "Let's turn now to how engineers embed living microorganisms inside solid stone without killing them during construction.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "lec",
+      "text": "Fresh wet cement is fiercely alkaline, far too caustic for ordinary active bacteria to survive. Instead, engineers blend tough, dormant bacterial spores directly into the concrete mix alongside a calcium-based nutrient compound.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "lec",
+      "text": "In their dormant state, these specialized alkaliphilic microbes, originally isolated from harsh soda lakes, can sit completely inert inside dry concrete for decades without consuming oxygen, degrading the mortar, or weakening compressive strength.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "lec",
+      "text": "Simply dumping raw nutrients and microbes into an industrial mixer risks crushing them or altering the cement setting time. Early lab prototypes tried hollow glass spheres, though those proved too fragile and expensive for bulk pours. Today, commercial mixes typically house the healing agent inside porous clay pellets that shield the payload during vigorous mixing.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "lec",
+      "text": "Years later, when wave stress opens a hairline crack right through those pellets, infiltrating water and dissolved oxygen awaken the dormant microbes. As they metabolize the calcium nutrient, they precipitate solid limestone crystals that gradually plug the fissure watertight within three to six weeks.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "lec",
+      "text": "Crucially, the mechanism is localized and repeatable. Unused pellets elsewhere in the slab stay asleep until a new fracture intersects them, enabling a single pour to reseal recurring tidal cracks along exposed coastal piers across decades of service.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "lec",
+      "text": "Once the crack seals shut and water stops entering, the bacteria return smoothly to dormancy.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "lec",
+      "text": "Moving on to real-world performance and adoption hurdles, let's summarize what full-scale coastal pilot trials have revealed so far.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "lec",
+      "text": "First, temperature clearly governs healing speed. Pilot breakwater blocks immersed in frigid northern waters healed markedly more slowly during winter than identical test panels deployed in warmer temperate harbors.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "lec",
+      "text": "Second, upfront purchase price remains the primary obstacle to widespread commercial adoption among municipal contractors, with self-healing bio-concrete still costing roughly twice as much per cubic meter as standard marine concrete blends.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "lec",
+      "text": "Most of that extra cost comes not from growing the bacteria, which is cheap, but from buying purified laboratory-grade calcium nutrients. To bring prices down, research teams are now substituting processed agricultural waste as an inexpensive alternative food source.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "lec",
+      "text": "Engineers also emphasize realistic structural limits so port authorities do not expect miracles. Bio-concrete cannot knit together wide structural splits caused by major earthquakes or heavy ship collisions; bacterial precipitation bridges reliably only across narrow gaps under about one millimeter.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "lec",
+      "text": "To keep cracks narrow enough for microbial sealing to succeed, marine designers often blend fine synthetic fibers into the paste to restrain crack width under heavy wave loading.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "lec",
+      "text": "Even with higher initial purchase prices, full lifecycle accounting strongly favors bio-concrete for submerged foundations, offshore wind bases, and tidal tunnels where bringing in commercial diving crews and waterproof cofferdams is astronomically expensive and hazardous.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "lec",
+      "text": "There is a substantial climate dividend too. Because Portland cement manufacturing is heavily energy-intensive, extending the service life of coastal concrete significantly reduces replacement demand and lowers overall carbon emissions.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "lec",
+      "text": "As nutrient expenses fall and national marine building codes formally recognize self-healing mixes, bio-concrete is poised to move from niche pilot panels into standard twenty-first-century coastal engineering. Thank you very much for listening.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p4_res_002.mp3",
+    "durationSec": 365,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1",
+      "type": "note_completion",
+      "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Self-Healing Bio-Concrete: Mechanism in Marine Structures",
+        "rows": [
+          {
+            "label": "Marine degradation: Seawater entering hairline fissures accelerates internal steel",
+            "blankQid": "lep_p4_res_002_q01",
+            "suffix": ""
+          },
+          {
+            "label": "Frequent patching of coastal structures strains municipal maintenance",
+            "blankQid": "lep_p4_res_002_q02",
+            "suffix": ""
+          },
+          {
+            "label": "Mix design: Engineers blend dormant bacterial",
+            "blankQid": "lep_p4_res_002_q03",
+            "suffix": "and nutrients into wet cement"
+          },
+          {
+            "label": "Healing agents are protected inside porous clay",
+            "blankQid": "lep_p4_res_002_q04",
+            "suffix": "during vigorous mixing"
+          },
+          {
+            "label": "Activation: Infiltrating water awakens microbes, which precipitate solid",
+            "blankQid": "lep_p4_res_002_q05",
+            "suffix": "to plug cracks"
+          },
+          {
+            "label": "Unused reserves stay dormant to reseal repeated cracks along coastal",
+            "blankQid": "lep_p4_res_002_q06",
+            "suffix": ""
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p4_res_002_q01",
+          "number": 1,
+          "prompt": "Seawater entering hairline fissures accelerates internal steel ____.",
+          "answer": {
+            "accepted": [
+              "corrosion"
+            ]
+          },
+          "evidence": {
+            "lineId": "l02",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "'accelerates' diễn đạt lại cụm 'triggering rapid' ngay trước 'internal corrosion'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_res_002_q02",
+          "number": 2,
+          "prompt": "Frequent patching of coastal structures strains municipal maintenance ____.",
+          "answer": {
+            "accepted": [
+              "budgets"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "plural_singular",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Cần điền danh từ số nhiều 'budgets'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_res_002_q03",
+          "number": 3,
+          "prompt": "Engineers blend dormant bacterial ____ and nutrients into wet cement.",
+          "answer": {
+            "accepted": [
+              "spores"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l07",
+              "start": 0,
+              "end": 0,
+              "decoy": "active bacteria",
+              "explanationVi": "Vi khuẩn hoạt động thường không chịu được độ kiềm cao; kỹ sư phải dùng 'spores' (bào tử ngủ đông)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_res_002_q04",
+          "number": 4,
+          "prompt": "Healing agents are protected inside porous clay ____ during vigorous mixing.",
+          "answer": {
+            "accepted": [
+              "pellets"
+            ]
+          },
+          "evidence": {
+            "lineId": "l09",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "signpost_skip",
+              "lineId": "l09",
+              "start": 0,
+              "end": 0,
+              "decoy": "glass spheres",
+              "explanationVi": "Giảng viên nhắc mẫu thử cũ dùng 'glass spheres' (dễ vỡ, đắt) trước khi chốt giải pháp thương mại là 'pellets'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_res_002_q05",
+          "number": 5,
+          "prompt": "Infiltrating water awakens microbes, which precipitate solid ____ to plug cracks.",
+          "answer": {
+            "accepted": [
+              "limestone"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p4_res_002_q06",
+          "number": 6,
+          "prompt": "Unused reserves stay dormant to reseal repeated cracks along coastal ____.",
+          "answer": {
+            "accepted": [
+              "piers"
+            ]
+          },
+          "evidence": {
+            "lineId": "l11",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "homophone_minimal_pair",
+              "lineId": "l11",
+              "start": 0,
+              "end": 0,
+              "decoy": "peers",
+              "explanationVi": "'piers' (cầu tàu) đồng âm với 'peers' (bạn đồng trang lứa/đồng nghiệp)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Write ONE WORD ONLY for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Field Trials, Cost Reduction, and Environmental Impact",
+        "rows": [
+          {
+            "label": "Cold northern waters slowed winter healing compared with trials in temperate",
+            "blankQid": "lep_p4_res_002_q07",
+            "suffix": "."
+          },
+          {
+            "label": "To lower high nutrient expenses, teams are substituting processed agricultural",
+            "blankQid": "lep_p4_res_002_q08",
+            "suffix": "as bacterial food."
+          },
+          {
+            "label": "Because microbes only seal narrow gaps, synthetic",
+            "blankQid": "lep_p4_res_002_q09",
+            "suffix": "are mixed in to keep cracks tight."
+          },
+          {
+            "label": "Extending concrete service life reduces cement replacement and cuts carbon",
+            "blankQid": "lep_p4_res_002_q10",
+            "suffix": "."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p4_res_002_q07",
+          "number": 7,
+          "prompt": "Cold northern waters slowed winter healing compared with trials in temperate ____.",
+          "answer": {
+            "accepted": [
+              "harbors",
+              "harbours"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "plural_singular",
+              "lineId": "l14",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Cần dạng số nhiều; chấp nhận cả chính tả Mỹ 'harbors' và Anh 'harbours'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_res_002_q08",
+          "number": 8,
+          "prompt": "To lower high nutrient expenses, teams are substituting processed agricultural ____ as bacterial food.",
+          "answer": {
+            "accepted": [
+              "waste"
+            ]
+          },
+          "evidence": {
+            "lineId": "l16",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l16",
+              "start": 0,
+              "end": 0,
+              "decoy": "bacteria",
+              "explanationVi": "Chi phí không nằm ở nuôi 'bacteria' mà ở dưỡng chất tinh khiết; giải pháp thay thế là phụ phẩm nông nghiệp ('waste')."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_res_002_q09",
+          "number": 9,
+          "prompt": "Because microbes only seal narrow gaps, synthetic ____ are mixed in to keep cracks tight.",
+          "answer": {
+            "accepted": [
+              "fibers",
+              "fibres"
+            ]
+          },
+          "evidence": {
+            "lineId": "l18",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "plural_singular",
+              "lineId": "l18",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Danh từ số nhiều; chấp nhận cả chính tả Mỹ 'fibers' và Anh 'fibres'."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p4_res_002_q10",
+          "number": 10,
+          "prompt": "Extending concrete service life reduces cement replacement and cuts carbon ____.",
+          "answer": {
+            "accepted": [
+              "emissions"
+            ]
+          },
+          "evidence": {
+            "lineId": "l20",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l20",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "'cuts' diễn đạt lại 'lowers overall' ngay trước 'carbon emissions'."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

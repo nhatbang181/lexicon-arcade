@@ -1,0 +1,603 @@
+{
+  "id": "lep:p3_002",
+  "part": 3,
+  "reserved": false,
+  "title": "Microplastic Sampling in Estuarine Sediments",
+  "contextEn": "Two marine biology students, Owen and Priya, meet their tutor Dr Graham Whitaker to review their laboratory analysis and draft dissertation on estuarine microplastics.",
+  "difficulty": 7,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Owen",
+      "role": "Marine biology student",
+      "voice": "bm_lewis",
+      "accent": "uk"
+    },
+    {
+      "id": "s2",
+      "name": "Priya",
+      "role": "Marine biology student",
+      "voice": "bf_lily",
+      "accent": "uk"
+    },
+    {
+      "id": "s3",
+      "name": "Dr Whitaker",
+      "role": "Academic tutor",
+      "voice": "bm_george",
+      "accent": "uk"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s3",
+      "text": "Come in, both of you. I read your lab summary from the Alder Creek sampling trip. Overall the design looks solid, though I noticed you had to discard the first batch of sediment cores. What went wrong there?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "At first we suspected our salinity probe had drifted out of calibration, or that someone had packed the jars in plastic bags instead of foil.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s2",
+      "text": "Actually the probe checked out fine and every sample went straight into baked glass jars. When we inspected the control blanks, we found bright blue synthetic threads shed from our own fleece jackets during coring.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s3",
+      "text": "Classic field contamination, and well caught early. Cotton coats only from now on. Now, for density separation in the lab, I see you switched from ordinary sodium chloride brine to sodium iodide. Was that worth the budget hit?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "It certainly is not cheap, and it does nothing to digest plant litter on its own since we still need peroxide for that. Yet regular salt brine missed heavier polymers like polyester and PVC, whereas sodium iodide floats those denser particles cleanly to the surface.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s3",
+      "text": "Good justification, just make sure you recycle the solution between runs. Priya, you wrote a cautious note about relying purely on stereo microscopy for particle counts.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s2",
+      "text": "Yes. Owen mentioned each filter takes nearly an hour to scan, which is tedious, and our microscope lens is actually crisp enough. My real worry is accuracy: bleached natural cellulose fibres look almost identical to synthetic threads under ordinary light, so visual counts inflate our totals.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s3",
+      "text": "Spot on. Confirming a subsample with infrared spectroscopy will guard against false positives. One more technical point before we discuss your findings: how are you standardising particle concentrations across mud and sand sites?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "We initially logged particles per litre of wet sediment, because measuring volume in the boat was fast.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s3",
+      "text": "Wet volume varies wildly with water content between fine silt and coarse gravel. Oven-dry every core first and express your figures per kilogram of dry mass instead; otherwise your spatial comparisons will not hold up.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s2",
+      "text": "Understood, we will recalculate by dry weight. Moving to our preliminary patterns, we saw a sharp concentration spike right inside the harbour mouth, and we have been debating what drives it.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "I was convinced it came from frayed mooring ropes shedding plastic strands, or scraped hull paint washing down from the repair yard.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s3",
+      "text": "Let us check the polymer signatures you pulled. Almost none of those harbour fragments matched marine epoxy paint or twisted polypropylene rope, and we found virtually no household food-wrapper debris either.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s2",
+      "text": "That leaves the storm culverts right above the quay. Nearly half the dark elastomer specks match tyre-wear particles flushed from road drains during heavy rain.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s3",
+      "text": "Yes, stormwater runoff from the coastal highway is clearly one major driver. And look at the bathymetry chart: why do those particles settle there instead of washing straight out to sea?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Oh, of course! The curved stone breakwater slows the outgoing tide and creates a calm eddy behind it, so suspended fragments drop out of the water column and accumulate in the mud.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s2",
+      "text": "So highway drainage brings the particles in, and tidal trapping behind the breakwater holds them there. That makes complete physical sense.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s3",
+      "text": "Exactly. Now let us spend our last few minutes on the draft dissertation structure so you know what to revise before Friday. Starting with your literature review.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s1",
+      "text": "Should we bring in more published baseline figures from other northern estuaries?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s3",
+      "text": "Your baseline comparisons are already thorough. What drags the chapter down is the opening three pages retelling the post-war history of plastic manufacturing. Cut that historical overview right back to one concise paragraph.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s2",
+      "text": "Fair enough, we will tighten it. What about the sampling methodology section? We drew a fresh grid diagram of the transect stations.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s3",
+      "text": "The grid map is crystal clear, no changes needed there. However, nowhere do you specify the exact pore diameter of your glass-fibre filters, so a reader cannot tell what minimum particle size you were able to detect.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s1",
+      "text": "Good catch, we will state the micron cutoff explicitly. And in the results presentation, did our tables make sense?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s3",
+      "text": "The numbers are accurate, but listing every core strictly by the calendar date you collected it forces the reader to jump back and forth. Reorganise those tables so stations are grouped by upper, middle, and lower tidal zone.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "s2",
+      "text": "Right, grouping by estuary zone will highlight the gradient immediately. Lastly, how did the discussion chapter read?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "s3",
+      "text": "Mostly balanced, except for the final page where you speculate that creek microplastics pose an acute clinical risk to local shellfish consumers. Your dataset only measured sediment, not human tissue, so strip out those unverified health claims.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "s1",
+      "text": "Got it. We will stick strictly to ecological implications supported by our cores. Thanks for the detailed feedback, Dr Whitaker.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p3_002.mp3",
+    "durationSec": 320,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_002_q01",
+          "number": 1,
+          "prompt": "Why did Owen and Priya discard their first batch of sediment cores?\nA. The salinity probe gave inaccurate readings.\nB. Fibres from their clothing contaminated the samples.\nC. Samples had been stored in plastic bags instead of glass.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l03",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "salinity probe / plastic bags",
+              "explanationVi": "Owen nêu hai nghi ngờ ban đầu là đầu dò độ mặn (A) và túi nhựa (C), nhưng Priya bác bỏ ngay ở dòng sau và xác nhận sợi tổng hợp từ áo khoác nỉ mới là nguồn gây nhiễm (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_002_q02",
+          "number": 2,
+          "prompt": "Why do the students justify using sodium iodide for density separation?\nA. It enables denser plastic polymers to float for extraction.\nB. It costs significantly less than standard salt brine.\nC. It removes organic plant fragments without extra chemicals.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l05",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l05",
+              "start": 0,
+              "end": 0,
+              "decoy": "not cheap / does nothing to digest plant litter",
+              "explanationVi": "Owen phủ định cả giá rẻ (loại B) và khả năng tự phân hủy mảnh thực vật (loại C); lý do duy nhất là tách nổi được các polymer nặng hơn (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_002_q03",
+          "number": 3,
+          "prompt": "What is Priya's main objection to relying solely on visual microscopy?\nA. The laboratory microscope lens lacks sharp focus.\nB. Scanning each filter takes too much laboratory time.\nC. Natural plant fibres can be miscounted as synthetic plastics.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l07",
+              "start": 0,
+              "end": 0,
+              "decoy": "takes nearly an hour / microscope lens is actually crisp",
+              "explanationVi": "Ống kính kính hiển vi thực ra sắc nét (loại A) và thời gian soi lâu chỉ là chuyện bất tiện Owen nhắc tới (loại B); mối lo chính của Priya là sợi xenlulô tự nhiên bị đếm nhầm thành nhựa tổng hợp (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_002_q04",
+          "number": 4,
+          "prompt": "How does Dr Whitaker tell the students to standardise their particle counts?\nA. Calculate counts relative to oven-dried sediment weight.\nB. Record counts per litre of wet sediment collected on site.\nC. Separate coarse gravel samples from the main dataset.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l09",
+              "start": 0,
+              "end": 0,
+              "decoy": "per litre of wet sediment",
+              "explanationVi": "Sinh viên ban đầu tính theo thể tích bùn ướt (B), nhưng Dr Whitaker yêu cầu sấy khô và quy đổi theo khối lượng khô (A) để so sánh chính xác."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO factors do the speakers agree best explain the high microplastic concentration inside the harbour mouth?",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Stormwater runoff from nearby road drains"
+        },
+        {
+          "key": "B",
+          "text": "Abrasion of painted vessel hulls in the repair yard"
+        },
+        {
+          "key": "C",
+          "text": "Shedding from synthetic mooring ropes"
+        },
+        {
+          "key": "D",
+          "text": "Illegal dumping of domestic food packaging"
+        },
+        {
+          "key": "E",
+          "text": "Tidal trapping behind the stone breakwater"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_002_q05",
+          "number": 5,
+          "prompt": "First agreed factor explaining the harbour-mouth spike (choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "A",
+              "E"
+            ],
+            "keys": [
+              "A",
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l12",
+              "start": 0,
+              "end": 0,
+              "decoy": "mooring ropes / scraped hull paint / food-wrapper debris",
+              "explanationVi": "Owen đoán là dây neo (C) và sơn vỏ tàu (B), còn Dr Whitaker loại trừ cả B, C và rác bao bì thực phẩm (D) dựa trên kết quả phổ; yếu tố đầu tiên được đồng thuận là nước mưa cuốn bụi lốp từ cống đường bộ (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_002_q06",
+          "number": 6,
+          "prompt": "Second agreed factor explaining the harbour-mouth spike (choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "A",
+              "E"
+            ],
+            "keys": [
+              "A",
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l16",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l16",
+              "start": 0,
+              "end": 0,
+              "decoy": "stone breakwater slows the outgoing tide and creates a calm eddy",
+              "explanationVi": "Đoạn nói đê chắn sóng làm chậm thủy triều rút tạo xoáy lặng khiến hạt lắng đọng được diễn đạt gọn lại thành 'Tidal trapping behind the stone breakwater' (E)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g3_matching",
+      "type": "matching",
+      "instructions": "What revision does Dr Whitaker request for each section of the draft dissertation? Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 7-10.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Condense the historical background"
+        },
+        {
+          "key": "B",
+          "text": "Add a diagram of the sampling grid"
+        },
+        {
+          "key": "C",
+          "text": "Reorder the tables by tidal zone"
+        },
+        {
+          "key": "D",
+          "text": "Clarify the detection size threshold"
+        },
+        {
+          "key": "E",
+          "text": "Remove speculative health claims"
+        },
+        {
+          "key": "F",
+          "text": "Compare figures with a published baseline"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_002_q07",
+          "number": 7,
+          "prompt": "Literature review",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l20",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l19",
+              "start": 0,
+              "end": 0,
+              "decoy": "published baseline figures",
+              "explanationVi": "Owen hỏi có cần thêm số liệu nền đã công bố (F) không, nhưng Dr Whitaker khen phần đó đã đủ và yêu cầu rút gọn 3 trang lịch sử sản xuất nhựa (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_002_q08",
+          "number": 8,
+          "prompt": "Sampling methodology",
+          "answer": {
+            "accepted": [
+              "D"
+            ],
+            "keys": [
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l22",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "decoy": "grid diagram of the transect stations",
+              "explanationVi": "Sơ đồ lưới lấy mẫu (B) đã rất rõ và không cần sửa; thiếu sót là chưa ghi đường kính lỗ lọc xác định kích thước hạt tối thiểu phát hiện được (D)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_002_q09",
+          "number": 9,
+          "prompt": "Results presentation",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l24",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p3_002_q10",
+          "number": 10,
+          "prompt": "Discussion",
+          "answer": {
+            "accepted": [
+              "E"
+            ],
+            "keys": [
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l26",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l26",
+              "start": 0,
+              "end": 0,
+              "decoy": "strip out those unverified health claims",
+              "explanationVi": "Cụm 'strip out those unverified health claims' đồng nghĩa trực tiếp với 'Remove speculative health claims' (E)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

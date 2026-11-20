@@ -1,0 +1,623 @@
+{
+  "id": "lep:p1_004",
+  "part": 1,
+  "reserved": false,
+  "title": "Oakridge Community Library Volunteering",
+  "contextEn": "A woman phones a community library manager to enquire about volunteering shifts and book an orientation session.",
+  "difficulty": 4,
+  "speakers": [
+    {
+      "id": "manager",
+      "name": "Arthur Pendelton",
+      "role": "Library Manager",
+      "voice": "bm_daniel",
+      "accent": "uk"
+    },
+    {
+      "id": "caller",
+      "name": "Nadia Holloway",
+      "role": "Volunteer Applicant",
+      "voice": "bf_isabella",
+      "accent": "uk"
+    }
+  ],
+  "channel": "phone",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "manager",
+      "text": "Good morning, Oakridge Community Library, Arthur Pendelton speaking. How may I help?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Hello Arthur. I saw your poster on the noticeboard about looking for new volunteers, and I would love to apply.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "manager",
+      "text": "Oh, splendid! We are always glad to hear from local residents. Let me take a few initial notes over the phone. Could I have your full name first?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Yes, it is Nadia Holloway. That is spelt H-O-L-L-O-W-A-Y.",
+      "ttsText": "Yes, it is Nadia Holloway. That is spelt H, O, L, L, O, W, A, Y.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "manager",
+      "text": "Holloway, with a double L, got it. And could you tell me your postcode so we know which branch is closest to you?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Sure, it is OX4 7BL... oh, wait, sorry! My tongue slipped, it is OX4 7PL, P for Peter.",
+      "ttsText": "Sure, it is O, X, four, seven, B, L... oh, wait, sorry! My tongue slipped, it is O, X, four, seven, P, L, P for Peter.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "manager",
+      "text": "Right, OX4 7PL, that puts you just ten minutes from our main building. Have you done any community volunteering before, Nadia?",
+      "ttsText": "Right, O, X, four, seven, P, L, that puts you just ten minutes from our main building. Have you done any community volunteering before, Nadia?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "Well, I studied nursing at university, though I never volunteered in a clinic. For the past two years I helped sort donations in a charity bookshop on High Street.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "manager",
+      "text": "Oh, charity bookshop experience is ideal for us! Now, what sort of role appeals to you most? We need help with shelving returned stock, helping seniors with computers, and running children's storytelling sessions.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "Um, I initially thought I would just do shelving quietly in the back, actually children's storytelling sounds wonderful! Could I put down storytelling as my main interest?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "manager",
+      "text": "We would be thrilled, our previous storyteller moved abroad last month. Just to check your availability, what is the weekly commitment like for you?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "I can spare around five hours a week. Is there a set minimum?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "manager",
+      "text": "We used to ask volunteers for 6 hours a week, and students sometimes drop down to 2 hours during exams, though our standard minimum commitment is now 4 hours per week.",
+      "ttsText": "We used to ask volunteers for six hours a week, and students sometimes drop down to two hours during exams, though our standard minimum commitment is now four hours per week.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Four hours a week is very manageable. Do I need to bring any identification when I come in for training?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "manager",
+      "text": "Yes, for our safeguarding check you must bring one valid photo ID, such as a driving licence or a passport.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Ah, my driving licence expired last month and the replacement has not arrived yet, so I will bring my passport instead.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "manager",
+      "text": "A passport works perfectly. Let me note that down and check our upcoming volunteer orientation schedule.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Is the next orientation session on Saturday morning?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "manager",
+      "text": "Yes, always on a Saturday morning from ten until twelve. We originally scheduled it for 8 November, however the roofers are working above the main hall that weekend, so we moved it to 15 November.",
+      "ttsText": "Yes, always on a Saturday morning from ten until twelve. We originally scheduled it for the eighth of November, however the roofers are working above the main hall that weekend, so we moved it to the fifteenth of November.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Oh, 15 November actually suits me even better. Where in the library do we meet?",
+      "ttsText": "Oh, the fifteenth of November actually suits me even better. Where in the library do we meet?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "manager",
+      "text": "Usually we hold briefings in the basement study room, but the decorators are painting down there this week. Instead, head straight to the garden annexe behind the fiction shelves.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "The annexe, got it. And after orientation, which weekday shift would you like me to cover?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "manager",
+      "text": "We have open children's sessions on both Wednesday and Friday afternoons. Which day fits your diary?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Let me see... Friday clashes with my Italian evening class, so Wednesday afternoon would be ideal for me.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "manager",
+      "text": "Wonderful, I have pencilled you in for Wednesday shifts. Oh, and one little perk I should mention before we wrap up.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "caller",
+      "text": "Oh yes? Do volunteers get free coffee at the library cafe?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "manager",
+      "text": "Haha, coffee at the cafe is half-price rather than free, I am afraid! What you do get completely free is parking in the staff bays behind the building whenever you are on duty.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l28",
+      "speakerId": "caller",
+      "text": "Oh, free parking in town is worth its weight in gold! Thank you so much, Arthur. I will see you on 15 November.",
+      "ttsText": "Oh, free parking in town is worth its weight in gold! Thank you so much, Arthur. I will see you on the fifteenth of November.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l29",
+      "speakerId": "manager",
+      "text": "Looking forward to meeting you, Nadia. Goodbye!",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p1_004.mp3",
+    "durationSec": 288,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_notes",
+      "type": "note_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Oakridge Community Library - Volunteer Notes",
+        "rows": [
+          {
+            "label": "Applicant first name",
+            "value": "Nadia"
+          },
+          {
+            "label": "Applicant surname",
+            "blankQid": "lep_p1_004_q01"
+          },
+          {
+            "label": "Postcode",
+            "blankQid": "lep_p1_004_q02"
+          },
+          {
+            "label": "Previous volunteering",
+            "value": "charity",
+            "blankQid": "lep_p1_004_q03"
+          },
+          {
+            "label": "Main duty chosen",
+            "value": "children's",
+            "blankQid": "lep_p1_004_q04"
+          },
+          {
+            "label": "Minimum weekly commitment",
+            "blankQid": "lep_p1_004_q05",
+            "suffix": "hours"
+          },
+          {
+            "label": "Photo ID to bring",
+            "blankQid": "lep_p1_004_q06"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_004_q01",
+          "number": 1,
+          "prompt": "Applicant's surname",
+          "answer": {
+            "accepted": [
+              "Holloway"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "spelling_out",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Người gọi đánh vần họ H-O-L-L-O-W-A-Y với hai chữ L ở giữa."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q02",
+          "number": 2,
+          "prompt": "Applicant's postcode",
+          "answer": {
+            "accepted": [
+              "OX4 7PL"
+            ]
+          },
+          "evidence": {
+            "lineId": "l06",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "self_correction",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "OX4 7BL",
+              "explanationVi": "Đọc nhầm chữ B thành 7BL rồi sửa ngay thành 7PL (P for Peter)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q03",
+          "number": 3,
+          "prompt": "Place of previous volunteering (a charity ...)",
+          "answer": {
+            "accepted": [
+              "bookshop"
+            ]
+          },
+          "evidence": {
+            "lineId": "l08",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "clinic",
+              "explanationVi": "Chưa từng tình nguyện ở phòng khám mà chỉ làm ở hiệu sách từ thiện (bookshop)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q04",
+          "number": 4,
+          "prompt": "Main area of interest selected (children's ...)",
+          "answer": {
+            "accepted": [
+              "storytelling"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l10",
+              "start": 0,
+              "end": 0,
+              "decoy": "shelving",
+              "explanationVi": "Ban đầu định xếp sách (shelving) nhưng sau đó đổi sang kể chuyện (storytelling)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q05",
+          "number": 5,
+          "prompt": "Standard minimum weekly hours required",
+          "answer": {
+            "accepted": [
+              "4",
+              "four"
+            ]
+          },
+          "evidence": {
+            "lineId": "l13",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "distractor_number",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "decoy": "6",
+              "explanationVi": "Trước đây yêu cầu 6 giờ và sinh viên thi làm 2 giờ, nhưng mức tối thiểu chuẩn nay là 4."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q06",
+          "number": 6,
+          "prompt": "Valid photo ID the applicant will bring",
+          "answer": {
+            "accepted": [
+              "passport"
+            ]
+          },
+          "evidence": {
+            "lineId": "l16",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l16",
+              "start": 0,
+              "end": 0,
+              "decoy": "driving licence",
+              "explanationVi": "Bằng lái đã hết hạn tháng trước nên Nadia sẽ mang hộ chiếu (passport)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_table",
+      "type": "table_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Orientation & Shift Schedule",
+        "rows": [
+          {
+            "label": "Orientation timing",
+            "value": "Saturday 10:00-12:00"
+          },
+          {
+            "label": "Orientation date",
+            "blankQid": "lep_p1_004_q07"
+          },
+          {
+            "label": "Orientation room",
+            "value": "garden",
+            "blankQid": "lep_p1_004_q08"
+          },
+          {
+            "label": "Regular shift day",
+            "blankQid": "lep_p1_004_q09",
+            "suffix": "afternoon"
+          },
+          {
+            "label": "Free volunteer benefit",
+            "blankQid": "lep_p1_004_q10"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_004_q07",
+          "number": 7,
+          "prompt": "Rescheduled date for the orientation session",
+          "answer": {
+            "accepted": [
+              "15 November",
+              "15th November",
+              "November 15"
+            ]
+          },
+          "evidence": {
+            "lineId": "l19",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l19",
+              "start": 0,
+              "end": 0,
+              "decoy": "8 November",
+              "explanationVi": "Lịch cũ là 8 November nhưng do sửa mái nên dời sang 15 November."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q08",
+          "number": 8,
+          "prompt": "Room where the orientation will take place (garden ...)",
+          "answer": {
+            "accepted": [
+              "annexe",
+              "annex"
+            ]
+          },
+          "evidence": {
+            "lineId": "l21",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "decoy": "basement",
+              "explanationVi": "Phòng tầng hầm đang sơn sửa nên buổi định hướng chuyển sang nhà phụ (annexe)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q09",
+          "number": 9,
+          "prompt": "Weekday afternoon chosen for regular shifts",
+          "answer": {
+            "accepted": [
+              "Wednesday"
+            ]
+          },
+          "evidence": {
+            "lineId": "l24",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l24",
+              "start": 0,
+              "end": 0,
+              "decoy": "Friday",
+              "explanationVi": "Thứ Sáu trùng lịch học tiếng Ý nên chọn ca chiều thứ Tư."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_004_q10",
+          "number": 10,
+          "prompt": "Complimentary perk provided to volunteers on duty",
+          "answer": {
+            "accepted": [
+              "parking"
+            ]
+          },
+          "evidence": {
+            "lineId": "l27",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l27",
+              "start": 0,
+              "end": 0,
+              "decoy": "coffee",
+              "explanationVi": "Cà phê chỉ được giảm nửa giá chứ không miễn phí, quyền lợi miễn phí là chỗ đậu xe."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

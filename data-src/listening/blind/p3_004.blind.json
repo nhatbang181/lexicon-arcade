@@ -1,0 +1,305 @@
+{
+  "id": "lep:p3_004",
+  "part": 3,
+  "reserved": false,
+  "title": "Bilingual Memory Recall Experiment",
+  "contextEn": "Two cognitive psychology students, Maya and Toby, refine the recruitment criteria and protocol for their honours experiment on language-dependent autobiographical memory.",
+  "difficulty": 8,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Maya",
+      "role": "Cognitive psychology student",
+      "accent": "us"
+    },
+    {
+      "id": "s2",
+      "name": "Toby",
+      "role": "Cognitive psychology student",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Okay Toby, we have ten days before the ethics committee reviews our bilingual memory proposal. Let us lock in who qualifies to take part."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s2",
+      "text": "Sure. In my draft I restricted the pool to people who learned both languages before age ten, and who all share the exact same language pair, say English and Spanish."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "I checked campus numbers and a single language pair would leave us way short of forty volunteers. Plus, recent memory-congruence papers show that current active fluency matters much more than acquiring both tongues before age ten."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s2",
+      "text": "Fair point. Let us drop both the age-ten cutoff and the single-pair rule. What about requiring everyone to have lived in two separate countries?"
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "No, plenty of heritage speakers grew up completely bilingual without ever moving abroad. The non-negotiable requirement we must keep is that participants actively use both languages regularly in their daily routines."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s2",
+      "text": "Agreed, active daily usage is essential. And what about excluding anyone with formal training in memory techniques, like memory-palace competitors?"
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Definitely keep that screen. Trained mnemonic strategies override natural language cues and would distort our recall scores."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s2",
+      "text": "Great, two solid criteria locked in. Now let us look at what our four pilot volunteers taught us about the procedure itself."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "First, the good news: every session wrapped up in thirty-two minutes, well inside our forty-five-minute consent window, and splitting the two languages across separate days prevented any mental fatigue from code-switching."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s2",
+      "text": "And using pre-recorded neutral audio prompts ensured my accent never nudged anyone toward a particular language. Still, two genuine flaws jumped out immediately."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "Yes. Abstract cue words like justice or ambition completely backfired: instead of recalling a specific episode, volunteers gave general opinions. We need concrete sensory nouns like harbour or cinnamon."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s2",
+      "text": "Agreed, concrete cues trigger vivid scenes. The other flaw was our warm-up sheet. Remember we handed participants a preview list of the twenty prompts while they signed the consent form?"
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "Big mistake. Two volunteers admitted they silently translated and rehearsed their favourite stories during those five minutes, which wiped out spontaneous recall. Nobody sees the prompts in advance from now on."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s2",
+      "text": "Lesson learned. Let us run through our six remaining experimental components and confirm our final decision for each. Starting with the cue-word presentation order."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "If we keep one fixed sequence across both days, later words suffer from boredom. Our software should randomise the presentation order separately for every participant."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s2",
+      "text": "Done. Next is the emotional vividness rating. I mocked up a quick five-point slider of our own, which felt tidy enough."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "Dr Alverez warned us that markers dislike home-made scales when validated tools already exist. Let us replace your slider with the established published vividness inventory instead."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s2",
+      "text": "Good call, that protects our validity. Third, speech pause duration while people search for a memory. Clicking a handheld stopwatch during the pilot felt hopelessly inconsistent."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s1",
+      "text": "Totally. Let us measure every pause automatically using acoustic editing software after the session so we get millisecond precision without distracting the speaker."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s2",
+      "text": "Smart. Fourth is the twenty-minute vocabulary proficiency test you suggested adding to verify bilingual balance."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s1",
+      "text": "I know I pushed for it last week, but adding twenty minutes would push our total session past the ethics cap, and our language-history form already captures proficiency reliably. Let us drop the vocabulary test completely."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s2",
+      "text": "What a relief, that saves hours of testing. Fifth is coding the transcripts for detail richness. Could we just ask volunteers to rate their own detail level on a quick form?"
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s1",
+      "text": "Self-ratings are far too subjective for our primary outcome. We need two independent raters scoring anonymised transcripts blind, without knowing whether the memory matched the original event language."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s2",
+      "text": "Right, blind double-coding makes the core metric airtight. Lastly, background stress level: obviously we cannot standardise how stressed students feel across two separate weeks."
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "s1",
+      "text": "No, we cannot control exam stress, so let us capture it with a brief three-item questionnaire right after the recall block and include it as a statistical covariate."
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "s2",
+      "text": "Clean, defensible, and realistic. I will update the ethics appendix tonight and send it over for a final proofread."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO eligibility criteria do Maya and Toby decide to keep for recruiting participants?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Having acquired both languages before age ten"
+        },
+        {
+          "key": "B",
+          "text": "Using both languages regularly in daily life"
+        },
+        {
+          "key": "C",
+          "text": "Sharing the same pair of languages across the whole sample"
+        },
+        {
+          "key": "D",
+          "text": "Having lived in at least two different countries"
+        },
+        {
+          "key": "E",
+          "text": "Having no formal training in memory techniques"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_004_q01",
+          "number": 1,
+          "prompt": "First eligibility criterion retained (choose TWO letters, A-E)"
+        },
+        {
+          "qid": "lep_p3_004_q02",
+          "number": 2,
+          "prompt": "Second eligibility criterion retained (choose TWO letters, A-E)"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO flaws did the pilot test reveal in the experimental procedure?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The cue words were too abstract to trigger specific memories"
+        },
+        {
+          "key": "B",
+          "text": "Sessions exceeded the permitted ethical time limit"
+        },
+        {
+          "key": "C",
+          "text": "Switching languages mid-session caused mental fatigue"
+        },
+        {
+          "key": "D",
+          "text": "The experimenter's accent influenced language selection"
+        },
+        {
+          "key": "E",
+          "text": "Seeing a preview sheet let participants rehearse stories"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_004_q03",
+          "number": 3,
+          "prompt": "First procedural flaw revealed by the pilot (choose TWO letters, A-E)"
+        },
+        {
+          "qid": "lep_p3_004_q04",
+          "number": 4,
+          "prompt": "Second procedural flaw revealed by the pilot (choose TWO letters, A-E)"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_matching",
+      "type": "matching",
+      "instructions": "What decision do Maya and Toby make regarding each experimental component? Choose SIX answers from the box and write the correct letter, A-H, next to Questions 5-10.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Standardise across both testing days"
+        },
+        {
+          "key": "B",
+          "text": "Score blindly using two independent raters"
+        },
+        {
+          "key": "C",
+          "text": "Drop completely from the final protocol"
+        },
+        {
+          "key": "D",
+          "text": "Measure via a brief post-task questionnaire"
+        },
+        {
+          "key": "E",
+          "text": "Replace with an established published scale"
+        },
+        {
+          "key": "F",
+          "text": "Randomise the presentation sequence"
+        },
+        {
+          "key": "G",
+          "text": "Collect only from the control group"
+        },
+        {
+          "key": "H",
+          "text": "Time automatically with audio software"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_004_q05",
+          "number": 5,
+          "prompt": "Cue-word order"
+        },
+        {
+          "qid": "lep_p3_004_q06",
+          "number": 6,
+          "prompt": "Emotional vividness rating"
+        },
+        {
+          "qid": "lep_p3_004_q07",
+          "number": 7,
+          "prompt": "Speech pause duration"
+        },
+        {
+          "qid": "lep_p3_004_q08",
+          "number": 8,
+          "prompt": "Vocabulary proficiency test"
+        },
+        {
+          "qid": "lep_p3_004_q09",
+          "number": 9,
+          "prompt": "Detail-richness coding"
+        },
+        {
+          "qid": "lep_p3_004_q10",
+          "number": 10,
+          "prompt": "Background stress level"
+        }
+      ]
+    }
+  ]
+}

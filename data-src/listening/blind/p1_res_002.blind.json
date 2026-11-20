@@ -1,0 +1,294 @@
+{
+  "id": "lep:p1_res_002",
+  "part": 1,
+  "reserved": true,
+  "title": "Greenfield Allotment Plot Application",
+  "contextEn": "A resident phones a town council allotment officer to apply for a community garden plot and ask about site regulations.",
+  "difficulty": 5,
+  "speakers": [
+    {
+      "id": "officer",
+      "name": "Rachel Dawson",
+      "role": "Allotment Officer",
+      "accent": "us"
+    },
+    {
+      "id": "caller",
+      "name": "Simon Thornton",
+      "role": "Plot Applicant",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "officer",
+      "text": "Good morning, Greenfield Council Parks and Allotments, Rachel speaking. How may I help?"
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Hello Rachel. I live in Greenfield and I would like to apply for a vegetable plot on one of the council allotment sites."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "officer",
+      "text": "Oh, lovely! Growing your own produce has become hugely popular this year. I can register your application right now. Could I start with your full name?"
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Sure, it is Simon Thornton. Let me spell the surname just in case: T-H-O-R-N-T-O-N."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "officer",
+      "text": "Thornton, got it. Because council plots are reserved for local residents, could you give me your street address?"
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Of course, it is 36 Millbrook Road... oh, sorry, 63 Millbrook Road! I always reverse those two digits when I am rushing."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "officer",
+      "text": "Sixty-three Millbrook Road, all confirmed inside the town boundary. Now, which of our allotment sites were you hoping for?"
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "I walked past North Orchard the other day and loved the fruit trees, though I heard the waiting list there is quite long?"
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "officer",
+      "text": "Yes, North Orchard has roughly a three-year wait at the moment. Over at South Meadow, however, we just cleared three overgrown plots and have spaces opening next month."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "Oh, next month beats waiting three years! Please put me down for South Meadow instead."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "officer",
+      "text": "Great choice, South Meadow gets brilliant afternoon sun. Would you like to apply for a full plot or a half plot?"
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "Um, I was thinking a full plot... wait, how big is a full plot in square metres?"
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "officer",
+      "text": "A full plot is around two hundred and fifty square metres, which takes about eight to ten hours of weeding and digging every week."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Oh, goodness, I work full time and this is my first garden! Let me start sensibly with a half plot instead."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "officer",
+      "text": "Very wise, most beginners prefer a half plot. For fees, a full plot is £94 a year, whereas a half plot is £52 annually, and that already includes the £12 shared water charge."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Fifty-two pounds a year including water is a bargain! Is there any deposit for the site gate key?"
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "officer",
+      "text": "Yes, there is a refundable £25 key deposit when you sign your tenancy agreement. If you ever need an extra spare key cut later, that costs £10 non-refundable."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Right, £25 refundable deposit. Before we finish, could you tell me a bit about the site rules and facilities at South Meadow?"
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "officer",
+      "text": "Sure! There are shared dip tanks for filling watering cans every thirty metres. One strict rule to note: because South Meadow backs onto housing, bonfires are completely banned all year round. You will need to compost woody prunings or take them to the recycling centre."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "No bonfires at all, fair enough. Does the council provide any free soil supplies for tenants?"
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "officer",
+      "text": "Yes! Local tree surgeons tip free woodchips by the gate in autumn for paths, and every spring the council delivers a large heap of free compost for tenants to dig into their vegetable beds."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Free compost in spring will save me a fortune. And how often do you inspect the plots to make sure they are being looked after?"
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "officer",
+      "text": "We carry out two inspections a year. We used to do the first one in April, though because of late spring frosts we shifted the first inspection to May, with a second check in September."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Okay, May and September. How much of the plot actually has to be planted by May?"
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "officer",
+      "text": "Tenants may use up to 25 percent of the area for a small tool shed, seating, or paths, meaning at least 75 percent of the plot must be actively cultivated."
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "caller",
+      "text": "Seventy-five percent cultivated, got it. Thanks so much for walking me through everything, Rachel."
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "officer",
+      "text": "You are very welcome, Simon. I will post your tenancy pack to Millbrook Road this afternoon!"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Greenfield Council - Allotment Application",
+        "rows": [
+          {
+            "label": "Applicant first name",
+            "value": "Simon"
+          },
+          {
+            "label": "Applicant surname",
+            "blankQid": "lep_p1_res_002_q01"
+          },
+          {
+            "label": "Street address",
+            "blankQid": "lep_p1_res_002_q02",
+            "suffix": "Road"
+          },
+          {
+            "label": "Preferred allotment site",
+            "blankQid": "lep_p1_res_002_q03"
+          },
+          {
+            "label": "Plot size requested",
+            "blankQid": "lep_p1_res_002_q04",
+            "suffix": "plot"
+          },
+          {
+            "label": "Annual rent including water (£)",
+            "blankQid": "lep_p1_res_002_q05"
+          },
+          {
+            "label": "Refundable gate key deposit (£)",
+            "blankQid": "lep_p1_res_002_q06"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_res_002_q01",
+          "number": 1,
+          "prompt": "Applicant's surname"
+        },
+        {
+          "qid": "lep_p1_res_002_q02",
+          "number": 2,
+          "prompt": "House number and street name before 'Road'"
+        },
+        {
+          "qid": "lep_p1_res_002_q03",
+          "number": 3,
+          "prompt": "Allotment site selected by the applicant"
+        },
+        {
+          "qid": "lep_p1_res_002_q04",
+          "number": 4,
+          "prompt": "Plot size chosen (before 'plot')"
+        },
+        {
+          "qid": "lep_p1_res_002_q05",
+          "number": 5,
+          "prompt": "Annual rent for a half plot including water (in pounds)"
+        },
+        {
+          "qid": "lep_p1_res_002_q06",
+          "number": 6,
+          "prompt": "Refundable deposit for the gate key (in pounds)"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_table",
+      "type": "table_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "South Meadow Facilities & Site Rules",
+        "rows": [
+          {
+            "label": "Water supply",
+            "value": "Shared dip tanks"
+          },
+          {
+            "label": "Activity banned all year",
+            "blankQid": "lep_p1_res_002_q07"
+          },
+          {
+            "label": "Free supply delivered in spring",
+            "blankQid": "lep_p1_res_002_q08"
+          },
+          {
+            "label": "First annual inspection month",
+            "blankQid": "lep_p1_res_002_q09"
+          },
+          {
+            "label": "Minimum area cultivated",
+            "blankQid": "lep_p1_res_002_q10",
+            "suffix": "%"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_res_002_q07",
+          "number": 7,
+          "prompt": "Activity strictly banned on the allotment site all year round"
+        },
+        {
+          "qid": "lep_p1_res_002_q08",
+          "number": 8,
+          "prompt": "Free gardening material delivered by the council in spring"
+        },
+        {
+          "qid": "lep_p1_res_002_q09",
+          "number": 9,
+          "prompt": "Month of the first yearly plot inspection"
+        },
+        {
+          "qid": "lep_p1_res_002_q10",
+          "number": 10,
+          "prompt": "Minimum percentage of the plot that must be cultivated"
+        }
+      ]
+    }
+  ]
+}

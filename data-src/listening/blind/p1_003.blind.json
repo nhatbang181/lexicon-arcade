@@ -1,0 +1,340 @@
+{
+  "id": "lep:p1_003",
+  "part": 1,
+  "reserved": false,
+  "title": "Bayside Cycling Club Registration",
+  "contextEn": "A newcomer phones an Australian cycling club coordinator to register as a member and ask about Sunday group rides.",
+  "difficulty": 3,
+  "speakers": [
+    {
+      "id": "coord",
+      "name": "Tessa Ward",
+      "role": "Club Coordinator",
+      "accent": "au"
+    },
+    {
+      "id": "caller",
+      "name": "Liam Fenwick",
+      "role": "New Member",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "coord",
+      "text": "G'day, Bayside Cycling Club, Tessa speaking. How can I help?"
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Hi Tessa, I recently moved over from England and I would love to join your weekend riding groups."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "coord",
+      "text": "Awesome, always great to welcome new riders! Let me open a registration form for you. What is your full name?"
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "It is Liam Fenwick. People sometimes spell it with a C-H at the end, so it is F-E-N-W-I-C-K."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "coord",
+      "text": "Got it, Fenwick with a K. Which suburb are you living in at the moment?"
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Well, I was staying in Brighton for the first fortnight, actually I just moved into a flat in Coral Cove yesterday."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "coord",
+      "text": "Oh nice, Coral Cove is right on our coastal loop. We also ask every rider for an emergency contact mobile number."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "Sure, I will give you my cousin's Australian number. Let me see... it is 0419 638 247... oh sorry, I flipped the last two digits! It is 0419 638 274."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "coord",
+      "text": "Two seven four at the end, thank you. Now, which pace group would you like to register for? We have beginner, intermediate, and racing."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "I was going to put down beginner just to play it safe, though I usually ride forty kilometres at around twenty-six kilometres an hour back home."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "coord",
+      "text": "Oh, at that speed you will find beginner way too slow! Our intermediate bunch averages twenty-five to twenty-eight, so that would suit you much better."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "Fair enough, let us go with intermediate then."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "coord",
+      "text": "Great. For annual membership, our full package with a club jersey is $110, or standard annual membership without the jersey is $85. Which would you prefer?"
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "I already brought plenty of cycling kit from the UK, so I will just take the $85 standard option."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "coord",
+      "text": "No worries, $85 it is. For your first Sunday ride, just note that we changed our meeting point this month. We used to gather by the pier, but because of boardwalk repairs we now meet near the lighthouse at six thirty."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Got it, near the lighthouse. Since it is a six thirty start, what safety gear do I strictly have to bring?"
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "coord",
+      "text": "Good question. A reflective vest is optional in summer and a handlebar bell is only recommended if you ride shared paths, whereas front and rear lights are strictly compulsory for every early Sunday start."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Okay, I will make sure both lights are charged up. By the way, I saw on your website that members can use the workshop repair stand on Thursday evenings?"
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "coord",
+      "text": "Yes, our club mechanic opens the shed at six. Need help fixing a puncture or setting up your saddle?"
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Actually I swapped out a punctured tube myself yesterday and my saddle height feels spot on. It is my back gear cable that keeps slipping on climbs, so I want to adjust that before Sunday."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "coord",
+      "text": "Easy fix, our mechanic can help you tune that in ten minutes. Also, bring a few dollars for the mid-ride coffee stop on Sunday."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Nice! Is that still at the cafe beside the ferry wharf?"
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "coord",
+      "text": "Oh, that cafe closed last week for kitchen renovations. The Saturday hill riders stop at a kiosk in the botanical park, while our Sunday coastal group now goes to a bakery near the marina."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "A marina bakery sounds even better! One last thing: I read there is a perk for new members once they complete three club rides?"
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "coord",
+      "text": "Yes! Remember, the free bike safety check happens before your very first ride, and our autumn charity race still has a standard entry fee. What you unlock after three rides is a fifteen percent discount card at a local bike shop."
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "caller",
+      "text": "Brilliant, that will come in handy for spare tyres. Thanks so much for getting me registered, Tessa."
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "coord",
+      "text": "My pleasure, Liam. See you Thursday evening at the shed!"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Bayside Cycling Club - Registration Form",
+        "rows": [
+          {
+            "label": "First name",
+            "value": "Liam"
+          },
+          {
+            "label": "Surname",
+            "blankQid": "lep_p1_003_q01"
+          },
+          {
+            "label": "Current suburb",
+            "blankQid": "lep_p1_003_q02"
+          },
+          {
+            "label": "Emergency phone",
+            "blankQid": "lep_p1_003_q03"
+          },
+          {
+            "label": "Ride pace group",
+            "blankQid": "lep_p1_003_q04"
+          },
+          {
+            "label": "Annual membership fee ($)",
+            "blankQid": "lep_p1_003_q05"
+          },
+          {
+            "label": "Sunday meeting point",
+            "value": "near the",
+            "blankQid": "lep_p1_003_q06"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_003_q01",
+          "number": 1,
+          "prompt": "Applicant's surname"
+        },
+        {
+          "qid": "lep_p1_003_q02",
+          "number": 2,
+          "prompt": "Suburb where the applicant currently lives"
+        },
+        {
+          "qid": "lep_p1_003_q03",
+          "number": 3,
+          "prompt": "Emergency contact mobile number"
+        },
+        {
+          "qid": "lep_p1_003_q04",
+          "number": 4,
+          "prompt": "Pace group chosen by the applicant"
+        },
+        {
+          "qid": "lep_p1_003_q05",
+          "number": 5,
+          "prompt": "Annual membership fee chosen (in dollars)"
+        },
+        {
+          "qid": "lep_p1_003_q06",
+          "number": 6,
+          "prompt": "Current Sunday meeting point (near the ...)"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_q07",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A reflective vest"
+        },
+        {
+          "key": "B",
+          "text": "Front and rear lights"
+        },
+        {
+          "key": "C",
+          "text": "A handlebar bell"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p1_003_q07",
+          "number": 7,
+          "prompt": "What safety item is strictly compulsory for the early Sunday ride?"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_q08",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "To replace a punctured inner tube"
+        },
+        {
+          "key": "B",
+          "text": "To tighten his loose saddle post"
+        },
+        {
+          "key": "C",
+          "text": "To adjust his back gear cable"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p1_003_q08",
+          "number": 8,
+          "prompt": "Why does Liam want to use the club repair stand on Thursday evening?"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_q09",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "At a bakery near the marina"
+        },
+        {
+          "key": "B",
+          "text": "At a kiosk inside the botanical park"
+        },
+        {
+          "key": "C",
+          "text": "At a cafe beside the ferry wharf"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p1_003_q09",
+          "number": 9,
+          "prompt": "Where does the Sunday coastal group currently stop for coffee?"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_q10",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A free bike safety check"
+        },
+        {
+          "key": "B",
+          "text": "A discount card for a local bike shop"
+        },
+        {
+          "key": "C",
+          "text": "Free entry to the autumn charity race"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p1_003_q10",
+          "number": 10,
+          "prompt": "What benefit do new members receive after completing three group rides?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "id": "lep:p2_001",
+  "part": 2,
+  "reserved": false,
+  "title": "Saltmarsh Coastal Nature Reserve Orientation",
+  "contextEn": "A nature reserve warden welcomes a group of visitors to Saltmarsh Coastal Nature Reserve, explains recent updates and visitor guidelines, and describes the layout of the site.",
+  "difficulty": 4,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Martin Briggs",
+      "role": "Reserve Warden",
+      "voice": "bm_george",
+      "accent": "uk"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Good morning everyone, and welcome to Saltmarsh Coastal Nature Reserve. I am Martin Briggs, the head warden here. Before you head out with your binoculars, let me share a few quick updates and walk you through our reserve map.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "First, returning visitors may have noticed fresh stonework around the tidal sluice gate. Locally, people guessed we rebuilt it so fishing crews could get deeper boat access, or that officers wanted to raise salt levels in the lagoon.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "In truth, we work to keep salinity steady rather than push it up. What really happened last spring was that fierce winter surges undermined the concrete base beneath the gate, so engineers had to reinforce the whole foundation.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s1",
+      "text": "If you walk down to the shingle beach later, note today's guidelines. Until yesterday we kept a fifty-metre exclusion cordon along the waterline, which we lifted once the seal pups moved offshore.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "You also no longer need to carry litter back to the car park, since we installed covered bins by the beach gate. Today's one firm rule is to stay strictly inside the white-staked gravel strip, where you won't step on camouflaged plover nests.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s1",
+      "text": "Next, an update on our weekend guided bird walks. Older leaflets still list a nine o'clock start, so please note that from this Saturday the walks depart at seven-thirty instead, when waders feed along the mudflats.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Everything else stays unchanged. The walks remain completely free of charge, though we ask you to put your name down at reception, and complete beginners are just as welcome as seasoned spotters.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "Before we open the map, a word about volunteering. We used to require two full days every month, though nowadays even a single morning every few weeks makes a real difference.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "You will need to bring your own sturdy boots and waterproof coat, as we only lend work gloves and hand tools. Nearly everyone who signs up begins by clearing brambles and maintaining the footpaths before joining wildlife counts.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "Now, let's unfold the reserve map. We are standing at the Main Gate on the southern boundary, off Coast Road. Directly ahead, running straight north through the centre, is the Main Boardwalk.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "Let's locate the Visitor Information Cabin first. Walk north from the Main Gate along the Main Boardwalk, and it is the very first building immediately on your left, on the western side of the boardwalk before the Cross Trail.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "If you need optics, head for the Binocular Hire Hut. It sits south of the Cross Trail and further west than the Information Cabin -- in fact, walk straight north out of the Visitor Car Park and it is directly in front of you.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "For tea or a scone, you want the Marshside Cafe. Visitors sometimes wander over to the building in the far south-eastern corner near Coast Road, thinking it is the cafe, though that is actually our staff tractor barn.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "The real Marshside Cafe is much closer: back on the Main Boardwalk south of the Cross Trail, it sits immediately on your right on the eastern side, directly opposite the Visitor Information Cabin.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Now cross the Cross Trail heading north. First is our Otter Viewing Platform. Follow the Cross Trail west into Saltmarsh Meadow. You will pass a small timber shed near the north-eastern side of the meadow close to the Main Boardwalk, which is locked for reed-cutting tools.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Ignore that shed and head to the far north-western side of Saltmarsh Meadow. The Otter Viewing Platform is the structure tucked right beside the eastern bank of Reed Creek.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "For avocets and spoonbills, head to the Main Bird Hide. Follow the Main Boardwalk north past the Cross Trail almost to its northern end. Immediately on your right, on the eastern side of the boardwalk right against the western edge of the Tidal Lagoon, sits the Main Bird Hide.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Finally, school groups meet at the Outdoor Classroom. Follow the Cross Trail all the way east to its end. The Outdoor Classroom is the pavilion just north of the eastern tip of the Cross Trail, directly south of the eastern end of the Tidal Lagoon.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s1",
+      "text": "Please close wooden gates behind you so our grazing ponies stay in their paddock. Enjoy your morning exploring the marsh.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p2_001.mp3",
+    "durationSec": 285,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_001_q01",
+          "number": 1,
+          "prompt": "Why was the reserve's tidal sluice gate repaired last spring?\nA. Local fishermen requested deeper access for boats.\nB. Strong winter tides had damaged its concrete base.\nC. Environmental staff wanted to increase salt levels in the lagoon.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l03",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "fishing crews wanted deeper water / raise salt levels",
+              "explanationVi": "Người nói nhắc cả hai phương án A và C nhưng bác bỏ là tin đồn và mục tiêu thực tế là giữ độ mặn ổn định."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_001_q02",
+          "number": 2,
+          "prompt": "What rule must visitors follow on the shingle beach today?\nA. Stay at least fifty metres back from the shoreline.\nB. Keep within the marked gravel strip.\nC. Carry all litter back to the car park.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l05",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "decoy": "fifty-metre exclusion cordon",
+              "explanationVi": "Rào chắn 50 mét đã được gỡ bỏ từ hôm qua nên phương án A không còn áp dụng hôm nay."
+            },
+            {
+              "type": "negation_shift",
+              "lineId": "l05",
+              "start": 0,
+              "end": 0,
+              "decoy": "no longer need to haul empty wrappers all the way back to the car park",
+              "explanationVi": "Cụm 'no longer need to' phủ định phương án C vì đã có thùng rác ngay cổng bãi biển."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_001_q03",
+          "number": 3,
+          "prompt": "What has recently changed about the weekend guided bird walks?\nA. They now start earlier in the morning.\nB. They now charge a small entry fee.\nC. They are now restricted to experienced spotters.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l06",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "nine o'clock start",
+              "explanationVi": "Tờ rơi cũ ghi 9 giờ nhưng từ thứ Bảy này đổi sang 7 giờ 30 sáng (sớm hơn)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_001_q04",
+          "number": 4,
+          "prompt": "What does the warden say about the reserve's volunteer scheme?\nA. Volunteers must commit to at least two days per month.\nB. Waterproof coats and boots are provided free of charge.\nC. Most newcomers start by helping maintain the footpaths.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l09",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "two full days every month",
+              "explanationVi": "Yêu cầu 2 ngày/tháng là quy định cũ ('used to require'), hiện tại không còn bắt buộc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_map",
+      "type": "map_labelling",
+      "instructions": "Label the map of Saltmarsh Coastal Nature Reserve. Write the correct letter, A-H, next to questions 5-10.",
+      "previewSec": 30,
+      "map": {
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "youAreHere": {
+          "x": 400,
+          "y": 480
+        },
+        "shapes": [
+          {
+            "id": "road_coast",
+            "kind": "road",
+            "x": 40,
+            "y": 495,
+            "w": 720,
+            "h": 35,
+            "label": "Coast Road"
+          },
+          {
+            "id": "ent_main",
+            "kind": "entrance",
+            "x": 350,
+            "y": 465,
+            "w": 100,
+            "h": 30,
+            "label": "Main Gate"
+          },
+          {
+            "id": "park_car",
+            "kind": "parking",
+            "x": 110,
+            "y": 420,
+            "w": 170,
+            "h": 55,
+            "label": "Visitor Car Park"
+          },
+          {
+            "id": "path_main",
+            "kind": "path",
+            "x": 388,
+            "y": 95,
+            "w": 24,
+            "h": 370,
+            "label": "Main Boardwalk"
+          },
+          {
+            "id": "path_cross_w",
+            "kind": "path",
+            "x": 120,
+            "y": 270,
+            "w": 268,
+            "h": 20,
+            "label": "Cross Trail"
+          },
+          {
+            "id": "path_cross_e",
+            "kind": "path",
+            "x": 412,
+            "y": 270,
+            "w": 278,
+            "h": 20,
+            "label": "Cross Trail"
+          },
+          {
+            "id": "water_creek",
+            "kind": "water",
+            "x": 45,
+            "y": 55,
+            "w": 65,
+            "h": 345,
+            "label": "Reed Creek"
+          },
+          {
+            "id": "park_meadow",
+            "kind": "park",
+            "x": 125,
+            "y": 60,
+            "w": 240,
+            "h": 190,
+            "label": "Saltmarsh Meadow"
+          },
+          {
+            "id": "water_lagoon",
+            "kind": "water",
+            "x": 490,
+            "y": 55,
+            "w": 255,
+            "h": 145,
+            "label": "Tidal Lagoon"
+          },
+          {
+            "id": "bldg_a",
+            "kind": "building",
+            "x": 140,
+            "y": 90,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_b",
+            "kind": "building",
+            "x": 280,
+            "y": 85,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_c",
+            "kind": "building",
+            "x": 420,
+            "y": 95,
+            "w": 60,
+            "h": 50
+          },
+          {
+            "id": "bldg_d",
+            "kind": "building",
+            "x": 650,
+            "y": 210,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_e",
+            "kind": "building",
+            "x": 155,
+            "y": 325,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_f",
+            "kind": "building",
+            "x": 295,
+            "y": 345,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_g",
+            "kind": "building",
+            "x": 445,
+            "y": 345,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_h",
+            "kind": "building",
+            "x": 615,
+            "y": 375,
+            "w": 70,
+            "h": 50
+          }
+        ],
+        "slots": [
+          {
+            "key": "A",
+            "x": 175,
+            "y": 115
+          },
+          {
+            "key": "B",
+            "x": 315,
+            "y": 110
+          },
+          {
+            "key": "C",
+            "x": 450,
+            "y": 120
+          },
+          {
+            "key": "D",
+            "x": 685,
+            "y": 235
+          },
+          {
+            "key": "E",
+            "x": 190,
+            "y": 350
+          },
+          {
+            "key": "F",
+            "x": 330,
+            "y": 370
+          },
+          {
+            "key": "G",
+            "x": 480,
+            "y": 370
+          },
+          {
+            "key": "H",
+            "x": 650,
+            "y": 400
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p2_001_q05",
+          "number": 5,
+          "prompt": "Visitor Information Cabin",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l11",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_001_q06",
+          "number": 6,
+          "prompt": "Binocular Hire Hut",
+          "answer": {
+            "accepted": [
+              "E"
+            ],
+            "keys": [
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l12",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_001_q07",
+          "number": 7,
+          "prompt": "Marshside Cafe",
+          "answer": {
+            "accepted": [
+              "G"
+            ],
+            "keys": [
+              "G"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "decoy": "far south-eastern corner near Coast Road (H)",
+              "explanationVi": "Tòa nhà ở góc đông nam (H) chỉ là nhà kho máy kéo nhân viên; quán cà phê nằm đối diện nhà thông tin ngay bên phải lối đi chính (G)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_001_q08",
+          "number": 8,
+          "prompt": "Otter Viewing Platform",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l16",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l15",
+              "start": 0,
+              "end": 0,
+              "decoy": "small timber shed close to the Main Boardwalk (B)",
+              "explanationVi": "Lán gỗ gần lối đi chính (B) bị khóa để cất dụng cụ; đài quan sát rái cá nằm tận góc tây bắc sát bờ Reed Creek (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_001_q09",
+          "number": 9,
+          "prompt": "Main Bird Hide",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l17",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_001_q10",
+          "number": 10,
+          "prompt": "Outdoor Classroom",
+          "answer": {
+            "accepted": [
+              "D"
+            ],
+            "keys": [
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l18",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

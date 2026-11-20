@@ -1,0 +1,495 @@
+{
+  "id": "lep:p2_004",
+  "part": 2,
+  "reserved": false,
+  "title": "Westside Community Arts Centre Open Day",
+  "contextEn": "A programme coordinator welcomes visitors to the annual open day at Westside Community Arts Centre, explains recent developments at the centre, and describes five afternoon workshops.",
+  "difficulty": 6,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Rachel Morales",
+      "role": "Programme Coordinator",
+      "voice": "af_sarah",
+      "accent": "us"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Hi everyone, and thank you so much for coming out to Westside Community Arts Centre's annual open day. I am Rachel Morales, the programme coordinator here. Before the studios open their doors at eleven, I want to share a quick update on what has been happening around the building and walk you through today's workshops.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "If this is your first visit, you might be surprised to hear how the centre began twelve years ago. People sometimes assume we were set up to house the city council's sculpture collection because we borrowed three bronzes last autumn, or that we began as an after-school tutoring hub for high-school exams.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "Our youth study club actually started five years later. Back at the very beginning, a handful of neighbours simply leased this empty brick printworks to create affordable rehearsal rooms where local bands could practise without upsetting their landlords.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s1",
+      "text": "Regular visitors will know that our main theatre hall was closed for three weeks last month. Rumour had it that a roof leak had warped the wooden stage, or that our mixing desk failed its annual safety check.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Thankfully, our sound gear passed inspection with flying colours and the stage timber was completely dry. What kept the hall shut was an engineering crew installing modern quiet ventilation ducts overhead above the auditorium seating so summer performances stay comfortable.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s1",
+      "text": "Turning to today's schedule, our pottery taster sessions are always the busiest draw. In past years we ran open drop-in tables, which ended up creating long queues around the kilns, so we have changed the system this year.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "You do not have to pay any materials deposit today because our local ceramics supplier is sponsoring all the clay and firing. Instead, simply collect a free numbered pass from the front lobby desk so we can cap each session at twelve wheels.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "We are also launching a brand-new evening film club next month. Although our opening night features a restored silent comedy, the club is certainly not restricted to silent classics -- we will show documentaries and international cinema too. Best of all, members receive an online ballot each month to vote on the three films screened the following month.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "By the way, feel free to bring lidded hot drinks or cold snacks from the kiosk into the screening room; we lifted our old food ban when the new wipe-clean seats went in.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "Before I move on to the workshops, a quick appeal for our community craft library. Please hold off on donating half-empty tins of household wall paint, as fire-storage rules stop us from accepting them, and our bookshelves are already packed with older art history textbooks.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "What we genuinely need more of right now are second-hand domestic sewing machines in working order, because demand for our weekend clothes-mending circles has doubled since January.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "Now let's run through five special open-day workshops happening today, so you know what to expect before you sign up at the studio doors.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "First up is the Printmaking Studio in Room 2. Normally we lend out canvas aprons, though our entire stack is away at the commercial laundry this morning. Since relief ink stains cotton permanently, anyone joining that session will need to wear an old shirt or bring their own apron.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Second, over in the rehearsal wing, is our Jazz Improvisation Jam. Players of all abilities can join in with acoustic instruments, and the session wraps up at four o'clock with a relaxed fifteen-minute showcase where friends and family are invited in to listen.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Third is Botanical Watercolour. If you read the printed flyer, you will see it listed for Room 4 upstairs. Because the morning sunshine is so mild, however, our tutor has moved all the easels outside onto the sheltered courtyard lawn instead.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Fourth, in the digital media lab, we are running Stop-Motion Animation. While younger children have their own paper-craft corner downstairs, this animation workshop is tailored specifically for teenagers and young adults aged fourteen to twenty-two who want to build short clay-figure clips.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "Finally, don't miss Glass-Bead Jewellery in Studio 5. Rumours at the door said the morning slot was already full, which is not true at all -- there are still plenty of benches free. What makes today's class special is that it is taught by guest maker Nadia Kovacs, a visiting glass artist who travelled down from Portland just for our open day.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Volunteers in yellow badges are stationed on every landing to point you to the right studio. Grab a coffee from the courtyard cart and enjoy discovering Westside Arts Centre.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p2_004.mp3",
+    "durationSec": 295,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_004_q01",
+          "number": 1,
+          "prompt": "Why was Westside Community Arts Centre originally founded twelve years ago?\nA. To provide affordable rehearsal studios for local bands.\nB. To display the city council's sculpture collection.\nC. To offer after-school exam tutoring for teenagers.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l03",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "city council's sculpture collection / after-school tutoring hub",
+              "explanationVi": "Bộ sưu tập tượng chỉ là mượn tạm (B sai) còn câu lạc bộ học tập mở sau 5 năm (C sai); mục đích sáng lập ban đầu là làm phòng tập nhạc giá rẻ cho ban nhạc địa phương (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_004_q02",
+          "number": 2,
+          "prompt": "What caused the main theatre hall to close for three weeks last month?\nA. A roof leak damaged the wooden stage.\nB. New ventilation ducts were fitted above the seats.\nC. The sound desk failed its annual safety check.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l05",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l05",
+              "start": 0,
+              "end": 0,
+              "decoy": "sound gear passed inspection / stage timber was completely dry",
+              "explanationVi": "Người nói bác bỏ cả hai tin đồn rò mái (A) và hỏng bàn âm thanh (C); lý do thật là lắp hệ thống ống thông gió mới phía trên hàng ghế (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_004_q03",
+          "number": 3,
+          "prompt": "How are places organised for today's pottery taster sessions?\nA. Visitors can drop in at any time without booking.\nB. Guests collect free numbered passes from the lobby desk.\nC. Participants pay a small deposit for clay and firing.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "ran open drop-in tables in past years",
+              "explanationVi": "Kiểu vào tự do không cần đăng ký (A) chỉ là cách làm cũ những năm trước; năm nay phát vé số miễn phí tại quầy sảnh (B), còn tiền cọc (C) được miễn nhờ nhà tài trợ."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_004_q04",
+          "number": 4,
+          "prompt": "What does Rachel say about the new evening film club?\nA. Members vote online to select upcoming films.\nB. It screens silent classic films exclusively.\nC. Food and drinks are prohibited inside the screening room.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l08",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "certainly not restricted to silent classics",
+              "explanationVi": "Đêm mở màn chiếu phim câm nhưng câu lạc bộ không giới hạn ở thể loại này (B sai), còn lệnh cấm đồ ăn cũng đã bỏ (C sai); thành viên sẽ bình chọn phim qua phiếu trực tuyến (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_004_q05",
+          "number": 5,
+          "prompt": "What item does Rachel ask local residents to donate to the craft library?\nA. Partially used tins of household wall paint.\nB. Second-hand sewing machines that still work.\nC. Older art history reference textbooks.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l11",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l10",
+              "start": 0,
+              "end": 0,
+              "decoy": "hold off on donating wall paint / bookshelves are already packed",
+              "explanationVi": "Sơn tường (A) bị cấm nhận vì quy định phòng cháy, sách lịch sử nghệ thuật (C) đã quá chật kệ; thứ trung tâm cần là máy may cũ còn hoạt động (B)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_matching",
+      "type": "matching",
+      "instructions": "What does the coordinator say about each open-day workshop? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 6-10.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Has been relocated outdoors onto the courtyard lawn"
+        },
+        {
+          "key": "B",
+          "text": "Is fully booked for the morning session"
+        },
+        {
+          "key": "C",
+          "text": "Requires participants to bring an old shirt or apron"
+        },
+        {
+          "key": "D",
+          "text": "Is taught by a visiting artist from another city"
+        },
+        {
+          "key": "E",
+          "text": "Ends with a short informal performance for families"
+        },
+        {
+          "key": "F",
+          "text": "Is aimed specifically at teenagers and young adults"
+        },
+        {
+          "key": "G",
+          "text": "Offers a discounted term fee for centre members"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_004_q06",
+          "number": 6,
+          "prompt": "Printmaking Studio",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l13",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "decoy": "Normally we lend out canvas aprons, though our entire stack is away at the laundry",
+              "explanationVi": "Bình thường trung tâm cho mượn tạp dề nhưng sáng nay đang đi giặt nên người tham gia phải tự mặc áo cũ hoặc mang tạp dề (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_004_q07",
+          "number": 7,
+          "prompt": "Jazz Improvisation Jam",
+          "answer": {
+            "accepted": [
+              "E"
+            ],
+            "keys": [
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l14",
+              "start": 0,
+              "end": 0,
+              "decoy": "wraps up with a relaxed fifteen-minute showcase where friends and family are invited",
+              "explanationVi": "'Relaxed fifteen-minute showcase' diễn đạt đồng nghĩa với 'short informal performance for families' (E)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_004_q08",
+          "number": 8,
+          "prompt": "Botanical Watercolour",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l15",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l15",
+              "start": 0,
+              "end": 0,
+              "decoy": "listed for Room 4 upstairs",
+              "explanationVi": "Tờ rơi in ở phòng 4 trên lầu nhưng do trời nắng đẹp nên đã chuyển toàn bộ ra bãi cỏ sân trong (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_004_q09",
+          "number": 9,
+          "prompt": "Stop-Motion Animation",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l16",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_004_q10",
+          "number": 10,
+          "prompt": "Glass-Bead Jewellery",
+          "answer": {
+            "accepted": [
+              "D"
+            ],
+            "keys": [
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l17",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l17",
+              "start": 0,
+              "end": 0,
+              "decoy": "morning slot was already full, which is not true at all (B)",
+              "explanationVi": "Tin đồn hết chỗ buổi sáng (B) bị phủ nhận trực tiếp; điểm đặc biệt là lớp do nghệ sĩ khách mời từ thành phố khác (Portland) đứng lớp (D)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

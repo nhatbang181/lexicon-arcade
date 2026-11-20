@@ -1,0 +1,228 @@
+{
+  "id": "lep:p2_res_002",
+  "part": 2,
+  "reserved": true,
+  "title": "Portside Ferry Terminal Passenger Briefing",
+  "contextEn": "A terminal operations officer briefs ferry passengers at Portside Terminal about boarding changes, onboard services, waiting-lounge facilities, and four island destinations.",
+  "difficulty": 6,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Derek Halvorsen",
+      "role": "Terminal Operations Officer",
+      "accent": "us"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Good morning, travellers, and welcome to Portside Ferry Terminal. My name is Derek Halvorsen, and I am the operations officer on duty today. Before boarding begins for our mid-morning crossings, I have a few important updates regarding departure piers, onboard facilities, our waiting lounge, and the four island stops we serve."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "First, please pay close attention if you are booked on the ten-fifteen express catamaran to Heron Island. That sailing usually departs from Pier 2, but today it has been reassigned to Pier 4. Although a cruise liner docked at Pier 2 overnight, it sailed out at dawn, and harbour waters inside the breakwater are completely flat and calm."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "The reason for the pier switch is that marine engineers are load-testing our newly installed hydraulic passenger gangway at Pier 2 all morning, so Pier 4 will handle express departures until noon."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s1",
+      "text": "Next, a quick reminder for cyclists. Ever since April, standard pushbikes travel free of charge with no extra reservation voucher needed at Gate 1, and you wheel your bike straight onto the lower vehicle deck rather than leaving it in the outdoor racks by the ticket hall. However, you must detach any side pannier bags or loose baskets and carry them upstairs into the passenger cabin, because the deck racks sway gently out on the bay."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Once aboard, you will notice some pleasant changes in our ferry cafeteria this season. We do not stay open overnight, of course, and although management considered going completely cashless, we decided to keep one cash till open for travellers without cards. The big upgrade is our menu: we partnered with Heron Island growers and bakers, so the galley now serves hot chowders and savoury pies made from fresh island farm produce."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s1",
+      "text": "In case afternoon wind picks up and forces us to cancel a return sailing, here is how refunds work. Please do not line up at the Harbour Master's booth on the pier, as they manage vessel traffic rather than passenger fares, and mainland bus depots cannot process ferry tickets. Instead, simply enter your six-digit booking reference on the Portside Terminal web portal within seven days, and your fare will be refunded automatically."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "While you wait for boarding calls, let me clarify which services are currently operating inside the upper waiting lounge, since a few signs are still being updated. First, our coin-operated luggage lockers near Gate 3 were removed last month during security renovations, and the currency exchange bureau beside reception closed permanently last winter."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "Our real-time sea-weather display screens above the gates are also temporarily blank today while technicians install a software patch. On the bright side, complimentary high-speed public Wi-Fi is up and running throughout the waiting lounge with no password needed."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Families travelling with infants will also be glad to know that our newly refurbished quiet nursing and baby-changing room is open right beside the first-aid post at the back of the lounge."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "Finally, if you are still deciding which island to explore today, here is a key practical note about each of our four destinations."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "Our busiest stop is Heron Island. It is strictly for foot passengers and bicycles, and you do not have to hike the steep headland road unless you want to: a direct electric shuttle bus meets every arriving ferry right at the jetty and runs straight up to the historic lighthouse."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "Second is Cedar Point, across the northern channel. Unlike our other crossings, Cedar Point is served by our roll-on car ferry, meaning it is the only destination where passengers may bring private motor vehicles and campervans aboard."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "Third is Puffin Rock, our wildlife sanctuary islet. There is no landing fee charged when you step ashore, and the coastal path stays open all year, but there are no waste bins anywhere on the rock, so day-trippers are strictly required to pack out all of their own rubbish back onto the ferry."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Lastly, if you are heading to quiet Driftwood Bay, keep a very close eye on your watch. While four morning boats run out there, after twelve noon there is only a single return sailing back to Portside at four-fifteen, and anyone who misses it has to arrange a private water taxi."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Boarding gates close strictly ten minutes before departure, so please listen for the pier announcements. We wish you a smooth crossing and a memorable day out on the bay."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_res_002_q01",
+          "number": 1,
+          "prompt": "Why has the 10:15 express catamaran to Heron Island been moved to Pier 4 today?\nA. A visiting cruise liner is occupying Pier 2.\nB. Engineers are testing a new hydraulic gangway at Pier 2.\nC. High swell makes Pier 2 unsafe for fast vessels."
+        },
+        {
+          "qid": "lep_p2_res_002_q02",
+          "number": 2,
+          "prompt": "What must passengers travelling with bicycles do before boarding?\nA. Detach pannier bags and carry them into the passenger cabin.\nB. Buy a separate bicycle voucher at Gate 1.\nC. Lock their bicycles in the outdoor racks near the ticket hall."
+        },
+        {
+          "qid": "lep_p2_res_002_q03",
+          "number": 3,
+          "prompt": "What is new about the onboard ferry cafeteria this season?\nA. It operates around the clock for overnight travellers.\nB. It serves hot meals made with local island farm produce.\nC. It has stopped accepting cash payments at the counter."
+        },
+        {
+          "qid": "lep_p2_res_002_q04",
+          "number": 4,
+          "prompt": "How should passengers claim a refund if bad weather cancels a return sailing?\nA. Queue at the Harbour Master's booth on the pier.\nB. Show their boarding barcode at a mainland bus depot.\nC. Enter their booking reference on the terminal web portal within seven days."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO facilities are currently available inside the Portside Ferry Terminal waiting lounge?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Free high-speed public Wi-Fi"
+        },
+        {
+          "key": "B",
+          "text": "Coin-operated luggage lockers near Gate 3"
+        },
+        {
+          "key": "C",
+          "text": "A quiet nursing and baby-changing room"
+        },
+        {
+          "key": "D",
+          "text": "A currency exchange bureau beside reception"
+        },
+        {
+          "key": "E",
+          "text": "Real-time sea-weather display screens"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_res_002_q05",
+          "number": 5,
+          "prompt": "Available lounge facility 1 (Choose TWO letters, A-E)"
+        },
+        {
+          "qid": "lep_p2_res_002_q06",
+          "number": 6,
+          "prompt": "Available lounge facility 2 (Choose TWO letters, A-E)"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_matching",
+      "type": "matching",
+      "instructions": "What does the officer say about each island destination served from Portside Terminal? Choose FOUR answers from the box and write the correct letter, A-F, next to questions 7-10.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Has a direct electric shuttle bus from the jetty to the lighthouse"
+        },
+        {
+          "key": "B",
+          "text": "Requires day-trippers to take all their rubbish back onto the ferry"
+        },
+        {
+          "key": "C",
+          "text": "Allows private motor vehicles on the ferry crossing"
+        },
+        {
+          "key": "D",
+          "text": "Closes its coastal trail during seabird breeding months"
+        },
+        {
+          "key": "E",
+          "text": "Has only one return sailing after midday"
+        },
+        {
+          "key": "F",
+          "text": "Charges a small conservation landing fee on arrival"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_res_002_q07",
+          "number": 7,
+          "prompt": "Heron Island"
+        },
+        {
+          "qid": "lep_p2_res_002_q08",
+          "number": 8,
+          "prompt": "Cedar Point"
+        },
+        {
+          "qid": "lep_p2_res_002_q09",
+          "number": 9,
+          "prompt": "Puffin Rock"
+        },
+        {
+          "qid": "lep_p2_res_002_q10",
+          "number": 10,
+          "prompt": "Driftwood Bay"
+        }
+      ]
+    }
+  ]
+}

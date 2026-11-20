@@ -1,0 +1,596 @@
+{
+  "id": "lep:p3_006",
+  "part": 3,
+  "reserved": false,
+  "title": "Community Composting Trial Evaluation",
+  "contextEn": "Two urban planning students, Noah and Gemma, evaluate the outcomes of a six-month community composting trial across four residential apartment courtyards.",
+  "difficulty": 8,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Noah",
+      "role": "Urban planning student",
+      "voice": "edge:en-CA-LiamNeural",
+      "accent": "ca"
+    },
+    {
+      "id": "s2",
+      "name": "Gemma",
+      "role": "Urban planning student",
+      "voice": "bf_isabella",
+      "accent": "uk"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Hey Gemma, I just finished plotting the six-month tonnage logs from our four apartment composting hubs. Overall diversion rates beat expectations, though there was a steep drop in month two.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s2",
+      "text": "Yes, that dip worried the housing association. At first they wondered whether residents had failed to pick up their free kitchen caddies, or got confused by a change in council bin collection days.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "Actually, ninety percent of flats picked up caddies in week one, and our bays operate on voluntary drop-off rather than fixed collection days.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s2",
+      "text": "What drove residents away in month two was that June heatwave: without enough dry bedding, wet food scraps turned anaerobic and the bays gave off sharp sour odours across the walkways.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Right, which is why our volunteer workshops turned things around in month three. Looking back, what part of those sessions actually moved the needle?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s2",
+      "text": "Hardly anyone read the laminated posters listing forbidden foods, and only the four site captains ever bothered using the long probe thermometers.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Agreed. Hands-on demonstrations showing tenants how to layer wet kitchen peelings with dry shredded paper fixed the smell almost overnight.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s2",
+      "text": "Now, for phase two, one councillor asked why we do not buy an electric in-vessel composter instead of wooden timber bays.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "To be fair, modern in-vessel drums handle citrus peels and coffee grounds effortlessly, and lab tests show their finished compost is every bit as rich as timber-bay soil.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s2",
+      "text": "True, quality is not the drawback. Once we priced ongoing electricity bills and annual motor servicing, the running costs blew well past the entire neighbourhood sustainability grant.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "That settles the hardware debate. Before we look at contamination, did anything catch you off guard in our end-of-trial resident survey?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s2",
+      "text": "Seeing retired tenants log more volunteer hours than university students was fairly predictable, and contrary to our hunch, households with young children actually had the cleanest buckets.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s2",
+      "text": "What genuinely surprised me was motivation: far more respondents valued harvesting free herbs and tomatoes grown in the shared compost than saving money on municipal waste fees.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "That is a brilliant finding for the council report. Let us review our sorting audits next, specifically which contaminants stayed stubbornly high right through month six.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s2",
+      "text": "Well, cooked meat and dairy vanished almost completely after our week-three reminder, caretakers intercepted wax-coated produce cartons before they ever reached the bays, and we never saw treated garden timber offcuts in apartment blocks.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "The biggest repeat offender was takeaway coffee cups stamped compostable. Residents naturally tossed them in, not realising bioplastic linings only break down in high-heat industrial plants, never in backyard bays.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s2",
+      "text": "Yes, those half-intact cups clogged our final sieve every single time. And the other item we never managed to eliminate was tiny adhesive fruit stickers.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Right, those glossy plastic labels peel off banana skins and apples and slip straight through the screening mesh into the finished soil.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s2",
+      "text": "So bioplastic takeaway cups and adhesive fruit stickers go at the top of our education brief. Finally, let us confirm the single physical upgrade we are recommending for each of the four courtyards. First, Maple Court.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s1",
+      "text": "Maple Court's bays already sit well away from ground-floor windows, so smell complaints were zero. However, field mice burrowed straight up through the soil beneath the open timber slats.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s2",
+      "text": "Definitely line the base of every Maple Court bin with fine steel mesh to block rodents. Next is Cedar Terrace. Their security floodlights are bright enough for evening drop-offs.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s1",
+      "text": "True, lighting is fine there. The snag at Cedar Terrace is language diversity: four primary languages are spoken in that block, so English-only instructions failed. Mounting multilingual picture signs right above each hatch will clear up confusion.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s2",
+      "text": "Great. Third is Birchwood Mews. They already swapped heavy timber lids for lightweight covers during week four.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s1",
+      "text": "Right, lids are sorted. Their headache was autumn rain soaking the open sacks of sawdust and dry leaves, leaving volunteers with soggy bedding. Installing a lockable weatherproof chest for dry carbon material solves that.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "s2",
+      "text": "Last one is Rowan Gardens. Because their bays stand on poured concrete slabs, burrowing rodents were never an issue.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "s1",
+      "text": "No pests at all, yet sitting two metres outside downstairs bedrooms meant warm steam drifted straight indoors on humid evenings. We should relocate those bays to the far bike-shed corner away from ground-floor windows.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "s2",
+      "text": "Clear, practical, and tailored to every courtyard. Let us compile the recommendations table before Monday's meeting.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p3_006.mp3",
+    "durationSec": 330,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_006_q01",
+          "number": 1,
+          "prompt": "Why did resident participation drop sharply during month two of the trial?\nA. Most tenants neglected to collect their kitchen caddies.\nB. Unpleasant smells developed during a spell of hot weather.\nC. Changes in council collection schedules caused confusion.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "free kitchen caddies / council bin collection days",
+              "explanationVi": "Hiệp hội nhà ở nghi do cư dân quên lấy thùng bếp (A) hoặc nhầm lịch thu gom (C), nhưng Noah phủ nhận cả hai và Gemma chỉ ra nguyên nhân thật là mùi chua bốc lên trong đợt nắng nóng tháng sáu (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_006_q02",
+          "number": 2,
+          "prompt": "Which part of the volunteer training workshops proved most effective?\nA. Practical demonstrations on mixing wet scraps with shredded paper.\nB. Laminated wall charts listing prohibited waste items.\nC. Training residents to monitor heat with probe thermometers.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "laminated posters / probe thermometers",
+              "explanationVi": "Hầu như không ai đọc áp phích ép nhựa (loại B) và chỉ đội trưởng dùng nhiệt kế que (loại C); phần thực hành trộn rác ướt với giấy vụn khô mới thực sự hiệu quả (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_006_q03",
+          "number": 3,
+          "prompt": "Why do the students decide against purchasing an electric in-vessel composter?\nA. It cannot break down citrus peels or coffee grounds.\nB. It yields lower-grade soil than simple wooden bays.\nC. Its ongoing energy and maintenance expenses exceed the grant.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l09",
+              "start": 0,
+              "end": 0,
+              "decoy": "citrus peels and coffee grounds / every bit as rich",
+              "explanationVi": "Máy xử lý tốt vỏ cam bã cà phê (loại A) và chất lượng phân tương đương hộc gỗ (loại B); lý do loại là chi phí điện và bảo dưỡng mô-tơ vượt xa ngân sách tài trợ (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_006_q04",
+          "number": 4,
+          "prompt": "What finding from the end-of-trial resident survey surprised Gemma?\nA. Retired residents contributed more hours than students.\nB. Shared garden produce motivated residents more than fee discounts.\nC. Families with young children produced the highest contamination.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l13",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l12",
+              "start": 0,
+              "end": 0,
+              "decoy": "retired tenants / households with young children",
+              "explanationVi": "Người nghỉ hưu góp nhiều giờ là điều dễ đoán (loại A) và gia đình có trẻ nhỏ thực ra phân loại sạch nhất (loại C); điều bất ngờ là cư dân coi trọng rau thơm cà chua chung hơn giảm phí rác (B)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO contaminants remained a persistent problem in the compost bays throughout the trial?",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Compostable-labelled takeaway cups"
+        },
+        {
+          "key": "B",
+          "text": "Cooked meat and dairy leftovers"
+        },
+        {
+          "key": "C",
+          "text": "Wax-coated cardboard produce boxes"
+        },
+        {
+          "key": "D",
+          "text": "Adhesive fruit stickers"
+        },
+        {
+          "key": "E",
+          "text": "Treated garden timber offcuts"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_006_q05",
+          "number": 5,
+          "prompt": "First persistent contaminant found throughout the trial (choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "A",
+              "D"
+            ],
+            "keys": [
+              "A",
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l16",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l15",
+              "start": 0,
+              "end": 0,
+              "decoy": "cooked meat and dairy / wax-coated produce cartons / treated garden timber",
+              "explanationVi": "Thịt sữa chín (B) biến mất sau tuần ba, thùng sáp (C) bị chặn từ đầu và gỗ xử lý (E) không xuất hiện; chất bẩn dai dẳng đầu tiên là ly mang đi dán nhãn phân hủy sinh học (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_006_q06",
+          "number": 6,
+          "prompt": "Second persistent contaminant found throughout the trial (choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "A",
+              "D"
+            ],
+            "keys": [
+              "A",
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l17",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    },
+    {
+      "groupId": "g3_matching",
+      "type": "matching",
+      "instructions": "Which physical upgrade do Noah and Gemma recommend for each courtyard? Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 7-10.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Relocate bays away from ground-floor windows"
+        },
+        {
+          "key": "B",
+          "text": "Fit fine steel mesh underneath the bins"
+        },
+        {
+          "key": "C",
+          "text": "Add a lockable chest for dry carbon material"
+        },
+        {
+          "key": "D",
+          "text": "Install brighter motion-activated path lighting"
+        },
+        {
+          "key": "E",
+          "text": "Replace heavy wooden lids with lighter covers"
+        },
+        {
+          "key": "F",
+          "text": "Post multilingual picture signs above each hatch"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_006_q07",
+          "number": 7,
+          "prompt": "Maple Court",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l21",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l20",
+              "start": 0,
+              "end": 0,
+              "decoy": "away from ground-floor windows",
+              "explanationVi": "Maple Court đã đặt xa cửa sổ tầng trệt (loại A); vấn đề chuột đào từ dưới đất cần giải quyết bằng lưới thép mịn lót đáy (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_006_q08",
+          "number": 8,
+          "prompt": "Cedar Terrace",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l22",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "decoy": "security floodlights are bright enough",
+              "explanationVi": "Ánh sáng lối đi (D) đã đủ sáng; nơi này có bốn ngôn ngữ chính nên cần gắn bảng hình ảnh đa ngôn ngữ phía trên nắp hộc (F)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_006_q09",
+          "number": 9,
+          "prompt": "Birchwood Mews",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l24",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l23",
+              "start": 0,
+              "end": 0,
+              "decoy": "swapped heavy timber lids for lightweight covers",
+              "explanationVi": "Nắp nhẹ (E) đã được thay xong từ tuần bốn; họ cần rương có khóa chống mưa để cất mùn cưa và lá khô (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_006_q10",
+          "number": 10,
+          "prompt": "Rowan Gardens",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l26",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l25",
+              "start": 0,
+              "end": 0,
+              "decoy": "burrowing rodents were never an issue",
+              "explanationVi": "Do đặt trên nền bê tông nên không lo chuột (loại B); hơi ấm bay vào phòng ngủ tầng trệt buộc phải dời hộc ra xa cửa sổ tầng trệt (A)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "edge-tts (personal use)",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

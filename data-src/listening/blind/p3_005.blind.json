@@ -1,0 +1,275 @@
+{
+  "id": "lep:p3_005",
+  "part": 3,
+  "reserved": false,
+  "title": "Historic Timber Bridge Preservation Project",
+  "contextEn": "Two civil engineering students, Claire and Ryan, meet their supervisor Professor Helen Marsh to review their conservation proposal for the nineteenth-century Millbrook Covered Bridge.",
+  "difficulty": 8,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Claire",
+      "role": "Civil engineering student",
+      "accent": "uk"
+    },
+    {
+      "id": "s2",
+      "name": "Ryan",
+      "role": "Civil engineering student",
+      "accent": "us"
+    },
+    {
+      "id": "s3",
+      "name": "Professor Marsh",
+      "role": "Civil engineering supervisor",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s3",
+      "text": "Good afternoon, Claire and Ryan. I have gone through your structural assessment of the Millbrook Covered Bridge. Before we check your repair workflow, let us verify the root cause of the decay in the lower oak trusses."
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s2",
+      "text": "Before visiting the site, we assumed wood-boring beetles had spread upward from the floorboards, or that winter frost was splitting the outer timbers."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "Actually, the county replaced those floorboards ten years ago so there is zero beetle activity, and frost cracking is superficial. The severe rot sits strictly in hidden pockets where rainwater leaked around corroded iron bolts and stayed trapped inside the oak."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s3",
+      "text": "A textbook moisture trap. Ryan, in your early cost sheet you suggested slipping concealed steel girders beside the weakened oak beams. Why did we rule that out?"
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s2",
+      "text": "Steel would actually come in well under the county budget, and thermal expansion is easy enough to design around."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s3",
+      "text": "Indeed, cost was never the obstacle. The decisive issue is statutory protection: inserting load-bearing steel frames violates authenticity guidelines and would strip the bridge of its protected architectural listing."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Which brings us to our terrestrial laser scan. Everyone already knew from ground photos that the roof had lost cedar shingles, and we worried the north stone abutment was sinking into the clay bank."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s2",
+      "text": "Fortunately both stone abutments proved rock solid. What genuinely surprised us in the three-dimensional point cloud was discovering that the central span had twisted slightly sideways over the last century."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s3",
+      "text": "Good thing you scanned it before ordering cut lumber. Now, what must happen immediately before contractors attempt to lift the bridge deck?"
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "Should we close the walkway to pedestrians right away, or pour concrete collars around the river piers first?"
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s3",
+      "text": "The council already closed pedestrian access last autumn, and pouring river concrete is unnecessary unless the piers show movement. Your immediate priority is to test load-bearing stress on a scaled laboratory joint so we know our spliced oak can handle jacking forces."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s2",
+      "text": "Right, laboratory joint testing first. Now let us confirm the six steps on our restoration flow-chart so every term is exact. For step one, site preparation, I initially drew floating barges beneath the span."
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s3",
+      "text": "The spring river current is far too swift for barges. Instead, contractors will erect steel cribbing on the banks and install temporary hydraulic jacks beneath the main deck to carry the load safely."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Got it, hydraulic jacks. Moving to step two, surface cleaning. To strip away flaking paint and damp moss, I wondered about sandblasting or mild chemical solvents."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s3",
+      "text": "Avoid both: sandblasting gouges historic wood grain, and solvents cannot drip into a trout stream. Blasting the timber gently with dry ice lifts grime cleanly and evaporates without leaving any residue."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s2",
+      "text": "Nice solution. For step three, mapping hidden internal rot, we could bore wide core plugs at each intersection."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "Wait, wide cores weaken already stressed joints. Remember the conservation manual recommends using a needle-thin resistance drill to measure decay depth without causing structural harm."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s3",
+      "text": "Spot on, Claire. Once damaged wood is excised, step four is splicing in new seasoned oak. Ryan, how will those angled scarf joints be pinned?"
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s2",
+      "text": "With galvanised steel bolts — oh, wait, sorry! Metal fasteners created the condensation pockets in the first place. We should pin the spliced oak exclusively with hand-turned wooden pegs for authentic strength."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s3",
+      "text": "Exactly right. That brings us to step five, moisture protection on the exposed lower chords. Claire, what coating did you specify?"
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s1",
+      "text": "I originally listed clear polyurethane varnish, but synthetic film traps vapour inside old timber. So I switched our specification to natural linseed oil, which repels rain while letting the oak breathe."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s3",
+      "text": "Wise revision. Finally, step six: post-repair monitoring over the first two winters. Ryan suggested monthly visual checks by a surveyor, yet seasonal humidity shifts happen overnight."
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s2",
+      "text": "True, sporadic visits miss peak loads. We will attach compact wireless strain gauges along the central chords so our lab can log continuous structural movement remotely."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s3",
+      "text": "That completes a rigorous conservation plan. Finalise your flow-chart and bring the joint drawings to Tuesday's workshop."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_005_q01",
+          "number": 1,
+          "prompt": "What caused the most severe decay inside the bridge's lower oak trusses?\nA. Deep winter frost splitting the outer beams.\nB. Rainwater trapped around corroded iron fasteners.\nC. Wood-boring beetles spreading from untreated floorboards."
+        },
+        {
+          "qid": "lep_p3_005_q02",
+          "number": 2,
+          "prompt": "Why do the speakers rule out reinforcing the trusses with concealed steel girders?\nA. Adding steel frames would cancel the bridge's heritage listing.\nB. Steel girders would exceed the county's preservation budget.\nC. Metal girders cannot cope with summer thermal expansion."
+        },
+        {
+          "qid": "lep_p3_005_q03",
+          "number": 3,
+          "prompt": "What unexpected finding emerged from the three-dimensional laser scan?\nA. The north stone abutment was gradually sinking.\nB. Missing cedar roof shingles had exposed the rafters.\nC. The middle section of the bridge had twisted laterally."
+        },
+        {
+          "qid": "lep_p3_005_q04",
+          "number": 4,
+          "prompt": "What does Professor Marsh insist must happen before lifting the bridge deck?\nA. Carry out stress tests on a scaled joint in the laboratory.\nB. Cast new concrete collars around the submerged river piers.\nC. Close the covered walkway to pedestrian traffic immediately."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_flowchart",
+      "type": "flowchart_completion",
+      "instructions": "Complete the flow-chart below. Write NO MORE THAN TWO WORDS for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "template": {
+        "title": "TIMBER TRUSS RESTORATION WORKFLOW",
+        "rows": [
+          {
+            "label": "Step 1 - Site preparation",
+            "value": "Install temporary",
+            "blankQid": "lep_p3_005_q05",
+            "suffix": "beneath the main deck to carry weight."
+          },
+          {
+            "label": "Step 2 - Surface cleaning",
+            "value": "Remove flaking paint and moss with",
+            "blankQid": "lep_p3_005_q06",
+            "suffix": "instead of chemical solvents."
+          },
+          {
+            "label": "Step 3 - Decay mapping",
+            "value": "Measure internal rot depth using a",
+            "blankQid": "lep_p3_005_q07",
+            "suffix": "without harming joints."
+          },
+          {
+            "label": "Step 4 - Timber splicing",
+            "value": "Fasten new seasoned oak sections with",
+            "blankQid": "lep_p3_005_q08",
+            "suffix": "for authentic strength."
+          },
+          {
+            "label": "Step 5 - Moisture protection",
+            "value": "Coat exposed lower chords with natural",
+            "blankQid": "lep_p3_005_q09",
+            "suffix": "to repel rainwater."
+          },
+          {
+            "label": "Step 6 - Post-repair monitoring",
+            "value": "Attach wireless",
+            "blankQid": "lep_p3_005_q10",
+            "suffix": "to record seasonal movement."
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p3_005_q05",
+          "number": 5,
+          "prompt": "Step 1: Install temporary [___] beneath the main deck to carry weight."
+        },
+        {
+          "qid": "lep_p3_005_q06",
+          "number": 6,
+          "prompt": "Step 2: Remove flaking paint and moss with [___] instead of chemical solvents."
+        },
+        {
+          "qid": "lep_p3_005_q07",
+          "number": 7,
+          "prompt": "Step 3: Measure internal rot depth using a [___] without harming joints."
+        },
+        {
+          "qid": "lep_p3_005_q08",
+          "number": 8,
+          "prompt": "Step 4: Fasten new seasoned oak sections with [___] for authentic strength."
+        },
+        {
+          "qid": "lep_p3_005_q09",
+          "number": 9,
+          "prompt": "Step 5: Coat exposed lower chords with natural [___] to repel rainwater."
+        },
+        {
+          "qid": "lep_p3_005_q10",
+          "number": 10,
+          "prompt": "Step 6: Attach wireless [___] to record seasonal movement."
+        }
+      ]
+    }
+  ]
+}

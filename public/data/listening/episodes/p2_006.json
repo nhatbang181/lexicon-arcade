@@ -1,0 +1,599 @@
+{
+  "id": "lep:p2_006",
+  "part": 2,
+  "reserved": false,
+  "title": "Larkspur Sports Complex Renovation Briefing",
+  "contextEn": "The operations director of Larkspur Sports Complex briefs members on planned upgrades to existing facilities and explains the new layout of the renovated building.",
+  "difficulty": 6,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Gareth Owen",
+      "role": "Complex Operations Director",
+      "voice": "bm_daniel",
+      "accent": "uk"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Good evening, everyone, and thank you for joining our members' briefing on the Larkspur Sports Complex renovation. I am Gareth Owen, the operations director. Tonight I will outline the improvements scheduled for four of our existing facilities, and then walk you through the updated floorplan so you know where every relocated room will sit.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "Let's begin with the Main Swimming Pool, which always draws the most questions. Several members worried it would stay shut until late autumn for roof repairs, though our roof was actually sealed last year and is completely watertight. Instead, contractors are hanging modern acoustic panels across the vaulted ceiling to absorb the harsh echo during busy school lessons.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "Next are the Squash Courts. Early drafts proposed splitting one court into smaller meeting rooms, and some people feared our advance booking window might shrink to three days. Neither is happening: demand for squash has climbed sharply, so we are keeping all four courts intact and installing automated card access so their opening hours extend late into the evening until eleven o'clock.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s1",
+      "text": "Third is our Free-Weights Room. Lifters have pointed out that the old hardwood floorboards splinter whenever heavy dumbbells are set down. Over the renovation fortnight, we are ripping out those timber planks and laying thick, shock-absorbing rubber flooring that cushions impact and stops vibration travelling to the corridor below.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Fourth is the Old Dance Studio. Because few classes ever needed the entire forty-metre span, we are installing a soundproof folding partition down the centre to divide it into two smaller activity rooms, allowing pilates and mobility sessions to run at the exact same time without disturbing one another.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s1",
+      "text": "Now, please turn over your leaflet to the updated complex floorplan. Notice that our main access is the East Entrance along Station Avenue on the eastern side of the map. Walking straight west from the East Entrance takes you down the wide Central Concourse towards the Main Swimming Pool on the western side.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "First, let's locate the New Reception and Juice Bar. Step west through the East Entrance onto the Central Concourse, and it is the very first room immediately on your left, on the southern side of the concourse and directly north of the Members' Car Park.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "Next is our expanded Spin Cycling Studio. As you walk west from the East Entrance, you will pass a bright room immediately on your right, north of the Central Concourse right by the entrance. Do not mark that as the spin studio -- that room has been assigned as our new staff locker room.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Instead, carry on west to the central junction and turn right, heading north up the North Wing corridor. The Spin Cycling Studio sits near the northern end of the North Wing, on the eastern side of the corridor.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "Now let's head in the opposite direction down the South Wing corridor to find the Physiotherapy Clinic. You will notice a medium-sized room on the eastern side of the South Wing just south of the Central Concourse, which houses our boiler and water filtration plant.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "Avoid the plant room and look straight across to the western side of the South Wing corridor. The quiet Physiotherapy Clinic is located there, south of the Central Concourse and well east of the Main Swimming Pool.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "Moving back north of the Central Concourse, our brand-new Climbing Wall Hall occupies the tall bay immediately on the western side of the North Wing corridor, sitting directly opposite the Spin Cycling Studio and well east of the far north-western corner.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "For recovery sessions after training, we have built a warm Hydrotherapy Suite connected to the pool's filtration lines. You will find it tucked into the far north-western corner of the complex, directly north of the Main Swimming Pool.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Finally, clubs looking for match nets, lane ropes, and spare mats will use the enlarged Sports Equipment Store. That sits in the far south-western corner of the building, directly south of the Main Swimming Pool.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Throughout the works, member dues will be frozen at current rates, and temporary signage will guide you around any closed corridors. Thank you for your patience, and I will now open the floor to questions.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p2_006.mp3",
+    "durationSec": 300,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_matching",
+      "type": "matching",
+      "instructions": "What change is planned for each existing facility at Larkspur Sports Complex? Choose FOUR answers from the box and write the correct letter, A-F, next to questions 1-4.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "It will stay closed until late autumn for roof repairs"
+        },
+        {
+          "key": "B",
+          "text": "Its opening hours will be extended into the late evening"
+        },
+        {
+          "key": "C",
+          "text": "It will be divided into two smaller activity rooms"
+        },
+        {
+          "key": "D",
+          "text": "Its flooring will be replaced with shock-absorbing rubber"
+        },
+        {
+          "key": "E",
+          "text": "Its advance booking window will shrink to three days"
+        },
+        {
+          "key": "F",
+          "text": "It will be fitted with acoustic panels to reduce echo"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_006_q01",
+          "number": 1,
+          "prompt": "Main Swimming Pool",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l02",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "stay shut until late autumn for roof repairs (A)",
+              "explanationVi": "Mái bể bơi đã được chống thấm từ năm ngoái nên không đóng cửa sửa mái (A sai); thay vào đó sẽ lắp tấm tiêu âm giảm tiếng vang trên trần (F)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_006_q02",
+          "number": 2,
+          "prompt": "Squash Courts",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l03",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l03",
+              "start": 0,
+              "end": 0,
+              "decoy": "splitting one court / advance booking window might shrink to three days (E)",
+              "explanationVi": "Cả ý tưởng chia nhỏ sân lẫn rút ngắn lịch đặt trước xuống 3 ngày (E) đều bị bác bỏ; thay vào đó sân được kéo dài giờ mở cửa đến 11 giờ đêm (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_006_q03",
+          "number": 3,
+          "prompt": "Free-Weights Room",
+          "answer": {
+            "accepted": [
+              "D"
+            ],
+            "keys": [
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "decoy": "ripping out timber planks and laying thick, shock-absorbing rubber flooring",
+              "explanationVi": "Thay ván gỗ cũ bằng sàn cao su giảm chấn dày khớp hoàn toàn với phương án D."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_006_q04",
+          "number": 4,
+          "prompt": "Old Dance Studio",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l05",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    },
+    {
+      "groupId": "g2_map",
+      "type": "map_labelling",
+      "instructions": "Label the renovated floorplan of Larkspur Sports Complex. Write the correct letter, A-H, next to questions 5-10.",
+      "previewSec": 30,
+      "map": {
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "youAreHere": {
+          "x": 707,
+          "y": 280
+        },
+        "shapes": [
+          {
+            "id": "road_station",
+            "kind": "road",
+            "x": 725,
+            "y": 40,
+            "w": 35,
+            "h": 480,
+            "label": "Station Avenue"
+          },
+          {
+            "id": "ent_east",
+            "kind": "entrance",
+            "x": 690,
+            "y": 245,
+            "w": 35,
+            "h": 70,
+            "label": "East Entrance"
+          },
+          {
+            "id": "path_concourse",
+            "kind": "path",
+            "x": 230,
+            "y": 268,
+            "w": 460,
+            "h": 24,
+            "label": "Central Concourse"
+          },
+          {
+            "id": "path_north",
+            "kind": "path",
+            "x": 420,
+            "y": 80,
+            "w": 22,
+            "h": 188,
+            "label": "North Wing"
+          },
+          {
+            "id": "path_south",
+            "kind": "path",
+            "x": 420,
+            "y": 292,
+            "w": 22,
+            "h": 188,
+            "label": "South Wing"
+          },
+          {
+            "id": "bldg_pool",
+            "kind": "building",
+            "x": 50,
+            "y": 185,
+            "w": 180,
+            "h": 190,
+            "label": "Main Swimming Pool"
+          },
+          {
+            "id": "park_car",
+            "kind": "parking",
+            "x": 530,
+            "y": 425,
+            "w": 150,
+            "h": 75,
+            "label": "Members' Car Park"
+          },
+          {
+            "id": "room_a",
+            "kind": "building",
+            "x": 80,
+            "y": 70,
+            "w": 110,
+            "h": 70
+          },
+          {
+            "id": "room_b",
+            "kind": "building",
+            "x": 265,
+            "y": 90,
+            "w": 100,
+            "h": 70
+          },
+          {
+            "id": "room_c",
+            "kind": "building",
+            "x": 465,
+            "y": 75,
+            "w": 95,
+            "h": 65
+          },
+          {
+            "id": "room_d",
+            "kind": "building",
+            "x": 585,
+            "y": 180,
+            "w": 95,
+            "h": 65
+          },
+          {
+            "id": "room_e",
+            "kind": "building",
+            "x": 580,
+            "y": 315,
+            "w": 90,
+            "h": 60
+          },
+          {
+            "id": "room_f",
+            "kind": "building",
+            "x": 455,
+            "y": 335,
+            "w": 80,
+            "h": 65
+          },
+          {
+            "id": "room_g",
+            "kind": "building",
+            "x": 275,
+            "y": 370,
+            "w": 100,
+            "h": 70
+          },
+          {
+            "id": "room_h",
+            "kind": "building",
+            "x": 80,
+            "y": 415,
+            "w": 110,
+            "h": 70
+          }
+        ],
+        "slots": [
+          {
+            "key": "A",
+            "x": 135,
+            "y": 105
+          },
+          {
+            "key": "B",
+            "x": 315,
+            "y": 125
+          },
+          {
+            "key": "C",
+            "x": 512,
+            "y": 107
+          },
+          {
+            "key": "D",
+            "x": 632,
+            "y": 212
+          },
+          {
+            "key": "E",
+            "x": 625,
+            "y": 345
+          },
+          {
+            "key": "F",
+            "x": 495,
+            "y": 367
+          },
+          {
+            "key": "G",
+            "x": 325,
+            "y": 405
+          },
+          {
+            "key": "H",
+            "x": 135,
+            "y": 450
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p2_006_q05",
+          "number": 5,
+          "prompt": "New Reception and Juice Bar",
+          "answer": {
+            "accepted": [
+              "E"
+            ],
+            "keys": [
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_006_q06",
+          "number": 6,
+          "prompt": "Spin Cycling Studio",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l09",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "bright room immediately on your right next to East Entrance (D)",
+              "explanationVi": "Phòng ngay bên phải sát East Entrance (D) là phòng tủ đồ nhân viên; phòng đạp xe Spin nằm gần đầu bắc hành lang North Wing về phía đông (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_006_q07",
+          "number": 7,
+          "prompt": "Physiotherapy Clinic",
+          "answer": {
+            "accepted": [
+              "G"
+            ],
+            "keys": [
+              "G"
+            ]
+          },
+          "evidence": {
+            "lineId": "l11",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l10",
+              "start": 0,
+              "end": 0,
+              "decoy": "medium-sized room on the eastern side of South Wing (F)",
+              "explanationVi": "Phòng bên phía đông hành lang South Wing (F) là phòng lò hơi và lọc nước; phòng vật lý trị liệu nằm đối diện sang phía tây hành lang South Wing (G)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_006_q08",
+          "number": 8,
+          "prompt": "Climbing Wall Hall",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l12",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_006_q09",
+          "number": 9,
+          "prompt": "Hydrotherapy Suite",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l13",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_006_q10",
+          "number": 10,
+          "prompt": "Sports Equipment Store",
+          "answer": {
+            "accepted": [
+              "H"
+            ],
+            "keys": [
+              "H"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

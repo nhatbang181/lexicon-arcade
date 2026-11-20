@@ -1,0 +1,588 @@
+{
+  "id": "lep:p3_001",
+  "part": 3,
+  "reserved": false,
+  "title": "Urban Pollinator Rooftop Study",
+  "contextEn": "Two environmental science students, Hannah and Liam, discuss their field project comparing solitary bees and hoverflies across urban rooftop gardens.",
+  "difficulty": 6,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Hannah",
+      "role": "Environmental science student",
+      "voice": "bf_isabella",
+      "accent": "uk"
+    },
+    {
+      "id": "s2",
+      "name": "Liam",
+      "role": "Environmental science student",
+      "voice": "am_michael",
+      "accent": "us"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Thanks for bringing the site sheets, Liam. Before we write up the methodology section for Dr Patel, we need to pin down what actually changed since our initial proposal.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s2",
+      "text": "Good idea. First, there is the civic archive roof. Remember we dropped it from our final five sites?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "Right. At first I thought strong gusts up there would knock the flower stems flat, and we briefly wondered if the council would charge a roof-access fee.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s2",
+      "text": "In the end the wind readings were mild and they waived every charge. What forced us to pull out was the security clearance for the roof keys, which would not arrive until after the June blossom peak.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Exactly, missing peak flowering would have ruined the comparison. Speaking of comparisons, our first pilot survey threw up a result I honestly did not expect.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s2",
+      "text": "You mean the afternoon numbers? Actually, morning counts beat afternoon ones just as the textbooks predict, and the potted culinary herbs did reasonably well too.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "True, those matched expectations. What caught us off guard was seeing hoverflies outnumber solitary bees nearly two to one on the shallow sedum mats, though earlier guides call sedum roofs mainly bee habitat.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s2",
+      "text": "Yeah, that definitely deserves a highlight in the results. Now, about our counting protocol for the rest of the summer: we still have observer fatigue during those long twenty-minute watches.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "I did wonder about switching to yellow pan traps filled with soapy water so we would not miss fast-moving insects, though you seemed hesitant.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s2",
+      "text": "Well, lethal trapping on tiny rooftop colonies felt counterproductive, and my earlier idea of strapping fixed cameras to each quadrat failed because the glare blurred the wing markings. Splitting each ten-minute block so we alternate as spotter and recorder solves the fatigue without hurting anything.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "Agreed, taking turns keeps our accuracy sharp. One thing I was less sure about was your suggestion to log exact building height in storeys for every roof.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s2",
+      "text": "I know Dr Patel never asked us to track wind at every floor, and that old paper claiming small bees refuse to fly above four storeys has been pretty thoroughly debunked.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "So why keep height in the regression table then?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s2",
+      "text": "Because elevation changes the local microclimate quite noticeably: higher roofs dry out faster and bake harder in direct sun, which alters nectar production even when the plant list is identical.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Fair point, that links directly to flower quality. Before we look at individual sites, we also need to trim our draft report because we are already over the word cap. Obviously the temperature logger charts stay, and the bed photographs can sit neatly in the appendix.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s2",
+      "text": "What about the casual chats we jotted down with the building caretakers? You were keen to weave those quotes into the discussion.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "I was at first because they added human colour, but looking back they were completely unstructured and we did not obtain formal ethics sign-off for interviews. Let us leave them out altogether.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s2",
+      "text": "Sensible call. Right, let us go through our five active rooftops and confirm the single main management recommendation we are giving each building manager. First up is Northgate Pharmacy.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s1",
+      "text": "I initially pencilled in pulling out their ornamental grasses, since non-native tufts rarely offer pollen.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s2",
+      "text": "Actually, those clumps only cover a tiny strip and bees did not mind them. The real drawback on that exposed west edge is constant crosswind knocking insects off the blooms, so adding low timber windbreaks along the rail is the top priority.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s1",
+      "text": "Got it, windbreaks for Northgate. Next is the Station Annex roof. Their caretaker already set out shallow pebble dishes for drinking water, which worked brilliantly.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s2",
+      "text": "Yes, water is sorted there. What is missing is nesting habitat: every square inch is covered in thick bark mulch, so we should advise clearing a couple of dry bare-soil patches for ground-nesting solitary bees.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s1",
+      "text": "Nice and specific. Third is Canal Mill Studios. Earlier I worried their night-time security lamps were drawing moths away, but it turns out those lights are already motion-triggered and stay dark most nights.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s2",
+      "text": "Right, the actual gap at Canal Mill is seasonal: everything blooms in May and June, then by September the beds are completely barren. Introducing late-autumn flowering plants like ivy and asters will bridge that famine.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "s1",
+      "text": "Moving on to Elmhurst Clinic. You mentioned earlier that the climbing vines along the pergola looked a bit tangled and might need thinning out.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "s2",
+      "text": "I did, until I checked our afternoon logs and saw hoverflies sheltering under those exact leaves during midday heat. What the clinic roof really lacks is moisture on that dark gravel, so placing shallow water trays filled with pebbles will help far more.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "s1",
+      "text": "Makes complete sense. Finally, Harbourside Bakery. Because it sits behind a tall brick parapet, wind is barely an issue there at all.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l28",
+      "speakerId": "s2",
+      "text": "No, wind is fine, and the planting mix is diverse. The problem is those bright floodlights illuminating the bakery sign from dusk till dawn, which completely disrupts nocturnal pollinators. Advising them to reduce night-time lighting will make an immediate difference.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l29",
+      "speakerId": "s1",
+      "text": "Brilliant. That gives every site a clear, evidence-backed recommendation. Let us tidy up the table and send Dr Patel a draft tonight.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p3_001.mp3",
+    "durationSec": 305,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_001_q01",
+          "number": 1,
+          "prompt": "Why did the students remove the civic archive roof from their study?\nA. Wind gusts damaged the experimental flower stems.\nB. Permission to obtain roof keys arrived too late for peak bloom.\nC. The council demanded an unexpected fee for access.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l03",
+              "start": 0,
+              "end": 0,
+              "decoy": "strong gusts / roof-access fee",
+              "explanationVi": "Hannah nhắc tới nỗi lo gió mạnh (A) và phí lên mái (C), nhưng Liam bác bỏ cả hai ngay dòng sau và nêu lý do thật là thủ tục cấp chìa khóa bị trễ qua mùa hoa nở rộ (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q02",
+          "number": 2,
+          "prompt": "What unexpected finding emerged from the first pilot survey?\nA. Hoverflies appeared in larger numbers than solitary bees on sedum mats.\nB. Potted culinary herbs attracted virtually no visiting insects.\nC. Pollinator counts peaked in the afternoon rather than the morning.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "afternoon numbers / potted culinary herbs",
+              "explanationVi": "Liam xác nhận số liệu buổi sáng cao hơn buổi chiều như sách giáo khoa (loại C) và chậu rau thơm thu hút khá tốt (loại B); điều bất ngờ thật sự là ruồi ăn rệp nhiều gần gấp đôi ong đơn độc (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q03",
+          "number": 3,
+          "prompt": "How do the students agree to modify their insect counting method?\nA. Place soapy yellow pan traps across each planting bed.\nB. Attach fixed video cameras to record each sample quadrat.\nC. Alternate between spotting and recording during ten-minute blocks.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l09",
+              "start": 0,
+              "end": 0,
+              "decoy": "yellow pan traps / fixed cameras",
+              "explanationVi": "Cả bẫy khay nước xà phòng (A) lẫn gắn camera cố định (B) đều được nhắc tới rồi bị loại vì gây chết côn trùng hoặc bị chói lóa; cả hai chốt cách luân phiên quan sát và ghi chép (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q04",
+          "number": 4,
+          "prompt": "Why does Liam argue that roof elevation should remain in their analysis?\nA. Published evidence shows solitary bees avoid roofs above four storeys.\nB. Higher roofs experience drier, hotter conditions that affect nectar supply.\nC. Their supervisor requested wind measurements on every floor.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l12",
+              "start": 0,
+              "end": 0,
+              "decoy": "above four storeys / track wind at every floor",
+              "explanationVi": "Liam phủ nhận cả yêu cầu của Dr Patel (loại C) lẫn bài báo cũ về ngưỡng bốn tầng (loại A), rồi giải thích độ cao thay đổi vi khí hậu và lượng mật hoa (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q05",
+          "number": 5,
+          "prompt": "Which material do the students decide to cut from their final report?\nA. Graphs generated by the temperature loggers.\nB. Photographs showing the rooftop planting beds.\nC. Informal notes from conversations with building caretakers.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l17",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l16",
+              "start": 0,
+              "end": 0,
+              "decoy": "keen to weave those quotes into the discussion",
+              "explanationVi": "Ban đầu Hannah muốn đưa trích dẫn từ người quản lý tòa nhà vào bài, nhưng sau đó đổi ý quyết định bỏ hẳn vì thiếu tính hệ thống và chưa xin duyệt đạo đức nghiên cứu (C)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_matching",
+      "type": "matching",
+      "instructions": "Which main recommendation do the students agree to give each rooftop site? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 6-10.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Add shallow water dishes with pebbles"
+        },
+        {
+          "key": "B",
+          "text": "Replace non-native ornamental grasses"
+        },
+        {
+          "key": "C",
+          "text": "Install low timber windbreaks"
+        },
+        {
+          "key": "D",
+          "text": "Extend late-autumn flowering species"
+        },
+        {
+          "key": "E",
+          "text": "Reduce night-time security lighting"
+        },
+        {
+          "key": "F",
+          "text": "Leave small bare-soil patches for nesting"
+        },
+        {
+          "key": "G",
+          "text": "Thin out overgrown climbing vines"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_001_q06",
+          "number": 6,
+          "prompt": "Northgate Pharmacy roof",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l20",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l19",
+              "start": 0,
+              "end": 0,
+              "decoy": "ornamental grasses",
+              "explanationVi": "Hannah định đề xuất nhổ bỏ cỏ cảnh ngoại lai (B), nhưng Liam bác bỏ vì diện tích nhỏ và nhấn mạnh ưu tiên số một là lắp vách chắn gió gỗ thấp (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q07",
+          "number": 7,
+          "prompt": "Station Annex roof",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l22",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "decoy": "shallow pebble dishes for drinking water",
+              "explanationVi": "Đĩa nước có sỏi (A) đã được lắp đặt sẵn rồi; thứ mái nhà này còn thiếu là khoảng đất trống không phủ vỏ cây để ong làm tổ (F)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q08",
+          "number": 8,
+          "prompt": "Canal Mill Studios roof",
+          "answer": {
+            "accepted": [
+              "D"
+            ],
+            "keys": [
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l24",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l23",
+              "start": 0,
+              "end": 0,
+              "decoy": "night-time security lamps",
+              "explanationVi": "Đèn an ninh ban đêm (E) thực tế đã gắn cảm biến chuyển động nên không gây hại; vấn đề chính là thiếu hoa nở cuối thu sang tháng chín (D)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q09",
+          "number": 9,
+          "prompt": "Elmhurst Clinic roof",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l26",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l25",
+              "start": 0,
+              "end": 0,
+              "decoy": "climbing vines ... might need thinning out",
+              "explanationVi": "Liam từng muốn tỉa bớt dây leo (G), nhưng sau khi xem sổ ghi nhận thấy côn trùng trú nắng dưới tán lá nên đổi sang đề xuất đặt khay nước nông có sỏi (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_001_q10",
+          "number": 10,
+          "prompt": "Harbourside Bakery roof",
+          "answer": {
+            "accepted": [
+              "E"
+            ],
+            "keys": [
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l28",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l28",
+              "start": 0,
+              "end": 0,
+              "decoy": "bright floodlights illuminating the bakery sign from dusk till dawn",
+              "explanationVi": "Lời thoại nói về đèn pha chiếu biển hiệu suốt đêm cần giảm bớt, diễn đạt đồng nghĩa cho 'Reduce night-time security lighting' (E)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

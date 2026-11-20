@@ -1,0 +1,592 @@
+{
+  "id": "lep:p1_res_001",
+  "part": 1,
+  "reserved": true,
+  "title": "Meadowbrook Rail Lost Property Report",
+  "contextEn": "A rail passenger phones a railway station lost property office to report a bag left behind on an express train.",
+  "difficulty": 4,
+  "speakers": [
+    {
+      "id": "clerk",
+      "name": "Sophie Hargrave",
+      "role": "Lost Property Clerk",
+      "voice": "bf_lily",
+      "accent": "uk"
+    },
+    {
+      "id": "caller",
+      "name": "Trevor Maddox",
+      "role": "Rail Passenger",
+      "voice": "bm_george",
+      "accent": "uk"
+    }
+  ],
+  "channel": "phone",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "clerk",
+      "text": "Good afternoon, Meadowbrook Rail Lost Property Office, Sophie speaking. How can I help?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Oh, hello Sophie. I am rather annoyed with myself because I left a bag on the overhead rack of my train this morning.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "clerk",
+      "text": "Do not worry, we log items from every arriving service, so there is a good chance it will turn up. Let me open a report for you. Could I take your full name?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Yes, it is Trevor Maddox. That is M-A-D-D-O-X, double D in the middle.",
+      "ttsText": "Yes, it is Trevor Maddox. That is M, A, D, D, O, X, double D in the middle.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "clerk",
+      "text": "Maddox, double D, thank you. Which train service were you travelling on this morning?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Um, I meant to catch the 10:50 express from Central... oh sorry, my bus was delayed so I missed that one and boarded the 11:20 express instead.",
+      "ttsText": "Um, I meant to catch the ten fifty express from Central... oh sorry, my bus was delayed so I missed that one and boarded the eleven twenty express instead.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "clerk",
+      "text": "Right, the 11:20 express heading north to Brampton. Did you travel all the way to Brampton?",
+      "ttsText": "Right, the eleven twenty express heading north to Brampton. Did you travel all the way to Brampton?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "No, I got off two stops earlier at Cromwell. I only realised I had forgotten the bag once I walked through the ticket barriers.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "clerk",
+      "text": "Okay, alighted at Cromwell. Do you remember your carriage and seat number so we can alert the cleaners at Brampton?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "Yes, I was in Coach D. My printed ticket says seat 14, though a family asked to sit together around a table, so I swapped with them and moved down to seat 42.",
+      "ttsText": "Yes, I was in Coach D. My printed ticket says seat fourteen, though a family asked to sit together around a table, so I swapped with them and moved down to seat forty-two.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "clerk",
+      "text": "Very kind of you, and helpful to know! So rack above seat 42 in Coach D. Could you describe the bag for me?",
+      "ttsText": "Very kind of you, and helpful to know! So rack above seat forty-two in Coach D. Could you describe the bag for me?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "Well, I kept my black leather briefcase on my lap, so that is safe. The one I left behind is a medium backpack made of navy canvas with brass zips.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "clerk",
+      "text": "Navy canvas backpack, brass zips. And is there anything valuable inside, like a laptop or a wallet, that helps us verify ownership?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Thankfully my laptop and wallet were in my briefcase and coat pocket. Inside the backpack is a sketchbook and a pair of silver wireless headphones in a grey case.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "clerk",
+      "text": "Great, wireless headphones and a sketchbook noted. Let me generate your case reference number... that is MR749P... oh, hold on, let me squint at the font again. Sorry, the last letter is B for Bravo, so MR749B.",
+      "ttsText": "Great, wireless headphones and a sketchbook noted. Let me generate your case reference number... that is M, R, seven, four, nine, P... oh, hold on, let me squint at the font again. Sorry, the last letter is B for Bravo, so M, R, seven, four, nine, B.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "M-R-seven-four-nine-B, written down. If the cleaners hand it in at Brampton, how does collection work?",
+      "ttsText": "M, R, seven, four, nine, B, written down. If the cleaners hand it in at Brampton, how does collection work?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "clerk",
+      "text": "All lost property from that line is brought back to our central office here at Meadowbrook Station by six this evening. Just bring photo ID and your reference code.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Where exactly is the lost property desk inside Meadowbrook Station? Is it next to the ticket office by platform 2?",
+      "ttsText": "Where exactly is the lost property desk inside Meadowbrook Station? Is it next to the ticket office by platform two?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "clerk",
+      "text": "No, platform 2 only has ticket sales and travel enquiries. Our lost property counter is down the concourse opposite platform 6.",
+      "ttsText": "No, platform two only has ticket sales and travel enquiries. Our lost property counter is down the concourse opposite platform six.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Opposite platform 6, got it. Is there an administration fee when I pick it up?",
+      "ttsText": "Opposite platform six, got it. Is there an administration fee when I pick it up?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "clerk",
+      "text": "Yes, small items like umbrellas cost £3, courier delivery is £15, and in-person collection for a standard bag or backpack is £8.",
+      "ttsText": "Yes, small items like umbrellas cost three pounds, courier delivery is fifteen pounds, and in-person collection for a standard bag or backpack is eight pounds.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Eight pounds in person is completely fair. I am away on a work trip next week, so how long do you hold unclaimed bags?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "clerk",
+      "text": "We used to store items for 90 days, though under our updated policy we keep unclaimed bags for 30 days before donating them to local charities.",
+      "ttsText": "We used to store items for ninety days, though under our updated policy we keep unclaimed bags for thirty days before donating them to local charities.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Thirty days gives me plenty of time. Thank you so much for your help, Sophie.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "clerk",
+      "text": "You are welcome, Trevor. We will phone you as soon as the backpack arrives at our desk!",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p1_res_001.mp3",
+    "durationSec": 286,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Meadowbrook Rail - Lost Property Report",
+        "rows": [
+          {
+            "label": "Passenger first name",
+            "value": "Trevor"
+          },
+          {
+            "label": "Passenger surname",
+            "blankQid": "lep_p1_res_001_q01"
+          },
+          {
+            "label": "Train departure time",
+            "blankQid": "lep_p1_res_001_q02",
+            "suffix": "a.m."
+          },
+          {
+            "label": "Station alighted at",
+            "blankQid": "lep_p1_res_001_q03"
+          },
+          {
+            "label": "Actual seat number (Coach D)",
+            "blankQid": "lep_p1_res_001_q04"
+          },
+          {
+            "label": "Backpack colour and fabric",
+            "blankQid": "lep_p1_res_001_q05"
+          },
+          {
+            "label": "Valuable item inside",
+            "value": "wireless",
+            "blankQid": "lep_p1_res_001_q06"
+          },
+          {
+            "label": "Case reference number",
+            "blankQid": "lep_p1_res_001_q07"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_res_001_q01",
+          "number": 1,
+          "prompt": "Passenger's surname",
+          "answer": {
+            "accepted": [
+              "Maddox"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "spelling_out",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Người gọi đánh vần họ M-A-D-D-O-X và nhấn mạnh hai chữ D ở giữa."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q02",
+          "number": 2,
+          "prompt": "Departure time of the train boarded (before 'a.m.')",
+          "answer": {
+            "accepted": [
+              "11:20",
+              "11.20"
+            ]
+          },
+          "evidence": {
+            "lineId": "l06",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "10:50",
+              "explanationVi": "Lỡ chuyến 10:50 do xe buýt trễ nên thực tế đi chuyến tàu nhanh lúc 11:20."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q03",
+          "number": 3,
+          "prompt": "Station where the passenger got off the train",
+          "answer": {
+            "accepted": [
+              "Cromwell"
+            ]
+          },
+          "evidence": {
+            "lineId": "l08",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l07",
+              "start": 0,
+              "end": 0,
+              "decoy": "Brampton",
+              "explanationVi": "Brampton là ga cuối của chuyến tàu, còn hành khách xuống trước hai trạm ở Cromwell."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q04",
+          "number": 4,
+          "prompt": "Seat number where the passenger actually sat",
+          "answer": {
+            "accepted": [
+              "42",
+              "forty-two"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "distractor_number",
+              "lineId": "l10",
+              "start": 0,
+              "end": 0,
+              "decoy": "14",
+              "explanationVi": "Vé in ghế 14 nhưng đã đổi chỗ cho một gia đình và ngồi ở ghế 42."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q05",
+          "number": 5,
+          "prompt": "Colour and material of the lost backpack",
+          "answer": {
+            "accepted": [
+              "navy canvas"
+            ]
+          },
+          "evidence": {
+            "lineId": "l12",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l12",
+              "start": 0,
+              "end": 0,
+              "decoy": "black leather",
+              "explanationVi": "Cặp da đen (black leather) vẫn cầm theo, ba lô bỏ quên làm bằng vải bố xanh đậm (navy canvas)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q06",
+          "number": 6,
+          "prompt": "Valuable electronic item inside the bag (wireless ...)",
+          "answer": {
+            "accepted": [
+              "headphones"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l14",
+              "start": 0,
+              "end": 0,
+              "decoy": "laptop",
+              "explanationVi": "Laptop và ví không ở trong ba lô, đồ giá trị bên trong là tai nghe không dây (headphones)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q07",
+          "number": 7,
+          "prompt": "Lost property case reference code",
+          "answer": {
+            "accepted": [
+              "MR749B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l15",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "self_correction",
+              "lineId": "l15",
+              "start": 0,
+              "end": 0,
+              "decoy": "MR749P",
+              "explanationVi": "Nhân viên nhìn nhầm chữ cuối là P rồi đính chính lại thành B (B for Bravo)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_notes",
+      "type": "note_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Collection & Storage Notes",
+        "rows": [
+          {
+            "label": "Lost property desk location",
+            "value": "opposite platform",
+            "blankQid": "lep_p1_res_001_q08"
+          },
+          {
+            "label": "In-person bag collection fee (£)",
+            "blankQid": "lep_p1_res_001_q09"
+          },
+          {
+            "label": "Storage limit before charity donation",
+            "blankQid": "lep_p1_res_001_q10",
+            "suffix": "days"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_res_001_q08",
+          "number": 8,
+          "prompt": "Platform number opposite the lost property counter",
+          "answer": {
+            "accepted": [
+              "6",
+              "six"
+            ]
+          },
+          "evidence": {
+            "lineId": "l19",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "distractor_number",
+              "lineId": "l19",
+              "start": 0,
+              "end": 0,
+              "decoy": "2",
+              "explanationVi": "Sân ga số 2 là quầy bán vé, quầy đồ thất lạc nằm đối diện sân ga số 6."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q09",
+          "number": 9,
+          "prompt": "Administration fee for collecting a backpack in person (in pounds)",
+          "answer": {
+            "accepted": [
+              "8",
+              "£8"
+            ]
+          },
+          "evidence": {
+            "lineId": "l21",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "distractor_number",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "decoy": "15",
+              "explanationVi": "3 bảng cho đồ nhỏ và 15 bảng cho gửi chuyển phát, còn nhận trực tiếp ba lô là 8 bảng."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_res_001_q10",
+          "number": 10,
+          "prompt": "Maximum number of days unclaimed bags are stored",
+          "answer": {
+            "accepted": [
+              "30",
+              "thirty"
+            ]
+          },
+          "evidence": {
+            "lineId": "l23",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l23",
+              "start": 0,
+              "end": 0,
+              "decoy": "90",
+              "explanationVi": "Chính sách cũ lưu giữ 90 ngày nhưng quy định mới rút xuống còn 30 ngày."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

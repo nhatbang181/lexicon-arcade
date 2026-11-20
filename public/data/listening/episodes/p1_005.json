@@ -1,0 +1,624 @@
+{
+  "id": "lep:p1_005",
+  "part": 1,
+  "reserved": false,
+  "title": "Riverside Dental Clinic New Patient Intake",
+  "contextEn": "A man phones a dental clinic receptionist to register as a new patient and book his first appointment.",
+  "difficulty": 4,
+  "speakers": [
+    {
+      "id": "staff",
+      "name": "Megan Brooks",
+      "role": "Clinic Receptionist",
+      "voice": "af_heart",
+      "accent": "us"
+    },
+    {
+      "id": "caller",
+      "name": "Gareth Whitfield",
+      "role": "New Patient",
+      "voice": "bm_fable",
+      "accent": "uk"
+    }
+  ],
+  "channel": "phone",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "staff",
+      "text": "Good morning, Riverside Dental Clinic, Megan speaking. How can I help you today?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Hello Megan. I am not registered with your practice yet, and I was hoping to book a new patient check-up.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "staff",
+      "text": "We are definitely accepting new patients this month. Let me get your intake form started. Could I have your full name, please?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Yes, it is Gareth Whitfield. That is with just one T, so W-H-I-T-F-I-E-L-D.",
+      "ttsText": "Yes, it is Gareth Whitfield. That is with just one T, so W, H, I, T, F, I, E, L, D.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "staff",
+      "text": "Whitfield with a single T, got it. And what is your date of birth?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "It is 24 April 1991... oh, hang on, did I just say 24? Sorry, 24 is my brother's birthday! Mine is 23 April 1991.",
+      "ttsText": "It is the twenty-fourth of April nineteen ninety-one... oh, hang on, did I just say twenty-fourth? Sorry, twenty-fourth is my brother's birthday! Mine is the twenty-third of April nineteen ninety-one.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "staff",
+      "text": "Haha, no problem, 23 April 1991 is entered. Could I also take your street address?",
+      "ttsText": "No problem, twenty-third of April nineteen ninety-one is entered. Could I also take your street address?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "Sure, it is 17 Sycamore Close. That is one-seven, not seventy, because people often mishear me over the phone.",
+      "ttsText": "Sure, it is seventeen Sycamore Close. That is one seven, not seventy, because people often mishear me over the phone.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "staff",
+      "text": "Seventeen Sycamore Close, crystal clear! Next, a quick medical question: do you have any known allergies, such as latex or aspirin?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "No trouble with latex or aspirin at all, though I am allergic to penicillin, so please flag that on my chart.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "staff",
+      "text": "I have highlighted penicillin in red on your file. Now, is this just a routine check-up and clean, or do you have a specific issue?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "Well, I originally meant to call just for a routine clean, actually I bit into a roasted almond yesterday and chipped a back filling, so I would like that looked at first.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "staff",
+      "text": "Ouch, yes, we should definitely check that chipped filling quickly. Usually new adult patients see Dr Evans, though he is away at a conference this week. I can book you in with Dr Patel instead, who handles all our restorative work.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Dr Patel sounds great. Could you tell me how much the initial examination costs?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "staff",
+      "text": "Our comprehensive package with a full hygienist polish is £95, while the standard new-patient check-up including digital X-rays is £65. Since we need to inspect the filling first, I recommend starting with the £65 exam.",
+      "ttsText": "Our comprehensive package with a full hygienist polish is ninety-five pounds, while the standard new-patient check-up including digital X-rays is sixty-five pounds. Since we need to inspect the filling first, I recommend starting with the sixty-five pound exam.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Yes, let us start with the £65 check-up. When does Dr Patel have an opening?",
+      "ttsText": "Yes, let us start with the sixty-five pound check-up. When does Dr Patel have an opening?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "staff",
+      "text": "Let me look at her calendar... she has a cancellation tomorrow, Tuesday at 10:15 a.m., or Wednesday afternoon at 2:45 p.m. Thursday at 4:00 p.m. is reserved for urgent follow-ups, I am afraid.",
+      "ttsText": "Let me look at her calendar... she has a cancellation tomorrow, Tuesday at ten fifteen a.m., or Wednesday afternoon at two forty-five p.m. Thursday at four p.m. is reserved for urgent follow-ups, I am afraid.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Um, I have a client call I cannot move on Tuesday morning, so Wednesday at 2:45 p.m. works brilliantly.",
+      "ttsText": "Um, I have a client call I cannot move on Tuesday morning, so Wednesday at two forty-five p.m. works brilliantly.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "staff",
+      "text": "Locked in for Wednesday at 2:45 p.m. with Dr Patel. Will you be driving to the clinic?",
+      "ttsText": "Locked in for Wednesday at two forty-five p.m. with Dr Patel. Will you be driving to the clinic?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Yes, I will. Can patients park in your clinic courtyard, or is street parking free after lunch?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "staff",
+      "text": "Actually, our courtyard bays are strictly for staff and emergency access, and the street meters outside charge right through until six in the evening. Your best bet is the multistorey car park just across the footbridge, because we validate tickets at reception for two free hours.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Oh, validated parking across the bridge is super helpful. And is there anything I need to bring with me on Wednesday, like a utility bill or my old dental X-rays?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "staff",
+      "text": "No need for a utility bill since you are registering privately, and we request previous X-rays directly from your old clinic by secure email. All we ask you to bring is a written list of any daily medications you currently take.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Easy enough, I will jot those down tonight. Thank you so much for your help, Megan.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "staff",
+      "text": "You are very welcome, Gareth. Please arrive ten minutes early to sign the consent form, and we will see you Wednesday!",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p1_005.mp3",
+    "durationSec": 292,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Riverside Dental Clinic - New Patient Intake",
+        "rows": [
+          {
+            "label": "First name",
+            "value": "Gareth"
+          },
+          {
+            "label": "Surname",
+            "blankQid": "lep_p1_005_q01"
+          },
+          {
+            "label": "Date of birth",
+            "blankQid": "lep_p1_005_q02",
+            "suffix": "1991"
+          },
+          {
+            "label": "Address",
+            "blankQid": "lep_p1_005_q03",
+            "suffix": "Close"
+          },
+          {
+            "label": "Known allergy",
+            "blankQid": "lep_p1_005_q04"
+          },
+          {
+            "label": "Main concern",
+            "value": "chipped",
+            "blankQid": "lep_p1_005_q05"
+          },
+          {
+            "label": "Assigned dentist",
+            "value": "Dr",
+            "blankQid": "lep_p1_005_q06"
+          },
+          {
+            "label": "Initial check-up fee (£)",
+            "blankQid": "lep_p1_005_q07"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_005_q01",
+          "number": 1,
+          "prompt": "Patient's surname",
+          "answer": {
+            "accepted": [
+              "Whitfield"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "spelling_out",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Người gọi đánh vần W-H-I-T-F-I-E-L-D và nhấn mạnh chỉ có một chữ T."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_005_q02",
+          "number": 2,
+          "prompt": "Patient's day and month of birth (before '1991')",
+          "answer": {
+            "accepted": [
+              "23 April",
+              "23rd April",
+              "April 23"
+            ]
+          },
+          "evidence": {
+            "lineId": "l06",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "self_correction",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "24 April",
+              "explanationVi": "Nói nhầm sang sinh nhật anh trai 24 April rồi sửa lại thành 23 April."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_005_q03",
+          "number": 3,
+          "prompt": "House number and street name before 'Close'",
+          "answer": {
+            "accepted": [
+              "17 Sycamore"
+            ]
+          },
+          "evidence": {
+            "lineId": "l08",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "homophone_minimal_pair",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "70",
+              "explanationVi": "Dễ nhầm 17 (seventeen) với 70 (seventy), người nói xác nhận là một-bảy."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_005_q04",
+          "number": 4,
+          "prompt": "Substance the patient is allergic to",
+          "answer": {
+            "accepted": [
+              "penicillin"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l10",
+              "start": 0,
+              "end": 0,
+              "decoy": "aspirin",
+              "explanationVi": "Không dị ứng latex hay aspirin mà chỉ dị ứng với penicillin."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_005_q05",
+          "number": 5,
+          "prompt": "Main dental issue to inspect first (chipped ...)",
+          "answer": {
+            "accepted": [
+              "filling"
+            ]
+          },
+          "evidence": {
+            "lineId": "l12",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p1_005_q06",
+          "number": 6,
+          "prompt": "Surname of the dentist assigned (after 'Dr')",
+          "answer": {
+            "accepted": [
+              "Patel"
+            ]
+          },
+          "evidence": {
+            "lineId": "l13",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "decoy": "Evans",
+              "explanationVi": "Bác sĩ Evans đi hội thảo tuần này nên chuyển sang đặt với bác sĩ Patel."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_005_q07",
+          "number": 7,
+          "prompt": "Fee for the standard new-patient check-up (in pounds)",
+          "answer": {
+            "accepted": [
+              "65",
+              "£65"
+            ]
+          },
+          "evidence": {
+            "lineId": "l15",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "distractor_number",
+              "lineId": "l15",
+              "start": 0,
+              "end": 0,
+              "decoy": "95",
+              "explanationVi": "95 bảng là gói kèm đánh bóng răng, còn gói khám tiêu chuẩn là 65 bảng."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_q08",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Tuesday at 10:15 a.m."
+        },
+        {
+          "key": "B",
+          "text": "Wednesday at 2:45 p.m."
+        },
+        {
+          "key": "C",
+          "text": "Thursday at 4:00 p.m."
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p1_005_q08",
+          "number": 8,
+          "prompt": "When is Gareth's dental appointment booked?",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l18",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l17",
+              "start": 0,
+              "end": 0,
+              "decoy": "Tuesday at 10:15 a.m.",
+              "explanationVi": "Thứ Ba bận họp khách, thứ Năm đã giữ chỗ, nên chọn chiều thứ Tư lúc 2:45."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_q09",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "The clinic courtyard offers free spaces for patients."
+        },
+        {
+          "key": "B",
+          "text": "Street meters outside are free after midday."
+        },
+        {
+          "key": "C",
+          "text": "A multistorey car park across the footbridge validates tickets."
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p1_005_q09",
+          "number": 9,
+          "prompt": "What does Megan say about parking near the clinic?",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l21",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "decoy": "clinic courtyard",
+              "explanationVi": "Sân cho nhân viên, đồng hồ đường thu phí đến 6 giờ; bãi nhiều tầng miễn phí khi đóng dấu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_q10",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 0,
+      "options": [
+        {
+          "key": "A",
+          "text": "A written list of his daily medications"
+        },
+        {
+          "key": "B",
+          "text": "Printed X-rays from his previous dentist"
+        },
+        {
+          "key": "C",
+          "text": "A recent utility bill as proof of address"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p1_005_q10",
+          "number": 10,
+          "prompt": "What does Gareth need to bring to his first appointment?",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l23",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l23",
+              "start": 0,
+              "end": 0,
+              "decoy": "utility bill",
+              "explanationVi": "Không cần hóa đơn hay phim X-quang cũ, chỉ cần mang danh sách thuốc đang uống hàng ngày."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

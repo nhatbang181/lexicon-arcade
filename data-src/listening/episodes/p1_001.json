@@ -1,0 +1,642 @@
+{
+  "id": "lep:p1_001",
+  "part": 1,
+  "reserved": false,
+  "title": "Harbourview Leisure Centre Membership",
+  "contextEn": "A man phones a local leisure centre receptionist to enquire about membership options and book his gym induction.",
+  "difficulty": 2,
+  "speakers": [
+    {
+      "id": "staff",
+      "name": "Hannah Carter",
+      "role": "Receptionist",
+      "voice": "bf_emma",
+      "accent": "uk"
+    },
+    {
+      "id": "caller",
+      "name": "Owen Bramwell",
+      "role": "Prospective Member",
+      "voice": "bm_george",
+      "accent": "uk"
+    }
+  ],
+  "channel": "phone",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "staff",
+      "text": "Good morning, Harbourview Leisure Centre, Hannah speaking. How can I help you today?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Oh, hello. I just moved into the area last week and I would like to sign up for a gym and swimming membership.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "staff",
+      "text": "Lovely, welcome to the neighbourhood! I can take your details over the phone right now and get your induction booked in. Could I start with your full name, please?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Sure, it is Owen Bramwell.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "staff",
+      "text": "Could you spell your surname for me, Owen? Just so I do not mistype it on your membership card.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Of course. That is B-R-A-M-W-E-L-L. Double L at the end.",
+      "ttsText": "Of course. That is B, R, A, M, W, E, L, L. Double L at the end.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "staff",
+      "text": "Got it, Bramwell. And what is your current street address?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "Um, it is 38 Alder Lane... oh, sorry, no, 38 was my old flat! The new house is 48 Alder Lane.",
+      "ttsText": "Um, it is thirty-eight Alder Lane... oh, sorry, no, thirty-eight was my old flat! The new house is forty-eight Alder Lane.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "staff",
+      "text": "Haha, that happens to everyone after moving. So 48 Alder Lane. Could I also take a mobile number in case we need to text you about class changes?",
+      "ttsText": "That happens to everyone after moving. So forty-eight Alder Lane. Could I also take a mobile number in case we need to text you about class changes?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "Yes, let me read it carefully. It is 07741 829 350... wait, hang on, the last three digits are 360. Sorry, so 07741 829 360.",
+      "ttsText": "Yes, let me read it carefully. It is oh seven seven, four one eight, two nine, three five zero... wait, hang on, the last three digits are three six zero. Sorry, so oh seven seven, four one eight, two nine, three six zero.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "staff",
+      "text": "Right, ending in three six zero, all noted. Now, let us talk through the membership tiers. We have two main options for adults.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "I saw the all-access plan on your leaflet. That lets you use the pool and the gym at any hour, right?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "staff",
+      "text": "Yes, the all-access plan covers seven in the morning until ten at night every day for £54 a month. We also offer an off-peak membership, which runs from seven until four in the afternoon on weekdays, plus Sunday mornings.",
+      "ttsText": "Yes, the all-access plan covers seven in the morning until ten at night every day for fifty-four pounds a month. We also offer an off-peak membership, which runs from seven until four in the afternoon on weekdays, plus Sunday mornings.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Oh, actually, I work evening shifts at the hospital, so I am always free in the mornings. Let me go with the off-peak option instead of all-access.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "staff",
+      "text": "That will save you quite a bit. The off-peak plan is £36 per month. Normally there is a £15 joining fee too, though we are waiving that this month.",
+      "ttsText": "That will save you quite a bit. The off-peak plan is thirty-six pounds per month. Normally there is a fifteen-pound joining fee too, though we are waiving that this month.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Brilliant, £36 a month with no joining fee sounds great.",
+      "ttsText": "Brilliant, thirty-six pounds a month with no joining fee sounds great.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "staff",
+      "text": "When would you like your membership to start? We could activate it from Monday, 5 October.",
+      "ttsText": "When would you like your membership to start? We could activate it from Monday, the fifth of October.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Um, let me see. I am visiting my sister up north next week, so I would miss the first seven days. Could we start it a week later on 12 October instead?",
+      "ttsText": "Um, let me see. I am visiting my sister up north next week, so I would miss the first seven days. Could we start it a week later on the twelfth of October instead?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "staff",
+      "text": "No problem at all, I have set your start date to 12 October. Now, before you use the weights room, every new member completes a forty-minute gym induction with a trainer.",
+      "ttsText": "No problem at all, I have set your start date to the twelfth of October. Now, before you use the weights room, every new member completes a forty-minute gym induction with a trainer.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Sure, that makes sense. Do you have any slots open on Tuesday morning that week?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "staff",
+      "text": "Let me check the trainer rota... oh, Tuesday morning is completely full because a local college group is in. We do have plenty of space on Thursday, though.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Thursday works nicely for me. Let us book Thursday then.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "staff",
+      "text": "Wonderful. Would you prefer an early start at 8:30 a.m., or slightly later at 9:30 a.m.?",
+      "ttsText": "Wonderful. Would you prefer an early start at eight thirty a.m., or slightly later at nine thirty a.m.?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Let us go for 8:30... actually, sorry, I finish a late shift the night before, so 9:30 will be much better.",
+      "ttsText": "Let us go for eight thirty... actually, sorry, I finish a late shift the night before, so nine thirty will be much better.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "staff",
+      "text": "Smart choice, I have pencilled you in for 9:30 a.m. on Thursday. Just bring clean trainers, a water bottle, and a towel.",
+      "ttsText": "Smart choice, I have pencilled you in for nine thirty a.m. on Thursday. Just bring clean trainers, a water bottle, and a towel.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "caller",
+      "text": "Got it. Do I need a pound coin for the changing-room lockers?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "staff",
+      "text": "We actually replaced all the coin lockers last month. You just need to bring your own small padlock now, or you can buy one at reception.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l28",
+      "speakerId": "caller",
+      "text": "Good to know, I already have a spare padlock at home. And does the membership include any fitness classes?",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l29",
+      "speakerId": "staff",
+      "text": "Yes, every new member gets one complimentary trial class during their first week. We run yoga on Wednesday evenings, indoor cycling at lunchtime, and pilates right after your Thursday morning slot.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l30",
+      "speakerId": "caller",
+      "text": "Since I cannot do Wednesday evenings, I would love to try pilates after the induction.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.5
+    },
+    {
+      "lineId": "l31",
+      "speakerId": "staff",
+      "text": "All booked! I have reserved a mat for you in pilates. We will email your confirmation shortly, Owen.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    },
+    {
+      "lineId": "l32",
+      "speakerId": "caller",
+      "text": "Thanks so much for your help, Hannah. See you in a couple of weeks!",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.4
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p1_001.mp3",
+    "durationSec": 276,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Harbourview Leisure Centre - New Member Form",
+        "rows": [
+          {
+            "label": "First name",
+            "value": "Owen"
+          },
+          {
+            "label": "Surname",
+            "blankQid": "lep_p1_001_q01"
+          },
+          {
+            "label": "Address",
+            "blankQid": "lep_p1_001_q02",
+            "suffix": "Lane"
+          },
+          {
+            "label": "Mobile phone",
+            "blankQid": "lep_p1_001_q03"
+          },
+          {
+            "label": "Membership tier",
+            "blankQid": "lep_p1_001_q04"
+          },
+          {
+            "label": "Monthly fee (£)",
+            "blankQid": "lep_p1_001_q05"
+          },
+          {
+            "label": "Start date",
+            "blankQid": "lep_p1_001_q06"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_001_q01",
+          "number": 1,
+          "prompt": "Applicant's surname",
+          "answer": {
+            "accepted": [
+              "Bramwell"
+            ]
+          },
+          "evidence": {
+            "lineId": "l06",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "spelling_out",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "explanationVi": "Người gọi đánh vần họ B-R-A-M-W-E-L-L và nhấn mạnh có hai chữ L cuối."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q02",
+          "number": 2,
+          "prompt": "House number and street name before 'Lane'",
+          "answer": {
+            "accepted": [
+              "48 Alder"
+            ]
+          },
+          "evidence": {
+            "lineId": "l08",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "self_correction",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "38",
+              "explanationVi": "Người gọi nhầm sang số nhà cũ 38 rồi tự sửa lại thành 48 Alder Lane."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q03",
+          "number": 3,
+          "prompt": "Applicant's mobile phone number",
+          "answer": {
+            "accepted": [
+              "07741829360"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "self_correction",
+              "lineId": "l10",
+              "start": 0,
+              "end": 0,
+              "decoy": "07741829350",
+              "explanationVi": "Đọc nhầm ba số cuối là 350 rồi sửa lại ngay thành 360."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q04",
+          "number": 4,
+          "prompt": "Type of membership selected",
+          "answer": {
+            "accepted": [
+              "off-peak",
+              "off peak"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l12",
+              "start": 0,
+              "end": 0,
+              "decoy": "all-access",
+              "explanationVi": "Ban đầu hỏi gói all-access nhưng sau đó đổi sang off-peak vì làm ca tối."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q05",
+          "number": 5,
+          "prompt": "Monthly membership fee in pounds",
+          "answer": {
+            "accepted": [
+              "36",
+              "£36"
+            ]
+          },
+          "evidence": {
+            "lineId": "l15",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "distractor_number",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "decoy": "54",
+              "explanationVi": "54 bảng là giá gói toàn thời gian, còn gói off-peak chỉ tốn 36 bảng."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q06",
+          "number": 6,
+          "prompt": "Agreed membership start date",
+          "answer": {
+            "accepted": [
+              "12 October",
+              "12th October",
+              "October 12"
+            ]
+          },
+          "evidence": {
+            "lineId": "l18",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l17",
+              "start": 0,
+              "end": 0,
+              "decoy": "5 October",
+              "explanationVi": "Nhân viên gợi ý 5 October nhưng Owen đi thăm chị nên dời sang 12 October."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_table",
+      "type": "table_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "previewSec": 30,
+      "template": {
+        "title": "Induction & First-Week Details",
+        "rows": [
+          {
+            "label": "Session length",
+            "value": "40 minutes"
+          },
+          {
+            "label": "Induction day",
+            "blankQid": "lep_p1_001_q07"
+          },
+          {
+            "label": "Induction start time",
+            "blankQid": "lep_p1_001_q08",
+            "suffix": "a.m."
+          },
+          {
+            "label": "Item required for locker",
+            "blankQid": "lep_p1_001_q09"
+          },
+          {
+            "label": "Complimentary trial class",
+            "blankQid": "lep_p1_001_q10"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_001_q07",
+          "number": 7,
+          "prompt": "Day booked for the gym induction",
+          "answer": {
+            "accepted": [
+              "Thursday"
+            ]
+          },
+          "evidence": {
+            "lineId": "l22",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l21",
+              "start": 0,
+              "end": 0,
+              "decoy": "Tuesday",
+              "explanationVi": "Sáng thứ Ba đã kín lịch vì có đoàn sinh viên, nên đặt sang thứ Năm."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q08",
+          "number": 8,
+          "prompt": "Start time booked for the gym induction (before 'a.m.')",
+          "answer": {
+            "accepted": [
+              "9:30",
+              "9.30"
+            ]
+          },
+          "evidence": {
+            "lineId": "l24",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "self_correction",
+              "lineId": "l24",
+              "start": 0,
+              "end": 0,
+              "decoy": "8:30",
+              "explanationVi": "Chọn 8:30 trước rồi nhớ ra làm ca tối hôm trước nên đổi sang 9:30."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q09",
+          "number": 9,
+          "prompt": "Item members must bring to secure a locker",
+          "answer": {
+            "accepted": [
+              "padlock"
+            ]
+          },
+          "evidence": {
+            "lineId": "l27",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l27",
+              "start": 0,
+              "end": 0,
+              "decoy": "coin",
+              "explanationVi": "Tủ dùng xu đã bị thay thế tháng trước, nay cần mang ổ khóa nhỏ (padlock)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p1_001_q10",
+          "number": 10,
+          "prompt": "Free trial class reserved after the induction",
+          "answer": {
+            "accepted": [
+              "pilates"
+            ]
+          },
+          "evidence": {
+            "lineId": "l30",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

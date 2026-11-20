@@ -1,0 +1,676 @@
+{
+  "id": "lep:p2_005",
+  "part": 2,
+  "reserved": false,
+  "title": "Redgum Heritage Farm Park Tour",
+  "contextEn": "A farm park manager briefs visitors at Redgum Heritage Farm Park about recent site upgrades, livestock safety rules, and the layout of the farm grounds.",
+  "difficulty": 6,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Callum Fraser",
+      "role": "Farm Park Manager",
+      "voice": "edge:en-AU-WilliamNeural",
+      "accent": "au"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "G'day everyone, and welcome to Redgum Heritage Farm Park. I am Callum Fraser, the park manager here. Before you head up the track to see the sheepdog trials, I want to tell you about a couple of upgrades we finished this past year, run through our paddock rules, and help you get oriented on the farm map.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "If you haven't visited for a while, you might have read about several big projects in our newsletter. Our sealed coach car park is still waiting on shire council approval for next spring, and the proposed indoor riverfront cafe is still only on the drawing board. Also, if the kids are asking about a miniature steam railway, that actually belongs to the tourist park two valleys over, not us.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "What we did finish installing in May is a full rooftop array of solar panels across the barn, which now supplies all the electricity needed to run our milking shed without relying on diesel generators.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s1",
+      "text": "Our other completed upgrade is right beside the kitchen garden: four huge galvanised rainwater harvesting tanks that capture winter runoff from our shed roofs and gravity-feed water straight into the heirloom vegetable plots.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Next, a quick word on visiting the livestock paddocks safely. During the wet winter months we handed out blue disposable plastic overshoes at the paddock gate, though we stopped doing that last month once the paths dried out. You are also completely welcome to hop off the tractor trailer and stroll the gravel footpaths on foot, and leaning gently on the timber fence rails is fine.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s1",
+      "text": "However, there are two strict rules we ask everyone to observe. First, please never toss bread crusts or apple cores from your lunchbox to the sheep or goats; you may only feed the animals with the measured grain pellets sold in paper bags at our farm kiosk.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Second, when you walk past the sheltered lambing pens, please keep your voices low and avoid shouting or running, because sudden loud noise can startle the new ewes and scatter the lambs.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "Right, let's take a look at your farm park map. We are standing at the Ticket Barn on the southern edge of the property, just north of Gumtree Lane. Stretching straight north from the Ticket Barn is the main Farm Track, which crosses Orchard Lane right in the middle of the park.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Let's start with the Farm Produce Shop, where you can buy local honey and homemade jam on your way out. Head north from the Ticket Barn along the Farm Track, and it is the building immediately on your left, on the western side of the track south of Orchard Lane.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "If you want to watch the afternoon dairy demonstration at the Milking Parlour, stay south of Orchard Lane and look further west towards the Tractor Yard in the south-western corner. The Milking Parlour sits directly north of the Tractor Yard and just south of Orchard Lane.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "When you are ready for lunch, head over to the Picnic Shelter. Note that the building sitting out in the far south-eastern corner near Gumtree Lane is our private veterinary clinic, so do not walk all the way over there.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "The covered Picnic Shelter is much closer: south of Orchard Lane and immediately on the right, or eastern side, of the Farm Track, directly opposite the Farm Produce Shop.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "Now let's head north across Orchard Lane into the northern half of the park. Over in the north-west lies the Heritage Orchard, which contains two buildings. The one closer to the Farm Track on the north-eastern side of the orchard is our beekeeping enclosure, which is closed for hive maintenance today.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Walk further west through the apple trees to the building in the far north-western side of the Heritage Orchard -- that is our historic Cider Press Shed, where you can taste fresh cloudy apple juice.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Next is the Shearing Pavilion, where our wool-clipping demonstrations run at eleven-thirty and two-thirty. Follow the Farm Track north past Orchard Lane almost all the way to its northern end. The Shearing Pavilion sits immediately on the eastern side of the Farm Track, directly west of Redgum Dam.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Finally, don't miss the Blacksmith's Forge, where you can watch horseshoes being shaped over glowing coals. Coming east along Orchard Lane from the central crossroads, you will see two buildings on the northern side of the lane. The far eastern one right underneath Redgum Dam is simply our stacked hay barn.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "The Blacksmith's Forge is the building closer to the Farm Track on the northern side of Orchard Lane, sitting south-west of Redgum Dam and south of the Shearing Pavilion.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Hand-washing stations with warm water and soap are posted beside every paddock exit, so please give your hands a quick scrub before eating. Have a brilliant day at Redgum Heritage Farm Park.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p2_005.mp3",
+    "durationSec": 310,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO upgrades have been completed at Redgum Heritage Farm Park over the past year?",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A sealed car park for tour coaches"
+        },
+        {
+          "key": "B",
+          "text": "Solar panels supplying power to the milking shed"
+        },
+        {
+          "key": "C",
+          "text": "An indoor cafe overlooking the river"
+        },
+        {
+          "key": "D",
+          "text": "Rainwater harvesting tanks for the vegetable plots"
+        },
+        {
+          "key": "E",
+          "text": "A miniature steam railway around the boundary"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_005_q01",
+          "number": 1,
+          "prompt": "Completed upgrade 1 (Choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "B",
+              "D"
+            ],
+            "keys": [
+              "B",
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l03",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "sealed coach car park / riverfront cafe / miniature steam railway",
+              "explanationVi": "Bãi đậu xe khách (A) đang chờ duyệt, quán cà phê ven sông (C) mới trên bản vẽ, còn tàu hỏa hơi nước (E) thuộc công viên khác; hệ thống pin mặt trời cho khu vắt sữa (B) đã hoàn thành."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_005_q02",
+          "number": 2,
+          "prompt": "Completed upgrade 2 (Choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "B",
+              "D"
+            ],
+            "keys": [
+              "B",
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l04",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO rules must visitors follow when visiting the livestock paddocks?",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Wear disposable plastic overshoes supplied at the gate"
+        },
+        {
+          "key": "B",
+          "text": "Feed animals only with grain pellets bought at the kiosk"
+        },
+        {
+          "key": "C",
+          "text": "Keep voices low when walking past the lambing pens"
+        },
+        {
+          "key": "D",
+          "text": "Remain seated inside the tractor trailer throughout"
+        },
+        {
+          "key": "E",
+          "text": "Avoid leaning against the timber fence rails"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_005_q03",
+          "number": 3,
+          "prompt": "Livestock paddock rule 1 (Choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "B",
+              "C"
+            ],
+            "keys": [
+              "B",
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l06",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l05",
+              "start": 0,
+              "end": 0,
+              "decoy": "blue disposable plastic overshoes (A)",
+              "explanationVi": "Quy định mang bao giày nhựa (A) đã bỏ từ tháng trước khi đường khô ráo; khách cũng được xuống xe đi bộ (D sai) và dựa nhẹ hàng rào (E sai)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_005_q04",
+          "number": 4,
+          "prompt": "Livestock paddock rule 2 (Choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "B",
+              "C"
+            ],
+            "keys": [
+              "B",
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    },
+    {
+      "groupId": "g3_map",
+      "type": "map_labelling",
+      "instructions": "Label the map of Redgum Heritage Farm Park. Write the correct letter, A-I, next to questions 5-10.",
+      "previewSec": 30,
+      "map": {
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "youAreHere": {
+          "x": 400,
+          "y": 482
+        },
+        "shapes": [
+          {
+            "id": "road_gumtree",
+            "kind": "road",
+            "x": 40,
+            "y": 500,
+            "w": 720,
+            "h": 35,
+            "label": "Gumtree Lane"
+          },
+          {
+            "id": "ent_ticket",
+            "kind": "entrance",
+            "x": 345,
+            "y": 465,
+            "w": 110,
+            "h": 35,
+            "label": "Ticket Barn"
+          },
+          {
+            "id": "path_track",
+            "kind": "path",
+            "x": 388,
+            "y": 85,
+            "w": 24,
+            "h": 380,
+            "label": "Farm Track"
+          },
+          {
+            "id": "path_orchard_w",
+            "kind": "path",
+            "x": 90,
+            "y": 270,
+            "w": 298,
+            "h": 20,
+            "label": "Orchard Lane"
+          },
+          {
+            "id": "path_orchard_e",
+            "kind": "path",
+            "x": 412,
+            "y": 270,
+            "w": 298,
+            "h": 20,
+            "label": "Orchard Lane"
+          },
+          {
+            "id": "park_orchard",
+            "kind": "park",
+            "x": 65,
+            "y": 55,
+            "w": 260,
+            "h": 185,
+            "label": "Heritage Orchard"
+          },
+          {
+            "id": "water_dam",
+            "kind": "water",
+            "x": 560,
+            "y": 55,
+            "w": 195,
+            "h": 120,
+            "label": "Redgum Dam"
+          },
+          {
+            "id": "park_tractor",
+            "kind": "parking",
+            "x": 65,
+            "y": 410,
+            "w": 145,
+            "h": 65,
+            "label": "Tractor Yard"
+          },
+          {
+            "id": "bldg_a",
+            "kind": "building",
+            "x": 80,
+            "y": 90,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_b",
+            "kind": "building",
+            "x": 230,
+            "y": 90,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_c",
+            "kind": "building",
+            "x": 420,
+            "y": 80,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_d",
+            "kind": "building",
+            "x": 480,
+            "y": 195,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_e",
+            "kind": "building",
+            "x": 650,
+            "y": 200,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_f",
+            "kind": "building",
+            "x": 110,
+            "y": 320,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_g",
+            "kind": "building",
+            "x": 270,
+            "y": 350,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_h",
+            "kind": "building",
+            "x": 460,
+            "y": 350,
+            "w": 70,
+            "h": 50
+          },
+          {
+            "id": "bldg_i",
+            "kind": "building",
+            "x": 630,
+            "y": 370,
+            "w": 70,
+            "h": 50
+          }
+        ],
+        "slots": [
+          {
+            "key": "A",
+            "x": 115,
+            "y": 115
+          },
+          {
+            "key": "B",
+            "x": 265,
+            "y": 115
+          },
+          {
+            "key": "C",
+            "x": 455,
+            "y": 105
+          },
+          {
+            "key": "D",
+            "x": 515,
+            "y": 220
+          },
+          {
+            "key": "E",
+            "x": 685,
+            "y": 225
+          },
+          {
+            "key": "F",
+            "x": 145,
+            "y": 345
+          },
+          {
+            "key": "G",
+            "x": 305,
+            "y": 375
+          },
+          {
+            "key": "H",
+            "x": 495,
+            "y": 375
+          },
+          {
+            "key": "I",
+            "x": 665,
+            "y": 395
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p2_005_q05",
+          "number": 5,
+          "prompt": "Farm Produce Shop",
+          "answer": {
+            "accepted": [
+              "G"
+            ],
+            "keys": [
+              "G"
+            ]
+          },
+          "evidence": {
+            "lineId": "l09",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_005_q06",
+          "number": 6,
+          "prompt": "Milking Parlour",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l10",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_005_q07",
+          "number": 7,
+          "prompt": "Picnic Shelter",
+          "answer": {
+            "accepted": [
+              "H"
+            ],
+            "keys": [
+              "H"
+            ]
+          },
+          "evidence": {
+            "lineId": "l12",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l11",
+              "start": 0,
+              "end": 0,
+              "decoy": "far south-eastern corner near Gumtree Lane (I)",
+              "explanationVi": "Tòa nhà góc đông nam (I) là phòng khám thú y nội bộ; khu dã ngoại có mái che nằm ngay bên phải Farm Track đối diện cửa hàng nông sản (H)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_005_q08",
+          "number": 8,
+          "prompt": "Cider Press Shed",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "decoy": "north-eastern side of the orchard closer to Farm Track (B)",
+              "explanationVi": "Khu vực gần Farm Track (B) là trại nuôi ong đang đóng cửa bảo trì; xưởng ép nước táo nằm ở phía tây bắc của Heritage Orchard (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_005_q09",
+          "number": 9,
+          "prompt": "Shearing Pavilion",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l15",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_005_q10",
+          "number": 10,
+          "prompt": "Blacksmith's Forge",
+          "answer": {
+            "accepted": [
+              "D"
+            ],
+            "keys": [
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l17",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l16",
+              "start": 0,
+              "end": 0,
+              "decoy": "far eastern building directly south of Redgum Dam (E)",
+              "explanationVi": "Tòa nhà cực đông ngay dưới Redgum Dam (E) chỉ là kho cỏ khô; lò rèn nằm phía bắc Orchard Lane gần Farm Track hơn (D)."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "edge-tts (personal use)",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -82,7 +82,24 @@ export function buildManifest(rootDir = process.cwd()) {
         totals.readingQuestions = (totals.readingQuestions || 0) + qCount;
       }
     }
-    else if (rel.startsWith('listening/episodes/')) totals.listeningEpisodes = (totals.listeningEpisodes || 0) + 1;
+    else if (rel.startsWith('listening/episodes/')) {
+      totals.listeningEpisodes = (totals.listeningEpisodes || 0) + 1;
+      if (parsed && parsed.reserved === true) {
+        totals.listeningReserved = (totals.listeningReserved || 0) + 1;
+      } else {
+        totals.listeningTraining = (totals.listeningTraining || 0) + 1;
+      }
+      if (parsed && Array.isArray(parsed.questionGroups)) {
+        const qCount = parsed.questionGroups.reduce(
+          (sum, g) => sum + (Array.isArray(g.questions) ? g.questions.length : 0),
+          0
+        );
+        totals.listeningQuestions = (totals.listeningQuestions || 0) + qCount;
+        if (parsed.questionGroups.some((g) => g.type === 'map_labelling' && g.map)) {
+          totals.listeningMaps = (totals.listeningMaps || 0) + 1;
+        }
+      }
+    }
     else if (rel === 'listening/dictation.json') totals.dictation = count;
     else if (rel === 'writing/task2_prompts.json') totals.writingTask2 = count;
     else if (rel.startsWith('writing/task1/') && rel !== 'writing/task1/index.json') {

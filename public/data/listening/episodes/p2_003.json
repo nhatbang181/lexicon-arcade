@@ -1,0 +1,624 @@
+{
+  "id": "lep:p2_003",
+  "part": 2,
+  "reserved": false,
+  "title": "Old Foundry Maritime Museum Floorplan",
+  "contextEn": "A maritime museum curator welcomes visitors to the Old Foundry Maritime Museum, explains the building's history and visitor policies, and guides them through the ground-floor plan.",
+  "difficulty": 5,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Claire Dunstan",
+      "role": "Curator of Maritime History",
+      "voice": "bf_emma",
+      "accent": "uk"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Good afternoon, everyone, and welcome to the Old Foundry Maritime Museum. I am Claire Dunstan, the curator here. Before you explore our galleries, let me share a bit of the building's history, today's visitor notes, and our ground-floor plan.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "Visitors often guess this tall brick hall was once a boatyard building timber lifeboats for the rescue crew. Those boats were built in the slipway shed next door, and this hall only stored imported rope and timber after 1920.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "When it first opened in 1864, its coal furnaces cast heavy iron anchors and chain links for coastal merchant ships.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s1",
+      "text": "Our centrepiece is the 1898 steam tugboat Sovereign, formerly moored outside on the quay. Some locals thought the harbour council needed her berth for ferries, or that the quay walkway was too narrow.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Neither of those was the reason. The real problem was that wind-driven salt spray blowing in from the harbour mouth was eating rapidly through her riveted iron hull plates, faster than our conservation team could repaint them, so bringing her under a dry roof was the only way to save her.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s1",
+      "text": "Now for a quick note on your admission wristbands today. I am afraid the upper bell-tower viewing gallery is closed until next Thursday for electrical rewiring, and our printed chart catalogue is an optional purchase in the shop rather than part of your entry.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "However, your standard adult wristband does include entry to our live traditional rope-making demonstration at two o'clock in the outdoor courtyard, with no extra ticket required.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "One last policy reminder before we look at the map: photography. Unlike some older museums, we certainly do not ban photos across the building, and handheld phones or compact cameras are welcome in almost every gallery.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Do remember to switch off your camera flash inside the historic map room so bright bursts do not fade the antique ink. Also, if you have brought a tripod, it may only be set up once reception has issued you a written permission slip.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s1",
+      "text": "Let's look down at your ground-floor plan now. We are standing at the Main Entrance on the southern wall, just off Harbour Quay. Stretching directly north ahead of you is the wide Central Atrium, leading towards the huge Steam Tugboat Hall at the northern end of the museum.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "First, if you have heavy coats or backpacks to leave behind, head for the Cloakroom and Lockers. Walk north from the Main Entrance into the Central Atrium, and it is the room immediately on your left, on the western side of the atrium before you reach the West Corridor.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "For families with younger visitors, our hands-on Children's Discovery Deck is also on the southern side of the West Corridor, but further west than the cloakroom. Turn left along the West Corridor and you will find it filling the large corner room in the far south-west of the building.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s1",
+      "text": "Next, let's locate the Museum Gift Shop. Visitors coming down the East Corridor sometimes walk all the way to the small square annex at its far eastern end thinking it is the shop doorway, when in fact that is only our emergency stairwell.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Instead, return to the Central Atrium south of the East Corridor. The Museum Gift Shop sits immediately on your right on the eastern side of the atrium, neatly tucked between the Central Atrium and the outdoor Courtyard.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Moving north of the corridors now, let's find our prized Historic Map Room. Walk west along the West Corridor and look to your right, on the northern side. You will pass a medium-sized room close to the Central Atrium, which is our glass-walled conservation lab and closed to the public.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Walk right past that lab and carry on to the far north-western corner of the museum. The Historic Map Room is the large room standing directly west of the Steam Tugboat Hall.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s1",
+      "text": "On the opposite side of the building, our Navigation Instruments Gallery displays brass sextants and marine chronometers. It occupies the matching large corner room in the far north-east, directly east of the Steam Tugboat Hall and north of the East Corridor.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Finally, our short film on local maritime rescues screens every half hour in the Shipwreck Cinema. Come back along the East Corridor towards the centre: the cinema is the room on the northern side of the East Corridor, immediately east of the Central Atrium and just south-east of the Steam Tugboat Hall.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s1",
+      "text": "Benches are provided inside every gallery if you would like a rest, and our gallery stewards are always happy to share extra stories about the ships. Enjoy your afternoon at the Old Foundry.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p2_003.mp3",
+    "durationSec": 290,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p2_003_q01",
+          "number": 1,
+          "prompt": "What was the Old Foundry hall originally used for when it opened in 1864?\nA. Casting iron anchors and chains for merchant vessels.\nB. Building wooden lifeboats for the harbour rescue team.\nC. Storing imported timber and rope for local sailmakers.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l03",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "timber lifeboats / storage warehouse after 1920",
+              "explanationVi": "Xuồng gỗ được đóng ở xưởng bên cạnh (B sai), còn kho gỗ/dây thừng chỉ xuất hiện sau năm 1920 (C sai); mục đích ban đầu năm 1864 là đúc mỏ neo và xích sắt (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_003_q02",
+          "number": 2,
+          "prompt": "Why was the steam tugboat Sovereign moved inside the museum?\nA. The harbour council needed her berth for commercial ferries.\nB. Wind-blown salt spray was damaging her iron hull.\nC. The outdoor quay walkway was too narrow for tour groups.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l05",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l04",
+              "start": 0,
+              "end": 0,
+              "decoy": "harbour council demanded her berth / walkway was getting too narrow",
+              "explanationVi": "Cả hai lý do A và C đều bị người nói phủ nhận ('Neither of those was the reason'); nguyên nhân thật là bụi muối biển ăn mòn thân tàu sắt (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_003_q03",
+          "number": 3,
+          "prompt": "What is included at no extra charge with a standard adult ticket today?\nA. Access to the upper bell-tower viewing gallery.\nB. A printed catalogue of the historic chart collection.\nC. Entry to the afternoon rope-making demonstration.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l07",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "bell-tower viewing gallery is closed until next Thursday",
+              "explanationVi": "Tháp chuông (A) đang đóng cửa sửa điện, còn sách danh mục bản đồ (B) phải mua thêm; chỉ buổi trình diễn bện dây thừng chiều nay miễn phí kèm vé (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_003_q04",
+          "number": 4,
+          "prompt": "What does the curator say about photography inside the museum?\nA. Tripods are allowed only with written permission from reception.\nB. Cameras are banned in every gallery of the building.\nC. Flash photography is permitted inside the historic map room.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l09",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "do not ban photos / switch off your camera flash",
+              "explanationVi": "Bảo tàng không cấm chụp ảnh (B sai) và bắt buộc tắt đèn flash ở phòng bản đồ (C sai); chân máy chỉ được dùng khi có giấy phép của quầy lễ tân (A)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_map",
+      "type": "map_labelling",
+      "instructions": "Label the floorplan of the Old Foundry Maritime Museum. Write the correct letter, A-H, next to questions 5-10.",
+      "previewSec": 30,
+      "map": {
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "youAreHere": {
+          "x": 400,
+          "y": 482
+        },
+        "shapes": [
+          {
+            "id": "road_quay",
+            "kind": "road",
+            "x": 40,
+            "y": 500,
+            "w": 720,
+            "h": 35,
+            "label": "Harbour Quay"
+          },
+          {
+            "id": "ent_main",
+            "kind": "entrance",
+            "x": 345,
+            "y": 465,
+            "w": 110,
+            "h": 35,
+            "label": "Main Entrance"
+          },
+          {
+            "id": "path_atrium",
+            "kind": "path",
+            "x": 350,
+            "y": 190,
+            "w": 100,
+            "h": 275,
+            "label": "Central Atrium"
+          },
+          {
+            "id": "path_west",
+            "kind": "path",
+            "x": 110,
+            "y": 275,
+            "w": 240,
+            "h": 24,
+            "label": "West Corridor"
+          },
+          {
+            "id": "path_east",
+            "kind": "path",
+            "x": 450,
+            "y": 275,
+            "w": 240,
+            "h": 24,
+            "label": "East Corridor"
+          },
+          {
+            "id": "bldg_steam",
+            "kind": "building",
+            "x": 280,
+            "y": 50,
+            "w": 240,
+            "h": 120,
+            "label": "Steam Tugboat Hall"
+          },
+          {
+            "id": "park_court",
+            "kind": "park",
+            "x": 565,
+            "y": 340,
+            "w": 175,
+            "h": 110,
+            "label": "Courtyard"
+          },
+          {
+            "id": "room_a",
+            "kind": "building",
+            "x": 75,
+            "y": 75,
+            "w": 110,
+            "h": 85
+          },
+          {
+            "id": "room_b",
+            "kind": "building",
+            "x": 215,
+            "y": 195,
+            "w": 95,
+            "h": 65
+          },
+          {
+            "id": "room_c",
+            "kind": "building",
+            "x": 605,
+            "y": 75,
+            "w": 110,
+            "h": 85
+          },
+          {
+            "id": "room_d",
+            "kind": "building",
+            "x": 490,
+            "y": 195,
+            "w": 95,
+            "h": 65
+          },
+          {
+            "id": "room_e",
+            "kind": "building",
+            "x": 75,
+            "y": 340,
+            "w": 115,
+            "h": 90
+          },
+          {
+            "id": "room_f",
+            "kind": "building",
+            "x": 225,
+            "y": 340,
+            "w": 95,
+            "h": 90
+          },
+          {
+            "id": "room_g",
+            "kind": "building",
+            "x": 465,
+            "y": 340,
+            "w": 80,
+            "h": 90
+          },
+          {
+            "id": "room_h",
+            "kind": "building",
+            "x": 700,
+            "y": 245,
+            "w": 65,
+            "h": 65
+          }
+        ],
+        "slots": [
+          {
+            "key": "A",
+            "x": 130,
+            "y": 117
+          },
+          {
+            "key": "B",
+            "x": 262,
+            "y": 227
+          },
+          {
+            "key": "C",
+            "x": 660,
+            "y": 117
+          },
+          {
+            "key": "D",
+            "x": 537,
+            "y": 227
+          },
+          {
+            "key": "E",
+            "x": 132,
+            "y": 385
+          },
+          {
+            "key": "F",
+            "x": 272,
+            "y": 385
+          },
+          {
+            "key": "G",
+            "x": 505,
+            "y": 385
+          },
+          {
+            "key": "H",
+            "x": 732,
+            "y": 277
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p2_003_q05",
+          "number": 5,
+          "prompt": "Cloakroom and Lockers",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l11",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_003_q06",
+          "number": 6,
+          "prompt": "Children's Discovery Deck",
+          "answer": {
+            "accepted": [
+              "E"
+            ],
+            "keys": [
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l12",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_003_q07",
+          "number": 7,
+          "prompt": "Museum Gift Shop",
+          "answer": {
+            "accepted": [
+              "G"
+            ],
+            "keys": [
+              "G"
+            ]
+          },
+          "evidence": {
+            "lineId": "l14",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l13",
+              "start": 0,
+              "end": 0,
+              "decoy": "small square annex at far eastern end of East Corridor (H)",
+              "explanationVi": "Phòng nhỏ tận cùng phía đông (H) là cầu thang thoát hiểm; cửa hàng quà tặng nằm ngay bên phải sảnh trung tâm giữa Central Atrium và Courtyard (G)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_003_q08",
+          "number": 8,
+          "prompt": "Historic Map Room",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l16",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "map_direction",
+              "lineId": "l15",
+              "start": 0,
+              "end": 0,
+              "decoy": "medium-sized room close to Central Atrium (B)",
+              "explanationVi": "Phòng gần sảnh trung tâm (B) là phòng bảo quản đóng cửa; phòng bản đồ cổ nằm ở góc tây bắc ngay phía tây Steam Tugboat Hall (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p2_003_q09",
+          "number": 9,
+          "prompt": "Navigation Instruments Gallery",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l17",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        },
+        {
+          "qid": "lep_p2_003_q10",
+          "number": 10,
+          "prompt": "Shipwreck Cinema",
+          "answer": {
+            "accepted": [
+              "D"
+            ],
+            "keys": [
+              "D"
+            ]
+          },
+          "evidence": {
+            "lineId": "l18",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

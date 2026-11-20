@@ -1,0 +1,582 @@
+{
+  "id": "lep:p3_res_001",
+  "part": 3,
+  "reserved": true,
+  "title": "Solar Desalination Prototype Review",
+  "contextEn": "Two mechanical engineering students, Sam and Elena, review performance data and field-readiness upgrades for their passive solar desalination still.",
+  "difficulty": 7,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Sam",
+      "role": "Mechanical engineering student",
+      "voice": "bm_lewis",
+      "accent": "uk"
+    },
+    {
+      "id": "s2",
+      "name": "Elena",
+      "role": "Mechanical engineering student",
+      "voice": "af_heart",
+      "accent": "us"
+    }
+  ],
+  "channel": "normal",
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s1",
+      "text": "Elena, I finished plotting our seven-day rooftop test of the passive solar still. Days one to three hit our target yield, then freshwater output fell by a third on day four.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s2",
+      "text": "I saw that dip too. At first I checked the acrylic cover seam for vapour cracks and pulled the weather log for cloud cover.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s1",
+      "text": "The seals stayed completely airtight and we had unbroken sunshine all week. When I lifted the lid on Friday morning, white salt crystals had crusted across the black wicking cloth, reflecting sunlight instead of absorbing it.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s2",
+      "text": "Ah, salt fouling explains that sharp drop. Speaking of the absorber, I am glad I swapped out our matte-painted metal tray for woven carbon fabric before this run.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s1",
+      "text": "Wait, was that because the matte paint started peeling in saltwater, or because the physics lab donated the carbon roll for free?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s2",
+      "text": "Neither — the paint held fine and we had to purchase the roll out of our grant. Woven carbon fabric draws seawater upward evenly by capillary action, keeping a paper-thin film that evaporates far faster than a deep basin.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Makes total sense. Now, on the condensation side, we still lost droplets dripping straight back into the brine tank before reaching the gutter.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s2",
+      "text": "I remember you suggesting we double the thickness of the top glass sheet or coat the underside with anti-fog detergent.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s1",
+      "text": "Right, you convinced me thick glass holds too much heat and slows cooling, and detergent residue would contaminate drinking water. Tilting the condensing cover to a steeper thirty-degree angle lets droplets glide cleanly down into the trough.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s2",
+      "text": "Agreed, steeper glass is simple and safe. How are you feeling about our night-time heat-storage layer underneath the tray?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s1",
+      "text": "Well, switching from heavy gravel beds to sealed copper tubes of paraffin wax solved the portability problem, and none of the tubes leaked a drop.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "What still bothers me is thermal lag: adding extra heat storage gives us an hour of dusk output, yet it noticeably delays how quickly the brine warms up every morning.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s2",
+      "text": "Good observation, we should quantify that trade-off in the report. Next, for our village deployment section, which design features are genuinely essential if remote coastal communities are going to adopt this unit?",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s1",
+      "text": "Definitely skip motorized dual-axis sun-trackers: sea air corrodes small gears within months. And a smartphone alert app for brine flushing is pointless where cellular coverage is patchy.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s2",
+      "text": "Nor do we need built-in ultraviolet sterilising lamps, because solar distillation already removes bacteria and salts. One thing we absolutely must preserve is using standard gaskets and hoses that villagers can buy at any ordinary hardware shop.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s1",
+      "text": "Yes, locally sourced spare seals keep maintenance realistic. And equally vital is our flat-pack modular frame.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s2",
+      "text": "Right, when the frames stack flat, twenty units fit inside a single pickup truck or coastal fishing boat without shipping damage.",
+      "start": 0,
+      "end": 0,
+      "pauseAfter": 0.8
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s1",
+      "text": "Great, spare hardware-shop seals and flat-stacking frames are our two core village priorities. Let us wrap up by recording our final testing verdict on four key prototype components. First, the distillate collection gutter.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s2",
+      "text": "Structurally it caught every drop without leaking, so I almost ticked it as ready. Then our water chemistry check picked up trace aluminium leaching from the coated channel, so it has to be swapped for a food-grade stainless steel version.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s1",
+      "text": "Good catch. Second is the brine flush outlet. We already fitted marine-grade stainless bolts there, so corrosion is zero.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s2",
+      "text": "No rust at all, yet the narrow eight-millimetre outlet choked repeatedly on thick salt sludge during evening drains. We need to fit a noticeably wider drainage valve.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s1",
+      "text": "Noted. Third, the sidewall timber casing. Obviously we would never shade a solar still from afternoon sun, though our thermal camera did spot a real weakness there.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s2",
+      "text": "Yes, heat poured straight out through the thin plywood walls whenever sea breezes picked up. Lining those sides with thicker closed-cell foam insulation will boost internal vapour temperatures.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s1",
+      "text": "Finally, the silicone perimeter gasket. It is already certified food-safe and held an airtight seal across twenty harsh heating and cooling cycles.",
+      "start": 0,
+      "end": 0
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "s2",
+      "text": "Completely reliable, no redesign required at all. Let us update the engineering log and order those three replacement parts tomorrow.",
+      "start": 0,
+      "end": 0
+    }
+  ],
+  "audio": {
+    "path": "audio/listening/p3_res_001.mp3",
+    "durationSec": 315,
+    "sha256": "pending",
+    "loudnessLUFS": -16
+  },
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_001_q01",
+          "number": 1,
+          "prompt": "What caused freshwater output to drop by one third on day four of testing?\nA. Vapour escaped through cracks along the acrylic cover seam.\nB. Prolonged cloud cover lowered afternoon solar intensity.\nC. Salt deposits built up across the surface of the wicking cloth.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l03",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l02",
+              "start": 0,
+              "end": 0,
+              "decoy": "acrylic cover seam / cloud cover",
+              "explanationVi": "Elena kiểm tra vết nứt nắp nhựa (A) và mây che nắng (B), nhưng Sam bác bỏ cả hai và chỉ ra lớp muối kết tinh phủ kín vải thấm làm phản xạ ánh nắng (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_res_001_q02",
+          "number": 2,
+          "prompt": "Why did Elena replace the matte-painted metal tray with woven carbon fabric?\nA. It pulls a thin, even layer of seawater upward for faster evaporation.\nB. The original matte coating peeled away after saltwater exposure.\nC. The physics department supplied the carbon fabric free of charge.",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l06",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l06",
+              "start": 0,
+              "end": 0,
+              "decoy": "Neither — the paint held fine and we had to purchase the roll",
+              "explanationVi": "Elena phủ nhận cả việc sơn bị bong (loại B) lẫn được tặng miễn phí (loại C); lý do chọn vải carbon là hiện tượng mao dẫn hút màng nước biển mỏng bốc hơi nhanh hơn (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_res_001_q03",
+          "number": 3,
+          "prompt": "How do Sam and Elena decide to reduce water droplets falling back into the brine?\nA. Fit a thicker glass cover over the evaporation chamber.\nB. Increase the tilt angle of the condensing cover.\nC. Apply an anti-fog detergent coating inside the glass.",
+          "answer": {
+            "accepted": [
+              "B"
+            ],
+            "keys": [
+              "B"
+            ]
+          },
+          "evidence": {
+            "lineId": "l09",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l08",
+              "start": 0,
+              "end": 0,
+              "decoy": "double the thickness / anti-fog detergent",
+              "explanationVi": "Sam từng đề xuất kính dày gấp đôi (A) và dung dịch chống đọng sương (C) nhưng sau đó đồng ý bỏ cả hai để nâng độ dốc nắp ngưng tụ lên 30 độ (B)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_res_001_q04",
+          "number": 4,
+          "prompt": "What drawback of the night-time heat-storage layer still concerns Sam?\nA. Paraffin wax tubes risk leaking into the freshwater trough.\nB. Gravel storage beds make the prototype too heavy to carry.\nC. Extra thermal mass slows down morning heating of the brine.",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l12",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l11",
+              "start": 0,
+              "end": 0,
+              "decoy": "gravel beds / none of the tubes leaked",
+              "explanationVi": "Họ đã bỏ lớp sỏi nặng (loại B) và ống đồng sáp paraffin không rò rỉ (loại A); nhược điểm khiến Sam băn khoăn là độ trễ nhiệt làm nước biển nóng chậm vào buổi sáng (C)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_mcq_multi",
+      "type": "mcq_multi",
+      "instructions": "Choose TWO letters, A-E. Which TWO design features do Sam and Elena agree are essential for rural village adoption?",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Spare seals available from ordinary hardware shops"
+        },
+        {
+          "key": "B",
+          "text": "Smartphone app alerts for brine flushing"
+        },
+        {
+          "key": "C",
+          "text": "Modular frames that stack flat for transport"
+        },
+        {
+          "key": "D",
+          "text": "Motorized dual-axis sun-tracking mounts"
+        },
+        {
+          "key": "E",
+          "text": "Built-in ultraviolet sterilising lamps"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_001_q05",
+          "number": 5,
+          "prompt": "First essential feature for rural village adoption (choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "A",
+              "C"
+            ],
+            "keys": [
+              "A",
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l15",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l14",
+              "start": 0,
+              "end": 0,
+              "decoy": "motorized dual-axis sun-trackers / smartphone alert app / ultraviolet sterilising lamps",
+              "explanationVi": "Bộ xoay theo nắng (D) dễ gỉ, ứng dụng điện thoại (B) vô dụng khi sóng yếu và đèn UV (E) thừa thãi; yếu tố cần thiết đầu tiên là gioăng ống tiêu chuẩn dễ mua ở tiệm kim khí địa phương (A)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_res_001_q06",
+          "number": 6,
+          "prompt": "Second essential feature for rural village adoption (choose TWO letters, A-E)",
+          "answer": {
+            "accepted": [
+              "A",
+              "C"
+            ],
+            "keys": [
+              "A",
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l17",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "synonym_paraphrase",
+              "lineId": "l17",
+              "start": 0,
+              "end": 0,
+              "decoy": "when the frames stack flat, twenty units fit inside a single pickup truck",
+              "explanationVi": "Khung mô-đun xếp phẳng gọn để chở trên xe bán tải hoặc thuyền đánh cá khớp chính xác với lựa chọn C."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g3_matching",
+      "type": "matching",
+      "instructions": "What testing verdict do Sam and Elena record for each prototype component? Choose FOUR answers from the box and write the correct letter, A-F, next to Questions 7-10.",
+      "previewSec": 30,
+      "options": [
+        {
+          "key": "A",
+          "text": "Performs reliably with no redesign needed"
+        },
+        {
+          "key": "B",
+          "text": "Needs corrosion-resistant fasteners"
+        },
+        {
+          "key": "C",
+          "text": "Requires a wider drainage valve"
+        },
+        {
+          "key": "D",
+          "text": "Must be shaded from afternoon glare"
+        },
+        {
+          "key": "E",
+          "text": "Should be replaced with a food-grade alternative"
+        },
+        {
+          "key": "F",
+          "text": "Needs thicker foam insulation"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_001_q07",
+          "number": 7,
+          "prompt": "Distillate collection gutter",
+          "answer": {
+            "accepted": [
+              "E"
+            ],
+            "keys": [
+              "E"
+            ]
+          },
+          "evidence": {
+            "lineId": "l19",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "changed_plan",
+              "lineId": "l19",
+              "start": 0,
+              "end": 0,
+              "decoy": "almost ticked it as ready",
+              "explanationVi": "Elena suýt đánh dấu đạt chuẩn không cần sửa (bẫy A), nhưng phát hiện vết nhôm thôi nhiễm nên phải thay bằng vật liệu an toàn thực phẩm (E)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_res_001_q08",
+          "number": 8,
+          "prompt": "Brine flush outlet",
+          "answer": {
+            "accepted": [
+              "C"
+            ],
+            "keys": [
+              "C"
+            ]
+          },
+          "evidence": {
+            "lineId": "l21",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "negation_shift",
+              "lineId": "l20",
+              "start": 0,
+              "end": 0,
+              "decoy": "marine-grade stainless bolts",
+              "explanationVi": "Ốc chống ăn mòn (B) đã được lắp sẵn nên không gỉ; vấn đề là ống xả hẹp hay nghẹt bùn muối nên cần van xả rộng hơn (C)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_res_001_q09",
+          "number": 9,
+          "prompt": "Sidewall timber casing",
+          "answer": {
+            "accepted": [
+              "F"
+            ],
+            "keys": [
+              "F"
+            ]
+          },
+          "evidence": {
+            "lineId": "l23",
+            "start": 0,
+            "end": 0
+          },
+          "traps": [
+            {
+              "type": "option_mentioned_rejected",
+              "lineId": "l22",
+              "start": 0,
+              "end": 0,
+              "decoy": "shade a solar still from afternoon sun",
+              "explanationVi": "Sam bác bỏ ý che nắng (D) và Elena kết luận vách gỗ mỏng thất thoát nhiệt nên cần lót xốp cách nhiệt dày hơn (F)."
+            }
+          ]
+        },
+        {
+          "qid": "lep_p3_res_001_q10",
+          "number": 10,
+          "prompt": "Silicone perimeter gasket",
+          "answer": {
+            "accepted": [
+              "A"
+            ],
+            "keys": [
+              "A"
+            ]
+          },
+          "evidence": {
+            "lineId": "l25",
+            "start": 0,
+            "end": 0
+          },
+          "traps": []
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

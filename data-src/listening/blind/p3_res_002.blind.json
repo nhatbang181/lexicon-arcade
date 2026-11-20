@@ -1,0 +1,260 @@
+{
+  "id": "lep:p3_res_002",
+  "part": 3,
+  "reserved": true,
+  "title": "Oral History Archive of Coastal Shipyards",
+  "contextEn": "Two history students, Fiona and Ben, meet their dissertation tutor Dr Laura Chen to review their interview methodology and cataloguing plan for an oral history archive of retired shipyard workers.",
+  "difficulty": 8,
+  "speakers": [
+    {
+      "id": "s1",
+      "name": "Fiona",
+      "role": "History student",
+      "accent": "uk"
+    },
+    {
+      "id": "s2",
+      "name": "Ben",
+      "role": "History student",
+      "accent": "uk"
+    },
+    {
+      "id": "s3",
+      "name": "Dr Chen",
+      "role": "History dissertation tutor",
+      "accent": "us"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "s3",
+      "text": "Welcome back, Fiona and Ben. You have already completed twelve interviews with retired Northmoor shipyard workers. I noticed you moved out of the municipal library after session two — why the change of venue?"
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "s1",
+      "text": "The library meeting rooms were actually carpeted and whisper-quiet, and their opening hours suited everyone's schedules."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "s2",
+      "text": "Yet sitting across a bare municipal table made people stiff and formal. Once we shifted to interviewees' own sitting rooms, surrounded by framed launch photos and old brass calipers, they relaxed and spoke far more candidly."
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "s3",
+      "text": "Home environments almost always unlock richer memory cues. Ben, looking back at your own interviewing technique, what early mistake stood out when you played back your first two files?"
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "s2",
+      "text": "Thankfully I remembered every copyright release form and recorded everything in lossless WAV rather than compressed audio. My real blunder was jumping in too quickly whenever an elder paused to think, cutting off memories right before the crucial detail emerged."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "s3",
+      "text": "Learning to sit comfortably with five seconds of silence is half of oral history. Fiona, across all twelve transcripts, did any recurring theme genuinely surprise you?"
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "s1",
+      "text": "Apprentice wages lined up closely with printed union ledgers, and retired female clerical staff were actually eager to discuss the nineteen-eighties yard closures."
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "s1",
+      "text": "What struck me most was sensory recall: workers struggled to sketch slipway floor plans, yet they described the shipyard's soundscape — riveting hammers, crane bells, foghorns — with astonishing clarity."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "s3",
+      "text": "That sonic memory angle could anchor an entire chapter. Now, before publishing excerpts online, Ben asked whether we should tidy up thick regional dialect phrases into standard English."
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "s2",
+      "text": "Only to make them easier for visiting school groups to read. Does the heritage grant forbid editing punctuation, or is it just too time-consuming?"
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "s3",
+      "text": "Neither — the fund allows light punctuation for readability, and editing time is minor. My objection is methodological: smoothing out coastal dialect strips away occupational identity and destroys genuine linguistic evidence."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "s1",
+      "text": "Understood, we keep their exact phrasing intact. One thorny issue left before cataloguing: two retired foremen gave conflicting years for the launch of the cargo ship Halcyon. Should we ask the older foreman to correct his date on tape, or leave the year off our website?"
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "s3",
+      "text": "Never coach a narrator to alter a recollection, and do not hide the discrepancy either. Preserve both oral accounts exactly as spoken, and attach an archival footnote cross-referencing local newspaper launch records."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "s2",
+      "text": "That treats memory respectfully while giving researchers verifiable context. Let us quickly review the five thematic archive folders we are building and flag the main curatorial challenge in each. First, apprentice tool-making stories."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "s1",
+      "text": "Those digital recordings are crystal clear, yet the transcripts are packed with obsolete riveter and caulker jargon that modern listeners will not understand without an explanatory glossary."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "s3",
+      "text": "Good, flag jargon there. Second folder: the yard closure protests. Did you run into overlap with the county maritime museum's permanent gallery?"
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "s2",
+      "text": "Not at all — the museum barely touches the industrial disputes. Our real hurdle is consent: several families worry that naming former yard managers might reignite local friction, so they remain hesitant to approve public audio release."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "s3",
+      "text": "Offer embargoed access or anonymised transcripts in those cases. Third folder: the canteen and payroll office."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "s1",
+      "text": "There is no specialist jargon barrier there, yet our narrator pool is badly skewed: even though women staffed most payroll desks, nearly all the referrals sent by the union club so far have been retired male welders."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "s3",
+      "text": "Definitely reach out to local women's guilds to balance gender representation. Fourth, the launch-day family albums."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "s2",
+      "text": "Unlike workplace ballads, song copyright is not an issue here. Instead, donors handed over boxes of loose black-and-white snapshots with zero dates, hull numbers, or photographer names attached."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "s3",
+      "text": "Missing provenance makes cataloguing slow, so host a community photo-identification afternoon. Lastly, the harbour tugboat crews."
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "s1",
+      "text": "Their families signed public release forms enthusiastically. The headache is audio restoration: our core interviews came from thirty-year-old magnetic cassettes drowned in heavy tape hiss and engine hum."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "s3",
+      "text": "Book two sessions with the university sound-conservation lab for those tapes. You two have mapped this archive with real maturity — send me your updated cataloguing brief next week."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B or C.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_002_q01",
+          "number": 1,
+          "prompt": "Why did Fiona and Ben move their interviews from the municipal library to interviewees' homes?\nA. Library rooms produced strong acoustic echoes on recordings.\nB. Library opening hours clashed with retirees' daytime plans.\nC. Familiar personal objects helped workers speak more openly."
+        },
+        {
+          "qid": "lep_p3_res_002_q02",
+          "number": 2,
+          "prompt": "What interviewing mistake did Ben notice when reviewing his first two recordings?\nA. He interrupted silences before interviewees finished recalling details.\nB. He forgot to collect signed copyright release forms.\nC. He saved the audio in a compressed file format."
+        },
+        {
+          "qid": "lep_p3_res_002_q03",
+          "number": 3,
+          "prompt": "What pattern across the twelve transcripts surprised Fiona most?\nA. Apprentices received lower wages than union ledgers recorded.\nB. Workers recalled shipyard sounds more vividly than physical layouts.\nC. Former clerical staff declined to discuss the 1980s closures."
+        },
+        {
+          "qid": "lep_p3_res_002_q04",
+          "number": 4,
+          "prompt": "Why does Dr Chen argue against standardising regional dialect in the public transcripts?\nA. Rewriting transcripts into standard English takes too long.\nB. Heritage grant rules prohibit changing any original punctuation.\nC. Removing local phrasing erases identity and historical evidence."
+        },
+        {
+          "qid": "lep_p3_res_002_q05",
+          "number": 5,
+          "prompt": "How do the speakers decide to handle conflicting dates for the launch of the Halcyon?\nA. Keep both oral accounts and add a footnote citing press records.\nB. Ask the older foreman to record a corrected date on tape.\nC. Omit the disputed launch year from the online archive."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_matching",
+      "type": "matching",
+      "instructions": "What main curatorial challenge do the speakers identify for each archive collection? Choose FIVE answers from the box and write the correct letter, A-G, next to Questions 6-10.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Missing provenance details for donated snapshots"
+        },
+        {
+          "key": "B",
+          "text": "Reluctance of families to approve public audio release"
+        },
+        {
+          "key": "C",
+          "text": "Heavy use of obsolete technical jargon"
+        },
+        {
+          "key": "D",
+          "text": "Poor acoustic quality on inherited cassette tapes"
+        },
+        {
+          "key": "E",
+          "text": "Overlap with an existing maritime museum exhibit"
+        },
+        {
+          "key": "F",
+          "text": "Uneven gender representation among narrators"
+        },
+        {
+          "key": "G",
+          "text": "Unclear copyright ownership of workplace songs"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "lep_p3_res_002_q06",
+          "number": 6,
+          "prompt": "Apprentice tool-making stories"
+        },
+        {
+          "qid": "lep_p3_res_002_q07",
+          "number": 7,
+          "prompt": "Yard closure protests"
+        },
+        {
+          "qid": "lep_p3_res_002_q08",
+          "number": 8,
+          "prompt": "Canteen and payroll office"
+        },
+        {
+          "qid": "lep_p3_res_002_q09",
+          "number": 9,
+          "prompt": "Launch-day family albums"
+        },
+        {
+          "qid": "lep_p3_res_002_q10",
+          "number": 10,
+          "prompt": "Harbour tugboat crews"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,318 @@
+{
+  "id": "lep:p1_001",
+  "part": 1,
+  "reserved": false,
+  "title": "Harbourview Leisure Centre Membership",
+  "contextEn": "A man phones a local leisure centre receptionist to enquire about membership options and book his gym induction.",
+  "difficulty": 2,
+  "speakers": [
+    {
+      "id": "staff",
+      "name": "Hannah Carter",
+      "role": "Receptionist",
+      "accent": "uk"
+    },
+    {
+      "id": "caller",
+      "name": "Owen Bramwell",
+      "role": "Prospective Member",
+      "accent": "uk"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "staff",
+      "text": "Good morning, Harbourview Leisure Centre, Hannah speaking. How can I help you today?"
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Oh, hello. I just moved into the area last week and I would like to sign up for a gym and swimming membership."
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "staff",
+      "text": "Lovely, welcome to the neighbourhood! I can take your details over the phone right now and get your induction booked in. Could I start with your full name, please?"
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Sure, it is Owen Bramwell."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "staff",
+      "text": "Could you spell your surname for me, Owen? Just so I do not mistype it on your membership card."
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Of course. That is B-R-A-M-W-E-L-L. Double L at the end."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "staff",
+      "text": "Got it, Bramwell. And what is your current street address?"
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "Um, it is 38 Alder Lane... oh, sorry, no, 38 was my old flat! The new house is 48 Alder Lane."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "staff",
+      "text": "Haha, that happens to everyone after moving. So 48 Alder Lane. Could I also take a mobile number in case we need to text you about class changes?"
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "Yes, let me read it carefully. It is 07741 829 350... wait, hang on, the last three digits are 360. Sorry, so 07741 829 360."
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "staff",
+      "text": "Right, ending in three six zero, all noted. Now, let us talk through the membership tiers. We have two main options for adults."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "I saw the all-access plan on your leaflet. That lets you use the pool and the gym at any hour, right?"
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "staff",
+      "text": "Yes, the all-access plan covers seven in the morning until ten at night every day for £54 a month. We also offer an off-peak membership, which runs from seven until four in the afternoon on weekdays, plus Sunday mornings."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Oh, actually, I work evening shifts at the hospital, so I am always free in the mornings. Let me go with the off-peak option instead of all-access."
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "staff",
+      "text": "That will save you quite a bit. The off-peak plan is £36 per month. Normally there is a £15 joining fee too, though we are waiving that this month."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Brilliant, £36 a month with no joining fee sounds great."
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "staff",
+      "text": "When would you like your membership to start? We could activate it from Monday, 5 October."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Um, let me see. I am visiting my sister up north next week, so I would miss the first seven days. Could we start it a week later on 12 October instead?"
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "staff",
+      "text": "No problem at all, I have set your start date to 12 October. Now, before you use the weights room, every new member completes a forty-minute gym induction with a trainer."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "Sure, that makes sense. Do you have any slots open on Tuesday morning that week?"
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "staff",
+      "text": "Let me check the trainer rota... oh, Tuesday morning is completely full because a local college group is in. We do have plenty of space on Thursday, though."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Thursday works nicely for me. Let us book Thursday then."
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "staff",
+      "text": "Wonderful. Would you prefer an early start at 8:30 a.m., or slightly later at 9:30 a.m.?"
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Let us go for 8:30... actually, sorry, I finish a late shift the night before, so 9:30 will be much better."
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "staff",
+      "text": "Smart choice, I have pencilled you in for 9:30 a.m. on Thursday. Just bring clean trainers, a water bottle, and a towel."
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "caller",
+      "text": "Got it. Do I need a pound coin for the changing-room lockers?"
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "staff",
+      "text": "We actually replaced all the coin lockers last month. You just need to bring your own small padlock now, or you can buy one at reception."
+    },
+    {
+      "lineId": "l28",
+      "speakerId": "caller",
+      "text": "Good to know, I already have a spare padlock at home. And does the membership include any fitness classes?"
+    },
+    {
+      "lineId": "l29",
+      "speakerId": "staff",
+      "text": "Yes, every new member gets one complimentary trial class during their first week. We run yoga on Wednesday evenings, indoor cycling at lunchtime, and pilates right after your Thursday morning slot."
+    },
+    {
+      "lineId": "l30",
+      "speakerId": "caller",
+      "text": "Since I cannot do Wednesday evenings, I would love to try pilates after the induction."
+    },
+    {
+      "lineId": "l31",
+      "speakerId": "staff",
+      "text": "All booked! I have reserved a mat for you in pilates. We will email your confirmation shortly, Owen."
+    },
+    {
+      "lineId": "l32",
+      "speakerId": "caller",
+      "text": "Thanks so much for your help, Hannah. See you in a couple of weeks!"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_form",
+      "type": "form_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Harbourview Leisure Centre - New Member Form",
+        "rows": [
+          {
+            "label": "First name",
+            "value": "Owen"
+          },
+          {
+            "label": "Surname",
+            "blankQid": "lep_p1_001_q01"
+          },
+          {
+            "label": "Address",
+            "blankQid": "lep_p1_001_q02",
+            "suffix": "Lane"
+          },
+          {
+            "label": "Mobile phone",
+            "blankQid": "lep_p1_001_q03"
+          },
+          {
+            "label": "Membership tier",
+            "blankQid": "lep_p1_001_q04"
+          },
+          {
+            "label": "Monthly fee (£)",
+            "blankQid": "lep_p1_001_q05"
+          },
+          {
+            "label": "Start date",
+            "blankQid": "lep_p1_001_q06"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_001_q01",
+          "number": 1,
+          "prompt": "Applicant's surname"
+        },
+        {
+          "qid": "lep_p1_001_q02",
+          "number": 2,
+          "prompt": "House number and street name before 'Lane'"
+        },
+        {
+          "qid": "lep_p1_001_q03",
+          "number": 3,
+          "prompt": "Applicant's mobile phone number"
+        },
+        {
+          "qid": "lep_p1_001_q04",
+          "number": 4,
+          "prompt": "Type of membership selected"
+        },
+        {
+          "qid": "lep_p1_001_q05",
+          "number": 5,
+          "prompt": "Monthly membership fee in pounds"
+        },
+        {
+          "qid": "lep_p1_001_q06",
+          "number": 6,
+          "prompt": "Agreed membership start date"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_table",
+      "type": "table_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Induction & First-Week Details",
+        "rows": [
+          {
+            "label": "Session length",
+            "value": "40 minutes"
+          },
+          {
+            "label": "Induction day",
+            "blankQid": "lep_p1_001_q07"
+          },
+          {
+            "label": "Induction start time",
+            "blankQid": "lep_p1_001_q08",
+            "suffix": "a.m."
+          },
+          {
+            "label": "Item required for locker",
+            "blankQid": "lep_p1_001_q09"
+          },
+          {
+            "label": "Complimentary trial class",
+            "blankQid": "lep_p1_001_q10"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_001_q07",
+          "number": 7,
+          "prompt": "Day booked for the gym induction"
+        },
+        {
+          "qid": "lep_p1_001_q08",
+          "number": 8,
+          "prompt": "Start time booked for the gym induction (before 'a.m.')"
+        },
+        {
+          "qid": "lep_p1_001_q09",
+          "number": 9,
+          "prompt": "Item members must bring to secure a locker"
+        },
+        {
+          "qid": "lep_p1_001_q10",
+          "number": 10,
+          "prompt": "Free trial class reserved after the induction"
+        }
+      ]
+    }
+  ]
+}

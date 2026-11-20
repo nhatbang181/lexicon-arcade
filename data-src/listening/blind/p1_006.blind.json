@@ -1,0 +1,295 @@
+{
+  "id": "lep:p1_006",
+  "part": 1,
+  "reserved": false,
+  "title": "Northgate Evening Pottery Workshop",
+  "contextEn": "A man phones a Canadian ceramics studio coordinator to enrol in an evening pottery class and check studio rules.",
+  "difficulty": 5,
+  "speakers": [
+    {
+      "id": "coord",
+      "name": "Chloe Beaulieu",
+      "role": "Studio Coordinator",
+      "accent": "ca"
+    },
+    {
+      "id": "caller",
+      "name": "Marcus Halstead",
+      "role": "Prospective Student",
+      "accent": "us"
+    }
+  ],
+  "script": [
+    {
+      "lineId": "l01",
+      "speakerId": "coord",
+      "text": "Hello, Northgate Ceramics Studio, Chloe speaking. How can I help you today?"
+    },
+    {
+      "lineId": "l02",
+      "speakerId": "caller",
+      "text": "Hi Chloe! I walked past your studio window yesterday and saw the sign for autumn evening pottery workshops. Are spots still open?"
+    },
+    {
+      "lineId": "l03",
+      "speakerId": "coord",
+      "text": "Yes, we have just a couple of places left for our autumn term! I can get you signed up over the phone if you like. Could I start with your name?"
+    },
+    {
+      "lineId": "l04",
+      "speakerId": "caller",
+      "text": "Sure, it is Marcus Halstead. Let me spell the surname: H-A-L-S-T-E-A-D."
+    },
+    {
+      "lineId": "l05",
+      "speakerId": "coord",
+      "text": "Halstead, got it. And what is the best phone number to text you if a kiln schedule changes?"
+    },
+    {
+      "lineId": "l06",
+      "speakerId": "caller",
+      "text": "Um, it is 416-555-8329... wait, sorry, I reversed the last two digits again! It is 416-555-8392."
+    },
+    {
+      "lineId": "l07",
+      "speakerId": "coord",
+      "text": "Ending in nine two, thank you. Now, we run two evening courses for beginners: hand-building sculptures, and wheel throwing for functional bowls and mugs. Which one caught your eye?"
+    },
+    {
+      "lineId": "l08",
+      "speakerId": "caller",
+      "text": "I originally thought hand-building might be easier, though honestly I really want to make coffee mugs and soup bowls, so let me sign up for wheel throwing."
+    },
+    {
+      "lineId": "l09",
+      "speakerId": "coord",
+      "text": "Wheel throwing is loads of fun once you get the hang of centring the clay. Have you checked the course length?"
+    },
+    {
+      "lineId": "l10",
+      "speakerId": "caller",
+      "text": "I think the website mentioned a 4-week taster or a 12-week masterclass?"
+    },
+    {
+      "lineId": "l11",
+      "speakerId": "coord",
+      "text": "Right, the 4-week taster only runs in July and the 12-week masterclass is for returning students. Our standard autumn evening course runs for 8 weeks."
+    },
+    {
+      "lineId": "l12",
+      "speakerId": "caller",
+      "text": "Eight weeks is ideal. And how much is the total fee, including clay?"
+    },
+    {
+      "lineId": "l13",
+      "speakerId": "coord",
+      "text": "Tuition is $210, and then there is a mandatory $35 charge that covers your stoneware clay and all kiln firings, so the total comes to $245."
+    },
+    {
+      "lineId": "l14",
+      "speakerId": "caller",
+      "text": "Okay, $245 all-in sounds very reasonable. Do I need to buy my own shaping tools or bring a hand towel?"
+    },
+    {
+      "lineId": "l15",
+      "speakerId": "coord",
+      "text": "We supply all carving tools, sponges, and fresh hand towels by the sink. The only thing you need to bring yourself is a heavy apron so you do not ruin your clothes."
+    },
+    {
+      "lineId": "l16",
+      "speakerId": "caller",
+      "text": "Good to know, I have an old canvas apron I can bring. Which evenings do the classes run?"
+    },
+    {
+      "lineId": "l17",
+      "speakerId": "coord",
+      "text": "Both sections run from six thirty to nine o'clock, either on Tuesday or Thursday. Let me check numbers... oh, Thursday is already full with a waitlist, whereas Tuesday still has two seats open."
+    },
+    {
+      "lineId": "l18",
+      "speakerId": "caller",
+      "text": "Tuesday evening actually works better for my work schedule anyway, so please put me down for Tuesday."
+    },
+    {
+      "lineId": "l19",
+      "speakerId": "coord",
+      "text": "Done! You are officially in the Tuesday group. It is a nice small class too."
+    },
+    {
+      "lineId": "l20",
+      "speakerId": "caller",
+      "text": "How many people are in each workshop? I thought I counted twelve wheels through the window."
+    },
+    {
+      "lineId": "l21",
+      "speakerId": "coord",
+      "text": "Sharp eye! We do have 12 wheels in the room, though one is for the instructor's demonstrations and one is kept as a spare, so we cap every class at 10 students."
+    },
+    {
+      "lineId": "l22",
+      "speakerId": "caller",
+      "text": "Ten students gives everyone plenty of instructor time. And on Tuesday evenings, do we come in through the main shopfront on King Street?"
+    },
+    {
+      "lineId": "l23",
+      "speakerId": "coord",
+      "text": "Good thing you asked! Our front gallery locks automatically at six o'clock. For evening workshops, walk down the side alley and enter through the rear courtyard door."
+    },
+    {
+      "lineId": "l24",
+      "speakerId": "caller",
+      "text": "Through the rear courtyard, got it. Last question: how soon after the final session can we pick up our finished glazed pots?"
+    },
+    {
+      "lineId": "l25",
+      "speakerId": "coord",
+      "text": "Normally we say 10 days after the last class... um, actually, wait, we have two extra-full glaze kiln loads this autumn, so please allow 14 days before pickup."
+    },
+    {
+      "lineId": "l26",
+      "speakerId": "caller",
+      "text": "Fourteen days is totally fine. Thanks a ton for all the details, Chloe!"
+    },
+    {
+      "lineId": "l27",
+      "speakerId": "coord",
+      "text": "My pleasure, Marcus! I will send your invoice link shortly, and we will see you Tuesday night."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_notes",
+      "type": "note_completion",
+      "instructions": "Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Northgate Ceramics Studio - Enrolment Notes",
+        "rows": [
+          {
+            "label": "Student first name",
+            "value": "Marcus"
+          },
+          {
+            "label": "Student surname",
+            "blankQid": "lep_p1_006_q01"
+          },
+          {
+            "label": "Contact phone",
+            "blankQid": "lep_p1_006_q02"
+          },
+          {
+            "label": "Workshop selected",
+            "blankQid": "lep_p1_006_q03"
+          },
+          {
+            "label": "Course length",
+            "blankQid": "lep_p1_006_q04",
+            "suffix": "weeks"
+          },
+          {
+            "label": "Total cost including clay ($)",
+            "blankQid": "lep_p1_006_q05"
+          },
+          {
+            "label": "Item student must bring",
+            "blankQid": "lep_p1_006_q06"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_006_q01",
+          "number": 1,
+          "prompt": "Student's surname"
+        },
+        {
+          "qid": "lep_p1_006_q02",
+          "number": 2,
+          "prompt": "Student's contact phone number"
+        },
+        {
+          "qid": "lep_p1_006_q03",
+          "number": 3,
+          "prompt": "Evening pottery course chosen"
+        },
+        {
+          "qid": "lep_p1_006_q04",
+          "number": 4,
+          "prompt": "Duration of the autumn evening course (in weeks)"
+        },
+        {
+          "qid": "lep_p1_006_q05",
+          "number": 5,
+          "prompt": "Total fee including clay and firing (in dollars)"
+        },
+        {
+          "qid": "lep_p1_006_q06",
+          "number": 6,
+          "prompt": "Item that students are asked to bring themselves"
+        }
+      ]
+    },
+    {
+      "groupId": "g2_table",
+      "type": "table_completion",
+      "instructions": "Write ONE WORD AND/OR A NUMBER for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "template": {
+        "title": "Workshop Schedule & Studio Logistics",
+        "rows": [
+          {
+            "label": "Session time",
+            "value": "6:30 p.m. - 9:00 p.m."
+          },
+          {
+            "label": "Booked class day",
+            "blankQid": "lep_p1_006_q07"
+          },
+          {
+            "label": "Maximum class size",
+            "blankQid": "lep_p1_006_q08",
+            "suffix": "students"
+          },
+          {
+            "label": "Evening entrance",
+            "value": "through the rear",
+            "blankQid": "lep_p1_006_q09"
+          },
+          {
+            "label": "Glazed items ready after",
+            "blankQid": "lep_p1_006_q10",
+            "suffix": "days"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "qid": "lep_p1_006_q07",
+          "number": 7,
+          "prompt": "Evening of the week booked for the class"
+        },
+        {
+          "qid": "lep_p1_006_q08",
+          "number": 8,
+          "prompt": "Maximum number of students per workshop"
+        },
+        {
+          "qid": "lep_p1_006_q09",
+          "number": 9,
+          "prompt": "Evening entrance area (through the rear ...)"
+        },
+        {
+          "qid": "lep_p1_006_q10",
+          "number": 10,
+          "prompt": "Number of days until glazed pottery is ready for pickup"
+        }
+      ]
+    }
+  ]
+}

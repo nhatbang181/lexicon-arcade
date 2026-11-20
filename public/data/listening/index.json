@@ -1,0 +1,718 @@
+[
+  {
+    "id": "lep:p1_001",
+    "file": "data/listening/episodes/p1_001.json",
+    "part": 1,
+    "reserved": false,
+    "title": "Harbourview Leisure Centre Membership",
+    "contextEn": "A man phones a local leisure centre receptionist to enquire about membership options and book his gym induction.",
+    "difficulty": 2,
+    "accents": [
+      "uk"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_001.mp3",
+    "durationSec": 276,
+    "questionCount": 10,
+    "questionTypes": [
+      "form_completion",
+      "table_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p1_002",
+    "file": "data/listening/episodes/p1_002.json",
+    "part": 1,
+    "reserved": false,
+    "title": "Willow Creek Holiday Cottage Booking",
+    "contextEn": "An American visitor phones a UK holiday letting agent to reserve a countryside cottage and check arrival arrangements.",
+    "difficulty": 3,
+    "accents": [
+      "uk",
+      "us"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_002.mp3",
+    "durationSec": 284,
+    "questionCount": 10,
+    "questionTypes": [
+      "form_completion",
+      "note_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p1_003",
+    "file": "data/listening/episodes/p1_003.json",
+    "part": 1,
+    "reserved": false,
+    "title": "Bayside Cycling Club Registration",
+    "contextEn": "A newcomer phones an Australian cycling club coordinator to register as a member and ask about Sunday group rides.",
+    "difficulty": 3,
+    "accents": [
+      "au",
+      "uk"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_003.mp3",
+    "durationSec": 282,
+    "questionCount": 10,
+    "questionTypes": [
+      "form_completion",
+      "mcq_single"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p1_004",
+    "file": "data/listening/episodes/p1_004.json",
+    "part": 1,
+    "reserved": false,
+    "title": "Oakridge Community Library Volunteering",
+    "contextEn": "A woman phones a community library manager to enquire about volunteering shifts and book an orientation session.",
+    "difficulty": 4,
+    "accents": [
+      "uk"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_004.mp3",
+    "durationSec": 288,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion",
+      "table_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p1_005",
+    "file": "data/listening/episodes/p1_005.json",
+    "part": 1,
+    "reserved": false,
+    "title": "Riverside Dental Clinic New Patient Intake",
+    "contextEn": "A man phones a dental clinic receptionist to register as a new patient and book his first appointment.",
+    "difficulty": 4,
+    "accents": [
+      "us",
+      "uk"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_005.mp3",
+    "durationSec": 292,
+    "questionCount": 10,
+    "questionTypes": [
+      "form_completion",
+      "mcq_single"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p1_006",
+    "file": "data/listening/episodes/p1_006.json",
+    "part": 1,
+    "reserved": false,
+    "title": "Northgate Evening Pottery Workshop",
+    "contextEn": "A man phones a Canadian ceramics studio coordinator to enrol in an evening pottery class and check studio rules.",
+    "difficulty": 5,
+    "accents": [
+      "ca",
+      "us"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_006.mp3",
+    "durationSec": 295,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion",
+      "table_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p1_res_001",
+    "file": "data/listening/episodes/p1_res_001.json",
+    "part": 1,
+    "reserved": true,
+    "title": "Meadowbrook Rail Lost Property Report",
+    "contextEn": "A rail passenger phones a railway station lost property office to report a bag left behind on an express train.",
+    "difficulty": 4,
+    "accents": [
+      "uk"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_res_001.mp3",
+    "durationSec": 286,
+    "questionCount": 10,
+    "questionTypes": [
+      "form_completion",
+      "note_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p1_res_002",
+    "file": "data/listening/episodes/p1_res_002.json",
+    "part": 1,
+    "reserved": true,
+    "title": "Greenfield Allotment Plot Application",
+    "contextEn": "A resident phones a town council allotment officer to apply for a community garden plot and ask about site regulations.",
+    "difficulty": 5,
+    "accents": [
+      "us",
+      "uk"
+    ],
+    "channel": "phone",
+    "audioPath": "audio/listening/p1_res_002.mp3",
+    "durationSec": 304,
+    "questionCount": 10,
+    "questionTypes": [
+      "form_completion",
+      "table_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p2_001",
+    "file": "data/listening/episodes/p2_001.json",
+    "part": 2,
+    "reserved": false,
+    "title": "Saltmarsh Coastal Nature Reserve Orientation",
+    "contextEn": "A nature reserve warden welcomes a group of visitors to Saltmarsh Coastal Nature Reserve, explains recent updates and visitor guidelines, and describes the layout of the site.",
+    "difficulty": 4,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_001.mp3",
+    "durationSec": 285,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "map_labelling"
+    ],
+    "hasMap": true,
+    "trapCount": 7
+  },
+  {
+    "id": "lep:p2_002",
+    "file": "data/listening/episodes/p2_002.json",
+    "part": 2,
+    "reserved": false,
+    "title": "Kauri Valley Botanical Gardens Visitor Guide",
+    "contextEn": "A senior botanical guide introduces visitors to the layout of Kauri Valley Botanical Gardens and outlines the special features of four seasonal walking trails.",
+    "difficulty": 5,
+    "accents": [
+      "nz"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_002.mp3",
+    "durationSec": 295,
+    "questionCount": 10,
+    "questionTypes": [
+      "map_labelling",
+      "matching"
+    ],
+    "hasMap": true,
+    "trapCount": 6
+  },
+  {
+    "id": "lep:p2_003",
+    "file": "data/listening/episodes/p2_003.json",
+    "part": 2,
+    "reserved": false,
+    "title": "Old Foundry Maritime Museum Floorplan",
+    "contextEn": "A maritime museum curator welcomes visitors to the Old Foundry Maritime Museum, explains the building's history and visitor policies, and guides them through the ground-floor plan.",
+    "difficulty": 5,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_003.mp3",
+    "durationSec": 290,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "map_labelling"
+    ],
+    "hasMap": true,
+    "trapCount": 6
+  },
+  {
+    "id": "lep:p2_004",
+    "file": "data/listening/episodes/p2_004.json",
+    "part": 2,
+    "reserved": false,
+    "title": "Westside Community Arts Centre Open Day",
+    "contextEn": "A programme coordinator welcomes visitors to the annual open day at Westside Community Arts Centre, explains recent developments at the centre, and describes five afternoon workshops.",
+    "difficulty": 6,
+    "accents": [
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_004.mp3",
+    "durationSec": 295,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p2_005",
+    "file": "data/listening/episodes/p2_005.json",
+    "part": 2,
+    "reserved": false,
+    "title": "Redgum Heritage Farm Park Tour",
+    "contextEn": "A farm park manager briefs visitors at Redgum Heritage Farm Park about recent site upgrades, livestock safety rules, and the layout of the farm grounds.",
+    "difficulty": 6,
+    "accents": [
+      "au"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_005.mp3",
+    "durationSec": 310,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_multi",
+      "map_labelling"
+    ],
+    "hasMap": true,
+    "trapCount": 5
+  },
+  {
+    "id": "lep:p2_006",
+    "file": "data/listening/episodes/p2_006.json",
+    "part": 2,
+    "reserved": false,
+    "title": "Larkspur Sports Complex Renovation Briefing",
+    "contextEn": "The operations director of Larkspur Sports Complex briefs members on planned upgrades to existing facilities and explains the new layout of the renovated building.",
+    "difficulty": 6,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_006.mp3",
+    "durationSec": 300,
+    "questionCount": 10,
+    "questionTypes": [
+      "matching",
+      "map_labelling"
+    ],
+    "hasMap": true,
+    "trapCount": 5
+  },
+  {
+    "id": "lep:p2_res_001",
+    "file": "data/listening/episodes/p2_res_001.json",
+    "part": 2,
+    "reserved": true,
+    "title": "Alderwood Folk and Craft Village Guide",
+    "contextEn": "A heritage village guide welcomes visitors to Alderwood Folk and Craft Village, explains its origins and daily operations, and introduces key locations on the village map.",
+    "difficulty": 5,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_res_001.mp3",
+    "durationSec": 290,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "map_labelling"
+    ],
+    "hasMap": true,
+    "trapCount": 6
+  },
+  {
+    "id": "lep:p2_res_002",
+    "file": "data/listening/episodes/p2_res_002.json",
+    "part": 2,
+    "reserved": true,
+    "title": "Portside Ferry Terminal Passenger Briefing",
+    "contextEn": "A terminal operations officer briefs ferry passengers at Portside Terminal about boarding changes, onboard services, waiting-lounge facilities, and four island destinations.",
+    "difficulty": 6,
+    "accents": [
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p2_res_002.mp3",
+    "durationSec": 295,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "mcq_multi",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 7
+  },
+  {
+    "id": "lep:p3_001",
+    "file": "data/listening/episodes/p3_001.json",
+    "part": 3,
+    "reserved": false,
+    "title": "Urban Pollinator Rooftop Study",
+    "contextEn": "Two environmental science students, Hannah and Liam, discuss their field project comparing solitary bees and hoverflies across urban rooftop gardens.",
+    "difficulty": 6,
+    "accents": [
+      "uk",
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_001.mp3",
+    "durationSec": 305,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p3_002",
+    "file": "data/listening/episodes/p3_002.json",
+    "part": 3,
+    "reserved": false,
+    "title": "Microplastic Sampling in Estuarine Sediments",
+    "contextEn": "Two marine biology students, Owen and Priya, meet their tutor Dr Graham Whitaker to review their laboratory analysis and draft dissertation on estuarine microplastics.",
+    "difficulty": 7,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_002.mp3",
+    "durationSec": 320,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "mcq_multi",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p3_003",
+    "file": "data/listening/episodes/p3_003.json",
+    "part": 3,
+    "reserved": false,
+    "title": "Acoustic Monitoring of Coastal Seabirds",
+    "contextEn": "Two ecology postgraduates, Chloe and Marcus, review an automated sound-recording survey of nocturnal seabird colonies along rocky coastal headlands.",
+    "difficulty": 7,
+    "accents": [
+      "au",
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_003.mp3",
+    "durationSec": 315,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p3_004",
+    "file": "data/listening/episodes/p3_004.json",
+    "part": 3,
+    "reserved": false,
+    "title": "Bilingual Memory Recall Experiment",
+    "contextEn": "Two cognitive psychology students, Maya and Toby, refine the recruitment criteria and protocol for their honours experiment on language-dependent autobiographical memory.",
+    "difficulty": 8,
+    "accents": [
+      "us",
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_004.mp3",
+    "durationSec": 310,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_multi",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 8
+  },
+  {
+    "id": "lep:p3_005",
+    "file": "data/listening/episodes/p3_005.json",
+    "part": 3,
+    "reserved": false,
+    "title": "Historic Timber Bridge Preservation Project",
+    "contextEn": "Two civil engineering students, Claire and Ryan, meet their supervisor Professor Helen Marsh to review their conservation proposal for the nineteenth-century Millbrook Covered Bridge.",
+    "difficulty": 8,
+    "accents": [
+      "uk",
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_005.mp3",
+    "durationSec": 325,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "flowchart_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p3_006",
+    "file": "data/listening/episodes/p3_006.json",
+    "part": 3,
+    "reserved": false,
+    "title": "Community Composting Trial Evaluation",
+    "contextEn": "Two urban planning students, Noah and Gemma, evaluate the outcomes of a six-month community composting trial across four residential apartment courtyards.",
+    "difficulty": 8,
+    "accents": [
+      "ca",
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_006.mp3",
+    "durationSec": 330,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "mcq_multi",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p3_res_001",
+    "file": "data/listening/episodes/p3_res_001.json",
+    "part": 3,
+    "reserved": true,
+    "title": "Solar Desalination Prototype Review",
+    "contextEn": "Two mechanical engineering students, Sam and Elena, review performance data and field-readiness upgrades for their passive solar desalination still.",
+    "difficulty": 7,
+    "accents": [
+      "uk",
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_res_001.mp3",
+    "durationSec": 315,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "mcq_multi",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p3_res_002",
+    "file": "data/listening/episodes/p3_res_002.json",
+    "part": 3,
+    "reserved": true,
+    "title": "Oral History Archive of Coastal Shipyards",
+    "contextEn": "Two history students, Fiona and Ben, meet their dissertation tutor Dr Laura Chen to review their interview methodology and cataloguing plan for an oral history archive of retired shipyard workers.",
+    "difficulty": 8,
+    "accents": [
+      "uk",
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p3_res_002.mp3",
+    "durationSec": 335,
+    "questionCount": 10,
+    "questionTypes": [
+      "mcq_single",
+      "matching"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p4_001",
+    "file": "data/listening/episodes/p4_001.json",
+    "part": 4,
+    "reserved": false,
+    "title": "Ancient Underground Aqueducts of Arid Plateaus",
+    "contextEn": "A university lecturer gives a talk about the engineering, governance, and modern conservation of ancient underground aqueducts in arid plateau regions.",
+    "difficulty": 7,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_001.mp3",
+    "durationSec": 345,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 8
+  },
+  {
+    "id": "lep:p4_002",
+    "file": "data/listening/episodes/p4_002.json",
+    "part": 4,
+    "reserved": false,
+    "title": "Bioluminescent Organisms in Deep-Sea Ecosystems",
+    "contextEn": "A marine biology lecturer explains how deep-sea creatures generate biological light, how they use it to survive, and how scientists study and apply it.",
+    "difficulty": 7,
+    "accents": [
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_002.mp3",
+    "durationSec": 355,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion",
+      "summary_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 8
+  },
+  {
+    "id": "lep:p4_003",
+    "file": "data/listening/episodes/p4_003.json",
+    "part": 4,
+    "reserved": false,
+    "title": "Tidal Bore Rivers and Estuarine Geomorphology",
+    "contextEn": "A coastal geomorphology lecturer discusses how tidal bores form, their physical dynamics, their ecological effects, and how human intervention has changed them.",
+    "difficulty": 8,
+    "accents": [
+      "nz"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_003.mp3",
+    "durationSec": 360,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p4_004",
+    "file": "data/listening/episodes/p4_004.json",
+    "part": 4,
+    "reserved": false,
+    "title": "Acoustic Design of Classical Stone Amphitheatres",
+    "contextEn": "An architectural acoustics lecturer explains how ancient stone amphitheatres achieved remarkable vocal clarity without electronic amplification.",
+    "difficulty": 8,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_004.mp3",
+    "durationSec": 350,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion",
+      "table_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 8
+  },
+  {
+    "id": "lep:p4_005",
+    "file": "data/listening/episodes/p4_005.json",
+    "part": 4,
+    "reserved": false,
+    "title": "Mycorrhizal Networks in Boreal Conifer Forests",
+    "contextEn": "A forest ecology lecturer examines how underground fungal networks link boreal conifers, transfer resources, spark scientific debate, and influence forestry and climate policy.",
+    "difficulty": 9,
+    "accents": [
+      "ca"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_005.mp3",
+    "durationSec": 365,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 10
+  },
+  {
+    "id": "lep:p4_006",
+    "file": "data/listening/episodes/p4_006.json",
+    "part": 4,
+    "reserved": false,
+    "title": "The Economics of Historical Spice Trade Guilds",
+    "contextEn": "An economic history lecturer analyses why maritime spice trade guilds formed, how they managed monopolies and risk, and what eventually eroded their dominance.",
+    "difficulty": 9,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_006.mp3",
+    "durationSec": 360,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion",
+      "summary_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p4_res_001",
+    "file": "data/listening/episodes/p4_res_001.json",
+    "part": 4,
+    "reserved": true,
+    "title": "Glacial Ice Cores as Climatic Archives",
+    "contextEn": "A palaeoclimatology lecturer explains how polar ice cores preserve ancient atmospheres, how teams drill and transport them, and what environmental clues they contain.",
+    "difficulty": 8,
+    "accents": [
+      "uk"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_res_001.mp3",
+    "durationSec": 365,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  },
+  {
+    "id": "lep:p4_res_002",
+    "file": "data/listening/episodes/p4_res_002.json",
+    "part": 4,
+    "reserved": true,
+    "title": "Self-Healing Bio-Concrete in Marine Infrastructure",
+    "contextEn": "A civil engineering lecturer discusses how bacteria-infused bio-concrete repairs saltwater cracks in marine structures, along with field results and economic barriers.",
+    "difficulty": 9,
+    "accents": [
+      "us"
+    ],
+    "channel": "normal",
+    "audioPath": "audio/listening/p4_res_002.mp3",
+    "durationSec": 365,
+    "questionCount": 10,
+    "questionTypes": [
+      "note_completion",
+      "summary_completion"
+    ],
+    "hasMap": false,
+    "trapCount": 9
+  }
+]
