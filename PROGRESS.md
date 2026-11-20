@@ -31,7 +31,8 @@ Worker cập nhật bảng này: ✅ xong / 🔄 đang làm / ⏸️ tạm dừn
 ### M1 (Đang chạy)
 - ✅ r-game-v1 (`6e5edcc` – 21/21 tests pass)
 - ✅ r-game-v2v3 (`65a257b` – V2 + V3 24/24 tests pass)
-- 🔄 r-m1-data-vocab-2 · 🔄 r-today · ⏳ rv-data-vocab · ⏳ r-audio-vocab
+- ✅ r-m1-data-vocab (`7b587f5` – 2,207 vocab, 762 collocations, 320 paraphrases, 230 errors, `validate:data` PASS)
+- 🔄 r-today · 🔄 rv-data-vocab (`claude-sonnet-5-5-medium`) · ⏳ r-audio-vocab
 
 ## Lỗi đã biết
 - MCP `anki` (AnkiConnect) không kết nối được (ECONNREFUSED). Không chặn M1 vì đã có JSON xuất sẵn (`public/data/anki_vocab.json`, `public/data/ielts_4skills.json`).
