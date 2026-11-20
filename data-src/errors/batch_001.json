@@ -1,0 +1,2442 @@
+[
+  {
+    "id": "err:article_001",
+    "tag": "article",
+    "wrong": "Government should invest heavily in public transport infrastructure.",
+    "correct": "The government should invest heavily in public transport infrastructure.",
+    "errorSpan": {
+      "start": 0,
+      "end": 10
+    },
+    "ruleVi": "Danh từ đếm được số ít \"government\" cần mạo từ \"the\" (hoặc dùng số nhiều \"governments\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_002",
+    "tag": "article",
+    "wrong": "In the modern society, digital literacy is essential for employment.",
+    "correct": "In modern society, digital literacy is essential for employment.",
+    "errorSpan": {
+      "start": 3,
+      "end": 21
+    },
+    "ruleVi": "Không dùng \"the\" trước \"society\" khi nói về xã hội nói chung.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_003",
+    "tag": "article",
+    "wrong": "Internet has fundamentally transformed how students conduct academic research.",
+    "correct": "The internet has fundamentally transformed how students conduct academic research.",
+    "errorSpan": {
+      "start": 0,
+      "end": 8
+    },
+    "ruleVi": "Luôn dùng mạo từ \"the\" trước \"internet\" trong văn viết học thuật chuẩn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_004",
+    "tag": "article",
+    "wrong": "Protecting environment should be a top priority for every municipality.",
+    "correct": "Protecting the environment should be a top priority for every municipality.",
+    "errorSpan": {
+      "start": 11,
+      "end": 22
+    },
+    "ruleVi": "Khi nói về môi trường tự nhiên nói chung, bắt buộc dùng \"the environment\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_005",
+    "tag": "article",
+    "wrong": "Many graduates struggle to find a stable employment after leaving university.",
+    "correct": "Many graduates struggle to find stable employment after leaving university.",
+    "errorSpan": {
+      "start": 32,
+      "end": 51
+    },
+    "ruleVi": "\"Employment\" là danh từ không đếm được nên không đi với mạo từ \"a\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_006",
+    "tag": "article",
+    "wrong": "The education plays a decisive role in reducing long-term poverty.",
+    "correct": "Education plays a decisive role in reducing long-term poverty.",
+    "errorSpan": {
+      "start": 0,
+      "end": 13
+    },
+    "ruleVi": "Không dùng \"the\" trước danh từ trừu tượng nói chung như \"education\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_007",
+    "tag": "article",
+    "wrong": "Elderly often face serious barriers when accessing online banking services.",
+    "correct": "The elderly often face serious barriers when accessing online banking services.",
+    "errorSpan": {
+      "start": 0,
+      "end": 7
+    },
+    "ruleVi": "Cấu trúc \"the + tính từ\" (\"the elderly\") để chỉ một nhóm người trong xã hội.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_008",
+    "tag": "article",
+    "wrong": "Majority of urban commuters prefer reliable underground trains over buses.",
+    "correct": "The majority of urban commuters prefer reliable underground trains over buses.",
+    "errorSpan": {
+      "start": 0,
+      "end": 8
+    },
+    "ruleVi": "Luôn dùng \"the majority of\" khi nói về đa số một nhóm đối tượng.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_009",
+    "tag": "article",
+    "wrong": "University degree is no longer an automatic guarantee of high earnings.",
+    "correct": "A university degree is no longer an automatic guarantee of high earnings.",
+    "errorSpan": {
+      "start": 0,
+      "end": 17
+    },
+    "ruleVi": "Danh từ đếm được số ít \"university degree\" cần mạo từ \"a\" (phát âm bắt đầu bằng /j/).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_010",
+    "tag": "article",
+    "wrong": "Public libraries provide an useful quiet space for low-income learners.",
+    "correct": "Public libraries provide a useful quiet space for low-income learners.",
+    "errorSpan": {
+      "start": 25,
+      "end": 34
+    },
+    "ruleVi": "\"Useful\" phát âm bắt đầu bằng phụ âm /j/ nên phải dùng mạo từ \"a\", không dùng \"an\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:article_011",
+    "tag": "article",
+    "wrong": "Climate change poses serious threat to low-lying coastal farmland.",
+    "correct": "Climate change poses a serious threat to low-lying coastal farmland.",
+    "errorSpan": {
+      "start": 21,
+      "end": 35
+    },
+    "ruleVi": "Cụm collocation chuẩn đếm được số ít phải có mạo từ: \"pose a serious threat to\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_012",
+    "tag": "plural",
+    "wrong": "Modern hospitals require expensive medical equipments to treat complex diseases.",
+    "correct": "Modern hospitals require expensive medical equipment to treat complex diseases.",
+    "errorSpan": {
+      "start": 43,
+      "end": 53
+    },
+    "ruleVi": "\"Equipment\" là danh từ không đếm được, tuyệt đối không thêm \"-s\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_013",
+    "tag": "plural",
+    "wrong": "Online platforms often distribute unreliable informations during election campaigns.",
+    "correct": "Online platforms often distribute unreliable information during election campaigns.",
+    "errorSpan": {
+      "start": 45,
+      "end": 57
+    },
+    "ruleVi": "\"Information\" không đếm được; muốn đếm phải dùng \"pieces of information\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_014",
+    "tag": "plural",
+    "wrong": "Several academic researches confirm that green roofs reduce urban heat.",
+    "correct": "Several academic studies confirm that green roofs reduce urban heat.",
+    "errorSpan": {
+      "start": 17,
+      "end": 27
+    },
+    "ruleVi": "\"Research\" không đếm được trong văn học thuật chuẩn; hãy dùng \"studies\" cho số nhiều.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_015",
+    "tag": "plural",
+    "wrong": "Expanding public transports is essential to curb downtown traffic emissions.",
+    "correct": "Expanding public transport is essential to curb downtown traffic emissions.",
+    "errorSpan": {
+      "start": 17,
+      "end": 27
+    },
+    "ruleVi": "Trong Anh-Anh, \"public transport\" không đếm được và không thêm \"-s\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_016",
+    "tag": "plural",
+    "wrong": "Teachers should offer constructive feedbacks rather than relying solely on grades.",
+    "correct": "Teachers should offer constructive feedback rather than relying solely on grades.",
+    "errorSpan": {
+      "start": 35,
+      "end": 44
+    },
+    "ruleVi": "\"Feedback\" là danh từ không đếm được, không dùng dạng số nhiều \"feedbacks\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_017",
+    "tag": "plural",
+    "wrong": "Excessive homeworks can deprive primary pupils of vital outdoor play.",
+    "correct": "Excessive homework can deprive primary pupils of vital outdoor play.",
+    "errorSpan": {
+      "start": 10,
+      "end": 19
+    },
+    "ruleVi": "\"Homework\" không đếm được; nếu cần số nhiều hãy dùng \"homework assignments\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_018",
+    "tag": "plural",
+    "wrong": "Urban noise causes severe damages to residents' sleep quality over time.",
+    "correct": "Urban noise causes severe damage to residents' sleep quality over time.",
+    "errorSpan": {
+      "start": 26,
+      "end": 33
+    },
+    "ruleVi": "\"Damage\" (thiệt hại) không đếm được; \"damages\" chỉ dùng cho tiền bồi thường pháp lý.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_019",
+    "tag": "plural",
+    "wrong": "Many international student struggle to adapt to independent university essays.",
+    "correct": "Many international students struggle to adapt to independent university essays.",
+    "errorSpan": {
+      "start": 19,
+      "end": 26
+    },
+    "ruleVi": "Sau lượng từ \"many\", danh từ đếm được bắt buộc phải chia ở dạng số nhiều (\"students\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_020",
+    "tag": "plural",
+    "wrong": "Rising sea levels are a global phenomena affecting coastal cities worldwide.",
+    "correct": "Rising sea levels are a global phenomenon affecting coastal cities worldwide.",
+    "errorSpan": {
+      "start": 22,
+      "end": 40
+    },
+    "ruleVi": "\"Phenomenon\" là số ít đi với \"a\"; \"phenomena\" là dạng số nhiều.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:plural_021",
+    "tag": "plural",
+    "wrong": "Universities apply strict admission criterion when awarding merit scholarships.",
+    "correct": "Universities apply strict admission criteria when awarding merit scholarships.",
+    "errorSpan": {
+      "start": 36,
+      "end": 45
+    },
+    "ruleVi": "Không có mạo từ \"a\" và mang nghĩa nhiều tiêu chí nên phải dùng số nhiều \"criteria\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_022",
+    "tag": "sva",
+    "wrong": "Expanding affordable childcare facilities help more parents re-enter the workforce.",
+    "correct": "Expanding affordable childcare facilities helps more parents re-enter the workforce.",
+    "errorSpan": {
+      "start": 42,
+      "end": 46
+    },
+    "ruleVi": "Chủ ngữ là cụm danh động từ (\"Expanding...\") luôn chia động từ ngôi thứ ba số ít (\"helps\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_023",
+    "tag": "sva",
+    "wrong": "The rapid growth of budget airlines have accelerated tourism emissions.",
+    "correct": "The rapid growth of budget airlines has accelerated tourism emissions.",
+    "errorSpan": {
+      "start": 36,
+      "end": 52
+    },
+    "ruleVi": "Danh từ trung tâm chủ ngữ là \"growth\" (số ít), nên động từ phải là \"has accelerated\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_024",
+    "tag": "sva",
+    "wrong": "Neither stricter fines nor a wider motorway alone solve chronic rush-hour gridlock.",
+    "correct": "Neither stricter fines nor a wider motorway alone solves chronic rush-hour gridlock.",
+    "errorSpan": {
+      "start": 50,
+      "end": 55
+    },
+    "ruleVi": "Với \"Neither A nor B\", động từ chia theo chủ ngữ gần nó nhất (\"a wider motorway\" -> \"solves\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_025",
+    "tag": "sva",
+    "wrong": "Each of the participating schools receive annual grants for science labs.",
+    "correct": "Each of the participating schools receives annual grants for science labs.",
+    "errorSpan": {
+      "start": 34,
+      "end": 41
+    },
+    "ruleVi": "\"Each of + danh từ số nhiều\" luôn đi với động từ chia số ít (\"receives\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_026",
+    "tag": "sva",
+    "wrong": "High levels of urban air pollution poses grave risks to infants.",
+    "correct": "High levels of urban air pollution pose grave risks to infants.",
+    "errorSpan": {
+      "start": 35,
+      "end": 40
+    },
+    "ruleVi": "Chủ ngữ chính là \"levels\" (số nhiều) nên động từ phải chia số nhiều (\"pose\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_027",
+    "tag": "sva",
+    "wrong": "A growing proportion of university graduates works remotely for overseas firms.",
+    "correct": "A growing proportion of university graduates work remotely for overseas firms.",
+    "errorSpan": {
+      "start": 45,
+      "end": 50
+    },
+    "ruleVi": "\"A proportion of + danh từ số nhiều\" chia động từ theo danh từ số nhiều (\"work\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_028",
+    "tag": "sva",
+    "wrong": "Public investment in libraries and parks benefit the entire local community.",
+    "correct": "Public investment in libraries and parks benefits the entire local community.",
+    "errorSpan": {
+      "start": 41,
+      "end": 48
+    },
+    "ruleVi": "Chủ ngữ chính là \"investment\" (số ít không đếm được), nên động từ phải là \"benefits\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_029",
+    "tag": "sva",
+    "wrong": "There is several compelling reasons to subsidise regional commuter rail networks.",
+    "correct": "There are several compelling reasons to subsidise regional commuter rail networks.",
+    "errorSpan": {
+      "start": 6,
+      "end": 8
+    },
+    "ruleVi": "Trong cấu trúc \"There + be\", động từ chia theo danh từ phía sau (\"reasons\" -> \"are\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_030",
+    "tag": "sva",
+    "wrong": "Every citizen and local business bear responsibility for cutting plastic waste.",
+    "correct": "Every citizen and local business bears responsibility for cutting plastic waste.",
+    "errorSpan": {
+      "start": 33,
+      "end": 37
+    },
+    "ruleVi": "Chủ ngữ bắt đầu bằng \"Every...\" luôn chia động từ ở dạng số ít (\"bears\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:sva_031",
+    "tag": "sva",
+    "wrong": "The main drawback of remote apprenticeships are limited hands-on supervision.",
+    "correct": "The main drawback of remote apprenticeships is limited hands-on supervision.",
+    "errorSpan": {
+      "start": 44,
+      "end": 47
+    },
+    "ruleVi": "Chủ ngữ chính là \"drawback\" (số ít), không phải \"apprenticeships\", nên dùng \"is\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:tense_032",
+    "tag": "tense",
+    "wrong": "Between 2000 and 2020, renewable electricity output has tripled across Europe.",
+    "correct": "Between 2000 and 2020, renewable electricity output tripled across Europe.",
+    "errorSpan": {
+      "start": 52,
+      "end": 63
+    },
+    "ruleVi": "Khoảng thời gian đã kết thúc hoàn toàn trong quá khứ (\"2000–2020\") phải dùng quá khứ đơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:tense_033",
+    "tag": "tense",
+    "wrong": "Since 2015, municipal recycling rates rose steadily in most northern cities.",
+    "correct": "Since 2015, municipal recycling rates have risen steadily in most northern cities.",
+    "errorSpan": {
+      "start": 38,
+      "end": 42
+    },
+    "ruleVi": "Với \"since + mốc quá khứ\" kéo dài đến hiện tại, dùng hiện tại hoàn thành (\"have risen\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:tense_034",
+    "tag": "tense",
+    "wrong": "By 2040, electric passenger cars will replace most petrol vehicles in Europe.",
+    "correct": "By 2040, electric passenger cars will have replaced most petrol vehicles in Europe.",
+    "errorSpan": {
+      "start": 33,
+      "end": 45
+    },
+    "ruleVi": "\"By + mốc tương lai\" trong Task 1 ưu tiên thì tương lai hoàn thành (\"will have replaced\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:tense_035",
+    "tag": "tense",
+    "wrong": "In 1990, coal was accounting for nearly half of national power generation.",
+    "correct": "In 1990, coal accounted for nearly half of national power generation.",
+    "errorSpan": {
+      "start": 14,
+      "end": 28
+    },
+    "ruleVi": "Số liệu thống kê cố định tại một năm trong quá khứ dùng quá khứ đơn (\"accounted\"), không dùng tiếp diễn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:tense_036",
+    "tag": "tense",
+    "wrong": "If governments invested more in rail earlier, traffic jams would be smaller now.",
+    "correct": "If governments had invested more in rail earlier, traffic jams would be smaller now.",
+    "errorSpan": {
+      "start": 15,
+      "end": 23
+    },
+    "ruleVi": "Điều kiện hỗn hợp (nguyên nhân trái quá khứ -> kết quả hiện tại) dùng \"had + V3\" ở mệnh đề If.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:tense_037",
+    "tag": "tense",
+    "wrong": "Last year, the ministry announces a five-year plan to modernise rural clinics.",
+    "correct": "Last year, the ministry announced a five-year plan to modernise rural clinics.",
+    "errorSpan": {
+      "start": 24,
+      "end": 33
+    },
+    "ruleVi": "Trạng ngữ thời gian quá khứ xác định (\"Last year\") bắt buộc chia động từ quá khứ đơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:tense_038",
+    "tag": "tense",
+    "wrong": "Over the past decade, urban rents increase much faster than average wages.",
+    "correct": "Over the past decade, urban rents have increased much faster than average wages.",
+    "errorSpan": {
+      "start": 34,
+      "end": 42
+    },
+    "ruleVi": "\"Over the past decade\" chỉ quá trình đến hiện tại, phải dùng hiện tại hoàn thành (\"have increased\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_039",
+    "tag": "preposition",
+    "wrong": "Policy papers must emphasise on preventive healthcare rather than emergency surgery.",
+    "correct": "Policy papers must emphasise preventive healthcare rather than emergency surgery.",
+    "errorSpan": {
+      "start": 19,
+      "end": 31
+    },
+    "ruleVi": "Động từ \"emphasise\" là ngoại động từ trực tiếp, KHÔNG đi với giới từ \"on\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_040",
+    "tag": "preposition",
+    "wrong": "This essay will discuss about the economic impacts of remote working.",
+    "correct": "This essay will discuss the economic impacts of remote working.",
+    "errorSpan": {
+      "start": 16,
+      "end": 29
+    },
+    "ruleVi": "Động từ \"discuss\" đi trực tiếp với tân ngữ, không thêm \"about\" như dịch từ tiếng Việt.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_041",
+    "tag": "preposition",
+    "wrong": "Despite of higher fuel taxes, private car ownership continued to expand.",
+    "correct": "Despite higher fuel taxes, private car ownership continued to expand.",
+    "errorSpan": {
+      "start": 0,
+      "end": 10
+    },
+    "ruleVi": "Dùng \"despite + N\" hoặc \"in spite of + N\"; tuyệt đối không viết \"despite of\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_042",
+    "tag": "preposition",
+    "wrong": "Chronic air pollution is extremely detrimental for children's cognitive development.",
+    "correct": "Chronic air pollution is extremely detrimental to children's cognitive development.",
+    "errorSpan": {
+      "start": 35,
+      "end": 50
+    },
+    "ruleVi": "Tính từ \"detrimental\" luôn đi với giới từ \"to\" (\"detrimental to sth\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_043",
+    "tag": "preposition",
+    "wrong": "Public transport must remain accessible for elderly and low-income residents.",
+    "correct": "Public transport must remain accessible to elderly and low-income residents.",
+    "errorSpan": {
+      "start": 29,
+      "end": 43
+    },
+    "ruleVi": "Tính từ \"accessible\" chuẩn học thuật đi với giới từ \"to\" (\"accessible to sb\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_044",
+    "tag": "preposition",
+    "wrong": "Expanding early screening can contribute to reduce long-term hospital expenditure.",
+    "correct": "Expanding early screening can contribute to reducing long-term hospital expenditure.",
+    "errorSpan": {
+      "start": 41,
+      "end": 50
+    },
+    "ruleVi": "Sau \"contribute to\", \"to\" là giới từ nên bắt buộc dùng V-ing (\"reducing\") hoặc danh từ.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_045",
+    "tag": "preposition",
+    "wrong": "Many graduates lack of the practical workplace skills required by employers.",
+    "correct": "Many graduates lack the practical workplace skills required by employers.",
+    "errorSpan": {
+      "start": 15,
+      "end": 22
+    },
+    "ruleVi": "Động từ \"lack\" không có \"of\" (\"lack skills\"); chỉ danh từ mới dùng \"a lack of\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_046",
+    "tag": "preposition",
+    "wrong": "Authorities must find a sustainable solution for inner-city traffic congestion.",
+    "correct": "Authorities must find a sustainable solution to inner-city traffic congestion.",
+    "errorSpan": {
+      "start": 36,
+      "end": 48
+    },
+    "ruleVi": "Danh từ \"solution\" chuẩn collocation đi với giới từ \"to\" (\"solution to a problem\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_047",
+    "tag": "preposition",
+    "wrong": "Developing nations should invest heavily into vocational engineering colleges.",
+    "correct": "Developing nations should invest heavily in vocational engineering colleges.",
+    "errorSpan": {
+      "start": 26,
+      "end": 45
+    },
+    "ruleVi": "Động từ \"invest\" luôn đi với giới từ \"in\", không dùng \"into\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:preposition_048",
+    "tag": "preposition",
+    "wrong": "Public attitudes with renewable energy have shifted positively over recent years.",
+    "correct": "Public attitudes towards renewable energy have shifted positively over recent years.",
+    "errorSpan": {
+      "start": 7,
+      "end": 21
+    },
+    "ruleVi": "Danh từ \"attitude\" đi với giới từ \"towards\" hoặc \"to\", không dùng \"with\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:run_on_049",
+    "tag": "run_on",
+    "wrong": "Electric buses are cleaner, however, their upfront purchase cost remains high.",
+    "correct": "Electric buses are cleaner; however, their upfront purchase cost remains high.",
+    "errorSpan": {
+      "start": 26,
+      "end": 36
+    },
+    "ruleVi": "Không nối 2 mệnh đề độc lập bằng \", however,\" (lỗi comma splice); phải dùng chấm phẩy hoặc chấm câu.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:run_on_050",
+    "tag": "run_on",
+    "wrong": "Urban rents have soared recently, therefore many young workers commute long distances.",
+    "correct": "Urban rents have soared recently; therefore, many young workers commute long distances.",
+    "errorSpan": {
+      "start": 32,
+      "end": 43
+    },
+    "ruleVi": "\"Therefore\" là trạng từ nối, cần dấu chấm phẩy hoặc chấm câu trước nó để tránh lỗi run-on.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:run_on_051",
+    "tag": "run_on",
+    "wrong": "Online courses expand access to education they cannot fully replace campus mentorship.",
+    "correct": "Online courses expand access to education, yet they cannot fully replace campus mentorship.",
+    "errorSpan": {
+      "start": 32,
+      "end": 46
+    },
+    "ruleVi": "Hai mệnh đề độc lập viết liền nhau không dấu câu/liên từ là lỗi run-on; cần thêm liên từ hoặc chấm câu.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_052",
+    "tag": "fragment",
+    "wrong": "Although renewable energy costs have fallen sharply over the past decade.",
+    "correct": "Although renewable energy costs have fallen sharply over the past decade, grid storage remains expensive.",
+    "errorSpan": {
+      "start": 0,
+      "end": 73
+    },
+    "ruleVi": "Mệnh đề phụ bắt đầu bằng \"Although\" không thể đứng một mình làm câu hoàn chỉnh (lỗi fragment).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_053",
+    "tag": "fragment",
+    "wrong": "Because urban congestion wastes millions of productive working hours every year.",
+    "correct": "Urban congestion requires urgent rail investment because it wastes millions of productive working hours every year.",
+    "errorSpan": {
+      "start": 0,
+      "end": 80
+    },
+    "ruleVi": "Mệnh đề nguyên nhân bắt đầu bằng \"Because\" phải gắn với một mệnh đề chính.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_054",
+    "tag": "fragment",
+    "wrong": "Whereas private cars carry only one or two passengers during rush hour.",
+    "correct": "A single tram can carry two hundred commuters, whereas private cars carry only one or two passengers.",
+    "errorSpan": {
+      "start": 0,
+      "end": 71
+    },
+    "ruleVi": "\"Whereas\" chỉ nối hai mệnh đề tương phản trong cùng một câu, không đứng tách riêng thành câu.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_055",
+    "tag": "fragment",
+    "wrong": "Especially young graduates who lack savings for a residential property deposit.",
+    "correct": "Soaring rents hit renters hard, especially young graduates who lack savings for a property deposit.",
+    "errorSpan": {
+      "start": 0,
+      "end": 79
+    },
+    "ruleVi": "Cụm danh từ bắt đầu bằng \"Especially...\" không có động từ chính nên là câu cụt (fragment).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_056",
+    "tag": "fragment",
+    "wrong": "Which makes affordable public childcare essential for modern dual-income households.",
+    "correct": "Living costs have risen sharply, which makes affordable public childcare essential for dual-income households.",
+    "errorSpan": {
+      "start": 0,
+      "end": 84
+    },
+    "ruleVi": "Mệnh đề quan hệ bắt đầu bằng \"Which\" phải nối sau dấu phẩy của mệnh đề trước, không tách thành câu riêng.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_057",
+    "tag": "fragment",
+    "wrong": "Such as stricter vehicle emission caps, wider cycle lanes, and cleaner buses.",
+    "correct": "Cities can deploy practical measures, such as stricter emission caps, wider cycle lanes, and cleaner buses.",
+    "errorSpan": {
+      "start": 0,
+      "end": 77
+    },
+    "ruleVi": "Cụm liệt kê bắt đầu bằng \"Such as\" không có chủ ngữ và động từ chính (lỗi fragment).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_058",
+    "tag": "fragment",
+    "wrong": "Reducing household electricity consumption and lowering winter heating bills significantly.",
+    "correct": "Better roof insulation helps families by reducing electricity consumption and lowering winter heating bills.",
+    "errorSpan": {
+      "start": 0,
+      "end": 91
+    },
+    "ruleVi": "Cụm phân từ V-ing đứng một mình thiếu chủ ngữ và động từ chia thì là câu cụt.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_059",
+    "tag": "fragment",
+    "wrong": "For example, free school lunches, community clinics, and subsidised commuter passes.",
+    "correct": "Several public programmes aid low-income families, for example free school lunches and subsidised commuter passes.",
+    "errorSpan": {
+      "start": 0,
+      "end": 84
+    },
+    "ruleVi": "Sau \"For example,\" đầu câu độc lập phải là mệnh đề đủ chủ - vị, không chỉ liệt kê danh từ.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_060",
+    "tag": "fragment",
+    "wrong": "Even though international climate agreements set ambitious long-term carbon targets.",
+    "correct": "Even though international climate agreements set ambitious targets, domestic enforcement often lags behind.",
+    "errorSpan": {
+      "start": 0,
+      "end": 84
+    },
+    "ruleVi": "Mệnh đề nhượng bộ với \"Even though\" bắt buộc phải có mệnh đề chính đi kèm.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_061",
+    "tag": "fragment",
+    "wrong": "While automation eliminates certain repetitive clerical tasks in modern offices.",
+    "correct": "While automation eliminates repetitive clerical tasks, it also creates demand for technical maintenance roles.",
+    "errorSpan": {
+      "start": 0,
+      "end": 80
+    },
+    "ruleVi": "Mệnh đề phụ bắt đầu bằng \"While\" không được đứng độc lập như một câu hoàn chỉnh.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_062",
+    "tag": "fragment",
+    "wrong": "Having invested heavily in vocational apprenticeships and modern engineering colleges.",
+    "correct": "Having invested heavily in vocational apprenticeships, Germany enjoys relatively low youth unemployment.",
+    "errorSpan": {
+      "start": 0,
+      "end": 86
+    },
+    "ruleVi": "Cụm phân từ hoàn thành \"Having + V3\" ở đầu câu bắt buộc phải có mệnh đề chính theo sau.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_063",
+    "tag": "fragment",
+    "wrong": "To address widening regional disparities in hospital staffing and diagnostic equipment.",
+    "correct": "To address widening regional disparities in hospital staffing, ministries must fund rural medical scholarships.",
+    "errorSpan": {
+      "start": 0,
+      "end": 87
+    },
+    "ruleVi": "Cụm động từ nguyên mẫu chỉ mục đích (\"To address...\") không thể đứng một mình không có mệnh đề chính.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_064",
+    "tag": "fragment",
+    "wrong": "Not only expanding underground rail lines across densely populated outer suburbs.",
+    "correct": "Planners are not only expanding underground rail lines but also building protected suburban cycleways.",
+    "errorSpan": {
+      "start": 0,
+      "end": 81
+    },
+    "ruleVi": "Cụm \"Not only + V-ing\" thiếu chủ ngữ và vế \"but also\" tạo thành câu cụt.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_065",
+    "tag": "fragment",
+    "wrong": "Students who rely heavily on passive highlighting rather than active recall.",
+    "correct": "Students who rely heavily on passive highlighting rather than active recall often forget material quickly.",
+    "errorSpan": {
+      "start": 0,
+      "end": 76
+    },
+    "ruleVi": "Chủ ngữ có mệnh đề quan hệ (\"who rely...\") nhưng bị bỏ quên động từ chính của cả câu.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_066",
+    "tag": "fragment",
+    "wrong": "Despite the clear long-term economic benefits of preventive public healthcare.",
+    "correct": "Despite the clear economic benefits of preventive healthcare, budgets often favour emergency hospitals.",
+    "errorSpan": {
+      "start": 0,
+      "end": 78
+    },
+    "ruleVi": "Cụm giới từ \"Despite + NP\" phải nối với một mệnh đề chính bằng dấu phẩy.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_067",
+    "tag": "fragment",
+    "wrong": "Given the rapid proliferation of unverified health advice on short-video apps.",
+    "correct": "Given the proliferation of unverified advice online, schools must prioritise critical media literacy.",
+    "errorSpan": {
+      "start": 0,
+      "end": 78
+    },
+    "ruleVi": "Cụm phân từ \"Given + NP\" không phải câu hoàn chỉnh khi thiếu mệnh đề chính theo sau.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_068",
+    "tag": "fragment",
+    "wrong": "Whether national universities should abolish tuition fees for domestic undergraduates.",
+    "correct": "Policymakers continue to debate whether national universities should abolish tuition fees for domestic undergraduates.",
+    "errorSpan": {
+      "start": 0,
+      "end": 86
+    },
+    "ruleVi": "Mệnh đề danh ngữ bắt đầu bằng \"Whether...\" không thể đứng một mình làm câu hoàn chỉnh.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_069",
+    "tag": "fragment",
+    "wrong": "In addition to lowering municipal landfill volumes and methane gas emissions.",
+    "correct": "In addition to lowering landfill volumes, household composting produces nutrient-rich soil for urban parks.",
+    "errorSpan": {
+      "start": 0,
+      "end": 77
+    },
+    "ruleVi": "Cụm giới từ \"In addition to + V-ing\" cần một mệnh đề chính đi kèm phía sau.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:fragment_070",
+    "tag": "fragment",
+    "wrong": "Rapid urbanisation combined with underfunded public sanitation and ageing water pipes.",
+    "correct": "Rapid urbanisation combined with underfunded sanitation has strained freshwater supplies across growing megacities.",
+    "errorSpan": {
+      "start": 0,
+      "end": 86
+    },
+    "ruleVi": "Cụm danh từ dài có phân từ \"combined with\" nhưng thiếu hoàn toàn động từ chính được chia thì.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_071",
+    "tag": "l1_collocation",
+    "wrong": "Young people without job prospects are more likely to make a crime.",
+    "correct": "Young people without job prospects are more likely to commit a crime.",
+    "errorSpan": {
+      "start": 54,
+      "end": 66
+    },
+    "ruleVi": "Lỗi dịch sát từ \"phạm/làm tội\"; collocation chuẩn bắt buộc là \"commit a crime\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_072",
+    "tag": "l1_collocation",
+    "wrong": "Students should learn knowledge from both classroom lectures and real-world projects.",
+    "correct": "Students should acquire knowledge from both classroom lectures and real-world projects.",
+    "errorSpan": {
+      "start": 16,
+      "end": 31
+    },
+    "ruleVi": "Không nói \"learn knowledge\" trong tiếng Anh học thuật; dùng \"acquire/gain knowledge\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_073",
+    "tag": "l1_collocation",
+    "wrong": "Social media algorithms can make a big effect on teenagers' self-esteem.",
+    "correct": "Social media algorithms can have a profound effect on teenagers' self-esteem.",
+    "errorSpan": {
+      "start": 28,
+      "end": 45
+    },
+    "ruleVi": "Tránh dịch sát \"tạo ảnh hưởng lớn\"; dùng \"have a profound/significant effect on\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_074",
+    "tag": "l1_collocation",
+    "wrong": "Schools must increase awareness about recycling among primary school pupils.",
+    "correct": "Schools must raise awareness of recycling among primary school pupils.",
+    "errorSpan": {
+      "start": 13,
+      "end": 37
+    },
+    "ruleVi": "Collocation chuẩn Band 8 là \"raise awareness of\" (không dùng \"increase... about\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_075",
+    "tag": "l1_collocation",
+    "wrong": "Coal power plants make heavy pollution across surrounding residential valleys.",
+    "correct": "Coal power plants cause severe pollution across surrounding residential valleys.",
+    "errorSpan": {
+      "start": 18,
+      "end": 38
+    },
+    "ruleVi": "Không dùng \"make pollution\"; collocation tự nhiên là \"cause/generate severe pollution\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_076",
+    "tag": "l1_collocation",
+    "wrong": "Large corporations must do responsibility for recycling their own plastic packaging.",
+    "correct": "Large corporations must shoulder responsibility for recycling their own plastic packaging.",
+    "errorSpan": {
+      "start": 24,
+      "end": 41
+    },
+    "ruleVi": "Lỗi dịch từ \"làm trách nhiệm\"; dùng \"shoulder/take/assume responsibility for\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_077",
+    "tag": "l1_collocation",
+    "wrong": "Regular physical exercise helps elderly adults destroy unhealthy sedentary habits.",
+    "correct": "Regular physical exercise helps elderly adults break unhealthy sedentary habits.",
+    "errorSpan": {
+      "start": 47,
+      "end": 81
+    },
+    "ruleVi": "Với thói quen không dùng \"destroy\"; collocation chuẩn là \"break a habit\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_078",
+    "tag": "l1_collocation",
+    "wrong": "Municipal governments should do strict measures to curb downtown congestion.",
+    "correct": "Municipal governments should implement stringent measures to curb downtown congestion.",
+    "errorSpan": {
+      "start": 29,
+      "end": 47
+    },
+    "ruleVi": "Không dùng \"do measures\"; phải dùng \"take/implement/adopt stringent measures\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_079",
+    "tag": "l1_collocation",
+    "wrong": "Universities should make research about affordable desalination technologies.",
+    "correct": "Universities should conduct research into affordable desalination technologies.",
+    "errorSpan": {
+      "start": 20,
+      "end": 39
+    },
+    "ruleVi": "Không nói \"make research\"; collocation chuẩn học thuật là \"conduct/carry out research into\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_080",
+    "tag": "l1_collocation",
+    "wrong": "Prolonged smartphone addiction puts a serious harm to adolescent sleep.",
+    "correct": "Prolonged smartphone addiction poses a serious threat to adolescent sleep.",
+    "errorSpan": {
+      "start": 31,
+      "end": 53
+    },
+    "ruleVi": "Sai động từ và danh từ đếm được; chuẩn Band 8 là \"pose a serious threat to\" hoặc \"do serious harm to\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_081",
+    "tag": "l1_collocation",
+    "wrong": "Unpaid internships make wider the wealth gap between rich and poor graduates.",
+    "correct": "Unpaid internships widen the wealth gap between rich and poor graduates.",
+    "errorSpan": {
+      "start": 19,
+      "end": 44
+    },
+    "ruleVi": "Dùng động từ trực tiếp \"widen the gap\" thay cho cách dịch từng chữ \"make wider\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:l1_collocation_082",
+    "tag": "l1_collocation",
+    "wrong": "Rising housing prices make high pressure on young working families.",
+    "correct": "Rising housing prices place immense pressure on young working families.",
+    "errorSpan": {
+      "start": 22,
+      "end": 43
+    },
+    "ruleVi": "Không dịch sát \"tạo áp lực cao\"; dùng \"place/exert immense pressure on\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_083",
+    "tag": "register",
+    "wrong": "A lot of people think that governments should spend tons of money on green energy.",
+    "correct": "Many people argue that governments should allocate substantial funding to green energy.",
+    "errorSpan": {
+      "start": 52,
+      "end": 65
+    },
+    "ruleVi": "\"Tons of money\" quá suồng sã (văn nói); Task 2 học thuật dùng \"substantial funding\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_084",
+    "tag": "register",
+    "wrong": "Kids nowadays spend way too much time staring at smartphones after school.",
+    "correct": "Children today spend excessive amounts of time using smartphones after school.",
+    "errorSpan": {
+      "start": 0,
+      "end": 13
+    },
+    "ruleVi": "\"Kids\" và \"way too much\" thuộc văn nói thân mật; bài viết học thuật dùng \"children\" và \"excessive\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_085",
+    "tag": "register",
+    "wrong": "Building more metro lines is a really great idea to fix traffic jams.",
+    "correct": "Expanding metro networks is a highly effective strategy for alleviating traffic congestion.",
+    "errorSpan": {
+      "start": 31,
+      "end": 48
+    },
+    "ruleVi": "\"Really great idea\" và \"fix traffic jams\" quá thông tục cho văn phong IELTS Academic.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_086",
+    "tag": "register",
+    "wrong": "Fast food is super bad for people's health and makes them get fat.",
+    "correct": "Fast food is highly detrimental to public health and contributes to rising obesity.",
+    "errorSpan": {
+      "start": 13,
+      "end": 22
+    },
+    "ruleVi": "\"Super bad\" và \"get fat\" quá suồng sã; dùng \"detrimental to health\" và \"obesity\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_087",
+    "tag": "register",
+    "wrong": "In this day and age, technology has changed everything in our daily lives.",
+    "correct": "In contemporary society, technology has transformed key aspects of daily life.",
+    "errorSpan": {
+      "start": 0,
+      "end": 19
+    },
+    "ruleVi": "\"In this day and age\" là cụm sáo rỗng (cliché) cần tránh trong Writing Task 2 Band 7.5+.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_088",
+    "tag": "register",
+    "wrong": "Every coin has two sides when we look at working from home.",
+    "correct": "Remote working presents both distinct advantages and notable drawbacks.",
+    "errorSpan": {
+      "start": 0,
+      "end": 24
+    },
+    "ruleVi": "Tránh thành ngữ sáo rỗng \"every coin has two sides\"; nêu trực tiếp ưu và nhược điểm.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_089",
+    "tag": "register",
+    "wrong": "Governments shouldn't ignore climate change because it's a huge deal.",
+    "correct": "Governments should not neglect climate change because it poses a grave long-term threat.",
+    "errorSpan": {
+      "start": 12,
+      "end": 21
+    },
+    "ruleVi": "Tránh viết tắt (\"shouldn't\", \"it's\") và tiếng lóng (\"huge deal\") trong bài luận Academic.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_090",
+    "tag": "register",
+    "wrong": "Many folks in big cities are totally fed up with noisy construction sites.",
+    "correct": "Many urban residents are increasingly frustrated by persistent construction noise.",
+    "errorSpan": {
+      "start": 29,
+      "end": 48
+    },
+    "ruleVi": "\"Folks\" và \"totally fed up with\" mang sắc thái văn nói; dùng \"urban residents\" và \"frustrated by\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_091",
+    "tag": "register",
+    "wrong": "Online scammers rip off elderly citizens who aren't tech-savvy.",
+    "correct": "Online fraudsters routinely exploit elderly citizens who lack digital literacy.",
+    "errorSpan": {
+      "start": 16,
+      "end": 23
+    },
+    "ruleVi": "\"Rip off\" là cụm động từ lóng; văn viết trang trọng dùng \"exploit\" hoặc \"defraud\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_092",
+    "tag": "register",
+    "wrong": "Public schools need better stuff like modern labs and updated textbooks.",
+    "correct": "Public schools require upgraded facilities such as modern laboratories and current textbooks.",
+    "errorSpan": {
+      "start": 20,
+      "end": 32
+    },
+    "ruleVi": "\"Stuff\" quá mơ hồ và thông tục; dùng danh từ chính xác như \"facilities\" hay \"equipment\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_093",
+    "tag": "register",
+    "wrong": "Tourism brings in loads of cash for historic coastal towns every summer.",
+    "correct": "Tourism generates substantial revenue for historic coastal towns every summer.",
+    "errorSpan": {
+      "start": 18,
+      "end": 31
+    },
+    "ruleVi": "\"Loads of cash\" thuộc văn nói; trong IELTS Writing dùng \"substantial revenue\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_094",
+    "tag": "register",
+    "wrong": "Young graduates often find it pretty tough to buy their first home.",
+    "correct": "Young graduates often find it considerably challenging to purchase their first home.",
+    "errorSpan": {
+      "start": 30,
+      "end": 42
+    },
+    "ruleVi": "\"Pretty tough\" quá suồng sã; dùng \"considerably challenging\" hoặc \"difficult\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_095",
+    "tag": "register",
+    "wrong": "Cutting trees down messes up wildlife habitats and causes bad floods.",
+    "correct": "Deforestation disrupts wildlife habitats and intensifies severe seasonal flooding.",
+    "errorSpan": {
+      "start": 19,
+      "end": 28
+    },
+    "ruleVi": "\"Messes up\" là cụm văn nói; văn học thuật dùng \"disrupts\" hoặc \"degrades\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_096",
+    "tag": "register",
+    "wrong": "Universities ought to kick out outdated exams that only test memory.",
+    "correct": "Universities should phase out outdated examinations that reward rote memorisation.",
+    "errorSpan": {
+      "start": 22,
+      "end": 30
+    },
+    "ruleVi": "\"Kick out\" quá thông tục cho chính sách; dùng \"phase out\" hoặc \"abolish\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_097",
+    "tag": "register",
+    "wrong": "Advertising companies trick shoppers into buying things they don't really need.",
+    "correct": "Advertising agencies often persuade consumers to purchase unnecessary goods.",
+    "errorSpan": {
+      "start": 22,
+      "end": 36
+    },
+    "ruleVi": "\"Trick\" và viết tắt \"don't\" thiếu tính khách quan học thuật; dùng \"persuade\" hoặc \"manipulate\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_098",
+    "tag": "register",
+    "wrong": "Working crazy long hours burns out hospital nurses very quickly.",
+    "correct": "Working excessively long shifts rapidly leads to burnout among hospital nurses.",
+    "errorSpan": {
+      "start": 8,
+      "end": 24
+    },
+    "ruleVi": "\"Crazy long\" là khẩu ngữ; bài viết học thuật dùng \"excessively long\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_099",
+    "tag": "register",
+    "wrong": "There are heaps of reasons why public libraries still matter today.",
+    "correct": "There are numerous compelling reasons why public libraries remain indispensable today.",
+    "errorSpan": {
+      "start": 10,
+      "end": 26
+    },
+    "ruleVi": "\"Heaps of\" là tiếng lóng Anh-Úc; văn viết trang trọng dùng \"numerous compelling reasons\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_100",
+    "tag": "register",
+    "wrong": "Politicians need to get their act together and fix ageing railway networks.",
+    "correct": "Policymakers must act decisively to modernise ageing railway networks.",
+    "errorSpan": {
+      "start": 20,
+      "end": 42
+    },
+    "ruleVi": "Thành ngữ khẩu ngữ \"get their act together\" không phù hợp với văn phong IELTS Writing.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_101",
+    "tag": "register",
+    "wrong": "Some parents are kinda worried about screen addiction among toddlers.",
+    "correct": "Many parents are understandably concerned about excessive screen use among toddlers.",
+    "errorSpan": {
+      "start": 17,
+      "end": 30
+    },
+    "ruleVi": "\"Kinda\" là khẩu ngữ rút gọn; bắt buộc dùng từ đầy đủ trang trọng như \"understandably concerned\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:register_102",
+    "tag": "register",
+    "wrong": "Plastic rubbish ends up in the ocean and kills off tons of sea creatures.",
+    "correct": "Plastic waste accumulates in marine ecosystems and threatens countless aquatic species.",
+    "errorSpan": {
+      "start": 51,
+      "end": 72
+    },
+    "ruleVi": "\"Rubbish\", \"kills off\", và \"tons of\" kém học thuật hơn \"waste\", \"threatens\", \"countless\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_103",
+    "tag": "spelling",
+    "wrong": "The goverment must allocate greater funding to rural healthcare clinics.",
+    "correct": "The government must allocate greater funding to rural healthcare clinics.",
+    "errorSpan": {
+      "start": 4,
+      "end": 13
+    },
+    "ruleVi": "Từ \"government\" rất hay bị thiếu chữ \"n\" ở giữa (govern + ment).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_104",
+    "tag": "spelling",
+    "wrong": "Protecting the enviroment requires binding limits on industrial carbon emissions.",
+    "correct": "Protecting the environment requires binding limits on industrial carbon emissions.",
+    "errorSpan": {
+      "start": 15,
+      "end": 25
+    },
+    "ruleVi": "Từ \"environment\" luôn có chữ \"n\" trước \"m\" (environ + ment).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_105",
+    "tag": "spelling",
+    "wrong": "Affordable student accomodation remains scarce near major metropolitan campuses.",
+    "correct": "Affordable student accommodation remains scarce near major metropolitan campuses.",
+    "errorSpan": {
+      "start": 19,
+      "end": 31
+    },
+    "ruleVi": "\"Accommodation\" có hai chữ \"c\" và hai chữ \"m\" (rất hay sai trong IELTS Listening & Writing).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_106",
+    "tag": "spelling",
+    "wrong": "Early literacy is widely regarded as a neccessary foundation for lifelong learning.",
+    "correct": "Early literacy is widely regarded as a necessary foundation for lifelong learning.",
+    "errorSpan": {
+      "start": 39,
+      "end": 49
+    },
+    "ruleVi": "\"Necessary\" chỉ có một chữ \"c\" và hai chữ \"s\" (1 collar, 2 sleeves).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_107",
+    "tag": "spelling",
+    "wrong": "Authorities should seperate pedestrian walkways from fast-moving urban traffic lanes.",
+    "correct": "Authorities should separate pedestrian walkways from fast-moving urban traffic lanes.",
+    "errorSpan": {
+      "start": 19,
+      "end": 27
+    },
+    "ruleVi": "\"Separate\" viết bằng \"a\" ở âm tiết giữa (sep-a-rate), không phải \"e\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_108",
+    "tag": "spelling",
+    "wrong": "Long-term public investment is definately needed to upgrade ageing water pipes.",
+    "correct": "Long-term public investment is definitely needed to upgrade ageing water pipes.",
+    "errorSpan": {
+      "start": 31,
+      "end": 41
+    },
+    "ruleVi": "\"Definitely\" bắt nguồn từ \"finite\" nên viết \"i\", không bao giờ viết \"definately\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_109",
+    "tag": "spelling",
+    "wrong": "Rapid technological shifts have occured across both manufacturing and finance.",
+    "correct": "Rapid technological shifts have occurred across both manufacturing and finance.",
+    "errorSpan": {
+      "start": 32,
+      "end": 39
+    },
+    "ruleVi": "Động từ \"occur\" nhấn âm 2 nên khi thêm \"-ed\" phải gấp đôi chữ \"r\" (\"occurred\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_110",
+    "tag": "spelling",
+    "wrong": "Universities should encourage independant critical thinking rather than memorisation.",
+    "correct": "Universities should encourage independent critical thinking rather than memorisation.",
+    "errorSpan": {
+      "start": 30,
+      "end": 41
+    },
+    "ruleVi": "\"Independent\" kết thúc bằng \"-ent\", không phải \"-ant\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_111",
+    "tag": "spelling",
+    "wrong": "Maintaining public trust requires a high level of transparancy in urban budgets.",
+    "correct": "Maintaining public trust requires a high level of transparency in urban budgets.",
+    "errorSpan": {
+      "start": 50,
+      "end": 62
+    },
+    "ruleVi": "\"Transparency\" kết thúc bằng \"-ency\" (từ \"transparent\"), không phải \"-ancy\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_112",
+    "tag": "spelling",
+    "wrong": "Small rural businesses often struggle to maintain competetive export prices.",
+    "correct": "Small rural businesses often struggle to maintain competitive export prices.",
+    "errorSpan": {
+      "start": 50,
+      "end": 61
+    },
+    "ruleVi": "\"Competitive\" có chữ \"i\" ở giữa (com-pet-i-tive), không phải \"e\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_113",
+    "tag": "spelling",
+    "wrong": "Urban planners should prioritise sustainble public transit over wider motorways.",
+    "correct": "Urban planners should prioritise sustainable public transit over wider motorways.",
+    "errorSpan": {
+      "start": 33,
+      "end": 43
+    },
+    "ruleVi": "\"Sustainable\" giữ đủ nguyên âm \"a\" trước \"-ble\" (sustain + able).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_114",
+    "tag": "spelling",
+    "wrong": "Adequate maintanance of public bridges prevents costly structural collapses.",
+    "correct": "Adequate maintenance of public bridges prevents costly structural collapses.",
+    "errorSpan": {
+      "start": 9,
+      "end": 20
+    },
+    "ruleVi": "\"Maintenance\" viết là \"ten\" ở giữa (main-ten-ance), khác với động từ \"maintain\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_115",
+    "tag": "spelling",
+    "wrong": "Unchecked urban sprawl poses a persistant threat to surrounding farmland.",
+    "correct": "Unchecked urban sprawl poses a persistent threat to surrounding farmland.",
+    "errorSpan": {
+      "start": 31,
+      "end": 41
+    },
+    "ruleVi": "\"Persistent\" kết thúc bằng \"-ent\", không phải \"-ant\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_116",
+    "tag": "spelling",
+    "wrong": "Many commuters choose cycling for its obvious health benifits and low cost.",
+    "correct": "Many commuters choose cycling for its obvious health benefits and low cost.",
+    "errorSpan": {
+      "start": 53,
+      "end": 61
+    },
+    "ruleVi": "\"Benefits\" viết bằng \"e\" ở âm tiết thứ hai (ben-e-fits), không phải \"i\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_117",
+    "tag": "spelling",
+    "wrong": "Public debates over artificial intelligence often exagerate short-term job losses.",
+    "correct": "Public debates over artificial intelligence often exaggerate short-term job losses.",
+    "errorSpan": {
+      "start": 50,
+      "end": 59
+    },
+    "ruleVi": "\"Exaggerate\" có hai chữ \"g\" (ex-ag-ger-ate).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_118",
+    "tag": "spelling",
+    "wrong": "Effective policy reform requires genuine committment from both national and local leaders.",
+    "correct": "Effective policy reform requires genuine commitment from both national and local leaders.",
+    "errorSpan": {
+      "start": 41,
+      "end": 52
+    },
+    "ruleVi": "\"Commitment\" chỉ có một chữ \"t\" ở giữa (không gấp đôi \"t\" như \"committed\").",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_119",
+    "tag": "spelling",
+    "wrong": "Research confirms a clear corelation between early reading habits and academic success.",
+    "correct": "Research confirms a clear correlation between early reading habits and academic success.",
+    "errorSpan": {
+      "start": 26,
+      "end": 36
+    },
+    "ruleVi": "\"Correlation\" có hai chữ \"r\" (cor-re-la-tion).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_120",
+    "tag": "spelling",
+    "wrong": "International trade agreements must include strict recomendations on labour safety.",
+    "correct": "International trade agreements must include strict recommendations on labour safety.",
+    "errorSpan": {
+      "start": 51,
+      "end": 65
+    },
+    "ruleVi": "\"Recommendation\" có một chữ \"c\" và hai chữ \"m\" (re-com-men-da-tion).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_121",
+    "tag": "spelling",
+    "wrong": "Online misinformation can severely dammage public confidence in clinical trials.",
+    "correct": "Online misinformation can severely damage public confidence in clinical trials.",
+    "errorSpan": {
+      "start": 35,
+      "end": 42
+    },
+    "ruleVi": "\"Damage\" chỉ có một chữ \"m\", không gấp đôi \"m\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "err:spelling_122",
+    "tag": "spelling",
+    "wrong": "A growing concensus among economists favours progressive carbon taxation.",
+    "correct": "A growing consensus among economists favours progressive carbon taxation.",
+    "errorSpan": {
+      "start": 10,
+      "end": 19
+    },
+    "ruleVi": "\"Consensus\" viết bằng \"s\" ở giữa (con-sen-sus), không phải \"c\".",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  }
+]

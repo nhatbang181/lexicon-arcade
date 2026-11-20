@@ -1,0 +1,2428 @@
+[
+  {
+    "id": "vocab:effect",
+    "headword": "effect",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ɪˈfekt/"
+    },
+    "meaningVi": "tác động, hiệu ứng",
+    "definitionEn": "A change that happens directly as a result of an action or cause.",
+    "examples": [
+      {
+        "en": "Long-term exposure to traffic noise can have a detrimental effect on children's reading comprehension.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Economists closely examine the ripple effect of higher interest rates on household spending.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "science",
+      "education"
+    ],
+    "lists": [
+      "AWL1"
+    ],
+    "vnTrap": "Danh từ dùng \"have an effect on\"; tránh nhầm chính tả với động từ \"affect\".",
+    "audio": {
+      "uk": "audio/vocab/effect.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:influence",
+    "headword": "influence",
+    "pos": [
+      "n",
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ˈɪnfluəns/"
+    },
+    "meaningVi": "ảnh hưởng, tác động",
+    "definitionEn": "The power to shape how someone thinks, behaves, or how something develops.",
+    "examples": [
+      {
+        "en": "Social media platforms now exert a powerful influence on how young voters evaluate political claims.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Peer groups often influence teenagers' lifestyle choices more strongly than formal classroom lectures.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "media",
+      "psychology"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Động từ \"influence sth\" không cần giới từ; danh từ đi với \"on\" (\"exert an influence on\").",
+    "audio": {
+      "uk": "audio/vocab/influence.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:solution",
+    "headword": "solution",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/səˈluːʃn/"
+    },
+    "meaningVi": "giải pháp",
+    "definitionEn": "A practical way of solving a difficult problem or dealing with a challenge.",
+    "examples": [
+      {
+        "en": "Expanding reliable public transit remains the most viable long-term solution to severe urban gridlock.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Policymakers rarely find a single simple solution when addressing complex structural poverty.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "government",
+      "environment"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Đi với giới từ \"to\" (\"a viable solution to the problem\"), không dùng \"solution for/of\".",
+    "audio": {
+      "uk": "audio/vocab/solution.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:measure",
+    "headword": "measure",
+    "pos": [
+      "n",
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ˈmeʒə/"
+    },
+    "meaningVi": "biện pháp; đo lường",
+    "definitionEn": "An official action taken to achieve a goal, or to calculate the size of something.",
+    "examples": [
+      {
+        "en": "Municipal authorities have introduced stringent measures to curb air pollution near primary schools.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Standardised tests alone cannot accurately measure a student's creative problem-solving abilities.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "government",
+      "economy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Khi chỉ biện pháp thường dùng số nhiều \"measures\" + \"take/implement measures to V\".",
+    "audio": {
+      "uk": "audio/vocab/measure.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:risk",
+    "headword": "risk",
+    "pos": [
+      "n",
+      "v"
+    ],
+    "ipa": {
+      "uk": "/rɪsk/"
+    },
+    "meaningVi": "rủi ro, nguy cơ",
+    "definitionEn": "The possibility that something harmful, dangerous, or unpleasant may occur.",
+    "examples": [
+      {
+        "en": "Sedentary lifestyles pose a serious risk to cardiovascular health among office workers worldwide.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Diversifying energy supplies helps national governments mitigate the risk of sudden fuel shortages.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "health",
+      "economy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"pose a risk to\" hoặc \"mitigate risks\", tránh dịch sát thành \"make a risk\".",
+    "audio": {
+      "uk": "audio/vocab/risk.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:demand",
+    "headword": "demand",
+    "pos": [
+      "n",
+      "v"
+    ],
+    "ipa": {
+      "uk": "/dɪˈmɑːnd/"
+    },
+    "meaningVi": "nhu cầu; đòi hỏi",
+    "definitionEn": "The desire and ability of consumers to buy goods, or a firm request.",
+    "examples": [
+      {
+        "en": "Rapid population growth has created unprecedented demand for affordable housing in major coastal cities.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Modern workplaces increasingly demand continuous digital training from employees across every age bracket.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "energy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Danh từ đi với \"for\" (\"growing demand for\"); không dùng \"demand of\".",
+    "audio": {
+      "uk": "audio/vocab/demand.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:pressure",
+    "headword": "pressure",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈpreʃə/"
+    },
+    "meaningVi": "áp lực, sức ép",
+    "definitionEn": "Continuous demands, stress, or persuasive force placed upon people or systems.",
+    "examples": [
+      {
+        "en": "Ageing populations are placing immense financial pressure on publicly funded hospitals and pension schemes.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Many secondary students experience intense academic pressure during the months leading up to university entrance exams.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "work",
+      "health"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"exert/place pressure on\" hoặc \"under pressure\", tránh \"make pressure on\".",
+    "audio": {
+      "uk": "audio/vocab/pressure.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:awareness",
+    "headword": "awareness",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/əˈweənəs/"
+    },
+    "meaningVi": "nhận thức, sự hiểu biết",
+    "definitionEn": "Knowledge and understanding that a particular issue or situation exists.",
+    "examples": [
+      {
+        "en": "School campaigns can raise public awareness of food waste and encourage more responsible shopping habits.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Growing environmental awareness among younger consumers has pushed major brands to adopt recyclable packaging.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "environment",
+      "health"
+    ],
+    "lists": [
+      "AWL5"
+    ],
+    "vnTrap": "Ưu tiên \"raise public awareness of\" (giới từ \"of\", không \"about\").",
+    "audio": {
+      "uk": "audio/vocab/awareness.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:behaviour",
+    "headword": "behaviour",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/bɪˈheɪvjə/"
+    },
+    "meaningVi": "hành vi, cách cư xử",
+    "definitionEn": "The way in which a person, group, or animal acts in a given situation.",
+    "examples": [
+      {
+        "en": "Targeted financial incentives can gradually modify consumer behaviour towards more energy-efficient appliances.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Early childhood experiences play a decisive role in shaping social behaviour throughout adolescence.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "psychology",
+      "education"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Chính tả Anh-Anh có \"u\" (\"behaviour\"); không đếm được trong văn học thuật chung.",
+    "audio": {
+      "uk": "audio/vocab/behaviour.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:development",
+    "headword": "development",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/dɪˈveləpmənt/"
+    },
+    "meaningVi": "sự phát triển",
+    "definitionEn": "The gradual process of growth, progress, or creating new infrastructure or ideas.",
+    "examples": [
+      {
+        "en": "Balancing rapid economic development with environmental protection remains a central dilemma for emerging nations.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Adequate nutrition during early childhood is indispensable for healthy cognitive development.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "urban"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"sustainable development\" hoặc \"economic development\"; tránh dùng số nhiều khi nói tiến trình chung.",
+    "audio": {
+      "uk": "audio/vocab/development.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:growth",
+    "headword": "growth",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ɡrəʊθ/"
+    },
+    "meaningVi": "sự tăng trưởng, phát triển",
+    "definitionEn": "An increase in the size, quantity, economic output, or maturity of something.",
+    "examples": [
+      {
+        "en": "Sustained economic growth depends heavily on reliable transport infrastructure and a well-educated workforce.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Unchecked urban growth has gradually encroached upon fertile agricultural land around many capital cities.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "urban"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: dùng \"sustained economic growth\", \"rapid population growth\".",
+    "audio": {
+      "uk": "audio/vocab/growth.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:opportunity",
+    "headword": "opportunity",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˌɒpəˈtjuːnəti/"
+    },
+    "meaningVi": "cơ hội",
+    "definitionEn": "A favourable set of circumstances that makes it possible to achieve something.",
+    "examples": [
+      {
+        "en": "Public scholarships expand higher education opportunities for talented students from low-income backgrounds.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Studying abroad offers graduates a valuable opportunity to build cross-cultural communication skills.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "education",
+      "work"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Đi với \"to V\" hoặc \"for N\" (\"equal opportunities for all\"), tránh \"opportunity of V-ing\".",
+    "audio": {
+      "uk": "audio/vocab/opportunity.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:responsibility",
+    "headword": "responsibility",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/rɪˌspɒnsəˈbɪləti/"
+    },
+    "meaningVi": "trách nhiệm",
+    "definitionEn": "A moral or legal duty to deal with something or take care of someone.",
+    "examples": [
+      {
+        "en": "Both multinational corporations and national governments must shoulder responsibility for cutting industrial emissions.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Encouraging teenagers to manage a modest budget teaches them a strong sense of financial responsibility.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "government",
+      "family"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Collocation chuẩn là \"take/shoulder responsibility for\", tránh \"do responsibility\".",
+    "audio": {
+      "uk": "audio/vocab/responsibility.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:evidence",
+    "headword": "evidence",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈevɪdəns/"
+    },
+    "meaningVi": "bằng chứng, chứng cứ",
+    "definitionEn": "Facts, data, or observations that support or refute a claim or theory.",
+    "examples": [
+      {
+        "en": "There is now compelling scientific evidence that urban green spaces lower local summer temperatures.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Policy decisions in healthcare should always rest on rigorous empirical evidence rather than anecdote.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "science",
+      "crime"
+    ],
+    "lists": [
+      "AWL1"
+    ],
+    "vnTrap": "Không đếm được: tránh \"evidences\" hay \"an evidence\"; dùng \"compelling evidence\".",
+    "audio": {
+      "uk": "audio/vocab/evidence.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:knowledge",
+    "headword": "knowledge",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈnɒlɪdʒ/"
+    },
+    "meaningVi": "kiến thức, tri thức",
+    "definitionEn": "Facts, information, and understanding gained through formal study or practical experience.",
+    "examples": [
+      {
+        "en": "Universities should help learners apply theoretical knowledge to solve real-world community problems.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Open-access digital libraries have democratised specialised knowledge for researchers in developing regions.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "education",
+      "science"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: tránh \"knowledges\" hay \"learn knowledge\"; dùng \"acquire/gain knowledge\".",
+    "audio": {
+      "uk": "audio/vocab/knowledge.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:skill",
+    "headword": "skill",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/skɪl/"
+    },
+    "meaningVi": "kỹ năng",
+    "definitionEn": "The ability to perform a complex task effectively, developed through training and practice.",
+    "examples": [
+      {
+        "en": "Rapid automation means workers must continually acquire transferable skills to remain employable.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Vocational colleges equip school leavers with practical technical skills demanded by local employers.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "work",
+      "education"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"acquire/hone/develop skills\", \"transferable skills\", tránh \"learn a skill\" quá đơn giản.",
+    "audio": {
+      "uk": "audio/vocab/skill.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:education",
+    "headword": "education",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˌedʒuˈkeɪʃn/"
+    },
+    "meaningVi": "giáo dục",
+    "definitionEn": "The formal process of teaching, training, and learning in schools or universities.",
+    "examples": [
+      {
+        "en": "Equitable access to quality primary education is widely recognised as a cornerstone of social mobility.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Governments that underfund higher education risk losing skilled researchers to overseas institutions.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "education",
+      "government"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Khi nói giáo dục nói chung không dùng mạo từ \"a/the\" (\"invest in education\").",
+    "audio": {
+      "uk": "audio/vocab/education.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:crime",
+    "headword": "crime",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/kraɪm/"
+    },
+    "meaningVi": "tội phạm, hành vi phạm tội",
+    "definitionEn": "Illegal activities that violate the law and are punishable by legal authorities.",
+    "examples": [
+      {
+        "en": "Addressing youth unemployment is often more effective at reducing violent crime than harsher prison terms alone.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Expanding street lighting and community policing can significantly deter opportunistic property crime.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "crime",
+      "government"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không dịch sát thành \"make a crime\"; collocation chuẩn là \"commit a crime\".",
+    "audio": {
+      "uk": "audio/vocab/crime.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:pollution",
+    "headword": "pollution",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/pəˈluːʃn/"
+    },
+    "meaningVi": "sự ô nhiễm",
+    "definitionEn": "The introduction of harmful or toxic substances into air, water, or soil.",
+    "examples": [
+      {
+        "en": "Strict emission standards for diesel vehicles are essential to combat urban air pollution.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Untreated industrial runoff remains a leading source of freshwater pollution in manufacturing zones.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "environment",
+      "urban"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: tránh \"pollutions\"; dùng \"curb/combat pollution\", không nói \"make pollution\".",
+    "audio": {
+      "uk": "audio/vocab/pollution.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:health",
+    "headword": "health",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/helθ/"
+    },
+    "meaningVi": "sức khỏe",
+    "definitionEn": "A person's overall physical and mental condition and freedom from illness.",
+    "examples": [
+      {
+        "en": "Prolonged sleep deprivation can seriously impair both cognitive performance and long-term physical health.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Preventive public health programmes typically cost far less than treating advanced chronic diseases.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "health",
+      "food"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: dùng \"public health\", \"mental health\", \"detrimental to health\".",
+    "audio": {
+      "uk": "audio/vocab/health.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:investment",
+    "headword": "investment",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ɪnˈvestmənt/"
+    },
+    "meaningVi": "sự đầu tư",
+    "definitionEn": "The allocation of money, time, or resources to generate future returns or benefits.",
+    "examples": [
+      {
+        "en": "Substantial public investment in renewable energy grids can create thousands of skilled engineering jobs.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Political instability often discourages foreign investment in emerging manufacturing sectors.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "energy"
+    ],
+    "lists": [
+      "AWL2"
+    ],
+    "vnTrap": "Đi với giới từ \"in\" (\"long-term investment in infrastructure\").",
+    "audio": {
+      "uk": "audio/vocab/investment.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:regulation",
+    "headword": "regulation",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˌreɡjuˈleɪʃn/"
+    },
+    "meaningVi": "quy định, sự điều tiết",
+    "definitionEn": "An official rule or legal control designed to govern an industry or activity.",
+    "examples": [
+      {
+        "en": "Clear safety regulations are necessary to ensure that autonomous vehicles operate reliably on public roads.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Critics argue that excessive red tape and outdated regulations can stifle small business innovation.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "government",
+      "economy"
+    ],
+    "lists": [
+      "AWL2"
+    ],
+    "vnTrap": "Dùng \"strict/stringent regulations\", \"enforce/comply with regulations\".",
+    "audio": {
+      "uk": "audio/vocab/regulation.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:inequality",
+    "headword": "inequality",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˌɪnɪˈkwɒləti/"
+    },
+    "meaningVi": "sự bất bình đẳng",
+    "definitionEn": "An unfair difference in wealth, opportunities, or social status between groups.",
+    "examples": [
+      {
+        "en": "Unequal access to high-speed internet can deepen educational inequality between urban and rural students.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Progressive taxation is frequently proposed as a mechanism to narrow persistent wealth inequality.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "government"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Dùng \"income/wealth inequality\", \"widen/narrow/bridge inequality\".",
+    "audio": {
+      "uk": "audio/vocab/inequality.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:unemployment",
+    "headword": "unemployment",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˌʌnɪmˈplɔɪmənt/"
+    },
+    "meaningVi": "tình trạng thất nghiệp",
+    "definitionEn": "The state of being without paid work despite actively seeking employment.",
+    "examples": [
+      {
+        "en": "Prolonged youth unemployment can erode social cohesion and delay financial independence for graduates.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Retraining subsidies help displaced factory workers avoid long-term structural unemployment.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "work",
+      "economy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: nói \"youth unemployment\" hoặc \"unemployment rate\", không thêm -s.",
+    "audio": {
+      "uk": "audio/vocab/unemployment.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:efficiency",
+    "headword": "efficiency",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ɪˈfɪʃnsi/"
+    },
+    "meaningVi": "hiệu suất, tính hiệu quả",
+    "definitionEn": "The ability to achieve maximum output while minimising wasted time, energy, or cost.",
+    "examples": [
+      {
+        "en": "Upgrading building insulation is one of the fastest ways to improve domestic energy efficiency.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Digital workflows can boost administrative efficiency, provided staff receive adequate technical training.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "technology",
+      "energy"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Dùng \"energy efficiency\", \"boost/improve/maximise efficiency\".",
+    "audio": {
+      "uk": "audio/vocab/efficiency.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:sustainability",
+    "headword": "sustainability",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/səˌsteɪnəˈbɪləti/"
+    },
+    "meaningVi": "tính bền vững",
+    "definitionEn": "The capacity to meet present needs without depleting resources for future generations.",
+    "examples": [
+      {
+        "en": "Modern urban planning must prioritise environmental sustainability alongside affordable public housing.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Consumers increasingly scrutinise corporate supply chains for genuine commitments to sustainability.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "environment",
+      "economy"
+    ],
+    "lists": [
+      "AWL5"
+    ],
+    "vnTrap": "Không đếm được: dùng \"environmental/long-term sustainability\".",
+    "audio": {
+      "uk": "audio/vocab/sustainability.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:emission",
+    "headword": "emission",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ɪˈmɪʃn/"
+    },
+    "meaningVi": "khí thải, sự phát thải",
+    "definitionEn": "The release of gas, heat, or radiation into the surrounding atmosphere.",
+    "examples": [
+      {
+        "en": "Electrifying commuter rail networks can substantially cut national carbon emissions over two decades.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "International agreements struggle to curb industrial emissions without binding enforcement mechanisms.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "environment",
+      "energy"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Thường dùng số nhiều \"carbon/greenhouse gas emissions\" với \"curb/cut/reduce\".",
+    "audio": {
+      "uk": "audio/vocab/emission.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:climate",
+    "headword": "climate",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈklaɪmət/"
+    },
+    "meaningVi": "khí hậu; bầu không khí",
+    "definitionEn": "The long-term pattern of weather conditions in a region, or general prevailing atmosphere.",
+    "examples": [
+      {
+        "en": "Coastal megacities face escalating infrastructure costs as global climate patterns become more extreme.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "A predictable regulatory climate encourages technology firms to fund long-term scientific research.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "environment",
+      "economy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Phân biệt \"climate\" (khí hậu dài hạn) với \"weather\" (thời tiết từng ngày).",
+    "audio": {
+      "uk": "audio/vocab/climate.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:congestion",
+    "headword": "congestion",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/kənˈdʒestʃən/"
+    },
+    "meaningVi": "tình trạng ùn tắc",
+    "definitionEn": "Severe overcrowding of roads, networks, or spaces that slows movement.",
+    "examples": [
+      {
+        "en": "Introducing peak-hour congestion charges has noticeably reduced private car traffic in several European capitals.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Dedicated bus lanes can alleviate urban congestion far more cheaply than widening city motorways.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "transport",
+      "urban"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Không đếm được: dùng \"ease/alleviate/relieve traffic congestion\".",
+    "audio": {
+      "uk": "audio/vocab/congestion.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:privacy",
+    "headword": "privacy",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈprɪvəsi/"
+    },
+    "meaningVi": "quyền riêng tư",
+    "definitionEn": "The right to keep personal data and private life free from unwanted observation.",
+    "examples": [
+      {
+        "en": "Widespread facial-recognition cameras raise urgent legal questions about citizen privacy in public spaces.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Stricter digital laws are needed to protect user privacy from unauthorised commercial data harvesting.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "technology",
+      "government"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"invade/violate/protect privacy\", \"data privacy\".",
+    "audio": {
+      "uk": "audio/vocab/privacy.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:security",
+    "headword": "security",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/sɪˈkjʊərəti/"
+    },
+    "meaningVi": "an ninh, sự an toàn",
+    "definitionEn": "Protection from danger, financial instability, crime, or digital threats.",
+    "examples": [
+      {
+        "en": "Freelance gig platforms offer flexible hours but rarely provide long-term financial security for workers.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Climate disruption increasingly threatens global food security across arid agricultural belts.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "technology",
+      "government"
+    ],
+    "lists": [
+      "AWL2"
+    ],
+    "vnTrap": "Dùng \"job security\", \"food security\", \"cybersecurity\", \"national security\".",
+    "audio": {
+      "uk": "audio/vocab/security.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:treatment",
+    "headword": "treatment",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈtriːtmənt/"
+    },
+    "meaningVi": "sự điều trị; cách đối xử",
+    "definitionEn": "Medical care given to heal an illness, or the way someone is handled.",
+    "examples": [
+      {
+        "en": "Early diagnostic screening significantly improves survival rates and lowers overall hospital treatment costs.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "International labour standards aim to guarantee fair treatment for seasonal migrant workers.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "health",
+      "government"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"medical treatment\", \"undergo treatment\", \"fair/equal treatment\".",
+    "audio": {
+      "uk": "audio/vocab/treatment.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:prevention",
+    "headword": "prevention",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/prɪˈvenʃn/"
+    },
+    "meaningVi": "sự phòng ngừa",
+    "definitionEn": "Action taken in advance to stop something harmful or undesirable from happening.",
+    "examples": [
+      {
+        "en": "Public health experts emphasise that disease prevention through vaccination saves far more lives than late intervention.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Community youth centres play an important role in early crime prevention across disadvantaged neighbourhoods.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "health",
+      "crime"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"disease/crime prevention\", \"prevention is better than cure\".",
+    "audio": {
+      "uk": "audio/vocab/prevention.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:habit",
+    "headword": "habit",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈhæbɪt/"
+    },
+    "meaningVi": "thói quen",
+    "definitionEn": "A regular pattern of behaviour repeated frequently and often automatically.",
+    "examples": [
+      {
+        "en": "Encouraging children to read for pleasure helps cultivate a lifelong habit of independent learning.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Once sedentary screen habits become ingrained in adolescence, they can be difficult to break in adulthood.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "health",
+      "psychology"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"develop/cultivate a habit\" và \"break a habit\", tránh \"destroy a habit\".",
+    "audio": {
+      "uk": "audio/vocab/habit.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:standard",
+    "headword": "standard",
+    "pos": [
+      "n",
+      "adj"
+    ],
+    "ipa": {
+      "uk": "/ˈstændəd/"
+    },
+    "meaningVi": "tiêu chuẩn, mức sống",
+    "definitionEn": "An accepted level of quality, achievement, or living conditions.",
+    "examples": [
+      {
+        "en": "Sustained productivity gains have gradually raised living standards across many newly industrialised economies.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Export manufacturers must meet strict environmental standards to access European consumer markets.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "economy",
+      "education"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"raise/maintain living standards\", \"meet strict safety standards\".",
+    "audio": {
+      "uk": "audio/vocab/standard.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:quality",
+    "headword": "quality",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈkwɒləti/"
+    },
+    "meaningVi": "chất lượng",
+    "definitionEn": "The degree of excellence of a product, service, or living environment.",
+    "examples": [
+      {
+        "en": "Accessible parks and clean air contribute enormously to the overall quality of urban life.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Class sizes directly influence the quality of individualised feedback teachers can offer students.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "urban",
+      "health"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"enhance/improve the quality of life\", không cần \"the\" trước \"life\" nói chung.",
+    "audio": {
+      "uk": "audio/vocab/quality.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:gap",
+    "headword": "gap",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ɡæp/"
+    },
+    "meaningVi": "khoảng cách, sự chênh lệch",
+    "definitionEn": "A noticeable difference or separation between two groups, levels, or periods.",
+    "examples": [
+      {
+        "en": "Targeted digital subsidies can help bridge the achievement gap between affluent and rural schools.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Without wage reform, the wealth gap between executives and frontline staff is projected to widen.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "economy",
+      "education"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng \"bridge/narrow/widen the gap between A and B\".",
+    "audio": {
+      "uk": "audio/vocab/gap.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:barrier",
+    "headword": "barrier",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈbæriə/"
+    },
+    "meaningVi": "rào cản",
+    "definitionEn": "An obstacle that prevents communication, movement, access, or progress.",
+    "examples": [
+      {
+        "en": "High childcare costs remain a major barrier to full-time career progression for many young parents.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Online translation tools have lowered language barriers in international academic collaboration.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "education",
+      "globalisation"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Đi với giới từ \"to\" (\"overcome/remove barriers to education\").",
+    "audio": {
+      "uk": "audio/vocab/barrier.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:consensus",
+    "headword": "consensus",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/kənˈsensəs/"
+    },
+    "meaningVi": "sự đồng thuận",
+    "definitionEn": "General agreement reached among all or most members of a group.",
+    "examples": [
+      {
+        "en": "There is now broad scientific consensus that human activity is accelerating atmospheric warming.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Building political consensus on long-term pension reform often requires transparent public consultation.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "government",
+      "science"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Dùng \"reach/build a consensus on\", \"growing scientific consensus\".",
+    "audio": {
+      "uk": "audio/vocab/consensus.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:crisis",
+    "headword": "crisis",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈkraɪsɪs/"
+    },
+    "meaningVi": "cuộc khủng hoảng",
+    "definitionEn": "A time of intense difficulty, instability, or danger requiring urgent decisions.",
+    "examples": [
+      {
+        "en": "Soaring urban rents have triggered an acute housing crisis for essential public-sector workers.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Coordinated international action is essential to address an ecological crisis that crosses national borders.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "environment"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Số nhiều là \"crises\" (/ˈkraɪsiːz/), không phải \"crisises\".",
+    "audio": {
+      "uk": "audio/vocab/crisis.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:consumption",
+    "headword": "consumption",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/kənˈsʌmpʃn/"
+    },
+    "meaningVi": "sự tiêu thụ, tiêu dùng",
+    "definitionEn": "The act of using up goods, energy, food, or natural resources.",
+    "examples": [
+      {
+        "en": "Smart utility meters encourage households to monitor and reduce peak-hour electricity consumption.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Heavy taxation on sugary drinks has measurably lowered daily sugar consumption among teenagers.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "environment"
+    ],
+    "lists": [
+      "AWL2"
+    ],
+    "vnTrap": "Dùng \"energy/fuel/domestic consumption\", \"curb/reduce excessive consumption\".",
+    "audio": {
+      "uk": "audio/vocab/consumption.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:waste",
+    "headword": "waste",
+    "pos": [
+      "n",
+      "v"
+    ],
+    "ipa": {
+      "uk": "/weɪst/"
+    },
+    "meaningVi": "rác thải; sự lãng phí",
+    "definitionEn": "Unwanted materials discarded after use, or the careless use of valuable resources.",
+    "examples": [
+      {
+        "en": "Clearer expiry labelling on supermarket products can substantially cut annual household food waste.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Municipalities face rising disposal costs as electronic waste from short-lived gadgets accumulates rapidly.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "environment",
+      "food"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: dùng \"household/electronic/food waste\", \"minimise waste\".",
+    "audio": {
+      "uk": "audio/vocab/waste.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:housing",
+    "headword": "housing",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ˈhaʊzɪŋ/"
+    },
+    "meaningVi": "nhà ở",
+    "definitionEn": "Buildings or residential accommodation provided for people to live in.",
+    "examples": [
+      {
+        "en": "Expanding affordable public housing near transit corridors helps reduce daily commuter distances.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Speculative property investment has made inner-city housing unaffordable for first-time buyers.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "urban",
+      "economy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: dùng \"affordable housing\", \"housing shortage\", không thêm -s.",
+    "audio": {
+      "uk": "audio/vocab/housing.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:employment",
+    "headword": "employment",
+    "pos": [
+      "n"
+    ],
+    "ipa": {
+      "uk": "/ɪmˈplɔɪmənt/"
+    },
+    "meaningVi": "việc làm, sự tuyển dụng",
+    "definitionEn": "The condition of having paid work, or the act of hiring workers.",
+    "examples": [
+      {
+        "en": "Vocational apprenticeships significantly improve graduate employment prospects in skilled engineering trades.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Flexible remote policies have widened employment opportunities for carers and residents of rural towns.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "work",
+      "economy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Không đếm được: dùng \"employment opportunities/prospects\", \"stable employment\".",
+    "audio": {
+      "uk": "audio/vocab/employment.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:address",
+    "headword": "address",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/əˈdres/"
+    },
+    "meaningVi": "giải quyết, xử lý (vấn đề)",
+    "definitionEn": "To deal with or take serious action regarding a problem or issue.",
+    "examples": [
+      {
+        "en": "National governments must address the root causes of homelessness rather than relying on temporary shelters.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "International climate summits seek to address rising sea levels through coordinated emission targets.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "government",
+      "environment"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Ngoại động từ trực tiếp (\"address an issue/problem\"), không thêm giới từ \"with/to\".",
+    "audio": {
+      "uk": "audio/vocab/address.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:tackle",
+    "headword": "tackle",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ˈtækl/"
+    },
+    "meaningVi": "giải quyết quyết liệt (vấn đề)",
+    "definitionEn": "To make a determined effort to deal with a difficult problem or challenge.",
+    "examples": [
+      {
+        "en": "Schools and parents must work together to tackle childhood obesity through nutrition and daily sport.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Strict financial auditing is essential to tackle systemic corruption in public procurement.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "government",
+      "health"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Dùng cho vấn đề khó (\"tackle obesity/crime/climate change\"), rất tự nhiên trong Task 2.",
+    "audio": {
+      "uk": "audio/vocab/tackle.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:raise",
+    "headword": "raise",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/reɪz/"
+    },
+    "meaningVi": "nâng cao, tăng lên; nêu ra",
+    "definitionEn": "To lift, increase, collect funds, or bring a topic to public attention.",
+    "examples": [
+      {
+        "en": "Documentary films can effectively raise public awareness of endangered marine ecosystems.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Several economists have raised valid concerns about the long-term fiscal cost of blanket subsidies.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "education",
+      "economy"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Ngoại động từ bắt buộc có tân ngữ (\"raise awareness/standards\"); đừng nhầm với nội động từ \"rise\".",
+    "audio": {
+      "uk": "audio/vocab/raise.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:exert",
+    "headword": "exert",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ɪɡˈzɜːt/"
+    },
+    "meaningVi": "gây ra, tạo ra (ảnh hưởng/áp lực)",
+    "definitionEn": "To apply power, influence, pressure, or effort strongly upon something.",
+    "examples": [
+      {
+        "en": "Global streaming platforms now exert considerable influence over local film production budgets.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Peer expectations can exert subtle pressure on adolescents to conform to costly fashion trends.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "government",
+      "psychology"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Collocation học thuật Band 8: \"exert an influence/pressure on\".",
+    "audio": {
+      "uk": "audio/vocab/exert.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:undermine",
+    "headword": "undermine",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ˌʌndəˈmaɪn/"
+    },
+    "meaningVi": "làm suy yếu, phá hoại ngầm",
+    "definitionEn": "To gradually weaken the effectiveness, authority, or stability of something.",
+    "examples": [
+      {
+        "en": "Unchecked online misinformation can severely undermine public trust in scientific health guidance.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Short-term budget cuts to preventive healthcare often undermine long-term hospital efficiency.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "media",
+      "government"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Động từ Band 8 cực tốt: \"undermine public trust/confidence/efforts\".",
+    "audio": {
+      "uk": "audio/vocab/undermine.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:exacerbate",
+    "headword": "exacerbate",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ɪɡˈzæsəbeɪt/"
+    },
+    "meaningVi": "làm trầm trọng thêm",
+    "definitionEn": "To make an existing problem, crisis, or negative condition noticeably worse.",
+    "examples": [
+      {
+        "en": "Removing affordable bus routes would only exacerbate traffic congestion and regional isolation.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Prolonged droughts can exacerbate food inflation across import-dependent developing economies.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "environment",
+      "economy"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Chỉ dùng cho vấn đề tiêu cực sẵn có (\"exacerbate inequality/congestion\"), không dùng nghĩa trung tính.",
+    "audio": {
+      "uk": "audio/vocab/exacerbate.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:eradicate",
+    "headword": "eradicate",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ɪˈrædɪkeɪt/"
+    },
+    "meaningVi": "xóa bỏ hoàn toàn, diệt trừ",
+    "definitionEn": "To destroy or eliminate an undesirable problem or disease completely.",
+    "examples": [
+      {
+        "en": "Global vaccination campaigns have helped eradicate several once-fatal infectious diseases.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Combining free primary schooling with microloans can help communities eradicate extreme poverty.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "health",
+      "economy"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Mạnh hơn \"reduce\": dùng \"eradicate poverty/illiteracy/disease\".",
+    "audio": {
+      "uk": "audio/vocab/eradicate.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:stimulate",
+    "headword": "stimulate",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ˈstɪmjuleɪt/"
+    },
+    "meaningVi": "kích thích, thúc đẩy",
+    "definitionEn": "To encourage greater activity, economic growth, or intellectual interest.",
+    "examples": [
+      {
+        "en": "Lower interest rates are often used to stimulate consumer spending during an economic slowdown.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Open-ended laboratory projects stimulate curiosity far better than repetitive textbook worksheets.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "education"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Dùng \"stimulate economic growth/demand/innovation/debate\".",
+    "audio": {
+      "uk": "audio/vocab/stimulate.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:accelerate",
+    "headword": "accelerate",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/əkˈseləreɪt/"
+    },
+    "meaningVi": "đẩy nhanh, tăng tốc",
+    "definitionEn": "To cause a process, trend, or rate of change to happen faster.",
+    "examples": [
+      {
+        "en": "Targeted research grants can accelerate the transition to affordable grid-scale battery storage.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Remote-work software helped accelerate structural changes in commercial office demand after 2020.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "technology",
+      "environment"
+    ],
+    "lists": [
+      "NAWL"
+    ],
+    "vnTrap": "Dùng \"accelerate the transition to\", \"accelerate climate change/innovation\".",
+    "audio": {
+      "uk": "audio/vocab/accelerate.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:overcome",
+    "headword": "overcome",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/ˌəʊvəˈkʌm/"
+    },
+    "meaningVi": "vượt qua, khắc phục",
+    "definitionEn": "To succeed in dealing with or defeating a major obstacle or difficulty.",
+    "examples": [
+      {
+        "en": "Targeted mentorship programmes help first-generation students overcome early academic barriers at university.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Cross-border cooperation is vital to overcome technical hurdles in clean energy transmission.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "neutral",
+    "topics": [
+      "education",
+      "psychology"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Bất quy tắc: overcome – overcame – overcome; dùng \"overcome barriers/obstacles/challenges\".",
+    "audio": {
+      "uk": "audio/vocab/overcome.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "vocab:bridge",
+    "headword": "bridge",
+    "pos": [
+      "v"
+    ],
+    "ipa": {
+      "uk": "/brɪdʒ/"
+    },
+    "meaningVi": "thu hẹp, nối liền (khoảng cách)",
+    "definitionEn": "To reduce or connect a sharp division or gap between two groups.",
+    "examples": [
+      {
+        "en": "Community broadband initiatives can bridge the digital divide separating remote villages from urban centres.",
+        "ieltsContext": "W2"
+      },
+      {
+        "en": "Intergenerational volunteering projects help bridge the cultural gap between teenagers and older residents.",
+        "ieltsContext": "R"
+      }
+    ],
+    "collocationIds": [],
+    "register": "formal",
+    "topics": [
+      "economy",
+      "technology"
+    ],
+    "lists": [
+      "NGSL"
+    ],
+    "vnTrap": "Collocation Band 8: \"bridge the digital/wealth/generation gap\".",
+    "audio": {
+      "uk": "audio/vocab/bridge.uk.mp3"
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  }
+]

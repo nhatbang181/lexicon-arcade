@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "wup_001",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Governments should give more money to primary schools.",
+    "band8Sentence": "Governments should allocate more funding to primary education.",
+    "targetChunk": "allocate more funding",
+    "distractors": [
+      "hand out more cash",
+      "spend bigger money",
+      "put extra finance"
+    ],
+    "explanationVi": "Collocation Band 8.0 'allocate funding to' trang trọng và chính xác hơn 'give money to'."
+  },
+  {
+    "id": "wup_002",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "This trend will probably have big effects on everyone in society.",
+    "band8Sentence": "This trend is likely to have far-reaching implications for society as a whole.",
+    "targetChunk": "far-reaching implications",
+    "distractors": [
+      "very big results",
+      "huge endings",
+      "long-distance effects"
+    ],
+    "explanationVi": "'have far-reaching implications for' là cụm nâng cấp chuẩn Band 8.0 cho 'have big effects on'."
+  },
+  {
+    "id": "wup_003",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The number of visitors went up a lot from 2 million to 5 million in 2010 to 2015.",
+    "band8Sentence": "The number of visitors rose sharply from 2 million to 5 million between 2010 and 2015.",
+    "targetChunk": "rose sharply",
+    "distractors": [
+      "went up very big",
+      "grew strongly fast",
+      "raised quickly"
+    ],
+    "explanationVi": "Kết hợp động từ 'rise' (nội động từ, quá khứ rose) + trạng từ 'sharply' chuẩn mô tả xu hướng Task 1."
+  },
+  {
+    "id": "wup_004",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Sales stayed the same at about 400 units until the end.",
+    "band8Sentence": "Sales remained stable at around 400 units for the rest of the period.",
+    "targetChunk": "remained stable",
+    "distractors": [
+      "kept unmoving",
+      "stayed equal",
+      "held flatly"
+    ],
+    "explanationVi": "'remained stable at' là cụm chuẩn mực thay cho 'stayed the same'."
+  },
+  {
+    "id": "wup_005",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Unemployment got to the highest point of 12% in 2009 and then went down slowly.",
+    "band8Sentence": "Unemployment peaked at 12% in 2009 before declining steadily.",
+    "targetChunk": "peaked at",
+    "distractors": [
+      "topped in",
+      "reached peak on",
+      "climbed highest at"
+    ],
+    "explanationVi": "Động từ 'peak at + số liệu' ngắn gọn, chính xác hơn 'get to the highest point'."
+  },
+  {
+    "id": "wup_006",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The price of solar panels went down very fast.",
+    "band8Sentence": "There was a dramatic fall in the price of solar panels.",
+    "targetChunk": "a dramatic fall in",
+    "distractors": [
+      "a dramatic fall of",
+      "a big dropping at",
+      "a sudden decrease about"
+    ],
+    "explanationVi": "Cấu trúc danh từ hóa 'There was a + adj + noun + in' giúp đa dạng ngữ pháp Task 1."
+  },
+  {
+    "id": "wup_007",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The number went up and down between 30% and 40% for ten years.",
+    "band8Sentence": "The figure fluctuated between 30% and 40% throughout the decade.",
+    "targetChunk": "fluctuated",
+    "distractors": [
+      "shook up and down",
+      "waved around",
+      "moved irregularly"
+    ],
+    "explanationVi": "'fluctuate between X and Y' diễn tả sự dao động chính xác thay cho 'go up and down'."
+  },
+  {
+    "id": "wup_008",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Car ownership went down to the lowest number of 15% in 1990.",
+    "band8Sentence": "Car ownership reached a low of 15% in 1990.",
+    "targetChunk": "reached a low of",
+    "distractors": [
+      "hit bottom in",
+      "arrived a minimum at",
+      "fell lowest to"
+    ],
+    "explanationVi": "'reach a low of + số liệu' là collocation chuẩn cho điểm đáy biểu đồ."
+  },
+  {
+    "id": "wup_009",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The number was 45% in the year 2000.",
+    "band8Sentence": "The figure stood at 45% in 2000.",
+    "targetChunk": "stood at",
+    "distractors": [
+      "sat on",
+      "stayed in",
+      "located at"
+    ],
+    "explanationVi": "'stand at' là động từ học thuật tự nhiên để nêu mốc số liệu khởi điểm thay vì lặp 'was'."
+  },
+  {
+    "id": "wup_010",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Exports became more than two times bigger during the chart time.",
+    "band8Sentence": "Exports more than doubled over the period shown.",
+    "targetChunk": "more than doubled",
+    "distractors": [
+      "over two-timed",
+      "multiplied doubly",
+      "increased twice bigger"
+    ],
+    "explanationVi": "Động từ 'double' kèm trạng ngữ 'more than' giúp diễn đạt bội số cực kỳ súc tích."
+  },
+  {
+    "id": "wup_011",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The recycled waste became almost three times more from 2000 to 2020.",
+    "band8Sentence": "The amount of waste recycled nearly tripled between 2000 and 2020.",
+    "targetChunk": "nearly tripled",
+    "distractors": [
+      "almost three-folded",
+      "nearly grew triple",
+      "tripled closely"
+    ],
+    "explanationVi": "'nearly tripled' súc tích hơn rất nhiều so với 'became almost three times more'."
+  },
+  {
+    "id": "wup_012",
+    "taskType": "Task 1",
+    "category": "Complex Sentences",
+    "band6Sentence": "The percentage of households with internet rose steadily. It reached 90% in 2020.",
+    "band8Sentence": "The percentage of households with internet access rose steadily, reaching 90% in 2020.",
+    "targetChunk": ", reaching 90%",
+    "distractors": [
+      ", and reached at 90%",
+      ", which reaching 90%",
+      ", to reach at 90%"
+    ],
+    "explanationVi": "Dùng mệnh đề phân từ V-ing (', reaching ...') để gộp hai câu đơn thành câu phức mượt mà."
+  },
+  {
+    "id": "wup_013",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The two lines met at the same point in 2015 at 60%.",
+    "band8Sentence": "The two lines converged in 2015, when both stood at 60%.",
+    "targetChunk": "converged",
+    "distractors": [
+      "combined together",
+      "collided",
+      "joined up"
+    ],
+    "explanationVi": "'converge' là từ chuyên dụng Band 8.0 chỉ hai đường biểu đồ tiến về cùng một điểm."
+  },
+  {
+    "id": "wup_014",
+    "taskType": "Task 1",
+    "category": "Projections",
+    "band6Sentence": "Electricity use will probably go up to 300 units in 2030.",
+    "band8Sentence": "Electricity consumption is projected to rise to 300 units by 2030.",
+    "targetChunk": "is projected to",
+    "distractors": [
+      "is guessed to",
+      "will forecast to",
+      "is hoping to"
+    ],
+    "explanationVi": "Khi biểu đồ có mốc tương lai, dùng 'is projected/forecast to + V' thay cho 'will probably'."
+  },
+  {
+    "id": "wup_015",
+    "taskType": "Task 1",
+    "category": "Overview",
+    "band6Sentence": "In general, coal was always the biggest source and renewables grew the most quickly.",
+    "band8Sentence": "Overall, it is clear that coal remained the main source of electricity, while renewables grew the fastest.",
+    "targetChunk": "Overall, it is clear that",
+    "distractors": [
+      "To sum up, we see",
+      "In conclusion, clearly",
+      "All in all, obviously"
+    ],
+    "explanationVi": "Mở đoạn Overview bằng 'Overall, it is clear that...' giúp nổi bật xu hướng chính cho tiêu chí Task Achievement."
+  },
+  {
+    "id": "wup_016",
+    "taskType": "Task 1",
+    "category": "Overview",
+    "band6Sentence": "In the chart time, the biggest thing to notice is online sales grew fast.",
+    "band8Sentence": "Over the period shown, the most striking feature is the rapid growth of online sales.",
+    "targetChunk": "the most striking feature",
+    "distractors": [
+      "the strongest point",
+      "the loudest detail",
+      "the most obvious stuff"
+    ],
+    "explanationVi": "'the most striking feature is...' là cấu trúc mở Overview tự nhiên, giàu sắc thái học thuật."
+  },
+  {
+    "id": "wup_017",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "But on the other side, the percentage of older workers dropped a little.",
+    "band8Sentence": "By contrast, the proportion of older workers fell slightly.",
+    "targetChunk": "By contrast,",
+    "distractors": [
+      "On the opposite,",
+      "In contrary,",
+      "Opposite to that,"
+    ],
+    "explanationVi": "'By contrast,' (hoặc 'In contrast,') là từ nối đối lập chuẩn xác ở đầu câu."
+  },
+  {
+    "id": "wup_018",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Meat eating went down, and vegetable eating went up.",
+    "band8Sentence": "Meat consumption fell, whereas vegetable consumption increased.",
+    "targetChunk": ", whereas",
+    "distractors": [
+      ", however",
+      ", despite",
+      ", although but"
+    ],
+    "explanationVi": "Liên từ 'whereas' nối hai mệnh đề đối lập trong cùng một câu phức chuẩn ngữ pháp."
+  },
+  {
+    "id": "wup_019",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Healthcare spending was two times bigger than education spending.",
+    "band8Sentence": "Spending on healthcare was twice as high as spending on education.",
+    "targetChunk": "twice as high as",
+    "distractors": [
+      "two times higher as",
+      "double higher than",
+      "twice more high than"
+    ],
+    "explanationVi": "Cấu trúc so sánh bội số chuẩn: 'twice / three times as + adj + as'."
+  },
+  {
+    "id": "wup_020",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "The number for men was a bit higher than the number for women.",
+    "band8Sentence": "The figure for men was slightly higher than that for women.",
+    "targetChunk": "slightly higher than that for",
+    "distractors": [
+      "a little taller than those for",
+      "slightly more high than it for",
+      "marginally higher than which for"
+    ],
+    "explanationVi": "Dùng đại từ thay thế 'that for' (số ít) tránh lặp từ 'the figure for'."
+  },
+  {
+    "id": "wup_021",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Compared to 1990, much less people smoked in 2020.",
+    "band8Sentence": "In comparison with 1990, far fewer people smoked in 2020.",
+    "targetChunk": "In comparison with",
+    "distractors": [
+      "Comparing against",
+      "In compare to",
+      "With comparing of"
+    ],
+    "explanationVi": "'In comparison with + N' kết hợp 'far fewer + danh từ đếm được số nhiều' cực chuẩn ngữ pháp."
+  },
+  {
+    "id": "wup_022",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Canada also has almost the same kind of chart.",
+    "band8Sentence": "A similar pattern can be seen in the data for Canada.",
+    "targetChunk": "A similar pattern",
+    "distractors": [
+      "A same style",
+      "An alike shape",
+      "A matching picture"
+    ],
+    "explanationVi": "'A similar pattern can be seen in...' dùng để nhóm đối tượng có xu hướng tương đồng."
+  },
+  {
+    "id": "wup_023",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Japan had the biggest percent of old people, which was 28%.",
+    "band8Sentence": "Japan recorded the highest proportion of elderly people, at 28%.",
+    "targetChunk": "recorded the highest",
+    "distractors": [
+      "scored the tallest",
+      "wrote the largest",
+      "marked the biggest"
+    ],
+    "explanationVi": "Động từ 'record' + giới từ 'at + số liệu' là bộ đôi nâng cấp điển hình trong Task 1."
+  },
+  {
+    "id": "wup_024",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "About 24% of people in the survey liked online classes more.",
+    "band8Sentence": "Approximately a quarter of respondents (24%) preferred online classes.",
+    "targetChunk": "Approximately a quarter of",
+    "distractors": [
+      "Roughly one-fourth in",
+      "Nearly a quad of",
+      "About quarter percent of"
+    ],
+    "explanationVi": "Quy đổi tỷ lệ phần trăm (~24-26%) sang phân số 'approximately a quarter of' giúp đa dạng từ vựng."
+  },
+  {
+    "id": "wup_025",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "Almost all students (87%) used a laptop.",
+    "band8Sentence": "The vast majority of students (87%) used a laptop.",
+    "targetChunk": "The vast majority of",
+    "distractors": [
+      "The huge most of",
+      "A big major of",
+      "The large majority in"
+    ],
+    "explanationVi": "'The vast majority of' diễn tả tỷ lệ áp đảo (trên 80%) cực kỳ học thuật."
+  },
+  {
+    "id": "wup_026",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "First, workers collect and sort the raw materials.",
+    "band8Sentence": "In the first stage of the process, raw materials are collected and sorted.",
+    "targetChunk": "In the first stage of the process,",
+    "distractors": [
+      "At the starting step in process,",
+      "Firstly of the whole process,",
+      "In step number one of making,"
+    ],
+    "explanationVi": "Bài Process nên dùng bị động hiện tại đơn kèm cụm đánh dấu giai đoạn 'In the first stage of the process,'."
+  },
+  {
+    "id": "wup_027",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "After people shape the clay, they put it into a hot oven.",
+    "band8Sentence": "Once the clay has been shaped, it is fired in a kiln.",
+    "targetChunk": "Once the clay has been shaped,",
+    "distractors": [
+      "When the clay is shaping,",
+      "After the clay shaped,",
+      "Once shaping the clay,"
+    ],
+    "explanationVi": "Cấu trúc 'Once + S + has/have been + V3' thể hiện sự hoàn tất của bước trước trong bài Process."
+  },
+  {
+    "id": "wup_028",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "The last step is workers put the product in boxes to send out.",
+    "band8Sentence": "The final stage involves packaging the product for delivery.",
+    "targetChunk": "The final stage involves",
+    "distractors": [
+      "The ending step includes to",
+      "The last stage is making",
+      "Finally stage consists"
+    ],
+    "explanationVi": "'involve + V-ing' giúp mô tả giai đoạn quy trình gọn gàng và chuẩn học thuật."
+  },
+  {
+    "id": "wup_029",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "In the north of the village, they built a new group of houses.",
+    "band8Sentence": "To the north of the village, a new housing estate was constructed.",
+    "targetChunk": "To the north of",
+    "distractors": [
+      "At the northern of",
+      "On the north side in",
+      "Towards north from"
+    ],
+    "explanationVi": "'To the north of' dùng cho vị trí nằm bên ngoài ranh giới; kết hợp bị động quá khứ 'was constructed'."
+  },
+  {
+    "id": "wup_030",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "They took away the park and built a car park there.",
+    "band8Sentence": "The park was replaced by a car park.",
+    "targetChunk": "was replaced by",
+    "distractors": [
+      "was changed with",
+      "had replaced into",
+      "got swapped by"
+    ],
+    "explanationVi": "'be replaced by' là cấu trúc bị động ngắn gọn chuẩn mực cho bài mô tả bản đồ."
+  },
+  {
+    "id": "wup_031",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "The old school was changed to become a library.",
+    "band8Sentence": "The old school was converted into a library.",
+    "targetChunk": "was converted into",
+    "distractors": [
+      "was turned as",
+      "was altered for",
+      "was switched toward"
+    ],
+    "explanationVi": "'be converted into' dùng chính xác khi giữ khung công trình cũ nhưng đổi công năng."
+  },
+  {
+    "id": "wup_032",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "The road was made longer so it joined the town and the big highway.",
+    "band8Sentence": "The road was extended to connect the town with the motorway.",
+    "targetChunk": "was extended to connect",
+    "distractors": [
+      "was lengthened for joining",
+      "was stretched to link with",
+      "was expanded in connecting"
+    ],
+    "explanationVi": "Động từ 'extend' chuyên dùng cho đường sá, cầu cống, bến cảng được kéo dài trên bản đồ."
+  },
+  {
+    "id": "wup_033",
+    "taskType": "Task 2",
+    "category": "Concession",
+    "band6Sentence": "Technology has many benefits, but it can also make people lonely.",
+    "band8Sentence": "Although technology has many benefits, it can also isolate people.",
+    "targetChunk": "Although",
+    "distractors": [
+      "Despite",
+      "However",
+      "In spite of"
+    ],
+    "explanationVi": "Dùng 'Although + mệnh đề' (không đi kèm 'but') để tạo câu phức nhượng bộ mạch lạc."
+  },
+  {
+    "id": "wup_034",
+    "taskType": "Task 2",
+    "category": "Introduction",
+    "band6Sentence": "Some people say university should be free, and other people say students should pay.",
+    "band8Sentence": "While some argue that tuition should be free, others believe students should contribute.",
+    "targetChunk": "While some argue that",
+    "distractors": [
+      "Whereas someone arguing",
+      "Although some people saying",
+      "During some argue that"
+    ],
+    "explanationVi": "Mở bài dạng Discussion cực gọn và cân bằng bằng cấu trúc 'While some argue that..., others believe...'."
+  },
+  {
+    "id": "wup_035",
+    "taskType": "Task 2",
+    "category": "Contrast",
+    "band6Sentence": "Cars are convenient, but also cars make air pollution.",
+    "band8Sentence": "On the one hand, cars offer convenience; on the other hand, they cause pollution.",
+    "targetChunk": "On the one hand,",
+    "distractors": [
+      "In one hand,",
+      "From the first hand,",
+      "At the one side,"
+    ],
+    "explanationVi": "Cặp liên kết 'On the one hand... on the other hand' chuẩn mực khi phân tích hai mặt vấn đề."
+  },
+  {
+    "id": "wup_036",
+    "taskType": "Task 2",
+    "category": "Concession",
+    "band6Sentence": "I know that renewable energy costs a lot of money to set up.",
+    "band8Sentence": "Admittedly, renewable energy can be expensive to install.",
+    "targetChunk": "Admittedly,",
+    "distractors": [
+      "Actually speaking,",
+      "Honestly saying,",
+      "Truly admitted,"
+    ],
+    "explanationVi": "Trạng từ 'Admittedly,' mở câu nhượng bộ sắc sảo trước khi đưa lập luận phản biện."
+  },
+  {
+    "id": "wup_037",
+    "taskType": "Task 2",
+    "category": "Contrast",
+    "band6Sentence": "But even so, saving money over a long time is very big.",
+    "band8Sentence": "Nevertheless, the long-term savings are considerable.",
+    "targetChunk": "Nevertheless,",
+    "distractors": [
+      "Although,",
+      "Despite,",
+      "Even though,"
+    ],
+    "explanationVi": "'Nevertheless,' là trạng từ liên kết đầu câu cực ăn khớp ngay sau câu nhượng bộ 'Admittedly,'."
+  },
+  {
+    "id": "wup_038",
+    "taskType": "Task 2",
+    "category": "Concession",
+    "band6Sentence": "I am not saying that old-style teaching is useless.",
+    "band8Sentence": "This is not to say that traditional teaching has no value.",
+    "targetChunk": "This is not to say that",
+    "distractors": [
+      "It does not mean for",
+      "This is not speaking that",
+      "That is no saying"
+    ],
+    "explanationVi": "Cấu trúc 'This is not to say that...' làm mềm lập luận, tránh cực đoan — đặc trưng văn phong Band 8.0."
+  },
+  {
+    "id": "wup_039",
+    "taskType": "Task 2",
+    "category": "Contrast",
+    "band6Sentence": "Different from what many people think, older workers often work better.",
+    "band8Sentence": "Contrary to popular belief, older workers are often more productive.",
+    "targetChunk": "Contrary to popular belief,",
+    "distractors": [
+      "Opposite with common thinking,",
+      "Against to general idea,",
+      "Unlike popular believing,"
+    ],
+    "explanationVi": "'Contrary to + cụm danh từ' là cụm chuyển ý phản bác quan niệm phổ biến rất tự nhiên."
+  },
+  {
+    "id": "wup_040",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "This policy might reduce traffic. So the air will get cleaner.",
+    "band8Sentence": "This policy could reduce traffic. Consequently, air quality would improve.",
+    "targetChunk": "Consequently,",
+    "distractors": [
+      "So that,",
+      "As result,",
+      "Because of this so,"
+    ],
+    "explanationVi": "Dùng 'Consequently,' ở đầu câu thay cho 'So' để giữ văn phong trang trọng."
+  },
+  {
+    "id": "wup_041",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Because rents are going up, many young people still stay with their parents.",
+    "band8Sentence": "Due to rising rents, many young people still live with their parents.",
+    "targetChunk": "Due to rising rents,",
+    "distractors": [
+      "Due to rents are rising,",
+      "Because of rents go up,",
+      "Owing to rents increased,"
+    ],
+    "explanationVi": "'Due to + cụm danh từ' giúp câu súc tích hơn mệnh đề 'Because...'."
+  },
+  {
+    "id": "wup_042",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Because of machines doing work, lots of factory jobs are gone.",
+    "band8Sentence": "As a result of automation, many factory jobs have disappeared.",
+    "targetChunk": "As a result of automation,",
+    "distractors": [
+      "As result of automated,",
+      "Resulting from automate,",
+      "Because result of automation,"
+    ],
+    "explanationVi": "'As a result of + N' diễn đạt nguyên nhân khách quan, rất hợp chủ đề công nghệ và kinh tế."
+  },
+  {
+    "id": "wup_043",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Workers feel more motivated. And then this makes productivity higher.",
+    "band8Sentence": "Workers become more motivated. This, in turn, leads to higher productivity.",
+    "targetChunk": "This, in turn, leads to",
+    "distractors": [
+      "This by turn causes",
+      "Which in return brings",
+      "That on turn results"
+    ],
+    "explanationVi": "Chuỗi nhân quả 'This, in turn, leads to...' cho thấy mạch phát triển ý sâu sắc (Coherence & Cohesion 8.0)."
+  },
+  {
+    "id": "wup_044",
+    "taskType": "Task 2",
+    "category": "Addition",
+    "band6Sentence": "Exercise improves health, and also it can make people work better.",
+    "band8Sentence": "In addition to improving health, exercise can boost productivity.",
+    "targetChunk": "In addition to improving",
+    "distractors": [
+      "Besides to improve",
+      "Additionally to improving",
+      "In addition of improving"
+    ],
+    "explanationVi": "'In addition to + V-ing/N' gọn gàng hơn việc nối bằng 'and also'."
+  },
+  {
+    "id": "wup_045",
+    "taskType": "Task 2",
+    "category": "Inversion",
+    "band6Sentence": "Tourism creates jobs and it also helps cultural exchange.",
+    "band8Sentence": "Not only does tourism create jobs, but it also promotes cultural exchange.",
+    "targetChunk": "Not only does tourism create",
+    "distractors": [
+      "Not only tourism creates",
+      "Not only did tourism creates",
+      "Only not does tourism create"
+    ],
+    "explanationVi": "Đảo ngữ 'Not only + trợ động từ + S + V' nâng điểm Grammatical Range rõ rệt."
+  },
+  {
+    "id": "wup_046",
+    "taskType": "Task 2",
+    "category": "Inversion",
+    "band6Sentence": "If governments put more money into buses and trains, fewer people would drive.",
+    "band8Sentence": "Were governments to invest more in public transport, fewer people would drive.",
+    "targetChunk": "Were governments to invest",
+    "distractors": [
+      "If were governments invest",
+      "Should governments invested",
+      "Were governments investing to"
+    ],
+    "explanationVi": "Đảo ngữ câu điều kiện loại 2 'Were + S + to V' là cấu trúc giả định Band 8.0 kinh điển."
+  },
+  {
+    "id": "wup_047",
+    "taskType": "Task 2",
+    "category": "Inversion",
+    "band6Sentence": "If they had started the policy sooner, many people would not have died.",
+    "band8Sentence": "Had the policy been introduced earlier, many lives could have been saved.",
+    "targetChunk": "Had the policy been introduced",
+    "distractors": [
+      "If had the policy introduced",
+      "Has the policy been introduced",
+      "Had the policy introduced"
+    ],
+    "explanationVi": "Đảo ngữ điều kiện loại 3 kết hợp bị động 'Had + S + been + V3' cho thấy kiểm soát ngữ pháp đỉnh cao."
+  },
+  {
+    "id": "wup_048",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "The thing that worries me most is how it affects children's mental health.",
+    "band8Sentence": "What concerns me most is the impact on children's mental health.",
+    "targetChunk": "What concerns me most is",
+    "distractors": [
+      "Which worries me most is",
+      "That concerns me mostly is",
+      "What is concerning me most are"
+    ],
+    "explanationVi": "Câu chẻ (Wh-cleft sentence) 'What concerns me most is...' giúp nhấn mạnh trọng tâm lập luận."
+  },
+  {
+    "id": "wup_049",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "How much technology makes learning better depends on how people use it.",
+    "band8Sentence": "The extent to which technology improves learning depends on how it is used.",
+    "targetChunk": "The extent to which",
+    "distractors": [
+      "The degree where",
+      "The level in which",
+      "The amount that"
+    ],
+    "explanationVi": "Cụm danh từ hóa 'The extent to which...' là dấu ấn học thuật chuẩn Cambridge Band 8.0."
+  },
+  {
+    "id": "wup_050",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "Instead of making more roads, cities should make public transport better.",
+    "band8Sentence": "Rather than building more roads, cities should improve public transport.",
+    "targetChunk": "Rather than building",
+    "distractors": [
+      "Rather than to build",
+      "Instead to build",
+      "More than building"
+    ],
+    "explanationVi": "'Rather than + V-ing' ở đầu câu nêu sự đối chiếu giải pháp cực sắc bén."
+  },
+  {
+    "id": "wup_051",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "If people control it well, gene editing might cure many illnesses.",
+    "band8Sentence": "Provided that it is properly regulated, gene editing could cure many diseases.",
+    "targetChunk": "Provided that it is properly regulated,",
+    "distractors": [
+      "Providing that it regulates well,",
+      "Given that properly regulating,",
+      "Only if it is proper regulate,"
+    ],
+    "explanationVi": "'Provided that + mệnh đề' diễn tả điều kiện chặt chẽ thay cho 'If' lặp lại."
+  },
+  {
+    "id": "wup_052",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "Many people say that university should not cost money.",
+    "band8Sentence": "It is often argued that university education should be free.",
+    "targetChunk": "It is often argued that",
+    "distractors": [
+      "People often arguing that",
+      "It often argues that",
+      "There is often argued that"
+    ],
+    "explanationVi": "Bị động khách quan 'It is often argued that...' mở đầu vấn đề học thuật trung lập."
+  },
+  {
+    "id": "wup_053",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "Social media is definitely worse than it is good.",
+    "band8Sentence": "It could be argued that social media does more harm than good.",
+    "targetChunk": "It could be argued that",
+    "distractors": [
+      "It must be proven that",
+      "It can argue that",
+      "We are surely arguing"
+    ],
+    "explanationVi": "Ngôn ngữ rào đón (hedging) 'It could be argued that...' tránh khẳng định cực đoan."
+  },
+  {
+    "id": "wup_054",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "All young people spend more time on the internet than old people.",
+    "band8Sentence": "Young people tend to spend more time online than older generations.",
+    "targetChunk": "tend to spend",
+    "distractors": [
+      "always are spending",
+      "tending to spend",
+      "intend to spend"
+    ],
+    "explanationVi": "Động từ 'tend to + V' là công cụ rào đón đơn giản mà hiệu quả cao nhất trong Task 2."
+  },
+  {
+    "id": "wup_055",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "In my thinking, the good points are bigger than the bad points.",
+    "band8Sentence": "From my perspective, the advantages outweigh the disadvantages.",
+    "targetChunk": "From my perspective,",
+    "distractors": [
+      "In my point of thinking,",
+      "By my opinion,",
+      "According to my view,"
+    ],
+    "explanationVi": "'From my perspective,' tự nhiên và tránh lỗi giới từ 'According to me'."
+  },
+  {
+    "id": "wup_056",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "Online learning has more good things than bad things.",
+    "band8Sentence": "The advantages of online learning outweigh its drawbacks.",
+    "targetChunk": "outweigh its drawbacks",
+    "distractors": [
+      "overweight its problems",
+      "are heavier than bads",
+      "exceed over its negatives"
+    ],
+    "explanationVi": "Collocation 'outweigh its drawbacks' là cụm vàng cho dạng đề Advantages/Disadvantages."
+  },
+  {
+    "id": "wup_057",
+    "taskType": "Task 2",
+    "category": "Examples",
+    "band6Sentence": "One good example is Singapore because buses and trains there are cheap and good.",
+    "band8Sentence": "A case in point is Singapore, where public transport is cheap and efficient.",
+    "targetChunk": "A case in point is",
+    "distractors": [
+      "A point in case is",
+      "One example case is",
+      "A proof in point is"
+    ],
+    "explanationVi": "'A case in point is + N' là cách đưa ví dụ điển hình tinh tế thay vì lặp 'For example'."
+  },
+  {
+    "id": "wup_058",
+    "taskType": "Task 2",
+    "category": "Examples",
+    "band6Sentence": "Like many Scandinavian countries give free university.",
+    "band8Sentence": "For instance, many Scandinavian countries offer free university education.",
+    "targetChunk": "For instance,",
+    "distractors": [
+      "As an instance,",
+      "By example,",
+      "Like example,"
+    ],
+    "explanationVi": "'For instance,' dùng chuẩn xác ở đầu câu thay cho 'Like' (vốn quá suồng sã)."
+  },
+  {
+    "id": "wup_059",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Because of these problems, governments need to do something fast.",
+    "band8Sentence": "In light of these problems, governments must act quickly.",
+    "targetChunk": "In light of these problems,",
+    "distractors": [
+      "Under the light of problems,",
+      "In view to these problems,",
+      "Seeing these problems,"
+    ],
+    "explanationVi": "'In light of + N' (xét trước tình hình này) là cụm chuyển đoạn kết luận cực mượt."
+  },
+  {
+    "id": "wup_060",
+    "taskType": "Task 2",
+    "category": "Conclusion",
+    "band6Sentence": "Finally, both sides are kind of right, but I think education is most important.",
+    "band8Sentence": "In conclusion, while both views have merit, I believe education is the key.",
+    "targetChunk": "while both views have merit,",
+    "distractors": [
+      "although two sides having good,",
+      "when both opinions are true,",
+      "despite both views merit,"
+    ],
+    "explanationVi": "'while both views have merit' tóm tắt sắc thái cân bằng trước khi chốt quan điểm cá nhân."
+  },
+  {
+    "id": "wup_061",
+    "taskType": "Task 2",
+    "category": "Conclusion",
+    "band6Sentence": "After looking at everything, putting money in schools is the best way to stop poverty.",
+    "band8Sentence": "All things considered, investing in education is the best long-term solution to poverty.",
+    "targetChunk": "All things considered,",
+    "distractors": [
+      "Considering all of things,",
+      "All matters thinking,",
+      "When all things consider,"
+    ],
+    "explanationVi": "'All things considered,' là cụm mở đoạn kết luận tự nhiên và sang trọng."
+  },
+  {
+    "id": "wup_062",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "The main reason is because people move to cities to get better jobs.",
+    "band8Sentence": "The main reason why people move to cities is to find better jobs.",
+    "targetChunk": "The main reason why",
+    "distractors": [
+      "The main reason is because",
+      "The chief reason because",
+      "The key reason for why"
+    ],
+    "explanationVi": "Tránh lỗi kinh điển 'The reason is because'; dùng 'The main reason why... is to V / that...'."
+  },
+  {
+    "id": "wup_063",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Smartphone sales grew very fast between 2012 and 2018.",
+    "band8Sentence": "Smartphone sales experienced rapid growth between 2012 and 2018.",
+    "targetChunk": "experienced rapid growth",
+    "distractors": [
+      "happened fast growing",
+      "saw a quick rise up",
+      "made rapidly growth"
+    ],
+    "explanationVi": "Danh từ hóa bằng 'experience + adj + noun' giúp đa dạng cấu trúc câu Task 1."
+  },
+  {
+    "id": "wup_064",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Coal usage dropped a lot after 2005.",
+    "band8Sentence": "Coal usage witnessed a steep decline after 2005.",
+    "targetChunk": "witnessed a steep decline",
+    "distractors": [
+      "saw a high falling",
+      "looked at a deep drop",
+      "had a sharply decline"
+    ],
+    "explanationVi": "'witness a steep decline' là collocation cực mượt khi miêu tả đường đi xuống mạnh."
+  },
+  {
+    "id": "wup_065",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Tourism numbers went up slowly over the next ten years.",
+    "band8Sentence": "Tourism numbers climbed steadily over the subsequent decade.",
+    "targetChunk": "climbed steadily",
+    "distractors": [
+      "rose slowly up",
+      "increased steady",
+      "stepped up calmly"
+    ],
+    "explanationVi": "'climb steadily' + 'the subsequent decade' nâng cấp cả động từ lẫn cụm chỉ thời gian."
+  },
+  {
+    "id": "wup_066",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Oil prices dropped suddenly in 2020 and then went back up quickly.",
+    "band8Sentence": "Oil prices plummeted in 2020 before rebounding sharply.",
+    "targetChunk": "before rebounding sharply",
+    "distractors": [
+      "then bouncing back fast",
+      "before recovering up",
+      "after jump back strongly"
+    ],
+    "explanationVi": "'plummet' + 'before rebounding sharply' diễn tả biểu đồ hình chữ V cực đắt giá."
+  },
+  {
+    "id": "wup_067",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "After 2010, the birth rate stopped changing and stayed flat.",
+    "band8Sentence": "After 2010, the birth rate plateaued at roughly 1.6 children per woman.",
+    "targetChunk": "plateaued at",
+    "distractors": [
+      "flatted on",
+      "stopped flat at",
+      "levelled down to"
+    ],
+    "explanationVi": "Động từ 'plateau at' chuyên dùng khi đường biểu đồ đi ngang sau giai đoạn tăng/giảm."
+  },
+  {
+    "id": "wup_068",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The number of rail passengers dropped a little and then stayed the same.",
+    "band8Sentence": "Rail passenger numbers dipped slightly before levelling off.",
+    "targetChunk": "before levelling off",
+    "distractors": [
+      "before staying flatly",
+      "then flatting out",
+      "before becoming even"
+    ],
+    "explanationVi": "'dip slightly' + 'levelling off' diễn tả cú giảm nhẹ rồi chững lại chuẩn xác."
+  },
+  {
+    "id": "wup_069",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Wind power went up very quickly from 5% to 35%.",
+    "band8Sentence": "Wind power surged sevenfold from 5% to 35%.",
+    "targetChunk": "surged sevenfold",
+    "distractors": [
+      "jumped seven times up",
+      "increased by sevenfoldly",
+      "grew seven-times"
+    ],
+    "explanationVi": "Trạng từ bội số 'sevenfold' (gấp 7 lần) rất súc tích cho mô tả tỷ lệ."
+  },
+  {
+    "id": "wup_070",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Internet subscriptions got much bigger than landline phones in 2008.",
+    "band8Sentence": "Internet subscriptions overtook landline connections in 2008.",
+    "targetChunk": "overtook",
+    "distractors": [
+      "passed over",
+      "beat up",
+      "went higher over"
+    ],
+    "explanationVi": "Động từ 'overtake' (quá khứ overtook) chuyên dùng khi một đường vượt lên trên đường khác."
+  },
+  {
+    "id": "wup_071",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The gap between rich and poor regions got bigger every year.",
+    "band8Sentence": "The disparity between urban and rural incomes widened progressively.",
+    "targetChunk": "widened progressively",
+    "distractors": [
+      "grew wider slowly",
+      "broadened up each time",
+      "opened bigger steadily"
+    ],
+    "explanationVi": "'disparity' + 'widen progressively' nâng cấp hoàn toàn cho 'gap got bigger'."
+  },
+  {
+    "id": "wup_072",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "The difference between men and women got smaller by 2020.",
+    "band8Sentence": "The gender gap narrowed considerably by 2020.",
+    "targetChunk": "narrowed considerably",
+    "distractors": [
+      "shortened much",
+      "thinned significantly",
+      "shrunk a lot"
+    ],
+    "explanationVi": "'narrow considerably' là collocation tự nhiên của 'gap'."
+  },
+  {
+    "id": "wup_073",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Gas consumption fell by half during the twenty-year period.",
+    "band8Sentence": "Gas consumption halved over the twenty-year timeframe.",
+    "targetChunk": "halved",
+    "distractors": [
+      "cut half",
+      "reduced two times",
+      "divided into half"
+    ],
+    "explanationVi": "Động từ 'halve' (giảm một nửa) gọn hơn nhiều so với 'fell by half'."
+  },
+  {
+    "id": "wup_074",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Coffee exports rose a little bit from 100 to 108 tonnes.",
+    "band8Sentence": "Coffee exports edged upward marginally from 100 to 108 tonnes.",
+    "targetChunk": "edged upward marginally",
+    "distractors": [
+      "pushed up tiny",
+      "crawled up a bit",
+      "grew weakly"
+    ],
+    "explanationVi": "'edge upward marginally' mô tả mức tăng rất nhẹ cực kỳ tinh tế."
+  },
+  {
+    "id": "wup_075",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Attendance went up and down wildly throughout the winter.",
+    "band8Sentence": "Attendance exhibited erratic fluctuations throughout the winter.",
+    "targetChunk": "exhibited erratic fluctuations",
+    "distractors": [
+      "showed crazy up-downs",
+      "had wild waving",
+      "displayed unstable shakes"
+    ],
+    "explanationVi": "'exhibit erratic fluctuations' dùng cho đường zic-zac biến động thất thường."
+  },
+  {
+    "id": "wup_076",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "By 2018, bicycle use had gone back to its 2000 level.",
+    "band8Sentence": "By 2018, bicycle usage had returned to its original 2000 baseline.",
+    "targetChunk": "returned to its original",
+    "distractors": [
+      "came back to start",
+      "reverted back at first",
+      "reached back to base"
+    ],
+    "explanationVi": "Thì quá khứ hoàn thành 'By + năm, S + had returned to...' tăng điểm ngữ pháp mạnh."
+  },
+  {
+    "id": "wup_077",
+    "taskType": "Task 1",
+    "category": "Trends",
+    "band6Sentence": "Solar output will probably reach 50% by 2040.",
+    "band8Sentence": "Solar output is anticipated to account for 50% of supply by 2040.",
+    "targetChunk": "is anticipated to account for",
+    "distractors": [
+      "is guessing to make up",
+      "will expect to occupy",
+      "is predicted occupying"
+    ],
+    "explanationVi": "'be anticipated to account for' chuẩn mực cho dự báo tỷ trọng tương lai."
+  },
+  {
+    "id": "wup_078",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "Housing took up 42% of the average household budget.",
+    "band8Sentence": "Housing accounted for 42% of average household expenditure.",
+    "targetChunk": "accounted for",
+    "distractors": [
+      "occupied up",
+      "took over",
+      "consisted of"
+    ],
+    "explanationVi": "'account for' là động từ hàng đầu thay cho 'take up' trong biểu đồ tròn (Pie chart)."
+  },
+  {
+    "id": "wup_079",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "Transport made up just under a fifth of total spending.",
+    "band8Sentence": "Transport constituted just under a fifth of total outlay.",
+    "targetChunk": "constituted just under a fifth",
+    "distractors": [
+      "built almost twenty percent",
+      "formed nearly one-five",
+      "composed below fifth"
+    ],
+    "explanationVi": "'constitute' + phân số 'just under a fifth' (18–19%) giúp bài Pie chart giàu từ vựng."
+  },
+  {
+    "id": "wup_080",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "Only a very small part (3%) came from nuclear power.",
+    "band8Sentence": "Nuclear power represented a negligible share, at merely 3%.",
+    "targetChunk": "represented a negligible share",
+    "distractors": [
+      "showed a tiny slice",
+      "stood for a small piece",
+      "took a minor cut"
+    ],
+    "explanationVi": "'represent a negligible share' nâng cấp câu mô tả phần tỷ trọng nhỏ nhất."
+  },
+  {
+    "id": "wup_081",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "Food and rent together were more than half of all costs.",
+    "band8Sentence": "Combined, food and rent comprised well over half of total expenditure.",
+    "targetChunk": "comprised well over half",
+    "distractors": [
+      "included much above half",
+      "contained nicely over 50%",
+      "consisted more than half"
+    ],
+    "explanationVi": "'Combined, ... comprised well over half' gộp hạng mục thông minh."
+  },
+  {
+    "id": "wup_082",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "Almost two out of three residents used buses daily.",
+    "band8Sentence": "Roughly two-thirds of residents relied on bus services daily.",
+    "targetChunk": "Roughly two-thirds of",
+    "distractors": [
+      "About two-third of",
+      "Nearly two out three",
+      "Around sixty-six percent of"
+    ],
+    "explanationVi": "Phân số 'two-thirds' nhớ có 's' ở mẫu số khi tử số lớn hơn 1."
+  },
+  {
+    "id": "wup_083",
+    "taskType": "Task 1",
+    "category": "Proportions",
+    "band6Sentence": "Exactly half of the respondents were aged under thirty.",
+    "band8Sentence": "Precisely half of those surveyed fell into the under-thirty bracket.",
+    "targetChunk": "fell into the under-thirty bracket",
+    "distractors": [
+      "dropped in below-30 group",
+      "went inside young age",
+      "stayed under 30 range"
+    ],
+    "explanationVi": "Cụm 'fall into the ... bracket' chuyên dùng để mô tả nhóm tuổi hoặc nhóm thu nhập."
+  },
+  {
+    "id": "wup_084",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "France produced much more wine than Germany did.",
+    "band8Sentence": "France outstripped Germany by a wide margin in wine production.",
+    "targetChunk": "outstripped Germany by a wide margin",
+    "distractors": [
+      "beat Germany very far",
+      "exceeded over Germany widely",
+      "surpassed Germany with big gap"
+    ],
+    "explanationVi": "'outstrip X by a wide margin' là cách so sánh vượt trội chuẩn Band 8.0."
+  },
+  {
+    "id": "wup_085",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Italy was the second biggest exporter after Spain.",
+    "band8Sentence": "Italy ranked second behind Spain in total export volume.",
+    "targetChunk": "ranked second behind",
+    "distractors": [
+      "placed number two after",
+      "stood secondly below",
+      "came next under"
+    ],
+    "explanationVi": "'rank second behind X' diễn tả thứ hạng rõ ràng, không rườm rà."
+  },
+  {
+    "id": "wup_086",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "The figures for Japan and South Korea were almost the same.",
+    "band8Sentence": "The figures for Japan and South Korea were virtually identical.",
+    "targetChunk": "were virtually identical",
+    "distractors": [
+      "looked nearly same",
+      "stayed almost equalled",
+      "were closely matching"
+    ],
+    "explanationVi": "'virtually identical' thay thế gọn gàng cho 'almost the same'."
+  },
+  {
+    "id": "wup_087",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Men spent three times more hours playing games than women.",
+    "band8Sentence": "Men devoted three times as many hours to gaming as their female counterparts.",
+    "targetChunk": "as their female counterparts",
+    "distractors": [
+      "than women people",
+      "compared with female ones",
+      "like the women group"
+    ],
+    "explanationVi": "'female/male counterparts' tránh lặp từ 'men/women' rất hiệu quả."
+  },
+  {
+    "id": "wup_088",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Younger shoppers bought far more clothes online than older ones.",
+    "band8Sentence": "Online apparel purchases were markedly higher among younger cohorts than older demographics.",
+    "targetChunk": "markedly higher among younger cohorts",
+    "distractors": [
+      "much bigger inside young ages",
+      "way taller for youth groups",
+      "greatly upper among youngsters"
+    ],
+    "explanationVi": "'markedly higher' + 'cohorts / demographics' mang sắc thái học thuật rõ rệt."
+  },
+  {
+    "id": "wup_089",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "While Germany spent the most, Portugal spent the least.",
+    "band8Sentence": "Germany led overall expenditure, whereas Portugal trailed at the bottom of the table.",
+    "targetChunk": "trailed at the bottom",
+    "distractors": [
+      "lagged in the lowest",
+      "followed down the floor",
+      "stayed behind the end"
+    ],
+    "explanationVi": "'lead ... whereas X trailed at the bottom' tạo độ tương phản sắc nét."
+  },
+  {
+    "id": "wup_090",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Water use in agriculture was far bigger than in industry.",
+    "band8Sentence": "Agricultural water consumption dwarfed that of the industrial sector.",
+    "targetChunk": "dwarfed that of",
+    "distractors": [
+      "made smaller than it of",
+      "towered over those of",
+      "exceeded hugely it of"
+    ],
+    "explanationVi": "Động từ 'dwarf' (làm lu mờ vì lớn gấp nhiều lần) rất ấn tượng khi chênh lệch cực lớn."
+  },
+  {
+    "id": "wup_091",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "Both countries showed rising literacy, although Kenya grew faster.",
+    "band8Sentence": "Both nations recorded gains in literacy, albeit at a markedly brisker pace in Kenya.",
+    "targetChunk": "albeit at a markedly brisker pace",
+    "distractors": [
+      "even with a faster speed",
+      "although in quicker step",
+      "though by rapid rhythm"
+    ],
+    "explanationVi": "Liên từ 'albeit + cụm giới từ' giúp rút gọn mệnh đề nhượng bộ tinh tế."
+  },
+  {
+    "id": "wup_092",
+    "taskType": "Task 1",
+    "category": "Comparisons",
+    "band6Sentence": "London had 9 million people, compared with 3 million in Madrid.",
+    "band8Sentence": "London's population stood at 9 million, threefold that of Madrid.",
+    "targetChunk": "threefold that of",
+    "distractors": [
+      "three times than it of",
+      "triple bigger than",
+      "three-time of those in"
+    ],
+    "explanationVi": "'threefold that of' rút gọn vế so sánh bội số cực kỳ súc tích."
+  },
+  {
+    "id": "wup_093",
+    "taskType": "Task 1",
+    "category": "Overview",
+    "band6Sentence": "Overall, all three countries used more clean energy over time.",
+    "band8Sentence": "Overall, an upward trajectory was evident across all three nations throughout the timeframe.",
+    "targetChunk": "an upward trajectory was evident",
+    "distractors": [
+      "a going-up road was clear",
+      "a rising direction happened",
+      "an upper line showed"
+    ],
+    "explanationVi": "'an upward trajectory was evident' nâng tầm câu Overview hẳn một band."
+  },
+  {
+    "id": "wup_094",
+    "taskType": "Task 1",
+    "category": "Overview",
+    "band6Sentence": "In general, the village became much more modern and lost its farms.",
+    "band8Sentence": "Overall, the village underwent substantial modernisation at the expense of its agricultural land.",
+    "targetChunk": "at the expense of",
+    "distractors": [
+      "by losing away",
+      "with the cost from",
+      "replacing out of"
+    ],
+    "explanationVi": "'undergo modernisation at the expense of...' là khung Overview hoàn hảo cho bài Map."
+  },
+  {
+    "id": "wup_095",
+    "taskType": "Task 1",
+    "category": "Overview",
+    "band6Sentence": "Overall, making paper takes seven steps from cutting trees to rolling paper.",
+    "band8Sentence": "Overall, the linear manufacturing process comprises seven distinct stages, culminating in paper reels.",
+    "targetChunk": "comprises seven distinct stages, culminating in",
+    "distractors": [
+      "has seven different steps, ending at",
+      "includes seven parts, finishing by",
+      "consists seven stages, stopping in"
+    ],
+    "explanationVi": "'comprise X distinct stages, culminating in...' là câu Overview chuẩn cho bài Process."
+  },
+  {
+    "id": "wup_096",
+    "taskType": "Task 1",
+    "category": "Overview",
+    "band6Sentence": "In short, older people preferred TV while young people liked phones.",
+    "band8Sentence": "Overall, clear generational divergence emerged, with older adults favouring television and younger groups preferring smartphones.",
+    "targetChunk": "clear generational divergence emerged",
+    "distractors": [
+      "obvious age difference appeared",
+      "strong gap between ages came",
+      "big generation split showed"
+    ],
+    "explanationVi": "Cấu trúc 'with + N + V-ing' kèm 'generational divergence' rất tự nhiên."
+  },
+  {
+    "id": "wup_097",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "Next, the beans are washed and put in the sun to dry.",
+    "band8Sentence": "Subsequently, the harvested beans are rinsed thoroughly before being sun-dried.",
+    "targetChunk": "before being sun-dried",
+    "distractors": [
+      "before drying by sun",
+      "then be dried in sun",
+      "prior to sun-drying them"
+    ],
+    "explanationVi": "Bị động sau giới từ 'before being + V3' giúp giữ mạch bị động nhất quán."
+  },
+  {
+    "id": "wup_098",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "Then the hot glass is shaped into bottles by a machine.",
+    "band8Sentence": "Following this, the molten glass is moulded into bottles via an automated press.",
+    "targetChunk": "is moulded into",
+    "distractors": [
+      "is shaped to become",
+      "gets formed like",
+      "is made into shape of"
+    ],
+    "explanationVi": "'molten glass' + 'be moulded into' thể hiện vốn từ chuyên biệt cao."
+  },
+  {
+    "id": "wup_099",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "After that, the water goes through a filter to become clean.",
+    "band8Sentence": "Thereafter, the water passes through a filtration unit to remove impurities.",
+    "targetChunk": "to remove impurities",
+    "distractors": [
+      "for cleaning dirt out",
+      "so it becomes pure clean",
+      "to wash away dirty things"
+    ],
+    "explanationVi": "'filtration unit' + 'remove impurities' chuẩn văn phong kỹ thuật Task 1 Process."
+  },
+  {
+    "id": "wup_100",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "Finally, the bottles are checked and sent to shops.",
+    "band8Sentence": "In the culminating step, finished bottles undergo quality inspection prior to retail distribution.",
+    "targetChunk": "undergo quality inspection prior to",
+    "distractors": [
+      "get quality check before",
+      "pass checking ahead of",
+      "have test before"
+    ],
+    "explanationVi": "'undergo quality inspection prior to...' chuyên nghiệp hơn hẳn 'are checked and sent'."
+  },
+  {
+    "id": "wup_101",
+    "taskType": "Task 1",
+    "category": "Process",
+    "band6Sentence": "The cycle starts again when adult salmon swim back upstream.",
+    "band8Sentence": "The reproductive cycle repeats once mature salmon migrate back upstream.",
+    "targetChunk": "once mature salmon migrate",
+    "distractors": [
+      "when grown salmon go",
+      "after big salmon swim",
+      "once adult salmon migrating"
+    ],
+    "explanationVi": "Dùng cho biểu đồ vòng đời tự nhiên (natural cycle): 'reproductive cycle', 'mature', 'migrate'."
+  },
+  {
+    "id": "wup_102",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "The farmland on the west side was destroyed to build a shopping mall.",
+    "band8Sentence": "Farmland along the western flank was cleared to make way for a retail complex.",
+    "targetChunk": "was cleared to make way for",
+    "distractors": [
+      "was broken to give place to",
+      "got erased to build up",
+      "was cut down for opening"
+    ],
+    "explanationVi": "'be cleared to make way for' là collocation kinh điển cho bài Map."
+  },
+  {
+    "id": "wup_103",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "A new bridge was built across the river next to the old factory.",
+    "band8Sentence": "A pedestrian bridge was erected across the river adjacent to the former factory.",
+    "targetChunk": "was erected across the river adjacent to",
+    "distractors": [
+      "was stood over the river beside",
+      "got raised on river next",
+      "was placed through river near"
+    ],
+    "explanationVi": "'be erected' + 'adjacent to' nâng cấp đồng thời động từ và giới từ vị trí."
+  },
+  {
+    "id": "wup_104",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "The small harbour became much bigger to hold cruise ships.",
+    "band8Sentence": "The modest harbour underwent considerable expansion to accommodate cruise liners.",
+    "targetChunk": "underwent considerable expansion",
+    "distractors": [
+      "got very big enlarging",
+      "experienced huge growing",
+      "became largely expanded"
+    ],
+    "explanationVi": "'undergo considerable expansion to accommodate...' diễn tả sự mở rộng cơ sở hạ tầng."
+  },
+  {
+    "id": "wup_105",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "The railway station stayed in the same place the whole time.",
+    "band8Sentence": "The railway station remained unchanged throughout the entire twenty-year period.",
+    "targetChunk": "remained unchanged",
+    "distractors": [
+      "kept not changing",
+      "stayed untouched still",
+      "held same position"
+    ],
+    "explanationVi": "Bài Map luôn cần nêu ít nhất 1 chi tiết giữ nguyên bằng 'remained unchanged / intact'."
+  },
+  {
+    "id": "wup_106",
+    "taskType": "Task 1",
+    "category": "Maps",
+    "band6Sentence": "Trees were planted all around the edge of the sports centre.",
+    "band8Sentence": "The perimeter of the sports complex was lined with newly planted trees.",
+    "targetChunk": "was lined with",
+    "distractors": [
+      "was surrounded by putting",
+      "got bordered in",
+      "was filled along"
+    ],
+    "explanationVi": "'perimeter ... was lined with' miêu tả hàng cây bao quanh rất chuẩn xác."
+  },
+  {
+    "id": "wup_107",
+    "taskType": "Task 1",
+    "category": "Complex Sentences",
+    "band6Sentence": "Sales rose to $5m in 2015, and this was the highest point.",
+    "band8Sentence": "Sales rose to $5 million in 2015, marking the highest point of the decade.",
+    "targetChunk": ", marking the highest point",
+    "distractors": [
+      ", which mark the top point",
+      ", marked the highest peak",
+      ", to be marking the top"
+    ],
+    "explanationVi": "Mệnh đề rút gọn ', marking...' nối số liệu và nhận xét trong một câu duy nhất."
+  },
+  {
+    "id": "wup_108",
+    "taskType": "Task 2",
+    "category": "Introduction",
+    "band6Sentence": "Nowadays many people think cities are too crowded.",
+    "band8Sentence": "In contemporary society, rapid urban overcrowding has emerged as a pressing concern.",
+    "targetChunk": "has emerged as a pressing concern",
+    "distractors": [
+      "has come out as big worry",
+      "became a pushing problem",
+      "appeared like heavy trouble"
+    ],
+    "explanationVi": "Tránh câu mở đầu sáo rỗng 'Nowadays many people think...'; dùng 'has emerged as a pressing concern'."
+  },
+  {
+    "id": "wup_109",
+    "taskType": "Task 2",
+    "category": "Introduction",
+    "band6Sentence": "Some people say zoos are bad, while others say they save animals.",
+    "band8Sentence": "Opinion remains sharply divided over whether zoological parks exploit wildlife or safeguard endangered species.",
+    "targetChunk": "Opinion remains sharply divided over whether",
+    "distractors": [
+      "Ideas stay very split about if",
+      "People are strictly broken on",
+      "Views keep strongly separated whether"
+    ],
+    "explanationVi": "Câu mở đề Discussion Band 8.0 gọn, khách quan và bao quát hai luồng ý kiến."
+  },
+  {
+    "id": "wup_110",
+    "taskType": "Task 2",
+    "category": "Introduction",
+    "band6Sentence": "I completely agree with the idea that governments should tax sugary drinks.",
+    "band8Sentence": "I wholeheartedly endorse the proposal to levy higher taxes on sugar-sweetened beverages.",
+    "targetChunk": "wholeheartedly endorse the proposal to levy",
+    "distractors": [
+      "fully say yes to plan putting",
+      "totally agree the idea taxing",
+      "strongly support to charge"
+    ],
+    "explanationVi": "'endorse the proposal to levy taxes on' nâng tầm Lexical Resource cực mạnh."
+  },
+  {
+    "id": "wup_111",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "Working from home always makes employees happier.",
+    "band8Sentence": "Remote work often fosters greater job satisfaction, provided that clear boundaries are maintained.",
+    "targetChunk": "often fosters greater job satisfaction",
+    "distractors": [
+      "always creates bigger happiness",
+      "usually makes happier feeling",
+      "surely brings happy work"
+    ],
+    "explanationVi": "Tránh 'always'; dùng 'often fosters' kèm điều kiện 'provided that'."
+  },
+  {
+    "id": "wup_112",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "Social media destroys teenagers' mental health completely.",
+    "band8Sentence": "Excessive social media exposure can exert a detrimental influence on adolescent psychological wellbeing.",
+    "targetChunk": "exert a detrimental influence on",
+    "distractors": [
+      "put a harmful power to",
+      "make a bad impact over",
+      "give a damaging effect in"
+    ],
+    "explanationVi": "'exert a detrimental influence on' vừa học thuật vừa có độ rào đón ('can')."
+  },
+  {
+    "id": "wup_113",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "Banning cars in city centres will solve air pollution.",
+    "band8Sentence": "Restricting private vehicles in inner cities would go a long way towards curbing urban air pollution.",
+    "targetChunk": "would go a long way towards curbing",
+    "distractors": [
+      "will walk far to stopping",
+      "would go far way for cut",
+      "can solve completely"
+    ],
+    "explanationVi": "'go a long way towards + V-ing' diễn tả giải pháp mang lại hiệu quả lớn mà không nói quá."
+  },
+  {
+    "id": "wup_114",
+    "taskType": "Task 2",
+    "category": "Hedging & Opinion",
+    "band6Sentence": "University degrees are useless now because of online courses.",
+    "band8Sentence": "While online courses widen access, formal degrees arguably retain substantial signalling value for employers.",
+    "targetChunk": "arguably retain substantial signalling value",
+    "distractors": [
+      "surely keep big showing worth",
+      "clearly hold large sign value",
+      "probably remain heavy meaning"
+    ],
+    "explanationVi": "Trạng từ rào đón 'arguably' thể hiện tư duy phản biện sắc sảo."
+  },
+  {
+    "id": "wup_115",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Too much homework makes students stressed and tired.",
+    "band8Sentence": "An excessive academic workload can precipitate chronic stress and emotional burnout among pupils.",
+    "targetChunk": "precipitate chronic stress",
+    "distractors": [
+      "push down heavy worry",
+      "bring fast long stress",
+      "make serious tired"
+    ],
+    "explanationVi": "Động từ 'precipitate' (châm ngòi, gây ra nhanh chóng) rất đắt giá trong bài nguyên nhân-hệ quả."
+  },
+  {
+    "id": "wup_116",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Bad public transport causes more traffic jams.",
+    "band8Sentence": "Inadequate public transit infrastructure inevitably drives commuters toward private car dependency.",
+    "targetChunk": "inevitably drives commuters toward",
+    "distractors": [
+      "surely pushes drivers into",
+      "certainly forces people to go",
+      "always leads travellers on"
+    ],
+    "explanationVi": "'drive X toward Y' mô tả cơ chế nhân quả hành vi rất tự nhiên."
+  },
+  {
+    "id": "wup_117",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Poor diets lead to higher hospital costs for the country.",
+    "band8Sentence": "Widespread nutritional deficiencies place an unsustainable strain on national healthcare budgets.",
+    "targetChunk": "place an unsustainable strain on",
+    "distractors": [
+      "put a heavy pressure in",
+      "give an unkeepable stress to",
+      "make a big burden over"
+    ],
+    "explanationVi": "'place an unsustainable strain on' là collocation Band 8.0 chuẩn cho áp lực ngân sách."
+  },
+  {
+    "id": "wup_118",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Cutting down forests makes climate change worse.",
+    "band8Sentence": "Unchecked deforestation accelerates greenhouse emissions, thereby compounding global climate instability.",
+    "targetChunk": ", thereby compounding",
+    "distractors": [
+      ", therefore adding worse",
+      ", thus making heavier",
+      ", so increasing badly"
+    ],
+    "explanationVi": "', thereby + V-ing' nối kết quả tức thì trong cùng một câu cực mượt."
+  },
+  {
+    "id": "wup_119",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "This problem happens because people lack financial education.",
+    "band8Sentence": "This predicament stems primarily from a widespread lack of early financial literacy.",
+    "targetChunk": "stems primarily from",
+    "distractors": [
+      "comes mainly out",
+      "roots mostly by",
+      "starts firstly because"
+    ],
+    "explanationVi": "'stem primarily from' là động từ học thuật thay cho 'happen because of'."
+  },
+  {
+    "id": "wup_120",
+    "taskType": "Task 2",
+    "category": "Cause & Effect",
+    "band6Sentence": "Better childcare lets more mothers return to work.",
+    "band8Sentence": "Accessible childcare enables parents to re-enter the labour market, fostering broader economic growth.",
+    "targetChunk": ", fostering broader economic growth",
+    "distractors": [
+      ", which foster wider economy",
+      ", to fostering more growth",
+      ", and makes economy grow bigger"
+    ],
+    "explanationVi": "Mệnh đề phân từ ', fostering...' nối chuỗi hệ quả tự nhiên."
+  },
+  {
+    "id": "wup_121",
+    "taskType": "Task 2",
+    "category": "Concession",
+    "band6Sentence": "Even though electric cars are expensive, they save fuel over time.",
+    "band8Sentence": "Notwithstanding their steep upfront cost, electric vehicles deliver lower lifetime operating expenses.",
+    "targetChunk": "Notwithstanding their steep upfront cost,",
+    "distractors": [
+      "Despite of their high first price,",
+      "Although their expensive upfront cost,",
+      "In spite they cost high first,"
+    ],
+    "explanationVi": "'Notwithstanding + cụm danh từ' là dạng nhượng bộ trang trọng bậc cao."
+  },
+  {
+    "id": "wup_122",
+    "taskType": "Task 2",
+    "category": "Concession",
+    "band6Sentence": "Even if governments pass strict laws, some companies will still pollute.",
+    "band8Sentence": "Strict legislation alone, however well-intentioned, cannot eliminate corporate pollution without rigorous enforcement.",
+    "targetChunk": ", however well-intentioned,",
+    "distractors": [
+      ", although good intention,",
+      ", despite well-meaning,",
+      ", whatever good aim,"
+    ],
+    "explanationVi": "Cấu trúc chêm ', however + adj,' tạo câu văn mạch lạc, sắc sảo."
+  },
+  {
+    "id": "wup_123",
+    "taskType": "Task 2",
+    "category": "Concession",
+    "band6Sentence": "Yes, tourism brings money, but it also damages old buildings.",
+    "band8Sentence": "Granted, mass tourism generates vital revenue; yet unchecked visitor numbers can erode fragile heritage sites.",
+    "targetChunk": "Granted, mass tourism generates",
+    "distractors": [
+      "Accepting, big tourism makes",
+      "Agreeing, mass tourism brings",
+      "Admitting to, tourism creates"
+    ],
+    "explanationVi": "'Granted, ...; yet ...' là cặp nhượng bộ – phản biện ngắn gọn, đầy uy lực."
+  },
+  {
+    "id": "wup_124",
+    "taskType": "Task 2",
+    "category": "Concession",
+    "band6Sentence": "Although AI helps doctors, it cannot replace human empathy.",
+    "band8Sentence": "Valuable though AI diagnostics may be, algorithms cannot replicate genuine human empathy.",
+    "targetChunk": "Valuable though AI diagnostics may be,",
+    "distractors": [
+      "Though valuable AI diagnostics is,",
+      "Despite valuable AI may be,",
+      "As valuable AI diagnostics are,"
+    ],
+    "explanationVi": "Đảo tính từ lên đầu 'Adj + though/as + S + may be' là cấu trúc Band 8.5 ấn tượng."
+  },
+  {
+    "id": "wup_125",
+    "taskType": "Task 2",
+    "category": "Contrast",
+    "band6Sentence": "Unlike rich nations, developing countries struggle to fund green energy.",
+    "band8Sentence": "In stark contrast to affluent nations, developing economies face acute capital constraints in financing clean energy.",
+    "targetChunk": "In stark contrast to",
+    "distractors": [
+      "In big opposite with",
+      "With strong difference from",
+      "On sharp contrary to"
+    ],
+    "explanationVi": "'In stark contrast to' tạo sắc thái đối lập mạnh và chuẩn collocation."
+  },
+  {
+    "id": "wup_126",
+    "taskType": "Task 2",
+    "category": "Contrast",
+    "band6Sentence": "Some workers love flexibility, while others feel lonely at home.",
+    "band8Sentence": "Whereas remote arrangements appeal to self-directed staff, they can leave newer employees feeling isolated.",
+    "targetChunk": "Whereas remote arrangements appeal to",
+    "distractors": [
+      "While remote working liking by",
+      "Despite remote jobs attract",
+      "However remote setups interest"
+    ],
+    "explanationVi": "'Whereas' mở đầu câu so sánh hai nhóm đối tượng mạch lạc."
+  },
+  {
+    "id": "wup_127",
+    "taskType": "Task 2",
+    "category": "Inversion",
+    "band6Sentence": "We rarely see such rapid change in job markets.",
+    "band8Sentence": "Seldom have labour markets undergone such rapid structural transformation.",
+    "targetChunk": "Seldom have labour markets undergone",
+    "distractors": [
+      "Seldom labour markets have undergone",
+      "Rarely did labour markets underwent",
+      "Seldom had labour markets undergo"
+    ],
+    "explanationVi": "Đảo ngữ trạng từ phủ định 'Seldom + have + S + V3' giúp nâng tầm ngữ pháp."
+  },
+  {
+    "id": "wup_128",
+    "taskType": "Task 2",
+    "category": "Inversion",
+    "band6Sentence": "Society can solve this crisis only by working together.",
+    "band8Sentence": "Only through coordinated international cooperation can nations tackle transboundary climate risks.",
+    "targetChunk": "Only through coordinated international cooperation can",
+    "distractors": [
+      "Only by global working together nations can",
+      "Only through cooperation nations are able",
+      "Only when cooperating can nations to"
+    ],
+    "explanationVi": "Đảo ngữ 'Only through + N + modal + S + V' cực hợp đoạn giải pháp/kết luận."
+  },
+  {
+    "id": "wup_129",
+    "taskType": "Task 2",
+    "category": "Inversion",
+    "band6Sentence": "We should never sacrifice student safety for lower costs.",
+    "band8Sentence": "Under no circumstances should schools compromise student safety to cut expenditure.",
+    "targetChunk": "Under no circumstances should schools compromise",
+    "distractors": [
+      "In no situation schools should give up",
+      "Under no condition should schools to risk",
+      "Never circumstances schools compromise"
+    ],
+    "explanationVi": "Đảo ngữ 'Under no circumstances + should + S + V' mang sắc thái khẳng định đanh thép."
+  },
+  {
+    "id": "wup_130",
+    "taskType": "Task 2",
+    "category": "Inversion",
+    "band6Sentence": "If cities fail to upgrade drainage, floods will worsen.",
+    "band8Sentence": "Should municipalities fail to modernise drainage networks, seasonal flooding will intensify.",
+    "targetChunk": "Should municipalities fail to",
+    "distractors": [
+      "If should cities fail to",
+      "Should cities failing to",
+      "Would municipalities fail to"
+    ],
+    "explanationVi": "Đảo ngữ điều kiện loại 1 'Should + S + V' trang trọng hơn 'If...'."
+  },
+  {
+    "id": "wup_131",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "It is very important that governments protect wetlands.",
+    "band8Sentence": "It is imperative that policymakers safeguard remaining coastal wetlands before irreversible loss occurs.",
+    "targetChunk": "It is imperative that policymakers safeguard",
+    "distractors": [
+      "It is urgent for policymakers safeguarding",
+      "It is imperative policymakers to protect",
+      "It is very vital that officials protects"
+    ],
+    "explanationVi": "Thức giả định 'It is imperative that + S + V (nguyên thể)' chuẩn Band 8.0."
+  },
+  {
+    "id": "wup_132",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "When people live longer, pension systems face more pressure.",
+    "band8Sentence": "The longer life expectancy rises, the heavier the fiscal burden placed on state pension funds.",
+    "targetChunk": "The longer life expectancy rises, the heavier",
+    "distractors": [
+      "More long people live, more heavy",
+      "The more longer life grows, heavier",
+      "As longer life expectancy, the heavier"
+    ],
+    "explanationVi": "Cấu trúc so sánh kép 'The + adj-er ..., the + adj-er ...' diễn tả mối tương quan tuyến tính."
+  },
+  {
+    "id": "wup_133",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "Because they lack affordable homes, young couples delay having kids.",
+    "band8Sentence": "Constrained by soaring housing prices, many young couples postpone starting a family.",
+    "targetChunk": "Constrained by soaring housing prices,",
+    "distractors": [
+      "Constraining by high house costs,",
+      "Because constrained by high homes,",
+      "Been constrained from housing prices,"
+    ],
+    "explanationVi": "Mệnh đề phân từ quá khứ 'Constrained by...' rút gọn nguyên nhân cực gọn."
+  },
+  {
+    "id": "wup_134",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "People should focus on preventing disease instead of just treating it.",
+    "band8Sentence": "Health systems ought to prioritise preventive care over costly late-stage intervention.",
+    "targetChunk": "prioritise preventive care over",
+    "distractors": [
+      "put first stopping disease than",
+      "prefer preventing illness more than",
+      "focus firstly on prevention against"
+    ],
+    "explanationVi": "'prioritise A over B' diễn tả thứ tự ưu tiên chính sách cực súc tích."
+  },
+  {
+    "id": "wup_135",
+    "taskType": "Task 2",
+    "category": "Complex Structures",
+    "band6Sentence": "The internet has completely changed how news is shared.",
+    "band8Sentence": "Digital platforms have fundamentally reshaped the dissemination of public information.",
+    "targetChunk": "fundamentally reshaped the dissemination of",
+    "distractors": [
+      "totally changed the spreading for",
+      "completely rebuilt how sharing",
+      "deeply turned the giving out of"
+    ],
+    "explanationVi": "Danh từ hóa 'the dissemination of public information' mang sắc thái học thuật rõ nét."
+  },
+  {
+    "id": "wup_136",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Governments need to make strict rules on plastic packaging.",
+    "band8Sentence": "Authorities must enact stringent regulations governing single-use plastic packaging.",
+    "targetChunk": "enact stringent regulations",
+    "distractors": [
+      "make hard rules",
+      "build strict laws",
+      "do tight policies"
+    ],
+    "explanationVi": "'enact stringent regulations' là bộ ba collocation chuẩn mực cho chủ đề môi trường/luật."
+  },
+  {
+    "id": "wup_137",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Education plays a very big role in reducing crime.",
+    "band8Sentence": "Equitable access to quality education plays a pivotal role in curbing youth offending.",
+    "targetChunk": "plays a pivotal role in curbing",
+    "distractors": [
+      "takes a big part to stop",
+      "makes a crucial job in cutting",
+      "plays a giant role for reducing"
+    ],
+    "explanationVi": "'play a pivotal role in + V-ing' thay thế xuất sắc cho 'play a very big role'."
+  },
+  {
+    "id": "wup_138",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "We must find a balance between growth and nature.",
+    "band8Sentence": "Policymakers must strike a delicate balance between economic expansion and ecological preservation.",
+    "targetChunk": "strike a delicate balance between",
+    "distractors": [
+      "hit a careful middle of",
+      "find a soft equal between",
+      "make a gentle balance among"
+    ],
+    "explanationVi": "'strike a delicate balance between A and B' là cụm tủ Band 8.0 cho mọi đề cân bằng lợi ích."
+  },
+  {
+    "id": "wup_139",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Rich countries should help poor countries fight climate change.",
+    "band8Sentence": "Affluent nations bear a moral obligation to assist developing countries in climate adaptation.",
+    "targetChunk": "bear a moral obligation to assist",
+    "distractors": [
+      "hold a good duty for helping",
+      "carry an ethical must to help",
+      "have moral responsibility assisting"
+    ],
+    "explanationVi": "'bear a moral obligation to + V' nâng cấp mạnh cho 'should help'."
+  },
+  {
+    "id": "wup_140",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Advertising makes children want unhealthy snacks.",
+    "band8Sentence": "Targeted marketing fuels excessive consumption of calorie-dense snacks among children.",
+    "targetChunk": "fuels excessive consumption of",
+    "distractors": [
+      "fires too much eating of",
+      "pushes over-eating in",
+      "feeds huge consuming for"
+    ],
+    "explanationVi": "Động từ 'fuel' (thúc đẩy mạnh xu hướng tiêu cực) + 'excessive consumption' cực tự nhiên."
+  },
+  {
+    "id": "wup_141",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Technology can close the gap between rural and city schools.",
+    "band8Sentence": "High-speed broadband can bridge the educational divide between remote villages and metropolitan schools.",
+    "targetChunk": "bridge the educational divide",
+    "distractors": [
+      "close the study hole",
+      "fill the learning split",
+      "shut the school gap"
+    ],
+    "explanationVi": "'bridge the divide' là collocation chuẩn cho việc thu hẹp khoảng cách số/giáo dục."
+  },
+  {
+    "id": "wup_142",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Art and music should not be cut from school timetables.",
+    "band8Sentence": "Creative disciplines merit a permanent place within the core secondary curriculum.",
+    "targetChunk": "merit a permanent place within",
+    "distractors": [
+      "deserve a forever spot inside",
+      "earn an endless seat in",
+      "worth a lasting position into"
+    ],
+    "explanationVi": "Động từ 'merit' (xứng đáng có được) rất tinh tế trong văn nghị luận."
+  },
+  {
+    "id": "wup_143",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "Punishing criminals harshly does not always stop them from offending again.",
+    "band8Sentence": "Harsh custodial sentences alone rarely act as an effective deterrent against reoffending.",
+    "targetChunk": "act as an effective deterrent against",
+    "distractors": [
+      "work like a strong stopper for",
+      "serve as good prevention to",
+      "behave as strong block against"
+    ],
+    "explanationVi": "'act as an effective deterrent against' là cụm từ chuyên ngành tội phạm học Band 8.0."
+  },
+  {
+    "id": "wup_144",
+    "taskType": "Task 2",
+    "category": "Academic Collocation",
+    "band6Sentence": "People are losing touch with local traditions because of global media.",
+    "band8Sentence": "Globalised media ecosystems risk eroding distinctive local cultural traditions.",
+    "targetChunk": "risk eroding distinctive local cultural traditions",
+    "distractors": [
+      "danger breaking unique native cultures",
+      "threaten erasing special home customs",
+      "may spoil own local habits"
+    ],
+    "explanationVi": "'risk + V-ing' + 'erode cultural traditions' tự nhiên và chính xác."
+  },
+  {
+    "id": "wup_145",
+    "taskType": "Task 2",
+    "category": "Examples",
+    "band6Sentence": "For example, Amsterdam has built lots of safe bike lanes.",
+    "band8Sentence": "A compelling illustration is Amsterdam, where dedicated cycling corridors have dramatically lowered car reliance.",
+    "targetChunk": "A compelling illustration is",
+    "distractors": [
+      "A strong drawing is",
+      "One convincing picture is",
+      "A powerful photo is"
+    ],
+    "explanationVi": "'A compelling illustration is...' thay thế hoàn hảo cho 'For example'."
+  },
+  {
+    "id": "wup_146",
+    "taskType": "Task 2",
+    "category": "Examples",
+    "band6Sentence": "Countries like Denmark show that wind power works well.",
+    "band8Sentence": "Nordic economies such as Denmark exemplify the viability of large-scale wind generation.",
+    "targetChunk": "exemplify the viability of",
+    "distractors": [
+      "example the working of",
+      "illustrate the possible of",
+      "show the can-do of"
+    ],
+    "explanationVi": "Động từ 'exemplify' (là minh chứng điển hình cho) rất gọn và sắc bén."
+  },
+  {
+    "id": "wup_147",
+    "taskType": "Task 2",
+    "category": "Examples",
+    "band6Sentence": "This can be seen clearly in how smartphones changed banking.",
+    "band8Sentence": "This shift is vividly illustrated by the rapid adoption of mobile banking across emerging markets.",
+    "targetChunk": "is vividly illustrated by",
+    "distractors": [
+      "is brightly shown from",
+      "gets clearly pictured with",
+      "is strongly seen through"
+    ],
+    "explanationVi": "'be vividly illustrated by' giúp đưa dẫn chứng thực tế mượt mà."
+  },
+  {
+    "id": "wup_148",
+    "taskType": "Task 2",
+    "category": "Addition",
+    "band6Sentence": "Also, green spaces help people feel less stressed.",
+    "band8Sentence": "Equally noteworthy is the restorative effect of urban parks on residents' mental health.",
+    "targetChunk": "Equally noteworthy is",
+    "distractors": [
+      "Similarly famous is",
+      "Also worth-noting are",
+      "Equally noticing is"
+    ],
+    "explanationVi": "Đảo ngữ 'Equally noteworthy is + N' nối ý bổ sung vô cùng trang nhã."
+  },
+  {
+    "id": "wup_149",
+    "taskType": "Task 2",
+    "category": "Conclusion",
+    "band6Sentence": "To sum up, both parents and schools must teach kids online safety.",
+    "band8Sentence": "In summary, safeguarding young internet users demands a concerted effort from both families and educators.",
+    "targetChunk": "demands a concerted effort from",
+    "distractors": [
+      "needs a joined trying by",
+      "requires a together work from",
+      "asks a united power of"
+    ],
+    "explanationVi": "'demand a concerted effort from' là cụm chốt giải pháp phối hợp chuẩn Band 8.0."
+  },
+  {
+    "id": "wup_150",
+    "taskType": "Task 2",
+    "category": "Conclusion",
+    "band6Sentence": "In conclusion, I think public transport investment is worth the money.",
+    "band8Sentence": "On balance, sustained investment in public transit yields far-reaching dividends that clearly justify its fiscal cost.",
+    "targetChunk": "On balance, sustained investment",
+    "distractors": [
+      "At the balance, lasting spending",
+      "In balance, kept investing",
+      "By balance, continuous funding"
+    ],
+    "explanationVi": "'On balance,' kết luận cân nhắc kỹ hai chiều trước khi chốt lập trường."
+  }
+]

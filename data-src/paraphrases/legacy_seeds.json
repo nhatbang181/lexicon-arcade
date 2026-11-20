@@ -1,0 +1,3684 @@
+{
+  "paraphrases": [
+    {
+      "id": "para_001",
+      "original": "old people",
+      "paraphrased": "the elderly / senior citizens / older adults",
+      "meaningVi": "người già",
+      "contextSentence": "Đề: services for old people → Bài: facilities for senior citizens",
+      "distractors": [
+        "adolescents",
+        "commuters",
+        "undergraduates"
+      ],
+      "explanationVi": "Đề thường dùng 'old people' nhưng bài đọc/nghe sẽ chuyển sang 'senior citizens', 'the elderly' hoặc 'older adults'."
+    },
+    {
+      "id": "para_002",
+      "original": "children",
+      "paraphrased": "young people / youngsters / minors",
+      "meaningVi": "trẻ em",
+      "contextSentence": "Đề: rules for children → Bài: regulations affecting minors",
+      "distractors": [
+        "pensioners",
+        "employees",
+        "investors"
+      ],
+      "explanationVi": "Trong IELTS, 'children' hay được paraphrase thành 'minors', 'youngsters' hoặc 'the younger generation'."
+    },
+    {
+      "id": "para_003",
+      "original": "increase",
+      "paraphrased": "rise / grow / climb",
+      "meaningVi": "tăng",
+      "contextSentence": "Đề: prices increased → Bài: costs soared",
+      "distractors": [
+        "plummet",
+        "stagnate",
+        "fluctuate"
+      ],
+      "explanationVi": "Động từ 'increase' thường được nâng cấp thành 'surge', 'soar', 'climb' hoặc danh từ hóa thành 'a rise in'."
+    },
+    {
+      "id": "para_004",
+      "original": "decrease",
+      "paraphrased": "fall / drop / decline",
+      "meaningVi": "giảm",
+      "contextSentence": "Đề: numbers decreased → Bài: there was a decline in figures",
+      "distractors": [
+        "escalate",
+        "double",
+        "stabilise"
+      ],
+      "explanationVi": "Đề dùng 'decrease', bài thường đổi thành 'decline', 'drop', 'plummet' hoặc 'a downward trend'."
+    },
+    {
+      "id": "para_005",
+      "original": "reduce",
+      "paraphrased": "cut / lower / curb",
+      "meaningVi": "làm giảm",
+      "contextSentence": "Đề: reduce pollution → Bài: curb emissions",
+      "distractors": [
+        "amplify",
+        "trigger",
+        "expand"
+      ],
+      "explanationVi": "'reduce' thường được thay bằng 'curb', 'cut', 'diminish' hoặc 'lower' trong chủ đề môi trường và chính sách."
+    },
+    {
+      "id": "para_006",
+      "original": "important",
+      "paraphrased": "crucial / vital / essential",
+      "meaningVi": "quan trọng",
+      "contextSentence": "Đề: an important factor → Bài: a key element",
+      "distractors": [
+        "trivial",
+        "optional",
+        "temporary"
+      ],
+      "explanationVi": "Tính từ 'important' rất hay xuất hiện dưới dạng 'crucial', 'vital', 'essential' hoặc 'a key element'."
+    },
+    {
+      "id": "para_007",
+      "original": "use",
+      "paraphrased": "utilise / employ / make use of",
+      "meaningVi": "sử dụng",
+      "contextSentence": "Đề: use technology → Bài: employ digital tools",
+      "distractors": [
+        "abandon",
+        "prohibit",
+        "postpone"
+      ],
+      "explanationVi": "Động từ 'use' thường được học thuật hóa thành 'utilise', 'employ' hoặc 'apply'."
+    },
+    {
+      "id": "para_008",
+      "original": "help",
+      "paraphrased": "assist / aid / support",
+      "meaningVi": "giúp",
+      "contextSentence": "Đề: help students → Bài: support learners",
+      "distractors": [
+        "hinder",
+        "obstruct",
+        "discourage"
+      ],
+      "explanationVi": "'help' trong câu hỏi hay được paraphrase trong bài thành 'assist', 'support' hoặc 'facilitate'."
+    },
+    {
+      "id": "para_009",
+      "original": "need",
+      "paraphrased": "require / demand / call for",
+      "meaningVi": "cần",
+      "contextSentence": "Đề: the job needs experience → Bài: the role requires expertise",
+      "distractors": [
+        "reject",
+        "replace",
+        "avoid"
+      ],
+      "explanationVi": "'need' thường xuất hiện trong bài học thuật dưới dạng 'require', 'demand' hoặc 'call for'."
+    },
+    {
+      "id": "para_010",
+      "original": "show",
+      "paraphrased": "demonstrate / indicate / reveal",
+      "meaningVi": "cho thấy",
+      "contextSentence": "Đề: research shows → Bài: findings indicate",
+      "distractors": [
+        "conceal",
+        "contradict",
+        "ignore"
+      ],
+      "explanationVi": "'research shows' rất hay đổi thành 'findings indicate', 'demonstrate' hoặc 'reveal'."
+    },
+    {
+      "id": "para_011",
+      "original": "cause",
+      "paraphrased": "lead to / result in / give rise to",
+      "meaningVi": "gây ra",
+      "contextSentence": "Đề: smoking causes disease → Bài: smoking can lead to illness",
+      "distractors": [
+        "prevent",
+        "relieve",
+        "offset"
+      ],
+      "explanationVi": "Quan hệ nhân quả 'cause' thường được thay bằng 'lead to', 'trigger', 'give rise to' hoặc 'result in'."
+    },
+    {
+      "id": "para_012",
+      "original": "because of",
+      "paraphrased": "due to / owing to / as a result of",
+      "meaningVi": "bởi vì",
+      "contextSentence": "Đề: closed because of rain → Bài: cancelled owing to bad weather",
+      "distractors": [
+        "despite",
+        "instead of",
+        "apart from"
+      ],
+      "explanationVi": "Cụm giới từ 'because of' hay chuyển thành 'owing to', 'due to' hoặc 'on account of'."
+    },
+    {
+      "id": "para_013",
+      "original": "dangerous",
+      "paraphrased": "hazardous / risky / harmful",
+      "meaningVi": "nguy hiểm",
+      "contextSentence": "Đề: dangerous chemicals → Bài: hazardous substances",
+      "distractors": [
+        "harmless",
+        "beneficial",
+        "affordable"
+      ],
+      "explanationVi": "Trong bài khoa học/an toàn, 'dangerous' thường được thay bằng 'hazardous', 'risky' hoặc 'harmful'."
+    },
+    {
+      "id": "para_014",
+      "original": "difficult",
+      "paraphrased": "challenging / demanding / tough",
+      "meaningVi": "khó",
+      "contextSentence": "Đề: a difficult task → Bài: a demanding job",
+      "distractors": [
+        "effortless",
+        "convenient",
+        "straightforward"
+      ],
+      "explanationVi": "'difficult' thường đổi sang 'demanding', 'challenging' hoặc 'arduous'."
+    },
+    {
+      "id": "para_015",
+      "original": "enough",
+      "paraphrased": "sufficient / adequate",
+      "meaningVi": "đủ",
+      "contextSentence": "Đề: not enough money → Bài: insufficient funding",
+      "distractors": [
+        "excessive",
+        "scarce",
+        "redundant"
+      ],
+      "explanationVi": "'enough' được thay bằng 'sufficient' hoặc 'adequate' (phủ định: 'insufficient' / 'inadequate')."
+    },
+    {
+      "id": "para_016",
+      "original": "about / around",
+      "paraphrased": "approximately / roughly / nearly",
+      "meaningVi": "khoảng",
+      "contextSentence": "Đề: about 50 people → Bài: roughly fifty participants",
+      "distractors": [
+        "precisely",
+        "rarely",
+        "exceeding"
+      ],
+      "explanationVi": "Số liệu xấp xỉ 'about/around' trong đề thường thành 'roughly', 'approximately' hoặc 'in the region of'."
+    },
+    {
+      "id": "para_017",
+      "original": "government",
+      "paraphrased": "the authorities / the state / officials",
+      "meaningVi": "chính phủ",
+      "contextSentence": "Đề: the government decided → Bài: officials announced",
+      "distractors": [
+        "consumers",
+        "volunteers",
+        "journalists"
+      ],
+      "explanationVi": "'government' hay được paraphrase thành 'the authorities', 'policymakers' hoặc 'officials'."
+    },
+    {
+      "id": "para_018",
+      "original": "money",
+      "paraphrased": "funding / finance / funds",
+      "meaningVi": "tiền",
+      "contextSentence": "Đề: money for schools → Bài: funding for education",
+      "distractors": [
+        "labour",
+        "equipment",
+        "legislation"
+      ],
+      "explanationVi": "'money' trong ngữ cảnh dự án/trường học thường đổi thành 'funding', 'finance' hoặc 'budget'."
+    },
+    {
+      "id": "para_019",
+      "original": "job",
+      "paraphrased": "employment / occupation / career",
+      "meaningVi": "công việc",
+      "contextSentence": "Đề: find a job → Bài: secure employment",
+      "distractors": [
+        "qualification",
+        "leisure",
+        "commute"
+      ],
+      "explanationVi": "'job' được nâng cấp thành 'employment', 'occupation', 'profession' hoặc 'role'."
+    },
+    {
+      "id": "para_020",
+      "original": "company",
+      "paraphrased": "firm / business / enterprise",
+      "meaningVi": "công ty",
+      "contextSentence": "Đề: small companies → Bài: small firms",
+      "distractors": [
+        "charity",
+        "ministry",
+        "municipality"
+      ],
+      "explanationVi": "'company' hay xuất hiện trong bài đọc kinh tế dưới dạng 'firm', 'enterprise' hoặc 'corporation'."
+    },
+    {
+      "id": "para_021",
+      "original": "expensive",
+      "paraphrased": "costly / pricey / high-priced",
+      "meaningVi": "đắt",
+      "contextSentence": "Đề: expensive to build → Bài: costly to construct",
+      "distractors": [
+        "affordable",
+        "economical",
+        "subsidised"
+      ],
+      "explanationVi": "'expensive' thường được thay bằng 'costly', 'pricey' hoặc 'prohibitively expensive'."
+    },
+    {
+      "id": "para_022",
+      "original": "cheap",
+      "paraphrased": "inexpensive / affordable / low-cost",
+      "meaningVi": "rẻ",
+      "contextSentence": "Đề: cheap housing → Bài: affordable homes",
+      "distractors": [
+        "costly",
+        "luxurious",
+        "scarce"
+      ],
+      "explanationVi": "'cheap' trong IELTS hay được diễn đạt lịch sự hơn là 'affordable', 'inexpensive' hoặc 'low-cost'."
+    },
+    {
+      "id": "para_023",
+      "original": "start",
+      "paraphrased": "begin / launch / initiate",
+      "meaningVi": "bắt đầu",
+      "contextSentence": "Đề: started the project → Bài: launched the scheme",
+      "distractors": [
+        "halt",
+        "postpone",
+        "withdraw"
+      ],
+      "explanationVi": "'start a project' thường đổi thành 'launch a scheme', 'initiate' hoặc 'establish'."
+    },
+    {
+      "id": "para_024",
+      "original": "stop",
+      "paraphrased": "cease / halt / end",
+      "meaningVi": "dừng",
+      "contextSentence": "Đề: stop production → Bài: production was halted",
+      "distractors": [
+        "initiate",
+        "accelerate",
+        "sustain"
+      ],
+      "explanationVi": "'stop' hay chuyển thành 'halt', 'cease', 'discontinue' hoặc 'put an end to'."
+    },
+    {
+      "id": "para_025",
+      "original": "change",
+      "paraphrased": "alter / modify / transform",
+      "meaningVi": "thay đổi",
+      "contextSentence": "Đề: change the rules → Bài: modify the regulations",
+      "distractors": [
+        "preserve",
+        "maintain",
+        "freeze"
+      ],
+      "explanationVi": "'change' được paraphrase linh hoạt thành 'modify', 'alter', 'transform' hoặc 'adapt'."
+    },
+    {
+      "id": "para_026",
+      "original": "problem",
+      "paraphrased": "issue / challenge / difficulty",
+      "meaningVi": "vấn đề",
+      "contextSentence": "Đề: the main problem → Bài: the key challenge",
+      "distractors": [
+        "remedy",
+        "breakthrough",
+        "incentive"
+      ],
+      "explanationVi": "'problem' trong đề hay thành 'challenge', 'obstacle', 'issue' hoặc 'drawback' trong bài."
+    },
+    {
+      "id": "para_027",
+      "original": "advantage",
+      "paraphrased": "benefit / merit / upside",
+      "meaningVi": "lợi ích",
+      "contextSentence": "Đề: advantages of cycling → Bài: the benefits of riding a bike",
+      "distractors": [
+        "drawback",
+        "liability",
+        "constraint"
+      ],
+      "explanationVi": "'advantage' thường đổi sang 'benefit', 'merit', 'upside' hoặc 'strength'."
+    },
+    {
+      "id": "para_028",
+      "original": "disadvantage",
+      "paraphrased": "drawback / downside / limitation",
+      "meaningVi": "bất lợi",
+      "contextSentence": "Đề: a disadvantage → Bài: a major drawback",
+      "distractors": [
+        "merit",
+        "incentive",
+        "dividend"
+      ],
+      "explanationVi": "'disadvantage' thường xuất hiện dưới dạng 'drawback', 'downside' hoặc 'limitation'."
+    },
+    {
+      "id": "para_029",
+      "original": "researcher",
+      "paraphrased": "scientist / academic / investigator",
+      "meaningVi": "nhà nghiên cứu",
+      "contextSentence": "Đề: researchers found → Bài: the team discovered",
+      "distractors": [
+        "participant",
+        "legislator",
+        "entrepreneur"
+      ],
+      "explanationVi": "'researchers' rất hay đổi thành 'investigators', 'academics', 'scientists' hoặc 'the team'."
+    },
+    {
+      "id": "para_030",
+      "original": "prove",
+      "paraphrased": "confirm / establish / demonstrate",
+      "meaningVi": "chứng minh",
+      "contextSentence": "Đề: proved the theory → Bài: confirmed the hypothesis",
+      "distractors": [
+        "dispute",
+        "speculate",
+        "overlook"
+      ],
+      "explanationVi": "'prove' trong nghiên cứu hay được paraphrase thành 'confirm', 'establish' hoặc 'verify'."
+    },
+    {
+      "id": "para_031",
+      "original": "not sure",
+      "paraphrased": "uncertain / unclear / debatable",
+      "meaningVi": "chưa chắc",
+      "contextSentence": "Đề: scientists are not sure → Bài: it remains unclear",
+      "distractors": [
+        "convinced",
+        "confirmed",
+        "unanimous"
+      ],
+      "explanationVi": "'not sure' thường được viết học thuật hơn là 'remains unclear', 'uncertain' hoặc 'debatable'."
+    },
+    {
+      "id": "para_032",
+      "original": "many",
+      "paraphrased": "numerous / a large number of / a great deal of",
+      "meaningVi": "nhiều",
+      "contextSentence": "Đề: many species → Bài: numerous species",
+      "distractors": [
+        "scarce",
+        "isolated",
+        "negligible"
+      ],
+      "explanationVi": "'many' trong câu hỏi thường đổi thành 'numerous', 'countless' hoặc 'a large number of'."
+    },
+    {
+      "id": "para_033",
+      "original": "most",
+      "paraphrased": "the majority of / the bulk of / most of",
+      "meaningVi": "phần lớn",
+      "contextSentence": "Đề: most students → Bài: the majority of learners",
+      "distractors": [
+        "a handful of",
+        "a small fraction of",
+        "hardly any"
+      ],
+      "explanationVi": "'most' hay chuyển thành 'the majority of' hoặc 'the bulk of'."
+    },
+    {
+      "id": "para_034",
+      "original": "only a few",
+      "paraphrased": "a handful of / a minority of / a small number of",
+      "meaningVi": "chỉ một số ít",
+      "contextSentence": "Đề: only a few people → Bài: a small minority",
+      "distractors": [
+        "the vast majority of",
+        "nearly all",
+        "countless"
+      ],
+      "explanationVi": "'only a few' thường được diễn đạt thành 'a handful of' hoặc 'a small minority'."
+    },
+    {
+      "id": "para_035",
+      "original": "at first",
+      "paraphrased": "initially / originally / in the early stages",
+      "meaningVi": "ban đầu",
+      "contextSentence": "Đề: at first, it failed → Bài: initially, the plan was unsuccessful",
+      "distractors": [
+        "eventually",
+        "subsequently",
+        "ultimately"
+      ],
+      "explanationVi": "'at first' gần như luôn được paraphrase thành 'initially', 'originally' hoặc 'in the early stages'."
+    },
+    {
+      "id": "para_036",
+      "original": "now",
+      "paraphrased": "currently / at present / nowadays",
+      "meaningVi": "hiện nay",
+      "contextSentence": "Đề: now used in schools → Bài: currently employed in classrooms",
+      "distractors": [
+        "formerly",
+        "historically",
+        "eventually"
+      ],
+      "explanationVi": "'now' trong đề bài thường đổi sang 'currently', 'at present' hoặc 'nowadays'."
+    },
+    {
+      "id": "para_037",
+      "original": "in the past",
+      "paraphrased": "previously / formerly / historically",
+      "meaningVi": "trước đây",
+      "contextSentence": "Đề: in the past, people walked → Bài: historically, walking was common",
+      "distractors": [
+        "currently",
+        "shortly",
+        "prospectively"
+      ],
+      "explanationVi": "'in the past' thường chuyển thành 'previously', 'formerly' hoặc 'historically'."
+    },
+    {
+      "id": "para_038",
+      "original": "happen",
+      "paraphrased": "occur / take place / arise",
+      "meaningVi": "xảy ra",
+      "contextSentence": "Đề: when the accident happened → Bài: when the incident occurred",
+      "distractors": [
+        "prevent",
+        "cease",
+        "resolve"
+      ],
+      "explanationVi": "'happen' hay được học thuật hóa thành 'occur', 'take place' hoặc 'arise'."
+    },
+    {
+      "id": "para_039",
+      "original": "try",
+      "paraphrased": "attempt / seek to / endeavour",
+      "meaningVi": "cố gắng",
+      "contextSentence": "Đề: tried to solve → Bài: attempted to address",
+      "distractors": [
+        "abandon",
+        "neglect",
+        "accomplish"
+      ],
+      "explanationVi": "'try to' trong đề thường đổi thành 'attempt to', 'seek to' hoặc 'endeavour to'."
+    },
+    {
+      "id": "para_040",
+      "original": "think",
+      "paraphrased": "believe / argue / claim",
+      "meaningVi": "nghĩ, cho rằng",
+      "contextSentence": "Đề: experts think → Bài: specialists argue",
+      "distractors": [
+        "confirm",
+        "measure",
+        "refute"
+      ],
+      "explanationVi": "'experts think' hay đổi thành 'specialists argue', 'maintain' hoặc 'hold the view'."
+    },
+    {
+      "id": "para_041",
+      "original": "get rid of",
+      "paraphrased": "eliminate",
+      "meaningVi": "loại bỏ hoàn toàn",
+      "contextSentence": "Đề: get rid of plastic waste → Bài: eliminate single-use plastics.",
+      "distractors": [
+        "accumulate",
+        "preserve",
+        "import"
+      ],
+      "explanationVi": "eliminate là động từ học thuật tương đương get rid of / remove completely."
+    },
+    {
+      "id": "para_042",
+      "original": "run out of",
+      "paraphrased": "exhaust",
+      "meaningVi": "cạn kiệt (tài nguyên)",
+      "contextSentence": "Đề: run out of fossil fuels → Bài: exhaust non-renewable reserves.",
+      "distractors": [
+        "replenish",
+        "conserve",
+        "extract"
+      ],
+      "explanationVi": "exhaust resources = làm cạn kiệt nguồn tài nguyên."
+    },
+    {
+      "id": "para_043",
+      "original": "go back to",
+      "paraphrased": "revert to",
+      "meaningVi": "quay trở lại (trạng thái cũ)",
+      "contextSentence": "Đề: go back to paper tickets → Bài: revert to printed passes.",
+      "distractors": [
+        "upgrade to",
+        "depart from",
+        "adapt to"
+      ],
+      "explanationVi": "revert to thường dùng trong Reading/Listening khi quay lại cách làm cũ."
+    },
+    {
+      "id": "para_044",
+      "original": "deal with",
+      "paraphrased": "address",
+      "meaningVi": "giải quyết, xử lý",
+      "contextSentence": "Đề: deal with housing shortages → Bài: address the lack of affordable homes.",
+      "distractors": [
+        "aggravate",
+        "ignore",
+        "postpone"
+      ],
+      "explanationVi": "address a problem/issue = tackle / deal with a problem."
+    },
+    {
+      "id": "para_045",
+      "original": "find out",
+      "paraphrased": "ascertain",
+      "meaningVi": "tìm hiểu, xác minh",
+      "contextSentence": "Đề: find out the cause → Bài: ascertain the root cause of the fault.",
+      "distractors": [
+        "assume",
+        "conceal",
+        "dismiss"
+      ],
+      "explanationVi": "ascertain mang sắc thái trang trọng hơn của find out / determine."
+    },
+    {
+      "id": "para_046",
+      "original": "make worse",
+      "paraphrased": "exacerbate",
+      "meaningVi": "làm trầm trọng thêm",
+      "contextSentence": "Đề: make traffic worse → Bài: exacerbate peak-hour congestion.",
+      "distractors": [
+        "alleviate",
+        "stabilise",
+        "resolve"
+      ],
+      "explanationVi": "exacerbate = aggravate = make an existing problem worse."
+    },
+    {
+      "id": "para_047",
+      "original": "make better",
+      "paraphrased": "alleviate",
+      "meaningVi": "làm dịu bớt, cải thiện",
+      "contextSentence": "Đề: make symptoms better → Bài: alleviate chronic discomfort.",
+      "distractors": [
+        "intensify",
+        "trigger",
+        "prolong"
+      ],
+      "explanationVi": "alleviate thường đi với pain, poverty, congestion, symptoms."
+    },
+    {
+      "id": "para_048",
+      "original": "speed up",
+      "paraphrased": "accelerate",
+      "meaningVi": "đẩy nhanh, tăng tốc",
+      "contextSentence": "Đề: speed up recovery → Bài: accelerate economic recovery.",
+      "distractors": [
+        "impede",
+        "halt",
+        "postpone"
+      ],
+      "explanationVi": "accelerate = speed up (cả nghĩa vật lý lẫn kinh tế/xã hội)."
+    },
+    {
+      "id": "para_049",
+      "original": "slow down",
+      "paraphrased": "impede",
+      "meaningVi": "cản trở, làm chậm lại",
+      "contextSentence": "Đề: slow down innovation → Bài: impede technological progress.",
+      "distractors": [
+        "foster",
+        "expedite",
+        "stimulate"
+      ],
+      "explanationVi": "impede / hinder = làm chậm lại, cản trở tiến độ."
+    },
+    {
+      "id": "para_050",
+      "original": "encourage",
+      "paraphrased": "foster",
+      "meaningVi": "thúc đẩy, nuôi dưỡng",
+      "contextSentence": "Đề: encourage creativity → Bài: foster creative thinking among pupils.",
+      "distractors": [
+        "suppress",
+        "deter",
+        "restrict"
+      ],
+      "explanationVi": "foster collocate tự nhiên với innovation, collaboration, growth."
+    },
+    {
+      "id": "para_051",
+      "original": "ban",
+      "paraphrased": "prohibit",
+      "meaningVi": "cấm đoán",
+      "contextSentence": "Đề: ban smoking indoors → Bài: prohibit tobacco use in enclosed spaces.",
+      "distractors": [
+        "permit",
+        "subsidise",
+        "endorse"
+      ],
+      "explanationVi": "prohibit / outlaw = ban chính thức bằng quy định hoặc pháp luật."
+    },
+    {
+      "id": "para_052",
+      "original": "allow",
+      "paraphrased": "permit",
+      "meaningVi": "cho phép",
+      "contextSentence": "Đề: allow visitors to take photos → Bài: permit photography without flash.",
+      "distractors": [
+        "forbid",
+        "penalise",
+        "suspend"
+      ],
+      "explanationVi": "permit là cách diễn đạt trang trọng của allow trong biển báo và quy định."
+    },
+    {
+      "id": "para_053",
+      "original": "keep",
+      "paraphrased": "retain",
+      "meaningVi": "giữ lại, duy trì",
+      "contextSentence": "Đề: keep experienced staff → Bài: retain skilled employees.",
+      "distractors": [
+        "dismiss",
+        "discard",
+        "replace"
+      ],
+      "explanationVi": "retain rất hay xuất hiện trong Reading chủ đề nhân sự, trí nhớ và độ ẩm."
+    },
+    {
+      "id": "para_054",
+      "original": "throw away",
+      "paraphrased": "discard",
+      "meaningVi": "vứt bỏ",
+      "contextSentence": "Đề: throw away old electronics → Bài: discard obsolete devices.",
+      "distractors": [
+        "salvage",
+        "refurbish",
+        "preserve"
+      ],
+      "explanationVi": "discard = throw away / dispose of."
+    },
+    {
+      "id": "para_055",
+      "original": "buy",
+      "paraphrased": "purchase",
+      "meaningVi": "mua sắm",
+      "contextSentence": "Đề: buy tickets online → Bài: purchase passes via the digital portal.",
+      "distractors": [
+        "refund",
+        "lease",
+        "manufacture"
+      ],
+      "explanationVi": "purchase là từ paraphrase kinh điển của buy trong Listening Section 1–2."
+    },
+    {
+      "id": "para_056",
+      "original": "sell",
+      "paraphrased": "retail",
+      "meaningVi": "bán lẻ",
+      "contextSentence": "Đề: sell goods directly → Bài: retail products straight to consumers.",
+      "distractors": [
+        "acquire",
+        "import",
+        "consume"
+      ],
+      "explanationVi": "retail (v) = bán lẻ trực tiếp cho người tiêu dùng."
+    },
+    {
+      "id": "para_057",
+      "original": "build",
+      "paraphrased": "construct",
+      "meaningVi": "xây dựng",
+      "contextSentence": "Đề: build a new bridge → Bài: construct a suspension crossing.",
+      "distractors": [
+        "demolish",
+        "abandon",
+        "relocate"
+      ],
+      "explanationVi": "construct / erect thường thay cho build trong mô tả bản đồ và kiến trúc."
+    },
+    {
+      "id": "para_058",
+      "original": "knock down",
+      "paraphrased": "demolish",
+      "meaningVi": "phá dỡ (công trình)",
+      "contextSentence": "Đề: knock down the old factory → Bài: demolish the disused mill.",
+      "distractors": [
+        "renovate",
+        "expand",
+        "preserve"
+      ],
+      "explanationVi": "demolish / tear down là cặp paraphrase bắt buộc cho bài Map."
+    },
+    {
+      "id": "para_059",
+      "original": "improve a building",
+      "paraphrased": "renovate",
+      "meaningVi": "cải tạo, tu sửa",
+      "contextSentence": "Đề: improve the old theatre → Bài: renovate the historic auditorium.",
+      "distractors": [
+        "demolish",
+        "neglect",
+        "relocate"
+      ],
+      "explanationVi": "renovate / refurbish = tân trang, sửa chữa công trình cũ."
+    },
+    {
+      "id": "para_060",
+      "original": "move to another place",
+      "paraphrased": "relocate",
+      "meaningVi": "di dời địa điểm",
+      "contextSentence": "Đề: move the clinic → Bài: relocate the medical centre to the east wing.",
+      "distractors": [
+        "expand",
+        "shut down",
+        "preserve"
+      ],
+      "explanationVi": "relocate xuất hiện rất thường xuyên trong Listening Map & Reading đô thị."
+    },
+    {
+      "id": "para_061",
+      "original": "grow in size",
+      "paraphrased": "expand",
+      "meaningVi": "mở rộng quy mô",
+      "contextSentence": "Đề: the campus grew → Bài: the university expanded its northern site.",
+      "distractors": [
+        "shrink",
+        "merge",
+        "cease"
+      ],
+      "explanationVi": "expand = grow in size / extend."
+    },
+    {
+      "id": "para_062",
+      "original": "get smaller",
+      "paraphrased": "shrink",
+      "meaningVi": "thu hẹp, co lại",
+      "contextSentence": "Đề: habitats are getting smaller → Bài: natural habitats are shrinking rapidly.",
+      "distractors": [
+        "flourish",
+        "broaden",
+        "double"
+      ],
+      "explanationVi": "shrink / contract = thu nhỏ lại về diện tích hoặc quy mô."
+    },
+    {
+      "id": "para_063",
+      "original": "predict",
+      "paraphrased": "forecast",
+      "meaningVi": "dự báo",
+      "contextSentence": "Đề: predict future demand → Bài: forecast long-term electricity demand.",
+      "distractors": [
+        "recall",
+        "verify",
+        "dispute"
+      ],
+      "explanationVi": "forecast / project dùng cho thời tiết, kinh tế và xu hướng tương lai."
+    },
+    {
+      "id": "para_064",
+      "original": "check",
+      "paraphrased": "verify",
+      "meaningVi": "kiểm chứng, xác thực",
+      "contextSentence": "Đề: check the identity → Bài: verify the applicant's credentials.",
+      "distractors": [
+        "fabricate",
+        "overlook",
+        "assume"
+      ],
+      "explanationVi": "verify = check the accuracy or truth of something."
+    },
+    {
+      "id": "para_065",
+      "original": "explain",
+      "paraphrased": "clarify",
+      "meaningVi": "làm rõ, giải thích",
+      "contextSentence": "Đề: explain the policy → Bài: clarify the updated refund terms.",
+      "distractors": [
+        "obscure",
+        "complicate",
+        "conceal"
+      ],
+      "explanationVi": "clarify = make something easier to understand."
+    },
+    {
+      "id": "para_066",
+      "original": "hide",
+      "paraphrased": "conceal",
+      "meaningVi": "che giấu",
+      "contextSentence": "Đề: hide the real cost → Bài: conceal hidden administrative fees.",
+      "distractors": [
+        "disclose",
+        "reveal",
+        "highlight"
+      ],
+      "explanationVi": "conceal / obscure trái nghĩa với reveal / disclose."
+    },
+    {
+      "id": "para_067",
+      "original": "tell the public",
+      "paraphrased": "disclose",
+      "meaningVi": "tiết lộ, công bố",
+      "contextSentence": "Đề: tell customers about data use → Bài: disclose how personal data is shared.",
+      "distractors": [
+        "withhold",
+        "conceal",
+        "censor"
+      ],
+      "explanationVi": "disclose thường đi với information, findings, risks."
+    },
+    {
+      "id": "para_068",
+      "original": "depend on",
+      "paraphrased": "rely on",
+      "meaningVi": "phụ thuộc vào",
+      "contextSentence": "Đề: depend on imported oil → Bài: rely heavily on foreign fuel supplies.",
+      "distractors": [
+        "dispense with",
+        "object to",
+        "diverge from"
+      ],
+      "explanationVi": "rely on / hinge on là cách paraphrase phổ biến của depend on."
+    },
+    {
+      "id": "para_069",
+      "original": "agree with",
+      "paraphrased": "endorse",
+      "meaningVi": "tán thành, ủng hộ",
+      "contextSentence": "Đề: experts agree with the plan → Bài: specialists publicly endorse the proposal.",
+      "distractors": [
+        "oppose",
+        "critique",
+        "repeal"
+      ],
+      "explanationVi": "endorse mang nghĩa ủng hộ công khai một kế hoạch hoặc sản phẩm."
+    },
+    {
+      "id": "para_070",
+      "original": "disagree with",
+      "paraphrased": "challenge",
+      "meaningVi": "phản bác, đặt nghi vấn",
+      "contextSentence": "Đề: scientists disagree with the claim → Bài: researchers challenge the assumption.",
+      "distractors": [
+        "confirm",
+        "validate",
+        "adopt"
+      ],
+      "explanationVi": "challenge a claim/theory = đặt nghi vấn, phản bác lập luận."
+    },
+    {
+      "id": "para_071",
+      "original": "criticise",
+      "paraphrased": "condemn",
+      "meaningVi": "chỉ trích mạnh mẽ, lên án",
+      "contextSentence": "Đề: groups criticised the decision → Bài: campaigners condemned the ruling.",
+      "distractors": [
+        "praise",
+        "approve",
+        "subsidise"
+      ],
+      "explanationVi": "condemn mạnh hơn criticise, thường dùng trong bài báo học thuật."
+    },
+    {
+      "id": "para_072",
+      "original": "praise",
+      "paraphrased": "commend",
+      "meaningVi": "khen ngợi, tán dương",
+      "contextSentence": "Đề: judges praised the design → Bài: the panel commended the innovative layout.",
+      "distractors": [
+        "reprimand",
+        "dismiss",
+        "fault"
+      ],
+      "explanationVi": "commend = praise formally (khen ngợi trang trọng)."
+    },
+    {
+      "id": "para_073",
+      "original": "give money to help",
+      "paraphrased": "subsidise",
+      "meaningVi": "trợ cấp tài chính",
+      "contextSentence": "Đề: government pays part of rail fares → Bài: state funding subsidises commuter rail.",
+      "distractors": [
+        "tax",
+        "penalise",
+        "privatise"
+      ],
+      "explanationVi": "subsidise = hỗ trợ tài chính để giảm giá thành cho người dân/doanh nghiệp."
+    },
+    {
+      "id": "para_074",
+      "original": "punish financially",
+      "paraphrased": "penalise",
+      "meaningVi": "xử phạt (tài chính/quy định)",
+      "contextSentence": "Đề: fine polluting factories → Bài: penalise firms that exceed emission caps.",
+      "distractors": [
+        "reward",
+        "exempt",
+        "compensate"
+      ],
+      "explanationVi": "penalise = impose a penalty on."
+    },
+    {
+      "id": "para_075",
+      "original": "make up for",
+      "paraphrased": "compensate for",
+      "meaningVi": "bù đắp cho",
+      "contextSentence": "Đề: make up for lost revenue → Bài: compensate for declining ticket sales.",
+      "distractors": [
+        "aggravate",
+        "forfeit",
+        "neglect"
+      ],
+      "explanationVi": "compensate for / offset = bù đắp tổn thất."
+    },
+    {
+      "id": "para_076",
+      "original": "copy",
+      "paraphrased": "replicate",
+      "meaningVi": "tái lập, sao chép (thí nghiệm)",
+      "contextSentence": "Đề: copy the experiment → Bài: replicate the clinical trial independently.",
+      "distractors": [
+        "invalidate",
+        "abandon",
+        "alter"
+      ],
+      "explanationVi": "replicate rất phổ biến trong Reading khoa học khi lặp lại thí nghiệm."
+    },
+    {
+      "id": "para_077",
+      "original": "get",
+      "paraphrased": "obtain",
+      "meaningVi": "thu được, đạt được",
+      "contextSentence": "Đề: get permission first → Bài: obtain prior written consent.",
+      "distractors": [
+        "surrender",
+        "forfeit",
+        "withhold"
+      ],
+      "explanationVi": "obtain / acquire là từ học thuật thay cho get."
+    },
+    {
+      "id": "para_078",
+      "original": "give",
+      "paraphrased": "provide",
+      "meaningVi": "cung cấp",
+      "contextSentence": "Đề: give free meals → Bài: provide complimentary lunches to delegates.",
+      "distractors": [
+        "deprive",
+        "withhold",
+        "consume"
+      ],
+      "explanationVi": "provide / supply / furnish thường thay cho give."
+    },
+    {
+      "id": "para_079",
+      "original": "share out",
+      "paraphrased": "allocate",
+      "meaningVi": "phân bổ (nguồn lực/ngân sách)",
+      "contextSentence": "Đề: share out the budget → Bài: allocate funds across regional hospitals.",
+      "distractors": [
+        "hoard",
+        "deplete",
+        "withdraw"
+      ],
+      "explanationVi": "allocate resources/funding là collocation Band 8.0 chuẩn."
+    },
+    {
+      "id": "para_080",
+      "original": "use up",
+      "paraphrased": "consume",
+      "meaningVi": "tiêu thụ",
+      "contextSentence": "Đề: use up too much power → Bài: consume excessive electricity.",
+      "distractors": [
+        "generate",
+        "conserve",
+        "store"
+      ],
+      "explanationVi": "consume dùng cho năng lượng, thực phẩm và tài nguyên."
+    },
+    {
+      "id": "para_081",
+      "original": "save",
+      "paraphrased": "conserve",
+      "meaningVi": "bảo tồn, tiết kiệm (tài nguyên)",
+      "contextSentence": "Đề: save water in summer → Bài: conserve freshwater reserves during droughts.",
+      "distractors": [
+        "squander",
+        "deplete",
+        "pollute"
+      ],
+      "explanationVi": "conserve khác với save money; conserve dùng cho năng lượng, thiên nhiên, di sản."
+    },
+    {
+      "id": "para_082",
+      "original": "waste",
+      "paraphrased": "squander",
+      "meaningVi": "lãng phí (tiền bạc/cơ hội)",
+      "contextSentence": "Đề: waste public money → Bài: squander taxpayer funds on unused venues.",
+      "distractors": [
+        "invest",
+        "conserve",
+        "accumulate"
+      ],
+      "explanationVi": "squander = waste carelessly (lãng phí một cách vô ích)."
+    },
+    {
+      "id": "para_083",
+      "original": "protect",
+      "paraphrased": "safeguard",
+      "meaningVi": "bảo vệ an toàn",
+      "contextSentence": "Đề: protect endangered birds → Bài: safeguard vulnerable wetland species.",
+      "distractors": [
+        "jeopardise",
+        "exploit",
+        "neglect"
+      ],
+      "explanationVi": "safeguard / preserve = bảo vệ khỏi nguy cơ tổn hại."
+    },
+    {
+      "id": "para_084",
+      "original": "put in danger",
+      "paraphrased": "jeopardise",
+      "meaningVi": "đặt vào tình thế nguy hiểm",
+      "contextSentence": "Đề: put the project in danger → Bài: jeopardise the long-term viability of the scheme.",
+      "distractors": [
+        "bolster",
+        "secure",
+        "stabilise"
+      ],
+      "explanationVi": "jeopardise / threaten = gây nguy hại cho sự thành công hay an toàn."
+    },
+    {
+      "id": "para_085",
+      "original": "damage",
+      "paraphrased": "impair",
+      "meaningVi": "làm suy yếu, tổn hại chức năng",
+      "contextSentence": "Đề: damage hearing → Bài: impair long-term auditory sensitivity.",
+      "distractors": [
+        "enhance",
+        "restore",
+        "fortify"
+      ],
+      "explanationVi": "impair hay đi với vision, hearing, memory, judgement."
+    },
+    {
+      "id": "para_086",
+      "original": "harm",
+      "paraphrased": "detrimental to",
+      "meaningVi": "gây hại cho",
+      "contextSentence": "Đề: harm marine life → Bài: prove detrimental to coastal ecosystems.",
+      "distractors": [
+        "conducive to",
+        "beneficial to",
+        "indifferent to"
+      ],
+      "explanationVi": "be detrimental to = be harmful to (tính từ Band 8.0)."
+    },
+    {
+      "id": "para_087",
+      "original": "helpful for",
+      "paraphrased": "conducive to",
+      "meaningVi": "tạo điều kiện thuận lợi cho",
+      "contextSentence": "Đề: helpful for studying → Bài: a quiet atmosphere conducive to concentration.",
+      "distractors": [
+        "hostile to",
+        "detrimental to",
+        "irrelevant to"
+      ],
+      "explanationVi": "conducive to = tạo môi trường thuận lợi cho việc gì xảy ra."
+    },
+    {
+      "id": "para_088",
+      "original": "very big",
+      "paraphrased": "immense",
+      "meaningVi": "khổng lồ, to lớn",
+      "contextSentence": "Đề: a very big impact → Bài: an immense economic transformation.",
+      "distractors": [
+        "negligible",
+        "marginal",
+        "trivial"
+      ],
+      "explanationVi": "immense / vast / colossal thay cho very big."
+    },
+    {
+      "id": "para_089",
+      "original": "very small",
+      "paraphrased": "negligible",
+      "meaningVi": "không đáng kể",
+      "contextSentence": "Đề: a very small difference → Bài: a negligible gap between the two groups.",
+      "distractors": [
+        "substantial",
+        "dramatic",
+        "pronounced"
+      ],
+      "explanationVi": "negligible = quá nhỏ nên gần như không ảnh hưởng."
+    },
+    {
+      "id": "para_090",
+      "original": "very important",
+      "paraphrased": "paramount",
+      "meaningVi": "tối quan trọng",
+      "contextSentence": "Đề: safety is very important → Bài: passenger safety is of paramount importance.",
+      "distractors": [
+        "secondary",
+        "trivial",
+        "optional"
+      ],
+      "explanationVi": "of paramount importance = quan trọng hàng đầu."
+    },
+    {
+      "id": "para_091",
+      "original": "not important",
+      "paraphrased": "trivial",
+      "meaningVi": "tầm thường, nhỏ nhặt",
+      "contextSentence": "Đề: a minor, unimportant detail → Bài: a trivial administrative oversight.",
+      "distractors": [
+        "pivotal",
+        "vital",
+        "crucial"
+      ],
+      "explanationVi": "trivial = of little value or importance."
+    },
+    {
+      "id": "para_092",
+      "original": "very clear",
+      "paraphrased": "evident",
+      "meaningVi": "rõ ràng, hiển nhiên",
+      "contextSentence": "Đề: it is very clear that → Bài: it is readily evident from the data.",
+      "distractors": [
+        "ambiguous",
+        "obscure",
+        "dubious"
+      ],
+      "explanationVi": "evident / apparent / unmistakable = rõ ràng."
+    },
+    {
+      "id": "para_093",
+      "original": "unclear",
+      "paraphrased": "ambiguous",
+      "meaningVi": "mơ hồ, nhiều cách hiểu",
+      "contextSentence": "Đề: unclear instructions → Bài: ambiguous wording in the contract.",
+      "distractors": [
+        "explicit",
+        "precise",
+        "unambiguous"
+      ],
+      "explanationVi": "ambiguous = có thể hiểu theo nhiều nghĩa khác nhau."
+    },
+    {
+      "id": "para_094",
+      "original": "surprising",
+      "paraphrased": "unanticipated",
+      "meaningVi": "bất ngờ, ngoài dự kiến",
+      "contextSentence": "Đề: a surprising outcome → Bài: an unanticipated surge in enrolments.",
+      "distractors": [
+        "predictable",
+        "routine",
+        "expected"
+      ],
+      "explanationVi": "unanticipated / unforeseen = không lường trước được."
+    },
+    {
+      "id": "para_095",
+      "original": "expected",
+      "paraphrased": "predictable",
+      "meaningVi": "có thể dự đoán trước",
+      "contextSentence": "Đề: an expected reaction → Bài: a predictable seasonal decline.",
+      "distractors": [
+        "erratic",
+        "spontaneous",
+        "bizarre"
+      ],
+      "explanationVi": "predictable trái nghĩa với erratic / unpredictable."
+    },
+    {
+      "id": "para_096",
+      "original": "unusual",
+      "paraphrased": "unprecedented",
+      "meaningVi": "chưa từng có tiền lệ",
+      "contextSentence": "Đề: unusually high heat → Bài: unprecedented summer temperatures.",
+      "distractors": [
+        "customary",
+        "conventional",
+        "ordinary"
+      ],
+      "explanationVi": "unprecedented = chưa từng xảy ra trước đây trong lịch sử."
+    },
+    {
+      "id": "para_097",
+      "original": "normal / traditional",
+      "paraphrased": "conventional",
+      "meaningVi": "truyền thống, thông thường",
+      "contextSentence": "Đề: normal farming → Bài: conventional open-field agriculture.",
+      "distractors": [
+        "radical",
+        "experimental",
+        "novel"
+      ],
+      "explanationVi": "conventional đối lập với innovative / alternative / experimental."
+    },
+    {
+      "id": "para_098",
+      "original": "new",
+      "paraphrased": "novel",
+      "meaningVi": "mới lạ, độc đáo",
+      "contextSentence": "Đề: a new method → Bài: a novel approach to battery recycling.",
+      "distractors": [
+        "outdated",
+        "archaic",
+        "familiar"
+      ],
+      "explanationVi": "novel (adj) trong Reading nghĩa là mới mẻ và sáng tạo, không phải tiểu thuyết!"
+    },
+    {
+      "id": "para_099",
+      "original": "old-fashioned",
+      "paraphrased": "obsolete",
+      "meaningVi": "lỗi thời, không còn dùng nữa",
+      "contextSentence": "Đề: old-fashioned tools → Bài: equipment rendered obsolete by automation.",
+      "distractors": [
+        "cutting-edge",
+        "modern",
+        "contemporary"
+      ],
+      "explanationVi": "obsolete = lỗi thời vì đã có thứ mới hơn thay thế."
+    },
+    {
+      "id": "para_100",
+      "original": "modern / latest",
+      "paraphrased": "cutting-edge",
+      "meaningVi": "tiên tiến nhất",
+      "contextSentence": "Đề: the latest medical devices → Bài: cutting-edge diagnostic imaging.",
+      "distractors": [
+        "obsolete",
+        "rudimentary",
+        "antiquated"
+      ],
+      "explanationVi": "cutting-edge / state-of-the-art = công nghệ tân tiến bậc nhất."
+    },
+    {
+      "id": "para_101",
+      "original": "basic / simple",
+      "paraphrased": "rudimentary",
+      "meaningVi": "sơ khai, cơ bản ban đầu",
+      "contextSentence": "Đề: basic stone tools → Bài: rudimentary agricultural implements.",
+      "distractors": [
+        "sophisticated",
+        "intricate",
+        "elaborate"
+      ],
+      "explanationVi": "rudimentary hay gặp trong bài khảo cổ và lịch sử công nghệ."
+    },
+    {
+      "id": "para_102",
+      "original": "complex / advanced",
+      "paraphrased": "sophisticated",
+      "meaningVi": "tinh vi, phức tạp",
+      "contextSentence": "Đề: advanced tracking software → Bài: sophisticated satellite telemetry.",
+      "distractors": [
+        "primitive",
+        "simplistic",
+        "crude"
+      ],
+      "explanationVi": "sophisticated mô tả hệ thống, công nghệ hoặc lập luận tinh vi."
+    },
+    {
+      "id": "para_103",
+      "original": "likely to happen",
+      "paraphrased": "inevitable",
+      "meaningVi": "không thể tránh khỏi",
+      "contextSentence": "Đề: change is bound to happen → Bài: structural shifts appear inevitable.",
+      "distractors": [
+        "improbable",
+        "avoidable",
+        "unlikely"
+      ],
+      "explanationVi": "inevitable = chắc chắn sẽ xảy ra, không tránh khỏi."
+    },
+    {
+      "id": "para_104",
+      "original": "possible to do",
+      "paraphrased": "viable",
+      "meaningVi": "khả thi, có thể tồn tại",
+      "contextSentence": "Đề: a practical alternative → Bài: an economically viable renewable option.",
+      "distractors": [
+        "unfeasible",
+        "futile",
+        "impractical"
+      ],
+      "explanationVi": "viable / feasible = có khả năng triển khai thành công trong thực tế."
+    },
+    {
+      "id": "para_105",
+      "original": "impossible / pointless",
+      "paraphrased": "futile",
+      "meaningVi": "vô ích, không mang lại kết quả",
+      "contextSentence": "Đề: pointless efforts → Bài: a futile attempt to halt coastal erosion.",
+      "distractors": [
+        "fruitful",
+        "productive",
+        "effective"
+      ],
+      "explanationVi": "futile = incapable of producing any useful result."
+    },
+    {
+      "id": "para_106",
+      "original": "rich / wealthy",
+      "paraphrased": "affluent",
+      "meaningVi": "giàu có, sung túc",
+      "contextSentence": "Đề: wealthy neighbourhoods → Bài: affluent suburban districts.",
+      "distractors": [
+        "impoverished",
+        "deprived",
+        "destitute"
+      ],
+      "explanationVi": "affluent đối lập với impoverished / low-income."
+    },
+    {
+      "id": "para_107",
+      "original": "poor",
+      "paraphrased": "impoverished",
+      "meaningVi": "nghèo khó, thiếu thốn",
+      "contextSentence": "Đề: poor rural communities → Bài: impoverished agricultural regions.",
+      "distractors": [
+        "prosperous",
+        "affluent",
+        "privileged"
+      ],
+      "explanationVi": "impoverished / underprivileged là cách diễn đạt học thuật của poor."
+    },
+    {
+      "id": "para_108",
+      "original": "fair / equal",
+      "paraphrased": "equitable",
+      "meaningVi": "công bằng, bình đẳng",
+      "contextSentence": "Đề: fair access to healthcare → Bài: equitable distribution of medical services.",
+      "distractors": [
+        "biased",
+        "disproportionate",
+        "arbitrary"
+      ],
+      "explanationVi": "equitable = fair and impartial."
+    },
+    {
+      "id": "para_109",
+      "original": "unfair",
+      "paraphrased": "biased",
+      "meaningVi": "thiên vị, không khách quan",
+      "contextSentence": "Đề: an unfair sample → Bài: a heavily biased online survey.",
+      "distractors": [
+        "impartial",
+        "objective",
+        "neutral"
+      ],
+      "explanationVi": "biased trái nghĩa với objective / impartial."
+    },
+    {
+      "id": "para_110",
+      "original": "strict",
+      "paraphrased": "stringent",
+      "meaningVi": "nghiêm ngặt, khắt khe",
+      "contextSentence": "Đề: strict safety rules → Bài: stringent environmental regulations.",
+      "distractors": [
+        "lenient",
+        "lax",
+        "permissive"
+      ],
+      "explanationVi": "stringent collocate cực tốt với regulations, standards, criteria."
+    },
+    {
+      "id": "para_111",
+      "original": "relaxed / not strict",
+      "paraphrased": "lenient",
+      "meaningVi": "khoan dung, lỏng lẻo",
+      "contextSentence": "Đề: light punishments → Bài: lenient sentencing for first-time offenders.",
+      "distractors": [
+        "stringent",
+        "harsh",
+        "rigid"
+      ],
+      "explanationVi": "lenient = ít khắt khe hơn dự kiến (thường dùng trong luật/giáo dục)."
+    },
+    {
+      "id": "para_112",
+      "original": "mandatory / required",
+      "paraphrased": "compulsory",
+      "meaningVi": "bắt buộc",
+      "contextSentence": "Đề: required attendance → Bài: compulsory laboratory induction.",
+      "distractors": [
+        "voluntary",
+        "optional",
+        "discretionary"
+      ],
+      "explanationVi": "compulsory / mandatory đối lập với optional / voluntary."
+    },
+    {
+      "id": "para_113",
+      "original": "optional",
+      "paraphrased": "voluntary",
+      "meaningVi": "tự nguyện, không bắt buộc",
+      "contextSentence": "Đề: optional extra sessions → Bài: voluntary peer-mentoring workshops.",
+      "distractors": [
+        "mandatory",
+        "obligatory",
+        "enforced"
+      ],
+      "explanationVi": "voluntary = tham gia tự nguyện."
+    },
+    {
+      "id": "para_114",
+      "original": "quick / sudden",
+      "paraphrased": "abrupt",
+      "meaningVi": "đột ngột, bất thình lình",
+      "contextSentence": "Đề: a sudden stop → Bài: an abrupt termination of funding.",
+      "distractors": [
+        "gradual",
+        "steady",
+        "prolonged"
+      ],
+      "explanationVi": "abrupt = sudden and unexpected."
+    },
+    {
+      "id": "para_115",
+      "original": "slow and steady",
+      "paraphrased": "gradual",
+      "meaningVi": "từ từ, dần dần",
+      "contextSentence": "Đề: a slow improvement → Bài: a gradual recovery in fish stocks.",
+      "distractors": [
+        "abrupt",
+        "drastic",
+        "instant"
+      ],
+      "explanationVi": "gradual đối lập với abrupt / sudden / drastic."
+    },
+    {
+      "id": "para_116",
+      "original": "lasting a short time",
+      "paraphrased": "transient",
+      "meaningVi": "tạm thời, thoáng qua",
+      "contextSentence": "Đề: short-lived economic boost → Bài: a transient spike in tourist spending.",
+      "distractors": [
+        "permanent",
+        "enduring",
+        "perpetual"
+      ],
+      "explanationVi": "transient / temporary đối lập với lasting / permanent."
+    },
+    {
+      "id": "para_117",
+      "original": "lasting a long time",
+      "paraphrased": "enduring",
+      "meaningVi": "lâu dài, bền bỉ",
+      "contextSentence": "Đề: lasting cultural influence → Bài: an enduring architectural legacy.",
+      "distractors": [
+        "fleeting",
+        "brief",
+        "ephemeral"
+      ],
+      "explanationVi": "enduring = continuing for a very long time."
+    },
+    {
+      "id": "para_118",
+      "original": "everywhere",
+      "paraphrased": "ubiquitous",
+      "meaningVi": "có mặt ở khắp mọi nơi",
+      "contextSentence": "Đề: smartphones are everywhere → Bài: mobile devices have become ubiquitous.",
+      "distractors": [
+        "scarce",
+        "rare",
+        "localised"
+      ],
+      "explanationVi": "ubiquitous = omnipresent = phổ biến khắp nơi."
+    },
+    {
+      "id": "para_119",
+      "original": "very common",
+      "paraphrased": "prevalent",
+      "meaningVi": "thịnh hành, phổ biến",
+      "contextSentence": "Đề: a common misconception → Bài: a prevalent belief among consumers.",
+      "distractors": [
+        "rare",
+        "uncommon",
+        "exceptional"
+      ],
+      "explanationVi": "prevalent thường dùng cho bệnh tật, quan niệm, hiện tượng xã hội."
+    },
+    {
+      "id": "para_120",
+      "original": "very rare",
+      "paraphrased": "scarce",
+      "meaningVi": "khan hiếm",
+      "contextSentence": "Đề: clean water is rare → Bài: potable water remains scarce in arid zones.",
+      "distractors": [
+        "abundant",
+        "plentiful",
+        "ample"
+      ],
+      "explanationVi": "scarce đối lập với abundant / plentiful."
+    },
+    {
+      "id": "para_121",
+      "original": "plenty of",
+      "paraphrased": "abundant",
+      "meaningVi": "dồi dào, phong phú",
+      "contextSentence": "Đề: plenty of sunlight → Bài: abundant solar radiation throughout summer.",
+      "distractors": [
+        "scarce",
+        "meagre",
+        "insufficient"
+      ],
+      "explanationVi": "abundant = existing in large quantities."
+    },
+    {
+      "id": "para_122",
+      "original": "only in one place",
+      "paraphrased": "localised",
+      "meaningVi": "cục bộ, giới hạn ở một vùng",
+      "contextSentence": "Đề: flooding only in one district → Bài: localised flash flooding near the coast.",
+      "distractors": [
+        "widespread",
+        "global",
+        "universal"
+      ],
+      "explanationVi": "localised đối lập với widespread / nationwide."
+    },
+    {
+      "id": "para_123",
+      "original": "people living in a place",
+      "paraphrased": "residents",
+      "meaningVi": "cư dân địa phương",
+      "contextSentence": "Đề: people who live nearby → Bài: local residents opposed the night flights.",
+      "distractors": [
+        "tourists",
+        "commuters",
+        "visitors"
+      ],
+      "explanationVi": "residents / inhabitants thường thay cho people living in the area."
+    },
+    {
+      "id": "para_124",
+      "original": "people walking",
+      "paraphrased": "pedestrians",
+      "meaningVi": "người đi bộ",
+      "contextSentence": "Đề: safer streets for walkers → Bài: wider crossings for pedestrians.",
+      "distractors": [
+        "motorists",
+        "passengers",
+        "cyclists"
+      ],
+      "explanationVi": "pedestrians là từ bắt buộc cho Listening/Reading về giao thông."
+    },
+    {
+      "id": "para_125",
+      "original": "car drivers",
+      "paraphrased": "motorists",
+      "meaningVi": "người lái ô tô",
+      "contextSentence": "Đề: drivers face higher tolls → Bài: motorists must pay a congestion charge.",
+      "distractors": [
+        "pedestrians",
+        "tenants",
+        "spectators"
+      ],
+      "explanationVi": "motorists thay cho car drivers trong văn bản quy hoạch giao thông."
+    },
+    {
+      "id": "para_126",
+      "original": "people travelling to work",
+      "paraphrased": "commuters",
+      "meaningVi": "người đi làm hằng ngày",
+      "contextSentence": "Đề: workers taking the train → Bài: daily rail commuters from the suburbs.",
+      "distractors": [
+        "tourists",
+        "retirees",
+        "expatriates"
+      ],
+      "explanationVi": "commuters = người đi làm/đi học di chuyển đều đặn mỗi ngày."
+    },
+    {
+      "id": "para_127",
+      "original": "shoppers / buyers",
+      "paraphrased": "consumers",
+      "meaningVi": "người tiêu dùng",
+      "contextSentence": "Đề: shoppers choose eco labels → Bài: environmentally conscious consumers.",
+      "distractors": [
+        "suppliers",
+        "regulators",
+        "shareholders"
+      ],
+      "explanationVi": "consumers dùng rộng trong kinh tế và tiếp thị."
+    },
+    {
+      "id": "para_128",
+      "original": "workers / staff",
+      "paraphrased": "workforce",
+      "meaningVi": "lực lượng lao động",
+      "contextSentence": "Đề: training all staff → Bài: upskilling an ageing workforce.",
+      "distractors": [
+        "management",
+        "clientele",
+        "electorate"
+      ],
+      "explanationVi": "workforce / personnel = toàn thể nhân viên hoặc lực lượng lao động."
+    },
+    {
+      "id": "para_129",
+      "original": "people taking part",
+      "paraphrased": "participants",
+      "meaningVi": "người tham gia (nghiên cứu/sự kiện)",
+      "contextSentence": "Đề: people in the study → Bài: survey participants aged 18 to 65.",
+      "distractors": [
+        "observers",
+        "evaluators",
+        "sponsors"
+      ],
+      "explanationVi": "participants / respondents thay cho people in the study/survey."
+    },
+    {
+      "id": "para_130",
+      "original": "native people / species",
+      "paraphrased": "indigenous",
+      "meaningVi": "bản địa",
+      "contextSentence": "Đề: native plant species → Bài: indigenous flora adapted to poor soils.",
+      "distractors": [
+        "invasive",
+        "imported",
+        "exotic"
+      ],
+      "explanationVi": "indigenous / native đối lập với non-native / invasive."
+    },
+    {
+      "id": "para_131",
+      "original": "foreign / harmful species",
+      "paraphrased": "invasive",
+      "meaningVi": "xâm lấn (sinh vật ngoại lai)",
+      "contextSentence": "Đề: harmful foreign weeds → Bài: invasive plant species crowding out native grass.",
+      "distractors": [
+        "endemic",
+        "native",
+        "indigenous"
+      ],
+      "explanationVi": "invasive species là thuật ngữ quen thuộc trong Reading sinh học."
+    },
+    {
+      "id": "para_132",
+      "original": "farming",
+      "paraphrased": "agriculture",
+      "meaningVi": "nông nghiệp",
+      "contextSentence": "Đề: modern farming methods → Bài: intensive commercial agriculture.",
+      "distractors": [
+        "manufacturing",
+        "forestry",
+        "mining"
+      ],
+      "explanationVi": "agriculture / cultivation thay cho farming."
+    },
+    {
+      "id": "para_133",
+      "original": "city areas",
+      "paraphrased": "urban centres",
+      "meaningVi": "khu vực đô thị",
+      "contextSentence": "Đề: big cities → Bài: densely populated urban centres.",
+      "distractors": [
+        "rural hamlets",
+        "wilderness",
+        "pastures"
+      ],
+      "explanationVi": "urban / metropolitan đối lập với rural / pastoral."
+    },
+    {
+      "id": "para_134",
+      "original": "countryside",
+      "paraphrased": "rural regions",
+      "meaningVi": "vùng nông thôn",
+      "contextSentence": "Đề: clinics in the countryside → Bài: healthcare access in remote rural regions.",
+      "distractors": [
+        "metropolitan hubs",
+        "inner cities",
+        "industrial estates"
+      ],
+      "explanationVi": "rural = thuộc vùng nông thôn."
+    },
+    {
+      "id": "para_135",
+      "original": "weather over decades",
+      "paraphrased": "climate",
+      "meaningVi": "khí hậu",
+      "contextSentence": "Đề: long-term weather shifts → Bài: shifting regional climate patterns.",
+      "distractors": [
+        "forecast",
+        "humidity",
+        "breeze"
+      ],
+      "explanationVi": "climate là thời tiết dài hạn; không nhầm với weather ngắn hạn."
+    },
+    {
+      "id": "para_136",
+      "original": "lack of rain",
+      "paraphrased": "drought",
+      "meaningVi": "hạn hán",
+      "contextSentence": "Đề: months without rain → Bài: a prolonged seasonal drought.",
+      "distractors": [
+        "deluge",
+        "monsoon",
+        "humidity"
+      ],
+      "explanationVi": "drought = thiếu mưa kéo dài gây khô hạn."
+    },
+    {
+      "id": "para_137",
+      "original": "dirty / polluted",
+      "paraphrased": "contaminated",
+      "meaningVi": "bị nhiễm bẩn, ô nhiễm",
+      "contextSentence": "Đề: polluted groundwater → Bài: aquifers contaminated by industrial runoff.",
+      "distractors": [
+        "purified",
+        "sterile",
+        "filtered"
+      ],
+      "explanationVi": "contaminated dùng cho nước, đất, thực phẩm bị nhiễm độc/vi khuẩn."
+    },
+    {
+      "id": "para_138",
+      "original": "clean and safe to drink",
+      "paraphrased": "potable",
+      "meaningVi": "uống được, đạt chuẩn nước sạch",
+      "contextSentence": "Đề: safe drinking water → Bài: access to reliable potable water supplies.",
+      "distractors": [
+        "saline",
+        "stagnant",
+        "brackish"
+      ],
+      "explanationVi": "potable water = safe drinking water."
+    },
+    {
+      "id": "para_139",
+      "original": "rubbish / trash",
+      "paraphrased": "refuse",
+      "meaningVi": "rác thải",
+      "contextSentence": "Đề: household rubbish collection → Bài: municipal refuse management.",
+      "distractors": [
+        "compost",
+        "resource",
+        "commodity"
+      ],
+      "explanationVi": "refuse (n. /ˈrefjuːs/) = rác thải sinh hoạt."
+    },
+    {
+      "id": "para_140",
+      "original": "energy from sun/wind",
+      "paraphrased": "renewables",
+      "meaningVi": "năng lượng tái tạo",
+      "contextSentence": "Đề: wind and solar power → Bài: rapid investment in renewables.",
+      "distractors": [
+        "fossil fuels",
+        "petrochemicals",
+        "coal reserves"
+      ],
+      "explanationVi": "renewables = renewable energy sources."
+    },
+    {
+      "id": "para_141",
+      "original": "illness / disease",
+      "paraphrased": "ailment",
+      "meaningVi": "chứng bệnh, bệnh lý",
+      "contextSentence": "Đề: minor health problems → Bài: common respiratory ailments.",
+      "distractors": [
+        "remedy",
+        "immunity",
+        "vitality"
+      ],
+      "explanationVi": "ailment / disorder / malady thường thay cho illness."
+    },
+    {
+      "id": "para_142",
+      "original": "long-lasting disease",
+      "paraphrased": "chronic condition",
+      "meaningVi": "bệnh mãn tính",
+      "contextSentence": "Đề: lifelong health issues → Bài: managing chronic cardiovascular conditions.",
+      "distractors": [
+        "acute injury",
+        "brief infection",
+        "mild sprain"
+      ],
+      "explanationVi": "chronic (mãn tính) đối lập với acute (cấp tính)."
+    },
+    {
+      "id": "para_143",
+      "original": "cure / treatment",
+      "paraphrased": "remedy",
+      "meaningVi": "phương thuốc, biện pháp khắc phục",
+      "contextSentence": "Đề: a simple treatment → Bài: an effective dietary remedy.",
+      "distractors": [
+        "symptom",
+        "diagnosis",
+        "pathogen"
+      ],
+      "explanationVi": "remedy dùng cho cả y học lẫn giải pháp xã hội."
+    },
+    {
+      "id": "para_144",
+      "original": "prevent illness",
+      "paraphrased": "prophylactic",
+      "meaningVi": "phòng ngừa (bệnh)",
+      "contextSentence": "Đề: preventive medicine → Bài: prophylactic vaccination campaigns.",
+      "distractors": [
+        "curative",
+        "terminal",
+        "contagious"
+      ],
+      "explanationVi": "prophylactic / preventive = phòng bệnh hơn chữa bệnh."
+    },
+    {
+      "id": "para_145",
+      "original": "tiredness",
+      "paraphrased": "fatigue",
+      "meaningVi": "sự mệt mỏi, kiệt sức",
+      "contextSentence": "Đề: feeling very tired → Bài: acute mental fatigue among shift workers.",
+      "distractors": [
+        "vigour",
+        "alertness",
+        "stamina"
+      ],
+      "explanationVi": "fatigue là từ học thuật chuẩn cho tiredness."
+    },
+    {
+      "id": "para_146",
+      "original": "eating habits",
+      "paraphrased": "dietary intake",
+      "meaningVi": "chế độ ăn / lượng nạp dinh dưỡng",
+      "contextSentence": "Đề: what people eat daily → Bài: participants' overall dietary intake.",
+      "distractors": [
+        "metabolic rate",
+        "physical exertion",
+        "sleep hygiene"
+      ],
+      "explanationVi": "dietary intake / nutrition thay cho eating habits."
+    },
+    {
+      "id": "para_147",
+      "original": "yearly",
+      "paraphrased": "annual",
+      "meaningVi": "hằng năm",
+      "contextSentence": "Đề: once a year → Bài: the university's annual sustainability audit.",
+      "distractors": [
+        "quarterly",
+        "biennial",
+        "monthly"
+      ],
+      "explanationVi": "annual = yearly; lưu ý biennial = 2 năm một lần."
+    },
+    {
+      "id": "para_148",
+      "original": "every two years",
+      "paraphrased": "biennial",
+      "meaningVi": "hai năm một lần",
+      "contextSentence": "Đề: held every two years → Bài: a biennial international architecture summit.",
+      "distractors": [
+        "annual",
+        "monthly",
+        "weekly"
+      ],
+      "explanationVi": "biennial = mỗi 2 năm (bẫy nghe/đọc rất hay gặp ở Section 2–3)."
+    },
+    {
+      "id": "para_149",
+      "original": "happening at the same time",
+      "paraphrased": "simultaneous",
+      "meaningVi": "đồng thời",
+      "contextSentence": "Đề: two events at the same time → Bài: simultaneous translations across six halls.",
+      "distractors": [
+        "consecutive",
+        "delayed",
+        "isolated"
+      ],
+      "explanationVi": "simultaneous = concurrent = diễn ra cùng lúc."
+    },
+    {
+      "id": "para_150",
+      "original": "one after another",
+      "paraphrased": "consecutive",
+      "meaningVi": "liên tiếp",
+      "contextSentence": "Đề: three years in a row → Bài: three consecutive years of record heat.",
+      "distractors": [
+        "intermittent",
+        "simultaneous",
+        "sporadic"
+      ],
+      "explanationVi": "consecutive = in a row (liên tục không ngắt quãng)."
+    },
+    {
+      "id": "para_151",
+      "original": "stopping and starting",
+      "paraphrased": "intermittent",
+      "meaningVi": "ngắt quãng, không liên tục",
+      "contextSentence": "Đề: power goes on and off → Bài: intermittent wind electricity generation.",
+      "distractors": [
+        "continuous",
+        "uninterrupted",
+        "constant"
+      ],
+      "explanationVi": "intermittent rất phổ biến trong bài năng lượng gió/mặt trời."
+    },
+    {
+      "id": "para_152",
+      "original": "by accident",
+      "paraphrased": "inadvertently",
+      "meaningVi": "vô tình, không cố ý",
+      "contextSentence": "Đề: accidentally deleted data → Bài: inadvertently erased crucial files.",
+      "distractors": [
+        "deliberately",
+        "intentionally",
+        "purposely"
+      ],
+      "explanationVi": "inadvertently = accidentally = unintentionally."
+    },
+    {
+      "id": "para_153",
+      "original": "on purpose",
+      "paraphrased": "deliberately",
+      "meaningVi": "cố ý, có chủ đích",
+      "contextSentence": "Đề: designed on purpose → Bài: deliberately engineered to resist corrosion.",
+      "distractors": [
+        "accidentally",
+        "inadvertently",
+        "randomly"
+      ],
+      "explanationVi": "deliberately = intentionally."
+    },
+    {
+      "id": "para_154",
+      "original": "nearly / almost",
+      "paraphrased": "virtually",
+      "meaningVi": "gần như hoàn toàn",
+      "contextSentence": "Đề: almost zero emissions → Bài: virtually carbon-neutral operations.",
+      "distractors": [
+        "barely",
+        "partly",
+        "scarcely"
+      ],
+      "explanationVi": "virtually = nearly / practically."
+    },
+    {
+      "id": "para_155",
+      "original": "mostly / mainly",
+      "paraphrased": "predominantly",
+      "meaningVi": "chủ yếu, phần lớn",
+      "contextSentence": "Đề: mainly young adults → Bài: a workforce composed predominantly of graduates.",
+      "distractors": [
+        "rarely",
+        "marginally",
+        "exclusively"
+      ],
+      "explanationVi": "predominantly = mainly / largely."
+    },
+    {
+      "id": "para_156",
+      "original": "only / purely",
+      "paraphrased": "exclusively",
+      "meaningVi": "độc quyền, chỉ dành riêng",
+      "contextSentence": "Đề: only for members → Bài: facilities reserved exclusively for subscribers.",
+      "distractors": [
+        "broadly",
+        "partly",
+        "commonly"
+      ],
+      "explanationVi": "exclusively là từ khóa cực nhạy trong câu hỏi TFNG!"
+    },
+    {
+      "id": "para_157",
+      "original": "partly",
+      "paraphrased": "to a certain extent",
+      "meaningVi": "ở một mức độ nào đó",
+      "contextSentence": "Đề: partly responsible → Bài: responsible to a certain extent for the delay.",
+      "distractors": [
+        "entirely",
+        "solely",
+        "altogether"
+      ],
+      "explanationVi": "to a certain extent / partially = một phần, không tuyệt đối."
+    },
+    {
+      "id": "para_158",
+      "original": "despite",
+      "paraphrased": "notwithstanding",
+      "meaningVi": "mặc dù, bất chấp",
+      "contextSentence": "Đề: despite high costs → Bài: notwithstanding steep upfront expenses.",
+      "distractors": [
+        "because of",
+        "owing to",
+        "in light of"
+      ],
+      "explanationVi": "notwithstanding = in spite of / despite (văn phong học thuật cao)."
+    },
+    {
+      "id": "para_159",
+      "original": "as a result",
+      "paraphrased": "consequently",
+      "meaningVi": "hệ quả là, do đó",
+      "contextSentence": "Đề: so fewer people drove → Bài: consequently, inner-city traffic fell.",
+      "distractors": [
+        "nevertheless",
+        "conversely",
+        "meanwhile"
+      ],
+      "explanationVi": "consequently / accordingly diễn tả kết quả trực tiếp."
+    },
+    {
+      "id": "para_160",
+      "original": "on the opposite side",
+      "paraphrased": "conversely",
+      "meaningVi": "ngược lại",
+      "contextSentence": "Đề: on the other hand → Bài: conversely, rural birth rates continued to dip.",
+      "distractors": [
+        "similarly",
+        "moreover",
+        "therefore"
+      ],
+      "explanationVi": "conversely dùng để nêu chiều hướng hoàn toàn ngược lại."
+    }
+  ],
+  "passages": [
+    {
+      "id": "rd_a01",
+      "code": "A01",
+      "title": "Urban Trees Cool Cities More Than Expected, Yet Limits Remain",
+      "topic": "Urban & Environment",
+      "paragraphs": [
+        "Across rapidly expanding metropolitan areas, dark asphalt roads and dense concrete towers intensify the urban heat island effect, leaving city centres noticeably warmer than surrounding rural landscapes. A large international study recently revealed that street trees counteract extreme summer heat far more effectively than researchers had previously anticipated.",
+        "Urban greenery lowers neighbourhood temperatures through two complementary mechanisms. First, a dense tree canopy shields pavements and facades from direct solar radiation. Second, leaves release moisture into the air via transpiration, drawing thermal energy away from nearby streets. However, cooling performance varies sharply by climate: trees deliver strong relief in dry, temperate cities, whereas their evaporative benefit declines significantly in hot, humid conditions.",
+        "Despite these encouraging results, scientists caution against treating tree planting as a standalone solution to escalating global temperatures. Existing urban forests offset only a modest fraction of human-driven warming. Even the most ambitious municipal planting programmes require decades to mature and must therefore be paired with reflective roofs, shaded corridors, and rapid reductions in carbon emissions."
+      ],
+      "highlights": [
+        {
+          "phrase": "urban heat island",
+          "meaningVi": "đảo nhiệt đô thị",
+          "ipa": "/ˌɜːbən ˈhiːt ˌaɪlənd/"
+        },
+        {
+          "phrase": "counteract",
+          "meaningVi": "chống lại, trung hòa (tác động)",
+          "ipa": "/ˌkaʊntərˈækt/"
+        },
+        {
+          "phrase": "anticipated",
+          "meaningVi": "được dự đoán trước",
+          "ipa": "/ænˈtɪsɪpeɪtɪd/"
+        },
+        {
+          "phrase": "canopy",
+          "meaningVi": "tán cây",
+          "ipa": "/ˈkænəpi/"
+        },
+        {
+          "phrase": "transpiration",
+          "meaningVi": "sự thoát hơi nước (ở lá cây)",
+          "ipa": "/ˌtrænspɪˈreɪʃn/"
+        },
+        {
+          "phrase": "temperate",
+          "meaningVi": "ôn đới, ôn hòa",
+          "ipa": "/ˈtempərət/"
+        },
+        {
+          "phrase": "humid",
+          "meaningVi": "ẩm, oi",
+          "ipa": "/ˈhjuːmɪd/"
+        },
+        {
+          "phrase": "escalating",
+          "meaningVi": "leo thang, ngày càng tăng",
+          "ipa": "/ˈeskəleɪtɪŋ/"
+        },
+        {
+          "phrase": "offset",
+          "meaningVi": "bù đắp, bù trừ",
+          "ipa": "/ˈɒfset/"
+        },
+        {
+          "phrase": "ambitious",
+          "meaningVi": "đầy tham vọng, quy mô lớn",
+          "ipa": "/æmˈbɪʃəs/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a01_tf1",
+          "statement": "Recent international research found that urban trees provide greater cooling than scientists had earlier predicted.",
+          "answer": "TRUE",
+          "evidenceQuote": "A large international study recently revealed that street trees counteract extreme summer heat far more effectively than researchers had previously anticipated.",
+          "explanationVi": "Bài đọc khẳng định hiệu quả làm mát của cây xanh đường phố lớn hơn nhiều so với mức các nhà nghiên cứu từng dự đoán (anticipated = predicted)."
+        },
+        {
+          "id": "a01_tf2",
+          "statement": "Tree transpiration cools urban air more effectively in humid climates than in dry temperate regions.",
+          "answer": "FALSE",
+          "evidenceQuote": "trees deliver strong relief in dry, temperate cities, whereas their evaporative benefit declines significantly in hot, humid conditions.",
+          "explanationVi": "Ngược với bài đọc: hiệu quả làm mát bằng thoát hơi nước giảm mạnh trong điều kiện nóng ẩm (humid conditions)."
+        },
+        {
+          "id": "a01_tf3",
+          "statement": "Deciduous tree species provide significantly greater street shade than evergreen species during summer.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "First, a dense tree canopy shields pavements and facades from direct solar radiation.",
+          "explanationVi": "Bài đọc chỉ nhắc đến tán cây dày (dense tree canopy), hoàn toàn không so sánh giữa cây rụng lá (deciduous) và cây thường xanh (evergreen)."
+        },
+        {
+          "id": "a01_tf4",
+          "statement": "Scientists argue that large-scale tree planting alone is insufficient to solve rising urban temperatures.",
+          "answer": "TRUE",
+          "evidenceQuote": "scientists caution against treating tree planting as a standalone solution to escalating global temperatures.",
+          "explanationVi": "Tác giả nhấn mạnh không thể coi trồng cây là giải pháp đơn lẻ (standalone solution) mà cần kết hợp mái phản nhiệt và giảm phát thải."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a01_p1",
+          "questionPhrase": "neutralise severe summer heat",
+          "targetInPassage": "counteract extreme summer heat",
+          "distractors": [
+            "escalating global temperatures",
+            "urban heat island effect",
+            "direct solar radiation"
+          ],
+          "explanationVi": "counteract = neutralise (chống lại, trung hòa); extreme = severe (khắc nghiệt)."
+        },
+        {
+          "id": "a01_p2",
+          "questionPhrase": "expected by researchers earlier",
+          "targetInPassage": "previously anticipated",
+          "distractors": [
+            "delivers strong relief",
+            "rapid reductions",
+            "modest fraction"
+          ],
+          "explanationVi": "previously anticipated đồng nghĩa với expected earlier (đã được dự đoán trước đó)."
+        },
+        {
+          "id": "a01_p3",
+          "questionPhrase": "compensate for only a small part",
+          "targetInPassage": "offset only a modest fraction",
+          "distractors": [
+            "decline significantly",
+            "shield pavements",
+            "require decades to mature"
+          ],
+          "explanationVi": "offset = compensate for (bù đắp); a modest fraction = a small part (một phần nhỏ)."
+        },
+        {
+          "id": "a01_p4",
+          "questionPhrase": "large-scale city tree schemes",
+          "targetInPassage": "ambitious municipal planting programmes",
+          "distractors": [
+            "surrounding rural landscapes",
+            "shaded corridors",
+            "existing urban forests"
+          ],
+          "explanationVi": "ambitious = large-scale; municipal = city; planting programmes = tree schemes."
+        }
+      ]
+    },
+    {
+      "id": "rd_a02",
+      "code": "A02",
+      "title": "Why Screen Time Guidelines Are Moving Beyond Strict Daily Limits",
+      "topic": "Technology & Child Development",
+      "paragraphs": [
+        "For years, paediatric bodies treated digital media as a single monolith, advising parents simply to count the hours children spent facing a screen. Today, mounting developmental research paints a far more multifaceted picture, prompting official advice to diverge sharply from rigid time caps.",
+        "Psychologists emphasise that passive scrolling at midnight affects teenagers very differently from collaborative coding or video calling distant grandparents. While excessive device use can certainly curb physical activity and crowd out sleep or face-to-face play, strict one-size-fits-all bans frequently backfire. Overly controlling restrictions may undermine adolescents' growing sense of autonomy and push unhealthy habits out of sight rather than resolving them.",
+        "Consequently, contemporary guidelines prioritise active parental mediation over blanket prohibition. Instead of policing a stopwatch, adults are encouraged to discuss online content, establish screen-free meal and bedtime routines, and recognise that children closely emulate the digital habits they observe at home. When parents put their own phones away during family conversations, young people develop healthier self-regulation naturally."
+      ],
+      "highlights": [
+        {
+          "phrase": "monolith",
+          "meaningVi": "khối đồng nhất (coi mọi thứ như một)",
+          "ipa": "/ˈmɒnəlɪθ/"
+        },
+        {
+          "phrase": "mounting",
+          "meaningVi": "ngày càng tăng",
+          "ipa": "/ˈmaʊntɪŋ/"
+        },
+        {
+          "phrase": "multifaceted",
+          "meaningVi": "nhiều mặt, đa diện",
+          "ipa": "/ˌmʌltiˈfæsɪtɪd/"
+        },
+        {
+          "phrase": "diverge",
+          "meaningVi": "rẽ khác, tách khỏi",
+          "ipa": "/daɪˈvɜːdʒ/"
+        },
+        {
+          "phrase": "curb",
+          "meaningVi": "kiềm chế, hạn chế",
+          "ipa": "/kɜːb/"
+        },
+        {
+          "phrase": "crowd out",
+          "meaningVi": "chèn lấn, chiếm chỗ",
+          "ipa": "/ˌkraʊd ˈaʊt/"
+        },
+        {
+          "phrase": "one-size-fits-all",
+          "meaningVi": "một kiểu áp dụng cho tất cả",
+          "ipa": "/ˌwʌn saɪz fɪts ˈɔːl/"
+        },
+        {
+          "phrase": "autonomy",
+          "meaningVi": "quyền tự chủ",
+          "ipa": "/ɔːˈtɒnəmi/"
+        },
+        {
+          "phrase": "mediation",
+          "meaningVi": "sự định hướng, can thiệp (của người lớn)",
+          "ipa": "/ˌmiːdiˈeɪʃn/"
+        },
+        {
+          "phrase": "emulate",
+          "meaningVi": "bắt chước, noi theo",
+          "ipa": "/ˈemjuleɪt/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a02_tf1",
+          "statement": "Modern screen time advice still relies primarily on setting a single fixed daily hour limit for all children.",
+          "answer": "FALSE",
+          "evidenceQuote": "Today, mounting developmental research paints a far more multifaceted picture, prompting official advice to diverge sharply from rigid time caps.",
+          "explanationVi": "Khuyến nghị hiện đại đã tách khỏi (diverge sharply from) các giới hạn giờ cứng nhắc áp dụng chung cho mọi trẻ."
+        },
+        {
+          "id": "a02_tf2",
+          "statement": "Excessive screen exposure can reduce the time children spend sleeping and interacting in person.",
+          "answer": "TRUE",
+          "evidenceQuote": "excessive device use can certainly curb physical activity and crowd out sleep or face-to-face play",
+          "explanationVi": "crowd out = chiếm mất thời gian của giấc ngủ và vui chơi trực tiếp (face-to-face play)."
+        },
+        {
+          "id": "a02_tf3",
+          "statement": "Educational video games have been shown to raise teenage mathematics test scores by fifteen percent.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "Psychologists emphasise that passive scrolling at midnight affects teenagers very differently from collaborative coding or video calling distant grandparents.",
+          "explanationVi": "Bài đọc chỉ nêu ví dụ lập trình nhóm và gọi video, không hề đề cập đến trò chơi toán học hay con số 15%."
+        },
+        {
+          "id": "a02_tf4",
+          "statement": "Parents' own phone behaviour influences how children learn to manage their devices.",
+          "answer": "TRUE",
+          "evidenceQuote": "children closely emulate the digital habits they observe at home.",
+          "explanationVi": "Trẻ bắt chước sát sao (emulate) thói quen dùng thiết bị số của cha mẹ ngay trong gia đình."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a02_p1",
+          "questionPhrase": "growing body of evidence",
+          "targetInPassage": "mounting developmental research",
+          "distractors": [
+            "rigid time caps",
+            "family conversations",
+            "blanket prohibition"
+          ],
+          "explanationVi": "mounting = growing (ngày càng tăng); developmental research = evidence về sự phát triển."
+        },
+        {
+          "id": "a02_p2",
+          "questionPhrase": "displace sleep and in-person interaction",
+          "targetInPassage": "crowd out sleep or face-to-face play",
+          "distractors": [
+            "curb physical activity",
+            "policing a stopwatch",
+            "collaborative coding"
+          ],
+          "explanationVi": "crowd out = displace (chèn lấn, đẩy ra); face-to-face play = in-person interaction."
+        },
+        {
+          "id": "a02_p3",
+          "questionPhrase": "uniform restrictions for everyone",
+          "targetInPassage": "one-size-fits-all bans",
+          "distractors": [
+            "active parental mediation",
+            "screen-free meal",
+            "digital habits"
+          ],
+          "explanationVi": "one-size-fits-all = uniform for everyone (đồng loạt một khuôn cho tất cả)."
+        },
+        {
+          "id": "a02_p4",
+          "questionPhrase": "copy the behaviours they witness",
+          "targetInPassage": "emulate the digital habits they observe",
+          "distractors": [
+            "diverge sharply",
+            "undermine adolescents' growing sense",
+            "develop healthier self-regulation"
+          ],
+          "explanationVi": "emulate = copy/imitate (bắt chước); observe = witness (quan sát)."
+        }
+      ]
+    },
+    {
+      "id": "rd_a03",
+      "code": "A03",
+      "title": "Lessons From Australia's Four-Day Work Week Trial",
+      "topic": "Work & Economy",
+      "paragraphs": [
+        "Nearly a century ago, economist John Maynard Keynes predicted that technological progress would deliver a fifteen-hour working week. Although that vision never materialised, rapid advances in artificial intelligence have revived debate over how societies should redistribute future productivity gains equitably rather than allowing automation simply to displace human staff.",
+        "In a recent six-month trial, fifteen Australian organisations grappling with workplace burnout moved to a four-day week without reducing salaries. To gauge whether the model succeeded, researchers tracked revenue, staff attrition, sick leave, and overall absenteeism alongside employee wellbeing surveys. Most participating firms maintained or exceeded previous output by streamlining unnecessary meetings and protecting uninterrupted focus hours.",
+        "Despite overwhelmingly positive feedback from managers and workers alike, researchers urge careful interpretation of the results. Companies volunteering for such pilots are rarely typical of the wider economy, and self-reported wellbeing scores carry a clear risk of bias. Expanding shortened schedules into hospitals, hospitality, and round-the-clock manufacturing will demand far more creative rostering than office trials alone."
+      ],
+      "highlights": [
+        {
+          "phrase": "materialise",
+          "meaningVi": "thành hiện thực",
+          "ipa": "/məˈtɪəriəlaɪz/"
+        },
+        {
+          "phrase": "redistribute",
+          "meaningVi": "phân phối lại",
+          "ipa": "/ˌriːdɪˈstrɪbjuːt/"
+        },
+        {
+          "phrase": "productivity gains",
+          "meaningVi": "mức tăng năng suất",
+          "ipa": "/ˌprɒdʌkˈtɪvəti ɡeɪnz/"
+        },
+        {
+          "phrase": "equitably",
+          "meaningVi": "một cách công bằng",
+          "ipa": "/ˈekwɪtəbli/"
+        },
+        {
+          "phrase": "displace",
+          "meaningVi": "thay thế, đẩy ra khỏi",
+          "ipa": "/dɪsˈpleɪs/"
+        },
+        {
+          "phrase": "grappling with",
+          "meaningVi": "vật lộn với (vấn đề)",
+          "ipa": "/ˈɡræpl wɪð/"
+        },
+        {
+          "phrase": "gauge",
+          "meaningVi": "đánh giá, đo lường",
+          "ipa": "/ɡeɪdʒ/"
+        },
+        {
+          "phrase": "attrition",
+          "meaningVi": "tỷ lệ nhân viên nghỉ việc",
+          "ipa": "/əˈtrɪʃn/"
+        },
+        {
+          "phrase": "absenteeism",
+          "meaningVi": "tình trạng nghỉ làm thường xuyên",
+          "ipa": "/ˌæbsənˈtiːɪzəm/"
+        },
+        {
+          "phrase": "bias",
+          "meaningVi": "sự thiên lệch",
+          "ipa": "/ˈbaɪəs/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a03_tf1",
+          "statement": "Employees participating in the Australian trial had their pay cut by twenty percent in exchange for an extra day off.",
+          "answer": "FALSE",
+          "evidenceQuote": "fifteen Australian organisations grappling with workplace burnout moved to a four-day week without reducing salaries.",
+          "explanationVi": "Sai: các công ty chuyển sang tuần làm việc 4 ngày mà KHÔNG giảm lương (without reducing salaries)."
+        },
+        {
+          "id": "a03_tf2",
+          "statement": "Participating firms preserved output largely by cutting redundant meetings and safeguarding deep-work time.",
+          "answer": "TRUE",
+          "evidenceQuote": "Most participating firms maintained or exceeded previous output by streamlining unnecessary meetings and protecting uninterrupted focus hours.",
+          "explanationVi": "Đúng: streamlining unnecessary meetings = cắt giảm họp thừa; protecting uninterrupted focus hours = bảo vệ giờ làm tập trung."
+        },
+        {
+          "id": "a03_tf3",
+          "statement": "The Australian federal government financed the six-month pilot across all fifteen participating companies.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "In a recent six-month trial, fifteen Australian organisations grappling with workplace burnout moved to a four-day week without reducing salaries.",
+          "explanationVi": "Bài không đề cập đến nguồn tài trợ hay sự tham gia của chính phủ liên bang Úc."
+        },
+        {
+          "id": "a03_tf4",
+          "statement": "Researchers warn that survey responses from voluntary pilot firms may not accurately reflect all industries.",
+          "answer": "TRUE",
+          "evidenceQuote": "Companies volunteering for such pilots are rarely typical of the wider economy, and self-reported wellbeing scores carry a clear risk of bias.",
+          "explanationVi": "Đúng: các công ty tự nguyện hiếm khi đại diện cho toàn nền kinh tế và điểm tự báo cáo có nguy cơ thiên lệch (bias)."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a03_p1",
+          "questionPhrase": "never came about",
+          "targetInPassage": "never materialised",
+          "distractors": [
+            "revived debate",
+            "maintained or exceeded",
+            "risk of bias"
+          ],
+          "explanationVi": "materialise = come about / happen (trở thành hiện thực)."
+        },
+        {
+          "id": "a03_p2",
+          "questionPhrase": "share efficiency improvements fairly",
+          "targetInPassage": "redistribute future productivity gains equitably",
+          "distractors": [
+            "displace human staff",
+            "without reducing salaries",
+            "creative rostering"
+          ],
+          "explanationVi": "redistribute = share; productivity gains = efficiency improvements; equitably = fairly."
+        },
+        {
+          "id": "a03_p3",
+          "questionPhrase": "struggling to deal with employee exhaustion",
+          "targetInPassage": "grappling with workplace burnout",
+          "distractors": [
+            "tracked revenue",
+            "uninterrupted focus hours",
+            "wider economy"
+          ],
+          "explanationVi": "grapple with = struggle to deal with; workplace burnout = employee exhaustion."
+        },
+        {
+          "id": "a03_p4",
+          "questionPhrase": "measure employee turnover",
+          "targetInPassage": "tracked revenue, staff attrition",
+          "distractors": [
+            "shortened schedules",
+            "self-reported wellbeing",
+            "previous output"
+          ],
+          "explanationVi": "staff attrition = employee turnover (tỷ lệ nhân sự nghỉ việc)."
+        }
+      ]
+    },
+    {
+      "id": "rd_a04",
+      "code": "A04",
+      "title": "Ultra-Processed Foods and Bowel Cancer: A Closer Look at the Evidence",
+      "topic": "Health & Nutrition",
+      "paragraphs": [
+        "Headlines frequently link ultra-processed foods to chronic illness, yet earlier epidemiological studies produced inconsistent findings regarding bowel cancer incidence. One explanation is that grouping every packaged food together can mask major nutritional differences between wholegrain breakfast cereals and reconstituted meat products such as sausages or deli slices.",
+        "In a large longitudinal cohort, researchers analysed dietary questionnaires alongside medical records to examine whether swapping just ten percent of ultra-processed intake for minimally processed whole foods altered cancer risk. To verify how accurately the questionnaire could capture real eating habits, a subset of participants also completed detailed multi-day food diaries. Even after statistical models accounted for smoking, exercise, and body mass, higher intake of processed meats showed a clearer association with bowel cancer than total ultra-processed consumption alone.",
+        "Nevertheless, nutrition scientists remind the public to exercise caution when reading dramatic diet headlines. Because observational studies cannot definitively prove cause and effect, gradual shifts toward fibre-rich vegetables, legumes, and unprocessed proteins remain the most sensible preventive strategy."
+      ],
+      "highlights": [
+        {
+          "phrase": "inconsistent",
+          "meaningVi": "không nhất quán",
+          "ipa": "/ˌɪnkənˈsɪstənt/"
+        },
+        {
+          "phrase": "incidence",
+          "meaningVi": "tỷ lệ mắc (ca mới)",
+          "ipa": "/ˈɪnsɪdəns/"
+        },
+        {
+          "phrase": "mask",
+          "meaningVi": "che lấp, che giấu",
+          "ipa": "/mɑːsk/"
+        },
+        {
+          "phrase": "reconstituted",
+          "meaningVi": "được tái chế biến, hoàn nguyên",
+          "ipa": "/riːˈkɒnstɪtjuːtɪd/"
+        },
+        {
+          "phrase": "capture",
+          "meaningVi": "ghi nhận, đo được",
+          "ipa": "/ˈkæptʃə(r)/"
+        },
+        {
+          "phrase": "subset",
+          "meaningVi": "nhóm con",
+          "ipa": "/ˈsʌbset/"
+        },
+        {
+          "phrase": "accounted for",
+          "meaningVi": "tính đến (yếu tố); chiếm (tỷ lệ)",
+          "ipa": "/əˈkaʊnt fɔː(r)/"
+        },
+        {
+          "phrase": "association",
+          "meaningVi": "mối liên hệ (thống kê)",
+          "ipa": "/əˌsəʊsiˈeɪʃn/"
+        },
+        {
+          "phrase": "exercise caution",
+          "meaningVi": "thận trọng",
+          "ipa": "/ˈeksəsaɪz ˈkɔːʃn/"
+        },
+        {
+          "phrase": "cause and effect",
+          "meaningVi": "quan hệ nhân quả",
+          "ipa": "/ˌkɔːz ənd ɪˈfekt/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a04_tf1",
+          "statement": "Previous studies on ultra-processed foods and bowel cancer had always reached identical conclusions.",
+          "answer": "FALSE",
+          "evidenceQuote": "earlier epidemiological studies produced inconsistent findings regarding bowel cancer incidence.",
+          "explanationVi": "Sai: các nghiên cứu trước cho kết quả không nhất quán (inconsistent findings), không hề đồng nhất."
+        },
+        {
+          "id": "a04_tf2",
+          "statement": "A smaller group of volunteers kept multi-day food diaries to check the reliability of the survey.",
+          "answer": "TRUE",
+          "evidenceQuote": "To verify how accurately the questionnaire could capture real eating habits, a subset of participants also completed detailed multi-day food diaries.",
+          "explanationVi": "Đúng: subset of participants = a smaller group of volunteers; verify how accurately = check reliability."
+        },
+        {
+          "id": "a04_tf3",
+          "statement": "Participants who drank sweetened soft drinks faced twice the bowel cancer risk of those who ate sausages.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "higher intake of processed meats showed a clearer association with bowel cancer than total ultra-processed consumption alone.",
+          "explanationVi": "Bài không nhắc đến nước ngọt có đường (sweetened soft drinks) hay tỷ lệ gấp đôi."
+        },
+        {
+          "id": "a04_tf4",
+          "statement": "The researchers state that observational dietary data alone cannot establish direct causation.",
+          "answer": "TRUE",
+          "evidenceQuote": "Because observational studies cannot definitively prove cause and effect",
+          "explanationVi": "Đúng: prove cause and effect = establish direct causation (chứng minh quan hệ nhân quả)."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a04_p1",
+          "questionPhrase": "conflicting research outcomes",
+          "targetInPassage": "inconsistent findings",
+          "distractors": [
+            "chronic illness",
+            "medical records",
+            "preventive strategy"
+          ],
+          "explanationVi": "inconsistent = conflicting (mâu thuẫn, không nhất quán); findings = research outcomes."
+        },
+        {
+          "id": "a04_p2",
+          "questionPhrase": "obscure important nutritional contrasts",
+          "targetInPassage": "mask major nutritional differences",
+          "distractors": [
+            "altered cancer risk",
+            "capture real eating habits",
+            "gradual shifts"
+          ],
+          "explanationVi": "mask = obscure/conceal (che lấp); major = important; differences = contrasts."
+        },
+        {
+          "id": "a04_p3",
+          "questionPhrase": "controlled for lifestyle variables",
+          "targetInPassage": "accounted for smoking, exercise, and body mass",
+          "distractors": [
+            "completed detailed multi-day food diaries",
+            "clearer association",
+            "wholegrain breakfast cereals"
+          ],
+          "explanationVi": "account for = take into account / control for (tính đến yếu tố gây nhiễu)."
+        },
+        {
+          "id": "a04_p4",
+          "questionPhrase": "be wary of sensational news",
+          "targetInPassage": "exercise caution when reading dramatic diet headlines",
+          "distractors": [
+            "definitively prove",
+            "minimally processed whole foods",
+            "reconstituted meat products"
+          ],
+          "explanationVi": "exercise caution = be wary/careful (thận trọng); dramatic headlines = sensational news."
+        }
+      ]
+    },
+    {
+      "id": "rd_a05",
+      "code": "A05",
+      "title": "What Workers Actually Report About AI and Job Losses",
+      "topic": "Technology & Labour Market",
+      "paragraphs": [
+        "Public debate around artificial intelligence has generated intense speculation, with pessimists warning of mass layoffs while optimists promise effortless prosperity. Yet until recently, labour economists lacked solid data capturing how ordinary employees were actually experiencing workplace automation.",
+        "To bridge this gap, a sociologist surveyed thousands of adult workers across multiple industries. Surprisingly, substantial job displacement caused directly by AI remained a rarity: only a tiny minority reported losing a position or having hours cut because of automated software. Far from triggering widespread unemployment, AI tools were mostly used to draft routine emails, summarise reports, or assist with coding tasks.",
+        "Still, the author notes two important caveats. First, any single survey offers only a temporary snapshot of a fast-moving technology. Second, online panels rely partly on self-selected respondents, which can skew estimates. Over the coming decade, automated systems could still render certain entry-level duties obsolete, making it harder for young graduates to climb the first rung of the career ladder."
+      ],
+      "highlights": [
+        {
+          "phrase": "speculation",
+          "meaningVi": "sự suy đoán",
+          "ipa": "/ˌspekjuˈleɪʃn/"
+        },
+        {
+          "phrase": "pessimist",
+          "meaningVi": "người bi quan",
+          "ipa": "/ˈpesɪmɪst/"
+        },
+        {
+          "phrase": "solid data",
+          "meaningVi": "dữ liệu đáng tin cậy",
+          "ipa": "/ˌsɒlɪd ˈdeɪtə/"
+        },
+        {
+          "phrase": "substantial",
+          "meaningVi": "đáng kể, lớn",
+          "ipa": "/səbˈstænʃl/"
+        },
+        {
+          "phrase": "rarity",
+          "meaningVi": "điều hiếm có",
+          "ipa": "/ˈreərəti/"
+        },
+        {
+          "phrase": "widespread",
+          "meaningVi": "phổ biến, lan rộng",
+          "ipa": "/ˈwaɪdspred/"
+        },
+        {
+          "phrase": "snapshot",
+          "meaningVi": "bức tranh tại một thời điểm",
+          "ipa": "/ˈsnæpʃɒt/"
+        },
+        {
+          "phrase": "self-selected",
+          "meaningVi": "tự chọn tham gia (không ngẫu nhiên)",
+          "ipa": "/ˌself sɪˈlektɪd/"
+        },
+        {
+          "phrase": "render",
+          "meaningVi": "khiến cho (trở nên)",
+          "ipa": "/ˈrendə(r)/"
+        },
+        {
+          "phrase": "career ladder",
+          "meaningVi": "nấc thang sự nghiệp",
+          "ipa": "/kəˈrɪə ˌlædə(r)/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a05_tf1",
+          "statement": "The worker survey showed that AI had already caused massive, widespread job losses across most industries.",
+          "answer": "FALSE",
+          "evidenceQuote": "substantial job displacement caused directly by AI remained a rarity: only a tiny minority reported losing a position",
+          "explanationVi": "Sai: việc mất việc quy mô lớn vì AI vẫn còn rất hiếm (remained a rarity), chỉ một nhóm rất nhỏ bị ảnh hưởng."
+        },
+        {
+          "id": "a05_tf2",
+          "statement": "The sociologist acknowledges that a one-off survey only captures conditions at a single point in time.",
+          "answer": "TRUE",
+          "evidenceQuote": "any single survey offers only a temporary snapshot of a fast-moving technology.",
+          "explanationVi": "Đúng: temporary snapshot = bức tranh tại một thời điểm nhất định."
+        },
+        {
+          "id": "a05_tf3",
+          "statement": "Software engineers experienced higher pay rises after adopting AI tools than healthcare staff did.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "AI tools were mostly used to draft routine emails, summarise reports, or assist with coding tasks.",
+          "explanationVi": "Bài chỉ nhắc AI hỗ trợ viết code chứ không hề so sánh mức tăng lương giữa kỹ sư phần mềm và nhân viên y tế."
+        },
+        {
+          "id": "a05_tf4",
+          "statement": "Future automation could make it more difficult for recent graduates to enter professional career paths.",
+          "answer": "TRUE",
+          "evidenceQuote": "automated systems could still render certain entry-level duties obsolete, making it harder for young graduates to climb the first rung of the career ladder.",
+          "explanationVi": "Đúng: AI có thể làm các nhiệm vụ sơ cấp lỗi thời, khiến sinh viên mới ra trường khó bước lên nấc đầu tiên của sự nghiệp."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a05_p1",
+          "questionPhrase": "reliable statistical evidence",
+          "targetInPassage": "solid data",
+          "distractors": [
+            "intense speculation",
+            "mass layoffs",
+            "routine emails"
+          ],
+          "explanationVi": "solid data = reliable evidence / hard data (dữ liệu đáng tin cậy)."
+        },
+        {
+          "id": "a05_p2",
+          "questionPhrase": "major job losses were uncommon",
+          "targetInPassage": "substantial job displacement caused directly by AI remained a rarity",
+          "distractors": [
+            "widespread unemployment",
+            "effortless prosperity",
+            "important caveats"
+          ],
+          "explanationVi": "substantial = major (đáng kể); remained a rarity = was uncommon (vẫn còn hiếm)."
+        },
+        {
+          "id": "a05_p3",
+          "questionPhrase": "voluntary participants who may distort findings",
+          "targetInPassage": "self-selected respondents, which can skew estimates",
+          "distractors": [
+            "adult workers across multiple industries",
+            "temporary snapshot",
+            "tiny minority"
+          ],
+          "explanationVi": "self-selected respondents = voluntary participants; skew estimates = distort findings."
+        },
+        {
+          "id": "a05_p4",
+          "questionPhrase": "make junior tasks outdated",
+          "targetInPassage": "render certain entry-level duties obsolete",
+          "distractors": [
+            "draft routine emails",
+            "bridge this gap",
+            "climb the first rung"
+          ],
+          "explanationVi": "render ... obsolete = make ... outdated (khiến cái gì trở nên lỗi thời)."
+        }
+      ]
+    },
+    {
+      "id": "rd_a06",
+      "code": "A06",
+      "title": "Assisted Evolution and the Race to Save Coral Reefs",
+      "topic": "Environment & Marine Science",
+      "paragraphs": [
+        "Coral reefs cover less than one percent of the ocean floor, yet they sustain roughly a quarter of all marine species. Unfortunately, successive marine heatwaves have triggered severe bleaching events, causing corals to expel the symbiotic algae that supply both their colour and most of their energy.",
+        "In response, marine biologists are trialling a controversial intervention known as assisted evolution. Rather than waiting centuries for natural selection to act, scientists cross-breed heat-tolerant coral colonies from warmer lagoons with vulnerable reef populations and cultivate the resilient offspring in underwater nurseries. Early field deployments along the Great Barrier Reef indicate that selectively bred larvae survive elevated water temperatures markedly better than wild controls.",
+        "Critics nevertheless warn that laboratory-reared corals cannot replace comprehensive climate action. Introducing genetically narrowed stock risks reducing natural diversity and could inadvertently heighten vulnerability to novel pathogens. Most ecologists agree that reef restoration buys precious breathing space, but long-term survival still hinges on curbing global greenhouse gas emissions."
+      ],
+      "highlights": [
+        {
+          "phrase": "bleaching events",
+          "meaningVi": "hiện tượng tẩy trắng san hô",
+          "ipa": "/ˈbliːtʃɪŋ ɪˈvents/"
+        },
+        {
+          "phrase": "symbiotic",
+          "meaningVi": "cộng sinh",
+          "ipa": "/ˌsɪmbaɪˈɒtɪk/"
+        },
+        {
+          "phrase": "assisted evolution",
+          "meaningVi": "tiến hóa có hỗ trợ",
+          "ipa": "/əˈsɪstɪd ˌiːvəˈluːʃn/"
+        },
+        {
+          "phrase": "heat-tolerant",
+          "meaningVi": "chịu nhiệt tốt",
+          "ipa": "/ˈhiːt ˌtɒlərənt/"
+        },
+        {
+          "phrase": "resilient",
+          "meaningVi": "kiên cường, có sức chống chịu",
+          "ipa": "/rɪˈzɪliənt/"
+        },
+        {
+          "phrase": "inadvertently",
+          "meaningVi": "vô tình, không cố ý",
+          "ipa": "/ˌɪnədˈvɜːtəntli/"
+        },
+        {
+          "phrase": "pathogens",
+          "meaningVi": "mầm bệnh",
+          "ipa": "/ˈpæθədʒənz/"
+        },
+        {
+          "phrase": "hinges on",
+          "meaningVi": "phụ thuộc hoàn toàn vào",
+          "ipa": "/ˈhɪndʒɪz ɒn/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a06_tf1",
+          "statement": "Coral reefs occupy a tiny fraction of the seabed while supporting a disproportionately large share of ocean life.",
+          "answer": "TRUE",
+          "evidenceQuote": "Coral reefs cover less than one percent of the ocean floor, yet they sustain roughly a quarter of all marine species.",
+          "explanationVi": "Đúng: chiếm chưa đến 1% đáy biển nhưng nuôi dưỡng khoảng 1/4 tổng số loài sinh vật biển."
+        },
+        {
+          "id": "a06_tf2",
+          "statement": "Selectively bred coral larvae showed lower survival rates in warm water than wild corals.",
+          "answer": "FALSE",
+          "evidenceQuote": "selectively bred larvae survive elevated water temperatures markedly better than wild controls.",
+          "explanationVi": "Sai: ấu trùng san hô lai chọn lọc sống sót tốt hơn rõ rệt (markedly better) trong nước ấm so với nhóm đối chứng tự nhiên."
+        },
+        {
+          "id": "a06_tf3",
+          "statement": "Assisted evolution programmes are currently cheaper to operate than traditional coastal fishing bans.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "marine biologists are trialling a controversial intervention known as assisted evolution.",
+          "explanationVi": "Bài không đề cập đến chi phí vận hành hay so sánh với lệnh cấm đánh bắt cá ven bờ."
+        },
+        {
+          "id": "a06_tf4",
+          "statement": "Some experts fear that narrowing coral genetic diversity could make reefs more susceptible to new diseases.",
+          "answer": "TRUE",
+          "evidenceQuote": "Introducing genetically narrowed stock risks reducing natural diversity and could inadvertently heighten vulnerability to novel pathogens.",
+          "explanationVi": "Đúng: novel pathogens = new diseases (mầm bệnh mới); heighten vulnerability = make more susceptible."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a06_p1",
+          "questionPhrase": "approximately twenty-five percent of ocean wildlife",
+          "targetInPassage": "roughly a quarter of all marine species",
+          "distractors": [
+            "less than one percent",
+            "warmer lagoons",
+            "wild controls"
+          ],
+          "explanationVi": "roughly a quarter = approximately 25%; marine species = ocean wildlife."
+        },
+        {
+          "id": "a06_p2",
+          "questionPhrase": "accidentally increase susceptibility to new diseases",
+          "targetInPassage": "inadvertently heighten vulnerability to novel pathogens",
+          "distractors": [
+            "expel the symbiotic algae",
+            "cultivate the resilient offspring",
+            "buys precious breathing space"
+          ],
+          "explanationVi": "inadvertently = accidentally; heighten vulnerability = increase susceptibility; novel pathogens = new diseases."
+        },
+        {
+          "id": "a06_p3",
+          "questionPhrase": "provides valuable extra time",
+          "targetInPassage": "buys precious breathing space",
+          "distractors": [
+            "wait centuries",
+            "curbing global greenhouse gas emissions",
+            "early field deployments"
+          ],
+          "explanationVi": "buy breathing space = tranh thủ thêm thời gian quý báu."
+        },
+        {
+          "id": "a06_p4",
+          "questionPhrase": "depends crucially upon cutting emissions",
+          "targetInPassage": "hinges on curbing global greenhouse gas emissions",
+          "distractors": [
+            "comprehensive climate action",
+            "natural selection",
+            "elevated water temperatures"
+          ],
+          "explanationVi": "hinge on = depend crucially upon; curb = cut/limit."
+        }
+      ]
+    },
+    {
+      "id": "rd_a07",
+      "code": "A07",
+      "title": "Sleep Deprivation and the Hidden Cost to Cognitive Agility",
+      "topic": "Health & Neuroscience",
+      "paragraphs": [
+        "Modern work cultures frequently glorify long hours and minimal rest, yet neuroscientists warn that chronic sleep deprivation silently erodes human judgement. Even losing ninety minutes of sleep per night over a single working week impairs prefrontal cortex activity, diminishing memory consolidation, emotional regulation, and creative problem-solving.",
+        "Alarmingly, sleep-deprived individuals are notoriously poor judges of their own decline. In controlled laboratory experiments, volunteers restricted to six hours of nightly rest reported feeling only mildly fatigued after ten days, even though their reaction times had deteriorated to levels comparable with staying awake for twenty-four hours straight. Caffeine temporarily masks drowsiness by blocking adenosine receptors, but it cannot replicate the cellular repair and metabolic waste clearance that occur exclusively during deep slow-wave sleep.",
+        "Public health researchers argue that treating rest as a personal indulgence rather than a biological necessity carries steep economic costs. Organisations that discourage late-night emails and schedule flexible shift rotations consistently report fewer safety incidents, stronger decision accuracy, and lower long-term burnout."
+      ],
+      "highlights": [
+        {
+          "phrase": "sleep deprivation",
+          "meaningVi": "tình trạng thiếu ngủ",
+          "ipa": "/sliːp ˌdeprɪˈveɪʃn/"
+        },
+        {
+          "phrase": "erodes",
+          "meaningVi": "làm xói mòn, suy giảm dần",
+          "ipa": "/ɪˈrəʊdz/"
+        },
+        {
+          "phrase": "impairs",
+          "meaningVi": "làm suy yếu, tổn hại",
+          "ipa": "/ɪmˈpeəz/"
+        },
+        {
+          "phrase": "memory consolidation",
+          "meaningVi": "quá trình củng cố trí nhớ",
+          "ipa": "/ˈmeməri kənˌsɒlɪˈdeɪʃn/"
+        },
+        {
+          "phrase": "notoriously",
+          "meaningVi": "khét tiếng, nổi tiếng theo nghĩa xấu",
+          "ipa": "/nəʊˈtɔːriəsli/"
+        },
+        {
+          "phrase": "deteriorated",
+          "meaningVi": "suy giảm, xấu đi rõ rệt",
+          "ipa": "/dɪˈtɪəriəreɪtɪd/"
+        },
+        {
+          "phrase": "masks",
+          "meaningVi": "che lấp tạm thời",
+          "ipa": "/mɑːsks/"
+        },
+        {
+          "phrase": "indulgence",
+          "meaningVi": "sự nuông chiều bản thân",
+          "ipa": "/ɪnˈdʌldʒəns/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a07_tf1",
+          "statement": "People who regularly sleep only six hours a night accurately recognise how severely their reaction speed has dropped.",
+          "answer": "FALSE",
+          "evidenceQuote": "volunteers restricted to six hours of nightly rest reported feeling only mildly fatigued after ten days, even though their reaction times had deteriorated to levels comparable with staying awake for twenty-four hours straight.",
+          "explanationVi": "Sai: người thiếu ngủ đánh giá rất kém sự suy giảm của chính mình, chỉ thấy hơi mệt dù tốc độ phản xạ đã giảm nặng."
+        },
+        {
+          "id": "a07_tf2",
+          "statement": "Caffeine hides feelings of sleepiness but does not perform the restorative biological work of deep sleep.",
+          "answer": "TRUE",
+          "evidenceQuote": "Caffeine temporarily masks drowsiness by blocking adenosine receptors, but it cannot replicate the cellular repair and metabolic waste clearance that occur exclusively during deep slow-wave sleep.",
+          "explanationVi": "Đúng: caffeine chỉ che lấp cơn buồn ngủ (masks drowsiness), không thay thế được quá trình phục hồi tế bào trong giấc ngủ sâu."
+        },
+        {
+          "id": "a07_tf3",
+          "statement": "Older adults require significantly more slow-wave sleep each night than university-aged students.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "metabolic waste clearance that occur exclusively during deep slow-wave sleep.",
+          "explanationVi": "Bài đọc không so sánh nhu cầu giấc ngủ sâu giữa người lớn tuổi và sinh viên."
+        },
+        {
+          "id": "a07_tf4",
+          "statement": "Companies that curb after-hours messaging tend to experience better workplace safety records.",
+          "answer": "TRUE",
+          "evidenceQuote": "Organisations that discourage late-night emails and schedule flexible shift rotations consistently report fewer safety incidents",
+          "explanationVi": "Đúng: discourage late-night emails = hạn chế nhắn tin/email ngoài giờ; fewer safety incidents = an toàn lao động tốt hơn."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a07_p1",
+          "questionPhrase": "gradually weakens decision-making ability",
+          "targetInPassage": "silently erodes human judgement",
+          "distractors": [
+            "minimal rest",
+            "emotional regulation",
+            "flexible shift rotations"
+          ],
+          "explanationVi": "erode = gradually weaken (làm xói mòn); human judgement = decision-making ability."
+        },
+        {
+          "id": "a07_p2",
+          "questionPhrase": "worsened to a degree similar to",
+          "targetInPassage": "deteriorated to levels comparable with",
+          "distractors": [
+            "mildly fatigued",
+            "biological necessity",
+            "steep economic costs"
+          ],
+          "explanationVi": "deteriorate = worsen; comparable with = similar to."
+        },
+        {
+          "id": "a07_p3",
+          "questionPhrase": "hides tiredness for a short period",
+          "targetInPassage": "temporarily masks drowsiness",
+          "distractors": [
+            "cellular repair",
+            "personal indulgence",
+            "lower long-term burnout"
+          ],
+          "explanationVi": "temporarily = for a short period; mask = hide; drowsiness = tiredness/sleepiness."
+        },
+        {
+          "id": "a07_p4",
+          "questionPhrase": "incurs heavy financial consequences",
+          "targetInPassage": "carries steep economic costs",
+          "distractors": [
+            "discourage late-night emails",
+            "controlled laboratory experiments",
+            "stronger decision accuracy"
+          ],
+          "explanationVi": "carry steep economic costs = incur heavy financial consequences."
+        }
+      ]
+    },
+    {
+      "id": "rd_a08",
+      "code": "A08",
+      "title": "Vertical Farming in Megacities: Promise and Practical Constraints",
+      "topic": "Urban Planning & Agriculture",
+      "paragraphs": [
+        "As urban populations swell and unpredictable droughts disrupt open-field harvests, vertical farming has attracted billions in venture capital. Inside converted warehouses, stacked trays of leafy greens grow under tuned LED lighting using closed-loop hydroponic systems that consume up to ninety-five percent less water than conventional agriculture while eliminating chemical runoff.",
+        "Because produce is harvested just kilometres from supermarkets, vertical farms slash refrigerated freight emissions and guarantee year-round supply regardless of seasonal storms. Leafy crops such as basil, spinach, and lettuce thrive in these sterile enclosures, delivering crisp textures and remarkably long shelf lives without synthetic pesticides.",
+        "Yet steep electricity bills remain the sector's Achilles' heel. Replicating natural sunlight artificially demands substantial power, making energy-intensive staple crops like wheat, rice, and maize economically unviable indoors. Until grids transition overwhelmingly to cheap renewable energy, agronomists view vertical farms not as a replacement for broadacre farmland, but as a resilient complement supplying fresh greens to dense metropolitan hubs."
+      ],
+      "highlights": [
+        {
+          "phrase": "hydroponic",
+          "meaningVi": "thủy canh",
+          "ipa": "/ˌhaɪdrəˈpɒnɪk/"
+        },
+        {
+          "phrase": "runoff",
+          "meaningVi": "dòng chảy tràn mang hóa chất",
+          "ipa": "/ˈrʌnɒf/"
+        },
+        {
+          "phrase": "freight",
+          "meaningVi": "vận chuyển hàng hóa",
+          "ipa": "/freɪt/"
+        },
+        {
+          "phrase": "sterile",
+          "meaningVi": "vô trùng, sạch khuẩn",
+          "ipa": "/ˈsteraɪl/"
+        },
+        {
+          "phrase": "synthetic",
+          "meaningVi": "tổng hợp, nhân tạo",
+          "ipa": "/sɪnˈθetɪk/"
+        },
+        {
+          "phrase": "Achilles' heel",
+          "meaningVi": "điểm yếu chí tử (gót chân Asin)",
+          "ipa": "/əˌkɪliːz ˈhiːl/"
+        },
+        {
+          "phrase": "staple crops",
+          "meaningVi": "cây lương thực thiết yếu",
+          "ipa": "/ˈsteɪpl krɒps/"
+        },
+        {
+          "phrase": "unviable",
+          "meaningVi": "không khả thi về mặt kinh tế",
+          "ipa": "/ʌnˈvaɪəbl/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a08_tf1",
+          "statement": "Closed-loop indoor hydroponic farms require dramatically less water than traditional outdoor farming.",
+          "answer": "TRUE",
+          "evidenceQuote": "closed-loop hydroponic systems that consume up to ninety-five percent less water than conventional agriculture",
+          "explanationVi": "Đúng: tiêu thụ ít hơn tới 95% lượng nước so với nông nghiệp truyền thống."
+        },
+        {
+          "id": "a08_tf2",
+          "statement": "Vertical farms can currently grow staple grains such as wheat and rice at a lower cost than open fields.",
+          "answer": "FALSE",
+          "evidenceQuote": "making energy-intensive staple crops like wheat, rice, and maize economically unviable indoors.",
+          "explanationVi": "Sai: chi phí điện quá cao khiến việc trồng lúa mì, gạo, ngô trong nhà không khả thi về mặt kinh tế (economically unviable)."
+        },
+        {
+          "id": "a08_tf3",
+          "statement": "Singapore currently operates more commercial vertical farms than any other Asian city.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "supplying fresh greens to dense metropolitan hubs.",
+          "explanationVi": "Bài đọc nhắc đến các đô thị đông đúc nói chung, không hề đề cập đến Singapore."
+        },
+        {
+          "id": "a08_tf4",
+          "statement": "Agronomists generally expect vertical farming to supplement rather than fully replace traditional farmland.",
+          "answer": "TRUE",
+          "evidenceQuote": "agronomists view vertical farms not as a replacement for broadacre farmland, but as a resilient complement",
+          "explanationVi": "Đúng: coi nông trại thẳng đứng là phần bổ sung bền vững (resilient complement) chứ không thay thế hoàn toàn đất nông nghiệp truyền thống."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a08_p1",
+          "questionPhrase": "drastically cut transport pollution",
+          "targetInPassage": "slash refrigerated freight emissions",
+          "distractors": [
+            "eliminating chemical runoff",
+            "year-round supply",
+            "converted warehouses"
+          ],
+          "explanationVi": "slash = drastically cut; freight emissions = transport pollution."
+        },
+        {
+          "id": "a08_p2",
+          "questionPhrase": "the industry's most serious weakness",
+          "targetInPassage": "the sector's Achilles' heel",
+          "distractors": [
+            "venture capital",
+            "resilient complement",
+            "sterile enclosures"
+          ],
+          "explanationVi": "Achilles' heel là thành ngữ học thuật chỉ điểm yếu nghiêm trọng nhất."
+        },
+        {
+          "id": "a08_p3",
+          "questionPhrase": "not financially practical",
+          "targetInPassage": "economically unviable",
+          "distractors": [
+            "energy-intensive",
+            "broadacre farmland",
+            "tuned LED lighting"
+          ],
+          "explanationVi": "economically unviable = not financially practical/feasible."
+        },
+        {
+          "id": "a08_p4",
+          "questionPhrase": "basic food grains",
+          "targetInPassage": "staple crops",
+          "distractors": [
+            "leafy greens",
+            "synthetic pesticides",
+            "seasonal storms"
+          ],
+          "explanationVi": "staple crops = cây lương thực chủ yếu như lúa mì, lúa gạo, ngô."
+        }
+      ]
+    },
+    {
+      "id": "rd_a09",
+      "code": "A09",
+      "title": "Unravelling Fast Fashion: Can Circular Textiles Scale Up?",
+      "topic": "Economy & Sustainability",
+      "paragraphs": [
+        "Over the past two decades, global clothing production has roughly doubled while the average number of times a garment is worn before being discarded has plummeted. Fast-fashion retailers accelerate turnover through rapid micro-seasons, enticing shoppers with rock-bottom prices made possible by synthetic polyester fibres and tightly squeezed overseas supply chains.",
+        "This linear take-make-waste model carries an immense ecological toll. Textile dyeing contaminates freshwater rivers, synthetic garments shed microfibres during every wash, and less than one percent of discarded apparel is currently recycled into new clothing. Most donated garments are downcycled into insulation rags or exported to overstretched markets in developing economies.",
+        "Transitioning toward a circular textile economy requires redesigning apparel from the outset. Chemical recycling plants can now separate blended cotton-polyester fabrics into virgin-quality fibres, yet operating costs remain far higher than producing fresh petroleum-based yarn. Economists therefore contend that voluntary brand pledges will fall short unless governments enact extended producer responsibility laws that tax disposable overproduction and reward repairable, durable design."
+      ],
+      "highlights": [
+        {
+          "phrase": "plummeted",
+          "meaningVi": "giảm mạnh đột ngột",
+          "ipa": "/ˈplʌmɪtɪd/"
+        },
+        {
+          "phrase": "enticing",
+          "meaningVi": "lôi cuốn, dụ dỗ",
+          "ipa": "/ɪnˈtaɪsɪŋ/"
+        },
+        {
+          "phrase": "ecological toll",
+          "meaningVi": "cái giá phải trả về mặt sinh thái",
+          "ipa": "/ˌiːkəˈlɒdʒɪkl təʊl/"
+        },
+        {
+          "phrase": "contaminates",
+          "meaningVi": "làm ô nhiễm",
+          "ipa": "/kənˈtæmɪneɪts/"
+        },
+        {
+          "phrase": "downcycled",
+          "meaningVi": "tái chế hạ cấp (thành sản phẩm giá trị thấp hơn)",
+          "ipa": "/ˈdaʊnsaɪkld/"
+        },
+        {
+          "phrase": "circular",
+          "meaningVi": "tuần hoàn",
+          "ipa": "/ˈsɜːkjələ(r)/"
+        },
+        {
+          "phrase": "pledges",
+          "meaningVi": "cam kết, lời hứa",
+          "ipa": "/ˈpledʒɪz/"
+        },
+        {
+          "phrase": "enact",
+          "meaningVi": "ban hành (luật)",
+          "ipa": "/ɪˈnækt/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a09_tf1",
+          "statement": "People today tend to wear each item of clothing fewer times before throwing it away than they did twenty years ago.",
+          "answer": "TRUE",
+          "evidenceQuote": "the average number of times a garment is worn before being discarded has plummeted.",
+          "explanationVi": "Đúng: số lần mặc trung bình trước khi bỏ đi đã giảm mạnh (plummeted)."
+        },
+        {
+          "id": "a09_tf2",
+          "statement": "Roughly half of all discarded garments are currently recycled back into new clothes.",
+          "answer": "FALSE",
+          "evidenceQuote": "less than one percent of discarded apparel is currently recycled into new clothing.",
+          "explanationVi": "Sai: chưa đến 1% (less than one percent) quần áo bỏ đi được tái chế thành quần áo mới."
+        },
+        {
+          "id": "a09_tf3",
+          "statement": "European fashion brands have already agreed to eliminate synthetic polyester entirely by 2035.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "voluntary brand pledges will fall short unless governments enact extended producer responsibility laws",
+          "explanationVi": "Bài không đề cập đến thỏa thuận của các hãng châu Âu hay mốc năm 2035."
+        },
+        {
+          "id": "a09_tf4",
+          "statement": "Economists believe legal regulation is needed because voluntary corporate promises alone are insufficient.",
+          "answer": "TRUE",
+          "evidenceQuote": "Economists therefore contend that voluntary brand pledges will fall short unless governments enact extended producer responsibility laws",
+          "explanationVi": "Đúng: voluntary brand pledges will fall short = cam kết tự nguyện là chưa đủ; cần luật trách nhiệm nhà sản xuất."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a09_p1",
+          "questionPhrase": "dropped dramatically",
+          "targetInPassage": "has plummeted",
+          "distractors": [
+            "roughly doubled",
+            "accelerate turnover",
+            "fall short"
+          ],
+          "explanationVi": "plummet = drop dramatically (giảm lao dốc)."
+        },
+        {
+          "id": "a09_p2",
+          "questionPhrase": "severe environmental damage",
+          "targetInPassage": "immense ecological toll",
+          "distractors": [
+            "rock-bottom prices",
+            "rapid micro-seasons",
+            "virgin-quality fibres"
+          ],
+          "explanationVi": "immense ecological toll = cái giá/tổn thất sinh thái khổng lồ."
+        },
+        {
+          "id": "a09_p3",
+          "questionPhrase": "pollutes clean river systems",
+          "targetInPassage": "contaminates freshwater rivers",
+          "distractors": [
+            "shed microfibres",
+            "overstretched markets",
+            "insulation rags"
+          ],
+          "explanationVi": "contaminate = pollute (làm ô nhiễm)."
+        },
+        {
+          "id": "a09_p4",
+          "questionPhrase": "pass binding legislation",
+          "targetInPassage": "enact extended producer responsibility laws",
+          "distractors": [
+            "voluntary brand pledges",
+            "chemical recycling plants",
+            "disposable overproduction"
+          ],
+          "explanationVi": "enact ... laws = pass legislation (ban hành luật)."
+        }
+      ]
+    },
+    {
+      "id": "rd_a10",
+      "code": "A10",
+      "title": "Bilingualism, Executive Control, and Lifelong Brain Plasticity",
+      "topic": "Education & Linguistics",
+      "paragraphs": [
+        "During the early twentieth century, many educators mistakenly assumed that raising children with two languages would cause mental confusion and delay academic progress. Modern neuroimaging has decisively overturned that assumption, revealing that juggling two linguistic systems continuously exercises the brain's executive control network.",
+        "Whenever a fluent bilingual speaks, both languages remain simultaneously active in the mind. Selecting the appropriate vocabulary while inhibiting interference from the non-target language strengthens attentional switching and working memory. Although bilingual toddlers sometimes display slightly smaller single-language vocabularies initially, their combined conceptual knowledge matches monolingual peers and their early gap soon disappears.",
+        "Even more striking are findings from clinical neurology. Several large hospital cohorts suggest that lifelong active bilinguals experience the onset of dementia symptoms roughly four to five years later than monolinguals with comparable levels of brain pathology. Researchers emphasise that bilingualism does not prevent physical ageing of the brain, but instead builds cognitive reserve—allowing neural pathways to compensate effectively when damage accumulates."
+      ],
+      "highlights": [
+        {
+          "phrase": "overturned",
+          "meaningVi": "lật ngược, bác bỏ hoàn toàn",
+          "ipa": "/ˌəʊvəˈtɜːnd/"
+        },
+        {
+          "phrase": "executive control",
+          "meaningVi": "chức năng điều hành (của não bộ)",
+          "ipa": "/ɪɡˈzekjətɪv kənˈtrəʊl/"
+        },
+        {
+          "phrase": "simultaneously",
+          "meaningVi": "đồng thời, cùng lúc",
+          "ipa": "/ˌsɪmlˈteɪniəsli/"
+        },
+        {
+          "phrase": "inhibiting",
+          "meaningVi": "ức chế, ngăn chặn",
+          "ipa": "/ɪnˈhɪbɪtɪŋ/"
+        },
+        {
+          "phrase": "monolingual",
+          "meaningVi": "đơn ngữ (chỉ dùng một ngôn ngữ)",
+          "ipa": "/ˌmɒnəˈlɪŋɡwəl/"
+        },
+        {
+          "phrase": "onset",
+          "meaningVi": "sự khởi phát (bệnh tật)",
+          "ipa": "/ˈɒnset/"
+        },
+        {
+          "phrase": "pathology",
+          "meaningVi": "bệnh lý, tổn thương bệnh học",
+          "ipa": "/pəˈθɒlədʒi/"
+        },
+        {
+          "phrase": "cognitive reserve",
+          "meaningVi": "dự trữ nhận thức",
+          "ipa": "/ˈkɒɡnətɪv rɪˈzɜːv/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a10_tf1",
+          "statement": "Early twentieth-century educators widely believed that bilingual upbringing boosted children's academic clarity.",
+          "answer": "FALSE",
+          "evidenceQuote": "During the early twentieth century, many educators mistakenly assumed that raising children with two languages would cause mental confusion and delay academic progress.",
+          "explanationVi": "Sai: trước đây nhiều nhà giáo dục lầm tưởng song ngữ gây rối loạn tư duy và làm chậm tiến độ học tập."
+        },
+        {
+          "id": "a10_tf2",
+          "statement": "When a bilingual person speaks one language, the other language completely shuts down in the brain.",
+          "answer": "FALSE",
+          "evidenceQuote": "Whenever a fluent bilingual speaks, both languages remain simultaneously active in the mind.",
+          "explanationVi": "Sai: cả hai ngôn ngữ vẫn đồng thời hoạt động (simultaneously active) trong não."
+        },
+        {
+          "id": "a10_tf3",
+          "statement": "Learning a third language in middle age produces twice the dementia delay of lifelong bilingualism.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "lifelong active bilinguals experience the onset of dementia symptoms roughly four to five years later than monolinguals",
+          "explanationVi": "Bài chỉ so sánh người song ngữ trọn đời và người đơn ngữ, không nói gì về ngôn ngữ thứ ba."
+        },
+        {
+          "id": "a10_tf4",
+          "statement": "Bilingualism helps delay clinical dementia symptoms by helping the brain work around physical damage.",
+          "answer": "TRUE",
+          "evidenceQuote": "bilingualism does not prevent physical ageing of the brain, but instead builds cognitive reserve—allowing neural pathways to compensate effectively when damage accumulates.",
+          "explanationVi": "Đúng: song ngữ tạo ra dự trữ nhận thức (cognitive reserve) giúp mạng nơ-ron bù trừ hiệu quả."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a10_p1",
+          "questionPhrase": "conclusively disproved that belief",
+          "targetInPassage": "decisively overturned that assumption",
+          "distractors": [
+            "delay academic progress",
+            "mental confusion",
+            "comparable levels"
+          ],
+          "explanationVi": "decisively overturned = conclusively disproved (bác bỏ dứt khoát); assumption = belief."
+        },
+        {
+          "id": "a10_p2",
+          "questionPhrase": "suppressing distraction from the other language",
+          "targetInPassage": "inhibiting interference from the non-target language",
+          "distractors": [
+            "combined conceptual knowledge",
+            "attentional switching",
+            "modern neuroimaging"
+          ],
+          "explanationVi": "inhibit = suppress (ức chế); interference = distraction/can nhiễu."
+        },
+        {
+          "id": "a10_p3",
+          "questionPhrase": "the initial appearance of memory-loss signs",
+          "targetInPassage": "the onset of dementia symptoms",
+          "distractors": [
+            "physical ageing",
+            "clinical neurology",
+            "working memory"
+          ],
+          "explanationVi": "onset = initial appearance/start (sự khởi phát)."
+        },
+        {
+          "id": "a10_p4",
+          "questionPhrase": "adapt to offset accumulating harm",
+          "targetInPassage": "compensate effectively when damage accumulates",
+          "distractors": [
+            "prevent physical ageing",
+            "early gap soon disappears",
+            "hospital cohorts"
+          ],
+          "explanationVi": "compensate = offset/adapt to make up for (bù trừ)."
+        }
+      ]
+    },
+    {
+      "id": "rd_a11",
+      "code": "A11",
+      "title": "Microplastics in Freshwater Systems: Tracking an Invisible Pollutant",
+      "topic": "Science & Environment",
+      "paragraphs": [
+        "Although oceanic garbage patches dominate public attention, freshwater ecologists stress that rivers and lakes act as both major conduits and long-term sinks for microplastics. Fragments smaller than five millimetres enter waterways primarily through tyre abrasion washed off highways, synthetic laundry effluent, and disintegrating agricultural mulch films.",
+        "Because their size closely resembles natural plankton, microplastics are readily ingested by freshwater invertebrates and juvenile fish. Laboratory assays demonstrate that trapped particles can induce false satiation, reducing nutrient intake and slowing larval growth. Furthermore, plastic surfaces behave like chemical magnets, adsorbing persistent heavy metals and industrial pesticides from polluted river water before transferring those toxins up the aquatic food web.",
+        "Filtering microscopic debris from entire river basins is practically impossible once dispersal occurs. Consequently, environmental engineers focus on upstream interception: installing fine-mesh filters inside domestic washing machines, constructing vegetated stormwater basins along motorways to trap tyre dust, and phasing out single-use packaging before fragments ever reach a tributary."
+      ],
+      "highlights": [
+        {
+          "phrase": "conduits",
+          "meaningVi": "đường dẫn, kênh vận chuyển",
+          "ipa": "/ˈkɒndjuɪts/"
+        },
+        {
+          "phrase": "abrasion",
+          "meaningVi": "sự mài mòn",
+          "ipa": "/əˈbreɪʒn/"
+        },
+        {
+          "phrase": "effluent",
+          "meaningVi": "nước thải công nghiệp/sinh hoạt",
+          "ipa": "/ˈefluənt/"
+        },
+        {
+          "phrase": "ingested",
+          "meaningVi": "bị nuốt phải, hấp thụ qua tiêu hóa",
+          "ipa": "/ɪnˈdʒestɪd/"
+        },
+        {
+          "phrase": "satiation",
+          "meaningVi": "cảm giác no",
+          "ipa": "/ˌseɪʃiˈeɪʃn/"
+        },
+        {
+          "phrase": "persistent",
+          "meaningVi": "tồn lưu dai dẳng (trong môi trường)",
+          "ipa": "/pəˈsɪstənt/"
+        },
+        {
+          "phrase": "dispersal",
+          "meaningVi": "sự phát tán",
+          "ipa": "/dɪˈspɜːsl/"
+        },
+        {
+          "phrase": "interception",
+          "meaningVi": "sự chặn bắt ngay từ nguồn",
+          "ipa": "/ˌɪntəˈsepʃn/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a11_tf1",
+          "statement": "Car tyre wear and washing synthetic clothes are key sources of microplastics entering freshwater systems.",
+          "answer": "TRUE",
+          "evidenceQuote": "Fragments smaller than five millimetres enter waterways primarily through tyre abrasion washed off highways, synthetic laundry effluent, and disintegrating agricultural mulch films.",
+          "explanationVi": "Đúng: tyre abrasion = mài mòn lốp xe; synthetic laundry effluent = nước thải giặt vải tổng hợp."
+        },
+        {
+          "id": "a11_tf2",
+          "statement": "Swallowing microplastics helps young fish absorb extra nutrients from polluted river water.",
+          "answer": "FALSE",
+          "evidenceQuote": "trapped particles can induce false satiation, reducing nutrient intake and slowing larval growth.",
+          "explanationVi": "Sai: vi nhựa gây cảm giác no giả (false satiation), làm GIẢM hấp thụ dinh dưỡng và chậm lớn."
+        },
+        {
+          "id": "a11_tf3",
+          "statement": "France was the first country to mandate microfibre filters in all newly manufactured washing machines.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "installing fine-mesh filters inside domestic washing machines",
+          "explanationVi": "Bài có nhắc giải pháp lắp lưới lọc trong máy giặt nhưng không hề nhắc đến nước Pháp hay quy định quốc gia cụ thể."
+        },
+        {
+          "id": "a11_tf4",
+          "statement": "Engineers prefer stopping microplastics near their source because removing them after they spread through rivers is unfeasible.",
+          "answer": "TRUE",
+          "evidenceQuote": "Filtering microscopic debris from entire river basins is practically impossible once dispersal occurs. Consequently, environmental engineers focus on upstream interception",
+          "explanationVi": "Đúng: lọc toàn lưu vực sau khi phát tán là bất khả thi, nên kỹ sư tập trung chặn từ đầu nguồn (upstream interception)."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a11_p1",
+          "questionPhrase": "easily swallowed by small aquatic creatures",
+          "targetInPassage": "readily ingested by freshwater invertebrates",
+          "distractors": [
+            "oceanic garbage patches",
+            "long-term sinks",
+            "industrial pesticides"
+          ],
+          "explanationVi": "readily = easily; ingested = swallowed (nuốt vào)."
+        },
+        {
+          "id": "a11_p2",
+          "questionPhrase": "trigger a misleading feeling of fullness",
+          "targetInPassage": "induce false satiation",
+          "distractors": [
+            "slowing larval growth",
+            "chemical magnets",
+            "tyre abrasion"
+          ],
+          "explanationVi": "induce = trigger/cause; false satiation = misleading feeling of fullness (cảm giác no giả)."
+        },
+        {
+          "id": "a11_p3",
+          "questionPhrase": "long-lasting toxic elements",
+          "targetInPassage": "persistent heavy metals",
+          "distractors": [
+            "fine-mesh filters",
+            "natural plankton",
+            "agricultural mulch films"
+          ],
+          "explanationVi": "persistent = long-lasting / khó phân hủy."
+        },
+        {
+          "id": "a11_p4",
+          "questionPhrase": "capturing pollutants at the source",
+          "targetInPassage": "upstream interception",
+          "distractors": [
+            "entire river basins",
+            "single-use packaging",
+            "aquatic food web"
+          ],
+          "explanationVi": "upstream interception = chặn bắt ngay tại thượng nguồn/điểm phát sinh."
+        }
+      ]
+    },
+    {
+      "id": "rd_a12",
+      "code": "A12",
+      "title": "Autonomous Vehicles: Congestion Cure or Catalyst for Urban Sprawl?",
+      "topic": "Technology & Urban Transport",
+      "paragraphs": [
+        "Proponents of autonomous vehicles long promised that self-driving fleets would banish traffic jams, slash accident fatalities, and free up vast downtown parking lots for parks and affordable housing. Because computer-guided cars can travel safely at tighter spacing and coordinate smoothly at intersections, engineers calculate that existing motorways could carry substantially more vehicles per hour.",
+        "Transport planners, however, highlight an overlooked paradox known as induced demand. If commuters can sleep, read, or answer emails effortlessly inside private driverless cars, the perceived cost of long daily journeys plummets. Many households would likely relocate to cheaper, distant suburbs, accelerating urban sprawl and actually multiplying total vehicle kilometres travelled. Empty 'zero-occupancy' cars cruising city blocks to avoid parking fees could worsen peak congestion even further.",
+        "Ultimately, technology alone will not determine whether driverless mobility improves urban liveability. Cities that integrate autonomous shuttles into high-capacity rail corridors and price single-occupant road space stand to reclaim greener streets; those that treat self-driving cars merely as chauffeured private sedans risk locking in heavier gridlock for decades."
+      ],
+      "highlights": [
+        {
+          "phrase": "proponents",
+          "meaningVi": "những người ủng hộ",
+          "ipa": "/prəˈpəʊnənts/"
+        },
+        {
+          "phrase": "fatalities",
+          "meaningVi": "số ca tử vong (do tai nạn)",
+          "ipa": "/fəˈtælətiz/"
+        },
+        {
+          "phrase": "paradox",
+          "meaningVi": "nghịch lý",
+          "ipa": "/ˈpærədɒks/"
+        },
+        {
+          "phrase": "induced demand",
+          "meaningVi": "nhu cầu phát sinh thêm (khi hạ tầng thuận tiện hơn)",
+          "ipa": "/ɪnˈdjuːst dɪˈmɑːnd/"
+        },
+        {
+          "phrase": "urban sprawl",
+          "meaningVi": "sự mở rộng đô thị tràn lan",
+          "ipa": "/ˈɜːbən sprɔːl/"
+        },
+        {
+          "phrase": "liveability",
+          "meaningVi": "chất lượng đáng sống (của đô thị)",
+          "ipa": "/ˌlɪvəˈbɪləti/"
+        },
+        {
+          "phrase": "reclaim",
+          "meaningVi": "giành lại, khôi phục (không gian)",
+          "ipa": "/rɪˈkleɪm/"
+        },
+        {
+          "phrase": "gridlock",
+          "meaningVi": "tắc nghẽn giao thông tê liệt",
+          "ipa": "/ˈɡrɪdlɒk/"
+        }
+      ],
+      "tfngQuestions": [
+        {
+          "id": "a12_tf1",
+          "statement": "Engineers estimate that coordinated self-driving cars could increase the hourly capacity of current highways.",
+          "answer": "TRUE",
+          "evidenceQuote": "engineers calculate that existing motorways could carry substantially more vehicles per hour.",
+          "explanationVi": "Đúng: nhờ giữ khoảng cách hẹp an toàn và phối hợp mượt tại giao lộ, cao tốc hiện hữu có thể chở nhiều xe hơn mỗi giờ."
+        },
+        {
+          "id": "a12_tf2",
+          "statement": "Transport planners believe driverless cars are guaranteed to reduce total distance driven across cities.",
+          "answer": "FALSE",
+          "evidenceQuote": "Many households would likely relocate to cheaper, distant suburbs, accelerating urban sprawl and actually multiplying total vehicle kilometres travelled.",
+          "explanationVi": "Sai: quy hoạch gia cảnh báo tổng số km di chuyển thậm chí có thể tăng gấp bội (multiplying) do người dân dọn ra ngoại ô xa."
+        },
+        {
+          "id": "a12_tf3",
+          "statement": "Insurance premiums for fully autonomous taxis have already fallen by forty percent in California.",
+          "answer": "NOT GIVEN",
+          "evidenceQuote": "slash accident fatalities, and free up vast downtown parking lots",
+          "explanationVi": "Bài không đề cập đến phí bảo hiểm hay bang California."
+        },
+        {
+          "id": "a12_tf4",
+          "statement": "The author concludes that urban policy choices will shape whether autonomous vehicles relieve or worsen traffic.",
+          "answer": "TRUE",
+          "evidenceQuote": "Ultimately, technology alone will not determine whether driverless mobility improves urban liveability.",
+          "explanationVi": "Đúng: công nghệ đơn lẻ không quyết định được, mà phụ thuộc vào cách thành phố kết hợp xe tự lái với đường sắt và thu phí đường."
+        }
+      ],
+      "paraphraseTargets": [
+        {
+          "id": "a12_p1",
+          "questionPhrase": "dramatically cut road deaths",
+          "targetInPassage": "slash accident fatalities",
+          "distractors": [
+            "banish traffic jams",
+            "tighter spacing",
+            "parking fees"
+          ],
+          "explanationVi": "slash = dramatically cut; accident fatalities = road deaths."
+        },
+        {
+          "id": "a12_p2",
+          "questionPhrase": "speeding up outward city expansion",
+          "targetInPassage": "accelerating urban sprawl",
+          "distractors": [
+            "overlooked paradox",
+            "distant suburbs",
+            "high-capacity rail corridors"
+          ],
+          "explanationVi": "accelerate = speed up; urban sprawl = outward city expansion."
+        },
+        {
+          "id": "a12_p3",
+          "questionPhrase": "driverless cars circling with no passengers",
+          "targetInPassage": "Empty 'zero-occupancy' cars cruising city blocks",
+          "distractors": [
+            "chauffeured private sedans",
+            "existing motorways",
+            "single-occupant road space"
+          ],
+          "explanationVi": "zero-occupancy cars = xe không có hành khách; cruising = chạy vòng quanh."
+        },
+        {
+          "id": "a12_p4",
+          "questionPhrase": "entrenching severe traffic paralysis",
+          "targetInPassage": "locking in heavier gridlock",
+          "distractors": [
+            "reclaim greener streets",
+            "perceived cost",
+            "affordable housing"
+          ],
+          "explanationVi": "lock in = entrench; heavier gridlock = severe traffic paralysis."
+        }
+      ]
+    }
+  ]
+}
