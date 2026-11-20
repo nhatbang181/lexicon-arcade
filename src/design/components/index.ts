@@ -15,3 +15,5 @@ export * from './FeedbackPanel';
 export * from './RecapScreen';
 export * from './EmptyState';
 export * from './Skeleton';
+export * from './Highlighter';
+export * from './QuestionNav';

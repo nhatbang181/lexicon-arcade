@@ -194,6 +194,7 @@ const READY_GAME_LOADERS: Partial<
   v1: () => import('./v1-daily-run').then((m) => ({ default: m.V1DailyRun })),
   v2: () => import('./v2-collocation-forge'),
   v3: () => import('./v3-paraphrase-radar'),
+  r1: () => import('./r1-tfng-judge'),
 };
 
 export const GAME_REGISTRY: GameDefinition[] = GAME_METAS.map((meta) => {
