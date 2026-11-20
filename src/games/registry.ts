@@ -195,6 +195,7 @@ const READY_GAME_LOADERS: Partial<
   v2: () => import('./v2-collocation-forge'),
   v3: () => import('./v3-paraphrase-radar'),
   l1: () => import('./l1-trap-detector'),
+  l2: () => import('./l2-dictation-ladder'),
   r1: () => import('./r1-tfng-judge'),
   r2: () => import('./r2-headline-editor'),
 };

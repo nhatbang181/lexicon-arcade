@@ -1,0 +1,301 @@
+import type { DictationItem } from '../../core/content/schemas';
+
+const FIXTURE_PROVENANCE = {
+  createdBy: 'human' as const,
+  source: 'l2_fixture',
+  license: 'CC0-1.0',
+  qa: { schema: 'pass' as const },
+};
+
+/**
+ * 12 curated IELTS Academic dictation items spanning levels 1–6 (2 per level).
+ * Used as unit-test fixtures and as a graceful fallback when public/data/listening/dictation.json
+ * is not yet built.
+ */
+export const L2_FIXTURES: readonly DictationItem[] = [
+  {
+    id: 'dict:0001',
+    text: 'The library opens at nine every morning.',
+    level: 1,
+    accent: 'uk',
+    voice: 'bf_emma',
+    wpm: 115,
+    features: ['weak_form', 'final_consonant', 'numbers'],
+    focus: [
+      {
+        tokenIndex: 2,
+        feature: 'final_consonant',
+        tipVi: 'Đuôi "-s" ở "opens" đọc rõ /z/ và nối nhẹ sang "at".',
+        ipaConnected: '/ˈəʊpənz ət/',
+      },
+      {
+        tokenIndex: 3,
+        feature: 'weak_form',
+        tipVi: '"at" đọc lướt thành âm yếu /ət/, không nhấn trọng âm.',
+        ipaConnected: '/ət naɪn/',
+      },
+    ],
+    audio: 'audio/dictation/dict_0001.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0002',
+    text: 'Please bring a valid student card to the desk.',
+    level: 1,
+    accent: 'uk',
+    voice: 'bm_george',
+    wpm: 118,
+    features: ['weak_form', 'linking'],
+    focus: [
+      {
+        tokenIndex: 2,
+        feature: 'weak_form',
+        tipVi: 'Mạo từ "a" đọc rất ngắn /ə/ trước "valid".',
+        ipaConnected: '/brɪŋ ə ˈvælɪd/',
+      },
+      {
+        tokenIndex: 6,
+        feature: 'weak_form',
+        tipVi: '"to the" đọc nối thành /tə ðə/ rất nhanh.',
+        ipaConnected: '/tə ðə desk/',
+      },
+    ],
+    audio: 'audio/dictation/dict_0002.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0003',
+    text: 'Students must submit their reports before Friday afternoon.',
+    level: 2,
+    accent: 'uk',
+    voice: 'bf_emma',
+    wpm: 128,
+    features: ['final_consonant', 'academic'],
+    focus: [
+      {
+        tokenIndex: 0,
+        feature: 'final_consonant',
+        tipVi: 'Chú ý đuôi số nhiều "-s" trong "Students" và "reports".',
+        ipaConnected: '/ˈstjuːdənts məst/',
+      },
+    ],
+    audio: 'audio/dictation/dict_0003.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0004',
+    text: 'The museum has fifteen galleries on the second floor.',
+    level: 2,
+    accent: 'us',
+    voice: 'af_bella',
+    wpm: 130,
+    features: ['numbers', 'weak_form', 'final_consonant'],
+    focus: [
+      {
+        tokenIndex: 3,
+        feature: 'numbers',
+        tipVi: 'Phân biệt trọng âm "fifteen" (/ˌfɪfˈtiːn/) với "fifty" (/ˈfɪfti/).',
+        ipaConnected: '/həz ˌfɪfˈtiːn/',
+      },
+      {
+        tokenIndex: 4,
+        feature: 'final_consonant',
+        tipVi: 'Số nhiều "galleries" giữ đuôi /z/ rõ sau số đếm 15.',
+      },
+    ],
+    audio: 'audio/dictation/dict_0004.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0005',
+    text: "They didn't expect the weather to change so quickly.",
+    level: 3,
+    accent: 'us',
+    voice: 'am_michael',
+    wpm: 138,
+    features: ['contraction', 'elision', 'weak_form'],
+    focus: [
+      {
+        tokenIndex: 1,
+        feature: 'contraction',
+        tipVi: '"didn\'t" thường nuốt âm /t/ cuối trước "expect", nghe như /ˈdɪdn ɪkˈspekt/.',
+        ipaConnected: '/ðeɪ ˈdɪdn ɪkˈspekt/',
+      },
+    ],
+    audio: 'audio/dictation/dict_0005.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0006',
+    text: 'This is a well-known example of renewable energy.',
+    level: 3,
+    accent: 'uk',
+    voice: 'bf_emma',
+    wpm: 140,
+    features: ['linking', 'weak_form', 'academic'],
+    focus: [
+      {
+        tokenIndex: 3,
+        feature: 'linking',
+        tipVi: 'Từ ghép "well-known" (hoặc "well known") nối âm /n/ sang "example".',
+        ipaConnected: '/wel nəʊn ɪɡˈzɑːmpl/',
+      },
+      {
+        tokenIndex: 5,
+        feature: 'weak_form',
+        tipVi: '"of" đọc lướt thành /əv/ giữa "example" và "renewable".',
+        ipaConnected: '/əv rɪˈnjuːəbl/',
+      },
+    ],
+    audio: 'audio/dictation/dict_0006.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0007',
+    text: 'The number of students who applied for the course has risen sharply.',
+    level: 4,
+    accent: 'uk',
+    voice: 'bm_george',
+    wpm: 150,
+    features: ['final_consonant', 'weak_form', 'linking', 'academic'],
+    focus: [
+      {
+        tokenIndex: 5,
+        feature: 'final_consonant',
+        tipVi: '"applied for the" → /əˈplaɪd fə ðə/ – đuôi "-ed" nối vào "for", "for" đọc yếu.',
+        ipaConnected: '/əˈplaɪd fə ðə/',
+      },
+      {
+        tokenIndex: 2,
+        feature: 'weak_form',
+        tipVi: '"of" đọc yếu /əv/, dễ bị bỏ sót khi nghe nhanh.',
+        ipaConnected: '/ˈnʌmbər əv ˈstjuːdənts/',
+      },
+    ],
+    audio: 'audio/dictation/dict_0007.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0008',
+    text: 'Researchers collected water samples from twenty-five coastal sites.',
+    level: 4,
+    accent: 'au',
+    voice: 'en-AU-NatashaNeural',
+    wpm: 152,
+    features: ['final_consonant', 'numbers', 'academic'],
+    focus: [
+      {
+        tokenIndex: 1,
+        feature: 'final_consonant',
+        tipVi: 'Đuôi quá khứ "-ed" ở "collected" đọc thành một âm tiết /ɪd/.',
+        ipaConnected: '/kəˈlektɪd ˈwɔːtə/',
+      },
+      {
+        tokenIndex: 5,
+        feature: 'numbers',
+        tipVi: 'Số ghép "twenty-five" (hoặc 25) đọc nhanh ở giọng Úc với nguyên âm /aɪ/ hơi mở.',
+      },
+    ],
+    audio: 'audio/dictation/dict_0008.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0009',
+    text: 'Public transport funding was reduced by nearly thirty percent last year.',
+    level: 5,
+    accent: 'uk',
+    voice: 'bf_emma',
+    wpm: 162,
+    features: ['final_consonant', 'weak_form', 'numbers', 'academic'],
+    focus: [
+      {
+        tokenIndex: 3,
+        feature: 'weak_form',
+        tipVi: '"was" đọc yếu /wəz/ trước "reduced", cần nghe ngữ cảnh bị động quá khứ.',
+        ipaConnected: '/wəz rɪˈdjuːst baɪ/',
+      },
+      {
+        tokenIndex: 4,
+        feature: 'final_consonant',
+        tipVi: '"reduced" kết thúc bằng cụm /st/, hay bị nuốt /t/ khi đứng trước "by".',
+      },
+    ],
+    audio: 'audio/dictation/dict_0009.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0010',
+    text: 'Although the experiment failed initially, the team refined its methodology.',
+    level: 5,
+    accent: 'us',
+    voice: 'af_bella',
+    wpm: 165,
+    features: ['final_consonant', 'academic', 'linking'],
+    focus: [
+      {
+        tokenIndex: 3,
+        feature: 'final_consonant',
+        tipVi: 'Đuôi "-ed" của "failed" nối thẳng sang nguyên âm đầu của "initially".',
+        ipaConnected: '/feɪld ɪˈnɪʃəli/',
+      },
+      {
+        tokenIndex: 8,
+        feature: 'academic',
+        tipVi: 'Từ học thuật "methodology" (phương pháp luận) dễ sai chính tả ở hậu tố "-ology".',
+      },
+    ],
+    audio: 'audio/dictation/dict_0010.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0011',
+    text: 'Urban planners must balance affordability with long-term environmental sustainability.',
+    level: 6,
+    accent: 'au',
+    voice: 'en-AU-WilliamNeural',
+    wpm: 172,
+    features: ['academic', 'linking', 'final_consonant'],
+    focus: [
+      {
+        tokenIndex: 4,
+        feature: 'academic',
+        tipVi: 'Chú ý chính tả học thuật của "affordability" và "sustainability".',
+      },
+      {
+        tokenIndex: 1,
+        feature: 'final_consonant',
+        tipVi: '"planners" có đuôi số nhiều /z/ nối sang "must".',
+        ipaConnected: '/ˈplænəz məst/',
+      },
+    ],
+    audio: 'audio/dictation/dict_0011.mp3',
+    provenance: FIXTURE_PROVENANCE,
+  },
+  {
+    id: 'dict:0012',
+    text: "The committee's recommendations were implemented across twelve regional hospitals.",
+    level: 6,
+    accent: 'uk',
+    voice: 'bm_george',
+    wpm: 175,
+    features: ['final_consonant', 'weak_form', 'numbers', 'academic'],
+    focus: [
+      {
+        tokenIndex: 3,
+        feature: 'weak_form',
+        tipVi: '"were" đọc yếu /wər/ nối sang nguyên âm /ɪ/ của "implemented".',
+        ipaConnected: '/wər ˈɪmplɪmentɪd/',
+      },
+      {
+        tokenIndex: 2,
+        feature: 'academic',
+        tipVi: '"recommendations" có hai chữ "m" và đuôi số nhiều "-s".',
+      },
+    ],
+    audio: 'audio/dictation/dict_0012.mp3',
+    acceptedVariants: [
+      'The committee recommendations were implemented across twelve regional hospitals.',
+    ],
+    provenance: FIXTURE_PROVENANCE,
+  },
+];
