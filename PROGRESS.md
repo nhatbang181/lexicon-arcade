@@ -1,6 +1,6 @@
 # PROGRESS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## Trạng thái hiện tại: ĐANG CHẠY M0 (r-shell ∥ r-core)
+## Trạng thái hiện tại: ĐANG CHẠY M0 (r-shell ✅ · r-core 🔄 ∥ r-assets 🔄)
 - 2026-11-20: Hoàn tất bộ tài liệu V3 (`docs/00…13`, `docs/games/*` × 12, `AGENTS.md`). Docs V1/V2 đã chuyển vào archive.
 - Plan V2.0 cũ (M1 data / M2 4 game / M3 hub 12 game) **đã bị thay thế** bởi `docs/12-MASTER-PLAN.md`.
   - Data M1 cũ (2.152 từ + `ielts_4skills.json`) vẫn được dùng làm **đầu vào** chuyển đổi ở M1 mới.
@@ -26,7 +26,7 @@
 Worker cập nhật bảng này: ✅ xong / 🔄 đang làm / ⏳ chờ / ⚠️ lỗi.
 
 ### M0
-- 🔄 r-shell · 🔄 r-core · ⏳ r-assets · ⏳ rv-m0
+- ✅ r-shell (commit `4b799f5`) · 🔄 r-core · 🔄 r-assets · ⏳ rv-m0
 
 ## Lỗi đã biết
 - MCP `anki` (AnkiConnect) không kết nối được (ECONNREFUSED). Không chặn M1 vì đã có JSON xuất sẵn.
