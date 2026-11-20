@@ -1,23 +1,35 @@
-# PROGRESS.md – Tiến Độ Điều Phối Lexicon Arcade IELTS 8.0 (V2.0)
+# PROGRESS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## Trạng thái hiện tại: TẠM DỪNG THEO YÊU CẦU (Chờ hồi quota – đã chốt xong 100% Mốc M1)
+## Trạng thái hiện tại: ĐANG CHẠY M0 (r-shell ∥ r-core)
+- 2026-11-20: Hoàn tất bộ tài liệu V3 (`docs/00…13`, `docs/games/*` × 12, `AGENTS.md`). Docs V1/V2 đã chuyển vào archive.
+- Plan V2.0 cũ (M1 data / M2 4 game / M3 hub 12 game) **đã bị thay thế** bởi `docs/12-MASTER-PLAN.md`.
+  - Data M1 cũ (2.152 từ + `ielts_4skills.json`) vẫn được dùng làm **đầu vào** chuyển đổi ở M1 mới.
 
-### Mốc M1: Nền tảng Dữ liệu IELTS 8.0 & 4 Kỹ Năng [DONE - PASS - ĐÃ MERGE MASTER]
-- [x] `r-data-vocab`: Mở rộng `public/data/anki_vocab.json` lên **2,152 từ** sạch 100% (commit `2518674`).
-- [x] `r-data-4skills`: Tạo `src/types/fourSkills.ts` và `public/data/ielts_4skills.json` (L:160, R:12 bài báo + 160 paraphrase, W:150 upgrade + 108 errorFix, S:55 cụm + 38 khung + 50 phát âm) (commit `0dafb8f`).
-- [x] `rv-data-gate`: Cổng M1 PASS 100% (`scripts/validate_all_data.js`, `tsc --noEmit` 0 lỗi, commit `562f676`).
+## Cách chạy tiếp (gõ trong Antigravity)
+```
+/dieu-phoi Chạy Lexicon Arcade V3 theo docs/12-MASTER-PLAN.md, bắt đầu từ M0. Đọc AGENTS.md trước. Chế độ cả sản phẩm.
+```
 
-### Mốc M2: Đại Tu Game Cũ & Xây 4 Game Mới Cho 4 Kỹ Năng [PAUSED – SẴN SÀNG CHẠY TIẾP]
-- [ ] `r-polish-arcade`: Làm lại `CyberSnakeGame.tsx` V2 (hạt A/B/C/D + pill nguyên chữ + Tactical Slow-Mo) & polish `SpeedTyperGame.tsx`, `CyberDefusalGame.tsx`.
-- [ ] `r-game-listen`: Xây `ListeningDictationGame.tsx` + `ReadingSniperGame.tsx`.
-- [ ] `r-game-write`: Xây `WritingUpgraderGame.tsx`.
-- [ ] `r-game-speak`: Xây `SpeakingFluencyGame.tsx`.
+## Các mốc
+| Mốc | Nội dung | Trạng thái |
+|---|---|---|
+| M0 | Nền móng: shell, design system, core (SRS, storage, scoring), assets | ⏳ chưa bắt đầu |
+| M1 | Từ vựng V1–V3 + data vocab + Onboarding/Today | ⏳ |
+| M2 | Reading R1–R2 + passages | ⏳ |
+| M3 | Listening L1–L2 + episodes + audio (Kokoro UK/US + edge-tts AU/NZ/CA) | ⏳ |
+| M4 | Writing W1–W2 + chấm qua Claude chat (copy/dán, 0 đồng) | ⏳ |
+| M5 | Speaking S1–S2 + speech core | ⏳ |
+| M6 | Exam X1, band, thống kê, polish, PWA, deploy | ⏳ |
+| M7 | Mở rộng dữ liệu tới mức đầy đủ (liên tục) | ⏳ |
 
-### Mốc M3: Tích Hợp Sảnh 12 Game, Kiểm Chéo & Deploy [PENDING]
-- [ ] `r-hub-integrate`: Nâng cấp `ArcadeHub.tsx` với bộ lọc 4 kỹ năng & 12 chế độ game.
-- [ ] `rv-final-audit`: Kiểm chéo toàn bộ diff, `npm run build` 0 lỗi.
-- [ ] `r-deploy`: Push GitHub Pages & xác nhận HTTP 200 live.
+## Task theo mốc
+Worker cập nhật bảng này: ✅ xong / 🔄 đang làm / ⏳ chờ / ⚠️ lỗi.
 
-## Ghi chú khi chạy lại phiên sau
-- Toàn bộ Mốc M1 đã nằm gọn trong nhánh `master` (sạch 100%, đã pass cổng kiểm định).
-- Phiên sau chỉ cần gõ tiếp `/dieu-phoi chạy tiếp từ Mốc M2 theo PROGRESS.md` là chạy thẳng vào 4 game 4 kỹ năng + Rắn V2 và deploy.
+### M0
+- 🔄 r-shell · 🔄 r-core · ⏳ r-assets · ⏳ rv-m0
+
+## Lỗi đã biết
+- MCP `anki` (AnkiConnect) không kết nối được (ECONNREFUSED). Không chặn M1 vì đã có JSON xuất sẵn.
+
+## Hiệu quả học
+Bang ghi sau mỗi 4 tuần dùng thật (`docs/13` §4).

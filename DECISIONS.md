@@ -1,24 +1,35 @@
-# DECISIONS.md – Lexicon Arcade IELTS 8.0 (V2.0)
+# DECISIONS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## 1. Kiến trúc Dữ liệu (Mốc M1)
-- **Giữ nguyên tương thích ngược cho `public/data/anki_vocab.json`:** Giữ cấu trúc `{ metadata, realms }` với 12 realms hiện có, nhưng bơm thêm toàn bộ từ vựng học thuật từ các sub-deck Anki chưa khai thác và bổ sung Academic Word List (AWL Sublists 3–10) + C1/C2 Academic Vocabulary để nâng tổng số từ lên **≥2,000 từ vựng sạch 100%** (0 ký tự CJK, có đủ `word`, `ipa`, `pos`, `meaning`, `definition`, `example`, `collocations`, `synonyms`).
-- **Tạo kho dữ liệu 4 kỹ năng chuyên biệt `public/data/ielts_4skills.json` + kiểu dữ liệu `src/types/fourSkills.ts`:**
-  - `listening`: ≥150 mục (trích từ sub-deck `9. Listening · Chính tả` + bổ sung bẫy chính tả Section 1 & 4, số liệu, từ dễ nhầm âm, câu dictation có đáp án và giải thích bẫy).
-  - `reading`: 12 bài báo học thuật (`passages`: 5 bài gốc `A01–A05` từ Anki + 7 bài mới `A06–A12` chủ đề IELTS thực chiến, mỗi bài có đoạn văn, từ vựng điểm nhấn, câu hỏi True/False/Not Given và bài tập Paraphrase Sniper) + `paraphrases`: ≥150 cặp Paraphrase đồng nghĩa bẫy đề thi (từ sub-deck `3. Paraphrase` + mở rộng).
-  - `writing`: ≥140 mục nâng cấp câu `upgrades` (từ sub-deck `5. Writing Task 1 & 2` + mở rộng Band 6.0 → Band 8.0) + ≥100 mục bắt lỗi sai `errorFixes` (cho sub-deck `6. Lỗi sai`).
-  - `speaking`: ≥130 mục gồm `naturalPhrases` (cụm diễn đạt tự nhiên), `part23Frameworks` (khung triển khai Part 2–3), và `pronunciationTraps` (bẫy trọng âm & phát âm từ sub-deck `4. Speaking`).
+> File này ưu tiên cao nhất khi có mâu thuẫn (xem `AGENTS.md` §1). Mỗi dòng gồm: ngày · ai · quyết định · lý do.
+> Quyết định V2.0 cũ nằm ở `docs/archive/v1-2026-11-17/DECISIONS-v2.md` và **đã bị thay thế**.
 
-## 2. Thiết kế Game & Polish (Mốc M2)
-- **Cyber Snake V2 (`src/components/arcade/CyberSnakeGame.tsx`):**
-  - Bỏ kiểu vẽ chữ cắt cụt `...` trong hạt tròn 26px.
-  - Mỗi hạt trên lưới hiển thị ký hiệu `[A]`, `[B]`, `[C]`, `[D]` to rõ, kèm nhãn pill nổi (`rounded-full bg-slate-900/90 border`) hiển thị **100% nguyên từ tiếng Anh** ngay phía trên hạt.
-  - Bảng HUD đối chiếu `[A]..[D]` hiển thị chữ lớn + IPA + nút đọc âm thanh.
-  - Thêm cơ chế **Tactical Slow-Mo**: 3 giây đầu mỗi câu rắn tự giảm tốc độ để người chơi đọc từ, giữ phím `Shift` để bật/tắt chế độ đi chậm bất kỳ lúc nào, ăn đúng từ hiện thẻ tổng kết nhanh 1.2s.
-- **4 Game Mới Chuyên Biệt Cho 4 Kỹ Năng (`src/components/arcade/`):**
-  1. `ListeningDictationGame.tsx` (Listening)
-  2. `ReadingSniperGame.tsx` (Reading)
-  3. `WritingUpgraderGame.tsx` (Writing)
-  4. `SpeakingFluencyGame.tsx` (Speaking)
+## A. Quyết định sản phẩm (2026-11-20 · Claude Code brainstorm cùng Bang)
+1. **Chuyển từ "nhiều game arcade" sang 12 chế độ chất lượng cao** (V1–V3, L1–L2, R1–R2, W1–W2, S1–S2, X1).
+   - Lý do: Bang muốn ít game nhưng game nào cũng thật chất lượng.
+   - Nghiên cứu cho thấy gamification chỉ tăng động lực, không tăng trí nhớ. Vì vậy cơ chế chơi phải chính là hành động học.
+2. **Bỏ** các game mà kỹ năng điều khiển không liên quan tới tiếng Anh (Snake, Defusal, Soul Knight…). Chuyển chúng vào `src/legacy/`, ẩn sau Cài đặt. **Không xoá** khi Bang chưa đồng ý.
+3. **Điểm xuất phát:** Bang khoảng 6.0 overall, chưa rõ từng kỹ năng. Do đó có placement, và target mặc định L 8.5 / R 8.5 / W 7.5 / S 7.5 (profile A ở `docs/01` §1).
+4. **Chỉ làm Academic.** Đề 2026 chỉ đổi sang thi trên máy, không đổi nội dung. Exam mode mô phỏng giao diện thi máy.
+5. **Một bộ não SRS chung (FSRS, `ts-fsrs`) cho mọi item.** Thay cho Mistake Bank cũ. Retention 0,90, khoảng cách tối đa 365 ngày.
+6. **Không game over trong chế độ luyện.** Streak có lượt đóng băng.
+7. **Lộ trình nói thật:** 9–18 tháng để lên 8.0.
 
-## 3. Tích hợp Sảnh Arcade (Mốc M3)
-- `ArcadeHub.tsx` có thanh lọc tab theo kỹ năng: `TẤT CẢ (12)` | `TỪ VỰNG & PHẢN XẠ` | `🎧 LISTENING` | `📖 READING` | `✍️ WRITING` | `🎙️ SPEAKING`.
+## B. Quyết định kỹ thuật
+1. **Lưu trữ:** IndexedDB qua Dexie. Router: wouter (hash). Animation: motion. SFX: howler. Schema: zod. Test: Vitest + Playwright.
+2. **Audio học:** render offline bằng Kokoro-82M (Apache-2.0). **Cấm** dùng `speechSynthesis` cho nội dung học. Encode MP3 mono 48 kbps. Ngưỡng `public/audio` ≤ 400 MB.
+3. **Chấm bài: không API, 0 đồng** (Bang quyết định, 2026-11-20). App tạo "gói chấm" (rubric + đề + bài). Bang dán vào Claude chat, rồi dán kết quả JSON lại. App kiểm bằng zod và hậu kiểm.
+   - Prompt chuẩn ở `docs/grading/*.md`, có `PROMPT_VERSION`.
+   - Bỏ các bước tốn tiền: API key, SDK, hiệu chỉnh trả phí, TTS live.
+   - Độ chính xác được kiểm dần bằng điểm thật Bang nhập vào (`07` §6).
+   - Những chỗ trước dự định "AI chấm nhanh" (W2, S2, V1 `use`, V2 level cao) chuyển sang checklist tự chấm + bài mẫu, có gói chấm gộp tuỳ chọn.
+4. **Phát âm trong Speaking** chỉ ước tính gián tiếp (transcript và ASR). Không dùng dịch vụ trả phí.
+5. **Dữ liệu V2 cũ** (`anki_vocab.json`, `ielts_4skills.json`, `ielts_strategies.json`) giữ nguyên cho legacy. Dùng làm đầu vào chuyển đổi, phải qua verifier vì phần lớn do LLM sinh.
+6. **Công cụ miễn phí:** Bang duyệt chung (2026-11-20) "cái nào miễn phí tốt thì cứ dùng". Worker tự chọn công cụ hoặc thư viện miễn phí, ghi 1 dòng ở mục D. Thứ tốn tiền hay cần tài khoản trả phí thì vẫn phải hỏi.
+7. **Giọng Úc/NZ/Canada:** dùng `edge-tts` cho khoảng 25% episode Listening và khoảng 20% dictation level ≥ 5 (`docs/06` §2.1). Bang đã duyệt 2026-11-20.
+8. **Bản quyền:** không dùng nội dung Cambridge IELTS. Passage và episode tự sinh và qua blind-solve. Wikipedia được chỉnh sửa (CC BY-SA). The Conversation chỉ dùng nguyên văn.
+
+## C. Đang chờ Bang
+- [ ] Ngày thi dự kiến (để planner đếm ngược, không bắt buộc)
+
+## D. Nhật ký quyết định nhỏ (worker ghi tiếp bên dưới)
+- 2026-11-20 · claude-code · Chuyển docs V1/V2 vào `docs/archive/v1-2026-11-17/` · gom tài liệu, tránh worker làm theo plan cũ.
