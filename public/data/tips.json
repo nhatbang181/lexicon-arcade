@@ -1,0 +1,1056 @@
+[
+  {
+    "id": "tip:001",
+    "title": "Overall được làm tròn thế nào?",
+    "tipVi": "Trung bình 4 kỹ năng: phần lẻ .25 làm tròn lên .5; .75 làm tròn lên điểm nguyên; dưới .25 làm tròn xuống.",
+    "detailVi": "Ví dụ: 7.25 → 7.5; 7.75 → 8.0; 7.125 → 7.0.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007610_1794758007610",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:002",
+    "title": "Tổ hợp điểm an toàn nhất cho 8.0 overall?",
+    "tipVi": "Listening 8.5 + Reading 8.5 + Writing 7 + Speaking 7 = 31 → 7.75 → 8.0.",
+    "detailVi": "Cách dễ nhất là lấy gần tối đa Listening và Reading để bù cho Writing.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007611_1794758007611",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:003",
+    "title": "Listening 8.0 / 8.5 / 9.0 cần bao nhiêu câu đúng?",
+    "tipVi": "Khoảng 35–36 = 8.0; 37–38 = 8.5; 39–40 = 9.0 (trên 40 câu).",
+    "detailVi": "Bảng quy đổi có thể lệch nhẹ giữa các đề. Reading Academic cũng gần như vậy.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007612_1794758007612",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:004",
+    "title": "Viết sai chính tả trong Listening có được điểm không?",
+    "tipVi": "Không. Sai chính tả là sai câu. Cả chính tả Anh và Mỹ đều được chấp nhận.",
+    "detailVi": "Luyện chính tả số, ngày tháng, tên riêng được đánh vần.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007613_1794758007613",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:005",
+    "title": "Bẫy phổ biến nhất trong Listening là gì?",
+    "tipVi": "Người nói đổi ý hoặc sửa lại thông tin (actually…, sorry, I mean…, no, wait…). Đáp án là thông tin cuối cùng.",
+    "detailVi": "Nghe đến hết ý rồi mới ghi, đừng ghi ngay từ đầu tiên khớp.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007614_1794758007614",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:006",
+    "title": "Thi trên máy tính có 10 phút chép đáp án như thi giấy không?",
+    "tipVi": "Không. Thi máy chỉ có 2 phút cuối để kiểm tra lại.",
+    "detailVi": "Phải gõ đáp án ngay trong lúc nghe.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007615_1794758007615",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:007",
+    "title": "Khác nhau giữa TRUE/FALSE/NOT GIVEN và YES/NO/NOT GIVEN?",
+    "tipVi": "T/F/NG hỏi về thông tin, sự thật trong bài. Y/N/NG hỏi về quan điểm, nhận định của tác giả.",
+    "detailVi": "Cách làm giống nhau, chỉ khác bản chất câu hỏi.",
+    "skill": "reading",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007616_1794758007616",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:008",
+    "title": "Phân biệt FALSE và NOT GIVEN?",
+    "tipVi": "FALSE: bài nói điều ngược lại với câu hỏi. NOT GIVEN: bài không nhắc đến, hoặc không đủ thông tin để kết luận.",
+    "detailVi": "Đừng dùng kiến thức bên ngoài. Chỉ dựa vào chữ trong bài.",
+    "skill": "speaking",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007617_1794758007617",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:009",
+    "title": "Vượt giới hạn từ (NO MORE THAN TWO WORDS) thì sao?",
+    "tipVi": "Sai cả câu, dù nội dung đúng.",
+    "detailVi": "Đọc kỹ yêu cầu: 'AND/OR A NUMBER' nghĩa là được thêm một con số.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007618_1794758007618",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:010",
+    "title": "Câu hỏi nào KHÔNG theo thứ tự xuất hiện trong bài?",
+    "tipVi": "Matching headings, matching information/features và câu hỏi tóm tắt toàn bài. Hầu hết dạng khác đi theo thứ tự.",
+    "detailVi": "Với dạng theo thứ tự, đáp án câu sau nằm sau đáp án câu trước.",
+    "skill": "reading",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007619_1794758007619",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:011",
+    "title": "Chiến thuật Matching headings?",
+    "tipVi": "Chọn heading phản ánh ý chính của cả đoạn, không chỉ khớp một từ khóa. Đọc câu chủ đề và câu cuối đoạn trước.",
+    "detailVi": "Heading 'bẫy' thường lặp đúng một từ trong đoạn nhưng chỉ nói một chi tiết nhỏ.",
+    "skill": "reading",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007620_1794758007620",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:012",
+    "title": "Phân bổ thời gian Reading 60 phút?",
+    "tipVi": "Khoảng 17 – 20 – 23 phút cho Passage 1 – 2 – 3. Không có thêm thời gian chép đáp án.",
+    "detailVi": "Passage 3 khó nhất, nên để dư thời gian cho nó.",
+    "skill": "reading",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007621_1794758007621",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:013",
+    "title": "Vì sao đáp án hiếm khi trùng nguyên từ trong câu hỏi?",
+    "tipVi": "Đề dùng paraphrase: đổi từ đồng nghĩa, đổi dạng từ, đổi cấu trúc câu.",
+    "detailVi": "Học deck Paraphrase giúp nhận ra đáp án nhanh hơn.",
+    "skill": "reading",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007622_1794758007622",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:014",
+    "title": "4 tiêu chí chấm Writing?",
+    "tipVi": "Task Achievement (Task 1) / Task Response (Task 2), Coherence & Cohesion, Lexical Resource, Grammatical Range & Accuracy. Mỗi tiêu chí 25%.",
+    "detailVi": "Điểm mỗi bài là trung bình 4 tiêu chí.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007623_1794758007623",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:015",
+    "title": "Task 1 và Task 2 tính điểm thế nào?",
+    "tipVi": "Task 2 có trọng số gấp đôi Task 1.",
+    "detailVi": "Nên dành khoảng 40 phút cho Task 2, 20 phút cho Task 1.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007624_1794758007624",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:016",
+    "title": "Số từ tối thiểu?",
+    "tipVi": "Task 1: 150 từ. Task 2: 250 từ. Thiếu từ bị trừ điểm tiêu chí Task Achievement/Response.",
+    "detailVi": "Viết dài quá mức không được thêm điểm. Khoảng 170–190 và 270–320 từ là vừa.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007625_1794758007625",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:017",
+    "title": "Task 1 Academic cần gì để đạt 7+ Task Achievement?",
+    "tipVi": "Có overview rõ ràng nêu xu hướng, đặc điểm chính; chọn lọc và so sánh số liệu quan trọng; không nêu ý kiến cá nhân.",
+    "detailVi": "Thiếu overview gần như không thể vượt band 6 tiêu chí này.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007626_1794758007626",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:018",
+    "title": "Band 8 Task Response khác band 7 ở đâu?",
+    "tipVi": "Band 8: trả lời đủ mọi phần của đề, ý được phát triển tốt với giải thích và ví dụ liên quan.",
+    "detailVi": "Mỗi đoạn thân bài: 1 ý chính, giải thích sâu, có ví dụ cụ thể.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007627_1794758007627",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:019",
+    "title": "Band 8 Coherence & Cohesion cần gì?",
+    "tipVi": "Sắp xếp ý logic, mỗi đoạn một trọng tâm rõ ràng, dùng từ nối tự nhiên và ít lỗi.",
+    "detailVi": "Dùng cả từ thay thế (this, these, such), không chỉ từ nối đầu câu.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007628_1794758007628",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:020",
+    "title": "Band 8 Lexical Resource cần gì?",
+    "tipVi": "Từ vựng đa dạng, dùng linh hoạt và chính xác; dùng tốt từ ít phổ biến và collocation; chỉ thỉnh thoảng sai chọn từ.",
+    "detailVi": "Collocation đúng quan trọng hơn từ 'khủng' dùng sai.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007629_1794758007629",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:021",
+    "title": "Band 8 Grammatical Range & Accuracy cần gì?",
+    "tipVi": "Nhiều cấu trúc câu đa dạng, phần lớn câu không có lỗi; lỗi chỉ hiếm và không hệ thống.",
+    "detailVi": "Ưu tiên chính xác: câu phức đúng có giá trị hơn câu siêu dài có lỗi.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007630_1794758007630",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:022",
+    "title": "Câu mẫu học thuộc (memorised language) bị chấm thế nào?",
+    "tipVi": "Giám khảo được hướng dẫn nhận ra và không ghi nhận các câu học thuộc không gắn với đề.",
+    "detailVi": "Học cấu trúc, rồi viết câu riêng cho từng đề.",
+    "skill": "speaking",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007631_1794758007631",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:023",
+    "title": "Viết lệch đề (off-topic) hậu quả gì?",
+    "tipVi": "Điểm Task Response bị giới hạn rất thấp, kéo cả bài xuống.",
+    "detailVi": "Gạch chân từ khóa đề, đảm bảo trả lời đúng câu hỏi được hỏi.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007632_1794758007632",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:024",
+    "title": "Dạng 'To what extent do you agree?' cần chú ý gì?",
+    "tipVi": "Nêu quan điểm rõ ràng ngay mở bài và giữ nhất quán đến kết bài.",
+    "detailVi": "Quan điểm mập mờ hoặc đổi giữa chừng làm giảm Task Response.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007633_1794758007633",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:025",
+    "title": "4 tiêu chí chấm Speaking?",
+    "tipVi": "Fluency & Coherence, Lexical Resource, Grammatical Range & Accuracy, Pronunciation. Mỗi tiêu chí 25%.",
+    "detailVi": "Không có điểm cho 'ý tưởng hay'; chấm cách bạn nói.",
+    "skill": "speaking",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007634_1794758007634",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:026",
+    "title": "Cấu trúc và thời gian bài Speaking?",
+    "tipVi": "Tổng 11–14 phút. Part 1: 4–5 phút. Part 2: 1 phút chuẩn bị, nói 1–2 phút. Part 3: 4–5 phút.",
+    "detailVi": "Part 2 cố nói đủ gần 2 phút.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007635_1794758007635",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:027",
+    "title": "Band 8 Fluency & Coherence là gì?",
+    "tipVi": "Nói trôi chảy, chỉ thỉnh thoảng ngập ngừng và chủ yếu là để nghĩ ý, không phải để tìm từ; phát triển ý mạch lạc.",
+    "detailVi": "Dùng cụm câu giờ tự nhiên: That's an interesting question… / Let me think…",
+    "skill": "speaking",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007636_1794758007636",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:028",
+    "title": "Band 8 Pronunciation cần gì?",
+    "tipVi": "Dùng đa dạng đặc điểm phát âm: trọng âm từ và câu, ngữ điệu, nối âm.",
+    "detailVi": "Không cần giọng Anh hay Mỹ. Cần rõ ràng và có ngữ điệu.",
+    "skill": "speaking",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007637_1794758007637",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:029",
+    "title": "Cách trả lời Part 3 để lên band 7–8?",
+    "tipVi": "Ý chính → lý do → ví dụ cụ thể → hệ quả hoặc so sánh. Dùng rào đón (it depends, generally speaking).",
+    "detailVi": "Part 3 hỏi ý kiến xã hội, không phải trải nghiệm cá nhân.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007638_1794758007638",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:030",
+    "title": "Dùng idiom thế nào cho đúng?",
+    "tipVi": "Ít mà đúng, tự nhiên. Idiom gượng ép hoặc sai ngữ cảnh làm giảm điểm Lexical Resource.",
+    "detailVi": "Collocation và cụm động từ tự nhiên hiệu quả hơn idiom hiếm.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007639_1794758007639",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:031",
+    "title": "Các cấu trúc ngữ pháp nên có trong Writing/Speaking band 8?",
+    "tipVi": "Mệnh đề quan hệ (cả rút gọn), câu điều kiện (cả đảo ngữ), bị động khách quan (It is believed that…), câu chẻ.",
+    "detailVi": "Dùng tự nhiên, đúng chỗ; độ chính xác quan trọng ngang độ đa dạng.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007640_1794758007640",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:032",
+    "title": "Rào đón (hedging) là gì và vì sao quan trọng?",
+    "tipVi": "Làm mềm khẳng định: may, might, tend to, arguably, it could be argued that. Giúp lập luận học thuật, tránh khái quát quá mức.",
+    "detailVi": "Câu tuyệt đối kiểu 'All young people are addicted to phones' dễ bị coi là thiếu tinh tế.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007641_1794758007641",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:033",
+    "title": "Lỗi ngữ pháp hay gặp làm mất band 7+ của người Việt?",
+    "tipVi": "Mạo từ a/an/the, số ít số nhiều, sự hòa hợp chủ ngữ – động từ, sai dạng từ (economic/economical), thiếu chủ ngữ hoặc động từ.",
+    "detailVi": "Ghi các lỗi này vào deck 6. Lỗi sai sau mỗi bài được chữa.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007642_1794758007642",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:034",
+    "title": "Cách ôn Anki hiệu quả nhất?",
+    "tipVi": "Ôn mỗi ngày, không bỏ ngày. Trả lời trong đầu (hoặc nói to) trước khi lật thẻ, chấm Again thật thà khi quên.",
+    "detailVi": "Đây là gợi nhớ chủ động (active recall) kết hợp lặp lại ngắt quãng; bỏ vài ngày là thẻ dồn rất nặng.",
+    "skill": "speaking",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000056_1794760000056",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:035",
+    "title": "Chữa một đề Listening/Reading đúng cách?",
+    "tipVi": "Không chỉ đếm điểm. Với mỗi câu sai: tìm câu chứa đáp án trong transcript/bài, gạch cặp paraphrase, ghi lý do sai vào Error Log.",
+    "detailVi": "Chữa kỹ 1 đề có giá trị hơn làm vội 3 đề.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000057_1794760000057",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:036",
+    "title": "Chép chính tả (dictation) làm thế nào?",
+    "tipVi": "Chọn 1–2 phút Listening Part 3–4, nghe từng câu, dừng và chép lại từng chữ, rồi so với transcript và ghi từ sai.",
+    "detailVi": "Luyện được cả chính tả, nối âm và từ chức năng hay bị nuốt.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000058_1794760000058",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:037",
+    "title": "Shadowing là gì?",
+    "tipVi": "Nghe một đoạn ngắn và nói đuổi theo gần như cùng lúc, bắt chước ngữ điệu, trọng âm, nhịp.",
+    "detailVi": "10 phút mỗi ngày giúp Pronunciation và Fluency trong Speaking.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000059_1794760000059",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:038",
+    "title": "Sau khi được chữa Writing nên làm gì?",
+    "tipVi": "Viết lại cả bài theo góp ý trong vòng 24 giờ, và đưa lỗi lặp lại vào deck 6. Lỗi sai.",
+    "detailVi": "Sửa lỗi của chính mình là cách nhanh nhất để lên điểm Grammar và Lexical.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000060_1794760000060",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:039",
+    "title": "Luyện Speaking một mình thế nào?",
+    "tipVi": "Ghi âm câu trả lời, nghe lại, ghi 2–3 lỗi (ngập ngừng, sai ngữ pháp, phát âm), rồi trả lời lại cùng câu hỏi.",
+    "detailVi": "Lần nói thứ hai luôn tốt hơn: đó là lúc bạn học thật.",
+    "skill": "listening",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000061_1794760000061",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:040",
+    "title": "Học từ vựng theo cách nào để dùng được trong Writing/Speaking?",
+    "tipVi": "Học theo cụm (collocation) và câu ví dụ, không học từ đơn lẻ; dùng ngay 3 từ mới trong bài viết tuần đó.",
+    "detailVi": "Từ chỉ nhận ra được thì giúp Reading; từ dùng được mới giúp Writing/Speaking.",
+    "skill": "writing",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000062_1794760000062",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:041",
+    "title": "Đọc báo tiếng Anh thế nào để có lợi cho Reading?",
+    "tipVi": "Đọc 1 lần lấy ý chính trong thời gian giới hạn, lần 2 gạch từ và cấu trúc, cuối cùng tóm tắt 3.",
+    "detailVi": "Tóm tắt bằng lời của mình chính là luyện paraphrase.",
+    "skill": "reading",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000063_1794760000063",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:042",
+    "title": "Thi thử full test cần chú ý gì?",
+    "tipVi": "Làm liền một mạch, đúng giờ, trên máy tính, không tạm dừng; sau đó chữa ngay hôm sau.",
+    "detailVi": "Giúp quen sức bền và giao diện thi máy.",
+    "skill": "general",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000064_1794760000064",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:043",
+    "title": "Error Log dùng để làm gì?",
+    "tipVi": "Ghi mọi lỗi theo loại (bẫy paraphrase, chính tả, Not Given, ngữ pháp…).",
+    "detailVi": "Điểm tăng nhanh nhất khi xử lý lỗi lặp lại, không phải khi học thêm cái mới.",
+    "skill": "reading",
+    "category": "The Scholastic Citadel",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760000065_1794760000065",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:044",
+    "title": "Overall, it is clear that",
+    "tipVi": "câu mở đoạn tổng quan (overview) – bắt buộc để có Task Achievement 7+",
+    "detailVi": "câu mở đoạn tổng quan (overview) – bắt buộc để có Task Achievement 7+",
+    "skill": "writing",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794758007405_1794758007408",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:045",
+    "title": "That's an interesting question.",
+    "tipVi": "câu giờ tự nhiên khi gặp câu hỏi lạ (Part 3)",
+    "detailVi": "câu giờ tự nhiên khi gặp câu hỏi lạ (Part 3)",
+    "skill": "listening",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813596_1794760813596",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:046",
+    "title": "Let me think for a second.",
+    "tipVi": "xin vài giây suy nghĩ",
+    "detailVi": "xin vài giây suy nghĩ",
+    "skill": "general",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813597_1794760813597",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:047",
+    "title": "As far as I'm concerned",
+    "tipVi": "theo quan điểm của tôi (trang trọng hơn)",
+    "detailVi": "theo quan điểm của tôi (trang trọng hơn)",
+    "skill": "general",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813600_1794760813600",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:048",
+    "title": "Cách dùng 1 phút chuẩn bị Part 2?",
+    "tipVi": "Ghi 4–6 từ khóa theo các gợi ý của cue card, thêm 1 chi tiết cụ thể (tên, thời gian, nơi chốn) và.",
+    "detailVi": "Nói theo thứ tự gợi ý trên thẻ để không bị bí ý.",
+    "skill": "listening",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813891_1794760813891",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:049",
+    "title": "Khung kể chuyện chung cho Part 2 (2 phút)?",
+    "tipVi": "Mở đầu nêu chủ đề → bối cảnh (khi nào, ở đâu, với ai) → diễn biến chính với 2–3 chi tiết cụ.",
+    "detailVi": "Chi tiết cụ thể và cảm xúc giúp nói đủ 2 phút tự nhiên.",
+    "skill": "listening",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813892_1794760813892",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:050",
+    "title": "Cue card 'Describe a person' triển khai thế nào?",
+    "tipVi": "Họ là ai và quen thế nào → ngoại hình hoặc tính cách nổi bật (kèm 1 ví dụ hành động) → một.",
+    "detailVi": "Dùng tính từ tính cách đa dạng: down-to-earth, easy-going, inspiring, supportive.",
+    "skill": "speaking",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813893_1794760813893",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:051",
+    "title": "Cue card 'Describe a place' triển khai thế nào?",
+    "tipVi": "Tên và vị trí → lần đầu đến, đi với ai → mô tả bằng giác quan (nhìn, nghe, mùi) → hoạt động.",
+    "detailVi": "Mô tả bằng giác quan giúp tăng điểm Lexical Resource.",
+    "skill": "listening",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813894_1794760813894",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:052",
+    "title": "Cue card 'Describe an object / thing you own' triển khai thế nào?",
+    "tipVi": "Đó là gì, có từ khi nào, ai tặng hoặc mua ở đâu → hình dáng, công dụng → bạn dùng nó thế.",
+    "detailVi": "Có thể biến đồ vật thành một câu chuyện nhỏ để dễ nói đủ thời gian.",
+    "skill": "speaking",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813895_1794760813895",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:053",
+    "title": "Cue card 'Describe an event / experience' triển khai thế nào?",
+    "tipVi": "Khi nào, ở đâu → chuẩn bị gì trước đó → điều gì xảy ra (theo trình tự) → có gì bất ngờ.",
+    "detailVi": "Dùng thì quá khứ chính xác: past simple, past continuous, past perfect.",
+    "skill": "speaking",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813896_1794760813896",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:054",
+    "title": "Nếu nói hết ý trước 2 phút thì làm gì?",
+    "tipVi": "Mở rộng bằng: so sánh với hiện tại, nói về điều bạn muốn làm lần sau, hoặc nêu cảm nghĩ của người khác.",
+    "detailVi": "Giám khảo sẽ dừng bạn; cứ nói cho đến khi được ngắt.",
+    "skill": "speaking",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813897_1794760813897",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:055",
+    "title": "Không có trải nghiệm đúng với cue card thì sao?",
+    "tipVi": "Được phép kể một câu chuyện hợp lý hoặc mượn trải nghiệm của người quen. Giám khảo chấm cách nói, không kiểm tra sự thật.",
+    "detailVi": "Chọn câu chuyện bạn có nhiều từ vựng để kể nhất.",
+    "skill": "speaking",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813898_1794760813898",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:056",
+    "title": "Khung trả lời một câu Part 3?",
+    "tipVi": "Nêu ý chính → lý do → ví dụ cụ thể (xã hội hoặc bản thân) → hệ quả hoặc mặt trái → chốt lại.",
+    "detailVi": "Part 3 hỏi về xã hội nói chung, không chỉ về bạn.",
+    "skill": "listening",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813899_1794760813899",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:057",
+    "title": "Câu hỏi so sánh (So sánh X và Y / quá khứ và hiện tại) trả lời thế nào?",
+    "tipVi": "Nêu điểm khác chính → giải thích nguyên nhân → ví dụ → (tuỳ chọn) điểm giống nhau.",
+    "detailVi": "Dùng: whereas, compared to, used to, these days.",
+    "skill": "general",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813900_1794760813900",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:058",
+    "title": "Câu hỏi nguyên nhân (Why do people…?) trả lời thế nào?",
+    "tipVi": "Đưa 2 nguyên nhân, mỗi nguyên nhân kèm giải thích ngắn hoặc ví dụ; có thể nói nguyên nhân nào quan trọng hơn.",
+    "detailVi": "Dùng: one reason is…, another factor is…, perhaps the main reason is…",
+    "skill": "speaking",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813901_1794760813901",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:059",
+    "title": "Câu hỏi giải pháp (How can we solve…?) trả lời thế nào?",
+    "tipVi": "Đề xuất 1–2 giải pháp → ai thực hiện (chính phủ, trường, cá nhân) → vì sao hiệu quả → hạn chế có thể có.",
+    "detailVi": "Dùng câu điều kiện: if the government invested more in…, it would…",
+    "skill": "general",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813902_1794760813902",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:060",
+    "title": "Câu hỏi dự đoán tương lai trả lời thế nào?",
+    "tipVi": "Dự đoán có rào đón → lý do dựa trên xu hướng hiện nay → ví dụ → tác động tốt hoặc xấu.",
+    "detailVi": "Dùng: I'd imagine…, it's quite likely that…, in the long run…",
+    "skill": "general",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813903_1794760813903",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:061",
+    "title": "Câu hỏi đánh giá (Is it good or bad…?) trả lời thế nào?",
+    "tipVi": "Thừa nhận cả hai mặt → nghiêng về một bên và giải thích vì sao → ví dụ.",
+    "detailVi": "Tránh trả lời một chiều tuyệt đối; dùng having said that, on balance.",
+    "skill": "general",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813904_1794760813904",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  },
+  {
+    "id": "tip:062",
+    "title": "Trả lời Part 1 dài bao nhiêu là vừa?",
+    "tipVi": "2–3 câu: trả lời trực tiếp → lý do hoặc chi tiết → (tuỳ chọn) một ví dụ hay so sánh nhỏ.",
+    "detailVi": "Quá ngắn thì thiếu Fluency; quá dài thì giám khảo sẽ cắt.",
+    "skill": "listening",
+    "category": "The Collocation Arena",
+    "provenance": {
+      "createdBy": "import",
+      "source": "ielts_strategies:w_1794760813905_1794760813905",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass"
+      }
+    }
+  }
+]

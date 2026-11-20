@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "para:l3b_001",
+    "level": 3,
+    "questionPhrase": "it is difficult for adults to master",
+    "relation": "equivalent",
+    "context": "Phonetics experiments investigating second-language speech confirm that older learners struggle to attain full command of subtle vowel contrasts absent from their native tongue. Nevertheless, adults who engage in targeted listening practice with minimal-pair recordings achieve markedly clearer pronunciation than peers relying solely on silent reading.",
+    "target": {
+      "text": "older learners struggle to attain full command of",
+      "start": 72,
+      "end": 121
+    },
+    "decoys": [
+      {
+        "text": "subtle vowel contrasts",
+        "start": 122,
+        "end": 144,
+        "whyVi": "Chỉ sự khác biệt nguyên âm tinh tế, là đối tượng khó học."
+      },
+      {
+        "text": "targeted listening practice",
+        "start": 213,
+        "end": 240,
+        "whyVi": "Chỉ luyện nghe chuyên sâu, là giải pháp cải thiện."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (it is difficult for sb to V → sb struggle to V): \"it is difficult for adults to master\" ↔ \"older learners struggle to attain full command of\".",
+    "topics": [
+      "language"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_002",
+    "level": 3,
+    "questionPhrase": "should not be judged solely by",
+    "relation": "equivalent",
+    "context": "Headteachers and education inspectors increasingly agree that secondary schools ought not to be evaluated exclusively on raw exam pass rates published in school league tables. Accounting for prior pupil intake, vocational progression, and pupil wellbeing indicators provides parents with a far fairer view of everyday teaching quality.",
+    "target": {
+      "text": "ought not to be evaluated exclusively on",
+      "start": 80,
+      "end": 120
+    },
+    "decoys": [
+      {
+        "text": "school league tables",
+        "start": 154,
+        "end": 174,
+        "whyVi": "Chỉ bảng xếp hạng trường học, là công cụ so sánh."
+      },
+      {
+        "text": "pupil wellbeing indicators",
+        "start": 239,
+        "end": 265,
+        "whyVi": "Chỉ chỉ số hạnh phúc học sinh, là thước đo bổ sung."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (should not be + V-ed + solely by → ought not to be + V-ed + exclusively on): \"should not be judged solely by\" ↔ \"ought not to be evaluated exclusively on\".",
+    "topics": [
+      "education"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_003",
+    "level": 3,
+    "questionPhrase": "would collapse without insect pollinators",
+    "relation": "equivalent",
+    "context": "Botanists studying alpine flora warn that a substantial share of flowering plants across wild meadow ecosystems could not survive in the absence of pollinating insects such as bumblebees and hoverflies. Attempting manual brush pollination even on small commercial orchards illustrates how economically irreplaceable wild insect services truly are.",
+    "target": {
+      "text": "could not survive in the absence of pollinating insects",
+      "start": 112,
+      "end": 167
+    },
+    "decoys": [
+      {
+        "text": "wild meadow ecosystems",
+        "start": 89,
+        "end": 111,
+        "whyVi": "Chỉ hệ sinh thái đồng cỏ hoang, là đối tượng phụ thuộc."
+      },
+      {
+        "text": "manual brush pollination",
+        "start": 214,
+        "end": 238,
+        "whyVi": "Chỉ thụ phấn thủ công bằng cọ, là biện pháp tốn kém."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (would collapse without → could not survive in the absence of): \"would collapse without insect pollinators\" ↔ \"could not survive in the absence of pollinating insects\".",
+    "topics": [
+      "environment"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_004",
+    "level": 3,
+    "questionPhrase": "was originally developed to treat",
+    "relation": "equivalent",
+    "context": "Medical historians note that several widely prescribed compounds in modern repurposed drug trials first entered clinical use as a remedy for entirely unrelated disorders such as elevated blood pressure. Because their basic safety profiles are already well documented in hospital records, testing them for secondary applications takes far less time.",
+    "target": {
+      "text": "first entered clinical use as a remedy for",
+      "start": 98,
+      "end": 140
+    },
+    "decoys": [
+      {
+        "text": "elevated blood pressure",
+        "start": 178,
+        "end": 201,
+        "whyVi": "Chỉ huyết áp cao, là bệnh ban đầu."
+      },
+      {
+        "text": "repurposed drug trials",
+        "start": 75,
+        "end": 97,
+        "whyVi": "Chỉ thử nghiệm tái sử dụng thuốc, là lĩnh vực nghiên cứu."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bị động was developed to V → chủ động entered use as a remedy for): \"was originally developed to treat\" ↔ \"first entered clinical use as a remedy for\".",
+    "topics": [
+      "health"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_005",
+    "level": 3,
+    "questionPhrase": "users seldom read before clicking agree",
+    "relation": "equivalent",
+    "context": "Usability researchers testing mobile onboarding flows confirm that lengthy privacy agreements written in dense legal prose are rarely examined by subscribers prior to granting consent. Replacing ten-page scrolls with concise layered summary boxes showing exact data-sharing switches dramatically improves genuine user comprehension.",
+    "target": {
+      "text": "are rarely examined by subscribers prior to granting consent",
+      "start": 123,
+      "end": 183
+    },
+    "decoys": [
+      {
+        "text": "lengthy privacy agreements",
+        "start": 67,
+        "end": 93,
+        "whyVi": "Chỉ thỏa thuận quyền riêng tư dài dòng, là chủ thể bị bỏ qua."
+      },
+      {
+        "text": "layered summary boxes",
+        "start": 225,
+        "end": 246,
+        "whyVi": "Chỉ hộp tóm tắt phân tầng, là giải pháp cải thiện."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (chủ động users seldom read → bị động are rarely examined by subscribers): \"users seldom read before clicking agree\" ↔ \"are rarely examined by subscribers prior to granting consent\".",
+    "topics": [
+      "technology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_006",
+    "level": 3,
+    "questionPhrase": "were once lined with factories",
+    "relation": "equivalent",
+    "context": "Across many post-industrial port cities, former industrial riverfronts that previously hosted dense clusters of manufacturing plants and coal wharves have been transformed into shaded parks and reclaimed canal towpaths. Careful soil remediation has turned once-fenced waterfronts into vibrant public corridors linking central districts to suburban marshes.",
+    "target": {
+      "text": "previously hosted dense clusters of manufacturing plants",
+      "start": 76,
+      "end": 132
+    },
+    "decoys": [
+      {
+        "text": "reclaimed canal towpaths",
+        "start": 194,
+        "end": 218,
+        "whyVi": "Chỉ đường ven kênh được cải tạo, là diện mạo mới."
+      },
+      {
+        "text": "former industrial riverfronts",
+        "start": 41,
+        "end": 70,
+        "whyVi": "Chỉ bờ sông công nghiệp cũ, là khu vực biến đổi."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bị động were once lined with → chủ động previously hosted): \"were once lined with factories\" ↔ \"previously hosted dense clusters of manufacturing plants\".",
+    "topics": [
+      "urban"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_007",
+    "level": 3,
+    "questionPhrase": "are reluctant to switch careers",
+    "relation": "equivalent",
+    "context": "Labour surveys show that mid-career factory technicians often hesitate to move into a different occupation when retraining requires two years of unpaid study without guaranteed placement. Offering evening short modular diplomas co-designed with local green-energy employers removes much of the financial risk that stalls career transitions.",
+    "target": {
+      "text": "hesitate to move into a different occupation",
+      "start": 62,
+      "end": 106
+    },
+    "decoys": [
+      {
+        "text": "mid-career factory technicians",
+        "start": 25,
+        "end": 55,
+        "whyVi": "Chỉ kỹ thuật viên nhà máy giữa sự nghiệp, là nhóm đối tượng."
+      },
+      {
+        "text": "short modular diplomas",
+        "start": 205,
+        "end": 227,
+        "whyVi": "Chỉ chứng chỉ mô-đun ngắn hạn, là công cụ hỗ trợ chuyển đổi."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (be reluctant to V → hesitate to V): \"are reluctant to switch careers\" ↔ \"hesitate to move into a different occupation\".",
+    "topics": [
+      "work"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_008",
+    "level": 3,
+    "questionPhrase": "tends to widen the gap between",
+    "relation": "equivalent",
+    "context": "Wealth distribution analysts observe that rapid urban house-price growth often deepens the disparity separating existing property owners from younger first-time homebuyers earning modest wages. Without sustained expansion of cooperative rental housing, inherited family savings increasingly determine who can afford to live near high-skill job clusters.",
+    "target": {
+      "text": "often deepens the disparity separating",
+      "start": 73,
+      "end": 111
+    },
+    "decoys": [
+      {
+        "text": "rapid urban house-price growth",
+        "start": 42,
+        "end": 72,
+        "whyVi": "Chỉ đà tăng giá nhà đô thị nhanh, là nguyên nhân."
+      },
+      {
+        "text": "first-time homebuyers",
+        "start": 150,
+        "end": 171,
+        "whyVi": "Chỉ người mua nhà lần đầu, là một bên của khoảng cách."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (tend to widen the gap between → often deepen the disparity separating): \"tends to widen the gap between\" ↔ \"often deepens the disparity separating\".",
+    "topics": [
+      "economy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_009",
+    "level": 3,
+    "questionPhrase": "has made flying seem cheaper than",
+    "relation": "equivalent",
+    "context": "Transport economists point out that decades of international exemptions on tax-free aviation fuel have rendered air travel deceptively less costly than cross-border rail tickets on identical European corridors. Harmonising track access fees and introducing transparent carbon pricing would allow high-speed trains to compete on fairer financial terms.",
+    "target": {
+      "text": "have rendered air travel deceptively less costly than",
+      "start": 98,
+      "end": 151
+    },
+    "decoys": [
+      {
+        "text": "tax-free aviation fuel",
+        "start": 75,
+        "end": 97,
+        "whyVi": "Chỉ nhiên liệu hàng không miễn thuế, là nguyên nhân chính sách."
+      },
+      {
+        "text": "cross-border rail tickets",
+        "start": 152,
+        "end": 177,
+        "whyVi": "Chỉ vé tàu hỏa xuyên biên giới, là phương tiện bị thiệt thòi."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (make X seem cheaper than → render X deceptively less costly than): \"has made flying seem cheaper than\" ↔ \"has rendered air travel deceptively less costly than\".",
+    "topics": [
+      "transport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_010",
+    "level": 3,
+    "questionPhrase": "remains poorly understood despite decades of study",
+    "relation": "equivalent",
+    "context": "Although marine biologists have deployed hundreds of satellite pop-up tags along continental shelves, the exact navigational cues guiding deep-ocean eel spawning continue to puzzle researchers even after extensive investigation. Tracing how mature adults locate distant mid-ocean currents without visual landmarks remains an active frontier in sensory ecology.",
+    "target": {
+      "text": "continue to puzzle researchers even after extensive investigation",
+      "start": 162,
+      "end": 227
+    },
+    "decoys": [
+      {
+        "text": "deep-ocean eel spawning",
+        "start": 138,
+        "end": 161,
+        "whyVi": "Chỉ quá trình sinh sản cá chình biển sâu, là hiện tượng bí ẩn."
+      },
+      {
+        "text": "satellite pop-up tags",
+        "start": 53,
+        "end": 74,
+        "whyVi": "Chỉ thẻ vệ tinh tự nổi, là công cụ theo dõi."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (remain poorly understood despite → continue to puzzle researchers even after): \"remains poorly understood despite decades of study\" ↔ \"continues to puzzle researchers even after extensive investigation\".",
+    "topics": [
+      "science"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_011",
+    "level": 3,
+    "questionPhrase": "depend on a single overseas supplier",
+    "relation": "equivalent",
+    "context": "Supply-chain audits following major port disruptions revealed how precarious just-in-time factory schedules become when vehicle makers rely exclusively upon one foreign manufacturer for specialised microcontrollers. Firms now maintain dual sourcing agreements and modest regional buffer warehouses to cushion assembly lines against sudden logistics bottlenecks.",
+    "target": {
+      "text": "rely exclusively upon one foreign manufacturer",
+      "start": 135,
+      "end": 181
+    },
+    "decoys": [
+      {
+        "text": "just-in-time factory schedules",
+        "start": 77,
+        "end": 107,
+        "whyVi": "Chỉ lịch sản xuất vừa kịp lúc, là mô hình vận hành dễ tổn thương."
+      },
+      {
+        "text": "regional buffer warehouses",
+        "start": 271,
+        "end": 297,
+        "whyVi": "Chỉ kho dự trữ vùng, là giải pháp dự phòng."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (depend on a single → rely exclusively upon one): \"depend on a single overseas supplier\" ↔ \"rely exclusively upon one foreign manufacturer\".",
+    "topics": [
+      "globalisation"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_012",
+    "level": 3,
+    "questionPhrase": "was shelved following public outcry",
+    "relation": "equivalent",
+    "context": "A proposed toll ring road cutting across community allotments was abandoned in the wake of widespread citizen protests and critical environmental impact submissions from neighbouring towns. City leaders subsequently redirected capital funds towards bus priority corridors and commuter rail subsidies that enjoyed far broader neighbourhood backing.",
+    "target": {
+      "text": "was abandoned in the wake of widespread citizen protests",
+      "start": 62,
+      "end": 118
+    },
+    "decoys": [
+      {
+        "text": "proposed toll ring road",
+        "start": 2,
+        "end": 25,
+        "whyVi": "Chỉ đường vành đai thu phí dự kiến, là dự án bị hủy."
+      },
+      {
+        "text": "commuter rail subsidies",
+        "start": 276,
+        "end": 299,
+        "whyVi": "Chỉ trợ giá tàu đi làm, là phương án thay thế."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bị động shelved following → abandoned in the wake of): \"was shelved following public outcry\" ↔ \"was abandoned in the wake of widespread citizen protests\".",
+    "topics": [
+      "government"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_013",
+    "level": 3,
+    "questionPhrase": "owes much of its popularity to",
+    "relation": "equivalent",
+    "context": "Cultural geographers visiting East Asian port cities observe that the enduring vibrancy of seasonal night street markets derives a large share of its appeal from informal social gathering as much as from affordable family dining. Unlike enclosed shopping malls, open-air stalls invite neighbours of all ages to linger after dusk.",
+    "target": {
+      "text": "derives a large share of its appeal from",
+      "start": 121,
+      "end": 161
+    },
+    "decoys": [
+      {
+        "text": "seasonal night street markets",
+        "start": 91,
+        "end": 120,
+        "whyVi": "Chỉ chợ đêm đường phố theo mùa, là đối tượng được nhắc đến."
+      },
+      {
+        "text": "affordable family dining",
+        "start": 204,
+        "end": 228,
+        "whyVi": "Chỉ bữa ăn gia đình giá phải chăng, là yếu tố thu hút."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (owe much of its popularity to → derive a large share of its appeal from): \"owes much of its popularity to\" ↔ \"derives a large share of its appeal from\".",
+    "topics": [
+      "culture"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_014",
+    "level": 3,
+    "questionPhrase": "is often taken out of context",
+    "relation": "equivalent",
+    "context": "Journalism researchers monitoring short-form social feeds warn that commentary extracted from brief parliamentary video clips is frequently stripped of its original framing when edited into ten-second reaction posts. Linking viral excerpts directly to full verbatim transcripts helps viewers judge whether a speaker was qualifying an argument or endorsing it.",
+    "target": {
+      "text": "is frequently stripped of its original framing",
+      "start": 126,
+      "end": 172
+    },
+    "decoys": [
+      {
+        "text": "brief parliamentary video clips",
+        "start": 94,
+        "end": 125,
+        "whyVi": "Chỉ đoạn video nghị trường ngắn, là nội dung dễ bị cắt ghép."
+      },
+      {
+        "text": "full verbatim transcripts",
+        "start": 252,
+        "end": 277,
+        "whyVi": "Chỉ biên bản nguyên văn đầy đủ, là nguồn kiểm chứng."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bị động taken out of context → stripped of its original framing): \"is often taken out of context\" ↔ \"is frequently stripped of its original framing\".",
+    "topics": [
+      "media"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_015",
+    "level": 3,
+    "questionPhrase": "plays a far smaller role than",
+    "relation": "equivalent",
+    "context": "Decades of empirical criminology research indicate that the severity of longer prison terms exerts considerably less influence than the certainty of swift detection in deterring premeditated property offences. Consequently, justice reformers favour well-staffed investigative units and prompt court hearings over costly blanket sentencing increases.",
+    "target": {
+      "text": "exerts considerably less influence than",
+      "start": 92,
+      "end": 131
+    },
+    "decoys": [
+      {
+        "text": "longer prison terms",
+        "start": 72,
+        "end": 91,
+        "whyVi": "Chỉ án tù dài hơn, là biện pháp răn đe yếu hơn."
+      },
+      {
+        "text": "certainty of swift detection",
+        "start": 136,
+        "end": 164,
+        "whyVi": "Chỉ sự chắc chắn bị phát hiện nhanh, là yếu tố có tác động mạnh hơn."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (play a far smaller role than → exert considerably less influence than): \"plays a far smaller role than\" ↔ \"exerts considerably less influence than\".",
+    "topics": [
+      "crime"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_016",
+    "level": 3,
+    "questionPhrase": "are increasingly delaying marriage",
+    "relation": "equivalent",
+    "context": "Demographic censuses across industrialised economies confirm that young adults are postponing formal partnerships until later in life compared with cohorts born thirty years earlier. Researchers attribute this shift to extended university degrees, unstable entry-level contracts, and rising urban rental costs that slow financial independence.",
+    "target": {
+      "text": "are postponing formal partnerships until later in life",
+      "start": 79,
+      "end": 133
+    },
+    "decoys": [
+      {
+        "text": "rising urban rental costs",
+        "start": 284,
+        "end": 309,
+        "whyVi": "Chỉ chi phí thuê nhà đô thị tăng, là nguyên nhân kinh tế."
+      },
+      {
+        "text": "extended university degrees",
+        "start": 219,
+        "end": 246,
+        "whyVi": "Chỉ thời gian học đại học kéo dài, là yếu tố bối cảnh."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (increasingly delay + N → postpone + N + until later in life): \"are increasingly delaying marriage\" ↔ \"are postponing formal partnerships until later in life\".",
+    "topics": [
+      "family"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_017",
+    "level": 3,
+    "questionPhrase": "leaves behind tonnes of plastic litter",
+    "relation": "equivalent",
+    "context": "Mountain wardens patrolling popular alpine trekking trails report that peak-summer footfall generates vast quantities of discarded polymer waste around high-altitude huts where haulage helicopters are expensive. Installing filtered reusable trail water stations at village trailheads has already cut single-use bottle disposal by more than half.",
+    "target": {
+      "text": "generates vast quantities of discarded polymer waste",
+      "start": 92,
+      "end": 144
+    },
+    "decoys": [
+      {
+        "text": "popular alpine trekking trails",
+        "start": 28,
+        "end": 58,
+        "whyVi": "Chỉ tuyến đường leo núi nổi tiếng, là địa điểm bị ảnh hưởng."
+      },
+      {
+        "text": "reusable trail water stations",
+        "start": 232,
+        "end": 261,
+        "whyVi": "Chỉ trạm cấp nước tái sử dụng trên đường mòn, là giải pháp."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (leave behind + N → generate + N): \"leaves behind tonnes of plastic litter\" ↔ \"generates vast quantities of discarded polymer waste\".",
+    "topics": [
+      "tourism"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_018",
+    "level": 3,
+    "questionPhrase": "contains far fewer preservatives than",
+    "relation": "equivalent",
+    "context": "Food scientists debunking common pantry myths explain that flash-frozen garden peas harvested at peak ripeness rely on markedly fewer chemical additives than heavily seasoned shelf-stable canned soups. Because rapid chilling halts enzymatic decay naturally within hours of picking, frozen vegetables retain crisp texture and vitamin C cleanly.",
+    "target": {
+      "text": "rely on markedly fewer chemical additives than",
+      "start": 111,
+      "end": 157
+    },
+    "decoys": [
+      {
+        "text": "flash-frozen garden peas",
+        "start": 59,
+        "end": 83,
+        "whyVi": "Chỉ đậu Hà Lan cấp đông nhanh, là thực phẩm được so sánh."
+      },
+      {
+        "text": "shelf-stable canned soups",
+        "start": 175,
+        "end": 200,
+        "whyVi": "Chỉ súp đóng hộp để lâu, là nhóm đối chiếu."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (contain far fewer X than → rely on markedly fewer Y than): \"contains far fewer preservatives than\" ↔ \"relies on markedly fewer chemical additives than\".",
+    "topics": [
+      "food"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_019",
+    "level": 3,
+    "questionPhrase": "allows visitors to touch replicas",
+    "relation": "equivalent",
+    "context": "Inclusive curators at regional archaeology museums have introduced three-dimensional resin scans alongside glass display cases, a practice that permits gallery-goers to handle tactile reproductions of carved stone reliefs. Feedback from visually impaired patrons and primary schoolchildren alike shows that physical exploration deepens curiosity about ancient craft.",
+    "target": {
+      "text": "permits gallery-goers to handle tactile reproductions",
+      "start": 144,
+      "end": 197
+    },
+    "decoys": [
+      {
+        "text": "visually impaired patrons",
+        "start": 237,
+        "end": 262,
+        "whyVi": "Chỉ khách tham quan khiếm thị, là nhóm hưởng lợi trực tiếp."
+      },
+      {
+        "text": "three-dimensional resin scans",
+        "start": 67,
+        "end": 96,
+        "whyVi": "Chỉ bản in nhựa ba chiều, là công nghệ tạo bản sao."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (allow sb to V → permit sb to V): \"allows visitors to touch replicas\" ↔ \"permits gallery-goers to handle tactile reproductions\".",
+    "topics": [
+      "arts"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_020",
+    "level": 3,
+    "questionPhrase": "was once barred from competing",
+    "relation": "equivalent",
+    "context": "Sports archives recall that until the late twentieth century, long-distance female athletes were historically excluded from official races exceeding fifteen hundred metres due to unfounded physiological assumptions. Once entry restrictions were lifted, rapid improvements in modern marathon finish times quickly overturned decades of outdated medical prejudice.",
+    "target": {
+      "text": "were historically excluded from official races",
+      "start": 92,
+      "end": 138
+    },
+    "decoys": [
+      {
+        "text": "long-distance female athletes",
+        "start": 62,
+        "end": 91,
+        "whyVi": "Chỉ vận động viên nữ chạy đường dài, là chủ thể bị cấm trước đây."
+      },
+      {
+        "text": "modern marathon finish times",
+        "start": 275,
+        "end": 303,
+        "whyVi": "Chỉ thành tích về đích marathon hiện đại, là kết quả sau này."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bị động was once barred from V-ing → was historically excluded from N): \"was once barred from competing\" ↔ \"was historically excluded from official races\".",
+    "topics": [
+      "sport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_021",
+    "level": 3,
+    "questionPhrase": "can recognise individual human faces",
+    "relation": "equivalent",
+    "context": "Controlled behavioural trials using masked field researchers across university campuses revealed that urban hooded crows possess the capacity to distinguish specific people visually and remember perceived threats for years. Remarkably, parent birds even alert newly fledged offspring through alarm calls whenever a previously unfriendly mask reappears nearby.",
+    "target": {
+      "text": "possess the capacity to distinguish specific people visually",
+      "start": 121,
+      "end": 181
+    },
+    "decoys": [
+      {
+        "text": "urban hooded crows",
+        "start": 102,
+        "end": 120,
+        "whyVi": "Chỉ loài quạ thành thị, là đối tượng thí nghiệm."
+      },
+      {
+        "text": "masked field researchers",
+        "start": 36,
+        "end": 60,
+        "whyVi": "Chỉ nhà nghiên cứu đeo mặt nạ, là cách kiểm chứng."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (can recognise X → possess the capacity to distinguish Y): \"can recognise individual human faces\" ↔ \"possess the capacity to distinguish specific people visually\".",
+    "topics": [
+      "animals"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_022",
+    "level": 3,
+    "questionPhrase": "fell into disuse once railways arrived",
+    "relation": "equivalent",
+    "context": "Built at immense cost during the eighteenth century, an extensive network of horse-drawn barge canals across industrial lowlands was gradually abandoned after steam locomotives expanded freight speed and reliability. More than a century later, volunteer trusts restored crumbling locks, turning the silent waterways into corridors for weekend leisure boaters.",
+    "target": {
+      "text": "was gradually abandoned after steam locomotives expanded",
+      "start": 129,
+      "end": 185
+    },
+    "decoys": [
+      {
+        "text": "horse-drawn barge canals",
+        "start": 77,
+        "end": 101,
+        "whyVi": "Chỉ kênh vận tải sà lan ngựa kéo, là hạ tầng cũ."
+      },
+      {
+        "text": "weekend leisure boaters",
+        "start": 335,
+        "end": 358,
+        "whyVi": "Chỉ người đi thuyền giải trí cuối tuần, là nhóm hồi sinh kênh sau này."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (fall into disuse once → be gradually abandoned after): \"fell into disuse once railways arrived\" ↔ \"was gradually abandoned after steam locomotives expanded\".",
+    "topics": [
+      "history"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_023",
+    "level": 3,
+    "questionPhrase": "tend to overestimate how long",
+    "relation": "equivalent",
+    "context": "Affective forecasting studies demonstrate that healthy adults commonly misjudge the duration for which brief emotional setbacks, such as failing a driving test or losing a minor promotion, will dampen daily happiness. Because people overlook their own everyday coping routines, actual mood recovery typically happens far sooner than predicted.",
+    "target": {
+      "text": "commonly misjudge the duration for which",
+      "start": 62,
+      "end": 102
+    },
+    "decoys": [
+      {
+        "text": "brief emotional setbacks",
+        "start": 103,
+        "end": 127,
+        "whyVi": "Chỉ cú sốc cảm xúc ngắn hạn, là đối tượng dự đoán."
+      },
+      {
+        "text": "everyday coping routines",
+        "start": 252,
+        "end": 276,
+        "whyVi": "Chỉ thói quen thích nghi hàng ngày, là yếu tố giúp hồi phục nhanh hơn dự kiến."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (tend to overestimate how long → commonly misjudge the duration for which): \"tend to overestimate how long\" ↔ \"commonly misjudge the duration for which\".",
+    "topics": [
+      "psychology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_024",
+    "level": 3,
+    "questionPhrase": "is far too faint to see unaided",
+    "relation": "equivalent",
+    "context": "Beyond Neptune’s orbit lie thousands of distant icy dwarf worlds whose dim reflected sunlight cannot be observed without optical instruments mounted on high-altitude mountain peaks. Automated long-exposure sky surveys compare images captured weeks apart to detect tiny slow-moving dots drifting against fixed background stars.",
+    "target": {
+      "text": "cannot be observed without optical instruments",
+      "start": 94,
+      "end": 140
+    },
+    "decoys": [
+      {
+        "text": "distant icy dwarf worlds",
+        "start": 40,
+        "end": 64,
+        "whyVi": "Chỉ các hành tinh lùn băng giá xa xôi, là vật thể quan sát."
+      },
+      {
+        "text": "long-exposure sky surveys",
+        "start": 192,
+        "end": 217,
+        "whyVi": "Chỉ khảo sát bầu trời phơi sáng lâu, là phương pháp phát hiện."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (too + adj + to V → cannot be + V-ed + without): \"is far too faint to see unaided\" ↔ \"cannot be observed without optical instruments\".",
+    "topics": [
+      "space"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_025",
+    "level": 3,
+    "questionPhrase": "has fallen dramatically in price",
+    "relation": "equivalent",
+    "context": "Over the past fifteen years, utility-scale photovoltaic panels have experienced a steep drop in manufacturing cost driven by automated silicon slicing and larger factory volumes. As a result, building fresh solar capacity now undercuts running existing coal-fired generating units across a growing number of sunny regions.",
+    "target": {
+      "text": "have experienced a steep drop in manufacturing cost",
+      "start": 63,
+      "end": 114
+    },
+    "decoys": [
+      {
+        "text": "utility-scale photovoltaic panels",
+        "start": 29,
+        "end": 62,
+        "whyVi": "Chỉ tấm pin quang điện quy mô lớn, là đối tượng giảm giá."
+      },
+      {
+        "text": "coal-fired generating units",
+        "start": 253,
+        "end": 280,
+        "whyVi": "Chỉ nhà máy điện than, là nguồn năng lượng cạnh tranh."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (has fallen dramatically in price → has experienced a steep drop in cost): \"has fallen dramatically in price\" ↔ \"has experienced a steep drop in manufacturing cost\".",
+    "topics": [
+      "energy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_026",
+    "level": 3,
+    "questionPhrase": "borrows heavily from neighbouring tongues",
+    "relation": "equivalent",
+    "context": "Historical linguists studying maritime crossroads observe that every living commercial language absorbs numerous loanwords from adjacent speech communities along active shipping lanes. Despite periodic warnings from strict grammar academies, port trade vocabularies enrich everyday expression without eroding core native sentence structures.",
+    "target": {
+      "text": "absorbs numerous loanwords from adjacent speech communities",
+      "start": 96,
+      "end": 155
+    },
+    "decoys": [
+      {
+        "text": "port trade vocabularies",
+        "start": 242,
+        "end": 265,
+        "whyVi": "Chỉ vốn từ thương mại cảng biển, là ví dụ ngôn ngữ pha trộn."
+      },
+      {
+        "text": "strict grammar academies",
+        "start": 216,
+        "end": 240,
+        "whyVi": "Chỉ viện hàn lâm ngữ pháp bảo thủ, thường phản đối từ vay mượn."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (borrow heavily from → absorb numerous loanwords from): \"borrows heavily from neighbouring tongues\" ↔ \"absorbs numerous loanwords from adjacent speech communities\".",
+    "topics": [
+      "language"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_027",
+    "level": 3,
+    "questionPhrase": "benefits learners of every background",
+    "relation": "equivalent",
+    "context": "Meta-analyses of primary reading interventions indicate that systematic, structured phonics instruction yields advantages across all socioeconomic groups during the first two years of schooling. Gains are steepest for pupils entering reception with limited home reading resources, narrowing early decoding gaps before upper-primary textbooks grow more complex.",
+    "target": {
+      "text": "yields advantages across all socioeconomic groups",
+      "start": 104,
+      "end": 153
+    },
+    "decoys": [
+      {
+        "text": "structured phonics instruction",
+        "start": 73,
+        "end": 103,
+        "whyVi": "Chỉ phương pháp dạy đánh vần có cấu trúc, là biện pháp giảng dạy."
+      },
+      {
+        "text": "home reading resources",
+        "start": 257,
+        "end": 279,
+        "whyVi": "Chỉ nguồn sách đọc tại nhà, là yếu tố khác biệt giữa các gia đình."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (benefit X of every Y → yield advantages across all Y): \"benefits learners of every background\" ↔ \"yields advantages across all socioeconomic groups\".",
+    "topics": [
+      "education"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_028",
+    "level": 3,
+    "questionPhrase": "takes centuries to rebuild once lost",
+    "relation": "equivalent",
+    "context": "Wetland scientists emphasise that deep peatland carbon layers accumulate at roughly one millimetre per year and therefore require hundreds of years to regenerate after destruction by fire or agricultural drainage ditches. Blocking old trenches to rewet upland bogs stops immediate carbon release far faster than planting new saplings.",
+    "target": {
+      "text": "require hundreds of years to regenerate after destruction",
+      "start": 122,
+      "end": 179
+    },
+    "decoys": [
+      {
+        "text": "peatland carbon layers",
+        "start": 39,
+        "end": 61,
+        "whyVi": "Chỉ lớp than bùn giữ carbon, là hệ sinh thái dễ tổn thương."
+      },
+      {
+        "text": "agricultural drainage ditches",
+        "start": 191,
+        "end": 220,
+        "whyVi": "Chỉ mương tiêu nước nông nghiệp, là nguyên nhân làm khô đầm lầy."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (take centuries to V once lost → require hundreds of years to V after N): \"takes centuries to rebuild once lost\" ↔ \"requires hundreds of years to regenerate after destruction\".",
+    "topics": [
+      "environment"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_029",
+    "level": 3,
+    "questionPhrase": "is closely tied to sleep quality",
+    "relation": "equivalent",
+    "context": "Paediatric sleep researchers reviewing secondary attendance logs confirm that adolescent mood stability is tightly linked with restorative overnight rest rather than sheer total hours spent in bed with glowing phones. Districts trialling later school start times recorded calmer morning behaviour and fewer late-bus absences.",
+    "target": {
+      "text": "is tightly linked with restorative overnight rest",
+      "start": 104,
+      "end": 153
+    },
+    "decoys": [
+      {
+        "text": "adolescent mood stability",
+        "start": 78,
+        "end": 103,
+        "whyVi": "Chỉ sự ổn định tâm trạng vị thành niên, là khía cạnh sức khỏe."
+      },
+      {
+        "text": "later school start times",
+        "start": 238,
+        "end": 262,
+        "whyVi": "Chỉ giờ vào học muộn hơn, là điều chỉnh chính sách."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (be closely tied to → be tightly linked with): \"is closely tied to sleep quality\" ↔ \"is tightly linked with restorative overnight rest\".",
+    "topics": [
+      "health"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_030",
+    "level": 3,
+    "questionPhrase": "was never intended for sensitive records",
+    "relation": "equivalent",
+    "context": "Cybersecurity auditors advising regional clinics remind administrators that standard email protocols date from an era of open academic messaging and were not originally engineered to store confidential files such as laboratory diagnoses. Migrating test notifications onto encrypted secure patient portals sharply curbs accidental data exposure.",
+    "target": {
+      "text": "were not originally engineered to store confidential files",
+      "start": 149,
+      "end": 207
+    },
+    "decoys": [
+      {
+        "text": "standard email protocols",
+        "start": 76,
+        "end": 100,
+        "whyVi": "Chỉ giao thức email tiêu chuẩn, là công nghệ cũ."
+      },
+      {
+        "text": "secure patient portals",
+        "start": 282,
+        "end": 304,
+        "whyVi": "Chỉ cổng thông tin bệnh nhân bảo mật, là phương án thay thế."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (was never intended for N → was not originally engineered to V): \"was never intended for sensitive records\" ↔ \"was not originally engineered to store confidential files\".",
+    "topics": [
+      "technology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_031",
+    "level": 3,
+    "questionPhrase": "helps cool streets during heatwaves",
+    "relation": "equivalent",
+    "context": "Thermal drone surveys over dense residential districts show that planting continuous avenue tree canopies mitigates urban heat during extreme summer spells by lowering pavement temperatures several degrees compared with open dark asphalt car parks. Shade corridors also reduce air-conditioning peaks for ground-floor elderly residents.",
+    "target": {
+      "text": "mitigates urban heat during extreme summer spells",
+      "start": 106,
+      "end": 155
+    },
+    "decoys": [
+      {
+        "text": "continuous avenue tree canopies",
+        "start": 74,
+        "end": 105,
+        "whyVi": "Chỉ tán cây liên tục dọc đại lộ, là yếu tố làm mát."
+      },
+      {
+        "text": "dark asphalt car parks",
+        "start": 225,
+        "end": 247,
+        "whyVi": "Chỉ bãi đỗ xe nhựa đường tối màu, là nơi hấp thụ nhiệt."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (help cool X during Y → mitigate X heat during Y): \"helps cool streets during heatwaves\" ↔ \"mitigates urban heat during extreme summer spells\".",
+    "topics": [
+      "urban"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_032",
+    "level": 3,
+    "questionPhrase": "can be completed without supervision",
+    "relation": "equivalent",
+    "context": "Workplace productivity evaluations show that focused tasks such as technical proofreading assignments and code audits can be carried out autonomously once clear quality criteria are agreed upfront. Eliminating strict hourly check-ins reduces anxiety among experienced specialists and lowers error rates across tight project deadlines.",
+    "target": {
+      "text": "can be carried out autonomously",
+      "start": 118,
+      "end": 149
+    },
+    "decoys": [
+      {
+        "text": "technical proofreading assignments",
+        "start": 67,
+        "end": 101,
+        "whyVi": "Chỉ công việc hiệu đính kỹ thuật, là ví dụ nhiệm vụ độc lập."
+      },
+      {
+        "text": "strict hourly check-ins",
+        "start": 210,
+        "end": 233,
+        "whyVi": "Chỉ việc điểm danh gắt gao theo giờ, là kiểu quản lý vi mô."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (can be V-ed without N → can be V-ed + adv): \"can be completed without supervision\" ↔ \"can be carried out autonomously\".",
+    "topics": [
+      "work"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_033",
+    "level": 3,
+    "questionPhrase": "relies too heavily on tourism",
+    "relation": "equivalent",
+    "context": "Regional finance ministries warn that small coastal island economies suffer sharp employment swings whenever local commerce is overly dependent upon visitor revenue concentrated between June and August. Supporting remote digital studios and marine aquaculture helps sustain year-round wages even during off-season ferry cancellations.",
+    "target": {
+      "text": "is overly dependent upon visitor revenue",
+      "start": 124,
+      "end": 164
+    },
+    "decoys": [
+      {
+        "text": "small coastal island economies",
+        "start": 38,
+        "end": 68,
+        "whyVi": "Chỉ nền kinh tế đảo nhỏ ven biển, là chủ thể phụ thuộc."
+      },
+      {
+        "text": "off-season ferry cancellations",
+        "start": 303,
+        "end": 333,
+        "whyVi": "Chỉ hủy chuyến phà trái mùa, là rủi ro thực tế."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (rely too heavily on N → be overly dependent upon N): \"relies too heavily on tourism\" ↔ \"is overly dependent upon visitor revenue\".",
+    "topics": [
+      "economy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_034",
+    "level": 3,
+    "questionPhrase": "encourages drivers to leave cars behind",
+    "relation": "equivalent",
+    "context": "Commuter tracking studies demonstrate that reliable, frequent suburban tram departures paired with free outer-ring car parks persuade motorists to switch away from private vehicles far more effectively than public awareness posters alone. Once transit headways stay under eight minutes, passengers stop checking printed schedules altogether.",
+    "target": {
+      "text": "persuade motorists to switch away from private vehicles",
+      "start": 125,
+      "end": 180
+    },
+    "decoys": [
+      {
+        "text": "frequent suburban tram departures",
+        "start": 53,
+        "end": 86,
+        "whyVi": "Chỉ chuyến tàu điện ngoại ô dày đặc, là yếu tố khuyến khích."
+      },
+      {
+        "text": "free outer-ring car parks",
+        "start": 99,
+        "end": 124,
+        "whyVi": "Chỉ bãi đỗ xe vành đai miễn phí, là tiện ích phụ trợ."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (encourage sb to V → persuade sb to V): \"encourages drivers to leave cars behind\" ↔ \"persuades motorists to switch away from private vehicles\".",
+    "topics": [
+      "transport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_035",
+    "level": 3,
+    "questionPhrase": "must be tested on larger groups",
+    "relation": "equivalent",
+    "context": "Biostatisticians caution health journalists against treating promising pilot study findings derived from small university volunteer pools as settled clinical truth. Any new behavioural therapy requires validation across broader participant cohorts spanning diverse ages and medical histories before hospitals revise national treatment guidelines.",
+    "target": {
+      "text": "requires validation across broader participant cohorts",
+      "start": 193,
+      "end": 247
+    },
+    "decoys": [
+      {
+        "text": "promising pilot study findings",
+        "start": 61,
+        "end": 91,
+        "whyVi": "Chỉ kết quả nghiên cứu thí điểm đầy hứa hẹn, là đối tượng cần kiểm chứng."
+      },
+      {
+        "text": "small university volunteer pools",
+        "start": 105,
+        "end": 137,
+        "whyVi": "Chỉ nhóm tình nguyện viên đại học nhỏ, là hạn chế ban đầu."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (modal bị động must be V-ed → chủ động require + N): \"must be tested on larger groups\" ↔ \"requires validation across broader participant cohorts\".",
+    "topics": [
+      "science"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_036",
+    "level": 3,
+    "questionPhrase": "enables small firms to sell worldwide",
+    "relation": "equivalent",
+    "context": "Integrated online storefronts paired with automated customs declarations have transformed niche exports by creating infrastructure that allows modest enterprises to reach international buyers without hiring overseas distributors. Rural producers such as local ceramic workshops and wool mills now ship directly to collectors across three continents.",
+    "target": {
+      "text": "allows modest enterprises to reach international buyers",
+      "start": 136,
+      "end": 191
+    },
+    "decoys": [
+      {
+        "text": "local ceramic workshops",
+        "start": 254,
+        "end": 277,
+        "whyVi": "Chỉ xưởng gốm địa phương, là ví dụ doanh nghiệp nhỏ."
+      },
+      {
+        "text": "automated customs declarations",
+        "start": 42,
+        "end": 72,
+        "whyVi": "Chỉ khai báo hải quan tự động, là công cụ hỗ trợ."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (enable X to V → allow Y to V): \"enables small firms to sell worldwide\" ↔ \"allows modest enterprises to reach international buyers\".",
+    "topics": [
+      "globalisation"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_037",
+    "level": 3,
+    "questionPhrase": "has drawn criticism for being too slow",
+    "relation": "equivalent",
+    "context": "A parliamentary infrastructure committee noted that the national programme for rural broadband rollout grants has been faulted for sluggish implementation across sparsely populated valleys. Parish councils complained that complex tender paperwork delayed fibre trenching by nearly eighteen months even after regional funding had been approved.",
+    "target": {
+      "text": "has been faulted for sluggish implementation",
+      "start": 110,
+      "end": 154
+    },
+    "decoys": [
+      {
+        "text": "rural broadband rollout grants",
+        "start": 79,
+        "end": 109,
+        "whyVi": "Chỉ gói tài trợ phủ sóng băng thông rộng nông thôn, là chương trình bị chê."
+      },
+      {
+        "text": "complex tender paperwork",
+        "start": 222,
+        "end": 246,
+        "whyVi": "Chỉ thủ tục đấu thầu phức tạp, là nguyên nhân chậm trễ."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (draw criticism for V-ing → be faulted for + N): \"has drawn criticism for being too slow\" ↔ \"has been faulted for sluggish implementation\".",
+    "topics": [
+      "government"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_038",
+    "level": 3,
+    "questionPhrase": "is often mistaken for",
+    "relation": "equivalent",
+    "context": "Anthropologists writing museum catalogues point out that formal hospitality rituals such as traditional tea ceremonies are frequently confused with casual social refreshment by first-time overseas visitors. Every measured gesture, seasonal flower arrangement, and ceramic bowl selection actually communicates subtle codes of respect and seasonal awareness.",
+    "target": {
+      "text": "are frequently confused with",
+      "start": 119,
+      "end": 147
+    },
+    "decoys": [
+      {
+        "text": "traditional tea ceremonies",
+        "start": 92,
+        "end": 118,
+        "whyVi": "Chỉ nghi lễ trà đạo truyền thống, là thực hành bị hiểu nhầm."
+      },
+      {
+        "text": "casual social refreshment",
+        "start": 148,
+        "end": 173,
+        "whyVi": "Chỉ giải khát xã giao thông thường, là khái niệm đối lập."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bị động mistaken for → bị động confused with): \"is often mistaken for\" ↔ \"is frequently confused with\".",
+    "topics": [
+      "culture"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_039",
+    "level": 3,
+    "questionPhrase": "struggle to compete with free websites",
+    "relation": "equivalent",
+    "context": "As classified advertising migrated permanently to digital platforms, regional investigative weeklies found it hard to rival unpaid online outlets aggregating national headlines at near-zero cost. Surviving local papers have increasingly pivoted towards reader membership clubs focused on council reporting that national portals ignore.",
+    "target": {
+      "text": "found it hard to rival unpaid online outlets",
+      "start": 101,
+      "end": 145
+    },
+    "decoys": [
+      {
+        "text": "regional investigative weeklies",
+        "start": 69,
+        "end": 100,
+        "whyVi": "Chỉ tuần báo điều tra địa phương, là nhóm gặp khó."
+      },
+      {
+        "text": "reader membership clubs",
+        "start": 253,
+        "end": 276,
+        "whyVi": "Chỉ câu lạc bộ hội viên độc giả, là mô hình doanh thu mới."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (struggle to V → find it hard to V): \"struggle to compete with free websites\" ↔ \"find it hard to rival unpaid online outlets\".",
+    "topics": [
+      "media"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_040",
+    "level": 3,
+    "questionPhrase": "has made it harder for fraudsters to hide",
+    "relation": "equivalent",
+    "context": "Financial crime analysts report that introducing mandatory bank name-checks alongside real-time transfer alerts has complicated efforts by scammers to conceal stolen identity transfers across layered mule accounts. While impersonation calls remain common, instant mismatch warnings prompt thousands of customers to pause before authorising payments.",
+    "target": {
+      "text": "has complicated efforts by scammers to conceal",
+      "start": 112,
+      "end": 158
+    },
+    "decoys": [
+      {
+        "text": "mandatory bank name-checks",
+        "start": 49,
+        "end": 75,
+        "whyVi": "Chỉ kiểm tra tên tài khoản ngân hàng bắt buộc, là biện pháp mới."
+      },
+      {
+        "text": "stolen identity transfers",
+        "start": 159,
+        "end": 184,
+        "whyVi": "Chỉ giao dịch chuyển tiền đánh cắp danh tính, là hành vi lừa đảo."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (make it harder for sb to V → complicate efforts by sb to V): \"has made it harder for fraudsters to hide\" ↔ \"has complicated efforts by scammers to conceal\".",
+    "topics": [
+      "crime"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_041",
+    "level": 3,
+    "questionPhrase": "no longer live close to extended relatives",
+    "relation": "equivalent",
+    "context": "Because mobile young professionals frequently relocate between cities for graduate apprenticeships, many new parents increasingly reside far from wider kin networks that once supplied free daytime childcare. Community parent cooperatives and informal neighbourhood babysitting swaps have stepped in to fill part of that everyday support gap.",
+    "target": {
+      "text": "increasingly reside far from wider kin networks",
+      "start": 117,
+      "end": 164
+    },
+    "decoys": [
+      {
+        "text": "mobile young professionals",
+        "start": 8,
+        "end": 34,
+        "whyVi": "Chỉ người lao động trẻ hay dịch chuyển, là chủ thể."
+      },
+      {
+        "text": "informal neighbourhood babysitting",
+        "start": 242,
+        "end": 276,
+        "whyVi": "Chỉ việc trông trẻ không chính thức giữa hàng xóm, là giải pháp thay thế."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (no longer live close to → reside far from): \"no longer live close to extended relatives\" ↔ \"increasingly reside far from wider kin networks\".",
+    "topics": [
+      "family"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_042",
+    "level": 3,
+    "questionPhrase": "prefer authentic experiences over luxury",
+    "relation": "equivalent",
+    "context": "Hospitality trend reports indicate that a growing segment of independent cultural travellers value genuine local encounters above five-star comfort when planning autumn breaks. Family-run vineyards, guided foraging walks, and village cooking classes consistently earn higher satisfaction scores than marble-lobbied resort chains.",
+    "target": {
+      "text": "value genuine local encounters above five-star comfort",
+      "start": 93,
+      "end": 147
+    },
+    "decoys": [
+      {
+        "text": "independent cultural travellers",
+        "start": 61,
+        "end": 92,
+        "whyVi": "Chỉ du khách văn hóa tự túc, là nhóm khách hàng."
+      },
+      {
+        "text": "village cooking classes",
+        "start": 226,
+        "end": 249,
+        "whyVi": "Chỉ lớp học nấu ăn trong làng, là ví dụ trải nghiệm bản địa."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (prefer X over Y → value X above Y): \"prefer authentic experiences over luxury\" ↔ \"value genuine local encounters above five-star comfort\".",
+    "topics": [
+      "tourism"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_043",
+    "level": 3,
+    "questionPhrase": "cannot be grown profitably without",
+    "relation": "equivalent",
+    "context": "Horticultural audits across northern latitudes show that cultivating out-of-season salad tomatoes in heated winter greenhouses fails to remain commercially viable in the absence of cheap waste heat from nearby industrial plants. Consumers are consequently seeing supermarkets rotate more cold-hardy winter roots and stored cabbages during January.",
+    "target": {
+      "text": "fails to remain commercially viable in the absence of",
+      "start": 127,
+      "end": 180
+    },
+    "decoys": [
+      {
+        "text": "heated winter greenhouses",
+        "start": 101,
+        "end": 126,
+        "whyVi": "Chỉ nhà kính sưởi ấm mùa đông, là hạ tầng canh tác."
+      },
+      {
+        "text": "out-of-season salad tomatoes",
+        "start": 69,
+        "end": 97,
+        "whyVi": "Chỉ cà chua xà lách trái mùa, là nông sản phụ thuộc."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (cannot be V-ed profitably without → fail to remain commercially viable in the absence of): \"cannot be grown profitably without\" ↔ \"fails to remain commercially viable in the absence of\".",
+    "topics": [
+      "food"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_044",
+    "level": 3,
+    "questionPhrase": "has sparked debate over whether",
+    "relation": "equivalent",
+    "context": "Recent museum policies surrounding returned colonial artefacts have prompted disagreement regarding whether major encyclopaedic collections should transfer legal ownership permanently or expand shared international loans. Both sides generally agree, however, that provenance records must be published openly online so source communities can trace every object.",
+    "target": {
+      "text": "have prompted disagreement regarding whether",
+      "start": 63,
+      "end": 107
+    },
+    "decoys": [
+      {
+        "text": "returned colonial artefacts",
+        "start": 35,
+        "end": 62,
+        "whyVi": "Chỉ cổ vật thời thuộc địa được hoàn trả, là chủ đề tranh luận."
+      },
+      {
+        "text": "shared international loans",
+        "start": 194,
+        "end": 220,
+        "whyVi": "Chỉ chương trình cho mượn luân phiên quốc tế, là phương án trung dung."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (spark debate over → prompt disagreement regarding): \"has sparked debate over whether\" ↔ \"has prompted disagreement regarding whether\".",
+    "topics": [
+      "arts"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_045",
+    "level": 3,
+    "questionPhrase": "places considerable strain on",
+    "relation": "equivalent",
+    "context": "Paediatric orthopaedists warn that specialising exclusively in a single year-round tournament sport before age fourteen imposes heavy physical demands upon rapidly growing teenage joints. Athletes who follow varied multi-sport schedules throughout early adolescence suffer fewer overuse stress fractures and remain active longer as adults.",
+    "target": {
+      "text": "imposes heavy physical demands upon",
+      "start": 120,
+      "end": 155
+    },
+    "decoys": [
+      {
+        "text": "rapidly growing teenage joints",
+        "start": 156,
+        "end": 186,
+        "whyVi": "Chỉ khớp xương thiếu niên đang lớn nhanh, là bộ phận chịu áp lực."
+      },
+      {
+        "text": "varied multi-sport schedules",
+        "start": 208,
+        "end": 236,
+        "whyVi": "Chỉ lịch tập đa môn linh hoạt, là giải pháp bảo vệ."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (place considerable strain on → impose heavy demands upon): \"places considerable strain on\" ↔ \"imposes heavy physical demands upon\".",
+    "topics": [
+      "sport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_046",
+    "level": 3,
+    "questionPhrase": "have bounced back remarkably since",
+    "relation": "equivalent",
+    "context": "Wildlife censuses across northern estuaries celebrate how coastal osprey breeding pairs have staged a striking recovery following strict nationwide restrictions on banned agricultural insecticides that once thinned eggshells. Installing sturdy wooden nesting platforms atop retired utility poles further accelerated recolonisation along quiet coastal lagoons.",
+    "target": {
+      "text": "have staged a striking recovery following",
+      "start": 88,
+      "end": 129
+    },
+    "decoys": [
+      {
+        "text": "coastal osprey breeding pairs",
+        "start": 58,
+        "end": 87,
+        "whyVi": "Chỉ các cặp chim ưng biển sinh sản ven bờ, là loài hồi phục."
+      },
+      {
+        "text": "banned agricultural insecticides",
+        "start": 164,
+        "end": 196,
+        "whyVi": "Chỉ thuốc trừ sâu nông nghiệp bị cấm, là nguyên nhân trước đây."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bounce back remarkably since → stage a striking recovery following): \"have bounced back remarkably since\" ↔ \"have staged a striking recovery following\".",
+    "topics": [
+      "animals"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_047",
+    "level": 3,
+    "questionPhrase": "is far more memorable when",
+    "relation": "equivalent",
+    "context": "Memory experiments conducted in university psychology departments show that complex academic terminology sticks in long-term recall much better provided that learners test themselves actively through spaced retrieval quizzes. Simply rereading notes or relying on passive chapter highlighting creates a deceptive feeling of familiarity that fades before exams.",
+    "target": {
+      "text": "sticks in long-term recall much better provided that",
+      "start": 105,
+      "end": 157
+    },
+    "decoys": [
+      {
+        "text": "spaced retrieval quizzes",
+        "start": 200,
+        "end": 224,
+        "whyVi": "Chỉ bài kiểm tra gợi nhớ giãn cách, là phương pháp học."
+      },
+      {
+        "text": "passive chapter highlighting",
+        "start": 263,
+        "end": 291,
+        "whyVi": "Chỉ tô sáng chương sách thụ động, là cách học kém hiệu quả."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (be far more memorable when → stick in recall much better provided that): \"is far more memorable when\" ↔ \"sticks in long-term recall much better provided that\".",
+    "topics": [
+      "psychology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l3b_048",
+    "level": 3,
+    "questionPhrase": "is gradually being phased out in favour of",
+    "relation": "equivalent",
+    "context": "Updated residential building codes across northern Europe mean that traditional domestic gas boiler installations in newly constructed flats are steadily giving way to electric air-source heat pumps. Because modern pumps transfer ambient outdoor warmth rather than burning fuel directly, they deliver three units of heat for every unit of electricity consumed.",
+    "target": {
+      "text": "are steadily giving way to",
+      "start": 141,
+      "end": 167
+    },
+    "decoys": [
+      {
+        "text": "domestic gas boiler installations",
+        "start": 80,
+        "end": 113,
+        "whyVi": "Chỉ hệ thống nồi hơi gas dân dụng, là công nghệ cũ."
+      },
+      {
+        "text": "electric air-source heat pumps",
+        "start": 168,
+        "end": 198,
+        "whyVi": "Chỉ bơm nhiệt nguồn không khí chạy điện, là công nghệ thay thế."
+      }
+    ],
+    "explanationVi": "L3 đổi cấu trúc (bị động phased out in favour of → chủ động giving way to): \"is gradually being phased out in favour of\" ↔ \"is steadily giving way to\".",
+    "topics": [
+      "energy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  }
+]

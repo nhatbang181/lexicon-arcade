@@ -1,0 +1,1654 @@
+{
+  "items": [
+    {
+      "id": "pv:b1_access",
+      "headword": "access",
+      "band": 1,
+      "checkMeaningVi": "quyền tiếp cận, sự truy cập, lối vào",
+      "foilsVi": [
+        "ủy ban; đặt làm, ủy thác",
+        "cộng đồng",
+        "khái niệm"
+      ]
+    },
+    {
+      "id": "pv:b1_adult",
+      "headword": "adult",
+      "band": 1,
+      "checkMeaningVi": "người trưởng thành",
+      "foilsVi": [
+        "đặc điểm; có đặc điểm",
+        "trọng tâm; tập trung",
+        "nền tảng, cơ sở, quỹ tổ chức"
+      ]
+    },
+    {
+      "id": "pv:b1_alternative",
+      "headword": "alternative",
+      "band": 1,
+      "checkMeaningVi": "giải pháp thay thế, sự lựa chọn khác",
+      "foilsVi": [
+        "phương tiện truyền thông đại chúng",
+        "phương pháp",
+        "mạng lưới, hệ thống kết nối"
+      ]
+    },
+    {
+      "id": "pv:b1_author",
+      "headword": "author",
+      "band": 1,
+      "checkMeaningVi": "tác giả",
+      "foilsVi": [
+        "chuỗi, loạt, dãy liên tiếp",
+        "địa điểm",
+        "nguồn"
+      ]
+    },
+    {
+      "id": "pv:b1_authority",
+      "headword": "authority",
+      "band": 1,
+      "checkMeaningVi": "chính quyền; thẩm quyền",
+      "foilsVi": [
+        "mối liên hệ (thống kê)",
+        "khí hậu; bầu không khí",
+        "đoạn quảng cáo (TV, radio)"
+      ]
+    },
+    {
+      "id": "pv:b1_aware",
+      "headword": "aware",
+      "band": 1,
+      "checkMeaningVi": "nhận thức được, có ý thức về",
+      "foilsVi": [
+        "nhận xét, lời bình luận",
+        "ủy ban; đặt làm, ủy thác",
+        "cộng đồng"
+      ]
+    },
+    {
+      "id": "pv:b1_benefit",
+      "headword": "benefit",
+      "band": 1,
+      "checkMeaningVi": "lợi ích; được lợi",
+      "foilsVi": [
+        "xung đột, mâu thuẫn",
+        "bối cảnh, ngữ cảnh",
+        "chu kỳ, vòng tuần hoàn"
+      ]
+    },
+    {
+      "id": "pv:b1_channel",
+      "headword": "channel",
+      "band": 1,
+      "checkMeaningVi": "kênh truyền tải, phương tiện truyền thông",
+      "foilsVi": [
+        "món, mục",
+        "luật pháp, sự lập pháp",
+        "bộ (cơ quan chính phủ)"
+      ]
+    },
+    {
+      "id": "pv:b1_classic",
+      "headword": "classic",
+      "band": 1,
+      "checkMeaningVi": "kinh điển, tiêu biểu, mẫu mực",
+      "foilsVi": [
+        "thuộc về quân sự, quân đội",
+        "mạng lưới, hệ thống kết nối",
+        "bình thường"
+      ]
+    },
+    {
+      "id": "pv:b1_comment",
+      "headword": "comment",
+      "band": 1,
+      "checkMeaningVi": "nhận xét, lời bình luận",
+      "foilsVi": [
+        "nhiệt độ",
+        "nạn nhân",
+        "khía cạnh"
+      ]
+    },
+    {
+      "id": "pv:b1_commission",
+      "headword": "commission",
+      "band": 1,
+      "checkMeaningVi": "ủy ban; đặt làm, ủy thác",
+      "foilsVi": [
+        "sự nhập cư",
+        "cơ sở hạ tầng",
+        "sự đổi mới"
+      ]
+    },
+    {
+      "id": "pv:b1_core",
+      "headword": "core",
+      "band": 1,
+      "checkMeaningVi": "cốt lõi, trọng tâm, hạt nhân",
+      "foilsVi": [
+        "chế độ chính trị; chế độ sinh hoạt nghiêm ngặt",
+        "quy định, sự điều tiết",
+        "nguồn lực, tài nguyên"
+      ]
+    },
+    {
+      "id": "pv:b1_economy",
+      "headword": "economy",
+      "band": 1,
+      "checkMeaningVi": "nền kinh tế",
+      "foilsVi": [
+        "sự giảm giá, chiết khấu",
+        "phim tài liệu",
+        "hiệu suất, tính hiệu quả"
+      ]
+    },
+    {
+      "id": "pv:b1_effect",
+      "headword": "effect",
+      "band": 1,
+      "checkMeaningVi": "tác động, hiệu ứng",
+      "foilsVi": [
+        "vệ tinh",
+        "cách diễn giải có lợi (bẻ lái)",
+        "nhà hát, nghệ thuật sân khấu"
+      ]
+    },
+    {
+      "id": "pv:b1_environment",
+      "headword": "environment",
+      "band": 1,
+      "checkMeaningVi": "môi trường",
+      "foilsVi": [
+        "thách thức, thử thách",
+        "kênh truyền tải, phương tiện truyền thông",
+        "dân sự, công dân, văn minh"
+      ]
+    },
+    {
+      "id": "pv:b1_impact",
+      "headword": "impact",
+      "band": 1,
+      "checkMeaningVi": "tác động",
+      "foilsVi": [
+        "dữ liệu",
+        "thiết kế; được thiết kế để",
+        "nền kinh tế"
+      ]
+    },
+    {
+      "id": "pv:b1_intelligence",
+      "headword": "intelligence",
+      "band": 1,
+      "checkMeaningVi": "trí thông minh, trí tuệ; thông tin tình báo",
+      "foilsVi": [
+        "chức năng; vận hành",
+        "tài trợ, cấp vốn cho",
+        "thế hệ; sự tạo ra (điện, năng lượng)"
+      ]
+    },
+    {
+      "id": "pv:b1_major",
+      "headword": "major",
+      "band": 1,
+      "checkMeaningVi": "chính, lớn",
+      "foilsVi": [
+        "cuộc cách mạng, sự biến đổi triệt để",
+        "tuyến đường, lộ trình; con đường đạt mục tiêu",
+        "lịch trình, kế hoạch thời gian"
+      ]
+    },
+    {
+      "id": "pv:b1_medical",
+      "headword": "medical",
+      "band": 1,
+      "checkMeaningVi": "thuộc y học, y tế",
+      "foilsVi": [
+        "sự đưa tin",
+        "cuộc khủng hoảng",
+        "bệnh trầm cảm"
+      ]
+    },
+    {
+      "id": "pv:b1_project",
+      "headword": "project",
+      "band": 1,
+      "checkMeaningVi": "dự án, công trình nghiên cứu",
+      "foilsVi": [
+        "chuỗi, loạt, dãy liên tiếp",
+        "đáng kể; quan trọng",
+        "tương tự"
+      ]
+    },
+    {
+      "id": "pv:b1_region",
+      "headword": "region",
+      "band": 1,
+      "checkMeaningVi": "vùng, khu vực",
+      "foilsVi": [
+        "chuyển giao, chuyển sang",
+        "độc đáo, duy nhất, đặc thù",
+        "phương tiện giao thông, công cụ truyền tải"
+      ]
+    },
+    {
+      "id": "pv:b1_crime",
+      "headword": "crime",
+      "band": 1,
+      "checkMeaningVi": "tội phạm, hành vi phạm tội",
+      "foilsVi": [
+        "khó khăn, đầy thách thức",
+        "thuộc về kinh tế",
+        "giáo dục"
+      ]
+    },
+    {
+      "id": "pv:b1_annual",
+      "headword": "annual",
+      "band": 1,
+      "checkMeaningVi": "hàng năm, thường niên",
+      "foilsVi": [
+        "xảy ra",
+        "đang diễn ra, liên tục, kéo dài",
+        "kết quả, hệ quả"
+      ]
+    },
+    {
+      "id": "pv:b1_appreciate",
+      "headword": "appreciate",
+      "band": 1,
+      "checkMeaningVi": "đánh giá đúng, trân trọng, tăng giá trị",
+      "foilsVi": [
+        "đồng nhất, đồng đều, nhất quán",
+        "ảo (trực tuyến), gần như thực tế",
+        "có thể nhìn thấy, rõ rệt, hữu hình"
+      ]
+    },
+    {
+      "id": "pv:b1_available",
+      "headword": "available",
+      "band": 1,
+      "checkMeaningVi": "có sẵn",
+      "foilsVi": [
+        "đồng nhất, đồng đều, nhất quán",
+        "hợp lệ, có giá trị, có cơ sở vững chắc",
+        "ảo (trực tuyến), gần như thực tế"
+      ]
+    },
+    {
+      "id": "pv:b2_academy",
+      "headword": "academy",
+      "band": 2,
+      "checkMeaningVi": "học viện; viện hàn lâm",
+      "foilsVi": [
+        "phương thức, chế độ, hình thức",
+        "hội đồng chuyên gia, ban thẩm định; tấm bảng",
+        "góc nhìn, quan điểm"
+      ]
+    },
+    {
+      "id": "pv:b2_accurate",
+      "headword": "accurate",
+      "band": 2,
+      "checkMeaningVi": "chính xác, đúng đắn",
+      "foilsVi": [
+        "sống còn, thiết yếu tối quan trọng",
+        "hàng năm, thường niên",
+        "có sẵn"
+      ]
+    },
+    {
+      "id": "pv:b2_achieve",
+      "headword": "achieve",
+      "band": 2,
+      "checkMeaningVi": "đạt được",
+      "foilsVi": [
+        "chứng minh, khẳng định bằng chứng cứ",
+        "nâng cao, tăng lên; nêu ra",
+        "cắt giảm, làm giảm bớt"
+      ]
+    },
+    {
+      "id": "pv:b2_affect",
+      "headword": "affect",
+      "band": 2,
+      "checkMeaningVi": "ảnh hưởng đến",
+      "foilsVi": [
+        "tập trung, dồn vào",
+        "kết luận",
+        "bao gồm"
+      ]
+    },
+    {
+      "id": "pv:b2_appropriate",
+      "headword": "appropriate",
+      "band": 2,
+      "checkMeaningVi": "phù hợp",
+      "foilsVi": [
+        "đa dạng, phong phú",
+        "khổng lồ, to lớn, cực kỳ đáng kể",
+        "rõ ràng, hiển nhiên"
+      ]
+    },
+    {
+      "id": "pv:b2_assume",
+      "headword": "assume",
+      "band": 2,
+      "checkMeaningVi": "cho rằng, giả định",
+      "foilsVi": [
+        "đánh thuế, áp đặt khoản thu bắt buộc",
+        "xác định vị trí, đặt địa điểm",
+        "chiếm giữ, cư trú, nắm giữ (vị trí)"
+      ]
+    },
+    {
+      "id": "pv:b2_brief",
+      "headword": "brief",
+      "band": 2,
+      "checkMeaningVi": "ngắn gọn, súc tích",
+      "foilsVi": [
+        "ngày càng tăng",
+        "đáng kinh ngạc, xuất sắc nổi bật",
+        "vững chắc, đáng tin"
+      ]
+    },
+    {
+      "id": "pv:b2_capable",
+      "headword": "capable",
+      "band": 2,
+      "checkMeaningVi": "có khả năng, có năng lực",
+      "foilsVi": [
+        "ngắn gọn, súc tích",
+        "loại, hạng mục",
+        "chương; giai đoạn mới"
+      ]
+    },
+    {
+      "id": "pv:b2_chapter",
+      "headword": "chapter",
+      "band": 2,
+      "checkMeaningVi": "chương; giai đoạn mới",
+      "foilsVi": [
+        "thế hệ; sự tạo ra (điện, năng lượng)",
+        "mục tiêu, đích đến",
+        "cấp bậc, hạng chất lượng, điểm số"
+      ]
+    },
+    {
+      "id": "pv:b2_decade",
+      "headword": "decade",
+      "band": 2,
+      "checkMeaningVi": "thập kỷ (mười năm)",
+      "foilsVi": [
+        "đối tác, cộng sự",
+        "giai đoạn",
+        "chính sách"
+      ]
+    },
+    {
+      "id": "pv:b2_device",
+      "headword": "device",
+      "band": 2,
+      "checkMeaningVi": "thiết bị, dụng cụ; thủ pháp (tu từ, kỹ thuật)",
+      "foilsVi": [
+        "chiến lược",
+        "cấu trúc",
+        "phong cách, kiểu cách"
+      ]
+    },
+    {
+      "id": "pv:b2_finance",
+      "headword": "finance",
+      "band": 2,
+      "checkMeaningVi": "tài chính; cấp vốn",
+      "foilsVi": [
+        "nhu cầu; đòi hỏi",
+        "sự phát triển",
+        "giáo dục"
+      ]
+    },
+    {
+      "id": "pv:b2_identify",
+      "headword": "identify",
+      "band": 2,
+      "checkMeaningVi": "xác định, nhận diện",
+      "foilsVi": [
+        "sự hồi phục",
+        "mẫu (nghiên cứu)",
+        "bản án; tuyên án"
+      ]
+    },
+    {
+      "id": "pv:b2_medium",
+      "headword": "medium",
+      "band": 2,
+      "checkMeaningVi": "phương tiện truyền tải, môi trường trung gian",
+      "foilsVi": [
+        "đồng nghiệp",
+        "hàng hóa thiết yếu, thương phẩm",
+        "hợp chất; tổ hợp"
+      ]
+    },
+    {
+      "id": "pv:b2_mode",
+      "headword": "mode",
+      "band": 2,
+      "checkMeaningVi": "phương thức, chế độ, hình thức",
+      "foilsVi": [
+        "phản ứng nhiệt hạch, sự hợp nhất hạt nhân",
+        "địa cầu, toàn thế giới",
+        "môi trường sống"
+      ]
+    },
+    {
+      "id": "pv:b2_obvious",
+      "headword": "obvious",
+      "band": 2,
+      "checkMeaningVi": "hiển nhiên, rõ rệt, dễ nhận thấy",
+      "foilsVi": [
+        "kết quả, hệ quả",
+        "sản lượng, đầu ra, hiệu suất sản xuất",
+        "tham gia, góp mặt"
+      ]
+    },
+    {
+      "id": "pv:b2_ultimate",
+      "headword": "ultimate",
+      "band": 2,
+      "checkMeaningVi": "cuối cùng, tối thượng, căn bản nhất",
+      "foilsVi": [
+        "đảo ngược, lật ngược",
+        "chọn lọc",
+        "trình tự, chuỗi liên tiếp"
+      ]
+    },
+    {
+      "id": "pv:b2_behaviour",
+      "headword": "behaviour",
+      "band": 2,
+      "checkMeaningVi": "hành vi, cách cư xử",
+      "foilsVi": [
+        "bản án (kết tội)",
+        "mối tương quan",
+        "hành lang giao thông, trục vận tải chiến lược"
+      ]
+    },
+    {
+      "id": "pv:b2_coverage",
+      "headword": "coverage",
+      "band": 2,
+      "checkMeaningVi": "sự đưa tin",
+      "foilsVi": [
+        "tàu điện đô thị",
+        "nghề nghiệp, công việc chuyên môn",
+        "hành vi phạm tội"
+      ]
+    },
+    {
+      "id": "pv:b2_expensive",
+      "headword": "expensive",
+      "band": 2,
+      "checkMeaningVi": "đắt đỏ, tốn kém chi phí",
+      "foilsVi": [
+        "đáng kể, lớn",
+        "nhà hát, nghệ thuật sân khấu",
+        "liệu pháp điều trị"
+      ]
+    },
+    {
+      "id": "pv:b2_sufficient",
+      "headword": "sufficient",
+      "band": 2,
+      "checkMeaningVi": "đủ, đầy đủ",
+      "foilsVi": [
+        "thách thức, thử thách",
+        "kênh truyền tải, phương tiện truyền thông",
+        "dân sự, công dân, văn minh"
+      ]
+    },
+    {
+      "id": "pv:b2_attitude",
+      "headword": "attitude",
+      "band": 2,
+      "checkMeaningVi": "thái độ, quan điểm",
+      "foilsVi": [
+        "thuộc về hóa học, hóa chất",
+        "tiến hành",
+        "xung đột, mâu thuẫn"
+      ]
+    },
+    {
+      "id": "pv:b2_category",
+      "headword": "category",
+      "band": 2,
+      "checkMeaningVi": "loại, hạng mục",
+      "foilsVi": [
+        "tài chính; cấp vốn",
+        "kinh phí, tài trợ",
+        "giới, giới tính (xét về mặt xã hội)"
+      ]
+    },
+    {
+      "id": "pv:b2_conduct",
+      "headword": "conduct",
+      "band": 2,
+      "checkMeaningVi": "tiến hành",
+      "foilsVi": [
+        "cá nhân; riêng",
+        "ban đầu, khởi đầu",
+        "trí thông minh, trí tuệ; thông tin tình báo"
+      ]
+    },
+    {
+      "id": "pv:b2_conflict",
+      "headword": "conflict",
+      "band": 2,
+      "checkMeaningVi": "xung đột, mâu thuẫn",
+      "foilsVi": [
+        "tìm kiếm",
+        "sự chuyển dịch, sự thay đổi",
+        "cuộc khảo sát"
+      ]
+    },
+    {
+      "id": "pv:b3_ethical",
+      "headword": "ethical",
+      "band": 3,
+      "checkMeaningVi": "(thuộc) đạo đức",
+      "foilsVi": [
+        "tự nguyện, tình nguyện",
+        "phổ biến, lan rộng",
+        "đầy tham vọng, quy mô lớn"
+      ]
+    },
+    {
+      "id": "pv:b3_abandon",
+      "headword": "abandon",
+      "band": 3,
+      "checkMeaningVi": "từ bỏ, bỏ rơi, ngưng theo đuổi",
+      "foilsVi": [
+        "phản ứng lại, đáp lại",
+        "phục hồi, khôi phục; thu hồi",
+        "điều tiết, quản lý bằng luật"
+      ]
+    },
+    {
+      "id": "pv:b3_accommodate",
+      "headword": "accommodate",
+      "band": 3,
+      "checkMeaningVi": "đáp ứng, điều chỉnh để phù hợp; cung cấp chỗ ở",
+      "foilsVi": [
+        "khác nhau, dao động",
+        "giảm xuống, suy giảm",
+        "đón nhận nhiệt tình, nắm bắt"
+      ]
+    },
+    {
+      "id": "pv:b3_accountability",
+      "headword": "accountability",
+      "band": 3,
+      "checkMeaningVi": "trách nhiệm giải trình",
+      "foilsVi": [
+        "bến cảng, hải cảng",
+        "tiêu đề (bài báo)",
+        "chủ nhà cho thuê"
+      ]
+    },
+    {
+      "id": "pv:b3_adaptation",
+      "headword": "adaptation",
+      "band": 3,
+      "checkMeaningVi": "sự thích ứng",
+      "foilsVi": [
+        "người tị nạn",
+        "khoản tiền hoàn trả",
+        "sự cải tạo, phục hồi"
+      ]
+    },
+    {
+      "id": "pv:b3_adjacent",
+      "headword": "adjacent",
+      "band": 3,
+      "checkMeaningVi": "liền kề, tiếp giáp, kế cận",
+      "foilsVi": [
+        "ngầm hiểu, hàm ẩn, tiềm ẩn",
+        "không thể thiếu",
+        "truyền nhiễm"
+      ]
+    },
+    {
+      "id": "pv:b3_adjust",
+      "headword": "adjust",
+      "band": 3,
+      "checkMeaningVi": "điều chỉnh; thích nghi",
+      "foilsVi": [
+        "trích dẫn, viện dẫn",
+        "phân loại",
+        "trùng hợp (về thời gian, quan điểm hoặc sự kiện)"
+      ]
+    },
+    {
+      "id": "pv:b3_aesthetic",
+      "headword": "aesthetic",
+      "band": 3,
+      "checkMeaningVi": "thuộc về thẩm mỹ, giá trị nghệ thuật",
+      "foilsVi": [
+        "chiết trung, pha trộn hài hòa nhiều phong cách",
+        "có sai sót",
+        "(làm) tự do"
+      ]
+    },
+    {
+      "id": "pv:b3_alter",
+      "headword": "alter",
+      "band": 3,
+      "checkMeaningVi": "thay đổi, biến đổi",
+      "foilsVi": [
+        "gây ra, kích thích, thúc đẩy",
+        "ức chế, kìm hãm, cản trở",
+        "khởi xướng, bắt đầu"
+      ]
+    },
+    {
+      "id": "pv:b3_arbitrary",
+      "headword": "arbitrary",
+      "band": 3,
+      "checkMeaningVi": "tùy tiện, võ đoán, không có cơ sở hợp lý",
+      "foilsVi": [
+        "tiếp thu, đạt được",
+        "thích nghi, điều chỉnh cho phù hợp",
+        "sự thích ứng"
+      ]
+    },
+    {
+      "id": "pv:b3_assess",
+      "headword": "assess",
+      "band": 3,
+      "checkMeaningVi": "đánh giá",
+      "foilsVi": [
+        "vi phạm (luật pháp, quyền riêng tư, chuẩn mực)",
+        "mở rộng (tầm nhìn)",
+        "kiểm duyệt"
+      ]
+    },
+    {
+      "id": "pv:b3_assignment",
+      "headword": "assignment",
+      "band": 3,
+      "checkMeaningVi": "bài tập lớn, nhiệm vụ được giao",
+      "foilsVi": [
+        "trình tự, chuỗi liên tiếp",
+        "bản tóm tắt, sự tổng lược",
+        "biểu tượng, ký hiệu"
+      ]
+    },
+    {
+      "id": "pv:b3_assure",
+      "headword": "assure",
+      "band": 3,
+      "checkMeaningVi": "cam đoan, bảo đảm, trấn an",
+      "foilsVi": [
+        "sự thiên lệch",
+        "phần lớn, đa số; khối lượng lớn",
+        "ngừng, chấm dứt hoàn toàn"
+      ]
+    },
+    {
+      "id": "pv:b3_chronic",
+      "headword": "chronic",
+      "band": 3,
+      "checkMeaningVi": "mãn tính",
+      "foilsVi": [
+        "nhạy cảm, lộ liễu; rõ ràng",
+        "xuất khẩu",
+        "phơi bày; khiến chịu tác động của"
+      ]
+    },
+    {
+      "id": "pv:b3_clarify",
+      "headword": "clarify",
+      "band": 3,
+      "checkMeaningVi": "làm rõ, giải thích minh bạch",
+      "foilsVi": [
+        "chiếm ưu thế, thống trị, chi phối",
+        "hạn hán",
+        "khoảng thời gian tồn tại, thời lượng"
+      ]
+    },
+    {
+      "id": "pv:b3_consume",
+      "headword": "consume",
+      "band": 3,
+      "checkMeaningVi": "tiêu thụ",
+      "foilsVi": [
+        "vượt quá, vượt trội",
+        "thể hiện, biểu lộ, trưng bày",
+        "nhạy cảm, lộ liễu; rõ ràng"
+      ]
+    },
+    {
+      "id": "pv:b3_detect",
+      "headword": "detect",
+      "band": 3,
+      "checkMeaningVi": "phát hiện, nhận diện",
+      "foilsVi": [
+        "giống hệt nhau, đồng nhất",
+        "hệ tư tưởng, ý thức hệ",
+        "thiếu hiểu biết, không hay biết"
+      ]
+    },
+    {
+      "id": "pv:b3_encounter",
+      "headword": "encounter",
+      "band": 3,
+      "checkMeaningVi": "đối mặt, gặp phải (khó khăn, trở ngại, hiện tượng)",
+      "foilsVi": [
+        "tương tác, tác động qua lại",
+        "trung cấp, ở mức trung gian",
+        "bao gồm; liên quan"
+      ]
+    },
+    {
+      "id": "pv:b3_landmark",
+      "headword": "landmark",
+      "band": 3,
+      "checkMeaningVi": "địa danh nổi bật",
+      "foilsVi": [
+        "trộm đột nhập",
+        "mỡ máu (cholesterol)",
+        "nghệ thuật biên đạo múa"
+      ]
+    },
+    {
+      "id": "pv:b3_trace",
+      "headword": "trace",
+      "band": 3,
+      "checkMeaningVi": "truy tìm nguồn gốc, lần theo dấu vết",
+      "foilsVi": [
+        "chính xác",
+        "dự đoán, dự báo",
+        "sơ bộ, ban đầu, mang tính chuẩn bị"
+      ]
+    },
+    {
+      "id": "pv:b3_cathedral",
+      "headword": "cathedral",
+      "band": 3,
+      "checkMeaningVi": "nhà thờ chính tòa, giáo đường lớn",
+      "foilsVi": [
+        "chánh niệm",
+        "đường cao tốc nhiều làn dành cho xe cơ giới tốc độ",
+        "quốc tịch"
+      ]
+    },
+    {
+      "id": "pv:b3_conviction",
+      "headword": "conviction",
+      "band": 3,
+      "checkMeaningVi": "bản án (kết tội)",
+      "foilsVi": [
+        "tin độc quyền",
+        "sự soi xét kỹ lưỡng",
+        "vật liệu bán dẫn hoặc linh kiện vi mạch cốt lõi"
+      ]
+    },
+    {
+      "id": "pv:b3_abstract",
+      "headword": "abstract",
+      "band": 3,
+      "checkMeaningVi": "trừu tượng",
+      "foilsVi": [
+        "sự ô nhiễm",
+        "bảo tồn, gìn giữ",
+        "sự phòng ngừa"
+      ]
+    },
+    {
+      "id": "pv:b3_advocate",
+      "headword": "advocate",
+      "band": 3,
+      "checkMeaningVi": "ủng hộ, biện hộ, cổ vũ",
+      "foilsVi": [
+        "(hình ảnh) trần trụi, rùng rợn",
+        "sự nắm vững; nắm được",
+        "thói quen"
+      ]
+    },
+    {
+      "id": "pv:b3_aggregate",
+      "headword": "aggregate",
+      "band": 3,
+      "checkMeaningVi": "tổng hợp, gộp chung",
+      "foilsVi": [
+        "phí cầu đường",
+        "độc hại",
+        "sinh viên đại học"
+      ]
+    },
+    {
+      "id": "pv:b4_accelerate",
+      "headword": "accelerate",
+      "band": 4,
+      "checkMeaningVi": "đẩy nhanh, tăng tốc",
+      "foilsVi": [
+        "hướng dẫn, giảng dạy; chỉ thị",
+        "tích hợp, hội nhập, kết hợp hài hòa",
+        "diễn giải"
+      ]
+    },
+    {
+      "id": "pv:b4_accessibility",
+      "headword": "accessibility",
+      "band": 4,
+      "checkMeaningVi": "khả năng tiếp cận",
+      "foilsVi": [
+        "tính bền vững",
+        "chứng dị ứng",
+        "tiện ích (công cộng)"
+      ]
+    },
+    {
+      "id": "pv:b4_accompany",
+      "headword": "accompany",
+      "band": 4,
+      "checkMeaningVi": "đi kèm, đồng hành cùng",
+      "foilsVi": [
+        "kết án",
+        "kiềm chế, hạn chế",
+        "bắt chước, noi theo"
+      ]
+    },
+    {
+      "id": "pv:b4_accreditation",
+      "headword": "accreditation",
+      "band": 4,
+      "checkMeaningVi": "sự kiểm định, công nhận",
+      "foilsVi": [
+        "quỹ hiến tặng lâu dài cho cơ sở giáo dục",
+        "tinh thần khởi nghiệp",
+        "phép lịch sự, nghi thức"
+      ]
+    },
+    {
+      "id": "pv:b4_accumulate",
+      "headword": "accumulate",
+      "band": 4,
+      "checkMeaningVi": "tích lũy, tích tụ dần",
+      "foilsVi": [
+        "loại bỏ hoàn toàn, xóa bỏ",
+        "nổi lên, xuất hiện, lộ rõ",
+        "đối mặt, gặp phải (khó khăn, trở ngại, hiện tượng)"
+      ]
+    },
+    {
+      "id": "pv:b4_alleviate",
+      "headword": "alleviate",
+      "band": 4,
+      "checkMeaningVi": "làm dịu, giảm bớt",
+      "foilsVi": [
+        "kết hợp, lồng ghép, sáp nhập",
+        "chèn vào, đưa vào",
+        "tương tác, tác động qua lại"
+      ]
+    },
+    {
+      "id": "pv:b4_ambiguous",
+      "headword": "ambiguous",
+      "band": 4,
+      "checkMeaningVi": "mơ hồ, đa nghĩa, không rõ ràng",
+      "foilsVi": [
+        "liên kết chặt chẽ với nhau",
+        "không thể đảo ngược",
+        "khoan hồng, nhẹ tay"
+      ]
+    },
+    {
+      "id": "pv:b4_anomaly",
+      "headword": "anomaly",
+      "band": 4,
+      "checkMeaningVi": "điểm bất thường",
+      "foilsVi": [
+        "bài tập lớn, nhiệm vụ được giao",
+        "sự thiên lệch",
+        "phần lớn, đa số; khối lượng lớn"
+      ]
+    },
+    {
+      "id": "pv:b4_anticipate",
+      "headword": "anticipate",
+      "band": 4,
+      "checkMeaningVi": "dự đoán trước, lường trước và chuẩn bị ứng phó",
+      "foilsVi": [
+        "biểu thị, chỉ rõ, có nghĩa là",
+        "chệch hướng, sai lệch so với chuẩn mực",
+        "thay thế, đẩy ra khỏi"
+      ]
+    },
+    {
+      "id": "pv:b4_antiquity",
+      "headword": "antiquity",
+      "band": 4,
+      "checkMeaningVi": "thời cổ đại; cổ vật lịch sử quý giá",
+      "foilsVi": [
+        "bài giảng (đại học), buổi diễn thuyết",
+        "giấy phép chính thức",
+        "khả năng đọc viết"
+      ]
+    },
+    {
+      "id": "pv:b4_attach",
+      "headword": "attach",
+      "band": 4,
+      "checkMeaningVi": "gắn liền, đính kèm; đặt (tầm quan trọng)",
+      "foilsVi": [
+        "di cư ra nước ngoài",
+        "đuổi học",
+        "truyền đạt (kiến thức)"
+      ]
+    },
+    {
+      "id": "pv:b4_austerity",
+      "headword": "austerity",
+      "band": 4,
+      "checkMeaningVi": "chính sách thắt lưng buộc bụng",
+      "foilsVi": [
+        "bắt nạt học đường",
+        "hệ thống tác phẩm kinh điển chuẩn mực",
+        "nhà thờ chính tòa, giáo đường lớn"
+      ]
+    },
+    {
+      "id": "pv:b4_biased",
+      "headword": "biased",
+      "band": 4,
+      "checkMeaningVi": "thiên vị, phiến diện",
+      "foilsVi": [
+        "sự thiếu hụt",
+        "rõ ràng, xác định, chắc chắn",
+        "bắt nguồn; thu được"
+      ]
+    },
+    {
+      "id": "pv:b4_biodiversity",
+      "headword": "biodiversity",
+      "band": 4,
+      "checkMeaningVi": "đa dạng sinh học",
+      "foilsVi": [
+        "suy thoái kinh tế",
+        "người tị nạn",
+        "khoản tiền hoàn trả"
+      ]
+    },
+    {
+      "id": "pv:b4_coherent",
+      "headword": "coherent",
+      "band": 4,
+      "checkMeaningVi": "mạch lạc, logic, gắn kết chặt chẽ",
+      "foilsVi": [
+        "văn hóa dân gian",
+        "sắp tới, sắp diễn ra; sẵn lòng cung cấp thông tin",
+        "bộ gen"
+      ]
+    },
+    {
+      "id": "pv:b4_cooperate",
+      "headword": "cooperate",
+      "band": 4,
+      "checkMeaningVi": "hợp tác, phối hợp",
+      "foilsVi": [
+        "hệ sinh thái",
+        "khí thải, sự phát thải",
+        "sự đồng cảm"
+      ]
+    },
+    {
+      "id": "pv:b4_implicit",
+      "headword": "implicit",
+      "band": 4,
+      "checkMeaningVi": "ngầm hiểu, hàm ẩn, tiềm ẩn",
+      "foilsVi": [
+        "cô lập, tách biệt",
+        "thuộc về động năng, liên quan đến chuyển động",
+        "bãi chôn lấp rác"
+      ]
+    },
+    {
+      "id": "pv:b4_intrinsic",
+      "headword": "intrinsic",
+      "band": 4,
+      "checkMeaningVi": "nội tại, bản chất vốn có, tự thân",
+      "foilsVi": [
+        "(công ty) đa quốc gia",
+        "đột biến",
+        "chủ nghĩa dân tộc"
+      ]
+    },
+    {
+      "id": "pv:b4_migrate",
+      "headword": "migrate",
+      "band": 4,
+      "checkMeaningVi": "di cư, di trú; chuyển đổi hệ thống",
+      "foilsVi": [
+        "cô lập, tách biệt",
+        "thuộc về động năng, liên quan đến chuyển động",
+        "bãi chôn lấp rác"
+      ]
+    },
+    {
+      "id": "pv:b4_convict",
+      "headword": "convict",
+      "band": 4,
+      "checkMeaningVi": "kết án",
+      "foilsVi": [
+        "(công ty) đa quốc gia",
+        "đột biến",
+        "chủ nghĩa dân tộc"
+      ]
+    },
+    {
+      "id": "pv:b4_addictive",
+      "headword": "addictive",
+      "band": 4,
+      "checkMeaningVi": "gây nghiện",
+      "foilsVi": [
+        "chấm dứt, kết thúc chính thức",
+        "truyền tải, lây truyền",
+        "đang thịnh hành"
+      ]
+    },
+    {
+      "id": "pv:b4_allocate",
+      "headword": "allocate",
+      "band": 4,
+      "checkMeaningVi": "phân bổ (ngân sách, nguồn lực)",
+      "foilsVi": [
+        "định lượng",
+        "bảng câu hỏi khảo sát",
+        "củng cố, tăng cường, gia cố"
+      ]
+    },
+    {
+      "id": "pv:b4_amend",
+      "headword": "amend",
+      "band": 4,
+      "checkMeaningVi": "sửa đổi, bổ sung (luật, văn bản)",
+      "foilsVi": [
+        "chấm dứt, kết thúc chính thức",
+        "truyền tải, lây truyền",
+        "đang thịnh hành"
+      ]
+    },
+    {
+      "id": "pv:b4_approximate",
+      "headword": "approximate",
+      "band": 4,
+      "checkMeaningVi": "xấp xỉ, gần đúng",
+      "foilsVi": [
+        "cộng đồng kiều bào",
+        "thuộc về chế độ ăn uống",
+        "bất lợi, nhược điểm"
+      ]
+    },
+    {
+      "id": "pv:b4_archaeology",
+      "headword": "archaeology",
+      "band": 4,
+      "checkMeaningVi": "khảo cổ học",
+      "foilsVi": [
+        "xấp xỉ, gần đúng",
+        "tập hợp, lắp ráp, thu thập lại",
+        "phân công, chỉ định, gán cho"
+      ]
+    },
+    {
+      "id": "pv:b5_acoustics",
+      "headword": "acoustics",
+      "band": 5,
+      "checkMeaningVi": "âm học; đặc tính truyền âm của không gian",
+      "foilsVi": [
+        "sảnh lớn trung tâm tại nhà ga hoặc sân bay",
+        "chế độ nghĩa vụ quân sự bắt buộc",
+        "nhà bảo tồn"
+      ]
+    },
+    {
+      "id": "pv:b5_alienation",
+      "headword": "alienation",
+      "band": 5,
+      "checkMeaningVi": "sự xa lánh, cảm giác bị tách biệt khỏi cộng đồng",
+      "foilsVi": [
+        "sự giải phóng khỏi áp bức hoặc rào cản pháp lý",
+        "sự đăng ký nhập học, sĩ số ghi danh",
+        "điểm phân (xuân phân và thu phân)"
+      ]
+    },
+    {
+      "id": "pv:b5_altruism",
+      "headword": "altruism",
+      "band": 5,
+      "checkMeaningVi": "lòng vị tha",
+      "foilsVi": [
+        "bộ vi xử lý trung tâm trên một vi mạch tích hợp",
+        "thông tin sai lệch",
+        "sự hiện đại hóa"
+      ]
+    },
+    {
+      "id": "pv:b5_aquifer",
+      "headword": "aquifer",
+      "band": 5,
+      "checkMeaningVi": "tầng đá ngầm chứa nước",
+      "foilsVi": [
+        "sự tái phát, sự xảy ra lặp lại",
+        "sự khắc phục bất công, bồi thường thỏa đáng",
+        "hiện tượng khúc xạ ánh sáng hoặc sóng"
+      ]
+    },
+    {
+      "id": "pv:b5_archival",
+      "headword": "archival",
+      "band": 5,
+      "checkMeaningVi": "thuộc về văn khố, tư liệu lưu trữ lịch sử",
+      "foilsVi": [
+        "thuộc về không gian, định vị không gian",
+        "dễ bị ảnh hưởng, dễ mắc",
+        "điều cấm kỵ"
+      ]
+    },
+    {
+      "id": "pv:b5_attrition",
+      "headword": "attrition",
+      "band": 5,
+      "checkMeaningVi": "tỷ lệ nhân viên nghỉ việc",
+      "foilsVi": [
+        "khảo cổ học",
+        "chính sách thắt lưng buộc bụng",
+        "tự động hóa"
+      ]
+    },
+    {
+      "id": "pv:b5_automate",
+      "headword": "automate",
+      "band": 5,
+      "checkMeaningVi": "tự động hóa",
+      "foilsVi": [
+        "gây đau khổ, hoành hành tác động xấu đến",
+        "đánh đồng, gộp lẫn hai khái niệm khác biệt",
+        "vạch trần quan niệm sai"
+      ]
+    },
+    {
+      "id": "pv:b5_bottleneck",
+      "headword": "bottleneck",
+      "band": 5,
+      "checkMeaningVi": "điểm nghẽn",
+      "foilsVi": [
+        "tội phỉ báng (bằng văn bản)",
+        "tuổi thọ dài",
+        "sự định hướng, can thiệp (của người lớn)"
+      ]
+    },
+    {
+      "id": "pv:b5_compendium",
+      "headword": "compendium",
+      "band": 5,
+      "checkMeaningVi": "tuyển tập tóm lược toàn diện kiến thức",
+      "foilsVi": [
+        "sự bảo trợ tài chính cho nghệ thuật và văn hóa",
+        "người đi bộ",
+        "hoạt động từ thiện"
+      ]
+    },
+    {
+      "id": "pv:b5_constrain",
+      "headword": "constrain",
+      "band": 5,
+      "checkMeaningVi": "hạn chế, kìm hãm, ràng buộc",
+      "foilsVi": [
+        "giới hạn, thu hẹp phạm vi; giam giữ",
+        "sự tuân theo số đông",
+        "làm nhiễm bẩn"
+      ]
+    },
+    {
+      "id": "pv:b5_convene",
+      "headword": "convene",
+      "band": 5,
+      "checkMeaningVi": "triệu tập, nhóm họp",
+      "foilsVi": [
+        "thoái vốn",
+        "bình đẳng, theo chủ nghĩa bình đẳng xã hội",
+        "độ hỗn loạn nhiệt động lực học (entropy)"
+      ]
+    },
+    {
+      "id": "pv:b5_corroborate",
+      "headword": "corroborate",
+      "band": 5,
+      "checkMeaningVi": "xác nhận, củng cố tính xác thực của nguồn tin",
+      "foilsVi": [
+        "biến động, dao động lên xuống",
+        "sự cải tạo khu nghèo thành khu đắt đỏ",
+        "thuộc về địa nhiệt (nhiệt lượng từ lòng đất)"
+      ]
+    },
+    {
+      "id": "pv:b5_distort",
+      "headword": "distort",
+      "band": 5,
+      "checkMeaningVi": "bóp méo, xuyên tạc, làm sai lệch",
+      "foilsVi": [
+        "đổi mới, sáng tạo phương pháp mới",
+        "ham học hỏi, tò mò",
+        "liên kết chặt chẽ với nhau"
+      ]
+    },
+    {
+      "id": "pv:b5_eradicate",
+      "headword": "eradicate",
+      "band": 5,
+      "checkMeaningVi": "xóa bỏ hoàn toàn, diệt trừ",
+      "foilsVi": [
+        "chuyên khảo học thuật sâu về một chủ đề duy nhất",
+        "đơn điệu, nhàm chán",
+        "tập quán đạo đức, chuẩn mực ứng xử truyền thống"
+      ]
+    },
+    {
+      "id": "pv:b5_itinerary",
+      "headword": "itinerary",
+      "band": 5,
+      "checkMeaningVi": "lịch trình chi tiết (chuyến đi)",
+      "foilsVi": [
+        "vị trí tuyển dụng",
+        "sự tiêm chủng",
+        "hành vi phá hoại tài sản"
+      ]
+    },
+    {
+      "id": "pv:b5_minimise",
+      "headword": "minimise",
+      "band": 5,
+      "checkMeaningVi": "giảm thiểu, hạ xuống mức thấp nhất",
+      "foilsVi": [
+        "thống nhất, hợp nhất thành một thể chung",
+        "tận dụng, sử dụng hiệu quả",
+        "thời lượng phát sóng"
+      ]
+    },
+    {
+      "id": "pv:b5_negate",
+      "headword": "negate",
+      "band": 5,
+      "checkMeaningVi": "phủ nhận, làm mất hiệu lực, triệt tiêu",
+      "foilsVi": [
+        "sự khoan hồng, giảm nhẹ hình phạt",
+        "nội dung câu nhấp chuột",
+        "sự đồng lõa, tiếp tay cho hành vi sai trái"
+      ]
+    },
+    {
+      "id": "pv:b5_xenophobia",
+      "headword": "xenophobia",
+      "band": 5,
+      "checkMeaningVi": "sự bài ngoại",
+      "foilsVi": [
+        "chủ nghĩa sùng bái bằng cấp",
+        "mức độ tín nhiệm tài chính và khả năng hoàn trả nợ",
+        "kỹ thuật nhiệt độ cực thấp, công nghệ làm lạnh sâu"
+      ]
+    },
+    {
+      "id": "pv:b5_artefact",
+      "headword": "artefact",
+      "band": 5,
+      "checkMeaningVi": "hiện vật",
+      "foilsVi": [
+        "tẩy xanh (quảng cáo xanh giả tạo)",
+        "đồ thủ công mỹ nghệ",
+        "dịch vụ vận tải hàng hóa bằng xe tải hoặc đường sắt"
+      ]
+    },
+    {
+      "id": "pv:b5_assimilate",
+      "headword": "assimilate",
+      "band": 5,
+      "checkMeaningVi": "hòa nhập, đồng hóa",
+      "foilsVi": [
+        "sự thụ tinh (sinh học, nông nghiệp)",
+        "khép kín, hẹp hòi",
+        "giữa các thế hệ"
+      ]
+    },
+    {
+      "id": "pv:b5_biodegradable",
+      "headword": "biodegradable",
+      "band": 5,
+      "checkMeaningVi": "phân hủy sinh học được",
+      "foilsVi": [
+        "bước đi vênh váo, nghênh ngang",
+        "sự khuất phục, áp bức và đặt dưới sự thống trị",
+        "tác động vào tiềm thức dưới ngưỡng nhận biết"
+      ]
+    },
+    {
+      "id": "pv:b5_coercion",
+      "headword": "coercion",
+      "band": 5,
+      "checkMeaningVi": "sự cưỡng ép, ép buộc bằng vũ lực hoặc đe dọa",
+      "foilsVi": [
+        "sự xa lánh, cảm giác bị tách biệt khỏi cộng đồng",
+        "lòng vị tha",
+        "tầng đá ngầm chứa nước"
+      ]
+    },
+    {
+      "id": "pv:b5_confer",
+      "headword": "confer",
+      "band": 5,
+      "checkMeaningVi": "trao tặng, mang lại, hội ý",
+      "foilsVi": [
+        "bước đi vênh váo, nghênh ngang",
+        "sự khuất phục, áp bức và đặt dưới sự thống trị",
+        "tác động vào tiềm thức dưới ngưỡng nhận biết"
+      ]
+    },
+    {
+      "id": "pv:b5_confine",
+      "headword": "confine",
+      "band": 5,
+      "checkMeaningVi": "giới hạn, thu hẹp phạm vi; giam giữ",
+      "foilsVi": [
+        "người tố giác sai phạm",
+        "khổng lồ, cực kỳ lớn (con số)",
+        "thế giới quan"
+      ]
+    },
+    {
+      "id": "pv:b5_converge",
+      "headword": "converge",
+      "band": 5,
+      "checkMeaningVi": "hội tụ, tiến gần đến cùng một điểm",
+      "foilsVi": [
+        "điểm bất thường",
+        "dự đoán trước, lường trước và chuẩn bị ứng phó",
+        "thời cổ đại; cổ vật lịch sử quý giá"
+      ]
+    },
+    {
+      "id": "pv:b6_amortise",
+      "headword": "amortise",
+      "band": 6,
+      "checkMeaningVi": "phân bổ khấu hao dần chi phí hoặc thanh toán nợ gốc",
+      "foilsVi": [
+        "suy luận, suy ra",
+        "đổi mới, sáng tạo phương pháp mới",
+        "tối đa hóa, tận dụng tối đa"
+      ]
+    },
+    {
+      "id": "pv:b6_append",
+      "headword": "append",
+      "band": 6,
+      "checkMeaningVi": "đính kèm, bổ sung vào cuối tài liệu",
+      "foilsVi": [
+        "học nhồi",
+        "rẽ khác, tách khỏi",
+        "di cư ra nước ngoài"
+      ]
+    },
+    {
+      "id": "pv:b6_collectivism",
+      "headword": "collectivism",
+      "band": 6,
+      "checkMeaningVi": "chủ nghĩa tập thể",
+      "foilsVi": [
+        "tầng đá ngầm chứa nước",
+        "hiện vật",
+        "tỷ lệ nhân viên nghỉ việc"
+      ]
+    },
+    {
+      "id": "pv:b6_deductive",
+      "headword": "deductive",
+      "band": 6,
+      "checkMeaningVi": "mang tính suy diễn",
+      "foilsVi": [
+        "hệ thống canh tác nông lâm kết hợp",
+        "suất phản chiếu bức xạ mặt trời của bề mặt Trái Đất",
+        "tình trạng mất chuẩn mực xã hội"
+      ]
+    },
+    {
+      "id": "pv:b6_desertification",
+      "headword": "desertification",
+      "band": 6,
+      "checkMeaningVi": "sa mạc hóa",
+      "foilsVi": [
+        "tinh vân (đám mây khí và bụi vũ trụ)",
+        "chủ nghĩa gia đình trị, sự thiên vị người thân",
+        "tính khách quan"
+      ]
+    },
+    {
+      "id": "pv:b6_enrol",
+      "headword": "enrol",
+      "band": 6,
+      "checkMeaningVi": "ghi danh, nhập học",
+      "foilsVi": [
+        "công nghệ xử lý ô nhiễm bằng vi sinh vật và thực",
+        "trụ cột kinh tế gia đình",
+        "nhanh chóng mặt, tốc độ cực nhanh"
+      ]
+    },
+    {
+      "id": "pv:b6_immigrate",
+      "headword": "immigrate",
+      "band": 6,
+      "checkMeaningVi": "nhập cư",
+      "foilsVi": [
+        "kỹ thuật nhiệt độ cực thấp, công nghệ làm lạnh sâu",
+        "sự tuyển chọn, sắp xếp và biên tập nội dung",
+        "bắt nạt qua mạng"
+      ]
+    },
+    {
+      "id": "pv:b6_indigent",
+      "headword": "indigent",
+      "band": 6,
+      "checkMeaningVi": "nghèo túng, túng quẫn thiếu thốn cơ bản",
+      "foilsVi": [
+        "sự bất công, bất bình đẳng mang tính hệ thống",
+        "tin tức giải trí hóa",
+        "đã được thể chế hóa, ăn sâu vào cơ cấu hệ thống"
+      ]
+    },
+    {
+      "id": "pv:b6_inundate",
+      "headword": "inundate",
+      "band": 6,
+      "checkMeaningVi": "làm ngập lụt, tràn ngập thông tin quá tải",
+      "foilsVi": [
+        "dịch vụ vận tải hàng hóa bằng xe tải hoặc đường sắt",
+        "săn nhân tài",
+        "sự đồng nhất hóa"
+      ]
+    },
+    {
+      "id": "pv:b6_megacity",
+      "headword": "megacity",
+      "band": 6,
+      "checkMeaningVi": "siêu đô thị",
+      "foilsVi": [
+        "thông báo đính chính và rút lại bài viết sai lệch",
+        "kỳ nghỉ phép nghiên cứu của giảng viên đại học",
+        "giàn giáo sư phạm"
+      ]
+    },
+    {
+      "id": "pv:b6_microbiome",
+      "headword": "microbiome",
+      "band": 6,
+      "checkMeaningVi": "hệ vi sinh vật cộng sinh trong đường ruột và cơ thể",
+      "foilsVi": [
+        "cầu cạn nhiều nhịp cho đường sắt hoặc đường bộ",
+        "lượng khán giả",
+        "người tố giác sai phạm"
+      ]
+    },
+    {
+      "id": "pv:b6_ostracise",
+      "headword": "ostracise",
+      "band": 6,
+      "checkMeaningVi": "tẩy chay, cô lập và ruồng bỏ khỏi cộng đồng",
+      "foilsVi": [
+        "quá trình nhiễm mặn đất đai và nguồn nước ngọt",
+        "khả năng mở rộng quy mô hệ thống mà vẫn giữ nguyên",
+        "giật gân hóa"
+      ]
+    },
+    {
+      "id": "pv:b6_afflict",
+      "headword": "afflict",
+      "band": 6,
+      "checkMeaningVi": "gây đau khổ, hoành hành tác động xấu đến",
+      "foilsVi": [
+        "học dưới khả năng",
+        "thiếu dinh dưỡng",
+        "hầm chui dành cho xe cộ hoặc người đi bộ"
+      ]
+    },
+    {
+      "id": "pv:b6_breadwinner",
+      "headword": "breadwinner",
+      "band": 6,
+      "checkMeaningVi": "trụ cột kinh tế gia đình",
+      "foilsVi": [
+        "hệ thống canh tác nông lâm kết hợp",
+        "suất phản chiếu bức xạ mặt trời của bề mặt Trái Đất",
+        "tình trạng mất chuẩn mực xã hội"
+      ]
+    },
+    {
+      "id": "pv:b6_electrocution",
+      "headword": "electrocution",
+      "band": 6,
+      "checkMeaningVi": "sự bị điện giật gây thương vong",
+      "foilsVi": [
+        "sự vu khống ác ý, bôi nhọ thanh danh",
+        "chatbot, trợ lý trò chuyện tự động",
+        "từ ngữ thông tục, khẩu ngữ đặc trưng địa phương"
+      ]
+    },
+    {
+      "id": "pv:b6_institutionalised",
+      "headword": "institutionalised",
+      "band": 6,
+      "checkMeaningVi": "đã được thể chế hóa, ăn sâu vào cơ cấu hệ thống",
+      "foilsVi": [
+        "sự miễn trừng phạt, nhởn nhơ ngoài vòng pháp luật",
+        "có khuynh hướng, thiên về, nghiêng về",
+        "mang tính quy nạp"
+      ]
+    },
+    {
+      "id": "pv:b6_commercialise",
+      "headword": "commercialise",
+      "band": 6,
+      "checkMeaningVi": "thương mại hóa",
+      "foilsVi": [
+        "tình trạng kẹt xe toàn bộ",
+        "hướng dẫn, nguyên tắc chỉ đạo",
+        "cản trở, gây trở ngại cho"
+      ]
+    },
+    {
+      "id": "pv:b6_commercialised",
+      "headword": "commercialised",
+      "band": 6,
+      "checkMeaningVi": "bị thương mại hóa",
+      "foilsVi": [
+        "thuê ngoài",
+        "lấn át, vượt trội hơn về giá trị",
+        "tình trạng quá đông dân"
+      ]
+    },
+    {
+      "id": "pv:b6_devastate",
+      "headword": "devastate",
+      "band": 6,
+      "checkMeaningVi": "tàn phá",
+      "foilsVi": [
+        "tinh vân (đám mây khí và bụi vũ trụ)",
+        "đòi hỏi, làm cho trở nên bắt buộc",
+        "phủ nhận, làm mất hiệu lực, triệt tiêu"
+      ]
+    },
+    {
+      "id": "pv:b6_externality",
+      "headword": "externality",
+      "band": 6,
+      "checkMeaningVi": "ngoại ứng kinh tế",
+      "foilsVi": [
+        "sự tái phạm",
+        "tái trồng rừng",
+        "nhắc lại máy móc (không hiểu)"
+      ]
+    },
+    {
+      "id": "pv:b6_extrapolate",
+      "headword": "extrapolate",
+      "band": 6,
+      "checkMeaningVi": "ngoại suy, ước tính mở rộng từ dữ liệu đã biết",
+      "foilsVi": [
+        "nghệ nhân",
+        "vật lý thiên văn",
+        "đá dằn đường ray; vật dằn ổn định tàu thủy"
+      ]
+    },
+    {
+      "id": "pv:b6_extrinsic",
+      "headword": "extrinsic",
+      "band": 6,
+      "checkMeaningVi": "bên ngoài (động lực)",
+      "foilsVi": [
+        "di cư ra nước ngoài",
+        "sự đăng ký nhập học, sĩ số ghi danh",
+        "điểm phân (xuân phân và thu phân)"
+      ]
+    },
+    {
+      "id": "pv:b6_obfuscate",
+      "headword": "obfuscate",
+      "band": 6,
+      "checkMeaningVi": "làm rối rắm, cố tình gây mơ hồ che giấu sự thật",
+      "foilsVi": [
+        "đổ nát",
+        "chăm chỉ, cần cù",
+        "thông tin sai lệch có chủ đích"
+      ]
+    },
+    {
+      "id": "pv:b6_psychosomatic",
+      "headword": "psychosomatic",
+      "band": 6,
+      "checkMeaningVi": "thuộc tâm thể",
+      "foilsVi": [
+        "cơ quan phát ngôn (cho ai)",
+        "công nghệ nano",
+        "tòa soạn báo, phòng biên tập tin tức"
+      ]
+    },
+    {
+      "id": "pv:b6_acquit",
+      "headword": "acquit",
+      "band": 6,
+      "checkMeaningVi": "tuyên trắng án",
+      "foilsVi": [
+        "ki-lô-mét (đơn vị đo khoảng cách)",
+        "cây/rừng ngập mặn",
+        "(việc) đơn giản, lương thấp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "version": "3.0.0",
+  "title": "Lộ trình IELTS Academic 6.0 → 8.0",
+  "realisticDurationMonths": {
+    "min": 9,
+    "max": 18
+  },
+  "dailyMinutesRecommended": {
+    "min": 60,
+    "max": 90
+  },
+  "disclaimerVi": "Thực tế: từ 6.0 lên 8.0 thường mất 9–18 tháng nếu học đều 60–90 phút mỗi ngày. Không hứa 8.0 trong 3 tháng.",
+  "defaultTargetProfile": {
+    "id": "profile_a",
+    "labelVi": "Mục tiêu cân bằng (Profile A)",
+    "overall": 8,
+    "listening": 8.5,
+    "reading": 8.5,
+    "writing": 7.5,
+    "speaking": 7.5
+  },
+  "phases": [
+    {
+      "id": "phase:g1",
+      "code": "G1",
+      "nameVi": "Nền",
+      "weekStart": 1,
+      "weekEnd": 8,
+      "focusModes": [
+        "v1",
+        "v2",
+        "v3",
+        "l2",
+        "r1",
+        "s2"
+      ],
+      "focusSummaryVi": "Daily Run (từ học thuật + collocation), L2 dictation, R1 training, S2 phản xạ 3 giây.",
+      "goalSummaryVi": "+600 item Mature. L2 đạt level 5. TFNG đúng ≥ 75%.",
+      "milestones": [
+        {
+          "id": "ms:g1_mature",
+          "labelVi": "+600 item từ vựng & collocation đạt trạng thái Mature",
+          "metric": "matureItems",
+          "target": 600
+        },
+        {
+          "id": "ms:g1_l2",
+          "labelVi": "Dictation Ladder (L2) đạt level 5",
+          "metric": "l2Level",
+          "target": 5
+        },
+        {
+          "id": "ms:g1_tfng",
+          "labelVi": "TFNG Judge (R1) đạt tỷ lệ đúng ≥ 75%",
+          "metric": "r1AccuracyPct",
+          "target": 75
+        }
+      ],
+      "targetBands": {
+        "listening": 6.5,
+        "reading": 6.5,
+        "writing": 6,
+        "speaking": 6,
+        "overall": 6.5
+      }
+    },
+    {
+      "id": "phase:g2",
+      "code": "G2",
+      "nameVi": "Đúng format",
+      "weekStart": 9,
+      "weekEnd": 20,
+      "focusModes": [
+        "v1",
+        "v2",
+        "v3",
+        "l1",
+        "r1",
+        "r2",
+        "w2",
+        "w1"
+      ],
+      "focusSummaryVi": "L1 đủ 4 part, R1/R2 exam mode, W2 sprints (Overview & Idea), W1 mỗi tuần 2 bài.",
+      "goalSummaryVi": "Listening và Reading đạt band 7.0–7.5 ở X1.",
+      "milestones": [
+        {
+          "id": "ms:g2_listening",
+          "labelVi": "Listening đạt band 7.0–7.5 ở Exam Room (X1)",
+          "metric": "listeningBand",
+          "target": 7
+        },
+        {
+          "id": "ms:g2_reading",
+          "labelVi": "Reading đạt band 7.0–7.5 ở Exam Room (X1)",
+          "metric": "readingBand",
+          "target": 7
+        },
+        {
+          "id": "ms:g2_writing",
+          "labelVi": "Hoàn thành đều 2 bài Writing (W1) mỗi tuần có chấm gói Claude",
+          "metric": "weeklyEssays",
+          "target": 2
+        }
+      ],
+      "targetBands": {
+        "listening": 7.5,
+        "reading": 7.5,
+        "writing": 6.5,
+        "speaking": 6.5,
+        "overall": 7
+      }
+    },
+    {
+      "id": "phase:g3",
+      "code": "G3",
+      "nameVi": "Tăng tốc 7.5",
+      "weekStart": 21,
+      "weekEnd": 36,
+      "focusModes": [
+        "v1",
+        "x1",
+        "w1",
+        "s1",
+        "l1",
+        "r2"
+      ],
+      "focusSummaryVi": "X1 mỗi tuần, W1 3 bài/tuần có vòng sửa sau góp ý, S1 Mock Examiner mỗi tuần.",
+      "goalSummaryVi": "L/R 8.0. W 7.0. S 7.0.",
+      "milestones": [
+        {
+          "id": "ms:g3_lr",
+          "labelVi": "Listening & Reading đạt band 8.0 ở X1",
+          "metric": "lrBand",
+          "target": 8
+        },
+        {
+          "id": "ms:g3_w",
+          "labelVi": "Writing đạt band 7.0 (trung bình 5 bài W1 gần nhất)",
+          "metric": "writingBand",
+          "target": 7
+        },
+        {
+          "id": "ms:g3_s",
+          "labelVi": "Speaking đạt band 7.0 (trung bình 3 mock S1 gần nhất)",
+          "metric": "speakingBand",
+          "target": 7
+        }
+      ],
+      "targetBands": {
+        "listening": 8,
+        "reading": 8,
+        "writing": 7,
+        "speaking": 7,
+        "overall": 7.5
+      }
+    },
+    {
+      "id": "phase:g4",
+      "code": "G4",
+      "nameVi": "Về đích 8.0",
+      "weekStart": 37,
+      "weekEnd": null,
+      "focusModes": [
+        "x1",
+        "w1",
+        "s1",
+        "v1"
+      ],
+      "focusSummaryVi": "Đề thi thử hoàn chỉnh X1, sửa lỗi hệ thống lặp lại, ôn chủ đề Speaking theo đợt rotation.",
+      "goalSummaryVi": "L/R 8.5. W 7.5. S 7.5 trong 3 lần X1 liên tiếp.",
+      "milestones": [
+        {
+          "id": "ms:g4_lr",
+          "labelVi": "Listening & Reading đạt 8.5 trong 3 lần X1 liên tiếp",
+          "metric": "lrStreak3Band",
+          "target": 8.5
+        },
+        {
+          "id": "ms:g4_w",
+          "labelVi": "Writing ổn định ≥ 7.5 qua chấm gói và vòng sửa",
+          "metric": "writingBand",
+          "target": 7.5
+        },
+        {
+          "id": "ms:g4_s",
+          "labelVi": "Speaking ổn định ≥ 7.5 phủ đủ chủ đề đợt hiện tại",
+          "metric": "speakingBand",
+          "target": 7.5
+        }
+      ],
+      "targetBands": {
+        "listening": 8.5,
+        "reading": 8.5,
+        "writing": 7.5,
+        "speaking": 7.5,
+        "overall": 8
+      }
+    }
+  ],
+  "provenance": {
+    "createdBy": "human",
+    "source": "docs/02-LEARNING-DESIGN.md#9",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "version": "3.0.0",
+  "builtAt": "2026-11-20T11:23:44.196Z",
+  "totals": {
+    "roadmapPhases": 4,
+    "tips": 62,
+    "collocations": 762,
+    "errorPatterns": 230,
+    "paraphrases": 320,
+    "placementVocab": 150,
+    "vocab": 2207
+  },
+  "files": {
+    "roadmap.json": {
+      "sha256": "5c1bd3e363ef53445a63afa5a6575e55817a074653910e539d1b2f7ee9bcd844",
+      "count": 4
+    },
+    "tips.json": {
+      "sha256": "9b1f82dc92783562e297b9f1285e0ad5a174e0c2200d66fb1b5f34fc08d30d65",
+      "count": 62
+    },
+    "vocab/collocations.json": {
+      "sha256": "0c2c4ab41b3f0d5588476a84d1b13fbcddd0067cf3ac167c20ac31145955026b",
+      "count": 762
+    },
+    "vocab/error_patterns.json": {
+      "sha256": "d8c3dcb6e1a85f46869a8930c95372b9a7ac1342ce2cab1429e803899f107805",
+      "count": 230
+    },
+    "vocab/paraphrases.json": {
+      "sha256": "b93e95246d6eee6c271dd54b816475dfb15f473f66320094d84673ab96691aca",
+      "count": 320
+    },
+    "vocab/placement_vocab.json": {
+      "sha256": "a55772ae0d964d90c544d9be97137728a365d3a78e113a291c6e521d234d7b55",
+      "count": 150
+    },
+    "vocab/words.json": {
+      "sha256": "adec09d3fab3c9544ca5ca4265cd8a287e880194bd0e1a3c48f7e89df260a98b",
+      "count": 2207
+    }
+  }
+}

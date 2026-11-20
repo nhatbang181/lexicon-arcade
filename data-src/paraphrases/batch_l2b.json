@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "para:l2b_001",
+    "level": 2,
+    "questionPhrase": "acquire fluency effortlessly",
+    "relation": "equivalent",
+    "context": "Popular myths about childhood bilingualism often exaggerate the effortless acquisition of fluency in young learners while overlooking the sheer hours of daily exposure required. Children enrolled in early immersion nurseries succeed not through magic, nor through phonetic pronunciation drills, but through thousands of meaningful conversations with attentive caregivers.",
+    "target": {
+      "text": "effortless acquisition of fluency",
+      "start": 64,
+      "end": 97
+    },
+    "decoys": [
+      {
+        "text": "early immersion nurseries",
+        "start": 199,
+        "end": 224,
+        "whyVi": "Chỉ nhà trẻ ngâm mình ngôn ngữ, không phải quá trình đạt trôi chảy."
+      },
+      {
+        "text": "phonetic pronunciation drills",
+        "start": 264,
+        "end": 293,
+        "whyVi": "Chỉ bài luyện phát âm, không phải sự tiếp thu tự nhiên."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+of+N): \"acquire fluency effortlessly\" ↔ \"effortless acquisition of fluency\".",
+    "topics": [
+      "language"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_002",
+    "level": 2,
+    "questionPhrase": "assess students continuously",
+    "relation": "equivalent",
+    "context": "Many secondary faculties have shifted part of their course weighting away from final summer examinations towards continuous pupil assessment spread across three terms. Teachers using structured portfolio reviews report that regular diagnostic feedback helps struggling learners correct misunderstandings early instead of falling irreparably behind.",
+    "target": {
+      "text": "continuous pupil assessment",
+      "start": 113,
+      "end": 140
+    },
+    "decoys": [
+      {
+        "text": "final summer examinations",
+        "start": 79,
+        "end": 104,
+        "whyVi": "Chỉ kỳ thi cuối hè, trái ngược với đánh giá liên tục."
+      },
+      {
+        "text": "structured portfolio reviews",
+        "start": 183,
+        "end": 211,
+        "whyVi": "Chỉ đánh giá hồ sơ học tập, là hình thức cụ thể."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"assess students continuously\" ↔ \"continuous pupil assessment\".",
+    "topics": [
+      "education"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_003",
+    "level": 2,
+    "questionPhrase": "pollute coastal waters",
+    "relation": "equivalent",
+    "context": "Estuary monitoring teams have linked seasonal algal blooms directly to the contamination of shoreline seas caused by untreated agricultural fertiliser runoff. Planting riparian buffer strips along tributary rivers and expanding oyster reef restoration projects have both shown promising capacity to filter excess nitrogen before it reaches bays.",
+    "target": {
+      "text": "contamination of shoreline seas",
+      "start": 75,
+      "end": 106
+    },
+    "decoys": [
+      {
+        "text": "agricultural fertiliser runoff",
+        "start": 127,
+        "end": 157,
+        "whyVi": "Chỉ dòng chảy phân bón nông nghiệp, là nguồn gây ô nhiễm chứ không phải hành động làm ô nhiễm."
+      },
+      {
+        "text": "oyster reef restoration",
+        "start": 228,
+        "end": 251,
+        "whyVi": "Chỉ việc phục hồi rạn hàu, là giải pháp lọc nước."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"pollute coastal waters\" ↔ \"contamination of shoreline seas\".",
+    "topics": [
+      "environment"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_004",
+    "level": 2,
+    "questionPhrase": "respond poorly to antibiotics",
+    "relation": "equivalent",
+    "context": "Microbiologists studying drug-resistant bacterial strains have documented a troubling rise in weak antibiotic response among elderly surgical patients. Strengthening routine hospital hygiene and curbing unnecessary over-the-counter prescriptions in community pharmacies are widely viewed as urgent steps to preserve the effectiveness of existing medicines.",
+    "target": {
+      "text": "weak antibiotic response",
+      "start": 94,
+      "end": 118
+    },
+    "decoys": [
+      {
+        "text": "routine hospital hygiene",
+        "start": 166,
+        "end": 190,
+        "whyVi": "Chỉ vệ sinh bệnh viện thường quy, không phải khả năng đáp ứng thuốc."
+      },
+      {
+        "text": "over-the-counter prescriptions",
+        "start": 215,
+        "end": 245,
+        "whyVi": "Chỉ đơn thuốc dễ mua, là nguyên nhân lạm dụng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv+prep+N → adj+N+N): \"respond poorly to antibiotics\" ↔ \"weak antibiotic response\".",
+    "topics": [
+      "health"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_005",
+    "level": 2,
+    "questionPhrase": "adopt digital tools cautiously",
+    "relation": "equivalent",
+    "context": "Health informatics audits reveal that rural family clinics tend to favour cautious adoption of software tools rather than abrupt wholesale transitions away from paper medical folders. Phased rollouts allow reception staff and nurses to verify data backups thoroughly without disrupting daily patient appointments.",
+    "target": {
+      "text": "cautious adoption of software tools",
+      "start": 74,
+      "end": 109
+    },
+    "decoys": [
+      {
+        "text": "rural family clinics",
+        "start": 38,
+        "end": 58,
+        "whyVi": "Chỉ phòng khám gia đình nông thôn, không phải sự áp dụng thận trọng."
+      },
+      {
+        "text": "paper medical folders",
+        "start": 161,
+        "end": 182,
+        "whyVi": "Chỉ hồ sơ bệnh án giấy, không phải hành động áp dụng công nghệ."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+of+N): \"adopt digital tools cautiously\" ↔ \"cautious adoption of software tools\".",
+    "topics": [
+      "technology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_006",
+    "level": 2,
+    "questionPhrase": "revitalise neglected districts",
+    "relation": "equivalent",
+    "context": "Municipal grants supporting affordable studio leases and pavement landscaping have sparked the steady revitalisation of run-down quarters near former railway yards. As foot traffic returned to side streets, independent bookshops and neighbourhood cafes reopened, generating new local jobs without displacing long-standing residential tenants.",
+    "target": {
+      "text": "revitalisation of run-down quarters",
+      "start": 102,
+      "end": 137
+    },
+    "decoys": [
+      {
+        "text": "independent bookshops",
+        "start": 207,
+        "end": 228,
+        "whyVi": "Chỉ hiệu sách độc lập, không phải quá trình hồi sinh khu phố."
+      },
+      {
+        "text": "affordable studio leases",
+        "start": 28,
+        "end": 52,
+        "whyVi": "Chỉ hợp đồng thuê xưởng giá hợp lý, là công cụ hỗ trợ."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"revitalise neglected districts\" ↔ \"revitalisation of run-down quarters\".",
+    "topics": [
+      "urban"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_007",
+    "level": 2,
+    "questionPhrase": "retain experienced staff",
+    "relation": "equivalent",
+    "context": "Human resource benchmarks indicate that the retention of seasoned employees saves engineering consultancies far more money than offering generous sign-on bonuses to external recruits. Clear feedback cycles, manageable workloads, and structured career ladders consistently rank above one-off cash incentives in staff satisfaction surveys.",
+    "target": {
+      "text": "retention of seasoned employees",
+      "start": 44,
+      "end": 75
+    },
+    "decoys": [
+      {
+        "text": "generous sign-on bonuses",
+        "start": 137,
+        "end": 161,
+        "whyVi": "Chỉ thưởng khi mới vào làm, không phải việc giữ chân nhân sự cũ."
+      },
+      {
+        "text": "structured career ladders",
+        "start": 233,
+        "end": 258,
+        "whyVi": "Chỉ lộ trình thăng tiến rõ ràng, là phương tiện giữ người."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"retain experienced staff\" ↔ \"retention of seasoned employees\".",
+    "topics": [
+      "work"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_008",
+    "level": 2,
+    "questionPhrase": "diversify national revenue",
+    "relation": "equivalent",
+    "context": "Resource-rich nations heavily exposed to volatile crude exports have prioritised the diversification of state income by channelling sovereign wealth reserves into logistics hubs and renewable manufacturing. Economists caution, however, that building competitive non-oil industries requires decades of sustained investment in technical universities and regulatory stability.",
+    "target": {
+      "text": "diversification of state income",
+      "start": 85,
+      "end": 116
+    },
+    "decoys": [
+      {
+        "text": "sovereign wealth reserves",
+        "start": 132,
+        "end": 157,
+        "whyVi": "Chỉ quỹ dự trữ quốc gia, không phải việc đa dạng hóa nguồn thu."
+      },
+      {
+        "text": "volatile crude exports",
+        "start": 41,
+        "end": 63,
+        "whyVi": "Chỉ xuất khẩu dầu thô biến động, là nguồn thu đơn lẻ cũ."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"diversify national revenue\" ↔ \"diversification of state income\".",
+    "topics": [
+      "economy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_009",
+    "level": 2,
+    "questionPhrase": "maintain ageing bridges",
+    "relation": "equivalent",
+    "context": "Civil engineering inspectors warn that postponing routine upkeep of deteriorating viaducts multiplies repair bills within a single decade. Fitting wireless strain sensors onto steel girders enables transport departments to spot hairline corrosion early and reroute heavy freight lorries before structural reinforcement becomes urgent.",
+    "target": {
+      "text": "upkeep of deteriorating viaducts",
+      "start": 58,
+      "end": 90
+    },
+    "decoys": [
+      {
+        "text": "heavy freight lorries",
+        "start": 265,
+        "end": 286,
+        "whyVi": "Chỉ xe tải hàng nặng, là tác nhân làm hư hại cầu."
+      },
+      {
+        "text": "wireless strain sensors",
+        "start": 147,
+        "end": 170,
+        "whyVi": "Chỉ cảm biến đo ứng suất không dây, là thiết bị giám sát."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"maintain ageing bridges\" ↔ \"upkeep of deteriorating viaducts\".",
+    "topics": [
+      "transport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_010",
+    "level": 2,
+    "questionPhrase": "observe behaviour unobtrusively",
+    "relation": "equivalent",
+    "context": "Field zoologists increasingly rely on silent motion-triggered trail cameras to carry out unobtrusive behavioural observation of shy nocturnal forest mammals. Because human footsteps and torches alter foraging paths, remote optical sensors provide far truer records of natural territory boundaries and parental care.",
+    "target": {
+      "text": "unobtrusive behavioural observation",
+      "start": 89,
+      "end": 124
+    },
+    "decoys": [
+      {
+        "text": "motion-triggered trail cameras",
+        "start": 45,
+        "end": 75,
+        "whyVi": "Chỉ máy ảnh bẫy chuyển động, là thiết bị chứ không phải quá trình quan sát."
+      },
+      {
+        "text": "nocturnal forest mammals",
+        "start": 132,
+        "end": 156,
+        "whyVi": "Chỉ động vật có vú ăn đêm, là đối tượng nghiên cứu."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+adj+N): \"observe behaviour unobtrusively\" ↔ \"unobtrusive behavioural observation\".",
+    "topics": [
+      "science"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_011",
+    "level": 2,
+    "questionPhrase": "harmonise safety standards",
+    "relation": "equivalent",
+    "context": "Trade negotiators across manufacturing blocs argue that the harmonisation of technical benchmarks between neighbouring economies markedly lowers compliance costs for small medical-device exporters. Eliminating duplicate testing fees at regional customs checkpoints speeds up essential hospital deliveries while preserving rigorous independent consumer safety guarantees.",
+    "target": {
+      "text": "harmonisation of technical benchmarks",
+      "start": 60,
+      "end": 97
+    },
+    "decoys": [
+      {
+        "text": "regional customs checkpoints",
+        "start": 236,
+        "end": 264,
+        "whyVi": "Chỉ trạm kiểm tra hải quan khu vực, không phải việc hài hòa tiêu chuẩn."
+      },
+      {
+        "text": "duplicate testing fees",
+        "start": 210,
+        "end": 232,
+        "whyVi": "Chỉ phí kiểm định trùng lặp, là chi phí bị cắt giảm."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"harmonise safety standards\" ↔ \"harmonisation of technical benchmarks\".",
+    "topics": [
+      "globalisation"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_012",
+    "level": 2,
+    "questionPhrase": "translate literature faithfully",
+    "relation": "equivalent",
+    "context": "Translators debating classic poetry note that faithful literary translation rarely means rendering every word literally from one grammar into another. Capturing rhythm, irony, and regional idiomatic humour often demands creative restructuring, which many publishers now explain to curious readers through bilingual annotated editions.",
+    "target": {
+      "text": "faithful literary translation",
+      "start": 46,
+      "end": 75
+    },
+    "decoys": [
+      {
+        "text": "regional idiomatic humour",
+        "start": 180,
+        "end": 205,
+        "whyVi": "Chỉ lối hài hước thành ngữ vùng miền, là thách thức khi dịch."
+      },
+      {
+        "text": "bilingual annotated editions",
+        "start": 305,
+        "end": 333,
+        "whyVi": "Chỉ ấn bản song ngữ có chú giải, không phải sự dịch thuật trung thành."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+adj+N): \"translate literature faithfully\" ↔ \"faithful literary translation\".",
+    "topics": [
+      "culture"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_013",
+    "level": 2,
+    "questionPhrase": "consult residents genuinely",
+    "relation": "equivalent",
+    "context": "Urban governance studies show that neighbourhood opposition to new transit lines drops markedly when councils conduct genuine citizen consultation before drafting final zoning blueprints. Combining accessible online feedback surveys with evening town-hall workshops ensures older residents and shift workers can shape local designs.",
+    "target": {
+      "text": "genuine citizen consultation",
+      "start": 118,
+      "end": 146
+    },
+    "decoys": [
+      {
+        "text": "online feedback surveys",
+        "start": 209,
+        "end": 232,
+        "whyVi": "Chỉ khảo sát trực tuyến, là công cụ chứ không phải sự tham vấn thực chất."
+      },
+      {
+        "text": "final zoning blueprints",
+        "start": 163,
+        "end": 186,
+        "whyVi": "Chỉ bản vẽ quy hoạch cuối cùng, không phải quá trình lấy ý kiến."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"consult residents genuinely\" ↔ \"genuine citizen consultation\".",
+    "topics": [
+      "government"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_014",
+    "level": 2,
+    "questionPhrase": "regulate online advertising",
+    "relation": "equivalent",
+    "context": "Consumer protection authorities are tightening the regulation of digital promotions aimed at teenagers on short-video platforms. Requiring prominent, clear disclosure labels on sponsored influencer clips helps young viewers separate genuine product reviews from paid endorsements disguised as casual daily vlogs.",
+    "target": {
+      "text": "regulation of digital promotions",
+      "start": 51,
+      "end": 83
+    },
+    "decoys": [
+      {
+        "text": "sponsored influencer clips",
+        "start": 177,
+        "end": 203,
+        "whyVi": "Chỉ clip quảng cáo của người nổi tiếng, là đối tượng chịu quản lý."
+      },
+      {
+        "text": "clear disclosure labels",
+        "start": 150,
+        "end": 173,
+        "whyVi": "Chỉ nhãn công khai tài trợ, là biện pháp cụ thể."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"regulate online advertising\" ↔ \"regulation of digital promotions\".",
+    "topics": [
+      "media"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_015",
+    "level": 2,
+    "questionPhrase": "investigate financial fraud thoroughly",
+    "relation": "equivalent",
+    "context": "Cross-border tax evasion schemes frequently outpace understaffed local police units lacking specialised forensic accountants and dedicated audit software. Law professors contend that a thorough investigation of fiscal misconduct requires real-time data sharing across international shell company registries alongside stronger statutory protection for corporate whistleblowers.",
+    "target": {
+      "text": "thorough investigation of fiscal misconduct",
+      "start": 185,
+      "end": 228
+    },
+    "decoys": [
+      {
+        "text": "shell company registries",
+        "start": 282,
+        "end": 306,
+        "whyVi": "Chỉ sổ đăng ký công ty vỏ bọc, không phải cuộc điều tra kỹ lưỡng."
+      },
+      {
+        "text": "specialised forensic accountants",
+        "start": 92,
+        "end": 124,
+        "whyVi": "Chỉ kế toán pháp y chuyên sâu, là nhân sự điều tra."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+of+N): \"investigate financial fraud thoroughly\" ↔ \"thorough investigation of fiscal misconduct\".",
+    "topics": [
+      "crime"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_016",
+    "level": 2,
+    "questionPhrase": "balance parenting and work",
+    "relation": "equivalent",
+    "context": "Survey evidence from dual-earner households highlights how balancing domestic and career demands remains especially taxing during the first five years of parenthood. Access to subsidised nursery places and compressed four-day weeks significantly reduces burnout and enables both parents to sustain steady career progression.",
+    "target": {
+      "text": "balancing domestic and career demands",
+      "start": 59,
+      "end": 96
+    },
+    "decoys": [
+      {
+        "text": "subsidised nursery places",
+        "start": 176,
+        "end": 201,
+        "whyVi": "Chỉ suất nhà trẻ trợ giá, là chính sách hỗ trợ."
+      },
+      {
+        "text": "compressed four-day weeks",
+        "start": 206,
+        "end": 231,
+        "whyVi": "Chỉ tuần làm việc 4 ngày nén giờ, là hình thức làm việc."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+and+N → V-ing+adj+N): \"balance parenting and work\" ↔ \"balancing domestic and career demands\".",
+    "topics": [
+      "family"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_017",
+    "level": 2,
+    "questionPhrase": "travel sustainably",
+    "relation": "equivalent",
+    "context": "European rail operators report surging ticket bookings on revitalised sleeper rail routes as environmentally conscious holidaymakers actively seek sustainable travel choices over short-haul flights. Transparent timetable comparisons and credible carbon offset calculators further encourage travellers to favour overland journeys for trips under one thousand kilometres.",
+    "target": {
+      "text": "sustainable travel choices",
+      "start": 147,
+      "end": 173
+    },
+    "decoys": [
+      {
+        "text": "sleeper rail routes",
+        "start": 70,
+        "end": 89,
+        "whyVi": "Chỉ tuyến tàu ngủ đêm, là ví dụ cụ thể chứ không phải khái niệm chung."
+      },
+      {
+        "text": "carbon offset calculators",
+        "start": 246,
+        "end": 271,
+        "whyVi": "Chỉ công cụ tính bù trừ carbon, không đồng nghĩa lựa chọn bền vững."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"travel sustainably\" ↔ \"sustainable travel choices\".",
+    "topics": [
+      "tourism"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_018",
+    "level": 2,
+    "questionPhrase": "label ingredients clearly",
+    "relation": "equivalent",
+    "context": "Public nutrition surveys demonstrate that clear ingredient labelling empowers hurried supermarket shoppers to spot hidden added sugars and excessive sodium within seconds. Countries mandating colour-coded front-of-pack traffic lights have also observed food manufacturers reformulating savoury snacks to avoid red warning badges.",
+    "target": {
+      "text": "clear ingredient labelling",
+      "start": 42,
+      "end": 68
+    },
+    "decoys": [
+      {
+        "text": "front-of-pack traffic lights",
+        "start": 205,
+        "end": 233,
+        "whyVi": "Chỉ biểu tượng đèn giao thông mặt trước bao bì, là một dạng nhãn cụ thể."
+      },
+      {
+        "text": "hidden added sugars",
+        "start": 115,
+        "end": 134,
+        "whyVi": "Chỉ lượng đường thêm ẩn giấu, không phải việc ghi nhãn rõ ràng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"label ingredients clearly\" ↔ \"clear ingredient labelling\".",
+    "topics": [
+      "food"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_019",
+    "level": 2,
+    "questionPhrase": "restore faded paintings",
+    "relation": "equivalent",
+    "context": "Modern conservation studios treat the restoration of aged canvases as a delicate scientific discipline guided by reversible materials. Before removing yellowed varnish layers, specialists analyse microscopic pigment samples and review decades of humidity logs from climate-controlled storage vaults to avoid altering original brushstrokes.",
+    "target": {
+      "text": "restoration of aged canvases",
+      "start": 38,
+      "end": 66
+    },
+    "decoys": [
+      {
+        "text": "microscopic pigment samples",
+        "start": 196,
+        "end": 223,
+        "whyVi": "Chỉ mẫu sắc tố siêu nhỏ, là đối tượng phân tích."
+      },
+      {
+        "text": "climate-controlled storage vaults",
+        "start": 265,
+        "end": 298,
+        "whyVi": "Chỉ kho lưu trữ kiểm soát khí hậu, không phải quá trình phục chế."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"restore faded paintings\" ↔ \"restoration of aged canvases\".",
+    "topics": [
+      "arts"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_020",
+    "level": 2,
+    "questionPhrase": "officiate matches consistently",
+    "relation": "equivalent",
+    "context": "Supporters and coaches alike insist that consistent match officiating matters even more to competitive fairness than eliminating every borderline call. Although automated offside sensors and touchline video replays reduce obvious factual mistakes, lengthy pauses still frustrate spectators when rules appear to be applied unevenly across halves.",
+    "target": {
+      "text": "consistent match officiating",
+      "start": 41,
+      "end": 69
+    },
+    "decoys": [
+      {
+        "text": "automated offside sensors",
+        "start": 161,
+        "end": 186,
+        "whyVi": "Chỉ cảm biến việt vị tự động, là công nghệ hỗ trợ."
+      },
+      {
+        "text": "touchline video replays",
+        "start": 191,
+        "end": 214,
+        "whyVi": "Chỉ xem lại video bên đường biên, không phải sự nhất quán trọng tài."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"officiate matches consistently\" ↔ \"consistent match officiating\".",
+    "topics": [
+      "sport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_021",
+    "level": 2,
+    "questionPhrase": "conserve endangered pollinators",
+    "relation": "equivalent",
+    "context": "Agronomists warn that orchard yields across temperate regions rely heavily on the conservation of threatened bees and solitary hoverflies. Replacing frequent mowing with wildflower roadside verges and phasing out broad-spectrum farm sprays during blossom weeks quickly rebuilds local pollinator diversity.",
+    "target": {
+      "text": "conservation of threatened bees",
+      "start": 82,
+      "end": 113
+    },
+    "decoys": [
+      {
+        "text": "wildflower roadside verges",
+        "start": 170,
+        "end": 196,
+        "whyVi": "Chỉ dải hoa dại ven đường, là biện pháp tạo môi trường sống."
+      },
+      {
+        "text": "broad-spectrum farm sprays",
+        "start": 213,
+        "end": 239,
+        "whyVi": "Chỉ thuốc phun phổ rộng nông nghiệp, là tác nhân gây hại."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"conserve endangered pollinators\" ↔ \"conservation of threatened bees\".",
+    "topics": [
+      "animals"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_022",
+    "level": 2,
+    "questionPhrase": "excavate buried settlements",
+    "relation": "equivalent",
+    "context": "Before beginning the excavation of subterranean towns along dry riverbeds, modern archaeologists routinely map street grids non-invasively using ground-penetrating radar. Targeted trenches then allow field teams to catalogue fragile ceramic shards and hearth foundations while leaving undisturbed zones intact for future analytical techniques.",
+    "target": {
+      "text": "excavation of subterranean towns",
+      "start": 21,
+      "end": 53
+    },
+    "decoys": [
+      {
+        "text": "ground-penetrating radar",
+        "start": 145,
+        "end": 169,
+        "whyVi": "Chỉ radar xuyên đất, là công cụ khảo sát trước khi khai quật."
+      },
+      {
+        "text": "fragile ceramic shards",
+        "start": 225,
+        "end": 247,
+        "whyVi": "Chỉ mảnh gốm dễ vỡ, là hiện vật tìm thấy."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"excavate buried settlements\" ↔ \"excavation of subterranean towns\".",
+    "topics": [
+      "history"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_023",
+    "level": 2,
+    "questionPhrase": "cope resiliently with stress",
+    "relation": "equivalent",
+    "context": "Occupational health studies reveal that resilient stress coping among emergency paramedics is shaped more by supportive peer networks than by individual personality traits alone. Structured debriefing meetings and brief breathing exercises between dispatches lower cortisol spikes and reduce long-term emotional detachment.",
+    "target": {
+      "text": "resilient stress coping",
+      "start": 40,
+      "end": 63
+    },
+    "decoys": [
+      {
+        "text": "brief breathing exercises",
+        "start": 214,
+        "end": 239,
+        "whyVi": "Chỉ bài tập hít thở ngắn, là kỹ thuật hỗ trợ."
+      },
+      {
+        "text": "supportive peer networks",
+        "start": 109,
+        "end": 133,
+        "whyVi": "Chỉ mạng lưới bạn bè hỗ trợ, không đồng nghĩa khả năng ứng phó kiên cường."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv+prep+N → adj+N+N): \"cope resiliently with stress\" ↔ \"resilient stress coping\".",
+    "topics": [
+      "psychology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_024",
+    "level": 2,
+    "questionPhrase": "land rovers precisely",
+    "relation": "equivalent",
+    "context": "Advances in autonomous hazard-avoidance software now permit precision rover landings inside rocky valleys previously considered far too hazardous for robotic probes. During final descent, onboard optical cameras compare live terrain frames against orbital maps, steering thrusters smoothly clear of boulders and steep crater rims.",
+    "target": {
+      "text": "precision rover landings",
+      "start": 60,
+      "end": 84
+    },
+    "decoys": [
+      {
+        "text": "steep crater rims",
+        "start": 312,
+        "end": 329,
+        "whyVi": "Chỉ vành miệng hố dốc, là địa hình nguy hiểm."
+      },
+      {
+        "text": "onboard optical cameras",
+        "start": 188,
+        "end": 211,
+        "whyVi": "Chỉ camera quang học trên tàu, là phần cứng định vị."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → N+N+N): \"land rovers precisely\" ↔ \"precision rover landings\".",
+    "topics": [
+      "space"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_025",
+    "level": 2,
+    "questionPhrase": "insulate older homes properly",
+    "relation": "equivalent",
+    "context": "Energy economists consistently rank proper thermal insulation of ageing dwellings as the single most cost-effective measure for cutting winter fuel poverty. Offering low-interest retrofit loans for loft wool and draught-proofed frames lowers peak heating loads far faster than building new power stations.",
+    "target": {
+      "text": "proper thermal insulation of ageing dwellings",
+      "start": 36,
+      "end": 81
+    },
+    "decoys": [
+      {
+        "text": "winter fuel poverty",
+        "start": 136,
+        "end": 155,
+        "whyVi": "Chỉ tình trạng thiếu nhiên liệu sưởi mùa đông, là hệ quả cần giải quyết."
+      },
+      {
+        "text": "low-interest retrofit loans",
+        "start": 166,
+        "end": 193,
+        "whyVi": "Chỉ khoản vay cải tạo lãi suất thấp, là chính sách tài chính."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N+adv → adj+N+of+N): \"insulate older homes properly\" ↔ \"proper thermal insulation of ageing dwellings\".",
+    "topics": [
+      "energy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_026",
+    "level": 2,
+    "questionPhrase": "simplify legal wording",
+    "relation": "equivalent",
+    "context": "Legal reformers advocating the simplification of statutory phrasing point out that ordinary tenants and borrowers frequently misunderstand dense contract clauses written in archaic jargon. Courts that test plain-language consumer guides report fewer administrative disputes and noticeably quicker resolution of routine small-claims filings.",
+    "target": {
+      "text": "simplification of statutory phrasing",
+      "start": 31,
+      "end": 67
+    },
+    "decoys": [
+      {
+        "text": "dense contract clauses",
+        "start": 139,
+        "end": 161,
+        "whyVi": "Chỉ điều khoản hợp đồng dày đặc, là đối tượng cần sửa."
+      },
+      {
+        "text": "plain-language consumer guides",
+        "start": 206,
+        "end": 236,
+        "whyVi": "Chỉ tài liệu hướng dẫn ngôn ngữ dễ hiểu, là sản phẩm phụ trợ."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"simplify legal wording\" ↔ \"simplification of statutory phrasing\".",
+    "topics": [
+      "language"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_027",
+    "level": 2,
+    "questionPhrase": "narrow achievement gaps",
+    "relation": "equivalent",
+    "context": "Independent school evaluations show that sustained small-group reading tuition during early primary grades drives measurable narrowing of attainment disparities between affluent and low-income neighbourhoods. Lending library bags also boost household book ownership, helping children practise decoding skills outside classroom hours.",
+    "target": {
+      "text": "narrowing of attainment disparities",
+      "start": 125,
+      "end": 160
+    },
+    "decoys": [
+      {
+        "text": "small-group reading tuition",
+        "start": 51,
+        "end": 78,
+        "whyVi": "Chỉ lớp kèm đọc nhóm nhỏ, là giải pháp can thiệp."
+      },
+      {
+        "text": "household book ownership",
+        "start": 241,
+        "end": 265,
+        "whyVi": "Chỉ số sách có ở nhà, là yếu tố bối cảnh."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"narrow achievement gaps\" ↔ \"narrowing of attainment disparities\".",
+    "topics": [
+      "education"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_028",
+    "level": 2,
+    "questionPhrase": "recycle plastic efficiently",
+    "relation": "equivalent",
+    "context": "Materials engineers explain that efficient polymer recycling is routinely undermined when food residue and multi-layer snack wrappers contaminate single-stream kerbside bins. Deposit-return machines that sort clear beverage bottles at supermarkets yield far purer resin flakes capable of being remade into food-grade containers.",
+    "target": {
+      "text": "efficient polymer recycling",
+      "start": 33,
+      "end": 60
+    },
+    "decoys": [
+      {
+        "text": "single-stream kerbside bins",
+        "start": 146,
+        "end": 173,
+        "whyVi": "Chỉ thùng rác tái chế gộp tại lề đường, thường gây lẫn tạp chất."
+      },
+      {
+        "text": "multi-layer snack wrappers",
+        "start": 107,
+        "end": 133,
+        "whyVi": "Chỉ bao bì đồ ăn vặt nhiều lớp, là loại khó tái chế."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"recycle plastic efficiently\" ↔ \"efficient polymer recycling\".",
+    "topics": [
+      "environment"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_029",
+    "level": 2,
+    "questionPhrase": "vaccinate populations widely",
+    "relation": "equivalent",
+    "context": "Epidemiological records confirm that widespread population immunisation remains the strongest shield against severe seasonal flu outbreaks in densely populated cities. Investing in reliable cold-chain transport vans and convenient workplace walk-in clinics consistently raises uptake among busy adults who might otherwise skip appointments.",
+    "target": {
+      "text": "widespread population immunisation",
+      "start": 37,
+      "end": 71
+    },
+    "decoys": [
+      {
+        "text": "cold-chain transport vans",
+        "start": 190,
+        "end": 215,
+        "whyVi": "Chỉ xe vận chuyển dây chuyền lạnh, là hạ tầng hậu cần."
+      },
+      {
+        "text": "seasonal flu outbreaks",
+        "start": 116,
+        "end": 138,
+        "whyVi": "Chỉ đợt bùng phát cúm mùa, là bệnh cần phòng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"vaccinate populations widely\" ↔ \"widespread population immunisation\".",
+    "topics": [
+      "health"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_030",
+    "level": 2,
+    "questionPhrase": "diagnose faults automatically",
+    "relation": "equivalent",
+    "context": "Modern bottling plants deploy acoustic vibration sensors on conveyor motors to enable automated fault diagnosis long before a worn bearing snaps. Catching anomalies early allows technicians to swap inexpensive parts during scheduled overnight shutdowns rather than halting entire production lines unexpectedly.",
+    "target": {
+      "text": "automated fault diagnosis",
+      "start": 86,
+      "end": 111
+    },
+    "decoys": [
+      {
+        "text": "scheduled overnight shutdowns",
+        "start": 223,
+        "end": 252,
+        "whyVi": "Chỉ đợt ngừng máy định kỳ ban đêm, không phải chẩn đoán tự động."
+      },
+      {
+        "text": "acoustic vibration sensors",
+        "start": 30,
+        "end": 56,
+        "whyVi": "Chỉ cảm biến rung âm học, là linh kiện thu dữ liệu."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"diagnose faults automatically\" ↔ \"automated fault diagnosis\".",
+    "topics": [
+      "technology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_031",
+    "level": 2,
+    "questionPhrase": "design walkable neighbourhoods",
+    "relation": "equivalent",
+    "context": "Public health surveys demonstrate that walkable neighbourhood design measurably raises daily step counts among residents of every age group. Placing shaded corner grocery shops, primary schools, and pocket parks within ten minutes on foot reduces dependence on private cars far more effectively than widening suburban ring roads.",
+    "target": {
+      "text": "walkable neighbourhood design",
+      "start": 39,
+      "end": 68
+    },
+    "decoys": [
+      {
+        "text": "shaded corner grocery shops",
+        "start": 149,
+        "end": 176,
+        "whyVi": "Chỉ tiệm tạp hóa góc phố rợp bóng, là thành phần cụ thể."
+      },
+      {
+        "text": "suburban ring roads",
+        "start": 309,
+        "end": 328,
+        "whyVi": "Chỉ đường vành đai ngoại ô, đi ngược thiết kế đi bộ."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → adj+N+N): \"design walkable neighbourhoods\" ↔ \"walkable neighbourhood design\".",
+    "topics": [
+      "urban"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_032",
+    "level": 2,
+    "questionPhrase": "delegate authority clearly",
+    "relation": "equivalent",
+    "context": "Management researchers studying fast-growing software startups observe that clear delegation of responsibility prevents senior founders from becoming decision bottlenecks. Even inside flat management hierarchies, defining who owns product launches reduces conflicting instructions far better than adding extra quarterly appraisal forms.",
+    "target": {
+      "text": "clear delegation of responsibility",
+      "start": 76,
+      "end": 110
+    },
+    "decoys": [
+      {
+        "text": "flat management hierarchies",
+        "start": 184,
+        "end": 211,
+        "whyVi": "Chỉ cơ cấu quản lý phẳng, không đồng nghĩa việc phân quyền rõ ràng."
+      },
+      {
+        "text": "quarterly appraisal forms",
+        "start": 310,
+        "end": 335,
+        "whyVi": "Chỉ biểu mẫu đánh giá hàng quý, không phải giao quyền."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+of+N): \"delegate authority clearly\" ↔ \"clear delegation of responsibility\".",
+    "topics": [
+      "work"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_033",
+    "level": 2,
+    "questionPhrase": "stabilise consumer prices",
+    "relation": "equivalent",
+    "context": "Monetary policymakers emphasise that preserving price stability for households protects low-income earners whose wages adjust slowly during inflationary spikes. Although central bank rate hikes cool overheated credit demand, easing imported grain tariffs and domestic transport bottlenecks can relieve grocery costs more directly.",
+    "target": {
+      "text": "price stability for households",
+      "start": 48,
+      "end": 78
+    },
+    "decoys": [
+      {
+        "text": "central bank rate hikes",
+        "start": 170,
+        "end": 193,
+        "whyVi": "Chỉ đợt tăng lãi suất ngân hàng trung ương, là công cụ điều hành."
+      },
+      {
+        "text": "imported grain tariffs",
+        "start": 232,
+        "end": 254,
+        "whyVi": "Chỉ thuế nhập khẩu ngũ cốc, không phải sự ổn định giá."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+N+prep+N): \"stabilise consumer prices\" ↔ \"price stability for households\".",
+    "topics": [
+      "economy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_034",
+    "level": 2,
+    "questionPhrase": "integrate ticketing seamlessly",
+    "relation": "equivalent",
+    "context": "Passenger surveys across metropolitan transit zones highlight seamless fare integration between ferries, trams, and regional bus operators as a major trigger for modal shift. Allowing commuters to tap contactless bank cards with automatic daily price caps eliminates confusing paper transfers and speeds up boarding.",
+    "target": {
+      "text": "seamless fare integration",
+      "start": 62,
+      "end": 87
+    },
+    "decoys": [
+      {
+        "text": "contactless bank cards",
+        "start": 201,
+        "end": 223,
+        "whyVi": "Chỉ thẻ ngân hàng không chạm, là phương tiện thanh toán."
+      },
+      {
+        "text": "regional bus operators",
+        "start": 116,
+        "end": 138,
+        "whyVi": "Chỉ các hãng xe buýt vùng, là đơn vị vận hành."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"integrate ticketing seamlessly\" ↔ \"seamless fare integration\".",
+    "topics": [
+      "transport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_035",
+    "level": 2,
+    "questionPhrase": "classify newly found species",
+    "relation": "equivalent",
+    "context": "Advances in rapid genetic sequencing have dramatically accelerated the classification of newly discovered organisms collected by robotic submersibles around deep-sea hydrothermal vents. Whereas marine taxonomists once relied solely on preserved anatomical traits, comparing DNA barcodes now distinguishes visually identical deep-ocean worms within days.",
+    "target": {
+      "text": "classification of newly discovered organisms",
+      "start": 71,
+      "end": 115
+    },
+    "decoys": [
+      {
+        "text": "deep-sea hydrothermal vents",
+        "start": 157,
+        "end": 184,
+        "whyVi": "Chỉ miệng phun thủy nhiệt đáy biển, là nơi sinh sống."
+      },
+      {
+        "text": "rapid genetic sequencing",
+        "start": 12,
+        "end": 36,
+        "whyVi": "Chỉ giải trình tự gen nhanh, là kỹ thuật hỗ trợ."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"classify newly found species\" ↔ \"classification of newly discovered organisms\".",
+    "topics": [
+      "science"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_036",
+    "level": 2,
+    "questionPhrase": "outsource manufacturing abroad",
+    "relation": "equivalent",
+    "context": "For three decades, multinational electronics brands pursued offshore production outsourcing to capture lower overseas wage rates and specialised component clusters. Recent maritime delays, however, have prompted several firms to diversify risk by opening automated regional assembly plants closer to their main consumer markets.",
+    "target": {
+      "text": "offshore production outsourcing",
+      "start": 60,
+      "end": 91
+    },
+    "decoys": [
+      {
+        "text": "lower overseas wage rates",
+        "start": 103,
+        "end": 128,
+        "whyVi": "Chỉ mức lương nước ngoài thấp hơn, là động cơ chứ không phải hành động thuê ngoài."
+      },
+      {
+        "text": "regional assembly plants",
+        "start": 265,
+        "end": 289,
+        "whyVi": "Chỉ nhà máy lắp ráp khu vực, không phải quá trình chuyển sản xuất ra nước ngoài."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"outsource manufacturing abroad\" ↔ \"offshore production outsourcing\".",
+    "topics": [
+      "globalisation"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_037",
+    "level": 2,
+    "questionPhrase": "celebrate linguistic diversity",
+    "relation": "equivalent",
+    "context": "Civic arts festivals increasingly centre on the celebration of multilingual heritage through bilingual theatre performances, poetry slams, and locally run community radio stations. Alongside annual street food markets, showcasing immigrant languages in public libraries strengthens mutual respect between long-standing residents and newcomers.",
+    "target": {
+      "text": "celebration of multilingual heritage",
+      "start": 48,
+      "end": 84
+    },
+    "decoys": [
+      {
+        "text": "annual street food markets",
+        "start": 191,
+        "end": 217,
+        "whyVi": "Chỉ chợ ẩm thực đường phố thường niên, không phải tôn vinh đa dạng ngôn ngữ."
+      },
+      {
+        "text": "community radio stations",
+        "start": 155,
+        "end": 179,
+        "whyVi": "Chỉ đài phát thanh cộng đồng, là kênh truyền thông."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"celebrate linguistic diversity\" ↔ \"celebration of multilingual heritage\".",
+    "topics": [
+      "culture"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_038",
+    "level": 2,
+    "questionPhrase": "enforce labour laws strictly",
+    "relation": "equivalent",
+    "context": "Employment researchers across rural regions observe that raising statutory minimum wages achieves little on paper without strict enforcement of workplace statutes across subcontracted sectors. Funding unannounced site visits to seasonal harvest contractors and operating multilingual anonymous worker hotlines markedly reduces underpayment abuses.",
+    "target": {
+      "text": "strict enforcement of workplace statutes",
+      "start": 122,
+      "end": 162
+    },
+    "decoys": [
+      {
+        "text": "anonymous worker hotlines",
+        "start": 284,
+        "end": 309,
+        "whyVi": "Chỉ đường dây nóng ẩn danh cho người lao động, là kênh báo cáo."
+      },
+      {
+        "text": "seasonal harvest contractors",
+        "start": 228,
+        "end": 256,
+        "whyVi": "Chỉ nhà thầu thu hoạch thời vụ, là nhóm đối tượng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+of+N): \"enforce labour laws strictly\" ↔ \"strict enforcement of workplace statutes\".",
+    "topics": [
+      "government"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_039",
+    "level": 2,
+    "questionPhrase": "curate content algorithmically",
+    "relation": "equivalent",
+    "context": "Digital sociologists analysing video-sharing platforms note that algorithmic content curation excels at surfacing niche hobby channels tailored to individual tastes. Critics caution, however, that systems optimised purely for longer viewing sessions can steer curious viewers towards progressively more sensational or polarising material.",
+    "target": {
+      "text": "algorithmic content curation",
+      "start": 65,
+      "end": 93
+    },
+    "decoys": [
+      {
+        "text": "longer viewing sessions",
+        "start": 226,
+        "end": 249,
+        "whyVi": "Chỉ phiên xem dài hơn, là mục tiêu thương mại chứ không phải việc chọn lọc nội dung."
+      },
+      {
+        "text": "niche hobby channels",
+        "start": 114,
+        "end": 134,
+        "whyVi": "Chỉ kênh sở thích ngách, không phải thuật toán đề xuất."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"curate content algorithmically\" ↔ \"algorithmic content curation\".",
+    "topics": [
+      "media"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_040",
+    "level": 2,
+    "questionPhrase": "deter opportunistic theft",
+    "relation": "equivalent",
+    "context": "Environmental criminologists reviewing commuter safety audits find that practical urban design contributes substantially to the deterrence of casual property crime around suburban railway stations. Installing brighter streetlamps, open sightlines, and secure bicycle lockers discourages impulsive break-ins far more reliably than warning posters alone.",
+    "target": {
+      "text": "deterrence of casual property crime",
+      "start": 128,
+      "end": 163
+    },
+    "decoys": [
+      {
+        "text": "brighter streetlamps",
+        "start": 209,
+        "end": 229,
+        "whyVi": "Chỉ đèn đường sáng hơn, là phương tiện phòng ngừa."
+      },
+      {
+        "text": "secure bicycle lockers",
+        "start": 252,
+        "end": 274,
+        "whyVi": "Chỉ tủ khóa xe đạp an toàn, là hạ tầng vật lý."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"deter opportunistic theft\" ↔ \"deterrence of casual property crime\".",
+    "topics": [
+      "crime"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_041",
+    "level": 2,
+    "questionPhrase": "nurture emotional security",
+    "relation": "equivalent",
+    "context": "Paediatric research underscores that responsive caregiving in infancy lays the foundation for the nurturing of emotional stability throughout primary school. Simple predictable bedtime routines combined with warm collaboration between parents and early childcare educators help young children regulate frustration calmly.",
+    "target": {
+      "text": "nurturing of emotional stability",
+      "start": 98,
+      "end": 130
+    },
+    "decoys": [
+      {
+        "text": "predictable bedtime routines",
+        "start": 165,
+        "end": 193,
+        "whyVi": "Chỉ nếp đi ngủ ổn định, là thói quen hỗ trợ."
+      },
+      {
+        "text": "early childcare educators",
+        "start": 247,
+        "end": 272,
+        "whyVi": "Chỉ giáo viên mầm non, không phải sự bồi đắp an toàn cảm xúc."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"nurture emotional security\" ↔ \"nurturing of emotional stability\".",
+    "topics": [
+      "family"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_042",
+    "level": 2,
+    "questionPhrase": "manage peak-season crowds",
+    "relation": "equivalent",
+    "context": "Heritage site directors increasingly rely on timed entry tickets and off-peak discounts as cornerstones of effective peak-season crowd management. Spreading visitor arrivals evenly across morning and late-afternoon slots protects worn stone stairways inside historic castle courtyards while improving the viewing experience.",
+    "target": {
+      "text": "peak-season crowd management",
+      "start": 117,
+      "end": 145
+    },
+    "decoys": [
+      {
+        "text": "timed entry tickets",
+        "start": 45,
+        "end": 64,
+        "whyVi": "Chỉ vé vào cửa theo khung giờ, là biện pháp cụ thể."
+      },
+      {
+        "text": "historic castle courtyards",
+        "start": 258,
+        "end": 284,
+        "whyVi": "Chỉ sân lâu đài cổ, là địa điểm tham quan."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+N): \"manage peak-season crowds\" ↔ \"peak-season crowd management\".",
+    "topics": [
+      "tourism"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_043",
+    "level": 2,
+    "questionPhrase": "preserve nutrients during cooking",
+    "relation": "equivalent",
+    "context": "Food chemistry trials comparing domestic kitchen techniques demonstrate that brief gentle steaming achieves far higher nutrient retention in meal preparation than prolonged boiling. Because water-soluble garden vitamins leach rapidly into cooking liquid, shorter heat exposure keeps both colour and micronutrient levels intact.",
+    "target": {
+      "text": "nutrient retention in meal preparation",
+      "start": 119,
+      "end": 157
+    },
+    "decoys": [
+      {
+        "text": "brief gentle steaming",
+        "start": 77,
+        "end": 98,
+        "whyVi": "Chỉ việc hấp nhẹ nhanh, là phương pháp nấu."
+      },
+      {
+        "text": "water-soluble garden vitamins",
+        "start": 190,
+        "end": 219,
+        "whyVi": "Chỉ vitamin tan trong nước, là dưỡng chất cụ thể."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+prep+N → N+N+prep+N): \"preserve nutrients during cooking\" ↔ \"nutrient retention in meal preparation\".",
+    "topics": [
+      "food"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_044",
+    "level": 2,
+    "questionPhrase": "broaden audience access",
+    "relation": "equivalent",
+    "context": "National theatre companies have used affordable live cinema broadcasts to deliver broader public access to performances for viewers living hours from central opera houses. Audience tracking shows that many first-time cinema attendees later purchase tickets for touring stage productions in their own regional towns.",
+    "target": {
+      "text": "broader public access to performances",
+      "start": 82,
+      "end": 119
+    },
+    "decoys": [
+      {
+        "text": "live cinema broadcasts",
+        "start": 48,
+        "end": 70,
+        "whyVi": "Chỉ buổi phát trực tiếp tại rạp chiếu phim, là phương tiện."
+      },
+      {
+        "text": "central opera houses",
+        "start": 150,
+        "end": 170,
+        "whyVi": "Chỉ nhà hát opera trung tâm, là địa điểm."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → adj+N+prep+N): \"broaden audience access\" ↔ \"broader public access to performances\".",
+    "topics": [
+      "arts"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_045",
+    "level": 2,
+    "questionPhrase": "prevent ligament injuries",
+    "relation": "equivalent",
+    "context": "Sports medicine audits across youth football academies confirm that fifteen-minute neuromuscular routines play a decisive role in the prevention of knee and ankle trauma. Incorporating balance hops and landing alignment into targeted warm-up drills cut non-contact sprains by nearly a third over two seasons.",
+    "target": {
+      "text": "prevention of knee and ankle trauma",
+      "start": 134,
+      "end": 169
+    },
+    "decoys": [
+      {
+        "text": "targeted warm-up drills",
+        "start": 225,
+        "end": 248,
+        "whyVi": "Chỉ bài khởi động chuyên biệt, là cách tập phòng tránh."
+      },
+      {
+        "text": "youth football academies",
+        "start": 30,
+        "end": 54,
+        "whyVi": "Chỉ học viện bóng đá trẻ, không phải việc phòng chấn thương."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"prevent ligament injuries\" ↔ \"prevention of knee and ankle trauma\".",
+    "topics": [
+      "sport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_046",
+    "level": 2,
+    "questionPhrase": "fragment wildlife habitats",
+    "relation": "equivalent",
+    "context": "Conservation biologists report that wide motorway corridors and fenced farmland cause severe habitat fragmentation, isolating breeding populations of deer and hedgehogs into shrinking patches. Constructing vegetated highway overpasses and culvert tunnels restores safe movement corridors and lowers nocturnal road collisions.",
+    "target": {
+      "text": "habitat fragmentation",
+      "start": 93,
+      "end": 114
+    },
+    "decoys": [
+      {
+        "text": "vegetated highway overpasses",
+        "start": 206,
+        "end": 234,
+        "whyVi": "Chỉ cầu vượt phủ cây xanh cho động vật, là giải pháp khắc phục."
+      },
+      {
+        "text": "wide motorway corridors",
+        "start": 36,
+        "end": 59,
+        "whyVi": "Chỉ hành lang cao tốc rộng, là nguyên nhân gây chia cắt."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+N): \"fragment wildlife habitats\" ↔ \"habitat fragmentation\".",
+    "topics": [
+      "animals"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_047",
+    "level": 2,
+    "questionPhrase": "bias human judgement subtly",
+    "relation": "equivalent",
+    "context": "Behavioural economics experiments conducted across business schools show how irrelevant initial anchor figures can produce a subtle distortion of human decision-making during salary negotiations and property valuations. Training hiring panels to use structured scoring checklists before comparing candidates substantially limits unconscious first-impression bias.",
+    "target": {
+      "text": "subtle distortion of human decision-making",
+      "start": 125,
+      "end": 167
+    },
+    "decoys": [
+      {
+        "text": "initial anchor figures",
+        "start": 88,
+        "end": 110,
+        "whyVi": "Chỉ con số neo ban đầu, là tác nhân gây thiên lệch."
+      },
+      {
+        "text": "structured scoring checklists",
+        "start": 250,
+        "end": 279,
+        "whyVi": "Chỉ bảng kiểm chấm điểm có cấu trúc, là công cụ giảm sai lệch."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+of+N): \"bias human judgement subtly\" ↔ \"subtle distortion of human decision-making\".",
+    "topics": [
+      "psychology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2b_048",
+    "level": 2,
+    "questionPhrase": "capture industrial carbon",
+    "relation": "equivalent",
+    "context": "Chemical engineers researching heavy manufacturing argue that industrial carbon capture offers a vital bridge for sectors such as steelmaking where direct electrification remains difficult. Scrubbing exhaust from cement kiln flues and piping compressed dioxide into depleted offshore gas fields can curb emissions while cleaner processes mature.",
+    "target": {
+      "text": "industrial carbon capture",
+      "start": 62,
+      "end": 87
+    },
+    "decoys": [
+      {
+        "text": "depleted offshore gas fields",
+        "start": 266,
+        "end": 294,
+        "whyVi": "Chỉ mỏ khí ngoài khơi cạn kiệt, là nơi lưu trữ chứ không phải quá trình thu giữ."
+      },
+      {
+        "text": "cement kiln flues",
+        "start": 213,
+        "end": 230,
+        "whyVi": "Chỉ ống khói lò xi măng, là nguồn phát thải."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → adj+N+N): \"capture industrial carbon\" ↔ \"industrial carbon capture\".",
+    "topics": [
+      "energy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  }
+]

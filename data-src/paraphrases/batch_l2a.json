@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "para:l2a_001",
+    "level": 2,
+    "questionPhrase": "expand rapidly",
+    "relation": "equivalent",
+    "context": "Over the past two decades, the rapid expansion of metropolitan centres has placed considerable pressure on ageing water pipes and drainage channels. While newly built suburban housing estates offer larger floor plans for young families, planners warn that extending public transport networks across low-density fringes remains financially demanding for municipal budgets.",
+    "target": {
+      "text": "rapid expansion",
+      "start": 31,
+      "end": 46
+    },
+    "decoys": [
+      {
+        "text": "public transport networks",
+        "start": 266,
+        "end": 291,
+        "whyVi": "Chỉ hạ tầng giao thông, không diễn đạt sự mở rộng nhanh."
+      },
+      {
+        "text": "suburban housing estates",
+        "start": 167,
+        "end": 191,
+        "whyVi": "Chỉ khu nhà ở ngoại ô, không phải quá trình mở rộng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"expand rapidly\" ↔ \"rapid expansion\".",
+    "topics": [
+      "urban"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_002",
+    "level": 2,
+    "questionPhrase": "consume less electricity",
+    "relation": "equivalent",
+    "context": "Field trials across three temperate towns indicate that households fitted with real-time wall displays consistently achieve lower electricity consumption during winter months. Although smart household metres initially prompted curiosity, engineers observed that pairing clear visual feedback with transparent peak evening tariffs produced the most durable reductions in domestic energy demand.",
+    "target": {
+      "text": "lower electricity consumption",
+      "start": 124,
+      "end": 153
+    },
+    "decoys": [
+      {
+        "text": "smart household metres",
+        "start": 185,
+        "end": 207,
+        "whyVi": "Chỉ thiết bị đo điện, không diễn đạt việc giảm tiêu thụ."
+      },
+      {
+        "text": "peak evening tariffs",
+        "start": 309,
+        "end": 329,
+        "whyVi": "Chỉ biểu giá giờ cao điểm, không phải mức tiêu thụ thấp hơn."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → adj+N): \"consume less electricity\" ↔ \"lower electricity consumption\".",
+    "topics": [
+      "environment"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_003",
+    "level": 2,
+    "questionPhrase": "perform better academically",
+    "relation": "equivalent",
+    "context": "Longitudinal studies conducted by regional education researchers suggest that structured peer mentoring schemes foster stronger academic performance among first-year secondary pupils. Rather than relying solely on extended school days, participating schools scheduled brief afternoon review sessions that boosted pupil confidence and reduced early exam anxiety across mixed-ability classrooms.",
+    "target": {
+      "text": "stronger academic performance",
+      "start": 119,
+      "end": 148
+    },
+    "decoys": [
+      {
+        "text": "extended school days",
+        "start": 214,
+        "end": 234,
+        "whyVi": "Chỉ thời lượng học kéo dài, không chỉ kết quả học tập."
+      },
+      {
+        "text": "peer mentoring schemes",
+        "start": 89,
+        "end": 111,
+        "whyVi": "Chỉ chương trình kèm cặp, không phải thành tích học tập."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"perform better academically\" ↔ \"stronger academic performance\".",
+    "topics": [
+      "education"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_004",
+    "level": 2,
+    "questionPhrase": "depend heavily on medication",
+    "relation": "equivalent",
+    "context": "Physiotherapists working in community rehabilitation centres have questioned the heavy reliance on pharmaceuticals for managing chronic joint stiffness in older adults. When patients combine supervised strength training with preventive lifestyle guidance, mobility scores often improve enough to taper daily painkillers safely under routine clinical supervision.",
+    "target": {
+      "text": "heavy reliance on pharmaceuticals",
+      "start": 81,
+      "end": 114
+    },
+    "decoys": [
+      {
+        "text": "preventive lifestyle guidance",
+        "start": 225,
+        "end": 254,
+        "whyVi": "Chỉ hướng dẫn lối sống phòng bệnh, không phải sự phụ thuộc thuốc."
+      },
+      {
+        "text": "chronic joint stiffness",
+        "start": 128,
+        "end": 151,
+        "whyVi": "Chỉ triệu chứng bệnh, không diễn đạt sự lệ thuộc thuốc."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"depend heavily on medication\" ↔ \"heavy reliance on pharmaceuticals\".",
+    "topics": [
+      "health"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_005",
+    "level": 2,
+    "questionPhrase": "automate routine tasks",
+    "relation": "equivalent",
+    "context": "Mid-sized logistics firms increasingly invest in cloud platforms that accelerate the automation of repetitive duties such as invoice verification and customs filing. While phasing out legacy accounting software reduces clerical errors, labour analysts emphasise that employers must pair digital upgrades with technical retraining grants so administrative staff can move into analytical roles.",
+    "target": {
+      "text": "automation of repetitive duties",
+      "start": 85,
+      "end": 116
+    },
+    "decoys": [
+      {
+        "text": "legacy accounting software",
+        "start": 184,
+        "end": 210,
+        "whyVi": "Chỉ phần mềm kế toán cũ, không phải quá trình tự động hóa."
+      },
+      {
+        "text": "technical retraining grants",
+        "start": 309,
+        "end": 336,
+        "whyVi": "Chỉ trợ cấp đào tạo lại, không phải tự động hóa công việc."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"automate routine tasks\" ↔ \"automation of repetitive duties\".",
+    "topics": [
+      "technology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_006",
+    "level": 2,
+    "questionPhrase": "grow steadily",
+    "relation": "equivalent",
+    "context": "Recent quarterly trade figures from coastal export manufacturing zones reveal steady growth in precision component shipments despite volatile global shipping fees. Economists attribute this resilience to diversified supplier contracts and local technical colleges that supply skilled technicians directly to mid-tier engineering plants.",
+    "target": {
+      "text": "steady growth",
+      "start": 78,
+      "end": 91
+    },
+    "decoys": [
+      {
+        "text": "export manufacturing zones",
+        "start": 44,
+        "end": 70,
+        "whyVi": "Chỉ khu sản xuất xuất khẩu, không chỉ tốc độ tăng trưởng."
+      },
+      {
+        "text": "quarterly trade figures",
+        "start": 7,
+        "end": 30,
+        "whyVi": "Chỉ số liệu thương mại theo quý, không nói tăng ổn định."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"grow steadily\" ↔ \"steady growth\".",
+    "topics": [
+      "economy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_007",
+    "level": 2,
+    "questionPhrase": "severely congested roads",
+    "relation": "equivalent",
+    "context": "To relieve severe traffic congestion along historic arterial bridges, several riverfront cities have raised downtown parking fees while expanding dedicated tram corridors. Commuter diaries gathered twelve months after the policy shift showed faster bus timetables and noticeably cleaner air outside primary schools near major intersections.",
+    "target": {
+      "text": "severe traffic congestion",
+      "start": 11,
+      "end": 36
+    },
+    "decoys": [
+      {
+        "text": "dedicated tram corridors",
+        "start": 146,
+        "end": 170,
+        "whyVi": "Chỉ làn tàu điện riêng, không phải tình trạng tắc nghẽn."
+      },
+      {
+        "text": "downtown parking fees",
+        "start": 108,
+        "end": 129,
+        "whyVi": "Chỉ phí đỗ xe trung tâm, không phải kẹt xe nặng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (adv+adj+N → adj+N): \"severely congested roads\" ↔ \"severe traffic congestion\".",
+    "topics": [
+      "transport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_008",
+    "level": 2,
+    "questionPhrase": "collaborate effectively",
+    "relation": "equivalent",
+    "context": "Organisational psychologists studying hybrid engineering teams report that effective collaboration depends less on constant video calls than on clear written handovers. When teams maintain well-structured shared digital workspaces and concise weekly status briefings, staff across different time zones resolve design bottlenecks without suffering meeting fatigue.",
+    "target": {
+      "text": "effective collaboration",
+      "start": 75,
+      "end": 98
+    },
+    "decoys": [
+      {
+        "text": "shared digital workspaces",
+        "start": 205,
+        "end": 230,
+        "whyVi": "Chỉ không gian làm việc số, không phải sự phối hợp hiệu quả."
+      },
+      {
+        "text": "weekly status briefings",
+        "start": 243,
+        "end": 266,
+        "whyVi": "Chỉ buổi họp cập nhật hàng tuần, không đồng nghĩa phối hợp tốt."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"collaborate effectively\" ↔ \"effective collaboration\".",
+    "topics": [
+      "work"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_009",
+    "level": 2,
+    "questionPhrase": "measure accurately",
+    "relation": "equivalent",
+    "context": "Oceanographers rely on calibrated satellite radar sweeps combined with coastal tide gauges to achieve accurate measurement of subtle sea-level shifts across polar basins. Without continuous cross-checking between orbital instruments and floating buoys, seasonal temperature fluctuations could easily distort long-term climate projections by several millimetres.",
+    "target": {
+      "text": "accurate measurement",
+      "start": 102,
+      "end": 122
+    },
+    "decoys": [
+      {
+        "text": "coastal tide gauges",
+        "start": 71,
+        "end": 90,
+        "whyVi": "Chỉ thiết bị đo thủy triều, không phải phép đo chính xác."
+      },
+      {
+        "text": "satellite radar sweeps",
+        "start": 34,
+        "end": 56,
+        "whyVi": "Chỉ lượt quét radar vệ tinh, không diễn đạt độ chính xác."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"measure accurately\" ↔ \"accurate measurement\".",
+    "topics": [
+      "science"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_010",
+    "level": 2,
+    "questionPhrase": "preserve traditional crafts",
+    "relation": "equivalent",
+    "context": "Paid apprenticeship stipends have proved vital for the preservation of heritage skills such as hand-loom weaving and woodblock carving in rural provinces. Although regional textile museums document finished artefacts, artisans point out that seasonal tourist fairs alone rarely generate stable enough income to attract younger trainees.",
+    "target": {
+      "text": "preservation of heritage skills",
+      "start": 55,
+      "end": 86
+    },
+    "decoys": [
+      {
+        "text": "regional textile museums",
+        "start": 164,
+        "end": 188,
+        "whyVi": "Chỉ bảo tàng dệt may, không phải hoạt động bảo tồn nghề."
+      },
+      {
+        "text": "seasonal tourist fairs",
+        "start": 242,
+        "end": 264,
+        "whyVi": "Chỉ hội chợ du lịch theo mùa, không phải việc giữ gìn nghề truyền thống."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"preserve traditional crafts\" ↔ \"preservation of heritage skills\".",
+    "topics": [
+      "culture"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_011",
+    "level": 2,
+    "questionPhrase": "compete fiercely",
+    "relation": "equivalent",
+    "context": "Lower import tariffs and streamlined cross-border supply chains have exposed domestic retail brands to fierce competition from international online marketplaces. In response, many regional producers have shifted away from low-margin mass production towards specialised goods backed by faster local repair guarantees.",
+    "target": {
+      "text": "fierce competition",
+      "start": 103,
+      "end": 121
+    },
+    "decoys": [
+      {
+        "text": "cross-border supply chains",
+        "start": 37,
+        "end": 63,
+        "whyVi": "Chỉ chuỗi cung ứng xuyên biên giới, không phải cạnh tranh gay gắt."
+      },
+      {
+        "text": "domestic retail brands",
+        "start": 77,
+        "end": 99,
+        "whyVi": "Chỉ thương hiệu bán lẻ nội địa, không diễn đạt mức độ cạnh tranh."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"compete fiercely\" ↔ \"fierce competition\".",
+    "topics": [
+      "globalisation"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_012",
+    "level": 2,
+    "questionPhrase": "fail to comply with rules",
+    "relation": "equivalent",
+    "context": "Environmental auditors across several industrial port districts discovered that modest administrative fines rarely deterred persistent regulatory non-compliance among private waste contractors. After municipal licensing boards introduced public violation registers alongside unannounced routine safety inspections, adherence to chemical disposal standards rose sharply within two consecutive reporting quarters.",
+    "target": {
+      "text": "regulatory non-compliance",
+      "start": 135,
+      "end": 160
+    },
+    "decoys": [
+      {
+        "text": "routine safety inspections",
+        "start": 287,
+        "end": 313,
+        "whyVi": "Chỉ đợt kiểm tra an toàn định kỳ, không phải hành vi vi phạm."
+      },
+      {
+        "text": "municipal licensing boards",
+        "start": 200,
+        "end": 226,
+        "whyVi": "Chỉ cơ quan cấp phép, không diễn đạt việc không tuân thủ."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+V → adj+N): \"fail to comply with rules\" ↔ \"regulatory non-compliance\".",
+    "topics": [
+      "government"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_013",
+    "level": 2,
+    "questionPhrase": "influence public opinion",
+    "relation": "equivalent",
+    "context": "Media scholars investigating local election coverage observed that algorithmic news feeds now exert far greater influence over public attitudes than traditional print editorials. Nevertheless, regional radio broadcasts continue to hold high trust ratings among rural commuters who value unscripted interviews with neighbourhood representatives.",
+    "target": {
+      "text": "influence over public attitudes",
+      "start": 112,
+      "end": 143
+    },
+    "decoys": [
+      {
+        "text": "algorithmic news feeds",
+        "start": 67,
+        "end": 89,
+        "whyVi": "Chỉ luồng tin theo thuật toán, không phải sự tác động lên dư luận."
+      },
+      {
+        "text": "regional radio broadcasts",
+        "start": 193,
+        "end": 218,
+        "whyVi": "Chỉ chương trình phát thanh địa phương, không phải ảnh hưởng dư luận."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+prep+N): \"influence public opinion\" ↔ \"influence over public attitudes\".",
+    "topics": [
+      "media"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_014",
+    "level": 2,
+    "questionPhrase": "prevent youth offending",
+    "relation": "equivalent",
+    "context": "Criminologists evaluating urban intervention trials concluded that sustained after-school mentorship contributes more to the prevention of juvenile delinquency than strict curfew orders alone. Expanding evening access to community sports leagues and vocational workshops gives teenagers structured routines and trusted adult contacts outside school hours.",
+    "target": {
+      "text": "prevention of juvenile delinquency",
+      "start": 125,
+      "end": 159
+    },
+    "decoys": [
+      {
+        "text": "community sports leagues",
+        "start": 221,
+        "end": 245,
+        "whyVi": "Chỉ giải thể thao cộng đồng, không phải việc phòng ngừa phạm pháp."
+      },
+      {
+        "text": "strict curfew orders",
+        "start": 165,
+        "end": 185,
+        "whyVi": "Chỉ lệnh giới nghiêm, không đồng nghĩa phòng ngừa tái phạm."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"prevent youth offending\" ↔ \"prevention of juvenile delinquency\".",
+    "topics": [
+      "crime"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_015",
+    "level": 2,
+    "questionPhrase": "communicate openly",
+    "relation": "equivalent",
+    "context": "Developmental psychologists note that adolescents who experience open communication at home handle peer pressure more constructively during the transition to high school. Simple daily habits such as shared evening meals and agreed household screen limits create predictable moments for parents and teenagers to discuss setbacks without judgement.",
+    "target": {
+      "text": "open communication",
+      "start": 65,
+      "end": 83
+    },
+    "decoys": [
+      {
+        "text": "shared evening meals",
+        "start": 199,
+        "end": 219,
+        "whyVi": "Chỉ bữa ăn tối chung, không phải cách giao tiếp cởi mở."
+      },
+      {
+        "text": "household screen limits",
+        "start": 231,
+        "end": 254,
+        "whyVi": "Chỉ giới hạn thời gian dùng màn hình, không phải giao tiếp thẳng thắn."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"communicate openly\" ↔ \"open communication\".",
+    "topics": [
+      "family"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_016",
+    "level": 2,
+    "questionPhrase": "damage fragile ecosystems",
+    "relation": "equivalent",
+    "context": "Unchecked visitor numbers along narrow alpine ridges and coral bays have accelerated ecological degradation across several island nature reserves. Park authorities now cap daily landing permits, adjust seasonal ferry schedules, and confine hikers to elevated timber boardwalks during guided coastal walks to protect nesting habitats.",
+    "target": {
+      "text": "ecological degradation",
+      "start": 85,
+      "end": 107
+    },
+    "decoys": [
+      {
+        "text": "guided coastal walks",
+        "start": 284,
+        "end": 304,
+        "whyVi": "Chỉ tour đi bộ ven biển, không phải sự phá hủy hệ sinh thái."
+      },
+      {
+        "text": "seasonal ferry schedules",
+        "start": 202,
+        "end": 226,
+        "whyVi": "Chỉ lịch chạy phà theo mùa, không phải thiệt hại sinh thái."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → adj+N): \"damage fragile ecosystems\" ↔ \"ecological degradation\".",
+    "topics": [
+      "tourism"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_017",
+    "level": 2,
+    "questionPhrase": "distribute food fairly",
+    "relation": "equivalent",
+    "context": "Agricultural economists argue that global hunger stems less from insufficient crop yields than from barriers to equitable food distribution in remote provinces. Building rural feeder roads and solar-powered cold-storage warehouses helps smallholder farmers avoid spoilage and cushion low-income families against sudden harvest price swings.",
+    "target": {
+      "text": "equitable food distribution",
+      "start": 112,
+      "end": 139
+    },
+    "decoys": [
+      {
+        "text": "cold-storage warehouses",
+        "start": 207,
+        "end": 230,
+        "whyVi": "Chỉ kho lạnh bảo quản, không phải sự phân phối công bằng."
+      },
+      {
+        "text": "harvest price swings",
+        "start": 319,
+        "end": 339,
+        "whyVi": "Chỉ biến động giá mùa vụ, không phải phân phối công bằng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"distribute food fairly\" ↔ \"equitable food distribution\".",
+    "topics": [
+      "food"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_018",
+    "level": 2,
+    "questionPhrase": "fund public galleries",
+    "relation": "equivalent",
+    "context": "Cultural advocates warn that shrinking financial backing for municipal museums threatens both conservation laboratories and free educational tours for local schoolchildren. Although corporate sponsorships occasionally cover travelling sculpture exhibitions, curators stress that reliable civic grants remain essential to preserve free weekend entry throughout the year.",
+    "target": {
+      "text": "financial backing for municipal museums",
+      "start": 39,
+      "end": 78
+    },
+    "decoys": [
+      {
+        "text": "travelling sculpture exhibitions",
+        "start": 224,
+        "end": 256,
+        "whyVi": "Chỉ triển lãm điêu khắc lưu động, không phải nguồn tài trợ."
+      },
+      {
+        "text": "free weekend entry",
+        "start": 330,
+        "end": 348,
+        "whyVi": "Chỉ chính sách miễn phí vé cuối tuần, không phải việc cấp ngân sách."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → adj+N+prep+N): \"fund public galleries\" ↔ \"financial backing for municipal museums\".",
+    "topics": [
+      "arts"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_019",
+    "level": 2,
+    "questionPhrase": "recover more quickly",
+    "relation": "equivalent",
+    "context": "Sports physiologists monitoring endurance athletes during packed tournament calendars found that consistent nine-hour sleep schedules promoted faster physical recovery than expensive compression garments alone. While post-match ice baths temporarily ease muscle soreness, cellular tissue repair still relies primarily on deep overnight rest and balanced protein intake.",
+    "target": {
+      "text": "faster physical recovery",
+      "start": 143,
+      "end": 167
+    },
+    "decoys": [
+      {
+        "text": "post-match ice baths",
+        "start": 217,
+        "end": 237,
+        "whyVi": "Chỉ phương pháp tắm nước đá, không phải tốc độ hồi phục."
+      },
+      {
+        "text": "packed tournament calendars",
+        "start": 58,
+        "end": 85,
+        "whyVi": "Chỉ lịch thi đấu dày đặc, không nói về hồi phục nhanh hơn."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"recover more quickly\" ↔ \"faster physical recovery\".",
+    "topics": [
+      "sport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_020",
+    "level": 2,
+    "questionPhrase": "migrate seasonally",
+    "relation": "equivalent",
+    "context": "Ornithologists attaching lightweight tracking rings to shorebirds have mapped how seasonal migration corridors depend on intact mudflats spaced hundreds of kilometres apart. When industrial land reclamation removes even a single staging lagoon, exhausted flocks struggle to reach northern coastal wetland sanctuaries before breeding windows close.",
+    "target": {
+      "text": "seasonal migration",
+      "start": 82,
+      "end": 100
+    },
+    "decoys": [
+      {
+        "text": "coastal wetland sanctuaries",
+        "start": 289,
+        "end": 316,
+        "whyVi": "Chỉ khu bảo tồn đất ngập nước, không phải hành vi di cư."
+      },
+      {
+        "text": "lightweight tracking rings",
+        "start": 25,
+        "end": 51,
+        "whyVi": "Chỉ vòng theo dõi gắn chân, không phải sự di cư theo mùa."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"migrate seasonally\" ↔ \"seasonal migration\".",
+    "topics": [
+      "animals"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_021",
+    "level": 2,
+    "questionPhrase": "verify ancient records",
+    "relation": "equivalent",
+    "context": "Multispectral imaging cameras have transformed the verification of historical manuscripts by revealing faint ink layers invisible to the naked eye. Historians digitising medieval trade ledgers for public digital archive portals can now distinguish original scribal entries from later marginal additions without damaging brittle parchment.",
+    "target": {
+      "text": "verification of historical manuscripts",
+      "start": 51,
+      "end": 89
+    },
+    "decoys": [
+      {
+        "text": "digital archive portals",
+        "start": 204,
+        "end": 227,
+        "whyVi": "Chỉ cổng lưu trữ số, không phải việc kiểm chứng tài liệu."
+      },
+      {
+        "text": "medieval trade ledgers",
+        "start": 170,
+        "end": 192,
+        "whyVi": "Chỉ sổ sách thương mại thời trung cổ, không phải hành động xác minh."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"verify ancient records\" ↔ \"verification of historical manuscripts\".",
+    "topics": [
+      "history"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_022",
+    "level": 2,
+    "questionPhrase": "mentally exhausting",
+    "relation": "equivalent",
+    "context": "Cognitive researchers examining office multitasking discovered that switching between unread emails and complex spreadsheets rapidly induces mental exhaustion even when total working hours appear moderate. Muting constant notification alerts and taking brief midday walks markedly restored sustained concentration during afternoon problem-solving tasks.",
+    "target": {
+      "text": "mental exhaustion",
+      "start": 141,
+      "end": 158
+    },
+    "decoys": [
+      {
+        "text": "constant notification alerts",
+        "start": 213,
+        "end": 241,
+        "whyVi": "Chỉ thông báo liên tục, là nguyên nhân chứ không phải trạng thái kiệt sức."
+      },
+      {
+        "text": "brief midday walks",
+        "start": 253,
+        "end": 271,
+        "whyVi": "Chỉ việc đi bộ giữa trưa, không phải sự kiệt quệ tinh thần."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (adv+adj → adj+N): \"mentally exhausting\" ↔ \"mental exhaustion\".",
+    "topics": [
+      "psychology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_023",
+    "level": 2,
+    "questionPhrase": "detect distant planets",
+    "relation": "equivalent",
+    "context": "High-sensitivity infrared space telescopes have accelerated the detection of remote exoplanets orbiting dim red dwarf stars well beyond our solar system. By analysing faint orbital dips in starlight alongside follow-up readings from ground-based radio dishes, astronomers can estimate both planetary radius and upper-atmosphere composition.",
+    "target": {
+      "text": "detection of remote exoplanets",
+      "start": 64,
+      "end": 94
+    },
+    "decoys": [
+      {
+        "text": "ground-based radio dishes",
+        "start": 233,
+        "end": 258,
+        "whyVi": "Chỉ chảo vô tuyến mặt đất, không phải việc phát hiện hành tinh."
+      },
+      {
+        "text": "faint orbital dips",
+        "start": 167,
+        "end": 185,
+        "whyVi": "Chỉ độ sụt sáng quỹ đạo, là dấu hiệu chứ không phải hành động phát hiện."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"detect distant planets\" ↔ \"detection of remote exoplanets\".",
+    "topics": [
+      "space"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_024",
+    "level": 2,
+    "questionPhrase": "store renewable power",
+    "relation": "equivalent",
+    "context": "Grid engineers warn that expanding offshore wind turbines will not eliminate fossil-fuel backup plants unless utilities invest heavily in large-scale renewable energy storage. Pumped hydro reservoirs and iron-air battery banks can absorb surplus midnight generation and discharge steady voltage across regional grid links during calm winter evenings.",
+    "target": {
+      "text": "renewable energy storage",
+      "start": 150,
+      "end": 174
+    },
+    "decoys": [
+      {
+        "text": "offshore wind turbines",
+        "start": 35,
+        "end": 57,
+        "whyVi": "Chỉ tua-bin gió ngoài khơi, không phải khâu lưu trữ điện."
+      },
+      {
+        "text": "regional grid links",
+        "start": 302,
+        "end": 321,
+        "whyVi": "Chỉ đường dây liên kết lưới điện, không phải việc lưu trữ năng lượng."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → adj+N+N): \"store renewable power\" ↔ \"renewable energy storage\".",
+    "topics": [
+      "energy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_025",
+    "level": 2,
+    "questionPhrase": "disappear gradually",
+    "relation": "equivalent",
+    "context": "Linguists documenting minority dialects warn that urban migration has hastened the gradual disappearance of dozens of highland languages over the past century. Recording oral stories from elderly native speakers and printing bilingual primary textbooks are among the most practical measures for keeping endangered vocabularies alive among younger generations.",
+    "target": {
+      "text": "gradual disappearance",
+      "start": 83,
+      "end": 104
+    },
+    "decoys": [
+      {
+        "text": "bilingual primary textbooks",
+        "start": 225,
+        "end": 252,
+        "whyVi": "Chỉ sách giáo khoa song ngữ, không phải sự biến mất dần."
+      },
+      {
+        "text": "elderly native speakers",
+        "start": 188,
+        "end": 211,
+        "whyVi": "Chỉ người bản ngữ lớn tuổi, không diễn đạt sự mai một."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"disappear gradually\" ↔ \"gradual disappearance\".",
+    "topics": [
+      "language"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_026",
+    "level": 2,
+    "questionPhrase": "memorise facts mechanically",
+    "relation": "equivalent",
+    "context": "Curriculum reformers argue that high-stakes standardised entrance exams often reward the mechanical memorisation of facts at the expense of independent reasoning. Schools introducing open-book project tasks found that pupils retained core scientific principles longer when asked to apply concepts to unfamiliar real-world case studies.",
+    "target": {
+      "text": "mechanical memorisation of facts",
+      "start": 89,
+      "end": 121
+    },
+    "decoys": [
+      {
+        "text": "open-book project tasks",
+        "start": 183,
+        "end": 206,
+        "whyVi": "Chỉ bài tập dự án mở sách, ngược với học thuộc lòng."
+      },
+      {
+        "text": "standardised entrance exams",
+        "start": 44,
+        "end": 71,
+        "whyVi": "Chỉ kỳ thi đầu vào chuẩn hóa, không phải việc học vẹt."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+of+N): \"memorise facts mechanically\" ↔ \"mechanical memorisation of facts\".",
+    "topics": [
+      "education"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_027",
+    "level": 2,
+    "questionPhrase": "recover naturally",
+    "relation": "equivalent",
+    "context": "Forest ecologists monitoring abandoned hillside pastures found that fencing off grazing livestock often triggers rapid natural regeneration within five years. Compared with costly commercial timber estates planted with single-species saplings, allowing wind-dispersed native seed banks to sprout produces denser canopies and richer insect biodiversity.",
+    "target": {
+      "text": "natural regeneration",
+      "start": 119,
+      "end": 139
+    },
+    "decoys": [
+      {
+        "text": "commercial timber estates",
+        "start": 180,
+        "end": 205,
+        "whyVi": "Chỉ rừng trồng lấy gỗ thương mại, không phải phục hồi tự nhiên."
+      },
+      {
+        "text": "native seed banks",
+        "start": 268,
+        "end": 285,
+        "whyVi": "Chỉ ngân hàng hạt giống bản địa, không phải quá trình tự tái sinh."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"recover naturally\" ↔ \"natural regeneration\".",
+    "topics": [
+      "environment"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_028",
+    "level": 2,
+    "questionPhrase": "diagnose illnesses early",
+    "relation": "equivalent",
+    "context": "Public health analysts emphasise that early disease diagnosis dramatically lowers both surgical complications and long-term hospital expenditure. Deploying mobile screening vans to remote farming districts has shortened waiting times for rural clinic referrals and enabled clinicians to treat cardiovascular conditions before emergency admission becomes unavoidable.",
+    "target": {
+      "text": "early disease diagnosis",
+      "start": 38,
+      "end": 61
+    },
+    "decoys": [
+      {
+        "text": "mobile screening vans",
+        "start": 156,
+        "end": 177,
+        "whyVi": "Chỉ xe khám sàng lọc lưu động, không phải việc chẩn đoán sớm."
+      },
+      {
+        "text": "rural clinic referrals",
+        "start": 238,
+        "end": 260,
+        "whyVi": "Chỉ giấy chuyển tuyến phòng khám vùng quê, không phải chẩn đoán sớm."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"diagnose illnesses early\" ↔ \"early disease diagnosis\".",
+    "topics": [
+      "health"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_029",
+    "level": 2,
+    "questionPhrase": "economically viable",
+    "relation": "equivalent",
+    "context": "Architects assessing adaptive reuse projects must carefully evaluate the economic viability of converting vacant industrial warehouses into mixed-income apartments. While strict heritage zoning rules preserve brick facades, high structural reinforcement costs can stall redevelopment unless local councils offer targeted property-tax relief.",
+    "target": {
+      "text": "economic viability",
+      "start": 73,
+      "end": 91
+    },
+    "decoys": [
+      {
+        "text": "vacant industrial warehouses",
+        "start": 106,
+        "end": 134,
+        "whyVi": "Chỉ nhà kho công nghiệp bỏ trống, không phải tính khả thi kinh tế."
+      },
+      {
+        "text": "heritage zoning rules",
+        "start": 178,
+        "end": 199,
+        "whyVi": "Chỉ quy định quy hoạch di sản, không nói về khả năng sinh lời/khả thi."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (adv+adj → adj+N): \"economically viable\" ↔ \"economic viability\".",
+    "topics": [
+      "urban"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_030",
+    "level": 2,
+    "questionPhrase": "increasingly insecure jobs",
+    "relation": "equivalent",
+    "context": "Labour market surveys indicate that short-term app-based contracts have contributed to growing employment insecurity among young urban workers, particularly platform delivery couriers and freelance translators. Policy researchers propose portable benefit accounts funded proportionally by multiple clients so irregular schedules do not exclude workers from paid sick leave.",
+    "target": {
+      "text": "growing employment insecurity",
+      "start": 87,
+      "end": 116
+    },
+    "decoys": [
+      {
+        "text": "platform delivery couriers",
+        "start": 157,
+        "end": 183,
+        "whyVi": "Chỉ người giao hàng nền tảng, không phải tính bấp bênh việc làm."
+      },
+      {
+        "text": "portable benefit accounts",
+        "start": 238,
+        "end": 263,
+        "whyVi": "Chỉ tài khoản phúc lợi di động, không diễn đạt sự bất ổn việc làm."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (adv+adj+N → adj+N+N): \"increasingly insecure jobs\" ↔ \"growing employment insecurity\".",
+    "topics": [
+      "work"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_031",
+    "level": 2,
+    "questionPhrase": "protect personal privacy",
+    "relation": "equivalent",
+    "context": "Consumer watchdogs contend that stronger statutory safeguards are overdue for the protection of individual privacy across connected household appliances. While encrypted messaging apps shield private conversations, smart televisions and fitness trackers still harvest behavioural metadata frequently sold to brokers behind targeted retail adverts.",
+    "target": {
+      "text": "protection of individual privacy",
+      "start": 82,
+      "end": 114
+    },
+    "decoys": [
+      {
+        "text": "encrypted messaging apps",
+        "start": 160,
+        "end": 184,
+        "whyVi": "Chỉ ứng dụng nhắn tin mã hóa, là công cụ chứ không phải sự bảo vệ quyền riêng tư."
+      },
+      {
+        "text": "targeted retail adverts",
+        "start": 323,
+        "end": 346,
+        "whyVi": "Chỉ quảng cáo bán lẻ nhắm mục tiêu, không phải việc bảo vệ dữ liệu."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"protect personal privacy\" ↔ \"protection of individual privacy\".",
+    "topics": [
+      "technology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_032",
+    "level": 2,
+    "questionPhrase": "fluctuate unpredictably",
+    "relation": "equivalent",
+    "context": "Smallholder coffee growers in tropical highlands remain acutely vulnerable to unpredictable fluctuations in international commodity prices triggered by distant weather shocks. Joining regional export alliances that guarantee cooperative price floors allows farming households to budget confidently for soil fertilisers and children’s secondary tuition.",
+    "target": {
+      "text": "unpredictable fluctuations",
+      "start": 78,
+      "end": 104
+    },
+    "decoys": [
+      {
+        "text": "Smallholder coffee growers",
+        "start": 0,
+        "end": 26,
+        "whyVi": "Chỉ nông hộ trồng cà phê nhỏ, không phải biến động khó lường."
+      },
+      {
+        "text": "cooperative price floors",
+        "start": 225,
+        "end": 249,
+        "whyVi": "Chỉ mức giá sàn hợp tác xã, là giải pháp chứ không phải sự dao động."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"fluctuate unpredictably\" ↔ \"unpredictable fluctuations\".",
+    "topics": [
+      "economy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_033",
+    "level": 2,
+    "questionPhrase": "reduce commuting times",
+    "relation": "equivalent",
+    "context": "Upgrading signalling software along older railway lines delivered an immediate reduction in daily travel duration for outer-ring office workers without requiring new track construction. Faster boarding at redesigned suburban interchange hubs enabled express commuter trains to run every six minutes during peak morning periods.",
+    "target": {
+      "text": "reduction in daily travel duration",
+      "start": 79,
+      "end": 113
+    },
+    "decoys": [
+      {
+        "text": "express commuter trains",
+        "start": 250,
+        "end": 273,
+        "whyVi": "Chỉ tàu nhanh đi làm, là phương tiện chứ không phải việc rút ngắn thời gian."
+      },
+      {
+        "text": "suburban interchange hubs",
+        "start": 216,
+        "end": 241,
+        "whyVi": "Chỉ trạm trung chuyển ngoại ô, không phải sự giảm thời lượng đi lại."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+prep+N): \"reduce commuting times\" ↔ \"reduction in daily travel duration\".",
+    "topics": [
+      "transport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_034",
+    "level": 2,
+    "questionPhrase": "reproduce lab results",
+    "relation": "equivalent",
+    "context": "Over the past decade, funding agencies have tightened reporting standards to improve the reproducibility of experimental findings in biomedical and behavioural laboratories. Requiring authors submitting to peer-reviewed journals to deposit raw datasets and open statistical scripts enables independent teams to audit analytical steps transparently.",
+    "target": {
+      "text": "reproducibility of experimental findings",
+      "start": 89,
+      "end": 129
+    },
+    "decoys": [
+      {
+        "text": "peer-reviewed journals",
+        "start": 206,
+        "end": 228,
+        "whyVi": "Chỉ tạp chí bình duyệt, không phải khả năng tái lập kết quả."
+      },
+      {
+        "text": "open statistical scripts",
+        "start": 257,
+        "end": 281,
+        "whyVi": "Chỉ mã thống kê mở, là công cụ hỗ trợ chứ không phải khả năng tái lập."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"reproduce lab results\" ↔ \"reproducibility of experimental findings\".",
+    "topics": [
+      "science"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_035",
+    "level": 2,
+    "questionPhrase": "allocate budgets transparently",
+    "relation": "equivalent",
+    "context": "Municipalities that publish line-by-line spending portals have shown how transparent budget allocation strengthens citizen trust in local taxation. When residents can inspect contract bids for district road repairs alongside independent civic audits, complaints over suspected favouritism tend to fall sharply within a single election cycle.",
+    "target": {
+      "text": "transparent budget allocation",
+      "start": 73,
+      "end": 102
+    },
+    "decoys": [
+      {
+        "text": "independent civic audits",
+        "start": 225,
+        "end": 249,
+        "whyVi": "Chỉ kiểm toán dân sự độc lập, không đồng nghĩa phân bổ ngân sách minh bạch."
+      },
+      {
+        "text": "district road repairs",
+        "start": 193,
+        "end": 214,
+        "whyVi": "Chỉ việc sửa đường quận/huyện, không phải phân bổ ngân sách."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"allocate budgets transparently\" ↔ \"transparent budget allocation\".",
+    "topics": [
+      "government"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_036",
+    "level": 2,
+    "questionPhrase": "adapt to local customs",
+    "relation": "equivalent",
+    "context": "Hospitality case studies demonstrate that successful multinational food chains owe much of their longevity to careful adaptation to regional norms rather than rigid global uniformity. Introducing vegetarian platters, adjusting spice profiles, and honouring festive dining hours alongside seasonal menu items consistently outperform standardised marketing templates.",
+    "target": {
+      "text": "adaptation to regional norms",
+      "start": 118,
+      "end": 146
+    },
+    "decoys": [
+      {
+        "text": "multinational food chains",
+        "start": 53,
+        "end": 78,
+        "whyVi": "Chỉ chuỗi đồ ăn đa quốc gia, không phải quá trình thích nghi."
+      },
+      {
+        "text": "seasonal menu items",
+        "start": 288,
+        "end": 307,
+        "whyVi": "Chỉ món theo mùa, không diễn đạt sự thích ứng phong tục."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+prep+N → N+prep+N): \"adapt to local customs\" ↔ \"adaptation to regional norms\".",
+    "topics": [
+      "culture"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_037",
+    "level": 2,
+    "questionPhrase": "verify sources carefully",
+    "relation": "equivalent",
+    "context": "In a twenty-four-hour digital news cycle, editors face constant pressure to publish headlines before competitors, leaving less time for careful source verification. Yet subscriber surveys show that audiences remain loyal to investigative news desks precisely because they resist amplifying fast-moving online rumours without documentary corroboration.",
+    "target": {
+      "text": "careful source verification",
+      "start": 136,
+      "end": 163
+    },
+    "decoys": [
+      {
+        "text": "fast-moving online rumours",
+        "start": 290,
+        "end": 316,
+        "whyVi": "Chỉ tin đồn mạng lan nhanh, không phải bước kiểm chứng nguồn."
+      },
+      {
+        "text": "investigative news desks",
+        "start": 224,
+        "end": 248,
+        "whyVi": "Chỉ ban phóng sự điều tra, không phải hành động xác minh."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"verify sources carefully\" ↔ \"careful source verification\".",
+    "topics": [
+      "media"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_038",
+    "level": 2,
+    "questionPhrase": "reintegrate former prisoners",
+    "relation": "equivalent",
+    "context": "Justice ministries across several Nordic provinces report lower repeat-offending rates when transitional housing and vocational training support the reintegration of ex-offenders. Pairing temporary employer hiring subsidies with debt counselling helps newly released adults build stable livelihoods more effectively than imposing repeated short custodial sentences.",
+    "target": {
+      "text": "reintegration of ex-offenders",
+      "start": 149,
+      "end": 178
+    },
+    "decoys": [
+      {
+        "text": "short custodial sentences",
+        "start": 339,
+        "end": 364,
+        "whyVi": "Chỉ án tù ngắn hạn, không phải việc tái hòa nhập."
+      },
+      {
+        "text": "employer hiring subsidies",
+        "start": 198,
+        "end": 223,
+        "whyVi": "Chỉ trợ cấp tuyển dụng cho doanh nghiệp, không đồng nghĩa tái hòa nhập."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N → N+of+N): \"reintegrate former prisoners\" ↔ \"reintegration of ex-offenders\".",
+    "topics": [
+      "crime"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_039",
+    "level": 2,
+    "questionPhrase": "care for ageing parents",
+    "relation": "equivalent",
+    "context": "As national populations live longer, middle-aged adults increasingly juggle full-time careers alongside demanding elderly care responsibilities. Sociologists studying multi-generational households note that without affordable daytime respite centres and flexible workplace leave, family carers frequently cut back their paid hours or exit the workforce prematurely.",
+    "target": {
+      "text": "elderly care responsibilities",
+      "start": 114,
+      "end": 143
+    },
+    "decoys": [
+      {
+        "text": "flexible workplace leave",
+        "start": 254,
+        "end": 278,
+        "whyVi": "Chỉ chế độ nghỉ phép linh hoạt, không phải trách nhiệm chăm sóc cha mẹ già."
+      },
+      {
+        "text": "multi-generational households",
+        "start": 167,
+        "end": 196,
+        "whyVi": "Chỉ gia đình nhiều thế hệ, không phải nghĩa vụ chăm sóc."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+prep+N → N+N+N): \"care for ageing parents\" ↔ \"elderly care responsibilities\".",
+    "topics": [
+      "family"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_040",
+    "level": 2,
+    "questionPhrase": "become overly commercialised",
+    "relation": "equivalent",
+    "context": "Long-term residents in picturesque Mediterranean ports often complain that excessive commercialisation erodes the very neighbourhood character visitors originally came to admire. As souvenir chains replace independent craft bakeries along historic harbour lanes, escalating commercial rents push out everyday services needed by year-round local families.",
+    "target": {
+      "text": "excessive commercialisation",
+      "start": 75,
+      "end": 102
+    },
+    "decoys": [
+      {
+        "text": "historic harbour lanes",
+        "start": 239,
+        "end": 261,
+        "whyVi": "Chỉ con hẻm cảng cổ, không phải sự thương mại hóa quá mức."
+      },
+      {
+        "text": "independent craft bakeries",
+        "start": 206,
+        "end": 232,
+        "whyVi": "Chỉ tiệm bánh thủ công độc lập, không phải thương mại hóa quá đà."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv+adj → adj+N): \"become overly commercialised\" ↔ \"excessive commercialisation\".",
+    "topics": [
+      "tourism"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_041",
+    "level": 2,
+    "questionPhrase": "shift towards plant-based diets",
+    "relation": "equivalent",
+    "context": "Nutritionists and climate scientists alike point out that a gradual dietary transition towards plant foods can trim livestock methane emissions while improving fibre intake. Trials redesigning university canteen menus found that placing lentil stews and roasted vegetable bowls at eye level doubled uptake without restricting student choice.",
+    "target": {
+      "text": "dietary transition towards plant foods",
+      "start": 68,
+      "end": 106
+    },
+    "decoys": [
+      {
+        "text": "university canteen menus",
+        "start": 193,
+        "end": 217,
+        "whyVi": "Chỉ thực đơn căng-tin đại học, không phải xu hướng chuyển đổi khẩu phần."
+      },
+      {
+        "text": "livestock methane emissions",
+        "start": 116,
+        "end": 143,
+        "whyVi": "Chỉ khí mê-tan chăn nuôi, không phải sự chuyển sang ăn thực vật."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+prep+N → adj+N+prep+N): \"shift towards plant-based diets\" ↔ \"dietary transition towards plant foods\".",
+    "topics": [
+      "food"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_042",
+    "level": 2,
+    "questionPhrase": "express emotions creatively",
+    "relation": "equivalent",
+    "context": "Art therapists collaborating with secondary schools observe that community drama workshops and sketching clubs offer vital outlets for creative emotional expression during stressful exam terms. When studio sessions remain free from rigid grading rubrics, quieter teenagers often articulate complex personal concerns more freely through visual storytelling.",
+    "target": {
+      "text": "creative emotional expression",
+      "start": 135,
+      "end": 164
+    },
+    "decoys": [
+      {
+        "text": "community drama workshops",
+        "start": 65,
+        "end": 90,
+        "whyVi": "Chỉ lớp kịch cộng đồng, là nơi tổ chức chứ không phải việc biểu đạt cảm xúc."
+      },
+      {
+        "text": "rigid grading rubrics",
+        "start": 232,
+        "end": 253,
+        "whyVi": "Chỉ thang chấm điểm cứng nhắc, không phải sự thể hiện cảm xúc sáng tạo."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+adj+N): \"express emotions creatively\" ↔ \"creative emotional expression\".",
+    "topics": [
+      "arts"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_043",
+    "level": 2,
+    "questionPhrase": "participate more widely",
+    "relation": "equivalent",
+    "context": "Sports policy reviews consistently show that hosting major international championships seldom generates lasting broader public participation unless accompanied by grassroots investment. Maintaining lit running paths and free neighbourhood courts encourages far more sedentary residents to exercise regularly than building monumental elite stadium complexes.",
+    "target": {
+      "text": "broader public participation",
+      "start": 112,
+      "end": 140
+    },
+    "decoys": [
+      {
+        "text": "elite stadium complexes",
+        "start": 333,
+        "end": 356,
+        "whyVi": "Chỉ tổ hợp sân vận động đỉnh cao, không phải sự tham gia rộng rãi."
+      },
+      {
+        "text": "free neighbourhood courts",
+        "start": 220,
+        "end": 245,
+        "whyVi": "Chỉ sân chơi miễn phí khu dân cư, là tiện ích chứ không phải tỷ lệ tham gia."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"participate more widely\" ↔ \"broader public participation\".",
+    "topics": [
+      "sport"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_044",
+    "level": 2,
+    "questionPhrase": "adapt genetically",
+    "relation": "equivalent",
+    "context": "Marine biologists studying heat-tolerant corals warn that natural genetic adaptation typically unfolds over centuries rather than the single decades of rapid ocean warming seen today. Although certain isolated island populations survive warmer reef waters slightly better, scientists stress that curbing greenhouse emissions remains indispensable.",
+    "target": {
+      "text": "genetic adaptation",
+      "start": 66,
+      "end": 84
+    },
+    "decoys": [
+      {
+        "text": "warmer reef waters",
+        "start": 237,
+        "end": 255,
+        "whyVi": "Chỉ vùng nước rạn san hô ấm hơn, là tác nhân chứ không phải sự thích nghi gen."
+      },
+      {
+        "text": "isolated island populations",
+        "start": 201,
+        "end": 228,
+        "whyVi": "Chỉ quần thể đảo cô lập, không phải thích nghi di truyền."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adv → adj+N): \"adapt genetically\" ↔ \"genetic adaptation\".",
+    "topics": [
+      "animals"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_045",
+    "level": 2,
+    "questionPhrase": "interpret past events differently",
+    "relation": "equivalent",
+    "context": "Exhibitions revisiting nineteenth-century maritime trade illustrate how shifting historical interpretations emerge whenever scholars examine overlooked diaries and newly translated letters. By updating museum audio guides to include voices of dockworkers alongside shipowners, curators give visitors a fuller grasp of how global commerce affected ordinary coastal towns.",
+    "target": {
+      "text": "shifting historical interpretations",
+      "start": 72,
+      "end": 107
+    },
+    "decoys": [
+      {
+        "text": "newly translated letters",
+        "start": 164,
+        "end": 188,
+        "whyVi": "Chỉ thư từ mới dịch, là nguồn tư liệu chứ không phải cách diễn giải."
+      },
+      {
+        "text": "museum audio guides",
+        "start": 202,
+        "end": 221,
+        "whyVi": "Chỉ hướng dẫn âm thanh bảo tàng, không phải sự thay đổi cách nhìn lịch sử."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+adj+N): \"interpret past events differently\" ↔ \"shifting historical interpretations\".",
+    "topics": [
+      "history"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_046",
+    "level": 2,
+    "questionPhrase": "motivate learners internally",
+    "relation": "equivalent",
+    "context": "Educational psychologists have repeatedly demonstrated that intrinsic learner motivation predicts long-term reading fluency far more reliably than short-term cash prize incentives. Encouraging students to choose topics matching personal curiosity and set self-directed study goals sustains effort long after external rewards are withdrawn.",
+    "target": {
+      "text": "intrinsic learner motivation",
+      "start": 60,
+      "end": 88
+    },
+    "decoys": [
+      {
+        "text": "cash prize incentives",
+        "start": 158,
+        "end": 179,
+        "whyVi": "Chỉ phần thưởng tiền mặt (động lực ngoại sinh), không phải động lực nội tại."
+      },
+      {
+        "text": "self-directed study goals",
+        "start": 255,
+        "end": 280,
+        "whyVi": "Chỉ mục tiêu tự học, không đồng nghĩa động lực bên trong."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+N+adv → adj+N+N): \"motivate learners internally\" ↔ \"intrinsic learner motivation\".",
+    "topics": [
+      "psychology"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_047",
+    "level": 2,
+    "questionPhrase": "accumulate hazardous debris",
+    "relation": "equivalent",
+    "context": "Aerospace engineers warn that the unchecked accumulation of orbital junk poses a growing threat to navigation networks and crewed research stations alike. Even paint flecks shed by decommissioned weather satellites travel at extreme speeds, forcing flight controllers to issue frequent high-altitude collision alerts and fuel-costly evasive manoeuvres.",
+    "target": {
+      "text": "accumulation of orbital junk",
+      "start": 44,
+      "end": 72
+    },
+    "decoys": [
+      {
+        "text": "decommissioned weather satellites",
+        "start": 181,
+        "end": 214,
+        "whyVi": "Chỉ vệ tinh thời tiết ngừng hoạt động, là vật thể chứ không phải sự tích tụ."
+      },
+      {
+        "text": "high-altitude collision alerts",
+        "start": 286,
+        "end": 316,
+        "whyVi": "Chỉ cảnh báo va chạm quỹ đạo cao, không phải sự tích lũy rác."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"accumulate hazardous debris\" ↔ \"accumulation of orbital junk\".",
+    "topics": [
+      "space"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  },
+  {
+    "id": "para:l2a_048",
+    "level": 2,
+    "questionPhrase": "modernise ageing grids",
+    "relation": "equivalent",
+    "context": "Utility regulators stress that the rapid modernisation of outdated power networks is essential if national grids are to absorb millions of decentralised rooftop solar arrays. Installing automated switches and smart transformer substations allows operators to balance two-way electricity flows smoothly without risking neighbourhood blackouts.",
+    "target": {
+      "text": "modernisation of outdated power networks",
+      "start": 41,
+      "end": 81
+    },
+    "decoys": [
+      {
+        "text": "rooftop solar arrays",
+        "start": 153,
+        "end": 173,
+        "whyVi": "Chỉ tấm pin mặt trời áp mái, không phải việc hiện đại hóa lưới điện."
+      },
+      {
+        "text": "smart transformer substations",
+        "start": 209,
+        "end": 238,
+        "whyVi": "Chỉ trạm biến áp thông minh, là thiết bị chứ không phải quá trình hiện đại hóa."
+      }
+    ],
+    "explanationVi": "L2 đổi dạng từ (V+adj+N → N+of+adj+N): \"modernise ageing grids\" ↔ \"modernisation of outdated power networks\".",
+    "topics": [
+      "energy"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-20",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "pass"
+      }
+    }
+  }
+]
