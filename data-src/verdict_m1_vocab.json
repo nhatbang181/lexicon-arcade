@@ -1,0 +1,69 @@
+﻿{
+    "samples":  {
+                    "error_patterns":  {
+                                           "rate":  2.9,
+                                           "reject":  1,
+                                           "n":  35
+                                       },
+                    "collocations":  {
+                                         "rate":  11.8,
+                                         "reject":  13,
+                                         "n":  110
+                                     },
+                    "vocab":  {
+                                  "rate":  11.4,
+                                  "reject":  4,
+                                  "n":  35
+                              },
+                    "paraphrases":  {
+                                        "rate":  3.1,
+                                        "reject":  1,
+                                        "n":  32
+                                    }
+                },
+    "seed":  42,
+    "serious":  [
+                    "err:legacy_107 correct sentence is ungrammatical (duplicated tail: possess far higher digital literacy is far higher) - ruleVi also mismatched with span",
+                    "manifest SHA mismatch -\u003e validate:data exit 1 (must regenerate manifest after final merge)"
+                ],
+    "rejects":  {
+                    "error_patterns":  [
+                                           "err:legacy_107"
+                                       ],
+                    "collocations":  [
+                                         "col:mitigate_mitigate_the_severity_of",
+                                         "col:standard_a_high_standard_of_living",
+                                         "col:acquire_acquire_a_reputation_for",
+                                         "col:eradicate_eradicate_the_root_causes_of",
+                                         "col:pollution_severe_pollution",
+                                         "col:knowledge_in_depth_knowledge",
+                                         "col:awareness_raise_public_awareness_of",
+                                         "col:increase_increase_public_awareness",
+                                         "col:revenue_generate_revenue",
+                                         "col:increase_increase_access_to",
+                                         "col:influence_undue_influence",
+                                         "col:heritage_preserve_heritage",
+                                         "col:solution_a_cost_effective_solution"
+                                     ],
+                    "vocab":  [
+                                  "vocab:immunotherapy (meaningVi truncated)",
+                                  "vocab:strike_a_balance (meaningVi truncated)",
+                                  "vocab:engagement (definitionEn not a definition)",
+                                  "vocab:oral_tradition (meaningVi overlong)"
+                              ],
+                    "paraphrases":  [
+                                        "para:l1a_016 (wild != native, narrowing)"
+                                    ]
+                },
+    "notes":  [
+                  "Many l1Traps are acceptable English (heavy pollution, deep knowledge, make revenue, increase awareness about): do not mark wrong",
+                  "236 words have meaningVi \u003e45 chars, some truncated; 1865 words have \u003e6 clozeAccepted incl. bogus forms (curriculumes, curriculumed): accepts non-words"
+              ],
+    "date":  "2026-11-20",
+    "verifier":  "rv-data-vocab",
+    "verdict":  "CONDITIONAL_PASS: reject rate \u003c 15% on all types, but gate not fully clean: validate:data exit 1 and 1 serious error (err:legacy_107). Fix both then re-run.",
+    "validate_data":  {
+                          "exit":  1,
+                          "note":  "FAILED: 7x INV-M1 SHA-256 mismatch in manifest.json (roadmap, tips, vocab/{collocations,error_patterns,paraphrases,placement_vocab,words}); asset section PASS"
+                      }
+}
