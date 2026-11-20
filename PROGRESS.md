@@ -26,7 +26,7 @@
 - ✅ r-data-reading (`c71aeab`) · ✅ rv-data-reading (`6161539`, 98.81%) · ✅ r-game-r1 (`1659c73`) · ✅ r-game-r2 (`1a506fb`)
 
 ### M3 (Đang chạy)
-- 🔄 r-data-listening · 🔄 r-game-l1 · ⏳ rv-data-listening (`claude-sonnet-5-5-medium`) · ⏳ r-game-l2 · ⏳ r-audio-listening (`3.8 Flash medium`)
+- 🔄 r-data-listening · ✅ r-game-l1 (`5d610ad` – 28/28 tests) · 🔄 r-game-l2 · ⏳ rv-data-listening (`claude-sonnet-5-5-medium`) · ⏳ r-audio-listening (`3.8 Flash medium`)
 
 ## Lỗi đã biết
 - 1 câu YNNG `p2_004_q05` hơi mơ hồ theo blind-solve (83/84) — ghi nhận để tinh chỉnh ở đợt polish M6/M7.
