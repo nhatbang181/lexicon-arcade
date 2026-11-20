@@ -7,7 +7,7 @@
 > - Tối đa **2 worker song song** (RAM 16 GB).
 > - Hai worker không sửa chung file.
 > - Mỗi mốc phải **chạy được** khi kết thúc.
-> - Chọn model cho worker theo bảng của `/dieu-phoi`. File này không quy định model.
+> - Model và effort cho từng worker: xem bảng **"Model × effort theo worker"** cuối file. Luật quota và leo thang theo skill `/dieu-phoi`.
 > - Worker không thấy hội thoại. **Brief phải trỏ tới các file docs liên quan** (cột "Đọc").
 
 ## 0. Thứ tự đọc cho mọi worker
@@ -133,6 +133,39 @@ Không có API và không có key. Chấm bằng gói chấm copy/dán (`07-GRAD
   8. Paraphrase
   9. Vocab
 - Mỗi lượt có đủ các cổng G1–G5. **Đầu mỗi đợt Speaking** (tháng 1, 5, 9): cập nhật chủ đề mới.
+
+## Model × effort theo worker (cập nhật 2026-11-20)
+- Mặc định **Gemini 4 Neon**. Carbon không có trong gói.
+- Argon chỉ dùng khi bể Argon còn quota, lúc đó có thể thay Neon `medium` ở các task UI.
+- `[claude]` = dùng bể Claude riêng, không trừ quota Gemini.
+- **Bảng này là gợi ý.** Nhạc trưởng Antigravity thấy model và quota thật, nên được tự đổi khi có lý do tốt hơn. Phải ghi 1 dòng lý do trên flow và vào `DECISIONS.md`. Không được nới cổng chất lượng, luật người kiểm khác model tác giả, và các điểm dừng hỏi Bang.
+
+| Worker | Model × effort | Lý do |
+|---|---|---|
+| Nhạc trưởng | Orchestrator (Neon) | Chia việc, gộp, giữ cổng |
+| `r-core` (M0) | Neon `high` | Nền móng: SRS, chấm điểm, storage. Sai ở đây thì kéo theo mọi game |
+| `r-shell` (M0) | Neon `medium` | UI và cấu hình theo brief rõ |
+| `r-assets` (M0) | 3.8 Flash `medium` | Tải, chuyển đổi, ghi credits |
+| `rv-m0` | **Claude Opus 5.5** `[claude]` | Kiểm nền khác hãng: `autoRate`, `queue`, `estimator`, `migrateLegacy`, `listeningAnswer` |
+| `r-data-vocab` | Neon `medium` (làm giàu vocab, IPA) + Neon `high` (collocation, paraphrase) | Collocation sai kiểu Việt là rủi ro cao |
+| `rv-data-vocab` | **Claude Sonnet 5.5** `[claude]` | Verifier khác hãng; soi 15% collocation |
+| `r-audio-*` | 3.8 Flash `medium` | Chạy script render và QA. Script lỗi logic thì chuyển Neon `medium` |
+| `r-game-v1`, `r-game-v2v3`, `r-game-r2`, `r-game-l2`, `r-game-w2`, `r-game-s2`, `r-game-x1` | Neon `medium` | UI + engine theo spec chi tiết |
+| `r-game-r1`, `r-game-l1`, `r-game-s1` | Neon `high` | Tương tác phức tạp: highlight theo span, đồng bộ audio, map, VAD |
+| `r-today`, `r-stats-library` | Neon `medium` | |
+| `r-data-reading`, `r-data-listening` | Neon `high` | Viết passage, kịch bản nghe, câu hỏi bẫy. Chất lượng quyết định band |
+| `rv-data-reading`, `rv-data-listening` (verifier + **blind-solve**) | **Claude Sonnet 5.5** `[claude]` | Khác hãng tác giả nên blind-solve khách quan. Lô reject ≥ 15% thì Claude Opus 5.5 |
+| `r-data-writing`, `r-data-speaking` | Neon `high` | Đề, bài mẫu band 8, follow-up |
+| `r-grading-core` | Neon `high` | Parser, hậu kiểm, tính band |
+| `r-chart` | Neon `medium` | |
+| `r-speech-core` | Neon `high` | VAD, ASR auto-restart, metrics |
+| `r-polish` | Neon `medium` + Hydrogen `medium` soi ảnh chụp | |
+| `r-pwa-deploy` | Neon `medium` | |
+| `rv-final` (cuối mỗi mốc, nhất là M6) | **Claude Opus 5.5** `[claude]` | Audit khác hãng: diff + cổng + luồng chính |
+| Soi ảnh chụp ở mọi mốc | Hydrogen `medium` | |
+| Ghi `PROGRESS.md` / `DECISIONS.md` | Hydrogen `low` hoặc do nhạc trưởng ghi | |
+
+Hết bể Claude thì thay bằng: Opus 5.5 → Neon `xhigh` (worker mới), Sonnet 5.5 → Hydrogen `xhigh`.
 
 ## Các điểm phải DỪNG HỎI BANG
 1. **Bất cứ thứ gì tốn tiền hoặc cần tài khoản trả phí** (API AI, Azure, TTS trả phí, hosting trả phí…). Mặc định là **không dùng**.
