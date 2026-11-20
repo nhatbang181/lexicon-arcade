@@ -17,3 +17,6 @@ export * from './EmptyState';
 export * from './Skeleton';
 export * from './Highlighter';
 export * from './QuestionNav';
+export * from './TrackPlayer';
+export * from './Waveform';
+export * from './MapView';
