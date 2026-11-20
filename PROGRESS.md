@@ -28,11 +28,10 @@ Worker cập nhật bảng này: ✅ xong / 🔄 đang làm / ⏸️ tạm dừn
 ### M0 (Hoàn tất 100%)
 - ✅ r-shell (`4b799f5`) · ✅ r-core (`c8d287d`) · ✅ r-assets (`e0f13c6`) · ✅ rv-m0 (0 lỗi)
 
-### M1 (Đang làm dở – đã lưu WIP an toàn)
+### M1 (Đang chạy)
 - ✅ r-game-v1 (`6e5edcc` – 21/21 tests pass)
-- ⏸️ r-m1-data-vocab (đã lưu `data-src/wordlists`, `scripts/data/00_fetch_wordlists.py`, `10_convert_legacy.mjs`, `20_tag_lists_freq.py`...; phiên sau chạy tiếp bước sinh `50_merge.mjs`, `60_build_manifest.mjs`, `validate/run_all.mjs`)
-- ⏸️ r-game-v2v3 (đã lưu `src/games/v2-collocation-forge/**`, `src/games/_shared/**`, `src/test/fixtures/v2v3_fixtures.ts`; phiên sau hoàn thiện nốt `src/games/v3-paraphrase-radar/**` và chạy test)
-- ⏳ rv-data-vocab · ⏳ r-audio-vocab · ⏳ r-today
+- ✅ r-game-v2v3 (`65a257b` – V2 + V3 24/24 tests pass)
+- 🔄 r-m1-data-vocab-2 · 🔄 r-today · ⏳ rv-data-vocab · ⏳ r-audio-vocab
 
 ## Lỗi đã biết
 - MCP `anki` (AnkiConnect) không kết nối được (ECONNREFUSED). Không chặn M1 vì đã có JSON xuất sẵn (`public/data/anki_vocab.json`, `public/data/ielts_4skills.json`).
