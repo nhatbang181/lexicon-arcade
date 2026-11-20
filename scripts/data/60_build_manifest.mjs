@@ -41,6 +41,11 @@ export function countPayloadItems(parsed) {
   return 1;
 }
 
+export function sha256NormalizedLf(rawText) {
+  const normalized = rawText.replace(/\r\n/g, '\n');
+  return crypto.createHash('sha256').update(normalized, 'utf8').digest('hex');
+}
+
 export function buildManifest(rootDir = process.cwd()) {
   const publicDataDir = path.join(rootDir, 'public', 'data');
   const entries = walkJsonFiles(publicDataDir, publicDataDir);
@@ -49,9 +54,9 @@ export function buildManifest(rootDir = process.cwd()) {
   const totals = {};
 
   for (const { rel, full } of entries) {
-    const rawBuf = fs.readFileSync(full);
-    const sha256 = crypto.createHash('sha256').update(rawBuf).digest('hex');
-    const parsed = JSON.parse(rawBuf.toString('utf8'));
+    const rawText = fs.readFileSync(full, 'utf8');
+    const sha256 = sha256NormalizedLf(rawText);
+    const parsed = JSON.parse(rawText);
     const count = countPayloadItems(parsed);
     files[rel] = { sha256, count };
 

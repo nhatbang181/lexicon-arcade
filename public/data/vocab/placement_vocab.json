@@ -633,9 +633,9 @@
       "band": 3,
       "checkMeaningVi": "thuộc về thẩm mỹ, giá trị nghệ thuật",
       "foilsVi": [
+        "thuộc về chế độ ăn uống",
         "chiết trung, pha trộn hài hòa nhiều phong cách",
-        "có sai sót",
-        "(làm) tự do"
+        "có sai sót"
       ]
     },
     {
@@ -655,9 +655,9 @@
       "band": 3,
       "checkMeaningVi": "tùy tiện, võ đoán, không có cơ sở hợp lý",
       "foilsVi": [
+        "thừa nhận, công nhận",
         "tiếp thu, đạt được",
-        "thích nghi, điều chỉnh cho phù hợp",
-        "sự thích ứng"
+        "thích nghi, điều chỉnh cho phù hợp"
       ]
     },
     {
@@ -699,9 +699,9 @@
       "band": 3,
       "checkMeaningVi": "mãn tính",
       "foilsVi": [
+        "thể hiện, biểu lộ, trưng bày",
         "nhạy cảm, lộ liễu; rõ ràng",
-        "xuất khẩu",
-        "phơi bày; khiến chịu tác động của"
+        "xuất khẩu"
       ]
     },
     {
@@ -755,8 +755,8 @@
       "checkMeaningVi": "địa danh nổi bật",
       "foilsVi": [
         "trộm đột nhập",
-        "mỡ máu (cholesterol)",
-        "nghệ thuật biên đạo múa"
+        "liên minh độc quyền thông đồng ấn định giá bán",
+        "mỡ máu (cholesterol)"
       ]
     },
     {
@@ -776,9 +776,9 @@
       "band": 3,
       "checkMeaningVi": "nhà thờ chính tòa, giáo đường lớn",
       "foilsVi": [
+        "cột mốc quan trọng",
         "chánh niệm",
-        "đường cao tốc nhiều làn dành cho xe cơ giới tốc độ",
-        "quốc tịch"
+        "đường cao tốc nhiều làn cho xe cơ giới tốc độ cao"
       ]
     },
     {
@@ -787,9 +787,9 @@
       "band": 3,
       "checkMeaningVi": "bản án (kết tội)",
       "foilsVi": [
+        "hệ thống vệ sinh môi trường",
         "tin độc quyền",
-        "sự soi xét kỹ lưỡng",
-        "vật liệu bán dẫn hoặc linh kiện vi mạch cốt lõi"
+        "sự soi xét kỹ lưỡng"
       ]
     },
     {
@@ -798,9 +798,9 @@
       "band": 3,
       "checkMeaningVi": "trừu tượng",
       "foilsVi": [
+        "chương trình podcast",
         "sự ô nhiễm",
-        "bảo tồn, gìn giữ",
-        "sự phòng ngừa"
+        "bảo tồn, gìn giữ"
       ]
     },
     {
@@ -820,9 +820,9 @@
       "band": 3,
       "checkMeaningVi": "tổng hợp, gộp chung",
       "foilsVi": [
+        "sự khoan dung",
         "phí cầu đường",
-        "độc hại",
-        "sinh viên đại học"
+        "độc hại"
       ]
     },
     {
@@ -864,9 +864,9 @@
       "band": 4,
       "checkMeaningVi": "sự kiểm định, công nhận",
       "foilsVi": [
+        "sự mã hóa",
         "quỹ hiến tặng lâu dài cho cơ sở giáo dục",
-        "tinh thần khởi nghiệp",
-        "phép lịch sự, nghi thức"
+        "tinh thần khởi nghiệp"
       ]
     },
     {
@@ -897,9 +897,9 @@
       "band": 4,
       "checkMeaningVi": "mơ hồ, đa nghĩa, không rõ ràng",
       "foilsVi": [
+        "ham học hỏi, tò mò",
         "liên kết chặt chẽ với nhau",
-        "không thể đảo ngược",
-        "khoan hồng, nhẹ tay"
+        "không thể đảo ngược"
       ]
     },
     {
@@ -908,9 +908,9 @@
       "band": 4,
       "checkMeaningVi": "điểm bất thường",
       "foilsVi": [
+        "thuật toán",
         "bài tập lớn, nhiệm vụ được giao",
-        "sự thiên lệch",
-        "phần lớn, đa số; khối lượng lớn"
+        "sự thiên lệch"
       ]
     },
     {
@@ -930,9 +930,9 @@
       "band": 4,
       "checkMeaningVi": "thời cổ đại; cổ vật lịch sử quý giá",
       "foilsVi": [
+        "địa danh nổi bật",
         "bài giảng (đại học), buổi diễn thuyết",
-        "giấy phép chính thức",
-        "khả năng đọc viết"
+        "giấy phép chính thức"
       ]
     },
     {
@@ -952,9 +952,9 @@
       "band": 4,
       "checkMeaningVi": "chính sách thắt lưng buộc bụng",
       "foilsVi": [
+        "rào cản",
         "bắt nạt học đường",
-        "hệ thống tác phẩm kinh điển chuẩn mực",
-        "nhà thờ chính tòa, giáo đường lớn"
+        "hệ thống tác phẩm kinh điển chuẩn mực"
       ]
     },
     {
@@ -963,9 +963,9 @@
       "band": 4,
       "checkMeaningVi": "thiên vị, phiến diện",
       "foilsVi": [
-        "sự thiếu hụt",
-        "rõ ràng, xác định, chắc chắn",
-        "bắt nguồn; thu được"
+        "mang tính quốc tế, đa văn hóa",
+        "trau dồi, vun đắp",
+        "sự thiếu hụt"
       ]
     },
     {
@@ -974,9 +974,9 @@
       "band": 4,
       "checkMeaningVi": "đa dạng sinh học",
       "foilsVi": [
+        "biên lai, hóa đơn thanh toán",
         "suy thoái kinh tế",
-        "người tị nạn",
-        "khoản tiền hoàn trả"
+        "người tị nạn"
       ]
     },
     {
@@ -985,9 +985,9 @@
       "band": 4,
       "checkMeaningVi": "mạch lạc, logic, gắn kết chặt chẽ",
       "foilsVi": [
-        "văn hóa dân gian",
-        "sắp tới, sắp diễn ra; sẵn lòng cung cấp thông tin",
-        "bộ gen"
+        "sự tuyệt chủng",
+        "có hạn",
+        "văn hóa dân gian"
       ]
     },
     {
@@ -1007,9 +1007,9 @@
       "band": 4,
       "checkMeaningVi": "ngầm hiểu, hàm ẩn, tiềm ẩn",
       "foilsVi": [
-        "cô lập, tách biệt",
-        "thuộc về động năng, liên quan đến chuyển động",
-        "bãi chôn lấp rác"
+        "nội tại, bản chất vốn có, tự thân",
+        "viện dẫn (luật, nguyên tắc); khơi gợi",
+        "cô lập, tách biệt"
       ]
     },
     {
@@ -1018,9 +1018,9 @@
       "band": 4,
       "checkMeaningVi": "nội tại, bản chất vốn có, tự thân",
       "foilsVi": [
-        "(công ty) đa quốc gia",
-        "đột biến",
-        "chủ nghĩa dân tộc"
+        "tinh thần làm việc",
+        "đa văn hóa",
+        "(công ty) đa quốc gia"
       ]
     },
     {
@@ -1051,9 +1051,9 @@
       "band": 4,
       "checkMeaningVi": "gây nghiện",
       "foilsVi": [
-        "chấm dứt, kết thúc chính thức",
-        "truyền tải, lây truyền",
-        "đang thịnh hành"
+        "đình chỉ, tạm dừng, treo (giấy phép, hoạt động)",
+        "tính bền vững",
+        "chấm dứt, kết thúc chính thức"
       ]
     },
     {
@@ -1084,9 +1084,9 @@
       "band": 4,
       "checkMeaningVi": "xấp xỉ, gần đúng",
       "foilsVi": [
-        "cộng đồng kiều bào",
-        "thuộc về chế độ ăn uống",
-        "bất lợi, nhược điểm"
+        "sự suy thoái (môi trường)",
+        "sự phụ thuộc",
+        "nghèo khó, thiếu thốn"
       ]
     },
     {
@@ -1095,9 +1095,9 @@
       "band": 4,
       "checkMeaningVi": "khảo cổ học",
       "foilsVi": [
-        "xấp xỉ, gần đúng",
-        "tập hợp, lắp ráp, thu thập lại",
-        "phân công, chỉ định, gán cho"
+        "phép loại suy, sự tương đồng để so sánh giải thích",
+        "phân tích",
+        "điểm bất thường"
       ]
     },
     {
@@ -1128,9 +1128,9 @@
       "band": 5,
       "checkMeaningVi": "lòng vị tha",
       "foilsVi": [
-        "bộ vi xử lý trung tâm trên một vi mạch tích hợp",
-        "thông tin sai lệch",
-        "sự hiện đại hóa"
+        "ki-lô-mét (đơn vị đo khoảng cách)",
+        "cây/rừng ngập mặn",
+        "bộ vi xử lý trung tâm trên một vi mạch tích hợp"
       ]
     },
     {
@@ -1139,9 +1139,9 @@
       "band": 5,
       "checkMeaningVi": "tầng đá ngầm chứa nước",
       "foilsVi": [
-        "sự tái phát, sự xảy ra lặp lại",
-        "sự khắc phục bất công, bồi thường thỏa đáng",
-        "hiện tượng khúc xạ ánh sáng hoặc sóng"
+        "mã độc tống tiền khóa dữ liệu hệ thống để đòi chuộc",
+        "lượng độc giả",
+        "nhân viên lễ tân"
       ]
     },
     {
@@ -1150,9 +1150,9 @@
       "band": 5,
       "checkMeaningVi": "thuộc về văn khố, tư liệu lưu trữ lịch sử",
       "foilsVi": [
-        "thuộc về không gian, định vị không gian",
-        "dễ bị ảnh hưởng, dễ mắc",
-        "điều cấm kỵ"
+        "nghiêm ngặt, kỹ lưỡng",
+        "mảnh mai; mong manh, ít ỏi",
+        "thuộc về không gian, định vị không gian"
       ]
     },
     {
@@ -1161,9 +1161,9 @@
       "band": 5,
       "checkMeaningVi": "tỷ lệ nhân viên nghỉ việc",
       "foilsVi": [
-        "khảo cổ học",
-        "chính sách thắt lưng buộc bụng",
-        "tự động hóa"
+        "sự kiểm định, công nhận",
+        "phép loại suy, sự tương đồng để so sánh giải thích",
+        "điểm bất thường"
       ]
     },
     {
@@ -1183,9 +1183,9 @@
       "band": 5,
       "checkMeaningVi": "điểm nghẽn",
       "foilsVi": [
-        "tội phỉ báng (bằng văn bản)",
-        "tuổi thọ dài",
-        "sự định hướng, can thiệp (của người lớn)"
+        "chứng mất ngủ",
+        "nút giao thông khác mức; điểm trung chuyển tuyến",
+        "khoảng thời gian, khoảng cách đều"
       ]
     },
     {
@@ -1194,9 +1194,9 @@
       "band": 5,
       "checkMeaningVi": "tuyển tập tóm lược toàn diện kiến thức",
       "foilsVi": [
-        "sự bảo trợ tài chính cho nghệ thuật và văn hóa",
-        "người đi bộ",
-        "hoạt động từ thiện"
+        "sinh vật",
+        "đại dịch",
+        "hệ hình, mô hình tư duy chuẩn mực"
       ]
     },
     {
@@ -1205,9 +1205,9 @@
       "band": 5,
       "checkMeaningVi": "hạn chế, kìm hãm, ràng buộc",
       "foilsVi": [
-        "giới hạn, thu hẹp phạm vi; giam giữ",
         "sự tuân theo số đông",
-        "làm nhiễm bẩn"
+        "làm nhiễm bẩn",
+        "triệu tập, nhóm họp"
       ]
     },
     {
@@ -1216,9 +1216,9 @@
       "band": 5,
       "checkMeaningVi": "triệu tập, nhóm họp",
       "foilsVi": [
-        "thoái vốn",
         "bình đẳng, theo chủ nghĩa bình đẳng xã hội",
-        "độ hỗn loạn nhiệt động lực học (entropy)"
+        "độ hỗn loạn nhiệt động lực học (entropy)",
+        "phù du, ngắn ngủi, chóng tàn"
       ]
     },
     {
@@ -1227,9 +1227,9 @@
       "band": 5,
       "checkMeaningVi": "xác nhận, củng cố tính xác thực của nguồn tin",
       "foilsVi": [
-        "biến động, dao động lên xuống",
         "sự cải tạo khu nghèo thành khu đắt đỏ",
-        "thuộc về địa nhiệt (nhiệt lượng từ lòng đất)"
+        "thuộc về địa nhiệt (nhiệt lượng từ lòng đất)",
+        "thuộc lão khoa"
       ]
     },
     {
@@ -1238,9 +1238,9 @@
       "band": 5,
       "checkMeaningVi": "bóp méo, xuyên tạc, làm sai lệch",
       "foilsVi": [
-        "đổi mới, sáng tạo phương pháp mới",
         "ham học hỏi, tò mò",
-        "liên kết chặt chẽ với nhau"
+        "liên kết chặt chẽ với nhau",
+        "không thể đảo ngược"
       ]
     },
     {
@@ -1249,9 +1249,9 @@
       "band": 5,
       "checkMeaningVi": "xóa bỏ hoàn toàn, diệt trừ",
       "foilsVi": [
-        "chuyên khảo học thuật sâu về một chủ đề duy nhất",
         "đơn điệu, nhàm chán",
-        "tập quán đạo đức, chuẩn mực ứng xử truyền thống"
+        "tập quán đạo đức, chuẩn mực ứng xử truyền thống",
+        "nhiều mặt, đa diện"
       ]
     },
     {
@@ -1260,9 +1260,9 @@
       "band": 5,
       "checkMeaningVi": "lịch trình chi tiết (chuyến đi)",
       "foilsVi": [
-        "vị trí tuyển dụng",
-        "sự tiêm chủng",
-        "hành vi phá hoại tài sản"
+        "thuế quan",
+        "viễn thông",
+        "người thuê nhà"
       ]
     },
     {
@@ -1271,9 +1271,9 @@
       "band": 5,
       "checkMeaningVi": "giảm thiểu, hạ xuống mức thấp nhất",
       "foilsVi": [
-        "thống nhất, hợp nhất thành một thể chung",
         "tận dụng, sử dụng hiệu quả",
-        "thời lượng phát sóng"
+        "thời lượng phát sóng",
+        "do con người gây ra"
       ]
     },
     {
@@ -1293,9 +1293,9 @@
       "band": 5,
       "checkMeaningVi": "sự bài ngoại",
       "foilsVi": [
-        "chủ nghĩa sùng bái bằng cấp",
-        "mức độ tín nhiệm tài chính và khả năng hoàn trả nợ",
-        "kỹ thuật nhiệt độ cực thấp, công nghệ làm lạnh sâu"
+        "dòng ghi tên tác giả bài báo",
+        "tuyến đường nhánh, đường phụ ít xe cộ",
+        "sự vu khống ác ý, bôi nhọ thanh danh"
       ]
     },
     {
@@ -1304,9 +1304,9 @@
       "band": 5,
       "checkMeaningVi": "hiện vật",
       "foilsVi": [
-        "tẩy xanh (quảng cáo xanh giả tạo)",
-        "đồ thủ công mỹ nghệ",
-        "dịch vụ vận tải hàng hóa bằng xe tải hoặc đường sắt"
+        "nhà sinh thái học",
+        "sự bị điện giật gây thương vong",
+        "điện từ học, hiện tượng tương tác điện từ"
       ]
     },
     {
@@ -1315,9 +1315,9 @@
       "band": 5,
       "checkMeaningVi": "hòa nhập, đồng hóa",
       "foilsVi": [
+        "người có ảnh hưởng (trên mạng)",
         "sự thụ tinh (sinh học, nông nghiệp)",
-        "khép kín, hẹp hòi",
-        "giữa các thế hệ"
+        "tình trạng mất khả năng thanh toán nợ đến hạn"
       ]
     },
     {
@@ -1326,9 +1326,9 @@
       "band": 5,
       "checkMeaningVi": "phân hủy sinh học được",
       "foilsVi": [
-        "bước đi vênh váo, nghênh ngang",
-        "sự khuất phục, áp bức và đặt dưới sự thống trị",
-        "tác động vào tiềm thức dưới ngưỡng nhận biết"
+        "hoài nghi",
+        "thuộc về học thuật, trường lớp",
+        "sự tình cờ may mắn"
       ]
     },
     {
@@ -1337,9 +1337,9 @@
       "band": 5,
       "checkMeaningVi": "sự cưỡng ép, ép buộc bằng vũ lực hoặc đe dọa",
       "foilsVi": [
-        "sự xa lánh, cảm giác bị tách biệt khỏi cộng đồng",
-        "lòng vị tha",
-        "tầng đá ngầm chứa nước"
+        "người ngại/sợ công nghệ",
+        "y tế từ xa",
+        "sự thoát hơi nước (ở lá cây)"
       ]
     },
     {
@@ -1348,9 +1348,9 @@
       "band": 5,
       "checkMeaningVi": "trao tặng, mang lại, hội ý",
       "foilsVi": [
-        "bước đi vênh váo, nghênh ngang",
-        "sự khuất phục, áp bức và đặt dưới sự thống trị",
-        "tác động vào tiềm thức dưới ngưỡng nhận biết"
+        "năng lực thanh toán bền vững các nghĩa vụ nợ dài hạn",
+        "nảy mầm; mọc lên nhanh chóng",
+        "kìm hãm, bóp nghẹt"
       ]
     },
     {
@@ -1359,9 +1359,9 @@
       "band": 5,
       "checkMeaningVi": "giới hạn, thu hẹp phạm vi; giam giữ",
       "foilsVi": [
-        "người tố giác sai phạm",
-        "khổng lồ, cực kỳ lớn (con số)",
-        "thế giới quan"
+        "gây bất an, đáng lo ngại",
+        "thủ khoa tốt nghiệp đại diện phát biểu",
+        "cầu cạn nhiều nhịp cho đường sắt hoặc đường bộ"
       ]
     },
     {
@@ -1370,9 +1370,9 @@
       "band": 5,
       "checkMeaningVi": "hội tụ, tiến gần đến cùng một điểm",
       "foilsVi": [
-        "điểm bất thường",
-        "dự đoán trước, lường trước và chuẩn bị ứng phó",
-        "thời cổ đại; cổ vật lịch sử quý giá"
+        "mơ hồ, đa nghĩa, không rõ ràng",
+        "sửa đổi, bổ sung (luật, văn bản)",
+        "phép loại suy, sự tương đồng để so sánh giải thích"
       ]
     },
     {
@@ -1381,9 +1381,9 @@
       "band": 6,
       "checkMeaningVi": "phân bổ khấu hao dần chi phí hoặc thanh toán nợ gốc",
       "foilsVi": [
-        "suy luận, suy ra",
         "đổi mới, sáng tạo phương pháp mới",
-        "tối đa hóa, tận dụng tối đa"
+        "tối đa hóa, tận dụng tối đa",
+        "hòa giải, làm trung gian điều tiết"
       ]
     },
     {
@@ -1392,9 +1392,9 @@
       "band": 6,
       "checkMeaningVi": "đính kèm, bổ sung vào cuối tài liệu",
       "foilsVi": [
-        "học nhồi",
         "rẽ khác, tách khỏi",
-        "di cư ra nước ngoài"
+        "di cư ra nước ngoài",
+        "đuổi học"
       ]
     },
     {
@@ -1403,9 +1403,9 @@
       "band": 6,
       "checkMeaningVi": "chủ nghĩa tập thể",
       "foilsVi": [
-        "tầng đá ngầm chứa nước",
-        "hiện vật",
-        "tỷ lệ nhân viên nghỉ việc"
+        "đô thị hóa",
+        "tính có thể kiểm chứng thực nghiệm",
+        "sự Tây hóa"
       ]
     },
     {
@@ -1414,9 +1414,9 @@
       "band": 6,
       "checkMeaningVi": "mang tính suy diễn",
       "foilsVi": [
-        "hệ thống canh tác nông lâm kết hợp",
-        "suất phản chiếu bức xạ mặt trời của bề mặt Trái Đất",
-        "tình trạng mất chuẩn mực xã hội"
+        "quá trình tiếp biến văn hóa",
+        "tuyên trắng án",
+        "bài quảng cáo ngụy trang dưới dạng bài báo tin tức"
       ]
     },
     {
@@ -1425,9 +1425,9 @@
       "band": 6,
       "checkMeaningVi": "sa mạc hóa",
       "foilsVi": [
-        "tinh vân (đám mây khí và bụi vũ trụ)",
-        "chủ nghĩa gia đình trị, sự thiên vị người thân",
-        "tính khách quan"
+        "quan hệ huyết thống, mạng lưới thân tộc",
+        "kho từ vựng",
+        "sự trục trặc; hoạt động sai"
       ]
     },
     {
@@ -1436,9 +1436,9 @@
       "band": 6,
       "checkMeaningVi": "ghi danh, nhập học",
       "foilsVi": [
-        "công nghệ xử lý ô nhiễm bằng vi sinh vật và thực",
-        "trụ cột kinh tế gia đình",
-        "nhanh chóng mặt, tốc độ cực nhanh"
+        "sự tích tụ sinh học của độc tố trong cơ thể",
+        "xử lý ô nhiễm bằng vi sinh vật và thực vật",
+        "trụ cột kinh tế gia đình"
       ]
     },
     {
@@ -1447,9 +1447,9 @@
       "band": 6,
       "checkMeaningVi": "nhập cư",
       "foilsVi": [
-        "kỹ thuật nhiệt độ cực thấp, công nghệ làm lạnh sâu",
-        "sự tuyển chọn, sắp xếp và biên tập nội dung",
-        "bắt nạt qua mạng"
+        "đánh đồng, gộp lẫn hai khái niệm khác biệt",
+        "chủ nghĩa sùng bái bằng cấp",
+        "mức độ tín nhiệm tài chính và khả năng hoàn trả nợ"
       ]
     },
     {
@@ -1458,9 +1458,9 @@
       "band": 6,
       "checkMeaningVi": "nghèo túng, túng quẫn thiếu thốn cơ bản",
       "foilsVi": [
-        "sự bất công, bất bình đẳng mang tính hệ thống",
-        "tin tức giải trí hóa",
-        "đã được thể chế hóa, ăn sâu vào cơ cấu hệ thống"
+        "đồ thủ công mỹ nghệ",
+        "thuộc xúc giác, tạo cảm giác rung chạm mô phỏng",
+        "dịch vụ vận tải hàng hóa bằng xe tải hoặc đường sắt"
       ]
     },
     {
@@ -1469,9 +1469,9 @@
       "band": 6,
       "checkMeaningVi": "làm ngập lụt, tràn ngập thông tin quá tải",
       "foilsVi": [
-        "dịch vụ vận tải hàng hóa bằng xe tải hoặc đường sắt",
-        "săn nhân tài",
-        "sự đồng nhất hóa"
+        "đã toàn cầu hóa",
+        "tẩy xanh (quảng cáo xanh giả tạo)",
+        "đồ thủ công mỹ nghệ"
       ]
     },
     {
@@ -1480,9 +1480,9 @@
       "band": 6,
       "checkMeaningVi": "siêu đô thị",
       "foilsVi": [
-        "thông báo đính chính và rút lại bài viết sai lệch",
-        "kỳ nghỉ phép nghiên cứu của giảng viên đại học",
-        "giàn giáo sư phạm"
+        "mã độc tống tiền khóa dữ liệu hệ thống để đòi chuộc",
+        "lượng độc giả",
+        "nhân viên lễ tân"
       ]
     },
     {
@@ -1491,9 +1491,9 @@
       "band": 6,
       "checkMeaningVi": "hệ vi sinh vật cộng sinh trong đường ruột và cơ thể",
       "foilsVi": [
-        "cầu cạn nhiều nhịp cho đường sắt hoặc đường bộ",
-        "lượng khán giả",
-        "người tố giác sai phạm"
+        "năng lực thanh toán bền vững các nghĩa vụ nợ dài hạn",
+        "khoản trợ cấp sinh hoạt định kỳ cho nghiên cứu sinh",
+        "sự khuất phục, áp bức và đặt dưới sự thống trị"
       ]
     },
     {
@@ -1502,9 +1502,9 @@
       "band": 6,
       "checkMeaningVi": "tẩy chay, cô lập và ruồng bỏ khỏi cộng đồng",
       "foilsVi": [
-        "quá trình nhiễm mặn đất đai và nguồn nước ngọt",
-        "khả năng mở rộng quy mô hệ thống mà vẫn giữ nguyên",
-        "giật gân hóa"
+        "kiều hối",
+        "tái phạm",
+        "hệ lụy, hậu quả nghiêm trọng kéo dài"
       ]
     },
     {
@@ -1513,9 +1513,9 @@
       "band": 6,
       "checkMeaningVi": "gây đau khổ, hoành hành tác động xấu đến",
       "foilsVi": [
-        "học dưới khả năng",
-        "thiếu dinh dưỡng",
-        "hầm chui dành cho xe cộ hoặc người đi bộ"
+        "mang tính kỹ trị",
+        "người ngại/sợ công nghệ",
+        "y tế từ xa"
       ]
     },
     {
@@ -1524,9 +1524,9 @@
       "band": 6,
       "checkMeaningVi": "trụ cột kinh tế gia đình",
       "foilsVi": [
-        "hệ thống canh tác nông lâm kết hợp",
-        "suất phản chiếu bức xạ mặt trời của bề mặt Trái Đất",
-        "tình trạng mất chuẩn mực xã hội"
+        "chất gây ô nhiễm",
+        "người thông thạo nhiều ngôn ngữ",
+        "đề xuất giả định khoa học"
       ]
     },
     {
@@ -1535,9 +1535,9 @@
       "band": 6,
       "checkMeaningVi": "sự bị điện giật gây thương vong",
       "foilsVi": [
-        "sự vu khống ác ý, bôi nhọ thanh danh",
-        "chatbot, trợ lý trò chuyện tự động",
-        "từ ngữ thông tục, khẩu ngữ đặc trưng địa phương"
+        "thuộc về tán cây hoặc sinh sống chủ yếu trên cây",
+        "quá trình khô hạn hóa dài hạn ở quy mô khu vực",
+        "chiến dịch tạo dư luận giả mạo phong trào quần chúng"
       ]
     },
     {
@@ -1546,9 +1546,9 @@
       "band": 6,
       "checkMeaningVi": "đã được thể chế hóa, ăn sâu vào cơ cấu hệ thống",
       "foilsVi": [
-        "sự miễn trừng phạt, nhởn nhơ ngoài vòng pháp luật",
-        "có khuynh hướng, thiên về, nghiêng về",
-        "mang tính quy nạp"
+        "biến động, dao động lên xuống",
+        "sự cải tạo khu nghèo thành khu đắt đỏ",
+        "thuộc về địa nhiệt (nhiệt lượng từ lòng đất)"
       ]
     },
     {
@@ -1557,9 +1557,9 @@
       "band": 6,
       "checkMeaningVi": "thương mại hóa",
       "foilsVi": [
-        "tình trạng kẹt xe toàn bộ",
-        "hướng dẫn, nguyên tắc chỉ đạo",
-        "cản trở, gây trở ngại cho"
+        "bịa đặt, dựng chuyện giả mạo",
+        "phản ứng phân hạch hạt nhân; sự phân đôi tế bào",
+        "biến động, dao động lên xuống"
       ]
     },
     {
@@ -1568,9 +1568,9 @@
       "band": 6,
       "checkMeaningVi": "bị thương mại hóa",
       "foilsVi": [
-        "thuê ngoài",
-        "lấn át, vượt trội hơn về giá trị",
-        "tình trạng quá đông dân"
+        "chuyên khảo học thuật sâu về một chủ đề duy nhất",
+        "đơn điệu, nhàm chán",
+        "tập quán đạo đức, chuẩn mực ứng xử truyền thống"
       ]
     },
     {
@@ -1579,9 +1579,9 @@
       "band": 6,
       "checkMeaningVi": "tàn phá",
       "foilsVi": [
-        "tinh vân (đám mây khí và bụi vũ trụ)",
-        "đòi hỏi, làm cho trở nên bắt buộc",
-        "phủ nhận, làm mất hiệu lực, triệt tiêu"
+        "hòa giải, làm trung gian điều tiết",
+        "giảm thiểu, hạ xuống mức thấp nhất",
+        "chuyên khảo học thuật sâu về một chủ đề duy nhất"
       ]
     },
     {
@@ -1590,9 +1590,9 @@
       "band": 6,
       "checkMeaningVi": "ngoại ứng kinh tế",
       "foilsVi": [
-        "sự tái phạm",
-        "tái trồng rừng",
-        "nhắc lại máy móc (không hiểu)"
+        "quốc hữu hóa chuyển giao ngành kinh tế về nhà nước",
+        "nhiễm khuẩn bệnh viện",
+        "sự khai thác quá mức"
       ]
     },
     {
@@ -1601,9 +1601,9 @@
       "band": 6,
       "checkMeaningVi": "ngoại suy, ước tính mở rộng từ dữ liệu đã biết",
       "foilsVi": [
-        "nghệ nhân",
-        "vật lý thiên văn",
-        "đá dằn đường ray; vật dằn ổn định tàu thủy"
+        "kiềm chế, kìm hãm, ngăn chặn",
+        "sự đồng nhất",
+        "thống nhất, hợp nhất thành một thể chung"
       ]
     },
     {
@@ -1612,9 +1612,9 @@
       "band": 6,
       "checkMeaningVi": "bên ngoài (động lực)",
       "foilsVi": [
-        "di cư ra nước ngoài",
-        "sự đăng ký nhập học, sĩ số ghi danh",
-        "điểm phân (xuân phân và thu phân)"
+        "tội phạm mạng",
+        "gây suy nhược nặng nề",
+        "giảm phát"
       ]
     },
     {
@@ -1623,9 +1623,9 @@
       "band": 6,
       "checkMeaningVi": "làm rối rắm, cố tình gây mơ hồ che giấu sự thật",
       "foilsVi": [
-        "đổ nát",
-        "chăm chỉ, cần cù",
-        "thông tin sai lệch có chủ đích"
+        "mật mã học bảo mật thông tin số",
+        "trách nhiệm pháp lý",
+        "tội phạm mạng"
       ]
     },
     {
@@ -1634,9 +1634,9 @@
       "band": 6,
       "checkMeaningVi": "thuộc tâm thể",
       "foilsVi": [
-        "cơ quan phát ngôn (cho ai)",
-        "công nghệ nano",
-        "tòa soạn báo, phòng biên tập tin tức"
+        "chưa đủ để kết luận",
+        "người có ảnh hưởng (trên mạng)",
+        "sự thụ tinh (sinh học, nông nghiệp)"
       ]
     },
     {
@@ -1645,9 +1645,9 @@
       "band": 6,
       "checkMeaningVi": "tuyên trắng án",
       "foilsVi": [
-        "ki-lô-mét (đơn vị đo khoảng cách)",
-        "cây/rừng ngập mặn",
-        "(việc) đơn giản, lương thấp"
+        "dễ bị ảnh hưởng",
+        "mang tính kích động, dễ châm ngòi xung đột dư luận",
+        "chưa đủ để kết luận"
       ]
     }
   ]

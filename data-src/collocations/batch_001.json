@@ -662,8 +662,8 @@
     "bandTarget": 9,
     "l1Traps": [
       {
-        "wrong": "too much influence",
-        "whyVi": "Văn nói, không đạt chuẩn trang trọng của Band 8–9."
+        "wrong": "over influence",
+        "whyVi": "Dịch sát \"ảnh hưởng quá mức\"; sai ngữ pháp, chuẩn là \"undue/excessive influence\"."
       }
     ],
     "topics": [
@@ -676,7 +676,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -1344,8 +1344,8 @@
     "bandTarget": 8,
     "l1Traps": [
       {
-        "wrong": "a cheap solution",
-        "whyVi": "\"Cheap\" mang sắc thái chất lượng thấp; học thuật dùng \"cost-effective\"."
+        "wrong": "a money-saving solve",
+        "whyVi": "Sai từ loại \"solve\" (động từ) và dịch sát nghĩa; chuẩn là \"a cost-effective solution\"."
       }
     ],
     "topics": [
@@ -1358,7 +1358,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -3863,8 +3863,8 @@
     "bandTarget": 7,
     "l1Traps": [
       {
-        "wrong": "increase public awareness about",
-        "whyVi": "Dịch sát \"tăng nhận thức về\"; chuẩn là \"raise awareness of\"."
+        "wrong": "lift public awareness of",
+        "whyVi": "Dịch sát \"nâng nhận thức\"; không dùng \"lift\", chuẩn là \"raise/heighten public awareness of\"."
       }
     ],
     "topics": [
@@ -3877,7 +3877,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -7079,8 +7079,8 @@
     "bandTarget": 8,
     "l1Traps": [
       {
-        "wrong": "deep knowledge",
-        "whyVi": "Dùng được nhưng \"in-depth/comprehensive knowledge\" chuẩn Band 8 hơn."
+        "wrong": "high knowledge",
+        "whyVi": "Dịch sát \"kiến thức cao\"; không dùng \"high\" với \"knowledge\", chuẩn là \"in-depth/thorough knowledge\"."
       }
     ],
     "topics": [
@@ -7093,7 +7093,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -7997,8 +7997,8 @@
     "bandTarget": 7,
     "l1Traps": [
       {
-        "wrong": "heavy pollution",
-        "whyVi": "Tạm được nhưng \"severe/chronic pollution\" tự nhiên hơn trong IELTS."
+        "wrong": "strong pollution",
+        "whyVi": "Dịch sát \"ô nhiễm mạnh/nặng\"; không dùng \"strong\" với \"pollution\", chuẩn là \"severe pollution\"."
       }
     ],
     "topics": [
@@ -8011,7 +8011,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },

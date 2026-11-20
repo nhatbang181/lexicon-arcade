@@ -30,7 +30,7 @@ import {
   ManifestSchema,
   ProvenanceSchema,
 } from '../../src/core/content/schemas.ts';
-import { LEGACY_FILES, countPayloadItems } from '../data/60_build_manifest.mjs';
+import { LEGACY_FILES, countPayloadItems, sha256NormalizedLf } from '../data/60_build_manifest.mjs';
 
 const ROOT = process.cwd();
 const PUBLIC_DIR = path.join(ROOT, 'public');
@@ -635,12 +635,12 @@ if (manifest !== null) {
         fail(`[INV-M1] File public/data/${rel} is missing from manifest.json`);
         continue;
       }
-      const rawBuf = fs.readFileSync(full);
-      const actualSha = crypto.createHash('sha256').update(rawBuf).digest('hex');
+      const rawText = fs.readFileSync(full, 'utf8');
+      const actualSha = sha256NormalizedLf(rawText);
       if (entry.sha256 !== actualSha) {
         fail(`[INV-M1] SHA-256 mismatch for ${rel} in manifest.json`);
       }
-      const actualCount = countPayloadItems(JSON.parse(rawBuf.toString('utf8')));
+      const actualCount = countPayloadItems(JSON.parse(rawText));
       if (entry.count !== actualCount) {
         fail(`[INV-M1] Count mismatch for ${rel}: manifest=${entry.count}, actual=${actualCount}`);
       }

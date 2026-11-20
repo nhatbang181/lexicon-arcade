@@ -2123,7 +2123,7 @@
     "id": "err:legacy_107",
     "tag": "word_form",
     "wrong": "Compared with the older generation, young adults' digital literacy is far higher.",
-    "correct": "Compared with the older generation, young adults possess far higher digital literacy is far higher.",
+    "correct": "Compared with the older generation, young adults possess far higher digital literacy.",
     "errorSpan": {
       "start": 36,
       "end": 66
@@ -2135,7 +2135,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },

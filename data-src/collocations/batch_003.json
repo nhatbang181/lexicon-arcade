@@ -1954,8 +1954,8 @@
     "bandTarget": 7,
     "l1Traps": [
       {
-        "wrong": "make revenue",
-        "whyVi": "Kém học thuật hơn \"generate/raise revenue\"."
+        "wrong": "do revenue",
+        "whyVi": "Sai động từ ghép \"do\"; chuẩn học thuật là \"generate/raise revenue\"."
       }
     ],
     "topics": [
@@ -1968,7 +1968,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -5125,8 +5125,8 @@
     "bandTarget": 7,
     "l1Traps": [
       {
-        "wrong": "increase access for",
-        "whyVi": "Sai giới từ \"for\"; luôn là \"increase access to\"."
+        "wrong": "increase access into",
+        "whyVi": "Sai giới từ \"into\"; danh từ \"access\" luôn đi với \"to\" (\"increase access to\")."
       }
     ],
     "topics": [
@@ -5139,7 +5139,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -5280,14 +5280,14 @@
         "primary": "public"
       }
     ],
-    "meaningVi": "tăng nhận thức cộng đồng (chấp nhận được, nhưng raise chuẩn hơn)",
+    "meaningVi": "nâng cao nhận thức cộng đồng",
     "example": "Clear nutrition labels on restaurant menus help increase public awareness of hidden sodium and sugar.",
     "register": "neutral",
     "bandTarget": 7,
     "l1Traps": [
       {
-        "wrong": "increase awareness about",
-        "whyVi": "Nên dùng \"of\" hoặc ưu tiên \"raise public awareness of\"."
+        "wrong": "grow public awareness",
+        "whyVi": "Không dùng ngoại động từ \"grow\" với \"awareness\"; chuẩn là \"increase/raise public awareness\"."
       }
     ],
     "topics": [
@@ -5300,7 +5300,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -6358,8 +6358,8 @@
         "display": "mitigate the ___ of",
         "answers": [
           "severity",
-          "harm",
-          "fallout"
+          "impact",
+          "effects"
         ],
         "primary": "severity"
       }
@@ -6384,7 +6384,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -7920,8 +7920,7 @@
       {
         "display": "acquire a ___ for",
         "answers": [
-          "reputation",
-          "taste"
+          "reputation"
         ],
         "primary": "reputation"
       }
@@ -7946,7 +7945,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -9050,20 +9049,19 @@
         "display": "eradicate the ___ of",
         "answers": [
           "root causes",
-          "scourge",
-          "stigma"
+          "underlying causes"
         ],
         "primary": "root causes"
       }
     ],
-    "meaningVi": "xóa bỏ tận gốc nguyên nhân/sự kỳ thị",
-    "example": "Open workplace discussions about therapy help eradicate the stigma of seeking mental health care.",
+    "meaningVi": "xóa bỏ tận gốc nguyên nhân của",
+    "example": "Long-term investment in rural education and healthcare is essential to eradicate the root causes of chronic poverty.",
     "register": "formal",
     "bandTarget": 9,
     "l1Traps": [
       {
-        "wrong": "remove bottom of stigma",
-        "whyVi": "Sai cấu trúc; chuẩn Band 9 là \"eradicate the stigma of\"."
+        "wrong": "delete the root causes of",
+        "whyVi": "Không dùng \"delete\" cho vấn đề xã hội; chuẩn Band 9 là \"eradicate the root causes of\"."
       }
     ],
     "topics": [
@@ -9076,7 +9074,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },

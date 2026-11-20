@@ -602,7 +602,7 @@
   {
     "id": "para:l1a_016",
     "level": 1,
-    "questionPhrase": "wild animals",
+    "questionPhrase": "local wildlife",
     "relation": "equivalent",
     "context": "Constructing vegetated bridges across busy intercity highways allows native fauna such as deer, foxes, and hedgehogs to migrate safely between woodland fragments. Unlike domestic livestock kept behind fenced pastures, free-roaming creatures often suffer heavy mortality when wild weather drives them across unlit rural carriageways.",
     "target": {
@@ -624,7 +624,7 @@
         "whyVi": "Chỉ vật nuôi nông trại, trái nghĩa động vật hoang dã."
       }
     ],
-    "explanationVi": "L1 đồng nghĩa: \"wild animals\" ↔ \"native fauna\".",
+    "explanationVi": "L1 đồng nghĩa: \"local wildlife\" ↔ \"native fauna\".",
     "topics": [
       "animals"
     ],
@@ -634,7 +634,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass",
+        "verifier": "fixed",
         "blindSolve": "pass"
       }
     }

@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-20T11:23:44.196Z",
+  "builtAt": "2026-11-20T14:26:09.208Z",
   "totals": {
     "roadmapPhases": 4,
     "tips": 62,
@@ -20,23 +20,23 @@
       "count": 62
     },
     "vocab/collocations.json": {
-      "sha256": "0c2c4ab41b3f0d5588476a84d1b13fbcddd0067cf3ac167c20ac31145955026b",
+      "sha256": "a4898c79bc81c2efd48f31088950c7b29e9f04e066fc246995ba8bbe68e026be",
       "count": 762
     },
     "vocab/error_patterns.json": {
-      "sha256": "d8c3dcb6e1a85f46869a8930c95372b9a7ac1342ce2cab1429e803899f107805",
+      "sha256": "c29334a461ddb9d5cb54719313e2c1fd099fd5144ca022984815b845f7db6aea",
       "count": 230
     },
     "vocab/paraphrases.json": {
-      "sha256": "b93e95246d6eee6c271dd54b816475dfb15f473f66320094d84673ab96691aca",
+      "sha256": "e5c3c7b061615776dcdf234a3654a0f06751a1d99c91a70bb69e2f538953a9b1",
       "count": 320
     },
     "vocab/placement_vocab.json": {
-      "sha256": "a55772ae0d964d90c544d9be97137728a365d3a78e113a291c6e521d234d7b55",
+      "sha256": "44b6c5346c395be27f931d20c82e1f10031dff338e71107c2a9260c22d5b4db6",
       "count": 150
     },
     "vocab/words.json": {
-      "sha256": "adec09d3fab3c9544ca5ca4265cd8a287e880194bd0e1a3c48f7e89df260a98b",
+      "sha256": "5bdf66afde1e1808a7a0cc27156c4fd94acdc02a290e7f86b224b41c6126d837",
       "count": 2207
     }
   }

@@ -4876,8 +4876,8 @@
     "bandTarget": 7,
     "l1Traps": [
       {
-        "wrong": "keep heritage",
-        "whyVi": "Quá cơ bản; chuẩn là \"preserve/safeguard heritage\"."
+        "wrong": "hold heritage",
+        "whyVi": "Dịch sát \"giữ di sản\"; không dùng \"hold\", chuẩn là \"preserve/safeguard heritage\"."
       }
     ],
     "topics": [
@@ -4890,7 +4890,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },
@@ -8155,8 +8155,7 @@
       {
         "display": "a high ___ of living",
         "answers": [
-          "standard",
-          "level"
+          "standard"
         ],
         "primary": "standard"
       }
@@ -8181,7 +8180,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     }
   },

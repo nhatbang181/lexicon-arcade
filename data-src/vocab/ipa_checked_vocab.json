@@ -2589,7 +2589,7 @@
         "word": "classwork"
       }
     ],
-    "freqZipf": 3.0,
+    "freqZipf": 3,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -3949,7 +3949,7 @@
         "word": "inhibit"
       }
     ],
-    "freqZipf": 3.0,
+    "freqZipf": 3,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -9937,7 +9937,7 @@
         "word": "global heating"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -15312,7 +15312,7 @@
     "ipa": {
       "uk": "/juːˌtrɒf.ɪˈkeɪ.ʃən/"
     },
-    "meaningVi": "hiện tượng phú dưỡng nguồn nước gây tảo nở hoa và thiếu",
+    "meaningVi": "hiện tượng phú dưỡng nguồn nước gây thiếu oxy",
     "definitionEn": "Excessive enrichment of water bodies with nutrients, triggering dense algal blooms that deplete dissolved oxygen.",
     "examples": [
       {
@@ -15344,7 +15344,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -15672,7 +15672,7 @@
     "ipa": {
       "uk": "/ˌbaɪ.əʊ.rɪˌmiː.diˈeɪ.ʃən/"
     },
-    "meaningVi": "công nghệ xử lý ô nhiễm bằng vi sinh vật và thực",
+    "meaningVi": "xử lý ô nhiễm bằng vi sinh vật và thực vật",
     "definitionEn": "The deliberate use of living microorganisms or plants to break down or neutralise hazardous environmental pollutants.",
     "examples": [
       {
@@ -15702,7 +15702,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -16030,7 +16030,7 @@
     "ipa": {
       "uk": "/ˌbaɪ.əʊ.əˌkjuː.mjʊˈleɪ.ʃən/"
     },
-    "meaningVi": "sự tích tụ sinh học của độc tố trong cơ thể sinh",
+    "meaningVi": "sự tích tụ sinh học của độc tố trong cơ thể",
     "definitionEn": "The gradual build-up of persistent chemical substances, such as mercury or pesticides, within a living organism over time.",
     "examples": [
       {
@@ -16061,7 +16061,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -16090,7 +16090,7 @@
     "ipa": {
       "uk": "/ˈtrɒf.ɪk kæsˈkeɪd/"
     },
-    "meaningVi": "hiệu ứng dây chuyền qua các bậc dinh dưỡng trong hệ sinh",
+    "meaningVi": "hiệu ứng dây chuyền qua các bậc dinh dưỡng",
     "definitionEn": "Powerful indirect ecological interactions triggered when changes in apex predator populations ripple across lower food-web levels.",
     "examples": [
       {
@@ -16121,7 +16121,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -17222,7 +17222,7 @@
     "ipa": {
       "uk": "/ˈkɑː.bən ˈkæp.tʃər/"
     },
-    "meaningVi": "công nghệ thu giữ khí carbon từ nguồn phát thải hoặc không",
+    "meaningVi": "công nghệ thu giữ khí carbon từ nguồn phát thải",
     "definitionEn": "The technological process of trapping carbon dioxide emissions at industrial sources or directly from ambient air for storage.",
     "examples": [
       {
@@ -17253,7 +17253,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -21296,7 +21296,7 @@
         "word": "remotely piloted aircraft"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -22769,7 +22769,7 @@
         "word": "solitude"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -24554,7 +24554,7 @@
     "ipa": {
       "uk": "/ˌɪn.tə.rɒp.ə.rəˈbɪl.ə.ti/"
     },
-    "meaningVi": "khả năng tương tác và liên thông dữ liệu giữa các hệ",
+    "meaningVi": "khả năng tương tác và liên thông giữa các hệ thống",
     "definitionEn": "The capability of distinct computer systems, platforms, or devices to exchange and interpret data seamlessly.",
     "examples": [
       {
@@ -24584,7 +24584,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -24672,7 +24672,7 @@
     "ipa": {
       "uk": "/ˌskeɪ.ləˈbɪl.ə.ti/"
     },
-    "meaningVi": "khả năng mở rộng quy mô hệ thống mà vẫn giữ nguyên",
+    "meaningVi": "khả năng mở rộng quy mô mà vẫn giữ hiệu năng",
     "definitionEn": "The capacity of a software architecture or technological system to handle growing workloads efficiently without performance loss.",
     "examples": [
       {
@@ -24702,7 +24702,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -24972,7 +24972,7 @@
     "ipa": {
       "uk": "/ˈdiːp.feɪk/"
     },
-    "meaningVi": "video hoặc âm thanh giả mạo tinh vi tạo bằng trí tuệ",
+    "meaningVi": "video/âm thanh giả mạo tinh vi tạo bằng AI",
     "definitionEn": "Synthetic video, audio, or imagery generated by deep learning to convincingly depict events or speech that never occurred.",
     "examples": [
       {
@@ -25002,7 +25002,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -25090,7 +25090,7 @@
     "ipa": {
       "uk": "/ˈfɪʃ.ɪŋ/"
     },
-    "meaningVi": "hành vi lừa đảo giả mạo nhằm đánh cắp thông tin nhạy",
+    "meaningVi": "lừa đảo giả mạo nhằm đánh cắp thông tin nhạy cảm",
     "definitionEn": "The fraudulent practice of sending deceptive electronic messages disguised as reputable institutions to steal credentials.",
     "examples": [
       {
@@ -25120,7 +25120,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -25149,7 +25149,7 @@
     "ipa": {
       "uk": "/ˈmæl.weər/"
     },
-    "meaningVi": "phần mềm độc hại xâm nhập và phá hoại hệ thống máy",
+    "meaningVi": "phần mềm độc hại xâm nhập và phá hoại máy tính",
     "definitionEn": "Any software intentionally crafted to disrupt, damage, spy upon, or gain unauthorised control over computer systems.",
     "examples": [
       {
@@ -25179,7 +25179,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -25208,7 +25208,7 @@
     "ipa": {
       "uk": "/ˌzɪə.rəʊ.deɪ ˌvʌl.nər.əˈbɪl.ə.ti/"
     },
-    "meaningVi": "lỗ hổng bảo mật mới phát hiện chưa có bản vá chính",
+    "meaningVi": "lỗ hổng bảo mật mới phát hiện chưa có bản vá",
     "definitionEn": "A previously unknown software security flaw that attackers can exploit before developers release a corrective patch.",
     "examples": [
       {
@@ -25238,7 +25238,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -25504,7 +25504,7 @@
     "ipa": {
       "uk": "/ɔːˈtɒn.ə.məs ˈsɪs.təmz/"
     },
-    "meaningVi": "các hệ thống tự hành có khả năng tự quyết định không",
+    "meaningVi": "hệ thống tự hành có khả năng tự quyết định",
     "definitionEn": "Hardware and software platforms capable of perceiving environments and executing complex tasks with minimal human intervention.",
     "examples": [
       {
@@ -25534,7 +25534,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -25978,7 +25978,7 @@
     "ipa": {
       "uk": "/ˌtek.nəˈlɒdʒ.ɪ.kəl ˌsɪŋ.ɡjʊˈlær.ə.ti/"
     },
-    "meaningVi": "điểm kỳ dị công nghệ khi trí tuệ nhân tạo vượt xa",
+    "meaningVi": "điểm kỳ dị công nghệ khi AI vượt xa trí tuệ người",
     "definitionEn": "A hypothetical future point when self-improving artificial intelligence surpasses human intellect, causing unpredictable societal shifts.",
     "examples": [
       {
@@ -26008,7 +26008,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -26037,7 +26037,7 @@
     "ipa": {
       "uk": "/ˌsaɪ.bəˈnet.ɪk/"
     },
-    "meaningVi": "thuộc điều khiển học hoặc tích hợp cơ học với hệ sinh",
+    "meaningVi": "thuộc điều khiển học; tích hợp máy móc và sinh học",
     "definitionEn": "Relating to feedback-driven control systems or the functional integration of electronic machinery with biological organisms.",
     "examples": [
       {
@@ -26068,7 +26068,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -26580,7 +26580,7 @@
     "ipa": {
       "uk": "/ˌɡeɪ.mɪ.fɪˈkeɪ.ʃən/"
     },
-    "meaningVi": "trò chơi hóa nhằm gia tăng tương tác và động lực người",
+    "meaningVi": "trò chơi hóa nhằm tăng tương tác và động lực",
     "definitionEn": "The integration of game mechanics such as badges, streaks, and challenges into non-game digital platforms to boost engagement.",
     "examples": [
       {
@@ -26610,7 +26610,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -26826,7 +26826,7 @@
     "ipa": {
       "uk": "/ˈɒb.vi.eɪt/"
     },
-    "meaningVi": "loại bỏ hoàn toàn sự cần thiết của một quy trình hay",
+    "meaningVi": "loại bỏ hoàn toàn sự cần thiết của một bước/quy trình",
     "definitionEn": "To remove or anticipate a difficulty, requirement, or manual step so that it is no longer necessary.",
     "examples": [
       {
@@ -26856,7 +26856,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -26888,7 +26888,7 @@
     "ipa": {
       "uk": "/ˌæl.ɡəˈrɪð.mɪ.kəl.i/"
     },
-    "meaningVi": "thông qua cơ chế tính toán và phân loại tự động của",
+    "meaningVi": "thông qua cơ chế tính toán tự động của thuật toán",
     "definitionEn": "In a manner determined, curated, or executed automatically by structured computational rules.",
     "examples": [
       {
@@ -26918,7 +26918,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -31081,7 +31081,7 @@
         "word": "prescribed remedy"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "family": [
       {
         "form": "prescriptive",
@@ -34082,7 +34082,7 @@
     "ipa": {
       "uk": "/ˈpæl.i.ə.tɪv keər/"
     },
-    "meaningVi": "chăm sóc giảm nhẹ nhằm nâng cao chất lượng sống cho bệnh",
+    "meaningVi": "chăm sóc giảm nhẹ nhằm nâng cao chất lượng sống",
     "definitionEn": "Specialised medical and emotional support focused on relieving pain and distress in patients with serious or incurable illnesses.",
     "examples": [
       {
@@ -34112,7 +34112,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -34141,7 +34141,7 @@
     "ipa": {
       "uk": "/ˈtriː.ɑːʒ/"
     },
-    "meaningVi": "quy trình sàng lọc và phân loại mức độ ưu tiên cấp",
+    "meaningVi": "sàng lọc và phân loại mức độ ưu tiên cấp cứu",
     "definitionEn": "The rapid clinical assessment of patients to determine the urgency of treatment when healthcare resources are stretched.",
     "examples": [
       {
@@ -34171,7 +34171,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -34437,7 +34437,7 @@
     "ipa": {
       "uk": "/ˌeɪ.sɪmp.təˈmæt.ɪk/"
     },
-    "meaningVi": "không có triệu chứng biểu hiện ra bên ngoài dù đã mang",
+    "meaningVi": "không có triệu chứng dù đã mang mầm bệnh",
     "definitionEn": "Carrying a disease or infection while showing no noticeable physical signs or clinical symptoms.",
     "examples": [
       {
@@ -34467,7 +34467,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -34555,7 +34555,7 @@
     "ipa": {
       "uk": "/aɪˌæt.rəˈdʒen.ɪk/"
     },
-    "meaningVi": "phát sinh ngoài ý muốn do chính quá trình điều trị hoặc",
+    "meaningVi": "phát sinh ngoài ý muốn do quá trình điều trị y khoa",
     "definitionEn": "Unintentionally induced in a patient as an adverse consequence of medical examination, medication, or surgical intervention.",
     "examples": [
       {
@@ -34585,7 +34585,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -34915,7 +34915,7 @@
     "ipa": {
       "uk": "/ˈbaɪ.əʊˌmɑː.kər/"
     },
-    "meaningVi": "dấu ấn sinh học chỉ thị tình trạng sức khỏe hoặc bệnh",
+    "meaningVi": "dấu ấn sinh học chỉ thị tình trạng sức khỏe/bệnh lý",
     "definitionEn": "A measurable biological molecule, cellular trait, or physiological indicator used to detect disease or track treatment response.",
     "examples": [
       {
@@ -34946,7 +34946,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -34975,7 +34975,7 @@
     "ipa": {
       "uk": "/prɪˈsɪʒ.ən ˈmed.ɪ.sən/"
     },
-    "meaningVi": "y học chính xác thiết kế phác đồ cá thể hóa theo",
+    "meaningVi": "y học chính xác cá thể hóa theo đặc điểm gen",
     "definitionEn": "A medical model that customises disease prevention and treatment to an individual's genetic profile, environment, and lifestyle.",
     "examples": [
       {
@@ -35005,7 +35005,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35034,7 +35034,7 @@
     "ipa": {
       "uk": "/ˌɪm.jʊ.nəʊˈθer.ə.pi/"
     },
-    "meaningVi": "liệu pháp miễn dịch kích hoạt hệ phòng vệ tự nhiên chống",
+    "meaningVi": "liệu pháp miễn dịch chống ung thư và bệnh lý",
     "definitionEn": "Medical treatment that stimulates, restores, or redirects the body's own immune defences to combat cancer or allergies.",
     "examples": [
       {
@@ -35064,7 +35064,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35152,7 +35152,7 @@
     "ipa": {
       "uk": "/ˌæn.ti.maɪˈkrəʊ.bi.əl ˈstjuː.əd.ʃɪp/"
     },
-    "meaningVi": "chương trình quản lý sử dụng kháng sinh hợp lý và có",
+    "meaningVi": "quản lý sử dụng kháng sinh hợp lý và có trách nhiệm",
     "definitionEn": "Coordinated clinical initiatives to optimise antibiotic prescribing so therapeutic effectiveness is preserved and resistance minimised.",
     "examples": [
       {
@@ -35182,7 +35182,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35211,7 +35211,7 @@
     "ipa": {
       "uk": "/ˈvæk.siːn ˈhez.ɪ.tən.si/"
     },
-    "meaningVi": "tâm lý chần chừ hoặc từ chối tiêm chủng dù vắc-xin sẵn",
+    "meaningVi": "tâm lý chần chừ hoặc từ chối tiêm chủng vắc-xin",
     "definitionEn": "Delay in acceptance or refusal of recommended immunisations despite the availability of safe, accessible vaccination services.",
     "examples": [
       {
@@ -35241,7 +35241,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35329,7 +35329,7 @@
     "ipa": {
       "uk": "/ˈsəʊ.ʃəl dɪˈtɜː.mɪ.nənts əv helθ/"
     },
-    "meaningVi": "các yếu tố xã hội và môi trường sống quyết định sức",
+    "meaningVi": "các yếu tố xã hội và môi trường quyết định sức khỏe",
     "definitionEn": "Non-medical socioeconomic conditions such as housing quality, income stability, and clean neighbourhoods that shape population health.",
     "examples": [
       {
@@ -35359,7 +35359,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35450,7 +35450,7 @@
     "ipa": {
       "uk": "/ɡlaɪˈsiː.mɪk ˈɪn.deks/"
     },
-    "meaningVi": "chỉ số đường huyết đo tốc độ làm tăng đường máu của",
+    "meaningVi": "chỉ số đường huyết đo tốc độ tăng đường máu",
     "definitionEn": "A numerical ranking indicating how rapidly a carbohydrate-containing food raises blood glucose levels after consumption.",
     "examples": [
       {
@@ -35482,7 +35482,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35571,7 +35571,7 @@
     "ipa": {
       "uk": "/ˌnjʊə.rəʊ.dɪˈdʒen.ər.ə.tɪv/"
     },
-    "meaningVi": "thoái hóa thần kinh tiến triển làm mất dần chức năng tế",
+    "meaningVi": "thoái hóa thần kinh tiến triển làm suy giảm tế bào",
     "definitionEn": "Characterised by the progressive structural breakdown and death of nerve cells in the brain or spinal cord.",
     "examples": [
       {
@@ -35602,7 +35602,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35812,7 +35812,7 @@
     "ipa": {
       "uk": "/ˌep.ɪ.diː.mi.əˈlɒdʒ.ɪ.kəl sɜːˈveɪ.ləns/"
     },
-    "meaningVi": "hệ thống giám sát dịch tễ học liên tục nhằm phát hiện",
+    "meaningVi": "hệ thống giám sát dịch tễ học nhằm phát hiện sớm dịch",
     "definitionEn": "The systematic, continuous collection and analysis of population health data to detect outbreaks early and guide interventions.",
     "examples": [
       {
@@ -35842,7 +35842,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -35933,7 +35933,7 @@
     "ipa": {
       "uk": "/məˈtæb.ə.laɪz/"
     },
-    "meaningVi": "chuyển hóa sinh hóa chất dinh dưỡng hoặc dược chất trong cơ",
+    "meaningVi": "chuyển hóa chất dinh dưỡng hoặc dược chất trong cơ thể",
     "definitionEn": "To process nutrients, toxins, or pharmaceutical compounds chemically inside living cells to produce energy or eliminate waste.",
     "examples": [
       {
@@ -35963,7 +35963,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -37929,7 +37929,7 @@
         "word": "industrial"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -41452,7 +41452,7 @@
         "word": "unrestricted commerce"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "cefr": "B2",
     "_bandTarget": 7
   },
@@ -41702,7 +41702,7 @@
         "word": "total economic output"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -43391,7 +43391,7 @@
     "ipa": {
       "uk": "/ˌhaɪ.pər.ɪnˈfleɪ.ʃən/"
     },
-    "meaningVi": "siêu lạm phát mất kiểm soát làm đồng tiền mất giá nghiêm",
+    "meaningVi": "siêu lạm phát làm đồng tiền mất giá nghiêm trọng",
     "definitionEn": "Rapid, out-of-control escalation of general prices that destroys public confidence in a national currency.",
     "examples": [
       {
@@ -43421,7 +43421,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -43510,7 +43510,7 @@
     "ipa": {
       "uk": "/ˌkwɒn.tɪ.tə.tɪv ˈiː.zɪŋ/"
     },
-    "meaningVi": "chính sách nới lỏng định lượng bơm thanh khoản qua mua trái",
+    "meaningVi": "nới lỏng định lượng bơm thanh khoản qua mua trái phiếu",
     "definitionEn": "An unconventional central-bank policy of purchasing government bonds and financial assets to inject liquidity into a stalled economy.",
     "examples": [
       {
@@ -43540,7 +43540,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -43812,7 +43812,7 @@
     "ipa": {
       "uk": "/ɪnˈsɒl.vən.si/"
     },
-    "meaningVi": "tình trạng mất khả năng thanh toán các nghĩa vụ nợ đến",
+    "meaningVi": "tình trạng mất khả năng thanh toán nợ đến hạn",
     "definitionEn": "A state of financial distress in which a business or individual cannot pay debts as they fall due.",
     "examples": [
       {
@@ -43842,7 +43842,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -43871,7 +43871,7 @@
     "ipa": {
       "uk": "/ˌɒl.ɪˈɡɒp.əl.i/"
     },
-    "meaningVi": "cấu trúc thị trường độc quyền nhóm bị chi phối bởi vài",
+    "meaningVi": "độc quyền nhóm bị chi phối bởi một vài doanh nghiệp",
     "definitionEn": "A market structure dominated by a small handful of powerful firms whose pricing decisions strongly influence the entire industry.",
     "examples": [
       {
@@ -43902,7 +43902,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -43931,7 +43931,7 @@
     "ipa": {
       "uk": "/kɑːˈtel/"
     },
-    "meaningVi": "liên minh độc quyền thông đồng ấn định giá hoặc hạn chế",
+    "meaningVi": "liên minh độc quyền thông đồng ấn định giá bán",
     "definitionEn": "An association of competing producers that collude to fix prices, restrict output, or divide markets to boost profits.",
     "examples": [
       {
@@ -43961,7 +43961,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -43990,7 +43990,7 @@
     "ipa": {
       "uk": "/ˌæn.tiˈtrʌst/"
     },
-    "meaningVi": "chống độc quyền nhằm bảo vệ cạnh tranh công bằng trên thị",
+    "meaningVi": "chống độc quyền nhằm bảo vệ cạnh tranh công bằng",
     "definitionEn": "Relating to statutes and regulatory enforcement aimed at curbing monopolistic practices and preserving open market competition.",
     "examples": [
       {
@@ -44020,7 +44020,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44114,7 +44114,7 @@
     "ipa": {
       "uk": "/ˌpraɪ.və.taɪˈzeɪ.ʃən/"
     },
-    "meaningVi": "tư nhân hóa tài sản hoặc doanh nghiệp vốn thuộc sở hữu",
+    "meaningVi": "tư nhân hóa tài sản hoặc doanh nghiệp nhà nước",
     "definitionEn": "The transfer of state-owned enterprises, utilities, or public assets into private commercial ownership and operation.",
     "examples": [
       {
@@ -44144,7 +44144,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44173,7 +44173,7 @@
     "ipa": {
       "uk": "/ˌnæʃ.ən.əl.aɪˈzeɪ.ʃən/"
     },
-    "meaningVi": "quốc hữu hóa chuyển giao ngành kinh tế trọng yếu về sở",
+    "meaningVi": "quốc hữu hóa chuyển giao ngành kinh tế về nhà nước",
     "definitionEn": "The process by which a government assumes public ownership and operational control over a previously private industry.",
     "examples": [
       {
@@ -44203,7 +44203,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44232,7 +44232,7 @@
     "ipa": {
       "uk": "/kəmˌpær.ə.tɪv ədˈvɑːn.tɪdʒ/"
     },
-    "meaningVi": "lợi thế so sánh trong sản xuất với chi phí cơ hội",
+    "meaningVi": "lợi thế so sánh trong sản xuất nhờ chi phí cơ hội thấp",
     "definitionEn": "An economy's capacity to produce specific goods or services at a lower opportunity cost than its trading partners.",
     "examples": [
       {
@@ -44262,7 +44262,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44291,7 +44291,7 @@
     "ipa": {
       "uk": "/ɪˌkɒn.ə.miz əv ˈskeɪl/"
     },
-    "meaningVi": "lợi thế kinh tế nhờ quy mô sản xuất lớn giúp giảm",
+    "meaningVi": "lợi thế kinh tế theo quy mô giúp giảm chi phí đơn vị",
     "definitionEn": "Cost advantages attained by enterprises as production volume expands, spreading fixed expenses across greater output.",
     "examples": [
       {
@@ -44321,7 +44321,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44350,7 +44350,7 @@
     "ipa": {
       "uk": "/dɪˌmɪn.ɪ.ʃɪŋ rɪˈtɜːnz/"
     },
-    "meaningVi": "quy luật lợi suất giảm dần khi tiếp tục tăng một yếu",
+    "meaningVi": "quy luật lợi suất giảm dần khi tăng một yếu tố đầu vào",
     "definitionEn": "The economic principle that adding successive units of one input eventually yields progressively smaller increments of output.",
     "examples": [
       {
@@ -44381,7 +44381,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44480,7 +44480,7 @@
     "ipa": {
       "uk": "/ˈmɑː.kɪt ˈfeɪ.ljər/"
     },
-    "meaningVi": "thất bại thị trường khi cơ chế tự do không phân bổ",
+    "meaningVi": "thất bại thị trường khi cơ chế tự do phân bổ kém hiệu quả",
     "definitionEn": "A situation in which unregulated free markets fail to allocate goods, services, or public resources efficiently for society.",
     "examples": [
       {
@@ -44510,7 +44510,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44657,7 +44657,7 @@
     "ipa": {
       "uk": "/dɪˌspəʊ.zə.bəl ˈɪŋ.kʌm/"
     },
-    "meaningVi": "thu nhập khả dụng còn lại sau khi khấu trừ thuế và",
+    "meaningVi": "thu nhập khả dụng còn lại sau khi trừ thuế",
     "definitionEn": "The net money available to a household for discretionary spending or saving after income taxes are deducted.",
     "examples": [
       {
@@ -44688,7 +44688,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44717,7 +44717,7 @@
     "ipa": {
       "uk": "/rɪˈɡres.ɪv tækˈseɪ.ʃən/"
     },
-    "meaningVi": "chính sách thuế lũy thoái tạo gánh nặng tỷ lệ cao hơn",
+    "meaningVi": "thuế lũy thoái gây gánh nặng tỷ lệ cao hơn cho người nghèo",
     "definitionEn": "A tax structure that takes a larger percentage of income from lower-earning households than from affluent ones.",
     "examples": [
       {
@@ -44748,7 +44748,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44777,7 +44777,7 @@
     "ipa": {
       "uk": "/ˈkæp.ɪ.təl flaɪt/"
     },
-    "meaningVi": "hiện tượng tháo chạy dòng vốn ồ ạt ra khỏi một nền",
+    "meaningVi": "hiện tượng tháo chạy dòng vốn ồ ạt ra khỏi nền kinh tế",
     "definitionEn": "The rapid large-scale outflow of financial assets and investments from a country due to political or macroeconomic instability.",
     "examples": [
       {
@@ -44807,7 +44807,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44836,7 +44836,7 @@
     "ipa": {
       "uk": "/fɪˈdjuː.ʃər.i/"
     },
-    "meaningVi": "thuộc nghĩa vụ ủy thác quản lý tài sản trung thực vì",
+    "meaningVi": "thuộc nghĩa vụ ủy thác quản lý tài sản trung thực",
     "definitionEn": "Relating to a strict legal and ethical obligation to act solely in the best financial interest of beneficiaries.",
     "examples": [
       {
@@ -44866,7 +44866,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -44954,7 +44954,7 @@
     "ipa": {
       "uk": "/ˌmæk.rəʊ.iː.kəˈnɒm.ɪk/"
     },
-    "meaningVi": "thuộc về kinh tế vĩ mô trên quy mô toàn nền kinh",
+    "meaningVi": "thuộc về kinh tế vĩ mô trên quy mô toàn nền kinh tế",
     "definitionEn": "Relating to aggregate economic indicators such as national output, employment trends, trade balances, and price stability.",
     "examples": [
       {
@@ -44985,7 +44985,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -45014,7 +45014,7 @@
     "ipa": {
       "uk": "/ˈsaɪ.klɪ.kəl ˌʌn.ɪmˈplɔɪ.mənt/"
     },
-    "meaningVi": "thất nghiệp chu kỳ phát sinh khi tổng cầu nền kinh tế",
+    "meaningVi": "thất nghiệp chu kỳ khi tổng cầu nền kinh tế suy giảm",
     "definitionEn": "Joblessness resulting directly from temporary downturns in the business cycle when aggregate consumer demand contracts.",
     "examples": [
       {
@@ -45044,7 +45044,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -45073,7 +45073,7 @@
     "ipa": {
       "uk": "/ˈstrʌk.tʃər.əl ˌʌn.ɪmˈplɔɪ.mənt/"
     },
-    "meaningVi": "thất nghiệp cơ cấu do sự lệch pha dài hạn giữa kỹ",
+    "meaningVi": "thất nghiệp cơ cấu do lệch pha kỹ năng dài hạn",
     "definitionEn": "Persistent joblessness arising from fundamental shifts in industry composition or automation that leave workers' skills mismatched.",
     "examples": [
       {
@@ -45103,7 +45103,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -45132,7 +45132,7 @@
     "ipa": {
       "uk": "/ɪnˈfɔː.məl ɪˈkɒn.ə.mi/"
     },
-    "meaningVi": "khu vực kinh tế phi chính thức nằm ngoài hệ thống đăng",
+    "meaningVi": "khu vực kinh tế phi chính thức ngoài hệ thống đăng ký",
     "definitionEn": "Economic activity, street commerce, and unregistered employment operating outside formal taxation and labour protections.",
     "examples": [
       {
@@ -45164,7 +45164,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -45193,7 +45193,7 @@
     "ipa": {
       "uk": "/ˈrentˌsiː.kɪŋ/"
     },
-    "meaningVi": "hành vi tìm kiếm lợi ích đặc quyền mà không tạo thêm",
+    "meaningVi": "hành vi trục lợi đặc quyền mà không tạo thêm giá trị",
     "definitionEn": "The practice of extracting unearned economic wealth through lobbying, monopolies, or regulatory capture without creating new value.",
     "examples": [
       {
@@ -45223,7 +45223,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -45311,7 +45311,7 @@
     "ipa": {
       "uk": "/ˈsɒl.vən.si/"
     },
-    "meaningVi": "năng lực thanh toán bền vững các nghĩa vụ tài chính dài",
+    "meaningVi": "năng lực thanh toán bền vững các nghĩa vụ nợ dài hạn",
     "definitionEn": "The long-term financial soundness of an institution, reflecting its capacity to meet all future debt obligations.",
     "examples": [
       {
@@ -45341,7 +45341,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -53685,7 +53685,7 @@
         "word": "legal sovereignty"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -55632,7 +55632,7 @@
         "word": "promotion"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "family": [
       {
         "form": "public",
@@ -59099,7 +59099,7 @@
       "uk": "/ɪnˈɡeɪdʒmənt/"
     },
     "meaningVi": "mức độ tương tác",
-    "definitionEn": "likes, comments and shares on content.",
+    "definitionEn": "Active participation, involvement, or sustained interest in an activity, issue, or digital content.",
     "examples": [
       {
         "en": "Controversial posts tend to boost engagement in an era of instant digital broadcasting and news feeds.",
@@ -59128,7 +59128,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -72051,7 +72051,7 @@
     "ipa": {
       "uk": "/ˈməʊ.tə.weɪ/"
     },
-    "meaningVi": "đường cao tốc nhiều làn dành cho xe cơ giới tốc độ",
+    "meaningVi": "đường cao tốc nhiều làn cho xe cơ giới tốc độ cao",
     "definitionEn": "A multi-lane, controlled-access highway engineered for high-speed long-distance vehicular travel without at-grade intersections.",
     "examples": [
       {
@@ -72082,7 +72082,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -72239,7 +72239,7 @@
     "ipa": {
       "uk": "/ˌpɑːk.ənˈraɪd/"
     },
-    "meaningVi": "mô hình bãi đỗ xe ngoại vi kết hợp trung chuyển công",
+    "meaningVi": "bãi đỗ xe ngoại vi kết hợp trung chuyển công cộng",
     "definitionEn": "A suburban car park beside a transit hub allowing commuters to finish journeys by bus or rail.",
     "examples": [
       {
@@ -72270,7 +72270,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -75439,7 +75439,7 @@
         "word": "scholarly consensus"
       }
     ],
-    "freqZipf": 4.0,
+    "freqZipf": 4,
     "cefr": "C1",
     "_bandTarget": 8
   },
@@ -90333,7 +90333,7 @@
     "ipa": {
       "uk": "/ˌɔː.rəl trəˈdɪʃ.ən/"
     },
-    "meaningVi": "truyền thống truyền miệng qua các thế hệ",
+    "meaningVi": "truyền thống truyền miệng",
     "definitionEn": "The cultural preservation and transmission of histories, epics, laws, and ecological wisdom through spoken storytelling and song.",
     "examples": [
       {
@@ -90365,7 +90365,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -93016,7 +93016,7 @@
         "word": "personal"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "family": [
       {
         "form": "individually",
@@ -94306,7 +94306,7 @@
         "word": "segment"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "family": [
       {
         "form": "sectional",
@@ -95967,7 +95967,7 @@
         "word": "recognition"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "cefr": "B2",
     "_bandTarget": 7
   },
@@ -96575,7 +96575,7 @@
         "word": "emphasis"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "cefr": "B2",
     "_bandTarget": 7
   },
@@ -97510,7 +97510,7 @@
         "word": "prior"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "family": [
       {
         "form": "previously",
@@ -97760,7 +97760,7 @@
         "word": "zone"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "family": [
       {
         "form": "regional",
@@ -122257,7 +122257,7 @@
     "ipa": {
       "uk": "/dɪˈvəʊt/"
     },
-    "meaningVi": "dành toàn bộ (thời gian, nguồn lực, tâm huyết) cho",
+    "meaningVi": "dành trọn thời gian, nguồn lực, tâm huyết cho",
     "definitionEn": "To give a significant proportion of time, money, or effort to a particular purpose or cause.",
     "examples": [
       {
@@ -122287,7 +122287,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [
@@ -131137,7 +131137,7 @@
         "word": "alongside"
       }
     ],
-    "freqZipf": 5.0,
+    "freqZipf": 5,
     "cefr": "B2",
     "_bandTarget": 7
   },
@@ -137247,7 +137247,7 @@
     "ipa": {
       "uk": "/straɪk ə ˈbæl.əns/"
     },
-    "meaningVi": "thiết lập sự cân bằng hài hòa giữa hai yếu tố đối",
+    "meaningVi": "thiết lập sự cân bằng giữa hai yếu tố đối lập",
     "definitionEn": "To reach a fair, workable compromise between two competing priorities, interests, or extremes.",
     "examples": [
       {
@@ -137276,7 +137276,7 @@
       "license": "own",
       "qa": {
         "schema": "pass",
-        "verifier": "pass"
+        "verifier": "fixed"
       }
     },
     "_legacyCollocations": [

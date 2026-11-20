@@ -1,6 +1,10 @@
-import { z } from 'zod';
-import { loadContentArray } from '../../core/content/loaders';
-import { VocabItemSchema } from '../../core/content/schemas';
+import { loadContent, loadContentArray } from '../../core/content/loaders';
+import {
+  PlacementVocabSchema,
+  VocabItemSchema,
+  type PlacementVocab,
+  type VocabItem,
+} from '../../core/content/schemas';
 import { createNewCard, type SRSCard } from '../../core/srs/fsrsAdapter';
 import { V1_FIXTURE_VOCAB } from '../../test/fixtures/v1_fixtures';
 
@@ -16,25 +20,70 @@ export interface PlacementVocabQuestion {
   explanationVi: string;
 }
 
-const PlacementQuestionSchema = z.object({
-  id: z.string().min(1),
-  word: z.string().min(1),
-  ipa: z.string().default(''),
-  bandTier: z.union([
-    z.literal(5.5),
-    z.literal(6.0),
-    z.literal(6.5),
-    z.literal(7.0),
-    z.literal(7.5),
-    z.literal(8.0),
-    z.literal(8.5),
-  ]),
-  promptVi: z.string().min(1),
-  contextEn: z.string().min(1),
-  choices: z.tuple([z.string(), z.string(), z.string(), z.string()]),
-  correctIndex: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]),
-  explanationVi: z.string().min(1),
-});
+const BAND_TO_TIER: Record<1 | 2 | 3 | 4 | 5 | 6, PlacementVocabQuestion['bandTier']> = {
+  1: 5.5,
+  2: 6.0,
+  3: 6.5,
+  4: 7.0,
+  5: 7.5,
+  6: 8.5,
+};
+
+const BAND_QUOTAS: ReadonlyArray<readonly [1 | 2 | 3 | 4 | 5 | 6, number]> = [
+  [1, 2],
+  [2, 2],
+  [3, 3],
+  [4, 3],
+  [5, 3],
+  [6, 2],
+];
+
+function deterministicHash(input: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < input.length; i++) {
+    h ^= input.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+export function mapPlacementVocabItem(
+  item: PlacementVocab['items'][number],
+  vocabLookup?: ReadonlyMap<string, VocabItem>,
+): PlacementVocabQuestion {
+  const bandTier = BAND_TO_TIER[item.band];
+  const matchedVocab = vocabLookup?.get(item.headword.trim().toLowerCase());
+
+  const correctIndex = (deterministicHash(item.id) % 4) as 0 | 1 | 2 | 3;
+  const rawChoices: string[] = [...item.foilsVi];
+  rawChoices.splice(correctIndex, 0, item.checkMeaningVi);
+  const choices: [string, string, string, string] = [
+    rawChoices[0],
+    rawChoices[1],
+    rawChoices[2],
+    rawChoices[3],
+  ];
+
+  const contextEn =
+    matchedVocab?.examples[0]?.en ??
+    `Academic IELTS vocabulary (Band ${bandTier.toFixed(1)}): "${item.headword}"`;
+
+  const explanationVi = matchedVocab?.definitionEn
+    ? `"${item.headword}" nghĩa là "${item.checkMeaningVi}" — ${matchedVocab.definitionEn}`
+    : `"${item.headword}" có nghĩa học thuật là "${item.checkMeaningVi}".`;
+
+  return {
+    id: item.id,
+    word: item.headword,
+    ipa: matchedVocab?.ipa.uk ?? '',
+    bandTier,
+    promptVi: `Chọn nghĩa học thuật đúng nhất của từ "${item.headword}":`,
+    contextEn,
+    choices,
+    correctIndex,
+    explanationVi,
+  };
+}
 
 /**
  * 15-item tiered Academic IELTS vocabulary placement test (Band 5.5 -> 8.5).
@@ -286,13 +335,40 @@ export const BUILTIN_PLACEMENT_QUESTIONS: readonly PlacementVocabQuestion[] = [
 export async function loadPlacementVocabQuestions(): Promise<PlacementVocabQuestion[]> {
   const silentOpts = { isDev: false, onError: () => undefined };
   try {
-    const loaded = await loadContentArray(
-      'data/placement_vocab.json',
-      PlacementQuestionSchema,
+    const payload = await loadContent(
+      'data/vocab/placement_vocab.json',
+      PlacementVocabSchema,
       silentOpts,
     );
-    if (loaded.length >= 12) {
-      return loaded.slice(0, 15);
+
+    if (payload.items.length >= 12) {
+      let vocabLookup: Map<string, VocabItem> | undefined;
+      try {
+        const words = await loadContentArray('data/vocab/words.json', VocabItemSchema, silentOpts);
+        vocabLookup = new Map(words.map((w) => [w.headword.trim().toLowerCase(), w]));
+      } catch {
+        // Optional enrichment; placement_vocab.json works standalone
+      }
+
+      const byBand = new Map<number, PlacementVocab['items']>();
+      for (const item of payload.items) {
+        const list = byBand.get(item.band);
+        if (list) list.push(item);
+        else byBand.set(item.band, [item]);
+      }
+
+      const sampled: PlacementVocab['items'] = [];
+      for (const [band, quota] of BAND_QUOTAS) {
+        const pool = byBand.get(band) ?? [];
+        if (pool.length === 0) continue;
+        const step = Math.max(1, Math.floor(pool.length / quota));
+        for (let i = 0; i < quota && i * step < pool.length; i++) {
+          sampled.push(pool[i * step]);
+        }
+      }
+
+      const sourceItems = sampled.length >= 12 ? sampled : payload.items.slice(0, 15);
+      return sourceItems.map((item) => mapPlacementVocabItem(item, vocabLookup));
     }
   } catch {
     // Fallback to built-in curated 15 questions

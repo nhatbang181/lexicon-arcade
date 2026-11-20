@@ -20,104 +20,169 @@ function escapeRegex(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-function generateInflections(base) {
-  const w = base.trim().toLowerCase();
-  if (!w) return [];
-  const forms = new Set([w]);
+const IRREGULAR_VERBS = {
+  rise: ['rises', 'rose', 'risen', 'rising'],
+  fall: ['falls', 'fell', 'fallen', 'falling'],
+  grow: ['grows', 'grew', 'grown', 'growing'],
+  lead: ['leads', 'led', 'leading'],
+  hold: ['holds', 'held', 'holding'],
+  bear: ['bears', 'bore', 'borne', 'bearing'],
+  drive: ['drives', 'drove', 'driven', 'driving'],
+  seek: ['seeks', 'sought', 'seeking'],
+  strike: ['strikes', 'struck', 'striking'],
+  undergo: ['undergoes', 'underwent', 'undergone', 'undergoing'],
+  overcome: ['overcomes', 'overcame', 'overcoming'],
+  withdraw: ['withdraws', 'withdrew', 'withdrawn', 'withdrawing'],
+  withstand: ['withstands', 'withstood', 'withstanding'],
+  offset: ['offsets', 'offsetting'],
+  outstrip: ['outstrips', 'outstripped', 'outstripping'],
+};
 
-  // UK <-> US variants
+const IRREGULAR_NOUNS = {
+  phenomenon: ['phenomena'],
+  criterion: ['criteria'],
+  curriculum: ['curricula', 'curriculums'],
+  analysis: ['analyses'],
+  crisis: ['crises'],
+  hypothesis: ['hypotheses'],
+  thesis: ['theses'],
+  basis: ['bases'],
+  emphasis: ['emphases'],
+  medium: ['media'],
+  datum: ['data'],
+  stimulus: ['stimuli'],
+  index: ['indices', 'indexes'],
+  matrix: ['matrices', 'matrixes'],
+};
+
+function addUkUsVariants(w, forms) {
   if (w.endsWith('ise')) forms.add(w.slice(0, -3) + 'ize');
   if (w.endsWith('ize')) forms.add(w.slice(0, -3) + 'ise');
   if (w.endsWith('isation')) forms.add(w.slice(0, -7) + 'ization');
   if (w.endsWith('ization')) forms.add(w.slice(0, -7) + 'isation');
   if (w.endsWith('ised')) forms.add(w.slice(0, -4) + 'ized');
+  if (w.endsWith('ized')) forms.add(w.slice(0, -4) + 'ised');
   if (w.endsWith('ising')) forms.add(w.slice(0, -5) + 'izing');
+  if (w.endsWith('izing')) forms.add(w.slice(0, -5) + 'ising');
   if (w.includes('our') && !w.startsWith('our') && !w.includes('hour') && !w.includes('four')) {
     forms.add(w.replace(/our/g, 'or'));
   }
   if (w.endsWith('re') && w.length > 4 && !/[aeiou]re$/.test(w)) {
     forms.add(w.slice(0, -2) + 'er');
   }
+}
 
-  // Only generate morphological inflections for single words (or first/last word of phrase handled separately)
-  if (!/\s/.test(w)) {
-    forms.add(w + 's');
+function addPluralForm(w, forms) {
+  if (Object.hasOwn(IRREGULAR_NOUNS, w)) {
+    for (const irr of IRREGULAR_NOUNS[w]) forms.add(irr);
+    return;
+  }
+  if (/(?:s|x|z|ch|sh)$/.test(w)) {
     forms.add(w + 'es');
-    forms.add(w + 'ed');
-    forms.add(w + 'ing');
+  } else if (/[^aeiou]y$/.test(w) && w.length > 2) {
+    forms.add(w.slice(0, -1) + 'ies');
+  } else {
+    forms.add(w + 's');
+  }
+}
 
-    if (w.endsWith('e') && w.length > 2) {
-      forms.add(w + 'd');
-      if (!w.endsWith('ee') && !w.endsWith('ye') && !w.endsWith('oe')) {
-        forms.add(w.slice(0, -1) + 'ing');
-      }
-    }
-    if (w.endsWith('y') && w.length > 2 && !/[aeiou]y$/.test(w)) {
-      forms.add(w.slice(0, -1) + 'ies');
-      forms.add(w.slice(0, -1) + 'ied');
-      forms.add(w.slice(0, -1) + 'ier');
-      forms.add(w.slice(0, -1) + 'iest');
-    }
-    // CVC doubling for short verbs/adjs (e.g. cram -> crammed, cramming; enrol -> enrolled, enrolling)
+function addVerbForms(w, forms) {
+  if (Object.hasOwn(IRREGULAR_VERBS, w)) {
+    for (const irr of IRREGULAR_VERBS[w]) forms.add(irr);
+    return;
+  }
+  // 3rd person singular
+  if (/(?:s|x|z|ch|sh|o)$/.test(w)) {
+    forms.add(w + 'es');
+  } else if (/[^aeiou]y$/.test(w) && w.length > 2) {
+    forms.add(w.slice(0, -1) + 'ies');
+  } else {
+    forms.add(w + 's');
+  }
+  // Past / past participle
+  if (w.endsWith('e') && w.length > 2) {
+    forms.add(w + 'd');
+  } else if (/[^aeiou]y$/.test(w) && w.length > 2) {
+    forms.add(w.slice(0, -1) + 'ied');
+  } else {
+    forms.add(w + 'ed');
+  }
+  // Present participle
+  if (w.endsWith('e') && w.length > 2 && !w.endsWith('ee') && !w.endsWith('ye') && !w.endsWith('oe')) {
+    forms.add(w.slice(0, -1) + 'ing');
+  } else {
+    forms.add(w + 'ing');
+  }
+}
+
+/**
+ * Generates broad search candidates for matching the surface form in ex.en.
+ */
+function generateSearchInflections(base) {
+  const w = base.trim().toLowerCase();
+  if (!w) return [];
+  const forms = new Set([w]);
+  addUkUsVariants(w, forms);
+
+  if (!/\s/.test(w)) {
+    addPluralForm(w, forms);
+    addVerbForms(w, forms);
     if (/[aeiou][^aeiouwxy]$/.test(w) && w.length >= 3) {
       const last = w[w.length - 1];
       forms.add(w + last + 'ed');
       forms.add(w + last + 'ing');
     }
-    // Past/plural irregulars common in IELTS
-    const irregulars = {
-      rise: ['rose', 'risen', 'rising'],
-      fall: ['fell', 'fallen', 'falling'],
-      grow: ['grew', 'grown', 'growing'],
-      lead: ['led', 'leading'],
-      hold: ['held', 'holding'],
-      bear: ['bore', 'borne', 'bearing'],
-      drive: ['drove', 'driven', 'driving'],
-      seek: ['sought', 'seeking'],
-      strike: ['struck', 'striking'],
-      undergo: ['underwent', 'undergone', 'undergoing'],
-      overcome: ['overcame', 'overcoming'],
-      withdraw: ['withdrew', 'withdrawn', 'withdrawing'],
-      withstand: ['withstood', 'withstanding'],
-      offset: ['offsetting'],
-      outstrip: ['outstripped', 'outstripping'],
-      phenomenon: ['phenomena'],
-      criterion: ['criteria'],
-      curriculum: ['curricula', 'curriculums'],
-      analysis: ['analyses'],
-      crisis: ['crises'],
-      hypothesis: ['hypotheses'],
-      thesis: ['theses'],
-      basis: ['bases'],
-      emphasis: ['emphases'],
-      medium: ['media'],
-      datum: ['data'],
-      stimulus: ['stimuli'],
-      index: ['indices', 'indexes'],
-      matrix: ['matrices', 'matrixes'],
-    };
-    if (Object.hasOwn(irregulars, w)) {
-      for (const irr of irregulars[w]) forms.add(irr);
+    if (w.endsWith('y') && w.length > 2 && !/[aeiou]y$/.test(w)) {
+      forms.add(w.slice(0, -1) + 'ier');
+      forms.add(w.slice(0, -1) + 'iest');
     }
   } else {
-    // Multi-word phrase: allow verb inflection on first word & plural on last word
     const parts = w.split(/\s+/);
     const first = parts[0];
     const rest = parts.slice(1).join(' ');
-    for (const f of generateInflections(first)) {
+    for (const f of generateSearchInflections(first)) {
       forms.add(`${f} ${rest}`);
     }
     const last = parts[parts.length - 1];
     const init = parts.slice(0, -1).join(' ');
-    for (const l of [last + 's', last + 'es']) {
+    const lastPlurals = new Set();
+    addPluralForm(last, lastPlurals);
+    for (const l of lastPlurals) {
       forms.add(`${init} ${l}`);
     }
-    // Hyphenated <-> spaced
     forms.add(w.replace(/\s+/g, '-'));
   }
 
   if (w.includes('-')) {
     forms.add(w.replace(/-/g, ' '));
+  }
+
+  return [...forms];
+}
+
+/**
+ * Generates grammatically valid clozeAccepted forms based on POS (no bogus non-words).
+ */
+function generateValidClozeForms(base, posList = []) {
+  const w = base.trim().toLowerCase();
+  if (!w) return [];
+  const forms = new Set([w]);
+  addUkUsVariants(w, forms);
+
+  const posSet = new Set(posList);
+  if (!/\s/.test(w)) {
+    if (posSet.has('n')) addPluralForm(w, forms);
+    if (posSet.has('v')) addVerbForms(w, forms);
+  } else {
+    forms.add(w.replace(/\s+/g, '-'));
+  }
+  if (w.includes('-')) {
+    forms.add(w.replace(/-/g, ' '));
+  }
+
+  // Also add UK/US variants of generated valid forms
+  for (const f of [...forms]) {
+    addUkUsVariants(f, forms);
   }
 
   return [...forms];
@@ -141,13 +206,13 @@ export function processVocabItems(items) {
 
   for (const item of items) {
     const hw = item.headword.trim();
-    const baseForms = new Set(generateInflections(hw));
+    const baseForms = new Set(generateSearchInflections(hw));
     const familyForms = new Set();
     if (Array.isArray(item.family)) {
       for (const f of item.family) {
         if (f?.form) {
           familyForms.add(f.form.toLowerCase());
-          for (const inf of generateInflections(f.form)) {
+          for (const inf of generateSearchInflections(f.form)) {
             familyForms.add(inf);
           }
         }
@@ -155,6 +220,7 @@ export function processVocabItems(items) {
     }
 
     const allCandidates = [...new Set([...baseForms, ...familyForms])];
+    const validClozeForms = generateValidClozeForms(hw, item.pos || []);
 
     for (const ex of item.examples || []) {
       totalExamples++;
@@ -186,22 +252,13 @@ export function processVocabItems(items) {
 
       // Include UK/US variant of matched surface & headword
       for (const form of [...accepted]) {
-        if (form.endsWith('ise')) accepted.add(form.slice(0, -3) + 'ize');
-        if (form.endsWith('ize')) accepted.add(form.slice(0, -3) + 'ise');
-        if (form.endsWith('ised')) accepted.add(form.slice(0, -4) + 'ized');
-        if (form.endsWith('ising')) accepted.add(form.slice(0, -5) + 'izing');
-        if (form.endsWith('isation')) accepted.add(form.slice(0, -7) + 'ization');
-        if (form.includes('our') && !form.startsWith('our')) accepted.add(form.replace(/our/g, 'or'));
+        addUkUsVariants(form, accepted);
       }
 
-      // Add up to 6 key inflections & family forms so V1 cloze accepts valid morphological answers
-      for (const inf of generateInflections(hw).slice(0, 8)) {
+      // Add POS-appropriate valid inflections (no bogus non-words), capped at 6 total
+      for (const inf of validClozeForms) {
+        if (accepted.size >= 6) break;
         if (inf.length >= 2) accepted.add(inf);
-      }
-      if (Array.isArray(item.family)) {
-        for (const f of item.family.slice(0, 4)) {
-          if (f?.form) accepted.add(f.form.toLowerCase());
-        }
       }
 
       ex.clozeAccepted = [...accepted];
