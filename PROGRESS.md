@@ -22,7 +22,7 @@ Worker cập nhật bảng này: ✅ xong / 🔄 đang làm / ⏳ chờ / ⚠️
 - ✅ r-shell (`4b799f5`) · ✅ r-core (`c8d287d`) · ✅ r-assets (`e0f13c6`) · ✅ rv-m0 (0 lỗi)
 
 ### M1
-- 🔄 r-m1-data-vocab · ⏳ rv-data-vocab · ⏳ r-audio-vocab · 🔄 r-game-v1 · ⏳ r-game-v2v3 · ⏳ r-today
+- 🔄 r-m1-data-vocab · ⏳ rv-data-vocab · ⏳ r-audio-vocab · ✅ r-game-v1 (`6e5edcc`) · 🔄 r-game-v2v3 · ⏳ r-today
 
 ## Lỗi đã biết
 - MCP `anki` (AnkiConnect) không kết nối được (ECONNREFUSED). Không chặn M1 vì đã có JSON xuất sẵn (`public/data/anki_vocab.json`, `public/data/ielts_4skills.json`).
