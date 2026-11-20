@@ -1,0 +1,222 @@
+[
+    {
+        "episodeId":  "lep:p1_001",
+        "answers":  [
+                        {
+                            "qid":  "lep_p1_001_q01",
+                            "number":  1,
+                            "answer":  "Bramwell"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q02",
+                            "number":  2,
+                            "answer":  "48 Alder"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q03",
+                            "number":  3,
+                            "answer":  "07741829360"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q04",
+                            "number":  4,
+                            "answer":  "off-peak"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q05",
+                            "number":  5,
+                            "answer":  "36"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q06",
+                            "number":  6,
+                            "answer":  "12 October"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q07",
+                            "number":  7,
+                            "answer":  "Thursday"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q08",
+                            "number":  8,
+                            "answer":  "9:30"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q09",
+                            "number":  9,
+                            "answer":  "padlock"
+                        },
+                        {
+                            "qid":  "lep_p1_001_q10",
+                            "number":  10,
+                            "answer":  "pilates"
+                        }
+                    ]
+    },
+    {
+        "episodeId":  "lep:p2_001",
+        "answers":  [
+                        {
+                            "qid":  "lep_p2_001_q01",
+                            "number":  1,
+                            "answer":  "B"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q02",
+                            "number":  2,
+                            "answer":  "B"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q03",
+                            "number":  3,
+                            "answer":  "A"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q04",
+                            "number":  4,
+                            "answer":  "C"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q05",
+                            "number":  5,
+                            "answer":  "F"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q06",
+                            "number":  6,
+                            "answer":  "E"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q07",
+                            "number":  7,
+                            "answer":  "G"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q08",
+                            "number":  8,
+                            "answer":  "A"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q09",
+                            "number":  9,
+                            "answer":  "C"
+                        },
+                        {
+                            "qid":  "lep_p2_001_q10",
+                            "number":  10,
+                            "answer":  "D"
+                        }
+                    ]
+    },
+    {
+        "episodeId":  "lep:p3_001",
+        "answers":  [
+                        {
+                            "qid":  "lep_p3_001_q01",
+                            "number":  1,
+                            "answer":  "B"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q02",
+                            "number":  2,
+                            "answer":  "A"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q03",
+                            "number":  3,
+                            "answer":  "C"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q04",
+                            "number":  4,
+                            "answer":  "B"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q05",
+                            "number":  5,
+                            "answer":  "C"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q06",
+                            "number":  6,
+                            "answer":  "C"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q07",
+                            "number":  7,
+                            "answer":  "F"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q08",
+                            "number":  8,
+                            "answer":  "D"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q09",
+                            "number":  9,
+                            "answer":  "A"
+                        },
+                        {
+                            "qid":  "lep_p3_001_q10",
+                            "number":  10,
+                            "answer":  "E"
+                        }
+                    ]
+    },
+    {
+        "episodeId":  "lep:p4_001",
+        "answers":  [
+                        {
+                            "qid":  "lep_p4_001_q01",
+                            "number":  1,
+                            "answer":  "snowmelt"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q02",
+                            "number":  2,
+                            "answer":  "evaporation"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q03",
+                            "number":  3,
+                            "answer":  "gradient"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q04",
+                            "number":  4,
+                            "answer":  "ventilation"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q05",
+                            "number":  5,
+                            "answer":  "terracotta"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q06",
+                            "number":  6,
+                            "answer":  "shares"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q07",
+                            "number":  7,
+                            "answer":  "roots"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q08",
+                            "number":  8,
+                            "answer":  "pumps"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q09",
+                            "number":  9,
+                            "answer":  "labour"
+                        },
+                        {
+                            "qid":  "lep_p4_001_q10",
+                            "number":  10,
+                            "answer":  "orchards"
+                        }
+                    ]
+    }
+]

@@ -1,0 +1,56 @@
+{
+  "verifier": "rv-data-listening (Claude Sonnet 5.5, cross-vendor)",
+  "date": "2026-11-20",
+  "method": "blind-solve on data-src/listening/blind transcripts, gold not read before solving",
+  "episodes": 4,
+  "questions": 40,
+  "matched": 39,
+  "accuracyPct": 97.5,
+  "perPart": {
+    "P1": {
+      "episodeId": "lep:p1_001",
+      "matched": 10,
+      "total": 10,
+      "pct": 100
+    },
+    "P2": {
+      "episodeId": "lep:p2_001",
+      "matched": 10,
+      "total": 10,
+      "pct": 100
+    },
+    "P3": {
+      "episodeId": "lep:p3_001",
+      "matched": 10,
+      "total": 10,
+      "pct": 100
+    },
+    "P4": {
+      "episodeId": "lep:p4_001",
+      "matched": 9,
+      "total": 10,
+      "pct": 90
+    }
+  },
+  "mismatches": [
+    {
+      "qid": "lep_p4_001_q05",
+      "number": 5,
+      "match": false,
+      "expected": "rings",
+      "received": "terracotta",
+      "reason": "wrong_answer"
+    }
+  ],
+  "firstRunIssues": [
+    {
+      "qid": "lep_p1_001_q03",
+      "note": "Solver first wrote \"07741 829 360\" (spaces) -> word_limit_exceeded; same digits as gold 07741829360. Format issue only; resubmitted unspaced. Consider whether comparator/app should normalise spaced phone numbers (learners will type spaces)."
+    }
+  ],
+  "analysis": {
+    "lep_p4_001_q05": "Solver error, gold correct: stem \"reinforced with ceramic ___\" and transcript says \"terracotta rings\"; solver repeated the modifier. No data defect."
+  },
+  "verdict": "PASS (>=95%); no data defects found. Only advisory: phone-number spacing handling.",
+  "note": "comparator run with node --import tsx (plain node fails on extensionless TS import); other 28 episodes not blind-solved (reported missing by comparator, ignore)."
+}

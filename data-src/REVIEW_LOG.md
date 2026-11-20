@@ -12,3 +12,10 @@
 - Mismatch: p2_004_q05 (YNNG) gold NG vs blind NO - ambiguous (para E says colleges replace retirees too slowly; 'begun expanding intake' unstated). Suggest rewording.
 - validate:data could not run: missing npm package zod (environment).
 - Verdict: data-src/reading/verdict_m2_reading.json
+
+## M3 Listening blind-solve (rv-data-listening, 2026-11-20)
+- Verifier: Claude Sonnet 5.5 (khac hang). Giai mu 4 episode (p1_001, p2_001 co MapSpec, p3_001, p4_001) = 40 cau, chi doc transcript trong `data-src/listening/blind/`.
+- Khop: P1 10/10, P2 10/10, P3 10/10, P4 9/10 = 39/40 (97.5%).
+- Lech: `lep_p4_001_q05` (toi tra "terracotta", gold "rings"): loi nguoi giai, gold dung.
+- Luu y: p1_001 q03 viet co dau cach bi `word_limit_exceeded` (gold 07741829360); la van de dinh dang, nen xem xet chuan hoa so dien thoai co dau cach.
+- Chay comparator bang `node --import tsx` (node thuong loi import .ts). Chi tiet: `data-src/listening/verdict_m3_listening.json`.
