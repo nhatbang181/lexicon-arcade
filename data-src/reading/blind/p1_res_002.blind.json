@@ -1,0 +1,154 @@
+{
+  "id": "rp:p1_res_002",
+  "level": "P1",
+  "reserved": true,
+  "title": "Lunar Regolith Bricks for Extraterrestrial Shelters",
+  "subtitle": "How engineers plan to bake moon dust into radiation-shielding masonry for future bases",
+  "topic": "space",
+  "wordCount": 745,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Transporting a single kilogram of building supply from Earth to the lunar surface costs tens of thousands of pounds, making ready-made metal modules impractical for permanent outposts. Mission planners therefore favour local resource utilisation, a practical strategy that relies on raw materials already lying at the landing site. Across most of the Moon, the ground sits beneath a deep layer of regolith. This fine soil consists of crushed volcanic rock and tiny glass fragments formed by billions of years of meteorite impacts. Converting such abundant loose dust into solid building blocks could reduce launch mass sharply. At the same time, thick dust walls would shield crews from cosmic radiation and high-speed micrometeorites. Such local construction could turn brief visits into lasting stays."
+    },
+    {
+      "label": "B",
+      "text": "Before engineers can mould regolith into reliable bricks, they must contend with its unusual physical behaviour. Because the Moon lacks wind and flowing water to smooth sharp corners, individual dust grains stay jagged and highly abrasive under a lens. In the hard vacuum of space, solar ultraviolet light also gives the powder a static charge, causing tiny grains to cling tightly to spacesuits, rubber seals, and optical lenses. Over long missions, this clinging dust can jam airlock hatches and scratch visor glass. In addition, regolith differs in chemical composition between the dark lava plains known as maria and the brighter highland regions. Any practical brick machine must therefore handle mixed grain sizes and relentless wear on its moving parts."
+    },
+    {
+      "label": "C",
+      "text": "One clear fabrication method uses focused sunlight rather than chemical glue flown from Earth. In laboratory trials led by Dr Claire Brennan, researchers used crushed dark earth that closely mimics real moon dust. Curved mirrors focus solar rays onto a narrow spot, raising the powder to roughly 1,100 degrees Celsius. At that temperature, the outer edges of adjacent grains partly melt and fuse together, a process called sintering. A robot arm sweeps the hot beam across thin successive layers, forming a linked brick without any water or binding resin. The finished blocks withstand compressive loads comparable to common fired clay bricks on Earth, though baking one unit currently takes nearly five hours. Slow output means teams would need several mirror units working side by side."
+    },
+    {
+      "label": "D",
+      "text": "In search of faster production rates, a separate research team under Professor Kenji Takahashi has tested microwave energy as an alternative heat source. Real moon dust holds tiny flecks of metallic iron formed through constant solar-wind strikes, and those grains absorb microwaves remarkably well. Instead of warming a brick slowly from the outer skin inwards, microwaves heat the core and surface almost at the same moment, cutting baking time to less than 40 minutes per block. Yet uneven patches of iron inside the raw soil can trigger localised hot spots that warp the shape or leave internal cracks. A single flawed block could weaken an entire wall section. The group is now testing spinning chambers and tuned beams to spread thermal energy more evenly across each mould."
+    },
+    {
+      "label": "E",
+      "text": "Even well-sintered bricks face harsh trials once crews stack them into a real dome. Over a single lunar day and night lasting roughly 29 Earth days, ground heat swings from 120 degrees Celsius in full sun down to minus 170 degrees in shadow. Rigid mortar joints would fracture rapidly under such wide cycles of thermal expansion and shrinking. Structural designer Nadia Osei consequently suggests dry-stacked bricks shaped with notched edges that lock firmly without cement. Under her design, an inflatable polymer dome sits inside the masonry vault to retain breathable air. Meanwhile, the thick regolith shell buffers extreme temperature swings, absorbs harmful radiation, and guards the thin inner liner against space debris. If one outer block cracks, crews can replace it from outside."
+    },
+    {
+      "label": "F",
+      "text": "Despite steady laboratory advances, large-scale building work on the Moon still confronts major practical hurdles. Vacuum-chamber tests reveal that baked bricks cool in odd ways when no surrounding air exists to carry warmth away, which can leave brittle outer crusts. Operating autonomous rovers to scoop, sieve, and stack thousands of heavy blocks also demands dependable electrical power during the two-week lunar night, when solar panels fall idle. Engineers may need compact nuclear power units or large fuel cells to keep work moving in the dark. Even so, mission planners intend to fly compact test furnaces aboard upcoming robot landers to bake small test tiles directly on the lunar soil. Data gathered from those field runs will clarify whether dust-made walls can anchor the first long-term human outpost beyond Earth."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p1_res_002_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_res_002_q01",
+          "number": 1,
+          "prompt": "The high cost of launching materials from Earth makes ready-made metal structures unsuitable for permanent lunar bases."
+        },
+        {
+          "qid": "p1_res_002_q02",
+          "number": 2,
+          "prompt": "Lunar regolith has the same chemical composition in both the dark plains and the highland regions."
+        },
+        {
+          "qid": "p1_res_002_q03",
+          "number": 3,
+          "prompt": "Dr Claire Brennan's team has already tested its curved mirror furnace inside an orbiting spacecraft."
+        },
+        {
+          "qid": "p1_res_002_q04",
+          "number": 4,
+          "prompt": "Microwave heating can produce lunar regolith bricks faster than the concentrated sunlight method."
+        },
+        {
+          "qid": "p1_res_002_q05",
+          "number": 5,
+          "prompt": "In Nadia Osei's shelter design, the outer regolith shell alone keeps breathable air sealed inside the habitat."
+        },
+        {
+          "qid": "p1_res_002_q06",
+          "number": 6,
+          "prompt": "The polymer domes proposed for lunar habitats have already undergone long-term radiation trials on Earth."
+        }
+      ]
+    },
+    {
+      "groupId": "p1_res_002_g2",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Engineers are investigating two main heating methods to turn moon dust into durable building blocks. In solar sintering, curved mirrors focus solar rays onto loose powder so that neighbouring grains fuse without requiring water or binding [Q7]. Although the finished blocks are strong under compression, each brick takes hours to bake. A faster technique uses microwaves, which are readily absorbed by tiny flecks of metallic [Q8] contained in real moon dust. Heating from inside and outside at once cuts production time sharply, yet uneven iron patches can warp the shape or leave internal [Q9]. Once fabricated, notched dry-stacked bricks could lock together without [Q10] around an inflatable inner dome to form a protective lunar shelter.",
+      "questions": [
+        {
+          "qid": "p1_res_002_q07",
+          "number": 7,
+          "prompt": "Blank [Q7]"
+        },
+        {
+          "qid": "p1_res_002_q08",
+          "number": 8,
+          "prompt": "Blank [Q8]"
+        },
+        {
+          "qid": "p1_res_002_q09",
+          "number": 9,
+          "prompt": "Blank [Q9]"
+        },
+        {
+          "qid": "p1_res_002_q10",
+          "number": 10,
+          "prompt": "Blank [Q10]"
+        }
+      ]
+    },
+    {
+      "groupId": "p1_res_002_g3",
+      "type": "matching_info",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_res_002_q11",
+          "number": 11,
+          "prompt": "an explanation of why lunar dust grains stay sharp-edged rather than becoming rounded"
+        },
+        {
+          "qid": "p1_res_002_q12",
+          "number": 12,
+          "prompt": "a comparison between the load-bearing strength of experimental lunar blocks and ordinary Earth bricks"
+        },
+        {
+          "qid": "p1_res_002_q13",
+          "number": 13,
+          "prompt": "an energy-supply challenge caused by extended periods without sunlight on the Moon"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "id": "rp:p2_005",
+  "level": "P2",
+  "title": "Timed Entry Quotas in Fragile Limestone Caves",
+  "subtitle": "How show caves are balancing conservation chemistry, subterranean ecology, and rural tourism through pre-booked visitor slots",
+  "topic": "tourism",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Beneath rural limestone hills across Europe and East Asia lie vast caverns filled with stalactites, calcite curtains, and prehistoric rock art formed over tens of thousands of years. Since the mid-twentieth century, concrete paths and bright floodlights have turned hundreds of these underground chambers into major regional attractions. Yet the sheer presence of human crowds alters the delicate climate that built those stone forms. Unlike open-air ruins, where wind quickly disperses breath and body heat, enclosed chambers trap moisture, carbon dioxide, and fine fibres shed from clothing. Even brief surges during holiday weekends can push fragile air balances far beyond natural limits. Left unchecked, this steady pressure can erase centuries of slow mineral growth. To safeguard rare geology without shutting sites for good, cave managers are steadily replacing open walk-in entry with strict timed entry quotas."
+    },
+    {
+      "label": "B",
+      "text": "Even a modest tour group acts like a mobile heater and gas source inside a sealed gallery. One walking guest gives off roughly 100 watts of body heat and breathes out carbon dioxide at levels far above natural cave air. Microclimate specialist Dr Mei-Ling Cho tracked a popular karst chamber over three peak summers and logged air temperatures rising by 1.8 degrees Celsius whenever more than forty people entered within an hour. Extra carbon dioxide dissolves into thin films of water on damp walls, turning neutral drips slightly acidic. Over years, that mild acid slowly etches glossy mineral crusts and halts fresh crystal growth. Automated sensors placed in tight passages reveal that recovery slows sharply once daily traffic exceeds local airflow capacity. Dr Cho argues that spacing visitors into timed slots lets natural air currents flush excess gas before lasting chemical wear takes hold."
+    },
+    {
+      "label": "C",
+      "text": "Heat and exhaled gas form only part of the burden placed on show caves. Fixed walkway floodlights spark outbreaks of lampenflora—mats of green algae, moss, and bacteria that coat wet rock near lamp housings. Once settled, those green films release organic acids that pit soft limestone and stain pale flowstone dark green. Equally worrying, guests unknowingly carry fungal spores, skin flakes, and lint on their shoes and jackets. Speleobiologist Prof Tomas Herrera warns that this steady flow of outside nutrients upsets blind cave beetles and tiny crustaceans built for near-starvation life. Because these rare species reproduce slowly, small habitat shifts can shrink populations within a decade. In his view, chemical scrubbing of algae treats only the symptom; lasting protection requires motion-triggered narrow-spectrum lamps paired with air-lock shoe mats and tighter daily caps."
+    },
+    {
+      "label": "D",
+      "text": "Several limestone parks have tested strict timed quotas over the past decade with clear results. In 2018, a provincial karst reserve cut daily entry from 1,800 walk-in guests to 720 pre-booked visitors split into twenty-person groups spaced thirty minutes apart. Within eighteen months, evening carbon dioxide peaks fell by 58%, and overnight humidity settled back to natural baseline levels before the next morning's first tour. Unexpectedly, visitor satisfaction scores climbed by nearly a third over the same period. Guests noted that quieter galleries and unhurried guides made the trip far more memorable than crowding along narrow metal rails. Staff also spent less time policing narrow walkways during wet weather. Still, park managers had to redesign car parks and online booking tools, since unannounced coach parties were turned away at the gate during peak August weeks."
+    },
+    {
+      "label": "E",
+      "text": "Tighter visitor caps often provoke sharp resistance from nearby villages whose cafes, guesthouses, and coach firms depend on high summer traffic. Local critics warn that halving cave tickets simply harms rural economies with few other jobs. Heritage economist Dr Ingrid Solberg studied four quota-managed cave towns between 2020 and 2024 and uncovered a more nuanced reality. Where managers raised ticket prices by 25% to 40% while pairing timed cave slots with guided surface trails and museum passes, total town revenue dipped by less than 4% despite a 50% drop in cave entries. Several craft shops even reported stronger sales because timed tickets kept guests in town for lunch. Dr Solberg argues that high-volume day-trippers rarely spend much locally anyway; drawing fewer visitors who stay overnight yields stronger rural income with far less wear on the rock."
+    },
+    {
+      "label": "F",
+      "text": "Because some painted halls and delicate crystal grottoes can safely handle fewer than fifty visits a week, physical quotas alone cannot meet public curiosity. Conservation engineer Dr Samuel Boateng has led laser-scanning projects that build millimetre-exact three-dimensional models and full-scale walk-through replicas beside fragile cave mouths. Some purists dismiss facsimile chambers as artificial theatre. Yet Dr Boateng insists that combining strict entry limits with realistic surface replicas opens these sites to schoolchildren and visitors with limited mobility who could never climb slippery underground stairs. Interactive lighting inside replica halls also lets guides highlight faint rock paintings without shining bright beams onto genuine walls. Taken together, timed quotas, smarter lamps, and thoughtful replicas point toward a realistic middle ground—one that guards subterranean wonders for future generations without locking local towns out of their heritage."
+    }
+  ],
+  "wordCount": 816,
+  "glossary": [
+    {
+      "term": "calcite",
+      "meaningVi": "khoáng chất can-xít kết tinh tạo nên thạch nhũ và măng đá trong hang động đá vôi"
+    },
+    {
+      "term": "karst",
+      "meaningVi": "địa hình đá vôi bị nước hòa tan tạo thành hang động, hố sụt và sông ngầm"
+    },
+    {
+      "term": "lampenflora",
+      "meaningVi": "quần xã rêu, tảo và vi khuẩn phát triển bất thường quanh đèn chiếu sáng nhân tạo trong hang"
+    },
+    {
+      "term": "speleobiologist",
+      "meaningVi": "nhà sinh học chuyên nghiên cứu các loài sinh vật sống trong hang động"
+    },
+    {
+      "term": "facsimile",
+      "meaningVi": "bản sao phục dựng chính xác theo nguyên mẫu kích thước thật"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_005_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the claims of the writer in the passage? Choose YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p2_005_q01",
+          "number": 1,
+          "prompt": "Enclosed limestone caverns clear visitor heat and breath almost as rapidly as open-air historical ruins.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 435,
+              "end": 593,
+              "quote": "Unlike open-air ruins, where wind quickly disperses breath and body heat, enclosed chambers trap moisture, carbon dioxide, and fine fibres shed from clothing."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn A đối lập rõ rằng di tích ngoài trời có gió thổi tan hơi thở và nhiệt cơ thể nhanh, còn hang động kín lại giữ chặt độ ẩm, CO2 và sợi vải. Câu hỏi nói hai nơi giống nhau là sai -> NO.",
+          "steps": [
+            "Tìm phép so sánh giữa 'open-air ruins' và 'enclosed chambers' ở đoạn A.",
+            "Chú ý từ tương phản 'Unlike' và động từ 'trap' đối lập với 'quickly disperses'.",
+            "Trái ngược với nhận định tác giả nên chọn NO."
+          ]
+        },
+        {
+          "qid": "p2_005_q02",
+          "number": 2,
+          "prompt": "Spacing tour groups into timed intervals helps natural airflow remove excess carbon dioxide before mineral surfaces erode.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 764,
+              "end": 900,
+              "quote": "Dr Cho argues that spacing visitors into timed slots lets natural air currents flush excess gas before lasting chemical wear takes hold."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn B nêu rõ việc giãn cách khách theo khung giờ giúp dòng khí tự nhiên đẩy khí dư ra ngoài trước khi xảy ra ăn mòn hóa học lâu dài. Ý hoàn toàn khớp nên chọn YES.",
+          "steps": [
+            "Định vị câu chốt của Tiến sĩ Cho ở cuối đoạn B.",
+            "Đối chiếu 'spacing visitors into timed slots' và 'natural air currents flush excess gas' với câu hỏi.",
+            "Ý khớp trực tiếp nên chọn YES."
+          ]
+        },
+        {
+          "qid": "p2_005_q03",
+          "number": 3,
+          "prompt": "Chemically scrubbing green algae off limestone walls is enough on its own to safeguard cave ecosystems over the long term.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 700,
+              "end": 887,
+              "quote": "In his view, chemical scrubbing of algae treats only the symptom; lasting protection requires motion-triggered narrow-spectrum lamps paired with air-lock shoe mats and tighter daily caps."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "explanationVi": "Đoạn C khẳng định tẩy rêu bằng hóa chất chỉ xử lý phần ngọn, còn bảo vệ lâu dài đòi hỏi đèn cảm biến phổ hẹp, thảm lọc giày và siết hạn mức ngày. Nhận định nói chỉ tẩy hóa chất là đủ -> NO.",
+          "steps": [
+            "Tìm cụm 'chemical scrubbing of algae' trong đoạn C.",
+            "Đọc vế 'treats only the symptom; lasting protection requires...' cho thấy cách này hoàn toàn không đủ.",
+            "Mâu thuẫn với câu hỏi nên chọn NO."
+          ]
+        },
+        {
+          "qid": "p2_005_q04",
+          "number": 4,
+          "prompt": "The provincial karst reserve created a compensation fund in 2018 for coach companies turned away during August.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 722,
+              "end": 881,
+              "quote": "Still, park managers had to redesign car parks and online booking tools, since unannounced coach parties were turned away at the gate during peak August weeks."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn D cho biết các đoàn xe buýt không đặt trước bị từ chối ở cổng vào tháng Tám, nhưng không hề nhắc tới quỹ bồi thường cho các hãng xe. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm mốc năm 2018 và chi tiết 'coach parties were turned away' ở đoạn D.",
+            "Kiểm tra xem bài có nói về quỹ đền bù (compensation fund) hay không.",
+            "Không có thông tin về đền bù nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_005_q05",
+          "number": 5,
+          "prompt": "Guesthouse owners in the four towns Dr Solberg studied earned higher profits than local museums after quotas started.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 376,
+              "end": 580,
+              "quote": "Where managers raised ticket prices by 25% to 40% while pairing timed cave slots with guided surface trails and museum passes, total town revenue dipped by less than 4% despite a 50% drop in cave entries."
+            }
+          ],
+          "trapType": "keyword_echo",
+          "explanationVi": "Đoạn E có nhắc nhà nghỉ (guesthouses) và vé bảo tàng (museum passes) cùng tổng doanh thu thị trấn, nhưng không so sánh lợi nhuận giữa chủ nhà nghỉ và bảo tàng. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm nghiên cứu bốn thị trấn của Tiến sĩ Solberg ở đoạn E.",
+            "Xác nhận bài chỉ nêu tổng doanh thu thị trấn giảm dưới 4%, không tách lợi nhuận riêng của nhà nghỉ và bảo tàng.",
+            "Không thể kết luận từ bài nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_005_q06",
+          "number": 6,
+          "prompt": "Combining timed entry limits with carefully designed replicas can protect delicate caves without excluding local communities from heritage benefits.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 763,
+              "end": 981,
+              "quote": "Taken together, timed quotas, smarter lamps, and thoughtful replicas point toward a realistic middle ground—one that guards subterranean wonders for future generations without locking local towns out of their heritage."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Câu cuối đoạn F khẳng định kết hợp hạn mức giờ, đèn thông minh và bản sao hang giúp bảo vệ kỳ quan ngầm mà không gạt cộng đồng địa phương ra ngoài. Hoàn toàn đồng nhất với quan điểm tác giả -> YES.",
+          "steps": [
+            "Đọc câu kết luận cuối đoạn F.",
+            "Đối chiếu 'guards subterranean wonders ... without locking local towns out of their heritage' với câu hỏi.",
+            "Khớp chính xác quan điểm của tác giả nên chọn YES."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_005_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "How human warmth and breath alter cave air chemistry"
+        },
+        {
+          "key": "ii",
+          "text": "Biological damage driven by artificial lights and outside nutrients"
+        },
+        {
+          "key": "iii",
+          "text": "Environmental recovery and better guest experiences after capping crowds"
+        },
+        {
+          "key": "iv",
+          "text": "Balancing entry limits against rural town earnings"
+        },
+        {
+          "key": "v",
+          "text": "Pairing strict physical caps with surface replicas for wider access"
+        },
+        {
+          "key": "vi",
+          "text": "Why cutting ticket numbers inevitably ruins nearby village economies"
+        },
+        {
+          "key": "vii",
+          "text": "How concrete paths speed up natural calcite crystal growth"
+        },
+        {
+          "key": "viii",
+          "text": "Evidence that digital models have permanently replaced all live cave tours"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_005_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 0,
+            "end": 90,
+            "quote": "Even a modest tour group acts like a mobile heater and gas source inside a sealed gallery."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 0,
+              "end": 90,
+              "quote": "Even a modest tour group acts like a mobile heater and gas source inside a sealed gallery."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tác hại sinh học do đèn chiếu sáng và dinh dưỡng ngoại lai là trọng tâm đoạn C kế tiếp."
+            },
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn B nói axit nhẹ làm dừng quá trình tạo tinh thể chứ không hề có chuyện lối đi bê tông đẩy nhanh tạo tinh thể."
+            }
+          ],
+          "explanationVi": "Đoạn B giải thích thân nhiệt và khí CO2 từ hơi thở du khách làm tăng nhiệt độ hang và tạo axit nhẹ ăn mòn lớp khoáng. Tiêu đề i tóm đúng nội dung này.",
+          "steps": [
+            "Đọc đoạn B và nhận ra chuỗi cơ chế: thân nhiệt + CO2 -> tăng nhiệt 1,8°C -> nước ngưng có tính axit -> mòn khoáng.",
+            "Loại tiêu đề ii (thuộc đoạn C) và tiêu đề vii (sai sự thật).",
+            "Chọn tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p2_005_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 72,
+            "end": 207,
+            "quote": "Fixed walkway floodlights spark outbreaks of lampenflora—mats of green algae, moss, and bacteria that coat wet rock near lamp housings."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 72,
+              "end": 207,
+              "quote": "Fixed walkway floodlights spark outbreaks of lampenflora—mats of green algae, moss, and bacteria that coat wet rock near lamp housings."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Biến đổi hóa học không khí do nhiệt và hơi thở đã trình bày ở đoạn B."
+            },
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C mô tả ánh sáng nhân tạo làm hư hại đá vôi chứ không hề đẩy nhanh quá trình kết tinh tự nhiên."
+            }
+          ],
+          "explanationVi": "Đoạn C phân tích hai mối đe dọa sinh học: rêu tảo lampenflora quanh đèn chiếu sáng và bào tử, dinh dưỡng ngoại lai gây rối loạn sinh vật hang. Chọn tiêu đề ii.",
+          "steps": [
+            "Nhận diện hai tác nhân sinh học ở đoạn C: đèn pha gây rêu tảo và khách mang dinh dưỡng lạ vào hang.",
+            "Kiểm tra các tiêu đề nhiễu thuộc đoạn B và đoạn D để loại trừ.",
+            "Chọn tiêu đề ii."
+          ]
+        },
+        {
+          "qid": "p2_005_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "iii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 263,
+            "end": 429,
+            "quote": "Within eighteen months, evening carbon dioxide peaks fell by 58%, and overnight humidity settled back to natural baseline levels before the next morning's first tour."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 263,
+              "end": 429,
+              "quote": "Within eighteen months, evening carbon dioxide peaks fell by 58%, and overnight humidity settled back to natural baseline levels before the next morning's first tour."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tác động kinh tế lên doanh thu thị trấn địa phương là chủ đề của đoạn E."
+            },
+            {
+              "key": "vi",
+              "type": "keyword_match",
+              "whyVi": "Đoạn D nói về chất lượng không khí và trải nghiệm khách tham quan, không bàn chuyện suy sụp kinh tế làng."
+            }
+          ],
+          "explanationVi": "Đoạn D nêu kết quả thực tế sau khi giảm lượng khách xuống 720 người/ngày: đỉnh CO2 giảm 58%, độ ẩm hồi phục và điểm hài lòng du khách tăng gần một phần ba. Chọn tiêu đề iii.",
+          "steps": [
+            "Gom hai kết quả chính ở đoạn D: phục hồi môi trường hang (CO2 giảm 58%, độ ẩm ổn định) và điểm hài lòng tăng gần 1/3.",
+            "Loại các tiêu đề thuộc đoạn E về doanh thu địa phương.",
+            "Chọn tiêu đề iii."
+          ]
+        },
+        {
+          "qid": "p2_005_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 241,
+            "end": 375,
+            "quote": "Heritage economist Dr Ingrid Solberg studied four quota-managed cave towns between 2020 and 2024 and uncovered a more nuanced reality."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 241,
+              "end": 375,
+              "quote": "Heritage economist Dr Ingrid Solberg studied four quota-managed cave towns between 2020 and 2024 and uncovered a more nuanced reality."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn E phản bác nỗi lo sụp đổ kinh tế bằng số liệu tổng doanh thu thị trấn chỉ giảm dưới 4% nhờ gói dịch vụ và khách lưu trú qua đêm."
+            },
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Sự phục hồi khí hậu hang và hài lòng du khách thuộc đoạn D trước đó."
+            }
+          ],
+          "explanationVi": "Đoạn E thảo luận lo ngại kinh tế của các làng du lịch khi siết vé và chứng minh qua nghiên cứu của Tiến sĩ Solberg rằng định giá kết hợp lưu trú giúp giữ vững nguồn thu. Chọn tiêu đề iv.",
+          "steps": [
+            "Đọc đoạn E và xác định câu chủ đề về bức tranh kinh tế tinh tế hơn tại 4 thị trấn áp hạn mức.",
+            "Loại tiêu đề vi vì chỉ nhắc lại nỗi lo ban đầu bị nghiên cứu phản bác.",
+            "Chọn tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p2_005_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 412,
+            "end": 623,
+            "quote": "Yet Dr Boateng insists that combining strict entry limits with realistic surface replicas opens these sites to schoolchildren and visitors with limited mobility who could never climb slippery underground stairs."
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 412,
+              "end": 623,
+              "quote": "Yet Dr Boateng insists that combining strict entry limits with realistic surface replicas opens these sites to schoolchildren and visitors with limited mobility who could never climb slippery underground stairs."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn F nói bản sao kết hợp cùng hạn mức tham quan thực tế chứ không hề thay thế hoàn toàn mọi tour vào hang."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Bài toán cân bằng doanh thu địa phương đã kết thúc ở đoạn E."
+            }
+          ],
+          "explanationVi": "Đoạn F trình bày giải pháp quét laser dựng mô hình 3D và bản sao trên mặt đất kết hợp giới hạn vào hang nghiêm ngặt để mở rộng khả năng tiếp cận. Chọn tiêu đề v.",
+          "steps": [
+            "Đọc đoạn F để thấy sự kết hợp giữa 'strict entry limits' và 'surface replicas'.",
+            "Loại tiêu đề viii vì khẳng định cực đoan sai với bài.",
+            "Chọn tiêu đề v."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_005_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 12–14) and the list of researchers below. Match each statement with the correct researcher, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Mei-Ling Cho"
+        },
+        {
+          "key": "B",
+          "text": "Prof Tomas Herrera"
+        },
+        {
+          "key": "C",
+          "text": "Dr Ingrid Solberg"
+        },
+        {
+          "key": "D",
+          "text": "Dr Samuel Boateng"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_005_q12",
+          "number": 12,
+          "prompt": "Foreign organic material carried in on visitors' clothing and footwear threatens specialised cave wildlife.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 431,
+              "end": 593,
+              "quote": "Speleobiologist Prof Tomas Herrera warns that this steady flow of outside nutrients upsets blind cave beetles and tiny crustaceans built for near-starvation life."
+            }
+          ],
+          "explanationVi": "Đoạn C dẫn cảnh báo của Giáo sư Tomas Herrera rằng dòng dinh dưỡng ngoại lai theo giày dép và áo khoác khách làm xáo trộn bọ cánh cứng mù và giáp xác hang động. Chọn B.",
+          "steps": [
+            "Tìm đoạn nhắc tới dinh dưỡng ngoại lai trên giày dép và sinh vật hang động ở đoạn C.",
+            "Xác định nhà nghiên cứu đưa ra cảnh báo là Prof Tomas Herrera.",
+            "Chọn B."
+          ]
+        },
+        {
+          "qid": "p2_005_q13",
+          "number": 13,
+          "prompt": "Encouraging a smaller number of visitors to stay overnight supports local village incomes more effectively than relying on day-trippers.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 683,
+              "end": 867,
+              "quote": "Dr Solberg argues that high-volume day-trippers rarely spend much locally anyway; drawing fewer visitors who stay overnight yields stronger rural income with far less wear on the rock."
+            }
+          ],
+          "explanationVi": "Đoạn E ghi Tiến sĩ Ingrid Solberg lập luận khách đi trong ngày hiếm khi chi tiêu nhiều, còn thu hút ít khách hơn nhưng ở lại qua đêm mang lại thu nhập tốt hơn cho vùng nông thôn. Chọn C.",
+          "steps": [
+            "Tìm phần so sánh giữa khách đi trong ngày ('day-trippers') và khách ở qua đêm ('stay overnight') ở đoạn E.",
+            "Xác định quan điểm này thuộc về Dr Ingrid Solberg.",
+            "Chọn C."
+          ]
+        },
+        {
+          "qid": "p2_005_q14",
+          "number": 14,
+          "prompt": "Surface replicas allow visitors who cannot manage damp underground stairs to experience fragile cave spaces.",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 412,
+              "end": 623,
+              "quote": "Yet Dr Boateng insists that combining strict entry limits with realistic surface replicas opens these sites to schoolchildren and visitors with limited mobility who could never climb slippery underground stairs."
+            }
+          ],
+          "explanationVi": "Đoạn F nêu Tiến sĩ Samuel Boateng nhấn mạnh bản sao trên mặt đất giúp học sinh và người hạn chế vận động—những người không thể leo cầu thang trơn trong hang—tiếp cận di sản. Chọn D.",
+          "steps": [
+            "Tìm thông tin về bản sao trên mặt đất ('surface replicas') và cầu thang trơn ngầm ở đoạn F.",
+            "Xác nhận người phát biểu là Dr Samuel Boateng.",
+            "Chọn D."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "id": "rp:p2_001",
+  "level": "P2",
+  "reserved": false,
+  "title": "Permeable Pavements and Urban Stormwater Recovery",
+  "subtitle": "How porous street surfaces help cities absorb intense rainfall and recharge shallow groundwater",
+  "topic": "urban",
+  "wordCount": 801,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across densely built European and Asian cities, impervious asphalt and concrete now seal up to 70% of central districts. When sudden cloudbursts strike, rainwater races off rooftops and roadways into ageing storm drains that were never built for modern extremes. Combined sewers quickly overflow, discharging raw waste into urban rivers and flooding low streets. For decades, municipal authorities responded by excavating wider subterranean tunnels, yet that conventional strategy can cost £180 million per kilometre, making it far more expensive than adapting street surfaces themselves. Increasingly, city engineers are turning to permeable pavements in car parks, cycle lanes, and quiet side streets. By letting rain pass straight through the road surface, these schemes soak up water where it falls rather than pushing the flood risk downstream."
+    },
+    {
+      "label": "B",
+      "text": "At street level, permeable surfaces take three main forms: porous asphalt, pervious concrete, and interlocking blocks set apart by gravel-filled joints. Although these top layers look quite distinct, engineers point out that the real work happens out of sight. Beneath the wearing course lies a compacted bed of angular crushed stone, typically 300 to 450 millimetres deep, which functions as an underground reservoir storing the bulk of a storm surge and releasing it gradually. A thin geotextile membrane usually separates this aggregate base from the native earth underneath, stopping fine soil from migrating upwards while trapping coarse sediment carried down by runoff. Because open voids make up roughly a third of the stone bed, even a modest residential street can hold thousands of litres during a heavy storm. Over the next day or two, that stored water slowly drains into the ground below."
+    },
+    {
+      "label": "C",
+      "text": "Field evidence confirms that these layered structures alter both the volume and the chemistry of urban runoff. Between 2019 and 2023, hydrologist Dr Helen Marsh led a four-year monitoring programme across twelve test streets in a mid-sized coastal city. Her team fitted flow gauges inside roadside drains and took water samples after every major downpour. Compared with adjacent sealed roads of identical slope, permeable blocks reduced peak surface runoff by 64% during autumn storms and delayed discharge into local drains by nearly four hours. Water quality improved in tandem. Motor oil droplets, fine tyre dust, and trace metals such as zinc and copper became physically bound within the stone bed rather than washing into nearby estuaries. Inside those damp gaps, natural microbes broke down roughly 75% of trapped hydrocarbons before filtered water reached shallow aquifers."
+    },
+    {
+      "label": "D",
+      "text": "Laboratory trials often report impressive drainage rates, yet real-world sites rarely sustain their initial performance without scheduled maintenance. Fallen leaves, winter grit, and silt washed from nearby building sites gradually lodge inside the upper pores. Monitoring data show that neglected surfaces can lose up to half of their infiltration capacity within five years. Vacuum sweepers deployed twice a year restore most of the original flow, and a single crew can clear a small car park in under an hour. Even so, cash-strapped councils frequently treat porous car parks like ordinary tarmac and skip specialised cleaning. Civil engineer Prof David Okafor warns that poorly kept permeable streets can wear out faster than sealed roads. Once surface voids clog completely, trapped water lingers near the top and expands during hard frosts, cracking joints and spalling concrete edges."
+    },
+    {
+      "label": "E",
+      "text": "Even with diligent upkeep, porous paving is not a universal fix for every urban road. Site topography and subsoil geology strongly restrict where installations succeed. On gradients steeper than 5%, stored water tends to race downhill through the gravel base and burst out along the lower kerb, washing out footpaths below. Heavy clay soils pose a different limit: they absorb water so slowly that designers must add perforated pipe drains to stop persistent waterlogging. Traffic loading matters just as much. High-speed arterial roads and heavy freight routes remain predominantly unsuited to porous asphalt, because repeated braking by articulated lorries shears the open-textured binder. Turning wheels at tight bus stops can cause similar surface ruts within months. Planners therefore confine most permeable schemes to low-speed streets, pedestrian plazas, and commuter car parks."
+    },
+    {
+      "label": "F",
+      "text": "Financial barriers have long slowed wider adoption, since permeable paving still costs 20% to 35% more to lay than standard surfacing. Private developers, who rarely pay the downstream cost of flood damage, once had little reason to absorb that gap. However, revised municipal funding models are steadily altering the calculation. Several cities now charge stormwater utility fees tied to each site's sealed roof and driveway footprint. In 2023, two northern authorities introduced a 40% drainage-fee rebate for retail parks replacing sealed parking bays with porous blocks. Early uptake has been strongest among supermarkets and office campuses with large open car parks. Urban hydrologist Dr Claire Finch notes that permeable pavements yield their best return when linked with tree pits and sunken rain gardens, turning isolated street upgrades into a joined-up urban sponge."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_001_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_001_q01",
+          "number": 1,
+          "prompt": "Constructing larger underground drainage tunnels is generally less costly than modifying road surfaces to absorb rain."
+        },
+        {
+          "qid": "p2_001_q02",
+          "number": 2,
+          "prompt": "The majority of stormwater captured by a permeable road is stored in the stone layer below the visible surface."
+        },
+        {
+          "qid": "p2_001_q03",
+          "number": 3,
+          "prompt": "Dr Helen Marsh's four-year monitoring project received financial backing from regional tyre manufacturers."
+        },
+        {
+          "qid": "p2_001_q04",
+          "number": 4,
+          "prompt": "Uncleaned porous surfaces usually keep their original drainage speed for at least five years."
+        },
+        {
+          "qid": "p2_001_q05",
+          "number": 5,
+          "prompt": "Porous asphalt is seldom suitable for heavy freight corridors because frequent lorry braking damages its open structure."
+        },
+        {
+          "qid": "p2_001_q06",
+          "number": 6,
+          "prompt": "Since 2023, retail parks in the two northern authorities have converted more than half of their sealed spaces into porous bays."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "The layered design that captures and slows rainwater"
+        },
+        {
+          "key": "ii",
+          "text": "Field evidence of flood reduction and pollutant removal"
+        },
+        {
+          "key": "iii",
+          "text": "Maintenance neglect and the risk of premature failure"
+        },
+        {
+          "key": "iv",
+          "text": "Site limitations linked to terrain, soil, and traffic"
+        },
+        {
+          "key": "v",
+          "text": "Financial incentives and links with wider green infrastructure"
+        },
+        {
+          "key": "vi",
+          "text": "The role of microorganisms in breaking down vehicle oil"
+        },
+        {
+          "key": "vii",
+          "text": "Why porous surfaces need less upkeep than conventional tarmac"
+        },
+        {
+          "key": "viii",
+          "text": "A universal road design suitable for every urban route"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_001_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p2_001_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p2_001_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p2_001_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p2_001_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "p2_001_g3",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Underneath a permeable street, a deep bed of crushed stone operates as an underground [Q12] that holds stormwater before releasing it gradually. A geotextile sheet sits beneath the stone base to block upward soil movement and capture coarse [Q13] from the runoff. Yet long-term drainage depends on periodic vacuum sweeping; without it, fallen leaves, construction silt, and winter [Q14] block the surface pores and leave the pavement vulnerable to frost damage.",
+      "questions": [
+        {
+          "qid": "p2_001_q12",
+          "number": 12,
+          "prompt": "A deep bed of crushed stone operates as an underground [Q12] that holds stormwater before releasing it gradually."
+        },
+        {
+          "qid": "p2_001_q13",
+          "number": 13,
+          "prompt": "A geotextile sheet sits beneath the stone base to block upward soil movement and capture coarse [Q13] from the runoff."
+        },
+        {
+          "qid": "p2_001_q14",
+          "number": 14,
+          "prompt": "Without vacuum sweeping, fallen leaves, construction silt, and winter [Q14] block the surface pores."
+        }
+      ]
+    }
+  ]
+}

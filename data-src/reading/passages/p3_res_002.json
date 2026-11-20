@@ -1,0 +1,392 @@
+{
+  "id": "rp:p3_res_002",
+  "level": "P3",
+  "reserved": true,
+  "title": "Predictive Policing Models and Spatial Feedback Loops",
+  "subtitle": "Why crime-forecasting software can amplify past enforcement bias unless governed by strict data rules",
+  "topic": "crime",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Over the past fifteen years, urban police forces across Europe and North America have turned steadily toward predictive mapping tools to guide where patrol cars drive on each shift. Borrowing statistical methods first built to forecast seismic aftershocks, these place-based systems scan past incident logs and mark small daily target squares—often no wider than two city blocks—flagged as high-risk zones. Backers praise such software as a sharp break from gut instinct, promising both firmer deterrence and fairer patrol plans led purely by neutral maths. To my mind, however, this claim of mathematical neutrality misses a basic flaw: forecasting models do not watch actual offending directly, but instead learn solely from the administrative records that police agencies themselves create. When past patrol habits shape those records, the software inherits every quiet skew buried inside the archive. That hidden gap between real crime and logged activity sits at the core of the debate."
+    },
+    {
+      "label": "B",
+      "text": "The mechanics of a spatial feedback loop become clear once one traces how extra patrols alter future crime logs. When an algorithm directs more officers into a marked neighbourhood, heightened street visibility naturally turns up more minor offences—such as drug possession, curfew breaches, or traffic infractions—that go largely unseen in lightly patrolled suburbs. Those newly logged arrests then feed straight back into the model's training file overnight. Treating that fresh climb in records as proof of rising street crime, the software assigns an even higher risk score to the exact same blocks during the following week. Criminologist Dr Elena Morales calls this cycle a \"runaway discovery loop\", in which patrol effort poses as true social risk and steadily widens spatial inequality across a city. Over several months, minor initial differences can harden into fixed patrol routines that few staff ever question."
+    },
+    {
+      "label": "C",
+      "text": "Controlled simulations and independent audits have added clear weight to these early warnings. Statistician Professor Malcolm Grant and colleagues built a synthetic city model calibrated with household survey figures on illicit drug use, which occurred at matching rates across wealthy and lower-income wards. When they fed only past arrest logs into a standard predictive system, patrols swiftly clustered inside two already heavily policed precincts, leaving matching offending elsewhere virtually untouched within ninety simulated days. Even when the team tweaked weight settings, the same two zones kept drawing most patrol cars. Defenders of commercial forecasting tools argue that property crimes like home burglary and car theft are reported mainly by victims rather than spotted by officers, making them far less prone to patrol distortion. Even in those categories, however, under-reporting among marginalised groups who distrust local forces can skew baseline maps in subtler yet lasting ways."
+    },
+    {
+      "label": "D",
+      "text": "The effects of flawed forecasting reach far beyond skewed maps into the daily culture of police work. Socio-legal scholar Dr Tariq Haddad interviewed ninety patrol officers across four city forces using dispatch tablets and found widespread automation bias. Junior officers often obeyed red-shaded target boxes even when their own street-level knowledge signalled quiet conditions, fearing supervisory criticism if an incident took place outside an assigned square. At the same time, senior commanders tended to treat closed proprietary risk scores as scientific backing for strict stop-and-search quotas rather than cues for local problem-solving. Rather than freeing officers to apply sound human judgement, rigid software prompts can shrink field discretion and swap community dialogue for repetitive street sweeps. Trust between residents and uniformed staff often erodes fastest in the very wards that need steady public cooperation most."
+    },
+    {
+      "label": "E",
+      "text": "Given these institutional risks, one might expect predictive software to show overwhelming proof of crime cuts to justify its public price tag. Yet careful field trials paint a far more modest picture. In a multi-city review led by criminologist Dr Ingrid Lindholm, two forces using place-based forecasting logged brief drops in car break-ins of roughly six per cent during early trials, while three matched forces showed no meaningful fall compared with classic analyst-drawn maps. Crucially, Lindholm noted that vendor-funded studies often mixed up the effect of the software itself with the simultaneous arrival of extra patrol hours. Without blinded control areas, police chiefs can easily credit a costly algorithm for short-term gains caused simply by placing additional crews onto busy streets. Weak evaluation standards have thus let commercial claims outpace verified public results across many regions."
+    },
+    {
+      "label": "F",
+      "text": "Rejecting spatial data analysis altogether would nonetheless be an overreaction, because sound statistical mapping still helps towns spot real seasonal surges in burglaries or unsafe road junctions. What demands urgent change is the unchecked feedback loop linking officer-led arrests to automated patrol dispatch. In practical terms, police agencies should strip discretionary arrest logs out of predictive training sets, restrict models strictly to verified victim-reported offences, and subject every tool to regular audits by independent civic boards. Equally vital, elevated risk alerts should trigger non-punitive civic responses—such as brighter street lighting, youth outreach, or transit safety—rather than reflexive waves of street stops. Cities that pair clear data rules with public review can gain honest insight while guarding civil rights. Only when open rules and human accountability govern the software can spatial analytics serve public safety without locking past bias into future policing."
+    }
+  ],
+  "wordCount": 849,
+  "questionGroups": [
+    {
+      "groupId": "p3_res_002_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views or claims of the writer in the passage? Write YES, NO, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p3_res_002_q01",
+          "number": 1,
+          "prompt": "Claims that predictive policing tools are mathematically neutral overlook the fact that they rely solely on police-generated records rather than true crime levels.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 558,
+              "end": 793,
+              "quote": "To my mind, however, this claim of mathematical neutrality misses a basic flaw: forecasting models do not watch actual offending directly, but instead learn solely from the administrative records that police agencies themselves create."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "explanationVi": "Tác giả nêu rõ (\"To my mind\") rằng tuyên bố trung lập toán học bỏ qua lỗi cốt lõi là mô hình chỉ học từ hồ sơ do chính cảnh sát tạo ra.",
+          "steps": [
+            "Tìm dấu hiệu quan điểm tác giả \"To my mind\" ở đoạn A.",
+            "Đối chiếu \"rely solely on police-generated records\" với \"learn solely from the administrative records that police agencies themselves create\".",
+            "Trùng khớp hoàn toàn -> YES."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q02",
+          "number": 2,
+          "prompt": "Relying exclusively on victim-reported property offences completely prevents distortion from entering baseline crime maps.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 849,
+              "end": 1003,
+              "quote": "Even in those categories, however, under-reporting among marginalised groups who distrust local forces can skew baseline maps in subtler yet lasting ways."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Câu cuối đoạn C bác bỏ ý \"completely prevents\": ngay cả tội phạm tài sản do nạn nhân báo vẫn bị lệch do tình trạng ít trình báo ở nhóm yếu thế.",
+          "steps": [
+            "Đọc lập luận phản biện cuối đoạn C sau câu nói về property crimes.",
+            "Chú ý từ giới hạn \"completely prevents\" đối lập với \"can skew baseline maps in subtler yet lasting ways\".",
+            "Trái quan điểm tác giả -> NO."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q03",
+          "number": 3,
+          "prompt": "Professor Malcolm Grant's simulation study caused several major police forces to terminate their commercial software contracts immediately.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 310,
+              "end": 539,
+              "quote": "When they fed only past arrest logs into a standard predictive system, patrols swiftly clustered inside two already heavily policed precincts, leaving matching offending elsewhere virtually untouched within ninety simulated days."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn C mô tả kết quả mô phỏng 90 ngày của GS Malcolm Grant nhưng không hề nói lực lượng cảnh sát nào đã hủy hợp đồng phần mềm vì nghiên cứu này.",
+          "steps": [
+            "Tìm tên Professor Malcolm Grant ở đoạn C.",
+            "Kiểm tra xem bài có nói về phản ứng hủy hợp đồng của các sở cảnh sát hay không.",
+            "Không có thông tin -> NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q04",
+          "number": 4,
+          "prompt": "Police agencies ought to abandon all forms of spatial statistical mapping to remove historical bias.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 0,
+              "end": 198,
+              "quote": "Rejecting spatial data analysis altogether would nonetheless be an overreaction, because sound statistical mapping still helps towns spot real seasonal surges in burglaries or unsafe road junctions."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Câu đầu đoạn F khẳng định việc từ bỏ hoàn toàn phân tích dữ liệu không gian sẽ là phản ứng thái quá vì lập bản đồ thống kê chuẩn vẫn hữu ích.",
+          "steps": [
+            "Đọc câu đầu đoạn F trình bày quan điểm của tác giả.",
+            "Đối chiếu \"abandon all forms\" với \"Rejecting spatial data analysis altogether would nonetheless be an overreaction\".",
+            "Mâu thuẫn trực tiếp -> NO."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q05",
+          "number": 5,
+          "prompt": "High-risk alerts from crime models should prompt supportive community interventions rather than automatic increases in street stops.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 556,
+              "end": 748,
+              "quote": "Equally vital, elevated risk alerts should trigger non-punitive civic responses—such as brighter street lighting, youth outreach, or transit safety—rather than reflexive waves of street stops."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "explanationVi": "Đoạn F nêu rõ tác giả cho rằng cảnh báo nguy cơ cao nên kích hoạt các biện pháp dân sự mang tính hỗ trợ thay vì đợt dừng kiểm tra tràn lan.",
+          "steps": [
+            "Đọc câu áp chót đoạn F về \"elevated risk alerts\".",
+            "Đối chiếu \"supportive community interventions\" với \"non-punitive civic responses\" và \"automatic increases in street stops\" với \"reflexive waves of street stops\".",
+            "Khớp hoàn toàn -> YES."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q06",
+          "number": 6,
+          "prompt": "Dr Ingrid Lindholm's multi-city review showed that predictive software is more cost-effective in rural districts than in large metropolitan forces.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 202,
+              "end": 482,
+              "quote": "In a multi-city review led by criminologist Dr Ingrid Lindholm, two forces using place-based forecasting logged brief drops in car break-ins of roughly six per cent during early trials, while three matched forces showed no meaningful fall compared with classic analyst-drawn maps."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn E chỉ tóm tắt đánh giá đa thành phố của TS Lindholm về hiệu quả giảm trộm xe, không hề so sánh khu vực nông thôn với đô thị lớn.",
+          "steps": [
+            "Tìm nghiên cứu của Dr Ingrid Lindholm ở đoạn E.",
+            "Kiểm tra xem bài có nhắc đến vùng nông thôn (rural districts) hay so sánh hiệu quả chi phí không.",
+            "Không có dữ kiện -> NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p3_res_002_g2",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "questions": [
+        {
+          "qid": "p3_res_002_q07",
+          "number": 7,
+          "prompt": "Place-based crime-mapping systems adapt statistical techniques that were first designed to predict ______.",
+          "answer": {
+            "accepted": [
+              "seismic aftershocks",
+              "aftershocks"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 182,
+              "end": 406,
+              "quote": "Borrowing statistical methods first built to forecast seismic aftershocks, these place-based systems scan past incident logs and mark small daily target squares—often no wider than two city blocks—flagged as high-risk zones."
+            }
+          ],
+          "explanationVi": "Đoạn A cho biết thuật toán dự báo tội phạm mượn phương pháp thống kê ban đầu xây dựng để dự đoán dư chấn động đất (seismic aftershocks).",
+          "steps": [
+            "Tìm cụm \"statistical methods first built to forecast\" ở câu 2 đoạn A.",
+            "Trích cụm danh từ theo sau đúng giới hạn tối đa 2 từ: seismic aftershocks."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q08",
+          "number": 8,
+          "prompt": "In Dr Tariq Haddad's study, junior officers followed flagged map squares even on quiet streets because they feared ______.",
+          "answer": {
+            "accepted": [
+              "supervisory criticism",
+              "criticism"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 258,
+              "end": 465,
+              "quote": "Junior officers often obeyed red-shaded target boxes even when their own street-level knowledge signalled quiet conditions, fearing supervisory criticism if an incident took place outside an assigned square."
+            }
+          ],
+          "explanationVi": "Đoạn D ghi rõ cảnh sát trẻ tuân theo ô đỏ dù đường phố yên tĩnh vì lo ngại bị cấp trên phê bình (supervisory criticism).",
+          "steps": [
+            "Tìm tên Dr Tariq Haddad và từ khóa \"Junior officers ... fearing\" ở đoạn D.",
+            "Trích đúng cụm 2 từ theo sau \"fearing\": supervisory criticism."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q09",
+          "number": 9,
+          "prompt": "Dr Ingrid Lindholm pointed out that vendor-funded trials often confused the software's effect with the addition of extra ______.",
+          "answer": {
+            "accepted": [
+              "patrol hours"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 483,
+              "end": 637,
+              "quote": "Crucially, Lindholm noted that vendor-funded studies often mixed up the effect of the software itself with the simultaneous arrival of extra patrol hours."
+            }
+          ],
+          "explanationVi": "Đoạn E chỉ ra các nghiên cứu do nhà cung cấp tài trợ hay lẫn lộn tác động của phần mềm với việc tăng thêm giờ tuần tra (extra patrol hours).",
+          "steps": [
+            "Tìm cụm \"vendor-funded studies\" và \"extra\" ở đoạn E.",
+            "Trích cụm 2 từ nguyên văn theo sau \"extra\": patrol hours."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q10",
+          "number": 10,
+          "prompt": "The writer recommends that every predictive policing model undergo regular inspection by independent ______.",
+          "answer": {
+            "accepted": [
+              "civic boards"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 315,
+              "end": 555,
+              "quote": "In practical terms, police agencies should strip discretionary arrest logs out of predictive training sets, restrict models strictly to verified victim-reported offences, and subject every tool to regular audits by independent civic boards."
+            }
+          ],
+          "explanationVi": "Đoạn F đề xuất mọi công cụ dự báo phải chịu kiểm toán định kỳ bởi các hội đồng dân sự độc lập (independent civic boards).",
+          "steps": [
+            "Tìm cụm \"regular audits by independent\" ở đoạn F.",
+            "Trích cụm 2 từ nguyên văn theo sau \"independent\": civic boards."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p3_res_002_g3",
+      "type": "matching_info",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_res_002_q11",
+          "number": 11,
+          "prompt": "a synthetic modelling experiment showing how patrols concentrate in two precincts within three months",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 310,
+              "end": 539,
+              "quote": "When they fed only past arrest logs into a standard predictive system, patrols swiftly clustered inside two already heavily policed precincts, leaving matching offending elsewhere virtually untouched within ninety simulated days."
+            }
+          ],
+          "explanationVi": "Đoạn C thuật lại mô phỏng thành phố nhân tạo của GS Grant, nơi lực lượng tuần tra dồn vào hai phân khu trong vòng 90 ngày mô phỏng (3 tháng).",
+          "steps": [
+            "Tìm từ khóa \"synthetic\", \"two ... precincts\" và \"ninety simulated days\" (= 3 tháng).",
+            "Khớp chính xác với đoạn C."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q12",
+          "number": 12,
+          "prompt": "evidence that automated dispatch prompts can weaken patrol officers' reliance on their own street knowledge",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 258,
+              "end": 465,
+              "quote": "Junior officers often obeyed red-shaded target boxes even when their own street-level knowledge signalled quiet conditions, fearing supervisory criticism if an incident took place outside an assigned square."
+            }
+          ],
+          "explanationVi": "Đoạn D dẫn phỏng vấn 90 cảnh sát của TS Haddad cho thấy thiên lệch tự động hóa khiến sĩ quan bỏ qua hiểu biết thực địa của chính mình.",
+          "steps": [
+            "Tìm thông tin về \"dispatch tablets\" và \"street-level knowledge\".",
+            "Khớp hoàn toàn với đoạn D."
+          ]
+        },
+        {
+          "qid": "p3_res_002_q13",
+          "number": 13,
+          "prompt": "an account of how newly recorded minor arrests raise a neighbourhood's risk score during the following week",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 368,
+              "end": 629,
+              "quote": "Those newly logged arrests then feed straight back into the model's training file overnight. Treating that fresh climb in records as proof of rising street crime, the software assigns an even higher risk score to the exact same blocks during the following week."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả cơ chế vòng lặp: các vụ bắt giữ mới nạp ngược vào dữ liệu huấn luyện qua đêm khiến phần mềm gán điểm rủi ro cao hơn vào tuần sau.",
+          "steps": [
+            "Tìm cơ chế \"newly logged arrests\" làm tăng \"risk score\" vào tuần kế tiếp.",
+            "Khớp chính xác với đoạn B."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

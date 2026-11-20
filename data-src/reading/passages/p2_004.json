@@ -1,0 +1,552 @@
+{
+  "id": "rp:p2_004",
+  "level": "P2",
+  "title": "Four-Day Rosters in Precision Manufacturing Plants",
+  "subtitle": "What multi-year shop-floor trials reveal about productivity, accuracy, and staff retention in high-skill factories",
+  "topic": "work",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Most public debate over shorter working weeks has centred on software offices and consulting firms. In those settings, staff can trim routine meetings and clear email faster. On the floor of a precision engineering factory—making turbine blades, surgical valves, or optical lenses—output does not respond so simply to faster habits. Costly five-axis milling machines must run for long hours to pay back their high purchase price. Skilled machinists also cannot carry heavy lathes or fine gauges home for remote work. Even so, a growing number of European parts makers have begun testing four-day rosters that keep weekly pay intact while holding output firm. Many firm owners first feared lost orders, yet field results look far more nuanced. Treating industrial shift redesign as a mere copy of office flexibility misses both the real technical obstacles and the unexpected gains revealed by factory trials."
+    },
+    {
+      "label": "B",
+      "text": "Plants adopting shorter weeks rarely lock their gates every Friday. Instead, operations managers generally choose between two clear structural models. The compressed model shifts workers from five eight-hour days to four ten-hour days. That plan keeps a 40-hour total while granting staff a three-day weekend. By contrast, the reduced-hours model trims the working week to 32 or 34 hours on unchanged pay. Managers often pair two overlapping four-day crews so machines keep running six or seven days a week. Industrial sociologist Dr Nadia Benali emphasises that conflating these two arrangements muddies policy debates. Ten-hour shifts cut weekly travel time without reducing total effort. Genuine 32-hour schedules, however, demand deeper changes in workflow, tool setup speed, and downtime control across every line."
+    },
+    {
+      "label": "C",
+      "text": "To test real shop-floor effects, Dr Benali tracked nine mid-sized precision metalworks across three industrial regions between 2021 and 2024. Five plants introduced staggered 34-hour four-day rosters, while four similar sites kept standard five-day schedules. Her team checked payroll logs, scrap bins, and monthly power meters at every site. Over thirty-six months, the shorter-week factories recorded a 28% drop in unscheduled sick leave and a 19% fall in scrap parts caused by operator fatigue during late-week inspection runs. Output per operating hour climbed by roughly 11%. Most of that gain came because teams standardised tool swaps and booked routine checks during quiet shift gaps. Plants that closed entirely on Fridays also shaved nearly 9% off winter heating and compressed-air bills, although continuous-operation sites saw little change in energy demand."
+    },
+    {
+      "label": "D",
+      "text": "Shortened rosters are far from trouble-free, especially when managers rush implementation without redesigning daily routines. In compressed ten-hour trials, error logs from two aerospace suppliers showed a clear rise in minor gauging mistakes during the final ninety minutes of each shift, suggesting that tired eyes undermine the very accuracy these firms sell. Handover friction also rose where overlapping crews shared complex steel lathes: incomplete notes at shift change occasionally forced the incoming machinist to re-verify tolerances from scratch. Small missed details could stall a whole batch for hours. Operations consultant Prof Gareth Owen argues that understaffed four-day plants simply push hidden strain onto middle supervisors. Those team leads often end up spending their nominal day off taking urgent supply calls rather than resting."
+    },
+    {
+      "label": "E",
+      "text": "For many plant directors, the decisive argument for four-day rosters has less to do with hourly speed than with keeping scarce talent. Skilled lathe programmers and metrology technicians are retiring faster than technical colleges replace them, leaving rural factories short of trained hands. Across the nine-plant study, annual staff turnover at four-day sites fell from 16% to under 7% within two years. That drop saved firms months of costly retraining on complex machines. Job adverts promising a guaranteed three-day weekend drew nearly three times as many qualified applicants as nearby five-day competitors paying similar hourly wages. Several veteran staff even delayed retirement by a year or two. Rather than treating shorter weeks as a costly perk, forward-looking owners increasingly view fixed rest as a smart commercial tool for keeping hard-won shop-floor skill."
+    },
+    {
+      "label": "F",
+      "text": "Even with clear staffing gains, four-day work is unlikely to suit every factory niche. Small sub-contractors tied to strict just-in-time automotive deliveries often lack the spare machine capacity or buffer stock needed to absorb a closed Friday, and thin profit margins leave little room to hire extra swing-shift crews. Buyers in that sector often fine suppliers heavily for a single late truck. Moreover, switching rosters succeeds only when workers hold genuine authority to flag bottlenecks and refine setup routines, rather than facing harsh daily quotas set from above. Viewed across the sector, four-day schedules appear most durable not as a simple slogan, but as a careful engineering project. They work best when shorter human hours are paired with smart upkeep and calmer, well-rested staff."
+    }
+  ],
+  "wordCount": 771,
+  "glossary": [
+    {
+      "term": "milling machines",
+      "meaningVi": "máy phay công nghiệp dùng để gia công chính xác chi tiết kim loại"
+    },
+    {
+      "term": "gauging",
+      "meaningVi": "công đoạn đo kiểm kích thước và dung sai kỹ thuật của chi tiết gia công"
+    },
+    {
+      "term": "tolerances",
+      "meaningVi": "dung sai cho phép về kích thước trong sản xuất cơ khí chính xác"
+    },
+    {
+      "term": "metrology",
+      "meaningVi": "ngành đo lường kỹ thuật có độ chính xác cao trong công nghiệp"
+    },
+    {
+      "term": "just-in-time deliveries",
+      "meaningVi": "mô hình giao linh kiện đúng thời điểm sản xuất, hạn chế tối đa tồn kho đệm"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_004_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the claims of the writer in the passage? Choose YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p2_004_q01",
+          "number": 1,
+          "prompt": "Precision factories can shorten their working week by simply copying the time-saving habits used in office trials.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 743,
+              "end": 908,
+              "quote": "Treating industrial shift redesign as a mere copy of office flexibility misses both the real technical obstacles and the unexpected gains revealed by factory trials."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn A khẳng định năng suất nhà máy không tăng đơn giản nhờ thói quen làm nhanh hơn và việc sao chép mô hình văn phòng bỏ qua các trở ngại kỹ thuật thực tế. Ý kiến câu hỏi trái với tác giả nên chọn NO.",
+          "steps": [
+            "Đọc đoạn A nơi tác giả so sánh văn phòng với nhà máy cơ khí chính xác.",
+            "Chú ý câu chốt bác bỏ việc coi tái thiết kế ca nhà máy như 'a mere copy of office flexibility'.",
+            "Trái ngược với quan điểm tác giả nên chọn NO."
+          ]
+        },
+        {
+          "qid": "p2_004_q02",
+          "number": 2,
+          "prompt": "Treating compressed ten-hour schedules and genuine 32-hour weeks as the same policy creates confusion in public discussion.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 508,
+              "end": 620,
+              "quote": "Industrial sociologist Dr Nadia Benali emphasises that conflating these two arrangements muddies policy debates."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "explanationVi": "Đoạn B dẫn lập luận đồng thuận rằng gộp chung hai mô hình 10 giờ/ngày và 32 giờ/tuần làm rối các cuộc tranh luận chính sách ('muddies policy debates'). Khớp với nhận định nên chọn YES.",
+          "steps": [
+            "Tìm phần phân biệt hai mô hình ca làm việc ở đoạn B.",
+            "Đối chiếu 'conflating these two arrangements muddies policy debates' với 'creates confusion in public discussion'.",
+            "Ý khớp trực tiếp nên chọn YES."
+          ]
+        },
+        {
+          "qid": "p2_004_q03",
+          "number": 3,
+          "prompt": "Continuous-operation factories spent more on preventative maintenance equipment than plants that closed every Friday.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 693,
+              "end": 870,
+              "quote": "Plants that closed entirely on Fridays also shaved nearly 9% off winter heating and compressed-air bills, although continuous-operation sites saw little change in energy demand."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn C có nhắc bảo trì định kỳ trong lúc giao ca và so sánh chi phí năng lượng giữa hai nhóm nhà máy, nhưng không hề so sánh chi phí mua thiết bị bảo trì. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm cụm 'continuous-operation sites' và 'closed entirely on Fridays' ở đoạn C.",
+            "Xác nhận bài chỉ so sánh hóa đơn năng lượng chứ không nói về chi phí thiết bị bảo trì.",
+            "Không có dữ kiện để xác minh nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_004_q04",
+          "number": 4,
+          "prompt": "Extending factory shifts to ten hours typically improves inspection accuracy during the closing stage of a shift.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 126,
+              "end": 362,
+              "quote": "In compressed ten-hour trials, error logs from two aerospace suppliers showed a clear rise in minor gauging mistakes during the final ninety minutes of each shift, suggesting that tired eyes undermine the very accuracy these firms sell."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn D chỉ ra các thử nghiệm ca 10 giờ ghi nhận sự gia tăng lỗi đo kiểm trong 90 phút cuối ca do mỏi mắt, làm suy giảm độ chính xác. Nhận định đảo ngược kết quả nên chọn NO.",
+          "steps": [
+            "Định vị kết quả thử nghiệm ca nén 10 giờ ở đoạn D.",
+            "Đọc chi tiết 'clear rise in minor gauging mistakes during the final ninety minutes'.",
+            "Trái ngược với 'improves inspection accuracy' nên chọn NO."
+          ]
+        },
+        {
+          "qid": "p2_004_q05",
+          "number": 5,
+          "prompt": "Technical colleges have already begun expanding intake to replace retiring metrology technicians.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 135,
+              "end": 292,
+              "quote": "Skilled lathe programmers and metrology technicians are retiring faster than technical colleges replace them, leaving rural factories short of trained hands."
+            }
+          ],
+          "trapType": "keyword_echo",
+          "explanationVi": "Đoạn E chỉ nêu kỹ thuật viên đo lường đang nghỉ hưu nhanh hơn tốc độ đào tạo thay thế của các trường kỹ thuật, nhưng không nói các trường đã bắt đầu mở rộng chỉ tiêu hay chưa. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm cụm 'technical colleges' và 'metrology technicians' ở đoạn E.",
+            "Kiểm tra xem bài có đề cập kế hoạch hay hành động tăng chỉ tiêu tuyển sinh của các trường không.",
+            "Không có thông tin này trong bài nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_004_q06",
+          "number": 6,
+          "prompt": "Four-day factory timetables are more likely to succeed when shop-floor workers have genuine power to identify bottlenecks and adjust routines.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 398,
+              "end": 576,
+              "quote": "Moreover, switching rosters succeeds only when workers hold genuine authority to flag bottlenecks and refine setup routines, rather than facing harsh daily quotas set from above."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn F khẳng định việc chuyển đổi lịch làm việc chỉ thành công khi công nhân có thực quyền báo cáo điểm nghẽn và tinh chỉnh quy trình chuẩn bị. Quan điểm hoàn toàn trùng khớp nên chọn YES.",
+          "steps": [
+            "Đọc điều kiện thành công của việc chuyển ca ở đoạn F.",
+            "Đối chiếu 'genuine authority to flag bottlenecks and refine setup routines' với câu hỏi.",
+            "Đồng nhất với lập luận của tác giả nên chọn YES."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_004_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why factory trials differ fundamentally from office-based schedules"
+        },
+        {
+          "key": "ii",
+          "text": "Two distinct ways factories structure a four-day week"
+        },
+        {
+          "key": "iii",
+          "text": "Measured gains in attendance, part quality, and energy bills"
+        },
+        {
+          "key": "iv",
+          "text": "Fatigue, handover friction, and hidden pressure on supervisors"
+        },
+        {
+          "key": "v",
+          "text": "Using shorter weeks to attract and keep scarce technical staff"
+        },
+        {
+          "key": "vi",
+          "text": "How ten-hour shifts eliminate late-day gauging mistakes"
+        },
+        {
+          "key": "vii",
+          "text": "Why continuous-operation sites cut heating costs most sharply"
+        },
+        {
+          "key": "viii",
+          "text": "Evidence that automotive suppliers lead the switch to closed Fridays"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_004_q07",
+          "number": 7,
+          "prompt": "Paragraph A",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "A",
+            "start": 175,
+            "end": 332,
+            "quote": "On the floor of a precision engineering factory—making turbine blades, surgical valves, or optical lenses—output does not respond so simply to faster habits."
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 175,
+              "end": 332,
+              "quote": "On the floor of a precision engineering factory—making turbine blades, surgical valves, or optical lenses—output does not respond so simply to faster habits."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Hai mô hình xếp ca 4 ngày được phân tích ở đoạn B kế tiếp."
+            },
+            {
+              "key": "viii",
+              "type": "too_broad",
+              "whyVi": "Đoạn A không hề nhắc đến nhà cung ứng ô tô mà đối chiếu môi trường nhà máy với văn phòng."
+            }
+          ],
+          "explanationVi": "Đoạn A đối lập điều kiện vận hành máy móc trong nhà máy cơ khí chính xác với văn phòng, nhấn mạnh không thể sao chép máy móc mô hình linh hoạt văn phòng. Chọn tiêu đề i.",
+          "steps": [
+            "Đọc đoạn A và xác định trục so sánh chính: văn phòng (software offices) với nhà máy (precision engineering factory).",
+            "Loại tiêu đề ii thuộc đoạn B và tiêu đề viii sai chủ thể.",
+            "Chọn tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p2_004_q08",
+          "number": 8,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 68,
+            "end": 150,
+            "quote": "Instead, operations managers generally choose between two clear structural models."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 68,
+              "end": 150,
+              "quote": "Instead, operations managers generally choose between two clear structural models."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Sự khác biệt giữa nhà máy và văn phòng là ý chính của đoạn A."
+            },
+            {
+              "key": "vi",
+              "type": "keyword_match",
+              "whyVi": "Đoạn B chỉ giới thiệu khái niệm ca nén 10 giờ, không bàn về lỗi đo kiểm cuối ca."
+            }
+          ],
+          "explanationVi": "Đoạn B phân biệt hai mô hình tuần 4 ngày là nén 4x10 giờ và giảm thực xuống 32–34 giờ, cùng cảnh báo không nên đánh đồng chúng. Tiêu đề ii khái quát chính xác.",
+          "steps": [
+            "Xác định câu chủ đề ở đầu đoạn B nhắc tới 'two clear structural models'.",
+            "Kiểm tra hai mô hình được mô tả kế tiếp: compressed model và reduced-hours model.",
+            "Chọn tiêu đề ii."
+          ]
+        },
+        {
+          "qid": "p2_004_q09",
+          "number": 9,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "iii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 343,
+            "end": 530,
+            "quote": "Over thirty-six months, the shorter-week factories recorded a 28% drop in unscheduled sick leave and a 19% fall in scrap parts caused by operator fatigue during late-week inspection runs."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 343,
+              "end": 530,
+              "quote": "Over thirty-six months, the shorter-week factories recorded a 28% drop in unscheduled sick leave and a 19% fall in scrap parts caused by operator fatigue during late-week inspection runs."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C ghi rõ các nhà máy chạy liên tục ít thay đổi về năng lượng, chỉ nơi đóng cửa thứ Sáu mới giảm gần 9% hóa đơn."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Mệt mỏi, lỗi giao ca và áp lực lên giám sát thuộc đoạn D."
+            }
+          ],
+          "explanationVi": "Đoạn C tổng hợp số liệu khảo sát 36 tháng cho thấy giảm 28% nghỉ ốm, giảm 19% phế phẩm và tiết kiệm gần 9% chi phí năng lượng ở nơi nghỉ thứ Sáu. Chọn tiêu đề iii.",
+          "steps": [
+            "Liệt kê ba kết quả đo được ở đoạn C: nghỉ ốm (attendance), phế phẩm (part quality) và chi phí sưởi/khí nén (energy bills).",
+            "Loại tiêu đề vii vì gán sai nhóm nhà máy tiết kiệm năng lượng.",
+            "Chọn tiêu đề iii."
+          ]
+        },
+        {
+          "qid": "p2_004_q10",
+          "number": 10,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 125,
+            "quote": "Shortened rosters are far from trouble-free, especially when managers rush implementation without redesigning daily routines."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 125,
+              "quote": "Shortened rosters are far from trouble-free, especially when managers rush implementation without redesigning daily routines."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn D nêu ca 10 giờ làm tăng lỗi đo kiểm cuối ca chứ không hề loại bỏ lỗi."
+            },
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Lợi thế tuyển dụng và giữ chân nhân sự kỹ thuật nằm ở đoạn E kế tiếp."
+            }
+          ],
+          "explanationVi": "Đoạn D nêu ba rủi ro khi triển khai vội vàng: mỏi mắt cuối ca 10 giờ, trục trặc bàn giao ca và áp lực ẩn đè lên quản lý cấp trung. Tiêu đề iv bao quát đủ ba điểm.",
+          "steps": [
+            "Đọc ba hệ quả tiêu cực trong đoạn D: lỗi đo kiểm do mệt, ghi chú giao ca thiếu và giám sát viên bị gọi vào ngày nghỉ.",
+            "Loại tiêu đề vi vì ngược nghĩa hoàn toàn.",
+            "Chọn tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p2_004_q11",
+          "number": 11,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 0,
+            "end": 134,
+            "quote": "For many plant directors, the decisive argument for four-day rosters has less to do with hourly speed than with keeping scarce talent."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 0,
+              "end": 134,
+              "quote": "For many plant directors, the decisive argument for four-day rosters has less to do with hourly speed than with keeping scarce talent."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Rủi ro mệt mỏi và áp lực giám sát nằm ở đoạn D trước đó."
+            },
+            {
+              "key": "viii",
+              "type": "too_broad",
+              "whyVi": "Đoạn E tập trung vào tuyển dụng và giữ chân thợ kỹ thuật, không bàn về chuỗi cung ứng ô tô."
+            }
+          ],
+          "explanationVi": "Đoạn E chỉ ra lợi ích then chốt là giảm tỷ lệ nghỉ việc từ 16% xuống dưới 7% và tăng gần gấp ba lượng ứng viên đạt chuẩn cho các vị trí kỹ thuật khan hiếm. Chọn tiêu đề v.",
+          "steps": [
+            "Đọc câu đầu đoạn E nhấn mạnh việc giữ nhân tài khan hiếm và số liệu ứng viên tăng gần gấp ba.",
+            "Loại các tiêu đề thuộc đoạn khác.",
+            "Chọn tiêu đề v."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_004_g3",
+      "type": "matching_info",
+      "instructions": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_004_q12",
+          "number": 12,
+          "prompt": "an explanation of why small automotive suppliers may struggle to adopt a four-day schedule",
+          "answer": {
+            "key": "F"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 87,
+              "end": 321,
+              "quote": "Small sub-contractors tied to strict just-in-time automotive deliveries often lack the spare machine capacity or buffer stock needed to absorb a closed Friday, and thin profit margins leave little room to hire extra swing-shift crews."
+            }
+          ],
+          "explanationVi": "Chỉ đoạn F giải thích các nhà thầu phụ ô tô nhỏ bị ràng buộc bởi lịch giao hàng đúng lúc, thiếu công suất dự phòng và biên lợi nhuận mỏng nên khó áp dụng tuần 4 ngày. Chọn F.",
+          "steps": [
+            "Quét từ khoá về nhà cung ứng ô tô nhỏ ('small sub-contractors', 'automotive deliveries').",
+            "Tìm thấy lời giải thích đầy đủ duy nhất ở đoạn F.",
+            "Chọn F."
+          ]
+        },
+        {
+          "qid": "p2_004_q13",
+          "number": 13,
+          "prompt": "a comparison of the number of qualified job applicants attracted by four-day and five-day employers",
+          "answer": {
+            "key": "E"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 477,
+              "end": 642,
+              "quote": "Job adverts promising a guaranteed three-day weekend drew nearly three times as many qualified applicants as nearby five-day competitors paying similar hourly wages."
+            }
+          ],
+          "explanationVi": "Đoạn E nêu tin tuyển dụng hứa hẹn cuối tuần 3 ngày thu hút số ứng viên đủ chuẩn cao gấp gần ba lần các đối thủ làm 5 ngày có mức lương tương đương. Chọn E.",
+          "steps": [
+            "Tìm thông tin về ứng viên xin việc và tin tuyển dụng ('job adverts', 'qualified applicants').",
+            "Xác nhận phép so sánh gần gấp ba lần nằm duy nhất ở đoạn E.",
+            "Chọn E."
+          ]
+        },
+        {
+          "qid": "p2_004_q14",
+          "number": 14,
+          "prompt": "a reference to extra work caused when outgoing shift crews leave incomplete written records",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 363,
+              "end": 557,
+              "quote": "Handover friction also rose where overlapping crews shared complex steel lathes: incomplete notes at shift change occasionally forced the incoming machinist to re-verify tolerances from scratch."
+            }
+          ],
+          "explanationVi": "Đoạn D mô tả ghi chú bàn giao ca không đầy đủ đôi khi buộc thợ ca sau phải đo kiểm lại toàn bộ dung sai từ đầu. Chọn D.",
+          "steps": [
+            "Tìm chi tiết về ghi chú giao ca ('incomplete notes at shift change') và công việc phát sinh.",
+            "Xác định thông tin này chỉ xuất hiện ở đoạn D.",
+            "Chọn D."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

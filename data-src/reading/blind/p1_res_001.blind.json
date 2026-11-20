@@ -1,0 +1,166 @@
+{
+  "id": "rp:p1_res_001",
+  "level": "P1",
+  "reserved": true,
+  "title": "Aerodynamic Fabrics in Endurance Cycling Apparel",
+  "subtitle": "How micro-textured textiles reshape airflow, comfort, and speed over long road stages",
+  "topic": "sport",
+  "wordCount": 740,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Once a road cyclist rides faster than 30 kilometres per hour on flat ground, air resistance absorbs more than 80 per cent of the power required to hold that pace. For several decades, engineers concentrated their efforts on carbon frames, deep wheel rims, and smooth helmets, assuming that clothing played only a minor role in total speed. Yet wind-tunnel measurements reveal a striking balance. The human body generates roughly two-thirds of the overall drag of a rider and bicycle combined. In recent years, sports textile specialists have realised that subtle changes to the surface texture of jerseys and shorts can save vital minutes across long road stages. Remarkably, these measurable gains demand no extra physical output from the athlete. For endurance riders racing five hours a day, even a small drop in drag can separate a stage winner from the chasing pack."
+    },
+    {
+      "label": "B",
+      "text": "At first glance, a completely smooth garment might seem like the fastest option in moving air. Fluid physics, however, reveals the opposite effect. Smooth cloth allows air flowing over curved arms and shoulders to break away too early, leaving a wide zone of low pressure behind the rider, known as a wake, which pulls the cyclist backwards. By knitting narrow lengthwise ribs or shallow dimples into sleeve panels, designers trigger a thin layer of controlled turbulence right next to the skin. This active flow clings to the curved limb for longer before it separates. Consequently, the wake shrinks behind the rider and total drag falls by between four and seven per cent at competitive race speeds."
+    },
+    {
+      "label": "C",
+      "text": "No single weave performs well across the entire body, so modern cycling apparel relies on careful anatomical mapping. Wind-tunnel trials led by Dr Helen Marsh at a northern sports engineering lab showed that air moves differently around round limbs than across wider areas such as the chest and upper back. Sleeves and calves respond best to raised ridges set across the path of the oncoming wind, whereas the front panel requires a tight, low-porosity knit that prevents air from entering and puffing out the shirt. Such small panel choices add up quickly across a long stage. Even seam placement acts as a critical factor in final output. Shifting shoulder stitching 2 centimetres backwards moves a sharp ridge away from the narrow band where air velocity peaks."
+    },
+    {
+      "label": "D",
+      "text": "A textured cloth tuned for one velocity can easily slow down a rider travelling at another, creating a tricky calibration challenge for brands. During a flat time trial at 52 kilometres per hour, deep ribbed sleeves reduce drag sharply and justify their complex knit structure. On a steep mountain climb at 18 kilometres per hour, however, those same pronounced ridges add excess surface friction without triggering a useful boundary-layer shift. Performance analyst Martin Lindholm studied club cyclists who averaged 32 kilometres per hour across endurance rides. He discovered that they gained almost nothing from professional skinsuits engineered for elite pace. Makers have therefore begun issuing graded fabric ranges tailored to specific speed bands rather than promoting one universal suit. Club riders can then choose cloth matched to their own normal cruising pace."
+    },
+    {
+      "label": "E",
+      "text": "A four-hour summer road stage exposes a practical limitation that brief wind-tunnel trials rarely capture. Dense synthetic knits that block air from entering also trap body heat and sweat inside the garment. Core temperature soon climbs, speeding up muscular fatigue. Textile engineer Priya Nair argues that a modest three-watt drag saving means very little if heat stress compels a rider to drop twenty watts during the final hour. To resolve this conflict between speed and thermal comfort, modern endurance jerseys pair textured sleeves with open mesh back panels. Many designs also feature sweat-wicking yarns coated with tiny mineral specks that accelerate evaporation while preserving a snug fit."
+    },
+    {
+      "label": "F",
+      "text": "As textile innovation sped ahead, world cycling bodies stepped in to protect fair competition and prevent gear from overshadowing human effort. Officials wanted road races to stay a clear test of fitness and tactics. Updated rules restrict the maximum height of fabric ridges to one millimetre, and they prohibit rigid inserts glued inside clothing to alter a rider's body shape. Meanwhile, everyday buyers confront a more mundane constraint during regular use. Ultra-thin aerodynamic fabrics snag easily on rough surfaces and tend to lose their tight fit after roughly 40 washes. Nevertheless, researchers expect future progress to centre on recyclable stretch fibres that retain both their aerodynamic profile and mechanical strength across several full seasons of outdoor training."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p1_res_001_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_res_001_q01",
+          "number": 1,
+          "prompt": "Most of the aerodynamic resistance produced by a cyclist and bicycle together comes from the rider's body."
+        },
+        {
+          "qid": "p1_res_001_q02",
+          "number": 2,
+          "prompt": "Completely smooth sleeve cloth keeps airflow attached to a cyclist's arms longer than textured fabrics do."
+        },
+        {
+          "qid": "p1_res_001_q03",
+          "number": 3,
+          "prompt": "Dr Helen Marsh's laboratory tested smooth cycling helmets alongside jerseys during the same wind-tunnel trials."
+        },
+        {
+          "qid": "p1_res_001_q04",
+          "number": 4,
+          "prompt": "Skinsuits developed for elite racing speeds bring minimal aerodynamic benefit to slower amateur riders."
+        },
+        {
+          "qid": "p1_res_001_q05",
+          "number": 5,
+          "prompt": "Current cycling regulations permit stiff inserts to be attached inside garments to improve a rider's shape."
+        },
+        {
+          "qid": "p1_res_001_q06",
+          "number": 6,
+          "prompt": "Recyclable stretch fibres currently cost more to produce than conventional synthetic cycling fabrics."
+        }
+      ]
+    },
+    {
+      "groupId": "p1_res_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why smooth garments were banned from professional races"
+        },
+        {
+          "key": "ii",
+          "text": "Matching different textiles to distinct areas of the body"
+        },
+        {
+          "key": "iii",
+          "text": "Reconciling aerodynamic gains with heat control"
+        },
+        {
+          "key": "iv",
+          "text": "How textured sleeves manipulate airflow around moving limbs"
+        },
+        {
+          "key": "v",
+          "text": "Early milestones in bicycle frame engineering"
+        },
+        {
+          "key": "vi",
+          "text": "Official restrictions and durability limits on future apparel"
+        },
+        {
+          "key": "vii",
+          "text": "Why fabric efficiency depends on a cyclist's riding speed"
+        },
+        {
+          "key": "viii",
+          "text": "How mineral coatings make endurance jerseys lighter"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_res_001_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p1_res_001_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p1_res_001_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p1_res_001_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p1_res_001_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "p1_res_001_g3",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "questions": [
+        {
+          "qid": "p1_res_001_q12",
+          "number": 12,
+          "prompt": "Moving shoulder stitching backwards by ______ centimetres keeps the seam away from the zone of peak airflow."
+        },
+        {
+          "qid": "p1_res_001_q13",
+          "number": 13,
+          "prompt": "Mineral specks coated onto sweat-wicking yarns help cool endurance cyclists by speeding up ______."
+        },
+        {
+          "qid": "p1_res_001_q14",
+          "number": 14,
+          "prompt": "Very thin aerodynamic cycling fabrics generally lose their tight fit after approximately ______ washes."
+        }
+      ]
+    }
+  ]
+}

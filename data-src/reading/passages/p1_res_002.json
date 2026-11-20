@@ -1,0 +1,397 @@
+{
+  "id": "rp:p1_res_002",
+  "level": "P1",
+  "reserved": true,
+  "title": "Lunar Regolith Bricks for Extraterrestrial Shelters",
+  "subtitle": "How engineers plan to bake moon dust into radiation-shielding masonry for future bases",
+  "topic": "space",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Transporting a single kilogram of building supply from Earth to the lunar surface costs tens of thousands of pounds, making ready-made metal modules impractical for permanent outposts. Mission planners therefore favour local resource utilisation, a practical strategy that relies on raw materials already lying at the landing site. Across most of the Moon, the ground sits beneath a deep layer of regolith. This fine soil consists of crushed volcanic rock and tiny glass fragments formed by billions of years of meteorite impacts. Converting such abundant loose dust into solid building blocks could reduce launch mass sharply. At the same time, thick dust walls would shield crews from cosmic radiation and high-speed micrometeorites. Such local construction could turn brief visits into lasting stays."
+    },
+    {
+      "label": "B",
+      "text": "Before engineers can mould regolith into reliable bricks, they must contend with its unusual physical behaviour. Because the Moon lacks wind and flowing water to smooth sharp corners, individual dust grains stay jagged and highly abrasive under a lens. In the hard vacuum of space, solar ultraviolet light also gives the powder a static charge, causing tiny grains to cling tightly to spacesuits, rubber seals, and optical lenses. Over long missions, this clinging dust can jam airlock hatches and scratch visor glass. In addition, regolith differs in chemical composition between the dark lava plains known as maria and the brighter highland regions. Any practical brick machine must therefore handle mixed grain sizes and relentless wear on its moving parts."
+    },
+    {
+      "label": "C",
+      "text": "One clear fabrication method uses focused sunlight rather than chemical glue flown from Earth. In laboratory trials led by Dr Claire Brennan, researchers used crushed dark earth that closely mimics real moon dust. Curved mirrors focus solar rays onto a narrow spot, raising the powder to roughly 1,100 degrees Celsius. At that temperature, the outer edges of adjacent grains partly melt and fuse together, a process called sintering. A robot arm sweeps the hot beam across thin successive layers, forming a linked brick without any water or binding resin. The finished blocks withstand compressive loads comparable to common fired clay bricks on Earth, though baking one unit currently takes nearly five hours. Slow output means teams would need several mirror units working side by side."
+    },
+    {
+      "label": "D",
+      "text": "In search of faster production rates, a separate research team under Professor Kenji Takahashi has tested microwave energy as an alternative heat source. Real moon dust holds tiny flecks of metallic iron formed through constant solar-wind strikes, and those grains absorb microwaves remarkably well. Instead of warming a brick slowly from the outer skin inwards, microwaves heat the core and surface almost at the same moment, cutting baking time to less than 40 minutes per block. Yet uneven patches of iron inside the raw soil can trigger localised hot spots that warp the shape or leave internal cracks. A single flawed block could weaken an entire wall section. The group is now testing spinning chambers and tuned beams to spread thermal energy more evenly across each mould."
+    },
+    {
+      "label": "E",
+      "text": "Even well-sintered bricks face harsh trials once crews stack them into a real dome. Over a single lunar day and night lasting roughly 29 Earth days, ground heat swings from 120 degrees Celsius in full sun down to minus 170 degrees in shadow. Rigid mortar joints would fracture rapidly under such wide cycles of thermal expansion and shrinking. Structural designer Nadia Osei consequently suggests dry-stacked bricks shaped with notched edges that lock firmly without cement. Under her design, an inflatable polymer dome sits inside the masonry vault to retain breathable air. Meanwhile, the thick regolith shell buffers extreme temperature swings, absorbs harmful radiation, and guards the thin inner liner against space debris. If one outer block cracks, crews can replace it from outside."
+    },
+    {
+      "label": "F",
+      "text": "Despite steady laboratory advances, large-scale building work on the Moon still confronts major practical hurdles. Vacuum-chamber tests reveal that baked bricks cool in odd ways when no surrounding air exists to carry warmth away, which can leave brittle outer crusts. Operating autonomous rovers to scoop, sieve, and stack thousands of heavy blocks also demands dependable electrical power during the two-week lunar night, when solar panels fall idle. Engineers may need compact nuclear power units or large fuel cells to keep work moving in the dark. Even so, mission planners intend to fly compact test furnaces aboard upcoming robot landers to bake small test tiles directly on the lunar soil. Data gathered from those field runs will clarify whether dust-made walls can anchor the first long-term human outpost beyond Earth."
+    }
+  ],
+  "wordCount": 745,
+  "questionGroups": [
+    {
+      "groupId": "p1_res_002_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_res_002_q01",
+          "number": 1,
+          "prompt": "The high cost of launching materials from Earth makes ready-made metal structures unsuitable for permanent lunar bases.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 0,
+              "end": 184,
+              "quote": "Transporting a single kilogram of building supply from Earth to the lunar surface costs tens of thousands of pounds, making ready-made metal modules impractical for permanent outposts."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Câu đầu đoạn A khẳng định chi phí vận chuyển đắt đỏ khiến các mô-đun kim loại đúc sẵn không khả thi cho căn cứ lâu dài.",
+          "steps": [
+            "Đọc câu đầu đoạn A nói về chi phí vận chuyển vật liệu từ Trái Đất.",
+            "Đối chiếu \"unsuitable for permanent lunar bases\" với \"impractical for permanent outposts\".",
+            "Quan hệ nhân quả và nội dung khớp hoàn toàn -> TRUE."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q02",
+          "number": 2,
+          "prompt": "Lunar regolith has the same chemical composition in both the dark plains and the highland regions.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 519,
+              "end": 651,
+              "quote": "In addition, regolith differs in chemical composition between the dark lava plains known as maria and the brighter highland regions."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn B nêu rõ lớp đất regolith có thành phần hóa học khác nhau giữa vùng đồng bằng dung nham tối màu và vùng cao nguyên sáng hơn.",
+          "steps": [
+            "Tìm thông tin về \"chemical composition\" trong đoạn B.",
+            "So sánh \"has the same\" trong câu hỏi với \"differs in chemical composition\" trong bài.",
+            "Mâu thuẫn trực tiếp -> FALSE."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q03",
+          "number": 3,
+          "prompt": "Dr Claire Brennan's team has already tested its curved mirror furnace inside an orbiting spacecraft.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 95,
+              "end": 213,
+              "quote": "In laboratory trials led by Dr Claire Brennan, researchers used crushed dark earth that closely mimics real moon dust."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn C chỉ đề cập thử nghiệm trong phòng thí nghiệm dùng đất giả lập, không nhắc gì đến việc thử trên tàu vũ trụ ngoài quỹ đạo.",
+          "steps": [
+            "Định vị tên Dr Claire Brennan ở đoạn C.",
+            "Kiểm tra xem bài có xác nhận hay phủ nhận việc thử nghiệm trên tàu quỹ đạo không.",
+            "Không có thông tin liên quan -> NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q04",
+          "number": 4,
+          "prompt": "Microwave heating can produce lunar regolith bricks faster than the concentrated sunlight method.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 556,
+              "end": 710,
+              "quote": "The finished blocks withstand compressive loads comparable to common fired clay bricks on Earth, though baking one unit currently takes nearly five hours."
+            },
+            {
+              "paragraph": "D",
+              "start": 300,
+              "end": 481,
+              "quote": "Instead of warming a brick slowly from the outer skin inwards, microwaves heat the core and surface almost at the same moment, cutting baking time to less than 40 minutes per block."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn C ghi nung bằng ánh sáng mặt trời mất gần 5 giờ mỗi viên, còn đoạn D cho thấy nung vi sóng rút xuống dưới 40 phút.",
+          "steps": [
+            "Tìm thời gian sản xuất gạch bằng ánh sáng mặt trời ở cuối đoạn C (gần 5 giờ).",
+            "So sánh với thời gian của phương pháp vi sóng ở đoạn D (dưới 40 phút).",
+            "Phương pháp vi sóng nhanh hơn rõ rệt -> TRUE."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q05",
+          "number": 5,
+          "prompt": "In Nadia Osei's shelter design, the outer regolith shell alone keeps breathable air sealed inside the habitat.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 475,
+              "end": 575,
+              "quote": "Under her design, an inflatable polymer dome sits inside the masonry vault to retain breathable air."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Theo đoạn E, phần giữ không khí thở là vòm polymer bơm hơi bên trong chứ không phải riêng lớp vỏ gạch regolith bên ngoài.",
+          "steps": [
+            "Tìm tên Nadia Osei ở đoạn E và đọc phần chức năng của từng lớp công trình.",
+            "Chú ý từ giới hạn \"alone\" trong câu hỏi đối lập với vai trò của \"inflatable polymer dome\".",
+            "Phát biểu sai sự thật -> FALSE."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q06",
+          "number": 6,
+          "prompt": "The polymer domes proposed for lunar habitats have already undergone long-term radiation trials on Earth.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 475,
+              "end": 575,
+              "quote": "Under her design, an inflatable polymer dome sits inside the masonry vault to retain breathable air."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn E có nhắc vòm polymer bơm hơi trong thiết kế nơi trú ẩn nhưng không hề cho biết nó đã qua thử nghiệm bức xạ dài hạn hay chưa.",
+          "steps": [
+            "Tìm cụm \"polymer dome\" trong đoạn E.",
+            "Đọc kỹ xem bài có nói về quá trình thử nghiệm vòm polymer dưới bức xạ không.",
+            "Không có thông tin -> NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p1_res_002_g2",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Engineers are investigating two main heating methods to turn moon dust into durable building blocks. In solar sintering, curved mirrors focus solar rays onto loose powder so that neighbouring grains fuse without requiring water or binding [Q7]. Although the finished blocks are strong under compression, each brick takes hours to bake. A faster technique uses microwaves, which are readily absorbed by tiny flecks of metallic [Q8] contained in real moon dust. Heating from inside and outside at once cuts production time sharply, yet uneven iron patches can warp the shape or leave internal [Q9]. Once fabricated, notched dry-stacked bricks could lock together without [Q10] around an inflatable inner dome to form a protective lunar shelter.",
+      "questions": [
+        {
+          "qid": "p1_res_002_q07",
+          "number": 7,
+          "prompt": "Blank [Q7]",
+          "answer": {
+            "accepted": [
+              "resin"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 434,
+              "end": 555,
+              "quote": "A robot arm sweeps the hot beam across thin successive layers, forming a linked brick without any water or binding resin."
+            }
+          ],
+          "explanationVi": "Đoạn C ghi rõ gạch liên kết được tạo thành mà không cần nước hay nhựa kết dính (binding resin).",
+          "steps": [
+            "Tìm đoạn nói về solar sintering (đoạn C) và cụm \"without any water or binding\".",
+            "Trích đúng 1 danh từ nguyên văn theo sau \"binding\": resin."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q08",
+          "number": 8,
+          "prompt": "Blank [Q8]",
+          "answer": {
+            "accepted": [
+              "iron"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 154,
+              "end": 299,
+              "quote": "Real moon dust holds tiny flecks of metallic iron formed through constant solar-wind strikes, and those grains absorb microwaves remarkably well."
+            }
+          ],
+          "explanationVi": "Đoạn D nêu bụi Mặt Trăng thật chứa các hạt cực nhỏ sắt kim loại (metallic iron) hấp thụ vi sóng rất tốt.",
+          "steps": [
+            "Định vị phần microwave ở đoạn D và cụm \"metallic\".",
+            "Lấy danh từ nguyên văn đi sau: iron."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q09",
+          "number": 9,
+          "prompt": "Blank [Q9]",
+          "answer": {
+            "accepted": [
+              "cracks"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 482,
+              "end": 606,
+              "quote": "Yet uneven patches of iron inside the raw soil can trigger localised hot spots that warp the shape or leave internal cracks."
+            }
+          ],
+          "explanationVi": "Đoạn D cho biết các điểm nóng cục bộ có thể làm cong vênh hình dáng hoặc tạo ra các vết nứt bên trong (internal cracks).",
+          "steps": [
+            "Tìm cụm \"warp the shape\" và \"internal\" ở đoạn D.",
+            "Trích đúng 1 từ nguyên văn: cracks."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q10",
+          "number": 10,
+          "prompt": "Blank [Q10]",
+          "answer": {
+            "accepted": [
+              "cement"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 344,
+              "end": 474,
+              "quote": "Structural designer Nadia Osei consequently suggests dry-stacked bricks shaped with notched edges that lock firmly without cement."
+            }
+          ],
+          "explanationVi": "Đoạn E mô tả các viên gạch có khía ghép khô với nhau chắc chắn mà không cần xi măng (without cement).",
+          "steps": [
+            "Tìm cụm \"notched edges\" và \"without\" ở đoạn E.",
+            "Trích 1 danh từ nguyên văn: cement."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p1_res_002_g3",
+      "type": "matching_info",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_res_002_q11",
+          "number": 11,
+          "prompt": "an explanation of why lunar dust grains stay sharp-edged rather than becoming rounded",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 113,
+              "end": 252,
+              "quote": "Because the Moon lacks wind and flowing water to smooth sharp corners, individual dust grains stay jagged and highly abrasive under a lens."
+            }
+          ],
+          "explanationVi": "Đoạn B giải thích vì Mặt Trăng không có gió và nước chảy để mài nhẵn góc sắc nên hạt bụi vẫn sắc nhọn và có tính mài mòn cao.",
+          "steps": [
+            "Tìm từ khóa về hình dạng hạt bụi (sharp corners, jagged).",
+            "Khớp chính xác với câu thứ hai của đoạn B."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q12",
+          "number": 12,
+          "prompt": "a comparison between the load-bearing strength of experimental lunar blocks and ordinary Earth bricks",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 556,
+              "end": 710,
+              "quote": "The finished blocks withstand compressive loads comparable to common fired clay bricks on Earth, though baking one unit currently takes nearly five hours."
+            }
+          ],
+          "explanationVi": "Đoạn C so sánh khả năng chịu tải nén của gạch thiêu kết với gạch đất sét nung thông thường trên Trái Đất.",
+          "steps": [
+            "Quét tìm chi tiết so sánh độ bền chịu lực với gạch Trái Đất.",
+            "Đoạn C nêu rõ \"withstand compressive loads comparable to common fired clay bricks on Earth\" -> chọn C."
+          ]
+        },
+        {
+          "qid": "p1_res_002_q13",
+          "number": 13,
+          "prompt": "an energy-supply challenge caused by extended periods without sunlight on the Moon",
+          "answer": {
+            "key": "F"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 269,
+              "end": 452,
+              "quote": "Operating autonomous rovers to scoop, sieve, and stack thousands of heavy blocks also demands dependable electrical power during the two-week lunar night, when solar panels fall idle."
+            }
+          ],
+          "explanationVi": "Đoạn F nêu khó khăn về nguồn điện cho xe tự hành trong đêm Mặt Trăng kéo dài hai tuần khi pin mặt trời ngừng hoạt động.",
+          "steps": [
+            "Tìm thông tin về nguồn điện và giai đoạn thiếu ánh sáng mặt trời.",
+            "Đoạn F đề cập \"dependable electrical power during the two-week lunar night, when solar panels fall idle\" -> chọn F."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

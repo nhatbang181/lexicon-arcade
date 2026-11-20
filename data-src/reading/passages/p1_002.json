@@ -1,0 +1,532 @@
+{
+  "id": "rp:p1_002",
+  "level": "P1",
+  "title": "The Driftwood Boatbuilders of the North Atlantic Fringe",
+  "subtitle": "Timber scarcity, coastal ingenuity, and small-craft construction on treeless islands",
+  "topic": "history",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "On windswept islands along the northern edge of the Atlantic, harsh gales and acidic coastal soil stopped native woodland from establishing. Yet for centuries, small maritime communities built strong wooden rowing boats that crossed rough open seas in winter. Their timber came not from local forests, but from major river basins thousands of kilometres away in Siberia and northern Canada. Each spring, seasonal floods swept fallen conifers into cold Arctic currents. Those ocean currents carried the logs westward across open sea until winter storms threw them onto island shores. For families living far from mainland ports, this steady ocean supply of driftwood served as an essential resource for domestic structures, tools, and fishing craft."
+    },
+    {
+      "label": "B",
+      "text": "Because washed-up timber was so valuable, coastal parishes established strict local regulations to prevent conflicts over shoreline salvage. Rather than allowing open competition after a heavy gale, village councils split rocky beaches into numbered zones tied to specific farms. Whenever a householder spotted a usable trunk on their assigned shore, they pulled it above the high-tide mark. They then cut clear family symbols into the bark with a sharp axe so neighbours recognised who claimed the log. Parish court records from the 1780s document steep financial penalties for anyone caught sawing wood that bore another household's mark. A fixed proportion of very long trunks was also allocated to maintaining communal harbour jetties and church roofs."
+    },
+    {
+      "label": "C",
+      "text": "Turning salt-soaked logs into reliable fishing hulls required notable technical skill. Maritime historian Dr Callum Reid surveyed 42 surviving nineteenth-century fishing skiffs across seven island archives and identified a distinct structural pattern. Mainland shipyards could mill uniform oak planks from straight forest trunks with minimal waste. Island craftsmen, by contrast, had to adapt to twisted grain, surface cracks, and variable log dimensions. They solved this problem by overlapping short, thin boards of larch and spruce along bendy ribs shaped from steamed willow or imported birch. Because each short board was shaped carefully by hand plane, the finished hull flexed gently against steep waves instead of fracturing under sudden force."
+    },
+    {
+      "label": "D",
+      "text": "Persistent metal shortages pushed boatbuilders to be equally inventive with joints and waterproofing methods. Forged iron nails had to be brought in by trading sloops, making them far too costly for routine hull work on poorer islands. Workshop inventories compiled around 1840 indicate that local makers mostly joined outer boards with tapered wooden pegs driven tight into drilled holes. They reserved metal rivets solely for bow joints exposed to heavy impact. To prevent icy sea spray from leaking between planks, workers packed twisted wool yarn into narrow seams. They then brushed warm pine resin mixed with sheep tallow over the wool. Though this natural seal required annual maintenance each spring, it stayed flexible in freezing air."
+    },
+    {
+      "label": "E",
+      "text": "Traditional driftwood boatbuilding declined steadily during the twentieth century as external commerce transformed island economies. After 1910, regular coastal steamships began bringing cheap, pre-cut timber from southern mills straight to island quays. That transport link ended the heavy labour of hauling wet logs across shingle beaches during winter rain. By the 1960s, factory-moulded fibreglass hulls had captured the local fishing sector because they needed almost no yearly sealing or repainting. Older wooden skiffs were left behind stone barns to decay, and younger residents rarely saw any economic reason to spend months studying salt-cured driftwood grain. By 1985, fewer than six active craftsmen still practised these older methods."
+    },
+    {
+      "label": "F",
+      "text": "Over the past fifteen years, however, a small heritage revival has brought driftwood joinery back to coastal slipways. Master boatwright Ingrid Solberg opened a local workshop in 2012 that pairs retired builders with young trainees. Together they build six-metre replica skiffs from logs gathered on winter beaches. Trainees learn to check wood strength by tapping dry trunks with a mallet and listening for a clear ring before making any saw cut. Sea trials during autumn regattas have proved that well-made driftwood boats handle brisk coastal swells with steady balance. Solberg argues that keeping these skills alive is less about looking backward than about learning low-waste design built for scarce supplies."
+    }
+  ],
+  "wordCount": 671,
+  "glossary": [
+    {
+      "term": "skiff",
+      "meaningVi": "thuyền gỗ nhỏ, nhẹ dùng để chèo hoặc đánh cá ven bờ"
+    },
+    {
+      "term": "tallow",
+      "meaningVi": "mỡ động vật (thường là mỡ cừu hoặc bò) nấu chảy dùng làm chất chống thấm"
+    },
+    {
+      "term": "rivet",
+      "meaningVi": "đinh tán kim loại dùng để ghép chặt các tấm gỗ hoặc kim loại"
+    },
+    {
+      "term": "slipway",
+      "meaningVi": "triền dốc ven bờ dùng để đóng và hạ thủy tàu thuyền"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_002_q01",
+          "number": 1,
+          "prompt": "Lack of local woodland forced northern islanders to rely on fallen trees carried across the sea by ocean currents.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 469,
+              "end": 582,
+              "quote": "Those ocean currents carried the logs westward across open sea until winter storms threw them onto island shores."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn A giải thích các đảo không có rừng bản địa nên cư dân dựa vào thân cây trôi theo hải lưu Bắc Cực vào bờ. Khớp hoàn toàn → TRUE.",
+          "steps": [
+            "Tìm thông tin về rừng bản địa và hải lưu ở đoạn A.",
+            "Bài nêu harsh gales and thin sour soil stopped native woods và ocean currents carried the logs ashore.",
+            "Khớp đúng quan hệ nhân quả trong câu hỏi → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_002_q02",
+          "number": 2,
+          "prompt": "Following winter storms, any islander was permitted to claim timber from whichever beach section they reached first.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 141,
+              "end": 279,
+              "quote": "Rather than allowing open competition after a heavy gale, village councils split rocky beaches into numbered zones tied to specific farms."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn B nói rõ hội đồng làng KHÔNG cho phép tranh giành tự do sau bão mà chia bãi biển thành từng vùng gắn với từng trang trại cụ thể. Mâu thuẫn trực tiếp → FALSE.",
+          "steps": [
+            "Định vị đoạn B với từ khóa winter storms (heavy gale) và beach section.",
+            "Đối chiếu: câu hỏi nói any islander ... whichever beach section they reached first, bài viết nói Rather than allowing open competition ... tied to specific farms.",
+            "Trái ngược hoàn toàn → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_002_q03",
+          "number": 3,
+          "prompt": "Dr Callum Reid spent over ten years travelling between northern archives to record nineteenth-century skiffs.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 87,
+              "end": 251,
+              "quote": "Maritime historian Dr Callum Reid surveyed 42 surviving nineteenth-century fishing skiffs across seven island archives and identified a distinct structural pattern."
+            }
+          ],
+          "trapType": "number_date",
+          "explanationVi": "Đoạn C chỉ nêu Dr Callum Reid khảo sát 42 chiếc thuyền ở 7 kho lưu trữ đảo, hoàn toàn không nói ông mất bao nhiêu năm → NOT GIVEN.",
+          "steps": [
+            "Tìm tên Dr Callum Reid và con số ở đoạn C.",
+            "Bài có số 42 skiffs và seven island archives nhưng không ghi thời gian nghiên cứu kéo dài bao lâu.",
+            "Không thể kết luận là hơn 10 năm → NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p1_002_q04",
+          "number": 4,
+          "prompt": "High transport costs made iron nails too expensive for everyday planking work on poorer islands.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 110,
+              "end": 235,
+              "quote": "Forged iron nails had to be brought in by trading sloops, making them far too costly for routine hull work on poorer islands."
+            }
+          ],
+          "trapType": "partial_match",
+          "explanationVi": "Đoạn D khẳng định đinh sắt rèn phải chở bằng thuyền buôn nên quá đắt cho việc đóng thân thuyền thông thường (routine hull work) trên các đảo nghèo → TRUE.",
+          "steps": [
+            "Định vị từ khóa iron nails và poorer islands ở đoạn D.",
+            "So khớp: brought in by trading sloops, making them far too costly for routine hull work.",
+            "Khớp hoàn toàn với ý câu hỏi → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_002_q05",
+          "number": 5,
+          "prompt": "Factory-made fibreglass boats had already replaced wooden fishing vessels before steamship timber deliveries began.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 133,
+              "end": 254,
+              "quote": "After 1910, regular coastal steamships began bringing cheap, pre-cut timber from southern mills straight to island quays."
+            }
+          ],
+          "trapType": "time_sequence",
+          "explanationVi": "Đoạn E nêu tàu hơi nước chở gỗ bắt đầu sau năm 1910, còn thuyền sợi thủy tinh mãi đến thập niên 1960 mới thay thế đội thuyền gỗ. Đảo ngược thứ tự thời gian → FALSE.",
+          "steps": [
+            "Xác định hai mốc thời gian ở đoạn E: steamships (After 1910) và fibreglass hulls (By the 1960s).",
+            "So sánh thứ tự: gỗ chở bằng tàu hơi nước đến TRƯỚC sợi thủy tinh 50 năm.",
+            "Câu hỏi nói fibreglass xuất hiện trước steamship → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_002_q06",
+          "number": 6,
+          "prompt": "Ingrid Solberg believes that modern fibreglass vessels should be prohibited from using historic island slipways.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 574,
+              "end": 715,
+              "quote": "Solberg argues that keeping these skills alive is less about looking backward than about learning low-waste design built for scarce supplies."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "explanationVi": "Đoạn F nêu quan điểm của Solberg về giá trị thiết kế ít lãng phí của việc bảo tồn nghề cũ, hoàn toàn không nhắc chuyện cấm thuyền sợi thủy tinh → NOT GIVEN.",
+          "steps": [
+            "Tìm tên Ingrid Solberg và slipways ở đoạn F.",
+            "Đọc kỹ quan điểm của bà ở câu cuối: chỉ nhấn mạnh low-waste design.",
+            "Không có thông tin nào về việc cấm fibreglass vessels → NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Village systems for dividing washed-up timber"
+        },
+        {
+          "key": "ii",
+          "text": "Adapting hull assembly to irregular planks"
+        },
+        {
+          "key": "iii",
+          "text": "Ocean currents as a timber lifeline for treeless coasts"
+        },
+        {
+          "key": "iv",
+          "text": "Substitutes for scarce metal fasteners and sealants"
+        },
+        {
+          "key": "v",
+          "text": "Commercial shipping and synthetic hulls end a craft"
+        },
+        {
+          "key": "vi",
+          "text": "Training a new generation on traditional slipways"
+        },
+        {
+          "key": "vii",
+          "text": "Royal taxes levied on imported Siberian oak"
+        },
+        {
+          "key": "viii",
+          "text": "Why wooden pegs lasted longer than forged metal rivets"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_002_q07",
+          "number": 7,
+          "prompt": "Paragraph A",
+          "answer": {
+            "key": "iii"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 583,
+              "end": 748,
+              "quote": "For families living far from mainland ports, this steady ocean supply of driftwood served as an essential resource for domestic structures, tools, and fishing craft."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "A",
+            "start": 583,
+            "end": 748,
+            "quote": "For families living far from mainland ports, this steady ocean supply of driftwood served as an essential resource for domestic structures, tools, and fishing craft."
+          },
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn A nhắc Siberia nhưng không hề nói về thuế hoàng gia hay gỗ sồi nhập khẩu."
+            },
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề i nói về luật làng chia gỗ trôi thuộc đoạn B."
+            }
+          ],
+          "explanationVi": "Đoạn A giải thích vì sao các đảo không có rừng lại nhận được nguồn gỗ quý từ hải lưu Bắc Cực, khớp hoàn toàn với tiêu đề iii.",
+          "steps": [
+            "Đọc câu đầu (không có rừng bản địa) và câu cuối (nguồn gỗ trôi là vật liệu thiết yếu) của đoạn A.",
+            "Tóm gọn ý chính: dòng hải lưu cung cấp gỗ cho bờ biển không có cây.",
+            "Khớp với tiêu đề iii."
+          ]
+        },
+        {
+          "qid": "p1_002_q08",
+          "number": 8,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "i"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 0,
+              "end": 140,
+              "quote": "Because washed-up timber was so valuable, coastal parishes established strict local regulations to prevent conflicts over shoreline salvage."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 0,
+            "end": 140,
+            "quote": "Because washed-up timber was so valuable, coastal parishes established strict local regulations to prevent conflicts over shoreline salvage."
+          },
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề iii nói về nguồn gốc gỗ theo hải lưu ở đoạn A."
+            },
+            {
+              "key": "vii",
+              "type": "too_broad",
+              "whyVi": "Đoạn B nói về tiền phạt của tòa giáo xứ khi ăn cắp gỗ đánh dấu, không phải thuế hoàng gia."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả luật lệ địa phương chia đoạn bãi biển, khắc ký hiệu gia đình và xử phạt tranh chấp gỗ trôi, khớp với tiêu đề i.",
+          "steps": [
+            "Nhận diện từ khóa đoạn B: strict local rules, village councils split beaches, family symbols.",
+            "Ý chính: hệ thống quy tắc làng xã để phân chia gỗ trôi dạt.",
+            "Chọn tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p1_002_q09",
+          "number": 9,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "ii"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 456,
+              "end": 597,
+              "quote": "They solved this problem by overlapping short, thin boards of larch and spruce along bendy ribs shaped from steamed willow or imported birch."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 456,
+            "end": 597,
+            "quote": "They solved this problem by overlapping short, thin boards of larch and spruce along bendy ribs shaped from steamed willow or imported birch."
+          },
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề iv nói về chốt gỗ và chất chống thấm ở đoạn D, không phải kỹ thuật ghép ván đoạn C."
+            },
+            {
+              "key": "viii",
+              "type": "detail_only",
+              "whyVi": "Đoạn C không so sánh độ bền của chốt gỗ với đinh tán kim loại."
+            }
+          ],
+          "explanationVi": "Đoạn C tập trung vào cách thợ đảo xử lý ván gỗ xoắn và không đều bằng cách xếp chồng các tấm ngắn lên khung mềm, khớp tiêu đề ii.",
+          "steps": [
+            "Đọc đoạn C: vấn đề là twisted grain, uneven log lengths.",
+            "Giải pháp: overlapping short, thin boards along bendy ribs.",
+            "Khớp chính xác với tiêu đề ii (Adapting hull assembly to irregular planks)."
+          ]
+        },
+        {
+          "qid": "p1_002_q10",
+          "number": 10,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "iv"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 109,
+              "quote": "Persistent metal shortages pushed boatbuilders to be equally inventive with joints and waterproofing methods."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 109,
+            "quote": "Persistent metal shortages pushed boatbuilders to be equally inventive with joints and waterproofing methods."
+          },
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn D nói thợ dùng chốt gỗ vì đinh sắt đắt và vẫn để dành đinh tán kim loại cho mối nối mũi thuyền, không nói chốt gỗ bền hơn."
+            },
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề ii là nội dung ghép ván thân thuyền ở đoạn C."
+            }
+          ],
+          "explanationVi": "Đoạn D trình bày các vật liệu thay thế cho đinh sắt khan hiếm (chốt gỗ) và hỗn hợp nhựa thông - mỡ cừu chống thấm, khớp tiêu đề iv.",
+          "steps": [
+            "Đọc câu mở đoạn D: Shortages of metal pushed boatbuilders to be just as clever with joints and sealing.",
+            "Các câu sau liệt kê wooden pegs và pine resin mixed with sheep tallow.",
+            "Loại bẫy suy diễn sai viii và chọn tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p1_002_q11",
+          "number": 11,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "v"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 0,
+              "end": 132,
+              "quote": "Traditional driftwood boatbuilding declined steadily during the twentieth century as external commerce transformed island economies."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 0,
+            "end": 132,
+            "quote": "Traditional driftwood boatbuilding declined steadily during the twentieth century as external commerce transformed island economies."
+          },
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề vi mô tả chương trình phục hồi đào tạo thế hệ mới ở đoạn F, ngược lại với sự mai một ở đoạn E."
+            },
+            {
+              "key": "iii",
+              "type": "too_broad",
+              "whyVi": "Đoạn E nói về tàu hơi nước thương mại và vỏ sợi thủy tinh, không nói về hải lưu."
+            }
+          ],
+          "explanationVi": "Đoạn E lý giải sự suy tàn của nghề đóng thuyền gỗ trôi do tàu hơi nước chở gỗ xẻ (1910) và thuyền sợi thủy tinh (1960s), khớp tiêu đề v.",
+          "steps": [
+            "Nhận diện từ khóa đoạn E: faded slowly, steamships, fibreglass hulls.",
+            "Hai yếu tố ngoại lai này làm nghề truyền thống gần như biến mất vào năm 1985.",
+            "Chọn tiêu đề v (Commercial shipping and synthetic hulls end a craft)."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g3_sentence",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "questions": [
+        {
+          "qid": "p1_002_q12",
+          "number": 12,
+          "prompt": "Householders marked salvaged logs on their allocated beach by carving family ______ into the bark.",
+          "answer": {
+            "accepted": [
+              "symbols"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 392,
+              "end": 503,
+              "quote": "They then cut clear family symbols into the bark with a sharp axe so neighbours recognised who claimed the log."
+            }
+          ],
+          "explanationVi": "Đoạn B nêu rõ cut clear family symbols into the bark. Đáp án 1 từ nguyên văn là symbols.",
+          "steps": [
+            "Định vị câu có bark và family ở đoạn B.",
+            "So khớp carving family ______ = cut clear family symbols.",
+            "Kiểm tra giới hạn từ → symbols."
+          ]
+        },
+        {
+          "qid": "p1_002_q13",
+          "number": 13,
+          "prompt": "Dr Callum Reid examined a total of ______ preserved nineteenth-century fishing skiffs during his archival research.",
+          "answer": {
+            "accepted": [
+              "42"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 87,
+              "end": 251,
+              "quote": "Maritime historian Dr Callum Reid surveyed 42 surviving nineteenth-century fishing skiffs across seven island archives and identified a distinct structural pattern."
+            }
+          ],
+          "explanationVi": "Đoạn C ghi Dr Callum Reid surveyed 42 surviving nineteenth-century fishing skiffs. Số cần điền là 42.",
+          "steps": [
+            "Định vị Dr Callum Reid và fishing skiffs ở đoạn C.",
+            "Đọc con số đứng trước surviving nineteenth-century fishing skiffs là 42.",
+            "Thỏa mãn ONE WORD AND/OR A NUMBER → 42."
+          ]
+        },
+        {
+          "qid": "p1_002_q14",
+          "number": 14,
+          "prompt": "To waterproof hull seams, island workshops coated wool yarn with heated pine resin blended with sheep ______.",
+          "answer": {
+            "accepted": [
+              "tallow"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 570,
+              "end": 642,
+              "quote": "They then brushed warm pine resin mixed with sheep tallow over the wool."
+            }
+          ],
+          "explanationVi": "Đoạn D ghi warm pine resin mixed with sheep tallow. Từ cần điền nguyên văn là tallow.",
+          "steps": [
+            "Tìm từ khóa wool và pine resin ở đoạn D.",
+            "Đọc danh từ ngay sau mixed with sheep là tallow.",
+            "Kiểm tra giới hạn 1 từ → tallow."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

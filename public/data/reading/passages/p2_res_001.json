@@ -1,0 +1,518 @@
+{
+  "id": "rp:p2_res_001",
+  "level": "P2",
+  "reserved": true,
+  "title": "Slow Journalism Subscriptions and Reader Retention",
+  "subtitle": "Why publishing fewer, deeper stories is helping independent outlets keep paying audiences",
+  "topic": "media",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "For much of the past two decades, digital newsrooms pursued real-time alerts and massive web traffic to sell display advertising. As global ad spending moved steadily toward social platforms, however, that high-speed race left many publishers financially fragile. At the same time, constant phone alerts left ordinary readers exhausted by thin updates and shallow scoops. In response, a growing tier of independent titles has turned to slow journalism. These outlets publish far fewer stories each week, focusing instead on field reporting, strict fact checks, and clear long-form essays. Because these publications depend mainly on direct reader subscriptions rather than brief traffic spikes, retaining existing members now matters far more than drawing casual visitors, pushing editors to rethink publishing schedules and editorial value. In short, depth has begun to beat raw speed."
+    },
+    {
+      "label": "B",
+      "text": "Recent data reveals a wide gap in loyalty between slow outlets and standard daily news sites. Media economist Dr Fiona Gallagher analysed paid-member records from 28 European publications over a three-year span at the Northern Media Observatory, documenting a stark contrast in audience behaviour. While broad daily news sites lost roughly 38 per cent of new online members within twelve months, slow-journalism outlets retained close to 78 per cent over the same stretch. Gallagher observed that readers seldom left slow titles during quiet news weeks, whereas breaking-news sites experienced sharp waves of cancellations once a major headline faded from public view. Her findings indicate that subscribers pay far more consistently for durable context and clear analysis than for quick alerts they can read free elsewhere. Loyalty tracks calm depth far more closely than daily volume."
+    },
+    {
+      "label": "C",
+      "text": "Many editors initially worried that posting less frequently would make a paid plan feel meagre and poor value. Audience researcher Professor Samuel Okafor found the exact opposite when he tracked reading habits across 1,400 paid members over eighteen months. Readers paying for daily news feeds often reported guilt over unread articles piling up in their inbox. That feeling of overload frequently pushed them to cancel before annual renewal came due. By contrast, weekly or monthly slow journals deliver what Okafor terms a \"finishable edition\", a bounded editorial package that a busy subscriber can complete comfortably across one weekend, lifting confidence in stories read from opening to conclusion. Readers who finish an issue rarely feel cheated by their monthly bill. That calm sense of closure lifts perceived value even when the total monthly word count stays much smaller."
+    },
+    {
+      "label": "D",
+      "text": "Several slow publishers build deeper loyalty by pairing print copies with web access and live reader contact. Tomas Herrera, founder of the quarterly journal Meridian Review, transitioned from a digital-only newsletter to a combined print-and-audio bundle five years ago. Although printing and postage cut deeply into early profit margins, annual renewal rose from 64 per cent to 83 per cent within two years. Herrera notes that a solid paper issue left on a home coffee table acts as a gentle physical nudge to read. A forgotten web login, on the other hand, slips quietly out of sight and invites cancellation. Alongside its printed edition, Meridian Review hosts live reader briefings where journalists explain how complex reports were verified, transforming passive consumers into committed supporters who renew year after year. Members also send tips and questions straight to the newsroom."
+    },
+    {
+      "label": "E",
+      "text": "Even with high renewal rates, slow journalism carries clear business risks that limit how fast the model can grow. Producing a single comprehensive report can occupy a senior journalist and fact-checker for two full months before publication, creating steep upfront wage bills with no immediate return. Subscription lead Ananya Rao at Civic Dispatch warns that slow outlets struggle to reach first-time readers because they rarely rank near the top of live search trends. Her team also found that slashing trial prices too far draws bargain hunters who quit the moment standard fees begin. Because smaller newsrooms seldom hold the marketing budgets needed for broad advertising drives, steady growth depends on patient community outreach, reader referrals, and disciplined control over reporting budgets. One bad quarter can strain a tiny cash reserve fast."
+    },
+    {
+      "label": "F",
+      "text": "Given these competing pressures, few media analysts expect slow titles to replace daily news services altogether. Instead, established legacy newspapers have started incorporating slow-journalism formats into their paid tiers, shipping curated weekend digests and single-topic guides alongside regular breaking coverage. Several editors also curb mobile alerts so paying members hear from them only when a truly significant event unfolds. Dr Gallagher argues that the healthiest news worlds rely on both speeds working side by side: daily desks record urgent events as they unfold, while slower outlets step back to trace deeper causes and test early claims. Each form covers a gap that the other leaves open. For audiences worn down by endless scrolling, the steady expansion of slow subscriptions demonstrates that calm, finished reporting can still command durable trust and reliable income."
+    }
+  ],
+  "wordCount": 805,
+  "questionGroups": [
+    {
+      "groupId": "p2_res_001_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p2_res_001_q01",
+          "number": 1,
+          "prompt": "Relying heavily on ad revenue tied to high web traffic left many digital publishers in a weak financial position.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 130,
+              "end": 263,
+              "quote": "As global ad spending moved steadily toward social platforms, however, that high-speed race left many publishers financially fragile."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn A khẳng định cuộc đua lượng truy cập để kiếm quảng cáo đã khiến nhiều nhà xuất bản rơi vào tình trạng tài chính mong manh.",
+          "steps": [
+            "Đọc hai câu đầu đoạn A nói về quảng cáo và lượt xem trang.",
+            "Đối chiếu \"weak financial position\" với \"financially fragile\".",
+            "Ý khớp hoàn toàn -> TRUE."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q02",
+          "number": 2,
+          "prompt": "In Dr Fiona Gallagher's three-year study, daily news websites kept a higher proportion of new subscribers than slow-journalism outlets did.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 298,
+              "end": 472,
+              "quote": "While broad daily news sites lost roughly 38 per cent of new online members within twelve months, slow-journalism outlets retained close to 78 per cent over the same stretch."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn B cho thấy trang tin hàng ngày mất khoảng 38% độc giả mới (giữ lại ~62%), thấp hơn mức gần 78% của báo chí chậm.",
+          "steps": [
+            "Tìm số liệu khảo sát 3 năm của Dr Fiona Gallagher ở đoạn B.",
+            "So sánh tỷ lệ giữ chân: báo ngày giữ khoảng 62%, còn báo chí chậm giữ gần 78%.",
+            "Phát biểu đảo ngược chiều so sánh -> FALSE."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q03",
+          "number": 3,
+          "prompt": "Professor Samuel Okafor's eighteen-month study focused exclusively on subscribers under the age of thirty-five.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 111,
+              "end": 258,
+              "quote": "Audience researcher Professor Samuel Okafor found the exact opposite when he tracked reading habits across 1,400 paid members over eighteen months."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn C nêu GS Samuel Okafor theo dõi 1.400 độc giả trả phí trong 18 tháng, nhưng không đề cập độ tuổi của họ.",
+          "steps": [
+            "Định vị tên Professor Samuel Okafor ở đoạn C.",
+            "Kiểm tra xem bài có nói về giới hạn độ tuổi dưới 35 hay không.",
+            "Không có dữ kiện về tuổi -> NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q04",
+          "number": 4,
+          "prompt": "Feeling overwhelmed by accumulated unread stories often drives daily-news subscribers to cancel their memberships.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 259,
+              "end": 452,
+              "quote": "Readers paying for daily news feeds often reported guilt over unread articles piling up in their inbox. That feeling of overload frequently pushed them to cancel before annual renewal came due."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn C ghi rõ cảm giác quá tải khi bài chưa đọc chất đống trong hộp thư thường thúc đẩy độc giả báo ngày hủy gói.",
+          "steps": [
+            "Tìm thông tin về độc giả dùng bản tin hàng ngày ở đoạn C.",
+            "Đối chiếu \"accumulated unread stories\" với \"unread articles piling up\" và \"drives ... to cancel\" với \"frequently pushed them to cancel\".",
+            "Trùng khớp hoàn toàn -> TRUE."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q05",
+          "number": 5,
+          "prompt": "Adding a printed edition immediately boosted Meridian Review's early profit margins.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 272,
+              "end": 409,
+              "quote": "Although printing and postage cut deeply into early profit margins, annual renewal rose from 64 per cent to 83 per cent within two years."
+            }
+          ],
+          "trapType": "partial_match",
+          "explanationVi": "Đoạn D nêu chi phí in ấn và bưu phí làm giảm mạnh biên lợi nhuận ban đầu của Meridian Review, trái với \"boosted\".",
+          "steps": [
+            "Tìm tên Meridian Review và cụm \"early profit margins\" ở đoạn D.",
+            "Đối chiếu \"immediately boosted\" với \"cut deeply into early profit margins\".",
+            "Mâu thuẫn trực tiếp -> FALSE."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q06",
+          "number": 6,
+          "prompt": "Civic Dispatch plans to launch a quarterly printed magazine for its subscribers next year.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 303,
+              "end": 471,
+              "quote": "Subscription lead Ananya Rao at Civic Dispatch warns that slow outlets struggle to reach first-time readers because they rarely rank near the top of live search trends."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn E chỉ trích cảnh báo của Ananya Rao tại Civic Dispatch về việc tiếp cận độc giả mới, không nói tổ chức này định ra báo in.",
+          "steps": [
+            "Tìm tên Civic Dispatch ở đoạn E.",
+            "Kiểm tra xem có thông tin nào về kế hoạch ra tạp chí in hàng quý vào năm sau không.",
+            "Không hề được nhắc tới -> NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why publishing less frequently can raise perceived value"
+        },
+        {
+          "key": "ii",
+          "text": "Upfront reporting costs and barriers to attracting new subscribers"
+        },
+        {
+          "key": "iii",
+          "text": "Why social media platforms stopped carrying news links"
+        },
+        {
+          "key": "iv",
+          "text": "Statistical evidence of higher subscriber loyalty in slow outlets"
+        },
+        {
+          "key": "v",
+          "text": "How advertising shifts pushed newsrooms toward subscriber-funded depth"
+        },
+        {
+          "key": "vi",
+          "text": "Using print issues and live briefings to deepen reader commitment"
+        },
+        {
+          "key": "vii",
+          "text": "Public funding programmes designed to support independent journalism"
+        },
+        {
+          "key": "viii",
+          "text": "How major legacy newspapers redesigned their weekend digests"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_001_q07",
+          "number": 7,
+          "prompt": "Paragraph A",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "A",
+            "start": 372,
+            "end": 588,
+            "quote": "In response, a growing tier of independent titles has turned to slow journalism. These outlets publish far fewer stories each week, focusing instead on field reporting, strict fact checks, and clear long-form essays."
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 372,
+              "end": 588,
+              "quote": "In response, a growing tier of independent titles has turned to slow journalism. These outlets publish far fewer stories each week, focusing instead on field reporting, strict fact checks, and clear long-form essays."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "keyword_match",
+              "whyVi": "Lặp từ \"social platforms\" nhưng đoạn A chỉ nói tiền quảng cáo chuyển sang mạng xã hội, không nói họ chặn liên kết tin tức."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Số liệu thống kê về tỷ lệ giữ chân thuộc đoạn B, chưa xuất hiện ở đoạn A."
+            }
+          ],
+          "explanationVi": "Đoạn A giải thích sự dịch chuyển tiền quảng cáo đã thúc đẩy nhiều tòa soạn chuyển sang báo chí chậm dựa vào độc giả trả phí.",
+          "steps": [
+            "Đọc mối liên hệ nguyên nhân – kết quả trong đoạn A: quảng cáo chảy sang mạng xã hội -> báo chí chậm ra đời.",
+            "Loại tiêu đề iii (sai ý) và iv (thuộc đoạn B).",
+            "Chọn tiêu đề v."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q08",
+          "number": 8,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 0,
+            "end": 93,
+            "quote": "Recent data reveals a wide gap in loyalty between slow outlets and standard daily news sites."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 0,
+              "end": 93,
+              "quote": "Recent data reveals a wide gap in loyalty between slow outlets and standard daily news sites."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Lý do xuất bản ít lại tăng giá trị cảm nhận được giải thích ở đoạn C, không phải đoạn B."
+            },
+            {
+              "key": "vii",
+              "type": "too_broad",
+              "whyVi": "Đoạn B phân tích dữ liệu thuê bao thương mại, không nhắc tới tài trợ công."
+            }
+          ],
+          "explanationVi": "Đoạn B đưa ra số liệu khảo sát 28 tờ báo châu Âu chứng minh tỷ lệ giữ chân độc giả vượt trội của báo chí chậm.",
+          "steps": [
+            "Nhận diện câu mở đoạn về \"Recent data\" và các con số 38%, 78%.",
+            "Khớp ý trung tâm với tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q09",
+          "number": 9,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 778,
+            "end": 885,
+            "quote": "That calm sense of closure lifts perceived value even when the total monthly word count stays much smaller."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 778,
+              "end": 885,
+              "quote": "That calm sense of closure lifts perceived value even when the total monthly word count stays much smaller."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Bằng chứng thống kê so sánh tỷ lệ gia hạn nằm ở đoạn B."
+            },
+            {
+              "key": "iii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C nói về cảm nhận của độc giả với hộp thư tin tức, không liên quan mạng xã hội."
+            }
+          ],
+          "explanationVi": "Đoạn C lý giải nghịch lý rằng việc xuất bản ít nhưng đọc trọn vẹn giúp độc giả hết cảm giác quá tải và đánh giá cao giá trị gói đọc hơn.",
+          "steps": [
+            "Chú ý sự đảo ngược giả định ở câu 1–2 và khái niệm \"finishable edition\".",
+            "Đọc câu kết đoạn: cảm giác hoàn tất nâng \"perceived value\" dù ít chữ hơn.",
+            "Chọn tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q10",
+          "number": 10,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "vi"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 109,
+            "quote": "Several slow publishers build deeper loyalty by pairing print copies with web access and live reader contact."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 109,
+              "quote": "Several slow publishers build deeper loyalty by pairing print copies with web access and live reader contact."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Các tờ báo truyền thống làm bản tóm tắt cuối tuần là chi tiết ở đoạn F, không phải đoạn D."
+            },
+            {
+              "key": "ii",
+              "type": "detail_only",
+              "whyVi": "Chi phí in và bưu phí chỉ là một mệnh đề nhượng bộ nhỏ trong đoạn D; khó khăn kinh doanh là ý chính của đoạn E."
+            }
+          ],
+          "explanationVi": "Đoạn D phân tích cách kết hợp ấn phẩm in cầm tay với các buổi gặp gỡ độc giả trực tiếp để củng cố mức độ gắn bó.",
+          "steps": [
+            "Đọc câu chủ đề đầu đoạn D và ví dụ về Meridian Review.",
+            "Xác định hai yếu tố giữ chân: bản in (print copies) và buổi trò chuyện trực tiếp (live member briefings).",
+            "Chọn tiêu đề vi."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q11",
+          "number": 11,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 0,
+            "end": 114,
+            "quote": "Even with high renewal rates, slow journalism carries clear business risks that limit how fast the model can grow."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 0,
+              "end": 114,
+              "quote": "Even with high renewal rates, slow journalism carries clear business risks that limit how fast the model can grow."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "too_broad",
+              "whyVi": "Đoạn E bàn về rủi ro tài chính và tiếp thị tự thân, không nhắc tới tài trợ từ chính phủ."
+            },
+            {
+              "key": "vi",
+              "type": "adjacent_paragraph",
+              "whyVi": "Chiến lược báo in và sự kiện thuộc đoạn D, còn đoạn E tập trung vào chi phí trả trước và khó khăn thu hút khách mới."
+            }
+          ],
+          "explanationVi": "Đoạn E trình bày mặt trái của mô hình báo chí chậm: chi phí lương trả trước cao cho phóng sự dài và khó thu hút độc giả mới.",
+          "steps": [
+            "Tóm tắt hai vấn đề chính ở đoạn E: \"steep upfront wage bills\" và \"struggle to reach first-time readers\".",
+            "Khớp chính xác với tiêu đề ii."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_001_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 12–14) and the list of people below. Match each statement with the correct person, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Fiona Gallagher"
+        },
+        {
+          "key": "B",
+          "text": "Tomas Herrera"
+        },
+        {
+          "key": "C",
+          "text": "Professor Samuel Okafor"
+        },
+        {
+          "key": "D",
+          "text": "Ananya Rao"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_001_q12",
+          "number": 12,
+          "prompt": "Heavy introductory price cuts often attract temporary subscribers who leave once normal fees apply.",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 303,
+              "end": 589,
+              "quote": "Subscription lead Ananya Rao at Civic Dispatch warns that slow outlets struggle to reach first-time readers because they rarely rank near the top of live search trends. Her team also found that slashing trial prices too far draws bargain hunters who quit the moment standard fees begin."
+            }
+          ],
+          "explanationVi": "Ở đoạn E, nhóm của Ananya Rao phát hiện việc giảm giá dùng thử quá mạnh chỉ hút người săn giá rẻ rồi rời đi khi tính giá chuẩn.",
+          "steps": [
+            "Tìm từ khóa về \"trial prices\" và \"standard fees\" ở đoạn E.",
+            "Xác định người phát biểu là Ananya Rao -> chọn D."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q13",
+          "number": 13,
+          "prompt": "A printed issue visible in the home reminds subscribers of their membership better than a digital account does.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 410,
+              "end": 612,
+              "quote": "Herrera notes that a solid paper issue left on a home coffee table acts as a gentle physical nudge to read. A forgotten web login, on the other hand, slips quietly out of sight and invites cancellation."
+            }
+          ],
+          "explanationVi": "Đoạn D dẫn nhận xét của Tomas Herrera rằng bản in đặt trên bàn là lời nhắc hữu hình để đọc, khác với tài khoản web dễ bị quên.",
+          "steps": [
+            "Tìm so sánh giữa bản in và tài khoản web ở đoạn D.",
+            "Xác định tác giả nhận định là Tomas Herrera -> chọn B."
+          ]
+        },
+        {
+          "qid": "p2_res_001_q14",
+          "number": 14,
+          "prompt": "The strongest media environments combine rapid daily reporting with slower analytical journalism.",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 439,
+              "end": 658,
+              "quote": "Dr Gallagher argues that the healthiest news worlds rely on both speeds working side by side: daily desks record urgent events as they unfold, while slower outlets step back to trace deeper causes and test early claims."
+            }
+          ],
+          "explanationVi": "Ở đoạn F, TS Fiona Gallagher lập luận môi trường tin tức lành mạnh nhất cần cả hai tốc độ đưa tin song hành.",
+          "steps": [
+            "Tìm quan điểm về sự kết hợp giữa tin nhanh hàng ngày và phân tích chậm ở đoạn F.",
+            "Xác định học giả phát biểu là Dr Fiona Gallagher -> chọn A."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

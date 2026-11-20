@@ -1,0 +1,536 @@
+{
+  "id": "rp:p3_002",
+  "level": "P3",
+  "title": "Acoustic Drift in Bilingual Urban Communities",
+  "subtitle": "How everyday speech in multilingual cities gradually realigns phonetic boundaries across generations",
+  "topic": "language",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "For more than a century, historical linguists viewed gradual sound change as a slow process driven mainly by physical separation and limited travel. In classic scholarly accounts, fresh pronunciation habits emerged inside quiet single-language villages and spread gradually along regional trade routes. Contemporary metropolitan districts, however, bear little resemblance to the tidy rural dialect maps printed in older reference books. Within dense multilingual neighbourhoods, two or more distinct sound systems continuously share the same speaker's voice throughout daily life. People switch tongues between family kitchens, local shops, and bus stops dozens of times each week. Longitudinal audio recordings collected across three European port cities since 2011 reveal that bilingual residents rarely preserve strict acoustic barriers between their languages. Instead, subtle articulatory habits drift across linguistic boundaries over time in a gradual pattern called acoustic drift. Standard models of sound change therefore underestimate the active phonetic blending unfolding each day inside cosmopolitan urban centres."
+    },
+    {
+      "label": "B",
+      "text": "Controlled laboratory measurements reveal that these cross-language shifts follow orderly structural patterns rather than erratic distortion. In a 2021 acoustic study of 240 bilingual adolescents, Dr Claire Beaumont measured voice-onset times for voiceless stop consonants such as 'p' and 't' across casual interviews. Her analysis uncovered an average shift of 14 milliseconds towards a shared middle ground positioned between the norms of both languages. Even siblings raised in the same household showed consistent alignment across dozens of common everyday words. Crucially, however, these teens did not mix up their two sound systems during listening tests in quiet booths. There, they told native contrasts apart with 97 per cent accuracy, matching peers raised with a single tongue. Rather than reflecting confusion or weak training, their shifted pronunciation remained neatly coordinated across contexts. Beaumont thus argues that acoustic drift works as an orderly tuning of shared vocal space rather than a sign of weak learning or fading language skill."
+    },
+    {
+      "label": "C",
+      "text": "Physical articulation alone cannot explain why certain blended sounds endure across several decades while others disappear within ten years; social affiliation acts as a powerful filter. In 2023, Prof Kenji Takahashi surveyed 310 young adults across four multilingual housing estates to trace how shifted vowel qualities spread through local peer circles. Residents who felt close to mixed-heritage peer groups adopted blended vowels nearly twice as fast as peers aiming for formal office careers. Those who moved away for university often kept the local vowels when phoning home, yet muted them in job interviews. Earlier public commentators frequently dismissed mixed city accents as careless habits or sloppy interference from a second language. Takahashi, by contrast, contends that converged speech acts as a deliberate emblem of local belonging. By subtly modifying vowel resonances in everyday conversation, young urban speakers signal shared identity across different family roots without sacrificing mutual clarity."
+    },
+    {
+      "label": "D",
+      "text": "Even when two languages adjust gradually towards each other, tongues brought together in urban neighbourhoods seldom exert equal social pull. Field research led by Dr Hannah Gallagher across 18 community primary schools demonstrated that minority heritage tongues absorbed roughly 68 per cent of all measured tone and rhythm adjustments over a five-year span. Children tended to import stress patterns from the classroom tongue into evening chats at home. Yet Gallagher's sound charts also picked up subtle vowel fronting inside the main civic tongue among single-language pupils who shared desks and play yards with bilingual classmates. The overall direction of change is plainly uneven, heavily shaped by state schooling, local employment, and national broadcast media. Still, assuming that speech change flows strictly from high-status civic tongues down to minority dialects misreads the two-way ecology of mixed cities."
+    },
+    {
+      "label": "E",
+      "text": "Given the massive scale of urban migration throughout the twentieth century, one might reasonably ask why linguists documented continuous acoustic drift so belatedly. Much of that delay stems directly from how older field studies gathered and processed voice samples. Early dialect surveys leaned heavily on brief word lists read aloud by older rural speakers, a strict method meant to capture archaic speech. That setup dampened casual flow and left out mobile city dwellers altogether. Worse still, speech-tracking software tuned on standard radio voices often flags overlapping bilingual vowels as background noise, discarding valuable evidence during automated sorting. Field teams therefore threw away the very clips that held the clearest proof of steady drift. Only since researchers turned to small wearable mics to record natural street talk have they begun to gauge how quickly sound shifts take hold in daily life."
+    },
+    {
+      "label": "F",
+      "text": "Recognising steady acoustic drift raises difficult practical debates for community heritage schooling and cultural preservation committees. Many local language-rescue groups worry that ongoing phonetic convergence speeds up the gradual loss of ancestral dialects across younger age groups. In response, several committees enforce strict historical pronunciation benchmarks inside weekend heritage classrooms, correcting any trace of urban blending. Some teachers even mark down fluent pupils whose vowel rhythms echo the wider city street. Yet such purist interventions often produce the exact opposite of their stated goal inside lively metropolitan districts. Insisting on archaic sound norms tends to push away young bilinguals who view their mixed accent as genuine, and ironically speeds up language abandonment in the next generation. Rather than branding acoustic drift as linguistic decay, teachers and policy planners would gain far more by treating it as clear proof of living adaptability."
+    }
+  ],
+  "wordCount": 875,
+  "glossary": [
+    {
+      "term": "acoustic drift",
+      "meaningVi": "sự dịch chuyển ngữ âm dần dần giữa các ngôn ngữ cùng được sử dụng"
+    },
+    {
+      "term": "voice-onset time",
+      "meaningVi": "khoảng thời gian từ lúc bật phụ âm đến khi dây thanh bắt đầu rung"
+    },
+    {
+      "term": "vowel fronting",
+      "meaningVi": "hiện tượng dịch chuyển vị trí phát âm nguyên âm ra phía trước khoang miệng"
+    },
+    {
+      "term": "archaic",
+      "meaningVi": "cổ xưa, thuộc dạng ngôn ngữ đã lỗi thời"
+    },
+    {
+      "term": "linguistic decay",
+      "meaningVi": "sự suy thoái hay mai một của ngôn ngữ"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_002_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_002_q01",
+          "number": 1,
+          "prompt": "Established theories of sound change have given insufficient weight to phonetic blending inside multilingual urban areas.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 991,
+              "end": 1129,
+              "quote": "Standard models of sound change therefore underestimate the active phonetic blending unfolding each day inside cosmopolitan urban centres."
+            }
+          ],
+          "trapType": "qualifier",
+          "steps": [
+            "Tìm nhận định về các mô hình biến đổi âm ở câu cuối đoạn A.",
+            "So sánh 'underestimate the active phonetic blending' với 'given insufficient weight to phonetic blending'.",
+            "Ý nghĩa đồng nhất hoàn toàn với quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Câu cuối đoạn A nêu các mô hình biến đổi âm chuẩn mực đánh giá thấp sự pha trộn ngữ âm diễn ra mỗi ngày trong các đô thị đa ngôn ngữ."
+        },
+        {
+          "qid": "p3_002_q02",
+          "number": 2,
+          "prompt": "Shifted consonant timings among bilingual teenagers indicate that they fail to distinguish both phonological inventories during listening tasks.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 568,
+              "end": 789,
+              "quote": "Crucially, however, these teens did not mix up their two sound systems during listening tests in quiet booths. There, they told native contrasts apart with 97 per cent accuracy, matching peers raised with a single tongue."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Định vị kết quả đo phụ âm của thanh thiếu niên song ngữ ở đoạn B.",
+            "Đối chiếu phần kiểm tra nghe: họ không hề nhầm lẫn hai hệ âm thanh và phân biệt chính xác 97%.",
+            "Trái ngược trực tiếp với khẳng định 'fail to keep separate' nên chọn NO."
+          ],
+          "explanationVi": "Đoạn B khẳng định nhóm thanh thiếu niên song ngữ không nhầm lẫn hai hệ thống âm thanh trong bài kiểm tra nghe và phân biệt chính xác tới 97%. Nhận định câu hỏi mâu thuẫn với bằng chứng này."
+        },
+        {
+          "qid": "p3_002_q03",
+          "number": 3,
+          "prompt": "Young women living in multilingual housing estates adopt blended vowel patterns more rapidly than young men do.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 356,
+              "end": 497,
+              "quote": "Residents who felt close to mixed-heritage peer groups adopted blended vowels nearly twice as fast as peers aiming for formal office careers."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Kiểm tra khảo sát 310 thanh niên ở bốn khu dân cư đa ngôn ngữ tại đoạn C.",
+            "Nhận thấy bài chỉ so sánh nhóm gắn kết bạn bè đa di sản với nhóm hướng tới công việc văn phòng, không phân tách nam và nữ.",
+            "Không có dữ liệu về khác biệt giới tính nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn C so sánh tốc độ tiếp nhận nguyên âm pha trộn dựa trên gắn kết nhóm bạn bè và định hướng nghề nghiệp. Tác giả không đề cập bất kỳ so sánh nào giữa nam và nữ."
+        },
+        {
+          "qid": "p3_002_q04",
+          "number": 4,
+          "prompt": "In multilingual classrooms, phonetic transfer operates strictly in one direction from the majority language to minority tongues.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 773,
+              "end": 925,
+              "quote": "Still, assuming that speech change flows strictly from high-status civic tongues down to minority dialects misreads the two-way ecology of mixed cities."
+            }
+          ],
+          "trapType": "qualifier",
+          "steps": [
+            "Đọc đoạn D về nghiên cứu tại 18 trường tiểu học địa phương.",
+            "Chú ý từ tuyệt đối 'strictly in one direction' đối lập với khẳng định tác giả rằng giả định một chiều là hiểu sai hệ sinh thái hai chiều ('two-way ecology').",
+            "Trái ngược lập trường tác giả nên chọn NO."
+          ],
+          "explanationVi": "Tác giả khẳng định dù tỷ lệ biến đổi không đều, cho rằng ảnh hưởng chỉ đi một chiều từ ngôn ngữ chủ đạo sang tiếng thiểu số là hiểu sai tính hai chiều của đô thị đa ngôn ngữ."
+        },
+        {
+          "qid": "p3_002_q05",
+          "number": 5,
+          "prompt": "Portable microphones used in street fieldwork cost substantially more to maintain than stationary laboratory acoustic equipment.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 768,
+              "end": 925,
+              "quote": "Only since researchers turned to small wearable mics to record natural street talk have they begun to gauge how quickly sound shifts take hold in daily life."
+            }
+          ],
+          "trapType": "extra_claim",
+          "steps": [
+            "Tìm chi tiết về micro đeo người ghi âm ngoài đường phố ở cuối đoạn E.",
+            "Kiểm tra xem bài có nhắc đến chi phí vận hành hoặc bảo trì thiết bị hay không.",
+            "Bài hoàn toàn không đề cập chi phí nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn E chỉ nêu micro đeo người nhỏ gọn giúp đo lường tốc độ dịch chuyển âm trong giao tiếp tự nhiên. Tác giả không so sánh hay đề cập đến chi phí bảo trì thiết bị."
+        },
+        {
+          "qid": "p3_002_q06",
+          "number": 6,
+          "prompt": "Enforcing rigid traditional pronunciation rules in heritage classes can unintentionally push young speakers away from their ancestral tongue.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 662,
+              "end": 840,
+              "quote": "Insisting on archaic sound norms tends to push away young bilinguals who view their mixed accent as genuine, and ironically speeds up language abandonment in the next generation."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Đọc đoạn F về phản ứng thuần túy của các nhóm bảo tồn ngôn ngữ.",
+            "Đối chiếu: 'Insisting on archaic sound norms tends to push away young bilinguals... ironically speeds up language abandonment' khớp với 'unintentionally push young speakers away'.",
+            "Hoàn toàn trùng khớp quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Đoạn F nêu rõ việc khăng khăng áp đặt chuẩn phát âm cổ điển thường đẩy người trẻ song ngữ ra xa và trớ trêu thay lại đẩy nhanh sự từ bỏ ngôn ngữ di sản."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_002_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why traditional data-gathering techniques overlooked gradual urban sound shifts"
+        },
+        {
+          "key": "ii",
+          "text": "Evidence that phonetic blending reflects structured adaptation rather than error"
+        },
+        {
+          "key": "iii",
+          "text": "Financial rewards encouraging companies to recruit bilingual speakers"
+        },
+        {
+          "key": "iv",
+          "text": "Rethinking classic models of sound change in multilingual urban settings"
+        },
+        {
+          "key": "v",
+          "text": "Cases in which minority dialects dictate the phonology of broadcast media"
+        },
+        {
+          "key": "vi",
+          "text": "Social affiliation as a catalyst for emerging hybrid urban accents"
+        },
+        {
+          "key": "vii",
+          "text": "Uneven yet mutual phonetic influence between civic and heritage languages"
+        },
+        {
+          "key": "viii",
+          "text": "How nineteenth-century rural schooling standardised urban speech"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_002_q07",
+          "number": 7,
+          "prompt": "Paragraph A",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "A",
+            "start": 991,
+            "end": 1129,
+            "quote": "Standard models of sound change therefore underestimate the active phonetic blending unfolding each day inside cosmopolitan urban centres."
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 991,
+              "end": 1129,
+              "quote": "Standard models of sound change therefore underestimate the active phonetic blending unfolding each day inside cosmopolitan urban centres."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Phân tích hạn chế của kỹ thuật khảo sát và phần mềm thu âm thuộc đoạn E, không phải đoạn A."
+            },
+            {
+              "key": "viii",
+              "type": "keyword_match",
+              "whyVi": "Mượn ý về lịch sử và nông thôn nhưng đoạn A không hề nói giáo dục nông thôn chuẩn hóa tiếng đô thị."
+            }
+          ],
+          "steps": [
+            "Đọc đoạn A: đối lập giả định cổ điển về khoảng cách địa lý với thực tế pha trộn ngữ âm ở đô thị đa ngôn ngữ.",
+            "Khớp ý cần xem xét lại mô hình biến đổi âm cổ điển với tiêu đề iv.",
+            "Loại i (thuộc đoạn E) và viii (bẫy từ khóa)."
+          ],
+          "explanationVi": "Đoạn A đặt vấn đề rằng các mô hình biến đổi âm truyền thống bỏ qua sự pha trộn ngữ âm sống động trong các thành phố đa ngôn ngữ. Tiêu đề iv tóm gọn chính xác ý này."
+        },
+        {
+          "qid": "p3_002_q08",
+          "number": 8,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 914,
+            "end": 1065,
+            "quote": "Beaumont thus argues that acoustic drift works as an orderly tuning of shared vocal space rather than a sign of weak learning or fading language skill."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 914,
+              "end": 1065,
+              "quote": "Beaumont thus argues that acoustic drift works as an orderly tuning of shared vocal space rather than a sign of weak learning or fading language skill."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề iv là ý khái quát đặt vấn đề của đoạn A, còn đoạn B đi vào chứng cứ thực nghiệm phòng thí nghiệm."
+            },
+            {
+              "key": "v",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn B chỉ đo đạc độ dịch chuyển phụ âm cân bằng ở thanh thiếu niên, không nói phương ngữ thiểu số chi phối truyền thông."
+            }
+          ],
+          "steps": [
+            "Xác định trọng tâm đoạn B: kết quả đo của Dr Claire Beaumont cho thấy dịch chuyển có trật tự chứ không phải lỗi năng lực.",
+            "Đối chiếu với tiêu đề ii về bằng chứng thích nghi có cấu trúc thay vì sai sót.",
+            "Loại iv (đoạn trước) và v (sai lập trường)."
+          ],
+          "explanationVi": "Đoạn B đưa ra dữ liệu phòng thí nghiệm chứng minh dịch chuyển ngữ âm là sự điều chỉnh có trật tự chứ không phải suy giảm năng lực ngôn ngữ. Tiêu đề ii khớp hoàn toàn."
+        },
+        {
+          "qid": "p3_002_q09",
+          "number": 9,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "vi"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 749,
+            "end": 851,
+            "quote": "Takahashi, by contrast, contends that converged speech acts as a deliberate emblem of local belonging."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 749,
+              "end": 851,
+              "quote": "Takahashi, by contrast, contends that converged speech acts as a deliberate emblem of local belonging."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn C có nhắc đến 'formal office careers' nhưng chỉ làm nhóm đối chứng, không nói công ty thưởng tiền tuyển người song ngữ."
+            },
+            {
+              "key": "vii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tác động hai chiều bất cân xứng giữa ngôn ngữ chủ đạo và thiểu số là trọng tâm đoạn D."
+            }
+          ],
+          "steps": [
+            "Tóm tắt đoạn C: mạng lưới bạn bè và gắn kết cộng đồng quyết định việc tiếp nhận giọng đô thị pha trộn.",
+            "Khớp trực tiếp với tiêu đề vi: sự gắn kết xã hội là chất xúc tác cho giọng đô thị mới.",
+            "Loại iii (bẫy từ khóa) và vii (thuộc đoạn D)."
+          ],
+          "explanationVi": "Đoạn C chứng minh sự gắn kết với cộng đồng bạn bè thúc đẩy việc hình thành giọng đô thị hội tụ như biểu tượng thuộc về địa phương. Do đó chọn tiêu đề vi."
+        },
+        {
+          "qid": "p3_002_q10",
+          "number": 10,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "vii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 773,
+            "end": 925,
+            "quote": "Still, assuming that speech change flows strictly from high-status civic tongues down to minority dialects misreads the two-way ecology of mixed cities."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 773,
+              "end": 925,
+              "quote": "Still, assuming that speech change flows strictly from high-status civic tongues down to minority dialects misreads the two-way ecology of mixed cities."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "v",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn D nêu tiếng thiểu số chịu 68% điều chỉnh chứ không chi phối truyền thông đại chúng."
+            },
+            {
+              "key": "ii",
+              "type": "too_broad",
+              "whyVi": "Tiêu đề ii nói chung về bằng chứng thích nghi có cấu trúc (đoạn B), bỏ qua điểm cốt lõi về tính hai chiều bất cân xứng ở đoạn D."
+            }
+          ],
+          "steps": [
+            "Nhận diện cấu trúc đoạn D: tiếng thiểu số chịu ảnh hưởng lớn hơn (68%) nhưng ngôn ngữ chủ đạo cũng thay đổi qua trẻ đơn ngữ.",
+            "Kết nối ý 'uneven' và 'two-way ecology' với tiêu đề vii ('Uneven yet mutual').",
+            "Loại v (trái chiều) và ii (thuộc đoạn B)."
+          ],
+          "explanationVi": "Đoạn D làm rõ ảnh hưởng ngữ âm giữa ngôn ngữ đô thị chủ đạo và tiếng di sản tuy không cân bằng nhưng vẫn mang tính hai chiều. Tiêu đề vii diễn đạt chính xác mối quan hệ này."
+        },
+        {
+          "qid": "p3_002_q11",
+          "number": 11,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 268,
+            "end": 487,
+            "quote": "Early dialect surveys leaned heavily on brief word lists read aloud by older rural speakers, a strict method meant to capture archaic speech. That setup dampened casual flow and left out mobile city dwellers altogether."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 268,
+              "end": 487,
+              "quote": "Early dialect surveys leaned heavily on brief word lists read aloud by older rural speakers, a strict method meant to capture archaic speech. That setup dampened casual flow and left out mobile city dwellers altogether."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "detail_only",
+              "whyVi": "Đoạn E chỉ nhắc người nói nông thôn lớn tuổi trong khảo sát phương ngữ, không bàn chuyện trường học nông thôn."
+            },
+            {
+              "key": "v",
+              "type": "keyword_match",
+              "whyVi": "Có cụm 'radio voices' trong đoạn E nhưng chỉ để giải thích lỗi phần mềm phân tích âm, không phải tiếng thiểu số chi phối truyền thông."
+            }
+          ],
+          "steps": [
+            "Đọc câu mở đầu đoạn E đặt câu hỏi vì sao giới ngôn ngữ học phát hiện hiện tượng này muộn.",
+            "Tổng hợp hai nguyên nhân phương pháp: khảo sát danh sách từ nông thôn và phần mềm hiệu chỉnh trên giọng phát thanh.",
+            "Chọn tiêu đề i vì khớp đúng nguyên nhân kỹ thuật thu thập dữ liệu truyền thống bỏ sót dịch chuyển âm đô thị."
+          ],
+          "explanationVi": "Đoạn E giải thích lý do hiện tượng dịch chuyển ngữ âm đô thị bị bỏ sót lâu dài bắt nguồn từ phương pháp khảo sát và phần mềm phân tích truyền thống. Tiêu đề i bao quát đúng ý chính."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_002_g3",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "questions": [
+        {
+          "qid": "p3_002_q12",
+          "number": 12,
+          "prompt": "According to Prof Kenji Takahashi, converged urban speech serves as an intentional symbol of ________ that bridges ancestral divisions.",
+          "answer": {
+            "accepted": [
+              "local belonging"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 749,
+              "end": 851,
+              "quote": "Takahashi, by contrast, contends that converged speech acts as a deliberate emblem of local belonging."
+            }
+          ],
+          "steps": [
+            "Tìm tên Prof Kenji Takahashi ở đoạn C và cụm đồng nghĩa với 'intentional symbol of'.",
+            "Khớp cụm 'deliberate emblem of local belonging'.",
+            "Trích nguyên văn 2 từ 'local belonging' đúng giới hạn tối đa hai từ."
+          ],
+          "explanationVi": "Đoạn C nêu Takahashi xem cách nói hội tụ là một 'deliberate emblem of local belonging'. Cụm hai từ khớp hoàn toàn chỗ trống là 'local belonging'."
+        },
+        {
+          "qid": "p3_002_q13",
+          "number": 13,
+          "prompt": "Speech-tracking software tuned on standard radio voices often mistakenly classifies overlapping bilingual vowels as ________.",
+          "answer": {
+            "accepted": [
+              "background noise"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 488,
+              "end": 673,
+              "quote": "Worse still, speech-tracking software tuned on standard radio voices often flags overlapping bilingual vowels as background noise, discarding valuable evidence during automated sorting."
+            }
+          ],
+          "steps": [
+            "Định vị từ khóa 'speech-tracking software' và 'overlapping bilingual vowels' trong đoạn E.",
+            "Đọc trực tiếp cụm 'flags overlapping bilingual vowels as background noise'.",
+            "Điền nguyên văn hai từ 'background noise'."
+          ],
+          "explanationVi": "Đoạn E chỉ ra phần mềm theo dõi giọng nói thường gán nhầm nguyên âm song ngữ chồng lấn là 'background noise'. Đáp án đúng giới hạn từ là 'background noise'."
+        },
+        {
+          "qid": "p3_002_q14",
+          "number": 14,
+          "prompt": "Instead of treating acoustic drift as a symptom of ________, the writer suggests educators view it as proof of a language's adaptability.",
+          "answer": {
+            "accepted": [
+              "linguistic decay"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 841,
+              "end": 1000,
+              "quote": "Rather than branding acoustic drift as linguistic decay, teachers and policy planners would gain far more by treating it as clear proof of living adaptability."
+            }
+          ],
+          "steps": [
+            "Tìm câu kết luận của đoạn F chứa cụm 'proof of living adaptability'.",
+            "Đối chiếu vế đầu câu: 'Rather than branding acoustic drift as linguistic decay'.",
+            "Trích nguyên văn 2 từ 'linguistic decay'."
+          ],
+          "explanationVi": "Câu cuối đoạn F đối lập cách gắn mác 'linguistic decay' với bằng chứng rõ ràng về khả năng thích nghi sống động. Cụm từ chính xác cần điền là 'linguistic decay'."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

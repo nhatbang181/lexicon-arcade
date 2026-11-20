@@ -1,0 +1,537 @@
+{
+  "id": "rp:p3_001",
+  "level": "P3",
+  "title": "The Paradox of Algorithmic Confidence in Diagnostic Judgement",
+  "subtitle": "Why clinicians struggle to calibrate trust when statistical decision aids accompany routine medical assessments",
+  "topic": "psychology",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across regional clinics and hospital imaging units, statistical software tools now assist with roughly 64 per cent of first-stage medical reviews. Yet impressive test scores on archived patient files have rarely produced matching gains in everyday ward care. Software engineers usually evaluate these platforms by measuring how accurately they flag disease in controlled retrospective trials. They assume that busy clinicians will simply accept sound advice from the screen and reject the occasional mistake. In real clinical practice, however, human judgement seldom works like a neat addition of machine precision to clinical skill. Whenever a digital screen places a crisp probability score beside a scan or laboratory chart, it subtly shifts how a doctor weighs uncertainty and allocates limited mental effort. Treating such tools as neutral mirrors of statistical fact therefore misses a deep mental bias built into the act of using them."
+    },
+    {
+      "label": "B",
+      "text": "The most widely studied risk in computer-aided diagnosis is automation complacency, whereby clinicians defer to software outputs even when visible physical signs point in another direction. In a 2022 laboratory study of 180 resident doctors across three teaching hospitals, psychologist Dr Helen Marsh examined how displayed certainty scores reshape visual inspection. Whenever the interface presented a confidence rating above 85 per cent, doctors reduced the time spent reviewing secondary scan areas by 41 per cent. They also missed nearly twice as many subtle lung lesions outside the marked zone. Marsh also found that senior staff were hardly immune to this habit once fatigue built up late in a long shift. Although confident prompts might be expected to free mental capacity for deeper clinical reasoning, the opposite often unfolds in practice. Instead, high-certainty screen alerts routinely lull human reviewers into premature closure, cutting their search short before sound rival causes have been ruled out."
+    },
+    {
+      "label": "C",
+      "text": "Surprisingly, the opposite failure mode—known as algorithmic aversion—frequently surfaces inside the very same clinics soon after a tool commits a single memorable slip. Between 2019 and 2023, Prof David Okafor tracked 14 regional outpatient teams to observe how medical staff responded to ongoing triage warnings. Once a predictive model produced just two obvious false alarms within a fortnight, doctors brushed aside its subsequent alerts 72 per cent more frequently than actual error rates would justify. Even when later software updates fixed the flaw, clinic trust took several months to recover. By contrast, when a human colleague misread a difficult borderline case, peers rarely abandoned that colleague's later clinical opinions with anything like the same speed. Okafor argues that medical teams hold software to an unreal standard of faultless precision while pardoning equal slips by peers. In his view, clinical culture still prizes narrative intuition over hidden statistical weights."
+    },
+    {
+      "label": "D",
+      "text": "Judging when to trust a predictive system becomes even harder because the certainty figures printed by modern neural networks routinely misstate actual clinical reliability. Most deep-learning models output bold scores even when confronted with patient ages, combined illnesses, or imaging scanners scarce in their original training files—a structural flaw known as distributional shift. A score of 92 per cent may look rock solid on a ward monitor yet carry far higher real error in an older rural cohort. In a 2024 comparative trial, Dr Priya Nair replaced exact percentage readouts with three broader qualitative risk bands: low, moderate, and elevated. That modest interface revision lowered unwise deference to erroneous warnings by 28 per cent without reducing overall disease detection. As Nair's work shows, false decimal detail gives software an unearned aura of hard science. It tempts stretched doctors to drop independent checks at the very moment a statistical model is guessing well past its safe data bounds."
+    },
+    {
+      "label": "E",
+      "text": "Individual psychology alone cannot explain why questionable machine advice continues to shape routine ward choices; institutional rules and legal anxiety push equally hard. Inside many contemporary electronic health platforms, disagreeing with a logged software flag obliges a doctor to draft a formal written justification explaining the departure. During a crowded evening shift, writing that extra note can delay the next patient by several minutes. Concurring with the platform, by contrast, leaves an immediate, frictionless audit trail that requires only seconds to approve during a hectic clinic. As a result, even sceptical clinicians often accept a machine prompt as a defensive step to shield themselves from future lawsuits if a rare setback occurs. Sociologist Prof Martin Lindqvist argues that this one-sided paperwork builds quiet compliance into daily ward life. Without formal open debate or clear legal sign-off, advisory software slowly turns into a binding rule."
+    },
+    {
+      "label": "F",
+      "text": "Resolving this paradox means rejecting both nostalgic proposals to ban statistical decision aids and glib assurances that keeping a human reviewer in the loop guarantees clinical safety. A more constructive route lies in cognitive-forcing designs that ask doctors to log a provisional hypothesis and inspect raw clinical clues before any machine score appears on screen. Only after the doctor records an initial view does the platform reveal its own risk band and key image markers. In a 2025 pilot trial involving 96 diagnostic specialists across five hospitals, delayed screen hints preserved independent analytical reasoning and detected 34 per cent more software mistakes than standard simultaneous displays. Better still, the extra cognitive step added fewer than forty seconds to each patient review. In the end, lasting gains in diagnostic care rely far less on chasing slight rises in model test scores than on building daily workflows that guard deliberate human scepticism."
+    }
+  ],
+  "wordCount": 894,
+  "glossary": [
+    {
+      "term": "automation complacency",
+      "meaningVi": "tâm lý ỷ lại vào hệ thống tự động, giảm cảnh giác khi có gợi ý từ máy"
+    },
+    {
+      "term": "premature closure",
+      "meaningVi": "kết luận chẩn đoán quá sớm trước khi loại trừ đủ khả năng khác"
+    },
+    {
+      "term": "distributional shift",
+      "meaningVi": "sự lệch phân phối dữ liệu giữa tập huấn luyện và bệnh nhân thực tế"
+    },
+    {
+      "term": "audit trail",
+      "meaningVi": "hồ sơ lưu vết quy trình phục vụ kiểm tra và truy cứu trách nhiệm"
+    },
+    {
+      "term": "cognitive-forcing",
+      "meaningVi": "thiết kế buộc người dùng tự suy luận trước khi xem gợi ý từ hệ thống"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_001_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_001_q01",
+          "number": 1,
+          "prompt": "Viewing diagnostic software as an impartial reflection of statistical data adequately captures its psychological effect on clinical decision-making.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 815,
+              "end": 943,
+              "quote": "Treating such tools as neutral mirrors of statistical fact therefore misses a deep mental bias built into the act of using them."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "steps": [
+            "Xác định từ khóa: impartial reflection of statistical data và psychological effect ở đoạn A.",
+            "Đối chiếu lập trường tác giả: tác giả khẳng định xem công cụ là 'neutral mirrors of statistical fact' sẽ bỏ sót thiên lệch tâm lý ăn sâu trong quá trình sử dụng.",
+            "Nhận định mâu thuẫn trực tiếp với quan điểm tác giả nên chọn NO."
+          ],
+          "explanationVi": "Tác giả bác bỏ cách nhìn xem phần mềm là tấm gương trung lập của dữ liệu thống kê. Cách nhìn này bỏ sót thiên lệch tâm lý sâu sắc phát sinh ngay khi bác sĩ sử dụng công cụ."
+        },
+        {
+          "qid": "p3_001_q02",
+          "number": 2,
+          "prompt": "Veteran medical specialists remain susceptible to excessive dependence on automated prompts when tired.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 602,
+              "end": 713,
+              "quote": "Marsh also found that senior staff were hardly immune to this habit once fatigue built up late in a long shift."
+            }
+          ],
+          "trapType": "qualifier",
+          "steps": [
+            "Tìm thông tin về nhân viên giàu kinh nghiệm và sự mệt mỏi tại đoạn B.",
+            "Diễn giải cụm 'hardly immune to this habit' tương đương 'remain susceptible to excessive dependence' khi 'fatigue built up'.",
+            "Khớp hoàn toàn với ý tác giả trình bày nên chọn YES."
+          ],
+          "explanationVi": "Đoạn B nêu rõ các bác sĩ thâm niên hầu như không miễn nhiễm với thói quen ỷ lại phần mềm khi mệt mỏi tích tụ cuối ca trực. Đây là diễn đạt đồng nghĩa với câu hỏi."
+        },
+        {
+          "qid": "p3_001_q03",
+          "number": 3,
+          "prompt": "Patients generally express greater satisfaction with diagnoses derived from human judgement than with those informed by statistical models.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 775,
+              "end": 1000,
+              "quote": "Okafor argues that medical teams hold software to an unreal standard of faultless precision while pardoning equal slips by peers. In his view, clinical culture still prizes narrative intuition over hidden statistical weights."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Rà soát đoạn C nơi so sánh phán đoán con người và mô hình thống kê.",
+            "Nhận thấy bài chỉ bàn về thái độ của đội ngũ y tế ('medical teams') chứ không hề nhắc đến mức độ hài lòng của bệnh nhân ('Patients').",
+            "Không có căn cứ xác định quan điểm tác giả nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn C chỉ phân tích cách đội ngũ y tế đánh giá trực giác con người cao hơn trọng số thống kê. Bài viết không đề cập đến cảm nhận hay sự hài lòng của bệnh nhân."
+        },
+        {
+          "qid": "p3_001_q04",
+          "number": 4,
+          "prompt": "Presenting algorithmic uncertainty as exact percentage figures encourages doctors to verify unusual cases more carefully.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 794,
+              "end": 1023,
+              "quote": "As Nair's work shows, false decimal detail gives software an unearned aura of hard science. It tempts stretched doctors to drop independent checks at the very moment a statistical model is guessing well past its safe data bounds."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Tìm đoạn bàn về hiển thị phần trăm chính xác và số thập phân ở đoạn D.",
+            "So sánh tác động: tác giả cho rằng chi tiết thập phân giả tạo khiến bác sĩ bỏ qua kiểm tra độc lập ('drop independent checks') chứ không cẩn trọng hơn.",
+            "Quan điểm trái ngược hoàn toàn nên chọn NO."
+          ],
+          "explanationVi": "Tác giả khẳng định chi tiết thập phân giả tạo khiến bác sĩ bận rộn bỏ qua bước kiểm tra độc lập ngay khi mô hình suy đoán vượt giới hạn dữ liệu. Điều này trái ngược với câu hỏi."
+        },
+        {
+          "qid": "p3_001_q05",
+          "number": 5,
+          "prompt": "Hospitals requiring written explanations for rejecting software alerts have recorded fewer medical negligence lawsuits over the past decade.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 604,
+              "end": 760,
+              "quote": "As a result, even sceptical clinicians often accept a machine prompt as a defensive step to shield themselves from future lawsuits if a rare setback occurs."
+            }
+          ],
+          "trapType": "extra_claim",
+          "steps": [
+            "Định vị nội dung về giải trình bằng văn bản và kiện tụng ở đoạn E.",
+            "Bài chỉ giải thích bác sĩ làm theo máy để phòng ngừa rủi ro kiện tụng, không đưa số liệu hay nhận định nào về việc số vụ kiện có giảm hay không.",
+            "Thông tin bị suy diễn thêm nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn E chỉ nói bác sĩ chấp nhận gợi ý phần mềm như biện pháp phòng thủ trước nguy cơ kiện tụng. Tác giả không hề nêu số vụ kiện sơ suất y khoa có giảm trong thập kỷ qua hay không."
+        },
+        {
+          "qid": "p3_001_q06",
+          "number": 6,
+          "prompt": "Redesigning clinical workflows to sustain sceptical human oversight matters more than achieving minor increases in predictive accuracy.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 807,
+              "end": 983,
+              "quote": "In the end, lasting gains in diagnostic care rely far less on chasing slight rises in model test scores than on building daily workflows that guard deliberate human scepticism."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Đọc câu kết luận cuối đoạn F nêu lập trường tổng thể của tác giả.",
+            "Đối chiếu so sánh: 'rely far less on chasing slight rises in model test scores than on building daily workflows' khớp trực tiếp với 'matters more than'.",
+            "Đồng nhất với quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Câu cuối đoạn F khẳng định cải thiện chẩn đoán bền vững phụ thuộc nhiều vào việc xây dựng quy trình bảo vệ sự hoài nghi có chủ đích của con người hơn là nâng nhẹ điểm kiểm thử mô hình."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why precise figures can mask algorithmic unreliability"
+        },
+        {
+          "key": "ii",
+          "text": "How administrative and legal pressures foster passive agreement"
+        },
+        {
+          "key": "iii",
+          "text": "Proof that experienced doctors consistently outperform diagnostic software"
+        },
+        {
+          "key": "iv",
+          "text": "Restructuring consultation sequences to preserve independent thought"
+        },
+        {
+          "key": "v",
+          "text": "The tendency to relax clinical vigilance when software appears certain"
+        },
+        {
+          "key": "vi",
+          "text": "Comparing the financial investment needed to train hospital algorithms"
+        },
+        {
+          "key": "vii",
+          "text": "Unequal tolerance for mistakes committed by machines and people"
+        },
+        {
+          "key": "viii",
+          "text": "Public opposition to automated screening in regional hospitals"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_001_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 854,
+            "end": 1020,
+            "quote": "Instead, high-certainty screen alerts routinely lull human reviewers into premature closure, cutting their search short before sound rival causes have been ruled out."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 854,
+              "end": 1020,
+              "quote": "Instead, high-certainty screen alerts routinely lull human reviewers into premature closure, cutting their search short before sound rival causes have been ruled out."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn B nói bác sĩ thâm niên vẫn dễ ỷ lại vào máy khi mệt, không phải chứng minh họ vượt trội phần mềm."
+            },
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Vấn đề con số chính xác che giấu độ thiếu tin cậy là trọng tâm của đoạn D chứ không phải đoạn B."
+            }
+          ],
+          "steps": [
+            "Đọc toàn bộ đoạn B, nhận diện câu tổng hợp ý chính ở cuối đoạn về 'automation complacency' và 'premature closure'.",
+            "Khớp ý giảm cảnh giác khi phần mềm hiển thị độ chắc chắn cao với tiêu đề v.",
+            "Loại iii (ngược ý) và i (thuộc đoạn D)."
+          ],
+          "explanationVi": "Đoạn B tập trung phân tích hiện tượng bác sĩ giảm cảnh giác và kết luận sớm khi phần mềm hiển thị mức độ chắc chắn cao. Tiêu đề v tóm gọn đúng trọng tâm này."
+        },
+        {
+          "qid": "p3_001_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "vii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 775,
+            "end": 904,
+            "quote": "Okafor argues that medical teams hold software to an unreal standard of faultless precision while pardoning equal slips by peers."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 775,
+              "end": 904,
+              "quote": "Okafor argues that medical teams hold software to an unreal standard of faultless precision while pardoning equal slips by peers."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "v",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C nói về phản ứng bác bỏ phần mềm sau sai sót (algorithmic aversion), trái ngược với tâm lý ỷ lại ở v."
+            },
+            {
+              "key": "viii",
+              "type": "too_broad",
+              "whyVi": "Đoạn C chỉ bàn thái độ của bác sĩ tại phòng khám, không nói về sự phản đối của công chúng."
+            }
+          ],
+          "steps": [
+            "Tìm ý trung tâm đoạn C: bác sĩ đòi hỏi máy móc hoàn hảo nhưng dễ tha thứ lỗi tương tự từ đồng nghiệp.",
+            "Đối chiếu với danh sách tiêu đề, tiêu đề vii nêu chính xác sự khoan dung bất cân xứng giữa lỗi của máy và người.",
+            "Loại v (trái chiều) và viii (quá rộng, sai đối tượng)."
+          ],
+          "explanationVi": "Đoạn C đối chiếu cách đội ngũ y tế nhanh chóng quay lưng với phần mềm sau hai cảnh báo sai nhưng lại rộng lượng hơn với sai sót của đồng nghiệp. Do đó tiêu đề vii phù hợp nhất."
+        },
+        {
+          "qid": "p3_001_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 794,
+            "end": 1023,
+            "quote": "As Nair's work shows, false decimal detail gives software an unearned aura of hard science. It tempts stretched doctors to drop independent checks at the very moment a statistical model is guessing well past its safe data bounds."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 794,
+              "end": 1023,
+              "quote": "As Nair's work shows, false decimal detail gives software an unearned aura of hard science. It tempts stretched doctors to drop independent checks at the very moment a statistical model is guessing well past its safe data bounds."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "keyword_match",
+              "whyVi": "Mượn từ khóa về huấn luyện thuật toán nhưng đoạn D bàn về độ lệch dữ liệu huấn luyện chứ không bàn chi phí tài chính."
+            },
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề v thuộc đoạn B về mức độ chắc chắn cao gây kết luận sớm nói chung, còn đoạn D xoáy vào lỗi hiệu chỉnh con số phần trăm."
+            }
+          ],
+          "steps": [
+            "Xác định chủ đề đoạn D: điểm xác suất chi tiết gây ảo giác khoa học khi mô hình gặp distributional shift.",
+            "Kết nối với nghiên cứu của Dr Priya Nair về thay thế phần trăm bằng ba dải định tính.",
+            "Chọn tiêu đề i vì bao quát đúng nguyên nhân các con số chi tiết che giấu sự thiếu tin cậy."
+          ],
+          "explanationVi": "Đoạn D giải thích cách các con số phần trăm chính xác giả tạo che giấu sự suy giảm độ tin cậy của mô hình ngoài phạm vi dữ liệu huấn luyện. Tiêu đề i phản ánh trọn vẹn lập luận này."
+        },
+        {
+          "qid": "p3_001_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 761,
+            "end": 981,
+            "quote": "Sociologist Prof Martin Lindqvist argues that this one-sided paperwork builds quiet compliance into daily ward life. Without formal open debate or clear legal sign-off, advisory software slowly turns into a binding rule."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 761,
+              "end": 981,
+              "quote": "Sociologist Prof Martin Lindqvist argues that this one-sided paperwork builds quiet compliance into daily ward life. Without formal open debate or clear legal sign-off, advisory software slowly turns into a binding rule."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "too_broad",
+              "whyVi": "Đoạn E đề cập đến kiện tụng và thủ tục nội bộ bệnh viện chứ không phải sự phản đối từ công chúng."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Thiết kế lại trình tự thăm khám là giải pháp của đoạn F, không phải nguyên nhân thể chế ở đoạn E."
+            }
+          ],
+          "steps": [
+            "Tóm tắt đoạn E: thủ tục giải trình khi bác bỏ máy và nỗi lo pháp lý thúc đẩy sự tuân thủ thụ động.",
+            "Đối chiếu với tiêu đề ii về áp lực hành chính và pháp lý nuôi dưỡng sự đồng thuận thụ động.",
+            "Loại iv (thuộc đoạn F) và viii (sai phạm vi)."
+          ],
+          "explanationVi": "Đoạn E phân tích áp lực giấy tờ hành chính và nỗi sợ kiện tụng khiến ngay cả bác sĩ hoài nghi cũng im lặng nghe theo gợi ý phần mềm. Tiêu đề ii diễn đạt chính xác ý chính đó."
+        },
+        {
+          "qid": "p3_001_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 187,
+            "end": 370,
+            "quote": "A more constructive route lies in cognitive-forcing designs that ask doctors to log a provisional hypothesis and inspect raw clinical clues before any machine score appears on screen."
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 187,
+              "end": 370,
+              "quote": "A more constructive route lies in cognitive-forcing designs that ask doctors to log a provisional hypothesis and inspect raw clinical clues before any machine score appears on screen."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Áp lực hành chính và pháp lý được bàn ở đoạn E, không phải giải pháp thiết kế quy trình ở đoạn F."
+            },
+            {
+              "key": "iii",
+              "type": "detail_only",
+              "whyVi": "Đoạn F nêu tỷ lệ phát hiện lỗi máy tăng 34% trong thử nghiệm nhưng không chứng minh bác sĩ luôn vượt trội phần mềm."
+            }
+          ],
+          "steps": [
+            "Nhận diện đoạn F đưa ra giải pháp thiết kế giao diện trì hoãn hiển thị gợi ý thuật toán.",
+            "Đối chiếu với tiêu đề iv: sắp xếp lại trình tự thăm khám để bảo vệ tư duy độc lập.",
+            "Loại ii (đoạn trước) và iii (diễn giải sai chi tiết)."
+          ],
+          "explanationVi": "Đoạn F đề xuất giải pháp yêu cầu bác sĩ tự lập giả thuyết trước khi xem kết quả thuật toán nhằm duy trì tư duy độc lập. Tiêu đề iv tóm tắt chính xác nội dung này."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_001_g3",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Empirical studies of diagnostic decision aids expose two opposing behavioural pitfalls. When automated platforms present high confidence scores, clinicians frequently experience premature [Q12], devoting less scrutiny to secondary findings. Conversely, after encountering only two clear software errors, doctors may dismiss later advice because medical culture favours narrative [Q13] over hidden statistical weights. To safeguard independent judgement without delaying consultations, researchers advocate cognitive-forcing designs that prompt doctors to log a provisional [Q14] before viewing machine assessments.",
+      "questions": [
+        {
+          "qid": "p3_001_q12",
+          "number": 12,
+          "prompt": "Complete gap [Q12] in the summary using ONE WORD ONLY from the passage.",
+          "answer": {
+            "accepted": [
+              "closure"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 854,
+              "end": 1020,
+              "quote": "Instead, high-certainty screen alerts routinely lull human reviewers into premature closure, cutting their search short before sound rival causes have been ruled out."
+            }
+          ],
+          "steps": [
+            "Xác định từ loại cần điền sau tính từ 'premature': một danh từ số ít hoặc không đếm được.",
+            "Định vị câu nói về điểm chắc chắn cao và cắt ngắn kiểm tra ở đoạn B.",
+            "Trích nguyên văn 1 từ 'closure' từ cụm 'premature closure'."
+          ],
+          "explanationVi": "Đoạn B nêu rõ cảnh báo chắc chắn cao thường đưa bác sĩ vào trạng thái 'premature closure' (kết luận quá sớm). Từ đơn duy nhất khớp ngữ pháp và ngữ nghĩa là 'closure'."
+        },
+        {
+          "qid": "p3_001_q13",
+          "number": 13,
+          "prompt": "Complete gap [Q13] in the summary using ONE WORD ONLY from the passage.",
+          "answer": {
+            "accepted": [
+              "intuition"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 905,
+              "end": 1000,
+              "quote": "In his view, clinical culture still prizes narrative intuition over hidden statistical weights."
+            }
+          ],
+          "steps": [
+            "Tìm cụm tương đương 'medical culture favours narrative ___ over hidden statistical weights' ở đoạn C.",
+            "Xác định cụm nguyên văn 'prizes narrative intuition over hidden statistical weights'.",
+            "Điền 1 từ duy nhất 'intuition'."
+          ],
+          "explanationVi": "Đoạn C viết văn hóa lâm sàng vẫn đề cao 'narrative intuition' hơn các trọng số thống kê ẩn. Do đó từ cần điền là 'intuition'."
+        },
+        {
+          "qid": "p3_001_q14",
+          "number": 14,
+          "prompt": "Complete gap [Q14] in the summary using ONE WORD ONLY from the passage.",
+          "answer": {
+            "accepted": [
+              "hypothesis"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 187,
+              "end": 370,
+              "quote": "A more constructive route lies in cognitive-forcing designs that ask doctors to log a provisional hypothesis and inspect raw clinical clues before any machine score appears on screen."
+            }
+          ],
+          "steps": [
+            "Xác định chỗ trống sau 'a provisional ___' cần một danh từ đếm được số ít.",
+            "Định vị phần 'cognitive-forcing designs' ở đoạn F với cụm 'log a provisional hypothesis'.",
+            "Trích nguyên văn từ 'hypothesis'."
+          ],
+          "explanationVi": "Đoạn F giải thích thiết kế ép tư duy yêu cầu bác sĩ ghi nhận một 'provisional hypothesis' trước khi xem điểm của máy. Từ đơn chính xác là 'hypothesis'."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

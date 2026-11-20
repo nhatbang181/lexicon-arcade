@@ -1,0 +1,167 @@
+{
+  "id": "rp:p3_005",
+  "level": "P3",
+  "reserved": false,
+  "title": "The Limits of Explainability in Autonomous Maritime Routing",
+  "subtitle": "Why transparent explanations do not always make algorithmic ship navigation safer or easier to supervise",
+  "topic": "technology",
+  "wordCount": 872,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Over the past decade, commercial cargo fleets have begun deploying autonomous routing software to plot fuel-saving ocean tracks across shifting currents and crowded coastal lanes. Early sea trials across northern shipping corridors cut bunker-fuel burn by up to 11 per cent on medium-range crossings, drawing brisk backing from vessel owners facing stricter carbon rules. Fleet managers saw clear gains in both lower fuel bills and tighter arrival schedules. Yet maritime insurers and port regulators quickly demanded that every steering decision be paired with a clear human-readable explanation before wider bridge automation could proceed. At first glance, insisting on plain-language explanations looks like an obvious safeguard against opaque black-box navigation. Who would trust a giant container hull to a silent formula? In practice, however, forcing complex neural planners to narrate their internal logic onto bridge screens introduces thorny technical and human-factors limits that policymakers routinely underestimate."
+    },
+    {
+      "label": "B",
+      "text": "Modern marine routing models perform well precisely because they weigh hundreds of shifting variables at once—wave height, hull draft, seabed depth, radar clutter, and nearby vessel speeds. All of these signals interact inside dense mathematical networks that resist neat verbal rules. To satisfy oversight panels, software vendors often bolt on secondary explainer modules that boil complex matrix weights down to tidy one-line notes such as 'port turn advised due to swell'. In a 2023 simulator audit of 120 coastal manoeuvres, systems engineer Dr Yuna Park discovered that these post-hoc explanation layers misrepresented the primary neural trigger in 27 per cent of near-miss scenarios. Sometimes the network actually turned to avoid a faint radar echo rather than sea swell. Worse still, bridge crews rarely spotted the mismatch in real time. Park warns that smooth verbal summaries can mask the genuine mathematical basis of a steering choice, creating a false sense of clarity on the bridge."
+    },
+    {
+      "label": "C",
+      "text": "Even when a machine explanation stays technically faithful, time pressure at sea imposes strict human limits. Deck officers guiding heavy ships through narrow misty straits rarely have two quiet minutes to scan multi-factor trade-off charts. In a 2022 bridge-simulator study with 84 licensed watch officers, maritime psychologist Dr Owen Fitzsimmons compared minimal visual risk cones against detailed text rationales during sudden fishing-vessel crossings. Officers given verbose explanations reacted 3.4 seconds slower on average and made 19 per cent more late rudder corrections than peers viewing compact spatial overlays. Several participants also reported eye strain and split focus while trying to read screen paragraphs beside live radar tracks. In tight coastal water, a delay of three seconds can narrow safe stopping room sharply. Fitzsimmons concludes that flooding a stressed watchkeeper with verbal justification weakens situational awareness at the exact moments when swift spatial judgement counts most."
+    },
+    {
+      "label": "D",
+      "text": "Explainable alerts also collide with long-standing maritime law and the unwritten craft of seamanship. Global collision rules were written around human lookouts exercising what statutes term the ordinary practice of seamen. In real ports, that craft blends formal right-of-way codes with brief radio courtesies exchanged between captains. Maritime legal scholar Dr Nadia Haddad examined 16 port-authority inquiries conducted between 2019 and 2024 involving semi-autonomous trial craft. She found that shore supervisors repeatedly struggled to pin down legal blame when an autonomous vessel obeyed strict fuel-and-clearance rules yet violated local harbour courtesy, startling nearby pilot boats. Even complete screen logs failed to settle liability cleanly in tribunal hearings. Courts could read what the code wrote, yet still lacked clear rules on who owed care. Haddad argues that technical explainability alone cannot resolve fault disputes until maritime statutes define clear legal duties for remote supervisors and software vendors alike."
+    },
+    {
+      "label": "E",
+      "text": "None of this implies that transparent decision records have no place in shipping safety; their value simply peaks away from live danger. While real-time bridge prose runs into severe cognitive ceilings, structured data logs prove highly effective during calm post-voyage audits and crew training. Marine safety engineer Prof Ingrid Solberg evaluated post-voyage review boards across seven coastal ferry companies in 2024 to test how crews used archived routing records. Inspecting counterfactual traces—charts showing which rival tracks the software rejected and why—helped fleet teams spot recurring sensor blind spots 45 per cent faster than standard paper incident files. Crew members also built more realistic mental maps of when the software might falter in rough chop. Junior officers gained clear lessons without facing split-second stress at the helm. Solberg contends that explainability works best as an offline auditing and training instrument rather than a live conversational partner during tight harbour approaches."
+    },
+    {
+      "label": "F",
+      "text": "The policy debate over autonomous shipping has been skewed by a comforting assumption that getting an algorithm to explain itself in English equals making it trustworthy. Yet safe seafaring has never depended on mariners inspecting the internal physics of a radar magnetron or diesel governor during a gale. Instead, marine safety rests on strict operating limits, proven fallback gear, and clear human handover drills practised long before trouble strikes. Crews need to know where a tool stops working, not read an essay in heavy fog. Regulators should therefore stop demanding conversational explanations during live bridge emergencies, where extra words can do genuine harm. Far greater protection comes from enforcing verifiable safety envelopes—hard operational boundaries that guarantee predictable ship behaviour and trigger safe speed cuts whenever sensors degrade or sea lanes turn chaotic."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_005_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_005_q01",
+          "number": 1,
+          "prompt": "Policymakers frequently overlook the practical drawbacks of requiring autonomous ship software to justify its choices on bridge screens."
+        },
+        {
+          "qid": "p3_005_q02",
+          "number": 2,
+          "prompt": "Bolt-on explainer modules reliably identify the true mathematical trigger behind every automated steering adjustment."
+        },
+        {
+          "qid": "p3_005_q03",
+          "number": 3,
+          "prompt": "Displaying thorough text rationales helps bridge watch officers respond more swiftly to sudden hazards at sea."
+        },
+        {
+          "qid": "p3_005_q04",
+          "number": 4,
+          "prompt": "Veteran ferry captains express greater trust in autonomous routing tools than newly licensed deck officers do."
+        },
+        {
+          "qid": "p3_005_q05",
+          "number": 5,
+          "prompt": "Maritime insurance firms now grant discounted premiums to fleets that adopt offline counterfactual auditing tools."
+        },
+        {
+          "qid": "p3_005_q06",
+          "number": 6,
+          "prompt": "Maritime regulators would deliver stronger safety gains by enforcing strict operational boundaries rather than demanding live verbal explanations."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_005_g2",
+      "type": "matching_info",
+      "instructions": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_005_q07",
+          "number": 7,
+          "prompt": "An analogy comparing autonomous navigation tools with older mechanical and electronic bridge equipment"
+        },
+        {
+          "qid": "p3_005_q08",
+          "number": 8,
+          "prompt": "A fuel-reduction figure recorded during early trials along northern shipping corridors"
+        },
+        {
+          "qid": "p3_005_q09",
+          "number": 9,
+          "prompt": "A clash between strict rule-following by navigation software and unwritten local harbour conventions"
+        },
+        {
+          "qid": "p3_005_q10",
+          "number": 10,
+          "prompt": "A direct test contrasting compact visual warnings against wordy text displays during a sudden crossing"
+        }
+      ]
+    },
+    {
+      "groupId": "p3_005_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 11–13) and the list of researchers below. Match each statement with the correct researcher, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Yuna Park"
+        },
+        {
+          "key": "B",
+          "text": "Dr Owen Fitzsimmons"
+        },
+        {
+          "key": "C",
+          "text": "Dr Nadia Haddad"
+        },
+        {
+          "key": "D",
+          "text": "Prof Ingrid Solberg"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_005_q11",
+          "number": 11,
+          "prompt": "Transparent routing logs prove far more useful for post-trip reviews and crew training than for live coastal navigation."
+        },
+        {
+          "qid": "p3_005_q12",
+          "number": 12,
+          "prompt": "Plausible one-line summaries attached to neural navigation tools can disguise the genuine mathematical reason for a turn."
+        },
+        {
+          "qid": "p3_005_q13",
+          "number": 13,
+          "prompt": "Settling fault after autonomous vessel incidents requires updating formal maritime statutes rather than relying on technical logs alone."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "id": "rp:p2_003",
+  "level": "P2",
+  "title": "Circadian Lighting in Hospital Recovery Wards",
+  "subtitle": "How tuneable LED panels that mirror outdoor daylight are reshaping patient sleep and ward design",
+  "topic": "health",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Conventional hospital wards were built for clinical clarity rather than human sleep biology. Overhead fluorescent tubes cast flat, unchanging light at roughly 300 to 400 lux from early morning until late evening, while bright corridor lamps and bedside screens create harsh glare long after midnight. For patients recovering from major surgery or stroke, that steady glow weakens the body's internal 24-hour clock. Natural daylight enters through windows unevenly, leaving patients in inner bays short of crisp morning light. Many spend days unsure whether it is noon or dusk, and disrupted sleep soon erodes both mood and appetite. Over the past decade, architects and sleep scientists have worked together on dynamic lighting systems that shift both brightness and colour across the day, mimicking natural outdoor sunlight inside enclosed recovery wards."
+    },
+    {
+      "label": "B",
+      "text": "Why light colour matters as much as raw brightness became clear only after scientists found a distinct class of light-sensing cells in the human retina early in the twenty-first century. Unlike rods and cones, which form visual images, these ganglion cells hold a pigment called melanopsin that reacts most strongly to short-wavelength blue light near 480 nanometres. When bright, cool-white light reaches the eye in the morning, signals pass straight to a tiny cluster of nerve cells in the brain's hypothalamus. That pulse halts output of the sleep hormone melatonin and sharpens daytime alertness. Without that crisp morning cue, internal clocks begin to drift within days. By evening, warm amber light lacking blue wavelengths lets melatonin levels climb steadily, preparing the body for deeper, less broken rest through the night."
+    },
+    {
+      "label": "C",
+      "text": "Clinical trials have started to test whether this biological insight aids real recovery. Between 2020 and 2023, neurologist Dr Fiona Mercer led a controlled study across two stroke rehabilitation wards at a regional teaching hospital. Each ward admitted patients of similar age and clinical severity across the three-year window. One ward kept standard fixed fluorescent lamps, while a refurbished twin ward fitted tuneable ceiling panels set to peak at 1,000 lux of cool light before noon and fade to a warm 50-lux glow after 8 p.m. Patients in the circadian ward slept an average of 48 minutes longer each night and showed a 22% drop in episodes of nocturnal confusion, a frequent setback after brain injury. Nurses also logged fewer requests for sedative tablets, although average total length of stay fell by only 1.4 days—a modest gain that varied widely between patients."
+    },
+    {
+      "label": "D",
+      "text": "Even carefully programmed ward lighting runs into a practical clash after sunset. Patients need dim, warm rooms to keep melatonin rising, yet nurses checking intravenous drips, reading tiny drug labels, and logging vital signs require crisp visibility to prevent clinical errors. Early pilots that dimmed entire wards too sharply drew complaints from night-shift staff, who reported eye strain and heavy drowsiness around 3 a.m. Several nurses even propped corridor doors open to borrow extra hall light. Hospital ergonomist Prof Alistair Reid notes that newer designs ease much of this friction by pairing low amber ambient lighting with focused portable task lamps and softly lit nurse stations shielded from patient beds. Even so, some veteran clinicians remain sceptical that warm corridor light offers enough safety during sudden midnight emergencies."
+    },
+    {
+      "label": "E",
+      "text": "Circadian systems rarely deliver identical gains across every patient group. As people age, the natural lens inside the eye slowly yellows and thickens, blocking a large share of incoming blue light. Consequently, an 80-year-old recovering from hip surgery may need nearly twice the morning light intensity of a young adult to trigger the same hormonal signal. Patients taking certain eye drops or recovering from cataract surgery also respond unevenly. Room layout adds further hurdles. Ceiling fixtures pour bright light onto tabletops, yet patients lying flat or facing away from overhead panels often receive far less light at eye level than designers modelled. Glossy walls and misaligned blinds can also create unwanted glare. Without careful bed placement, matte finishes, and routine sensor checks, even costly lighting upgrades often underperform."
+    },
+    {
+      "label": "F",
+      "text": "Financial structure has also slowed wide rollout across public health systems. Fitting dynamic LED arrays and automated control software typically costs 30% to 45% more than replacing old tubes with fixed standard LEDs. Maintenance teams also require extra training to keep wall sensors and dimmers properly calibrated. Because hospital estates budgets are frequently kept separate from clinical pharmacy and staffing budgets, facility managers have often hesitated to fund upgrades whose savings appear on another department's balance sheet. However, falling LED prices and updated national building codes are steadily closing that gap. Since 2024, three regional health trusts have required tuneable circadian lighting in all newly built stroke and intensive-care wings, while leaving older general wards on conventional fixtures until routine renovations fall due."
+    }
+  ],
+  "wordCount": 780,
+  "glossary": [
+    {
+      "term": "lux",
+      "meaningVi": "đơn vị đo độ rọi ánh sáng trên một bề mặt"
+    },
+    {
+      "term": "melanopsin",
+      "meaningVi": "sắc tố cảm quang trong võng mạc đặc biệt nhạy với ánh sáng xanh lam, giúp điều chỉnh nhịp sinh học"
+    },
+    {
+      "term": "melatonin",
+      "meaningVi": "hoóc-môn do não tiết ra vào buổi tối giúp cơ thể buồn ngủ và duy trì giấc ngủ"
+    },
+    {
+      "term": "nocturnal confusion",
+      "meaningVi": "tình trạng lú lẫn, mất phương hướng vào ban đêm thường gặp ở bệnh nhân lớn tuổi hoặc sau đột quỵ"
+    },
+    {
+      "term": "ergonomist",
+      "meaningVi": "chuyên gia thiết kế môi trường làm việc phù hợp với khả năng sinh lý và an toàn của con người"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_003_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_003_q01",
+          "number": 1,
+          "prompt": "Standard hospital wards rely on constant artificial lighting that fails to mirror natural daily shifts in daylight.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 93,
+              "end": 300,
+              "quote": "Overhead fluorescent tubes cast flat, unchanging light at roughly 300 to 400 lux from early morning until late evening, while bright corridor lamps and bedside screens create harsh glare long after midnight."
+            }
+          ],
+          "trapType": "partial_match",
+          "explanationVi": "Đoạn A mô tả phòng bệnh truyền thống dùng đèn huỳnh quang phát ánh sáng phẳng, không đổi suốt ngày và sáng chói cả đêm, trái ngược với hệ thống mới mô phỏng ánh nắng tự nhiên. Chọn TRUE.",
+          "steps": [
+            "Định vị phần mô tả ánh sáng ở phòng bệnh truyền thống trong đoạn A.",
+            "Đối chiếu 'constant artificial lighting' với 'flat, unchanging light' và sự thiếu nhịp ngày đêm tự nhiên.",
+            "Ý khớp hoàn toàn nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_003_q02",
+          "number": 2,
+          "prompt": "Retinal ganglion cells containing melanopsin are mainly responsible for producing sharp visual images.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 187,
+              "end": 367,
+              "quote": "Unlike rods and cones, which form visual images, these ganglion cells hold a pigment called melanopsin that reacts most strongly to short-wavelength blue light near 480 nanometres."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn B phân biệt rõ tế bào que và tế bào nón mới tạo hình ảnh thị giác, còn tế bào hạch chứa melanopsin cảm nhận ánh sáng xanh để điều khiển nhịp sinh học. Nhận định gán nhầm chức năng nên chọn FALSE.",
+          "steps": [
+            "Tìm cụm 'ganglion cells' và 'melanopsin' trong đoạn B.",
+            "Chú ý từ tương phản 'Unlike rods and cones, which form visual images'.",
+            "Tế bào chứa melanopsin không tạo hình ảnh thị giác nên chọn FALSE."
+          ]
+        },
+        {
+          "qid": "p2_003_q03",
+          "number": 3,
+          "prompt": "During Dr Fiona Mercer's trial, individuals placed under tuneable lighting consistently left hospital far sooner than control patients.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 711,
+              "end": 877,
+              "quote": "Nurses also logged fewer requests for sedative tablets, although average total length of stay fell by only 1.4 days—a modest gain that varied widely between patients."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn C ghi thời gian nằm viện trung bình chỉ giảm 1,4 ngày—một mức cải thiện khiêm tốn và dao động lớn giữa các bệnh nhân. Nhận định nói bệnh nhân luôn xuất viện sớm hơn nhiều là mâu thuẫn trực tiếp nên chọn FALSE.",
+          "steps": [
+            "Tìm kết quả về thời gian nằm viện trong thử nghiệm của Tiến sĩ Fiona Mercer ở đoạn C.",
+            "So sánh 'consistently ... much earlier' với 'only 1.4 days—a modest gain that varied widely'.",
+            "Thông tin trái ngược trực tiếp nên chọn FALSE."
+          ]
+        },
+        {
+          "qid": "p2_003_q04",
+          "number": 4,
+          "prompt": "Night-shift nurses in early dimmed-ward trials recorded a higher rate of medication mistakes than daytime nurses.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 280,
+              "end": 428,
+              "quote": "Early pilots that dimmed entire wards too sharply drew complaints from night-shift staff, who reported eye strain and heavy drowsiness around 3 a.m."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn D cho biết nhân viên ca đêm ở các thử nghiệm đầu phàn nàn mỏi mắt và buồn ngủ, nhưng không hề so sánh tỷ lệ sai sót thuốc thực tế giữa ca đêm và ca ngày. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm thông tin về thử nghiệm làm tối toàn bộ phòng bệnh ở đoạn D.",
+            "Kiểm tra xem bài có nêu số liệu hay so sánh về lỗi phát thuốc giữa ca đêm và ca ngày không.",
+            "Không có dữ kiện so sánh tỷ lệ sai sót nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_003_q05",
+          "number": 5,
+          "prompt": "Age-related changes in the eye mean elderly patients typically need brighter morning light than young adults to get the same hormonal response.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 200,
+              "end": 360,
+              "quote": "Consequently, an 80-year-old recovering from hip surgery may need nearly twice the morning light intensity of a young adult to trigger the same hormonal signal."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn E giải thích thủy tinh thể vàng và dày lên theo tuổi làm cản ánh sáng xanh, nên bệnh nhân 80 tuổi có thể cần cường độ sáng buổi sáng gấp gần hai lần người trẻ để tạo cùng tín hiệu hoóc-môn. Chọn TRUE.",
+          "steps": [
+            "Định vị phần nói về sự lão hóa của mắt ở đoạn E.",
+            "Kiểm tra quan hệ nhân-quả giữa biến đổi thủy tinh thể và nhu cầu độ sáng cao hơn ở người cao tuổi.",
+            "Khớp hoàn toàn với bài nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_003_q06",
+          "number": 6,
+          "prompt": "The trio of regional authorities updating hospital building rules in 2024 have already recovered their lighting outlays through lower drug bills.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 638,
+              "end": 867,
+              "quote": "Since 2024, three regional health trusts have required tuneable circadian lighting in all newly built stroke and intensive-care wings, while leaving older general wards on conventional fixtures until routine renovations fall due."
+            }
+          ],
+          "trapType": "keyword_echo",
+          "explanationVi": "Đoạn F nêu ba quỹ y tế vùng bắt buộc lắp đèn nhịp sinh học cho khu mới từ năm 2024 và có nhắc ngân sách dược phẩm ở câu trước, nhưng không nói họ đã hoàn vốn nhờ giảm tiền thuốc hay chưa. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm mốc năm 2024 và 'three regional health trusts' trong đoạn F.",
+            "Kiểm tra xem bài có báo cáo việc hoàn vốn từ tiền thuốc của ba quỹ này hay không.",
+            "Không có thông tin về kết quả hoàn vốn nên chọn NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_003_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "The retinal mechanism linking light wavelengths to sleep hormones"
+        },
+        {
+          "key": "ii",
+          "text": "Patient sleep and recovery outcomes from a controlled ward trial"
+        },
+        {
+          "key": "iii",
+          "text": "Reconciling patient rest with the visual needs of night staff"
+        },
+        {
+          "key": "iv",
+          "text": "Biological and spatial limits that affect real-world results"
+        },
+        {
+          "key": "v",
+          "text": "Budget barriers and selective rollout in new hospital buildings"
+        },
+        {
+          "key": "vi",
+          "text": "Why sleeping pills remain more reliable than light exposure"
+        },
+        {
+          "key": "vii",
+          "text": "How ceiling fixtures guarantee uniform eye-level illumination"
+        },
+        {
+          "key": "viii",
+          "text": "A nationwide ban on fixed fluorescent lamps across all wards"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_003_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 0,
+            "end": 186,
+            "quote": "Why light colour matters as much as raw brightness became clear only after scientists found a distinct class of light-sensing cells in the human retina early in the twenty-first century."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 0,
+              "end": 186,
+              "quote": "Why light colour matters as much as raw brightness became clear only after scientists found a distinct class of light-sensing cells in the human retina early in the twenty-first century."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Kết quả thử nghiệm lâm sàng trên bệnh nhân thuộc đoạn C kế tiếp."
+            },
+            {
+              "key": "vii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn B giải thích cơ chế sinh học ở võng mạc, không bàn về đèn trần trong phòng bệnh."
+            }
+          ],
+          "explanationVi": "Đoạn B giải thích cơ chế tế bào hạch chứa melanopsin cảm nhận bước sóng ánh sáng xanh để ức chế hoặc cho phép tiết melatonin. Tiêu đề i tóm đúng trọng tâm sinh học này.",
+          "steps": [
+            "Đọc đoạn B và xác định chuỗi cơ chế: võng mạc (retina) -> bước sóng xanh (480 nm) -> vùng dưới đồi -> melatonin.",
+            "Loại các tiêu đề thuộc đoạn C hoặc nói về thiết bị đèn trần.",
+            "Chọn tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p2_003_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 89,
+            "end": 234,
+            "quote": "Between 2020 and 2023, neurologist Dr Fiona Mercer led a controlled study across two stroke rehabilitation wards at a regional teaching hospital."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 89,
+              "end": 234,
+              "quote": "Between 2020 and 2023, neurologist Dr Fiona Mercer led a controlled study across two stroke rehabilitation wards at a regional teaching hospital."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C ghi bệnh nhân phòng đèn sinh học ít xin thuốc an thần hơn chứ không hề nói thuốc ngủ đáng tin cậy hơn ánh sáng."
+            },
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Xung đột nhu cầu ánh sáng giữa bệnh nhân và điều dưỡng ca đêm nằm ở đoạn D."
+            }
+          ],
+          "explanationVi": "Đoạn C báo cáo kết quả thử nghiệm đối chứng trên hai khoa phục hồi đột quỵ về giấc ngủ, lú lẫn ban đêm, thuốc an thần và ngày nằm viện. Tiêu đề ii khớp hoàn toàn.",
+          "steps": [
+            "Nhận diện cấu trúc thử nghiệm đối chứng 2020–2023 và các chỉ số phục hồi ở đoạn C.",
+            "Loại tiêu đề vi vì bóp méo chi tiết về thuốc an thần.",
+            "Chọn tiêu đề ii."
+          ]
+        },
+        {
+          "qid": "p2_003_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "iii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 81,
+            "quote": "Even carefully programmed ward lighting runs into a practical clash after sunset."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 81,
+              "quote": "Even carefully programmed ward lighting runs into a practical clash after sunset."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Kết quả giấc ngủ bệnh nhân đã trình bày xong ở đoạn C."
+            },
+            {
+              "key": "vii",
+              "type": "too_broad",
+              "whyVi": "Đoạn D tập trung vào xung đột ánh sáng ban đêm giữa bệnh nhân và điều dưỡng chứ không ca ngợi đèn trần đồng đều."
+            }
+          ],
+          "explanationVi": "Đoạn D phân tích mâu thuẫn ban đêm giữa phòng tối giúp bệnh nhân ngủ và ánh sáng rõ giúp y tá thao tác an toàn, cùng các giải pháp dung hòa. Chọn tiêu đề iii.",
+          "steps": [
+            "Đọc câu mở đầu đoạn D về xung đột thực tế sau hoàng hôn và giải pháp đèn tác vụ của Giáo sư Reid.",
+            "Loại các tiêu đề thuộc đoạn C hoặc sai trọng tâm.",
+            "Chọn tiêu đề iii."
+          ]
+        },
+        {
+          "qid": "p2_003_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 0,
+            "end": 76,
+            "quote": "Circadian systems rarely deliver identical gains across every patient group."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 0,
+              "end": 76,
+              "quote": "Circadian systems rarely deliver identical gains across every patient group."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn E chỉ ra đèn trần thường cung cấp ánh sáng ở tầm mắt bệnh nhân nằm giường thấp hơn dự tính, trái ngược với tiêu đề vii."
+            },
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Rào cản ngân sách và áp dụng tại các tòa nhà mới nằm ở đoạn F kế tiếp."
+            }
+          ],
+          "explanationVi": "Đoạn E chỉ ra hai nhóm hạn chế thực tế: thủy tinh thể lão hóa ở người già (biological) và bố cục phòng, hướng nằm của giường (spatial). Tiêu đề iv bao quát đủ cả hai.",
+          "steps": [
+            "Tóm hai ý lớn trong đoạn E: thay đổi sinh học của mắt người già và trở ngại bố cục phòng.",
+            "Loại tiêu đề vii vì ngược hoàn toàn với nhận định về đèn trần.",
+            "Chọn tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p2_003_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 0,
+            "end": 78,
+            "quote": "Financial structure has also slowed wide rollout across public health systems."
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 0,
+              "end": 78,
+              "quote": "Financial structure has also slowed wide rollout across public health systems."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn F nói rõ các khoa cũ vẫn giữ đèn thường đến kỳ cải tạo chứ không hề có lệnh cấm toàn quốc."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Giới hạn sinh học và không gian đã kết thúc ở đoạn E."
+            }
+          ],
+          "explanationVi": "Đoạn F giải thích rào cản từ việc tách rời ngân sách cơ sở vật chất và dược phẩm, cùng xu hướng chỉ bắt buộc lắp ở các khu xây mới. Tiêu đề v khớp chính xác.",
+          "steps": [
+            "Đọc đoạn F để nắm hai ý chính: tách biệt ngân sách (budget barriers) và áp dụng chọn lọc ở khu mới (selective rollout).",
+            "Loại tiêu đề viii vì cực đoan và trái với câu cuối đoạn.",
+            "Chọn tiêu đề v."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_003_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_003_q12",
+          "number": 12,
+          "prompt": "What did Dr Fiona Mercer's trial reveal about patients in the circadian ward?\nA. They no longer required any sedative medication during recovery.\nB. They slept longer each night and suffered fewer episodes of nocturnal confusion.\nC. They were all discharged at least a week earlier than control patients.\nD. They preferred fixed fluorescent fixtures during morning therapy sessions.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 534,
+              "end": 710,
+              "quote": "Patients in the circadian ward slept an average of 48 minutes longer each night and showed a 22% drop in episodes of nocturnal confusion, a frequent setback after brain injury."
+            }
+          ],
+          "explanationVi": "Đoạn C ghi rõ bệnh nhân phòng đèn sinh học ngủ lâu hơn trung bình 48 phút mỗi đêm và giảm 22% cơn lú lẫn ban đêm. Phương án B tóm lược chính xác kết quả này.",
+          "steps": [
+            "Định vị kết quả nghiên cứu của Tiến sĩ Fiona Mercer ở đoạn C.",
+            "Loại A (bài nói ít yêu cầu thuốc hơn chứ không phải bỏ hẳn), loại C (chỉ giảm 1,4 ngày) và loại D (không đề cập).",
+            "Chọn B vì khớp đúng hai số liệu 48 phút ngủ thêm và giảm 22% lú lẫn ban đêm."
+          ]
+        },
+        {
+          "qid": "p2_003_q13",
+          "number": 13,
+          "prompt": "According to Prof Alistair Reid, how do modern circadian wards ease conflict between patients and night-shift staff?\nA. By leaving bright corridor fluorescent lamps switched on throughout the night.\nB. By delaying routine nurse checks until daylight enters the room.\nC. By pairing dim warm ambient lighting with focused task lamps and shielded nurse stations.\nD. By supplying amber-tinted glasses to patients recovering from surgery.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 505,
+              "end": 724,
+              "quote": "Hospital ergonomist Prof Alistair Reid notes that newer designs ease much of this friction by pairing low amber ambient lighting with focused portable task lamps and softly lit nurse stations shielded from patient beds."
+            }
+          ],
+          "explanationVi": "Đoạn D trích lời Giáo sư Alistair Reid rằng thiết kế mới kết hợp ánh sáng nền vàng dịu với đèn tác vụ cầm tay tập trung và trạm trực được che chắn khỏi giường bệnh. Chọn C.",
+          "steps": [
+            "Tìm tên Prof Alistair Reid ở đoạn D.",
+            "Đọc chính xác ba yếu tố thiết kế được liệt kê để giảm xung đột ban đêm.",
+            "Đối chiếu với các phương án và chọn C."
+          ]
+        },
+        {
+          "qid": "p2_003_q14",
+          "number": 14,
+          "prompt": "Why have hospital facility managers often hesitated to invest in circadian lighting?\nA. Control software frequently interferes with bedside monitoring equipment.\nB. Installation expenses fall on estates budgets, while potential savings benefit other budgets.\nC. National building codes prohibit tuneable LEDs in intensive-care wards.\nD. Standard fixed LEDs now cost substantially more than dynamic arrays.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 320,
+              "end": 542,
+              "quote": "Because hospital estates budgets are frequently kept separate from clinical pharmacy and staffing budgets, facility managers have often hesitated to fund upgrades whose savings appear on another department's balance sheet."
+            }
+          ],
+          "explanationVi": "Đoạn F giải thích ngân sách cơ sở vật chất tách biệt với ngân sách dược phẩm và nhân sự, khiến quản lý tòa nhà ngại chi tiền cho khoản nâng cấp mà lợi ích tiết kiệm lại nằm ở bộ phận khác. Chọn B.",
+          "steps": [
+            "Tìm cụm 'facility managers have often hesitated' trong đoạn F.",
+            "Đọc mệnh đề nguyên nhân bắt đầu bằng 'Because hospital estates budgets are frequently kept separate...'.",
+            "Chọn B vì diễn đạt chính xác mâu thuẫn tách biệt ngân sách này."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

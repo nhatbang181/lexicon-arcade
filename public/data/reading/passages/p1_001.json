@@ -1,0 +1,533 @@
+{
+  "id": "rp:p1_001",
+  "level": "P1",
+  "title": "Salt-Tolerant Crops on Reclaimed Coastal Marshland",
+  "subtitle": "How traditional halophytes are helping coastal farmers adapt to rising groundwater salinity",
+  "topic": "environment",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Along low-lying estuaries in northern Europe and eastern Asia, coastal growers face a quiet agricultural challenge. Rising sea levels and dry summers push salty groundwater up into fields that once gave reliable wheat and barley harvests. Standard grain crops struggle as soon as soil salt levels climb even slightly, because excess salt prevents roots from drawing in moisture. For decades, local water authorities tried to cope by operating diesel pumps to flush ditches with fresh river water, yet that plan has grown far too costly as fuel prices remain high and inland communities require larger shares of summer river flow. Consequently, a growing minority of agricultural specialists now argue that growers should adapt to saline soil rather than fighting it."
+    },
+    {
+      "label": "B",
+      "text": "Growing plants that tolerate salt, known to botanists as halophytes, is hardly a recent concept. Throughout the nineteenth century, people living beside tidal flats picked wild glasswort, sea purslane, and coastal beet. Old parish records from several North Sea regions indicate a clear pattern across local communities. Rural households relied on these tough plants mainly as winter greens and mineral-rich feed for their sheep. They were seldom grown on formal plots or sent to inland cities, because their thick stems went limp quickly inside warm wooden carts. After 1920, cheap farm fertilisers and drained polder fields spread rapidly. Most coastal villages then abandoned wild marsh plants in favour of high-yielding potatoes and standard grain crops."
+    },
+    {
+      "label": "C",
+      "text": "Trade interest in halophyte crops revived after a series of field trials in 2019. Agronomist Dr Helen Marsh led the research at a coastal field station over two growing seasons. Her team divided twelve hectares of mildly saline marshland into paired test blocks and irrigated them directly with diluted tidal water. Among three tested species, a short sea-kale cultivar stood out clearly. It delivered a 34 per cent higher edible yield than control plots growing normal cabbage in the same brackish water. Even so, Marsh warned that profit margins remained tight for small farms. Halophyte stems grow close to damp ground, so workers still had to cut them by hand rather than using farm tractors. This extra work pushed seasonal labour costs roughly one fifth above standard vegetable farms."
+    },
+    {
+      "label": "D",
+      "text": "The way halophytes survive harsh coastal soil rests on two specialised biological traits. Ordinary crops suffer quick damage when salt builds up inside the soft cells where leaves turn sunlight into food. Marsh species avoid this harm by pumping excess sodium into tiny surface sacs on their leaves. Once these small bladders fill up, they burst safely and release dry salt crystals into the wind. At the same time, a thick waxy coat covers both the stems and the leaves. This smooth coat sharply cuts water loss when brisk sea winds blow across flat open fields. Together, these protective traits allow halophytes to stay crisp and healthy in saline soil that would kill most garden crops within two weeks."
+    },
+    {
+      "label": "E",
+      "text": "Even with strong farm yields, turning salt-tolerant greens into daily food brings stubborn trade barriers. In 2022, farm economist Professor David Okafor analysed supply contracts across fourteen regional buyers and found a clear split in demand. Specialist coastal cafés and restaurants gladly paid high prices for fresh glasswort beside local fish. By contrast, ordinary supermarket chains rarely stocked any halophyte produce on their shelves. The core problem is simple logistics: once picked, most marsh greens keep their peak freshness for only four days, even inside cold crates. That short window causes heavy waste along large supply routes built for tougher goods like carrots and onions. Until better cold-chain packs appear, retail sales will probably stay small."
+    },
+    {
+      "label": "F",
+      "text": "Beyond direct food revenue, coastal ecologists point to wider environmental benefits from reintroducing halophytes onto degraded farmland. In five-year crop rotation studies, fields growing salt-loving species gradually drew mineral crusts out of the top soil layer, preparing the ground for moderately salt-tolerant barley in later seasons. Moreover, because tidal water carries natural trace minerals, farms in the trial cut their use of synthetic fertilisers by almost a quarter compared with nearby grain estates. Still, most experts agree that halophyte farming will complement rather than replace normal inland fields. Its genuine value lies in keeping marginal coastal territory productive instead of leaving it bare."
+    }
+  ],
+  "wordCount": 702,
+  "glossary": [
+    {
+      "term": "halophyte",
+      "meaningVi": "thực vật ưa mặn, có khả năng sống trong đất hoặc nước nhiễm mặn"
+    },
+    {
+      "term": "brackish",
+      "meaningVi": "nước lợ, có độ mặn nằm giữa nước ngọt và nước biển"
+    },
+    {
+      "term": "cultivar",
+      "meaningVi": "giống cây trồng được chọn lọc để canh tác"
+    },
+    {
+      "term": "polder",
+      "meaningVi": "vùng đất thấp ven biển được đắp đê lấn biển để trồng trọt"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_001_q01",
+          "number": 1,
+          "prompt": "Elevated soil salt concentrations hinder ordinary cereal plants from absorbing water through their roots.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 239,
+              "end": 378,
+              "quote": "Standard grain crops struggle as soon as soil salt levels climb even slightly, because excess salt prevents roots from drawing in moisture."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn A khẳng định muối dư thừa ngăn rễ ngũ cốc hút ẩm (paraphrase của absorbing water). Thông tin khớp hoàn toàn nên chọn TRUE.",
+          "steps": [
+            "Định vị đoạn A nhờ từ khóa cereal plants (grain crops) và soil salt.",
+            "So sánh cơ chế nhân quả: bài nói excess salt prevents roots from drawing in moisture.",
+            "Khớp nghĩa hoàn toàn với hinder ... from absorbing water → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_001_q02",
+          "number": 2,
+          "prompt": "In the nineteenth century, coastal villages cultivated marsh plants mainly to sell them in distant inland markets.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 430,
+              "end": 564,
+              "quote": "They were seldom grown on formal plots or sent to inland cities, because their thick stems went limp quickly inside warm wooden carts."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Câu hỏi nói mainly to sell in inland markets nhưng đoạn B ghi chúng hiếm khi được trồng tập trung hay gửi vào thành phố nội địa (seldom). Mâu thuẫn trực tiếp → FALSE.",
+          "steps": [
+            "Tìm mốc nineteenth century và inland ở đoạn B.",
+            "Đoạn B nêu dân địa phương dùng làm rau mùa đông và thức ăn cho cừu, seldom sent to inland cities.",
+            "Trái ngược hoàn toàn với mainly to sell in distant inland markets → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_001_q03",
+          "number": 3,
+          "prompt": "During Dr Helen Marsh's 2019 experiment, the short sea-kale variety outperformed normal cabbage grown in the same salty conditions.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 389,
+              "end": 505,
+              "quote": "It delivered a 34 per cent higher edible yield than control plots growing normal cabbage in the same brackish water."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn C ghi giống sea-kale cho năng suất ăn được cao hơn 34% so với bắp cải thường trong cùng nước lợ. Khớp nghĩa với outperformed → TRUE.",
+          "steps": [
+            "Định vị Dr Helen Marsh và năm 2019 ở đoạn C.",
+            "Đối chiếu so sánh: short sea-kale cultivar có 34 per cent higher edible yield hơn normal cabbage.",
+            "Khớp chính xác với outperformed under the same salty conditions → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_001_q04",
+          "number": 4,
+          "prompt": "Dr Helen Marsh's coastal research station received financial grants from environmental charities to purchase extra land.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 178,
+              "end": 315,
+              "quote": "Her team divided twelve hectares of mildly saline marshland into paired test blocks and irrigated them directly with diluted tidal water."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn C chỉ nêu nhóm nghiên cứu chia 12 hecta đất ngập mặn để thử nghiệm, hoàn toàn không đề cập nguồn tài trợ hay tổ chức từ thiện nào → NOT GIVEN.",
+          "steps": [
+            "Quét đoạn C tìm thông tin về research station và đất thử nghiệm (twelve hectares).",
+            "Kiểm tra xem có nhắc đến financial grants hoặc environmental charities không.",
+            "Không có dữ kiện về nguồn vốn mua đất → NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p1_001_q05",
+          "number": 5,
+          "prompt": "Most large supermarket retailers have begun displaying fresh halophytes regularly on their vegetable shelves.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 351,
+              "end": 446,
+              "quote": "By contrast, ordinary supermarket chains rarely stocked any halophyte produce on their shelves."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn E chỉ rõ các chuỗi siêu thị thông thường hiếm khi bày bán (rarely stocked) rau chịu mặn, mâu thuẫn trực tiếp với most ... regularly nên chọn FALSE.",
+          "steps": [
+            "Tìm từ khóa supermarket ở đoạn E.",
+            "So sánh lượng từ: câu hỏi nói Most ... regularly, bài viết nói ordinary supermarket chains rarely stocked.",
+            "Hai vế phủ định nhau rõ ràng → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_001_q06",
+          "number": 6,
+          "prompt": "Growers who alternate halophytes with barley experience fewer breakdowns in their farm machinery than nearby estates.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 342,
+              "end": 517,
+              "quote": "Moreover, because tidal water carries natural trace minerals, farms in the trial cut their use of synthetic fertilisers by almost a quarter compared with nearby grain estates."
+            }
+          ],
+          "trapType": "keyword_echo",
+          "explanationVi": "Đoạn F nhắc luân canh lúa mạch và so sánh với nearby grain estates nhưng chỉ nói về giảm phân bón hóa học, không đề cập hỏng hóc máy móc → NOT GIVEN.",
+          "steps": [
+            "Định vị đoạn F với các từ barley và nearby grain estates.",
+            "Đọc kỹ nội dung so sánh: bài chỉ so sánh lượng synthetic fertilisers giảm gần 1/4.",
+            "Không có bất kỳ thông tin nào về farm machinery breakdowns → NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Biological defences that enable survival in salty soil"
+        },
+        {
+          "key": "ii",
+          "text": "Why retail supply chains struggle to handle coastal greens"
+        },
+        {
+          "key": "iii",
+          "text": "Early rural uses of wild marsh plants"
+        },
+        {
+          "key": "iv",
+          "text": "Environmental gains and realistic limits of the approach"
+        },
+        {
+          "key": "v",
+          "text": "Measured crop output during a brackish-water trial"
+        },
+        {
+          "key": "vi",
+          "text": "Rising seawater temperatures threatening offshore fish farms"
+        },
+        {
+          "key": "vii",
+          "text": "Complete replacement of inland wheat fields by coastal farms"
+        },
+        {
+          "key": "viii",
+          "text": "High wages paid to seasonal workers across vegetable farms"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_001_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "iii"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 321,
+              "end": 429,
+              "quote": "Rural households relied on these tough plants mainly as winter greens and mineral-rich feed for their sheep."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 321,
+            "end": 429,
+            "quote": "Rural households relied on these tough plants mainly as winter greens and mineral-rich feed for their sheep."
+          },
+          "headingDistractors": [
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề v thuộc về đoạn C (thử nghiệm năm 2019), không phải lịch sử thế kỷ 19 ở đoạn B."
+            },
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn B nói cây đầm lầy từng bị bỏ để trồng khoai tây và ngũ cốc, ngược lại hoàn toàn với việc thay thế ruộng lúa mì."
+            }
+          ],
+          "explanationVi": "Đoạn B kể lại việc hộ nông thôn thế kỷ 19 thu hái cây đầm lầy hoang làm rau mùa đông và thức ăn gia súc, khớp với tiêu đề iii.",
+          "steps": [
+            "Đọc lướt đoạn B: nhận diện mạch thời gian nineteenth century và old parish records.",
+            "Ý chính nằm ở cách hộ nông thôn sử dụng cây hoang (winter greens and feed for sheep).",
+            "Khớp trực tiếp với tiêu đề iii (Early rural uses of wild marsh plants)."
+          ]
+        },
+        {
+          "qid": "p1_001_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "v"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 389,
+              "end": 505,
+              "quote": "It delivered a 34 per cent higher edible yield than control plots growing normal cabbage in the same brackish water."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 389,
+            "end": 505,
+            "quote": "It delivered a 34 per cent higher edible yield than control plots growing normal cabbage in the same brackish water."
+          },
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "detail_only",
+              "whyVi": "Đoạn C chỉ nhắc chi phí nhân công thu hoạch thủ công ở câu cuối như lưu ý phụ, không nói về mức lương cao."
+            },
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề i nói về cơ chế sinh học ở đoạn D, còn đoạn C tập trung vào kết quả thực địa."
+            }
+          ],
+          "explanationVi": "Trọng tâm đoạn C là thí nghiệm thực địa năm 2019 với nước lợ và số liệu năng suất đo được (+34%), khớp với tiêu đề v.",
+          "steps": [
+            "Xác định chủ thể đoạn C: field trials năm 2019 của Dr Helen Marsh với nước lợ.",
+            "Ý chính là kết quả năng suất đo được (34 per cent higher edible yield) kèm lưu ý chi phí.",
+            "Loại bẫy chi tiết viii và chọn tiêu đề v."
+          ]
+        },
+        {
+          "qid": "p1_001_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "i"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 89,
+              "quote": "The way halophytes survive harsh coastal soil rests on two specialised biological traits."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 89,
+            "quote": "The way halophytes survive harsh coastal soil rests on two specialised biological traits."
+          },
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "too_broad",
+              "whyVi": "Đoạn D nói về thích nghi sinh học của cây chịu mặn, hoàn toàn không đề cập trang trại cá ngoài khơi."
+            },
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề v thuộc đoạn C (kết quả thử nghiệm năng suất), không phải cơ chế sinh học."
+            }
+          ],
+          "explanationVi": "Câu đầu và toàn bộ đoạn D giải thích hai cơ chế phòng vệ sinh học (túi thải muối trên lá và lớp sáp chống mất nước), khớp với tiêu đề i.",
+          "steps": [
+            "Đọc câu chủ đề đoạn D: two specialised biological traits.",
+            "Các câu tiếp theo mô tả túi thải sodium và lớp sáp giữ ẩm.",
+            "Khớp chính xác với tiêu đề i (Biological defences that enable survival in salty soil)."
+          ]
+        },
+        {
+          "qid": "p1_001_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "ii"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 447,
+              "end": 586,
+              "quote": "The core problem is simple logistics: once picked, most marsh greens keep their peak freshness for only four days, even inside cold crates."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 447,
+            "end": 586,
+            "quote": "The core problem is simple logistics: once picked, most marsh greens keep their peak freshness for only four days, even inside cold crates."
+          },
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "keyword_match",
+              "whyVi": "Tiêu đề viii lặp từ vegetable/farms nhưng đoạn E nói về rào cản chuỗi cung ứng bán lẻ, không nói về tiền lương."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề iv là nội dung lợi ích môi trường và giới hạn tổng thể ở đoạn F."
+            }
+          ],
+          "explanationVi": "Đoạn E phân tích lý do chuỗi siêu thị khó bán rau chịu mặn vì thời hạn tươi quá ngắn (4 ngày) gây lãng phí khi phân phối, khớp tiêu đề ii.",
+          "steps": [
+            "Nhận diện chủ đề đoạn E: trade barriers và ordinary supermarket chains.",
+            "Tìm nguyên nhân cốt lõi: simple logistics (chỉ tươi 4 ngày, gây waste trên tuyến cung ứng).",
+            "Chọn tiêu đề ii (Why retail supply chains struggle to handle coastal greens)."
+          ]
+        },
+        {
+          "qid": "p1_001_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "iv"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 518,
+              "end": 624,
+              "quote": "Still, most experts agree that halophyte farming will complement rather than replace normal inland fields."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 518,
+            "end": 624,
+            "quote": "Still, most experts agree that halophyte farming will complement rather than replace normal inland fields."
+          },
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn F khẳng định cây chịu mặn chỉ bổ trợ chứ KHÔNG thay thế (complement rather than replace) đồng ruộng nội địa."
+            },
+            {
+              "key": "vi",
+              "type": "too_broad",
+              "whyVi": "Đoạn F chỉ nói về lợi ích sinh thái trên đất ngập mặn, không liên quan đến nuôi cá ngoài khơi."
+            }
+          ],
+          "explanationVi": "Đoạn F vừa nêu lợi ích sinh thái (cải tạo đất, giảm phân bón) vừa nhấn mạnh giới hạn thực tế (chỉ bổ sung chứ không thay thế đồng ruộng thường), khớp tiêu đề iv.",
+          "steps": [
+            "Đọc nửa đầu đoạn F: wider land benefits (cải tạo đất, giảm phân bón).",
+            "Đọc nửa cuối: complement rather than replace normal inland fields.",
+            "Loại bẫy ngược nghĩa vii và chọn tiêu đề iv."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g3_summary",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Halophytes cope with brackish irrigation by moving surplus [Q12] into specialised sacs on their leaf surfaces, while a waxy coat curbs water loss. Although coastal restaurants buy the plants, mainstream supermarkets are put off because harvested greens keep their [Q13] for merely four days. When grown in multi-year rotations, halophytes also help clean salty soil and cut farmers' dependence on artificial [Q14].",
+      "questions": [
+        {
+          "qid": "p1_001_q12",
+          "number": 12,
+          "prompt": "Complete gap [Q12] (ONE WORD ONLY).",
+          "answer": {
+            "accepted": [
+              "sodium"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 205,
+              "end": 299,
+              "quote": "Marsh species avoid this harm by pumping excess sodium into tiny surface sacs on their leaves."
+            }
+          ],
+          "explanationVi": "Đoạn D viết pumping excess sodium into tiny surface sacs (tương ứng moving surplus [Q12] into specialised sacs). Từ cần điền là sodium.",
+          "steps": [
+            "Định vị câu nói về surface sacs ở đoạn D.",
+            "Đối chiếu surplus = excess, vậy danh từ đứng ngay sau là sodium.",
+            "Kiểm tra giới hạn ONE WORD ONLY → sodium."
+          ]
+        },
+        {
+          "qid": "p1_001_q13",
+          "number": 13,
+          "prompt": "Complete gap [Q13] (ONE WORD ONLY).",
+          "answer": {
+            "accepted": [
+              "freshness"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 447,
+              "end": 586,
+              "quote": "The core problem is simple logistics: once picked, most marsh greens keep their peak freshness for only four days, even inside cold crates."
+            }
+          ],
+          "explanationVi": "Đoạn E nêu keep their peak freshness for only four days, khớp với keep their [Q13] for merely four days. Đáp án là freshness.",
+          "steps": [
+            "Tìm mốc thời gian four days ở đoạn E.",
+            "So khớp cấu trúc: keep their peak freshness = keep their [Q13].",
+            "Chọn danh từ nguyên văn 1 từ → freshness."
+          ]
+        },
+        {
+          "qid": "p1_001_q14",
+          "number": 14,
+          "prompt": "Complete gap [Q14] (ONE WORD ONLY).",
+          "answer": {
+            "accepted": [
+              "fertilisers"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 342,
+              "end": 517,
+              "quote": "Moreover, because tidal water carries natural trace minerals, farms in the trial cut their use of synthetic fertilisers by almost a quarter compared with nearby grain estates."
+            }
+          ],
+          "explanationVi": "Đoạn F nêu cut their use of synthetic fertilisers, tương đương cut farmers' dependence on artificial [Q14]. Đáp án là fertilisers.",
+          "steps": [
+            "Định vị đoạn F với nội dung luân canh và giảm nhu cầu hóa chất.",
+            "Đối chiếu artificial = synthetic, danh từ theo sau là fertilisers.",
+            "Giữ nguyên chính tả Anh-Anh và số nhiều từ bài → fertilisers."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

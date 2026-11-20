@@ -1,0 +1,482 @@
+[
+  {
+    "id": "rp:p1_001",
+    "file": "data/reading/passages/p1_001.json",
+    "level": "P1",
+    "reserved": false,
+    "title": "Salt-Tolerant Crops on Reclaimed Coastal Marshland",
+    "subtitle": "How traditional halophytes are helping coastal farmers adapt to rising groundwater salinity",
+    "topic": "environment",
+    "wordCount": 702,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "summary_completion"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p1_002",
+    "file": "data/reading/passages/p1_002.json",
+    "level": "P1",
+    "reserved": false,
+    "title": "The Driftwood Boatbuilders of the North Atlantic Fringe",
+    "subtitle": "Timber scarcity, coastal ingenuity, and small-craft construction on treeless islands",
+    "topic": "history",
+    "wordCount": 671,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "sentence_completion"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p1_003",
+    "file": "data/reading/passages/p1_003.json",
+    "level": "P1",
+    "reserved": false,
+    "title": "How Alpine Marmots Synchronise Winter Hibernation",
+    "subtitle": "Social warmth, seasonal fat reserves, and underground survival in high mountain meadows",
+    "topic": "animals",
+    "wordCount": 662,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "mcq_single"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p1_004",
+    "file": "data/reading/passages/p1_004.json",
+    "level": "P1",
+    "reserved": false,
+    "title": "Fermented Seaweed in Northern Coastal Diets",
+    "subtitle": "Traditional preservation, nutritional research, and modern marine cultivation along cold rocky shores",
+    "topic": "food",
+    "wordCount": 680,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "matching_info"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p1_005",
+    "file": "data/reading/passages/p1_005.json",
+    "level": "P1",
+    "reserved": false,
+    "title": "Cable-Drawn Streetcars on Steep Hillside Routes",
+    "subtitle": "Mechanical traction, nineteenth-century city transit, and modern preservation on sloped streets",
+    "topic": "transport",
+    "wordCount": 655,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "matching_features"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p1_006",
+    "file": "data/reading/passages/p1_006.json",
+    "level": "P1",
+    "reserved": false,
+    "title": "Mineral Pigments in Vernacular Lime-Plaster Murals",
+    "subtitle": "Earth colours, wet-plaster chemistry, and conservation of rural courtyard wall paintings",
+    "topic": "arts",
+    "wordCount": 663,
+    "paragraphCount": 6,
+    "questionCount": 13,
+    "questionTypes": [
+      "tfng",
+      "summary_completion",
+      "sentence_completion"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": false
+  },
+  {
+    "id": "rp:p1_res_001",
+    "file": "data/reading/passages/p1_res_001.json",
+    "level": "P1",
+    "reserved": true,
+    "title": "Aerodynamic Fabrics in Endurance Cycling Apparel",
+    "subtitle": "How micro-textured textiles reshape airflow, comfort, and speed over long road stages",
+    "topic": "sport",
+    "wordCount": 740,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "sentence_completion"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p1_res_002",
+    "file": "data/reading/passages/p1_res_002.json",
+    "level": "P1",
+    "reserved": true,
+    "title": "Lunar Regolith Bricks for Extraterrestrial Shelters",
+    "subtitle": "How engineers plan to bake moon dust into radiation-shielding masonry for future bases",
+    "topic": "space",
+    "wordCount": 745,
+    "paragraphCount": 6,
+    "questionCount": 13,
+    "questionTypes": [
+      "tfng",
+      "summary_completion",
+      "matching_info"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": false
+  },
+  {
+    "id": "rp:p2_001",
+    "file": "data/reading/passages/p2_001.json",
+    "level": "P2",
+    "reserved": false,
+    "title": "Permeable Pavements and Urban Stormwater Recovery",
+    "subtitle": "How porous street surfaces help cities absorb intense rainfall and recharge shallow groundwater",
+    "topic": "urban",
+    "wordCount": 801,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "summary_completion"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p2_002",
+    "file": "data/reading/passages/p2_002.json",
+    "level": "P2",
+    "reserved": false,
+    "title": "Thermal Sand Batteries for Seasonal District Heating",
+    "subtitle": "Why insulated silos of hot sand are emerging as a low-cost way to store surplus wind and solar energy as heat",
+    "topic": "energy",
+    "wordCount": 799,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "sentence_completion"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p2_003",
+    "file": "data/reading/passages/p2_003.json",
+    "level": "P2",
+    "reserved": false,
+    "title": "Circadian Lighting in Hospital Recovery Wards",
+    "subtitle": "How tuneable LED panels that mirror outdoor daylight are reshaping patient sleep and ward design",
+    "topic": "health",
+    "wordCount": 780,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "mcq_single"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p2_004",
+    "file": "data/reading/passages/p2_004.json",
+    "level": "P2",
+    "reserved": false,
+    "title": "Four-Day Rosters in Precision Manufacturing Plants",
+    "subtitle": "What multi-year shop-floor trials reveal about productivity, accuracy, and staff retention in high-skill factories",
+    "topic": "work",
+    "wordCount": 771,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "ynng",
+      "headings",
+      "matching_info"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p2_005",
+    "file": "data/reading/passages/p2_005.json",
+    "level": "P2",
+    "reserved": false,
+    "title": "Timed Entry Quotas in Fragile Limestone Caves",
+    "subtitle": "How show caves are balancing conservation chemistry, subterranean ecology, and rural tourism through pre-booked visitor slots",
+    "topic": "tourism",
+    "wordCount": 816,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "ynng",
+      "headings",
+      "matching_features"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p2_006",
+    "file": "data/reading/passages/p2_006.json",
+    "level": "P2",
+    "reserved": false,
+    "title": "Interleaved Practice in Secondary Mathematics Classrooms",
+    "subtitle": "Why mixing problem types on homework sheets feels harder at first yet delivers stronger results on cumulative exams",
+    "topic": "education",
+    "wordCount": 775,
+    "paragraphCount": 6,
+    "questionCount": 13,
+    "questionTypes": [
+      "tfng",
+      "mcq_single",
+      "matching_info"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": false
+  },
+  {
+    "id": "rp:p2_res_001",
+    "file": "data/reading/passages/p2_res_001.json",
+    "level": "P2",
+    "reserved": true,
+    "title": "Slow Journalism Subscriptions and Reader Retention",
+    "subtitle": "Why publishing fewer, deeper stories is helping independent outlets keep paying audiences",
+    "topic": "media",
+    "wordCount": 805,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "matching_features"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p2_res_002",
+    "file": "data/reading/passages/p2_res_002.json",
+    "level": "P2",
+    "reserved": true,
+    "title": "Participatory Budgeting in Mid-Sized Municipalities",
+    "subtitle": "How citizen-voted capital funds reshape spending priorities, trust, and administration in local government",
+    "topic": "government",
+    "wordCount": 789,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "tfng",
+      "headings",
+      "mcq_single"
+    ],
+    "hasTfng": true,
+    "hasYnng": false,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p3_001",
+    "file": "data/reading/passages/p3_001.json",
+    "level": "P3",
+    "reserved": false,
+    "title": "The Paradox of Algorithmic Confidence in Diagnostic Judgement",
+    "subtitle": "Why clinicians struggle to calibrate trust when statistical decision aids accompany routine medical assessments",
+    "topic": "psychology",
+    "wordCount": 894,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "ynng",
+      "headings",
+      "summary_completion"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p3_002",
+    "file": "data/reading/passages/p3_002.json",
+    "level": "P3",
+    "reserved": false,
+    "title": "Acoustic Drift in Bilingual Urban Communities",
+    "subtitle": "How everyday speech in multilingual cities gradually realigns phonetic boundaries across generations",
+    "topic": "language",
+    "wordCount": 875,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "ynng",
+      "headings",
+      "sentence_completion"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p3_003",
+    "file": "data/reading/passages/p3_003.json",
+    "level": "P3",
+    "reserved": false,
+    "title": "Reconsidering Productivity Metrics in Care-Based Economies",
+    "subtitle": "Why industrial measures of output struggle to capture the true economic value of health, childcare, and elder support",
+    "topic": "economy",
+    "wordCount": 870,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "ynng",
+      "headings",
+      "mcq_single"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p3_004",
+    "file": "data/reading/passages/p3_004.json",
+    "level": "P3",
+    "reserved": false,
+    "title": "Replication Incentives and Null Results in Experimental Biology",
+    "subtitle": "Why academic reward systems bury negative findings and how structural reforms aim to restore reliability",
+    "topic": "science",
+    "wordCount": 836,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "ynng",
+      "headings",
+      "matching_features"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p3_005",
+    "file": "data/reading/passages/p3_005.json",
+    "level": "P3",
+    "reserved": false,
+    "title": "The Limits of Explainability in Autonomous Maritime Routing",
+    "subtitle": "Why transparent explanations do not always make algorithmic ship navigation safer or easier to supervise",
+    "topic": "technology",
+    "wordCount": 872,
+    "paragraphCount": 6,
+    "questionCount": 13,
+    "questionTypes": [
+      "ynng",
+      "matching_info",
+      "matching_features"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": false
+  },
+  {
+    "id": "rp:p3_006",
+    "file": "data/reading/passages/p3_006.json",
+    "level": "P3",
+    "reserved": false,
+    "title": "Digital Archiving and the Politics of Intangible Heritage",
+    "subtitle": "Why turning living songs, rituals, and craft skills into permanent online files reshapes the traditions they aim to save",
+    "topic": "culture",
+    "wordCount": 860,
+    "paragraphCount": 6,
+    "questionCount": 13,
+    "questionTypes": [
+      "ynng",
+      "matching_features",
+      "mcq_single"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": false
+  },
+  {
+    "id": "rp:p3_res_001",
+    "file": "data/reading/passages/p3_res_001.json",
+    "level": "P3",
+    "reserved": true,
+    "title": "Regional Supply Resilience Versus Cost-Minimising Trade Networks",
+    "subtitle": "Evaluating the economic trade-offs between lean global sourcing and shorter regional manufacturing chains",
+    "topic": "globalisation",
+    "wordCount": 806,
+    "paragraphCount": 6,
+    "questionCount": 14,
+    "questionTypes": [
+      "ynng",
+      "headings",
+      "summary_completion"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": true
+  },
+  {
+    "id": "rp:p3_res_002",
+    "file": "data/reading/passages/p3_res_002.json",
+    "level": "P3",
+    "reserved": true,
+    "title": "Predictive Policing Models and Spatial Feedback Loops",
+    "subtitle": "Why crime-forecasting software can amplify past enforcement bias unless governed by strict data rules",
+    "topic": "crime",
+    "wordCount": 849,
+    "paragraphCount": 6,
+    "questionCount": 13,
+    "questionTypes": [
+      "ynng",
+      "sentence_completion",
+      "matching_info"
+    ],
+    "hasTfng": false,
+    "hasYnng": true,
+    "hasHeadings": false
+  }
+]

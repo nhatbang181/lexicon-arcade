@@ -1,0 +1,167 @@
+{
+  "id": "rp:p2_006",
+  "level": "P2",
+  "reserved": false,
+  "title": "Interleaved Practice in Secondary Mathematics Classrooms",
+  "subtitle": "Why mixing problem types on homework sheets feels harder at first yet delivers stronger results on cumulative exams",
+  "topic": "education",
+  "wordCount": 775,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Open almost any secondary maths textbook and you will see a standard layout. First, the chapter explains a single rule, such as finding the area of a triangle or solving a linear equation. Next, it sets twenty exercises that all call for that exact same procedure. Teachers refer to this classic routine as blocked practice. Students typically gain rapid momentum during the lesson because they already know which formula to apply before reading each question. Yet when end-of-term exams mix algebra, shapes, and probability on the same page, many teens suddenly stall and pick the wrong method. Over the past fifteen years, cognitive researchers have tested an alternative called interleaved practice. In this approach, homework sets deliberately mix problem types so pupils must select a suitable method as well as carry out the steps."
+    },
+    {
+      "label": "B",
+      "text": "Why shuffling tasks aids long-term recall becomes clear once we split two distinct classroom skills. Applying a known rule is largely mechanical. Deciding which strategy fits a fresh prompt, however, demands close structural comparison. Under blocked practice, pupils rarely train that choice step because every item sits under one chapter title. Interleaved sheets force learners to scan for subtle cues—such as whether a worded task involves proportional growth or fixed rates—and to reload older procedures from memory after a gap of several days. That extra mental search slows down the first page of homework and feels harder right away. Educational psychologist Dr Sanjay Patel describes this added effort as a \"desirable difficulty\": although pupils make more early errors during homework, the repeated strain of choosing and retrieving methods builds far stronger exam recall."
+    },
+    {
+      "label": "C",
+      "text": "School trials have measured wide gaps on delayed tests. Between 2021 and 2023, Dr Patel and two colleagues ran a randomised study involving 840 pupils aged thirteen and fourteen across eighteen state schools. All classes covered the same core units on fractions, linear graphs, and angle geometry over twelve weeks. Half completed standard blocked sheets. The other half received mixed packets holding four current items alongside eight review problems drawn from prior weeks. Every teacher followed the same core lesson scripts so classroom instruction stayed even across both cohorts. During weekly homework checks, the blocked group actually scored 12% higher. However, on an unannounced cumulative exam held thirty days after the final unit, the interleaved group averaged 74% compared with 51% for the blocked cohort. Follow-up checks six weeks later showed a similar gap."
+    },
+    {
+      "label": "D",
+      "text": "Despite those strong test gains, mixed homework often meets early pushback from both teens and parents. Because blocked exercises feel smooth and produce high immediate marks, learners naturally mistake easy repetition for lasting mastery—a bias cognitive researchers call the \"illusion of competence\". In post-trial surveys from Dr Patel's study, nearly two-thirds of pupils in the mixed classes first rated their sheets as confusing or hard. Moreover, 58% still felt they would have learned more from single-topic pages even after seeing their own higher exam marks. Maths department head Dr Clara Lindholm notes that busy staff also hesitate to rewrite years of old booklets when lesson time is already tight. Change tends to stick only when schools supply ready-made mixed sets and explain the slower early pace clearly to parents."
+    },
+    {
+      "label": "E",
+      "text": "Researchers stress that mixed sheets are not a full substitute for blocked teaching. When teenagers meet an entirely new concept—such as handling negative exponents or proving triangle congruence for the first time—mixing several half-understood rules at once can overload working memory and trigger quick frustration. Pupils need a short breathing space before juggling multiple methods. Dr Lindholm and cognitive theorist Prof Owen Griffiths both recommend a hybrid sequence: begin each new topic with a short, focused block of four to six worked examples and guided drills until pupils grasp the basic notation, then fold that skill into mixed review sheets over later weeks. Studies also show that interleaving works best among closely linked ideas that teens often mix up, rather than random subjects thrown together."
+    },
+    {
+      "label": "F",
+      "text": "Bringing interleaving into daily lessons takes real shifts beyond research journals. Most commercial textbooks remain organised into neat single-topic chapters because schools expect teachers to locate a specific skill quickly during lesson planning. Reprinting whole series is costly for publishers. Recently, however, several independent teacher groups have shared free modular task banks that weave older exam topics into weekly homework automatically. Digital homework platforms can also schedule tailored review questions based on each pupil's past errors, though Dr Patel cautions that software works best when teachers still lead brief class talks comparing why two similar-looking prompts demand different strategies. Used with care beside clear first teaching, interleaved practice offers a low-cost way to turn short-term drill into lasting maths skill."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_006_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_006_q01",
+          "number": 1,
+          "prompt": "Students completing conventional single-topic exercises often move rapidly since the required technique is obvious in advance."
+        },
+        {
+          "qid": "p2_006_q02",
+          "number": 2,
+          "prompt": "Interleaved worksheets make students look for subtle differences between problem cues rather than simply repeating one rule."
+        },
+        {
+          "qid": "p2_006_q03",
+          "number": 3,
+          "prompt": "In Dr Patel's classroom study, the interleaved group achieved higher marks than the blocked group on weekly homework checks."
+        },
+        {
+          "qid": "p2_006_q04",
+          "number": 4,
+          "prompt": "Parents in Dr Patel's trial complained more frequently about interleaved worksheets than their children did."
+        },
+        {
+          "qid": "p2_006_q05",
+          "number": 5,
+          "prompt": "Prof Owen Griffiths recommends dropping blocked drills completely when introducing brand-new mathematical topics."
+        },
+        {
+          "qid": "p2_006_q06",
+          "number": 6,
+          "prompt": "Major commercial textbook publishers have announced plans to switch to mixed-topic chapters within the next five years."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_006_g2",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_006_q07",
+          "number": 7,
+          "prompt": "What does Dr Sanjay Patel mean by describing interleaved practice as a \"desirable difficulty\"?\nA. Teachers should assign examination tasks designed for older year groups.\nB. Early homework effort in choosing and recalling methods strengthens later exam memory.\nC. Pupils should be prevented from viewing worked examples before a test.\nD. Effective homework sheets should aim to eliminate early student mistakes."
+        },
+        {
+          "qid": "p2_006_q08",
+          "number": 8,
+          "prompt": "What happened on the unannounced cumulative exam held thirty days after Dr Patel's twelve-week trial?\nA. Both student groups earned almost identical average marks.\nB. The blocked group kept its earlier 12% advantage over the interleaved group.\nC. The interleaved group substantially outperformed the blocked group.\nD. Only pupils who scored highly on weekly sheets completed the exam."
+        },
+        {
+          "qid": "p2_006_q09",
+          "number": 9,
+          "prompt": "According to paragraph D, why do many teenagers misjudge the value of blocked worksheets?\nA. Smooth repetition and quick early marks create a false impression of deep mastery.\nB. Weekly homework sheets rarely show students their actual scores.\nC. Blocked sheets mix more topic areas than end-of-term examinations.\nD. Teachers discourage pupils from comparing different practice styles."
+        },
+        {
+          "qid": "p2_006_q10",
+          "number": 10,
+          "prompt": "What condition does Dr Patel emphasise regarding digital homework platforms?\nA. They are currently too costly for state secondary schools to purchase.\nB. They cannot accurately track individual pupils' earlier mistakes.\nC. They work best when combined with brief teacher-led comparisons of problem strategies.\nD. They encourage pupils to copy worked solutions without showing steps."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_006_g3",
+      "type": "matching_info",
+      "instructions": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_006_q11",
+          "number": 11,
+          "prompt": "the exact number of pupils and state schools that participated in a twelve-week trial"
+        },
+        {
+          "qid": "p2_006_q12",
+          "number": 12,
+          "prompt": "a warning that shuffling unfamiliar rules too soon can overload a learner's working memory"
+        },
+        {
+          "qid": "p2_006_q13",
+          "number": 13,
+          "prompt": "the reason commercial mathematics textbooks still group exercises into single-topic chapters"
+        }
+      ]
+    }
+  ]
+}

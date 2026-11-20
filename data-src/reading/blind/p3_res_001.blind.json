@@ -1,0 +1,167 @@
+{
+  "id": "rp:p3_res_001",
+  "level": "P3",
+  "reserved": true,
+  "title": "Regional Supply Resilience Versus Cost-Minimising Trade Networks",
+  "subtitle": "Evaluating the economic trade-offs between lean global sourcing and shorter regional manufacturing chains",
+  "topic": "globalisation",
+  "wordCount": 806,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "For more than three decades, major manufacturers treated long distance as a minor line item rather than a strategic hazard. Steady gains in container shipping, digital customs forms, and low tariff walls let firms split production across continents, sourcing chips in one region and assembling finished goods in another. Under this just-in-time model, holding spare stock in local warehouses was widely dismissed as wasted capital sitting idle on shelves. In my view, this pursuit of minimal unit cost brought real gains in consumer affordability, yet it rested on a dangerously complacent assumption: that sea lanes, energy prices, and trade rules would stay smooth without break. When port shutdowns, severe storms, and export curbs struck between 2020 and 2024, that lean model showed how fast small local jams can halt entire global sectors. Even firms with strict cost controls found themselves unable to ship finished orders for months."
+    },
+    {
+      "label": "B",
+      "text": "In response to those costly shocks, an active group of trade strategists has argued for regional supply clusters placed closer to final buyers. Industrial economist Professor Miriam Al-Mansoor holds that cutting transport spans from twelve thousand sea kilometres to shorter regional rail lines reduces lead times, eases factory checks, and shields firms from sudden ocean freight spikes. Her case studies of European medical-device makers reveal a subtle financial balance. Moving vital sub-parts to neighbouring states raised unit wage outlays by roughly nine per cent, yet trimmed emergency air-freight bills enough to keep yearly totals nearly flat. Backers therefore treat regional chains as a sensible insurance plan. By giving up a thin slice of peak-year margin, manufacturers hope to guard steady output when global shipping lanes stall. Many boards now weigh speed of recovery alongside simple factory cost when choosing new plant sites."
+    },
+    {
+      "label": "C",
+      "text": "Yet sceptical analysts warn that moving assembly plants closer to home is too often confused with true supply safety. Trade historian Dr Owen MacLeod notes that regional hubs stay exposed to local hazards—including severe droughts, power-grid faults, and regional strikes—that can halt a tight cluster far more sharply than a spread-out network. His review of microchip and drug supply maps highlights a deeper blind spot. Even near-shored plants frequently depend on upstream raw minerals and specialist chemicals drawn from one distant province. Relocating the final factory stage therefore creates an illusion of autonomy while leaving hidden upstream choke points intact. Treating geographic closeness as a sure cure risks locking firms into smaller supplier pools with higher fixed costs. When a domestic shock hits that narrower circle, managers often find they have fewer backup partners than before."
+    },
+    {
+      "label": "D",
+      "text": "Beyond private firm accounts, stepping back from cost-minimising trade brings wide economic trade-offs that public leaders often downplay. Running twin factories, spare tooling, and larger reserve inventories inevitably lifts baseline production costs across electronics, cars, and home goods. Economist Dr Mei-Ling Chow estimates that full regional duplication across advanced factory sectors could add between three and six per cent to retail prices. At the same time, such shifts narrow export paths for lower-income industrialising states that rely on global trade chains for jobs and technical skill transfer. Critics of rapid reshoring rightly observe that steeper shop prices hit modest-income families hardest, because they spend a larger share of their wages on basic goods. Any honest debate over resilience must consequently weigh industrial security directly against household living standards and global development."
+    },
+    {
+      "label": "E",
+      "text": "Rather than staging a rigid contest between borderless speed and regional self-reliance, the best evidence supports a tiered plan matched to each product's social role. Everyday consumer items such as garments or furniture rarely justify expensive duplicate factories when brief delays cause mild frustration rather than national harm. By contrast, essential medicines, power-grid parts, and high-grade sensors warrant planned buffers, pairing multi-country sourcing with open stockpiles and modular designs that accept shared components. Supply-chain engineer Henrik Solberg studied firms using dual-corridor sourcing, which splits orders across two distinct continents instead of retreating into one region. He reports that this balanced approach cut disruption losses by nearly half without sacrificing competitive pricing during calm years. Selective buffers thus deliver most of the safety benefits at a fraction of the price."
+    },
+    {
+      "label": "F",
+      "text": "In the end, the debate between regional resilience and cost-minimising networks is framed too narrowly when reduced to a map of plant postcodes. Global trade did not falter simply because cargo crossed wide oceans. It broke down because firms bunched critical parts inside single choke points and stripped out spare stock to satisfy short-term profit targets. Retreating behind tight regional walls would give up the scale, deep technical skill, and shared gains that open trade still yields. The stronger path lies in redesigned global networks that pair clear multi-tier supplier maps with steady reserve buffers and flexible deals. Only when corporate boards price systemic risk as closely as unit shipping cost will world trade achieve both competitive reach and lasting steadiness."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_res_001_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views or claims of the writer in the passage? Write YES, NO, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p3_res_001_q01",
+          "number": 1,
+          "prompt": "Cost-minimising global supply chains made consumer goods more affordable even though they relied on an unrealistic view of global stability."
+        },
+        {
+          "qid": "p3_res_001_q02",
+          "number": 2,
+          "prompt": "Moving final assembly factories closer to buyers reliably removes hidden upstream supply bottlenecks."
+        },
+        {
+          "qid": "p3_res_001_q03",
+          "number": 3,
+          "prompt": "Professor Miriam Al-Mansoor's medical-device case studies were funded directly by European trade ministries."
+        },
+        {
+          "qid": "p3_res_001_q04",
+          "number": 4,
+          "prompt": "Debates about supply-chain resilience should openly take account of how higher costs affect ordinary families' living standards."
+        },
+        {
+          "qid": "p3_res_001_q05",
+          "number": 5,
+          "prompt": "Everyday consumer items such as clothing and furniture need duplicate regional factories just as urgently as essential medicines do."
+        },
+        {
+          "qid": "p3_res_001_q06",
+          "number": 6,
+          "prompt": "Corporate boards in Europe are already legally required to publish multi-tier maps of their overseas suppliers."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_res_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why moving production closer to home can still leave firms exposed"
+        },
+        {
+          "key": "ii",
+          "text": "Matching different supply safeguards to a product's strategic importance"
+        },
+        {
+          "key": "iii",
+          "text": "Why maritime container shipping ceased operating after 2024"
+        },
+        {
+          "key": "iv",
+          "text": "How lean global manufacturing sacrificed spare buffers for lower prices"
+        },
+        {
+          "key": "v",
+          "text": "Retail price rises and wider economic trade-offs of regional duplication"
+        },
+        {
+          "key": "vi",
+          "text": "The case for building shorter regional supply networks"
+        },
+        {
+          "key": "vii",
+          "text": "A history of international customs treaties in the twentieth century"
+        },
+        {
+          "key": "viii",
+          "text": "Why global trade requires redesigned buffers rather than regional walls"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_res_001_q07",
+          "number": 7,
+          "prompt": "Paragraph A"
+        },
+        {
+          "qid": "p3_res_001_q08",
+          "number": 8,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p3_res_001_q09",
+          "number": 9,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p3_res_001_q10",
+          "number": 10,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p3_res_001_q11",
+          "number": 11,
+          "prompt": "Paragraph E"
+        }
+      ]
+    },
+    {
+      "groupId": "p3_res_001_g3",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Although shifting manufacturing closer to buyers can reduce emergency air-freight expenses, critics note that regional clusters still face domestic hazards and often rely on distant upstream raw [Q12] and specialist chemicals. Furthermore, operating duplicate plants alongside larger reserve [Q13] tends to increase retail prices for modest-income households. Rather than retreating into one geographic bloc, engineer Henrik Solberg reports that splitting orders across two continents can nearly halve disruption [Q14] while keeping competitive prices in stable years.",
+      "questions": [
+        {
+          "qid": "p3_res_001_q12",
+          "number": 12,
+          "prompt": "Blank [Q12]"
+        },
+        {
+          "qid": "p3_res_001_q13",
+          "number": 13,
+          "prompt": "Blank [Q13]"
+        },
+        {
+          "qid": "p3_res_001_q14",
+          "number": 14,
+          "prompt": "Blank [Q14]"
+        }
+      ]
+    }
+  ]
+}

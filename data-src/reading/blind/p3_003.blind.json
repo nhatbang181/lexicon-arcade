@@ -1,0 +1,180 @@
+{
+  "id": "rp:p3_003",
+  "level": "P3",
+  "reserved": false,
+  "title": "Reconsidering Productivity Metrics in Care-Based Economies",
+  "subtitle": "Why industrial measures of output struggle to capture the true economic value of health, childcare, and elder support",
+  "topic": "economy",
+  "wordCount": 870,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "As populations age steadily across developed nations, care sectors—spanning nurseries, nursing wards, therapy clinics, and home elder support—now employ roughly 18 per cent of the active labour force. Yet national statistical agencies still track these services using output ratios built for twentieth-century factories, dividing counted units by paid staff hours. Under that arithmetic, a steel plant turning out 20 per cent more pipes per worker looks plainly more productive. A community nursery that hires extra teachers to shrink group sizes, by contrast, shows up on official ledgers as a drop in output per hour. Worse still, those crude ratios rarely note whether children thrive or older patients recover well. Such figures quietly shape treasury debates over wages, staffing rules, and annual funding ceilings. Applying factory-floor ratios to relational care work therefore systematically misreads genuine quality improvements as signs of economic stagnation."
+    },
+    {
+      "label": "B",
+      "text": "This clash is not a mere flaw in accounting sheets; it reflects a deeper structural trait of personal care. Unlike car assembly or microchip fabrication, looking after fragile patients or young children relies on steady human presence, patience, and quick judgement. You cannot double the speed of a comfort visit or halve the staff on a dementia ward without changing the service itself. In a 2021 cross-regional audit of 42 municipal care homes, economist Dr Samuel Mensah tracked what happened when tight budgets trimmed average staff-to-resident contact time by 15 per cent. Nominal visits per paid hour climbed neatly on quarterly spreadsheets, pleasing local managers. Within six months, however, avoidable hospital readmissions among those exact residents jumped by 29 per cent. Nurses also logged steeper falls in mobility and weight across frail wards. Squeezing classic labour speed out of personal care thus often shifts far heavier costs onto emergency medical budgets."
+    },
+    {
+      "label": "C",
+      "text": "Conventional economic accounts distort care further by drawing a sharp line between paid market contracts and unpaid family support. When an adult daughter leaves an office job to nurse an ageing father at home, recorded national output immediately drops. If that same household instead pays a private agency to send a visiting carer, measured output rises, even though the underlying human work remains virtually identical. In a 2023 regional study across six northern districts, economist Prof Nora Halvorsen calculated that unpaid household caregiving equalled nearly 14 per cent of total regional output each year. Almost two-thirds of those unpaid hours fell on women juggling part-time work and child-rearing. Halvorsen warns that treating informal family care as economically invisible tempts treasuries to underfund respite clinics and local transport schemes. Over time, that neglect strains household carers until burnout pushes thousands of dependants into far costlier state wards."
+    },
+    {
+      "label": "D",
+      "text": "Seeking faster gains without raising payrolls, several regional health trusts have turned to algorithmic shift planners and strict task-by-task visit schedules. In a 2022 study of 650 home-care workers, researcher Dr Tomas Kowalski examined how tight 15-minute home visits reshaped daily practice. Software routing did shave travel overhead between clients by 11 per cent across dense urban zones. Yet the narrow time caps forced carers to put countable chores—such as signing drug charts—ahead of unrecorded chats that routinely spot early signs of depression or poor nutrition. Many workers reported rushing out the door while lonely elders still tried to explain new pain. Worse still, annual staff turnover across those timed schemes rose by 24 per cent over two years as experienced carers quit in frustration. Reducing complex human support to neatly counted micro-tasks hollows out staff judgement and weakens the very health outcomes commissioners claim to protect."
+    },
+    {
+      "label": "E",
+      "text": "In response to these blind spots, a growing group of economists and public auditors is testing outcome-based accounting models. Rather than tallying filled beds or completed ten-minute visits, outcome frameworks track durable gains in human capability: slower memory loss, longer spells of safe home living, and stronger early literacy among toddlers. In a 2024 pilot across nine regional councils led by Dr Rebecca Chen, weighting nursery and elder-care grants by verified wellbeing indicators produced a 19 per cent net fiscal return over four years. Those savings came through fewer emergency admissions and higher steady employment among working parents. Local clinics also saw steadier staff retention once teams were judged on client stability rather than stopwatch quotas. Sceptics still object that wellbeing metrics are noisier and slower to gather than simple quarterly unit counts. Chen nonetheless maintains that rough measures of genuine social value serve policy far better than exact counts of the wrong variable."
+    },
+    {
+      "label": "F",
+      "text": "Debating how to measure care productivity ultimately forces governments to rethink how national budgets classify public spending. Many finance ministries still treat care funding as pure short-term consumption—a recurring drain to be capped whenever tax revenue tightens—rather than durable social infrastructure akin to railways or clean power grids. That accounting habit carries heavy long-run penalties. Underinvesting in reliable childcare and elder support keeps skilled adults out of paid work, weakens household resilience, and inflates chronic hospital bills decades later. By contrast, regions that treat care hubs as core civic assets tend to preserve wider tax bases even as median ages climb. Rebuilding productivity yardsticks for care-based economies is therefore no minor technical task left to back-room statisticians. It is a necessary step towards designing fiscal rules fit for an ageing century."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_003_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_003_q01",
+          "number": 1,
+          "prompt": "Judging relational care services by industrial output formulas routinely mistakes real quality gains for falling efficiency."
+        },
+        {
+          "qid": "p3_003_q02",
+          "number": 2,
+          "prompt": "Trimming the minutes care-home staff spend with each resident reliably lowers total public expenditure on elder health."
+        },
+        {
+          "qid": "p3_003_q03",
+          "number": 3,
+          "prompt": "Unpaid family members generally manage severe chronic illnesses more competently than trained agency carers do."
+        },
+        {
+          "qid": "p3_003_q04",
+          "number": 4,
+          "prompt": "Dividing home-care visits into tightly timed checklists enables carers to spot subtle signs of client decline earlier."
+        },
+        {
+          "qid": "p3_003_q05",
+          "number": 5,
+          "prompt": "Dr Rebecca Chen's wellbeing-weighted funding framework has already been adopted as a mandatory standard by national treasuries."
+        },
+        {
+          "qid": "p3_003_q06",
+          "number": 6,
+          "prompt": "Finance ministries are mistaken when they classify public care budgets merely as recurring consumption rather than lasting infrastructure."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_003_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why omitting unpaid family work distorts public spending priorities"
+        },
+        {
+          "key": "ii",
+          "text": "Designing new yardsticks centred on long-term human outcomes"
+        },
+        {
+          "key": "iii",
+          "text": "Evidence that faster factory assembly lines raised care-home wages"
+        },
+        {
+          "key": "iv",
+          "text": "Reframing care expenditure as essential infrastructure for ageing societies"
+        },
+        {
+          "key": "v",
+          "text": "How cutting staff contact time creates hidden downstream medical costs"
+        },
+        {
+          "key": "vi",
+          "text": "The hidden damage caused by rigid digital scheduling and micro-tasks"
+        },
+        {
+          "key": "vii",
+          "text": "Why working parents prefer private nurseries over municipal clinics"
+        },
+        {
+          "key": "viii",
+          "text": "A recent fall in global life expectancy linked to rising hospital bills"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_003_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p3_003_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p3_003_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p3_003_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p3_003_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "p3_003_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_003_q12",
+          "number": 12,
+          "prompt": "What is the main drawback of tightly timed home-care schedules highlighted in Paragraph D?\nA. They fail to produce any reduction in travel time between visits.\nB. They pressure staff to neglect informal talks that catch early health declines.\nC. They prevent managers from confirming whether medication charts are signed.\nD. They force regional health trusts to raise payroll budgets immediately."
+        },
+        {
+          "qid": "p3_003_q13",
+          "number": 13,
+          "prompt": "How does Dr Rebecca Chen respond to reservations about wellbeing metrics in Paragraph E?\nA. She claims wellbeing scores are faster to gather than standard quarterly counts.\nB. She suggests dropping wellbeing indicators in favour of tracking occupied beds.\nC. She contends that approximate gauges of real value beat exact counts of the wrong thing.\nD. She admits that fiscal benefits from nursery grants cannot be measured over four years."
+        },
+        {
+          "qid": "p3_003_q14",
+          "number": 14,
+          "prompt": "What is the writer's primary argument across the passage as a whole?\nA. Care providers should adopt automated factory schedules to solve ageing-population costs.\nB. Public treasuries should freeze care spending until clearer GDP statistics are published.\nC. Unpaid family support should legally replace municipal nursing homes across developed nations.\nD. Traditional industrial productivity metrics distort care services and require fundamental redesign."
+        }
+      ]
+    }
+  ]
+}

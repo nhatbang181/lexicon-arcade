@@ -1,0 +1,180 @@
+{
+  "id": "rp:p2_003",
+  "level": "P2",
+  "reserved": false,
+  "title": "Circadian Lighting in Hospital Recovery Wards",
+  "subtitle": "How tuneable LED panels that mirror outdoor daylight are reshaping patient sleep and ward design",
+  "topic": "health",
+  "wordCount": 780,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Conventional hospital wards were built for clinical clarity rather than human sleep biology. Overhead fluorescent tubes cast flat, unchanging light at roughly 300 to 400 lux from early morning until late evening, while bright corridor lamps and bedside screens create harsh glare long after midnight. For patients recovering from major surgery or stroke, that steady glow weakens the body's internal 24-hour clock. Natural daylight enters through windows unevenly, leaving patients in inner bays short of crisp morning light. Many spend days unsure whether it is noon or dusk, and disrupted sleep soon erodes both mood and appetite. Over the past decade, architects and sleep scientists have worked together on dynamic lighting systems that shift both brightness and colour across the day, mimicking natural outdoor sunlight inside enclosed recovery wards."
+    },
+    {
+      "label": "B",
+      "text": "Why light colour matters as much as raw brightness became clear only after scientists found a distinct class of light-sensing cells in the human retina early in the twenty-first century. Unlike rods and cones, which form visual images, these ganglion cells hold a pigment called melanopsin that reacts most strongly to short-wavelength blue light near 480 nanometres. When bright, cool-white light reaches the eye in the morning, signals pass straight to a tiny cluster of nerve cells in the brain's hypothalamus. That pulse halts output of the sleep hormone melatonin and sharpens daytime alertness. Without that crisp morning cue, internal clocks begin to drift within days. By evening, warm amber light lacking blue wavelengths lets melatonin levels climb steadily, preparing the body for deeper, less broken rest through the night."
+    },
+    {
+      "label": "C",
+      "text": "Clinical trials have started to test whether this biological insight aids real recovery. Between 2020 and 2023, neurologist Dr Fiona Mercer led a controlled study across two stroke rehabilitation wards at a regional teaching hospital. Each ward admitted patients of similar age and clinical severity across the three-year window. One ward kept standard fixed fluorescent lamps, while a refurbished twin ward fitted tuneable ceiling panels set to peak at 1,000 lux of cool light before noon and fade to a warm 50-lux glow after 8 p.m. Patients in the circadian ward slept an average of 48 minutes longer each night and showed a 22% drop in episodes of nocturnal confusion, a frequent setback after brain injury. Nurses also logged fewer requests for sedative tablets, although average total length of stay fell by only 1.4 days—a modest gain that varied widely between patients."
+    },
+    {
+      "label": "D",
+      "text": "Even carefully programmed ward lighting runs into a practical clash after sunset. Patients need dim, warm rooms to keep melatonin rising, yet nurses checking intravenous drips, reading tiny drug labels, and logging vital signs require crisp visibility to prevent clinical errors. Early pilots that dimmed entire wards too sharply drew complaints from night-shift staff, who reported eye strain and heavy drowsiness around 3 a.m. Several nurses even propped corridor doors open to borrow extra hall light. Hospital ergonomist Prof Alistair Reid notes that newer designs ease much of this friction by pairing low amber ambient lighting with focused portable task lamps and softly lit nurse stations shielded from patient beds. Even so, some veteran clinicians remain sceptical that warm corridor light offers enough safety during sudden midnight emergencies."
+    },
+    {
+      "label": "E",
+      "text": "Circadian systems rarely deliver identical gains across every patient group. As people age, the natural lens inside the eye slowly yellows and thickens, blocking a large share of incoming blue light. Consequently, an 80-year-old recovering from hip surgery may need nearly twice the morning light intensity of a young adult to trigger the same hormonal signal. Patients taking certain eye drops or recovering from cataract surgery also respond unevenly. Room layout adds further hurdles. Ceiling fixtures pour bright light onto tabletops, yet patients lying flat or facing away from overhead panels often receive far less light at eye level than designers modelled. Glossy walls and misaligned blinds can also create unwanted glare. Without careful bed placement, matte finishes, and routine sensor checks, even costly lighting upgrades often underperform."
+    },
+    {
+      "label": "F",
+      "text": "Financial structure has also slowed wide rollout across public health systems. Fitting dynamic LED arrays and automated control software typically costs 30% to 45% more than replacing old tubes with fixed standard LEDs. Maintenance teams also require extra training to keep wall sensors and dimmers properly calibrated. Because hospital estates budgets are frequently kept separate from clinical pharmacy and staffing budgets, facility managers have often hesitated to fund upgrades whose savings appear on another department's balance sheet. However, falling LED prices and updated national building codes are steadily closing that gap. Since 2024, three regional health trusts have required tuneable circadian lighting in all newly built stroke and intensive-care wings, while leaving older general wards on conventional fixtures until routine renovations fall due."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_003_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_003_q01",
+          "number": 1,
+          "prompt": "Standard hospital wards rely on constant artificial lighting that fails to mirror natural daily shifts in daylight."
+        },
+        {
+          "qid": "p2_003_q02",
+          "number": 2,
+          "prompt": "Retinal ganglion cells containing melanopsin are mainly responsible for producing sharp visual images."
+        },
+        {
+          "qid": "p2_003_q03",
+          "number": 3,
+          "prompt": "During Dr Fiona Mercer's trial, individuals placed under tuneable lighting consistently left hospital far sooner than control patients."
+        },
+        {
+          "qid": "p2_003_q04",
+          "number": 4,
+          "prompt": "Night-shift nurses in early dimmed-ward trials recorded a higher rate of medication mistakes than daytime nurses."
+        },
+        {
+          "qid": "p2_003_q05",
+          "number": 5,
+          "prompt": "Age-related changes in the eye mean elderly patients typically need brighter morning light than young adults to get the same hormonal response."
+        },
+        {
+          "qid": "p2_003_q06",
+          "number": 6,
+          "prompt": "The trio of regional authorities updating hospital building rules in 2024 have already recovered their lighting outlays through lower drug bills."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_003_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "The retinal mechanism linking light wavelengths to sleep hormones"
+        },
+        {
+          "key": "ii",
+          "text": "Patient sleep and recovery outcomes from a controlled ward trial"
+        },
+        {
+          "key": "iii",
+          "text": "Reconciling patient rest with the visual needs of night staff"
+        },
+        {
+          "key": "iv",
+          "text": "Biological and spatial limits that affect real-world results"
+        },
+        {
+          "key": "v",
+          "text": "Budget barriers and selective rollout in new hospital buildings"
+        },
+        {
+          "key": "vi",
+          "text": "Why sleeping pills remain more reliable than light exposure"
+        },
+        {
+          "key": "vii",
+          "text": "How ceiling fixtures guarantee uniform eye-level illumination"
+        },
+        {
+          "key": "viii",
+          "text": "A nationwide ban on fixed fluorescent lamps across all wards"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_003_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p2_003_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p2_003_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p2_003_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p2_003_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "p2_003_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_003_q12",
+          "number": 12,
+          "prompt": "What did Dr Fiona Mercer's trial reveal about patients in the circadian ward?\nA. They no longer required any sedative medication during recovery.\nB. They slept longer each night and suffered fewer episodes of nocturnal confusion.\nC. They were all discharged at least a week earlier than control patients.\nD. They preferred fixed fluorescent fixtures during morning therapy sessions."
+        },
+        {
+          "qid": "p2_003_q13",
+          "number": 13,
+          "prompt": "According to Prof Alistair Reid, how do modern circadian wards ease conflict between patients and night-shift staff?\nA. By leaving bright corridor fluorescent lamps switched on throughout the night.\nB. By delaying routine nurse checks until daylight enters the room.\nC. By pairing dim warm ambient lighting with focused task lamps and shielded nurse stations.\nD. By supplying amber-tinted glasses to patients recovering from surgery."
+        },
+        {
+          "qid": "p2_003_q14",
+          "number": 14,
+          "prompt": "Why have hospital facility managers often hesitated to invest in circadian lighting?\nA. Control software frequently interferes with bedside monitoring equipment.\nB. Installation expenses fall on estates budgets, while potential savings benefit other budgets.\nC. National building codes prohibit tuneable LEDs in intensive-care wards.\nD. Standard fixed LEDs now cost substantially more than dynamic arrays."
+        }
+      ]
+    }
+  ]
+}

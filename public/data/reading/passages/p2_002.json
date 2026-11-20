@@ -1,0 +1,536 @@
+{
+  "id": "rp:p2_002",
+  "level": "P2",
+  "title": "Thermal Sand Batteries for Seasonal District Heating",
+  "subtitle": "Why insulated silos of hot sand are emerging as a low-cost way to store surplus wind and solar energy as heat",
+  "topic": "energy",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across northern Europe, keeping homes warm in winter remains one of the hardest sectors to decarbonise. Wind turbines and solar arrays often generate surplus power on bright or blustery summer days when demand is light. Grid operators are sometimes forced to switch turbines off or sell excess power at near-zero prices. Six months later, during freezing January spells, urban heating networks still burn large volumes of natural gas or wood pellets to keep radiators warm. Lithium-ion battery farms can balance an electricity grid for several hours, yet storing gigawatt-hours of power across whole seasons in chemical cells would be far too expensive. That wide seasonal gap has puzzled energy planners for years. Seeking a simpler link between summer wind and winter warmth, engineers have turned to an abundant, familiar material: ordinary builder's sand."
+    },
+    {
+      "label": "B",
+      "text": "At first glance, a thermal sand battery looks like an ordinary farm grain tower. Inside an insulated steel silo roughly seven metres tall and four metres wide sit about 100 tonnes of clean, dry, fine-grained sand. When wholesale electricity prices drop, resistive elements heat a stream of air to over 500 degrees Celsius and blow it through buried steel pipes snaking inside the silo. Heat flows from the hot pipe walls into the dry silica grains until the core is fully charged. Because dry sand conducts heat poorly once air circulation stops, the insulated core can stay above 400 degrees Celsius for months, losing less than 1% of its stored heat each day. When winter cold sets in, cool air is blown back through the same pipe loop. That warm return stream heats water for local radiators across the town."
+    },
+    {
+      "label": "C",
+      "text": "Storing thermal energy in solid sand offers clear material advantages over both hot-water tanks and chemical batteries. Water has served in district storage for decades, yet liquid water boils at 100 degrees Celsius unless held inside costly pressurised vessels. Sand, by contrast, remains stable above 600 degrees Celsius at normal air pressure, allowing a far smaller tank to hold the same quantity of energy. It also needs no scarce mined metals such as cobalt or lithium. Moreover, dry grains suffer almost none of the chemical wear that limits electrochemical cells to ten or fifteen years of service. Energy analyst Dr Hannah Lindqvist estimates that capital costs per kilowatt-hour of stored heat can be one-tenth those of utility-scale lithium packs, provided low-grade quarry sand is sourced nearby. In many regions, building sites discard suitable fine sand every week."
+    },
+    {
+      "label": "D",
+      "text": "Even strong backers accept a firm physical boundary on what sand storage can do. Converting cheap electricity into hot sand is highly efficient, capturing roughly 85% to 90% of the incoming energy as usable heat. Reversing that path to generate electricity again, however, is far less rewarding. Running a steam turbine from stored heat wastes around 60% of the energy as low-grade warmth, dropping round-trip electric efficiency below 35%. Thermal physicist Prof Martin Kowalski notes that sand silos therefore make poor substitutes for grid batteries whenever power must return to the wires. Their true strength lies in direct heat delivery—serving municipal water mains, commercial bakeries, timber kilns, and textile plants that need steady process warmth rather than electrical current. For those sites, cutting fuel bills matters far more than making power."
+    },
+    {
+      "label": "E",
+      "text": "Early commercial projects have begun testing these claims under harsh winter conditions. In 2022, a rural municipal utility in northern Europe connected a 100-tonne sand silo to a town's district heating loop supplying 450 homes and a public swimming pool. Over its first two winters, the unit drew surplus wind power during night-time price dips and covered nearly 30% of the town's peak January heating load. Staff reported few faults, as the system relies on standard fans, valves, and pumps. Encouraged by low upkeep costs, operators built a larger facility in 2024 that replaced regular sand with crushed soapstone, a dense industrial by-product from local quarries. Data from its first full season showed that the denser stone held about 25% more energy per cubic metre than ordinary sand while keeping structural costs modest."
+    },
+    {
+      "label": "F",
+      "text": "Despite encouraging trials, thermal sand silos cannot reshape every country's heating market overnight. Their financial case depends heavily on two local factors: frequent spells of cheap surplus renewable power and an existing network of insulated district pipes. In regions where most households still rely on individual gas boilers, councils would face huge civil-engineering bills to lay street pipework before a central silo could serve residents. Digging up dense city roads also takes years of planning and disrupts local trade. Even where district loops already run, some utilities lack flexible power tariffs that reward night-time charging during windy periods. As wind and solar capacity expands through the 2030s, however, policy researchers expect thermal storage silos to become a routine fixture beside urban substations and industrial estates."
+    }
+  ],
+  "wordCount": 799,
+  "glossary": [
+    {
+      "term": "decarbonise",
+      "meaningVi": "giảm hoặc loại bỏ phát thải các-bon trong sản xuất và tiêu thụ năng lượng"
+    },
+    {
+      "term": "resistive elements",
+      "meaningVi": "thanh điện trở chuyển hóa điện năng trực tiếp thành nhiệt năng"
+    },
+    {
+      "term": "pressurised vessels",
+      "meaningVi": "bình chịu áp suất cao dùng để giữ nước lỏng ở nhiệt độ trên điểm sôi thường"
+    },
+    {
+      "term": "round-trip efficiency",
+      "meaningVi": "hiệu suất chu trình khép kín (tỷ lệ năng lượng thu lại được sau khi nạp và xả)"
+    },
+    {
+      "term": "soapstone",
+      "meaningVi": "đá xà phòng (loại đá giàu khoáng talc, đặc và giữ nhiệt rất tốt)"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_002_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_002_q01",
+          "number": 1,
+          "prompt": "Chemical battery banks are too costly to store renewable electricity from one season to another.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 474,
+              "end": 653,
+              "quote": "Lithium-ion battery farms can balance an electricity grid for several hours, yet storing gigawatt-hours of power across whole seasons in chemical cells would be far too expensive."
+            }
+          ],
+          "trapType": "partial_match",
+          "explanationVi": "Đoạn A nói rõ việc lưu trữ năng lượng xuyên mùa bằng pin hóa học (lithium-ion) sẽ quá đắt đỏ. Nhận định diễn đạt lại chính xác ý này nên chọn TRUE.",
+          "steps": [
+            "Tìm phần nhắc tới pin hóa học ở đoạn A.",
+            "Đối chiếu 'too costly' với 'far too expensive' và 'from one season to another' với 'across whole seasons'.",
+            "Ý khớp hoàn toàn nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_002_q02",
+          "number": 2,
+          "prompt": "Once air stops circulating, the insulated sand core loses roughly half its accumulated warmth within several days.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 481,
+              "end": 661,
+              "quote": "Because dry sand conducts heat poorly once air circulation stops, the insulated core can stay above 400 degrees Celsius for months, losing less than 1% of its stored heat each day."
+            }
+          ],
+          "trapType": "number_date",
+          "explanationVi": "Đoạn B ghi lõi cát cách nhiệt giữ nhiệt trên 400 độ C suốt nhiều tháng và chỉ mất dưới 1% nhiệt mỗi ngày. Câu hỏi nói mất khoảng một nửa trong vài ngày là mâu thuẫn trực tiếp nên chọn FALSE.",
+          "steps": [
+            "Tìm cụm 'once air circulation stops' trong đoạn B.",
+            "Đọc số liệu thất thoát nhiệt: 'less than 1% of its stored heat each day' và duy trì 'for months'.",
+            "Trái ngược hoàn toàn với 'half ... within a few days' nên chọn FALSE."
+          ]
+        },
+        {
+          "qid": "p2_002_q03",
+          "number": 3,
+          "prompt": "Sand can hold the same amount of heat in a smaller container than unpressurised water because it withstands much higher temperatures.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 263,
+              "end": 411,
+              "quote": "Sand, by contrast, remains stable above 600 degrees Celsius at normal air pressure, allowing a far smaller tank to hold the same quantity of energy."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn C nêu nước thường sôi ở 100 độ C nếu không nén áp, còn cát chịu được trên 600 độ C ở áp suất thường nên bồn nhỏ hơn nhiều vẫn chứa cùng lượng năng lượng. Đúng cả nguyên nhân và hệ quả -> TRUE.",
+          "steps": [
+            "Định vị đoạn so sánh cát với nước ở đoạn C.",
+            "Kiểm tra hai vế: cát chịu nhiệt cao hơn nhiều ở áp suất thường và cần bồn nhỏ hơn cho cùng mức năng lượng.",
+            "Cả hai vế đều khớp nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_002_q04",
+          "number": 4,
+          "prompt": "Turning stored heat from a sand silo back into electricity achieves nearly the same efficiency as using it directly for heating.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 296,
+              "end": 440,
+              "quote": "Running a steam turbine from stored heat wastes around 60% of the energy as low-grade warmth, dropping round-trip electric efficiency below 35%."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn D cho biết chuyển điện thành nhiệt đạt 85%–90%, nhưng chuyển ngược nhiệt thành điện làm hiệu suất tụt xuống dưới 35%. Hai mức hiệu suất chênh lệch rất lớn nên chọn FALSE.",
+          "steps": [
+            "Tìm số liệu hiệu suất trong đoạn D.",
+            "So sánh hiệu suất dùng nhiệt trực tiếp (85%–90%) với hiệu suất phát điện ngược lại (dưới 35%).",
+            "Câu hỏi nói gần bằng nhau là sai sự thật -> FALSE."
+          ]
+        },
+        {
+          "qid": "p2_002_q05",
+          "number": 5,
+          "prompt": "Households connected to the 2022 sand silo paid lower winter heating bills than residents in nearby towns.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 89,
+              "end": 256,
+              "quote": "In 2022, a rural municipal utility in northern Europe connected a 100-tonne sand silo to a town's district heating loop supplying 450 homes and a public swimming pool."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn E nêu dự án năm 2022 phục vụ 450 hộ gia đình và đáp ứng gần 30% tải sưởi đỉnh tháng Giêng, nhưng không nhắc tới hóa đơn tiền sưởi của cư dân so với thị trấn lân cận. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm thông tin về dự án năm 2022 và 450 hộ dân ở đoạn E.",
+            "Kiểm tra xem bài có so sánh hóa đơn tiền sưởi giữa các thị trấn hay không.",
+            "Không có dữ kiện về giá sưởi của hộ dân nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_002_q06",
+          "number": 6,
+          "prompt": "Several national governments have already launched grants to help homeowners replace gas boilers with district pipe networks.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 265,
+              "end": 452,
+              "quote": "In regions where most households still rely on individual gas boilers, councils would face huge civil-engineering bills to lay street pipework before a central silo could serve residents."
+            }
+          ],
+          "trapType": "keyword_echo",
+          "explanationVi": "Đoạn F đề cập chi phí hạ tầng lớn tại các khu vực dùng lò hơi gas riêng lẻ, nhưng không hề nói về chương trình trợ cấp của chính phủ. Do đó chọn NOT GIVEN.",
+          "steps": [
+            "Tìm từ khoá 'gas boilers' và 'pipework' ở đoạn F.",
+            "Đọc kỹ xem bài có đề cập khoản trợ cấp (grants) của chính phủ hay không.",
+            "Không có thông tin này trong bài nên chọn NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_002_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "A seasonal mismatch between renewable supply and heating demand"
+        },
+        {
+          "key": "ii",
+          "text": "How a sand silo charges, retains, and releases thermal energy"
+        },
+        {
+          "key": "iii",
+          "text": "Cost and material advantages over competing storage technologies"
+        },
+        {
+          "key": "iv",
+          "text": "Thermodynamic limits that restrict electricity generation"
+        },
+        {
+          "key": "v",
+          "text": "Field results from early municipal heating installations"
+        },
+        {
+          "key": "vi",
+          "text": "Why pressurised water vessels outperform sand at high temperatures"
+        },
+        {
+          "key": "vii",
+          "text": "How quarry soapstone could replace lithium in electric vehicles"
+        },
+        {
+          "key": "viii",
+          "text": "Government mandates phasing out household gas boilers by 2030"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_002_q07",
+          "number": 7,
+          "prompt": "Paragraph A",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "A",
+            "start": 716,
+            "end": 859,
+            "quote": "Seeking a simpler link between summer wind and winter warmth, engineers have turned to an abundant, familiar material: ordinary builder's sand."
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 716,
+              "end": 859,
+              "quote": "Seeking a simpler link between summer wind and winter warmth, engineers have turned to an abundant, familiar material: ordinary builder's sand."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "So sánh chi phí và vật liệu giữa cát, nước và pin là nội dung của đoạn C."
+            },
+            {
+              "key": "viii",
+              "type": "too_broad",
+              "whyVi": "Đoạn A không nói về lệnh cấm của chính phủ đối với lò hơi gas mà nêu sự lệch pha mùa vụ của điện tái tạo."
+            }
+          ],
+          "explanationVi": "Đoạn A nêu bài toán dư thừa điện gió, mặt trời vào mùa hè nhưng thiếu nhiệt sưởi vào mùa đông, mở đường cho ý tưởng lưu nhiệt bằng cát. Tiêu đề i tóm đúng ý chính.",
+          "steps": [
+            "Đọc đoạn A và nhận thấy sự tương phản giữa điện dư mùa hè và nhu cầu sưởi mùa đông.",
+            "Đối chiếu câu chốt cuối đoạn nhấn mạnh cầu nối giữa 'summer wind and winter warmth'.",
+            "Chọn tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p2_002_q08",
+          "number": 8,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 214,
+            "end": 385,
+            "quote": "When wholesale electricity prices drop, resistive elements heat a stream of air to over 500 degrees Celsius and blow it through buried steel pipes snaking inside the silo."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 214,
+              "end": 385,
+              "quote": "When wholesale electricity prices drop, resistive elements heat a stream of air to over 500 degrees Celsius and blow it through buried steel pipes snaking inside the silo."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Sự lệch pha cung-cầu theo mùa thuộc đoạn A; đoạn B mô tả cơ chế vận hành bên trong bồn cát."
+            },
+            {
+              "key": "vi",
+              "type": "keyword_match",
+              "whyVi": "Tiêu đề vi nhắc đến nhiệt độ cao và nước nhưng không liên quan đến quy trình nạp-giữ-xả nhiệt của bồn cát."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả tuần tự ba giai đoạn vận hành của bồn cát: nạp nhiệt bằng luồng khí nóng, giữ nhiệt nhiều tháng và xả nhiệt ra mạng sưởi. Tiêu đề ii phản ánh trọn vẹn quá trình này.",
+          "steps": [
+            "Theo dõi trình tự vận hành trong đoạn B: nạp nhiệt (charges), giữ nhiệt trên 400 độ C (retains) và cấp nhiệt mùa đông (releases).",
+            "Loại các tiêu đề thuộc đoạn khác hoặc sai chủ thể.",
+            "Chọn tiêu đề ii."
+          ]
+        },
+        {
+          "qid": "p2_002_q09",
+          "number": 9,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "iii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 0,
+            "end": 119,
+            "quote": "Storing thermal energy in solid sand offers clear material advantages over both hot-water tanks and chemical batteries."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 0,
+              "end": 119,
+              "quote": "Storing thermal energy in solid sand offers clear material advantages over both hot-water tanks and chemical batteries."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C lập luận cát vượt trội hơn bồn nước thường ở nhiệt độ cao, trái ngược với tiêu đề vi."
+            },
+            {
+              "key": "vii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn C chỉ nhắc lithium khi so sánh với pin lưu trữ cố định, hoàn toàn không bàn về đá xà phòng hay xe điện."
+            }
+          ],
+          "explanationVi": "Đoạn C so sánh cát với bồn nước nóng và pin hóa học về giới hạn nhiệt, độ bền vật liệu và chi phí vốn chỉ bằng một phần mười pin lithium. Tiêu đề iii khớp chính xác.",
+          "steps": [
+            "Đọc câu mở đầu đoạn C về ưu thế vật liệu so với bồn nước và pin hóa học.",
+            "Loại tiêu đề vi vì đảo ngược lập luận của đoạn.",
+            "Chọn tiêu đề iii."
+          ]
+        },
+        {
+          "qid": "p2_002_q10",
+          "number": 10,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 441,
+            "end": 593,
+            "quote": "Thermal physicist Prof Martin Kowalski notes that sand silos therefore make poor substitutes for grid batteries whenever power must return to the wires."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 441,
+              "end": 593,
+              "quote": "Thermal physicist Prof Martin Kowalski notes that sand silos therefore make poor substitutes for grid batteries whenever power must return to the wires."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Ưu thế chi phí và vật liệu nằm ở đoạn C, còn đoạn D phân tích giới hạn vật lý khi phát điện lại."
+            },
+            {
+              "key": "vii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn D nhắc pin lưới điện chứ không hề đề cập đá xà phòng hay xe điện."
+            }
+          ],
+          "explanationVi": "Đoạn D giải thích ranh giới vật lý khiến hiệu suất chuyển nhiệt thành điện tụt xuống dưới 35%, nên bồn cát không hợp phát điện lại mà chỉ hợp cấp nhiệt trực tiếp. Chọn tiêu đề iv.",
+          "steps": [
+            "Nhận diện trọng tâm đoạn D: thất thoát 60% khi chạy tuabin hơi và kết luận của Giáo sư Kowalski.",
+            "Loại các tiêu đề thuộc đoạn C và E.",
+            "Chọn tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p2_002_q11",
+          "number": 11,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 0,
+            "end": 88,
+            "quote": "Early commercial projects have begun testing these claims under harsh winter conditions."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 0,
+              "end": 88,
+              "quote": "Early commercial projects have begun testing these claims under harsh winter conditions."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "detail_only",
+              "whyVi": "Đá xà phòng nghiền chỉ là chi tiết của dự án thứ hai năm 2024 và không hề liên quan tới xe điện."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Hạn chế nhiệt động lực học khi phát điện nằm ở đoạn D."
+            }
+          ],
+          "explanationVi": "Đoạn E báo cáo kết quả vận hành thực tế của hai dự án thương mại đầu tiên năm 2022 và 2024 trong mạng lưới sưởi khu vực. Tiêu đề v khái quát trọn vẹn nội dung này.",
+          "steps": [
+            "Đọc câu mở đầu đoạn E và hai ví dụ dự án năm 2022 và 2024.",
+            "Loại tiêu đề vii vì suy diễn sai về xe điện và quá hẹp.",
+            "Chọn tiêu đề v."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_002_g3",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "questions": [
+        {
+          "qid": "p2_002_q12",
+          "number": 12,
+          "prompt": "During charging, superheated air transfers warmth to the silica bed as it travels through buried ____________ inside the silo.",
+          "answer": {
+            "accepted": [
+              "steel pipes"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 214,
+              "end": 385,
+              "quote": "When wholesale electricity prices drop, resistive elements heat a stream of air to over 500 degrees Celsius and blow it through buried steel pipes snaking inside the silo."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả luồng khí nóng trên 500 độ C được thổi qua các 'buried steel pipes' (ống thép chôn ngầm) bên trong bồn. Điền nguyên văn 'steel pipes' (2 từ).",
+          "steps": [
+            "Tìm quy trình nạp nhiệt bằng khí nóng trong đoạn B.",
+            "Đọc cụm 'blow it through buried steel pipes snaking inside the silo'.",
+            "Kiểm tra giới hạn không quá 2 từ: 'steel pipes' khớp chính xác."
+          ]
+        },
+        {
+          "qid": "p2_002_q13",
+          "number": 13,
+          "prompt": "According to Prof Martin Kowalski, sand batteries are best suited to direct heat users including district water mains, bakeries, textile plants, and ____________.",
+          "answer": {
+            "accepted": [
+              "timber kilns"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 594,
+              "end": 791,
+              "quote": "Their true strength lies in direct heat delivery—serving municipal water mains, commercial bakeries, timber kilns, and textile plants that need steady process warmth rather than electrical current."
+            }
+          ],
+          "explanationVi": "Đoạn D liệt kê bốn nhóm người dùng nhiệt trực tiếp: mạng nước đô thị, tiệm bánh thương mại, 'timber kilns' (lò sấy gỗ) và nhà máy dệt. Điền 'timber kilns'.",
+          "steps": [
+            "Tìm tên Prof Martin Kowalski và danh sách ứng dụng cấp nhiệt trực tiếp ở đoạn D.",
+            "Đối chiếu 3 mục đã xuất hiện trong câu hỏi để tìm mục còn thiếu là 'timber kilns'.",
+            "Kiểm tra giới hạn 2 từ: 'timber kilns' hợp lệ."
+          ]
+        },
+        {
+          "qid": "p2_002_q14",
+          "number": 14,
+          "prompt": "A larger 2024 installation raised storage density by roughly a quarter by filling the silo with ____________ instead of standard sand.",
+          "answer": {
+            "accepted": [
+              "crushed soapstone"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 496,
+              "end": 671,
+              "quote": "Encouraged by low upkeep costs, operators built a larger facility in 2024 that replaced regular sand with crushed soapstone, a dense industrial by-product from local quarries."
+            }
+          ],
+          "explanationVi": "Đoạn E ghi cơ sở lớn hơn năm 2024 đã thay cát thường bằng 'crushed soapstone' (đá xà phòng nghiền) giúp tăng khoảng 25% mật độ lưu trữ. Điền 'crushed soapstone'.",
+          "steps": [
+            "Tìm mốc năm 2024 và cụm thay thế cát thường ở đoạn E.",
+            "Đọc cụm 'replaced regular sand with crushed soapstone'.",
+            "Điền 2 từ nguyên văn 'crushed soapstone'."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

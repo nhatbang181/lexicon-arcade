@@ -1,0 +1,180 @@
+{
+  "id": "rp:p2_res_002",
+  "level": "P2",
+  "reserved": true,
+  "title": "Participatory Budgeting in Mid-Sized Municipalities",
+  "subtitle": "How citizen-voted capital funds reshape spending priorities, trust, and administration in local government",
+  "topic": "government",
+  "wordCount": 789,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across dozens of European and North American towns, residents are no longer asked simply to pick councillors once every four years and leave all local spending to paid staff. Instead, a growing number of mid-sized towns set aside a fixed slice of their yearly capital budget, typically between two and six per cent, so local people can suggest, debate, and choose civic builds directly. First popularised in large Latin American cities during the late 1980s, participatory budgeting has recently gained fresh pace in smaller urban centres. In towns housing between 50,000 and 200,000 people, wards stay compact enough for open community meetings and brisk site walks. Backers regard this model as a practical response to falling voter turnout and deep public doubt toward town hall, though real-world results prove far more mixed than early advocates hoped."
+    },
+    {
+      "label": "B",
+      "text": "In most participating towns, the yearly cycle runs through four clear stages designed to balance open ideas with real budgets. First, local workshops and council web portals invite residents to submit concrete bids ranging from shaded bus stops to youth sports courts. Next, trained volunteers work beside council engineers to screen each bid for legal rules, upkeep costs, and site safety. Proposals that pass this technical review then move onto a public ballot open to every local resident. Several towns even extend voting rights to teenagers aged fourteen and older so school and park needs enter the public mix. Finally, city offices post quarterly digital trackers online. Those plain updates allow voters to check when winning works start on site and whether final spending stays close to early cost estimates."
+    },
+    {
+      "label": "C",
+      "text": "Comparative audits suggest that public ballots steadily change where local money goes. Policy scholar Dr Hannah Lindqvist tracked budget records across 16 mid-sized towns over five years. She then compared those records with 16 matched towns that relied on standard council votes alone. Towns using public ballots directed 22 per cent more capital spending toward lower-income wards. Voters strongly favoured plain daily assets such as safer street crossings, public toilets, and library heating over showpiece central plazas. Notably, several towns also saw stronger satisfaction with routine street care once citizens could read clear itemised project costs online. Surveys linked to her audit also recorded a modest yet steady rise in public trust toward local officials. Remarkably, that gain showed up even among residents whose own chosen bids failed to win a majority of votes."
+    },
+    {
+      "label": "D",
+      "text": "Opening a budget vote to every resident on paper does not ensure an even turnout in real life. Civic researcher Dr David Mensah examined sign-in logs across three coastal towns and found a sharp demographic gap in who turned up. Evening hall talks drew mainly retired homeowners and white-collar staff with free evenings. Shift workers, new migrants, and single parents were sharply under-represented unless councils offered free childcare, translated guides, and daytime voting desks near bus hubs. Without active outreach of that kind, Mensah warns, citizen budgeting risks copying the exact social gaps it was built to fix. Public funds can slowly drift toward vocal, well-off wards that already enjoy clean parks, modern libraries, and lively youth centres. Broad public input therefore requires deliberate effort rather than passive open doors."
+    },
+    {
+      "label": "E",
+      "text": "Beyond voter balance, running public ballots puts heavy strain on lean town offices. Every submitted bid requires rough cost checks, land reviews, and short written notes explaining why rejected ideas failed. Those extra steps add heavy workloads to small teams already busy with water mains and road repairs. Municipal finance officer Gareth Pritchard saw how slow builds erode public faith. When winning schemes take two or three years to finish due to permit delays or rising steel prices, early goodwill soon turns into sharp anger. Moreover, elected councillors sometimes resist sharing budget power. They argue that local ballots reward eye-catching parks while overlooking vital hidden works such as deep storm drains and routine bridge checks. Balancing quick public wins against quiet long-term upkeep remains a tough daily challenge."
+    },
+    {
+      "label": "F",
+      "text": "Despite these real tensions, seasoned towns have refined their rules rather than dropping public ballots altogether. Several councils now ring-fence fixed shares of the citizen pot for lower-income wards, making sure low turnout in poorer streets never cuts them off from basic upgrades. Others limit the technical scale of eligible bids so winning works can finish within twelve months. That fast turnaround gives voters clear proof that their choices produce real results on their own streets. Pairing web polls with roving paper ballot boxes placed at food markets, libraries, and health clinics has also widened voter reach across age and income groups. As Dr Lindqvist concludes, citizen budgeting rarely cures every fault in town finance, yet well-crafted rules can turn routine capital spending into a lasting habit of shared local rule."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_res_002_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p2_res_002_q01",
+          "number": 1,
+          "prompt": "Participatory budgeting first became widely known in large Latin American cities before gaining popularity in mid-sized towns elsewhere."
+        },
+        {
+          "qid": "p2_res_002_q02",
+          "number": 2,
+          "prompt": "Every project proposal submitted by residents proceeds straight to the public ballot without technical screening."
+        },
+        {
+          "qid": "p2_res_002_q03",
+          "number": 3,
+          "prompt": "In Dr Hannah Lindqvist's five-year study, residents in participatory towns paid lower local property taxes than those in control towns."
+        },
+        {
+          "qid": "p2_res_002_q04",
+          "number": 4,
+          "prompt": "Trust in local officials rose among residents of participatory towns even when their preferred projects did not win."
+        },
+        {
+          "qid": "p2_res_002_q05",
+          "number": 5,
+          "prompt": "The evening town-hall sessions studied by Dr David Mensah attracted shift workers and single parents at the same rate as retired homeowners."
+        },
+        {
+          "qid": "p2_res_002_q06",
+          "number": 6,
+          "prompt": "Gareth Pritchard recommends replacing elected town councillors altogether with permanent citizen budget panels."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_002_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why participation remains uneven without targeted council outreach"
+        },
+        {
+          "key": "ii",
+          "text": "Rule adjustments that make citizen budgeting sustainable"
+        },
+        {
+          "key": "iii",
+          "text": "The four stages guiding proposals from idea to completed build"
+        },
+        {
+          "key": "iv",
+          "text": "How national governments banned citizen votes on municipal roads"
+        },
+        {
+          "key": "v",
+          "text": "Evidence that public ballots redirect funds toward everyday needs"
+        },
+        {
+          "key": "vi",
+          "text": "Staff workloads, delivery delays, and friction with elected officials"
+        },
+        {
+          "key": "vii",
+          "text": "Why teenage voters participate more eagerly than older residents"
+        },
+        {
+          "key": "viii",
+          "text": "The origins of participatory budgeting in South American cities"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_002_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p2_res_002_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p2_res_002_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p2_res_002_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p2_res_002_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_002_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_002_q12",
+          "number": 12,
+          "prompt": "According to Paragraph C, what did Dr Hannah Lindqvist's comparative study show about towns using participatory budgeting?\nA. They invested more heavily in showpiece central plazas than control towns did.\nB. They directed a higher share of capital funds toward lower-income wards.\nC. They only gained public trust when every district won equal funding.\nD. They removed council engineers from the capital budget process."
+        },
+        {
+          "qid": "p2_res_002_q13",
+          "number": 13,
+          "prompt": "What concern expressed by elected councillors is mentioned in Paragraph E?\nA. Public ballots legally prevent towns from funding outdoor parks.\nB. Construction costs always double when residents choose local projects.\nC. Local ballots may favour visible amenities while overlooking vital hidden infrastructure.\nD. Trained volunteers lack the authority to meet with council engineers."
+        },
+        {
+          "qid": "p2_res_002_q14",
+          "number": 14,
+          "prompt": "According to Paragraph F, why do some councils limit the technical scale of eligible bids?\nA. To ensure winning works finish quickly enough to prove voters' choices matter.\nB. To stop neighbouring towns from copying their local budget proposals.\nC. To reduce the cost of placing paper ballot boxes at markets and clinics.\nD. To remove the requirement to publish quarterly progress trackers."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "id": "rp:p3_005",
+  "level": "P3",
+  "title": "The Limits of Explainability in Autonomous Maritime Routing",
+  "subtitle": "Why transparent explanations do not always make algorithmic ship navigation safer or easier to supervise",
+  "topic": "technology",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Over the past decade, commercial cargo fleets have begun deploying autonomous routing software to plot fuel-saving ocean tracks across shifting currents and crowded coastal lanes. Early sea trials across northern shipping corridors cut bunker-fuel burn by up to 11 per cent on medium-range crossings, drawing brisk backing from vessel owners facing stricter carbon rules. Fleet managers saw clear gains in both lower fuel bills and tighter arrival schedules. Yet maritime insurers and port regulators quickly demanded that every steering decision be paired with a clear human-readable explanation before wider bridge automation could proceed. At first glance, insisting on plain-language explanations looks like an obvious safeguard against opaque black-box navigation. Who would trust a giant container hull to a silent formula? In practice, however, forcing complex neural planners to narrate their internal logic onto bridge screens introduces thorny technical and human-factors limits that policymakers routinely underestimate."
+    },
+    {
+      "label": "B",
+      "text": "Modern marine routing models perform well precisely because they weigh hundreds of shifting variables at once—wave height, hull draft, seabed depth, radar clutter, and nearby vessel speeds. All of these signals interact inside dense mathematical networks that resist neat verbal rules. To satisfy oversight panels, software vendors often bolt on secondary explainer modules that boil complex matrix weights down to tidy one-line notes such as 'port turn advised due to swell'. In a 2023 simulator audit of 120 coastal manoeuvres, systems engineer Dr Yuna Park discovered that these post-hoc explanation layers misrepresented the primary neural trigger in 27 per cent of near-miss scenarios. Sometimes the network actually turned to avoid a faint radar echo rather than sea swell. Worse still, bridge crews rarely spotted the mismatch in real time. Park warns that smooth verbal summaries can mask the genuine mathematical basis of a steering choice, creating a false sense of clarity on the bridge."
+    },
+    {
+      "label": "C",
+      "text": "Even when a machine explanation stays technically faithful, time pressure at sea imposes strict human limits. Deck officers guiding heavy ships through narrow misty straits rarely have two quiet minutes to scan multi-factor trade-off charts. In a 2022 bridge-simulator study with 84 licensed watch officers, maritime psychologist Dr Owen Fitzsimmons compared minimal visual risk cones against detailed text rationales during sudden fishing-vessel crossings. Officers given verbose explanations reacted 3.4 seconds slower on average and made 19 per cent more late rudder corrections than peers viewing compact spatial overlays. Several participants also reported eye strain and split focus while trying to read screen paragraphs beside live radar tracks. In tight coastal water, a delay of three seconds can narrow safe stopping room sharply. Fitzsimmons concludes that flooding a stressed watchkeeper with verbal justification weakens situational awareness at the exact moments when swift spatial judgement counts most."
+    },
+    {
+      "label": "D",
+      "text": "Explainable alerts also collide with long-standing maritime law and the unwritten craft of seamanship. Global collision rules were written around human lookouts exercising what statutes term the ordinary practice of seamen. In real ports, that craft blends formal right-of-way codes with brief radio courtesies exchanged between captains. Maritime legal scholar Dr Nadia Haddad examined 16 port-authority inquiries conducted between 2019 and 2024 involving semi-autonomous trial craft. She found that shore supervisors repeatedly struggled to pin down legal blame when an autonomous vessel obeyed strict fuel-and-clearance rules yet violated local harbour courtesy, startling nearby pilot boats. Even complete screen logs failed to settle liability cleanly in tribunal hearings. Courts could read what the code wrote, yet still lacked clear rules on who owed care. Haddad argues that technical explainability alone cannot resolve fault disputes until maritime statutes define clear legal duties for remote supervisors and software vendors alike."
+    },
+    {
+      "label": "E",
+      "text": "None of this implies that transparent decision records have no place in shipping safety; their value simply peaks away from live danger. While real-time bridge prose runs into severe cognitive ceilings, structured data logs prove highly effective during calm post-voyage audits and crew training. Marine safety engineer Prof Ingrid Solberg evaluated post-voyage review boards across seven coastal ferry companies in 2024 to test how crews used archived routing records. Inspecting counterfactual traces—charts showing which rival tracks the software rejected and why—helped fleet teams spot recurring sensor blind spots 45 per cent faster than standard paper incident files. Crew members also built more realistic mental maps of when the software might falter in rough chop. Junior officers gained clear lessons without facing split-second stress at the helm. Solberg contends that explainability works best as an offline auditing and training instrument rather than a live conversational partner during tight harbour approaches."
+    },
+    {
+      "label": "F",
+      "text": "The policy debate over autonomous shipping has been skewed by a comforting assumption that getting an algorithm to explain itself in English equals making it trustworthy. Yet safe seafaring has never depended on mariners inspecting the internal physics of a radar magnetron or diesel governor during a gale. Instead, marine safety rests on strict operating limits, proven fallback gear, and clear human handover drills practised long before trouble strikes. Crews need to know where a tool stops working, not read an essay in heavy fog. Regulators should therefore stop demanding conversational explanations during live bridge emergencies, where extra words can do genuine harm. Far greater protection comes from enforcing verifiable safety envelopes—hard operational boundaries that guarantee predictable ship behaviour and trigger safe speed cuts whenever sensors degrade or sea lanes turn chaotic."
+    }
+  ],
+  "wordCount": 872,
+  "glossary": [
+    {
+      "term": "post-hoc explanation",
+      "meaningVi": "lời giải thích được tạo ra sau khi mô hình đã ra quyết định, không hẳn phản ánh đúng cơ chế bên trong"
+    },
+    {
+      "term": "watchkeeper",
+      "meaningVi": "sĩ quan trực ca trên buồng lái chịu trách nhiệm theo dõi hải trình"
+    },
+    {
+      "term": "seamanship",
+      "meaningVi": "kỹ năng và kinh nghiệm đi biển thực tiễn của người điều khiển tàu"
+    },
+    {
+      "term": "counterfactual trace",
+      "meaningVi": "dữ liệu lưu vết cho thấy các phương án thay thế mà thuật toán đã loại bỏ và lý do"
+    },
+    {
+      "term": "safety envelope",
+      "meaningVi": "giới hạn vận hành an toàn cứng mà hệ thống tự động không được vượt qua"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_005_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_005_q01",
+          "number": 1,
+          "prompt": "Policymakers frequently overlook the practical drawbacks of requiring autonomous ship software to justify its choices on bridge screens.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 830,
+              "end": 1031,
+              "quote": "In practice, however, forcing complex neural planners to narrate their internal logic onto bridge screens introduces thorny technical and human-factors limits that policymakers routinely underestimate."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "steps": [
+            "Đọc câu cuối đoạn A nêu nhận định trực tiếp của tác giả về yêu cầu giải thích trên màn hình buồng lái.",
+            "So sánh 'introduces thorny technical and human-factors limits that policymakers routinely underestimate' với nhận định câu hỏi.",
+            "Khớp hoàn toàn quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Câu cuối đoạn A khẳng định việc buộc bộ lập kế hoạch thần kinh diễn giải logic lên màn hình buồng lái kéo theo các giới hạn kỹ thuật và con người mà nhà hoạch định thường đánh giá thấp."
+        },
+        {
+          "qid": "p3_005_q02",
+          "number": 2,
+          "prompt": "Bolt-on explainer modules reliably identify the true mathematical trigger behind every automated steering adjustment.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 477,
+              "end": 690,
+              "quote": "In a 2023 simulator audit of 120 coastal manoeuvres, systems engineer Dr Yuna Park discovered that these post-hoc explanation layers misrepresented the primary neural trigger in 27 per cent of near-miss scenarios."
+            }
+          ],
+          "trapType": "qualifier",
+          "steps": [
+            "Tìm kết quả kiểm định 120 thao tác ven biển của Dr Yuna Park ở đoạn B.",
+            "Đối chiếu: các lớp giải thích hậu kiểm đã phản ánh sai tác nhân cốt lõi trong 27% tình huống suýt va chạm, trái ngược với từ tuyệt đối 'reliably... every'.",
+            "Mâu thuẫn rõ ràng nên chọn NO."
+          ],
+          "explanationVi": "Đoạn B chỉ ra các mô-đun giải thích gắn thêm đã mô tả sai nguyên nhân toán học chính trong 27% tình huống suýt va chạm. Điều này bác bỏ khẳng định chúng luôn đáng tin cậy."
+        },
+        {
+          "qid": "p3_005_q03",
+          "number": 3,
+          "prompt": "Displaying thorough text rationales helps bridge watch officers respond more swiftly to sudden hazards at sea.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 458,
+              "end": 626,
+              "quote": "Officers given verbose explanations reacted 3.4 seconds slower on average and made 19 per cent more late rudder corrections than peers viewing compact spatial overlays."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Định vị thí nghiệm mô phỏng buồng lái của Dr Owen Fitzsimmons ở đoạn C.",
+            "So sánh kết quả: sĩ quan nhận giải thích chi tiết bằng chữ phản ứng chậm hơn trung bình 3,4 giây và chỉnh bánh lái muộn hơn 19%.",
+            "Trái ngược hoàn toàn với nhận định phản ứng nhanh hơn nên chọn NO."
+          ],
+          "explanationVi": "Nghiên cứu ở đoạn C chứng minh giải thích dài dòng bằng chữ khiến sĩ quan trực ca phản ứng chậm hơn 3,4 giây và tăng 19% lỗi chỉnh bánh lái muộn. Do đó chọn NO."
+        },
+        {
+          "qid": "p3_005_q04",
+          "number": 4,
+          "prompt": "Veteran ferry captains express greater trust in autonomous routing tools than newly licensed deck officers do.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 242,
+              "end": 457,
+              "quote": "In a 2022 bridge-simulator study with 84 licensed watch officers, maritime psychologist Dr Owen Fitzsimmons compared minimal visual risk cones against detailed text rationales during sudden fishing-vessel crossings."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Rà soát đoạn C và E nơi nhắc đến sĩ quan trực ca và các hãng phà ven biển.",
+            "Kiểm tra xem bài có so sánh mức độ tin tưởng phần mềm giữa thuyền trưởng lâu năm và sĩ quan mới vào nghề không.",
+            "Bài hoàn toàn không đề cập so sánh theo thâm niên này nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Bài viết nhắc đến sĩ quan trực ca và thủy thủ đoàn hãng phà nhưng không hề so sánh mức độ tin tưởng vào phần mềm tự hành giữa thuyền trưởng kỳ cựu và sĩ quan mới cấp bằng."
+        },
+        {
+          "qid": "p3_005_q05",
+          "number": 5,
+          "prompt": "Maritime insurance firms now grant discounted premiums to fleets that adopt offline counterfactual auditing tools.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 470,
+              "end": 674,
+              "quote": "Inspecting counterfactual traces—charts showing which rival tracks the software rejected and why—helped fleet teams spot recurring sensor blind spots 45 per cent faster than standard paper incident files."
+            }
+          ],
+          "trapType": "extra_claim",
+          "steps": [
+            "Kiểm tra đoạn A (nhắc hãng bảo hiểm hàng hải) và đoạn E (nhắc công cụ kiểm toán counterfactual).",
+            "Xác minh xem bài có nói công ty bảo hiểm giảm phí cho đội tàu dùng công cụ kiểm toán sau hải trình hay không.",
+            "Không có thông tin nào về giảm phí bảo hiểm nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn A nhắc yêu cầu ban đầu của công ty bảo hiểm và đoạn E nêu lợi ích phát hiện điểm mù cảm biến nhanh hơn 45%. Bài không đề cập việc giảm phí bảo hiểm cho đội tàu."
+        },
+        {
+          "qid": "p3_005_q06",
+          "number": 6,
+          "prompt": "Maritime regulators would deliver stronger safety gains by enforcing strict operational boundaries rather than demanding live verbal explanations.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 537,
+              "end": 900,
+              "quote": "Regulators should therefore stop demanding conversational explanations during live bridge emergencies, where extra words can do genuine harm. Far greater protection comes from enforcing verifiable safety envelopes—hard operational boundaries that guarantee predictable ship behaviour and trigger safe speed cuts whenever sensors degrade or sea lanes turn chaotic."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Đọc hai câu cuối đoạn F trình bày khuyến nghị chính sách của tác giả.",
+            "Đối chiếu: ngừng đòi hỏi giải thích hội thoại lúc khẩn cấp và tập trung áp đặt 'verifiable safety envelopes—hard operational boundaries' mang lại bảo vệ lớn hơn nhiều.",
+            "Khớp chính xác lập trường tác giả nên chọn YES."
+          ],
+          "explanationVi": "Hai câu cuối đoạn F khẳng định cơ quan quản lý nên ngừng yêu cầu giải thích bằng lời khi khẩn cấp và thay bằng các giới hạn vận hành cứng có thể kiểm chứng để bảo vệ tốt hơn."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_005_g2",
+      "type": "matching_info",
+      "instructions": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_005_q07",
+          "number": 7,
+          "prompt": "An analogy comparing autonomous navigation tools with older mechanical and electronic bridge equipment",
+          "answer": {
+            "key": "F"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 171,
+              "end": 307,
+              "quote": "Yet safe seafaring has never depended on mariners inspecting the internal physics of a radar magnetron or diesel governor during a gale."
+            }
+          ],
+          "steps": [
+            "Tìm chi tiết liên quan đến thiết bị cơ khí và điện tử hàng hải truyền thống ('radar magnetron', 'diesel governor').",
+            "Định vị câu so sánh trực tiếp trong đoạn F.",
+            "Chọn Paragraph F."
+          ],
+          "explanationVi": "Đoạn F so sánh phần mềm định tuyến tự hành với bộ phát sóng radar và bộ điều tốc động cơ diesel để chứng minh an toàn đi biển không đòi hỏi hiểu vật lý nội bộ ngay giữa bão."
+        },
+        {
+          "qid": "p3_005_q08",
+          "number": 8,
+          "prompt": "A fuel-reduction figure recorded during early trials along northern shipping corridors",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 180,
+              "end": 371,
+              "quote": "Early sea trials across northern shipping corridors cut bunker-fuel burn by up to 11 per cent on medium-range crossings, drawing brisk backing from vessel owners facing stricter carbon rules."
+            }
+          ],
+          "steps": [
+            "Quét nhanh số liệu tiết kiệm nhiên liệu và cụm 'northern shipping corridors'.",
+            "Xác định số liệu 11% giảm nhiên liệu trong các chuyến thử nghiệm sớm ở đoạn A.",
+            "Chọn Paragraph A."
+          ],
+          "explanationVi": "Đoạn A là đoạn duy nhất nêu số liệu thử nghiệm ban đầu trên các hành lang hàng hải phía bắc giúp giảm tới 11% lượng tiêu thụ nhiên liệu."
+        },
+        {
+          "qid": "p3_005_q09",
+          "number": 9,
+          "prompt": "A clash between strict rule-following by navigation software and unwritten local harbour conventions",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 486,
+              "end": 695,
+              "quote": "She found that shore supervisors repeatedly struggled to pin down legal blame when an autonomous vessel obeyed strict fuel-and-clearance rules yet violated local harbour courtesy, startling nearby pilot boats."
+            }
+          ],
+          "steps": [
+            "Tìm nội dung về xung đột giữa quy tắc cứng của phần mềm và thông lệ cảng địa phương ('local harbour courtesy').",
+            "Định vị phân tích 16 cuộc điều tra cảng vụ tại đoạn D.",
+            "Chọn Paragraph D."
+          ],
+          "explanationVi": "Đoạn D mô tả mâu thuẫn khi tàu tự hành tuân thủ chặt quy tắc khoảng cách và nhiên liệu nhưng lại phá vỡ thông lệ nhường đường địa phương tại cảng."
+        },
+        {
+          "qid": "p3_005_q10",
+          "number": 10,
+          "prompt": "A direct test contrasting compact visual warnings against wordy text displays during a sudden crossing",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 242,
+              "end": 457,
+              "quote": "In a 2022 bridge-simulator study with 84 licensed watch officers, maritime psychologist Dr Owen Fitzsimmons compared minimal visual risk cones against detailed text rationales during sudden fishing-vessel crossings."
+            }
+          ],
+          "steps": [
+            "Tìm thí nghiệm so sánh cảnh báo hình ảnh gọn nhẹ ('minimal visual risk cones') với văn bản chi tiết ('detailed text rationales').",
+            "Định vị nghiên cứu năm 2022 của Dr Owen Fitzsimmons ở đoạn C.",
+            "Chọn Paragraph C."
+          ],
+          "explanationVi": "Đoạn C trình bày thí nghiệm mô phỏng của Dr Owen Fitzsimmons đối chiếu trực tiếp vùng rủi ro trực quan tối giản với diễn giải văn bản chi tiết khi tàu cá cắt ngang đột ngột."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_005_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 11–13) and the list of researchers below. Match each statement with the correct researcher, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Yuna Park"
+        },
+        {
+          "key": "B",
+          "text": "Dr Owen Fitzsimmons"
+        },
+        {
+          "key": "C",
+          "text": "Dr Nadia Haddad"
+        },
+        {
+          "key": "D",
+          "text": "Prof Ingrid Solberg"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_005_q11",
+          "number": 11,
+          "prompt": "Transparent routing logs prove far more useful for post-trip reviews and crew training than for live coastal navigation.",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 860,
+              "end": 1029,
+              "quote": "Solberg contends that explainability works best as an offline auditing and training instrument rather than a live conversational partner during tight harbour approaches."
+            }
+          ],
+          "steps": [
+            "Tìm quan điểm nhấn mạnh giá trị kiểm toán sau hải trình và đào tạo thủy thủ đoàn ở đoạn E.",
+            "Xác định câu lập luận của Prof Ingrid Solberg ở cuối đoạn E.",
+            "Chọn lựa chọn D."
+          ],
+          "explanationVi": "Trong đoạn E, Prof Ingrid Solberg lập luận khả năng giải thích phát huy tác dụng tốt nhất như công cụ kiểm toán và huấn luyện ngoại tuyến thay vì giao tiếp trực tiếp lúc cập cảng. Đáp án là D."
+        },
+        {
+          "qid": "p3_005_q12",
+          "number": 12,
+          "prompt": "Plausible one-line summaries attached to neural navigation tools can disguise the genuine mathematical reason for a turn.",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 848,
+              "end": 998,
+              "quote": "Park warns that smooth verbal summaries can mask the genuine mathematical basis of a steering choice, creating a false sense of clarity on the bridge."
+            }
+          ],
+          "steps": [
+            "Định vị cảnh báo về việc các câu tóm tắt ngắn gọn che giấu cơ sở toán học thực sự của thao tác bẻ lái ở đoạn B.",
+            "Xác định nhà nghiên cứu đưa ra cảnh báo này là Dr Yuna Park.",
+            "Chọn lựa chọn A."
+          ],
+          "explanationVi": "Đoạn B trích dẫn cảnh báo của Dr Yuna Park rằng các câu tóm tắt nghe hợp lý có thể che khuất cơ sở toán học thật sự của quyết định chuyển hướng. Đáp án đúng là A."
+        },
+        {
+          "qid": "p3_005_q13",
+          "number": 13,
+          "prompt": "Settling fault after autonomous vessel incidents requires updating formal maritime statutes rather than relying on technical logs alone.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 865,
+              "end": 1045,
+              "quote": "Haddad argues that technical explainability alone cannot resolve fault disputes until maritime statutes define clear legal duties for remote supervisors and software vendors alike."
+            }
+          ],
+          "steps": [
+            "Tìm lập luận về việc cần sửa đổi luật hàng hải để quy định rõ trách nhiệm pháp lý của người giám sát từ xa và nhà cung cấp phần mềm.",
+            "Xác định tác giả của lập luận này là học giả luật Dr Nadia Haddad ở đoạn D.",
+            "Chọn lựa chọn C."
+          ],
+          "explanationVi": "Ở cuối đoạn D, Dr Nadia Haddad khẳng định chỉ giải thích kỹ thuật không thể phân định lỗi chừng nào luật hàng hải chưa quy định rõ nghĩa vụ pháp lý của các bên. Đáp án là C."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

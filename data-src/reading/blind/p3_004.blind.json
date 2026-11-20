@@ -1,0 +1,180 @@
+{
+  "id": "rp:p3_004",
+  "level": "P3",
+  "reserved": false,
+  "title": "Replication Incentives and Null Results in Experimental Biology",
+  "subtitle": "Why academic reward systems bury negative findings and how structural reforms aim to restore reliability",
+  "topic": "science",
+  "wordCount": 836,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Independent replication is routinely praised in science textbooks as the core test of factual truth, yet inside working biology labs it occupies an awkward margin. Across leading life-science journals reviewed between 2015 and 2023, fewer than 9 per cent of published papers reported null results—careful trials in which a plausible biological idea failed to produce a measurable effect. Informal bench logs, by contrast, suggest that negative outcomes arise in well over half of all early experiments. Researchers call this widening gap between actual lab work and printed papers the file-drawer effect. Once an assay fails to confirm a neat hypothesis, the data folder is quietly archived and rarely seen again. Some senior editors still dismiss unpublished negative trials as harmless clutter that would merely crowd limited journal space. Treating missing null data as benign waste, however, skews the shared scientific record and drains huge sums of public research funding."
+    },
+    {
+      "label": "B",
+      "text": "To understand why negative trials stay locked in drawers, one must look at how academic careers are built and judged. Hiring panels, funding boards, and prestige journals reward bold new mechanisms far more generously than patient checks of another team's work. In a 2022 survey of 420 postdoctoral biologists across 16 European departments, Prof Alistair Reid found that 78 per cent believed publishing a direct replication would either stall or harm their chances of winning an independent lab grant. Many early-career staff told Reid they felt unable to spare six months verifying a rival lab's claim. Reid noted that journal referees regularly turn away solid null reports for lacking what they term conceptual advance. This happens even when the verification study uses larger samples than the original paper. Under these career incentives, steering clear of replication becomes a rational survival choice for ambitious junior staff."
+    },
+    {
+      "label": "C",
+      "text": "Burying failed experiments does far more than wound individual transparency; it quietly traps entire fields inside expensive dead ends. When three separate teams fail to repeat a celebrated cell-signalling claim and leave their folders unpublished, a fourth group may spend three years and substantial grant money chasing the exact same blind alley. PhD students lose precious training years troubleshooting protocols that never worked cleanly in the first place. In 2023, biostatistician Dr Amara Diallo modelled cumulative literature bias across 110 cell-biology subtopics and calculated that selective reporting inflated apparent treatment effects by an average of 36 per cent. Diallo further argues that missing null records cripple automated meta-analyses, because statistical pooling cannot correct for experimental failures that never enter public repositories. As a result, later drug trials frequently inherit shaky foundations built on partial, cherry-picked evidence."
+    },
+    {
+      "label": "D",
+      "text": "Still, it would be overly simplistic to blame every failed biological check on sloppy conduct or deliberate fraud. Living cell lines, serum batches, room humidity, and hidden microbes introduce real variation that sets biology apart from controlled bench physics. Even tiny shifts in daily handling can alter how sensitive tissues respond to a chemical cue. In a 2024 multi-site study, molecular biologist Dr Sofia Morales showed that tiny shifts in plastic culture-dish coatings altered stem-cell growth rates by 22 per cent across five partner labs following the exact same written guide. Even water purity and pipetting speed changed sensitive protein yields between winter and summer runs. Such quirks do not mean the first team cheated or erred. Morales contends that treating every discrepancy as proof of an invalid original paper misses a vital chance to uncover hidden environmental factors shaping living systems."
+    },
+    {
+      "label": "E",
+      "text": "Because polite appeals to scientific virtue have moved the needle very little, reformers now target the publishing rules themselves. Under the registered reports format, journals peer-review a study's hypothesis and detailed assay plan before any lab data are gathered. Once the design clears expert scrutiny, editors grant provisional acceptance regardless of whether the final figures turn out positive or null. This pledge removes the pressure to hunt for flashy outcomes after the bench work ends. A 2025 audit led by Prof Gareth Pritchard across 34 life-science journals revealed that registered reports published null findings at a rate of 58 per cent, compared with just 11 per cent among conventional papers in the very same titles. Alongside this editorial shift, several public agencies have created ring-fenced funds paying dedicated validation teams to check high-citation findings before clinical testing starts."
+    },
+    {
+      "label": "F",
+      "text": "Whether such journal reforms alone can cure entrenched academic habits remains an open question. Registered reports serve tightly defined confirmatory tests well, yet much early biological discovery is exploratory, with surprise bench observations sparking new hypotheses midway through an assay. Locking every exploratory step in advance would stifle the flexible trial-and-error thinking that opens fresh fields. Biologists still need room to follow odd signals without filing fresh paperwork every week. Durable change therefore demands reshaping how universities weigh academic merit during hiring and tenure reviews. Search panels must give genuine credit for open null datasets and careful verification alongside headline breakthroughs. Unless institutional prestige catches up with methodological honesty, experimental biology will keep celebrating flashy claims while quietly discarding the negative evidence that keeps science self-correcting."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_004_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_004_q01",
+          "number": 1,
+          "prompt": "Omitting unsuccessful laboratory trials from scientific journals poses little genuine threat to biological research."
+        },
+        {
+          "qid": "p3_004_q02",
+          "number": 2,
+          "prompt": "Prevailing academic reward criteria make avoiding replication studies a sensible career decision for younger biologists."
+        },
+        {
+          "qid": "p3_004_q03",
+          "number": 3,
+          "prompt": "Commercial pharmaceutical laboratories disclose negative experimental results more openly than university biology departments do."
+        },
+        {
+          "qid": "p3_004_q04",
+          "number": 4,
+          "prompt": "Whenever an independent group fails to match a published biological finding, the mismatch demonstrates that the first study was invalid."
+        },
+        {
+          "qid": "p3_004_q05",
+          "number": 5,
+          "prompt": "Expert referees typically require considerably more time to review registered report designs than to assess standard finished manuscripts."
+        },
+        {
+          "qid": "p3_004_q06",
+          "number": 6,
+          "prompt": "Pre-registered publishing formats cannot comfortably accommodate every style of biological inquiry, especially open-ended exploratory research."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_004_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "How hidden environmental factors can cause honest discrepancies between labs"
+        },
+        {
+          "key": "ii",
+          "text": "The career risks that discourage junior researchers from checking prior work"
+        },
+        {
+          "key": "iii",
+          "text": "Publishing models and funding schemes built to reward honest verification"
+        },
+        {
+          "key": "iv",
+          "text": "Why automated laboratories have completely eliminated human experimental error"
+        },
+        {
+          "key": "v",
+          "text": "The striking gap between textbook ideals and published biological outcomes"
+        },
+        {
+          "key": "vi",
+          "text": "How suppressed negative trials waste resources and exaggerate scientific claims"
+        },
+        {
+          "key": "vii",
+          "text": "Rising subscription charges imposed by international biology journals"
+        },
+        {
+          "key": "viii",
+          "text": "Why physics trials suffer heavier microbial contamination than cell assays"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_004_q07",
+          "number": 7,
+          "prompt": "Paragraph A"
+        },
+        {
+          "qid": "p3_004_q08",
+          "number": 8,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p3_004_q09",
+          "number": 9,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p3_004_q10",
+          "number": 10,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p3_004_q11",
+          "number": 11,
+          "prompt": "Paragraph E"
+        }
+      ]
+    },
+    {
+      "groupId": "p3_004_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 12–14) and the list of researchers below. Match each statement with the correct researcher, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Prof Alistair Reid"
+        },
+        {
+          "key": "B",
+          "text": "Dr Amara Diallo"
+        },
+        {
+          "key": "C",
+          "text": "Dr Sofia Morales"
+        },
+        {
+          "key": "D",
+          "text": "Prof Gareth Pritchard"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_004_q12",
+          "number": 12,
+          "prompt": "Statistical syntheses of published trials cannot compensate for negative experiments kept out of public archives."
+        },
+        {
+          "qid": "p3_004_q13",
+          "number": 13,
+          "prompt": "Approving experimental methods before results are collected sharply increases the share of negative findings appearing in journals."
+        },
+        {
+          "qid": "p3_004_q14",
+          "number": 14,
+          "prompt": "Seemingly minor differences in routine labware can produce substantial shifts in biological growth measurements."
+        }
+      ]
+    }
+  ]
+}

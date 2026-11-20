@@ -1,0 +1,399 @@
+{
+  "id": "rp:p1_006",
+  "level": "P1",
+  "title": "Mineral Pigments in Vernacular Lime-Plaster Murals",
+  "subtitle": "Earth colours, wet-plaster chemistry, and conservation of rural courtyard wall paintings",
+  "topic": "arts",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across stone farmhouses and courtyard inns in southern and central Europe, faded wall paintings still decorate sheltered arches and stairways. Most of these rural murals date from the seventeenth to the nineteenth centuries. They often show simple floral borders, farm harvest scenes, or protective village motifs. Wealthy city patrons could import rare dyes by sea, yet country painters relied almost fully on local earth minerals. Crushed iron-rich clay, warm yellow ochre, and pale green earth lay right beside nearby hills and riverbanks. These raw mineral powders cost only a fraction of exotic overseas pigments, yet they held their natural colour under bright summer sunlight for generations without turning brown or brittle."
+    },
+    {
+      "label": "B",
+      "text": "The long life of rural wall art stems from the simple science of wet lime plaster. Masons began by spreading two coarse undercoats made of slaked lime and clean river sand across rough masonry walls. Once those base coats set firm, a plasterer laid a thin smooth skin over just one small patch. That patch matched the exact space an artist could finish in a single day. While the lime surface remained damp, the painter brushed ground mineral powders stirred solely with pure rainwater onto the wall. As the plaster slowly dried, carbon dioxide from the air reacted with the lime to form a hard crystal shell of calcium carbonate. That shell locked the earth colour deep inside the wall rather than resting loosely on top."
+    },
+    {
+      "label": "C",
+      "text": "Because rural painters worked within modest village budgets, they often devised clever local substitutes for expensive hues. In 2020, conservation chemist Dr Hannah Lindholm sampled paint flakes from 36 historic rural buildings to map regional pigment recipes. Grand palace studios frequently bought imported lapis lazuli stone to obtain vivid blue skies, an expense far beyond any country innkeeper's means. Lindholm's microscope analyses revealed that village artists instead produced soft slate-blue tones by grinding fine local charcoal ash together with white chalk. Although this muted blue appeared quieter than royal stone pigments, it matched warm earth reds gracefully and resisted flaking even inside damp entrance halls."
+    },
+    {
+      "label": "D",
+      "text": "Where historic lime murals have suffered serious loss, moisture trapped inside masonry is usually the primary culprit. Water rising from wet foundations carries dissolved salts slowly upward through stone pores toward the painted surface. When that moisture dries on the wall face, growing salt crystals push outward and turn firm plaster into loose powdery flakes. Unfortunately, well-meaning building repairs during the twentieth century often accelerated this decay rather than slowing it. Whenever modern contractors sealed aged stone walls beneath waterproof cement or synthetic acrylic coatings, trapped ground dampness had no open path to evaporate. Pressure then built behind the sealed layer until entire painted panels detached cleanly from the wall."
+    },
+    {
+      "label": "E",
+      "text": "Modern conservation methods aim to reverse those damp traps while preserving original brushwork. Senior restorer Marco Bellini leads regional field teams that mend fragile courtyard murals through gentle, reversible steps. First, technical staff lift thin strips of modern plastic paint away from the old lime coat using fine steel blades and mild steam. Next, they press wet paper poultices against stained masonry for several days to draw hidden salt deposits safely out of the porous plaster. Where hollow gaps open behind weak sections, conservators inject fluid lime grout through tiny needles to bond the layers back in place. They leave genuine faded areas visible rather than inventing fresh scenes from guesswork."
+    },
+    {
+      "label": "F",
+      "text": "Lessons from rural lime murals now guide modern eco-architects who design low-carbon homes. Builders prize classic slaked-lime finishes because curing plaster slowly draws carbon dioxide out of room air. Better still, it holds zero man-made plastics. In addition, porous mineral walls naturally regulate indoor humidity by absorbing excess moisture during humid spells and releasing it back when rooms grow dry. Although natural lime washes require simple spot touch-ups after heavy storms, designers note that they avoid the peeling waste produced by modern plastic wall paints. Old country craft has thus returned as a clean, practical model for sturdy, breathable buildings."
+    }
+  ],
+  "wordCount": 663,
+  "glossary": [
+    {
+      "term": "ochre",
+      "meaningVi": "đất son màu vàng hoặc nâu đỏ giàu oxit sắt dùng làm chất màu tự nhiên"
+    },
+    {
+      "term": "slaked lime",
+      "meaningVi": "vôi tôi, vật liệu trộn với cát tạo thành vữa trát tường thoáng khí"
+    },
+    {
+      "term": "poultice",
+      "meaningVi": "miếng đắp ẩm (giấy hoặc đất sét) dùng hút muối và vết bẩn khỏi tường cổ"
+    },
+    {
+      "term": "grout",
+      "meaningVi": "vữa lỏng dùng bơm lấp các khe hở hoặc lớp bong tách phía sau mảng tường"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_006_q01",
+          "number": 1,
+          "prompt": "Country mural painters chose local earth pigments partly because they were far less costly than imported colours.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 543,
+              "end": 732,
+              "quote": "These raw mineral powders cost only a fraction of exotic overseas pigments, yet they held their natural colour under bright summer sunlight for generations without turning brown or brittle."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn A nêu bột khoáng địa phương chỉ có giá bằng một phần nhỏ (a fraction of) chất màu nhập khẩu từ nước ngoài mà vẫn giữ màu bền dưới nắng → TRUE.",
+          "steps": [
+            "Tìm so sánh chi phí chất màu ở đoạn A.",
+            "Đối chiếu: cost only a fraction of exotic overseas pigments khớp với far less costly than imported colours.",
+            "Khớp chính xác với nội dung bài → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_006_q02",
+          "number": 2,
+          "prompt": "Village artists blended crushed mineral powders with plant oil before brushing them onto damp lime plaster.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 370,
+              "end": 500,
+              "quote": "While the lime surface remained damp, the painter brushed ground mineral powders stirred solely with pure rainwater onto the wall."
+            }
+          ],
+          "trapType": "partial_match",
+          "explanationVi": "Đoạn B khẳng định bột khoáng chỉ được khuấy với nước mưa tinh khiết (stirred solely with pure rainwater), không phải dầu thực vật → FALSE.",
+          "steps": [
+            "Định vị câu mô tả cách pha màu lên tường vôi ẩm ở đoạn B.",
+            "So sánh: câu hỏi nói plant oil, bài nhấn mạnh solely with pure rainwater.",
+            "Mâu thuẫn trực tiếp → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_006_q03",
+          "number": 3,
+          "prompt": "According to Dr Hannah Lindholm's 2020 investigation, rural painters produced blue shades using different materials from grand palace workshops.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 409,
+              "end": 571,
+              "quote": "Lindholm's microscope analyses revealed that village artists instead produced soft slate-blue tones by grinding fine local charcoal ash together with white chalk."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn C đối chiếu: xưởng cung điện dùng đá lapis lazuli nhập khẩu, còn họa sĩ làng pha tro than củi địa phương với phấn trắng để tạo sắc xanh xám → TRUE.",
+          "steps": [
+            "Tìm tên Dr Hannah Lindholm và năm 2020 ở đoạn C.",
+            "So sánh hai nhóm: palace studios dùng lapis lazuli, còn village artists dùng charcoal ash + white chalk.",
+            "Khớp chính xác với câu hỏi → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_006_q04",
+          "number": 4,
+          "prompt": "Dr Hannah Lindholm published an illustrated manual containing more than 200 historic plaster formulas for art colleges.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 125,
+              "end": 260,
+              "quote": "In 2020, conservation chemist Dr Hannah Lindholm sampled paint flakes from 36 historic rural buildings to map regional pigment recipes."
+            }
+          ],
+          "trapType": "number_date",
+          "explanationVi": "Đoạn C chỉ nêu Lindholm lấy mẫu từ 36 công trình nông thôn để lập bản đồ công thức màu vùng miền, hoàn toàn không nhắc tới sách hướng dẫn hay con số 200 công thức → NOT GIVEN.",
+          "steps": [
+            "Quét đoạn C tìm tên Dr Hannah Lindholm.",
+            "Kiểm tra xem có thông tin về illustrated manual, 200 formulas hay art colleges không.",
+            "Không hề có dữ kiện nào về việc xuất bản sách → NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p1_006_q05",
+          "number": 5,
+          "prompt": "Coating aged lime murals with synthetic acrylic paint protects them by helping underground dampness evaporate quickly.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 493,
+              "end": 656,
+              "quote": "Whenever modern contractors sealed aged stone walls beneath waterproof cement or synthetic acrylic coatings, trapped ground dampness had no open path to evaporate."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn D khẳng định sơn acrylic tổng hợp bịt kín tường khiến hơi ẩm bị kẹt lại KHÔNG có lối thoát hơi (no open path to evaporate) và làm hư hại nặng hơn. Mâu thuẫn trực tiếp → FALSE.",
+          "steps": [
+            "Tìm từ khóa synthetic acrylic và evaporate ở đoạn D.",
+            "Đối chiếu nhân quả: câu hỏi nói giúp hơi ẩm thoát nhanh, bài nói trapped dampness had no open path to evaporate.",
+            "Trái ngược hoàn toàn → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_006_q06",
+          "number": 6,
+          "prompt": "Most contemporary eco-architects require lime-washed homes to be fully recoated every five years to keep walls breathable.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 412,
+              "end": 579,
+              "quote": "Although natural lime washes require simple spot touch-ups after heavy storms, designers note that they avoid the peeling waste produced by modern plastic wall paints."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn F chỉ đề cập sơn vôi tự nhiên cần dặm vá nhẹ sau bão lớn (simple spot touch-ups), hoàn toàn không nói phải sơn phủ lại toàn bộ mỗi năm năm → NOT GIVEN.",
+          "steps": [
+            "Định vị eco-architects và lime washes ở đoạn F.",
+            "Kiểm tra xem có mốc thời gian five years hay yêu cầu sơn lại toàn bộ không.",
+            "Không có dữ kiện về chu kỳ 5 năm → NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_summary",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "To prepare masonry for durable rural wall paintings, plasterers laid rough undercoats of slaked lime mixed with river [Q7] before spreading a fine damp finishing coat. Mineral colours stirred with pure [Q8] then bonded chemically inside a crystal shell of calcium carbonate as the surface dried. However, ground dampness rising through stone walls carries dissolved [Q9] that crystallise and flake the artwork. This deterioration worsens when later builders trap moisture behind waterproof [Q10] or synthetic acrylic layers.",
+      "questions": [
+        {
+          "qid": "p1_006_q07",
+          "number": 7,
+          "prompt": "Complete gap [Q7] (ONE WORD ONLY).",
+          "answer": {
+            "accepted": [
+              "sand"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 83,
+              "end": 199,
+              "quote": "Masons began by spreading two coarse undercoats made of slaked lime and clean river sand across rough masonry walls."
+            }
+          ],
+          "explanationVi": "Đoạn B nêu lớp lót thô làm từ vôi tôi và cát sông sạch (slaked lime and clean river sand). Từ cần điền là sand.",
+          "steps": [
+            "Định vị slaked lime và coarse undercoats ở đoạn B.",
+            "Đối chiếu với river [Q7] → từ nguyên văn là sand.",
+            "Kiểm tra giới hạn 1 từ → sand."
+          ]
+        },
+        {
+          "qid": "p1_006_q08",
+          "number": 8,
+          "prompt": "Complete gap [Q8] (ONE WORD ONLY).",
+          "answer": {
+            "accepted": [
+              "rainwater"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 370,
+              "end": 500,
+              "quote": "While the lime surface remained damp, the painter brushed ground mineral powders stirred solely with pure rainwater onto the wall."
+            }
+          ],
+          "explanationVi": "Đoạn B viết ground mineral powders stirred solely with pure rainwater. Đáp án 1 từ nguyên văn là rainwater.",
+          "steps": [
+            "Tìm cụm stirred ... with pure ở đoạn B.",
+            "Danh từ đi ngay sau pure là rainwater.",
+            "Thỏa mãn ONE WORD ONLY → rainwater."
+          ]
+        },
+        {
+          "qid": "p1_006_q09",
+          "number": 9,
+          "prompt": "Complete gap [Q9] (ONE WORD ONLY).",
+          "answer": {
+            "accepted": [
+              "salts"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 119,
+              "end": 238,
+              "quote": "Water rising from wet foundations carries dissolved salts slowly upward through stone pores toward the painted surface."
+            }
+          ],
+          "explanationVi": "Đoạn D ghi carries dissolved salts slowly upward. Đáp án nguyên văn 1 từ là salts.",
+          "steps": [
+            "Định vị câu nói về hơi ẩm từ móng dâng lên ở đoạn D.",
+            "Đối chiếu carries dissolved [Q9] → salts.",
+            "Giữ đúng dạng số nhiều nguyên văn → salts."
+          ]
+        },
+        {
+          "qid": "p1_006_q10",
+          "number": 10,
+          "prompt": "Complete gap [Q10] (ONE WORD ONLY).",
+          "answer": {
+            "accepted": [
+              "cement"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 493,
+              "end": 656,
+              "quote": "Whenever modern contractors sealed aged stone walls beneath waterproof cement or synthetic acrylic coatings, trapped ground dampness had no open path to evaporate."
+            }
+          ],
+          "explanationVi": "Đoạn D ghi waterproof cement or synthetic acrylic coatings. Đáp án 1 từ cần điền là cement.",
+          "steps": [
+            "Tìm cụm waterproof và synthetic acrylic ở đoạn D.",
+            "Danh từ đứng giữa waterproof và or synthetic acrylic là cement.",
+            "Kiểm tra giới hạn 1 từ → cement."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g3_sentence",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "questions": [
+        {
+          "qid": "p1_006_q11",
+          "number": 11,
+          "prompt": "Village muralists achieved muted slate-blue shades by mixing white chalk with finely ground local ______.",
+          "answer": {
+            "accepted": [
+              "charcoal ash"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 409,
+              "end": 571,
+              "quote": "Lindholm's microscope analyses revealed that village artists instead produced soft slate-blue tones by grinding fine local charcoal ash together with white chalk."
+            }
+          ],
+          "explanationVi": "Đoạn C nêu rõ họa sĩ làng nghiền tro than củi địa phương (local charcoal ash) cùng phấn trắng. Đáp án 2 từ là charcoal ash.",
+          "steps": [
+            "Định vị slate-blue và white chalk ở đoạn C.",
+            "Đọc nguyên liệu đi cùng phấn trắng sau fine local là charcoal ash.",
+            "Kiểm tra giới hạn NO MORE THAN TWO WORDS → charcoal ash."
+          ]
+        },
+        {
+          "qid": "p1_006_q12",
+          "number": 12,
+          "prompt": "Conservators remove embedded salt deposits from fragile plaster by applying damp ______ for several days.",
+          "answer": {
+            "accepted": [
+              "paper poultices"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 355,
+              "end": 495,
+              "quote": "Next, they press wet paper poultices against stained masonry for several days to draw hidden salt deposits safely out of the porous plaster."
+            }
+          ],
+          "explanationVi": "Đoạn E viết press wet paper poultices against stained masonry for several days. Đáp án 2 từ là paper poultices.",
+          "steps": [
+            "Tìm cụm salt deposits và several days ở đoạn E.",
+            "Đối chiếu damp = wet, danh từ theo sau là paper poultices.",
+            "Kiểm tra giới hạn tối đa 2 từ → paper poultices."
+          ]
+        },
+        {
+          "qid": "p1_006_q13",
+          "number": 13,
+          "prompt": "Modern eco-architects value porous lime walls because they help balance ______ inside buildings naturally.",
+          "answer": {
+            "accepted": [
+              "indoor humidity"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 251,
+              "end": 411,
+              "quote": "In addition, porous mineral walls naturally regulate indoor humidity by absorbing excess moisture during humid spells and releasing it back when rooms grow dry."
+            }
+          ],
+          "explanationVi": "Đoạn F nêu tường khoáng thoáng khí giúp điều hòa độ ẩm trong nhà (naturally regulate indoor humidity). Đáp án 2 từ là indoor humidity.",
+          "steps": [
+            "Định vị porous mineral walls ở đoạn F.",
+            "Đối chiếu balance = regulate, cụm danh từ đứng sau là indoor humidity.",
+            "Kiểm tra giới hạn tối đa 2 từ → indoor humidity."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

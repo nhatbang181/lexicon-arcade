@@ -1,0 +1,180 @@
+{
+  "id": "rp:p1_003",
+  "level": "P1",
+  "reserved": false,
+  "title": "How Alpine Marmots Synchronise Winter Hibernation",
+  "subtitle": "Social warmth, seasonal fat reserves, and underground survival in high mountain meadows",
+  "topic": "animals",
+  "wordCount": 662,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "High above the mountain tree line, between 1,800 and 2,800 metres, alpine marmots live in one of Europe's harshest cold zones. Deep snow hides their grassy meadows for up to seven months each year. That long freeze removes almost all fresh plants from the slopes. To cope with this long shortage, colonies move underground in October and enter deep hibernation. During torpor, a marmot's body heat drops from 37 degrees Celsius to roughly five degrees, while its heart slows to just four beats a minute. Contrary to popular belief, however, hibernation is not a single unbroken sleep. Every two weeks, marmots wake up briefly for a few hours to keep vital body functions working before cooling down again."
+    },
+    {
+      "label": "B",
+      "text": "Unlike lone ground squirrels that winter by themselves, alpine marmots rely on group contact to save body heat. Field studies show that colonies pack tight into one grass-lined room holding six to twelve related members. Over five consecutive winters, mountain zoologist Dr Petra Novak monitored thermal sensors inside 28 natural burrows across two alpine valleys. Her data showed a strong survival gain for young animals born during the past summer. Juveniles placed near the warm centre of larger family groups survived winter at twice the rate of youngsters living in small groups of only three animals. Adult helpers effectively act as living radiators, shielding smaller relatives from lethal frost."
+    },
+    {
+      "label": "C",
+      "text": "Close huddling only works well when colony members coordinate their regular warm-up cycles. If one adult wakes and raises its body temperature alone, it must burn substantial fat reserves simply to warm the cold surrounding air inside the burrow. Sound and heat logs show that healthy family groups match their wake-up times within a narrow two-hour window. When adults warm up side by side, shared body heat cuts the effort needed by each animal. Researchers estimate that synchronised arousal cuts collective winter weight loss by nearly 28 per cent compared with isolated individuals. Any lower-ranked adult that falls out of step with the group risks running out of fat before spring grass grows back."
+    },
+    {
+      "label": "D",
+      "text": "Surviving seven months underground demands intense preparation during the brief alpine summer. Between May and September, adult marmots spend up to nine hours a day grazing on wild clover, tender mountain grasses, and alpine flowers to double their body mass before autumn frosts arrive. Feeding, however, is only part of their seasonal schedule. Dominant males also devote several weeks in late August to gathering mouthfuls of dry meadow grass and hauling it down tunnels up to three metres deep. They weave this dry bedding into a thick central nest and pack soil mixed with dried stems into the outer burrow entrances. These dense plugs block freezing mountain drafts from penetrating the sleeping chamber."
+    },
+    {
+      "label": "E",
+      "text": "Recent shifts in mountain weather patterns have exposed an unexpected vulnerability in this ancient survival strategy. Mountain ecologist Dr Thomas Meyer analysed fourteen years of colony census records alongside alpine weather station readings. His findings surprised local park managers: milder winters with lighter snowfall actually increased marmot mortality rather than improving survival. The explanation lies in simple physics, because a deep winter snowpack acts as a protective insulating blanket over the frozen earth. When snow cover stays thin or melts early in January, cold night winds chill the underlying soil by several extra degrees. Forced to defend their body temperature in colder chambers, colonies burn through their stored fat weeks ahead of schedule."
+    },
+    {
+      "label": "F",
+      "text": "Protecting alpine marmot colonies brings wider ecological gains for high mountain lands. As groups dig long tunnel systems, they mix deep soil with rich top earth and help rain soak evenly into steep hills. Their foraging habits also disperse wildflower seeds across rocky ridges, while abandoned side chambers provide vital shelter for mountain voles, beetles, and nesting bumblebees. Because marmots depend closely on steady winter snow, ecologists now view them as clear signs of alpine climate health. Park teams now track snow depth rather than air heat alone when assessing long-term risks to high-mountain wildlife."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_003_q01",
+          "number": 1,
+          "prompt": "Once alpine marmots begin winter hibernation, they stay continuously asleep until spring arrives."
+        },
+        {
+          "qid": "p1_003_q02",
+          "number": 2,
+          "prompt": "In Dr Petra Novak's study, young marmots had better winter survival chances in larger family colonies than in groups of three."
+        },
+        {
+          "qid": "p1_003_q03",
+          "number": 3,
+          "prompt": "Dr Petra Novak attached tiny radio tracking collars to adult marmots to map their summer grazing territory."
+        },
+        {
+          "qid": "p1_003_q04",
+          "number": 4,
+          "prompt": "Coordinating their periodic waking times helps adult marmots reduce total weight loss across the winter."
+        },
+        {
+          "qid": "p1_003_q05",
+          "number": 5,
+          "prompt": "Winters with lighter snow cover reduce marmot death rates because underground burrows remain warmer."
+        },
+        {
+          "qid": "p1_003_q06",
+          "number": 6,
+          "prompt": "Alpine marmots distribute a greater variety of alpine flower seeds than mountain voles living nearby."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why thinner winter snowpacks threaten underground colonies"
+        },
+        {
+          "key": "ii",
+          "text": "The energy advantage of coordinated waking cycles"
+        },
+        {
+          "key": "iii",
+          "text": "Wider ecological benefits and a shift in monitoring"
+        },
+        {
+          "key": "iv",
+          "text": "Group huddling as protection for young marmots"
+        },
+        {
+          "key": "v",
+          "text": "Summer feeding and sealing tunnels before the frost"
+        },
+        {
+          "key": "vi",
+          "text": "How mountain predators break into snow-covered burrows"
+        },
+        {
+          "key": "vii",
+          "text": "Why adult marmots prefer solitary burrows at high altitudes"
+        },
+        {
+          "key": "viii",
+          "text": "The winter food supply stored by mountain voles"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_003_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p1_003_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p1_003_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p1_003_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p1_003_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_003_q12",
+          "number": 12,
+          "prompt": "According to paragraph C, why is it risky for an adult marmot to wake up separately from its colony?\nA. It may disturb the sleeping juveniles in the central chamber.\nB. It burns excessive fat reserves trying to heat cold burrow air alone.\nC. It is likely to abandon the burrow in search of autumn grass.\nD. Its heart rate cannot slow down again without adult helpers."
+        },
+        {
+          "qid": "p1_003_q13",
+          "number": 13,
+          "prompt": "In paragraph D, what late-summer task do dominant male marmots carry out in addition to grazing?\nA. Digging fresh three-metre tunnels exclusively for newborn young\nB. Collecting alpine wildflower seeds to eat during brief winter waking periods\nC. Bringing dry meadow grass underground to line the nest and seal entrances\nD. Guarding grassy slopes against neighbouring marmot families"
+        },
+        {
+          "qid": "p1_003_q14",
+          "number": 14,
+          "prompt": "According to Dr Thomas Meyer in paragraph E, how does a thick snowpack benefit hibernating marmots?\nA. It insulates the underground soil from extreme night-time cold.\nB. It melts slowly in spring to supply drinking water inside tunnels.\nC. It hides burrow entrances from birds of prey flying overhead.\nD. It softens compacted alpine earth so colonies can dig deeper."
+        }
+      ]
+    }
+  ]
+}

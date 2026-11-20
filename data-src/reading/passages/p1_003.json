@@ -1,0 +1,540 @@
+{
+  "id": "rp:p1_003",
+  "level": "P1",
+  "title": "How Alpine Marmots Synchronise Winter Hibernation",
+  "subtitle": "Social warmth, seasonal fat reserves, and underground survival in high mountain meadows",
+  "topic": "animals",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "High above the mountain tree line, between 1,800 and 2,800 metres, alpine marmots live in one of Europe's harshest cold zones. Deep snow hides their grassy meadows for up to seven months each year. That long freeze removes almost all fresh plants from the slopes. To cope with this long shortage, colonies move underground in October and enter deep hibernation. During torpor, a marmot's body heat drops from 37 degrees Celsius to roughly five degrees, while its heart slows to just four beats a minute. Contrary to popular belief, however, hibernation is not a single unbroken sleep. Every two weeks, marmots wake up briefly for a few hours to keep vital body functions working before cooling down again."
+    },
+    {
+      "label": "B",
+      "text": "Unlike lone ground squirrels that winter by themselves, alpine marmots rely on group contact to save body heat. Field studies show that colonies pack tight into one grass-lined room holding six to twelve related members. Over five consecutive winters, mountain zoologist Dr Petra Novak monitored thermal sensors inside 28 natural burrows across two alpine valleys. Her data showed a strong survival gain for young animals born during the past summer. Juveniles placed near the warm centre of larger family groups survived winter at twice the rate of youngsters living in small groups of only three animals. Adult helpers effectively act as living radiators, shielding smaller relatives from lethal frost."
+    },
+    {
+      "label": "C",
+      "text": "Close huddling only works well when colony members coordinate their regular warm-up cycles. If one adult wakes and raises its body temperature alone, it must burn substantial fat reserves simply to warm the cold surrounding air inside the burrow. Sound and heat logs show that healthy family groups match their wake-up times within a narrow two-hour window. When adults warm up side by side, shared body heat cuts the effort needed by each animal. Researchers estimate that synchronised arousal cuts collective winter weight loss by nearly 28 per cent compared with isolated individuals. Any lower-ranked adult that falls out of step with the group risks running out of fat before spring grass grows back."
+    },
+    {
+      "label": "D",
+      "text": "Surviving seven months underground demands intense preparation during the brief alpine summer. Between May and September, adult marmots spend up to nine hours a day grazing on wild clover, tender mountain grasses, and alpine flowers to double their body mass before autumn frosts arrive. Feeding, however, is only part of their seasonal schedule. Dominant males also devote several weeks in late August to gathering mouthfuls of dry meadow grass and hauling it down tunnels up to three metres deep. They weave this dry bedding into a thick central nest and pack soil mixed with dried stems into the outer burrow entrances. These dense plugs block freezing mountain drafts from penetrating the sleeping chamber."
+    },
+    {
+      "label": "E",
+      "text": "Recent shifts in mountain weather patterns have exposed an unexpected vulnerability in this ancient survival strategy. Mountain ecologist Dr Thomas Meyer analysed fourteen years of colony census records alongside alpine weather station readings. His findings surprised local park managers: milder winters with lighter snowfall actually increased marmot mortality rather than improving survival. The explanation lies in simple physics, because a deep winter snowpack acts as a protective insulating blanket over the frozen earth. When snow cover stays thin or melts early in January, cold night winds chill the underlying soil by several extra degrees. Forced to defend their body temperature in colder chambers, colonies burn through their stored fat weeks ahead of schedule."
+    },
+    {
+      "label": "F",
+      "text": "Protecting alpine marmot colonies brings wider ecological gains for high mountain lands. As groups dig long tunnel systems, they mix deep soil with rich top earth and help rain soak evenly into steep hills. Their foraging habits also disperse wildflower seeds across rocky ridges, while abandoned side chambers provide vital shelter for mountain voles, beetles, and nesting bumblebees. Because marmots depend closely on steady winter snow, ecologists now view them as clear signs of alpine climate health. Park teams now track snow depth rather than air heat alone when assessing long-term risks to high-mountain wildlife."
+    }
+  ],
+  "wordCount": 662,
+  "glossary": [
+    {
+      "term": "torpor",
+      "meaningVi": "trạng thái ngủ đông sâu với thân nhiệt và nhịp tim giảm rất thấp"
+    },
+    {
+      "term": "arousal",
+      "meaningVi": "chu kỳ tỉnh giấc ngắn giữa quá trình ngủ đông để hồi phục sinh lý"
+    },
+    {
+      "term": "metabolic",
+      "meaningVi": "liên quan đến quá trình trao đổi chất và tiêu thụ năng lượng"
+    },
+    {
+      "term": "insulating",
+      "meaningVi": "có tác dụng cách nhiệt, giữ ấm và ngăn hơi lạnh xâm nhập"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_003_q01",
+          "number": 1,
+          "prompt": "Once alpine marmots begin winter hibernation, they stay continuously asleep until spring arrives.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 504,
+              "end": 584,
+              "quote": "Contrary to popular belief, however, hibernation is not a single unbroken sleep."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn A khẳng định ngủ đông không phải một giấc ngủ liền mạch (not a single unbroken sleep) vì cứ hai tuần chúng lại tỉnh giấc ngắn để làm ấm cơ thể. Mâu thuẫn trực tiếp → FALSE.",
+          "steps": [
+            "Tìm từ khóa hibernation và asleep ở đoạn A.",
+            "So sánh: câu hỏi nói stay continuously asleep, bài nói not a single unbroken sleep và briefly rewarm every two weeks.",
+            "Hai vế đối lập rõ ràng → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_003_q02",
+          "number": 2,
+          "prompt": "In Dr Petra Novak's study, young marmots had better winter survival chances in larger family colonies than in groups of three.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 451,
+              "end": 606,
+              "quote": "Juveniles placed near the warm centre of larger family groups survived winter at twice the rate of youngsters living in small groups of only three animals."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn B nêu rõ con non (juveniles) ở nhóm gia đình lớn sống sót qua mùa đông với tỷ lệ gấp đôi nhóm chỉ có ba cá thể → TRUE.",
+          "steps": [
+            "Định vị Dr Petra Novak và con số three ở đoạn B.",
+            "Đối chiếu: survived winter at twice the rate khớp với better winter survival chances.",
+            "Khớp chính xác hoàn toàn → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_003_q03",
+          "number": 3,
+          "prompt": "Dr Petra Novak attached tiny radio tracking collars to adult marmots to map their summer grazing territory.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 221,
+              "end": 364,
+              "quote": "Over five consecutive winters, mountain zoologist Dr Petra Novak monitored thermal sensors inside 28 natural burrows across two alpine valleys."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn B chỉ nêu Dr Petra Novak theo dõi cảm biến nhiệt bên trong 28 hang vào mùa đông, không đề cập vòng cổ vô tuyến hay vùng ăn cỏ mùa hè → NOT GIVEN.",
+          "steps": [
+            "Tìm phương pháp nghiên cứu của Dr Petra Novak ở đoạn B.",
+            "Bài chỉ nhắc thermal sensors inside 28 natural burrows.",
+            "Không có thông tin về radio collars hay summer grazing territory → NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p1_003_q04",
+          "number": 4,
+          "prompt": "Coordinating their periodic waking times helps adult marmots reduce total weight loss across the winter.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 448,
+              "end": 587,
+              "quote": "Researchers estimate that synchronised arousal cuts collective winter weight loss by nearly 28 per cent compared with isolated individuals."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn C ghi nhận việc tỉnh giấc đồng bộ (synchronised arousal) giúp giảm gần 28% lượng sụt cân chung suốt mùa đông → TRUE.",
+          "steps": [
+            "Tìm từ khóa waking times (arousal) và weight loss ở đoạn C.",
+            "Đối chiếu: synchronised arousal cuts collective winter weight loss by nearly 28 per cent.",
+            "Khớp đúng quan hệ nhân quả → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_003_q05",
+          "number": 5,
+          "prompt": "Winters with lighter snow cover reduce marmot death rates because underground burrows remain warmer.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 246,
+              "end": 394,
+              "quote": "His findings surprised local park managers: milder winters with lighter snowfall actually increased marmot mortality rather than improving survival."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn E chỉ ra mùa đông ít tuyết thực tế làm TĂNG tỷ lệ tử vong (increased marmot mortality) vì thiếu lớp tuyết cách nhiệt khiến đất lạnh hơn. Trái ngược hoàn toàn → FALSE.",
+          "steps": [
+            "Định vị lighter snowfall và mortality ở đoạn E.",
+            "So sánh: câu hỏi nói reduce death rates / burrows remain warmer, bài nói increased mortality và chill the underlying soil.",
+            "Mâu thuẫn trực tiếp → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_003_q06",
+          "number": 6,
+          "prompt": "Alpine marmots distribute a greater variety of alpine flower seeds than mountain voles living nearby.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 207,
+              "end": 385,
+              "quote": "Their foraging habits also disperse wildflower seeds across rocky ridges, while abandoned side chambers provide vital shelter for mountain voles, beetles, and nesting bumblebees."
+            }
+          ],
+          "trapType": "keyword_echo",
+          "explanationVi": "Đoạn F nhắc đến cả wildflower seeds lẫn mountain voles nhưng chỉ nói chuột đồng núi trú trong hang bỏ hoang, không hề so sánh khả năng phát tán hạt giữa hai loài → NOT GIVEN.",
+          "steps": [
+            "Tìm từ khóa wildflower seeds và mountain voles ở đoạn F.",
+            "Kiểm tra xem có phép so sánh nào về số lượng loài hạt mà hai loài phát tán không.",
+            "Không có dữ kiện so sánh → NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why thinner winter snowpacks threaten underground colonies"
+        },
+        {
+          "key": "ii",
+          "text": "The energy advantage of coordinated waking cycles"
+        },
+        {
+          "key": "iii",
+          "text": "Wider ecological benefits and a shift in monitoring"
+        },
+        {
+          "key": "iv",
+          "text": "Group huddling as protection for young marmots"
+        },
+        {
+          "key": "v",
+          "text": "Summer feeding and sealing tunnels before the frost"
+        },
+        {
+          "key": "vi",
+          "text": "How mountain predators break into snow-covered burrows"
+        },
+        {
+          "key": "vii",
+          "text": "Why adult marmots prefer solitary burrows at high altitudes"
+        },
+        {
+          "key": "viii",
+          "text": "The winter food supply stored by mountain voles"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_003_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "iv"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 607,
+              "end": 704,
+              "quote": "Adult helpers effectively act as living radiators, shielding smaller relatives from lethal frost."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 607,
+            "end": 704,
+            "quote": "Adult helpers effectively act as living radiators, shielding smaller relatives from lethal frost."
+          },
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn B khẳng định marmot tụ tập 6–12 cá thể trong cùng một hang, ngược lại với việc ngủ đơn độc."
+            },
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề ii nói về đồng bộ chu kỳ tỉnh giấc thuộc đoạn C."
+            }
+          ],
+          "explanationVi": "Đoạn B phân tích cách marmot tụ thành nhóm gia đình lớn trong hang để giữ ấm và nâng tỷ lệ sống sót cho con non, khớp tiêu đề iv.",
+          "steps": [
+            "Đọc lướt đoạn B: social contact, six and twelve individuals, juveniles survived at twice the rate.",
+            "Ý chính: tụ nhóm giữ ấm giúp bảo vệ marmot con.",
+            "Loại bẫy ngược nghĩa vii và chọn tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p1_003_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "ii"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 0,
+              "end": 91,
+              "quote": "Close huddling only works well when colony members coordinate their regular warm-up cycles."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 0,
+            "end": 91,
+            "quote": "Close huddling only works well when colony members coordinate their regular warm-up cycles."
+          },
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề iv là ý chính về bảo vệ con non ở đoạn B."
+            },
+            {
+              "key": "vi",
+              "type": "too_broad",
+              "whyVi": "Đoạn C không nhắc bất kỳ loài săn mồi nào."
+            }
+          ],
+          "explanationVi": "Đoạn C giải thích lợi ích tiết kiệm năng lượng (giảm gần 28% hao hụt cân nặng) khi cả đàn đồng bộ khung giờ tỉnh giấc, khớp tiêu đề ii.",
+          "steps": [
+            "Đọc câu đầu đoạn C: coordinate their regular warm-up cycles.",
+            "Các câu sau chứng minh đồng bộ giúp giảm tiêu hao mỡ dự trữ.",
+            "Chọn tiêu đề ii (The energy advantage of coordinated waking cycles)."
+          ]
+        },
+        {
+          "qid": "p1_003_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "v"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 94,
+              "quote": "Surviving seven months underground demands intense preparation during the brief alpine summer."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 94,
+            "quote": "Surviving seven months underground demands intense preparation during the brief alpine summer."
+          },
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề i nói về tuyết mỏng mùa đông thuộc đoạn E."
+            },
+            {
+              "key": "vi",
+              "type": "keyword_match",
+              "whyVi": "Tiêu đề vi lặp từ burrows nhưng đoạn D nói về chuẩn bị cỏ và bịt cửa hang trước mùa đông, không có động vật săn mồi."
+            }
+          ],
+          "explanationVi": "Đoạn D mô tả hai hoạt động chuẩn bị mùa hè của marmot: ăn tích mỡ gấp đôi trọng lượng và dùng cỏ khô cùng đất bịt kín lối vào hang, khớp tiêu đề v.",
+          "steps": [
+            "Xác định 2 hoạt động chính ở đoạn D: grazing nine hours a day và hauling dry grass to plug burrow entrances.",
+            "Tóm ý: ăn tích trữ mùa hè và bịt hang trước đợt băng giá.",
+            "Chọn tiêu đề v."
+          ]
+        },
+        {
+          "qid": "p1_003_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "i"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 395,
+              "end": 528,
+              "quote": "The explanation lies in simple physics, because a deep winter snowpack acts as a protective insulating blanket over the frozen earth."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 395,
+            "end": 528,
+            "quote": "The explanation lies in simple physics, because a deep winter snowpack acts as a protective insulating blanket over the frozen earth."
+          },
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề iii nói về vai trò hệ sinh thái rộng hơn ở đoạn F."
+            },
+            {
+              "key": "vi",
+              "type": "keyword_match",
+              "whyVi": "Tiêu đề vi lặp từ snow và burrows nhưng đoạn E nói về mất lớp cách nhiệt do tuyết mỏng, không nói về động vật săn mồi."
+            }
+          ],
+          "explanationVi": "Đoạn E lý giải vì sao lớp tuyết mỏng vào mùa đông lại gây hại cho đàn marmot do mất lớp cách nhiệt cho đất, khớp hoàn toàn với tiêu đề i.",
+          "steps": [
+            "Đọc nghiên cứu của Dr Thomas Meyer ở đoạn E: lighter snowfall increased marmot mortality.",
+            "Nguyên nhân: thin snow cover khiến đất lạnh hơn và đàn cạn mỡ sớm.",
+            "Khớp chính xác với tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p1_003_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "iii"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 0,
+              "end": 88,
+              "quote": "Protecting alpine marmot colonies brings wider ecological gains for high mountain lands."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 0,
+            "end": 88,
+            "quote": "Protecting alpine marmot colonies brings wider ecological gains for high mountain lands."
+          },
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "detail_only",
+              "whyVi": "Chuột đồng núi (mountain voles) chỉ là một ví dụ nhỏ về loài trú nhờ hang bỏ hoang, không nói về thức ăn mùa đông của chúng."
+            },
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề i là nội dung đoạn E về nguy cơ từ lớp tuyết mỏng."
+            }
+          ],
+          "explanationVi": "Đoạn F trình bày lợi ích sinh thái rộng lớn của marmot (tơi đất, phát tán hạt, tạo nơi trú ẩn) và sự thay đổi cách giám sát bảo tồn theo độ dày tuyết, khớp tiêu đề iii.",
+          "steps": [
+            "Đọc câu đầu đoạn F: broader ecological significance.",
+            "Đọc câu cuối: conservation programmes increasingly track snow depth.",
+            "Loại chi tiết phụ viii và chọn tiêu đề iii."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g3_mcq",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_003_q12",
+          "number": 12,
+          "prompt": "According to paragraph C, why is it risky for an adult marmot to wake up separately from its colony?\nA. It may disturb the sleeping juveniles in the central chamber.\nB. It burns excessive fat reserves trying to heat cold burrow air alone.\nC. It is likely to abandon the burrow in search of autumn grass.\nD. Its heart rate cannot slow down again without adult helpers.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 92,
+              "end": 246,
+              "quote": "If one adult wakes and raises its body temperature alone, it must burn substantial fat reserves simply to warm the cold surrounding air inside the burrow."
+            }
+          ],
+          "explanationVi": "Đoạn C nêu rõ nếu một cá thể trưởng thành tự tỉnh giấc một mình, nó phải đốt lượng lớn mỡ dự trữ để làm ấm không khí lạnh xung quanh. Đáp án đúng là B.",
+          "steps": [
+            "Định vị câu điều kiện If one adult wakes ... alone ở đoạn C.",
+            "Đối chiếu kết quả: burn substantial fat reserves to warm the cold surrounding air.",
+            "Khớp chính xác với lựa chọn B."
+          ]
+        },
+        {
+          "qid": "p1_003_q13",
+          "number": 13,
+          "prompt": "In paragraph D, what late-summer task do dominant male marmots carry out in addition to grazing?\nA. Digging fresh three-metre tunnels exclusively for newborn young\nB. Collecting alpine wildflower seeds to eat during brief winter waking periods\nC. Bringing dry meadow grass underground to line the nest and seal entrances\nD. Guarding grassy slopes against neighbouring marmot families",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 347,
+              "end": 498,
+              "quote": "Dominant males also devote several weeks in late August to gathering mouthfuls of dry meadow grass and hauling it down tunnels up to three metres deep."
+            }
+          ],
+          "explanationVi": "Đoạn D mô tả con đực đầu đàn thu gom cỏ khô đưa xuống hang làm ổ và trộn đất với cọng cỏ khô để bịt cửa hang chắn gió lạnh. Chọn C.",
+          "steps": [
+            "Tìm cụm Dominant males và late August ở đoạn D.",
+            "Đọc hai câu mô tả hành động: hauling dry meadow grass, weave into nest, pack into outer entrances.",
+            "Khớp trực tiếp với lựa chọn C."
+          ]
+        },
+        {
+          "qid": "p1_003_q14",
+          "number": 14,
+          "prompt": "According to Dr Thomas Meyer in paragraph E, how does a thick snowpack benefit hibernating marmots?\nA. It insulates the underground soil from extreme night-time cold.\nB. It melts slowly in spring to supply drinking water inside tunnels.\nC. It hides burrow entrances from birds of prey flying overhead.\nD. It softens compacted alpine earth so colonies can dig deeper.",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 395,
+              "end": 528,
+              "quote": "The explanation lies in simple physics, because a deep winter snowpack acts as a protective insulating blanket over the frozen earth."
+            }
+          ],
+          "explanationVi": "Đoạn E giải thích lớp tuyết dày đóng vai trò tấm chăn cách nhiệt (insulating blanket) giúp ngăn gió đêm làm lạnh sâu lớp đất bên dưới. Chọn A.",
+          "steps": [
+            "Định vị Dr Thomas Meyer và deep winter snowpack ở đoạn E.",
+            "Đọc câu giải thích: protective insulating blanket ngăn cold night winds làm giảm nhiệt độ đất.",
+            "Khớp hoàn toàn với lựa chọn A."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "rp:p3_006",
+  "level": "P3",
+  "reserved": false,
+  "title": "Digital Archiving and the Politics of Intangible Heritage",
+  "subtitle": "Why turning living songs, rituals, and craft skills into permanent online files reshapes the traditions they aim to save",
+  "topic": "culture",
+  "wordCount": 860,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Over the past fifteen years, national museums and cultural trusts have poured large public grants into high-resolution scanning, motion capture, and open audio vaults. Their stated goal is to rescue threatened oral ballads, seasonal dances, and handloom crafts before they vanish. Supporters understandably praise these online portals as open lifelines that safeguard fragile arts while ageing master practitioners are still alive. At first glance, turning a rare live craft into a permanent digital file appears wholly benign and culturally neutral. Who could object to saving a dying song for future generations? Yet recent field studies reveal a stubborn paradox: digitisation never simply seals an existing custom behind glass without changing it. By lifting embodied performances out of local kin networks and seasonal cycles, digital archives quietly alter what counts as authentic heritage and who holds social authority over its future."
+    },
+    {
+      "label": "B",
+      "text": "Living oral and craft traditions survive precisely because practitioners adapt, borrowing motifs and tuning phrasing to fit each local gathering. No two village weddings or harvest fairs sound quite the same. Once a single polished performance reaches a flagship national portal, however, younger learners and regional festival judges frequently treat that one recorded clip as the sole proper standard. In a 2022 fieldwork study across 19 rural weaving and ballad guilds, anthropologist Dr Vikram Patel tracked how local artistry shifted after a state digital vault opened. Within five years, distinctive regional stylistic variations fell by 38 per cent as apprentices imitated the highest-ranked video clip rather than sitting beside village elders. Older mentors complained that lively local humour and playful bends in rhythm vanished from evening recitals. Patel argues that digital preservation often mistakes fixed repeatability for genuine cultural energy, unintentionally turning adaptive folk arts into rigid museum replicas."
+    },
+    {
+      "label": "C",
+      "text": "Even the hidden structure of a search database embeds quiet institutional bias into archived heritage. Large digital repositories demand uniform metadata fields—exact recording dates, single named authors, fixed map pins, and neat genre tags—so global visitors can sort entries quickly. Such fields make sense for printed books or oil paintings in urban galleries. Yet many indigenous ceremonial songs are held jointly by clans, shift meaning across harvest months, and unite music, healing, and local dispute settlement. Archival theorist Dr Miriam Al-Mansoor audited 14 national heritage databases in 2023 and observed that 61 per cent of recorded entries labelled ritual oral works solely as folk entertainment, stripping away their civic and ecological roles. Once flattened into neat leisure folders, those living laws look quaint rather than binding. Al-Mansoor contends that software metadata fields act as silent editorial gates, quietly bending community knowledge to match Western library habits."
+    },
+    {
+      "label": "D",
+      "text": "Sharp political disputes also erupt over who should be allowed to view, download, and reuse archived cultural files. Open-culture advocates insist that heritage recordings financed with public tax money belong in open online commons where scholars and artists worldwide can remix them freely. Community custodians, by contrast, often draw clear lines between public harvest dances and sacred mourning chants meant only for initiated kinsfolk during set lunar weeks. Making those private songs globally searchable can cause deep local distress. Legal scholar Prof Bernard Lefevre reviewed 28 digital-repatriation disputes between 2018 and 2024 and documented repeated cases in which commercial fashion houses and video-game studios copied open-archive loom patterns and vocal tracks without credit or shared revenue. Lefevre maintains that universal open access, when applied blindly to vulnerable groups, reproduces older forms of cultural extraction under a modern digital banner."
+    },
+    {
+      "label": "E",
+      "text": "Rejecting digital tools altogether, however, is neither practical nor desired by most endangered craft communities. Many young weavers and singers value phones and cloud tools for sharing skills with kin who have moved to distant cities for work. Instead, a growing number of regional heritage networks are building community-governed vaults with flexible cultural-access controls. Rather than treating every file as permanent public property, these systems let village councils decide which clips stay private, which open only during specific feast months, and who may add notes. In a 2024 evaluation of eight locally managed sound and craft archives, media scholar Dr Tessa van Dijk found that platforms letting elders set viewing rules and upload rival regional variants achieved 52 per cent higher active engagement from local youth than centralised state portals. Van Dijk argues that digital archiving strengthens living heritage only when local communities control both the naming rules and the terms of circulation."
+    },
+    {
+      "label": "F",
+      "text": "Digital vaults undoubtedly provide vital insurance against floods, conflict, forced migration, and sudden generational loss, and dismissing them outright would strip endangered groups of potent memory tools. Still, treating cloud servers as a complete substitute for paid apprenticeships, local workshop spaces, and patient face-to-face teaching remains a costly illusion. A server can replay the crisp sound wave of a weaver's work song long after the final village loom falls silent. Yet an online file alone cannot pay a young apprentice's rent or sustain the social ties that gave those verses living weight. Funding agencies must therefore balance technical storage grants with durable stipends for regional mentors and community studios. Real cultural survival depends on pairing thoughtful, community-led digital stewardship with steady material support for the living people who keep intangible heritage in motion."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_006_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_006_q01",
+          "number": 1,
+          "prompt": "Converting a live cultural performance into a digital recording leaves its social meaning and local authority essentially unaltered."
+        },
+        {
+          "qid": "p3_006_q02",
+          "number": 2,
+          "prompt": "Posting one recorded version of a folk craft on a major archive can unintentionally shrink the variety of regional styles."
+        },
+        {
+          "qid": "p3_006_q03",
+          "number": 3,
+          "prompt": "Maintaining national digital heritage platforms demands higher annual staffing budgets than running traditional physical museums."
+        },
+        {
+          "qid": "p3_006_q04",
+          "number": 4,
+          "prompt": "Keeping publicly financed heritage vaults completely open to all online users effectively shields minority crafts from commercial misuse."
+        },
+        {
+          "qid": "p3_006_q05",
+          "number": 5,
+          "prompt": "Locally governed heritage websites have brought a sharp rise in international tourist arrivals to rural craft villages."
+        },
+        {
+          "qid": "p3_006_q06",
+          "number": 6,
+          "prompt": "Digital preservation ought to be paired with practical financial backing for living practitioners rather than seen as a replacement for local cultural life."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_006_g2",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 7–10) and the list of researchers below. Match each statement with the correct researcher, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Vikram Patel"
+        },
+        {
+          "key": "B",
+          "text": "Dr Miriam Al-Mansoor"
+        },
+        {
+          "key": "C",
+          "text": "Prof Bernard Lefevre"
+        },
+        {
+          "key": "D",
+          "text": "Dr Tessa van Dijk"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_006_q07",
+          "number": 7,
+          "prompt": "Applying unrestricted public access indiscriminately can repeat historical patterns of cultural exploitation."
+        },
+        {
+          "qid": "p3_006_q08",
+          "number": 8,
+          "prompt": "Giving local elders control over viewing permissions and multiple regional versions increases participation by younger residents."
+        },
+        {
+          "qid": "p3_006_q09",
+          "number": 9,
+          "prompt": "Rigid database classification tags frequently strip ceremonial performances of their civic and environmental purposes."
+        },
+        {
+          "qid": "p3_006_q10",
+          "number": 10,
+          "prompt": "Treating permanent online recordings as definitive templates confuses exact repeatability with living artistic vitality."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_006_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_006_q11",
+          "number": 11,
+          "prompt": "According to Paragraph B, why did regional stylistic diversity drop across the 19 guilds studied by Dr Vikram Patel?\nA. Village elders refused to let younger apprentices view state websites.\nB. Apprentices copied the top-ranked online video instead of learning from local elders.\nC. Festival organisers outlawed local humour during evening ballad recitals.\nD. Rural weaving workshops closed after losing state funding to museums."
+        },
+        {
+          "qid": "p3_006_q12",
+          "number": 12,
+          "prompt": "What specific problem did Dr Miriam Al-Mansoor uncover in her 2023 audit of 14 heritage databases (Paragraph C)?\nA. Most entries misclassified multi-purpose ritual traditions merely as folk entertainment.\nB. Over half of the audited portals omitted recording dates and geographic coordinates.\nC. Database designers deliberately removed indigenous healing songs from public search results.\nD. Global visitors found Western library categories too slow for browsing audio archives."
+        },
+        {
+          "qid": "p3_006_q13",
+          "number": 13,
+          "prompt": "What is the writer's overall conclusion regarding digital heritage archives in Paragraph F?\nA. Endangered communities should abandon online vaults because cloud storage undermines village crafts.\nB. Preserving high-quality audio files is sufficient to keep rural weaving traditions culturally meaningful.\nC. Digital archives remain valuable safeguards against disaster, but cannot replace tangible support for living communities.\nD. State museums should replace paid apprenticeships with open-access digital craft tutorials."
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,11 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-20T14:26:09.208Z",
+  "builtAt": "2026-11-20T15:37:40.976Z",
   "totals": {
+    "readingPassages": 24,
+    "readingTraining": 18,
+    "readingQuestions": 330,
+    "readingReserved": 6,
     "roadmapPhases": 4,
     "tips": 62,
     "collocations": 762,
@@ -11,6 +15,106 @@
     "vocab": 2207
   },
   "files": {
+    "reading/index.json": {
+      "sha256": "5eed52551d58faf0107040e93257139a494dad827a6615e8e2f0643cf218357a",
+      "count": 24
+    },
+    "reading/passages/p1_001.json": {
+      "sha256": "3dc4c7365732874dec21370441783ae4cf704ddebbd0cbc99281125dcac0289d",
+      "count": 1
+    },
+    "reading/passages/p1_002.json": {
+      "sha256": "4718165743588d9ac3e761d1ffc6506086dbfeb1ce956e2570fc23276b820676",
+      "count": 1
+    },
+    "reading/passages/p1_003.json": {
+      "sha256": "df2fba650f8742d0736608be8a54daf645f02869d28ae7a00995688ec023f1a6",
+      "count": 1
+    },
+    "reading/passages/p1_004.json": {
+      "sha256": "97ac20495bb58d9edc0b74f6b3125fcf5a19a6196fbf61bff3e030f309ba5205",
+      "count": 1
+    },
+    "reading/passages/p1_005.json": {
+      "sha256": "db9679453643d4d9d019ed44f74d8ae0581cf1d602491926c2a9bf1a966b30ac",
+      "count": 1
+    },
+    "reading/passages/p1_006.json": {
+      "sha256": "e005a12d583ba88cda668f96884abf87a5cffd329dd64c5aea9eb5893878d523",
+      "count": 1
+    },
+    "reading/passages/p1_res_001.json": {
+      "sha256": "3fca303d8b1d44de5a6f71cf93aeb51f9f5890070481477b5459ad4ce1cd8b46",
+      "count": 1
+    },
+    "reading/passages/p1_res_002.json": {
+      "sha256": "e8c1366741d70a3c9b10f42e11af26cb0c4bc5d564fd76710839a83ac928080b",
+      "count": 1
+    },
+    "reading/passages/p2_001.json": {
+      "sha256": "08b3bc19388b4ea68551f401409df7a5d2c8965401895507ad08b1f830687f19",
+      "count": 1
+    },
+    "reading/passages/p2_002.json": {
+      "sha256": "3b3d2a98cbe8d2cb8c41c4727f215b130964c7d3177f7e80c0d2afc3830244cc",
+      "count": 1
+    },
+    "reading/passages/p2_003.json": {
+      "sha256": "35503656e6b3f7b22a63c2b3d45ee9d0ff2461a9ea7cca95c09b42fd45d29bef",
+      "count": 1
+    },
+    "reading/passages/p2_004.json": {
+      "sha256": "ad30a0c825d90f5e22e5bee9fea4e3e8df062b780c59d3c1c7a4159282bc19ce",
+      "count": 1
+    },
+    "reading/passages/p2_005.json": {
+      "sha256": "33998cd0b56e4aa08f1dc574b2f72a0c21981af4c3c16cd36c128826213456d6",
+      "count": 1
+    },
+    "reading/passages/p2_006.json": {
+      "sha256": "a976aee76f615b74ea05ddd405b6eaabbbb2e0d7ac682c9e8e18e06fd8596404",
+      "count": 1
+    },
+    "reading/passages/p2_res_001.json": {
+      "sha256": "32e8fc27b4919f85292ec84a3c081162aa4c07cc6951b9181064d427c1e77521",
+      "count": 1
+    },
+    "reading/passages/p2_res_002.json": {
+      "sha256": "a2352c74c27f8f392d60593e7229221b307eca81ea73544a0924a8ba3e6520ac",
+      "count": 1
+    },
+    "reading/passages/p3_001.json": {
+      "sha256": "3d8599690e83d2132dd07ea1500e7334ad034603e7effe379b82b40ff61fd063",
+      "count": 1
+    },
+    "reading/passages/p3_002.json": {
+      "sha256": "9910111ddcbcece40320b25530b12b61459bd81f5f612c38e0f2b05b20c83853",
+      "count": 1
+    },
+    "reading/passages/p3_003.json": {
+      "sha256": "5415f6d1fbce3a147bb289b7e1281d1559dcdc27942e0d017516d1489a7486d3",
+      "count": 1
+    },
+    "reading/passages/p3_004.json": {
+      "sha256": "06927a41cc71288a3c542e09698bc5268a13fe224b1001936c949bad22999159",
+      "count": 1
+    },
+    "reading/passages/p3_005.json": {
+      "sha256": "62cdcf6558bb375feab0b26efe5b56e9ad870b3ba2ebf4d28f17800706f09f7d",
+      "count": 1
+    },
+    "reading/passages/p3_006.json": {
+      "sha256": "5a75ce9850062c2cab0d8ee812fee97f8e160b2f848434e99e01f5d42d25b85d",
+      "count": 1
+    },
+    "reading/passages/p3_res_001.json": {
+      "sha256": "db515815cfafa678438202de7264509bd2171b692e6877001ff187a45876f1cc",
+      "count": 1
+    },
+    "reading/passages/p3_res_002.json": {
+      "sha256": "07f2c4f5499bb35a99d0a1e133ebcbffea3fd98f773fd0ef2b3dfac7e74f103d",
+      "count": 1
+    },
     "roadmap.json": {
       "sha256": "5c1bd3e363ef53445a63afa5a6575e55817a074653910e539d1b2f7ee9bcd844",
       "count": 4

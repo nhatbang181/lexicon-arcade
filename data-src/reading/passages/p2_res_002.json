@@ -1,0 +1,525 @@
+{
+  "id": "rp:p2_res_002",
+  "level": "P2",
+  "reserved": true,
+  "title": "Participatory Budgeting in Mid-Sized Municipalities",
+  "subtitle": "How citizen-voted capital funds reshape spending priorities, trust, and administration in local government",
+  "topic": "government",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across dozens of European and North American towns, residents are no longer asked simply to pick councillors once every four years and leave all local spending to paid staff. Instead, a growing number of mid-sized towns set aside a fixed slice of their yearly capital budget, typically between two and six per cent, so local people can suggest, debate, and choose civic builds directly. First popularised in large Latin American cities during the late 1980s, participatory budgeting has recently gained fresh pace in smaller urban centres. In towns housing between 50,000 and 200,000 people, wards stay compact enough for open community meetings and brisk site walks. Backers regard this model as a practical response to falling voter turnout and deep public doubt toward town hall, though real-world results prove far more mixed than early advocates hoped."
+    },
+    {
+      "label": "B",
+      "text": "In most participating towns, the yearly cycle runs through four clear stages designed to balance open ideas with real budgets. First, local workshops and council web portals invite residents to submit concrete bids ranging from shaded bus stops to youth sports courts. Next, trained volunteers work beside council engineers to screen each bid for legal rules, upkeep costs, and site safety. Proposals that pass this technical review then move onto a public ballot open to every local resident. Several towns even extend voting rights to teenagers aged fourteen and older so school and park needs enter the public mix. Finally, city offices post quarterly digital trackers online. Those plain updates allow voters to check when winning works start on site and whether final spending stays close to early cost estimates."
+    },
+    {
+      "label": "C",
+      "text": "Comparative audits suggest that public ballots steadily change where local money goes. Policy scholar Dr Hannah Lindqvist tracked budget records across 16 mid-sized towns over five years. She then compared those records with 16 matched towns that relied on standard council votes alone. Towns using public ballots directed 22 per cent more capital spending toward lower-income wards. Voters strongly favoured plain daily assets such as safer street crossings, public toilets, and library heating over showpiece central plazas. Notably, several towns also saw stronger satisfaction with routine street care once citizens could read clear itemised project costs online. Surveys linked to her audit also recorded a modest yet steady rise in public trust toward local officials. Remarkably, that gain showed up even among residents whose own chosen bids failed to win a majority of votes."
+    },
+    {
+      "label": "D",
+      "text": "Opening a budget vote to every resident on paper does not ensure an even turnout in real life. Civic researcher Dr David Mensah examined sign-in logs across three coastal towns and found a sharp demographic gap in who turned up. Evening hall talks drew mainly retired homeowners and white-collar staff with free evenings. Shift workers, new migrants, and single parents were sharply under-represented unless councils offered free childcare, translated guides, and daytime voting desks near bus hubs. Without active outreach of that kind, Mensah warns, citizen budgeting risks copying the exact social gaps it was built to fix. Public funds can slowly drift toward vocal, well-off wards that already enjoy clean parks, modern libraries, and lively youth centres. Broad public input therefore requires deliberate effort rather than passive open doors."
+    },
+    {
+      "label": "E",
+      "text": "Beyond voter balance, running public ballots puts heavy strain on lean town offices. Every submitted bid requires rough cost checks, land reviews, and short written notes explaining why rejected ideas failed. Those extra steps add heavy workloads to small teams already busy with water mains and road repairs. Municipal finance officer Gareth Pritchard saw how slow builds erode public faith. When winning schemes take two or three years to finish due to permit delays or rising steel prices, early goodwill soon turns into sharp anger. Moreover, elected councillors sometimes resist sharing budget power. They argue that local ballots reward eye-catching parks while overlooking vital hidden works such as deep storm drains and routine bridge checks. Balancing quick public wins against quiet long-term upkeep remains a tough daily challenge."
+    },
+    {
+      "label": "F",
+      "text": "Despite these real tensions, seasoned towns have refined their rules rather than dropping public ballots altogether. Several councils now ring-fence fixed shares of the citizen pot for lower-income wards, making sure low turnout in poorer streets never cuts them off from basic upgrades. Others limit the technical scale of eligible bids so winning works can finish within twelve months. That fast turnaround gives voters clear proof that their choices produce real results on their own streets. Pairing web polls with roving paper ballot boxes placed at food markets, libraries, and health clinics has also widened voter reach across age and income groups. As Dr Lindqvist concludes, citizen budgeting rarely cures every fault in town finance, yet well-crafted rules can turn routine capital spending into a lasting habit of shared local rule."
+    }
+  ],
+  "wordCount": 789,
+  "questionGroups": [
+    {
+      "groupId": "p2_res_002_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p2_res_002_q01",
+          "number": 1,
+          "prompt": "Participatory budgeting first became widely known in large Latin American cities before gaining popularity in mid-sized towns elsewhere.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 387,
+              "end": 539,
+              "quote": "First popularised in large Latin American cities during the late 1980s, participatory budgeting has recently gained fresh pace in smaller urban centres."
+            }
+          ],
+          "trapType": "time_sequence",
+          "explanationVi": "Đoạn A nêu mô hình này phổ biến đầu tiên ở các thành phố lớn Mỹ Latinh cuối thập niên 1980 trước khi lan rộng gần đây tới các đô thị cỡ vừa.",
+          "steps": [
+            "Tìm mốc lịch sử xuất hiện của participatory budgeting ở đoạn A.",
+            "Kiểm tra trình tự thời gian: Mỹ Latinh cuối thập niên 1980 -> gần đây ở các đô thị nhỏ/vừa.",
+            "Trình tự hoàn toàn khớp -> TRUE."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q02",
+          "number": 2,
+          "prompt": "Every project proposal submitted by residents proceeds straight to the public ballot without technical screening.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 269,
+              "end": 493,
+              "quote": "Next, trained volunteers work beside council engineers to screen each bid for legal rules, upkeep costs, and site safety. Proposals that pass this technical review then move onto a public ballot open to every local resident."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn B khẳng định chỉ những đề xuất vượt qua bước rà soát kỹ thuật cùng kỹ sư đô thị mới được đưa lên lá phiếu công khai.",
+          "steps": [
+            "Đọc quy trình 4 bước ở đoạn B.",
+            "Đối chiếu \"Every project ... without technical screening\" với \"Proposals that pass this technical review then move onto a public ballot\".",
+            "Thông tin mâu thuẫn trực tiếp -> FALSE."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q03",
+          "number": 3,
+          "prompt": "In Dr Hannah Lindqvist's five-year study, residents in participatory towns paid lower local property taxes than those in control towns.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 87,
+              "end": 286,
+              "quote": "Policy scholar Dr Hannah Lindqvist tracked budget records across 16 mid-sized towns over five years. She then compared those records with 16 matched towns that relied on standard council votes alone."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn C chỉ báo cáo hướng phân bổ chi tiêu vốn và mức độ tin tưởng trong nghiên cứu của TS Lindqvist, không hề đề cập thuế tài sản địa phương.",
+          "steps": [
+            "Tìm nghiên cứu 5 năm của Dr Hannah Lindqvist ở đoạn C.",
+            "Kiểm tra xem có so sánh mức thuế nhà đất giữa hai nhóm thị trấn hay không.",
+            "Không có dữ kiện về thuế -> NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q04",
+          "number": 4,
+          "prompt": "Trust in local officials rose among residents of participatory towns even when their preferred projects did not win.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 668,
+              "end": 884,
+              "quote": "Surveys linked to her audit also recorded a modest yet steady rise in public trust toward local officials. Remarkably, that gain showed up even among residents whose own chosen bids failed to win a majority of votes."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Hai câu cuối đoạn C nêu rõ mức tin tưởng vào chính quyền địa phương vẫn tăng ngay cả ở những cư dân có đề xuất ưa thích không thắng phiếu.",
+          "steps": [
+            "Đọc hai câu cuối đoạn C về kết quả khảo sát niềm tin cư dân.",
+            "Đối chiếu \"even when their preferred projects did not win\" với \"even among residents whose own chosen bids failed to win a majority of votes\".",
+            "Trùng khớp hoàn toàn -> TRUE."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q05",
+          "number": 5,
+          "prompt": "The evening town-hall sessions studied by Dr David Mensah attracted shift workers and single parents at the same rate as retired homeowners.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 229,
+              "end": 499,
+              "quote": "Evening hall talks drew mainly retired homeowners and white-collar staff with free evenings. Shift workers, new migrants, and single parents were sharply under-represented unless councils offered free childcare, translated guides, and daytime voting desks near bus hubs."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn D chỉ rõ người làm ca và cha mẹ đơn thân có tỷ lệ tham dự thấp rõ rệt so với chủ nhà nghỉ hưu tại các buổi họp tối.",
+          "steps": [
+            "Tìm phát hiện của Dr David Mensah ở đoạn D.",
+            "So sánh \"at the same rate\" với \"drew mainly retired homeowners ... Shift workers, new migrants, and single parents were sharply under-represented\".",
+            "Trái ngược hoàn toàn -> FALSE."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q06",
+          "number": 6,
+          "prompt": "Gareth Pritchard recommends replacing elected town councillors altogether with permanent citizen budget panels.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 310,
+              "end": 536,
+              "quote": "Municipal finance officer Gareth Pritchard saw how slow builds erode public faith. When winning schemes take two or three years to finish due to permit delays or rising steel prices, early goodwill soon turns into sharp anger."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "explanationVi": "Đoạn E chỉ dẫn quan sát của Gareth Pritchard về sự chậm trễ thi công gây thất vọng, không nói ông đề xuất thay thế nghị viên dân cử.",
+          "steps": [
+            "Tìm tên Gareth Pritchard ở đoạn E.",
+            "Kiểm tra xem ông có đưa ra kiến nghị bãi bỏ hay thay thế nghị viên hay không.",
+            "Không có thông tin -> NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_002_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why participation remains uneven without targeted council outreach"
+        },
+        {
+          "key": "ii",
+          "text": "Rule adjustments that make citizen budgeting sustainable"
+        },
+        {
+          "key": "iii",
+          "text": "The four stages guiding proposals from idea to completed build"
+        },
+        {
+          "key": "iv",
+          "text": "How national governments banned citizen votes on municipal roads"
+        },
+        {
+          "key": "v",
+          "text": "Evidence that public ballots redirect funds toward everyday needs"
+        },
+        {
+          "key": "vi",
+          "text": "Staff workloads, delivery delays, and friction with elected officials"
+        },
+        {
+          "key": "vii",
+          "text": "Why teenage voters participate more eagerly than older residents"
+        },
+        {
+          "key": "viii",
+          "text": "The origins of participatory budgeting in South American cities"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_002_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "iii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 0,
+            "end": 126,
+            "quote": "In most participating towns, the yearly cycle runs through four clear stages designed to balance open ideas with real budgets."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 0,
+              "end": 126,
+              "quote": "In most participating towns, the yearly cycle runs through four clear stages designed to balance open ideas with real budgets."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "detail_only",
+              "whyVi": "Thanh thiếu niên từ 14 tuổi chỉ là một chi tiết phụ ở giữa đoạn và bài không so sánh độ hăng hái của họ với người lớn tuổi."
+            },
+            {
+              "key": "viii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Nguồn gốc ở Mỹ Latinh được nhắc tại đoạn A, không phải đoạn B."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả tuần tự bốn giai đoạn từ tiếp nhận ý tưởng, thẩm định kỹ thuật, bỏ phiếu đến theo dõi tiến độ thi công.",
+          "steps": [
+            "Nhận diện cụm \"four clear stages\" ở đầu đoạn B và các từ nối First, Next, then, Finally.",
+            "Loại chi tiết phụ (vii) và ý đoạn trước (viii).",
+            "Chọn tiêu đề iii."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 0,
+            "end": 86,
+            "quote": "Comparative audits suggest that public ballots steadily change where local money goes."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 0,
+              "end": 86,
+              "quote": "Comparative audits suggest that public ballots steadily change where local money goes."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Sự chênh lệch nhóm tham gia là trọng tâm của đoạn D, không phải đoạn C."
+            },
+            {
+              "key": "iv",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C trình bày tác động tích cực của bỏ phiếu ngân sách, không nói về lệnh cấm nào."
+            }
+          ],
+          "explanationVi": "Đoạn C dẫn bằng chứng so sánh 32 thị trấn cho thấy bỏ phiếu cộng đồng chuyển vốn sang các tiện ích thiết thực ở khu thu nhập thấp.",
+          "steps": [
+            "Đọc câu đầu đoạn C và số liệu tăng 22% vốn cho khu thu nhập thấp.",
+            "Xác định trọng tâm là bằng chứng chuyển hướng dòng tiền sang nhu cầu hàng ngày -> chọn v."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 94,
+            "quote": "Opening a budget vote to every resident on paper does not ensure an even turnout in real life."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 94,
+              "quote": "Opening a budget vote to every resident on paper does not ensure an even turnout in real life."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Hiệu quả chuyển hướng chi tiêu sang nhu cầu hàng ngày thuộc đoạn C."
+            },
+            {
+              "key": "vii",
+              "type": "keyword_match",
+              "whyVi": "Nhắc tới nhóm cư dân lớn tuổi nhưng đoạn D nói người về hưu đi họp đông hơn người làm ca chứ không so sánh với thanh thiếu niên."
+            }
+          ],
+          "explanationVi": "Đoạn D phân tích tình trạng mất cân bằng nhóm cử tri tham gia nếu chính quyền không chủ động hỗ trợ tiếp cận.",
+          "steps": [
+            "Đọc câu chủ đề đầu đoạn D và phát hiện của Dr David Mensah.",
+            "Xác định giải pháp hỗ trợ như giữ trẻ, hướng dẫn dịch thuật và điểm bỏ phiếu ban ngày -> chọn i."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "vi"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 0,
+            "end": 84,
+            "quote": "Beyond voter balance, running public ballots puts heavy strain on lean town offices."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 0,
+              "end": 84,
+              "quote": "Beyond voter balance, running public ballots puts heavy strain on lean town offices."
+            },
+            {
+              "paragraph": "E",
+              "start": 537,
+              "end": 751,
+              "quote": "Moreover, elected councillors sometimes resist sharing budget power. They argue that local ballots reward eye-catching parks while overlooking vital hidden works such as deep storm drains and routine bridge checks."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Vấn đề tỷ lệ tham gia không đều thuộc đoạn D; đoạn E chuyển sang áp lực nội bộ chính quyền."
+            },
+            {
+              "key": "iv",
+              "type": "too_broad",
+              "whyVi": "Đoạn E chỉ nói về phản ứng của nghị viên địa phương và chậm tiến độ, không có lệnh cấm từ chính phủ trung ương."
+            }
+          ],
+          "explanationVi": "Đoạn E nêu ba rào cản nội bộ: quá tải công việc của nhân viên đô thị, dự án hoàn thành chậm và sự dè dặt từ các nghị viên.",
+          "steps": [
+            "Liệt kê 3 ý chính trong đoạn E: áp lực nhân sự, chậm bàn giao 2–3 năm và phản đối từ nghị viên.",
+            "Khớp chính xác với tiêu đề vi."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 0,
+            "end": 116,
+            "quote": "Despite these real tensions, seasoned towns have refined their rules rather than dropping public ballots altogether."
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 0,
+              "end": 116,
+              "quote": "Despite these real tensions, seasoned towns have refined their rules rather than dropping public ballots altogether."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "adjacent_paragraph",
+              "whyVi": "Khó khăn hành chính thuộc đoạn E; đoạn F tập trung vào các cải tiến quy trình."
+            },
+            {
+              "key": "iii",
+              "type": "too_broad",
+              "whyVi": "Quy trình 4 bước cơ bản đã trình bày ở đoạn B, còn đoạn F bàn về các điều chỉnh nâng cao."
+            }
+          ],
+          "explanationVi": "Đoạn F giới thiệu các cải tiến luật chơi như hạn mức cho khu yếu thế, giới hạn quy mô kỹ thuật dự án và hòm phiếu lưu động để duy trì hiệu quả.",
+          "steps": [
+            "Nhận diện câu chủ đề về \"refined their rules\" ở đầu đoạn F.",
+            "Kiểm tra 3 cải tiến cụ thể nêu tiếp theo -> chọn tiêu đề ii."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_002_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_002_q12",
+          "number": 12,
+          "prompt": "According to Paragraph C, what did Dr Hannah Lindqvist's comparative study show about towns using participatory budgeting?\nA. They invested more heavily in showpiece central plazas than control towns did.\nB. They directed a higher share of capital funds toward lower-income wards.\nC. They only gained public trust when every district won equal funding.\nD. They removed council engineers from the capital budget process.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 287,
+              "end": 526,
+              "quote": "Towns using public ballots directed 22 per cent more capital spending toward lower-income wards. Voters strongly favoured plain daily assets such as safer street crossings, public toilets, and library heating over showpiece central plazas."
+            }
+          ],
+          "explanationVi": "Đoạn C ghi rõ các thị trấn áp dụng ngân sách tham gia phân bổ nhiều hơn 22% vốn cho các khu thu nhập thấp thay vì quảng trường trung tâm hào nhoáng.",
+          "steps": [
+            "Định vị kết quả nghiên cứu của Dr Hannah Lindqvist ở đoạn C.",
+            "Loại A (ngược ý), C (sai vì niềm tin tăng cả khi đề xuất thua), D (không có).",
+            "Chọn đáp án B."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q13",
+          "number": 13,
+          "prompt": "What concern expressed by elected councillors is mentioned in Paragraph E?\nA. Public ballots legally prevent towns from funding outdoor parks.\nB. Construction costs always double when residents choose local projects.\nC. Local ballots may favour visible amenities while overlooking vital hidden infrastructure.\nD. Trained volunteers lack the authority to meet with council engineers.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 537,
+              "end": 751,
+              "quote": "Moreover, elected councillors sometimes resist sharing budget power. They argue that local ballots reward eye-catching parks while overlooking vital hidden works such as deep storm drains and routine bridge checks."
+            }
+          ],
+          "explanationVi": "Hai câu cuối đoạn E nêu lo ngại của nghị viên rằng lá phiếu dân cư thiên về công viên bắt mắt và bỏ quên hạ tầng ngầm thiết yếu như cống thoát nước hay kiểm định cầu.",
+          "steps": [
+            "Tìm cụm \"elected councillors\" ở cuối đoạn E.",
+            "Đối chiếu \"eye-catching parks while overlooking vital hidden works\" với lựa chọn C.",
+            "Chọn C."
+          ]
+        },
+        {
+          "qid": "p2_res_002_q14",
+          "number": 14,
+          "prompt": "According to Paragraph F, why do some councils limit the technical scale of eligible bids?\nA. To ensure winning works finish quickly enough to prove voters' choices matter.\nB. To stop neighbouring towns from copying their local budget proposals.\nC. To reduce the cost of placing paper ballot boxes at markets and clinics.\nD. To remove the requirement to publish quarterly progress trackers.",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 288,
+              "end": 495,
+              "quote": "Others limit the technical scale of eligible bids so winning works can finish within twelve months. That fast turnaround gives voters clear proof that their choices produce real results on their own streets."
+            }
+          ],
+          "explanationVi": "Đoạn F giải thích việc giới hạn quy mô kỹ thuật giúp hoàn thành dự án trong 12 tháng, tạo minh chứng nhanh và rõ ràng rằng lá phiếu của dân tạo ra kết quả thật.",
+          "steps": [
+            "Tìm cụm \"limit the technical scale\" ở đoạn F.",
+            "Đọc câu mục đích liền sau về \"clear proof that their choices produce real results\".",
+            "Khớp hoàn toàn với đáp án A."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "id": "rp:p3_003",
+  "level": "P3",
+  "title": "Reconsidering Productivity Metrics in Care-Based Economies",
+  "subtitle": "Why industrial measures of output struggle to capture the true economic value of health, childcare, and elder support",
+  "topic": "economy",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "As populations age steadily across developed nations, care sectors—spanning nurseries, nursing wards, therapy clinics, and home elder support—now employ roughly 18 per cent of the active labour force. Yet national statistical agencies still track these services using output ratios built for twentieth-century factories, dividing counted units by paid staff hours. Under that arithmetic, a steel plant turning out 20 per cent more pipes per worker looks plainly more productive. A community nursery that hires extra teachers to shrink group sizes, by contrast, shows up on official ledgers as a drop in output per hour. Worse still, those crude ratios rarely note whether children thrive or older patients recover well. Such figures quietly shape treasury debates over wages, staffing rules, and annual funding ceilings. Applying factory-floor ratios to relational care work therefore systematically misreads genuine quality improvements as signs of economic stagnation."
+    },
+    {
+      "label": "B",
+      "text": "This clash is not a mere flaw in accounting sheets; it reflects a deeper structural trait of personal care. Unlike car assembly or microchip fabrication, looking after fragile patients or young children relies on steady human presence, patience, and quick judgement. You cannot double the speed of a comfort visit or halve the staff on a dementia ward without changing the service itself. In a 2021 cross-regional audit of 42 municipal care homes, economist Dr Samuel Mensah tracked what happened when tight budgets trimmed average staff-to-resident contact time by 15 per cent. Nominal visits per paid hour climbed neatly on quarterly spreadsheets, pleasing local managers. Within six months, however, avoidable hospital readmissions among those exact residents jumped by 29 per cent. Nurses also logged steeper falls in mobility and weight across frail wards. Squeezing classic labour speed out of personal care thus often shifts far heavier costs onto emergency medical budgets."
+    },
+    {
+      "label": "C",
+      "text": "Conventional economic accounts distort care further by drawing a sharp line between paid market contracts and unpaid family support. When an adult daughter leaves an office job to nurse an ageing father at home, recorded national output immediately drops. If that same household instead pays a private agency to send a visiting carer, measured output rises, even though the underlying human work remains virtually identical. In a 2023 regional study across six northern districts, economist Prof Nora Halvorsen calculated that unpaid household caregiving equalled nearly 14 per cent of total regional output each year. Almost two-thirds of those unpaid hours fell on women juggling part-time work and child-rearing. Halvorsen warns that treating informal family care as economically invisible tempts treasuries to underfund respite clinics and local transport schemes. Over time, that neglect strains household carers until burnout pushes thousands of dependants into far costlier state wards."
+    },
+    {
+      "label": "D",
+      "text": "Seeking faster gains without raising payrolls, several regional health trusts have turned to algorithmic shift planners and strict task-by-task visit schedules. In a 2022 study of 650 home-care workers, researcher Dr Tomas Kowalski examined how tight 15-minute home visits reshaped daily practice. Software routing did shave travel overhead between clients by 11 per cent across dense urban zones. Yet the narrow time caps forced carers to put countable chores—such as signing drug charts—ahead of unrecorded chats that routinely spot early signs of depression or poor nutrition. Many workers reported rushing out the door while lonely elders still tried to explain new pain. Worse still, annual staff turnover across those timed schemes rose by 24 per cent over two years as experienced carers quit in frustration. Reducing complex human support to neatly counted micro-tasks hollows out staff judgement and weakens the very health outcomes commissioners claim to protect."
+    },
+    {
+      "label": "E",
+      "text": "In response to these blind spots, a growing group of economists and public auditors is testing outcome-based accounting models. Rather than tallying filled beds or completed ten-minute visits, outcome frameworks track durable gains in human capability: slower memory loss, longer spells of safe home living, and stronger early literacy among toddlers. In a 2024 pilot across nine regional councils led by Dr Rebecca Chen, weighting nursery and elder-care grants by verified wellbeing indicators produced a 19 per cent net fiscal return over four years. Those savings came through fewer emergency admissions and higher steady employment among working parents. Local clinics also saw steadier staff retention once teams were judged on client stability rather than stopwatch quotas. Sceptics still object that wellbeing metrics are noisier and slower to gather than simple quarterly unit counts. Chen nonetheless maintains that rough measures of genuine social value serve policy far better than exact counts of the wrong variable."
+    },
+    {
+      "label": "F",
+      "text": "Debating how to measure care productivity ultimately forces governments to rethink how national budgets classify public spending. Many finance ministries still treat care funding as pure short-term consumption—a recurring drain to be capped whenever tax revenue tightens—rather than durable social infrastructure akin to railways or clean power grids. That accounting habit carries heavy long-run penalties. Underinvesting in reliable childcare and elder support keeps skilled adults out of paid work, weakens household resilience, and inflates chronic hospital bills decades later. By contrast, regions that treat care hubs as core civic assets tend to preserve wider tax bases even as median ages climb. Rebuilding productivity yardsticks for care-based economies is therefore no minor technical task left to back-room statisticians. It is a necessary step towards designing fiscal rules fit for an ageing century."
+    }
+  ],
+  "wordCount": 870,
+  "glossary": [
+    {
+      "term": "stagnation",
+      "meaningVi": "tình trạng trì trệ, không tăng trưởng kinh tế"
+    },
+    {
+      "term": "respite clinic",
+      "meaningVi": "cơ sở chăm sóc tạm thời giúp người thân chăm bệnh được nghỉ ngơi"
+    },
+    {
+      "term": "staff turnover",
+      "meaningVi": "tỷ lệ nhân sự nghỉ việc và thay mới trong một giai đoạn"
+    },
+    {
+      "term": "fiscal return",
+      "meaningVi": "lợi ích tài chính ròng thu lại cho ngân sách công"
+    },
+    {
+      "term": "social infrastructure",
+      "meaningVi": "hạ tầng xã hội nền tảng như giáo dục, y tế và dịch vụ chăm sóc"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_003_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_003_q01",
+          "number": 1,
+          "prompt": "Judging relational care services by industrial output formulas routinely mistakes real quality gains for falling efficiency.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 821,
+              "end": 970,
+              "quote": "Applying factory-floor ratios to relational care work therefore systematically misreads genuine quality improvements as signs of economic stagnation."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "steps": [
+            "Tìm nhận định tổng kết của tác giả ở câu cuối đoạn A về tỷ số nhà máy và dịch vụ chăm sóc.",
+            "So sánh 'systematically misreads genuine quality improvements as signs of economic stagnation' với ý câu hỏi.",
+            "Trùng khớp hoàn toàn với quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Câu cuối đoạn A khẳng định áp dụng công thức năng suất nhà máy cho công việc chăm sóc liên tục hiểu nhầm việc nâng cao chất lượng thành sự trì trệ kinh tế."
+        },
+        {
+          "qid": "p3_003_q02",
+          "number": 2,
+          "prompt": "Trimming the minutes care-home staff spend with each resident reliably lowers total public expenditure on elder health.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 675,
+              "end": 981,
+              "quote": "Within six months, however, avoidable hospital readmissions among those exact residents jumped by 29 per cent. Nurses also logged steeper falls in mobility and weight across frail wards. Squeezing classic labour speed out of personal care thus often shifts far heavier costs onto emergency medical budgets."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Định vị kết quả kiểm toán 42 viện dưỡng lão của Dr Samuel Mensah ở đoạn B.",
+            "Đối chiếu hậu quả: cắt giảm 15% thời gian tiếp xúc làm tỷ lệ tái nhập viện tăng 29% và đẩy chi phí nặng hơn sang ngân sách cấp cứu.",
+            "Trái ngược hoàn toàn với nhận định giảm tổng chi tiêu công nên chọn NO."
+          ],
+          "explanationVi": "Đoạn B chỉ ra việc cắt giảm thời gian chăm sóc khiến tỷ lệ nhập viện có thể phòng tránh tăng 29% và đẩy gánh nặng chi phí lớn hơn sang ngân sách y tế khẩn cấp."
+        },
+        {
+          "qid": "p3_003_q03",
+          "number": 3,
+          "prompt": "Unpaid family members generally manage severe chronic illnesses more competently than trained agency carers do.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 256,
+              "end": 424,
+              "quote": "If that same household instead pays a private agency to send a visiting carer, measured output rises, even though the underlying human work remains virtually identical."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Đọc đoạn C nơi đối chiếu chăm sóc gia đình không lương và thuê nhân viên dịch vụ có trả phí.",
+            "Kiểm tra xem bài có đánh giá nhóm nào xử lý bệnh mạn tính nặng giỏi hơn hay không.",
+            "Bài chỉ bàn cách tính vào sản lượng kinh tế chứ không so sánh trình độ xử lý bệnh nặng nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn C chỉ nêu sự bất hợp lý khi thống kê GDP tính công việc thuê ngoài nhưng bỏ qua chăm sóc gia đình tương đương. Tác giả không so sánh năng lực xử lý bệnh mạn tính giữa hai nhóm."
+        },
+        {
+          "qid": "p3_003_q04",
+          "number": 4,
+          "prompt": "Dividing home-care visits into tightly timed checklists enables carers to spot subtle signs of client decline earlier.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 398,
+              "end": 579,
+              "quote": "Yet the narrow time caps forced carers to put countable chores—such as signing drug charts—ahead of unrecorded chats that routinely spot early signs of depression or poor nutrition."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Tìm nghiên cứu của Dr Tomas Kowalski về các chuyến thăm nhà giới hạn 15 phút tại đoạn D.",
+            "Đối chiếu: giới hạn chặt buộc nhân viên ưu tiên việc đếm được thay vì trò chuyện vốn giúp phát hiện sớm trầm cảm hay suy dinh dưỡng.",
+            "Mâu thuẫn trực tiếp với nhận định giúp phát hiện sớm nên chọn NO."
+          ],
+          "explanationVi": "Đoạn D nêu giới hạn thời gian chặt buộc nhân viên bỏ qua những cuộc trò chuyện không ghi sổ vốn thường giúp phát hiện sớm dấu hiệu trầm cảm hoặc kém dinh dưỡng."
+        },
+        {
+          "qid": "p3_003_q05",
+          "number": 5,
+          "prompt": "Dr Rebecca Chen's wellbeing-weighted funding framework has already been adopted as a mandatory standard by national treasuries.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 352,
+              "end": 552,
+              "quote": "In a 2024 pilot across nine regional councils led by Dr Rebecca Chen, weighting nursery and elder-care grants by verified wellbeing indicators produced a 19 per cent net fiscal return over four years."
+            }
+          ],
+          "trapType": "extra_claim",
+          "steps": [
+            "Định vị phần thử nghiệm năm 2024 của Dr Rebecca Chen ở đoạn E.",
+            "Kiểm tra xem mô hình này đã được bộ tài chính quốc gia ban hành làm chuẩn bắt buộc hay chưa.",
+            "Bài chỉ nhắc thử nghiệm ở chín hội đồng địa phương, không nói về việc áp dụng bắt buộc cấp quốc gia nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn E chỉ mô tả chương trình thử nghiệm tại chín hội đồng vùng của Dr Rebecca Chen cùng phản biện từ giới hoài nghi. Bài không đề cập việc áp dụng bắt buộc ở cấp quốc gia."
+        },
+        {
+          "qid": "p3_003_q06",
+          "number": 6,
+          "prompt": "Finance ministries are mistaken when they classify public care budgets merely as recurring consumption rather than lasting infrastructure.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 130,
+              "end": 407,
+              "quote": "Many finance ministries still treat care funding as pure short-term consumption—a recurring drain to be capped whenever tax revenue tightens—rather than durable social infrastructure akin to railways or clean power grids. That accounting habit carries heavy long-run penalties."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "steps": [
+            "Đọc đoạn F về cách các bộ tài chính phân loại ngân sách chăm sóc công.",
+            "Đối chiếu đánh giá của tác giả: thói quen kế toán coi chăm sóc là tiêu dùng ngắn hạn thay vì hạ tầng xã hội gây hậu quả nặng nề dài hạn.",
+            "Khớp chính xác với quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Đoạn F phê phán trực tiếp thói quen của nhiều bộ tài chính khi xếp ngân sách chăm sóc vào tiêu dùng ngắn hạn thay vì hạ tầng xã hội bền vững, chỉ ra các tổn thất dài hạn."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_003_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why omitting unpaid family work distorts public spending priorities"
+        },
+        {
+          "key": "ii",
+          "text": "Designing new yardsticks centred on long-term human outcomes"
+        },
+        {
+          "key": "iii",
+          "text": "Evidence that faster factory assembly lines raised care-home wages"
+        },
+        {
+          "key": "iv",
+          "text": "Reframing care expenditure as essential infrastructure for ageing societies"
+        },
+        {
+          "key": "v",
+          "text": "How cutting staff contact time creates hidden downstream medical costs"
+        },
+        {
+          "key": "vi",
+          "text": "The hidden damage caused by rigid digital scheduling and micro-tasks"
+        },
+        {
+          "key": "vii",
+          "text": "Why working parents prefer private nurseries over municipal clinics"
+        },
+        {
+          "key": "viii",
+          "text": "A recent fall in global life expectancy linked to rising hospital bills"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_003_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 862,
+            "end": 981,
+            "quote": "Squeezing classic labour speed out of personal care thus often shifts far heavier costs onto emergency medical budgets."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 862,
+              "end": 981,
+              "quote": "Squeezing classic labour speed out of personal care thus often shifts far heavier costs onto emergency medical budgets."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn B nhắc đến dây chuyền lắp ráp ô tô chỉ để đối chiếu sự khác biệt với chăm sóc cá nhân, không nói dây chuyền tăng lương viện dưỡng lão."
+            },
+            {
+              "key": "vi",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tác hại của lịch trình kỹ thuật số chặt chẽ thuộc đoạn D, không phải đoạn B."
+            }
+          ],
+          "steps": [
+            "Tóm tắt đoạn B: cắt giảm thời gian tiếp xúc ở viện dưỡng lão làm tăng tái nhập viện và chuyển gánh nặng sang ngân sách cấp cứu.",
+            "Khớp chính xác với tiêu đề v về chi phí y tế phát sinh về sau.",
+            "Loại iii (bẫy từ khóa) và vi (thuộc đoạn D)."
+          ],
+          "explanationVi": "Đoạn B chứng minh ép tăng tốc độ lao động bằng cách cắt thời gian tiếp xúc tại viện dưỡng lão dẫn đến tăng tái nhập viện và đội chi phí y tế khẩn cấp. Tiêu đề v tóm gọn đúng ý chính."
+        },
+        {
+          "qid": "p3_003_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 716,
+            "end": 868,
+            "quote": "Halvorsen warns that treating informal family care as economically invisible tempts treasuries to underfund respite clinics and local transport schemes."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 716,
+              "end": 868,
+              "quote": "Halvorsen warns that treating informal family care as economically invisible tempts treasuries to underfund respite clinics and local transport schemes."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "too_broad",
+              "whyVi": "Tiêu đề iv bao quát khung chính sách hạ tầng xã hội của đoạn F, còn đoạn C tập trung riêng vào hệ quả của việc loại trừ lao động chăm sóc gia đình không lương."
+            },
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Cắt giảm thời gian tiếp xúc của nhân viên viện dưỡng lão là chủ đề của đoạn B."
+            }
+          ],
+          "steps": [
+            "Nhận diện trọng tâm đoạn C: công việc chăm sóc không lương trong gia đình bị bỏ khỏi sổ sách kinh tế dẫn đến thiếu đầu tư dịch vụ hỗ trợ.",
+            "Khớp trực tiếp với tiêu đề i.",
+            "Loại v (đoạn trước) và iv (thuộc đoạn F)."
+          ],
+          "explanationVi": "Đoạn C phân tích việc bỏ qua lao động chăm sóc gia đình không trả lương khỏi số liệu kinh tế khiến ngân sách công lơ là các dịch vụ hỗ trợ thiết yếu. Do đó chọn tiêu đề i."
+        },
+        {
+          "qid": "p3_003_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "vi"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 816,
+            "end": 973,
+            "quote": "Reducing complex human support to neatly counted micro-tasks hollows out staff judgement and weakens the very health outcomes commissioners claim to protect."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 816,
+              "end": 973,
+              "quote": "Reducing complex human support to neatly counted micro-tasks hollows out staff judgement and weakens the very health outcomes commissioners claim to protect."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Xây dựng thước đo mới dựa trên kết quả dài hạn là nội dung của đoạn E, không phải đoạn D."
+            },
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn D không hề bàn về sự sụt giảm tuổi thọ toàn cầu."
+            }
+          ],
+          "steps": [
+            "Đọc đoạn D về phần mềm chia ca thuật toán, giới hạn 15 phút và danh mục tác vụ nhỏ.",
+            "Tổng hợp hậu quả: bỏ sót dấu hiệu bệnh sớm và tỷ lệ nghỉ việc tăng 24%.",
+            "Chọn tiêu đề vi nêu đúng tổn hại ẩn từ lịch trình kỹ thuật số cứng nhắc và tác vụ vi mô."
+          ],
+          "explanationVi": "Đoạn D làm rõ cách lập lịch kỹ thuật số cứng nhắc và chia nhỏ đầu việc gây bỏ sót dấu hiệu suy giảm sức khỏe và tăng tỷ lệ nghỉ việc. Tiêu đề vi phản ánh trọn vẹn ý này."
+        },
+        {
+          "qid": "p3_003_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 128,
+            "end": 351,
+            "quote": "Rather than tallying filled beds or completed ten-minute visits, outcome frameworks track durable gains in human capability: slower memory loss, longer spells of safe home living, and stronger early literacy among toddlers."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 128,
+              "end": 351,
+              "quote": "Rather than tallying filled beds or completed ten-minute visits, outcome frameworks track durable gains in human capability: slower memory loss, longer spells of safe home living, and stronger early literacy among toddlers."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn E có nhắc nhà trẻ và phụ huynh đi làm nhưng không hề so sánh sở thích giữa nhà trẻ tư và công."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Nhìn nhận chi tiêu chăm sóc như hạ tầng xã hội là lập luận vĩ mô của đoạn F."
+            }
+          ],
+          "steps": [
+            "Xác định ý chính đoạn E: phát triển mô hình hạch toán dựa trên kết quả dài hạn về năng lực con người.",
+            "Đối chiếu với tiêu đề ii: thiết kế thước đo mới xoay quanh kết quả dài hạn cho con người.",
+            "Loại vii (bẫy từ khóa) và iv (đoạn sau)."
+          ],
+          "explanationVi": "Đoạn E trình bày các khung hạch toán mới tập trung đo lường tiến bộ bền vững về năng lực và phúc lợi thay vì đếm số lượt thăm khám. Tiêu đề ii diễn đạt chính xác trọng tâm này."
+        },
+        {
+          "qid": "p3_003_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 130,
+            "end": 351,
+            "quote": "Many finance ministries still treat care funding as pure short-term consumption—a recurring drain to be capped whenever tax revenue tightens—rather than durable social infrastructure akin to railways or clean power grids."
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 130,
+              "end": 351,
+              "quote": "Many finance ministries still treat care funding as pure short-term consumption—a recurring drain to be capped whenever tax revenue tightens—rather than durable social infrastructure akin to railways or clean power grids."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Các chỉ số đo lường kết quả mới thuộc đoạn E, trong khi đoạn F chuyển sang cách phân loại ngân sách vĩ mô."
+            },
+            {
+              "key": "i",
+              "type": "detail_only",
+              "whyVi": "Bỏ sót lao động gia đình không lương chỉ là một vấn đề riêng được phân tích tại đoạn C."
+            }
+          ],
+          "steps": [
+            "Đọc đoạn F về yêu cầu xem lại cách phân loại chi tiêu chăm sóc công từ tiêu dùng sang hạ tầng xã hội.",
+            "Kết nối với bối cảnh xã hội già hóa ở câu kết đoạn F.",
+            "Chọn tiêu đề iv vì bao quát chính xác lập luận định khung lại chi tiêu chăm sóc."
+          ],
+          "explanationVi": "Đoạn F kêu gọi coi chi tiêu cho dịch vụ chăm sóc là hạ tầng xã hội thiết yếu cho các xã hội già hóa thay vì khoản tiêu dùng ngắn hạn. Tiêu đề iv tóm tắt đúng thông điệp này."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_003_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_003_q12",
+          "number": 12,
+          "prompt": "What is the main drawback of tightly timed home-care schedules highlighted in Paragraph D?\nA. They fail to produce any reduction in travel time between visits.\nB. They pressure staff to neglect informal talks that catch early health declines.\nC. They prevent managers from confirming whether medication charts are signed.\nD. They force regional health trusts to raise payroll budgets immediately.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 398,
+              "end": 579,
+              "quote": "Yet the narrow time caps forced carers to put countable chores—such as signing drug charts—ahead of unrecorded chats that routinely spot early signs of depression or poor nutrition."
+            }
+          ],
+          "steps": [
+            "Định vị nghiên cứu của Dr Tomas Kowalski về lịch thăm nhà 15 phút tại đoạn D.",
+            "Loại A (thời gian di chuyển giảm 11%), loại C (ký bảng thuốc vẫn được ưu tiên), loại D (mục tiêu là không tăng quỹ lương).",
+            "Chọn B vì khớp chính xác việc bỏ qua các cuộc trò chuyện giúp phát hiện sớm trầm cảm hoặc kém dinh dưỡng."
+          ],
+          "explanationVi": "Đoạn D chỉ ra giới hạn 15 phút khiến nhân viên phải ưu tiên việc đếm được thay vì các cuộc trò chuyện không ghi chép vốn phát hiện sớm dấu hiệu suy giảm sức khỏe. Đáp án B là chính xác."
+        },
+        {
+          "qid": "p3_003_q13",
+          "number": 13,
+          "prompt": "How does Dr Rebecca Chen respond to reservations about wellbeing metrics in Paragraph E?\nA. She claims wellbeing scores are faster to gather than standard quarterly counts.\nB. She suggests dropping wellbeing indicators in favour of tracking occupied beds.\nC. She contends that approximate gauges of real value beat exact counts of the wrong thing.\nD. She admits that fiscal benefits from nursery grants cannot be measured over four years.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 893,
+              "end": 1028,
+              "quote": "Chen nonetheless maintains that rough measures of genuine social value serve policy far better than exact counts of the wrong variable."
+            }
+          ],
+          "steps": [
+            "Tìm phản hồi của Dr Rebecca Chen trước ý kiến hoài nghi ở hai câu cuối đoạn E.",
+            "Loại A, B, D vì trái ngược trực tiếp với thông tin trong đoạn.",
+            "Chọn C vì diễn đạt lại chính xác câu 'rough measures of genuine social value serve policy far better than exact counts of the wrong variable'."
+          ],
+          "explanationVi": "Câu cuối đoạn E nêu rõ Dr Rebecca Chen bảo vệ quan điểm rằng thước đo tương đối về giá trị xã hội thực sự vẫn tốt hơn nhiều so với đếm chính xác sai biến số. Đáp án là C."
+        },
+        {
+          "qid": "p3_003_q14",
+          "number": 14,
+          "prompt": "What is the writer's primary argument across the passage as a whole?\nA. Care providers should adopt automated factory schedules to solve ageing-population costs.\nB. Public treasuries should freeze care spending until clearer GDP statistics are published.\nC. Unpaid family support should legally replace municipal nursing homes across developed nations.\nD. Traditional industrial productivity metrics distort care services and require fundamental redesign.",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 706,
+              "end": 916,
+              "quote": "Rebuilding productivity yardsticks for care-based economies is therefore no minor technical task left to back-room statisticians. It is a necessary step towards designing fiscal rules fit for an ageing century."
+            }
+          ],
+          "steps": [
+            "Tổng hợp mạch lập luận xuyên suốt từ đoạn A (công thức nhà máy làm méo mó chăm sóc) đến đoạn F (cần xây dựng lại thước đo năng suất).",
+            "Loại A, B, C vì hoàn toàn trái với lập trường của tác giả.",
+            "Chọn D vì bao quát trọn vẹn luận điểm chủ đạo của toàn bài."
+          ],
+          "explanationVi": "Xuyên suốt từ đoạn A đến đoạn F, tác giả chứng minh thước đo năng suất công nghiệp làm sai lệch giá trị của ngành chăm sóc và cần được thiết kế lại căn bản. Đáp án đúng là D."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": "rp:p2_res_001",
+  "level": "P2",
+  "reserved": true,
+  "title": "Slow Journalism Subscriptions and Reader Retention",
+  "subtitle": "Why publishing fewer, deeper stories is helping independent outlets keep paying audiences",
+  "topic": "media",
+  "wordCount": 805,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "For much of the past two decades, digital newsrooms pursued real-time alerts and massive web traffic to sell display advertising. As global ad spending moved steadily toward social platforms, however, that high-speed race left many publishers financially fragile. At the same time, constant phone alerts left ordinary readers exhausted by thin updates and shallow scoops. In response, a growing tier of independent titles has turned to slow journalism. These outlets publish far fewer stories each week, focusing instead on field reporting, strict fact checks, and clear long-form essays. Because these publications depend mainly on direct reader subscriptions rather than brief traffic spikes, retaining existing members now matters far more than drawing casual visitors, pushing editors to rethink publishing schedules and editorial value. In short, depth has begun to beat raw speed."
+    },
+    {
+      "label": "B",
+      "text": "Recent data reveals a wide gap in loyalty between slow outlets and standard daily news sites. Media economist Dr Fiona Gallagher analysed paid-member records from 28 European publications over a three-year span at the Northern Media Observatory, documenting a stark contrast in audience behaviour. While broad daily news sites lost roughly 38 per cent of new online members within twelve months, slow-journalism outlets retained close to 78 per cent over the same stretch. Gallagher observed that readers seldom left slow titles during quiet news weeks, whereas breaking-news sites experienced sharp waves of cancellations once a major headline faded from public view. Her findings indicate that subscribers pay far more consistently for durable context and clear analysis than for quick alerts they can read free elsewhere. Loyalty tracks calm depth far more closely than daily volume."
+    },
+    {
+      "label": "C",
+      "text": "Many editors initially worried that posting less frequently would make a paid plan feel meagre and poor value. Audience researcher Professor Samuel Okafor found the exact opposite when he tracked reading habits across 1,400 paid members over eighteen months. Readers paying for daily news feeds often reported guilt over unread articles piling up in their inbox. That feeling of overload frequently pushed them to cancel before annual renewal came due. By contrast, weekly or monthly slow journals deliver what Okafor terms a \"finishable edition\", a bounded editorial package that a busy subscriber can complete comfortably across one weekend, lifting confidence in stories read from opening to conclusion. Readers who finish an issue rarely feel cheated by their monthly bill. That calm sense of closure lifts perceived value even when the total monthly word count stays much smaller."
+    },
+    {
+      "label": "D",
+      "text": "Several slow publishers build deeper loyalty by pairing print copies with web access and live reader contact. Tomas Herrera, founder of the quarterly journal Meridian Review, transitioned from a digital-only newsletter to a combined print-and-audio bundle five years ago. Although printing and postage cut deeply into early profit margins, annual renewal rose from 64 per cent to 83 per cent within two years. Herrera notes that a solid paper issue left on a home coffee table acts as a gentle physical nudge to read. A forgotten web login, on the other hand, slips quietly out of sight and invites cancellation. Alongside its printed edition, Meridian Review hosts live reader briefings where journalists explain how complex reports were verified, transforming passive consumers into committed supporters who renew year after year. Members also send tips and questions straight to the newsroom."
+    },
+    {
+      "label": "E",
+      "text": "Even with high renewal rates, slow journalism carries clear business risks that limit how fast the model can grow. Producing a single comprehensive report can occupy a senior journalist and fact-checker for two full months before publication, creating steep upfront wage bills with no immediate return. Subscription lead Ananya Rao at Civic Dispatch warns that slow outlets struggle to reach first-time readers because they rarely rank near the top of live search trends. Her team also found that slashing trial prices too far draws bargain hunters who quit the moment standard fees begin. Because smaller newsrooms seldom hold the marketing budgets needed for broad advertising drives, steady growth depends on patient community outreach, reader referrals, and disciplined control over reporting budgets. One bad quarter can strain a tiny cash reserve fast."
+    },
+    {
+      "label": "F",
+      "text": "Given these competing pressures, few media analysts expect slow titles to replace daily news services altogether. Instead, established legacy newspapers have started incorporating slow-journalism formats into their paid tiers, shipping curated weekend digests and single-topic guides alongside regular breaking coverage. Several editors also curb mobile alerts so paying members hear from them only when a truly significant event unfolds. Dr Gallagher argues that the healthiest news worlds rely on both speeds working side by side: daily desks record urgent events as they unfold, while slower outlets step back to trace deeper causes and test early claims. Each form covers a gap that the other leaves open. For audiences worn down by endless scrolling, the steady expansion of slow subscriptions demonstrates that calm, finished reporting can still command durable trust and reliable income."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_res_001_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p2_res_001_q01",
+          "number": 1,
+          "prompt": "Relying heavily on ad revenue tied to high web traffic left many digital publishers in a weak financial position."
+        },
+        {
+          "qid": "p2_res_001_q02",
+          "number": 2,
+          "prompt": "In Dr Fiona Gallagher's three-year study, daily news websites kept a higher proportion of new subscribers than slow-journalism outlets did."
+        },
+        {
+          "qid": "p2_res_001_q03",
+          "number": 3,
+          "prompt": "Professor Samuel Okafor's eighteen-month study focused exclusively on subscribers under the age of thirty-five."
+        },
+        {
+          "qid": "p2_res_001_q04",
+          "number": 4,
+          "prompt": "Feeling overwhelmed by accumulated unread stories often drives daily-news subscribers to cancel their memberships."
+        },
+        {
+          "qid": "p2_res_001_q05",
+          "number": 5,
+          "prompt": "Adding a printed edition immediately boosted Meridian Review's early profit margins."
+        },
+        {
+          "qid": "p2_res_001_q06",
+          "number": 6,
+          "prompt": "Civic Dispatch plans to launch a quarterly printed magazine for its subscribers next year."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why publishing less frequently can raise perceived value"
+        },
+        {
+          "key": "ii",
+          "text": "Upfront reporting costs and barriers to attracting new subscribers"
+        },
+        {
+          "key": "iii",
+          "text": "Why social media platforms stopped carrying news links"
+        },
+        {
+          "key": "iv",
+          "text": "Statistical evidence of higher subscriber loyalty in slow outlets"
+        },
+        {
+          "key": "v",
+          "text": "How advertising shifts pushed newsrooms toward subscriber-funded depth"
+        },
+        {
+          "key": "vi",
+          "text": "Using print issues and live briefings to deepen reader commitment"
+        },
+        {
+          "key": "vii",
+          "text": "Public funding programmes designed to support independent journalism"
+        },
+        {
+          "key": "viii",
+          "text": "How major legacy newspapers redesigned their weekend digests"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_001_q07",
+          "number": 7,
+          "prompt": "Paragraph A"
+        },
+        {
+          "qid": "p2_res_001_q08",
+          "number": 8,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p2_res_001_q09",
+          "number": 9,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p2_res_001_q10",
+          "number": 10,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p2_res_001_q11",
+          "number": 11,
+          "prompt": "Paragraph E"
+        }
+      ]
+    },
+    {
+      "groupId": "p2_res_001_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 12–14) and the list of people below. Match each statement with the correct person, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Fiona Gallagher"
+        },
+        {
+          "key": "B",
+          "text": "Tomas Herrera"
+        },
+        {
+          "key": "C",
+          "text": "Professor Samuel Okafor"
+        },
+        {
+          "key": "D",
+          "text": "Ananya Rao"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_res_001_q12",
+          "number": 12,
+          "prompt": "Heavy introductory price cuts often attract temporary subscribers who leave once normal fees apply."
+        },
+        {
+          "qid": "p2_res_001_q13",
+          "number": 13,
+          "prompt": "A printed issue visible in the home reminds subscribers of their membership better than a digital account does."
+        },
+        {
+          "qid": "p2_res_001_q14",
+          "number": 14,
+          "prompt": "The strongest media environments combine rapid daily reporting with slower analytical journalism."
+        }
+      ]
+    }
+  ]
+}

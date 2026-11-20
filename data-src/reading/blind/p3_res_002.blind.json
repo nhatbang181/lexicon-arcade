@@ -1,0 +1,153 @@
+{
+  "id": "rp:p3_res_002",
+  "level": "P3",
+  "reserved": true,
+  "title": "Predictive Policing Models and Spatial Feedback Loops",
+  "subtitle": "Why crime-forecasting software can amplify past enforcement bias unless governed by strict data rules",
+  "topic": "crime",
+  "wordCount": 849,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Over the past fifteen years, urban police forces across Europe and North America have turned steadily toward predictive mapping tools to guide where patrol cars drive on each shift. Borrowing statistical methods first built to forecast seismic aftershocks, these place-based systems scan past incident logs and mark small daily target squares—often no wider than two city blocks—flagged as high-risk zones. Backers praise such software as a sharp break from gut instinct, promising both firmer deterrence and fairer patrol plans led purely by neutral maths. To my mind, however, this claim of mathematical neutrality misses a basic flaw: forecasting models do not watch actual offending directly, but instead learn solely from the administrative records that police agencies themselves create. When past patrol habits shape those records, the software inherits every quiet skew buried inside the archive. That hidden gap between real crime and logged activity sits at the core of the debate."
+    },
+    {
+      "label": "B",
+      "text": "The mechanics of a spatial feedback loop become clear once one traces how extra patrols alter future crime logs. When an algorithm directs more officers into a marked neighbourhood, heightened street visibility naturally turns up more minor offences—such as drug possession, curfew breaches, or traffic infractions—that go largely unseen in lightly patrolled suburbs. Those newly logged arrests then feed straight back into the model's training file overnight. Treating that fresh climb in records as proof of rising street crime, the software assigns an even higher risk score to the exact same blocks during the following week. Criminologist Dr Elena Morales calls this cycle a \"runaway discovery loop\", in which patrol effort poses as true social risk and steadily widens spatial inequality across a city. Over several months, minor initial differences can harden into fixed patrol routines that few staff ever question."
+    },
+    {
+      "label": "C",
+      "text": "Controlled simulations and independent audits have added clear weight to these early warnings. Statistician Professor Malcolm Grant and colleagues built a synthetic city model calibrated with household survey figures on illicit drug use, which occurred at matching rates across wealthy and lower-income wards. When they fed only past arrest logs into a standard predictive system, patrols swiftly clustered inside two already heavily policed precincts, leaving matching offending elsewhere virtually untouched within ninety simulated days. Even when the team tweaked weight settings, the same two zones kept drawing most patrol cars. Defenders of commercial forecasting tools argue that property crimes like home burglary and car theft are reported mainly by victims rather than spotted by officers, making them far less prone to patrol distortion. Even in those categories, however, under-reporting among marginalised groups who distrust local forces can skew baseline maps in subtler yet lasting ways."
+    },
+    {
+      "label": "D",
+      "text": "The effects of flawed forecasting reach far beyond skewed maps into the daily culture of police work. Socio-legal scholar Dr Tariq Haddad interviewed ninety patrol officers across four city forces using dispatch tablets and found widespread automation bias. Junior officers often obeyed red-shaded target boxes even when their own street-level knowledge signalled quiet conditions, fearing supervisory criticism if an incident took place outside an assigned square. At the same time, senior commanders tended to treat closed proprietary risk scores as scientific backing for strict stop-and-search quotas rather than cues for local problem-solving. Rather than freeing officers to apply sound human judgement, rigid software prompts can shrink field discretion and swap community dialogue for repetitive street sweeps. Trust between residents and uniformed staff often erodes fastest in the very wards that need steady public cooperation most."
+    },
+    {
+      "label": "E",
+      "text": "Given these institutional risks, one might expect predictive software to show overwhelming proof of crime cuts to justify its public price tag. Yet careful field trials paint a far more modest picture. In a multi-city review led by criminologist Dr Ingrid Lindholm, two forces using place-based forecasting logged brief drops in car break-ins of roughly six per cent during early trials, while three matched forces showed no meaningful fall compared with classic analyst-drawn maps. Crucially, Lindholm noted that vendor-funded studies often mixed up the effect of the software itself with the simultaneous arrival of extra patrol hours. Without blinded control areas, police chiefs can easily credit a costly algorithm for short-term gains caused simply by placing additional crews onto busy streets. Weak evaluation standards have thus let commercial claims outpace verified public results across many regions."
+    },
+    {
+      "label": "F",
+      "text": "Rejecting spatial data analysis altogether would nonetheless be an overreaction, because sound statistical mapping still helps towns spot real seasonal surges in burglaries or unsafe road junctions. What demands urgent change is the unchecked feedback loop linking officer-led arrests to automated patrol dispatch. In practical terms, police agencies should strip discretionary arrest logs out of predictive training sets, restrict models strictly to verified victim-reported offences, and subject every tool to regular audits by independent civic boards. Equally vital, elevated risk alerts should trigger non-punitive civic responses—such as brighter street lighting, youth outreach, or transit safety—rather than reflexive waves of street stops. Cities that pair clear data rules with public review can gain honest insight while guarding civil rights. Only when open rules and human accountability govern the software can spatial analytics serve public safety without locking past bias into future policing."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_res_002_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views or claims of the writer in the passage? Write YES, NO, or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p3_res_002_q01",
+          "number": 1,
+          "prompt": "Claims that predictive policing tools are mathematically neutral overlook the fact that they rely solely on police-generated records rather than true crime levels."
+        },
+        {
+          "qid": "p3_res_002_q02",
+          "number": 2,
+          "prompt": "Relying exclusively on victim-reported property offences completely prevents distortion from entering baseline crime maps."
+        },
+        {
+          "qid": "p3_res_002_q03",
+          "number": 3,
+          "prompt": "Professor Malcolm Grant's simulation study caused several major police forces to terminate their commercial software contracts immediately."
+        },
+        {
+          "qid": "p3_res_002_q04",
+          "number": 4,
+          "prompt": "Police agencies ought to abandon all forms of spatial statistical mapping to remove historical bias."
+        },
+        {
+          "qid": "p3_res_002_q05",
+          "number": 5,
+          "prompt": "High-risk alerts from crime models should prompt supportive community interventions rather than automatic increases in street stops."
+        },
+        {
+          "qid": "p3_res_002_q06",
+          "number": 6,
+          "prompt": "Dr Ingrid Lindholm's multi-city review showed that predictive software is more cost-effective in rural districts than in large metropolitan forces."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_res_002_g2",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "questions": [
+        {
+          "qid": "p3_res_002_q07",
+          "number": 7,
+          "prompt": "Place-based crime-mapping systems adapt statistical techniques that were first designed to predict ______."
+        },
+        {
+          "qid": "p3_res_002_q08",
+          "number": 8,
+          "prompt": "In Dr Tariq Haddad's study, junior officers followed flagged map squares even on quiet streets because they feared ______."
+        },
+        {
+          "qid": "p3_res_002_q09",
+          "number": 9,
+          "prompt": "Dr Ingrid Lindholm pointed out that vendor-funded trials often confused the software's effect with the addition of extra ______."
+        },
+        {
+          "qid": "p3_res_002_q10",
+          "number": 10,
+          "prompt": "The writer recommends that every predictive policing model undergo regular inspection by independent ______."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_res_002_g3",
+      "type": "matching_info",
+      "instructions": "Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_res_002_q11",
+          "number": 11,
+          "prompt": "a synthetic modelling experiment showing how patrols concentrate in two precincts within three months"
+        },
+        {
+          "qid": "p3_res_002_q12",
+          "number": 12,
+          "prompt": "evidence that automated dispatch prompts can weaken patrol officers' reliance on their own street knowledge"
+        },
+        {
+          "qid": "p3_res_002_q13",
+          "number": 13,
+          "prompt": "an account of how newly recorded minor arrests raise a neighbourhood's risk score during the following week"
+        }
+      ]
+    }
+  ]
+}

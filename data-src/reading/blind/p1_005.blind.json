@@ -1,0 +1,180 @@
+{
+  "id": "rp:p1_005",
+  "level": "P1",
+  "reserved": false,
+  "title": "Cable-Drawn Streetcars on Steep Hillside Routes",
+  "subtitle": "Mechanical traction, nineteenth-century city transit, and modern preservation on sloped streets",
+  "topic": "transport",
+  "wordCount": 655,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "During the late nineteenth century, rapidly growing hillside cities faced a stubborn daily transport problem. Horse-drawn carriages worked well on flat main streets, yet they struggled badly on wet stone roads with gradients steeper than 12 per cent. Horses frequently slipped on rain-slicked cobbles. Heavy passenger wagons also rolled backward whenever wooden brakes failed on winter ice. To make steep districts safe for daily travel, civic engineers turned to buried steel haulage cables. Large steam engines inside central powerhouses pulled these endless ropes smoothly beneath the street. Because the wire ran inside a shielded channel below the road, streetcars could climb long slopes at a steady pace despite rain, mud, or frost."
+    },
+    {
+      "label": "B",
+      "text": "Transit engineer Dr Martin Halvorsen has studied surviving blueprints to show how drivers controlled these mechanical vehicles safely in busy traffic. Each wooden streetcar carried a heavy iron clamp called a grip that reached down through a narrow central slot cut along the road surface. To move forward, the operator pulled a tall brass lever that closed steel jaws tightly around the continuously moving cable below. When approaching a crossroad or a passenger stop, the driver simply pushed the lever back to open the jaws and let the wire slide freely underneath while applying wooden wheel brakes. Mastering this smooth touch took new operators several weeks of supervised training."
+    },
+    {
+      "label": "C",
+      "text": "Beyond reliable traction on steep hills, cable transit offered an unexpected energy benefit noted by urban historian Dr Claire Bennett. Because cars travelling downhill stayed clamped to the very same continuous loop of wire as cars moving uphill, gravity became a useful working partner. The downward pull of loaded descending streetcars directly helped drag ascending vehicles toward the hilltop. Depot fuel ledgers from 1888 show that this balanced loop cut coal consumption at the central steam station by nearly 30 per cent compared with early self-powered tram prototypes operating on similar inclines. Even at peak evening rush hour, power stations rarely needed extra boilers to cope with heavy passenger loads."
+    },
+    {
+      "label": "D",
+      "text": "Operating underground haulage lines, however, brought relentless maintenance work and steep annual costs. Municipal archive analyst Owen Pritchard reviewed fifteen years of municipal depot logs and highlighted two recurring weaknesses. First, steel haulage ropes suffered constant friction over iron guide pulleys and wore out after roughly nine months of service. Specialist night crews had to work after dark to cut away frayed strands and weave fresh wire ends together by hand before morning commuters arrived. Second, street dirt, dead leaves, and autumn rainwater regularly washed down the narrow road slot. During cold spells, wet grit froze around underground pulleys and forced whole routes to halt until repair gangs cleared the channels."
+    },
+    {
+      "label": "E",
+      "text": "Those heavy upkeep bills explain why most cities abandoned cable streetcars quickly once electric motors improved after 1895. Overhead electric tram lines could climb moderate hills cleanly while costing far less to build and service than deep subterranean iron troughs. Town councils had spent huge sums digging up major streets for cable slots. Soon they found electric poles far simpler to lay out into new suburbs. Within twenty years, dozens of cable lines across Europe and North America had been torn up or paved over. Local newspapers noted how quickly travellers forgot the rhythmic hum of underground pulleys. Only a small number of corridors with extreme hillside gradients kept cable haulage running well into the twentieth century."
+    },
+    {
+      "label": "F",
+      "text": "Today, the handful of cable streetcar routes still running serve a very different urban purpose from their original commuter role. Transport planner Dr Nadia Al-Mansoor points out that top speeds near 15 kilometres per hour make cable cars too slow for long modern work trips across wide metropolitan areas. Even so, preserved hillside lines generate strong ticket income from visitors who value the open-air views and historic craft. They also offer a practical outdoor classroom for engineering students, who can inspect pure mechanical linkages and manual braking systems operating smoothly without digital electronics or onboard batteries."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_005_q01",
+          "number": 1,
+          "prompt": "Rainy cobblestone hills with slopes above 12 per cent created serious difficulties for horse-drawn carriages."
+        },
+        {
+          "qid": "p1_005_q02",
+          "number": 2,
+          "prompt": "To halt a cable streetcar at a road junction, the operator switched off the steam engine in the central depot."
+        },
+        {
+          "qid": "p1_005_q03",
+          "number": 3,
+          "prompt": "Connecting uphill and downhill vehicles to one cable loop reduced coal usage relative to early self-powered trams."
+        },
+        {
+          "qid": "p1_005_q04",
+          "number": 4,
+          "prompt": "Dr Claire Bennett analysed passenger ticket records from four coastal cities to calculate yearly rider growth."
+        },
+        {
+          "qid": "p1_005_q05",
+          "number": 5,
+          "prompt": "Buried steel haulage ropes typically lasted around five years before friction required repair teams to mend them."
+        },
+        {
+          "qid": "p1_005_q06",
+          "number": 6,
+          "prompt": "Dr Nadia Al-Mansoor suggests replacing electric commuter buses on flat suburban avenues with heritage cable cars."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Frequent wear and winter upkeep inside underground channels"
+        },
+        {
+          "key": "ii",
+          "text": "Why cheaper overhead electric lines replaced most cable routes"
+        },
+        {
+          "key": "iii",
+          "text": "How operators attached and detached cars from the moving wire"
+        },
+        {
+          "key": "iv",
+          "text": "Tourism income and educational appeal of remaining lines"
+        },
+        {
+          "key": "v",
+          "text": "Using downhill weight to save fuel at the central station"
+        },
+        {
+          "key": "vi",
+          "text": "Adding digital sensors to automate antique cable levers"
+        },
+        {
+          "key": "vii",
+          "text": "Horse breeding programmes funded by nineteenth-century transit firms"
+        },
+        {
+          "key": "viii",
+          "text": "Why brass levers snapped more often than iron clamps"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_005_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p1_005_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p1_005_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p1_005_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p1_005_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_match_feat",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 12–14) and the list of specialists below. Match each statement with the correct specialist, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Martin Halvorsen"
+        },
+        {
+          "key": "B",
+          "text": "Dr Claire Bennett"
+        },
+        {
+          "key": "C",
+          "text": "Owen Pritchard"
+        },
+        {
+          "key": "D",
+          "text": "Dr Nadia Al-Mansoor"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_005_q12",
+          "number": 12,
+          "prompt": "documented maintenance logs showing that overnight teams manually repaired worn wire sections"
+        },
+        {
+          "qid": "p1_005_q13",
+          "number": 13,
+          "prompt": "pointed out that modest travel speeds make cable streetcars impractical for long daily work journeys"
+        },
+        {
+          "qid": "p1_005_q14",
+          "number": 14,
+          "prompt": "highlighted fuel savings produced when downhill vehicles assisted uphill cars along a shared cable"
+        }
+      ]
+    }
+  ]
+}

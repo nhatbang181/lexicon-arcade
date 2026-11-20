@@ -1,0 +1,167 @@
+{
+  "id": "rp:p1_001",
+  "level": "P1",
+  "reserved": false,
+  "title": "Salt-Tolerant Crops on Reclaimed Coastal Marshland",
+  "subtitle": "How traditional halophytes are helping coastal farmers adapt to rising groundwater salinity",
+  "topic": "environment",
+  "wordCount": 702,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Along low-lying estuaries in northern Europe and eastern Asia, coastal growers face a quiet agricultural challenge. Rising sea levels and dry summers push salty groundwater up into fields that once gave reliable wheat and barley harvests. Standard grain crops struggle as soon as soil salt levels climb even slightly, because excess salt prevents roots from drawing in moisture. For decades, local water authorities tried to cope by operating diesel pumps to flush ditches with fresh river water, yet that plan has grown far too costly as fuel prices remain high and inland communities require larger shares of summer river flow. Consequently, a growing minority of agricultural specialists now argue that growers should adapt to saline soil rather than fighting it."
+    },
+    {
+      "label": "B",
+      "text": "Growing plants that tolerate salt, known to botanists as halophytes, is hardly a recent concept. Throughout the nineteenth century, people living beside tidal flats picked wild glasswort, sea purslane, and coastal beet. Old parish records from several North Sea regions indicate a clear pattern across local communities. Rural households relied on these tough plants mainly as winter greens and mineral-rich feed for their sheep. They were seldom grown on formal plots or sent to inland cities, because their thick stems went limp quickly inside warm wooden carts. After 1920, cheap farm fertilisers and drained polder fields spread rapidly. Most coastal villages then abandoned wild marsh plants in favour of high-yielding potatoes and standard grain crops."
+    },
+    {
+      "label": "C",
+      "text": "Trade interest in halophyte crops revived after a series of field trials in 2019. Agronomist Dr Helen Marsh led the research at a coastal field station over two growing seasons. Her team divided twelve hectares of mildly saline marshland into paired test blocks and irrigated them directly with diluted tidal water. Among three tested species, a short sea-kale cultivar stood out clearly. It delivered a 34 per cent higher edible yield than control plots growing normal cabbage in the same brackish water. Even so, Marsh warned that profit margins remained tight for small farms. Halophyte stems grow close to damp ground, so workers still had to cut them by hand rather than using farm tractors. This extra work pushed seasonal labour costs roughly one fifth above standard vegetable farms."
+    },
+    {
+      "label": "D",
+      "text": "The way halophytes survive harsh coastal soil rests on two specialised biological traits. Ordinary crops suffer quick damage when salt builds up inside the soft cells where leaves turn sunlight into food. Marsh species avoid this harm by pumping excess sodium into tiny surface sacs on their leaves. Once these small bladders fill up, they burst safely and release dry salt crystals into the wind. At the same time, a thick waxy coat covers both the stems and the leaves. This smooth coat sharply cuts water loss when brisk sea winds blow across flat open fields. Together, these protective traits allow halophytes to stay crisp and healthy in saline soil that would kill most garden crops within two weeks."
+    },
+    {
+      "label": "E",
+      "text": "Even with strong farm yields, turning salt-tolerant greens into daily food brings stubborn trade barriers. In 2022, farm economist Professor David Okafor analysed supply contracts across fourteen regional buyers and found a clear split in demand. Specialist coastal cafés and restaurants gladly paid high prices for fresh glasswort beside local fish. By contrast, ordinary supermarket chains rarely stocked any halophyte produce on their shelves. The core problem is simple logistics: once picked, most marsh greens keep their peak freshness for only four days, even inside cold crates. That short window causes heavy waste along large supply routes built for tougher goods like carrots and onions. Until better cold-chain packs appear, retail sales will probably stay small."
+    },
+    {
+      "label": "F",
+      "text": "Beyond direct food revenue, coastal ecologists point to wider environmental benefits from reintroducing halophytes onto degraded farmland. In five-year crop rotation studies, fields growing salt-loving species gradually drew mineral crusts out of the top soil layer, preparing the ground for moderately salt-tolerant barley in later seasons. Moreover, because tidal water carries natural trace minerals, farms in the trial cut their use of synthetic fertilisers by almost a quarter compared with nearby grain estates. Still, most experts agree that halophyte farming will complement rather than replace normal inland fields. Its genuine value lies in keeping marginal coastal territory productive instead of leaving it bare."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_001_q01",
+          "number": 1,
+          "prompt": "Elevated soil salt concentrations hinder ordinary cereal plants from absorbing water through their roots."
+        },
+        {
+          "qid": "p1_001_q02",
+          "number": 2,
+          "prompt": "In the nineteenth century, coastal villages cultivated marsh plants mainly to sell them in distant inland markets."
+        },
+        {
+          "qid": "p1_001_q03",
+          "number": 3,
+          "prompt": "During Dr Helen Marsh's 2019 experiment, the short sea-kale variety outperformed normal cabbage grown in the same salty conditions."
+        },
+        {
+          "qid": "p1_001_q04",
+          "number": 4,
+          "prompt": "Dr Helen Marsh's coastal research station received financial grants from environmental charities to purchase extra land."
+        },
+        {
+          "qid": "p1_001_q05",
+          "number": 5,
+          "prompt": "Most large supermarket retailers have begun displaying fresh halophytes regularly on their vegetable shelves."
+        },
+        {
+          "qid": "p1_001_q06",
+          "number": 6,
+          "prompt": "Growers who alternate halophytes with barley experience fewer breakdowns in their farm machinery than nearby estates."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Biological defences that enable survival in salty soil"
+        },
+        {
+          "key": "ii",
+          "text": "Why retail supply chains struggle to handle coastal greens"
+        },
+        {
+          "key": "iii",
+          "text": "Early rural uses of wild marsh plants"
+        },
+        {
+          "key": "iv",
+          "text": "Environmental gains and realistic limits of the approach"
+        },
+        {
+          "key": "v",
+          "text": "Measured crop output during a brackish-water trial"
+        },
+        {
+          "key": "vi",
+          "text": "Rising seawater temperatures threatening offshore fish farms"
+        },
+        {
+          "key": "vii",
+          "text": "Complete replacement of inland wheat fields by coastal farms"
+        },
+        {
+          "key": "viii",
+          "text": "High wages paid to seasonal workers across vegetable farms"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_001_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p1_001_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p1_001_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p1_001_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p1_001_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_summary",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Halophytes cope with brackish irrigation by moving surplus [Q12] into specialised sacs on their leaf surfaces, while a waxy coat curbs water loss. Although coastal restaurants buy the plants, mainstream supermarkets are put off because harvested greens keep their [Q13] for merely four days. When grown in multi-year rotations, halophytes also help clean salty soil and cut farmers' dependence on artificial [Q14].",
+      "questions": [
+        {
+          "qid": "p1_001_q12",
+          "number": 12,
+          "prompt": "Complete gap [Q12] (ONE WORD ONLY)."
+        },
+        {
+          "qid": "p1_001_q13",
+          "number": 13,
+          "prompt": "Complete gap [Q13] (ONE WORD ONLY)."
+        },
+        {
+          "qid": "p1_001_q14",
+          "number": 14,
+          "prompt": "Complete gap [Q14] (ONE WORD ONLY)."
+        }
+      ]
+    }
+  ]
+}

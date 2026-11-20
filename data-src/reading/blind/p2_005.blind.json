@@ -1,0 +1,180 @@
+{
+  "id": "rp:p2_005",
+  "level": "P2",
+  "reserved": false,
+  "title": "Timed Entry Quotas in Fragile Limestone Caves",
+  "subtitle": "How show caves are balancing conservation chemistry, subterranean ecology, and rural tourism through pre-booked visitor slots",
+  "topic": "tourism",
+  "wordCount": 816,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Beneath rural limestone hills across Europe and East Asia lie vast caverns filled with stalactites, calcite curtains, and prehistoric rock art formed over tens of thousands of years. Since the mid-twentieth century, concrete paths and bright floodlights have turned hundreds of these underground chambers into major regional attractions. Yet the sheer presence of human crowds alters the delicate climate that built those stone forms. Unlike open-air ruins, where wind quickly disperses breath and body heat, enclosed chambers trap moisture, carbon dioxide, and fine fibres shed from clothing. Even brief surges during holiday weekends can push fragile air balances far beyond natural limits. Left unchecked, this steady pressure can erase centuries of slow mineral growth. To safeguard rare geology without shutting sites for good, cave managers are steadily replacing open walk-in entry with strict timed entry quotas."
+    },
+    {
+      "label": "B",
+      "text": "Even a modest tour group acts like a mobile heater and gas source inside a sealed gallery. One walking guest gives off roughly 100 watts of body heat and breathes out carbon dioxide at levels far above natural cave air. Microclimate specialist Dr Mei-Ling Cho tracked a popular karst chamber over three peak summers and logged air temperatures rising by 1.8 degrees Celsius whenever more than forty people entered within an hour. Extra carbon dioxide dissolves into thin films of water on damp walls, turning neutral drips slightly acidic. Over years, that mild acid slowly etches glossy mineral crusts and halts fresh crystal growth. Automated sensors placed in tight passages reveal that recovery slows sharply once daily traffic exceeds local airflow capacity. Dr Cho argues that spacing visitors into timed slots lets natural air currents flush excess gas before lasting chemical wear takes hold."
+    },
+    {
+      "label": "C",
+      "text": "Heat and exhaled gas form only part of the burden placed on show caves. Fixed walkway floodlights spark outbreaks of lampenflora—mats of green algae, moss, and bacteria that coat wet rock near lamp housings. Once settled, those green films release organic acids that pit soft limestone and stain pale flowstone dark green. Equally worrying, guests unknowingly carry fungal spores, skin flakes, and lint on their shoes and jackets. Speleobiologist Prof Tomas Herrera warns that this steady flow of outside nutrients upsets blind cave beetles and tiny crustaceans built for near-starvation life. Because these rare species reproduce slowly, small habitat shifts can shrink populations within a decade. In his view, chemical scrubbing of algae treats only the symptom; lasting protection requires motion-triggered narrow-spectrum lamps paired with air-lock shoe mats and tighter daily caps."
+    },
+    {
+      "label": "D",
+      "text": "Several limestone parks have tested strict timed quotas over the past decade with clear results. In 2018, a provincial karst reserve cut daily entry from 1,800 walk-in guests to 720 pre-booked visitors split into twenty-person groups spaced thirty minutes apart. Within eighteen months, evening carbon dioxide peaks fell by 58%, and overnight humidity settled back to natural baseline levels before the next morning's first tour. Unexpectedly, visitor satisfaction scores climbed by nearly a third over the same period. Guests noted that quieter galleries and unhurried guides made the trip far more memorable than crowding along narrow metal rails. Staff also spent less time policing narrow walkways during wet weather. Still, park managers had to redesign car parks and online booking tools, since unannounced coach parties were turned away at the gate during peak August weeks."
+    },
+    {
+      "label": "E",
+      "text": "Tighter visitor caps often provoke sharp resistance from nearby villages whose cafes, guesthouses, and coach firms depend on high summer traffic. Local critics warn that halving cave tickets simply harms rural economies with few other jobs. Heritage economist Dr Ingrid Solberg studied four quota-managed cave towns between 2020 and 2024 and uncovered a more nuanced reality. Where managers raised ticket prices by 25% to 40% while pairing timed cave slots with guided surface trails and museum passes, total town revenue dipped by less than 4% despite a 50% drop in cave entries. Several craft shops even reported stronger sales because timed tickets kept guests in town for lunch. Dr Solberg argues that high-volume day-trippers rarely spend much locally anyway; drawing fewer visitors who stay overnight yields stronger rural income with far less wear on the rock."
+    },
+    {
+      "label": "F",
+      "text": "Because some painted halls and delicate crystal grottoes can safely handle fewer than fifty visits a week, physical quotas alone cannot meet public curiosity. Conservation engineer Dr Samuel Boateng has led laser-scanning projects that build millimetre-exact three-dimensional models and full-scale walk-through replicas beside fragile cave mouths. Some purists dismiss facsimile chambers as artificial theatre. Yet Dr Boateng insists that combining strict entry limits with realistic surface replicas opens these sites to schoolchildren and visitors with limited mobility who could never climb slippery underground stairs. Interactive lighting inside replica halls also lets guides highlight faint rock paintings without shining bright beams onto genuine walls. Taken together, timed quotas, smarter lamps, and thoughtful replicas point toward a realistic middle ground—one that guards subterranean wonders for future generations without locking local towns out of their heritage."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_005_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the claims of the writer in the passage? Choose YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p2_005_q01",
+          "number": 1,
+          "prompt": "Enclosed limestone caverns clear visitor heat and breath almost as rapidly as open-air historical ruins."
+        },
+        {
+          "qid": "p2_005_q02",
+          "number": 2,
+          "prompt": "Spacing tour groups into timed intervals helps natural airflow remove excess carbon dioxide before mineral surfaces erode."
+        },
+        {
+          "qid": "p2_005_q03",
+          "number": 3,
+          "prompt": "Chemically scrubbing green algae off limestone walls is enough on its own to safeguard cave ecosystems over the long term."
+        },
+        {
+          "qid": "p2_005_q04",
+          "number": 4,
+          "prompt": "The provincial karst reserve created a compensation fund in 2018 for coach companies turned away during August."
+        },
+        {
+          "qid": "p2_005_q05",
+          "number": 5,
+          "prompt": "Guesthouse owners in the four towns Dr Solberg studied earned higher profits than local museums after quotas started."
+        },
+        {
+          "qid": "p2_005_q06",
+          "number": 6,
+          "prompt": "Combining timed entry limits with carefully designed replicas can protect delicate caves without excluding local communities from heritage benefits."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_005_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "How human warmth and breath alter cave air chemistry"
+        },
+        {
+          "key": "ii",
+          "text": "Biological damage driven by artificial lights and outside nutrients"
+        },
+        {
+          "key": "iii",
+          "text": "Environmental recovery and better guest experiences after capping crowds"
+        },
+        {
+          "key": "iv",
+          "text": "Balancing entry limits against rural town earnings"
+        },
+        {
+          "key": "v",
+          "text": "Pairing strict physical caps with surface replicas for wider access"
+        },
+        {
+          "key": "vi",
+          "text": "Why cutting ticket numbers inevitably ruins nearby village economies"
+        },
+        {
+          "key": "vii",
+          "text": "How concrete paths speed up natural calcite crystal growth"
+        },
+        {
+          "key": "viii",
+          "text": "Evidence that digital models have permanently replaced all live cave tours"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_005_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p2_005_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p2_005_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p2_005_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p2_005_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "p2_005_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 12–14) and the list of researchers below. Match each statement with the correct researcher, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Mei-Ling Cho"
+        },
+        {
+          "key": "B",
+          "text": "Prof Tomas Herrera"
+        },
+        {
+          "key": "C",
+          "text": "Dr Ingrid Solberg"
+        },
+        {
+          "key": "D",
+          "text": "Dr Samuel Boateng"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_005_q12",
+          "number": 12,
+          "prompt": "Foreign organic material carried in on visitors' clothing and footwear threatens specialised cave wildlife."
+        },
+        {
+          "qid": "p2_005_q13",
+          "number": 13,
+          "prompt": "Encouraging a smaller number of visitors to stay overnight supports local village incomes more effectively than relying on day-trippers."
+        },
+        {
+          "qid": "p2_005_q14",
+          "number": 14,
+          "prompt": "Surface replicas allow visitors who cannot manage damp underground stairs to experience fragile cave spaces."
+        }
+      ]
+    }
+  ]
+}

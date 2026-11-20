@@ -1,0 +1,166 @@
+{
+  "id": "rp:p2_002",
+  "level": "P2",
+  "reserved": false,
+  "title": "Thermal Sand Batteries for Seasonal District Heating",
+  "subtitle": "Why insulated silos of hot sand are emerging as a low-cost way to store surplus wind and solar energy as heat",
+  "topic": "energy",
+  "wordCount": 799,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across northern Europe, keeping homes warm in winter remains one of the hardest sectors to decarbonise. Wind turbines and solar arrays often generate surplus power on bright or blustery summer days when demand is light. Grid operators are sometimes forced to switch turbines off or sell excess power at near-zero prices. Six months later, during freezing January spells, urban heating networks still burn large volumes of natural gas or wood pellets to keep radiators warm. Lithium-ion battery farms can balance an electricity grid for several hours, yet storing gigawatt-hours of power across whole seasons in chemical cells would be far too expensive. That wide seasonal gap has puzzled energy planners for years. Seeking a simpler link between summer wind and winter warmth, engineers have turned to an abundant, familiar material: ordinary builder's sand."
+    },
+    {
+      "label": "B",
+      "text": "At first glance, a thermal sand battery looks like an ordinary farm grain tower. Inside an insulated steel silo roughly seven metres tall and four metres wide sit about 100 tonnes of clean, dry, fine-grained sand. When wholesale electricity prices drop, resistive elements heat a stream of air to over 500 degrees Celsius and blow it through buried steel pipes snaking inside the silo. Heat flows from the hot pipe walls into the dry silica grains until the core is fully charged. Because dry sand conducts heat poorly once air circulation stops, the insulated core can stay above 400 degrees Celsius for months, losing less than 1% of its stored heat each day. When winter cold sets in, cool air is blown back through the same pipe loop. That warm return stream heats water for local radiators across the town."
+    },
+    {
+      "label": "C",
+      "text": "Storing thermal energy in solid sand offers clear material advantages over both hot-water tanks and chemical batteries. Water has served in district storage for decades, yet liquid water boils at 100 degrees Celsius unless held inside costly pressurised vessels. Sand, by contrast, remains stable above 600 degrees Celsius at normal air pressure, allowing a far smaller tank to hold the same quantity of energy. It also needs no scarce mined metals such as cobalt or lithium. Moreover, dry grains suffer almost none of the chemical wear that limits electrochemical cells to ten or fifteen years of service. Energy analyst Dr Hannah Lindqvist estimates that capital costs per kilowatt-hour of stored heat can be one-tenth those of utility-scale lithium packs, provided low-grade quarry sand is sourced nearby. In many regions, building sites discard suitable fine sand every week."
+    },
+    {
+      "label": "D",
+      "text": "Even strong backers accept a firm physical boundary on what sand storage can do. Converting cheap electricity into hot sand is highly efficient, capturing roughly 85% to 90% of the incoming energy as usable heat. Reversing that path to generate electricity again, however, is far less rewarding. Running a steam turbine from stored heat wastes around 60% of the energy as low-grade warmth, dropping round-trip electric efficiency below 35%. Thermal physicist Prof Martin Kowalski notes that sand silos therefore make poor substitutes for grid batteries whenever power must return to the wires. Their true strength lies in direct heat delivery—serving municipal water mains, commercial bakeries, timber kilns, and textile plants that need steady process warmth rather than electrical current. For those sites, cutting fuel bills matters far more than making power."
+    },
+    {
+      "label": "E",
+      "text": "Early commercial projects have begun testing these claims under harsh winter conditions. In 2022, a rural municipal utility in northern Europe connected a 100-tonne sand silo to a town's district heating loop supplying 450 homes and a public swimming pool. Over its first two winters, the unit drew surplus wind power during night-time price dips and covered nearly 30% of the town's peak January heating load. Staff reported few faults, as the system relies on standard fans, valves, and pumps. Encouraged by low upkeep costs, operators built a larger facility in 2024 that replaced regular sand with crushed soapstone, a dense industrial by-product from local quarries. Data from its first full season showed that the denser stone held about 25% more energy per cubic metre than ordinary sand while keeping structural costs modest."
+    },
+    {
+      "label": "F",
+      "text": "Despite encouraging trials, thermal sand silos cannot reshape every country's heating market overnight. Their financial case depends heavily on two local factors: frequent spells of cheap surplus renewable power and an existing network of insulated district pipes. In regions where most households still rely on individual gas boilers, councils would face huge civil-engineering bills to lay street pipework before a central silo could serve residents. Digging up dense city roads also takes years of planning and disrupts local trade. Even where district loops already run, some utilities lack flexible power tariffs that reward night-time charging during windy periods. As wind and solar capacity expands through the 2030s, however, policy researchers expect thermal storage silos to become a routine fixture beside urban substations and industrial estates."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_002_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_002_q01",
+          "number": 1,
+          "prompt": "Chemical battery banks are too costly to store renewable electricity from one season to another."
+        },
+        {
+          "qid": "p2_002_q02",
+          "number": 2,
+          "prompt": "Once air stops circulating, the insulated sand core loses roughly half its accumulated warmth within several days."
+        },
+        {
+          "qid": "p2_002_q03",
+          "number": 3,
+          "prompt": "Sand can hold the same amount of heat in a smaller container than unpressurised water because it withstands much higher temperatures."
+        },
+        {
+          "qid": "p2_002_q04",
+          "number": 4,
+          "prompt": "Turning stored heat from a sand silo back into electricity achieves nearly the same efficiency as using it directly for heating."
+        },
+        {
+          "qid": "p2_002_q05",
+          "number": 5,
+          "prompt": "Households connected to the 2022 sand silo paid lower winter heating bills than residents in nearby towns."
+        },
+        {
+          "qid": "p2_002_q06",
+          "number": 6,
+          "prompt": "Several national governments have already launched grants to help homeowners replace gas boilers with district pipe networks."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_002_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "A seasonal mismatch between renewable supply and heating demand"
+        },
+        {
+          "key": "ii",
+          "text": "How a sand silo charges, retains, and releases thermal energy"
+        },
+        {
+          "key": "iii",
+          "text": "Cost and material advantages over competing storage technologies"
+        },
+        {
+          "key": "iv",
+          "text": "Thermodynamic limits that restrict electricity generation"
+        },
+        {
+          "key": "v",
+          "text": "Field results from early municipal heating installations"
+        },
+        {
+          "key": "vi",
+          "text": "Why pressurised water vessels outperform sand at high temperatures"
+        },
+        {
+          "key": "vii",
+          "text": "How quarry soapstone could replace lithium in electric vehicles"
+        },
+        {
+          "key": "viii",
+          "text": "Government mandates phasing out household gas boilers by 2030"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_002_q07",
+          "number": 7,
+          "prompt": "Paragraph A"
+        },
+        {
+          "qid": "p2_002_q08",
+          "number": 8,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p2_002_q09",
+          "number": 9,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p2_002_q10",
+          "number": 10,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p2_002_q11",
+          "number": 11,
+          "prompt": "Paragraph E"
+        }
+      ]
+    },
+    {
+      "groupId": "p2_002_g3",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "questions": [
+        {
+          "qid": "p2_002_q12",
+          "number": 12,
+          "prompt": "During charging, superheated air transfers warmth to the silica bed as it travels through buried ____________ inside the silo."
+        },
+        {
+          "qid": "p2_002_q13",
+          "number": 13,
+          "prompt": "According to Prof Martin Kowalski, sand batteries are best suited to direct heat users including district water mains, bakeries, textile plants, and ____________."
+        },
+        {
+          "qid": "p2_002_q14",
+          "number": 14,
+          "prompt": "A larger 2024 installation raised storage density by roughly a quarter by filling the silo with ____________ instead of standard sand."
+        }
+      ]
+    }
+  ]
+}

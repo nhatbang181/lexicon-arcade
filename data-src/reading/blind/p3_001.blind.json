@@ -1,0 +1,167 @@
+{
+  "id": "rp:p3_001",
+  "level": "P3",
+  "reserved": false,
+  "title": "The Paradox of Algorithmic Confidence in Diagnostic Judgement",
+  "subtitle": "Why clinicians struggle to calibrate trust when statistical decision aids accompany routine medical assessments",
+  "topic": "psychology",
+  "wordCount": 894,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across regional clinics and hospital imaging units, statistical software tools now assist with roughly 64 per cent of first-stage medical reviews. Yet impressive test scores on archived patient files have rarely produced matching gains in everyday ward care. Software engineers usually evaluate these platforms by measuring how accurately they flag disease in controlled retrospective trials. They assume that busy clinicians will simply accept sound advice from the screen and reject the occasional mistake. In real clinical practice, however, human judgement seldom works like a neat addition of machine precision to clinical skill. Whenever a digital screen places a crisp probability score beside a scan or laboratory chart, it subtly shifts how a doctor weighs uncertainty and allocates limited mental effort. Treating such tools as neutral mirrors of statistical fact therefore misses a deep mental bias built into the act of using them."
+    },
+    {
+      "label": "B",
+      "text": "The most widely studied risk in computer-aided diagnosis is automation complacency, whereby clinicians defer to software outputs even when visible physical signs point in another direction. In a 2022 laboratory study of 180 resident doctors across three teaching hospitals, psychologist Dr Helen Marsh examined how displayed certainty scores reshape visual inspection. Whenever the interface presented a confidence rating above 85 per cent, doctors reduced the time spent reviewing secondary scan areas by 41 per cent. They also missed nearly twice as many subtle lung lesions outside the marked zone. Marsh also found that senior staff were hardly immune to this habit once fatigue built up late in a long shift. Although confident prompts might be expected to free mental capacity for deeper clinical reasoning, the opposite often unfolds in practice. Instead, high-certainty screen alerts routinely lull human reviewers into premature closure, cutting their search short before sound rival causes have been ruled out."
+    },
+    {
+      "label": "C",
+      "text": "Surprisingly, the opposite failure mode—known as algorithmic aversion—frequently surfaces inside the very same clinics soon after a tool commits a single memorable slip. Between 2019 and 2023, Prof David Okafor tracked 14 regional outpatient teams to observe how medical staff responded to ongoing triage warnings. Once a predictive model produced just two obvious false alarms within a fortnight, doctors brushed aside its subsequent alerts 72 per cent more frequently than actual error rates would justify. Even when later software updates fixed the flaw, clinic trust took several months to recover. By contrast, when a human colleague misread a difficult borderline case, peers rarely abandoned that colleague's later clinical opinions with anything like the same speed. Okafor argues that medical teams hold software to an unreal standard of faultless precision while pardoning equal slips by peers. In his view, clinical culture still prizes narrative intuition over hidden statistical weights."
+    },
+    {
+      "label": "D",
+      "text": "Judging when to trust a predictive system becomes even harder because the certainty figures printed by modern neural networks routinely misstate actual clinical reliability. Most deep-learning models output bold scores even when confronted with patient ages, combined illnesses, or imaging scanners scarce in their original training files—a structural flaw known as distributional shift. A score of 92 per cent may look rock solid on a ward monitor yet carry far higher real error in an older rural cohort. In a 2024 comparative trial, Dr Priya Nair replaced exact percentage readouts with three broader qualitative risk bands: low, moderate, and elevated. That modest interface revision lowered unwise deference to erroneous warnings by 28 per cent without reducing overall disease detection. As Nair's work shows, false decimal detail gives software an unearned aura of hard science. It tempts stretched doctors to drop independent checks at the very moment a statistical model is guessing well past its safe data bounds."
+    },
+    {
+      "label": "E",
+      "text": "Individual psychology alone cannot explain why questionable machine advice continues to shape routine ward choices; institutional rules and legal anxiety push equally hard. Inside many contemporary electronic health platforms, disagreeing with a logged software flag obliges a doctor to draft a formal written justification explaining the departure. During a crowded evening shift, writing that extra note can delay the next patient by several minutes. Concurring with the platform, by contrast, leaves an immediate, frictionless audit trail that requires only seconds to approve during a hectic clinic. As a result, even sceptical clinicians often accept a machine prompt as a defensive step to shield themselves from future lawsuits if a rare setback occurs. Sociologist Prof Martin Lindqvist argues that this one-sided paperwork builds quiet compliance into daily ward life. Without formal open debate or clear legal sign-off, advisory software slowly turns into a binding rule."
+    },
+    {
+      "label": "F",
+      "text": "Resolving this paradox means rejecting both nostalgic proposals to ban statistical decision aids and glib assurances that keeping a human reviewer in the loop guarantees clinical safety. A more constructive route lies in cognitive-forcing designs that ask doctors to log a provisional hypothesis and inspect raw clinical clues before any machine score appears on screen. Only after the doctor records an initial view does the platform reveal its own risk band and key image markers. In a 2025 pilot trial involving 96 diagnostic specialists across five hospitals, delayed screen hints preserved independent analytical reasoning and detected 34 per cent more software mistakes than standard simultaneous displays. Better still, the extra cognitive step added fewer than forty seconds to each patient review. In the end, lasting gains in diagnostic care rely far less on chasing slight rises in model test scores than on building daily workflows that guard deliberate human scepticism."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_001_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_001_q01",
+          "number": 1,
+          "prompt": "Viewing diagnostic software as an impartial reflection of statistical data adequately captures its psychological effect on clinical decision-making."
+        },
+        {
+          "qid": "p3_001_q02",
+          "number": 2,
+          "prompt": "Veteran medical specialists remain susceptible to excessive dependence on automated prompts when tired."
+        },
+        {
+          "qid": "p3_001_q03",
+          "number": 3,
+          "prompt": "Patients generally express greater satisfaction with diagnoses derived from human judgement than with those informed by statistical models."
+        },
+        {
+          "qid": "p3_001_q04",
+          "number": 4,
+          "prompt": "Presenting algorithmic uncertainty as exact percentage figures encourages doctors to verify unusual cases more carefully."
+        },
+        {
+          "qid": "p3_001_q05",
+          "number": 5,
+          "prompt": "Hospitals requiring written explanations for rejecting software alerts have recorded fewer medical negligence lawsuits over the past decade."
+        },
+        {
+          "qid": "p3_001_q06",
+          "number": 6,
+          "prompt": "Redesigning clinical workflows to sustain sceptical human oversight matters more than achieving minor increases in predictive accuracy."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why precise figures can mask algorithmic unreliability"
+        },
+        {
+          "key": "ii",
+          "text": "How administrative and legal pressures foster passive agreement"
+        },
+        {
+          "key": "iii",
+          "text": "Proof that experienced doctors consistently outperform diagnostic software"
+        },
+        {
+          "key": "iv",
+          "text": "Restructuring consultation sequences to preserve independent thought"
+        },
+        {
+          "key": "v",
+          "text": "The tendency to relax clinical vigilance when software appears certain"
+        },
+        {
+          "key": "vi",
+          "text": "Comparing the financial investment needed to train hospital algorithms"
+        },
+        {
+          "key": "vii",
+          "text": "Unequal tolerance for mistakes committed by machines and people"
+        },
+        {
+          "key": "viii",
+          "text": "Public opposition to automated screening in regional hospitals"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_001_q07",
+          "number": 7,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p3_001_q08",
+          "number": 8,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p3_001_q09",
+          "number": 9,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p3_001_q10",
+          "number": 10,
+          "prompt": "Paragraph E"
+        },
+        {
+          "qid": "p3_001_q11",
+          "number": 11,
+          "prompt": "Paragraph F"
+        }
+      ]
+    },
+    {
+      "groupId": "p3_001_g3",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Empirical studies of diagnostic decision aids expose two opposing behavioural pitfalls. When automated platforms present high confidence scores, clinicians frequently experience premature [Q12], devoting less scrutiny to secondary findings. Conversely, after encountering only two clear software errors, doctors may dismiss later advice because medical culture favours narrative [Q13] over hidden statistical weights. To safeguard independent judgement without delaying consultations, researchers advocate cognitive-forcing designs that prompt doctors to log a provisional [Q14] before viewing machine assessments.",
+      "questions": [
+        {
+          "qid": "p3_001_q12",
+          "number": 12,
+          "prompt": "Complete gap [Q12] in the summary using ONE WORD ONLY from the passage."
+        },
+        {
+          "qid": "p3_001_q13",
+          "number": 13,
+          "prompt": "Complete gap [Q13] in the summary using ONE WORD ONLY from the passage."
+        },
+        {
+          "qid": "p3_001_q14",
+          "number": 14,
+          "prompt": "Complete gap [Q14] in the summary using ONE WORD ONLY from the passage."
+        }
+      ]
+    }
+  ]
+}

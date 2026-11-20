@@ -1,0 +1,416 @@
+{
+  "id": "rp:p3_006",
+  "level": "P3",
+  "title": "Digital Archiving and the Politics of Intangible Heritage",
+  "subtitle": "Why turning living songs, rituals, and craft skills into permanent online files reshapes the traditions they aim to save",
+  "topic": "culture",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Over the past fifteen years, national museums and cultural trusts have poured large public grants into high-resolution scanning, motion capture, and open audio vaults. Their stated goal is to rescue threatened oral ballads, seasonal dances, and handloom crafts before they vanish. Supporters understandably praise these online portals as open lifelines that safeguard fragile arts while ageing master practitioners are still alive. At first glance, turning a rare live craft into a permanent digital file appears wholly benign and culturally neutral. Who could object to saving a dying song for future generations? Yet recent field studies reveal a stubborn paradox: digitisation never simply seals an existing custom behind glass without changing it. By lifting embodied performances out of local kin networks and seasonal cycles, digital archives quietly alter what counts as authentic heritage and who holds social authority over its future."
+    },
+    {
+      "label": "B",
+      "text": "Living oral and craft traditions survive precisely because practitioners adapt, borrowing motifs and tuning phrasing to fit each local gathering. No two village weddings or harvest fairs sound quite the same. Once a single polished performance reaches a flagship national portal, however, younger learners and regional festival judges frequently treat that one recorded clip as the sole proper standard. In a 2022 fieldwork study across 19 rural weaving and ballad guilds, anthropologist Dr Vikram Patel tracked how local artistry shifted after a state digital vault opened. Within five years, distinctive regional stylistic variations fell by 38 per cent as apprentices imitated the highest-ranked video clip rather than sitting beside village elders. Older mentors complained that lively local humour and playful bends in rhythm vanished from evening recitals. Patel argues that digital preservation often mistakes fixed repeatability for genuine cultural energy, unintentionally turning adaptive folk arts into rigid museum replicas."
+    },
+    {
+      "label": "C",
+      "text": "Even the hidden structure of a search database embeds quiet institutional bias into archived heritage. Large digital repositories demand uniform metadata fields—exact recording dates, single named authors, fixed map pins, and neat genre tags—so global visitors can sort entries quickly. Such fields make sense for printed books or oil paintings in urban galleries. Yet many indigenous ceremonial songs are held jointly by clans, shift meaning across harvest months, and unite music, healing, and local dispute settlement. Archival theorist Dr Miriam Al-Mansoor audited 14 national heritage databases in 2023 and observed that 61 per cent of recorded entries labelled ritual oral works solely as folk entertainment, stripping away their civic and ecological roles. Once flattened into neat leisure folders, those living laws look quaint rather than binding. Al-Mansoor contends that software metadata fields act as silent editorial gates, quietly bending community knowledge to match Western library habits."
+    },
+    {
+      "label": "D",
+      "text": "Sharp political disputes also erupt over who should be allowed to view, download, and reuse archived cultural files. Open-culture advocates insist that heritage recordings financed with public tax money belong in open online commons where scholars and artists worldwide can remix them freely. Community custodians, by contrast, often draw clear lines between public harvest dances and sacred mourning chants meant only for initiated kinsfolk during set lunar weeks. Making those private songs globally searchable can cause deep local distress. Legal scholar Prof Bernard Lefevre reviewed 28 digital-repatriation disputes between 2018 and 2024 and documented repeated cases in which commercial fashion houses and video-game studios copied open-archive loom patterns and vocal tracks without credit or shared revenue. Lefevre maintains that universal open access, when applied blindly to vulnerable groups, reproduces older forms of cultural extraction under a modern digital banner."
+    },
+    {
+      "label": "E",
+      "text": "Rejecting digital tools altogether, however, is neither practical nor desired by most endangered craft communities. Many young weavers and singers value phones and cloud tools for sharing skills with kin who have moved to distant cities for work. Instead, a growing number of regional heritage networks are building community-governed vaults with flexible cultural-access controls. Rather than treating every file as permanent public property, these systems let village councils decide which clips stay private, which open only during specific feast months, and who may add notes. In a 2024 evaluation of eight locally managed sound and craft archives, media scholar Dr Tessa van Dijk found that platforms letting elders set viewing rules and upload rival regional variants achieved 52 per cent higher active engagement from local youth than centralised state portals. Van Dijk argues that digital archiving strengthens living heritage only when local communities control both the naming rules and the terms of circulation."
+    },
+    {
+      "label": "F",
+      "text": "Digital vaults undoubtedly provide vital insurance against floods, conflict, forced migration, and sudden generational loss, and dismissing them outright would strip endangered groups of potent memory tools. Still, treating cloud servers as a complete substitute for paid apprenticeships, local workshop spaces, and patient face-to-face teaching remains a costly illusion. A server can replay the crisp sound wave of a weaver's work song long after the final village loom falls silent. Yet an online file alone cannot pay a young apprentice's rent or sustain the social ties that gave those verses living weight. Funding agencies must therefore balance technical storage grants with durable stipends for regional mentors and community studios. Real cultural survival depends on pairing thoughtful, community-led digital stewardship with steady material support for the living people who keep intangible heritage in motion."
+    }
+  ],
+  "wordCount": 860,
+  "glossary": [
+    {
+      "term": "intangible heritage",
+      "meaningVi": "di sản văn hóa phi vật thể như dân ca, nghi lễ và kỹ nghệ thủ công"
+    },
+    {
+      "term": "ethnographic",
+      "meaningVi": "thuộc dân tộc học, phương pháp quan sát trực tiếp đời sống văn hóa cộng đồng"
+    },
+    {
+      "term": "metadata",
+      "meaningVi": "siêu dữ liệu dùng để phân loại, gắn nhãn và tìm kiếm tài liệu số"
+    },
+    {
+      "term": "digital repatriation",
+      "meaningVi": "quá trình hoàn trả quyền kiểm soát hoặc bản sao tài liệu văn hóa số cho cộng đồng gốc"
+    },
+    {
+      "term": "cultural extraction",
+      "meaningVi": "hành vi khai thác giá trị văn hóa của cộng đồng yếu thế mà không chia sẻ lợi ích"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_006_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_006_q01",
+          "number": 1,
+          "prompt": "Converting a live cultural performance into a digital recording leaves its social meaning and local authority essentially unaltered.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 752,
+              "end": 944,
+              "quote": "By lifting embodied performances out of local kin networks and seasonal cycles, digital archives quietly alter what counts as authentic heritage and who holds social authority over its future."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "steps": [
+            "Đọc hai câu cuối đoạn A nêu nhận định của tác giả về tác động của số hóa di sản.",
+            "Đối chiếu: lưu trữ số âm thầm làm thay đổi khái niệm tính nguyên bản và quyền quyết định xã hội ('quietly alter... who holds social authority'), trái ngược với 'essentially unaltered'.",
+            "Mâu thuẫn trực tiếp với quan điểm tác giả nên chọn NO."
+          ],
+          "explanationVi": "Đoạn A khẳng định việc số hóa không bao giờ chỉ đóng khung truyền thống mà âm thầm làm thay đổi định nghĩa tính nguyên bản cũng như quyền định đoạt của cộng đồng."
+        },
+        {
+          "qid": "p3_006_q02",
+          "number": 2,
+          "prompt": "Posting one recorded version of a folk craft on a major archive can unintentionally shrink the variety of regional styles.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 575,
+              "end": 752,
+              "quote": "Within five years, distinctive regional stylistic variations fell by 38 per cent as apprentices imitated the highest-ranked video clip rather than sitting beside village elders."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Định vị kết quả điền dã tại 19 phường dệt và hát dân ca của Dr Vikram Patel ở đoạn B.",
+            "Đối chiếu: các biến thể phong cách vùng miền giảm 38% trong vòng năm năm do học trò bắt chước video đứng đầu thay vì học từ nghệ nhân địa phương.",
+            "Khớp chính xác với nhận định trong câu hỏi nên chọn YES."
+          ],
+          "explanationVi": "Đoạn B dẫn chứng việc đưa một bản ghi lên cổng quốc gia khiến các biến thể phong cách vùng miền giảm 38%, vô tình biến nghệ thuật dân gian linh hoạt thành bản sao cứng nhắc."
+        },
+        {
+          "qid": "p3_006_q03",
+          "number": 3,
+          "prompt": "Maintaining national digital heritage platforms demands higher annual staffing budgets than running traditional physical museums.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 103,
+              "end": 286,
+              "quote": "Large digital repositories demand uniform metadata fields—exact recording dates, single named authors, fixed map pins, and neat genre tags—so global visitors can sort entries quickly."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Rà soát đoạn A và C nơi đề cập bảo tàng quốc gia và kho lưu trữ số lớn.",
+            "Kiểm tra xem bài có so sánh ngân sách nhân sự hằng năm giữa kho số và bảo tàng vật lý hay không.",
+            "Không có bất kỳ so sánh chi phí vận hành nào nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Bài viết nhắc đến khoản đầu tư công cho số hóa và cấu trúc siêu dữ liệu của kho lưu trữ lớn nhưng không hề so sánh ngân sách nhân sự thường niên với bảo tàng truyền thống."
+        },
+        {
+          "qid": "p3_006_q04",
+          "number": 4,
+          "prompt": "Keeping publicly financed heritage vaults completely open to all online users effectively shields minority crafts from commercial misuse.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 544,
+              "end": 815,
+              "quote": "Legal scholar Prof Bernard Lefevre reviewed 28 digital-repatriation disputes between 2018 and 2024 and documented repeated cases in which commercial fashion houses and video-game studios copied open-archive loom patterns and vocal tracks without credit or shared revenue."
+            }
+          ],
+          "trapType": "qualifier",
+          "steps": [
+            "Tìm bằng chứng về quyền truy cập mở hoàn toàn và khai thác thương mại ở đoạn D.",
+            "Đối chiếu: các hãng thời trang và xưởng game liên tục sao chép hoa văn, giọng hát từ kho mở mà không ghi công hay chia sẻ doanh thu.",
+            "Trái ngược hoàn toàn với nhận định bảo vệ hiệu quả nên chọn NO."
+          ],
+          "explanationVi": "Đoạn D chứng minh việc mở truy cập phổ quát mù quáng lại tạo điều kiện cho các hãng thời trang và xưởng game sao chép họa tiết, bản thu mà không trả quyền lợi. Do đó chọn NO."
+        },
+        {
+          "qid": "p3_006_q05",
+          "number": 5,
+          "prompt": "Locally governed heritage websites have brought a sharp rise in international tourist arrivals to rural craft villages.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 581,
+              "end": 868,
+              "quote": "In a 2024 evaluation of eight locally managed sound and craft archives, media scholar Dr Tessa van Dijk found that platforms letting elders set viewing rules and upload rival regional variants achieved 52 per cent higher active engagement from local youth than centralised state portals."
+            }
+          ],
+          "trapType": "extra_claim",
+          "steps": [
+            "Đọc đoạn E về đánh giá tám kho lưu trữ do cộng đồng địa phương quản lý của Dr Tessa van Dijk.",
+            "Nhận thấy bài chỉ nêu mức độ tham gia của thanh niên địa phương tăng 52%, không hề nhắc đến lượng khách du lịch quốc tế.",
+            "Thông tin bị thêm vào ngoài bài nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn E chỉ ghi nhận kho lưu trữ do địa phương quản lý tăng 52% mức độ tham gia của thanh niên bản địa. Tác giả không đề cập gì đến lượng du khách quốc tế."
+        },
+        {
+          "qid": "p3_006_q06",
+          "number": 6,
+          "prompt": "Digital preservation ought to be paired with practical financial backing for living practitioners rather than seen as a replacement for local cultural life.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 744,
+              "end": 922,
+              "quote": "Real cultural survival depends on pairing thoughtful, community-led digital stewardship with steady material support for the living people who keep intangible heritage in motion."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "steps": [
+            "Đọc câu kết luận đoạn F nêu quan điểm tổng thể của tác giả về bảo tồn thực chất.",
+            "So sánh 'pairing thoughtful, community-led digital stewardship with steady material support' và việc xem máy chủ là 'costly illusion' nếu thay thế hoàn toàn.",
+            "Đồng nhất hoàn toàn với quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Đoạn F khẳng định coi máy chủ đám mây là sự thay thế hoàn toàn là ảo tưởng tốn kém, và bảo tồn thực sự cần kết hợp quản lý số chu đáo với hỗ trợ vật chất cho cộng đồng sống."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_006_g2",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 7–10) and the list of researchers below. Match each statement with the correct researcher, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dr Vikram Patel"
+        },
+        {
+          "key": "B",
+          "text": "Dr Miriam Al-Mansoor"
+        },
+        {
+          "key": "C",
+          "text": "Prof Bernard Lefevre"
+        },
+        {
+          "key": "D",
+          "text": "Dr Tessa van Dijk"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_006_q07",
+          "number": 7,
+          "prompt": "Applying unrestricted public access indiscriminately can repeat historical patterns of cultural exploitation.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 816,
+              "end": 981,
+              "quote": "Lefevre maintains that universal open access, when applied blindly to vulnerable groups, reproduces older forms of cultural extraction under a modern digital banner."
+            }
+          ],
+          "steps": [
+            "Tìm lập luận chỉ trích việc áp dụng truy cập mở phổ quát một cách mù quáng ở đoạn D.",
+            "Xác định học giả pháp lý Prof Bernard Lefevre là người phát biểu nhận định này.",
+            "Chọn lựa chọn C."
+          ],
+          "explanationVi": "Cuối đoạn D, Prof Bernard Lefevre lập luận truy cập mở phổ quát áp dụng thiếu cân nhắc sẽ tái diễn các hình thức khai thác văn hóa cũ dưới danh nghĩa kỹ thuật số. Đáp án là C."
+        },
+        {
+          "qid": "p3_006_q08",
+          "number": 8,
+          "prompt": "Giving local elders control over viewing permissions and multiple regional versions increases participation by younger residents.",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 581,
+              "end": 868,
+              "quote": "In a 2024 evaluation of eight locally managed sound and craft archives, media scholar Dr Tessa van Dijk found that platforms letting elders set viewing rules and upload rival regional variants achieved 52 per cent higher active engagement from local youth than centralised state portals."
+            }
+          ],
+          "steps": [
+            "Tìm bằng chứng về quyền đặt quy tắc xem và tải nhiều phiên bản vùng miền giúp tăng sự tham gia của người trẻ ở đoạn E.",
+            "Xác định nhà nghiên cứu truyền thông Dr Tessa van Dijk thực hiện đánh giá năm 2024.",
+            "Chọn lựa chọn D."
+          ],
+          "explanationVi": "Đoạn E nêu đánh giá của Dr Tessa van Dijk cho thấy nền tảng cho phép bô lão đặt quy tắc xem và đăng nhiều biến thể vùng giúp thanh niên địa phương tham gia cao hơn 52%. Đáp án là D."
+        },
+        {
+          "qid": "p3_006_q09",
+          "number": 9,
+          "prompt": "Rigid database classification tags frequently strip ceremonial performances of their civic and environmental purposes.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 522,
+              "end": 763,
+              "quote": "Archival theorist Dr Miriam Al-Mansoor audited 14 national heritage databases in 2023 and observed that 61 per cent of recorded entries labelled ritual oral works solely as folk entertainment, stripping away their civic and ecological roles."
+            }
+          ],
+          "steps": [
+            "Định vị cuộc kiểm định 14 cơ sở dữ liệu di sản về gắn nhãn siêu dữ liệu ở đoạn C.",
+            "Xác định học giả lưu trữ Dr Miriam Al-Mansoor chỉ ra việc tước bỏ vai trò cộng đồng và sinh thái của nghi lễ.",
+            "Chọn lựa chọn B."
+          ],
+          "explanationVi": "Trong đoạn C, Dr Miriam Al-Mansoor chứng minh các trường siêu dữ liệu cứng nhắc khiến 61% tác phẩm nghi lễ bị xếp đơn thuần là giải trí dân gian, mất đi vai trò xã hội và sinh thái. Đáp án là B."
+        },
+        {
+          "qid": "p3_006_q10",
+          "number": 10,
+          "prompt": "Treating permanent online recordings as definitive templates confuses exact repeatability with living artistic vitality.",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 863,
+              "end": 1036,
+              "quote": "Patel argues that digital preservation often mistakes fixed repeatability for genuine cultural energy, unintentionally turning adaptive folk arts into rigid museum replicas."
+            }
+          ],
+          "steps": [
+            "Tìm câu lập luận phân biệt giữa 'fixed repeatability' và 'genuine cultural energy' ở đoạn B.",
+            "Xác định nhà nhân học Dr Vikram Patel là tác giả quan điểm này.",
+            "Chọn lựa chọn A."
+          ],
+          "explanationVi": "Cuối đoạn B, Dr Vikram Patel cho rằng bảo tồn số thường nhầm lẫn khả năng lặp lại cố định với sức sống văn hóa thực sự, biến nghệ thuật dân gian thành bản sao cứng nhắc. Đáp án là A."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_006_g3",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_006_q11",
+          "number": 11,
+          "prompt": "According to Paragraph B, why did regional stylistic diversity drop across the 19 guilds studied by Dr Vikram Patel?\nA. Village elders refused to let younger apprentices view state websites.\nB. Apprentices copied the top-ranked online video instead of learning from local elders.\nC. Festival organisers outlawed local humour during evening ballad recitals.\nD. Rural weaving workshops closed after losing state funding to museums.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 575,
+              "end": 752,
+              "quote": "Within five years, distinctive regional stylistic variations fell by 38 per cent as apprentices imitated the highest-ranked video clip rather than sitting beside village elders."
+            }
+          ],
+          "steps": [
+            "Định vị câu nêu con số giảm 38% biến thể phong cách vùng miền ở đoạn B.",
+            "Loại A, C, D vì không có cơ sở hoặc bóp méo chi tiết trong đoạn.",
+            "Chọn B vì khớp trực tiếp nguyên nhân người học việc bắt chước clip đứng đầu thay vì học từ các nghệ nhân làng."
+          ],
+          "explanationVi": "Đoạn B nêu rõ các biến thể phong cách vùng miền giảm 38% vì người học việc bắt chước đoạn video xếp hạng cao nhất thay vì học trực tiếp từ bô lão địa phương. Đáp án là B."
+        },
+        {
+          "qid": "p3_006_q12",
+          "number": 12,
+          "prompt": "What specific problem did Dr Miriam Al-Mansoor uncover in her 2023 audit of 14 heritage databases (Paragraph C)?\nA. Most entries misclassified multi-purpose ritual traditions merely as folk entertainment.\nB. Over half of the audited portals omitted recording dates and geographic coordinates.\nC. Database designers deliberately removed indigenous healing songs from public search results.\nD. Global visitors found Western library categories too slow for browsing audio archives.",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 522,
+              "end": 763,
+              "quote": "Archival theorist Dr Miriam Al-Mansoor audited 14 national heritage databases in 2023 and observed that 61 per cent of recorded entries labelled ritual oral works solely as folk entertainment, stripping away their civic and ecological roles."
+            }
+          ],
+          "steps": [
+            "Tìm kết quả kiểm định 14 cơ sở dữ liệu quốc gia năm 2023 tại đoạn C.",
+            "Đối chiếu con số 61% mục ghi chỉ gắn nhãn tác phẩm nghi lễ truyền miệng là 'folk entertainment'.",
+            "Loại B, C, D vì sai sự thật và chọn A."
+          ],
+          "explanationVi": "Đoạn C ghi nhận 61% mục dữ liệu trong 14 kho di sản quốc gia gán nhãn các tác phẩm nghi lễ đa chức năng đơn thuần là giải trí dân gian. Đáp án chính xác là A."
+        },
+        {
+          "qid": "p3_006_q13",
+          "number": 13,
+          "prompt": "What is the writer's overall conclusion regarding digital heritage archives in Paragraph F?\nA. Endangered communities should abandon online vaults because cloud storage undermines village crafts.\nB. Preserving high-quality audio files is sufficient to keep rural weaving traditions culturally meaningful.\nC. Digital archives remain valuable safeguards against disaster, but cannot replace tangible support for living communities.\nD. State museums should replace paid apprenticeships with open-access digital craft tutorials.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 0,
+              "end": 372,
+              "quote": "Digital vaults undoubtedly provide vital insurance against floods, conflict, forced migration, and sudden generational loss, and dismissing them outright would strip endangered groups of potent memory tools. Still, treating cloud servers as a complete substitute for paid apprenticeships, local workshop spaces, and patient face-to-face teaching remains a costly illusion."
+            }
+          ],
+          "steps": [
+            "Đọc toàn bộ đoạn F nắm thái độ cân bằng của tác giả: công nhận giá trị bảo hiểm trước thiên tai, xung đột nhưng bác bỏ việc coi lưu trữ số là sự thay thế hoàn toàn.",
+            "Loại A (quá cực đoan), B và D (ngược hoàn toàn với lập trường tác giả).",
+            "Chọn C vì tóm tắt trọn vẹn hai vế kết luận của đoạn F."
+          ],
+          "explanationVi": "Đoạn F đánh giá kho lưu trữ số là lớp bảo hiểm quan trọng trước thiên tai và mất mát thế hệ, nhưng không thể thay thế hỗ trợ vật chất cho cộng đồng gìn giữ truyền thống sống. Đáp án là C."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

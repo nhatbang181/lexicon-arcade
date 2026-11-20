@@ -1,0 +1,166 @@
+{
+  "id": "rp:p1_002",
+  "level": "P1",
+  "reserved": false,
+  "title": "The Driftwood Boatbuilders of the North Atlantic Fringe",
+  "subtitle": "Timber scarcity, coastal ingenuity, and small-craft construction on treeless islands",
+  "topic": "history",
+  "wordCount": 671,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "On windswept islands along the northern edge of the Atlantic, harsh gales and acidic coastal soil stopped native woodland from establishing. Yet for centuries, small maritime communities built strong wooden rowing boats that crossed rough open seas in winter. Their timber came not from local forests, but from major river basins thousands of kilometres away in Siberia and northern Canada. Each spring, seasonal floods swept fallen conifers into cold Arctic currents. Those ocean currents carried the logs westward across open sea until winter storms threw them onto island shores. For families living far from mainland ports, this steady ocean supply of driftwood served as an essential resource for domestic structures, tools, and fishing craft."
+    },
+    {
+      "label": "B",
+      "text": "Because washed-up timber was so valuable, coastal parishes established strict local regulations to prevent conflicts over shoreline salvage. Rather than allowing open competition after a heavy gale, village councils split rocky beaches into numbered zones tied to specific farms. Whenever a householder spotted a usable trunk on their assigned shore, they pulled it above the high-tide mark. They then cut clear family symbols into the bark with a sharp axe so neighbours recognised who claimed the log. Parish court records from the 1780s document steep financial penalties for anyone caught sawing wood that bore another household's mark. A fixed proportion of very long trunks was also allocated to maintaining communal harbour jetties and church roofs."
+    },
+    {
+      "label": "C",
+      "text": "Turning salt-soaked logs into reliable fishing hulls required notable technical skill. Maritime historian Dr Callum Reid surveyed 42 surviving nineteenth-century fishing skiffs across seven island archives and identified a distinct structural pattern. Mainland shipyards could mill uniform oak planks from straight forest trunks with minimal waste. Island craftsmen, by contrast, had to adapt to twisted grain, surface cracks, and variable log dimensions. They solved this problem by overlapping short, thin boards of larch and spruce along bendy ribs shaped from steamed willow or imported birch. Because each short board was shaped carefully by hand plane, the finished hull flexed gently against steep waves instead of fracturing under sudden force."
+    },
+    {
+      "label": "D",
+      "text": "Persistent metal shortages pushed boatbuilders to be equally inventive with joints and waterproofing methods. Forged iron nails had to be brought in by trading sloops, making them far too costly for routine hull work on poorer islands. Workshop inventories compiled around 1840 indicate that local makers mostly joined outer boards with tapered wooden pegs driven tight into drilled holes. They reserved metal rivets solely for bow joints exposed to heavy impact. To prevent icy sea spray from leaking between planks, workers packed twisted wool yarn into narrow seams. They then brushed warm pine resin mixed with sheep tallow over the wool. Though this natural seal required annual maintenance each spring, it stayed flexible in freezing air."
+    },
+    {
+      "label": "E",
+      "text": "Traditional driftwood boatbuilding declined steadily during the twentieth century as external commerce transformed island economies. After 1910, regular coastal steamships began bringing cheap, pre-cut timber from southern mills straight to island quays. That transport link ended the heavy labour of hauling wet logs across shingle beaches during winter rain. By the 1960s, factory-moulded fibreglass hulls had captured the local fishing sector because they needed almost no yearly sealing or repainting. Older wooden skiffs were left behind stone barns to decay, and younger residents rarely saw any economic reason to spend months studying salt-cured driftwood grain. By 1985, fewer than six active craftsmen still practised these older methods."
+    },
+    {
+      "label": "F",
+      "text": "Over the past fifteen years, however, a small heritage revival has brought driftwood joinery back to coastal slipways. Master boatwright Ingrid Solberg opened a local workshop in 2012 that pairs retired builders with young trainees. Together they build six-metre replica skiffs from logs gathered on winter beaches. Trainees learn to check wood strength by tapping dry trunks with a mallet and listening for a clear ring before making any saw cut. Sea trials during autumn regattas have proved that well-made driftwood boats handle brisk coastal swells with steady balance. Solberg argues that keeping these skills alive is less about looking backward than about learning low-waste design built for scarce supplies."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_002_q01",
+          "number": 1,
+          "prompt": "Lack of local woodland forced northern islanders to rely on fallen trees carried across the sea by ocean currents."
+        },
+        {
+          "qid": "p1_002_q02",
+          "number": 2,
+          "prompt": "Following winter storms, any islander was permitted to claim timber from whichever beach section they reached first."
+        },
+        {
+          "qid": "p1_002_q03",
+          "number": 3,
+          "prompt": "Dr Callum Reid spent over ten years travelling between northern archives to record nineteenth-century skiffs."
+        },
+        {
+          "qid": "p1_002_q04",
+          "number": 4,
+          "prompt": "High transport costs made iron nails too expensive for everyday planking work on poorer islands."
+        },
+        {
+          "qid": "p1_002_q05",
+          "number": 5,
+          "prompt": "Factory-made fibreglass boats had already replaced wooden fishing vessels before steamship timber deliveries began."
+        },
+        {
+          "qid": "p1_002_q06",
+          "number": 6,
+          "prompt": "Ingrid Solberg believes that modern fibreglass vessels should be prohibited from using historic island slipways."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Village systems for dividing washed-up timber"
+        },
+        {
+          "key": "ii",
+          "text": "Adapting hull assembly to irregular planks"
+        },
+        {
+          "key": "iii",
+          "text": "Ocean currents as a timber lifeline for treeless coasts"
+        },
+        {
+          "key": "iv",
+          "text": "Substitutes for scarce metal fasteners and sealants"
+        },
+        {
+          "key": "v",
+          "text": "Commercial shipping and synthetic hulls end a craft"
+        },
+        {
+          "key": "vi",
+          "text": "Training a new generation on traditional slipways"
+        },
+        {
+          "key": "vii",
+          "text": "Royal taxes levied on imported Siberian oak"
+        },
+        {
+          "key": "viii",
+          "text": "Why wooden pegs lasted longer than forged metal rivets"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_002_q07",
+          "number": 7,
+          "prompt": "Paragraph A"
+        },
+        {
+          "qid": "p1_002_q08",
+          "number": 8,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p1_002_q09",
+          "number": 9,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p1_002_q10",
+          "number": 10,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p1_002_q11",
+          "number": 11,
+          "prompt": "Paragraph E"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_sentence",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose ONE WORD AND/OR A NUMBER from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": true
+      },
+      "questions": [
+        {
+          "qid": "p1_002_q12",
+          "number": 12,
+          "prompt": "Householders marked salvaged logs on their allocated beach by carving family ______ into the bark."
+        },
+        {
+          "qid": "p1_002_q13",
+          "number": 13,
+          "prompt": "Dr Callum Reid examined a total of ______ preserved nineteenth-century fishing skiffs during his archival research."
+        },
+        {
+          "qid": "p1_002_q14",
+          "number": 14,
+          "prompt": "To waterproof hull seams, island workshops coated wool yarn with heated pine resin blended with sheep ______."
+        }
+      ]
+    }
+  ]
+}

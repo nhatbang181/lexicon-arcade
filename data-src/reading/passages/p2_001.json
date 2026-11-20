@@ -1,0 +1,537 @@
+{
+  "id": "rp:p2_001",
+  "level": "P2",
+  "title": "Permeable Pavements and Urban Stormwater Recovery",
+  "subtitle": "How porous street surfaces help cities absorb intense rainfall and recharge shallow groundwater",
+  "topic": "urban",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across densely built European and Asian cities, impervious asphalt and concrete now seal up to 70% of central districts. When sudden cloudbursts strike, rainwater races off rooftops and roadways into ageing storm drains that were never built for modern extremes. Combined sewers quickly overflow, discharging raw waste into urban rivers and flooding low streets. For decades, municipal authorities responded by excavating wider subterranean tunnels, yet that conventional strategy can cost £180 million per kilometre, making it far more expensive than adapting street surfaces themselves. Increasingly, city engineers are turning to permeable pavements in car parks, cycle lanes, and quiet side streets. By letting rain pass straight through the road surface, these schemes soak up water where it falls rather than pushing the flood risk downstream."
+    },
+    {
+      "label": "B",
+      "text": "At street level, permeable surfaces take three main forms: porous asphalt, pervious concrete, and interlocking blocks set apart by gravel-filled joints. Although these top layers look quite distinct, engineers point out that the real work happens out of sight. Beneath the wearing course lies a compacted bed of angular crushed stone, typically 300 to 450 millimetres deep, which functions as an underground reservoir storing the bulk of a storm surge and releasing it gradually. A thin geotextile membrane usually separates this aggregate base from the native earth underneath, stopping fine soil from migrating upwards while trapping coarse sediment carried down by runoff. Because open voids make up roughly a third of the stone bed, even a modest residential street can hold thousands of litres during a heavy storm. Over the next day or two, that stored water slowly drains into the ground below."
+    },
+    {
+      "label": "C",
+      "text": "Field evidence confirms that these layered structures alter both the volume and the chemistry of urban runoff. Between 2019 and 2023, hydrologist Dr Helen Marsh led a four-year monitoring programme across twelve test streets in a mid-sized coastal city. Her team fitted flow gauges inside roadside drains and took water samples after every major downpour. Compared with adjacent sealed roads of identical slope, permeable blocks reduced peak surface runoff by 64% during autumn storms and delayed discharge into local drains by nearly four hours. Water quality improved in tandem. Motor oil droplets, fine tyre dust, and trace metals such as zinc and copper became physically bound within the stone bed rather than washing into nearby estuaries. Inside those damp gaps, natural microbes broke down roughly 75% of trapped hydrocarbons before filtered water reached shallow aquifers."
+    },
+    {
+      "label": "D",
+      "text": "Laboratory trials often report impressive drainage rates, yet real-world sites rarely sustain their initial performance without scheduled maintenance. Fallen leaves, winter grit, and silt washed from nearby building sites gradually lodge inside the upper pores. Monitoring data show that neglected surfaces can lose up to half of their infiltration capacity within five years. Vacuum sweepers deployed twice a year restore most of the original flow, and a single crew can clear a small car park in under an hour. Even so, cash-strapped councils frequently treat porous car parks like ordinary tarmac and skip specialised cleaning. Civil engineer Prof David Okafor warns that poorly kept permeable streets can wear out faster than sealed roads. Once surface voids clog completely, trapped water lingers near the top and expands during hard frosts, cracking joints and spalling concrete edges."
+    },
+    {
+      "label": "E",
+      "text": "Even with diligent upkeep, porous paving is not a universal fix for every urban road. Site topography and subsoil geology strongly restrict where installations succeed. On gradients steeper than 5%, stored water tends to race downhill through the gravel base and burst out along the lower kerb, washing out footpaths below. Heavy clay soils pose a different limit: they absorb water so slowly that designers must add perforated pipe drains to stop persistent waterlogging. Traffic loading matters just as much. High-speed arterial roads and heavy freight routes remain predominantly unsuited to porous asphalt, because repeated braking by articulated lorries shears the open-textured binder. Turning wheels at tight bus stops can cause similar surface ruts within months. Planners therefore confine most permeable schemes to low-speed streets, pedestrian plazas, and commuter car parks."
+    },
+    {
+      "label": "F",
+      "text": "Financial barriers have long slowed wider adoption, since permeable paving still costs 20% to 35% more to lay than standard surfacing. Private developers, who rarely pay the downstream cost of flood damage, once had little reason to absorb that gap. However, revised municipal funding models are steadily altering the calculation. Several cities now charge stormwater utility fees tied to each site's sealed roof and driveway footprint. In 2023, two northern authorities introduced a 40% drainage-fee rebate for retail parks replacing sealed parking bays with porous blocks. Early uptake has been strongest among supermarkets and office campuses with large open car parks. Urban hydrologist Dr Claire Finch notes that permeable pavements yield their best return when linked with tree pits and sunken rain gardens, turning isolated street upgrades into a joined-up urban sponge."
+    }
+  ],
+  "wordCount": 801,
+  "glossary": [
+    {
+      "term": "impervious",
+      "meaningVi": "không thấm nước (chỉ bề mặt như bê tông, nhựa đường kín)"
+    },
+    {
+      "term": "geotextile membrane",
+      "meaningVi": "màng vải địa kỹ thuật dùng để lọc và ngăn trộn lẫn các lớp vật liệu"
+    },
+    {
+      "term": "hydrocarbons",
+      "meaningVi": "hợp chất hyđrôcacbon có trong dầu mỡ và nhiên liệu xe cộ"
+    },
+    {
+      "term": "aquifer",
+      "meaningVi": "tầng chứa nước ngầm dưới lòng đất"
+    },
+    {
+      "term": "spalling",
+      "meaningVi": "hiện tượng bong tróc, nứt vỡ bề mặt bê tông do đóng băng hoặc ứng suất"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_001_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_001_q01",
+          "number": 1,
+          "prompt": "Constructing larger underground drainage tunnels is generally less costly than modifying road surfaces to absorb rain.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 363,
+              "end": 588,
+              "quote": "For decades, municipal authorities responded by excavating wider subterranean tunnels, yet that conventional strategy can cost £180 million per kilometre, making it far more expensive than adapting street surfaces themselves."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn A khẳng định đào hầm ngầm có thể tốn 180 triệu bảng mỗi km, đắt hơn nhiều so với cải tạo bề mặt đường. Nhận định đảo ngược chiều so sánh nên là FALSE.",
+          "steps": [
+            "Tìm từ khoá về hầm thoát nước ngầm và chi phí trong đoạn A.",
+            "So sánh cụm 'less costly' trong câu hỏi với 'far more expensive' trong bài.",
+            "Hai ý trái ngược trực tiếp nên chọn FALSE."
+          ]
+        },
+        {
+          "qid": "p2_001_q02",
+          "number": 2,
+          "prompt": "The majority of stormwater captured by a permeable road is stored in the stone layer below the visible surface.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 261,
+              "end": 479,
+              "quote": "Beneath the wearing course lies a compacted bed of angular crushed stone, typically 300 to 450 millimetres deep, which functions as an underground reservoir storing the bulk of a storm surge and releasing it gradually."
+            }
+          ],
+          "trapType": "partial_match",
+          "explanationVi": "Đoạn B nêu rõ lớp đá dăm nén bên dưới lớp mặt đóng vai trò hồ chứa ngầm giữ phần lớn lượng nước mưa lớn. Ý này trùng khớp hoàn toàn nên chọn TRUE.",
+          "steps": [
+            "Định vị phần mô tả cấu trúc các lớp của mặt đường thấm nước ở đoạn B.",
+            "Đối chiếu 'majority of stormwater' với 'the bulk of a storm surge' và 'below the visible surface' với 'Beneath the wearing course'.",
+            "Nghĩa tương đương hoàn toàn nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_001_q03",
+          "number": 3,
+          "prompt": "Dr Helen Marsh's four-year monitoring project received financial backing from regional tyre manufacturers.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 111,
+              "end": 253,
+              "quote": "Between 2019 and 2023, hydrologist Dr Helen Marsh led a four-year monitoring programme across twelve test streets in a mid-sized coastal city."
+            }
+          ],
+          "trapType": "keyword_echo",
+          "explanationVi": "Đoạn C có nhắc chương trình theo dõi bốn năm của Tiến sĩ Helen Marsh và bụi lốp xe trong nước chảy tràn, nhưng không hề đề cập nguồn tài trợ của dự án. Do đó chọn NOT GIVEN.",
+          "steps": [
+            "Tìm tên Dr Helen Marsh và từ liên quan đến lốp xe ở đoạn C.",
+            "Kiểm tra xem bài có nói ai tài trợ cho nghiên cứu hay không.",
+            "Không có thông tin về nguồn kinh phí nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_001_q04",
+          "number": 4,
+          "prompt": "Uncleaned porous surfaces usually keep their original drainage speed for at least five years.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 262,
+              "end": 376,
+              "quote": "Monitoring data show that neglected surfaces can lose up to half of their infiltration capacity within five years."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn D cho biết các bề mặt không được bảo dưỡng có thể mất tới một nửa khả năng thấm chỉ trong vòng năm năm và hiếm khi giữ được tốc độ ban đầu. Thông tin mâu thuẫn trực tiếp nên là FALSE.",
+          "steps": [
+            "Tìm mốc thời gian 'five years' và tình trạng không vệ sinh ở đoạn D.",
+            "Đọc câu cho thấy bề mặt bị bỏ mặc có thể giảm tới 50% khả năng thấm trong vòng 5 năm.",
+            "Câu hỏi khẳng định giữ nguyên tốc độ ban đầu nên trái với bài -> FALSE."
+          ]
+        },
+        {
+          "qid": "p2_001_q05",
+          "number": 5,
+          "prompt": "Porous asphalt is seldom suitable for heavy freight corridors because frequent lorry braking damages its open structure.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 511,
+              "end": 691,
+              "quote": "High-speed arterial roads and heavy freight routes remain predominantly unsuited to porous asphalt, because repeated braking by articulated lorries shears the open-textured binder."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn E giải thích các tuyến vận tải hạng nặng phần lớn không hợp nhựa đường rỗng vì lực phanh lặp lại của xe tải khớp nối làm cắt xé chất kết dính rỗng. Cả kết luận lẫn nguyên nhân đều khớp nên chọn TRUE.",
+          "steps": [
+            "Tìm thông tin về xe tải hạng nặng và nhựa đường rỗng ở đoạn E.",
+            "Đối chiếu quan hệ nhân-quả: phanh lặp lại của xe tải làm hỏng lớp kết dính mở.",
+            "Thông tin trùng khớp chính xác nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_001_q06",
+          "number": 6,
+          "prompt": "Since 2023, retail parks in the two northern authorities have converted more than half of their sealed spaces into porous bays.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 437,
+              "end": 574,
+              "quote": "In 2023, two northern authorities introduced a 40% drainage-fee rebate for retail parks replacing sealed parking bays with porous blocks."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn F chỉ nêu mức giảm 40% phí thoát nước cho các khu bán lẻ thay thế bãi đỗ kín từ năm 2023, nhưng không cho biết tỷ lệ diện tích thực tế đã chuyển đổi. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm mốc năm 2023 và 'retail parks' ở đoạn F.",
+            "Xác nhận con số 40% là mức giảm phí, không phải tỷ lệ diện tích bãi đỗ đã cải tạo.",
+            "Bài không nêu tỷ lệ chuyển đổi thực tế nên chọn NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_001_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs B–F from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "The layered design that captures and slows rainwater"
+        },
+        {
+          "key": "ii",
+          "text": "Field evidence of flood reduction and pollutant removal"
+        },
+        {
+          "key": "iii",
+          "text": "Maintenance neglect and the risk of premature failure"
+        },
+        {
+          "key": "iv",
+          "text": "Site limitations linked to terrain, soil, and traffic"
+        },
+        {
+          "key": "v",
+          "text": "Financial incentives and links with wider green infrastructure"
+        },
+        {
+          "key": "vi",
+          "text": "The role of microorganisms in breaking down vehicle oil"
+        },
+        {
+          "key": "vii",
+          "text": "Why porous surfaces need less upkeep than conventional tarmac"
+        },
+        {
+          "key": "viii",
+          "text": "A universal road design suitable for every urban route"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_001_q07",
+          "number": 7,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 261,
+            "end": 479,
+            "quote": "Beneath the wearing course lies a compacted bed of angular crushed stone, typically 300 to 450 millimetres deep, which functions as an underground reservoir storing the bulk of a storm surge and releasing it gradually."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 261,
+              "end": 479,
+              "quote": "Beneath the wearing course lies a compacted bed of angular crushed stone, typically 300 to 450 millimetres deep, which functions as an underground reservoir storing the bulk of a storm surge and releasing it gradually."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề ii tóm tắt số liệu thử nghiệm thực địa và lọc chất ô nhiễm của đoạn C kế tiếp."
+            },
+            {
+              "key": "viii",
+              "type": "too_broad",
+              "whyVi": "Đoạn B chỉ mô tả cấu tạo nhiều lớp chứ không khẳng định đây là giải pháp áp dụng cho mọi tuyến đường."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả cấu tạo các lớp mặt, lớp đá dăm trữ nước và màng lọc địa kỹ thuật giúp giữ và làm chậm dòng mưa. Tiêu đề i bao quát đúng trọng tâm này.",
+          "steps": [
+            "Đọc toàn bộ đoạn B để xác định chủ đề chung: cấu trúc nhiều lớp từ mặt đường tới đá dăm và màng lọc.",
+            "Nhận ra câu giữa đoạn giải thích lớp đá dăm đóng vai trò hồ chứa làm chậm dòng chảy.",
+            "Chọn tiêu đề i và loại các tiêu đề chỉ thuộc đoạn khác hoặc quá khái quát."
+          ]
+        },
+        {
+          "qid": "p2_001_q08",
+          "number": 8,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 0,
+            "end": 110,
+            "quote": "Field evidence confirms that these layered structures alter both the volume and the chemistry of urban runoff."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 0,
+              "end": 110,
+              "quote": "Field evidence confirms that these layered structures alter both the volume and the chemistry of urban runoff."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "detail_only",
+              "whyVi": "Vi sinh vật phân hủy dầu chỉ là một chi tiết ở câu cuối, không bao trùm dữ liệu giảm 64% đỉnh lũ và làm chậm dòng chảy."
+            },
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Cấu tạo các lớp đã được trình bày ở đoạn B, còn đoạn C tập trung vào kết quả đo thực tế."
+            }
+          ],
+          "explanationVi": "Đoạn C trình bày kết quả theo dõi bốn năm cho thấy mặt đường thấm giúp giảm mạnh lưu lượng đỉnh mưa và lọc dầu mỡ, kim loại nặng. Tiêu đề ii phản ánh đủ cả hai khía cạnh.",
+          "steps": [
+            "Xác định câu chủ đề đầu đoạn C nhấn mạnh bằng chứng thực địa về cả lưu lượng lẫn chất lượng nước.",
+            "Loại tiêu đề vi vì chỉ nhắc chi tiết vi sinh vật phân hủy dầu.",
+            "Chọn tiêu đề ii vì bao quát cả giảm ngập và xử lý chất ô nhiễm."
+          ]
+        },
+        {
+          "qid": "p2_001_q09",
+          "number": 9,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "iii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 150,
+            "quote": "Laboratory trials often report impressive drainage rates, yet real-world sites rarely sustain their initial performance without scheduled maintenance."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 150,
+              "quote": "Laboratory trials often report impressive drainage rates, yet real-world sites rarely sustain their initial performance without scheduled maintenance."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn D nói rõ mặt đường rỗng cần vệ sinh chuyên biệt định kỳ chứ không hề cần ít bảo dưỡng hơn nhựa đường thường."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Hạn chế về độ dốc, đất sét và tải trọng xe nằm ở đoạn E kế tiếp."
+            }
+          ],
+          "explanationVi": "Đoạn D cảnh báo việc bỏ qua vệ sinh định kỳ làm tắc lỗ rỗng, giảm một nửa tốc độ thấm và khiến mặt đường nứt vỡ sớm khi gặp băng giá. Tiêu đề iii khớp chính xác.",
+          "steps": [
+            "Đọc đoạn D và gom các ý: tắc lỗ rỗng, bỏ qua xe hút bụi và nguy cơ hỏng nhanh do băng giá.",
+            "Loại tiêu đề vii vì ngược hoàn toàn với lập luận của tác giả.",
+            "Chọn tiêu đề iii mô tả hệ quả của việc lơ là bảo dưỡng."
+          ]
+        },
+        {
+          "qid": "p2_001_q10",
+          "number": 10,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "iv"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 86,
+            "end": 168,
+            "quote": "Site topography and subsoil geology strongly restrict where installations succeed."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 86,
+              "end": 168,
+              "quote": "Site topography and subsoil geology strongly restrict where installations succeed."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn E mở đầu bằng việc bác bỏ ý tưởng mặt đường rỗng là giải pháp phổ quát cho mọi tuyến đường."
+            },
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Vấn đề bảo dưỡng nằm ở đoạn D; đoạn E nói về giới hạn địa hình, đất nền và giao thông."
+            }
+          ],
+          "explanationVi": "Đoạn E liệt kê ba giới hạn thực địa gồm độ dốc trên 5%, đất sét thoát nước chậm và tuyến xe tải nặng. Tiêu đề iv tóm lược đầy đủ cả ba yếu tố này.",
+          "steps": [
+            "Nhận diện ba rào cản được phân tích trong đoạn E: độ dốc (terrain), đất sét (soil) và xe tải nặng (traffic).",
+            "Loại tiêu đề viii vì mang nghĩa trái ngược với câu mở đầu đoạn.",
+            "Chọn tiêu đề iv."
+          ]
+        },
+        {
+          "qid": "p2_001_q11",
+          "number": 11,
+          "prompt": "Paragraph F",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "F",
+            "start": 250,
+            "end": 330,
+            "quote": "However, revised municipal funding models are steadily altering the calculation."
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 250,
+              "end": 330,
+              "quote": "However, revised municipal funding models are steadily altering the calculation."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "too_broad",
+              "whyVi": "Đoạn F không nói mặt đường thấm phù hợp mọi tuyến đường mà bàn về cơ chế tài chính và kết nối mảng xanh."
+            },
+            {
+              "key": "iv",
+              "type": "adjacent_paragraph",
+              "whyVi": "Giới hạn kỹ thuật theo địa hình và giao thông đã kết thúc ở đoạn E."
+            }
+          ],
+          "explanationVi": "Đoạn F bàn về chi phí lắp đặt ban đầu, chính sách phí thoát nước kèm mức hoàn phí 40%, và việc kết nối mặt đường thấm với hố cây, vườn mưa. Tiêu đề v bao trọn hai ý này.",
+          "steps": [
+            "Xác định hai phần nội dung chính của đoạn F: đòn bẩy phí/hoàn phí và kết hợp với hố cây, vườn mưa.",
+            "Loại tiêu đề viii vì quá rộng và sai trọng tâm.",
+            "Chọn tiêu đề v."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_001_g3",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "Underneath a permeable street, a deep bed of crushed stone operates as an underground [Q12] that holds stormwater before releasing it gradually. A geotextile sheet sits beneath the stone base to block upward soil movement and capture coarse [Q13] from the runoff. Yet long-term drainage depends on periodic vacuum sweeping; without it, fallen leaves, construction silt, and winter [Q14] block the surface pores and leave the pavement vulnerable to frost damage.",
+      "questions": [
+        {
+          "qid": "p2_001_q12",
+          "number": 12,
+          "prompt": "A deep bed of crushed stone operates as an underground [Q12] that holds stormwater before releasing it gradually.",
+          "answer": {
+            "accepted": [
+              "reservoir"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 261,
+              "end": 479,
+              "quote": "Beneath the wearing course lies a compacted bed of angular crushed stone, typically 300 to 450 millimetres deep, which functions as an underground reservoir storing the bulk of a storm surge and releasing it gradually."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả lớp đá dăm nén đóng vai trò như một 'underground reservoir' (hồ chứa ngầm). Điền nguyên văn 'reservoir'.",
+          "steps": [
+            "Xác định từ loại cần điền sau 'an underground' là danh từ đếm được số ít.",
+            "Tìm cụm 'bed of angular crushed stone' ở đoạn B và thấy cụm 'functions as an underground reservoir'.",
+            "Kiểm tra giới hạn 1 từ: 'reservoir' khớp chính xác."
+          ]
+        },
+        {
+          "qid": "p2_001_q13",
+          "number": 13,
+          "prompt": "A geotextile sheet sits beneath the stone base to block upward soil movement and capture coarse [Q13] from the runoff.",
+          "answer": {
+            "accepted": [
+              "sediment"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 480,
+              "end": 675,
+              "quote": "A thin geotextile membrane usually separates this aggregate base from the native earth underneath, stopping fine soil from migrating upwards while trapping coarse sediment carried down by runoff."
+            }
+          ],
+          "explanationVi": "Đoạn B ghi màng địa kỹ thuật giữ lại 'coarse sediment' (trầm tích thô) do nước mưa cuốn xuống. Điền đúng 1 từ 'sediment'.",
+          "steps": [
+            "Tìm từ khoá 'geotextile' và 'coarse' ở đoạn B.",
+            "Đọc cụm 'trapping coarse sediment carried down by runoff'.",
+            "Chọn danh từ 'sediment' đúng giới hạn 1 từ."
+          ]
+        },
+        {
+          "qid": "p2_001_q14",
+          "number": 14,
+          "prompt": "Without vacuum sweeping, fallen leaves, construction silt, and winter [Q14] block the surface pores.",
+          "answer": {
+            "accepted": [
+              "grit"
+            ]
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 151,
+              "end": 261,
+              "quote": "Fallen leaves, winter grit, and silt washed from nearby building sites gradually lodge inside the upper pores."
+            }
+          ],
+          "explanationVi": "Đoạn D liệt kê ba tác nhân làm tắc lỗ rỗng là lá rụng, 'winter grit' (cát rải đường mùa đông) và bùn công trường. Từ cần điền sau 'winter' là 'grit'.",
+          "steps": [
+            "Tìm phần liệt kê các vật liệu gây tắc lỗ rỗng ở đoạn D.",
+            "Đối chiếu 'fallen leaves', 'silt' và cụm 'winter grit'.",
+            "Điền 1 từ 'grit'."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "id": "rp:p1_006",
+  "level": "P1",
+  "reserved": false,
+  "title": "Mineral Pigments in Vernacular Lime-Plaster Murals",
+  "subtitle": "Earth colours, wet-plaster chemistry, and conservation of rural courtyard wall paintings",
+  "topic": "arts",
+  "wordCount": 663,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Across stone farmhouses and courtyard inns in southern and central Europe, faded wall paintings still decorate sheltered arches and stairways. Most of these rural murals date from the seventeenth to the nineteenth centuries. They often show simple floral borders, farm harvest scenes, or protective village motifs. Wealthy city patrons could import rare dyes by sea, yet country painters relied almost fully on local earth minerals. Crushed iron-rich clay, warm yellow ochre, and pale green earth lay right beside nearby hills and riverbanks. These raw mineral powders cost only a fraction of exotic overseas pigments, yet they held their natural colour under bright summer sunlight for generations without turning brown or brittle."
+    },
+    {
+      "label": "B",
+      "text": "The long life of rural wall art stems from the simple science of wet lime plaster. Masons began by spreading two coarse undercoats made of slaked lime and clean river sand across rough masonry walls. Once those base coats set firm, a plasterer laid a thin smooth skin over just one small patch. That patch matched the exact space an artist could finish in a single day. While the lime surface remained damp, the painter brushed ground mineral powders stirred solely with pure rainwater onto the wall. As the plaster slowly dried, carbon dioxide from the air reacted with the lime to form a hard crystal shell of calcium carbonate. That shell locked the earth colour deep inside the wall rather than resting loosely on top."
+    },
+    {
+      "label": "C",
+      "text": "Because rural painters worked within modest village budgets, they often devised clever local substitutes for expensive hues. In 2020, conservation chemist Dr Hannah Lindholm sampled paint flakes from 36 historic rural buildings to map regional pigment recipes. Grand palace studios frequently bought imported lapis lazuli stone to obtain vivid blue skies, an expense far beyond any country innkeeper's means. Lindholm's microscope analyses revealed that village artists instead produced soft slate-blue tones by grinding fine local charcoal ash together with white chalk. Although this muted blue appeared quieter than royal stone pigments, it matched warm earth reds gracefully and resisted flaking even inside damp entrance halls."
+    },
+    {
+      "label": "D",
+      "text": "Where historic lime murals have suffered serious loss, moisture trapped inside masonry is usually the primary culprit. Water rising from wet foundations carries dissolved salts slowly upward through stone pores toward the painted surface. When that moisture dries on the wall face, growing salt crystals push outward and turn firm plaster into loose powdery flakes. Unfortunately, well-meaning building repairs during the twentieth century often accelerated this decay rather than slowing it. Whenever modern contractors sealed aged stone walls beneath waterproof cement or synthetic acrylic coatings, trapped ground dampness had no open path to evaporate. Pressure then built behind the sealed layer until entire painted panels detached cleanly from the wall."
+    },
+    {
+      "label": "E",
+      "text": "Modern conservation methods aim to reverse those damp traps while preserving original brushwork. Senior restorer Marco Bellini leads regional field teams that mend fragile courtyard murals through gentle, reversible steps. First, technical staff lift thin strips of modern plastic paint away from the old lime coat using fine steel blades and mild steam. Next, they press wet paper poultices against stained masonry for several days to draw hidden salt deposits safely out of the porous plaster. Where hollow gaps open behind weak sections, conservators inject fluid lime grout through tiny needles to bond the layers back in place. They leave genuine faded areas visible rather than inventing fresh scenes from guesswork."
+    },
+    {
+      "label": "F",
+      "text": "Lessons from rural lime murals now guide modern eco-architects who design low-carbon homes. Builders prize classic slaked-lime finishes because curing plaster slowly draws carbon dioxide out of room air. Better still, it holds zero man-made plastics. In addition, porous mineral walls naturally regulate indoor humidity by absorbing excess moisture during humid spells and releasing it back when rooms grow dry. Although natural lime washes require simple spot touch-ups after heavy storms, designers note that they avoid the peeling waste produced by modern plastic wall paints. Old country craft has thus returned as a clean, practical model for sturdy, breathable buildings."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_006_q01",
+          "number": 1,
+          "prompt": "Country mural painters chose local earth pigments partly because they were far less costly than imported colours."
+        },
+        {
+          "qid": "p1_006_q02",
+          "number": 2,
+          "prompt": "Village artists blended crushed mineral powders with plant oil before brushing them onto damp lime plaster."
+        },
+        {
+          "qid": "p1_006_q03",
+          "number": 3,
+          "prompt": "According to Dr Hannah Lindholm's 2020 investigation, rural painters produced blue shades using different materials from grand palace workshops."
+        },
+        {
+          "qid": "p1_006_q04",
+          "number": 4,
+          "prompt": "Dr Hannah Lindholm published an illustrated manual containing more than 200 historic plaster formulas for art colleges."
+        },
+        {
+          "qid": "p1_006_q05",
+          "number": 5,
+          "prompt": "Coating aged lime murals with synthetic acrylic paint protects them by helping underground dampness evaporate quickly."
+        },
+        {
+          "qid": "p1_006_q06",
+          "number": 6,
+          "prompt": "Most contemporary eco-architects require lime-washed homes to be fully recoated every five years to keep walls breathable."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_summary",
+      "type": "summary_completion",
+      "instructions": "Complete the summary below. Choose ONE WORD ONLY from the passage for each answer.",
+      "wordLimit": {
+        "words": 1,
+        "allowNumber": false
+      },
+      "summaryText": "To prepare masonry for durable rural wall paintings, plasterers laid rough undercoats of slaked lime mixed with river [Q7] before spreading a fine damp finishing coat. Mineral colours stirred with pure [Q8] then bonded chemically inside a crystal shell of calcium carbonate as the surface dried. However, ground dampness rising through stone walls carries dissolved [Q9] that crystallise and flake the artwork. This deterioration worsens when later builders trap moisture behind waterproof [Q10] or synthetic acrylic layers.",
+      "questions": [
+        {
+          "qid": "p1_006_q07",
+          "number": 7,
+          "prompt": "Complete gap [Q7] (ONE WORD ONLY)."
+        },
+        {
+          "qid": "p1_006_q08",
+          "number": 8,
+          "prompt": "Complete gap [Q8] (ONE WORD ONLY)."
+        },
+        {
+          "qid": "p1_006_q09",
+          "number": 9,
+          "prompt": "Complete gap [Q9] (ONE WORD ONLY)."
+        },
+        {
+          "qid": "p1_006_q10",
+          "number": 10,
+          "prompt": "Complete gap [Q10] (ONE WORD ONLY)."
+        }
+      ]
+    },
+    {
+      "groupId": "g3_sentence",
+      "type": "sentence_completion",
+      "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+      "wordLimit": {
+        "words": 2,
+        "allowNumber": false
+      },
+      "questions": [
+        {
+          "qid": "p1_006_q11",
+          "number": 11,
+          "prompt": "Village muralists achieved muted slate-blue shades by mixing white chalk with finely ground local ______."
+        },
+        {
+          "qid": "p1_006_q12",
+          "number": 12,
+          "prompt": "Conservators remove embedded salt deposits from fragile plaster by applying damp ______ for several days."
+        },
+        {
+          "qid": "p1_006_q13",
+          "number": 13,
+          "prompt": "Modern eco-architects value porous lime walls because they help balance ______ inside buildings naturally."
+        }
+      ]
+    }
+  ]
+}

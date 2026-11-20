@@ -1,0 +1,188 @@
+{
+  "id": "rp:p2_004",
+  "level": "P2",
+  "reserved": false,
+  "title": "Four-Day Rosters in Precision Manufacturing Plants",
+  "subtitle": "What multi-year shop-floor trials reveal about productivity, accuracy, and staff retention in high-skill factories",
+  "topic": "work",
+  "wordCount": 771,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Most public debate over shorter working weeks has centred on software offices and consulting firms. In those settings, staff can trim routine meetings and clear email faster. On the floor of a precision engineering factory—making turbine blades, surgical valves, or optical lenses—output does not respond so simply to faster habits. Costly five-axis milling machines must run for long hours to pay back their high purchase price. Skilled machinists also cannot carry heavy lathes or fine gauges home for remote work. Even so, a growing number of European parts makers have begun testing four-day rosters that keep weekly pay intact while holding output firm. Many firm owners first feared lost orders, yet field results look far more nuanced. Treating industrial shift redesign as a mere copy of office flexibility misses both the real technical obstacles and the unexpected gains revealed by factory trials."
+    },
+    {
+      "label": "B",
+      "text": "Plants adopting shorter weeks rarely lock their gates every Friday. Instead, operations managers generally choose between two clear structural models. The compressed model shifts workers from five eight-hour days to four ten-hour days. That plan keeps a 40-hour total while granting staff a three-day weekend. By contrast, the reduced-hours model trims the working week to 32 or 34 hours on unchanged pay. Managers often pair two overlapping four-day crews so machines keep running six or seven days a week. Industrial sociologist Dr Nadia Benali emphasises that conflating these two arrangements muddies policy debates. Ten-hour shifts cut weekly travel time without reducing total effort. Genuine 32-hour schedules, however, demand deeper changes in workflow, tool setup speed, and downtime control across every line."
+    },
+    {
+      "label": "C",
+      "text": "To test real shop-floor effects, Dr Benali tracked nine mid-sized precision metalworks across three industrial regions between 2021 and 2024. Five plants introduced staggered 34-hour four-day rosters, while four similar sites kept standard five-day schedules. Her team checked payroll logs, scrap bins, and monthly power meters at every site. Over thirty-six months, the shorter-week factories recorded a 28% drop in unscheduled sick leave and a 19% fall in scrap parts caused by operator fatigue during late-week inspection runs. Output per operating hour climbed by roughly 11%. Most of that gain came because teams standardised tool swaps and booked routine checks during quiet shift gaps. Plants that closed entirely on Fridays also shaved nearly 9% off winter heating and compressed-air bills, although continuous-operation sites saw little change in energy demand."
+    },
+    {
+      "label": "D",
+      "text": "Shortened rosters are far from trouble-free, especially when managers rush implementation without redesigning daily routines. In compressed ten-hour trials, error logs from two aerospace suppliers showed a clear rise in minor gauging mistakes during the final ninety minutes of each shift, suggesting that tired eyes undermine the very accuracy these firms sell. Handover friction also rose where overlapping crews shared complex steel lathes: incomplete notes at shift change occasionally forced the incoming machinist to re-verify tolerances from scratch. Small missed details could stall a whole batch for hours. Operations consultant Prof Gareth Owen argues that understaffed four-day plants simply push hidden strain onto middle supervisors. Those team leads often end up spending their nominal day off taking urgent supply calls rather than resting."
+    },
+    {
+      "label": "E",
+      "text": "For many plant directors, the decisive argument for four-day rosters has less to do with hourly speed than with keeping scarce talent. Skilled lathe programmers and metrology technicians are retiring faster than technical colleges replace them, leaving rural factories short of trained hands. Across the nine-plant study, annual staff turnover at four-day sites fell from 16% to under 7% within two years. That drop saved firms months of costly retraining on complex machines. Job adverts promising a guaranteed three-day weekend drew nearly three times as many qualified applicants as nearby five-day competitors paying similar hourly wages. Several veteran staff even delayed retirement by a year or two. Rather than treating shorter weeks as a costly perk, forward-looking owners increasingly view fixed rest as a smart commercial tool for keeping hard-won shop-floor skill."
+    },
+    {
+      "label": "F",
+      "text": "Even with clear staffing gains, four-day work is unlikely to suit every factory niche. Small sub-contractors tied to strict just-in-time automotive deliveries often lack the spare machine capacity or buffer stock needed to absorb a closed Friday, and thin profit margins leave little room to hire extra swing-shift crews. Buyers in that sector often fine suppliers heavily for a single late truck. Moreover, switching rosters succeeds only when workers hold genuine authority to flag bottlenecks and refine setup routines, rather than facing harsh daily quotas set from above. Viewed across the sector, four-day schedules appear most durable not as a simple slogan, but as a careful engineering project. They work best when shorter human hours are paired with smart upkeep and calmer, well-rested staff."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_004_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the claims of the writer in the passage? Choose YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p2_004_q01",
+          "number": 1,
+          "prompt": "Precision factories can shorten their working week by simply copying the time-saving habits used in office trials."
+        },
+        {
+          "qid": "p2_004_q02",
+          "number": 2,
+          "prompt": "Treating compressed ten-hour schedules and genuine 32-hour weeks as the same policy creates confusion in public discussion."
+        },
+        {
+          "qid": "p2_004_q03",
+          "number": 3,
+          "prompt": "Continuous-operation factories spent more on preventative maintenance equipment than plants that closed every Friday."
+        },
+        {
+          "qid": "p2_004_q04",
+          "number": 4,
+          "prompt": "Extending factory shifts to ten hours typically improves inspection accuracy during the closing stage of a shift."
+        },
+        {
+          "qid": "p2_004_q05",
+          "number": 5,
+          "prompt": "Technical colleges have already begun expanding intake to replace retiring metrology technicians."
+        },
+        {
+          "qid": "p2_004_q06",
+          "number": 6,
+          "prompt": "Four-day factory timetables are more likely to succeed when shop-floor workers have genuine power to identify bottlenecks and adjust routines."
+        }
+      ]
+    },
+    {
+      "groupId": "p2_004_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Why factory trials differ fundamentally from office-based schedules"
+        },
+        {
+          "key": "ii",
+          "text": "Two distinct ways factories structure a four-day week"
+        },
+        {
+          "key": "iii",
+          "text": "Measured gains in attendance, part quality, and energy bills"
+        },
+        {
+          "key": "iv",
+          "text": "Fatigue, handover friction, and hidden pressure on supervisors"
+        },
+        {
+          "key": "v",
+          "text": "Using shorter weeks to attract and keep scarce technical staff"
+        },
+        {
+          "key": "vi",
+          "text": "How ten-hour shifts eliminate late-day gauging mistakes"
+        },
+        {
+          "key": "vii",
+          "text": "Why continuous-operation sites cut heating costs most sharply"
+        },
+        {
+          "key": "viii",
+          "text": "Evidence that automotive suppliers lead the switch to closed Fridays"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_004_q07",
+          "number": 7,
+          "prompt": "Paragraph A"
+        },
+        {
+          "qid": "p2_004_q08",
+          "number": 8,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p2_004_q09",
+          "number": 9,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p2_004_q10",
+          "number": 10,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p2_004_q11",
+          "number": 11,
+          "prompt": "Paragraph E"
+        }
+      ]
+    },
+    {
+      "groupId": "p2_004_g3",
+      "type": "matching_info",
+      "instructions": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_004_q12",
+          "number": 12,
+          "prompt": "an explanation of why small automotive suppliers may struggle to adopt a four-day schedule"
+        },
+        {
+          "qid": "p2_004_q13",
+          "number": 13,
+          "prompt": "a comparison of the number of qualified job applicants attracted by four-day and five-day employers"
+        },
+        {
+          "qid": "p2_004_q14",
+          "number": 14,
+          "prompt": "a reference to extra work caused when outgoing shift crews leave incomplete written records"
+        }
+      ]
+    }
+  ]
+}

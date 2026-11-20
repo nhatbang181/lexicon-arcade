@@ -1,0 +1,548 @@
+{
+  "id": "rp:p1_004",
+  "level": "P1",
+  "title": "Fermented Seaweed in Northern Coastal Diets",
+  "subtitle": "Traditional preservation, nutritional research, and modern marine cultivation along cold rocky shores",
+  "topic": "food",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Along cold rocky coasts in northern Europe and eastern Canada, edible seaweeds such as dulse, sugar kelp, and bladderwrack grow thick in shallow tidal zones. Coastal families have picked these wild sea plants for centuries as a steady source of winter minerals. Once cut from submerged rocks, however, fresh fronds spoil fast. They turn soft and slimy within 48 hours unless dried or cured right away. In bright summer months, pickers simply spread washed blades across flat granite slabs to dry in the breeze. During damp, foggy autumns, outdoor drying often failed before moisture could escape. To prevent entire harvests from rotting in wet weather, coastal communities turned instead to salt fermentation inside sealed wooden barrels."
+    },
+    {
+      "label": "B",
+      "text": "Local museum archives give clear records of how this coastal curing method worked in practice. Food historian Dr Fiona Grant examined nineteenth-century household ledgers from twelve fishing parishes and reconstructed the standard sequence. First, workers rinsed fresh kelp well in clean spring water to wash off sand grains and tiny shell bits. Next, they stacked chopped fronds with coarse sea salt inside stout oak casks. They pressed each layer down tightly with flat wooden paddles to draw out liquid. Finally, they placed heavy river stones on top of the timber lids to keep the fronds submerged beneath their own brine for six weeks. The end result was a dark, savoury paste full of natural umami flavour that kept safely through cold winter months."
+    },
+    {
+      "label": "C",
+      "text": "Modern food science has recently shown why cured seaweed gave more health value than simple storage alone. In 2021, food biochemist Dr Kenji Sato conducted controlled laboratory trials comparing air-dried and lactic-fermented samples taken from the identical coastal kelp harvest. Raw and dried seaweeds have dense cell walls made of tough sea fibres. Human gut enzymes often struggle to break down those hard fibres well. During barrel curing, however, helpful lactic bacteria partly break open those rigid walls. As a result, Sato's analyses showed that fermented samples delivered roughly 22 per cent higher accessible levels of iron and vitamin B12 than air-dried fronds from the same crop. Cooks also noted that cured kelp softened faster in hot broth."
+    },
+    {
+      "label": "D",
+      "text": "Curing in brine also solves a known health concern linked to brown seaweeds: too much iodine. Small amounts of iodine support healthy thyroid glands, yet eating big portions of raw kelp can push daily intake past safe health limits. Sato's lab tests proved that curing kelp in brine drew almost 40 per cent of soluble iodine out of the blades into the salt liquid. Since cooks pour away that liquid before serving, moderate portions fit neatly inside global safety limits. Even so, marine food inspectors still issue a firm place warning. Because kelp absorbs dissolved metals from surrounding water, harvesters are strongly advised never to gather wild fronds close to busy industrial ports or commercial shipping terminals."
+    },
+    {
+      "label": "E",
+      "text": "Despite rising culinary curiosity, turning fermented coastal seaweed into a reliable commercial product involves tough supply obstacles. Artisan bakeries and specialist soup makers along the coast eagerly purchase small batches of kelp paste for its deep savoury notes. Larger food factories, by contrast, require strict ingredient uniformity from month to month. Wild seaweed beds rarely supply that level of consistency, because autumn storm surges and shifting ocean temperatures alter frond thickness and natural sugar levels from one season to the next. When sugar concentrations drop unexpectedly, fermentation slows down and batch acidity fluctuates, forcing processors to adjust recipes repeatedly or reject entire barrels."
+    },
+    {
+      "label": "F",
+      "text": "To beat uneven wild harvests, several coastal groups have begun growing sugar kelp on ropes offshore next to mussel beds. Early pilot trials show that farmed kelp grows to a much more even thickness than shoreline fronds. That steadiness lets food makers run smooth curing cycles all year round. This paired marine farming also yields a measurable environmental advantage: growing kelp absorbs surplus nitrogen and carbon released by nearby shellfish lines, improving local water clarity without requiring fresh water or land fertilisers. Coastal food experts now see farmed fermented kelp less as a brief diet trend than as a steady, low-impact regional crop."
+    }
+  ],
+  "wordCount": 680,
+  "glossary": [
+    {
+      "term": "frond",
+      "meaningVi": "bản lá hoặc thân dẹt của rong biển và dương xỉ"
+    },
+    {
+      "term": "brine",
+      "meaningVi": "dung dịch nước muối đậm đặc dùng để muối chua và bảo quản thực phẩm"
+    },
+    {
+      "term": "umami",
+      "meaningVi": "vị ngọt đậm đà tự nhiên (vị cơ bản thứ năm bên cạnh ngọt, mặn, chua, đắng)"
+    },
+    {
+      "term": "aquaculture",
+      "meaningVi": "ngành nuôi trồng thủy sản hoặc thực vật dưới nước có kiểm soát"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_004_q01",
+          "number": 1,
+          "prompt": "Humid autumn conditions frequently prevented coastal households from drying newly cut seaweed outdoors.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 511,
+              "end": 596,
+              "quote": "During damp, foggy autumns, outdoor drying often failed before moisture could escape."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn A khẳng định vào những mùa thu ẩm ướt, có sương mù (damp, foggy autumns), cách phơi khô ngoài trời thường thất bại → TRUE.",
+          "steps": [
+            "Định vị từ khóa autumn và outdoor drying ở đoạn A.",
+            "So sánh: damp, foggy autumns = humid autumn conditions; often failed = frequently prevented.",
+            "Khớp hoàn toàn nghĩa của bài → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_004_q02",
+          "number": 2,
+          "prompt": "Coastal families traditionally kept salted kelp pressed inside wooden barrels for over six months before consumption.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 507,
+              "end": 640,
+              "quote": "Finally, they placed heavy river stones on top of the timber lids to keep the fronds submerged beneath their own brine for six weeks."
+            }
+          ],
+          "trapType": "number_date",
+          "explanationVi": "Đoạn B ghi rõ rong biển được ngâm trong nước muối suốt 6 TUẦN (six weeks), không phải hơn 6 THÁNG (over six months). Sai lệch đơn vị thời gian → FALSE.",
+          "steps": [
+            "Tìm thời gian lên men trong thùng gỗ ở đoạn B.",
+            "Bài ghi rõ for six weeks, câu hỏi đổi thành over six months.",
+            "Mâu thuẫn trực tiếp về số liệu → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_004_q03",
+          "number": 3,
+          "prompt": "In Dr Kenji Sato's 2021 trials, fermented kelp supplied more accessible iron and vitamin B12 than air-dried kelp from the same crop.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 515,
+              "end": 694,
+              "quote": "As a result, Sato's analyses showed that fermented samples delivered roughly 22 per cent higher accessible levels of iron and vitamin B12 than air-dried fronds from the same crop."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn C nêu kết quả phân tích năm 2021 của Sato cho thấy mẫu lên men cung cấp lượng sắt và vitamin B12 dễ hấp thụ cao hơn khoảng 22% so với mẫu phơi khô cùng vụ → TRUE.",
+          "steps": [
+            "Định vị Dr Kenji Sato, 2021, iron và vitamin B12 ở đoạn C.",
+            "So sánh: 22 per cent higher accessible levels than air-dried fronds from the same crop.",
+            "Khớp chính xác với câu hỏi → TRUE."
+          ]
+        },
+        {
+          "qid": "p1_004_q04",
+          "number": 4,
+          "prompt": "Dr Kenji Sato's research group collaborated with hospital nutritionists to test fermented kelp soups on older patients.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 107,
+              "end": 280,
+              "quote": "In 2021, food biochemist Dr Kenji Sato conducted controlled laboratory trials comparing air-dried and lactic-fermented samples taken from the identical coastal kelp harvest."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn C và D chỉ đề cập thí nghiệm trong phòng lab của Sato, hoàn toàn không nhắc tới chuyên gia dinh dưỡng bệnh viện hay thử nghiệm trên bệnh nhân cao tuổi → NOT GIVEN.",
+          "steps": [
+            "Quét đoạn C và D tìm tên Dr Kenji Sato.",
+            "Kiểm tra xem có thông tin về hospital nutritionists hoặc older patients không.",
+            "Không hề có dữ kiện nào về thử nghiệm lâm sàng → NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p1_004_q05",
+          "number": 5,
+          "prompt": "Wild shoreline kelp maintains steady leaf thickness and sugar concentrations regardless of autumn storms.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 364,
+              "end": 558,
+              "quote": "Wild seaweed beds rarely supply that level of consistency, because autumn storm surges and shifting ocean temperatures alter frond thickness and natural sugar levels from one season to the next."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn E khẳng định bão mùa thu và nhiệt độ biển làm THAY ĐỔI (alter) độ dày lá và lượng đường tự nhiên qua từng mùa, mâu thuẫn với maintains steady ... regardless of storms → FALSE.",
+          "steps": [
+            "Tìm từ khóa autumn storms, thickness và sugar ở đoạn E.",
+            "Đối chiếu: bài nói storm surges alter frond thickness and natural sugar levels.",
+            "Trái ngược với maintains steady regardless of storms → FALSE."
+          ]
+        },
+        {
+          "qid": "p1_004_q06",
+          "number": 6,
+          "prompt": "Setting up offshore rope farms for kelp requires a smaller upfront budget than constructing heated vegetable greenhouses on land.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 0,
+              "end": 121,
+              "quote": "To beat uneven wild harvests, several coastal groups have begun growing sugar kelp on ropes offshore next to mussel beds."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn F đề cập nuôi tảo trên dây ngoài khơi không cần nước ngọt hay phân bón đất, nhưng không hề so sánh chi phí đầu tư ban đầu với nhà kính trồng rau → NOT GIVEN.",
+          "steps": [
+            "Định vị offshore suspended ropes ở đoạn F.",
+            "Kiểm tra xem bài có nhắc đến upfront budget hay vegetable greenhouses không.",
+            "Không có dữ kiện so sánh tài chính → NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Nutrient absorption gains revealed by recent lab tests"
+        },
+        {
+          "key": "ii",
+          "text": "Why wet coastal climates encouraged fermentation over drying"
+        },
+        {
+          "key": "iii",
+          "text": "Lowering iodine risks while avoiding polluted shorelines"
+        },
+        {
+          "key": "iv",
+          "text": "Supply irregularities that hinder large-scale food processing"
+        },
+        {
+          "key": "v",
+          "text": "Step-by-step barrel preservation recorded in coastal archives"
+        },
+        {
+          "key": "vi",
+          "text": "Offshore rope farming as a steadier marine alternative"
+        },
+        {
+          "key": "vii",
+          "text": "Ancient trade networks carrying salted kelp to inland empires"
+        },
+        {
+          "key": "viii",
+          "text": "Why oak casks ruined the flavour of preserved kelp"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_004_q07",
+          "number": 7,
+          "prompt": "Paragraph A",
+          "answer": {
+            "key": "ii"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 597,
+              "end": 738,
+              "quote": "To prevent entire harvests from rotting in wet weather, coastal communities turned instead to salt fermentation inside sealed wooden barrels."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "A",
+            "start": 597,
+            "end": 738,
+            "quote": "To prevent entire harvests from rotting in wet weather, coastal communities turned instead to salt fermentation inside sealed wooden barrels."
+          },
+          "headingDistractors": [
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề v nói về từng bước muối trong thùng theo lưu trữ lịch sử, thuộc đoạn B."
+            },
+            {
+              "key": "vii",
+              "type": "too_broad",
+              "whyVi": "Đoạn A không đề cập tuyến thương mại cổ đại nào đưa tảo vào nội địa."
+            }
+          ],
+          "explanationVi": "Đoạn A giải thích rong biển tươi nhanh hỏng và mùa thu ẩm ướt làm thất bại cách phơi nắng, thúc đẩy cư dân chuyển sang lên men muối, khớp tiêu đề ii.",
+          "steps": [
+            "Đọc nửa cuối đoạn A: damp, foggy autumns khiến outdoor drying thất bại.",
+            "Kết luận của đoạn: chuyển sang salt fermentation để tránh thối hỏng.",
+            "Khớp chính xác với tiêu đề ii."
+          ]
+        },
+        {
+          "qid": "p1_004_q08",
+          "number": 8,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "v"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 95,
+              "end": 240,
+              "quote": "Food historian Dr Fiona Grant examined nineteenth-century household ledgers from twelve fishing parishes and reconstructed the standard sequence."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 95,
+            "end": 240,
+            "quote": "Food historian Dr Fiona Grant examined nineteenth-century household ledgers from twelve fishing parishes and reconstructed the standard sequence."
+          },
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn B nói thành phẩm là tương đậm vị umami ngon miệng, hoàn toàn không bị hỏng hương vị."
+            },
+            {
+              "key": "ii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề ii là lý do khí hậu ẩm ở đoạn A."
+            }
+          ],
+          "explanationVi": "Đoạn B tái hiện quy trình lên men từng bước (rửa nước suối, xếp lớp muối, dằn đá sông 6 tuần) từ sổ sách lưu trữ ven biển, khớp tiêu đề v.",
+          "steps": [
+            "Nhận diện cấu trúc trình tự đoạn B: first rinsed ... Next, layered ... Finally, placed heavy stones.",
+            "Nguồn thông tin: museum archives và household ledgers.",
+            "Loại bẫy ngược nghĩa viii và chọn tiêu đề v."
+          ]
+        },
+        {
+          "qid": "p1_004_q09",
+          "number": 9,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "i"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 0,
+              "end": 106,
+              "quote": "Modern food science has recently shown why cured seaweed gave more health value than simple storage alone."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 0,
+            "end": 106,
+            "quote": "Modern food science has recently shown why cured seaweed gave more health value than simple storage alone."
+          },
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề iii nói về giảm rủi ro i-ốt và tránh vùng cảng ô nhiễm ở đoạn D."
+            },
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn C nói lên men giúp tăng hấp thụ dưỡng chất và nấu nhanh mềm hơn, không hề nói thùng gỗ sồi làm hỏng vị."
+            }
+          ],
+          "explanationVi": "Đoạn C trình bày kết quả thử nghiệm phòng lab năm 2021 cho thấy vi khuẩn lactic phá vỡ vách tế bào giúp tăng hấp thụ sắt và vitamin B12, khớp tiêu đề i.",
+          "steps": [
+            "Đọc câu đầu đoạn C: nutritional science revealed greater dietary value.",
+            "Bằng chứng: laboratory trials chứng minh mức iron và B12 dễ hấp thụ cao hơn 22%.",
+            "Chọn tiêu đề i."
+          ]
+        },
+        {
+          "qid": "p1_004_q10",
+          "number": 10,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "iii"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 93,
+              "quote": "Curing in brine also solves a known health concern linked to brown seaweeds: too much iodine."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 0,
+            "end": 93,
+            "quote": "Curing in brine also solves a known health concern linked to brown seaweeds: too much iodine."
+          },
+          "headingDistractors": [
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề i tập trung vào hấp thụ sắt/vitamin B12 ở đoạn C."
+            },
+            {
+              "key": "vii",
+              "type": "too_broad",
+              "whyVi": "Đoạn D cảnh báo tránh cảng công nghiệp ô nhiễm, không nói về tuyến thương mại cổ đại."
+            }
+          ],
+          "explanationVi": "Đoạn D nêu hai khía cạnh an toàn thực phẩm: lên men giúp giảm gần 40% lượng i-ốt hòa tan và khuyến cáo không thu hái gần cảng công nghiệp, khớp tiêu đề iii.",
+          "steps": [
+            "Đọc nửa đầu đoạn D: giảm gần 40% soluble iodine để đạt chuẩn an toàn.",
+            "Đọc nửa cuối: cảnh báo tránh industrial ports do kim loại hòa tan.",
+            "Khớp hoàn toàn với tiêu đề iii."
+          ]
+        },
+        {
+          "qid": "p1_004_q11",
+          "number": 11,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "iv"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 0,
+              "end": 136,
+              "quote": "Despite rising culinary curiosity, turning fermented coastal seaweed into a reliable commercial product involves tough supply obstacles."
+            }
+          ],
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 0,
+            "end": 136,
+            "quote": "Despite rising culinary curiosity, turning fermented coastal seaweed into a reliable commercial product involves tough supply obstacles."
+          },
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tiêu đề vi nói về giải pháp nuôi dây ngoài khơi ở đoạn F."
+            },
+            {
+              "key": "viii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn E có nhắc barrels nhưng vấn đề là độ đồng đều nguyên liệu thô tự nhiên, không phải thùng gỗ sồi làm hỏng vị."
+            }
+          ],
+          "explanationVi": "Đoạn E phân tích trở ngại thương mại đối với các nhà máy lớn do nguồn tảo tự nhiên biến động độ dày và hàm lượng đường giữa các mùa, khớp tiêu đề iv.",
+          "steps": [
+            "Đọc câu mở đoạn E: tough supply obstacles.",
+            "Chi tiết hỗ trợ: larger food factories cần tính đồng đều nhưng tảo hoang biến động theo bão và nhiệt độ.",
+            "Chọn tiêu đề iv (Supply irregularities that hinder large-scale food processing)."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "g3_match_info",
+      "type": "matching_info",
+      "instructions": "Which paragraph contains the following information? Write the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_004_q12",
+          "number": 12,
+          "prompt": "a warning against gathering wild seaweed near commercial shipping facilities",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 539,
+              "end": 725,
+              "quote": "Because kelp absorbs dissolved metals from surrounding water, harvesters are strongly advised never to gather wild fronds close to busy industrial ports or commercial shipping terminals."
+            }
+          ],
+          "explanationVi": "Đoạn D ghi rõ khuyến cáo không bao giờ thu hái rong biển hoang gần các cảng công nghiệp bận rộn hoặc bến tàu thương mại → D.",
+          "steps": [
+            "Quét tìm ý cảnh báo địa điểm thu hái (warning / shipping).",
+            "Tìm thấy ở hai câu cuối đoạn D: strongly advised never to gather ... close to busy industrial ports or commercial shipping terminals.",
+            "Chọn đoạn D."
+          ]
+        },
+        {
+          "qid": "p1_004_q13",
+          "number": 13,
+          "prompt": "a description of how natural weights were used to keep seaweed submerged during curing",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 507,
+              "end": 640,
+              "quote": "Finally, they placed heavy river stones on top of the timber lids to keep the fronds submerged beneath their own brine for six weeks."
+            }
+          ],
+          "explanationVi": "Đoạn B mô tả người dân đặt đá sông nặng (heavy river stones) lên nắp gỗ để giữ rong biển chìm hoàn toàn trong nước muối → B.",
+          "steps": [
+            "Tìm thông tin về vật nặng và ngập trong nước muối (weights / submerged).",
+            "Tìm thấy ở đoạn B: placed heavy river stones ... to keep the fronds submerged.",
+            "Chọn đoạn B."
+          ]
+        },
+        {
+          "qid": "p1_004_q14",
+          "number": 14,
+          "prompt": "a mention of an ecological benefit created by cultivating kelp next to shellfish",
+          "answer": {
+            "key": "F"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 296,
+              "end": 538,
+              "quote": "This paired marine farming also yields a measurable environmental advantage: growing kelp absorbs surplus nitrogen and carbon released by nearby shellfish lines, improving local water clarity without requiring fresh water or land fertilisers."
+            }
+          ],
+          "explanationVi": "Đoạn F nêu lợi ích môi trường khi nuôi tảo bẹ cạnh vẹm/nhuyễn thể: tảo hấp thụ nitơ và carbon dư thừa, giúp cải thiện độ trong của nước → F.",
+          "steps": [
+            "Tìm từ khóa shellfish / mussel beds và environmental advantage.",
+            "Tìm thấy ở đoạn F: kelp absorbs surplus nitrogen and carbon released by nearby shellfish lines.",
+            "Chọn đoạn F."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

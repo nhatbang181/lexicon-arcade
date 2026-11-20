@@ -1,0 +1,188 @@
+{
+  "id": "rp:p1_004",
+  "level": "P1",
+  "reserved": false,
+  "title": "Fermented Seaweed in Northern Coastal Diets",
+  "subtitle": "Traditional preservation, nutritional research, and modern marine cultivation along cold rocky shores",
+  "topic": "food",
+  "wordCount": 680,
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Along cold rocky coasts in northern Europe and eastern Canada, edible seaweeds such as dulse, sugar kelp, and bladderwrack grow thick in shallow tidal zones. Coastal families have picked these wild sea plants for centuries as a steady source of winter minerals. Once cut from submerged rocks, however, fresh fronds spoil fast. They turn soft and slimy within 48 hours unless dried or cured right away. In bright summer months, pickers simply spread washed blades across flat granite slabs to dry in the breeze. During damp, foggy autumns, outdoor drying often failed before moisture could escape. To prevent entire harvests from rotting in wet weather, coastal communities turned instead to salt fermentation inside sealed wooden barrels."
+    },
+    {
+      "label": "B",
+      "text": "Local museum archives give clear records of how this coastal curing method worked in practice. Food historian Dr Fiona Grant examined nineteenth-century household ledgers from twelve fishing parishes and reconstructed the standard sequence. First, workers rinsed fresh kelp well in clean spring water to wash off sand grains and tiny shell bits. Next, they stacked chopped fronds with coarse sea salt inside stout oak casks. They pressed each layer down tightly with flat wooden paddles to draw out liquid. Finally, they placed heavy river stones on top of the timber lids to keep the fronds submerged beneath their own brine for six weeks. The end result was a dark, savoury paste full of natural umami flavour that kept safely through cold winter months."
+    },
+    {
+      "label": "C",
+      "text": "Modern food science has recently shown why cured seaweed gave more health value than simple storage alone. In 2021, food biochemist Dr Kenji Sato conducted controlled laboratory trials comparing air-dried and lactic-fermented samples taken from the identical coastal kelp harvest. Raw and dried seaweeds have dense cell walls made of tough sea fibres. Human gut enzymes often struggle to break down those hard fibres well. During barrel curing, however, helpful lactic bacteria partly break open those rigid walls. As a result, Sato's analyses showed that fermented samples delivered roughly 22 per cent higher accessible levels of iron and vitamin B12 than air-dried fronds from the same crop. Cooks also noted that cured kelp softened faster in hot broth."
+    },
+    {
+      "label": "D",
+      "text": "Curing in brine also solves a known health concern linked to brown seaweeds: too much iodine. Small amounts of iodine support healthy thyroid glands, yet eating big portions of raw kelp can push daily intake past safe health limits. Sato's lab tests proved that curing kelp in brine drew almost 40 per cent of soluble iodine out of the blades into the salt liquid. Since cooks pour away that liquid before serving, moderate portions fit neatly inside global safety limits. Even so, marine food inspectors still issue a firm place warning. Because kelp absorbs dissolved metals from surrounding water, harvesters are strongly advised never to gather wild fronds close to busy industrial ports or commercial shipping terminals."
+    },
+    {
+      "label": "E",
+      "text": "Despite rising culinary curiosity, turning fermented coastal seaweed into a reliable commercial product involves tough supply obstacles. Artisan bakeries and specialist soup makers along the coast eagerly purchase small batches of kelp paste for its deep savoury notes. Larger food factories, by contrast, require strict ingredient uniformity from month to month. Wild seaweed beds rarely supply that level of consistency, because autumn storm surges and shifting ocean temperatures alter frond thickness and natural sugar levels from one season to the next. When sugar concentrations drop unexpectedly, fermentation slows down and batch acidity fluctuates, forcing processors to adjust recipes repeatedly or reject entire barrels."
+    },
+    {
+      "label": "F",
+      "text": "To beat uneven wild harvests, several coastal groups have begun growing sugar kelp on ropes offshore next to mussel beds. Early pilot trials show that farmed kelp grows to a much more even thickness than shoreline fronds. That steadiness lets food makers run smooth curing cycles all year round. This paired marine farming also yields a measurable environmental advantage: growing kelp absorbs surplus nitrogen and carbon released by nearby shellfish lines, improving local water clarity without requiring fresh water or land fertilisers. Coastal food experts now see farmed fermented kelp less as a brief diet trend than as a steady, low-impact regional crop."
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "g1_tfng",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Write TRUE, FALSE or NOT GIVEN.",
+      "questions": [
+        {
+          "qid": "p1_004_q01",
+          "number": 1,
+          "prompt": "Humid autumn conditions frequently prevented coastal households from drying newly cut seaweed outdoors."
+        },
+        {
+          "qid": "p1_004_q02",
+          "number": 2,
+          "prompt": "Coastal families traditionally kept salted kelp pressed inside wooden barrels for over six months before consumption."
+        },
+        {
+          "qid": "p1_004_q03",
+          "number": 3,
+          "prompt": "In Dr Kenji Sato's 2021 trials, fermented kelp supplied more accessible iron and vitamin B12 than air-dried kelp from the same crop."
+        },
+        {
+          "qid": "p1_004_q04",
+          "number": 4,
+          "prompt": "Dr Kenji Sato's research group collaborated with hospital nutritionists to test fermented kelp soups on older patients."
+        },
+        {
+          "qid": "p1_004_q05",
+          "number": 5,
+          "prompt": "Wild shoreline kelp maintains steady leaf thickness and sugar concentrations regardless of autumn storms."
+        },
+        {
+          "qid": "p1_004_q06",
+          "number": 6,
+          "prompt": "Setting up offshore rope farms for kelp requires a smaller upfront budget than constructing heated vegetable greenhouses on land."
+        }
+      ]
+    },
+    {
+      "groupId": "g2_headings",
+      "type": "headings",
+      "instructions": "Choose the correct heading for paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "Nutrient absorption gains revealed by recent lab tests"
+        },
+        {
+          "key": "ii",
+          "text": "Why wet coastal climates encouraged fermentation over drying"
+        },
+        {
+          "key": "iii",
+          "text": "Lowering iodine risks while avoiding polluted shorelines"
+        },
+        {
+          "key": "iv",
+          "text": "Supply irregularities that hinder large-scale food processing"
+        },
+        {
+          "key": "v",
+          "text": "Step-by-step barrel preservation recorded in coastal archives"
+        },
+        {
+          "key": "vi",
+          "text": "Offshore rope farming as a steadier marine alternative"
+        },
+        {
+          "key": "vii",
+          "text": "Ancient trade networks carrying salted kelp to inland empires"
+        },
+        {
+          "key": "viii",
+          "text": "Why oak casks ruined the flavour of preserved kelp"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_004_q07",
+          "number": 7,
+          "prompt": "Paragraph A"
+        },
+        {
+          "qid": "p1_004_q08",
+          "number": 8,
+          "prompt": "Paragraph B"
+        },
+        {
+          "qid": "p1_004_q09",
+          "number": 9,
+          "prompt": "Paragraph C"
+        },
+        {
+          "qid": "p1_004_q10",
+          "number": 10,
+          "prompt": "Paragraph D"
+        },
+        {
+          "qid": "p1_004_q11",
+          "number": 11,
+          "prompt": "Paragraph E"
+        }
+      ]
+    },
+    {
+      "groupId": "g3_match_info",
+      "type": "matching_info",
+      "instructions": "Which paragraph contains the following information? Write the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p1_004_q12",
+          "number": 12,
+          "prompt": "a warning against gathering wild seaweed near commercial shipping facilities"
+        },
+        {
+          "qid": "p1_004_q13",
+          "number": 13,
+          "prompt": "a description of how natural weights were used to keep seaweed submerged during curing"
+        },
+        {
+          "qid": "p1_004_q14",
+          "number": 14,
+          "prompt": "a mention of an ecological benefit created by cultivating kelp next to shellfish"
+        }
+      ]
+    }
+  ]
+}

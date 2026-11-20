@@ -1,0 +1,544 @@
+{
+  "id": "rp:p3_004",
+  "level": "P3",
+  "title": "Replication Incentives and Null Results in Experimental Biology",
+  "subtitle": "Why academic reward systems bury negative findings and how structural reforms aim to restore reliability",
+  "topic": "science",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Independent replication is routinely praised in science textbooks as the core test of factual truth, yet inside working biology labs it occupies an awkward margin. Across leading life-science journals reviewed between 2015 and 2023, fewer than 9 per cent of published papers reported null results—careful trials in which a plausible biological idea failed to produce a measurable effect. Informal bench logs, by contrast, suggest that negative outcomes arise in well over half of all early experiments. Researchers call this widening gap between actual lab work and printed papers the file-drawer effect. Once an assay fails to confirm a neat hypothesis, the data folder is quietly archived and rarely seen again. Some senior editors still dismiss unpublished negative trials as harmless clutter that would merely crowd limited journal space. Treating missing null data as benign waste, however, skews the shared scientific record and drains huge sums of public research funding."
+    },
+    {
+      "label": "B",
+      "text": "To understand why negative trials stay locked in drawers, one must look at how academic careers are built and judged. Hiring panels, funding boards, and prestige journals reward bold new mechanisms far more generously than patient checks of another team's work. In a 2022 survey of 420 postdoctoral biologists across 16 European departments, Prof Alistair Reid found that 78 per cent believed publishing a direct replication would either stall or harm their chances of winning an independent lab grant. Many early-career staff told Reid they felt unable to spare six months verifying a rival lab's claim. Reid noted that journal referees regularly turn away solid null reports for lacking what they term conceptual advance. This happens even when the verification study uses larger samples than the original paper. Under these career incentives, steering clear of replication becomes a rational survival choice for ambitious junior staff."
+    },
+    {
+      "label": "C",
+      "text": "Burying failed experiments does far more than wound individual transparency; it quietly traps entire fields inside expensive dead ends. When three separate teams fail to repeat a celebrated cell-signalling claim and leave their folders unpublished, a fourth group may spend three years and substantial grant money chasing the exact same blind alley. PhD students lose precious training years troubleshooting protocols that never worked cleanly in the first place. In 2023, biostatistician Dr Amara Diallo modelled cumulative literature bias across 110 cell-biology subtopics and calculated that selective reporting inflated apparent treatment effects by an average of 36 per cent. Diallo further argues that missing null records cripple automated meta-analyses, because statistical pooling cannot correct for experimental failures that never enter public repositories. As a result, later drug trials frequently inherit shaky foundations built on partial, cherry-picked evidence."
+    },
+    {
+      "label": "D",
+      "text": "Still, it would be overly simplistic to blame every failed biological check on sloppy conduct or deliberate fraud. Living cell lines, serum batches, room humidity, and hidden microbes introduce real variation that sets biology apart from controlled bench physics. Even tiny shifts in daily handling can alter how sensitive tissues respond to a chemical cue. In a 2024 multi-site study, molecular biologist Dr Sofia Morales showed that tiny shifts in plastic culture-dish coatings altered stem-cell growth rates by 22 per cent across five partner labs following the exact same written guide. Even water purity and pipetting speed changed sensitive protein yields between winter and summer runs. Such quirks do not mean the first team cheated or erred. Morales contends that treating every discrepancy as proof of an invalid original paper misses a vital chance to uncover hidden environmental factors shaping living systems."
+    },
+    {
+      "label": "E",
+      "text": "Because polite appeals to scientific virtue have moved the needle very little, reformers now target the publishing rules themselves. Under the registered reports format, journals peer-review a study's hypothesis and detailed assay plan before any lab data are gathered. Once the design clears expert scrutiny, editors grant provisional acceptance regardless of whether the final figures turn out positive or null. This pledge removes the pressure to hunt for flashy outcomes after the bench work ends. A 2025 audit led by Prof Gareth Pritchard across 34 life-science journals revealed that registered reports published null findings at a rate of 58 per cent, compared with just 11 per cent among conventional papers in the very same titles. Alongside this editorial shift, several public agencies have created ring-fenced funds paying dedicated validation teams to check high-citation findings before clinical testing starts."
+    },
+    {
+      "label": "F",
+      "text": "Whether such journal reforms alone can cure entrenched academic habits remains an open question. Registered reports serve tightly defined confirmatory tests well, yet much early biological discovery is exploratory, with surprise bench observations sparking new hypotheses midway through an assay. Locking every exploratory step in advance would stifle the flexible trial-and-error thinking that opens fresh fields. Biologists still need room to follow odd signals without filing fresh paperwork every week. Durable change therefore demands reshaping how universities weigh academic merit during hiring and tenure reviews. Search panels must give genuine credit for open null datasets and careful verification alongside headline breakthroughs. Unless institutional prestige catches up with methodological honesty, experimental biology will keep celebrating flashy claims while quietly discarding the negative evidence that keeps science self-correcting."
+    }
+  ],
+  "wordCount": 836,
+  "glossary": [
+    {
+      "term": "null result",
+      "meaningVi": "kết quả âm tính, khi thí nghiệm không ghi nhận hiệu ứng như giả thuyết dự đoán"
+    },
+    {
+      "term": "file-drawer effect",
+      "meaningVi": "hiệu ứng ngăn kéo, xu hướng không công bố các nghiên cứu có kết quả âm tính"
+    },
+    {
+      "term": "meta-analysis",
+      "meaningVi": "phân tích tổng hợp gộp số liệu từ nhiều nghiên cứu độc lập"
+    },
+    {
+      "term": "registered report",
+      "meaningVi": "mô hình bài báo duyệt quy trình trước khi thu thập số liệu nhằm tránh thiên lệch công bố"
+    },
+    {
+      "term": "assay",
+      "meaningVi": "quy trình thử nghiệm sinh học để đo lường hoạt tính hoặc phản ứng mẫu vật"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p3_004_g1",
+      "type": "ynng",
+      "instructions": "Do the following statements agree with the views of the writer in the passage? Choose YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, or NOT GIVEN if it is impossible to say what the writer thinks about this.",
+      "questions": [
+        {
+          "qid": "p3_004_q01",
+          "number": 1,
+          "prompt": "Omitting unsuccessful laboratory trials from scientific journals poses little genuine threat to biological research.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 843,
+              "end": 979,
+              "quote": "Treating missing null data as benign waste, however, skews the shared scientific record and drains huge sums of public research funding."
+            }
+          ],
+          "trapType": "opinion_vs_fact",
+          "steps": [
+            "Đọc hai câu cuối đoạn A phân biệt ý kiến của một số biên tập viên với lập trường của tác giả.",
+            "Tác giả bác bỏ việc xem dữ liệu âm tính bị bỏ qua là vô hại, nhấn mạnh nó làm lệch hồ sơ khoa học và lãng phí ngân sách công.",
+            "Trái ngược hoàn toàn với nhận định câu hỏi nên chọn NO."
+          ],
+          "explanationVi": "Tác giả phản bác quan điểm xem dữ liệu âm tính bị giấu đi là vô hại. Ngược lại, điều đó bóp méo hồ sơ khoa học chung và gây lãng phí lớn nguồn tài trợ công."
+        },
+        {
+          "qid": "p3_004_q02",
+          "number": 2,
+          "prompt": "Prevailing academic reward criteria make avoiding replication studies a sensible career decision for younger biologists.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 815,
+              "end": 938,
+              "quote": "Under these career incentives, steering clear of replication becomes a rational survival choice for ambitious junior staff."
+            }
+          ],
+          "trapType": "causation",
+          "steps": [
+            "Tìm phân tích về động cơ thăng tiến học thuật ở câu cuối đoạn B.",
+            "Đối chiếu: 'steering clear of replication becomes a rational survival choice for ambitious junior staff' khớp với 'a sensible career decision for younger biologists'.",
+            "Đồng nhất với quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Câu cuối đoạn B khẳng định dưới cơ chế khen thưởng học thuật hiện hành, tránh né nghiên cứu tái lập trở thành lựa chọn sinh tồn hợp lý đối với các nhà nghiên cứu trẻ."
+        },
+        {
+          "qid": "p3_004_q03",
+          "number": 3,
+          "prompt": "Commercial pharmaceutical laboratories disclose negative experimental results more openly than university biology departments do.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 681,
+              "end": 978,
+              "quote": "Diallo further argues that missing null records cripple automated meta-analyses, because statistical pooling cannot correct for experimental failures that never enter public repositories. As a result, later drug trials frequently inherit shaky foundations built on partial, cherry-picked evidence."
+            }
+          ],
+          "trapType": "comparison",
+          "steps": [
+            "Rà soát đoạn C nơi nhắc đến 'drug trials' và kho lưu trữ công khai.",
+            "Kiểm tra xem bài có so sánh mức độ công khai kết quả âm tính giữa hãng dược tư nhân và khoa sinh học đại học không.",
+            "Không có bất kỳ so sánh nào giữa hai khu vực này nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn C chỉ nêu các thử nghiệm thuốc sau này chịu ảnh hưởng từ dữ liệu thiên lệch. Tác giả không so sánh mức độ công khai kết quả âm tính giữa hãng dược thương mại và trường đại học."
+        },
+        {
+          "qid": "p3_004_q04",
+          "number": 4,
+          "prompt": "Whenever an independent group fails to match a published biological finding, the mismatch demonstrates that the first study was invalid.",
+          "answer": {
+            "key": "NO"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 751,
+              "end": 923,
+              "quote": "Morales contends that treating every discrepancy as proof of an invalid original paper misses a vital chance to uncover hidden environmental factors shaping living systems."
+            }
+          ],
+          "trapType": "qualifier",
+          "steps": [
+            "Đọc đoạn D về biến thiên sinh học tự nhiên và nghiên cứu của Dr Sofia Morales.",
+            "Chú ý từ tuyệt đối 'Whenever... demonstrates that the first study was invalid' trái ngược với lập luận rằng sai khác có thể do biến môi trường ẩn.",
+            "Mâu thuẫn với quan điểm trong bài nên chọn NO."
+          ],
+          "explanationVi": "Đoạn D cảnh báo không nên quy mọi lần tái lập thất bại là gian lận hay nghiên cứu ban đầu vô giá trị, vì các biến số môi trường tinh vi cũng tạo ra sai lệch sinh học thực sự."
+        },
+        {
+          "qid": "p3_004_q05",
+          "number": 5,
+          "prompt": "Expert referees typically require considerably more time to review registered report designs than to assess standard finished manuscripts.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 133,
+              "end": 269,
+              "quote": "Under the registered reports format, journals peer-review a study's hypothesis and detailed assay plan before any lab data are gathered."
+            }
+          ],
+          "trapType": "time_sequence",
+          "steps": [
+            "Định vị phần giải thích mô hình 'registered reports' ở đoạn E.",
+            "Kiểm tra xem bài có so sánh thời gian phản biện giữa bài đăng ký trước và bản thảo hoàn chỉnh thông thường không.",
+            "Bài chỉ nêu trình tự phản biện trước khi thu dữ liệu, không đề cập thời lượng nên chọn NOT GIVEN."
+          ],
+          "explanationVi": "Đoạn E chỉ mô tả quy trình phản biện giả thuyết và kế hoạch thử nghiệm trước khi thu thập số liệu cùng tỷ lệ công bố kết quả âm tính. Tác giả không so sánh thời gian phản biện."
+        },
+        {
+          "qid": "p3_004_q06",
+          "number": 6,
+          "prompt": "Pre-registered publishing formats cannot comfortably accommodate every style of biological inquiry, especially open-ended exploratory research.",
+          "answer": {
+            "key": "YES"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 97,
+              "end": 414,
+              "quote": "Registered reports serve tightly defined confirmatory tests well, yet much early biological discovery is exploratory, with surprise bench observations sparking new hypotheses midway through an assay. Locking every exploratory step in advance would stifle the flexible trial-and-error thinking that opens fresh fields."
+            }
+          ],
+          "trapType": "qualifier",
+          "steps": [
+            "Đọc đoạn F phân tích giới hạn của mô hình báo cáo đăng ký trước.",
+            "Đối chiếu: mô hình này phù hợp thử nghiệm xác nhận nhưng sẽ bóp nghẹt nghiên cứu khám phá linh hoạt nếu khóa chặt mọi bước từ đầu.",
+            "Khớp chính xác với quan điểm tác giả nên chọn YES."
+          ],
+          "explanationVi": "Đoạn F nêu rõ báo cáo đăng ký trước phù hợp với thí nghiệm xác nhận nhưng không thể khóa cứng mọi bước của sinh học khám phá vì sẽ kìm hãm tư duy thử-sai linh hoạt."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_004_g2",
+      "type": "headings",
+      "instructions": "Choose the correct heading for Paragraphs A–E from the list of headings below.",
+      "headings": [
+        {
+          "key": "i",
+          "text": "How hidden environmental factors can cause honest discrepancies between labs"
+        },
+        {
+          "key": "ii",
+          "text": "The career risks that discourage junior researchers from checking prior work"
+        },
+        {
+          "key": "iii",
+          "text": "Publishing models and funding schemes built to reward honest verification"
+        },
+        {
+          "key": "iv",
+          "text": "Why automated laboratories have completely eliminated human experimental error"
+        },
+        {
+          "key": "v",
+          "text": "The striking gap between textbook ideals and published biological outcomes"
+        },
+        {
+          "key": "vi",
+          "text": "How suppressed negative trials waste resources and exaggerate scientific claims"
+        },
+        {
+          "key": "vii",
+          "text": "Rising subscription charges imposed by international biology journals"
+        },
+        {
+          "key": "viii",
+          "text": "Why physics trials suffer heavier microbial contamination than cell assays"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_004_q07",
+          "number": 7,
+          "prompt": "Paragraph A",
+          "answer": {
+            "key": "v"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "A",
+            "start": 0,
+            "end": 163,
+            "quote": "Independent replication is routinely praised in science textbooks as the core test of factual truth, yet inside working biology labs it occupies an awkward margin."
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 0,
+              "end": 163,
+              "quote": "Independent replication is routinely praised in science textbooks as the core test of factual truth, yet inside working biology labs it occupies an awkward margin."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "vi",
+              "type": "adjacent_paragraph",
+              "whyVi": "Phân tích chi tiết việc thổi phồng 36% hiệu ứng và bế tắc nguồn lực thuộc đoạn C, trong khi đoạn A đặt ra khoảng cách tổng quan giữa lý tưởng sách giáo khoa và thực tế công bố."
+            },
+            {
+              "key": "vii",
+              "type": "keyword_match",
+              "whyVi": "Đoạn A nhắc đến các tạp chí khoa học sự sống hàng đầu nhưng không hề bàn phí đặt mua tạp chí."
+            }
+          ],
+          "steps": [
+            "Đọc đoạn A: đối chiếu lý tưởng sách giáo khoa về tái lập với tỷ lệ dưới 9% bài báo âm tính so với hơn 50% trong thực tế.",
+            "Khớp chính xác với tiêu đề v.",
+            "Loại vi (thuộc đoạn C) và vii (bẫy từ khóa)."
+          ],
+          "explanationVi": "Đoạn A chỉ ra khoảng cách lớn giữa lý tưởng tái lập trong sách giáo khoa với thực tế hiếm hoi của kết quả âm tính trên tạp chí sinh học. Tiêu đề v tóm gọn đúng ý chính."
+        },
+        {
+          "qid": "p3_004_q08",
+          "number": 8,
+          "prompt": "Paragraph B",
+          "answer": {
+            "key": "ii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "B",
+            "start": 815,
+            "end": 938,
+            "quote": "Under these career incentives, steering clear of replication becomes a rational survival choice for ambitious junior staff."
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 815,
+              "end": 938,
+              "quote": "Under these career incentives, steering clear of replication becomes a rational survival choice for ambitious junior staff."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn B mô tả cơ chế khen thưởng hiện tại kìm hãm việc kiểm chứng, ngược với các mô hình cải cách khuyến khích kiểm chứng ở đoạn E."
+            },
+            {
+              "key": "v",
+              "type": "adjacent_paragraph",
+              "whyVi": "Khoảng cách giữa sách giáo khoa và số liệu công bố là nội dung mở đầu của đoạn A."
+            }
+          ],
+          "steps": [
+            "Xác định ý chính đoạn B: khảo sát của Prof Alistair Reid cho thấy nghiên cứu sinh trẻ e ngại tái lập sẽ gây hại cho cơ hội xin tài trợ.",
+            "Đối chiếu với tiêu đề ii về rủi ro nghề nghiệp khiến người trẻ tránh kiểm chứng công trình cũ.",
+            "Loại iii (thuộc đoạn E) và v (thuộc đoạn A)."
+          ],
+          "explanationVi": "Đoạn B giải thích các tiêu chí thăng tiến và cấp quỹ hiện nay khiến việc tái lập trở thành rủi ro nghề nghiệp với nhà khoa học trẻ. Tiêu đề ii phản ánh trọn vẹn nội dung này."
+        },
+        {
+          "qid": "p3_004_q09",
+          "number": 9,
+          "prompt": "Paragraph C",
+          "answer": {
+            "key": "vi"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "C",
+            "start": 464,
+            "end": 680,
+            "quote": "In 2023, biostatistician Dr Amara Diallo modelled cumulative literature bias across 110 cell-biology subtopics and calculated that selective reporting inflated apparent treatment effects by an average of 36 per cent."
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 464,
+              "end": 680,
+              "quote": "In 2023, biostatistician Dr Amara Diallo modelled cumulative literature bias across 110 cell-biology subtopics and calculated that selective reporting inflated apparent treatment effects by an average of 36 per cent."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "iv",
+              "type": "keyword_match",
+              "whyVi": "Có từ 'automated' trong cụm 'automated meta-analyses' ở đoạn C nhưng bài nói chúng bị tê liệt chứ không loại bỏ sai sót."
+            },
+            {
+              "key": "i",
+              "type": "adjacent_paragraph",
+              "whyVi": "Yếu tố môi trường ẩn tạo sai khác giữa các phòng thí nghiệm là chủ đề của đoạn D."
+            }
+          ],
+          "steps": [
+            "Tóm tắt đoạn C: giấu kết quả âm tính làm nhóm sau tốn tiền đi vào ngõ cụt và thổi phồng hiệu quả điều trị thêm 36%.",
+            "Khớp chính xác với tiêu đề vi.",
+            "Loại iv (bẫy từ khóa ngược nghĩa) và i (thuộc đoạn D)."
+          ],
+          "explanationVi": "Đoạn C phân tích hai tác hại của việc giấu thử nghiệm thất bại: lãng phí ngân sách lặp lại ngõ cụt và thổi phồng mức độ hiệu quả trong tài liệu khoa học. Do đó chọn tiêu đề vi."
+        },
+        {
+          "qid": "p3_004_q10",
+          "number": 10,
+          "prompt": "Paragraph D",
+          "answer": {
+            "key": "i"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "D",
+            "start": 751,
+            "end": 923,
+            "quote": "Morales contends that treating every discrepancy as proof of an invalid original paper misses a vital chance to uncover hidden environmental factors shaping living systems."
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 751,
+              "end": 923,
+              "quote": "Morales contends that treating every discrepancy as proof of an invalid original paper misses a vital chance to uncover hidden environmental factors shaping living systems."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "viii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn D nêu sinh học có biến thiên vi sinh khiến nó khác vật lý có kiểm soát, hoàn toàn ngược với khẳng định vật lý bị nhiễm vi sinh nặng hơn."
+            },
+            {
+              "key": "vi",
+              "type": "adjacent_paragraph",
+              "whyVi": "Tác hại của việc giấu kết quả âm tính thuộc đoạn C, còn đoạn D nêu góc nhìn phản biện về biến thiên tự nhiên."
+            }
+          ],
+          "steps": [
+            "Đọc đoạn D: các yếu tố như lớp phủ đĩa nhựa, độ ẩm hay độ tinh khiết nước gây sai lệch tự nhiên giữa các phòng thí nghiệm.",
+            "Khớp chính xác với tiêu đề i về yếu tố môi trường ẩn tạo sai khác trung thực.",
+            "Loại viii (ngược ý) và vi (đoạn trước)."
+          ],
+          "explanationVi": "Đoạn D chỉ ra các biến số môi trường tinh vi như lớp phủ đĩa nuôi cấy hay độ tinh khiết của nước có thể gây sai khác hoàn toàn trung thực giữa các phòng thí nghiệm. Tiêu đề i là chính xác."
+        },
+        {
+          "qid": "p3_004_q11",
+          "number": 11,
+          "prompt": "Paragraph E",
+          "answer": {
+            "key": "iii"
+          },
+          "mainIdeaSpan": {
+            "paragraph": "E",
+            "start": 133,
+            "end": 413,
+            "quote": "Under the registered reports format, journals peer-review a study's hypothesis and detailed assay plan before any lab data are gathered. Once the design clears expert scrutiny, editors grant provisional acceptance regardless of whether the final figures turn out positive or null."
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 133,
+              "end": 413,
+              "quote": "Under the registered reports format, journals peer-review a study's hypothesis and detailed assay plan before any lab data are gathered. Once the design clears expert scrutiny, editors grant provisional acceptance regardless of whether the final figures turn out positive or null."
+            }
+          ],
+          "headingDistractors": [
+            {
+              "key": "ii",
+              "type": "opposite_stance",
+              "whyVi": "Đoạn E nói về cải cách khuyến khích kiểm chứng chứ không nói rủi ro sự nghiệp cản trở như đoạn B."
+            },
+            {
+              "key": "vii",
+              "type": "too_broad",
+              "whyVi": "Đoạn E đề cập quỹ dành riêng kiểm chứng chứ không bàn về phí đặt mua tạp chí."
+            }
+          ],
+          "steps": [
+            "Tổng hợp hai cơ chế cải cách ở đoạn E: mô hình bài báo đăng ký trước (registered reports) và quỹ tài trợ dành riêng cho nhóm kiểm định.",
+            "Khớp chính xác với tiêu đề iii: mô hình xuất bản và quỹ tài trợ nhằm thưởng cho việc kiểm chứng trung thực.",
+            "Loại ii (trái chiều, đoạn B) và vii (sai nội dung)."
+          ],
+          "explanationVi": "Đoạn E giới thiệu hai giải pháp cơ cấu là mô hình bài báo đăng ký trước và quỹ tài trợ kiểm định độc lập để thúc đẩy việc công bố trung thực. Tiêu đề iii bao quát đúng cả hai yếu tố."
+        }
+      ]
+    },
+    {
+      "groupId": "p3_004_g3",
+      "type": "matching_features",
+      "instructions": "Look at the following statements (Questions 12–14) and the list of researchers below. Match each statement with the correct researcher, A–D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Prof Alistair Reid"
+        },
+        {
+          "key": "B",
+          "text": "Dr Amara Diallo"
+        },
+        {
+          "key": "C",
+          "text": "Dr Sofia Morales"
+        },
+        {
+          "key": "D",
+          "text": "Prof Gareth Pritchard"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p3_004_q12",
+          "number": 12,
+          "prompt": "Statistical syntheses of published trials cannot compensate for negative experiments kept out of public archives.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 681,
+              "end": 868,
+              "quote": "Diallo further argues that missing null records cripple automated meta-analyses, because statistical pooling cannot correct for experimental failures that never enter public repositories."
+            }
+          ],
+          "steps": [
+            "Tìm cụm đồng nghĩa với 'statistical syntheses' ('meta-analyses') và 'public archives' ('public repositories').",
+            "Định vị câu phát biểu của Dr Amara Diallo ở đoạn C.",
+            "Khớp với lựa chọn B."
+          ],
+          "explanationVi": "Trong đoạn C, nhà thống kê sinh học Dr Amara Diallo lập luận rằng phân tích tổng hợp không thể điều chỉnh cho các thí nghiệm thất bại chưa từng vào kho lưu trữ công khai. Đáp án là B."
+        },
+        {
+          "qid": "p3_004_q13",
+          "number": 13,
+          "prompt": "Approving experimental methods before results are collected sharply increases the share of negative findings appearing in journals.",
+          "answer": {
+            "key": "D"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 502,
+              "end": 740,
+              "quote": "A 2025 audit led by Prof Gareth Pritchard across 34 life-science journals revealed that registered reports published null findings at a rate of 58 per cent, compared with just 11 per cent among conventional papers in the very same titles."
+            }
+          ],
+          "steps": [
+            "Tìm bằng chứng về việc tăng mạnh tỷ lệ kết quả âm tính được công bố nhờ duyệt phương pháp trước ở đoạn E.",
+            "Xác định cuộc kiểm toán năm 2025 do Prof Gareth Pritchard dẫn đầu (58% so với 11%).",
+            "Chọn lựa chọn D."
+          ],
+          "explanationVi": "Đoạn E trích dẫn kiểm toán năm 2025 của Prof Gareth Pritchard trên 34 tạp chí cho thấy báo cáo đăng ký trước công bố 58% kết quả âm tính so với 11% ở bài thông thường. Đáp án là D."
+        },
+        {
+          "qid": "p3_004_q14",
+          "number": 14,
+          "prompt": "Seemingly minor differences in routine labware can produce substantial shifts in biological growth measurements.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 358,
+              "end": 590,
+              "quote": "In a 2024 multi-site study, molecular biologist Dr Sofia Morales showed that tiny shifts in plastic culture-dish coatings altered stem-cell growth rates by 22 per cent across five partner labs following the exact same written guide."
+            }
+          ],
+          "steps": [
+            "Tìm chi tiết về dụng cụ phòng thí nghiệm thông thường ('plastic culture-dish coatings') và tốc độ tăng trưởng tế bào ở đoạn D.",
+            "Xác định nhà nghiên cứu thực hiện thí nghiệm đa cơ sở này là Dr Sofia Morales.",
+            "Chọn lựa chọn C."
+          ],
+          "explanationVi": "Đoạn D trình bày nghiên cứu của Dr Sofia Morales chứng minh khác biệt nhỏ ở lớp phủ đĩa nhựa nuôi cấy làm thay đổi tốc độ tăng trưởng tế bào gốc tới 22%. Đáp án đúng là C."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "id": "rp:p2_006",
+  "level": "P2",
+  "title": "Interleaved Practice in Secondary Mathematics Classrooms",
+  "subtitle": "Why mixing problem types on homework sheets feels harder at first yet delivers stronger results on cumulative exams",
+  "topic": "education",
+  "paragraphs": [
+    {
+      "label": "A",
+      "text": "Open almost any secondary maths textbook and you will see a standard layout. First, the chapter explains a single rule, such as finding the area of a triangle or solving a linear equation. Next, it sets twenty exercises that all call for that exact same procedure. Teachers refer to this classic routine as blocked practice. Students typically gain rapid momentum during the lesson because they already know which formula to apply before reading each question. Yet when end-of-term exams mix algebra, shapes, and probability on the same page, many teens suddenly stall and pick the wrong method. Over the past fifteen years, cognitive researchers have tested an alternative called interleaved practice. In this approach, homework sets deliberately mix problem types so pupils must select a suitable method as well as carry out the steps."
+    },
+    {
+      "label": "B",
+      "text": "Why shuffling tasks aids long-term recall becomes clear once we split two distinct classroom skills. Applying a known rule is largely mechanical. Deciding which strategy fits a fresh prompt, however, demands close structural comparison. Under blocked practice, pupils rarely train that choice step because every item sits under one chapter title. Interleaved sheets force learners to scan for subtle cues—such as whether a worded task involves proportional growth or fixed rates—and to reload older procedures from memory after a gap of several days. That extra mental search slows down the first page of homework and feels harder right away. Educational psychologist Dr Sanjay Patel describes this added effort as a \"desirable difficulty\": although pupils make more early errors during homework, the repeated strain of choosing and retrieving methods builds far stronger exam recall."
+    },
+    {
+      "label": "C",
+      "text": "School trials have measured wide gaps on delayed tests. Between 2021 and 2023, Dr Patel and two colleagues ran a randomised study involving 840 pupils aged thirteen and fourteen across eighteen state schools. All classes covered the same core units on fractions, linear graphs, and angle geometry over twelve weeks. Half completed standard blocked sheets. The other half received mixed packets holding four current items alongside eight review problems drawn from prior weeks. Every teacher followed the same core lesson scripts so classroom instruction stayed even across both cohorts. During weekly homework checks, the blocked group actually scored 12% higher. However, on an unannounced cumulative exam held thirty days after the final unit, the interleaved group averaged 74% compared with 51% for the blocked cohort. Follow-up checks six weeks later showed a similar gap."
+    },
+    {
+      "label": "D",
+      "text": "Despite those strong test gains, mixed homework often meets early pushback from both teens and parents. Because blocked exercises feel smooth and produce high immediate marks, learners naturally mistake easy repetition for lasting mastery—a bias cognitive researchers call the \"illusion of competence\". In post-trial surveys from Dr Patel's study, nearly two-thirds of pupils in the mixed classes first rated their sheets as confusing or hard. Moreover, 58% still felt they would have learned more from single-topic pages even after seeing their own higher exam marks. Maths department head Dr Clara Lindholm notes that busy staff also hesitate to rewrite years of old booklets when lesson time is already tight. Change tends to stick only when schools supply ready-made mixed sets and explain the slower early pace clearly to parents."
+    },
+    {
+      "label": "E",
+      "text": "Researchers stress that mixed sheets are not a full substitute for blocked teaching. When teenagers meet an entirely new concept—such as handling negative exponents or proving triangle congruence for the first time—mixing several half-understood rules at once can overload working memory and trigger quick frustration. Pupils need a short breathing space before juggling multiple methods. Dr Lindholm and cognitive theorist Prof Owen Griffiths both recommend a hybrid sequence: begin each new topic with a short, focused block of four to six worked examples and guided drills until pupils grasp the basic notation, then fold that skill into mixed review sheets over later weeks. Studies also show that interleaving works best among closely linked ideas that teens often mix up, rather than random subjects thrown together."
+    },
+    {
+      "label": "F",
+      "text": "Bringing interleaving into daily lessons takes real shifts beyond research journals. Most commercial textbooks remain organised into neat single-topic chapters because schools expect teachers to locate a specific skill quickly during lesson planning. Reprinting whole series is costly for publishers. Recently, however, several independent teacher groups have shared free modular task banks that weave older exam topics into weekly homework automatically. Digital homework platforms can also schedule tailored review questions based on each pupil's past errors, though Dr Patel cautions that software works best when teachers still lead brief class talks comparing why two similar-looking prompts demand different strategies. Used with care beside clear first teaching, interleaved practice offers a low-cost way to turn short-term drill into lasting maths skill."
+    }
+  ],
+  "wordCount": 775,
+  "glossary": [
+    {
+      "term": "blocked practice",
+      "meaningVi": "luyện tập theo khối: làm liên tiếp nhiều bài cùng một dạng toán ngay sau khi học công thức"
+    },
+    {
+      "term": "interleaved practice",
+      "meaningVi": "luyện tập xen kẽ: trộn nhiều dạng bài khác nhau trong cùng một phiếu bài tập để rèn kỹ năng chọn phương pháp"
+    },
+    {
+      "term": "desirable difficulty",
+      "meaningVi": "độ khó có lợi: mức thử thách khiến việc học ban đầu chậm hơn nhưng giúp ghi nhớ bền vững hơn"
+    },
+    {
+      "term": "working memory",
+      "meaningVi": "trí nhớ làm việc: vùng lưu giữ và xử lý thông tin tạm thời có dung lượng giới hạn của não bộ"
+    },
+    {
+      "term": "cumulative exam",
+      "meaningVi": "bài kiểm tra tổng hợp kiến thức của nhiều chuyên đề đã học trước đó"
+    }
+  ],
+  "questionGroups": [
+    {
+      "groupId": "p2_006_g1",
+      "type": "tfng",
+      "instructions": "Do the following statements agree with the information given in the passage? Choose TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, or NOT GIVEN if there is no information on this.",
+      "questions": [
+        {
+          "qid": "p2_006_q01",
+          "number": 1,
+          "prompt": "Students completing conventional single-topic exercises often move rapidly since the required technique is obvious in advance.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "A",
+              "start": 325,
+              "end": 460,
+              "quote": "Students typically gain rapid momentum during the lesson because they already know which formula to apply before reading each question."
+            }
+          ],
+          "trapType": "causation",
+          "explanationVi": "Đoạn A giải thích học sinh thường tạo đà rất nhanh trong bài tập theo khối vì các em đã biết sẵn công thức cần dùng trước khi đọc đề. Nguyên nhân và kết quả khớp hoàn toàn nên chọn TRUE.",
+          "steps": [
+            "Định vị phần mô tả luyện tập theo khối ('blocked practice') ở đoạn A.",
+            "Đối chiếu 'progress quickly' với 'gain rapid momentum' và lý do đã biết trước công thức.",
+            "Ý khớp trực tiếp nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_006_q02",
+          "number": 2,
+          "prompt": "Interleaved worksheets make students look for subtle differences between problem cues rather than simply repeating one rule.",
+          "answer": {
+            "key": "TRUE"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 347,
+              "end": 550,
+              "quote": "Interleaved sheets force learners to scan for subtle cues—such as whether a worded task involves proportional growth or fixed rates—and to reload older procedures from memory after a gap of several days."
+            }
+          ],
+          "trapType": "partial_match",
+          "explanationVi": "Đoạn B nêu rõ phiếu bài tập xen kẽ buộc học sinh tìm các dấu hiệu tinh tế để phân biệt dạng toán thay vì áp dụng máy móc một quy tắc. Chọn TRUE.",
+          "steps": [
+            "Tìm phần so sánh kỹ năng chọn phương pháp và phiếu bài tập xen kẽ ở đoạn B.",
+            "Đối chiếu 'look for subtle differences between problem cues' với 'scan for subtle cues'.",
+            "Trùng khớp hoàn toàn nên chọn TRUE."
+          ]
+        },
+        {
+          "qid": "p2_006_q03",
+          "number": 3,
+          "prompt": "In Dr Patel's classroom study, the interleaved group achieved higher marks than the blocked group on weekly homework checks.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 587,
+              "end": 663,
+              "quote": "During weekly homework checks, the blocked group actually scored 12% higher."
+            }
+          ],
+          "trapType": "time_sequence",
+          "explanationVi": "Đoạn C ghi rõ ở các bài kiểm tra bài tập hàng tuần, chính nhóm luyện theo khối mới đạt điểm cao hơn 12%, còn nhóm xen kẽ chỉ vượt trội ở bài thi tổng hợp sau 30 ngày. Chọn FALSE.",
+          "steps": [
+            "Tìm kết quả 'weekly homework checks' trong nghiên cứu của Tiến sĩ Patel ở đoạn C.",
+            "Đọc chính xác nhóm nào điểm cao hơn: 'the blocked group actually scored 12% higher'.",
+            "Câu hỏi đảo ngược hai nhóm nên chọn FALSE."
+          ]
+        },
+        {
+          "qid": "p2_006_q04",
+          "number": 4,
+          "prompt": "Parents in Dr Patel's trial complained more frequently about interleaved worksheets than their children did.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 0,
+              "end": 103,
+              "quote": "Despite those strong test gains, mixed homework often meets early pushback from both teens and parents."
+            }
+          ],
+          "trapType": "comparison",
+          "explanationVi": "Đoạn D có nhắc phản ứng ban đầu từ cả học sinh lẫn phụ huynh và nêu tỷ lệ khảo sát học sinh, nhưng hoàn toàn không so sánh tần suất phàn nàn giữa phụ huynh và con cái. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm chi tiết về phụ huynh và học sinh ở đoạn D.",
+            "Kiểm tra xem bài có so sánh bên nào phàn nàn nhiều hơn hay không.",
+            "Không có phép so sánh này nên chọn NOT GIVEN."
+          ]
+        },
+        {
+          "qid": "p2_006_q05",
+          "number": 5,
+          "prompt": "Prof Owen Griffiths recommends dropping blocked drills completely when introducing brand-new mathematical topics.",
+          "answer": {
+            "key": "FALSE"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 389,
+              "end": 678,
+              "quote": "Dr Lindholm and cognitive theorist Prof Owen Griffiths both recommend a hybrid sequence: begin each new topic with a short, focused block of four to six worked examples and guided drills until pupils grasp the basic notation, then fold that skill into mixed review sheets over later weeks."
+            }
+          ],
+          "trapType": "qualifier",
+          "explanationVi": "Đoạn E cho biết Giáo sư Owen Griffiths khuyên dùng lộ trình kết hợp, bắt đầu mỗi chuyên đề mới bằng một khối ngắn 4 đến 6 bài tập tập trung chứ không bỏ hẳn luyện tập theo khối. Chọn FALSE.",
+          "steps": [
+            "Tìm tên Prof Owen Griffiths ở đoạn E.",
+            "Đọc khuyến nghị bắt đầu chủ đề mới bằng 'a short, focused block of four to six worked examples and guided drills'.",
+            "Trái ngược với 'dropping blocked drills completely' nên chọn FALSE."
+          ]
+        },
+        {
+          "qid": "p2_006_q06",
+          "number": 6,
+          "prompt": "Major commercial textbook publishers have announced plans to switch to mixed-topic chapters within the next five years.",
+          "answer": {
+            "key": "NOT GIVEN"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 85,
+              "end": 250,
+              "quote": "Most commercial textbooks remain organised into neat single-topic chapters because schools expect teachers to locate a specific skill quickly during lesson planning."
+            }
+          ],
+          "trapType": "extra_claim",
+          "explanationVi": "Đoạn F giải thích lý do sách giáo khoa thương mại vẫn chia chương đơn chủ đề và nêu các nhóm độc lập phát hành kho bài tập trộn miễn phí, nhưng không đề cập kế hoạch đổi mới trong 5 năm tới của nhà xuất bản thương mại. Chọn NOT GIVEN.",
+          "steps": [
+            "Tìm cụm 'commercial textbooks' ở đoạn F.",
+            "Kiểm tra xem có thông tin về kế hoạch 5 năm tới của các nhà xuất bản lớn hay không.",
+            "Không có dữ kiện này nên chọn NOT GIVEN."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_006_g2",
+      "type": "mcq_single",
+      "instructions": "Choose the correct letter, A, B, C, or D.",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_006_q07",
+          "number": 7,
+          "prompt": "What does Dr Sanjay Patel mean by describing interleaved practice as a \"desirable difficulty\"?\nA. Teachers should assign examination tasks designed for older year groups.\nB. Early homework effort in choosing and recalling methods strengthens later exam memory.\nC. Pupils should be prevented from viewing worked examples before a test.\nD. Effective homework sheets should aim to eliminate early student mistakes.",
+          "answer": {
+            "key": "B"
+          },
+          "evidence": [
+            {
+              "paragraph": "B",
+              "start": 643,
+              "end": 884,
+              "quote": "Educational psychologist Dr Sanjay Patel describes this added effort as a \"desirable difficulty\": although pupils make more early errors during homework, the repeated strain of choosing and retrieving methods builds far stronger exam recall."
+            }
+          ],
+          "explanationVi": "Đoạn B giải thích cụm 'desirable difficulty' nghĩa là dù học sinh mắc nhiều lỗi hơn lúc đầu khi làm bài tập, nỗ lực chọn và gợi nhớ phương pháp giúp củng cố trí nhớ khi thi mạnh hơn nhiều. Chọn B.",
+          "steps": [
+            "Tìm cụm 'desirable difficulty' ở cuối đoạn B.",
+            "Đọc lời giải thích sau dấu hai chấm về lỗi ban đầu và trí nhớ khi thi vững hơn.",
+            "Đối chiếu 4 phương án và chọn B."
+          ]
+        },
+        {
+          "qid": "p2_006_q08",
+          "number": 8,
+          "prompt": "What happened on the unannounced cumulative exam held thirty days after Dr Patel's twelve-week trial?\nA. Both student groups earned almost identical average marks.\nB. The blocked group kept its earlier 12% advantage over the interleaved group.\nC. The interleaved group substantially outperformed the blocked group.\nD. Only pupils who scored highly on weekly sheets completed the exam.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 664,
+              "end": 822,
+              "quote": "However, on an unannounced cumulative exam held thirty days after the final unit, the interleaved group averaged 74% compared with 51% for the blocked cohort."
+            }
+          ],
+          "explanationVi": "Đoạn C cho biết trong bài thi tổng hợp bất ngờ sau 30 ngày, nhóm xen kẽ đạt trung bình 74% so với 51% của nhóm học theo khối—vượt trội rõ rệt. Chọn C.",
+          "steps": [
+            "Tìm cụm 'unannounced cumulative exam held thirty days after' ở cuối đoạn C.",
+            "So sánh hai con số 74% (nhóm xen kẽ) và 51% (nhóm theo khối).",
+            "Chọn C."
+          ]
+        },
+        {
+          "qid": "p2_006_q09",
+          "number": 9,
+          "prompt": "According to paragraph D, why do many teenagers misjudge the value of blocked worksheets?\nA. Smooth repetition and quick early marks create a false impression of deep mastery.\nB. Weekly homework sheets rarely show students their actual scores.\nC. Blocked sheets mix more topic areas than end-of-term examinations.\nD. Teachers discourage pupils from comparing different practice styles.",
+          "answer": {
+            "key": "A"
+          },
+          "evidence": [
+            {
+              "paragraph": "D",
+              "start": 104,
+              "end": 302,
+              "quote": "Because blocked exercises feel smooth and produce high immediate marks, learners naturally mistake easy repetition for lasting mastery—a bias cognitive researchers call the \"illusion of competence\"."
+            }
+          ],
+          "explanationVi": "Đoạn D chỉ ra bài tập theo khối cho cảm giác trôi chảy và điểm tức thời cao nên học sinh nhầm sự lặp lại dễ dàng với việc nắm vững lâu dài ('illusion of competence'). Chọn A.",
+          "steps": [
+            "Đọc câu thứ hai đoạn D giải thích thiên kiến 'illusion of competence'.",
+            "Đối chiếu với phương án A về cảm giác mượt mà và điểm sớm cao gây ảo giác thành thạo.",
+            "Chọn A."
+          ]
+        },
+        {
+          "qid": "p2_006_q10",
+          "number": 10,
+          "prompt": "What condition does Dr Patel emphasise regarding digital homework platforms?\nA. They are currently too costly for state secondary schools to purchase.\nB. They cannot accurately track individual pupils' earlier mistakes.\nC. They work best when combined with brief teacher-led comparisons of problem strategies.\nD. They encourage pupils to copy worked solutions without showing steps.",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 456,
+              "end": 725,
+              "quote": "Digital homework platforms can also schedule tailored review questions based on each pupil's past errors, though Dr Patel cautions that software works best when teachers still lead brief class talks comparing why two similar-looking prompts demand different strategies."
+            }
+          ],
+          "explanationVi": "Đoạn F dẫn lưu ý của Tiến sĩ Patel rằng phần mềm bài tập phát huy hiệu quả nhất khi giáo viên vẫn dẫn dắt thảo luận ngắn trên lớp để so sánh vì sao hai đề giống nhau lại cần chiến lược khác nhau. Chọn C.",
+          "steps": [
+            "Tìm cụm 'Digital homework platforms' và tên Dr Patel ở đoạn F.",
+            "Đọc vế lưu ý sau 'though Dr Patel cautions that software works best when...'.",
+            "Chọn C."
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "p2_006_g3",
+      "type": "matching_info",
+      "instructions": "The passage has six paragraphs, A–F. Which paragraph contains the following information? Choose the correct letter, A–F.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Paragraph A"
+        },
+        {
+          "key": "B",
+          "text": "Paragraph B"
+        },
+        {
+          "key": "C",
+          "text": "Paragraph C"
+        },
+        {
+          "key": "D",
+          "text": "Paragraph D"
+        },
+        {
+          "key": "E",
+          "text": "Paragraph E"
+        },
+        {
+          "key": "F",
+          "text": "Paragraph F"
+        }
+      ],
+      "questions": [
+        {
+          "qid": "p2_006_q11",
+          "number": 11,
+          "prompt": "the exact number of pupils and state schools that participated in a twelve-week trial",
+          "answer": {
+            "key": "C"
+          },
+          "evidence": [
+            {
+              "paragraph": "C",
+              "start": 56,
+              "end": 208,
+              "quote": "Between 2021 and 2023, Dr Patel and two colleagues ran a randomised study involving 840 pupils aged thirteen and fourteen across eighteen state schools."
+            }
+          ],
+          "explanationVi": "Chỉ đoạn C cung cấp con số cụ thể 840 học sinh tại 18 trường công lập tham gia nghiên cứu kéo dài 12 tuần. Chọn C.",
+          "steps": [
+            "Quét nhanh số lượng học sinh và trường học ('840 pupils', 'eighteen state schools', 'twelve weeks').",
+            "Xác nhận thông tin chỉ xuất hiện ở đoạn C.",
+            "Chọn C."
+          ]
+        },
+        {
+          "qid": "p2_006_q12",
+          "number": 12,
+          "prompt": "a warning that shuffling unfamiliar rules too soon can overload a learner's working memory",
+          "answer": {
+            "key": "E"
+          },
+          "evidence": [
+            {
+              "paragraph": "E",
+              "start": 85,
+              "end": 318,
+              "quote": "When teenagers meet an entirely new concept—such as handling negative exponents or proving triangle congruence for the first time—mixing several half-understood rules at once can overload working memory and trigger quick frustration."
+            }
+          ],
+          "explanationVi": "Đoạn E cảnh báo khi học sinh lần đầu gặp khái niệm mới, việc trộn ngay nhiều quy tắc chưa nắm chắc có thể làm quá tải trí nhớ làm việc ('overload working memory'). Chọn E.",
+          "steps": [
+            "Tìm cụm từ khoá 'overload working memory' và khái niệm mới hoàn toàn.",
+            "Xác nhận lời cảnh báo này nằm duy nhất ở đoạn E.",
+            "Chọn E."
+          ]
+        },
+        {
+          "qid": "p2_006_q13",
+          "number": 13,
+          "prompt": "the reason commercial mathematics textbooks still group exercises into single-topic chapters",
+          "answer": {
+            "key": "F"
+          },
+          "evidence": [
+            {
+              "paragraph": "F",
+              "start": 85,
+              "end": 250,
+              "quote": "Most commercial textbooks remain organised into neat single-topic chapters because schools expect teachers to locate a specific skill quickly during lesson planning."
+            }
+          ],
+          "explanationVi": "Đoạn F giải thích sách giáo khoa thương mại vẫn chia chương theo từng chủ đề riêng vì trường học muốn giáo viên dễ tìm nhanh một kỹ năng khi soạn bài. Chọn F.",
+          "steps": [
+            "Tìm thông tin về sách giáo khoa thương mại ('commercial textbooks') và cách chia chương.",
+            "Xác định lý do nằm duy nhất ở đoạn F.",
+            "Chọn F."
+          ]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon-high@2026-11-20",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass"
+    }
+  }
+}
