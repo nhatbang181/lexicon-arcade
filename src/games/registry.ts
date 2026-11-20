@@ -195,6 +195,7 @@ const READY_GAME_LOADERS: Partial<
   v2: () => import('./v2-collocation-forge'),
   v3: () => import('./v3-paraphrase-radar'),
   r1: () => import('./r1-tfng-judge'),
+  r2: () => import('./r2-headline-editor'),
 };
 
 export const GAME_REGISTRY: GameDefinition[] = GAME_METAS.map((meta) => {
