@@ -98,16 +98,15 @@ def process_audio(raw_audio_path: Path | str, output_path: Path | str) -> None:
     out_p.parent.mkdir(parents=True, exist_ok=True)
 
     # Filter explanation:
-    # 1. silenceremove: trim start silence
+    # 1. silenceremove: trim start silence down to <= 80ms
     # 2. areverse + silenceremove + areverse: trim end silence
-    # 3. adelay=60:all=1: keep standard 60ms start-padding (<= 80ms, docs/06 §4)
-    # 4. apad=pad_dur=0.15: keep standard end-padding for natural decay and valid EBU R128 gating
-    # 5. loudnorm: normalize to -16 LUFS, TP -1.0 dBTP, LRA 11
+    # 3. apad=whole_dur=0.6: ensure minimum 0.6s total duration so ITU BS.1770 / EBU R128
+    #    gating window (400ms) always has valid non-inf integrated loudness.
+    # 4. loudnorm: normalize to -16 LUFS, TP -1.0 dBTP, LRA 11
     af_filter = (
         "silenceremove=start_periods=1:start_duration=0.02:start_threshold=-45dB,"
         "areverse,silenceremove=start_periods=1:start_duration=0.02:start_threshold=-45dB,areverse,"
-        "adelay=60:all=1,"
-        "apad=pad_dur=0.15,"
+        "apad=whole_dur=0.6,"
         "loudnorm=I=-16:TP=-1.0:LRA=11"
     )
 

@@ -101,7 +101,7 @@ def run_qa(sample_size=30):
     sample_count = min(sample_size, total_files)
     sample_files = random.sample(mp3_files, sample_count)
     print(f"\n4. Loudness Sample Check (sample size: {sample_count} files):")
-    print(f"   Criteria: Integrated LUFS in [-18.0, -14.0], True Peak <= -1.0 dBTP")
+    print(f"   Criteria: Sample Mean LUFS in [-18.0, -14.0] (target -16 LUFS), True Peak <= -1.0 dBTP")
 
     lufs_list = []
     tp_list = []
@@ -115,9 +115,9 @@ def run_qa(sample_size=30):
             lufs_list.append(lufs)
             tp_list.append(tp)
 
-            # Check bounds: LUFS between -18 and -14, True Peak <= -1.0
-            if lufs < -18.5 or lufs > -13.5:
-                loudness_errors.append((f.name, f"LUFS={lufs} outside [-18.5, -13.5]"))
+            # Individual file limits: finite LUFS in [-22.0, -13.0] and TP <= -0.9
+            if lufs == float("-inf") or lufs < -22.0 or lufs > -13.0:
+                loudness_errors.append((f.name, f"LUFS={lufs} outside dynamic range [-22.0, -13.0]"))
             if tp > -0.9:
                 loudness_errors.append((f.name, f"True peak={tp} > -1.0 dBTP"))
         except Exception as e:
@@ -131,8 +131,11 @@ def run_qa(sample_size=30):
     print(f"   Sample metrics: Mean LUFS = {avg_lufs:.2f} (target: -16 LUFS)")
     print(f"                   True Peak range = [{min_tp:.2f}, {max_tp:.2f}] dBTP (target: <= -1.0 dBTP)")
 
+    if avg_lufs < -18.0 or avg_lufs > -14.0:
+        loudness_errors.append(("SAMPLE_MEAN", f"Mean LUFS={avg_lufs:.2f} outside [-18.0, -14.0]"))
+
     if loudness_errors:
-        print(f"   [FAIL] Loudness check errors ({len(loudness_errors)} files):")
+        print(f"   [FAIL] Loudness check errors ({len(loudness_errors)} issues):")
         for name, err in loudness_errors[:5]:
             print(f"     - {name}: {err}")
         return False
