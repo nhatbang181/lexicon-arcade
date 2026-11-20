@@ -34,3 +34,5 @@
 ## D. Nhật ký quyết định nhỏ (worker ghi tiếp bên dưới)
 - 2026-11-20 · claude-code · Chuyển docs V1/V2 vào `docs/archive/v1-2026-11-17/` · gom tài liệu, tránh worker làm theo plan cũ.
 - 2026-11-20 · r-shell / r-core / r-assets · Chốt M0: dùng `ts-fsrs@6.0.0`, `zod@4.6.7`, `howler` audio sprite chuẩn hóa −20 LUFS (hỗ trợ cả 12 tên cue chính lẫn 8 alias trong `docs/10`), lazy-load `src/legacy/App.tsx` tại `#/legacy`.
+- 2026-11-20 · r-audio-vocab · Dùng `edge-tts` giọng UK (`en-GB-SoniaNeural`, 24 kHz mono 48 kbps, loudnorm −16 LUFS, 537 từ ưu tiên = 2.63 MB) cho audio vocab offline theo phương án công cụ miễn phí đã duyệt (B.6–B.7) để tránh phụ thuộc `espeak-ng` trên Windows.
+- 2026-11-20 · r-m1-fix · Chuẩn hóa LF (`\r\n`→`\n`) khi tính SHA-256 ở `60_build_manifest.mjs` và `run_all.mjs` để `validate:data` ổn định 100% giữa Windows (CRLF) và Linux CI (LF).
