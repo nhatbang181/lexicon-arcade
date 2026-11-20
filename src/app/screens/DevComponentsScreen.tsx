@@ -18,14 +18,57 @@ import {
   EmptyState,
   Skeleton,
 } from '../../design/components';
-import { useTheme } from '../providers';
+import { CANONICAL_SFX_CUES, DEFAULT_SFX_SPRITE } from '../../core/audio/sfx';
+import { useAudio, useTheme } from '../providers';
+
+const GAME_ICON_ITEMS = [
+  { id: 'v1', label: 'V1 · Daily Run', skillColor: 'var(--color-vocab)' },
+  { id: 'v2', label: 'V2 · Collocation Forge', skillColor: 'var(--color-vocab)' },
+  { id: 'v3', label: 'V3 · Paraphrase Radar', skillColor: 'var(--color-vocab)' },
+  { id: 'l1', label: 'L1 · Trap Detector', skillColor: 'var(--color-listening)' },
+  { id: 'l2', label: 'L2 · Dictation Ladder', skillColor: 'var(--color-listening)' },
+  { id: 'r1', label: 'R1 · TFNG Judge', skillColor: 'var(--color-reading)' },
+  { id: 'r2', label: 'R2 · Headline Editor', skillColor: 'var(--color-reading)' },
+  { id: 'w1', label: 'W1 · Essay Lab', skillColor: 'var(--color-writing)' },
+  { id: 'w2', label: 'W2 · Writing Sprints', skillColor: 'var(--color-writing)' },
+  { id: 's1', label: 'S1 · Mock Examiner', skillColor: 'var(--color-speaking)' },
+  { id: 's2', label: 'S2 · 3-Second Rule', skillColor: 'var(--color-speaking)' },
+  { id: 'x1', label: 'X1 · Exam Room', skillColor: 'var(--color-exam)' },
+] as const;
+
+const BADGE_ICON_ITEMS = [
+  { id: 'streak-7', label: 'Streak 7 ngày' },
+  { id: 'streak-30', label: 'Streak 30 ngày' },
+  { id: 'streak-100', label: 'Streak 100 ngày' },
+  { id: 'cards-100', label: '100 thẻ FSRS' },
+  { id: 'cards-500', label: '500 thẻ FSRS' },
+  { id: 'cards-1000', label: '1000 thẻ FSRS' },
+  { id: 'band-65', label: 'Mốc Band 6.5' },
+  { id: 'band-70', label: 'Mốc Band 7.0' },
+  { id: 'band-75', label: 'Mốc Band 7.5' },
+  { id: 'band-80', label: 'Mốc Band 8.0' },
+  { id: 'first-essay', label: 'Bài viết đầu tiên' },
+  { id: 'first-speaking', label: 'Bài nói đầu tiên' },
+] as const;
+
+const ILLUSTRATION_ITEMS = [
+  { id: 'welcome', label: 'Welcome · Lộ trình 8.0' },
+  { id: 'goals', label: 'Goals · Mục tiêu Band' },
+  { id: 'devices', label: 'Devices · Thiết bị & Tai nghe' },
+  { id: 'placement', label: 'Placement · Kiểm tra đầu vào' },
+  { id: 'empty-cards', label: 'Empty Cards · Hết thẻ đến hạn' },
+  { id: 'offline', label: 'Offline · Chế độ ngoại tuyến' },
+] as const;
 
 export const DevComponentsScreen: React.FC = () => {
   const { theme, setTheme } = useTheme();
+  const { sfxVolume, setSfxVolume, muted, toggleMute, playSfx, lastPlayedCue } = useAudio();
   const [answerText, setAnswerText] = useState('sustainable development');
   const [audioPlaying, setAudioPlaying] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [sheetOpen, setSheetOpen] = useState(false);
+
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <div className="space-y-8 pb-12" data-testid="dev-components-showcase">
@@ -248,6 +291,182 @@ export const DevComponentsScreen: React.FC = () => {
           action={<Button variant="primary">Học thêm 10 từ mới</Button>}
         />
       </div>
+
+      {/* 7. SFX Audio Sprite Test Board */}
+      <Card padding="lg" className="space-y-5" data-testid="dev-sfx-test-board">
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+              7. SFX Audio Sprite · 12 Cue Chuẩn (10-MOTION-AND-SOUND.md §3)
+            </h2>
+            <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
+              Howler audio sprite (`sfx.webm` / `sfx.mp3` + `sfx.json`, chuẩn hoá −20 LUFS). Cue vừa phát:{' '}
+              <span className="font-mono font-semibold" style={{ color: 'var(--color-info)' }}>
+                {lastPlayedCue ?? 'chưa phát'}
+              </span>
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <label className="text-xs font-medium" style={{ color: 'var(--color-text-dim)' }}>
+              Âm lượng: {muted ? 'Tắt (0%)' : `${sfxVolume}%`}
+            </label>
+            <input
+              type="range"
+              min={0}
+              max={100}
+              value={muted ? 0 : sfxVolume}
+              onChange={(e) => setSfxVolume(Number(e.target.value))}
+              aria-label="Âm lượng SFX"
+              className="w-28 accent-blue-500"
+            />
+            <Button size="sm" variant="secondary" onClick={toggleMute}>
+              {muted ? 'Bật âm' : 'Tắt âm'}
+            </Button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+          {CANONICAL_SFX_CUES.map((cue) => {
+            const [offsetMs, durationMs] = DEFAULT_SFX_SPRITE[cue.name] ?? [0, 0];
+            const isLast = lastPlayedCue === cue.name;
+            return (
+              <button
+                key={cue.name}
+                type="button"
+                data-testid={`sfx-btn-${cue.name}`}
+                onClick={() => playSfx(cue.name)}
+                className="text-left rounded-xl p-3 transition-colors cursor-pointer"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  border: `1px solid ${isLast ? 'var(--color-info)' : 'var(--color-border)'}`,
+                }}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-mono text-sm font-bold" style={{ color: 'var(--color-text)' }}>
+                    ▶ {cue.label}
+                  </span>
+                  <span className="font-mono text-xs" style={{ color: 'var(--color-text-faint)' }}>
+                    {durationMs}ms
+                  </span>
+                </div>
+                <p className="text-xs mt-1" style={{ color: 'var(--color-text-dim)' }}>
+                  {cue.descriptionVi}
+                </p>
+                <p className="font-mono text-[11px] mt-1" style={{ color: 'var(--color-text-faint)' }}>
+                  @{offsetMs}ms{cue.alias ? ` · alias: ${cue.alias}` : ''}
+                </p>
+              </button>
+            );
+          })}
+        </div>
+      </Card>
+
+      {/* 8. Asset Preview: 12 Game Icons, 12 Badge Icons, 6 Illustrations */}
+      <Card padding="lg" className="space-y-6" data-testid="dev-assets-showcase">
+        <div>
+          <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+            8. Bộ Asset Chuẩn V3 · 12 Game Icons · 12 Huy hiệu · 6 Minh hoạ unDraw
+          </h2>
+          <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
+            Kiểm định bởi `scripts/validate/assets_credits.mjs` & ghi nguồn 100% tại `public/assets/CREDITS.md`.
+          </p>
+        </div>
+
+        {/* 12 Game Icons */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold" style={{ color: 'var(--color-text)' }}>
+            12 Game Icons (`public/assets/icons/games/*.svg` · game-icons.net CC BY 3.0)
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+            {GAME_ICON_ITEMS.map((item) => (
+              <div
+                key={item.id}
+                className="flex flex-col items-center gap-2 rounded-xl p-3 text-center"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  border: '1px solid var(--color-border)',
+                }}
+              >
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center"
+                  style={{ backgroundColor: 'var(--color-surface)', border: `1px solid ${item.skillColor}` }}
+                >
+                  <img
+                    src={`${baseUrl}assets/icons/games/${item.id}.svg`}
+                    alt={item.label}
+                    className="w-6 h-6"
+                  />
+                </div>
+                <span className="text-xs font-medium" style={{ color: 'var(--color-text)' }}>
+                  {item.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 12 Badge Icons */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold" style={{ color: 'var(--color-text)' }}>
+            12 Badge Icons (`public/assets/icons/badges/*.svg` · game-icons.net CC BY 3.0)
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+            {BADGE_ICON_ITEMS.map((item) => (
+              <div
+                key={item.id}
+                className="flex flex-col items-center gap-2 rounded-xl p-3 text-center"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  border: '1px solid var(--color-border)',
+                }}
+              >
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center"
+                  style={{ backgroundColor: 'var(--color-surface)' }}
+                >
+                  <img
+                    src={`${baseUrl}assets/icons/badges/${item.id}.svg`}
+                    alt={item.label}
+                    className="w-6 h-6"
+                  />
+                </div>
+                <span className="text-xs font-medium" style={{ color: 'var(--color-text)' }}>
+                  {item.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* 6 unDraw Illustrations */}
+        <div className="space-y-3">
+          <h3 className="text-sm font-bold" style={{ color: 'var(--color-text)' }}>
+            6 Minh hoạ SVG (`public/assets/illustrations/*.svg` · unDraw style `#3B82F6`)
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {ILLUSTRATION_ITEMS.map((item) => (
+              <div
+                key={item.id}
+                className="flex flex-col items-center gap-2 rounded-xl p-4"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  border: '1px solid var(--color-border)',
+                }}
+              >
+                <img
+                  src={`${baseUrl}assets/illustrations/${item.id}.svg`}
+                  alt={item.label}
+                  className="w-full max-w-[220px] h-32 object-contain"
+                />
+                <span className="text-xs font-medium" style={{ color: 'var(--color-text)' }}>
+                  {item.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Card>
 
       <Modal
         open={modalOpen}

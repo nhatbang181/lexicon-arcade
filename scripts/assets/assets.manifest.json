@@ -1,0 +1,349 @@
+{
+  "allowlistDomains": [
+    "lucide.dev",
+    "game-icons.net",
+    "kenney.nl",
+    "freesound.org",
+    "pixabay.com",
+    "freepd.com",
+    "undraw.co",
+    "openmoji.org",
+    "lottiefiles.com",
+    "newgeneralservicelist.com",
+    "huggingface.co"
+  ],
+  "gameIcons": [
+    {
+      "id": "v1",
+      "name": "V1 Daily Run · Sprint",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/sprint.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "sprint.svg", "to": "public/assets/icons/games/v1.svg" }]
+    },
+    {
+      "id": "v2",
+      "name": "V2 Collocation Forge · Anvil Impact",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/anvil-impact.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "anvil-impact.svg", "to": "public/assets/icons/games/v2.svg" }]
+    },
+    {
+      "id": "v3",
+      "name": "V3 Paraphrase Radar · Radar Sweep",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/radar-sweep.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "radar-sweep.svg", "to": "public/assets/icons/games/v3.svg" }]
+    },
+    {
+      "id": "l1",
+      "name": "L1 Trap Detector · Wolf Trap",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/wolf-trap.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "wolf-trap.svg", "to": "public/assets/icons/games/l1.svg" }]
+    },
+    {
+      "id": "l2",
+      "name": "L2 Dictation Ladder · Ladder",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/delapouite/ladder.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Delapouite",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "ladder.svg", "to": "public/assets/icons/games/l2.svg" }]
+    },
+    {
+      "id": "r1",
+      "name": "R1 TFNG Judge · Scales",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/scales.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "scales.svg", "to": "public/assets/icons/games/r1.svg" }]
+    },
+    {
+      "id": "r2",
+      "name": "R2 Headline Editor · Newspaper",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/delapouite/newspaper.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Delapouite",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "newspaper.svg", "to": "public/assets/icons/games/r2.svg" }]
+    },
+    {
+      "id": "w1",
+      "name": "W1 Essay Lab · Quill Ink",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/quill-ink.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "quill-ink.svg", "to": "public/assets/icons/games/w1.svg" }]
+    },
+    {
+      "id": "w2",
+      "name": "W2 Writing Sprints · Stopwatch",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/stopwatch.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "stopwatch.svg", "to": "public/assets/icons/games/w2.svg" }]
+    },
+    {
+      "id": "s1",
+      "name": "S1 Mock Examiner · Microphone",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/delapouite/microphone.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Delapouite",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "microphone.svg", "to": "public/assets/icons/games/s1.svg" }]
+    },
+    {
+      "id": "s2",
+      "name": "S2 3-Second Rule · Lightning Frequency",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/lightning-frequency.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "lightning-frequency.svg", "to": "public/assets/icons/games/s2.svg" }]
+    },
+    {
+      "id": "x1",
+      "name": "X1 Exam Room · Graduate Cap",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/delapouite/graduate-cap.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Delapouite",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "graduate-cap.svg", "to": "public/assets/icons/games/x1.svg" }]
+    }
+  ],
+  "badgeIcons": [
+    {
+      "id": "streak-7",
+      "name": "Badge · Streak 7 Days",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/carl-olsen/flame.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Carl Olsen",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "flame.svg", "to": "public/assets/icons/badges/streak-7.svg" }]
+    },
+    {
+      "id": "streak-30",
+      "name": "Badge · Streak 30 Days",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/fire-zone.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "fire-zone.svg", "to": "public/assets/icons/badges/streak-30.svg" }]
+    },
+    {
+      "id": "streak-100",
+      "name": "Badge · Streak 100 Days",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/fire-ring.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "fire-ring.svg", "to": "public/assets/icons/badges/streak-100.svg" }]
+    },
+    {
+      "id": "cards-100",
+      "name": "Badge · 100 FSRS Cards",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/poker-hand.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "poker-hand.svg", "to": "public/assets/icons/badges/cards-100.svg" }]
+    },
+    {
+      "id": "cards-500",
+      "name": "Badge · 500 FSRS Cards",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/book-aura.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "book-aura.svg", "to": "public/assets/icons/badges/cards-500.svg" }]
+    },
+    {
+      "id": "cards-1000",
+      "name": "Badge · 1000 FSRS Cards",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/bookmarklet.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "bookmarklet.svg", "to": "public/assets/icons/badges/cards-1000.svg" }]
+    },
+    {
+      "id": "band-65",
+      "name": "Badge · Band 6.5 Milestone",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/medal.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "medal.svg", "to": "public/assets/icons/badges/band-65.svg" }]
+    },
+    {
+      "id": "band-70",
+      "name": "Badge · Band 7.0 Milestone",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/delapouite/star-medal.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Delapouite",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "star-medal.svg", "to": "public/assets/icons/badges/band-70.svg" }]
+    },
+    {
+      "id": "band-75",
+      "name": "Badge · Band 7.5 Milestone",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/delapouite/ribbon-medal.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Delapouite",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "ribbon-medal.svg", "to": "public/assets/icons/badges/band-75.svg" }]
+    },
+    {
+      "id": "band-80",
+      "name": "Badge · Band 8.0 Milestone",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/trophy.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "trophy.svg", "to": "public/assets/icons/badges/band-80.svg" }]
+    },
+    {
+      "id": "first-essay",
+      "name": "Badge · First Essay Graded",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/lorc/scroll-unfurled.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Lorc",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "scroll-unfurled.svg", "to": "public/assets/icons/badges/first-essay.svg" }]
+    },
+    {
+      "id": "first-speaking",
+      "name": "Badge · First Speaking Mock",
+      "url": "https://game-icons.net/icons/ffffff/000000/1x1/delapouite/public-speaker.svg",
+      "source": "game-icons.net",
+      "license": "CC BY 3.0",
+      "author": "Delapouite",
+      "modified": "Yes (removed background rect, set fill=\"currentColor\")",
+      "files": [{ "from": "public-speaker.svg", "to": "public/assets/icons/badges/first-speaking.svg" }]
+    }
+  ],
+  "illustrations": [
+    {
+      "id": "welcome",
+      "name": "Illustration · Welcome to Roadmap 8.0",
+      "url": "https://undraw.co/illustrations",
+      "source": "unDraw",
+      "license": "unDraw License",
+      "author": "Katerina Limpitsouni (unDraw style)",
+      "modified": "Yes (primary color #3B82F6, SVGO optimized)",
+      "files": [{ "from": "welcome.svg", "to": "public/assets/illustrations/welcome.svg" }]
+    },
+    {
+      "id": "goals",
+      "name": "Illustration · Target Band & Daily Goals",
+      "url": "https://undraw.co/illustrations",
+      "source": "unDraw",
+      "license": "unDraw License",
+      "author": "Katerina Limpitsouni (unDraw style)",
+      "modified": "Yes (primary color #3B82F6, SVGO optimized)",
+      "files": [{ "from": "goals.svg", "to": "public/assets/illustrations/goals.svg" }]
+    },
+    {
+      "id": "devices",
+      "name": "Illustration · Desktop & Audio Setup",
+      "url": "https://undraw.co/illustrations",
+      "source": "unDraw",
+      "license": "unDraw License",
+      "author": "Katerina Limpitsouni (unDraw style)",
+      "modified": "Yes (primary color #3B82F6, SVGO optimized)",
+      "files": [{ "from": "devices.svg", "to": "public/assets/illustrations/devices.svg" }]
+    },
+    {
+      "id": "placement",
+      "name": "Illustration · Quick Placement Diagnostic",
+      "url": "https://undraw.co/illustrations",
+      "source": "unDraw",
+      "license": "unDraw License",
+      "author": "Katerina Limpitsouni (unDraw style)",
+      "modified": "Yes (primary color #3B82F6, SVGO optimized)",
+      "files": [{ "from": "placement.svg", "to": "public/assets/illustrations/placement.svg" }]
+    },
+    {
+      "id": "empty-cards",
+      "name": "Illustration · All Due Cards Completed",
+      "url": "https://undraw.co/illustrations",
+      "source": "unDraw",
+      "license": "unDraw License",
+      "author": "Katerina Limpitsouni (unDraw style)",
+      "modified": "Yes (primary color #3B82F6, SVGO optimized)",
+      "files": [{ "from": "empty-cards.svg", "to": "public/assets/illustrations/empty-cards.svg" }]
+    },
+    {
+      "id": "offline",
+      "name": "Illustration · Offline Study Mode",
+      "url": "https://undraw.co/illustrations",
+      "source": "unDraw",
+      "license": "unDraw License",
+      "author": "Katerina Limpitsouni (unDraw style)",
+      "modified": "Yes (primary color #3B82F6, SVGO optimized)",
+      "files": [{ "from": "offline.svg", "to": "public/assets/illustrations/offline.svg" }]
+    }
+  ],
+  "sfxPacks": [
+    {
+      "id": "kenney-interface-sounds",
+      "name": "Kenney Interface Sounds",
+      "url": "https://kenney.nl/assets/interface-sounds",
+      "source": "kenney.nl",
+      "license": "CC0 1.0 Universal",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "modified": "Yes (trimmed, normalized to -20 LUFS, combined into sfx.webm / sfx.mp3 / sfx.json)",
+      "files": [
+        { "from": "Audio/click_002.ogg", "to": "public/assets/sfx/sfx.webm" },
+        { "from": "Audio/confirmation_001.ogg", "to": "public/assets/sfx/sfx.mp3" },
+        { "from": "Audio/error_004.ogg", "to": "public/assets/sfx/sfx.json" }
+      ]
+    },
+    {
+      "id": "kenney-digital-audio",
+      "name": "Kenney Digital Audio",
+      "url": "https://kenney.nl/assets/digital-audio",
+      "source": "kenney.nl",
+      "license": "CC0 1.0 Universal",
+      "author": "Kenney Vleugels (Kenney.nl)",
+      "modified": "Yes (trimmed, normalized to -20 LUFS, combined into sfx.webm / sfx.mp3 / sfx.json)",
+      "files": [
+        { "from": "Audio/powerUp7.ogg", "to": "public/assets/sfx/sfx.webm" }
+      ]
+    }
+  ]
+}

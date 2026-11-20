@@ -1,0 +1,88 @@
+{
+  "urls": [
+    "assets/sfx/sfx.webm",
+    "assets/sfx/sfx.mp3"
+  ],
+  "sprite": {
+    "tap": [
+      0,
+      20
+    ],
+    "correct": [
+      132,
+      260
+    ],
+    "wrong": [
+      512,
+      104
+    ],
+    "streak": [
+      736,
+      320
+    ],
+    "combo": [
+      736,
+      320
+    ],
+    "sessionDone": [
+      1176,
+      490
+    ],
+    "goal": [
+      1176,
+      490
+    ],
+    "levelUp": [
+      1787,
+      412
+    ],
+    "levelup": [
+      1787,
+      412
+    ],
+    "tick": [
+      2319,
+      27
+    ],
+    "countdownEnd": [
+      2465,
+      120
+    ],
+    "timeup": [
+      2465,
+      120
+    ],
+    "flip": [
+      2705,
+      140
+    ],
+    "page": [
+      2705,
+      140
+    ],
+    "highlight": [
+      2965,
+      240
+    ],
+    "reveal": [
+      2965,
+      240
+    ],
+    "recordStart": [
+      3325,
+      150
+    ],
+    "record_start": [
+      3325,
+      150
+    ],
+    "recordStop": [
+      3595,
+      150
+    ],
+    "record_stop": [
+      3595,
+      150
+    ]
+  }
+}

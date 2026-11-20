@@ -1,18 +1,13 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
+import {
+  CANONICAL_SFX_CUES,
+  sfxEngine,
+  type CanonicalSfxCue,
+  type PlaySfxOptions,
+  type SfxName,
+} from '../../core/audio/sfx';
 
-export type SfxName =
-  | 'tap'
-  | 'correct'
-  | 'wrong'
-  | 'combo'
-  | 'reveal'
-  | 'tick'
-  | 'timeup'
-  | 'goal'
-  | 'levelup'
-  | 'record_start'
-  | 'record_stop'
-  | 'page';
+export { CANONICAL_SFX_CUES, type CanonicalSfxCue, type PlaySfxOptions, type SfxName };
 
 export interface AudioContextValue {
   sfxVolume: number; // 0..100, default 60
@@ -20,7 +15,8 @@ export interface AudioContextValue {
   muted: boolean;
   setMuted: (m: boolean) => void;
   toggleMute: () => void;
-  playSfx: (name: SfxName) => void;
+  playSfx: (name: SfxName, options?: PlaySfxOptions) => void;
+  lastPlayedCue: SfxName | null;
 }
 
 const AudioContext = createContext<AudioContextValue>({
@@ -30,25 +26,57 @@ const AudioContext = createContext<AudioContextValue>({
   setMuted: () => undefined,
   toggleMute: () => undefined,
   playSfx: () => undefined,
+  lastPlayedCue: null,
 });
 
 export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [sfxVolume, setSfxVolumeState] = useState<number>(60);
-  const [muted, setMuted] = useState<boolean>(false);
+  const [muted, setMutedState] = useState<boolean>(false);
+  const [lastPlayedCue, setLastPlayedCue] = useState<SfxName | null>(null);
 
-  const setSfxVolume = (v: number) => {
-    const clamped = Math.max(0, Math.min(100, Math.round(v)));
-    setSfxVolumeState(clamped);
-    if (clamped === 0) setMuted(true);
-    else if (muted) setMuted(false);
-  };
+  useEffect(() => {
+    sfxEngine.init();
+    sfxEngine.setVolume(sfxVolume);
+    sfxEngine.setMuted(muted);
+  }, []);
 
-  const toggleMute = () => setMuted((prev) => !prev);
+  const setSfxVolume = useCallback(
+    (v: number) => {
+      const clamped = Math.max(0, Math.min(100, Math.round(v)));
+      setSfxVolumeState(clamped);
+      sfxEngine.setVolume(clamped);
+      if (clamped === 0) {
+        setMutedState(true);
+        sfxEngine.setMuted(true);
+      } else if (muted) {
+        setMutedState(false);
+        sfxEngine.setMuted(false);
+      }
+    },
+    [muted]
+  );
 
-  const playSfx = (_name: SfxName) => {
-    // Khung AudioProvider M0: sẽ kết nối sprite howler ở M1/M3 khi có sfx.webm
-    if (muted || sfxVolume <= 0) return;
-  };
+  const setMuted = useCallback((m: boolean) => {
+    setMutedState(m);
+    sfxEngine.setMuted(m);
+  }, []);
+
+  const toggleMute = useCallback(() => {
+    setMutedState((prev) => {
+      const next = !prev;
+      sfxEngine.setMuted(next);
+      return next;
+    });
+  }, []);
+
+  const playSfx = useCallback(
+    (name: SfxName, options?: PlaySfxOptions) => {
+      if (muted || sfxVolume <= 0) return;
+      sfxEngine.play(name, options);
+      setLastPlayedCue(name);
+    },
+    [muted, sfxVolume]
+  );
 
   return (
     <AudioContext.Provider
@@ -59,6 +87,7 @@ export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         setMuted,
         toggleMute,
         playSfx,
+        lastPlayedCue,
       }}
     >
       {children}
