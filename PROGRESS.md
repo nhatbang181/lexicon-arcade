@@ -25,7 +25,7 @@
 - ✅ r-game-v1 (`6e5edcc`) · ✅ r-game-v2v3 (`65a257b`) · ✅ r-m1-data-vocab (`7b587f5`) · ✅ rv-data-vocab (`aa75e72`) · ✅ r-today (`4d18e22`) · ✅ r-m1-fix (`de13f7e`) · ✅ r-audio-vocab (`3db3e29`)
 
 ### M2 (Đang chạy)
-- 🔄 r-data-reading · 🔄 r-game-r1 · ⏳ rv-data-reading (`claude-sonnet-5-5-medium`) · ⏳ r-game-r2
+- 🔄 r-data-reading · ✅ r-game-r1 (`1659c73` – 23/23 tests) · 🔄 r-game-r2 · ⏳ rv-data-reading (`claude-sonnet-5-5-medium`)
 
 ## Lỗi đã biết
 - MCP `anki` (AnkiConnect) không kết nối được (ECONNREFUSED). Không ảnh hưởng tiến độ.
