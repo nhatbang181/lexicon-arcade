@@ -28,7 +28,7 @@
 - ✅ r-data-listening (`d51376d`) · ✅ rv-data-listening (`cc57f4a`, 97.5%) · ✅ r-game-l1 (`5d610ad`) · ✅ r-game-l2 (`59b2f25`) · ✅ r-audio-listening (`8583912`)
 
 ### M4 (Đang chạy)
-- 🔄 r-grading-core · 🔄 r-data-writing · ⏳ r-chart · ⏳ r-game-w1 · ⏳ r-game-w2
+- ✅ r-grading-core (`f3accaa` – 43/43 tests) · ✅ r-data-writing (`8f1c8ca` – 60 T2 + 24 T1 + 50 cliches) · 🔄 r-chart · 🔄 r-game-w1 · ⏳ r-game-w2
 
 ## Lỗi đã biết
 - 1 câu YNNG `p2_004_q05` hơi mơ hồ theo blind-solve M2 (83/84) — tinh chỉnh ở M6/M7.
