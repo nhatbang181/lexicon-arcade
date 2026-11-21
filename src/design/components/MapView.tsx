@@ -17,6 +17,10 @@ export interface MapViewProps {
   /** Callback when learner clicks or activates a letter slot on the map. */
   onSelectSlot?: (slotKey: string) => void;
   interactive?: boolean;
+  /** Show zoom controls in the header (default true). */
+  showZoomControls?: boolean;
+  /** Optional short badge shown next to the map title (e.g. year in Task 1 maps). */
+  badge?: string;
   title?: string;
   className?: string;
 }
@@ -99,6 +103,8 @@ export const MapView: React.FC<MapViewProps> = ({
   assignedSlots = {},
   onSelectSlot,
   interactive = true,
+  showZoomControls = true,
+  badge,
   title,
   className = '',
 }) => {
@@ -126,10 +132,26 @@ export const MapView: React.FC<MapViewProps> = ({
           borderColor: 'var(--color-border)',
         }}
       >
-        <span className="text-xs font-semibold truncate" style={{ color: 'var(--color-text)' }}>
-          {title ?? 'Bản đồ khu vực (bấm chữ cái để chọn)'}
-        </span>
-        <div className="inline-flex items-center gap-1 shrink-0">
+        <div className="flex items-center gap-2 min-w-0">
+          <span className="text-xs font-semibold truncate" style={{ color: 'var(--color-text)' }}>
+            {title ?? 'Bản đồ khu vực (bấm chữ cái để chọn)'}
+          </span>
+          {badge && (
+            <span
+              className="text-[11px] font-bold px-2 py-0.5 rounded-[var(--radius-sm)] border shrink-0 tabular-nums"
+              style={{
+                fontFamily: 'var(--font-mono)',
+                backgroundColor: 'var(--color-surface)',
+                borderColor: 'var(--color-border)',
+                color: 'var(--color-text)',
+              }}
+            >
+              {badge}
+            </span>
+          )}
+        </div>
+        {showZoomControls && (
+          <div className="inline-flex items-center gap-1 shrink-0">
           <button
             type="button"
             onClick={() => setZoom((z) => Math.max(0.85, Number((z - 0.15).toFixed(2))))}
@@ -177,7 +199,8 @@ export const MapView: React.FC<MapViewProps> = ({
               <RotateCcw className="w-3.5 h-3.5" />
             </button>
           )}
-        </div>
+          </div>
+        )}
       </div>
 
       {/* Scrollable zoom container */}
