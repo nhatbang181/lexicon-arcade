@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "sph:001",
+    "function": "buy_time",
+    "phrase": "That's a really intriguing question",
+    "ipa": "/ðæts ə ˈrɪə.li ɪnˈtriː.ɡɪŋ ˈkwes.tʃən/",
+    "band6Equivalent": "That is a good question",
+    "usageVi": "Mua 1–2 giây suy nghĩ tự nhiên cho câu Part 3 trừu tượng, tránh ngập ngừng 'um/uh'.",
+    "example": "That's a really intriguing question—I haven't thought about urban noise from an economic angle before, but I'd say it affects productivity quite noticeably.",
+    "audio": "audio/speaking/sph_001.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:002",
+    "function": "buy_time",
+    "phrase": "Off the top of my head",
+    "ipa": "/ɒf ðə tɒp əv maɪ hed/",
+    "band6Equivalent": "Let me think",
+    "usageVi": "Mở lời khi cần nêu nhanh một ví dụ hay ý tưởng đầu tiên nảy ra mà không cần quá chính xác.",
+    "example": "Off the top of my head, I'd say public libraries and community parks are the two civic spaces people underuse most.",
+    "audio": "audio/speaking/sph_002.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:003",
+    "function": "buy_time",
+    "phrase": "I've never actually stopped to consider that before, though...",
+    "ipa": "/aɪv ˈne.vər ˈæk.tʃu.ə.li stɒpt tə kənˈsɪ.də ðæt bɪˈfɔː ðəʊ/",
+    "band6Equivalent": "I don't know, maybe...",
+    "usageVi": "Thừa nhận câu hỏi lạ một cách điềm tĩnh rồi chuyển ngay sang lập luận ở Part 3.",
+    "example": "I've never actually stopped to consider that before, though I imagine remote work has made small regional towns far more attractive to families.",
+    "audio": "audio/speaking/sph_003.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:004",
+    "function": "buy_time",
+    "phrase": "Now that I think about it",
+    "ipa": "/naʊ ðæt aɪ θɪŋk əˈbaʊt ɪt/",
+    "band6Equivalent": "When I think about it",
+    "usageVi": "Tạo nhịp tự nhiên khi bạn đang hình thành hoặc thay đổi góc nhìn ngay lúc nói.",
+    "example": "Now that I think about it, most of the habits that stuck with me came from watching my parents rather than from school lessons.",
+    "audio": "audio/speaking/sph_004.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:005",
+    "function": "buy_time",
+    "phrase": "It's tricky to pin down just one factor, but...",
+    "ipa": "/ɪts ˈtrɪ.ki tə pɪn daʊn dʒʌst wʌn ˈfæk.tə bʌt/",
+    "band6Equivalent": "There are many reasons, but...",
+    "usageVi": "Vừa câu giờ vừa báo hiệu bạn sắp phân tích vấn đề đa chiều thay vì trả lời đơn giản.",
+    "example": "It's tricky to pin down just one factor, but rising housing costs probably explain why young adults marry later than their parents did.",
+    "audio": "audio/speaking/sph_005.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:006",
+    "function": "buy_time",
+    "phrase": "If I had to put my finger on it",
+    "ipa": "/ɪf aɪ hæd tə pʊt maɪ ˈfɪŋ.ɡər ɒn ɪt/",
+    "band6Equivalent": "If I must choose one reason",
+    "usageVi": "Dùng khi giám khảo hỏi nguyên nhân chính hoặc điều quan trọng nhất, giúp thu hẹp ý mượt mà.",
+    "example": "If I had to put my finger on it, I'd say the warmth of the local community is what keeps people returning to that town.",
+    "audio": "audio/speaking/sph_006.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:007",
+    "function": "buy_time",
+    "phrase": "Let me gather my thoughts for a second",
+    "ipa": "/let mi ˈɡæ.ðə maɪ θɔːts fər ə ˈse.kənd/",
+    "band6Equivalent": "Wait a second, let me think",
+    "usageVi": "Xin 1 giây sắp xếp ý cho câu Part 3 khó một cách lịch sự và tự tin (chỉ dùng tối đa 1 lần mỗi bài thi).",
+    "example": "Let me gather my thoughts for a second—yes, I think government subsidies work best when paired with clear public education.",
+    "audio": "audio/speaking/sph_007.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:008",
+    "function": "buy_time",
+    "phrase": "Well, it really depends on what angle you look at it from",
+    "ipa": "/wel ɪt ˈrɪə.li dɪˈpendz ɒn wɒt ˈæŋ.ɡəl ju lʊk æt ɪt frɒm/",
+    "band6Equivalent": "It depends",
+    "usageVi": "Nâng cấp câu 'It depends' quen thuộc thành câu dẫn hai vế rõ ràng ở Part 3.",
+    "example": "Well, it really depends on what angle you look at it from: financially it's a boon for hotels, yet environmentally it can strain fragile coastlines.",
+    "audio": "audio/speaking/sph_008.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:009",
+    "function": "buy_time",
+    "phrase": "Funny you should ask that, because...",
+    "ipa": "/ˈfʌ.ni ju ʃʊd ɑːsk ðæt bɪˈkɒz/",
+    "band6Equivalent": "That reminds me...",
+    "usageVi": "Mở lời cực kỳ tự nhiên ở Part 1 khi câu hỏi trùng với một trải nghiệm gần đây của bạn.",
+    "example": "Funny you should ask that, because I was only reading an article about sleep hygiene on the train this morning.",
+    "audio": "audio/speaking/sph_009.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:010",
+    "function": "buy_time",
+    "phrase": "To be perfectly honest, I'm in two minds about that",
+    "ipa": "/tə bi ˈpɜː.fɪkt.li ˈɒ.nɪst aɪm ɪn tuː maɪndz əˈbaʊt ðæt/",
+    "band6Equivalent": "I am not sure, both sides are good",
+    "usageVi": "Thể hiện sự cân nhắc hai chiều ngay khi bắt đầu câu trả lời đánh giá hoặc tranh luận.",
+    "example": "To be perfectly honest, I'm in two minds about banning phones in schools—it reduces distraction, yet pupils also need guidance on managing them.",
+    "audio": "audio/speaking/sph_010.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:011",
+    "function": "opinion",
+    "phrase": "From where I stand",
+    "ipa": "/frɒm weər aɪ stænd/",
+    "band6Equivalent": "In my opinion",
+    "usageVi": "Đưa ra góc nhìn cá nhân tự nhiên hơn 'In my opinion', hợp cả Part 1 lẫn Part 3.",
+    "example": "From where I stand, investing in reliable buses delivers far better value for a city than widening motorways.",
+    "audio": "audio/speaking/sph_011.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:012",
+    "function": "opinion",
+    "phrase": "I'm inclined to believe that",
+    "ipa": "/aɪm ɪnˈklaɪnd tə bɪˈliːv ðæt/",
+    "band6Equivalent": "I think that",
+    "usageVi": "Nêu quan điểm có sắc thái chừng mực, học thuật, không áp đặt tuyệt đối.",
+    "example": "I'm inclined to believe that early exposure to music boosts children's patience as much as their creativity.",
+    "audio": "audio/speaking/sph_012.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:013",
+    "function": "opinion",
+    "phrase": "I'm firmly convinced that",
+    "ipa": "/aɪm ˈfɜːm.li kənˈvɪnst ðæt/",
+    "band6Equivalent": "I strongly agree that",
+    "usageVi": "Nhấn mạnh quan điểm vững chắc khi bạn có lập luận mạnh và ví dụ thuyết phục đi kèm.",
+    "example": "I'm firmly convinced that critical reading should be taught explicitly from secondary school onwards.",
+    "audio": "audio/speaking/sph_013.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:014",
+    "function": "opinion",
+    "phrase": "If you ask me",
+    "ipa": "/ɪf ju ɑːsk mi/",
+    "band6Equivalent": "I think",
+    "usageVi": "Cụm mở quan điểm tự nhiên, giọng nói chuyện thoải mái, rất ăn điểm Fluency ở Part 1 & 2.",
+    "example": "If you ask me, a cosy neighbourhood bookshop beats a giant shopping centre any day of the week.",
+    "audio": "audio/speaking/sph_014.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:015",
+    "function": "opinion",
+    "phrase": "I'd argue that the bigger issue is",
+    "ipa": "/aɪd ˈɑː.ɡjuː ðæt ðə ˈbɪ.ɡər ˈɪ.ʃuː ɪz/",
+    "band6Equivalent": "I think the main problem is",
+    "usageVi": "Chuyển hướng lập luận sang nguyên nhân sâu xa hơn trong các câu hỏi đánh giá Part 3.",
+    "example": "I'd argue that the bigger issue isn't screen time itself, but how little unstructured outdoor play children get nowadays.",
+    "audio": "audio/speaking/sph_015.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:016",
+    "function": "opinion",
+    "phrase": "I tend to think that",
+    "ipa": "/aɪ tend tə θɪŋk ðæt/",
+    "band6Equivalent": "I usually think that",
+    "usageVi": "Diễn đạt quan điểm nhẹ nhàng, có độ rào đón (hedging) đúng chuẩn học thuật Anh.",
+    "example": "I tend to think that learning a craft with your hands helps balance out the stress of desk-based work.",
+    "audio": "audio/speaking/sph_016.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:017",
+    "function": "opinion",
+    "phrase": "To my mind",
+    "ipa": "/tə maɪ maɪnd/",
+    "band6Equivalent": "For me",
+    "usageVi": "Cụm ngắn gọn, thanh lịch thay cho 'In my opinion' hoặc 'For me personally'.",
+    "example": "To my mind, preserving historic streetscapes matters just as much as restoring grand royal palaces.",
+    "audio": "audio/speaking/sph_017.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:018",
+    "function": "opinion",
+    "phrase": "I'm somewhat sceptical about the idea that",
+    "ipa": "/aɪm ˈsʌm.wɒt ˈskep.tɪ.kəl əˈbaʊt ði aɪˈdɪə ðæt/",
+    "band6Equivalent": "I don't really agree that",
+    "usageVi": "Phản biện tinh tế một nhận định phổ biến ở Part 3 thay vì bác bỏ thô cứng.",
+    "example": "I'm somewhat sceptical about the idea that purely online courses can fully replace face-to-face university seminars.",
+    "audio": "audio/speaking/sph_018.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:019",
+    "function": "opinion",
+    "phrase": "What strikes me as most important is",
+    "ipa": "/wɒt straɪks mi æz məʊst ɪmˈpɔː.tənt ɪz/",
+    "band6Equivalent": "The most important thing is",
+    "usageVi": "Nhấn trọng tâm bằng mệnh đề danh từ (cleft-style), nâng điểm Grammatical Range ngay lập tức.",
+    "example": "What strikes me as most important is giving first-time employees clear mentorship during their first six months.",
+    "audio": "audio/speaking/sph_019.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:020",
+    "function": "opinion",
+    "phrase": "I'm all for..., provided that...",
+    "ipa": "/aɪm ɔːl fɔː prəˈvaɪ.dɪd ðæt/",
+    "band6Equivalent": "I support..., if...",
+    "usageVi": "Ủng hộ một chính sách kèm điều kiện ràng buộc, thể hiện tư duy sắc sảo Band 8+.",
+    "example": "I'm all for pedestrianising historic city centres, provided that affordable park-and-ride shuttles are put in place first.",
+    "audio": "audio/speaking/sph_020.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:021",
+    "function": "contrast",
+    "phrase": "Having said that",
+    "ipa": "/ˈhæ.vɪŋ sed ðæt/",
+    "band6Equivalent": "However / But",
+    "usageVi": "Chuyển sang góc nhìn đối lập hoặc ngoại lệ một cách mượt mà trong văn nói.",
+    "example": "Living in a high-rise flat is wonderfully convenient. Having said that, I do sometimes miss having a small garden to step out into.",
+    "audio": "audio/speaking/sph_021.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:022",
+    "function": "contrast",
+    "phrase": "On the flip side",
+    "ipa": "/ɒn ðə flɪp saɪd/",
+    "band6Equivalent": "On the other hand",
+    "usageVi": "Nêu mặt trái hoặc khía cạnh ngược lại với giọng nói tự nhiên hơn 'On the other hand'.",
+    "example": "Working from home saves me nearly ten hours of commuting each week. On the flip side, it can feel isolating if you live alone.",
+    "audio": "audio/speaking/sph_022.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:023",
+    "function": "contrast",
+    "phrase": "That's a far cry from",
+    "ipa": "/ðæts ə fɑː kraɪ frɒm/",
+    "band6Equivalent": "That is very different from",
+    "usageVi": "So sánh sự khác biệt rõ rệt giữa quá khứ và hiện tại trong các câu compare Part 3.",
+    "example": "Nowadays teenagers stream any song within seconds, which is a far cry from saving up pocket money for a single cassette or CD.",
+    "audio": "audio/speaking/sph_023.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:024",
+    "function": "contrast",
+    "phrase": "Whereas in the past..., nowadays...",
+    "ipa": "/weəˈræz ɪn ðə pɑːst ˈnaʊ.ə.deɪz/",
+    "band6Equivalent": "In the past... but now...",
+    "usageVi": "Cấu trúc mệnh đề phụ tương phản mạch lạc, rất chuẩn khi so sánh hai thời kỳ.",
+    "example": "Whereas in the past most people stayed with one employer for decades, nowadays switching sectors twice in a career is completely normal.",
+    "audio": "audio/speaking/sph_024.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:025",
+    "function": "contrast",
+    "phrase": "Even so",
+    "ipa": "/ˈiː.vən səʊ/",
+    "band6Equivalent": "Still / Even though",
+    "usageVi": "Nhượng bộ ý trước rồi khẳng định điều ngược lại vẫn đúng; ngắn gọn và rất tự nhiên.",
+    "example": "Digital banking has made payments effortless. Even so, many elderly residents still prefer speaking face to face with a cashier.",
+    "audio": "audio/speaking/sph_025.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:026",
+    "function": "contrast",
+    "phrase": "By contrast, though",
+    "ipa": "/baɪ ˈkɒn.trɑːst ðəʊ/",
+    "band6Equivalent": "In contrast",
+    "usageVi": "So sánh hai nhóm đối tượng (vd: thành thị vs nông thôn, trẻ vs già) ở Part 3.",
+    "example": "Big cities offer unrivalled career mobility. By contrast, though, smaller coastal towns tend to foster far tighter neighbourly ties.",
+    "audio": "audio/speaking/sph_026.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:027",
+    "function": "contrast",
+    "phrase": "At the same time, we shouldn't overlook",
+    "ipa": "/æt ðə seɪm taɪm wi ˈʃʊ.dənt ˌəʊ.vəˈlʊk/",
+    "band6Equivalent": "Also, we must remember",
+    "usageVi": "Cân bằng lập luận bằng cách bổ sung một mặt trái hay chi tiết dễ bị bỏ sót.",
+    "example": "Tourism creates thousands of entry-level jobs. At the same time, we shouldn't overlook how seasonal booms drive up rent for locals.",
+    "audio": "audio/speaking/sph_027.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:028",
+    "function": "contrast",
+    "phrase": "Mind you",
+    "ipa": "/maɪnd ju/",
+    "band6Equivalent": "However / Remember that",
+    "usageVi": "Cụm nhượng bộ rất chuẩn Anh-Anh, thêm sắc thái tự nhiên như người bản xứ khi thu hẹp khẳng định.",
+    "example": "Cycling to work is brilliant for fitness—mind you, it's far less appealing during a torrential monsoon downpour.",
+    "audio": "audio/speaking/sph_028.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:029",
+    "function": "contrast",
+    "phrase": "While I can see the appeal of..., I'd still...",
+    "ipa": "/waɪl aɪ kæn siː ði əˈpiːl əv aɪd stɪl/",
+    "band6Equivalent": "Although... is good, I still...",
+    "usageVi": "Công nhận sức hút của lựa chọn kia trước khi bảo vệ lựa chọn của mình.",
+    "example": "While I can see the appeal of luxury package resorts, I'd still rather stay in a modest guesthouse run by a local family.",
+    "audio": "audio/speaking/sph_029.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:030",
+    "function": "contrast",
+    "phrase": "That's not to say that..., merely that...",
+    "ipa": "/ðæts nɒt tə seɪ ðæt ˈmɪə.li ðæt/",
+    "band6Equivalent": "I don't mean..., I just mean...",
+    "usageVi": "Ngăn người nghe hiểu nhầm quan điểm quá cực đoan và làm sắc nét ranh giới lập luận.",
+    "example": "That's not to say that exams are useless, merely that relying on a single three-hour paper leaves out vital practical skills.",
+    "audio": "audio/speaking/sph_030.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:031",
+    "function": "example",
+    "phrase": "Take..., for instance",
+    "ipa": "/teɪk fər ˈɪn.stəns/",
+    "band6Equivalent": "For example...",
+    "usageVi": "Đưa ra ví dụ cụ thể theo cách sinh động, ngắn gọn hơn hẳn 'For example' lặp lại.",
+    "example": "Take public transport, for instance: once contactless cards were introduced, boarding queues dropped dramatically.",
+    "audio": "audio/speaking/sph_031.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:032",
+    "function": "example",
+    "phrase": "A prime example of this is",
+    "ipa": "/ə praɪm ɪɡˈzɑːm.pəl əv ðɪs ɪz/",
+    "band6Equivalent": "A good example of this is",
+    "usageVi": "Giới thiệu ví dụ điển hình nhất để minh hoạ trực tiếp cho luận điểm Part 3.",
+    "example": "A prime example of this is how neighbourhood cafés have quietly turned into informal co-working spaces for freelancers.",
+    "audio": "audio/speaking/sph_032.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:033",
+    "function": "example",
+    "phrase": "To give you a concrete illustration",
+    "ipa": "/tə ɡɪv ju ə ˈkɒŋ.kriːt ˌɪ.ləˈstreɪ.ʃən/",
+    "band6Equivalent": "Let me give an example",
+    "usageVi": "Chuyển từ lập luận trừu tượng sang tình huống đời thực rõ nét ở Part 3.",
+    "example": "To give you a concrete illustration, a friend of mine rebuilt her entire design career through evening online workshops.",
+    "audio": "audio/speaking/sph_033.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:034",
+    "function": "example",
+    "phrase": "Case in point:",
+    "ipa": "/keɪs ɪn pɔɪnt/",
+    "band6Equivalent": "For example:",
+    "usageVi": "Cụm cực gọn để tung ví dụ chứng minh ngay sau một nhận xét sắc sảo.",
+    "example": "Small design tweaks often change behaviour better than fines. Case in point: painting bright footprints towards litter bins cut street rubbish noticeably.",
+    "audio": "audio/speaking/sph_034.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:035",
+    "function": "example",
+    "phrase": "Just the other week, I noticed",
+    "ipa": "/dʒʌst ði ˈʌ.ðə wiːk aɪ ˈnəʊ.tɪst/",
+    "band6Equivalent": "Recently I saw",
+    "usageVi": "Dẫn ví dụ quan sát gần đây trong khung ARE Part 1, tạo cảm giác chân thật.",
+    "example": "Just the other week, I noticed three different generations sharing the same badminton court in our local park at dawn.",
+    "audio": "audio/speaking/sph_035.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:036",
+    "function": "example",
+    "phrase": "A good case of this in everyday life is",
+    "ipa": "/ə ɡʊd keɪs əv ðɪs ɪn ˈev.ri.deɪ laɪf ɪz/",
+    "band6Equivalent": "An example in daily life is",
+    "usageVi": "Kéo chủ đề học thuật về gần trải nghiệm đời thường để dễ triển khai ý sâu.",
+    "example": "A good case of this in everyday life is how people still call a family member for advice even after reading dozens of online reviews.",
+    "audio": "audio/speaking/sph_036.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:037",
+    "function": "example",
+    "phrase": "Look at how...",
+    "ipa": "/lʊk æt haʊ/",
+    "band6Equivalent": "For example, see how...",
+    "usageVi": "Mời người nghe cùng hình dung một xu hướng rõ ràng trong xã hội.",
+    "example": "Look at how quickly QR menus and cashless stalls caught on across local street markets once smartphone penetration rose.",
+    "audio": "audio/speaking/sph_037.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:038",
+    "function": "example",
+    "phrase": "Speaking from personal experience",
+    "ipa": "/ˈspiː.kɪŋ frɒm ˈpɜː.sə.nəl ɪkˈspɪə.ri.əns/",
+    "band6Equivalent": "In my experience",
+    "usageVi": "Rút ví dụ từ chính trải nghiệm bản thân để bổ trợ cho câu trả lời Part 1 hoặc Part 3.",
+    "example": "Speaking from personal experience, spacing my revision over six months worked infinitely better than pulling all-nighters before finals.",
+    "audio": "audio/speaking/sph_038.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:039",
+    "function": "example",
+    "phrase": "You only have to look at... to see that...",
+    "ipa": "/ju ˈəʊn.li hæv tə lʊk æt tə siː ðæt/",
+    "band6Equivalent": "You can see from... that...",
+    "usageVi": "Nhấn mạnh bằng chứng hiển nhiên ngay trước mắt khi bảo vệ luận điểm ở Part 3.",
+    "example": "You only have to look at weekend crowds in newly renovated riverside parks to see how hungry urban residents are for greenery.",
+    "audio": "audio/speaking/sph_039.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:040",
+    "function": "example",
+    "phrase": "Among the clearest examples would be",
+    "ipa": "/əˈmʌŋ ðə ˈklɪə.rɪst ɪɡˈzɑːm.pəlz wʊd bi/",
+    "band6Equivalent": "One of the clearest examples is",
+    "usageVi": "Dùng trợ động từ 'would' mềm hoá ví dụ trong lập luận học thuật Part 3.",
+    "example": "Among the clearest examples would be how traditional ceramic villages have partnered with young designers to reach international buyers.",
+    "audio": "audio/speaking/sph_040.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:041",
+    "function": "speculate",
+    "phrase": "If I had to hazard a guess",
+    "ipa": "/ɪf aɪ hæd tə ˈhæ.zəd ə ɡes/",
+    "band6Equivalent": "If I had to guess",
+    "usageVi": "Mở lời dự đoán tương lai hoặc tình huống chưa chắc chắn một cách điêu luyện.",
+    "example": "If I had to hazard a guess, I'd say hybrid four-day workweeks will become far more mainstream in knowledge industries within ten years.",
+    "audio": "audio/speaking/sph_041.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:042",
+    "function": "speculate",
+    "phrase": "There's a strong chance that",
+    "ipa": "/ðeəz ə strɒŋ tʃɑːns ðæt/",
+    "band6Equivalent": "Maybe / Probably",
+    "usageVi": "Diễn đạt xác suất cao nhưng vẫn giữ độ thận trọng học thuật thay vì nói chắc chắn 100%.",
+    "example": "There's a strong chance that autonomous shuttles will first appear on fixed airport and campus loops before hitting busy city streets.",
+    "audio": "audio/speaking/sph_042.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:043",
+    "function": "speculate",
+    "phrase": "It wouldn't surprise me in the slightest if",
+    "ipa": "/ɪt ˈwʊ.dənt səˈpraɪz mi ɪn ðə ˈslaɪ.tɪst ɪf/",
+    "band6Equivalent": "I think it is very possible that",
+    "usageVi": "Dự đoán xu hướng tương lai kèm cấu trúc câu điều kiện loại 2 cực tự nhiên.",
+    "example": "It wouldn't surprise me in the slightest if printed newspapers turned into niche weekend collectibles over the next twenty years.",
+    "audio": "audio/speaking/sph_043.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:044",
+    "function": "speculate",
+    "phrase": "Looking twenty years down the line",
+    "ipa": "/ˈlʊ.kɪŋ ˈtwen.ti jɪəz daʊn ðə laɪn/",
+    "band6Equivalent": "In the future",
+    "usageVi": "Thay cụm 'In the future' nhàm chán bằng cách mở khung thời gian cụ thể cho câu predict Part 3.",
+    "example": "Looking twenty years down the line, cities will probably have to redesign pavements and transit stops around much hotter summers.",
+    "audio": "audio/speaking/sph_044.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:045",
+    "function": "speculate",
+    "phrase": "Assuming that trend continues",
+    "ipa": "/əˈsjuː.mɪŋ ðæt trend kənˈtɪn.juːz/",
+    "band6Equivalent": "If this keeps happening",
+    "usageVi": "Nêu giả định có điều kiện cho dự đoán, ăn điểm logic và ngữ pháp phức.",
+    "example": "Assuming that trend continues, lifelong retraining will matter far more to workers than the degree they earned at twenty-one.",
+    "audio": "audio/speaking/sph_045.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:046",
+    "function": "speculate",
+    "phrase": "It's entirely conceivable that",
+    "ipa": "/ɪts ɪnˈtaɪə.li kənˈsiː.və.bəl ðæt/",
+    "band6Equivalent": "It is possible that",
+    "usageVi": "Nâng cấp từ vựng khi suy đoán kịch bản công nghệ hoặc xã hội trong tương lai.",
+    "example": "It's entirely conceivable that real-time translation earbuds will lower the barrier for casual international travel.",
+    "audio": "audio/speaking/sph_046.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:047",
+    "function": "speculate",
+    "phrase": "Were that to happen, I suspect",
+    "ipa": "/wɜː ðæt tə ˈhæ.pən aɪ səˈspekt/",
+    "band6Equivalent": "If that happens, I think",
+    "usageVi": "Đảo ngữ câu điều kiện loại 2 cho câu hypothetical Part 3 — cực mạnh cho tiêu chí GRA.",
+    "example": "Were that to happen, I suspect local high streets would reinvent themselves around dining, crafts, and community events rather than retail.",
+    "audio": "audio/speaking/sph_047.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:048",
+    "function": "speculate",
+    "phrase": "In all likelihood",
+    "ipa": "/ɪn ɔːl ˈlaɪ.kli.hʊd/",
+    "band6Equivalent": "Very probably",
+    "usageVi": "Cụm dự đoán gọn, trang trọng vừa phải, đặt đầu câu hoặc giữa câu đều mượt.",
+    "example": "In all likelihood, traditional face-to-face craftsmanship will actually grow more prized precisely because mass-produced goods are everywhere.",
+    "audio": "audio/speaking/sph_048.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:049",
+    "function": "speculate",
+    "phrase": "It's hard to predict with any certainty, yet...",
+    "ipa": "/ɪts hɑːd tə prɪˈdɪkt wɪð ˈe.ni ˈsɜː.tən.ti jet/",
+    "band6Equivalent": "Nobody knows for sure, but...",
+    "usageVi": "Thể hiện sự thận trọng khoa học trước khi đưa ra dự báo hợp lý.",
+    "example": "It's hard to predict with any certainty, yet I imagine AI tutors will complement human teachers rather than replace them in classrooms.",
+    "audio": "audio/speaking/sph_049.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:050",
+    "function": "speculate",
+    "phrase": "My hunch is that",
+    "ipa": "/maɪ hʌntʃ ɪz ðæt/",
+    "band6Equivalent": "My guess is that",
+    "usageVi": "Nêu phán đoán trực giác tự nhiên, rất chuẩn văn nói Band 8 khi bàn về hành vi con người.",
+    "example": "My hunch is that younger generations will gradually cut back on public posting in favour of smaller, private group chats.",
+    "audio": "audio/speaking/sph_050.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:051",
+    "function": "conclude",
+    "phrase": "So all in all",
+    "ipa": "/səʊ ɔːl ɪn ɔːl/",
+    "band6Equivalent": "In conclusion",
+    "usageVi": "Chốt lại câu trả lời Part 2 hoặc Part 3 tự nhiên, tránh dùng cụm văn viết 'In conclusion'.",
+    "example": "So all in all, even though the trip started with a cancelled train, it turned into one of my fondest travel memories.",
+    "audio": "audio/speaking/sph_051.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:052",
+    "function": "conclude",
+    "phrase": "At the end of the day",
+    "ipa": "/æt ði end əv ðə deɪ/",
+    "band6Equivalent": "Finally / Most importantly",
+    "usageVi": "Đưa cuộc thảo luận về giá trị cốt lõi cuối cùng ở câu kết Part 3.",
+    "example": "At the end of the day, new technology only improves education if teachers are properly trained and supported to use it.",
+    "audio": "audio/speaking/sph_052.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:053",
+    "function": "conclude",
+    "phrase": "On balance, then",
+    "ipa": "/ɒn ˈbæ.ləns ðen/",
+    "band6Equivalent": "Overall",
+    "usageVi": "Tổng kết sau khi vừa cân nhắc cả mặt lợi và mặt hại của một vấn đề.",
+    "example": "On balance, then, I'd say international tourism brings more benefits than drawbacks when local authorities manage visitor numbers.",
+    "audio": "audio/speaking/sph_053.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:054",
+    "function": "conclude",
+    "phrase": "What it really boils down to is",
+    "ipa": "/wɒt ɪt ˈrɪə.li bɔɪlz daʊn tuː ɪz/",
+    "band6Equivalent": "The main point is",
+    "usageVi": "Cô đọng toàn bộ lập luận phức tạp thành một ý chốt sắc gọn.",
+    "example": "What it really boils down to is striking a healthy balance between preserving heritage and meeting modern housing needs.",
+    "audio": "audio/speaking/sph_054.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:055",
+    "function": "conclude",
+    "phrase": "Looking back on it now",
+    "ipa": "/ˈlʊ.kɪŋ bæk ɒn ɪt naʊ/",
+    "band6Equivalent": "Now I think about that experience",
+    "usageVi": "Chốt bài kể chuyện Part 2 bằng chiêm nghiệm trưởng thành, rất ăn điểm Coherence.",
+    "example": "Looking back on it now, failing that first mock presentation was probably the push I needed to take communication skills seriously.",
+    "audio": "audio/speaking/sph_055.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:056",
+    "function": "conclude",
+    "phrase": "So on the whole",
+    "ipa": "/səʊ ɒn ðə həʊl/",
+    "band6Equivalent": "In general",
+    "usageVi": "Kết lại nhận xét chung một cách mềm mại ở cả Part 1 và Part 3.",
+    "example": "So on the whole, I'd say living near the river gives our neighbourhood a calmer pace than most parts of the city.",
+    "audio": "audio/speaking/sph_056.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:057",
+    "function": "conclude",
+    "phrase": "Ultimately, it comes down to",
+    "ipa": "/ˈʌl.tɪ.mət.li ɪt kʌmz daʊn tuː/",
+    "band6Equivalent": "Finally, it depends on",
+    "usageVi": "Đóng lại câu phân tích giải pháp bằng yếu tố quyết định cuối cùng.",
+    "example": "Ultimately, it comes down to whether citizens trust that environmental policies are applied fairly to big corporations as well as households.",
+    "audio": "audio/speaking/sph_057.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:058",
+    "function": "conclude",
+    "phrase": "All things considered",
+    "ipa": "/ɔːl θɪŋz kənˈsɪ.dəd/",
+    "band6Equivalent": "After thinking about everything",
+    "usageVi": "Tổng hợp mọi khía cạnh đã phân tích để đưa ra phán quyết cuối cùng.",
+    "example": "All things considered, renting in the city centre makes far more practical sense for me right now than commuting two hours daily.",
+    "audio": "audio/speaking/sph_058.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:059",
+    "function": "conclude",
+    "phrase": "That's essentially why",
+    "ipa": "/ðæts ɪˈsen.ʃə.li waɪ/",
+    "band6Equivalent": "So that is why",
+    "usageVi": "Khép vòng trả lời Part 2 bằng cách nối thẳng lại với bullet cuối cùng 'and explain why'.",
+    "example": "That's essentially why I still keep that worn fountain pen on my desk—it reminds me of how patiently my uncle taught me to write.",
+    "audio": "audio/speaking/sph_059.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:060",
+    "function": "conclude",
+    "phrase": "In a nutshell",
+    "ipa": "/ɪn ə ˈnʌt.ʃel/",
+    "band6Equivalent": "In short",
+    "usageVi": "Tóm tắt súc tích ý chính trong 1 câu ngắn cuối lượt nói.",
+    "example": "In a nutshell, good public design makes the sustainable choice the easiest one for ordinary commuters.",
+    "audio": "audio/speaking/sph_060.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:061",
+    "function": "clarify",
+    "phrase": "Or rather, to put it more accurately",
+    "ipa": "/ɔː ˈrɑː.ðə tə pʊt ɪt mɔːr ˈæ.kjʊ.rət.li/",
+    "band6Equivalent": "I mean / Sorry, I mean",
+    "usageVi": "Tự sửa hoặc tinh chỉnh diễn đạt ngay trong lúc nói mà vẫn giữ sự trôi chảy Band 8.",
+    "example": "People read less today—or rather, to put it more accurately, they read shorter fragments on screens instead of sustained books.",
+    "audio": "audio/speaking/sph_061.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:062",
+    "function": "clarify",
+    "phrase": "What I'm getting at is",
+    "ipa": "/wɒt aɪm ˈɡe.tɪŋ æt ɪz/",
+    "band6Equivalent": "What I mean is",
+    "usageVi": "Làm rõ ý chính sau khi giải thích hơi dài hoặc sợ giám khảo chưa bắt kịp trọng tâm.",
+    "example": "What I'm getting at is that high salaries alone rarely retain talented staff if the day-to-day culture feels toxic.",
+    "audio": "audio/speaking/sph_062.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:063",
+    "function": "clarify",
+    "phrase": "Let me rephrase that slightly",
+    "ipa": "/let mi ˌriːˈfreɪz ðæt ˈslaɪt.li/",
+    "band6Equivalent": "Let me say that again",
+    "usageVi": "Chủ động diễn đạt lại khi nhận ra câu trước hơi lủng củng; giám khảo đánh giá rất cao khả năng tự sửa có kiểm soát.",
+    "example": "Let me rephrase that slightly: it isn't that competition harms students, but that ranking children too young undermines curiosity.",
+    "audio": "audio/speaking/sph_063.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:064",
+    "function": "clarify",
+    "phrase": "In other words",
+    "ipa": "/ɪn ˈʌ.ðə wɜːdz/",
+    "band6Equivalent": "That means",
+    "usageVi": "Diễn giải lại một khái niệm học thuật bằng ngôn ngữ dễ hiểu hơn ngay sau đó.",
+    "example": "Cities suffer from the heat-island effect—in other words, concrete and tarmac trap warmth long after sunset.",
+    "audio": "audio/speaking/sph_064.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:065",
+    "function": "clarify",
+    "phrase": "Actually, let me backtrack a bit",
+    "ipa": "/ˈæk.tʃu.ə.li let mi ˈbæk.træk ə bɪt/",
+    "band6Equivalent": "Wait, I forgot to say",
+    "usageVi": "Quay lại bổ sung bối cảnh bị quên trong bài kể Part 2 mà không bị đứt mạch.",
+    "example": "Actually, let me backtrack a bit—before we even reached the summit, our guide had already warned us that the mist was rolling in fast.",
+    "audio": "audio/speaking/sph_065.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:066",
+    "function": "clarify",
+    "phrase": "To put it another way",
+    "ipa": "/tə pʊt ɪt əˈnʌ.ðə weɪ/",
+    "band6Equivalent": "To say it differently",
+    "usageVi": "Nhấn lại luận điểm bằng cách diễn đạt sắc hơn hoặc giàu hình ảnh hơn.",
+    "example": "To put it another way, treating museums purely as tourist attractions risks turning living heritage into a theme park.",
+    "audio": "audio/speaking/sph_066.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:067",
+    "function": "clarify",
+    "phrase": "I suppose 'frustrating' is a better word than 'boring'",
+    "ipa": "/aɪ səˈpəʊz frʌˈstreɪ.tɪŋ ɪz ə ˈbe.tə wɜːd ðæn ˈbɔː.rɪŋ/",
+    "band6Equivalent": "Not boring, more like frustrating",
+    "usageVi": "Mẫu tự điều chỉnh chọn từ chính xác hơn ngay lúc nói (self-correction tích cực cho Lexical Resource).",
+    "example": "Commuting by car used to feel boring—well, I suppose 'frustrating' is a better word than 'boring', given how unpredictable the jams were.",
+    "audio": "audio/speaking/sph_067.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:068",
+    "function": "clarify",
+    "phrase": "To be more specific",
+    "ipa": "/tə bi mɔː spəˈsɪ.fɪk/",
+    "band6Equivalent": "More specifically",
+    "usageVi": "Thu hẹp một nhận định khái quát thành chi tiết rõ ràng hơn trong Part 1 & Part 3.",
+    "example": "I enjoy outdoor exercise—to be more specific, early-morning trail running before the streets heat up.",
+    "audio": "audio/speaking/sph_068.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:069",
+    "function": "clarify",
+    "phrase": "If I'm making sense",
+    "ipa": "/ɪf aɪm ˈmeɪ.kɪŋ sens/",
+    "band6Equivalent": "Do you understand?",
+    "usageVi": "Cụm kết câu nhẹ nhàng khi bạn vừa giải thích một cảm giác hay ý niệm hơi trừu tượng.",
+    "example": "Listening to familiar rain sounds doesn't block out noise so much as soften the edges of it, if I'm making sense.",
+    "audio": "audio/speaking/sph_069.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:070",
+    "function": "clarify",
+    "phrase": "Sorry, I should clarify that I mean...",
+    "ipa": "/ˈsɒ.ri aɪ ʃʊd ˈklæ.rɪ.faɪ ðæt aɪ miːn/",
+    "band6Equivalent": "Sorry, I meant...",
+    "usageVi": "Chữa lỗi nhầm từ hoặc làm rõ đối tượng cực kỳ lịch sự và tự tin khi lỡ nói nhầm.",
+    "example": "Sorry, I should clarify that I mean preventative healthcare rather than emergency hospital treatment.",
+    "audio": "audio/speaking/sph_070.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:071",
+    "function": "generalise",
+    "phrase": "Broadly speaking",
+    "ipa": "/ˈbrɔːd.li ˈspiː.kɪŋ/",
+    "band6Equivalent": "Generally",
+    "usageVi": "Khái quát xu hướng xã hội ở Part 3 mà vẫn rào đón (hedging) khỏi lỗi vơ đũa cả nắm.",
+    "example": "Broadly speaking, urban households have become smaller over the past three decades as young adults move for work.",
+    "audio": "audio/speaking/sph_071.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:072",
+    "function": "generalise",
+    "phrase": "By and large",
+    "ipa": "/baɪ ənd lɑːdʒ/",
+    "band6Equivalent": "Mostly / In general",
+    "usageVi": "Cụm khái quát tự nhiên chuẩn Anh-Anh, dùng khi phần lớn trường hợp đúng nhưng vẫn có ngoại lệ.",
+    "example": "By and large, commuters are happy to switch to public transit as soon as it becomes faster and cleaner than driving.",
+    "audio": "audio/speaking/sph_072.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:073",
+    "function": "generalise",
+    "phrase": "As a general rule",
+    "ipa": "/æz ə ˈdʒe.nə.rəl ruːl/",
+    "band6Equivalent": "Usually",
+    "usageVi": "Nêu quy luật phổ biến trước khi đưa ngoại lệ hoặc ví dụ minh hoạ.",
+    "example": "As a general rule, children pick up spoken pronunciation far more effortlessly than adults, though adults often grasp grammar faster.",
+    "audio": "audio/speaking/sph_073.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:074",
+    "function": "generalise",
+    "phrase": "More often than not",
+    "ipa": "/mɔːr ˈɒ.fən ðæn nɒt/",
+    "band6Equivalent": "Very often / Usually",
+    "usageVi": "Diễn đạt tần suất cao một cách sắc thái hơn 'usually' hay 'always'.",
+    "example": "More often than not, misunderstandings between colleagues stem from rushed text messages rather than genuine disagreement.",
+    "audio": "audio/speaking/sph_074.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:075",
+    "function": "generalise",
+    "phrase": "To a large extent",
+    "ipa": "/tuː ə lɑːdʒ ɪkˈstent/",
+    "band6Equivalent": "Mostly / Very much",
+    "usageVi": "Rào đón mức độ ảnh hưởng (hedging) rất cần thiết trong câu hỏi nguyên nhân và đánh giá Part 3.",
+    "example": "To a large extent, a person's reading habits as an adult reflect whether books were visible around the house during childhood.",
+    "audio": "audio/speaking/sph_075.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:076",
+    "function": "generalise",
+    "phrase": "It's fair to say that",
+    "ipa": "/ɪts feə tə seɪ ðæt/",
+    "band6Equivalent": "It is true that",
+    "usageVi": "Khẳng định nhận định hợp lý một cách khách quan, tránh giọng quá tuyệt đối.",
+    "example": "It's fair to say that smartphones have transformed how travellers navigate unfamiliar cities.",
+    "audio": "audio/speaking/sph_076.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:077",
+    "function": "generalise",
+    "phrase": "For the most part",
+    "ipa": "/fə ðə məʊst pɑːt/",
+    "band6Equivalent": "Mostly",
+    "usageVi": "Khái quát mềm mại, dễ kết hợp với mệnh đề đối lập 'although...' ngay phía sau.",
+    "example": "For the most part, neighbours in my block keep to themselves, although everyone pitches in quickly whenever there's a storm.",
+    "audio": "audio/speaking/sph_077.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:078",
+    "function": "generalise",
+    "phrase": "In many respects",
+    "ipa": "/ɪn ˈme.ni rɪˈspekts/",
+    "band6Equivalent": "In many ways",
+    "usageVi": "Nâng cấp cụm 'in many ways' khi so sánh hai hiện tượng xã hội hoặc công nghệ.",
+    "example": "In many respects, modern podcasts play the same role in people's daily commutes that radio dramas did for earlier generations.",
+    "audio": "audio/speaking/sph_078.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:079",
+    "function": "generalise",
+    "phrase": "There's a tendency for... to...",
+    "ipa": "/ðeəz ə ˈten.dən.si fɔː tuː/",
+    "band6Equivalent": "People often...",
+    "usageVi": "Khái quát xu hướng hành vi bằng cấu trúc danh từ hoá chuẩn học thuật.",
+    "example": "There's a tendency for travellers to rush through famous landmarks for photos instead of lingering to soak up the local atmosphere.",
+    "audio": "audio/speaking/sph_079.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "sph:080",
+    "function": "generalise",
+    "phrase": "Up to a point",
+    "ipa": "/ʌp tuː ə pɔɪnt/",
+    "band6Equivalent": "Partly / A little bit",
+    "usageVi": "Đồng ý một phần có giới hạn (hedging) trước khi nêu giới hạn của luận điểm.",
+    "example": "I agree with that up to a point—higher taxes on private cars can ease congestion, provided viable public transit already exists.",
+    "audio": "audio/speaking/sph_080.mp3",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  }
+]

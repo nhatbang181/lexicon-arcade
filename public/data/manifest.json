@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-21T00:23:52.453Z",
+  "builtAt": "2026-11-21T02:54:34.371Z",
   "totals": {
     "dictation": 300,
     "listeningEpisodes": 32,
@@ -13,6 +13,10 @@
     "readingQuestions": 330,
     "readingReserved": 6,
     "roadmapPhases": 4,
+    "speakingPart1": 30,
+    "speakingPart2": 40,
+    "speakingPart3": 40,
+    "speakingPhrases": 80,
     "tips": 62,
     "collocations": 762,
     "errorPatterns": 230,
@@ -263,6 +267,22 @@
     "roadmap.json": {
       "sha256": "5c1bd3e363ef53445a63afa5a6575e55817a074653910e539d1b2f7ee9bcd844",
       "count": 4
+    },
+    "speaking/part1.json": {
+      "sha256": "785e8aaf0ecf53474d39dfd2c99086c588d719b60555fb341eef558d00029b18",
+      "count": 30
+    },
+    "speaking/part2.json": {
+      "sha256": "ab1a5336bfe338de30e87db3a0694f0e435e9fa14188898a4af3187796e98fe9",
+      "count": 40
+    },
+    "speaking/part3.json": {
+      "sha256": "d2e72b2d78be0e7abf5695e23ca53871a2d4e8ec0670214d84f8107702d3c748",
+      "count": 40
+    },
+    "speaking/phrases.json": {
+      "sha256": "b63fd74826b73234581826789a17a235a61efa7f647fc4b77128042fdab749a6",
+      "count": 80
     },
     "tips.json": {
       "sha256": "9b1f82dc92783562e297b9f1285e0ad5a174e0c2200d66fb1b5f34fc08d30d65",

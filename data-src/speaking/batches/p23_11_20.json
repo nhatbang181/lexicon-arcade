@@ -1,0 +1,892 @@
+[
+  {
+    "cueCard": {
+      "id": "s2c:011",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "place",
+      "prompt": "Describe a noisy or lively public place that you still enjoy visiting.",
+      "bullets": [
+        "where this place is and when you usually go there",
+        "what creates the noise and energy there",
+        "what you like to see, hear, or buy when you visit"
+      ],
+      "finalBullet": "and explain why you enjoy it despite the bustle.",
+      "audio": "audio/speaking/s2c_011.mp3",
+      "linkedPart3Id": "s3s:011",
+      "sampleNotes": [
+        "neighbourhood wet market, Sunday 7 am",
+        "sizzling pans, clinking ladles, banter",
+        "fresh basil, mangoes, steamed rice rolls",
+        "vendors know regular shoppers",
+        "lively warmth vs sterile supermarkets",
+        "grounds me in real community life"
+      ],
+      "band8Sample": {
+        "text": "Even though I generally value peace and quiet when I'm working, there's one gloriously noisy place I genuinely look forward to visiting every Sunday morning: my neighbourhood fresh produce market. Tucked down a maze of covered lanes two blocks from my flat, it hits peak energy right around seven o'clock. The soundtrack is completely unmistakable—vendors calling out the morning's catch, the rhythmic chop of cleavers on heavy wooden blocks, motorbikes gently squeezing past baskets of leafy greens, and good-natured bargaining echoing between regular shoppers and stallholders. Normally I'd find that volume overwhelming, yet here it feels buoyant and warm rather than stressful. Whenever I go, I weave past pyramids of ripe mangoes, fragrant bunches of mint and coriander, and steaming clay pots of savoury rice rolls being ladled onto banana leaves. I always stop at the same grandmother's herb stall for fresh lemongrass and chillies, and grab a quick bowl of crab noodle soup on a tiny plastic stool by the entrance before heading home. What makes me love the market despite the chaos is how unmistakably human it feels. After spending five days behind glowing monitors and silent self-checkout tills, stepping into a space filled with eye contact, laughter, and real seasonal smells snaps me straight back into the physical world. Supermarkets are undeniably tidier and air-conditioned, yet they feel identical in every city on earth. My noisy corner market, by contrast, has a pulse all its own, and walking out with two canvas bags of vibrant produce always leaves me feeling surprisingly energised for the week ahead.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Do young people in your city still shop at traditional markets?",
+        "Are there noisy places you try hard to avoid?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:011",
+      "linkedCueCardId": "s2c:011",
+      "questions": [
+        {
+          "qid": "s3_011_q1",
+          "text": "Why do some people feel energised in busy public places while others find them exhausting?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_011_q1.mp3",
+          "followUps": [
+            { "text": "Does the kind of noise matter as much as the decibel level?", "audio": "audio/speaking/s3_011_q1_f1.mp3" },
+            { "text": "Do people's noise tolerances change as they get older?", "audio": "audio/speaking/s3_011_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_011_q2",
+          "text": "How do traditional open-air markets compare with modern supermarkets in serving local communities?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_011_q2.mp3",
+          "followUps": [
+            { "text": "What advantages do supermarkets have regarding food safety and convenience?", "audio": "audio/speaking/s3_011_q2_f1.mp3" },
+            { "text": "How can traditional markets modernise without losing their charm?", "audio": "audio/speaking/s3_011_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_011_q3",
+          "text": "Should local councils protect traditional street markets even when land becomes extremely valuable for property developers?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_011_q3.mp3",
+          "followUps": [
+            { "text": "Who loses out most when a central market is replaced by a luxury mall?", "audio": "audio/speaking/s3_011_q3_f1.mp3" },
+            { "text": "Can mixed-use buildings successfully house markets on the ground floor?", "audio": "audio/speaking/s3_011_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_011_q4",
+          "text": "How might grocery shopping habits change over the next fifteen years as instant delivery apps expand?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_011_q4.mp3",
+          "followUps": [
+            { "text": "What environmental impact comes from rapid small-basket deliveries?", "audio": "audio/speaking/s3_011_q4_f1.mp3" },
+            { "text": "Will weekend farmers' markets become a luxury trend instead?", "audio": "audio/speaking/s3_011_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_011_q5",
+          "text": "How can cities keep lively night markets enjoyable without disturbing nearby residents?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_011_q5.mp3",
+          "followUps": [
+            { "text": "Are strict curfew hours fairer than acoustic zoning?", "audio": "audio/speaking/s3_011_q5_f1.mp3" },
+            { "text": "How should waste and sanitation be managed in busy street-food districts?", "audio": "audio/speaking/s3_011_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:012",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "place",
+      "prompt": "Describe a café, bookshop, or local business you often recommend to others.",
+      "bullets": [
+        "what kind of business it is and where it is located",
+        "what makes its products or service stand out",
+        "how you first discovered it"
+      ],
+      "finalBullet": "and explain why you are always eager to recommend it.",
+      "audio": "audio/speaking/s2c_012.mp3",
+      "linkedPart3Id": "s3s:012",
+      "sampleNotes": [
+        "Old Banyan Bookshop & Tea Room",
+        "2nd floor of narrow heritage townhouse",
+        "found dodging sudden rain shower",
+        "handwritten staff review cards",
+        "curated translations + quiet jasmine tea",
+        "genuine craft vs algorithmic feeds"
+      ],
+      "band8Sample": {
+        "text": "Whenever a friend visits my city and asks for somewhere genuinely special to spend an afternoon, I immediately recommend an independent bookshop and tea room called Old Banyan, tucked on the second floor of a narrow shophouse near the river. I stumbled upon it purely by chance two years ago when a torrential afternoon downpour forced me up an unmarked staircase looking for shelter. Pushing open the wooden screen door felt like stepping into a well-loved private study: floor-to-ceiling teak bookshelves, worn linen armchairs, warm lighting, and the faint scent of roasted oolong tea drifting from a tiny counter at the back. What sets Old Banyan miles apart from giant chain bookstores is the meticulous personal curation. Almost every third title on the shelves has a small cream card tucked beneath it with a thoughtful three-line note handwritten by the owner or one of her two staff members—never generic hype, just honest observations about the writing style or why a particular translation shines. They also host quiet monthly reading circles and stock small-press Vietnamese essays alongside carefully chosen international non-fiction. Whenever I'm stuck in a reading slump, I can tell the owner roughly what mood I'm in, and she has an uncanny knack for pulling down an obscure gem I'd never have encountered through an online algorithm. I'm always eager to recommend the shop because independent cultural spaces run on razor-thin margins and survive purely through word of mouth. Sending friends there feels like sharing a treasured secret while helping keep a wonderful corner of the neighbourhood alive.",
+        "estSeconds": 116
+      },
+      "roundingOffQs": [
+        "Do you still visit that shop regularly?",
+        "Why do you think word-of-mouth recommendations carry so much weight?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:012",
+      "linkedCueCardId": "s2c:012",
+      "questions": [
+        {
+          "qid": "s3_012_q1",
+          "text": "Why do small independent businesses often struggle to compete with large national or international chains?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_012_q1.mp3",
+          "followUps": [
+            { "text": "Is rising commercial rent a bigger threat than online shopping?", "audio": "audio/speaking/s3_012_q1_f1.mp3" },
+            { "text": "What advantages do small shops still hold over large chains?", "audio": "audio/speaking/s3_012_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_012_q2",
+          "text": "How reliable are online customer reviews compared with personal recommendations from friends?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_012_q2.mp3",
+          "followUps": [
+            { "text": "How can consumers spot fake or paid reviews nowadays?", "audio": "audio/speaking/s3_012_q2_f1.mp3" },
+            { "text": "Why do people tend to leave reviews more often when angry than when satisfied?", "audio": "audio/speaking/s3_012_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_012_q3",
+          "text": "What can local governments do to help independent neighbourhood shops survive?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_012_q3.mp3",
+          "followUps": [
+            { "text": "Would lower business rates for independent retailers distort fair competition?", "audio": "audio/speaking/s3_012_q3_f1.mp3" },
+            { "text": "Does pedestrianising shopping streets help or hurt small businesses?", "audio": "audio/speaking/s3_012_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_012_q4",
+          "text": "Do you think customer service standards have improved or declined in recent years?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_012_q4.mp3",
+          "followUps": [
+            { "text": "How has automated chatbot support affected customer frustration?", "audio": "audio/speaking/s3_012_q4_f1.mp3" },
+            { "text": "Are consumers willing to pay slightly more for genuinely attentive service?", "audio": "audio/speaking/s3_012_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_012_q5",
+          "text": "If physical bookshops and high-street cafés disappeared completely, how would urban neighbourhoods feel different?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_012_q5.mp3",
+          "followUps": [
+            { "text": "Could online communities replace those casual neighbourhood hubs?", "audio": "audio/speaking/s3_012_q5_f1.mp3" },
+            { "text": "Which age groups would feel that loss most sharply?", "audio": "audio/speaking/s3_012_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:013",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "object",
+      "prompt": "Describe an everyday piece of technology that you would find hard to live without.",
+      "bullets": [
+        "what the device is and when you got it",
+        "how you use it throughout a typical week",
+        "what makes it better than older alternatives"
+      ],
+      "finalBullet": "and explain why your routine would feel noticeably harder without it.",
+      "audio": "audio/speaking/s2c_013.mp3",
+      "linkedPart3Id": "s3s:013",
+      "sampleNotes": [
+        "matte e-ink e-reader (bought 3 yrs ago)",
+        "commute, bed, coffee shops",
+        "no glare, weeks of battery, zero alerts",
+        "instant built-in English dictionary",
+        "highlights export straight to flashcards",
+        "tripled my annual reading volume"
+      ],
+      "band8Sample": {
+        "text": "Rather than picking the obvious smartphone or laptop, the piece of everyday technology I'd genuinely hate to give up is my lightweight e-ink reader, which I bought about three years ago after realising how badly my eyes ached from reading PDFs on a tablet. At first glance it looks almost ridiculously basic—a thin matte grey slab with a black-and-white screen, no browser worth mentioning, and no colourful apps. Yet that simplicity is precisely what makes it brilliant. Throughout a typical week, it travels everywhere in my backpack: I read twenty minutes during lunch breaks, another chapter while waiting in queues, and half an hour before sleep with the warm front light turned low. Because the screen mimics real ink on paper rather than blasting blue light into your eyes, I can read comfortably in bright midday sun on a park bench or in a dark bedroom without disrupting my sleep. Where it genuinely outshines printed books for me is language learning. Whenever I read an academic essay or novel in English and hit an unfamiliar idiom, a single tap brings up a crisp definition and saves the word automatically into a vocabulary list that I review later. On top of that, the battery easily lasts three weeks on a single charge, and there are zero incoming messages nagging for my attention. Without it, my routine would lose its calmest anchor—I'd almost certainly slip back into scrolling on my phone during spare moments instead of finishing twenty-five books a year. It's a rare example of modern technology that subtracts distraction rather than multiplying it.",
+        "estSeconds": 116
+      },
+      "roundingOffQs": [
+        "Do you still buy printed books from time to time?",
+        "Would you recommend an e-reader to friends who struggle to read regularly?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:013",
+      "linkedCueCardId": "s2c:013",
+      "questions": [
+        {
+          "qid": "s3_013_q1",
+          "text": "Why do single-purpose devices sometimes feel more appealing than multifunctional gadgets like smartphones?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_013_q1.mp3",
+          "followUps": [
+            { "text": "Is constant distraction mainly a design flaw or a self-discipline issue?", "audio": "audio/speaking/s3_013_q1_f1.mp3" },
+            { "text": "Are minimalist phones or digital detox habits likely to become mainstream?", "audio": "audio/speaking/s3_013_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_013_q2",
+          "text": "How has everyday household technology changed family life compared with fifty years ago?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_013_q2.mp3",
+          "followUps": [
+            { "text": "Did labour-saving appliances actually give people more leisure time?", "audio": "audio/speaking/s3_013_q2_f1.mp3" },
+            { "text": "Have personal screens reduced shared evening time at home?", "audio": "audio/speaking/s3_013_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_013_q3",
+          "text": "Do you think society has become dangerously over-dependent on digital devices and cloud infrastructure?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_013_q3.mp3",
+          "followUps": [
+            { "text": "Which public services should always keep non-digital backups?", "audio": "audio/speaking/s3_013_q3_f1.mp3" },
+            { "text": "How vulnerable are cashless societies to power or network outages?", "audio": "audio/speaking/s3_013_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_013_q4",
+          "text": "What should be done about the rapid growth of electronic waste worldwide?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_013_q4.mp3",
+          "followUps": [
+            { "text": "Should manufacturers be legally required to take back old devices for recycling?", "audio": "audio/speaking/s3_013_q4_f1.mp3" },
+            { "text": "Why do so many consumers upgrade phones before their old one stops working?", "audio": "audio/speaking/s3_013_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_013_q5",
+          "text": "Which current everyday gadget do you predict will look completely obsolete twenty years from now?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_013_q5.mp3",
+          "followUps": [
+            { "text": "What might replace the traditional rectangular smartphone?", "audio": "audio/speaking/s3_013_q5_f1.mp3" },
+            { "text": "Will physical keys, wallets, or plastic cards still exist?", "audio": "audio/speaking/s3_013_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:014",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "object",
+      "prompt": "Describe an old object your family has kept for many years.",
+      "bullets": [
+        "what the object is and where it is kept",
+        "how your family originally acquired it",
+        "what condition it is in today"
+      ],
+      "finalBullet": "and explain why your family values keeping it.",
+      "audio": "audio/speaking/s2c_014.mp3",
+      "linkedPart3Id": "s3s:014",
+      "sampleNotes": [
+        "mechanical brass pendulum wall clock",
+        "wooden case, chimes on the hour",
+        "grandfather bought in 1978 after saving",
+        "hangs in parents' dining room",
+        "wound every Sunday by my father",
+        "living link across three generations"
+      ],
+      "band8Sample": {
+        "text": "An heirloom my family has treasured for nearly half a century is a mechanical brass pendulum wall clock housed in a dark carved rosewood cabinet, which still hangs on the main dining-room wall at my parents' house. My grandfather bought it in the late nineteen-seventies after saving quietly for almost two years from his salary as a railway clerk—back then, owning a dependable European-style wind-up clock was a real mark of pride for a modest household. Remarkably, it still runs accurately today. Every Sunday morning right after breakfast, my father opens the hinged glass door, inserts a small butterfly-shaped brass key, and winds the two springs with a familiar soft clicking sound. The varnished wood has picked up a few tiny scratches along the lower corners and the painted Roman numerals have faded slightly to a warm cream, yet those marks only make it feel more authentic. Its steady tick and gentle, resonant chime on the hour have formed the quiet background soundtrack of my entire childhood. Even though everyone in the house now checks the time effortlessly on smartphones and smartwatches, nobody would dream of taking that clock down or swapping it for a silent battery model. My family keeps it because it anchors our shared memory—whenever the chimes ring out during Lunar New Year dinners, my grandmother inevitably smiles and tells another story about my grandfather's meticulous habits. In a world where gadgets grow outdated in three years, having one sturdy mechanical object that links three generations feels deeply comforting.",
+        "estSeconds": 111
+      },
+      "roundingOffQs": [
+        "Would you like to inherit that object yourself one day?",
+        "Do you tend to keep sentimental objects, or prefer travelling light?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:014",
+      "linkedCueCardId": "s2c:014",
+      "questions": [
+        {
+          "qid": "s3_014_q1",
+          "text": "Why do people often attach strong emotional value to ordinary old objects?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_014_q1.mp3",
+          "followUps": [
+            { "text": "Do physical objects trigger memories more powerfully than digital photos?", "audio": "audio/speaking/s3_014_q1_f1.mp3" },
+            { "text": "When can holding onto old possessions turn into an unhealthy burden?", "audio": "audio/speaking/s3_014_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_014_q2",
+          "text": "How do the kinds of heirlooms families pass down today differ from those passed down a century ago?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_014_q2.mp3",
+          "followUps": [
+            { "text": "Will future generations inherit digital files instead of physical keepsakes?", "audio": "audio/speaking/s3_014_q2_f1.mp3" },
+            { "text": "Are modern consumer goods simply not built to last long enough to become heirlooms?", "audio": "audio/speaking/s3_014_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_014_q3",
+          "text": "Do you think museums should display everyday historical items alongside royal treasures and fine art?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_014_q3.mp3",
+          "followUps": [
+            { "text": "What can an ordinary kitchen tool or diary reveal that a grand monument cannot?", "audio": "audio/speaking/s3_014_q3_f1.mp3" },
+            { "text": "Should historical artefacts taken abroad in past centuries be returned to their countries of origin?", "audio": "audio/speaking/s3_014_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_014_q4",
+          "text": "Why has collecting vintage items—such as vinyl records, film cameras, or mechanical watches—become trendy among younger adults?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_014_q4.mp3",
+          "followUps": [
+            { "text": "Is it genuine appreciation for craftsmanship or mostly nostalgia and status?", "audio": "audio/speaking/s3_014_q4_f1.mp3" },
+            { "text": "Does buying second-hand vintage goods genuinely help sustainability?", "audio": "audio/speaking/s3_014_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_014_q5",
+          "text": "How can families preserve their oral history and personal photographs before older relatives pass away?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_014_q5.mp3",
+          "followUps": [
+            { "text": "What risks come with storing family memories purely in cloud accounts?", "audio": "audio/speaking/s3_014_q5_f1.mp3" },
+            { "text": "Why do many young people only become curious about family history later in life?", "audio": "audio/speaking/s3_014_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:015",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "object",
+      "prompt": "Describe a handmade item you gave to someone or received as a gift.",
+      "bullets": [
+        "what the item was and who made it",
+        "what occasion it was made for",
+        "how much time or effort went into making it"
+      ],
+      "finalBullet": "and explain why this handmade gift meant so much.",
+      "audio": "audio/speaking/s2c_015.mp3",
+      "linkedPart3Id": "s3s:015",
+      "sampleNotes": [
+        "hand-bound linen recipe notebook",
+        "made by me for sister's first flat",
+        "weekend bookbinding workshop + 3 nights",
+        "copied 20 family recipes from mum",
+        "margins with dad's seasoning tips",
+        "emotional bridge to home"
+      ],
+      "band8Sample": {
+        "text": "Last autumn, when my younger sister moved to another city for her first job and rented a tiny studio flat on her own, I decided to make her a hand-bound family recipe book as a housewarming present. I'm hardly an accomplished artist, so I signed up for a Saturday afternoon Japanese bookbinding workshop to learn how to fold thick cream paper signatures, cut sturdy cardboard covers wrapped in olive-green linen, and stitch the spine neatly with waxed cotton thread. Once the blank book was finished, the real labour of love began. Over three quiet evenings, I rang my mother and grandmother to pin down precise quantities for twenty of our family's signature home-cooked dishes—which wasn't easy, because both of them usually cook 'by eye' and measure salt in pinches! I wrote each recipe out cleanly by hand in fountain pen, leaving little margin notes like 'don't rush browning the shallots' or 'use half a spoon of fish sauce if the broth tastes flat', and pasted in three small Polaroid snapshots of our kitchen back home. When my sister unwrapped it at her empty new dining table, she flipped past the title page and actually teared up a little, which completely caught me off guard because she's normally quite unsentimental. What made the gift so meaningful wasn't flawless craftsmanship—the spine stitching is slightly uneven near the bottom—but the fact that it carried familiar flavours and family voices into an unfamiliar new chapter of her life. Every few weeks she still sends me photos of a splattered page beside a steaming pot of soup.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Would you like to make another handmade gift in the future?",
+        "Do you think people appreciate handmade presents more as they grow older?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:015",
+      "linkedCueCardId": "s2c:015",
+      "questions": [
+        {
+          "qid": "s3_015_q1",
+          "text": "Why do handmade gifts often feel more meaningful than expensive store-bought presents?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_015_q1.mp3",
+          "followUps": [
+            { "text": "Does that depend on how close you are to the recipient?", "audio": "audio/speaking/s3_015_q1_f1.mp3" },
+            { "text": "When might a practical store-bought gift actually be more appreciated?", "audio": "audio/speaking/s3_015_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_015_q2",
+          "text": "How have gift-giving customs changed in your country over the past twenty years?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_015_q2.mp3",
+          "followUps": [
+            { "text": "Has digital e-gifting or cash transfer made celebrations less personal?", "audio": "audio/speaking/s3_015_q2_f1.mp3" },
+            { "text": "Do commercial marketing campaigns put unfair spending pressure on families?", "audio": "audio/speaking/s3_015_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_015_q3",
+          "text": "Do you think giving experiences—such as concert tickets or classes—is better than giving physical objects?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_015_q3.mp3",
+          "followUps": [
+            { "text": "Why might experiential gifts create longer-lasting happiness?", "audio": "audio/speaking/s3_015_q3_f1.mp3" },
+            { "text": "What are the downsides of gifting experiences to busy people?", "audio": "audio/speaking/s3_015_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_015_q4",
+          "text": "Should schools encourage children to make things by hand rather than relying mostly on screens and printed worksheets?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_015_q4.mp3",
+          "followUps": [
+            { "text": "How does hands-on making affect motor skills and patience?", "audio": "audio/speaking/s3_015_q4_f1.mp3" },
+            { "text": "How can schools afford materials for craft classes on tight budgets?", "audio": "audio/speaking/s3_015_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_015_q5",
+          "text": "How might weekend DIY and craft workshops grow in popularity over the next decade?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_015_q5.mp3",
+          "followUps": [
+            { "text": "Are they mainly a form of stress relief for office workers?", "audio": "audio/speaking/s3_015_q5_f1.mp3" },
+            { "text": "Could hobby crafts realistically become side incomes for more people?", "audio": "audio/speaking/s3_015_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:016",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "object",
+      "prompt": "Describe a piece of clothing you wear on special occasions.",
+      "bullets": [
+        "what the garment looks like and where you got it",
+        "on what kinds of occasions you wear it",
+        "how you feel when you put it on"
+      ],
+      "finalBullet": "and explain why you prefer it over other formal outfits.",
+      "audio": "audio/speaking/s2c_016.mp3",
+      "linkedPart3Id": "s3s:016",
+      "sampleNotes": [
+        "tailored charcoal wool-linen blazer",
+        "made by local tailor in Hoi An",
+        "breathable half-lined weave for tropics",
+        "weddings, graduations, conference talks",
+        "sharp posture without feeling stiff",
+        "timeless cut beats fast-fashion suits"
+      ],
+      "band8Sample": {
+        "text": "The formal piece of clothing I reach for most often is a tailored charcoal-grey blazer that I had made three years ago at a modest family-run tailor shop in central Vietnam. I'd been invited to my cousin's wedding right in the middle of a humid summer, and I dreaded spending six hours sweating inside a heavy polyester off-the-rack suit. The tailor suggested a lightweight blend of breathable wool and crisp linen, half-lined on the inside so air could still circulate, with subtle horn buttons and a clean, uncluttered lapel. Getting measured properly took two fittings over four days, and the difference in comfort was immediate. Since then, that single blazer has seen me through family weddings, a friend's graduation dinner, two university guest panels, and an important job interview. I can dress it up with a crisp white shirt and silk tie, or pair it effortlessly with dark chinos and a plain knit polo when an event leans smart-casual. Putting it on does something subtle to my posture and mindset—because the shoulders sit flat and the sleeves fall at exactly the right length, I feel poised and self-assured rather than trussed up in a costume. I prefer it over trendier formal wear because classic tailoring never looks dated in photographs five years later, and paying slightly more once for natural fabric and solid stitching has outlasted three cheaper fast-fashion jackets put together. Even after dry-cleaning it half a dozen times, the seams still lie razor-sharp, making it the one item in my wardrobe that proves well-made simplicity always wins.",
+        "estSeconds": 110
+      },
+      "roundingOffQs": [
+        "Do you enjoy dressing up formally, or prefer casual clothes?",
+        "Are traditional tailors still popular in your country?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:016",
+      "linkedCueCardId": "s2c:016",
+      "questions": [
+        {
+          "qid": "s3_016_q1",
+          "text": "How have workplace dress codes changed over the past twenty years?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_016_q1.mp3",
+          "followUps": [
+            { "text": "Did the rise of remote work accelerate more casual office wear?", "audio": "audio/speaking/s3_016_q1_f1.mp3" },
+            { "text": "Are there still professions where formal dress remains essential?", "audio": "audio/speaking/s3_016_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_016_q2",
+          "text": "Why do people often form rapid judgements about others based on the clothes they wear?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_016_q2.mp3",
+          "followUps": [
+            { "text": "How unfair can clothing-based assumptions be in job interviews?", "audio": "audio/speaking/s3_016_q2_f1.mp3" },
+            { "text": "Do people judge branded clothing differently today than in the past?", "audio": "audio/speaking/s3_016_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_016_q3",
+          "text": "Do you think school uniforms bring more benefits or drawbacks for students?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_016_q3.mp3",
+          "followUps": [
+            { "text": "Do uniforms genuinely reduce visible economic inequality among pupils?", "audio": "audio/speaking/s3_016_q3_f1.mp3" },
+            { "text": "Should students have a say in updating uniform comfort and design?", "audio": "audio/speaking/s3_016_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_016_q4",
+          "text": "What practical steps could reduce the environmental damage caused by the fast-fashion industry?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_016_q4.mp3",
+          "followUps": [
+            { "text": "Is consumer education enough, or are strict regulations on textile waste needed?", "audio": "audio/speaking/s3_016_q4_f1.mp3" },
+            { "text": "How can clothing rental or second-hand platforms reach wider audiences?", "audio": "audio/speaking/s3_016_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_016_q5",
+          "text": "Do you think traditional national dress will still be worn widely by young people fifty years from now?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_016_q5.mp3",
+          "followUps": [
+            { "text": "How are modern designers adapting traditional silhouettes for younger wearers?", "audio": "audio/speaking/s3_016_q5_f1.mp3" },
+            { "text": "Is wearing traditional attire only at festivals enough to keep it alive?", "audio": "audio/speaking/s3_016_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:017",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "object",
+      "prompt": "Describe something useful you bought after saving up for a long time.",
+      "bullets": [
+        "what the item was and why you wanted it",
+        "how long it took you to save the money",
+        "how you use it in your daily life now"
+      ],
+      "finalBullet": "and explain why saving up made owning it more satisfying.",
+      "audio": "audio/speaking/s2c_017.mp3",
+      "linkedPart3Id": "s3s:017",
+      "sampleNotes": [
+        "ergonomic mesh office chair",
+        "chronic lower-back ache from dining chair",
+        "saved 6 months by cooking & skipping gadgets",
+        "tested 4 models in showroom first",
+        "use 8–9 hrs/day for work & study",
+        "delayed gratification + zero buyer's remorse"
+      ],
+      "band8Sample": {
+        "text": "Something remarkably practical that I saved up for over half a year is a proper ergonomic mesh office chair, which I finally bought about eighteen months ago. During my first year working hybrid shifts from home, I made do with a stiff wooden dining chair padded with an old cushion. It seemed fine at first, yet by the end of each week my shoulders felt knotted and a dull lower-back ache lingered well into the weekend. Once I realised how many hours I actually spend seated—between full-time software work and evening IELTS study—I decided to invest in a durable, fully adjustable chair with decent lumbar support rather than another flimsy budget model. Because quality ergonomic chairs aren't cheap, I set up a dedicated savings pot and trimmed my discretionary spending for six months: cooking weekday lunches at home, cancelling two streaming subscriptions I barely watched, and holding off on minor tech upgrades. That waiting period also stopped me rushing the decision. I spent two Saturdays actually visiting showrooms to test seat depth, armrests, and warranty terms instead of trusting flashy online adverts. The afternoon the chair finally arrived and I adjusted it to my exact desk height, the relief was practically instant—within two weeks my evening back stiffness vanished completely. Looking back, saving patiently made the purchase infinitely more rewarding than slapping it on a credit card. Because I'd genuinely earned it through six months of small, conscious trade-offs, I felt zero buyer's remorse, and it taught me a lasting financial habit: scrimp on clutter, and save patiently for tools that protect your daily health.",
+        "estSeconds": 117
+      },
+      "roundingOffQs": [
+        "Are you saving up for anything else at the moment?",
+        "Do you think buying on credit makes people value purchases less?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:017",
+      "linkedCueCardId": "s2c:017",
+      "questions": [
+        {
+          "qid": "s3_017_q1",
+          "text": "Why do many young adults find it harder to save money consistently nowadays?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_017_q1.mp3",
+          "followUps": [
+            { "text": "How much do rising living costs explain compared with lifestyle pressure on social media?", "audio": "audio/speaking/s3_017_q1_f1.mp3" },
+            { "text": "Do 'buy now, pay later' services encourage reckless spending?", "audio": "audio/speaking/s3_017_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_017_q2",
+          "text": "Should personal finance and budgeting be taught as a core subject in secondary schools?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_017_q2.mp3",
+          "followUps": [
+            { "text": "What practical money topics are most useful for teenagers?", "audio": "audio/speaking/s3_017_q2_f1.mp3" },
+            { "text": "Is teaching money habits primarily the role of parents rather than schools?", "audio": "audio/speaking/s3_017_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_017_q3",
+          "text": "How do attitudes towards saving and debt differ between older and younger generations?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_017_q3.mp3",
+          "followUps": [
+            { "text": "Has easier access to credit made borrowing feel less taboo?", "audio": "audio/speaking/s3_017_q3_f1.mp3" },
+            { "text": "Are younger people more open to investing earlier than their parents were?", "audio": "audio/speaking/s3_017_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_017_q4",
+          "text": "Does advertising encourage people to buy things they do not genuinely need, or does it simply inform consumers?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_017_q4.mp3",
+          "followUps": [
+            { "text": "How have personalised social-media algorithms made advertising more persuasive?", "audio": "audio/speaking/s3_017_q4_f1.mp3" },
+            { "text": "Should targeted advertising towards children be strictly restricted?", "audio": "audio/speaking/s3_017_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_017_q5",
+          "text": "If cash disappeared entirely and every transaction became contactless or digital, how might people's spending habits change?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_017_q5.mp3",
+          "followUps": [
+            { "text": "Does tapping a phone make spending feel less real than handing over banknotes?", "audio": "audio/speaking/s3_017_q5_f1.mp3" },
+            { "text": "Could automatic budgeting apps offset that effect?", "audio": "audio/speaking/s3_017_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:018",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "object",
+      "prompt": "Describe a photograph you took or own that carries a meaningful memory.",
+      "bullets": [
+        "what is shown in the photograph",
+        "when and where it was taken",
+        "where you keep it now"
+      ],
+      "finalBullet": "and explain why this particular image means so much to you.",
+      "audio": "audio/speaking/s2c_018.mp3",
+      "linkedPart3Id": "s3s:018",
+      "sampleNotes": [
+        "candid shot of grandparents shelling lotus seeds",
+        "golden late-afternoon kitchen light, 2021",
+        "taken on phone during quiet Tet eve",
+        "neither realised I was shooting",
+        "framed 5x7 matte print on bookshelf",
+        "captures ordinary tenderness before grandfather passed"
+      ],
+      "band8Sample": {
+        "text": "A photograph I treasure above any travel snapshot sits in a slim wooden frame on my bookshelf: it's a candid picture I took of my grandparents sitting side by side on low bamboo stools in their backyard, quietly shelling fresh lotus seeds on the afternoon before Lunar New Year five years ago. Technically it's far from a gallery masterpiece—I captured it on an ageing smartphone with slightly grainy shadows—yet the late-afternoon light happened to slant through the pomelo tree right across their hands, bathing the whole courtyard in warm amber. What makes the frame magical is that neither of them noticed me standing by the kitchen doorway. My grandfather is leaning slightly towards my grandmother, laughing mid-story with a bright enamel basin balanced between his knees, while she's shaking her head with a playful half-smile as she sorts the pale green seeds into a woven tray. Normally, whenever anyone pulled out a camera at family gatherings, both of them immediately stiffened up and stared solemnly straight into the lens. Catching that unguarded ten-second exchange felt like bottling a tiny slice of everyday devotion. My grandfather passed away two years after that afternoon, so the photograph has grown infinitely more precious with time. Looking at it doesn't make me sad, though—it actually brings back the exact smell of simmering broth, the clatter of distant firecrackers, and the steady rhythm of their fifty-year marriage. Whenever my life gets overly frantic, glancing at that framed print reminds me that the moments we end up cherishing most are rarely grand milestones, but ordinary afternoons shared quietly with people we love.",
+        "estSeconds": 117
+      },
+      "roundingOffQs": [
+        "Do you think people print too few photographs nowadays?",
+        "Have you shared that photograph with other members of your family?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:018",
+      "linkedCueCardId": "s2c:018",
+      "questions": [
+        {
+          "qid": "s3_018_q1",
+          "text": "How has smartphone photography changed the way people experience concerts, holidays, and family events?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_018_q1.mp3",
+          "followUps": [
+            { "text": "Does taking dozens of pictures actually weaken our memory of the moment?", "audio": "audio/speaking/s3_018_q1_f1.mp3" },
+            { "text": "Why did limited film rolls make older family photos feel more deliberate?", "audio": "audio/speaking/s3_018_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_018_q2",
+          "text": "Should public venues, such as museums or live concert halls, restrict visitors from taking photographs?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_018_q2.mp3",
+          "followUps": [
+            { "text": "How does a sea of raised phone screens affect other audience members?", "audio": "audio/speaking/s3_018_q2_f1.mp3" },
+            { "text": "Can allowing photos also serve as free publicity for cultural institutions?", "audio": "audio/speaking/s3_018_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_018_q3",
+          "text": "How are advanced editing tools and AI image generators affecting public trust in news photography?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_018_q3.mp3",
+          "followUps": [
+            { "text": "Is the old saying 'a camera never lies' completely dead now?", "audio": "audio/speaking/s3_018_q3_f1.mp3" },
+            { "text": "How can newsrooms prove an authentic documentary image has not been altered?", "audio": "audio/speaking/s3_018_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_018_q4",
+          "text": "Why do many people feel compelled to share carefully curated photos of their lives on social media?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_018_q4.mp3",
+          "followUps": [
+            { "text": "How does constant exposure to polished images affect teenagers' self-esteem?", "audio": "audio/speaking/s3_018_q4_f1.mp3" },
+            { "text": "Are parents right to hesitate before posting photos of young children online?", "audio": "audio/speaking/s3_018_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_018_q5",
+          "text": "In the future, do you think professional portrait and wedding photographers will still be in high demand?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_018_q5.mp3",
+          "followUps": [
+            { "text": "What skills does a great photographer bring beyond owning expensive equipment?", "audio": "audio/speaking/s3_018_q5_f1.mp3" },
+            { "text": "Could AI portrait apps replace standard corporate headshots?", "audio": "audio/speaking/s3_018_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:019",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "event",
+      "prompt": "Describe a traditional festival or public celebration that you enjoy.",
+      "bullets": [
+        "what the festival is and when it takes place",
+        "what customs, food, and activities are involved",
+        "how you and your family usually celebrate it"
+      ],
+      "finalBullet": "and explain why this festival remains important to you.",
+      "audio": "audio/speaking/s2c_019.mp3",
+      "linkedPart3Id": "s3s:019",
+      "sampleNotes": [
+        "Mid-Autumn Festival (8th lunar month)",
+        "cool crisp night, bright full moon",
+        "paper star lanterns, lion drums",
+        "green tea + baked lotus-seed mooncakes",
+        "less frantic than Tet, more poetic",
+        "childhood wonder + quiet family reunion"
+      ],
+      "band8Sample": {
+        "text": "While Lunar New Year is naturally the biggest holiday in Vietnam, the traditional celebration I personally enjoy most is the Mid-Autumn Festival, which falls on the fifteenth night of the eighth lunar month—usually sometime in September or early October. Compared with the whirlwind of cleaning, travelling, and formal visits during Tet, Mid-Autumn feels wonderfully gentle, playful, and poetic. Weeks beforehand, neighbourhood streets light up with stalls selling cellophane star lanterns, painted paper masks, and intricately boxed mooncakes filled with lotus paste, green tea, or savoury roasted nuts. On the evening itself, just as the harvest moon rises bright and low above the rooftops, you hear the thunderous beat of lion-dance drums echoing down the alleys while flocks of young children parade along the pavements carrying glowing lanterns. In my family, we've kept a lovely low-key ritual: we lay a bamboo mat on the balcony or courtyard, slice fresh pomelo segments and mooncakes into tidy wedges, and brew a strong pot of jasmine tea to balance the sweetness. My parents tell stories about the lanterns they used to craft from scrap bamboo and tin cans when they were kids, and we simply sit under the cool breeze catching up without anyone rushing to check a clock. Even as an adult, this festival stays deeply meaningful to me because it celebrates both childhood wonder and quiet gratitude for the changing season. In the middle of a busy autumn work calendar, pausing for one evening just to share tea, watch children laugh in the street, and admire the full moon feels like a small, luminous gift.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Has the way people celebrate this festival changed since you were a child?",
+        "Are there any festivals from other countries you would love to experience?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:019",
+      "linkedCueCardId": "s2c:019",
+      "questions": [
+        {
+          "qid": "s3_019_q1",
+          "text": "Why do traditional festivals continue to play an important social role even in highly modernised cities?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_019_q1.mp3",
+          "followUps": [
+            { "text": "Do festivals strengthen community ties beyond immediate families?", "audio": "audio/speaking/s3_019_q1_f1.mp3" },
+            { "text": "Why do expatriates often celebrate home festivals even more enthusiastically abroad?", "audio": "audio/speaking/s3_019_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_019_q2",
+          "text": "Do you think major public holidays have become overly commercialised in recent years?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_019_q2.mp3",
+          "followUps": [
+            { "text": "Does heavy retail spending support small artisans or mostly big corporations?", "audio": "audio/speaking/s3_019_q2_f1.mp3" },
+            { "text": "How can families keep celebrations meaningful without overspending?", "audio": "audio/speaking/s3_019_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_019_q3",
+          "text": "How do younger people's ways of spending public holidays compare with those of older generations?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_019_q3.mp3",
+          "followUps": [
+            { "text": "Why do more young families choose to travel during traditional holidays now?", "audio": "audio/speaking/s3_019_q3_f1.mp3" },
+            { "text": "Does that create tension with older relatives expecting traditional reunions?", "audio": "audio/speaking/s3_019_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_019_q4",
+          "text": "Should governments add more national public holidays, or focus instead on flexible personal annual leave?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_019_q4.mp3",
+          "followUps": [
+            { "text": "What problems happen when millions of people all travel on the exact same holiday dates?", "audio": "audio/speaking/s3_019_q4_f1.mp3" },
+            { "text": "What unique value does a shared national day off still provide?", "audio": "audio/speaking/s3_019_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_019_q5",
+          "text": "How can schools and local communities keep lesser-known regional traditions alive for the next generation?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_019_q5.mp3",
+          "followUps": [
+            { "text": "Should traditions be allowed to adapt to modern tastes rather than staying frozen?", "audio": "audio/speaking/s3_019_q5_f1.mp3" },
+            { "text": "Can short-form videos actually spark youth interest in folk arts?", "audio": "audio/speaking/s3_019_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:020",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "event",
+      "prompt": "Describe an important family gathering that you remember vividly.",
+      "bullets": [
+        "what the occasion was and where it was held",
+        "who attended the gathering",
+        "what happened during the event"
+      ],
+      "finalBullet": "and explain why that gathering stands out in your memory.",
+      "audio": "audio/speaking/s2c_020.mp3",
+      "linkedPart3Id": "s3s:020",
+      "sampleNotes": [
+        "grandparents' 50th wedding anniversary",
+        "garden restaurant by river, 30 relatives",
+        "cousins flew back from abroad & north",
+        "surprise slideshow of old black-and-white photos",
+        "grandfather's witty 3-minute toast",
+        "rare moment all three generations together"
+      ],
+      "band8Sample": {
+        "text": "The family gathering that stands out most vividly in my memory is my maternal grandparents' golden wedding anniversary—fifty years of marriage—which we celebrated two summers ago at a leafy riverside garden house in our hometown. Because my cousins are scattered across three different cities and one aunt lives abroad, getting every branch of the family under one roof happens only once in a blue moon, so nearly thirty of us coordinated flights and leave months in advance to keep the whole weekend a surprise. Instead of a stiff hotel banquet with deafening karaoke, we arranged two long wooden tables beneath strings of warm fairy lights so everyone could actually hear one another talk. My cousins and I had spent weeks quietly scanning dozens of faded black-and-white photographs from the nineteen-seventies and eighties, and after dinner we projected a short ten-minute montage onto a linen sheet hung between two trees. Watching my grandmother burst out laughing at a snapshot of my grandfather's huge flared trousers from his wedding day is a scene I'll never forget. Afterwards, my grandfather—who is normally a man of very few words—stood up, clinked his teacup, and gave a witty three-minute toast saying the secret to fifty years together was 'short memories for small arguments and a very good sense of humour'. That evening stayed with me because it felt both joyful and fleeting: seeing toddlers darting around the chairs of relatives in their eighties reminded me how precious unhurried family time is, and how quickly the window for gathering everyone together can narrow if we keep postponing it.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "How often does your extended family manage to meet up nowadays?",
+        "Do you prefer large family celebrations or small dinners?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:020",
+      "linkedCueCardId": "s2c:020",
+      "questions": [
+        {
+          "qid": "s3_020_q1",
+          "text": "Why do extended families in many countries gather less frequently than they did two generations ago?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_020_q1.mp3",
+          "followUps": [
+            { "text": "Is geographic mobility for jobs the main reason, or changing social priorities?", "audio": "audio/speaking/s3_020_q1_f1.mp3" },
+            { "text": "Do family messaging groups compensate for seeing each other in person?", "audio": "audio/speaking/s3_020_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_020_q2",
+          "text": "How does growing up in a large extended household compare with growing up in a small nuclear family?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_020_q2.mp3",
+          "followUps": [
+            { "text": "What trade-offs exist between privacy and everyday mutual support?", "audio": "audio/speaking/s3_020_q2_f1.mp3" },
+            { "text": "Do children in larger families develop different social skills?", "audio": "audio/speaking/s3_020_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_020_q3",
+          "text": "Do you think families spend too much money on elaborate weddings and milestone parties nowadays?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_020_q3.mp3",
+          "followUps": [
+            { "text": "Why do couples often feel social pressure to host huge weddings?", "audio": "audio/speaking/s3_020_q3_f1.mp3" },
+            { "text": "Are smaller, more intimate celebrations becoming more accepted among young people?", "audio": "audio/speaking/s3_020_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_020_q4",
+          "text": "How can relatives who live in different countries maintain close bonds across time zones?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_020_q4.mp3",
+          "followUps": [
+            { "text": "Do scheduled weekly video calls work better than sporadic long chats?", "audio": "audio/speaking/s3_020_q4_f1.mp3" },
+            { "text": "How can children living abroad stay connected to their heritage language?", "audio": "audio/speaking/s3_020_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_020_q5",
+          "text": "How might typical family structures in your country evolve over the next thirty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_020_q5.mp3",
+          "followUps": [
+            { "text": "Could rising housing costs actually bring multigenerational living back?", "audio": "audio/speaking/s3_020_q5_f1.mp3" },
+            { "text": "What impact will lower birth rates have on elder care?", "audio": "audio/speaking/s3_020_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  }
+]

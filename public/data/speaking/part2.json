@@ -1,0 +1,1642 @@
+[
+  {
+    "id": "s2c:001",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "person",
+    "prompt": "Describe a teacher or mentor who had a lasting positive influence on you.",
+    "bullets": [
+      "who this person is and how you met them",
+      "what subject or skill they taught you",
+      "what made their way of teaching distinctive"
+    ],
+    "finalBullet": "and explain why their influence has stayed with you.",
+    "audio": "audio/speaking/s2c_001.mp3",
+    "linkedPart3Id": "s3s:001",
+    "sampleNotes": [
+      "Mr Minh - physics teacher Yr 11",
+      "hated memorising formulas",
+      "bicycle brake demonstration",
+      "never mocked wrong guesses",
+      "curiosity over grades",
+      "still ask 'why' first at work"
+    ],
+    "band8Sample": {
+      "text": "I'd like to talk about Mr Minh, my Year Eleven physics teacher, who completely transformed the way I approach unfamiliar problems. Before I ended up in his class, I'd always viewed physics as a dry pile of formulas to be crammed the night before an exam. I was actually dreading the term when he walked in on the first morning carrying nothing except a rusty bicycle wheel and a piece of chalk. Instead of writing definitions on the board, he spun the wheel, tilted the axle, and asked us why it seemed to push back against his hand. That set the tone for the entire year. What made Mr Minh genuinely stand out was his patience with half-formed ideas. Whenever someone gave a clumsy answer, he never dismissed it or rushed to supply the textbook line; instead, he'd pause, ask a gentle follow-up question, and guide the student to spot the flaw themselves. I still vividly remember staying behind after a lab session because my circuit diagram kept failing. Rather than fixing the wires for me, he sat beside my bench with a mug of green tea and let me test three wrong hypotheses until the bulb finally flickered on. That small triumph taught me far more than any neatly solved worksheet could have. Looking back on it now, his influence goes well beyond secondary-school science. Even today, whenever I run into a knotty bug in software engineering, I hear his calm habit of slowing down and testing assumptions one by one. He gave me the confidence to treat confusion not as embarrassment, but as the starting point of real understanding, and that's why I still think of him so fondly.",
+      "estSeconds": 116
+    },
+    "roundingOffQs": [
+      "Do you still keep in touch with this teacher?",
+      "Would you enjoy teaching others yourself one day?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:002",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "person",
+    "prompt": "Describe an older person you admire for the way they live their life.",
+    "bullets": [
+      "who this person is and how you know them",
+      "how they spend their time nowadays",
+      "what personal qualities make them remarkable"
+    ],
+    "finalBullet": "and explain what you have learnt from observing them.",
+    "audio": "audio/speaking/s2c_002.mp3",
+    "linkedPart3Id": "s3s:002",
+    "sampleNotes": [
+      "Aunt Lan - retired pharmacist, 72",
+      "dawn walks & rooftop herb garden",
+      "learnt smartphone banking & watercolour",
+      "zero self-pity, brisk humour",
+      "curiosity keeps mind sharp",
+      "ageing actively, not passively"
+    ],
+    "band8Sample": {
+      "text": "One older person I genuinely admire is my great-aunt Lan, a retired pharmacist in her early seventies who lives just a few streets away from my parents. Although she stepped back from full-time work more than a decade ago, you'd never guess it from the rhythm of her days. Every morning at half past five, she meets a group of neighbours by the lake for brisk walking and tai chi, and then she spends a quiet hour tending a surprisingly lush vegetable and herb garden on her rooftop terrace. What strikes me most about Aunt Lan isn't just her physical stamina, though—it's her refusal to let curiosity fade with age. Two years ago, when her grandchildren moved to another city, she didn't wait for anyone to set things up for her; she bought a notebook, asked me to walk her through video calls and online banking once, and wrote down every single step in neat blue ink. Soon afterwards, she signed up for a community watercolour class and now paints delicate botanical postcards that she sends to family members on their birthdays. She also has a wonderfully dry sense of humour and rarely complains about minor aches or inconveniences, which makes visiting her feel uplifting rather than obligatory. Observing her has reshaped how I picture getting older. We're often led to assume that retirement automatically means shrinking horizons, yet Aunt Lan proves that staying engaged with both your neighbourhood and new skills keeps life rich and purposeful. Whenever I catch myself grumbling that I'm too tired to learn something unfamiliar, I think of her rooftop watercolours and immediately feel a bit sheepish.",
+      "estSeconds": 113
+    },
+    "roundingOffQs": [
+      "Do you get to visit this person often?",
+      "Do your friends share a similar view of older relatives?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:003",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "person",
+    "prompt": "Describe someone you know who is remarkably good at solving practical problems.",
+    "bullets": [
+      "who this person is and what they do",
+      "a specific situation where you saw them solve a tricky problem",
+      "how they approached the issue differently from others"
+    ],
+    "finalBullet": "and explain why you value having someone like them around.",
+    "audio": "audio/speaking/s2c_003.mp3",
+    "linkedPart3Id": "s3s:003",
+    "sampleNotes": [
+      "Uncle Hung - mechanical technician",
+      "typhoon knocked out water pump",
+      "neighbours panicking, shops shut",
+      "diagnosed capacitor with multimeter",
+      "improvised safe bypass temporarily",
+      "calm methodical mindset"
+    ],
+    "band8Sample": {
+      "text": "The first person who springs to mind is my uncle Hung, a self-taught mechanical technician who runs a small appliance repair workshop near my hometown. Whenever something breaks in our extended family—whether it's a leaking washing machine, a jammed lock, or a temperamental scooter—Hung is invariably the person everyone rings. I saw his resourcefulness at its absolute finest two autumns ago right after a heavy tropical storm swept through our district. The power had just come back on, yet our house's rooftop water pump refused to kick in, leaving three families in the alley without running water while every hardware shop was still shuttered. Most of us were standing around staring helplessly at the metal casing and talking about buying a brand-new unit the next day. Hung arrived wearing a faded raincoat, asked us to switch off the main breaker, and spent five quiet minutes listening and checking the wiring with a tiny pocket multimeter. Rather than guessing, he ruled out the motor coil first and spotted a swollen starter capacitor within ten minutes. Since no spare parts shop was open, he fetched a matching capacitor from an unused old fan in his shed, checked the voltage rating carefully, soldered the joints cleanly, and sealed them with waterproof tape. Within half an hour, water was flowing smoothly again. What I respect most about him isn't just technical skill, but his utter calm under pressure. He never wastes energy panicking or blaming bad luck; he observes, isolates the cause, and works with what's on hand. Having someone that grounded in your circle reminds you that most everyday crises are far more manageable than they first appear.",
+      "estSeconds": 114
+    },
+    "roundingOffQs": [
+      "Have you picked up any practical repair skills from this person?",
+      "Do you think practical skills like this are becoming rarer?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:004",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "person",
+    "prompt": "Describe a person from another culture or country whom you enjoyed meeting.",
+    "bullets": [
+      "who they are and where you met them",
+      "what you talked about or did together",
+      "what you learnt about their background or customs"
+    ],
+    "finalBullet": "and explain why the encounter was memorable for you.",
+    "audio": "audio/speaking/s2c_004.mp3",
+    "linkedPart3Id": "s3s:004",
+    "sampleNotes": [
+      "Tomasz - Polish urban planner",
+      "met at hostel breakfast in Hoi An",
+      "cycled through rice paddies together",
+      "compared street design & winter habits",
+      "curious without stereotyping",
+      "realised how universal everyday concerns are"
+    ],
+    "band8Sample": {
+      "text": "A couple of years ago, during a solo weekend trip to Hoi An, I met a Polish urban planner named Tomasz, and spending an afternoon chatting with him turned out to be the highlight of the whole trip. We struck up a conversation over breakfast at a small family-run guesthouse after both of us happened to ask the host about renting bicycles to explore the countryside. Since we were heading along the same riverside lane, we decided to cycle out through the rice paddies together and stopped for iced coffee under a banyan tree halfway through. What made talking to Tomasz so effortless was his genuine curiosity. Rather than making hasty comparisons with Europe, he kept noticing subtle details I normally took for granted—like how narrow Vietnamese tube houses use internal courtyards to pull cool air through the building, or how plastic stools transform a quiet pavement into a lively social hub after dusk. In return, he told me about winter life in Krakow, traditional Christmas Eve carp dinners, and how Polish towns are gradually pedestrianising old market squares to cut car traffic. We must have talked for nearly four hours about architecture, coffee culture, and how rapidly both our countries have changed since our parents' generation. The encounter stayed with me because it punctured a lot of vague textbook ideas I had about cultural differences. Yes, our climates, languages, and cuisines couldn't be further apart, yet our everyday worries—affordable flats, walkable streets, finding time for family—were strikingly similar. Meeting someone that open-minded reminded me why travelling slowly and talking to strangers beats rushing through tourist checklists.",
+      "estSeconds": 110
+    },
+    "roundingOffQs": [
+      "Have you stayed in contact with this person since then?",
+      "Would you like to visit their home country one day?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:005",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "person",
+    "prompt": "Describe a close friend who has helped you through a difficult period.",
+    "bullets": [
+      "who this friend is and how long you have known them",
+      "what difficult situation you were facing at the time",
+      "what they did to support you"
+    ],
+    "finalBullet": "and explain how that experience affected your friendship.",
+    "audio": "audio/speaking/s2c_005.mp3",
+    "linkedPart3Id": "s3s:005",
+    "sampleNotes": [
+      "Khanh - uni roommate, 8 yrs",
+      "burnt out after failed first project",
+      "didn't offer empty pep talks",
+      "evening walks & practical CV feedback",
+      "helped separate work setback from self-worth",
+      "built deep mutual trust"
+    ],
+    "band8Sample": {
+      "text": "I'd like to talk about my close friend Khanh, whom I've known for roughly eight years since we shared a cramped dormitory corridor in our first year at university. We've always got on effortlessly, yet I only realised how steadfast a friend he truly is about three years ago, during one of the roughest patches of my early career. At the time, the small startup I'd poured eighteen months into ran out of funding almost overnight, and I suddenly found myself unemployed while also recovering from a bad bout of burnout. I was feeling deeply embarrassed and started withdrawing from group chats because I didn't want to field well-meaning questions about my next move. Khanh noticed the silence straight away. Instead of bombarding me with cheerful slogans about everything happening for a reason, he simply turned up at my flat on a Tuesday evening with two bowls of hot noodle soup and suggested we go for a slow walk along the canal. Over the next month, he checked in twice a week like clockwork. On some nights he just listened while I vented; on others, he sat beside me at a café, quietly helped me trim my rambling CV down to one sharp page, and ran two mock technical interviews with me so I wouldn't freeze up in the real ones. What mattered most was that he treated my setback as a temporary logistical hurdle rather than a personal failure. Once I landed a new role, our friendship felt noticeably deeper—the kind where you don't need to perform or put on a brave face. That period taught me that real loyalty shows up in quiet, practical consistency.",
+      "estSeconds": 115
+    },
+    "roundingOffQs": [
+      "Have you ever had the chance to support this friend in return?",
+      "Do you think it gets harder to make close friends as an adult?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:006",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "person",
+    "prompt": "Describe a creative person whose work or craft you respect.",
+    "bullets": [
+      "who this person is and what kind of creative work they do",
+      "how you first came across their work",
+      "what makes their style or approach distinctive"
+    ],
+    "finalBullet": "and explain why you admire their dedication.",
+    "audio": "audio/speaking/s2c_006.mp3",
+    "linkedPart3Id": "s3s:006",
+    "sampleNotes": [
+      "Ms Trang - independent ceramicist",
+      "spotted her mugs at weekend craft market",
+      "natural ash glazes, slight asymmetry",
+      "visited her tiny studio kiln",
+      "embraces slow trial and error",
+      "antidote to throwaway mass goods"
+    ],
+    "band8Sample": {
+      "text": "I'd love to describe an independent ceramicist named Trang whose studio sits tucked down a leafy lane on the outskirts of my city. I first stumbled across her work two years ago at a small weekend design fair, where her display table stood out immediately from the glossy factory-made pottery nearby. Her teacups and bowls were matte, earthy, and slightly irregular around the rim, glazed in muted shades of moss green and warm river clay. I ended up buying a pair of espresso cups and chatting with her for twenty minutes, and later I even joined one of her Saturday morning workshops to see how she works. What makes Trang's approach so distinctive is her obsession with local materials and natural imperfection. Instead of importing bright chemical pigments, she experiments with wood ash, crushed granite dust, and rice-husk glaze, keeping meticulous notebooks of kiln temperatures and firing times. She told us that roughly one in five pieces still cracks or warps in the kiln, yet she treats those failures as data rather than disasters. Watching her centre wet clay on the wheel with calm, unhurried precision was almost hypnotic—there's nowhere to hide a rushed gesture when you're working by hand. I admire her dedication enormously because making a living from slow, small-batch craftsmanship in an era of cheap overnight delivery takes real courage. Every morning when I hold one of her sturdy little cups, I'm reminded of the human patience baked into it, and it has honestly made me far more selective about the objects I bring into my home.",
+      "estSeconds": 108
+    },
+    "roundingOffQs": [
+      "Do you still use the cups you bought from her?",
+      "Would you like to take up a traditional craft as a hobby?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:007",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "place",
+    "prompt": "Describe a quiet place in your city where you like to go to think or study.",
+    "bullets": [
+      "where this place is and what it looks like",
+      "how often you go there and what you do",
+      "why it stays peaceful despite being in a city"
+    ],
+    "finalBullet": "and explain how spending time there makes you feel.",
+    "audio": "audio/speaking/s2c_007.mp3",
+    "linkedPart3Id": "s3s:007",
+    "sampleNotes": [
+      "3rd-floor reading room, municipal library",
+      "high arched windows, tamarind trees",
+      "old oak tables & warm brass lamps",
+      "Saturday mornings for reading/writing",
+      "thick stone walls mute traffic roar",
+      "mental sanctuary, zero pressure to spend"
+    ],
+    "band8Sample": {
+      "text": "My favourite quiet refuge in the city is the third-floor reading room of our municipal public library, tucked just behind a busy central boulevard. From the outside, you'd expect the noise of motorbikes and buses to pour straight in, yet the moment you climb the wide terrazzo staircase and push open the heavy timber doors, the city seems to drop to a whisper. The room itself has wonderfully high ceilings, tall arched windows looking out into the leafy canopy of old tamarind trees, and long oak tables fitted with warm brass reading lamps. Unlike trendy cafés, there's no loud pop playlist, no hiss of espresso machines, and no silent pressure to order another pricey drink just to justify sitting there for three hours. I usually head over on Saturday mornings right after it opens at eight, claim a corner seat by the south window, and work through IELTS reading passages or write notes in a paper journal. What keeps the atmosphere so serene is partly the thick colonial-era masonry that absorbs street rumble, and partly an unspoken pact among everyone inside—you'll see retirees flicking gently through newspapers beside university students sketching architectural plans, all respecting the stillness. Spending a morning there acts like a reset button for my brain. Living in a fast-paced metropolis, it's rare to find an indoor space that asks nothing of you financially and lets your thoughts breathe at their own pace. I always walk back down the front steps feeling noticeably clearer-headed and far less rushed than when I arrived.",
+      "estSeconds": 106
+    },
+    "roundingOffQs": [
+      "Do many young people still use this library?",
+      "Is it easy to get there from your home?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:008",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "place",
+    "prompt": "Describe a historic town or neighbourhood that left a strong impression on you.",
+    "bullets": [
+      "where this town or neighbourhood is located",
+      "what its architecture and atmosphere are like",
+      "what you did while you were there"
+    ],
+    "finalBullet": "and explain why it stood out so vividly in your memory.",
+    "audio": "audio/speaking/s2c_008.mp3",
+    "linkedPart3Id": "s3s:008",
+    "sampleNotes": [
+      "old quarter of Hue / Phuoc Tich village",
+      "mossy tiled roofs, wooden garden houses",
+      "visited early morning before tour buses",
+      "pottery kiln & elderly resident's tea",
+      "living heritage, not a sterile museum",
+      "rare quiet dignity"
+    ],
+    "band8Sample": {
+      "text": "A historic place that made an unforgettable impression on me is Phuoc Tich, an ancient riverside pottery village about forty kilometres north of Hue in central Vietnam. I visited it on a misty weekday morning last spring after a local friend urged me to skip the busier tourist spots and cycle out along the O Lau River instead. Stepping onto its narrow brick lanes felt like entering a quieter century. Unlike heavily commercialised old towns packed with souvenir stalls and neon signs, Phuoc Tich consists of dozens of traditional timber garden houses framed by clipped tea-plant hedges, mossy tiled roofs, and centuries-old banyan trees. Because the village is tucked into a bend of the river, it's remarkably serene—almost the only sounds were birdsong, bicycles rattling softly over brickwork, and the distant splash of oars. While I was there, an elderly homeowner kindly invited me onto his veranda for a cup of bitter lotus tea and showed me the carved wooden beams his great-grandfather had assembled without a single iron nail. Later I wandered past the remnants of traditional wood-fired ceramic kilns that once supplied royal kitchens. What stayed with me most was the feeling of living heritage rather than a staged film set. People still cook, garden, and care for ancestral shrines inside those timber homes, yet you can also sense how fragile that continuity is as younger villagers move to cities for work. Leaving at dusk, I felt a mixture of deep admiration and quiet urgency—the place showed me how much grace traditional vernacular architecture carries when a community manages to preserve its rhythm.",
+      "estSeconds": 110
+    },
+    "roundingOffQs": [
+      "Would you recommend this place to foreign visitors?",
+      "Do you think it will look the same in twenty years' time?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:009",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "place",
+    "prompt": "Describe an unusual or striking modern building you have visited.",
+    "bullets": [
+      "where the building is and what it is used for",
+      "what makes its design unusual or memorable",
+      "how you felt when you walked inside it"
+    ],
+    "finalBullet": "and explain whether you think it is a successful piece of architecture.",
+    "audio": "audio/speaking/s2c_009.mp3",
+    "linkedPart3Id": "s3s:009",
+    "sampleNotes": [
+      "bamboo community pavilion on river edge",
+      "no steel beams - woven arched vault",
+      "filtered daylight & natural breeze",
+      "used for workshops, art shows, lectures",
+      "surprisingly cool without air-con",
+      "sustainable beauty + real civic use"
+    ],
+    "band8Sample": {
+      "text": "One modern structure that completely surprised me is a bamboo community pavilion built beside a quiet canal on the edge of Da Nang, which serves as a venue for lectures, weekend craft fairs, and small acoustic concerts. From across the water, it looks almost like an upturned woven basket or a giant tropical leaf hovering above a shallow reflecting pool. What makes the design so remarkable is that the entire soaring vaulted roof is constructed from thousands of treated bamboo poles lashed and pinned together, with virtually no visible steel girders or concrete columns interrupting the central floor. I first visited on a sweltering afternoon in July for a local photography talk, expecting to roast under a roof without air conditioning. Yet the instant I stepped inside, the temperature felt five or six degrees cooler. Because the pavilion sits over water and features a wide circular oculus at the very top, warm air rises naturally and pulls a gentle breeze across the pool and through the seating area. Soft shafts of daylight filter through the curved lattice, casting shifting geometric patterns across the stone tiles as the sun moves. To my mind, it's a genuinely triumphant piece of architecture because its beauty serves a real environmental and social purpose rather than merely showing off for photographs. Too many futuristic glass towers ignore the tropical sun and rely on roaring cooling plants; this pavilion works with local climate and modest local materials to create a welcoming public hall that feels both rooted and strikingly contemporary.",
+      "estSeconds": 105
+    },
+    "roundingOffQs": [
+      "Do local residents visit that building regularly?",
+      "Do you generally prefer modern buildings or older ones?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:010",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "place",
+    "prompt": "Describe a natural area outside a city that you enjoy visiting.",
+    "bullets": [
+      "where this natural area is and how you get there",
+      "what the scenery and wildlife are like",
+      "what activities you usually do when you visit"
+    ],
+    "finalBullet": "and explain why this place is special to you.",
+    "audio": "audio/speaking/s2c_010.mp3",
+    "linkedPart3Id": "s3s:010",
+    "sampleNotes": [
+      "Son Tra peninsula - 25 mins from city",
+      "steep coastal forest & turquoise coves",
+      "red-shanked douc langurs in treetops",
+      "early dawn cycling & thermos of tea",
+      "instant shift from concrete to wild",
+      "reminds me how close nature still is"
+    ],
+    "band8Sample": {
+      "text": "A natural spot I return to whenever I need to clear my head is the Son Tra peninsula, a forested headland jutting into the sea just twenty-five minutes by scooter from central Da Nang. The transition is astonishingly abrupt: one minute you're weaving past coastal cafés, and ten minutes later you're climbing a winding hillside road beneath dense tropical canopy with sheer views down to turquoise rocky coves. Because much of the peninsula is a protected nature reserve, the air smells sharply of damp leaves, wild figs, and sea salt rather than exhaust fumes. If you head up around six in the morning and switch off your engine near the quieter turnouts, you often catch sight of rare red-shanked douc langurs—strikingly colourful monkeys leaping silently between high branches—alongside bright kingfishers darting over forest streams. My favourite routine is riding up with a friend at sunrise, parking near an old banyan trail, and hiking for an hour before sitting on a sun-warmed boulder to share a thermos of hot tea and banh mi while watching fishing boats fan out across the bay below. What makes Son Tra so dear to me is that it offers genuine wilderness right on an urban doorstep, yet it also feels wonderfully fragile. Seeing wild primates thriving just kilometres from high-rise hotels gives me a deep sense of gratitude and a much stronger personal stake in conservation. Every visit resets my sense of scale—work deadlines that felt monumental on Friday evening shrink back to their proper size when you're staring across an endless horizon of sea and cloud.",
+      "estSeconds": 108
+    },
+    "roundingOffQs": [
+      "Is this natural area well protected from overdevelopment?",
+      "Do you prefer visiting mountains or the coast?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:011",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "place",
+    "prompt": "Describe a noisy or lively public place that you still enjoy visiting.",
+    "bullets": [
+      "where this place is and when you usually go there",
+      "what creates the noise and energy there",
+      "what you like to see, hear, or buy when you visit"
+    ],
+    "finalBullet": "and explain why you enjoy it despite the bustle.",
+    "audio": "audio/speaking/s2c_011.mp3",
+    "linkedPart3Id": "s3s:011",
+    "sampleNotes": [
+      "neighbourhood wet market, Sunday 7 am",
+      "sizzling pans, clinking ladles, banter",
+      "fresh basil, mangoes, steamed rice rolls",
+      "vendors know regular shoppers",
+      "lively warmth vs sterile supermarkets",
+      "grounds me in real community life"
+    ],
+    "band8Sample": {
+      "text": "Even though I generally value peace and quiet when I'm working, there's one gloriously noisy place I genuinely look forward to visiting every Sunday morning: my neighbourhood fresh produce market. Tucked down a maze of covered lanes two blocks from my flat, it hits peak energy right around seven o'clock. The soundtrack is completely unmistakable—vendors calling out the morning's catch, the rhythmic chop of cleavers on heavy wooden blocks, motorbikes gently squeezing past baskets of leafy greens, and good-natured bargaining echoing between regular shoppers and stallholders. Normally I'd find that volume overwhelming, yet here it feels buoyant and warm rather than stressful. Whenever I go, I weave past pyramids of ripe mangoes, fragrant bunches of mint and coriander, and steaming clay pots of savoury rice rolls being ladled onto banana leaves. I always stop at the same grandmother's herb stall for fresh lemongrass and chillies, and grab a quick bowl of crab noodle soup on a tiny plastic stool by the entrance before heading home. What makes me love the market despite the chaos is how unmistakably human it feels. After spending five days behind glowing monitors and silent self-checkout tills, stepping into a space filled with eye contact, laughter, and real seasonal smells snaps me straight back into the physical world. Supermarkets are undeniably tidier and air-conditioned, yet they feel identical in every city on earth. My noisy corner market, by contrast, has a pulse all its own, and walking out with two canvas bags of vibrant produce always leaves me feeling surprisingly energised for the week ahead.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Do young people in your city still shop at traditional markets?",
+      "Are there noisy places you try hard to avoid?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:012",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "place",
+    "prompt": "Describe a café, bookshop, or local business you often recommend to others.",
+    "bullets": [
+      "what kind of business it is and where it is located",
+      "what makes its products or service stand out",
+      "how you first discovered it"
+    ],
+    "finalBullet": "and explain why you are always eager to recommend it.",
+    "audio": "audio/speaking/s2c_012.mp3",
+    "linkedPart3Id": "s3s:012",
+    "sampleNotes": [
+      "Old Banyan Bookshop & Tea Room",
+      "2nd floor of narrow heritage townhouse",
+      "found dodging sudden rain shower",
+      "handwritten staff review cards",
+      "curated translations + quiet jasmine tea",
+      "genuine craft vs algorithmic feeds"
+    ],
+    "band8Sample": {
+      "text": "Whenever a friend visits my city and asks for somewhere genuinely special to spend an afternoon, I immediately recommend an independent bookshop and tea room called Old Banyan, tucked on the second floor of a narrow shophouse near the river. I stumbled upon it purely by chance two years ago when a torrential afternoon downpour forced me up an unmarked staircase looking for shelter. Pushing open the wooden screen door felt like stepping into a well-loved private study: floor-to-ceiling teak bookshelves, worn linen armchairs, warm lighting, and the faint scent of roasted oolong tea drifting from a tiny counter at the back. What sets Old Banyan miles apart from giant chain bookstores is the meticulous personal curation. Almost every third title on the shelves has a small cream card tucked beneath it with a thoughtful three-line note handwritten by the owner or one of her two staff members—never generic hype, just honest observations about the writing style or why a particular translation shines. They also host quiet monthly reading circles and stock small-press Vietnamese essays alongside carefully chosen international non-fiction. Whenever I'm stuck in a reading slump, I can tell the owner roughly what mood I'm in, and she has an uncanny knack for pulling down an obscure gem I'd never have encountered through an online algorithm. I'm always eager to recommend the shop because independent cultural spaces run on razor-thin margins and survive purely through word of mouth. Sending friends there feels like sharing a treasured secret while helping keep a wonderful corner of the neighbourhood alive.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Do you still visit that shop regularly?",
+      "Why do you think word-of-mouth recommendations carry so much weight?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:013",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "object",
+    "prompt": "Describe an everyday piece of technology that you would find hard to live without.",
+    "bullets": [
+      "what the device is and when you got it",
+      "how you use it throughout a typical week",
+      "what makes it better than older alternatives"
+    ],
+    "finalBullet": "and explain why your routine would feel noticeably harder without it.",
+    "audio": "audio/speaking/s2c_013.mp3",
+    "linkedPart3Id": "s3s:013",
+    "sampleNotes": [
+      "matte e-ink e-reader (bought 3 yrs ago)",
+      "commute, bed, coffee shops",
+      "no glare, weeks of battery, zero alerts",
+      "instant built-in English dictionary",
+      "highlights export straight to flashcards",
+      "tripled my annual reading volume"
+    ],
+    "band8Sample": {
+      "text": "Rather than picking the obvious smartphone or laptop, the piece of everyday technology I'd genuinely hate to give up is my lightweight e-ink reader, which I bought about three years ago after realising how badly my eyes ached from reading PDFs on a tablet. At first glance it looks almost ridiculously basic—a thin matte grey slab with a black-and-white screen, no browser worth mentioning, and no colourful apps. Yet that simplicity is precisely what makes it brilliant. Throughout a typical week, it travels everywhere in my backpack: I read twenty minutes during lunch breaks, another chapter while waiting in queues, and half an hour before sleep with the warm front light turned low. Because the screen mimics real ink on paper rather than blasting blue light into your eyes, I can read comfortably in bright midday sun on a park bench or in a dark bedroom without disrupting my sleep. Where it genuinely outshines printed books for me is language learning. Whenever I read an academic essay or novel in English and hit an unfamiliar idiom, a single tap brings up a crisp definition and saves the word automatically into a vocabulary list that I review later. On top of that, the battery easily lasts three weeks on a single charge, and there are zero incoming messages nagging for my attention. Without it, my routine would lose its calmest anchor—I'd almost certainly slip back into scrolling on my phone during spare moments instead of finishing twenty-five books a year. It's a rare example of modern technology that subtracts distraction rather than multiplying it.",
+      "estSeconds": 109
+    },
+    "roundingOffQs": [
+      "Do you still buy printed books from time to time?",
+      "Would you recommend an e-reader to friends who struggle to read regularly?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:014",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "object",
+    "prompt": "Describe an old object your family has kept for many years.",
+    "bullets": [
+      "what the object is and where it is kept",
+      "how your family originally acquired it",
+      "what condition it is in today"
+    ],
+    "finalBullet": "and explain why your family values keeping it.",
+    "audio": "audio/speaking/s2c_014.mp3",
+    "linkedPart3Id": "s3s:014",
+    "sampleNotes": [
+      "mechanical brass pendulum wall clock",
+      "wooden case, chimes on the hour",
+      "grandfather bought in 1978 after saving",
+      "hangs in parents' dining room",
+      "wound every Sunday by my father",
+      "living link across three generations"
+    ],
+    "band8Sample": {
+      "text": "An heirloom my family has treasured for nearly half a century is a mechanical brass pendulum wall clock housed in a dark carved rosewood cabinet, which still hangs on the main dining-room wall at my parents' house. My grandfather bought it in the late nineteen-seventies after saving quietly for almost two years from his salary as a railway clerk—back then, owning a dependable European-style wind-up clock was a real mark of pride for a modest household. Remarkably, it still runs accurately today. Every Sunday morning right after breakfast, my father opens the hinged glass door, inserts a small butterfly-shaped brass key, and winds the two springs with a familiar soft clicking sound. The varnished wood has picked up a few tiny scratches along the lower corners and the painted Roman numerals have faded slightly to a warm cream, yet those marks only make it feel more authentic. Its steady tick and gentle, resonant chime on the hour have formed the quiet background soundtrack of my entire childhood. Even though everyone in the house now checks the time effortlessly on smartphones and smartwatches, nobody would dream of taking that clock down or swapping it for a silent battery model. My family keeps it because it anchors our shared memory—whenever the chimes ring out during Lunar New Year dinners, my grandmother inevitably smiles and tells another story about my grandfather's meticulous habits. In a world where gadgets grow outdated in three years, having one sturdy mechanical object that links three generations feels deeply comforting.",
+      "estSeconds": 104
+    },
+    "roundingOffQs": [
+      "Would you like to inherit that object yourself one day?",
+      "Do you tend to keep sentimental objects, or prefer travelling light?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:015",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "object",
+    "prompt": "Describe a handmade item you gave to someone or received as a gift.",
+    "bullets": [
+      "what the item was and who made it",
+      "what occasion it was made for",
+      "how much time or effort went into making it"
+    ],
+    "finalBullet": "and explain why this handmade gift meant so much.",
+    "audio": "audio/speaking/s2c_015.mp3",
+    "linkedPart3Id": "s3s:015",
+    "sampleNotes": [
+      "hand-bound linen recipe notebook",
+      "made by me for sister's first flat",
+      "weekend bookbinding workshop + 3 nights",
+      "copied 20 family recipes from mum",
+      "margins with dad's seasoning tips",
+      "emotional bridge to home"
+    ],
+    "band8Sample": {
+      "text": "Last autumn, when my younger sister moved to another city for her first job and rented a tiny studio flat on her own, I decided to make her a hand-bound family recipe book as a housewarming present. I'm hardly an accomplished artist, so I signed up for a Saturday afternoon Japanese bookbinding workshop to learn how to fold thick cream paper signatures, cut sturdy cardboard covers wrapped in olive-green linen, and stitch the spine neatly with waxed cotton thread. Once the blank book was finished, the real labour of love began. Over three quiet evenings, I rang my mother and grandmother to pin down precise quantities for twenty of our family's signature home-cooked dishes—which wasn't easy, because both of them usually cook 'by eye' and measure salt in pinches! I wrote each recipe out cleanly by hand in fountain pen, leaving little margin notes like 'don't rush browning the shallots' or 'use half a spoon of fish sauce if the broth tastes flat', and pasted in three small Polaroid snapshots of our kitchen back home. When my sister unwrapped it at her empty new dining table, she flipped past the title page and actually teared up a little, which completely caught me off guard because she's normally quite unsentimental. What made the gift so meaningful wasn't flawless craftsmanship—the spine stitching is slightly uneven near the bottom—but the fact that it carried familiar flavours and family voices into an unfamiliar new chapter of her life. Every few weeks she still sends me photos of a splattered page beside a steaming pot of soup.",
+      "estSeconds": 108
+    },
+    "roundingOffQs": [
+      "Would you like to make another handmade gift in the future?",
+      "Do you think people appreciate handmade presents more as they grow older?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:016",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "object",
+    "prompt": "Describe a piece of clothing you wear on special occasions.",
+    "bullets": [
+      "what the garment looks like and where you got it",
+      "on what kinds of occasions you wear it",
+      "how you feel when you put it on"
+    ],
+    "finalBullet": "and explain why you prefer it over other formal outfits.",
+    "audio": "audio/speaking/s2c_016.mp3",
+    "linkedPart3Id": "s3s:016",
+    "sampleNotes": [
+      "tailored charcoal wool-linen blazer",
+      "made by local tailor in Hoi An",
+      "breathable half-lined weave for tropics",
+      "weddings, graduations, conference talks",
+      "sharp posture without feeling stiff",
+      "timeless cut beats fast-fashion suits"
+    ],
+    "band8Sample": {
+      "text": "The formal piece of clothing I reach for most often is a tailored charcoal-grey blazer that I had made three years ago at a modest family-run tailor shop in central Vietnam. I'd been invited to my cousin's wedding right in the middle of a humid summer, and I dreaded spending six hours sweating inside a heavy polyester off-the-rack suit. The tailor suggested a lightweight blend of breathable wool and crisp linen, half-lined on the inside so air could still circulate, with subtle horn buttons and a clean, uncluttered lapel. Getting measured properly took two fittings over four days, and the difference in comfort was immediate. Since then, that single blazer has seen me through family weddings, a friend's graduation dinner, two university guest panels, and an important job interview. I can dress it up with a crisp white shirt and silk tie, or pair it effortlessly with dark chinos and a plain knit polo when an event leans smart-casual. Putting it on does something subtle to my posture and mindset—because the shoulders sit flat and the sleeves fall at exactly the right length, I feel poised and self-assured rather than trussed up in a costume. I prefer it over trendier formal wear because classic tailoring never looks dated in photographs five years later, and paying slightly more once for natural fabric and solid stitching has outlasted three cheaper fast-fashion jackets put together. Even after dry-cleaning it half a dozen times, the seams still lie razor-sharp, making it the one item in my wardrobe that proves well-made simplicity always wins.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Do you enjoy dressing up formally, or prefer casual clothes?",
+      "Are traditional tailors still popular in your country?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:017",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "object",
+    "prompt": "Describe something useful you bought after saving up for a long time.",
+    "bullets": [
+      "what the item was and why you wanted it",
+      "how long it took you to save the money",
+      "how you use it in your daily life now"
+    ],
+    "finalBullet": "and explain why saving up made owning it more satisfying.",
+    "audio": "audio/speaking/s2c_017.mp3",
+    "linkedPart3Id": "s3s:017",
+    "sampleNotes": [
+      "ergonomic mesh office chair",
+      "chronic lower-back ache from dining chair",
+      "saved 6 months by cooking & skipping gadgets",
+      "tested 4 models in showroom first",
+      "use 8–9 hrs/day for work & study",
+      "delayed gratification + zero buyer's remorse"
+    ],
+    "band8Sample": {
+      "text": "Something remarkably practical that I saved up for over half a year is a proper ergonomic mesh office chair, which I finally bought about eighteen months ago. During my first year working hybrid shifts from home, I made do with a stiff wooden dining chair padded with an old cushion. It seemed fine at first, yet by the end of each week my shoulders felt knotted and a dull lower-back ache lingered well into the weekend. Once I realised how many hours I actually spend seated—between full-time software work and evening IELTS study—I decided to invest in a durable, fully adjustable chair with decent lumbar support rather than another flimsy budget model. Because quality ergonomic chairs aren't cheap, I set up a dedicated savings pot and trimmed my discretionary spending for six months: cooking weekday lunches at home, cancelling two streaming subscriptions I barely watched, and holding off on minor tech upgrades. That waiting period also stopped me rushing the decision. I spent two Saturdays actually visiting showrooms to test seat depth, armrests, and warranty terms instead of trusting flashy online adverts. The afternoon the chair finally arrived and I adjusted it to my exact desk height, the relief was practically instant—within two weeks my evening back stiffness vanished completely. Looking back, saving patiently made the purchase infinitely more rewarding than slapping it on a credit card. Because I'd genuinely earned it through six months of small, conscious trade-offs, I felt zero buyer's remorse, and it taught me a lasting financial habit: scrimp on clutter, and save patiently for tools that protect your daily health.",
+      "estSeconds": 110
+    },
+    "roundingOffQs": [
+      "Are you saving up for anything else at the moment?",
+      "Do you think buying on credit makes people value purchases less?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:018",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "object",
+    "prompt": "Describe a photograph you took or own that carries a meaningful memory.",
+    "bullets": [
+      "what is shown in the photograph",
+      "when and where it was taken",
+      "where you keep it now"
+    ],
+    "finalBullet": "and explain why this particular image means so much to you.",
+    "audio": "audio/speaking/s2c_018.mp3",
+    "linkedPart3Id": "s3s:018",
+    "sampleNotes": [
+      "candid shot of grandparents shelling lotus seeds",
+      "golden late-afternoon kitchen light, 2021",
+      "taken on phone during quiet Tet eve",
+      "neither realised I was shooting",
+      "framed 5x7 matte print on bookshelf",
+      "captures ordinary tenderness before grandfather passed"
+    ],
+    "band8Sample": {
+      "text": "A photograph I treasure above any travel snapshot sits in a slim wooden frame on my bookshelf: it's a candid picture I took of my grandparents sitting side by side on low bamboo stools in their backyard, quietly shelling fresh lotus seeds on the afternoon before Lunar New Year five years ago. Technically it's far from a gallery masterpiece—I captured it on an ageing smartphone with slightly grainy shadows—yet the late-afternoon light happened to slant through the pomelo tree right across their hands, bathing the whole courtyard in warm amber. What makes the frame magical is that neither of them noticed me standing by the kitchen doorway. My grandfather is leaning slightly towards my grandmother, laughing mid-story with a bright enamel basin balanced between his knees, while she's shaking her head with a playful half-smile as she sorts the pale green seeds into a woven tray. Normally, whenever anyone pulled out a camera at family gatherings, both of them immediately stiffened up and stared solemnly straight into the lens. Catching that unguarded ten-second exchange felt like bottling a tiny slice of everyday devotion. My grandfather passed away two years after that afternoon, so the photograph has grown infinitely more precious with time. Looking at it doesn't make me sad, though—it actually brings back the exact smell of simmering broth, the clatter of distant firecrackers, and the steady rhythm of their fifty-year marriage. Whenever my life gets overly frantic, glancing at that framed print reminds me that the moments we end up cherishing most are rarely grand milestones, but ordinary afternoons shared quietly with people we love.",
+      "estSeconds": 110
+    },
+    "roundingOffQs": [
+      "Do you think people print too few photographs nowadays?",
+      "Have you shared that photograph with other members of your family?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:019",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "event",
+    "prompt": "Describe a traditional festival or public celebration that you enjoy.",
+    "bullets": [
+      "what the festival is and when it takes place",
+      "what customs, food, and activities are involved",
+      "how you and your family usually celebrate it"
+    ],
+    "finalBullet": "and explain why this festival remains important to you.",
+    "audio": "audio/speaking/s2c_019.mp3",
+    "linkedPart3Id": "s3s:019",
+    "sampleNotes": [
+      "Mid-Autumn Festival (8th lunar month)",
+      "cool crisp night, bright full moon",
+      "paper star lanterns, lion drums",
+      "green tea + baked lotus-seed mooncakes",
+      "less frantic than Tet, more poetic",
+      "childhood wonder + quiet family reunion"
+    ],
+    "band8Sample": {
+      "text": "While Lunar New Year is naturally the biggest holiday in Vietnam, the traditional celebration I personally enjoy most is the Mid-Autumn Festival, which falls on the fifteenth night of the eighth lunar month—usually sometime in September or early October. Compared with the whirlwind of cleaning, travelling, and formal visits during Tet, Mid-Autumn feels wonderfully gentle, playful, and poetic. Weeks beforehand, neighbourhood streets light up with stalls selling cellophane star lanterns, painted paper masks, and intricately boxed mooncakes filled with lotus paste, green tea, or savoury roasted nuts. On the evening itself, just as the harvest moon rises bright and low above the rooftops, you hear the thunderous beat of lion-dance drums echoing down the alleys while flocks of young children parade along the pavements carrying glowing lanterns. In my family, we've kept a lovely low-key ritual: we lay a bamboo mat on the balcony or courtyard, slice fresh pomelo segments and mooncakes into tidy wedges, and brew a strong pot of jasmine tea to balance the sweetness. My parents tell stories about the lanterns they used to craft from scrap bamboo and tin cans when they were kids, and we simply sit under the cool breeze catching up without anyone rushing to check a clock. Even as an adult, this festival stays deeply meaningful to me because it celebrates both childhood wonder and quiet gratitude for the changing season. In the middle of a busy autumn work calendar, pausing for one evening just to share tea, watch children laugh in the street, and admire the full moon feels like a small, luminous gift.",
+      "estSeconds": 109
+    },
+    "roundingOffQs": [
+      "Has the way people celebrate this festival changed since you were a child?",
+      "Are there any festivals from other countries you would love to experience?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:020",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "event",
+    "prompt": "Describe an important family gathering that you remember vividly.",
+    "bullets": [
+      "what the occasion was and where it was held",
+      "who attended the gathering",
+      "what happened during the event"
+    ],
+    "finalBullet": "and explain why that gathering stands out in your memory.",
+    "audio": "audio/speaking/s2c_020.mp3",
+    "linkedPart3Id": "s3s:020",
+    "sampleNotes": [
+      "grandparents' 50th wedding anniversary",
+      "garden restaurant by river, 30 relatives",
+      "cousins flew back from abroad & north",
+      "surprise slideshow of old black-and-white photos",
+      "grandfather's witty 3-minute toast",
+      "rare moment all three generations together"
+    ],
+    "band8Sample": {
+      "text": "The family gathering that stands out most vividly in my memory is my maternal grandparents' golden wedding anniversary—fifty years of marriage—which we celebrated two summers ago at a leafy riverside garden house in our hometown. Because my cousins are scattered across three different cities and one aunt lives abroad, getting every branch of the family under one roof happens only once in a blue moon, so nearly thirty of us coordinated flights and leave months in advance to keep the whole weekend a surprise. Instead of a stiff hotel banquet with deafening karaoke, we arranged two long wooden tables beneath strings of warm fairy lights so everyone could actually hear one another talk. My cousins and I had spent weeks quietly scanning dozens of faded black-and-white photographs from the nineteen-seventies and eighties, and after dinner we projected a short ten-minute montage onto a linen sheet hung between two trees. Watching my grandmother burst out laughing at a snapshot of my grandfather's huge flared trousers from his wedding day is a scene I'll never forget. Afterwards, my grandfather—who is normally a man of very few words—stood up, clinked his teacup, and gave a witty three-minute toast saying the secret to fifty years together was 'short memories for small arguments and a very good sense of humour'. That evening stayed with me because it felt both joyful and fleeting: seeing toddlers darting around the chairs of relatives in their eighties reminded me how precious unhurried family time is, and how quickly the window for gathering everyone together can narrow if we keep postponing it.",
+      "estSeconds": 108
+    },
+    "roundingOffQs": [
+      "How often does your extended family manage to meet up nowadays?",
+      "Do you prefer large family celebrations or small dinners?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:021",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "event",
+    "prompt": "Describe a community event or neighbourhood project you took part in.",
+    "bullets": [
+      "what the event or project was and who organised it",
+      "what role you played during the day",
+      "who else participated alongside you"
+    ],
+    "finalBullet": "and explain what made taking part so rewarding.",
+    "audio": "audio/speaking/s2c_021.mp3",
+    "linkedPart3Id": "s3s:021",
+    "sampleNotes": [
+      "Sunday morning canal-bank clean-up & tree planting",
+      "organised by local youth volunteer group",
+      "50 residents: students, retirees, shopkeepers",
+      "sorted recyclables & planted 30 bougainvillea",
+      "free iced lime tea from corner shop",
+      "turned faceless neighbours into real community"
+    ],
+    "band8Sample": {
+      "text": "Last spring I took part in a Sunday morning canal-bank clean-up and tree-planting drive organised by a grassroots youth group in my ward. For months, a two-hundred-metre strip along a small tributary near my flat had been accumulating windblown plastic bags, discarded foam boxes, and overgrown weeds, so residents barely walked past it anymore. When I saw a handwritten flyer taped to our apartment lift asking for volunteers at half past six on Sunday, I signed up half-expecting maybe ten people to show up. Instead, nearly fifty neighbours turned out in sun hats and gardening gloves—university students, two retired schoolteachers, a local baker, and even a handful of primary-school children dragging oversized rakes. I was paired with two engineering students and an older gentleman from the next block to clear plastic debris from the stone embankment and sort glass bottles, metal cans, and general rubbish into separate sacks before the municipal truck arrived. During the second half of the morning, we dug shallow trenches along the railing and planted thirty young bougainvillea shrubs donated by a neighbourhood nursery. Midway through, the owner of a corner noodle stall carried out two huge thermoses of cold lime tea for everyone free of charge. What made the morning genuinely rewarding wasn't just seeing the embankment transform within three hours—though that visual contrast was hugely satisfying—it was watching strangers who had nodded silently in lifts for years suddenly trading jokes and names. Even now, whenever I jog past those blooming shrubs, I feel a quiet sense of shared ownership over the street.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Would you join a similar volunteer project again?",
+      "Is local volunteering common where you live?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:022",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "event",
+    "prompt": "Describe a live performance, concert, or talk that exceeded your expectations.",
+    "bullets": [
+      "what the event was and where it took place",
+      "why you initially had modest expectations",
+      "what happened on stage that surprised you"
+    ],
+    "finalBullet": "and explain why the experience left such a strong impression.",
+    "audio": "audio/speaking/s2c_022.mp3",
+    "linkedPart3Id": "s3s:022",
+    "sampleNotes": [
+      "chamber orchestra + traditional bamboo flute fusion",
+      "restored municipal theatre, rainy Friday",
+      "dragged along by colleague, expected stuffy evening",
+      "conductor spoke warmly between pieces",
+      "silent hall during solo flute encore",
+      "shattered stereotype that classical music is distant"
+    ],
+    "band8Sample": {
+      "text": "A live performance that completely blindsided me was an evening chamber concert at our restored municipal opera house last winter, pairing a small string ensemble with traditional Vietnamese bamboo flute and monochord players. To be completely honest, I only went because a colleague had a spare ticket after her sister caught a cold, and I walked in expecting two rather stiff hours of unfamiliar classical arrangements that might put me half to sleep after a gruelling workweek. From the very first piece, however, the hall's acoustics and the musicians' energy woke me straight up. What made the night extraordinary was how approachable the young conductor kept everything. Between each movement, he turned towards the audience with a handheld microphone and spent ninety seconds explaining the regional folk melody behind the score—demonstrating a single haunting phrase on the bamboo flute before the cellos and violins wove around it. Hearing how seamlessly a centuries-old northern lullaby blended with Western string harmonies gave me literal chills. During the unannounced encore, the lights dimmed to a single warm spotlight on the flautist, and six hundred people fell so utterly quiet you could hear the performer drawing breath between notes. Walking out into the cool drizzle afterwards, my colleague and I talked animatedly for an hour over hot ginger tea. That evening shattered my lazy assumption that formal concert halls are reserved for connoisseurs, and it reminded me how rare and moving it is to sit in a dark room with hundreds of strangers giving a craft their undivided attention.",
+      "estSeconds": 106
+    },
+    "roundingOffQs": [
+      "Have you been back to a similar concert since then?",
+      "Do you think ticket prices put young people off live arts?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:023",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "event",
+    "prompt": "Describe a sporting match or competition you watched or participated in.",
+    "bullets": [
+      "what sport it was and when it took place",
+      "whether you were playing or watching, and who was with you",
+      "what made the match dramatic or exciting"
+    ],
+    "finalBullet": "and explain why you still remember it so clearly.",
+    "audio": "audio/speaking/s2c_023.mp3",
+    "linkedPart3Id": "s3s:023",
+    "sampleNotes": [
+      "inter-company amateur badminton doubles final",
+      "local indoor sports hall, sweltering Saturday",
+      "partnered with quiet accounts colleague Duc",
+      "lost first set 14-21, cramped calves",
+      "switched to short net drops & patience",
+      "won 22-20 in decider - huge team roar"
+    ],
+    "band8Sample": {
+      "text": "One sporting match I'll remember for years wasn't a televised World Cup final, but an amateur inter-company badminton doubles final I played in last summer at a packed local sports hall. Our office club had entered mostly for fun, yet somehow my partner Duc—a quiet accountant with razor-sharp reflexes at the net—and I scraped through four knockout rounds to face a much younger, harder-hitting pair from a logistics firm. The hall was sweltering, my palms kept slipping on the racket grip, and in the opening game their thunderous smashes completely overwhelmed us; we dropped it fourteen to twenty-one in barely ten minutes. Between sets, instead of panicking, Duc leaned over and said quietly, 'Stop lifting the shuttle high to the back—force them to play soft drops at the net.' That simple tactical adjustment flipped the entire match on its head. We slowed the rally tempo down, moved them side to side, and squeaked out the second game twenty-one to nineteen. By the deciding set, both pairs were drenched in sweat and roughly forty colleagues from both companies had crowded behind the glass railing cheering every single rally. At nineteen-all, we survived a lung-burning thirty-shot exchange before Duc flicked a feathered cross-court drop that just clipped the tape and tumbled over. Two points later we sealed it twenty-two to twenty, and our colleagues rushed over banging water bottles like drums. I still remember it so vividly because it taught me how composure and smart teamwork can overcome raw power when your legs feel ready to give up.",
+      "estSeconds": 106
+    },
+    "roundingOffQs": [
+      "Do you still play badminton with that same partner?",
+      "Do you handle competitive pressure well in everyday life too?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:024",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "event",
+    "prompt": "Describe a time when a sudden change in the weather disrupted your plans.",
+    "bullets": [
+      "what you had planned to do and who was with you",
+      "how suddenly the weather changed",
+      "what you did instead to salvage the day"
+    ],
+    "finalBullet": "and explain how you felt about how things turned out.",
+    "audio": "audio/speaking/s2c_024.mp3",
+    "linkedPart3Id": "s3s:024",
+    "sampleNotes": [
+      "autumn picnic & hilltop hike with 4 friends",
+      "bright blue skies at 8 am -> black clouds by 11",
+      "torrential downpour & howling wind on trail",
+      "sheltered in tiny wooden tea shack halfway down",
+      "owner fried ginger tofu & shared stories",
+      "soaked shoes yet coziest afternoon all year"
+    ],
+    "band8Sample": {
+      "text": "Last October, four university friends and I planned a day-long hike and picnic up a scenic pine ridge just outside Da Lat to celebrate everyone finally having a free Saturday at the same time. When we set off at eight in the morning, the sky was crystal blue without a single cloud in sight, so naturally half of us left our waterproof jackets in the car boot and packed light cotton hoodies alongside baguettes, fruit, and a picnic blanket. Barely twenty minutes before we reached the grassy summit clearing, however, the temperature plunged almost instantaneously, a chilly wind began bending the treetops, and a thick wall of slate-grey cloud swept straight across the valley. Within five minutes, the heavens opened with stinging sideways rain that turned the dirt footpath into slick red mud. Continuing to the exposed ridge would have been genuinely unsafe, so we scrambled back down the track, laughing nervously as our trainers squelched with every step. Halfway down we spotted a tiny timber tea shack run by a retired local couple and dashed under its corrugated iron awning looking like drowned rats. Seeing us shivering, the owner promptly stoked a small charcoal brazier so we could warm our hands, brewed a huge kettle of hot artichoke and ginger tea, and fried up a plate of crispy spiced tofu to go alongside our rescued picnic sandwiches. We ended up sitting on low stools for two hours watching curtains of rain veil the pine forest while trading old college stories. Looking back, I'm almost glad the storm ruined our polished itinerary—that unplanned afternoon by the fire felt far warmer and more memorable than an ordinary sunny picnic would ever have been.",
+      "estSeconds": 117
+    },
+    "roundingOffQs": [
+      "Are you more careful about packing rain gear now?",
+      "Do sudden weather changes bother you much in daily life?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:025",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "experience",
+    "prompt": "Describe a challenging skill you learnt as a teenager or adult.",
+    "bullets": [
+      "what the skill was and why you decided to learn it",
+      "how you went about practising it",
+      "what difficulties you faced along the way"
+    ],
+    "finalBullet": "and explain how mastering it changed your confidence.",
+    "audio": "audio/speaking/s2c_025.mp3",
+    "linkedPart3Id": "s3s:025",
+    "sampleNotes": [
+      "learning freestyle swimming at age 23",
+      "missed out on boat trips & beach swims",
+      "hired patient coach at 6 am outdoor pool",
+      "panicked exhaling underwater at first",
+      "drilled breathing rhythm 3x/week for 3 months",
+      "first 500m continuous swim -> huge confidence boost"
+    ],
+    "band8Sample": {
+      "text": "A skill I'm genuinely proud of picking up as an adult is freestyle swimming, which I finally learnt at the age of twenty-three after growing up terrified of deep water. Even though I came from a coastal region, I'd had a brief scare at the beach as a young child and quietly avoided anything deeper than chest height for fifteen years. What finally nudged me to face it was sitting on the deck of a boat during a friends' island trip, awkwardly clutching my backpack while everyone else dived effortlessly into clear turquoise water. The following Monday, I swallowed my pride and signed up for early-morning adult beginner lessons at a municipal outdoor pool. Those first three weeks were deeply humbling—I was sharing a lane with confident eight-year-olds gliding past me like dolphins while I spluttered after barely five metres. My biggest hurdle wasn't physical strength at all, but breathing panic: the instant my face went under, my body tensed up and burned through oxygen twice as fast. My coach made me stop trying to cross the pool and spend entire sessions simply floating, blowing steady bubbles underwater, and turning my head smoothly to the side. I committed to going three mornings a week before work, rain or shine, for three solid months. The morning I finally linked ten uninterrupted fifty-metre lengths without stopping for breath felt exhilarating. Mastering swimming as an adult did far more than unlock beach holidays—it proved to me that long-standing fears aren't permanent personality traits, and that tolerating being clumsy in public for a few weeks is a tiny price for a lifelong skill.",
+      "estSeconds": 111
+    },
+    "roundingOffQs": [
+      "Do you still swim regularly nowadays?",
+      "Is there another challenging skill you would like to learn soon?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:026",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "experience",
+    "prompt": "Describe a time when you made a difficult decision that turned out well.",
+    "bullets": [
+      "what the decision was and what options you had",
+      "why it felt risky or hard to choose at the time",
+      "how you finally made up your mind"
+    ],
+    "finalBullet": "and explain why you are glad you chose that path.",
+    "audio": "audio/speaking/s2c_026.mp3",
+    "linkedPart3Id": "s3s:026",
+    "sampleNotes": [
+      "turned down higher-paid corporate offer",
+      "picked smaller product engineering team instead",
+      "15% lower starting pay, less famous brand",
+      "parents worried about prestige & security",
+      "spoke to two current engineers candidly",
+      "gained real ownership & doubled learning curve"
+    ],
+    "band8Sample": {
+      "text": "One of the toughest career decisions I've made so far happened two years ago, when I had to choose between two very different job offers within the same forty-eight-hour window. The first came from a prestigious multinational bank offering a generous salary, a shiny downtown office, and a well-known brand name that would look impressive on any CV. The second was from a modest forty-person product team building educational tools, paying about fifteen percent less and virtually unknown outside tech circles. Naturally, turning down the bigger paycheque felt daunting—my parents gently nudged me towards the safer corporate name, and I kept second-guessing whether I was being naive. To stop spinning in circles, I wrote down what I actually wanted my day-to-day life to look like twelve months ahead, and I asked both hiring managers if I could have an informal fifteen-minute chat with an engineer already doing the role. That single step made the contrast crystal clear. At the bank, I'd mostly be maintaining legacy ticketing modules behind layers of approval; at the smaller product team, I'd own full features from user interviews right through to deployment alongside two senior mentors. I took a deep breath, accepted the smaller company, and honestly haven't looked back once. Within a year, the breadth of responsibility pushed my technical judgement forward faster than three years in a rigid silo could have, and my salary eventually caught up anyway. I'm hugely glad I trusted first-hand curiosity over surface prestige—it taught me to evaluate big crossroads by daily growth rather than external applause.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Do you usually ask for other people's advice before big decisions?",
+      "Are you generally a quick decision-maker or a cautious one?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:027",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "experience",
+    "prompt": "Describe a journey that did not go according to plan.",
+    "bullets": [
+      "where you were travelling and how you went",
+      "what went wrong along the way",
+      "how you and your companions handled the delay"
+    ],
+    "finalBullet": "and explain what you learnt from the experience.",
+    "audio": "audio/speaking/s2c_027.mp3",
+    "linkedPart3Id": "s3s:027",
+    "sampleNotes": [
+      "overnight coastal sleeper train to Nha Trang",
+      "landslide blocked tracks at 2 am",
+      "stuck 5 hrs near tiny rural station",
+      "shared fruit & cards with cabin strangers",
+      "transfer shuttle bus arranged at sunrise",
+      "learnt patience & packing snacks/powerbank"
+    ],
+    "band8Sample": {
+      "text": "A journey that veered wildly off schedule happened last November when a friend and I boarded an overnight sleeper train along the central coast to attend a wedding in Nha Trang. We'd chosen the train specifically because it's usually punctual and lets you wake up right beside the sea without dealing with airport queues. Everything went smoothly until about two in the morning, when the carriage shuddered to a gentle halt in pitch darkness. After twenty minutes, the attendant walked down the corridor quietly explaining that heavy rain had triggered a small mudslide onto the tracks ten kilometres ahead, and safety crews needed daylight to clear the boulders. Instead of arriving at seven, we were stranded beside a tiny rural siding for nearly five hours. At first, frustration rippled through the carriage because mobile reception flickered in and out and we worried about missing the morning ceremony. Once we realised there was nothing anyone could do to speed up a bulldozer, though, the mood in our four-berth cabin shifted completely. An elderly couple sharing our compartment unpacked a tin of sesame biscuits and hot flask tea, my friend pulled out a battered pack of playing cards, and the four of us swapped travel mishap stories until pale pink light crept over the coastal hills. By half past seven, railway staff organised transfer coaches around the blocked stretch, and we miraculously reached the wedding venue ten minutes before the vows began—slightly rumpled, yet laughing. The trip taught me two things: always pack spare snacks and a full power bank on long routes, and remember that losing your temper at delays never moves a train a single inch faster.",
+      "estSeconds": 115
+    },
+    "roundingOffQs": [
+      "Would you still take an overnight train again despite that delay?",
+      "Do you tend to stay calm when travel plans go wrong?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:028",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "experience",
+    "prompt": "Describe a time when you helped a stranger or a neighbour.",
+    "bullets": [
+      "who the person was and what problem they were having",
+      "how you noticed they needed assistance",
+      "what you did to help them"
+    ],
+    "finalBullet": "and explain how the interaction made you feel afterwards.",
+    "audio": "audio/speaking/s2c_028.mp3",
+    "linkedPart3Id": "s3s:028",
+    "sampleNotes": [
+      "elderly Japanese tourist at bus interchange",
+      "heavy drizzle, phone battery dead, paper map",
+      "confused by route numbers after transfer",
+      "translated stop name & walked 5 mins to right bay",
+      "waited until correct bus arrived + told driver",
+      "warm reminder how tiny kindness travels far"
+    ],
+    "band8Sample": {
+      "text": "A small moment that still warms me whenever I think of it happened on a wet Thursday evening a few months ago at the main bus interchange near my office. I was hurrying towards my usual stop under an umbrella when I noticed an elderly tourist in his late sixties standing slightly apart from the queue, turning a damp folded map back and forth while holding a phone with a blank black screen. He looked tired and completely bewildered by the rapid Vietnamese route announcements crackling over the loudspeaker. Since my bus wasn't due for another ten minutes, I stepped over and asked gently in English if he needed a hand. With visible relief, he explained that his phone battery had died right after visiting a museum, and he was trying to get back to his riverside hotel before dark, except two buses shared almost identical route numbers. I checked the hotel's exact address on my phone, realised he was waiting in the outbound lane heading away from the centre, and offered to walk him across the footbridge to the proper bay five minutes away. While we walked under my spare umbrella, he told me he was a retired botanist visiting Vietnam for the first time on his own. When the right electric bus pulled in, I had a quick word with the driver so he'd give the gentleman a nod at the riverside stop, and I also scribbled the hotel name in large Vietnamese letters on the back of a receipt just in case. He bowed deeply and thanked me twice as the doors closed. Even though it only cost me twelve spare minutes, catching the next bus home left me grinning for the rest of the evening—it reminded me how effortless it is to turn someone's stressful moment around simply by pausing to look up.",
+      "estSeconds": 127
+    },
+    "roundingOffQs": [
+      "Has a stranger ever stepped in to help you in a similar way?",
+      "Do you think city dwellers are generally willing to help tourists?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:029",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "experience",
+    "prompt": "Describe a mistake you made that taught you a valuable lesson.",
+    "bullets": [
+      "what the mistake was and when it happened",
+      "what caused you to make it",
+      "how you dealt with the consequences"
+    ],
+    "finalBullet": "and explain what lasting habit or lesson you took away from it.",
+    "audio": "audio/speaking/s2c_029.mp3",
+    "linkedPart3Id": "s3s:029",
+    "sampleNotes": [
+      "pushed untested config change on Friday afternoon",
+      "first year as junior developer, overconfident",
+      "broke checkout discount display for 40 mins",
+      "admitted immediately instead of hiding it",
+      "paired with senior to roll back cleanly & write post-mortem",
+      "learnt humility + written pre-flight checklists"
+    ],
+    "band8Sample": {
+      "text": "A mistake that made my stomach drop at the time—yet turned into one of the best professional lessons of my twenties—happened during my first year working as a junior software engineer. Late on a Friday afternoon, I'd finished tweaking a small pricing configuration for an upcoming weekend promotion. Because the edit was only three lines long and I was eager to head out for dinner with friends, I convinced myself it was too trivial to run through the full staging checklist and pushed it straight to production. Barely fifteen minutes later, my phone started buzzing nonstop: a tiny decimal typo in my change was displaying absurdly wrong discount totals on customer screens. My initial instinct was sheer panic—I even caught myself wishing I could quietly patch it before anyone traced my name in the logs. Fortunately, my better judgement kicked in within thirty seconds. I flagged the issue openly in our team channel, owned up immediately, and hopped onto a call with our lead engineer to roll back the release cleanly within twenty minutes. Nobody shouted at me; in fact, my manager thanked me for speaking up fast instead of scrambling in secret, and asked me to write a brief blameless incident summary on Monday morning explaining how our process could stop the same human slip happening again. Looking back, I'm almost grateful that slip happened early in my career. It cured me completely of rushing 'tiny' changes out of overconfidence, and it taught me two principles I still swear by: rely on written checklists rather than willpower when you're tired, and always surface bad news quickly so people can trust your integrity.",
+      "estSeconds": 113
+    },
+    "roundingOffQs": [
+      "Do you think workplaces handle honest mistakes well in general?",
+      "Is it easier to learn from your own mistakes or from other people's?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:030",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "experience",
+    "prompt": "Describe a time when you received unexpectedly helpful advice.",
+    "bullets": [
+      "who gave you the advice and what situation you were in",
+      "what they actually advised you to do",
+      "why their suggestion surprised you at first"
+    ],
+    "finalBullet": "and explain what difference following it made.",
+    "audio": "audio/speaking/s2c_030.mp3",
+    "linkedPart3Id": "s3s:030",
+    "sampleNotes": [
+      "prepping for IELTS Speaking & work presentations",
+      "chatted with former English debate coach",
+      "expected tips on fancy idioms & rare words",
+      "told me to slow down 15% & cut filler words",
+      "recorded 2-minute daily voice memos",
+      "immediate leap in clarity, calm & fluency"
+    ],
+    "band8Sample": {
+      "text": "Some of the sharpest advice I've ever received came about a year ago from a former university debate coach named Ms Ha, whom I bumped into at an alumni coffee morning while I was stressing over my spoken English and upcoming work presentations. At the time, I was trying desperately to sound impressive by cramming rare academic idioms into every sentence, yet listening back to my recordings, I sounded rushed, breathless, and oddly unnatural. I asked Ms Ha for a list of advanced vocabulary expressions I ought to memorise next. To my complete surprise, she laughed softly and told me to stop learning fancy phrases for a whole month. Instead, she gave me a deceptively plain challenge: speak roughly fifteen percent slower than feels comfortable, pause silently for a full beat instead of filling gaps with 'um' or 'actually', and explain each idea as clearly as if I were talking to an intelligent teenager. At first I felt a bit sceptical—I worried slowing down would make me look hesitant or less fluent. Still, I tried her method for three weeks, recording a two-minute voice memo every evening on a random topic and deliberately letting silence sit between ideas. The transformation amazed me. Not only did my grammar errors drop sharply because my brain finally had half a second to finish planning a clause, but my intonation also sounded far more authoritative and calm. In my next quarterly review at work, two colleagues even commented on how poised my presentation had felt. That conversation taught me that real mastery often looks like subtraction rather than piling on complexity.",
+      "estSeconds": 110
+    },
+    "roundingOffQs": [
+      "Have you ever passed that same advice on to someone else?",
+      "Why do people sometimes ignore good advice even when they ask for it?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:031",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "media",
+    "prompt": "Describe a book you read that changed how you look at a subject.",
+    "bullets": [
+      "what the book was about and why you picked it up",
+      "what key ideas inside it surprised or challenged you",
+      "how long it took you to finish it"
+    ],
+    "finalBullet": "and explain how it shifted your perspective on everyday life.",
+    "audio": "audio/speaking/s2c_031.mp3",
+    "linkedPart3Id": "s3s:031",
+    "sampleNotes": [
+      "non-fiction book on everyday urban design",
+      "picked up before long flight on friend's tip",
+      "argued tiny street details shape human mood",
+      "shaded pavements, ground-floor windows, benches",
+      "took 3 weeks, covered in pencil notes",
+      "can't walk through city streets the same way now"
+    ],
+    "band8Sample": {
+      "text": "A book that genuinely altered the lens through which I see everyday surroundings is a lively non-fiction study on human-scale urban design that I picked up last year before a long flight on a friend's recommendation. Before reading it, I'd never thought much about why certain neighbourhoods felt instinctively welcoming while others felt bleak and exhausting—I simply assumed some cities were prettier than others. Over roughly three weeks of reading a chapter every night, I ended up underlining almost every second page in pencil. What challenged my assumptions most was the author's argument that urban liveability has far less to do with gleaming skyscrapers than with what happens at eye level along the first three metres of a street. She broke down how seemingly small choices—wide shaded pavements, active ground-floor shopfronts instead of blank concrete walls, frequent pedestrian crossings, and simple public benches—quietly dictate whether strangers feel safe walking, chatting, or lingering outside. She also pointed out how widening roads to 'solve' traffic jams almost always backfires by inviting even more private cars onto the streets, a paradox I'd never previously grasped. Since finishing that book, I honestly can't walk through my own city in the same passive way. I catch myself noticing where street trees cast cooling shadows, why a particular corner café draws crowds while another sits empty, and how difficult it is for elderly pedestrians to cross wide junctions. It's rare for a single paperback to turn your daily commute into an ongoing field study, and that's why it left such a lasting mark on me.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Have you lent or recommended that book to anyone else?",
+      "Do you generally prefer non-fiction books or novels?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:032",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "media",
+    "prompt": "Describe a documentary or film that taught you something surprising.",
+    "bullets": [
+      "what the documentary or film was about",
+      "where and when you watched it",
+      "what specific details or facts surprised you most"
+    ],
+    "finalBullet": "and explain why you think more people should watch it.",
+    "audio": "audio/speaking/s2c_032.mp3",
+    "linkedPart3Id": "s3s:032",
+    "sampleNotes": [
+      "nature documentary on coastal mangrove forests",
+      "watched on rainy Sunday night with family",
+      "previously thought mangroves were just muddy swamps",
+      "tangled roots blunt storm surges & nurse young fish",
+      "store huge carbon in waterlogged soil",
+      "shifts conservation from charity to practical self-interest"
+    ],
+    "band8Sample": {
+      "text": "A documentary that completely overturned one of my blind spots was an hour-long environmental film about coastal mangrove forests across Southeast Asia, which I watched on a quiet Sunday evening with my parents a few months ago. Before sitting down to watch it, I'll admit I held a rather vague view of mangroves as muddy, mosquito-filled swamps sitting between beaches and farmland. The film shattered that impression within the first ten minutes using stunning underwater and aerial cinematography. What genuinely amazed me was discovering just how hard-working those tangled arched roots are for coastal communities. During severe typhoons, a dense belt of mature mangroves acts like a living shock absorber, dramatically weakening incoming wave energy before it hits villages and dykes further inland—often outperforming concrete seawalls that crack and require costly repairs. Underwater cameras also revealed how the shadowed root mazes act as vital nurseries where tiny juvenile crabs, prawns, and reef fish shelter from larger predators until they're big enough to swim out to open sea. Even more surprising was learning how deeply mangrove mud locks away carbon for centuries because the waterlogged soil slows down decay. My father, who grew up near the coast, sat glued to the screen the entire hour and kept nodding as fishermen in the film explained how replanting cleared stretches had brought their seasonal catch roaring back within a few years. I think far more people should watch documentaries like this because they reframe ecological protection not as an abstract moral luxury, but as smart, tangible insurance for livelihoods and coastal towns.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Do you watch documentaries regularly, or prefer fiction films?",
+      "Did that film inspire you to read more about the topic?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:033",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "media",
+    "prompt": "Describe a podcast, radio programme, or online channel you regularly follow.",
+    "bullets": [
+      "what the programme or channel focuses on",
+      "when and how you usually listen to or watch it",
+      "what makes the presenter's style engaging"
+    ],
+    "finalBullet": "and explain what you have gained from following it regularly.",
+    "audio": "audio/speaking/s2c_033.mp3",
+    "linkedPart3Id": "s3s:033",
+    "sampleNotes": [
+      "weekly English podcast on everyday design & history",
+      "35-min episodes on evening walks & dishwashing",
+      "calm British host, archival clips, soundscapes",
+      "turns mundane objects (street signs, escalators) into stories",
+      "huge boost to natural listening & UK intonation",
+      "makes household chores genuinely enjoyable"
+    ],
+    "band8Sample": {
+      "text": "An audio programme I've been hooked on for nearly two years is a weekly English-language podcast that explores the hidden history behind ordinary everyday objects and public infrastructure—things like why airport carpets have strange patterns, how shipping containers reshaped global trade, or why standard pavement widths vary across cities. Each episode runs for about thirty-five minutes, which fits my routine like a glove. I almost never sit still staring at a wall to listen; instead, I queue up a fresh episode while washing dishes after dinner, folding laundry, or taking a brisk evening walk around the park. What makes the show so addictive is the presenter's calm, conversational storytelling. Unlike loud, overly scripted talk shows packed with banter and forced jokes, the host speaks with a crisp British accent, interviews genuinely passionate historians and engineers, and weaves subtle ambient sound design underneath so you feel transported straight into a factory floor or an old train depot. Following it every week has paid off in two distinct ways. First, it's quietly turned tedious domestic chores into a part of the evening I actually look forward to. Second, from an English-learning standpoint, listening to unhurried, nuanced interviews across dozens of regional accents has sharpened my ear for connected speech, idiomatic hedging, and natural phrasing far more effectively than dry exam drills ever did. Best of all, it keeps feeding my curiosity so I never run short of fresh, concrete examples whenever a conversation turns to society, architecture, history, or everyday urban life.",
+      "estSeconds": 103
+    },
+    "roundingOffQs": [
+      "Do you prefer listening to podcasts alone or discussing episodes with friends?",
+      "Why do you think audio podcasts have surged in popularity recently?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:034",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "media",
+    "prompt": "Describe an article or essay you read recently about science or health.",
+    "bullets": [
+      "where you found the article and what topic it covered",
+      "what main argument or explanation it presented",
+      "why you found it easy or engaging to read"
+    ],
+    "finalBullet": "and explain whether it prompted you to change anything in your own life.",
+    "audio": "audio/speaking/s2c_034.mp3",
+    "linkedPart3Id": "s3s:034",
+    "sampleNotes": [
+      "science magazine essay on circadian rhythm & light",
+      "read on weekend morning via e-reader",
+      "morning outdoor sunlight sets evening melatonin clock",
+      "indoor office lighting far dimmer than cloudy daylight",
+      "clear analogies, zero sensational clickbait",
+      "started 15-min morning walks -> faster sleep onset"
+    ],
+    "band8Sample": {
+      "text": "A few weeks ago I read a remarkably clear long-form essay in a popular-science magazine about circadian rhythms—specifically, how the timing of natural daylight exposure governs our sleep quality sixteen hours later. I'd always assumed that good sleep hygiene was mostly about what you avoid at night, such as cutting off caffeine and dimming phone screens before bed. While the essay agreed those evening habits matter, its central insight completely reframed the puzzle for me: our internal biological clock relies heavily on getting bright, natural outdoor light into our eyes within an hour of waking up. Even on an overcast morning, outdoor light is dramatically more intense than typical indoor office bulbs, and that early bright signal tells the brain precisely when to start counting down towards evening melatonin release. What made the piece such a pleasure to read was the writer's sober, balanced tone. Instead of promising miraculous overnight cures or pushing pricey supplements, she explained the basic biology with crisp everyday analogies, carefully noted where evidence was still emerging, and acknowledged that shift workers face very different constraints. It actually prompted a tiny, painless tweak to my own routine. For the past month, I've taken my morning coffee out onto the balcony or walked a quick fifteen-minute loop around the block before opening my laptop. Whether it's pure biology or the added calm of fresh morning air, I've genuinely noticed myself nodding off far more reliably around eleven at night—and it reminded me how valuable thoughtful science communication can be.",
+      "estSeconds": 104
+    },
+    "roundingOffQs": [
+      "Do you often share interesting health articles with family or friends?",
+      "How do you decide whether a health article online is reliable?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:035",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "media",
+    "prompt": "Describe a piece of music or song that brings back a strong memory.",
+    "bullets": [
+      "what kind of music or song it is",
+      "when and where you first heard it",
+      "what specific memory or period of your life it recalls"
+    ],
+    "finalBullet": "and explain how you feel whenever you hear it today.",
+    "audio": "audio/speaking/s2c_035.mp3",
+    "linkedPart3Id": "s3s:035",
+    "sampleNotes": [
+      "gentle acoustic Vietnamese folk ballad",
+      "played on cassette in father's old hatchback",
+      "late-night drives back to grandparents' town",
+      "orange streetlights & rain streaks on glass",
+      "acoustic guitar fingerpicking + warm voice",
+      "instant wave of nostalgia & quiet gratitude"
+    ],
+    "band8Sample": {
+      "text": "There's a gentle acoustic Vietnamese folk ballad from the late nineteen-nineties that acts like an instant time machine whenever I catch even three seconds of its opening guitar chords. It isn't a dramatic stadium anthem at all—just unhurried nylon-string fingerpicking, a soft cello line, and poetic lyrics about autumn rain, riverside lanterns, and returning home after a long journey. I first heard it as a seven- or eight-year-old sitting in the back seat of my father's battered hatchback during our four-hour drives south to visit my grandparents before Lunar New Year. Back then we didn't have streaming playlists; my dad kept a small plastic box of worn cassette tapes beside the gearstick, and he almost always slipped that album in once dusk fell and traffic thinned out along the coastal highway. Whenever those opening notes drift out of a café speaker today, I'm immediately transported back to that exact sensory snapshot: orange highway lamps sweeping across the car ceiling, raindrops racing sideways along the window glass, the faint scent of mandarins my mother was peeling in the front seat, and the cosy half-asleep feeling of knowing someone else was steering safely through the dark. Even though I've heard the melody hundreds of times since, it never loses its pull. Listening to it now brings a bittersweet blend of warmth and quiet gratitude—it reminds me of how tirelessly my parents worked to make those long holiday trips feel effortless for my sister and me, and it always makes me pick up the phone to call home.",
+      "estSeconds": 106
+    },
+    "roundingOffQs": [
+      "Do you often listen to older music from your childhood?",
+      "Why do you think songs trigger memories so much faster than photographs?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:036",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "activity",
+    "prompt": "Describe an outdoor activity you enjoy doing to stay healthy.",
+    "bullets": [
+      "what the activity is and where you usually do it",
+      "how often you do it and what gear you need",
+      "how you first got started with it"
+    ],
+    "finalBullet": "and explain why it works so well for both your body and mind.",
+    "audio": "audio/speaking/s2c_036.mp3",
+    "linkedPart3Id": "s3s:036",
+    "sampleNotes": [
+      "early-morning riverside jogging (5–7 km)",
+      "started 2 yrs ago with Couch-to-5K intervals",
+      "only needs breathable shirt & decent trainers",
+      "3 mornings/week at 5:45 am before heat",
+      "watching sunrise & calm river breeze",
+      "clears mental fog + deep sleep at night"
+    ],
+    "band8Sample": {
+      "text": "The outdoor activity that keeps me healthiest—and frankly sanest—is early-morning jogging along the tree-lined riverside footpath near my flat. I actually hated running throughout school because PE classes always felt like a punishment of gasping round a dusty track. Two years ago, however, after noticing how sluggish I felt from long hours at a desk, I gave a gradual walk-jog beginner plan a try—just ninety seconds of slow jogging alternating with brisk walking—and promised myself I wouldn't chase fast times. That low-pressure mindset changed everything. Nowadays I lace up my trainers three mornings a week around quarter to six, before the tropical sun climbs high and before rush-hour exhaust fumes build up along the embankments. One reason I love jogging is its sheer minimalism: you don't need a pricey gym membership, a booked court, or four teammates whose schedules align—just a reliable pair of cushioned shoes, a breathable T-shirt, and an open stretch of pavement. Running five or six kilometres beside the river at dawn has become my favourite daily moving meditation. Watching rowing boats glide across pastel-pink water while elderly neighbours stretch beneath the streetlights pulls my mind straight out of looming emails and unfinished to-do lists. Physically, my stamina, resting heart rate, sleep quality, and posture have all improved steadily, yet the mental payoff is even bigger: I return home showered, alert, and calm by seven, and some of my clearest solutions to tricky work problems have popped into my head halfway through kilometre four without forcing anything.",
+      "estSeconds": 103
+    },
+    "roundingOffQs": [
+      "Do you prefer exercising alone or with a running group?",
+      "Have you ever entered an organised fun run or race?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:037",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "activity",
+    "prompt": "Describe a hobby or pastime that helps you switch off from work or study.",
+    "bullets": [
+      "what the hobby is and how you got into it",
+      "when and where you usually spend time on it",
+      "what makes it engrossing or calming for you"
+    ],
+    "finalBullet": "and explain why having an offline pastime is important in your life.",
+    "audio": "audio/speaking/s2c_037.mp3",
+    "linkedPart3Id": "s3s:037",
+    "sampleNotes": [
+      "balcony container gardening (herbs & chillies)",
+      "started with one potted mint plant during quiet lockdown",
+      "15 mins every morning & Sunday repotting",
+      "checking soil moisture, pruning dead leaves",
+      "slow natural pace cannot be rushed by clicks",
+      "fresh herbs for cooking + genuine screen break"
+    ],
+    "band8Sample": {
+      "text": "A wonderfully grounding pastime that helps me unplug from work is balcony container gardening—specifically growing culinary herbs, bird's-eye chillies, and small cherry tomatoes in terracotta pots outside my living room. I drifted into it almost by accident three years ago when a friend gifted me a single struggling pot of sweet basil after a housewarming dinner. Determined not to kill it within a week, I started reading about potting mix, drainage holes, and sunlight angles, and before long a single pot quietly multiplied into a lush little shelf of rosemary, mint, spring onions, and tiny lime saplings. I spend roughly ten unhurried minutes out there every morning checking soil moisture with my fingers and pruning yellowing leaves, plus an hour on Sunday mornings mixing fresh compost or repotting anything that's outgrown its container. What makes gardening so deeply absorbing is its gentle, non-negotiable pace. In software engineering, everything runs on instant refreshes and rapid sprints; plants, by contrast, completely ignore your impatience. You water them, give them morning sun, and let tiny shoots unfold on their own timetable. Watching a handful of papery seeds turn into fragrant herbs I can snip straight into a simmering bowl of soup gives me a quiet satisfaction no digital achievement badge ever matches. Having a hands-on offline hobby feels indispensable to my mental balance—when my fingers are literally in damp soil, I can't check notifications or chase urgent messages, and those calm, unhurried morning minutes genuinely anchor the rest of my workday and evening.",
+      "estSeconds": 103
+    },
+    "roundingOffQs": [
+      "Have you ever given home-grown herbs or plants to neighbours or friends?",
+      "Do you think more apartment dwellers are taking up indoor or balcony gardening?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:038",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "activity",
+    "prompt": "Describe a meal you learnt how to cook from scratch.",
+    "bullets": [
+      "what the dish is and why you wanted to learn it",
+      "how you learnt the recipe and what steps were trickiest",
+      "who you cooked it for the first time it succeeded"
+    ],
+    "finalBullet": "and explain why mastering this dish gave you so much pleasure.",
+    "audio": "audio/speaking/s2c_038.mp3",
+    "linkedPart3Id": "s3s:038",
+    "sampleNotes": [
+      "central-style beef & lemongrass noodle soup (bun bo)",
+      "missed homemade version after moving cities",
+      "video-called mother across 3 Sunday attempts",
+      "tricky: clear simmered broth & balanced shrimp paste",
+      "hosted 4 university friends for Sunday dinner",
+      "turned nostalgia into independence & hospitality"
+    ],
+    "band8Sample": {
+      "text": "A dish I was genuinely determined to master from scratch is central Vietnamese lemongrass beef noodle soup—the version my mother used to simmer on cool Sunday mornings back home. After moving to a larger city for work, I tried half a dozen restaurants nearby, yet none of them tasted quite right: either the broth was overly sweet or it lacked that clean, aromatic hit of bruised lemongrass and toasted annatto oil. One autumn weekend I finally video-called my mum, propped my phone against a jar of salt on the counter, and wrote down every step. It actually took three separate Sunday attempts to nail it properly. The trickiest part wasn't slicing beef or boiling noodles, but exercising patience with the broth—parboiling and rinsing the bones thoroughly so the stock stayed crystal clear, keeping the flame at a bare gentle bubble rather than a rolling boil, and balancing just enough fermented shrimp paste so it deepened the savouriness without overpowering the herbs. My first attempt was far too salty and my second lacked warmth, yet on the third try the kitchen filled with that unmistakable fragrance of home. That evening I invited four close friends round to my cramped flat, set out heaps of shredded banana blossom, fresh mint, and lime wedges, and watched everyone scrape their bowls completely clean—two of them even asked for seconds. Mastering that soup gave me immense pleasure because it turned homesickness into hospitality: now, wherever I live, I can recreate a piece of home and share it around a table.",
+      "estSeconds": 106
+    },
+    "roundingOffQs": [
+      "Do you still cook that dish often for guests?",
+      "Do you think everyone should learn basic cooking before leaving home?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:039",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "category": "activity",
+    "prompt": "Describe a daily habit you adopted that noticeably improved your routine.",
+    "bullets": [
+      "what the habit is and when you started practising it",
+      "what prompted you to build this habit",
+      "how you managed to stick with it during busy weeks"
+    ],
+    "finalBullet": "and explain what concrete benefits you have noticed since starting.",
+    "audio": "audio/speaking/s2c_039.mp3",
+    "linkedPart3Id": "s3s:039",
+    "sampleNotes": [
+      "10-minute paper shutdown & planning ritual at 6 pm",
+      "used to lie awake replaying half-finished tasks",
+      "plain dotted notebook + three priorities for next day",
+      "kept pen & notebook right beside laptop",
+      "zero willpower needed once anchored to closing lid",
+      "calmer evenings + instant focus next morning"
+    ],
+    "band8Sample": {
+      "text": "A remarkably small daily habit that has upgraded both my productivity and my peace of mind is a ten-minute paper shutdown ritual I do at the end of every workday, right around six o'clock. I started it about a year ago after noticing an exhausting pattern: even when I closed my laptop on time, half-finished bugs and unanswered messages kept looping around my head during dinner and right into bed. To break that mental carryover, I bought a plain pocket-sized notebook and made a simple rule—before shutting down my computer each evening, I take ten quiet minutes to tick off what actually got done, jot down any loose ends still hanging, and pick the exact three tasks I'll tackle first thing the following morning. The secret to sticking with it even during chaotic deadline weeks was keeping the bar ridiculously low and anchoring it physically: the notebook and pen sit directly on top of my keyboard tray, so I literally have to move them to put the laptop away. If a day runs late, I still scribble three rough bullet points in two minutes rather than skipping entirely. The payoff has been completely out of proportion to the tiny effort involved. Not only do I wake up and dive straight into meaningful work at eight instead of drifting aimlessly through emails for forty minutes, but my evenings feel genuinely off-duty as well. Putting unfinished worries down on paper signals to my brain that they're safely stored until tomorrow, which has made my evenings calmer and my mornings noticeably sharper.",
+      "estSeconds": 107
+    },
+    "roundingOffQs": [
+      "Have you ever struggled to break an unhelpful daily habit?",
+      "Do you think small daily habits matter more than occasional bursts of intense effort?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s2c:040",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "category": "activity",
+    "prompt": "Describe a team project or group activity you worked on with other people.",
+    "bullets": [
+      "what the project was and who was on your team",
+      "what specific contribution you made",
+      "what challenges or disagreements came up along the way"
+    ],
+    "finalBullet": "and explain what the project taught you about working effectively with others.",
+    "audio": "audio/speaking/s2c_040.mp3",
+    "linkedPart3Id": "s3s:040",
+    "sampleNotes": [
+      "48-hour civic hackathon - accessible bus map prototype",
+      "4 teammates: designer, backend dev, student researcher, me",
+      "my role: frontend map UI & voice-friendly route search",
+      "mid-weekend clash over cramming too many features",
+      "tested prototype with 2 local commuters -> simplified UI",
+      "learnt listening + cutting scope beats individual ego"
+    ],
+    "band8Sample": {
+      "text": "A team project that really tested and sharpened my collaboration skills was a forty-eight-hour civic hackathon I entered last year alongside three teammates I'd barely met beforehand: a graphic designer, a backend engineer, and an urban-studies university student. Our goal was to build a working web prototype that helped elderly and first-time bus riders navigate confusing city transfer routes using clear large-print landmarks instead of obscure street codes. My specific role was building the interactive route screen and ensuring the interface stayed snappy on older budget smartphones. Everything ran smoothly on Saturday morning, yet by midnight tension flared sharply. Our backend engineer wanted to bolt on live crowd-reporting, ticket booking, and gamified points all at once, while our designer argued fiercely that cramming extra menus onto the screen would completely defeat our accessibility mission. Instead of letting the argument drag on for two exhausted hours, our student researcher suggested a brilliant tie-breaker: at seven the next morning, we walked downstairs to the nearest bus stop and showed two rough sketches to three actual waiting commuters. Within ten minutes, watching an older woman squint at the cluttered screen settled the debate without a single bruised ego. We stripped away every unnecessary bell and whistle, polished the core transfer guide, and ended up taking second place out of twenty-five teams. That intense weekend taught me that great teamwork isn't about avoiding friction—it's about anchoring disagreements in real-world evidence rather than stubborn pride, and genuinely respecting what each discipline brings to the table.",
+      "estSeconds": 103
+    },
+    "roundingOffQs": [
+      "Did you stay in touch with your teammates after that event?",
+      "What do you think makes someone a difficult teammate?"
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  }
+]

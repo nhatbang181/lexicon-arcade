@@ -1,0 +1,3842 @@
+[
+  {
+    "id": "s3s:001",
+    "linkedCueCardId": "s2c:001",
+    "questions": [
+      {
+        "qid": "s3_001_q1",
+        "text": "What qualities do you think separate an inspiring teacher from a merely competent one?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_001_q1.mp3",
+        "followUps": [
+          {
+            "text": "Can those qualities be trained, or are they mostly personality?",
+            "audio": "audio/speaking/s3_001_q1_f1.mp3"
+          },
+          {
+            "text": "Does subject knowledge matter less than communication skill?",
+            "audio": "audio/speaking/s3_001_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_001_q2",
+        "text": "How has the relationship between teachers and students changed compared with thirty years ago?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_001_q2.mp3",
+        "followUps": [
+          {
+            "text": "Do you see that shift as mostly positive?",
+            "audio": "audio/speaking/s3_001_q2_f1.mp3"
+          },
+          {
+            "text": "Could too much informality ever undermine classroom discipline?",
+            "audio": "audio/speaking/s3_001_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_001_q3",
+        "text": "Why do some countries struggle to attract talented graduates into the teaching profession?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_001_q3.mp3",
+        "followUps": [
+          {
+            "text": "Is salary the main barrier, or workload and status as well?",
+            "audio": "audio/speaking/s3_001_q3_f1.mp3"
+          },
+          {
+            "text": "What practical steps could governments take to change that?",
+            "audio": "audio/speaking/s3_001_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_001_q4",
+        "text": "How might digital tools and artificial intelligence alter the role of human teachers over the next two decades?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_001_q4.mp3",
+        "followUps": [
+          {
+            "text": "Which parts of teaching do you think software can never replicate?",
+            "audio": "audio/speaking/s3_001_q4_f1.mp3"
+          },
+          {
+            "text": "Would that affect primary pupils differently from university students?",
+            "audio": "audio/speaking/s3_001_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_001_q5",
+        "text": "If schools placed less emphasis on standardised exams, how might classroom teaching change?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_001_q5.mp3",
+        "followUps": [
+          {
+            "text": "How would universities then assess applicants fairly?",
+            "audio": "audio/speaking/s3_001_q5_f1.mp3"
+          },
+          {
+            "text": "Would all parents welcome that kind of reform?",
+            "audio": "audio/speaking/s3_001_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:002",
+    "linkedCueCardId": "s2c:002",
+    "questions": [
+      {
+        "qid": "s3_002_q1",
+        "text": "In your country, how has the role of grandparents within the family changed in recent decades?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_002_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is that shift more pronounced in big cities than in rural areas?",
+            "audio": "audio/speaking/s3_002_q1_f1.mp3"
+          },
+          {
+            "text": "What do children lose if they see their grandparents less frequently?",
+            "audio": "audio/speaking/s3_002_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_002_q2",
+        "text": "What can younger and older generations realistically learn from one another?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_002_q2.mp3",
+        "followUps": [
+          {
+            "text": "Why do misunderstandings between generations still arise so easily?",
+            "audio": "audio/speaking/s3_002_q2_f1.mp3"
+          },
+          {
+            "text": "Does modern technology widen or narrow that generation gap?",
+            "audio": "audio/speaking/s3_002_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_002_q3",
+        "text": "How can cities be redesigned to help ageing populations stay independent and socially active?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_002_q3.mp3",
+        "followUps": [
+          {
+            "text": "Should public funding prioritise healthcare or community centres?",
+            "audio": "audio/speaking/s3_002_q3_f1.mp3"
+          },
+          {
+            "text": "How can local volunteers support isolated elderly residents?",
+            "audio": "audio/speaking/s3_002_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_002_q4",
+        "text": "Do you think the official retirement age should rise as life expectancy increases?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_002_q4.mp3",
+        "followUps": [
+          {
+            "text": "Is raising the retirement age fair to people in physically demanding jobs?",
+            "audio": "audio/speaking/s3_002_q4_f1.mp3"
+          },
+          {
+            "text": "Could flexible part-time work be a better compromise?",
+            "audio": "audio/speaking/s3_002_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_002_q5",
+        "text": "How might society look different in fifty years if a much larger share of citizens are over sixty-five?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_002_q5.mp3",
+        "followUps": [
+          {
+            "text": "Which industries would grow most in that scenario?",
+            "audio": "audio/speaking/s3_002_q5_f1.mp3"
+          },
+          {
+            "text": "Could an ageing society also bring unexpected strengths?",
+            "audio": "audio/speaking/s3_002_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:003",
+    "linkedCueCardId": "s2c:003",
+    "questions": [
+      {
+        "qid": "s3_003_q1",
+        "text": "Why do modern consumers tend to replace broken items instead of repairing them?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_003_q1.mp3",
+        "followUps": [
+          {
+            "text": "How much of that is driven by manufacturers' product design?",
+            "audio": "audio/speaking/s3_003_q1_f1.mp3"
+          },
+          {
+            "text": "Does lack of time play a bigger role than cost?",
+            "audio": "audio/speaking/s3_003_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_003_q2",
+        "text": "Should schools devote more classroom time to hands-on practical skills alongside academic subjects?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_003_q2.mp3",
+        "followUps": [
+          {
+            "text": "Which practical skills would be most useful for teenagers today?",
+            "audio": "audio/speaking/s3_003_q2_f1.mp3"
+          },
+          {
+            "text": "Why do some parents resist non-academic workshops at school?",
+            "audio": "audio/speaking/s3_003_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_003_q3",
+        "text": "How does problem-solving in a team differ from tackling an issue individually?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_003_q3.mp3",
+        "followUps": [
+          {
+            "text": "When can having too many people slow a solution down?",
+            "audio": "audio/speaking/s3_003_q3_f1.mp3"
+          },
+          {
+            "text": "What role does a good leader play during a crisis?",
+            "audio": "audio/speaking/s3_003_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_003_q4",
+        "text": "What policies could encourage electronics makers to design longer-lasting, repairable products?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_003_q4.mp3",
+        "followUps": [
+          {
+            "text": "Would mandatory repairability labels influence buyers?",
+            "audio": "audio/speaking/s3_003_q4_f1.mp3"
+          },
+          {
+            "text": "Might stricter regulations push up retail prices for consumers?",
+            "audio": "audio/speaking/s3_003_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_003_q5",
+        "text": "If every household lost internet access for a full week, how well do you think people would cope with everyday problems?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_003_q5.mp3",
+        "followUps": [
+          {
+            "text": "Which daily tasks would break down first?",
+            "audio": "audio/speaking/s3_003_q5_f1.mp3"
+          },
+          {
+            "text": "Would older generations cope better than younger ones?",
+            "audio": "audio/speaking/s3_003_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:004",
+    "linkedCueCardId": "s2c:004",
+    "questions": [
+      {
+        "qid": "s3_004_q1",
+        "text": "Why can meeting people from other cultures challenge stereotypes more effectively than reading about them?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_004_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does brief tourist contact always achieve that, or is longer interaction needed?",
+            "audio": "audio/speaking/s3_004_q1_f1.mp3"
+          },
+          {
+            "text": "Can social media also break down stereotypes, or does it sometimes reinforce them?",
+            "audio": "audio/speaking/s3_004_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_004_q2",
+        "text": "What benefits and challenges arise when workplaces become increasingly multicultural?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_004_q2.mp3",
+        "followUps": [
+          {
+            "text": "How can managers handle different communication styles, such as direct versus indirect feedback?",
+            "audio": "audio/speaking/s3_004_q2_f1.mp3"
+          },
+          {
+            "text": "Does working remotely make cross-cultural teamwork harder?",
+            "audio": "audio/speaking/s3_004_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_004_q3",
+        "text": "How does international travel today compare with travelling abroad forty years ago?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_004_q3.mp3",
+        "followUps": [
+          {
+            "text": "Has instant translation made travelling better, or taken away some of the adventure?",
+            "audio": "audio/speaking/s3_004_q3_f1.mp3"
+          },
+          {
+            "text": "Do global retail chains make major cities feel too similar now?",
+            "audio": "audio/speaking/s3_004_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_004_q4",
+        "text": "Do you think globalisation is gradually eroding local cultural traditions?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_004_q4.mp3",
+        "followUps": [
+          {
+            "text": "Which aspects of local culture tend to survive best?",
+            "audio": "audio/speaking/s3_004_q4_f1.mp3"
+          },
+          {
+            "text": "Can global audiences actually help revive endangered crafts or music?",
+            "audio": "audio/speaking/s3_004_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_004_q5",
+        "text": "How might student exchange programmes evolve in the next twenty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_004_q5.mp3",
+        "followUps": [
+          {
+            "text": "Could virtual exchanges ever replace living abroad?",
+            "audio": "audio/speaking/s3_004_q5_f1.mp3"
+          },
+          {
+            "text": "How could exchanges become accessible to lower-income students?",
+            "audio": "audio/speaking/s3_004_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:005",
+    "linkedCueCardId": "s2c:005",
+    "questions": [
+      {
+        "qid": "s3_005_q1",
+        "text": "Why do many adults find it more difficult to form deep friendships than they did at school or university?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_005_q1.mp3",
+        "followUps": [
+          {
+            "text": "How important is repeated unplanned contact in building trust?",
+            "audio": "audio/speaking/s3_005_q1_f1.mp3"
+          },
+          {
+            "text": "Do busy work schedules explain most of it, or greater caution?",
+            "audio": "audio/speaking/s3_005_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_005_q2",
+        "text": "How do friendships maintained mostly online compare with face-to-face friendships?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_005_q2.mp3",
+        "followUps": [
+          {
+            "text": "Can online communities genuinely relieve loneliness?",
+            "audio": "audio/speaking/s3_005_q2_f1.mp3"
+          },
+          {
+            "text": "Why do short text messages sometimes create unnecessary tension between friends?",
+            "audio": "audio/speaking/s3_005_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_005_q3",
+        "text": "In times of personal crisis, do you think people rely more on friends or on family nowadays?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_005_q3.mp3",
+        "followUps": [
+          {
+            "text": "Does living away from one's hometown shift that balance?",
+            "audio": "audio/speaking/s3_005_q3_f1.mp3"
+          },
+          {
+            "text": "Are there problems people find easier to discuss with friends than parents?",
+            "audio": "audio/speaking/s3_005_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_005_q4",
+        "text": "What can communities or cities do to reduce social isolation among young adults living alone?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_005_q4.mp3",
+        "followUps": [
+          {
+            "text": "How effective are local sports clubs and hobby groups?",
+            "audio": "audio/speaking/s3_005_q4_f1.mp3"
+          },
+          {
+            "text": "Should employers play any role in fostering workplace friendships?",
+            "audio": "audio/speaking/s3_005_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_005_q5",
+        "text": "Do you think it is better to have a wide circle of acquaintances or just two or three very close friends?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_005_q5.mp3",
+        "followUps": [
+          {
+            "text": "What benefits do casual acquaintances bring that close friends might not?",
+            "audio": "audio/speaking/s3_005_q5_f1.mp3"
+          },
+          {
+            "text": "Does that preference tend to change as people get older?",
+            "audio": "audio/speaking/s3_005_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:006",
+    "linkedCueCardId": "s2c:006",
+    "questions": [
+      {
+        "qid": "s3_006_q1",
+        "text": "Why has interest in handmade crafts and small-batch products grown again in recent years?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_006_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is it mostly about aesthetics, or a reaction against mass consumerism?",
+            "audio": "audio/speaking/s3_006_q1_f1.mp3"
+          },
+          {
+            "text": "How has social media helped independent artisans reach buyers?",
+            "audio": "audio/speaking/s3_006_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_006_q2",
+        "text": "Should governments provide financial grants to support independent artists and traditional craftspeople?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_006_q2.mp3",
+        "followUps": [
+          {
+            "text": "How should funding panels decide which artists deserve public money?",
+            "audio": "audio/speaking/s3_006_q2_f1.mp3"
+          },
+          {
+            "text": "Would tax breaks or apprenticeship schemes work better than direct grants?",
+            "audio": "audio/speaking/s3_006_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_006_q3",
+        "text": "How does creativity in scientific or technical fields compare with creativity in the arts?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_006_q3.mp3",
+        "followUps": [
+          {
+            "text": "Do schools unfairly label some children as 'creative' and others as 'analytical'?",
+            "audio": "audio/speaking/s3_006_q3_f1.mp3"
+          },
+          {
+            "text": "Can constraints actually boost creativity rather than stifle it?",
+            "audio": "audio/speaking/s3_006_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_006_q4",
+        "text": "How might generative AI tools affect people who earn a living from visual art, music, or design?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_006_q4.mp3",
+        "followUps": [
+          {
+            "text": "Will audiences still value human-made imperfections?",
+            "audio": "audio/speaking/s3_006_q4_f1.mp3"
+          },
+          {
+            "text": "What copyright protections might be needed?",
+            "audio": "audio/speaking/s3_006_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_006_q5",
+        "text": "If every secondary student had to learn one traditional craft before graduating, what impact might that have?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_006_q5.mp3",
+        "followUps": [
+          {
+            "text": "Might forcing it make some students resent traditional crafts?",
+            "audio": "audio/speaking/s3_006_q5_f1.mp3"
+          },
+          {
+            "text": "How could schools find qualified craftspeople to teach?",
+            "audio": "audio/speaking/s3_006_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:007",
+    "linkedCueCardId": "s2c:007",
+    "questions": [
+      {
+        "qid": "s3_007_q1",
+        "text": "Why do you think urban residents increasingly crave quiet spaces in modern cities?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_007_q1.mp3",
+        "followUps": [
+          {
+            "text": "How does constant background noise affect health and concentration?",
+            "audio": "audio/speaking/s3_007_q1_f1.mp3"
+          },
+          {
+            "text": "Is digital noise just as exhausting as physical noise?",
+            "audio": "audio/speaking/s3_007_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_007_q2",
+        "text": "Are public libraries still worth funding heavily in an age when almost everything is available online?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_007_q2.mp3",
+        "followUps": [
+          {
+            "text": "Who relies on public libraries most nowadays?",
+            "audio": "audio/speaking/s3_007_q2_f1.mp3"
+          },
+          {
+            "text": "How have modern libraries adapted beyond simply lending printed books?",
+            "audio": "audio/speaking/s3_007_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_007_q3",
+        "text": "How does studying in a public space like a library or café compare with studying alone at home?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_007_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why do some people actually focus better when others are quietly working nearby?",
+            "audio": "audio/speaking/s3_007_q3_f1.mp3"
+          },
+          {
+            "text": "Does that depend on the type of task you are doing?",
+            "audio": "audio/speaking/s3_007_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_007_q4",
+        "text": "What practical measures can city planners take to lower noise pollution in dense neighbourhoods?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_007_q4.mp3",
+        "followUps": [
+          {
+            "text": "How much difference will electric vehicles make to street noise?",
+            "audio": "audio/speaking/s3_007_q4_f1.mp3"
+          },
+          {
+            "text": "Why are noise regulations often difficult to enforce strictly?",
+            "audio": "audio/speaking/s3_007_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_007_q5",
+        "text": "Do you think free non-commercial public spaces are disappearing in major cities?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_007_q5.mp3",
+        "followUps": [
+          {
+            "text": "What happens to community life if every meeting place requires buying something?",
+            "audio": "audio/speaking/s3_007_q5_f1.mp3"
+          },
+          {
+            "text": "Can private developers be required to include public plazas?",
+            "audio": "audio/speaking/s3_007_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:008",
+    "linkedCueCardId": "s2c:008",
+    "questions": [
+      {
+        "qid": "s3_008_q1",
+        "text": "Why is it important for cities to preserve old neighbourhoods instead of replacing them with modern high-rises?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_008_q1.mp3",
+        "followUps": [
+          {
+            "text": "When is demolishing an old building actually the more sensible option?",
+            "audio": "audio/speaking/s3_008_q1_f1.mp3"
+          },
+          {
+            "text": "Does heritage preservation help local residents or mainly tourists?",
+            "audio": "audio/speaking/s3_008_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_008_q2",
+        "text": "How can historic towns attract tourism income without losing their authentic local character?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_008_q2.mp3",
+        "followUps": [
+          {
+            "text": "Should authorities limit daily visitor numbers or short-term holiday rentals?",
+            "audio": "audio/speaking/s3_008_q2_f1.mp3"
+          },
+          {
+            "text": "How can young locals be encouraged to stay in historic villages?",
+            "audio": "audio/speaking/s3_008_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_008_q3",
+        "text": "Who should bear the main cost of restoring privately owned heritage houses: the owners or the state?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_008_q3.mp3",
+        "followUps": [
+          {
+            "text": "Is it fair to forbid owners from modernising their own homes without subsidies?",
+            "audio": "audio/speaking/s3_008_q3_f1.mp3"
+          },
+          {
+            "text": "Could public-private partnerships bridge that gap?",
+            "audio": "audio/speaking/s3_008_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_008_q4",
+        "text": "How does traditional architecture in your region compare with modern residential construction?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_008_q4.mp3",
+        "followUps": [
+          {
+            "text": "Were older designs actually better suited to the local climate?",
+            "audio": "audio/speaking/s3_008_q4_f1.mp3"
+          },
+          {
+            "text": "Are contemporary architects borrowing traditional ideas again?",
+            "audio": "audio/speaking/s3_008_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_008_q5",
+        "text": "How might extreme weather and climate change threaten historic sites over the coming decades?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_008_q5.mp3",
+        "followUps": [
+          {
+            "text": "Should digital 3D archiving be used for vulnerable monuments?",
+            "audio": "audio/speaking/s3_008_q5_f1.mp3"
+          },
+          {
+            "text": "Can coastal heritage towns realistically be protected against rising sea levels?",
+            "audio": "audio/speaking/s3_008_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:009",
+    "linkedCueCardId": "s2c:009",
+    "questions": [
+      {
+        "qid": "s3_009_q1",
+        "text": "When designing a major public building, should architects prioritise appearance or practical functionality?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_009_q1.mp3",
+        "followUps": [
+          {
+            "text": "Can an iconic landmark still justify higher maintenance costs?",
+            "audio": "audio/speaking/s3_009_q1_f1.mp3"
+          },
+          {
+            "text": "Why do some visually dramatic buildings end up unpleasant to work in?",
+            "audio": "audio/speaking/s3_009_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_009_q2",
+        "text": "Why do so many modern apartment and office towers around the world look nearly identical?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_009_q2.mp3",
+        "followUps": [
+          {
+            "text": "Does cost efficiency leave little room for local identity?",
+            "audio": "audio/speaking/s3_009_q2_f1.mp3"
+          },
+          {
+            "text": "How does uniform urban architecture affect residents' sense of place?",
+            "audio": "audio/speaking/s3_009_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_009_q3",
+        "text": "How might environmental concerns reshape building materials and urban architecture over the next thirty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_009_q3.mp3",
+        "followUps": [
+          {
+            "text": "Will green roofs and vertical greenery become standard or stay luxury features?",
+            "audio": "audio/speaking/s3_009_q3_f1.mp3"
+          },
+          {
+            "text": "How important is retrofitting existing buildings compared with building new ones?",
+            "audio": "audio/speaking/s3_009_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_009_q4",
+        "text": "Should ordinary citizens have a say before a controversial new building is approved in their neighbourhood?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_009_q4.mp3",
+        "followUps": [
+          {
+            "text": "Could public consultations slow down urgently needed housing projects?",
+            "audio": "audio/speaking/s3_009_q4_f1.mp3"
+          },
+          {
+            "text": "How can councils balance heritage objections with population growth?",
+            "audio": "audio/speaking/s3_009_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_009_q5",
+        "text": "If every new housing estate had to devote a third of its footprint to shared green courtyards, how would city life change?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_009_q5.mp3",
+        "followUps": [
+          {
+            "text": "Would that push property prices even higher?",
+            "audio": "audio/speaking/s3_009_q5_f1.mp3"
+          },
+          {
+            "text": "How might it affect children's daily routines?",
+            "audio": "audio/speaking/s3_009_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:010",
+    "linkedCueCardId": "s2c:010",
+    "questions": [
+      {
+        "qid": "s3_010_q1",
+        "text": "Why do people living in large cities often feel a strong psychological need to spend time in nature?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_010_q1.mp3",
+        "followUps": [
+          {
+            "text": "Can small urban parks provide similar benefits to wild countryside?",
+            "audio": "audio/speaking/s3_010_q1_f1.mp3"
+          },
+          {
+            "text": "Do children raised in cities grow up less concerned about wildlife?",
+            "audio": "audio/speaking/s3_010_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_010_q2",
+        "text": "How should governments balance ecotourism revenue with strict wildlife protection in national parks?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_010_q2.mp3",
+        "followUps": [
+          {
+            "text": "Are daily permit caps and guided-only trails effective?",
+            "audio": "audio/speaking/s3_010_q2_f1.mp3"
+          },
+          {
+            "text": "How can local rural communities benefit directly from conservation?",
+            "audio": "audio/speaking/s3_010_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_010_q3",
+        "text": "How has people's attitude towards outdoor recreation changed compared with twenty years ago?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_010_q3.mp3",
+        "followUps": [
+          {
+            "text": "Has social media made remote trails overcrowded?",
+            "audio": "audio/speaking/s3_010_q3_f1.mp3"
+          },
+          {
+            "text": "Are younger visitors generally more careful about leaving no litter?",
+            "audio": "audio/speaking/s3_010_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_010_q4",
+        "text": "Do you think entry to national parks should be completely free, or should visitors pay conservation fees?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_010_q4.mp3",
+        "followUps": [
+          {
+            "text": "Should local residents pay less than international tourists?",
+            "audio": "audio/speaking/s3_010_q4_f1.mp3"
+          },
+          {
+            "text": "How can authorities ensure ticket fees actually fund conservation?",
+            "audio": "audio/speaking/s3_010_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_010_q5",
+        "text": "In the future, do you think virtual nature experiences could ever substitute for visiting real wilderness?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_010_q5.mp3",
+        "followUps": [
+          {
+            "text": "Could VR nature still be useful for hospital patients or elderly residents?",
+            "audio": "audio/speaking/s3_010_q5_f1.mp3"
+          },
+          {
+            "text": "Might virtual tours reduce physical wear on fragile ecosystems?",
+            "audio": "audio/speaking/s3_010_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:011",
+    "linkedCueCardId": "s2c:011",
+    "questions": [
+      {
+        "qid": "s3_011_q1",
+        "text": "Why do some people feel energised in busy public places while others find them exhausting?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_011_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does the kind of noise matter as much as the decibel level?",
+            "audio": "audio/speaking/s3_011_q1_f1.mp3"
+          },
+          {
+            "text": "Do people's noise tolerances change as they get older?",
+            "audio": "audio/speaking/s3_011_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_011_q2",
+        "text": "How do traditional open-air markets compare with modern supermarkets in serving local communities?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_011_q2.mp3",
+        "followUps": [
+          {
+            "text": "What advantages do supermarkets have regarding food safety and convenience?",
+            "audio": "audio/speaking/s3_011_q2_f1.mp3"
+          },
+          {
+            "text": "How can traditional markets modernise without losing their charm?",
+            "audio": "audio/speaking/s3_011_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_011_q3",
+        "text": "Should local councils protect traditional street markets even when land becomes extremely valuable for property developers?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_011_q3.mp3",
+        "followUps": [
+          {
+            "text": "Who loses out most when a central market is replaced by a luxury mall?",
+            "audio": "audio/speaking/s3_011_q3_f1.mp3"
+          },
+          {
+            "text": "Can mixed-use buildings successfully house markets on the ground floor?",
+            "audio": "audio/speaking/s3_011_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_011_q4",
+        "text": "How might grocery shopping habits change over the next fifteen years as instant delivery apps expand?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_011_q4.mp3",
+        "followUps": [
+          {
+            "text": "What environmental impact comes from rapid small-basket deliveries?",
+            "audio": "audio/speaking/s3_011_q4_f1.mp3"
+          },
+          {
+            "text": "Will weekend farmers' markets become a luxury trend instead?",
+            "audio": "audio/speaking/s3_011_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_011_q5",
+        "text": "How can cities keep lively night markets enjoyable without disturbing nearby residents?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_011_q5.mp3",
+        "followUps": [
+          {
+            "text": "Are strict curfew hours fairer than acoustic zoning?",
+            "audio": "audio/speaking/s3_011_q5_f1.mp3"
+          },
+          {
+            "text": "How should waste and sanitation be managed in busy street-food districts?",
+            "audio": "audio/speaking/s3_011_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:012",
+    "linkedCueCardId": "s2c:012",
+    "questions": [
+      {
+        "qid": "s3_012_q1",
+        "text": "Why do small independent businesses often struggle to compete with large national or international chains?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_012_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is rising commercial rent a bigger threat than online shopping?",
+            "audio": "audio/speaking/s3_012_q1_f1.mp3"
+          },
+          {
+            "text": "What advantages do small shops still hold over large chains?",
+            "audio": "audio/speaking/s3_012_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_012_q2",
+        "text": "How reliable are online customer reviews compared with personal recommendations from friends?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_012_q2.mp3",
+        "followUps": [
+          {
+            "text": "How can consumers spot fake or paid reviews nowadays?",
+            "audio": "audio/speaking/s3_012_q2_f1.mp3"
+          },
+          {
+            "text": "Why do people tend to leave reviews more often when angry than when satisfied?",
+            "audio": "audio/speaking/s3_012_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_012_q3",
+        "text": "What can local governments do to help independent neighbourhood shops survive?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_012_q3.mp3",
+        "followUps": [
+          {
+            "text": "Would lower business rates for independent retailers distort fair competition?",
+            "audio": "audio/speaking/s3_012_q3_f1.mp3"
+          },
+          {
+            "text": "Does pedestrianising shopping streets help or hurt small businesses?",
+            "audio": "audio/speaking/s3_012_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_012_q4",
+        "text": "Do you think customer service standards have improved or declined in recent years?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_012_q4.mp3",
+        "followUps": [
+          {
+            "text": "How has automated chatbot support affected customer frustration?",
+            "audio": "audio/speaking/s3_012_q4_f1.mp3"
+          },
+          {
+            "text": "Are consumers willing to pay slightly more for genuinely attentive service?",
+            "audio": "audio/speaking/s3_012_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_012_q5",
+        "text": "If physical bookshops and high-street cafés disappeared completely, how would urban neighbourhoods feel different?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_012_q5.mp3",
+        "followUps": [
+          {
+            "text": "Could online communities replace those casual neighbourhood hubs?",
+            "audio": "audio/speaking/s3_012_q5_f1.mp3"
+          },
+          {
+            "text": "Which age groups would feel that loss most sharply?",
+            "audio": "audio/speaking/s3_012_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:013",
+    "linkedCueCardId": "s2c:013",
+    "questions": [
+      {
+        "qid": "s3_013_q1",
+        "text": "Why do single-purpose devices sometimes feel more appealing than multifunctional gadgets like smartphones?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_013_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is constant distraction mainly a design flaw or a self-discipline issue?",
+            "audio": "audio/speaking/s3_013_q1_f1.mp3"
+          },
+          {
+            "text": "Are minimalist phones or digital detox habits likely to become mainstream?",
+            "audio": "audio/speaking/s3_013_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_013_q2",
+        "text": "How has everyday household technology changed family life compared with fifty years ago?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_013_q2.mp3",
+        "followUps": [
+          {
+            "text": "Did labour-saving appliances actually give people more leisure time?",
+            "audio": "audio/speaking/s3_013_q2_f1.mp3"
+          },
+          {
+            "text": "Have personal screens reduced shared evening time at home?",
+            "audio": "audio/speaking/s3_013_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_013_q3",
+        "text": "Do you think society has become dangerously over-dependent on digital devices and cloud infrastructure?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_013_q3.mp3",
+        "followUps": [
+          {
+            "text": "Which public services should always keep non-digital backups?",
+            "audio": "audio/speaking/s3_013_q3_f1.mp3"
+          },
+          {
+            "text": "How vulnerable are cashless societies to power or network outages?",
+            "audio": "audio/speaking/s3_013_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_013_q4",
+        "text": "What should be done about the rapid growth of electronic waste worldwide?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_013_q4.mp3",
+        "followUps": [
+          {
+            "text": "Should manufacturers be legally required to take back old devices for recycling?",
+            "audio": "audio/speaking/s3_013_q4_f1.mp3"
+          },
+          {
+            "text": "Why do so many consumers upgrade phones before their old one stops working?",
+            "audio": "audio/speaking/s3_013_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_013_q5",
+        "text": "Which current everyday gadget do you predict will look completely obsolete twenty years from now?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_013_q5.mp3",
+        "followUps": [
+          {
+            "text": "What might replace the traditional rectangular smartphone?",
+            "audio": "audio/speaking/s3_013_q5_f1.mp3"
+          },
+          {
+            "text": "Will physical keys, wallets, or plastic cards still exist?",
+            "audio": "audio/speaking/s3_013_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:014",
+    "linkedCueCardId": "s2c:014",
+    "questions": [
+      {
+        "qid": "s3_014_q1",
+        "text": "Why do people often attach strong emotional value to ordinary old objects?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_014_q1.mp3",
+        "followUps": [
+          {
+            "text": "Do physical objects trigger memories more powerfully than digital photos?",
+            "audio": "audio/speaking/s3_014_q1_f1.mp3"
+          },
+          {
+            "text": "When can holding onto old possessions turn into an unhealthy burden?",
+            "audio": "audio/speaking/s3_014_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_014_q2",
+        "text": "How do the kinds of heirlooms families pass down today differ from those passed down a century ago?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_014_q2.mp3",
+        "followUps": [
+          {
+            "text": "Will future generations inherit digital files instead of physical keepsakes?",
+            "audio": "audio/speaking/s3_014_q2_f1.mp3"
+          },
+          {
+            "text": "Are modern consumer goods simply not built to last long enough to become heirlooms?",
+            "audio": "audio/speaking/s3_014_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_014_q3",
+        "text": "Do you think museums should display everyday historical items alongside royal treasures and fine art?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_014_q3.mp3",
+        "followUps": [
+          {
+            "text": "What can an ordinary kitchen tool or diary reveal that a grand monument cannot?",
+            "audio": "audio/speaking/s3_014_q3_f1.mp3"
+          },
+          {
+            "text": "Should historical artefacts taken abroad in past centuries be returned to their countries of origin?",
+            "audio": "audio/speaking/s3_014_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_014_q4",
+        "text": "Why has collecting vintage items—such as vinyl records, film cameras, or mechanical watches—become trendy among younger adults?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_014_q4.mp3",
+        "followUps": [
+          {
+            "text": "Is it genuine appreciation for craftsmanship or mostly nostalgia and status?",
+            "audio": "audio/speaking/s3_014_q4_f1.mp3"
+          },
+          {
+            "text": "Does buying second-hand vintage goods genuinely help sustainability?",
+            "audio": "audio/speaking/s3_014_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_014_q5",
+        "text": "How can families preserve their oral history and personal photographs before older relatives pass away?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_014_q5.mp3",
+        "followUps": [
+          {
+            "text": "What risks come with storing family memories purely in cloud accounts?",
+            "audio": "audio/speaking/s3_014_q5_f1.mp3"
+          },
+          {
+            "text": "Why do many young people only become curious about family history later in life?",
+            "audio": "audio/speaking/s3_014_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:015",
+    "linkedCueCardId": "s2c:015",
+    "questions": [
+      {
+        "qid": "s3_015_q1",
+        "text": "Why do handmade gifts often feel more meaningful than expensive store-bought presents?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_015_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does that depend on how close you are to the recipient?",
+            "audio": "audio/speaking/s3_015_q1_f1.mp3"
+          },
+          {
+            "text": "When might a practical store-bought gift actually be more appreciated?",
+            "audio": "audio/speaking/s3_015_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_015_q2",
+        "text": "How have gift-giving customs changed in your country over the past twenty years?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_015_q2.mp3",
+        "followUps": [
+          {
+            "text": "Has digital e-gifting or cash transfer made celebrations less personal?",
+            "audio": "audio/speaking/s3_015_q2_f1.mp3"
+          },
+          {
+            "text": "Do commercial marketing campaigns put unfair spending pressure on families?",
+            "audio": "audio/speaking/s3_015_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_015_q3",
+        "text": "Do you think giving experiences—such as concert tickets or classes—is better than giving physical objects?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_015_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why might experiential gifts create longer-lasting happiness?",
+            "audio": "audio/speaking/s3_015_q3_f1.mp3"
+          },
+          {
+            "text": "What are the downsides of gifting experiences to busy people?",
+            "audio": "audio/speaking/s3_015_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_015_q4",
+        "text": "Should schools encourage children to make things by hand rather than relying mostly on screens and printed worksheets?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_015_q4.mp3",
+        "followUps": [
+          {
+            "text": "How does hands-on making affect motor skills and patience?",
+            "audio": "audio/speaking/s3_015_q4_f1.mp3"
+          },
+          {
+            "text": "How can schools afford materials for craft classes on tight budgets?",
+            "audio": "audio/speaking/s3_015_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_015_q5",
+        "text": "How might weekend DIY and craft workshops grow in popularity over the next decade?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_015_q5.mp3",
+        "followUps": [
+          {
+            "text": "Are they mainly a form of stress relief for office workers?",
+            "audio": "audio/speaking/s3_015_q5_f1.mp3"
+          },
+          {
+            "text": "Could hobby crafts realistically become side incomes for more people?",
+            "audio": "audio/speaking/s3_015_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:016",
+    "linkedCueCardId": "s2c:016",
+    "questions": [
+      {
+        "qid": "s3_016_q1",
+        "text": "How have workplace dress codes changed over the past twenty years?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_016_q1.mp3",
+        "followUps": [
+          {
+            "text": "Did the rise of remote work accelerate more casual office wear?",
+            "audio": "audio/speaking/s3_016_q1_f1.mp3"
+          },
+          {
+            "text": "Are there still professions where formal dress remains essential?",
+            "audio": "audio/speaking/s3_016_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_016_q2",
+        "text": "Why do people often form rapid judgements about others based on the clothes they wear?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_016_q2.mp3",
+        "followUps": [
+          {
+            "text": "How unfair can clothing-based assumptions be in job interviews?",
+            "audio": "audio/speaking/s3_016_q2_f1.mp3"
+          },
+          {
+            "text": "Do people judge branded clothing differently today than in the past?",
+            "audio": "audio/speaking/s3_016_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_016_q3",
+        "text": "Do you think school uniforms bring more benefits or drawbacks for students?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_016_q3.mp3",
+        "followUps": [
+          {
+            "text": "Do uniforms genuinely reduce visible economic inequality among pupils?",
+            "audio": "audio/speaking/s3_016_q3_f1.mp3"
+          },
+          {
+            "text": "Should students have a say in updating uniform comfort and design?",
+            "audio": "audio/speaking/s3_016_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_016_q4",
+        "text": "What practical steps could reduce the environmental damage caused by the fast-fashion industry?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_016_q4.mp3",
+        "followUps": [
+          {
+            "text": "Is consumer education enough, or are strict regulations on textile waste needed?",
+            "audio": "audio/speaking/s3_016_q4_f1.mp3"
+          },
+          {
+            "text": "How can clothing rental or second-hand platforms reach wider audiences?",
+            "audio": "audio/speaking/s3_016_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_016_q5",
+        "text": "Do you think traditional national dress will still be worn widely by young people fifty years from now?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_016_q5.mp3",
+        "followUps": [
+          {
+            "text": "How are modern designers adapting traditional silhouettes for younger wearers?",
+            "audio": "audio/speaking/s3_016_q5_f1.mp3"
+          },
+          {
+            "text": "Is wearing traditional attire only at festivals enough to keep it alive?",
+            "audio": "audio/speaking/s3_016_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:017",
+    "linkedCueCardId": "s2c:017",
+    "questions": [
+      {
+        "qid": "s3_017_q1",
+        "text": "Why do many young adults find it harder to save money consistently nowadays?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_017_q1.mp3",
+        "followUps": [
+          {
+            "text": "How much do rising living costs explain compared with lifestyle pressure on social media?",
+            "audio": "audio/speaking/s3_017_q1_f1.mp3"
+          },
+          {
+            "text": "Do 'buy now, pay later' services encourage reckless spending?",
+            "audio": "audio/speaking/s3_017_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_017_q2",
+        "text": "Should personal finance and budgeting be taught as a core subject in secondary schools?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_017_q2.mp3",
+        "followUps": [
+          {
+            "text": "What practical money topics are most useful for teenagers?",
+            "audio": "audio/speaking/s3_017_q2_f1.mp3"
+          },
+          {
+            "text": "Is teaching money habits primarily the role of parents rather than schools?",
+            "audio": "audio/speaking/s3_017_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_017_q3",
+        "text": "How do attitudes towards saving and debt differ between older and younger generations?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_017_q3.mp3",
+        "followUps": [
+          {
+            "text": "Has easier access to credit made borrowing feel less taboo?",
+            "audio": "audio/speaking/s3_017_q3_f1.mp3"
+          },
+          {
+            "text": "Are younger people more open to investing earlier than their parents were?",
+            "audio": "audio/speaking/s3_017_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_017_q4",
+        "text": "Does advertising encourage people to buy things they do not genuinely need, or does it simply inform consumers?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_017_q4.mp3",
+        "followUps": [
+          {
+            "text": "How have personalised social-media algorithms made advertising more persuasive?",
+            "audio": "audio/speaking/s3_017_q4_f1.mp3"
+          },
+          {
+            "text": "Should targeted advertising towards children be strictly restricted?",
+            "audio": "audio/speaking/s3_017_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_017_q5",
+        "text": "If cash disappeared entirely and every transaction became contactless or digital, how might people's spending habits change?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_017_q5.mp3",
+        "followUps": [
+          {
+            "text": "Does tapping a phone make spending feel less real than handing over banknotes?",
+            "audio": "audio/speaking/s3_017_q5_f1.mp3"
+          },
+          {
+            "text": "Could automatic budgeting apps offset that effect?",
+            "audio": "audio/speaking/s3_017_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:018",
+    "linkedCueCardId": "s2c:018",
+    "questions": [
+      {
+        "qid": "s3_018_q1",
+        "text": "How has smartphone photography changed the way people experience concerts, holidays, and family events?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_018_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does taking dozens of pictures actually weaken our memory of the moment?",
+            "audio": "audio/speaking/s3_018_q1_f1.mp3"
+          },
+          {
+            "text": "Why did limited film rolls make older family photos feel more deliberate?",
+            "audio": "audio/speaking/s3_018_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_018_q2",
+        "text": "Should public venues, such as museums or live concert halls, restrict visitors from taking photographs?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_018_q2.mp3",
+        "followUps": [
+          {
+            "text": "How does a sea of raised phone screens affect other audience members?",
+            "audio": "audio/speaking/s3_018_q2_f1.mp3"
+          },
+          {
+            "text": "Can allowing photos also serve as free publicity for cultural institutions?",
+            "audio": "audio/speaking/s3_018_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_018_q3",
+        "text": "How are advanced editing tools and AI image generators affecting public trust in news photography?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_018_q3.mp3",
+        "followUps": [
+          {
+            "text": "Is the old saying 'a camera never lies' completely dead now?",
+            "audio": "audio/speaking/s3_018_q3_f1.mp3"
+          },
+          {
+            "text": "How can newsrooms prove an authentic documentary image has not been altered?",
+            "audio": "audio/speaking/s3_018_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_018_q4",
+        "text": "Why do many people feel compelled to share carefully curated photos of their lives on social media?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_018_q4.mp3",
+        "followUps": [
+          {
+            "text": "How does constant exposure to polished images affect teenagers' self-esteem?",
+            "audio": "audio/speaking/s3_018_q4_f1.mp3"
+          },
+          {
+            "text": "Are parents right to hesitate before posting photos of young children online?",
+            "audio": "audio/speaking/s3_018_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_018_q5",
+        "text": "In the future, do you think professional portrait and wedding photographers will still be in high demand?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_018_q5.mp3",
+        "followUps": [
+          {
+            "text": "What skills does a great photographer bring beyond owning expensive equipment?",
+            "audio": "audio/speaking/s3_018_q5_f1.mp3"
+          },
+          {
+            "text": "Could AI portrait apps replace standard corporate headshots?",
+            "audio": "audio/speaking/s3_018_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:019",
+    "linkedCueCardId": "s2c:019",
+    "questions": [
+      {
+        "qid": "s3_019_q1",
+        "text": "Why do traditional festivals continue to play an important social role even in highly modernised cities?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_019_q1.mp3",
+        "followUps": [
+          {
+            "text": "Do festivals strengthen community ties beyond immediate families?",
+            "audio": "audio/speaking/s3_019_q1_f1.mp3"
+          },
+          {
+            "text": "Why do expatriates often celebrate home festivals even more enthusiastically abroad?",
+            "audio": "audio/speaking/s3_019_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_019_q2",
+        "text": "Do you think major public holidays have become overly commercialised in recent years?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_019_q2.mp3",
+        "followUps": [
+          {
+            "text": "Does heavy retail spending support small artisans or mostly big corporations?",
+            "audio": "audio/speaking/s3_019_q2_f1.mp3"
+          },
+          {
+            "text": "How can families keep celebrations meaningful without overspending?",
+            "audio": "audio/speaking/s3_019_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_019_q3",
+        "text": "How do younger people's ways of spending public holidays compare with those of older generations?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_019_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why do more young families choose to travel during traditional holidays now?",
+            "audio": "audio/speaking/s3_019_q3_f1.mp3"
+          },
+          {
+            "text": "Does that create tension with older relatives expecting traditional reunions?",
+            "audio": "audio/speaking/s3_019_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_019_q4",
+        "text": "Should governments add more national public holidays, or focus instead on flexible personal annual leave?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_019_q4.mp3",
+        "followUps": [
+          {
+            "text": "What problems happen when millions of people all travel on the exact same holiday dates?",
+            "audio": "audio/speaking/s3_019_q4_f1.mp3"
+          },
+          {
+            "text": "What unique value does a shared national day off still provide?",
+            "audio": "audio/speaking/s3_019_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_019_q5",
+        "text": "How can schools and local communities keep lesser-known regional traditions alive for the next generation?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_019_q5.mp3",
+        "followUps": [
+          {
+            "text": "Should traditions be allowed to adapt to modern tastes rather than staying frozen?",
+            "audio": "audio/speaking/s3_019_q5_f1.mp3"
+          },
+          {
+            "text": "Can short-form videos actually spark youth interest in folk arts?",
+            "audio": "audio/speaking/s3_019_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:020",
+    "linkedCueCardId": "s2c:020",
+    "questions": [
+      {
+        "qid": "s3_020_q1",
+        "text": "Why do extended families in many countries gather less frequently than they did two generations ago?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_020_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is geographic mobility for jobs the main reason, or changing social priorities?",
+            "audio": "audio/speaking/s3_020_q1_f1.mp3"
+          },
+          {
+            "text": "Do family messaging groups compensate for seeing each other in person?",
+            "audio": "audio/speaking/s3_020_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_020_q2",
+        "text": "How does growing up in a large extended household compare with growing up in a small nuclear family?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_020_q2.mp3",
+        "followUps": [
+          {
+            "text": "What trade-offs exist between privacy and everyday mutual support?",
+            "audio": "audio/speaking/s3_020_q2_f1.mp3"
+          },
+          {
+            "text": "Do children in larger families develop different social skills?",
+            "audio": "audio/speaking/s3_020_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_020_q3",
+        "text": "Do you think families spend too much money on elaborate weddings and milestone parties nowadays?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_020_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why do couples often feel social pressure to host huge weddings?",
+            "audio": "audio/speaking/s3_020_q3_f1.mp3"
+          },
+          {
+            "text": "Are smaller, more intimate celebrations becoming more accepted among young people?",
+            "audio": "audio/speaking/s3_020_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_020_q4",
+        "text": "How can relatives who live in different countries maintain close bonds across time zones?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_020_q4.mp3",
+        "followUps": [
+          {
+            "text": "Do scheduled weekly video calls work better than sporadic long chats?",
+            "audio": "audio/speaking/s3_020_q4_f1.mp3"
+          },
+          {
+            "text": "How can children living abroad stay connected to their heritage language?",
+            "audio": "audio/speaking/s3_020_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_020_q5",
+        "text": "How might typical family structures in your country evolve over the next thirty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_020_q5.mp3",
+        "followUps": [
+          {
+            "text": "Could rising housing costs actually bring multigenerational living back?",
+            "audio": "audio/speaking/s3_020_q5_f1.mp3"
+          },
+          {
+            "text": "What impact will lower birth rates have on elder care?",
+            "audio": "audio/speaking/s3_020_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:021",
+    "linkedCueCardId": "s2c:021",
+    "questions": [
+      {
+        "qid": "s3_021_q1",
+        "text": "Why do people in large cities often feel less connected to their neighbours than people in smaller towns?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_021_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does frequent renting and moving weaken neighbourhood trust?",
+            "audio": "audio/speaking/s3_021_q1_f1.mp3"
+          },
+          {
+            "text": "Can apartment design itself encourage or discourage casual chats?",
+            "audio": "audio/speaking/s3_021_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_021_q2",
+        "text": "Should schools and universities make community service a compulsory requirement for graduation?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_021_q2.mp3",
+        "followUps": [
+          {
+            "text": "Does making volunteering mandatory defeat the spirit of generosity?",
+            "audio": "audio/speaking/s3_021_q2_f1.mp3"
+          },
+          {
+            "text": "Could structured exposure still turn reluctant students into lifelong volunteers?",
+            "audio": "audio/speaking/s3_021_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_021_q3",
+        "text": "How does informal neighbourhood volunteering compare with donating money to large charitable organisations?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_021_q3.mp3",
+        "followUps": [
+          {
+            "text": "Which approach tends to build more trust among donors?",
+            "audio": "audio/speaking/s3_021_q3_f1.mp3"
+          },
+          {
+            "text": "Why are large charities still essential for complex issues like disaster relief?",
+            "audio": "audio/speaking/s3_021_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_021_q4",
+        "text": "What can local councils do to encourage busy working adults to participate in civic initiatives?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_021_q4.mp3",
+        "followUps": [
+          {
+            "text": "Would offering short two-hour micro-volunteering slots attract more people?",
+            "audio": "audio/speaking/s3_021_q4_f1.mp3"
+          },
+          {
+            "text": "How important is showing visible results quickly after residents pitch in?",
+            "audio": "audio/speaking/s3_021_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_021_q5",
+        "text": "Do you think maintaining clean public streets should be the sole responsibility of municipal workers, or of residents too?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_021_q5.mp3",
+        "followUps": [
+          {
+            "text": "Why do fines alone rarely solve urban littering?",
+            "audio": "audio/speaking/s3_021_q5_f1.mp3"
+          },
+          {
+            "text": "How do social norms shape whether people litter in public?",
+            "audio": "audio/speaking/s3_021_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:022",
+    "linkedCueCardId": "s2c:022",
+    "questions": [
+      {
+        "qid": "s3_022_q1",
+        "text": "Why are people still willing to pay high prices for live concerts when studio recordings are virtually free online?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_022_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is it mainly about acoustic quality or the shared emotional atmosphere?",
+            "audio": "audio/speaking/s3_022_q1_f1.mp3"
+          },
+          {
+            "text": "Do huge stadium tours give good value compared with intimate venues?",
+            "audio": "audio/speaking/s3_022_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_022_q2",
+        "text": "How does attending a live theatre play or lecture compare with watching a filmed version at home?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_022_q2.mp3",
+        "followUps": [
+          {
+            "text": "Do streamed performances widen access for people living outside major cities?",
+            "audio": "audio/speaking/s3_022_q2_f1.mp3"
+          },
+          {
+            "text": "Why do people pay closer attention in a theatre than on their sofa?",
+            "audio": "audio/speaking/s3_022_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_022_q3",
+        "text": "Should public tax money subsidise classical theatres, symphonies, and traditional performing arts?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_022_q3.mp3",
+        "followUps": [
+          {
+            "text": "How would you answer critics who say those funds should go to hospitals or schools instead?",
+            "audio": "audio/speaking/s3_022_q3_f1.mp3"
+          },
+          {
+            "text": "Should subsidised venues be required to offer cheap tickets for students?",
+            "audio": "audio/speaking/s3_022_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_022_q4",
+        "text": "What can concert organisers do to prevent ticket scalping and make popular events fairer for ordinary fans?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_022_q4.mp3",
+        "followUps": [
+          {
+            "text": "Are ID-linked digital tickets and capped resale platforms practical?",
+            "audio": "audio/speaking/s3_022_q4_f1.mp3"
+          },
+          {
+            "text": "Should dynamic surge pricing for concert tickets be banned?",
+            "audio": "audio/speaking/s3_022_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_022_q5",
+        "text": "How might technology such as holograms or mixed reality reshape live entertainment in the coming decades?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_022_q5.mp3",
+        "followUps": [
+          {
+            "text": "Would audiences embrace virtual concerts by retired or deceased musicians?",
+            "audio": "audio/speaking/s3_022_q5_f1.mp3"
+          },
+          {
+            "text": "Might raw unplugged performances become even more prized in response?",
+            "audio": "audio/speaking/s3_022_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:023",
+    "linkedCueCardId": "s2c:023",
+    "questions": [
+      {
+        "qid": "s3_023_q1",
+        "text": "How do team sports differ from individual sports in the personal qualities they develop?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_023_q1.mp3",
+        "followUps": [
+          {
+            "text": "Should children try both team and individual sports before specialising?",
+            "audio": "audio/speaking/s3_023_q1_f1.mp3"
+          },
+          {
+            "text": "Which kind is easier to sustain as a busy adult?",
+            "audio": "audio/speaking/s3_023_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_023_q2",
+        "text": "Do you think hosting mega-events like the Olympics or World Cup is generally worth the massive public investment?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_023_q2.mp3",
+        "followUps": [
+          {
+            "text": "How can host cities avoid being left with empty stadiums afterwards?",
+            "audio": "audio/speaking/s3_023_q2_f1.mp3"
+          },
+          {
+            "text": "Should multiple neighbouring countries co-host major tournaments more often?",
+            "audio": "audio/speaking/s3_023_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_023_q3",
+        "text": "Why do top professional athletes earn vastly higher incomes than people in essential public services like nurses or teachers?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_023_q3.mp3",
+        "followUps": [
+          {
+            "text": "Is that simply market economics, or does it reflect distorted social values?",
+            "audio": "audio/speaking/s3_023_q3_f1.mp3"
+          },
+          {
+            "text": "Does a short professional athletic career partly justify higher peak salaries?",
+            "audio": "audio/speaking/s3_023_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_023_q4",
+        "text": "What can governments and schools do to boost everyday physical activity among sedentary office workers and teenagers?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_023_q4.mp3",
+        "followUps": [
+          {
+            "text": "Are free outdoor fitness parks more effective than gym subsidies?",
+            "audio": "audio/speaking/s3_023_q4_f1.mp3"
+          },
+          {
+            "text": "Why do so many teenagers drop out of sport around exam years?",
+            "audio": "audio/speaking/s3_023_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_023_q5",
+        "text": "Do you think competitive e-sports should be treated on the same footing as traditional physical sports?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_023_q5.mp3",
+        "followUps": [
+          {
+            "text": "What skills do top e-sports players share with chess or motorsport competitors?",
+            "audio": "audio/speaking/s3_023_q5_f1.mp3"
+          },
+          {
+            "text": "What health concerns arise from intense professional gaming schedules?",
+            "audio": "audio/speaking/s3_023_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:024",
+    "linkedCueCardId": "s2c:024",
+    "questions": [
+      {
+        "qid": "s3_024_q1",
+        "text": "How have modern weather forecasting apps changed the way industries and ordinary people plan their activities?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_024_q1.mp3",
+        "followUps": [
+          {
+            "text": "Which economic sectors suffer most when forecasts turn out wrong?",
+            "audio": "audio/speaking/s3_024_q1_f1.mp3"
+          },
+          {
+            "text": "Do people still pay attention to natural signs of weather change anymore?",
+            "audio": "audio/speaking/s3_024_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_024_q2",
+        "text": "Why do extreme weather events—such as flash floods and heatwaves—often hit large cities harder than rural areas?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_024_q2.mp3",
+        "followUps": [
+          {
+            "text": "How does paving over soil and wetlands worsen urban flooding?",
+            "audio": "audio/speaking/s3_024_q2_f1.mp3"
+          },
+          {
+            "text": "Which groups of city residents are most vulnerable during severe heatwaves?",
+            "audio": "audio/speaking/s3_024_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_024_q3",
+        "text": "What practical urban infrastructure changes can help cities adapt to increasingly unpredictable weather?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_024_q3.mp3",
+        "followUps": [
+          {
+            "text": "How do 'sponge city' features like permeable pavements and retention parks work?",
+            "audio": "audio/speaking/s3_024_q3_f1.mp3"
+          },
+          {
+            "text": "Why do governments often delay investing in climate adaptation until after a disaster?",
+            "audio": "audio/speaking/s3_024_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_024_q4",
+        "text": "How might changing climate patterns affect tourism destinations in Asia and Europe over the next twenty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_024_q4.mp3",
+        "followUps": [
+          {
+            "text": "Could cooler northern or highland destinations see a surge in summer visitors?",
+            "audio": "audio/speaking/s3_024_q4_f1.mp3"
+          },
+          {
+            "text": "How can coastal towns diversify their economies if beach seasons become harsher?",
+            "audio": "audio/speaking/s3_024_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_024_q5",
+        "text": "Do you think local climate strongly shapes a country's culture, cuisine, and daily social habits?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_024_q5.mp3",
+        "followUps": [
+          {
+            "text": "Can you give an example of how climate influences daily schedules where you live?",
+            "audio": "audio/speaking/s3_024_q5_f1.mp3"
+          },
+          {
+            "text": "Does universal air conditioning weaken those traditional seasonal rhythms?",
+            "audio": "audio/speaking/s3_024_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:025",
+    "linkedCueCardId": "s2c:025",
+    "questions": [
+      {
+        "qid": "s3_025_q1",
+        "text": "Why do many adults hesitate to start learning completely new skills from scratch?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_025_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is fear of looking foolish a bigger obstacle than lack of free time?",
+            "audio": "audio/speaking/s3_025_q1_f1.mp3"
+          },
+          {
+            "text": "How does adult ego affect the way we handle early mistakes?",
+            "audio": "audio/speaking/s3_025_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_025_q2",
+        "text": "How does learning a practical skill through online tutorials compare with learning from an in-person coach?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_025_q2.mp3",
+        "followUps": [
+          {
+            "text": "Which types of skills work well for self-study online, and which really need live feedback?",
+            "audio": "audio/speaking/s3_025_q2_f1.mp3"
+          },
+          {
+            "text": "Why do so many people start free online courses yet never finish them?",
+            "audio": "audio/speaking/s3_025_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_025_q3",
+        "text": "Should employers provide paid study hours so staff can continually update their skills?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_025_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why do some companies worry about training employees who might later leave?",
+            "audio": "audio/speaking/s3_025_q3_f1.mp3"
+          },
+          {
+            "text": "What risks does a firm face if it refuses to invest in retraining?",
+            "audio": "audio/speaking/s3_025_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_025_q4",
+        "text": "Which workplace or life skills do you predict will become most valuable over the next fifteen years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_025_q4.mp3",
+        "followUps": [
+          {
+            "text": "Will interpersonal and communication skills become more valuable as automation expands?",
+            "audio": "audio/speaking/s3_025_q4_f1.mp3"
+          },
+          {
+            "text": "How should universities prepare students for jobs that do not yet exist?",
+            "audio": "audio/speaking/s3_025_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_025_q5",
+        "text": "Do you think natural talent or deliberate daily practice plays a bigger role in achieving high mastery?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_025_q5.mp3",
+        "followUps": [
+          {
+            "text": "Is there a point at the elite level where talent finally separates people?",
+            "audio": "audio/speaking/s3_025_q5_f1.mp3"
+          },
+          {
+            "text": "Why is repeating the same routine mindlessly less effective than structured practice?",
+            "audio": "audio/speaking/s3_025_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:026",
+    "linkedCueCardId": "s2c:026",
+    "questions": [
+      {
+        "qid": "s3_026_q1",
+        "text": "Why do people often feel overwhelmed when they are given too many choices?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_026_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does having dozens of options increase regret after choosing?",
+            "audio": "audio/speaking/s3_026_q1_f1.mp3"
+          },
+          {
+            "text": "How does that apply to major life choices like careers or university courses?",
+            "audio": "audio/speaking/s3_026_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_026_q2",
+        "text": "Should parents play a major role in their young adult children's career and study decisions?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_026_q2.mp3",
+        "followUps": [
+          {
+            "text": "When does helpful parental guidance cross into unhelpful pressure?",
+            "audio": "audio/speaking/s3_026_q2_f1.mp3"
+          },
+          {
+            "text": "Why might parents' career advice sometimes be outdated in fast-changing industries?",
+            "audio": "audio/speaking/s3_026_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_026_q3",
+        "text": "How does making decisions in a large organisation compare with making decisions in a small startup?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_026_q3.mp3",
+        "followUps": [
+          {
+            "text": "What are the risks of moving too quickly without formal checks?",
+            "audio": "audio/speaking/s3_026_q3_f1.mp3"
+          },
+          {
+            "text": "How can large organisations stay agile without losing accountability?",
+            "audio": "audio/speaking/s3_026_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_026_q4",
+        "text": "Do you think relying on data and algorithms leads to better life decisions than trusting human intuition?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_026_q4.mp3",
+        "followUps": [
+          {
+            "text": "In which situations can human intuition outperform spreadsheets?",
+            "audio": "audio/speaking/s3_026_q4_f1.mp3"
+          },
+          {
+            "text": "Can over-relying on data make people ignore ethical or emotional factors?",
+            "audio": "audio/speaking/s3_026_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_026_q5",
+        "text": "If every school leaver were encouraged to take a structured gap year before choosing a university major, what might happen?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_026_q5.mp3",
+        "followUps": [
+          {
+            "text": "Would that mainly benefit students from wealthier backgrounds?",
+            "audio": "audio/speaking/s3_026_q5_f1.mp3"
+          },
+          {
+            "text": "Could it reduce university drop-out rates and career regret?",
+            "audio": "audio/speaking/s3_026_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:027",
+    "linkedCueCardId": "s2c:027",
+    "questions": [
+      {
+        "qid": "s3_027_q1",
+        "text": "Why do travel delays often make people far more anxious and irritable than waiting in other situations?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_027_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does uncertainty about how long a delay will last worsen stress more than the delay itself?",
+            "audio": "audio/speaking/s3_027_q1_f1.mp3"
+          },
+          {
+            "text": "How can transport operators communicate better during disruptions?",
+            "audio": "audio/speaking/s3_027_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_027_q2",
+        "text": "How does long-distance rail travel compare with domestic air travel in terms of comfort and environmental impact?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_027_q2.mp3",
+        "followUps": [
+          {
+            "text": "Should governments restrict very short domestic flights where high-speed rail exists?",
+            "audio": "audio/speaking/s3_027_q2_f1.mp3"
+          },
+          {
+            "text": "Why do many travellers still choose budget airlines over trains?",
+            "audio": "audio/speaking/s3_027_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_027_q3",
+        "text": "Do you think modern tourism has become too focused on ticking off famous landmarks as quickly as possible?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_027_q3.mp3",
+        "followUps": [
+          {
+            "text": "What are the benefits of 'slow travel' for both tourists and local towns?",
+            "audio": "audio/speaking/s3_027_q3_f1.mp3"
+          },
+          {
+            "text": "Is slow travel realistic for workers who only get two weeks of leave a year?",
+            "audio": "audio/speaking/s3_027_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_027_q4",
+        "text": "What can governments do to make intercity public transport more resilient to severe weather and peak holiday crowds?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_027_q4.mp3",
+        "followUps": [
+          {
+            "text": "Should holiday train and coach fares be capped or dynamically priced?",
+            "audio": "audio/speaking/s3_027_q4_f1.mp3"
+          },
+          {
+            "text": "How important is integrating regional bus networks with main railway stations?",
+            "audio": "audio/speaking/s3_027_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_027_q5",
+        "text": "How might long-distance passenger transport evolve over the next thirty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_027_q5.mp3",
+        "followUps": [
+          {
+            "text": "Will sustainable aviation fuels meaningfully cut flight emissions soon?",
+            "audio": "audio/speaking/s3_027_q5_f1.mp3"
+          },
+          {
+            "text": "Could overnight sleeper trains enjoy a lasting revival?",
+            "audio": "audio/speaking/s3_027_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:028",
+    "linkedCueCardId": "s2c:028",
+    "questions": [
+      {
+        "qid": "s3_028_q1",
+        "text": "Why do bystanders in crowded public places sometimes hesitate to step in when someone looks lost or in trouble?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_028_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does assuming someone else will help explain most of that hesitation?",
+            "audio": "audio/speaking/s3_028_q1_f1.mp3"
+          },
+          {
+            "text": "Does wearing headphones and looking at phones reduce our awareness of others?",
+            "audio": "audio/speaking/s3_028_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_028_q2",
+        "text": "How can parents and schools nurture genuine empathy and helpfulness in children?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_028_q2.mp3",
+        "followUps": [
+          {
+            "text": "Does modelling kindness at home matter more than lecturing children about rules?",
+            "audio": "audio/speaking/s3_028_q2_f1.mp3"
+          },
+          {
+            "text": "How can collaborative classroom tasks encourage students to look out for peers?",
+            "audio": "audio/speaking/s3_028_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_028_q3",
+        "text": "Are people in small rural villages genuinely more helpful towards strangers than people in large metropolises?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_028_q3.mp3",
+        "followUps": [
+          {
+            "text": "Is urban hurry often mistaken for unfriendliness?",
+            "audio": "audio/speaking/s3_028_q3_f1.mp3"
+          },
+          {
+            "text": "Why might big cities still show remarkable solidarity during emergencies?",
+            "audio": "audio/speaking/s3_028_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_028_q4",
+        "text": "Do you think filming acts of charity or kindness for social media makes those acts less genuine?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_028_q4.mp3",
+        "followUps": [
+          {
+            "text": "What if the recipient still benefits materially regardless of the creator's motive?",
+            "audio": "audio/speaking/s3_028_q4_f1.mp3"
+          },
+          {
+            "text": "How does being filmed affect the dignity of vulnerable people?",
+            "audio": "audio/speaking/s3_028_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_028_q5",
+        "text": "How important is mutual neighbourhood support in an era of growing public and commercial services?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_028_q5.mp3",
+        "followUps": [
+          {
+            "text": "Which everyday needs can neighbours meet better than paid apps or government services?",
+            "audio": "audio/speaking/s3_028_q5_f1.mp3"
+          },
+          {
+            "text": "How do local neighbourhood chat groups help or hinder that spirit?",
+            "audio": "audio/speaking/s3_028_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:029",
+    "linkedCueCardId": "s2c:029",
+    "questions": [
+      {
+        "qid": "s3_029_q1",
+        "text": "Why do many students and employees try so hard to conceal mistakes instead of admitting them openly?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_029_q1.mp3",
+        "followUps": [
+          {
+            "text": "How does a harsh blame culture actually increase the risk of serious failures?",
+            "audio": "audio/speaking/s3_029_q1_f1.mp3"
+          },
+          {
+            "text": "Does school grading condition young people to fear getting anything wrong?",
+            "audio": "audio/speaking/s3_029_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_029_q2",
+        "text": "How can managers encourage staff to report honest errors early without lowering standards of accountability?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_029_q2.mp3",
+        "followUps": [
+          {
+            "text": "How should leaders distinguish between an honest slip and repeated carelessness?",
+            "audio": "audio/speaking/s3_029_q2_f1.mp3"
+          },
+          {
+            "text": "Does it help when senior leaders openly share their own past mistakes?",
+            "audio": "audio/speaking/s3_029_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_029_q3",
+        "text": "How do attitudes towards failure in business or education compare across different cultures?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_029_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why do some entrepreneurial hubs view a failed startup almost as valuable experience?",
+            "audio": "audio/speaking/s3_029_q3_f1.mp3"
+          },
+          {
+            "text": "Are younger generations in your country becoming more tolerant of career detours?",
+            "audio": "audio/speaking/s3_029_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_029_q4",
+        "text": "Do you agree with the saying that people learn more from failure than from success?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_029_q4.mp3",
+        "followUps": [
+          {
+            "text": "When can repeated failure undermine confidence rather than build resilience?",
+            "audio": "audio/speaking/s3_029_q4_f1.mp3"
+          },
+          {
+            "text": "Why do people rarely pause to analyse why a success went well?",
+            "audio": "audio/speaking/s3_029_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_029_q5",
+        "text": "In high-stakes fields like aviation or medicine, what lessons can ordinary workplaces borrow about preventing human error?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_029_q5.mp3",
+        "followUps": [
+          {
+            "text": "Why are simple checklists so effective even for seasoned experts?",
+            "audio": "audio/speaking/s3_029_q5_f1.mp3"
+          },
+          {
+            "text": "Can over-reliance on automated warnings ever make operators less vigilant?",
+            "audio": "audio/speaking/s3_029_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:030",
+    "linkedCueCardId": "s2c:030",
+    "questions": [
+      {
+        "qid": "s3_030_q1",
+        "text": "Who do young people generally trust most for advice today: parents, peers, or online creators?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_030_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does the answer depend on whether the problem is personal, financial, or career-related?",
+            "audio": "audio/speaking/s3_030_q1_f1.mp3"
+          },
+          {
+            "text": "What risks come from following lifestyle or health advice from unqualified influencers?",
+            "audio": "audio/speaking/s3_030_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_030_q2",
+        "text": "Why is it often much easier to give sensible advice to a friend than to follow the exact same advice yourself?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_030_q2.mp3",
+        "followUps": [
+          {
+            "text": "How does emotional attachment cloud our own judgement?",
+            "audio": "audio/speaking/s3_030_q2_f1.mp3"
+          },
+          {
+            "text": "Can writing a problem down objectively help create that same distance?",
+            "audio": "audio/speaking/s3_030_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_030_q3",
+        "text": "Do you think professional life coaches and career mentors are genuinely useful, or mostly a modern commercial trend?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_030_q3.mp3",
+        "followUps": [
+          {
+            "text": "How can someone tell a credible mentor apart from a persuasive salesperson?",
+            "audio": "audio/speaking/s3_030_q3_f1.mp3"
+          },
+          {
+            "text": "Should universities provide structured alumni mentoring for final-year students?",
+            "audio": "audio/speaking/s3_030_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_030_q4",
+        "text": "When someone shares a problem with you, how can you tell whether they want practical solutions or simply someone to listen?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_030_q4.mp3",
+        "followUps": [
+          {
+            "text": "Why can jumping straight into problem-solving mode sometimes frustrate a friend?",
+            "audio": "audio/speaking/s3_030_q4_f1.mp3"
+          },
+          {
+            "text": "Is simply asking 'Do you want advice or just a listening ear?' a good habit?",
+            "audio": "audio/speaking/s3_030_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_030_q5",
+        "text": "In the future, do you think more people will turn to AI assistants for personal and career guidance?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_030_q5.mp3",
+        "followUps": [
+          {
+            "text": "What could be dangerous about relying on software for sensitive emotional decisions?",
+            "audio": "audio/speaking/s3_030_q5_f1.mp3"
+          },
+          {
+            "text": "Where might AI actually be helpful as an impartial sounding board?",
+            "audio": "audio/speaking/s3_030_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:031",
+    "linkedCueCardId": "s2c:031",
+    "questions": [
+      {
+        "qid": "s3_031_q1",
+        "text": "Why do many adults say they read far fewer full-length books now than when they were students?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_031_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is shortened attention span from short-form videos a bigger factor than busy schedules?",
+            "audio": "audio/speaking/s3_031_q1_f1.mp3"
+          },
+          {
+            "text": "Does reading work emails and reports all day put people off reading for pleasure at night?",
+            "audio": "audio/speaking/s3_031_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_031_q2",
+        "text": "How does listening to an audiobook compare with reading a printed book in terms of comprehension and enjoyment?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_031_q2.mp3",
+        "followUps": [
+          {
+            "text": "Are certain genres better suited to audio than others?",
+            "audio": "audio/speaking/s3_031_q2_f1.mp3"
+          },
+          {
+            "text": "Should audiobooks count equally as 'reading' for children and students?",
+            "audio": "audio/speaking/s3_031_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_031_q3",
+        "text": "What can parents and schools do to make children genuinely love reading rather than seeing it as a chore?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_031_q3.mp3",
+        "followUps": [
+          {
+            "text": "Should children be allowed to read comics and graphic novels freely?",
+            "audio": "audio/speaking/s3_031_q3_f1.mp3"
+          },
+          {
+            "text": "Does testing students on every novel kill the pleasure of reading?",
+            "audio": "audio/speaking/s3_031_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_031_q4",
+        "text": "Do you think book-summary apps and AI digests are a helpful learning tool or a poor substitute for real reading?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_031_q4.mp3",
+        "followUps": [
+          {
+            "text": "What gets lost when a three-hundred-page argument is compressed into five bullet points?",
+            "audio": "audio/speaking/s3_031_q4_f1.mp3"
+          },
+          {
+            "text": "When might a summary genuinely be useful?",
+            "audio": "audio/speaking/s3_031_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_031_q5",
+        "text": "Will printed books survive as a mainstream format over the next fifty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_031_q5.mp3",
+        "followUps": [
+          {
+            "text": "Why have printed book sales proved surprisingly resilient despite e-readers?",
+            "audio": "audio/speaking/s3_031_q5_f1.mp3"
+          },
+          {
+            "text": "Could textbooks become entirely digital while literary fiction stays in print?",
+            "audio": "audio/speaking/s3_031_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:032",
+    "linkedCueCardId": "s2c:032",
+    "questions": [
+      {
+        "qid": "s3_032_q1",
+        "text": "Why have documentary series become nearly as popular as fictional dramas on streaming platforms?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_032_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does high-budget cinematography make educational topics more gripping?",
+            "audio": "audio/speaking/s3_032_q1_f1.mp3"
+          },
+          {
+            "text": "What risks arise when documentaries use dramatic editing to feel like thrillers?",
+            "audio": "audio/speaking/s3_032_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_032_q2",
+        "text": "How does learning about an issue through a documentary film compare with reading a written news report or book?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_032_q2.mp3",
+        "followUps": [
+          {
+            "text": "Why can visual storytelling persuade people more strongly than statistics alone?",
+            "audio": "audio/speaking/s3_032_q2_f1.mp3"
+          },
+          {
+            "text": "Is it easier to spot bias in written articles than in films?",
+            "audio": "audio/speaking/s3_032_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_032_q3",
+        "text": "Should public broadcasters be required to fund independent, non-commercial educational documentaries?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_032_q3.mp3",
+        "followUps": [
+          {
+            "text": "What topics tend to get ignored when media relies purely on advertising revenue?",
+            "audio": "audio/speaking/s3_032_q3_f1.mp3"
+          },
+          {
+            "text": "How can public broadcasters stay relevant to young viewers who rarely watch television?",
+            "audio": "audio/speaking/s3_032_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_032_q4",
+        "text": "Do you think wildlife documentaries genuinely motivate viewers to change their environmental habits?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_032_q4.mp3",
+        "followUps": [
+          {
+            "text": "Can focusing purely on bleak environmental warnings leave viewers feeling helpless?",
+            "audio": "audio/speaking/s3_032_q4_f1.mp3"
+          },
+          {
+            "text": "Should documentaries highlight practical solutions alongside the problems?",
+            "audio": "audio/speaking/s3_032_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_032_q5",
+        "text": "How might streaming services change the future of traditional cinemas over the next twenty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_032_q5.mp3",
+        "followUps": [
+          {
+            "text": "Will cinemas survive mainly for huge spectacle films or boutique community screenings?",
+            "audio": "audio/speaking/s3_032_q5_f1.mp3"
+          },
+          {
+            "text": "How does watching a film in a crowded cinema differ emotionally from watching at home?",
+            "audio": "audio/speaking/s3_032_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:033",
+    "linkedCueCardId": "s2c:033",
+    "questions": [
+      {
+        "qid": "s3_033_q1",
+        "text": "Why have podcasts and long-form interviews grown so popular in an era supposedly dominated by fifteen-second video clips?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_033_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does being able to listen while commuting or exercising explain most of that growth?",
+            "audio": "audio/speaking/s3_033_q1_f1.mp3"
+          },
+          {
+            "text": "Are audiences hungry for deeper nuance than short clips can provide?",
+            "audio": "audio/speaking/s3_033_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_033_q2",
+        "text": "How does traditional broadcast radio compare with modern on-demand podcasts?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_033_q2.mp3",
+        "followUps": [
+          {
+            "text": "In what situations—such as emergencies or live traffic—is live radio still irreplaceable?",
+            "audio": "audio/speaking/s3_033_q2_f1.mp3"
+          },
+          {
+            "text": "Do podcasts risk trapping listeners inside narrow echo chambers?",
+            "audio": "audio/speaking/s3_033_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_033_q3",
+        "text": "Since anyone can now launch a podcast or online channel without editorial oversight, how can listeners judge whether information is trustworthy?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_033_q3.mp3",
+        "followUps": [
+          {
+            "text": "Should schools teach digital media literacy explicitly from a young age?",
+            "audio": "audio/speaking/s3_033_q3_f1.mp3"
+          },
+          {
+            "text": "Do hosting platforms bear responsibility for curbing harmful misinformation?",
+            "audio": "audio/speaking/s3_033_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_033_q4",
+        "text": "Do you think independent online creators are raising or lowering the overall standard of journalism and public debate?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_033_q4.mp3",
+        "followUps": [
+          {
+            "text": "What niche stories do independent creators cover that mainstream outlets often overlook?",
+            "audio": "audio/speaking/s3_033_q4_f1.mp3"
+          },
+          {
+            "text": "What gets lost when investigative reporting loses funding to opinion commentary?",
+            "audio": "audio/speaking/s3_033_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_033_q5",
+        "text": "How might audio and video learning platforms reshape informal adult education over the next decade?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_033_q5.mp3",
+        "followUps": [
+          {
+            "text": "Could employers begin valuing verified self-directed portfolios as much as formal degrees?",
+            "audio": "audio/speaking/s3_033_q5_f1.mp3"
+          },
+          {
+            "text": "Why do many learners still struggle with self-discipline outside structured classrooms?",
+            "audio": "audio/speaking/s3_033_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:034",
+    "linkedCueCardId": "s2c:034",
+    "questions": [
+      {
+        "qid": "s3_034_q1",
+        "text": "Why does misleading health and nutrition advice spread so quickly on social media?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_034_q1.mp3",
+        "followUps": [
+          {
+            "text": "Do simple quick-fix promises appeal more to people than cautious scientific nuance?",
+            "audio": "audio/speaking/s3_034_q1_f1.mp3"
+          },
+          {
+            "text": "How does commercial sponsorship blur the line between health tips and advertising?",
+            "audio": "audio/speaking/s3_034_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_034_q2",
+        "text": "How can scientists and journalists communicate complex research more clearly to the general public without oversimplifying it?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_034_q2.mp3",
+        "followUps": [
+          {
+            "text": "Should universities train researchers in public communication alongside lab work?",
+            "audio": "audio/speaking/s3_034_q2_f1.mp3"
+          },
+          {
+            "text": "Why do sensational news headlines sometimes contradict the actual study they cite?",
+            "audio": "audio/speaking/s3_034_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_034_q3",
+        "text": "Should governments invest more public healthcare money in preventative education or in advanced hospital treatment?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_034_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why is preventative health often politically harder to prioritise than emergency care?",
+            "audio": "audio/speaking/s3_034_q3_f1.mp3"
+          },
+          {
+            "text": "How effective are taxes on sugary drinks compared with public awareness campaigns?",
+            "audio": "audio/speaking/s3_034_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_034_q4",
+        "text": "How has ordinary people's awareness of mental and physical well-being changed compared with thirty years ago?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_034_q4.mp3",
+        "followUps": [
+          {
+            "text": "Has greater openness about stress and sleep improved workplace culture?",
+            "audio": "audio/speaking/s3_034_q4_f1.mp3"
+          },
+          {
+            "text": "Can tracking every health metric on smartwatches ever cause unnecessary anxiety?",
+            "audio": "audio/speaking/s3_034_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_034_q5",
+        "text": "Do you think every publicly funded scientific paper should be free for ordinary citizens to read online?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_034_q5.mp3",
+        "followUps": [
+          {
+            "text": "How would open access affect universities and researchers in developing countries?",
+            "audio": "audio/speaking/s3_034_q5_f1.mp3"
+          },
+          {
+            "text": "Might lay readers misinterpret raw technical studies without expert context?",
+            "audio": "audio/speaking/s3_034_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:035",
+    "linkedCueCardId": "s2c:035",
+    "questions": [
+      {
+        "qid": "s3_035_q1",
+        "text": "Why do songs we listened to during our teenage years tend to stay emotionally powerful for the rest of our lives?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_035_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does identity formation during adolescence play a major role?",
+            "audio": "audio/speaking/s3_035_q1_f1.mp3"
+          },
+          {
+            "text": "Why do many adults stop actively exploring brand-new music after their thirties?",
+            "audio": "audio/speaking/s3_035_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_035_q2",
+        "text": "How has music streaming changed the way artists create songs and earn a living compared with the era of physical albums?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_035_q2.mp3",
+        "followUps": [
+          {
+            "text": "Have songs become shorter because streaming algorithms reward quick hooks?",
+            "audio": "audio/speaking/s3_035_q2_f1.mp3"
+          },
+          {
+            "text": "Does streaming help independent musicians get discovered more easily, or mainly favour huge stars?",
+            "audio": "audio/speaking/s3_035_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_035_q3",
+        "text": "Do you think background music in shops, cafés, and gyms genuinely influences people's mood and spending behaviour?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_035_q3.mp3",
+        "followUps": [
+          {
+            "text": "When does background music in public spaces cross the line into irritation?",
+            "audio": "audio/speaking/s3_035_q3_f1.mp3"
+          },
+          {
+            "text": "Should public transport enforce strict rules against playing audio without headphones?",
+            "audio": "audio/speaking/s3_035_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_035_q4",
+        "text": "Should music education—including learning an instrument—be funded equally alongside maths and science in primary schools?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_035_q4.mp3",
+        "followUps": [
+          {
+            "text": "What cognitive or social benefits does playing in a group ensemble offer children?",
+            "audio": "audio/speaking/s3_035_q4_f1.mp3"
+          },
+          {
+            "text": "How can underfunded schools offer musical instruction without expensive instruments?",
+            "audio": "audio/speaking/s3_035_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_035_q5",
+        "text": "If every film and video game were stripped of its musical soundtrack, how differently would audiences react to stories?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_035_q5.mp3",
+        "followUps": [
+          {
+            "text": "Can silence sometimes create more tension than dramatic orchestral music?",
+            "audio": "audio/speaking/s3_035_q5_f1.mp3"
+          },
+          {
+            "text": "Why do iconic film themes become recognisable cultural landmarks on their own?",
+            "audio": "audio/speaking/s3_035_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:036",
+    "linkedCueCardId": "s2c:036",
+    "questions": [
+      {
+        "qid": "s3_036_q1",
+        "text": "Why have outdoor running clubs and cycling groups grown so dramatically in Asian cities over the last decade?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_036_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does the social community aspect keep beginners consistent longer than solo workouts?",
+            "audio": "audio/speaking/s3_036_q1_f1.mp3"
+          },
+          {
+            "text": "How have fitness tracking apps influenced people's exercise habits?",
+            "audio": "audio/speaking/s3_036_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_036_q2",
+        "text": "How does exercising outdoors compare with working out inside an air-conditioned gym?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_036_q2.mp3",
+        "followUps": [
+          {
+            "text": "When is an indoor gym actually safer or more practical in hot or polluted cities?",
+            "audio": "audio/speaking/s3_036_q2_f1.mp3"
+          },
+          {
+            "text": "Does natural scenery noticeably improve mood during exercise?",
+            "audio": "audio/speaking/s3_036_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_036_q3",
+        "text": "What urban design changes are most effective in getting ordinary citizens to walk or cycle more in daily life?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_036_q3.mp3",
+        "followUps": [
+          {
+            "text": "Why do protected bike lanes matter far more than painted lines on busy roads?",
+            "audio": "audio/speaking/s3_036_q3_f1.mp3"
+          },
+          {
+            "text": "How can cities encourage active commuting in very hot or rainy climates?",
+            "audio": "audio/speaking/s3_036_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_036_q4",
+        "text": "Do you think modern workplaces should build short active breaks into the standard eight-hour workday?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_036_q4.mp3",
+        "followUps": [
+          {
+            "text": "Would short movement breaks actually raise productivity rather than waste time?",
+            "audio": "audio/speaking/s3_036_q4_f1.mp3"
+          },
+          {
+            "text": "Why do some employees feel guilty stepping away from their desks?",
+            "audio": "audio/speaking/s3_036_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_036_q5",
+        "text": "How might wearable health monitors and smart sports gear change amateur fitness over the next ten years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_036_q5.mp3",
+        "followUps": [
+          {
+            "text": "Could obsessing over pace and heart-rate scores rob exercise of simple enjoyment?",
+            "audio": "audio/speaking/s3_036_q5_f1.mp3"
+          },
+          {
+            "text": "How could health insurers misuse personal fitness tracker data?",
+            "audio": "audio/speaking/s3_036_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:037",
+    "linkedCueCardId": "s2c:037",
+    "questions": [
+      {
+        "qid": "s3_037_q1",
+        "text": "Why do many modern workers feel guilty when they spend time on a hobby that does not earn money or boost their CV?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_037_q1.mp3",
+        "followUps": [
+          {
+            "text": "Does 'hustle culture' on social media turn relaxing pastimes into side jobs?",
+            "audio": "audio/speaking/s3_037_q1_f1.mp3"
+          },
+          {
+            "text": "What happens to enjoyment the moment a hobby becomes monetised?",
+            "audio": "audio/speaking/s3_037_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_037_q2",
+        "text": "How do the hobbies of young adults today compare with the pastimes of their parents' generation?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_037_q2.mp3",
+        "followUps": [
+          {
+            "text": "Are digital hobbies like gaming as socially fulfilling as physical clubs?",
+            "audio": "audio/speaking/s3_037_q2_f1.mp3"
+          },
+          {
+            "text": "Why are some retro analogue hobbies—like knitting, film photography, and board games—coming back?",
+            "audio": "audio/speaking/s3_037_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_037_q3",
+        "text": "Do you think having a regular creative or physical hobby makes people better at their main job as well?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_037_q3.mp3",
+        "followUps": [
+          {
+            "text": "How does mental recovery affect long-term creativity and preventing burnout?",
+            "audio": "audio/speaking/s3_037_q3_f1.mp3"
+          },
+          {
+            "text": "Can working overtime consistently actually lower a person's weekly output?",
+            "audio": "audio/speaking/s3_037_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_037_q4",
+        "text": "How can cities provide affordable spaces—such as community gardens or maker workshops—for residents living in small flats?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_037_q4.mp3",
+        "followUps": [
+          {
+            "text": "Could underused rooftops or vacant public plots be converted into shared allotments?",
+            "audio": "audio/speaking/s3_037_q4_f1.mp3"
+          },
+          {
+            "text": "How should shared community facilities be maintained fairly?",
+            "audio": "audio/speaking/s3_037_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_037_q5",
+        "text": "If automation eventually reduced the standard working week to four days, how do you think most people would spend the extra day?",
+        "type": "hypothetical",
+        "audio": "audio/speaking/s3_037_q5.mp3",
+        "followUps": [
+          {
+            "text": "Would people invest more in hobbies and family, or simply pick up second jobs?",
+            "audio": "audio/speaking/s3_037_q5_f1.mp3"
+          },
+          {
+            "text": "How might local leisure and hospitality industries respond?",
+            "audio": "audio/speaking/s3_037_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:038",
+    "linkedCueCardId": "s2c:038",
+    "questions": [
+      {
+        "qid": "s3_038_q1",
+        "text": "Why are younger city dwellers cooking from scratch less frequently than their parents' generation?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_038_q1.mp3",
+        "followUps": [
+          {
+            "text": "Is cheap food delivery the main reason, or cramped studio kitchens and long commutes?",
+            "audio": "audio/speaking/s3_038_q1_f1.mp3"
+          },
+          {
+            "text": "Does cooking for just one person often feel uneconomical?",
+            "audio": "audio/speaking/s3_038_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_038_q2",
+        "text": "How does home-cooked food generally compare with restaurant meals and ready-made delivery dishes?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_038_q2.mp3",
+        "followUps": [
+          {
+            "text": "What hidden ingredients—like excess sugar, oil, or sodium—tend to appear in commercial meals?",
+            "audio": "audio/speaking/s3_038_q2_f1.mp3"
+          },
+          {
+            "text": "In what ways do good local eateries still play a valuable social role?",
+            "audio": "audio/speaking/s3_038_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_038_q3",
+        "text": "Should practical cooking and nutrition classes be compulsory for both boys and girls at secondary school?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_038_q3.mp3",
+        "followUps": [
+          {
+            "text": "Could school cooking lessons help break down outdated gender roles in the kitchen?",
+            "audio": "audio/speaking/s3_038_q3_f1.mp3"
+          },
+          {
+            "text": "What basic culinary skills are most essential for a teenager about to live alone?",
+            "audio": "audio/speaking/s3_038_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_038_q4",
+        "text": "How can households and supermarkets meaningfully cut down on everyday food waste?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_038_q4.mp3",
+        "followUps": [
+          {
+            "text": "Do confusing 'best before' labels cause people to throw away perfectly safe food?",
+            "audio": "audio/speaking/s3_038_q4_f1.mp3"
+          },
+          {
+            "text": "Should supermarkets be required to donate unsold fresh produce to food banks?",
+            "audio": "audio/speaking/s3_038_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_038_q5",
+        "text": "How might diets and eating habits in your country change over the next twenty years?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_038_q5.mp3",
+        "followUps": [
+          {
+            "text": "Will plant-based meals gain wider popularity for health or environmental reasons?",
+            "audio": "audio/speaking/s3_038_q5_f1.mp3"
+          },
+          {
+            "text": "Can traditional slow-cooked family recipes survive alongside ultra-fast lifestyles?",
+            "audio": "audio/speaking/s3_038_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:039",
+    "linkedCueCardId": "s2c:039",
+    "questions": [
+      {
+        "qid": "s3_039_q1",
+        "text": "Why do most New Year's resolutions and ambitious self-improvement plans fail within the first few weeks?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_039_q1.mp3",
+        "followUps": [
+          {
+            "text": "Do people rely too heavily on temporary motivation instead of changing their environment?",
+            "audio": "audio/speaking/s3_039_q1_f1.mp3"
+          },
+          {
+            "text": "Why does trying to change five habits at once usually backfire?",
+            "audio": "audio/speaking/s3_039_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_039_q2",
+        "text": "How does building a positive new habit compare with trying to break a deeply ingrained bad habit?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_039_q2.mp3",
+        "followUps": [
+          {
+            "text": "Is replacing an unhelpful habit with a healthier cue easier than relying on pure willpower?",
+            "audio": "audio/speaking/s3_039_q2_f1.mp3"
+          },
+          {
+            "text": "How strongly do our friends and household routines shape our daily habits?",
+            "audio": "audio/speaking/s3_039_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_039_q3",
+        "text": "Do you think habit-tracking apps and gamified streaks genuinely help learners, or can they become counterproductive?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_039_q3.mp3",
+        "followUps": [
+          {
+            "text": "What happens when someone accidentally breaks a hundred-day streak?",
+            "audio": "audio/speaking/s3_039_q3_f1.mp3"
+          },
+          {
+            "text": "Can chasing app points distract people from actual deep learning?",
+            "audio": "audio/speaking/s3_039_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_039_q4",
+        "text": "What can employers do to help staff maintain healthier boundaries between working hours and personal rest?",
+        "type": "solution",
+        "audio": "audio/speaking/s3_039_q4.mp3",
+        "followUps": [
+          {
+            "text": "Should countries introduce a legal 'right to disconnect' outside office hours?",
+            "audio": "audio/speaking/s3_039_q4_f1.mp3"
+          },
+          {
+            "text": "How can global teams across time zones respect rest without slowing down collaboration?",
+            "audio": "audio/speaking/s3_039_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_039_q5",
+        "text": "Do you think maintaining a strict daily routine limits creativity, or actually creates the freedom needed for creative work?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_039_q5.mp3",
+        "followUps": [
+          {
+            "text": "Why do many famous writers and scientists keep surprisingly repetitive daily schedules?",
+            "audio": "audio/speaking/s3_039_q5_f1.mp3"
+          },
+          {
+            "text": "When is it healthy to deliberately break out of your routine?",
+            "audio": "audio/speaking/s3_039_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "s3s:040",
+    "linkedCueCardId": "s2c:040",
+    "questions": [
+      {
+        "qid": "s3_040_q1",
+        "text": "Why do group assignments at school and university so often frustrate hardworking students?",
+        "type": "cause",
+        "audio": "audio/speaking/s3_040_q1.mp3",
+        "followUps": [
+          {
+            "text": "How can teachers grade group projects fairly when effort is uneven?",
+            "audio": "audio/speaking/s3_040_q1_f1.mp3"
+          },
+          {
+            "text": "Does learning to handle unreliable teammates still prepare students for real workplaces?",
+            "audio": "audio/speaking/s3_040_q1_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_040_q2",
+        "text": "How does remote online teamwork compare with collaborating in the same physical office?",
+        "type": "compare",
+        "audio": "audio/speaking/s3_040_q2.mp3",
+        "followUps": [
+          {
+            "text": "Which stages of a project benefit most from being in the same room?",
+            "audio": "audio/speaking/s3_040_q2_f1.mp3"
+          },
+          {
+            "text": "Does remote work make it harder to onboard new junior staff?",
+            "audio": "audio/speaking/s3_040_q2_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_040_q3",
+        "text": "What qualities distinguish an effective team leader from an overly controlling manager?",
+        "type": "evaluate",
+        "audio": "audio/speaking/s3_040_q3.mp3",
+        "followUps": [
+          {
+            "text": "Should a leader always be the most technically skilled person on the team?",
+            "audio": "audio/speaking/s3_040_q3_f1.mp3"
+          },
+          {
+            "text": "How should a leader resolve a clash between two strong-minded team members?",
+            "audio": "audio/speaking/s3_040_q3_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_040_q4",
+        "text": "Do you think diverse teams with varied backgrounds consistently outperform more homogeneous groups?",
+        "type": "opinion",
+        "audio": "audio/speaking/s3_040_q4.mp3",
+        "followUps": [
+          {
+            "text": "Why can diverse groups take longer to reach early agreement?",
+            "audio": "audio/speaking/s3_040_q4_f1.mp3"
+          },
+          {
+            "text": "What kind of team culture is needed so quieter voices are actually heard?",
+            "audio": "audio/speaking/s3_040_q4_f2.mp3"
+          }
+        ]
+      },
+      {
+        "qid": "s3_040_q5",
+        "text": "How might hybrid work models reshape team structures and office spaces over the next decade?",
+        "type": "predict",
+        "audio": "audio/speaking/s3_040_q5.mp3",
+        "followUps": [
+          {
+            "text": "Will offices become primarily collaboration hubs rather than rows of silent desks?",
+            "audio": "audio/speaking/s3_040_q5_f1.mp3"
+          },
+          {
+            "text": "Could fully remote staff face unfair barriers to promotion?",
+            "audio": "audio/speaking/s3_040_q5_f2.mp3"
+          }
+        ]
+      }
+    ],
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  }
+]

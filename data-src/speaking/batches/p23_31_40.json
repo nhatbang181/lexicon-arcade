@@ -1,0 +1,892 @@
+[
+  {
+    "cueCard": {
+      "id": "s2c:031",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "media",
+      "prompt": "Describe a book you read that changed how you look at a subject.",
+      "bullets": [
+        "what the book was about and why you picked it up",
+        "what key ideas inside it surprised or challenged you",
+        "how long it took you to finish it"
+      ],
+      "finalBullet": "and explain how it shifted your perspective on everyday life.",
+      "audio": "audio/speaking/s2c_031.mp3",
+      "linkedPart3Id": "s3s:031",
+      "sampleNotes": [
+        "non-fiction book on everyday urban design",
+        "picked up before long flight on friend's tip",
+        "argued tiny street details shape human mood",
+        "shaded pavements, ground-floor windows, benches",
+        "took 3 weeks, covered in pencil notes",
+        "can't walk through city streets the same way now"
+      ],
+      "band8Sample": {
+        "text": "A book that genuinely altered the lens through which I see everyday surroundings is a lively non-fiction study on human-scale urban design that I picked up last year before a long flight on a friend's recommendation. Before reading it, I'd never thought much about why certain neighbourhoods felt instinctively welcoming while others felt bleak and exhausting—I simply assumed some cities were prettier than others. Over roughly three weeks of reading a chapter every night, I ended up underlining almost every second page in pencil. What challenged my assumptions most was the author's argument that urban liveability has far less to do with gleaming skyscrapers than with what happens at eye level along the first three metres of a street. She broke down how seemingly small choices—wide shaded pavements, active ground-floor shopfronts instead of blank concrete walls, frequent pedestrian crossings, and simple public benches—quietly dictate whether strangers feel safe walking, chatting, or lingering outside. She also pointed out how widening roads to 'solve' traffic jams almost always backfires by inviting even more private cars onto the streets, a paradox I'd never previously grasped. Since finishing that book, I honestly can't walk through my own city in the same passive way. I catch myself noticing where street trees cast cooling shadows, why a particular corner café draws crowds while another sits empty, and how difficult it is for elderly pedestrians to cross wide junctions. It's rare for a single paperback to turn your daily commute into an ongoing field study, and that's why it left such a lasting mark on me.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Have you lent or recommended that book to anyone else?",
+        "Do you generally prefer non-fiction books or novels?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:031",
+      "linkedCueCardId": "s2c:031",
+      "questions": [
+        {
+          "qid": "s3_031_q1",
+          "text": "Why do many adults say they read far fewer full-length books now than when they were students?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_031_q1.mp3",
+          "followUps": [
+            { "text": "Is shortened attention span from short-form videos a bigger factor than busy schedules?", "audio": "audio/speaking/s3_031_q1_f1.mp3" },
+            { "text": "Does reading work emails and reports all day put people off reading for pleasure at night?", "audio": "audio/speaking/s3_031_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_031_q2",
+          "text": "How does listening to an audiobook compare with reading a printed book in terms of comprehension and enjoyment?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_031_q2.mp3",
+          "followUps": [
+            { "text": "Are certain genres better suited to audio than others?", "audio": "audio/speaking/s3_031_q2_f1.mp3" },
+            { "text": "Should audiobooks count equally as 'reading' for children and students?", "audio": "audio/speaking/s3_031_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_031_q3",
+          "text": "What can parents and schools do to make children genuinely love reading rather than seeing it as a chore?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_031_q3.mp3",
+          "followUps": [
+            { "text": "Should children be allowed to read comics and graphic novels freely?", "audio": "audio/speaking/s3_031_q3_f1.mp3" },
+            { "text": "Does testing students on every novel kill the pleasure of reading?", "audio": "audio/speaking/s3_031_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_031_q4",
+          "text": "Do you think book-summary apps and AI digests are a helpful learning tool or a poor substitute for real reading?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_031_q4.mp3",
+          "followUps": [
+            { "text": "What gets lost when a three-hundred-page argument is compressed into five bullet points?", "audio": "audio/speaking/s3_031_q4_f1.mp3" },
+            { "text": "When might a summary genuinely be useful?", "audio": "audio/speaking/s3_031_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_031_q5",
+          "text": "Will printed books survive as a mainstream format over the next fifty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_031_q5.mp3",
+          "followUps": [
+            { "text": "Why have printed book sales proved surprisingly resilient despite e-readers?", "audio": "audio/speaking/s3_031_q5_f1.mp3" },
+            { "text": "Could textbooks become entirely digital while literary fiction stays in print?", "audio": "audio/speaking/s3_031_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:032",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "media",
+      "prompt": "Describe a documentary or film that taught you something surprising.",
+      "bullets": [
+        "what the documentary or film was about",
+        "where and when you watched it",
+        "what specific details or facts surprised you most"
+      ],
+      "finalBullet": "and explain why you think more people should watch it.",
+      "audio": "audio/speaking/s2c_032.mp3",
+      "linkedPart3Id": "s3s:032",
+      "sampleNotes": [
+        "nature documentary on coastal mangrove forests",
+        "watched on rainy Sunday night with family",
+        "previously thought mangroves were just muddy swamps",
+        "tangled roots blunt storm surges & nurse young fish",
+        "store huge carbon in waterlogged soil",
+        "shifts conservation from charity to practical self-interest"
+      ],
+      "band8Sample": {
+        "text": "A documentary that completely overturned one of my blind spots was an hour-long environmental film about coastal mangrove forests across Southeast Asia, which I watched on a quiet Sunday evening with my parents a few months ago. Before sitting down to watch it, I'll admit I held a rather vague view of mangroves as muddy, mosquito-filled swamps sitting between beaches and farmland. The film shattered that impression within the first ten minutes using stunning underwater and aerial cinematography. What genuinely amazed me was discovering just how hard-working those tangled arched roots are for coastal communities. During severe typhoons, a dense belt of mature mangroves acts like a living shock absorber, dramatically weakening incoming wave energy before it hits villages and dykes further inland—often outperforming concrete seawalls that crack and require costly repairs. Underwater cameras also revealed how the shadowed root mazes act as vital nurseries where tiny juvenile crabs, prawns, and reef fish shelter from larger predators until they're big enough to swim out to open sea. Even more surprising was learning how deeply mangrove mud locks away carbon for centuries because the waterlogged soil slows down decay. My father, who grew up near the coast, sat glued to the screen the entire hour and kept nodding as fishermen in the film explained how replanting cleared stretches had brought their seasonal catch roaring back within a few years. I think far more people should watch documentaries like this because they reframe ecological protection not as an abstract moral luxury, but as smart, tangible insurance for livelihoods and coastal towns.",
+        "estSeconds": 116
+      },
+      "roundingOffQs": [
+        "Do you watch documentaries regularly, or prefer fiction films?",
+        "Did that film inspire you to read more about the topic?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:032",
+      "linkedCueCardId": "s2c:032",
+      "questions": [
+        {
+          "qid": "s3_032_q1",
+          "text": "Why have documentary series become nearly as popular as fictional dramas on streaming platforms?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_032_q1.mp3",
+          "followUps": [
+            { "text": "Does high-budget cinematography make educational topics more gripping?", "audio": "audio/speaking/s3_032_q1_f1.mp3" },
+            { "text": "What risks arise when documentaries use dramatic editing to feel like thrillers?", "audio": "audio/speaking/s3_032_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_032_q2",
+          "text": "How does learning about an issue through a documentary film compare with reading a written news report or book?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_032_q2.mp3",
+          "followUps": [
+            { "text": "Why can visual storytelling persuade people more strongly than statistics alone?", "audio": "audio/speaking/s3_032_q2_f1.mp3" },
+            { "text": "Is it easier to spot bias in written articles than in films?", "audio": "audio/speaking/s3_032_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_032_q3",
+          "text": "Should public broadcasters be required to fund independent, non-commercial educational documentaries?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_032_q3.mp3",
+          "followUps": [
+            { "text": "What topics tend to get ignored when media relies purely on advertising revenue?", "audio": "audio/speaking/s3_032_q3_f1.mp3" },
+            { "text": "How can public broadcasters stay relevant to young viewers who rarely watch television?", "audio": "audio/speaking/s3_032_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_032_q4",
+          "text": "Do you think wildlife documentaries genuinely motivate viewers to change their environmental habits?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_032_q4.mp3",
+          "followUps": [
+            { "text": "Can focusing purely on bleak environmental warnings leave viewers feeling helpless?", "audio": "audio/speaking/s3_032_q4_f1.mp3" },
+            { "text": "Should documentaries highlight practical solutions alongside the problems?", "audio": "audio/speaking/s3_032_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_032_q5",
+          "text": "How might streaming services change the future of traditional cinemas over the next twenty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_032_q5.mp3",
+          "followUps": [
+            { "text": "Will cinemas survive mainly for huge spectacle films or boutique community screenings?", "audio": "audio/speaking/s3_032_q5_f1.mp3" },
+            { "text": "How does watching a film in a crowded cinema differ emotionally from watching at home?", "audio": "audio/speaking/s3_032_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:033",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "media",
+      "prompt": "Describe a podcast, radio programme, or online channel you regularly follow.",
+      "bullets": [
+        "what the programme or channel focuses on",
+        "when and how you usually listen to or watch it",
+        "what makes the presenter's style engaging"
+      ],
+      "finalBullet": "and explain what you have gained from following it regularly.",
+      "audio": "audio/speaking/s2c_033.mp3",
+      "linkedPart3Id": "s3s:033",
+      "sampleNotes": [
+        "weekly English podcast on everyday design & history",
+        "35-min episodes on evening walks & dishwashing",
+        "calm British host, archival clips, soundscapes",
+        "turns mundane objects (street signs, escalators) into stories",
+        "huge boost to natural listening & UK intonation",
+        "makes household chores genuinely enjoyable"
+      ],
+      "band8Sample": {
+        "text": "An audio programme I've been hooked on for nearly two years is a weekly English-language podcast that explores the hidden history behind ordinary everyday objects and public infrastructure—things like why airport carpets have strange patterns, how shipping containers reshaped global trade, or why standard pavement widths vary across cities. Each episode runs for about thirty-five minutes, which fits my routine like a glove. I almost never sit still staring at a wall to listen; instead, I queue up a fresh episode while washing dishes after dinner, folding laundry, or taking a brisk evening walk around the park. What makes the show so addictive is the presenter's calm, conversational storytelling. Unlike loud, overly scripted talk shows packed with banter and forced jokes, the host speaks with a crisp British accent, interviews genuinely passionate historians and engineers, and weaves subtle ambient sound design underneath so you feel transported straight into a factory floor or an old train depot. Following it every week has paid off in two distinct ways. First, it's quietly turned tedious domestic chores into a part of the evening I actually look forward to. Second, from an English-learning standpoint, listening to unhurried, nuanced interviews across dozens of regional accents has sharpened my ear for connected speech, idiomatic hedging, and natural phrasing far more effectively than dry exam drills ever did. Best of all, it keeps feeding my curiosity so I never run short of fresh, concrete examples whenever a conversation turns to society, architecture, history, or everyday urban life.",
+        "estSeconds": 111
+      },
+      "roundingOffQs": [
+        "Do you prefer listening to podcasts alone or discussing episodes with friends?",
+        "Why do you think audio podcasts have surged in popularity recently?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:033",
+      "linkedCueCardId": "s2c:033",
+      "questions": [
+        {
+          "qid": "s3_033_q1",
+          "text": "Why have podcasts and long-form interviews grown so popular in an era supposedly dominated by fifteen-second video clips?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_033_q1.mp3",
+          "followUps": [
+            { "text": "Does being able to listen while commuting or exercising explain most of that growth?", "audio": "audio/speaking/s3_033_q1_f1.mp3" },
+            { "text": "Are audiences hungry for deeper nuance than short clips can provide?", "audio": "audio/speaking/s3_033_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_033_q2",
+          "text": "How does traditional broadcast radio compare with modern on-demand podcasts?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_033_q2.mp3",
+          "followUps": [
+            { "text": "In what situations—such as emergencies or live traffic—is live radio still irreplaceable?", "audio": "audio/speaking/s3_033_q2_f1.mp3" },
+            { "text": "Do podcasts risk trapping listeners inside narrow echo chambers?", "audio": "audio/speaking/s3_033_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_033_q3",
+          "text": "Since anyone can now launch a podcast or online channel without editorial oversight, how can listeners judge whether information is trustworthy?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_033_q3.mp3",
+          "followUps": [
+            { "text": "Should schools teach digital media literacy explicitly from a young age?", "audio": "audio/speaking/s3_033_q3_f1.mp3" },
+            { "text": "Do hosting platforms bear responsibility for curbing harmful misinformation?", "audio": "audio/speaking/s3_033_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_033_q4",
+          "text": "Do you think independent online creators are raising or lowering the overall standard of journalism and public debate?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_033_q4.mp3",
+          "followUps": [
+            { "text": "What niche stories do independent creators cover that mainstream outlets often overlook?", "audio": "audio/speaking/s3_033_q4_f1.mp3" },
+            { "text": "What gets lost when investigative reporting loses funding to opinion commentary?", "audio": "audio/speaking/s3_033_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_033_q5",
+          "text": "How might audio and video learning platforms reshape informal adult education over the next decade?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_033_q5.mp3",
+          "followUps": [
+            { "text": "Could employers begin valuing verified self-directed portfolios as much as formal degrees?", "audio": "audio/speaking/s3_033_q5_f1.mp3" },
+            { "text": "Why do many learners still struggle with self-discipline outside structured classrooms?", "audio": "audio/speaking/s3_033_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:034",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "media",
+      "prompt": "Describe an article or essay you read recently about science or health.",
+      "bullets": [
+        "where you found the article and what topic it covered",
+        "what main argument or explanation it presented",
+        "why you found it easy or engaging to read"
+      ],
+      "finalBullet": "and explain whether it prompted you to change anything in your own life.",
+      "audio": "audio/speaking/s2c_034.mp3",
+      "linkedPart3Id": "s3s:034",
+      "sampleNotes": [
+        "science magazine essay on circadian rhythm & light",
+        "read on weekend morning via e-reader",
+        "morning outdoor sunlight sets evening melatonin clock",
+        "indoor office lighting far dimmer than cloudy daylight",
+        "clear analogies, zero sensational clickbait",
+        "started 15-min morning walks -> faster sleep onset"
+      ],
+      "band8Sample": {
+        "text": "A few weeks ago I read a remarkably clear long-form essay in a popular-science magazine about circadian rhythms—specifically, how the timing of natural daylight exposure governs our sleep quality sixteen hours later. I'd always assumed that good sleep hygiene was mostly about what you avoid at night, such as cutting off caffeine and dimming phone screens before bed. While the essay agreed those evening habits matter, its central insight completely reframed the puzzle for me: our internal biological clock relies heavily on getting bright, natural outdoor light into our eyes within an hour of waking up. Even on an overcast morning, outdoor light is dramatically more intense than typical indoor office bulbs, and that early bright signal tells the brain precisely when to start counting down towards evening melatonin release. What made the piece such a pleasure to read was the writer's sober, balanced tone. Instead of promising miraculous overnight cures or pushing pricey supplements, she explained the basic biology with crisp everyday analogies, carefully noted where evidence was still emerging, and acknowledged that shift workers face very different constraints. It actually prompted a tiny, painless tweak to my own routine. For the past month, I've taken my morning coffee out onto the balcony or walked a quick fifteen-minute loop around the block before opening my laptop. Whether it's pure biology or the added calm of fresh morning air, I've genuinely noticed myself nodding off far more reliably around eleven at night—and it reminded me how valuable thoughtful science communication can be.",
+        "estSeconds": 114
+      },
+      "roundingOffQs": [
+        "Do you often share interesting health articles with family or friends?",
+        "How do you decide whether a health article online is reliable?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:034",
+      "linkedCueCardId": "s2c:034",
+      "questions": [
+        {
+          "qid": "s3_034_q1",
+          "text": "Why does misleading health and nutrition advice spread so quickly on social media?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_034_q1.mp3",
+          "followUps": [
+            { "text": "Do simple quick-fix promises appeal more to people than cautious scientific nuance?", "audio": "audio/speaking/s3_034_q1_f1.mp3" },
+            { "text": "How does commercial sponsorship blur the line between health tips and advertising?", "audio": "audio/speaking/s3_034_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_034_q2",
+          "text": "How can scientists and journalists communicate complex research more clearly to the general public without oversimplifying it?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_034_q2.mp3",
+          "followUps": [
+            { "text": "Should universities train researchers in public communication alongside lab work?", "audio": "audio/speaking/s3_034_q2_f1.mp3" },
+            { "text": "Why do sensational news headlines sometimes contradict the actual study they cite?", "audio": "audio/speaking/s3_034_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_034_q3",
+          "text": "Should governments invest more public healthcare money in preventative education or in advanced hospital treatment?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_034_q3.mp3",
+          "followUps": [
+            { "text": "Why is preventative health often politically harder to prioritise than emergency care?", "audio": "audio/speaking/s3_034_q3_f1.mp3" },
+            { "text": "How effective are taxes on sugary drinks compared with public awareness campaigns?", "audio": "audio/speaking/s3_034_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_034_q4",
+          "text": "How has ordinary people's awareness of mental and physical well-being changed compared with thirty years ago?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_034_q4.mp3",
+          "followUps": [
+            { "text": "Has greater openness about stress and sleep improved workplace culture?", "audio": "audio/speaking/s3_034_q4_f1.mp3" },
+            { "text": "Can tracking every health metric on smartwatches ever cause unnecessary anxiety?", "audio": "audio/speaking/s3_034_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_034_q5",
+          "text": "Do you think every publicly funded scientific paper should be free for ordinary citizens to read online?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_034_q5.mp3",
+          "followUps": [
+            { "text": "How would open access affect universities and researchers in developing countries?", "audio": "audio/speaking/s3_034_q5_f1.mp3" },
+            { "text": "Might lay readers misinterpret raw technical studies without expert context?", "audio": "audio/speaking/s3_034_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:035",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "media",
+      "prompt": "Describe a piece of music or song that brings back a strong memory.",
+      "bullets": [
+        "what kind of music or song it is",
+        "when and where you first heard it",
+        "what specific memory or period of your life it recalls"
+      ],
+      "finalBullet": "and explain how you feel whenever you hear it today.",
+      "audio": "audio/speaking/s2c_035.mp3",
+      "linkedPart3Id": "s3s:035",
+      "sampleNotes": [
+        "gentle acoustic Vietnamese folk ballad",
+        "played on cassette in father's old hatchback",
+        "late-night drives back to grandparents' town",
+        "orange streetlights & rain streaks on glass",
+        "acoustic guitar fingerpicking + warm voice",
+        "instant wave of nostalgia & quiet gratitude"
+      ],
+      "band8Sample": {
+        "text": "There's a gentle acoustic Vietnamese folk ballad from the late nineteen-nineties that acts like an instant time machine whenever I catch even three seconds of its opening guitar chords. It isn't a dramatic stadium anthem at all—just unhurried nylon-string fingerpicking, a soft cello line, and poetic lyrics about autumn rain, riverside lanterns, and returning home after a long journey. I first heard it as a seven- or eight-year-old sitting in the back seat of my father's battered hatchback during our four-hour drives south to visit my grandparents before Lunar New Year. Back then we didn't have streaming playlists; my dad kept a small plastic box of worn cassette tapes beside the gearstick, and he almost always slipped that album in once dusk fell and traffic thinned out along the coastal highway. Whenever those opening notes drift out of a café speaker today, I'm immediately transported back to that exact sensory snapshot: orange highway lamps sweeping across the car ceiling, raindrops racing sideways along the window glass, the faint scent of mandarins my mother was peeling in the front seat, and the cosy half-asleep feeling of knowing someone else was steering safely through the dark. Even though I've heard the melody hundreds of times since, it never loses its pull. Listening to it now brings a bittersweet blend of warmth and quiet gratitude—it reminds me of how tirelessly my parents worked to make those long holiday trips feel effortless for my sister and me, and it always makes me pick up the phone to call home.",
+        "estSeconds": 114
+      },
+      "roundingOffQs": [
+        "Do you often listen to older music from your childhood?",
+        "Why do you think songs trigger memories so much faster than photographs?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:035",
+      "linkedCueCardId": "s2c:035",
+      "questions": [
+        {
+          "qid": "s3_035_q1",
+          "text": "Why do songs we listened to during our teenage years tend to stay emotionally powerful for the rest of our lives?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_035_q1.mp3",
+          "followUps": [
+            { "text": "Does identity formation during adolescence play a major role?", "audio": "audio/speaking/s3_035_q1_f1.mp3" },
+            { "text": "Why do many adults stop actively exploring brand-new music after their thirties?", "audio": "audio/speaking/s3_035_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_035_q2",
+          "text": "How has music streaming changed the way artists create songs and earn a living compared with the era of physical albums?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_035_q2.mp3",
+          "followUps": [
+            { "text": "Have songs become shorter because streaming algorithms reward quick hooks?", "audio": "audio/speaking/s3_035_q2_f1.mp3" },
+            { "text": "Does streaming help independent musicians get discovered more easily, or mainly favour huge stars?", "audio": "audio/speaking/s3_035_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_035_q3",
+          "text": "Do you think background music in shops, cafés, and gyms genuinely influences people's mood and spending behaviour?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_035_q3.mp3",
+          "followUps": [
+            { "text": "When does background music in public spaces cross the line into irritation?", "audio": "audio/speaking/s3_035_q3_f1.mp3" },
+            { "text": "Should public transport enforce strict rules against playing audio without headphones?", "audio": "audio/speaking/s3_035_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_035_q4",
+          "text": "Should music education—including learning an instrument—be funded equally alongside maths and science in primary schools?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_035_q4.mp3",
+          "followUps": [
+            { "text": "What cognitive or social benefits does playing in a group ensemble offer children?", "audio": "audio/speaking/s3_035_q4_f1.mp3" },
+            { "text": "How can underfunded schools offer musical instruction without expensive instruments?", "audio": "audio/speaking/s3_035_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_035_q5",
+          "text": "If every film and video game were stripped of its musical soundtrack, how differently would audiences react to stories?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_035_q5.mp3",
+          "followUps": [
+            { "text": "Can silence sometimes create more tension than dramatic orchestral music?", "audio": "audio/speaking/s3_035_q5_f1.mp3" },
+            { "text": "Why do iconic film themes become recognisable cultural landmarks on their own?", "audio": "audio/speaking/s3_035_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:036",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "activity",
+      "prompt": "Describe an outdoor activity you enjoy doing to stay healthy.",
+      "bullets": [
+        "what the activity is and where you usually do it",
+        "how often you do it and what gear you need",
+        "how you first got started with it"
+      ],
+      "finalBullet": "and explain why it works so well for both your body and mind.",
+      "audio": "audio/speaking/s2c_036.mp3",
+      "linkedPart3Id": "s3s:036",
+      "sampleNotes": [
+        "early-morning riverside jogging (5–7 km)",
+        "started 2 yrs ago with Couch-to-5K intervals",
+        "only needs breathable shirt & decent trainers",
+        "3 mornings/week at 5:45 am before heat",
+        "watching sunrise & calm river breeze",
+        "clears mental fog + deep sleep at night"
+      ],
+      "band8Sample": {
+        "text": "The outdoor activity that keeps me healthiest—and frankly sanest—is early-morning jogging along the tree-lined riverside footpath near my flat. I actually hated running throughout school because PE classes always felt like a punishment of gasping round a dusty track. Two years ago, however, after noticing how sluggish I felt from long hours at a desk, I gave a gradual walk-jog beginner plan a try—just ninety seconds of slow jogging alternating with brisk walking—and promised myself I wouldn't chase fast times. That low-pressure mindset changed everything. Nowadays I lace up my trainers three mornings a week around quarter to six, before the tropical sun climbs high and before rush-hour exhaust fumes build up along the embankments. One reason I love jogging is its sheer minimalism: you don't need a pricey gym membership, a booked court, or four teammates whose schedules align—just a reliable pair of cushioned shoes, a breathable T-shirt, and an open stretch of pavement. Running five or six kilometres beside the river at dawn has become my favourite daily moving meditation. Watching rowing boats glide across pastel-pink water while elderly neighbours stretch beneath the streetlights pulls my mind straight out of looming emails and unfinished to-do lists. Physically, my stamina, resting heart rate, sleep quality, and posture have all improved steadily, yet the mental payoff is even bigger: I return home showered, alert, and calm by seven, and some of my clearest solutions to tricky work problems have popped into my head halfway through kilometre four without forcing anything.",
+        "estSeconds": 111
+      },
+      "roundingOffQs": [
+        "Do you prefer exercising alone or with a running group?",
+        "Have you ever entered an organised fun run or race?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:036",
+      "linkedCueCardId": "s2c:036",
+      "questions": [
+        {
+          "qid": "s3_036_q1",
+          "text": "Why have outdoor running clubs and cycling groups grown so dramatically in Asian cities over the last decade?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_036_q1.mp3",
+          "followUps": [
+            { "text": "Does the social community aspect keep beginners consistent longer than solo workouts?", "audio": "audio/speaking/s3_036_q1_f1.mp3" },
+            { "text": "How have fitness tracking apps influenced people's exercise habits?", "audio": "audio/speaking/s3_036_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_036_q2",
+          "text": "How does exercising outdoors compare with working out inside an air-conditioned gym?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_036_q2.mp3",
+          "followUps": [
+            { "text": "When is an indoor gym actually safer or more practical in hot or polluted cities?", "audio": "audio/speaking/s3_036_q2_f1.mp3" },
+            { "text": "Does natural scenery noticeably improve mood during exercise?", "audio": "audio/speaking/s3_036_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_036_q3",
+          "text": "What urban design changes are most effective in getting ordinary citizens to walk or cycle more in daily life?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_036_q3.mp3",
+          "followUps": [
+            { "text": "Why do protected bike lanes matter far more than painted lines on busy roads?", "audio": "audio/speaking/s3_036_q3_f1.mp3" },
+            { "text": "How can cities encourage active commuting in very hot or rainy climates?", "audio": "audio/speaking/s3_036_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_036_q4",
+          "text": "Do you think modern workplaces should build short active breaks into the standard eight-hour workday?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_036_q4.mp3",
+          "followUps": [
+            { "text": "Would short movement breaks actually raise productivity rather than waste time?", "audio": "audio/speaking/s3_036_q4_f1.mp3" },
+            { "text": "Why do some employees feel guilty stepping away from their desks?", "audio": "audio/speaking/s3_036_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_036_q5",
+          "text": "How might wearable health monitors and smart sports gear change amateur fitness over the next ten years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_036_q5.mp3",
+          "followUps": [
+            { "text": "Could obsessing over pace and heart-rate scores rob exercise of simple enjoyment?", "audio": "audio/speaking/s3_036_q5_f1.mp3" },
+            { "text": "How could health insurers misuse personal fitness tracker data?", "audio": "audio/speaking/s3_036_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:037",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "activity",
+      "prompt": "Describe a hobby or pastime that helps you switch off from work or study.",
+      "bullets": [
+        "what the hobby is and how you got into it",
+        "when and where you usually spend time on it",
+        "what makes it engrossing or calming for you"
+      ],
+      "finalBullet": "and explain why having an offline pastime is important in your life.",
+      "audio": "audio/speaking/s2c_037.mp3",
+      "linkedPart3Id": "s3s:037",
+      "sampleNotes": [
+        "balcony container gardening (herbs & chillies)",
+        "started with one potted mint plant during quiet lockdown",
+        "15 mins every morning & Sunday repotting",
+        "checking soil moisture, pruning dead leaves",
+        "slow natural pace cannot be rushed by clicks",
+        "fresh herbs for cooking + genuine screen break"
+      ],
+      "band8Sample": {
+        "text": "A wonderfully grounding pastime that helps me unplug from work is balcony container gardening—specifically growing culinary herbs, bird's-eye chillies, and small cherry tomatoes in terracotta pots outside my living room. I drifted into it almost by accident three years ago when a friend gifted me a single struggling pot of sweet basil after a housewarming dinner. Determined not to kill it within a week, I started reading about potting mix, drainage holes, and sunlight angles, and before long a single pot quietly multiplied into a lush little shelf of rosemary, mint, spring onions, and tiny lime saplings. I spend roughly ten unhurried minutes out there every morning checking soil moisture with my fingers and pruning yellowing leaves, plus an hour on Sunday mornings mixing fresh compost or repotting anything that's outgrown its container. What makes gardening so deeply absorbing is its gentle, non-negotiable pace. In software engineering, everything runs on instant refreshes and rapid sprints; plants, by contrast, completely ignore your impatience. You water them, give them morning sun, and let tiny shoots unfold on their own timetable. Watching a handful of papery seeds turn into fragrant herbs I can snip straight into a simmering bowl of soup gives me a quiet satisfaction no digital achievement badge ever matches. Having a hands-on offline hobby feels indispensable to my mental balance—when my fingers are literally in damp soil, I can't check notifications or chase urgent messages, and those calm, unhurried morning minutes genuinely anchor the rest of my workday and evening.",
+        "estSeconds": 107
+      },
+      "roundingOffQs": [
+        "Have you ever given home-grown herbs or plants to neighbours or friends?",
+        "Do you think more apartment dwellers are taking up indoor or balcony gardening?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:037",
+      "linkedCueCardId": "s2c:037",
+      "questions": [
+        {
+          "qid": "s3_037_q1",
+          "text": "Why do many modern workers feel guilty when they spend time on a hobby that does not earn money or boost their CV?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_037_q1.mp3",
+          "followUps": [
+            { "text": "Does 'hustle culture' on social media turn relaxing pastimes into side jobs?", "audio": "audio/speaking/s3_037_q1_f1.mp3" },
+            { "text": "What happens to enjoyment the moment a hobby becomes monetised?", "audio": "audio/speaking/s3_037_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_037_q2",
+          "text": "How do the hobbies of young adults today compare with the pastimes of their parents' generation?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_037_q2.mp3",
+          "followUps": [
+            { "text": "Are digital hobbies like gaming as socially fulfilling as physical clubs?", "audio": "audio/speaking/s3_037_q2_f1.mp3" },
+            { "text": "Why are some retro analogue hobbies—like knitting, film photography, and board games—coming back?", "audio": "audio/speaking/s3_037_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_037_q3",
+          "text": "Do you think having a regular creative or physical hobby makes people better at their main job as well?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_037_q3.mp3",
+          "followUps": [
+            { "text": "How does mental recovery affect long-term creativity and preventing burnout?", "audio": "audio/speaking/s3_037_q3_f1.mp3" },
+            { "text": "Can working overtime consistently actually lower a person's weekly output?", "audio": "audio/speaking/s3_037_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_037_q4",
+          "text": "How can cities provide affordable spaces—such as community gardens or maker workshops—for residents living in small flats?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_037_q4.mp3",
+          "followUps": [
+            { "text": "Could underused rooftops or vacant public plots be converted into shared allotments?", "audio": "audio/speaking/s3_037_q4_f1.mp3" },
+            { "text": "How should shared community facilities be maintained fairly?", "audio": "audio/speaking/s3_037_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_037_q5",
+          "text": "If automation eventually reduced the standard working week to four days, how do you think most people would spend the extra day?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_037_q5.mp3",
+          "followUps": [
+            { "text": "Would people invest more in hobbies and family, or simply pick up second jobs?", "audio": "audio/speaking/s3_037_q5_f1.mp3" },
+            { "text": "How might local leisure and hospitality industries respond?", "audio": "audio/speaking/s3_037_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:038",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "activity",
+      "prompt": "Describe a meal you learnt how to cook from scratch.",
+      "bullets": [
+        "what the dish is and why you wanted to learn it",
+        "how you learnt the recipe and what steps were trickiest",
+        "who you cooked it for the first time it succeeded"
+      ],
+      "finalBullet": "and explain why mastering this dish gave you so much pleasure.",
+      "audio": "audio/speaking/s2c_038.mp3",
+      "linkedPart3Id": "s3s:038",
+      "sampleNotes": [
+        "central-style beef & lemongrass noodle soup (bun bo)",
+        "missed homemade version after moving cities",
+        "video-called mother across 3 Sunday attempts",
+        "tricky: clear simmered broth & balanced shrimp paste",
+        "hosted 4 university friends for Sunday dinner",
+        "turned nostalgia into independence & hospitality"
+      ],
+      "band8Sample": {
+        "text": "A dish I was genuinely determined to master from scratch is central Vietnamese lemongrass beef noodle soup—the version my mother used to simmer on cool Sunday mornings back home. After moving to a larger city for work, I tried half a dozen restaurants nearby, yet none of them tasted quite right: either the broth was overly sweet or it lacked that clean, aromatic hit of bruised lemongrass and toasted annatto oil. One autumn weekend I finally video-called my mum, propped my phone against a jar of salt on the counter, and wrote down every step. It actually took three separate Sunday attempts to nail it properly. The trickiest part wasn't slicing beef or boiling noodles, but exercising patience with the broth—parboiling and rinsing the bones thoroughly so the stock stayed crystal clear, keeping the flame at a bare gentle bubble rather than a rolling boil, and balancing just enough fermented shrimp paste so it deepened the savouriness without overpowering the herbs. My first attempt was far too salty and my second lacked warmth, yet on the third try the kitchen filled with that unmistakable fragrance of home. That evening I invited four close friends round to my cramped flat, set out heaps of shredded banana blossom, fresh mint, and lime wedges, and watched everyone scrape their bowls completely clean—two of them even asked for seconds. Mastering that soup gave me immense pleasure because it turned homesickness into hospitality: now, wherever I live, I can recreate a piece of home and share it around a table.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Do you still cook that dish often for guests?",
+        "Do you think everyone should learn basic cooking before leaving home?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:038",
+      "linkedCueCardId": "s2c:038",
+      "questions": [
+        {
+          "qid": "s3_038_q1",
+          "text": "Why are younger city dwellers cooking from scratch less frequently than their parents' generation?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_038_q1.mp3",
+          "followUps": [
+            { "text": "Is cheap food delivery the main reason, or cramped studio kitchens and long commutes?", "audio": "audio/speaking/s3_038_q1_f1.mp3" },
+            { "text": "Does cooking for just one person often feel uneconomical?", "audio": "audio/speaking/s3_038_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_038_q2",
+          "text": "How does home-cooked food generally compare with restaurant meals and ready-made delivery dishes?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_038_q2.mp3",
+          "followUps": [
+            { "text": "What hidden ingredients—like excess sugar, oil, or sodium—tend to appear in commercial meals?", "audio": "audio/speaking/s3_038_q2_f1.mp3" },
+            { "text": "In what ways do good local eateries still play a valuable social role?", "audio": "audio/speaking/s3_038_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_038_q3",
+          "text": "Should practical cooking and nutrition classes be compulsory for both boys and girls at secondary school?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_038_q3.mp3",
+          "followUps": [
+            { "text": "Could school cooking lessons help break down outdated gender roles in the kitchen?", "audio": "audio/speaking/s3_038_q3_f1.mp3" },
+            { "text": "What basic culinary skills are most essential for a teenager about to live alone?", "audio": "audio/speaking/s3_038_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_038_q4",
+          "text": "How can households and supermarkets meaningfully cut down on everyday food waste?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_038_q4.mp3",
+          "followUps": [
+            { "text": "Do confusing 'best before' labels cause people to throw away perfectly safe food?", "audio": "audio/speaking/s3_038_q4_f1.mp3" },
+            { "text": "Should supermarkets be required to donate unsold fresh produce to food banks?", "audio": "audio/speaking/s3_038_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_038_q5",
+          "text": "How might diets and eating habits in your country change over the next twenty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_038_q5.mp3",
+          "followUps": [
+            { "text": "Will plant-based meals gain wider popularity for health or environmental reasons?", "audio": "audio/speaking/s3_038_q5_f1.mp3" },
+            { "text": "Can traditional slow-cooked family recipes survive alongside ultra-fast lifestyles?", "audio": "audio/speaking/s3_038_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:039",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "activity",
+      "prompt": "Describe a daily habit you adopted that noticeably improved your routine.",
+      "bullets": [
+        "what the habit is and when you started practising it",
+        "what prompted you to build this habit",
+        "how you managed to stick with it during busy weeks"
+      ],
+      "finalBullet": "and explain what concrete benefits you have noticed since starting.",
+      "audio": "audio/speaking/s2c_039.mp3",
+      "linkedPart3Id": "s3s:039",
+      "sampleNotes": [
+        "10-minute paper shutdown & planning ritual at 6 pm",
+        "used to lie awake replaying half-finished tasks",
+        "plain dotted notebook + three priorities for next day",
+        "kept pen & notebook right beside laptop",
+        "zero willpower needed once anchored to closing lid",
+        "calmer evenings + instant focus next morning"
+      ],
+      "band8Sample": {
+        "text": "A remarkably small daily habit that has upgraded both my productivity and my peace of mind is a ten-minute paper shutdown ritual I do at the end of every workday, right around six o'clock. I started it about a year ago after noticing an exhausting pattern: even when I closed my laptop on time, half-finished bugs and unanswered messages kept looping around my head during dinner and right into bed. To break that mental carryover, I bought a plain pocket-sized notebook and made a simple rule—before shutting down my computer each evening, I take ten quiet minutes to tick off what actually got done, jot down any loose ends still hanging, and pick the exact three tasks I'll tackle first thing the following morning. The secret to sticking with it even during chaotic deadline weeks was keeping the bar ridiculously low and anchoring it physically: the notebook and pen sit directly on top of my keyboard tray, so I literally have to move them to put the laptop away. If a day runs late, I still scribble three rough bullet points in two minutes rather than skipping entirely. The payoff has been completely out of proportion to the tiny effort involved. Not only do I wake up and dive straight into meaningful work at eight instead of drifting aimlessly through emails for forty minutes, but my evenings feel genuinely off-duty as well. Putting unfinished worries down on paper signals to my brain that they're safely stored until tomorrow, which has made my evenings calmer and my mornings noticeably sharper.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Have you ever struggled to break an unhelpful daily habit?",
+        "Do you think small daily habits matter more than occasional bursts of intense effort?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:039",
+      "linkedCueCardId": "s2c:039",
+      "questions": [
+        {
+          "qid": "s3_039_q1",
+          "text": "Why do most New Year's resolutions and ambitious self-improvement plans fail within the first few weeks?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_039_q1.mp3",
+          "followUps": [
+            { "text": "Do people rely too heavily on temporary motivation instead of changing their environment?", "audio": "audio/speaking/s3_039_q1_f1.mp3" },
+            { "text": "Why does trying to change five habits at once usually backfire?", "audio": "audio/speaking/s3_039_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_039_q2",
+          "text": "How does building a positive new habit compare with trying to break a deeply ingrained bad habit?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_039_q2.mp3",
+          "followUps": [
+            { "text": "Is replacing an unhelpful habit with a healthier cue easier than relying on pure willpower?", "audio": "audio/speaking/s3_039_q2_f1.mp3" },
+            { "text": "How strongly do our friends and household routines shape our daily habits?", "audio": "audio/speaking/s3_039_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_039_q3",
+          "text": "Do you think habit-tracking apps and gamified streaks genuinely help learners, or can they become counterproductive?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_039_q3.mp3",
+          "followUps": [
+            { "text": "What happens when someone accidentally breaks a hundred-day streak?", "audio": "audio/speaking/s3_039_q3_f1.mp3" },
+            { "text": "Can chasing app points distract people from actual deep learning?", "audio": "audio/speaking/s3_039_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_039_q4",
+          "text": "What can employers do to help staff maintain healthier boundaries between working hours and personal rest?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_039_q4.mp3",
+          "followUps": [
+            { "text": "Should countries introduce a legal 'right to disconnect' outside office hours?", "audio": "audio/speaking/s3_039_q4_f1.mp3" },
+            { "text": "How can global teams across time zones respect rest without slowing down collaboration?", "audio": "audio/speaking/s3_039_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_039_q5",
+          "text": "Do you think maintaining a strict daily routine limits creativity, or actually creates the freedom needed for creative work?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_039_q5.mp3",
+          "followUps": [
+            { "text": "Why do many famous writers and scientists keep surprisingly repetitive daily schedules?", "audio": "audio/speaking/s3_039_q5_f1.mp3" },
+            { "text": "When is it healthy to deliberately break out of your routine?", "audio": "audio/speaking/s3_039_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:040",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "activity",
+      "prompt": "Describe a team project or group activity you worked on with other people.",
+      "bullets": [
+        "what the project was and who was on your team",
+        "what specific contribution you made",
+        "what challenges or disagreements came up along the way"
+      ],
+      "finalBullet": "and explain what the project taught you about working effectively with others.",
+      "audio": "audio/speaking/s2c_040.mp3",
+      "linkedPart3Id": "s3s:040",
+      "sampleNotes": [
+        "48-hour civic hackathon - accessible bus map prototype",
+        "4 teammates: designer, backend dev, student researcher, me",
+        "my role: frontend map UI & voice-friendly route search",
+        "mid-weekend clash over cramming too many features",
+        "tested prototype with 2 local commuters -> simplified UI",
+        "learnt listening + cutting scope beats individual ego"
+      ],
+      "band8Sample": {
+        "text": "A team project that really tested and sharpened my collaboration skills was a forty-eight-hour civic hackathon I entered last year alongside three teammates I'd barely met beforehand: a graphic designer, a backend engineer, and an urban-studies university student. Our goal was to build a working web prototype that helped elderly and first-time bus riders navigate confusing city transfer routes using clear large-print landmarks instead of obscure street codes. My specific role was building the interactive route screen and ensuring the interface stayed snappy on older budget smartphones. Everything ran smoothly on Saturday morning, yet by midnight tension flared sharply. Our backend engineer wanted to bolt on live crowd-reporting, ticket booking, and gamified points all at once, while our designer argued fiercely that cramming extra menus onto the screen would completely defeat our accessibility mission. Instead of letting the argument drag on for two exhausted hours, our student researcher suggested a brilliant tie-breaker: at seven the next morning, we walked downstairs to the nearest bus stop and showed two rough sketches to three actual waiting commuters. Within ten minutes, watching an older woman squint at the cluttered screen settled the debate without a single bruised ego. We stripped away every unnecessary bell and whistle, polished the core transfer guide, and ended up taking second place out of twenty-five teams. That intense weekend taught me that great teamwork isn't about avoiding friction—it's about anchoring disagreements in real-world evidence rather than stubborn pride, and genuinely respecting what each discipline brings to the table.",
+        "estSeconds": 113
+      },
+      "roundingOffQs": [
+        "Did you stay in touch with your teammates after that event?",
+        "What do you think makes someone a difficult teammate?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:040",
+      "linkedCueCardId": "s2c:040",
+      "questions": [
+        {
+          "qid": "s3_040_q1",
+          "text": "Why do group assignments at school and university so often frustrate hardworking students?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_040_q1.mp3",
+          "followUps": [
+            { "text": "How can teachers grade group projects fairly when effort is uneven?", "audio": "audio/speaking/s3_040_q1_f1.mp3" },
+            { "text": "Does learning to handle unreliable teammates still prepare students for real workplaces?", "audio": "audio/speaking/s3_040_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_040_q2",
+          "text": "How does remote online teamwork compare with collaborating in the same physical office?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_040_q2.mp3",
+          "followUps": [
+            { "text": "Which stages of a project benefit most from being in the same room?", "audio": "audio/speaking/s3_040_q2_f1.mp3" },
+            { "text": "Does remote work make it harder to onboard new junior staff?", "audio": "audio/speaking/s3_040_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_040_q3",
+          "text": "What qualities distinguish an effective team leader from an overly controlling manager?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_040_q3.mp3",
+          "followUps": [
+            { "text": "Should a leader always be the most technically skilled person on the team?", "audio": "audio/speaking/s3_040_q3_f1.mp3" },
+            { "text": "How should a leader resolve a clash between two strong-minded team members?", "audio": "audio/speaking/s3_040_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_040_q4",
+          "text": "Do you think diverse teams with varied backgrounds consistently outperform more homogeneous groups?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_040_q4.mp3",
+          "followUps": [
+            { "text": "Why can diverse groups take longer to reach early agreement?", "audio": "audio/speaking/s3_040_q4_f1.mp3" },
+            { "text": "What kind of team culture is needed so quieter voices are actually heard?", "audio": "audio/speaking/s3_040_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_040_q5",
+          "text": "How might hybrid work models reshape team structures and office spaces over the next decade?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_040_q5.mp3",
+          "followUps": [
+            { "text": "Will offices become primarily collaboration hubs rather than rows of silent desks?", "audio": "audio/speaking/s3_040_q5_f1.mp3" },
+            { "text": "Could fully remote staff face unfair barriers to promotion?", "audio": "audio/speaking/s3_040_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  }
+]

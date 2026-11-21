@@ -1,0 +1,782 @@
+[
+  {
+    "id": "s1t:public_parks",
+    "topic": "Public Parks and Gardens",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_public_parks_q1",
+        "text": "Do you often visit public parks or gardens in your city?",
+        "audio": "audio/speaking/s1_public_parks_q1.mp3",
+        "ideaHintsEn": ["morning jogs", "green relief from concrete", "walking after dinner"],
+        "areSample": {
+          "answer": "Fairly regularly—I probably head to the riverside park near my flat three or four times a week.",
+          "reason": "Living in a dense city, spending even twenty minutes under mature trees noticeably lowers my stress levels.",
+          "example": "On warm evenings I often grab a bench by the lotus pond just to watch families walking their dogs and kids learning to cycle."
+        }
+      },
+      {
+        "qid": "s1_public_parks_q2",
+        "text": "What do people in your neighbourhood usually do when they go to the park?",
+        "audio": "audio/speaking/s1_public_parks_q2.mp3",
+        "ideaHintsEn": ["dawn exercise groups", "elderly playing chess", "weekend picnics"],
+        "areSample": {
+          "answer": "It really changes with the time of day, from energetic fitness groups at dawn to relaxed socialising at dusk.",
+          "reason": "Because indoor gyms and large back gardens are rare in urban areas, public parks act as everyone's shared living room.",
+          "example": "If you visit at six in the morning, you'll see retirees practising tai chi right beside university students running intervals."
+        }
+      },
+      {
+        "qid": "s1_public_parks_q3",
+        "text": "Did you spend much time in parks when you were growing up?",
+        "audio": "audio/speaking/s1_public_parks_q3.mp3",
+        "ideaHintsEn": ["after-school play", "riding bicycles", "community playground"],
+        "areSample": {
+          "answer": "Yes, practically every weekend afternoon when I was in primary school.",
+          "reason": "My parents worked long hours during the week, so taking my brother and me to the local park was our favourite free outing.",
+          "example": "I still vividly remember scraping my knee on the gravel path the day my father finally took the stabilisers off my bicycle."
+        }
+      },
+      {
+        "qid": "s1_public_parks_q4",
+        "text": "Do you think there are enough green spaces where you currently live?",
+        "audio": "audio/speaking/s1_public_parks_q4.mp3",
+        "ideaHintsEn": ["uneven distribution", "pocket parks needed", "shade and cooling"],
+        "areSample": {
+          "answer": "Not quite enough, especially in the rapidly expanding outer districts where new tower blocks are going up.",
+          "reason": "Commercial development still tends to win out over parkland, leaving many residents a long bus ride away from decent greenery.",
+          "example": "Even turning small empty corner plots into shaded pocket gardens with benches would make neighbourhood walks far more inviting."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:memory",
+    "topic": "Memory",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_memory_q1",
+        "text": "Would you say you have a good memory in general?",
+        "audio": "audio/speaking/s1_memory_q1.mp3",
+        "ideaHintsEn": ["selective memory", "strong on concepts/faces", "weak on names/dates"],
+        "areSample": {
+          "answer": "I'd say my memory is quite selective—I'm great with faces, stories, and big concepts, yet hopeless with names and exact dates.",
+          "reason": "My brain seems to store information far better when it's attached to a visual cue or a meaningful context.",
+          "example": "I might bump into an old classmate and recall the exact joke he told ten years ago, while completely blanking on his surname."
+        }
+      },
+      {
+        "qid": "s1_memory_q2",
+        "text": "What techniques do you use to remember important tasks or appointments?",
+        "audio": "audio/speaking/s1_memory_q2.mp3",
+        "ideaHintsEn": ["digital calendar alerts", "handwritten daily top-three list", "spaced repetition"],
+        "areSample": {
+          "answer": "I don't trust my unaided memory for logistics at all, so I put every appointment straight into my calendar with a reminder.",
+          "reason": "Offloading routine deadlines onto a reliable system frees up mental bandwidth for creative thinking.",
+          "example": "Each morning I also jot down my top three priorities on a small sticky note beside my monitor so nothing slips through the cracks."
+        }
+      },
+      {
+        "qid": "s1_memory_q3",
+        "text": "Are there certain things that you find unusually difficult to remember?",
+        "audio": "audio/speaking/s1_memory_q3.mp3",
+        "ideaHintsEn": ["passwords and PINs", "birthdays", "errands unless written down"],
+        "areSample": {
+          "answer": "Definitely birthdays and small household errands like buying batteries or posting a parcel.",
+          "reason": "They sit outside my fixed weekly rhythm, so if I don't set an alert the moment I think of them, they vanish completely.",
+          "example": "Twice this year I've walked straight past a pharmacy on my way home only to realise at my front door that I forgot to pick up plasters."
+        }
+      },
+      {
+        "qid": "s1_memory_q4",
+        "text": "Do you think relying on smartphones has weakened people's memories?",
+        "audio": "audio/speaking/s1_memory_q4.mp3",
+        "ideaHintsEn": ["phone numbers and routes", "digital offloading", "shifting rather than destroying memory"],
+        "areSample": {
+          "answer": "In narrow areas like memorising phone numbers or street routes, certainly yes, though I'm not convinced our overall memory is worse.",
+          "reason": "Humans have always outsourced recall to notebooks and calendars; smartphones simply accelerate that habit.",
+          "example": "I couldn't recite my own sister's mobile number off the top of my head, yet I probably retain far more technical knowledge than I did a decade ago."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:concentration",
+    "topic": "Concentration and Focus",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_concentration_q1",
+        "text": "Is it easy for you to stay focused on one task for a long time?",
+        "audio": "audio/speaking/s1_concentration_q1.mp3",
+        "ideaHintsEn": ["depends on interest and environment", "45–50 minute blocks", "phone out of sight"],
+        "areSample": {
+          "answer": "It depends hugely on whether I've cleared distractions beforehand, though I can usually stay absorbed for about fifty minutes at a stretch.",
+          "reason": "Even a silent notification lighting up on the desk pulls my eyes away and shatters momentum.",
+          "example": "When I'm revising English essays, I put my phone in another room and work in focused fifty-minute bursts with a short walk in between."
+        }
+      },
+      {
+        "qid": "s1_concentration_q2",
+        "text": "What tends to distract you the most when you are trying to work or study?",
+        "audio": "audio/speaking/s1_concentration_q2.mp3",
+        "ideaHintsEn": ["chat notifications", "nearby conversations", "mental clutter"],
+        "areSample": {
+          "answer": "Overhearing snippets of nearby conversation distracts me far more than steady traffic noise or rain.",
+          "reason": "Human speech automatically hijacks the language centres of the brain, so I find myself eavesdropping even when I don't mean to.",
+          "example": "In open-plan offices, wearing noise-cancelling headphones with gentle brown noise is the only way I can draft anything coherent."
+        }
+      },
+      {
+        "qid": "s1_concentration_q3",
+        "text": "When during the day is it hardest for you to concentrate?",
+        "audio": "audio/speaking/s1_concentration_q3.mp3",
+        "ideaHintsEn": ["post-lunch slump around 2–3 pm", "light admin tasks", "brief walk or tea"],
+        "areSample": {
+          "answer": "Almost always between two and three in the afternoon, right after lunch.",
+          "reason": "My alertness dips naturally at that hour, so attempting dense analytical reading usually means re-reading the same paragraph three times.",
+          "example": "Instead of fighting it, I schedule lighter tasks like clearing emails or organising notes for that slot and take a brisk ten-minute walk."
+        }
+      },
+      {
+        "qid": "s1_concentration_q4",
+        "text": "What helps you regain your focus when your mind starts to wander?",
+        "audio": "audio/speaking/s1_concentration_q4.mp3",
+        "ideaHintsEn": ["stepping away from the screen", "cold water or stretching", "breaking task into tiny steps"],
+        "areSample": {
+          "answer": "Stepping physically away from my desk for five minutes works far better than trying to force myself to keep staring at the screen.",
+          "reason": "A quick change of posture and scenery resets my attention, and shrinking the next step removes the urge to procrastinate.",
+          "example": "I'll usually splash cold water on my face, make a mug of green tea, and tell myself to write just one rough paragraph when I sit back down."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:shopping",
+    "topic": "Shopping",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_shopping_q1",
+        "text": "Do you enjoy going shopping in your free time?",
+        "audio": "audio/speaking/s1_shopping_q1.mp3",
+        "ideaHintsEn": ["purposeful buyer", "enjoys bookshops/markets", "dislikes crowded malls"],
+        "areSample": {
+          "answer": "I'm not a big fan of wandering round crowded shopping centres, though I do love browsing independent bookshops and fresh food markets.",
+          "reason": "For clothes or household goods, I prefer knowing exactly what I need so the trip feels brisk rather than exhausting.",
+          "example": "On Sunday mornings, however, I'll happily spend an hour chatting with vendors at our neighbourhood produce market."
+        }
+      },
+      {
+        "qid": "s1_shopping_q2",
+        "text": "Do you prefer shopping online or in physical shops?",
+        "audio": "audio/speaking/s1_shopping_q2.mp3",
+        "ideaHintsEn": ["online for essentials and comparison", "in-person for shoes/clothes", "saving time"],
+        "areSample": {
+          "answer": "I split my habits pretty evenly: online for everyday essentials and electronics, and in-store for clothing or footwear.",
+          "reason": "Comparing specifications and reading reviews is effortless online, yet nothing replaces actually feeling fabric quality or checking a shoe's fit.",
+          "example": "I learnt that the hard way last year after ordering a jacket online that looked sleek in photos but turned out to be stiff and oversized."
+        }
+      },
+      {
+        "qid": "s1_shopping_q3",
+        "text": "Are you careful about comparing prices before you buy something?",
+        "audio": "audio/speaking/s1_shopping_q3.mp3",
+        "ideaHintsEn": ["value over cheapest tag", "researching big purchases", "waiting 48 hours"],
+        "areSample": {
+          "answer": "For major purchases, definitely—I'll usually compare three or four retailers and wait a couple of days before checking out.",
+          "reason": "That brief cooling-off period stops impulse buys and helps me judge durability rather than chasing the lowest sticker price.",
+          "example": "When I bought a new desk chair recently, spending an extra twenty percent on a model with proper warranty saved me replacing a flimsy one a year later."
+        }
+      },
+      {
+        "qid": "s1_shopping_q4",
+        "text": "Have small local shops changed much in your area in recent years?",
+        "audio": "audio/speaking/s1_shopping_q4.mp3",
+        "ideaHintsEn": ["convenience chains replacing corner stores", "QR cashless payments", "niche specialty boutiques"],
+        "areSample": {
+          "answer": "Yes, many traditional family-run corner shops have either modernised with QR payments or given way to 24-hour convenience chains.",
+          "reason": "Younger shoppers expect air conditioning, clear price tags, and instant cashless checkout even for tiny errands.",
+          "example": "Even the tiny stationery stall near my old school now accepts bank transfers and takes orders through a messaging app."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:languages",
+    "topic": "Languages",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_languages_q1",
+        "text": "Which languages can you speak, and how did you learn them?",
+        "audio": "audio/speaking/s1_languages_q1.mp3",
+        "ideaHintsEn": ["native Vietnamese + English", "school basics vs active immersion", "podcasts and reading"],
+        "areSample": {
+          "answer": "I speak Vietnamese natively and English fluently, with a smattering of basic Japanese from an elective course at university.",
+          "reason": "Although school gave me a foundation in English grammar, real fluency only came once I started reading articles and listening to podcasts daily.",
+          "example": "Switching my phone interface and work documentation completely into English forced me to think in the language rather than translating word for word."
+        }
+      },
+      {
+        "qid": "s1_languages_q2",
+        "text": "What do you find most challenging about learning a foreign language?",
+        "audio": "audio/speaking/s1_languages_q2.mp3",
+        "ideaHintsEn": ["natural collocations and nuance", "connected speech at native speed", "consistent speaking practice"],
+        "areSample": {
+          "answer": "Moving past textbook correctness to sound genuinely natural—especially mastering collocations and subtle register.",
+          "reason": "You can memorise grammar rules fairly quickly, yet knowing which adjective pairs naturally with a noun only comes through massive exposure.",
+          "example": "In English, for instance, it took me ages to stop translating Vietnamese phrases literally and start saying 'heavy rain' instead of 'big rain'."
+        }
+      },
+      {
+        "qid": "s1_languages_q3",
+        "text": "Would you like to learn another language in the future?",
+        "audio": "audio/speaking/s1_languages_q3.mp3",
+        "ideaHintsEn": ["Spanish or French", "travel and cinema", "once English reaches target"],
+        "areSample": {
+          "answer": "Once I've pushed my English to a really polished level, I'd love to pick up Spanish.",
+          "reason": "Its spelling is wonderfully phonetic, and speaking it would open up both travel across Latin America and a huge wealth of cinema and literature.",
+          "example": "Even learning enough to chat comfortably with café owners or read street signs transforms how connected you feel on holiday."
+        }
+      },
+      {
+        "qid": "s1_languages_q4",
+        "text": "Do you think it is better to learn a language in a classroom or through daily practice on your own?",
+        "audio": "audio/speaking/s1_languages_q4.mp3",
+        "ideaHintsEn": ["classroom for early structure", "self-study for volume and habit", "combination works best"],
+        "areSample": {
+          "answer": "I'd say a classroom is invaluable at the beginner stage, while independent daily habits carry you from intermediate to advanced.",
+          "reason": "A good teacher catches pronunciation habits early, whereas no two-hour weekly class can match thirty minutes of focused immersion every day.",
+          "example": "Using spaced-repetition flashcards and shadowing podcasts on my own has boosted my speaking fluency far faster than lectures ever did."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:science",
+    "topic": "Science",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_science_q1",
+        "text": "Did you enjoy science lessons when you were at school?",
+        "audio": "audio/speaking/s1_science_q1.mp3",
+        "ideaHintsEn": ["loved experiments and physics/biology", "less fond of rote formulas", "memorable lab class"],
+        "areSample": {
+          "answer": "I enjoyed them enormously whenever we got into the lab, though memorising long lists of chemical equations felt a bit dry.",
+          "reason": "Seeing a principle play out in front of your eyes makes abstract theory click immediately.",
+          "example": "I still remember examining onion cells under a microscope in Year Eight—it made biology feel suddenly tangible rather than just diagrams on paper."
+        }
+      },
+      {
+        "qid": "s1_science_q2",
+        "text": "Which branch of science interests you most nowadays?",
+        "audio": "audio/speaking/s1_science_q2.mp3",
+        "ideaHintsEn": ["cognitive psychology or climate science", "everyday relevance", "popular science media"],
+        "areSample": {
+          "answer": "Lately I've become fascinated by cognitive science—specifically how memory, attention, and sleep interact.",
+          "reason": "Unlike distant astrophysics, insights from brain research can be applied directly to how I study, rest, and manage my focus.",
+          "example": "Reading about how spacing out review sessions strengthens recall completely reshaped the way I prepare for exams."
+        }
+      },
+      {
+        "qid": "s1_science_q3",
+        "text": "How do you usually keep up with scientific discoveries or news?",
+        "audio": "audio/speaking/s1_science_q3.mp3",
+        "ideaHintsEn": ["science podcasts", "long-form magazine articles", "avoiding sensational headlines"],
+        "areSample": {
+          "answer": "Mostly through well-researched podcasts and accessible popular-science magazines rather than short social-media posts.",
+          "reason": "Brief headlines often exaggerate preliminary findings, whereas longer pieces explain the method and limitations properly.",
+          "example": "Last week I listened to a brilliant forty-minute episode explaining how solid-state batteries could reshape electric transport over the next decade."
+        }
+      },
+      {
+        "qid": "s1_science_q4",
+        "text": "Do you think science museums are worth visiting for adults as well as children?",
+        "audio": "audio/speaking/s1_science_q4.mp3",
+        "ideaHintsEn": ["hands-on exhibits", "sparking curiosity at any age", "interactive planetarium or engineering halls"],
+        "areSample": {
+          "answer": "Without question—well-designed science museums spark just as much wonder in adults as they do in kids.",
+          "reason": "Interactive displays let you test optical illusions or engineering mechanisms physically, which is far more engaging than reading static plaques.",
+          "example": "When I visited a science centre abroad a couple of years ago, my friends and I spent half an hour completely absorbed by a simple wind-tunnel exhibit."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:art",
+    "topic": "Art and Galleries",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_art_q1",
+        "text": "Do you enjoy visiting art galleries or exhibitions?",
+        "audio": "audio/speaking/s1_art_q1.mp3",
+        "ideaHintsEn": ["occasional calm outings", "photography and contemporary design", "slowing down"],
+        "areSample": {
+          "answer": "Yes, I really enjoy popping into a small gallery every couple of months, especially for photography or contemporary design shows.",
+          "reason": "Walking through a quiet exhibition space forces you to slow down and notice textures, light, and composition without any rush.",
+          "example": "Last month I visited a local lacquer-painting exhibition and was amazed by how many months of layering go into a single panel."
+        }
+      },
+      {
+        "qid": "s1_art_q2",
+        "text": "Did you enjoy drawing or painting when you were a child?",
+        "audio": "audio/speaking/s1_art_q2.mp3",
+        "ideaHintsEn": ["enthusiastic doodler", "watercolours and comic strips", "less time later"],
+        "areSample": {
+          "answer": "I loved it—I used to fill the back pages of all my school exercise books with pencil sketches and miniature comic strips.",
+          "reason": "As a kid you don't worry about whether something looks polished; you just enjoy inventing little worlds on paper.",
+          "example": "I even won a small ribbon in primary school for a watercolour poster of our local fishing harbour."
+        }
+      },
+      {
+        "qid": "s1_art_q3",
+        "text": "Do you have any artwork or posters displayed in your home?",
+        "audio": "audio/speaking/s1_art_q3.mp3",
+        "ideaHintsEn": ["framed botanical prints", "travel postcard collage", "personal warmth"],
+        "areSample": {
+          "answer": "Yes, I have two framed botanical prints above my desk and a small watercolour landscape I picked up at a weekend craft fair.",
+          "reason": "Bare white walls make a rented flat feel rather sterile, whereas a couple of thoughtfully chosen prints immediately give a room personality.",
+          "example": "Whenever I look up from my monitor, the muted green tones of those prints help my eyes relax."
+        }
+      },
+      {
+        "qid": "s1_art_q4",
+        "text": "Do you think art lessons should be compulsory for all school students?",
+        "audio": "audio/speaking/s1_art_q4.mp3",
+        "ideaHintsEn": ["essential in early years", "visual literacy and creativity", "elective in upper secondary"],
+        "areSample": {
+          "answer": "I think they should definitely be compulsory through primary and lower secondary school, then optional in the final exam years.",
+          "reason": "Art nurtures observation, patience, and visual thinking—skills that serve future engineers and architects just as much as painters.",
+          "example": "Even students who never pursue fine arts benefit from having one weekly period where there isn't just a single right answer."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:history",
+    "topic": "History",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_history_q1",
+        "text": "Are you interested in learning about history?",
+        "audio": "audio/speaking/s1_history_q1.mp3",
+        "ideaHintsEn": ["grew fond of it as an adult", "social and everyday history", "documentaries and podcasts"],
+        "areSample": {
+          "answer": "Much more so now than when I was in school, especially social history about how ordinary people lived day to day.",
+          "reason": "School exams often reduced history to memorising dates of treaties, whereas reading personal letters and trade histories brings an era alive.",
+          "example": "I recently watched a fascinating documentary on ancient maritime spice routes that completely changed how I look at coastal towns in Asia."
+        }
+      },
+      {
+        "qid": "s1_history_q2",
+        "text": "Do you like visiting historical sites or heritage buildings?",
+        "audio": "audio/speaking/s1_history_q2.mp3",
+        "ideaHintsEn": ["tangible connection to the past", "ancient citadels and old quarters", "guided tours add context"],
+        "areSample": {
+          "answer": "Very much—standing inside a centuries-old courtyard gives you a sense of scale that no textbook photograph can replicate.",
+          "reason": "Seeing worn stone steps and traditional carpentry makes the past feel genuinely human rather than abstract.",
+          "example": "When I visited the imperial citadel in Hue last year, hiring a local guide turned what could have been simple ruins into vivid stories."
+        }
+      },
+      {
+        "qid": "s1_history_q3",
+        "text": "How did you mainly learn about history when you were younger?",
+        "audio": "audio/speaking/s1_history_q3.mp3",
+        "ideaHintsEn": ["school textbooks", "grandparents' stories", "historical dramas"],
+        "areSample": {
+          "answer": "Formally through school textbooks, of course, yet the stories that actually stuck with me came from my grandfather.",
+          "reason": "Hearing first-hand anecdotes about rationing, old bicycles, and neighbourhood life carried an emotional weight no worksheet could match.",
+          "example": "I still remember him describing how the whole street used to gather round a single black-and-white television set in the evening."
+        }
+      },
+      {
+        "qid": "s1_history_q4",
+        "text": "Do you think historical films are a good way for people to learn about the past?",
+        "audio": "audio/speaking/s1_history_q4.mp3",
+        "ideaHintsEn": ["great spark for curiosity", "dramatic licence caveat", "follow-up reading"],
+        "areSample": {
+          "answer": "They're a brilliant gateway for sparking curiosity, provided viewers remember that filmmakers compress timelines for dramatic effect.",
+          "reason": "Strong costumes, dialect, and atmosphere draw in audiences who might never pick up a five-hundred-page academic biography.",
+          "example": "Whenever a well-crafted period drama catches my interest, I usually end up reading a couple of proper historical essays afterwards to separate fact from fiction."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:sleep",
+    "topic": "Sleep and Rest",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_sleep_q1",
+        "text": "How many hours of sleep do you usually get on a typical night?",
+        "audio": "audio/speaking/s1_sleep_q1.mp3",
+        "ideaHintsEn": ["around seven to seven and a half hours", "noticeable dip below six", "consistent bedtime"],
+        "areSample": {
+          "answer": "I aim for roughly seven and a half hours most nights, going to bed around eleven and waking up at half past six.",
+          "reason": "I've learnt the hard way that cutting sleep down to five or six hours might feel productive on the night, yet wrecks my judgement the next day.",
+          "example": "Whenever I stick to a steady bedtime all week, I barely even need an alarm clock by Friday morning."
+        }
+      },
+      {
+        "qid": "s1_sleep_q2",
+        "text": "Do you ever take a nap during the daytime?",
+        "audio": "audio/speaking/s1_sleep_q2.mp3",
+        "ideaHintsEn": ["short 20-minute power nap", "post-lunch habit", "avoiding grogginess"],
+        "areSample": {
+          "answer": "Yes, a brief twenty-minute power nap after lunch is fairly common here, and I swear by it when I'm working from home.",
+          "reason": "Keeping it under twenty-five minutes refreshes my memory without letting me drop into deep sleep, which would leave me groggy.",
+          "example": "I just set a quiet timer on my desk, close the blinds for fifteen minutes, and wake up feeling ready for the afternoon."
+        }
+      },
+      {
+        "qid": "s1_sleep_q3",
+        "text": "What helps you fall asleep easily at night?",
+        "audio": "audio/speaking/s1_sleep_q3.mp3",
+        "ideaHintsEn": ["reading paper book", "cool dark room", "cutting caffeine after 2 pm"],
+        "areSample": {
+          "answer": "Keeping the bedroom cool, avoiding caffeine after two in the afternoon, and reading a few pages of fiction before lights out.",
+          "reason": "That predictable wind-down sequence acts as a signal to my nervous system that the workday is genuinely over.",
+          "example": "On nights when my mind is still racing about a deadline, jotting tomorrow's to-do list on a notepad next to my bed clears my head almost immediately."
+        }
+      },
+      {
+        "qid": "s1_sleep_q4",
+        "text": "Do you think people today get less sleep than people did in the past?",
+        "audio": "audio/speaking/s1_sleep_q4.mp3",
+        "ideaHintsEn": ["artificial light and screens", "late-night entertainment", "long commutes"],
+        "areSample": {
+          "answer": "Almost certainly yes, largely because glowing screens and round-the-clock entertainment have pushed bedtimes later and later.",
+          "reason": "Decades ago, darkness and limited broadcast hours naturally nudged households to turn in early, whereas now there's always one more episode or message.",
+          "example": "Many of my colleagues openly joke about 'revenge bedtime procrastination'—staying up past midnight simply to reclaim quiet personal time."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:time_management",
+    "topic": "Time Management",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_time_management_q1",
+        "text": "Are you generally good at managing your time?",
+        "audio": "audio/speaking/s1_time_management_q1.mp3",
+        "ideaHintsEn": ["fairly organised", "time-blocking method", "occasional underestimation"],
+        "areSample": {
+          "answer": "I'm reasonably disciplined nowadays, though it took a few stressful university deadlines to teach me proper planning.",
+          "reason": "Breaking large projects into concrete half-hour blocks stops me from staring at a vague goal and putting it off.",
+          "example": "Every Sunday evening I spend ten minutes mapping out my main work blocks and study sessions for the week ahead."
+        }
+      },
+      {
+        "qid": "s1_time_management_q2",
+        "text": "How do you feel when you are kept waiting by someone who is late?",
+        "audio": "audio/speaking/s1_time_management_q2.mp3",
+        "ideaHintsEn": ["understanding if they message ahead", "frustrated by silence", "using wait time productively"],
+        "areSample": {
+          "answer": "If they send a quick heads-up, I don't mind waiting ten or fifteen minutes at all, though being left guessing does irritate me.",
+          "reason": "Traffic and unforeseen delays happen to everyone; it's the lack of courtesy rather than the delay itself that stings.",
+          "example": "Usually I just pull out my e-reader or review vocabulary flashcards so the spare quarter of an hour doesn't feel wasted."
+        }
+      },
+      {
+        "qid": "s1_time_management_q3",
+        "text": "What usually makes it hardest for you to stick to a schedule?",
+        "audio": "audio/speaking/s1_time_management_q3.mp3",
+        "ideaHintsEn": ["underestimating task duration", "urgent ad-hoc requests", "lack of buffer time"],
+        "areSample": {
+          "answer": "Underestimating how long fiddly tasks actually take, especially when I forget to leave buffer time between commitments.",
+          "reason": "When a calendar is packed back to back, a single ten-minute overrun creates a domino effect across the whole afternoon.",
+          "example": "I've recently started adding a twenty-percent cushion to my estimates, which has made my days far calmer."
+        }
+      },
+      {
+        "qid": "s1_time_management_q4",
+        "text": "Do you prefer planning every detail of your day or keeping things flexible?",
+        "audio": "audio/speaking/s1_time_management_q4.mp3",
+        "ideaHintsEn": ["structured mornings, flexible evenings", "rigid schedules feel suffocating", "priorities over minute-by-minute"],
+        "areSample": {
+          "answer": "I prefer structuring my core priorities while leaving room to shift things around if unexpected opportunities pop up.",
+          "reason": "Minute-by-minute timetables feel suffocating and collapse the instant real life interferes.",
+          "example": "As long as I finish my two non-negotiable tasks before lunch, I'm happy to keep the late afternoon fairly fluid."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:gifts",
+    "topic": "Gifts and Giving",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_gifts_q1",
+        "text": "Do you enjoy choosing gifts for other people?",
+        "audio": "audio/speaking/s1_gifts_q1.mp3",
+        "ideaHintsEn": ["enjoys thoughtful matches", "jotting hints year-round", "can feel tricky for picky people"],
+        "areSample": {
+          "answer": "I really do, provided I know the person well enough to pick something genuinely thoughtful rather than a generic voucher.",
+          "reason": "Seeing someone light up because you remembered a passing remark they made months earlier is wonderfully rewarding.",
+          "example": "I keep a private note on my phone where I jot down books or gadgets friends mention wanting throughout the year."
+        }
+      },
+      {
+        "qid": "s1_gifts_q2",
+        "text": "What kind of gifts do you usually prefer to receive?",
+        "audio": "audio/speaking/s1_gifts_q2.mp3",
+        "ideaHintsEn": ["practical items or consumables", "books, speciality coffee, or experiences", "avoiding clutter"],
+        "areSample": {
+          "answer": "I'm happiest with practical things I'll actually use or consumables like good coffee beans, tea, or a hand-picked book.",
+          "reason": "Living in a compact flat, I try to avoid decorative clutter, whereas something consumable or experiential brings joy without taking up shelf space.",
+          "example": "Last birthday a friend gave me a bag of single-origin roast from Da Lat and a handwritten card, and I enjoyed every single cup."
+        }
+      },
+      {
+        "qid": "s1_gifts_q3",
+        "text": "On what occasions do people in your country normally exchange gifts?",
+        "audio": "audio/speaking/s1_gifts_q3.mp3",
+        "ideaHintsEn": ["Lunar New Year hampers and lucky money", "weddings and housewarmings", "birthdays and Teachers' Day"],
+        "areSample": {
+          "answer": "Lunar New Year is by far the biggest occasion, alongside weddings, housewarmings, and Teachers' Day in November.",
+          "reason": "Gift-giving here is strongly tied to expressing gratitude and strengthening family or community bonds rather than just celebrating birthdays.",
+          "example": "During Tet, it's customary to bring gift baskets of tea, dried fruit, and traditional cakes when visiting older relatives."
+        }
+      },
+      {
+        "qid": "s1_gifts_q4",
+        "text": "Do you think an expensive gift is always better than a handmade or modest one?",
+        "audio": "audio/speaking/s1_gifts_q4.mp3",
+        "ideaHintsEn": ["thoughtfulness beats price tag", "handmade effort shows care", "avoiding awkwardness"],
+        "areSample": {
+          "answer": "Not at all—in fact, overly lavish gifts can sometimes make the recipient feel uncomfortable or indebted.",
+          "reason": "What makes a present memorable is the time and personal observation behind it, not the receipt.",
+          "example": "One of my most treasured possessions is simply a ceramic mug my sister painted at a pottery workshop for my graduation."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:maps",
+    "topic": "Maps and Navigation",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_maps_q1",
+        "text": "Do you use maps very often in your daily life?",
+        "audio": "audio/speaking/s1_maps_q1.mp3",
+        "ideaHintsEn": ["checking traffic bottlenecks", "finding tucked-away cafés", "exploring new districts"],
+        "areSample": {
+          "answer": "Almost every couple of days—not only to find unfamiliar addresses, but also to check live traffic bottlenecks before setting off.",
+          "reason": "In a dense city with narrow alleys, even a small road closure can double your journey time if you don't glance at a route map first.",
+          "example": "Yesterday evening checking my map app spotted a flooded junction early and saved me at least twenty minutes on the way to dinner."
+        }
+      },
+      {
+        "qid": "s1_maps_q2",
+        "text": "Do you prefer digital navigation apps or traditional paper maps?",
+        "audio": "audio/speaking/s1_maps_q2.mp3",
+        "ideaHintsEn": ["digital for daily practicality", "paper for big-picture overview", "no battery worries on hikes"],
+        "areSample": {
+          "answer": "Digital maps win hands down for everyday navigation, though I still have a soft spot for paper maps when planning a scenic trip.",
+          "reason": "Unfolding a large printed map lets you grasp the entire geography of a region at once, whereas a small phone screen encourages tunnel vision.",
+          "example": "On a national park hike last year, I carried a printed trail map as a backup because mobile signal vanished completely in the valley."
+        }
+      },
+      {
+        "qid": "s1_maps_q3",
+        "text": "Would you say you have a good sense of direction?",
+        "audio": "audio/speaking/s1_maps_q3.mp3",
+        "ideaHintsEn": ["reasonably good outdoors", "landmark-based memory", "occasional confusion underground"],
+        "areSample": {
+          "answer": "Outdoors in daylight, yes—I usually orient myself quickly using rivers, tall landmarks, and the position of the sun.",
+          "reason": "Once I've walked a neighbourhood twice without staring at a blue dot, a mental map starts to lock in naturally.",
+          "example": "Put me inside a massive underground shopping mall with identical exits, though, and I can lose my bearings in thirty seconds."
+        }
+      },
+      {
+        "qid": "s1_maps_q4",
+        "text": "Do you think children should still be taught how to read paper maps at school?",
+        "audio": "audio/speaking/s1_maps_q4.mp3",
+        "ideaHintsEn": ["spatial reasoning skill", "understanding scale and compass", "useful backup when devices fail"],
+        "areSample": {
+          "answer": "Yes, definitely—not because they'll abandon GPS, but because reading maps builds vital spatial reasoning.",
+          "reason": "Understanding scale, contour lines, and compass directions trains kids to think geographically rather than blindly following voice prompts.",
+          "example": "It's also a practical safety skill on school camping trips whenever batteries run flat or signal drops out."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:colours",
+    "topic": "Colours",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_colours_q1",
+        "text": "Do you have a favourite colour?",
+        "audio": "audio/speaking/s1_colours_q1.mp3",
+        "ideaHintsEn": ["deep navy or forest green", "calming and versatile", "clothing and stationery"],
+        "areSample": {
+          "answer": "I've always been drawn to muted forest green and deep navy blue.",
+          "reason": "Both shades feel calm and grounded without being dull, and they pair effortlessly with neutral tones in clothing or interiors.",
+          "example": "If you glanced at my desk right now, you'd see a dark green notebook, a navy laptop sleeve, and a sage-coloured ceramic mug."
+        }
+      },
+      {
+        "qid": "s1_colours_q2",
+        "text": "Do certain colours have special meanings in your culture?",
+        "audio": "audio/speaking/s1_colours_q2.mp3",
+        "ideaHintsEn": ["red and gold for prosperity", "white for mourning", "Lunar New Year symbolism"],
+        "areSample": {
+          "answer": "Very much so—red and bright yellow are strongly linked with good fortune, celebration, and renewal.",
+          "reason": "Those traditional associations still guide how families decorate their homes and dress for major milestones.",
+          "example": "During Lunar New Year, streets fill with red lucky-money envelopes and golden apricot blossoms, whereas plain white is traditionally reserved for funerals."
+        }
+      },
+      {
+        "qid": "s1_colours_q3",
+        "text": "Does the colour of a room affect how you feel inside it?",
+        "audio": "audio/speaking/s1_colours_q3.mp3",
+        "ideaHintsEn": ["warm neutrals feel relaxing", "harsh neon feels tiring", "natural wood and soft light"],
+        "areSample": {
+          "answer": "Surprisingly strongly—soft, warm neutrals and earthy accents help me unwind, whereas stark fluorescent white feels clinical.",
+          "reason": "Wall colour interacts closely with lighting, subtly shaping whether a room feels spacious and peaceful or tense.",
+          "example": "When I painted my study corner a pale warm grey instead of bright hospital white, working late immediately felt far easier on my eyes."
+        }
+      },
+      {
+        "qid": "s1_colours_q4",
+        "text": "Do you pay much attention to colour when buying clothes?",
+        "audio": "audio/speaking/s1_colours_q4.mp3",
+        "ideaHintsEn": ["capsule wardrobe palette", "easy mix and match", "occasional bold accent"],
+        "areSample": {
+          "answer": "Quite a bit, because sticking to a cohesive palette makes getting dressed in the morning effortless.",
+          "reason": "If most of my shirts and trousers sit in navy, charcoal, olive, and off-white, practically everything matches without much thought.",
+          "example": "Every now and then I'll throw in a burgundy scarf or mustard tote bag just to stop the outfit looking too monochrome."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:weekends",
+    "topic": "Weekends",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_weekends_q1",
+        "text": "How do you usually spend your weekends?",
+        "audio": "audio/speaking/s1_weekends_q1.mp3",
+        "ideaHintsEn": ["Saturday for friends/outings", "Sunday for rest and prep", "exercise and reading"],
+        "areSample": {
+          "answer": "I tend to split my weekend neatly: Saturday is for socialising and getting out, while Sunday is reserved for quiet recharging.",
+          "reason": "Having one lively day and one unhurried day stops me from arriving at Monday morning feeling like I need another holiday.",
+          "example": "Usually I'll meet friends for coffee or badminton on Saturday, then spend Sunday cooking, reading, and tidying my flat."
+        }
+      },
+      {
+        "qid": "s1_weekends_q2",
+        "text": "Do you usually plan your weekend activities in advance?",
+        "audio": "audio/speaking/s1_weekends_q2.mp3",
+        "ideaHintsEn": ["one anchor plan", "rest left spontaneous", "avoiding overbooking"],
+        "areSample": {
+          "answer": "I like to lock in just one main anchor—say, dinner with friends or a morning hike—and leave the rest completely spontaneous.",
+          "reason": "Planning every single hour turns leisure time into another rigid schedule.",
+          "example": "Last Saturday, having a free afternoon meant I could spontaneously drop into a street book fair I spotted on my walk home."
+        }
+      },
+      {
+        "qid": "s1_weekends_q3",
+        "text": "Which day of the weekend do you enjoy more, Saturday or Sunday?",
+        "audio": "audio/speaking/s1_weekends_q3.mp3",
+        "ideaHintsEn": ["Saturday morning feeling", "no Monday pressure", "freedom ahead"],
+        "areSample": {
+          "answer": "Definitely Saturday, especially Saturday morning when the whole weekend still stretches ahead.",
+          "reason": "By late Sunday afternoon, a faint sense of Monday preparation always starts creeping into the back of my mind.",
+          "example": "Sitting on my balcony with a slow pour-over coffee at eight on a Saturday feels like pure luxury."
+        }
+      },
+      {
+        "qid": "s1_weekends_q4",
+        "text": "Do you ever have to work or study at the weekend?",
+        "audio": "audio/speaking/s1_weekends_q4.mp3",
+        "ideaHintsEn": ["avoiding office work", "light personal study for IELTS", "keeping boundaries"],
+        "areSample": {
+          "answer": "I guard my weekends tightly against office work, though I do put in an hour or two of self-paced English study.",
+          "reason": "Studying something I've chosen for my own long-term goals feels energising rather than draining, unlike answering work emails.",
+          "example": "Typically I'll do one timed reading practice on Sunday morning and then close the laptop for the rest of the day."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:future_plans",
+    "topic": "Future Plans",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_future_plans_q1",
+        "text": "What are your main goals for the next year or two?",
+        "audio": "audio/speaking/s1_future_plans_q1.mp3",
+        "ideaHintsEn": ["reaching IELTS 8.0", "career progression or postgraduate study", "health habit"],
+        "areSample": {
+          "answer": "My top priority over the next twelve months is achieving a strong IELTS Academic score while deepening my technical leadership skills at work.",
+          "reason": "Having a solid English qualification keeps international study and career doors wide open without forcing a rushed decision.",
+          "example": "I've set up a consistent forty-five-minute daily study routine so progress builds steadily rather than relying on last-minute cramming."
+        }
+      },
+      {
+        "qid": "s1_future_plans_q2",
+        "text": "Would you like to live or work abroad at some point in the future?",
+        "audio": "audio/speaking/s1_future_plans_q2.mp3",
+        "ideaHintsEn": ["two or three years overseas", "broadening perspective", "returning eventually"],
+        "areSample": {
+          "answer": "Yes, I'd love to spend two or three years studying or working abroad, perhaps in the UK, Australia, or Northern Europe.",
+          "reason": "Immersing yourself in a different workplace culture stretches your independence and exposes you to new ways of tackling problems.",
+          "example": "In the long run I can still picture returning home, bringing back both international experience and a wider professional network."
+        }
+      },
+      {
+        "qid": "s1_future_plans_q3",
+        "text": "Is there a practical skill you hope to master in the coming years?",
+        "audio": "audio/speaking/s1_future_plans_q3.mp3",
+        "ideaHintsEn": ["public speaking and storytelling", "swimming or cooking", "career and confidence payoff"],
+        "areSample": {
+          "answer": "I'm determined to become a much more confident public speaker, especially when presenting complex ideas to non-technical audiences.",
+          "reason": "Strong analytical work often goes unnoticed unless you can explain it clearly, concisely, and persuasively in front of a room.",
+          "example": "I've started volunteering to host short ten-minute demos at work so I get regular practice speaking under gentle pressure."
+        }
+      },
+      {
+        "qid": "s1_future_plans_q4",
+        "text": "Do you think it is better to set detailed long-term plans or take life one step at a time?",
+        "audio": "audio/speaking/s1_future_plans_q4.mp3",
+        "ideaHintsEn": ["clear direction with flexible route", "industries shift fast", "yearly review"],
+        "areSample": {
+          "answer": "I favour having a clear sense of direction rather than a rigid five-year blueprint.",
+          "reason": "Industries and personal priorities shift so quickly nowadays that clinging stubbornly to an outdated plan can blind you to better paths.",
+          "example": "For me, setting concrete goals twelve months ahead while keeping a loose compass for the next five years strikes the healthiest balance."
+        }
+      }
+    ]
+  }
+]

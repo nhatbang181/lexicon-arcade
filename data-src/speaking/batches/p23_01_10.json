@@ -1,0 +1,892 @@
+[
+  {
+    "cueCard": {
+      "id": "s2c:001",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "person",
+      "prompt": "Describe a teacher or mentor who had a lasting positive influence on you.",
+      "bullets": [
+        "who this person is and how you met them",
+        "what subject or skill they taught you",
+        "what made their way of teaching distinctive"
+      ],
+      "finalBullet": "and explain why their influence has stayed with you.",
+      "audio": "audio/speaking/s2c_001.mp3",
+      "linkedPart3Id": "s3s:001",
+      "sampleNotes": [
+        "Mr Minh - physics teacher Yr 11",
+        "hated memorising formulas",
+        "bicycle brake demonstration",
+        "never mocked wrong guesses",
+        "curiosity over grades",
+        "still ask 'why' first at work"
+      ],
+      "band8Sample": {
+        "text": "I'd like to talk about Mr Minh, my Year Eleven physics teacher, who completely transformed the way I approach unfamiliar problems. Before I ended up in his class, I'd always viewed physics as a dry pile of formulas to be crammed the night before an exam. I was actually dreading the term when he walked in on the first morning carrying nothing except a rusty bicycle wheel and a piece of chalk. Instead of writing definitions on the board, he spun the wheel, tilted the axle, and asked us why it seemed to push back against his hand. That set the tone for the entire year. What made Mr Minh genuinely stand out was his patience with half-formed ideas. Whenever someone gave a clumsy answer, he never dismissed it or rushed to supply the textbook line; instead, he'd pause, ask a gentle follow-up question, and guide the student to spot the flaw themselves. I still vividly remember staying behind after a lab session because my circuit diagram kept failing. Rather than fixing the wires for me, he sat beside my bench with a mug of green tea and let me test three wrong hypotheses until the bulb finally flickered on. That small triumph taught me far more than any neatly solved worksheet could have. Looking back on it now, his influence goes well beyond secondary-school science. Even today, whenever I run into a knotty bug in software engineering, I hear his calm habit of slowing down and testing assumptions one by one. He gave me the confidence to treat confusion not as embarrassment, but as the starting point of real understanding, and that's why I still think of him so fondly.",
+        "estSeconds": 122
+      },
+      "roundingOffQs": [
+        "Do you still keep in touch with this teacher?",
+        "Would you enjoy teaching others yourself one day?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:001",
+      "linkedCueCardId": "s2c:001",
+      "questions": [
+        {
+          "qid": "s3_001_q1",
+          "text": "What qualities do you think separate an inspiring teacher from a merely competent one?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_001_q1.mp3",
+          "followUps": [
+            { "text": "Can those qualities be trained, or are they mostly personality?", "audio": "audio/speaking/s3_001_q1_f1.mp3" },
+            { "text": "Does subject knowledge matter less than communication skill?", "audio": "audio/speaking/s3_001_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_001_q2",
+          "text": "How has the relationship between teachers and students changed compared with thirty years ago?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_001_q2.mp3",
+          "followUps": [
+            { "text": "Do you see that shift as mostly positive?", "audio": "audio/speaking/s3_001_q2_f1.mp3" },
+            { "text": "Could too much informality ever undermine classroom discipline?", "audio": "audio/speaking/s3_001_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_001_q3",
+          "text": "Why do some countries struggle to attract talented graduates into the teaching profession?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_001_q3.mp3",
+          "followUps": [
+            { "text": "Is salary the main barrier, or workload and status as well?", "audio": "audio/speaking/s3_001_q3_f1.mp3" },
+            { "text": "What practical steps could governments take to change that?", "audio": "audio/speaking/s3_001_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_001_q4",
+          "text": "How might digital tools and artificial intelligence alter the role of human teachers over the next two decades?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_001_q4.mp3",
+          "followUps": [
+            { "text": "Which parts of teaching do you think software can never replicate?", "audio": "audio/speaking/s3_001_q4_f1.mp3" },
+            { "text": "Would that affect primary pupils differently from university students?", "audio": "audio/speaking/s3_001_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_001_q5",
+          "text": "If schools placed less emphasis on standardised exams, how might classroom teaching change?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_001_q5.mp3",
+          "followUps": [
+            { "text": "How would universities then assess applicants fairly?", "audio": "audio/speaking/s3_001_q5_f1.mp3" },
+            { "text": "Would all parents welcome that kind of reform?", "audio": "audio/speaking/s3_001_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:002",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "person",
+      "prompt": "Describe an older person you admire for the way they live their life.",
+      "bullets": [
+        "who this person is and how you know them",
+        "how they spend their time nowadays",
+        "what personal qualities make them remarkable"
+      ],
+      "finalBullet": "and explain what you have learnt from observing them.",
+      "audio": "audio/speaking/s2c_002.mp3",
+      "linkedPart3Id": "s3s:002",
+      "sampleNotes": [
+        "Aunt Lan - retired pharmacist, 72",
+        "dawn walks & rooftop herb garden",
+        "learnt smartphone banking & watercolour",
+        "zero self-pity, brisk humour",
+        "curiosity keeps mind sharp",
+        "ageing actively, not passively"
+      ],
+      "band8Sample": {
+        "text": "One older person I genuinely admire is my great-aunt Lan, a retired pharmacist in her early seventies who lives just a few streets away from my parents. Although she stepped back from full-time work more than a decade ago, you'd never guess it from the rhythm of her days. Every morning at half past five, she meets a group of neighbours by the lake for brisk walking and tai chi, and then she spends a quiet hour tending a surprisingly lush vegetable and herb garden on her rooftop terrace. What strikes me most about Aunt Lan isn't just her physical stamina, though—it's her refusal to let curiosity fade with age. Two years ago, when her grandchildren moved to another city, she didn't wait for anyone to set things up for her; she bought a notebook, asked me to walk her through video calls and online banking once, and wrote down every single step in neat blue ink. Soon afterwards, she signed up for a community watercolour class and now paints delicate botanical postcards that she sends to family members on their birthdays. She also has a wonderfully dry sense of humour and rarely complains about minor aches or inconveniences, which makes visiting her feel uplifting rather than obligatory. Observing her has reshaped how I picture getting older. We're often led to assume that retirement automatically means shrinking horizons, yet Aunt Lan proves that staying engaged with both your neighbourhood and new skills keeps life rich and purposeful. Whenever I catch myself grumbling that I'm too tired to learn something unfamiliar, I think of her rooftop watercolours and immediately feel a bit sheepish.",
+        "estSeconds": 117
+      },
+      "roundingOffQs": [
+        "Do you get to visit this person often?",
+        "Do your friends share a similar view of older relatives?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:002",
+      "linkedCueCardId": "s2c:002",
+      "questions": [
+        {
+          "qid": "s3_002_q1",
+          "text": "In your country, how has the role of grandparents within the family changed in recent decades?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_002_q1.mp3",
+          "followUps": [
+            { "text": "Is that shift more pronounced in big cities than in rural areas?", "audio": "audio/speaking/s3_002_q1_f1.mp3" },
+            { "text": "What do children lose if they see their grandparents less frequently?", "audio": "audio/speaking/s3_002_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_002_q2",
+          "text": "What can younger and older generations realistically learn from one another?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_002_q2.mp3",
+          "followUps": [
+            { "text": "Why do misunderstandings between generations still arise so easily?", "audio": "audio/speaking/s3_002_q2_f1.mp3" },
+            { "text": "Does modern technology widen or narrow that generation gap?", "audio": "audio/speaking/s3_002_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_002_q3",
+          "text": "How can cities be redesigned to help ageing populations stay independent and socially active?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_002_q3.mp3",
+          "followUps": [
+            { "text": "Should public funding prioritise healthcare or community centres?", "audio": "audio/speaking/s3_002_q3_f1.mp3" },
+            { "text": "How can local volunteers support isolated elderly residents?", "audio": "audio/speaking/s3_002_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_002_q4",
+          "text": "Do you think the official retirement age should rise as life expectancy increases?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_002_q4.mp3",
+          "followUps": [
+            { "text": "Is raising the retirement age fair to people in physically demanding jobs?", "audio": "audio/speaking/s3_002_q4_f1.mp3" },
+            { "text": "Could flexible part-time work be a better compromise?", "audio": "audio/speaking/s3_002_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_002_q5",
+          "text": "How might society look different in fifty years if a much larger share of citizens are over sixty-five?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_002_q5.mp3",
+          "followUps": [
+            { "text": "Which industries would grow most in that scenario?", "audio": "audio/speaking/s3_002_q5_f1.mp3" },
+            { "text": "Could an ageing society also bring unexpected strengths?", "audio": "audio/speaking/s3_002_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:003",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "person",
+      "prompt": "Describe someone you know who is remarkably good at solving practical problems.",
+      "bullets": [
+        "who this person is and what they do",
+        "a specific situation where you saw them solve a tricky problem",
+        "how they approached the issue differently from others"
+      ],
+      "finalBullet": "and explain why you value having someone like them around.",
+      "audio": "audio/speaking/s2c_003.mp3",
+      "linkedPart3Id": "s3s:003",
+      "sampleNotes": [
+        "Uncle Hung - mechanical technician",
+        "typhoon knocked out water pump",
+        "neighbours panicking, shops shut",
+        "diagnosed capacitor with multimeter",
+        "improvised safe bypass temporarily",
+        "calm methodical mindset"
+      ],
+      "band8Sample": {
+        "text": "The first person who springs to mind is my uncle Hung, a self-taught mechanical technician who runs a small appliance repair workshop near my hometown. Whenever something breaks in our extended family—whether it's a leaking washing machine, a jammed lock, or a temperamental scooter—Hung is invariably the person everyone rings. I saw his resourcefulness at its absolute finest two autumns ago right after a heavy tropical storm swept through our district. The power had just come back on, yet our house's rooftop water pump refused to kick in, leaving three families in the alley without running water while every hardware shop was still shuttered. Most of us were standing around staring helplessly at the metal casing and talking about buying a brand-new unit the next day. Hung arrived wearing a faded raincoat, asked us to switch off the main breaker, and spent five quiet minutes listening and checking the wiring with a tiny pocket multimeter. Rather than guessing, he ruled out the motor coil first and spotted a swollen starter capacitor within ten minutes. Since no spare parts shop was open, he fetched a matching capacitor from an unused old fan in his shed, checked the voltage rating carefully, soldered the joints cleanly, and sealed them with waterproof tape. Within half an hour, water was flowing smoothly again. What I respect most about him isn't just technical skill, but his utter calm under pressure. He never wastes energy panicking or blaming bad luck; he observes, isolates the cause, and works with what's on hand. Having someone that grounded in your circle reminds you that most everyday crises are far more manageable than they first appear.",
+        "estSeconds": 120
+      },
+      "roundingOffQs": [
+        "Have you picked up any practical repair skills from this person?",
+        "Do you think practical skills like this are becoming rarer?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:003",
+      "linkedCueCardId": "s2c:003",
+      "questions": [
+        {
+          "qid": "s3_003_q1",
+          "text": "Why do modern consumers tend to replace broken items instead of repairing them?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_003_q1.mp3",
+          "followUps": [
+            { "text": "How much of that is driven by manufacturers' product design?", "audio": "audio/speaking/s3_003_q1_f1.mp3" },
+            { "text": "Does lack of time play a bigger role than cost?", "audio": "audio/speaking/s3_003_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_003_q2",
+          "text": "Should schools devote more classroom time to hands-on practical skills alongside academic subjects?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_003_q2.mp3",
+          "followUps": [
+            { "text": "Which practical skills would be most useful for teenagers today?", "audio": "audio/speaking/s3_003_q2_f1.mp3" },
+            { "text": "Why do some parents resist non-academic workshops at school?", "audio": "audio/speaking/s3_003_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_003_q3",
+          "text": "How does problem-solving in a team differ from tackling an issue individually?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_003_q3.mp3",
+          "followUps": [
+            { "text": "When can having too many people slow a solution down?", "audio": "audio/speaking/s3_003_q3_f1.mp3" },
+            { "text": "What role does a good leader play during a crisis?", "audio": "audio/speaking/s3_003_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_003_q4",
+          "text": "What policies could encourage electronics makers to design longer-lasting, repairable products?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_003_q4.mp3",
+          "followUps": [
+            { "text": "Would mandatory repairability labels influence buyers?", "audio": "audio/speaking/s3_003_q4_f1.mp3" },
+            { "text": "Might stricter regulations push up retail prices for consumers?", "audio": "audio/speaking/s3_003_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_003_q5",
+          "text": "If every household lost internet access for a full week, how well do you think people would cope with everyday problems?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_003_q5.mp3",
+          "followUps": [
+            { "text": "Which daily tasks would break down first?", "audio": "audio/speaking/s3_003_q5_f1.mp3" },
+            { "text": "Would older generations cope better than younger ones?", "audio": "audio/speaking/s3_003_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:004",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "person",
+      "prompt": "Describe a person from another culture or country whom you enjoyed meeting.",
+      "bullets": [
+        "who they are and where you met them",
+        "what you talked about or did together",
+        "what you learnt about their background or customs"
+      ],
+      "finalBullet": "and explain why the encounter was memorable for you.",
+      "audio": "audio/speaking/s2c_004.mp3",
+      "linkedPart3Id": "s3s:004",
+      "sampleNotes": [
+        "Tomasz - Polish urban planner",
+        "met at hostel breakfast in Hoi An",
+        "cycled through rice paddies together",
+        "compared street design & winter habits",
+        "curious without stereotyping",
+        "realised how universal everyday concerns are"
+      ],
+      "band8Sample": {
+        "text": "A couple of years ago, during a solo weekend trip to Hoi An, I met a Polish urban planner named Tomasz, and spending an afternoon chatting with him turned out to be the highlight of the whole trip. We struck up a conversation over breakfast at a small family-run guesthouse after both of us happened to ask the host about renting bicycles to explore the countryside. Since we were heading along the same riverside lane, we decided to cycle out through the rice paddies together and stopped for iced coffee under a banyan tree halfway through. What made talking to Tomasz so effortless was his genuine curiosity. Rather than making hasty comparisons with Europe, he kept noticing subtle details I normally took for granted—like how narrow Vietnamese tube houses use internal courtyards to pull cool air through the building, or how plastic stools transform a quiet pavement into a lively social hub after dusk. In return, he told me about winter life in Krakow, traditional Christmas Eve carp dinners, and how Polish towns are gradually pedestrianising old market squares to cut car traffic. We must have talked for nearly four hours about architecture, coffee culture, and how rapidly both our countries have changed since our parents' generation. The encounter stayed with me because it punctured a lot of vague textbook ideas I had about cultural differences. Yes, our climates, languages, and cuisines couldn't be further apart, yet our everyday worries—affordable flats, walkable streets, finding time for family—were strikingly similar. Meeting someone that open-minded reminded me why travelling slowly and talking to strangers beats rushing through tourist checklists.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Have you stayed in contact with this person since then?",
+        "Would you like to visit their home country one day?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:004",
+      "linkedCueCardId": "s2c:004",
+      "questions": [
+        {
+          "qid": "s3_004_q1",
+          "text": "Why can meeting people from other cultures challenge stereotypes more effectively than reading about them?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_004_q1.mp3",
+          "followUps": [
+            { "text": "Does brief tourist contact always achieve that, or is longer interaction needed?", "audio": "audio/speaking/s3_004_q1_f1.mp3" },
+            { "text": "Can social media also break down stereotypes, or does it sometimes reinforce them?", "audio": "audio/speaking/s3_004_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_004_q2",
+          "text": "What benefits and challenges arise when workplaces become increasingly multicultural?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_004_q2.mp3",
+          "followUps": [
+            { "text": "How can managers handle different communication styles, such as direct versus indirect feedback?", "audio": "audio/speaking/s3_004_q2_f1.mp3" },
+            { "text": "Does working remotely make cross-cultural teamwork harder?", "audio": "audio/speaking/s3_004_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_004_q3",
+          "text": "How does international travel today compare with travelling abroad forty years ago?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_004_q3.mp3",
+          "followUps": [
+            { "text": "Has instant translation made travelling better, or taken away some of the adventure?", "audio": "audio/speaking/s3_004_q3_f1.mp3" },
+            { "text": "Do global retail chains make major cities feel too similar now?", "audio": "audio/speaking/s3_004_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_004_q4",
+          "text": "Do you think globalisation is gradually eroding local cultural traditions?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_004_q4.mp3",
+          "followUps": [
+            { "text": "Which aspects of local culture tend to survive best?", "audio": "audio/speaking/s3_004_q4_f1.mp3" },
+            { "text": "Can global audiences actually help revive endangered crafts or music?", "audio": "audio/speaking/s3_004_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_004_q5",
+          "text": "How might student exchange programmes evolve in the next twenty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_004_q5.mp3",
+          "followUps": [
+            { "text": "Could virtual exchanges ever replace living abroad?", "audio": "audio/speaking/s3_004_q5_f1.mp3" },
+            { "text": "How could exchanges become accessible to lower-income students?", "audio": "audio/speaking/s3_004_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:005",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "person",
+      "prompt": "Describe a close friend who has helped you through a difficult period.",
+      "bullets": [
+        "who this friend is and how long you have known them",
+        "what difficult situation you were facing at the time",
+        "what they did to support you"
+      ],
+      "finalBullet": "and explain how that experience affected your friendship.",
+      "audio": "audio/speaking/s2c_005.mp3",
+      "linkedPart3Id": "s3s:005",
+      "sampleNotes": [
+        "Khanh - uni roommate, 8 yrs",
+        "burnt out after failed first project",
+        "didn't offer empty pep talks",
+        "evening walks & practical CV feedback",
+        "helped separate work setback from self-worth",
+        "built deep mutual trust"
+      ],
+      "band8Sample": {
+        "text": "I'd like to talk about my close friend Khanh, whom I've known for roughly eight years since we shared a cramped dormitory corridor in our first year at university. We've always got on effortlessly, yet I only realised how steadfast a friend he truly is about three years ago, during one of the roughest patches of my early career. At the time, the small startup I'd poured eighteen months into ran out of funding almost overnight, and I suddenly found myself unemployed while also recovering from a bad bout of burnout. I was feeling deeply embarrassed and started withdrawing from group chats because I didn't want to field well-meaning questions about my next move. Khanh noticed the silence straight away. Instead of bombarding me with cheerful slogans about everything happening for a reason, he simply turned up at my flat on a Tuesday evening with two bowls of hot noodle soup and suggested we go for a slow walk along the canal. Over the next month, he checked in twice a week like clockwork. On some nights he just listened while I vented; on others, he sat beside me at a café, quietly helped me trim my rambling CV down to one sharp page, and ran two mock technical interviews with me so I wouldn't freeze up in the real ones. What mattered most was that he treated my setback as a temporary logistical hurdle rather than a personal failure. Once I landed a new role, our friendship felt noticeably deeper—the kind where you don't need to perform or put on a brave face. That period taught me that real loyalty shows up in quiet, practical consistency.",
+        "estSeconds": 120
+      },
+      "roundingOffQs": [
+        "Have you ever had the chance to support this friend in return?",
+        "Do you think it gets harder to make close friends as an adult?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:005",
+      "linkedCueCardId": "s2c:005",
+      "questions": [
+        {
+          "qid": "s3_005_q1",
+          "text": "Why do many adults find it more difficult to form deep friendships than they did at school or university?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_005_q1.mp3",
+          "followUps": [
+            { "text": "How important is repeated unplanned contact in building trust?", "audio": "audio/speaking/s3_005_q1_f1.mp3" },
+            { "text": "Do busy work schedules explain most of it, or greater caution?", "audio": "audio/speaking/s3_005_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_005_q2",
+          "text": "How do friendships maintained mostly online compare with face-to-face friendships?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_005_q2.mp3",
+          "followUps": [
+            { "text": "Can online communities genuinely relieve loneliness?", "audio": "audio/speaking/s3_005_q2_f1.mp3" },
+            { "text": "Why do short text messages sometimes create unnecessary tension between friends?", "audio": "audio/speaking/s3_005_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_005_q3",
+          "text": "In times of personal crisis, do you think people rely more on friends or on family nowadays?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_005_q3.mp3",
+          "followUps": [
+            { "text": "Does living away from one's hometown shift that balance?", "audio": "audio/speaking/s3_005_q3_f1.mp3" },
+            { "text": "Are there problems people find easier to discuss with friends than parents?", "audio": "audio/speaking/s3_005_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_005_q4",
+          "text": "What can communities or cities do to reduce social isolation among young adults living alone?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_005_q4.mp3",
+          "followUps": [
+            { "text": "How effective are local sports clubs and hobby groups?", "audio": "audio/speaking/s3_005_q4_f1.mp3" },
+            { "text": "Should employers play any role in fostering workplace friendships?", "audio": "audio/speaking/s3_005_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_005_q5",
+          "text": "Do you think it is better to have a wide circle of acquaintances or just two or three very close friends?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_005_q5.mp3",
+          "followUps": [
+            { "text": "What benefits do casual acquaintances bring that close friends might not?", "audio": "audio/speaking/s3_005_q5_f1.mp3" },
+            { "text": "Does that preference tend to change as people get older?", "audio": "audio/speaking/s3_005_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:006",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "person",
+      "prompt": "Describe a creative person whose work or craft you respect.",
+      "bullets": [
+        "who this person is and what kind of creative work they do",
+        "how you first came across their work",
+        "what makes their style or approach distinctive"
+      ],
+      "finalBullet": "and explain why you admire their dedication.",
+      "audio": "audio/speaking/s2c_006.mp3",
+      "linkedPart3Id": "s3s:006",
+      "sampleNotes": [
+        "Ms Trang - independent ceramicist",
+        "spotted her mugs at weekend craft market",
+        "natural ash glazes, slight asymmetry",
+        "visited her tiny studio kiln",
+        "embraces slow trial and error",
+        "antidote to throwaway mass goods"
+      ],
+      "band8Sample": {
+        "text": "I'd love to describe an independent ceramicist named Trang whose studio sits tucked down a leafy lane on the outskirts of my city. I first stumbled across her work two years ago at a small weekend design fair, where her display table stood out immediately from the glossy factory-made pottery nearby. Her teacups and bowls were matte, earthy, and slightly irregular around the rim, glazed in muted shades of moss green and warm river clay. I ended up buying a pair of espresso cups and chatting with her for twenty minutes, and later I even joined one of her Saturday morning workshops to see how she works. What makes Trang's approach so distinctive is her obsession with local materials and natural imperfection. Instead of importing bright chemical pigments, she experiments with wood ash, crushed granite dust, and rice-husk glaze, keeping meticulous notebooks of kiln temperatures and firing times. She told us that roughly one in five pieces still cracks or warps in the kiln, yet she treats those failures as data rather than disasters. Watching her centre wet clay on the wheel with calm, unhurried precision was almost hypnotic—there's nowhere to hide a rushed gesture when you're working by hand. I admire her dedication enormously because making a living from slow, small-batch craftsmanship in an era of cheap overnight delivery takes real courage. Every morning when I hold one of her sturdy little cups, I'm reminded of the human patience baked into it, and it has honestly made me far more selective about the objects I bring into my home.",
+        "estSeconds": 114
+      },
+      "roundingOffQs": [
+        "Do you still use the cups you bought from her?",
+        "Would you like to take up a traditional craft as a hobby?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:006",
+      "linkedCueCardId": "s2c:006",
+      "questions": [
+        {
+          "qid": "s3_006_q1",
+          "text": "Why has interest in handmade crafts and small-batch products grown again in recent years?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_006_q1.mp3",
+          "followUps": [
+            { "text": "Is it mostly about aesthetics, or a reaction against mass consumerism?", "audio": "audio/speaking/s3_006_q1_f1.mp3" },
+            { "text": "How has social media helped independent artisans reach buyers?", "audio": "audio/speaking/s3_006_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_006_q2",
+          "text": "Should governments provide financial grants to support independent artists and traditional craftspeople?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_006_q2.mp3",
+          "followUps": [
+            { "text": "How should funding panels decide which artists deserve public money?", "audio": "audio/speaking/s3_006_q2_f1.mp3" },
+            { "text": "Would tax breaks or apprenticeship schemes work better than direct grants?", "audio": "audio/speaking/s3_006_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_006_q3",
+          "text": "How does creativity in scientific or technical fields compare with creativity in the arts?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_006_q3.mp3",
+          "followUps": [
+            { "text": "Do schools unfairly label some children as 'creative' and others as 'analytical'?", "audio": "audio/speaking/s3_006_q3_f1.mp3" },
+            { "text": "Can constraints actually boost creativity rather than stifle it?", "audio": "audio/speaking/s3_006_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_006_q4",
+          "text": "How might generative AI tools affect people who earn a living from visual art, music, or design?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_006_q4.mp3",
+          "followUps": [
+            { "text": "Will audiences still value human-made imperfections?", "audio": "audio/speaking/s3_006_q4_f1.mp3" },
+            { "text": "What copyright protections might be needed?", "audio": "audio/speaking/s3_006_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_006_q5",
+          "text": "If every secondary student had to learn one traditional craft before graduating, what impact might that have?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_006_q5.mp3",
+          "followUps": [
+            { "text": "Might forcing it make some students resent traditional crafts?", "audio": "audio/speaking/s3_006_q5_f1.mp3" },
+            { "text": "How could schools find qualified craftspeople to teach?", "audio": "audio/speaking/s3_006_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:007",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "place",
+      "prompt": "Describe a quiet place in your city where you like to go to think or study.",
+      "bullets": [
+        "where this place is and what it looks like",
+        "how often you go there and what you do",
+        "why it stays peaceful despite being in a city"
+      ],
+      "finalBullet": "and explain how spending time there makes you feel.",
+      "audio": "audio/speaking/s2c_007.mp3",
+      "linkedPart3Id": "s3s:007",
+      "sampleNotes": [
+        "3rd-floor reading room, municipal library",
+        "high arched windows, tamarind trees",
+        "old oak tables & warm brass lamps",
+        "Saturday mornings for reading/writing",
+        "thick stone walls mute traffic roar",
+        "mental sanctuary, zero pressure to spend"
+      ],
+      "band8Sample": {
+        "text": "My favourite quiet refuge in the city is the third-floor reading room of our municipal public library, tucked just behind a busy central boulevard. From the outside, you'd expect the noise of motorbikes and buses to pour straight in, yet the moment you climb the wide terrazzo staircase and push open the heavy timber doors, the city seems to drop to a whisper. The room itself has wonderfully high ceilings, tall arched windows looking out into the leafy canopy of old tamarind trees, and long oak tables fitted with warm brass reading lamps. Unlike trendy cafés, there's no loud pop playlist, no hiss of espresso machines, and no silent pressure to order another pricey drink just to justify sitting there for three hours. I usually head over on Saturday mornings right after it opens at eight, claim a corner seat by the south window, and work through IELTS reading passages or write notes in a paper journal. What keeps the atmosphere so serene is partly the thick colonial-era masonry that absorbs street rumble, and partly an unspoken pact among everyone inside—you'll see retirees flicking gently through newspapers beside university students sketching architectural plans, all respecting the stillness. Spending a morning there acts like a reset button for my brain. Living in a fast-paced metropolis, it's rare to find an indoor space that asks nothing of you financially and lets your thoughts breathe at their own pace. I always walk back down the front steps feeling noticeably clearer-headed and far less rushed than when I arrived.",
+        "estSeconds": 113
+      },
+      "roundingOffQs": [
+        "Do many young people still use this library?",
+        "Is it easy to get there from your home?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:007",
+      "linkedCueCardId": "s2c:007",
+      "questions": [
+        {
+          "qid": "s3_007_q1",
+          "text": "Why do you think urban residents increasingly crave quiet spaces in modern cities?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_007_q1.mp3",
+          "followUps": [
+            { "text": "How does constant background noise affect health and concentration?", "audio": "audio/speaking/s3_007_q1_f1.mp3" },
+            { "text": "Is digital noise just as exhausting as physical noise?", "audio": "audio/speaking/s3_007_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_007_q2",
+          "text": "Are public libraries still worth funding heavily in an age when almost everything is available online?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_007_q2.mp3",
+          "followUps": [
+            { "text": "Who relies on public libraries most nowadays?", "audio": "audio/speaking/s3_007_q2_f1.mp3" },
+            { "text": "How have modern libraries adapted beyond simply lending printed books?", "audio": "audio/speaking/s3_007_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_007_q3",
+          "text": "How does studying in a public space like a library or café compare with studying alone at home?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_007_q3.mp3",
+          "followUps": [
+            { "text": "Why do some people actually focus better when others are quietly working nearby?", "audio": "audio/speaking/s3_007_q3_f1.mp3" },
+            { "text": "Does that depend on the type of task you are doing?", "audio": "audio/speaking/s3_007_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_007_q4",
+          "text": "What practical measures can city planners take to lower noise pollution in dense neighbourhoods?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_007_q4.mp3",
+          "followUps": [
+            { "text": "How much difference will electric vehicles make to street noise?", "audio": "audio/speaking/s3_007_q4_f1.mp3" },
+            { "text": "Why are noise regulations often difficult to enforce strictly?", "audio": "audio/speaking/s3_007_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_007_q5",
+          "text": "Do you think free non-commercial public spaces are disappearing in major cities?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_007_q5.mp3",
+          "followUps": [
+            { "text": "What happens to community life if every meeting place requires buying something?", "audio": "audio/speaking/s3_007_q5_f1.mp3" },
+            { "text": "Can private developers be required to include public plazas?", "audio": "audio/speaking/s3_007_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:008",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "place",
+      "prompt": "Describe a historic town or neighbourhood that left a strong impression on you.",
+      "bullets": [
+        "where this town or neighbourhood is located",
+        "what its architecture and atmosphere are like",
+        "what you did while you were there"
+      ],
+      "finalBullet": "and explain why it stood out so vividly in your memory.",
+      "audio": "audio/speaking/s2c_008.mp3",
+      "linkedPart3Id": "s3s:008",
+      "sampleNotes": [
+        "old quarter of Hue / Phuoc Tich village",
+        "mossy tiled roofs, wooden garden houses",
+        "visited early morning before tour buses",
+        "pottery kiln & elderly resident's tea",
+        "living heritage, not a sterile museum",
+        "rare quiet dignity"
+      ],
+      "band8Sample": {
+        "text": "A historic place that made an unforgettable impression on me is Phuoc Tich, an ancient riverside pottery village about forty kilometres north of Hue in central Vietnam. I visited it on a misty weekday morning last spring after a local friend urged me to skip the busier tourist spots and cycle out along the O Lau River instead. Stepping onto its narrow brick lanes felt like entering a quieter century. Unlike heavily commercialised old towns packed with souvenir stalls and neon signs, Phuoc Tich consists of dozens of traditional timber garden houses framed by clipped tea-plant hedges, mossy tiled roofs, and centuries-old banyan trees. Because the village is tucked into a bend of the river, it's remarkably serene—almost the only sounds were birdsong, bicycles rattling softly over brickwork, and the distant splash of oars. While I was there, an elderly homeowner kindly invited me onto his veranda for a cup of bitter lotus tea and showed me the carved wooden beams his great-grandfather had assembled without a single iron nail. Later I wandered past the remnants of traditional wood-fired ceramic kilns that once supplied royal kitchens. What stayed with me most was the feeling of living heritage rather than a staged film set. People still cook, garden, and care for ancestral shrines inside those timber homes, yet you can also sense how fragile that continuity is as younger villagers move to cities for work. Leaving at dusk, I felt a mixture of deep admiration and quiet urgency—the place showed me how much grace traditional vernacular architecture carries when a community manages to preserve its rhythm.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Would you recommend this place to foreign visitors?",
+        "Do you think it will look the same in twenty years' time?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:008",
+      "linkedCueCardId": "s2c:008",
+      "questions": [
+        {
+          "qid": "s3_008_q1",
+          "text": "Why is it important for cities to preserve old neighbourhoods instead of replacing them with modern high-rises?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_008_q1.mp3",
+          "followUps": [
+            { "text": "When is demolishing an old building actually the more sensible option?", "audio": "audio/speaking/s3_008_q1_f1.mp3" },
+            { "text": "Does heritage preservation help local residents or mainly tourists?", "audio": "audio/speaking/s3_008_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_008_q2",
+          "text": "How can historic towns attract tourism income without losing their authentic local character?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_008_q2.mp3",
+          "followUps": [
+            { "text": "Should authorities limit daily visitor numbers or short-term holiday rentals?", "audio": "audio/speaking/s3_008_q2_f1.mp3" },
+            { "text": "How can young locals be encouraged to stay in historic villages?", "audio": "audio/speaking/s3_008_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_008_q3",
+          "text": "Who should bear the main cost of restoring privately owned heritage houses: the owners or the state?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_008_q3.mp3",
+          "followUps": [
+            { "text": "Is it fair to forbid owners from modernising their own homes without subsidies?", "audio": "audio/speaking/s3_008_q3_f1.mp3" },
+            { "text": "Could public-private partnerships bridge that gap?", "audio": "audio/speaking/s3_008_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_008_q4",
+          "text": "How does traditional architecture in your region compare with modern residential construction?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_008_q4.mp3",
+          "followUps": [
+            { "text": "Were older designs actually better suited to the local climate?", "audio": "audio/speaking/s3_008_q4_f1.mp3" },
+            { "text": "Are contemporary architects borrowing traditional ideas again?", "audio": "audio/speaking/s3_008_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_008_q5",
+          "text": "How might extreme weather and climate change threaten historic sites over the coming decades?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_008_q5.mp3",
+          "followUps": [
+            { "text": "Should digital 3D archiving be used for vulnerable monuments?", "audio": "audio/speaking/s3_008_q5_f1.mp3" },
+            { "text": "Can coastal heritage towns realistically be protected against rising sea levels?", "audio": "audio/speaking/s3_008_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:009",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "place",
+      "prompt": "Describe an unusual or striking modern building you have visited.",
+      "bullets": [
+        "where the building is and what it is used for",
+        "what makes its design unusual or memorable",
+        "how you felt when you walked inside it"
+      ],
+      "finalBullet": "and explain whether you think it is a successful piece of architecture.",
+      "audio": "audio/speaking/s2c_009.mp3",
+      "linkedPart3Id": "s3s:009",
+      "sampleNotes": [
+        "bamboo community pavilion on river edge",
+        "no steel beams - woven arched vault",
+        "filtered daylight & natural breeze",
+        "used for workshops, art shows, lectures",
+        "surprisingly cool without air-con",
+        "sustainable beauty + real civic use"
+      ],
+      "band8Sample": {
+        "text": "One modern structure that completely surprised me is a bamboo community pavilion built beside a quiet canal on the edge of Da Nang, which serves as a venue for lectures, weekend craft fairs, and small acoustic concerts. From across the water, it looks almost like an upturned woven basket or a giant tropical leaf hovering above a shallow reflecting pool. What makes the design so remarkable is that the entire soaring vaulted roof is constructed from thousands of treated bamboo poles lashed and pinned together, with virtually no visible steel girders or concrete columns interrupting the central floor. I first visited on a sweltering afternoon in July for a local photography talk, expecting to roast under a roof without air conditioning. Yet the instant I stepped inside, the temperature felt five or six degrees cooler. Because the pavilion sits over water and features a wide circular oculus at the very top, warm air rises naturally and pulls a gentle breeze across the pool and through the seating area. Soft shafts of daylight filter through the curved lattice, casting shifting geometric patterns across the stone tiles as the sun moves. To my mind, it's a genuinely triumphant piece of architecture because its beauty serves a real environmental and social purpose rather than merely showing off for photographs. Too many futuristic glass towers ignore the tropical sun and rely on roaring cooling plants; this pavilion works with local climate and modest local materials to create a welcoming public hall that feels both rooted and strikingly contemporary.",
+        "estSeconds": 112
+      },
+      "roundingOffQs": [
+        "Do local residents visit that building regularly?",
+        "Do you generally prefer modern buildings or older ones?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:009",
+      "linkedCueCardId": "s2c:009",
+      "questions": [
+        {
+          "qid": "s3_009_q1",
+          "text": "When designing a major public building, should architects prioritise appearance or practical functionality?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_009_q1.mp3",
+          "followUps": [
+            { "text": "Can an iconic landmark still justify higher maintenance costs?", "audio": "audio/speaking/s3_009_q1_f1.mp3" },
+            { "text": "Why do some visually dramatic buildings end up unpleasant to work in?", "audio": "audio/speaking/s3_009_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_009_q2",
+          "text": "Why do so many modern apartment and office towers around the world look nearly identical?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_009_q2.mp3",
+          "followUps": [
+            { "text": "Does cost efficiency leave little room for local identity?", "audio": "audio/speaking/s3_009_q2_f1.mp3" },
+            { "text": "How does uniform urban architecture affect residents' sense of place?", "audio": "audio/speaking/s3_009_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_009_q3",
+          "text": "How might environmental concerns reshape building materials and urban architecture over the next thirty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_009_q3.mp3",
+          "followUps": [
+            { "text": "Will green roofs and vertical greenery become standard or stay luxury features?", "audio": "audio/speaking/s3_009_q3_f1.mp3" },
+            { "text": "How important is retrofitting existing buildings compared with building new ones?", "audio": "audio/speaking/s3_009_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_009_q4",
+          "text": "Should ordinary citizens have a say before a controversial new building is approved in their neighbourhood?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_009_q4.mp3",
+          "followUps": [
+            { "text": "Could public consultations slow down urgently needed housing projects?", "audio": "audio/speaking/s3_009_q4_f1.mp3" },
+            { "text": "How can councils balance heritage objections with population growth?", "audio": "audio/speaking/s3_009_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_009_q5",
+          "text": "If every new housing estate had to devote a third of its footprint to shared green courtyards, how would city life change?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_009_q5.mp3",
+          "followUps": [
+            { "text": "Would that push property prices even higher?", "audio": "audio/speaking/s3_009_q5_f1.mp3" },
+            { "text": "How might it affect children's daily routines?", "audio": "audio/speaking/s3_009_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:010",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "place",
+      "prompt": "Describe a natural area outside a city that you enjoy visiting.",
+      "bullets": [
+        "where this natural area is and how you get there",
+        "what the scenery and wildlife are like",
+        "what activities you usually do when you visit"
+      ],
+      "finalBullet": "and explain why this place is special to you.",
+      "audio": "audio/speaking/s2c_010.mp3",
+      "linkedPart3Id": "s3s:010",
+      "sampleNotes": [
+        "Son Tra peninsula - 25 mins from city",
+        "steep coastal forest & turquoise coves",
+        "red-shanked douc langurs in treetops",
+        "early dawn cycling & thermos of tea",
+        "instant shift from concrete to wild",
+        "reminds me how close nature still is"
+      ],
+      "band8Sample": {
+        "text": "A natural spot I return to whenever I need to clear my head is the Son Tra peninsula, a forested headland jutting into the sea just twenty-five minutes by scooter from central Da Nang. The transition is astonishingly abrupt: one minute you're weaving past coastal cafés, and ten minutes later you're climbing a winding hillside road beneath dense tropical canopy with sheer views down to turquoise rocky coves. Because much of the peninsula is a protected nature reserve, the air smells sharply of damp leaves, wild figs, and sea salt rather than exhaust fumes. If you head up around six in the morning and switch off your engine near the quieter turnouts, you often catch sight of rare red-shanked douc langurs—strikingly colourful monkeys leaping silently between high branches—alongside bright kingfishers darting over forest streams. My favourite routine is riding up with a friend at sunrise, parking near an old banyan trail, and hiking for an hour before sitting on a sun-warmed boulder to share a thermos of hot tea and banh mi while watching fishing boats fan out across the bay below. What makes Son Tra so dear to me is that it offers genuine wilderness right on an urban doorstep, yet it also feels wonderfully fragile. Seeing wild primates thriving just kilometres from high-rise hotels gives me a deep sense of gratitude and a much stronger personal stake in conservation. Every visit resets my sense of scale—work deadlines that felt monumental on Friday evening shrink back to their proper size when you're staring across an endless horizon of sea and cloud.",
+        "estSeconds": 116
+      },
+      "roundingOffQs": [
+        "Is this natural area well protected from overdevelopment?",
+        "Do you prefer visiting mountains or the coast?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:010",
+      "linkedCueCardId": "s2c:010",
+      "questions": [
+        {
+          "qid": "s3_010_q1",
+          "text": "Why do people living in large cities often feel a strong psychological need to spend time in nature?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_010_q1.mp3",
+          "followUps": [
+            { "text": "Can small urban parks provide similar benefits to wild countryside?", "audio": "audio/speaking/s3_010_q1_f1.mp3" },
+            { "text": "Do children raised in cities grow up less concerned about wildlife?", "audio": "audio/speaking/s3_010_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_010_q2",
+          "text": "How should governments balance ecotourism revenue with strict wildlife protection in national parks?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_010_q2.mp3",
+          "followUps": [
+            { "text": "Are daily permit caps and guided-only trails effective?", "audio": "audio/speaking/s3_010_q2_f1.mp3" },
+            { "text": "How can local rural communities benefit directly from conservation?", "audio": "audio/speaking/s3_010_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_010_q3",
+          "text": "How has people's attitude towards outdoor recreation changed compared with twenty years ago?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_010_q3.mp3",
+          "followUps": [
+            { "text": "Has social media made remote trails overcrowded?", "audio": "audio/speaking/s3_010_q3_f1.mp3" },
+            { "text": "Are younger visitors generally more careful about leaving no litter?", "audio": "audio/speaking/s3_010_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_010_q4",
+          "text": "Do you think entry to national parks should be completely free, or should visitors pay conservation fees?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_010_q4.mp3",
+          "followUps": [
+            { "text": "Should local residents pay less than international tourists?", "audio": "audio/speaking/s3_010_q4_f1.mp3" },
+            { "text": "How can authorities ensure ticket fees actually fund conservation?", "audio": "audio/speaking/s3_010_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_010_q5",
+          "text": "In the future, do you think virtual nature experiences could ever substitute for visiting real wilderness?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_010_q5.mp3",
+          "followUps": [
+            { "text": "Could VR nature still be useful for hospital patients or elderly residents?", "audio": "audio/speaking/s3_010_q5_f1.mp3" },
+            { "text": "Might virtual tours reduce physical wear on fragile ecosystems?", "audio": "audio/speaking/s3_010_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  }
+]

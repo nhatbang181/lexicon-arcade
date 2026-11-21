@@ -1,0 +1,793 @@
+[
+  {
+    "id": "s1t:work_study",
+    "topic": "Work and Study",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_work_study_q1",
+        "text": "Do you work or are you a student at the moment?",
+        "audio": "audio/speaking/s1_work_study_q1.mp3",
+        "ideaHintsEn": ["job role or major", "why you chose it", "typical weekly task"],
+        "areSample": {
+          "answer": "I'm currently working full-time as a software engineer at a mid-sized product company.",
+          "reason": "I went into this field because I genuinely enjoy breaking down complex problems into clean, practical solutions.",
+          "example": "Just this week, for instance, I redesigned our onboarding workflow to cut page loading times almost in half."
+        }
+      },
+      {
+        "qid": "s1_work_study_q2",
+        "text": "What do you find most rewarding about your work or studies?",
+        "audio": "audio/speaking/s1_work_study_q2.mp3",
+        "ideaHintsEn": ["tangible outcomes", "collaboration with teammates", "continuous learning"],
+        "areSample": {
+          "answer": "For me, the most gratifying part is seeing something I've built actually make someone's daily routine easier.",
+          "reason": "When your work stays abstract, it's easy to lose motivation, whereas direct feedback keeps me energised.",
+          "example": "A few months ago, a user messaged our support team saying a small shortcut we added saved her hours every Friday."
+        }
+      },
+      {
+        "qid": "s1_work_study_q3",
+        "text": "Do you prefer working alone or as part of a team?",
+        "audio": "audio/speaking/s1_work_study_q3.mp3",
+        "ideaHintsEn": ["depends on the task", "deep focus vs brainstorming", "recent project contrast"],
+        "areSample": {
+          "answer": "Honestly, I thrive on a balance of both, though I lean slightly towards solo work during the early stages.",
+          "reason": "Quiet stretches allow me to think deeply without interruption, while teamwork helps spot blind spots I'd otherwise miss.",
+          "example": "Usually I'll draft a technical plan on my own in the morning and then bounce it off two colleagues after lunch."
+        }
+      },
+      {
+        "qid": "s1_work_study_q4",
+        "text": "What part of your typical workday or study day do you find most challenging?",
+        "audio": "audio/speaking/s1_work_study_q4.mp3",
+        "ideaHintsEn": ["context switching", "tight deadlines", "energy dip in the afternoon"],
+        "areSample": {
+          "answer": "Without question, the trickiest part is dealing with constant context switching between meetings and focused tasks.",
+          "reason": "Once my concentration is broken, it often takes fifteen or twenty minutes just to rebuild my train of thought.",
+          "example": "On Wednesdays we have back-to-back check-ins, so I've started blocking out two hours early in the morning purely for deep work."
+        }
+      },
+      {
+        "qid": "s1_work_study_q5",
+        "text": "Would you like to change your career or field of study in the future?",
+        "audio": "audio/speaking/s1_work_study_q5.mp3",
+        "ideaHintsEn": ["staying in the sector vs pivoting", "mentoring or teaching", "long-term curiosity"],
+        "areSample": {
+          "answer": "I don't see myself leaving the technology sector altogether, but I'd love to shift gradually towards mentoring and education.",
+          "reason": "Helping junior colleagues click with a difficult concept gives me a different kind of satisfaction from coding alone.",
+          "example": "Last spring I ran a short internal workshop on testing, and I enjoyed preparing for it far more than I expected."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:hometown",
+    "topic": "Hometown",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_hometown_q1",
+        "text": "Where is your hometown, and what is it like?",
+        "audio": "audio/speaking/s1_hometown_q1.mp3",
+        "ideaHintsEn": ["geographical location", "atmosphere and pace", "distinctive landmark or feature"],
+        "areSample": {
+          "answer": "I'm originally from a bustling coastal city in central Vietnam that blends laid-back beach life with fast-growing urban districts.",
+          "reason": "Because the sea is only fifteen minutes from the city centre, the whole place feels noticeably airier than larger inland metropolises.",
+          "example": "On warm evenings, you'll see families strolling along the promenade while fishermen haul in small boats further down the bay."
+        }
+      },
+      {
+        "qid": "s1_hometown_q2",
+        "text": "What do you like most about living there?",
+        "audio": "audio/speaking/s1_hometown_q2.mp3",
+        "ideaHintsEn": ["friendly community", "local street food", "proximity to nature"],
+        "areSample": {
+          "answer": "What I appreciate most is the strong sense of neighbourhood warmth combined with easy access to the outdoors.",
+          "reason": "People still greet their neighbours by name, which stops the city from feeling anonymous even as it expands.",
+          "example": "Whenever I go back, the lady at the corner coffee stall still remembers I take mine iced with very little sugar."
+        }
+      },
+      {
+        "qid": "s1_hometown_q3",
+        "text": "Has your hometown changed much since you were a child?",
+        "audio": "audio/speaking/s1_hometown_q3.mp3",
+        "ideaHintsEn": ["skyline and bridges", "tourism growth", "loss of quiet open fields"],
+        "areSample": {
+          "answer": "It's changed almost beyond recognition over the past fifteen years, especially along the riverfront.",
+          "reason": "A surge in domestic tourism and private investment has replaced low-rise shophouses with gleaming hotels and wide boulevards.",
+          "example": "The empty stretch where my friends and I used to fly kites after school is now lined with cafés and boutique apartments."
+        }
+      },
+      {
+        "qid": "s1_hometown_q4",
+        "text": "Is your hometown a good place for young people to live?",
+        "audio": "audio/speaking/s1_hometown_q4.mp3",
+        "ideaHintsEn": ["cost of living", "remote work appeal", "limited niche industries"],
+        "areSample": {
+          "answer": "On the whole, yes, particularly for young professionals who can work remotely or who value work-life balance.",
+          "reason": "Rent and everyday expenses are far more reasonable than in the capital, though specialised corporate roles can still be scarce.",
+          "example": "Several university friends of mine moved back there recently because they could keep their city salaries while living ten minutes from the beach."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:accommodation",
+    "topic": "Accommodation",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_accommodation_q1",
+        "text": "Do you live in a house or a flat at the moment?",
+        "audio": "audio/speaking/s1_accommodation_q1.mp3",
+        "ideaHintsEn": ["type of home and floor", "neighbourhood vibe", "practicality"],
+        "areSample": {
+          "answer": "I live in a compact two-bedroom flat on the ninth floor of a modern residential block.",
+          "reason": "Renting a flat suits my schedule far better than a standalone house because building maintenance and security are handled for me.",
+          "example": "I also get a decent breeze up there and a clear view over a tree-lined avenue, which keeps traffic noise to a minimum."
+        }
+      },
+      {
+        "qid": "s1_accommodation_q2",
+        "text": "Which room in your home do you spend the most time in?",
+        "audio": "audio/speaking/s1_accommodation_q2.mp3",
+        "ideaHintsEn": ["living room or study corner", "natural light", "daily activities there"],
+        "areSample": {
+          "answer": "Undoubtedly the open-plan living area, which doubles as my workspace during the week.",
+          "reason": "It has floor-to-ceiling windows facing east, so the natural light keeps me alert in the mornings without needing harsh overhead lamps.",
+          "example": "Most evenings I just push my laptop aside, brew a pot of herbal tea, and read on the sofa by the balcony door."
+        }
+      },
+      {
+        "qid": "s1_accommodation_q3",
+        "text": "If you could change one thing about your current home, what would it be?",
+        "audio": "audio/speaking/s1_accommodation_q3.mp3",
+        "ideaHintsEn": ["kitchen counter space", "soundproofing", "storage cupboards"],
+        "areSample": {
+          "answer": "I'd definitely expand the kitchen, because the counter space is rather cramped when I try to cook properly.",
+          "reason": "I love preparing fresh meals from scratch, yet having barely enough room for a chopping board makes weeknight cooking fiddly.",
+          "example": "Last Sunday I made a big batch of noodle soup and ended up lining up half the ingredients on the dining table."
+        }
+      },
+      {
+        "qid": "s1_accommodation_q4",
+        "text": "What kind of home would you ideally like to live in one day?",
+        "audio": "audio/speaking/s1_accommodation_q4.mp3",
+        "ideaHintsEn": ["small garden", "bright minimalist interior", "quiet suburb near transit"],
+        "areSample": {
+          "answer": "Ideally, I'd love a modest terraced house with a small courtyard garden in a quiet suburb.",
+          "reason": "Having a patch of greenery to grow herbs and sit outside would give me a sense of calm that high-rise living rarely offers.",
+          "example": "Nothing grand at all—just a bright kitchen opening onto a wooden deck where friends could gather for weekend barbecues."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:daily_routine",
+    "topic": "Daily Routine",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_daily_routine_q1",
+        "text": "What does a typical weekday morning look like for you?",
+        "audio": "audio/speaking/s1_daily_routine_q1.mp3",
+        "ideaHintsEn": ["wake-up time", "light exercise or coffee", "avoiding screens early"],
+        "areSample": {
+          "answer": "I'm quite a creature of habit, so I usually get up around half past six and start with twenty minutes of stretching.",
+          "reason": "Easing into the day without checking notifications immediately stops me from feeling rushed before work has even begun.",
+          "example": "After that, I make myself a strong black coffee, skim a couple of news headlines, and sit down at my desk by eight."
+        }
+      },
+      {
+        "qid": "s1_daily_routine_q2",
+        "text": "Which part of the day do you feel most productive?",
+        "audio": "audio/speaking/s1_daily_routine_q2.mp3",
+        "ideaHintsEn": ["mid-morning peak", "mental clarity", "scheduling tough work early"],
+        "areSample": {
+          "answer": "My energy peaks between nine and noon, which is when my thinking feels sharpest.",
+          "reason": "By late afternoon decision fatigue tends to creep in, so tackling demanding tasks early makes a noticeable difference to my output.",
+          "example": "Whenever I have to write a detailed report or study dense reading passages, I always guard that morning window fiercely."
+        }
+      },
+      {
+        "qid": "s1_daily_routine_q3",
+        "text": "How different is your weekend routine from your weekday schedule?",
+        "audio": "audio/speaking/s1_daily_routine_q3.mp3",
+        "ideaHintsEn": ["slower mornings", "unstructured social time", "errands and meal prep"],
+        "areSample": {
+          "answer": "Weekends are far less rigid, although I still avoid sleeping past eight so I don't throw off my body clock.",
+          "reason": "Leaving large chunks of Saturday unscheduled helps me recharge mentally after five tightly planned days.",
+          "example": "Typically I'll linger over brunch with friends on Saturday morning and keep Sunday afternoon for groceries and a long walk."
+        }
+      },
+      {
+        "qid": "s1_daily_routine_q4",
+        "text": "Would you like to change anything about your current routine?",
+        "audio": "audio/speaking/s1_daily_routine_q4.mp3",
+        "ideaHintsEn": ["earlier wind-down", "less late-night scrolling", "consistent reading habit"],
+        "areSample": {
+          "answer": "I'd really like to wind down earlier in the evenings instead of letting screen time spill past eleven.",
+          "reason": "Whenever I stay up watching short clips, I wake up groggy and end up relying on extra caffeine the next morning.",
+          "example": "I've recently tried leaving my phone to charge in the living room so I'm nudged to pick up a paperback instead."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:technology",
+    "topic": "Technology",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_technology_q1",
+        "text": "What piece of technology do you rely on most in your everyday life?",
+        "audio": "audio/speaking/s1_technology_q1.mp3",
+        "ideaHintsEn": ["smartphone or laptop", "all-in-one utility", "specific daily tasks"],
+        "areSample": {
+          "answer": "Aside from my laptop for work, I'd say my smartphone is practically indispensable throughout the day.",
+          "reason": "It has quietly absorbed half a dozen separate tools—from banking and maps to boarding passes and language flashcards.",
+          "example": "Just yesterday I paid for groceries, checked a train delay, and reviewed thirty vocabulary cards while waiting at the dentist."
+        }
+      },
+      {
+        "qid": "s1_technology_q2",
+        "text": "Do you enjoy keeping up with the latest gadgets and tech releases?",
+        "audio": "audio/speaking/s1_technology_q2.mp3",
+        "ideaHintsEn": ["curious reader vs cautious buyer", "incremental upgrades", "practicality over hype"],
+        "areSample": {
+          "answer": "I enjoy reading about new breakthroughs, though I'm definitely not an early adopter who queues for every launch.",
+          "reason": "Most annual upgrades feel fairly incremental, and first-generation devices often come with pricey teething problems.",
+          "example": "I kept my previous phone for nearly four years and only replaced it once the battery could barely last till evening."
+        }
+      },
+      {
+        "qid": "s1_technology_q3",
+        "text": "Has technology made your daily life easier or more stressful?",
+        "audio": "audio/speaking/s1_technology_q3.mp3",
+        "ideaHintsEn": ["double-edged sword", "logistical ease vs always-on culture", "setting boundaries"],
+        "areSample": {
+          "answer": "It's a bit of a double-edged sword: logistically it's far easier, yet mentally it can feel relentless.",
+          "reason": "Being reachable at all hours blurs the line between personal downtime and work obligations unless you set firm boundaries.",
+          "example": "Switching off work chat notifications after seven in the evening was the single best adjustment I've made all year."
+        }
+      },
+      {
+        "qid": "s1_technology_q4",
+        "text": "How do you usually handle a technical problem when a device stops working?",
+        "audio": "audio/speaking/s1_technology_q4.mp3",
+        "ideaHintsEn": ["basic troubleshooting first", "searching online forums", "knowing when to seek a repair shop"],
+        "areSample": {
+          "answer": "I usually try to troubleshoot it myself first by restarting the device and looking up the exact error message online.",
+          "reason": "Nine times out of ten, someone on a community forum has already bumped into the same glitch and shared a straightforward fix.",
+          "example": "Last month my laptop Wi-Fi vanished after an update, and a five-minute driver reset from a forum thread saved me a trip to a repair shop."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:transport",
+    "topic": "Public Transport",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_transport_q1",
+        "text": "How do you usually travel around your city?",
+        "audio": "audio/speaking/s1_transport_q1.mp3",
+        "ideaHintsEn": ["motorbike, bus, or metro", "speed vs comfort", "commuting routine"],
+        "areSample": {
+          "answer": "For most short trips I take a motorbike or ride-hailing service, though I've been using the bus much more lately.",
+          "reason": "Driving in heavy rush-hour traffic can be exhausting, whereas sitting on a bus lets me switch off and listen to podcasts.",
+          "example": "Whenever I head into the city centre on rainy afternoons, I gladly leave my bike at home and hop on the express route instead."
+        }
+      },
+      {
+        "qid": "s1_transport_q2",
+        "text": "What do you think of the public transport system where you live?",
+        "audio": "audio/speaking/s1_transport_q2.mp3",
+        "ideaHintsEn": ["affordable fares", "gaps in coverage or punctuality", "recent improvements"],
+        "areSample": {
+          "answer": "It's steadily improving and remarkably affordable, though coverage outside the main corridors is still patchy.",
+          "reason": "Buses often get caught in the same gridlock as private vehicles, which makes arrival times somewhat unpredictable during peak hours.",
+          "example": "That said, the newer electric bus routes with live tracking apps have made commuting across town far more reliable than it used to be."
+        }
+      },
+      {
+        "qid": "s1_transport_q3",
+        "text": "Do you prefer travelling by train or by bus for longer journeys?",
+        "audio": "audio/speaking/s1_transport_q3.mp3",
+        "ideaHintsEn": ["legroom and ability to walk", "scenic views", "smoother ride for reading"],
+        "areSample": {
+          "answer": "I'd pick the train every single time for journeys lasting more than two or three hours.",
+          "reason": "Trains give you space to stretch your legs, a smoother ride for reading, and far less risk of motion sickness than coaches.",
+          "example": "I took a coastal train south last autumn, and watching the hills roll past from the dining car felt like part of the holiday itself."
+        }
+      },
+      {
+        "qid": "s1_transport_q4",
+        "text": "What would encourage more people in your area to use public transport?",
+        "audio": "audio/speaking/s1_transport_q4.mp3",
+        "ideaHintsEn": ["dedicated lanes", "shaded walkable stops", "integrated contactless tickets"],
+        "areSample": {
+          "answer": "Above all, punctual service and better first-and-last-mile connections would make the biggest difference.",
+          "reason": "Most commuters don't mind taking a bus or train, but they're put off by walking fifteen minutes in blistering heat to reach a stop.",
+          "example": "Adding shaded pavements, dedicated bus lanes, and a single contactless travel card would win over a huge number of daily drivers."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:environment",
+    "topic": "Environment and Recycling",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_environment_q1",
+        "text": "Do you make an effort to recycle or reduce waste at home?",
+        "audio": "audio/speaking/s1_environment_q1.mp3",
+        "ideaHintsEn": ["reusable bags and bottles", "sorting cardboard and plastics", "refusing excess packaging"],
+        "areSample": {
+          "answer": "Yes, I try to focus on cutting down waste at the source rather than just sorting rubbish afterwards.",
+          "reason": "Recycling systems aren't always thorough locally, so avoiding single-use packaging altogether feels like the more reliable habit.",
+          "example": "I keep a foldable tote bag in my backpack and always bring my own stainless-steel cup when I grab takeaway coffee."
+        }
+      },
+      {
+        "qid": "s1_environment_q2",
+        "text": "Did you learn much about environmental protection when you were at school?",
+        "audio": "audio/speaking/s1_environment_q2.mp3",
+        "ideaHintsEn": ["textbook theory vs hands-on activities", "tree-planting days", "growing awareness later"],
+        "areSample": {
+          "answer": "To be honest, it was mostly covered in brief textbook chapters rather than through hands-on projects.",
+          "reason": "Back then, exam subjects took priority, so environmental topics rarely went beyond basic slogans about saving water and electricity.",
+          "example": "The one memorable exception was a clean-up morning our biology teacher organised along a nearby canal, which really opened my eyes to plastic litter."
+        }
+      },
+      {
+        "qid": "s1_environment_q3",
+        "text": "What is the most noticeable environmental issue in your city?",
+        "audio": "audio/speaking/s1_environment_q3.mp3",
+        "ideaHintsEn": ["air quality and fine dust", "urban heat islands", "drainage during heavy rain"],
+        "areSample": {
+          "answer": "Without doubt, air quality and urban heat are the two problems residents feel most acutely.",
+          "reason": "Dense vehicle emissions combined with rapid construction leave very little green cover to cool the streets or trap fine dust.",
+          "example": "On dry winter mornings, you can actually see a grey haze hanging over the skyline before you even check an air-quality app."
+        }
+      },
+      {
+        "qid": "s1_environment_q4",
+        "text": "Do you think young people today care more about the environment than previous generations?",
+        "audio": "audio/speaking/s1_environment_q4.mp3",
+        "ideaHintsEn": ["vocal online vs frugal habits of elders", "different expressions of sustainability", "everyday examples"],
+        "areSample": {
+          "answer": "Younger people are certainly more vocal about climate issues, though older generations often practised sustainability without calling it that.",
+          "reason": "My grandparents' generation repaired clothes, reused jars, and wasted almost no food simply out of thrift rather than activism.",
+          "example": "So while my peers swap tips about zero-waste brands online, my grandmother still washes and reuses glass bottles better than any of us."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:reading",
+    "topic": "Reading and Books",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_reading_q1",
+        "text": "Do you enjoy reading in your free time?",
+        "audio": "audio/speaking/s1_reading_q1.mp3",
+        "ideaHintsEn": ["non-fiction and essays", "evening decompression", "recent read"],
+        "areSample": {
+          "answer": "I really do, especially in the evenings when I want a slower pace after staring at screens all day.",
+          "reason": "Reading demands a deeper, calmer kind of attention that leaves my mind refreshed rather than overstimulated.",
+          "example": "Right now I'm working my way through a collection of popular-science essays about how cities adapt to extreme weather."
+        }
+      },
+      {
+        "qid": "s1_reading_q2",
+        "text": "Do you prefer printed books or e-books?",
+        "audio": "audio/speaking/s1_reading_q2.mp3",
+        "ideaHintsEn": ["tactile feel of paper", "portability of e-readers", "built-in dictionary for English books"],
+        "areSample": {
+          "answer": "I'm fond of physical books for favourite novels, yet I rely on an e-reader far more in practice.",
+          "reason": "When I read in English, being able to tap an unfamiliar phrase for an instant definition keeps me in the flow without reaching for my phone.",
+          "example": "It's also a lifesaver on flights, since I can carry half a dozen hefty non-fiction titles in my jacket pocket."
+        }
+      },
+      {
+        "qid": "s1_reading_q3",
+        "text": "What kinds of books did you enjoy reading as a child?",
+        "audio": "audio/speaking/s1_reading_q3.mp3",
+        "ideaHintsEn": ["adventure stories or comics", "illustrated encyclopaedias", "vivid imagination"],
+        "areSample": {
+          "answer": "As a kid, I was completely hooked on illustrated mystery series and children's science encyclopaedias.",
+          "reason": "They fed my curiosity about how everyday things worked while still feeling like entertainment rather than homework.",
+          "example": "I still remember borrowing the same battered atlas from our local library three times in a row just to memorise capital cities."
+        }
+      },
+      {
+        "qid": "s1_reading_q4",
+        "text": "Where is your favourite place to read?",
+        "audio": "audio/speaking/s1_reading_q4.mp3",
+        "ideaHintsEn": ["quiet corner café", "balcony armchair", "background hum vs total silence"],
+        "areSample": {
+          "answer": "Surprisingly, I read best in a calm neighbourhood café with a gentle hum of background chatter.",
+          "reason": "Complete silence at home sometimes makes me drowsy, whereas a light buzz around me helps anchor my focus.",
+          "example": "There's a small bookshop café near my flat with wooden booths by the window where I often lose track of two hours on a Saturday."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:food",
+    "topic": "Food and Cooking",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_food_q1",
+        "text": "Do you enjoy cooking, or do you prefer eating out?",
+        "audio": "audio/speaking/s1_food_q1.mp3",
+        "ideaHintsEn": ["cooking as stress relief", "control over ingredients", "eating out for socialising"],
+        "areSample": {
+          "answer": "I genuinely enjoy cooking on weekends, though during hectic weekdays I do lean on local eateries now and then.",
+          "reason": "Preparing a meal at home lets me control the freshness and seasoning, and chopping vegetables is surprisingly therapeutic after a long shift.",
+          "example": "Most Sundays I roast a tray of seasonal vegetables and simmer a big pot of curry to cover my lunches till Wednesday."
+        }
+      },
+      {
+        "qid": "s1_food_q2",
+        "text": "What kind of food is your region or country famous for?",
+        "audio": "audio/speaking/s1_food_q2.mp3",
+        "ideaHintsEn": ["fresh herbs and balanced flavours", "broth-based noodle dishes", "regional variety"],
+        "areSample": {
+          "answer": "Vietnamese cuisine is best known for its bright balance of sweet, sour, salty, and savoury flavours backed by heaps of fresh herbs.",
+          "reason": "Rather than relying on heavy sauces, cooks build depth through slow-simmered broths and crisp raw greens added right before serving.",
+          "example": "In my hometown, for example, locals are fiercely proud of a turmeric noodle dish topped with toasted peanuts and crispy rice crackers."
+        }
+      },
+      {
+        "qid": "s1_food_q3",
+        "text": "Have your eating habits changed much over the past few years?",
+        "audio": "audio/speaking/s1_food_q3.mp3",
+        "ideaHintsEn": ["more mindful nutrition", "less sugary snacks", "regular meal times"],
+        "areSample": {
+          "answer": "They've become noticeably more mindful since my university days, when I basically survived on instant noodles and iced milk tea.",
+          "reason": "I started noticing how directly heavy lunches or sugary snacks dragged down my afternoon concentration.",
+          "example": "Nowadays I make sure half my plate is vegetables, and I've swapped afternoon pastries for roasted almonds and fruit."
+        }
+      },
+      {
+        "qid": "s1_food_q4",
+        "text": "Do you like trying unfamiliar dishes from other countries?",
+        "audio": "audio/speaking/s1_food_q4.mp3",
+        "ideaHintsEn": ["adventurous palate", "learning culture through spice", "memorable recent meal"],
+        "areSample": {
+          "answer": "Absolutely—sampling unfamiliar cuisines is honestly one of my favourite ways to learn about another culture.",
+          "reason": "Spices and cooking methods tell you so much about a region's climate and history without needing a single guidebook.",
+          "example": "Last month a colleague introduced me to Ethiopian injera bread with spiced lentils, and I immediately went home to look up the recipe."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:weather",
+    "topic": "Weather and Seasons",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_weather_q1",
+        "text": "What kind of weather do you enjoy most?",
+        "audio": "audio/speaking/s1_weather_q1.mp3",
+        "ideaHintsEn": ["crisp cool breeze", "mild sunshine", "ideal for walking"],
+        "areSample": {
+          "answer": "I'm happiest in crisp, dry autumn weather—somewhere around twenty degrees with a gentle breeze and soft sunshine.",
+          "reason": "When it's neither sweltering nor freezing, you can spend hours walking outdoors without breaking into a sweat or bundling up in heavy layers.",
+          "example": "Whenever we get a rare cool spell in November, I immediately plan a long bike ride along the river."
+        }
+      },
+      {
+        "qid": "s1_weather_q2",
+        "text": "Does the weather usually affect your mood or energy levels?",
+        "audio": "audio/speaking/s1_weather_q2.mp3",
+        "ideaHintsEn": ["sunlight boosts alertness", "prolonged drizzle feels sluggish", "cozy indoor rituals"],
+        "areSample": {
+          "answer": "More than I'd like to admit, yes—several overcast, humid days in a row definitely make me feel a bit sluggish.",
+          "reason": "Bright morning light acts as a natural pick-me-up, whereas grey skies trick my brain into wanting to stay under a blanket.",
+          "example": "During the monsoon season, I usually turn on warm desk lamps and play upbeat instrumental music just to keep my spirits steady."
+        }
+      },
+      {
+        "qid": "s1_weather_q3",
+        "text": "Do you check the weather forecast regularly?",
+        "audio": "audio/speaking/s1_weather_q3.mp3",
+        "ideaHintsEn": ["quick glance before commuting", "tropical sudden downpours", "carrying a compact umbrella"],
+        "areSample": {
+          "answer": "I glance at a weather widget almost every morning before getting dressed, particularly during the rainy months.",
+          "reason": "Tropical showers here can roll in out of nowhere within twenty minutes, so knowing the afternoon radar saves a thorough soaking.",
+          "example": "Even so, forecasts aren't foolproof, which is why I still tuck a lightweight raincoat under my motorbike seat all year round."
+        }
+      },
+      {
+        "qid": "s1_weather_q4",
+        "text": "What activities do people in your area usually do when the weather is bad?",
+        "audio": "audio/speaking/s1_weather_q4.mp3",
+        "ideaHintsEn": ["hotpot with friends", "cinemas and indoor cafés", "quiet board games at home"],
+        "areSample": {
+          "answer": "When heavy rain hits, most locals either retreat to cosy cafés or gather around a steaming pot of hotpot at home.",
+          "reason": "Sharing warm, comforting food turns a gloomy downpour into a rather pleasant excuse to slow down and catch up.",
+          "example": "Just last Friday a sudden storm cancelled our outdoor badminton game, so six of us ended up playing board games at a friend's flat instead."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:music",
+    "topic": "Music",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_music_q1",
+        "text": "What kind of music do you usually listen to?",
+        "audio": "audio/speaking/s1_music_q1.mp3",
+        "ideaHintsEn": ["acoustic indie or lo-fi", "jazz while working", "adapting playlist to mood"],
+        "areSample": {
+          "answer": "My taste is fairly eclectic, though I gravitate towards mellow indie folk and instrumental jazz most days.",
+          "reason": "Lyrics tend to distract me when I'm reading or coding, so acoustic tracks create a steady rhythm without competing for my attention.",
+          "example": "On my evening commute, however, I'll happily switch to upbeat soul or classic rock to shake off tiredness."
+        }
+      },
+      {
+        "qid": "s1_music_q2",
+        "text": "Have your musical tastes changed much since you were a teenager?",
+        "audio": "audio/speaking/s1_music_q2.mp3",
+        "ideaHintsEn": ["loud pop/rock to subtler genres", "appreciating arrangement and lyrics", "rediscovering classics"],
+        "areSample": {
+          "answer": "Quite dramatically, actually—as a teenager I listened almost exclusively to chart pop and high-energy rock.",
+          "reason": "As I've got older, I've started paying much closer attention to songwriting craft, subtle harmonies, and live instrumentation.",
+          "example": "I recently went back to some acoustic folk albums my father used to play in the car, and they resonate with me in a way they never did at sixteen."
+        }
+      },
+      {
+        "qid": "s1_music_q3",
+        "text": "Have you ever learnt to play a musical instrument?",
+        "audio": "audio/speaking/s1_music_q3.mp3",
+        "ideaHintsEn": ["beginner guitar or piano", "patience required", "casual enjoyment"],
+        "areSample": {
+          "answer": "I taught myself the basics of acoustic guitar at university, though I'd still call myself an enthusiastic amateur at best.",
+          "reason": "Learning chords forced me to slow down and be patient with clumsy fingers, which was a refreshing contrast to screen-based work.",
+          "example": "I don't practise as consistently as I ought to, yet strumming a couple of familiar songs on Sunday afternoons always helps me unwind."
+        }
+      },
+      {
+        "qid": "s1_music_q4",
+        "text": "Do you prefer listening to recorded music or going to live concerts?",
+        "audio": "audio/speaking/s1_music_q4.mp3",
+        "ideaHintsEn": ["intimate live venues", "energy of the crowd", "convenience of headphones daily"],
+        "areSample": {
+          "answer": "Nothing quite beats the electricity of a small live venue, even though recorded music is obviously what fills my everyday life.",
+          "reason": "Hearing musicians improvise on stage and sharing that atmosphere with a crowd turns a familiar track into a one-off memory.",
+          "example": "A few months ago I attended an acoustic jazz trio in a tiny basement club, and the raw acoustics gave me goosebumps."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:sports",
+    "topic": "Sports and Exercise",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_sports_q1",
+        "text": "Do you do any regular sport or physical exercise?",
+        "audio": "audio/speaking/s1_sports_q1.mp3",
+        "ideaHintsEn": ["jogging or badminton", "mental health benefits", "weekly schedule"],
+        "areSample": {
+          "answer": "Yes, I try to jog three mornings a week and play an hour of badminton with colleagues on Thursday evenings.",
+          "reason": "Since my job keeps me hunched over a keyboard all day, moving properly is essential for both my posture and my sleep quality.",
+          "example": "Even a brisk five-kilometre loop around the park clears away mental cobwebs far more effectively than a second cup of coffee."
+        }
+      },
+      {
+        "qid": "s1_sports_q2",
+        "text": "Do you prefer watching sports or playing them yourself?",
+        "audio": "audio/speaking/s1_sports_q2.mp3",
+        "ideaHintsEn": ["active participation", "major tournaments only", "social aspect of playing"],
+        "areSample": {
+          "answer": "I'm much more inclined to play than to spectate, except during major international tournaments like the World Cup.",
+          "reason": "Being on the court gives you an immediate adrenaline rush and a great workout, whereas sitting through a two-hour broadcast rarely holds my attention.",
+          "example": "That said, I'll gladly join friends to cheer on our national football team whenever there's a big knockout match."
+        }
+      },
+      {
+        "qid": "s1_sports_q3",
+        "text": "Which sports are most popular in your country?",
+        "audio": "audio/speaking/s1_sports_q3.mp3",
+        "ideaHintsEn": ["football nationwide", "badminton and pickleball in parks", "morning tai chi and walking"],
+        "areSample": {
+          "answer": "Football is easily the undisputed favourite across all age groups, closely followed by badminton for everyday recreation.",
+          "reason": "Both require minimal gear and can be set up almost anywhere, from school yards to quiet neighbourhood alleys.",
+          "example": "If you walk through any city park at six in the morning, you'll hear the steady pop of shuttlecocks alongside groups doing brisk walking."
+        }
+      },
+      {
+        "qid": "s1_sports_q4",
+        "text": "Is there a sport you have never tried but would like to learn?",
+        "audio": "audio/speaking/s1_sports_q4.mp3",
+        "ideaHintsEn": ["indoor bouldering or swimming", "problem-solving + strength", "weekend beginner class"],
+        "areSample": {
+          "answer": "I've been eager to try indoor bouldering for quite a while now.",
+          "reason": "It appeals to me because it combines upper-body strength with physical puzzle-solving, so your mind stays completely absorbed.",
+          "example": "A new climbing gym opened twenty minutes from my flat recently, and I'm planning to sign up for an introductory session next month."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:photography",
+    "topic": "Photography",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_photography_q1",
+        "text": "Do you like taking photographs?",
+        "audio": "audio/speaking/s1_photography_q1.mp3",
+        "ideaHintsEn": ["casual street and travel photos", "noticing light and details", "not overdoing it"],
+        "areSample": {
+          "answer": "I do enjoy snapping candid scenes when I'm out walking or travelling, though I'm careful not to view the whole trip through a lens.",
+          "reason": "Looking for good light and framing trains you to notice small architectural details you'd normally rush straight past.",
+          "example": "Last weekend I caught the late-afternoon sun slanting across an old flower market, and it turned into one of my favourite shots of the year."
+        }
+      },
+      {
+        "qid": "s1_photography_q2",
+        "text": "Do you usually take photos with your phone or with a dedicated camera?",
+        "audio": "audio/speaking/s1_photography_q2.mp3",
+        "ideaHintsEn": ["smartphone convenience", "modern computational optics", "mirrorless camera for holidays"],
+        "areSample": {
+          "answer": "For everyday moments I almost always use my smartphone, simply because it's already in my pocket.",
+          "reason": "Phone cameras have come on in leaps and bounds, especially in low light, so lugging a bulky camera body feels unnecessary for casual outings.",
+          "example": "I only borrow my brother's mirrorless camera when I'm heading into the mountains and want crisp landscape prints."
+        }
+      },
+      {
+        "qid": "s1_photography_q3",
+        "text": "What do you usually do with the photographs you take?",
+        "audio": "audio/speaking/s1_photography_q3.mp3",
+        "ideaHintsEn": ["curating cloud albums", "printing a few yearly highlights", "sharing privately with family"],
+        "areSample": {
+          "answer": "Most of them sit in organised cloud albums, though I've started printing a handful of favourites at the end of each year.",
+          "reason": "When thousands of images pile up on a hard drive, you hardly ever revisit them, whereas a physical print on a shelf actually sparks memories.",
+          "example": "Last December I put together a slim photo book of our family trip to the highlands, and my parents still flick through it regularly."
+        }
+      },
+      {
+        "qid": "s1_photography_q4",
+        "text": "Do you prefer taking photos of people or of places?",
+        "audio": "audio/speaking/s1_photography_q4.mp3",
+        "ideaHintsEn": ["places and street scenes", "candid portraits over posed smiles", "storytelling"],
+        "areSample": {
+          "answer": "I lean towards places and quiet streetscapes, though an unposed shot of friends laughing is always priceless.",
+          "reason": "Staged portraits tend to look stiff and awkward, whereas landscapes or candid moments capture the genuine mood of a setting.",
+          "example": "My favourite photo from a recent hike isn't the group selfie at the summit, but a shot of mist drifting over a quiet valley below."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:travel",
+    "topic": "Travel and Holidays",
+    "rotation": "2026-Q3",
+    "evergreen": true,
+    "questions": [
+      {
+        "qid": "s1_travel_q1",
+        "text": "Do you enjoy travelling to new places?",
+        "audio": "audio/speaking/s1_travel_q1.mp3",
+        "ideaHintsEn": ["breaking routine", "perspective shift", "slow travel preference"],
+        "areSample": {
+          "answer": "Yes, travelling is easily the thing I look forward to most each year, provided I don't cram too many stops into one itinerary.",
+          "reason": "Stepping out of familiar surroundings shakes up your routine and gives you fresh perspective on everyday problems back home.",
+          "example": "Even a quiet four-day break in a hill town leaves me feeling far more restored than a week spent resting indoors."
+        }
+      },
+      {
+        "qid": "s1_travel_q2",
+        "text": "Do you prefer travelling alone or with other people?",
+        "audio": "audio/speaking/s1_travel_q2.mp3",
+        "ideaHintsEn": ["small group of 2–3 friends", "shared memories vs independence", "occasional solo mini-breaks"],
+        "areSample": {
+          "answer": "My sweet spot is travelling with one or two close friends whose pace matches mine, though I've also enjoyed the odd solo trip.",
+          "reason": "Sharing a stunning view or an unexpected mishap with someone makes the memory twice as rich, without the compromises of a huge tour group.",
+          "example": "When I visited Kyoto with a friend last year, we agreed to split up for a couple of afternoons so we could each explore our own interests."
+        }
+      },
+      {
+        "qid": "s1_travel_q3",
+        "text": "How do you usually plan a holiday before you go?",
+        "audio": "audio/speaking/s1_travel_q3.mp3",
+        "ideaHintsEn": ["loose framework", "booking key transit/stays", "leaving room for spontaneity"],
+        "areSample": {
+          "answer": "I like to pin down the essentials—flights, accommodation, and one or two must-see sights—while leaving the rest delightfully loose.",
+          "reason": "Over-scheduling every hour turns a holiday into a logistical checklist and leaves no room for local recommendations.",
+          "example": "Some of my best meals abroad happened simply because a café owner scribbled the name of a tucked-away noodle shop on a napkin."
+        }
+      },
+      {
+        "qid": "s1_travel_q4",
+        "text": "Is there a place you have visited that you would love to return to?",
+        "audio": "audio/speaking/s1_travel_q4.mp3",
+        "ideaHintsEn": ["mountain town or historic city", "season you missed", "unfinished curiosity"],
+        "areSample": {
+          "answer": "I'd jump at the chance to revisit Da Lat in the central highlands, ideally for a full week rather than a flying weekend.",
+          "reason": "The cool pine-scented air and slower rhythm feel worlds away from coastal humidity, and I barely scratched the surface of its hiking trails.",
+          "example": "Next time I'd love to rent a quiet cabin on the outskirts and spend mornings writing with a view of the valley fog."
+        }
+      }
+    ]
+  },
+  {
+    "id": "s1t:social_media",
+    "topic": "Social Media",
+    "rotation": "2026-Q3",
+    "evergreen": false,
+    "questions": [
+      {
+        "qid": "s1_social_media_q1",
+        "text": "Which social media platforms do you use most often?",
+        "audio": "audio/speaking/s1_social_media_q1.mp3",
+        "ideaHintsEn": ["messaging apps", "video essays or niche forums", "keeping feed curated"],
+        "areSample": {
+          "answer": "I mainly use messaging apps to stay in touch with family, along with YouTube and a couple of niche discussion forums.",
+          "reason": "Long-form channels actually teach me something useful, whereas endless short-video feeds tend to swallow half an hour before I realise it.",
+          "example": "Over the past year I've followed several architecture and linguistics creators whose breakdowns I watch while folding laundry."
+        }
+      },
+      {
+        "qid": "s1_social_media_q2",
+        "text": "How much time do you think you spend on social media each day?",
+        "audio": "audio/speaking/s1_social_media_q2.mp3",
+        "ideaHintsEn": ["30–45 minutes average", "screen-time limits", "evening temptation"],
+        "areSample": {
+          "answer": "I try to keep it under forty-five minutes a day, though it occasionally creeps past an hour when I'm tired after work.",
+          "reason": "Because algorithms are engineered to hold your eye, it's remarkably easy to lose track of time unless you put friction in place.",
+          "example": "Setting a built-in app timer on my phone that dims the screen after thirty minutes has cut my mindless scrolling dramatically."
+        }
+      },
+      {
+        "qid": "s1_social_media_q3",
+        "text": "Do you prefer posting your own updates or mostly reading what others share?",
+        "audio": "audio/speaking/s1_social_media_q3.mp3",
+        "ideaHintsEn": ["quiet observer", "privacy preference", "sharing directly with close friends"],
+        "areSample": {
+          "answer": "I'm very much a quiet observer—I probably post a public update only two or three times a year.",
+          "reason": "I'm quite protective of my privacy, and I'd rather send a quick photo directly to a group chat of close friends than broadcast it to acquaintances.",
+          "example": "When I finished a half-marathon recently, I just texted a picture to my family and three running buddies instead of putting it on a public feed."
+        }
+      },
+      {
+        "qid": "s1_social_media_q4",
+        "text": "Do you think people rely too heavily on social media for news nowadays?",
+        "audio": "audio/speaking/s1_social_media_q4.mp3",
+        "ideaHintsEn": ["speed vs accuracy", "outrage-driven headlines", "cross-checking reputable outlets"],
+        "areSample": {
+          "answer": "Yes, to a worrying degree, because viral headlines often reward outrage rather than accuracy or nuance.",
+          "reason": "A complex economic or scientific story simply can't be understood from a thirty-second clip stripped of context.",
+          "example": "Whenever I see a dramatic claim trending on a feed, I make a point of checking two established news outlets before taking it seriously."
+        }
+      }
+    ]
+  }
+]

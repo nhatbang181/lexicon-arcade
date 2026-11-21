@@ -36,6 +36,10 @@ import {
   WritingTask1PromptSchema,
   EssayTypeSchema,
   ChartKindSchema,
+  SpeakingPart1TopicSchema,
+  SpeakingCueCardSchema,
+  SpeakingPart3SetSchema,
+  SpeakingPhraseSchema,
   TopicSchema,
   ManifestSchema,
   ProvenanceSchema,
@@ -1936,6 +1940,326 @@ if (fs.existsSync(writingDir)) {
     .map(([k, v]) => `${k}:${v}`)
     .join(', ');
   summary.push(`writing/task1: ${diskTask1Files.length} visuals (${kindSummary})`);
+}
+
+// ---------------------------------------------------------------------------
+// 7e. Validate public/data/speaking/** & [INV-S1..S3]
+// ---------------------------------------------------------------------------
+
+const speakingDir = path.join(PUBLIC_DATA, 'speaking');
+if (fs.existsSync(speakingDir)) {
+  const ROTATION_RE = /^\d{4}-(Q1|Q2|Q3)$/;
+  const SPEAKING_AUDIO_RE = /^audio\/speaking\/[a-z0-9_]+\.mp3$/;
+  const PLACEHOLDER_RE = /\b(?:TODO|TBD|FIXME|LOREM IPSUM|PLACEHOLDER)\b/i;
+
+  const speakingQids = new Set();
+  const speakingAudioPaths = new Set();
+  const audioSpeakingDir = path.join(PUBLIC_DIR, 'audio', 'speaking');
+  const hasSpeakingAudioDir = fs.existsSync(audioSpeakingDir);
+  let speakingAudioChecked = 0;
+  let speakingAudioMissing = 0;
+
+  function checkSpeakingAudio(relAudio, label) {
+    if (!SPEAKING_AUDIO_RE.test(relAudio)) {
+      fail(`speaking audio path format invalid (${label}): "${relAudio}"`);
+      return;
+    }
+    if (speakingAudioPaths.has(relAudio)) {
+      fail(`Duplicate speaking audio path "${relAudio}" (${label})`);
+    } else {
+      speakingAudioPaths.add(relAudio);
+    }
+    if (hasSpeakingAudioDir || REQUIRE_AUDIO) {
+      const fullAudio = path.join(PUBLIC_DIR, relAudio);
+      if (fs.existsSync(fullAudio)) {
+        if (fs.statSync(fullAudio).size === 0) {
+          fail(`Empty speaking audio file (${label}): public/${relAudio}`);
+        } else {
+          speakingAudioChecked++;
+        }
+      } else {
+        speakingAudioMissing++;
+        if (REQUIRE_AUDIO) {
+          fail(`Missing speaking audio file (${label}): public/${relAudio}`);
+        }
+      }
+    }
+  }
+
+  function checkNoPlaceholder(obj, label) {
+    if (PLACEHOLDER_RE.test(JSON.stringify(obj))) {
+      fail(`Placeholder text detected in ${label}`);
+    }
+  }
+
+  // 7e.1 Part 1 topics
+  const spPart1 = readJsonChecked('speaking/part1.json');
+  let p1QuestionCount = 0;
+  if (Array.isArray(spPart1)) {
+    if (spPart1.length < 30) {
+      fail(`speaking/part1.json has ${spPart1.length} topics (MVP minimum >= 30)`);
+    }
+    const p1TopicsSeen = new Set();
+    for (let i = 0; i < spPart1.length; i++) {
+      const t = spPart1[i];
+      const parsed = SpeakingPart1TopicSchema.safeParse(t);
+      if (!parsed.success) {
+        fail(
+          `speaking/part1.json[${i}] (${t?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      checkProvenanceInv(t, 'speaking/part1.json');
+      registerGlobalId(t.id, 'speaking/part1.json');
+      checkNoPlaceholder(t, `speaking/part1.json ${t.id}`);
+
+      const normTopic = t.topic.trim().toLowerCase();
+      if (p1TopicsSeen.has(normTopic)) {
+        fail(`speaking/part1.json duplicate topic "${t.topic}"`);
+      }
+      p1TopicsSeen.add(normTopic);
+
+      // [INV-S2]
+      if (!ROTATION_RE.test(t.rotation)) {
+        fail(`[INV-S2] speaking/part1.json ${t.id}: invalid rotation "${t.rotation}"`);
+      }
+      if (t.questions.length < 4 || t.questions.length > 5) {
+        fail(`speaking/part1.json ${t.id}: has ${t.questions.length} questions (expected 4-5)`);
+      }
+
+      for (const q of t.questions) {
+        p1QuestionCount++;
+        if (speakingQids.has(q.qid)) {
+          fail(`speaking/part1.json duplicate qid "${q.qid}"`);
+        }
+        speakingQids.add(q.qid);
+        checkSpeakingAudio(q.audio, `${t.id}/${q.qid}`);
+        if (!q.areSample) {
+          fail(`speaking/part1.json ${t.id}/${q.qid}: missing required areSample`);
+        }
+        if (q.ideaHintsEn.length === 0) {
+          fail(`speaking/part1.json ${t.id}/${q.qid}: empty ideaHintsEn`);
+        }
+      }
+    }
+    summary.push(`speaking/part1.json: ${spPart1.length} topics (${p1QuestionCount} questions, 100% with areSample)`);
+  } else if (spPart1 !== null) {
+    fail('speaking/part1.json must be a JSON array');
+  }
+
+  // 7e.2 Part 2 cue cards & Part 3 sets + [INV-S1..S3]
+  const spPart2 = readJsonChecked('speaking/part2.json');
+  const spPart3 = readJsonChecked('speaking/part3.json');
+
+  const part2ById = new Map();
+  const part3ById = new Map();
+  const p2Categories = new Map();
+  const p2Rotations = new Map();
+  let p2EvergreenCount = 0;
+
+  if (Array.isArray(spPart2)) {
+    if (spPart2.length < 40) {
+      fail(`speaking/part2.json has ${spPart2.length} cue cards (MVP minimum >= 40)`);
+    }
+    for (let i = 0; i < spPart2.length; i++) {
+      const c = spPart2[i];
+      const parsed = SpeakingCueCardSchema.safeParse(c);
+      if (!parsed.success) {
+        fail(
+          `speaking/part2.json[${i}] (${c?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      checkProvenanceInv(c, 'speaking/part2.json');
+      registerGlobalId(c.id, 'speaking/part2.json');
+      checkNoPlaceholder(c, `speaking/part2.json ${c.id}`);
+      part2ById.set(c.id, c);
+
+      // [INV-S2]
+      if (!ROTATION_RE.test(c.rotation)) {
+        fail(`[INV-S2] speaking/part2.json ${c.id}: invalid rotation "${c.rotation}"`);
+      }
+      p2Rotations.set(c.rotation, (p2Rotations.get(c.rotation) || 0) + 1);
+      if (c.evergreen) p2EvergreenCount++;
+      p2Categories.set(c.category, (p2Categories.get(c.category) || 0) + 1);
+
+      if (c.bullets.length < 3 || c.bullets.length > 4) {
+        fail(`speaking/part2.json ${c.id}: bullets length=${c.bullets.length} (expected 3-4)`);
+      }
+      if (c.sampleNotes.length === 0 || c.sampleNotes.length > 10) {
+        fail(`speaking/part2.json ${c.id}: sampleNotes length=${c.sampleNotes.length} outside [1, 10]`);
+      }
+      const wc = wordCount(c.band8Sample.text);
+      if (wc < 250 || wc > 330) {
+        fail(`speaking/part2.json ${c.id}: band8Sample wordCount=${wc} outside [250, 330]`);
+      }
+      checkSpeakingAudio(c.audio, c.id);
+    }
+
+    // [INV-S3] >= 40% evergreen & >= 30 cue cards per active rotation
+    const evergreenPct = spPart2.length > 0 ? (p2EvergreenCount / spPart2.length) * 100 : 0;
+    if (evergreenPct < 40) {
+      fail(
+        `[INV-S3] speaking/part2.json evergreen=${p2EvergreenCount}/${spPart2.length} (${evergreenPct.toFixed(1)}% < 40%)`
+      );
+    }
+    for (const [rot, cnt] of p2Rotations.entries()) {
+      if (cnt < 30) {
+        fail(`[INV-S3] speaking/part2.json rotation "${rot}" has ${cnt} cue cards (minimum >= 30)`);
+      }
+    }
+    summary.push(
+      `speaking/part2.json: ${spPart2.length} cue cards (${evergreenPct.toFixed(0)}% evergreen, rotations: ${[
+        ...p2Rotations.entries(),
+      ]
+        .map(([k, v]) => `${k}:${v}`)
+        .join(', ')})`
+    );
+  } else if (spPart2 !== null) {
+    fail('speaking/part2.json must be a JSON array');
+  }
+
+  let p3QuestionCount = 0;
+  let p3FollowUpCount = 0;
+  if (Array.isArray(spPart3)) {
+    if (spPart3.length < 40) {
+      fail(`speaking/part3.json has ${spPart3.length} sets (MVP minimum >= 40)`);
+    }
+    for (let i = 0; i < spPart3.length; i++) {
+      const s = spPart3[i];
+      const parsed = SpeakingPart3SetSchema.safeParse(s);
+      if (!parsed.success) {
+        fail(
+          `speaking/part3.json[${i}] (${s?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      checkProvenanceInv(s, 'speaking/part3.json');
+      registerGlobalId(s.id, 'speaking/part3.json');
+      checkNoPlaceholder(s, `speaking/part3.json ${s.id}`);
+      part3ById.set(s.id, s);
+
+      if (s.questions.length < 5) {
+        fail(`speaking/part3.json ${s.id}: has ${s.questions.length} questions (expected >= 5)`);
+      }
+      for (const q of s.questions) {
+        p3QuestionCount++;
+        if (speakingQids.has(q.qid)) {
+          fail(`speaking/part3.json duplicate qid "${q.qid}"`);
+        }
+        speakingQids.add(q.qid);
+        checkSpeakingAudio(q.audio, `${s.id}/${q.qid}`);
+        if (q.followUps.length < 2) {
+          fail(`speaking/part3.json ${s.id}/${q.qid}: has ${q.followUps.length} followUps (minimum >= 2)`);
+        }
+        for (let fi = 0; fi < q.followUps.length; fi++) {
+          p3FollowUpCount++;
+          checkSpeakingAudio(q.followUps[fi].audio, `${s.id}/${q.qid}/f${fi + 1}`);
+        }
+      }
+    }
+    summary.push(
+      `speaking/part3.json: ${spPart3.length} sets (${p3QuestionCount} questions, ${p3FollowUpCount} followUps)`
+    );
+  } else if (spPart3 !== null) {
+    fail('speaking/part3.json must be a JSON array');
+  }
+
+  // [INV-S1] Bidirectional link check between Part 2 and Part 3
+  for (const [cardId, card] of part2ById.entries()) {
+    const linked = part3ById.get(card.linkedPart3Id);
+    if (!linked) {
+      fail(`[INV-S1] ${cardId}: linkedPart3Id "${card.linkedPart3Id}" does not exist in speaking/part3.json`);
+    } else if (linked.linkedCueCardId !== cardId) {
+      fail(
+        `[INV-S1] ${cardId} -> ${linked.id}, but ${linked.id}.linkedCueCardId="${linked.linkedCueCardId}" (mismatch)`
+      );
+    }
+  }
+  for (const [setId, p3] of part3ById.entries()) {
+    const linkedCard = part2ById.get(p3.linkedCueCardId);
+    if (!linkedCard) {
+      fail(`[INV-S1] ${setId}: linkedCueCardId "${p3.linkedCueCardId}" does not exist in speaking/part2.json`);
+    } else if (linkedCard.linkedPart3Id !== setId) {
+      fail(
+        `[INV-S1] ${setId} -> ${linkedCard.id}, but ${linkedCard.id}.linkedPart3Id="${linkedCard.linkedPart3Id}" (mismatch)`
+      );
+    }
+  }
+
+  // 7e.3 Speaking Phrases
+  const spPhrases = readJsonChecked('speaking/phrases.json');
+  if (Array.isArray(spPhrases)) {
+    if (spPhrases.length < 80) {
+      fail(`speaking/phrases.json has ${spPhrases.length} items (MVP minimum >= 80)`);
+    }
+    const fnCounts = Object.fromEntries(SpeakingPhraseSchema.shape.function.options.map((f) => [f, 0]));
+    const phraseSeen = new Set();
+    for (let i = 0; i < spPhrases.length; i++) {
+      const p = spPhrases[i];
+      const parsed = SpeakingPhraseSchema.safeParse(p);
+      if (!parsed.success) {
+        fail(
+          `speaking/phrases.json[${i}] (${p?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      checkProvenanceInv(p, 'speaking/phrases.json');
+      registerGlobalId(p.id, 'speaking/phrases.json');
+      checkNoPlaceholder(p, `speaking/phrases.json ${p.id}`);
+      fnCounts[p.function] = (fnCounts[p.function] || 0) + 1;
+
+      const normPhrase = p.phrase.trim().toLowerCase();
+      if (phraseSeen.has(normPhrase)) {
+        fail(`speaking/phrases.json duplicate phrase "${p.phrase}"`);
+      }
+      phraseSeen.add(normPhrase);
+
+      if (p.ipa && (!/^\/.+\/$/.test(p.ipa) || CJK_RE.test(p.ipa))) {
+        fail(`speaking/phrases.json ${p.id}: invalid IPA "${p.ipa}"`);
+      }
+      checkSpeakingAudio(p.audio, p.id);
+    }
+    for (const [fn, cnt] of Object.entries(fnCounts)) {
+      if (cnt < 8) {
+        fail(`speaking/phrases.json function "${fn}" has ${cnt} items (minimum >= 8)`);
+      }
+    }
+    summary.push(
+      `speaking/phrases.json: ${spPhrases.length} items (${Object.entries(fnCounts)
+        .map(([k, v]) => `${k}:${v}`)
+        .join(', ')})`
+    );
+  } else if (spPhrases !== null) {
+    fail('speaking/phrases.json must be a JSON array');
+  }
+
+  if (!hasSpeakingAudioDir && !REQUIRE_AUDIO) {
+    warnings.push(
+      `public/audio/speaking/ not yet rendered (M5 r-audio-speaking step) — ${speakingAudioPaths.size} audio paths validated.`
+    );
+  } else if (hasSpeakingAudioDir) {
+    summary.push(
+      `Speaking audio files verified: ${speakingAudioChecked}/${speakingAudioPaths.size} non-empty`
+    );
+    if (speakingAudioMissing > 0 && !REQUIRE_AUDIO) {
+      warnings.push(
+        `${speakingAudioMissing} speaking audio files pending; pass --require-audio to enforce 100%.`
+      );
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------

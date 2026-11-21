@@ -1,0 +1,892 @@
+[
+  {
+    "cueCard": {
+      "id": "s2c:021",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "event",
+      "prompt": "Describe a community event or neighbourhood project you took part in.",
+      "bullets": [
+        "what the event or project was and who organised it",
+        "what role you played during the day",
+        "who else participated alongside you"
+      ],
+      "finalBullet": "and explain what made taking part so rewarding.",
+      "audio": "audio/speaking/s2c_021.mp3",
+      "linkedPart3Id": "s3s:021",
+      "sampleNotes": [
+        "Sunday morning canal-bank clean-up & tree planting",
+        "organised by local youth volunteer group",
+        "50 residents: students, retirees, shopkeepers",
+        "sorted recyclables & planted 30 bougainvillea",
+        "free iced lime tea from corner shop",
+        "turned faceless neighbours into real community"
+      ],
+      "band8Sample": {
+        "text": "Last spring I took part in a Sunday morning canal-bank clean-up and tree-planting drive organised by a grassroots youth group in my ward. For months, a two-hundred-metre strip along a small tributary near my flat had been accumulating windblown plastic bags, discarded foam boxes, and overgrown weeds, so residents barely walked past it anymore. When I saw a handwritten flyer taped to our apartment lift asking for volunteers at half past six on Sunday, I signed up half-expecting maybe ten people to show up. Instead, nearly fifty neighbours turned out in sun hats and gardening gloves—university students, two retired schoolteachers, a local baker, and even a handful of primary-school children dragging oversized rakes. I was paired with two engineering students and an older gentleman from the next block to clear plastic debris from the stone embankment and sort glass bottles, metal cans, and general rubbish into separate sacks before the municipal truck arrived. During the second half of the morning, we dug shallow trenches along the railing and planted thirty young bougainvillea shrubs donated by a neighbourhood nursery. Midway through, the owner of a corner noodle stall carried out two huge thermoses of cold lime tea for everyone free of charge. What made the morning genuinely rewarding wasn't just seeing the embankment transform within three hours—though that visual contrast was hugely satisfying—it was watching strangers who had nodded silently in lifts for years suddenly trading jokes and names. Even now, whenever I jog past those blooming shrubs, I feel a quiet sense of shared ownership over the street.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Would you join a similar volunteer project again?",
+        "Is local volunteering common where you live?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:021",
+      "linkedCueCardId": "s2c:021",
+      "questions": [
+        {
+          "qid": "s3_021_q1",
+          "text": "Why do people in large cities often feel less connected to their neighbours than people in smaller towns?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_021_q1.mp3",
+          "followUps": [
+            { "text": "Does frequent renting and moving weaken neighbourhood trust?", "audio": "audio/speaking/s3_021_q1_f1.mp3" },
+            { "text": "Can apartment design itself encourage or discourage casual chats?", "audio": "audio/speaking/s3_021_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_021_q2",
+          "text": "Should schools and universities make community service a compulsory requirement for graduation?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_021_q2.mp3",
+          "followUps": [
+            { "text": "Does making volunteering mandatory defeat the spirit of generosity?", "audio": "audio/speaking/s3_021_q2_f1.mp3" },
+            { "text": "Could structured exposure still turn reluctant students into lifelong volunteers?", "audio": "audio/speaking/s3_021_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_021_q3",
+          "text": "How does informal neighbourhood volunteering compare with donating money to large charitable organisations?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_021_q3.mp3",
+          "followUps": [
+            { "text": "Which approach tends to build more trust among donors?", "audio": "audio/speaking/s3_021_q3_f1.mp3" },
+            { "text": "Why are large charities still essential for complex issues like disaster relief?", "audio": "audio/speaking/s3_021_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_021_q4",
+          "text": "What can local councils do to encourage busy working adults to participate in civic initiatives?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_021_q4.mp3",
+          "followUps": [
+            { "text": "Would offering short two-hour micro-volunteering slots attract more people?", "audio": "audio/speaking/s3_021_q4_f1.mp3" },
+            { "text": "How important is showing visible results quickly after residents pitch in?", "audio": "audio/speaking/s3_021_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_021_q5",
+          "text": "Do you think maintaining clean public streets should be the sole responsibility of municipal workers, or of residents too?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_021_q5.mp3",
+          "followUps": [
+            { "text": "Why do fines alone rarely solve urban littering?", "audio": "audio/speaking/s3_021_q5_f1.mp3" },
+            { "text": "How do social norms shape whether people litter in public?", "audio": "audio/speaking/s3_021_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:022",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "event",
+      "prompt": "Describe a live performance, concert, or talk that exceeded your expectations.",
+      "bullets": [
+        "what the event was and where it took place",
+        "why you initially had modest expectations",
+        "what happened on stage that surprised you"
+      ],
+      "finalBullet": "and explain why the experience left such a strong impression.",
+      "audio": "audio/speaking/s2c_022.mp3",
+      "linkedPart3Id": "s3s:022",
+      "sampleNotes": [
+        "chamber orchestra + traditional bamboo flute fusion",
+        "restored municipal theatre, rainy Friday",
+        "dragged along by colleague, expected stuffy evening",
+        "conductor spoke warmly between pieces",
+        "silent hall during solo flute encore",
+        "shattered stereotype that classical music is distant"
+      ],
+      "band8Sample": {
+        "text": "A live performance that completely blindsided me was an evening chamber concert at our restored municipal opera house last winter, pairing a small string ensemble with traditional Vietnamese bamboo flute and monochord players. To be completely honest, I only went because a colleague had a spare ticket after her sister caught a cold, and I walked in expecting two rather stiff hours of unfamiliar classical arrangements that might put me half to sleep after a gruelling workweek. From the very first piece, however, the hall's acoustics and the musicians' energy woke me straight up. What made the night extraordinary was how approachable the young conductor kept everything. Between each movement, he turned towards the audience with a handheld microphone and spent ninety seconds explaining the regional folk melody behind the score—demonstrating a single haunting phrase on the bamboo flute before the cellos and violins wove around it. Hearing how seamlessly a centuries-old northern lullaby blended with Western string harmonies gave me literal chills. During the unannounced encore, the lights dimmed to a single warm spotlight on the flautist, and six hundred people fell so utterly quiet you could hear the performer drawing breath between notes. Walking out into the cool drizzle afterwards, my colleague and I talked animatedly for an hour over hot ginger tea. That evening shattered my lazy assumption that formal concert halls are reserved for connoisseurs, and it reminded me how rare and moving it is to sit in a dark room with hundreds of strangers giving a craft their undivided attention.",
+        "estSeconds": 114
+      },
+      "roundingOffQs": [
+        "Have you been back to a similar concert since then?",
+        "Do you think ticket prices put young people off live arts?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:022",
+      "linkedCueCardId": "s2c:022",
+      "questions": [
+        {
+          "qid": "s3_022_q1",
+          "text": "Why are people still willing to pay high prices for live concerts when studio recordings are virtually free online?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_022_q1.mp3",
+          "followUps": [
+            { "text": "Is it mainly about acoustic quality or the shared emotional atmosphere?", "audio": "audio/speaking/s3_022_q1_f1.mp3" },
+            { "text": "Do huge stadium tours give good value compared with intimate venues?", "audio": "audio/speaking/s3_022_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_022_q2",
+          "text": "How does attending a live theatre play or lecture compare with watching a filmed version at home?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_022_q2.mp3",
+          "followUps": [
+            { "text": "Do streamed performances widen access for people living outside major cities?", "audio": "audio/speaking/s3_022_q2_f1.mp3" },
+            { "text": "Why do people pay closer attention in a theatre than on their sofa?", "audio": "audio/speaking/s3_022_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_022_q3",
+          "text": "Should public tax money subsidise classical theatres, symphonies, and traditional performing arts?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_022_q3.mp3",
+          "followUps": [
+            { "text": "How would you answer critics who say those funds should go to hospitals or schools instead?", "audio": "audio/speaking/s3_022_q3_f1.mp3" },
+            { "text": "Should subsidised venues be required to offer cheap tickets for students?", "audio": "audio/speaking/s3_022_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_022_q4",
+          "text": "What can concert organisers do to prevent ticket scalping and make popular events fairer for ordinary fans?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_022_q4.mp3",
+          "followUps": [
+            { "text": "Are ID-linked digital tickets and capped resale platforms practical?", "audio": "audio/speaking/s3_022_q4_f1.mp3" },
+            { "text": "Should dynamic surge pricing for concert tickets be banned?", "audio": "audio/speaking/s3_022_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_022_q5",
+          "text": "How might technology such as holograms or mixed reality reshape live entertainment in the coming decades?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_022_q5.mp3",
+          "followUps": [
+            { "text": "Would audiences embrace virtual concerts by retired or deceased musicians?", "audio": "audio/speaking/s3_022_q5_f1.mp3" },
+            { "text": "Might raw unplugged performances become even more prized in response?", "audio": "audio/speaking/s3_022_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:023",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "event",
+      "prompt": "Describe a sporting match or competition you watched or participated in.",
+      "bullets": [
+        "what sport it was and when it took place",
+        "whether you were playing or watching, and who was with you",
+        "what made the match dramatic or exciting"
+      ],
+      "finalBullet": "and explain why you still remember it so clearly.",
+      "audio": "audio/speaking/s2c_023.mp3",
+      "linkedPart3Id": "s3s:023",
+      "sampleNotes": [
+        "inter-company amateur badminton doubles final",
+        "local indoor sports hall, sweltering Saturday",
+        "partnered with quiet accounts colleague Duc",
+        "lost first set 14-21, cramped calves",
+        "switched to short net drops & patience",
+        "won 22-20 in decider - huge team roar"
+      ],
+      "band8Sample": {
+        "text": "One sporting match I'll remember for years wasn't a televised World Cup final, but an amateur inter-company badminton doubles final I played in last summer at a packed local sports hall. Our office club had entered mostly for fun, yet somehow my partner Duc—a quiet accountant with razor-sharp reflexes at the net—and I scraped through four knockout rounds to face a much younger, harder-hitting pair from a logistics firm. The hall was sweltering, my palms kept slipping on the racket grip, and in the opening game their thunderous smashes completely overwhelmed us; we dropped it fourteen to twenty-one in barely ten minutes. Between sets, instead of panicking, Duc leaned over and said quietly, 'Stop lifting the shuttle high to the back—force them to play soft drops at the net.' That simple tactical adjustment flipped the entire match on its head. We slowed the rally tempo down, moved them side to side, and squeaked out the second game twenty-one to nineteen. By the deciding set, both pairs were drenched in sweat and roughly forty colleagues from both companies had crowded behind the glass railing cheering every single rally. At nineteen-all, we survived a lung-burning thirty-shot exchange before Duc flicked a feathered cross-court drop that just clipped the tape and tumbled over. Two points later we sealed it twenty-two to twenty, and our colleagues rushed over banging water bottles like drums. I still remember it so vividly because it taught me how composure and smart teamwork can overcome raw power when your legs feel ready to give up.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Do you still play badminton with that same partner?",
+        "Do you handle competitive pressure well in everyday life too?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:023",
+      "linkedCueCardId": "s2c:023",
+      "questions": [
+        {
+          "qid": "s3_023_q1",
+          "text": "How do team sports differ from individual sports in the personal qualities they develop?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_023_q1.mp3",
+          "followUps": [
+            { "text": "Should children try both team and individual sports before specialising?", "audio": "audio/speaking/s3_023_q1_f1.mp3" },
+            { "text": "Which kind is easier to sustain as a busy adult?", "audio": "audio/speaking/s3_023_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_023_q2",
+          "text": "Do you think hosting mega-events like the Olympics or World Cup is generally worth the massive public investment?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_023_q2.mp3",
+          "followUps": [
+            { "text": "How can host cities avoid being left with empty stadiums afterwards?", "audio": "audio/speaking/s3_023_q2_f1.mp3" },
+            { "text": "Should multiple neighbouring countries co-host major tournaments more often?", "audio": "audio/speaking/s3_023_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_023_q3",
+          "text": "Why do top professional athletes earn vastly higher incomes than people in essential public services like nurses or teachers?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_023_q3.mp3",
+          "followUps": [
+            { "text": "Is that simply market economics, or does it reflect distorted social values?", "audio": "audio/speaking/s3_023_q3_f1.mp3" },
+            { "text": "Does a short professional athletic career partly justify higher peak salaries?", "audio": "audio/speaking/s3_023_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_023_q4",
+          "text": "What can governments and schools do to boost everyday physical activity among sedentary office workers and teenagers?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_023_q4.mp3",
+          "followUps": [
+            { "text": "Are free outdoor fitness parks more effective than gym subsidies?", "audio": "audio/speaking/s3_023_q4_f1.mp3" },
+            { "text": "Why do so many teenagers drop out of sport around exam years?", "audio": "audio/speaking/s3_023_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_023_q5",
+          "text": "Do you think competitive e-sports should be treated on the same footing as traditional physical sports?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_023_q5.mp3",
+          "followUps": [
+            { "text": "What skills do top e-sports players share with chess or motorsport competitors?", "audio": "audio/speaking/s3_023_q5_f1.mp3" },
+            { "text": "What health concerns arise from intense professional gaming schedules?", "audio": "audio/speaking/s3_023_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:024",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "event",
+      "prompt": "Describe a time when a sudden change in the weather disrupted your plans.",
+      "bullets": [
+        "what you had planned to do and who was with you",
+        "how suddenly the weather changed",
+        "what you did instead to salvage the day"
+      ],
+      "finalBullet": "and explain how you felt about how things turned out.",
+      "audio": "audio/speaking/s2c_024.mp3",
+      "linkedPart3Id": "s3s:024",
+      "sampleNotes": [
+        "autumn picnic & hilltop hike with 4 friends",
+        "bright blue skies at 8 am -> black clouds by 11",
+        "torrential downpour & howling wind on trail",
+        "sheltered in tiny wooden tea shack halfway down",
+        "owner fried ginger tofu & shared stories",
+        "soaked shoes yet coziest afternoon all year"
+      ],
+      "band8Sample": {
+        "text": "Last October, four university friends and I planned a day-long hike and picnic up a scenic pine ridge just outside Da Lat to celebrate everyone finally having a free Saturday at the same time. When we set off at eight in the morning, the sky was crystal blue without a single cloud in sight, so naturally half of us left our waterproof jackets in the car boot and packed light cotton hoodies alongside baguettes, fruit, and a picnic blanket. Barely twenty minutes before we reached the grassy summit clearing, however, the temperature plunged almost instantaneously, a chilly wind began bending the treetops, and a thick wall of slate-grey cloud swept straight across the valley. Within five minutes, the heavens opened with stinging sideways rain that turned the dirt footpath into slick red mud. Continuing to the exposed ridge would have been genuinely unsafe, so we scrambled back down the track, laughing nervously as our trainers squelched with every step. Halfway down we spotted a tiny timber tea shack run by a retired local couple and dashed under its corrugated iron awning looking like drowned rats. Seeing us shivering, the owner promptly stoked a small charcoal brazier so we could warm our hands, brewed a huge kettle of hot artichoke and ginger tea, and fried up a plate of crispy spiced tofu to go alongside our rescued picnic sandwiches. We ended up sitting on low stools for two hours watching curtains of rain veil the pine forest while trading old college stories. Looking back, I'm almost glad the storm ruined our polished itinerary—that unplanned afternoon by the fire felt far warmer and more memorable than an ordinary sunny picnic would ever have been.",
+        "estSeconds": 124
+      },
+      "roundingOffQs": [
+        "Are you more careful about packing rain gear now?",
+        "Do sudden weather changes bother you much in daily life?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:024",
+      "linkedCueCardId": "s2c:024",
+      "questions": [
+        {
+          "qid": "s3_024_q1",
+          "text": "How have modern weather forecasting apps changed the way industries and ordinary people plan their activities?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_024_q1.mp3",
+          "followUps": [
+            { "text": "Which economic sectors suffer most when forecasts turn out wrong?", "audio": "audio/speaking/s3_024_q1_f1.mp3" },
+            { "text": "Do people still pay attention to natural signs of weather change anymore?", "audio": "audio/speaking/s3_024_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_024_q2",
+          "text": "Why do extreme weather events—such as flash floods and heatwaves—often hit large cities harder than rural areas?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_024_q2.mp3",
+          "followUps": [
+            { "text": "How does paving over soil and wetlands worsen urban flooding?", "audio": "audio/speaking/s3_024_q2_f1.mp3" },
+            { "text": "Which groups of city residents are most vulnerable during severe heatwaves?", "audio": "audio/speaking/s3_024_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_024_q3",
+          "text": "What practical urban infrastructure changes can help cities adapt to increasingly unpredictable weather?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_024_q3.mp3",
+          "followUps": [
+            { "text": "How do 'sponge city' features like permeable pavements and retention parks work?", "audio": "audio/speaking/s3_024_q3_f1.mp3" },
+            { "text": "Why do governments often delay investing in climate adaptation until after a disaster?", "audio": "audio/speaking/s3_024_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_024_q4",
+          "text": "How might changing climate patterns affect tourism destinations in Asia and Europe over the next twenty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_024_q4.mp3",
+          "followUps": [
+            { "text": "Could cooler northern or highland destinations see a surge in summer visitors?", "audio": "audio/speaking/s3_024_q4_f1.mp3" },
+            { "text": "How can coastal towns diversify their economies if beach seasons become harsher?", "audio": "audio/speaking/s3_024_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_024_q5",
+          "text": "Do you think local climate strongly shapes a country's culture, cuisine, and daily social habits?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_024_q5.mp3",
+          "followUps": [
+            { "text": "Can you give an example of how climate influences daily schedules where you live?", "audio": "audio/speaking/s3_024_q5_f1.mp3" },
+            { "text": "Does universal air conditioning weaken those traditional seasonal rhythms?", "audio": "audio/speaking/s3_024_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:025",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "experience",
+      "prompt": "Describe a challenging skill you learnt as a teenager or adult.",
+      "bullets": [
+        "what the skill was and why you decided to learn it",
+        "how you went about practising it",
+        "what difficulties you faced along the way"
+      ],
+      "finalBullet": "and explain how mastering it changed your confidence.",
+      "audio": "audio/speaking/s2c_025.mp3",
+      "linkedPart3Id": "s3s:025",
+      "sampleNotes": [
+        "learning freestyle swimming at age 23",
+        "missed out on boat trips & beach swims",
+        "hired patient coach at 6 am outdoor pool",
+        "panicked exhaling underwater at first",
+        "drilled breathing rhythm 3x/week for 3 months",
+        "first 500m continuous swim -> huge confidence boost"
+      ],
+      "band8Sample": {
+        "text": "A skill I'm genuinely proud of picking up as an adult is freestyle swimming, which I finally learnt at the age of twenty-three after growing up terrified of deep water. Even though I came from a coastal region, I'd had a brief scare at the beach as a young child and quietly avoided anything deeper than chest height for fifteen years. What finally nudged me to face it was sitting on the deck of a boat during a friends' island trip, awkwardly clutching my backpack while everyone else dived effortlessly into clear turquoise water. The following Monday, I swallowed my pride and signed up for early-morning adult beginner lessons at a municipal outdoor pool. Those first three weeks were deeply humbling—I was sharing a lane with confident eight-year-olds gliding past me like dolphins while I spluttered after barely five metres. My biggest hurdle wasn't physical strength at all, but breathing panic: the instant my face went under, my body tensed up and burned through oxygen twice as fast. My coach made me stop trying to cross the pool and spend entire sessions simply floating, blowing steady bubbles underwater, and turning my head smoothly to the side. I committed to going three mornings a week before work, rain or shine, for three solid months. The morning I finally linked ten uninterrupted fifty-metre lengths without stopping for breath felt exhilarating. Mastering swimming as an adult did far more than unlock beach holidays—it proved to me that long-standing fears aren't permanent personality traits, and that tolerating being clumsy in public for a few weeks is a tiny price for a lifelong skill.",
+        "estSeconds": 119
+      },
+      "roundingOffQs": [
+        "Do you still swim regularly nowadays?",
+        "Is there another challenging skill you would like to learn soon?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:025",
+      "linkedCueCardId": "s2c:025",
+      "questions": [
+        {
+          "qid": "s3_025_q1",
+          "text": "Why do many adults hesitate to start learning completely new skills from scratch?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_025_q1.mp3",
+          "followUps": [
+            { "text": "Is fear of looking foolish a bigger obstacle than lack of free time?", "audio": "audio/speaking/s3_025_q1_f1.mp3" },
+            { "text": "How does adult ego affect the way we handle early mistakes?", "audio": "audio/speaking/s3_025_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_025_q2",
+          "text": "How does learning a practical skill through online tutorials compare with learning from an in-person coach?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_025_q2.mp3",
+          "followUps": [
+            { "text": "Which types of skills work well for self-study online, and which really need live feedback?", "audio": "audio/speaking/s3_025_q2_f1.mp3" },
+            { "text": "Why do so many people start free online courses yet never finish them?", "audio": "audio/speaking/s3_025_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_025_q3",
+          "text": "Should employers provide paid study hours so staff can continually update their skills?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_025_q3.mp3",
+          "followUps": [
+            { "text": "Why do some companies worry about training employees who might later leave?", "audio": "audio/speaking/s3_025_q3_f1.mp3" },
+            { "text": "What risks does a firm face if it refuses to invest in retraining?", "audio": "audio/speaking/s3_025_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_025_q4",
+          "text": "Which workplace or life skills do you predict will become most valuable over the next fifteen years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_025_q4.mp3",
+          "followUps": [
+            { "text": "Will interpersonal and communication skills become more valuable as automation expands?", "audio": "audio/speaking/s3_025_q4_f1.mp3" },
+            { "text": "How should universities prepare students for jobs that do not yet exist?", "audio": "audio/speaking/s3_025_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_025_q5",
+          "text": "Do you think natural talent or deliberate daily practice plays a bigger role in achieving high mastery?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_025_q5.mp3",
+          "followUps": [
+            { "text": "Is there a point at the elite level where talent finally separates people?", "audio": "audio/speaking/s3_025_q5_f1.mp3" },
+            { "text": "Why is repeating the same routine mindlessly less effective than structured practice?", "audio": "audio/speaking/s3_025_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:026",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "experience",
+      "prompt": "Describe a time when you made a difficult decision that turned out well.",
+      "bullets": [
+        "what the decision was and what options you had",
+        "why it felt risky or hard to choose at the time",
+        "how you finally made up your mind"
+      ],
+      "finalBullet": "and explain why you are glad you chose that path.",
+      "audio": "audio/speaking/s2c_026.mp3",
+      "linkedPart3Id": "s3s:026",
+      "sampleNotes": [
+        "turned down higher-paid corporate offer",
+        "picked smaller product engineering team instead",
+        "15% lower starting pay, less famous brand",
+        "parents worried about prestige & security",
+        "spoke to two current engineers candidly",
+        "gained real ownership & doubled learning curve"
+      ],
+      "band8Sample": {
+        "text": "One of the toughest career decisions I've made so far happened two years ago, when I had to choose between two very different job offers within the same forty-eight-hour window. The first came from a prestigious multinational bank offering a generous salary, a shiny downtown office, and a well-known brand name that would look impressive on any CV. The second was from a modest forty-person product team building educational tools, paying about fifteen percent less and virtually unknown outside tech circles. Naturally, turning down the bigger paycheque felt daunting—my parents gently nudged me towards the safer corporate name, and I kept second-guessing whether I was being naive. To stop spinning in circles, I wrote down what I actually wanted my day-to-day life to look like twelve months ahead, and I asked both hiring managers if I could have an informal fifteen-minute chat with an engineer already doing the role. That single step made the contrast crystal clear. At the bank, I'd mostly be maintaining legacy ticketing modules behind layers of approval; at the smaller product team, I'd own full features from user interviews right through to deployment alongside two senior mentors. I took a deep breath, accepted the smaller company, and honestly haven't looked back once. Within a year, the breadth of responsibility pushed my technical judgement forward faster than three years in a rigid silo could have, and my salary eventually caught up anyway. I'm hugely glad I trusted first-hand curiosity over surface prestige—it taught me to evaluate big crossroads by daily growth rather than external applause.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Do you usually ask for other people's advice before big decisions?",
+        "Are you generally a quick decision-maker or a cautious one?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:026",
+      "linkedCueCardId": "s2c:026",
+      "questions": [
+        {
+          "qid": "s3_026_q1",
+          "text": "Why do people often feel overwhelmed when they are given too many choices?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_026_q1.mp3",
+          "followUps": [
+            { "text": "Does having dozens of options increase regret after choosing?", "audio": "audio/speaking/s3_026_q1_f1.mp3" },
+            { "text": "How does that apply to major life choices like careers or university courses?", "audio": "audio/speaking/s3_026_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_026_q2",
+          "text": "Should parents play a major role in their young adult children's career and study decisions?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_026_q2.mp3",
+          "followUps": [
+            { "text": "When does helpful parental guidance cross into unhelpful pressure?", "audio": "audio/speaking/s3_026_q2_f1.mp3" },
+            { "text": "Why might parents' career advice sometimes be outdated in fast-changing industries?", "audio": "audio/speaking/s3_026_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_026_q3",
+          "text": "How does making decisions in a large organisation compare with making decisions in a small startup?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_026_q3.mp3",
+          "followUps": [
+            { "text": "What are the risks of moving too quickly without formal checks?", "audio": "audio/speaking/s3_026_q3_f1.mp3" },
+            { "text": "How can large organisations stay agile without losing accountability?", "audio": "audio/speaking/s3_026_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_026_q4",
+          "text": "Do you think relying on data and algorithms leads to better life decisions than trusting human intuition?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_026_q4.mp3",
+          "followUps": [
+            { "text": "In which situations can human intuition outperform spreadsheets?", "audio": "audio/speaking/s3_026_q4_f1.mp3" },
+            { "text": "Can over-relying on data make people ignore ethical or emotional factors?", "audio": "audio/speaking/s3_026_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_026_q5",
+          "text": "If every school leaver were encouraged to take a structured gap year before choosing a university major, what might happen?",
+          "type": "hypothetical",
+          "audio": "audio/speaking/s3_026_q5.mp3",
+          "followUps": [
+            { "text": "Would that mainly benefit students from wealthier backgrounds?", "audio": "audio/speaking/s3_026_q5_f1.mp3" },
+            { "text": "Could it reduce university drop-out rates and career regret?", "audio": "audio/speaking/s3_026_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:027",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "experience",
+      "prompt": "Describe a journey that did not go according to plan.",
+      "bullets": [
+        "where you were travelling and how you went",
+        "what went wrong along the way",
+        "how you and your companions handled the delay"
+      ],
+      "finalBullet": "and explain what you learnt from the experience.",
+      "audio": "audio/speaking/s2c_027.mp3",
+      "linkedPart3Id": "s3s:027",
+      "sampleNotes": [
+        "overnight coastal sleeper train to Nha Trang",
+        "landslide blocked tracks at 2 am",
+        "stuck 5 hrs near tiny rural station",
+        "shared fruit & cards with cabin strangers",
+        "transfer shuttle bus arranged at sunrise",
+        "learnt patience & packing snacks/powerbank"
+      ],
+      "band8Sample": {
+        "text": "A journey that veered wildly off schedule happened last November when a friend and I boarded an overnight sleeper train along the central coast to attend a wedding in Nha Trang. We'd chosen the train specifically because it's usually punctual and lets you wake up right beside the sea without dealing with airport queues. Everything went smoothly until about two in the morning, when the carriage shuddered to a gentle halt in pitch darkness. After twenty minutes, the attendant walked down the corridor quietly explaining that heavy rain had triggered a small mudslide onto the tracks ten kilometres ahead, and safety crews needed daylight to clear the boulders. Instead of arriving at seven, we were stranded beside a tiny rural siding for nearly five hours. At first, frustration rippled through the carriage because mobile reception flickered in and out and we worried about missing the morning ceremony. Once we realised there was nothing anyone could do to speed up a bulldozer, though, the mood in our four-berth cabin shifted completely. An elderly couple sharing our compartment unpacked a tin of sesame biscuits and hot flask tea, my friend pulled out a battered pack of playing cards, and the four of us swapped travel mishap stories until pale pink light crept over the coastal hills. By half past seven, railway staff organised transfer coaches around the blocked stretch, and we miraculously reached the wedding venue ten minutes before the vows began—slightly rumpled, yet laughing. The trip taught me two things: always pack spare snacks and a full power bank on long routes, and remember that losing your temper at delays never moves a train a single inch faster.",
+        "estSeconds": 119
+      },
+      "roundingOffQs": [
+        "Would you still take an overnight train again despite that delay?",
+        "Do you tend to stay calm when travel plans go wrong?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:027",
+      "linkedCueCardId": "s2c:027",
+      "questions": [
+        {
+          "qid": "s3_027_q1",
+          "text": "Why do travel delays often make people far more anxious and irritable than waiting in other situations?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_027_q1.mp3",
+          "followUps": [
+            { "text": "Does uncertainty about how long a delay will last worsen stress more than the delay itself?", "audio": "audio/speaking/s3_027_q1_f1.mp3" },
+            { "text": "How can transport operators communicate better during disruptions?", "audio": "audio/speaking/s3_027_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_027_q2",
+          "text": "How does long-distance rail travel compare with domestic air travel in terms of comfort and environmental impact?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_027_q2.mp3",
+          "followUps": [
+            { "text": "Should governments restrict very short domestic flights where high-speed rail exists?", "audio": "audio/speaking/s3_027_q2_f1.mp3" },
+            { "text": "Why do many travellers still choose budget airlines over trains?", "audio": "audio/speaking/s3_027_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_027_q3",
+          "text": "Do you think modern tourism has become too focused on ticking off famous landmarks as quickly as possible?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_027_q3.mp3",
+          "followUps": [
+            { "text": "What are the benefits of 'slow travel' for both tourists and local towns?", "audio": "audio/speaking/s3_027_q3_f1.mp3" },
+            { "text": "Is slow travel realistic for workers who only get two weeks of leave a year?", "audio": "audio/speaking/s3_027_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_027_q4",
+          "text": "What can governments do to make intercity public transport more resilient to severe weather and peak holiday crowds?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_027_q4.mp3",
+          "followUps": [
+            { "text": "Should holiday train and coach fares be capped or dynamically priced?", "audio": "audio/speaking/s3_027_q4_f1.mp3" },
+            { "text": "How important is integrating regional bus networks with main railway stations?", "audio": "audio/speaking/s3_027_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_027_q5",
+          "text": "How might long-distance passenger transport evolve over the next thirty years?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_027_q5.mp3",
+          "followUps": [
+            { "text": "Will sustainable aviation fuels meaningfully cut flight emissions soon?", "audio": "audio/speaking/s3_027_q5_f1.mp3" },
+            { "text": "Could overnight sleeper trains enjoy a lasting revival?", "audio": "audio/speaking/s3_027_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:028",
+      "rotation": "2026-Q3",
+      "evergreen": true,
+      "category": "experience",
+      "prompt": "Describe a time when you helped a stranger or a neighbour.",
+      "bullets": [
+        "who the person was and what problem they were having",
+        "how you noticed they needed assistance",
+        "what you did to help them"
+      ],
+      "finalBullet": "and explain how the interaction made you feel afterwards.",
+      "audio": "audio/speaking/s2c_028.mp3",
+      "linkedPart3Id": "s3s:028",
+      "sampleNotes": [
+        "elderly Japanese tourist at bus interchange",
+        "heavy drizzle, phone battery dead, paper map",
+        "confused by route numbers after transfer",
+        "translated stop name & walked 5 mins to right bay",
+        "waited until correct bus arrived + told driver",
+        "warm reminder how tiny kindness travels far"
+      ],
+      "band8Sample": {
+        "text": "A small moment that still warms me whenever I think of it happened on a wet Thursday evening a few months ago at the main bus interchange near my office. I was hurrying towards my usual stop under an umbrella when I noticed an elderly tourist in his late sixties standing slightly apart from the queue, turning a damp folded map back and forth while holding a phone with a blank black screen. He looked tired and completely bewildered by the rapid Vietnamese route announcements crackling over the loudspeaker. Since my bus wasn't due for another ten minutes, I stepped over and asked gently in English if he needed a hand. With visible relief, he explained that his phone battery had died right after visiting a museum, and he was trying to get back to his riverside hotel before dark, except two buses shared almost identical route numbers. I checked the hotel's exact address on my phone, realised he was waiting in the outbound lane heading away from the centre, and offered to walk him across the footbridge to the proper bay five minutes away. While we walked under my spare umbrella, he told me he was a retired botanist visiting Vietnam for the first time on his own. When the right electric bus pulled in, I had a quick word with the driver so he'd give the gentleman a nod at the riverside stop, and I also scribbled the hotel name in large Vietnamese letters on the back of a receipt just in case. He bowed deeply and thanked me twice as the doors closed. Even though it only cost me twelve spare minutes, catching the next bus home left me grinning for the rest of the evening—it reminded me how effortless it is to turn someone's stressful moment around simply by pausing to look up.",
+        "estSeconds": 127
+      },
+      "roundingOffQs": [
+        "Has a stranger ever stepped in to help you in a similar way?",
+        "Do you think city dwellers are generally willing to help tourists?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:028",
+      "linkedCueCardId": "s2c:028",
+      "questions": [
+        {
+          "qid": "s3_028_q1",
+          "text": "Why do bystanders in crowded public places sometimes hesitate to step in when someone looks lost or in trouble?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_028_q1.mp3",
+          "followUps": [
+            { "text": "Does assuming someone else will help explain most of that hesitation?", "audio": "audio/speaking/s3_028_q1_f1.mp3" },
+            { "text": "Does wearing headphones and looking at phones reduce our awareness of others?", "audio": "audio/speaking/s3_028_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_028_q2",
+          "text": "How can parents and schools nurture genuine empathy and helpfulness in children?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_028_q2.mp3",
+          "followUps": [
+            { "text": "Does modelling kindness at home matter more than lecturing children about rules?", "audio": "audio/speaking/s3_028_q2_f1.mp3" },
+            { "text": "How can collaborative classroom tasks encourage students to look out for peers?", "audio": "audio/speaking/s3_028_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_028_q3",
+          "text": "Are people in small rural villages genuinely more helpful towards strangers than people in large metropolises?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_028_q3.mp3",
+          "followUps": [
+            { "text": "Is urban hurry often mistaken for unfriendliness?", "audio": "audio/speaking/s3_028_q3_f1.mp3" },
+            { "text": "Why might big cities still show remarkable solidarity during emergencies?", "audio": "audio/speaking/s3_028_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_028_q4",
+          "text": "Do you think filming acts of charity or kindness for social media makes those acts less genuine?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_028_q4.mp3",
+          "followUps": [
+            { "text": "What if the recipient still benefits materially regardless of the creator's motive?", "audio": "audio/speaking/s3_028_q4_f1.mp3" },
+            { "text": "How does being filmed affect the dignity of vulnerable people?", "audio": "audio/speaking/s3_028_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_028_q5",
+          "text": "How important is mutual neighbourhood support in an era of growing public and commercial services?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_028_q5.mp3",
+          "followUps": [
+            { "text": "Which everyday needs can neighbours meet better than paid apps or government services?", "audio": "audio/speaking/s3_028_q5_f1.mp3" },
+            { "text": "How do local neighbourhood chat groups help or hinder that spirit?", "audio": "audio/speaking/s3_028_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:029",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "experience",
+      "prompt": "Describe a mistake you made that taught you a valuable lesson.",
+      "bullets": [
+        "what the mistake was and when it happened",
+        "what caused you to make it",
+        "how you dealt with the consequences"
+      ],
+      "finalBullet": "and explain what lasting habit or lesson you took away from it.",
+      "audio": "audio/speaking/s2c_029.mp3",
+      "linkedPart3Id": "s3s:029",
+      "sampleNotes": [
+        "pushed untested config change on Friday afternoon",
+        "first year as junior developer, overconfident",
+        "broke checkout discount display for 40 mins",
+        "admitted immediately instead of hiding it",
+        "paired with senior to roll back cleanly & write post-mortem",
+        "learnt humility + written pre-flight checklists"
+      ],
+      "band8Sample": {
+        "text": "A mistake that made my stomach drop at the time—yet turned into one of the best professional lessons of my twenties—happened during my first year working as a junior software engineer. Late on a Friday afternoon, I'd finished tweaking a small pricing configuration for an upcoming weekend promotion. Because the edit was only three lines long and I was eager to head out for dinner with friends, I convinced myself it was too trivial to run through the full staging checklist and pushed it straight to production. Barely fifteen minutes later, my phone started buzzing nonstop: a tiny decimal typo in my change was displaying absurdly wrong discount totals on customer screens. My initial instinct was sheer panic—I even caught myself wishing I could quietly patch it before anyone traced my name in the logs. Fortunately, my better judgement kicked in within thirty seconds. I flagged the issue openly in our team channel, owned up immediately, and hopped onto a call with our lead engineer to roll back the release cleanly within twenty minutes. Nobody shouted at me; in fact, my manager thanked me for speaking up fast instead of scrambling in secret, and asked me to write a brief blameless incident summary on Monday morning explaining how our process could stop the same human slip happening again. Looking back, I'm almost grateful that slip happened early in my career. It cured me completely of rushing 'tiny' changes out of overconfidence, and it taught me two principles I still swear by: rely on written checklists rather than willpower when you're tired, and always surface bad news quickly so people can trust your integrity.",
+        "estSeconds": 116
+      },
+      "roundingOffQs": [
+        "Do you think workplaces handle honest mistakes well in general?",
+        "Is it easier to learn from your own mistakes or from other people's?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:029",
+      "linkedCueCardId": "s2c:029",
+      "questions": [
+        {
+          "qid": "s3_029_q1",
+          "text": "Why do many students and employees try so hard to conceal mistakes instead of admitting them openly?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_029_q1.mp3",
+          "followUps": [
+            { "text": "How does a harsh blame culture actually increase the risk of serious failures?", "audio": "audio/speaking/s3_029_q1_f1.mp3" },
+            { "text": "Does school grading condition young people to fear getting anything wrong?", "audio": "audio/speaking/s3_029_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_029_q2",
+          "text": "How can managers encourage staff to report honest errors early without lowering standards of accountability?",
+          "type": "solution",
+          "audio": "audio/speaking/s3_029_q2.mp3",
+          "followUps": [
+            { "text": "How should leaders distinguish between an honest slip and repeated carelessness?", "audio": "audio/speaking/s3_029_q2_f1.mp3" },
+            { "text": "Does it help when senior leaders openly share their own past mistakes?", "audio": "audio/speaking/s3_029_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_029_q3",
+          "text": "How do attitudes towards failure in business or education compare across different cultures?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_029_q3.mp3",
+          "followUps": [
+            { "text": "Why do some entrepreneurial hubs view a failed startup almost as valuable experience?", "audio": "audio/speaking/s3_029_q3_f1.mp3" },
+            { "text": "Are younger generations in your country becoming more tolerant of career detours?", "audio": "audio/speaking/s3_029_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_029_q4",
+          "text": "Do you agree with the saying that people learn more from failure than from success?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_029_q4.mp3",
+          "followUps": [
+            { "text": "When can repeated failure undermine confidence rather than build resilience?", "audio": "audio/speaking/s3_029_q4_f1.mp3" },
+            { "text": "Why do people rarely pause to analyse why a success went well?", "audio": "audio/speaking/s3_029_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_029_q5",
+          "text": "In high-stakes fields like aviation or medicine, what lessons can ordinary workplaces borrow about preventing human error?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_029_q5.mp3",
+          "followUps": [
+            { "text": "Why are simple checklists so effective even for seasoned experts?", "audio": "audio/speaking/s3_029_q5_f1.mp3" },
+            { "text": "Can over-reliance on automated warnings ever make operators less vigilant?", "audio": "audio/speaking/s3_029_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "cueCard": {
+      "id": "s2c:030",
+      "rotation": "2026-Q3",
+      "evergreen": false,
+      "category": "experience",
+      "prompt": "Describe a time when you received unexpectedly helpful advice.",
+      "bullets": [
+        "who gave you the advice and what situation you were in",
+        "what they actually advised you to do",
+        "why their suggestion surprised you at first"
+      ],
+      "finalBullet": "and explain what difference following it made.",
+      "audio": "audio/speaking/s2c_030.mp3",
+      "linkedPart3Id": "s3s:030",
+      "sampleNotes": [
+        "prepping for IELTS Speaking & work presentations",
+        "chatted with former English debate coach",
+        "expected tips on fancy idioms & rare words",
+        "told me to slow down 15% & cut filler words",
+        "recorded 2-minute daily voice memos",
+        "immediate leap in clarity, calm & fluency"
+      ],
+      "band8Sample": {
+        "text": "Some of the sharpest advice I've ever received came about a year ago from a former university debate coach named Ms Ha, whom I bumped into at an alumni coffee morning while I was stressing over my spoken English and upcoming work presentations. At the time, I was trying desperately to sound impressive by cramming rare academic idioms into every sentence, yet listening back to my recordings, I sounded rushed, breathless, and oddly unnatural. I asked Ms Ha for a list of advanced vocabulary expressions I ought to memorise next. To my complete surprise, she laughed softly and told me to stop learning fancy phrases for a whole month. Instead, she gave me a deceptively plain challenge: speak roughly fifteen percent slower than feels comfortable, pause silently for a full beat instead of filling gaps with 'um' or 'actually', and explain each idea as clearly as if I were talking to an intelligent teenager. At first I felt a bit sceptical—I worried slowing down would make me look hesitant or less fluent. Still, I tried her method for three weeks, recording a two-minute voice memo every evening on a random topic and deliberately letting silence sit between ideas. The transformation amazed me. Not only did my grammar errors drop sharply because my brain finally had half a second to finish planning a clause, but my intonation also sounded far more authoritative and calm. In my next quarterly review at work, two colleagues even commented on how poised my presentation had felt. That conversation taught me that real mastery often looks like subtraction rather than piling on complexity.",
+        "estSeconds": 115
+      },
+      "roundingOffQs": [
+        "Have you ever passed that same advice on to someone else?",
+        "Why do people sometimes ignore good advice even when they ask for it?"
+      ]
+    },
+    "part3Set": {
+      "id": "s3s:030",
+      "linkedCueCardId": "s2c:030",
+      "questions": [
+        {
+          "qid": "s3_030_q1",
+          "text": "Who do young people generally trust most for advice today: parents, peers, or online creators?",
+          "type": "compare",
+          "audio": "audio/speaking/s3_030_q1.mp3",
+          "followUps": [
+            { "text": "Does the answer depend on whether the problem is personal, financial, or career-related?", "audio": "audio/speaking/s3_030_q1_f1.mp3" },
+            { "text": "What risks come from following lifestyle or health advice from unqualified influencers?", "audio": "audio/speaking/s3_030_q1_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_030_q2",
+          "text": "Why is it often much easier to give sensible advice to a friend than to follow the exact same advice yourself?",
+          "type": "cause",
+          "audio": "audio/speaking/s3_030_q2.mp3",
+          "followUps": [
+            { "text": "How does emotional attachment cloud our own judgement?", "audio": "audio/speaking/s3_030_q2_f1.mp3" },
+            { "text": "Can writing a problem down objectively help create that same distance?", "audio": "audio/speaking/s3_030_q2_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_030_q3",
+          "text": "Do you think professional life coaches and career mentors are genuinely useful, or mostly a modern commercial trend?",
+          "type": "evaluate",
+          "audio": "audio/speaking/s3_030_q3.mp3",
+          "followUps": [
+            { "text": "How can someone tell a credible mentor apart from a persuasive salesperson?", "audio": "audio/speaking/s3_030_q3_f1.mp3" },
+            { "text": "Should universities provide structured alumni mentoring for final-year students?", "audio": "audio/speaking/s3_030_q3_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_030_q4",
+          "text": "When someone shares a problem with you, how can you tell whether they want practical solutions or simply someone to listen?",
+          "type": "opinion",
+          "audio": "audio/speaking/s3_030_q4.mp3",
+          "followUps": [
+            { "text": "Why can jumping straight into problem-solving mode sometimes frustrate a friend?", "audio": "audio/speaking/s3_030_q4_f1.mp3" },
+            { "text": "Is simply asking 'Do you want advice or just a listening ear?' a good habit?", "audio": "audio/speaking/s3_030_q4_f2.mp3" }
+          ]
+        },
+        {
+          "qid": "s3_030_q5",
+          "text": "In the future, do you think more people will turn to AI assistants for personal and career guidance?",
+          "type": "predict",
+          "audio": "audio/speaking/s3_030_q5.mp3",
+          "followUps": [
+            { "text": "What could be dangerous about relying on software for sensitive emotional decisions?", "audio": "audio/speaking/s3_030_q5_f1.mp3" },
+            { "text": "Where might AI actually be helpful as an impartial sounding board?", "audio": "audio/speaking/s3_030_q5_f2.mp3" }
+          ]
+        }
+      ]
+    }
+  }
+]
