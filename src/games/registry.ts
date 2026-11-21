@@ -199,6 +199,7 @@ const READY_GAME_LOADERS: Partial<
   r1: () => import('./r1-tfng-judge'),
   r2: () => import('./r2-headline-editor'),
   w1: () => import('./w1-essay-lab'),
+  w2: () => import('./w2-writing-sprints'),
 };
 
 export const GAME_REGISTRY: GameDefinition[] = GAME_METAS.map((meta) => {

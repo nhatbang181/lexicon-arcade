@@ -42,7 +42,7 @@ import { cardRepo } from '../../core/storage/repos/cardRepo';
 import { essayRepo } from '../../core/storage/repos/essayRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
 import { Button, Card, EmptyState, Pill, Skeleton, Toast } from '../../design/components';
-import { GradingPanel, type GradingPanelGradedPayload } from '../_shared/GradingPanel';
+import { ChartRenderer, GradingPanel, type GradingPanelGradedPayload } from '../_shared';
 import type { GameProps } from '../registry';
 import {
   TASK1_CLAUDE_RESPONSE,
@@ -124,196 +124,6 @@ function adaptSampleResponse(taskType: WritingTaskType, attemptId: string): stri
   const base = taskType === 'task1' ? TASK1_CLAUDE_RESPONSE : TASK2_CLAUDE_RESPONSE;
   return base.replace(/"attemptId"\s*:\s*"[^"]+"/, `"attemptId": "${attemptId}"`);
 }
-
-// ---------------------------------------------------------------------------
-// Internal Task 1 Visual Fallback
-// TODO(r-game-w2): swap with ChartRenderer from ../_shared/ChartRenderer once r-chart merges
-// ---------------------------------------------------------------------------
-
-const Task1VisualFallback: React.FC<{ prompt: WritingTask1Prompt }> = ({ prompt }) => {
-  return (
-    <div
-      className="rounded-[var(--radius-md)] border p-4 space-y-3"
-      style={{
-        backgroundColor: 'var(--color-surface)',
-        borderColor: 'var(--color-border)',
-      }}
-    >
-      <div className="flex items-center justify-between gap-2">
-        <Pill tone="writing" size="sm">
-          {CHART_KIND_LABELS[prompt.kind]}
-        </Pill>
-        <span className="text-xs font-mono" style={{ color: 'var(--color-text-faint)' }}>
-          {prompt.id} · Dữ liệu biểu đồ
-        </span>
-      </div>
-
-      {prompt.chart && (
-        <div className="space-y-2">
-          <h4 className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
-            {prompt.chart.title}{' '}
-            {prompt.chart.unit ? (
-              <span className="font-normal" style={{ color: 'var(--color-text-dim)' }}>
-                ({prompt.chart.unit})
-              </span>
-            ) : null}
-          </h4>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
-              <thead>
-                <tr
-                  style={{
-                    backgroundColor: 'var(--color-surface-2)',
-                    borderBottom: '1px solid var(--color-border)',
-                  }}
-                >
-                  <th className="text-left p-2 font-semibold" style={{ color: 'var(--color-text)' }}>
-                    {prompt.chart.xLabel ?? 'Category'}
-                  </th>
-                  {prompt.chart.series.map((s) => (
-                    <th
-                      key={s.name}
-                      className="text-right p-2 font-semibold font-mono"
-                      style={{ color: 'var(--color-text)' }}
-                    >
-                      {s.name}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {prompt.chart.categories.map((cat, idx) => (
-                  <tr
-                    key={cat}
-                    style={{ borderBottom: '1px solid var(--color-border)' }}
-                  >
-                    <td className="p-2 font-medium" style={{ color: 'var(--color-text)' }}>
-                      {cat}
-                    </td>
-                    {prompt.chart!.series.map((s) => (
-                      <td
-                        key={`${cat}-${s.name}`}
-                        className="p-2 text-right font-mono tabular-nums"
-                        style={{ color: 'var(--color-text-dim)' }}
-                      >
-                        {s.values[idx] ?? '—'}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
-
-      {prompt.table && (
-        <div className="space-y-2">
-          <h4 className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
-            {prompt.table.title}
-          </h4>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
-              <thead>
-                <tr
-                  style={{
-                    backgroundColor: 'var(--color-surface-2)',
-                    borderBottom: '1px solid var(--color-border)',
-                  }}
-                >
-                  {prompt.table.columns.map((col) => (
-                    <th
-                      key={col}
-                      className="text-left p-2 font-semibold"
-                      style={{ color: 'var(--color-text)' }}
-                    >
-                      {col}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {prompt.table.rows.map((row, rIdx) => (
-                  <tr
-                    key={rIdx}
-                    style={{ borderBottom: '1px solid var(--color-border)' }}
-                  >
-                    {row.map((cell, cIdx) => (
-                      <td
-                        key={cIdx}
-                        className={`p-2 ${cIdx > 0 ? 'font-mono tabular-nums' : 'font-medium'}`}
-                        style={{ color: cIdx === 0 ? 'var(--color-text)' : 'var(--color-text-dim)' }}
-                      >
-                        {String(cell)}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )}
-
-      {prompt.process && (
-        <div className="space-y-2">
-          <h4 className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
-            {prompt.process.title}{' '}
-            {prompt.process.cyclic ? (
-              <span className="text-xs font-normal" style={{ color: 'var(--color-info)' }}>
-                (Chu trình khép kín)
-              </span>
-            ) : null}
-          </h4>
-          <ol className="space-y-1.5">
-            {prompt.process.steps.map((step, idx) => (
-              <li
-                key={step.id}
-                className="flex items-start gap-2 text-xs p-2 rounded-[var(--radius-sm)]"
-                style={{ backgroundColor: 'var(--color-surface-2)' }}
-              >
-                <span
-                  className="font-mono font-bold shrink-0"
-                  style={{ color: 'var(--color-writing)' }}
-                >
-                  {idx + 1}.
-                </span>
-                <span style={{ color: 'var(--color-text)' }}>{step.label}</span>
-              </li>
-            ))}
-          </ol>
-        </div>
-      )}
-
-      {prompt.maps && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {[prompt.maps.before, prompt.maps.after].map((m, idx) => {
-            const labels = m.shapes.map((s) => s.label).filter(Boolean) as string[];
-            return (
-              <div
-                key={`${m.year}-${idx}`}
-                className="rounded-[var(--radius-sm)] border p-3 space-y-1.5"
-                style={{
-                  backgroundColor: 'var(--color-surface-2)',
-                  borderColor: 'var(--color-border)',
-                }}
-              >
-                <div className="text-xs font-bold font-mono" style={{ color: 'var(--color-writing)' }}>
-                  {idx === 0 ? 'TRƯỚC' : 'SAU'} · {m.year}
-                </div>
-                <ul className="text-xs space-y-1" style={{ color: 'var(--color-text-dim)' }}>
-                  {labels.map((lbl, i) => (
-                    <li key={`${lbl}-${i}`}>• {lbl}</li>
-                  ))}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </div>
-  );
-};
 
 // ---------------------------------------------------------------------------
 // Band 8.0 Model Viewer with Highlighted Notes
@@ -1484,7 +1294,9 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
               </p>
             </Card>
 
-            {taskType === 'task1' && activeTask1 && <Task1VisualFallback prompt={activeTask1} />}
+            {taskType === 'task1' && activeTask1 && (
+              <ChartRenderer visual={activeTask1} kind={activeTask1.kind} compact />
+            )}
 
             {/* Task 2 Editor sits here inside the 8-col main area */}
             {taskType === 'task2' && (
