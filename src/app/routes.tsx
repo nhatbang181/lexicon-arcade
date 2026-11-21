@@ -8,6 +8,7 @@ import { OnboardingScreen } from '../features/onboarding';
 import { PlacementScreen } from '../features/placement';
 import { StatsScreen } from '../features/stats';
 import { SettingsScreen } from '../features/settings';
+import { PortfolioScreen } from '../features/portfolio';
 import { DevComponentsScreen } from './screens/DevComponentsScreen';
 import { LegacyScreen } from './screens/LegacyScreen';
 import { ErrorBoundary } from './ErrorBoundary';
@@ -26,6 +27,8 @@ export const AppRoutes: React.FC = () => {
           {() => <PlayScreen gameId="x1" />}
         </Route>
         <Route path="/stats" component={StatsScreen} />
+        <Route path="/portfolio" component={PortfolioScreen} />
+        <Route path="/writing/portfolio" component={PortfolioScreen} />
         <Route path="/library" component={LibraryPlaceholderScreen} />
         <Route path="/placement" component={PlacementScreen} />
         <Route path="/onboarding" component={OnboardingScreen} />
