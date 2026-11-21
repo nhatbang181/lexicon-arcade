@@ -1,0 +1,125 @@
+{
+  "id": "w1:016",
+  "kind": "mixed",
+  "topic": "education",
+  "difficulty": 6,
+  "prompt": "The bar chart below shows full-time graduate employment rates across five university faculties in 2024, and the table presents median starting salaries alongside the proportion of graduates entering further study. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Full-Time Graduate Employment Rates by Faculty (2024)",
+    "unit": "%",
+    "xLabel": "Faculty",
+    "yLabel": "Employment rate (%)",
+    "categories": [
+      "Medicine",
+      "Computer Science",
+      "Engineering",
+      "Business",
+      "Humanities"
+    ],
+    "series": [
+      {
+        "name": "Employed full-time (%)",
+        "values": [
+          94,
+          86,
+          82,
+          74,
+          61
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "table": {
+    "title": "Graduate Starting Salaries and Further-Study Rates by Faculty (2024)",
+    "columns": [
+      "Faculty",
+      "Median starting salary (GBP)",
+      "Entering further study (%)"
+    ],
+    "rows": [
+      [
+        "Medicine",
+        38000,
+        4
+      ],
+      [
+        "Computer Science",
+        35500,
+        8
+      ],
+      [
+        "Engineering",
+        33000,
+        11
+      ],
+      [
+        "Business",
+        29000,
+        14
+      ],
+      [
+        "Humanities",
+        24500,
+        28
+      ]
+    ]
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Vocational and technical faculties achieved both the highest full-time employment rates and the strongest median starting salaries.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "comparison",
+      "textEn": "Further-study rates followed the exact reverse order of employment rates, rising as immediate job placement declined.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "highest",
+      "textEn": "Medicine led all disciplines with 94% employment and a median salary of 38,000 GBP, alongside the lowest further-study share (4%).",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Humanities recorded the lowest employment rate (61%) and starting pay (24,500 GBP), yet 28% of its graduates progressed to postgraduate study.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "grouping",
+      "textEn": "Computer Science (86%, 35,500 GBP) and Engineering (82%, 33,000 GBP) formed a strong second tier ahead of Business (74%, 29,000 GBP).",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, graduates from vocational and technical disciplines enjoyed markedly stronger labour-market outcomes in both employment and starting pay than those in Business or Humanities. Conversely, progression into postgraduate study followed the opposite ranking, being highest in the faculty with the lowest immediate job placement.",
+    "In general, Medicine and technology-oriented faculties led on both full-time employment and median earnings, whereas Humanities lagged behind on both metrics. However, Humanities graduates were by far the most likely to continue into further study."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "labour-market outcomes",
+    "Conversely,",
+    "opposite ranking",
+    "by far the most likely"
+  ],
+  "band8Model": {
+    "text": "The bar chart compares full-time employment rates for 2024 graduates across five faculties, while the table reports their median starting salaries and rates of entry into further study.\n\nOverall, vocational and technical fields delivered substantially higher immediate employment and starting earnings than Business or Humanities. Conversely, continuation into postgraduate study followed the exact opposite ranking, peaking where direct employment was lowest.\n\nMedicine achieved the strongest employment figure at 94%, accompanied by the highest median salary of 38,000 GBP and a minimal 4% moving into further study. Computer Science and Engineering formed a closely grouped second tier, placing 86% and 82% of graduates into full-time roles at median salaries of 35,500 GBP and 33,000 GBP respectively; only 8% and 11% pursued additional qualifications.\n\nBy contrast, Business recorded a more moderate 74% employment rate, earnings of 29,000 GBP, and a 14% further-study rate. Humanities trailed all other disciplines, with 61% securing full-time work and median pay of 24,500 GBP, a gap of 13,500 GBP below Medicine. Nevertheless, 28% of Humanities graduates entered further study, double the Business proportion.",
+    "wordCount": 176
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "w1:015",
+  "kind": "mixed",
+  "topic": "tourism",
+  "difficulty": 5,
+  "prompt": "The line chart below shows annual international visitor arrivals at three fictional island resorts between 2015 and 2025, while the table compares average length of stay and daily expenditure in 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "International Visitor Arrivals to Three Island Resorts (2015-2025)",
+    "unit": "thousands",
+    "xLabel": "Year",
+    "yLabel": "Arrivals (thousands)",
+    "categories": [
+      "2015",
+      "2017",
+      "2019",
+      "2021",
+      "2023",
+      "2025"
+    ],
+    "series": [
+      {
+        "name": "Coralhaven",
+        "values": [
+          120,
+          155,
+          190,
+          140,
+          210,
+          260
+        ]
+      },
+      {
+        "name": "Suncrest",
+        "values": [
+          95,
+          130,
+          165,
+          105,
+          180,
+          225
+        ]
+      },
+      {
+        "name": "Mistisle",
+        "values": [
+          60,
+          68,
+          75,
+          55,
+          82,
+          95
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "table": {
+    "title": "Visitor Stay Duration and Daily Spend by Resort (2025)",
+    "columns": [
+      "Island resort",
+      "Average stay (nights)",
+      "Average daily spend (GBP)"
+    ],
+    "rows": [
+      [
+        "Coralhaven",
+        3.8,
+        110
+      ],
+      [
+        "Suncrest",
+        5.2,
+        145
+      ],
+      [
+        "Mistisle",
+        7.4,
+        185
+      ]
+    ]
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "All three island resorts recorded overall growth in international arrivals between 2015 and 2025 despite a sharp dip in 2021.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "comparison",
+      "textEn": "There is a clear inverse relationship between visitor volume and spending intensity: higher-volume resorts had shorter stays and lower daily spend.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "highest",
+      "textEn": "Coralhaven remained the most visited destination throughout the decade, climbing from 120,000 to 260,000 arrivals.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Mistisle attracted the fewest visitors (95,000 in 2025), yet its guests stayed longest (7.4 nights) and spent the most per day (185 GBP).",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "change",
+      "textEn": "Suncrest experienced the steepest temporary fall in 2021 (down to 105,000) before rebounding to 225,000 by 2025.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, international arrivals rose across all three island resorts over the decade despite a temporary downturn in 2021, with Coralhaven consistently attracting the largest share of travellers. Notably, visitor volume moved in the opposite direction to stay duration and daily expenditure, as the quietest resort generated the highest spending per guest.",
+    "In general, tourism expanded substantially at every resort between 2015 and 2025 following a mid-period dip, while Coralhaven remained the leading destination by volume. By contrast, Mistisle drew far fewer tourists yet stood out for both the longest stays and the highest daily spend."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "despite a temporary downturn",
+    "largest share",
+    "opposite direction",
+    "By contrast,"
+  ],
+  "band8Model": {
+    "text": "The line chart illustrates annual international arrivals at three island resorts from 2015 to 2025, while the table details average length of stay and daily expenditure in 2025.\n\nOverall, visitor numbers increased at every destination over the period despite a sharp contraction in 2021, with Coralhaven maintaining the highest volume throughout. Notably, higher arrivals corresponded with shorter trips and lower daily spending, whereas the least visited island attracted the highest-spending guests.\n\nIn 2015, Coralhaven welcomed 120 thousand overseas visitors, compared with 95 thousand for Suncrest and 60 thousand for Mistisle. All three destinations expanded steadily until 2019, reaching 190 thousand, 165 thousand, and 75 thousand respectively. Following a marked drop in 2021 to 140 thousand, 105 thousand, and 55 thousand, arrivals recovered briskly, peaking in 2025 at 260 thousand for Coralhaven, 225 thousand for Suncrest, and 95 thousand for Mistisle.\n\nThe 2025 table reveals a striking inverse pattern. Guests on Mistisle stayed an average of 7.4 nights, nearly double Coralhaven at 3.8 nights, and spent 185 GBP daily compared with 110 GBP on Coralhaven. Suncrest occupied the middle ground at 5.2 nights and 145 GBP per day.",
+    "wordCount": 187
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

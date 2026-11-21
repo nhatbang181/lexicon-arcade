@@ -1,0 +1,140 @@
+{
+  "id": "w1:020",
+  "kind": "process",
+  "topic": "science",
+  "difficulty": 8,
+  "prompt": "The diagram below shows how seawater is converted into drinkable municipal water using reverse osmosis desalination. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "process": {
+    "title": "Municipal Seawater Desalination via Reverse Osmosis",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Offshore seawater intake",
+        "icon": "water"
+      },
+      {
+        "id": "s2",
+        "label": "Coarse mesh screening",
+        "icon": "screen"
+      },
+      {
+        "id": "s3",
+        "label": "Multi-media sand filtration",
+        "icon": "filter"
+      },
+      {
+        "id": "s4",
+        "label": "High-pressure pumping",
+        "icon": "pump"
+      },
+      {
+        "id": "s5",
+        "label": "Reverse osmosis membranes",
+        "icon": "membrane"
+      },
+      {
+        "id": "s6",
+        "label": "Brine separation & outfall",
+        "icon": "outfall"
+      },
+      {
+        "id": "s7",
+        "label": "Remineralisation & disinfection",
+        "icon": "treat"
+      },
+      {
+        "id": "s8",
+        "label": "Storage & municipal supply",
+        "icon": "city"
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s5",
+        "s7"
+      ],
+      [
+        "s7",
+        "s8"
+      ]
+    ],
+    "cyclic": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Reverse osmosis desalination is a linear, multi-stage engineering process that transforms raw seawater into potable municipal water while discharging salty brine back offshore.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "grouping",
+      "textEn": "The workflow consists of pre-treatment filtration, high-pressure membrane separation (where the stream splits), and post-treatment conditioning.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "stage",
+      "textEn": "Coarse mesh screens and multi-media sand filters remove physical debris and fine particles before water reaches the delicate membranes.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "stage",
+      "textEn": "At the reverse osmosis stage, pressurised water divides into concentrated brine routed to an outfall and desalinated freshwater advancing for treatment.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "stage",
+      "textEn": "Freshwater must be remineralised and disinfected before being held in storage tanks for municipal distribution.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, seawater desalination is a linear industrial process involving eight stages that turns raw marine water into safe drinking water while separating out concentrated brine. The system moves through mechanical pre-treatment, high-pressure membrane separation, and final chemical conditioning before municipal distribution.",
+    "In general, producing potable water from the sea requires progressive filtration followed by pressurised reverse osmosis, at which point the flow splits into two streams: waste brine returned to the ocean and purified water treated for public supply."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "linear industrial process",
+    "mechanical pre-treatment",
+    "membrane separation",
+    "splits into two streams"
+  ],
+  "band8Model": {
+    "text": "The diagram outlines the linear desalination process by which seawater is purified through reverse osmosis for municipal water supply.\n\nOverall, converting seawater into potable supply involves eight stages grouped into pre-treatment filtration, pressurised membrane separation, and post-treatment conditioning. Crucially, the flow divides at the membrane unit into waste brine and usable freshwater.\n\nInitially, seawater is drawn into the plant via an offshore intake pipe. It passes through coarse mesh screening to trap large marine debris, followed by multi-media sand filtration that removes finer suspended particles and protects downstream equipment. The pre-filtered water is then forced onwards by high-pressure pumps into banks of semi-permeable reverse osmosis membranes.\n\nWithin these membranes, dissolved salts are held back while pure water molecules pass through under pressure. Consequently, the stream splits in two directions: concentrated salty brine is channelled away and discharged safely through an offshore outfall, whereas the desalinated water moves forward to post-treatment. There, essential minerals are restored and the water is disinfected to meet health standards before entering storage reservoirs for municipal distribution.",
+    "wordCount": 171
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

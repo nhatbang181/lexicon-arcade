@@ -1,0 +1,253 @@
+{
+  "id": "w1:024",
+  "kind": "map",
+  "topic": "environment",
+  "difficulty": 10,
+  "prompt": "The maps below show the transformation of Willowbrook Village between 1980 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "maps": {
+    "before": {
+      "year": "1980",
+      "viewBox": "0 0 800 560",
+      "compass": true,
+      "slots": [],
+      "shapes": [
+        {
+          "id": "b_river",
+          "kind": "water",
+          "x": 20,
+          "y": 24,
+          "w": 98,
+          "h": 512,
+          "label": "River Willow"
+        },
+        {
+          "id": "b_farm",
+          "kind": "park",
+          "x": 138,
+          "y": 24,
+          "w": 265,
+          "h": 124,
+          "label": "Arable Farmland"
+        },
+        {
+          "id": "b_pasture",
+          "kind": "park",
+          "x": 423,
+          "y": 24,
+          "w": 262,
+          "h": 124,
+          "label": "Grazing Pasture"
+        },
+        {
+          "id": "b_mill",
+          "kind": "building",
+          "x": 138,
+          "y": 168,
+          "w": 190,
+          "h": 74,
+          "label": "Timber Mill"
+        },
+        {
+          "id": "b_cottages",
+          "kind": "building",
+          "x": 348,
+          "y": 168,
+          "w": 192,
+          "h": 74,
+          "label": "Village Cottages"
+        },
+        {
+          "id": "b_school",
+          "kind": "building",
+          "x": 560,
+          "y": 168,
+          "w": 150,
+          "h": 74,
+          "label": "Primary School"
+        },
+        {
+          "id": "b_highst",
+          "kind": "road",
+          "x": 138,
+          "y": 264,
+          "w": 642,
+          "h": 34,
+          "label": "High Street"
+        },
+        {
+          "id": "b_marsh",
+          "kind": "park",
+          "x": 138,
+          "y": 322,
+          "w": 290,
+          "h": 132,
+          "label": "Lowland Marsh"
+        },
+        {
+          "id": "b_orchard",
+          "kind": "park",
+          "x": 448,
+          "y": 322,
+          "w": 332,
+          "h": 132,
+          "label": "Apple Orchard"
+        }
+      ]
+    },
+    "after": {
+      "year": "2020",
+      "viewBox": "0 0 800 560",
+      "compass": true,
+      "slots": [],
+      "shapes": [
+        {
+          "id": "a_river",
+          "kind": "water",
+          "x": 20,
+          "y": 24,
+          "w": 98,
+          "h": 512,
+          "label": "River Willow"
+        },
+        {
+          "id": "a_estate",
+          "kind": "building",
+          "x": 138,
+          "y": 24,
+          "w": 265,
+          "h": 124,
+          "label": "Residential Estate"
+        },
+        {
+          "id": "a_solar",
+          "kind": "building",
+          "x": 423,
+          "y": 24,
+          "w": 262,
+          "h": 124,
+          "label": "Community Solar Array"
+        },
+        {
+          "id": "a_eco",
+          "kind": "building",
+          "x": 138,
+          "y": 168,
+          "w": 190,
+          "h": 74,
+          "label": "Eco-Visitor Centre"
+        },
+        {
+          "id": "a_cottages",
+          "kind": "building",
+          "x": 348,
+          "y": 168,
+          "w": 192,
+          "h": 74,
+          "label": "Village Cottages"
+        },
+        {
+          "id": "a_school",
+          "kind": "building",
+          "x": 560,
+          "y": 168,
+          "w": 220,
+          "h": 74,
+          "label": "Expanded Primary School"
+        },
+        {
+          "id": "a_highst",
+          "kind": "road",
+          "x": 138,
+          "y": 264,
+          "w": 642,
+          "h": 34,
+          "label": "High Street"
+        },
+        {
+          "id": "a_wetland",
+          "kind": "water",
+          "x": 138,
+          "y": 322,
+          "w": 290,
+          "h": 132,
+          "label": "Wetland Nature Reserve"
+        },
+        {
+          "id": "a_orchard",
+          "kind": "park",
+          "x": 448,
+          "y": 322,
+          "w": 332,
+          "h": 132,
+          "label": "Apple Orchard"
+        },
+        {
+          "id": "a_bypass",
+          "kind": "road",
+          "x": 138,
+          "y": 482,
+          "w": 642,
+          "h": 38,
+          "label": "Southern Bypass Road"
+        }
+      ]
+    }
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Between 1980 and 2020, Willowbrook Village shifted from traditional farming and timber production towards residential housing, renewable energy, and ecological conservation.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "change",
+      "textEn": "Northern agricultural land was entirely redeveloped, with Arable Farmland replaced by a Residential Estate and Grazing Pasture converted into a Community Solar Array.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Along the north side of High Street, the Timber Mill was replaced by an Eco-Visitor Centre and the Primary School was expanded eastwards.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "change",
+      "textEn": "South of High Street, the Lowland Marsh became a protected Wetland Nature Reserve and a new Southern Bypass Road was built along the southern edge.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "grouping",
+      "textEn": "River Willow on the west, Village Cottages, High Street, and the south-eastern Apple Orchard remained intact throughout the four decades.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, Willowbrook Village underwent a pronounced shift between 1980 and 2020 away from traditional agriculture and timber milling towards suburban housing, community clean energy, and formal habitat conservation. Core heritage features including River Willow, Village Cottages, High Street, and the Apple Orchard were preserved.",
+    "In general, the northern half of Willowbrook was modernised with new housing, solar power, and expanded schooling, whereas the southern half balanced new road infrastructure with wetland conservation."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "traditional agriculture",
+    "clean energy",
+    "habitat conservation",
+    "were preserved"
+  ],
+  "band8Model": {
+    "text": "The two maps trace the physical transformation of Willowbrook Village between 1980 and 2020.\n\nOverall, the settlement moved away from traditional agriculture and timber processing towards expanded housing, local clean energy, and habitat conservation. Throughout these four decades, River Willow along the western boundary, the central Village Cottages, High Street, and the south-eastern Apple Orchard were preserved.\n\nThe largest land-use changes took place north of High Street. Arable Farmland in the north-west was developed into a Residential Estate, while Grazing Pasture in the north-east was repurposed as a Community Solar Array. Immediately north of the main road, the old Timber Mill beside the river was demolished and replaced by an Eco-Visitor Centre. To accommodate the larger population, the Primary School on the eastern side was expanded further east.\n\nSouth of High Street, change focused on conservation and traffic management. The Lowland Marsh bordering River Willow was designated as a Wetland Nature Reserve alongside the retained Apple Orchard, and a new Southern Bypass Road was constructed across the southern perimeter to relieve through-traffic.",
+    "wordCount": 172
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

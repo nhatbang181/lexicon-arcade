@@ -1,0 +1,123 @@
+{
+  "id": "w1:017",
+  "kind": "mixed",
+  "topic": "environment",
+  "difficulty": 7,
+  "prompt": "The pie chart below illustrates the proportion of urban water consumed by sector in the city of Westmoor in 2025, and the table compares municipal water tariffs in 2015 and 2025 alongside 2025 conservation targets. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Urban Water Usage by Sector in Westmoor (2025)",
+    "unit": "%",
+    "categories": [
+      "Domestic households",
+      "Manufacturing industry",
+      "Commercial services",
+      "Municipal parks & leisure",
+      "System leakage"
+    ],
+    "series": [
+      {
+        "name": "Share of total water use (%)",
+        "values": [
+          42,
+          24,
+          18,
+          10,
+          6
+        ]
+      }
+    ],
+    "pie": true
+  },
+  "table": {
+    "title": "Westmoor Water Tariffs (2015 vs 2025) and Conservation Targets",
+    "columns": [
+      "Sector",
+      "2015 tariff (GBP/cubic metre)",
+      "2025 tariff (GBP/cubic metre)",
+      "2025 reduction target (%)"
+    ],
+    "rows": [
+      [
+        "Domestic households",
+        1.8,
+        2.7,
+        15
+      ],
+      [
+        "Manufacturing industry",
+        2.2,
+        3.6,
+        25
+      ],
+      [
+        "Commercial services",
+        2,
+        3.1,
+        20
+      ],
+      [
+        "Municipal parks & leisure",
+        1.4,
+        2,
+        10
+      ]
+    ]
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Domestic households accounted for the largest single share of Westmoor water consumption, while tariffs increased substantially across all billed sectors between 2015 and 2025.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "comparison",
+      "textEn": "Manufacturing industry faced both the steepest price rise and the most ambitious reduction target despite using considerably less water than households.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "highest",
+      "textEn": "Domestic households consumed 42% of urban water, matching manufacturing (24%) and commercial services (18%) combined.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "System leakage represented the smallest share at 6%, while municipal parks and leisure used 10% and carried the lowest tariff (2.0 GBP) and target (10%).",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "change",
+      "textEn": "Industrial tariffs rose by 1.4 GBP per cubic metre (from 2.2 to 3.6 GBP), compared with a 0.6 GBP increase for municipal parks.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, domestic households accounted for the largest portion of urban water demand in Westmoor, while water charges climbed considerably across every billed sector between 2015 and 2025. Notably, pricing policy and conservation targets fell most heavily on manufacturing rather than residential users.",
+    "In general, residential consumption dominated total water usage, whereas industry and commercial services together formed a comparable share. Over the decade, every billed sector experienced marked tariff increases, with industrial users facing both the highest prices and the strictest reduction target."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "largest portion",
+    "every billed sector",
+    "fell most heavily on",
+    "strictest reduction target"
+  ],
+  "band8Model": {
+    "text": "The pie chart breaks down urban water consumption in Westmoor by sector in 2025, while the table compares municipal tariffs between 2015 and 2025 together with 2025 conservation targets.\n\nOverall, households represented the largest share of demand, whereas water prices rose across every billed sector over the decade. Notably, the steepest tariffs and most demanding reduction targets were imposed on manufacturing rather than domestic users.\n\nIn 2025, domestic households consumed 42% of all municipal water, matching the combined share of manufacturing industry at 24% and commercial services at 18%. Municipal parks and leisure accounted for 10%, while unbilled system leakage made up the remaining 6%.\n\nTurning to pricing, industrial tariffs climbed from 2.2 GBP to 3.6 GBP per cubic metre, alongside a 25% conservation target, the highest in both categories. Commercial services followed closely, rising from 2.0 GBP to 3.1 GBP with a 20% target. By contrast, domestic rates rose more moderately from 1.8 GBP to 2.7 GBP under a 15% target, and municipal parks remained lowest, moving from 1.4 GBP to 2.0 GBP with a 10% goal.",
+    "wordCount": 178
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

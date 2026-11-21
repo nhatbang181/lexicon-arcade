@@ -1,0 +1,116 @@
+{
+  "id": "w1:003",
+  "kind": "bar",
+  "topic": "transport",
+  "difficulty": 4,
+  "prompt": "The bar chart below shows the percentage of daily commuters using four different modes of transport in Alderbury, Portvale, Crestholm, and Westmoor. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Daily Commuter Mode Share Across Four Cities",
+    "unit": "%",
+    "xLabel": "City",
+    "yLabel": "Share of Commuters (%)",
+    "categories": [
+      "Alderbury",
+      "Portvale",
+      "Crestholm",
+      "Westmoor"
+    ],
+    "series": [
+      {
+        "name": "Private Car",
+        "values": [
+          34,
+          48,
+          26,
+          62
+        ]
+      },
+      {
+        "name": "Public Transit",
+        "values": [
+          44,
+          31,
+          46,
+          22
+        ]
+      },
+      {
+        "name": "Cycling",
+        "values": [
+          14,
+          12,
+          19,
+          7
+        ]
+      },
+      {
+        "name": "Walking",
+        "values": [
+          8,
+          9,
+          9,
+          9
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "grouping",
+      "textEn": "The four cities divide clearly into two car-dominated cities (Westmoor and Portvale) and two transit-led cities (Crestholm and Alderbury).",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Westmoor had by far the highest car dependency at 62%, accompanied by the lowest public transit (22%) and cycling (7%) shares.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "comparison",
+      "textEn": "Crestholm had the highest shares of both public transit (46%) and cycling (19%), and the smallest proportion of drivers (26%).",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Walking accounted for a uniformly small and almost identical share across all four cities, ranging narrowly between 8% and 9%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "In every city, private cars and public transit together represented roughly three-quarters or more of all daily commutes.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, motorised transport accounted for the vast majority of commutes in all four cities, yet commuter habits split into two distinct patterns: Westmoor and Portvale were predominantly car-reliant, whereas Crestholm and Alderbury depended more heavily on public transit. Walking remained uniformly low everywhere.",
+    "In general, private cars and public transit dominated daily travel across the four cities, while active modes made up a smaller minority. Westmoor stood out for extreme car dependence, in stark contrast to Crestholm, which combined the strongest transit and cycling shares.",
+    "Taken as a whole, the cities form two contrasting profiles, with high car usage paired with weaker transit and cycling adoption in Westmoor and Portvale, and the reverse pattern in Crestholm and Alderbury. Across every location, walking barely varied."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "split into two distinct patterns",
+    "in stark contrast to",
+    "uniformly low everywhere",
+    "barely varied"
+  ],
+  "band8Model": {
+    "text": "The bar chart compares the proportions of daily commuters travelling by private car, public transit, bicycle, and foot in four cities: Alderbury, Portvale, Crestholm, and Westmoor.\n\nOverall, motorised modes dominated commuting everywhere, though the four cities split into two distinct patterns. Westmoor and Portvale were predominantly car-reliant, whereas Crestholm and Alderbury favoured public transit, while walking remained uniformly modest across every location.\n\nWestmoor exhibited by far the heaviest reliance on private cars at 62%, leaving public transit at just 22% and cycling at 7%, the lowest figures for both sustainable modes. Portvale displayed a milder version of this profile, with 48% driving compared with 31% using public transit and 12% cycling.\n\nIn stark contrast, public transit was the leading mode in both Crestholm (46%) and Alderbury (44%). Crestholm also recorded the highest cycling share at 19% and the lowest car dependency at 26%, whereas Alderbury saw 34% drive and 14% cycle. Notably, walking showed almost no variation across the four cities, standing at 8% in Alderbury and 9% in each of the other three.",
+    "wordCount": 174
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

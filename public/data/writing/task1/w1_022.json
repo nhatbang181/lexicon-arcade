@@ -1,0 +1,280 @@
+{
+  "id": "w1:022",
+  "kind": "map",
+  "topic": "urban",
+  "difficulty": 8,
+  "prompt": "The maps below show the redevelopment of Alderbury Harbourfront between 1995 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "maps": {
+    "before": {
+      "year": "1995",
+      "viewBox": "0 0 800 560",
+      "compass": true,
+      "slots": [],
+      "shapes": [
+        {
+          "id": "b_rail",
+          "kind": "path",
+          "x": 20,
+          "y": 20,
+          "w": 325,
+          "h": 56,
+          "label": "Railway Siding"
+        },
+        {
+          "id": "b_timber",
+          "kind": "building",
+          "x": 365,
+          "y": 20,
+          "w": 320,
+          "h": 56,
+          "label": "Timber Yard"
+        },
+        {
+          "id": "b_road",
+          "kind": "road",
+          "x": 20,
+          "y": 98,
+          "w": 760,
+          "h": 32,
+          "label": "Harbour Road"
+        },
+        {
+          "id": "b_wh_w",
+          "kind": "building",
+          "x": 25,
+          "y": 152,
+          "w": 190,
+          "h": 120,
+          "label": "West Warehouse"
+        },
+        {
+          "id": "b_wh_e",
+          "kind": "building",
+          "x": 235,
+          "y": 152,
+          "w": 190,
+          "h": 120,
+          "label": "East Warehouse"
+        },
+        {
+          "id": "b_park",
+          "kind": "parking",
+          "x": 445,
+          "y": 152,
+          "w": 170,
+          "h": 120,
+          "label": "Car Park"
+        },
+        {
+          "id": "b_office",
+          "kind": "building",
+          "x": 635,
+          "y": 152,
+          "w": 145,
+          "h": 120,
+          "label": "Harbour Office"
+        },
+        {
+          "id": "b_quay",
+          "kind": "road",
+          "x": 25,
+          "y": 294,
+          "w": 500,
+          "h": 52,
+          "label": "Cargo Loading Quay"
+        },
+        {
+          "id": "b_jetty",
+          "kind": "building",
+          "x": 545,
+          "y": 294,
+          "w": 235,
+          "h": 52,
+          "label": "Fishing Jetties"
+        },
+        {
+          "id": "b_water",
+          "kind": "water",
+          "x": 20,
+          "y": 372,
+          "w": 760,
+          "h": 168,
+          "label": "Alderbury Harbour"
+        }
+      ]
+    },
+    "after": {
+      "year": "2025",
+      "viewBox": "0 0 800 560",
+      "compass": true,
+      "slots": [],
+      "shapes": [
+        {
+          "id": "a_park_n",
+          "kind": "parking",
+          "x": 20,
+          "y": 20,
+          "w": 325,
+          "h": 56,
+          "label": "Relocated Car Park"
+        },
+        {
+          "id": "a_apts",
+          "kind": "building",
+          "x": 365,
+          "y": 20,
+          "w": 320,
+          "h": 56,
+          "label": "Harbour Apartments"
+        },
+        {
+          "id": "a_road",
+          "kind": "road",
+          "x": 20,
+          "y": 98,
+          "w": 760,
+          "h": 32,
+          "label": "Harbour Road"
+        },
+        {
+          "id": "a_museum",
+          "kind": "building",
+          "x": 25,
+          "y": 152,
+          "w": 190,
+          "h": 120,
+          "label": "Maritime Museum"
+        },
+        {
+          "id": "a_cafes",
+          "kind": "building",
+          "x": 235,
+          "y": 152,
+          "w": 190,
+          "h": 120,
+          "label": "Cafes & Boutiques"
+        },
+        {
+          "id": "a_green",
+          "kind": "park",
+          "x": 445,
+          "y": 152,
+          "w": 170,
+          "h": 120,
+          "label": "Waterfront Park"
+        },
+        {
+          "id": "a_office",
+          "kind": "building",
+          "x": 635,
+          "y": 152,
+          "w": 145,
+          "h": 120,
+          "label": "Harbour Office"
+        },
+        {
+          "id": "a_prom",
+          "kind": "path",
+          "x": 25,
+          "y": 294,
+          "w": 500,
+          "h": 52,
+          "label": "Waterfront Promenade"
+        },
+        {
+          "id": "a_marina",
+          "kind": "water",
+          "x": 545,
+          "y": 294,
+          "w": 235,
+          "h": 52,
+          "label": "Yacht Marina"
+        },
+        {
+          "id": "a_water_w",
+          "kind": "water",
+          "x": 20,
+          "y": 372,
+          "w": 300,
+          "h": 168,
+          "label": "Alderbury Harbour"
+        },
+        {
+          "id": "a_bridge",
+          "kind": "path",
+          "x": 335,
+          "y": 372,
+          "w": 145,
+          "h": 168,
+          "label": "Pedestrian Bridge"
+        },
+        {
+          "id": "a_water_e",
+          "kind": "water",
+          "x": 495,
+          "y": 372,
+          "w": 285,
+          "h": 168,
+          "label": "South Channel"
+        }
+      ]
+    }
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Between 1995 and 2025, Alderbury Harbourfront was transformed from an industrial cargo and fishing zone into a pedestrian-friendly cultural, residential, and leisure district.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "change",
+      "textEn": "North of Harbour Road, the railway siding was replaced by a relocated car park and the timber yard gave way to Harbour Apartments.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Both former warehouses were repurposed into a Maritime Museum and Cafes and Boutiques, while the old central car park became Waterfront Park.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "change",
+      "textEn": "Along the southern edge, the cargo loading quay was converted into a Waterfront Promenade and the fishing jetties were replaced by a Yacht Marina.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "change",
+      "textEn": "A new Pedestrian Bridge was constructed across Alderbury Harbour, whereas Harbour Road and the eastern Harbour Office remained unchanged.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, Alderbury Harbourfront underwent comprehensive regeneration over the thirty-year period, shifting from working freight and fishing facilities to a public cultural, residential, and recreational waterfront. Only Harbour Road and the eastern Harbour Office remained unaltered.",
+    "In general, virtually all industrial structures along Alderbury Harbourfront were removed or repurposed between 1995 and 2025 to prioritise leisure, housing, and pedestrian access, with vehicle parking pushed north of Harbour Road."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "comprehensive regeneration",
+    "recreational waterfront",
+    "remained unaltered",
+    "pedestrian access"
+  ],
+  "band8Model": {
+    "text": "The maps compare the layout of Alderbury Harbourfront in 1995 with its redeveloped form in 2025.\n\nOverall, the district underwent comprehensive regeneration over the three decades, shifting from an industrial cargo and fishing port into a pedestrian-oriented leisure, cultural, and residential waterfront. Only Harbour Road and the Harbour Office in the east remained unaltered.\n\nNorth of Harbour Road, heavy transport and storage facilities were cleared completely. The railway siding in the north-west was replaced by a relocated car park, freeing prime waterside land, while the neighbouring timber yard to the north-east was demolished to build Harbour Apartments.\n\nSouth of the road, the former commercial core was thoroughly repurposed. The West Warehouse became a Maritime Museum, the East Warehouse was converted into cafes and boutiques, and the original central car park was landscaped into Waterfront Park beside the retained Harbour Office. Along the shoreline, the cargo loading quay gave way to a Waterfront Promenade, the south-eastern fishing jetties were redeveloped into a yacht marina, and a new pedestrian bridge was built across Alderbury Harbour.",
+    "wordCount": 173
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

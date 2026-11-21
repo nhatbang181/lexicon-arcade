@@ -1,0 +1,271 @@
+{
+  "id": "w1:023",
+  "kind": "map",
+  "topic": "education",
+  "difficulty": 9,
+  "prompt": "The maps below illustrate the expansion of Northbridge College Campus between 2000 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "maps": {
+    "before": {
+      "year": "2000",
+      "viewBox": "0 0 800 560",
+      "compass": true,
+      "slots": [],
+      "shapes": [
+        {
+          "id": "b_field",
+          "kind": "park",
+          "x": 25,
+          "y": 24,
+          "w": 660,
+          "h": 148,
+          "label": "Sports Field"
+        },
+        {
+          "id": "b_arts",
+          "kind": "building",
+          "x": 25,
+          "y": 196,
+          "w": 190,
+          "h": 120,
+          "label": "Arts Building"
+        },
+        {
+          "id": "b_carpark",
+          "kind": "parking",
+          "x": 240,
+          "y": 196,
+          "w": 265,
+          "h": 120,
+          "label": "Central Car Park"
+        },
+        {
+          "id": "b_admin",
+          "kind": "building",
+          "x": 530,
+          "y": 196,
+          "w": 245,
+          "h": 120,
+          "label": "Administration Hall"
+        },
+        {
+          "id": "b_oldlib",
+          "kind": "building",
+          "x": 25,
+          "y": 340,
+          "w": 190,
+          "h": 86,
+          "label": "Old Library"
+        },
+        {
+          "id": "b_union",
+          "kind": "building",
+          "x": 240,
+          "y": 340,
+          "w": 265,
+          "h": 86,
+          "label": "Student Union"
+        },
+        {
+          "id": "b_lawn",
+          "kind": "park",
+          "x": 530,
+          "y": 340,
+          "w": 245,
+          "h": 86,
+          "label": "East Lawn"
+        },
+        {
+          "id": "b_ent",
+          "kind": "entrance",
+          "x": 310,
+          "y": 446,
+          "w": 180,
+          "h": 34,
+          "label": "Main Entrance"
+        },
+        {
+          "id": "b_road",
+          "kind": "road",
+          "x": 25,
+          "y": 498,
+          "w": 750,
+          "h": 36,
+          "label": "College Avenue"
+        }
+      ]
+    },
+    "after": {
+      "year": "2025",
+      "viewBox": "0 0 800 560",
+      "compass": true,
+      "slots": [],
+      "shapes": [
+        {
+          "id": "a_field",
+          "kind": "park",
+          "x": 25,
+          "y": 24,
+          "w": 215,
+          "h": 148,
+          "label": "Reduced Sports Field"
+        },
+        {
+          "id": "a_sci",
+          "kind": "building",
+          "x": 260,
+          "y": 24,
+          "w": 205,
+          "h": 148,
+          "label": "Science Wing"
+        },
+        {
+          "id": "a_lib",
+          "kind": "building",
+          "x": 485,
+          "y": 24,
+          "w": 200,
+          "h": 148,
+          "label": "Solar Library"
+        },
+        {
+          "id": "a_arts",
+          "kind": "building",
+          "x": 25,
+          "y": 196,
+          "w": 190,
+          "h": 120,
+          "label": "Arts Building"
+        },
+        {
+          "id": "a_quad",
+          "kind": "park",
+          "x": 240,
+          "y": 196,
+          "w": 265,
+          "h": 120,
+          "label": "Pedestrian Quad"
+        },
+        {
+          "id": "a_admin",
+          "kind": "building",
+          "x": 530,
+          "y": 196,
+          "w": 245,
+          "h": 120,
+          "label": "Administration Hall"
+        },
+        {
+          "id": "a_lect",
+          "kind": "building",
+          "x": 25,
+          "y": 340,
+          "w": 190,
+          "h": 86,
+          "label": "Lecture Theatre"
+        },
+        {
+          "id": "a_union",
+          "kind": "building",
+          "x": 240,
+          "y": 340,
+          "w": 265,
+          "h": 86,
+          "label": "Student Union"
+        },
+        {
+          "id": "a_cycle",
+          "kind": "parking",
+          "x": 530,
+          "y": 340,
+          "w": 110,
+          "h": 86,
+          "label": "Cycle Hub"
+        },
+        {
+          "id": "a_bus",
+          "kind": "entrance",
+          "x": 655,
+          "y": 340,
+          "w": 120,
+          "h": 86,
+          "label": "Bus Terminus"
+        },
+        {
+          "id": "a_ent",
+          "kind": "entrance",
+          "x": 310,
+          "y": 446,
+          "w": 180,
+          "h": 34,
+          "label": "Main Entrance"
+        },
+        {
+          "id": "a_road",
+          "kind": "road",
+          "x": 25,
+          "y": 498,
+          "w": 750,
+          "h": 36,
+          "label": "College Avenue"
+        }
+      ]
+    }
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Between 2000 and 2025, Northbridge College expanded its academic buildings onto northern recreational land while removing private cars from the campus core in favour of pedestrian and public transport facilities.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "change",
+      "textEn": "The northern Sports Field was substantially reduced to the north-west corner to accommodate the new Science Wing and Solar Library.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "The Central Car Park between the Arts Building and Administration Hall was replaced by a landscaped Pedestrian Quad.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "change",
+      "textEn": "In the south-west, the Old Library was converted into a Lecture Theatre once library services moved north.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "change",
+      "textEn": "The south-eastern East Lawn gave way to a Cycle Hub and Bus Terminus, while the Arts Building, Administration Hall, Student Union, and Main Entrance remained unchanged.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, Northbridge College Campus became significantly denser in academic infrastructure and greener in its transport layout between 2000 and 2025. Open sports grounds in the north were largely built over for new teaching and study facilities, while central car parking gave way to pedestrian and sustainable-commuting amenities.",
+    "In general, the campus evolved from a car-accessible layout with extensive sports grounds into a pedestrianised, expanded academic hub. Key core buildings and southern road access stayed intact, whereas green spaces in the north and south-east were reallocated to education and public transit."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "academic infrastructure",
+    "largely built over",
+    "central car parking",
+    "sustainable-commuting"
+  ],
+  "band8Model": {
+    "text": "The two maps illustrate how Northbridge College Campus was expanded and reorganised between 2000 and 2025.\n\nOverall, the campus added substantial academic infrastructure at the expense of open green space while shifting away from private cars towards pedestrian and sustainable-commuting facilities. Meanwhile, the main perimeter buildings and southern entrance remained unchanged.\n\nThe most dramatic development occurred across the northern section. The expansive Sports Field that had occupied the entire north side in 2000 was reduced to a smaller pitch in the north-west corner, making room for a new Science Wing in the north-centre and a Solar Library in the north-east. With library operations relocated, the Old Library in the south-west was repurposed as a Lecture Theatre.\n\nIn the heart of the campus, the Central Car Park situated between the retained Arts Building and Administration Hall was cleared and landscaped into a Pedestrian Quad. To the south-east, East Lawn was replaced by a Cycle Hub alongside a Bus Terminus, while the Student Union, Main Entrance, and College Avenue stayed in their original positions.",
+    "wordCount": 172
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "id": "w1:018",
+  "kind": "mixed",
+  "topic": "energy",
+  "difficulty": 8,
+  "prompt": "The bar chart below shows annual national additions to solar and wind electricity capacity between 2018 and 2024, while the table presents average generation costs and national grid storage capacity over the same period. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Annual National Solar and Wind Capacity Additions (2018-2024)",
+    "unit": "GW",
+    "xLabel": "Year",
+    "yLabel": "Added capacity (GW)",
+    "categories": [
+      "2018",
+      "2020",
+      "2022",
+      "2024"
+    ],
+    "series": [
+      {
+        "name": "Solar power",
+        "values": [
+          1.2,
+          2.1,
+          3.8,
+          5.4
+        ]
+      },
+      {
+        "name": "Wind power",
+        "values": [
+          2,
+          2.6,
+          3.1,
+          3.9
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "table": {
+    "title": "Average Generation Costs and National Grid Storage (2018-2024)",
+    "columns": [
+      "Year",
+      "Solar cost (GBP/MWh)",
+      "Wind cost (GBP/MWh)",
+      "Grid storage (GWh)"
+    ],
+    "rows": [
+      [
+        "2018",
+        72,
+        58,
+        1.5
+      ],
+      [
+        "2020",
+        54,
+        51,
+        3.2
+      ],
+      [
+        "2022",
+        41,
+        46,
+        6.8
+      ],
+      [
+        "2024",
+        34,
+        42,
+        12.4
+      ]
+    ]
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Both renewable technologies expanded steadily from 2018 to 2024 as generation costs declined and national grid storage scaled up rapidly.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "change",
+      "textEn": "Solar power overtook wind power in both annual additions and cost competitiveness in 2022, reversing the initial 2018 ranking.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "highest",
+      "textEn": "By 2024, solar additions reached 5.4 GW (up from 1.2 GW) while solar costs fell by more than half from 72 to 34 GBP per MWh.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "comparison",
+      "textEn": "Wind additions grew more gradually from 2.0 to 3.9 GW, mirroring a gentler cost reduction from 58 to 42 GBP per MWh.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "change",
+      "textEn": "National grid storage capacity expanded more than eightfold from 1.5 GWh in 2018 to 12.4 GWh in 2024.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, annual installations of both solar and wind power rose steadily between 2018 and 2024 alongside falling generation costs and rapid expansion in grid storage. Crucially, solar power underwent a much sharper cost decline than wind and overtook it in annual deployment from 2022 onwards.",
+    "In general, renewable deployment accelerated as electricity costs dropped and storage capacity grew dramatically. Whereas wind initially led in both affordability and new installations, solar surpassed wind on both counts during the second half of the period."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "falling generation costs",
+    "overtook it",
+    "from 2022 onwards",
+    "storage capacity"
+  ],
+  "band8Model": {
+    "text": "The bar chart tracks national additions to solar and wind power capacity between 2018 and 2024, while the table compares average generation costs and grid storage capacity over the same years.\n\nOverall, deployment of both renewables expanded consistently as costs fell and grid storage multiplied. Crucially, solar experienced a steeper cost drop than wind and overtook it in new capacity from 2022 onwards.\n\nIn 2018, wind led additions at 2.0 GW compared with 1.2 GW for solar, reflecting wind power being cheaper to generate at 58 GBP per MWh against 72 GBP for solar. By 2020, the gap narrowed as wind reached 2.6 GW and solar rose to 2.1 GW, while costs converged to 51 GBP and 54 GBP per MWh respectively.\n\nA clear crossover occurred in 2022, when solar costs dropped to 41 GBP per MWh, undercutting wind at 46 GBP, and solar additions surged to 3.8 GW versus 3.1 GW for wind. By 2024, solar additions peaked at 5.4 GW at 34 GBP per MWh, compared with 3.9 GW and 42 GBP for wind. Meanwhile, grid storage expanded from 1.5 GWh to 12.4 GWh.",
+    "wordCount": 186
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

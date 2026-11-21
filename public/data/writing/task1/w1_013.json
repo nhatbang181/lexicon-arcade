@@ -1,0 +1,110 @@
+{
+  "id": "w1:013",
+  "kind": "table",
+  "topic": "food",
+  "difficulty": 5,
+  "prompt": "The table below shows the annual per-capita consumption (in kilograms) of five food groups across four countries. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "table": {
+    "title": "Annual Per-Capita Consumption of Five Food Groups Across Four Countries (kg per person)",
+    "columns": [
+      "Country",
+      "Cereals & Grains",
+      "Vegetables",
+      "Fruit",
+      "Dairy Products",
+      "Meat & Fish"
+    ],
+    "rows": [
+      [
+        "Kestrelia",
+        112,
+        108,
+        86,
+        164,
+        78
+      ],
+      [
+        "Valdora",
+        138,
+        124,
+        94,
+        92,
+        64
+      ],
+      [
+        "Marisia",
+        165,
+        96,
+        72,
+        48,
+        52
+      ],
+      [
+        "Bramwell",
+        98,
+        88,
+        65,
+        142,
+        91
+      ]
+    ]
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "grouping",
+      "textEn": "The four nations split into two distinct dietary profiles: Kestrelia and Bramwell consumed high volumes of dairy and animal protein, whereas Marisia and Valdora relied more heavily on cereals and plant produce.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Cereals and grains in Marisia (165 kg) and dairy products in Kestrelia (164 kg) represented the two highest single figures in the table.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "comparison",
+      "textEn": "Bramwell recorded the highest meat and fish consumption (91 kg) alongside the lowest intake of cereals (98 kg), vegetables (88 kg), and fruit (65 kg).",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "highest",
+      "textEn": "Valdora led all countries in both vegetables (124 kg) and fruit (94 kg), while maintaining mid-range figures for dairy (92 kg) and meat and fish (64 kg).",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "lowest",
+      "textEn": "Dairy intake showed the widest cross-national spread, ranging from 164 kg in Kestrelia down to just 48 kg in Marisia.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, the four countries divided into two contrasting dietary patterns: Kestrelia and Bramwell favoured dairy and meat, whereas Marisia and Valdora leaned more heavily towards cereals and fresh produce. Dairy consumption exhibited the widest variation between nations.",
+    "In general, no single country ranked highest across all food groups. Kestrelia topped dairy, Bramwell led meat and fish while trailing in plant foods, Marisia relied most heavily on cereals, and Valdora consumed the greatest quantities of vegetables and fruit.",
+    "Taken as a whole, national diets reflected a clear trade-off between animal-derived staples and plant-based foods. While cereals and dairy generated the largest figures overall, meat and fish and fruit generally formed smaller shares of annual intake."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "two contrasting dietary patterns",
+    "widest variation between nations",
+    "clear trade-off",
+    "no single country ranked highest"
+  ],
+  "band8Model": {
+    "text": "The table compares average annual per-capita consumption of five food categories, measured in kilograms, across four countries.\n\nOverall, the nations fell into two contrasting dietary patterns: Kestrelia and Bramwell consumed substantially more dairy and meat, whereas Marisia and Valdora relied more heavily on cereals and fresh produce. Across all categories, dairy exhibited the widest variation between nations.\n\nKestrelia and Bramwell were characterised by heavy dairy and animal-protein intake. Kestrelia topped dairy consumption at 164 kg per person alongside 78 kg of meat and fish, while eating moderate quantities of cereals (112 kg), vegetables (108 kg), and fruit (86 kg). Bramwell recorded the highest meat and fish intake at 91 kg and strong dairy consumption at 142 kg, yet posted the lowest figures for cereals (98 kg), vegetables (88 kg), and fruit (65 kg).\n\nConversely, Marisia led in cereals and grains at 165 kg, the table's highest single figure, while recording the lowest dairy (48 kg) and meat and fish (52 kg) totals. Valdora led in both vegetables (124 kg) and fruit (94 kg), alongside 138 kg of cereals, 92 kg of dairy, and 64 kg of meat and fish.",
+    "wordCount": 189
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

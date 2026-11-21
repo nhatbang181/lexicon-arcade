@@ -1,0 +1,112 @@
+{
+  "id": "w1:014",
+  "kind": "table",
+  "topic": "urban",
+  "difficulty": 6,
+  "prompt": "The table below compares public library membership, digital and print loans, and annual budgets across five municipal districts of Crestholm in 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "table": {
+    "title": "Public Library Performance and Funding Across Five Districts of Crestholm (2025)",
+    "columns": [
+      "District",
+      "Active Members (thousands)",
+      "Digital Loans (thousands)",
+      "Print Loans (thousands)",
+      "Annual Budget (£ millions)"
+    ],
+    "rows": [
+      [
+        "Central Ward",
+        68,
+        410,
+        290,
+        6.4
+      ],
+      [
+        "Harbourside",
+        52,
+        325,
+        240,
+        4.9
+      ],
+      [
+        "Oakridge",
+        44,
+        195,
+        285,
+        3.8
+      ],
+      [
+        "Millbrook",
+        31,
+        160,
+        175,
+        2.7
+      ],
+      [
+        "Southfield",
+        24,
+        115,
+        145,
+        2.1
+      ]
+    ]
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "grouping",
+      "textEn": "Borrowing preferences split clearly by district scale: digital loans comfortably exceeded print in the two largest districts (Central Ward and Harbourside), whereas print loans outnumbered digital in the three smaller districts.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "overall_trend",
+      "textEn": "Active membership and annual funding aligned closely in rank from Central Ward down to Southfield.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "highest",
+      "textEn": "Central Ward led every indicator, with 68 thousand members, 410 thousand digital loans, 290 thousand print loans, and a £6.4 million budget.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "comparison",
+      "textEn": "Oakridge stood out for its exceptionally strong print demand (285 thousand loans), nearly equalling Central Ward despite having 24 thousand fewer members and a much lower digital tally (195 thousand).",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "lowest",
+      "textEn": "Southfield recorded the lowest values across all four columns (24 thousand members, 115 thousand digital loans, 145 thousand print loans, and £2.1 million).",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, library membership and funding scaled closely together across Crestholm, with Central Ward leading every category and Southfield trailing throughout. Crucially, borrowing preferences diverged by district size: digital lending predominated in the two largest districts, whereas print remained more popular in the three smaller ones.",
+    "In general, the five districts followed a consistent descending pattern in membership, digital loans, and budgets, though print borrowing broke that order due to unusually high demand in Oakridge. Larger, better-funded districts leaned clearly towards digital formats.",
+    "Taken as a whole, Central Ward and Harbourside accounted for the highest membership, budgets, and digital lending, in contrast to the print-oriented borrowing profiles of Oakridge, Millbrook, and Southfield."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "scaled closely together",
+    "borrowing preferences diverged by district size",
+    "broke that order",
+    "print-oriented borrowing profiles"
+  ],
+  "band8Model": {
+    "text": "The table compares active membership, digital and print borrowing, and annual budgets across public libraries in five districts of Crestholm in 2025.\n\nOverall, membership, digital loans, and budgets scaled closely together from Central Ward down to Southfield. However, borrowing preferences diverged by district size: digital loans comfortably outnumbered print in the two largest districts, whereas print remained ahead in the three smaller ones, with Oakridge breaking the otherwise uniform ranking.\n\nCentral Ward led every category, serving 68 thousand members on a £6.4 million budget and recording 410 thousand digital loans alongside 290 thousand print loans. Harbourside followed a similar digital-led pattern, with 52 thousand members, £4.9 million in funding, and 325 thousand digital loans compared with 240 thousand print loans.\n\nBy contrast, print prevailed in the remaining three districts. Oakridge was notable for generating 285 thousand print loans, just 5 thousand below Central Ward, despite lower digital borrowing (195 thousand), 44 thousand members, and a £3.8 million budget. Millbrook (31 thousand members; £2.7 million) and Southfield (24 thousand; £2.1 million) also lent more print than digital items, at 175 versus 160 thousand and 145 versus 115 thousand respectively.",
+    "wordCount": 188
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

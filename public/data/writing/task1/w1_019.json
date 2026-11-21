@@ -1,0 +1,144 @@
+{
+  "id": "w1:019",
+  "kind": "process",
+  "topic": "environment",
+  "difficulty": 6,
+  "prompt": "The diagram below illustrates the closed-loop process by which used aluminium beverage cans are recycled into new cans. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "process": {
+    "title": "Closed-Loop Aluminium Beverage Can Recycling Process",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Kerbside collection & sorting",
+        "icon": "collect"
+      },
+      {
+        "id": "s2",
+        "label": "Magnetic screening & cleaning",
+        "icon": "filter"
+      },
+      {
+        "id": "s3",
+        "label": "Shredding into metal chips",
+        "icon": "shred"
+      },
+      {
+        "id": "s4",
+        "label": "Decoating in hot-air furnace",
+        "icon": "heat"
+      },
+      {
+        "id": "s5",
+        "label": "Melting & casting into ingots",
+        "icon": "melt"
+      },
+      {
+        "id": "s6",
+        "label": "Hot & cold sheet rolling",
+        "icon": "roll"
+      },
+      {
+        "id": "s7",
+        "label": "Can forming, filling & retail",
+        "icon": "pack"
+      },
+      {
+        "id": "s8",
+        "label": "Consumer use & bin return",
+        "icon": "cycle"
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s6",
+        "s7"
+      ],
+      [
+        "s7",
+        "s8"
+      ],
+      [
+        "s8",
+        "s1"
+      ]
+    ],
+    "cyclic": true
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Aluminium beverage can recycling is a continuous, closed-loop cycle comprising eight stages that convert discarded cans back into retail-ready containers.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "grouping",
+      "textEn": "The cycle divides into two broad halves: waste recovery and preparation (collection through decoating) and industrial remanufacturing (melting through retail and return).",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "stage",
+      "textEn": "Contaminants and coatings are removed sequentially through magnetic screening, cleaning, shredding, and hot-air decoating before smelting.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "stage",
+      "textEn": "Purified metal is melted into solid ingots and passed through hot and cold rollers to produce thin sheets for forming new cans.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "stage",
+      "textEn": "Once filled, sold, consumed, and placed back into recycling bins, the cans re-enter kerbside collection to restart the loop.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, the recycling of aluminium drinks cans forms a continuous eight-stage closed loop that turns household waste back into new retail packaging. The sequence falls into two main phases: initial sorting and purification of scrap metal, followed by thermal reprocessing, rolling, and commercial distribution.",
+    "In general, used aluminium cans undergo a cyclical manufacturing process consisting of eight linked stages, beginning with kerbside recovery and ending with consumer return. Crucially, the metal is stripped of impurities and ink before being melted, rolled into sheets, and reformed into identical containers."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "closed loop",
+    "two main phases",
+    "sorting and purification",
+    "thermal reprocessing"
+  ],
+  "band8Model": {
+    "text": "The diagram depicts the closed-loop recycling system through which discarded aluminium beverage cans are processed and manufactured into new containers.\n\nOverall, the process operates as a continuous cycle comprising eight distinct stages. It can be grouped into two broad phases: collection and purification of scrap cans, followed by industrial smelting, rolling, and return to consumers.\n\nIn the first half of the loop, used cans are gathered through kerbside collection and sorted from other household refuse. They then pass through magnetic screening to remove steel impurities before being cleaned thoroughly. Next, the clean aluminium is shredded into small uniform metal chips, which are fed into a hot-air furnace where surface paint and lacquer are stripped away during decoating.\n\nOnce purified, the chips are melted down and cast into large solid ingots. These ingots are subsequently flattened through successive hot and cold rolling mills into thin aluminium sheets. Finally, the sheets are pressed into new cans, filled with beverages, and distributed for retail sale. After consumers finish the drinks and deposit the empty containers in recycling bins, the cans re-enter kerbside collection and the cycle begins anew.",
+    "wordCount": 185
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

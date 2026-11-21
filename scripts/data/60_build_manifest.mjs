@@ -102,6 +102,7 @@ export function buildManifest(rootDir = process.cwd()) {
     }
     else if (rel === 'listening/dictation.json') totals.dictation = count;
     else if (rel === 'writing/task2_prompts.json') totals.writingTask2 = count;
+    else if (rel === 'writing/cliches.json') totals.writingCliches = count;
     else if (rel.startsWith('writing/task1/') && rel !== 'writing/task1/index.json') {
       totals.writingTask1 = (totals.writingTask1 || 0) + 1;
     } else if (rel === 'speaking/part1.json') totals.speakingPart1 = count;

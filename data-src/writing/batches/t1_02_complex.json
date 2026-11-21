@@ -1,0 +1,1749 @@
+[
+  {
+    "id": "w1:015",
+    "kind": "mixed",
+    "topic": "tourism",
+    "difficulty": 5,
+    "prompt": "The line chart below shows annual international visitor arrivals at three fictional island resorts between 2015 and 2025, while the table compares average length of stay and daily expenditure in 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "International Visitor Arrivals to Three Island Resorts (2015-2025)",
+      "unit": "thousands",
+      "xLabel": "Year",
+      "yLabel": "Arrivals (thousands)",
+      "categories": [
+        "2015",
+        "2017",
+        "2019",
+        "2021",
+        "2023",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Coralhaven",
+          "values": [
+            120,
+            155,
+            190,
+            140,
+            210,
+            260
+          ]
+        },
+        {
+          "name": "Suncrest",
+          "values": [
+            95,
+            130,
+            165,
+            105,
+            180,
+            225
+          ]
+        },
+        {
+          "name": "Mistisle",
+          "values": [
+            60,
+            68,
+            75,
+            55,
+            82,
+            95
+          ]
+        }
+      ],
+      "pie": false
+    },
+    "table": {
+      "title": "Visitor Stay Duration and Daily Spend by Resort (2025)",
+      "columns": [
+        "Island resort",
+        "Average stay (nights)",
+        "Average daily spend (GBP)"
+      ],
+      "rows": [
+        [
+          "Coralhaven",
+          3.8,
+          110
+        ],
+        [
+          "Suncrest",
+          5.2,
+          145
+        ],
+        [
+          "Mistisle",
+          7.4,
+          185
+        ]
+      ]
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "All three island resorts recorded overall growth in international arrivals between 2015 and 2025 despite a sharp dip in 2021.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "comparison",
+        "textEn": "There is a clear inverse relationship between visitor volume and spending intensity: higher-volume resorts had shorter stays and lower daily spend.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "highest",
+        "textEn": "Coralhaven remained the most visited destination throughout the decade, climbing from 120,000 to 260,000 arrivals.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "lowest",
+        "textEn": "Mistisle attracted the fewest visitors (95,000 in 2025), yet its guests stayed longest (7.4 nights) and spent the most per day (185 GBP).",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "change",
+        "textEn": "Suncrest experienced the steepest temporary fall in 2021 (down to 105,000) before rebounding to 225,000 by 2025.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, international arrivals rose across all three island resorts over the decade despite a temporary downturn in 2021, with Coralhaven consistently attracting the largest share of travellers. Notably, visitor volume moved in the opposite direction to stay duration and daily expenditure, as the quietest resort generated the highest spending per guest.",
+      "In general, tourism expanded substantially at every resort between 2015 and 2025 following a mid-period dip, while Coralhaven remained the leading destination by volume. By contrast, Mistisle drew far fewer tourists yet stood out for both the longest stays and the highest daily spend."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "despite a temporary downturn",
+      "largest share",
+      "opposite direction",
+      "By contrast,"
+    ],
+    "band8Model": {
+      "text": "The line chart illustrates annual international arrivals at three island resorts from 2015 to 2025, while the table details average length of stay and daily expenditure in 2025.\n\nOverall, visitor numbers increased at every destination over the period despite a sharp contraction in 2021, with Coralhaven maintaining the highest volume throughout. Notably, higher arrivals corresponded with shorter trips and lower daily spending, whereas the least visited island attracted the highest-spending guests.\n\nIn 2015, Coralhaven welcomed 120 thousand overseas visitors, compared with 95 thousand for Suncrest and 60 thousand for Mistisle. All three destinations expanded steadily until 2019, reaching 190 thousand, 165 thousand, and 75 thousand respectively. Following a marked drop in 2021 to 140 thousand, 105 thousand, and 55 thousand, arrivals recovered briskly, peaking in 2025 at 260 thousand for Coralhaven, 225 thousand for Suncrest, and 95 thousand for Mistisle.\n\nThe 2025 table reveals a striking inverse pattern. Guests on Mistisle stayed an average of 7.4 nights, nearly double Coralhaven at 3.8 nights, and spent 185 GBP daily compared with 110 GBP on Coralhaven. Suncrest occupied the middle ground at 5.2 nights and 145 GBP per day.",
+      "wordCount": 187
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:016",
+    "kind": "mixed",
+    "topic": "education",
+    "difficulty": 6,
+    "prompt": "The bar chart below shows full-time graduate employment rates across five university faculties in 2024, and the table presents median starting salaries alongside the proportion of graduates entering further study. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Full-Time Graduate Employment Rates by Faculty (2024)",
+      "unit": "%",
+      "xLabel": "Faculty",
+      "yLabel": "Employment rate (%)",
+      "categories": [
+        "Medicine",
+        "Computer Science",
+        "Engineering",
+        "Business",
+        "Humanities"
+      ],
+      "series": [
+        {
+          "name": "Employed full-time (%)",
+          "values": [
+            94,
+            86,
+            82,
+            74,
+            61
+          ]
+        }
+      ],
+      "pie": false
+    },
+    "table": {
+      "title": "Graduate Starting Salaries and Further-Study Rates by Faculty (2024)",
+      "columns": [
+        "Faculty",
+        "Median starting salary (GBP)",
+        "Entering further study (%)"
+      ],
+      "rows": [
+        [
+          "Medicine",
+          38000,
+          4
+        ],
+        [
+          "Computer Science",
+          35500,
+          8
+        ],
+        [
+          "Engineering",
+          33000,
+          11
+        ],
+        [
+          "Business",
+          29000,
+          14
+        ],
+        [
+          "Humanities",
+          24500,
+          28
+        ]
+      ]
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Vocational and technical faculties achieved both the highest full-time employment rates and the strongest median starting salaries.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "comparison",
+        "textEn": "Further-study rates followed the exact reverse order of employment rates, rising as immediate job placement declined.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "highest",
+        "textEn": "Medicine led all disciplines with 94% employment and a median salary of 38,000 GBP, alongside the lowest further-study share (4%).",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "lowest",
+        "textEn": "Humanities recorded the lowest employment rate (61%) and starting pay (24,500 GBP), yet 28% of its graduates progressed to postgraduate study.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "grouping",
+        "textEn": "Computer Science (86%, 35,500 GBP) and Engineering (82%, 33,000 GBP) formed a strong second tier ahead of Business (74%, 29,000 GBP).",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, graduates from vocational and technical disciplines enjoyed markedly stronger labour-market outcomes in both employment and starting pay than those in Business or Humanities. Conversely, progression into postgraduate study followed the opposite ranking, being highest in the faculty with the lowest immediate job placement.",
+      "In general, Medicine and technology-oriented faculties led on both full-time employment and median earnings, whereas Humanities lagged behind on both metrics. However, Humanities graduates were by far the most likely to continue into further study."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "labour-market outcomes",
+      "Conversely,",
+      "opposite ranking",
+      "by far the most likely"
+    ],
+    "band8Model": {
+      "text": "The bar chart compares full-time employment rates for 2024 graduates across five faculties, while the table reports their median starting salaries and rates of entry into further study.\n\nOverall, vocational and technical fields delivered substantially higher immediate employment and starting earnings than Business or Humanities. Conversely, continuation into postgraduate study followed the exact opposite ranking, peaking where direct employment was lowest.\n\nMedicine achieved the strongest employment figure at 94%, accompanied by the highest median salary of 38,000 GBP and a minimal 4% moving into further study. Computer Science and Engineering formed a closely grouped second tier, placing 86% and 82% of graduates into full-time roles at median salaries of 35,500 GBP and 33,000 GBP respectively; only 8% and 11% pursued additional qualifications.\n\nBy contrast, Business recorded a more moderate 74% employment rate, earnings of 29,000 GBP, and a 14% further-study rate. Humanities trailed all other disciplines, with 61% securing full-time work and median pay of 24,500 GBP, a gap of 13,500 GBP below Medicine. Nevertheless, 28% of Humanities graduates entered further study, double the Business proportion.",
+      "wordCount": 176
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:017",
+    "kind": "mixed",
+    "topic": "environment",
+    "difficulty": 7,
+    "prompt": "The pie chart below illustrates the proportion of urban water consumed by sector in the city of Westmoor in 2025, and the table compares municipal water tariffs in 2015 and 2025 alongside 2025 conservation targets. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Urban Water Usage by Sector in Westmoor (2025)",
+      "unit": "%",
+      "categories": [
+        "Domestic households",
+        "Manufacturing industry",
+        "Commercial services",
+        "Municipal parks & leisure",
+        "System leakage"
+      ],
+      "series": [
+        {
+          "name": "Share of total water use (%)",
+          "values": [
+            42,
+            24,
+            18,
+            10,
+            6
+          ]
+        }
+      ],
+      "pie": true
+    },
+    "table": {
+      "title": "Westmoor Water Tariffs (2015 vs 2025) and Conservation Targets",
+      "columns": [
+        "Sector",
+        "2015 tariff (GBP/cubic metre)",
+        "2025 tariff (GBP/cubic metre)",
+        "2025 reduction target (%)"
+      ],
+      "rows": [
+        [
+          "Domestic households",
+          1.8,
+          2.7,
+          15
+        ],
+        [
+          "Manufacturing industry",
+          2.2,
+          3.6,
+          25
+        ],
+        [
+          "Commercial services",
+          2,
+          3.1,
+          20
+        ],
+        [
+          "Municipal parks & leisure",
+          1.4,
+          2,
+          10
+        ]
+      ]
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Domestic households accounted for the largest single share of Westmoor water consumption, while tariffs increased substantially across all billed sectors between 2015 and 2025.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "comparison",
+        "textEn": "Manufacturing industry faced both the steepest price rise and the most ambitious reduction target despite using considerably less water than households.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "highest",
+        "textEn": "Domestic households consumed 42% of urban water, matching manufacturing (24%) and commercial services (18%) combined.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "lowest",
+        "textEn": "System leakage represented the smallest share at 6%, while municipal parks and leisure used 10% and carried the lowest tariff (2.0 GBP) and target (10%).",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "change",
+        "textEn": "Industrial tariffs rose by 1.4 GBP per cubic metre (from 2.2 to 3.6 GBP), compared with a 0.6 GBP increase for municipal parks.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, domestic households accounted for the largest portion of urban water demand in Westmoor, while water charges climbed considerably across every billed sector between 2015 and 2025. Notably, pricing policy and conservation targets fell most heavily on manufacturing rather than residential users.",
+      "In general, residential consumption dominated total water usage, whereas industry and commercial services together formed a comparable share. Over the decade, every billed sector experienced marked tariff increases, with industrial users facing both the highest prices and the strictest reduction target."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "largest portion",
+      "every billed sector",
+      "fell most heavily on",
+      "strictest reduction target"
+    ],
+    "band8Model": {
+      "text": "The pie chart breaks down urban water consumption in Westmoor by sector in 2025, while the table compares municipal tariffs between 2015 and 2025 together with 2025 conservation targets.\n\nOverall, households represented the largest share of demand, whereas water prices rose across every billed sector over the decade. Notably, the steepest tariffs and most demanding reduction targets were imposed on manufacturing rather than domestic users.\n\nIn 2025, domestic households consumed 42% of all municipal water, matching the combined share of manufacturing industry at 24% and commercial services at 18%. Municipal parks and leisure accounted for 10%, while unbilled system leakage made up the remaining 6%.\n\nTurning to pricing, industrial tariffs climbed from 2.2 GBP to 3.6 GBP per cubic metre, alongside a 25% conservation target, the highest in both categories. Commercial services followed closely, rising from 2.0 GBP to 3.1 GBP with a 20% target. By contrast, domestic rates rose more moderately from 1.8 GBP to 2.7 GBP under a 15% target, and municipal parks remained lowest, moving from 1.4 GBP to 2.0 GBP with a 10% goal.",
+      "wordCount": 178
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:018",
+    "kind": "mixed",
+    "topic": "energy",
+    "difficulty": 8,
+    "prompt": "The bar chart below shows annual national additions to solar and wind electricity capacity between 2018 and 2024, while the table presents average generation costs and national grid storage capacity over the same period. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "chart": {
+      "title": "Annual National Solar and Wind Capacity Additions (2018-2024)",
+      "unit": "GW",
+      "xLabel": "Year",
+      "yLabel": "Added capacity (GW)",
+      "categories": [
+        "2018",
+        "2020",
+        "2022",
+        "2024"
+      ],
+      "series": [
+        {
+          "name": "Solar power",
+          "values": [
+            1.2,
+            2.1,
+            3.8,
+            5.4
+          ]
+        },
+        {
+          "name": "Wind power",
+          "values": [
+            2,
+            2.6,
+            3.1,
+            3.9
+          ]
+        }
+      ],
+      "pie": false
+    },
+    "table": {
+      "title": "Average Generation Costs and National Grid Storage (2018-2024)",
+      "columns": [
+        "Year",
+        "Solar cost (GBP/MWh)",
+        "Wind cost (GBP/MWh)",
+        "Grid storage (GWh)"
+      ],
+      "rows": [
+        [
+          "2018",
+          72,
+          58,
+          1.5
+        ],
+        [
+          "2020",
+          54,
+          51,
+          3.2
+        ],
+        [
+          "2022",
+          41,
+          46,
+          6.8
+        ],
+        [
+          "2024",
+          34,
+          42,
+          12.4
+        ]
+      ]
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Both renewable technologies expanded steadily from 2018 to 2024 as generation costs declined and national grid storage scaled up rapidly.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "change",
+        "textEn": "Solar power overtook wind power in both annual additions and cost competitiveness in 2022, reversing the initial 2018 ranking.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "highest",
+        "textEn": "By 2024, solar additions reached 5.4 GW (up from 1.2 GW) while solar costs fell by more than half from 72 to 34 GBP per MWh.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "comparison",
+        "textEn": "Wind additions grew more gradually from 2.0 to 3.9 GW, mirroring a gentler cost reduction from 58 to 42 GBP per MWh.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "change",
+        "textEn": "National grid storage capacity expanded more than eightfold from 1.5 GWh in 2018 to 12.4 GWh in 2024.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, annual installations of both solar and wind power rose steadily between 2018 and 2024 alongside falling generation costs and rapid expansion in grid storage. Crucially, solar power underwent a much sharper cost decline than wind and overtook it in annual deployment from 2022 onwards.",
+      "In general, renewable deployment accelerated as electricity costs dropped and storage capacity grew dramatically. Whereas wind initially led in both affordability and new installations, solar surpassed wind on both counts during the second half of the period."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "falling generation costs",
+      "overtook it",
+      "from 2022 onwards",
+      "storage capacity"
+    ],
+    "band8Model": {
+      "text": "The bar chart tracks national additions to solar and wind power capacity between 2018 and 2024, while the table compares average generation costs and grid storage capacity over the same years.\n\nOverall, deployment of both renewables expanded consistently as costs fell and grid storage multiplied. Crucially, solar experienced a steeper cost drop than wind and overtook it in new capacity from 2022 onwards.\n\nIn 2018, wind led additions at 2.0 GW compared with 1.2 GW for solar, reflecting wind power being cheaper to generate at 58 GBP per MWh against 72 GBP for solar. By 2020, the gap narrowed as wind reached 2.6 GW and solar rose to 2.1 GW, while costs converged to 51 GBP and 54 GBP per MWh respectively.\n\nA clear crossover occurred in 2022, when solar costs dropped to 41 GBP per MWh, undercutting wind at 46 GBP, and solar additions surged to 3.8 GW versus 3.1 GW for wind. By 2024, solar additions peaked at 5.4 GW at 34 GBP per MWh, compared with 3.9 GW and 42 GBP for wind. Meanwhile, grid storage expanded from 1.5 GWh to 12.4 GWh.",
+      "wordCount": 186
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:019",
+    "kind": "process",
+    "topic": "environment",
+    "difficulty": 6,
+    "prompt": "The diagram below illustrates the closed-loop process by which used aluminium beverage cans are recycled into new cans. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "process": {
+      "title": "Closed-Loop Aluminium Beverage Can Recycling Process",
+      "steps": [
+        {
+          "id": "s1",
+          "label": "Kerbside collection & sorting",
+          "icon": "collect"
+        },
+        {
+          "id": "s2",
+          "label": "Magnetic screening & cleaning",
+          "icon": "filter"
+        },
+        {
+          "id": "s3",
+          "label": "Shredding into metal chips",
+          "icon": "shred"
+        },
+        {
+          "id": "s4",
+          "label": "Decoating in hot-air furnace",
+          "icon": "heat"
+        },
+        {
+          "id": "s5",
+          "label": "Melting & casting into ingots",
+          "icon": "melt"
+        },
+        {
+          "id": "s6",
+          "label": "Hot & cold sheet rolling",
+          "icon": "roll"
+        },
+        {
+          "id": "s7",
+          "label": "Can forming, filling & retail",
+          "icon": "pack"
+        },
+        {
+          "id": "s8",
+          "label": "Consumer use & bin return",
+          "icon": "cycle"
+        }
+      ],
+      "edges": [
+        [
+          "s1",
+          "s2"
+        ],
+        [
+          "s2",
+          "s3"
+        ],
+        [
+          "s3",
+          "s4"
+        ],
+        [
+          "s4",
+          "s5"
+        ],
+        [
+          "s5",
+          "s6"
+        ],
+        [
+          "s6",
+          "s7"
+        ],
+        [
+          "s7",
+          "s8"
+        ],
+        [
+          "s8",
+          "s1"
+        ]
+      ],
+      "cyclic": true
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Aluminium beverage can recycling is a continuous, closed-loop cycle comprising eight stages that convert discarded cans back into retail-ready containers.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "grouping",
+        "textEn": "The cycle divides into two broad halves: waste recovery and preparation (collection through decoating) and industrial remanufacturing (melting through retail and return).",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "stage",
+        "textEn": "Contaminants and coatings are removed sequentially through magnetic screening, cleaning, shredding, and hot-air decoating before smelting.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "stage",
+        "textEn": "Purified metal is melted into solid ingots and passed through hot and cold rollers to produce thin sheets for forming new cans.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "stage",
+        "textEn": "Once filled, sold, consumed, and placed back into recycling bins, the cans re-enter kerbside collection to restart the loop.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, the recycling of aluminium drinks cans forms a continuous eight-stage closed loop that turns household waste back into new retail packaging. The sequence falls into two main phases: initial sorting and purification of scrap metal, followed by thermal reprocessing, rolling, and commercial distribution.",
+      "In general, used aluminium cans undergo a cyclical manufacturing process consisting of eight linked stages, beginning with kerbside recovery and ending with consumer return. Crucially, the metal is stripped of impurities and ink before being melted, rolled into sheets, and reformed into identical containers."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "closed loop",
+      "two main phases",
+      "sorting and purification",
+      "thermal reprocessing"
+    ],
+    "band8Model": {
+      "text": "The diagram depicts the closed-loop recycling system through which discarded aluminium beverage cans are processed and manufactured into new containers.\n\nOverall, the process operates as a continuous cycle comprising eight distinct stages. It can be grouped into two broad phases: collection and purification of scrap cans, followed by industrial smelting, rolling, and return to consumers.\n\nIn the first half of the loop, used cans are gathered through kerbside collection and sorted from other household refuse. They then pass through magnetic screening to remove steel impurities before being cleaned thoroughly. Next, the clean aluminium is shredded into small uniform metal chips, which are fed into a hot-air furnace where surface paint and lacquer are stripped away during decoating.\n\nOnce purified, the chips are melted down and cast into large solid ingots. These ingots are subsequently flattened through successive hot and cold rolling mills into thin aluminium sheets. Finally, the sheets are pressed into new cans, filled with beverages, and distributed for retail sale. After consumers finish the drinks and deposit the empty containers in recycling bins, the cans re-enter kerbside collection and the cycle begins anew.",
+      "wordCount": 185
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:020",
+    "kind": "process",
+    "topic": "science",
+    "difficulty": 8,
+    "prompt": "The diagram below shows how seawater is converted into drinkable municipal water using reverse osmosis desalination. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "process": {
+      "title": "Municipal Seawater Desalination via Reverse Osmosis",
+      "steps": [
+        {
+          "id": "s1",
+          "label": "Offshore seawater intake",
+          "icon": "water"
+        },
+        {
+          "id": "s2",
+          "label": "Coarse mesh screening",
+          "icon": "screen"
+        },
+        {
+          "id": "s3",
+          "label": "Multi-media sand filtration",
+          "icon": "filter"
+        },
+        {
+          "id": "s4",
+          "label": "High-pressure pumping",
+          "icon": "pump"
+        },
+        {
+          "id": "s5",
+          "label": "Reverse osmosis membranes",
+          "icon": "membrane"
+        },
+        {
+          "id": "s6",
+          "label": "Brine separation & outfall",
+          "icon": "outfall"
+        },
+        {
+          "id": "s7",
+          "label": "Remineralisation & disinfection",
+          "icon": "treat"
+        },
+        {
+          "id": "s8",
+          "label": "Storage & municipal supply",
+          "icon": "city"
+        }
+      ],
+      "edges": [
+        [
+          "s1",
+          "s2"
+        ],
+        [
+          "s2",
+          "s3"
+        ],
+        [
+          "s3",
+          "s4"
+        ],
+        [
+          "s4",
+          "s5"
+        ],
+        [
+          "s5",
+          "s6"
+        ],
+        [
+          "s5",
+          "s7"
+        ],
+        [
+          "s7",
+          "s8"
+        ]
+      ],
+      "cyclic": false
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Reverse osmosis desalination is a linear, multi-stage engineering process that transforms raw seawater into potable municipal water while discharging salty brine back offshore.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "grouping",
+        "textEn": "The workflow consists of pre-treatment filtration, high-pressure membrane separation (where the stream splits), and post-treatment conditioning.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "stage",
+        "textEn": "Coarse mesh screens and multi-media sand filters remove physical debris and fine particles before water reaches the delicate membranes.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "stage",
+        "textEn": "At the reverse osmosis stage, pressurised water divides into concentrated brine routed to an outfall and desalinated freshwater advancing for treatment.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "stage",
+        "textEn": "Freshwater must be remineralised and disinfected before being held in storage tanks for municipal distribution.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, seawater desalination is a linear industrial process involving eight stages that turns raw marine water into safe drinking water while separating out concentrated brine. The system moves through mechanical pre-treatment, high-pressure membrane separation, and final chemical conditioning before municipal distribution.",
+      "In general, producing potable water from the sea requires progressive filtration followed by pressurised reverse osmosis, at which point the flow splits into two streams: waste brine returned to the ocean and purified water treated for public supply."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "linear industrial process",
+      "mechanical pre-treatment",
+      "membrane separation",
+      "splits into two streams"
+    ],
+    "band8Model": {
+      "text": "The diagram outlines the linear desalination process by which seawater is purified through reverse osmosis for municipal water supply.\n\nOverall, converting seawater into potable supply involves eight stages grouped into pre-treatment filtration, pressurised membrane separation, and post-treatment conditioning. Crucially, the flow divides at the membrane unit into waste brine and usable freshwater.\n\nInitially, seawater is drawn into the plant via an offshore intake pipe. It passes through coarse mesh screening to trap large marine debris, followed by multi-media sand filtration that removes finer suspended particles and protects downstream equipment. The pre-filtered water is then forced onwards by high-pressure pumps into banks of semi-permeable reverse osmosis membranes.\n\nWithin these membranes, dissolved salts are held back while pure water molecules pass through under pressure. Consequently, the stream splits in two directions: concentrated salty brine is channelled away and discharged safely through an offshore outfall, whereas the desalinated water moves forward to post-treatment. There, essential minerals are restored and the water is disinfected to meet health standards before entering storage reservoirs for municipal distribution.",
+      "wordCount": 171
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:021",
+    "kind": "process",
+    "topic": "food",
+    "difficulty": 9,
+    "prompt": "The diagram below illustrates the stages involved in transforming harvested cocoa pods into finished dark chocolate bars. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "process": {
+      "title": "Artisanal Production of Dark Chocolate Bars from Cocoa Pods",
+      "steps": [
+        {
+          "id": "s1",
+          "label": "Harvesting & splitting pods",
+          "icon": "harvest"
+        },
+        {
+          "id": "s2",
+          "label": "Fermenting beans under leaves",
+          "icon": "ferment"
+        },
+        {
+          "id": "s3",
+          "label": "Sun-drying on raised racks",
+          "icon": "sun"
+        },
+        {
+          "id": "s4",
+          "label": "Roasting & winnowing husks",
+          "icon": "roast"
+        },
+        {
+          "id": "s5",
+          "label": "Grinding nibs into liquor",
+          "icon": "grind"
+        },
+        {
+          "id": "s6",
+          "label": "Conching with sugar & butter",
+          "icon": "mix"
+        },
+        {
+          "id": "s7",
+          "label": "Tempering to align crystals",
+          "icon": "temp"
+        },
+        {
+          "id": "s8",
+          "label": "Moulding, cooling & wrapping",
+          "icon": "bar"
+        }
+      ],
+      "edges": [
+        [
+          "s1",
+          "s2"
+        ],
+        [
+          "s2",
+          "s3"
+        ],
+        [
+          "s3",
+          "s4"
+        ],
+        [
+          "s4",
+          "s5"
+        ],
+        [
+          "s5",
+          "s6"
+        ],
+        [
+          "s6",
+          "s7"
+        ],
+        [
+          "s7",
+          "s8"
+        ]
+      ],
+      "cyclic": false
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Producing dark chocolate bars is a linear eight-stage process progressing from manual plantation preparation to temperature-controlled factory refinement.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "grouping",
+        "textEn": "The sequence divides cleanly into agricultural post-harvest steps (harvesting, fermentation, sun-drying) and indoor manufacturing (roasting through wrapping).",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "stage",
+        "textEn": "Fermentation under leaves and sun-drying on raised racks develop core flavour precursors and reduce moisture before roasting.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "stage",
+        "textEn": "Roasting, winnowing, grinding, and conching convert dried beans into a smooth molten blend enriched with sugar and cocoa butter.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "stage",
+        "textEn": "Precise tempering aligns cocoa-butter crystals so that the moulded bars cool with a glossy finish and crisp snap.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, making dark chocolate bars is a linear eight-step procedure that transitions from manual agricultural preparation on the farm to precision thermal and mechanical processing in a factory. While the early stages develop flavour through natural fermentation and drying, the later stages focus on refining texture and crystal structure.",
+      "In general, raw cocoa pods are converted into wrapped dark chocolate through eight sequential stages, divided between outdoor post-harvest handling and indoor confectionery manufacture. Both flavour development and careful temperature control play decisive roles before the molten chocolate is moulded."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "agricultural preparation",
+      "mechanical processing",
+      "develop flavour",
+      "temperature control"
+    ],
+    "band8Model": {
+      "text": "The diagram details the sequential stages required to turn freshly harvested cocoa pods into packaged dark chocolate bars.\n\nOverall, dark chocolate manufacture is a linear process spanning eight stages, moving from manual agricultural preparation to precision thermal and mechanical processing. Whereas the opening steps rely on natural fermentation and drying to develop flavour, the remaining steps refine texture and structure indoors.\n\nAt the outset, ripe cocoa pods are harvested and split open to extract the moist white beans. These beans are heaped under leaves to ferment naturally, after which they are spread across raised racks for sun-drying so excess moisture evaporates. Once dried, the beans enter the factory, where roasting deepens their aroma and winnowing separates the papery outer husks from the inner nibs.\n\nIn the refinement phase, the roasted nibs are ground finely into thick cocoa liquor. This paste undergoes prolonged conching, during which sugar and extra cocoa butter are blended in to achieve smoothness. Next, the liquid chocolate is carefully tempered to align its fat crystals. Finally, it is poured into moulds, cooled into solid bars, and wrapped for distribution.",
+      "wordCount": 182
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:022",
+    "kind": "map",
+    "topic": "urban",
+    "difficulty": 8,
+    "prompt": "The maps below show the redevelopment of Alderbury Harbourfront between 1995 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "maps": {
+      "before": {
+        "year": "1995",
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "slots": [],
+        "shapes": [
+          {
+            "id": "b_rail",
+            "kind": "path",
+            "x": 20,
+            "y": 20,
+            "w": 325,
+            "h": 56,
+            "label": "Railway Siding"
+          },
+          {
+            "id": "b_timber",
+            "kind": "building",
+            "x": 365,
+            "y": 20,
+            "w": 320,
+            "h": 56,
+            "label": "Timber Yard"
+          },
+          {
+            "id": "b_road",
+            "kind": "road",
+            "x": 20,
+            "y": 98,
+            "w": 760,
+            "h": 32,
+            "label": "Harbour Road"
+          },
+          {
+            "id": "b_wh_w",
+            "kind": "building",
+            "x": 25,
+            "y": 152,
+            "w": 190,
+            "h": 120,
+            "label": "West Warehouse"
+          },
+          {
+            "id": "b_wh_e",
+            "kind": "building",
+            "x": 235,
+            "y": 152,
+            "w": 190,
+            "h": 120,
+            "label": "East Warehouse"
+          },
+          {
+            "id": "b_park",
+            "kind": "parking",
+            "x": 445,
+            "y": 152,
+            "w": 170,
+            "h": 120,
+            "label": "Car Park"
+          },
+          {
+            "id": "b_office",
+            "kind": "building",
+            "x": 635,
+            "y": 152,
+            "w": 145,
+            "h": 120,
+            "label": "Harbour Office"
+          },
+          {
+            "id": "b_quay",
+            "kind": "road",
+            "x": 25,
+            "y": 294,
+            "w": 500,
+            "h": 52,
+            "label": "Cargo Loading Quay"
+          },
+          {
+            "id": "b_jetty",
+            "kind": "building",
+            "x": 545,
+            "y": 294,
+            "w": 235,
+            "h": 52,
+            "label": "Fishing Jetties"
+          },
+          {
+            "id": "b_water",
+            "kind": "water",
+            "x": 20,
+            "y": 372,
+            "w": 760,
+            "h": 168,
+            "label": "Alderbury Harbour"
+          }
+        ]
+      },
+      "after": {
+        "year": "2025",
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "slots": [],
+        "shapes": [
+          {
+            "id": "a_park_n",
+            "kind": "parking",
+            "x": 20,
+            "y": 20,
+            "w": 325,
+            "h": 56,
+            "label": "Relocated Car Park"
+          },
+          {
+            "id": "a_apts",
+            "kind": "building",
+            "x": 365,
+            "y": 20,
+            "w": 320,
+            "h": 56,
+            "label": "Harbour Apartments"
+          },
+          {
+            "id": "a_road",
+            "kind": "road",
+            "x": 20,
+            "y": 98,
+            "w": 760,
+            "h": 32,
+            "label": "Harbour Road"
+          },
+          {
+            "id": "a_museum",
+            "kind": "building",
+            "x": 25,
+            "y": 152,
+            "w": 190,
+            "h": 120,
+            "label": "Maritime Museum"
+          },
+          {
+            "id": "a_cafes",
+            "kind": "building",
+            "x": 235,
+            "y": 152,
+            "w": 190,
+            "h": 120,
+            "label": "Cafes & Boutiques"
+          },
+          {
+            "id": "a_green",
+            "kind": "park",
+            "x": 445,
+            "y": 152,
+            "w": 170,
+            "h": 120,
+            "label": "Waterfront Park"
+          },
+          {
+            "id": "a_office",
+            "kind": "building",
+            "x": 635,
+            "y": 152,
+            "w": 145,
+            "h": 120,
+            "label": "Harbour Office"
+          },
+          {
+            "id": "a_prom",
+            "kind": "path",
+            "x": 25,
+            "y": 294,
+            "w": 500,
+            "h": 52,
+            "label": "Waterfront Promenade"
+          },
+          {
+            "id": "a_marina",
+            "kind": "water",
+            "x": 545,
+            "y": 294,
+            "w": 235,
+            "h": 52,
+            "label": "Yacht Marina"
+          },
+          {
+            "id": "a_water_w",
+            "kind": "water",
+            "x": 20,
+            "y": 372,
+            "w": 300,
+            "h": 168,
+            "label": "Alderbury Harbour"
+          },
+          {
+            "id": "a_bridge",
+            "kind": "path",
+            "x": 335,
+            "y": 372,
+            "w": 145,
+            "h": 168,
+            "label": "Pedestrian Bridge"
+          },
+          {
+            "id": "a_water_e",
+            "kind": "water",
+            "x": 495,
+            "y": 372,
+            "w": 285,
+            "h": 168,
+            "label": "South Channel"
+          }
+        ]
+      }
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Between 1995 and 2025, Alderbury Harbourfront was transformed from an industrial cargo and fishing zone into a pedestrian-friendly cultural, residential, and leisure district.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "change",
+        "textEn": "North of Harbour Road, the railway siding was replaced by a relocated car park and the timber yard gave way to Harbour Apartments.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "change",
+        "textEn": "Both former warehouses were repurposed into a Maritime Museum and Cafes and Boutiques, while the old central car park became Waterfront Park.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "change",
+        "textEn": "Along the southern edge, the cargo loading quay was converted into a Waterfront Promenade and the fishing jetties were replaced by a Yacht Marina.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "change",
+        "textEn": "A new Pedestrian Bridge was constructed across Alderbury Harbour, whereas Harbour Road and the eastern Harbour Office remained unchanged.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, Alderbury Harbourfront underwent comprehensive regeneration over the thirty-year period, shifting from working freight and fishing facilities to a public cultural, residential, and recreational waterfront. Only Harbour Road and the eastern Harbour Office remained unaltered.",
+      "In general, virtually all industrial structures along Alderbury Harbourfront were removed or repurposed between 1995 and 2025 to prioritise leisure, housing, and pedestrian access, with vehicle parking pushed north of Harbour Road."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "comprehensive regeneration",
+      "recreational waterfront",
+      "remained unaltered",
+      "pedestrian access"
+    ],
+    "band8Model": {
+      "text": "The maps compare the layout of Alderbury Harbourfront in 1995 with its redeveloped form in 2025.\n\nOverall, the district underwent comprehensive regeneration over the three decades, shifting from an industrial cargo and fishing port into a pedestrian-oriented leisure, cultural, and residential waterfront. Only Harbour Road and the Harbour Office in the east remained unaltered.\n\nNorth of Harbour Road, heavy transport and storage facilities were cleared completely. The railway siding in the north-west was replaced by a relocated car park, freeing prime waterside land, while the neighbouring timber yard to the north-east was demolished to build Harbour Apartments.\n\nSouth of the road, the former commercial core was thoroughly repurposed. The West Warehouse became a Maritime Museum, the East Warehouse was converted into cafes and boutiques, and the original central car park was landscaped into Waterfront Park beside the retained Harbour Office. Along the shoreline, the cargo loading quay gave way to a Waterfront Promenade, the south-eastern fishing jetties were redeveloped into a yacht marina, and a new pedestrian bridge was built across Alderbury Harbour.",
+      "wordCount": 173
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:023",
+    "kind": "map",
+    "topic": "education",
+    "difficulty": 9,
+    "prompt": "The maps below illustrate the expansion of Northbridge College Campus between 2000 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "maps": {
+      "before": {
+        "year": "2000",
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "slots": [],
+        "shapes": [
+          {
+            "id": "b_field",
+            "kind": "park",
+            "x": 25,
+            "y": 24,
+            "w": 660,
+            "h": 148,
+            "label": "Sports Field"
+          },
+          {
+            "id": "b_arts",
+            "kind": "building",
+            "x": 25,
+            "y": 196,
+            "w": 190,
+            "h": 120,
+            "label": "Arts Building"
+          },
+          {
+            "id": "b_carpark",
+            "kind": "parking",
+            "x": 240,
+            "y": 196,
+            "w": 265,
+            "h": 120,
+            "label": "Central Car Park"
+          },
+          {
+            "id": "b_admin",
+            "kind": "building",
+            "x": 530,
+            "y": 196,
+            "w": 245,
+            "h": 120,
+            "label": "Administration Hall"
+          },
+          {
+            "id": "b_oldlib",
+            "kind": "building",
+            "x": 25,
+            "y": 340,
+            "w": 190,
+            "h": 86,
+            "label": "Old Library"
+          },
+          {
+            "id": "b_union",
+            "kind": "building",
+            "x": 240,
+            "y": 340,
+            "w": 265,
+            "h": 86,
+            "label": "Student Union"
+          },
+          {
+            "id": "b_lawn",
+            "kind": "park",
+            "x": 530,
+            "y": 340,
+            "w": 245,
+            "h": 86,
+            "label": "East Lawn"
+          },
+          {
+            "id": "b_ent",
+            "kind": "entrance",
+            "x": 310,
+            "y": 446,
+            "w": 180,
+            "h": 34,
+            "label": "Main Entrance"
+          },
+          {
+            "id": "b_road",
+            "kind": "road",
+            "x": 25,
+            "y": 498,
+            "w": 750,
+            "h": 36,
+            "label": "College Avenue"
+          }
+        ]
+      },
+      "after": {
+        "year": "2025",
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "slots": [],
+        "shapes": [
+          {
+            "id": "a_field",
+            "kind": "park",
+            "x": 25,
+            "y": 24,
+            "w": 215,
+            "h": 148,
+            "label": "Reduced Sports Field"
+          },
+          {
+            "id": "a_sci",
+            "kind": "building",
+            "x": 260,
+            "y": 24,
+            "w": 205,
+            "h": 148,
+            "label": "Science Wing"
+          },
+          {
+            "id": "a_lib",
+            "kind": "building",
+            "x": 485,
+            "y": 24,
+            "w": 200,
+            "h": 148,
+            "label": "Solar Library"
+          },
+          {
+            "id": "a_arts",
+            "kind": "building",
+            "x": 25,
+            "y": 196,
+            "w": 190,
+            "h": 120,
+            "label": "Arts Building"
+          },
+          {
+            "id": "a_quad",
+            "kind": "park",
+            "x": 240,
+            "y": 196,
+            "w": 265,
+            "h": 120,
+            "label": "Pedestrian Quad"
+          },
+          {
+            "id": "a_admin",
+            "kind": "building",
+            "x": 530,
+            "y": 196,
+            "w": 245,
+            "h": 120,
+            "label": "Administration Hall"
+          },
+          {
+            "id": "a_lect",
+            "kind": "building",
+            "x": 25,
+            "y": 340,
+            "w": 190,
+            "h": 86,
+            "label": "Lecture Theatre"
+          },
+          {
+            "id": "a_union",
+            "kind": "building",
+            "x": 240,
+            "y": 340,
+            "w": 265,
+            "h": 86,
+            "label": "Student Union"
+          },
+          {
+            "id": "a_cycle",
+            "kind": "parking",
+            "x": 530,
+            "y": 340,
+            "w": 110,
+            "h": 86,
+            "label": "Cycle Hub"
+          },
+          {
+            "id": "a_bus",
+            "kind": "entrance",
+            "x": 655,
+            "y": 340,
+            "w": 120,
+            "h": 86,
+            "label": "Bus Terminus"
+          },
+          {
+            "id": "a_ent",
+            "kind": "entrance",
+            "x": 310,
+            "y": 446,
+            "w": 180,
+            "h": 34,
+            "label": "Main Entrance"
+          },
+          {
+            "id": "a_road",
+            "kind": "road",
+            "x": 25,
+            "y": 498,
+            "w": 750,
+            "h": 36,
+            "label": "College Avenue"
+          }
+        ]
+      }
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Between 2000 and 2025, Northbridge College expanded its academic buildings onto northern recreational land while removing private cars from the campus core in favour of pedestrian and public transport facilities.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "change",
+        "textEn": "The northern Sports Field was substantially reduced to the north-west corner to accommodate the new Science Wing and Solar Library.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "change",
+        "textEn": "The Central Car Park between the Arts Building and Administration Hall was replaced by a landscaped Pedestrian Quad.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "change",
+        "textEn": "In the south-west, the Old Library was converted into a Lecture Theatre once library services moved north.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "change",
+        "textEn": "The south-eastern East Lawn gave way to a Cycle Hub and Bus Terminus, while the Arts Building, Administration Hall, Student Union, and Main Entrance remained unchanged.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, Northbridge College Campus became significantly denser in academic infrastructure and greener in its transport layout between 2000 and 2025. Open sports grounds in the north were largely built over for new teaching and study facilities, while central car parking gave way to pedestrian and sustainable-commuting amenities.",
+      "In general, the campus evolved from a car-accessible layout with extensive sports grounds into a pedestrianised, expanded academic hub. Key core buildings and southern road access stayed intact, whereas green spaces in the north and south-east were reallocated to education and public transit."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "academic infrastructure",
+      "largely built over",
+      "central car parking",
+      "sustainable-commuting"
+    ],
+    "band8Model": {
+      "text": "The two maps illustrate how Northbridge College Campus was expanded and reorganised between 2000 and 2025.\n\nOverall, the campus added substantial academic infrastructure at the expense of open green space while shifting away from private cars towards pedestrian and sustainable-commuting facilities. Meanwhile, the main perimeter buildings and southern entrance remained unchanged.\n\nThe most dramatic development occurred across the northern section. The expansive Sports Field that had occupied the entire north side in 2000 was reduced to a smaller pitch in the north-west corner, making room for a new Science Wing in the north-centre and a Solar Library in the north-east. With library operations relocated, the Old Library in the south-west was repurposed as a Lecture Theatre.\n\nIn the heart of the campus, the Central Car Park situated between the retained Arts Building and Administration Hall was cleared and landscaped into a Pedestrian Quad. To the south-east, East Lawn was replaced by a Cycle Hub alongside a Bus Terminus, while the Student Union, Main Entrance, and College Avenue stayed in their original positions.",
+      "wordCount": 172
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "w1:024",
+    "kind": "map",
+    "topic": "environment",
+    "difficulty": 10,
+    "prompt": "The maps below show the transformation of Willowbrook Village between 1980 and 2020. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+    "maps": {
+      "before": {
+        "year": "1980",
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "slots": [],
+        "shapes": [
+          {
+            "id": "b_river",
+            "kind": "water",
+            "x": 20,
+            "y": 24,
+            "w": 98,
+            "h": 512,
+            "label": "River Willow"
+          },
+          {
+            "id": "b_farm",
+            "kind": "park",
+            "x": 138,
+            "y": 24,
+            "w": 265,
+            "h": 124,
+            "label": "Arable Farmland"
+          },
+          {
+            "id": "b_pasture",
+            "kind": "park",
+            "x": 423,
+            "y": 24,
+            "w": 262,
+            "h": 124,
+            "label": "Grazing Pasture"
+          },
+          {
+            "id": "b_mill",
+            "kind": "building",
+            "x": 138,
+            "y": 168,
+            "w": 190,
+            "h": 74,
+            "label": "Timber Mill"
+          },
+          {
+            "id": "b_cottages",
+            "kind": "building",
+            "x": 348,
+            "y": 168,
+            "w": 192,
+            "h": 74,
+            "label": "Village Cottages"
+          },
+          {
+            "id": "b_school",
+            "kind": "building",
+            "x": 560,
+            "y": 168,
+            "w": 150,
+            "h": 74,
+            "label": "Primary School"
+          },
+          {
+            "id": "b_highst",
+            "kind": "road",
+            "x": 138,
+            "y": 264,
+            "w": 642,
+            "h": 34,
+            "label": "High Street"
+          },
+          {
+            "id": "b_marsh",
+            "kind": "park",
+            "x": 138,
+            "y": 322,
+            "w": 290,
+            "h": 132,
+            "label": "Lowland Marsh"
+          },
+          {
+            "id": "b_orchard",
+            "kind": "park",
+            "x": 448,
+            "y": 322,
+            "w": 332,
+            "h": 132,
+            "label": "Apple Orchard"
+          }
+        ]
+      },
+      "after": {
+        "year": "2020",
+        "viewBox": "0 0 800 560",
+        "compass": true,
+        "slots": [],
+        "shapes": [
+          {
+            "id": "a_river",
+            "kind": "water",
+            "x": 20,
+            "y": 24,
+            "w": 98,
+            "h": 512,
+            "label": "River Willow"
+          },
+          {
+            "id": "a_estate",
+            "kind": "building",
+            "x": 138,
+            "y": 24,
+            "w": 265,
+            "h": 124,
+            "label": "Residential Estate"
+          },
+          {
+            "id": "a_solar",
+            "kind": "building",
+            "x": 423,
+            "y": 24,
+            "w": 262,
+            "h": 124,
+            "label": "Community Solar Array"
+          },
+          {
+            "id": "a_eco",
+            "kind": "building",
+            "x": 138,
+            "y": 168,
+            "w": 190,
+            "h": 74,
+            "label": "Eco-Visitor Centre"
+          },
+          {
+            "id": "a_cottages",
+            "kind": "building",
+            "x": 348,
+            "y": 168,
+            "w": 192,
+            "h": 74,
+            "label": "Village Cottages"
+          },
+          {
+            "id": "a_school",
+            "kind": "building",
+            "x": 560,
+            "y": 168,
+            "w": 220,
+            "h": 74,
+            "label": "Expanded Primary School"
+          },
+          {
+            "id": "a_highst",
+            "kind": "road",
+            "x": 138,
+            "y": 264,
+            "w": 642,
+            "h": 34,
+            "label": "High Street"
+          },
+          {
+            "id": "a_wetland",
+            "kind": "water",
+            "x": 138,
+            "y": 322,
+            "w": 290,
+            "h": 132,
+            "label": "Wetland Nature Reserve"
+          },
+          {
+            "id": "a_orchard",
+            "kind": "park",
+            "x": 448,
+            "y": 322,
+            "w": 332,
+            "h": 132,
+            "label": "Apple Orchard"
+          },
+          {
+            "id": "a_bypass",
+            "kind": "road",
+            "x": 138,
+            "y": 482,
+            "w": 642,
+            "h": 38,
+            "label": "Southern Bypass Road"
+          }
+        ]
+      }
+    },
+    "keyFeatures": [
+      {
+        "id": "kf1",
+        "kind": "overall_trend",
+        "textEn": "Between 1980 and 2020, Willowbrook Village shifted from traditional farming and timber production towards residential housing, renewable energy, and ecological conservation.",
+        "mustMention": true
+      },
+      {
+        "id": "kf2",
+        "kind": "change",
+        "textEn": "Northern agricultural land was entirely redeveloped, with Arable Farmland replaced by a Residential Estate and Grazing Pasture converted into a Community Solar Array.",
+        "mustMention": true
+      },
+      {
+        "id": "kf3",
+        "kind": "change",
+        "textEn": "Along the north side of High Street, the Timber Mill was replaced by an Eco-Visitor Centre and the Primary School was expanded eastwards.",
+        "mustMention": true
+      },
+      {
+        "id": "kf4",
+        "kind": "change",
+        "textEn": "South of High Street, the Lowland Marsh became a protected Wetland Nature Reserve and a new Southern Bypass Road was built along the southern edge.",
+        "mustMention": true
+      },
+      {
+        "id": "kf5",
+        "kind": "grouping",
+        "textEn": "River Willow on the west, Village Cottages, High Street, and the south-eastern Apple Orchard remained intact throughout the four decades.",
+        "mustMention": false
+      }
+    ],
+    "overviewModels": [
+      "Overall, Willowbrook Village underwent a pronounced shift between 1980 and 2020 away from traditional agriculture and timber milling towards suburban housing, community clean energy, and formal habitat conservation. Core heritage features including River Willow, Village Cottages, High Street, and the Apple Orchard were preserved.",
+      "In general, the northern half of Willowbrook was modernised with new housing, solar power, and expanded schooling, whereas the southern half balanced new road infrastructure with wetland conservation."
+    ],
+    "overviewKeyPhrases": [
+      "Overall,",
+      "traditional agriculture",
+      "clean energy",
+      "habitat conservation",
+      "were preserved"
+    ],
+    "band8Model": {
+      "text": "The two maps trace the physical transformation of Willowbrook Village between 1980 and 2020.\n\nOverall, the settlement moved away from traditional agriculture and timber processing towards expanded housing, local clean energy, and habitat conservation. Throughout these four decades, River Willow along the western boundary, the central Village Cottages, High Street, and the south-eastern Apple Orchard were preserved.\n\nThe largest land-use changes took place north of High Street. Arable Farmland in the north-west was developed into a Residential Estate, while Grazing Pasture in the north-east was repurposed as a Community Solar Array. Immediately north of the main road, the old Timber Mill beside the river was demolished and replaced by an Eco-Visitor Centre. To accommodate the larger population, the Primary School on the eastern side was expanded further east.\n\nSouth of High Street, change focused on conservation and traffic management. The Lowland Marsh bordering River Willow was designated as a Wetland Nature Reserve alongside the retained Apple Orchard, and a new Southern Bypass Road was constructed across the southern perimeter to relieve through-traffic.",
+      "wordCount": 172
+    },
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  }
+]

@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-20T16:26:05.095Z",
+  "builtAt": "2026-11-21T00:23:52.453Z",
   "totals": {
     "dictation": 300,
     "listeningEpisodes": 32,
@@ -18,7 +18,10 @@
     "errorPatterns": 230,
     "paraphrases": 320,
     "placementVocab": 150,
-    "vocab": 2207
+    "vocab": 2207,
+    "writingCliches": 50,
+    "writingTask1": 24,
+    "writingTask2": 60
   },
   "files": {
     "listening/dictation.json": {
@@ -284,6 +287,114 @@
     "vocab/words.json": {
       "sha256": "5bdf66afde1e1808a7a0cc27156c4fd94acdc02a290e7f86b224b41c6126d837",
       "count": 2207
+    },
+    "writing/cliches.json": {
+      "sha256": "5afea8bf406fce3daa8a50ed72d368362b8b3187f213c3a4c6b2cadfbe57d810",
+      "count": 50
+    },
+    "writing/task1/index.json": {
+      "sha256": "e15ff162dc13d2949af6e4dd127f36271fd956927a9ad0f918235603339308c8",
+      "count": 24
+    },
+    "writing/task1/w1_001.json": {
+      "sha256": "d7a3eee9661aecc1dc840fab18cb4da4f43e82d02e8f953d5e7328a787683707",
+      "count": 1
+    },
+    "writing/task1/w1_002.json": {
+      "sha256": "12e27ea13267592b529c5ebc479fac5715acddd4caaff0ba232b2002d9957f5e",
+      "count": 1
+    },
+    "writing/task1/w1_003.json": {
+      "sha256": "a4fc29330c97f9a805b1ac471a9b283c7f07feabf591611f13f40e2c33337689",
+      "count": 1
+    },
+    "writing/task1/w1_004.json": {
+      "sha256": "7db9b148601446949ab5c078eb8096d6af9fd4a0bdb76f25a11f80f24181163c",
+      "count": 1
+    },
+    "writing/task1/w1_005.json": {
+      "sha256": "fa397be5d726a34e98c8d40783c4350aeaad6ff20863396c6840f6db6952f454",
+      "count": 1
+    },
+    "writing/task1/w1_006.json": {
+      "sha256": "e6869e6bfdaaced70aade3b70edad1f5b4e660cd5d8a3c88d7bfe420a7833812",
+      "count": 1
+    },
+    "writing/task1/w1_007.json": {
+      "sha256": "7cef73df6588abfac797ad3dff589fb50d9a5d4b9a08ccc36409bf3460fa0923",
+      "count": 1
+    },
+    "writing/task1/w1_008.json": {
+      "sha256": "55c6db8f67b4453dd774515898e28f23c8f024b65f898f87d95972f23b9bc090",
+      "count": 1
+    },
+    "writing/task1/w1_009.json": {
+      "sha256": "ce857e8ffaa1f4dc8f9bec585c0a9241ba7d8ae03bd0f439d95fb03d72ca7f58",
+      "count": 1
+    },
+    "writing/task1/w1_010.json": {
+      "sha256": "7e3cb03f1838ae7d05d4f1c1802704fb212a79692cf0584394a3d12a935a7869",
+      "count": 1
+    },
+    "writing/task1/w1_011.json": {
+      "sha256": "edb11dea37e99dd21f2953ebd14dfabfea7f44db767f505550ae84a6437001ca",
+      "count": 1
+    },
+    "writing/task1/w1_012.json": {
+      "sha256": "18977d0c0785193091fb54dcaa1e2a4103f182c5f02931816679a9a7fe92cb41",
+      "count": 1
+    },
+    "writing/task1/w1_013.json": {
+      "sha256": "18674431df9a405ab67379bd1a83acc1a1459eed8916375c069748f1347cf4a7",
+      "count": 1
+    },
+    "writing/task1/w1_014.json": {
+      "sha256": "fc7bc3de7a72d099c7d1a451ea08395b18056472b9fdd25c5efdee3b6a299ae3",
+      "count": 1
+    },
+    "writing/task1/w1_015.json": {
+      "sha256": "2e4fdefdd3b25ca06fae103636d650fdc468b912fc5a6ab3855048cf91089e36",
+      "count": 1
+    },
+    "writing/task1/w1_016.json": {
+      "sha256": "7820276b8ec09daf4360087e94239842773a190d54681b4dc7bebc055053809e",
+      "count": 1
+    },
+    "writing/task1/w1_017.json": {
+      "sha256": "532dbed9116c8eab92595f894792a07e46388b0f5989add6f91a17945f6787f0",
+      "count": 1
+    },
+    "writing/task1/w1_018.json": {
+      "sha256": "c064d34c705b08ae82576ff439c6f9fff61e911865be548de323052ba2990f3c",
+      "count": 1
+    },
+    "writing/task1/w1_019.json": {
+      "sha256": "11f4f49e2608c19e65c813b691e685975789a5d9f3cc0bc51415ed8d438fbe48",
+      "count": 1
+    },
+    "writing/task1/w1_020.json": {
+      "sha256": "aafb1d11af56314e2191d03fbf64e7391cab6e5b0cc49870f47948444b4b3c9e",
+      "count": 1
+    },
+    "writing/task1/w1_021.json": {
+      "sha256": "a764701dbcbfc7948b94274e208c509b5c1986ad481145b58fea7e53f5b46d64",
+      "count": 1
+    },
+    "writing/task1/w1_022.json": {
+      "sha256": "4986b0db4ea5699f86974add0e9f59ce9203c2887df851effd5b390494be2842",
+      "count": 1
+    },
+    "writing/task1/w1_023.json": {
+      "sha256": "4175e19d74eae51a0cb39fc394e93469ce4961cf3129b723ba472650a083bc02",
+      "count": 1
+    },
+    "writing/task1/w1_024.json": {
+      "sha256": "bcdeaf7f2512550df4dcd6e0f904c7d9090c97597e38341cffa69dcc0028dae2",
+      "count": 1
+    },
+    "writing/task2_prompts.json": {
+      "sha256": "517052618583d8a53751291c35fb2bb3a967e1df0743fcd011cbc736a319e216",
+      "count": 60
     }
   }
 }

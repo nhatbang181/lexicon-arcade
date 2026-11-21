@@ -1,0 +1,140 @@
+{
+  "id": "w1:021",
+  "kind": "process",
+  "topic": "food",
+  "difficulty": 9,
+  "prompt": "The diagram below illustrates the stages involved in transforming harvested cocoa pods into finished dark chocolate bars. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "process": {
+    "title": "Artisanal Production of Dark Chocolate Bars from Cocoa Pods",
+    "steps": [
+      {
+        "id": "s1",
+        "label": "Harvesting & splitting pods",
+        "icon": "harvest"
+      },
+      {
+        "id": "s2",
+        "label": "Fermenting beans under leaves",
+        "icon": "ferment"
+      },
+      {
+        "id": "s3",
+        "label": "Sun-drying on raised racks",
+        "icon": "sun"
+      },
+      {
+        "id": "s4",
+        "label": "Roasting & winnowing husks",
+        "icon": "roast"
+      },
+      {
+        "id": "s5",
+        "label": "Grinding nibs into liquor",
+        "icon": "grind"
+      },
+      {
+        "id": "s6",
+        "label": "Conching with sugar & butter",
+        "icon": "mix"
+      },
+      {
+        "id": "s7",
+        "label": "Tempering to align crystals",
+        "icon": "temp"
+      },
+      {
+        "id": "s8",
+        "label": "Moulding, cooling & wrapping",
+        "icon": "bar"
+      }
+    ],
+    "edges": [
+      [
+        "s1",
+        "s2"
+      ],
+      [
+        "s2",
+        "s3"
+      ],
+      [
+        "s3",
+        "s4"
+      ],
+      [
+        "s4",
+        "s5"
+      ],
+      [
+        "s5",
+        "s6"
+      ],
+      [
+        "s6",
+        "s7"
+      ],
+      [
+        "s7",
+        "s8"
+      ]
+    ],
+    "cyclic": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Producing dark chocolate bars is a linear eight-stage process progressing from manual plantation preparation to temperature-controlled factory refinement.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "grouping",
+      "textEn": "The sequence divides cleanly into agricultural post-harvest steps (harvesting, fermentation, sun-drying) and indoor manufacturing (roasting through wrapping).",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "stage",
+      "textEn": "Fermentation under leaves and sun-drying on raised racks develop core flavour precursors and reduce moisture before roasting.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "stage",
+      "textEn": "Roasting, winnowing, grinding, and conching convert dried beans into a smooth molten blend enriched with sugar and cocoa butter.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "stage",
+      "textEn": "Precise tempering aligns cocoa-butter crystals so that the moulded bars cool with a glossy finish and crisp snap.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, making dark chocolate bars is a linear eight-step procedure that transitions from manual agricultural preparation on the farm to precision thermal and mechanical processing in a factory. While the early stages develop flavour through natural fermentation and drying, the later stages focus on refining texture and crystal structure.",
+    "In general, raw cocoa pods are converted into wrapped dark chocolate through eight sequential stages, divided between outdoor post-harvest handling and indoor confectionery manufacture. Both flavour development and careful temperature control play decisive roles before the molten chocolate is moulded."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "agricultural preparation",
+    "mechanical processing",
+    "develop flavour",
+    "temperature control"
+  ],
+  "band8Model": {
+    "text": "The diagram details the sequential stages required to turn freshly harvested cocoa pods into packaged dark chocolate bars.\n\nOverall, dark chocolate manufacture is a linear process spanning eight stages, moving from manual agricultural preparation to precision thermal and mechanical processing. Whereas the opening steps rely on natural fermentation and drying to develop flavour, the remaining steps refine texture and structure indoors.\n\nAt the outset, ripe cocoa pods are harvested and split open to extract the moist white beans. These beans are heaped under leaves to ferment naturally, after which they are spread across raised racks for sun-drying so excess moisture evaporates. Once dried, the beans enter the factory, where roasting deepens their aroma and winnowing separates the papery outer husks from the inner nibs.\n\nIn the refinement phase, the roasted nibs are ground finely into thick cocoa liquor. This paste undergoes prolonged conching, during which sugar and extra cocoa butter are blended in to achieve smoothness. Next, the liquid chocolate is carefully tempered to align its fat crystals. Finally, it is poured into moulds, cooled into solid bars, and wrapped for distribution.",
+    "wordCount": 182
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

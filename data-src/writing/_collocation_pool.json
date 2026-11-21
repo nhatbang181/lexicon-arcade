@@ -1,0 +1,6114 @@
+{
+  "environment": [
+    {
+      "id": "col:impact_a_profound_impact_on",
+      "phrase": "a profound impact on"
+    },
+    {
+      "id": "col:impact_a_detrimental_impact_on",
+      "phrase": "a detrimental impact on"
+    },
+    {
+      "id": "col:impact_mitigate_the_impact_of",
+      "phrase": "mitigate the impact of"
+    },
+    {
+      "id": "col:impact_assess_the_impact_of",
+      "phrase": "assess the impact of"
+    },
+    {
+      "id": "col:impact_leave_a_lasting_impact_on",
+      "phrase": "leave a lasting impact on"
+    },
+    {
+      "id": "col:impact_an_negligible_impact_on",
+      "phrase": "a negligible impact on"
+    },
+    {
+      "id": "col:issue_address_a_pressing_issue",
+      "phrase": "address a pressing issue"
+    },
+    {
+      "id": "col:issue_a_contentious_issue",
+      "phrase": "a contentious issue"
+    },
+    {
+      "id": "col:issue_raise_an_issue",
+      "phrase": "raise an issue"
+    },
+    {
+      "id": "col:issue_an_underlying_issue",
+      "phrase": "an underlying issue"
+    },
+    {
+      "id": "col:issue_overlook_the_issue_of",
+      "phrase": "overlook the issue of"
+    },
+    {
+      "id": "col:issue_a_multifaceted_issue",
+      "phrase": "a multifaceted issue"
+    },
+    {
+      "id": "col:solution_a_viable_solution_to",
+      "phrase": "a viable solution to"
+    },
+    {
+      "id": "col:solution_a_long_term_solution",
+      "phrase": "a long-term solution"
+    },
+    {
+      "id": "col:solution_devise_a_solution_to",
+      "phrase": "devise a solution to"
+    },
+    {
+      "id": "col:solution_a_cost_effective_solution",
+      "phrase": "a cost-effective solution"
+    },
+    {
+      "id": "col:solution_a_quick_fix_solution",
+      "phrase": "a quick-fix solution"
+    },
+    {
+      "id": "col:solution_a_holistic_solution",
+      "phrase": "a holistic solution"
+    },
+    {
+      "id": "col:awareness_raise_public_awareness_of",
+      "phrase": "raise public awareness of"
+    },
+    {
+      "id": "col:awareness_growing_awareness_of",
+      "phrase": "growing awareness of"
+    },
+    {
+      "id": "col:awareness_foster_awareness_among",
+      "phrase": "foster awareness among"
+    },
+    {
+      "id": "col:awareness_a_lack_of_awareness",
+      "phrase": "a lack of awareness"
+    },
+    {
+      "id": "col:awareness_environmental_awareness",
+      "phrase": "environmental awareness"
+    },
+    {
+      "id": "col:awareness_acute_awareness",
+      "phrase": "acute awareness"
+    },
+    {
+      "id": "col:decline_a_sharp_decline_in",
+      "phrase": "a sharp decline in"
+    },
+    {
+      "id": "col:decline_halt_the_decline_of",
+      "phrase": "halt the decline of"
+    },
+    {
+      "id": "col:decline_a_steady_decline_in",
+      "phrase": "a steady decline in"
+    },
+    {
+      "id": "col:decline_experience_a_decline_in",
+      "phrase": "experience a decline in"
+    },
+    {
+      "id": "col:decline_terminal_decline",
+      "phrase": "terminal decline"
+    },
+    {
+      "id": "col:decline_accelerate_the_decline_in",
+      "phrase": "accelerate the decline in"
+    },
+    {
+      "id": "col:consequence_far_reaching_consequences",
+      "phrase": "far-reaching consequences"
+    },
+    {
+      "id": "col:consequence_unintended_consequences",
+      "phrase": "unintended consequences"
+    },
+    {
+      "id": "col:consequence_face_the_consequences_of",
+      "phrase": "face the consequences of"
+    },
+    {
+      "id": "col:consequence_catastrophic_consequences",
+      "phrase": "catastrophic consequences"
+    },
+    {
+      "id": "col:consequence_mitigate_the_consequences_of",
+      "phrase": "mitigate the consequences of"
+    },
+    {
+      "id": "col:consequence_have_serious_consequences_for",
+      "phrase": "have serious consequences for"
+    },
+    {
+      "id": "col:pollution_curb_pollution",
+      "phrase": "curb pollution"
+    },
+    {
+      "id": "col:pollution_severe_pollution",
+      "phrase": "severe pollution"
+    },
+    {
+      "id": "col:pollution_noise_pollution",
+      "phrase": "noise pollution"
+    },
+    {
+      "id": "col:pollution_generate_pollution",
+      "phrase": "generate pollution"
+    },
+    {
+      "id": "col:pollution_pollution_levels",
+      "phrase": "pollution levels"
+    },
+    {
+      "id": "col:pollution_tackle_pollution_at_its_source",
+      "phrase": "tackle pollution at its source"
+    },
+    {
+      "id": "col:resource_allocate_resources",
+      "phrase": "allocate resources"
+    },
+    {
+      "id": "col:resource_finite_resources",
+      "phrase": "finite resources"
+    },
+    {
+      "id": "col:resource_deplete_natural_resources",
+      "phrase": "deplete natural resources"
+    },
+    {
+      "id": "col:resource_squander_resources",
+      "phrase": "squander resources"
+    },
+    {
+      "id": "col:resource_conserve_resources",
+      "phrase": "conserve resources"
+    },
+    {
+      "id": "col:resource_pool_resources",
+      "phrase": "pool resources"
+    },
+    {
+      "id": "col:sustainability_environmental_sustainability",
+      "phrase": "environmental sustainability"
+    },
+    {
+      "id": "col:sustainability_promote_sustainability",
+      "phrase": "promote sustainability"
+    },
+    {
+      "id": "col:sustainability_undermine_sustainability",
+      "phrase": "undermine sustainability"
+    },
+    {
+      "id": "col:sustainability_fiscal_sustainability",
+      "phrase": "fiscal sustainability"
+    },
+    {
+      "id": "col:sustainability_prioritise_sustainability",
+      "phrase": "prioritise sustainability"
+    },
+    {
+      "id": "col:sustainability_a_commitment_to_sustainability",
+      "phrase": "a commitment to sustainability"
+    },
+    {
+      "id": "col:biodiversity_biodiversity_loss",
+      "phrase": "biodiversity loss"
+    },
+    {
+      "id": "col:biodiversity_preserve_biodiversity",
+      "phrase": "preserve biodiversity"
+    },
+    {
+      "id": "col:biodiversity_threaten_biodiversity",
+      "phrase": "threaten biodiversity"
+    },
+    {
+      "id": "col:biodiversity_marine_biodiversity",
+      "phrase": "marine biodiversity"
+    },
+    {
+      "id": "col:biodiversity_restore_biodiversity",
+      "phrase": "restore biodiversity"
+    },
+    {
+      "id": "col:biodiversity_biodiversity_hotspot",
+      "phrase": "biodiversity hotspot"
+    },
+    {
+      "id": "col:conservation_wildlife_conservation",
+      "phrase": "wildlife conservation"
+    },
+    {
+      "id": "col:conservation_conservation_efforts",
+      "phrase": "conservation efforts"
+    },
+    {
+      "id": "col:conservation_fund_conservation",
+      "phrase": "fund conservation"
+    },
+    {
+      "id": "col:conservation_conservation_programmes",
+      "phrase": "conservation programmes"
+    },
+    {
+      "id": "col:conservation_conservation_of_energy",
+      "phrase": "conservation of energy"
+    },
+    {
+      "id": "col:conservation_habitat_conservation",
+      "phrase": "habitat conservation"
+    },
+    {
+      "id": "col:emission_curb_carbon_emissions",
+      "phrase": "curb carbon emissions"
+    },
+    {
+      "id": "col:emission_greenhouse_gas_emissions",
+      "phrase": "greenhouse gas emissions"
+    },
+    {
+      "id": "col:emission_emission_targets",
+      "phrase": "emission targets"
+    },
+    {
+      "id": "col:emission_emission_standards",
+      "phrase": "emission standards"
+    },
+    {
+      "id": "col:emission_offset_emissions",
+      "phrase": "offset emissions"
+    },
+    {
+      "id": "col:emission_zero_emissions",
+      "phrase": "zero emissions"
+    },
+    {
+      "id": "col:energy_renewable_energy",
+      "phrase": "renewable energy"
+    },
+    {
+      "id": "col:energy_harness_energy",
+      "phrase": "harness energy"
+    },
+    {
+      "id": "col:energy_conserve_energy",
+      "phrase": "conserve energy"
+    },
+    {
+      "id": "col:energy_energy_consumption",
+      "phrase": "energy consumption"
+    },
+    {
+      "id": "col:energy_energy_security",
+      "phrase": "energy security"
+    },
+    {
+      "id": "col:energy_energy_transition",
+      "phrase": "energy transition"
+    },
+    {
+      "id": "col:climate_combat_climate_change",
+      "phrase": "combat climate change"
+    },
+    {
+      "id": "col:climate_harsh_climate",
+      "phrase": "harsh climate"
+    },
+    {
+      "id": "col:climate_the_current_economic_climate",
+      "phrase": "the current economic climate"
+    },
+    {
+      "id": "col:climate_climate_resilience",
+      "phrase": "climate resilience"
+    },
+    {
+      "id": "col:climate_climate_crisis",
+      "phrase": "climate crisis"
+    },
+    {
+      "id": "col:climate_adapt_to_a_changing_climate",
+      "phrase": "adapt to a changing climate"
+    },
+    {
+      "id": "col:urbanisation_rapid_urbanisation",
+      "phrase": "rapid urbanisation"
+    },
+    {
+      "id": "col:urbanisation_the_pace_of_urbanisation",
+      "phrase": "the pace of urbanisation"
+    },
+    {
+      "id": "col:urbanisation_manage_urbanisation",
+      "phrase": "manage urbanisation"
+    },
+    {
+      "id": "col:urbanisation_driven_by_urbanisation",
+      "phrase": "driven by urbanisation"
+    },
+    {
+      "id": "col:urbanisation_sustainable_urbanisation",
+      "phrase": "sustainable urbanisation"
+    },
+    {
+      "id": "col:urbanisation_the_consequences_of_urbanisation",
+      "phrase": "the consequences of urbanisation"
+    },
+    {
+      "id": "col:diversity_cultural_diversity",
+      "phrase": "cultural diversity"
+    },
+    {
+      "id": "col:diversity_embrace_diversity",
+      "phrase": "embrace diversity"
+    },
+    {
+      "id": "col:diversity_preserve_diversity",
+      "phrase": "preserve diversity"
+    },
+    {
+      "id": "col:diversity_erode_diversity",
+      "phrase": "erode diversity"
+    },
+    {
+      "id": "col:diversity_a_lack_of_diversity",
+      "phrase": "a lack of diversity"
+    },
+    {
+      "id": "col:diversity_rich_diversity",
+      "phrase": "rich diversity"
+    },
+    {
+      "id": "col:challenge_confront_a_daunting_challenge",
+      "phrase": "confront a daunting challenge"
+    },
+    {
+      "id": "col:challenge_pose_a_challenge_to",
+      "phrase": "pose a challenge to"
+    },
+    {
+      "id": "col:challenge_a_formidable_challenge",
+      "phrase": "a formidable challenge"
+    },
+    {
+      "id": "col:challenge_rise_to_the_challenge",
+      "phrase": "rise to the challenge"
+    },
+    {
+      "id": "col:challenge_logistical_challenges",
+      "phrase": "logistical challenges"
+    },
+    {
+      "id": "col:challenge_surmount_a_challenge",
+      "phrase": "surmount a challenge"
+    },
+    {
+      "id": "col:incentive_financial_incentives",
+      "phrase": "financial incentives"
+    },
+    {
+      "id": "col:incentive_provide_an_incentive_to",
+      "phrase": "provide an incentive to"
+    },
+    {
+      "id": "col:incentive_a_strong_incentive",
+      "phrase": "a strong incentive"
+    },
+    {
+      "id": "col:incentive_a_perverse_incentive",
+      "phrase": "a perverse incentive"
+    },
+    {
+      "id": "col:incentive_remove_incentives",
+      "phrase": "remove incentives"
+    },
+    {
+      "id": "col:incentive_respond_to_incentives",
+      "phrase": "respond to incentives"
+    },
+    {
+      "id": "col:crisis_an_acute_crisis",
+      "phrase": "an acute crisis"
+    },
+    {
+      "id": "col:crisis_avert_a_crisis",
+      "phrase": "avert a crisis"
+    },
+    {
+      "id": "col:crisis_trigger_a_crisis",
+      "phrase": "trigger a crisis"
+    },
+    {
+      "id": "col:crisis_a_housing_crisis",
+      "phrase": "a housing crisis"
+    },
+    {
+      "id": "col:crisis_weather_a_crisis",
+      "phrase": "weather a crisis"
+    },
+    {
+      "id": "col:crisis_crisis_management",
+      "phrase": "crisis management"
+    },
+    {
+      "id": "col:consumption_curb_consumption",
+      "phrase": "curb consumption"
+    },
+    {
+      "id": "col:consumption_excessive_consumption",
+      "phrase": "excessive consumption"
+    },
+    {
+      "id": "col:consumption_fuel_consumption",
+      "phrase": "fuel consumption"
+    },
+    {
+      "id": "col:consumption_conspicuous_consumption",
+      "phrase": "conspicuous consumption"
+    },
+    {
+      "id": "col:consumption_consumption_patterns",
+      "phrase": "consumption patterns"
+    },
+    {
+      "id": "col:consumption_fit_for_human_consumption",
+      "phrase": "fit for human consumption"
+    },
+    {
+      "id": "col:waste_electronic_waste",
+      "phrase": "electronic waste"
+    },
+    {
+      "id": "col:waste_minimise_waste",
+      "phrase": "minimise waste"
+    },
+    {
+      "id": "col:waste_dispose_of_waste",
+      "phrase": "dispose of waste"
+    },
+    {
+      "id": "col:waste_waste_management",
+      "phrase": "waste management"
+    },
+    {
+      "id": "col:waste_generate_waste",
+      "phrase": "generate waste"
+    },
+    {
+      "id": "col:waste_zero_waste",
+      "phrase": "zero-waste"
+    },
+    {
+      "id": "col:habitat_habitat_destruction",
+      "phrase": "habitat destruction"
+    },
+    {
+      "id": "col:habitat_habitat_loss",
+      "phrase": "habitat loss"
+    },
+    {
+      "id": "col:habitat_natural_habitat",
+      "phrase": "natural habitat"
+    },
+    {
+      "id": "col:habitat_restore_habitats",
+      "phrase": "restore habitats"
+    },
+    {
+      "id": "col:habitat_habitat_fragmentation",
+      "phrase": "habitat fragmentation"
+    },
+    {
+      "id": "col:habitat_encroach_on_natural_habitats",
+      "phrase": "encroach on natural habitats"
+    },
+    {
+      "id": "col:ecosystem_a_fragile_ecosystem",
+      "phrase": "a fragile ecosystem"
+    },
+    {
+      "id": "col:ecosystem_disrupt_an_ecosystem",
+      "phrase": "disrupt an ecosystem"
+    },
+    {
+      "id": "col:ecosystem_marine_ecosystems",
+      "phrase": "marine ecosystems"
+    },
+    {
+      "id": "col:ecosystem_restore_ecosystems",
+      "phrase": "restore ecosystems"
+    },
+    {
+      "id": "col:ecosystem_ecosystem_collapse",
+      "phrase": "ecosystem collapse"
+    },
+    {
+      "id": "col:ecosystem_ecosystem_services",
+      "phrase": "ecosystem services"
+    },
+    {
+      "id": "col:address_address_the_root_causes_of",
+      "phrase": "address the root causes of"
+    },
+    {
+      "id": "col:address_address_public_concerns",
+      "phrase": "address public concerns"
+    },
+    {
+      "id": "col:address_address_the_imbalance",
+      "phrase": "address the imbalance"
+    },
+    {
+      "id": "col:address_address_climate_change_urgently",
+      "phrase": "address climate change urgently"
+    },
+    {
+      "id": "col:address_address_the_needs_of",
+      "phrase": "address the needs of"
+    },
+    {
+      "id": "col:address_adequately_address",
+      "phrase": "adequately address"
+    },
+    {
+      "id": "col:reduce_reduce_substantially",
+      "phrase": "reduce substantially"
+    },
+    {
+      "id": "col:reduce_reduce_reliance_on",
+      "phrase": "reduce reliance on"
+    },
+    {
+      "id": "col:reduce_reduce_waste",
+      "phrase": "reduce waste"
+    },
+    {
+      "id": "col:reduce_reduce_the_risk_of",
+      "phrase": "reduce the risk of"
+    },
+    {
+      "id": "col:reduce_reduce_operating_costs",
+      "phrase": "reduce operating costs"
+    },
+    {
+      "id": "col:reduce_reduce_the_carbon_footprint",
+      "phrase": "reduce the carbon footprint"
+    },
+    {
+      "id": "col:pose_pose_a_threat_to",
+      "phrase": "pose a threat to"
+    },
+    {
+      "id": "col:pose_pose_a_challenge",
+      "phrase": "pose a challenge"
+    },
+    {
+      "id": "col:pose_pose_a_serious_risk",
+      "phrase": "pose a serious risk"
+    },
+    {
+      "id": "col:pose_pose_ethical_questions",
+      "phrase": "pose ethical questions"
+    },
+    {
+      "id": "col:pose_pose_a_major_obstacle_to",
+      "phrase": "pose a major obstacle to"
+    },
+    {
+      "id": "col:pose_pose_no_harm",
+      "phrase": "pose no harm"
+    },
+    {
+      "id": "col:mitigate_mitigate_the_effects_of",
+      "phrase": "mitigate the effects of"
+    },
+    {
+      "id": "col:mitigate_mitigate_risks",
+      "phrase": "mitigate risks"
+    },
+    {
+      "id": "col:mitigate_mitigate_the_severity_of",
+      "phrase": "mitigate the severity of"
+    },
+    {
+      "id": "col:mitigate_mitigate_environmental_damage",
+      "phrase": "mitigate environmental damage"
+    },
+    {
+      "id": "col:mitigate_mitigate_economic_shock",
+      "phrase": "mitigate economic shock"
+    },
+    {
+      "id": "col:mitigate_mitigate_emissions",
+      "phrase": "mitigate emissions"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_inequality",
+      "phrase": "exacerbate inequality"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_the_problem",
+      "phrase": "exacerbate the problem"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_tensions",
+      "phrase": "exacerbate tensions"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_congestion",
+      "phrase": "exacerbate congestion"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_mental_health_issues",
+      "phrase": "exacerbate mental health issues"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_climate_change",
+      "phrase": "exacerbate climate change"
+    },
+    {
+      "id": "col:curb_curb_emissions",
+      "phrase": "curb emissions"
+    },
+    {
+      "id": "col:curb_curb_spending",
+      "phrase": "curb spending"
+    },
+    {
+      "id": "col:curb_curb_antisocial_behaviour",
+      "phrase": "curb antisocial behaviour"
+    },
+    {
+      "id": "col:curb_curb_the_spread_of",
+      "phrase": "curb the spread of"
+    },
+    {
+      "id": "col:curb_curb_urban_sprawl",
+      "phrase": "curb urban sprawl"
+    },
+    {
+      "id": "col:curb_curb_misinformation",
+      "phrase": "curb misinformation"
+    },
+    {
+      "id": "col:accelerate_accelerate_the_transition_to",
+      "phrase": "accelerate the transition to"
+    },
+    {
+      "id": "col:accelerate_accelerate_climate_change",
+      "phrase": "accelerate climate change"
+    },
+    {
+      "id": "col:accelerate_accelerate_innovation",
+      "phrase": "accelerate innovation"
+    },
+    {
+      "id": "col:accelerate_accelerate_the_pace_of",
+      "phrase": "accelerate the pace of"
+    },
+    {
+      "id": "col:accelerate_accelerate_adoption",
+      "phrase": "accelerate adoption"
+    },
+    {
+      "id": "col:accelerate_accelerate_rapidly",
+      "phrase": "accelerate rapidly"
+    }
+  ],
+  "urban": [
+    {
+      "id": "col:impact_a_profound_impact_on",
+      "phrase": "a profound impact on"
+    },
+    {
+      "id": "col:impact_a_detrimental_impact_on",
+      "phrase": "a detrimental impact on"
+    },
+    {
+      "id": "col:impact_mitigate_the_impact_of",
+      "phrase": "mitigate the impact of"
+    },
+    {
+      "id": "col:impact_assess_the_impact_of",
+      "phrase": "assess the impact of"
+    },
+    {
+      "id": "col:impact_leave_a_lasting_impact_on",
+      "phrase": "leave a lasting impact on"
+    },
+    {
+      "id": "col:impact_an_negligible_impact_on",
+      "phrase": "a negligible impact on"
+    },
+    {
+      "id": "col:problem_tackle_a_problem",
+      "phrase": "tackle a problem"
+    },
+    {
+      "id": "col:problem_exacerbate_a_problem",
+      "phrase": "exacerbate a problem"
+    },
+    {
+      "id": "col:problem_an_acute_problem",
+      "phrase": "an acute problem"
+    },
+    {
+      "id": "col:problem_identify_the_root_cause_of_a_problem",
+      "phrase": "identify the root cause of a problem"
+    },
+    {
+      "id": "col:problem_a_chronic_problem",
+      "phrase": "a chronic problem"
+    },
+    {
+      "id": "col:problem_alleviate_a_problem",
+      "phrase": "alleviate a problem"
+    },
+    {
+      "id": "col:development_sustainable_development",
+      "phrase": "sustainable development"
+    },
+    {
+      "id": "col:development_hinder_economic_development",
+      "phrase": "hinder economic development"
+    },
+    {
+      "id": "col:development_spur_regional_development",
+      "phrase": "spur regional development"
+    },
+    {
+      "id": "col:development_cognitive_development",
+      "phrase": "cognitive development"
+    },
+    {
+      "id": "col:development_unchecked_development",
+      "phrase": "unchecked development"
+    },
+    {
+      "id": "col:development_groundbreaking_development",
+      "phrase": "groundbreaking development"
+    },
+    {
+      "id": "col:growth_sustained_economic_growth",
+      "phrase": "sustained economic growth"
+    },
+    {
+      "id": "col:growth_stimulate_growth",
+      "phrase": "stimulate growth"
+    },
+    {
+      "id": "col:growth_exponential_growth",
+      "phrase": "exponential growth"
+    },
+    {
+      "id": "col:growth_stifle_growth",
+      "phrase": "stifle growth"
+    },
+    {
+      "id": "col:growth_sluggish_growth",
+      "phrase": "sluggish growth"
+    },
+    {
+      "id": "col:growth_inclusive_growth",
+      "phrase": "inclusive growth"
+    },
+    {
+      "id": "col:pollution_curb_pollution",
+      "phrase": "curb pollution"
+    },
+    {
+      "id": "col:pollution_severe_pollution",
+      "phrase": "severe pollution"
+    },
+    {
+      "id": "col:pollution_noise_pollution",
+      "phrase": "noise pollution"
+    },
+    {
+      "id": "col:pollution_generate_pollution",
+      "phrase": "generate pollution"
+    },
+    {
+      "id": "col:pollution_pollution_levels",
+      "phrase": "pollution levels"
+    },
+    {
+      "id": "col:pollution_tackle_pollution_at_its_source",
+      "phrase": "tackle pollution at its source"
+    },
+    {
+      "id": "col:infrastructure_ageing_infrastructure",
+      "phrase": "ageing infrastructure"
+    },
+    {
+      "id": "col:infrastructure_upgrade_infrastructure",
+      "phrase": "upgrade infrastructure"
+    },
+    {
+      "id": "col:infrastructure_transport_infrastructure",
+      "phrase": "transport infrastructure"
+    },
+    {
+      "id": "col:infrastructure_resilient_infrastructure",
+      "phrase": "resilient infrastructure"
+    },
+    {
+      "id": "col:infrastructure_strain_infrastructure",
+      "phrase": "strain infrastructure"
+    },
+    {
+      "id": "col:infrastructure_inadequate_infrastructure",
+      "phrase": "inadequate infrastructure"
+    },
+    {
+      "id": "col:congestion_alleviate_traffic_congestion",
+      "phrase": "alleviate traffic congestion"
+    },
+    {
+      "id": "col:congestion_severe_congestion",
+      "phrase": "severe congestion"
+    },
+    {
+      "id": "col:congestion_a_congestion_charge",
+      "phrase": "a congestion charge"
+    },
+    {
+      "id": "col:congestion_exacerbate_congestion",
+      "phrase": "exacerbate congestion"
+    },
+    {
+      "id": "col:congestion_peak_hour_congestion",
+      "phrase": "peak-hour congestion"
+    },
+    {
+      "id": "col:congestion_tackle_congestion",
+      "phrase": "tackle congestion"
+    },
+    {
+      "id": "col:urbanisation_rapid_urbanisation",
+      "phrase": "rapid urbanisation"
+    },
+    {
+      "id": "col:urbanisation_the_pace_of_urbanisation",
+      "phrase": "the pace of urbanisation"
+    },
+    {
+      "id": "col:urbanisation_manage_urbanisation",
+      "phrase": "manage urbanisation"
+    },
+    {
+      "id": "col:urbanisation_driven_by_urbanisation",
+      "phrase": "driven by urbanisation"
+    },
+    {
+      "id": "col:urbanisation_sustainable_urbanisation",
+      "phrase": "sustainable urbanisation"
+    },
+    {
+      "id": "col:urbanisation_the_consequences_of_urbanisation",
+      "phrase": "the consequences of urbanisation"
+    },
+    {
+      "id": "col:migration_rural_to_urban_migration",
+      "phrase": "rural-to-urban migration"
+    },
+    {
+      "id": "col:migration_mass_migration",
+      "phrase": "mass migration"
+    },
+    {
+      "id": "col:migration_stem_migration",
+      "phrase": "stem migration"
+    },
+    {
+      "id": "col:migration_migration_patterns",
+      "phrase": "migration patterns"
+    },
+    {
+      "id": "col:migration_skilled_migration",
+      "phrase": "skilled migration"
+    },
+    {
+      "id": "col:migration_fuel_migration",
+      "phrase": "fuel migration"
+    },
+    {
+      "id": "col:quality_the_quality_of_life",
+      "phrase": "the quality of life"
+    },
+    {
+      "id": "col:quality_enhance_the_quality_of",
+      "phrase": "enhance the quality of"
+    },
+    {
+      "id": "col:quality_compromise_quality",
+      "phrase": "compromise quality"
+    },
+    {
+      "id": "col:quality_superior_quality",
+      "phrase": "superior quality"
+    },
+    {
+      "id": "col:quality_air_quality",
+      "phrase": "air quality"
+    },
+    {
+      "id": "col:quality_quality_assurance",
+      "phrase": "quality assurance"
+    },
+    {
+      "id": "col:transport_public_transport",
+      "phrase": "public transport"
+    },
+    {
+      "id": "col:transport_transport_network",
+      "phrase": "transport network"
+    },
+    {
+      "id": "col:transport_subsidise_public_transport",
+      "phrase": "subsidise public transport"
+    },
+    {
+      "id": "col:transport_transport_modes",
+      "phrase": "transport modes"
+    },
+    {
+      "id": "col:transport_freight_transport",
+      "phrase": "freight transport"
+    },
+    {
+      "id": "col:transport_transport_links",
+      "phrase": "transport links"
+    },
+    {
+      "id": "col:housing_affordable_housing",
+      "phrase": "affordable housing"
+    },
+    {
+      "id": "col:housing_a_housing_shortage",
+      "phrase": "a housing shortage"
+    },
+    {
+      "id": "col:housing_housing_market",
+      "phrase": "housing market"
+    },
+    {
+      "id": "col:housing_substandard_housing",
+      "phrase": "substandard housing"
+    },
+    {
+      "id": "col:housing_housing_density",
+      "phrase": "housing density"
+    },
+    {
+      "id": "col:housing_housing_costs",
+      "phrase": "housing costs"
+    }
+  ],
+  "science": [
+    {
+      "id": "col:effect_have_a_detrimental_effect_on",
+      "phrase": "have a detrimental effect on"
+    },
+    {
+      "id": "col:effect_a_ripple_effect",
+      "phrase": "a ripple effect"
+    },
+    {
+      "id": "col:effect_counteract_the_effects_of",
+      "phrase": "counteract the effects of"
+    },
+    {
+      "id": "col:effect_a_profound_effect_on",
+      "phrase": "a profound effect on"
+    },
+    {
+      "id": "col:effect_come_into_effect",
+      "phrase": "come into effect"
+    },
+    {
+      "id": "col:effect_a_cumulative_effect_on",
+      "phrase": "a cumulative effect on"
+    },
+    {
+      "id": "col:factor_a_decisive_factor_in",
+      "phrase": "a decisive factor in"
+    },
+    {
+      "id": "col:factor_a_contributing_factor",
+      "phrase": "a contributing factor"
+    },
+    {
+      "id": "col:factor_a_determining_factor",
+      "phrase": "a determining factor"
+    },
+    {
+      "id": "col:factor_take_key_factors_into_account",
+      "phrase": "take key factors into account"
+    },
+    {
+      "id": "col:factor_socio_economic_factors",
+      "phrase": "socio-economic factors"
+    },
+    {
+      "id": "col:factor_a_mitigating_factor",
+      "phrase": "a mitigating factor"
+    },
+    {
+      "id": "col:evidence_compelling_evidence",
+      "phrase": "compelling evidence"
+    },
+    {
+      "id": "col:evidence_empirical_evidence",
+      "phrase": "empirical evidence"
+    },
+    {
+      "id": "col:evidence_anecdotal_evidence",
+      "phrase": "anecdotal evidence"
+    },
+    {
+      "id": "col:evidence_gather_evidence",
+      "phrase": "gather evidence"
+    },
+    {
+      "id": "col:evidence_corroborate_the_evidence",
+      "phrase": "corroborate the evidence"
+    },
+    {
+      "id": "col:evidence_mounting_evidence",
+      "phrase": "mounting evidence"
+    },
+    {
+      "id": "col:research_conduct_research_into",
+      "phrase": "conduct research into"
+    },
+    {
+      "id": "col:research_groundbreaking_research",
+      "phrase": "groundbreaking research"
+    },
+    {
+      "id": "col:research_extensive_research",
+      "phrase": "extensive research"
+    },
+    {
+      "id": "col:research_fund_research",
+      "phrase": "fund research"
+    },
+    {
+      "id": "col:research_longitudinal_research",
+      "phrase": "longitudinal research"
+    },
+    {
+      "id": "col:research_disseminate_research_findings",
+      "phrase": "disseminate research findings"
+    },
+    {
+      "id": "col:knowledge_acquire_knowledge",
+      "phrase": "acquire knowledge"
+    },
+    {
+      "id": "col:knowledge_impart_knowledge",
+      "phrase": "impart knowledge"
+    },
+    {
+      "id": "col:knowledge_in_depth_knowledge",
+      "phrase": "in-depth knowledge"
+    },
+    {
+      "id": "col:knowledge_practical_knowledge",
+      "phrase": "practical knowledge"
+    },
+    {
+      "id": "col:knowledge_broaden_one_s_knowledge",
+      "phrase": "broaden one's knowledge"
+    },
+    {
+      "id": "col:knowledge_knowledge_economy",
+      "phrase": "knowledge economy"
+    },
+    {
+      "id": "col:consensus_reach_a_consensus_on",
+      "phrase": "reach a consensus on"
+    },
+    {
+      "id": "col:consensus_broad_consensus",
+      "phrase": "broad consensus"
+    },
+    {
+      "id": "col:consensus_scientific_consensus",
+      "phrase": "scientific consensus"
+    },
+    {
+      "id": "col:consensus_undermine_consensus",
+      "phrase": "undermine consensus"
+    },
+    {
+      "id": "col:consensus_a_lack_of_consensus",
+      "phrase": "a lack of consensus"
+    },
+    {
+      "id": "col:consensus_emerging_consensus",
+      "phrase": "emerging consensus"
+    },
+    {
+      "id": "col:controversy_spark_controversy",
+      "phrase": "spark controversy"
+    },
+    {
+      "id": "col:controversy_fierce_controversy",
+      "phrase": "fierce controversy"
+    },
+    {
+      "id": "col:controversy_surround_controversy",
+      "phrase": "surround controversy"
+    },
+    {
+      "id": "col:controversy_court_controversy",
+      "phrase": "court controversy"
+    },
+    {
+      "id": "col:controversy_bitter_controversy",
+      "phrase": "bitter controversy"
+    },
+    {
+      "id": "col:controversy_resolve_a_controversy",
+      "phrase": "resolve a controversy"
+    },
+    {
+      "id": "col:framework_a_regulatory_framework",
+      "phrase": "a regulatory framework"
+    },
+    {
+      "id": "col:framework_establish_a_framework",
+      "phrase": "establish a framework"
+    },
+    {
+      "id": "col:framework_a_conceptual_framework",
+      "phrase": "a conceptual framework"
+    },
+    {
+      "id": "col:framework_a_robust_framework",
+      "phrase": "a robust framework"
+    },
+    {
+      "id": "col:framework_operate_within_a_framework",
+      "phrase": "operate within a framework"
+    },
+    {
+      "id": "col:framework_overhaul_the_existing_framework",
+      "phrase": "overhaul the existing framework"
+    },
+    {
+      "id": "col:assess_assess_the_impact_of",
+      "phrase": "assess the impact of"
+    },
+    {
+      "id": "col:assess_assess_risks",
+      "phrase": "assess risks"
+    },
+    {
+      "id": "col:assess_accurately_assess",
+      "phrase": "accurately assess"
+    },
+    {
+      "id": "col:assess_assess_the_damage",
+      "phrase": "assess the damage"
+    },
+    {
+      "id": "col:assess_assess_learning_outcomes",
+      "phrase": "assess learning outcomes"
+    },
+    {
+      "id": "col:assess_assess_the_cost_effectiveness",
+      "phrase": "assess the cost-effectiveness"
+    },
+    {
+      "id": "col:evaluate_evaluate_the_effectiveness_of",
+      "phrase": "evaluate the effectiveness of"
+    },
+    {
+      "id": "col:evaluate_evaluate_evidence",
+      "phrase": "evaluate evidence"
+    },
+    {
+      "id": "col:evaluate_critically_evaluate",
+      "phrase": "critically evaluate"
+    },
+    {
+      "id": "col:evaluate_evaluate_academic_performance",
+      "phrase": "evaluate academic performance"
+    },
+    {
+      "id": "col:evaluate_evaluate_viable_alternatives",
+      "phrase": "evaluate viable alternatives"
+    },
+    {
+      "id": "col:evaluate_evaluate_the_long_term_impact",
+      "phrase": "evaluate the long-term impact"
+    }
+  ],
+  "health": [
+    {
+      "id": "col:effect_have_a_detrimental_effect_on",
+      "phrase": "have a detrimental effect on"
+    },
+    {
+      "id": "col:effect_a_ripple_effect",
+      "phrase": "a ripple effect"
+    },
+    {
+      "id": "col:effect_counteract_the_effects_of",
+      "phrase": "counteract the effects of"
+    },
+    {
+      "id": "col:effect_a_profound_effect_on",
+      "phrase": "a profound effect on"
+    },
+    {
+      "id": "col:effect_come_into_effect",
+      "phrase": "come into effect"
+    },
+    {
+      "id": "col:effect_a_cumulative_effect_on",
+      "phrase": "a cumulative effect on"
+    },
+    {
+      "id": "col:benefit_reap_the_benefits_of",
+      "phrase": "reap the benefits of"
+    },
+    {
+      "id": "col:benefit_tangible_benefits",
+      "phrase": "tangible benefits"
+    },
+    {
+      "id": "col:benefit_weigh_the_benefits_against_the_drawbacks",
+      "phrase": "weigh the benefits against the drawbacks"
+    },
+    {
+      "id": "col:benefit_mutual_benefits",
+      "phrase": "mutual benefits"
+    },
+    {
+      "id": "col:benefit_outweigh_the_drawbacks",
+      "phrase": "outweigh the drawbacks"
+    },
+    {
+      "id": "col:benefit_far_reaching_benefits",
+      "phrase": "far-reaching benefits"
+    },
+    {
+      "id": "col:risk_pose_a_serious_risk_to",
+      "phrase": "pose a serious risk to"
+    },
+    {
+      "id": "col:risk_mitigate_the_risk_of",
+      "phrase": "mitigate the risk of"
+    },
+    {
+      "id": "col:risk_run_the_risk_of",
+      "phrase": "run the risk of"
+    },
+    {
+      "id": "col:risk_a_calculated_risk",
+      "phrase": "a calculated risk"
+    },
+    {
+      "id": "col:risk_outweigh_a_risk",
+      "phrase": "outweigh a risk"
+    },
+    {
+      "id": "col:risk_an_unacceptable_risk",
+      "phrase": "an unacceptable risk"
+    },
+    {
+      "id": "col:pressure_place_immense_pressure_on",
+      "phrase": "place immense pressure on"
+    },
+    {
+      "id": "col:pressure_alleviate_the_pressure_on",
+      "phrase": "alleviate the pressure on"
+    },
+    {
+      "id": "col:pressure_mounting_pressure",
+      "phrase": "mounting pressure"
+    },
+    {
+      "id": "col:pressure_buckle_under_pressure",
+      "phrase": "buckle under pressure"
+    },
+    {
+      "id": "col:pressure_peer_pressure",
+      "phrase": "peer pressure"
+    },
+    {
+      "id": "col:pressure_yield_to_public_pressure",
+      "phrase": "yield to public pressure"
+    },
+    {
+      "id": "col:awareness_raise_public_awareness_of",
+      "phrase": "raise public awareness of"
+    },
+    {
+      "id": "col:awareness_growing_awareness_of",
+      "phrase": "growing awareness of"
+    },
+    {
+      "id": "col:awareness_foster_awareness_among",
+      "phrase": "foster awareness among"
+    },
+    {
+      "id": "col:awareness_a_lack_of_awareness",
+      "phrase": "a lack of awareness"
+    },
+    {
+      "id": "col:awareness_environmental_awareness",
+      "phrase": "environmental awareness"
+    },
+    {
+      "id": "col:awareness_acute_awareness",
+      "phrase": "acute awareness"
+    },
+    {
+      "id": "col:access_equitable_access_to",
+      "phrase": "equitable access to"
+    },
+    {
+      "id": "col:access_widen_access_to",
+      "phrase": "widen access to"
+    },
+    {
+      "id": "col:access_restrict_access_to",
+      "phrase": "restrict access to"
+    },
+    {
+      "id": "col:access_gain_access_to",
+      "phrase": "gain access to"
+    },
+    {
+      "id": "col:access_unfettered_access_to",
+      "phrase": "unfettered access to"
+    },
+    {
+      "id": "col:access_facilitate_access_to",
+      "phrase": "facilitate access to"
+    },
+    {
+      "id": "col:health_mental_health",
+      "phrase": "mental health"
+    },
+    {
+      "id": "col:health_jeopardise_one_s_health",
+      "phrase": "jeopardise one's health"
+    },
+    {
+      "id": "col:health_public_health",
+      "phrase": "public health"
+    },
+    {
+      "id": "col:health_safeguard_public_health",
+      "phrase": "safeguard public health"
+    },
+    {
+      "id": "col:health_deteriorating_health",
+      "phrase": "deteriorating health"
+    },
+    {
+      "id": "col:health_detrimental_to_health",
+      "phrase": "detrimental to health"
+    },
+    {
+      "id": "col:obesity_childhood_obesity",
+      "phrase": "childhood obesity"
+    },
+    {
+      "id": "col:obesity_tackle_obesity",
+      "phrase": "tackle obesity"
+    },
+    {
+      "id": "col:obesity_the_obesity_epidemic",
+      "phrase": "the obesity epidemic"
+    },
+    {
+      "id": "col:obesity_contribute_to_obesity",
+      "phrase": "contribute to obesity"
+    },
+    {
+      "id": "col:obesity_obesity_rates",
+      "phrase": "obesity rates"
+    },
+    {
+      "id": "col:obesity_fuel_obesity",
+      "phrase": "fuel obesity"
+    },
+    {
+      "id": "col:nutrition_adequate_nutrition",
+      "phrase": "adequate nutrition"
+    },
+    {
+      "id": "col:nutrition_poor_nutrition",
+      "phrase": "poor nutrition"
+    },
+    {
+      "id": "col:nutrition_nutrition_standards",
+      "phrase": "nutrition standards"
+    },
+    {
+      "id": "col:nutrition_nutrition_education",
+      "phrase": "nutrition education"
+    },
+    {
+      "id": "col:nutrition_improve_nutrition",
+      "phrase": "improve nutrition"
+    },
+    {
+      "id": "col:nutrition_nutrition_labelling",
+      "phrase": "nutrition labelling"
+    },
+    {
+      "id": "col:treatment_medical_treatment",
+      "phrase": "medical treatment"
+    },
+    {
+      "id": "col:treatment_undergo_treatment",
+      "phrase": "undergo treatment"
+    },
+    {
+      "id": "col:treatment_equal_treatment",
+      "phrase": "equal treatment"
+    },
+    {
+      "id": "col:treatment_respond_to_treatment",
+      "phrase": "respond to treatment"
+    },
+    {
+      "id": "col:treatment_treatment_options",
+      "phrase": "treatment options"
+    },
+    {
+      "id": "col:treatment_humane_treatment",
+      "phrase": "humane treatment"
+    },
+    {
+      "id": "col:prevention_disease_prevention",
+      "phrase": "disease prevention"
+    },
+    {
+      "id": "col:prevention_prevention_strategies",
+      "phrase": "prevention strategies"
+    },
+    {
+      "id": "col:prevention_focus_on_prevention",
+      "phrase": "focus on prevention"
+    },
+    {
+      "id": "col:prevention_prevention_programmes",
+      "phrase": "prevention programmes"
+    },
+    {
+      "id": "col:prevention_invest_in_prevention",
+      "phrase": "invest in prevention"
+    },
+    {
+      "id": "col:prevention_prevention_is_better_than_cure",
+      "phrase": "prevention is better than cure"
+    },
+    {
+      "id": "col:well_being_mental_well_being",
+      "phrase": "mental well-being"
+    },
+    {
+      "id": "col:well_being_promote_well_being",
+      "phrase": "promote well-being"
+    },
+    {
+      "id": "col:well_being_undermine_well_being",
+      "phrase": "undermine well-being"
+    },
+    {
+      "id": "col:well_being_overall_well_being",
+      "phrase": "overall well-being"
+    },
+    {
+      "id": "col:well_being_employee_well_being",
+      "phrase": "employee well-being"
+    },
+    {
+      "id": "col:well_being_contribute_to_well_being",
+      "phrase": "contribute to well-being"
+    },
+    {
+      "id": "col:stress_chronic_stress",
+      "phrase": "chronic stress"
+    },
+    {
+      "id": "col:stress_alleviate_stress",
+      "phrase": "alleviate stress"
+    },
+    {
+      "id": "col:stress_cope_with_stress",
+      "phrase": "cope with stress"
+    },
+    {
+      "id": "col:stress_trigger_stress",
+      "phrase": "trigger stress"
+    },
+    {
+      "id": "col:stress_stress_levels",
+      "phrase": "stress levels"
+    },
+    {
+      "id": "col:stress_work_related_stress",
+      "phrase": "work-related stress"
+    },
+    {
+      "id": "col:habit_cultivate_a_habit",
+      "phrase": "cultivate a habit"
+    },
+    {
+      "id": "col:habit_break_a_habit",
+      "phrase": "break a habit"
+    },
+    {
+      "id": "col:habit_ingrained_habits",
+      "phrase": "ingrained habits"
+    },
+    {
+      "id": "col:habit_sedentary_habits",
+      "phrase": "sedentary habits"
+    },
+    {
+      "id": "col:habit_lifelong_habits",
+      "phrase": "lifelong habits"
+    },
+    {
+      "id": "col:habit_curb_bad_habits",
+      "phrase": "curb bad habits"
+    },
+    {
+      "id": "col:quality_the_quality_of_life",
+      "phrase": "the quality of life"
+    },
+    {
+      "id": "col:quality_enhance_the_quality_of",
+      "phrase": "enhance the quality of"
+    },
+    {
+      "id": "col:quality_compromise_quality",
+      "phrase": "compromise quality"
+    },
+    {
+      "id": "col:quality_superior_quality",
+      "phrase": "superior quality"
+    },
+    {
+      "id": "col:quality_air_quality",
+      "phrase": "air quality"
+    },
+    {
+      "id": "col:quality_quality_assurance",
+      "phrase": "quality assurance"
+    },
+    {
+      "id": "col:outcome_educational_outcomes",
+      "phrase": "educational outcomes"
+    },
+    {
+      "id": "col:outcome_a_favourable_outcome",
+      "phrase": "a favourable outcome"
+    },
+    {
+      "id": "col:outcome_influence_the_outcome_of",
+      "phrase": "influence the outcome of"
+    },
+    {
+      "id": "col:outcome_an_inevitable_outcome",
+      "phrase": "an inevitable outcome"
+    },
+    {
+      "id": "col:outcome_achieve_an_outcome",
+      "phrase": "achieve an outcome"
+    },
+    {
+      "id": "col:outcome_equitable_outcomes",
+      "phrase": "equitable outcomes"
+    },
+    {
+      "id": "col:tackle_tackle_the_problem_head_on",
+      "phrase": "tackle the problem head-on"
+    },
+    {
+      "id": "col:tackle_tackle_systemic_inequality",
+      "phrase": "tackle systemic inequality"
+    },
+    {
+      "id": "col:tackle_tackle_youth_unemployment",
+      "phrase": "tackle youth unemployment"
+    },
+    {
+      "id": "col:tackle_tackle_plastic_pollution",
+      "phrase": "tackle plastic pollution"
+    },
+    {
+      "id": "col:tackle_tackle_misinformation",
+      "phrase": "tackle misinformation"
+    },
+    {
+      "id": "col:tackle_tackle_crime_effectively",
+      "phrase": "tackle crime effectively"
+    },
+    {
+      "id": "col:alleviate_alleviate_poverty",
+      "phrase": "alleviate poverty"
+    },
+    {
+      "id": "col:alleviate_alleviate_traffic_congestion",
+      "phrase": "alleviate traffic congestion"
+    },
+    {
+      "id": "col:alleviate_alleviate_symptoms",
+      "phrase": "alleviate symptoms"
+    },
+    {
+      "id": "col:alleviate_alleviate_the_burden_on",
+      "phrase": "alleviate the burden on"
+    },
+    {
+      "id": "col:alleviate_alleviate_housing_shortages",
+      "phrase": "alleviate housing shortages"
+    },
+    {
+      "id": "col:alleviate_alleviate_loneliness",
+      "phrase": "alleviate loneliness"
+    },
+    {
+      "id": "col:promote_promote_sustainability",
+      "phrase": "promote sustainability"
+    },
+    {
+      "id": "col:promote_promote_healthy_lifestyles",
+      "phrase": "promote healthy lifestyles"
+    },
+    {
+      "id": "col:promote_promote_social_mobility",
+      "phrase": "promote social mobility"
+    },
+    {
+      "id": "col:promote_promote_cultural_understanding",
+      "phrase": "promote cultural understanding"
+    },
+    {
+      "id": "col:promote_promote_economic_development",
+      "phrase": "promote economic development"
+    },
+    {
+      "id": "col:promote_promote_well_being",
+      "phrase": "promote well-being"
+    },
+    {
+      "id": "col:eradicate_eradicate_poverty",
+      "phrase": "eradicate poverty"
+    },
+    {
+      "id": "col:eradicate_eradicate_corruption",
+      "phrase": "eradicate corruption"
+    },
+    {
+      "id": "col:eradicate_eradicate_invasive_species",
+      "phrase": "eradicate invasive species"
+    },
+    {
+      "id": "col:eradicate_eradicate_the_root_causes_of",
+      "phrase": "eradicate the root causes of"
+    },
+    {
+      "id": "col:eradicate_eradicate_child_labour",
+      "phrase": "eradicate child labour"
+    },
+    {
+      "id": "col:eradicate_completely_eradicate",
+      "phrase": "completely eradicate"
+    }
+  ],
+  "media": [
+    {
+      "id": "col:influence_exert_an_influence_on",
+      "phrase": "exert an influence on"
+    },
+    {
+      "id": "col:influence_a_profound_influence_on",
+      "phrase": "a profound influence on"
+    },
+    {
+      "id": "col:influence_a_corrupting_influence_on",
+      "phrase": "a corrupting influence on"
+    },
+    {
+      "id": "col:influence_fall_under_the_influence_of",
+      "phrase": "fall under the influence of"
+    },
+    {
+      "id": "col:influence_undue_influence",
+      "phrase": "undue influence"
+    },
+    {
+      "id": "col:influence_curb_the_influence_of",
+      "phrase": "curb the influence of"
+    },
+    {
+      "id": "col:misinformation_combat_misinformation",
+      "phrase": "combat misinformation"
+    },
+    {
+      "id": "col:misinformation_spread_misinformation",
+      "phrase": "spread misinformation"
+    },
+    {
+      "id": "col:misinformation_rampant_misinformation",
+      "phrase": "rampant misinformation"
+    },
+    {
+      "id": "col:misinformation_the_proliferation_of_misinformation",
+      "phrase": "the proliferation of misinformation"
+    },
+    {
+      "id": "col:misinformation_fall_prey_to_misinformation",
+      "phrase": "fall prey to misinformation"
+    },
+    {
+      "id": "col:misinformation_debunk_misinformation",
+      "phrase": "debunk misinformation"
+    },
+    {
+      "id": "col:censorship_impose_censorship",
+      "phrase": "impose censorship"
+    },
+    {
+      "id": "col:censorship_strict_censorship",
+      "phrase": "strict censorship"
+    },
+    {
+      "id": "col:censorship_evade_censorship",
+      "phrase": "evade censorship"
+    },
+    {
+      "id": "col:censorship_self_censorship",
+      "phrase": "self-censorship"
+    },
+    {
+      "id": "col:censorship_amount_to_censorship",
+      "phrase": "amount to censorship"
+    },
+    {
+      "id": "col:censorship_lift_censorship",
+      "phrase": "lift censorship"
+    },
+    {
+      "id": "col:controversy_spark_controversy",
+      "phrase": "spark controversy"
+    },
+    {
+      "id": "col:controversy_fierce_controversy",
+      "phrase": "fierce controversy"
+    },
+    {
+      "id": "col:controversy_surround_controversy",
+      "phrase": "surround controversy"
+    },
+    {
+      "id": "col:controversy_court_controversy",
+      "phrase": "court controversy"
+    },
+    {
+      "id": "col:controversy_bitter_controversy",
+      "phrase": "bitter controversy"
+    },
+    {
+      "id": "col:controversy_resolve_a_controversy",
+      "phrase": "resolve a controversy"
+    },
+    {
+      "id": "col:undermine_undermine_public_trust",
+      "phrase": "undermine public trust"
+    },
+    {
+      "id": "col:undermine_undermine_efforts",
+      "phrase": "undermine efforts"
+    },
+    {
+      "id": "col:undermine_undermine_stability",
+      "phrase": "undermine stability"
+    },
+    {
+      "id": "col:undermine_undermine_authority",
+      "phrase": "undermine authority"
+    },
+    {
+      "id": "col:undermine_undermine_morale",
+      "phrase": "undermine morale"
+    },
+    {
+      "id": "col:undermine_undermine_biodiversity",
+      "phrase": "undermine biodiversity"
+    }
+  ],
+  "psychology": [
+    {
+      "id": "col:influence_exert_an_influence_on",
+      "phrase": "exert an influence on"
+    },
+    {
+      "id": "col:influence_a_profound_influence_on",
+      "phrase": "a profound influence on"
+    },
+    {
+      "id": "col:influence_a_corrupting_influence_on",
+      "phrase": "a corrupting influence on"
+    },
+    {
+      "id": "col:influence_fall_under_the_influence_of",
+      "phrase": "fall under the influence of"
+    },
+    {
+      "id": "col:influence_undue_influence",
+      "phrase": "undue influence"
+    },
+    {
+      "id": "col:influence_curb_the_influence_of",
+      "phrase": "curb the influence of"
+    },
+    {
+      "id": "col:attitude_shape_public_attitudes_towards",
+      "phrase": "shape public attitudes towards"
+    },
+    {
+      "id": "col:attitude_an_ingrained_attitude_towards",
+      "phrase": "an ingrained attitude towards"
+    },
+    {
+      "id": "col:attitude_adopt_a_positive_attitude",
+      "phrase": "adopt a positive attitude"
+    },
+    {
+      "id": "col:attitude_challenge_prevailing_attitudes",
+      "phrase": "challenge prevailing attitudes"
+    },
+    {
+      "id": "col:attitude_a_complacent_attitude",
+      "phrase": "a complacent attitude"
+    },
+    {
+      "id": "col:attitude_a_dismissive_attitude",
+      "phrase": "a dismissive attitude"
+    },
+    {
+      "id": "col:behaviour_modify_consumer_behaviour",
+      "phrase": "modify consumer behaviour"
+    },
+    {
+      "id": "col:behaviour_antisocial_behaviour",
+      "phrase": "antisocial behaviour"
+    },
+    {
+      "id": "col:behaviour_sedentary_behaviour",
+      "phrase": "sedentary behaviour"
+    },
+    {
+      "id": "col:behaviour_encourage_responsible_behaviour",
+      "phrase": "encourage responsible behaviour"
+    },
+    {
+      "id": "col:behaviour_deter_reckless_behaviour",
+      "phrase": "deter reckless behaviour"
+    },
+    {
+      "id": "col:behaviour_erratic_behaviour",
+      "phrase": "erratic behaviour"
+    },
+    {
+      "id": "col:well_being_mental_well_being",
+      "phrase": "mental well-being"
+    },
+    {
+      "id": "col:well_being_promote_well_being",
+      "phrase": "promote well-being"
+    },
+    {
+      "id": "col:well_being_undermine_well_being",
+      "phrase": "undermine well-being"
+    },
+    {
+      "id": "col:well_being_overall_well_being",
+      "phrase": "overall well-being"
+    },
+    {
+      "id": "col:well_being_employee_well_being",
+      "phrase": "employee well-being"
+    },
+    {
+      "id": "col:well_being_contribute_to_well_being",
+      "phrase": "contribute to well-being"
+    },
+    {
+      "id": "col:habit_cultivate_a_habit",
+      "phrase": "cultivate a habit"
+    },
+    {
+      "id": "col:habit_break_a_habit",
+      "phrase": "break a habit"
+    },
+    {
+      "id": "col:habit_ingrained_habits",
+      "phrase": "ingrained habits"
+    },
+    {
+      "id": "col:habit_sedentary_habits",
+      "phrase": "sedentary habits"
+    },
+    {
+      "id": "col:habit_lifelong_habits",
+      "phrase": "lifelong habits"
+    },
+    {
+      "id": "col:habit_curb_bad_habits",
+      "phrase": "curb bad habits"
+    },
+    {
+      "id": "col:exert_exert_influence_over",
+      "phrase": "exert influence over"
+    },
+    {
+      "id": "col:exert_exert_pressure_on",
+      "phrase": "exert pressure on"
+    },
+    {
+      "id": "col:exert_exert_a_profound_effect_on",
+      "phrase": "exert a profound effect on"
+    },
+    {
+      "id": "col:exert_exert_considerable_effort",
+      "phrase": "exert considerable effort"
+    },
+    {
+      "id": "col:exert_exert_gravitational_pull",
+      "phrase": "exert gravitational pull"
+    },
+    {
+      "id": "col:exert_exert_diplomatic_leverage",
+      "phrase": "exert diplomatic leverage"
+    },
+    {
+      "id": "col:overcome_overcome_barriers",
+      "phrase": "overcome barriers"
+    },
+    {
+      "id": "col:overcome_overcome_resistance",
+      "phrase": "overcome resistance"
+    },
+    {
+      "id": "col:overcome_overcome_adversity",
+      "phrase": "overcome adversity"
+    },
+    {
+      "id": "col:overcome_overcome_addiction",
+      "phrase": "overcome addiction"
+    },
+    {
+      "id": "col:overcome_overcome_technical_limitations",
+      "phrase": "overcome technical limitations"
+    },
+    {
+      "id": "col:overcome_overcome_a_shortage",
+      "phrase": "overcome a shortage"
+    }
+  ],
+  "government": [
+    {
+      "id": "col:issue_address_a_pressing_issue",
+      "phrase": "address a pressing issue"
+    },
+    {
+      "id": "col:issue_a_contentious_issue",
+      "phrase": "a contentious issue"
+    },
+    {
+      "id": "col:issue_raise_an_issue",
+      "phrase": "raise an issue"
+    },
+    {
+      "id": "col:issue_an_underlying_issue",
+      "phrase": "an underlying issue"
+    },
+    {
+      "id": "col:issue_overlook_the_issue_of",
+      "phrase": "overlook the issue of"
+    },
+    {
+      "id": "col:issue_a_multifaceted_issue",
+      "phrase": "a multifaceted issue"
+    },
+    {
+      "id": "col:problem_tackle_a_problem",
+      "phrase": "tackle a problem"
+    },
+    {
+      "id": "col:problem_exacerbate_a_problem",
+      "phrase": "exacerbate a problem"
+    },
+    {
+      "id": "col:problem_an_acute_problem",
+      "phrase": "an acute problem"
+    },
+    {
+      "id": "col:problem_identify_the_root_cause_of_a_problem",
+      "phrase": "identify the root cause of a problem"
+    },
+    {
+      "id": "col:problem_a_chronic_problem",
+      "phrase": "a chronic problem"
+    },
+    {
+      "id": "col:problem_alleviate_a_problem",
+      "phrase": "alleviate a problem"
+    },
+    {
+      "id": "col:solution_a_viable_solution_to",
+      "phrase": "a viable solution to"
+    },
+    {
+      "id": "col:solution_a_long_term_solution",
+      "phrase": "a long-term solution"
+    },
+    {
+      "id": "col:solution_devise_a_solution_to",
+      "phrase": "devise a solution to"
+    },
+    {
+      "id": "col:solution_a_cost_effective_solution",
+      "phrase": "a cost-effective solution"
+    },
+    {
+      "id": "col:solution_a_quick_fix_solution",
+      "phrase": "a quick-fix solution"
+    },
+    {
+      "id": "col:solution_a_holistic_solution",
+      "phrase": "a holistic solution"
+    },
+    {
+      "id": "col:measure_implement_stringent_measures_to",
+      "phrase": "implement stringent measures to"
+    },
+    {
+      "id": "col:measure_preventive_measures",
+      "phrase": "preventive measures"
+    },
+    {
+      "id": "col:measure_drastic_measures",
+      "phrase": "drastic measures"
+    },
+    {
+      "id": "col:measure_take_effective_measures_against",
+      "phrase": "take effective measures against"
+    },
+    {
+      "id": "col:measure_stopgap_measures",
+      "phrase": "stopgap measures"
+    },
+    {
+      "id": "col:measure_austerity_measures",
+      "phrase": "austerity measures"
+    },
+    {
+      "id": "col:policy_implement_a_policy",
+      "phrase": "implement a policy"
+    },
+    {
+      "id": "col:policy_formulate_a_policy",
+      "phrase": "formulate a policy"
+    },
+    {
+      "id": "col:policy_a_coherent_policy",
+      "phrase": "a coherent policy"
+    },
+    {
+      "id": "col:policy_reverse_a_policy",
+      "phrase": "reverse a policy"
+    },
+    {
+      "id": "col:policy_fiscal_policy",
+      "phrase": "fiscal policy"
+    },
+    {
+      "id": "col:policy_a_short_sighted_policy",
+      "phrase": "a short-sighted policy"
+    },
+    {
+      "id": "col:approach_a_holistic_approach_to",
+      "phrase": "a holistic approach to"
+    },
+    {
+      "id": "col:approach_adopt_an_approach",
+      "phrase": "adopt an approach"
+    },
+    {
+      "id": "col:approach_a_pragmatic_approach_to",
+      "phrase": "a pragmatic approach to"
+    },
+    {
+      "id": "col:approach_a_one_size_fits_all_approach",
+      "phrase": "a one-size-fits-all approach"
+    },
+    {
+      "id": "col:approach_a_proactive_approach_to",
+      "phrase": "a proactive approach to"
+    },
+    {
+      "id": "col:approach_a_multidisciplinary_approach",
+      "phrase": "a multidisciplinary approach"
+    },
+    {
+      "id": "col:role_play_a_pivotal_role_in",
+      "phrase": "play a pivotal role in"
+    },
+    {
+      "id": "col:role_a_vital_role_in",
+      "phrase": "a vital role in"
+    },
+    {
+      "id": "col:role_a_supporting_role",
+      "phrase": "a supporting role"
+    },
+    {
+      "id": "col:role_undermine_the_role_of",
+      "phrase": "undermine the role of"
+    },
+    {
+      "id": "col:role_assume_a_leading_role_in",
+      "phrase": "assume a leading role in"
+    },
+    {
+      "id": "col:role_a_catalytic_role_in",
+      "phrase": "a catalytic role in"
+    },
+    {
+      "id": "col:responsibility_shoulder_responsibility_for",
+      "phrase": "shoulder responsibility for"
+    },
+    {
+      "id": "col:responsibility_shirk_responsibility",
+      "phrase": "shirk responsibility"
+    },
+    {
+      "id": "col:responsibility_collective_responsibility",
+      "phrase": "collective responsibility"
+    },
+    {
+      "id": "col:responsibility_a_sense_of_responsibility",
+      "phrase": "a sense of responsibility"
+    },
+    {
+      "id": "col:responsibility_civic_responsibility",
+      "phrase": "civic responsibility"
+    },
+    {
+      "id": "col:responsibility_shift_responsibility_onto",
+      "phrase": "shift responsibility onto"
+    },
+    {
+      "id": "col:education_tertiary_education",
+      "phrase": "tertiary education"
+    },
+    {
+      "id": "col:education_compulsory_education",
+      "phrase": "compulsory education"
+    },
+    {
+      "id": "col:education_vocational_education",
+      "phrase": "vocational education"
+    },
+    {
+      "id": "col:education_a_well_rounded_education",
+      "phrase": "a well-rounded education"
+    },
+    {
+      "id": "col:education_invest_in_education",
+      "phrase": "invest in education"
+    },
+    {
+      "id": "col:education_overhaul_the_education_system",
+      "phrase": "overhaul the education system"
+    },
+    {
+      "id": "col:crime_commit_a_crime",
+      "phrase": "commit a crime"
+    },
+    {
+      "id": "col:crime_deter_crime",
+      "phrase": "deter crime"
+    },
+    {
+      "id": "col:crime_juvenile_crime",
+      "phrase": "juvenile crime"
+    },
+    {
+      "id": "col:crime_petty_crime",
+      "phrase": "petty crime"
+    },
+    {
+      "id": "col:crime_combat_crime",
+      "phrase": "combat crime"
+    },
+    {
+      "id": "col:crime_the_crime_rate",
+      "phrase": "the crime rate"
+    },
+    {
+      "id": "col:funding_allocate_funding_to",
+      "phrase": "allocate funding to"
+    },
+    {
+      "id": "col:funding_secure_funding",
+      "phrase": "secure funding"
+    },
+    {
+      "id": "col:funding_slash_funding_for",
+      "phrase": "slash funding for"
+    },
+    {
+      "id": "col:funding_adequate_funding",
+      "phrase": "adequate funding"
+    },
+    {
+      "id": "col:funding_public_funding",
+      "phrase": "public funding"
+    },
+    {
+      "id": "col:funding_earmarked_funding",
+      "phrase": "earmarked funding"
+    },
+    {
+      "id": "col:regulation_stringent_regulations",
+      "phrase": "stringent regulations"
+    },
+    {
+      "id": "col:regulation_comply_with_regulations",
+      "phrase": "comply with regulations"
+    },
+    {
+      "id": "col:regulation_enforce_regulations",
+      "phrase": "enforce regulations"
+    },
+    {
+      "id": "col:regulation_flout_regulations",
+      "phrase": "flout regulations"
+    },
+    {
+      "id": "col:regulation_tighten_regulations",
+      "phrase": "tighten regulations"
+    },
+    {
+      "id": "col:regulation_relax_regulations",
+      "phrase": "relax regulations"
+    },
+    {
+      "id": "col:legislation_enact_legislation",
+      "phrase": "enact legislation"
+    },
+    {
+      "id": "col:legislation_draft_legislation",
+      "phrase": "draft legislation"
+    },
+    {
+      "id": "col:legislation_sweeping_legislation",
+      "phrase": "sweeping legislation"
+    },
+    {
+      "id": "col:legislation_enforce_legislation",
+      "phrase": "enforce legislation"
+    },
+    {
+      "id": "col:legislation_amend_existing_legislation",
+      "phrase": "amend existing legislation"
+    },
+    {
+      "id": "col:legislation_tighter_legislation",
+      "phrase": "tighter legislation"
+    },
+    {
+      "id": "col:poverty_alleviate_poverty",
+      "phrase": "alleviate poverty"
+    },
+    {
+      "id": "col:poverty_eradicate_extreme_poverty",
+      "phrase": "eradicate extreme poverty"
+    },
+    {
+      "id": "col:poverty_abject_poverty",
+      "phrase": "abject poverty"
+    },
+    {
+      "id": "col:poverty_the_cycle_of_poverty",
+      "phrase": "the cycle of poverty"
+    },
+    {
+      "id": "col:poverty_lift_people_out_of_poverty",
+      "phrase": "lift people out of poverty"
+    },
+    {
+      "id": "col:poverty_live_below_the_poverty_line",
+      "phrase": "live below the poverty line"
+    },
+    {
+      "id": "col:inequality_exacerbate_inequality",
+      "phrase": "exacerbate inequality"
+    },
+    {
+      "id": "col:inequality_narrow_inequality",
+      "phrase": "narrow inequality"
+    },
+    {
+      "id": "col:inequality_income_inequality",
+      "phrase": "income inequality"
+    },
+    {
+      "id": "col:inequality_stark_inequality",
+      "phrase": "stark inequality"
+    },
+    {
+      "id": "col:inequality_systemic_inequality",
+      "phrase": "systemic inequality"
+    },
+    {
+      "id": "col:inequality_perpetuate_inequality",
+      "phrase": "perpetuate inequality"
+    },
+    {
+      "id": "col:privacy_invade_one_s_privacy",
+      "phrase": "invade one's privacy"
+    },
+    {
+      "id": "col:privacy_safeguard_user_privacy",
+      "phrase": "safeguard user privacy"
+    },
+    {
+      "id": "col:privacy_data_privacy",
+      "phrase": "data privacy"
+    },
+    {
+      "id": "col:privacy_privacy_concerns",
+      "phrase": "privacy concerns"
+    },
+    {
+      "id": "col:privacy_compromise_privacy",
+      "phrase": "compromise privacy"
+    },
+    {
+      "id": "col:privacy_a_privacy_breach",
+      "phrase": "a privacy breach"
+    },
+    {
+      "id": "col:security_job_security",
+      "phrase": "job security"
+    },
+    {
+      "id": "col:security_bolster_security",
+      "phrase": "bolster security"
+    },
+    {
+      "id": "col:security_jeopardise_security",
+      "phrase": "jeopardise security"
+    },
+    {
+      "id": "col:security_food_security",
+      "phrase": "food security"
+    },
+    {
+      "id": "col:security_security_measures",
+      "phrase": "security measures"
+    },
+    {
+      "id": "col:security_a_false_sense_of_security",
+      "phrase": "a false sense of security"
+    },
+    {
+      "id": "col:censorship_impose_censorship",
+      "phrase": "impose censorship"
+    },
+    {
+      "id": "col:censorship_strict_censorship",
+      "phrase": "strict censorship"
+    },
+    {
+      "id": "col:censorship_evade_censorship",
+      "phrase": "evade censorship"
+    },
+    {
+      "id": "col:censorship_self_censorship",
+      "phrase": "self-censorship"
+    },
+    {
+      "id": "col:censorship_amount_to_censorship",
+      "phrase": "amount to censorship"
+    },
+    {
+      "id": "col:censorship_lift_censorship",
+      "phrase": "lift censorship"
+    },
+    {
+      "id": "col:treatment_medical_treatment",
+      "phrase": "medical treatment"
+    },
+    {
+      "id": "col:treatment_undergo_treatment",
+      "phrase": "undergo treatment"
+    },
+    {
+      "id": "col:treatment_equal_treatment",
+      "phrase": "equal treatment"
+    },
+    {
+      "id": "col:treatment_respond_to_treatment",
+      "phrase": "respond to treatment"
+    },
+    {
+      "id": "col:treatment_treatment_options",
+      "phrase": "treatment options"
+    },
+    {
+      "id": "col:treatment_humane_treatment",
+      "phrase": "humane treatment"
+    },
+    {
+      "id": "col:priority_give_top_priority_to",
+      "phrase": "give top priority to"
+    },
+    {
+      "id": "col:priority_an_urgent_priority",
+      "phrase": "an urgent priority"
+    },
+    {
+      "id": "col:priority_reassess_priorities",
+      "phrase": "reassess priorities"
+    },
+    {
+      "id": "col:priority_competing_priorities",
+      "phrase": "competing priorities"
+    },
+    {
+      "id": "col:priority_remain_a_priority",
+      "phrase": "remain a priority"
+    },
+    {
+      "id": "col:priority_set_priorities",
+      "phrase": "set priorities"
+    },
+    {
+      "id": "col:consensus_reach_a_consensus_on",
+      "phrase": "reach a consensus on"
+    },
+    {
+      "id": "col:consensus_broad_consensus",
+      "phrase": "broad consensus"
+    },
+    {
+      "id": "col:consensus_scientific_consensus",
+      "phrase": "scientific consensus"
+    },
+    {
+      "id": "col:consensus_undermine_consensus",
+      "phrase": "undermine consensus"
+    },
+    {
+      "id": "col:consensus_a_lack_of_consensus",
+      "phrase": "a lack of consensus"
+    },
+    {
+      "id": "col:consensus_emerging_consensus",
+      "phrase": "emerging consensus"
+    },
+    {
+      "id": "col:strategy_devise_a_strategy",
+      "phrase": "devise a strategy"
+    },
+    {
+      "id": "col:strategy_a_coherent_strategy",
+      "phrase": "a coherent strategy"
+    },
+    {
+      "id": "col:strategy_an_effective_strategy",
+      "phrase": "an effective strategy"
+    },
+    {
+      "id": "col:strategy_a_coping_strategy",
+      "phrase": "a coping strategy"
+    },
+    {
+      "id": "col:strategy_pursue_a_strategy",
+      "phrase": "pursue a strategy"
+    },
+    {
+      "id": "col:strategy_a_two_pronged_strategy",
+      "phrase": "a two-pronged strategy"
+    },
+    {
+      "id": "col:framework_a_regulatory_framework",
+      "phrase": "a regulatory framework"
+    },
+    {
+      "id": "col:framework_establish_a_framework",
+      "phrase": "establish a framework"
+    },
+    {
+      "id": "col:framework_a_conceptual_framework",
+      "phrase": "a conceptual framework"
+    },
+    {
+      "id": "col:framework_a_robust_framework",
+      "phrase": "a robust framework"
+    },
+    {
+      "id": "col:framework_operate_within_a_framework",
+      "phrase": "operate within a framework"
+    },
+    {
+      "id": "col:framework_overhaul_the_existing_framework",
+      "phrase": "overhaul the existing framework"
+    },
+    {
+      "id": "col:revenue_generate_revenue",
+      "phrase": "generate revenue"
+    },
+    {
+      "id": "col:revenue_tax_revenue",
+      "phrase": "tax revenue"
+    },
+    {
+      "id": "col:revenue_a_revenue_stream",
+      "phrase": "a revenue stream"
+    },
+    {
+      "id": "col:revenue_divert_revenue",
+      "phrase": "divert revenue"
+    },
+    {
+      "id": "col:revenue_dwindling_revenue",
+      "phrase": "dwindling revenue"
+    },
+    {
+      "id": "col:revenue_erode_revenue",
+      "phrase": "erode revenue"
+    },
+    {
+      "id": "col:welfare_social_welfare",
+      "phrase": "social welfare"
+    },
+    {
+      "id": "col:welfare_the_welfare_state",
+      "phrase": "the welfare state"
+    },
+    {
+      "id": "col:welfare_welfare_system",
+      "phrase": "welfare system"
+    },
+    {
+      "id": "col:welfare_safeguard_animal_welfare",
+      "phrase": "safeguard animal welfare"
+    },
+    {
+      "id": "col:welfare_welfare_dependency",
+      "phrase": "welfare dependency"
+    },
+    {
+      "id": "col:welfare_welfare_spending",
+      "phrase": "welfare spending"
+    },
+    {
+      "id": "col:address_address_the_root_causes_of",
+      "phrase": "address the root causes of"
+    },
+    {
+      "id": "col:address_address_public_concerns",
+      "phrase": "address public concerns"
+    },
+    {
+      "id": "col:address_address_the_imbalance",
+      "phrase": "address the imbalance"
+    },
+    {
+      "id": "col:address_address_climate_change_urgently",
+      "phrase": "address climate change urgently"
+    },
+    {
+      "id": "col:address_address_the_needs_of",
+      "phrase": "address the needs of"
+    },
+    {
+      "id": "col:address_adequately_address",
+      "phrase": "adequately address"
+    },
+    {
+      "id": "col:tackle_tackle_the_problem_head_on",
+      "phrase": "tackle the problem head-on"
+    },
+    {
+      "id": "col:tackle_tackle_systemic_inequality",
+      "phrase": "tackle systemic inequality"
+    },
+    {
+      "id": "col:tackle_tackle_youth_unemployment",
+      "phrase": "tackle youth unemployment"
+    },
+    {
+      "id": "col:tackle_tackle_plastic_pollution",
+      "phrase": "tackle plastic pollution"
+    },
+    {
+      "id": "col:tackle_tackle_misinformation",
+      "phrase": "tackle misinformation"
+    },
+    {
+      "id": "col:tackle_tackle_crime_effectively",
+      "phrase": "tackle crime effectively"
+    },
+    {
+      "id": "col:exert_exert_influence_over",
+      "phrase": "exert influence over"
+    },
+    {
+      "id": "col:exert_exert_pressure_on",
+      "phrase": "exert pressure on"
+    },
+    {
+      "id": "col:exert_exert_a_profound_effect_on",
+      "phrase": "exert a profound effect on"
+    },
+    {
+      "id": "col:exert_exert_considerable_effort",
+      "phrase": "exert considerable effort"
+    },
+    {
+      "id": "col:exert_exert_gravitational_pull",
+      "phrase": "exert gravitational pull"
+    },
+    {
+      "id": "col:exert_exert_diplomatic_leverage",
+      "phrase": "exert diplomatic leverage"
+    },
+    {
+      "id": "col:promote_promote_sustainability",
+      "phrase": "promote sustainability"
+    },
+    {
+      "id": "col:promote_promote_healthy_lifestyles",
+      "phrase": "promote healthy lifestyles"
+    },
+    {
+      "id": "col:promote_promote_social_mobility",
+      "phrase": "promote social mobility"
+    },
+    {
+      "id": "col:promote_promote_cultural_understanding",
+      "phrase": "promote cultural understanding"
+    },
+    {
+      "id": "col:promote_promote_economic_development",
+      "phrase": "promote economic development"
+    },
+    {
+      "id": "col:promote_promote_well_being",
+      "phrase": "promote well-being"
+    },
+    {
+      "id": "col:undermine_undermine_public_trust",
+      "phrase": "undermine public trust"
+    },
+    {
+      "id": "col:undermine_undermine_efforts",
+      "phrase": "undermine efforts"
+    },
+    {
+      "id": "col:undermine_undermine_stability",
+      "phrase": "undermine stability"
+    },
+    {
+      "id": "col:undermine_undermine_authority",
+      "phrase": "undermine authority"
+    },
+    {
+      "id": "col:undermine_undermine_morale",
+      "phrase": "undermine morale"
+    },
+    {
+      "id": "col:undermine_undermine_biodiversity",
+      "phrase": "undermine biodiversity"
+    },
+    {
+      "id": "col:allocate_allocate_resources_to",
+      "phrase": "allocate resources to"
+    },
+    {
+      "id": "col:allocate_allocate_sufficient_time",
+      "phrase": "allocate sufficient time"
+    },
+    {
+      "id": "col:allocate_allocate_funds_fairly",
+      "phrase": "allocate funds fairly"
+    },
+    {
+      "id": "col:allocate_allocate_urban_space",
+      "phrase": "allocate urban space"
+    },
+    {
+      "id": "col:allocate_allocate_equitably",
+      "phrase": "allocate equitably"
+    },
+    {
+      "id": "col:allocate_allocate_clear_responsibilities",
+      "phrase": "allocate clear responsibilities"
+    },
+    {
+      "id": "col:implement_implement_reforms",
+      "phrase": "implement reforms"
+    },
+    {
+      "id": "col:implement_implement_strict_regulations",
+      "phrase": "implement strict regulations"
+    },
+    {
+      "id": "col:implement_implement_a_ban",
+      "phrase": "implement a ban"
+    },
+    {
+      "id": "col:implement_implement_practical_solutions",
+      "phrase": "implement practical solutions"
+    },
+    {
+      "id": "col:implement_effectively_implement",
+      "phrase": "effectively implement"
+    },
+    {
+      "id": "col:implement_implement_sweeping_changes",
+      "phrase": "implement sweeping changes"
+    },
+    {
+      "id": "col:enforce_enforce_the_law",
+      "phrase": "enforce the law"
+    },
+    {
+      "id": "col:enforce_enforce_safety_standards",
+      "phrase": "enforce safety standards"
+    },
+    {
+      "id": "col:enforce_enforce_regulations",
+      "phrase": "enforce regulations"
+    },
+    {
+      "id": "col:enforce_strictly_enforce",
+      "phrase": "strictly enforce"
+    },
+    {
+      "id": "col:enforce_enforce_speed_limits",
+      "phrase": "enforce speed limits"
+    },
+    {
+      "id": "col:enforce_enforce_consumer_protection",
+      "phrase": "enforce consumer protection"
+    }
+  ],
+  "economy": [
+    {
+      "id": "col:measure_implement_stringent_measures_to",
+      "phrase": "implement stringent measures to"
+    },
+    {
+      "id": "col:measure_preventive_measures",
+      "phrase": "preventive measures"
+    },
+    {
+      "id": "col:measure_drastic_measures",
+      "phrase": "drastic measures"
+    },
+    {
+      "id": "col:measure_take_effective_measures_against",
+      "phrase": "take effective measures against"
+    },
+    {
+      "id": "col:measure_stopgap_measures",
+      "phrase": "stopgap measures"
+    },
+    {
+      "id": "col:measure_austerity_measures",
+      "phrase": "austerity measures"
+    },
+    {
+      "id": "col:policy_implement_a_policy",
+      "phrase": "implement a policy"
+    },
+    {
+      "id": "col:policy_formulate_a_policy",
+      "phrase": "formulate a policy"
+    },
+    {
+      "id": "col:policy_a_coherent_policy",
+      "phrase": "a coherent policy"
+    },
+    {
+      "id": "col:policy_reverse_a_policy",
+      "phrase": "reverse a policy"
+    },
+    {
+      "id": "col:policy_fiscal_policy",
+      "phrase": "fiscal policy"
+    },
+    {
+      "id": "col:policy_a_short_sighted_policy",
+      "phrase": "a short-sighted policy"
+    },
+    {
+      "id": "col:factor_a_decisive_factor_in",
+      "phrase": "a decisive factor in"
+    },
+    {
+      "id": "col:factor_a_contributing_factor",
+      "phrase": "a contributing factor"
+    },
+    {
+      "id": "col:factor_a_determining_factor",
+      "phrase": "a determining factor"
+    },
+    {
+      "id": "col:factor_take_key_factors_into_account",
+      "phrase": "take key factors into account"
+    },
+    {
+      "id": "col:factor_socio_economic_factors",
+      "phrase": "socio-economic factors"
+    },
+    {
+      "id": "col:factor_a_mitigating_factor",
+      "phrase": "a mitigating factor"
+    },
+    {
+      "id": "col:benefit_reap_the_benefits_of",
+      "phrase": "reap the benefits of"
+    },
+    {
+      "id": "col:benefit_tangible_benefits",
+      "phrase": "tangible benefits"
+    },
+    {
+      "id": "col:benefit_weigh_the_benefits_against_the_drawbacks",
+      "phrase": "weigh the benefits against the drawbacks"
+    },
+    {
+      "id": "col:benefit_mutual_benefits",
+      "phrase": "mutual benefits"
+    },
+    {
+      "id": "col:benefit_outweigh_the_drawbacks",
+      "phrase": "outweigh the drawbacks"
+    },
+    {
+      "id": "col:benefit_far_reaching_benefits",
+      "phrase": "far-reaching benefits"
+    },
+    {
+      "id": "col:drawback_a_major_drawback_of",
+      "phrase": "a major drawback of"
+    },
+    {
+      "id": "col:drawback_an_inherent_drawback",
+      "phrase": "an inherent drawback"
+    },
+    {
+      "id": "col:drawback_overcome_a_drawback",
+      "phrase": "overcome a drawback"
+    },
+    {
+      "id": "col:drawback_outweigh_the_drawbacks_of",
+      "phrase": "outweigh the drawbacks of"
+    },
+    {
+      "id": "col:drawback_a_glaring_drawback",
+      "phrase": "a glaring drawback"
+    },
+    {
+      "id": "col:drawback_overlook_the_potential_drawbacks",
+      "phrase": "overlook the potential drawbacks"
+    },
+    {
+      "id": "col:risk_pose_a_serious_risk_to",
+      "phrase": "pose a serious risk to"
+    },
+    {
+      "id": "col:risk_mitigate_the_risk_of",
+      "phrase": "mitigate the risk of"
+    },
+    {
+      "id": "col:risk_run_the_risk_of",
+      "phrase": "run the risk of"
+    },
+    {
+      "id": "col:risk_a_calculated_risk",
+      "phrase": "a calculated risk"
+    },
+    {
+      "id": "col:risk_outweigh_a_risk",
+      "phrase": "outweigh a risk"
+    },
+    {
+      "id": "col:risk_an_unacceptable_risk",
+      "phrase": "an unacceptable risk"
+    },
+    {
+      "id": "col:demand_growing_demand_for",
+      "phrase": "growing demand for"
+    },
+    {
+      "id": "col:demand_meet_the_demand_for",
+      "phrase": "meet the demand for"
+    },
+    {
+      "id": "col:demand_unprecedented_demand_for",
+      "phrase": "unprecedented demand for"
+    },
+    {
+      "id": "col:demand_curb_demand",
+      "phrase": "curb demand"
+    },
+    {
+      "id": "col:demand_stimulate_demand",
+      "phrase": "stimulate demand"
+    },
+    {
+      "id": "col:demand_peak_demand",
+      "phrase": "peak demand"
+    },
+    {
+      "id": "col:development_sustainable_development",
+      "phrase": "sustainable development"
+    },
+    {
+      "id": "col:development_hinder_economic_development",
+      "phrase": "hinder economic development"
+    },
+    {
+      "id": "col:development_spur_regional_development",
+      "phrase": "spur regional development"
+    },
+    {
+      "id": "col:development_cognitive_development",
+      "phrase": "cognitive development"
+    },
+    {
+      "id": "col:development_unchecked_development",
+      "phrase": "unchecked development"
+    },
+    {
+      "id": "col:development_groundbreaking_development",
+      "phrase": "groundbreaking development"
+    },
+    {
+      "id": "col:growth_sustained_economic_growth",
+      "phrase": "sustained economic growth"
+    },
+    {
+      "id": "col:growth_stimulate_growth",
+      "phrase": "stimulate growth"
+    },
+    {
+      "id": "col:growth_exponential_growth",
+      "phrase": "exponential growth"
+    },
+    {
+      "id": "col:growth_stifle_growth",
+      "phrase": "stifle growth"
+    },
+    {
+      "id": "col:growth_sluggish_growth",
+      "phrase": "sluggish growth"
+    },
+    {
+      "id": "col:growth_inclusive_growth",
+      "phrase": "inclusive growth"
+    },
+    {
+      "id": "col:decline_a_sharp_decline_in",
+      "phrase": "a sharp decline in"
+    },
+    {
+      "id": "col:decline_halt_the_decline_of",
+      "phrase": "halt the decline of"
+    },
+    {
+      "id": "col:decline_a_steady_decline_in",
+      "phrase": "a steady decline in"
+    },
+    {
+      "id": "col:decline_experience_a_decline_in",
+      "phrase": "experience a decline in"
+    },
+    {
+      "id": "col:decline_terminal_decline",
+      "phrase": "terminal decline"
+    },
+    {
+      "id": "col:decline_accelerate_the_decline_in",
+      "phrase": "accelerate the decline in"
+    },
+    {
+      "id": "col:trend_a_growing_trend_towards",
+      "phrase": "a growing trend towards"
+    },
+    {
+      "id": "col:trend_reverse_a_trend",
+      "phrase": "reverse a trend"
+    },
+    {
+      "id": "col:trend_a_worrying_trend",
+      "phrase": "a worrying trend"
+    },
+    {
+      "id": "col:trend_set_a_trend",
+      "phrase": "set a trend"
+    },
+    {
+      "id": "col:trend_an_irreversible_trend",
+      "phrase": "an irreversible trend"
+    },
+    {
+      "id": "col:trend_reflect_current_trends",
+      "phrase": "reflect current trends"
+    },
+    {
+      "id": "col:consequence_far_reaching_consequences",
+      "phrase": "far-reaching consequences"
+    },
+    {
+      "id": "col:consequence_unintended_consequences",
+      "phrase": "unintended consequences"
+    },
+    {
+      "id": "col:consequence_face_the_consequences_of",
+      "phrase": "face the consequences of"
+    },
+    {
+      "id": "col:consequence_catastrophic_consequences",
+      "phrase": "catastrophic consequences"
+    },
+    {
+      "id": "col:consequence_mitigate_the_consequences_of",
+      "phrase": "mitigate the consequences of"
+    },
+    {
+      "id": "col:consequence_have_serious_consequences_for",
+      "phrase": "have serious consequences for"
+    },
+    {
+      "id": "col:resource_allocate_resources",
+      "phrase": "allocate resources"
+    },
+    {
+      "id": "col:resource_finite_resources",
+      "phrase": "finite resources"
+    },
+    {
+      "id": "col:resource_deplete_natural_resources",
+      "phrase": "deplete natural resources"
+    },
+    {
+      "id": "col:resource_squander_resources",
+      "phrase": "squander resources"
+    },
+    {
+      "id": "col:resource_conserve_resources",
+      "phrase": "conserve resources"
+    },
+    {
+      "id": "col:resource_pool_resources",
+      "phrase": "pool resources"
+    },
+    {
+      "id": "col:economy_boost_the_economy",
+      "phrase": "boost the economy"
+    },
+    {
+      "id": "col:economy_a_thriving_economy",
+      "phrase": "a thriving economy"
+    },
+    {
+      "id": "col:economy_a_stagnant_economy",
+      "phrase": "a stagnant economy"
+    },
+    {
+      "id": "col:economy_diversify_the_economy",
+      "phrase": "diversify the economy"
+    },
+    {
+      "id": "col:economy_a_circular_economy",
+      "phrase": "a circular economy"
+    },
+    {
+      "id": "col:economy_cripple_the_economy",
+      "phrase": "cripple the economy"
+    },
+    {
+      "id": "col:investment_substantial_investment_in",
+      "phrase": "substantial investment in"
+    },
+    {
+      "id": "col:investment_attract_foreign_investment",
+      "phrase": "attract foreign investment"
+    },
+    {
+      "id": "col:investment_long_term_investment",
+      "phrase": "long-term investment"
+    },
+    {
+      "id": "col:investment_deter_investment",
+      "phrase": "deter investment"
+    },
+    {
+      "id": "col:investment_yield_a_return_on_investment",
+      "phrase": "yield a return on investment"
+    },
+    {
+      "id": "col:investment_channel_investment_into",
+      "phrase": "channel investment into"
+    },
+    {
+      "id": "col:subsidy_grant_subsidies_to",
+      "phrase": "grant subsidies to"
+    },
+    {
+      "id": "col:subsidy_phase_out_fossil_fuel_subsidies",
+      "phrase": "phase out fossil-fuel subsidies"
+    },
+    {
+      "id": "col:subsidy_agricultural_subsidies",
+      "phrase": "agricultural subsidies"
+    },
+    {
+      "id": "col:subsidy_rely_on_subsidies",
+      "phrase": "rely on subsidies"
+    },
+    {
+      "id": "col:subsidy_generous_subsidies",
+      "phrase": "generous subsidies"
+    },
+    {
+      "id": "col:subsidy_curtail_subsidies",
+      "phrase": "curtail subsidies"
+    },
+    {
+      "id": "col:regulation_stringent_regulations",
+      "phrase": "stringent regulations"
+    },
+    {
+      "id": "col:regulation_comply_with_regulations",
+      "phrase": "comply with regulations"
+    },
+    {
+      "id": "col:regulation_enforce_regulations",
+      "phrase": "enforce regulations"
+    },
+    {
+      "id": "col:regulation_flout_regulations",
+      "phrase": "flout regulations"
+    },
+    {
+      "id": "col:regulation_tighten_regulations",
+      "phrase": "tighten regulations"
+    },
+    {
+      "id": "col:regulation_relax_regulations",
+      "phrase": "relax regulations"
+    },
+    {
+      "id": "col:poverty_alleviate_poverty",
+      "phrase": "alleviate poverty"
+    },
+    {
+      "id": "col:poverty_eradicate_extreme_poverty",
+      "phrase": "eradicate extreme poverty"
+    },
+    {
+      "id": "col:poverty_abject_poverty",
+      "phrase": "abject poverty"
+    },
+    {
+      "id": "col:poverty_the_cycle_of_poverty",
+      "phrase": "the cycle of poverty"
+    },
+    {
+      "id": "col:poverty_lift_people_out_of_poverty",
+      "phrase": "lift people out of poverty"
+    },
+    {
+      "id": "col:poverty_live_below_the_poverty_line",
+      "phrase": "live below the poverty line"
+    },
+    {
+      "id": "col:inequality_exacerbate_inequality",
+      "phrase": "exacerbate inequality"
+    },
+    {
+      "id": "col:inequality_narrow_inequality",
+      "phrase": "narrow inequality"
+    },
+    {
+      "id": "col:inequality_income_inequality",
+      "phrase": "income inequality"
+    },
+    {
+      "id": "col:inequality_stark_inequality",
+      "phrase": "stark inequality"
+    },
+    {
+      "id": "col:inequality_systemic_inequality",
+      "phrase": "systemic inequality"
+    },
+    {
+      "id": "col:inequality_perpetuate_inequality",
+      "phrase": "perpetuate inequality"
+    },
+    {
+      "id": "col:unemployment_youth_unemployment",
+      "phrase": "youth unemployment"
+    },
+    {
+      "id": "col:unemployment_curb_unemployment",
+      "phrase": "curb unemployment"
+    },
+    {
+      "id": "col:unemployment_structural_unemployment",
+      "phrase": "structural unemployment"
+    },
+    {
+      "id": "col:unemployment_the_unemployment_rate",
+      "phrase": "the unemployment rate"
+    },
+    {
+      "id": "col:unemployment_lead_to_unemployment",
+      "phrase": "lead to unemployment"
+    },
+    {
+      "id": "col:unemployment_soaring_unemployment",
+      "phrase": "soaring unemployment"
+    },
+    {
+      "id": "col:productivity_boost_productivity",
+      "phrase": "boost productivity"
+    },
+    {
+      "id": "col:productivity_hamper_productivity",
+      "phrase": "hamper productivity"
+    },
+    {
+      "id": "col:productivity_labour_productivity",
+      "phrase": "labour productivity"
+    },
+    {
+      "id": "col:productivity_productivity_gains",
+      "phrase": "productivity gains"
+    },
+    {
+      "id": "col:productivity_stagnant_productivity",
+      "phrase": "stagnant productivity"
+    },
+    {
+      "id": "col:productivity_maximise_productivity",
+      "phrase": "maximise productivity"
+    },
+    {
+      "id": "col:innovation_foster_innovation",
+      "phrase": "foster innovation"
+    },
+    {
+      "id": "col:innovation_stifle_innovation",
+      "phrase": "stifle innovation"
+    },
+    {
+      "id": "col:innovation_technological_innovation",
+      "phrase": "technological innovation"
+    },
+    {
+      "id": "col:innovation_a_hub_of_innovation",
+      "phrase": "a hub of innovation"
+    },
+    {
+      "id": "col:innovation_grassroots_innovation",
+      "phrase": "grassroots innovation"
+    },
+    {
+      "id": "col:innovation_embrace_innovation",
+      "phrase": "embrace innovation"
+    },
+    {
+      "id": "col:sustainability_environmental_sustainability",
+      "phrase": "environmental sustainability"
+    },
+    {
+      "id": "col:sustainability_promote_sustainability",
+      "phrase": "promote sustainability"
+    },
+    {
+      "id": "col:sustainability_undermine_sustainability",
+      "phrase": "undermine sustainability"
+    },
+    {
+      "id": "col:sustainability_fiscal_sustainability",
+      "phrase": "fiscal sustainability"
+    },
+    {
+      "id": "col:sustainability_prioritise_sustainability",
+      "phrase": "prioritise sustainability"
+    },
+    {
+      "id": "col:sustainability_a_commitment_to_sustainability",
+      "phrase": "a commitment to sustainability"
+    },
+    {
+      "id": "col:climate_combat_climate_change",
+      "phrase": "combat climate change"
+    },
+    {
+      "id": "col:climate_harsh_climate",
+      "phrase": "harsh climate"
+    },
+    {
+      "id": "col:climate_the_current_economic_climate",
+      "phrase": "the current economic climate"
+    },
+    {
+      "id": "col:climate_climate_resilience",
+      "phrase": "climate resilience"
+    },
+    {
+      "id": "col:climate_climate_crisis",
+      "phrase": "climate crisis"
+    },
+    {
+      "id": "col:climate_adapt_to_a_changing_climate",
+      "phrase": "adapt to a changing climate"
+    },
+    {
+      "id": "col:globalisation_the_advent_of_globalisation",
+      "phrase": "the advent of globalisation"
+    },
+    {
+      "id": "col:globalisation_benefit_from_globalisation",
+      "phrase": "benefit from globalisation"
+    },
+    {
+      "id": "col:globalisation_economic_globalisation",
+      "phrase": "economic globalisation"
+    },
+    {
+      "id": "col:globalisation_a_backlash_against_globalisation",
+      "phrase": "a backlash against globalisation"
+    },
+    {
+      "id": "col:globalisation_accelerated_by_globalisation",
+      "phrase": "accelerated by globalisation"
+    },
+    {
+      "id": "col:globalisation_the_homogenising_effect_of_globalisation",
+      "phrase": "the homogenising effect of globalisation"
+    },
+    {
+      "id": "col:standard_raise_living_standards",
+      "phrase": "raise living standards"
+    },
+    {
+      "id": "col:standard_meet_strict_standards",
+      "phrase": "meet strict standards"
+    },
+    {
+      "id": "col:standard_set_standards",
+      "phrase": "set standards"
+    },
+    {
+      "id": "col:standard_rigorous_standards",
+      "phrase": "rigorous standards"
+    },
+    {
+      "id": "col:standard_lower_standards",
+      "phrase": "lower standards"
+    },
+    {
+      "id": "col:standard_a_high_standard_of_living",
+      "phrase": "a high standard of living"
+    },
+    {
+      "id": "col:gap_bridge_the_gap_between",
+      "phrase": "bridge the gap between"
+    },
+    {
+      "id": "col:gap_widen_the_gap_between",
+      "phrase": "widen the gap between"
+    },
+    {
+      "id": "col:gap_the_wealth_gap",
+      "phrase": "the wealth gap"
+    },
+    {
+      "id": "col:gap_a_widening_gap",
+      "phrase": "a widening gap"
+    },
+    {
+      "id": "col:gap_fill_a_gap_in_the_market",
+      "phrase": "fill a gap in the market"
+    },
+    {
+      "id": "col:gap_the_digital_divide",
+      "phrase": "the digital divide"
+    },
+    {
+      "id": "col:priority_give_top_priority_to",
+      "phrase": "give top priority to"
+    },
+    {
+      "id": "col:priority_an_urgent_priority",
+      "phrase": "an urgent priority"
+    },
+    {
+      "id": "col:priority_reassess_priorities",
+      "phrase": "reassess priorities"
+    },
+    {
+      "id": "col:priority_competing_priorities",
+      "phrase": "competing priorities"
+    },
+    {
+      "id": "col:priority_remain_a_priority",
+      "phrase": "remain a priority"
+    },
+    {
+      "id": "col:priority_set_priorities",
+      "phrase": "set priorities"
+    },
+    {
+      "id": "col:incentive_financial_incentives",
+      "phrase": "financial incentives"
+    },
+    {
+      "id": "col:incentive_provide_an_incentive_to",
+      "phrase": "provide an incentive to"
+    },
+    {
+      "id": "col:incentive_a_strong_incentive",
+      "phrase": "a strong incentive"
+    },
+    {
+      "id": "col:incentive_a_perverse_incentive",
+      "phrase": "a perverse incentive"
+    },
+    {
+      "id": "col:incentive_remove_incentives",
+      "phrase": "remove incentives"
+    },
+    {
+      "id": "col:incentive_respond_to_incentives",
+      "phrase": "respond to incentives"
+    },
+    {
+      "id": "col:prospect_career_prospects",
+      "phrase": "career prospects"
+    },
+    {
+      "id": "col:prospect_bleak_prospects",
+      "phrase": "bleak prospects"
+    },
+    {
+      "id": "col:prospect_bright_prospects",
+      "phrase": "bright prospects"
+    },
+    {
+      "id": "col:prospect_face_the_prospect_of",
+      "phrase": "face the prospect of"
+    },
+    {
+      "id": "col:prospect_boost_prospects_for",
+      "phrase": "boost prospects for"
+    },
+    {
+      "id": "col:prospect_diminish_the_prospect_of",
+      "phrase": "diminish the prospect of"
+    },
+    {
+      "id": "col:crisis_an_acute_crisis",
+      "phrase": "an acute crisis"
+    },
+    {
+      "id": "col:crisis_avert_a_crisis",
+      "phrase": "avert a crisis"
+    },
+    {
+      "id": "col:crisis_trigger_a_crisis",
+      "phrase": "trigger a crisis"
+    },
+    {
+      "id": "col:crisis_a_housing_crisis",
+      "phrase": "a housing crisis"
+    },
+    {
+      "id": "col:crisis_weather_a_crisis",
+      "phrase": "weather a crisis"
+    },
+    {
+      "id": "col:crisis_crisis_management",
+      "phrase": "crisis management"
+    },
+    {
+      "id": "col:revenue_generate_revenue",
+      "phrase": "generate revenue"
+    },
+    {
+      "id": "col:revenue_tax_revenue",
+      "phrase": "tax revenue"
+    },
+    {
+      "id": "col:revenue_a_revenue_stream",
+      "phrase": "a revenue stream"
+    },
+    {
+      "id": "col:revenue_divert_revenue",
+      "phrase": "divert revenue"
+    },
+    {
+      "id": "col:revenue_dwindling_revenue",
+      "phrase": "dwindling revenue"
+    },
+    {
+      "id": "col:revenue_erode_revenue",
+      "phrase": "erode revenue"
+    },
+    {
+      "id": "col:consumption_curb_consumption",
+      "phrase": "curb consumption"
+    },
+    {
+      "id": "col:consumption_excessive_consumption",
+      "phrase": "excessive consumption"
+    },
+    {
+      "id": "col:consumption_fuel_consumption",
+      "phrase": "fuel consumption"
+    },
+    {
+      "id": "col:consumption_conspicuous_consumption",
+      "phrase": "conspicuous consumption"
+    },
+    {
+      "id": "col:consumption_consumption_patterns",
+      "phrase": "consumption patterns"
+    },
+    {
+      "id": "col:consumption_fit_for_human_consumption",
+      "phrase": "fit for human consumption"
+    },
+    {
+      "id": "col:housing_affordable_housing",
+      "phrase": "affordable housing"
+    },
+    {
+      "id": "col:housing_a_housing_shortage",
+      "phrase": "a housing shortage"
+    },
+    {
+      "id": "col:housing_housing_market",
+      "phrase": "housing market"
+    },
+    {
+      "id": "col:housing_substandard_housing",
+      "phrase": "substandard housing"
+    },
+    {
+      "id": "col:housing_housing_density",
+      "phrase": "housing density"
+    },
+    {
+      "id": "col:housing_housing_costs",
+      "phrase": "housing costs"
+    },
+    {
+      "id": "col:employment_stable_employment",
+      "phrase": "stable employment"
+    },
+    {
+      "id": "col:employment_employment_prospects",
+      "phrase": "employment prospects"
+    },
+    {
+      "id": "col:employment_precarious_employment",
+      "phrase": "precarious employment"
+    },
+    {
+      "id": "col:employment_seek_employment",
+      "phrase": "seek employment"
+    },
+    {
+      "id": "col:employment_employment_opportunities",
+      "phrase": "employment opportunities"
+    },
+    {
+      "id": "col:employment_employment_rights",
+      "phrase": "employment rights"
+    },
+    {
+      "id": "col:welfare_social_welfare",
+      "phrase": "social welfare"
+    },
+    {
+      "id": "col:welfare_the_welfare_state",
+      "phrase": "the welfare state"
+    },
+    {
+      "id": "col:welfare_welfare_system",
+      "phrase": "welfare system"
+    },
+    {
+      "id": "col:welfare_safeguard_animal_welfare",
+      "phrase": "safeguard animal welfare"
+    },
+    {
+      "id": "col:welfare_welfare_dependency",
+      "phrase": "welfare dependency"
+    },
+    {
+      "id": "col:welfare_welfare_spending",
+      "phrase": "welfare spending"
+    },
+    {
+      "id": "col:reduce_reduce_substantially",
+      "phrase": "reduce substantially"
+    },
+    {
+      "id": "col:reduce_reduce_reliance_on",
+      "phrase": "reduce reliance on"
+    },
+    {
+      "id": "col:reduce_reduce_waste",
+      "phrase": "reduce waste"
+    },
+    {
+      "id": "col:reduce_reduce_the_risk_of",
+      "phrase": "reduce the risk of"
+    },
+    {
+      "id": "col:reduce_reduce_operating_costs",
+      "phrase": "reduce operating costs"
+    },
+    {
+      "id": "col:reduce_reduce_the_carbon_footprint",
+      "phrase": "reduce the carbon footprint"
+    },
+    {
+      "id": "col:increase_increase_dramatically",
+      "phrase": "increase dramatically"
+    },
+    {
+      "id": "col:increase_increase_access_to",
+      "phrase": "increase access to"
+    },
+    {
+      "id": "col:increase_increase_productivity",
+      "phrase": "increase productivity"
+    },
+    {
+      "id": "col:increase_increase_the_likelihood_of",
+      "phrase": "increase the likelihood of"
+    },
+    {
+      "id": "col:increase_increase_public_spending",
+      "phrase": "increase public spending"
+    },
+    {
+      "id": "col:increase_increase_public_awareness",
+      "phrase": "increase public awareness"
+    },
+    {
+      "id": "col:raise_raise_concerns",
+      "phrase": "raise concerns"
+    },
+    {
+      "id": "col:raise_raise_awareness",
+      "phrase": "raise awareness"
+    },
+    {
+      "id": "col:raise_raise_revenue",
+      "phrase": "raise revenue"
+    },
+    {
+      "id": "col:raise_raise_the_bar",
+      "phrase": "raise the bar"
+    },
+    {
+      "id": "col:raise_raise_living_standards",
+      "phrase": "raise living standards"
+    },
+    {
+      "id": "col:raise_raise_the_retirement_age",
+      "phrase": "raise the retirement age"
+    },
+    {
+      "id": "col:alleviate_alleviate_poverty",
+      "phrase": "alleviate poverty"
+    },
+    {
+      "id": "col:alleviate_alleviate_traffic_congestion",
+      "phrase": "alleviate traffic congestion"
+    },
+    {
+      "id": "col:alleviate_alleviate_symptoms",
+      "phrase": "alleviate symptoms"
+    },
+    {
+      "id": "col:alleviate_alleviate_the_burden_on",
+      "phrase": "alleviate the burden on"
+    },
+    {
+      "id": "col:alleviate_alleviate_housing_shortages",
+      "phrase": "alleviate housing shortages"
+    },
+    {
+      "id": "col:alleviate_alleviate_loneliness",
+      "phrase": "alleviate loneliness"
+    },
+    {
+      "id": "col:mitigate_mitigate_the_effects_of",
+      "phrase": "mitigate the effects of"
+    },
+    {
+      "id": "col:mitigate_mitigate_risks",
+      "phrase": "mitigate risks"
+    },
+    {
+      "id": "col:mitigate_mitigate_the_severity_of",
+      "phrase": "mitigate the severity of"
+    },
+    {
+      "id": "col:mitigate_mitigate_environmental_damage",
+      "phrase": "mitigate environmental damage"
+    },
+    {
+      "id": "col:mitigate_mitigate_economic_shock",
+      "phrase": "mitigate economic shock"
+    },
+    {
+      "id": "col:mitigate_mitigate_emissions",
+      "phrase": "mitigate emissions"
+    },
+    {
+      "id": "col:foster_foster_innovation",
+      "phrase": "foster innovation"
+    },
+    {
+      "id": "col:foster_foster_a_sense_of",
+      "phrase": "foster a sense of"
+    },
+    {
+      "id": "col:foster_foster_collaboration",
+      "phrase": "foster collaboration"
+    },
+    {
+      "id": "col:foster_foster_critical_thinking",
+      "phrase": "foster critical thinking"
+    },
+    {
+      "id": "col:foster_foster_social_cohesion",
+      "phrase": "foster social cohesion"
+    },
+    {
+      "id": "col:foster_foster_sustainable_growth",
+      "phrase": "foster sustainable growth"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_inequality",
+      "phrase": "exacerbate inequality"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_the_problem",
+      "phrase": "exacerbate the problem"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_tensions",
+      "phrase": "exacerbate tensions"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_congestion",
+      "phrase": "exacerbate congestion"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_mental_health_issues",
+      "phrase": "exacerbate mental health issues"
+    },
+    {
+      "id": "col:exacerbate_exacerbate_climate_change",
+      "phrase": "exacerbate climate change"
+    },
+    {
+      "id": "col:allocate_allocate_resources_to",
+      "phrase": "allocate resources to"
+    },
+    {
+      "id": "col:allocate_allocate_sufficient_time",
+      "phrase": "allocate sufficient time"
+    },
+    {
+      "id": "col:allocate_allocate_funds_fairly",
+      "phrase": "allocate funds fairly"
+    },
+    {
+      "id": "col:allocate_allocate_urban_space",
+      "phrase": "allocate urban space"
+    },
+    {
+      "id": "col:allocate_allocate_equitably",
+      "phrase": "allocate equitably"
+    },
+    {
+      "id": "col:allocate_allocate_clear_responsibilities",
+      "phrase": "allocate clear responsibilities"
+    },
+    {
+      "id": "col:curb_curb_emissions",
+      "phrase": "curb emissions"
+    },
+    {
+      "id": "col:curb_curb_spending",
+      "phrase": "curb spending"
+    },
+    {
+      "id": "col:curb_curb_antisocial_behaviour",
+      "phrase": "curb antisocial behaviour"
+    },
+    {
+      "id": "col:curb_curb_the_spread_of",
+      "phrase": "curb the spread of"
+    },
+    {
+      "id": "col:curb_curb_urban_sprawl",
+      "phrase": "curb urban sprawl"
+    },
+    {
+      "id": "col:curb_curb_misinformation",
+      "phrase": "curb misinformation"
+    },
+    {
+      "id": "col:eradicate_eradicate_poverty",
+      "phrase": "eradicate poverty"
+    },
+    {
+      "id": "col:eradicate_eradicate_corruption",
+      "phrase": "eradicate corruption"
+    },
+    {
+      "id": "col:eradicate_eradicate_invasive_species",
+      "phrase": "eradicate invasive species"
+    },
+    {
+      "id": "col:eradicate_eradicate_the_root_causes_of",
+      "phrase": "eradicate the root causes of"
+    },
+    {
+      "id": "col:eradicate_eradicate_child_labour",
+      "phrase": "eradicate child labour"
+    },
+    {
+      "id": "col:eradicate_completely_eradicate",
+      "phrase": "completely eradicate"
+    },
+    {
+      "id": "col:stimulate_stimulate_economic_growth",
+      "phrase": "stimulate economic growth"
+    },
+    {
+      "id": "col:stimulate_stimulate_demand",
+      "phrase": "stimulate demand"
+    },
+    {
+      "id": "col:stimulate_stimulate_debate",
+      "phrase": "stimulate debate"
+    },
+    {
+      "id": "col:stimulate_stimulate_job_creation",
+      "phrase": "stimulate job creation"
+    },
+    {
+      "id": "col:stimulate_stimulate_cognitive_development",
+      "phrase": "stimulate cognitive development"
+    },
+    {
+      "id": "col:stimulate_stimulate_healthy_competition",
+      "phrase": "stimulate healthy competition"
+    },
+    {
+      "id": "col:bridge_bridge_the_digital_divide",
+      "phrase": "bridge the digital divide"
+    },
+    {
+      "id": "col:bridge_bridge_the_gap_between",
+      "phrase": "bridge the gap between"
+    },
+    {
+      "id": "col:bridge_bridge_cultural_differences",
+      "phrase": "bridge cultural differences"
+    },
+    {
+      "id": "col:bridge_bridge_the_funding_gap",
+      "phrase": "bridge the funding gap"
+    },
+    {
+      "id": "col:bridge_bridge_divisions",
+      "phrase": "bridge divisions"
+    },
+    {
+      "id": "col:bridge_bridge_the_transition",
+      "phrase": "bridge the transition"
+    }
+  ],
+  "education": [
+    {
+      "id": "col:approach_a_holistic_approach_to",
+      "phrase": "a holistic approach to"
+    },
+    {
+      "id": "col:approach_adopt_an_approach",
+      "phrase": "adopt an approach"
+    },
+    {
+      "id": "col:approach_a_pragmatic_approach_to",
+      "phrase": "a pragmatic approach to"
+    },
+    {
+      "id": "col:approach_a_one_size_fits_all_approach",
+      "phrase": "a one-size-fits-all approach"
+    },
+    {
+      "id": "col:approach_a_proactive_approach_to",
+      "phrase": "a proactive approach to"
+    },
+    {
+      "id": "col:approach_a_multidisciplinary_approach",
+      "phrase": "a multidisciplinary approach"
+    },
+    {
+      "id": "col:role_play_a_pivotal_role_in",
+      "phrase": "play a pivotal role in"
+    },
+    {
+      "id": "col:role_a_vital_role_in",
+      "phrase": "a vital role in"
+    },
+    {
+      "id": "col:role_a_supporting_role",
+      "phrase": "a supporting role"
+    },
+    {
+      "id": "col:role_undermine_the_role_of",
+      "phrase": "undermine the role of"
+    },
+    {
+      "id": "col:role_assume_a_leading_role_in",
+      "phrase": "assume a leading role in"
+    },
+    {
+      "id": "col:role_a_catalytic_role_in",
+      "phrase": "a catalytic role in"
+    },
+    {
+      "id": "col:behaviour_modify_consumer_behaviour",
+      "phrase": "modify consumer behaviour"
+    },
+    {
+      "id": "col:behaviour_antisocial_behaviour",
+      "phrase": "antisocial behaviour"
+    },
+    {
+      "id": "col:behaviour_sedentary_behaviour",
+      "phrase": "sedentary behaviour"
+    },
+    {
+      "id": "col:behaviour_encourage_responsible_behaviour",
+      "phrase": "encourage responsible behaviour"
+    },
+    {
+      "id": "col:behaviour_deter_reckless_behaviour",
+      "phrase": "deter reckless behaviour"
+    },
+    {
+      "id": "col:behaviour_erratic_behaviour",
+      "phrase": "erratic behaviour"
+    },
+    {
+      "id": "col:access_equitable_access_to",
+      "phrase": "equitable access to"
+    },
+    {
+      "id": "col:access_widen_access_to",
+      "phrase": "widen access to"
+    },
+    {
+      "id": "col:access_restrict_access_to",
+      "phrase": "restrict access to"
+    },
+    {
+      "id": "col:access_gain_access_to",
+      "phrase": "gain access to"
+    },
+    {
+      "id": "col:access_unfettered_access_to",
+      "phrase": "unfettered access to"
+    },
+    {
+      "id": "col:access_facilitate_access_to",
+      "phrase": "facilitate access to"
+    },
+    {
+      "id": "col:opportunity_seize_an_opportunity",
+      "phrase": "seize an opportunity"
+    },
+    {
+      "id": "col:opportunity_equal_opportunities",
+      "phrase": "equal opportunities"
+    },
+    {
+      "id": "col:opportunity_create_opportunities_for",
+      "phrase": "create opportunities for"
+    },
+    {
+      "id": "col:opportunity_a_golden_opportunity",
+      "phrase": "a golden opportunity"
+    },
+    {
+      "id": "col:opportunity_squander_a_valuable_opportunity",
+      "phrase": "squander a valuable opportunity"
+    },
+    {
+      "id": "col:opportunity_employment_opportunities",
+      "phrase": "employment opportunities"
+    },
+    {
+      "id": "col:research_conduct_research_into",
+      "phrase": "conduct research into"
+    },
+    {
+      "id": "col:research_groundbreaking_research",
+      "phrase": "groundbreaking research"
+    },
+    {
+      "id": "col:research_extensive_research",
+      "phrase": "extensive research"
+    },
+    {
+      "id": "col:research_fund_research",
+      "phrase": "fund research"
+    },
+    {
+      "id": "col:research_longitudinal_research",
+      "phrase": "longitudinal research"
+    },
+    {
+      "id": "col:research_disseminate_research_findings",
+      "phrase": "disseminate research findings"
+    },
+    {
+      "id": "col:knowledge_acquire_knowledge",
+      "phrase": "acquire knowledge"
+    },
+    {
+      "id": "col:knowledge_impart_knowledge",
+      "phrase": "impart knowledge"
+    },
+    {
+      "id": "col:knowledge_in_depth_knowledge",
+      "phrase": "in-depth knowledge"
+    },
+    {
+      "id": "col:knowledge_practical_knowledge",
+      "phrase": "practical knowledge"
+    },
+    {
+      "id": "col:knowledge_broaden_one_s_knowledge",
+      "phrase": "broaden one's knowledge"
+    },
+    {
+      "id": "col:knowledge_knowledge_economy",
+      "phrase": "knowledge economy"
+    },
+    {
+      "id": "col:skill_acquire_essential_skills",
+      "phrase": "acquire essential skills"
+    },
+    {
+      "id": "col:skill_transferable_skills",
+      "phrase": "transferable skills"
+    },
+    {
+      "id": "col:skill_interpersonal_skills",
+      "phrase": "interpersonal skills"
+    },
+    {
+      "id": "col:skill_hone_one_s_skills",
+      "phrase": "hone one's skills"
+    },
+    {
+      "id": "col:skill_vocational_skills",
+      "phrase": "vocational skills"
+    },
+    {
+      "id": "col:skill_skills_shortage",
+      "phrase": "skills shortage"
+    },
+    {
+      "id": "col:education_tertiary_education",
+      "phrase": "tertiary education"
+    },
+    {
+      "id": "col:education_compulsory_education",
+      "phrase": "compulsory education"
+    },
+    {
+      "id": "col:education_vocational_education",
+      "phrase": "vocational education"
+    },
+    {
+      "id": "col:education_a_well_rounded_education",
+      "phrase": "a well-rounded education"
+    },
+    {
+      "id": "col:education_invest_in_education",
+      "phrase": "invest in education"
+    },
+    {
+      "id": "col:education_overhaul_the_education_system",
+      "phrase": "overhaul the education system"
+    },
+    {
+      "id": "col:curriculum_the_national_curriculum",
+      "phrase": "the national curriculum"
+    },
+    {
+      "id": "col:curriculum_revise_the_curriculum",
+      "phrase": "revise the curriculum"
+    },
+    {
+      "id": "col:curriculum_a_broad_curriculum",
+      "phrase": "a broad curriculum"
+    },
+    {
+      "id": "col:curriculum_integrate_coding_into_the_curriculum",
+      "phrase": "integrate coding into the curriculum"
+    },
+    {
+      "id": "col:curriculum_an_outdated_curriculum",
+      "phrase": "an outdated curriculum"
+    },
+    {
+      "id": "col:curriculum_narrow_the_curriculum",
+      "phrase": "narrow the curriculum"
+    },
+    {
+      "id": "col:funding_allocate_funding_to",
+      "phrase": "allocate funding to"
+    },
+    {
+      "id": "col:funding_secure_funding",
+      "phrase": "secure funding"
+    },
+    {
+      "id": "col:funding_slash_funding_for",
+      "phrase": "slash funding for"
+    },
+    {
+      "id": "col:funding_adequate_funding",
+      "phrase": "adequate funding"
+    },
+    {
+      "id": "col:funding_public_funding",
+      "phrase": "public funding"
+    },
+    {
+      "id": "col:funding_earmarked_funding",
+      "phrase": "earmarked funding"
+    },
+    {
+      "id": "col:discipline_maintain_discipline",
+      "phrase": "maintain discipline"
+    },
+    {
+      "id": "col:discipline_strict_discipline",
+      "phrase": "strict discipline"
+    },
+    {
+      "id": "col:discipline_self_discipline",
+      "phrase": "self-discipline"
+    },
+    {
+      "id": "col:discipline_instil_discipline",
+      "phrase": "instil discipline"
+    },
+    {
+      "id": "col:discipline_an_academic_discipline",
+      "phrase": "an academic discipline"
+    },
+    {
+      "id": "col:discipline_impose_discipline",
+      "phrase": "impose discipline"
+    },
+    {
+      "id": "col:standard_raise_living_standards",
+      "phrase": "raise living standards"
+    },
+    {
+      "id": "col:standard_meet_strict_standards",
+      "phrase": "meet strict standards"
+    },
+    {
+      "id": "col:standard_set_standards",
+      "phrase": "set standards"
+    },
+    {
+      "id": "col:standard_rigorous_standards",
+      "phrase": "rigorous standards"
+    },
+    {
+      "id": "col:standard_lower_standards",
+      "phrase": "lower standards"
+    },
+    {
+      "id": "col:standard_a_high_standard_of_living",
+      "phrase": "a high standard of living"
+    },
+    {
+      "id": "col:gap_bridge_the_gap_between",
+      "phrase": "bridge the gap between"
+    },
+    {
+      "id": "col:gap_widen_the_gap_between",
+      "phrase": "widen the gap between"
+    },
+    {
+      "id": "col:gap_the_wealth_gap",
+      "phrase": "the wealth gap"
+    },
+    {
+      "id": "col:gap_a_widening_gap",
+      "phrase": "a widening gap"
+    },
+    {
+      "id": "col:gap_fill_a_gap_in_the_market",
+      "phrase": "fill a gap in the market"
+    },
+    {
+      "id": "col:gap_the_digital_divide",
+      "phrase": "the digital divide"
+    },
+    {
+      "id": "col:barrier_overcome_barriers_to",
+      "phrase": "overcome barriers to"
+    },
+    {
+      "id": "col:barrier_language_barriers",
+      "phrase": "language barriers"
+    },
+    {
+      "id": "col:barrier_pose_a_barrier_to",
+      "phrase": "pose a barrier to"
+    },
+    {
+      "id": "col:barrier_insurmountable_barriers",
+      "phrase": "insurmountable barriers"
+    },
+    {
+      "id": "col:barrier_lower_barriers",
+      "phrase": "lower barriers"
+    },
+    {
+      "id": "col:barrier_barriers_to_entry",
+      "phrase": "barriers to entry"
+    },
+    {
+      "id": "col:outcome_educational_outcomes",
+      "phrase": "educational outcomes"
+    },
+    {
+      "id": "col:outcome_a_favourable_outcome",
+      "phrase": "a favourable outcome"
+    },
+    {
+      "id": "col:outcome_influence_the_outcome_of",
+      "phrase": "influence the outcome of"
+    },
+    {
+      "id": "col:outcome_an_inevitable_outcome",
+      "phrase": "an inevitable outcome"
+    },
+    {
+      "id": "col:outcome_achieve_an_outcome",
+      "phrase": "achieve an outcome"
+    },
+    {
+      "id": "col:outcome_equitable_outcomes",
+      "phrase": "equitable outcomes"
+    },
+    {
+      "id": "col:strategy_devise_a_strategy",
+      "phrase": "devise a strategy"
+    },
+    {
+      "id": "col:strategy_a_coherent_strategy",
+      "phrase": "a coherent strategy"
+    },
+    {
+      "id": "col:strategy_an_effective_strategy",
+      "phrase": "an effective strategy"
+    },
+    {
+      "id": "col:strategy_a_coping_strategy",
+      "phrase": "a coping strategy"
+    },
+    {
+      "id": "col:strategy_pursue_a_strategy",
+      "phrase": "pursue a strategy"
+    },
+    {
+      "id": "col:strategy_a_two_pronged_strategy",
+      "phrase": "a two-pronged strategy"
+    },
+    {
+      "id": "col:potential_realise_one_s_full_potential",
+      "phrase": "realise one's full potential"
+    },
+    {
+      "id": "col:potential_unlock_the_potential_of",
+      "phrase": "unlock the potential of"
+    },
+    {
+      "id": "col:potential_enormous_potential",
+      "phrase": "enormous potential"
+    },
+    {
+      "id": "col:potential_have_the_potential_to",
+      "phrase": "have the potential to"
+    },
+    {
+      "id": "col:potential_economic_potential",
+      "phrase": "economic potential"
+    },
+    {
+      "id": "col:potential_assess_the_potential_risks",
+      "phrase": "assess the potential risks"
+    },
+    {
+      "id": "col:literacy_digital_literacy",
+      "phrase": "digital literacy"
+    },
+    {
+      "id": "col:literacy_the_literacy_rate",
+      "phrase": "the literacy rate"
+    },
+    {
+      "id": "col:literacy_promote_literacy",
+      "phrase": "promote literacy"
+    },
+    {
+      "id": "col:literacy_literacy_skills",
+      "phrase": "literacy skills"
+    },
+    {
+      "id": "col:literacy_literacy_levels",
+      "phrase": "literacy levels"
+    },
+    {
+      "id": "col:literacy_functional_literacy",
+      "phrase": "functional literacy"
+    },
+    {
+      "id": "col:increase_increase_dramatically",
+      "phrase": "increase dramatically"
+    },
+    {
+      "id": "col:increase_increase_access_to",
+      "phrase": "increase access to"
+    },
+    {
+      "id": "col:increase_increase_productivity",
+      "phrase": "increase productivity"
+    },
+    {
+      "id": "col:increase_increase_the_likelihood_of",
+      "phrase": "increase the likelihood of"
+    },
+    {
+      "id": "col:increase_increase_public_spending",
+      "phrase": "increase public spending"
+    },
+    {
+      "id": "col:increase_increase_public_awareness",
+      "phrase": "increase public awareness"
+    },
+    {
+      "id": "col:raise_raise_concerns",
+      "phrase": "raise concerns"
+    },
+    {
+      "id": "col:raise_raise_awareness",
+      "phrase": "raise awareness"
+    },
+    {
+      "id": "col:raise_raise_revenue",
+      "phrase": "raise revenue"
+    },
+    {
+      "id": "col:raise_raise_the_bar",
+      "phrase": "raise the bar"
+    },
+    {
+      "id": "col:raise_raise_living_standards",
+      "phrase": "raise living standards"
+    },
+    {
+      "id": "col:raise_raise_the_retirement_age",
+      "phrase": "raise the retirement age"
+    },
+    {
+      "id": "col:foster_foster_innovation",
+      "phrase": "foster innovation"
+    },
+    {
+      "id": "col:foster_foster_a_sense_of",
+      "phrase": "foster a sense of"
+    },
+    {
+      "id": "col:foster_foster_collaboration",
+      "phrase": "foster collaboration"
+    },
+    {
+      "id": "col:foster_foster_critical_thinking",
+      "phrase": "foster critical thinking"
+    },
+    {
+      "id": "col:foster_foster_social_cohesion",
+      "phrase": "foster social cohesion"
+    },
+    {
+      "id": "col:foster_foster_sustainable_growth",
+      "phrase": "foster sustainable growth"
+    },
+    {
+      "id": "col:enhance_enhance_the_quality_of",
+      "phrase": "enhance the quality of"
+    },
+    {
+      "id": "col:enhance_enhance_productivity",
+      "phrase": "enhance productivity"
+    },
+    {
+      "id": "col:enhance_enhance_security",
+      "phrase": "enhance security"
+    },
+    {
+      "id": "col:enhance_enhance_the_learning_experience",
+      "phrase": "enhance the learning experience"
+    },
+    {
+      "id": "col:enhance_enhance_reputation",
+      "phrase": "enhance reputation"
+    },
+    {
+      "id": "col:enhance_enhance_collaboration",
+      "phrase": "enhance collaboration"
+    },
+    {
+      "id": "col:acquire_acquire_knowledge",
+      "phrase": "acquire knowledge"
+    },
+    {
+      "id": "col:acquire_acquire_a_language",
+      "phrase": "acquire a language"
+    },
+    {
+      "id": "col:acquire_acquire_practical_experience",
+      "phrase": "acquire practical experience"
+    },
+    {
+      "id": "col:acquire_acquire_fluency",
+      "phrase": "acquire fluency"
+    },
+    {
+      "id": "col:acquire_acquire_new_assets",
+      "phrase": "acquire new assets"
+    },
+    {
+      "id": "col:acquire_acquire_a_reputation_for",
+      "phrase": "acquire a reputation for"
+    },
+    {
+      "id": "col:assess_assess_the_impact_of",
+      "phrase": "assess the impact of"
+    },
+    {
+      "id": "col:assess_assess_risks",
+      "phrase": "assess risks"
+    },
+    {
+      "id": "col:assess_accurately_assess",
+      "phrase": "accurately assess"
+    },
+    {
+      "id": "col:assess_assess_the_damage",
+      "phrase": "assess the damage"
+    },
+    {
+      "id": "col:assess_assess_learning_outcomes",
+      "phrase": "assess learning outcomes"
+    },
+    {
+      "id": "col:assess_assess_the_cost_effectiveness",
+      "phrase": "assess the cost-effectiveness"
+    },
+    {
+      "id": "col:evaluate_evaluate_the_effectiveness_of",
+      "phrase": "evaluate the effectiveness of"
+    },
+    {
+      "id": "col:evaluate_evaluate_evidence",
+      "phrase": "evaluate evidence"
+    },
+    {
+      "id": "col:evaluate_critically_evaluate",
+      "phrase": "critically evaluate"
+    },
+    {
+      "id": "col:evaluate_evaluate_academic_performance",
+      "phrase": "evaluate academic performance"
+    },
+    {
+      "id": "col:evaluate_evaluate_viable_alternatives",
+      "phrase": "evaluate viable alternatives"
+    },
+    {
+      "id": "col:evaluate_evaluate_the_long_term_impact",
+      "phrase": "evaluate the long-term impact"
+    },
+    {
+      "id": "col:stimulate_stimulate_economic_growth",
+      "phrase": "stimulate economic growth"
+    },
+    {
+      "id": "col:stimulate_stimulate_demand",
+      "phrase": "stimulate demand"
+    },
+    {
+      "id": "col:stimulate_stimulate_debate",
+      "phrase": "stimulate debate"
+    },
+    {
+      "id": "col:stimulate_stimulate_job_creation",
+      "phrase": "stimulate job creation"
+    },
+    {
+      "id": "col:stimulate_stimulate_cognitive_development",
+      "phrase": "stimulate cognitive development"
+    },
+    {
+      "id": "col:stimulate_stimulate_healthy_competition",
+      "phrase": "stimulate healthy competition"
+    },
+    {
+      "id": "col:overcome_overcome_barriers",
+      "phrase": "overcome barriers"
+    },
+    {
+      "id": "col:overcome_overcome_resistance",
+      "phrase": "overcome resistance"
+    },
+    {
+      "id": "col:overcome_overcome_adversity",
+      "phrase": "overcome adversity"
+    },
+    {
+      "id": "col:overcome_overcome_addiction",
+      "phrase": "overcome addiction"
+    },
+    {
+      "id": "col:overcome_overcome_technical_limitations",
+      "phrase": "overcome technical limitations"
+    },
+    {
+      "id": "col:overcome_overcome_a_shortage",
+      "phrase": "overcome a shortage"
+    }
+  ],
+  "technology": [
+    {
+      "id": "col:drawback_a_major_drawback_of",
+      "phrase": "a major drawback of"
+    },
+    {
+      "id": "col:drawback_an_inherent_drawback",
+      "phrase": "an inherent drawback"
+    },
+    {
+      "id": "col:drawback_overcome_a_drawback",
+      "phrase": "overcome a drawback"
+    },
+    {
+      "id": "col:drawback_outweigh_the_drawbacks_of",
+      "phrase": "outweigh the drawbacks of"
+    },
+    {
+      "id": "col:drawback_a_glaring_drawback",
+      "phrase": "a glaring drawback"
+    },
+    {
+      "id": "col:drawback_overlook_the_potential_drawbacks",
+      "phrase": "overlook the potential drawbacks"
+    },
+    {
+      "id": "col:technology_cutting_edge_technology",
+      "phrase": "cutting-edge technology"
+    },
+    {
+      "id": "col:technology_harness_technology",
+      "phrase": "harness technology"
+    },
+    {
+      "id": "col:technology_embrace_new_technology",
+      "phrase": "embrace new technology"
+    },
+    {
+      "id": "col:technology_disruptive_technology",
+      "phrase": "disruptive technology"
+    },
+    {
+      "id": "col:technology_obsolete_technology",
+      "phrase": "obsolete technology"
+    },
+    {
+      "id": "col:technology_over_reliance_on_technology",
+      "phrase": "over-reliance on technology"
+    },
+    {
+      "id": "col:innovation_foster_innovation",
+      "phrase": "foster innovation"
+    },
+    {
+      "id": "col:innovation_stifle_innovation",
+      "phrase": "stifle innovation"
+    },
+    {
+      "id": "col:innovation_technological_innovation",
+      "phrase": "technological innovation"
+    },
+    {
+      "id": "col:innovation_a_hub_of_innovation",
+      "phrase": "a hub of innovation"
+    },
+    {
+      "id": "col:innovation_grassroots_innovation",
+      "phrase": "grassroots innovation"
+    },
+    {
+      "id": "col:innovation_embrace_innovation",
+      "phrase": "embrace innovation"
+    },
+    {
+      "id": "col:efficiency_energy_efficiency",
+      "phrase": "energy efficiency"
+    },
+    {
+      "id": "col:efficiency_enhance_efficiency",
+      "phrase": "enhance efficiency"
+    },
+    {
+      "id": "col:efficiency_compromise_efficiency",
+      "phrase": "compromise efficiency"
+    },
+    {
+      "id": "col:efficiency_greater_efficiency",
+      "phrase": "greater efficiency"
+    },
+    {
+      "id": "col:efficiency_efficiency_gains",
+      "phrase": "efficiency gains"
+    },
+    {
+      "id": "col:efficiency_operate_at_peak_efficiency",
+      "phrase": "operate at peak efficiency"
+    },
+    {
+      "id": "col:privacy_invade_one_s_privacy",
+      "phrase": "invade one's privacy"
+    },
+    {
+      "id": "col:privacy_safeguard_user_privacy",
+      "phrase": "safeguard user privacy"
+    },
+    {
+      "id": "col:privacy_data_privacy",
+      "phrase": "data privacy"
+    },
+    {
+      "id": "col:privacy_privacy_concerns",
+      "phrase": "privacy concerns"
+    },
+    {
+      "id": "col:privacy_compromise_privacy",
+      "phrase": "compromise privacy"
+    },
+    {
+      "id": "col:privacy_a_privacy_breach",
+      "phrase": "a privacy breach"
+    },
+    {
+      "id": "col:security_job_security",
+      "phrase": "job security"
+    },
+    {
+      "id": "col:security_bolster_security",
+      "phrase": "bolster security"
+    },
+    {
+      "id": "col:security_jeopardise_security",
+      "phrase": "jeopardise security"
+    },
+    {
+      "id": "col:security_food_security",
+      "phrase": "food security"
+    },
+    {
+      "id": "col:security_security_measures",
+      "phrase": "security measures"
+    },
+    {
+      "id": "col:security_a_false_sense_of_security",
+      "phrase": "a false sense of security"
+    },
+    {
+      "id": "col:misinformation_combat_misinformation",
+      "phrase": "combat misinformation"
+    },
+    {
+      "id": "col:misinformation_spread_misinformation",
+      "phrase": "spread misinformation"
+    },
+    {
+      "id": "col:misinformation_rampant_misinformation",
+      "phrase": "rampant misinformation"
+    },
+    {
+      "id": "col:misinformation_the_proliferation_of_misinformation",
+      "phrase": "the proliferation of misinformation"
+    },
+    {
+      "id": "col:misinformation_fall_prey_to_misinformation",
+      "phrase": "fall prey to misinformation"
+    },
+    {
+      "id": "col:misinformation_debunk_misinformation",
+      "phrase": "debunk misinformation"
+    },
+    {
+      "id": "col:potential_realise_one_s_full_potential",
+      "phrase": "realise one's full potential"
+    },
+    {
+      "id": "col:potential_unlock_the_potential_of",
+      "phrase": "unlock the potential of"
+    },
+    {
+      "id": "col:potential_enormous_potential",
+      "phrase": "enormous potential"
+    },
+    {
+      "id": "col:potential_have_the_potential_to",
+      "phrase": "have the potential to"
+    },
+    {
+      "id": "col:potential_economic_potential",
+      "phrase": "economic potential"
+    },
+    {
+      "id": "col:potential_assess_the_potential_risks",
+      "phrase": "assess the potential risks"
+    },
+    {
+      "id": "col:literacy_digital_literacy",
+      "phrase": "digital literacy"
+    },
+    {
+      "id": "col:literacy_the_literacy_rate",
+      "phrase": "the literacy rate"
+    },
+    {
+      "id": "col:literacy_promote_literacy",
+      "phrase": "promote literacy"
+    },
+    {
+      "id": "col:literacy_literacy_skills",
+      "phrase": "literacy skills"
+    },
+    {
+      "id": "col:literacy_literacy_levels",
+      "phrase": "literacy levels"
+    },
+    {
+      "id": "col:literacy_functional_literacy",
+      "phrase": "functional literacy"
+    },
+    {
+      "id": "col:pose_pose_a_threat_to",
+      "phrase": "pose a threat to"
+    },
+    {
+      "id": "col:pose_pose_a_challenge",
+      "phrase": "pose a challenge"
+    },
+    {
+      "id": "col:pose_pose_a_serious_risk",
+      "phrase": "pose a serious risk"
+    },
+    {
+      "id": "col:pose_pose_ethical_questions",
+      "phrase": "pose ethical questions"
+    },
+    {
+      "id": "col:pose_pose_a_major_obstacle_to",
+      "phrase": "pose a major obstacle to"
+    },
+    {
+      "id": "col:pose_pose_no_harm",
+      "phrase": "pose no harm"
+    },
+    {
+      "id": "col:enhance_enhance_the_quality_of",
+      "phrase": "enhance the quality of"
+    },
+    {
+      "id": "col:enhance_enhance_productivity",
+      "phrase": "enhance productivity"
+    },
+    {
+      "id": "col:enhance_enhance_security",
+      "phrase": "enhance security"
+    },
+    {
+      "id": "col:enhance_enhance_the_learning_experience",
+      "phrase": "enhance the learning experience"
+    },
+    {
+      "id": "col:enhance_enhance_reputation",
+      "phrase": "enhance reputation"
+    },
+    {
+      "id": "col:enhance_enhance_collaboration",
+      "phrase": "enhance collaboration"
+    },
+    {
+      "id": "col:implement_implement_reforms",
+      "phrase": "implement reforms"
+    },
+    {
+      "id": "col:implement_implement_strict_regulations",
+      "phrase": "implement strict regulations"
+    },
+    {
+      "id": "col:implement_implement_a_ban",
+      "phrase": "implement a ban"
+    },
+    {
+      "id": "col:implement_implement_practical_solutions",
+      "phrase": "implement practical solutions"
+    },
+    {
+      "id": "col:implement_effectively_implement",
+      "phrase": "effectively implement"
+    },
+    {
+      "id": "col:implement_implement_sweeping_changes",
+      "phrase": "implement sweeping changes"
+    },
+    {
+      "id": "col:accelerate_accelerate_the_transition_to",
+      "phrase": "accelerate the transition to"
+    },
+    {
+      "id": "col:accelerate_accelerate_climate_change",
+      "phrase": "accelerate climate change"
+    },
+    {
+      "id": "col:accelerate_accelerate_innovation",
+      "phrase": "accelerate innovation"
+    },
+    {
+      "id": "col:accelerate_accelerate_the_pace_of",
+      "phrase": "accelerate the pace of"
+    },
+    {
+      "id": "col:accelerate_accelerate_adoption",
+      "phrase": "accelerate adoption"
+    },
+    {
+      "id": "col:accelerate_accelerate_rapidly",
+      "phrase": "accelerate rapidly"
+    },
+    {
+      "id": "col:bridge_bridge_the_digital_divide",
+      "phrase": "bridge the digital divide"
+    },
+    {
+      "id": "col:bridge_bridge_the_gap_between",
+      "phrase": "bridge the gap between"
+    },
+    {
+      "id": "col:bridge_bridge_cultural_differences",
+      "phrase": "bridge cultural differences"
+    },
+    {
+      "id": "col:bridge_bridge_the_funding_gap",
+      "phrase": "bridge the funding gap"
+    },
+    {
+      "id": "col:bridge_bridge_divisions",
+      "phrase": "bridge divisions"
+    },
+    {
+      "id": "col:bridge_bridge_the_transition",
+      "phrase": "bridge the transition"
+    }
+  ],
+  "energy": [
+    {
+      "id": "col:demand_growing_demand_for",
+      "phrase": "growing demand for"
+    },
+    {
+      "id": "col:demand_meet_the_demand_for",
+      "phrase": "meet the demand for"
+    },
+    {
+      "id": "col:demand_unprecedented_demand_for",
+      "phrase": "unprecedented demand for"
+    },
+    {
+      "id": "col:demand_curb_demand",
+      "phrase": "curb demand"
+    },
+    {
+      "id": "col:demand_stimulate_demand",
+      "phrase": "stimulate demand"
+    },
+    {
+      "id": "col:demand_peak_demand",
+      "phrase": "peak demand"
+    },
+    {
+      "id": "col:investment_substantial_investment_in",
+      "phrase": "substantial investment in"
+    },
+    {
+      "id": "col:investment_attract_foreign_investment",
+      "phrase": "attract foreign investment"
+    },
+    {
+      "id": "col:investment_long_term_investment",
+      "phrase": "long-term investment"
+    },
+    {
+      "id": "col:investment_deter_investment",
+      "phrase": "deter investment"
+    },
+    {
+      "id": "col:investment_yield_a_return_on_investment",
+      "phrase": "yield a return on investment"
+    },
+    {
+      "id": "col:investment_channel_investment_into",
+      "phrase": "channel investment into"
+    },
+    {
+      "id": "col:subsidy_grant_subsidies_to",
+      "phrase": "grant subsidies to"
+    },
+    {
+      "id": "col:subsidy_phase_out_fossil_fuel_subsidies",
+      "phrase": "phase out fossil-fuel subsidies"
+    },
+    {
+      "id": "col:subsidy_agricultural_subsidies",
+      "phrase": "agricultural subsidies"
+    },
+    {
+      "id": "col:subsidy_rely_on_subsidies",
+      "phrase": "rely on subsidies"
+    },
+    {
+      "id": "col:subsidy_generous_subsidies",
+      "phrase": "generous subsidies"
+    },
+    {
+      "id": "col:subsidy_curtail_subsidies",
+      "phrase": "curtail subsidies"
+    },
+    {
+      "id": "col:efficiency_energy_efficiency",
+      "phrase": "energy efficiency"
+    },
+    {
+      "id": "col:efficiency_enhance_efficiency",
+      "phrase": "enhance efficiency"
+    },
+    {
+      "id": "col:efficiency_compromise_efficiency",
+      "phrase": "compromise efficiency"
+    },
+    {
+      "id": "col:efficiency_greater_efficiency",
+      "phrase": "greater efficiency"
+    },
+    {
+      "id": "col:efficiency_efficiency_gains",
+      "phrase": "efficiency gains"
+    },
+    {
+      "id": "col:efficiency_operate_at_peak_efficiency",
+      "phrase": "operate at peak efficiency"
+    },
+    {
+      "id": "col:emission_curb_carbon_emissions",
+      "phrase": "curb carbon emissions"
+    },
+    {
+      "id": "col:emission_greenhouse_gas_emissions",
+      "phrase": "greenhouse gas emissions"
+    },
+    {
+      "id": "col:emission_emission_targets",
+      "phrase": "emission targets"
+    },
+    {
+      "id": "col:emission_emission_standards",
+      "phrase": "emission standards"
+    },
+    {
+      "id": "col:emission_offset_emissions",
+      "phrase": "offset emissions"
+    },
+    {
+      "id": "col:emission_zero_emissions",
+      "phrase": "zero emissions"
+    },
+    {
+      "id": "col:energy_renewable_energy",
+      "phrase": "renewable energy"
+    },
+    {
+      "id": "col:energy_harness_energy",
+      "phrase": "harness energy"
+    },
+    {
+      "id": "col:energy_conserve_energy",
+      "phrase": "conserve energy"
+    },
+    {
+      "id": "col:energy_energy_consumption",
+      "phrase": "energy consumption"
+    },
+    {
+      "id": "col:energy_energy_security",
+      "phrase": "energy security"
+    },
+    {
+      "id": "col:energy_energy_transition",
+      "phrase": "energy transition"
+    },
+    {
+      "id": "col:capacity_expand_capacity",
+      "phrase": "expand capacity"
+    },
+    {
+      "id": "col:capacity_operate_at_full_capacity",
+      "phrase": "operate at full capacity"
+    },
+    {
+      "id": "col:capacity_productive_capacity",
+      "phrase": "productive capacity"
+    },
+    {
+      "id": "col:capacity_exceed_capacity",
+      "phrase": "exceed capacity"
+    },
+    {
+      "id": "col:capacity_capacity_building",
+      "phrase": "capacity-building"
+    },
+    {
+      "id": "col:capacity_the_capacity_to",
+      "phrase": "the capacity to"
+    }
+  ],
+  "work": [
+    {
+      "id": "col:pressure_place_immense_pressure_on",
+      "phrase": "place immense pressure on"
+    },
+    {
+      "id": "col:pressure_alleviate_the_pressure_on",
+      "phrase": "alleviate the pressure on"
+    },
+    {
+      "id": "col:pressure_mounting_pressure",
+      "phrase": "mounting pressure"
+    },
+    {
+      "id": "col:pressure_buckle_under_pressure",
+      "phrase": "buckle under pressure"
+    },
+    {
+      "id": "col:pressure_peer_pressure",
+      "phrase": "peer pressure"
+    },
+    {
+      "id": "col:pressure_yield_to_public_pressure",
+      "phrase": "yield to public pressure"
+    },
+    {
+      "id": "col:opportunity_seize_an_opportunity",
+      "phrase": "seize an opportunity"
+    },
+    {
+      "id": "col:opportunity_equal_opportunities",
+      "phrase": "equal opportunities"
+    },
+    {
+      "id": "col:opportunity_create_opportunities_for",
+      "phrase": "create opportunities for"
+    },
+    {
+      "id": "col:opportunity_a_golden_opportunity",
+      "phrase": "a golden opportunity"
+    },
+    {
+      "id": "col:opportunity_squander_a_valuable_opportunity",
+      "phrase": "squander a valuable opportunity"
+    },
+    {
+      "id": "col:opportunity_employment_opportunities",
+      "phrase": "employment opportunities"
+    },
+    {
+      "id": "col:skill_acquire_essential_skills",
+      "phrase": "acquire essential skills"
+    },
+    {
+      "id": "col:skill_transferable_skills",
+      "phrase": "transferable skills"
+    },
+    {
+      "id": "col:skill_interpersonal_skills",
+      "phrase": "interpersonal skills"
+    },
+    {
+      "id": "col:skill_hone_one_s_skills",
+      "phrase": "hone one's skills"
+    },
+    {
+      "id": "col:skill_vocational_skills",
+      "phrase": "vocational skills"
+    },
+    {
+      "id": "col:skill_skills_shortage",
+      "phrase": "skills shortage"
+    },
+    {
+      "id": "col:technology_cutting_edge_technology",
+      "phrase": "cutting-edge technology"
+    },
+    {
+      "id": "col:technology_harness_technology",
+      "phrase": "harness technology"
+    },
+    {
+      "id": "col:technology_embrace_new_technology",
+      "phrase": "embrace new technology"
+    },
+    {
+      "id": "col:technology_disruptive_technology",
+      "phrase": "disruptive technology"
+    },
+    {
+      "id": "col:technology_obsolete_technology",
+      "phrase": "obsolete technology"
+    },
+    {
+      "id": "col:technology_over_reliance_on_technology",
+      "phrase": "over-reliance on technology"
+    },
+    {
+      "id": "col:unemployment_youth_unemployment",
+      "phrase": "youth unemployment"
+    },
+    {
+      "id": "col:unemployment_curb_unemployment",
+      "phrase": "curb unemployment"
+    },
+    {
+      "id": "col:unemployment_structural_unemployment",
+      "phrase": "structural unemployment"
+    },
+    {
+      "id": "col:unemployment_the_unemployment_rate",
+      "phrase": "the unemployment rate"
+    },
+    {
+      "id": "col:unemployment_lead_to_unemployment",
+      "phrase": "lead to unemployment"
+    },
+    {
+      "id": "col:unemployment_soaring_unemployment",
+      "phrase": "soaring unemployment"
+    },
+    {
+      "id": "col:productivity_boost_productivity",
+      "phrase": "boost productivity"
+    },
+    {
+      "id": "col:productivity_hamper_productivity",
+      "phrase": "hamper productivity"
+    },
+    {
+      "id": "col:productivity_labour_productivity",
+      "phrase": "labour productivity"
+    },
+    {
+      "id": "col:productivity_productivity_gains",
+      "phrase": "productivity gains"
+    },
+    {
+      "id": "col:productivity_stagnant_productivity",
+      "phrase": "stagnant productivity"
+    },
+    {
+      "id": "col:productivity_maximise_productivity",
+      "phrase": "maximise productivity"
+    },
+    {
+      "id": "col:stress_chronic_stress",
+      "phrase": "chronic stress"
+    },
+    {
+      "id": "col:stress_alleviate_stress",
+      "phrase": "alleviate stress"
+    },
+    {
+      "id": "col:stress_cope_with_stress",
+      "phrase": "cope with stress"
+    },
+    {
+      "id": "col:stress_trigger_stress",
+      "phrase": "trigger stress"
+    },
+    {
+      "id": "col:stress_stress_levels",
+      "phrase": "stress levels"
+    },
+    {
+      "id": "col:stress_work_related_stress",
+      "phrase": "work-related stress"
+    },
+    {
+      "id": "col:discipline_maintain_discipline",
+      "phrase": "maintain discipline"
+    },
+    {
+      "id": "col:discipline_strict_discipline",
+      "phrase": "strict discipline"
+    },
+    {
+      "id": "col:discipline_self_discipline",
+      "phrase": "self-discipline"
+    },
+    {
+      "id": "col:discipline_instil_discipline",
+      "phrase": "instil discipline"
+    },
+    {
+      "id": "col:discipline_an_academic_discipline",
+      "phrase": "an academic discipline"
+    },
+    {
+      "id": "col:discipline_impose_discipline",
+      "phrase": "impose discipline"
+    },
+    {
+      "id": "col:challenge_confront_a_daunting_challenge",
+      "phrase": "confront a daunting challenge"
+    },
+    {
+      "id": "col:challenge_pose_a_challenge_to",
+      "phrase": "pose a challenge to"
+    },
+    {
+      "id": "col:challenge_a_formidable_challenge",
+      "phrase": "a formidable challenge"
+    },
+    {
+      "id": "col:challenge_rise_to_the_challenge",
+      "phrase": "rise to the challenge"
+    },
+    {
+      "id": "col:challenge_logistical_challenges",
+      "phrase": "logistical challenges"
+    },
+    {
+      "id": "col:challenge_surmount_a_challenge",
+      "phrase": "surmount a challenge"
+    },
+    {
+      "id": "col:capacity_expand_capacity",
+      "phrase": "expand capacity"
+    },
+    {
+      "id": "col:capacity_operate_at_full_capacity",
+      "phrase": "operate at full capacity"
+    },
+    {
+      "id": "col:capacity_productive_capacity",
+      "phrase": "productive capacity"
+    },
+    {
+      "id": "col:capacity_exceed_capacity",
+      "phrase": "exceed capacity"
+    },
+    {
+      "id": "col:capacity_capacity_building",
+      "phrase": "capacity-building"
+    },
+    {
+      "id": "col:capacity_the_capacity_to",
+      "phrase": "the capacity to"
+    },
+    {
+      "id": "col:prospect_career_prospects",
+      "phrase": "career prospects"
+    },
+    {
+      "id": "col:prospect_bleak_prospects",
+      "phrase": "bleak prospects"
+    },
+    {
+      "id": "col:prospect_bright_prospects",
+      "phrase": "bright prospects"
+    },
+    {
+      "id": "col:prospect_face_the_prospect_of",
+      "phrase": "face the prospect of"
+    },
+    {
+      "id": "col:prospect_boost_prospects_for",
+      "phrase": "boost prospects for"
+    },
+    {
+      "id": "col:prospect_diminish_the_prospect_of",
+      "phrase": "diminish the prospect of"
+    },
+    {
+      "id": "col:employment_stable_employment",
+      "phrase": "stable employment"
+    },
+    {
+      "id": "col:employment_employment_prospects",
+      "phrase": "employment prospects"
+    },
+    {
+      "id": "col:employment_precarious_employment",
+      "phrase": "precarious employment"
+    },
+    {
+      "id": "col:employment_seek_employment",
+      "phrase": "seek employment"
+    },
+    {
+      "id": "col:employment_employment_opportunities",
+      "phrase": "employment opportunities"
+    },
+    {
+      "id": "col:employment_employment_rights",
+      "phrase": "employment rights"
+    },
+    {
+      "id": "col:acquire_acquire_knowledge",
+      "phrase": "acquire knowledge"
+    },
+    {
+      "id": "col:acquire_acquire_a_language",
+      "phrase": "acquire a language"
+    },
+    {
+      "id": "col:acquire_acquire_practical_experience",
+      "phrase": "acquire practical experience"
+    },
+    {
+      "id": "col:acquire_acquire_fluency",
+      "phrase": "acquire fluency"
+    },
+    {
+      "id": "col:acquire_acquire_new_assets",
+      "phrase": "acquire new assets"
+    },
+    {
+      "id": "col:acquire_acquire_a_reputation_for",
+      "phrase": "acquire a reputation for"
+    }
+  ],
+  "culture": [
+    {
+      "id": "col:attitude_shape_public_attitudes_towards",
+      "phrase": "shape public attitudes towards"
+    },
+    {
+      "id": "col:attitude_an_ingrained_attitude_towards",
+      "phrase": "an ingrained attitude towards"
+    },
+    {
+      "id": "col:attitude_adopt_a_positive_attitude",
+      "phrase": "adopt a positive attitude"
+    },
+    {
+      "id": "col:attitude_challenge_prevailing_attitudes",
+      "phrase": "challenge prevailing attitudes"
+    },
+    {
+      "id": "col:attitude_a_complacent_attitude",
+      "phrase": "a complacent attitude"
+    },
+    {
+      "id": "col:attitude_a_dismissive_attitude",
+      "phrase": "a dismissive attitude"
+    },
+    {
+      "id": "col:trend_a_growing_trend_towards",
+      "phrase": "a growing trend towards"
+    },
+    {
+      "id": "col:trend_reverse_a_trend",
+      "phrase": "reverse a trend"
+    },
+    {
+      "id": "col:trend_a_worrying_trend",
+      "phrase": "a worrying trend"
+    },
+    {
+      "id": "col:trend_set_a_trend",
+      "phrase": "set a trend"
+    },
+    {
+      "id": "col:trend_an_irreversible_trend",
+      "phrase": "an irreversible trend"
+    },
+    {
+      "id": "col:trend_reflect_current_trends",
+      "phrase": "reflect current trends"
+    },
+    {
+      "id": "col:diversity_cultural_diversity",
+      "phrase": "cultural diversity"
+    },
+    {
+      "id": "col:diversity_embrace_diversity",
+      "phrase": "embrace diversity"
+    },
+    {
+      "id": "col:diversity_preserve_diversity",
+      "phrase": "preserve diversity"
+    },
+    {
+      "id": "col:diversity_erode_diversity",
+      "phrase": "erode diversity"
+    },
+    {
+      "id": "col:diversity_a_lack_of_diversity",
+      "phrase": "a lack of diversity"
+    },
+    {
+      "id": "col:diversity_rich_diversity",
+      "phrase": "rich diversity"
+    },
+    {
+      "id": "col:heritage_cultural_heritage",
+      "phrase": "cultural heritage"
+    },
+    {
+      "id": "col:heritage_preserve_heritage",
+      "phrase": "preserve heritage"
+    },
+    {
+      "id": "col:heritage_heritage_sites",
+      "phrase": "heritage sites"
+    },
+    {
+      "id": "col:heritage_intangible_heritage",
+      "phrase": "intangible heritage"
+    },
+    {
+      "id": "col:heritage_erode_cultural_heritage",
+      "phrase": "erode cultural heritage"
+    },
+    {
+      "id": "col:heritage_cherish_one_s_heritage",
+      "phrase": "cherish one's heritage"
+    }
+  ],
+  "family": [
+    {
+      "id": "col:responsibility_shoulder_responsibility_for",
+      "phrase": "shoulder responsibility for"
+    },
+    {
+      "id": "col:responsibility_shirk_responsibility",
+      "phrase": "shirk responsibility"
+    },
+    {
+      "id": "col:responsibility_collective_responsibility",
+      "phrase": "collective responsibility"
+    },
+    {
+      "id": "col:responsibility_a_sense_of_responsibility",
+      "phrase": "a sense of responsibility"
+    },
+    {
+      "id": "col:responsibility_civic_responsibility",
+      "phrase": "civic responsibility"
+    },
+    {
+      "id": "col:responsibility_shift_responsibility_onto",
+      "phrase": "shift responsibility onto"
+    }
+  ],
+  "crime": [
+    {
+      "id": "col:evidence_compelling_evidence",
+      "phrase": "compelling evidence"
+    },
+    {
+      "id": "col:evidence_empirical_evidence",
+      "phrase": "empirical evidence"
+    },
+    {
+      "id": "col:evidence_anecdotal_evidence",
+      "phrase": "anecdotal evidence"
+    },
+    {
+      "id": "col:evidence_gather_evidence",
+      "phrase": "gather evidence"
+    },
+    {
+      "id": "col:evidence_corroborate_the_evidence",
+      "phrase": "corroborate the evidence"
+    },
+    {
+      "id": "col:evidence_mounting_evidence",
+      "phrase": "mounting evidence"
+    },
+    {
+      "id": "col:crime_commit_a_crime",
+      "phrase": "commit a crime"
+    },
+    {
+      "id": "col:crime_deter_crime",
+      "phrase": "deter crime"
+    },
+    {
+      "id": "col:crime_juvenile_crime",
+      "phrase": "juvenile crime"
+    },
+    {
+      "id": "col:crime_petty_crime",
+      "phrase": "petty crime"
+    },
+    {
+      "id": "col:crime_combat_crime",
+      "phrase": "combat crime"
+    },
+    {
+      "id": "col:crime_the_crime_rate",
+      "phrase": "the crime rate"
+    },
+    {
+      "id": "col:legislation_enact_legislation",
+      "phrase": "enact legislation"
+    },
+    {
+      "id": "col:legislation_draft_legislation",
+      "phrase": "draft legislation"
+    },
+    {
+      "id": "col:legislation_sweeping_legislation",
+      "phrase": "sweeping legislation"
+    },
+    {
+      "id": "col:legislation_enforce_legislation",
+      "phrase": "enforce legislation"
+    },
+    {
+      "id": "col:legislation_amend_existing_legislation",
+      "phrase": "amend existing legislation"
+    },
+    {
+      "id": "col:legislation_tighter_legislation",
+      "phrase": "tighter legislation"
+    },
+    {
+      "id": "col:prevention_disease_prevention",
+      "phrase": "disease prevention"
+    },
+    {
+      "id": "col:prevention_prevention_strategies",
+      "phrase": "prevention strategies"
+    },
+    {
+      "id": "col:prevention_focus_on_prevention",
+      "phrase": "focus on prevention"
+    },
+    {
+      "id": "col:prevention_prevention_programmes",
+      "phrase": "prevention programmes"
+    },
+    {
+      "id": "col:prevention_invest_in_prevention",
+      "phrase": "invest in prevention"
+    },
+    {
+      "id": "col:prevention_prevention_is_better_than_cure",
+      "phrase": "prevention is better than cure"
+    },
+    {
+      "id": "col:enforce_enforce_the_law",
+      "phrase": "enforce the law"
+    },
+    {
+      "id": "col:enforce_enforce_safety_standards",
+      "phrase": "enforce safety standards"
+    },
+    {
+      "id": "col:enforce_enforce_regulations",
+      "phrase": "enforce regulations"
+    },
+    {
+      "id": "col:enforce_strictly_enforce",
+      "phrase": "strictly enforce"
+    },
+    {
+      "id": "col:enforce_enforce_speed_limits",
+      "phrase": "enforce speed limits"
+    },
+    {
+      "id": "col:enforce_enforce_consumer_protection",
+      "phrase": "enforce consumer protection"
+    }
+  ],
+  "globalisation": [
+    {
+      "id": "col:economy_boost_the_economy",
+      "phrase": "boost the economy"
+    },
+    {
+      "id": "col:economy_a_thriving_economy",
+      "phrase": "a thriving economy"
+    },
+    {
+      "id": "col:economy_a_stagnant_economy",
+      "phrase": "a stagnant economy"
+    },
+    {
+      "id": "col:economy_diversify_the_economy",
+      "phrase": "diversify the economy"
+    },
+    {
+      "id": "col:economy_a_circular_economy",
+      "phrase": "a circular economy"
+    },
+    {
+      "id": "col:economy_cripple_the_economy",
+      "phrase": "cripple the economy"
+    },
+    {
+      "id": "col:globalisation_the_advent_of_globalisation",
+      "phrase": "the advent of globalisation"
+    },
+    {
+      "id": "col:globalisation_benefit_from_globalisation",
+      "phrase": "benefit from globalisation"
+    },
+    {
+      "id": "col:globalisation_economic_globalisation",
+      "phrase": "economic globalisation"
+    },
+    {
+      "id": "col:globalisation_a_backlash_against_globalisation",
+      "phrase": "a backlash against globalisation"
+    },
+    {
+      "id": "col:globalisation_accelerated_by_globalisation",
+      "phrase": "accelerated by globalisation"
+    },
+    {
+      "id": "col:globalisation_the_homogenising_effect_of_globalisation",
+      "phrase": "the homogenising effect of globalisation"
+    },
+    {
+      "id": "col:migration_rural_to_urban_migration",
+      "phrase": "rural-to-urban migration"
+    },
+    {
+      "id": "col:migration_mass_migration",
+      "phrase": "mass migration"
+    },
+    {
+      "id": "col:migration_stem_migration",
+      "phrase": "stem migration"
+    },
+    {
+      "id": "col:migration_migration_patterns",
+      "phrase": "migration patterns"
+    },
+    {
+      "id": "col:migration_skilled_migration",
+      "phrase": "skilled migration"
+    },
+    {
+      "id": "col:migration_fuel_migration",
+      "phrase": "fuel migration"
+    },
+    {
+      "id": "col:barrier_overcome_barriers_to",
+      "phrase": "overcome barriers to"
+    },
+    {
+      "id": "col:barrier_language_barriers",
+      "phrase": "language barriers"
+    },
+    {
+      "id": "col:barrier_pose_a_barrier_to",
+      "phrase": "pose a barrier to"
+    },
+    {
+      "id": "col:barrier_insurmountable_barriers",
+      "phrase": "insurmountable barriers"
+    },
+    {
+      "id": "col:barrier_lower_barriers",
+      "phrase": "lower barriers"
+    },
+    {
+      "id": "col:barrier_barriers_to_entry",
+      "phrase": "barriers to entry"
+    }
+  ],
+  "food": [
+    {
+      "id": "col:health_mental_health",
+      "phrase": "mental health"
+    },
+    {
+      "id": "col:health_jeopardise_one_s_health",
+      "phrase": "jeopardise one's health"
+    },
+    {
+      "id": "col:health_public_health",
+      "phrase": "public health"
+    },
+    {
+      "id": "col:health_safeguard_public_health",
+      "phrase": "safeguard public health"
+    },
+    {
+      "id": "col:health_deteriorating_health",
+      "phrase": "deteriorating health"
+    },
+    {
+      "id": "col:health_detrimental_to_health",
+      "phrase": "detrimental to health"
+    },
+    {
+      "id": "col:obesity_childhood_obesity",
+      "phrase": "childhood obesity"
+    },
+    {
+      "id": "col:obesity_tackle_obesity",
+      "phrase": "tackle obesity"
+    },
+    {
+      "id": "col:obesity_the_obesity_epidemic",
+      "phrase": "the obesity epidemic"
+    },
+    {
+      "id": "col:obesity_contribute_to_obesity",
+      "phrase": "contribute to obesity"
+    },
+    {
+      "id": "col:obesity_obesity_rates",
+      "phrase": "obesity rates"
+    },
+    {
+      "id": "col:obesity_fuel_obesity",
+      "phrase": "fuel obesity"
+    },
+    {
+      "id": "col:nutrition_adequate_nutrition",
+      "phrase": "adequate nutrition"
+    },
+    {
+      "id": "col:nutrition_poor_nutrition",
+      "phrase": "poor nutrition"
+    },
+    {
+      "id": "col:nutrition_nutrition_standards",
+      "phrase": "nutrition standards"
+    },
+    {
+      "id": "col:nutrition_nutrition_education",
+      "phrase": "nutrition education"
+    },
+    {
+      "id": "col:nutrition_improve_nutrition",
+      "phrase": "improve nutrition"
+    },
+    {
+      "id": "col:nutrition_nutrition_labelling",
+      "phrase": "nutrition labelling"
+    },
+    {
+      "id": "col:waste_electronic_waste",
+      "phrase": "electronic waste"
+    },
+    {
+      "id": "col:waste_minimise_waste",
+      "phrase": "minimise waste"
+    },
+    {
+      "id": "col:waste_dispose_of_waste",
+      "phrase": "dispose of waste"
+    },
+    {
+      "id": "col:waste_waste_management",
+      "phrase": "waste management"
+    },
+    {
+      "id": "col:waste_generate_waste",
+      "phrase": "generate waste"
+    },
+    {
+      "id": "col:waste_zero_waste",
+      "phrase": "zero-waste"
+    }
+  ],
+  "transport": [
+    {
+      "id": "col:infrastructure_ageing_infrastructure",
+      "phrase": "ageing infrastructure"
+    },
+    {
+      "id": "col:infrastructure_upgrade_infrastructure",
+      "phrase": "upgrade infrastructure"
+    },
+    {
+      "id": "col:infrastructure_transport_infrastructure",
+      "phrase": "transport infrastructure"
+    },
+    {
+      "id": "col:infrastructure_resilient_infrastructure",
+      "phrase": "resilient infrastructure"
+    },
+    {
+      "id": "col:infrastructure_strain_infrastructure",
+      "phrase": "strain infrastructure"
+    },
+    {
+      "id": "col:infrastructure_inadequate_infrastructure",
+      "phrase": "inadequate infrastructure"
+    },
+    {
+      "id": "col:congestion_alleviate_traffic_congestion",
+      "phrase": "alleviate traffic congestion"
+    },
+    {
+      "id": "col:congestion_severe_congestion",
+      "phrase": "severe congestion"
+    },
+    {
+      "id": "col:congestion_a_congestion_charge",
+      "phrase": "a congestion charge"
+    },
+    {
+      "id": "col:congestion_exacerbate_congestion",
+      "phrase": "exacerbate congestion"
+    },
+    {
+      "id": "col:congestion_peak_hour_congestion",
+      "phrase": "peak-hour congestion"
+    },
+    {
+      "id": "col:congestion_tackle_congestion",
+      "phrase": "tackle congestion"
+    },
+    {
+      "id": "col:transport_public_transport",
+      "phrase": "public transport"
+    },
+    {
+      "id": "col:transport_transport_network",
+      "phrase": "transport network"
+    },
+    {
+      "id": "col:transport_subsidise_public_transport",
+      "phrase": "subsidise public transport"
+    },
+    {
+      "id": "col:transport_transport_modes",
+      "phrase": "transport modes"
+    },
+    {
+      "id": "col:transport_freight_transport",
+      "phrase": "freight transport"
+    },
+    {
+      "id": "col:transport_transport_links",
+      "phrase": "transport links"
+    }
+  ],
+  "animals": [
+    {
+      "id": "col:biodiversity_biodiversity_loss",
+      "phrase": "biodiversity loss"
+    },
+    {
+      "id": "col:biodiversity_preserve_biodiversity",
+      "phrase": "preserve biodiversity"
+    },
+    {
+      "id": "col:biodiversity_threaten_biodiversity",
+      "phrase": "threaten biodiversity"
+    },
+    {
+      "id": "col:biodiversity_marine_biodiversity",
+      "phrase": "marine biodiversity"
+    },
+    {
+      "id": "col:biodiversity_restore_biodiversity",
+      "phrase": "restore biodiversity"
+    },
+    {
+      "id": "col:biodiversity_biodiversity_hotspot",
+      "phrase": "biodiversity hotspot"
+    },
+    {
+      "id": "col:conservation_wildlife_conservation",
+      "phrase": "wildlife conservation"
+    },
+    {
+      "id": "col:conservation_conservation_efforts",
+      "phrase": "conservation efforts"
+    },
+    {
+      "id": "col:conservation_fund_conservation",
+      "phrase": "fund conservation"
+    },
+    {
+      "id": "col:conservation_conservation_programmes",
+      "phrase": "conservation programmes"
+    },
+    {
+      "id": "col:conservation_conservation_of_energy",
+      "phrase": "conservation of energy"
+    },
+    {
+      "id": "col:conservation_habitat_conservation",
+      "phrase": "habitat conservation"
+    },
+    {
+      "id": "col:habitat_habitat_destruction",
+      "phrase": "habitat destruction"
+    },
+    {
+      "id": "col:habitat_habitat_loss",
+      "phrase": "habitat loss"
+    },
+    {
+      "id": "col:habitat_natural_habitat",
+      "phrase": "natural habitat"
+    },
+    {
+      "id": "col:habitat_restore_habitats",
+      "phrase": "restore habitats"
+    },
+    {
+      "id": "col:habitat_habitat_fragmentation",
+      "phrase": "habitat fragmentation"
+    },
+    {
+      "id": "col:habitat_encroach_on_natural_habitats",
+      "phrase": "encroach on natural habitats"
+    },
+    {
+      "id": "col:ecosystem_a_fragile_ecosystem",
+      "phrase": "a fragile ecosystem"
+    },
+    {
+      "id": "col:ecosystem_disrupt_an_ecosystem",
+      "phrase": "disrupt an ecosystem"
+    },
+    {
+      "id": "col:ecosystem_marine_ecosystems",
+      "phrase": "marine ecosystems"
+    },
+    {
+      "id": "col:ecosystem_restore_ecosystems",
+      "phrase": "restore ecosystems"
+    },
+    {
+      "id": "col:ecosystem_ecosystem_collapse",
+      "phrase": "ecosystem collapse"
+    },
+    {
+      "id": "col:ecosystem_ecosystem_services",
+      "phrase": "ecosystem services"
+    }
+  ],
+  "history": [
+    {
+      "id": "col:heritage_cultural_heritage",
+      "phrase": "cultural heritage"
+    },
+    {
+      "id": "col:heritage_preserve_heritage",
+      "phrase": "preserve heritage"
+    },
+    {
+      "id": "col:heritage_heritage_sites",
+      "phrase": "heritage sites"
+    },
+    {
+      "id": "col:heritage_intangible_heritage",
+      "phrase": "intangible heritage"
+    },
+    {
+      "id": "col:heritage_erode_cultural_heritage",
+      "phrase": "erode cultural heritage"
+    },
+    {
+      "id": "col:heritage_cherish_one_s_heritage",
+      "phrase": "cherish one's heritage"
+    }
+  ]
+}

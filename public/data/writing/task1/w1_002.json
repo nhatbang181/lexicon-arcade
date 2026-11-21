@@ -1,0 +1,101 @@
+{
+  "id": "w1:002",
+  "kind": "bar",
+  "topic": "education",
+  "difficulty": 2,
+  "prompt": "The bar chart below compares the average weekly hours of independent study across five subject disciplines for undergraduate and postgraduate students at Northbridge University. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Average Weekly Independent Study Hours by Discipline at Northbridge University",
+    "unit": "hours",
+    "xLabel": "Subject Discipline",
+    "yLabel": "Weekly Study Hours",
+    "categories": [
+      "Engineering",
+      "Medicine",
+      "Law",
+      "Economics",
+      "Humanities"
+    ],
+    "series": [
+      {
+        "name": "Undergraduate",
+        "values": [
+          22,
+          26,
+          18,
+          16,
+          14
+        ]
+      },
+      {
+        "name": "Postgraduate",
+        "values": [
+          30,
+          34,
+          29,
+          23,
+          21
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Postgraduate students spent noticeably more time on independent study than undergraduates in every subject discipline.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Medicine required the highest weekly study hours at both degree levels (26 hours for undergraduates and 34 for postgraduates).",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "comparison",
+      "textEn": "Law exhibited the largest difference between the two levels, jumping by 11 hours from 18 to 29 hours per week.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Humanities recorded the fewest study hours for both groups (14 and 21 hours respectively).",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "grouping",
+      "textEn": "Medicine, Engineering, and postgraduate Law clustered near the top of the workload spectrum, whereas Economics and Humanities sat well below them.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, postgraduate students devoted considerably more time to independent study than undergraduates across all five disciplines. Medicine demanded the heaviest workload at both levels, whereas Humanities consistently required the least, and Law showed the widest gap between cohorts.",
+    "In general, study hours followed an identical disciplinary ranking for both groups, with vocational and technical subjects outpacing Economics and Humanities. While every postgraduate cohort studied longer, the jump was particularly pronounced in Law.",
+    "Taken as a whole, independent study time was consistently higher at postgraduate level regardless of subject. Medicine and Engineering topped the figures for both cohorts, in contrast to the lighter schedules recorded in Humanities and Economics."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "across all five disciplines",
+    "demanded the heaviest workload",
+    "widest gap between cohorts",
+    "in contrast to"
+  ],
+  "band8Model": {
+    "text": "The bar chart illustrates the average number of hours per week that undergraduate and postgraduate students at Northbridge University spent on independent study across five disciplines.\n\nOverall, postgraduates studied significantly longer than undergraduates in every subject area. Medicine placed the greatest demands on students at both levels, whereas Humanities registered the lowest figures, and Law stood out for displaying the steepest jump between degree stages.\n\nAmong the heavier disciplines, Medicine led both cohorts, rising from 26 hours weekly for undergraduates to 34 hours for postgraduates, an eight-hour difference. Engineering followed an identical eight-hour gap, increasing from 22 hours to 30 hours. Law displayed the widest disparity of all: undergraduates averaged 18 hours, but postgraduates committed 29 hours, an increase of 11 hours that brought Law almost level with Engineering.\n\nBy contrast, Economics and Humanities required noticeably lighter independent workloads, though both rose by exactly 7 hours at postgraduate level. Undergraduate study averaged 16 hours in Economics and 14 hours in Humanities, climbing to 23 hours and 21 hours respectively among postgraduates.",
+    "wordCount": 171
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

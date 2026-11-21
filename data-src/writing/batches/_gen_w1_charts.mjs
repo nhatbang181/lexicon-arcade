@@ -1,0 +1,1127 @@
+#!/usr/bin/env node
+/**
+ * Generator for data-src/writing/batches/t1_01_charts.json
+ * Produces 14 original IELTS Academic Writing Task 1 visuals (w1:001..w1:014):
+ * - w1:001..w1:004: bar
+ * - w1:005..w1:008: line
+ * - w1:009..w1:011: pie
+ * - w1:012..w1:014: table
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+
+const PROVENANCE = {
+  createdBy: 'llm+review',
+  source: 'llm:gemini-4-neon@2026-11-21',
+  license: 'own',
+  qa: { schema: 'pass', verifier: 'pass', blindSolve: 'na' },
+};
+
+function countWords(str) {
+  return String(str || '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+}
+
+const RAW_ITEMS = [
+  // =========================================================================
+  // BAR CHARTS: w1:001 .. w1:004
+  // =========================================================================
+  {
+    id: 'w1:001',
+    kind: 'bar',
+    topic: 'energy',
+    difficulty: 1,
+    prompt:
+      'The bar chart below shows the percentage of electricity generated from renewable sources in five regions in 2010 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Share of Electricity Generated from Renewable Sources by Region (2010 vs 2024)',
+      unit: '%',
+      xLabel: 'Region',
+      yLabel: 'Share of Total Electricity (%)',
+      categories: ['Nordvale', 'Suncoast', 'Highland', 'Midplain', 'Eastbay'],
+      series: [
+        { name: '2010', values: [42, 18, 29, 12, 8] },
+        { name: '2024', values: [78, 54, 61, 34, 21] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'All five regions increased their reliance on renewable electricity substantially between 2010 and 2024.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Nordvale maintained a clear lead in both years, reaching 78% by 2024.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'change',
+        textEn: 'Suncoast recorded the sharpest proportional expansion, tripling its renewable share from 18% to 54%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'lowest',
+        textEn: 'Eastbay trailed every other region in both years despite climbing from 8% to 21%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'By 2024, Nordvale, Highland, and Suncoast all derived over half of their electricity from renewables, whereas Midplain and Eastbay remained well below half.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, every region expanded its renewable electricity share markedly between 2010 and 2024, while the relative ranking across the five areas remained completely unchanged. Nordvale stayed well ahead throughout, whereas Eastbay consistently lagged behind.',
+      'In general, renewable generation grew sharply across all five regions over the fourteen-year period, with three regions surpassing the halfway mark by the end. Despite notable gains everywhere, a wide gap persisted between the leading and trailing regions.',
+      'Taken as a whole, the chart reveals universal progress towards renewable electricity without any change in regional hierarchy. Nordvale and Highland led the transition, while Suncoast achieved the steepest catch-up growth and Eastbay stayed at the bottom.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'remained completely unchanged',
+      'well ahead throughout',
+      'lagged behind',
+      'wide gap persisted',
+    ],
+    modelText: `The bar chart compares the proportion of total electricity produced from renewable sources across five regions in 2010 and 2024.
+
+Overall, every region recorded substantial growth in renewable electricity over the period, yet the ranking among the five regions remained unchanged. Nordvale consistently led by a clear margin, while Eastbay stayed at the bottom despite more than doubling its share.
+
+In 2010, Nordvale was already well ahead at 42%, followed by Highland at 29% and Suncoast at 18%. By 2024, all three had crossed the halfway mark: Nordvale surged by 36 percentage points to 78%, Highland rose by 32 points to 61%, and Suncoast likewise gained 36 points to reach 54%, tripling its earlier proportion.
+
+The remaining two regions started from much lower bases and continued to trail markedly. Midplain nearly tripled its renewable contribution from 12% in 2010 to 34% in 2024, an increase of 22 percentage points. Eastbay showed the smallest absolute rise, climbing by 13 points from 8% to 21%, leaving it 57 percentage points behind Nordvale.`,
+  },
+
+  {
+    id: 'w1:002',
+    kind: 'bar',
+    topic: 'education',
+    difficulty: 2,
+    prompt:
+      'The bar chart below compares the average weekly hours of independent study across five subject disciplines for undergraduate and postgraduate students at Northbridge University. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Average Weekly Independent Study Hours by Discipline at Northbridge University',
+      unit: 'hours',
+      xLabel: 'Subject Discipline',
+      yLabel: 'Weekly Study Hours',
+      categories: ['Engineering', 'Medicine', 'Law', 'Economics', 'Humanities'],
+      series: [
+        { name: 'Undergraduate', values: [22, 26, 18, 16, 14] },
+        { name: 'Postgraduate', values: [30, 34, 29, 23, 21] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'Postgraduate students spent noticeably more time on independent study than undergraduates in every subject discipline.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Medicine required the highest weekly study hours at both degree levels (26 hours for undergraduates and 34 for postgraduates).',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'comparison',
+        textEn: 'Law exhibited the largest difference between the two levels, jumping by 11 hours from 18 to 29 hours per week.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'lowest',
+        textEn: 'Humanities recorded the fewest study hours for both groups (14 and 21 hours respectively).',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'grouping',
+        textEn: 'Medicine, Engineering, and postgraduate Law clustered near the top of the workload spectrum, whereas Economics and Humanities sat well below them.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, postgraduate students devoted considerably more time to independent study than undergraduates across all five disciplines. Medicine demanded the heaviest workload at both levels, whereas Humanities consistently required the least, and Law showed the widest gap between cohorts.',
+      'In general, study hours followed an identical disciplinary ranking for both groups, with vocational and technical subjects outpacing Economics and Humanities. While every postgraduate cohort studied longer, the jump was particularly pronounced in Law.',
+      'Taken as a whole, independent study time was consistently higher at postgraduate level regardless of subject. Medicine and Engineering topped the figures for both cohorts, in contrast to the lighter schedules recorded in Humanities and Economics.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'across all five disciplines',
+      'demanded the heaviest workload',
+      'widest gap between cohorts',
+      'in contrast to',
+    ],
+    modelText: `The bar chart illustrates the average number of hours per week that undergraduate and postgraduate students at Northbridge University spent on independent study across five disciplines.
+
+Overall, postgraduates studied significantly longer than undergraduates in every subject area. Medicine placed the greatest demands on students at both levels, whereas Humanities registered the lowest figures, and Law stood out for displaying the steepest jump between degree stages.
+
+Among the heavier disciplines, Medicine led both cohorts, rising from 26 hours weekly for undergraduates to 34 hours for postgraduates, an eight-hour difference. Engineering followed an identical eight-hour gap, increasing from 22 hours to 30 hours. Law displayed the widest disparity of all: undergraduates averaged 18 hours, but postgraduates committed 29 hours, an increase of 11 hours that brought Law almost level with Engineering.
+
+By contrast, Economics and Humanities required noticeably lighter independent workloads, though both rose by exactly 7 hours at postgraduate level. Undergraduate study averaged 16 hours in Economics and 14 hours in Humanities, climbing to 23 hours and 21 hours respectively among postgraduates.`,
+  },
+
+  {
+    id: 'w1:003',
+    kind: 'bar',
+    topic: 'transport',
+    difficulty: 4,
+    prompt:
+      'The bar chart below shows the percentage of daily commuters using four different modes of transport in Alderbury, Portvale, Crestholm, and Westmoor. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Daily Commuter Mode Share Across Four Cities',
+      unit: '%',
+      xLabel: 'City',
+      yLabel: 'Share of Commuters (%)',
+      categories: ['Alderbury', 'Portvale', 'Crestholm', 'Westmoor'],
+      series: [
+        { name: 'Private Car', values: [34, 48, 26, 62] },
+        { name: 'Public Transit', values: [44, 31, 46, 22] },
+        { name: 'Cycling', values: [14, 12, 19, 7] },
+        { name: 'Walking', values: [8, 9, 9, 9] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'grouping',
+        textEn: 'The four cities divide clearly into two car-dominated cities (Westmoor and Portvale) and two transit-led cities (Crestholm and Alderbury).',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Westmoor had by far the highest car dependency at 62%, accompanied by the lowest public transit (22%) and cycling (7%) shares.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'comparison',
+        textEn: 'Crestholm had the highest shares of both public transit (46%) and cycling (19%), and the smallest proportion of drivers (26%).',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'lowest',
+        textEn: 'Walking accounted for a uniformly small and almost identical share across all four cities, ranging narrowly between 8% and 9%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'In every city, private cars and public transit together represented roughly three-quarters or more of all daily commutes.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, motorised transport accounted for the vast majority of commutes in all four cities, yet commuter habits split into two distinct patterns: Westmoor and Portvale were predominantly car-reliant, whereas Crestholm and Alderbury depended more heavily on public transit. Walking remained uniformly low everywhere.',
+      'In general, private cars and public transit dominated daily travel across the four cities, while active modes made up a smaller minority. Westmoor stood out for extreme car dependence, in stark contrast to Crestholm, which combined the strongest transit and cycling shares.',
+      'Taken as a whole, the cities form two contrasting profiles, with high car usage paired with weaker transit and cycling adoption in Westmoor and Portvale, and the reverse pattern in Crestholm and Alderbury. Across every location, walking barely varied.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'split into two distinct patterns',
+      'in stark contrast to',
+      'uniformly low everywhere',
+      'barely varied',
+    ],
+    modelText: `The bar chart compares the proportions of daily commuters travelling by private car, public transit, bicycle, and foot in four cities: Alderbury, Portvale, Crestholm, and Westmoor.
+
+Overall, motorised modes dominated commuting everywhere, though the four cities split into two distinct patterns. Westmoor and Portvale were predominantly car-reliant, whereas Crestholm and Alderbury favoured public transit, while walking remained uniformly modest across every location.
+
+Westmoor exhibited by far the heaviest reliance on private cars at 62%, leaving public transit at just 22% and cycling at 7%, the lowest figures for both sustainable modes. Portvale displayed a milder version of this profile, with 48% driving compared with 31% using public transit and 12% cycling.
+
+In stark contrast, public transit was the leading mode in both Crestholm (46%) and Alderbury (44%). Crestholm also recorded the highest cycling share at 19% and the lowest car dependency at 26%, whereas Alderbury saw 34% drive and 14% cycle. Notably, walking showed almost no variation across the four cities, standing at 8% in Alderbury and 9% in each of the other three.`,
+  },
+
+  {
+    id: 'w1:004',
+    kind: 'bar',
+    topic: 'health',
+    difficulty: 5,
+    prompt:
+      'The bar chart below shows the average number of daily portions of fruit and vegetables consumed by men and women across five age brackets in Country A. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Average Daily Fruit and Vegetable Portions by Age Group and Sex in Country A',
+      unit: 'portions/day',
+      xLabel: 'Age Bracket (Years)',
+      yLabel: 'Daily Portions',
+      categories: ['18-24', '25-34', '35-49', '50-64', '65+'],
+      series: [
+        { name: 'Men', values: [2.4, 3.1, 3.6, 4.2, 3.9] },
+        { name: 'Women', values: [3.2, 3.9, 4.5, 5.1, 4.6] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'Daily fruit and vegetable intake rose steadily with age for both sexes until peaking in the 50-64 bracket, before declining slightly among adults aged 65+.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'comparison',
+        textEn: 'Women consumed more daily portions than men in every single age group by a remarkably consistent margin of 0.7 to 0.9 portions.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'highest',
+        textEn: 'Women aged 50-64 recorded the highest consumption overall at 5.1 portions per day, the only group to surpass five portions.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'lowest',
+        textEn: 'Young men aged 18-24 consumed the fewest portions at 2.4 per day, well below young women in the same bracket (3.2).',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'In the oldest bracket (65+), intake dipped modestly for both women (4.6) and men (3.9), yet remained higher than in all brackets under 50.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, women consistently ate more fruit and vegetables than men across every age bracket, maintaining a very steady advantage throughout. For both sexes, consumption climbed progressively with age to peak in late middle age before easing slightly among the oldest adults.',
+      'In general, daily intake followed an almost parallel trajectory for men and women, rising steadily from young adulthood to the 50-64 cohort and dipping mildly thereafter. Women outperformed men in every bracket, with the youngest adults recording the lowest averages.',
+      'Taken as a whole, age and sex both shaped dietary habits in Country A: older adults consumed considerably more portions than younger cohorts, and women outpaced men at every life stage by a consistent margin.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'across every age bracket',
+      'climbed progressively with age',
+      'easing slightly among the oldest adults',
+      'outperformed men in every bracket',
+    ],
+    modelText: `The bar chart compares average daily fruit and vegetable consumption among men and women across five adult age brackets in Country A.
+
+Overall, women consistently ate more daily portions than men in every age group, maintaining a steady advantage throughout. For both sexes, intake climbed progressively from young adulthood to a peak in late middle age before easing slightly among the oldest cohort.
+
+The lowest figures occurred in the 18-24 group, where men averaged just 2.4 portions per day compared with 3.2 for women. Consumption then rose steadily across the next two brackets: men increased from 3.1 portions among those aged 25-34 to 3.6 in the 35-49 bracket, while women advanced from 3.9 to 4.5, widening the sex gap slightly from 0.8 to 0.9 portions.
+
+Both sexes reached their maximum intake in the 50-64 cohort, with women averaging 5.1 portions and men 4.2, making older middle-aged women the sole group to exceed five daily portions. Among residents aged 65+, averages dipped modestly to 4.6 portions for women and 3.9 for men, narrowing the gap to 0.7 portions while still exceeding all younger brackets.`,
+  },
+
+  // =========================================================================
+  // LINE CHARTS: w1:005 .. w1:008
+  // =========================================================================
+  {
+    id: 'w1:005',
+    kind: 'line',
+    topic: 'technology',
+    difficulty: 2,
+    prompt:
+      'The line graph below shows the percentage of households with fibre broadband connections in four nations between 2012 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Household Fibre Broadband Adoption Across Four Nations (2012-2024)',
+      unit: '%',
+      xLabel: 'Year',
+      yLabel: 'Households Connected (%)',
+      categories: ['2012', '2014', '2016', '2018', '2020', '2022', '2024'],
+      series: [
+        { name: 'Kestrelia', values: [24, 35, 48, 62, 74, 83, 89] },
+        { name: 'Valdora', values: [14, 21, 30, 44, 60, 75, 84] },
+        { name: 'Marisia', values: [9, 13, 19, 28, 41, 55, 67] },
+        { name: 'Bramwell', values: [5, 8, 12, 17, 25, 36, 46] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'Fibre broadband adoption rose continuously in all four nations from 2012 to 2024, while the national ranking remained unchanged throughout.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Kestrelia led throughout the twelve-year period, expanding from 24% in 2012 to 89% in 2024, although growth slowed after 2020.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'change',
+        textEn: 'Valdora recorded the largest overall percentage-point gain (70 points, from 14% to 84%), rapidly closing in on Kestrelia after 2018.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'lowest',
+        textEn: 'Bramwell remained the lowest-connected nation throughout, though its rate expanded more than ninefold from 5% to 46%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'Marisia maintained third place throughout, accelerating after 2018 to rise from 28% to 67% by 2024.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, household fibre broadband expanded markedly across all four nations between 2012 and 2024 without any alteration to their relative order. Kestrelia remained the front-runner throughout, though Valdora narrowed the lead substantially in the second half of the period, while Bramwell consistently trailed.',
+      'In general, every nation experienced uninterrupted upward momentum in fibre connectivity over the twelve-year span. Adoption accelerated most sharply after 2018 in Valdora and Marisia, leaving Kestrelia and Valdora nearly converged at the top by 2024.',
+      'Taken as a whole, the graph highlights rapid, universal uptake of fibre broadband alongside a persistent gap between the leading nations and Bramwell. While Kestrelia led from start to finish, Valdora achieved the largest overall expansion.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'uninterrupted upward momentum',
+      'narrowed the lead substantially',
+      'front-runner throughout',
+      'consistently trailed',
+    ],
+    modelText: `The line graph tracks the proportion of households connected to fibre broadband in four nations from 2012 to 2024.
+
+Overall, adoption rose without interruption in every nation over the twelve-year span, while the ranking among the four countries stayed unchanged. Kestrelia remained the front-runner throughout, although Valdora narrowed the lead sharply after 2018, whereas Bramwell consistently trailed.
+
+In 2012, Kestrelia began well ahead at 24%, followed by Valdora at 14%. Kestrelia climbed rapidly to 62% by 2018 and 74% by 2020 before moderating to 89% in 2024. Valdora expanded more slowly at first, reaching 44% in 2018, but then surged by 40 percentage points over the final six years to finish at 84%, cutting Kestrelia's lead from 18 points in 2018 to just 5 points in 2024.
+
+Marisia and Bramwell also accelerated after 2018 from modest beginnings. Marisia grew from 9% in 2012 to 28% in 2018 and 67% in 2024. Bramwell started at just 5%, reached 17% in 2018, and climbed to 46% by 2024, remaining 43 percentage points behind Kestrelia.`,
+  },
+
+  {
+    id: 'w1:006',
+    kind: 'line',
+    topic: 'environment',
+    difficulty: 3,
+    prompt:
+      'The line graph below illustrates municipal recycling rates for four categories of waste in Northport between 2005 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Municipal Recycling Rates by Material in Northport (2005-2025)',
+      unit: '%',
+      xLabel: 'Year',
+      yLabel: 'Recycling Rate (%)',
+      categories: ['2005', '2009', '2013', '2017', '2021', '2025'],
+      series: [
+        { name: 'Paper', values: [48, 54, 61, 68, 72, 75] },
+        { name: 'Glass', values: [36, 42, 49, 55, 62, 68] },
+        { name: 'Organic Waste', values: [15, 22, 34, 46, 58, 66] },
+        { name: 'Plastics', values: [12, 16, 21, 27, 35, 41] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'Recycling rates improved steadily for all four waste materials in Northport between 2005 and 2025.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Paper remained the most recycled material throughout the twenty-year span, climbing from 48% to 75%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'change',
+        textEn: 'Organic waste posted the sharpest rise, surging by 51 percentage points from 15% in 2005 to 66% in 2025 to nearly match glass.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'lowest',
+        textEn: 'Plastics stayed at the bottom in every year, despite rising from 12% to 41% by 2025.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'The gap between the top three materials narrowed sharply by 2025 (ranging from 66% to 75%), leaving plastics far behind.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, Northport achieved continuous gains in recycling across all four waste streams between 2005 and 2025. Paper stayed at the top throughout and plastics remained at the bottom, while rapid progress in organic waste brought it almost level with glass by the end of the period.',
+      'In general, recycling improved steadily for every material over the twenty-year timeframe, though the pace varied markedly. Organic waste underwent the most dramatic expansion, narrowing the gap with paper and glass, whereas plastics lagged well behind despite tripling.',
+      'Taken as a whole, municipal recycling in Northport rose substantially across all categories, with three materials converging at high levels by 2025. Paper led consistently, organic waste saw the steepest growth, and plastics remained the clear laggard.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'continuous gains in recycling',
+      'almost level with glass',
+      'most dramatic expansion',
+      'lagged well behind',
+    ],
+    modelText: `The line graph charts changes in municipal recycling rates for paper, glass, organic waste, and plastics in Northport from 2005 to 2025.
+
+Overall, Northport recorded continuous gains in recycling across all four categories over the twenty-year period. Paper consistently topped the chart and plastics lagged well behind throughout, whereas rapid progress in organic waste brought it almost level with glass by 2025.
+
+In 2005, paper led comfortably at 48%, followed by glass at 36%. Paper rose steadily to 68% in 2017 before slowing somewhat to reach 75% in 2025, an overall gain of 27 percentage points. Glass maintained a uniform upward trajectory throughout, advancing by 32 points to finish at 68%.
+
+By contrast, organic waste and plastics began far lower, at 15% and 12% respectively. Organic waste experienced the most dramatic expansion, climbing by 12 points every four years from 2009 to 2021 to reach 58%, and ending at 66% in 2025, just 2 percentage points shy of glass. Plastics progressed more gradually, reaching 27% in 2017 and 41% in 2025.`,
+  },
+
+  {
+    id: 'w1:007',
+    kind: 'line',
+    topic: 'work',
+    difficulty: 4,
+    prompt:
+      'The line graph below shows the percentage of employees working remotely or in hybrid arrangements across four employment sectors between 2016 and 2026. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Share of Employees Working Remotely or in Hybrid Arrangements by Sector (2016-2026)',
+      unit: '%',
+      xLabel: 'Year',
+      yLabel: 'Employees in Remote/Hybrid Roles (%)',
+      categories: ['2016', '2018', '2020', '2022', '2024', '2026'],
+      series: [
+        { name: 'Information Technology', values: [22, 27, 78, 74, 71, 73] },
+        { name: 'Financial Services', values: [14, 18, 66, 58, 52, 54] },
+        { name: 'Higher Education', values: [11, 14, 59, 44, 38, 39] },
+        { name: 'Manufacturing', values: [4, 5, 19, 14, 12, 13] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'All four sectors saw a dramatic surge in remote and hybrid working in 2020, followed by a partial pullback through 2024 and broad stabilisation by 2026 well above 2016 levels.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Information Technology led throughout the decade, jumping from 22% in 2016 to 78% in 2020 and retaining 73% by 2026.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'change',
+        textEn: 'Higher Education recorded the sharpest post-2020 retreat, dropping by 21 percentage points from 59% in 2020 to 38% in 2024 before edging up to 39%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'lowest',
+        textEn: 'Manufacturing stayed overwhelmingly site-based, peaking at just 19% in 2020 and settling at 13% in 2026.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'Financial Services retained more than half of its workforce in remote or hybrid roles by 2026 (54%), keeping it clearly between Information Technology and Higher Education.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, every sector experienced an abrupt surge in remote and hybrid work in 2020, followed by a partial decline and subsequent stabilisation far above pre-2020 baselines. Information Technology remained the most flexible sector throughout, whereas Manufacturing stayed largely on-site.',
+      'In general, the four sectors followed an identical wave-like trajectory without ever changing rank: gradual initial growth, a steep peak in 2020, a pullback until 2024, and a slight rebound by 2026. Knowledge-based industries retained high hybrid adoption, while Higher Education retreated most noticeably from its peak.',
+      'Taken as a whole, flexible working underwent a lasting structural upward shift across all four industries after 2020. Information Technology and Financial Services sustained majority adoption through 2026, in contrast to much lower prevalence in Manufacturing.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'abrupt surge',
+      'far above pre-2020 baselines',
+      'without ever changing rank',
+      'largely on-site',
+    ],
+    modelText: `The line graph compares the share of staff in remote or hybrid roles across four employment sectors from 2016 to 2026.
+
+Overall, every sector saw an abrupt surge in 2020 followed by a partial pullback and stabilisation far above pre-2020 baselines, without ever changing rank. Information Technology led throughout, whereas Manufacturing remained largely on-site.
+
+Prior to 2020, adoption grew gently across all four sectors. Information Technology edged from 22% in 2016 to 27% in 2018 before leaping to a peak of 78% in 2020; it then dipped modestly to 71% in 2024 and recovered to 73% in 2026. Financial Services traced a parallel curve, rising from 14% in 2016 to 66% in 2020 before easing to 52% in 2024 and ticking up to 54%.
+
+Higher Education experienced the steepest post-peak decline, falling from 59% in 2020 to 44% in 2022 and 38% in 2024, ending at 39% in 2026, still well above its 11% starting point. Manufacturing climbed from 4% in 2016 to a 2020 peak of 19%, before settling at 13% by 2026.`,
+  },
+
+  {
+    id: 'w1:008',
+    kind: 'line',
+    topic: 'economy',
+    difficulty: 5,
+    prompt:
+      'The line graph below compares the quarterly retail sales index (2018 Q1 = 100) for physical stores and online retailers in Country B between 2018 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Quarterly Retail Sales Index in Country B: Physical Stores vs Online Retailers (2018-2024)',
+      unit: 'Index (2018 Q1 = 100)',
+      xLabel: 'Quarter',
+      yLabel: 'Sales Index',
+      categories: [
+        '2018 Q1',
+        '2018 Q3',
+        '2019 Q1',
+        '2019 Q3',
+        '2020 Q1',
+        '2020 Q3',
+        '2021 Q1',
+        '2021 Q3',
+        '2022 Q1',
+        '2022 Q3',
+        '2023 Q1',
+        '2023 Q3',
+        '2024 Q1',
+        '2024 Q3',
+      ],
+      series: [
+        { name: 'Physical Stores', values: [100, 102, 101, 103, 94, 88, 91, 97, 99, 102, 101, 104, 103, 105] },
+        { name: 'Online Retailers', values: [100, 106, 110, 116, 128, 152, 161, 158, 155, 162, 168, 174, 179, 186] },
+      ],
+      pie: false,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'Starting from the same index baseline of 100 in 2018 Q1, online sales expanded rapidly across the period whereas physical store sales stagnated overall.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'change',
+        textEn: 'The two channels diverged sharply in 2020, when online retail jumped to 152 in 2020 Q3 while physical stores fell to a trough of 88.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'highest',
+        textEn: 'Online retailers reached a period high of 186 in 2024 Q3 after a minor pullback from 161 in 2021 Q1 to 155 in 2022 Q1.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'comparison',
+        textEn: 'Physical stores did not regain their 2018 baseline until 2022 Q3 (102) and finished at just 105 in 2024 Q3, trailing online retailers by 81 index points.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'change',
+        textEn: 'Even before the 2020 shock, online sales were already outpacing physical stores, rising to 116 by 2019 Q3 compared with 103 for brick-and-mortar shops.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, the two retail channels diverged dramatically from their shared 2018 baseline. Online sales grew strongly throughout the period, propelled by a steep 2020 surge, whereas physical stores suffered a pronounced dip in 2020 and achieved only marginal net growth by 2024.',
+      'In general, online retail steadily widened its lead over physical stores between 2018 and 2024, interrupted only by a brief plateau during 2021 and early 2022. Brick-and-mortar trade, by contrast, experienced a mid-period contraction before edging slightly above its starting level.',
+      'Taken as a whole, retail growth in Country B was driven overwhelmingly by online channels, which nearly doubled their starting index. Physical stores recovered slowly from their 2020 trough, finishing only slightly higher than where they began.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'diverged dramatically',
+      'steep 2020 surge',
+      'marginal net growth',
+      'brief plateau',
+    ],
+    modelText: `The line graph tracks the quarterly retail sales index, with 2018 Q1 set at 100, for physical stores and online retailers in Country B from 2018 to 2024.
+
+Overall, the two channels diverged dramatically from their shared baseline. Online sales expanded strongly throughout the period, propelled by a steep 2020 surge, whereas physical stores suffered a pronounced contraction in 2020 and recorded only marginal net growth by 2024.
+
+Between 2018 Q1 and 2019 Q3, online retail climbed steadily from 100 to 116, while physical stores hovered narrowly between 100 and 103. A sharp split then emerged in 2020: physical store sales fell to 94 in 2020 Q1 and hit a trough of 88 in 2020 Q3, whereas online sales leaped to 128 and then 152 over the same quarters, reaching 161 in 2021 Q1.
+
+Following a brief dip to 155 in 2022 Q1, online sales resumed steady growth to peak at 186 in 2024 Q3. Physical stores recovered far more gradually, passing 100 again in 2022 Q3 at 102 and ending at 105, leaving an 81-point gap between the two channels.`,
+  },
+
+  // =========================================================================
+  // PIE CHARTS: w1:009 .. w1:011 (pie: true, EVERY series sums to EXACT 100)
+  // =========================================================================
+  {
+    id: 'w1:009',
+    kind: 'pie',
+    topic: 'energy',
+    difficulty: 2,
+    prompt:
+      'The pie charts below compare household electricity consumption by appliance category in Alderbury in 2000 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Household Electricity Consumption by Appliance Category in Alderbury (2000 vs 2025)',
+      unit: '%',
+      categories: [
+        'Heating & Cooling',
+        'Kitchen Appliances',
+        'Lighting',
+        'Home Electronics',
+        'Water Heating',
+        'Other',
+      ],
+      series: [
+        { name: '2000', values: [34, 22, 18, 9, 12, 5] },
+        { name: '2025', values: [28, 17, 7, 26, 14, 8] },
+      ],
+      pie: true,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'Electricity demand shifted markedly away from traditional categories such as heating, kitchen appliances, and lighting towards home electronics between 2000 and 2025.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Heating and cooling remained the largest single share in both years, despite declining from 34% in 2000 to 28% in 2025.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'change',
+        textEn: 'Home electronics saw the biggest rise, nearly tripling from 9% to 26% to become the clear second-largest category.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'change',
+        textEn: 'Lighting experienced the steepest fall, shrinking by 11 percentage points from 18% in 2000 to just 7% in 2025.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'Kitchen appliances dropped from 22% to 17%, whereas water heating (12% to 14%) and other appliances (5% to 8%) grew modestly.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, household electricity use in Alderbury shifted substantially away from lighting, kitchen appliances, and climate control towards home electronics over the quarter-century. Heating and cooling retained the largest share in both years, though by 2025 home electronics had surged to nearly match it.',
+      'In general, the two most striking developments were the steep expansion of home electronics and the sharp contraction in lighting. While traditional heavy-load categories declined proportionally, water heating and miscellaneous appliances edged upwards slightly.',
+      'Taken as a whole, electricity consumption became much less concentrated in heating and lighting by 2025. Heating and cooling stayed in first place, yet home electronics rose from one of the smallest shares to almost rival the leader.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'shifted substantially away from',
+      'retained the largest share',
+      'steep expansion of home electronics',
+      'sharp contraction in lighting',
+    ],
+    modelText: `The two pie charts illustrate how household electricity consumption in Alderbury was distributed across six appliance categories in 2000 and 2025.
+
+Overall, demand shifted substantially away from lighting, kitchen appliances, and climate control towards home electronics over the twenty-five-year span. Heating and cooling retained the largest share in both years, yet home electronics surged from a minor share to nearly rival it by 2025.
+
+In 2000, heating and cooling dominated at 34%, followed by kitchen appliances at 22% and lighting at 18%. By 2025, all three proportions had fallen: heating and cooling dropped by 6 percentage points to 28%, kitchen appliances eased by 5 points to 17%, and lighting contracted sharply by 11 points to just 7%, becoming the smallest category.
+
+Conversely, home electronics recorded the most dramatic growth, nearly tripling from 9% in 2000 to 26% in 2025, only 2 percentage points behind heating and cooling. The remaining two categories registered modest increases, with water heating edging up from 12% to 14% and other appliances rising from 5% to 8%.`,
+  },
+
+  {
+    id: 'w1:010',
+    kind: 'pie',
+    topic: 'government',
+    difficulty: 4,
+    prompt:
+      'The pie charts below show the breakdown of municipal budget allocation across six spending areas in Portvale in 2010 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Municipal Budget Allocation in Portvale (2010 vs 2025)',
+      unit: '%',
+      categories: [
+        'Public Transport',
+        'Healthcare & Social Care',
+        'Education',
+        'Housing & Urban Renewal',
+        'Policing & Emergency',
+        'Parks & Culture',
+      ],
+      series: [
+        { name: '2010', values: [22, 24, 21, 11, 14, 8] },
+        { name: '2025', values: [19, 31, 18, 16, 11, 5] },
+      ],
+      pie: true,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'Municipal priorities in Portvale tilted decisively towards healthcare, social care, and housing between 2010 and 2025, at the expense of every other spending area.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Healthcare and social care claimed the largest share in both years and expanded most strongly, rising by 7 percentage points from 24% to 31%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'change',
+        textEn: 'Housing and urban renewal was the only other growing portfolio, increasing by 5 percentage points from 11% to 16%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'grouping',
+        textEn: 'All four remaining sectors (public transport, education, policing and emergency services, and parks and culture) each declined by exactly 3 percentage points.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'lowest',
+        textEn: 'Parks and culture received the smallest allocation in both years, shrinking from 8% in 2010 to 5% in 2025.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, Portvale reallocated a greater share of its municipal budget towards healthcare, social care, and housing between 2010 and 2025, while trimming every other portfolio equally. Healthcare and social care remained the largest single outlay, whereas parks and culture stayed the smallest.',
+      'In general, municipal spending became more heavily concentrated in welfare and housing over the fifteen-year span. Only healthcare and housing expanded their shares, funded by uniform reductions across transport, education, policing, and cultural services.',
+      'Taken as a whole, the charts reveal a clear budgetary pivot towards healthcare and urban renewal at the expense of traditional civic services. Healthcare widened its lead substantially, while parks and culture saw its already modest allocation shrink further.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'reallocated a greater share',
+      'largest single outlay',
+      'uniform reductions',
+      'budgetary pivot',
+    ],
+    modelText: `The pie charts compare how Portvale's municipal government distributed its budget across six spending categories in 2010 and 2025.
+
+Overall, Portvale reallocated a greater share of public funds towards healthcare, social care, and housing over the fifteen-year span, while making uniform reductions across every other sector. Healthcare and social care remained the largest single outlay in both years, whereas parks and culture consistently received the smallest share.
+
+In 2010, the top three categories were closely bunched, with healthcare and social care at 24%, public transport at 22%, and education at 21%. By 2025, healthcare had pulled decisively ahead, climbing by 7 percentage points to 31%. Housing and urban renewal was the only other expanding area, rising by 5 points from 11% to 16% and overtaking policing and emergency services.
+
+Every remaining portfolio experienced an identical reduction of 3 percentage points. Public transport declined from 22% to 19%, education fell from 21% to 18%, policing and emergency services dropped from 14% to 11%, and parks and culture contracted from 8% to just 5%.`,
+  },
+
+  {
+    id: 'w1:011',
+    kind: 'pie',
+    topic: 'media',
+    difficulty: 5,
+    prompt:
+      'The pie charts below compare the primary sources of daily news used by adults aged 18-34 and adults aged 55+ in Country C. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    chart: {
+      title: 'Primary Sources of Daily News by Age Cohort in Country C',
+      unit: '%',
+      categories: [
+        'Social Media',
+        'News Websites & Apps',
+        'Television',
+        'Print Newspapers',
+        'Radio & Podcasts',
+      ],
+      series: [
+        { name: 'Adults Aged 18-34', values: [44, 31, 11, 4, 10] },
+        { name: 'Adults Aged 55+', values: [9, 18, 43, 19, 11] },
+      ],
+      pie: true,
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'grouping',
+        textEn: 'Daily news consumption was sharply polarised by age: three-quarters of 18-34-year-olds relied on digital outlets, whereas over three-fifths of the 55+ group used television or print.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Social media was the dominant news source for adults aged 18-34 (44%), almost mirroring television\'s leading position among adults aged 55+ (43%).',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'lowest',
+        textEn: 'Print newspapers attracted just 4% of younger adults, whereas social media was the least popular outlet for the 55+ cohort at 9%.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'comparison',
+        textEn: 'Radio and podcasts represented the sole area of generational convergence, accounting for 10% of younger adults and 11% of older adults.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'News websites and apps served as the second-largest digital channel for younger adults (31%) and also drew a notable 18% of the older cohort.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, news consumption in Country C was sharply divided along generational lines. Younger adults depended overwhelmingly on digital channels, particularly social media, whereas older adults relied predominantly on legacy broadcast and print media, with radio and podcasts forming the only common ground.',
+      'In general, the two cohorts exhibited almost mirror-image preferences: social media led among younger respondents to much the same extent that television dominated among older citizens. Print newspapers barely registered with younger adults, while audio formats attracted an almost identical share in both groups.',
+      'Taken as a whole, age strongly dictated primary news habits, separating a predominantly online younger audience from a television- and print-oriented older cohort. Only radio and podcasts appealed equally across both demographics.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'sharply divided along generational lines',
+      'mirror-image preferences',
+      'legacy broadcast and print media',
+      'only common ground',
+    ],
+    modelText: `The two pie charts compare the primary daily news sources preferred by adults aged 18-34 and those aged 55+ in Country C.
+
+Overall, news habits were sharply divided along generational lines, displaying almost mirror-image preferences. Younger adults depended overwhelmingly on digital platforms, whereas older adults favoured legacy broadcast and print media, with radio and podcasts representing the only common ground.
+
+Among adults aged 18-34, digital channels accounted for exactly 75% of primary news consumption: social media led clearly at 44%, followed by news websites and apps at 31%. Traditional formats played a minor role for this cohort, with television attracting 11% and print newspapers just 4%, the lowest share across both charts.
+
+Conversely, adults aged 55+ leaned heavily on conventional outlets. Television held the dominant position at 43%, nearly matching social media's share among younger respondents, while print newspapers stood at 19%, almost five times the younger figure. Dedicated news websites and apps still drew 18% of older readers, whereas social media trailed at 9%. Notably, radio and podcasts showed virtually no generational gap, at 10% for 18-34-year-olds and 11% for those aged 55+.`,
+  },
+
+  // =========================================================================
+  // TABLES: w1:012 .. w1:014
+  // =========================================================================
+  {
+    id: 'w1:012',
+    kind: 'table',
+    topic: 'transport',
+    difficulty: 4,
+    prompt:
+      'The table below provides information about the metro rail systems in five cities, including the year each opened, route length, annual passenger numbers, and number of stations. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    table: {
+      title: 'Key Characteristics of Metro Rail Systems in Five Fictional Cities',
+      columns: [
+        'City',
+        'Year Opened',
+        'Route Length (km)',
+        'Annual Passengers (millions)',
+        'Number of Stations',
+      ],
+      rows: [
+        ['Alderbury', 1908, 245, 780, 168],
+        ['Portvale', 1954, 182, 640, 124],
+        ['Crestholm', 1978, 134, 490, 92],
+        ['Westmoor', 1996, 86, 210, 58],
+        ['Northport', 2012, 62, 145, 44],
+      ],
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'overall_trend',
+        textEn: 'There is a direct correspondence between system age and scale: older metro networks consistently have longer routes, more stations, and substantially higher annual ridership.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Alderbury, the oldest system (opened 1908), led every metric with 245 km of track, 168 stations, and 780 million annual passengers.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'lowest',
+        textEn: 'Northport, the newest network (2012), had the smallest footprint across all categories: 62 km, 44 stations, and 145 million yearly riders.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'grouping',
+        textEn: 'The three older networks (Alderbury, Portvale, and Crestholm) each carried close to half a billion or more riders annually, far surpassing the newer systems in Westmoor and Northport.',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'comparison',
+        textEn: 'Alderbury carried more than five times as many annual passengers as Northport across nearly four times the route length.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, the five metro systems show a clear positive link between age and scale: the older a network is, the longer its route, the more stations it operates, and the higher its annual ridership. Alderbury dominated every measure, whereas the newest system, Northport, ranked last throughout.',
+      'In general, the three twentieth-century networks built before 1980 were vastly larger and busier than the two more recent systems. Across every column, the five cities maintained the exact same descending order from Alderbury down to Northport.',
+      'Taken as a whole, system longevity aligned precisely with network size and passenger volume. Alderbury and Portvale operated extensive, high-capacity networks, in sharp contrast to the compact, lower-volume lines in Westmoor and Northport.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'clear positive link between age and scale',
+      'exact same descending order',
+      'dominated every measure',
+      'in sharp contrast to',
+    ],
+    modelText: `The table compares five metro rail networks in terms of their opening year, route length, annual ridership, and station count.
+
+Overall, there was a clear positive link between age and scale, with the five cities following the exact same descending order across every metric. Alderbury dominated every measure, whereas the newest network, Northport, ranked lowest throughout.
+
+The three oldest systems were markedly larger and busier. Alderbury, opened in 1908, operated 245 km of track and 168 stations, carrying 780 million passengers annually. Portvale (1954) ranked second with 182 km, 124 stations, and 640 million riders. Crestholm, launched in 1978, had 134 km of route and 92 stations, yet still transported 490 million passengers a year, demonstrating strong ridership relative to its length.
+
+In sharp contrast, the two most recent systems remained far smaller. Westmoor, which opened in 1996, spanned 86 km across 58 stations and served 210 million passengers annually. Northport, opened in 2012, had just 62 km of track, 44 stations, and 145 million annual journeys, roughly one-fifth of Alderbury's patronage.`,
+  },
+
+  {
+    id: 'w1:013',
+    kind: 'table',
+    topic: 'food',
+    difficulty: 5,
+    prompt:
+      'The table below shows the annual per-capita consumption (in kilograms) of five food groups across four countries. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    table: {
+      title: 'Annual Per-Capita Consumption of Five Food Groups Across Four Countries (kg per person)',
+      columns: ['Country', 'Cereals & Grains', 'Vegetables', 'Fruit', 'Dairy Products', 'Meat & Fish'],
+      rows: [
+        ['Kestrelia', 112, 108, 86, 164, 78],
+        ['Valdora', 138, 124, 94, 92, 64],
+        ['Marisia', 165, 96, 72, 48, 52],
+        ['Bramwell', 98, 88, 65, 142, 91],
+      ],
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'grouping',
+        textEn: 'The four nations split into two distinct dietary profiles: Kestrelia and Bramwell consumed high volumes of dairy and animal protein, whereas Marisia and Valdora relied more heavily on cereals and plant produce.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'highest',
+        textEn: 'Cereals and grains in Marisia (165 kg) and dairy products in Kestrelia (164 kg) represented the two highest single figures in the table.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'comparison',
+        textEn: 'Bramwell recorded the highest meat and fish consumption (91 kg) alongside the lowest intake of cereals (98 kg), vegetables (88 kg), and fruit (65 kg).',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'highest',
+        textEn: 'Valdora led all countries in both vegetables (124 kg) and fruit (94 kg), while maintaining mid-range figures for dairy (92 kg) and meat and fish (64 kg).',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'lowest',
+        textEn: 'Dairy intake showed the widest cross-national spread, ranging from 164 kg in Kestrelia down to just 48 kg in Marisia.',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, the four countries divided into two contrasting dietary patterns: Kestrelia and Bramwell favoured dairy and meat, whereas Marisia and Valdora leaned more heavily towards cereals and fresh produce. Dairy consumption exhibited the widest variation between nations.',
+      'In general, no single country ranked highest across all food groups. Kestrelia topped dairy, Bramwell led meat and fish while trailing in plant foods, Marisia relied most heavily on cereals, and Valdora consumed the greatest quantities of vegetables and fruit.',
+      'Taken as a whole, national diets reflected a clear trade-off between animal-derived staples and plant-based foods. While cereals and dairy generated the largest figures overall, meat and fish and fruit generally formed smaller shares of annual intake.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'two contrasting dietary patterns',
+      'widest variation between nations',
+      'clear trade-off',
+      'no single country ranked highest',
+    ],
+    modelText: `The table compares average annual per-capita consumption of five food categories, measured in kilograms, across four countries.
+
+Overall, the nations fell into two contrasting dietary patterns: Kestrelia and Bramwell consumed substantially more dairy and meat, whereas Marisia and Valdora relied more heavily on cereals and fresh produce. Across all categories, dairy exhibited the widest variation between nations.
+
+Kestrelia and Bramwell were characterised by heavy dairy and animal-protein intake. Kestrelia topped dairy consumption at 164 kg per person alongside 78 kg of meat and fish, while eating moderate quantities of cereals (112 kg), vegetables (108 kg), and fruit (86 kg). Bramwell recorded the highest meat and fish intake at 91 kg and strong dairy consumption at 142 kg, yet posted the lowest figures for cereals (98 kg), vegetables (88 kg), and fruit (65 kg).
+
+Conversely, Marisia led in cereals and grains at 165 kg, the table's highest single figure, while recording the lowest dairy (48 kg) and meat and fish (52 kg) totals. Valdora led in both vegetables (124 kg) and fruit (94 kg), alongside 138 kg of cereals, 92 kg of dairy, and 64 kg of meat and fish.`,
+  },
+
+  {
+    id: 'w1:014',
+    kind: 'table',
+    topic: 'urban',
+    difficulty: 6,
+    prompt:
+      'The table below compares public library membership, digital and print loans, and annual budgets across five municipal districts of Crestholm in 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.',
+    table: {
+      title: 'Public Library Performance and Funding Across Five Districts of Crestholm (2025)',
+      columns: [
+        'District',
+        'Active Members (thousands)',
+        'Digital Loans (thousands)',
+        'Print Loans (thousands)',
+        'Annual Budget (£ millions)',
+      ],
+      rows: [
+        ['Central Ward', 68, 410, 290, 6.4],
+        ['Harbourside', 52, 325, 240, 4.9],
+        ['Oakridge', 44, 195, 285, 3.8],
+        ['Millbrook', 31, 160, 175, 2.7],
+        ['Southfield', 24, 115, 145, 2.1],
+      ],
+    },
+    keyFeatures: [
+      {
+        id: 'kf1',
+        kind: 'grouping',
+        textEn: 'Borrowing preferences split clearly by district scale: digital loans comfortably exceeded print in the two largest districts (Central Ward and Harbourside), whereas print loans outnumbered digital in the three smaller districts.',
+        mustMention: true,
+      },
+      {
+        id: 'kf2',
+        kind: 'overall_trend',
+        textEn: 'Active membership and annual funding aligned closely in rank from Central Ward down to Southfield.',
+        mustMention: true,
+      },
+      {
+        id: 'kf3',
+        kind: 'highest',
+        textEn: 'Central Ward led every indicator, with 68 thousand members, 410 thousand digital loans, 290 thousand print loans, and a £6.4 million budget.',
+        mustMention: true,
+      },
+      {
+        id: 'kf4',
+        kind: 'comparison',
+        textEn: 'Oakridge stood out for its exceptionally strong print demand (285 thousand loans), nearly equalling Central Ward despite having 24 thousand fewer members and a much lower digital tally (195 thousand).',
+        mustMention: true,
+      },
+      {
+        id: 'kf5',
+        kind: 'lowest',
+        textEn: 'Southfield recorded the lowest values across all four columns (24 thousand members, 115 thousand digital loans, 145 thousand print loans, and £2.1 million).',
+        mustMention: false,
+      },
+    ],
+    overviewModels: [
+      'Overall, library membership and funding scaled closely together across Crestholm, with Central Ward leading every category and Southfield trailing throughout. Crucially, borrowing preferences diverged by district size: digital lending predominated in the two largest districts, whereas print remained more popular in the three smaller ones.',
+      'In general, the five districts followed a consistent descending pattern in membership, digital loans, and budgets, though print borrowing broke that order due to unusually high demand in Oakridge. Larger, better-funded districts leaned clearly towards digital formats.',
+      'Taken as a whole, Central Ward and Harbourside accounted for the highest membership, budgets, and digital lending, in contrast to the print-oriented borrowing profiles of Oakridge, Millbrook, and Southfield.',
+    ],
+    overviewKeyPhrases: [
+      'Overall,',
+      'scaled closely together',
+      'borrowing preferences diverged by district size',
+      'broke that order',
+      'print-oriented borrowing profiles',
+    ],
+    modelText: `The table compares active membership, digital and print borrowing, and annual budgets across public libraries in five districts of Crestholm in 2025.
+
+Overall, membership, digital loans, and budgets scaled closely together from Central Ward down to Southfield. However, borrowing preferences diverged by district size: digital loans comfortably outnumbered print in the two largest districts, whereas print remained ahead in the three smaller ones, with Oakridge breaking the otherwise uniform ranking.
+
+Central Ward led every category, serving 68 thousand members on a £6.4 million budget and recording 410 thousand digital loans alongside 290 thousand print loans. Harbourside followed a similar digital-led pattern, with 52 thousand members, £4.9 million in funding, and 325 thousand digital loans compared with 240 thousand print loans.
+
+By contrast, print prevailed in the remaining three districts. Oakridge was notable for generating 285 thousand print loans, just 5 thousand below Central Ward, despite lower digital borrowing (195 thousand), 44 thousand members, and a £3.8 million budget. Millbrook (31 thousand members; £2.7 million) and Southfield (24 thousand; £2.1 million) also lent more print than digital items, at 175 versus 160 thousand and 145 versus 115 thousand respectively.`,
+  },
+];
+
+const errors = [];
+const items = RAW_ITEMS.map((raw) => {
+  const { modelText, ...rest } = raw;
+  const wc = countWords(modelText);
+  if (wc < 170 || wc > 195) {
+    errors.push(`${raw.id}: wordCount=${wc} outside strict target [170, 195]`);
+  }
+  if (raw.keyFeatures.length < 4) {
+    errors.push(`${raw.id}: keyFeatures < 4`);
+  }
+  if (raw.overviewKeyPhrases.length < 4 || raw.overviewKeyPhrases.length > 6) {
+    errors.push(`${raw.id}: overviewKeyPhrases length=${raw.overviewKeyPhrases.length} outside [4, 6]`);
+  }
+  return {
+    ...rest,
+    band8Model: {
+      text: modelText,
+      wordCount: wc,
+    },
+    provenance: PROVENANCE,
+  };
+});
+
+for (const it of items) {
+  console.log(` - ${it.id} (${it.kind}, diff=${it.difficulty}, topic=${it.topic}): ${it.band8Model.wordCount} words`);
+}
+if (errors.length > 0) {
+  console.error('Errors:\n' + errors.map((e) => '  * ' + e).join('\n'));
+  process.exit(1);
+}
+
+const outPath = path.join(process.cwd(), 'data-src', 'writing', 'batches', 't1_01_charts.json');
+fs.writeFileSync(outPath, JSON.stringify(items, null, 2) + '\n', 'utf8');
+console.log(`Wrote ${items.length} items to ${outPath}`);

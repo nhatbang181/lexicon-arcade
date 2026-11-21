@@ -1,0 +1,131 @@
+{
+  "id": "w1:005",
+  "kind": "line",
+  "topic": "technology",
+  "difficulty": 2,
+  "prompt": "The line graph below shows the percentage of households with fibre broadband connections in four nations between 2012 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Household Fibre Broadband Adoption Across Four Nations (2012-2024)",
+    "unit": "%",
+    "xLabel": "Year",
+    "yLabel": "Households Connected (%)",
+    "categories": [
+      "2012",
+      "2014",
+      "2016",
+      "2018",
+      "2020",
+      "2022",
+      "2024"
+    ],
+    "series": [
+      {
+        "name": "Kestrelia",
+        "values": [
+          24,
+          35,
+          48,
+          62,
+          74,
+          83,
+          89
+        ]
+      },
+      {
+        "name": "Valdora",
+        "values": [
+          14,
+          21,
+          30,
+          44,
+          60,
+          75,
+          84
+        ]
+      },
+      {
+        "name": "Marisia",
+        "values": [
+          9,
+          13,
+          19,
+          28,
+          41,
+          55,
+          67
+        ]
+      },
+      {
+        "name": "Bramwell",
+        "values": [
+          5,
+          8,
+          12,
+          17,
+          25,
+          36,
+          46
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Fibre broadband adoption rose continuously in all four nations from 2012 to 2024, while the national ranking remained unchanged throughout.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Kestrelia led throughout the twelve-year period, expanding from 24% in 2012 to 89% in 2024, although growth slowed after 2020.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Valdora recorded the largest overall percentage-point gain (70 points, from 14% to 84%), rapidly closing in on Kestrelia after 2018.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Bramwell remained the lowest-connected nation throughout, though its rate expanded more than ninefold from 5% to 46%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "Marisia maintained third place throughout, accelerating after 2018 to rise from 28% to 67% by 2024.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, household fibre broadband expanded markedly across all four nations between 2012 and 2024 without any alteration to their relative order. Kestrelia remained the front-runner throughout, though Valdora narrowed the lead substantially in the second half of the period, while Bramwell consistently trailed.",
+    "In general, every nation experienced uninterrupted upward momentum in fibre connectivity over the twelve-year span. Adoption accelerated most sharply after 2018 in Valdora and Marisia, leaving Kestrelia and Valdora nearly converged at the top by 2024.",
+    "Taken as a whole, the graph highlights rapid, universal uptake of fibre broadband alongside a persistent gap between the leading nations and Bramwell. While Kestrelia led from start to finish, Valdora achieved the largest overall expansion."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "uninterrupted upward momentum",
+    "narrowed the lead substantially",
+    "front-runner throughout",
+    "consistently trailed"
+  ],
+  "band8Model": {
+    "text": "The line graph tracks the proportion of households connected to fibre broadband in four nations from 2012 to 2024.\n\nOverall, adoption rose without interruption in every nation over the twelve-year span, while the ranking among the four countries stayed unchanged. Kestrelia remained the front-runner throughout, although Valdora narrowed the lead sharply after 2018, whereas Bramwell consistently trailed.\n\nIn 2012, Kestrelia began well ahead at 24%, followed by Valdora at 14%. Kestrelia climbed rapidly to 62% by 2018 and 74% by 2020 before moderating to 89% in 2024. Valdora expanded more slowly at first, reaching 44% in 2018, but then surged by 40 percentage points over the final six years to finish at 84%, cutting Kestrelia's lead from 18 points in 2018 to just 5 points in 2024.\n\nMarisia and Bramwell also accelerated after 2018 from modest beginnings. Marisia grew from 9% in 2012 to 28% in 2018 and 67% in 2024. Bramwell started at just 5%, reached 17% in 2018, and climbed to 46% by 2024, remaining 43 percentage points behind Kestrelia.",
+    "wordCount": 172
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

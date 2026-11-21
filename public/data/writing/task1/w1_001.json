@@ -1,0 +1,101 @@
+{
+  "id": "w1:001",
+  "kind": "bar",
+  "topic": "energy",
+  "difficulty": 1,
+  "prompt": "The bar chart below shows the percentage of electricity generated from renewable sources in five regions in 2010 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Share of Electricity Generated from Renewable Sources by Region (2010 vs 2024)",
+    "unit": "%",
+    "xLabel": "Region",
+    "yLabel": "Share of Total Electricity (%)",
+    "categories": [
+      "Nordvale",
+      "Suncoast",
+      "Highland",
+      "Midplain",
+      "Eastbay"
+    ],
+    "series": [
+      {
+        "name": "2010",
+        "values": [
+          42,
+          18,
+          29,
+          12,
+          8
+        ]
+      },
+      {
+        "name": "2024",
+        "values": [
+          78,
+          54,
+          61,
+          34,
+          21
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "All five regions increased their reliance on renewable electricity substantially between 2010 and 2024.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Nordvale maintained a clear lead in both years, reaching 78% by 2024.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Suncoast recorded the sharpest proportional expansion, tripling its renewable share from 18% to 54%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Eastbay trailed every other region in both years despite climbing from 8% to 21%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "By 2024, Nordvale, Highland, and Suncoast all derived over half of their electricity from renewables, whereas Midplain and Eastbay remained well below half.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, every region expanded its renewable electricity share markedly between 2010 and 2024, while the relative ranking across the five areas remained completely unchanged. Nordvale stayed well ahead throughout, whereas Eastbay consistently lagged behind.",
+    "In general, renewable generation grew sharply across all five regions over the fourteen-year period, with three regions surpassing the halfway mark by the end. Despite notable gains everywhere, a wide gap persisted between the leading and trailing regions.",
+    "Taken as a whole, the chart reveals universal progress towards renewable electricity without any change in regional hierarchy. Nordvale and Highland led the transition, while Suncoast achieved the steepest catch-up growth and Eastbay stayed at the bottom."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "remained completely unchanged",
+    "well ahead throughout",
+    "lagged behind",
+    "wide gap persisted"
+  ],
+  "band8Model": {
+    "text": "The bar chart compares the proportion of total electricity produced from renewable sources across five regions in 2010 and 2024.\n\nOverall, every region recorded substantial growth in renewable electricity over the period, yet the ranking among the five regions remained unchanged. Nordvale consistently led by a clear margin, while Eastbay stayed at the bottom despite more than doubling its share.\n\nIn 2010, Nordvale was already well ahead at 42%, followed by Highland at 29% and Suncoast at 18%. By 2024, all three had crossed the halfway mark: Nordvale surged by 36 percentage points to 78%, Highland rose by 32 points to 61%, and Suncoast likewise gained 36 points to reach 54%, tripling its earlier proportion.\n\nThe remaining two regions started from much lower bases and continued to trail markedly. Midplain nearly tripled its renewable contribution from 12% in 2010 to 34% in 2024, an increase of 22 percentage points. Eastbay showed the smallest absolute rise, climbing by 13 points from 8% to 21%, leaving it 57 percentage points behind Nordvale.",
+    "wordCount": 170
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "w1:007",
+  "kind": "line",
+  "topic": "work",
+  "difficulty": 4,
+  "prompt": "The line graph below shows the percentage of employees working remotely or in hybrid arrangements across four employment sectors between 2016 and 2026. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Share of Employees Working Remotely or in Hybrid Arrangements by Sector (2016-2026)",
+    "unit": "%",
+    "xLabel": "Year",
+    "yLabel": "Employees in Remote/Hybrid Roles (%)",
+    "categories": [
+      "2016",
+      "2018",
+      "2020",
+      "2022",
+      "2024",
+      "2026"
+    ],
+    "series": [
+      {
+        "name": "Information Technology",
+        "values": [
+          22,
+          27,
+          78,
+          74,
+          71,
+          73
+        ]
+      },
+      {
+        "name": "Financial Services",
+        "values": [
+          14,
+          18,
+          66,
+          58,
+          52,
+          54
+        ]
+      },
+      {
+        "name": "Higher Education",
+        "values": [
+          11,
+          14,
+          59,
+          44,
+          38,
+          39
+        ]
+      },
+      {
+        "name": "Manufacturing",
+        "values": [
+          4,
+          5,
+          19,
+          14,
+          12,
+          13
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "All four sectors saw a dramatic surge in remote and hybrid working in 2020, followed by a partial pullback through 2024 and broad stabilisation by 2026 well above 2016 levels.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Information Technology led throughout the decade, jumping from 22% in 2016 to 78% in 2020 and retaining 73% by 2026.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Higher Education recorded the sharpest post-2020 retreat, dropping by 21 percentage points from 59% in 2020 to 38% in 2024 before edging up to 39%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Manufacturing stayed overwhelmingly site-based, peaking at just 19% in 2020 and settling at 13% in 2026.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "Financial Services retained more than half of its workforce in remote or hybrid roles by 2026 (54%), keeping it clearly between Information Technology and Higher Education.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, every sector experienced an abrupt surge in remote and hybrid work in 2020, followed by a partial decline and subsequent stabilisation far above pre-2020 baselines. Information Technology remained the most flexible sector throughout, whereas Manufacturing stayed largely on-site.",
+    "In general, the four sectors followed an identical wave-like trajectory without ever changing rank: gradual initial growth, a steep peak in 2020, a pullback until 2024, and a slight rebound by 2026. Knowledge-based industries retained high hybrid adoption, while Higher Education retreated most noticeably from its peak.",
+    "Taken as a whole, flexible working underwent a lasting structural upward shift across all four industries after 2020. Information Technology and Financial Services sustained majority adoption through 2026, in contrast to much lower prevalence in Manufacturing."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "abrupt surge",
+    "far above pre-2020 baselines",
+    "without ever changing rank",
+    "largely on-site"
+  ],
+  "band8Model": {
+    "text": "The line graph compares the share of staff in remote or hybrid roles across four employment sectors from 2016 to 2026.\n\nOverall, every sector saw an abrupt surge in 2020 followed by a partial pullback and stabilisation far above pre-2020 baselines, without ever changing rank. Information Technology led throughout, whereas Manufacturing remained largely on-site.\n\nPrior to 2020, adoption grew gently across all four sectors. Information Technology edged from 22% in 2016 to 27% in 2018 before leaping to a peak of 78% in 2020; it then dipped modestly to 71% in 2024 and recovered to 73% in 2026. Financial Services traced a parallel curve, rising from 14% in 2016 to 66% in 2020 before easing to 52% in 2024 and ticking up to 54%.\n\nHigher Education experienced the steepest post-peak decline, falling from 59% in 2020 to 44% in 2022 and 38% in 2024, ending at 39% in 2026, still well above its 11% starting point. Manufacturing climbed from 4% in 2016 to a 2020 peak of 19%, before settling at 13% by 2026.",
+    "wordCount": 174
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

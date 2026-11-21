@@ -1,0 +1,126 @@
+{
+  "id": "w1:006",
+  "kind": "line",
+  "topic": "environment",
+  "difficulty": 3,
+  "prompt": "The line graph below illustrates municipal recycling rates for four categories of waste in Northport between 2005 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Municipal Recycling Rates by Material in Northport (2005-2025)",
+    "unit": "%",
+    "xLabel": "Year",
+    "yLabel": "Recycling Rate (%)",
+    "categories": [
+      "2005",
+      "2009",
+      "2013",
+      "2017",
+      "2021",
+      "2025"
+    ],
+    "series": [
+      {
+        "name": "Paper",
+        "values": [
+          48,
+          54,
+          61,
+          68,
+          72,
+          75
+        ]
+      },
+      {
+        "name": "Glass",
+        "values": [
+          36,
+          42,
+          49,
+          55,
+          62,
+          68
+        ]
+      },
+      {
+        "name": "Organic Waste",
+        "values": [
+          15,
+          22,
+          34,
+          46,
+          58,
+          66
+        ]
+      },
+      {
+        "name": "Plastics",
+        "values": [
+          12,
+          16,
+          21,
+          27,
+          35,
+          41
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Recycling rates improved steadily for all four waste materials in Northport between 2005 and 2025.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Paper remained the most recycled material throughout the twenty-year span, climbing from 48% to 75%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Organic waste posted the sharpest rise, surging by 51 percentage points from 15% in 2005 to 66% in 2025 to nearly match glass.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "lowest",
+      "textEn": "Plastics stayed at the bottom in every year, despite rising from 12% to 41% by 2025.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "The gap between the top three materials narrowed sharply by 2025 (ranging from 66% to 75%), leaving plastics far behind.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, Northport achieved continuous gains in recycling across all four waste streams between 2005 and 2025. Paper stayed at the top throughout and plastics remained at the bottom, while rapid progress in organic waste brought it almost level with glass by the end of the period.",
+    "In general, recycling improved steadily for every material over the twenty-year timeframe, though the pace varied markedly. Organic waste underwent the most dramatic expansion, narrowing the gap with paper and glass, whereas plastics lagged well behind despite tripling.",
+    "Taken as a whole, municipal recycling in Northport rose substantially across all categories, with three materials converging at high levels by 2025. Paper led consistently, organic waste saw the steepest growth, and plastics remained the clear laggard."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "continuous gains in recycling",
+    "almost level with glass",
+    "most dramatic expansion",
+    "lagged well behind"
+  ],
+  "band8Model": {
+    "text": "The line graph charts changes in municipal recycling rates for paper, glass, organic waste, and plastics in Northport from 2005 to 2025.\n\nOverall, Northport recorded continuous gains in recycling across all four categories over the twenty-year period. Paper consistently topped the chart and plastics lagged well behind throughout, whereas rapid progress in organic waste brought it almost level with glass by 2025.\n\nIn 2005, paper led comfortably at 48%, followed by glass at 36%. Paper rose steadily to 68% in 2017 before slowing somewhat to reach 75% in 2025, an overall gain of 27 percentage points. Glass maintained a uniform upward trajectory throughout, advancing by 32 points to finish at 68%.\n\nBy contrast, organic waste and plastics began far lower, at 15% and 12% respectively. Organic waste experienced the most dramatic expansion, climbing by 12 points every four years from 2009 to 2021 to reach 58%, and ending at 66% in 2025, just 2 percentage points shy of glass. Plastics progressed more gradually, reaching 27% in 2017 and 41% in 2025.",
+    "wordCount": 171
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

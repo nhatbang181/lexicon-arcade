@@ -1,0 +1,102 @@
+{
+  "id": "w1:010",
+  "kind": "pie",
+  "topic": "government",
+  "difficulty": 4,
+  "prompt": "The pie charts below show the breakdown of municipal budget allocation across six spending areas in Portvale in 2010 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Municipal Budget Allocation in Portvale (2010 vs 2025)",
+    "unit": "%",
+    "categories": [
+      "Public Transport",
+      "Healthcare & Social Care",
+      "Education",
+      "Housing & Urban Renewal",
+      "Policing & Emergency",
+      "Parks & Culture"
+    ],
+    "series": [
+      {
+        "name": "2010",
+        "values": [
+          22,
+          24,
+          21,
+          11,
+          14,
+          8
+        ]
+      },
+      {
+        "name": "2025",
+        "values": [
+          19,
+          31,
+          18,
+          16,
+          11,
+          5
+        ]
+      }
+    ],
+    "pie": true
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Municipal priorities in Portvale tilted decisively towards healthcare, social care, and housing between 2010 and 2025, at the expense of every other spending area.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Healthcare and social care claimed the largest share in both years and expanded most strongly, rising by 7 percentage points from 24% to 31%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Housing and urban renewal was the only other growing portfolio, increasing by 5 percentage points from 11% to 16%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "grouping",
+      "textEn": "All four remaining sectors (public transport, education, policing and emergency services, and parks and culture) each declined by exactly 3 percentage points.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "lowest",
+      "textEn": "Parks and culture received the smallest allocation in both years, shrinking from 8% in 2010 to 5% in 2025.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, Portvale reallocated a greater share of its municipal budget towards healthcare, social care, and housing between 2010 and 2025, while trimming every other portfolio equally. Healthcare and social care remained the largest single outlay, whereas parks and culture stayed the smallest.",
+    "In general, municipal spending became more heavily concentrated in welfare and housing over the fifteen-year span. Only healthcare and housing expanded their shares, funded by uniform reductions across transport, education, policing, and cultural services.",
+    "Taken as a whole, the charts reveal a clear budgetary pivot towards healthcare and urban renewal at the expense of traditional civic services. Healthcare widened its lead substantially, while parks and culture saw its already modest allocation shrink further."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "reallocated a greater share",
+    "largest single outlay",
+    "uniform reductions",
+    "budgetary pivot"
+  ],
+  "band8Model": {
+    "text": "The pie charts compare how Portvale's municipal government distributed its budget across six spending categories in 2010 and 2025.\n\nOverall, Portvale reallocated a greater share of public funds towards healthcare, social care, and housing over the fifteen-year span, while making uniform reductions across every other sector. Healthcare and social care remained the largest single outlay in both years, whereas parks and culture consistently received the smallest share.\n\nIn 2010, the top three categories were closely bunched, with healthcare and social care at 24%, public transport at 22%, and education at 21%. By 2025, healthcare had pulled decisively ahead, climbing by 7 percentage points to 31%. Housing and urban renewal was the only other expanding area, rising by 5 points from 11% to 16% and overtaking policing and emergency services.\n\nEvery remaining portfolio experienced an identical reduction of 3 percentage points. Public transport declined from 22% to 19%, education fell from 21% to 18%, policing and emergency services dropped from 14% to 11%, and parks and culture contracted from 8% to just 5%.",
+    "wordCount": 172
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

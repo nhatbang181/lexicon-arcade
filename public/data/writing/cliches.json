@@ -1,0 +1,1257 @@
+[
+  {
+    "id": "cliche:in_this_day_and_age",
+    "phrase": "in this day and age",
+    "variants": [
+      "in this modern day and age"
+    ],
+    "category": "opener",
+    "severity": "high",
+    "betterAlternatives": [
+      "in contemporary society",
+      "over the past two decades",
+      "in modern urban economies"
+    ],
+    "whyAvoidVi": "Cụm mở bài sáo rỗng, quá thân mật cho văn phong học thuật và báo hiệu bài viết học thuộc khuôn mẫu.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:every_coin_two_sides",
+    "phrase": "every coin has two sides",
+    "variants": [
+      "each coin has two sides",
+      "two sides of the same coin",
+      "every coin has 2 sides"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "this trend carries both clear benefits and notable drawbacks",
+      "the policy yields mixed outcomes",
+      "while advantageous in several respects, the shift also entails risks"
+    ],
+    "whyAvoidVi": "Thành ngữ sáo rỗng bị giám khảo xem là thuộc lòng, không có giá trị lập luận cụ thể.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:rapid_development_of_technology",
+    "phrase": "with the rapid development of technology",
+    "variants": [
+      "with the rapid development of science and technology",
+      "with the fast development of technology"
+    ],
+    "category": "opener",
+    "severity": "high",
+    "betterAlternatives": [
+      "as digital tools have become embedded in daily work",
+      "advances in automation and connectivity have reshaped",
+      "recent innovations in computing have altered"
+    ],
+    "whyAvoidVi": "Câu mở đầu quá chung chung, lặp đi lặp lại trong hàng nghìn bài thi, không bám sát trọng tâm đề.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:double_edged_sword",
+    "phrase": "double-edged sword",
+    "variants": [
+      "double edged sword"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "presents competing advantages and risks",
+      "brings both opportunities and unintended consequences",
+      "generates measurable gains alongside structural challenges"
+    ],
+    "whyAvoidVi": "Ẩn dụ mòn, thí sinh IELTS lạm dụng quá nhiều trong bài lợi-hại.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:last_but_not_least",
+    "phrase": "last but not least",
+    "variants": [],
+    "category": "filler",
+    "severity": "high",
+    "betterAlternatives": [
+      "a further decisive factor is",
+      "equally significant is",
+      "finally, consideration must be given to"
+    ],
+    "whyAvoidVi": "Cụm văn nói sáo rỗng; trong bài luận học thuật nên dùng từ nối mạch lạc thể hiện quan hệ ý.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:since_the_dawn_of_time",
+    "phrase": "since the dawn of time",
+    "variants": [
+      "from the dawn of history",
+      "since time immemorial",
+      "since the beginning of human history"
+    ],
+    "category": "exaggeration",
+    "severity": "high",
+    "betterAlternatives": [
+      "historically",
+      "for generations",
+      "across different historical periods"
+    ],
+    "whyAvoidVi": "Nói quá và sáo rỗng, làm giảm tính khách quan và độ chính xác học thuật.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:undeniable_fact",
+    "phrase": "it is an undeniable fact that",
+    "variants": [
+      "it is an indisputable fact that",
+      "there is no denying the fact that",
+      "it is universally acknowledged that"
+    ],
+    "category": "memorised_frame",
+    "severity": "high",
+    "betterAlternatives": [
+      "evidence consistently indicates that",
+      "it is widely recognised that",
+      "recent trends demonstrate that"
+    ],
+    "whyAvoidVi": "Khung mở bài thuộc lòng, mang giọng điệu khẳng định tuyệt đối không phù hợp bài nghị luận.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:goes_without_saying",
+    "phrase": "it goes without saying that",
+    "variants": [
+      "needless to say"
+    ],
+    "category": "filler",
+    "severity": "high",
+    "betterAlternatives": [
+      "clearly",
+      "predictably",
+      "a central consideration is that"
+    ],
+    "whyAvoidVi": "Cụm thừa chữ mang tính khẩu ngữ; nếu điều đó quá hiển nhiên thì không cần viết câu đệm dài dòng.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:as_we_all_know",
+    "phrase": "as we all know",
+    "variants": [
+      "as everyone knows",
+      "everybody knows that"
+    ],
+    "category": "opener",
+    "severity": "high",
+    "betterAlternatives": [
+      "it is widely observed that",
+      "current demographic data shows that",
+      "in many industrialised nations"
+    ],
+    "whyAvoidVi": "Giọng văn nói, dùng đại từ 'we' thân mật và giả định thiếu căn cứ.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:play_vital_role_daily_life",
+    "phrase": "play a vital role in our daily life",
+    "variants": [
+      "plays a vital role in our daily lives",
+      "play an important role in our daily life",
+      "play a crucial role in our daily lives"
+    ],
+    "category": "memorised_frame",
+    "severity": "high",
+    "betterAlternatives": [
+      "shapes everyday routines and economic decisions",
+      "underpins modern healthcare delivery",
+      "exerts a substantial influence on urban mobility"
+    ],
+    "whyAvoidVi": "Cụm khuôn mẫu chung chung; nên nêu cụ thể đối tượng tác động tới khía cạnh nào.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:in_a_nutshell",
+    "phrase": "in a nutshell",
+    "variants": [
+      "to cut a long story short"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "in conclusion",
+      "to summarise",
+      "taken together"
+    ],
+    "whyAvoidVi": "Thành ngữ văn nói quá thân mật, hạ điểm Lexical Resource về văn phong (register).",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:all_in_all",
+    "phrase": "all in all",
+    "variants": [],
+    "category": "filler",
+    "severity": "medium",
+    "betterAlternatives": [
+      "in conclusion",
+      "on balance",
+      "weighing both arguments"
+    ],
+    "whyAvoidVi": "Từ nối kết bài hơi thân mật và mòn; nên dùng 'in conclusion' hoặc 'on balance'.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:hotly_debated_topic",
+    "phrase": "hotly debated topic",
+    "variants": [
+      "heatedly debated topic",
+      "hot topic",
+      "burning issue"
+    ],
+    "category": "memorised_frame",
+    "severity": "high",
+    "betterAlternatives": [
+      "remains a contentious policy question",
+      "continues to divide educators and policymakers",
+      "attracts sustained public debate"
+    ],
+    "whyAvoidVi": "Mẫu câu mở bài bị lạm dụng khắp các lò luyện thi, nghe máy móc và thiếu sắc thái chủ đề.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:bone_of_contention",
+    "phrase": "bone of contention",
+    "variants": [],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "a persistent source of disagreement",
+      "a central point of dispute",
+      "a contested priority"
+    ],
+    "whyAvoidVi": "Thành ngữ báo chí/khẩu ngữ không hợp văn phong học thuật IELTS Academic.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:broaden_our_horizons",
+    "phrase": "broaden our horizons",
+    "variants": [
+      "broaden their horizons",
+      "broaden one's horizons",
+      "open our eyes"
+    ],
+    "category": "idiom",
+    "severity": "medium",
+    "betterAlternatives": [
+      "deepen cross-cultural understanding",
+      "expose learners to unfamiliar perspectives",
+      "expand intellectual curiosity"
+    ],
+    "whyAvoidVi": "Cụm quá sáo khi viết về du lịch hoặc giáo dục; diễn đạt cụ thể hơn giúp ăn điểm LR.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:tip_of_the_iceberg",
+    "phrase": "tip of the iceberg",
+    "variants": [],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "only the most visible symptom of a wider problem",
+      "merely a fraction of the underlying issue",
+      "one aspect of a deeper structural challenge"
+    ],
+    "whyAvoidVi": "Thành ngữ quen thuộc nhưng sáo rỗng, thiếu chính xác trong phân tích nguyên nhân-hệ quả.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:kill_two_birds",
+    "phrase": "kill two birds with one stone",
+    "variants": [
+      "killing two birds with one stone"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "address two policy goals simultaneously",
+      "deliver dual economic and environmental benefits",
+      "serve a complementary purpose"
+    ],
+    "whyAvoidVi": "Thành ngữ thân mật, sai văn phong trang trọng của IELTS Writing Academic.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:silver_lining",
+    "phrase": "silver lining",
+    "variants": [
+      "every cloud has a silver lining"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "an unexpected benefit",
+      "a compensating advantage",
+      "a constructive outcome"
+    ],
+    "whyAvoidVi": "Thành ngữ đời thường không tự nhiên trong văn nghị luận học thuật.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:food_for_thought",
+    "phrase": "food for thought",
+    "variants": [],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "warrants serious consideration",
+      "raises important questions for policymakers",
+      "merits closer examination"
+    ],
+    "whyAvoidVi": "Cụm thành ngữ báo chí thân mật, không phù hợp kết bài học thuật.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:time_is_money",
+    "phrase": "time is money",
+    "variants": [
+      "health is wealth",
+      "knowledge is power"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "productivity depends heavily on efficient time management",
+      "preventive healthcare protects long-term economic output",
+      "access to reliable information strengthens decision-making"
+    ],
+    "whyAvoidVi": "Châm ngôn sáo rỗng thay thế cho lập luận logic, làm giảm điểm Task Response.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:put_all_eggs",
+    "phrase": "put all eggs in one basket",
+    "variants": [
+      "put all their eggs in one basket",
+      "put all our eggs in one basket"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "rely excessively on a single revenue source",
+      "fail to diversify investment risks",
+      "concentrate vulnerability in one sector"
+    ],
+    "whyAvoidVi": "Thành ngữ khẩu ngữ; diễn đạt bằng thuật ngữ kinh tế/học thuật sẽ đạt band cao hơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:by_leaps_and_bounds",
+    "phrase": "by leaps and bounds",
+    "variants": [],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "at an accelerated pace",
+      "dramatically over the past decade",
+      "with remarkable speed"
+    ],
+    "whyAvoidVi": "Thành ngữ cũ và hơi kịch tính; nên dùng trạng từ học thuật chính xác hơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:first_and_foremost",
+    "phrase": "first and foremost",
+    "variants": [],
+    "category": "filler",
+    "severity": "medium",
+    "betterAlternatives": [
+      "primarily",
+      "the chief argument in favour is that",
+      "above all"
+    ],
+    "whyAvoidVi": "Cụm liệt kê bị lạm dụng thành thói quen máy móc đầu đoạn thân bài.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:fast_paced_world",
+    "phrase": "in today's fast-paced world",
+    "variants": [
+      "in today's modern world",
+      "in the modern fast-paced society",
+      "in today's society"
+    ],
+    "category": "opener",
+    "severity": "high",
+    "betterAlternatives": [
+      "in increasingly competitive labour markets",
+      "within high-density metropolitan areas",
+      "amid rising workplace demands"
+    ],
+    "whyAvoidVi": "Câu mở sáo rỗng, có thể gắn vào mọi đề mà không đóng góp ngữ cảnh thực.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:more_and_more_people",
+    "phrase": "more and more people",
+    "variants": [
+      "more and more individuals",
+      "more and more students"
+    ],
+    "category": "filler",
+    "severity": "medium",
+    "betterAlternatives": [
+      "a growing proportion of residents",
+      "an increasing number of commuters",
+      "a rising share of university applicants"
+    ],
+    "whyAvoidVi": "Cách diễn đạt band 5–6 lặp từ; thay bằng cụm danh từ học thuật cụ thể đối tượng.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:nowadays",
+    "phrase": "nowadays",
+    "variants": [],
+    "category": "opener",
+    "severity": "medium",
+    "betterAlternatives": [
+      "currently",
+      "in recent decades",
+      "in contemporary urban settings"
+    ],
+    "whyAvoidVi": "Hơi thân mật và bị lạm dụng ở đầu câu mở bài; dùng 'currently' hoặc mốc thời gian cụ thể.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:as_far_as_i_am_concerned",
+    "phrase": "as far as i am concerned",
+    "variants": [
+      "from my point of view",
+      "from my perspective",
+      "in my humble opinion"
+    ],
+    "category": "memorised_frame",
+    "severity": "medium",
+    "betterAlternatives": [
+      "i contend that",
+      "this essay argues that",
+      "i am convinced that"
+    ],
+    "whyAvoidVi": "Cụm nêu quan điểm dài dòng, hơi sáo hoặc khẩu ngữ; nêu lập trường trực tiếp sẽ sắc nét hơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:myriad_of",
+    "phrase": "a myriad of",
+    "variants": [
+      "a plethora of",
+      "a multitude of"
+    ],
+    "category": "exaggeration",
+    "severity": "medium",
+    "betterAlternatives": [
+      "a wide range of",
+      "several distinct",
+      "numerous"
+    ],
+    "whyAvoidVi": "Từ 'làm màu' thường bị thí sinh nhét vào gượng gạo, dễ sai sắc thái văn phong.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:pros_and_cons",
+    "phrase": "pros and cons",
+    "variants": [
+      "the pros and cons"
+    ],
+    "category": "filler",
+    "severity": "medium",
+    "betterAlternatives": [
+      "benefits and drawbacks",
+      "merits and limitations",
+      "advantages and potential risks"
+    ],
+    "whyAvoidVi": "Cụm thân mật hơn văn phong học thuật; nên dùng 'benefits and drawbacks' hoặc 'merits and limitations'.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:make_our_lives_easier",
+    "phrase": "make our lives easier",
+    "variants": [
+      "makes our lives easier",
+      "make people's lives easier",
+      "make life easier and more convenient"
+    ],
+    "category": "memorised_frame",
+    "severity": "medium",
+    "betterAlternatives": [
+      "reduce routine administrative burdens",
+      "streamline everyday transactions",
+      "save commuters substantial travel time"
+    ],
+    "whyAvoidVi": "Ý quá mơ hồ, thiếu chiều sâu giải thích; hãy chỉ rõ công việc nào trở nên nhanh hoặc hiệu quả hơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:in_the_modern_society",
+    "phrase": "in the modern society",
+    "variants": [
+      "in our modern society"
+    ],
+    "category": "opener",
+    "severity": "high",
+    "betterAlternatives": [
+      "in contemporary society",
+      "across industrialised economies",
+      "within modern cities"
+    ],
+    "whyAvoidVi": "Vừa sáo rỗng vừa sai mạo từ ('society' nghĩa khái quát không dùng 'the').",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:at_an_alarming_rate",
+    "phrase": "at an alarming rate",
+    "variants": [
+      "at an unprecedented rate"
+    ],
+    "category": "exaggeration",
+    "severity": "medium",
+    "betterAlternatives": [
+      "steadily over recent decades",
+      "at a pace that outstrips existing infrastructure",
+      "markedly since the turn of the century"
+    ],
+    "whyAvoidVi": "Cụm kịch tính hay bị dùng cho mọi xu hướng mà không nêu rõ mức độ tác động thực.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:this_essay_will_discuss",
+    "phrase": "this essay will discuss both views and give my opinion",
+    "variants": [
+      "this essay will discuss both sides and give my opinion",
+      "in this essay i will discuss"
+    ],
+    "category": "memorised_frame",
+    "severity": "high",
+    "betterAlternatives": [
+      "although both arguments carry weight, i maintain that...",
+      "while the former approach lowers costs, the latter offers more durable benefits",
+      "this essay examines both perspectives before arguing that..."
+    ],
+    "whyAvoidVi": "Mở bài 'hứa hẹn' không nêu rõ quan điểm ngay từ đầu, dễ bị giới hạn điểm Task Response.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:big_problem",
+    "phrase": "a big problem",
+    "variants": [
+      "huge problem",
+      "very big issue"
+    ],
+    "category": "filler",
+    "severity": "medium",
+    "betterAlternatives": [
+      "a pressing structural challenge",
+      "a substantial public concern",
+      "a severe policy obstacle"
+    ],
+    "whyAvoidVi": "Tính từ sơ cấp, quá chung chung; dùng tính từ học thuật chính xác theo ngữ cảnh.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:a_lot_of",
+    "phrase": "a lot of",
+    "variants": [
+      "lots of",
+      "tons of"
+    ],
+    "category": "filler",
+    "severity": "medium",
+    "betterAlternatives": [
+      "a substantial number of",
+      "considerable",
+      "extensive"
+    ],
+    "whyAvoidVi": "Lượng từ văn nói; trong IELTS Writing Academic nên dùng 'numerous', 'considerable', 'substantial'.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:hand_in_hand",
+    "phrase": "go hand in hand",
+    "variants": [
+      "goes hand in hand",
+      "going hand in hand"
+    ],
+    "category": "idiom",
+    "severity": "medium",
+    "betterAlternatives": [
+      "are closely interdependent",
+      "reinforce one another",
+      "frequently occur together"
+    ],
+    "whyAvoidVi": "Thành ngữ quen thuộc hơi mòn; động từ học thuật diễn tả mối quan hệ nhân quả rõ hơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:on_the_other_side_of_the_coin",
+    "phrase": "on the other side of the coin",
+    "variants": [
+      "on the flip side"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "conversely",
+      "by contrast",
+      "nevertheless, critics point out that"
+    ],
+    "whyAvoidVi": "Biến thể văn nói của 'on the other hand', không phù hợp bài luận học thuật.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:each_and_every",
+    "phrase": "each and every",
+    "variants": [],
+    "category": "exaggeration",
+    "severity": "medium",
+    "betterAlternatives": [
+      "every",
+      "the majority of",
+      "virtually all"
+    ],
+    "whyAvoidVi": "Lặp nghĩa thừa thãi và mang tính cường điệu văn nói.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:at_the_end_of_the_day",
+    "phrase": "at the end of the day",
+    "variants": [],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "ultimately",
+      "in the final analysis",
+      "in the long term"
+    ],
+    "whyAvoidVi": "Thành ngữ khẩu ngữ rất hay gặp trong Speaking nhưng không nên đưa vào Writing Academic.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:it_is_high_time",
+    "phrase": "it is high time",
+    "variants": [],
+    "category": "memorised_frame",
+    "severity": "medium",
+    "betterAlternatives": [
+      "governments ought to prioritise",
+      "urgent intervention is required to",
+      "policymakers should promptly address"
+    ],
+    "whyAvoidVi": "Cấu trúc kêu gọi hành động hơi sáo nếu lặp lại ở kết bài, dễ sai chia thì quá khứ đi kèm.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:join_hands",
+    "phrase": "join hands",
+    "variants": [
+      "join hands together"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "collaborate closely",
+      "coordinate policy efforts",
+      "share responsibility"
+    ],
+    "whyAvoidVi": "Dịch từ tiếng Việt 'chung tay', mang sắc thái khẩu hiệu thay vì văn phong học thuật.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:in_a_word",
+    "phrase": "in a word",
+    "variants": [
+      "in short"
+    ],
+    "category": "filler",
+    "severity": "medium",
+    "betterAlternatives": [
+      "in summary",
+      "in conclusion",
+      "overall"
+    ],
+    "whyAvoidVi": "Cụm kết bài quá ngắn gọn theo kiểu văn nói, không phù hợp kết luận bài luận học thuật.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:no_one_can_deny",
+    "phrase": "no one can deny",
+    "variants": [
+      "nobody can deny"
+    ],
+    "category": "exaggeration",
+    "severity": "high",
+    "betterAlternatives": [
+      "there is broad consensus that",
+      "empirical evidence suggests that",
+      "it is generally accepted that"
+    ],
+    "whyAvoidVi": "Khẳng định tuyệt đối không có hedging, làm giảm tính thuyết phục học thuật.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:with_the_advent_of",
+    "phrase": "with the advent of",
+    "variants": [],
+    "category": "opener",
+    "severity": "medium",
+    "betterAlternatives": [
+      "following the widespread adoption of",
+      "since the introduction of",
+      "as ... has matured"
+    ],
+    "whyAvoidVi": "Cụm mở bài quá phổ biến trong các bài mẫu đại trà; nên đổi bằng cấu trúc chủ động cụ thể.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:pave_the_way_for_a_brighter_future",
+    "phrase": "brighter future",
+    "variants": [
+      "better future for everyone",
+      "better tomorrow"
+    ],
+    "category": "exaggeration",
+    "severity": "high",
+    "betterAlternatives": [
+      "long-term economic resilience",
+      "sustainable urban growth",
+      "measurable improvements in public wellbeing"
+    ],
+    "whyAvoidVi": "Kết bài kiểu khẩu hiệu chung chung; nên chốt bằng hệ quả cụ thể gắn với luận điểm chính.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:easier_said_than_done",
+    "phrase": "easier said than done",
+    "variants": [],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "difficult to implement in practice",
+      "faces substantial administrative barriers",
+      "proves challenging to enforce"
+    ],
+    "whyAvoidVi": "Thành ngữ khẩu ngữ; dùng diễn đạt học thuật chỉ rõ trở ngại thực thi.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:take_it_for_granted",
+    "phrase": "take it for granted",
+    "variants": [
+      "take for granted"
+    ],
+    "category": "idiom",
+    "severity": "medium",
+    "betterAlternatives": [
+      "underestimate the value of",
+      "overlook the fragility of",
+      "assume continued availability of"
+    ],
+    "whyAvoidVi": "Thành ngữ hơi thân mật khi viết nghị luận; nên dùng động từ học thuật chính xác hơn.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:around_the_clock",
+    "phrase": "around the clock",
+    "variants": [
+      "24/7",
+      "twenty-four seven"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "continuously",
+      "throughout the day and night",
+      "without interruption"
+    ],
+    "whyAvoidVi": "Cách nói thân mật/báo chí, không hợp văn phong trang trọng của Writing Academic.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:couch_potato",
+    "phrase": "couch potato",
+    "variants": [
+      "couch potatoes"
+    ],
+    "category": "idiom",
+    "severity": "high",
+    "betterAlternatives": [
+      "sedentary individuals",
+      "physically inactive residents",
+      "people with prolonged screen habits"
+    ],
+    "whyAvoidVi": "Tiếng lóng văn nói, sai văn phong nghiêm trọng trong bài luận về sức khỏe.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  },
+  {
+    "id": "cliche:last_decade_witnessed_tremendous",
+    "phrase": "has witnessed tremendous changes",
+    "variants": [
+      "have witnessed tremendous changes",
+      "witnessed drastic changes"
+    ],
+    "category": "memorised_frame",
+    "severity": "high",
+    "betterAlternatives": [
+      "has undergone a marked shift towards",
+      "has experienced substantial restructuring in",
+      "has seen a steady rise in"
+    ],
+    "whyAvoidVi": "Mẫu câu mở bài học thuộc kinh điển, không mô tả cụ thể thay đổi gì đã xảy ra.",
+    "provenance": {
+      "createdBy": "llm+review",
+      "source": "llm:gemini-4-neon@2026-11-21",
+      "license": "own",
+      "qa": {
+        "schema": "pass",
+        "verifier": "pass",
+        "blindSolve": "na"
+      }
+    }
+  }
+]

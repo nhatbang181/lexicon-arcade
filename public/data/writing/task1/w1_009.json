@@ -1,0 +1,102 @@
+{
+  "id": "w1:009",
+  "kind": "pie",
+  "topic": "energy",
+  "difficulty": 2,
+  "prompt": "The pie charts below compare household electricity consumption by appliance category in Alderbury in 2000 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Household Electricity Consumption by Appliance Category in Alderbury (2000 vs 2025)",
+    "unit": "%",
+    "categories": [
+      "Heating & Cooling",
+      "Kitchen Appliances",
+      "Lighting",
+      "Home Electronics",
+      "Water Heating",
+      "Other"
+    ],
+    "series": [
+      {
+        "name": "2000",
+        "values": [
+          34,
+          22,
+          18,
+          9,
+          12,
+          5
+        ]
+      },
+      {
+        "name": "2025",
+        "values": [
+          28,
+          17,
+          7,
+          26,
+          14,
+          8
+        ]
+      }
+    ],
+    "pie": true
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Electricity demand shifted markedly away from traditional categories such as heating, kitchen appliances, and lighting towards home electronics between 2000 and 2025.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Heating and cooling remained the largest single share in both years, despite declining from 34% in 2000 to 28% in 2025.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "change",
+      "textEn": "Home electronics saw the biggest rise, nearly tripling from 9% to 26% to become the clear second-largest category.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "change",
+      "textEn": "Lighting experienced the steepest fall, shrinking by 11 percentage points from 18% in 2000 to just 7% in 2025.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "Kitchen appliances dropped from 22% to 17%, whereas water heating (12% to 14%) and other appliances (5% to 8%) grew modestly.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, household electricity use in Alderbury shifted substantially away from lighting, kitchen appliances, and climate control towards home electronics over the quarter-century. Heating and cooling retained the largest share in both years, though by 2025 home electronics had surged to nearly match it.",
+    "In general, the two most striking developments were the steep expansion of home electronics and the sharp contraction in lighting. While traditional heavy-load categories declined proportionally, water heating and miscellaneous appliances edged upwards slightly.",
+    "Taken as a whole, electricity consumption became much less concentrated in heating and lighting by 2025. Heating and cooling stayed in first place, yet home electronics rose from one of the smallest shares to almost rival the leader."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "shifted substantially away from",
+    "retained the largest share",
+    "steep expansion of home electronics",
+    "sharp contraction in lighting"
+  ],
+  "band8Model": {
+    "text": "The two pie charts illustrate how household electricity consumption in Alderbury was distributed across six appliance categories in 2000 and 2025.\n\nOverall, demand shifted substantially away from lighting, kitchen appliances, and climate control towards home electronics over the twenty-five-year span. Heating and cooling retained the largest share in both years, yet home electronics surged from a minor share to nearly rival it by 2025.\n\nIn 2000, heating and cooling dominated at 34%, followed by kitchen appliances at 22% and lighting at 18%. By 2025, all three proportions had fallen: heating and cooling dropped by 6 percentage points to 28%, kitchen appliances eased by 5 points to 17%, and lighting contracted sharply by 11 points to just 7%, becoming the smallest category.\n\nConversely, home electronics recorded the most dramatic growth, nearly tripling from 9% in 2000 to 26% in 2025, only 2 percentage points behind heating and cooling. The remaining two categories registered modest increases, with water heating edging up from 12% to 14% and other appliances rising from 5% to 8%.",
+    "wordCount": 171
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

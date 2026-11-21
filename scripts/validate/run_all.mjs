@@ -32,6 +32,10 @@ import {
   ListeningEpisodeSchema,
   ListeningQTypeSchema,
   DictationItemSchema,
+  WritingTask2PromptSchema,
+  WritingTask1PromptSchema,
+  EssayTypeSchema,
+  ChartKindSchema,
   TopicSchema,
   ManifestSchema,
   ProvenanceSchema,
@@ -42,6 +46,11 @@ import {
   normalizeWordLimit,
   canonicalizeIeltsExpression,
 } from '../../data-src/listening/_ielts_tokens.mjs';
+import {
+  extractNumbersFromString,
+  collectTask1AllowedNumbers,
+  isNumberGrounded,
+} from '../../data-src/writing/_verify_batch.mjs';
 import { LEGACY_FILES, countPayloadItems, sha256NormalizedLf } from '../data/60_build_manifest.mjs';
 
 const ROOT = process.cwd();
@@ -1568,6 +1577,365 @@ if (fs.existsSync(listeningDir)) {
   } else if (dictation !== null) {
     fail('listening/dictation.json must be a JSON array');
   }
+}
+
+// ---------------------------------------------------------------------------
+// 7d. Validate public/data/writing/** & [INV-W1..W4]
+// ---------------------------------------------------------------------------
+
+const WritingClicheSchema = z.object({
+  id: z.string().startsWith('cliche:'),
+  phrase: z.string().min(2),
+  variants: z.array(z.string().min(2)).optional(),
+  category: z.enum(['opener', 'idiom', 'filler', 'exaggeration', 'memorised_frame']),
+  severity: z.enum(['high', 'medium']),
+  betterAlternatives: z.array(z.string().min(2)).min(2),
+  whyAvoidVi: z.string().min(1),
+  provenance: ProvenanceSchema,
+});
+
+const Task1IndexEntrySchema = z.object({
+  id: z.string().startsWith('w1:'),
+  file: z.string().regex(/^data\/writing\/task1\/w1_[a-z0-9_]+\.json$/),
+  kind: ChartKindSchema,
+  topic: TopicSchema,
+  difficulty: z.number().int().min(1).max(10),
+  title: z.string().min(1),
+  promptPreview: z.string().min(1),
+  keyFeatureCount: z.number().int().min(3),
+  wordCount: z.number().int().min(160).max(200),
+});
+
+const writingDir = path.join(PUBLIC_DATA, 'writing');
+if (fs.existsSync(writingDir)) {
+  // 7d.1 Validate public/data/writing/cliches.json
+  const cliches = readJsonChecked('writing/cliches.json');
+  const clicheMatchers = [];
+  if (Array.isArray(cliches)) {
+    if (cliches.length < 40) {
+      fail(`writing/cliches.json has ${cliches.length} items (minimum >= 40)`);
+    }
+    const seenClichePhrases = new Set();
+    for (let i = 0; i < cliches.length; i++) {
+      const c = cliches[i];
+      const parsed = WritingClicheSchema.safeParse(c);
+      if (!parsed.success) {
+        fail(
+          `writing/cliches.json[${i}] (${c?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      checkProvenanceInv(c, 'writing/cliches.json');
+      registerGlobalId(c.id, 'writing/cliches.json');
+      const norm = c.phrase.trim().toLowerCase();
+      if (seenClichePhrases.has(norm)) {
+        fail(`writing/cliches.json duplicate phrase: "${c.phrase}"`);
+      }
+      seenClichePhrases.add(norm);
+      if (wordCount(c.whyAvoidVi) > 30) {
+        fail(`writing/cliches.json ${c.id}: whyAvoidVi exceeds 30 words`);
+      }
+      for (const p of [c.phrase, ...(c.variants || [])]) {
+        const esc = p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        clicheMatchers.push({ id: c.id, phrase: p, re: new RegExp(`\\b${esc}\\b`, 'i') });
+      }
+    }
+    summary.push(`writing/cliches.json: ${cliches.length} items (>= 40, 0 duplicates)`);
+  } else if (cliches !== null) {
+    fail('writing/cliches.json must be a JSON array');
+  }
+
+  // 7d.2 Validate public/data/writing/task2_prompts.json
+  const task2 = readJsonChecked('writing/task2_prompts.json');
+  if (Array.isArray(task2)) {
+    if (task2.length < 60) {
+      fail(`[INV-W4] writing/task2_prompts.json has ${task2.length} items (MVP minimum >= 60)`);
+    }
+    const typeCounts = Object.fromEntries(EssayTypeSchema.options.map((t) => [t, 0]));
+    const topicSet = new Set();
+    const seenPrompts = new Set();
+
+    for (let i = 0; i < task2.length; i++) {
+      const item = task2[i];
+      const parsed = WritingTask2PromptSchema.safeParse(item);
+      if (!parsed.success) {
+        fail(
+          `writing/task2_prompts.json[${i}] (${item?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      checkProvenanceInv(item, 'writing/task2_prompts.json');
+      registerGlobalId(item.id, 'writing/task2_prompts.json');
+
+      const pNorm = item.prompt.trim().toLowerCase();
+      if (seenPrompts.has(pNorm)) fail(`writing/task2_prompts.json duplicate prompt in ${item.id}`);
+      seenPrompts.add(pNorm);
+
+      typeCounts[item.essayType] = (typeCounts[item.essayType] || 0) + 1;
+      topicSet.add(item.topic);
+
+      // [INV-W1]
+      const actualWc = wordCount(item.band8Model.text);
+      if (actualWc < 270 || actualWc > 320) {
+        fail(`[INV-W1] ${item.id}: band8Model wordCount=${actualWc} outside [270, 320]`);
+      }
+      if (Math.abs(item.band8Model.wordCount - actualWc) > 2) {
+        fail(`[INV-W1] ${item.id}: declared wordCount=${item.band8Model.wordCount} != actual=${actualWc}`);
+      }
+
+      if (item.ideaBank.length < 6) {
+        fail(`writing/task2_prompts.json ${item.id}: ideaBank has ${item.ideaBank.length} items (minimum >= 6)`);
+      }
+      if (item.band8Model.notes.length < 6) {
+        fail(`writing/task2_prompts.json ${item.id}: band8Model.notes has ${item.band8Model.notes.length} (minimum >= 6)`);
+      }
+      for (let ni = 0; ni < item.band8Model.notes.length; ni++) {
+        const n = item.band8Model.notes[ni];
+        if (n.start < 0 || n.end > item.band8Model.text.length || n.start >= n.end) {
+          fail(`writing/task2_prompts.json ${item.id}: notes[${ni}] invalid offset [${n.start}, ${n.end}]`);
+        }
+      }
+
+      for (const cid of item.usefulCollocationIds) {
+        if (colIds.size > 0 && !colIds.has(cid)) {
+          fail(`writing/task2_prompts.json ${item.id}: unknown collocationId "${cid}"`);
+        }
+      }
+
+      for (const cm of clicheMatchers) {
+        if (cm.re.test(item.band8Model.text)) {
+          fail(`writing/task2_prompts.json ${item.id}: band8Model contains cliché "${cm.phrase}"`);
+        }
+      }
+    }
+
+    for (const [et, cnt] of Object.entries(typeCounts)) {
+      if (cnt < 10) {
+        fail(`[INV-W4] writing/task2_prompts.json essayType="${et}" has ${cnt} prompts (MVP minimum >= 10)`);
+      }
+    }
+    if (topicSet.size < 12) {
+      fail(`writing/task2_prompts.json covers ${topicSet.size} topics (minimum >= 12)`);
+    }
+
+    const typeSummary = Object.entries(typeCounts)
+      .map(([k, v]) => `${k}:${v}`)
+      .join(', ');
+    summary.push(
+      `writing/task2_prompts.json: ${task2.length} prompts (${typeSummary}; ${topicSet.size} topics)`
+    );
+  } else if (task2 !== null) {
+    fail('writing/task2_prompts.json must be a JSON array');
+  }
+
+  // 7d.3 Validate public/data/writing/task1/index.json & task1/*.json
+  const task1Dir = path.join(writingDir, 'task1');
+  const task1Index = readJsonChecked('writing/task1/index.json');
+  const diskTask1Files = fs.existsSync(task1Dir)
+    ? fs
+        .readdirSync(task1Dir)
+        .filter((f) => f.endsWith('.json') && f !== 'index.json')
+        .sort()
+    : [];
+
+  const task1IndexByFile = new Map();
+  if (Array.isArray(task1Index)) {
+    for (let i = 0; i < task1Index.length; i++) {
+      const entry = task1Index[i];
+      const parsed = Task1IndexEntrySchema.safeParse(entry);
+      if (!parsed.success) {
+        fail(
+          `writing/task1/index.json[${i}] (${entry?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+            .slice(0, 2)
+            .map((e) => `${e.path.join('.')}: ${e.message}`)
+            .join('; ')}`
+        );
+        continue;
+      }
+      const fname = path.basename(entry.file);
+      if (task1IndexByFile.has(fname)) fail(`writing/task1/index.json duplicate file entry: ${fname}`);
+      task1IndexByFile.set(fname, entry);
+      if (!fs.existsSync(path.join(task1Dir, fname))) {
+        fail(`writing/task1/index.json references missing file: ${entry.file}`);
+      }
+    }
+    for (const fname of diskTask1Files) {
+      if (!task1IndexByFile.has(fname)) {
+        fail(`Disk file public/data/writing/task1/${fname} missing from writing/task1/index.json`);
+      }
+    }
+  } else if (task1Index !== null) {
+    fail('writing/task1/index.json must be a JSON array');
+  }
+
+  const kindCounts = Object.fromEntries(ChartKindSchema.options.map((k) => [k, 0]));
+  for (const fname of diskTask1Files) {
+    const item = readJsonChecked(`writing/task1/${fname}`);
+    if (!item) continue;
+    const parsed = WritingTask1PromptSchema.safeParse(item);
+    if (!parsed.success) {
+      fail(
+        `writing/task1/${fname} (${item?.id ?? 'no-id'}) schema error: ${parsed.error.issues
+          .slice(0, 2)
+          .map((e) => `${e.path.join('.')}: ${e.message}`)
+          .join('; ')}`
+      );
+      continue;
+    }
+    checkProvenanceInv(item, `writing/task1/${fname}`);
+    registerGlobalId(item.id, `writing/task1/${fname}`);
+    kindCounts[item.kind] = (kindCounts[item.kind] || 0) + 1;
+
+    // [INV-W1]
+    const actualWc = wordCount(item.band8Model.text);
+    if (actualWc < 160 || actualWc > 200) {
+      fail(`[INV-W1] ${item.id}: band8Model wordCount=${actualWc} outside [160, 200]`);
+    }
+    if (Math.abs(item.band8Model.wordCount - actualWc) > 2) {
+      fail(`[INV-W1] ${item.id}: declared wordCount=${item.band8Model.wordCount} != actual=${actualWc}`);
+    }
+
+    // [INV-W2]
+    if (item.keyFeatures.length < 3) {
+      fail(`[INV-W2] ${item.id}: keyFeatures has ${item.keyFeatures.length} (minimum >= 3)`);
+    }
+    if (
+      !item.keyFeatures.some(
+        (kf) => (kf.kind === 'overall_trend' || kf.kind === 'grouping') && kf.mustMention === true
+      )
+    ) {
+      fail(`[INV-W2] ${item.id}: requires >= 1 keyFeature with kind overall_trend|grouping and mustMention=true`);
+    }
+
+    // Visual structural invariants by kind
+    if (item.kind === 'bar' || item.kind === 'line' || item.kind === 'pie') {
+      if (!item.chart) fail(`${item.id}: kind="${item.kind}" requires chart`);
+      else {
+        for (const s of item.chart.series) {
+          if (s.values.length !== item.chart.categories.length) {
+            fail(`${item.id}: series "${s.name}" length != categories length`);
+          }
+        }
+        if (item.kind === 'pie') {
+          if (item.chart.pie !== true) fail(`${item.id}: pie visual must set chart.pie=true`);
+          for (const s of item.chart.series) {
+            const sum = s.values.reduce((a, b) => a + b, 0);
+            if (Math.abs(sum - 100) > 0.01) {
+              fail(`${item.id}: pie series "${s.name}" sums to ${sum} (must equal 100)`);
+            }
+          }
+        }
+      }
+    } else if (item.kind === 'table') {
+      if (!item.table) fail(`${item.id}: kind="table" requires table`);
+      else {
+        for (let ri = 0; ri < item.table.rows.length; ri++) {
+          if (item.table.rows[ri].length !== item.table.columns.length) {
+            fail(`${item.id}: table row[${ri}] length != columns length`);
+          }
+        }
+      }
+    } else if (item.kind === 'mixed') {
+      if (!item.chart || !item.table) fail(`${item.id}: kind="mixed" requires both chart and table`);
+      else {
+        for (const s of item.chart.series) {
+          if (s.values.length !== item.chart.categories.length) {
+            fail(`${item.id}: mixed chart series "${s.name}" length mismatch`);
+          }
+        }
+        if (item.chart.pie) {
+          for (const s of item.chart.series) {
+            const sum = s.values.reduce((a, b) => a + b, 0);
+            if (Math.abs(sum - 100) > 0.01) {
+              fail(`${item.id}: mixed pie series "${s.name}" sums to ${sum} (must equal 100)`);
+            }
+          }
+        }
+        for (let ri = 0; ri < item.table.rows.length; ri++) {
+          if (item.table.rows[ri].length !== item.table.columns.length) {
+            fail(`${item.id}: mixed table row[${ri}] length mismatch`);
+          }
+        }
+      }
+    } else if (item.kind === 'process') {
+      if (!item.process) fail(`${item.id}: kind="process" requires process`);
+      else {
+        const sIds = new Set(item.process.steps.map((s) => s.id));
+        if (item.process.steps.length < 6 || item.process.steps.length > 10) {
+          fail(`${item.id}: process steps=${item.process.steps.length} outside [6, 10]`);
+        }
+        for (const [u, v] of item.process.edges) {
+          if (!sIds.has(u) || !sIds.has(v)) {
+            fail(`${item.id}: process edge [${u}, ${v}] references unknown step`);
+          }
+        }
+      }
+    } else if (item.kind === 'map') {
+      if (!item.maps) fail(`${item.id}: kind="map" requires maps`);
+      else if (item.maps.before.year === item.maps.after.year) {
+        fail(`${item.id}: maps before.year === after.year`);
+      }
+    }
+
+    // [INV-W3] Numeric grounding in band8Model for quantitative visuals
+    if (['bar', 'line', 'pie', 'table', 'mixed'].includes(item.kind)) {
+      const { derived } = collectTask1AllowedNumbers(item);
+      for (const n of extractNumbersFromString(item.band8Model.text)) {
+        if (!isNumberGrounded(n, derived)) {
+          fail(`[INV-W3] ${item.id}: number ${n} in band8Model not grounded in visual data`);
+        }
+      }
+    }
+
+    if (item.overviewModels.length < 2) {
+      fail(`${item.id}: overviewModels has ${item.overviewModels.length} (minimum >= 2)`);
+    }
+    const overviewsLower = item.overviewModels.join(' ').toLowerCase();
+    for (const kp of item.overviewKeyPhrases || []) {
+      if (!overviewsLower.includes(kp.toLowerCase())) {
+        fail(`${item.id}: overviewKeyPhrase "${kp}" not found in overviewModels`);
+      }
+    }
+    for (const cm of clicheMatchers) {
+      if (cm.re.test(item.band8Model.text) || cm.re.test(item.overviewModels.join(' '))) {
+        fail(`${item.id}: contains cliché "${cm.phrase}"`);
+      }
+    }
+
+    // Cross-check index entry
+    const idxEntry = task1IndexByFile.get(fname);
+    if (idxEntry) {
+      if (idxEntry.id !== item.id) fail(`writing/task1/index.json id mismatch for ${fname}`);
+      if (idxEntry.kind !== item.kind) fail(`writing/task1/index.json kind mismatch for ${item.id}`);
+      if (idxEntry.topic !== item.topic) fail(`writing/task1/index.json topic mismatch for ${item.id}`);
+      if (idxEntry.difficulty !== item.difficulty) fail(`writing/task1/index.json difficulty mismatch for ${item.id}`);
+      if (idxEntry.keyFeatureCount !== item.keyFeatures.length) {
+        fail(`writing/task1/index.json keyFeatureCount mismatch for ${item.id}`);
+      }
+      if (idxEntry.wordCount !== item.band8Model.wordCount) {
+        fail(`writing/task1/index.json wordCount mismatch for ${item.id}`);
+      }
+    }
+  }
+
+  if (diskTask1Files.length < 24) {
+    fail(`[INV-W4] writing/task1 has ${diskTask1Files.length} visuals (MVP minimum >= 24)`);
+  }
+  for (const [k, cnt] of Object.entries(kindCounts)) {
+    if (cnt < 3) {
+      fail(`[INV-W4] writing/task1 kind="${k}" has ${cnt} visuals (MVP minimum >= 3)`);
+    }
+  }
+  const kindSummary = Object.entries(kindCounts)
+    .map(([k, v]) => `${k}:${v}`)
+    .join(', ');
+  summary.push(`writing/task1: ${diskTask1Files.length} visuals (${kindSummary})`);
 }
 
 // ---------------------------------------------------------------------------

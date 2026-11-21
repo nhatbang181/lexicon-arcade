@@ -1,0 +1,128 @@
+{
+  "id": "w1:008",
+  "kind": "line",
+  "topic": "economy",
+  "difficulty": 5,
+  "prompt": "The line graph below compares the quarterly retail sales index (2018 Q1 = 100) for physical stores and online retailers in Country B between 2018 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Quarterly Retail Sales Index in Country B: Physical Stores vs Online Retailers (2018-2024)",
+    "unit": "Index (2018 Q1 = 100)",
+    "xLabel": "Quarter",
+    "yLabel": "Sales Index",
+    "categories": [
+      "2018 Q1",
+      "2018 Q3",
+      "2019 Q1",
+      "2019 Q3",
+      "2020 Q1",
+      "2020 Q3",
+      "2021 Q1",
+      "2021 Q3",
+      "2022 Q1",
+      "2022 Q3",
+      "2023 Q1",
+      "2023 Q3",
+      "2024 Q1",
+      "2024 Q3"
+    ],
+    "series": [
+      {
+        "name": "Physical Stores",
+        "values": [
+          100,
+          102,
+          101,
+          103,
+          94,
+          88,
+          91,
+          97,
+          99,
+          102,
+          101,
+          104,
+          103,
+          105
+        ]
+      },
+      {
+        "name": "Online Retailers",
+        "values": [
+          100,
+          106,
+          110,
+          116,
+          128,
+          152,
+          161,
+          158,
+          155,
+          162,
+          168,
+          174,
+          179,
+          186
+        ]
+      }
+    ],
+    "pie": false
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "Starting from the same index baseline of 100 in 2018 Q1, online sales expanded rapidly across the period whereas physical store sales stagnated overall.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "change",
+      "textEn": "The two channels diverged sharply in 2020, when online retail jumped to 152 in 2020 Q3 while physical stores fell to a trough of 88.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "highest",
+      "textEn": "Online retailers reached a period high of 186 in 2024 Q3 after a minor pullback from 161 in 2021 Q1 to 155 in 2022 Q1.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "comparison",
+      "textEn": "Physical stores did not regain their 2018 baseline until 2022 Q3 (102) and finished at just 105 in 2024 Q3, trailing online retailers by 81 index points.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "change",
+      "textEn": "Even before the 2020 shock, online sales were already outpacing physical stores, rising to 116 by 2019 Q3 compared with 103 for brick-and-mortar shops.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, the two retail channels diverged dramatically from their shared 2018 baseline. Online sales grew strongly throughout the period, propelled by a steep 2020 surge, whereas physical stores suffered a pronounced dip in 2020 and achieved only marginal net growth by 2024.",
+    "In general, online retail steadily widened its lead over physical stores between 2018 and 2024, interrupted only by a brief plateau during 2021 and early 2022. Brick-and-mortar trade, by contrast, experienced a mid-period contraction before edging slightly above its starting level.",
+    "Taken as a whole, retail growth in Country B was driven overwhelmingly by online channels, which nearly doubled their starting index. Physical stores recovered slowly from their 2020 trough, finishing only slightly higher than where they began."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "diverged dramatically",
+    "steep 2020 surge",
+    "marginal net growth",
+    "brief plateau"
+  ],
+  "band8Model": {
+    "text": "The line graph tracks the quarterly retail sales index, with 2018 Q1 set at 100, for physical stores and online retailers in Country B from 2018 to 2024.\n\nOverall, the two channels diverged dramatically from their shared baseline. Online sales expanded strongly throughout the period, propelled by a steep 2020 surge, whereas physical stores suffered a pronounced contraction in 2020 and recorded only marginal net growth by 2024.\n\nBetween 2018 Q1 and 2019 Q3, online retail climbed steadily from 100 to 116, while physical stores hovered narrowly between 100 and 103. A sharp split then emerged in 2020: physical store sales fell to 94 in 2020 Q1 and hit a trough of 88 in 2020 Q3, whereas online sales leaped to 128 and then 152 over the same quarters, reaching 161 in 2021 Q1.\n\nFollowing a brief dip to 155 in 2022 Q1, online sales resumed steady growth to peak at 186 in 2024 Q3. Physical stores recovered far more gradually, passing 100 again in 2022 Q3 at 102 and ending at 105, leaving an 81-point gap between the two channels.",
+    "wordCount": 181
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

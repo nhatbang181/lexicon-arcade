@@ -1,0 +1,112 @@
+{
+  "id": "w1:012",
+  "kind": "table",
+  "topic": "transport",
+  "difficulty": 4,
+  "prompt": "The table below provides information about the metro rail systems in five cities, including the year each opened, route length, annual passenger numbers, and number of stations. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "table": {
+    "title": "Key Characteristics of Metro Rail Systems in Five Fictional Cities",
+    "columns": [
+      "City",
+      "Year Opened",
+      "Route Length (km)",
+      "Annual Passengers (millions)",
+      "Number of Stations"
+    ],
+    "rows": [
+      [
+        "Alderbury",
+        1908,
+        245,
+        780,
+        168
+      ],
+      [
+        "Portvale",
+        1954,
+        182,
+        640,
+        124
+      ],
+      [
+        "Crestholm",
+        1978,
+        134,
+        490,
+        92
+      ],
+      [
+        "Westmoor",
+        1996,
+        86,
+        210,
+        58
+      ],
+      [
+        "Northport",
+        2012,
+        62,
+        145,
+        44
+      ]
+    ]
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "overall_trend",
+      "textEn": "There is a direct correspondence between system age and scale: older metro networks consistently have longer routes, more stations, and substantially higher annual ridership.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Alderbury, the oldest system (opened 1908), led every metric with 245 km of track, 168 stations, and 780 million annual passengers.",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "lowest",
+      "textEn": "Northport, the newest network (2012), had the smallest footprint across all categories: 62 km, 44 stations, and 145 million yearly riders.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "grouping",
+      "textEn": "The three older networks (Alderbury, Portvale, and Crestholm) each carried close to half a billion or more riders annually, far surpassing the newer systems in Westmoor and Northport.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "Alderbury carried more than five times as many annual passengers as Northport across nearly four times the route length.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, the five metro systems show a clear positive link between age and scale: the older a network is, the longer its route, the more stations it operates, and the higher its annual ridership. Alderbury dominated every measure, whereas the newest system, Northport, ranked last throughout.",
+    "In general, the three twentieth-century networks built before 1980 were vastly larger and busier than the two more recent systems. Across every column, the five cities maintained the exact same descending order from Alderbury down to Northport.",
+    "Taken as a whole, system longevity aligned precisely with network size and passenger volume. Alderbury and Portvale operated extensive, high-capacity networks, in sharp contrast to the compact, lower-volume lines in Westmoor and Northport."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "clear positive link between age and scale",
+    "exact same descending order",
+    "dominated every measure",
+    "in sharp contrast to"
+  ],
+  "band8Model": {
+    "text": "The table compares five metro rail networks in terms of their opening year, route length, annual ridership, and station count.\n\nOverall, there was a clear positive link between age and scale, with the five cities following the exact same descending order across every metric. Alderbury dominated every measure, whereas the newest network, Northport, ranked lowest throughout.\n\nThe three oldest systems were markedly larger and busier. Alderbury, opened in 1908, operated 245 km of track and 168 stations, carrying 780 million passengers annually. Portvale (1954) ranked second with 182 km, 124 stations, and 640 million riders. Crestholm, launched in 1978, had 134 km of route and 92 stations, yet still transported 490 million passengers a year, demonstrating strong ridership relative to its length.\n\nIn sharp contrast, the two most recent systems remained far smaller. Westmoor, which opened in 1996, spanned 86 km across 58 stations and served 210 million passengers annually. Northport, opened in 2012, had just 62 km of track, 44 stations, and 145 million annual journeys, roughly one-fifth of Alderbury's patronage.",
+    "wordCount": 172
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}

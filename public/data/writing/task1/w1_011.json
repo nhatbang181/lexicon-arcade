@@ -1,0 +1,99 @@
+{
+  "id": "w1:011",
+  "kind": "pie",
+  "topic": "media",
+  "difficulty": 5,
+  "prompt": "The pie charts below compare the primary sources of daily news used by adults aged 18-34 and adults aged 55+ in Country C. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+  "chart": {
+    "title": "Primary Sources of Daily News by Age Cohort in Country C",
+    "unit": "%",
+    "categories": [
+      "Social Media",
+      "News Websites & Apps",
+      "Television",
+      "Print Newspapers",
+      "Radio & Podcasts"
+    ],
+    "series": [
+      {
+        "name": "Adults Aged 18-34",
+        "values": [
+          44,
+          31,
+          11,
+          4,
+          10
+        ]
+      },
+      {
+        "name": "Adults Aged 55+",
+        "values": [
+          9,
+          18,
+          43,
+          19,
+          11
+        ]
+      }
+    ],
+    "pie": true
+  },
+  "keyFeatures": [
+    {
+      "id": "kf1",
+      "kind": "grouping",
+      "textEn": "Daily news consumption was sharply polarised by age: three-quarters of 18-34-year-olds relied on digital outlets, whereas over three-fifths of the 55+ group used television or print.",
+      "mustMention": true
+    },
+    {
+      "id": "kf2",
+      "kind": "highest",
+      "textEn": "Social media was the dominant news source for adults aged 18-34 (44%), almost mirroring television's leading position among adults aged 55+ (43%).",
+      "mustMention": true
+    },
+    {
+      "id": "kf3",
+      "kind": "lowest",
+      "textEn": "Print newspapers attracted just 4% of younger adults, whereas social media was the least popular outlet for the 55+ cohort at 9%.",
+      "mustMention": true
+    },
+    {
+      "id": "kf4",
+      "kind": "comparison",
+      "textEn": "Radio and podcasts represented the sole area of generational convergence, accounting for 10% of younger adults and 11% of older adults.",
+      "mustMention": true
+    },
+    {
+      "id": "kf5",
+      "kind": "comparison",
+      "textEn": "News websites and apps served as the second-largest digital channel for younger adults (31%) and also drew a notable 18% of the older cohort.",
+      "mustMention": false
+    }
+  ],
+  "overviewModels": [
+    "Overall, news consumption in Country C was sharply divided along generational lines. Younger adults depended overwhelmingly on digital channels, particularly social media, whereas older adults relied predominantly on legacy broadcast and print media, with radio and podcasts forming the only common ground.",
+    "In general, the two cohorts exhibited almost mirror-image preferences: social media led among younger respondents to much the same extent that television dominated among older citizens. Print newspapers barely registered with younger adults, while audio formats attracted an almost identical share in both groups.",
+    "Taken as a whole, age strongly dictated primary news habits, separating a predominantly online younger audience from a television- and print-oriented older cohort. Only radio and podcasts appealed equally across both demographics."
+  ],
+  "overviewKeyPhrases": [
+    "Overall,",
+    "sharply divided along generational lines",
+    "mirror-image preferences",
+    "legacy broadcast and print media",
+    "only common ground"
+  ],
+  "band8Model": {
+    "text": "The two pie charts compare the primary daily news sources preferred by adults aged 18-34 and those aged 55+ in Country C.\n\nOverall, news habits were sharply divided along generational lines, displaying almost mirror-image preferences. Younger adults depended overwhelmingly on digital platforms, whereas older adults favoured legacy broadcast and print media, with radio and podcasts representing the only common ground.\n\nAmong adults aged 18-34, digital channels accounted for exactly 75% of primary news consumption: social media led clearly at 44%, followed by news websites and apps at 31%. Traditional formats played a minor role for this cohort, with television attracting 11% and print newspapers just 4%, the lowest share across both charts.\n\nConversely, adults aged 55+ leaned heavily on conventional outlets. Television held the dominant position at 43%, nearly matching social media's share among younger respondents, while print newspapers stood at 19%, almost five times the younger figure. Dedicated news websites and apps still drew 18% of older readers, whereas social media trailed at 9%. Notably, radio and podcasts showed virtually no generational gap, at 10% for 18-34-year-olds and 11% for those aged 55+.",
+    "wordCount": 184
+  },
+  "provenance": {
+    "createdBy": "llm+review",
+    "source": "llm:gemini-4-neon@2026-11-21",
+    "license": "own",
+    "qa": {
+      "schema": "pass",
+      "verifier": "pass",
+      "blindSolve": "na"
+    }
+  }
+}
