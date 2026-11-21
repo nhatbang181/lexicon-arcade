@@ -19,6 +19,17 @@ import {
   Skeleton,
 } from '../../design/components';
 import { CANONICAL_SFX_CUES, DEFAULT_SFX_SPRITE } from '../../core/audio/sfx';
+import { GradingPanel, type GradingPanelGradedPayload } from '../../games/_shared';
+import {
+  SPEAKING_CLAUDE_RESPONSE,
+  SPEAKING_FIXTURE_ATTEMPT,
+  SPRINT_OVERVIEW_CLAUDE_RESPONSE,
+  SPRINT_OVERVIEW_FIXTURE_ATTEMPT,
+  TASK1_CLAUDE_RESPONSE,
+  TASK1_FIXTURE_ATTEMPT,
+  TASK2_CLAUDE_RESPONSE,
+  TASK2_FIXTURE_ATTEMPT,
+} from '../../test/fixtures/grading';
 import { useAudio, useTheme } from '../providers';
 
 const GAME_ICON_ITEMS = [
@@ -60,6 +71,33 @@ const ILLUSTRATION_ITEMS = [
   { id: 'offline', label: 'Offline · Chế độ ngoại tuyến' },
 ] as const;
 
+const GRADING_DEMO_SCENARIOS = [
+  {
+    id: 'task2' as const,
+    label: 'Task 2 Essay',
+    packetInput: TASK2_FIXTURE_ATTEMPT,
+    sampleResponse: TASK2_CLAUDE_RESPONSE,
+  },
+  {
+    id: 'task1' as const,
+    label: 'Task 1 Report',
+    packetInput: TASK1_FIXTURE_ATTEMPT,
+    sampleResponse: TASK1_CLAUDE_RESPONSE,
+  },
+  {
+    id: 'speaking' as const,
+    label: 'Speaking Mock',
+    packetInput: SPEAKING_FIXTURE_ATTEMPT,
+    sampleResponse: SPEAKING_CLAUDE_RESPONSE,
+  },
+  {
+    id: 'sprint' as const,
+    label: 'W2 Overview Sprint',
+    packetInput: SPRINT_OVERVIEW_FIXTURE_ATTEMPT,
+    sampleResponse: SPRINT_OVERVIEW_CLAUDE_RESPONSE,
+  },
+] as const;
+
 export const DevComponentsScreen: React.FC = () => {
   const { theme, setTheme } = useTheme();
   const { sfxVolume, setSfxVolume, muted, toggleMute, playSfx, lastPlayedCue } = useAudio();
@@ -67,6 +105,21 @@ export const DevComponentsScreen: React.FC = () => {
   const [audioPlaying, setAudioPlaying] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [gradingDemoId, setGradingDemoId] = useState<(typeof GRADING_DEMO_SCENARIOS)[number]['id']>('task2');
+  const [lastGradedSummary, setLastGradedSummary] = useState<string | null>(null);
+
+  const activeGradingDemo =
+    GRADING_DEMO_SCENARIOS.find((s) => s.id === gradingDemoId) ?? GRADING_DEMO_SCENARIOS[0];
+
+  const handleDemoGraded = (payload: GradingPanelGradedPayload) => {
+    const bandText =
+      payload.postcheck.computedOverallBand !== null
+        ? `Band ${payload.postcheck.computedOverallBand.toFixed(1)}`
+        : 'Sprint (sao)';
+    setLastGradedSummary(
+      `onGraded: ${payload.parsed.data.kind} · ${payload.parsed.data.attemptId} · ${bandText} · ${payload.postcheck.quoteAudit.verifiedCount}/${payload.postcheck.quoteAudit.totalChecked} quotes khớp`,
+    );
+  };
 
   const baseUrl = import.meta.env.BASE_URL;
 
@@ -466,6 +519,58 @@ export const DevComponentsScreen: React.FC = () => {
             ))}
           </div>
         </div>
+      </Card>
+
+      {/* 9. GradingPanel Demo (07-GRADING-WITH-CLAUDE.md) */}
+      <Card padding="lg" className="space-y-5" data-testid="dev-grading-panel-showcase">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+              9. GradingPanel · Chấm bài 0 đồng qua Claude chat (07-GRADING-WITH-CLAUDE.md)
+            </h2>
+            <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
+              Thử trọn luồng 3 bước: Copy gói chấm → bấm &ldquo;Dán kết quả mẫu&rdquo; → Phân tích &amp;
+              Hậu kiểm trích dẫn.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2">
+            {GRADING_DEMO_SCENARIOS.map((sc) => (
+              <Button
+                key={sc.id}
+                size="sm"
+                variant={gradingDemoId === sc.id ? 'primary' : 'secondary'}
+                skill={sc.id === 'speaking' ? 'speaking' : 'writing'}
+                onClick={() => {
+                  setGradingDemoId(sc.id);
+                  setLastGradedSummary(null);
+                }}
+              >
+                {sc.label}
+              </Button>
+            ))}
+          </div>
+        </div>
+
+        {lastGradedSummary && (
+          <div
+            className="rounded-[var(--radius-sm)] border px-3 py-2 text-xs font-mono"
+            style={{
+              backgroundColor: 'var(--color-surface-2)',
+              borderColor: 'var(--color-correct)',
+              color: 'var(--color-correct)',
+            }}
+            data-testid="dev-grading-callback-summary"
+          >
+            {lastGradedSummary}
+          </div>
+        )}
+
+        <GradingPanel
+          packetInput={activeGradingDemo.packetInput}
+          sampleResponse={activeGradingDemo.sampleResponse}
+          onGraded={handleDemoGraded}
+        />
       </Card>
 
       <Modal
