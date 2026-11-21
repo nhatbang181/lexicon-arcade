@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Route, Switch } from 'wouter';
 import { TodayScreen } from './screens/TodayScreen';
 import { HubScreen } from './screens/HubScreen';
@@ -12,6 +12,10 @@ import { PortfolioScreen } from '../features/portfolio';
 import { DevComponentsScreen } from './screens/DevComponentsScreen';
 import { LegacyScreen } from './screens/LegacyScreen';
 import { ErrorBoundary } from './ErrorBoundary';
+
+const SpeechDevScreen = lazy(() =>
+  import('../features/dev/SpeechDevScreen').then((m) => ({ default: m.SpeechDevScreen })),
+);
 
 export const AppRoutes: React.FC = () => {
   return (
@@ -34,6 +38,13 @@ export const AppRoutes: React.FC = () => {
         <Route path="/onboarding" component={OnboardingScreen} />
         <Route path="/settings" component={SettingsScreen} />
         <Route path="/dev/components" component={DevComponentsScreen} />
+        <Route path="/dev/speech">
+          {() => (
+            <Suspense fallback={<div className="p-6 text-sm">Đang tải trang kiểm thử Speech...</div>}>
+              <SpeechDevScreen />
+            </Suspense>
+          )}
+        </Route>
         <Route path="/legacy" component={LegacyScreen} />
         <Route>
           {() => <TodayScreen />}

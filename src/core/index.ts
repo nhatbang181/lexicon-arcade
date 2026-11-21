@@ -7,3 +7,4 @@ export * from './planner';
 export * from './text';
 export * from './scoring';
 export * from './gamification';
+export * from './speech';
