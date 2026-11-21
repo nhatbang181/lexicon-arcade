@@ -27,40 +27,40 @@
       "lineId": "l01",
       "speakerId": "staff",
       "text": "Good morning, Harbourview Leisure Centre, Hannah speaking. How can I help you today?",
-      "start": 0,
-      "end": 0,
+      "start": 0.0,
+      "end": 5.37,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l02",
       "speakerId": "caller",
       "text": "Oh, hello. I just moved into the area last week and I would like to sign up for a gym and swimming membership.",
-      "start": 0,
-      "end": 0,
+      "start": 5.77,
+      "end": 12.12,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l03",
       "speakerId": "staff",
       "text": "Lovely, welcome to the neighbourhood! I can take your details over the phone right now and get your induction booked in. Could I start with your full name, please?",
-      "start": 0,
-      "end": 0,
+      "start": 12.52,
+      "end": 22.17,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l04",
       "speakerId": "caller",
       "text": "Sure, it is Owen Bramwell.",
-      "start": 0,
-      "end": 0,
+      "start": 22.57,
+      "end": 24.17,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l05",
       "speakerId": "staff",
       "text": "Could you spell your surname for me, Owen? Just so I do not mistype it on your membership card.",
-      "start": 0,
-      "end": 0,
+      "start": 24.57,
+      "end": 30.48,
       "pauseAfter": 0.4
     },
     {
@@ -68,16 +68,16 @@
       "speakerId": "caller",
       "text": "Of course. That is B-R-A-M-W-E-L-L. Double L at the end.",
       "ttsText": "Of course. That is B, R, A, M, W, E, L, L. Double L at the end.",
-      "start": 0,
-      "end": 0,
+      "start": 30.88,
+      "end": 38.83,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l07",
       "speakerId": "staff",
       "text": "Got it, Bramwell. And what is your current street address?",
-      "start": 0,
-      "end": 0,
+      "start": 39.33,
+      "end": 43.27,
       "pauseAfter": 0.4
     },
     {
@@ -85,8 +85,8 @@
       "speakerId": "caller",
       "text": "Um, it is 38 Alder Lane... oh, sorry, no, 38 was my old flat! The new house is 48 Alder Lane.",
       "ttsText": "Um, it is thirty-eight Alder Lane... oh, sorry, no, thirty-eight was my old flat! The new house is forty-eight Alder Lane.",
-      "start": 0,
-      "end": 0,
+      "start": 43.67,
+      "end": 52.21,
       "pauseAfter": 0.5
     },
     {
@@ -94,8 +94,8 @@
       "speakerId": "staff",
       "text": "Haha, that happens to everyone after moving. So 48 Alder Lane. Could I also take a mobile number in case we need to text you about class changes?",
       "ttsText": "That happens to everyone after moving. So forty-eight Alder Lane. Could I also take a mobile number in case we need to text you about class changes?",
-      "start": 0,
-      "end": 0,
+      "start": 52.71,
+      "end": 62.15,
       "pauseAfter": 0.4
     },
     {
@@ -103,24 +103,24 @@
       "speakerId": "caller",
       "text": "Yes, let me read it carefully. It is 07741 829 350... wait, hang on, the last three digits are 360. Sorry, so 07741 829 360.",
       "ttsText": "Yes, let me read it carefully. It is oh seven seven, four one eight, two nine, three five zero... wait, hang on, the last three digits are three six zero. Sorry, so oh seven seven, four one eight, two nine, three six zero.",
-      "start": 0,
-      "end": 0,
+      "start": 62.55,
+      "end": 79.35,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l11",
       "speakerId": "staff",
       "text": "Right, ending in three six zero, all noted. Now, let us talk through the membership tiers. We have two main options for adults.",
-      "start": 0,
-      "end": 0,
+      "start": 79.85,
+      "end": 88.97,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l12",
       "speakerId": "caller",
       "text": "I saw the all-access plan on your leaflet. That lets you use the pool and the gym at any hour, right?",
-      "start": 0,
-      "end": 0,
+      "start": 89.37,
+      "end": 95.36,
       "pauseAfter": 0.4
     },
     {
@@ -128,16 +128,16 @@
       "speakerId": "staff",
       "text": "Yes, the all-access plan covers seven in the morning until ten at night every day for £54 a month. We also offer an off-peak membership, which runs from seven until four in the afternoon on weekdays, plus Sunday mornings.",
       "ttsText": "Yes, the all-access plan covers seven in the morning until ten at night every day for fifty-four pounds a month. We also offer an off-peak membership, which runs from seven until four in the afternoon on weekdays, plus Sunday mornings.",
-      "start": 0,
-      "end": 0,
+      "start": 95.76,
+      "end": 109.74,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l14",
       "speakerId": "caller",
       "text": "Oh, actually, I work evening shifts at the hospital, so I am always free in the mornings. Let me go with the off-peak option instead of all-access.",
-      "start": 0,
-      "end": 0,
+      "start": 110.14,
+      "end": 118.96,
       "pauseAfter": 0.5
     },
     {
@@ -145,8 +145,8 @@
       "speakerId": "staff",
       "text": "That will save you quite a bit. The off-peak plan is £36 per month. Normally there is a £15 joining fee too, though we are waiving that this month.",
       "ttsText": "That will save you quite a bit. The off-peak plan is thirty-six pounds per month. Normally there is a fifteen-pound joining fee too, though we are waiving that this month.",
-      "start": 0,
-      "end": 0,
+      "start": 119.46,
+      "end": 129.68,
       "pauseAfter": 0.4
     },
     {
@@ -154,8 +154,8 @@
       "speakerId": "caller",
       "text": "Brilliant, £36 a month with no joining fee sounds great.",
       "ttsText": "Brilliant, thirty-six pounds a month with no joining fee sounds great.",
-      "start": 0,
-      "end": 0,
+      "start": 130.08,
+      "end": 134.03,
       "pauseAfter": 0.4
     },
     {
@@ -163,8 +163,8 @@
       "speakerId": "staff",
       "text": "When would you like your membership to start? We could activate it from Monday, 5 October.",
       "ttsText": "When would you like your membership to start? We could activate it from Monday, the fifth of October.",
-      "start": 0,
-      "end": 0,
+      "start": 134.43,
+      "end": 140.3,
       "pauseAfter": 0.4
     },
     {
@@ -172,8 +172,8 @@
       "speakerId": "caller",
       "text": "Um, let me see. I am visiting my sister up north next week, so I would miss the first seven days. Could we start it a week later on 12 October instead?",
       "ttsText": "Um, let me see. I am visiting my sister up north next week, so I would miss the first seven days. Could we start it a week later on the twelfth of October instead?",
-      "start": 0,
-      "end": 0,
+      "start": 140.7,
+      "end": 151.37,
       "pauseAfter": 0.8
     },
     {
@@ -181,32 +181,32 @@
       "speakerId": "staff",
       "text": "No problem at all, I have set your start date to 12 October. Now, before you use the weights room, every new member completes a forty-minute gym induction with a trainer.",
       "ttsText": "No problem at all, I have set your start date to the twelfth of October. Now, before you use the weights room, every new member completes a forty-minute gym induction with a trainer.",
-      "start": 0,
-      "end": 0,
+      "start": 152.17,
+      "end": 162.83,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l20",
       "speakerId": "caller",
       "text": "Sure, that makes sense. Do you have any slots open on Tuesday morning that week?",
-      "start": 0,
-      "end": 0,
+      "start": 163.23,
+      "end": 168.08,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l21",
       "speakerId": "staff",
       "text": "Let me check the trainer rota... oh, Tuesday morning is completely full because a local college group is in. We do have plenty of space on Thursday, though.",
-      "start": 0,
-      "end": 0,
+      "start": 168.48,
+      "end": 178.07,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l22",
       "speakerId": "caller",
       "text": "Thursday works nicely for me. Let us book Thursday then.",
-      "start": 0,
-      "end": 0,
+      "start": 178.47,
+      "end": 182.31,
       "pauseAfter": 0.5
     },
     {
@@ -214,8 +214,8 @@
       "speakerId": "staff",
       "text": "Wonderful. Would you prefer an early start at 8:30 a.m., or slightly later at 9:30 a.m.?",
       "ttsText": "Wonderful. Would you prefer an early start at eight thirty a.m., or slightly later at nine thirty a.m.?",
-      "start": 0,
-      "end": 0,
+      "start": 182.81,
+      "end": 189.33,
       "pauseAfter": 0.4
     },
     {
@@ -223,8 +223,8 @@
       "speakerId": "caller",
       "text": "Let us go for 8:30... actually, sorry, I finish a late shift the night before, so 9:30 will be much better.",
       "ttsText": "Let us go for eight thirty... actually, sorry, I finish a late shift the night before, so nine thirty will be much better.",
-      "start": 0,
-      "end": 0,
+      "start": 189.73,
+      "end": 196.56,
       "pauseAfter": 0.5
     },
     {
@@ -232,72 +232,72 @@
       "speakerId": "staff",
       "text": "Smart choice, I have pencilled you in for 9:30 a.m. on Thursday. Just bring clean trainers, a water bottle, and a towel.",
       "ttsText": "Smart choice, I have pencilled you in for nine thirty a.m. on Thursday. Just bring clean trainers, a water bottle, and a towel.",
-      "start": 0,
-      "end": 0,
+      "start": 197.06,
+      "end": 205.28,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l26",
       "speakerId": "caller",
       "text": "Got it. Do I need a pound coin for the changing-room lockers?",
-      "start": 0,
-      "end": 0,
+      "start": 205.68,
+      "end": 209.57,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l27",
       "speakerId": "staff",
       "text": "We actually replaced all the coin lockers last month. You just need to bring your own small padlock now, or you can buy one at reception.",
-      "start": 0,
-      "end": 0,
+      "start": 209.97,
+      "end": 217.87,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l28",
       "speakerId": "caller",
       "text": "Good to know, I already have a spare padlock at home. And does the membership include any fitness classes?",
-      "start": 0,
-      "end": 0,
+      "start": 218.37,
+      "end": 224.68,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l29",
       "speakerId": "staff",
       "text": "Yes, every new member gets one complimentary trial class during their first week. We run yoga on Wednesday evenings, indoor cycling at lunchtime, and pilates right after your Thursday morning slot.",
-      "start": 0,
-      "end": 0,
+      "start": 225.08,
+      "end": 237.35,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l30",
       "speakerId": "caller",
       "text": "Since I cannot do Wednesday evenings, I would love to try pilates after the induction.",
-      "start": 0,
-      "end": 0,
+      "start": 237.75,
+      "end": 242.31,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l31",
       "speakerId": "staff",
       "text": "All booked! I have reserved a mat for you in pilates. We will email your confirmation shortly, Owen.",
-      "start": 0,
-      "end": 0,
+      "start": 242.81,
+      "end": 249.82,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l32",
       "speakerId": "caller",
       "text": "Thanks so much for your help, Hannah. See you in a couple of weeks!",
-      "start": 0,
-      "end": 0,
+      "start": 250.22,
+      "end": 254.61,
       "pauseAfter": 0.4
     }
   ],
   "audio": {
     "path": "audio/listening/p1_001.mp3",
-    "durationSec": 276,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 255.5,
+    "sha256": "f707016c5e3d43864e43cf650cd2556211473b52c5290c62b146ce574d9f6823",
+    "loudnessLUFS": -16.5
   },
   "questionGroups": [
     {
@@ -355,15 +355,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 30.88,
+            "end": 38.83
           },
           "traps": [
             {
               "type": "spelling_out",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 30.88,
+              "end": 38.83,
               "explanationVi": "Người gọi đánh vần họ B-R-A-M-W-E-L-L và nhấn mạnh có hai chữ L cuối."
             }
           ]
@@ -379,15 +379,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 43.67,
+            "end": 52.21
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 43.67,
+              "end": 52.21,
               "decoy": "38",
               "explanationVi": "Người gọi nhầm sang số nhà cũ 38 rồi tự sửa lại thành 48 Alder Lane."
             }
@@ -404,15 +404,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 62.55,
+            "end": 79.35
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 62.55,
+              "end": 79.35,
               "decoy": "07741829350",
               "explanationVi": "Đọc nhầm ba số cuối là 350 rồi sửa lại ngay thành 360."
             }
@@ -430,15 +430,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 110.14,
+            "end": 118.96
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 89.37,
+              "end": 95.36,
               "decoy": "all-access",
               "explanationVi": "Ban đầu hỏi gói all-access nhưng sau đó đổi sang off-peak vì làm ca tối."
             }
@@ -456,15 +456,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 119.46,
+            "end": 129.68
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 95.76,
+              "end": 109.74,
               "decoy": "54",
               "explanationVi": "54 bảng là giá gói toàn thời gian, còn gói off-peak chỉ tốn 36 bảng."
             }
@@ -483,15 +483,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 140.7,
+            "end": 151.37
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l17",
-              "start": 0,
-              "end": 0,
+              "start": 134.43,
+              "end": 140.3,
               "decoy": "5 October",
               "explanationVi": "Nhân viên gợi ý 5 October nhưng Owen đi thăm chị nên dời sang 12 October."
             }
@@ -546,15 +546,15 @@
           },
           "evidence": {
             "lineId": "l22",
-            "start": 0,
-            "end": 0
+            "start": 178.47,
+            "end": 182.31
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 168.48,
+              "end": 178.07,
               "decoy": "Tuesday",
               "explanationVi": "Sáng thứ Ba đã kín lịch vì có đoàn sinh viên, nên đặt sang thứ Năm."
             }
@@ -572,15 +572,15 @@
           },
           "evidence": {
             "lineId": "l24",
-            "start": 0,
-            "end": 0
+            "start": 189.73,
+            "end": 196.56
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l24",
-              "start": 0,
-              "end": 0,
+              "start": 189.73,
+              "end": 196.56,
               "decoy": "8:30",
               "explanationVi": "Chọn 8:30 trước rồi nhớ ra làm ca tối hôm trước nên đổi sang 9:30."
             }
@@ -597,15 +597,15 @@
           },
           "evidence": {
             "lineId": "l27",
-            "start": 0,
-            "end": 0
+            "start": 209.97,
+            "end": 217.87
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l27",
-              "start": 0,
-              "end": 0,
+              "start": 209.97,
+              "end": 217.87,
               "decoy": "coin",
               "explanationVi": "Tủ dùng xu đã bị thay thế tháng trước, nay cần mang ổ khóa nhỏ (padlock)."
             }
@@ -622,8 +622,8 @@
           },
           "evidence": {
             "lineId": "l30",
-            "start": 0,
-            "end": 0
+            "start": 237.75,
+            "end": 242.31
           },
           "traps": []
         }

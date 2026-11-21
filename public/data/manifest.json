@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-20T16:07:22.451Z",
+  "builtAt": "2026-11-20T16:26:05.095Z",
   "totals": {
     "dictation": 300,
     "listeningEpisodes": 32,
@@ -26,7 +26,7 @@
       "count": 300
     },
     "listening/episodes/p1_001.json": {
-      "sha256": "94557f37ed3ddab49f77bfad95032058c95a269f1566be9fef9ca860391d9e8e",
+      "sha256": "e48dc0d9de38205f9e576b2a10068d9fde235ff3d79e3bba2b385e88656a95d6",
       "count": 1
     },
     "listening/episodes/p1_002.json": {
@@ -58,7 +58,7 @@
       "count": 1
     },
     "listening/episodes/p2_001.json": {
-      "sha256": "2c2ccbc29686b499e89f3d046c14d97f34ccbd57d52be572a5f2e2fd167d7894",
+      "sha256": "02203647d50dc6c5dd93fbb548c40a6889410c2f9efb63c1b018c3b2f46c354a",
       "count": 1
     },
     "listening/episodes/p2_002.json": {
@@ -90,7 +90,7 @@
       "count": 1
     },
     "listening/episodes/p3_001.json": {
-      "sha256": "5712c38fda6426000986e62cf461bf4e1d5e0ed3197637fc44c6775e31aa101c",
+      "sha256": "e13fc5e615c756d02b25f1b0981b6868cbcff4101fbcf851b9d55edede37a398",
       "count": 1
     },
     "listening/episodes/p3_002.json": {
@@ -122,7 +122,7 @@
       "count": 1
     },
     "listening/episodes/p4_001.json": {
-      "sha256": "7e98360b2b689b56ae75562bc20fa84df457fc4f165e49554936d4346a40f476",
+      "sha256": "63f9a91a934b901023af3a5441f3f12b54f84d85a888600cf981c1d0db018339",
       "count": 1
     },
     "listening/episodes/p4_002.json": {
@@ -154,7 +154,7 @@
       "count": 1
     },
     "listening/index.json": {
-      "sha256": "1a9ddb37165536816b399d0c36789850ec6e0e55ef8157d05e94d96a02ae8fbd",
+      "sha256": "a8ca98225917ed9c4aeeb4ecd6218a7e1cfb7ce7c58ca18958b551d4ce701817",
       "count": 32
     },
     "reading/index.json": {

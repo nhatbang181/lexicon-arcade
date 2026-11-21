@@ -27,212 +27,212 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Thanks for bringing the site sheets, Liam. Before we write up the methodology section for Dr Patel, we need to pin down what actually changed since our initial proposal.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 10.66
     },
     {
       "lineId": "l02",
       "speakerId": "s2",
       "text": "Good idea. First, there is the civic archive roof. Remember we dropped it from our final five sites?",
-      "start": 0,
-      "end": 0
+      "start": 11.11,
+      "end": 18.64
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "Right. At first I thought strong gusts up there would knock the flower stems flat, and we briefly wondered if the council would charge a roof-access fee.",
-      "start": 0,
-      "end": 0
+      "start": 19.09,
+      "end": 28.38
     },
     {
       "lineId": "l04",
       "speakerId": "s2",
       "text": "In the end the wind readings were mild and they waived every charge. What forced us to pull out was the security clearance for the roof keys, which would not arrive until after the June blossom peak.",
-      "start": 0,
-      "end": 0
+      "start": 28.83,
+      "end": 39.0
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "Exactly, missing peak flowering would have ruined the comparison. Speaking of comparisons, our first pilot survey threw up a result I honestly did not expect.",
-      "start": 0,
-      "end": 0
+      "start": 39.45,
+      "end": 50.01
     },
     {
       "lineId": "l06",
       "speakerId": "s2",
       "text": "You mean the afternoon numbers? Actually, morning counts beat afternoon ones just as the textbooks predict, and the potted culinary herbs did reasonably well too.",
-      "start": 0,
-      "end": 0
+      "start": 50.46,
+      "end": 59.67
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "True, those matched expectations. What caught us off guard was seeing hoverflies outnumber solitary bees nearly two to one on the shallow sedum mats, though earlier guides call sedum roofs mainly bee habitat.",
-      "start": 0,
-      "end": 0
+      "start": 60.12,
+      "end": 73.67
     },
     {
       "lineId": "l08",
       "speakerId": "s2",
       "text": "Yeah, that definitely deserves a highlight in the results. Now, about our counting protocol for the rest of the summer: we still have observer fatigue during those long twenty-minute watches.",
-      "start": 0,
-      "end": 0
+      "start": 74.12,
+      "end": 84.04
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "I did wonder about switching to yellow pan traps filled with soapy water so we would not miss fast-moving insects, though you seemed hesitant.",
-      "start": 0,
-      "end": 0
+      "start": 84.49,
+      "end": 92.54
     },
     {
       "lineId": "l10",
       "speakerId": "s2",
       "text": "Well, lethal trapping on tiny rooftop colonies felt counterproductive, and my earlier idea of strapping fixed cameras to each quadrat failed because the glare blurred the wing markings. Splitting each ten-minute block so we alternate as spotter and recorder solves the fatigue without hurting anything.",
-      "start": 0,
-      "end": 0
+      "start": 92.99,
+      "end": 108.27
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "Agreed, taking turns keeps our accuracy sharp. One thing I was less sure about was your suggestion to log exact building height in storeys for every roof.",
-      "start": 0,
-      "end": 0
+      "start": 108.72,
+      "end": 119.19
     },
     {
       "lineId": "l12",
       "speakerId": "s2",
       "text": "I know Dr Patel never asked us to track wind at every floor, and that old paper claiming small bees refuse to fly above four storeys has been pretty thoroughly debunked.",
-      "start": 0,
-      "end": 0
+      "start": 119.64,
+      "end": 127.82
     },
     {
       "lineId": "l13",
       "speakerId": "s1",
       "text": "So why keep height in the regression table then?",
-      "start": 0,
-      "end": 0
+      "start": 128.27,
+      "end": 130.89
     },
     {
       "lineId": "l14",
       "speakerId": "s2",
       "text": "Because elevation changes the local microclimate quite noticeably: higher roofs dry out faster and bake harder in direct sun, which alters nectar production even when the plant list is identical.",
-      "start": 0,
-      "end": 0
+      "start": 131.34,
+      "end": 141.0
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "Fair point, that links directly to flower quality. Before we look at individual sites, we also need to trim our draft report because we are already over the word cap. Obviously the temperature logger charts stay, and the bed photographs can sit neatly in the appendix.",
-      "start": 0,
-      "end": 0
+      "start": 141.45,
+      "end": 159.27
     },
     {
       "lineId": "l16",
       "speakerId": "s2",
       "text": "What about the casual chats we jotted down with the building caretakers? You were keen to weave those quotes into the discussion.",
-      "start": 0,
-      "end": 0
+      "start": 159.72,
+      "end": 166.58
     },
     {
       "lineId": "l17",
       "speakerId": "s1",
       "text": "I was at first because they added human colour, but looking back they were completely unstructured and we did not obtain formal ethics sign-off for interviews. Let us leave them out altogether.",
-      "start": 0,
-      "end": 0,
+      "start": 167.03,
+      "end": 178.56,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l18",
       "speakerId": "s2",
       "text": "Sensible call. Right, let us go through our five active rooftops and confirm the single main management recommendation we are giving each building manager. First up is Northgate Pharmacy.",
-      "start": 0,
-      "end": 0
+      "start": 179.36,
+      "end": 190.69
     },
     {
       "lineId": "l19",
       "speakerId": "s1",
       "text": "I initially pencilled in pulling out their ornamental grasses, since non-native tufts rarely offer pollen.",
-      "start": 0,
-      "end": 0
+      "start": 191.14,
+      "end": 197.22
     },
     {
       "lineId": "l20",
       "speakerId": "s2",
       "text": "Actually, those clumps only cover a tiny strip and bees did not mind them. The real drawback on that exposed west edge is constant crosswind knocking insects off the blooms, so adding low timber windbreaks along the rail is the top priority.",
-      "start": 0,
-      "end": 0
+      "start": 197.67,
+      "end": 210.55
     },
     {
       "lineId": "l21",
       "speakerId": "s1",
       "text": "Got it, windbreaks for Northgate. Next is the Station Annex roof. Their caretaker already set out shallow pebble dishes for drinking water, which worked brilliantly.",
-      "start": 0,
-      "end": 0
+      "start": 211.0,
+      "end": 222.69
     },
     {
       "lineId": "l22",
       "speakerId": "s2",
       "text": "Yes, water is sorted there. What is missing is nesting habitat: every square inch is covered in thick bark mulch, so we should advise clearing a couple of dry bare-soil patches for ground-nesting solitary bees.",
-      "start": 0,
-      "end": 0
+      "start": 223.14,
+      "end": 234.55
     },
     {
       "lineId": "l23",
       "speakerId": "s1",
       "text": "Nice and specific. Third is Canal Mill Studios. Earlier I worried their night-time security lamps were drawing moths away, but it turns out those lights are already motion-triggered and stay dark most nights.",
-      "start": 0,
-      "end": 0
+      "start": 235.0,
+      "end": 249.41
     },
     {
       "lineId": "l24",
       "speakerId": "s2",
       "text": "Right, the actual gap at Canal Mill is seasonal: everything blooms in May and June, then by September the beds are completely barren. Introducing late-autumn flowering plants like ivy and asters will bridge that famine.",
-      "start": 0,
-      "end": 0
+      "start": 249.86,
+      "end": 261.57
     },
     {
       "lineId": "l25",
       "speakerId": "s1",
       "text": "Moving on to Elmhurst Clinic. You mentioned earlier that the climbing vines along the pergola looked a bit tangled and might need thinning out.",
-      "start": 0,
-      "end": 0
+      "start": 262.02,
+      "end": 270.69
     },
     {
       "lineId": "l26",
       "speakerId": "s2",
       "text": "I did, until I checked our afternoon logs and saw hoverflies sheltering under those exact leaves during midday heat. What the clinic roof really lacks is moisture on that dark gravel, so placing shallow water trays filled with pebbles will help far more.",
-      "start": 0,
-      "end": 0
+      "start": 271.14,
+      "end": 284.42
     },
     {
       "lineId": "l27",
       "speakerId": "s1",
       "text": "Makes complete sense. Finally, Harbourside Bakery. Because it sits behind a tall brick parapet, wind is barely an issue there at all.",
-      "start": 0,
-      "end": 0
+      "start": 284.87,
+      "end": 294.8
     },
     {
       "lineId": "l28",
       "speakerId": "s2",
       "text": "No, wind is fine, and the planting mix is diverse. The problem is those bright floodlights illuminating the bakery sign from dusk till dawn, which completely disrupts nocturnal pollinators. Advising them to reduce night-time lighting will make an immediate difference.",
-      "start": 0,
-      "end": 0
+      "start": 295.25,
+      "end": 310.38
     },
     {
       "lineId": "l29",
       "speakerId": "s1",
       "text": "Brilliant. That gives every site a clear, evidence-backed recommendation. Let us tidy up the table and send Dr Patel a draft tonight.",
-      "start": 0,
-      "end": 0
+      "start": 310.83,
+      "end": 320.89
     }
   ],
   "audio": {
     "path": "audio/listening/p3_001.mp3",
-    "durationSec": 305,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 321.8,
+    "sha256": "0d192ed73313c23cedc54107ba8532edf39d0da31dd9dc46aaccca14b4c17486",
+    "loudnessLUFS": -16.6
   },
   "questionGroups": [
     {
@@ -269,15 +269,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 28.83,
+            "end": 39.0
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l03",
-              "start": 0,
-              "end": 0,
+              "start": 19.09,
+              "end": 28.38,
               "decoy": "strong gusts / roof-access fee",
               "explanationVi": "Hannah nhắc tới nỗi lo gió mạnh (A) và phí lên mái (C), nhưng Liam bác bỏ cả hai ngay dòng sau và nêu lý do thật là thủ tục cấp chìa khóa bị trễ qua mùa hoa nở rộ (B)."
             }
@@ -297,15 +297,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 60.12,
+            "end": 73.67
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 50.46,
+              "end": 59.67,
               "decoy": "afternoon numbers / potted culinary herbs",
               "explanationVi": "Liam xác nhận số liệu buổi sáng cao hơn buổi chiều như sách giáo khoa (loại C) và chậu rau thơm thu hút khá tốt (loại B); điều bất ngờ thật sự là ruồi ăn rệp nhiều gần gấp đôi ong đơn độc (A)."
             }
@@ -325,15 +325,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 92.99,
+            "end": 108.27
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 84.49,
+              "end": 92.54,
               "decoy": "yellow pan traps / fixed cameras",
               "explanationVi": "Cả bẫy khay nước xà phòng (A) lẫn gắn camera cố định (B) đều được nhắc tới rồi bị loại vì gây chết côn trùng hoặc bị chói lóa; cả hai chốt cách luân phiên quan sát và ghi chép (C)."
             }
@@ -353,15 +353,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 131.34,
+            "end": 141.0
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 119.64,
+              "end": 127.82,
               "decoy": "above four storeys / track wind at every floor",
               "explanationVi": "Liam phủ nhận cả yêu cầu của Dr Patel (loại C) lẫn bài báo cũ về ngưỡng bốn tầng (loại A), rồi giải thích độ cao thay đổi vi khí hậu và lượng mật hoa (B)."
             }
@@ -381,15 +381,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 167.03,
+            "end": 178.56
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 159.72,
+              "end": 166.58,
               "decoy": "keen to weave those quotes into the discussion",
               "explanationVi": "Ban đầu Hannah muốn đưa trích dẫn từ người quản lý tòa nhà vào bài, nhưng sau đó đổi ý quyết định bỏ hẳn vì thiếu tính hệ thống và chưa xin duyệt đạo đức nghiên cứu (C)."
             }
@@ -447,15 +447,15 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 197.67,
+            "end": 210.55
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l19",
-              "start": 0,
-              "end": 0,
+              "start": 191.14,
+              "end": 197.22,
               "decoy": "ornamental grasses",
               "explanationVi": "Hannah định đề xuất nhổ bỏ cỏ cảnh ngoại lai (B), nhưng Liam bác bỏ vì diện tích nhỏ và nhấn mạnh ưu tiên số một là lắp vách chắn gió gỗ thấp (C)."
             }
@@ -475,15 +475,15 @@
           },
           "evidence": {
             "lineId": "l22",
-            "start": 0,
-            "end": 0
+            "start": 223.14,
+            "end": 234.55
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 211.0,
+              "end": 222.69,
               "decoy": "shallow pebble dishes for drinking water",
               "explanationVi": "Đĩa nước có sỏi (A) đã được lắp đặt sẵn rồi; thứ mái nhà này còn thiếu là khoảng đất trống không phủ vỏ cây để ong làm tổ (F)."
             }
@@ -503,15 +503,15 @@
           },
           "evidence": {
             "lineId": "l24",
-            "start": 0,
-            "end": 0
+            "start": 249.86,
+            "end": 261.57
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 235.0,
+              "end": 249.41,
               "decoy": "night-time security lamps",
               "explanationVi": "Đèn an ninh ban đêm (E) thực tế đã gắn cảm biến chuyển động nên không gây hại; vấn đề chính là thiếu hoa nở cuối thu sang tháng chín (D)."
             }
@@ -531,15 +531,15 @@
           },
           "evidence": {
             "lineId": "l26",
-            "start": 0,
-            "end": 0
+            "start": 271.14,
+            "end": 284.42
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l25",
-              "start": 0,
-              "end": 0,
+              "start": 262.02,
+              "end": 270.69,
               "decoy": "climbing vines ... might need thinning out",
               "explanationVi": "Liam từng muốn tỉa bớt dây leo (G), nhưng sau khi xem sổ ghi nhận thấy côn trùng trú nắng dưới tán lá nên đổi sang đề xuất đặt khay nước nông có sỏi (A)."
             }
@@ -559,15 +559,15 @@
           },
           "evidence": {
             "lineId": "l28",
-            "start": 0,
-            "end": 0
+            "start": 295.25,
+            "end": 310.38
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l28",
-              "start": 0,
-              "end": 0,
+              "start": 295.25,
+              "end": 310.38,
               "decoy": "bright floodlights illuminating the bakery sign from dusk till dawn",
               "explanationVi": "Lời thoại nói về đèn pha chiếu biển hiệu suốt đêm cần giảm bớt, diễn đạt đồng nghĩa cho 'Reduce night-time security lighting' (E)."
             }

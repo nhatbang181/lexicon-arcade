@@ -50,6 +50,108 @@ def get_cache_hash(text: str, voice: str, speed: float = 1.0) -> str:
     key = f"{text.strip()}|{voice.strip()}|{speed:.2f}"
     return hashlib.sha256(key.encode("utf-8")).hexdigest()
 
+# Multi-speaker Voice Mappings (edge-tts)
+# Maps Kokoro voice names or shorthand tokens to natural Edge-TTS neural voices
+VOICE_MAP = {
+    # UK Female
+    "bf_emma": "en-GB-SoniaNeural",
+    "bf_isabella": "en-GB-LibbyNeural",
+    "bf_alice": "en-GB-MaisieNeural",
+    "bf_lily": "en-GB-SoniaNeural",
+    # UK Male
+    "bm_george": "en-GB-RyanNeural",
+    "bm_daniel": "en-GB-ThomasNeural",
+    "bm_lewis": "en-GB-RyanNeural",
+    "bm_fable": "en-GB-ThomasNeural",
+    # US Female
+    "af_heart": "en-US-JennyNeural",
+    "af_bella": "en-US-AriaNeural",
+    "af_nicole": "en-US-AvaNeural",
+    "af_sarah": "en-US-JennyNeural",
+    # US Male
+    "am_michael": "en-US-GuyNeural",
+    "am_adam": "en-US-ChristopherNeural",
+    # AU/NZ/CA
+    "edge:en-AU-NatashaNeural": "en-AU-NatashaNeural",
+    "edge:en-AU-WilliamNeural": "en-AU-WilliamNeural",
+    "edge:en-NZ-MitchellNeural": "en-NZ-MitchellNeural",
+    "edge:en-NZ-MollyNeural": "en-NZ-MollyNeural",
+    "edge:en-CA-ClaraNeural": "en-CA-ClaraNeural",
+    "edge:en-CA-LiamNeural": "en-CA-LiamNeural",
+}
+
+VOICE_POOLS = {
+    ("uk", "f"): ["en-GB-SoniaNeural", "en-GB-LibbyNeural", "en-GB-MaisieNeural"],
+    ("uk", "m"): ["en-GB-RyanNeural", "en-GB-ThomasNeural"],
+    ("us", "f"): ["en-US-JennyNeural", "en-US-AriaNeural", "en-US-AvaNeural"],
+    ("us", "m"): ["en-US-GuyNeural", "en-US-ChristopherNeural"],
+    ("au", "f"): ["en-AU-NatashaNeural"],
+    ("au", "m"): ["en-AU-WilliamNeural"],
+    ("nz", "f"): ["en-NZ-MollyNeural"],
+    ("nz", "m"): ["en-NZ-MitchellNeural"],
+    ("ca", "f"): ["en-CA-ClaraNeural"],
+    ("ca", "m"): ["en-CA-LiamNeural"],
+}
+
+def resolve_voice(raw_voice: str, accent: str = "uk") -> str:
+    """Resolve a voice token to a concrete edge-tts voice."""
+    if not raw_voice:
+        return "en-GB-SoniaNeural"
+    if raw_voice.startswith("edge:"):
+        return raw_voice.replace("edge:", "")
+    if raw_voice in VOICE_MAP:
+        return VOICE_MAP[raw_voice]
+    accent_lower = accent.lower()
+    gender = "f" if raw_voice.startswith(("bf_", "af_")) else "m"
+    pool = VOICE_POOLS.get((accent_lower, gender), VOICE_POOLS.get(("uk", gender), ["en-GB-SoniaNeural"]))
+    return pool[0]
+
+def resolve_episode_voices(speakers: list[dict]) -> dict[str, str]:
+    """
+    Ensure all speakers within the same episode are assigned distinct voices.
+    Returns mapping: speakerId -> edge_voice
+    """
+    assigned = {}
+    used_voices = set()
+    for s in speakers:
+        sid = s["id"]
+        raw = s.get("voice", "")
+        accent = s.get("accent", "uk").lower()
+        gender = "f" if raw.startswith(("bf_", "af_")) or any(name in raw for name in ["Natasha", "Molly", "Clara"]) else "m"
+
+        target = raw.replace("edge:", "") if raw.startswith("edge:") else VOICE_MAP.get(raw)
+        if not target or target in used_voices:
+            # Pick an unused voice from pool
+            pool = VOICE_POOLS.get((accent, gender), VOICE_POOLS.get(("uk", gender), []))
+            for v in pool:
+                if v not in used_voices:
+                    target = v
+                    break
+            if not target or target in used_voices:
+                # Any unused voice from all pools
+                for p in VOICE_POOLS.values():
+                    for v in p:
+                        if v not in used_voices:
+                            target = v
+                            break
+                    if target and target not in used_voices:
+                        break
+        if not target:
+            target = "en-GB-SoniaNeural"
+        used_voices.add(target)
+        assigned[sid] = target
+    return assigned
+
+def dictation_wpm_to_rate(wpm: float) -> str:
+    """
+    Convert target WPM to edge-tts rate string.
+    Edge-tts natural speech baseline is ~128 WPM.
+    """
+    pct = int(round((wpm / 128.0 - 1.0) * 100))
+    # Cap rate between -30% and +40%
+    pct = max(-30, min(40, pct))
+    return f"{'+' if pct >= 0 else ''}{pct}%"
+
 def load_cache() -> dict:
     if CACHE_FILE.exists():
         try:
@@ -124,15 +226,61 @@ def process_audio(raw_audio_path: Path | str, output_path: Path | str) -> None:
         raise RuntimeError(f"FFmpeg process_audio failed: {res.stderr}")
 
 # TTS Synthesizers
-async def synthesize_edge_tts(text: str, voice: str = "en-GB-SoniaNeural", speed: float = 1.0, raw_tmp_path: Path | str = None) -> Path:
+async def synthesize_edge_tts(
+    text: str,
+    voice: str = "en-GB-SoniaNeural",
+    speed: float = 1.0,
+    raw_tmp_path: Path | str = None,
+    rate_str: str = None
+) -> Path:
     import edge_tts
-    # Speed to edge-tts rate percentage string
-    pct = int(round((speed - 1.0) * 100))
-    rate_str = f"{'+' if pct >= 0 else ''}{pct}%"
+    if rate_str is None:
+        pct = int(round((speed - 1.0) * 100))
+        rate_str = f"{'+' if pct >= 0 else ''}{pct}%"
 
     communicate = edge_tts.Communicate(text=text, voice=voice, rate=rate_str)
     await communicate.save(str(raw_tmp_path))
     return Path(raw_tmp_path)
+
+def render_silence_wav(duration: float, output_path: Path | str) -> None:
+    """Generate exact duration of silence at 24kHz mono PCM."""
+    out_p = Path(output_path)
+    out_p.parent.mkdir(parents=True, exist_ok=True)
+    dur_str = f"{max(0.01, duration):.3f}"
+    cmd = [
+        FFMPEG_BIN, "-y",
+        "-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono",
+        "-t", dur_str,
+        "-ar", "24000", "-ac", "1",
+        str(out_p)
+    ]
+    res = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if res.returncode != 0:
+        raise RuntimeError(f"FFmpeg render_silence_wav failed: {res.stderr}")
+
+def trim_line_wav(input_path: Path | str, output_path: Path | str) -> float:
+    """
+    Trim silence at start/end down to <= 80ms and output 24kHz mono WAV.
+    Returns the measured duration of the trimmed WAV.
+    """
+    out_p = Path(output_path)
+    out_p.parent.mkdir(parents=True, exist_ok=True)
+    af_filter = (
+        "silenceremove=start_periods=1:start_duration=0.02:start_threshold=-45dB,"
+        "areverse,silenceremove=start_periods=1:start_duration=0.02:start_threshold=-45dB,areverse"
+    )
+    cmd = [
+        FFMPEG_BIN, "-y",
+        "-i", str(input_path),
+        "-af", af_filter,
+        "-ar", "24000",
+        "-ac", "1",
+        str(out_p)
+    ]
+    res = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
+    if res.returncode != 0:
+        raise RuntimeError(f"FFmpeg trim_line_wav failed: {res.stderr}")
+    return get_audio_duration(out_p)
 
 async def synthesize_and_process(
     text: str,

@@ -5368,5 +5368,1145 @@
     "size": 8444,
     "audio_file": "public/audio/vocab/inextricably_linked.uk.mp3",
     "created_at": "2026-11-20T14:46:18.377321Z"
+  },
+  "41853876f30e66d4466087b4a08ae66c4bf3f8800df8090aa2887f193c70d290": {
+    "hash": "41853876f30e66d4466087b4a08ae66c4bf3f8800df8090aa2887f193c70d290",
+    "id": "dict:0002",
+    "text": "Protecting wetland corridors is vital for preserving regional biodiversity.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 4.82,
+    "size": 29180
+  },
+  "2a018afd173c15260209c1a2761c20dc7916cf226184b9ad3fac5226431e2bc3": {
+    "hash": "2a018afd173c15260209c1a2761c20dc7916cf226184b9ad3fac5226431e2bc3",
+    "id": "dict:0005",
+    "text": "Heavy investment in rail infrastructure eased commuter congestion dramatically.",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 5.57,
+    "size": 33644
+  },
+  "18595090914f6f8d12abe5e6ba5c9b6b98b61eb691a5c2c11ad2a342f283926e": {
+    "hash": "18595090914f6f8d12abe5e6ba5c9b6b98b61eb691a5c2c11ad2a342f283926e",
+    "id": "dict:0003",
+    "text": "Rapid tropical deforestation reduces rainfall and destabilises local soils.",
+    "voice": "en-GB-MaisieNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 5.98,
+    "size": 36092
+  },
+  "a6425f0a451e561cf0827d3b6ad5be951d9de40aee9651527eb78ec560904e70": {
+    "hash": "a6425f0a451e561cf0827d3b6ad5be951d9de40aee9651527eb78ec560904e70",
+    "id": "dict:0007",
+    "text": "Passive cooling techniques were central to traditional desert architecture.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 4.82,
+    "size": 29180
+  },
+  "78ddaaa11cad1ef78f15438eeeaaca73cd67c9255e985c855e69a08f950486e5": {
+    "hash": "78ddaaa11cad1ef78f15438eeeaaca73cd67c9255e985c855e69a08f950486e5",
+    "id": "dict:0006",
+    "text": "Introducing non-native predators can disrupt an entire island ecosystem.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 4.9,
+    "size": 29612
+  },
+  "bb0ccc95e84473aa04a22cb097569e3ac34cc9a4c9fbb4125847b9edf587e844": {
+    "hash": "bb0ccc95e84473aa04a22cb097569e3ac34cc9a4c9fbb4125847b9edf587e844",
+    "id": "dict:0008",
+    "text": "Overuse of veterinary drugs has accelerated bacterial antibiotic resistance.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 5.04,
+    "size": 30476
+  },
+  "d3173411aed5edc99b1d9e06971ff6a2dbb2a6cfa24152198e1dd35bea242ad7": {
+    "hash": "d3173411aed5edc99b1d9e06971ff6a2dbb2a6cfa24152198e1dd35bea242ad7",
+    "id": "dict:0004",
+    "text": "Urban planners are prioritising long-term sustainability over short-term cost.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "f33e9301967cdf591910e4fa2d33b6d5563583d669ae4e4015ff252b63c14a74": {
+    "hash": "f33e9301967cdf591910e4fa2d33b6d5563583d669ae4e4015ff252b63c14a74",
+    "id": "dict:0001",
+    "text": "Final-year students must submit a ten-thousand-word dissertation in May.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "0fe422d57b21f4ba3ed61d5c880862d442b78c74cc1b1048eea2f702cd039ac8": {
+    "hash": "0fe422d57b21f4ba3ed61d5c880862d442b78c74cc1b1048eea2f702cd039ac8",
+    "id": "dict:0054",
+    "text": "The archaeology museum is open to school groups for thirteen days this month.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 4.3,
+    "size": 26012
+  },
+  "8abf2dd830d67c92965c82dc9bffaf4decdc90c02f0b0b8a4d81c10fb19164fd": {
+    "hash": "8abf2dd830d67c92965c82dc9bffaf4decdc90c02f0b0b8a4d81c10fb19164fd",
+    "id": "dict:0055",
+    "text": "Participants must arrive at least thirty minutes prior to the listening exam.",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 4.87,
+    "size": 29468
+  },
+  "8397493b446026b5c821793d5c6e4fcc00cb79852bd7cebc5d19523ab2b6871f": {
+    "hash": "8397493b446026b5c821793d5c6e4fcc00cb79852bd7cebc5d19523ab2b6871f",
+    "id": "dict:0010",
+    "text": "Mountain reservoirs power several hydroelectric stations across the valley.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 4.49,
+    "size": 27164
+  },
+  "1fed82f5284f8d909cd100c929c7bf4e8380fe6d2dd5b160f3e8946003274a2e": {
+    "hash": "1fed82f5284f8d909cd100c929c7bf4e8380fe6d2dd5b160f3e8946003274a2e",
+    "id": "dict:0052",
+    "text": "Please submit your laboratory safety form before Thursday afternoon.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 3.7,
+    "size": 22412
+  },
+  "1ae5b2cabfa60862ecd1c1d629ec909a062fb70890dfe3f6fa4a935fb8fa3b6d": {
+    "hash": "1ae5b2cabfa60862ecd1c1d629ec909a062fb70890dfe3f6fa4a935fb8fa3b6d",
+    "id": "dict:0053",
+    "text": "Applications for the spring exchange programme close on the fourteenth of February.",
+    "voice": "en-GB-MaisieNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "34bf02754870eee20bf904397fc151b33665340583d18f3a4adbaa8fd002a9b2": {
+    "hash": "34bf02754870eee20bf904397fc151b33665340583d18f3a4adbaa8fd002a9b2",
+    "id": "dict:0056",
+    "text": "The marine survey collected water samples from fourteen coastal monitoring stations.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 4.8,
+    "size": 29036
+  },
+  "04dbfcf383c9e37c422a9934779ad68a42dad0693dac77d5aff6c53010e44e9d": {
+    "hash": "04dbfcf383c9e37c422a9934779ad68a42dad0693dac77d5aff6c53010e44e9d",
+    "id": "dict:0009",
+    "text": "Cold water immersion temporarily raises a swimmer's resting metabolism.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "-14%",
+    "targetWpm": 110.0,
+    "duration": 4.99,
+    "size": 30188
+  },
+  "f3a73926c3c48e7cdf34a50892cf901eaca3dbb20c33094aad3b6e69c5f35640": {
+    "hash": "f3a73926c3c48e7cdf34a50892cf901eaca3dbb20c33094aad3b6e69c5f35640",
+    "id": "dict:0057",
+    "text": "The refurbished auditorium can now accommodate forty additional researchers.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 4.68,
+    "size": 28316
+  },
+  "47f3fc0f293bccd95d80df0fb114ab6dccd38616876d31178132c1af746fe9ea": {
+    "hash": "47f3fc0f293bccd95d80df0fb114ab6dccd38616876d31178132c1af746fe9ea",
+    "id": "dict:0051",
+    "text": "The university orientation tour has been rescheduled for Wednesday morning at nine.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "0f45a236817569d1a2f1bbcda6162a0c18f029a308eb16be3ea2b2914142901f": {
+    "hash": "0f45a236817569d1a2f1bbcda6162a0c18f029a308eb16be3ea2b2914142901f",
+    "id": "dict:0058",
+    "text": "A late fee of fifteen pounds applies if library books are returned overdue.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 4.2,
+    "size": 25436
+  },
+  "8400441d3f3b471a24da8e25bdeba340c1cc5f1ff12b0184e995386c48ce0eda": {
+    "hash": "8400441d3f3b471a24da8e25bdeba340c1cc5f1ff12b0184e995386c48ce0eda",
+    "id": "dict:0060",
+    "text": "The exhibition runs for sixteen weeks in the north wing of the gallery.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 3.48,
+    "size": 21116
+  },
+  "f2b5b04629f243052975de531f3bdf5e838936f4a678d7b269aac1bc8c047eba": {
+    "hash": "f2b5b04629f243052975de531f3bdf5e838936f4a678d7b269aac1bc8c047eba",
+    "id": "dict:0105",
+    "text": "The college principal welcomed incoming scholars at the opening ceremony.",
+    "voice": "en-US-JennyNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 3.65,
+    "size": 22124
+  },
+  "9101cacb0fe2be9b3fa91c6f3f8f05044cdbc2da1f997d39efa0c73af0ec8216": {
+    "hash": "9101cacb0fe2be9b3fa91c6f3f8f05044cdbc2da1f997d39efa0c73af0ec8216",
+    "id": "dict:0104",
+    "text": "Traffic remained completely stationary along the ring road for nearly an hour.",
+    "voice": "en-US-GuyNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 3.77,
+    "size": 22844
+  },
+  "cfc6ed7e1a82fbc234b08234e8f61a9b1fec251a7522eeba2828d7e44ef0c70f": {
+    "hash": "cfc6ed7e1a82fbc234b08234e8f61a9b1fec251a7522eeba2828d7e44ef0c70f",
+    "id": "dict:0103",
+    "text": "Students can purchase notebooks and exam stationery at the campus shop.",
+    "voice": "en-GB-MaisieNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 4.08,
+    "size": 24716
+  },
+  "4947f22d647a148d2a185f8d8f9cb611a8d897aafb8cc5ec98ed3043861345db": {
+    "hash": "4947f22d647a148d2a185f8d8f9cb611a8d897aafb8cc5ec98ed3043861345db",
+    "id": "dict:0102",
+    "text": "The conference banquet includes a seasonal fruit dessert and herbal tea.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 3.34,
+    "size": 20252
+  },
+  "be48f91caea7921b2f1d9b04ae26c68a7eb076c8601989efb5197b6ab8331507": {
+    "hash": "be48f91caea7921b2f1d9b04ae26c68a7eb076c8601989efb5197b6ab8331507",
+    "id": "dict:0101",
+    "text": "Satellite imagery shows that the desert boundary has expanded southward.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 4.13,
+    "size": 25004
+  },
+  "7ecffa96bf5a49a9d24e3980915f908f63ad0f12d2b4ec5093ed632bc0cbf29d": {
+    "hash": "7ecffa96bf5a49a9d24e3980915f908f63ad0f12d2b4ec5093ed632bc0cbf29d",
+    "id": "dict:0106",
+    "text": "The design is based on a simple thermodynamic principle discovered in 1824.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 4.54,
+    "size": 27452
+  },
+  "e67b36a3787d515e43228b997c97d9b047d3f777b247817c7c8b55a83638c0ce": {
+    "hash": "e67b36a3787d515e43228b997c97d9b047d3f777b247817c7c8b55a83638c0ce",
+    "id": "dict:0107",
+    "text": "Rising ocean acidity can severely affect the growth of coral skeletons.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 4.3,
+    "size": 26012
+  },
+  "58b185dad4db32826e008aaeb5de1b8249b651b672434da7c67915d368375343": {
+    "hash": "58b185dad4db32826e008aaeb5de1b8249b651b672434da7c67915d368375343",
+    "id": "dict:0059",
+    "text": "Approximately fifty percent of respondents commuted by public transport.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "-6%",
+    "targetWpm": 120.0,
+    "duration": 4.7,
+    "size": 28460
+  },
+  "919518dd691c4eb7e386391e1b385b3e8fbcaffe24dedce7c6436f5e3ee4c157": {
+    "hash": "919518dd691c4eb7e386391e1b385b3e8fbcaffe24dedce7c6436f5e3ee4c157",
+    "id": "dict:0109",
+    "text": "Arctic foxes adapt to freezing winters by growing thicker white fur.",
+    "voice": "en-US-AriaNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 3.7,
+    "size": 22412
+  },
+  "171b0d8137484286c704ce454c245b6c8ce809e3c13a018b3f68ec8249ac75bc": {
+    "hash": "171b0d8137484286c704ce454c245b6c8ce809e3c13a018b3f68ec8249ac75bc",
+    "id": "dict:0110",
+    "text": "Several municipal councils plan to adopt electric buses before 2030.",
+    "voice": "en-US-GuyNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 4.15,
+    "size": 25148
+  },
+  "a7a4a53e58aa803123d720b40f493ffb64e71f003b4c09e62707bf7fdceec0b7": {
+    "hash": "a7a4a53e58aa803123d720b40f493ffb64e71f003b4c09e62707bf7fdceec0b7",
+    "id": "dict:0156",
+    "text": "Each undergraduate attends one small-group tutorial per week with their advisor.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 3.58,
+    "size": 21692
+  },
+  "ac02c33efc923179791579e4b5f017044261b0b5a783e8b298108933e897010f": {
+    "hash": "ac02c33efc923179791579e4b5f017044261b0b5a783e8b298108933e897010f",
+    "id": "dict:0155",
+    "text": "Participants were asked to complete a brief questionnaire after the workshop.",
+    "voice": "en-US-JennyNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 3.41,
+    "size": 20684
+  },
+  "c4d7612b078f778c49d5181d2f947c7ae65f2032a370375566ccfab9baed197b": {
+    "hash": "c4d7612b078f778c49d5181d2f947c7ae65f2032a370375566ccfab9baed197b",
+    "id": "dict:0154",
+    "text": "Dietary fibre from oats helps lower harmful blood cholesterol levels.",
+    "voice": "en-US-GuyNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 3.46,
+    "size": 20972
+  },
+  "582b3067839b4cc15360c04fc718d1018036c2009981be9312501425c3adb863": {
+    "hash": "582b3067839b4cc15360c04fc718d1018036c2009981be9312501425c3adb863",
+    "id": "dict:0153",
+    "text": "Organic orchards employ beneficial insects to minimise chemical pesticide use.",
+    "voice": "en-GB-MaisieNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 4.66,
+    "size": 28172
+  },
+  "78a86f7721a4609d2703ae5455feab917b4b077775acb34c8d3a2f15bedcb8db": {
+    "hash": "78a86f7721a4609d2703ae5455feab917b4b077775acb34c8d3a2f15bedcb8db",
+    "id": "dict:0151",
+    "text": "Endurance athletes rely on complex carbohydrate sources for sustained energy.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 4.37,
+    "size": 26444
+  },
+  "68ddcc1b988b886f846b80f7e66194131a4ea3d2befa3451777b13322b534719": {
+    "hash": "68ddcc1b988b886f846b80f7e66194131a4ea3d2befa3451777b13322b534719",
+    "id": "dict:0152",
+    "text": "Rapid urbanisation has placed unprecedented pressure on municipal drainage systems.",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 4.15,
+    "size": 25148
+  },
+  "936f8fffa9b411273c0b5822c05a1dbd1deaea5963e76223fbbd23a93d36740b": {
+    "hash": "936f8fffa9b411273c0b5822c05a1dbd1deaea5963e76223fbbd23a93d36740b",
+    "id": "dict:0158",
+    "text": "An updated lecture timetable has been posted on the student portal.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 3.14,
+    "size": 19100
+  },
+  "ed77bba5fbb7cb077379fc6a9529c0fa647ee4d2b6597ffcbc25c94bd2b56d4c": {
+    "hash": "ed77bba5fbb7cb077379fc6a9529c0fa647ee4d2b6597ffcbc25c94bd2b56d4c",
+    "id": "dict:0159",
+    "text": "The regional government has allocated additional funding to coastal flood defences.",
+    "voice": "en-US-AriaNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 4.13,
+    "size": 25004
+  },
+  "18407db9ab639ab66de5ca63ded1420bf09aa033139dc5847e407739ef3255e5": {
+    "hash": "18407db9ab639ab66de5ca63ded1420bf09aa033139dc5847e407739ef3255e5",
+    "id": "dict:0202",
+    "text": "Tenants are required to pay a refundable security deposit before moving in.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.36,
+    "size": 20396
+  },
+  "d56de536e09daf356adf02438eb3ade29489f0ca4f8c7bde859906b92b3ce0e7": {
+    "hash": "d56de536e09daf356adf02438eb3ade29489f0ca4f8c7bde859906b92b3ce0e7",
+    "id": "dict:0201",
+    "text": "There is a late-night pharmacy located next to the campus medical clinic.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.19,
+    "size": 19388
+  },
+  "2c52bff4a11973ac4dfe6f28dde821233a2e9c3573ef9be83861364476b4ddf7": {
+    "hash": "2c52bff4a11973ac4dfe6f28dde821233a2e9c3573ef9be83861364476b4ddf7",
+    "id": "dict:0160",
+    "text": "Ferries to the outer islands leave regularly from the main harbour.",
+    "voice": "en-US-GuyNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 2.83,
+    "size": 17228
+  },
+  "cf3ddab4e116298d25d03b2710166ecac0ad34ad485d3ea0f546032f0fe43fa6": {
+    "hash": "cf3ddab4e116298d25d03b2710166ecac0ad34ad485d3ea0f546032f0fe43fa6",
+    "id": "dict:0203",
+    "text": "Drivers must present a valid driving licence before collecting the rental car.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.65,
+    "size": 22124
+  },
+  "7084c4d1ab823797de818040a512538f227c064a860dbde3261f59d02e732b0f": {
+    "hash": "7084c4d1ab823797de818040a512538f227c064a860dbde3261f59d02e732b0f",
+    "id": "dict:0157",
+    "text": "The economics department is hosting a guest seminar on sustainable finance.",
+    "voice": "en-GB-SoniaNeural",
+    "rate": "+9%",
+    "targetWpm": 140.0,
+    "duration": 4.06,
+    "size": 24572
+  },
+  "a973dc4c3538ba160c53301e2438d7531cbc02caced7c3a771ea9bbcd614ea77": {
+    "hash": "a973dc4c3538ba160c53301e2438d7531cbc02caced7c3a771ea9bbcd614ea77",
+    "id": "dict:0207",
+    "text": "The census form asks respondents to state their current occupation and industry.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 4.06,
+    "size": 24572
+  },
+  "2442ae3e8990eac959b59f71bc20eee592a2728b28b6aa09c66a8687eff837cf": {
+    "hash": "2442ae3e8990eac959b59f71bc20eee592a2728b28b6aa09c66a8687eff837cf",
+    "id": "dict:0108",
+    "text": "Researchers measured the cooling effect of street trees across forty cities.",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "+2%",
+    "targetWpm": 130.0,
+    "duration": 3.58,
+    "size": 21692
+  },
+  "ba95b307a6809b52622e7f55ccf2eaca7aaf98e003bbf64a8a94e244518a9f08": {
+    "hash": "ba95b307a6809b52622e7f55ccf2eaca7aaf98e003bbf64a8a94e244518a9f08",
+    "id": "dict:0209",
+    "text": "Please collect your visitor badge from the receptionist in the main lobby.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 2.98,
+    "size": 18092
+  },
+  "5f8f16c12f15e890fb4ef552ecc9541f40f6340b6ff9c5eb3b6ad57b9571c4eb": {
+    "hash": "5f8f16c12f15e890fb4ef552ecc9541f40f6340b6ff9c5eb3b6ad57b9571c4eb",
+    "id": "dict:0208",
+    "text": "I am attending the architecture symposium with a senior colleague from Sydney.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.14,
+    "size": 19100
+  },
+  "e0be54db03b48efd940cd8d20004a2a9428964a86661f269d5cc6fcb5a508ae2": {
+    "hash": "e0be54db03b48efd940cd8d20004a2a9428964a86661f269d5cc6fcb5a508ae2",
+    "id": "dict:0205",
+    "text": "Owing to severe coastal winds, the afternoon ferry crossing has been cancelled.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.74,
+    "size": 22700
+  },
+  "a15feda4fe086dafd3449d84a1391a766e68af327f32af030cc51403a9eb2cb0": {
+    "hash": "a15feda4fe086dafd3449d84a1391a766e68af327f32af030cc51403a9eb2cb0",
+    "id": "dict:0251",
+    "text": "Course registration for the autumn semester opens on the first Monday of August.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 3.7,
+    "size": 22412
+  },
+  "b11c62dc1dca2e75f1eb741f4acb94a55cd7fefea989478742be6f703301b533": {
+    "hash": "b11c62dc1dca2e75f1eb741f4acb94a55cd7fefea989478742be6f703301b533",
+    "id": "dict:0253",
+    "text": "Please retain your original receipt in case you need to exchange the item.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 3.36,
+    "size": 20396
+  },
+  "515e22b0f5c6acc6844352a7c940434e0f63a6273a81f695213fc5b891b924de": {
+    "hash": "515e22b0f5c6acc6844352a7c940434e0f63a6273a81f695213fc5b891b924de",
+    "id": "dict:0252",
+    "text": "Guided walking tours depart every hour from the steps of the old cathedral.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 2.81,
+    "size": 17084
+  },
+  "2d5a4d90c63cde36cfd519987c0cf8c7639ec4a6a8fae5d12ace55e21d650ec2": {
+    "hash": "2d5a4d90c63cde36cfd519987c0cf8c7639ec4a6a8fae5d12ace55e21d650ec2",
+    "id": "dict:0255",
+    "text": "The new shuttle bus provides a convenient link between the campus and airport.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 3.41,
+    "size": 20684
+  },
+  "55adc7d260eb6b7104393ccb5803c9576a7bb570542d1f442c0fb884434b0682": {
+    "hash": "55adc7d260eb6b7104393ccb5803c9576a7bb570542d1f442c0fb884434b0682",
+    "id": "dict:0204",
+    "text": "Our tour coordinator will email the final itinerary two weeks before departure.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.46,
+    "size": 20972
+  },
+  "92993773d95d223acfbd507e2766654acfc5398711a606fbf010d9f7a4ed0522": {
+    "hash": "92993773d95d223acfbd507e2766654acfc5398711a606fbf010d9f7a4ed0522",
+    "id": "dict:0210",
+    "text": "Students who pass the placement test will enter the intermediate German group.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.12,
+    "size": 18956
+  },
+  "1624c856da3223db1418e584a1ecce7548d4276ede785a6dfd307fa1d570c7f8": {
+    "hash": "1624c856da3223db1418e584a1ecce7548d4276ede785a6dfd307fa1d570c7f8",
+    "id": "dict:0206",
+    "text": "Please notify the catering manager if you require a vegetarian meal option.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+17%",
+    "targetWpm": 150.0,
+    "duration": 3.26,
+    "size": 19820
+  },
+  "348197dbe3b814c995402f5429677635b03103de426f8ad8110577c7ace49520": {
+    "hash": "348197dbe3b814c995402f5429677635b03103de426f8ad8110577c7ace49520",
+    "id": "dict:0254",
+    "text": "Could you spell your surname slowly so I can verify your membership record?",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 2.95,
+    "size": 17948
+  },
+  "cb469b884b1445187bb0d4724f66e5f01fc7e577e375b06267ce77347148d3c9": {
+    "hash": "cb469b884b1445187bb0d4724f66e5f01fc7e577e375b06267ce77347148d3c9",
+    "id": "dict:0257",
+    "text": "Wild solitary bees play a critical role in the pollination of orchard crops.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 3.48,
+    "size": 21116
+  },
+  "566c16d14e0b186b8be42ec0a4acf75af781941317aaf074363bae6dbf61ffb6": {
+    "hash": "566c16d14e0b186b8be42ec0a4acf75af781941317aaf074363bae6dbf61ffb6",
+    "id": "dict:0259",
+    "text": "The engineering team brought in a compact excavator to clear the drainage channel.",
+    "voice": "en-AU-NatashaNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 3.5,
+    "size": 21260
+  },
+  "0a03e46570430b2cb9e2ccbc7b5d109863177ee3306031b796073536d07d10af": {
+    "hash": "0a03e46570430b2cb9e2ccbc7b5d109863177ee3306031b796073536d07d10af",
+    "id": "dict:0256",
+    "text": "In British academic spelling, words like colour and behaviour retain the letter u.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 3.5,
+    "size": 21260
+  },
+  "0894a9c15db5a9167403fe8a78aff4ec2a09aebffc8f374a3a8f2badd4e1a10f": {
+    "hash": "0894a9c15db5a9167403fe8a78aff4ec2a09aebffc8f374a3a8f2badd4e1a10f",
+    "id": "dict:0258",
+    "text": "Frogs are sensitive indicator species because every amphibian absorbs water through its skin.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 3.84,
+    "size": 23276
+  },
+  "3dd2f0820a2c6f49097260c020c1dd30d47275b8fe36bc666504f1df01645efe": {
+    "hash": "3dd2f0820a2c6f49097260c020c1dd30d47275b8fe36bc666504f1df01645efe",
+    "id": "dict:0260",
+    "text": "Quiet study booths on the third floor of the library can be booked online.",
+    "voice": "en-AU-WilliamNeural",
+    "rate": "+25%",
+    "targetWpm": 160.0,
+    "duration": 2.76,
+    "size": 16796
+  },
+  "a0daf7b679c69fb280ab34a21c1670e2b2c3dba7753dce8af1d76d6943f26b2c": {
+    "hash": "a0daf7b679c69fb280ab34a21c1670e2b2c3dba7753dce8af1d76d6943f26b2c",
+    "id": "dict:0002",
+    "text": "Protecting wetland corridors is vital for preserving regional biodiversity.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "3da327c913598d3d0753dca01f372fbeede381a39f8e92e97750711fe60af88d": {
+    "hash": "3da327c913598d3d0753dca01f372fbeede381a39f8e92e97750711fe60af88d",
+    "id": "dict:0001",
+    "text": "Final-year students must submit a ten-thousand-word dissertation in May.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "1f1dcac1d468e676d9e7af7be9d1c6597a06f51e31af198ddda1eb8b4a520eb9": {
+    "hash": "1f1dcac1d468e676d9e7af7be9d1c6597a06f51e31af198ddda1eb8b4a520eb9",
+    "id": "dict:0008",
+    "text": "Overuse of veterinary drugs has accelerated bacterial antibiotic resistance.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 110.0,
+    "duration": 4.94,
+    "size": 29900
+  },
+  "83efc628ebc39c3e246fe3b4c773eb98dd179139a9d62b5728865cae74b411b7": {
+    "hash": "83efc628ebc39c3e246fe3b4c773eb98dd179139a9d62b5728865cae74b411b7",
+    "id": "dict:0006",
+    "text": "Introducing non-native predators can disrupt an entire island ecosystem.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "080454ccfa3b6cf63b7b135a722ae3ce575ecc9797af34c57b398d9872fd4c62": {
+    "hash": "080454ccfa3b6cf63b7b135a722ae3ce575ecc9797af34c57b398d9872fd4c62",
+    "id": "dict:0003",
+    "text": "Rapid tropical deforestation reduces rainfall and destabilises local soils.",
+    "voice": "en-GB-MaisieNeural",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "30788c3ff15c558c8d6a13bd067c2de2b35901508f8f725978fa2d60afd384dd": {
+    "hash": "30788c3ff15c558c8d6a13bd067c2de2b35901508f8f725978fa2d60afd384dd",
+    "id": "dict:0005",
+    "text": "Heavy investment in rail infrastructure eased commuter congestion dramatically.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "84c727490d911cabdc9e7080f9ef5f98809065bcac0e21692885c110b1163224": {
+    "hash": "84c727490d911cabdc9e7080f9ef5f98809065bcac0e21692885c110b1163224",
+    "id": "dict:0004",
+    "text": "Urban planners are prioritising long-term sustainability over short-term cost.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 110.0,
+    "duration": 4.94,
+    "size": 29900
+  },
+  "ddd842fb87a8e7a71634b60f763367f65f93420e347cb984d542588cc05b9267": {
+    "hash": "ddd842fb87a8e7a71634b60f763367f65f93420e347cb984d542588cc05b9267",
+    "id": "dict:0007",
+    "text": "Passive cooling techniques were central to traditional desert architecture.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "3d8aebd7d50c346b75b3cc9a8ae945f5f50a1817181400286512139ef9e93ac7": {
+    "hash": "3d8aebd7d50c346b75b3cc9a8ae945f5f50a1817181400286512139ef9e93ac7",
+    "id": "dict:0009",
+    "text": "Cold water immersion temporarily raises a swimmer's resting metabolism.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 110.0,
+    "duration": 4.97,
+    "size": 30044
+  },
+  "cce3cb6ece9955f57a10a35c3ee6e69ddda545622a8de0874ef1ced5cb1650de": {
+    "hash": "cce3cb6ece9955f57a10a35c3ee6e69ddda545622a8de0874ef1ced5cb1650de",
+    "id": "dict:0010",
+    "text": "Mountain reservoirs power several hydroelectric stations across the valley.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 110.0,
+    "duration": 4.94,
+    "size": 29900
+  },
+  "8c31cde479016646ee9a12656cfde862d9d5ea5069f6bf3af957ac5f271c7ebb": {
+    "hash": "8c31cde479016646ee9a12656cfde862d9d5ea5069f6bf3af957ac5f271c7ebb",
+    "id": "dict:0056",
+    "text": "The marine survey collected water samples from fourteen coastal monitoring stations.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 120.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "a1a8890a088af68916e5ba2687dd2b855beddcaf83e7d2091f769c1abaaa0a2f": {
+    "hash": "a1a8890a088af68916e5ba2687dd2b855beddcaf83e7d2091f769c1abaaa0a2f",
+    "id": "dict:0054",
+    "text": "The archaeology museum is open to school groups for thirteen days this month.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 120.0,
+    "duration": 6.55,
+    "size": 39548
+  },
+  "4f0f4d80ddd597468ef5eb2b51cdfc91c78632af92a84b8d0289f5277b1b9624": {
+    "hash": "4f0f4d80ddd597468ef5eb2b51cdfc91c78632af92a84b8d0289f5277b1b9624",
+    "id": "dict:0053",
+    "text": "Applications for the spring exchange programme close on the fourteenth of February.",
+    "voice": "en-GB-MaisieNeural",
+    "targetWpm": 120.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "4cc0175e687dcb8f0af35cbd44f87f6689784c2fcdb931d012b4eddf22e3295f": {
+    "hash": "4cc0175e687dcb8f0af35cbd44f87f6689784c2fcdb931d012b4eddf22e3295f",
+    "id": "dict:0052",
+    "text": "Please submit your laboratory safety form before Thursday afternoon.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 120.0,
+    "duration": 4.54,
+    "size": 27452
+  },
+  "39426aa607db6495ed504703efe7840d1871792e73b4838f546958613d57a34a": {
+    "hash": "39426aa607db6495ed504703efe7840d1871792e73b4838f546958613d57a34a",
+    "id": "dict:0051",
+    "text": "The university orientation tour has been rescheduled for Wednesday morning at nine.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 120.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "eaf072d116b193933a2192f40c859f981fa8894b834f8cb07c74c2c004e39bc3": {
+    "hash": "eaf072d116b193933a2192f40c859f981fa8894b834f8cb07c74c2c004e39bc3",
+    "id": "dict:0055",
+    "text": "Participants must arrive at least thirty minutes prior to the listening exam.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 120.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "db291c1a1e09eeebf042835244a065dc909b2f67023445cd85ab05d4bff5fd66": {
+    "hash": "db291c1a1e09eeebf042835244a065dc909b2f67023445cd85ab05d4bff5fd66",
+    "id": "dict:0057",
+    "text": "The refurbished auditorium can now accommodate forty additional researchers.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 120.0,
+    "duration": 4.56,
+    "size": 27596
+  },
+  "49fac700aae9002ebb63cf69f6cf8cdfaf0b2f4b14e9c75f284b35c4014109e1": {
+    "hash": "49fac700aae9002ebb63cf69f6cf8cdfaf0b2f4b14e9c75f284b35c4014109e1",
+    "id": "dict:0058",
+    "text": "A late fee of fifteen pounds applies if library books are returned overdue.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 120.0,
+    "duration": 6.55,
+    "size": 39548
+  },
+  "a6ad4e8c891f3fe50581c17fcd1629145cd032a7253706f2db62990b2e2b2f53": {
+    "hash": "a6ad4e8c891f3fe50581c17fcd1629145cd032a7253706f2db62990b2e2b2f53",
+    "id": "dict:0104",
+    "text": "Traffic remained completely stationary along the ring road for nearly an hour.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 130.0,
+    "duration": 5.59,
+    "size": 33788
+  },
+  "791f439f2b48d46ea693c8e96fb43b408f7ceda7b953ed6a631d2c593e15018d": {
+    "hash": "791f439f2b48d46ea693c8e96fb43b408f7ceda7b953ed6a631d2c593e15018d",
+    "id": "dict:0105",
+    "text": "The college principal welcomed incoming scholars at the opening ceremony.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 130.0,
+    "duration": 4.66,
+    "size": 28172
+  },
+  "c4672e6cff12d6deb85d3f3c56efc57626b3798c52a4326abd72060bfc5798ea": {
+    "hash": "c4672e6cff12d6deb85d3f3c56efc57626b3798c52a4326abd72060bfc5798ea",
+    "id": "dict:0102",
+    "text": "The conference banquet includes a seasonal fruit dessert and herbal tea.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 130.0,
+    "duration": 5.11,
+    "size": 30908
+  },
+  "a13106000661dc360c68ae34c8e8c5cb5f45c715d16da435cffec86afaf9a4df": {
+    "hash": "a13106000661dc360c68ae34c8e8c5cb5f45c715d16da435cffec86afaf9a4df",
+    "id": "dict:0106",
+    "text": "The design is based on a simple thermodynamic principle discovered in 1824.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 130.0,
+    "duration": 5.59,
+    "size": 33788
+  },
+  "29a325fd976ab44b5beb4c06f216564956a0b8598fdaebd6271c7aba7764a14c": {
+    "hash": "29a325fd976ab44b5beb4c06f216564956a0b8598fdaebd6271c7aba7764a14c",
+    "id": "dict:0060",
+    "text": "The exhibition runs for sixteen weeks in the north wing of the gallery.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 120.0,
+    "duration": 6.48,
+    "size": 39116
+  },
+  "14639cf8757732ca6d4dbd3fe27dbc8a4c11a3be40dff3238eb5fca597e6fb0b": {
+    "hash": "14639cf8757732ca6d4dbd3fe27dbc8a4c11a3be40dff3238eb5fca597e6fb0b",
+    "id": "dict:0103",
+    "text": "Students can purchase notebooks and exam stationery at the campus shop.",
+    "voice": "en-GB-MaisieNeural",
+    "targetWpm": 130.0,
+    "duration": 5.11,
+    "size": 30908
+  },
+  "ab9236b7ab0e9cd0695e51cf8512c73f70c5f45ca37b7083a11d04dc81fa018c": {
+    "hash": "ab9236b7ab0e9cd0695e51cf8512c73f70c5f45ca37b7083a11d04dc81fa018c",
+    "id": "dict:0059",
+    "text": "Approximately fifty percent of respondents commuted by public transport.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 120.0,
+    "duration": 4.54,
+    "size": 27452
+  },
+  "826fe10e735e0617d648f1422fe081b78e0e39d56b6a443ec703765463dc5c41": {
+    "hash": "826fe10e735e0617d648f1422fe081b78e0e39d56b6a443ec703765463dc5c41",
+    "id": "dict:0101",
+    "text": "Satellite imagery shows that the desert boundary has expanded southward.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 130.0,
+    "duration": 4.66,
+    "size": 28172
+  },
+  "0cf8ea97ae7763070c8f1d85c0ce7108b36f93d818aa24f52bc25e3bb738c750": {
+    "hash": "0cf8ea97ae7763070c8f1d85c0ce7108b36f93d818aa24f52bc25e3bb738c750",
+    "id": "dict:0154",
+    "text": "Dietary fibre from oats helps lower harmful blood cholesterol levels.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 140.0,
+    "duration": 4.32,
+    "size": 26156
+  },
+  "80e2e48c3dc79b850b338f22134897cdfcab05d5b11ad88ae540f1801a27fbf5": {
+    "hash": "80e2e48c3dc79b850b338f22134897cdfcab05d5b11ad88ae540f1801a27fbf5",
+    "id": "dict:0153",
+    "text": "Organic orchards employ beneficial insects to minimise chemical pesticide use.",
+    "voice": "en-GB-MaisieNeural",
+    "targetWpm": 140.0,
+    "duration": 4.34,
+    "size": 26300
+  },
+  "6fca94e4f5283718c994dae1a9e309a1da85b0c544c02a0d8c4ebd1d6382e0b2": {
+    "hash": "6fca94e4f5283718c994dae1a9e309a1da85b0c544c02a0d8c4ebd1d6382e0b2",
+    "id": "dict:0109",
+    "text": "Arctic foxes adapt to freezing winters by growing thicker white fur.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 130.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "cd4b790ecfa80758a67b98f841e6ae23a44772b8185d64c4b7af8683281c276a": {
+    "hash": "cd4b790ecfa80758a67b98f841e6ae23a44772b8185d64c4b7af8683281c276a",
+    "id": "dict:0152",
+    "text": "Rapid urbanisation has placed unprecedented pressure on municipal drainage systems.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 140.0,
+    "duration": 4.37,
+    "size": 26444
+  },
+  "0d748356217942630aa537be397b02b082d6c299c43db4b1bbd723d1eba14c74": {
+    "hash": "0d748356217942630aa537be397b02b082d6c299c43db4b1bbd723d1eba14c74",
+    "id": "dict:0110",
+    "text": "Several municipal councils plan to adopt electric buses before 2030.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 130.0,
+    "duration": 4.68,
+    "size": 28316
+  },
+  "df1b79cd850dc5c89cfb8ae357ae9ac60f90a23d4d97e4ff08a3c37580c121c3": {
+    "hash": "df1b79cd850dc5c89cfb8ae357ae9ac60f90a23d4d97e4ff08a3c37580c121c3",
+    "id": "dict:0108",
+    "text": "Researchers measured the cooling effect of street trees across forty cities.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 130.0,
+    "duration": 5.11,
+    "size": 30908
+  },
+  "008f6643962753091b67d646de62fa5d03693d56f9c9ff292e2818a001e94463": {
+    "hash": "008f6643962753091b67d646de62fa5d03693d56f9c9ff292e2818a001e94463",
+    "id": "dict:0107",
+    "text": "Rising ocean acidity can severely affect the growth of coral skeletons.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 130.0,
+    "duration": 5.11,
+    "size": 30908
+  },
+  "7950cecc30f62022c9ce0e34dfa71dbfe05096a008fd6b1c3bc0f658930a423b": {
+    "hash": "7950cecc30f62022c9ce0e34dfa71dbfe05096a008fd6b1c3bc0f658930a423b",
+    "id": "dict:0151",
+    "text": "Endurance athletes rely on complex carbohydrate sources for sustained energy.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 140.0,
+    "duration": 4.34,
+    "size": 26300
+  },
+  "6f9bb58f0644be6615b70361fd1126d11ddaaeaede7e1a64b5316b9e1a73c937": {
+    "hash": "6f9bb58f0644be6615b70361fd1126d11ddaaeaede7e1a64b5316b9e1a73c937",
+    "id": "dict:0155",
+    "text": "Participants were asked to complete a brief questionnaire after the workshop.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 140.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "12e3f133d03a1d859a3ef4b74e968890f3ca0d749ab8bd309b051d5cea941292": {
+    "hash": "12e3f133d03a1d859a3ef4b74e968890f3ca0d749ab8bd309b051d5cea941292",
+    "id": "dict:0158",
+    "text": "An updated lecture timetable has been posted on the student portal.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 140.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "9e777e081bb3cec7537bb208ec84bc0a3426e4d147cffc0c68ef875a193b0933": {
+    "hash": "9e777e081bb3cec7537bb208ec84bc0a3426e4d147cffc0c68ef875a193b0933",
+    "id": "dict:0156",
+    "text": "Each undergraduate attends one small-group tutorial per week with their advisor.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 140.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "921842710ad0fc935fd107669f9889a5c5584ed81ee937b20107f7f050b0abe0": {
+    "hash": "921842710ad0fc935fd107669f9889a5c5584ed81ee937b20107f7f050b0abe0",
+    "id": "dict:0159",
+    "text": "The regional government has allocated additional funding to coastal flood defences.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 140.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "c9bd4d4c31ddb0d9763ba056e214552ed38d676fe8f1dd93191e05f0924b7941": {
+    "hash": "c9bd4d4c31ddb0d9763ba056e214552ed38d676fe8f1dd93191e05f0924b7941",
+    "id": "dict:0201",
+    "text": "There is a late-night pharmacy located next to the campus medical clinic.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "bfd2b6e0238dde5a6ae8d718a83d025b7cd4977e027b62f62b37d4dd9327cbdb": {
+    "hash": "bfd2b6e0238dde5a6ae8d718a83d025b7cd4977e027b62f62b37d4dd9327cbdb",
+    "id": "dict:0160",
+    "text": "Ferries to the outer islands leave regularly from the main harbour.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 140.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "acf1a2c92074bd83c8e57cd1e5c0303e6b13954b2ec643dbf31aa3f4e3cc4781": {
+    "hash": "acf1a2c92074bd83c8e57cd1e5c0303e6b13954b2ec643dbf31aa3f4e3cc4781",
+    "id": "dict:0157",
+    "text": "The economics department is hosting a guest seminar on sustainable finance.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 140.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "fa8b350587ac2c7b58858fb72c6a8263e6c9ddedd1eeabc67ce7c4cb4ba03d13": {
+    "hash": "fa8b350587ac2c7b58858fb72c6a8263e6c9ddedd1eeabc67ce7c4cb4ba03d13",
+    "id": "dict:0203",
+    "text": "Drivers must present a valid driving licence before collecting the rental car.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "05d1ebfacfa473ef0d8e8d1247a1c0d02a834bf2f7615189087d4be1b3e80389": {
+    "hash": "05d1ebfacfa473ef0d8e8d1247a1c0d02a834bf2f7615189087d4be1b3e80389",
+    "id": "dict:0205",
+    "text": "Owing to severe coastal winds, the afternoon ferry crossing has been cancelled.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "db769fabf90c98abab8846a5593e0e112a2090945bab66a1a8cdddf6108d75d5": {
+    "hash": "db769fabf90c98abab8846a5593e0e112a2090945bab66a1a8cdddf6108d75d5",
+    "id": "dict:0202",
+    "text": "Tenants are required to pay a refundable security deposit before moving in.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "5f0209d5855025c9057af1ab364eaa3aaa6222fba633709acb7a1f21c8a68cde": {
+    "hash": "5f0209d5855025c9057af1ab364eaa3aaa6222fba633709acb7a1f21c8a68cde",
+    "id": "dict:0204",
+    "text": "Our tour coordinator will email the final itinerary two weeks before departure.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "cf0db1e84e91d9182449acd292f89bc9b40a2914ad9a4c3436c1c154a0ee075c": {
+    "hash": "cf0db1e84e91d9182449acd292f89bc9b40a2914ad9a4c3436c1c154a0ee075c",
+    "id": "dict:0206",
+    "text": "Please notify the catering manager if you require a vegetarian meal option.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "509fffa977cb736f4cf471c6f3b188345c7888bf9258882d11c2a6da3b3d0e7b": {
+    "hash": "509fffa977cb736f4cf471c6f3b188345c7888bf9258882d11c2a6da3b3d0e7b",
+    "id": "dict:0209",
+    "text": "Please collect your visitor badge from the receptionist in the main lobby.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "43250cbbf6056c460de2ee389b8a9a3f8e83e99c99326d6ef7e3bfc950b2bb58": {
+    "hash": "43250cbbf6056c460de2ee389b8a9a3f8e83e99c99326d6ef7e3bfc950b2bb58",
+    "id": "dict:0253",
+    "text": "Please retain your original receipt in case you need to exchange the item.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "0a969e7a0405f3092033e9052c30934274eb1776a0b9f953d3ef4e918ced9221": {
+    "hash": "0a969e7a0405f3092033e9052c30934274eb1776a0b9f953d3ef4e918ced9221",
+    "id": "dict:0251",
+    "text": "Course registration for the autumn semester opens on the first Monday of August.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "28fc55d47dbc055985181e376456508008c98c972004de1fd31b1059667e6654": {
+    "hash": "28fc55d47dbc055985181e376456508008c98c972004de1fd31b1059667e6654",
+    "id": "dict:0207",
+    "text": "The census form asks respondents to state their current occupation and industry.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "98714e9e014bd87d995def39789227b253c0e7839125401727bfa6809bac4d14": {
+    "hash": "98714e9e014bd87d995def39789227b253c0e7839125401727bfa6809bac4d14",
+    "id": "dict:0210",
+    "text": "Students who pass the placement test will enter the intermediate German group.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "0317f36335126f677af48e349a61e5dc1156fe21afdc363574ea707c654979f4": {
+    "hash": "0317f36335126f677af48e349a61e5dc1156fe21afdc363574ea707c654979f4",
+    "id": "dict:0208",
+    "text": "I am attending the architecture symposium with a senior colleague from Sydney.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 150.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "e8b2494bc8e0012393d87e887bf87924587b1e439875661789d03626e665e8a2": {
+    "hash": "e8b2494bc8e0012393d87e887bf87924587b1e439875661789d03626e665e8a2",
+    "id": "dict:0259",
+    "text": "The engineering team brought in a compact excavator to clear the drainage channel.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "b35b690b74fe0816244589974f43ea76d0de3b0748c2c4857e9af1a4da943a2c": {
+    "hash": "b35b690b74fe0816244589974f43ea76d0de3b0748c2c4857e9af1a4da943a2c",
+    "id": "dict:0255",
+    "text": "The new shuttle bus provides a convenient link between the campus and airport.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "157bbafaf9abdce549fdf303879991abce16f2c7c4f6033eabeec1e79ab31a27": {
+    "hash": "157bbafaf9abdce549fdf303879991abce16f2c7c4f6033eabeec1e79ab31a27",
+    "id": "dict:0257",
+    "text": "Wild solitary bees play a critical role in the pollination of orchard crops.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "10759d41f8a6cf157ad839dde8c636465558528ded868b789d37f15c348eedea": {
+    "hash": "10759d41f8a6cf157ad839dde8c636465558528ded868b789d37f15c348eedea",
+    "id": "dict:0254",
+    "text": "Could you spell your surname slowly so I can verify your membership record?",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "c4d0771fafa8b570916bdb310bd69597bf771ebcdc2d9134f891eda8c8a85a22": {
+    "hash": "c4d0771fafa8b570916bdb310bd69597bf771ebcdc2d9134f891eda8c8a85a22",
+    "id": "dict:0252",
+    "text": "Guided walking tours depart every hour from the steps of the old cathedral.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "04570894895773436ce94ef89c68efa225ef9b2e532157d29b0d4ac07a74b7d6": {
+    "hash": "04570894895773436ce94ef89c68efa225ef9b2e532157d29b0d4ac07a74b7d6",
+    "id": "dict:0256",
+    "text": "In British academic spelling, words like colour and behaviour retain the letter u.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
+  },
+  "1443b7ea292a8ab947dfdeeade6c4373ce0bfb873d93a0cfdd9aabb6967a0c9f": {
+    "hash": "1443b7ea292a8ab947dfdeeade6c4373ce0bfb873d93a0cfdd9aabb6967a0c9f",
+    "id": "dict:0260",
+    "text": "Quiet study booths on the third floor of the library can be booked online.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 160.0,
+    "duration": 5.28,
+    "size": 31916
+  },
+  "857c1c07835d17da74786c42bea603cf41bac6b463a4465a790cff3c638053c4": {
+    "hash": "857c1c07835d17da74786c42bea603cf41bac6b463a4465a790cff3c638053c4",
+    "id": "dict:0258",
+    "text": "Frogs are sensitive indicator species because every amphibian absorbs water through its skin.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 160.0,
+    "duration": 4.92,
+    "size": 29756
   }
 }
