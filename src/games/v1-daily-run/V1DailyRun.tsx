@@ -22,7 +22,6 @@ import {
   ChoiceButton,
   EmptyState,
   FeedbackPanel,
-  KeyHint,
   Pill,
   ProgressRing,
   RecapScreen,
@@ -738,11 +737,10 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
             <Button
               variant="primary"
               skill="vocab"
-              hotkey="Enter"
               rightIcon={<ArrowRight className="w-4 h-4" />}
               onClick={() => setRunState(startPlayingFromMap(runState))}
             >
-              Bắt đầu
+              Bắt đầu (Enter)
             </Button>
           </div>
         </Card>
@@ -903,11 +901,10 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
             <Button
               variant="primary"
               skill="vocab"
-              hotkey="Enter"
               rightIcon={<ArrowRight className="w-4 h-4" />}
               onClick={() => setRunState(continueFromCheckpoint(runState))}
             >
-              Đi tiếp Chặng {runState.currentStage + 1}
+              Đi tiếp Chặng {runState.currentStage + 1} (Enter)
             </Button>
           </div>
         </Card>
@@ -1200,11 +1197,10 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                       {activeNode.prompt.face !== 'dict_full' && (
                         <Button
                           variant="secondary"
-                          hotkey="H"
                           leftIcon={<Lightbulb className="w-4 h-4" />}
                           onClick={handleHint}
                         >
-                          Gợi ý
+                          Gợi ý (H)
                         </Button>
                       )}
 
@@ -1222,10 +1218,9 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                         variant="primary"
                         size="md"
                         skill={isBossPhase ? 'speaking' : 'vocab'}
-                        hotkey="↵"
                         onClick={() => handleSubmitAnswer()}
                       >
-                        Nộp
+                        Nộp (Enter)
                       </Button>
                     )}
                   </div>
@@ -1280,7 +1275,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     className="text-xs"
                     style={{ color: 'var(--color-text-dim)' }}
                   >
-                    Tự chuyển sau 1,2s hoặc bấm <KeyHint keyName="↵" />
+                    Tự chuyển sau 1,2 giây hoặc bấm Enter
                   </span>
                 </motion.div>
               )}
@@ -1658,11 +1653,10 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           <Button
             variant="primary"
             skill="vocab"
-            hotkey="↵"
             rightIcon={<ArrowRight className="w-4 h-4" />}
             onClick={onIntroSeen}
           >
-            Đã xem
+            Đã xem (Enter)
           </Button>
         </div>
       </div>
@@ -2009,17 +2003,36 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     );
   }
 
-  // 8. Face: tfng_retry / head_retry (Reading: đoạn + câu hỏi, chọn 1–4)
+  // 8. Face: tfng_retry / head_retry (Reading: câu hỏi + lựa chọn lên trước, đoạn văn cuộn trong khung)
   if (prompt.face === 'tfng_retry' || prompt.face === 'head_retry') {
     const quote = hasFeedback ? prompt.evidenceQuote : undefined;
     return (
       <div className="space-y-4">
+        {prompt.face === 'tfng_retry' ? (
+          <div className="space-y-1">
+            <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
+              Phát biểu cần kiểm tra với đoạn {prompt.paragraphLabel}
+            </div>
+            <p className="text-lg font-bold leading-snug" style={{ color: 'var(--color-reading)' }}>
+              “{prompt.statement}”
+            </p>
+          </div>
+        ) : (
+          <p className="text-base font-semibold" style={{ color: 'var(--color-text)' }}>
+            Chọn tiêu đề khớp ý chính của đoạn {prompt.paragraphLabel} (phím 1–4):
+          </p>
+        )}
+
+        {renderChoices(prompt.choices, prompt.correctIndex)}
+
         <div
-          className="p-4 rounded-[var(--radius-md)] border space-y-2"
+          className="p-4 rounded-[var(--radius-md)] border space-y-2 max-h-[36vh] overflow-y-auto"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
           }}
+          tabIndex={0}
+          aria-label={`Đoạn ${prompt.paragraphLabel} của bài đọc`}
         >
           <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
             {prompt.passageTitle} · đoạn {prompt.paragraphLabel}
@@ -2028,23 +2041,6 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
             <QuoteHighlight text={prompt.paragraphText} quote={quote} />
           </p>
         </div>
-
-        {prompt.face === 'tfng_retry' ? (
-          <div className="space-y-1">
-            <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
-              Phát biểu cần kiểm tra
-            </div>
-            <p className="text-lg font-bold leading-snug" style={{ color: 'var(--color-reading)' }}>
-              “{prompt.statement}”
-            </p>
-          </div>
-        ) : (
-          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-            Chọn tiêu đề khớp ý chính của đoạn {prompt.paragraphLabel} (phím 1–4):
-          </p>
-        )}
-
-        {renderChoices(prompt.choices, prompt.correctIndex)}
       </div>
     );
   }
