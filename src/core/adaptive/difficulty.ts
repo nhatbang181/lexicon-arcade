@@ -1,3 +1,8 @@
+/** LUAT B6: đúng >= 90% trong cửa sổ 20 lượt -> tăng 1 bậc. */
+export const HIGH_ACCURACY = 0.9;
+/** LUAT B6: đúng <= 65% trong cửa sổ 20 lượt -> giảm 1 bậc. */
+export const LOW_ACCURACY = 0.65;
+
 export type DifficultyTier = 1 | 2 | 3 | 4 | 5;
 
 export interface TurnOutcome {
@@ -56,7 +61,7 @@ export function tierToLevel(tier: DifficultyTier): number {
 
 /**
  * Adjust difficulty level based on rolling accuracy and response speed
- * targeting desirable difficulty (70–90% accuracy band, docs/02 §4).
+ * targeting desirable difficulty (vùng 65–90%, LUAT B6; docs/02 §4).
  */
 export function adjustDifficulty(
   state: AdaptiveState,
@@ -141,7 +146,7 @@ export function adjustDifficulty(
   const fastMastery = accuracy >= 0.85 && avgSpeedRatio !== null && avgSpeedRatio <= 0.75;
   const slowStruggle = accuracy <= 0.75 && avgSpeedRatio !== null && avgSpeedRatio >= 1.5;
 
-  if (accuracy > 0.9 || fastMastery) {
+  if (accuracy >= HIGH_ACCURACY || fastMastery) {
     const nextLevel = Math.min(maxLevel, clampedCurrent + 1);
     const changed = nextLevel !== clampedCurrent;
     return {
@@ -153,11 +158,11 @@ export function adjustDifficulty(
       accuracy,
       avgSpeedRatio,
       turnsSinceLastChange: changed ? 0 : state.turnsSinceLastChange,
-      reason: changed ? (accuracy > 0.9 ? 'high_accuracy' : 'fast_mastery') : 'at_max_level',
+      reason: changed ? (accuracy >= HIGH_ACCURACY ? 'high_accuracy' : 'fast_mastery') : 'at_max_level',
     };
   }
 
-  if (accuracy < 0.7 || slowStruggle) {
+  if (accuracy <= LOW_ACCURACY || slowStruggle) {
     const nextLevel = Math.max(minLevel, clampedCurrent - 1);
     const changed = nextLevel !== clampedCurrent;
     return {
@@ -169,7 +174,7 @@ export function adjustDifficulty(
       accuracy,
       avgSpeedRatio,
       turnsSinceLastChange: changed ? 0 : state.turnsSinceLastChange,
-      reason: changed ? (accuracy < 0.7 ? 'low_accuracy' : 'slow_struggle') : 'at_min_level',
+      reason: changed ? (accuracy <= LOW_ACCURACY ? 'low_accuracy' : 'slow_struggle') : 'at_min_level',
     };
   }
 
