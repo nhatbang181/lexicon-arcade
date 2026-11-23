@@ -287,6 +287,8 @@ export interface ErrUserPromptPayload {
   back: string;
   acceptedAnswers: string[];
   noteVi: string;
+  /** Câu ví dụ ĐÚNG dùng cụm (bằng chứng B2). Không bao giờ là câu sai của người học. */
+  exampleEn?: string;
   audioClip?: UserItemAudioClip;
   placeholderMask: string;
   letterCount: number;
@@ -486,7 +488,7 @@ export interface V1RunState {
   lastWeekAccuracy?: number | null;
   content: V1ContentBundle;
   /** Thẻ đáng lẽ vào hàng đợi nhưng không dựng được nội dung (V1-2): bị bỏ, caller ghi `missing_item`. */
-  missingItems: Array<{ cardId: string; itemId: string; face: string }>;
+  missingItems: Array<{ cardId: string; itemId: string; face: string; reason?: 'missing_audio' }>;
 }
 
 export interface CreateV1RunOptions {
@@ -917,6 +919,10 @@ export function resolveV1Face(
     if (l1ColTrapSource(id, idx)) return 'err_user';
     return userItemOf(content, id) ? 'err_user' : null;
   }
+  // Thẻ nghe không có file audio thật: không dựng node (không chấm Again cho câu không nghe được).
+  if ((id.startsWith('dict:') || id.startsWith('ltrap:')) && extras?.missingAudio?.includes(id)) {
+    return null;
+  }
   if (id.startsWith('dict:')) {
     if (idx.dict.has(id)) return card.face === 'dict_full' ? 'dict_full' : 'listen_spell';
     return userItemOf(content, id) ? 'err_user' : null;
@@ -936,6 +942,16 @@ export function resolveV1Face(
     return userItemOf(content, id) ? 'err_user' : null;
   }
   return null;
+}
+
+function missingEntry(card: SRSCard, content: V1ContentBundle): V1RunState['missingItems'][number] {
+  const entry: V1RunState['missingItems'][number] = {
+    cardId: card.id,
+    itemId: card.itemId,
+    face: card.face,
+  };
+  if (content.extras?.missingAudio?.includes(card.itemId)) entry.reason = 'missing_audio';
+  return entry;
 }
 
 /**
@@ -1111,6 +1127,7 @@ function buildErrUserPrompt(
       back: l1col.phrase,
       acceptedAnswers: accepted,
       noteVi: trap.whyVi,
+      exampleEn: l1col.example,
       placeholderMask: buildPlaceholderMask(l1col.phrase, 0),
       letterCount: countTargetLetters(l1col.phrase),
     };
@@ -1552,7 +1569,9 @@ const WEEK_MS = 7 * 86_400_000;
  * `startedAt` ∈ [now − 14 ngày, now − 7 ngày). Không có dữ liệu → `null`.
  */
 export function computeLastWeekAccuracy(
-  attempts: ReadonlyArray<Pick<AttemptRecord, 'gameId' | 'startedAt' | 'score' | 'total' | 'status'>>,
+  attempts: ReadonlyArray<
+    Pick<AttemptRecord, 'gameId' | 'startedAt' | 'score' | 'total' | 'status' | 'reviewsSaved'>
+  >,
   now: Date = new Date(),
 ): number | null {
   const to = now.getTime() - WEEK_MS;
@@ -1560,7 +1579,9 @@ export function computeLastWeekAccuracy(
   let score = 0;
   let total = 0;
   for (const a of attempts) {
-    if (a.gameId !== 'v1' || a.status === 'in_progress') continue;
+    if (a.gameId !== 'v1') continue;
+    // Run thoát giữa chừng (✕, đóng tab) vẫn ở `in_progress`: tính nếu đã lưu ≥ 1 review thật.
+    if (a.status === 'in_progress' && (a.reviewsSaved ?? 0) <= 0) continue;
     if (a.startedAt < from || a.startedAt >= to) continue;
     score += Math.max(0, a.score);
     total += Math.max(0, a.total);
@@ -1676,7 +1697,11 @@ export function scorePromptAnswer(
         correctAnswer: `${prompt.headword}: ${prompt.correctAnswer}`,
         explanationVi: isCorrect
           ? `Chính xác! "${prompt.headword}" nghĩa là "${prompt.correctAnswer}".`
-          : `"${prompt.headword}" có nghĩa chuẩn là "${prompt.correctAnswer}".`,
+          : `"${prompt.headword}" có nghĩa chuẩn là "${prompt.correctAnswer}".${
+              prompt.choices.some((c) => normalizeText(c) === normalizeText(selectedText))
+                ? ` Bạn chọn "${selectedText}": đó là nghĩa của một từ khác, không phải của "${prompt.headword}".`
+                : ''
+            }`,
         exampleEn: prompt.exampleEn,
         collocationHighlight: prompt.collocationHighlight,
         vnTrap: prompt.vnTrap,
@@ -1985,8 +2010,8 @@ export function scorePromptAnswer(
         isTypo: false,
         correctAnswer: primary,
         explanationVi: prompt.noteVi,
-        exampleEn: prompt.front,
-        vnTrap: isCorrect ? undefined : prompt.noteVi,
+        // Khung bằng chứng chỉ chứa câu ĐÚNG; ghi chú đã nằm ở phần lý do nên không lặp thành "Bẫy hay gặp"
+        exampleEn: prompt.exampleEn,
         charDiff: isCorrect || !diff ? undefined : diff.segments,
         wrongCharNotice: isCorrect || !diff ? undefined : diff.firstWrongNotice,
       };
@@ -2104,7 +2129,7 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     if (resolveV1Face(card, content, { allowIntro: false }) !== null) {
       renderable.push(card);
     } else if (card.unlocked && card.face !== 'intro' && (card.state === State.New || card.due <= nowMs)) {
-      missingItems.push({ cardId: card.id, itemId: card.itemId, face: card.face });
+      missingItems.push(missingEntry(card, content));
     }
   }
 
@@ -2170,7 +2195,7 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     if (node) {
       builtNodes.push({ node, entry });
     } else {
-      missingItems.push({ cardId: entry.card.id, itemId: entry.card.itemId, face: entry.card.face });
+      missingItems.push(missingEntry(entry.card, content));
     }
   }
   const nodes: V1RunNode[] = builtNodes.map((b) => b.node);
@@ -2376,6 +2401,16 @@ export function recordNodeAudioPlay(state: V1RunState): {
     allowed: true,
     remainingPlays: 99,
   };
+}
+
+/**
+ * Trả lại 1 lượt nghe khi file audio không phát được (lỗi tải/ phát): người học không bị trừ lượt
+ * cho âm thanh không tồn tại. Chỉ áp cho node `nodeId` còn đang hoạt động.
+ */
+export function refundNodeAudioPlay(state: V1RunState, nodeId: string): V1RunState {
+  const active = getActiveNode(state);
+  if (!active || active.nodeId !== nodeId || active.audioPlaysUsed <= 0) return state;
+  return replaceActiveNode(state, { ...active, audioPlaysUsed: active.audioPlaysUsed - 1 });
 }
 
 function replaceActiveNode(state: V1RunState, updatedNode: V1RunNode): V1RunState {
@@ -3122,7 +3157,8 @@ export function buildV1ProgressPayload(
       startedAt: state.startedAt,
       endedAt: now.getTime(),
       score: recap ? recap.firstAttemptCorrect : state.firstAttemptCorrectCount,
-      total: Math.max(1, recap ? recap.totalCards : state.firstAttemptTotalCount),
+      // Giữa phiên chưa trả lời lượt đầu nào (chỉ xem intro) thì total = 0, không dựng "0/1" làm tụt tỷ lệ
+      total: recap ? Math.max(1, recap.totalCards) : state.firstAttemptTotalCount,
       xp: state.totalXp,
       items: state.attemptItems,
     },

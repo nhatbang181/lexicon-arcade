@@ -222,6 +222,12 @@ describe('V1-2 · mỗi tiền tố thẻ hiển thị đúng nội dung của n
     expect(prompt.back).toBe(col.phrase);
     expect(scorePromptAnswer(prompt, col.phrase).correct).toBe(true);
     expect(scorePromptAnswer(prompt, 'xyz').correct).toBe(false);
+    // Bằng chứng B2 là câu ví dụ ĐÚNG, không phải câu sai của người học; ghi chú không lặp thành "Bẫy hay gặp"
+    const wrong = scorePromptAnswer(prompt, 'xyz');
+    expect(wrong.exampleEn).toBe(col.example);
+    expect(wrong.exampleEn).not.toBe(prompt.front);
+    expect(wrong.vnTrap).toBeUndefined();
+    expect(wrong.explanationVi).toBeTruthy();
   });
 
   it('err:user_* có userItem → err_user hiển thị đúng câu đó; không có userItem → bị loại', () => {
@@ -233,6 +239,9 @@ describe('V1-2 · mỗi tiền tố thẻ hiển thị đúng nội dung của n
     if (prompt?.face !== 'err_user') throw new Error('sai mặt');
     expect(prompt.front).toBe('The informations are useful');
     expect(scorePromptAnswer(prompt, 'the information is useful.').correct).toBe(true);
+    const wrongUser = scorePromptAnswer(prompt, 'nope');
+    expect(wrongUser.exampleEn).not.toBe(item.front);
+    expect(wrongUser.vnTrap).toBeUndefined();
 
     const missing = createV1Run({ cards: [card], content: V1_FIXTURE_CONTENT, now: NOW });
     expect(missing.nodes).toHaveLength(0);
@@ -367,6 +376,21 @@ describe('V1-6 · không bịa số liệu "tuần trước"', () => {
     ];
     expect(computeLastWeekAccuracy(attempts, NOW)).toBe(70);
     expect(computeLastWeekAccuracy([], NOW)).toBeNull();
+  });
+
+  it('computeLastWeekAccuracy tính cả run thoát giữa chừng (in_progress) nếu đã lưu review thật', () => {
+    const day = 86_400_000;
+    const attempts = [
+      { gameId: 'v1' as const, startedAt: NOW.getTime() - 9 * day, score: 3, total: 4, status: 'in_progress' as const, reviewsSaved: 4 },
+      { gameId: 'v1' as const, startedAt: NOW.getTime() - 9 * day, score: 0, total: 0, status: 'in_progress' as const, reviewsSaved: 0 },
+    ];
+    expect(computeLastWeekAccuracy(attempts, NOW)).toBe(75);
+  });
+
+  it('chỉ xem intro rồi thoát: attempt giữa phiên có total = 0, không dựng "0/1" kéo tỷ lệ về 0', () => {
+    const card = createNewCard('vocab:curriculum', 'recog', { now: NOW, unlocked: true });
+    const run = createV1Run({ cards: [card], content: V1_FIXTURE_CONTENT, now: NOW });
+    expect(buildV1ProgressPayload(run, NOW).attempt.total).toBe(0);
   });
 });
 

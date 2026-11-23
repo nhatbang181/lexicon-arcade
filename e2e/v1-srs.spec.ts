@@ -24,7 +24,12 @@ const SEED_WORDS = WORDS.filter((w) => /^[a-z]+$/.test(w.headword) && w.headword
   0,
   8,
 );
-const HEADWORD_BY_ID = new Map(SEED_WORDS.map((w) => [w.id, w.headword]));
+/** 25 từ cho ca checkpoint (cần > 20 thẻ để run có chặng 2). */
+const CHECKPOINT_WORDS = WORDS.filter((w) => /^[a-z]+$/.test(w.headword) && w.headword.length >= 6).slice(
+  0,
+  25,
+);
+const HEADWORD_BY_ID = new Map(CHECKPOINT_WORDS.map((w) => [w.id, w.headword]));
 
 function trackConsole(page: Page): string[] {
   const errors: string[] = [];
@@ -202,6 +207,43 @@ test.describe('V1 · kho thẻ SRS và lưu giữa phiên', () => {
     expect(unlocked.every((c) => Boolean(c.introSeenAt))).toBe(true);
 
     // 5 thẻ đã ôn không còn đến hạn: run sau reload không có thẻ nào trong số đó
+    await expect(page.getByText(/Lượt chạy hôm nay: \d+ thẻ/)).toBeVisible({ timeout: 20_000 });
+    await page.getByRole('button', { name: /^Bắt đầu/ }).click();
+    const nextItem = await page.getByTestId('v1-node').getAttribute('data-item-id');
+    expect(answered).not.toContain(nextItem);
+    expect(errors).toEqual([]);
+  });
+
+  test('V1-7: trả lời 20 thẻ → màn checkpoint → reload → DB vẫn có đủ 20 review', async ({ page }) => {
+    test.setTimeout(120_000);
+    const errors = trackConsole(page);
+    await page.goto('/#/play/v1');
+    await expect(page.getByText('Chưa có thẻ nào để ôn')).toBeVisible({ timeout: 20_000 });
+    await seedDueCards(page, CHECKPOINT_WORDS.map((w) => w.id));
+    await page.reload();
+
+    await startRun(page);
+    const answered: string[] = [];
+    for (let i = 0; i < 20; i++) {
+      answered.push(await answerCurrentCorrectly(page));
+      if (i < 19) await expect(page.getByTestId('v1-node')).toBeVisible();
+    }
+    expect(new Set(answered).size).toBe(20);
+
+    // Hết chặng 1 → checkpoint, tiến độ được ghi ngay (không đợi debounce)
+    await expect(page.getByText(/Tiến độ đã được lưu/)).toBeVisible({ timeout: 10_000 });
+    await expect
+      .poll(async () => (await readDb(page)).reviews.length, { timeout: 10_000 })
+      .toBe(20);
+
+    await page.reload();
+    const db = await readDb(page);
+    expect(db.reviews).toHaveLength(20);
+    expect(new Set(db.reviews.map((r) => r.cardId)).size).toBe(20);
+    expect(db.attempts).toHaveLength(1);
+    expect(db.attempts[0].status).toBe('in_progress');
+    expect(db.attempts[0].reviewsSaved).toBe(20);
+    // 20 thẻ đã ôn không còn đến hạn: thẻ đầu của run mới không thuộc nhóm đó
     await expect(page.getByText(/Lượt chạy hôm nay: \d+ thẻ/)).toBeVisible({ timeout: 20_000 });
     await page.getByRole('button', { name: /^Bắt đầu/ }).click();
     const nextItem = await page.getByTestId('v1-node').getAttribute('data-item-id');

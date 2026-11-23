@@ -38,7 +38,7 @@ export interface V1ListeningRef {
   audioPath: string;
   clipStart: number;
   clipEnd: number;
-  /** Dòng kịch bản chứa đoạn bẫy (dùng làm chữ thay audio khi chưa có file). */
+  /** Dòng kịch bản chứa đoạn bẫy. CHỈ dùng sau khi trả lời; không bao giờ hiện thay audio (lộ đáp án). */
   transcriptLine?: string;
   trapType?: string;
   decoy?: string;
@@ -50,6 +50,11 @@ export interface V1ExtraContent {
   userItems: Record<string, UserItemRecord>;
   reading: Record<string, V1ReadingRef>;
   listening: Record<string, V1ListeningRef>;
+  /**
+   * `itemId` (`ltrap:*`, `dict:*`) đã kiểm và xác nhận KHÔNG có file audio thật: thẻ bị bỏ khỏi run
+   * (log `missing_item` + `reason: 'missing_audio'`), không hiện chữ thay audio, không chấm FSRS.
+   */
+  missingAudio?: string[];
 }
 
 export const EMPTY_V1_EXTRAS: V1ExtraContent = { userItems: {}, reading: {}, listening: {} };

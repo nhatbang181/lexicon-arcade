@@ -53,6 +53,7 @@ import {
   getTypedTargetText,
   isChoicePrompt,
   recordNodeAudioPlay,
+  refundNodeAudioPlay,
   startPlayingFromMap,
   submitIntroAction,
   submitNodeAnswer,
@@ -62,6 +63,7 @@ import {
   type V1RunState,
 } from './engine';
 import { loadV1Content, loadV1Extras } from './extras';
+import { createProgressSaver } from './progressSaver';
 import { buildStarterVocabCards } from './starter';
 import { RunMap } from './RunMap';
 
@@ -97,7 +99,13 @@ async function logMissingItems(items: V1RunState['missingItems']): Promise<void>
   for (const m of items.slice(0, 50)) {
     if (seen.has(m.cardId)) continue;
     await eventRepo
-      .log('missing_item', { game: 'v1', cardId: m.cardId, itemId: m.itemId, face: m.face })
+      .log('missing_item', {
+        game: 'v1',
+        cardId: m.cardId,
+        itemId: m.itemId,
+        face: m.face,
+        ...(m.reason ? { reason: m.reason } : {}),
+      })
       .catch(() => undefined);
   }
 }
@@ -125,10 +133,13 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const contextRef = useRef<RunContext | null>(null);
   const newCardsLimitRef = useRef<number>(15);
 
-  // Lưu tiến độ giữa phiên (G3): attempt id, trạng thái chốt, chuỗi ghi tuần tự, run mới nhất.
-  const attemptIdRef = useRef<number | undefined>(undefined);
-  const finalizedRef = useRef<boolean>(false);
-  const saveChainRef = useRef<Promise<void>>(Promise.resolve());
+  // Lưu tiến độ giữa phiên (G3): hàng đợi ghi tuần tự, mỗi run 1 session riêng (xem progressSaver.ts).
+  const saverRef = useRef(
+    createProgressSaver({
+      saveProgress: (payload) => attemptRepo.saveProgress(payload),
+      finalize: (attemptId, payload) => attemptRepo.finalize(attemptId, payload),
+    }),
+  );
   const latestRunRef = useRef<V1RunState | null>(null);
 
   const persist = useCallback((state: V1RunState, final: boolean): Promise<void> => {
@@ -136,33 +147,11 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       state.attemptItems.length > 0 ||
       state.reviews.length > 0 ||
       Object.keys(state.updatedCards).length > 0;
-    if (!hasWork) {
-      if (final) finalizedRef.current = true;
-      return saveChainRef.current;
-    }
-    const payload = buildV1ProgressPayload(state);
-    saveChainRef.current = saveChainRef.current.then(async () => {
-      try {
-        if (attemptIdRef.current === undefined) {
-          const res = await attemptRepo.saveProgress(payload);
-          attemptIdRef.current = res.attemptId;
-        }
-        if (final) {
-          await attemptRepo.finalize(attemptIdRef.current, payload);
-          finalizedRef.current = true;
-        } else {
-          await attemptRepo.saveProgress({ ...payload, attemptId: attemptIdRef.current });
-        }
-      } catch {
-        // Lỗi ghi DB không được chặn người học; lần lưu kế tiếp sẽ ghi bù (idempotent).
-      }
-    });
-    return saveChainRef.current;
+    return saverRef.current.persist(hasWork ? buildV1ProgressPayload(state) : null, final);
   }, []);
 
   const resetPersistence = useCallback(() => {
-    attemptIdRef.current = undefined;
-    finalizedRef.current = false;
+    saverRef.current.reset();
     setSessionSaved(false);
   }, []);
 
@@ -175,7 +164,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     ) => {
       const now = new Date();
       const [extras, doneToday, recentAttempts] = await Promise.all([
-        loadV1Extras(cards, { now }),
+        loadV1Extras(cards, { now, dictations: content.dictations }),
         cardRepo.countNewCardsStartedSince(startOfLocalDay(now)).catch(() => 0),
         attemptRepo.getSince(now.getTime() - 2 * 7 * DAY_MS, 'v1').catch(() => []),
       ]);
@@ -305,7 +294,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   useEffect(() => {
     const flush = () => {
       const latest = latestRunRef.current;
-      if (latest && latest.phase !== 'recap' && !finalizedRef.current) void persist(latest, false);
+      if (latest && latest.phase !== 'recap' && !saverRef.current.isFinalized()) void persist(latest, false);
     };
     const onVisibility = () => {
       if (document.visibilityState === 'hidden') flush();
@@ -349,6 +338,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       if (!runState) return;
       const { clip, silent = false } = playOptions;
 
+      const quotaNodeId = checkPlayQuota ? getActiveNode(runState)?.nodeId : undefined;
       if (checkPlayQuota) {
         const playAttempt = recordNodeAudioPlay(runState);
         setRunState(playAttempt.state);
@@ -360,9 +350,17 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
       const reportMissing = () => {
         setAudioPlaying(false);
+        if (quotaNodeId) {
+          // Âm thanh không phát được thì không tính lượt nghe
+          setRunState((prev) => (prev ? refundNodeAudioPlay(prev, quotaNodeId) : prev));
+        }
         if (silent) return;
         setAudioMissing(true);
-        setAudioFallbackNotice('Chưa có file audio tĩnh trên đĩa — hãy đối chiếu IPA.');
+        setAudioFallbackNotice(
+          clip || checkPlayQuota
+            ? 'Không phát được file audio này. Thử lại sau.'
+            : 'Chưa có file audio tĩnh trên đĩa — hãy đối chiếu IPA.',
+        );
       };
 
       if (!audioRelativePath) {
@@ -2080,15 +2078,6 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
             label="Nghe đoạn bẫy"
           />
         </div>
-
-        {audioMissing && prompt.transcriptLine && (
-          <blockquote
-            className="pl-3.5 py-1.5 border-l-2 reading-prose text-base italic"
-            style={{ borderColor: 'var(--color-listening)', color: 'var(--color-text)' }}
-          >
-            “{prompt.transcriptLine}”
-          </blockquote>
-        )}
 
         <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
           <span style={{ fontFamily: 'var(--font-mono)' }}>Khung: {prompt.placeholderMask}</span>

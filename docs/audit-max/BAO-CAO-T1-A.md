@@ -80,3 +80,22 @@ HUD (pill chặng, Boss, nút Chế độ bận, chấm tiến độ, combo, XP)
 - Cờ `pagehide` ghi IndexedDB lúc đóng tab thật chưa kiểm bằng trình duyệt (chỉ kiểm đổi route và `visibilitychange` theo logic); phần rời route đã có E2E.
 - `ltrap_replay`/`dict_full` chưa kiểm nghe thật (headless); đoạn bẫy dùng `currentTime` + `timeupdate`. Episode chưa có MP3 (28/32) hiện chữ kịch bản thay audio.
 - 3 NẶNG còn lại của `play/v1` và D4 của chip 11 px nằm ngoài quyền (HANDOFF).
+
+## Vòng fixer 1 (đợt audit-max, trả về từ REVIEW-T1-A-A)
+
+| Mã lỗi | Đã sửa thế nào | File | Số đo sau |
+|---|---|---|---|
+| #1 NẶNG `ltrap_replay` lộ transcript khi thiếu MP3 | `loadV1Extras` kiểm file audio (HEAD, coi `text/html` của SPA là "không có"); thiếu → không dựng ref, ghi `missingAudio`; `resolveV1Face` trả `null` → bỏ node, không review/FSRS, `missing_item` kèm `reason:'missing_audio'`. Bỏ hẳn khối hiện `transcriptLine` trước khi trả lời; câu báo lỗi audio không còn nói "đối chiếu IPA" cho thẻ nghe | `extras.ts`, `content.ts`, `engine.ts`, `V1DailyRun.tsx` | `audioMissing.test.ts`: thiếu MP3 → 0 node, 0 review; có MP3 → giữ node |
+| #2 NẶNG `dict_full` thiếu audio chấm Again | Cùng cơ chế cho `dict:*` (truyền `dictations` vào `loadV1Extras`); thêm `refundNodeAudioPlay`: audio lỗi khi phát thì trả lại lượt nghe | `extras.ts`, `engine.ts`, `V1DailyRun.tsx` | test: `dict:0011` (không MP3) bị bỏ, `dict:0001` giữ; hoàn lượt đúng node |
+| `v1_fixtures` trong bundle | Bỏ import + `V1_FIXTURE_VOCAB` trong `buildStarterVocabCards` (chỉ dùng id từ `words.json`; nạp lỗi → không tạo thẻ, V1 hiện EmptyState) | `placementData.ts` | `vite build` + `grep -l v1_fixtures dist/assets/*.js` = **rỗng** |
+| #3 NHẸ thiếu E2E V1-7 | Ca E2E: seed 25 thẻ, trả lời 20 → "Tiến độ đã được lưu" → reload → 20 review, attempt `in_progress` `reviewsSaved 20`, thẻ đầu run sau không thuộc 20 thẻ đã ôn | `e2e/v1-srs.spec.ts` | 5/5 E2E pass |
+| #5 NHẸ ghi trùng khi "Làm lại câu sai" nhanh | Tách `progressSaver.ts`: mỗi run 1 session, job chụp session lúc xếp hàng nên job `finalize` run cũ không tạo attempt mới; bỏ lần `saveProgress` thừa ngay sau khi tạo attempt | `progressSaver.ts`, `V1DailyRun.tsx` | `progressSaver.test.ts` 3 test (có ca reset trước khi job chạy) |
+| #4 NHẸ `err_user` in câu sai vào khung bằng chứng | `exampleEn` = câu ví dụ đúng của cụm (`l1col`), bỏ cho `userItem` (không có ví dụ đúng riêng); bỏ `vnTrap` lặp ghi chú (không còn nhãn "Bẫy hay gặp" gắn vào ghi chú lỗi của người học) | `engine.ts` | `srsContent.test.ts`: bằng chứng ≠ câu sai, `vnTrap` rỗng |
+| #6 NHẸ run thoát giữa chừng không vào "tuần trước" | `computeLastWeekAccuracy` tính attempt `in_progress` có `reviewsSaved > 0` | `engine.ts` | test mới: 75% |
+| #7 NHẸ attempt rác `0/1` | `total` giữa phiên = số lượt đầu thật (0 được phép); chỉ Recap mới `max(1, …)` | `engine.ts` | test: chỉ xem intro → `total 0` |
+| #8 NHẸ `recog` sai không nói vì sao | Thêm 1 câu: lựa chọn đã bấm là nghĩa của từ khác | `engine.ts` | `tsc`, 87 test |
+| #9 NHẸ `finalize` không payload | Dùng `qualifiesForStreak` như nhánh có payload (hành vi không đổi vì chốt 1 phiên luôn đủ điều kiện; chỉ thống nhất luật) | `attemptRepo.ts` | test storage pass |
+
+Số đo vòng này: `tsc` 0 lỗi · `npm test` 430/430 · `validate:data` PASS · `vitest storage+srs+v1-daily-run` 9 file / 87 test · `e2e/v1-srs.spec.ts` 5/5 · build + grep `v1_fixtures` rỗng · `audit-ui play/v1` (390×844, 1280×800, 2 theme): **0 CHẶN**, 12 NẶNG = 3/khung, đều ở header `PlayScreen.tsx` (T1-B). Ảnh track không bị ghi đè, không commit ảnh e2e.
+
+Chưa làm / ghi chú: `listen_spell` của từ vựng (`vocab.audio.uk`, 1670/2207 từ thiếu audio) vẫn chưa kiểm audio (reviewer ghi là có từ trước, ngoài danh sách sửa vòng này); kiểm tồn tại audio dùng HEAD nên khi offline hoàn toàn (lỗi mạng) thẻ nghe vẫn vào run.

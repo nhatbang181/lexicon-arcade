@@ -7,10 +7,16 @@ import {
   ParaphraseItemSchema,
   ReadingPassageSchema,
   VocabItemSchema,
+  type DictationItem,
   type ListeningEpisode,
   type ReadingPassage,
 } from '../../core/content/schemas';
-import { loadContent, loadContentArray, type LoadContentOptions } from '../../core/content/loaders';
+import {
+  loadContent,
+  loadContentArray,
+  resolveAssetUrl,
+  type LoadContentOptions,
+} from '../../core/content/loaders';
 import type { SRSCard } from '../../core/srs/fsrsAdapter';
 import { userItemRepo } from '../../core/storage/repos/userItemRepo';
 import type { LexiconV3DB } from '../../core/storage/db';
@@ -28,6 +34,38 @@ export interface LoadV1Options {
   bypassCache?: boolean;
   database?: LexiconV3DB;
   now?: Date;
+  /** Danh sách câu dictation (để kiểm file audio của thẻ `dict:*`). Không truyền = không kiểm. */
+  dictations?: readonly DictationItem[];
+}
+
+const audioExistsCache = new Map<string, Promise<boolean>>();
+
+/**
+ * Kiểm file audio có thật không (HEAD). Dev server/SPA trả 200 + HTML cho đường dẫn không tồn tại
+ * nên coi `text/html` là "không có". Lỗi mạng (offline) → coi là có: không đủ bằng chứng để bỏ thẻ.
+ */
+export function audioFileExists(
+  relativePath: string,
+  options: Pick<LoadV1Options, 'fetchImpl' | 'baseUrl'> = {},
+): Promise<boolean> {
+  const url = resolveAssetUrl(relativePath, options.baseUrl);
+  const key = options.fetchImpl ? `${url}#custom` : url;
+  const cached = !options.fetchImpl ? audioExistsCache.get(key) : undefined;
+  if (cached) return cached;
+  const fetchFn = options.fetchImpl ?? globalThis.fetch;
+  const probe = (async () => {
+    if (typeof fetchFn !== 'function') return true;
+    try {
+      const res = await fetchFn(url, { method: 'HEAD' });
+      if (!res.ok) return false;
+      const type = res.headers?.get?.('content-type') ?? '';
+      return !/text\/html/i.test(type);
+    } catch {
+      return true;
+    }
+  })();
+  if (!options.fetchImpl) audioExistsCache.set(key, probe);
+  return probe;
 }
 
 const silent = { isDev: false, onError: () => undefined };
@@ -183,6 +221,8 @@ export async function loadV1Extras(
   const userItems = await userItemRepo.getMany(itemIds, options.database).catch(() => ({}));
   const reading: Record<string, V1ReadingRef> = {};
   const listening: Record<string, V1ListeningRef> = {};
+  const missingAudio: string[] = [];
+  const dictById = new Map<string, DictationItem>((options.dictations ?? []).map((d) => [d.id, d]));
   const loadOpts = { ...silent, fetchImpl: options.fetchImpl, baseUrl: options.baseUrl };
 
   const passageCache = new Map<string, Promise<ReadingPassage | null>>();
@@ -224,10 +264,16 @@ export async function loadV1Extras(
         if (!m) return;
         const episode = await getEpisode(m[1]);
         const ref = episode ? buildListeningRef(episode, m[2]) : null;
-        if (ref) listening[id] = ref;
+        if (!ref) return;
+        // Thiếu MP3 thì không dựng thẻ nghe: chữ kịch bản chứa đáp án, hiện ra là lộ đề (G1, L1-01).
+        if (await audioFileExists(ref.audioPath, options)) listening[id] = ref;
+        else missingAudio.push(id);
+      } else if (id.startsWith('dict:')) {
+        const dict = dictById.get(id);
+        if (dict && !(await audioFileExists(dict.audio, options))) missingAudio.push(id);
       }
     }),
   );
 
-  return { userItems, reading, listening };
+  return { userItems, reading, listening, missingAudio };
 }

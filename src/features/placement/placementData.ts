@@ -6,7 +6,6 @@ import {
   type VocabItem,
 } from '../../core/content/schemas';
 import { createNewCard, type SRSCard } from '../../core/srs/fsrsAdapter';
-import { V1_FIXTURE_VOCAB } from '../../test/fixtures/v1_fixtures';
 
 export interface PlacementVocabQuestion {
   id: string;
@@ -447,7 +446,7 @@ export function evaluateVocabPlacement(
 
 /**
  * Build 15 immediately-due starter SRS cards for V1 Daily Run after placement.
- * Uses real vocab item IDs from public/data/vocab/words.json merged with V1_FIXTURE_VOCAB.
+ * Uses real vocab item IDs from public/data/vocab/words.json (không dùng fixture test: nếu không nạp được thì không tạo thẻ).
  */
 export async function buildStarterVocabCards(now = new Date()): Promise<SRSCard[]> {
   const silentOpts = { isDev: false, onError: () => undefined };
@@ -457,12 +456,12 @@ export async function buildStarterVocabCards(now = new Date()): Promise<SRSCard[
     const loaded = await loadContentArray('data/vocab/words.json', VocabItemSchema, silentOpts);
     vocabIds = loaded.map((v) => v.id);
   } catch {
-    // Fallback to fixture vocab
+    // Không nạp được dữ liệu thật: không tạo thẻ (V1 sẽ hiện EmptyState, không dùng fixture)
   }
 
   const mergedIds: string[] = [];
   const seen = new Set<string>();
-  for (const id of [...vocabIds, ...V1_FIXTURE_VOCAB.map((v) => v.id)]) {
+  for (const id of vocabIds) {
     if (!seen.has(id)) {
       seen.add(id);
       mergedIds.push(id);
@@ -482,7 +481,7 @@ export async function buildStarterVocabCards(now = new Date()): Promise<SRSCard[
     );
   }
 
-  // If fewer than 15 unique vocab items exist (e.g. fixture-only mode has 12),
+  // If fewer than 15 unique vocab items exist,
   // add unlocked recall_meaning faces for the first items to guarantee 15 starter cards.
   let idx = 0;
   while (cards.length < targetCount && idx < mergedIds.length) {

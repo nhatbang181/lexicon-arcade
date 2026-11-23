@@ -162,7 +162,12 @@ export const attemptRepo = {
       await database.attempts.update(attemptId, { status: 'final' });
       const profile = (await database.profile.get('me')) ?? createDefaultProfile();
       const dateKey = formatDateKey(new Date(existing.endedAt));
-      const nextStreak = updateStreak(profile.streak, dateKey).state;
+      // Cùng luật với nhánh có payload: chốt 1 phiên hoàn tất là đủ điều kiện giữ streak.
+      const qualifies = qualifiesForStreak({
+        cardsReviewed: existing.reviewsSaved ?? 0,
+        sessionsCompleted: 1,
+      });
+      const nextStreak = qualifies ? updateStreak(profile.streak, dateKey).state : profile.streak;
       await database.profile.put({ ...profile, streak: nextStreak });
       return {
         attemptId,
