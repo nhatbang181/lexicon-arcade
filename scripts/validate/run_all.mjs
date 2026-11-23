@@ -2418,7 +2418,7 @@ if (REQUIRE_AUDIO || REQUIRE_BLIND) {
   console.log('\nPASS (dev): schema, invariant, manifest, asset credits verified.');
   if (deferredGates.length > 0) {
     console.log(
-      `${YELLOW}${deferredGates.length} cổng bị hoãn (audio / blind-solve), CHƯA đạt chuẩn phát hành: chạy \`npm run validate:data:release\`.${RESET}`
+      `${YELLOW}${deferredGates.length} cổng bị hoãn (audio / blind-solve), CHƯA đủ điều kiện phát hành: chạy \`npm run validate:data:release\`.${RESET}`
     );
   }
 }
