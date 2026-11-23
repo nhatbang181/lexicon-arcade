@@ -2615,10 +2615,11 @@ export function submitNodeAnswer(
         for (const faceToUnlock of unlockable) {
           const newId = makeCardId(active.itemId, faceToUnlock);
           if (!nextAllCardsSnapshot[newId]) {
-            const unlockedCard = createNewCard(active.itemId, faceToUnlock, {
-              now,
-              unlocked: true,
-            });
+            // Người học đã trả lời thẻ của từ này → mặt mới mở khóa không cần intro nữa
+            const unlockedCard: SRSCard = {
+              ...createNewCard(active.itemId, faceToUnlock, { now, unlocked: true }),
+              introSeenAt: now.getTime(),
+            };
             nextUpdatedCards[newId] = unlockedCard;
             nextAllCardsSnapshot[newId] = unlockedCard;
           }
@@ -2628,10 +2629,10 @@ export function submitNodeAnswer(
           for (const faceToUnlock of ['recog', 'recall_meaning', 'recall_cloze'] as const) {
             const newId = makeCardId(active.itemId, faceToUnlock);
             if (!nextAllCardsSnapshot[newId]) {
-              const unlockedCard = createNewCard(active.itemId, faceToUnlock, {
-                now,
-                unlocked: true,
-              });
+              const unlockedCard: SRSCard = {
+                ...createNewCard(active.itemId, faceToUnlock, { now, unlocked: true }),
+                introSeenAt: now.getTime(),
+              };
               nextUpdatedCards[newId] = unlockedCard;
               nextAllCardsSnapshot[newId] = unlockedCard;
             }

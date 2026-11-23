@@ -1088,6 +1088,10 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           <AnimatePresence mode="wait">
             <motion.div
               key={activeNode.nodeId}
+              data-testid="v1-node"
+              data-node-id={activeNode.nodeId}
+              data-item-id={activeNode.itemId}
+              data-face={activeNode.face}
               variants={pickVariants(questionSlideVariants, prefersReduced)}
               initial="initial"
               animate="animate"
