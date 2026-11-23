@@ -33,6 +33,40 @@ export function formatBandLabel(level: number): string {
   return `Band ≈ ${levelToBand(level).toFixed(1)}`;
 }
 
+/** Kỹ năng IELTS mà game dùng để lấy band định vị (v1-v3 từ vựng lấy từ bản ghi placement từ vựng). */
+const GAME_BAND_SKILL: Readonly<Record<string, 'L' | 'R' | 'W' | 'S' | 'vocab' | undefined>> = {
+  v1: 'vocab',
+  v2: 'vocab',
+  v3: 'vocab',
+  l1: 'L',
+  r1: 'R',
+  r2: 'R',
+  w1: 'W',
+  w2: 'W',
+  s1: 'S',
+  s2: 'S',
+};
+
+export function bandSkillOfGame(gameId: string): 'L' | 'R' | 'W' | 'S' | 'vocab' | null {
+  return GAME_BAND_SKILL[gameId] ?? null;
+}
+
+/**
+ * Nhãn chip trên thanh chơi, dùng chung cho PlayScreen và GamePlaceholder (một thang duy nhất).
+ * - Thi: chỉ "Thi", không có band luyện (exam không đổi bậc, LUAT B6).
+ * - Chưa định vị (không có band placement): chỉ "Luyện", không bịa số band.
+ * - Đã định vị: "Band ≈ x.x · Luyện" với x.x = levelToBand(level).
+ */
+export function playChipLabel(opts: {
+  mode: PlayMode | string;
+  level: number | null;
+  calibrated: boolean;
+}): string {
+  const mode = modeLabelVi(opts.mode);
+  if (opts.mode === 'exam' || !opts.calibrated || opts.level === null) return mode;
+  return `${formatBandLabel(opts.level)} · ${mode}`;
+}
+
 export function modeLabelVi(mode: PlayMode | string): string {
   if (mode === 'exam') return 'Thi';
   if (mode === 'sprint') return 'Tốc độ';

@@ -6,6 +6,8 @@ import {
   bandToLevel,
   formatBandLabel,
   levelToBand,
+  playChipLabel,
+  bandSkillOfGame,
   modeLabelVi,
   parsePlayMode,
   replayLevelFromAttempts,
@@ -33,6 +35,21 @@ describe('src/core/adaptive/sessionLevel (thuần)', () => {
     expect(levelToBand(99)).toBe(8.5);
     expect(formatBandLabel(7)).toBe('Band ≈ 7.0');
     expect(formatBandLabel(7)).not.toMatch(/Level/);
+  });
+
+  it('playChipLabel: thi không có band, chưa định vị không bịa band, đã định vị hiện band', () => {
+    expect(playChipLabel({ mode: 'exam', level: 9, calibrated: true })).toBe('Thi');
+    expect(playChipLabel({ mode: 'training', level: 1, calibrated: false })).toBe('Luyện');
+    expect(playChipLabel({ mode: 'training', level: null, calibrated: true })).toBe('Luyện');
+    expect(playChipLabel({ mode: 'training', level: 9, calibrated: true })).toBe('Band ≈ 8.0 · Luyện');
+    expect(playChipLabel({ mode: 'sprint', level: 5, calibrated: true })).toBe('Band ≈ 6.0 · Tốc độ');
+    expect(playChipLabel({ mode: 'training', level: 1, calibrated: false })).not.toMatch(/4\.0/);
+  });
+
+  it('bandSkillOfGame: game nào lấy band nào', () => {
+    expect(bandSkillOfGame('v3')).toBe('vocab');
+    expect(bandSkillOfGame('l1')).toBe('L');
+    expect(bandSkillOfGame('x1')).toBeNull();
   });
 
   it('nhãn chế độ bằng tiếng Việt, mode lạ rơi về Luyện/training', () => {
@@ -160,6 +177,51 @@ describe('src/core/adaptive/applySessionLevel (IndexedDB)', () => {
     await profileRepo.update({ skillLevels: { ...p.skillLevels, l1: 3 } }, testDb);
     expect(await readSkillLevel('l1', testDb)).toBe(3);
     expect((await applySessionLevel('l1', testDb)).level).toBe(3);
+  });
+
+  it('placement band 8.0 -> level suy ra từ cùng thang, chip hiện đúng Band ≈ 8.0 (kể cả khi placement ghi level lệch thang)', async () => {
+    const p = await profileRepo.getOrCreate(testDb);
+    await profileRepo.update(
+      {
+        estimatedBands: { ...p.estimatedBands, L: 8.0, R: 8.0 },
+        // placement ghi thang riêng: listening band 8.0 -> 8, reading band 8.0 -> 5
+        skillLevels: { ...p.skillLevels, l1: 8, r1: 5 },
+      },
+      testDb,
+    );
+    for (const g of ['l1', 'r1'] as const) {
+      const res = await applySessionLevel(g, testDb);
+      expect(res.calibrated).toBe(true);
+      expect(playChipLabel({ mode: 'training', level: res.level, calibrated: res.calibrated })).toBe(
+        'Band ≈ 8.0 · Luyện',
+      );
+    }
+    expect((await profileRepo.get(testDb))?.skillLevels.r1).toBe(9);
+    // gọi lại không đổi
+    expect((await applySessionLevel('r1', testDb)).level).toBe(9);
+  });
+
+  it('placement từ vựng (bản ghi band của v1) đặt level cho v3', async () => {
+    await testDb.bandSnapshots.add({
+      skill: 'R', mode: 'training', ts: 1000, correct: 12, total: 15, band: 8.0, sourceGameId: 'v1',
+    });
+    const res = await applySessionLevel('v3', testDb);
+    expect(res).toMatchObject({ level: 9, calibrated: true });
+  });
+
+  it('profile mới (chưa định vị) không hiện Band ≈ 4.0; thi cũng không hiện band', async () => {
+    const res = await applySessionLevel('v3', testDb);
+    expect(res.calibrated).toBe(false);
+    expect(playChipLabel({ mode: 'training', level: res.level, calibrated: res.calibrated })).toBe('Luyện');
+    expect(playChipLabel({ mode: 'exam', level: res.level, calibrated: res.calibrated })).toBe('Thi');
+  });
+
+  it('placement làm lại với band khác -> level được đặt lại theo band mới', async () => {
+    const p = await profileRepo.getOrCreate(testDb);
+    await profileRepo.update({ estimatedBands: { ...p.estimatedBands, W: 6.0 } }, testDb);
+    expect((await applySessionLevel('w1', testDb)).level).toBe(5);
+    await profileRepo.update({ estimatedBands: { ...(await profileRepo.get(testDb))!.estimatedBands, W: 7.0 } }, testDb);
+    expect((await applySessionLevel('w1', testDb)).level).toBe(7);
   });
 
   it('2 phiên V3 đúng 100% -> level tăng ở phiên 3 và lưu vào profile', async () => {

@@ -2,10 +2,15 @@ import React from 'react';
 import { ArrowLeft, Sparkles, Clock, Mic, Headphones, FileText } from 'lucide-react';
 import { Card, Button, Pill } from '../design/components';
 import type { GameDefinition, GameProps } from '../games/registry';
-import { formatBandLabel, modeLabelVi } from '../core/adaptive/sessionLevel';
+import { playChipLabel } from '../core/adaptive/sessionLevel';
 
 export function createGamePlaceholder(game: Omit<GameDefinition, 'load'>): React.FC<GameProps> {
-  const PlaceholderGame: React.FC<GameProps> = ({ mode, level, onExit }) => {
+  const PlaceholderGame: React.FC<GameProps & { calibrated?: boolean }> = ({
+    mode,
+    level,
+    calibrated = false,
+    onExit,
+  }) => {
     return (
       <div className="min-h-[80vh] flex items-center justify-center p-4">
         <Card skillAccent={game.skill} padding="lg" className="max-w-xl w-full space-y-6">
@@ -20,7 +25,7 @@ export function createGamePlaceholder(game: Omit<GameDefinition, 'load'>): React
               className="text-xs font-medium"
               style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
             >
-              Chế độ: {modeLabelVi(mode)} · {formatBandLabel(level)}
+              Chế độ: {playChipLabel({ mode, level, calibrated })}
             </span>
           </div>
 
