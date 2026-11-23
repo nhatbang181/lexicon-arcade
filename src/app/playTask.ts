@@ -12,10 +12,16 @@ export interface NextTaskInfo {
 
 export type PlayOrigin = 'today' | 'hub';
 
-export function playPath(gameId: string, origin: PlayOrigin, taskId?: string): string {
-  if (origin !== 'today') return `/play/${gameId}`;
+export function playPath(
+  gameId: string,
+  origin: PlayOrigin,
+  taskId?: string,
+  mode?: string,
+): string {
+  const modeQuery = mode && mode !== 'training' ? `mode=${encodeURIComponent(mode)}` : '';
+  if (origin !== 'today') return modeQuery ? `/play/${gameId}?${modeQuery}` : `/play/${gameId}`;
   const task = taskId ? `&task=${encodeURIComponent(taskId)}` : '';
-  return `/play/${gameId}?from=today${task}`;
+  return `/play/${gameId}?from=today${task}${modeQuery ? `&${modeQuery}` : ''}`;
 }
 
 /**
@@ -42,6 +48,6 @@ export async function findNextTask(
     taskId: next.id,
     gameId: next.gameId,
     title: next.title,
-    path: playPath(next.gameId, 'today', next.id),
+    path: playPath(next.gameId, 'today', next.id, next.mode),
   };
 }
