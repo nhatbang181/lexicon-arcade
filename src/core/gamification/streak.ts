@@ -1,7 +1,7 @@
 export interface StreakState {
   count: number;
   longest: number;
-  /** YYYY-MM-DD in local or UTC calendar date */
+  /** YYYY-MM-DD theo giờ địa phương, chuyển ngày 04:00 (xem formatDateKey) */
   lastActiveDay: string | null;
   /** Available streak freezes (0..2, earned 1 per 7 consecutive days) */
   freezes: number;
@@ -35,10 +35,26 @@ export function createInitialStreak(): StreakState {
   };
 }
 
+/** Giờ chuyển ngày theo giờ địa phương: 00:00-03:59 vẫn tính là ngày hôm trước (F3). */
+export const DAY_ROLLOVER_HOUR = 4;
+
+/** Khoá ngày lịch thuần (YYYY-MM-DD) từ một mốc UTC; chỉ dùng cho phép cộng/trừ ngày. */
+function formatCalendarKey(utcDate: Date): string {
+  const y = utcDate.getUTCFullYear();
+  const m = String(utcDate.getUTCMonth() + 1).padStart(2, '0');
+  const d = String(utcDate.getUTCDate()).padStart(2, '0');
+  return `${y}-${m}-${d}`;
+}
+
+/**
+ * Khoá ngày học (YYYY-MM-DD) theo **giờ địa phương** của máy, ngày mới bắt đầu lúc 04:00.
+ * Ví dụ ở UTC+7: 06:30 sáng thứ Ba vẫn là thứ Ba, 02:00 sáng thứ Ba còn tính thứ Hai.
+ */
 export function formatDateKey(date: Date): string {
-  const y = date.getUTCFullYear();
-  const m = String(date.getUTCMonth() + 1).padStart(2, '0');
-  const d = String(date.getUTCDate()).padStart(2, '0');
+  const shifted = new Date(date.getTime() - DAY_ROLLOVER_HOUR * 3_600_000);
+  const y = shifted.getFullYear();
+  const m = String(shifted.getMonth() + 1).padStart(2, '0');
+  const d = String(shifted.getDate()).padStart(2, '0');
   return `${y}-${m}-${d}`;
 }
 
@@ -53,7 +69,7 @@ export function diffCalendarDays(fromDateKey: string, toDateKey: string): number
 function addDays(dateKey: string, delta: number): string {
   const [y, m, d] = dateKey.split('-').map(Number);
   const dt = new Date(Date.UTC(y, m - 1, d + delta));
-  return formatDateKey(dt);
+  return formatCalendarKey(dt);
 }
 
 /**
