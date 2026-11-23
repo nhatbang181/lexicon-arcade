@@ -21,7 +21,13 @@ function trackConsoleErrors(page: Page): string[] {
 
 async function seedProfile(
   page: Page,
-  patch: { xp?: number; streakCount?: number; skillLevels?: Record<string, number>; onboardingDone?: boolean },
+  patch: {
+    xp?: number;
+    streakCount?: number;
+    skillLevels?: Record<string, number>;
+    estimatedBands?: Record<string, number>;
+    onboardingDone?: boolean;
+  },
 ): Promise<void> {
   await page.evaluate(
     async (args) => {
@@ -43,6 +49,7 @@ async function seedProfile(
         xp: args.patch.xp ?? base.xp,
         streak,
         skillLevels: { ...base.skillLevels, ...(args.patch.skillLevels ?? {}) },
+        estimatedBands: { ...base.estimatedBands, ...(args.patch.estimatedBands ?? {}) },
       });
       if (args.patch.onboardingDone) await db.kv.put({ key: 'onboarding_done', value: true });
     },
@@ -165,18 +172,29 @@ test.describe('T1-B · shell = Today, độ khó thích ứng, vòng Hôm nay', 
     expect(errors).toEqual([]);
   });
 
-  test('profile mới: không còn tên cứng; chip hiện Band ≈ x.x theo skillLevels và ?mode=', async ({ page }) => {
+  test('profile mới: không còn tên cứng; chip chỉ hiện Band khi đã định vị, cùng thang với placement', async ({ page }) => {
     await gotoApp(page, '#/');
     await expect(page.getByRole('heading', { name: 'Chào bạn · Hôm nay học gì?' })).toBeVisible();
     await expect(page.getByTestId('shell-streak')).toHaveText('0 ngày');
 
-    await seedProfile(page, { skillLevels: { v3: 5 } });
+    // Chưa định vị: không bịa "Band ≈ 4.0"
     await gotoApp(page, '#/play/v3');
-    await expect(page.getByTestId('play-level-chip')).toHaveText('Band ≈ 6.0 · Luyện');
+    await expect(page.getByTestId('play-level-chip')).toHaveText('Luyện');
+
+    // Placement Reading band 8.0 (placement ghi level lệch thang = 5) -> chip phải hiện đúng 8.0
+    await seedProfile(page, { estimatedBands: { R: 8.0 }, skillLevels: { r1: 5 } });
+    await gotoApp(page, '#/play/r1');
+    await expect(page.getByTestId('play-level-chip')).toHaveText('Band ≈ 8.0 · Luyện');
     await expect(page.getByTestId('play-level-chip')).not.toContainText('Level');
 
-    await gotoApp(page, '#/play/v3?mode=sprint');
-    await expect(page.getByTestId('play-level-chip')).toHaveText('Band ≈ 6.0 · Tốc độ');
+    await gotoApp(page, '#/play/r1?mode=sprint');
+    await expect(page.getByTestId('play-level-chip')).toHaveText(/Band ≈ 8\.0 · (Tốc độ|Luyện)/);
+
+    // Exam: không có nhãn luyện/band
+    await gotoApp(page, '#/exam');
+    await expect(page.getByText(/Chế độ: Thi/)).toBeVisible();
+    await expect(page.getByText(/Band ≈/)).toHaveCount(0);
+    await expect(page.getByText(/Luyện/)).toHaveCount(0);
   });
 
   test('Hôm nay -> game -> về #/ ; việc đầu chạy được bằng Enter', async ({ page }) => {
@@ -259,5 +277,60 @@ test.describe('T1-B · Onboarding 4 bước chỉ bằng Enter', () => {
     }, { mDb: MODULE_DB });
     expect(saved).toEqual({ goal: 30, name: null });
     expect(errors).toEqual([]);
+  });
+});
+
+test.describe('T1-B · Onboarding bước 2: không control gốc (D10), tiêu đề không bị che', () => {
+  test('stepper band + ngày dd/mm/yyyy; tiêu đề bước 2-3 nằm dưới header ở 390x844', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await gotoApp(page, '#/onboarding');
+    await page.keyboard.press('Enter');
+    const h2 = page.getByRole('heading', { name: 'Chọn mục tiêu Band & Thời lượng ngày' });
+    await expect(h2).toBeVisible();
+
+    await expect(page.locator('select')).toHaveCount(0);
+    await expect(page.locator('input[type="date"]')).toHaveCount(0);
+
+    // Stepper band: bấm tăng/giảm
+    await expect(page.getByTestId('ob-band-W-value')).toHaveText('7.5');
+    await page.getByTestId('ob-band-W-up').click();
+    await expect(page.getByTestId('ob-band-W-value')).toHaveText('8.0');
+    await page.getByTestId('ob-band-W-down').click();
+    await page.getByTestId('ob-band-W-down').click();
+    await expect(page.getByTestId('ob-band-W-value')).toHaveText('7.0');
+
+    // Ngày thi: gõ số liền, tự thành dd/mm/yyyy; ngày sai báo lỗi
+    const date = page.getByTestId('onboarding-exam-date');
+    await expect(date).toHaveAttribute('placeholder', 'dd/mm/yyyy');
+    await date.fill('15032027');
+    await expect(date).toHaveValue('15/03/2027');
+    await date.fill('31042027');
+    await expect(page.getByRole('alert')).toContainText('Ngày chưa đúng');
+    await date.fill('15032027');
+    await expect(page.getByRole('alert')).toHaveCount(0);
+
+    // Sau khi đổi bước bằng bàn phím, tiêu đề nằm dưới header (không bị che)
+    const headerBottom = async () =>
+      page.evaluate(() => {
+        const els = [...document.querySelectorAll('header')];
+        return Math.max(0, ...els.map((h) => (getComputedStyle(h).position === 'static' ? 0 : h.getBoundingClientRect().bottom)));
+      });
+    await page.getByTestId('onboarding-next-2').focus();
+    await page.keyboard.press('Enter');
+    const h3 = page.getByRole('heading', { name: 'Thử loa và micro' });
+    await expect(h3).toBeVisible();
+    await page.waitForTimeout(400);
+    expect((await h3.boundingBox())!.y).toBeGreaterThanOrEqual(await headerBottom());
+    await expect(page.getByTestId('onboarding-next-3')).toBeFocused();
+    const next = await page.getByTestId('onboarding-next-3').boundingBox();
+    expect(next!.height).toBeLessThan(60); // chữ "Tiếp tục" không rớt xuống 2 dòng
+
+    await page.getByRole('button', { name: 'Quay lại' }).click();
+    await expect(h2).toBeVisible();
+    await page.waitForTimeout(400);
+    expect((await h2.boundingBox())!.y).toBeGreaterThanOrEqual(await headerBottom());
+    // giá trị đã chọn còn nguyên khi quay lại
+    await expect(page.getByTestId('ob-band-W-value')).toHaveText('7.0');
+    await expect(date).toHaveValue('15/03/2027');
   });
 });
