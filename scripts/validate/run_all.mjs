@@ -56,6 +56,7 @@ import {
   isNumberGrounded,
 } from '../../data-src/writing/_verify_batch.mjs';
 import { LEGACY_FILES, countPayloadItems, sha256NormalizedLf } from '../data/60_build_manifest.mjs';
+import { mp3Info, sha256File } from './audio_meta.mjs';
 
 const ROOT = process.cwd();
 const PUBLIC_DIR = path.join(ROOT, 'public');
@@ -71,6 +72,36 @@ const summary = [];
 
 function fail(msg) {
   errors.push(msg);
+}
+
+// D3: kiểm file audio đã có (đọc được, thời lượng hợp lý, sha256 khớp). Ở chế độ release là lỗi;
+// ở chế độ dev chỉ gom lại thành 1 dòng NOTE để `validate:data` không "xanh giả" mà cũng không chặn.
+const audioAnomalies = [];
+function audioIssue(msg) {
+  if (REQUIRE_AUDIO) fail(msg);
+  else audioAnomalies.push(msg);
+}
+function checkAudioFile(code, label, fullPath, { minSec, maxSec, expectSec, expectSha } = {}) {
+  let info = null;
+  try {
+    info = mp3Info(fullPath);
+  } catch {
+    info = null;
+  }
+  if (!info) {
+    audioIssue(`[${code}] ${label}: không đọc được khung MP3 (${path.relative(ROOT, fullPath)})`);
+    return;
+  }
+  const d = info.durationSec;
+  if (minSec !== undefined && (d < minSec || d > maxSec)) {
+    audioIssue(`[${code}] ${label}: thời lượng ${d.toFixed(2)} s ngoài [${minSec}, ${maxSec}] s`);
+  }
+  if (expectSec !== undefined && Math.abs(d - expectSec) > 2) {
+    audioIssue(`[${code}] ${label}: thời lượng thật ${d.toFixed(1)} s lệch durationSec khai báo ${expectSec} s (> 2 s)`);
+  }
+  if (expectSha !== undefined && sha256File(fullPath) !== expectSha) {
+    audioIssue(`[${code}] ${label}: sha256 file không khớp audio.sha256 khai báo`);
+  }
 }
 
 function wordCount(str) {
@@ -214,6 +245,7 @@ if (Array.isArray(words)) {
           fail(`[INV-V4] Empty audio file for ${w.id}: public/${w.audio.uk}`);
         } else {
           audioChecked++;
+          checkAudioFile('INV-V4', w.id, fullAudio, { minSec: 0.3, maxSec: 4 });
         }
       } else {
         audioMissing++;
@@ -1332,6 +1364,10 @@ if (fs.existsSync(listeningDir)) {
       const fullAudio = path.join(PUBLIC_DIR, ep.audio.path);
       if (fs.existsSync(fullAudio) && fs.statSync(fullAudio).size > 0) {
         lAudioPresent++;
+        checkAudioFile('INV-L5', ep.id, fullAudio, {
+          expectSec: ep.audio.durationSec,
+          expectSha: ep.audio.sha256,
+        });
       } else if (REQUIRE_AUDIO) {
         fail(`[INV-L5] Missing listening audio file for ${ep.id}: public/${ep.audio.path}`);
       }
@@ -1546,6 +1582,7 @@ if (fs.existsSync(listeningDir)) {
         const fullAudio = path.join(PUBLIC_DIR, d.audio);
         if (fs.existsSync(fullAudio) && fs.statSync(fullAudio).size > 0) {
           dAudioPresent++;
+          checkAudioFile('INV-D1', d.id, fullAudio, { minSec: 1, maxSec: 20 });
         } else if (REQUIRE_AUDIO) {
           fail(`[INV-D1] Missing dictation audio for ${d.id}: public/${d.audio}`);
         }
@@ -2328,6 +2365,16 @@ if (manifest !== null) {
 // 9. Run scripts/validate/assets_credits.mjs
 // ---------------------------------------------------------------------------
 
+if (audioAnomalies.length > 0) {
+  warnings.push(
+    `[INV-AUDIO] ${audioAnomalies.length} vấn đề ở file audio đã có (ví dụ: ${audioAnomalies[0]}); chạy validate:data:release để thấy đủ.`
+  );
+}
+
+const YELLOW = process.stdout.isTTY ? '[33m' : '';
+const RESET = process.stdout.isTTY ? '[0m' : '';
+const deferredGates = warnings.filter((w) => /--require-(audio|blind)/.test(w));
+
 console.log('=== V3 Data Validation Summary ===');
 for (const line of summary) console.log(`  [OK] ${line}`);
 for (const w of warnings) console.log(`  [NOTE] ${w}`);
@@ -2344,6 +2391,18 @@ try {
 
 if (errors.length > 0 || !assetsOk) {
   console.error(`\nDATA VALIDATION FAILED (${errors.length} error${errors.length === 1 ? '' : 's'}):`);
+  const byCode = new Map();
+  for (const err of errors) {
+    const code = /^\[([A-Z0-9-]+)\]/.exec(err)?.[1] ?? 'KHÁC';
+    byCode.set(code, (byCode.get(code) ?? 0) + 1);
+  }
+  console.error(
+    '  Theo mã: ' +
+      [...byCode.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .map(([c, n]) => `${c}=${n}`)
+        .join(' · ')
+  );
   for (const err of errors.slice(0, 40)) {
     console.error(`  - ${err}`);
   }
@@ -2353,5 +2412,14 @@ if (errors.length > 0 || !assetsOk) {
   process.exit(1);
 }
 
-console.log('\nPASS: 100% V3 data schemas, invariants, manifest integrity, and asset credits verified.');
+if (REQUIRE_AUDIO || REQUIRE_BLIND) {
+  console.log('\nPASS (release): schema, invariant, manifest, audio 100%, blind-solve 100%, asset credits verified.');
+} else {
+  console.log('\nPASS (dev): schema, invariant, manifest, asset credits verified.');
+  if (deferredGates.length > 0) {
+    console.log(
+      `${YELLOW}${deferredGates.length} cổng bị hoãn (audio / blind-solve), CHƯA đạt chuẩn phát hành: chạy \`npm run validate:data:release\`.${RESET}`
+    );
+  }
+}
 process.exit(0);
