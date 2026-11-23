@@ -27,8 +27,11 @@ function isEscapeForExit(e: KeyboardEvent): boolean {
   if (e.key !== 'Escape' || e.isComposing || e.repeat) return false;
   const target = e.target;
   if (target instanceof Element && target.closest(EDITABLE_SELECTOR)) return false;
-  if (document.querySelector('[role="dialog"][aria-modal="true"]')) return false;
-  return true;
+  // Hộp thoại khác (của game, Sheet...) tự xử lý Esc; hộp thoát của PlayScreen đang đóng dần thì bỏ qua.
+  const otherDialog = [...document.querySelectorAll('[role="dialog"][aria-modal="true"]')].some(
+    (d) => !d.querySelector('[data-testid^="play-exit"]'),
+  );
+  return !otherDialog;
 }
 
 export const PlayScreen: React.FC<PlayScreenProps> = ({ gameId }) => {
