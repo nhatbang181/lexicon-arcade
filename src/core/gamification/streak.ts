@@ -197,3 +197,12 @@ export function checkStreakStatus(
   }
   return { health: 'broken', daysSinceActive: diff };
 }
+
+/**
+ * Số ngày chuỗi để HIỂN THỊ (shell và Hôm nay dùng chung, F2/F8):
+ * chuỗi đã gãy (bỏ quá 1 ngày mà không còn freeze) hiện 0 thay vì số cũ.
+ */
+export function displayStreakCount(state: StreakState, now: Date = new Date()): number {
+  const { health } = checkStreakStatus(state, formatDateKey(now));
+  return health === 'broken' || health === 'not_started' ? 0 : state.count;
+}

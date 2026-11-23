@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { Card, Button, Pill } from '../../design/components';
 import { GAME_REGISTRY, type GameSkill } from '../../games/registry';
+import { modeLabelVi } from '../../core/adaptive/sessionLevel';
 
 type FilterSkill = 'all' | GameSkill;
 
@@ -145,7 +146,7 @@ export const HubScreen: React.FC = () => {
                   </Pill>
                 )}
                 {!game.requires.ai && !game.requires.mic && (
-                  <Pill tone="neutral">Level 1 · Mốc {game.milestone}</Pill>
+                  <Pill tone="neutral">{game.modes.map(modeLabelVi).join(' · ')}</Pill>
                 )}
               </div>
 

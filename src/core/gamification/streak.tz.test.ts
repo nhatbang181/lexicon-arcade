@@ -50,3 +50,14 @@ describe('streak theo giờ địa phương + chuyển ngày 04:00 (F3)', () => 
     expect(res.state.freezeUsedDates).toEqual(['2026-12-02']);
   });
 });
+
+describe('displayStreakCount', () => {
+  it('chuỗi gãy hiện 0, chuỗi còn sống hiện số thật', async () => {
+    const { displayStreakCount } = await import('./streak');
+    const st = { count: 12, longest: 12, lastActiveDay: '2026-11-18', freezes: 0, freezeUsedDates: [] };
+    expect(displayStreakCount(st, vn(23, 9, 0))).toBe(0); // 5 ngày trước
+    expect(displayStreakCount({ ...st, lastActiveDay: '2026-11-22' }, vn(23, 9, 0))).toBe(12);
+    expect(displayStreakCount({ ...st, lastActiveDay: '2026-11-23' }, vn(23, 9, 0))).toBe(12);
+    expect(displayStreakCount({ ...st, lastActiveDay: null }, vn(23, 9, 0))).toBe(0);
+  });
+});

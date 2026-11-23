@@ -1,6 +1,5 @@
 import React from 'react';
-import { Router, useLocation } from 'wouter';
-import { useHashLocation } from 'wouter/use-hash-location';
+import { Link, Router, useLocation } from 'wouter';
 import {
   CalendarCheck2,
   LayoutGrid,
@@ -13,6 +12,8 @@ import {
 } from 'lucide-react';
 import { ThemeProvider, AudioProvider } from './providers';
 import { AppRoutes } from './routes';
+import { useAppHashLocation, useAppHashSearch } from './hashRouter';
+import { useShellStats } from './useShellStats';
 
 interface NavItem {
   path: string;
@@ -55,7 +56,9 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 const ShellLayout: React.FC = () => {
-  const [location, navigate] = useLocation();
+  const [location] = useLocation();
+  const stats = useShellStats();
+  const xpText = `${stats.xp.toLocaleString('vi-VN')} XP`;
 
   // Ẩn shell khi đang ở trong phiên game hoặc màn legacy
   const isFullscreenRoute =
@@ -91,10 +94,10 @@ const ShellLayout: React.FC = () => {
       >
         <div className="space-y-6">
           {/* Logo */}
-          <button
-            type="button"
-            onClick={() => navigate('/')}
-            className="w-full flex items-center gap-3 px-2 py-1.5 rounded-[var(--radius-md)] text-left cursor-pointer"
+          <Link
+            href="/"
+            className="w-full flex items-center gap-3 px-2 py-1.5 min-h-[44px] rounded-[var(--radius-md)] text-left cursor-pointer"
+            aria-label="Lexicon Arcade, về Hôm nay"
           >
             <div
               className="w-10 h-10 rounded-[var(--radius-md)] flex items-center justify-center border shrink-0"
@@ -114,17 +117,16 @@ const ShellLayout: React.FC = () => {
                 V3 · Lộ trình 8.0
               </div>
             </div>
-          </button>
+          </Link>
 
           {/* Menu 5 mục */}
           <nav className="space-y-1">
             {NAV_ITEMS.map((item) => {
               const active = isNavActive(item.path);
               return (
-                <button
+                <Link
                   key={item.path}
-                  type="button"
-                  onClick={() => navigate(item.path)}
+                  href={item.path}
                   aria-current={active ? 'page' : undefined}
                   className="w-full min-h-[44px] px-3 py-2.5 rounded-[var(--radius-md)] flex items-center gap-3 text-sm font-medium transition-colors cursor-pointer"
                   style={{
@@ -139,7 +141,7 @@ const ShellLayout: React.FC = () => {
                     {item.icon}
                   </span>
                   <span>{item.label}</span>
-                </button>
+                </Link>
               );
             })}
           </nav>
@@ -161,8 +163,9 @@ const ShellLayout: React.FC = () => {
             <span
               className="font-bold tabular-nums"
               style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+              data-testid="shell-streak"
             >
-              0 ngày
+              {stats.streak} ngày
             </span>
           </div>
           <div className="flex items-center justify-between text-xs">
@@ -173,8 +176,9 @@ const ShellLayout: React.FC = () => {
             <span
               className="font-bold tabular-nums"
               style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+              data-testid="shell-xp"
             >
-              0 XP
+              {xpText}
             </span>
           </div>
         </div>
@@ -188,10 +192,10 @@ const ShellLayout: React.FC = () => {
           borderColor: 'var(--color-border)',
         }}
       >
-        <button
-          type="button"
-          onClick={() => navigate('/')}
-          className="flex items-center gap-2.5 text-left cursor-pointer"
+        <Link
+          href="/"
+          className="flex items-center gap-2.5 min-h-[44px] text-left cursor-pointer"
+          aria-label="Lexicon Arcade, về Hôm nay"
         >
           <div
             className="w-8 h-8 rounded-[var(--radius-sm)] flex items-center justify-center border"
@@ -207,21 +211,23 @@ const ShellLayout: React.FC = () => {
             <span className="text-sm font-bold block leading-none" style={{ color: 'var(--color-text)' }}>
               Lexicon Arcade
             </span>
-            <span className="text-[11px]" style={{ color: 'var(--color-text-dim)' }}>
+            <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
               Lộ trình 8.0
             </span>
           </div>
-        </button>
+        </Link>
 
         <div
           className="flex items-center gap-3 text-xs font-semibold tabular-nums"
           style={{ fontFamily: 'var(--font-mono)' }}
         >
-          <span className="inline-flex items-center gap-1">
-            <Flame className="w-3.5 h-3.5" style={{ color: 'var(--color-writing)' }} />0
+          <span className="inline-flex items-center gap-1" data-testid="shell-streak-mobile">
+            <Flame className="w-3.5 h-3.5" style={{ color: 'var(--color-writing)' }} />
+            {stats.streak}
           </span>
-          <span className="inline-flex items-center gap-1">
-            <Star className="w-3.5 h-3.5" style={{ color: 'var(--color-partial)' }} />0 XP
+          <span className="inline-flex items-center gap-1" data-testid="shell-xp-mobile">
+            <Star className="w-3.5 h-3.5" style={{ color: 'var(--color-partial)' }} />
+            {xpText}
           </span>
         </div>
       </header>
@@ -245,19 +251,18 @@ const ShellLayout: React.FC = () => {
         {NAV_ITEMS.map((item) => {
           const active = isNavActive(item.path);
           return (
-            <button
+            <Link
               key={item.path}
-              type="button"
-              onClick={() => navigate(item.path)}
+              href={item.path}
               aria-current={active ? 'page' : undefined}
-              className="flex flex-col items-center justify-center min-w-[60px] min-h-[44px] px-2 py-1 rounded-[var(--radius-sm)] text-[11px] font-medium cursor-pointer"
+              className="flex flex-col items-center justify-center min-w-[60px] min-h-[44px] px-2 py-1 rounded-[var(--radius-sm)] text-xs font-medium cursor-pointer"
               style={{
                 color: active ? 'var(--color-info)' : 'var(--color-text-dim)',
               }}
             >
               {item.icon}
               <span className="mt-0.5 truncate">{item.shortLabel}</span>
-            </button>
+            </Link>
           );
         })}
       </nav>
@@ -269,7 +274,7 @@ export const App: React.FC = () => {
   return (
     <ThemeProvider>
       <AudioProvider>
-        <Router hook={useHashLocation}>
+        <Router hook={useAppHashLocation} searchHook={useAppHashSearch}>
           <ShellLayout />
         </Router>
       </AudioProvider>

@@ -26,72 +26,25 @@ import {
 import { useTheme } from '../../app/providers';
 import {
   buildTodayPlan,
-  swapPlanTask,
   type DailyPlan,
   type GameId,
   type PlannedTask,
 } from '../../core/planner/today';
-import { formatDateKey } from '../../core/gamification/streak';
+import { displayStreakCount, formatDateKey } from '../../core/gamification/streak';
 import { db, type AttemptRecord, type UserProfile } from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { bandRepo } from '../../core/storage/repos/bandRepo';
 import { cardRepo } from '../../core/storage/repos/cardRepo';
 import { planRepo } from '../../core/storage/repos/planRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
-import { getGameById, isGameReady } from '../../games/registry';
+import { GAME_REGISTRY, getGameById, isGameReady } from '../../games/registry';
+import { playPath } from '../../app/playTask';
+import { ensureReadyTasks, swapToReadyGame } from './readyPlan';
 
-const READY_M1_GAMES: GameId[] = ['v1', 'v2', 'v3'];
-const SWAP_POOL: GameId[] = ['v1', 'v2', 'v3', 'r1', 'l1', 'w2', 's2'];
+const ALL_GAME_IDS: GameId[] = GAME_REGISTRY.map((g) => g.id);
 
-function normalizePlanForM1(plan: DailyPlan, dueCardsCount: number): DailyPlan {
-  let next = plan;
-  const existingIds = new Set(next.tasks.map((t) => t.gameId));
-
-  // Ensure ready M1 games (V1 if due cards, V2, V3) are prioritized in Today's tasks
-  const desiredReady: GameId[] = dueCardsCount > 0 ? ['v1', 'v2', 'v3'] : ['v2', 'v3', 'v1'];
-
-  for (const desired of desiredReady) {
-    if (existingIds.has(desired)) continue;
-    const nonReadySlot = next.tasks.find(
-      (t) => !isGameReady(t.gameId) && !t.completed,
-    );
-    if (nonReadySlot) {
-      next = swapPlanTask(next, nonReadySlot.id, desired);
-      existingIds.delete(nonReadySlot.gameId);
-      existingIds.add(desired);
-    }
-  }
-
-  // Restore clear Vietnamese reasons for V2/V3 if swapped in automatically
-  const tasks = next.tasks.map((t) => {
-    if (t.reasonVi === 'Đã đổi theo lựa chọn của bạn.') {
-      if (t.gameId === 'v2') {
-        return {
-          ...t,
-          reasonVi: 'Luyện tự gõ collocation học thuật & sửa lỗi ghép từ kiểu Việt.',
-        };
-      }
-      if (t.gameId === 'v3') {
-        return {
-          ...t,
-          reasonVi: 'Bắt nhanh cụm paraphrase trong ngữ cảnh — cầu nối trực tiếp sang Reading/Listening.',
-        };
-      }
-      if (t.gameId === 'v1') {
-        return {
-          ...t,
-          reasonVi:
-            dueCardsCount > 0
-              ? `Ôn ${dueCardsCount} thẻ SRS đến hạn để giữ trí nhớ dài hạn.`
-              : 'Học lượt thẻ học thuật mới theo lịch FSRS.',
-        };
-      }
-    }
-    return t;
-  });
-
-  return { ...next, tasks };
-}
+/** Tên gọi mặc định khi chưa có tên trong hồ sơ (F11). */
+const DEFAULT_DISPLAY_NAME = 'bạn';
 
 interface TodayDataState {
   loading: boolean;
@@ -113,7 +66,7 @@ export const TodayDashboard: React.FC = () => {
   const [state, setState] = useState<TodayDataState>({
     loading: true,
     profile: null,
-    displayName: 'Bang',
+    displayName: DEFAULT_DISPLAY_NAME,
     onboardingDone: false,
     onboardingSkipped: false,
     placementVocabBand: null,
@@ -156,7 +109,7 @@ export const TodayDashboard: React.FC = () => {
     const displayName =
       typeof nameRow?.value === 'string' && nameRow.value.trim()
         ? nameRow.value.trim()
-        : 'Bang';
+        : DEFAULT_DISPLAY_NAME;
     const placementVocabBand =
       typeof vocabBandRow?.value === 'number'
         ? vocabBandRow.value
@@ -172,31 +125,30 @@ export const TodayDashboard: React.FC = () => {
 
     let plan: DailyPlan | null = null;
     if (shouldShowPlan) {
-      const basePlan =
+      const rawPlan =
         savedPlan && savedPlan.tasks.length > 0
           ? savedPlan
-          : normalizePlanForM1(
-              buildTodayPlan({
-                profile: {
-                  targetBands: profile.targetBands,
-                  estimatedBands: {
-                    L: profile.estimatedBands.L,
-                    R: profile.estimatedBands.R,
-                    W: profile.estimatedBands.W,
-                    S: profile.estimatedBands.S,
-                  },
-                  skillLevels: profile.skillLevels,
-                  dailyGoalMin: profile.dailyGoalMin,
+          : buildTodayPlan({
+              profile: {
+                targetBands: profile.targetBands,
+                estimatedBands: {
+                  L: profile.estimatedBands.L,
+                  R: profile.estimatedBands.R,
+                  W: profile.estimatedBands.W,
+                  S: profile.estimatedBands.S,
                 },
-                dueCardsCount: dueCards.length,
-                now,
-                recentAttempts: recentAttempts.map((a) => ({
-                  gameId: a.gameId,
-                  startedAt: a.startedAt,
-                })),
-              }),
-              dueCards.length,
-            );
+                skillLevels: profile.skillLevels,
+                dailyGoalMin: profile.dailyGoalMin,
+              },
+              dueCardsCount: dueCards.length,
+              now,
+              recentAttempts: recentAttempts.map((a) => ({
+                gameId: a.gameId,
+                startedAt: a.startedAt,
+              })),
+            });
+      // F12: không bao giờ gợi ý game chưa sẵn sàng (kể cả kế hoạch đã lưu từ bản cũ).
+      const basePlan = ensureReadyTasks(rawPlan, ALL_GAME_IDS, isGameReady);
 
       // Mark tasks completed if there is an attempt for that gameId today
       const completedTodayGames = new Set(
@@ -259,20 +211,24 @@ export const TodayDashboard: React.FC = () => {
 
   const handleSwapTask = async (task: PlannedTask) => {
     if (!state.plan) return;
-    const used = new Set(state.plan.tasks.map((t) => t.gameId));
-    const candidates = SWAP_POOL.filter((gid) => gid !== task.gameId && !used.has(gid));
-    const fallback = READY_M1_GAMES.find((gid) => gid !== task.gameId) ?? 'v2';
-    const nextGameId = candidates[0] ?? fallback;
-
-    const updated = swapPlanTask(state.plan, task.id, nextGameId);
+    const updated = swapToReadyGame(state.plan, task, ALL_GAME_IDS, isGameReady);
+    if (!updated) return;
     await planRepo.save(updated);
     setState((prev) => ({ ...prev, plan: updated }));
   };
 
+  const startTask = useCallback(
+    (task: PlannedTask) => {
+      const base = playPath(task.gameId, 'today', task.id);
+      navigate(task.mode !== 'training' ? `${base}&mode=${task.mode}` : base);
+    },
+    [navigate],
+  );
+
   const activeProfile = state.profile;
   const effectiveTargetBands = activeProfile?.targetBands ?? targetBands;
   const effectiveDailyGoal = activeProfile?.dailyGoalMin ?? dailyGoalMin;
-  const streakCount = activeProfile?.streak.count ?? 0;
+  const streakCount = activeProfile ? displayStreakCount(activeProfile.streak) : 0;
   const streakFreezes = activeProfile?.streak.freezes ?? 1;
   const totalXp = activeProfile?.xp ?? 0;
   const estBands = activeProfile?.estimatedBands ?? {
@@ -288,7 +244,28 @@ export const TodayDashboard: React.FC = () => {
     Math.round((todayStats.minutesDone / Math.max(1, effectiveDailyGoal)) * 100),
   );
 
-  const firstUnfinishedTask = state.plan?.tasks.find((t) => !t.completed);
+  const firstUnfinishedTask = state.plan?.tasks.find((t) => !t.completed && isGameReady(t.gameId));
+
+  // F12: Enter mở việc đầu chưa xong (không chen vào nút, liên kết, ô nhập hay hộp thoại).
+  useEffect(() => {
+    if (!firstUnfinishedTask) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== 'Enter' || e.defaultPrevented || e.isComposing || e.repeat) return;
+      if (e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
+      const target = e.target;
+      if (
+        target instanceof Element &&
+        target.closest('button, a, input, textarea, select, summary, [role="button"], [contenteditable]')
+      ) {
+        return;
+      }
+      if (document.querySelector('[role="dialog"][aria-modal="true"]')) return;
+      e.preventDefault();
+      startTask(firstUnfinishedTask);
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [firstUnfinishedTask, startTask]);
 
   return (
     <div className="space-y-6 pb-8">
@@ -495,9 +472,7 @@ export const TodayDashboard: React.FC = () => {
                             <Clock className="w-3.5 h-3.5" />~{task.estMinutes}p
                           </span>
                           {task.completed && <Pill tone="correct">Hoàn thành ✅</Pill>}
-                          {!ready && (
-                            <Pill tone="neutral">Mốc {gameMeta?.milestone ?? 'sau'}</Pill>
-                          )}
+                          {!ready && <Pill tone="neutral">Sắp có</Pill>}
                         </div>
 
                         <h3
@@ -525,8 +500,9 @@ export const TodayDashboard: React.FC = () => {
                           size="sm"
                           variant={isPrimaryNext ? 'primary' : 'secondary'}
                           skill={task.skillGroup}
+                          hotkey={isPrimaryNext ? 'Enter' : undefined}
                           rightIcon={<Play className="w-3.5 h-3.5" />}
-                          onClick={() => navigate(`/play/${task.gameId}`)}
+                          onClick={() => startTask(task)}
                           data-testid={`today-start-${task.gameId}`}
                         >
                           {task.completed ? 'Chơi lại' : 'Bắt đầu'}
