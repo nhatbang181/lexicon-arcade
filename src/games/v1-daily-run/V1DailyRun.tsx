@@ -121,6 +121,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const audioElRef = useRef<HTMLAudioElement | null>(null);
   const fallbackTimerRef = useRef<number | null>(null);
   const mountedRef = useRef<boolean>(true);
+  const initTokenRef = useRef<number>(0);
   const contextRef = useRef<RunContext | null>(null);
   const newCardsLimitRef = useRef<number>(15);
 
@@ -209,6 +210,9 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   // Khởi tạo run từ Dexie + nội dung THẬT. DB rỗng → EmptyState, KHÔNG ghi dữ liệu giả (V1-3).
   useEffect(() => {
     mountedRef.current = true;
+    // StrictMode (dev) mount 2 lần: chỉ lần khởi tạo mới nhất được phép dựng run
+    const token = ++initTokenRef.current;
+    const isCurrent = () => mountedRef.current && token === initTokenRef.current;
 
     async function initRun() {
       try {
@@ -217,7 +221,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           cardRepo.getAll(),
           loadV1Content(),
         ]);
-        if (!mountedRef.current) return;
+        if (!isCurrent()) return;
 
         const effectiveLevel = profile?.skillLevels?.v1 ?? Math.max(1, level || 1);
         newCardsLimitRef.current = profile?.newCardsPerDay ?? 15;
@@ -228,9 +232,9 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           return;
         }
         await startRun(existingCards, content, effectiveLevel, newCardsLimitRef.current);
-        if (mountedRef.current) setLoadState({ kind: 'ready' });
+        if (isCurrent()) setLoadState({ kind: 'ready' });
       } catch (err) {
-        if (!mountedRef.current) return;
+        if (!isCurrent()) return;
         setLoadState({
           kind: 'error',
           message: err instanceof Error ? err.message : 'Không đọc được dữ liệu học.',

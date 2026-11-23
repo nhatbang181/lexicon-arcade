@@ -1,0 +1,2330 @@
+{
+ "at": "2026-11-23T12:45:48.344Z",
+ "base": "http://localhost:5201/#",
+ "runs": [
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 3,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 2,
+    "monoIcons": 3,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 35×36: Thoát phiên (Esc)",
+     "rect": [
+      16,
+      10,
+      35,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 35×36: Tắt âm thanh",
+     "rect": [
+      339,
+      10,
+      35,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 138×26: Chế độ bận (10 thẻ)",
+     "rect": [
+      125,
+      83,
+      138,
+      26
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Level 1 ·\"",
+     "rect": [
+      201,
+      13,
+      59,
+      30
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Node 1/30\"",
+     "rect": [
+      31,
+      264,
+      59,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 1,
+    "nativeControls": 0,
+    "tinyText": 6,
+    "jargon": 2,
+    "monoIcons": 15,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 3
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 153×38: Lexicon ArcadeLộ trình 8.0",
+     "rect": [
+      16,
+      12,
+      153,
+      38
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Lộ trình 8.0\"",
+     "rect": [
+      58,
+      33,
+      62,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"FSRS\"",
+     "rect": [
+      40,
+      136,
+      292,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"gói copy/dán\"",
+     "rect": [
+      37,
+      507,
+      303,
+      58
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Hôm nay\"",
+     "rect": [
+      18,
+      819,
+      47,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"12 Chế độ\"",
+     "rect": [
+      94,
+      819,
+      53,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thống kê\"",
+     "rect": [
+      176,
+      819,
+      50,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thư viện\"",
+     "rect": [
+      254,
+      819,
+      45,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Cài đặt\"",
+     "rect": [
+      329,
+      819,
+      41,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 1 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 15",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      16,
+      87,
+      358,
+      280
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      16,
+      391,
+      358,
+      250
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      16,
+      813,
+      358,
+      174
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 3,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 2,
+    "monoIcons": 3,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 35×36: Thoát phiên (Esc)",
+     "rect": [
+      16,
+      10,
+      35,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 35×36: Tắt âm thanh",
+     "rect": [
+      339,
+      10,
+      35,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 138×26: Chế độ bận (10 thẻ)",
+     "rect": [
+      125,
+      83,
+      138,
+      26
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Level 1 ·\"",
+     "rect": [
+      201,
+      13,
+      59,
+      30
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Node 1/30\"",
+     "rect": [
+      31,
+      264,
+      59,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 1,
+    "nativeControls": 0,
+    "tinyText": 6,
+    "jargon": 2,
+    "monoIcons": 15,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 3
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 153×38: Lexicon ArcadeLộ trình 8.0",
+     "rect": [
+      16,
+      12,
+      153,
+      38
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Lộ trình 8.0\"",
+     "rect": [
+      58,
+      33,
+      62,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"FSRS\"",
+     "rect": [
+      40,
+      136,
+      292,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"gói copy/dán\"",
+     "rect": [
+      37,
+      507,
+      303,
+      58
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Hôm nay\"",
+     "rect": [
+      18,
+      819,
+      47,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"12 Chế độ\"",
+     "rect": [
+      94,
+      819,
+      53,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thống kê\"",
+     "rect": [
+      176,
+      819,
+      50,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thư viện\"",
+     "rect": [
+      254,
+      819,
+      45,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Cài đặt\"",
+     "rect": [
+      329,
+      819,
+      41,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 1 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 15",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      16,
+      87,
+      358,
+      280
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      16,
+      391,
+      358,
+      250
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      16,
+      813,
+      358,
+      174
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 5,
+    "nativeControls": 0,
+    "tinyText": 8,
+    "jargon": 2,
+    "monoIcons": 5,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Thoát phiên (Esc)",
+     "rect": [
+      16,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Tắt âm thanh",
+     "rect": [
+      768,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 138×26: Chế độ bận (10 thẻ)",
+     "rect": [
+      159,
+      91,
+      138,
+      26
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 115×36: Gợi ýH",
+     "rect": [
+      78,
+      736,
+      115,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 121×36: Không nhớ",
+     "rect": [
+      201,
+      736,
+      121,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Level 1 ·\"",
+     "rect": [
+      626,
+      21,
+      119,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Node 1/30\"",
+     "rect": [
+      694,
+      162,
+      59,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"10\"",
+     "rect": [
+      469,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"11\"",
+     "rect": [
+      515,
+      205,
+      9,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"12\"",
+     "rect": [
+      558,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"13\"",
+     "rect": [
+      601,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"14\"",
+     "rect": [
+      645,
+      205,
+      12,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"15\"",
+     "rect": [
+      689,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"16\"",
+     "rect": [
+      733,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"17\"",
+     "rect": [
+      778,
+      205,
+      10,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 7,
+    "nativeControls": 0,
+    "tinyText": 6,
+    "jargon": 2,
+    "monoIcons": 25,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 153×38: Lexicon ArcadeLộ trình 8.0",
+     "rect": [
+      16,
+      12,
+      153,
+      38
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      571,
+      634,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      674,
+      634,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      571,
+      767,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      674,
+      767,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      571,
+      901,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      674,
+      901,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Lộ trình 8.0\"",
+     "rect": [
+      58,
+      33,
+      62,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"FSRS\"",
+     "rect": [
+      48,
+      136,
+      354,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"gói copy/dán\"",
+     "rect": [
+      45,
+      363,
+      665,
+      18
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Hôm nay\"",
+     "rect": [
+      61,
+      1155,
+      47,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"12 Chế độ\"",
+     "rect": [
+      223,
+      1155,
+      53,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thống kê\"",
+     "rect": [
+      391,
+      1155,
+      50,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thư viện\"",
+     "rect": [
+      555,
+      1155,
+      45,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Cài đặt\"",
+     "rect": [
+      716,
+      1155,
+      41,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 1 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 25",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      87,
+      772,
+      168
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      279,
+      772,
+      178
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      591,
+      772,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      725,
+      772,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      858,
+      772,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      1004,
+      772,
+      466
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 5,
+    "nativeControls": 0,
+    "tinyText": 8,
+    "jargon": 2,
+    "monoIcons": 5,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Thoát phiên (Esc)",
+     "rect": [
+      16,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Tắt âm thanh",
+     "rect": [
+      768,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 138×26: Chế độ bận (10 thẻ)",
+     "rect": [
+      159,
+      91,
+      138,
+      26
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 115×36: Gợi ýH",
+     "rect": [
+      78,
+      736,
+      115,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 121×36: Không nhớ",
+     "rect": [
+      201,
+      736,
+      121,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Level 1 ·\"",
+     "rect": [
+      626,
+      21,
+      119,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Node 1/30\"",
+     "rect": [
+      694,
+      162,
+      59,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"10\"",
+     "rect": [
+      469,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"11\"",
+     "rect": [
+      515,
+      205,
+      9,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"12\"",
+     "rect": [
+      558,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"13\"",
+     "rect": [
+      601,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"14\"",
+     "rect": [
+      645,
+      205,
+      12,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"15\"",
+     "rect": [
+      689,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"16\"",
+     "rect": [
+      733,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"17\"",
+     "rect": [
+      778,
+      205,
+      10,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 7,
+    "nativeControls": 0,
+    "tinyText": 6,
+    "jargon": 2,
+    "monoIcons": 25,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 153×38: Lexicon ArcadeLộ trình 8.0",
+     "rect": [
+      16,
+      12,
+      153,
+      38
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      571,
+      634,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      674,
+      634,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      571,
+      767,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      674,
+      767,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      571,
+      901,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      674,
+      901,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Lộ trình 8.0\"",
+     "rect": [
+      58,
+      33,
+      62,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"FSRS\"",
+     "rect": [
+      48,
+      136,
+      354,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"gói copy/dán\"",
+     "rect": [
+      45,
+      363,
+      665,
+      18
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Hôm nay\"",
+     "rect": [
+      61,
+      1155,
+      47,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"12 Chế độ\"",
+     "rect": [
+      223,
+      1155,
+      53,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thống kê\"",
+     "rect": [
+      391,
+      1155,
+      50,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Thư viện\"",
+     "rect": [
+      555,
+      1155,
+      45,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 11px: \"Cài đặt\"",
+     "rect": [
+      716,
+      1155,
+      41,
+      14
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 1 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 25",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      87,
+      772,
+      168
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      279,
+      772,
+      178
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      591,
+      772,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      725,
+      772,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      858,
+      772,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      24,
+      1004,
+      772,
+      466
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 5,
+    "nativeControls": 0,
+    "tinyText": 11,
+    "jargon": 2,
+    "monoIcons": 6,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Thoát phiên (Esc)",
+     "rect": [
+      16,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Tắt âm thanh",
+     "rect": [
+      1228,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 138×26: Chế độ bận (10 thẻ)",
+     "rect": [
+      389,
+      91,
+      138,
+      26
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 115×36: Gợi ýH",
+     "rect": [
+      308,
+      736,
+      115,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 121×36: Không nhớ",
+     "rect": [
+      431,
+      736,
+      121,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Level 1 ·\"",
+     "rect": [
+      1086,
+      21,
+      119,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Node 1/30\"",
+     "rect": [
+      924,
+      162,
+      59,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"10\"",
+     "rect": [
+      699,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"11\"",
+     "rect": [
+      745,
+      205,
+      9,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"12\"",
+     "rect": [
+      788,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"13\"",
+     "rect": [
+      831,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"14\"",
+     "rect": [
+      875,
+      205,
+      12,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"15\"",
+     "rect": [
+      919,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"16\"",
+     "rect": [
+      963,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"17\"",
+     "rect": [
+      1008,
+      205,
+      10,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"18\"",
+     "rect": [
+      1052,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"19\"",
+     "rect": [
+      1095,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"20\"",
+     "rect": [
+      1138,
+      205,
+      14,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 6,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 2,
+    "monoIcons": 27,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      606,
+      477,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      710,
+      477,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      606,
+      620,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      710,
+      620,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      606,
+      773,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      710,
+      773,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"FSRS\"",
+     "rect": [
+      296,
+      73,
+      401,
+      20
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"gói copy/dán\"",
+     "rect": [
+      293,
+      260,
+      665,
+      18
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 1 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 27",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      24,
+      976,
+      128
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      176,
+      976,
+      124
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      434,
+      559,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      568,
+      559,
+      141
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      721,
+      559,
+      141
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      855,
+      324,
+      393,
+      538
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 5,
+    "nativeControls": 0,
+    "tinyText": 11,
+    "jargon": 2,
+    "monoIcons": 6,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Thoát phiên (Esc)",
+     "rect": [
+      16,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 36×36: Tắt âm thanh",
+     "rect": [
+      1228,
+      10,
+      36,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 138×26: Chế độ bận (10 thẻ)",
+     "rect": [
+      389,
+      91,
+      138,
+      26
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 115×36: Gợi ýH",
+     "rect": [
+      308,
+      736,
+      115,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 121×36: Không nhớ",
+     "rect": [
+      431,
+      736,
+      121,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Level 1 ·\"",
+     "rect": [
+      1086,
+      21,
+      119,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"Node 1/30\"",
+     "rect": [
+      924,
+      162,
+      59,
+      14
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"10\"",
+     "rect": [
+      699,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"11\"",
+     "rect": [
+      745,
+      205,
+      9,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"12\"",
+     "rect": [
+      788,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"13\"",
+     "rect": [
+      831,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"14\"",
+     "rect": [
+      875,
+      205,
+      12,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"15\"",
+     "rect": [
+      919,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"16\"",
+     "rect": [
+      963,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"17\"",
+     "rect": [
+      1008,
+      205,
+      10,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"18\"",
+     "rect": [
+      1052,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"19\"",
+     "rect": [
+      1095,
+      205,
+      11,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "D4",
+     "msg": "chữ 10px: \"20\"",
+     "rect": [
+      1138,
+      205,
+      14,
+      13
+     ],
+     "sev": "CHẶN"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 6,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 2,
+    "monoIcons": 27,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      606,
+      477,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      710,
+      477,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      606,
+      620,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      710,
+      620,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 95×36: Đổi bài",
+     "rect": [
+      606,
+      773,
+      95,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D3",
+     "msg": "vùng chạm 101×36: Bắt đầu",
+     "rect": [
+      710,
+      773,
+      101,
+      36
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"FSRS\"",
+     "rect": [
+      296,
+      73,
+      401,
+      20
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "D7",
+     "msg": "thuật ngữ nội bộ \"gói copy/dán\"",
+     "rect": [
+      293,
+      260,
+      665,
+      18
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 1 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 27",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      24,
+      976,
+      128
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      176,
+      976,
+      124
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      434,
+      559,
+      122
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      568,
+      559,
+      141
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      272,
+      721,
+      559,
+      141
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      855,
+      324,
+      393,
+      538
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  }
+ ],
+ "total": {
+  "CHAN": 62,
+  "NANG": 138,
+  "NHE": 0
+ },
+ "byCode": {
+  "D3": 54,
+  "D7": 24,
+  "J9": 6,
+  "D4": 62,
+  "M1": 6,
+  "M2": 6,
+  "M3": 6,
+  "M4": 6,
+  "M5": 30
+ }
+}
