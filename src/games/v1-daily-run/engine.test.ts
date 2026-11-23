@@ -39,9 +39,17 @@ import {
   scorePromptAnswer,
   submitIntroAction,
   submitNodeAnswer,
+  type V1PromptPayload,
 } from './engine';
 
 const FIXED_NOW = new Date('2026-11-20T09:00:00Z');
+
+/** Dựng prompt và khẳng định item có thật (engine trả null thay vì rơi về phần tử đầu, V1-2). */
+function promptFor(...args: Parameters<typeof buildPromptForCard>): V1PromptPayload {
+  const prompt = buildPromptForCard(...args);
+  if (!prompt) throw new Error(`Không dựng được prompt cho ${args[0]} (${args[1]})`);
+  return prompt;
+}
 
 function makeDueTestCard(
   itemId: string,
@@ -93,7 +101,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     }
   });
 
-  it('2. Face 1 (intro): "Đã xem" awards +5 new-card XP and advances; "Tôi biết rồi" switches immediately to recall_meaning', () => {
+  it('2. Face 1 (intro): "Đã xem" không cộng XP, đánh dấu introSeenAt và chèn node recog; "Tôi biết rồi" switches immediately to recall_meaning', () => {
     const newVocabCard = createNewCard('vocab:ubiquitous', 'recog', {
       now: FIXED_NOW,
       unlocked: true,
@@ -117,7 +125,8 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     const introIdx = runA.nodes.findIndex((n) => n.face === 'intro');
     const stateAtIntro = { ...runA, currentIndex: introIdx };
     const afterSeen = submitIntroAction(stateAtIntro, 'seen', FIXED_NOW);
-    expect(afterSeen.totalXp).toBe(5);
+    expect(afterSeen.totalXp).toBe(0);
+    expect(afterSeen.updatedCards['vocab:ubiquitous#recog']?.introSeenAt).toBe(FIXED_NOW.getTime());
 
     // Branch B: "Tôi biết rồi" -> switches immediately to recall_meaning on the active node
     const afterKnow = submitIntroAction(stateAtIntro, 'know_already', FIXED_NOW);
@@ -156,7 +165,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
   });
 
   it('4. Face 3 (recall_meaning): grades exact match, UK/US spelling variants, and multi-word space/hyphen indifference', () => {
-    const promptUkUs = buildPromptForCard(
+    const promptUkUs = promptFor(
       'vocab:organise',
       'recall_meaning',
       V1_FIXTURE_CONTENT,
@@ -168,7 +177,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     expect(resUs.correct).toBe(true);
 
     // Answering multi-word "rote-learning" or "rote   learning" for "rote learning"
-    const promptMulti = buildPromptForCard(
+    const promptMulti = promptFor(
       'vocab:rote_learning',
       'recall_meaning',
       V1_FIXTURE_CONTENT,
@@ -215,13 +224,13 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
   });
 
   it('6. Face 3 (recall_meaning): skillLevel <= 3 reveals first letter automatically; skillLevel > 3 hides all letters initially', () => {
-    const promptEasy = buildPromptForCard(
+    const promptEasy = promptFor(
       'vocab:curriculum',
       'recall_meaning',
       V1_FIXTURE_CONTENT,
       2,
     );
-    const promptHard = buildPromptForCard(
+    const promptHard = promptFor(
       'vocab:curriculum',
       'recall_meaning',
       V1_FIXTURE_CONTENT,
@@ -239,7 +248,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
   });
 
   it('7. Face 4 (recall_cloze): blanks target word in example sentence and accepts all forms in clozeAccepted and family', () => {
-    const prompt = buildPromptForCard(
+    const prompt = promptFor(
       'vocab:mitigate',
       'recall_cloze',
       V1_FIXTURE_CONTENT,
@@ -302,7 +311,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
   });
 
   it('9. Face 6 (col_gap): matches all accepted answers in collocation gap and surfaces L1 Vietnamese translation traps on failure', () => {
-    const prompt = buildPromptForCard(
+    const prompt = promptFor(
       'col:curriculum_reform',
       'col_gap',
       V1_FIXTURE_CONTENT,
@@ -321,7 +330,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
   });
 
   it('10. Face 7 (para_match): grades 4-option paraphrase selection and explains decoy trap when wrong', () => {
-    const prompt = buildPromptForCard(
+    const prompt = promptFor(
       'para:0001',
       'para_match',
       V1_FIXTURE_CONTENT,
@@ -341,7 +350,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
   });
 
   it('11. Face 8 (err_fix): extracts underlined errorSpan, accepts both span correction and full corrected sentence', () => {
-    const prompt = buildPromptForCard(
+    const prompt = promptFor(
       'err:article_0002',
       'err_fix',
       V1_FIXTURE_CONTENT,
@@ -689,7 +698,7 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
   });
 });
 
-function getCorrectAnswerForPrompt(prompt: ReturnType<typeof buildPromptForCard>): string {
+function getCorrectAnswerForPrompt(prompt: V1PromptPayload): string {
   switch (prompt.face) {
     case 'intro':
       return prompt.headword;
@@ -707,5 +716,7 @@ function getCorrectAnswerForPrompt(prompt: ReturnType<typeof buildPromptForCard>
       return prompt.correctAnswer;
     case 'err_fix':
       return prompt.expectedCorrection;
+    default:
+      throw new Error(`Mặt ${prompt.face} không dùng trong helper này`);
   }
 }
