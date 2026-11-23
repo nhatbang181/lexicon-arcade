@@ -280,7 +280,7 @@ export const PlayScreen: React.FC<PlayScreenProps> = ({ gameId }) => {
         <p style={{ color: 'var(--color-text-dim)' }}>
           {savable
             ? 'Bạn có thể quay lại và chơi tiếp bất cứ lúc nào.'
-            : 'Hoàn thành phiên để điểm và thẻ ôn được ghi nhận. Bạn có muốn tiếp tục không?'}
+            : 'Hoàn thành phiên để điểm và thẻ ôn được ghi nhận.'}
         </p>
       </Modal>
     </div>

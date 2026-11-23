@@ -284,7 +284,7 @@ export const TodayDashboard: React.FC = () => {
               </Pill>
             </div>
             <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
-              Cá nhân hoá lộ trình 6.0 → 8.0 & nạp sẵn thẻ FSRS
+              Cá nhân hoá lộ trình 6.0 → 8.0 & nạp sẵn thẻ ôn từ vựng
             </h2>
             <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
               Chọn mục tiêu từng kỹ năng, làm nhanh 15 câu Placement từ vựng để mở kế hoạch học tự
@@ -325,8 +325,8 @@ export const TodayDashboard: React.FC = () => {
             Chào {state.displayName} · Hôm nay học gì?
           </h1>
           <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-            Mỗi phút luyện đúng kỹ năng bài thi chấm. Không tốn tiền API, chấm bài qua Claude gói
-            copy/dán.
+            Mỗi phút luyện đúng kỹ năng bài thi chấm. Không tốn tiền: Writing và Speaking được Claude
+            chấm, bạn chỉ cần dán bài vào.
           </p>
         </div>
 
@@ -500,12 +500,20 @@ export const TodayDashboard: React.FC = () => {
                           size="sm"
                           variant={isPrimaryNext ? 'primary' : 'secondary'}
                           skill={task.skillGroup}
-                          hotkey={isPrimaryNext ? 'Enter' : undefined}
                           rightIcon={<Play className="w-3.5 h-3.5" />}
                           onClick={() => startTask(task)}
                           data-testid={`today-start-${task.gameId}`}
                         >
                           {task.completed ? 'Chơi lại' : 'Bắt đầu'}
+                          {isPrimaryNext && !task.completed && (
+                            <span
+                              className="hidden sm:inline text-xs font-semibold ml-1 px-1.5 rounded border"
+                              style={{ borderColor: 'currentColor' }}
+                              aria-hidden="true"
+                            >
+                              Enter
+                            </span>
+                          )}
                         </Button>
                       </div>
                     </div>
@@ -522,7 +530,6 @@ export const TodayDashboard: React.FC = () => {
                 <Button
                   variant="primary"
                   skill="info"
-                  hotkey="Enter"
                   leftIcon={<LayoutGrid className="w-4 h-4" />}
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                   onClick={() => navigate('/hub')}

@@ -272,7 +272,7 @@ export const OnboardingScreen: React.FC = () => {
                   type="text"
                   value={displayName}
                   onChange={(e) => setDisplayName(e.target.value)}
-                  placeholder="Tuỳ chọn, bỏ trống thì app gọi là “bạn”"
+                  placeholder="Tên của bạn (tuỳ chọn)"
                   maxLength={32}
                   autoFocus
                   className="w-full h-11 px-3.5 rounded-[var(--radius-md)] border text-base font-medium"
@@ -302,13 +302,13 @@ export const OnboardingScreen: React.FC = () => {
                       Đã từng chơi Lexicon Arcade V1/V2?
                     </div>
                     <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-                      Chuyển thẻ SRS, Mistake Bank và XP cũ sang bộ não FSRS mới (không xoá dữ liệu
+                      Chuyển thẻ ôn, ngân hàng lỗi sai và XP cũ sang bản mới (không xoá dữ liệu
                       cũ).
                     </p>
                   </div>
                   <Button
                     variant="secondary"
-                    size="sm"
+                    size="md"
                     onClick={handleMigrateLegacy}
                     disabled={migrating}
                     data-testid="onboarding-migrate-btn"
@@ -654,7 +654,7 @@ export const OnboardingScreen: React.FC = () => {
                 />
                 <div className="space-y-2 text-center sm:text-left">
                   <Pill tone="vocab" icon={<Sparkles className="w-3.5 h-3.5" />}>
-                    Bước cuối · Khởi tạo bộ thẻ SRS
+                    Bước cuối · Khởi tạo bộ thẻ ôn
                   </Pill>
                   <h1 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
                     Định vị nhanh vốn từ học thuật

@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowLeft, Sparkles, Clock, Mic, Headphones, FileText } from 'lucide-react';
 import { Card, Button, Pill } from '../design/components';
 import type { GameDefinition, GameProps } from '../games/registry';
+import { formatBandLabel, modeLabelVi } from '../core/adaptive/sessionLevel';
 
 export function createGamePlaceholder(game: Omit<GameDefinition, 'load'>): React.FC<GameProps> {
   const PlaceholderGame: React.FC<GameProps> = ({ mode, level, onExit }) => {
@@ -12,14 +13,14 @@ export function createGamePlaceholder(game: Omit<GameDefinition, 'load'>): React
             <div className="flex items-center gap-2">
               <Pill tone={game.skill}>{game.code} · {game.skillLabelVi}</Pill>
               <Pill tone="info" icon={<Sparkles className="w-3.5 h-3.5" />}>
-                Sắp có ở mốc tiếp theo ({game.milestone})
+                Sắp có trong bản cập nhật tới
               </Pill>
             </div>
             <span
               className="text-xs font-medium"
               style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
             >
-              Chế độ: {mode} · Level {level}
+              Chế độ: {modeLabelVi(mode)} · {formatBandLabel(level)}
             </span>
           </div>
 
@@ -60,7 +61,7 @@ export function createGamePlaceholder(game: Omit<GameDefinition, 'load'>): React
             {game.requires.ai && (
               <div className="flex items-center gap-2" style={{ color: 'var(--color-text-dim)' }}>
                 <FileText className="w-4 h-4" />
-                <span>Hỗ trợ xuất Gói chấm 4 tiêu chí IELTS để copy/dán qua Claude (0 đồng).</span>
+                <span>Hỗ trợ xuất bài để Claude chấm theo 4 tiêu chí IELTS (0 đồng).</span>
               </div>
             )}
           </div>

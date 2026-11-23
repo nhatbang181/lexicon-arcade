@@ -18,7 +18,7 @@ export const StatsPlaceholderScreen: React.FC = () => {
       <EmptyState
         icon={<BarChart3 className="w-7 h-7" />}
         title="Chưa có dữ liệu phiên học"
-        description="Sau khi bạn hoàn thành các phiên luyện đầu tiên, biểu đồ Band ước lượng, dự báo thẻ FSRS 7 ngày tới và top lỗi thường gặp sẽ hiển thị tại đây."
+        description="Sau khi bạn hoàn thành các phiên luyện đầu tiên, biểu đồ Band ước lượng, dự báo thẻ ôn 7 ngày tới và top lỗi thường gặp sẽ hiển thị tại đây."
         action={
           <Button variant="primary" onClick={() => navigate('/hub')}>
             Bắt đầu phiên luyện đầu tiên

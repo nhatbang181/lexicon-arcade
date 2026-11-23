@@ -74,7 +74,7 @@ export const HubScreen: React.FC = () => {
               role="tab"
               aria-selected={active}
               onClick={() => setSelectedSkill(tab.id)}
-              className="px-3.5 py-2 rounded-[var(--radius-md)] border text-sm font-medium whitespace-nowrap transition-colors cursor-pointer"
+              className="px-3.5 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-medium whitespace-nowrap transition-colors cursor-pointer"
               style={{
                 backgroundColor: active
                   ? 'color-mix(in srgb, var(--color-info) 16%, var(--color-surface))'
@@ -151,7 +151,7 @@ export const HubScreen: React.FC = () => {
               </div>
 
               <Button
-                size="sm"
+                size="md"
                 variant="secondary"
                 skill={game.skill}
                 rightIcon={<Play className="w-3.5 h-3.5" />}
