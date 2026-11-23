@@ -1,3 +1,4 @@
+import { State } from 'ts-fsrs';
 import type { SRSCard } from '../../srs/fsrsAdapter';
 import { db as defaultDb, type LexiconV3DB, type ReviewRecord } from '../db';
 
@@ -49,6 +50,18 @@ export const cardRepo = {
       const id = await database.reviews.add(review);
       return id ?? 0;
     });
+  },
+
+  /**
+   * Số thẻ MỚI đã bắt đầu học kể từ `sinceMs` (thẻ có review đầu tiên với `prevState === New`).
+   * Dùng cho hạn mức thẻ mới theo ngày (V1-9), tính trên mọi game chứ không riêng 1 run.
+   */
+  async countNewCardsStartedSince(
+    sinceMs: number,
+    database: LexiconV3DB = defaultDb,
+  ): Promise<number> {
+    const rows = await database.reviews.where('ts').aboveOrEqual(sinceMs).toArray();
+    return new Set(rows.filter((r) => r.prevState === State.New).map((r) => r.cardId)).size;
   },
 
   async getReviewsForCard(

@@ -118,7 +118,7 @@ describe('userItemRepo.upsertWithCard (G1)', () => {
 
   it('rollback cả hai bảng nếu ghi thẻ lỗi (atomic)', async () => {
     const original = db.cards.put.bind(db.cards);
-    db.cards.put = (() => Promise.reject(new Error('boom'))) as typeof db.cards.put;
+    db.cards.put = (() => Promise.reject(new Error('boom'))) as unknown as typeof db.cards.put;
     await expect(userItemRepo.upsertWithCard(item, 'err_fix', {}, db)).rejects.toThrow();
     db.cards.put = original;
     expect(await db.userItems.count()).toBe(0);
