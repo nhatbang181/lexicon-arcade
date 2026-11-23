@@ -1,5 +1,5 @@
 {
-  "name": "lexicon-quest",
+  "name": "lexicon-arcade",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -11,7 +11,13 @@
     "test:watch": "vitest",
     "validate:data": "node scripts/validate/run_all.mjs",
     "e2e": "playwright test",
-    "shots": "playwright test e2e/screenshots.spec.ts"
+    "shots": "playwright test e2e/screenshots.spec.ts",
+    "validate:data:release": "node scripts/validate/run_all.mjs --require-audio --require-blind",
+    "qa:budget": "node scripts/qa/size-budget.mjs",
+    "qa:colors": "node scripts/qa/hardcoded-colors.mjs",
+    "qa:jargon": "node scripts/qa/internal-jargon.mjs",
+    "qa:contrast": "node scripts/qa/contrast.mjs",
+    "qa:taps": "node scripts/qa/tap-targets.mjs"
   },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^5.3.0",
@@ -35,6 +41,7 @@
     "zustand": "^5.1.0"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
     "@playwright/test": "^1.65.1",
     "@tailwindcss/vite": "^4.0.9",
     "@testing-library/react": "^16.3.3",
