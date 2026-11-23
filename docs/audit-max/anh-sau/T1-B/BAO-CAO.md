@@ -1,17 +1,18 @@
-# audit-ui · 2026-11-23T13:01:41.516Z
+# audit-ui · 2026-11-23T13:07:21.885Z
 
-Tổng: **39 CHẶN · 160 NẶNG · 0 NHẸ** trên 24 lượt (route × khung × theme).
+Tổng: **28 CHẶN · 158 NẶNG · 0 NHẸ** trên 24 lượt (route × khung × theme).
 
 | Mã | Số lần | Mức |
 |---|---|---|
 | M5 | 68 | NẶNG |
-| D4 | 38 | CHẶN |
+| D4 | 27 | CHẶN |
 | M1 | 18 | NẶNG |
 | M2 | 18 | NẶNG |
 | M3 | 18 | NẶNG |
 | M4 | 18 | NẶNG |
-| D7 | 12 | NẶNG |
-| D3 | 8 | NẶNG |
+| D7 | 10 | NẶNG |
+| D3 | 6 | NẶNG |
+| J9 | 2 | NẶNG |
 | D5 | 1 | CHẶN |
 
 | Khung | Theme | Route | CHẶN | NẶNG | tràn | chạm<44 | chữ<12 | icon màu | icon nét | hình lớn | nhân vật | chuyển động |
@@ -19,7 +20,7 @@ Tổng: **39 CHẶN · 160 NẶNG · 0 NHẸ** trên 24 lượt (route × khung 
 | 390x844 | dark | today | 0 | 7 | 0 | 0 | 0 | 1 | 14 | 0 | 0 | 0 |
 | 390x844 | dark | hub | 0 | 8 | 0 | 0 | 0 | 0 | 16 | 0 | 0 | 0 |
 | 390x844 | dark | onboarding | 0 | 5 | 0 | 0 | 0 | 1 | 11 | 0 | 0 | 0 |
-| 390x844 | dark | play/v1 | 0 | 2 | 0 | 1 | 0 | 0 | 3 | 0 | 0 | 5 |
+| 390x844 | dark | play/v1 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 390x844 | light | today | 0 | 7 | 0 | 0 | 0 | 1 | 14 | 0 | 0 | 0 |
 | 390x844 | light | hub | 0 | 8 | 0 | 0 | 0 | 0 | 16 | 0 | 0 | 0 |
 | 390x844 | light | onboarding | 0 | 5 | 0 | 0 | 0 | 1 | 11 | 0 | 0 | 0 |
@@ -27,7 +28,7 @@ Tổng: **39 CHẶN · 160 NẶNG · 0 NHẸ** trên 24 lượt (route × khung 
 | 820x1180 | dark | today | 0 | 8 | 0 | 0 | 0 | 1 | 21 | 0 | 0 | 0 |
 | 820x1180 | dark | hub | 0 | 13 | 0 | 0 | 0 | 0 | 30 | 0 | 0 | 0 |
 | 820x1180 | dark | onboarding | 0 | 5 | 0 | 0 | 0 | 1 | 12 | 0 | 0 | 0 |
-| 820x1180 | dark | play/v1 | 8 | 2 | 0 | 1 | 8 | 0 | 2 | 0 | 0 | 2 |
+| 820x1180 | dark | play/v1 | 8 | 4 | 0 | 3 | 8 | 0 | 5 | 0 | 0 | 5 |
 | 820x1180 | light | today | 0 | 8 | 0 | 0 | 0 | 1 | 21 | 0 | 0 | 0 |
 | 820x1180 | light | hub | 0 | 13 | 0 | 0 | 0 | 0 | 30 | 0 | 0 | 0 |
 | 820x1180 | light | onboarding | 0 | 5 | 0 | 0 | 0 | 1 | 12 | 0 | 0 | 0 |
@@ -35,7 +36,7 @@ Tổng: **39 CHẶN · 160 NẶNG · 0 NHẸ** trên 24 lượt (route × khung 
 | 1280x800 | dark | today | 0 | 8 | 0 | 0 | 0 | 1 | 22 | 0 | 0 | 0 |
 | 1280x800 | dark | hub | 0 | 14 | 0 | 0 | 0 | 0 | 32 | 0 | 0 | 0 |
 | 1280x800 | dark | onboarding | 0 | 5 | 0 | 0 | 0 | 1 | 12 | 0 | 0 | 0 |
-| 1280x800 | dark | play/v1 | 11 | 4 | 0 | 3 | 11 | 0 | 6 | 0 | 0 | 5 |
+| 1280x800 | dark | play/v1 | 0 | 1 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 1280x800 | light | today | 0 | 8 | 0 | 0 | 0 | 1 | 22 | 0 | 0 | 0 |
 | 1280x800 | light | hub | 0 | 14 | 0 | 0 | 0 | 0 | 32 | 0 | 0 | 0 |
 | 1280x800 | light | onboarding | 0 | 5 | 0 | 0 | 0 | 1 | 12 | 0 | 0 | 0 |

@@ -31,4 +31,5 @@ ErrorBoundary: Thử lại (thêm: Về Hôm nay).
 - Esc: `#/play/v3` rồi chọn span (V3), `#/play/v1` rảnh, mở hộp thoát rồi Esc.
 - Streak/XP: ghi `profile` bằng `db.profile.put` trong `page.evaluate` (module dev `/src/core/storage/db.ts`).
 - Onboarding: xoá `kv.onboarding_done`, vào `#/onboarding`. Level: `profile.skillLevels.v3`.
-- Lỗi route: ném lỗi qua `window.__T1B_THROW` không dùng; thay bằng route lỗi giả trong test đơn vị ErrorBoundary.
+- Lỗi route (X10): test đơn vị `src/app/routes.test.tsx` mock `StatsScreen` ném lỗi rồi điều hướng sang `/`.
+- Lưu và thoát: E2E đăng ký saver qua `import('/src/core/adaptive/progressSaver.ts')` trong `page.evaluate` (server dev).
