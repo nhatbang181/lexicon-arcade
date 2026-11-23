@@ -20,6 +20,7 @@ import {
   Button,
   Card,
   ChoiceButton,
+  EmptyState,
   FeedbackPanel,
   KeyHint,
   Pill,
@@ -32,149 +33,215 @@ import {
   questionSlideVariants,
 } from '../../design/motion';
 import { playSfx } from '../../core/audio/sfx';
-import {
-  CollocationItemSchema,
-  DictationItemSchema,
-  ErrorItemSchema,
-  ParaphraseItemSchema,
-  VocabItemSchema,
-} from '../../core/content/schemas';
-import { loadContentArray, resolveAssetUrl } from '../../core/content/loaders';
+import { resolveAssetUrl } from '../../core/content/loaders';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { cardRepo } from '../../core/storage/repos/cardRepo';
+import { eventRepo } from '../../core/storage/repos/eventRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
+import type { SRSCard } from '../../core/srs/fsrsAdapter';
 import type { GameProps } from '../registry';
-import {
-  V1_FIXTURE_CONTENT,
-  buildV1FixtureCards,
-  type V1ContentBundle,
-} from '../../test/fixtures/v1_fixtures';
 import {
   advanceAfterFeedback,
   applyNodeHint,
+  buildV1ProgressPayload,
+  computeLastWeekAccuracy,
   continueFromCheckpoint,
   createV1Run,
   finishAtCheckpoint,
   getActiveNode,
   getComboMultiplier,
   getRevealedPrefix,
+  getTypedTargetText,
+  isChoicePrompt,
   recordNodeAudioPlay,
+  startPlayingFromMap,
   submitIntroAction,
   submitNodeAnswer,
   type CharDiffSegment,
+  type V1ContentBundle,
   type V1RunMode,
   type V1RunState,
 } from './engine';
+import { loadV1Content, loadV1Extras } from './extras';
+import { buildStarterVocabCards } from './starter';
 import { RunMap } from './RunMap';
 
-async function loadV1ContentWithFallback(): Promise<V1ContentBundle> {
-  const silentOpts = {
-    isDev: false,
-    onError: () => {
-      // Fallback silently to fixtures when data files are not built yet
-    },
-  };
+type LoadState =
+  | { kind: 'loading' }
+  | { kind: 'error'; message: string }
+  | { kind: 'empty'; content: V1ContentBundle }
+  | { kind: 'ready' };
 
-  const [vocab, collocations, paraphrases, errors, dictations] = await Promise.all([
-    loadContentArray('data/vocab/words.json', VocabItemSchema, silentOpts).catch(
-      () => V1_FIXTURE_CONTENT.vocab,
-    ),
-    loadContentArray('data/vocab/collocations.json', CollocationItemSchema, silentOpts).catch(
-      () => V1_FIXTURE_CONTENT.collocations,
-    ),
-    loadContentArray('data/vocab/paraphrases.json', ParaphraseItemSchema, silentOpts).catch(
-      () => V1_FIXTURE_CONTENT.paraphrases,
-    ),
-    loadContentArray('data/vocab/error_patterns.json', ErrorItemSchema, silentOpts).catch(
-      () => V1_FIXTURE_CONTENT.errors,
-    ),
-    loadContentArray('data/listening/dictation.json', DictationItemSchema, silentOpts).catch(
-      () => V1_FIXTURE_CONTENT.dictations,
-    ),
-  ]);
+interface RunContext {
+  content: V1ContentBundle;
+  newCardsLimit: number;
+  newCardsDoneToday: number;
+  lastWeekAccuracy: number | null;
+}
 
-  return {
-    vocab: vocab.length > 0 ? vocab : V1_FIXTURE_CONTENT.vocab,
-    collocations:
-      collocations.length > 0 ? collocations : V1_FIXTURE_CONTENT.collocations,
-    paraphrases:
-      paraphrases.length > 0 ? paraphrases : V1_FIXTURE_CONTENT.paraphrases,
-    errors: errors.length > 0 ? errors : V1_FIXTURE_CONTENT.errors,
-    dictations:
-      dictations.length > 0 ? dictations : V1_FIXTURE_CONTENT.dictations,
-  };
+const DAY_MS = 86_400_000;
+
+function startOfLocalDay(now: Date): number {
+  const d = new Date(now);
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
+}
+
+/** Ghi `missing_item` (V1-2) tối đa 1 lần/thẻ/ngày để bảng events không phình ra. */
+async function logMissingItems(items: V1RunState['missingItems']): Promise<void> {
+  if (items.length === 0) return;
+  const recent = await eventRepo.listRecent({ type: 'missing_item', limit: 300 }).catch(() => []);
+  const cutoff = Date.now() - DAY_MS;
+  const seen = new Set(
+    recent.filter((e) => e.ts >= cutoff).map((e) => String(e.payload?.cardId ?? '')),
+  );
+  for (const m of items.slice(0, 50)) {
+    if (seen.has(m.cardId)) continue;
+    await eventRepo
+      .log('missing_item', { game: 'v1', cardId: m.cardId, itemId: m.itemId, face: m.face })
+      .catch(() => undefined);
+  }
 }
 
 export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const prefersReduced = useReducedMotion() ?? false;
   const initialRunMode: V1RunMode = mode === 'sprint' ? 'busy' : 'standard';
 
+  const [loadState, setLoadState] = useState<LoadState>({ kind: 'loading' });
   const [runState, setRunState] = useState<V1RunState | null>(null);
   const [skillLevel, setSkillLevel] = useState<number>(Math.max(1, level || 1));
   const [typedAnswer, setTypedAnswer] = useState<string>('');
   const [selectedChoiceIdx, setSelectedChoiceIdx] = useState<number | null>(null);
   const [audioPlaying, setAudioPlaying] = useState<boolean>(false);
   const [audioFallbackNotice, setAudioFallbackNotice] = useState<string | null>(null);
+  const [audioMissing, setAudioMissing] = useState<boolean>(false);
   const [sessionSaved, setSessionSaved] = useState<boolean>(false);
+  const [starting, setStarting] = useState<boolean>(false);
 
   const nodeStartedAtRef = useRef<number>(Date.now());
   const audioElRef = useRef<HTMLAudioElement | null>(null);
   const fallbackTimerRef = useRef<number | null>(null);
+  const mountedRef = useRef<boolean>(true);
+  const contextRef = useRef<RunContext | null>(null);
+  const newCardsLimitRef = useRef<number>(15);
 
-  // Initialize run from Dexie + content loaders, falling back seamlessly to v1_fixtures.ts
+  // Lưu tiến độ giữa phiên (G3): attempt id, trạng thái chốt, chuỗi ghi tuần tự, run mới nhất.
+  const attemptIdRef = useRef<number | undefined>(undefined);
+  const finalizedRef = useRef<boolean>(false);
+  const saveChainRef = useRef<Promise<void>>(Promise.resolve());
+  const latestRunRef = useRef<V1RunState | null>(null);
+
+  const persist = useCallback((state: V1RunState, final: boolean): Promise<void> => {
+    const hasWork =
+      state.attemptItems.length > 0 ||
+      state.reviews.length > 0 ||
+      Object.keys(state.updatedCards).length > 0;
+    if (!hasWork) {
+      if (final) finalizedRef.current = true;
+      return saveChainRef.current;
+    }
+    const payload = buildV1ProgressPayload(state);
+    saveChainRef.current = saveChainRef.current.then(async () => {
+      try {
+        if (attemptIdRef.current === undefined) {
+          const res = await attemptRepo.saveProgress(payload);
+          attemptIdRef.current = res.attemptId;
+        }
+        if (final) {
+          await attemptRepo.finalize(attemptIdRef.current, payload);
+          finalizedRef.current = true;
+        } else {
+          await attemptRepo.saveProgress({ ...payload, attemptId: attemptIdRef.current });
+        }
+      } catch {
+        // Lỗi ghi DB không được chặn người học; lần lưu kế tiếp sẽ ghi bù (idempotent).
+      }
+    });
+    return saveChainRef.current;
+  }, []);
+
+  const resetPersistence = useCallback(() => {
+    attemptIdRef.current = undefined;
+    finalizedRef.current = false;
+    setSessionSaved(false);
+  }, []);
+
+  const startRun = useCallback(
+    async (
+      cards: SRSCard[],
+      content: V1ContentBundle,
+      effectiveLevel: number,
+      newCardsLimit: number,
+    ) => {
+      const now = new Date();
+      const [extras, doneToday, recentAttempts] = await Promise.all([
+        loadV1Extras(cards, { now }),
+        cardRepo.countNewCardsStartedSince(startOfLocalDay(now)).catch(() => 0),
+        attemptRepo.getSince(now.getTime() - 2 * 7 * DAY_MS, 'v1').catch(() => []),
+      ]);
+      const bundle: V1ContentBundle = { ...content, extras };
+      const lastWeekAccuracy = computeLastWeekAccuracy(recentAttempts, now);
+      contextRef.current = {
+        content: bundle,
+        newCardsLimit,
+        newCardsDoneToday: doneToday,
+        lastWeekAccuracy,
+      };
+      const run = createV1Run({
+        cards,
+        content: bundle,
+        mode: initialRunMode,
+        skillLevel: effectiveLevel,
+        newCardsLimit,
+        newCardsDoneToday: doneToday,
+        now,
+        lastWeekAccuracy,
+        startOnMap: true,
+      });
+      void logMissingItems(run.missingItems);
+      if (!mountedRef.current) return;
+      resetPersistence();
+      setRunState(run);
+      nodeStartedAtRef.current = Date.now();
+    },
+    [initialRunMode, resetPersistence],
+  );
+
+  // Khởi tạo run từ Dexie + nội dung THẬT. DB rỗng → EmptyState, KHÔNG ghi dữ liệu giả (V1-3).
   useEffect(() => {
-    let mounted = true;
+    mountedRef.current = true;
 
     async function initRun() {
       try {
         const [profile, existingCards, content] = await Promise.all([
           profileRepo.getOrCreate().catch(() => null),
-          cardRepo.getAll().catch(() => []),
-          loadV1ContentWithFallback(),
+          cardRepo.getAll(),
+          loadV1Content(),
         ]);
-
-        let cards = existingCards;
-        if (cards.length === 0) {
-          cards = buildV1FixtureCards(new Date());
-          await cardRepo.bulkUpsert(cards).catch(() => {
-            // Ignore DB error in restricted test environments
-          });
-        }
+        if (!mountedRef.current) return;
 
         const effectiveLevel = profile?.skillLevels?.v1 ?? Math.max(1, level || 1);
-        const newCardsLimit = profile?.newCardsPerDay ?? 15;
-
-        if (!mounted) return;
+        newCardsLimitRef.current = profile?.newCardsPerDay ?? 15;
         setSkillLevel(effectiveLevel);
 
-        const initial = createV1Run({
-          cards,
-          content,
-          mode: initialRunMode,
-          skillLevel: effectiveLevel,
-          newCardsLimit,
-          now: new Date(),
+        if (existingCards.length === 0) {
+          setLoadState({ kind: 'empty', content });
+          return;
+        }
+        await startRun(existingCards, content, effectiveLevel, newCardsLimitRef.current);
+        if (mountedRef.current) setLoadState({ kind: 'ready' });
+      } catch (err) {
+        if (!mountedRef.current) return;
+        setLoadState({
+          kind: 'error',
+          message: err instanceof Error ? err.message : 'Không đọc được dữ liệu học.',
         });
-        setRunState(initial);
-        nodeStartedAtRef.current = Date.now();
-      } catch {
-        if (!mounted) return;
-        const fallbackCards = buildV1FixtureCards(new Date());
-        const initial = createV1Run({
-          cards: fallbackCards,
-          content: V1_FIXTURE_CONTENT,
-          mode: initialRunMode,
-          skillLevel: Math.max(1, level || 1),
-          now: new Date(),
-        });
-        setRunState(initial);
-        nodeStartedAtRef.current = Date.now();
       }
     }
 
     void initRun();
     return () => {
-      mounted = false;
+      mountedRef.current = false;
       if (fallbackTimerRef.current !== null) {
         window.clearTimeout(fallbackTimerRef.current);
       }
@@ -182,18 +249,79 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         audioElRef.current.pause();
       }
     };
-  }, [initialRunMode, level]);
+  }, [initialRunMode, level, startRun]);
+
+  const handleStartWithStarter = useCallback(async () => {
+    if (loadState.kind !== 'empty' || starting) return;
+    setStarting(true);
+    try {
+      const starter = buildStarterVocabCards(loadState.content.vocab, new Date());
+      await cardRepo.bulkUpsert(starter);
+      await startRun(starter, loadState.content, skillLevel, newCardsLimitRef.current);
+      if (mountedRef.current) setLoadState({ kind: 'ready' });
+    } catch (err) {
+      if (mountedRef.current) {
+        setLoadState({
+          kind: 'error',
+          message: err instanceof Error ? err.message : 'Không tạo được thẻ khởi động.',
+        });
+      }
+    } finally {
+      if (mountedRef.current) setStarting(false);
+    }
+  }, [loadState, skillLevel, startRun, starting]);
 
   const activeNode = useMemo(
     () => (runState ? getActiveNode(runState) : null),
     [runState],
   );
 
+  // Lưu giữa phiên: debounce 500 ms sau mỗi thay đổi tiến độ, ngay lập tức ở checkpoint (V1-7);
+  // flush khi ẩn tab / đóng trang / thoát màn (Esc, nút ✕).
+  useEffect(() => {
+    latestRunRef.current = runState;
+  }, [runState]);
+
+  const progressKey = runState
+    ? `${runState.reviews.length}:${runState.attemptItems.length}:${Object.keys(runState.updatedCards).length}:${runState.totalXp}`
+    : '';
+  const runPhase = runState?.phase;
+  useEffect(() => {
+    if (!runPhase || runPhase === 'recap') return;
+    if (progressKey.startsWith('0:0:0:')) return;
+    const timer = window.setTimeout(
+      () => {
+        const latest = latestRunRef.current;
+        if (latest && latest.phase !== 'recap') void persist(latest, false);
+      },
+      runPhase === 'checkpoint' ? 0 : 500,
+    );
+    return () => window.clearTimeout(timer);
+  }, [progressKey, runPhase, persist]);
+
+  useEffect(() => {
+    const flush = () => {
+      const latest = latestRunRef.current;
+      if (latest && latest.phase !== 'recap' && !finalizedRef.current) void persist(latest, false);
+    };
+    const onVisibility = () => {
+      if (document.visibilityState === 'hidden') flush();
+    };
+    window.addEventListener('pagehide', flush);
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => {
+      window.removeEventListener('pagehide', flush);
+      document.removeEventListener('visibilitychange', onVisibility);
+      flush();
+    };
+  }, [persist]);
+
   // Reset input fields whenever the active node changes
   useEffect(() => {
     if (!activeNode) return;
     setSelectedChoiceIdx(null);
     setAudioFallbackNotice(null);
+    setAudioMissing(false);
     nodeStartedAtRef.current = Date.now();
 
     if (
@@ -210,8 +338,13 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
   // Play audio from static file (NEVER calling speechSynthesis per AGENTS.md §3)
   const playCardAudio = useCallback(
-    (audioRelativePath?: string, checkPlayQuota = false) => {
+    (
+      audioRelativePath?: string,
+      checkPlayQuota = false,
+      playOptions: { clip?: { start: number; end: number }; silent?: boolean } = {},
+    ) => {
       if (!runState) return;
+      const { clip, silent = false } = playOptions;
 
       if (checkPlayQuota) {
         const playAttempt = recordNodeAudioPlay(runState);
@@ -222,8 +355,17 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         }
       }
 
+      const reportMissing = () => {
+        setAudioPlaying(false);
+        if (silent) return;
+        setAudioMissing(true);
+        setAudioFallbackNotice('Chưa có file audio tĩnh trên đĩa — hãy đối chiếu IPA.');
+      };
+
       if (!audioRelativePath) {
+        if (silent) return;
         setAudioPlaying(true);
+        setAudioMissing(true);
         setAudioFallbackNotice('File âm thanh offline đang ở chế độ mô phỏng.');
         if (fallbackTimerRef.current !== null) {
           window.clearTimeout(fallbackTimerRef.current);
@@ -243,25 +385,36 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         audioElRef.current = audio;
         setAudioPlaying(true);
         setAudioFallbackNotice(null);
+        setAudioMissing(false);
+
+        if (clip) {
+          // Phát đúng đoạn [start, end] của file dài (đoạn bẫy Listening)
+          audio.addEventListener('loadedmetadata', () => {
+            try {
+              audio.currentTime = clip.start;
+            } catch {
+              // trình duyệt chưa cho tua: phát từ đầu
+            }
+          });
+          audio.addEventListener('timeupdate', () => {
+            if (audio.currentTime >= clip.end) {
+              audio.pause();
+              setAudioPlaying(false);
+            }
+          });
+        }
 
         audio.onended = () => {
           setAudioPlaying(false);
         };
-        audio.onerror = () => {
-          setAudioPlaying(false);
-          setAudioFallbackNotice('Chưa có file audio tĩnh trên đĩa — hãy đối chiếu IPA.');
-        };
+        audio.onerror = reportMissing;
 
         const playPromise = audio.play();
         if (playPromise && typeof playPromise.catch === 'function') {
-          playPromise.catch(() => {
-            setAudioPlaying(false);
-            setAudioFallbackNotice('Chưa có file audio tĩnh trên đĩa — hãy đối chiếu IPA.');
-          });
+          playPromise.catch(reportMissing);
         }
       } catch {
-        setAudioPlaying(false);
-        setAudioFallbackNotice('Chưa có file audio tĩnh trên đĩa — hãy đối chiếu IPA.');
+        reportMissing();
       }
     },
     [runState],
@@ -277,34 +430,27 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     return () => window.clearTimeout(timer);
   }, [runState?.feedback]);
 
-  // Persist session to IndexedDB when entering Recap phase
+  // Chốt phiên khi vào Recap (attempt đã lưu dần từ trước → chỉ finalize)
   useEffect(() => {
     if (!runState || runState.phase !== 'recap' || !runState.recap || sessionSaved) {
       return;
     }
     setSessionSaved(true);
     playSfx('sessionDone');
+    void persist(runState, true);
+  }, [runState, sessionSaved, persist]);
 
-    const updatedCardsList = Object.values(runState.updatedCards);
-    void attemptRepo
-      .saveSession({
-        attempt: {
-          gameId: 'v1',
-          mode: runState.mode === 'busy' ? 'sprint' : 'training',
-          startedAt: runState.startedAt,
-          endedAt: Date.now(),
-          score: runState.recap.firstAttemptCorrect,
-          total: Math.max(1, runState.recap.totalCards),
-          xp: runState.totalXp,
-          items: runState.attemptItems,
-        },
-        updatedCards: updatedCardsList,
-        reviews: runState.reviews,
-      })
-      .catch(() => {
-        // Ignore persistence errors in headless/read-only environments
-      });
-  }, [runState, sessionSaved]);
+  // Thẻ giới thiệu tự phát âm 250 ms sau khi hiện (V1-13). Trình duyệt chặn autoplay thì im lặng.
+  useEffect(() => {
+    if (!activeNode || activeNode.prompt.face !== 'intro') return;
+    const audioUrl = activeNode.prompt.audioUrl;
+    const timer = window.setTimeout(() => {
+      playCardAudio(audioUrl, false, { silent: true });
+    }, 250);
+    return () => window.clearTimeout(timer);
+    // chỉ chạy khi chuyển sang thẻ intro mới
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeNode?.nodeId]);
 
   const handleNextAfterFeedback = useCallback(() => {
     if (!runState || !runState.feedback) return;
@@ -342,8 +488,10 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         } else {
           playSfx('correct');
         }
-        // Auto-play word pronunciation on correct vocab answer
+        // Auto-play word pronunciation on correct vocab answer (không phát lại audio vừa nghe)
         if (
+          activeNode.face !== 'ltrap_replay' &&
+          activeNode.face !== 'dict_full' &&
           'audioUrl' in activeNode.prompt &&
           activeNode.prompt.audioUrl
         ) {
@@ -366,22 +514,8 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     if (!updated) return;
 
     // Pre-fill revealed prefix into input if user hasn't typed past it
-    if (
-      updated.prompt.face !== 'intro' &&
-      updated.prompt.face !== 'recog' &&
-      updated.prompt.face !== 'para_match'
-    ) {
-      const targetWord =
-        updated.prompt.face === 'recall_meaning'
-          ? updated.prompt.headword
-          : updated.prompt.face === 'recall_cloze'
-          ? updated.prompt.primaryAnswer
-          : updated.prompt.face === 'listen_spell'
-          ? updated.prompt.targetWord
-          : updated.prompt.face === 'col_gap'
-          ? updated.prompt.primaryAnswer
-          : updated.prompt.expectedCorrection;
-
+    const targetWord = getTypedTargetText(updated.prompt);
+    if (targetWord && updated.face !== 'intro') {
       const prefix = getRevealedPrefix(targetWord, updated.revealedLetters);
       if (!typedAnswer.toLowerCase().startsWith(prefix.toLowerCase())) {
         setTypedAnswer(prefix);
@@ -393,14 +527,10 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     (choiceIdx: number) => {
       if (!runState || !activeNode || runState.feedback) return;
       if (activeNode.eliminatedChoices.includes(choiceIdx)) return;
-      if (
-        activeNode.prompt.face !== 'recog' &&
-        activeNode.prompt.face !== 'para_match'
-      ) {
-        return;
-      }
-      setSelectedChoiceIdx(choiceIdx);
+      if (!isChoicePrompt(activeNode.prompt)) return;
       const choiceText = activeNode.prompt.choices[choiceIdx];
+      if (choiceText === undefined) return;
+      setSelectedChoiceIdx(choiceIdx);
       handleSubmitAnswer(choiceText);
     },
     [activeNode, handleSubmitAnswer, runState],
@@ -409,27 +539,38 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const handleSwitchRunMode = useCallback(
     (nextMode: V1RunMode) => {
       if (!runState) return;
+      const ctx = contextRef.current;
       const allCards = Object.values(runState.allCardsSnapshot);
       const fresh = createV1Run({
         cards: allCards,
         content: runState.content,
         mode: nextMode,
         skillLevel,
+        newCardsLimit: ctx?.newCardsLimit ?? newCardsLimitRef.current,
+        newCardsDoneToday: ctx?.newCardsDoneToday ?? 0,
+        lastWeekAccuracy: ctx?.lastWeekAccuracy ?? null,
+        startOnMap: runState.phase === 'map_intro',
         now: new Date(),
       });
-      setSessionSaved(false);
+      resetPersistence();
       setRunState(fresh);
     },
-    [runState, skillLevel],
+    [resetPersistence, runState, skillLevel],
   );
 
   // Global keyboard shortcuts: 1-4 for MCQ, H for Hint (outside text input or Alt+H), Enter to advance
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
-      if (!runState) return;
+      if (!runState || e.defaultPrevented) return;
       const target = e.target as HTMLElement | null;
       const inTextInput =
         target?.tagName === 'INPUT' || target?.tagName === 'TEXTAREA';
+
+      if (runState.phase === 'map_intro' && e.key === 'Enter') {
+        e.preventDefault();
+        setRunState((prev) => (prev ? startPlayingFromMap(prev) : prev));
+        return;
+      }
 
       if (runState.phase === 'checkpoint' && e.key === 'Enter') {
         e.preventDefault();
@@ -445,12 +586,16 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
       if (!activeNode || runState.feedback) return;
 
-      // 1-4 hotkeys for MCQ faces (recog, para_match)
-      if (
-        (activeNode.prompt.face === 'recog' ||
-          activeNode.prompt.face === 'para_match') &&
-        /^[1-4]$/.test(e.key)
-      ) {
+      // Thẻ giới thiệu: Enter = "Đã xem"
+      if (activeNode.face === 'intro' && e.key === 'Enter' && !inTextInput) {
+        e.preventDefault();
+        playSfx('flip');
+        setRunState((prev) => (prev ? submitIntroAction(prev, 'seen') : prev));
+        return;
+      }
+
+      // 1-4 hotkeys for MCQ faces (recog, para_match, tfng_retry, head_retry)
+      if (isChoicePrompt(activeNode.prompt) && /^[1-4]$/.test(e.key)) {
         e.preventDefault();
         handleChoiceSelect(Number(e.key) - 1);
         return;
@@ -476,10 +621,131 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     runState,
   ]);
 
+  if (loadState.kind === 'error') {
+    return (
+      <div className="max-w-xl mx-auto p-4 sm:p-6">
+        <EmptyState
+          title="Không mở được Daily Run"
+          description={`${loadState.message} Dữ liệu học của bạn không bị mất. Thử tải lại trang.`}
+          icon={<AlertTriangle className="w-7 h-7" />}
+          action={
+            <Button variant="primary" skill="vocab" onClick={() => window.location.reload()}>
+              Tải lại trang
+            </Button>
+          }
+          secondaryAction={<GameLink href="#/">Về Hôm nay</GameLink>}
+        />
+      </div>
+    );
+  }
+
+  // DB rỗng: không ghi dữ liệu giả, mời làm placement hoặc bắt đầu bằng bộ thẻ khởi động thật (V1-3)
+  if (loadState.kind === 'empty') {
+    return (
+      <div className="max-w-xl mx-auto p-4 sm:p-6">
+        <EmptyState
+          title="Chưa có thẻ nào để ôn"
+          description="Làm bài placement 10 phút để mình chọn đúng từ cho trình độ của bạn, hoặc bắt đầu ngay với 15 từ học thuật thường gặp nhất."
+          icon={
+            <motion.span
+              className="inline-flex"
+              animate={prefersReduced ? undefined : { y: [0, -5, 0] }}
+              transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <Sparkles className="w-7 h-7" />
+            </motion.span>
+          }
+          action={
+            <Button
+              variant="primary"
+              skill="vocab"
+              loading={starting}
+              onClick={() => void handleStartWithStarter()}
+              rightIcon={<ArrowRight className="w-4 h-4" />}
+            >
+              Bắt đầu với 15 từ khởi động
+            </Button>
+          }
+          secondaryAction={<GameLink href="#/placement">Làm placement</GameLink>}
+        />
+      </div>
+    );
+  }
+
   if (!runState) {
     return (
       <div className="max-w-3xl mx-auto p-6 text-center" style={{ color: 'var(--color-text-dim)' }}>
         Đang khởi tạo lộ trình V1 · Daily Run...
+      </div>
+    );
+  }
+
+  // Không có thẻ nào dựng được để ôn hôm nay (đã xong hoặc thẻ thiếu nội dung)
+  if (runState.nodes.length === 0) {
+    return (
+      <div className="max-w-xl mx-auto p-4 sm:p-6">
+        <EmptyState
+          title="Hôm nay đã ôn xong"
+          description={
+            runState.missingItems.length > 0
+              ? `Không còn thẻ nào đến hạn. Có ${runState.missingItems.length} thẻ chưa có nội dung nên được bỏ qua (đã ghi lại để sửa).`
+              : 'Không còn thẻ nào đến hạn và hạn mức thẻ mới hôm nay đã dùng hết. Quay lại vào ngày mai nhé.'
+          }
+          icon={<CheckCircle2 className="w-7 h-7" />}
+          action={
+            <Button variant="primary" skill="vocab" onClick={() => onExit()}>
+              Về Hôm nay
+            </Button>
+          }
+        />
+      </div>
+    );
+  }
+
+  // Bản đồ mở đầu run (V1-14): xem trước chặng rồi Enter để bắt đầu
+  if (runState.phase === 'map_intro') {
+    const newCount = runState.nodes.filter((n) => n.isNewCard).length;
+    return (
+      <div className="max-w-2xl mx-auto p-4 sm:p-6 space-y-5">
+        <RunMap
+          nodes={runState.nodes}
+          currentIndex={0}
+          stageIndex={0}
+          stageSize={runState.stageSize}
+          isBossPhase={false}
+          bossHp={runState.bossHp}
+          bossDefeated={false}
+        />
+        <Card padding="lg" skillAccent="vocab" className="text-center space-y-4">
+          <div className="space-y-1.5">
+            <h2 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
+              Lượt chạy hôm nay: {runState.nodes.length} thẻ
+            </h2>
+            <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              {newCount > 0 ? `${newCount} thẻ mới · ` : ''}
+              {runState.totalStages} chặng, cuối cùng là Boss 5 thẻ khó nhất.
+            </p>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <Button
+              variant="secondary"
+              onClick={() =>
+                handleSwitchRunMode(runState.mode === 'busy' ? 'standard' : 'busy')
+              }
+            >
+              {runState.mode === 'busy' ? 'Đổi sang Tiêu chuẩn' : 'Chế độ bận (10 thẻ)'}
+            </Button>
+            <Button
+              variant="primary"
+              skill="vocab"
+              hotkey="Enter"
+              rightIcon={<ArrowRight className="w-4 h-4" />}
+              onClick={() => setRunState(startPlayingFromMap(runState))}
+            >
+              Bắt đầu
+            </Button>
+          </div>
+        </Card>
       </div>
     );
   }
@@ -568,7 +834,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     (c) => mistakeIds.has(c.itemId),
                   );
                   if (mistakeCards.length > 0) {
-                    setSessionSaved(false);
+                    resetPersistence();
                     setRunState(
                       createV1Run({
                         cards: mistakeCards.slice(0, 5),
@@ -622,7 +888,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
               Đã hoàn thành {completedCards}/{runState.nodes.length} thẻ
             </h2>
             <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-              Tiến độ FSRS đã được ghi nhận. Bạn có thể đi tiếp sang Chặng{' '}
+              Tiến độ đã được lưu. Bạn có thể đi tiếp sang Chặng{' '}
               {runState.currentStage + 1} hoặc lưu và nghỉ tại đây.
             </p>
           </div>
@@ -665,7 +931,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       style={{
         // Pha Boss: nền tối hơn 10% (docs/games/V1-DAILY-RUN.md §10)
         backgroundColor: isBossPhase
-          ? 'color-mix(in srgb, #000000 12%, var(--color-bg))'
+          ? 'var(--color-boss-dim, color-mix(in srgb, var(--color-wrong) 10%, var(--color-bg)))'
           : 'var(--color-bg)',
       }}
     >
@@ -690,7 +956,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
             )}
 
             {runState.isExtraPractice && (
-              <Pill tone="info">Ôn thêm (Không ghi FSRS)</Pill>
+              <Pill tone="info">Ôn thêm (không tính vào lịch ôn)</Pill>
             )}
 
             {/* Nút chuyển Chế độ tiêu chuẩn (20 thẻ/chặng) / Chế độ bận (10 thẻ) */}
@@ -702,7 +968,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     runState.mode === 'busy' ? 'standard' : 'busy',
                   )
                 }
-                className="text-xs px-2.5 py-1 rounded border cursor-pointer transition-colors"
+                className="text-xs px-3 min-h-11 rounded border cursor-pointer transition-colors"
                 style={{
                   backgroundColor: 'var(--color-surface-2)',
                   borderColor: 'var(--color-border)',
@@ -906,13 +1172,16 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                   selectedChoiceIdx,
                   onChoiceSelect: handleChoiceSelect,
                   onSubmit: () => handleSubmitAnswer(),
-                  onIntroSeen: () =>
-                    setRunState(submitIntroAction(runState, 'seen')),
+                  onIntroSeen: () => {
+                    playSfx('flip');
+                    setRunState(submitIntroAction(runState, 'seen'));
+                  },
                   onIntroKnowAlready: () =>
                     setRunState(submitIntroAction(runState, 'know_already')),
                   audioPlaying,
                   audioFallbackNotice,
                   onPlayAudio: playCardAudio,
+                  audioMissing,
                   hasFeedback: Boolean(runState.feedback),
                   feedbackStatus: runState.feedback?.status,
                 })}
@@ -924,19 +1193,19 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     style={{ borderColor: 'var(--color-border)' }}
                   >
                     <div className="flex items-center gap-2">
-                      <Button
-                        variant="secondary"
-                        size="sm"
-                        hotkey="H"
-                        leftIcon={<Lightbulb className="w-4 h-4" />}
-                        onClick={handleHint}
-                      >
-                        Gợi ý
-                      </Button>
+                      {activeNode.prompt.face !== 'dict_full' && (
+                        <Button
+                          variant="secondary"
+                          hotkey="H"
+                          leftIcon={<Lightbulb className="w-4 h-4" />}
+                          onClick={handleHint}
+                        >
+                          Gợi ý
+                        </Button>
+                      )}
 
                       <Button
                         variant="ghost"
-                        size="sm"
                         leftIcon={<HelpCircle className="w-4 h-4" />}
                         onClick={() => handleSubmitAnswer('')}
                       >
@@ -944,18 +1213,17 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                       </Button>
                     </div>
 
-                    {activeNode.prompt.face !== 'recog' &&
-                      activeNode.prompt.face !== 'para_match' && (
-                        <Button
-                          variant="primary"
-                          size="md"
-                          skill={isBossPhase ? 'speaking' : 'vocab'}
-                          hotkey="↵"
-                          onClick={() => handleSubmitAnswer()}
-                        >
-                          Nộp
-                        </Button>
-                      )}
+                    {!isChoicePrompt(activeNode.prompt) && (
+                      <Button
+                        variant="primary"
+                        size="md"
+                        skill={isBossPhase ? 'speaking' : 'vocab'}
+                        hotkey="↵"
+                        onClick={() => handleSubmitAnswer()}
+                      >
+                        Nộp
+                      </Button>
+                    )}
                   </div>
                 )}
               </Card>
@@ -1032,7 +1300,9 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                   ? 'Chính xác!'
                   : runState.feedback.status === 'partial'
                   ? 'Gần đúng (Sai 1 ký tự → chấm Hard)'
-                  : 'Chưa chính xác (Thẻ sẽ quay lại sau 3–5 node)'
+                  : isBossPhase
+                  ? 'Chưa chính xác (thẻ sẽ quay lại ở cuối Boss)'
+                  : 'Chưa chính xác (thẻ sẽ quay lại sau 3–5 thẻ)'
               }
               correctAnswer={runState.feedback.correctAnswer}
               explanation={
@@ -1172,6 +1442,16 @@ function getFaceHeaderTitleVi(face: string): string {
       return 'Chọn Paraphrase tương đương (1–4)';
     case 'err_fix':
       return 'Sửa lỗi ngữ pháp / từ vựng gạch chân';
+    case 'tfng_retry':
+      return 'Reading · True / False / Not Given';
+    case 'head_retry':
+      return 'Reading · Chọn tiêu đề cho đoạn';
+    case 'ltrap_replay':
+      return 'Listening · Nghe lại đoạn bẫy';
+    case 'dict_full':
+      return 'Nghe & chép cả câu';
+    case 'err_user':
+      return 'Ôn lỗi của chính bạn';
     default:
       return 'Ôn tập FSRS';
   }
@@ -1188,7 +1468,12 @@ interface RenderFaceContentParams {
   onIntroKnowAlready: () => void;
   audioPlaying: boolean;
   audioFallbackNotice: string | null;
-  onPlayAudio: (url?: string, checkQuota?: boolean) => void;
+  onPlayAudio: (
+    url?: string,
+    checkQuota?: boolean,
+    options?: { clip?: { start: number; end: number }; silent?: boolean },
+  ) => void;
+  audioMissing: boolean;
   hasFeedback: boolean;
   feedbackStatus?: 'correct' | 'partial' | 'wrong';
 }
@@ -1206,11 +1491,56 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     audioPlaying,
     audioFallbackNotice,
     onPlayAudio,
+    audioMissing,
     hasFeedback,
     feedbackStatus,
   } = params;
 
   const { prompt } = activeNode;
+
+  // Helper dùng chung cho các mặt chọn đáp án (recog / para_match / tfng_retry / head_retry)
+  const renderChoices = (choices: readonly string[], correctIndex: number) => (
+    <div className="grid grid-cols-1 gap-2.5">
+      {choices.map((choice, idx) => {
+        const isEliminated = activeNode.eliminatedChoices.includes(idx);
+        let choiceState: ChoiceState = 'idle';
+
+        if (hasFeedback) {
+          if (idx === correctIndex) {
+            choiceState = selectedChoiceIdx === idx ? 'correct' : 'reveal-correct';
+          } else if (selectedChoiceIdx === idx) {
+            choiceState = 'wrong';
+          }
+        } else if (selectedChoiceIdx === idx) {
+          choiceState = 'selected';
+        }
+
+        return (
+          <ChoiceButton
+            key={idx}
+            indexLabel={String(idx + 1)}
+            label={isEliminated ? '— Đã loại bằng gợi ý —' : choice}
+            state={choiceState}
+            disabled={hasFeedback || isEliminated}
+            onClick={() => onChoiceSelect(idx)}
+          />
+        );
+      })}
+    </div>
+  );
+
+  const renderTypedInput = (placeholder: string, ariaLabel: string) => (
+    <AnswerInput
+      value={typedAnswer}
+      onChange={setTypedAnswer}
+      onSubmit={onSubmit}
+      placeholder={placeholder}
+      status={hasFeedback ? feedbackStatus ?? 'idle' : 'idle'}
+      disabled={hasFeedback}
+      autoFocus
+      aria-label={ariaLabel}
+    />
+  );
 
   // 1. Face: intro
   if (prompt.face === 'intro') {
@@ -1328,7 +1658,7 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
             rightIcon={<ArrowRight className="w-4 h-4" />}
             onClick={onIntroSeen}
           >
-            Đã xem (+5 XP)
+            Đã xem
           </Button>
         </div>
       </div>
@@ -1675,7 +2005,174 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     );
   }
 
-  // 8. Face: err_fix
+  // 8. Face: tfng_retry / head_retry (Reading: đoạn + câu hỏi, chọn 1–4)
+  if (prompt.face === 'tfng_retry' || prompt.face === 'head_retry') {
+    const quote = hasFeedback ? prompt.evidenceQuote : undefined;
+    return (
+      <div className="space-y-4">
+        <div
+          className="p-4 rounded-[var(--radius-md)] border space-y-2"
+          style={{
+            backgroundColor: 'var(--color-surface-2)',
+            borderColor: 'var(--color-border)',
+          }}
+        >
+          <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
+            {prompt.passageTitle} · đoạn {prompt.paragraphLabel}
+          </div>
+          <p className="reading-prose text-base leading-relaxed" style={{ color: 'var(--color-text)' }}>
+            <QuoteHighlight text={prompt.paragraphText} quote={quote} />
+          </p>
+        </div>
+
+        {prompt.face === 'tfng_retry' ? (
+          <div className="space-y-1">
+            <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
+              Phát biểu cần kiểm tra
+            </div>
+            <p className="text-lg font-bold leading-snug" style={{ color: 'var(--color-reading)' }}>
+              “{prompt.statement}”
+            </p>
+          </div>
+        ) : (
+          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+            Chọn tiêu đề khớp ý chính của đoạn {prompt.paragraphLabel} (phím 1–4):
+          </p>
+        )}
+
+        {renderChoices(prompt.choices, prompt.correctIndex)}
+      </div>
+    );
+  }
+
+  // 9. Face: ltrap_replay (nghe lại đúng đoạn bẫy rồi gõ đáp án)
+  if (prompt.face === 'ltrap_replay') {
+    return (
+      <div className="space-y-4">
+        <div
+          className="p-5 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-4"
+          style={{
+            backgroundColor: 'var(--color-surface-2)',
+            borderColor: 'var(--color-border)',
+          }}
+        >
+          <div className="space-y-1 text-center sm:text-left">
+            <div className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+              Nghe lại đoạn bẫy và trả lời: “{prompt.questionPrompt}”
+            </div>
+            {audioFallbackNotice && (
+              <div className="text-xs" style={{ color: 'var(--color-partial)' }}>
+                {audioFallbackNotice}
+              </div>
+            )}
+          </div>
+          <AudioButton
+            playing={audioPlaying}
+            onToggle={() =>
+              onPlayAudio(prompt.audioUrl, false, {
+                clip: { start: prompt.clipStart, end: prompt.clipEnd },
+              })
+            }
+            label="Nghe đoạn bẫy"
+          />
+        </div>
+
+        {audioMissing && prompt.transcriptLine && (
+          <blockquote
+            className="pl-3.5 py-1.5 border-l-2 reading-prose text-base italic"
+            style={{ borderColor: 'var(--color-listening)', color: 'var(--color-text)' }}
+          >
+            “{prompt.transcriptLine}”
+          </blockquote>
+        )}
+
+        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <span style={{ fontFamily: 'var(--font-mono)' }}>Khung: {prompt.placeholderMask}</span>
+          <span>{prompt.letterCount} chữ cái</span>
+        </div>
+        {renderTypedInput(prompt.placeholderMask, 'Gõ đáp án nghe được')}
+      </div>
+    );
+  }
+
+  // 10. Face: dict_full (nghe và chép cả câu)
+  if (prompt.face === 'dict_full') {
+    const remainingPlays = Math.max(0, prompt.maxPlays - activeNode.audioPlaysUsed);
+    return (
+      <div className="space-y-4">
+        <div
+          className="p-5 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-4"
+          style={{
+            backgroundColor: 'var(--color-surface-2)',
+            borderColor: 'var(--color-border)',
+          }}
+        >
+          <div className="space-y-1 text-center sm:text-left">
+            <div className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+              Nghe và chép lại cả câu
+            </div>
+            <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+              Còn {remainingPlays}/{prompt.maxPlays} lượt nghe
+            </div>
+            {audioFallbackNotice && (
+              <div className="text-xs" style={{ color: 'var(--color-partial)' }}>
+                {audioFallbackNotice}
+              </div>
+            )}
+          </div>
+          <AudioButton
+            playing={audioPlaying}
+            disabled={remainingPlays <= 0 && !hasFeedback}
+            onToggle={() => onPlayAudio(prompt.audioUrl, true)}
+            label={remainingPlays > 0 ? `Phát câu (${remainingPlays}/${prompt.maxPlays})` : 'Đã hết lượt nghe'}
+          />
+        </div>
+        {renderTypedInput('Gõ lại câu bạn nghe được', 'Chép lại cả câu vừa nghe')}
+      </div>
+    );
+  }
+
+  // 11. Face: err_user (lỗi của chính người học / cụm kiểu Việt / bẫy tự ghi)
+  if (prompt.face === 'err_user') {
+    return (
+      <div className="space-y-4">
+        <div
+          className="p-4 rounded-[var(--radius-md)] border space-y-2"
+          style={{
+            backgroundColor: 'var(--color-surface-2)',
+            borderColor: 'var(--color-border)',
+          }}
+        >
+          <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+            <span style={{ color: 'var(--color-text-dim)' }}>{prompt.labelVi}</span>
+            {prompt.audioClip && (
+              <AudioButton
+                size="sm"
+                playing={audioPlaying}
+                onToggle={() =>
+                  onPlayAudio(prompt.audioClip?.src, false, {
+                    clip: { start: prompt.audioClip?.start ?? 0, end: prompt.audioClip?.end ?? 0 },
+                  })
+                }
+                label="Nghe đoạn liên quan"
+              />
+            )}
+          </div>
+          <p className="reading-prose text-lg leading-relaxed font-medium" style={{ color: 'var(--color-wrong)' }}>
+            {prompt.front}
+          </p>
+        </div>
+        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <span style={{ fontFamily: 'var(--font-mono)' }}>Khung sửa đúng: {prompt.placeholderMask}</span>
+          <span>{prompt.letterCount} chữ cái</span>
+        </div>
+        {renderTypedInput(prompt.placeholderMask, 'Gõ bản sửa đúng')}
+      </div>
+    );
+  }
+
+  // 12. Face: err_fix
+  if (prompt.face !== 'err_fix') return null;
   return (
     <div className="space-y-4">
       <div
@@ -1732,5 +2229,41 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     </div>
   );
 }
+
+const GameLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
+  <a
+    href={href}
+    className="inline-flex items-center justify-center min-h-[44px] px-4 py-2.5 rounded-[var(--radius-md)] border text-sm font-medium"
+    style={{
+      backgroundColor: 'var(--color-surface-2)',
+      color: 'var(--color-text)',
+      borderColor: 'var(--color-border)',
+    }}
+  >
+    {children}
+  </a>
+);
+
+/** Tô bằng chứng trong đoạn văn (chỉ truyền `quote` sau khi đã trả lời để không lộ đáp án). */
+const QuoteHighlight: React.FC<{ text: string; quote?: string }> = ({ text, quote }) => {
+  if (!quote) return <>{text}</>;
+  const at = text.indexOf(quote);
+  if (at < 0) return <>{text}</>;
+  return (
+    <>
+      {text.slice(0, at)}
+      <mark
+        className="rounded px-0.5"
+        style={{
+          backgroundColor: 'color-mix(in srgb, var(--color-correct) 22%, transparent)',
+          color: 'var(--color-text)',
+        }}
+      >
+        {quote}
+      </mark>
+      {text.slice(at + quote.length)}
+    </>
+  );
+};
 
 export default V1DailyRun;
