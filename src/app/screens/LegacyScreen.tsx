@@ -1,13 +1,44 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { ArrowLeft } from 'lucide-react';
 import { Button, Skeleton } from '../../design/components';
-import '../../legacy/index.css';
 
-const LegacyApp = React.lazy(() => import('../../legacy/App'));
+type SheetNode = HTMLLinkElement | HTMLStyleElement;
+
+// Vite không gỡ CSS của chunk lazy khi rời route. CSS legacy có `body{image-rendering:pixelated}` và
+// Tailwind lần 2, nên phải tắt khi rời #/legacy để không rò sang V3 (X4).
+// Nhận diện: build = <link> của chunk `legacyEntry-*.css`; dev = <style data-vite-dev-id=".../src/legacy/...">.
+const isLegacySheet = (node: SheetNode): boolean =>
+  node instanceof HTMLLinkElement
+    ? node.href.includes('legacyEntry')
+    : (node.dataset.viteDevId ?? '').split('\\').join('/').includes('/src/legacy/');
+
+const readLegacySheets = (): SheetNode[] =>
+  Array.from(document.querySelectorAll<SheetNode>('link[rel="stylesheet"], style')).filter(isLegacySheet);
+
+const setSheetsDisabled = (nodes: SheetNode[], disabled: boolean): void => {
+  for (const node of nodes) {
+    if (node instanceof HTMLLinkElement) node.disabled = disabled;
+    else if (node.sheet) node.sheet.disabled = disabled;
+  }
+};
+
+const loadLegacy = () => import('./legacyEntry');
+const LegacyApp = React.lazy(loadLegacy);
+let mounted = 0;
 
 export const LegacyScreen: React.FC = () => {
   const [, navigate] = useLocation();
+
+  useEffect(() => {
+    mounted += 1;
+    setSheetsDisabled(readLegacySheets(), false);
+    void loadLegacy().then(() => setSheetsDisabled(readLegacySheets(), mounted === 0));
+    return () => {
+      mounted -= 1;
+      if (mounted === 0) setSheetsDisabled(readLegacySheets(), true);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
