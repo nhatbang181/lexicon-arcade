@@ -1,6 +1,7 @@
 # AGENTS.md: luật project cho mọi agent và worker
 
 > Project: **Lexicon Arcade V3 "Lộ trình 8.0"**, app học IELTS Academic dạng game, đưa Bang từ khoảng 6.0 lên 8.0.
+> **Đợt nâng cấp đang chạy (từ 23/11/2026): đọc `docs/audit-max/BAN-GIAO-AGENT.md` trước tiên** – luật, bước, ngưỡng chất lượng của đợt audit-max.
 > Đọc theo thứ tự: file này → `docs/00-SPEC.md` → các file docs ghi trong brief → `DECISIONS.md` → `PROGRESS.md`.
 
 ## 1. Nguồn sự thật

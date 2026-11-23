@@ -1,0 +1,8 @@
+Thư mục làm việc: D:\English (nhánh audit-max/<TASK>). Bạn là Builder của task <TASK>, vòng sửa số <N>.
+Đọc docs\audit-max\REVIEW-<TASK>-A.md và REVIEW-<TASK>-B.md. Gộp danh sách lỗi (trùng thì gộp, lấy mức nặng hơn).
+Sửa ĐÚNG các lỗi đó theo thứ tự CHẶN → NẶNG → NHẸ. Không thêm tính năng, không đổi phần đã được khen.
+Không đồng ý lỗi nào → ghi docs\audit-max\HANDOFF.md mục "Tranh chấp" (mã lỗi, review nào, lý do, ảnh), vẫn sửa các lỗi còn lại.
+Luật vẫn như Prompt 2 trong PROMPT-BAN-GIAO.md và LUAT.md. Không sửa docs\audit-max\cong-cu\**, LUAT.md, KIEM-THU.md hay ngưỡng.
+Xong: chạy lại KIEM-THU.md §2 các dòng liên quan + audit-ui.mjs cho route của task, cập nhật ảnh docs\audit-max\anh-sau\<TASK>\,
+thêm mục "Vòng <N>" vào BAO-CAO-<TASK>.md: bảng "mã lỗi → đã sửa thế nào → file → số đo sau". Không tự chấm điểm.
+Commit tiếng Việt "fix(<task>): vòng <N> – …".
