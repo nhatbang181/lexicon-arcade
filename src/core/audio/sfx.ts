@@ -91,13 +91,12 @@ class SfxEngine {
   private muted = false;
   private examMode = false;
   private blocked = false;
-  private manifestLoaded = false;
+  private manifestPromise: Promise<SfxSpriteMap> | null = null;
 
-  public init(): void {
-    if (this.howl) return;
+  private buildHowl(): Howl | null {
     const base = getBaseUrl();
     try {
-      this.howl = new Howl({
+      return new Howl({
         src: [`${base}assets/sfx/sfx.webm`, `${base}assets/sfx/sfx.mp3`],
         sprite: this.spriteMap,
         volume: this.muted ? 0 : this.volumePercent / 100,
@@ -105,14 +104,24 @@ class SfxEngine {
         html5: false,
       });
     } catch {
-      this.howl = null;
+      return null;
     }
+  }
+
+  public init(): void {
+    if (this.howl) return;
+    // The first cue must be playable at once, so build with the built-in offsets,
+    // then rebuild if `sfx.json` turns out to differ (X-04).
+    this.howl = this.buildHowl();
     void this.syncManifest();
   }
 
-  public async syncManifest(): Promise<SfxSpriteMap> {
-    if (this.manifestLoaded) return this.spriteMap;
-    this.manifestLoaded = true;
+  public syncManifest(): Promise<SfxSpriteMap> {
+    if (!this.manifestPromise) this.manifestPromise = this.loadManifest();
+    return this.manifestPromise;
+  }
+
+  private async loadManifest(): Promise<SfxSpriteMap> {
     const base = getBaseUrl();
     try {
       if (typeof fetch !== 'function') return this.spriteMap;
@@ -120,7 +129,19 @@ class SfxEngine {
       if (!resp.ok) return this.spriteMap;
       const data = (await resp.json()) as { sprite?: SfxSpriteMap };
       if (data && data.sprite && typeof data.sprite === 'object') {
-        this.spriteMap = { ...DEFAULT_SFX_SPRITE, ...data.sprite };
+        const merged: SfxSpriteMap = { ...DEFAULT_SFX_SPRITE, ...data.sprite };
+        const changed = JSON.stringify(merged) !== JSON.stringify(this.spriteMap);
+        this.spriteMap = merged;
+        // A Howl keeps the sprite map it was constructed with: rebuild it so new offsets take effect.
+        if (changed && this.howl) {
+          const stale = this.howl;
+          this.howl = this.buildHowl();
+          try {
+            stale.unload();
+          } catch {
+            // Ignore: the stale instance is being discarded anyway
+          }
+        }
       }
     } catch {
       // Fallback to built-in DEFAULT_SFX_SPRITE if offline or in unit test

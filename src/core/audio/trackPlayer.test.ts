@@ -16,12 +16,16 @@ class MockAudioElement implements AudioElementLike {
   public preload = 'none';
   public paused = true;
   public playShouldReject = false;
+  public rejectWith: { name: string } | null = null;
+  public readyState = 0;
+  public error: unknown = null;
 
   private listeners = new Map<string, Set<() => void>>();
 
   public play(): Promise<void> {
     if (this.playShouldReject) {
-      return Promise.reject(new Error('NotSupportedError'));
+      const err = this.rejectWith ? Object.assign(new Error(this.rejectWith.name), this.rejectWith) : new Error('NotSupportedError');
+      return Promise.reject(err);
     }
     this.paused = false;
     return Promise.resolve();
@@ -65,6 +69,7 @@ describe('TrackPlayerController', () => {
     player = createTrackPlayer({
       audioFactory: () => mockAudio,
       tickIntervalMs: 50,
+      allowSimulation: true,
     });
   });
 
@@ -238,5 +243,101 @@ describe('TrackPlayerController', () => {
     await player.play();
     expect(player.getState().simulatedMode).toBe(true);
     expect(player.getState().status).toBe('playing');
+  });
+
+  describe('T2-B · không giả lập khi thiếu audio, autoplay, preload', () => {
+    it('mặc định KHÔNG chạy mô phỏng im lặng: thiếu file → audio_missing, play() không phát', async () => {
+      const strict = createTrackPlayer({ audioFactory: () => mockAudio, tickIntervalMs: 50 });
+      strict.load('/audio/missing.mp3', { durationHintSec: 60 });
+      mockAudio.emit('error');
+      expect(strict.getState().status).toBe('audio_missing');
+      await strict.play();
+      vi.advanceTimersByTime(2000);
+      expect(strict.getState().status).toBe('audio_missing');
+      expect(strict.getState().currentTime).toBe(0);
+      strict.destroy();
+    });
+
+    it('L1-10: NotAllowedError (autoplay) giữ trạng thái ready + autoplayBlocked, không vào audio_missing', async () => {
+      mockAudio.playShouldReject = true;
+      mockAudio.rejectWith = { name: 'NotAllowedError' };
+      player.load('/audio/p1_001.mp3', { durationHintSec: 30 });
+      mockAudio.emit('loadedmetadata');
+      expect(player.getState().status).toBe('ready');
+
+      await player.play();
+      const st = player.getState();
+      expect(st.status).toBe('ready');
+      expect(st.autoplayBlocked).toBe(true);
+      expect(st.simulatedMode).toBe(false);
+
+      mockAudio.playShouldReject = false;
+      await player.play();
+      expect(player.getState().status).toBe('playing');
+      expect(player.getState().autoplayBlocked).toBe(false);
+    });
+
+    it('L1-10: lỗi khác (không hỗ trợ định dạng) vẫn là audio_missing', async () => {
+      mockAudio.playShouldReject = true;
+      mockAudio.rejectWith = { name: 'NotSupportedError' };
+      const strict = createTrackPlayer({ audioFactory: () => mockAudio, tickIntervalMs: 50 });
+      strict.load('/audio/bad.mp3', { durationHintSec: 30 });
+      mockAudio.emit('loadedmetadata');
+      await strict.play();
+      expect(strict.getState().status).toBe('audio_missing');
+      strict.destroy();
+    });
+
+    it('L1-10: Exam chưa ready (đang loading) thì play() không bắt đầu', async () => {
+      player.load('/audio/p1_001.mp3', { durationHintSec: 30, examLocked: true });
+      expect(player.getState().status).toBe('loading');
+      await player.play();
+      expect(player.getState().status).toBe('loading');
+      expect(mockAudio.paused).toBe(true);
+
+      mockAudio.emit('loadedmetadata');
+      await player.play();
+      expect(player.getState().status).toBe('playing');
+    });
+
+    it('X-05: load() dùng lại phần tử đã preload() cùng URL (không tạo element mới)', () => {
+      const created: MockAudioElement[] = [];
+      const p = createTrackPlayer({
+        audioFactory: () => {
+          const el = new MockAudioElement();
+          created.push(el);
+          return el;
+        },
+      });
+      p.preload('/audio/dictation/dict_0002.mp3');
+      expect(created).toHaveLength(1);
+      created[0].readyState = 4;
+      created[0].duration = 4.2;
+
+      p.load('/audio/dictation/dict_0002.mp3');
+      expect(created).toHaveLength(1);
+      expect(p.getState().status).toBe('ready');
+      expect(p.getState().duration).toBe(4.2);
+
+      p.load('/audio/dictation/dict_0003.mp3');
+      expect(created).toHaveLength(2);
+      p.destroy();
+    });
+
+    it('X-05: element đã preload lỗi (404) → audio_missing ngay khi load()', () => {
+      const created: MockAudioElement[] = [];
+      const p = createTrackPlayer({
+        audioFactory: () => {
+          const el = new MockAudioElement();
+          created.push(el);
+          return el;
+        },
+      });
+      p.preload('/audio/dictation/none.mp3');
+      created[0].error = { code: 4 };
+      p.load('/audio/dictation/none.mp3');
+      expect(p.getState().status).toBe('audio_missing');
+      p.destroy();
+    });
   });
 });

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import {
+  createIdleTrackState,
   createTrackPlayer,
   type TrackPlayerController,
   type TrackPlayerState,
@@ -328,20 +329,7 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
 
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const playerRef = useRef<TrackPlayerController | null>(null);
-  const [trackState, setTrackState] = useState<TrackPlayerState>(() => ({
-    url: null,
-    status: 'idle',
-    currentTime: 0,
-    duration: 0,
-    rate: 1,
-    volume: 1,
-    muted: false,
-    examLocked: false,
-    examStarted: false,
-    activeSegment: null,
-    simulatedMode: false,
-    errorMessage: null,
-  }));
+  const [trackState, setTrackState] = useState<TrackPlayerState>(createIdleTrackState);
 
   // Initialize TrackPlayerController (0 speechSynthesis)
   useEffect(() => {

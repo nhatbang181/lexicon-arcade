@@ -14,6 +14,7 @@ import {
   XCircle,
 } from 'lucide-react';
 import {
+  createIdleTrackState,
   createTrackPlayer,
   formatTrackTime,
   type PlaybackRate,
@@ -152,20 +153,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
 
   // TrackPlayer controller
   const playerRef = useRef<TrackPlayerController | null>(null);
-  const [trackState, setTrackState] = useState<TrackPlayerState>(() => ({
-    url: null,
-    status: 'idle',
-    currentTime: 0,
-    duration: 0,
-    rate: 1,
-    volume: 1,
-    muted: false,
-    examLocked: false,
-    examStarted: false,
-    activeSegment: null,
-    simulatedMode: false,
-    errorMessage: null,
-  }));
+  const [trackState, setTrackState] = useState<TrackPlayerState>(createIdleTrackState);
 
   useEffect(() => {
     const controller = createTrackPlayer({ initialRate: 1, initialVolume: 1 });
