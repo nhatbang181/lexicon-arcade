@@ -2,11 +2,10 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import {
   ArrowLeft,
   CheckCircle2,
-  Eye,
-  EyeOff,
   Headphones,
   Map as MapIcon,
   Play,
+  RefreshCw,
   ShieldAlert,
   Sparkles,
   Volume2,
@@ -22,12 +21,15 @@ import {
   type TrackPlayerState,
 } from '../../core/audio/trackPlayer';
 import { playSfx, sfxEngine } from '../../core/audio/sfx';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import type {
   ListeningEpisode,
   ListeningQuestionGroup,
   ListeningTrap,
 } from '../../core/content/schemas';
+import { db } from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
 import {
   AnswerInput,
   Button,
@@ -51,9 +53,12 @@ import {
   ALL_LISTENING_TRAPS,
   LISTENING_TRAP_LABELS_VI,
   PREDICTION_OPTIONS,
+  buildL1ProgressPayload,
   buildL1SessionSavePayload,
+  buildL1UserItems,
   buildL1WinStatement,
   canSubmitNow,
+  createL1RetrySession,
   createL1Session,
   extractQuestionOptions,
   finishAudioListening,
@@ -76,10 +81,13 @@ import {
   type L1SessionState,
 } from './engine';
 import {
+  hasRealScriptTimings,
   loadListeningCatalog,
   loadListeningEpisode,
   type EpisodeCatalogItem,
 } from './listeningLoader';
+
+const KV_EXAM_DONE_KEY = 'l1.examDoneEpisodeIds';
 
 const PART_LABELS: Record<1 | 2 | 3 | 4, string> = {
   1: 'Part 1 · Hội thoại đời sống',
@@ -130,7 +138,11 @@ function getTrapChoiceChips(graded: GradedListeningQuestion): ListeningTrap[] {
 export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: initialLevel, onExit }) => {
   const [catalog, setCatalog] = useState<EpisodeCatalogItem[]>([]);
   const [loadingCatalog, setLoadingCatalog] = useState(true);
+  const [catalogError, setCatalogError] = useState<string | null>(null);
   const [loadingEpisode, setLoadingEpisode] = useState(false);
+  const [episodeError, setEpisodeError] = useState<string | null>(null);
+  const [lastTriedItem, setLastTriedItem] = useState<EpisodeCatalogItem | null>(null);
+  const [examDoneIds, setExamDoneIds] = useState<string[]>([]);
 
   const [partFilter, setPartFilter] = useState<'all' | 1 | 2 | 3 | 4>('all');
   const [selectedMode, setSelectedMode] = useState<L1Mode>(
@@ -140,20 +152,36 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
     Math.max(1, Math.min(10, Math.round(initialLevel || 3))),
   );
 
+  // Đồng bộ khi props mode / level thay đổi từ PlayScreen (B4)
+  useEffect(() => {
+    setSelectedMode(initialMode === 'exam' ? 'exam' : 'training');
+  }, [initialMode]);
+  useEffect(() => {
+    if (typeof initialLevel === 'number' && Number.isFinite(initialLevel) && initialLevel >= 1) {
+      setSelectedLevel(Math.max(1, Math.min(10, Math.round(initialLevel))));
+    }
+  }, [initialLevel]);
+
   const [session, setSession] = useState<L1SessionState | null>(null);
+  const sessionRef = useRef<L1SessionState | null>(null);
+  sessionRef.current = session;
+
   const [previewRemaining, setPreviewRemaining] = useState(30);
   const [reviewRemaining, setReviewRemaining] = useState(30);
   const [showConfirmEarlyModal, setShowConfirmEarlyModal] = useState(false);
+  const [showConfirmExitExamModal, setShowConfirmExitExamModal] = useState(false);
   const [tabHiddenWarning, setTabHiddenWarning] = useState(false);
-  const [showSimTranscript, setShowSimTranscript] = useState(false);
   const [debriefFilter, setDebriefFilter] = useState<'all' | 'wrong'>('wrong');
   const [activeDebriefQid, setActiveDebriefQid] = useState<string | null>(null);
   const [savingSession, setSavingSession] = useState(false);
   const savedOnceRef = useRef(false);
+  const attemptIdRef = useRef<number | null>(null);
 
   // TrackPlayer controller
   const playerRef = useRef<TrackPlayerController | null>(null);
   const [trackState, setTrackState] = useState<TrackPlayerState>(createIdleTrackState);
+  const trackStateRef = useRef<TrackPlayerState>(trackState);
+  trackStateRef.current = trackState;
 
   useEffect(() => {
     const controller = createTrackPlayer({ initialRate: 1, initialVolume: 1 });
@@ -174,23 +202,33 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
     };
   }, []);
 
-  // Load episode catalog on mount
-  useEffect(() => {
-    let alive = true;
+  // Load episode catalog (chỉ bài có file MP3 thật — L1-01) và danh sách đã làm Exam (L1-09)
+  const reloadCatalog = useCallback(() => {
+    setLoadingCatalog(true);
+    setCatalogError(null);
     loadListeningCatalog()
       .then((items) => {
-        if (alive) {
-          setCatalog(items);
-          setLoadingCatalog(false);
-        }
+        setCatalog(items);
+        setLoadingCatalog(false);
       })
       .catch(() => {
-        if (alive) setLoadingCatalog(false);
+        setCatalog([]);
+        setCatalogError('Không tải được danh sách bài nghe. Kiểm tra kết nối và thử lại.');
+        setLoadingCatalog(false);
       });
-    return () => {
-      alive = false;
-    };
   }, []);
+
+  useEffect(() => {
+    reloadCatalog();
+    db.kv
+      .get(KV_EXAM_DONE_KEY)
+      .then((row) => {
+        if (row && Array.isArray(row.value)) {
+          setExamDoneIds(row.value.filter((x): x is string => typeof x === 'string'));
+        }
+      })
+      .catch(() => undefined);
+  }, [reloadCatalog]);
 
   // Block SFX while audio is playing & set exam mode SFX rules
   useEffect(() => {
@@ -214,17 +252,60 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, [session]);
 
+  // Lưu tiến độ từng lượt (TU-02) và đăng ký progressSaver cho nút Thoát của PlayScreen (F1)
+  const flushProgress = useCallback(async () => {
+    const cur = sessionRef.current;
+    if (!cur || cur.phase === 'recap' || cur.phase === 'preview') return;
+    const answeredCount = Object.values(cur.answers).filter((v) => v.trim().length > 0).length;
+    if (answeredCount === 0 && cur.results.length === 0) return;
+    try {
+      const payload = buildL1ProgressPayload(cur);
+      const res = await attemptRepo.saveProgress({
+        attemptId: attemptIdRef.current ?? undefined,
+        ...payload,
+      });
+      attemptIdRef.current = res.attemptId;
+    } catch {
+      // Best-effort persistence
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!session || session.phase === 'recap') return;
+    return registerProgressSaver(() => flushProgress());
+  }, [session?.episode.id, session?.phase, flushProgress]);
+
+  useEffect(() => {
+    if (!session || session.phase === 'preview' || session.phase === 'recap') return;
+    const timer = window.setTimeout(() => {
+      void flushProgress();
+    }, 600);
+    return () => window.clearTimeout(timer);
+  }, [session?.answers, session?.results, session?.selfTrapLabels, session?.phase, flushProgress]);
+
   const startEpisode = useCallback(
     async (item: EpisodeCatalogItem) => {
+      // Mở khoá audio theo thao tác chạm (TU-03 Safari iOS)
+      playerRef.current?.unlock();
+      sfxEngine.unlock();
+
       setLoadingEpisode(true);
+      setEpisodeError(null);
+      setLastTriedItem(item);
       savedOnceRef.current = false;
+      attemptIdRef.current = null;
       setTabHiddenWarning(false);
-      setShowSimTranscript(false);
       try {
         const ep: ListeningEpisode = await loadListeningEpisode(item);
+        if (!hasRealScriptTimings(ep)) {
+          setEpisodeError('Bài nghe này chưa có mốc thời gian âm thanh thật nên tạm khóa.');
+          return;
+        }
+        const alreadyDoneExam = selectedMode === 'exam' && examDoneIds.includes(ep.id);
         const nextSession = createL1Session(ep, {
           mode: selectedMode,
           level: selectedLevel,
+          alreadyDoneExam,
         });
         setSession(nextSession);
         setPreviewRemaining(nextSession.config.previewSec);
@@ -240,18 +321,28 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
             player.setRate(nextSession.config.defaultRate);
           }
         }
+      } catch {
+        setEpisodeError(`Không tải được bài "${item.title}". Hãy thử lại.`);
       } finally {
         setLoadingEpisode(false);
       }
     },
-    [selectedLevel, selectedMode],
+    [selectedLevel, selectedMode, examDoneIds],
   );
 
   const handleBeginListening = useCallback(() => {
-    setSession((prev) => {
-      if (!prev || prev.phase !== 'preview') return prev;
-      return startListeningPhase(prev).state;
-    });
+    const cur = sessionRef.current;
+    const ts = trackStateRef.current;
+    if (!cur || cur.phase !== 'preview') return;
+    // L1-01 / L1-10: không bắt đầu khi thiếu MP3 hoặc Exam chưa tải xong audio (ready)
+    if (ts.status === 'audio_missing' || ts.simulatedMode) return;
+    if (cur.mode === 'exam' && ts.status !== 'ready') return;
+
+    playerRef.current?.unlock();
+    sfxEngine.unlock();
+
+    const next = startListeningPhase(cur).state;
+    setSession(next);
     void playerRef.current?.play();
   }, []);
 
@@ -262,7 +353,16 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
       setPreviewRemaining((prev) => {
         if (prev <= 1) {
           window.clearInterval(id);
-          handleBeginListening();
+          const ts = trackStateRef.current;
+          const cur = sessionRef.current;
+          // L1-10: chỉ tự chạy khi audio đã sẵn sàng; nếu Exam còn đang loading hoặc thiếu file thì giữ ở preview
+          if (
+            cur &&
+            ts.status === 'ready' &&
+            !ts.simulatedMode
+          ) {
+            handleBeginListening();
+          }
           return 0;
         }
         return prev - 1;
@@ -284,17 +384,18 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
     playerRef.current?.pause();
     playerRef.current?.setExamLocked(false);
     setShowConfirmEarlyModal(false);
-    setSession((prev) => {
-      if (!prev) return prev;
-      const { state: graded } = submitAndGrade(prev);
-      const firstWrong = graded.results.find((r) => !r.correct);
-      setDebriefFilter(firstWrong ? 'wrong' : 'all');
-      setActiveDebriefQid(firstWrong?.qid ?? graded.results[0]?.qid ?? null);
-      if (graded.mode === 'training') {
-        playSfx(graded.correctCount >= Math.ceil(graded.totalQuestions * 0.7) ? 'correct' : 'flip');
-      }
-      return graded;
-    });
+
+    // L1-17: tính trạng thái chấm điểm ngoài updater của setSession để không chạy lặp side-effect
+    const cur = sessionRef.current;
+    if (!cur) return;
+    const { state: graded } = submitAndGrade(cur);
+    const firstWrong = graded.results.find((r) => !r.correct);
+    setSession(graded);
+    setDebriefFilter(firstWrong ? 'wrong' : 'all');
+    setActiveDebriefQid(firstWrong?.qid ?? graded.results[0]?.qid ?? null);
+    if (graded.mode === 'training') {
+      playSfx(graded.correctCount >= Math.ceil(graded.totalQuestions * 0.7) ? 'correct' : 'flip');
+    }
   }, []);
 
   // Exam Review 30s countdown -> auto-grade when 0
@@ -338,15 +439,40 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
       savedOnceRef.current = true;
       setSavingSession(true);
       try {
-        const payload = buildL1SessionSavePayload(recapState, endedAt);
-        await attemptRepo.saveSession(payload);
+        const saveOpts = {
+          simulatedMode: trackStateRef.current.simulatedMode,
+          audioMissing: trackStateRef.current.status === 'audio_missing',
+        };
+        const payload = buildL1SessionSavePayload(recapState, endedAt, saveOpts);
+        if (attemptIdRef.current !== null) {
+          await attemptRepo.finalize(attemptIdRef.current, payload);
+        } else {
+          const saved = await attemptRepo.saveSession(payload);
+          attemptIdRef.current = saved.attemptId;
+        }
+
+        // B6 / PP-11: Producer ghi userItems + thẻ SRS cho các bẫy L1 kèm audioClip chính xác
+        const userItemDrafts = buildL1UserItems(recapState, saveOpts);
+        for (const draft of userItemDrafts) {
+          await userItemRepo.upsertWithCard(draft.item, draft.cardFace, {
+            now: new Date(endedAt),
+            cardSource: 'listening_trap',
+          });
+        }
+
+        // L1-09: đánh dấu episode đã hoàn thành Exam để lần 2 không tính band nữa
+        if (payload.bandEvidence && payload.bandEvidence.length > 0) {
+          const nextDone = Array.from(new Set([...examDoneIds, recapState.episode.id]));
+          await db.kv.put({ key: KV_EXAM_DONE_KEY, value: nextDone });
+          setExamDoneIds(nextDone);
+        }
       } catch {
         // Persist best-effort even if IndexedDB is unavailable in restricted browser mode
       } finally {
         setSavingSession(false);
       }
     }
-  }, [session]);
+  }, [session, examDoneIds]);
 
   const handleReplaySegment = useCallback(
     (startSec: number, endSec: number, label: string) => {
@@ -466,7 +592,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
               type="button"
               onClick={() => setSelectedMode('training')}
               data-testid="l1-mode-training"
-              className="min-h-[38px] px-3.5 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
+              className="min-h-[44px] px-3.5 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
               style={{
                 backgroundColor:
                   selectedMode === 'training' ? 'var(--color-listening)' : 'transparent',
@@ -479,7 +605,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
               type="button"
               onClick={() => setSelectedMode('exam')}
               data-testid="l1-mode-exam"
-              className="min-h-[38px] px-3.5 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
+              className="min-h-[44px] px-3.5 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
               style={{
                 backgroundColor:
                   selectedMode === 'exam' ? 'var(--color-text)' : 'transparent',
@@ -494,20 +620,27 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
         {/* Mode explanation & Training level slider */}
         <Card padding="md" className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1">
-            <div className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
-              {selectedMode === 'exam'
-                ? 'Exam Mode: Nghe 1 lần duy nhất · Khóa tua/dừng · Có 30s soát bài · Tính Band Listening'
-                : `Training Mode (Cấp ${selectedLevel}/10): ${
-                    selectedLevel <= 2
-                      ? 'Tốc độ 0.9× mặc định, có tín hiệu câu hỏi & đoán trước loại đáp án'
-                      : selectedLevel <= 4
-                        ? 'Tốc độ 1.0×, còn tín hiệu câu hỏi & đoán trước loại đáp án'
-                        : selectedLevel <= 6
-                          ? 'Tốc độ 1.0×, tắt tín hiệu, vẫn được dừng/tua 5s'
-                          : selectedLevel <= 8
-                            ? 'Không dừng, luyện bám mạch liên tục'
-                            : 'Giống Exam (khóa tua/dừng) nhưng không ảnh hưởng Band'
-                  }`}
+            <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
+              <span
+                className="w-2.5 h-2.5 rounded-full shrink-0 motion-safe:animate-pulse"
+                style={{ backgroundColor: 'var(--color-listening)' }}
+                aria-hidden="true"
+              />
+              <span>
+                {selectedMode === 'exam'
+                  ? 'Exam Mode: Nghe 1 lần duy nhất · Khóa tua/dừng · Có 30s soát bài · Tính Band Listening'
+                  : `Training Mode (Cấp ${selectedLevel}/10): ${
+                      selectedLevel <= 2
+                        ? 'Tốc độ 0.9× mặc định, có tín hiệu câu hỏi & đoán trước loại đáp án'
+                        : selectedLevel <= 4
+                          ? 'Tốc độ 1.0×, còn tín hiệu câu hỏi & đoán trước loại đáp án'
+                          : selectedLevel <= 6
+                            ? 'Tốc độ 1.0×, tắt tín hiệu, vẫn được dừng/tua 5s'
+                            : selectedLevel <= 8
+                              ? 'Không dừng, luyện bám mạch liên tục'
+                              : 'Giống Exam (khóa tua/dừng) nhưng không ảnh hưởng Band'
+                    }`}
+              </span>
             </div>
             <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
               Sau khi nộp bài, Debrief mở dạng sóng xanh/đỏ, highlight transcript và +5 XP khi bạn tự gắn đúng nhãn bẫy.
@@ -530,7 +663,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                 max={10}
                 value={selectedLevel}
                 onChange={(e) => setSelectedLevel(Number(e.target.value))}
-                className="w-24 accent-[var(--color-listening)] cursor-pointer"
+                className="w-28 min-h-[44px] appearance-none bg-transparent cursor-pointer [&::-webkit-slider-runnable-track]:h-2 [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-[var(--color-surface-2)] [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:-mt-1 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[var(--color-listening)]"
               />
               <span
                 className="text-xs font-bold tabular-nums w-6 text-right"
@@ -542,6 +675,33 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
           )}
         </Card>
 
+        {episodeError && (
+          <Card
+            padding="md"
+            className="flex flex-wrap items-center justify-between gap-3 border"
+            style={{
+              borderColor: 'var(--color-wrong)',
+              backgroundColor: 'color-mix(in srgb, var(--color-wrong) 10%, var(--color-surface))',
+            }}
+            data-testid="l1-episode-error"
+          >
+            <div className="flex items-center gap-2 text-sm" style={{ color: 'var(--color-text)' }}>
+              <AlertTriangle className="w-4 h-4 shrink-0" style={{ color: 'var(--color-wrong)' }} />
+              <span>{episodeError}</span>
+            </div>
+            {lastTriedItem && (
+              <Button
+                variant="secondary"
+                size="sm"
+                leftIcon={<RefreshCw className="w-3.5 h-3.5" />}
+                onClick={() => void startEpisode(lastTriedItem)}
+              >
+                Thử lại
+              </Button>
+            )}
+          </Card>
+        )}
+
         {/* Part Filter pills */}
         <div className="flex flex-wrap items-center gap-2">
           {(['all', 1, 2, 3, 4] as const).map((p) => {
@@ -551,7 +711,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                 key={String(p)}
                 type="button"
                 onClick={() => setPartFilter(p)}
-                className="min-h-[38px] px-3.5 rounded-full border text-xs font-semibold cursor-pointer transition-colors"
+                className="min-h-[44px] min-w-[44px] px-3.5 rounded-full border text-xs font-semibold cursor-pointer transition-colors"
                 style={{
                   backgroundColor: active
                     ? 'color-mix(in srgb, var(--color-listening) 16%, var(--color-surface))'
@@ -575,9 +735,29 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
               </Card>
             ))}
           </div>
+        ) : catalogError ? (
+          <Card padding="md" className="text-center space-y-3" data-testid="l1-catalog-error">
+            <p className="text-sm font-semibold" style={{ color: 'var(--color-wrong)' }}>
+              {catalogError}
+            </p>
+            <Button variant="secondary" size="sm" onClick={reloadCatalog}>
+              Tải lại danh sách
+            </Button>
+          </Card>
+        ) : filteredCatalog.length === 0 ? (
+          <Card padding="md" className="text-center space-y-2" data-testid="l1-catalog-empty">
+            <p className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
+              Chưa có bài nghe nào có sẵn file MP3 trong bộ lọc này.
+            </p>
+            <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+              Các bài chưa có audio thật đã được ẩn để đảm bảo luyện nghe đúng chuẩn.
+            </p>
+          </Card>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {filteredCatalog.map((item) => (
+            {filteredCatalog.map((item) => {
+              const doneExam = examDoneIds.includes(item.id);
+              return (
               <Card
                 key={item.id}
                 padding="md"
@@ -588,7 +768,12 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                 <div className="space-y-2">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <Pill tone="listening">{PART_LABELS[item.part]}</Pill>
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {selectedMode === 'exam' && doneExam && (
+                        <Pill tone="partial" data-testid={`l1-exam-done-${item.id}`}>
+                          Đã làm Exam
+                        </Pill>
+                      )}
                       {item.hasMap && (
                         <Pill tone="info" icon={<MapIcon className="w-3 h-3" />}>
                           Bản đồ SVG
@@ -631,7 +816,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                   </Button>
                 </div>
               </Card>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
@@ -669,20 +855,23 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
           accuracyPercent={accuracyPercent}
           durationSec={durationSec}
           mistakes={mistakes}
-          onRetryMistakes={() => {
-            savedOnceRef.current = false;
-            const restarted = createL1Session(session.episode, {
-              mode: session.mode,
-              level: session.level,
-            });
-            setSession(restarted);
-            setPreviewRemaining(restarted.config.previewSec);
-            setReviewRemaining(restarted.config.reviewSec);
-            playerRef.current?.load(session.episode.audio.path, {
-              durationHintSec: session.episode.audio.durationSec,
-              examLocked: restarted.config.examLocked,
-            });
-          }}
+          onRetryMistakes={
+            mistakes.length > 0
+              ? () => {
+                  savedOnceRef.current = false;
+                  attemptIdRef.current = null;
+                  // L1-08: chỉ ôn câu sai, nghe lại đúng đoạn bẫy/đáp án, 0 XP, 0 band
+                  const restarted = createL1RetrySession(session);
+                  setSession(restarted);
+                  setPreviewRemaining(0);
+                  setReviewRemaining(0);
+                  playerRef.current?.load(session.episode.audio.path, {
+                    durationHintSec: session.episode.audio.durationSec,
+                    examLocked: false,
+                  });
+                }
+              : undefined
+          }
           onGoToday={() =>
             onExit({
               gameId: 'l1',
@@ -794,7 +983,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                             prev ? setAnswer(setCurrentQid(prev, q.qid), q.qid, e.target.value) : prev,
                           );
                         }}
-                        className="min-h-[38px] px-2.5 rounded-[var(--radius-sm)] border text-sm font-bold cursor-pointer"
+                        className="min-w-[56px] min-h-[44px] px-3 rounded-[var(--radius-sm)] border text-sm font-bold cursor-pointer appearance-none text-center"
                         style={{
                           fontFamily: 'var(--font-mono)',
                           backgroundColor: 'var(--color-surface)',
@@ -885,6 +1074,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                               value={session.answers[q.qid] ?? ''}
                               disabled={!isEditable}
                               wordLimit={group.wordLimit?.words}
+                              hideWordCount={isExamSurface}
+                              aria-label={`Câu ${q.number}: ${row.label}`}
                               placeholder={
                                 session.phase === 'preview'
                                   ? 'Đọc trước câu hỏi...'
@@ -904,6 +1095,21 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                               {row.suffix}
                             </span>
                           )}
+                          {session.isRetry && session.retryClipMap[q.qid] && (
+                            <Button
+                              variant="secondary"
+                              size="sm"
+                              leftIcon={<Play className="w-3.5 h-3.5" />}
+                              onClick={() => {
+                                const clip = session.retryClipMap[q.qid];
+                                handleReplaySegment(clip.start, clip.end, `Ôn câu ${q.number}`);
+                              }}
+                              data-testid={`l1-retry-play-clip-${q.number}`}
+                            >
+                              Nghe đoạn ({formatTrackTime(session.retryClipMap[q.qid].start)}–
+                              {formatTrackTime(session.retryClipMap[q.qid].end)})
+                            </Button>
+                          )}
                         </div>
                       ) : (
                         <span className="text-sm" style={{ color: 'var(--color-text)' }}>
@@ -914,7 +1120,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                       {/* Training Preview: Prediction chips */}
                       {q && session.phase === 'preview' && session.config.allowPredictions && (
                         <div className="flex flex-wrap items-center gap-1.5 pt-1">
-                          <span className="text-[11px]" style={{ color: 'var(--color-text-faint)' }}>
+                          <span className="text-xs" style={{ color: 'var(--color-text-faint)' }}>
                             Đoán loại từ:
                           </span>
                           {PREDICTION_OPTIONS.map((opt) => {
@@ -931,7 +1137,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                                   )
                                 }
                                 data-testid={`l1-pred-${q.number}-${opt.id}`}
-                                className="px-2 py-0.5 rounded-full border text-[11px] font-medium cursor-pointer transition-colors"
+                                className="min-h-[44px] min-w-[44px] px-3 py-1 rounded-full border text-xs font-medium cursor-pointer transition-colors"
                                 style={{
                                   backgroundColor: selected
                                     ? 'color-mix(in srgb, var(--color-listening) 18%, var(--color-surface))'
@@ -1100,6 +1306,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                   value={session.answers[q.qid] ?? ''}
                   disabled={!isEditable}
                   wordLimit={group.wordLimit?.words}
+                  hideWordCount={isExamSurface}
+                  aria-label={`Câu ${q.number}: ${q.prompt}`}
                   placeholder={
                     session.phase === 'preview' ? 'Đọc trước câu hỏi...' : `Nhập đáp án câu ${q.number}...`
                   }
@@ -1109,9 +1317,26 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                   }
                   data-testid={`l1-input-${q.number}`}
                 />
+                {session.isRetry && session.retryClipMap[q.qid] && (
+                  <div className="pt-1">
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      leftIcon={<Play className="w-3.5 h-3.5" />}
+                      onClick={() => {
+                        const clip = session.retryClipMap[q.qid];
+                        handleReplaySegment(clip.start, clip.end, `Ôn câu ${q.number}`);
+                      }}
+                      data-testid={`l1-retry-play-clip-${q.number}`}
+                    >
+                      Nghe đoạn câu {q.number} ({formatTrackTime(session.retryClipMap[q.qid].start)}–
+                      {formatTrackTime(session.retryClipMap[q.qid].end)})
+                    </Button>
+                  </div>
+                )}
                 {session.phase === 'preview' && session.config.allowPredictions && (
                   <div className="flex flex-wrap items-center gap-1.5 pt-1">
-                    <span className="text-[11px]" style={{ color: 'var(--color-text-faint)' }}>
+                    <span className="text-xs" style={{ color: 'var(--color-text-faint)' }}>
                       Đoán loại từ:
                     </span>
                     {PREDICTION_OPTIONS.map((opt) => {
@@ -1125,7 +1350,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                               prev ? setPrediction(prev, q.qid, selected ? null : opt.id) : prev,
                             )
                           }
-                          className="px-2 py-0.5 rounded-full border text-[11px] font-medium cursor-pointer"
+                          className="min-h-[44px] min-w-[44px] px-3 py-1 rounded-full border text-xs font-medium cursor-pointer"
                           style={{
                             backgroundColor: selected
                               ? 'color-mix(in srgb, var(--color-listening) 18%, var(--color-surface))'
@@ -1175,14 +1400,23 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
         {/* Debrief Header */}
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <Pill tone="listening">Debrief · Phân tích bẫy</Pill>
-              <Pill tone={session.correctCount >= 8 ? 'correct' : 'partial'}>
+              <Pill
+                tone={
+                  session.totalQuestions > 0 && session.correctCount / session.totalQuestions >= 0.8
+                    ? 'correct'
+                    : 'partial'
+                }
+              >
                 {session.correctCount}/{session.totalQuestions} đúng
               </Pill>
               <Pill tone="info" icon={<Sparkles className="w-3 h-3" />}>
                 +{session.totalXp} XP
               </Pill>
+              {session.isRetry && (
+                <Pill tone="neutral">Ôn câu sai · 0 XP</Pill>
+              )}
             </div>
             <h1 className="text-lg sm:text-xl font-bold mt-1" style={{ color: 'var(--color-text)' }}>
               {session.episode.title}
@@ -1211,7 +1445,11 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
             examMode={false}
             activeSegmentLabel={trackState.activeSegment?.label ?? null}
             simulatedMode={trackState.simulatedMode}
-            onPlay={() => void playerRef.current?.play()}
+            autoplayBlocked={trackState.autoplayBlocked}
+            onPlay={() => {
+              playerRef.current?.unlock();
+              void playerRef.current?.play();
+            }}
             onPause={() => playerRef.current?.pause()}
             onSeek={(sec) => playerRef.current?.seek(sec)}
             onRewind={(s) => playerRef.current?.rewind(s)}
@@ -1244,7 +1482,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                 <button
                   type="button"
                   onClick={() => setDebriefFilter('wrong')}
-                  className="px-3 py-1.5 rounded-full border text-xs font-semibold cursor-pointer"
+                  className="min-h-[44px] px-3.5 py-1.5 rounded-full border text-xs font-semibold cursor-pointer"
                   style={{
                     backgroundColor:
                       debriefFilter === 'wrong'
@@ -1260,7 +1498,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                 <button
                   type="button"
                   onClick={() => setDebriefFilter('all')}
-                  className="px-3 py-1.5 rounded-full border text-xs font-semibold cursor-pointer"
+                  className="min-h-[44px] px-3.5 py-1.5 rounded-full border text-xs font-semibold cursor-pointer"
                   style={{
                     backgroundColor:
                       debriefFilter === 'all'
@@ -1416,17 +1654,16 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                                 type="button"
                                 disabled={Boolean(selfLabel)}
                                 onClick={() => {
-                                  setSession((prev) => {
-                                    if (!prev) return prev;
-                                    const res = submitTrapLabel(prev, r.qid, trap);
-                                    if (res.events[0]?.matched) {
-                                      playSfx('correct');
-                                    }
-                                    return res.state;
-                                  });
+                                  const cur = sessionRef.current;
+                                  if (!cur) return;
+                                  const res = submitTrapLabel(cur, r.qid, trap);
+                                  setSession(res.state);
+                                  if (res.events[0]?.matched) {
+                                    playSfx('correct');
+                                  }
                                 }}
                                 data-testid={`debrief-trap-chip-${r.number}-${trap}`}
-                                className="px-2.5 py-1 rounded-full border text-xs font-medium cursor-pointer disabled:cursor-default transition-colors"
+                                className="min-h-[44px] px-3 py-1.5 rounded-full border text-xs font-medium cursor-pointer disabled:cursor-default transition-colors"
                                 style={{
                                   backgroundColor: bg,
                                   borderColor,
@@ -1468,7 +1705,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
               <h2 className="text-sm font-bold" style={{ color: 'var(--color-text)' }}>
                 Transcript (Highlight Q{focusedResult?.number ?? 1})
               </h2>
-              <div className="flex items-center gap-2 text-[11px]" style={{ color: 'var(--color-text-dim)' }}>
+              <div className="flex items-center gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
                 <span className="inline-flex items-center gap-1">
                   <span className="w-2 h-2 rounded-full" style={{ backgroundColor: 'var(--color-correct)' }} />
                   Đáp án
@@ -1526,7 +1763,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                         {speaker?.name ?? line.speakerId}
                       </span>
                       <span
-                        className="text-[11px] tabular-nums"
+                        className="text-xs tabular-nums"
                         style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-faint)' }}
                       >
                         {formatTrackTime(timing.start)}–{formatTrackTime(timing.end)}
@@ -1584,14 +1821,26 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                 size="sm"
                 leftIcon={<ArrowLeft className="w-4 h-4" />}
                 onClick={() => {
+                  if (session.mode === 'exam' && session.phase !== 'debrief') {
+                    setShowConfirmExitExamModal(true);
+                    return;
+                  }
                   playerRef.current?.pause();
                   setSession(null);
                 }}
+                data-testid="l1-change-episode-btn"
               >
                 Đổi bài
               </Button>
               <Pill tone={isExamSurface ? 'exam' : 'listening'}>
-                Part {session.episode.part} · {session.mode === 'exam' ? 'Exam' : `Training Lv.${session.level}`}
+                Part {session.episode.part} ·{' '}
+                {session.isRetry
+                  ? 'Ôn câu sai'
+                  : session.mode === 'exam'
+                    ? session.alreadyDoneExam
+                      ? 'Exam (làm lại · 0 band)'
+                      : 'Exam'
+                    : `Cấp ${session.level}`}
               </Pill>
               <h1 className="text-sm sm:text-base font-bold truncate" style={{ color: 'var(--color-text)' }}>
                 {session.episode.title}
@@ -1611,11 +1860,18 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                     variant="primary"
                     skill={isExamSurface ? 'exam' : 'listening'}
                     size="sm"
+                    disabled={
+                      trackState.status === 'audio_missing' ||
+                      trackState.simulatedMode ||
+                      (session.mode === 'exam' && trackState.status !== 'ready')
+                    }
                     leftIcon={<Volume2 className="w-4 h-4" />}
                     onClick={handleBeginListening}
                     data-testid="l1-start-listening-btn"
                   >
-                    Bắt đầu nghe
+                    {session.mode === 'exam' && trackState.status === 'loading'
+                      ? 'Đang tải audio...'
+                      : 'Bắt đầu nghe'}
                   </Button>
                 </>
               )}
@@ -1656,10 +1912,14 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
               examMode={session.config.examLocked}
               disablePause={!session.config.allowPause}
               simulatedMode={trackState.simulatedMode}
-              onPlay={() => void playerRef.current?.play()}
+              autoplayBlocked={trackState.autoplayBlocked}
+              onPlay={() => {
+                playerRef.current?.unlock();
+                void playerRef.current?.play();
+              }}
               onPause={() => playerRef.current?.pause()}
               onSeek={
-                session.config.examLocked ? undefined : (sec) => playerRef.current?.seek(sec)
+                session.config.allowSeek ? (sec) => playerRef.current?.seek(sec) : undefined
               }
               onRewind={
                 session.config.allowRewind ? (s) => playerRef.current?.rewind(s) : undefined
@@ -1715,6 +1975,47 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
           </div>
         )}
 
+        {trackState.status === 'audio_missing' && (
+          <div
+            className="p-3.5 rounded-[var(--radius-md)] border text-sm flex flex-wrap items-center justify-between gap-3"
+            style={{
+              backgroundColor: 'color-mix(in srgb, var(--color-wrong) 12%, var(--color-surface))',
+              borderColor: 'var(--color-wrong)',
+            }}
+            data-testid="l1-audio-missing-banner"
+          >
+            <div className="flex items-center gap-2">
+              <AlertTriangle className="w-4 h-4 shrink-0" style={{ color: 'var(--color-wrong)' }} />
+              <span>Không tải được file MP3 của bài nghe này. Không thể bắt đầu phiên khi thiếu âm thanh.</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Button
+                variant="secondary"
+                size="sm"
+                leftIcon={<RefreshCw className="w-3.5 h-3.5" />}
+                onClick={() => {
+                  playerRef.current?.load(session.episode.audio.path, {
+                    durationHintSec: session.episode.audio.durationSec,
+                    examLocked: session.config.examLocked,
+                  });
+                }}
+              >
+                Thử tải lại MP3
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => {
+                  playerRef.current?.pause();
+                  setSession(null);
+                }}
+              >
+                Đổi bài khác
+              </Button>
+            </div>
+          </div>
+        )}
+
         {tabHiddenWarning && (
           <div
             className="p-3 rounded-[var(--radius-md)] border text-xs flex items-center gap-2"
@@ -1735,7 +2036,7 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
           {session.episode.questionGroups.map((group) => renderQuestionGroup(group))}
         </div>
 
-        {/* Right Sidebar: Dimmed Waveform, Prediction summary, and optional audio_missing simulated script reader */}
+        {/* Right Sidebar: Dimmed Waveform & Prediction summary (CẤM kịch bản mô phỏng trong pha nghe/Exam — L1-01, SR-23) */}
         <aside className="lg:col-span-4 space-y-4 lg:sticky lg:top-28">
           <Card padding="md" className="space-y-3">
             <div className="text-xs font-bold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
@@ -1747,8 +2048,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
               currentTimeSec={trackState.currentTime}
               showMarkers={false}
               dimmed={true}
-              interactive={!session.config.examLocked && session.phase !== 'preview'}
-              onSeek={(sec) => playerRef.current?.seek(sec)}
+              interactive={session.config.allowSeek && session.phase !== 'preview'}
+              onSeek={session.config.allowSeek ? (sec) => playerRef.current?.seek(sec) : undefined}
               height={54}
             />
             <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
@@ -1772,54 +2073,6 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                   );
                 })}
               </div>
-            </Card>
-          )}
-
-          {/* Graceful simulated transcript reader ONLY when MP3 file is missing on disk */}
-          {trackState.simulatedMode && session.phase !== 'preview' && (
-            <Card padding="md" className="space-y-2.5">
-              <div className="flex items-center justify-between gap-2">
-                <span className="text-xs font-bold" style={{ color: 'var(--color-partial)' }}>
-                  Chế độ mô phỏng (chưa có MP3)
-                </span>
-                <button
-                  type="button"
-                  onClick={() => setShowSimTranscript((v) => !v)}
-                  className="inline-flex items-center gap-1 text-xs font-semibold cursor-pointer"
-                  style={{ color: 'var(--color-info)' }}
-                >
-                  {showSimTranscript ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
-                  {showSimTranscript ? 'Ẩn kịch bản' : 'Đọc kịch bản mô phỏng'}
-                </button>
-              </div>
-              {showSimTranscript && (
-                <div className="max-h-64 overflow-y-auto space-y-2 text-xs pr-1">
-                  {session.episode.script.map((line) => {
-                    const timing = lineTimings[line.lineId] ?? { start: line.start, end: line.end };
-                    const isCurrent =
-                      trackState.currentTime >= timing.start && trackState.currentTime <= timing.end;
-                    return (
-                      <div
-                        key={line.lineId}
-                        className="p-2 rounded-[var(--radius-sm)] border"
-                        style={{
-                          backgroundColor: isCurrent
-                            ? 'color-mix(in srgb, var(--color-listening) 12%, var(--color-surface))'
-                            : 'var(--color-surface-2)',
-                          borderColor: isCurrent ? 'var(--color-listening)' : 'var(--color-border)',
-                        }}
-                      >
-                        <span className="font-semibold" style={{ color: 'var(--color-listening)' }}>
-                          {line.speakerId}:{' '}
-                        </span>
-                        <span style={{ fontFamily: 'var(--font-reading)', color: 'var(--color-text)' }}>
-                          {line.text}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
             </Card>
           )}
         </aside>
@@ -1859,6 +2112,35 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
             </Button>
             <Button variant="primary" skill="listening" onClick={handleGradeAndEnterDebrief}>
               Chấm bài ngay
+            </Button>
+          </div>
+        </div>
+      </Modal>
+      {/* Exit Exam confirmation modal (L1-09) */}
+      <Modal
+        open={showConfirmExitExamModal}
+        onClose={() => setShowConfirmExitExamModal(false)}
+        title="Thoát giữa bài Exam?"
+      >
+        <div className="space-y-4">
+          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+            Bạn đang làm chế độ Exam. Nếu đổi bài bây giờ, lượt nghe này sẽ dừng và không tính Band Listening.
+          </p>
+          <div className="flex items-center justify-end gap-2">
+            <Button variant="secondary" onClick={() => setShowConfirmExitExamModal(false)}>
+              Tiếp tục làm bài
+            </Button>
+            <Button
+              variant="primary"
+              skill="exam"
+              onClick={() => {
+                setShowConfirmExitExamModal(false);
+                playerRef.current?.pause();
+                setSession(null);
+              }}
+              data-testid="l1-confirm-exit-exam-btn"
+            >
+              Thoát bài Exam
             </Button>
           </div>
         </div>

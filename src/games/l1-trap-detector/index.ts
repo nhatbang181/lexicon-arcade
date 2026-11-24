@@ -1,4 +1,5 @@
 import type { GameDefinition } from '../registry';
+import L1TrapDetector from './L1TrapDetector';
 
 export const L1_GAME_DEFINITION: GameDefinition = {
   id: 'l1',
@@ -12,9 +13,10 @@ export const L1_GAME_DEFINITION: GameDefinition = {
   estMinutes: [8, 15],
   requires: { audio: true },
   modes: ['training', 'exam'],
-  load: () => import('./L1TrapDetector'),
+  load: () => Promise.resolve({ default: L1TrapDetector }),
 };
 
 export * from './engine';
 export * from './listeningLoader';
-export { default, L1TrapDetector } from './L1TrapDetector';
+export { L1TrapDetector };
+export default L1TrapDetector;
