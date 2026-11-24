@@ -29,12 +29,15 @@ import './design/tokens.css';
 import { App } from './app/App';
 
 // X9: sau mỗi lần deploy, chunk cũ bị xoá khỏi server. Nếu một import động thất bại thì
-// tải lại đúng 1 lần (cờ sessionStorage chống vòng lặp).
+// tải lại (chỉ chặn tải lặp trong vòng 10 s bằng timestamp trong sessionStorage để các lần deploy sau vẫn tự hồi phục).
 const RELOAD_FLAG = 'lexicon:chunk-reload';
+const RELOAD_COOLDOWN_MS = 10_000;
 window.addEventListener('vite:preloadError', (event) => {
   try {
-    if (sessionStorage.getItem(RELOAD_FLAG)) return;
-    sessionStorage.setItem(RELOAD_FLAG, String(Date.now()));
+    const prev = Number(sessionStorage.getItem(RELOAD_FLAG) ?? 0);
+    const now = Date.now();
+    if (Number.isFinite(prev) && prev > 0 && now - prev < RELOAD_COOLDOWN_MS) return;
+    sessionStorage.setItem(RELOAD_FLAG, String(now));
   } catch {
     return;
   }

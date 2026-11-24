@@ -21,11 +21,22 @@ function newestMtime(dir) {
 }
 
 // Build cũ hơn mã nguồn thì build lại, để E2E không đo nhầm bản cũ.
+function mtimeOrZero(p) {
+  return fs.existsSync(p) ? fs.statSync(p).mtimeMs : 0;
+}
+
 function isStale() {
   const index = path.join(ROOT, OUT_DIR, 'index.html');
   if (!fs.existsSync(index)) return true;
   const built = fs.statSync(index).mtimeMs;
-  const inputs = [newestMtime(path.join(ROOT, 'src')), fs.statSync(path.join(ROOT, 'vite.config.ts')).mtimeMs, fs.statSync(path.join(ROOT, 'index.html')).mtimeMs];
+  const inputs = [
+    newestMtime(path.join(ROOT, 'src')),
+    newestMtime(path.join(ROOT, 'public')),
+    mtimeOrZero(path.join(ROOT, 'vite.config.ts')),
+    mtimeOrZero(path.join(ROOT, 'index.html')),
+    mtimeOrZero(path.join(ROOT, 'package.json')),
+    mtimeOrZero(path.join(ROOT, 'package-lock.json')),
+  ];
   return Math.max(...inputs) > built;
 }
 

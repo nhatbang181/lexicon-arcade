@@ -116,3 +116,28 @@ test('X4: CSS legacy chỉ có hiệu lực ở #/legacy, rời route thì khôn
   expect(await bodyRendering()).toBe('pixelated');
   expect(consoleErrors).toEqual([]);
 });
+
+for (const leaveAfterMs of [50, 300]) {
+  test(`X4: rời #/legacy sau ${leaveAfterMs} ms (chunk legacy chưa nạp xong) vẫn không rò CSS sang V3`, async ({ page }) => {
+    const bodyRendering = (): Promise<string> =>
+      page.evaluate(() => getComputedStyle(document.body).imageRendering);
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto('/#/hub', { waitUntil: 'networkidle' });
+    await page.evaluate(() => {
+      window.location.hash = '#/legacy';
+    });
+    await page.waitForTimeout(leaveAfterMs);
+    await page.evaluate(() => {
+      window.location.hash = '#/';
+    });
+    await expect(page.getByRole('heading', { name: 'Chào bạn · Hôm nay học gì?' })).toBeVisible({ timeout: 10_000 });
+    // Chunk legacy nạp xong muộn sau khi đã rời: chờ đủ lâu để CSS của nó kịp chèn vào <head>.
+    await page.waitForTimeout(4_000);
+    expect(await bodyRendering()).not.toBe('pixelated');
+    expect(
+      await page.evaluate(
+        () => Array.from(document.querySelectorAll<HTMLLinkElement>('link[rel="stylesheet"]')).filter((l) => l.href.includes('legacyEntry') && !l.disabled).length,
+      ),
+    ).toBe(0);
+  });
+}

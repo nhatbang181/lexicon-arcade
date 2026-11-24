@@ -41,9 +41,6 @@ const LAZY_CHUNK_GLOBS = [
   'assets/{PlacementScreen,ChartRenderer,legacyEntry}-*.{js,css}',
   'assets/*_fixtures-*.js',
 ];
-const LAZY_CHUNK_URL =
-  /\/assets\/((v[123]|r[12]|l[12]|w[12])-|PlacementScreen-|ChartRenderer-|legacyEntry-|[a-z0-9]+_fixtures-)/;
-
 export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/lexicon-arcade/' : '/',
   plugins: [
@@ -93,7 +90,11 @@ export default defineConfig(({ mode }) => ({
         clientsClaim: true,
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => LAZY_CHUNK_URL.test(url.pathname),
+            // Workbox chỉ chép thân hàm vào sw.js nên regex phải nằm trong hàm (biến ngoài → ReferenceError trong SW).
+            urlPattern: ({ url }) =>
+              /\/assets\/((v[123]|r[12]|l[12]|w[12])-|PlacementScreen-|ChartRenderer-|legacyEntry-|[a-z0-9]+_fixtures-)/.test(
+                url.pathname,
+              ),
             handler: 'CacheFirst',
             options: {
               cacheName: 'lexicon-chunks',

@@ -42,16 +42,15 @@ const pairs = []; // [fg, bg, ngưỡng, mô tả]
 for (const bg of SURFACES) for (const fg of ['text', 'text-dim', 'text-faint']) pairs.push([fg, bg, 4.5, 'chữ']);
 for (const bg of ['bg', 'surface']) for (const fg of ACCENTS) pairs.push([fg, bg, 4.5, 'chữ màu nhấn']);
 for (const bg of ACCENTS) pairs.push(['bg', bg, 4.5, 'chữ trên nút màu (Button primary: color=bg)']);
-// Viền trang trí không bắt buộc 3:1 (WCAG 1.4.11 chỉ áp cho ranh giới thành phần thiết yếu): chỉ liệt kê khi --all.
-for (const bg of SURFACES) pairs.push(['border', bg, 3.0, 'viền (tham khảo)', true]);
+// LUAT D2: viền thành phần tương tác ≥ 3:1 so với nền — luôn tính vào số lỗi.
+for (const bg of SURFACES) pairs.push(['border', bg, 3.0, 'viền']);
 for (const fg of ACCENTS) pairs.push([fg, 'bg', 3.0, 'icon/viền màu nhấn']);
 
 const want = (args.theme ?? 'dark,light,exam').split(',');
 const rows = [];
 for (const theme of want) {
   const t = THEMES[theme];
-  for (const [fg, bg, min, what, info] of pairs) {
-    if (info && !args.all) continue;
+  for (const [fg, bg, min, what] of pairs) {
     if (!t[fg] || !t[bg]) continue;
     const r = ratio(t[fg], t[bg]);
     rows.push({ theme, fg, bg, fgHex: t[fg], bgHex: t[bg], ratio: +r.toFixed(2), min, what, ok: r >= min });

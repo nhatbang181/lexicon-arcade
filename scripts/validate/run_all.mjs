@@ -2010,14 +2010,14 @@ if (fs.existsSync(speakingDir)) {
       const fullAudio = path.join(PUBLIC_DIR, relAudio);
       if (fs.existsSync(fullAudio)) {
         if (fs.statSync(fullAudio).size === 0) {
-          fail(`Empty speaking audio file (${label}): public/${relAudio}`);
+          fail(`[INV-S4] Empty speaking audio file (${label}): public/${relAudio}`);
         } else {
           speakingAudioChecked++;
         }
       } else {
         speakingAudioMissing++;
         if (REQUIRE_AUDIO) {
-          fail(`Missing speaking audio file (${label}): public/${relAudio}`);
+          fail(`[INV-S4] Missing speaking audio file (${label}): public/${relAudio}`);
         }
       }
     }
@@ -2285,7 +2285,7 @@ if (fs.existsSync(speakingDir)) {
 
   if (!hasSpeakingAudioDir && !REQUIRE_AUDIO) {
     warnings.push(
-      `public/audio/speaking/ not yet rendered (M5 r-audio-speaking step) — ${speakingAudioPaths.size} audio paths validated.`
+      `[INV-S4] public/audio/speaking/ not yet rendered (M5 r-audio-speaking step) — ${speakingAudioPaths.size} audio paths pending (pass --require-audio to enforce 100%).`
     );
   } else if (hasSpeakingAudioDir) {
     summary.push(
@@ -2293,7 +2293,7 @@ if (fs.existsSync(speakingDir)) {
     );
     if (speakingAudioMissing > 0 && !REQUIRE_AUDIO) {
       warnings.push(
-        `${speakingAudioMissing} speaking audio files pending; pass --require-audio to enforce 100%.`
+        `[INV-S4] ${speakingAudioMissing} speaking audio files pending; pass --require-audio to enforce 100%.`
       );
     }
   }

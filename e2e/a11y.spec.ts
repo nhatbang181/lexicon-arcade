@@ -44,7 +44,7 @@ async function setTheme(page: Page, theme: string): Promise<void> {
 
 for (const route of ROUTES) {
   for (const theme of THEMES) {
-    test(`axe 0 vi phạm serious/critical · ${route.name} · ${theme}`, async ({ page }) => {
+    test(`không vượt nợ axe (serious/critical) · ${route.name} · ${theme}`, async ({ page }) => {
       const errors: string[] = [];
       page.on('pageerror', (e) => errors.push(e.message));
       await page.goto(`/${route.hash}`, { waitUntil: 'networkidle' });

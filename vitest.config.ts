@@ -22,7 +22,7 @@ export default defineConfig({
           name: 'core-node',
           setupFiles,
           environment: 'node',
-          include: ['src/core/**/*.test.ts'],
+          include: ['src/core/**/*.test.ts', 'scripts/validate/**/*.test.{ts,mjs}'],
           exclude: [...CORE_NEEDS_DOM, '**/node_modules/**'],
         },
       },
