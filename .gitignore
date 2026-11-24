@@ -4,3 +4,10 @@ dist
 tsconfig.tsbuildinfo
 scripts/assets/_downloads
 .env*
+*.lnk
+e2e/screenshots/
+test-results/
+playwright-report/
+out/
+playwright.t1*.config.ts
+dist-e2e

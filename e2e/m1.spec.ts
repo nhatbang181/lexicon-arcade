@@ -48,7 +48,7 @@ test.describe('M1 Full Flow: Onboarding -> Placement -> Today -> V1/V2/V3 -> Sta
       consoleErrors.push(err.message);
     });
 
-    // 1. Onboarding 3 steps
+    // 1. Onboarding 4 bước (Chào mừng, Mục tiêu, Thiết bị, Định vị)
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto('/#/onboarding', { waitUntil: 'networkidle' });
     await expect(page.getByRole('heading', { name: 'Chào mừng tới Lộ trình IELTS 8.0' })).toBeVisible();
@@ -58,6 +58,8 @@ test.describe('M1 Full Flow: Onboarding -> Placement -> Today -> V1/V2/V3 -> Sta
 
     await page.getByTestId('onboarding-goal-45').click();
     await page.getByTestId('onboarding-next-2').click();
+    await expect(page.getByRole('heading', { name: 'Thử loa và micro' })).toBeVisible();
+    await page.getByTestId('onboarding-next-3').click();
     await expect(page.getByRole('heading', { name: 'Định vị nhanh vốn từ học thuật' })).toBeVisible();
 
     await page.getByTestId('onboarding-start-placement').click();
@@ -75,7 +77,7 @@ test.describe('M1 Full Flow: Onboarding -> Placement -> Today -> V1/V2/V3 -> Sta
     await page.getByTestId('placement-go-today').click();
 
     // 3. Today screen with generated plan including V1
-    await expect(page.getByRole('heading', { name: 'Chào Bang · Hôm nay học gì?' })).toBeVisible({
+    await expect(page.getByRole('heading', { name: 'Chào bạn · Hôm nay học gì?' })).toBeVisible({
       timeout: 10_000,
     });
     await expect(page.getByTestId('today-plan-list')).toBeVisible({ timeout: 10_000 });
