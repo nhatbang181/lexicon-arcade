@@ -28,6 +28,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -59,6 +64,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -89,6 +99,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -119,6 +134,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -149,6 +169,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -180,6 +205,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -211,6 +241,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -242,6 +277,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -273,6 +313,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -304,6 +349,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -334,6 +384,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -365,6 +420,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -396,6 +456,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -427,6 +492,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -457,6 +527,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -488,6 +563,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -519,6 +599,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -550,6 +635,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -581,6 +671,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -612,6 +707,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -643,6 +743,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -674,6 +779,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -705,6 +815,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -736,6 +851,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -767,6 +887,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -798,6 +923,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -829,6 +959,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -859,6 +994,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -890,6 +1030,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -921,6 +1066,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -950,6 +1100,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -979,6 +1134,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1008,6 +1168,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1037,6 +1202,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1066,6 +1236,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1095,6 +1270,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1124,6 +1304,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1153,6 +1338,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1182,6 +1372,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1211,6 +1406,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1240,6 +1440,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1269,6 +1474,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1298,6 +1508,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1327,6 +1542,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1356,6 +1576,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1385,6 +1610,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1414,6 +1644,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1443,6 +1678,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1472,6 +1712,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1501,6 +1746,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1532,6 +1782,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1561,6 +1816,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1592,6 +1852,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1623,6 +1888,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1654,6 +1924,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1685,6 +1960,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1716,6 +1996,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1747,6 +2032,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1778,6 +2068,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1809,6 +2104,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1840,6 +2140,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1871,6 +2176,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1902,6 +2212,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1933,6 +2248,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1964,6 +2284,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -1995,6 +2320,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2026,6 +2356,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2057,6 +2392,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2088,6 +2428,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2119,6 +2464,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2150,6 +2500,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2181,6 +2536,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2212,6 +2572,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2243,6 +2608,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2274,6 +2644,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2305,6 +2680,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2336,6 +2716,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2367,6 +2752,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2398,6 +2788,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2429,6 +2824,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2460,6 +2860,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2492,6 +2897,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2525,6 +2935,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2557,6 +2972,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2590,6 +3010,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2623,6 +3048,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2656,6 +3086,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2689,6 +3124,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2722,6 +3162,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2755,6 +3200,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2788,6 +3238,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2821,6 +3276,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2850,6 +3310,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2882,6 +3347,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2915,6 +3385,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2947,6 +3422,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -2979,6 +3459,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3012,6 +3497,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3041,6 +3531,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3073,6 +3568,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3103,6 +3603,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3133,6 +3638,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3163,6 +3673,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3193,6 +3708,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3223,6 +3743,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3253,6 +3778,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3283,6 +3813,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3313,6 +3848,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3343,6 +3883,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3373,6 +3918,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3403,6 +3953,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3433,6 +3988,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3463,6 +4023,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3493,6 +4058,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3523,6 +4093,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3552,6 +4127,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3582,6 +4162,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3611,6 +4196,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3641,6 +4231,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3671,6 +4266,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3701,6 +4301,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3731,6 +4336,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3760,6 +4370,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3791,6 +4406,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3821,6 +4441,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3851,6 +4476,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3881,6 +4511,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3911,6 +4546,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3941,6 +4581,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -3971,6 +4616,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4000,6 +4650,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4030,6 +4685,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4059,6 +4719,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4088,6 +4753,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4123,6 +4793,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4158,6 +4833,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4194,6 +4874,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4223,6 +4908,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4258,6 +4948,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4293,6 +4988,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4328,6 +5028,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4363,6 +5068,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4398,6 +5108,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4433,6 +5148,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4468,6 +5188,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4503,6 +5228,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4538,6 +5268,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4576,6 +5311,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4612,6 +5352,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4647,6 +5392,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4678,6 +5428,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4709,6 +5464,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4740,6 +5500,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4771,6 +5536,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4801,6 +5571,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4831,6 +5606,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4861,6 +5641,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4891,6 +5676,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4921,6 +5711,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4951,6 +5746,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -4980,6 +5780,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5010,6 +5815,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5040,6 +5850,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5070,6 +5885,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5100,6 +5920,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5130,6 +5955,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5159,6 +5989,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5189,6 +6024,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5219,6 +6059,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5249,6 +6094,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5279,6 +6129,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5310,6 +6165,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5341,6 +6201,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5372,6 +6237,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5403,6 +6273,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5434,6 +6309,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5465,6 +6345,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5494,6 +6379,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5525,6 +6415,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5555,6 +6450,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5585,6 +6485,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5615,6 +6520,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5644,6 +6554,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5674,6 +6589,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5704,6 +6624,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5739,6 +6664,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5774,6 +6704,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5803,6 +6738,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5839,6 +6779,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5874,6 +6819,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5909,6 +6859,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5944,6 +6899,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -5979,6 +6939,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6014,6 +6979,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6050,6 +7020,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6080,6 +7055,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6115,6 +7095,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6145,6 +7130,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6175,6 +7165,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6204,6 +7199,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6235,6 +7235,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6266,6 +7271,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6297,6 +7307,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6328,6 +7343,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6359,6 +7379,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6389,6 +7414,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6420,6 +7450,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6450,6 +7485,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6480,6 +7520,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6511,6 +7556,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6542,6 +7592,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6573,6 +7628,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6604,6 +7664,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6635,6 +7700,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6666,6 +7736,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6702,6 +7777,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6738,6 +7818,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6776,6 +7861,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6806,6 +7896,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6841,6 +7936,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6877,6 +7977,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6906,6 +8011,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6942,6 +8052,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -6974,6 +8089,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7010,6 +8130,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7045,6 +8170,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7074,6 +8204,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7110,6 +8245,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7139,6 +8279,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7168,6 +8313,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7197,6 +8347,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7233,6 +8388,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-ThomasNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7262,6 +8422,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7292,6 +8457,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7328,6 +8498,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7363,6 +8538,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7392,6 +8572,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7428,6 +8613,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7460,6 +8650,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7490,6 +8685,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7519,6 +8719,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7549,6 +8754,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7582,6 +8792,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7618,6 +8833,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7648,6 +8868,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7677,6 +8902,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7706,6 +8936,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7736,6 +8971,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7772,6 +9012,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7802,6 +9047,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-ChristopherNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7833,6 +9083,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7864,6 +9119,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7895,6 +9155,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7925,6 +9190,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7956,6 +9226,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -7987,6 +9262,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8018,6 +9298,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8048,6 +9333,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8078,6 +9368,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8109,6 +9404,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8140,6 +9440,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8171,6 +9476,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8202,6 +9512,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8233,6 +9548,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-WilliamNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8264,6 +9584,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-AU-NatashaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8305,6 +9630,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8345,6 +9675,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8384,6 +9719,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8423,6 +9763,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8462,6 +9807,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8496,6 +9846,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8535,6 +9890,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8575,6 +9935,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8615,6 +9980,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8654,6 +10024,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8693,6 +10068,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8733,6 +10113,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8773,6 +10158,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8813,6 +10203,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8852,6 +10247,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8892,6 +10292,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-MaisieNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8931,6 +10336,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -8970,6 +10380,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-LibbyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9011,6 +10426,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-RyanNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9051,6 +10471,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-GB-SoniaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9090,6 +10515,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9125,6 +10555,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9158,6 +10593,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9198,6 +10638,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9232,6 +10677,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9267,6 +10717,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9300,6 +10755,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9339,6 +10799,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9372,6 +10837,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9411,6 +10881,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9450,6 +10925,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9483,6 +10963,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-JennyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9524,6 +11009,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AriaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9564,6 +11054,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-AvaNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   },
   {
@@ -9604,6 +11099,11 @@
         "schema": "pass",
         "verifier": "pass"
       }
+    },
+    "audioProvenance": {
+      "engine": "edge-tts",
+      "voice": "en-US-GuyNeural",
+      "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23"
     }
   }
 ]

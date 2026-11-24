@@ -139,34 +139,55 @@ async def render_episode(slug: str, cache: dict, lock: asyncio.Lock, concurrency
 
     sem = asyncio.Semaphore(concurrency)
 
+    # INV-L6 duration frame (seconds): Part 1-3 4-6 min, Part 4 5-7 min.
+    min_dur, max_dur = (300.0, 420.0) if is_part_4 else (240.0, 360.0)
+    fit_margin = 8.0
+    speed_used = base_speed
+
     # Working temp dir for line audio segments
     with tempfile.TemporaryDirectory() as tmpdir:
         tmp_path = Path(tmpdir)
-        line_wavs = []
-        silence_wavs = []
+
+        async def synth_all(speed: float):
+            wavs = []
+            tasks = []
+            for i, line in enumerate(script):
+                line_text = line.get("ttsText") or line.get("text", "")
+                spk_voice = voice_map.get(line.get("speakerId"), "en-GB-SoniaNeural")
+                line_wav = tmp_path / f"line_{i:04d}.wav"
+                wavs.append(line_wav)
+                tasks.append(
+                    render_single_line(
+                        text=line_text, voice=spk_voice, speed=speed, out_wav=line_wav,
+                        cache=cache, lock=lock, sem=sem, force=force,
+                    )
+                )
+            return wavs, await asyncio.gather(*tasks)
 
         print(f"  Synthesizing {len(script)} lines...")
-        tasks = []
-        for i, line in enumerate(script):
-            line_text = line.get("ttsText") or line.get("text", "")
-            spk_id = line.get("speakerId")
-            spk_voice = voice_map.get(spk_id, "en-GB-SoniaNeural")
-            line_wav = tmp_path / f"line_{i:04d}.wav"
-            line_wavs.append(line_wav)
-            tasks.append(
-                render_single_line(
-                    text=line_text,
-                    voice=spk_voice,
-                    speed=base_speed,
-                    out_wav=line_wav,
-                    cache=cache,
-                    lock=lock,
-                    sem=sem,
-                    force=force
-                )
-            )
+        line_wavs, line_durations = await synth_all(base_speed)
 
-        line_durations = await asyncio.gather(*tasks)
+        base_pauses = [
+            get_line_pause_after(line, script[i + 1] if i + 1 < len(script) else None, is_part_4)
+            for i, line in enumerate(script)
+        ]
+        speech_total = sum(line_durations)
+        pause_total = sum(base_pauses)
+        pause_scale = 1.0
+        target_total = min_dur + fit_margin
+        if speech_total + pause_total < target_total:
+            # Too short for INV-L6: first lengthen pauses (up to x1.5), then slow the voice.
+            if speech_total + pause_total * 1.5 >= target_total:
+                pause_scale = (target_total - speech_total) / pause_total
+            else:
+                pause_scale = 1.5
+                speed_used = max(0.85, round(base_speed * speech_total / (target_total - pause_total * 1.5), 2))
+                print(f"  Too short ({speech_total + pause_total:.0f}s): re-synthesizing at speed {speed_used}")
+                line_wavs, line_durations = await synth_all(speed_used)
+                speech_total = sum(line_durations)
+                if speech_total + pause_total * pause_scale < target_total:
+                    pause_scale = min(2.0, (target_total - speech_total) / pause_total)
+        silence_wavs = []
 
         # Build timeline and generate pause silences
         current_time = 0.0
@@ -184,8 +205,7 @@ async def render_episode(slug: str, cache: dict, lock: asyncio.Lock, concurrency
 
             concat_entries.append(line_wavs[i])
 
-            next_line = script[i + 1] if i + 1 < len(script) else None
-            pause_sec = get_line_pause_after(line, next_line, is_part_4)
+            pause_sec = round(base_pauses[i] * pause_scale, 2)
 
             sil_wav = tmp_path / f"silence_{i:04d}.wav"
             render_silence_wav(pause_sec, sil_wav)
@@ -230,7 +250,7 @@ async def render_episode(slug: str, cache: dict, lock: asyncio.Lock, concurrency
         cmd_encode = [
             FFMPEG_BIN, "-y",
             "-i", str(raw_joined_wav),
-            "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+            "-af", "loudnorm=I=-14.0:TP=-2.0:LRA=11",
             "-ar", "24000",
             "-ac", "1",
             "-b:a", "48k",
@@ -255,6 +275,14 @@ async def render_episode(slug: str, cache: dict, lock: asyncio.Lock, concurrency
     ep_data["audio"]["durationSec"] = final_dur
     ep_data["audio"]["sha256"] = sha256_hex
     ep_data["audio"]["loudnessLUFS"] = final_lufs
+    ep_data["audioProvenance"] = {
+        "engine": "edge-tts",
+        "voice": ", ".join(f"{k}={v}" for k, v in voice_map.items()),
+        "voices": voice_map,
+        "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+        "speed": speed_used,
+        "renderedAt": time.strftime("%Y-%m-%d"),
+    }
 
     with open(ep_file, "w", encoding="utf-8", newline="\n") as f:
         json.dump(ep_data, f, indent=2, ensure_ascii=False)

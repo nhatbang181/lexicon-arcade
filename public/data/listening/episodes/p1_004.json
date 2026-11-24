@@ -27,24 +27,24 @@
       "lineId": "l01",
       "speakerId": "manager",
       "text": "Good morning, Oakridge Community Library, Arthur Pendelton speaking. How may I help?",
-      "start": 0,
-      "end": 0,
+      "start": 0.0,
+      "end": 5.4,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l02",
       "speakerId": "caller",
       "text": "Hello Arthur. I saw your poster on the noticeboard about looking for new volunteers, and I would love to apply.",
-      "start": 0,
-      "end": 0,
+      "start": 5.9,
+      "end": 13.23,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l03",
       "speakerId": "manager",
       "text": "Oh, splendid! We are always glad to hear from local residents. Let me take a few initial notes over the phone. Could I have your full name first?",
-      "start": 0,
-      "end": 0,
+      "start": 13.73,
+      "end": 24.09,
       "pauseAfter": 0.4
     },
     {
@@ -52,16 +52,16 @@
       "speakerId": "caller",
       "text": "Yes, it is Nadia Holloway. That is spelt H-O-L-L-O-W-A-Y.",
       "ttsText": "Yes, it is Nadia Holloway. That is spelt H, O, L, L, O, W, A, Y.",
-      "start": 0,
-      "end": 0,
+      "start": 24.59,
+      "end": 32.53,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l05",
       "speakerId": "manager",
       "text": "Holloway, with a double L, got it. And could you tell me your postcode so we know which branch is closest to you?",
-      "start": 0,
-      "end": 0,
+      "start": 33.15,
+      "end": 39.69,
       "pauseAfter": 0.4
     },
     {
@@ -69,8 +69,8 @@
       "speakerId": "caller",
       "text": "Sure, it is OX4 7BL... oh, wait, sorry! My tongue slipped, it is OX4 7PL, P for Peter.",
       "ttsText": "Sure, it is O, X, four, seven, B, L... oh, wait, sorry! My tongue slipped, it is O, X, four, seven, P, L, P for Peter.",
-      "start": 0,
-      "end": 0,
+      "start": 40.19,
+      "end": 51.69,
       "pauseAfter": 0.5
     },
     {
@@ -78,48 +78,48 @@
       "speakerId": "manager",
       "text": "Right, OX4 7PL, that puts you just ten minutes from our main building. Have you done any community volunteering before, Nadia?",
       "ttsText": "Right, O, X, four, seven, P, L, that puts you just ten minutes from our main building. Have you done any community volunteering before, Nadia?",
-      "start": 0,
-      "end": 0,
+      "start": 52.31,
+      "end": 62.33,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l08",
       "speakerId": "caller",
       "text": "Well, I studied nursing at university, though I never volunteered in a clinic. For the past two years I helped sort donations in a charity bookshop on High Street.",
-      "start": 0,
-      "end": 0,
+      "start": 62.83,
+      "end": 73.88,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l09",
       "speakerId": "manager",
       "text": "Oh, charity bookshop experience is ideal for us! Now, what sort of role appeals to you most? We need help with shelving returned stock, helping seniors with computers, and running children's storytelling sessions.",
-      "start": 0,
-      "end": 0,
+      "start": 74.5,
+      "end": 88.05,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l10",
       "speakerId": "caller",
       "text": "Um, I initially thought I would just do shelving quietly in the back, actually children's storytelling sounds wonderful! Could I put down storytelling as my main interest?",
-      "start": 0,
-      "end": 0,
+      "start": 88.55,
+      "end": 100.01,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l11",
       "speakerId": "manager",
       "text": "We would be thrilled, our previous storyteller moved abroad last month. Just to check your availability, what is the weekly commitment like for you?",
-      "start": 0,
-      "end": 0,
+      "start": 100.63,
+      "end": 109.02,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l12",
       "speakerId": "caller",
       "text": "I can spare around five hours a week. Is there a set minimum?",
-      "start": 0,
-      "end": 0,
+      "start": 109.52,
+      "end": 114.03,
       "pauseAfter": 0.4
     },
     {
@@ -127,48 +127,48 @@
       "speakerId": "manager",
       "text": "We used to ask volunteers for 6 hours a week, and students sometimes drop down to 2 hours during exams, though our standard minimum commitment is now 4 hours per week.",
       "ttsText": "We used to ask volunteers for six hours a week, and students sometimes drop down to two hours during exams, though our standard minimum commitment is now four hours per week.",
-      "start": 0,
-      "end": 0,
+      "start": 114.53,
+      "end": 123.83,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l14",
       "speakerId": "caller",
       "text": "Four hours a week is very manageable. Do I need to bring any identification when I come in for training?",
-      "start": 0,
-      "end": 0,
+      "start": 124.45,
+      "end": 131.6,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l15",
       "speakerId": "manager",
       "text": "Yes, for our safeguarding check you must bring one valid photo ID, such as a driving licence or a passport.",
-      "start": 0,
-      "end": 0,
+      "start": 132.1,
+      "end": 138.52,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l16",
       "speakerId": "caller",
       "text": "Ah, my driving licence expired last month and the replacement has not arrived yet, so I will bring my passport instead.",
-      "start": 0,
-      "end": 0,
+      "start": 139.02,
+      "end": 146.64,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l17",
       "speakerId": "manager",
       "text": "A passport works perfectly. Let me note that down and check our upcoming volunteer orientation schedule.",
-      "start": 0,
-      "end": 0,
+      "start": 147.63,
+      "end": 154.14,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l18",
       "speakerId": "caller",
       "text": "Is the next orientation session on Saturday morning?",
-      "start": 0,
-      "end": 0,
+      "start": 154.64,
+      "end": 158.05,
       "pauseAfter": 0.4
     },
     {
@@ -176,8 +176,8 @@
       "speakerId": "manager",
       "text": "Yes, always on a Saturday morning from ten until twelve. We originally scheduled it for 8 November, however the roofers are working above the main hall that weekend, so we moved it to 15 November.",
       "ttsText": "Yes, always on a Saturday morning from ten until twelve. We originally scheduled it for the eighth of November, however the roofers are working above the main hall that weekend, so we moved it to the fifteenth of November.",
-      "start": 0,
-      "end": 0,
+      "start": 158.55,
+      "end": 170.58,
       "pauseAfter": 0.5
     },
     {
@@ -185,64 +185,64 @@
       "speakerId": "caller",
       "text": "Oh, 15 November actually suits me even better. Where in the library do we meet?",
       "ttsText": "Oh, the fifteenth of November actually suits me even better. Where in the library do we meet?",
-      "start": 0,
-      "end": 0,
+      "start": 171.2,
+      "end": 177.49,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l21",
       "speakerId": "manager",
       "text": "Usually we hold briefings in the basement study room, but the decorators are painting down there this week. Instead, head straight to the garden annexe behind the fiction shelves.",
-      "start": 0,
-      "end": 0,
+      "start": 177.99,
+      "end": 187.76,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l22",
       "speakerId": "caller",
       "text": "The annexe, got it. And after orientation, which weekday shift would you like me to cover?",
-      "start": 0,
-      "end": 0,
+      "start": 188.38,
+      "end": 194.54,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l23",
       "speakerId": "manager",
       "text": "We have open children's sessions on both Wednesday and Friday afternoons. Which day fits your diary?",
-      "start": 0,
-      "end": 0,
+      "start": 195.04,
+      "end": 201.22,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l24",
       "speakerId": "caller",
       "text": "Let me see... Friday clashes with my Italian evening class, so Wednesday afternoon would be ideal for me.",
-      "start": 0,
-      "end": 0,
+      "start": 201.72,
+      "end": 209.47,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l25",
       "speakerId": "manager",
       "text": "Wonderful, I have pencilled you in for Wednesday shifts. Oh, and one little perk I should mention before we wrap up.",
-      "start": 0,
-      "end": 0,
+      "start": 210.09,
+      "end": 216.97,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l26",
       "speakerId": "caller",
       "text": "Oh yes? Do volunteers get free coffee at the library cafe?",
-      "start": 0,
-      "end": 0,
+      "start": 217.47,
+      "end": 222.35,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l27",
       "speakerId": "manager",
       "text": "Haha, coffee at the cafe is half-price rather than free, I am afraid! What you do get completely free is parking in the staff bays behind the building whenever you are on duty.",
-      "start": 0,
-      "end": 0,
+      "start": 222.85,
+      "end": 233.31,
       "pauseAfter": 0.5
     },
     {
@@ -250,24 +250,24 @@
       "speakerId": "caller",
       "text": "Oh, free parking in town is worth its weight in gold! Thank you so much, Arthur. I will see you on 15 November.",
       "ttsText": "Oh, free parking in town is worth its weight in gold! Thank you so much, Arthur. I will see you on the fifteenth of November.",
-      "start": 0,
-      "end": 0,
+      "start": 233.93,
+      "end": 243.15,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l29",
       "speakerId": "manager",
       "text": "Looking forward to meeting you, Nadia. Goodbye!",
-      "start": 0,
-      "end": 0,
+      "start": 243.65,
+      "end": 247.08,
       "pauseAfter": 0.4
     }
   ],
   "audio": {
     "path": "audio/listening/p1_004.mp3",
-    "durationSec": 288,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 248.1,
+    "sha256": "6931cd997e9d99fb9ecd314b5a4ab14d368d2d8974bdb36efc1cfe300bd45d30",
+    "loudnessLUFS": -15.9
   },
   "questionGroups": [
     {
@@ -327,15 +327,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 24.59,
+            "end": 32.53
           },
           "traps": [
             {
               "type": "spelling_out",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 24.59,
+              "end": 32.53,
               "explanationVi": "Người gọi đánh vần họ H-O-L-L-O-W-A-Y với hai chữ L ở giữa."
             }
           ]
@@ -351,15 +351,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 40.19,
+            "end": 51.69
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 40.19,
+              "end": 51.69,
               "decoy": "OX4 7BL",
               "explanationVi": "Đọc nhầm chữ B thành 7BL rồi sửa ngay thành 7PL (P for Peter)."
             }
@@ -376,15 +376,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 62.83,
+            "end": 73.88
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 62.83,
+              "end": 73.88,
               "decoy": "clinic",
               "explanationVi": "Chưa từng tình nguyện ở phòng khám mà chỉ làm ở hiệu sách từ thiện (bookshop)."
             }
@@ -401,15 +401,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 88.55,
+            "end": 100.01
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 88.55,
+              "end": 100.01,
               "decoy": "shelving",
               "explanationVi": "Ban đầu định xếp sách (shelving) nhưng sau đó đổi sang kể chuyện (storytelling)."
             }
@@ -427,15 +427,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 114.53,
+            "end": 123.83
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 114.53,
+              "end": 123.83,
               "decoy": "6",
               "explanationVi": "Trước đây yêu cầu 6 giờ và sinh viên thi làm 2 giờ, nhưng mức tối thiểu chuẩn nay là 4."
             }
@@ -452,15 +452,15 @@
           },
           "evidence": {
             "lineId": "l16",
-            "start": 0,
-            "end": 0
+            "start": 139.02,
+            "end": 146.64
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 139.02,
+              "end": 146.64,
               "decoy": "driving licence",
               "explanationVi": "Bằng lái đã hết hạn tháng trước nên Nadia sẽ mang hộ chiếu (passport)."
             }
@@ -518,15 +518,15 @@
           },
           "evidence": {
             "lineId": "l19",
-            "start": 0,
-            "end": 0
+            "start": 158.55,
+            "end": 170.58
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l19",
-              "start": 0,
-              "end": 0,
+              "start": 158.55,
+              "end": 170.58,
               "decoy": "8 November",
               "explanationVi": "Lịch cũ là 8 November nhưng do sửa mái nên dời sang 15 November."
             }
@@ -544,15 +544,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 177.99,
+            "end": 187.76
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 177.99,
+              "end": 187.76,
               "decoy": "basement",
               "explanationVi": "Phòng tầng hầm đang sơn sửa nên buổi định hướng chuyển sang nhà phụ (annexe)."
             }
@@ -569,15 +569,15 @@
           },
           "evidence": {
             "lineId": "l24",
-            "start": 0,
-            "end": 0
+            "start": 201.72,
+            "end": 209.47
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l24",
-              "start": 0,
-              "end": 0,
+              "start": 201.72,
+              "end": 209.47,
               "decoy": "Friday",
               "explanationVi": "Thứ Sáu trùng lịch học tiếng Ý nên chọn ca chiều thứ Tư."
             }
@@ -594,15 +594,15 @@
           },
           "evidence": {
             "lineId": "l27",
-            "start": 0,
-            "end": 0
+            "start": 222.85,
+            "end": 233.31
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l27",
-              "start": 0,
-              "end": 0,
+              "start": 222.85,
+              "end": 233.31,
               "decoy": "coffee",
               "explanationVi": "Cà phê chỉ được giảm nửa giá chứ không miễn phí, quyền lợi miễn phí là chỗ đậu xe."
             }
@@ -619,5 +619,16 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "manager=en-GB-ThomasNeural, caller=en-GB-LibbyNeural",
+    "voices": {
+      "manager": "en-GB-ThomasNeural",
+      "caller": "en-GB-LibbyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.98,
+    "renderedAt": "2026-11-24"
   }
 }

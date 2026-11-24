@@ -238,9 +238,18 @@ async def synthesize_edge_tts(
         pct = int(round((speed - 1.0) * 100))
         rate_str = f"{'+' if pct >= 0 else ''}{pct}%"
 
-    communicate = edge_tts.Communicate(text=text, voice=voice, rate=rate_str)
-    await communicate.save(str(raw_tmp_path))
-    return Path(raw_tmp_path)
+    last_err: Exception | None = None
+    for attempt in range(1, 7):
+        try:
+            communicate = edge_tts.Communicate(text=text, voice=voice, rate=rate_str)
+            await communicate.save(str(raw_tmp_path))
+            if Path(raw_tmp_path).exists() and Path(raw_tmp_path).stat().st_size > 200:
+                return Path(raw_tmp_path)
+            raise RuntimeError("edge-tts returned an empty file")
+        except Exception as e:  # network / service hiccup: back off and retry
+            last_err = e
+            await asyncio.sleep(min(30.0, 1.5 * (2 ** (attempt - 1))))
+    raise RuntimeError(f"edge-tts failed after 6 attempts for voice={voice}: {last_err}")
 
 def render_silence_wav(duration: float, output_path: Path | str) -> None:
     """Generate exact duration of silence at 24kHz mono PCM."""

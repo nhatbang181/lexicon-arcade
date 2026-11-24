@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-21T02:54:34.371Z",
+  "builtAt": "2026-11-24T02:48:24.502Z",
   "totals": {
     "dictation": 300,
     "listeningEpisodes": 32,
@@ -29,31 +29,31 @@
   },
   "files": {
     "listening/dictation.json": {
-      "sha256": "5452d2aade16c8e04aa7768fd18018815ccda1946fc40bbc91ce0b244b2ff7c3",
+      "sha256": "0411a0c90e5392d49d197907225db800a6d922daaf9f3f58800fe24258c96a3b",
       "count": 300
     },
     "listening/episodes/p1_001.json": {
-      "sha256": "e48dc0d9de38205f9e576b2a10068d9fde235ff3d79e3bba2b385e88656a95d6",
+      "sha256": "dbfeafa83f97723929001c7964c9f02b2dd4e4564b73a22b851ddaeaa82c3b65",
       "count": 1
     },
     "listening/episodes/p1_002.json": {
-      "sha256": "83bb7ea86a40e28f62297984aa33f34d3feaf231c0f90d64486c95dcbec89f8f",
+      "sha256": "058bc7ff86686c6e1d7478f986195f14887af3cfe688464a8866c63623142810",
       "count": 1
     },
     "listening/episodes/p1_003.json": {
-      "sha256": "2e8054eaa2ec8e6c61b5fa6c07677cafb8f0b757b1c245606ba92cab473f15a1",
+      "sha256": "1b3e5dd50a3db27f2a77185fc7e2dbf96a7fa7c2a60ae78415cf2a442726af51",
       "count": 1
     },
     "listening/episodes/p1_004.json": {
-      "sha256": "bfd7318db64f48cc800a1f2f312d7cf6064704f335e0599bb908d6dc2f9893cb",
+      "sha256": "5c5f4f31028c7811b36e72c7d548730b0cc447c1c01e6abdd3ca479d1414c6ee",
       "count": 1
     },
     "listening/episodes/p1_005.json": {
-      "sha256": "7992c5357b80956b90c6b259d3176f35f644895d34ca17e60545c1f94016f405",
+      "sha256": "289933948754e643fe121d3a7fc792416491a683c3696cd234693b7fe6019399",
       "count": 1
     },
     "listening/episodes/p1_006.json": {
-      "sha256": "265d5dae91e655141ab6095cd6f9e3284b07072e0bd4eff7805ee8a91837ec2c",
+      "sha256": "7097ee02ad8b0688b330b77af77bc0947d6ccd222f7014bb453ee152bd4f2fbb",
       "count": 1
     },
     "listening/episodes/p1_res_001.json": {
@@ -161,7 +161,7 @@
       "count": 1
     },
     "listening/index.json": {
-      "sha256": "a8ca98225917ed9c4aeeb4ecd6218a7e1cfb7ce7c58ca18958b551d4ce701817",
+      "sha256": "14343217a813b6c773620fdb836ee8abb1f7720a5dda472a3c0ae444ead93e16",
       "count": 32
     },
     "reading/index.json": {
@@ -189,7 +189,7 @@
       "count": 1
     },
     "reading/passages/p1_006.json": {
-      "sha256": "e005a12d583ba88cda668f96884abf87a5cffd329dd64c5aea9eb5893878d523",
+      "sha256": "7cd42de0055add684a6fa0ca2fe891f68d43179d0e2b715c583a95d02c2c7fb8",
       "count": 1
     },
     "reading/passages/p1_res_001.json": {
@@ -205,7 +205,7 @@
       "count": 1
     },
     "reading/passages/p2_002.json": {
-      "sha256": "3b3d2a98cbe8d2cb8c41c4727f215b130964c7d3177f7e80c0d2afc3830244cc",
+      "sha256": "df52f575ca3b5f65834cbbdf45e4992b3826f652f68ac8f142c61e4260d62acb",
       "count": 1
     },
     "reading/passages/p2_003.json": {
@@ -213,7 +213,7 @@
       "count": 1
     },
     "reading/passages/p2_004.json": {
-      "sha256": "ad30a0c825d90f5e22e5bee9fea4e3e8df062b780c59d3c1c7a4159282bc19ce",
+      "sha256": "d0d685879d9996774c94ea7c402c05e5f07a5a3fd8cefc8e0e6e31aaf2115995",
       "count": 1
     },
     "reading/passages/p2_005.json": {

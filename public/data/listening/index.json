@@ -35,7 +35,7 @@
     ],
     "channel": "phone",
     "audioPath": "audio/listening/p1_002.mp3",
-    "durationSec": 284,
+    "durationSec": 256.0,
     "questionCount": 10,
     "questionTypes": [
       "form_completion",

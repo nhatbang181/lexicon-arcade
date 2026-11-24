@@ -27,24 +27,24 @@
       "lineId": "l01",
       "speakerId": "coord",
       "text": "Hello, Northgate Ceramics Studio, Chloe speaking. How can I help you today?",
-      "start": 0,
-      "end": 0,
+      "start": 0.0,
+      "end": 5.96,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l02",
       "speakerId": "caller",
       "text": "Hi Chloe! I walked past your studio window yesterday and saw the sign for autumn evening pottery workshops. Are spots still open?",
-      "start": 0,
-      "end": 0,
+      "start": 6.56,
+      "end": 16.12,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l03",
       "speakerId": "coord",
       "text": "Yes, we have just a couple of places left for our autumn term! I can get you signed up over the phone if you like. Could I start with your name?",
-      "start": 0,
-      "end": 0,
+      "start": 16.72,
+      "end": 26.72,
       "pauseAfter": 0.4
     },
     {
@@ -52,16 +52,16 @@
       "speakerId": "caller",
       "text": "Sure, it is Marcus Halstead. Let me spell the surname: H-A-L-S-T-E-A-D.",
       "ttsText": "Sure, it is Marcus Halstead. Let me spell the surname: H, A, L, S, T, E, A, D.",
-      "start": 0,
-      "end": 0,
+      "start": 27.32,
+      "end": 35.69,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l05",
       "speakerId": "coord",
       "text": "Halstead, got it. And what is the best phone number to text you if a kiln schedule changes?",
-      "start": 0,
-      "end": 0,
+      "start": 36.44,
+      "end": 42.74,
       "pauseAfter": 0.4
     },
     {
@@ -69,32 +69,32 @@
       "speakerId": "caller",
       "text": "Um, it is 416-555-8329... wait, sorry, I reversed the last two digits again! It is 416-555-8392.",
       "ttsText": "Um, it is four one six, five five five, eight three two nine... wait, sorry, I reversed the last two digits again! It is four one six, five five five, eight three nine two.",
-      "start": 0,
-      "end": 0,
+      "start": 43.34,
+      "end": 55.18,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l07",
       "speakerId": "coord",
       "text": "Ending in nine two, thank you. Now, we run two evening courses for beginners: hand-building sculptures, and wheel throwing for functional bowls and mugs. Which one caught your eye?",
-      "start": 0,
-      "end": 0,
+      "start": 55.93,
+      "end": 68.81,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l08",
       "speakerId": "caller",
       "text": "I originally thought hand-building might be easier, though honestly I really want to make coffee mugs and soup bowls, so let me sign up for wheel throwing.",
-      "start": 0,
-      "end": 0,
+      "start": 69.41,
+      "end": 77.37,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l09",
       "speakerId": "coord",
       "text": "Wheel throwing is loads of fun once you get the hang of centring the clay. Have you checked the course length?",
-      "start": 0,
-      "end": 0,
+      "start": 78.12,
+      "end": 84.44,
       "pauseAfter": 0.4
     },
     {
@@ -102,8 +102,8 @@
       "speakerId": "caller",
       "text": "I think the website mentioned a 4-week taster or a 12-week masterclass?",
       "ttsText": "I think the website mentioned a four-week taster or a twelve-week masterclass?",
-      "start": 0,
-      "end": 0,
+      "start": 85.04,
+      "end": 89.28,
       "pauseAfter": 0.4
     },
     {
@@ -111,16 +111,16 @@
       "speakerId": "coord",
       "text": "Right, the 4-week taster only runs in July and the 12-week masterclass is for returning students. Our standard autumn evening course runs for 8 weeks.",
       "ttsText": "Right, the four-week taster only runs in July and the twelve-week masterclass is for returning students. Our standard autumn evening course runs for eight weeks.",
-      "start": 0,
-      "end": 0,
+      "start": 89.88,
+      "end": 100.73,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l12",
       "speakerId": "caller",
       "text": "Eight weeks is ideal. And how much is the total fee, including clay?",
-      "start": 0,
-      "end": 0,
+      "start": 101.48,
+      "end": 106.65,
       "pauseAfter": 0.4
     },
     {
@@ -128,8 +128,8 @@
       "speakerId": "coord",
       "text": "Tuition is $210, and then there is a mandatory $35 charge that covers your stoneware clay and all kiln firings, so the total comes to $245.",
       "ttsText": "Tuition is two hundred and ten dollars, and then there is a mandatory thirty-five dollar charge that covers your stoneware clay and all kiln firings, so the total comes to two hundred and forty-five dollars.",
-      "start": 0,
-      "end": 0,
+      "start": 107.25,
+      "end": 119.33,
       "pauseAfter": 0.5
     },
     {
@@ -137,56 +137,56 @@
       "speakerId": "caller",
       "text": "Okay, $245 all-in sounds very reasonable. Do I need to buy my own shaping tools or bring a hand towel?",
       "ttsText": "Okay, two hundred and forty-five dollars all-in sounds very reasonable. Do I need to buy my own shaping tools or bring a hand towel?",
-      "start": 0,
-      "end": 0,
+      "start": 120.08,
+      "end": 128.61,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l15",
       "speakerId": "coord",
       "text": "We supply all carving tools, sponges, and fresh hand towels by the sink. The only thing you need to bring yourself is a heavy apron so you do not ruin your clothes.",
-      "start": 0,
-      "end": 0,
+      "start": 129.21,
+      "end": 140.06,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l16",
       "speakerId": "caller",
       "text": "Good to know, I have an old canvas apron I can bring. Which evenings do the classes run?",
-      "start": 0,
-      "end": 0,
+      "start": 141.26,
+      "end": 147.22,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l17",
       "speakerId": "coord",
       "text": "Both sections run from six thirty to nine o'clock, either on Tuesday or Thursday. Let me check numbers... oh, Thursday is already full with a waitlist, whereas Tuesday still has two seats open.",
-      "start": 0,
-      "end": 0,
+      "start": 147.82,
+      "end": 160.7,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l18",
       "speakerId": "caller",
       "text": "Tuesday evening actually works better for my work schedule anyway, so please put me down for Tuesday.",
-      "start": 0,
-      "end": 0,
+      "start": 161.3,
+      "end": 166.76,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l19",
       "speakerId": "coord",
       "text": "Done! You are officially in the Tuesday group. It is a nice small class too.",
-      "start": 0,
-      "end": 0,
+      "start": 167.51,
+      "end": 174.15,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l20",
       "speakerId": "caller",
       "text": "How many people are in each workshop? I thought I counted twelve wheels through the window.",
-      "start": 0,
-      "end": 0,
+      "start": 174.75,
+      "end": 180.27,
       "pauseAfter": 0.4
     },
     {
@@ -194,32 +194,32 @@
       "speakerId": "coord",
       "text": "Sharp eye! We do have 12 wheels in the room, though one is for the instructor's demonstrations and one is kept as a spare, so we cap every class at 10 students.",
       "ttsText": "Sharp eye! We do have twelve wheels in the room, though one is for the instructor's demonstrations and one is kept as a spare, so we cap every class at ten students.",
-      "start": 0,
-      "end": 0,
+      "start": 180.87,
+      "end": 192.39,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l22",
       "speakerId": "caller",
       "text": "Ten students gives everyone plenty of instructor time. And on Tuesday evenings, do we come in through the main shopfront on King Street?",
-      "start": 0,
-      "end": 0,
+      "start": 193.14,
+      "end": 201.64,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l23",
       "speakerId": "coord",
       "text": "Good thing you asked! Our front gallery locks automatically at six o'clock. For evening workshops, walk down the side alley and enter through the rear courtyard door.",
-      "start": 0,
-      "end": 0,
+      "start": 202.24,
+      "end": 214.19,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l24",
       "speakerId": "caller",
       "text": "Through the rear courtyard, got it. Last question: how soon after the final session can we pick up our finished glazed pots?",
-      "start": 0,
-      "end": 0,
+      "start": 214.94,
+      "end": 222.94,
       "pauseAfter": 0.4
     },
     {
@@ -227,32 +227,32 @@
       "speakerId": "coord",
       "text": "Normally we say 10 days after the last class... um, actually, wait, we have two extra-full glaze kiln loads this autumn, so please allow 14 days before pickup.",
       "ttsText": "Normally we say ten days after the last class... um, actually, wait, we have two extra-full glaze kiln loads this autumn, so please allow fourteen days before pickup.",
-      "start": 0,
-      "end": 0,
+      "start": 223.54,
+      "end": 234.01,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l26",
       "speakerId": "caller",
       "text": "Fourteen days is totally fine. Thanks a ton for all the details, Chloe!",
-      "start": 0,
-      "end": 0,
+      "start": 234.76,
+      "end": 240.18,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l27",
       "speakerId": "coord",
       "text": "My pleasure, Marcus! I will send your invoice link shortly, and we will see you Tuesday night.",
-      "start": 0,
-      "end": 0,
+      "start": 240.78,
+      "end": 247.4,
       "pauseAfter": 0.4
     }
   ],
   "audio": {
     "path": "audio/listening/p1_006.mp3",
-    "durationSec": 295,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 248.7,
+    "sha256": "254058769426170399815fff897d3ef59bd288a41c3e5a00d993136018e9f381",
+    "loudnessLUFS": -15.7
   },
   "questionGroups": [
     {
@@ -310,15 +310,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 27.32,
+            "end": 35.69
           },
           "traps": [
             {
               "type": "spelling_out",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 27.32,
+              "end": 35.69,
               "explanationVi": "Người gọi đánh vần từng chữ cái họ H-A-L-S-T-E-A-D."
             }
           ]
@@ -334,15 +334,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 43.34,
+            "end": 55.18
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 43.34,
+              "end": 55.18,
               "decoy": "4165558329",
               "explanationVi": "Đọc ngược hai số cuối thành 29 rồi tự sửa ngay thành 92."
             }
@@ -360,15 +360,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 69.41,
+            "end": 77.37
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 69.41,
+              "end": 77.37,
               "decoy": "hand-building",
               "explanationVi": "Ban đầu nghĩ chọn nặn tay nhưng muốn làm cốc bát nên đăng ký bàn xoay (wheel throwing)."
             }
@@ -386,15 +386,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 89.88,
+            "end": 100.73
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l11",
-              "start": 0,
-              "end": 0,
+              "start": 89.88,
+              "end": 100.73,
               "decoy": "12",
               "explanationVi": "4 tuần là lớp hè, 12 tuần cho học viên cũ, còn lớp tối mùa thu kéo dài 8 tuần."
             }
@@ -412,15 +412,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 107.25,
+            "end": 119.33
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 107.25,
+              "end": 119.33,
               "decoy": "210",
               "explanationVi": "210 đô mới là học phí, cộng 35 đô tiền đất nung thành tổng 245 đô."
             }
@@ -437,15 +437,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 129.21,
+            "end": 140.06
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 129.21,
+              "end": 140.06,
               "decoy": "towel",
               "explanationVi": "Xưởng phát đủ dụng cụ và khăn lau tay, học viên chỉ cần tự mang tạp dề (apron)."
             }
@@ -502,15 +502,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 161.3,
+            "end": 166.76
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l17",
-              "start": 0,
-              "end": 0,
+              "start": 147.82,
+              "end": 160.7,
               "decoy": "Thursday",
               "explanationVi": "Lớp tối thứ Năm đã kín chỗ phải chờ, nên đăng ký lớp tối thứ Ba."
             }
@@ -528,15 +528,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 180.87,
+            "end": 192.39
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 180.87,
+              "end": 192.39,
               "decoy": "12",
               "explanationVi": "Phòng có 12 bàn xoay nhưng trừ bàn giáo viên và dự phòng, lớp giới hạn 10 học viên."
             }
@@ -553,15 +553,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 202.24,
+            "end": 214.19
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 202.24,
+              "end": 214.19,
               "decoy": "front gallery",
               "explanationVi": "Cửa trước khóa lúc 6 giờ tối, học viên đi lối hẻm vào cửa sân sau (courtyard)."
             }
@@ -579,15 +579,15 @@
           },
           "evidence": {
             "lineId": "l25",
-            "start": 0,
-            "end": 0
+            "start": 223.54,
+            "end": 234.01
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l25",
-              "start": 0,
-              "end": 0,
+              "start": 223.54,
+              "end": 234.01,
               "decoy": "10",
               "explanationVi": "Thông thường mất 10 ngày nhưng kỳ này lò nung đầy nên sửa lại thành 14 ngày."
             }
@@ -604,5 +604,16 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "coord=en-CA-ClaraNeural, caller=en-US-GuyNeural",
+    "voices": {
+      "coord": "en-CA-ClaraNeural",
+      "caller": "en-US-GuyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.89,
+    "renderedAt": "2026-11-24"
   }
 }

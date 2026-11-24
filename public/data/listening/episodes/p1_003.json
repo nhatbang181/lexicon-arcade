@@ -27,24 +27,24 @@
       "lineId": "l01",
       "speakerId": "coord",
       "text": "G'day, Bayside Cycling Club, Tessa speaking. How can I help?",
-      "start": 0,
-      "end": 0,
+      "start": 0.0,
+      "end": 4.74,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l02",
       "speakerId": "caller",
       "text": "Hi Tessa, I recently moved over from England and I would love to join your weekend riding groups.",
-      "start": 0,
-      "end": 0,
+      "start": 5.28,
+      "end": 10.27,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l03",
       "speakerId": "coord",
       "text": "Awesome, always great to welcome new riders! Let me open a registration form for you. What is your full name?",
-      "start": 0,
-      "end": 0,
+      "start": 10.81,
+      "end": 18.95,
       "pauseAfter": 0.4
     },
     {
@@ -52,32 +52,32 @@
       "speakerId": "caller",
       "text": "It is Liam Fenwick. People sometimes spell it with a C-H at the end, so it is F-E-N-W-I-C-K.",
       "ttsText": "It is Liam Fenwick. People sometimes spell it with a C, H at the end, so it is F, E, N, W, I, C, K.",
-      "start": 0,
-      "end": 0,
+      "start": 19.49,
+      "end": 29.53,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l05",
       "speakerId": "coord",
       "text": "Got it, Fenwick with a K. Which suburb are you living in at the moment?",
-      "start": 0,
-      "end": 0,
+      "start": 30.2,
+      "end": 34.96,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l06",
       "speakerId": "caller",
       "text": "Well, I was staying in Brighton for the first fortnight, actually I just moved into a flat in Coral Cove yesterday.",
-      "start": 0,
-      "end": 0,
+      "start": 35.5,
+      "end": 41.72,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l07",
       "speakerId": "coord",
       "text": "Oh nice, Coral Cove is right on our coastal loop. We also ask every rider for an emergency contact mobile number.",
-      "start": 0,
-      "end": 0,
+      "start": 42.39,
+      "end": 50.75,
       "pauseAfter": 0.4
     },
     {
@@ -85,40 +85,40 @@
       "speakerId": "caller",
       "text": "Sure, I will give you my cousin's Australian number. Let me see... it is 0419 638 247... oh sorry, I flipped the last two digits! It is 0419 638 274.",
       "ttsText": "Sure, I will give you my cousin's Australian number. Let me see... it is oh four one nine, six three eight, two four seven... oh sorry, I flipped the last two digits! It is oh four one nine, six three eight, two seven four.",
-      "start": 0,
-      "end": 0,
+      "start": 51.29,
+      "end": 66.62,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l09",
       "speakerId": "coord",
       "text": "Two seven four at the end, thank you. Now, which pace group would you like to register for? We have beginner, intermediate, and racing.",
-      "start": 0,
-      "end": 0,
+      "start": 67.29,
+      "end": 77.09,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l10",
       "speakerId": "caller",
       "text": "I was going to put down beginner just to play it safe, though I usually ride forty kilometres at around twenty-six kilometres an hour back home.",
-      "start": 0,
-      "end": 0,
+      "start": 77.63,
+      "end": 84.84,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l11",
       "speakerId": "coord",
       "text": "Oh, at that speed you will find beginner way too slow! Our intermediate bunch averages twenty-five to twenty-eight, so that would suit you much better.",
-      "start": 0,
-      "end": 0,
+      "start": 85.38,
+      "end": 94.83,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l12",
       "speakerId": "caller",
       "text": "Fair enough, let us go with intermediate then.",
-      "start": 0,
-      "end": 0,
+      "start": 95.37,
+      "end": 97.71,
       "pauseAfter": 0.5
     },
     {
@@ -126,8 +126,8 @@
       "speakerId": "coord",
       "text": "Great. For annual membership, our full package with a club jersey is $110, or standard annual membership without the jersey is $85. Which would you prefer?",
       "ttsText": "Great. For annual membership, our full package with a club jersey is a hundred and ten dollars, or standard annual membership without the jersey is eighty-five dollars. Which would you prefer?",
-      "start": 0,
-      "end": 0,
+      "start": 98.38,
+      "end": 111.53,
       "pauseAfter": 0.4
     },
     {
@@ -135,8 +135,8 @@
       "speakerId": "caller",
       "text": "I already brought plenty of cycling kit from the UK, so I will just take the $85 standard option.",
       "ttsText": "I already brought plenty of cycling kit from the UK, so I will just take the eighty-five dollar standard option.",
-      "start": 0,
-      "end": 0,
+      "start": 112.07,
+      "end": 117.77,
       "pauseAfter": 0.5
     },
     {
@@ -144,112 +144,112 @@
       "speakerId": "coord",
       "text": "No worries, $85 it is. For your first Sunday ride, just note that we changed our meeting point this month. We used to gather by the pier, but because of boardwalk repairs we now meet near the lighthouse at six thirty.",
       "ttsText": "No worries, eighty-five dollars it is. For your first Sunday ride, just note that we changed our meeting point this month. We used to gather by the pier, but because of boardwalk repairs we now meet near the lighthouse at six thirty.",
-      "start": 0,
-      "end": 0,
+      "start": 118.44,
+      "end": 133.61,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l16",
       "speakerId": "caller",
       "text": "Got it, near the lighthouse. Since it is a six thirty start, what safety gear do I strictly have to bring?",
-      "start": 0,
-      "end": 0,
+      "start": 134.68,
+      "end": 141.4,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l17",
       "speakerId": "coord",
       "text": "Good question. A reflective vest is optional in summer and a handlebar bell is only recommended if you ride shared paths, whereas front and rear lights are strictly compulsory for every early Sunday start.",
-      "start": 0,
-      "end": 0,
+      "start": 141.94,
+      "end": 155.39,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l18",
       "speakerId": "caller",
       "text": "Okay, I will make sure both lights are charged up. By the way, I saw on your website that members can use the workshop repair stand on Thursday evenings?",
-      "start": 0,
-      "end": 0,
+      "start": 156.06,
+      "end": 165.32,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l19",
       "speakerId": "coord",
       "text": "Yes, our club mechanic opens the shed at six. Need help fixing a puncture or setting up your saddle?",
-      "start": 0,
-      "end": 0,
+      "start": 165.86,
+      "end": 172.84,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l20",
       "speakerId": "caller",
       "text": "Actually I swapped out a punctured tube myself yesterday and my saddle height feels spot on. It is my back gear cable that keeps slipping on climbs, so I want to adjust that before Sunday.",
-      "start": 0,
-      "end": 0,
+      "start": 173.38,
+      "end": 184.1,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l21",
       "speakerId": "coord",
       "text": "Easy fix, our mechanic can help you tune that in ten minutes. Also, bring a few dollars for the mid-ride coffee stop on Sunday.",
-      "start": 0,
-      "end": 0,
+      "start": 184.77,
+      "end": 193.47,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l22",
       "speakerId": "caller",
       "text": "Nice! Is that still at the cafe beside the ferry wharf?",
-      "start": 0,
-      "end": 0,
+      "start": 194.01,
+      "end": 197.92,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l23",
       "speakerId": "coord",
       "text": "Oh, that cafe closed last week for kitchen renovations. The Saturday hill riders stop at a kiosk in the botanical park, while our Sunday coastal group now goes to a bakery near the marina.",
-      "start": 0,
-      "end": 0,
+      "start": 198.46,
+      "end": 210.59,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l24",
       "speakerId": "caller",
       "text": "A marina bakery sounds even better! One last thing: I read there is a perk for new members once they complete three club rides?",
-      "start": 0,
-      "end": 0,
+      "start": 211.26,
+      "end": 219.3,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l25",
       "speakerId": "coord",
       "text": "Yes! Remember, the free bike safety check happens before your very first ride, and our autumn charity race still has a standard entry fee. What you unlock after three rides is a fifteen percent discount card at a local bike shop.",
-      "start": 0,
-      "end": 0,
+      "start": 219.84,
+      "end": 235.35,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l26",
       "speakerId": "caller",
       "text": "Brilliant, that will come in handy for spare tyres. Thanks so much for getting me registered, Tessa.",
-      "start": 0,
-      "end": 0,
+      "start": 236.02,
+      "end": 242.18,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l27",
       "speakerId": "coord",
       "text": "My pleasure, Liam. See you Thursday evening at the shed!",
-      "start": 0,
-      "end": 0,
+      "start": 242.72,
+      "end": 246.96,
       "pauseAfter": 0.4
     }
   ],
   "audio": {
     "path": "audio/listening/p1_003.mp3",
-    "durationSec": 282,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 248.1,
+    "sha256": "f01446f361f01c20fb5bb88ff70f536146ce1bcb382b99b95eaacad77f3ad250",
+    "loudnessLUFS": -15.7
   },
   "questionGroups": [
     {
@@ -307,15 +307,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 19.49,
+            "end": 29.53
           },
           "traps": [
             {
               "type": "spelling_out",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 19.49,
+              "end": 29.53,
               "decoy": "Fenwich",
               "explanationVi": "Người gọi đánh vần F-E-N-W-I-C-K, lưu ý đuôi C-K chứ không phải C-H."
             }
@@ -332,15 +332,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 35.5,
+            "end": 41.72
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 35.5,
+              "end": 41.72,
               "decoy": "Brighton",
               "explanationVi": "Brighton chỉ là nơi ở tạm hai tuần đầu, hiện đã chuyển sang Coral Cove."
             }
@@ -357,15 +357,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 51.29,
+            "end": 66.62
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 51.29,
+              "end": 66.62,
               "decoy": "0419638247",
               "explanationVi": "Đọc đảo hai số cuối thành 47 rồi tự sửa lại đúng là 74."
             }
@@ -382,15 +382,15 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 95.37,
+            "end": 97.71
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 77.63,
+              "end": 84.84,
               "decoy": "beginner",
               "explanationVi": "Ban đầu định chọn nhóm beginner nhưng nghe tư vấn tốc độ nên đổi sang intermediate."
             }
@@ -408,15 +408,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 112.07,
+            "end": 117.77
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 98.38,
+              "end": 111.53,
               "decoy": "110",
               "explanationVi": "110 đô gồm áo đấu câu lạc bộ, Liam chỉ chọn gói thường 85 đô."
             }
@@ -433,15 +433,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 118.44,
+            "end": 133.61
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 118.44,
+              "end": 133.61,
               "decoy": "pier",
               "explanationVi": "Trước đây tập trung ở cầu tàu (pier), tháng này dời sang gần ngọn hải đăng (lighthouse)."
             }
@@ -483,15 +483,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 141.94,
+            "end": 155.39
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l17",
-              "start": 0,
-              "end": 0,
+              "start": 141.94,
+              "end": 155.39,
               "decoy": "reflective vest",
               "explanationVi": "Áo phản quang và chuông chỉ tùy chọn, duy nhất đèn trước sau là bắt buộc."
             }
@@ -533,15 +533,15 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 173.38,
+            "end": 184.1
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l20",
-              "start": 0,
-              "end": 0,
+              "start": 173.38,
+              "end": 184.1,
               "decoy": "punctured tube",
               "explanationVi": "Săm xe đã tự thay hôm qua và yên xe đã ổn, chỉ cần chỉnh dây đề sau."
             }
@@ -583,15 +583,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 198.46,
+            "end": 210.59
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 198.46,
+              "end": 210.59,
               "decoy": "cafe beside the ferry wharf",
               "explanationVi": "Quán bến phà đang sửa bếp, công viên dành cho thứ Bảy, Chủ nhật dừng ở tiệm bánh."
             }
@@ -633,15 +633,15 @@
           },
           "evidence": {
             "lineId": "l25",
-            "start": 0,
-            "end": 0
+            "start": 219.84,
+            "end": 235.35
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l25",
-              "start": 0,
-              "end": 0,
+              "start": 219.84,
+              "end": 235.35,
               "decoy": "free bike safety check",
               "explanationVi": "Kiểm tra xe làm trước buổi đầu, giải từ thiện vẫn thu phí; sau ba buổi được thẻ giảm giá."
             }
@@ -658,5 +658,16 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "coord=en-AU-NatashaNeural, caller=en-GB-RyanNeural",
+    "voices": {
+      "coord": "en-AU-NatashaNeural",
+      "caller": "en-GB-RyanNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.98,
+    "renderedAt": "2026-11-24"
   }
 }
