@@ -90,7 +90,14 @@
 | Bàn phím ảo che nút | `visualViewport` resize → đưa ô gõ và nút "Kiểm tra" lên trên bàn phím |
 | Tự zoom khi focus ô nhập | font-size ô nhập ≥ 16 px |
 | Rung | `navigator.vibrate` không có trên iOS → luôn có kênh khác (J1) |
-| IndexedDB bị xoá sau 7 ngày không dùng (chưa cài PWA) | nhắc "Thêm vào màn hình chính", `persist()`, sao lưu (PB-05) |
+| IndexedDB bị xoá sau 7 ngày không dùng (chưa cài PWA) | nhắc "Thêm vào màn hình chính", `persist()` khi chạy standalone, sao lưu (PB-05) |
+| **Cài ra màn hình chính KHÔNG chép IndexedDB** (iOS 17.2+: chỉ chép cookie) | Trước khi hướng dẫn cài: cảnh báo "tiến độ trong tab Safari không tự sang app" và bắt **xuất dữ liệu → cài → nhập lại** (Share Sheet); P0 (plan TU-01) |
+| Công tắc im lặng tắt tiếng Web Audio | `navigator.audioSession.type = 'playback'` mặc định (iOS 17+; ngắt nhạc app khác) + tuỳ chọn "Trộn với nhạc nền"; **không** dùng `transient`/`transient-solo` (bug không ra tiếng, WebKit 264473); ghi âm thì dùng `play-and-record` |
+| Âm thanh câm sau khi app quay lại từ nền | Bật lại `AudioContext` ở `visibilitychange`/`pageshow`/`touchend`; không được thì unload và tạo lại Howl |
+| Howler `html5:true` | Chỉ cho file > 60 s (episode), kèm `RangeRequestsPlugin` + precache + `crossorigin`; file ngắn dùng Web Audio |
+| Service worker bị gỡ khi script mất (iOS 27) | **Không bao giờ đổi tên hay di chuyển `sw.js`** |
+| GitHub Pages ép `Cache-Control: max-age=600`, không cho header riêng | Chunk cũ biến mất sau deploy: bắt `vite:preloadError` → reload 1 lần (chống vòng lặp); `registerType:'prompt'`; kiểm cập nhật mỗi giờ và khi quay lại foreground |
+| Đo hiệu năng thật trên iPhone | Safari 26.2+ có LCP + Event Timing (INP): ghi cục bộ bằng `web-vitals` vào Dexie (PB-23); INP Safari đôi khi cao bất thường, dùng p75 |
 | `backface-visibility` | cần tiền tố `-webkit-` (`13` §5.1) |
 | Cuộn nảy (overscroll) kéo cả trang khi kéo trong thẻ | `overscroll-behavior: contain` ở vùng cuộn trong |
 | Hover dính sau khi chạm | dùng `@media (hover: hover)` cho hiệu ứng hover |

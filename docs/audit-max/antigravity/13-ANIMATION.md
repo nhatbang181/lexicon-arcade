@@ -4,6 +4,19 @@
 > **Nguyên tắc của Bang (25/11/2026):** giảm bớt hiệu ứng theo **mức ưu tiên** nếu có nguy cơ lag. Không để lỗi hình ảnh: chữ lật ngược khi mở lá bài, phần tử "lớn lên" giật hay vượt khung, ảnh bị cắt lung tung.
 > Animation **phục vụ** việc học: báo đúng/sai rõ hơn, thưởng nỗ lực, dẫn mắt. Không có hiệu ứng nào được che chữ học, làm chậm nhịp học, hay thưởng câu sai.
 
+> **Cập nhật 25/11 sau nghiên cứu** (plan UX-06..UX-10):
+> - Juice dừng ở mức **High, không Extreme**. Nghiên cứu Kao 2020 (N = 3 018): cả không có hiệu ứng lẫn hiệu ứng cực mạnh đều làm hiệu suất và động lực kém hơn mức vừa/cao.
+> - Thông số khởi điểm:
+>   - nhấn: `scale .96` / 80 ms, nhả bằng spring ≤ 1.03;
+>   - đúng: pop 1 → 1.08 → 1 trong 220 ms + 8–12 hạt / 500 ms + SFX;
+>   - boss/lên bậc: rung ≤ 8 px, ≤ 300 ms, hit-stop 50 ms;
+>   - không animation nào chặn thao tác > 400 ms;
+>   - đếm điểm kiểu Balatro có nhãn lý do và nút tua.
+> - SFX: pitch tăng 1 bán cung mỗi combo (tối đa +12 rồi về lại), jitter ±4%.
+> - Haptic trên iOS chỉ là phần thêm, có công tắc tắt (Safari không có `vibrate`).
+> - Lật thẻ trên Safari: **không** đặt `overflow`, `opacity`, `filter` trên phần tử `preserve-3d` (WebKit bug 71624).
+> - Các con số trên là kinh nghiệm từ blog, không phải nghiên cứu. Chỉnh lại trên iPhone thật.
+
 ## 0. Tóm tắt 10 dòng
 1. Mỗi hiệu ứng có **bậc ưu tiên** E0–E3 (§1). Thiếu thời gian hoặc máy yếu thì cắt từ E3 xuống, **không bao giờ cắt E0**.
 2. **Thang hạ cấp tự động** (`useFxTier`) theo FPS đo thật + thiết bị + cài đặt (§3).
@@ -64,7 +77,7 @@ Không dùng số rời trong component.
 |---|---|---|---|
 | 2 | chọn đáp án | E0 | `scale .97` 80 ms; ripple là E1 |
 | 3 | đúng | E0 (màu, ✓, SFX) + E1 (`+XP`, scale 1.06) + E2 (12–18 tia) | hit-stop 60 ms chỉ ở bậc Đầy đủ |
-| 4 | sai | E0 (rung 300 ms chỉ thẻ câu, viền đỏ, đáp án đúng nét đứt) | **không hạt** |
+| 4 | sai | E0 (lắc thẻ câu ±6 px × 3 trong 300 ms, viền đỏ, icon ✗, đáp án đúng nét đứt) | **không hạt, không rung màn hình** (plan UX-06, Kao 2020) |
 | 8 | câu mới vào | E1 | trượt 24 px, không trượt cả màn |
 | 9 | lật thẻ V1 | E1 | **theo §5.1** |
 | 12 | mở giải thích | E1 | chữ hiện dần 18 ms/ký tự, bấm để hiện hết; reduced-motion hiện ngay |
@@ -87,7 +100,7 @@ Không dùng số rời trong component.
 ```
 - Hai mặt `position:absolute; inset:0` trong `.card-inner`. Mặt sau **xoay sẵn** 180°, nên khi lật xong chữ mặt sau đọc xuôi.
 - Safari iOS **bắt buộc** có cả `-webkit-backface-visibility`.
-- Phần tử con trong mặt thẻ không được có `transform-style: preserve-3d` riêng hoặc `filter`/`opacity < 1` trên `.card-inner`: các thuộc tính đó làm phẳng 3D trên Safari, khiến hai mặt lộ cùng lúc.
+- `.card-inner` (phần tử `preserve-3d`) **không được** có `overflow`, `filter`, `opacity < 1`, `clip-path`, `mask`. Các thuộc tính đó làm phẳng 3D trên Safari (WebKit bug 71624), khiến hai mặt lộ cùng lúc hoặc chữ ngược. Bo góc và cắt ảnh đặt **trong từng mặt thẻ**, không đặt trên `.card-inner`. Đặt `perspective: 1000px` trên khung ngoài.
 - Reduced-motion/bậc Thấp: **không lật**, crossfade 120 ms giữa 2 mặt.
 - Test E2E: sau khi lật, `getComputedStyle` mặt sau có ma trận xoay tổng 360°/0° (chữ xuôi). Thêm ảnh chụp sau lật ở iPhone 390 (Safari WebKit nếu có trong Playwright: `--project=webkit`).
 

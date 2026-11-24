@@ -3,6 +3,8 @@
 > Nguồn gốc: `docs/audit-max/TASKS.md` (file độc quyền, việc, Done của từng task). File này **không đổi phạm vi** task. Nó thêm: thứ tự chạy, song song, phụ thuộc, model, mốc, cách xử lý quota, và các bước con cho task lớn.
 > Bang yêu cầu **chạy liên tục tới hết Đợt 4**: cổng vẫn phải ĐO và phải ĐẠT, nhưng không chờ Bang bấm duyệt. AD tự quyết theo số đo; trượt thì fixer, không dừng cả dây chuyền.
 
+> **Plan tổng sau nghiên cứu:** `07-PLAN-TONG.md` (ánh xạ mã PP/DL/UX/TU vào task, việc chen thêm FX-2, nâng PB-05/PB-09 lên P0). Khi file này và `07` lệch nhau về **nội dung việc**, `07` thắng. Về **vận hành** (port, worktree, song song), file này thắng.
+
 ## 0a. Thứ tự ưu tiên nội dung (Bang, 25/11/2026)
 
 **1 Dữ liệu → 2 Phương pháp học → 3 UI/UX → 4 Tối ưu web → 5 Animation.** Hệ quả cho kế hoạch:
@@ -114,6 +116,8 @@ Tầng model trong Antigravity (kiểm lại tên đúng trong danh sách model 
 |---|---|---|---|---|
 | **FX-0** | `listen_spell` trong V1: bỏ node khi từ không có MP3 thật (giống cách đã sửa `ltrap_replay`, `dict_full`) + test | Chấm FSRS khi người học không nghe được gì = vi phạm B2/B3 (CHẶN) | `src/games/v1-daily-run/**` (không task Đợt 2 nào sở hữu) | Bước S3. Ghi 1 dòng `DECISIONS.md` |
 | **FX-1** | Chip `↵` 11 px → ≥ 12 px trong `AnswerInput` | D4 CHẶN | Thuộc T2-B: **thêm vào brief T2-B** | Trong T2-B |
+| **FX-2** | V1 van tải thẻ mới (15/ngày; dừng thẻ mới khi hàng ôn > 150–200) + "vòng phục hồi" ≤ 50 thẻ sau ≥ 3 ngày vắng (plan PP-02) | Tránh "núi thẻ" khiến bỏ app (Anki Manual; plan) | `src/games/v1-daily-run/**`, `src/core/srs/**` | Ngay sau FX-0, trước T3-A phần giao diện |
+| **Đợt 2 bổ sung** | PP-16 chấm minh bạch (T2-C), TU-02 lưu từng lượt mọi game, TU-03 âm thanh iOS (T2-B), PP-11 sổ lỗi → SRS (T2-A/B/C) | Plan đợt 1 "lõi học + an toàn dữ liệu" | file độc quyền của task tương ứng | Thêm vào brief nối lại T2-A/B và brief T2-C |
 | **PB-*** | Việc production bổ sung | `15-PRODUCTION-BO-SUNG.md` | Gắn vào task có file tương ứng; không gắn được → đợt PB cuối | Theo bảng ở file 15 |
 
 ## 5. Mốc và ước lượng (máy hiện tại, 2 làn nặng)

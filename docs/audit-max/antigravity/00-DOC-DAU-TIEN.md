@@ -42,6 +42,7 @@ Ngoại lệ duy nhất là phần **quy trình vận hành**: cổng chạy li�
 | `04-LUAT-CUNG.md` | Luật cứng không được vi phạm (đánh số `SR-xx`) + điểm DỪNG hỏi Bang | Mọi agent |
 | `05-DO-KHO-TASK.md` | Độ khó, rủi ro, model, cách chia nhỏ từng task còn lại | Điều phối |
 | `06-PROMPT-MAU.md` | Prompt mẫu điền sẵn: builder, reviewer (1 người / 2 người chấm mù), fixer, nối lại việc dở, worker dữ liệu, worker asset | Điều phối (dán cho agent con) |
+| `07-PLAN-TONG.md` | **PLAN TỔNG dựa trên nghiên cứu** (thị trường, IOE, phương pháp học, 4 kỹ năng, nguồn dữ liệu và đề thi, UI/VFX/SFX, PWA iPhone): ánh xạ vào task + 12 quyết định khi lệch luật. Plan đầy đủ có nguồn: `docs/audit-max/reports/Nghiên cứu plan game học IELTS.md` | Điều phối (đọc ngay sau 01) |
 | `09-PHUONG-PHAP-HOC.md` | **Phương pháp học** (ưu tiên 2): 18 phương pháp nổi tiếng → luật đo được → game; luật sư phạm cứng PP-C1..C6 | Mọi agent làm game, dữ liệu, reviewer |
 | `10-DATA.md` | Dữ liệu và nội dung: luật, bước, kiểm, ưu tiên | Agent làm T3-B và mọi task đụng `public/data` |
 | `11-ASSET.md` | Asset: tìm, tải, chọn, xử lý, crop ảnh, ngân sách, CREDITS | Agent làm T3-A, T3-C, T4-* |
@@ -55,7 +56,7 @@ Ngoại lệ duy nhất là phần **quy trình vận hành**: cổng chạy li�
 
 **Agent điều phối** (Antigravity, phiên chính):
 1. `docs/audit-max/BAN-GIAO-AGENT.md` (toàn cảnh 15 mục)
-2. Thư mục này theo thứ tự: 00 → 01 → 04 → 02 → 03 → 05 → 09 → 10 → 16 → 15
+2. Thư mục này theo thứ tự: 00 → 01 → **07 (plan tổng) + báo cáo nghiên cứu** → 04 → 02 → 03 → 05 → 09 → 10 → 16 → 15
 3. `docs/audit-max/TASKS.md` (mục của đợt sắp chạy), `LUAT.md`, `07-QUY-TRINH-KIEM-CHEO.md`, `KIEM-THU.md`
 4. `D:\English\DECISIONS.md` (đặc biệt mục D và các dòng ngày 24/11)
 5. File 10–14 chỉ đọc lướt mục §0 "Tóm tắt 10 dòng" để biết giao cho ai

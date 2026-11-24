@@ -101,6 +101,9 @@
 |---|---|
 | SR-85 | Thứ tự: **1 Dữ liệu → 2 Phương pháp học → 3 UI/UX → 4 Tối ưu web → 5 Animation**. Khi hai việc tranh nhau thời gian, quota hay hiệu năng, việc có số nhỏ hơn thắng. Hiệu ứng làm hỏng dữ liệu hiển thị hoặc việc học (che chữ, vội, thưởng câu sai, lag lúc trả lời) = CHẶN |
 | SR-86 | Luật sư phạm cứng PP-C1..C6 (`09-PHUONG-PHAP-HOC.md` §2) có mức CHẶN như luật B của `LUAT.md` |
+| SR-87 | **Không phạt việc học** (plan PP-15): không energy, tim hay giới hạn lượt vì lý do kinh tế; không trừ tài nguyên khi trả lời đúng; giới hạn nào cũng phải có lý do sư phạm, ghi rõ trên UI ("đủ thẻ mới hôm nay") |
+| SR-88 | **Không chép đề thật**: cấm chép, scan hay chuyển thể đề từ IELTS.org/BC/IDP, Cambridge IELTS, ieltsonlinetests, "recent actual tests"; cấm dùng logo/thương hiệu IELTS; forecast chỉ lấy nhãn chủ đề; đề trong app ghi "Đề luyện tập gốc, không phải đề thi thật" (plan DL-06, DL-07, DL-12) |
+| SR-89 | Band chỉ ghi khi đủ điều kiện như thi thật: có audio thật, không retry, chỉ lần chấm đầu tiên; band Writing/Speaking do LLM chấm luôn gắn nhãn "ước lượng" + ≥ 3 nhận xét cụ thể (plan PP-16) |
 
 ## 10. Giữ công đã làm (Bang, 25/11/2026)
 
