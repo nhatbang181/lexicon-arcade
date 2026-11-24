@@ -339,5 +339,22 @@ describe('TrackPlayerController', () => {
       expect(p.getState().status).toBe('audio_missing');
       p.destroy();
     });
+
+    it('TU-03: canplaythrough chuyển trạng thái sang ready và đặt navigator.audioSession="playback"', async () => {
+      const audioSession = { type: 'auto' };
+      const origNav = globalThis.navigator;
+      vi.stubGlobal('navigator', { ...origNav, audioSession });
+      try {
+        player.load('/audio/p1_001.mp3', { examLocked: true });
+        expect(player.getState().status).toBe('loading');
+        mockAudio.emit('canplaythrough');
+        expect(player.getState().status).toBe('ready');
+        await player.play();
+        expect(player.getState().status).toBe('playing');
+        expect(audioSession.type).toBe('playback');
+      } finally {
+        vi.unstubAllGlobals();
+      }
+    });
   });
 });

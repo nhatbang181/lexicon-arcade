@@ -118,6 +118,26 @@ function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
 }
 
+interface NavigatorWithAudioSession {
+  audioSession?: { type: string };
+}
+
+/**
+ * Safari iOS 17+ (TU-03, 14-TOI-UU-WEB §9): đặt audioSession.type = 'playback' để âm thanh học
+ * không bị công tắc im lặng tắt tiếng. Cấm dùng 'transient'/'transient-solo' (bug WebKit 264473).
+ */
+export function ensurePlaybackAudioSession(): void {
+  if (typeof navigator === 'undefined') return;
+  try {
+    const nav = navigator as unknown as NavigatorWithAudioSession;
+    if (nav.audioSession && nav.audioSession.type !== 'playback') {
+      nav.audioSession.type = 'playback';
+    }
+  } catch {
+    // Trình duyệt không hỗ trợ hoặc từ chối đổi audioSession
+  }
+}
+
 function defaultAudioFactory(): AudioElementLike {
   if (typeof Audio === 'function') {
     return new Audio();
@@ -297,8 +317,13 @@ export class TrackPlayerController {
     });
   }
 
+  public unlock(): void {
+    ensurePlaybackAudioSession();
+  }
+
   public async play(): Promise<void> {
     if (this.destroyed || !this.state.url) return;
+    ensurePlaybackAudioSession();
 
     // Exam mode: strictly single pass. Cannot restart once ended.
     if (this.state.examLocked && this.state.examStarted && this.state.status === 'ended') {
@@ -565,6 +590,7 @@ export class TrackPlayerController {
     const pairs: Array<{ type: string; fn: () => void }> = [
       { type: 'loadedmetadata', fn: onLoadedMetadata },
       { type: 'canplay', fn: onCanPlay },
+      { type: 'canplaythrough', fn: onCanPlay },
       { type: 'timeupdate', fn: onTimeUpdate },
       { type: 'ended', fn: onEnded },
       { type: 'error', fn: onError },

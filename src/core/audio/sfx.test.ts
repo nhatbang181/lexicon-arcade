@@ -6,6 +6,9 @@ interface FakeHowlOptions {
 }
 const created: Array<{ options: FakeHowlOptions; unloaded: boolean }> = [];
 
+const mockResume = vi.fn(async () => {});
+const mockHowler = { ctx: { state: 'suspended' as string, resume: mockResume } };
+
 vi.mock('howler', () => {
   class FakeHowl {
     public record: { options: FakeHowlOptions; unloaded: boolean };
@@ -23,7 +26,7 @@ vi.mock('howler', () => {
       this.record.unloaded = true;
     }
   }
-  return { Howl: FakeHowl };
+  return { Howl: FakeHowl, Howler: mockHowler };
 });
 
 describe('X-04 · SFX dựng Howl theo offset trong sfx.json', () => {
@@ -71,5 +74,17 @@ describe('X-04 · SFX dựng Howl theo offset trong sfx.json', () => {
     await sfxEngine.syncManifest();
     expect(created).toHaveLength(1);
     expect(sfxEngine.play('tap')).toBe(1);
+  });
+
+  it('TU-03: unlock() gọi AudioContext.resume() khi suspended và đặt audioSession=playback', async () => {
+    mockResume.mockClear();
+    mockHowler.ctx.state = 'suspended';
+    const audioSession = { type: 'auto' };
+    vi.stubGlobal('navigator', { audioSession });
+    vi.stubGlobal('fetch', vi.fn(async () => Promise.reject(new Error('offline'))));
+    const { sfxEngine } = await import('./sfx');
+    sfxEngine.unlock();
+    expect(audioSession.type).toBe('playback');
+    expect(mockResume).toHaveBeenCalledTimes(1);
   });
 });

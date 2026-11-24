@@ -1,4 +1,5 @@
-import { Howl } from 'howler';
+import { Howl, Howler } from 'howler';
+import { ensurePlaybackAudioSession } from './trackPlayer';
 
 export type CanonicalSfxCue =
   | 'tap'
@@ -92,6 +93,7 @@ class SfxEngine {
   private examMode = false;
   private blocked = false;
   private manifestPromise: Promise<SfxSpriteMap> | null = null;
+  private lifecycleBound = false;
 
   private buildHowl(): Howl | null {
     const base = getBaseUrl();
@@ -108,7 +110,48 @@ class SfxEngine {
     }
   }
 
+  /**
+   * Safari iOS (TU-03, 14-TOI-UU-WEB §9): sau khi app quay lại từ nền hoặc ở lần chạm đầu,
+   * AudioContext có thể ở trạng thái 'suspended'/'interrupted' → gọi resume() và giữ audioSession='playback'.
+   */
+  public resumeAudioContext(): void {
+    ensurePlaybackAudioSession();
+    try {
+      const ctx = (Howler as { ctx?: { state?: string; resume?: () => Promise<void> } } | undefined)?.ctx;
+      if (ctx && (ctx.state === 'suspended' || ctx.state === 'interrupted') && typeof ctx.resume === 'function') {
+        void ctx.resume().catch(() => {
+          // Bỏ qua nếu chưa có thao tác chạm
+        });
+      }
+    } catch {
+      // Môi trường không có Web Audio (test node)
+    }
+  }
+
+  public unlock(): void {
+    this.init();
+    this.resumeAudioContext();
+  }
+
+  private bindLifecycleListeners(): void {
+    if (this.lifecycleBound) return;
+    this.lifecycleBound = true;
+    if (typeof document !== 'undefined' && typeof document.addEventListener === 'function') {
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          this.resumeAudioContext();
+        }
+      });
+    }
+    if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+      window.addEventListener('pageshow', () => this.resumeAudioContext());
+      window.addEventListener('touchend', () => this.resumeAudioContext(), { passive: true });
+    }
+  }
+
   public init(): void {
+    ensurePlaybackAudioSession();
+    this.bindLifecycleListeners();
     if (this.howl) return;
     // The first cue must be playable at once, so build with the built-in offsets,
     // then rebuild if `sfx.json` turns out to differ (X-04).
