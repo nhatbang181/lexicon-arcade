@@ -117,6 +117,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
   sessionRef.current = session;
   const [clickSelectsSentence, setClickSelectsSentence] = useState(true);
   const [mobileBankOpen, setMobileBankOpen] = useState(false);
+  const [passageSheetOpen, setPassageSheetOpen] = useState(false);
 
   // Elapsed seconds on current paragraph
   const [paraElapsedSec, setParaElapsedSec] = useState(0);
@@ -852,25 +853,65 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
             </div>
           )}
 
-          {/* Passage selector if catalog has >1 passage (U7: w-full sm:w-auto max-w-full min-w-0) */}
+          {/* Passage picker button + Sheet (thay <select> gốc để đạt D10 & U7) */}
           {catalog.length > 1 && (
-            <select
-              aria-label="Chọn bài đọc"
-              value={selectedCatalogId}
-              onChange={(e) => void handleSelectCatalogPassage(e.target.value)}
-              className="w-full sm:w-auto max-w-full min-w-0 min-h-[44px] px-2.5 py-1.5 rounded-[var(--radius-sm)] border text-xs font-medium truncate"
-              style={{
-                backgroundColor: 'var(--color-surface-2)',
-                borderColor: 'var(--color-border)',
-                color: 'var(--color-text)',
-              }}
-            >
-              {catalog.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.level} · {c.title}
-                </option>
-              ))}
-            </select>
+            <>
+              <button
+                type="button"
+                aria-label="Chọn bài đọc"
+                onClick={() => setPassageSheetOpen(true)}
+                className="w-full sm:w-auto max-w-full min-w-0 min-h-[44px] inline-flex items-center justify-between gap-2 px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                  color: 'var(--color-text)',
+                }}
+              >
+                <span className="truncate">
+                  {passage.level} · {passage.title}
+                </span>
+                <span className="shrink-0" style={{ color: 'var(--color-text-dim)' }}>
+                  Đổi bài
+                </span>
+              </button>
+              <Sheet
+                open={passageSheetOpen}
+                onClose={() => setPassageSheetOpen(false)}
+                title="Chọn bài đọc R2"
+                subtitle="Chọn bài đọc Matching Headings để luyện tập."
+              >
+                <div className="space-y-2">
+                  {catalog.map((c) => {
+                    const active = c.id === selectedCatalogId;
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        onClick={() => {
+                          setPassageSheetOpen(false);
+                          void handleSelectCatalogPassage(c.id);
+                        }}
+                        className="w-full text-left min-h-[44px] px-3.5 py-2.5 rounded-[var(--radius-md)] border cursor-pointer transition-colors"
+                        style={{
+                          backgroundColor: active
+                            ? 'color-mix(in srgb, var(--color-reading) 14%, var(--color-surface-2))'
+                            : 'var(--color-surface-2)',
+                          borderColor: active ? 'var(--color-reading)' : 'var(--color-border)',
+                          color: 'var(--color-text)',
+                        }}
+                      >
+                        <div className="text-sm font-semibold">
+                          {c.level} · {c.title}
+                        </div>
+                        <div className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                          {c.paragraphCount} đoạn · {c.wordCount} từ
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </Sheet>
+            </>
           )}
 
           {/* Skimming Timer */}
@@ -930,7 +971,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                 onClick={() => setClickSelectsSentence((v) => !v)}
                 aria-pressed={clickSelectsSentence}
                 data-testid="r2-toggle-sentence-select"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
+                className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
                 style={{
                   backgroundColor: clickSelectsSentence
                     ? 'color-mix(in srgb, var(--color-info) 16%, var(--color-surface))'

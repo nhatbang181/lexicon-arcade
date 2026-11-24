@@ -39,6 +39,7 @@ import {
   Pill,
   QuestionNav,
   RecapScreen,
+  Sheet,
   Skeleton,
   formatSeconds,
   type QuestionNavItem,
@@ -48,7 +49,8 @@ import {
 import { feedbackSlideVariants, reducedRouteVariants } from '../../design/motion';
 import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import { userItemRepo } from '../../core/storage/repos/userItemRepo';
-import { ExamFrame, PassageView, type PassageMobileTab } from '../_shared';
+import { ExamFrame } from '../_shared/ExamFrame';
+import { PassageView, type PassageMobileTab } from '../_shared/PassageView';
 import type { GameProps } from '../registry';
 import { createProgressSaver } from './progressSaver';
 import {
@@ -460,6 +462,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
   );
   const [mobileTab, setMobileTab] = useState<PassageMobileTab>('passage');
   const [clickSelectsSentence, setClickSelectsSentence] = useState(false);
+  const [passageSheetOpen, setPassageSheetOpen] = useState(false);
 
   // Judge mode state
   const [judgeState, setJudgeState] = useState<JudgeSessionState | null>(null);
@@ -1107,9 +1110,9 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         borderColor: 'var(--color-border)',
       }}
     >
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2 min-w-0 max-w-full">
         <div
-          className="inline-flex items-center p-1 rounded-[var(--radius-md)] border gap-1"
+          className="inline-flex flex-wrap items-center p-1 rounded-[var(--radius-md)] border gap-1 max-w-full"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -1123,7 +1126,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             aria-selected={activeMode === 'judge'}
             onClick={() => switchMode('judge')}
             data-testid="r1-mode-judge"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
             style={{
               backgroundColor:
                 activeMode === 'judge' ? 'var(--color-reading)' : 'transparent',
@@ -1140,7 +1143,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             aria-selected={activeMode === 'passage_training'}
             onClick={() => switchMode('passage_training')}
             data-testid="r1-mode-passage-training"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
             style={{
               backgroundColor:
                 activeMode === 'passage_training' ? 'var(--color-reading)' : 'transparent',
@@ -1157,7 +1160,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             aria-selected={false}
             onClick={() => switchMode('passage_exam')}
             data-testid="r1-mode-passage-exam"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
             style={{
               backgroundColor: 'transparent',
               color: 'var(--color-text-dim)',
@@ -1168,25 +1171,64 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           </button>
         </div>
 
-        {/* Passage selector */}
-        <select
-          aria-label="Chọn bài đọc"
-          value={selectedCatalogId}
-          onChange={(e) => setSelectedCatalogId(e.target.value)}
+        {/* Passage picker button + Sheet (thay <select> gốc để đạt D3 44px & D10) */}
+        <button
+          type="button"
+          onClick={() => setPassageSheetOpen(true)}
           data-testid="r1-passage-select"
-          className="min-h-[36px] px-3 py-1.5 rounded-[var(--radius-sm)] border text-xs font-medium max-w-[280px] sm:max-w-[360px]"
+          aria-label="Chọn bài đọc"
+          className="w-full sm:w-auto min-w-0 max-w-full sm:max-w-[340px] inline-flex items-center justify-between gap-2 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
             color: 'var(--color-text)',
           }}
         >
-          {catalog.map((c) => (
-            <option key={c.id} value={c.id}>
-              [{c.level}] {c.title} ({c.questionCount} câu)
-            </option>
-          ))}
-        </select>
+          <span className="truncate min-w-0">
+            [{passage.level}] {passage.title}
+          </span>
+          <span className="shrink-0" style={{ color: 'var(--color-text-dim)' }}>
+            Đổi bài
+          </span>
+        </button>
+
+        <Sheet
+          open={passageSheetOpen}
+          onClose={() => setPassageSheetOpen(false)}
+          title="Chọn bài đọc R1"
+          subtitle="Chọn một bài đọc IELTS Academic phù hợp."
+        >
+          <div className="space-y-2">
+            {catalog.map((c) => {
+              const active = c.id === selectedCatalogId;
+              return (
+                <button
+                  key={c.id}
+                  type="button"
+                  onClick={() => {
+                    setSelectedCatalogId(c.id);
+                    setPassageSheetOpen(false);
+                  }}
+                  className="w-full text-left min-h-[44px] px-3.5 py-2.5 rounded-[var(--radius-md)] border cursor-pointer transition-colors"
+                  style={{
+                    backgroundColor: active
+                      ? 'color-mix(in srgb, var(--color-reading) 14%, var(--color-surface-2))'
+                      : 'var(--color-surface-2)',
+                    borderColor: active ? 'var(--color-reading)' : 'var(--color-border)',
+                    color: 'var(--color-text)',
+                  }}
+                >
+                  <div className="text-sm font-semibold">
+                    [{c.level}] {c.title}
+                  </div>
+                  <div className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                    {c.questionCount} câu · {c.wordCount} từ
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </Sheet>
       </div>
 
       {/* Live Judge HUD */}
@@ -1608,7 +1650,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                         playSfx('tap');
                       }}
                       data-testid="r1-hint-para-btn"
-                      className="inline-flex items-center gap-1 text-xs font-medium px-2 py-1 rounded border cursor-pointer"
+                      className="inline-flex items-center gap-1.5 min-h-[44px] text-xs font-medium px-3 py-2 rounded border cursor-pointer"
                       style={{
                         backgroundColor: 'var(--color-surface-2)',
                         borderColor: 'var(--color-border)',

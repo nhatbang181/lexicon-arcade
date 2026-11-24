@@ -146,14 +146,12 @@ test.describe('M2 Reading Games: R1 TFNG Judge & R2 Headline Editor', () => {
 
     expect(createdTfngId).toMatch(/^tfng:/);
 
-    // Mở V1 Daily Run và xác nhận không lỗi, có thẻ ôn đến hạn
+    // Mở V1 Daily Run và xác nhận có đúng 1 thẻ tfng_retry đến từ R1
     await page.goto('/#/play/v1', { waitUntil: 'networkidle' });
     await expect(page.getByText('V1 · Daily Run')).toBeVisible({ timeout: 15_000 });
-    // Nếu đang ở màn bản đồ run, bấm Bắt đầu (Enter) để vào thẻ tfng_retry
     const startBtn = page.getByRole('button', { name: /Bắt đầu/i }).first();
-    if (await startBtn.isVisible().catch(() => false)) {
-      await startBtn.click();
-    }
+    await expect(startBtn).toBeVisible({ timeout: 15_000 });
+    await startBtn.click();
     await expect(page.getByRole('button', { name: /TRUE|FALSE|NOT GIVEN|YES|NO/i }).first()).toBeVisible({
       timeout: 15_000,
     });

@@ -970,7 +970,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
               </span>
               {state.forge.audioUk && (
                 <AudioButton
-                  size="sm"
+                  size="md"
                   playing={audioPlaying}
                   onToggle={() => handlePlayAudio(state.forge.audioUk)}
                   label="Nghe"

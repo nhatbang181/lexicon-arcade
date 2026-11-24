@@ -1,0 +1,822 @@
+{
+ "at": "2026-11-24T18:45:15.596Z",
+ "base": "http://127.0.0.1:5221/#",
+ "runs": [
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 1,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 5,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 1,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 5,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 1,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 5,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 18,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/v2",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/v3",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/r1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 18,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/r2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  }
+ ],
+ "total": {
+  "CHAN": 0,
+  "NANG": 24,
+  "NHE": 0
+ },
+ "byCode": {
+  "J9": 24
+ }
+}
