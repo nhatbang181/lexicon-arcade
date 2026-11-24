@@ -366,7 +366,8 @@
           "prompt": "Modern eco-architects value porous lime walls because they help balance ______ inside buildings naturally.",
           "answer": {
             "accepted": [
-              "indoor humidity"
+              "indoor humidity",
+              "humidity"
             ]
           },
           "evidence": [
@@ -393,7 +394,8 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
   }
 }
