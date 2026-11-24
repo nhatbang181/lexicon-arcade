@@ -9,6 +9,7 @@ import type {
 } from '../../core/content/schemas';
 import { createNewCard, type SRSCard } from '../../core/srs/fsrsAdapter';
 import type { Face } from '../../core/srs/faces';
+import type { V1ContentBundle } from '../../games/v1-daily-run/content';
 
 const FIXTURE_PROVENANCE: Provenance = {
   createdBy: 'human',
@@ -980,13 +981,7 @@ export const V1_FIXTURE_DICTATION: DictationItem[] = [
   },
 ];
 
-export interface V1ContentBundle {
-  vocab: VocabItem[];
-  collocations: CollocationItem[];
-  paraphrases: ParaphraseItem[];
-  errors: ErrorItem[];
-  dictations: DictationItem[];
-}
+export type { V1ContentBundle };
 
 export const V1_FIXTURE_CONTENT: V1ContentBundle = {
   vocab: V1_FIXTURE_VOCAB,
@@ -1021,6 +1016,7 @@ export function buildV1FixtureCards(now: Date = new Date()): SRSCard[] {
       now,
       unlocked: true,
       starred: opts.starred ?? false,
+      source: 'fixture',
     });
     const elapsedDays = Math.max(1, Math.round(opts.overdueHours / 24));
     cards.push({
@@ -1043,6 +1039,7 @@ export function buildV1FixtureCards(now: Date = new Date()): SRSCard[] {
       now: new Date(nowMs - (100 - indexOffset) * 60_000),
       unlocked: true,
       starred,
+      source: 'fixture',
     });
     cards.push(base);
   };

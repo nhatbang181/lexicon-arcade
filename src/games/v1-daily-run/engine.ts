@@ -28,8 +28,19 @@ import { isRareMasteredCard } from '../../core/gamification/xp';
 import { levenshteinDistance } from '../../core/text/answerMatch';
 import { normalizeText, normalizeTypography } from '../../core/text/normalize';
 import { areSpellingVariants, getSpellingVariant } from '../../core/text/spellingVariants';
-import type { AttemptItem, ReviewRecord } from '../../core/storage/db';
-import type { V1ContentBundle } from '../../test/fixtures/v1_fixtures';
+import { alignTranscript } from '../../core/text/align';
+import { scoreListeningAnswer } from '../../core/scoring/listeningAnswer';
+import type {
+  AttemptItem,
+  AttemptRecord,
+  ReviewRecord,
+  UserItemAudioClip,
+  UserItemKind,
+} from '../../core/storage/db';
+import type { V1ContentBundle, V1ListeningRef, V1ReadingRef } from './content';
+import { localDayKey, placeCorrectSeeded, seededRng, shuffleSeeded } from './seed';
+
+export type { V1ContentBundle } from './content';
 
 // ---------------------------------------------------------------------------
 // Constants (docs/games/V1-DAILY-RUN.md §4)
@@ -53,6 +64,12 @@ export const V1_FACES = [
   'col_gap',
   'para_match',
   'err_fix',
+  // Mặt mới cho thẻ do game khác tạo (G1 / V1-2)
+  'tfng_retry',
+  'head_retry',
+  'ltrap_replay',
+  'dict_full',
+  'err_user',
 ] as const;
 
 export type V1Face = (typeof V1_FACES)[number];
@@ -209,6 +226,74 @@ export interface ErrFixPromptPayload {
   letterCount: number;
 }
 
+export interface TfngRetryPromptPayload {
+  face: 'tfng_retry';
+  qType: 'tfng' | 'ynng';
+  passageTitle: string;
+  paragraphLabel: string;
+  paragraphText: string;
+  statement: string;
+  choices: string[];
+  correctIndex: number;
+  correctAnswer: string;
+  evidenceQuote?: string;
+  explanationVi: string;
+}
+
+export interface HeadRetryPromptPayload {
+  face: 'head_retry';
+  passageTitle: string;
+  paragraphLabel: string;
+  paragraphText: string;
+  choices: string[];
+  correctIndex: number;
+  correctAnswer: string;
+  decoyReasons: Record<string, string>;
+  evidenceQuote?: string;
+  explanationVi: string;
+}
+
+export interface LtrapReplayPromptPayload {
+  face: 'ltrap_replay';
+  questionPrompt: string;
+  acceptedAnswers: string[];
+  audioUrl?: string;
+  clipStart: number;
+  clipEnd: number;
+  transcriptLine?: string;
+  trapType?: string;
+  decoy?: string;
+  trapExplanationVi: string;
+  placeholderMask: string;
+  letterCount: number;
+}
+
+export interface DictFullPromptPayload {
+  face: 'dict_full';
+  text: string;
+  acceptedVariants: string[];
+  audioUrl?: string;
+  level: number;
+  tipsVi: string[];
+  maxPlays: number;
+}
+
+export interface ErrUserPromptPayload {
+  face: 'err_user';
+  userKind: UserItemKind;
+  /** Nhãn hiển thị phía trên: "Lỗi từng gặp", "Cụm kiểu Việt"… */
+  labelVi: string;
+  front: string;
+  back: string;
+  acceptedAnswers: string[];
+  noteVi: string;
+  /** Câu ví dụ ĐÚNG dùng cụm (bằng chứng B2). Không bao giờ là câu sai của người học. */
+  exampleEn?: string;
+  audioClip?: UserItemAudioClip;
+  placeholderMask: string;
+  letterCount: number;
+}
+
 export type V1PromptPayload =
   | IntroPromptPayload
   | RecogPromptPayload
@@ -217,7 +302,28 @@ export type V1PromptPayload =
   | ListenSpellPromptPayload
   | ColGapPromptPayload
   | ParaMatchPromptPayload
-  | ErrFixPromptPayload;
+  | ErrFixPromptPayload
+  | TfngRetryPromptPayload
+  | HeadRetryPromptPayload
+  | LtrapReplayPromptPayload
+  | DictFullPromptPayload
+  | ErrUserPromptPayload;
+
+/** Prompt có danh sách lựa chọn bấm/phím 1–4. */
+export type V1ChoicePrompt =
+  | RecogPromptPayload
+  | ParaMatchPromptPayload
+  | TfngRetryPromptPayload
+  | HeadRetryPromptPayload;
+
+export function isChoicePrompt(prompt: V1PromptPayload): prompt is V1ChoicePrompt {
+  return (
+    prompt.face === 'recog' ||
+    prompt.face === 'para_match' ||
+    prompt.face === 'tfng_retry' ||
+    prompt.face === 'head_retry'
+  );
+}
 
 // ---------------------------------------------------------------------------
 // Run Node, Feedback, Events, and State
@@ -282,6 +388,13 @@ export type V1EngineEvent =
       type: 'intro_know_already';
       nodeId: string;
       itemId: string;
+    }
+  | {
+      type: 'intro_seen';
+      nodeId: string;
+      itemId: string;
+      /** Vị trí node `recog` được chèn lại trong cùng run (V1-1). */
+      insertedAtIndex: number;
     }
   | {
       type: 'card_reinserted';
@@ -374,6 +487,8 @@ export interface V1RunState {
   recap: V1RecapSummary | null;
   lastWeekAccuracy?: number | null;
   content: V1ContentBundle;
+  /** Thẻ đáng lẽ vào hàng đợi nhưng không dựng được nội dung (V1-2): bị bỏ, caller ghi `missing_item`. */
+  missingItems: Array<{ cardId: string; itemId: string; face: string; reason?: 'missing_audio' }>;
 }
 
 export interface CreateV1RunOptions {
@@ -686,43 +801,157 @@ export function extractErrorCorrection(item: ErrorItem): {
 // ---------------------------------------------------------------------------
 
 export function getNodeKindForCard(itemId: string, face: V1Face): V1NodeKind {
-  if (face === 'listen_spell' || itemId.startsWith('dict:')) return 'listen';
-  if (itemId.startsWith('col:') || face === 'col_gap') return 'collocation';
-  if (itemId.startsWith('para:') || face === 'para_match') return 'paraphrase';
-  if (itemId.startsWith('err:') || face === 'err_fix') return 'error';
+  if (
+    face === 'listen_spell' ||
+    face === 'dict_full' ||
+    face === 'ltrap_replay' ||
+    itemId.startsWith('dict:') ||
+    itemId.startsWith('ltrap:')
+  ) {
+    return 'listen';
+  }
+  if (face === 'col_gap' || itemId.startsWith('col:')) return 'collocation';
+  if (
+    face === 'para_match' ||
+    face === 'tfng_retry' ||
+    face === 'head_retry' ||
+    itemId.startsWith('para:') ||
+    itemId.startsWith('tfng:') ||
+    itemId.startsWith('head:')
+  ) {
+    return 'paraphrase';
+  }
+  if (face === 'err_fix' || face === 'err_user' || itemId.startsWith('err:')) return 'error';
   return 'vocab';
 }
 
-/**
- * Normalize any SRS Face into one of the 8 V1 faces.
- */
-export function normalizeToV1Face(face: Face, itemId: string, isNewVocab = false): V1Face {
-  if (isNewVocab && itemId.startsWith('vocab:')) {
-    return 'intro';
-  }
-  if (itemId.startsWith('col:')) return 'col_gap';
-  if (itemId.startsWith('para:')) return 'para_match';
-  if (itemId.startsWith('err:')) return 'err_fix';
-  if (itemId.startsWith('dict:')) return 'listen_spell';
+interface ContentIndex {
+  vocab: Map<string, VocabItem>;
+  col: Map<string, CollocationItem>;
+  para: Map<string, ParaphraseItem>;
+  err: Map<string, ErrorItem>;
+  dict: Map<string, DictationItem>;
+}
 
+const contentIndexCache = new WeakMap<V1ContentBundle, ContentIndex>();
+
+function getContentIndex(content: V1ContentBundle): ContentIndex {
+  const cached = contentIndexCache.get(content);
+  if (cached) return cached;
+  const index: ContentIndex = {
+    vocab: new Map(content.vocab.map((v) => [v.id, v])),
+    col: new Map(content.collocations.map((c) => [c.id, c])),
+    para: new Map(content.paraphrases.map((p) => [p.id, p])),
+    err: new Map(content.errors.map((e) => [e.id, e])),
+    dict: new Map(content.dictations.map((d) => [d.id, d])),
+  };
+  contentIndexCache.set(content, index);
+  return index;
+}
+
+/**
+ * Thẻ vocab mới chưa xem giới thiệu thì hiện `intro` đúng 1 lần (V1-1). Mặt khác (`recall_*`,
+ * `listen_spell`) hiện thẳng mặt của nó; thẻ `recog` đã `introSeenAt` hoặc đã có lịch thì không intro nữa.
+ */
+export function shouldShowIntro(card: SRSCard): boolean {
+  return (
+    card.itemId.startsWith('vocab:') &&
+    card.face === 'recog' &&
+    card.state === State.New &&
+    !card.introSeenAt
+  );
+}
+
+function vocabFaceFor(face: Face): V1Face {
   switch (face) {
-    case 'intro':
-    case 'recog':
     case 'recall_meaning':
     case 'recall_cloze':
     case 'listen_spell':
-    case 'col_gap':
-    case 'para_match':
-    case 'err_fix':
       return face;
-    case 'dict_full':
-    case 'ltrap_replay':
-      return 'listen_spell';
     case 'use':
       return 'recall_cloze';
     default:
       return 'recog';
   }
+}
+
+function userItemOf(content: V1ContentBundle, itemId: string) {
+  return content.extras?.userItems[itemId];
+}
+
+function l1ColTrapSource(itemId: string, idx: ContentIndex): CollocationItem | null {
+  if (!itemId.startsWith('err:l1col_')) return null;
+  const col = idx.col.get(`col:${itemId.slice('err:l1col_'.length)}`);
+  return col && col.l1Traps.length > 0 ? col : null;
+}
+
+/**
+ * Quyết định thẻ SRS này hiển thị bằng mặt V1 nào. Trả `null` khi không dựng được nội dung thật
+ * (không tìm thấy item): thẻ bị bỏ khỏi run và caller ghi `eventRepo.log('missing_item')`.
+ * KHÔNG BAO GIỜ rơi về `content.X[0]` (V1-2).
+ */
+export function resolveV1Face(
+  card: SRSCard,
+  content: V1ContentBundle,
+  options: { allowIntro?: boolean } = {},
+): V1Face | null {
+  const { allowIntro = true } = options;
+  const id = card.itemId;
+  const idx = getContentIndex(content);
+  const extras = content.extras;
+
+  if (id.startsWith('vocab:')) {
+    if (!idx.vocab.has(id)) return null;
+    if (allowIntro && shouldShowIntro(card)) return 'intro';
+    return vocabFaceFor(card.face);
+  }
+  if (id.startsWith('col:')) {
+    if (idx.col.has(id)) return 'col_gap';
+    return userItemOf(content, id) ? 'err_user' : null;
+  }
+  if (id.startsWith('para:')) {
+    const para = idx.para.get(id);
+    // Item "not_equivalent" (V3 Level 4) không có cụm paraphrase đúng để chọn → không làm thẻ V1.
+    return para && para.relation === 'equivalent' ? 'para_match' : null;
+  }
+  if (id.startsWith('err:')) {
+    if (idx.err.has(id)) return 'err_fix';
+    if (l1ColTrapSource(id, idx)) return 'err_user';
+    return userItemOf(content, id) ? 'err_user' : null;
+  }
+  // Thẻ nghe không có file audio thật: không dựng node (không chấm Again cho câu không nghe được).
+  if ((id.startsWith('dict:') || id.startsWith('ltrap:')) && extras?.missingAudio?.includes(id)) {
+    return null;
+  }
+  if (id.startsWith('dict:')) {
+    if (idx.dict.has(id)) return card.face === 'dict_full' ? 'dict_full' : 'listen_spell';
+    return userItemOf(content, id) ? 'err_user' : null;
+  }
+  if (id.startsWith('tfng:')) {
+    const ref = extras?.reading[id];
+    if (ref && ref.kind === 'tfng') return 'tfng_retry';
+    return userItemOf(content, id) ? 'err_user' : null;
+  }
+  if (id.startsWith('head:')) {
+    const ref = extras?.reading[id];
+    if (ref && ref.kind === 'head') return 'head_retry';
+    return userItemOf(content, id) ? 'err_user' : null;
+  }
+  if (id.startsWith('ltrap:')) {
+    if (extras?.listening[id]) return 'ltrap_replay';
+    return userItemOf(content, id) ? 'err_user' : null;
+  }
+  return null;
+}
+
+function missingEntry(card: SRSCard, content: V1ContentBundle): V1RunState['missingItems'][number] {
+  const entry: V1RunState['missingItems'][number] = {
+    cardId: card.id,
+    itemId: card.itemId,
+    face: card.face,
+  };
+  if (content.extras?.missingAudio?.includes(card.itemId)) entry.reason = 'missing_audio';
+  return entry;
 }
 
 /**
@@ -786,93 +1015,296 @@ function resolveCollocationPhrases(
   return found.slice(0, 2);
 }
 
+function pickRecogDistractors(
+  vocab: VocabItem,
+  content: V1ContentBundle,
+  rng: () => number,
+): string[] {
+  const len = vocab.meaningVi.length;
+  const lo = len * 0.6;
+  const hi = len * 1.4;
+  const pos = vocab.pos[0];
+  const topics = new Set<string>(vocab.topics ?? []);
+  // Bậc ưu tiên: cùng loại từ + cùng chủ đề + độ dài ±40% → ... → bất kỳ (V1-4)
+  const tiers: string[][] = [[], [], [], []];
+  for (const v of content.vocab) {
+    if (v.id === vocab.id || v.meaningVi === vocab.meaningVi) continue;
+    const lenOk = v.meaningVi.length >= lo && v.meaningVi.length <= hi;
+    const samePos = v.pos[0] === pos;
+    const sharesTopic = (v.topics ?? []).some((t) => topics.has(t));
+    if (lenOk && samePos && sharesTopic) tiers[0].push(v.meaningVi);
+    else if (lenOk && samePos) tiers[1].push(v.meaningVi);
+    else if (lenOk) tiers[2].push(v.meaningVi);
+    else tiers[3].push(v.meaningVi);
+  }
+  const out: string[] = [];
+  const used = new Set<string>([vocab.meaningVi]);
+  for (const tier of tiers) {
+    for (const meaning of shuffleSeeded(tier, rng)) {
+      if (out.length >= 3) break;
+      if (used.has(meaning)) continue;
+      used.add(meaning);
+      out.push(meaning);
+    }
+    if (out.length >= 3) break;
+  }
+  return out;
+}
+
+function splitAlternatives(text: string): string[] {
+  const parts = text
+    .split(/\s*\|\s*|\s*;\s*/)
+    .map((p) => p.trim())
+    .filter(Boolean);
+  return parts.length > 0 ? parts : [text.trim()];
+}
+
+function buildReadingChoicePrompt(
+  ref: V1ReadingRef,
+  rng: () => number,
+): TfngRetryPromptPayload | HeadRetryPromptPayload | null {
+  const correct = ref.correctAnswer;
+  if (ref.kind === 'tfng') {
+    const choices = ref.options.length >= 2 ? ref.options : ref.qType === 'ynng'
+      ? ['YES', 'NO', 'NOT GIVEN']
+      : ['TRUE', 'FALSE', 'NOT GIVEN'];
+    const correctIndex = choices.findIndex((c) => normalizeText(c) === normalizeText(correct));
+    if (correctIndex < 0) return null;
+    return {
+      face: 'tfng_retry',
+      qType: ref.qType === 'ynng' ? 'ynng' : 'tfng',
+      passageTitle: ref.passageTitle,
+      paragraphLabel: ref.paragraphLabel,
+      paragraphText: ref.paragraphText,
+      statement: ref.statement,
+      choices,
+      correctIndex,
+      correctAnswer: choices[correctIndex],
+      evidenceQuote: ref.evidenceQuote,
+      explanationVi: ref.explanationVi,
+    };
+  }
+  const distractors = shuffleSeeded(
+    ref.options.filter((o) => normalizeText(o) !== normalizeText(correct)),
+    rng,
+  ).slice(0, 3);
+  if (distractors.length < 1) return null;
+  const placed = placeCorrectSeeded(correct, distractors, rng);
+  return {
+    face: 'head_retry',
+    passageTitle: ref.passageTitle,
+    paragraphLabel: ref.paragraphLabel,
+    paragraphText: ref.paragraphText,
+    choices: placed.choices,
+    correctIndex: placed.correctIndex,
+    correctAnswer: correct,
+    decoyReasons: ref.decoyReasons ?? {},
+    evidenceQuote: ref.evidenceQuote,
+    explanationVi: ref.explanationVi,
+  };
+}
+
+function buildErrUserPrompt(
+  itemId: string,
+  content: V1ContentBundle,
+  rng: () => number,
+): ErrUserPromptPayload | null {
+  const idx = getContentIndex(content);
+
+  const l1col = l1ColTrapSource(itemId, idx);
+  if (l1col) {
+    const trap = l1col.l1Traps[Math.floor(rng() * l1col.l1Traps.length)];
+    const gap = l1col.gaps[0];
+    const variants = [gap.primary, ...gap.answers].map((a) =>
+      gap.display.includes('___') ? gap.display.replace('___', a) : a,
+    );
+    const accepted = Array.from(new Set([l1col.phrase, ...variants]));
+    return {
+      face: 'err_user',
+      userKind: 'collocation',
+      labelVi: 'Cụm kiểu Việt → cụm tự nhiên',
+      front: trap.wrong,
+      back: l1col.phrase,
+      acceptedAnswers: accepted,
+      noteVi: trap.whyVi,
+      exampleEn: l1col.example,
+      placeholderMask: buildPlaceholderMask(l1col.phrase, 0),
+      letterCount: countTargetLetters(l1col.phrase),
+    };
+  }
+
+  const item = userItemOf(content, itemId);
+  if (!item) return null;
+  const labelByKind: Record<UserItemKind, string> = {
+    error: 'Lỗi bạn từng mắc: sửa lại cho đúng',
+    collocation: 'Cụm bạn từng dùng chưa tự nhiên',
+    tfng: 'Câu hỏi Reading cần ôn lại',
+    head: 'Câu hỏi Reading cần ôn lại',
+    ltrap: 'Bẫy Listening cần ôn lại',
+    dict: 'Chép chính tả cần ôn lại',
+    other: 'Ôn lại',
+  };
+  return {
+    face: 'err_user',
+    userKind: item.kind,
+    labelVi: labelByKind[item.kind] ?? 'Ôn lại',
+    front: item.front,
+    back: item.back,
+    acceptedAnswers: splitAlternatives(item.back),
+    noteVi: item.noteVi,
+    audioClip: item.audioClip,
+    placeholderMask: buildPlaceholderMask(splitAlternatives(item.back)[0], 0),
+    letterCount: countTargetLetters(splitAlternatives(item.back)[0]),
+  };
+}
+
+export interface BuildPromptOptions {
+  /** Khoá seed: thường `${cardId}|${reps}|${ngày}` (+ lần retry) → nhiễu và vị trí đáp án đổi theo lần ôn. */
+  seedKey?: string;
+}
+
 /**
  * Build the prompt payload for a specific itemId and V1Face.
+ * Trả `null` nếu không tìm thấy item thật (không bao giờ rơi về phần tử đầu danh sách, V1-2).
  */
 export function buildPromptForCard(
   itemId: string,
   face: V1Face,
   content: V1ContentBundle,
   skillLevel = 1,
-): V1PromptPayload {
-  // 1. Collocation item -> col_gap
-  if (itemId.startsWith('col:') || face === 'col_gap') {
-    const col =
-      content.collocations.find((c) => c.id === itemId) ?? content.collocations[0];
-    const gap = col.gaps[0];
-    return {
-      face: 'col_gap',
-      phrase: col.phrase,
-      pattern: col.pattern,
-      displayGap: gap.display,
-      meaningVi: col.meaningVi,
-      exampleEn: col.example,
-      primaryAnswer: gap.primary,
-      acceptedAnswers: Array.from(new Set([gap.primary, ...gap.answers, col.phrase])),
-      placeholderMask: buildPlaceholderMask(gap.primary, 0),
-      letterCount: countTargetLetters(gap.primary),
-      l1Traps: col.l1Traps,
-    };
-  }
+  options: BuildPromptOptions = {},
+): V1PromptPayload | null {
+  const idx = getContentIndex(content);
+  const seedKey = options.seedKey ?? itemId;
+  const rng = seededRng(`${seedKey}|${face}`);
 
-  // 2. Paraphrase item -> para_match
-  if (itemId.startsWith('para:') || face === 'para_match') {
-    const para =
-      content.paraphrases.find((p) => p.id === itemId) ?? content.paraphrases[0];
-    const decoyTexts = para.decoys.map((d) => d.text);
-    while (decoyTexts.length < 3) {
-      const extra = content.paraphrases.find((p) => p.id !== para.id)?.target.text ?? 'unrelated academic phrase';
-      if (!decoyTexts.includes(extra)) decoyTexts.push(extra);
-      else break;
+  switch (face) {
+    case 'col_gap': {
+      const col = idx.col.get(itemId);
+      if (!col) return null;
+      const gap = col.gaps[0];
+      return {
+        face: 'col_gap',
+        phrase: col.phrase,
+        pattern: col.pattern,
+        displayGap: gap.display,
+        meaningVi: col.meaningVi,
+        exampleEn: col.example,
+        primaryAnswer: gap.primary,
+        acceptedAnswers: Array.from(new Set([gap.primary, ...gap.answers, col.phrase])),
+        placeholderMask: buildPlaceholderMask(gap.primary, 0),
+        letterCount: countTargetLetters(gap.primary),
+        l1Traps: col.l1Traps,
+      };
     }
 
-    const rawChoices = [para.target.text, ...decoyTexts.slice(0, 3)];
-    // Deterministic rotation based on itemId char code sum so choices aren't always index 0
-    const shift = [...para.id].reduce((acc, ch) => acc + ch.charCodeAt(0), 0) % rawChoices.length;
-    const choices = rawChoices.map((_, idx) => rawChoices[(idx + shift) % rawChoices.length]);
-    const correctIndex = choices.indexOf(para.target.text);
-    const decoyReasons: Record<string, string> = {};
-    for (const d of para.decoys) {
-      decoyReasons[d.text] = d.whyVi;
+    case 'para_match': {
+      const para = idx.para.get(itemId);
+      if (!para) return null;
+      const decoyTexts = Array.from(new Set(para.decoys.map((d) => d.text)));
+      if (decoyTexts.length < 3) {
+        const spare = shuffleSeeded(
+          content.paraphrases
+            .filter((p) => p.id !== para.id && p.relation === 'equivalent')
+            .map((p) => p.target.text),
+          rng,
+        );
+        for (const text of spare) {
+          if (decoyTexts.length >= 3) break;
+          if (text !== para.target.text && !decoyTexts.includes(text)) decoyTexts.push(text);
+        }
+      }
+      const placed = placeCorrectSeeded(
+        para.target.text,
+        shuffleSeeded(decoyTexts.slice(0, 3), rng),
+        rng,
+      );
+      const decoyReasons: Record<string, string> = {};
+      for (const d of para.decoys) {
+        decoyReasons[d.text] = d.whyVi;
+      }
+      return {
+        face: 'para_match',
+        questionPhrase: para.questionPhrase,
+        contextEn: para.context,
+        choices: placed.choices,
+        correctIndex: placed.correctIndex,
+        correctAnswer: para.target.text,
+        decoyReasons,
+        explanationVi: para.explanationVi,
+      };
     }
 
-    return {
-      face: 'para_match',
-      questionPhrase: para.questionPhrase,
-      contextEn: para.context,
-      choices,
-      correctIndex: correctIndex >= 0 ? correctIndex : 0,
-      correctAnswer: para.target.text,
-      decoyReasons,
-      explanationVi: para.explanationVi,
-    };
+    case 'err_fix': {
+      const err = idx.err.get(itemId);
+      if (!err) return null;
+      const { prefixText, errorSpanText, suffixText, expectedCorrection } =
+        extractErrorCorrection(err);
+      return {
+        face: 'err_fix',
+        tag: err.tag,
+        wrongSentence: err.wrong,
+        prefixText,
+        errorSpanText,
+        suffixText,
+        expectedCorrection,
+        fullCorrectSentence: err.correct,
+        ruleVi: err.ruleVi,
+        placeholderMask: buildPlaceholderMask(expectedCorrection, 0),
+        letterCount: countTargetLetters(expectedCorrection),
+      };
+    }
+
+    case 'err_user':
+      return buildErrUserPrompt(itemId, content, rng);
+
+    case 'tfng_retry':
+    case 'head_retry': {
+      const ref = content.extras?.reading[itemId];
+      return ref ? buildReadingChoicePrompt(ref, rng) : null;
+    }
+
+    case 'ltrap_replay': {
+      const ref: V1ListeningRef | undefined = content.extras?.listening[itemId];
+      if (!ref) return null;
+      return {
+        face: 'ltrap_replay',
+        questionPrompt: ref.questionPrompt,
+        acceptedAnswers: ref.acceptedAnswers,
+        audioUrl: ref.audioPath,
+        clipStart: ref.clipStart,
+        clipEnd: ref.clipEnd,
+        transcriptLine: ref.transcriptLine,
+        trapType: ref.trapType,
+        decoy: ref.decoy,
+        trapExplanationVi: ref.trapExplanationVi,
+        placeholderMask: buildPlaceholderMask(ref.acceptedAnswers[0] ?? '', 0),
+        letterCount: countTargetLetters(ref.acceptedAnswers[0] ?? ''),
+      };
+    }
+
+    case 'dict_full': {
+      const dict = idx.dict.get(itemId);
+      if (!dict) return null;
+      return {
+        face: 'dict_full',
+        text: dict.text,
+        acceptedVariants: Array.from(new Set([dict.text, ...(dict.acceptedVariants ?? [])])),
+        audioUrl: dict.audio,
+        level: dict.level,
+        tipsVi: dict.focus.map((f) => f.tipVi).slice(0, 3),
+        maxPlays: skillLevel >= 7 ? 2 : 3,
+      };
+    }
+
+    default:
+      break;
   }
 
-  // 3. Error item -> err_fix
-  if (itemId.startsWith('err:') || face === 'err_fix') {
-    const err = content.errors.find((e) => e.id === itemId) ?? content.errors[0];
-    const { prefixText, errorSpanText, suffixText, expectedCorrection } =
-      extractErrorCorrection(err);
-
-    return {
-      face: 'err_fix',
-      tag: err.tag,
-      wrongSentence: err.wrong,
-      prefixText,
-      errorSpanText,
-      suffixText,
-      expectedCorrection,
-      fullCorrectSentence: err.correct,
-      ruleVi: err.ruleVi,
-      placeholderMask: buildPlaceholderMask(expectedCorrection, 0),
-      letterCount: countTargetLetters(expectedCorrection),
-    };
-  }
-
-  // 4. Dictation item -> listen_spell
-  if (itemId.startsWith('dict:')) {
-    const dict =
-      content.dictations.find((d) => d.id === itemId) ?? content.dictations[0];
+  // Dictation item + mặt listen_spell: chép 1 từ trọng tâm của câu
+  if (face === 'listen_spell' && itemId.startsWith('dict:')) {
+    const dict = idx.dict.get(itemId);
+    if (!dict) return null;
     const tokens = dict.text
       .replace(/[.,!?;:"]/g, '')
       .split(/\s+/)
@@ -880,13 +1312,11 @@ export function buildPromptForCard(
     const focusEntry = dict.focus[0];
     const targetWord =
       (focusEntry && tokens[focusEntry.tokenIndex]) ||
-      tokens.reduce((longest, w) => (w.length > longest.length ? w : longest), tokens[0] ?? 'academic');
+      tokens.reduce((longest, w) => (w.length > longest.length ? w : longest), tokens[0] ?? '');
+    if (!targetWord) return null;
     const variant = getSpellingVariant(targetWord.toLowerCase());
     const accepted = Array.from(
-      new Set([
-        targetWord.toLowerCase(),
-        ...(variant ? [variant] : []),
-      ]),
+      new Set([targetWord.toLowerCase(), ...(variant ? [variant] : [])]),
     );
     const maxPlays = skillLevel >= 7 ? 1 : 2;
 
@@ -903,8 +1333,9 @@ export function buildPromptForCard(
     };
   }
 
-  // 5. Vocab item -> intro, recog, recall_meaning, recall_cloze, listen_spell
-  const vocab = content.vocab.find((v) => v.id === itemId) ?? content.vocab[0];
+  // Vocab item -> intro, recog, recall_meaning, recall_cloze, listen_spell
+  const vocab = idx.vocab.get(itemId);
+  if (!vocab) return null;
   const collocations = resolveCollocationPhrases(vocab, content);
   const example0 = vocab.examples[0];
 
@@ -927,17 +1358,9 @@ export function buildPromptForCard(
   }
 
   if (face === 'recog') {
-    const otherMeanings = content.vocab
-      .filter((v) => v.id !== vocab.id && v.meaningVi !== vocab.meaningVi)
-      .map((v) => v.meaningVi);
-    const distractors = otherMeanings.slice(0, 3);
-    while (distractors.length < 3) {
-      distractors.push(`khái niệm học thuật khác (${distractors.length + 1})`);
-    }
-    const rawChoices = [vocab.meaningVi, ...distractors];
-    const shift = [...vocab.id].reduce((acc, ch) => acc + ch.charCodeAt(0), 0) % rawChoices.length;
-    const choices = rawChoices.map((_, idx) => rawChoices[(idx + shift) % rawChoices.length]);
-    const correctIndex = choices.indexOf(vocab.meaningVi);
+    const distractors = pickRecogDistractors(vocab, content, rng);
+    if (distractors.length < 1) return null;
+    const placed = placeCorrectSeeded(vocab.meaningVi, distractors, rng);
 
     return {
       face: 'recog',
@@ -946,8 +1369,8 @@ export function buildPromptForCard(
       pos: vocab.pos,
       cefr: vocab.cefr,
       audioUrl: vocab.audio.uk,
-      choices,
-      correctIndex: correctIndex >= 0 ? correctIndex : 0,
+      choices: placed.choices,
+      correctIndex: placed.correctIndex,
       correctAnswer: vocab.meaningVi,
       exampleEn: example0.en,
       collocationHighlight: collocations[0],
@@ -1013,7 +1436,9 @@ export function buildPromptForCard(
     };
   }
 
-  // Default: recall_meaning
+  if (face !== 'recall_meaning') return null;
+
+  // recall_meaning
   // docs/games/V1-DAILY-RUN.md §5: level <= 3 shows first letter automatically
   const initialRevealedCount = skillLevel <= 3 ? 1 : 0;
   return {
@@ -1102,6 +1527,8 @@ export interface WinStatementInput {
   firstAttemptAccuracy: number;
   lastWeekAccuracy?: number | null;
   articleFixStreak?: number;
+  /** Combo dài nhất của run (dùng cho câu fallback khi chưa có dữ liệu tuần trước). */
+  maxCombo?: number;
 }
 
 /**
@@ -1116,6 +1543,7 @@ export function buildV1WinStatement(input: WinStatementInput): string {
     firstAttemptAccuracy,
     lastWeekAccuracy,
     articleFixStreak = 0,
+    maxCombo = 0,
   } = input;
 
   if (matureOrMasteredCount > 0) {
@@ -1130,7 +1558,36 @@ export function buildV1WinStatement(input: WinStatementInput): string {
     return `Bạn sửa được ${articleFixStreak} lỗi article liên tiếp`;
   }
 
-  return `Tỷ lệ nhớ lượt đầu ${firstAttemptAccuracy}% (tuần trước ${Math.max(0, firstAttemptAccuracy - 5)}%)`;
+  // Không có dữ liệu tuần trước thì KHÔNG bịa so sánh (V1-6).
+  return `Tỷ lệ nhớ lượt đầu ${firstAttemptAccuracy}% · combo dài nhất ${maxCombo}`;
+}
+
+const WEEK_MS = 7 * 86_400_000;
+
+/**
+ * Tỷ lệ đúng lượt đầu của V1 trong tuần liền trước tuần này (V1-6): các attempt đã kết thúc có
+ * `startedAt` ∈ [now − 14 ngày, now − 7 ngày). Không có dữ liệu → `null`.
+ */
+export function computeLastWeekAccuracy(
+  attempts: ReadonlyArray<
+    Pick<AttemptRecord, 'gameId' | 'startedAt' | 'score' | 'total' | 'status' | 'reviewsSaved'>
+  >,
+  now: Date = new Date(),
+): number | null {
+  const to = now.getTime() - WEEK_MS;
+  const from = to - WEEK_MS;
+  let score = 0;
+  let total = 0;
+  for (const a of attempts) {
+    if (a.gameId !== 'v1') continue;
+    // Run thoát giữa chừng (✕, đóng tab) vẫn ở `in_progress`: tính nếu đã lưu ≥ 1 review thật.
+    if (a.status === 'in_progress' && (a.reviewsSaved ?? 0) <= 0) continue;
+    if (a.startedAt < from || a.startedAt >= to) continue;
+    score += Math.max(0, a.score);
+    total += Math.max(0, a.total);
+  }
+  if (total <= 0) return null;
+  return Math.round((score / total) * 100);
 }
 
 // ---------------------------------------------------------------------------
@@ -1240,7 +1697,11 @@ export function scorePromptAnswer(
         correctAnswer: `${prompt.headword}: ${prompt.correctAnswer}`,
         explanationVi: isCorrect
           ? `Chính xác! "${prompt.headword}" nghĩa là "${prompt.correctAnswer}".`
-          : `"${prompt.headword}" có nghĩa chuẩn là "${prompt.correctAnswer}".`,
+          : `"${prompt.headword}" có nghĩa chuẩn là "${prompt.correctAnswer}".${
+              prompt.choices.some((c) => normalizeText(c) === normalizeText(selectedText))
+                ? ` Bạn chọn "${selectedText}": đó là nghĩa của một từ khác, không phải của "${prompt.headword}".`
+                : ''
+            }`,
         exampleEn: prompt.exampleEn,
         collocationHighlight: prompt.collocationHighlight,
         vnTrap: prompt.vnTrap,
@@ -1394,10 +1855,14 @@ export function scorePromptAnswer(
       }
 
       const diff = computeCharDiff(trimmed, prompt.primaryAnswer);
-      const matchedTrap = prompt.l1Traps.find((t) =>
-        normalizeHeadwordLoose(t.wrong).includes(normalizeHeadwordLoose(trimmed)) &&
-        normalizeHeadwordLoose(trimmed).length >= 2,
-      ) ?? prompt.l1Traps[0];
+      // Chỉ gắn lời giải thích "kiểu Việt" khi chính cụm người học gõ khớp một bẫy (V1-10)
+      const typedLoose = normalizeHeadwordLoose(trimmed);
+      const matchedTrap =
+        typedLoose.length >= 2
+          ? prompt.l1Traps.find((t) =>
+              ` ${normalizeHeadwordLoose(t.wrong)} `.includes(` ${typedLoose} `),
+            )
+          : undefined;
 
       const trapNote = matchedTrap ? matchedTrap.whyVi : undefined;
 
@@ -1463,6 +1928,94 @@ export function scorePromptAnswer(
         wrongCharNotice: isCorrect ? undefined : diff.firstWrongNotice,
       };
     }
+
+    case 'tfng_retry':
+    case 'head_retry': {
+      let selectedText = trimmed;
+      if (/^[1-4]$/.test(trimmed)) {
+        selectedText = prompt.choices[Number(trimmed) - 1] ?? trimmed;
+      }
+      const isCorrect = normalizeText(selectedText) === normalizeText(prompt.correctAnswer);
+      const decoyReason =
+        prompt.face === 'head_retry' ? prompt.decoyReasons[selectedText] : undefined;
+      const quote = prompt.evidenceQuote;
+      return {
+        status: isCorrect ? 'correct' : 'wrong',
+        correct: isCorrect,
+        isTypo: false,
+        correctAnswer: prompt.correctAnswer,
+        explanationVi: isCorrect
+          ? `Chính xác! ${prompt.explanationVi}`
+          : `${decoyReason ? `${decoyReason} ` : ''}${prompt.explanationVi}`,
+        exampleEn: quote,
+      };
+    }
+
+    case 'ltrap_replay': {
+      const res = scoreListeningAnswer(trimmed, prompt.acceptedAnswers);
+      const primary = prompt.acceptedAnswers[0] ?? '';
+      return {
+        status: res.correct ? 'correct' : 'wrong',
+        correct: res.correct,
+        isTypo: false,
+        correctAnswer: primary,
+        explanationVi: res.correct
+          ? `Chính xác! ${prompt.trapExplanationVi}`
+          : `${res.feedbackVi ? `${res.feedbackVi} ` : ''}${prompt.trapExplanationVi}`,
+        exampleEn: prompt.transcriptLine,
+        vnTrap: res.correct ? undefined : prompt.trapExplanationVi,
+      };
+    }
+
+    case 'dict_full': {
+      let best = alignTranscript(prompt.acceptedVariants[0] ?? prompt.text, trimmed);
+      for (const variant of prompt.acceptedVariants.slice(1)) {
+        const candidate = alignTranscript(variant, trimmed);
+        if (candidate.wer < best.wer) best = candidate;
+      }
+      const fullMatch = trimmed.length > 0 && best.wer === 0;
+      // Sai ≤ 1 từ trong câu ≥ 7 từ: chấp nhận ở mức Hard (giống luật gõ sai 1 ký tự)
+      const wordCount = best.tokens.filter((t) => t.status !== 'extra').length;
+      const nearMatch = !fullMatch && trimmed.length > 0 && wordCount >= 7 && best.wer <= 1 / wordCount + 1e-9;
+      const problems = best.tokens
+        .filter((t) => t.status !== 'correct')
+        .slice(0, 4)
+        .map((t) => {
+          if (t.status === 'missing') return `thiếu "${t.expected}"`;
+          if (t.status === 'extra') return `thừa "${t.actual}"`;
+          return `"${t.actual ?? ''}" → "${t.expected ?? ''}"`;
+        });
+      return {
+        status: fullMatch ? 'correct' : nearMatch ? 'partial' : 'wrong',
+        correct: fullMatch || nearMatch,
+        isTypo: nearMatch,
+        correctAnswer: prompt.text,
+        explanationVi: fullMatch
+          ? 'Chép đúng toàn câu.'
+          : `Lỗi: ${problems.join('; ') || 'chưa nhập gì'}.${
+              prompt.tipsVi.length > 0 ? ` Mẹo: ${prompt.tipsVi[0]}` : ''
+            }`,
+        exampleEn: prompt.text,
+      };
+    }
+
+    case 'err_user': {
+      const matched = prompt.acceptedAnswers.find((acc) => isLooseSpellingMatch(trimmed, acc));
+      const isCorrect = Boolean(matched);
+      const primary = prompt.acceptedAnswers[0] ?? prompt.back;
+      const diff = primary.length <= 60 ? computeCharDiff(trimmed, primary) : null;
+      return {
+        status: isCorrect ? 'correct' : 'wrong',
+        correct: isCorrect,
+        isTypo: false,
+        correctAnswer: primary,
+        explanationVi: prompt.noteVi,
+        // Khung bằng chứng chỉ chứa câu ĐÚNG; ghi chú đã nằm ở phần lý do nên không lặp thành "Bẫy hay gặp"
+        exampleEn: prompt.exampleEn,
+        charDiff: isCorrect || !diff ? undefined : diff.segments,
+        wrongCharNotice: isCorrect || !diff ? undefined : diff.firstWrongNotice,
+      };
+    }
   }
 }
 
@@ -1501,14 +2054,20 @@ function makeNode(params: {
   retrievability: number;
   content: V1ContentBundle;
   skillLevel: number;
+  /** Ngày bắt đầu run – một phần của seed nhiễu/vị trí đáp án (V1-4, V1-5). */
+  seedDay: string;
   fromIntroKnowAlready?: boolean;
-}): V1RunNode {
+}): V1RunNode | null {
   const prompt = buildPromptForCard(
     params.card.itemId,
     params.face,
     params.content,
     params.skillLevel,
+    {
+      seedKey: `${params.card.id}|${params.card.reps}|${params.seedDay}|r${params.retryCount}`,
+    },
   );
+  if (!prompt) return null;
   const initialRevealed =
     prompt.face === 'recall_meaning' ? prompt.initialRevealedCount : 0;
 
@@ -1562,7 +2121,19 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
 
   const stageSize = mode === 'busy' ? BUSY_RUN_CARDS : STAGE_SIZE;
 
-  const queueResult = buildReviewQueue(cards, {
+  // Thẻ không dựng được nội dung thật bị loại trước khi xếp hàng đợi (V1-2: không hiện item sai).
+  const missingItems: V1RunState['missingItems'] = [];
+  const nowMs = now.getTime();
+  const renderable: SRSCard[] = [];
+  for (const card of cards) {
+    if (resolveV1Face(card, content, { allowIntro: false }) !== null) {
+      renderable.push(card);
+    } else if (card.unlocked && card.face !== 'intro' && (card.state === State.New || card.due <= nowMs)) {
+      missingItems.push(missingEntry(card, content));
+    }
+  }
+
+  const queueResult = buildReviewQueue(renderable, {
     now,
     newCardsLimit,
     newCardsDoneToday,
@@ -1575,7 +2146,10 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
   // Edge case (docs/games/V1-DAILY-RUN.md §11): no due cards & no new card quota -> Extra Practice mode
   if (selectedEntries.length === 0 || isExtraPractice) {
     isExtraPractice = true;
-    const unlockedCards = cards.filter((c) => c.unlocked && c.face !== 'intro');
+    // Ôn thêm chỉ lấy thẻ đã học (state ≠ New): thẻ mới thuộc hạn mức thẻ mới trong ngày
+    const unlockedCards = renderable.filter(
+      (c) => c.unlocked && c.face !== 'intro' && c.state !== State.New,
+    );
     const withRet = unlockedCards.map((c) => ({
       card: c,
       bucket: 'overdue' as const,
@@ -1594,29 +2168,38 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     allCardsSnapshot[c.id] = c;
   }
 
-  const nodes: V1RunNode[] = selectedEntries.map((entry, idx) => {
-    const isNewVocab =
-      entry.card.state === State.New && entry.card.itemId.startsWith('vocab:');
-    const face = normalizeToV1Face(entry.card.face, entry.card.itemId, isNewVocab);
-    const stageIndex = Math.floor(idx / stageSize);
+  const seedDay = localDayKey(now);
+  const builtNodes: Array<{ node: V1RunNode; entry: (typeof selectedEntries)[number] }> = [];
+  for (const entry of selectedEntries) {
+    const face = resolveV1Face(entry.card, content);
+    const idx = builtNodes.length;
     const mastery = getCardMastery(toFaceSnapshot(entry.card));
     const isRare = isRareMasteredCard(mastery === 'mastered', randomFn());
-
-    return makeNode({
-      nodeId: `node-${idx + 1}-${entry.card.id}`,
-      card: entry.card,
-      face,
-      stageIndex,
-      isNewCard: entry.card.state === State.New,
-      isRare,
-      isRetry: false,
-      retryCount: 0,
-      isBossNode: false,
-      retrievability: entry.retrievability,
-      content,
-      skillLevel,
-    });
-  });
+    const node = face
+      ? makeNode({
+          nodeId: `node-${idx + 1}-${entry.card.id}`,
+          card: entry.card,
+          face,
+          stageIndex: Math.floor(idx / stageSize),
+          isNewCard: entry.card.state === State.New,
+          isRare,
+          isRetry: false,
+          retryCount: 0,
+          isBossNode: false,
+          retrievability: entry.retrievability,
+          content,
+          skillLevel,
+          seedDay,
+        })
+      : null;
+    if (node) {
+      builtNodes.push({ node, entry });
+    } else {
+      missingItems.push(missingEntry(entry.card, content));
+    }
+  }
+  const nodes: V1RunNode[] = builtNodes.map((b) => b.node);
+  selectedEntries = builtNodes.map((b) => b.entry);
 
   const totalStages = Math.max(1, Math.ceil(nodes.length / stageSize));
 
@@ -1679,6 +2262,7 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     recap: null,
     lastWeekAccuracy,
     content,
+    missingItems,
   };
 }
 
@@ -1716,16 +2300,18 @@ export function applyNodeHint(state: V1RunState): V1RunState {
   const active = getActiveNode(state);
   if (!active || state.feedback !== null) return state;
 
+  // Chép cả câu: không có chữ nào để gợi ý
+  if (active.prompt.face === 'dict_full') return state;
+
   const updatedNode: V1RunNode = {
     ...active,
     hintsUsed: active.hintsUsed + 1,
   };
+  const prompt = updatedNode.prompt;
 
-  if (
-    updatedNode.prompt.face === 'recog' ||
-    updatedNode.prompt.face === 'para_match'
-  ) {
-    const prompt = updatedNode.prompt;
+  if (isChoicePrompt(prompt)) {
+    // Luôn chừa lại ít nhất 2 lựa chọn
+    const maxEliminated = Math.max(1, prompt.choices.length - 2);
     const candidates = prompt.choices
       .map((_, idx) => idx)
       .filter(
@@ -1733,34 +2319,46 @@ export function applyNodeHint(state: V1RunState): V1RunState {
           idx !== prompt.correctIndex &&
           !updatedNode.eliminatedChoices.includes(idx),
       );
-    if (candidates.length > 0 && updatedNode.eliminatedChoices.length < 3) {
+    if (candidates.length > 0 && updatedNode.eliminatedChoices.length < maxEliminated) {
       updatedNode.eliminatedChoices = [
         ...updatedNode.eliminatedChoices,
         candidates[0],
       ];
     }
-  } else if (updatedNode.prompt.face !== 'intro') {
-    const targetWord =
-      updatedNode.prompt.face === 'recall_meaning'
-        ? updatedNode.prompt.headword
-        : updatedNode.prompt.face === 'recall_cloze'
-        ? updatedNode.prompt.primaryAnswer
-        : updatedNode.prompt.face === 'listen_spell'
-        ? updatedNode.prompt.targetWord
-        : updatedNode.prompt.face === 'col_gap'
-        ? updatedNode.prompt.primaryAnswer
-        : updatedNode.prompt.expectedCorrection;
-
-    const maxReveal = Math.max(1, countTargetLetters(targetWord));
-    const nextReveal = Math.min(maxReveal, updatedNode.revealedLetters + 1);
-    updatedNode.revealedLetters = nextReveal;
-    updatedNode.prompt = {
-      ...updatedNode.prompt,
-      placeholderMask: buildPlaceholderMask(targetWord, nextReveal),
-    };
+  } else if (prompt.face !== 'intro') {
+    const targetWord = getTypedTargetText(prompt);
+    if (targetWord) {
+      const maxReveal = Math.max(1, countTargetLetters(targetWord));
+      const nextReveal = Math.min(maxReveal, updatedNode.revealedLetters + 1);
+      updatedNode.revealedLetters = nextReveal;
+      updatedNode.prompt = {
+        ...prompt,
+        placeholderMask: buildPlaceholderMask(targetWord, nextReveal),
+      } as V1PromptPayload;
+    }
   }
 
   return replaceActiveNode(state, updatedNode);
+}
+
+/** Chuỗi đáp án mà ô gõ nhắm tới (dùng cho gợi ý lộ chữ). `null` nếu mặt không gõ từ/cụm. */
+export function getTypedTargetText(prompt: V1PromptPayload): string | null {
+  switch (prompt.face) {
+    case 'recall_meaning':
+      return prompt.headword;
+    case 'recall_cloze':
+    case 'col_gap':
+      return prompt.primaryAnswer;
+    case 'listen_spell':
+      return prompt.targetWord;
+    case 'err_fix':
+      return prompt.expectedCorrection;
+    case 'err_user':
+    case 'ltrap_replay':
+      return prompt.acceptedAnswers[0] ?? null;
+    default:
+      return null;
+  }
 }
 
 /**
@@ -1777,7 +2375,7 @@ export function recordNodeAudioPlay(state: V1RunState): {
     return { state, allowed: false, remainingPlays: 0 };
   }
 
-  if (active.prompt.face === 'listen_spell') {
+  if (active.prompt.face === 'listen_spell' || active.prompt.face === 'dict_full') {
     const maxPlays = active.prompt.maxPlays;
     if (active.audioPlaysUsed >= maxPlays) {
       return { state, allowed: false, remainingPlays: 0 };
@@ -1805,6 +2403,16 @@ export function recordNodeAudioPlay(state: V1RunState): {
   };
 }
 
+/**
+ * Trả lại 1 lượt nghe khi file audio không phát được (lỗi tải/ phát): người học không bị trừ lượt
+ * cho âm thanh không tồn tại. Chỉ áp cho node `nodeId` còn đang hoạt động.
+ */
+export function refundNodeAudioPlay(state: V1RunState, nodeId: string): V1RunState {
+  const active = getActiveNode(state);
+  if (!active || active.nodeId !== nodeId || active.audioPlaysUsed <= 0) return state;
+  return replaceActiveNode(state, { ...active, audioPlaysUsed: active.audioPlaysUsed - 1 });
+}
+
 function replaceActiveNode(state: V1RunState, updatedNode: V1RunNode): V1RunState {
   if (state.phase === 'boss') {
     const nextBossNodes = [...state.bossNodes];
@@ -1816,9 +2424,32 @@ function replaceActiveNode(state: V1RunState, updatedNode: V1RunNode): V1RunStat
   return { ...state, nodes: nextNodes };
 }
 
+function seedDayOf(state: V1RunState): string {
+  return localDayKey(new Date(state.startedAt));
+}
+
 /**
- * Handle learner action on an `intro` face card:
- * - `'seen'` ("Đã xem"): marks card seen, awards +5 new-card XP, and advances immediately.
+ * Chèn node vào sau `currentIndex` và gán `stageIndex` của node đứng ngay trước vị trí chèn,
+ * để không sinh checkpoint giả giữa chặng (V1-8).
+ */
+function insertNodeInStage(
+  nodes: readonly V1RunNode[],
+  currentIndex: number,
+  node: V1RunNode,
+  preferredOffset: 3 | 4 | 5,
+): { nodes: V1RunNode[]; insertedAtIndex: number; offset: number } {
+  const inserted = insertRetryNode(nodes, currentIndex, node, preferredOffset);
+  const prev = inserted.nodes[inserted.insertedAtIndex - 1];
+  const stageIndex = prev?.stageIndex ?? node.stageIndex;
+  inserted.nodes[inserted.insertedAtIndex] = { ...inserted.nodes[inserted.insertedAtIndex], stageIndex };
+  return inserted;
+}
+
+/**
+ * Handle learner action on an `intro` face card (V1-1):
+ * - `'seen'` ("Đã xem"): ghi `introSeenAt` lên thẻ (không còn intro ở các run sau) và chèn ngay
+ *   node `recog` của chính thẻ đó sau 3–5 node trong cùng run để từ mới đi tiếp tới gợi nhớ.
+ *   Không cộng XP và không ghi FSRS ở bước này (V1-12: XP đến từ lượt gợi nhớ đúng đầu tiên).
  * - `'know_already'` ("Tôi biết rồi"): immediately converts the current node into `recall_meaning`
  *   to verify knowledge right away (docs/games/V1-DAILY-RUN.md §4.1 & docs/02 §3.3).
  */
@@ -1830,11 +2461,18 @@ export function submitIntroAction(
   const active = getActiveNode(state);
   if (!active || active.face !== 'intro') return state;
 
+  const seenCard: SRSCard = { ...active.card, introSeenAt: now.getTime() };
+  const withSeenCard: V1RunState = {
+    ...state,
+    updatedCards: { ...state.updatedCards, [seenCard.id]: seenCard },
+    allCardsSnapshot: { ...state.allCardsSnapshot, [seenCard.id]: seenCard },
+  };
+
   if (action === 'know_already') {
     const upgradedNode = makeNode({
       nodeId: `${active.nodeId}-know-check`,
       card: {
-        ...active.card,
+        ...seenCard,
         face: 'recall_meaning',
         id: makeCardId(active.itemId, 'recall_meaning'),
       },
@@ -1848,10 +2486,12 @@ export function submitIntroAction(
       retrievability: active.retrievability,
       content: state.content,
       skillLevel: state.skillLevel,
+      seedDay: seedDayOf(state),
       fromIntroKnowAlready: true,
     });
+    if (!upgradedNode) return state;
 
-    const nextState = replaceActiveNode(state, upgradedNode);
+    const nextState = replaceActiveNode(withSeenCard, upgradedNode);
     return {
       ...nextState,
       events: [
@@ -1865,21 +2505,45 @@ export function submitIntroAction(
     };
   }
 
-  // action === 'seen': award +5 new card XP (if not extra practice) and advance
-  const bonusXp = state.isExtraPractice ? 0 : 5;
-  const seenNode: V1RunNode = {
-    ...active,
-    status: 'seen',
-  };
-  const updatedState = replaceActiveNode(
-    {
-      ...state,
-      totalXp: state.totalXp + bonusXp,
-    },
-    seenNode,
-  );
+  // action === 'seen'
+  const seenNode: V1RunNode = { ...active, card: seenCard, status: 'seen' };
+  const recogNode = makeNode({
+    nodeId: `${active.nodeId}-recog`,
+    card: seenCard,
+    face: 'recog',
+    stageIndex: active.stageIndex,
+    isNewCard: true,
+    isRare: false,
+    isRetry: false,
+    retryCount: 0,
+    isBossNode: false,
+    retrievability: 0,
+    content: state.content,
+    skillLevel: state.skillLevel,
+    seedDay: seedDayOf(state),
+  });
 
-  return advanceAfterFeedback(updatedState, now);
+  const nodes = [...withSeenCard.nodes];
+  nodes[withSeenCard.currentIndex] = seenNode;
+  let nextState: V1RunState = { ...withSeenCard, nodes };
+  if (recogNode) {
+    const inserted = insertNodeInStage(nodes, withSeenCard.currentIndex, recogNode, 3);
+    nextState = {
+      ...nextState,
+      nodes: inserted.nodes,
+      events: [
+        ...nextState.events,
+        {
+          type: 'intro_seen',
+          nodeId: active.nodeId,
+          itemId: active.itemId,
+          insertedAtIndex: inserted.insertedAtIndex,
+        },
+      ],
+    };
+  }
+
+  return advanceAfterFeedback(nextState, now);
 }
 
 /**
@@ -1908,7 +2572,7 @@ export function submitNodeAnswer(
 
   const rating = autoRate({
     correct: outcome.correct,
-    face: active.face,
+    face: active.face === 'err_user' ? active.card.face : active.face,
     responseTimeMs,
     hintsUsed: active.hintsUsed,
     isTypo: outcome.isTypo,
@@ -1986,10 +2650,11 @@ export function submitNodeAnswer(
         for (const faceToUnlock of unlockable) {
           const newId = makeCardId(active.itemId, faceToUnlock);
           if (!nextAllCardsSnapshot[newId]) {
-            const unlockedCard = createNewCard(active.itemId, faceToUnlock, {
-              now,
-              unlocked: true,
-            });
+            // Người học đã trả lời thẻ của từ này → mặt mới mở khóa không cần intro nữa
+            const unlockedCard: SRSCard = {
+              ...createNewCard(active.itemId, faceToUnlock, { now, unlocked: true }),
+              introSeenAt: now.getTime(),
+            };
             nextUpdatedCards[newId] = unlockedCard;
             nextAllCardsSnapshot[newId] = unlockedCard;
           }
@@ -1999,10 +2664,10 @@ export function submitNodeAnswer(
           for (const faceToUnlock of ['recog', 'recall_meaning', 'recall_cloze'] as const) {
             const newId = makeCardId(active.itemId, faceToUnlock);
             if (!nextAllCardsSnapshot[newId]) {
-              const unlockedCard = createNewCard(active.itemId, faceToUnlock, {
-                now,
-                unlocked: true,
-              });
+              const unlockedCard: SRSCard = {
+                ...createNewCard(active.itemId, faceToUnlock, { now, unlocked: true }),
+                introSeenAt: now.getTime(),
+              };
               nextUpdatedCards[newId] = unlockedCard;
               nextAllCardsSnapshot[newId] = unlockedCard;
             }
@@ -2123,16 +2788,19 @@ export function submitNodeAnswer(
         retrievability: active.retrievability,
         content: state.content,
         skillLevel: state.skillLevel,
+        seedDay: seedDayOf(state),
       });
-      nextBossNodes.push(retryBossNode);
-      nextEvents.push({
-        type: 'card_reinserted',
-        itemId: active.itemId,
-        fromFace: active.face,
-        toFace: easierFace,
-        insertedAtIndex: nextBossNodes.length - 1,
-        offset: nextBossNodes.length - 1 - state.bossIndex,
-      });
+      if (retryBossNode) {
+        nextBossNodes.push(retryBossNode);
+        nextEvents.push({
+          type: 'card_reinserted',
+          itemId: active.itemId,
+          fromFace: active.face,
+          toFace: easierFace,
+          insertedAtIndex: nextBossNodes.length - 1,
+          offset: nextBossNodes.length - 1 - state.bossIndex,
+        });
+      }
     }
   } else {
     nextNodes[state.currentIndex] = updatedActiveNode;
@@ -2152,18 +2820,21 @@ export function submitNodeAnswer(
         retrievability: active.retrievability,
         content: state.content,
         skillLevel: state.skillLevel,
+        seedDay: seedDayOf(state),
       });
 
-      const inserted = insertRetryNode(nextNodes, state.currentIndex, retryNode, 4);
-      nextNodes = inserted.nodes;
-      nextEvents.push({
-        type: 'card_reinserted',
-        itemId: active.itemId,
-        fromFace: active.face,
-        toFace: easierFace,
-        insertedAtIndex: inserted.insertedAtIndex,
-        offset: inserted.offset,
-      });
+      if (retryNode) {
+        const inserted = insertNodeInStage(nextNodes, state.currentIndex, retryNode, 4);
+        nextNodes = inserted.nodes;
+        nextEvents.push({
+          type: 'card_reinserted',
+          itemId: active.itemId,
+          fromFace: active.face,
+          toFace: easierFace,
+          insertedAtIndex: inserted.insertedAtIndex,
+          offset: inserted.offset,
+        });
+      }
     }
   }
 
@@ -2228,6 +2899,16 @@ function getPromptDisplayLabel(prompt: V1PromptPayload): string {
       return prompt.questionPhrase;
     case 'err_fix':
       return prompt.wrongSentence;
+    case 'tfng_retry':
+      return prompt.statement;
+    case 'head_retry':
+      return `${prompt.passageTitle} · đoạn ${prompt.paragraphLabel}`;
+    case 'ltrap_replay':
+      return prompt.questionPrompt;
+    case 'dict_full':
+      return 'Nghe & chép cả câu';
+    case 'err_user':
+      return prompt.front;
   }
 }
 
@@ -2236,13 +2917,15 @@ function buildBossNodes(
   content: V1ContentBundle,
   skillLevel: number,
   totalStages: number,
+  seedDay: string,
 ): V1RunNode[] {
-  return candidates.map((card, idx) => {
-    // Ensure Boss cards always require active retrieval/recognition (never 'intro')
-    const rawFace = normalizeToV1Face(card.face, card.itemId, false);
-    const bossFace: V1Face = rawFace === 'intro' ? 'recall_meaning' : rawFace;
-    return makeNode({
-      nodeId: `boss-${idx + 1}-${card.id}`,
+  const nodes: V1RunNode[] = [];
+  for (const card of candidates) {
+    // Boss luôn là gợi nhớ/nhận diện thật, không bao giờ `intro`
+    const bossFace = resolveV1Face(card, content, { allowIntro: false });
+    if (!bossFace) continue;
+    const node = makeNode({
+      nodeId: `boss-${nodes.length + 1}-${card.id}`,
       card,
       face: bossFace,
       stageIndex: Math.max(0, totalStages - 1),
@@ -2254,8 +2937,11 @@ function buildBossNodes(
       retrievability: 0,
       content,
       skillLevel,
+      seedDay,
     });
-  });
+    if (node) nodes.push(node);
+  }
+  return nodes;
 }
 
 function buildRecapSummary(state: V1RunState, now: Date): V1RecapSummary {
@@ -2266,7 +2952,11 @@ function buildRecapSummary(state: V1RunState, now: Date): V1RecapSummary {
   const matureOrMasteredCount = state.newlyMatureItemIds.length;
   const articleFixStreak = state.maxErrorTagStreaks.article ?? 0;
 
-  const endOfTomorrowMs = now.getTime() + 2 * 86_400_000;
+  // Hết ngày mai theo giờ máy (V1-11), không phải now + 48h
+  const endOfTomorrow = new Date(now);
+  endOfTomorrow.setHours(23, 59, 59, 999);
+  endOfTomorrow.setDate(endOfTomorrow.getDate() + 1);
+  const endOfTomorrowMs = endOfTomorrow.getTime();
   const tomorrowDueForecast = Object.values(state.allCardsSnapshot).filter(
     (c) => c.unlocked && c.state !== State.New && c.due <= endOfTomorrowMs,
   ).length;
@@ -2276,6 +2966,7 @@ function buildRecapSummary(state: V1RunState, now: Date): V1RecapSummary {
     firstAttemptAccuracy,
     lastWeekAccuracy: state.lastWeekAccuracy,
     articleFixStreak,
+    maxCombo: state.maxCombo,
   });
 
   return {
@@ -2336,13 +3027,17 @@ export function advanceAfterFeedback(
   const nextIndex = clearedState.currentIndex + 1;
   if (nextIndex >= clearedState.nodes.length) {
     // Transition into Boss phase if bossCandidateCards exist
-    if (clearedState.bossCandidateCards.length > 0) {
-      const bossNodes = buildBossNodes(
-        clearedState.bossCandidateCards,
-        clearedState.content,
-        clearedState.skillLevel,
-        clearedState.totalStages,
-      );
+    const bossNodes =
+      clearedState.bossCandidateCards.length > 0
+        ? buildBossNodes(
+            clearedState.bossCandidateCards,
+            clearedState.content,
+            clearedState.skillLevel,
+            clearedState.totalStages,
+            seedDayOf(clearedState),
+          )
+        : [];
+    if (bossNodes.length > 0) {
       return {
         ...clearedState,
         phase: 'boss',
@@ -2433,5 +3128,41 @@ export function finishAtCheckpoint(
         firstAttemptAccuracy: recap.firstAttemptAccuracy,
       },
     ],
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Persistence payload (G3, V1-7)
+// ---------------------------------------------------------------------------
+
+export interface V1ProgressPayload {
+  attempt: Omit<AttemptRecord, 'id' | 'status' | 'reviewsSaved' | 'xpApplied'>;
+  updatedCards: SRSCard[];
+  reviews: Array<Omit<ReviewRecord, 'id'>>;
+}
+
+/**
+ * Ảnh chụp tiến độ của run để ghi xuống DB: dùng cho `attemptRepo.saveProgress` (giữa phiên) và
+ * `finalize` (Recap). `reviews` luôn là danh sách đầy đủ, chỉ thêm vào cuối → repo tự ghi phần mới.
+ */
+export function buildV1ProgressPayload(
+  state: V1RunState,
+  now: Date = new Date(),
+): V1ProgressPayload {
+  const recap = state.recap;
+  return {
+    attempt: {
+      gameId: 'v1',
+      mode: state.mode === 'busy' ? 'sprint' : 'training',
+      startedAt: state.startedAt,
+      endedAt: now.getTime(),
+      score: recap ? recap.firstAttemptCorrect : state.firstAttemptCorrectCount,
+      // Giữa phiên chưa trả lời lượt đầu nào (chỉ xem intro) thì total = 0, không dựng "0/1" làm tụt tỷ lệ
+      total: recap ? Math.max(1, recap.totalCards) : state.firstAttemptTotalCount,
+      xp: state.totalXp,
+      items: state.attemptItems,
+    },
+    updatedCards: Object.values(state.updatedCards),
+    reviews: state.reviews,
   };
 }
