@@ -146,7 +146,7 @@ export const PassageView: React.FC<PassageViewProps> = ({
               onClick={toggleSentenceClick}
               aria-pressed={isSentenceClick}
               data-testid="toggle-sentence-select"
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer transition-colors"
+              className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer transition-colors"
               style={{
                 backgroundColor: isSentenceClick
                   ? 'color-mix(in srgb, var(--color-info) 16%, var(--color-surface))'
@@ -167,7 +167,7 @@ export const PassageView: React.FC<PassageViewProps> = ({
               onClick={() => setShowGlossary((v) => !v)}
               aria-pressed={showGlossary}
               data-testid="toggle-glossary"
-              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer transition-colors"
+              className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer transition-colors"
               style={{
                 backgroundColor: showGlossary
                   ? 'color-mix(in srgb, var(--color-reading) 16%, var(--color-surface))'
@@ -193,15 +193,15 @@ export const PassageView: React.FC<PassageViewProps> = ({
               type="button"
               onClick={() => setFontSizePx((s) => Math.max(MIN_FONT_SIZE, s - 1))}
               disabled={fontSizePx <= MIN_FONT_SIZE}
-              className="px-2 py-1 text-xs cursor-pointer disabled:opacity-40"
+              className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center text-xs cursor-pointer disabled:opacity-40"
               style={{ color: 'var(--color-text-dim)' }}
               aria-label="Giảm cỡ chữ bài đọc"
               title="Giảm cỡ chữ"
             >
-              <Minus className="w-3 h-3" />
+              <Minus className="w-3.5 h-3.5" />
             </button>
             <span
-              className="px-1.5 text-[11px] font-semibold tabular-nums"
+              className="px-1.5 text-xs font-semibold tabular-nums"
               style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
             >
               {fontSizePx}
@@ -210,12 +210,12 @@ export const PassageView: React.FC<PassageViewProps> = ({
               type="button"
               onClick={() => setFontSizePx((s) => Math.min(MAX_FONT_SIZE, s + 1))}
               disabled={fontSizePx >= MAX_FONT_SIZE}
-              className="px-2 py-1 text-xs cursor-pointer disabled:opacity-40"
+              className="min-w-[44px] min-h-[44px] inline-flex items-center justify-center text-xs cursor-pointer disabled:opacity-40"
               style={{ color: 'var(--color-text-dim)' }}
               aria-label="Tăng cỡ chữ bài đọc"
               title="Tăng cỡ chữ"
             >
-              <Plus className="w-3 h-3" />
+              <Plus className="w-3.5 h-3.5" />
             </button>
           </div>
         </div>
@@ -246,7 +246,11 @@ export const PassageView: React.FC<PassageViewProps> = ({
       )}
 
       {/* Scrollable passage body */}
-      <div className="p-5 sm:p-6 space-y-5 overflow-y-auto min-[900px]:max-h-[calc(100vh-190px)]">
+      <div
+        tabIndex={0}
+        aria-label="Nội dung bài đọc"
+        className="p-5 sm:p-6 space-y-5 overflow-y-auto min-[900px]:max-h-[calc(100vh-190px)] focus:outline-none focus-visible:ring-2"
+      >
         <header className="space-y-1.5 pb-3 border-b" style={{ borderColor: 'var(--color-border)' }}>
           <h2
             className="text-xl sm:text-2xl font-bold leading-snug"
@@ -337,7 +341,7 @@ export const PassageView: React.FC<PassageViewProps> = ({
           aria-selected={currentTab === 'passage'}
           onClick={() => setTab('passage')}
           data-testid="mobile-tab-passage"
-          className="flex-1 min-h-[42px] px-3 py-2 rounded-[var(--radius-sm)] text-sm font-semibold inline-flex items-center justify-center gap-2 cursor-pointer transition-colors"
+          className="flex-1 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-sm font-semibold inline-flex items-center justify-center gap-2 cursor-pointer transition-colors"
           style={{
             backgroundColor: currentTab === 'passage' ? 'var(--color-surface)' : 'transparent',
             color: currentTab === 'passage' ? 'var(--color-text)' : 'var(--color-text-dim)',
@@ -352,7 +356,7 @@ export const PassageView: React.FC<PassageViewProps> = ({
           aria-selected={currentTab === 'question'}
           onClick={() => setTab('question')}
           data-testid="mobile-tab-question"
-          className="flex-1 min-h-[42px] px-3 py-2 rounded-[var(--radius-sm)] text-sm font-semibold inline-flex items-center justify-center gap-2 cursor-pointer transition-colors"
+          className="flex-1 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-sm font-semibold inline-flex items-center justify-center gap-2 cursor-pointer transition-colors"
           style={{
             backgroundColor: currentTab === 'question' ? 'var(--color-surface)' : 'transparent',
             color: currentTab === 'question' ? 'var(--color-text)' : 'var(--color-text-dim)',
