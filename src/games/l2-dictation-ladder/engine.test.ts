@@ -2,9 +2,12 @@ import { describe, expect, it } from 'vitest';
 import { createNewCard, Rating } from '../../core/srs/fsrsAdapter';
 import type { DictationItem } from '../../core/content/schemas';
 import { L2_FIXTURES } from '../../test/fixtures/l2_fixtures';
+import { loadDictationPool } from './dictationLoader';
 import {
   advanceToNextSentence,
+  buildL2ProgressPayload,
   buildL2SessionSavePayload,
+  buildL2UserItems,
   canPlayNormal,
   canPlaySlow,
   charLevenshtein,
@@ -406,6 +409,138 @@ describe('L2 Dictation Ladder engine', () => {
       expect(tips.some((t) => t.source === 'data' && t.feature === 'academic')).toBe(true);
       expect(tips.some((t) => t.source === 'generic' && t.feature === 'final_consonant')).toBe(true);
       expect(tips.some((t) => t.source === 'generic' && t.feature === 'weak_form')).toBe(true);
+    });
+  });
+
+  describe('T2-B · L2-01, L2-02, L2-04, L2-08, L2-12, B6 producer & saveProgress', () => {
+    it('L2-01: loadDictationPool chỉ giữ câu có file MP3 tồn tại thật (bỏ 404 và text/html)', async () => {
+      const dataset = [
+        { ...L2_FIXTURES[0], id: 'dict:0001', audio: 'audio/dictation/dict_0001.mp3' },
+        { ...L2_FIXTURES[1], id: 'dict:0002', audio: 'audio/dictation/dict_0002.mp3' },
+        { ...L2_FIXTURES[2], id: 'dict:0003', audio: 'audio/dictation/dict_0003.mp3' },
+      ];
+      const fetchImpl = (async (url: RequestInfo | URL, init?: RequestInit) => {
+        const s = String(url);
+        if (init?.method === 'HEAD') {
+          if (s.includes('dict_0001.mp3')) {
+            return { ok: true, headers: { get: () => 'audio/mpeg' } } as unknown as Response;
+          }
+          if (s.includes('dict_0003.mp3')) {
+            return { ok: true, headers: { get: () => 'text/html' } } as unknown as Response;
+          }
+          return { ok: false, headers: { get: () => '' } } as unknown as Response;
+        }
+        if (s.includes('manifest.json')) {
+          return {
+            ok: true,
+            json: async () => ({ files: { 'listening/dictation.json': {} } }),
+          } as unknown as Response;
+        }
+        return { ok: true, json: async () => dataset } as unknown as Response;
+      }) as typeof fetch;
+
+      const loaded = await loadDictationPool({ fetchImpl, baseUrl: '/', bypassCache: true });
+      expect(loaded.totalInDataset).toBe(3);
+      expect(loaded.items.map((it) => it.id)).toEqual(['dict:0001']);
+    });
+
+    it('L2-02: selectL2SessionItems dùng seed + loại câu đã làm 7 ngày + ưu tiên thẻ dict_full đến hạn', () => {
+      const bigPool: DictationItem[] = Array.from({ length: 40 }, (_, i) => ({
+        ...L2_FIXTURES[0],
+        id: `dict:${String(i + 1).padStart(4, '0')}`,
+        level: 3,
+      }));
+      const s1 = selectL2SessionItems(bigPool, 3, 10, { seed: '2026-11-25|1' });
+      const s2 = selectL2SessionItems(bigPool, 3, 10, {
+        seed: '2026-11-25|2',
+        recentItemIds: s1.map((x) => x.id),
+      });
+      const ids1 = new Set(s1.map((x) => x.id));
+      const overlap = s2.filter((x) => ids1.has(x.id)).length;
+      expect(overlap).toBe(0);
+
+      // Thẻ đến hạn luôn được ưu tiên lên đầu
+      const withDue = selectL2SessionItems(bigPool, 3, 10, {
+        seed: '2026-11-25|3',
+        dueItemIds: ['dict:0039', 'dict:0040'],
+      });
+      expect(withDue.slice(0, 2).map((x) => x.id).sort()).toEqual(['dict:0039', 'dict:0040']);
+    });
+
+    it('L2-04: chuẩn hoá 10,000-word = ten-thousand-word và 9 a.m. = 9 am đạt 100%', () => {
+      const itemNum = makeItem({ text: 'She submitted a ten-thousand-word dissertation.' });
+      const resNum = gradeDictationSentence(itemNum, 'She submitted a 10,000-word dissertation.', {
+        level: 5,
+        playsUsed: 1,
+        slowPlayUsed: false,
+      });
+      expect(resNum.rawAccuracy).toBe(1);
+      expect(resNum.isPerfect).toBe(true);
+
+      const itemTime = makeItem({ text: 'The seminar starts at 9 a.m. sharp.' });
+      const resTime = gradeDictationSentence(itemTime, 'The seminar starts at 9 am sharp', {
+        level: 2,
+        playsUsed: 1,
+        slowPlayUsed: false,
+      });
+      expect(resTime.rawAccuracy).toBe(1);
+      expect(resTime.isPerfect).toBe(true);
+    });
+
+    it('L2-08: tích luỹ lỗi chính tả qua 2 phiên khác nhau (initialSpellingCounts) tạo thẻ listen_spell', () => {
+      const item = makeItem({ id: 'dict:sp_cross', text: 'The accommodation was modern.' });
+      let s = startL2Session(
+        createL2Session([item], 4, 1000, {
+          initialSpellingCounts: { accommodation: 1 },
+        }),
+        1000,
+      );
+      s = setDictationInput(s, 'The accomodation was modern.');
+      s = submitCurrentSentence(s, 2000);
+      s = advanceToNextSentence(s, 2500);
+
+      const summary = summarizeL2Session(s);
+      expect(summary.listenSpellCandidates).toContain('accommodation');
+      const payload = buildL2SessionSavePayload(s, new Map(), new Date(3000));
+      expect(payload.updatedCards?.some((c) => c.id === 'vocab:accommodation#listen_spell')).toBe(true);
+    });
+
+    it('L2-12: phiên ôn câu sai (isRetry=true) thưởng 0 XP nhưng vẫn cập nhật thẻ SRS', () => {
+      const item = L2_FIXTURES[0];
+      let s = startL2Session(createL2Session([item], 1, 1000, { isRetry: true }), 1000);
+      s = setDictationInput(s, 'The library');
+      s = submitCurrentSentence(s, 2000);
+      expect(s.lastGraded?.xpEarned).toBe(0);
+      expect(s.totalXp).toBe(0);
+      s = advanceToNextSentence(s, 2500);
+
+      const payload = buildL2SessionSavePayload(s, new Map(), new Date(3000));
+      expect(payload.attempt.xp).toBe(0);
+      expect(payload.updatedCards?.length).toBe(1);
+    });
+
+    it('SR-22 & B6: audioMissing phát ra 0 thẻ/review; buildL2UserItems tạo dict:* kèm audioClip và buildL2ProgressPayload hoạt động', () => {
+      const item = L2_FIXTURES[0];
+      let s = startL2Session(createL2Session([item], 1, 1000), 1000);
+      s = setDictationInput(s, 'The library');
+      s = submitCurrentSentence(s, 2000);
+
+      const missingPayload = buildL2SessionSavePayload(s, new Map(), new Date(2500), {
+        audioMissing: true,
+      });
+      expect(missingPayload.updatedCards).toEqual([]);
+      expect(missingPayload.reviews).toEqual([]);
+
+      const drafts = buildL2UserItems(s);
+      expect(drafts).toHaveLength(1);
+      expect(drafts[0].item.id).toBe(item.id);
+      expect(drafts[0].item.kind).toBe('dict');
+      expect(drafts[0].item.audioClip?.src).toBe(item.audio);
+      expect(drafts[0].cardFace).toBe('dict_full');
+
+      const progress = buildL2ProgressPayload(s, new Map(), new Date(2500));
+      expect(progress.attempt.gameId).toBe('l2');
+      expect(progress.attempt.items).toHaveLength(1);
     });
   });
 });

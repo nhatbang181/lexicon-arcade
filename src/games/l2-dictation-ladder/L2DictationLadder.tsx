@@ -21,10 +21,14 @@ import {
   type TrackPlayerState,
 } from '../../core/audio/trackPlayer';
 import { playSfx, sfxEngine } from '../../core/audio/sfx';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
+import { formatDateKey } from '../../core/gamification/streak';
 import type { DictationItem } from '../../core/content/schemas';
+import { db } from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { cardRepo } from '../../core/storage/repos/cardRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
 import { Button, Card, Pill, RecapScreen, Skeleton, type RecapMistakeItem } from '../../design/components';
 import { dur, ease, feedbackSlideVariants, pickVariants } from '../../design/motion';
 import type { GameProps } from '../registry';
@@ -35,8 +39,11 @@ import {
   L2_MAX_LEVEL,
   L2_MIN_LEVEL,
   L2_PERFECT_BONUS_XP,
+  L2_SPELLING_CARD_THRESHOLD,
   advanceToNextSentence,
+  buildL2ProgressPayload,
   buildL2SessionSavePayload,
+  buildL2UserItems,
   canPlayNormal,
   canPlaySlow,
   clampL2Level,
@@ -53,6 +60,8 @@ import {
   type L2DiffToken,
   type L2SessionState,
 } from './engine';
+
+const KV_SPELLING_MISS_KEY = 'l2.spellingMiss';
 
 const ACCENT_LABELS: Record<'uk' | 'us' | 'au', string> = {
   uk: 'Giọng Anh (UK)',
@@ -72,9 +81,6 @@ const LEVEL_WPM_HINTS: Record<number, string> = {
   9: '195–205 WPM · Tốc độ thi thật',
   10: '205+ WPM · Tự sửa & tốc độ cao',
 };
-
-const SILENT_DATA_URI =
-  'data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA';
 
 function estimateDurationSec(item: DictationItem): number {
   const words = item.text.trim().split(/\s+/).filter(Boolean).length;
@@ -155,7 +161,7 @@ const LadderRail: React.FC<LadderRailProps> = ({
                   Lv {lvl}
                 </span>
                 <span
-                  className="text-[11px] truncate"
+                  className="text-xs truncate"
                   style={{ color: 'var(--color-text-dim)' }}
                 >
                   {LEVEL_WPM_HINTS[lvl]}
@@ -165,7 +171,7 @@ const LadderRail: React.FC<LadderRailProps> = ({
               <div className="flex items-center gap-1.5 shrink-0">
                 {isCurrent && (
                   <span
-                    className="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
+                    className="text-xs font-bold px-2 py-0.5 rounded-full"
                     style={{
                       backgroundColor: 'color-mix(in srgb, var(--color-listening) 18%, var(--color-surface))',
                       color: 'var(--color-listening)',
@@ -176,7 +182,7 @@ const LadderRail: React.FC<LadderRailProps> = ({
                 )}
                 {isRecommended && (
                   <span
-                    className="text-[10px] font-bold px-1.5 py-0.5 rounded-full"
+                    className="text-xs font-bold px-2 py-0.5 rounded-full"
                     style={{
                       backgroundColor: 'color-mix(in srgb, var(--color-correct) 18%, var(--color-surface))',
                       color: 'var(--color-correct)',
@@ -186,7 +192,7 @@ const LadderRail: React.FC<LadderRailProps> = ({
                   </span>
                 )}
                 <span
-                  className="text-[11px] tabular-nums"
+                  className="text-xs tabular-nums"
                   style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
                 >
                   {maxK}×
@@ -214,7 +220,7 @@ const LadderRail: React.FC<LadderRailProps> = ({
                 key={lvl}
                 type="button"
                 onClick={() => onSelectLevel(lvl)}
-                className="w-full flex items-center justify-between gap-2 px-2.5 py-1.5 rounded-[var(--radius-sm)] border text-left transition-colors cursor-pointer"
+                className="w-full min-h-[44px] flex items-center justify-between gap-2 px-2.5 py-2 rounded-[var(--radius-sm)] border text-left transition-colors cursor-pointer"
                 style={baseStyle}
                 data-testid={`l2-level-rung-${lvl}`}
                 aria-pressed={isCurrent}
@@ -317,19 +323,30 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
   const prefersReduced = Boolean(useReducedMotion());
 
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [pool, setPool] = useState<DictationItem[]>([]);
-  const [poolSource, setPoolSource] = useState<'data' | 'fixture'>('fixture');
+  const [totalInDataset, setTotalInDataset] = useState(0);
+  const [recentIds, setRecentIds] = useState<string[]>([]);
+  const [dueDictIds, setDueDictIds] = useState<string[]>([]);
+  const [savedSpellingMisses, setSavedSpellingMisses] = useState<Record<string, number>>({});
   const [selectedLevel, setSelectedLevel] = useState<number>(() =>
     clampL2Level(initialLevel || L2_MIN_LEVEL),
   );
   const [session, setSession] = useState<L2SessionState | null>(null);
+  const sessionRef = useRef<L2SessionState | null>(null);
+  sessionRef.current = session;
+
   const [promotedToLevel, setPromotedToLevel] = useState<number | null>(null);
   const [savingSession, setSavingSession] = useState(false);
   const savedOnceRef = useRef(false);
+  const attemptIdRef = useRef<number | null>(null);
+  const sessionNonceRef = useRef(1);
 
   const inputRef = useRef<HTMLTextAreaElement | null>(null);
   const playerRef = useRef<TrackPlayerController | null>(null);
   const [trackState, setTrackState] = useState<TrackPlayerState>(createIdleTrackState);
+  const trackStateRef = useRef<TrackPlayerState>(trackState);
+  trackStateRef.current = trackState;
 
   // Initialize TrackPlayerController (0 speechSynthesis)
   useEffect(() => {
@@ -356,24 +373,61 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
     };
   }, [trackState.status]);
 
-  // Load dictation pool + saved profile level on mount
+  const buildSeed = useCallback((nonce: number) => `${formatDateKey(new Date())}|${nonce}`, []);
+
+  // Load dictation pool (chỉ giữ câu có MP3 thật — L2-01), lịch sử 7 ngày & thẻ đến hạn (L2-02), spelling misses (L2-08)
   useEffect(() => {
     let alive = true;
+    const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
     void (async () => {
       try {
-        const [loaded, profile] = await Promise.all([
+        const [loaded, profile, recentAttempts, allCards, spellingRow] = await Promise.all([
           loadDictationPool(),
           profileRepo.getOrCreate().catch(() => null),
+          attemptRepo.getSince(sevenDaysAgo, 'l2').catch(() => []),
+          cardRepo.getAll().catch(() => []),
+          db.kv.get(KV_SPELLING_MISS_KEY).catch(() => undefined),
         ]);
         if (!alive) return;
+
+        const recent = Array.from(
+          new Set(recentAttempts.flatMap((a) => a.items.map((it) => it.itemId))),
+        );
+        const nowMs = Date.now();
+        const due = allCards
+          .filter((c) => c.face === 'dict_full' && c.unlocked && c.due <= nowMs)
+          .map((c) => c.itemId);
+        const spellingMap =
+          spellingRow && typeof spellingRow.value === 'object' && spellingRow.value !== null
+            ? (spellingRow.value as Record<string, number>)
+            : {};
+
         setPool(loaded.items);
-        setPoolSource(loaded.source);
+        setTotalInDataset(loaded.totalInDataset);
+        setRecentIds(recent);
+        setDueDictIds(due);
+        setSavedSpellingMisses(spellingMap);
+        setLoadError(null);
+
         const startLvl = clampL2Level(
           initialLevel || profile?.skillLevels?.l2 || L2_MIN_LEVEL,
         );
         setSelectedLevel(startLvl);
-        const items = selectL2SessionItems(loaded.items, startLvl);
-        setSession(createL2Session(items, startLvl));
+        const seed = buildSeed(sessionNonceRef.current);
+        const items = selectL2SessionItems(loaded.items, startLvl, undefined, {
+          seed,
+          recentItemIds: recent,
+          dueItemIds: due,
+        });
+        setSession(
+          createL2Session(items, startLvl, Date.now(), {
+            initialSpellingCounts: spellingMap,
+          }),
+        );
+      } catch {
+        if (alive) {
+          setLoadError('Không tải được dữ liệu bài nghe chép chính tả. Vui lòng thử lại.');
+        }
       } finally {
         if (alive) setLoading(false);
       }
@@ -381,14 +435,14 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
     return () => {
       alive = false;
     };
-  }, [initialLevel]);
+  }, [initialLevel, buildSeed]);
 
   const currentItem: DictationItem | null = useMemo(() => {
     if (!session) return null;
     return session.items[session.currentIndex] ?? null;
   }, [session]);
 
-  // Load current sentence audio whenever currentItem or phase changes to playing
+  // Load current sentence audio whenever currentItem or phase changes to playing (chỉ phát MP3 thật — L2-01)
   useEffect(() => {
     const controller = playerRef.current;
     if (!controller || !session || !currentItem) return;
@@ -398,36 +452,65 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
     }
 
     const durationHintSec = estimateDurationSec(currentItem);
-    if (poolSource === 'data') {
-      controller.load(currentItem.audio, { durationHintSec });
-      const nextItem = session.items[session.currentIndex + 1];
-      if (nextItem) {
-        controller.preload(nextItem.audio);
-      }
-    } else {
-      // Fixture fallback: never trigger a 404 network error in console
-      controller.load(SILENT_DATA_URI, { durationHintSec });
-      controller.markAudioMissing(
-        'Audio câu mẫu chưa render trên đĩa — đang chạy chế độ mô phỏng theo nhịp WPM.',
-      );
+    controller.load(currentItem.audio, { durationHintSec });
+    const nextItem = session.items[session.currentIndex + 1];
+    if (nextItem) {
+      controller.preload(nextItem.audio);
     }
-  }, [currentItem, poolSource, session?.currentIndex, session?.phase === 'intro' || session?.phase === 'recap']);
+  }, [currentItem, session?.currentIndex, session?.phase === 'intro' || session?.phase === 'recap']);
+
+  // Lưu tiến độ từng lượt (TU-02) và đăng ký progressSaver cho hộp thoát của PlayScreen (F1)
+  const flushProgress = useCallback(async () => {
+    const cur = sessionRef.current;
+    if (!cur || cur.phase === 'intro' || cur.phase === 'recap' || cur.results.length === 0) return;
+    try {
+      const allCards = await cardRepo.getAll().catch(() => []);
+      const existingMap = new Map(allCards.map((c) => [c.id, c]));
+      const payload = buildL2ProgressPayload(cur, existingMap, new Date());
+      const res = await attemptRepo.saveProgress({
+        attemptId: attemptIdRef.current ?? undefined,
+        ...payload,
+      });
+      attemptIdRef.current = res.attemptId;
+    } catch {
+      // Best-effort persistence
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!session || session.phase === 'intro' || session.phase === 'recap') return;
+    return registerProgressSaver(() => flushProgress());
+  }, [session?.phase, flushProgress]);
 
   const handleSelectLevel = useCallback(
     (lvl: number) => {
       const clamped = clampL2Level(lvl);
       setSelectedLevel(clamped);
-      const items = selectL2SessionItems(pool, clamped);
-      setSession(createL2Session(items, clamped));
+      const seed = buildSeed(sessionNonceRef.current);
+      const items = selectL2SessionItems(pool, clamped, undefined, {
+        seed,
+        recentItemIds: recentIds,
+        dueItemIds: dueDictIds,
+      });
+      setSession(
+        createL2Session(items, clamped, Date.now(), {
+          initialSpellingCounts: savedSpellingMisses,
+        }),
+      );
       setPromotedToLevel(null);
       savedOnceRef.current = false;
+      attemptIdRef.current = null;
     },
-    [pool],
+    [pool, recentIds, dueDictIds, savedSpellingMisses, buildSeed],
   );
 
   const handleStartSession = useCallback(() => {
-    if (!session) return;
+    if (!session || session.items.length === 0) return;
+    // Mở khoá audio theo thao tác chạm (TU-03 Safari iOS)
+    playerRef.current?.unlock();
+    sfxEngine.unlock();
     savedOnceRef.current = false;
+    attemptIdRef.current = null;
     setPromotedToLevel(null);
     setSession((prev) => (prev ? startL2Session(prev) : prev));
     window.setTimeout(() => {
@@ -438,6 +521,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
   const handlePlayNormal = useCallback(() => {
     const controller = playerRef.current;
     if (!controller || !session) return;
+    playerRef.current?.unlock();
+    sfxEngine.unlock();
     if (trackState.status === 'playing') {
       controller.pause();
       return;
@@ -452,6 +537,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
   const handlePlaySlowBeforeGrade = useCallback(() => {
     const controller = playerRef.current;
     if (!controller || !session) return;
+    playerRef.current?.unlock();
+    sfxEngine.unlock();
     if (!canPlaySlow(session)) return;
     setSession((prev) => (prev ? recordSlowPlay(prev) : prev));
     controller.setRate(0.75);
@@ -462,6 +549,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
   const handleReplaySlowAfterGrade = useCallback(() => {
     const controller = playerRef.current;
     if (!controller) return;
+    playerRef.current?.unlock();
+    sfxEngine.unlock();
     if (trackState.status === 'playing') {
       controller.pause();
       return;
@@ -473,24 +562,43 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
 
   const handleSubmit = useCallback(() => {
     const controller = playerRef.current;
-    if (controller && trackState.status === 'playing') {
+    if (controller && trackStateRef.current.status === 'playing') {
       controller.pause();
     }
-    setSession((prev) => {
-      if (!prev || prev.phase !== 'playing') return prev;
-      const next = submitCurrentSentence(prev);
-      if (next.lastGraded) {
-        if (next.lastGraded.effectiveScore >= 0.9) {
-          playSfx('correct');
-        } else if (next.lastGraded.effectiveScore >= 0.7) {
-          playSfx('tap');
-        } else {
-          playSfx('wrong');
-        }
+    // L2-09: mở chặn SFX ngay sau pause() và tính state ngoài updater để không gọi SFX 2 lần ở StrictMode
+    sfxEngine.setBlocked(false);
+
+    const cur = sessionRef.current;
+    if (!cur || cur.phase !== 'playing') return;
+    const next = submitCurrentSentence(cur);
+    setSession(next);
+
+    if (next.lastGraded) {
+      if (next.lastGraded.effectiveScore >= 0.9) {
+        playSfx('correct');
+      } else if (next.lastGraded.effectiveScore >= 0.7) {
+        playSfx('tap');
+      } else {
+        playSfx('wrong');
       }
-      return next;
-    });
-  }, [trackState.status]);
+    }
+
+    // Lưu tiến độ từng câu (TU-02)
+    void (async () => {
+      try {
+        const allCards = await cardRepo.getAll().catch(() => []);
+        const existingMap = new Map(allCards.map((c) => [c.id, c]));
+        const payload = buildL2ProgressPayload(next, existingMap, new Date());
+        const res = await attemptRepo.saveProgress({
+          attemptId: attemptIdRef.current ?? undefined,
+          ...payload,
+        });
+        attemptIdRef.current = res.attemptId;
+      } catch {
+        // Non-fatal
+      }
+    })();
+  }, []);
 
   const handleAdvance = useCallback(() => {
     const controller = playerRef.current;
@@ -501,7 +609,7 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
     }, 60);
   }, []);
 
-  // Persist session once when entering recap
+  // Persist session once when entering recap (finalize + userItems dict:* + kv spellingMiss)
   useEffect(() => {
     if (!session || session.phase !== 'recap' || savedOnceRef.current) return;
     savedOnceRef.current = true;
@@ -509,10 +617,45 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
 
     void (async () => {
       try {
+        const nowDate = new Date();
         const allCards = await cardRepo.getAll();
         const existingMap = new Map(allCards.map((c) => [c.id, c]));
-        const payload = buildL2SessionSavePayload(session, existingMap, new Date());
-        await attemptRepo.saveSession(payload);
+        const audioMissing = trackStateRef.current.status === 'audio_missing';
+        const payload = buildL2SessionSavePayload(session, existingMap, nowDate, { audioMissing });
+
+        if (attemptIdRef.current !== null) {
+          await attemptRepo.finalize(attemptIdRef.current, payload);
+        } else {
+          const saved = await attemptRepo.saveSession(payload);
+          attemptIdRef.current = saved.attemptId;
+        }
+
+        // B6 / PP-11: Producer ghi userItems cho dict:* kèm audioClip
+        if (!audioMissing) {
+          const userItemDrafts = buildL2UserItems(session, existingMap);
+          for (const draft of userItemDrafts) {
+            await userItemRepo.upsertWithCard(draft.item, draft.cardFace, {
+              now: nowDate,
+              cardSource: 'dictation',
+            });
+          }
+
+          // L2-08: lưu đếm lỗi chính tả qua nhiều phiên (reset từ đã tạo thẻ)
+          const remainingMisses: Record<string, number> = {};
+          for (const [w, cnt] of Object.entries(session.spellingErrorCounts)) {
+            if (cnt > 0 && cnt < L2_SPELLING_CARD_THRESHOLD) {
+              remainingMisses[w] = cnt;
+            }
+          }
+          await db.kv.put({ key: KV_SPELLING_MISS_KEY, value: remainingMisses });
+          setSavedSpellingMisses(remainingMisses);
+        }
+
+        // Cập nhật danh sách câu vừa làm trong phiên để phiên kế tiếp không lặp (L2-02)
+        const justDone = session.items.map((it) => it.id);
+        setRecentIds((prev) => Array.from(new Set([...prev, ...justDone])));
+        sessionNonceRef.current += 1;
+
         playSfx('sessionDone');
       } catch {
         // Non-fatal in private browsing / mock storage
@@ -550,8 +693,14 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
     const retryItems = session.items.filter((it) => mistakeIds.has(it.id));
     if (retryItems.length === 0) return;
     savedOnceRef.current = false;
+    attemptIdRef.current = null;
     setPromotedToLevel(null);
-    setSession(startL2Session(createL2Session(retryItems, session.level)));
+    // L2-12: phiên ôn câu sai thưởng 0 XP, chỉ cập nhật lịch ôn
+    setSession(
+      startL2Session(
+        createL2Session(retryItems, session.level, Date.now(), { isRetry: true }),
+      ),
+    );
   }, [session]);
 
   // Global keyboard shortcuts: R to replay (when input not focused), Enter to advance on graded screen
@@ -574,11 +723,34 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [handleAdvance, handlePlayNormal, session]);
 
-  if (loading || !session) {
+  if (loading) {
     return (
       <div className="max-w-4xl mx-auto space-y-4 py-8" data-testid="l2-loading">
         <Skeleton className="h-8 w-1/3" />
         <Skeleton lines={5} />
+      </div>
+    );
+  }
+
+  if (loadError || !session || pool.length === 0) {
+    return (
+      <div className="max-w-3xl mx-auto py-8 px-4 space-y-4" data-testid="l2-empty-audio">
+        <Button
+          variant="ghost"
+          size="sm"
+          leftIcon={<ArrowLeft className="w-4 h-4" />}
+          onClick={() => onExit()}
+        >
+          Thoát
+        </Button>
+        <Card padding="lg" className="text-center space-y-3">
+          <h1 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+            {loadError ?? 'Chưa có câu nghe nào có sẵn file MP3 thật.'}
+          </h1>
+          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+            L2 chỉ chọn các câu có file âm thanh thật để đảm bảo luyện nghe chính xác.
+          </p>
+        </Card>
       </div>
     );
   }
@@ -605,7 +777,12 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
             </Pill>
           </div>
           <Pill tone="neutral">
-            {poolSource === 'data' ? `${pool.length} câu chính thức` : `${pool.length} câu mẫu (fallback)`}
+            <span
+              className="inline-block w-2 h-2 rounded-full mr-1.5 motion-safe:animate-pulse"
+              style={{ backgroundColor: 'var(--color-listening)' }}
+              aria-hidden="true"
+            />
+            {pool.length}/{totalInDataset || pool.length} câu có audio thật
           </Pill>
         </div>
 
@@ -638,7 +815,7 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
                 >
                   Level {selectedLevel}
                 </div>
-                <div className="text-[11px]" style={{ color: 'var(--color-text-dim)' }}>
+                <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
                   {LEVEL_WPM_HINTS[selectedLevel]}
                 </div>
               </div>
@@ -659,7 +836,7 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
                 >
                   {maxK} lần
                 </div>
-                <div className="text-[11px]" style={{ color: 'var(--color-text-dim)' }}>
+                <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
                   +1 lần 0.75× (−30% điểm)
                 </div>
               </div>
@@ -680,7 +857,7 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
                 >
                   ≥ 8/10 câu
                 </div>
-                <div className="text-[11px]" style={{ color: 'var(--color-text-dim)' }}>
+                <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
                   Mỗi câu đạt ≥ 90%
                 </div>
               </div>
@@ -797,9 +974,21 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
                   size="sm"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                   onClick={() => {
-                    const items = selectL2SessionItems(pool, summary.nextRecommendedLevel);
+                    const seed = buildSeed(sessionNonceRef.current);
+                    const items = selectL2SessionItems(pool, summary.nextRecommendedLevel, undefined, {
+                      seed,
+                      recentItemIds: recentIds,
+                      dueItemIds: dueDictIds,
+                    });
                     savedOnceRef.current = false;
-                    setSession(startL2Session(createL2Session(items, summary.nextRecommendedLevel)));
+                    attemptIdRef.current = null;
+                    setSession(
+                      startL2Session(
+                        createL2Session(items, summary.nextRecommendedLevel, Date.now(), {
+                          initialSpellingCounts: savedSpellingMisses,
+                        }),
+                      ),
+                    );
                   }}
                 >
                   Chơi ngay Level {summary.nextRecommendedLevel}
@@ -894,12 +1083,12 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
                 >
                   {summary.dictFullCardCount > 0 && (
                     <div>
-                      • Đã đưa <strong>{summary.dictFullCardCount} câu</strong> (&lt; 70%) vào lịch ôn FSRS (<code className="font-mono">dict_full</code>).
+                      • Đã đưa <strong>{summary.dictFullCardCount} câu</strong> (&lt; 70%) vào lịch ôn tập cách quãng để luyện lại.
                     </div>
                   )}
                   {summary.listenSpellCandidates.length > 0 && (
                     <div>
-                      • Tạo thẻ chính tả <code className="font-mono">listen_spell</code> cho V1:{' '}
+                      • Tạo thẻ chính tả cho bài ôn hằng ngày:{' '}
                       <strong>{summary.listenSpellCandidates.join(', ')}</strong>.
                     </div>
                   )}
@@ -1022,9 +1211,14 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
               <Pill tone="neutral">{ACCENT_LABELS[currentItem.accent]}</Pill>
               <Pill tone="neutral">{Math.round(currentItem.wpm)} WPM</Pill>
             </div>
-            {trackState.simulatedMode && (
-              <span style={{ color: 'var(--color-text-dim)' }}>
-                Chế độ mô phỏng (MP3 chưa render)
+            {trackState.status === 'audio_missing' && (
+              <span style={{ color: 'var(--color-wrong)' }} data-testid="l2-audio-missing">
+                Không tải được file MP3 của câu này.
+              </span>
+            )}
+            {trackState.autoplayBlocked && (
+              <span style={{ color: 'var(--color-partial)' }} data-testid="l2-autoplay-blocked">
+                Trình duyệt chặn tự phát — bấm nút Phát để nghe.
               </span>
             )}
           </div>
@@ -1150,11 +1344,10 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
               <Button
                 variant="primary"
                 skill="listening"
-                hotkey="Enter"
                 onClick={handleSubmit}
                 data-testid="l2-submit-btn"
               >
-                Nộp bài
+                Nộp bài (Enter)
               </Button>
             </div>
           )}
@@ -1293,7 +1486,6 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
                 <Button
                   variant="primary"
                   skill="listening"
-                  hotkey="Enter"
                   rightIcon={
                     session.currentIndex + 1 >= session.items.length ? (
                       <CheckCircle2 className="w-4 h-4" />
@@ -1305,8 +1497,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
                   data-testid="l2-next-btn"
                 >
                   {session.currentIndex + 1 >= session.items.length
-                    ? 'Xem tổng kết'
-                    : 'Câu tiếp theo'}
+                    ? 'Xem tổng kết (Enter)'
+                    : 'Câu tiếp theo (Enter)'}
                 </Button>
               </div>
             </motion.div>
