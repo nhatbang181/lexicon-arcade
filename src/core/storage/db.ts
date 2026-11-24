@@ -61,6 +61,38 @@ export interface AttemptRecord {
   total: number;
   xp: number;
   items: AttemptItem[];
+  /** `in_progress` = đã lưu giữa phiên (saveProgress); thiếu hoặc `final` = phiên đã kết thúc. */
+  status?: 'in_progress' | 'final';
+  /** Số review đã ghi cho phiên này (saveProgress chỉ ghi phần mới). */
+  reviewsSaved?: number;
+  /** XP của phiên đã cộng vào profile (saveProgress chỉ cộng phần chênh). */
+  xpApplied?: number;
+}
+
+/** Nội dung học do người dùng/producer tạo (lỗi tự viết, câu bẫy Listening…) – nguồn nội dung của thẻ SRS `err:user_*` v.v. */
+export type UserItemKind = 'error' | 'collocation' | 'tfng' | 'head' | 'ltrap' | 'dict' | 'other';
+
+export interface UserItemAudioClip {
+  /** Đường dẫn tương đối tới file audio (vd `audio/listening/p1_001.mp3`). */
+  src: string;
+  /** Giây. */
+  start: number;
+  end: number;
+}
+
+export interface UserItemRecord {
+  /** Trùng `SRSCard.itemId` (vd `err:user_ab12`). Không đổi sau khi phát hành. */
+  id: string;
+  kind: UserItemKind;
+  /** Mặt trước: câu/cụm cần sửa, câu hỏi… */
+  front: string;
+  /** Mặt sau: đáp án chuẩn. */
+  back: string;
+  noteVi: string;
+  audioClip?: UserItemAudioClip;
+  /** Nguồn tạo (vd `essay_feedback`, `listening_trap`). */
+  source: string;
+  createdAt: number;
 }
 
 export interface EssayRecord {
@@ -140,6 +172,7 @@ export class LexiconV3DB extends Dexie {
   bandSnapshots!: EntityTable<BandSnapshotRecord, 'id'>;
   events!: EntityTable<AppEventRecord, 'id'>;
   kv!: EntityTable<KvRecord, 'key'>;
+  userItems!: EntityTable<UserItemRecord, 'id'>;
 
   constructor(name = 'LexiconV3DB') {
     super(name);
@@ -155,6 +188,19 @@ export class LexiconV3DB extends Dexie {
       events: '++id, type, ts',
       kv: 'key',
     });
+    // v2 (audit-max T1-A): bảng userItems + đánh dấu attempt cũ là đã kết thúc.
+    this.version(2)
+      .stores({
+        userItems: 'id, kind, source, createdAt',
+      })
+      .upgrade(async (tx) => {
+        await tx
+          .table('attempts')
+          .toCollection()
+          .modify((attempt: AttemptRecord) => {
+            if (attempt.status === undefined) attempt.status = 'final';
+          });
+      });
   }
 }
 

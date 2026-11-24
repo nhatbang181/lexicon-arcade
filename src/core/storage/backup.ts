@@ -9,6 +9,7 @@ import {
   type LexiconV3DB,
   type RecordingRecord,
   type ReviewRecord,
+  type UserItemRecord,
   type UserProfile,
 } from './db';
 import type { SRSCard } from '../srs/fsrsAdapter';
@@ -28,6 +29,8 @@ export interface BackupDataPayload {
   bandSnapshots: BandSnapshotRecord[];
   events: AppEventRecord[];
   kv: KvRecord[];
+  /** Có từ audit-max T1-A (Dexie v2). Backup cũ không có trường này vẫn đọc được. */
+  userItems?: UserItemRecord[];
 }
 
 export interface BackupEnvelope {
@@ -54,6 +57,7 @@ const BackupEnvelopeSchema = z.object({
     bandSnapshots: z.array(z.any()),
     events: z.array(z.any()),
     kv: z.array(z.any()),
+    userItems: z.array(z.any()).optional(),
   }),
 });
 
@@ -94,6 +98,7 @@ export async function exportBackup(
     bandSnapshots,
     events,
     kv,
+    userItems,
   ] = await Promise.all([
     database.profile.toArray(),
     database.cards.toArray(),
@@ -105,6 +110,7 @@ export async function exportBackup(
     database.bandSnapshots.toArray(),
     database.events.toArray(),
     database.kv.toArray(),
+    database.userItems.toArray(),
   ]);
 
   const recordings = rawRecordings.map(({ audioBlob: _omit, ...rest }) => rest);
@@ -120,6 +126,7 @@ export async function exportBackup(
     bandSnapshots,
     events,
     kv,
+    userItems,
   };
 
   const checksum = computeChecksum(JSON.stringify(data));
@@ -211,6 +218,7 @@ export async function importBackup(
       database.bandSnapshots,
       database.events,
       database.kv,
+      database.userItems,
     ],
     async () => {
       await Promise.all([
@@ -224,6 +232,7 @@ export async function importBackup(
         database.bandSnapshots.clear(),
         database.events.clear(),
         database.kv.clear(),
+        database.userItems.clear(),
       ]);
 
       if (data.profile.length > 0) await database.profile.bulkPut(data.profile);
@@ -240,6 +249,9 @@ export async function importBackup(
       if (data.bandSnapshots.length > 0) await database.bandSnapshots.bulkPut(data.bandSnapshots);
       if (data.events.length > 0) await database.events.bulkPut(data.events);
       if (data.kv.length > 0) await database.kv.bulkPut(data.kv);
+      if (data.userItems && data.userItems.length > 0) {
+        await database.userItems.bulkPut(data.userItems);
+      }
     },
   );
 
@@ -255,6 +267,7 @@ export async function importBackup(
       bandSnapshots: data.bandSnapshots.length,
       events: data.events.length,
       kv: data.kv.length,
+      userItems: data.userItems?.length ?? 0,
     },
   };
 }

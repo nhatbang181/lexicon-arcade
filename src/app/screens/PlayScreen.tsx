@@ -9,9 +9,8 @@ import { findNextTask, type NextTaskInfo } from '../playTask';
 import { applySessionLevel, readSkillLevel } from '../../core/adaptive/applySessionLevel';
 import {
   clampLevel,
-  formatBandLabel,
-  modeLabelVi,
   parsePlayMode,
+  playChipLabel,
 } from '../../core/adaptive/sessionLevel';
 import { hasProgressSavers, runProgressSavers } from '../../core/adaptive/progressSaver';
 import type { GameId } from '../../core/planner/today';
@@ -47,6 +46,7 @@ export const PlayScreen: React.FC<PlayScreenProps> = ({ gameId }) => {
   const mode = game ? parsePlayMode(params.get('mode'), game.modes) : 'training';
 
   const [level, setLevel] = useState<number | null>(null);
+  const [calibrated, setCalibrated] = useState(false);
   const [nextTask, setNextTask] = useState<NextTaskInfo | null>(null);
   const [exitOpen, setExitOpen] = useState(false);
   const [exiting, setExiting] = useState(false);
@@ -64,8 +64,13 @@ export const PlayScreen: React.FC<PlayScreenProps> = ({ gameId }) => {
     if (!game) return;
     let active = true;
     setLevel(null);
+    setCalibrated(false);
     void applySessionLevel(game.id as GameId)
-      .then((res) => active && setLevel(clampLevel(res.level)))
+      .then((res) => {
+        if (!active) return;
+        setCalibrated(res.calibrated);
+        setLevel(clampLevel(res.level));
+      })
       .catch(() =>
         readSkillLevel(game.id as GameId)
           .then((lv) => active && setLevel(lv))
@@ -143,7 +148,12 @@ export const PlayScreen: React.FC<PlayScreenProps> = ({ gameId }) => {
   }
 
   // Prop mở rộng cho game/Recap (F5); game chưa nhận thì bỏ qua.
-  const extraProps = { from: fromToday ? 'today' : undefined, nextTask, onNextTask: goNextTask };
+  const extraProps = {
+    from: fromToday ? 'today' : undefined,
+    nextTask,
+    onNextTask: goNextTask,
+    calibrated,
+  };
   const GameComponent = LazyGame as React.ComponentType<
     { mode: string; level: number; onExit: (result?: unknown) => void } & typeof extraProps
   >;
@@ -200,7 +210,7 @@ export const PlayScreen: React.FC<PlayScreenProps> = ({ gameId }) => {
             }}
             data-testid="play-level-chip"
           >
-            {level === null ? 'Band ≈ …' : formatBandLabel(level)} · {modeLabelVi(mode)}
+            {playChipLabel({ mode, level, calibrated })}
           </span>
 
           <button
@@ -241,6 +251,7 @@ export const PlayScreen: React.FC<PlayScreenProps> = ({ gameId }) => {
               from={extraProps.from}
               nextTask={nextTask}
               onNextTask={goNextTask}
+              calibrated={calibrated}
             />
           )}
         </Suspense>

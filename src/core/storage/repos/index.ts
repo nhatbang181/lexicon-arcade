@@ -6,3 +6,4 @@ export * from './recordingRepo';
 export * from './planRepo';
 export * from './bandRepo';
 export * from './eventRepo';
+export * from './userItemRepo';

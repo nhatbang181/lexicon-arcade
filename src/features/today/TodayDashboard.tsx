@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation } from 'wouter';
 import {
   ArrowRight,
@@ -30,7 +30,7 @@ import {
   type GameId,
   type PlannedTask,
 } from '../../core/planner/today';
-import { displayStreakCount, formatDateKey } from '../../core/gamification/streak';
+import { displayStreakCount, formatDateKey, msUntilNextDay } from '../../core/gamification/streak';
 import { db, type AttemptRecord, type UserProfile } from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { bandRepo } from '../../core/storage/repos/bandRepo';
@@ -191,7 +191,32 @@ export const TodayDashboard: React.FC = () => {
     return () => window.removeEventListener('focus', onFocus);
   }, [loadTodayData]);
 
-  const todayKey = useMemo(() => formatDateKey(new Date()), []);
+  // Ngày học đổi lúc 04:00 (F3): hẹn giờ tới mốc kế tiếp, và kiểm lại khi quay lại tab.
+  const [todayKey, setTodayKey] = useState(() => formatDateKey(new Date()));
+  useEffect(() => {
+    const sync = () => setTodayKey((prev) => {
+      const next = formatDateKey(new Date());
+      return next === prev ? prev : next;
+    });
+    const timer = window.setTimeout(sync, msUntilNextDay(new Date()) + 500);
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') sync();
+    };
+    document.addEventListener('visibilitychange', onVisible);
+    window.addEventListener('focus', sync);
+    return () => {
+      window.clearTimeout(timer);
+      document.removeEventListener('visibilitychange', onVisible);
+      window.removeEventListener('focus', sync);
+    };
+  }, [todayKey]);
+  // Sang ngày mới: nạp lại kế hoạch/việc đã xong của ngày đó.
+  const lastLoadedKey = useRef(todayKey);
+  useEffect(() => {
+    if (lastLoadedKey.current === todayKey) return;
+    lastLoadedKey.current = todayKey;
+    void loadTodayData();
+  }, [todayKey, loadTodayData]);
 
   const todayStats = useMemo(() => {
     const todayAttempts = state.recentAttempts.filter(
@@ -219,8 +244,7 @@ export const TodayDashboard: React.FC = () => {
 
   const startTask = useCallback(
     (task: PlannedTask) => {
-      const base = playPath(task.gameId, 'today', task.id);
-      navigate(task.mode !== 'training' ? `${base}&mode=${task.mode}` : base);
+      navigate(playPath(task.gameId, 'today', task.id, task.mode));
     },
     [navigate],
   );

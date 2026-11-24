@@ -4,6 +4,8 @@ import {
   ArrowLeft,
   ArrowRight,
   Calendar,
+  Minus,
+  Plus,
   CheckCircle2,
   Database,
   Mic,
@@ -31,6 +33,32 @@ const DEFAULT_DAILY_GOAL = 30;
 const SAMPLE_SENTENCE = 'Final-year students must submit a ten-thousand-word dissertation in May.';
 const SAMPLE_AUDIO_PATH = 'audio/dictation/dict_0001.mp3';
 
+/** Ngày dd/mm/yyyy (tiếng Việt) <-> ISO yyyy-mm-dd lưu trong hồ sơ. */
+export function isoToVnDate(iso: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : '';
+}
+
+/** Trả ISO nếu `text` là dd/mm/yyyy hợp lệ (đúng lịch), ngược lại null. */
+export function vnDateToIso(text: string): string | null {
+  const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(text.trim());
+  if (!m) return null;
+  const d = Number(m[1]);
+  const mo = Number(m[2]);
+  const y = Number(m[3]);
+  const dt = new Date(Date.UTC(y, mo - 1, d));
+  if (dt.getUTCFullYear() !== y || dt.getUTCMonth() !== mo - 1 || dt.getUTCDate() !== d) return null;
+  return `${m[3]}-${m[2]}-${m[1]}`;
+}
+
+/** Gõ số liền, tự chèn dấu "/" thành dd/mm/yyyy. */
+export function maskVnDate(raw: string): string {
+  const digits = raw.replace(/\D/g, '').slice(0, 8);
+  if (digits.length <= 2) return digits;
+  if (digits.length <= 4) return `${digits.slice(0, 2)}/${digits.slice(2)}`;
+  return `${digits.slice(0, 2)}/${digits.slice(2, 4)}/${digits.slice(4)}`;
+}
+
 type DeviceTest = 'idle' | 'working' | 'ok' | 'fail';
 
 const STEPS = [
@@ -57,6 +85,8 @@ export const OnboardingScreen: React.FC = () => {
   });
   const [dailyGoalMin, setDailyGoalMin] = useState<number>(DEFAULT_DAILY_GOAL);
   const [examDate, setExamDate] = useState<string>('');
+  const [examDateText, setExamDateText] = useState<string>('');
+  const stepRootRef = useRef<HTMLDivElement | null>(null);
   const [migrating, setMigrating] = useState(false);
   const [migrationResult, setMigrationResult] = useState<MigrateLegacyResult | null>(null);
   const [saving, setSaving] = useState(false);
@@ -87,6 +117,7 @@ export const OnboardingScreen: React.FC = () => {
           }
           if (profile.examDate) {
             setExamDate(profile.examDate);
+            setExamDateText(isoToVnDate(profile.examDate));
           }
         }
       } catch {
@@ -168,6 +199,26 @@ export const OnboardingScreen: React.FC = () => {
     return () => audioEl.current?.pause();
   }, []);
 
+  // Đổi bước: về đầu trang rồi focus nút chính không cuộn, để tiêu đề không bị header che.
+  // (AnimatePresence đợi bước cũ thoát nên nút mới xuất hiện trễ: dò tối đa ~1 giây.)
+  useEffect(() => {
+    if (step === 1) return;
+    window.scrollTo({ top: 0 });
+    let tries = 0;
+    const timer = window.setInterval(() => {
+      tries += 1;
+      const el = stepRootRef.current?.querySelector<HTMLElement>(`[data-step-primary="${step}"]`);
+      if (el) {
+        window.scrollTo({ top: 0 });
+        el.focus({ preventScroll: true });
+        window.clearInterval(timer);
+      } else if (tries > 40) {
+        window.clearInterval(timer);
+      }
+    }, 25);
+    return () => window.clearInterval(timer);
+  }, [step]);
+
   // Enter = hành động chính của bước hiện tại (onboarding chỉ bằng bàn phím, F10).
   const goPrimary = useCallback(() => {
     if (saving) return;
@@ -192,6 +243,20 @@ export const OnboardingScreen: React.FC = () => {
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [goPrimary]);
+
+  const stepBand = (key: keyof TargetBands, dir: 1 | -1) =>
+    setTargetBands((prev) => {
+      const idx = BAND_OPTIONS.indexOf(prev[key]);
+      const base = idx === -1 ? BAND_OPTIONS.findIndex((b) => b >= prev[key]) : idx;
+      const next = Math.min(BAND_OPTIONS.length - 1, Math.max(0, (base === -1 ? 0 : base) + dir));
+      return { ...prev, [key]: BAND_OPTIONS[next] };
+    });
+  const bandBtnStyle: React.CSSProperties = {
+    backgroundColor: 'var(--color-surface)',
+    borderColor: 'var(--color-border)',
+    color: 'var(--color-text)',
+  };
+  const examDateInvalid = examDateText.length > 0 && vnDateToIso(examDateText) === null;
 
   const motionVariants = prefersReduced ? reducedRouteVariants : questionSlideVariants;
 
@@ -228,6 +293,7 @@ export const OnboardingScreen: React.FC = () => {
         </div>
       </div>
 
+      <div ref={stepRootRef}>
       <AnimatePresence mode="wait">
         {step === 1 && (
           <motion.div
@@ -411,36 +477,50 @@ export const OnboardingScreen: React.FC = () => {
                       borderColor: 'var(--color-border)',
                     }}
                   >
-                    <label
-                      htmlFor={`ob-band-${sk.key}`}
+                    <span
+                      id={`ob-band-${sk.key}`}
                       className="block text-xs font-semibold"
                       style={{ color: sk.color }}
                     >
                       {sk.label} ({sk.key})
-                    </label>
-                    <select
-                      id={`ob-band-${sk.key}`}
-                      value={targetBands[sk.key]}
-                      onChange={(e) =>
-                        setTargetBands((prev) => ({
-                          ...prev,
-                          [sk.key]: parseFloat(e.target.value),
-                        }))
-                      }
-                      className="w-full px-2.5 py-1.5 rounded border text-sm font-bold tabular-nums"
-                      style={{
-                        fontFamily: 'var(--font-mono)',
-                        backgroundColor: 'var(--color-surface)',
-                        borderColor: 'var(--color-border)',
-                        color: 'var(--color-text)',
-                      }}
+                    </span>
+                    <div
+                      role="group"
+                      aria-labelledby={`ob-band-${sk.key}`}
+                      className="flex items-center justify-between gap-1"
                     >
-                      {BAND_OPTIONS.map((b) => (
-                        <option key={b} value={b}>
-                          Band {b.toFixed(1)}
-                        </option>
-                      ))}
-                    </select>
+                      <button
+                        type="button"
+                        onClick={() => stepBand(sk.key, -1)}
+                        disabled={targetBands[sk.key] <= BAND_OPTIONS[0]}
+                        aria-label={`Giảm band ${sk.label}`}
+                        data-testid={`ob-band-${sk.key}-down`}
+                        className="inline-flex items-center justify-center w-11 h-11 shrink-0 rounded-[var(--radius-sm)] border cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                        style={bandBtnStyle}
+                      >
+                        <Minus className="w-4 h-4" />
+                      </button>
+                      <output
+                        id={`ob-band-value-${sk.key}`}
+                        aria-live="polite"
+                        className="flex-1 text-center text-sm font-bold tabular-nums whitespace-nowrap"
+                        style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+                        data-testid={`ob-band-${sk.key}-value`}
+                      >
+                        {targetBands[sk.key].toFixed(1)}
+                      </output>
+                      <button
+                        type="button"
+                        onClick={() => stepBand(sk.key, 1)}
+                        disabled={targetBands[sk.key] >= BAND_OPTIONS[BAND_OPTIONS.length - 1]}
+                        aria-label={`Tăng band ${sk.label}`}
+                        data-testid={`ob-band-${sk.key}-up`}
+                        className="inline-flex items-center justify-center w-11 h-11 shrink-0 rounded-[var(--radius-sm)] border cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                        style={bandBtnStyle}
+                      >
+                        <Plus className="w-4 h-4" />
+                      </button>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -480,16 +560,38 @@ export const OnboardingScreen: React.FC = () => {
                 </label>
                 <input
                   id="onboarding-exam-date"
-                  type="date"
-                  value={examDate}
-                  onChange={(e) => setExamDate(e.target.value)}
-                  className="w-full sm:w-64 h-10 px-3 rounded-[var(--radius-md)] border text-sm"
+                  type="text"
+                  inputMode="numeric"
+                  autoComplete="off"
+                  placeholder="dd/mm/yyyy"
+                  maxLength={10}
+                  value={examDateText}
+                  onChange={(e) => {
+                    const masked = maskVnDate(e.target.value);
+                    setExamDateText(masked);
+                    setExamDate(vnDateToIso(masked) ?? '');
+                  }}
+                  aria-invalid={examDateInvalid}
+                  aria-describedby="onboarding-exam-date-hint"
+                  className="w-full sm:w-64 h-11 px-3 rounded-[var(--radius-md)] border text-sm tabular-nums"
                   style={{
+                    fontFamily: 'var(--font-mono)',
                     backgroundColor: 'var(--color-surface-2)',
-                    borderColor: 'var(--color-border)',
+                    borderColor: examDateInvalid ? 'var(--color-wrong)' : 'var(--color-border)',
                     color: 'var(--color-text)',
                   }}
+                  data-testid="onboarding-exam-date"
                 />
+                <p
+                  id="onboarding-exam-date-hint"
+                  className="text-xs"
+                  role={examDateInvalid ? 'alert' : undefined}
+                  style={{ color: examDateInvalid ? 'var(--color-wrong)' : 'var(--color-text-dim)' }}
+                >
+                  {examDateInvalid
+                    ? 'Ngày chưa đúng. Nhập theo dạng ngày/tháng/năm, ví dụ 15/03/2027.'
+                    : 'Nhập ngày/tháng/năm, ví dụ 15/03/2027. Bỏ trống nếu chưa biết.'}
+                </p>
               </div>
 
               <div className="flex items-center justify-between pt-2">
@@ -504,7 +606,7 @@ export const OnboardingScreen: React.FC = () => {
                   variant="primary"
                   skill="info"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
-                  autoFocus
+                  data-step-primary="2"
                   onClick={() => setStep(3)}
                   data-testid="onboarding-next-2"
                 >
@@ -605,18 +707,20 @@ export const OnboardingScreen: React.FC = () => {
                 <li>3. Bài viết và ghi âm chỉ lưu trên máy của bạn.</li>
               </ul>
 
-              <div className="flex items-center justify-between pt-2">
+              <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
                 <Button
                   variant="ghost"
                   leftIcon={<ArrowLeft className="w-4 h-4" />}
                   onClick={() => setStep(2)}
+                  className="whitespace-nowrap"
                 >
                   Quay lại
                 </Button>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 ml-auto">
                   <Button
                     variant="ghost"
                     onClick={() => setStep(4)}
+                    className="whitespace-nowrap"
                     data-testid="onboarding-skip-devices"
                   >
                     Bỏ qua
@@ -625,8 +729,9 @@ export const OnboardingScreen: React.FC = () => {
                     variant="primary"
                     skill="info"
                     rightIcon={<ArrowRight className="w-4 h-4" />}
-                    autoFocus
+                    data-step-primary="3"
                     onClick={() => setStep(4)}
+                    className="whitespace-nowrap"
                     data-testid="onboarding-next-3"
                   >
                     Tiếp tục
@@ -689,7 +794,7 @@ export const OnboardingScreen: React.FC = () => {
                     variant="primary"
                     skill="vocab"
                     rightIcon={<ArrowRight className="w-4 h-4" />}
-                    autoFocus
+                    data-step-primary="4"
                     onClick={() => void persistOnboarding(false)}
                     disabled={saving}
                     data-testid="onboarding-start-placement"
@@ -702,6 +807,7 @@ export const OnboardingScreen: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 };

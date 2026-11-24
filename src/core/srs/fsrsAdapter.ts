@@ -30,7 +30,9 @@ export type CardSource =
   | 'dictation'
   | 'legacy_srs'
   | 'legacy_mistake'
-  | 'user';
+  | 'user'
+  /** Chỉ dùng trong test: dữ liệu giả không bao giờ được ghi vào DB của người dùng. */
+  | 'fixture';
 
 export interface SRSCard {
   /** Primary key: `${itemId}#${face}` */
@@ -56,6 +58,8 @@ export interface SRSCard {
   /** Consecutive correct reviews (used by autoRate for Easy eligibility) */
   streak: number;
   lastReviewCorrect?: boolean;
+  /** Epoch ms khi người học đã xem thẻ giới thiệu (V1-1). Có giá trị = không hiện intro nữa. */
+  introSeenAt?: number;
 }
 
 export interface ReviewScheduleResult {

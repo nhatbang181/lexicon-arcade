@@ -25,9 +25,9 @@ const NODE_KIND_COLOR: Record<V1NodeKind, string> = {
 const NODE_KIND_LABEL_VI: Record<V1NodeKind, string> = {
   vocab: 'Từ vựng',
   collocation: 'Collocation',
-  paraphrase: 'Paraphrase',
+  paraphrase: 'Paraphrase · Reading',
   error: 'Sửa lỗi',
-  listen: 'Nghe chính tả',
+  listen: 'Nghe',
 };
 
 const SHATTER_SHARDS: ReadonlyArray<{
@@ -98,7 +98,7 @@ export const RunMap: React.FC<RunMapProps> = ({
         >
           {isBossPhase
             ? `BOSS · HP ${bossHp}%`
-            : `Node ${Math.min(nodes.length, currentIndex + 1)}/${nodes.length}`}
+            : `Thẻ ${Math.min(nodes.length, currentIndex + 1)}/${nodes.length}`}
         </div>
       </div>
 
@@ -134,7 +134,7 @@ export const RunMap: React.FC<RunMapProps> = ({
                       : { scale: 1 }
                   }
                   transition={{ duration: 0.35 }}
-                  className="relative inline-flex items-center justify-center w-6 h-6 rounded-full border text-[10px] font-bold shrink-0"
+                  className="relative inline-flex items-center justify-center w-7 h-7 rounded-full border text-xs font-bold shrink-0"
                   style={{
                     backgroundColor: isDone
                       ? statusColor

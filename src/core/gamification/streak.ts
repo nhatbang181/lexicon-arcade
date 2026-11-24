@@ -58,6 +58,14 @@ export function formatDateKey(date: Date): string {
   return `${y}-${m}-${d}`;
 }
 
+/** Số ms từ `now` đến mốc chuyển ngày kế tiếp (04:00 giờ địa phương), luôn > 0. */
+export function msUntilNextDay(now: Date = new Date()): number {
+  const next = new Date(now);
+  next.setHours(DAY_ROLLOVER_HOUR, 0, 0, 0);
+  if (next.getTime() <= now.getTime()) next.setDate(next.getDate() + 1);
+  return Math.max(1, next.getTime() - now.getTime());
+}
+
 export function diffCalendarDays(fromDateKey: string, toDateKey: string): number {
   const [fy, fm, fd] = fromDateKey.split('-').map(Number);
   const [ty, tm, td] = toDateKey.split('-').map(Number);
