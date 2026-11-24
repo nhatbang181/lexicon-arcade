@@ -1,49 +1,134 @@
-name: Deploy to GitHub Pages
+name: Verify and deploy to GitHub Pages
 
+# X2 / LUAT P1: một bước đỏ = không deploy. `verify` chạy trên mọi PR và mọi push master;
+# `deploy` chỉ chạy khi push (hoặc chạy tay) trên master và `verify` xanh.
 on:
   push:
     branches: [master]
+  pull_request:
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  verify:
+    name: verify (8 bước)
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Set up Node.js 22
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: 1/8 Cài phụ thuộc (npm ci)
         run: npm ci
 
-      - name: Build production bundle
+      - name: 2/8 Kiểm kiểu (tsc)
+        run: npx tsc --noEmit -p .
+
+      - name: 3/8 Test đơn vị (Vitest)
+        run: npm test -- --reporter=dot
+
+      - name: 4/8 Kiểm dữ liệu (validate:data)
+        run: npm run validate:data
+
+      - name: 4b Cổng phát hành dữ liệu (chỉ master, khi biến RELEASE_GATE=1)
+        if: github.ref == 'refs/heads/master' && vars.RELEASE_GATE == '1'
+        run: npm run validate:data:release
+
+      - name: 5/8 Cài Chromium cho Playwright
+        run: npx playwright install --with-deps chromium
+
+      - name: 6/8 E2E (Playwright, Chromium)
+        run: npx playwright test --project=chromium
+
+      - name: 7/8 Build production
         run: npm run build
 
+      - name: 8/8 Ngân sách bundle (size-budget)
+        run: node scripts/qa/size-budget.mjs
+
+      - name: Lưu kết quả E2E khi có lỗi
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-test-results
+          path: test-results/
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Setup Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: ./dist
 
+  deploy:
+    name: deploy
+    needs: verify
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Đo giao diện bằng công cụ audit-ui (docs/audit-max/cong-cu). Job riêng, KHÔNG chặn deploy
+  # (không nằm trong `needs` của deploy) cho tới hết đợt 3; kết quả lưu làm artifact.
+  audit-ui:
+    name: audit-ui (không chặn deploy)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Cài phụ thuộc và Chromium
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Chạy dev server và audit-ui
+        run: |
+          npx vite --port 5199 --strictPort &
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:5199/ >/dev/null && break; sleep 1; done
+          BASE_URL=http://127.0.0.1:5199 node docs/audit-max/cong-cu/audit-ui.mjs --route today,hub --vp 390x844,1280x800 --out out/audit-ui
+
+      - name: Lưu báo cáo audit-ui
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-ui
+          path: out/audit-ui/
+          if-no-files-found: ignore
+          retention-days: 7
