@@ -76,21 +76,18 @@ describe('V3 · Paraphrase Radar Engine', () => {
     expect(snapped?.text).toBe(item.target.text);
   });
 
-  it('5. chunks context so clicking any single word inside target or decoy expands to full chunk', () => {
+  it('5. chunks context independently of target/decoy anchors (V3-2)', () => {
     const item = V3_FIXTURE_PARAPHRASES[0];
     const chunks = buildContextChunks(item);
     expect(chunks.length).toBeGreaterThan(3);
+    expect(chunks.every((c) => c.kind === 'neutral')).toBe(true);
 
     const midTargetOffset = Math.floor((item.target.start + item.target.end) / 2);
     const expandedTarget = expandClickToChunk(item, midTargetOffset);
-    expect(expandedTarget?.kind).toBe('target');
-    expect(expandedTarget?.text).toBe(item.target.text);
-
-    const decoy = item.decoys[0];
-    const midDecoyOffset = Math.floor((decoy.start + decoy.end) / 2);
-    const expandedDecoy = expandClickToChunk(item, midDecoyOffset);
-    expect(expandedDecoy?.kind).toBe('decoy');
-    expect(expandedDecoy?.text).toBe(decoy.text);
+    expect(expandedTarget).not.toBeNull();
+    expect(expandedTarget?.kind).toBe('neutral');
+    expect(expandedTarget!.start).toBeLessThanOrEqual(midTargetOffset);
+    expect(expandedTarget!.end).toBeGreaterThan(midTargetOffset);
   });
 
   it('6. computes XP speed multiplier accurately (<40% -> 1.5, <70% -> 1.2, >=70% -> 1.0)', () => {
