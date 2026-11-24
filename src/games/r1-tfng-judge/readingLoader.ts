@@ -11,7 +11,7 @@ import {
   TopicSchema,
   type ReadingPassage,
 } from '../../core/content/schemas';
-import { R1_FIXTURE_PASSAGES } from '../../test/fixtures/r1_fixtures';
+import { db, type LexiconV3DB } from '../../core/storage/db';
 
 /**
  * Contract agreed with r-data-reading for `public/data/reading/index.json`.
@@ -44,15 +44,18 @@ export interface PassageCatalogItem {
   wordCount: number;
   questionCount: number;
   hasJudgeQuestions: boolean;
+  hasTfng?: boolean;
+  hasYnng?: boolean;
   /** Non-empty relative path when backed by `public/data/reading/passages/*.json` */
   file?: string;
-  /** Pre-loaded passage (for fixture entries) */
+  /** Pre-loaded passage (for fixture entries in test mode) */
   fixturePassage?: ReadingPassage;
 }
 
 function fixtureToCatalogItem(p: ReadingPassage): PassageCatalogItem {
   const questionCount = p.questionGroups.reduce((acc, g) => acc + g.questions.length, 0);
-  const hasJudgeQuestions = p.questionGroups.some((g) => g.type === 'tfng' || g.type === 'ynng');
+  const hasTfng = p.questionGroups.some((g) => g.type === 'tfng');
+  const hasYnng = p.questionGroups.some((g) => g.type === 'ynng');
   return {
     id: p.id,
     level: p.level,
@@ -61,15 +64,16 @@ function fixtureToCatalogItem(p: ReadingPassage): PassageCatalogItem {
     topic: p.topic,
     wordCount: p.wordCount,
     questionCount,
-    hasJudgeQuestions,
+    hasJudgeQuestions: hasTfng || hasYnng,
+    hasTfng,
+    hasYnng,
     fixturePassage: p,
   };
 }
 
 /**
- * Load available training reading passages catalog from `public/data/reading/index.json`
- * (filtering out `reserved` exam passages per [INV-X1]), falling back gracefully to
- * `R1_FIXTURE_PASSAGES` when real data files are not present yet.
+ * Tải danh mục bài đọc từ `public/data/reading/index.json` (lọc bỏ `reserved`).
+ * Chỉ nạp `r1_fixtures` khi `import.meta.env.MODE === 'test'` để không kéo vào prod bundle (X6).
  */
 export async function loadReadingCatalog(
   options: LoadContentOptions = {},
@@ -88,32 +92,37 @@ export async function loadReadingCatalog(
     );
     const trainingEntries = filterTrainingPool(entries);
     if (trainingEntries.length > 0) {
-      return trainingEntries.map((entry) => ({
-        id: entry.id,
-        level: entry.level,
-        title: entry.title,
-        subtitle: entry.subtitle,
-        topic: entry.topic,
-        wordCount: entry.wordCount,
-        questionCount: entry.questionCount,
-        hasJudgeQuestions:
-          Boolean(entry.hasTfng) ||
-          Boolean(entry.hasYnng) ||
-          entry.questionTypes.includes('tfng') ||
-          entry.questionTypes.includes('ynng'),
-        file: entry.file,
-      }));
+      return trainingEntries.map((entry) => {
+        const hasTfng = Boolean(entry.hasTfng) || entry.questionTypes.includes('tfng');
+        const hasYnng = Boolean(entry.hasYnng) || entry.questionTypes.includes('ynng');
+        return {
+          id: entry.id,
+          level: entry.level,
+          title: entry.title,
+          subtitle: entry.subtitle,
+          topic: entry.topic,
+          wordCount: entry.wordCount,
+          questionCount: entry.questionCount,
+          hasJudgeQuestions: hasTfng || hasYnng,
+          hasTfng,
+          hasYnng,
+          file: entry.file,
+        };
+      });
     }
   } catch {
-    // Graceful fallback to fixtures when data/reading/index.json is unavailable
+    // fallback chỉ dành cho môi trường test
   }
 
-  return R1_FIXTURE_PASSAGES.map(fixtureToCatalogItem);
+  if (import.meta.env.MODE === 'test') {
+    const { R1_FIXTURE_PASSAGES } = await import('../../test/fixtures/r1_fixtures');
+    return R1_FIXTURE_PASSAGES.map(fixtureToCatalogItem);
+  }
+  return [];
 }
 
 /**
- * Load a single full `ReadingPassage` from a catalog item.
- * Falls back to matching fixture or first fixture if fetch fails.
+ * Tải nội dung chi tiết 1 `ReadingPassage`.
  */
 export async function loadReadingPassage(
   item: PassageCatalogItem,
@@ -128,14 +137,37 @@ export async function loadReadingPassage(
       onError: () => undefined,
       ...options,
     };
-    try {
-      return await loadContent(item.file, ReadingPassageSchema, silentOpts);
-    } catch {
-      // Fallback below
-    }
+    return await loadContent(item.file, ReadingPassageSchema, silentOpts);
   }
-  return (
-    R1_FIXTURE_PASSAGES.find((p) => p.id === item.id) ??
-    R1_FIXTURE_PASSAGES[0]
-  );
+  if (import.meta.env.MODE === 'test') {
+    const { R1_FIXTURE_PASSAGES } = await import('../../test/fixtures/r1_fixtures');
+    return R1_FIXTURE_PASSAGES.find((p) => p.id === item.id) ?? R1_FIXTURE_PASSAGES[0];
+  }
+  throw new Error(`Không tìm thấy file bài đọc cho ${item.id}.`);
+}
+
+export async function getR1Kv<T>(
+  key: string,
+  fallback: T,
+  database: LexiconV3DB = db,
+): Promise<T> {
+  try {
+    const row = await database.kv.get(key);
+    if (row && row.value !== undefined) return row.value as T;
+    return fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+export async function setR1Kv<T>(
+  key: string,
+  value: T,
+  database: LexiconV3DB = db,
+): Promise<void> {
+  try {
+    await database.kv.put({ key, value });
+  } catch {
+    // Bỏ qua lỗi IndexedDB ở môi trường hạn chế
+  }
 }
