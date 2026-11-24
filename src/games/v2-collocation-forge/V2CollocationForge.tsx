@@ -10,24 +10,24 @@ import {
   Lightbulb,
   Sparkles,
   Timer as TimerIcon,
-  X,
   XCircle,
   Zap,
 } from 'lucide-react';
-import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import { AnimatePresence, motion, useAnimationControls, useReducedMotion } from 'motion/react';
 import type { CollocationItem, VocabItem } from '../../core/content/schemas';
 import { playSfx } from '../../core/audio/sfx';
 import type { SRSCard } from '../../core/srs/fsrsAdapter';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { cardRepo } from '../../core/storage/repos/cardRepo';
 import { essayRepo } from '../../core/storage/repos/essayRepo';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
 import {
   AnswerInput,
   AudioButton,
   Button,
   Card,
   EmptyState,
-  KeyHint,
   Pill,
   RecapScreen,
   Sheet,
@@ -44,17 +44,22 @@ import {
 } from '../../design/motion';
 import type { GameProps } from '../registry';
 import {
-  getGameKv,
-  loadCollocations,
-  loadVocabItems,
-  playLearningAudio,
-  setGameKv,
-} from '../_shared/vocabLoaders';
+  getV2Kv,
+  loadV2Collocations,
+  loadV2VocabItems,
+  playV2LearningAudio,
+  setV2Kv,
+} from './loader';
+import { createProgressSaver } from './progressSaver';
 import {
   V2_NUNG_CARD_SEC,
+  V2_NUNG_PREVIEW_COUNT,
   V2_SPRINT_DURATION_SEC,
   advanceFromNung,
   buildHeadwordForges,
+  buildV2ProgressSnapshot,
+  confirmToiSpot,
+  createV2RetrySession,
   createV2Session,
   detectUsedCollocations,
   finishSprintSession,
@@ -69,6 +74,7 @@ import {
   submitSprintAnswer,
   submitToiFix,
   toggleNungChoice,
+  toggleToiCard,
   useDapHint,
   type HeadwordForge,
   type SelfWriteChecklist,
@@ -77,6 +83,39 @@ import {
 } from './engine';
 
 const V2_SPRINT_BEST_KV_KEY = 'v2_sprint_best_xp';
+const V2_LAST_HEADWORD_KV_KEY = 'v2_last_headword';
+
+/** Chip phím tắt trong nhãn (chữ ≥ 12 px, D4); thay cho KeyHint 11 px của design. */
+const Key: React.FC<{ k: string }> = ({ k }) => (
+  <span
+    className="inline-flex items-center justify-center min-w-[22px] h-[22px] px-1.5 text-xs font-medium rounded border select-none"
+    style={{
+      fontFamily: 'var(--font-mono)',
+      backgroundColor: 'var(--color-surface-2)',
+      borderColor: 'var(--color-border)',
+      color: 'var(--color-text-dim)',
+    }}
+  >
+    {k}
+  </span>
+);
+
+/** Thở nhẹ cho thẻ chưa trả lời bằng Web Animations API (transform + opacity); tắt khi giảm chuyển động (J9/J8). */
+function useBreath(ref: React.RefObject<HTMLElement | null>, active: boolean, reduced: boolean | null) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!el || !active || reduced || typeof el.animate !== 'function') return;
+    const anim = el.animate(
+      [
+        { transform: 'scale(1)', opacity: 1 },
+        { transform: 'scale(1.025)', opacity: 0.94 },
+        { transform: 'scale(1)', opacity: 1 },
+      ],
+      { duration: 2600, iterations: Infinity, easing: 'ease-in-out' },
+    );
+    return () => anim.cancel();
+  }, [ref, active, reduced]);
+}
 
 /** 6 radial spark trajectories for the 0.35s anvil forge burst (transform + opacity only). */
 const SPARK_VECTORS: ReadonlyArray<{ x: number; y: number; rotate: number }> = [
@@ -154,9 +193,12 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
   // Active engine state
   const [state, setState] = useState<V2EngineState | null>(null);
+  const stateRef = useRef<V2EngineState | null>(null);
+  stateRef.current = state;
 
   // UI sub-states
   const [nungPhase, setNungPhase] = useState<'preview' | 'quiz'>('preview');
+  const [nungPreviewIdx, setNungPreviewIdx] = useState<number>(0);
   const [nungPreviewSec, setNungPreviewSec] = useState<number>(V2_NUNG_CARD_SEC);
   const [dapInput, setDapInput] = useState('');
   const [toiFixInput, setToiFixInput] = useState('');
@@ -165,10 +207,11 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const [sheetOpen, setSheetOpen] = useState(false);
   const [audioPlaying, setAudioPlaying] = useState(false);
 
-  // Anvil visual effect triggers
+  // Anvil visual effect triggers (V2-11: useAnimationControls tránh remount)
   const [sparkKey, setSparkKey] = useState(0);
   const [showSparks, setShowSparks] = useState(false);
-  const [anvilShakeKey, setAnvilShakeKey] = useState(0);
+  const anvilControls = useAnimationControls();
+  const anvilCardRef = useRef<HTMLDivElement | null>(null);
 
   // Level 7-10 self-write state
   const [selfWriteText, setSelfWriteText] = useState('');
@@ -184,6 +227,32 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const dapWrapRef = useRef<HTMLDivElement | null>(null);
   const toiWrapRef = useRef<HTMLDivElement | null>(null);
   const sprintWrapRef = useRef<HTMLDivElement | null>(null);
+  const saverRef = useRef(
+    createProgressSaver({
+      saveProgress: (payload) => attemptRepo.saveProgress(payload),
+      finalize: (attemptId, payload) => attemptRepo.finalize(attemptId, payload),
+    }),
+  );
+
+  const persistSnapshot = useCallback((targetState: V2EngineState | null, final: boolean) => {
+    if (!targetState) return Promise.resolve();
+    const snap = buildV2ProgressSnapshot(targetState, Date.now());
+    if (!snap) return saverRef.current.persist(null, final);
+    const before =
+      snap.items.length > 0
+        ? async () => {
+            for (const item of snap.items) {
+              await userItemRepo.upsertWithCard(item, 'err_fix', { cardSource: 'user' });
+            }
+          }
+        : undefined;
+    return saverRef.current.persist(snap.progress, final, before);
+  }, []);
+
+  // Đăng ký lưu tiến độ cho nút "Lưu và thoát" của PlayScreen (TU-02, HANDOFF T1-B #5)
+  useEffect(() => {
+    return registerProgressSaver(() => persistSnapshot(stateRef.current, false));
+  }, [persistSnapshot]);
 
   const startNewSession = useCallback(
     (
@@ -193,6 +262,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
       cards: readonly SRSCard[],
       bestXp: number,
     ) => {
+      saverRef.current.reset();
       const next = createV2Session({
         mode: targetMode,
         level,
@@ -203,8 +273,10 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         nowMs: Date.now(),
       });
       sessionSavedRef.current = false;
+      stateRef.current = next;
       setState(next);
       setNungPhase('preview');
+      setNungPreviewIdx(0);
       setNungPreviewSec(V2_NUNG_CARD_SEC);
       setDapInput('');
       setToiFixInput('');
@@ -217,9 +289,28 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         correctMeaning: false,
       });
       questionStartRef.current = Date.now();
+      void setV2Kv(V2_LAST_HEADWORD_KV_KEY, targetForge.headwordId);
     },
     [level],
   );
+
+  const startRetrySession = useCallback(() => {
+    const current = stateRef.current;
+    if (!current) return;
+    if (current.mistakes.length === 0) {
+      startNewSession(current.forge, current.mode, allCollocations, existingCards, sprintBestXp);
+      return;
+    }
+    const retry = createV2RetrySession(current, Date.now());
+    saverRef.current.reset();
+    sessionSavedRef.current = false;
+    stateRef.current = retry;
+    setState(retry);
+    setDapInput('');
+    setToiFixInput('');
+    setSprintInput('');
+    questionStartRef.current = Date.now();
+  }, [allCollocations, existingCards, sprintBestXp, startNewSession]);
 
   // Initial load
   useEffect(() => {
@@ -227,11 +318,12 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     async function init() {
       try {
         setLoading(true);
-        const [cols, vocabs, cards, bestXp] = await Promise.all([
-          loadCollocations(),
-          loadVocabItems(),
+        const [cols, vocabs, cards, bestXp, lastHeadwordId] = await Promise.all([
+          loadV2Collocations(),
+          loadV2VocabItems(),
           cardRepo.getAll().catch(() => [] as SRSCard[]),
-          getGameKv<number>(V2_SPRINT_BEST_KV_KEY, 0),
+          getV2Kv<number>(V2_SPRINT_BEST_KV_KEY, 0),
+          getV2Kv<string | null>(V2_LAST_HEADWORD_KV_KEY, null),
         ]);
         if (!active) return;
 
@@ -247,7 +339,11 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           return;
         }
 
-        const defaultForge = selectDefaultHeadwordForge(builtForges);
+        const candidateForges =
+          lastHeadwordId && builtForges.length > 1
+            ? builtForges.filter((f) => f.headwordId !== lastHeadwordId)
+            : builtForges;
+        const defaultForge = selectDefaultHeadwordForge(candidateForges);
         startNewSession(defaultForge, initialMode, cols, cards, bestXp);
         setLoading(false);
       } catch (err) {
@@ -274,40 +370,54 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
   const triggerAnvilShake = useCallback(() => {
     if (prefersReduced) return;
-    setAnvilShakeKey((k) => k + 1);
-  }, [prefersReduced]);
+    void anvilControls.start('wrong');
+  }, [prefersReduced, anvilControls]);
 
-  // Stage 1 Nung preview 8s timer (auto-reveals quiz after 8s, or user can click early)
+  useBreath(
+    anvilCardRef,
+    Boolean(state && (state.stage === 'nung' || state.stage === 'dap' || state.stage === 'toi')),
+    prefersReduced,
+  );
+
+  // Stage 1 Nung preview: 3 thẻ × 8s (V2-1), người học có thể bấm bỏ qua bất cứ lúc nào
   useEffect(() => {
     if (!state || state.stage !== 'nung' || nungPhase !== 'preview') return;
+    const previewCount = Math.min(V2_NUNG_PREVIEW_COUNT, state.forge.collocations.length);
     if (nungPreviewSec <= 0) {
-      setNungPhase('quiz');
+      if (nungPreviewIdx + 1 < previewCount) {
+        setNungPreviewIdx((i) => i + 1);
+        setNungPreviewSec(V2_NUNG_CARD_SEC);
+      } else {
+        setNungPhase('quiz');
+      }
       return;
     }
     const id = window.setInterval(() => {
       setNungPreviewSec((s) => Math.max(0, s - 1));
     }, 1000);
     return () => window.clearInterval(id);
-  }, [state, nungPhase, nungPreviewSec]);
+  }, [state, nungPhase, nungPreviewIdx, nungPreviewSec]);
 
-  // Sprint 60s countdown timer
+  // Sprint 60s countdown timer (không gọi playSfx trong state updater - C7)
   useEffect(() => {
     if (!state || state.stage !== 'sprint') return;
     if (sprintRemaining <= 0) {
       playSfx('countdownEnd');
-      setState((prev) => (prev ? finishSprintSession(prev).state : prev));
+      const finished = finishSprintSession(state).state;
+      setState(finished);
       return;
     }
     const id = window.setInterval(() => {
-      setSprintRemaining((sec) => {
-        const next = Math.max(0, sec - 1);
-        if (next > 0 && next <= 10) {
-          playSfx('tick');
-        }
-        return next;
-      });
+      setSprintRemaining((sec) => Math.max(0, sec - 1));
     }, 1000);
     return () => window.clearInterval(id);
+  }, [state?.stage, sprintRemaining]);
+
+  // SFX tick ở 10 giây cuối Sprint (C7)
+  useEffect(() => {
+    if (state?.stage === 'sprint' && sprintRemaining > 0 && sprintRemaining <= 10) {
+      playSfx('tick');
+    }
   }, [state?.stage, sprintRemaining]);
 
   // Auto-focus inputs when switching questions/steps
@@ -327,38 +437,29 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     }
   }, [state?.stage, state?.dapIndex, state?.dapAnswered, state?.toiIndex, state?.toiRounds, state?.sprintIndex]);
 
-  // Persist session atomically when entering Recap
+  // Chốt phiên khi vào Recap (idempotent qua progressSaver; nạp lại cards sau finalize - V2-2)
   useEffect(() => {
     if (!state || state.stage !== 'recap' || sessionSavedRef.current) return;
     sessionSavedRef.current = true;
     playSfx('sessionDone');
 
     const endedAt = state.endedAt ?? Date.now();
-    const updatedCards = Object.values(state.srsCards);
 
     void (async () => {
       try {
-        await attemptRepo.saveSession({
-          attempt: {
-            gameId: 'v2',
-            mode: state.mode,
-            startedAt: state.startedAt,
-            endedAt,
-            score: state.correctCount,
-            total: Math.max(1, state.totalQuestions),
-            xp: state.xp,
-            items: state.attemptItems,
-          },
-          updatedCards,
-          reviews: state.reviews,
-        });
+        await persistSnapshot(state, true);
 
-        if (state.mode === 'sprint' && state.sprintPersonalBestXp > sprintBestXp) {
-          setSprintBestXp(state.sprintPersonalBestXp);
-          await setGameKv(V2_SPRINT_BEST_KV_KEY, state.sprintPersonalBestXp);
+        const freshCards = await cardRepo.getAll().catch(() => null);
+        if (freshCards) {
+          setExistingCards(freshCards);
         }
 
-        if (state.selfWrite?.submitted && state.selfWrite.sentence.trim().length > 0) {
+        if (!state.isRetry && state.mode === 'sprint' && state.sprintPersonalBestXp > sprintBestXp) {
+          setSprintBestXp(state.sprintPersonalBestXp);
+          await setV2Kv(V2_SPRINT_BEST_KV_KEY, state.sprintPersonalBestXp);
+        }
+
+        if (!state.isRetry && state.selfWrite?.submitted && state.selfWrite.sentence.trim().length > 0) {
           const words = state.selfWrite.sentence.trim().split(/\s+/).filter(Boolean).length;
           await essayRepo.save({
             taskType: 'task2',
@@ -373,34 +474,35 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         // Ignore storage error in restricted environments
       }
     })();
-  }, [state, sprintBestXp]);
+  }, [state, sprintBestXp, persistSnapshot]);
 
   // Audio playback helper
   const handlePlayAudio = useCallback((audioPath?: string) => {
     if (!audioPath) return;
     setAudioPlaying(true);
-    void playLearningAudio(audioPath, () => {
+    void playV2LearningAudio(audioPath, () => {
       setAudioPlaying(false);
     });
   }, []);
 
-  // --- Stage 1: NUNG handlers ---
+  // --- Stage 1: NUNG handlers (C7: không gọi playSfx trong updater) ---
   const handleToggleNung = useCallback((idx: number) => {
     playSfx('tap');
     setState((prev) => (prev ? toggleNungChoice(prev, idx) : prev));
   }, []);
 
   const handleSubmitNung = useCallback(() => {
-    setState((prev) => {
-      if (!prev || prev.stage !== 'nung' || prev.nungSubmitted) return prev;
-      const { state: next, events } = submitNungSelection(prev);
-      const evt = events[0];
-      if (evt && evt.type === 'nung_scored') {
-        playSfx(evt.correct ? 'correct' : 'wrong');
-      }
-      return next;
-    });
-  }, []);
+    const prev = stateRef.current;
+    if (!prev || prev.stage !== 'nung' || prev.nungSubmitted) return;
+    const { state: next, events } = submitNungSelection(prev);
+    stateRef.current = next;
+    setState(next);
+    const evt = events[0];
+    if (evt && evt.type === 'nung_scored') {
+      playSfx(evt.correct ? 'correct' : 'wrong');
+    }
+    void persistSnapshot(next, false);
+  }, [persistSnapshot]);
 
   const handleAdvanceFromNung = useCallback(() => {
     playSfx('flip');
@@ -420,6 +522,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     if (!state || state.stage !== 'dap' || state.dapAnswered) return;
     const elapsed = Math.max(300, Date.now() - questionStartRef.current);
     const { state: next, events } = submitDapAnswer(state, dapInput, elapsed, Date.now());
+    stateRef.current = next;
     setState(next);
 
     const scored = events.find((e) => e.type === 'answer_scored');
@@ -432,7 +535,8 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         triggerAnvilShake();
       }
     }
-  }, [state, dapInput, triggerSparks, triggerAnvilShake]);
+    void persistSnapshot(next, false);
+  }, [state, dapInput, triggerSparks, triggerAnvilShake, persistSnapshot]);
 
   const handleNextDap = useCallback(() => {
     playSfx('flip');
@@ -441,11 +545,26 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     setState((prev) => (prev ? nextDapQuestion(prev).state : prev));
   }, []);
 
-  // --- Stage 3: TOI handlers ---
-  const handleSelectToiCard = useCallback((cardIdx: number) => {
-    setState((prev) => {
-      if (!prev || prev.stage !== 'toi') return prev;
+  // --- Stage 3: TOI handlers (hỗ trợ nhiều bẫy V2-4, không gọi side-effect trong updater C7) ---
+  const handleSelectToiCard = useCallback(
+    (cardIdx: number) => {
+      const prev = stateRef.current;
+      if (!prev || prev.stage !== 'toi') return;
+      const round = prev.toiRounds[prev.toiIndex];
+      if (!round || round.step !== 'spot') return;
+
+      if (round.trapCount >= 2) {
+        playSfx('tap');
+        const { state: next } = toggleToiCard(prev, cardIdx);
+        stateRef.current = next;
+        setState(next);
+        return;
+      }
+
       const { state: next, events } = selectToiCard(prev, cardIdx, Date.now());
+      stateRef.current = next;
+      setState(next);
+      setToiFixInput('');
       const scored = events.find((e) => e.type === 'answer_scored');
       if (scored && scored.type === 'answer_scored') {
         if (scored.correct) {
@@ -456,14 +575,38 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           triggerAnvilShake();
         }
       }
-      return next;
-    });
+      void persistSnapshot(next, false);
+    },
+    [triggerSparks, triggerAnvilShake, persistSnapshot],
+  );
+
+  const handleConfirmToiSpot = useCallback(() => {
+    const prev = stateRef.current;
+    if (!prev || prev.stage !== 'toi') return;
+    const round = prev.toiRounds[prev.toiIndex];
+    if (!round || round.step !== 'spot' || round.selectedIndices.length === 0) return;
+
+    const { state: next, events } = confirmToiSpot(prev, Date.now());
+    stateRef.current = next;
+    setState(next);
     setToiFixInput('');
-  }, [triggerSparks, triggerAnvilShake]);
+    const scored = events.find((e) => e.type === 'answer_scored');
+    if (scored && scored.type === 'answer_scored') {
+      if (scored.correct) {
+        playSfx('correct');
+        triggerSparks();
+      } else {
+        playSfx('wrong');
+        triggerAnvilShake();
+      }
+    }
+    void persistSnapshot(next, false);
+  }, [triggerSparks, triggerAnvilShake, persistSnapshot]);
 
   const handleSubmitToiFix = useCallback(() => {
     if (!state || state.stage !== 'toi') return;
     const { state: next, events } = submitToiFix(state, toiFixInput, Date.now());
+    stateRef.current = next;
     setState(next);
 
     const scored = events.find((e) => e.type === 'answer_scored');
@@ -476,7 +619,8 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         triggerAnvilShake();
       }
     }
-  }, [state, toiFixInput, triggerSparks, triggerAnvilShake]);
+    void persistSnapshot(next, false);
+  }, [state, toiFixInput, triggerSparks, triggerAnvilShake, persistSnapshot]);
 
   const handleNextToi = useCallback(() => {
     playSfx('flip');
@@ -497,6 +641,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     if (!state || state.stage !== 'sprint') return;
     const elapsed = Math.max(200, Date.now() - questionStartRef.current);
     const { state: next, events } = submitSprintAnswer(state, sprintInput, elapsed, Date.now());
+    stateRef.current = next;
     setState(next);
     setSprintInput('');
     questionStartRef.current = Date.now();
@@ -511,7 +656,8 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         triggerAnvilShake();
       }
     }
-  }, [state, sprintInput, triggerSparks, triggerAnvilShake]);
+    void persistSnapshot(next, false);
+  }, [state, sprintInput, triggerSparks, triggerAnvilShake, persistSnapshot]);
 
   // Global keyboard shortcuts (1-4, H, Enter) when not typing inside text inputs
   useEffect(() => {
@@ -565,6 +711,14 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         if (round.step === 'spot' && ['1', '2', '3', '4'].includes(e.key)) {
           e.preventDefault();
           handleSelectToiCard(Number(e.key) - 1);
+        } else if (
+          round.step === 'spot' &&
+          round.trapCount >= 2 &&
+          round.selectedIndices.length > 0 &&
+          e.key === 'Enter'
+        ) {
+          e.preventDefault();
+          handleConfirmToiSpot();
         } else if (round.step === 'feedback' && e.key === 'Enter') {
           e.preventDefault();
           handleNextToi();
@@ -584,6 +738,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     handleNextDap,
     handleUseDapHint,
     handleSelectToiCard,
+    handleConfirmToiSpot,
     handleNextToi,
   ]);
 
@@ -641,9 +796,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           accuracyPercent={accuracyPercent}
           durationSec={durationSec}
           mistakes={state.mistakes}
-          onRetryMistakes={() =>
-            startNewSession(state.forge, state.mode, allCollocations, existingCards, sprintBestXp)
-          }
+          onRetryMistakes={startRetrySession}
           onGoToday={() =>
             onExit({
               gameId: 'v2',
@@ -678,42 +831,22 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
   return (
     <div className="max-w-3xl mx-auto p-4 sm:p-6 space-y-5">
-      {/* Top Bar */}
-      <header
-        className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 rounded-[var(--radius-lg)] border"
+      {/* Thanh trạng thái phiên (không lặp nút thoát ✕ và tiêu đề của PlayScreen - U3) */}
+      <div
+        className="flex flex-wrap items-center justify-between gap-2 px-3 py-2.5 rounded-[var(--radius-lg)] border"
         style={{
           backgroundColor: 'var(--color-surface)',
           borderColor: stageMeta.borderColor,
           boxShadow: 'var(--shadow-card)',
         }}
       >
-        <div className="flex items-center gap-2.5 min-w-0">
-          <button
-            type="button"
-            onClick={() => onExit()}
-            aria-label="Thoát Collocation Forge"
-            className="inline-flex items-center justify-center w-9 h-9 rounded-[var(--radius-sm)] border cursor-pointer shrink-0"
-            style={{
-              backgroundColor: 'var(--color-surface-2)',
-              borderColor: 'var(--color-border)',
-              color: 'var(--color-text-dim)',
-            }}
-          >
-            <X className="w-4 h-4" />
-          </button>
-          <div className="min-w-0">
-            <div className="flex items-center gap-2 flex-wrap">
-              <span className="font-bold text-sm sm:text-base truncate" style={{ color: 'var(--color-text)' }}>
-                Collocation Forge · {state.forge.headword.toUpperCase()}
-              </span>
-              <Pill tone={stageMeta.badgeTone} icon={<Hammer className="w-3 h-3" />}>
-                {stageMeta.label}
-              </Pill>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2 flex-wrap">
+        <div className="flex items-center gap-2 flex-wrap min-w-0">
+          <Pill tone={stageMeta.badgeTone} icon={<Hammer className="w-3.5 h-3.5" />}>
+            {stageMeta.label}
+          </Pill>
+          {state.isRetry && (
+            <Pill tone="neutral">Ôn câu sai · 0 XP</Pill>
+          )}
           <span
             className="text-xs font-semibold px-2.5 py-1 rounded-[var(--radius-sm)] border tabular-nums"
             style={{
@@ -725,7 +858,9 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           >
             {progressText}
           </span>
+        </div>
 
+        <div className="flex items-center gap-2 flex-wrap">
           {state.stage === 'sprint' && (
             <Timer
               remainingSec={sprintRemaining}
@@ -746,8 +881,8 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
           <Button
             variant="secondary"
-            size="sm"
-            leftIcon={<Layers className="w-3.5 h-3.5" />}
+            size="md"
+            leftIcon={<Layers className="w-4 h-4" />}
             onClick={() => setSheetOpen(true)}
           >
             Đổi lò
@@ -756,8 +891,8 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           <Button
             variant={state.mode === 'sprint' ? 'primary' : 'ghost'}
             skill="vocab"
-            size="sm"
-            leftIcon={<Zap className="w-3.5 h-3.5" />}
+            size="md"
+            leftIcon={<Zap className="w-4 h-4" />}
             onClick={() =>
               startNewSession(
                 state.forge,
@@ -772,16 +907,16 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             {state.mode === 'sprint' ? 'Về Lò rèn' : 'Sprint 60s'}
           </Button>
         </div>
-      </header>
+      </div>
 
-      {/* Center Anvil (Headword) */}
+      {/* Center Anvil (Headword) — V2-11: animate qua controls, không remount */}
       {(state.stage === 'nung' || state.stage === 'dap' || state.stage === 'toi') && (
-        <div className="relative flex flex-col items-center justify-center py-2">
+        <div className="relative flex flex-col items-center justify-center py-1">
           <motion.div
-            key={anvilShakeKey}
+            ref={anvilCardRef}
             variants={prefersReduced ? undefined : wrongShakeVariants}
-            animate={anvilShakeKey > 0 ? 'wrong' : 'idle'}
-            className="relative px-7 py-4 rounded-[var(--radius-lg)] border-2 text-center"
+            animate={anvilControls}
+            className="relative px-6 py-3.5 rounded-[var(--radius-lg)] border-2 text-center"
             style={{
               backgroundColor: 'var(--color-surface)',
               borderColor: stageMeta.borderColor,
@@ -870,47 +1005,50 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                   </p>
                 </div>
                 <Pill tone="writing" icon={<TimerIcon className="w-3.5 h-3.5" />}>
-                  {nungPreviewSec}s
+                  Thẻ {Math.min(nungPreviewIdx + 1, V2_NUNG_PREVIEW_COUNT)}/{Math.min(V2_NUNG_PREVIEW_COUNT, state.forge.collocations.length)} · {nungPreviewSec}s
                 </Pill>
               </div>
 
               <div className="space-y-3">
-                {state.forge.collocations.slice(0, 3).map((col) => (
-                  <div
-                    key={col.id}
-                    className="p-4 rounded-[var(--radius-md)] border space-y-1.5"
-                    style={{
-                      backgroundColor: 'var(--color-surface-2)',
-                      borderColor: 'var(--color-border)',
-                    }}
-                  >
-                    <div className="flex items-center justify-between gap-2 flex-wrap">
-                      <span
-                        className="font-bold text-sm"
-                        style={{ color: 'var(--color-writing)' }}
-                      >
-                        {col.phrase}
-                      </span>
-                      <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-                        {col.meaningVi} · Band {col.bandTarget}
-                      </span>
+                {state.forge.collocations.slice(0, V2_NUNG_PREVIEW_COUNT).map((col, idx) => {
+                  const activeCard = idx === nungPreviewIdx;
+                  return (
+                    <div
+                      key={col.id}
+                      className="p-4 rounded-[var(--radius-md)] border space-y-1.5 transition-opacity"
+                      style={{
+                        backgroundColor: 'var(--color-surface-2)',
+                        borderColor: activeCard ? 'var(--color-writing)' : 'var(--color-border)',
+                        opacity: activeCard ? 1 : 0.78,
+                      }}
+                    >
+                      <div className="flex items-center justify-between gap-2 flex-wrap">
+                        <span
+                          className="font-bold text-sm"
+                          style={{ color: 'var(--color-writing)' }}
+                        >
+                          {col.phrase}
+                        </span>
+                        <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                          {col.meaningVi} · Band {col.bandTarget}
+                        </span>
+                      </div>
+                      <p className="reading-prose text-base" style={{ color: 'var(--color-text)' }}>
+                        {col.example}
+                      </p>
                     </div>
-                    <p className="reading-prose text-base" style={{ color: 'var(--color-text)' }}>
-                      {col.example}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <div className="flex justify-end">
                 <Button
                   variant="primary"
                   skill="writing"
-                  hotkey="Enter"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                   onClick={() => setNungPhase('quiz')}
                 >
-                  Vào kiểm tra nhận diện
+                  Vào kiểm tra nhận diện (Enter)
                 </Button>
               </div>
             </>
@@ -954,7 +1092,9 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     >
                       <div className="flex items-start justify-between gap-3">
                         <div className="flex items-start gap-2.5">
-                          <KeyHint keyName={String(choice.index + 1)} className="mt-0.5 shrink-0" />
+                          <span className="mt-0.5 shrink-0">
+                            <Key k={String(choice.index + 1)} />
+                          </span>
                           <p className="text-sm sm:text-base" style={{ color: 'var(--color-text)' }}>
                             {choice.sentence}
                           </p>
@@ -999,21 +1139,19 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                   <Button
                     variant="primary"
                     skill="writing"
-                    hotkey="Enter"
                     disabled={state.nungSelected.length !== 2}
                     onClick={handleSubmitNung}
                   >
-                    Kiểm tra
+                    Kiểm tra (Enter)
                   </Button>
                 ) : (
                   <Button
                     variant="primary"
                     skill="writing"
-                    hotkey="Enter"
                     rightIcon={<ArrowRight className="w-4 h-4" />}
                     onClick={handleAdvanceFromNung}
                   >
-                    Sang Giai đoạn 2: ĐẬP
+                    Sang Giai đoạn 2: ĐẬP (Enter)
                   </Button>
                 )}
               </div>
@@ -1118,23 +1256,21 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                   <div className="flex items-center justify-between gap-3 flex-wrap">
                     <Button
                       variant="secondary"
-                      size="sm"
-                      hotkey="H"
+                      size="md"
                       leftIcon={<Lightbulb className="w-4 h-4" />}
                       disabled={currentDapQ.hintUsed}
                       onClick={handleUseDapHint}
                     >
-                      Gợi ý
+                      Gợi ý (H)
                     </Button>
 
                     <Button
                       variant="primary"
                       skill="writing"
-                      hotkey="Enter"
                       disabled={dapInput.trim().length === 0}
                       onClick={handleSubmitDap}
                     >
-                      Nộp
+                      Nộp (Enter)
                     </Button>
                   </div>
                 )}
@@ -1235,13 +1371,12 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                       <Button
                         variant="primary"
                         skill="writing"
-                        hotkey="Enter"
                         rightIcon={<ArrowRight className="w-4 h-4" />}
                         onClick={handleNextDap}
                       >
                         {state.dapIndex + 1 < state.dapQuestions.length
-                          ? 'Câu tiếp'
-                          : 'Sang Giai đoạn 3: TÔI'}
+                          ? 'Câu tiếp (Enter)'
+                          : 'Sang Giai đoạn 3: TÔI (Enter)'}
                       </Button>
                     </div>
                   </motion.div>
@@ -1307,13 +1442,17 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             <div>
               <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
                 {currentToiRound.step === 'spot'
-                  ? 'Bấm chọn cụm collocation SAI (kiểu Việt)'
+                  ? currentToiRound.trapCount >= 2
+                    ? `Chọn ${currentToiRound.trapCount} cụm collocation SAI (kiểu Việt)`
+                    : 'Bấm chọn cụm collocation SAI (kiểu Việt)'
                   : currentToiRound.step === 'type_fix'
                   ? 'Gõ lại bản sửa học thuật cho cụm bị nứt'
                   : 'Kết quả tôi thép'}
               </h2>
               <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-                Chọn đúng cụm sai (+10 XP) → Gõ bản sửa đúng (+8 XP).
+                {currentToiRound.trapCount >= 2
+                  ? 'Vòng nhiều bẫy: chọn hết các cụm sai (1–4) rồi bấm Xác nhận (Enter).'
+                  : 'Chọn đúng cụm sai (+10 XP) → Gõ bản sửa đúng (+8 XP).'}
               </p>
             </div>
             <Pill tone="info">
@@ -1325,11 +1464,16 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {currentToiRound.cards.map((card) => {
               const isCracked = currentToiRound.crackedCardIndex === card.index;
-              const isSelected = currentToiRound.selectedCardIndex === card.index;
+              const isSelected =
+                currentToiRound.selectedCardIndex === card.index ||
+                currentToiRound.selectedIndices.includes(card.index);
+              const isMissedTrap = currentToiRound.missedTrapIndices.includes(card.index);
               const revealed = currentToiRound.step !== 'spot';
 
-              let borderColor = 'var(--color-border)';
-              let bgColor = 'var(--color-surface-2)';
+              let borderColor = isSelected ? 'var(--color-info)' : 'var(--color-border)';
+              let bgColor = isSelected
+                ? 'color-mix(in srgb, var(--color-info) 12%, var(--color-surface-2))'
+                : 'var(--color-surface-2)';
               if (revealed) {
                 if (card.isTrap) {
                   borderColor = 'var(--color-wrong)';
@@ -1346,6 +1490,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                   key={card.index}
                   type="button"
                   disabled={revealed}
+                  aria-pressed={currentToiRound.trapCount >= 2 ? isSelected : undefined}
                   onClick={() => handleSelectToiCard(card.index)}
                   className="relative overflow-hidden text-left p-4 rounded-[var(--radius-md)] border-2 transition-colors cursor-pointer disabled:cursor-default min-h-[84px] flex flex-col justify-between gap-2"
                   style={{ backgroundColor: bgColor, borderColor }}
@@ -1359,11 +1504,23 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     >
                       {card.text}
                     </span>
-                    <KeyHint keyName={String(card.index + 1)} className="shrink-0" />
+                    <span className="shrink-0">
+                      <Key k={String(card.index + 1)} />
+                    </span>
                   </div>
-                  <span className="text-xs relative z-10" style={{ color: 'var(--color-text-dim)' }}>
-                    {card.meaningVi}
-                  </span>
+                  <div className="flex items-center justify-between gap-2 relative z-10">
+                    <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                      {card.meaningVi}
+                    </span>
+                    {revealed && isMissedTrap && (
+                      <span
+                        className="text-xs font-semibold"
+                        style={{ color: 'var(--color-wrong)' }}
+                      >
+                        Bỏ sót bẫy
+                      </span>
+                    )}
+                  </div>
 
                   {/* SVG Crack overlay (0.3s transform + opacity only) */}
                   {isCracked && (
@@ -1397,6 +1554,23 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
               );
             })}
           </div>
+
+          {/* Nút xác nhận cho vòng nhiều bẫy (V2-4) */}
+          {currentToiRound.step === 'spot' && currentToiRound.trapCount >= 2 && (
+            <div className="flex items-center justify-between gap-3 pt-1">
+              <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                Đã chọn {currentToiRound.selectedIndices.length}/{currentToiRound.trapCount} cụm sai
+              </span>
+              <Button
+                variant="primary"
+                skill="info"
+                disabled={currentToiRound.selectedIndices.length === 0}
+                onClick={handleConfirmToiSpot}
+              >
+                Xác nhận (Enter)
+              </Button>
+            </div>
+          )}
 
           {/* Step 2: Type fix for the cracked L1 trap */}
           {currentToiRound.step === 'type_fix' && currentToiRound.activeTrapCard && (
@@ -1444,11 +1618,10 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                 <Button
                   variant="primary"
                   skill="info"
-                  hotkey="Enter"
                   disabled={toiFixInput.trim().length === 0}
                   onClick={handleSubmitToiFix}
                 >
-                  Nộp bản sửa
+                  Nộp bản sửa (Enter)
                 </Button>
               </div>
             </motion.div>
@@ -1511,13 +1684,12 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                 <Button
                   variant="primary"
                   skill="info"
-                  hotkey="Enter"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                   onClick={handleNextToi}
                 >
                   {state.toiIndex + 1 < state.toiRounds.length
-                    ? 'Lượt tiếp'
-                    : 'Hoàn thành lò (+40 XP)'}
+                    ? 'Lượt tiếp (Enter)'
+                    : 'Hoàn thành lò (+40 XP) (Enter)'}
                 </Button>
               </div>
             </motion.div>
@@ -1646,7 +1818,7 @@ const V2CollocationForge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             </div>
             <Button
               variant="secondary"
-              size="sm"
+              size="md"
               onClick={() => setState((prev) => (prev ? finishSprintSession(prev).state : prev))}
             >
               Kết thúc sớm
