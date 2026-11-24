@@ -1,4 +1,5 @@
-import { Howl } from 'howler';
+import { Howl, Howler } from 'howler';
+import { ensurePlaybackAudioSession } from './trackPlayer';
 
 export type CanonicalSfxCue =
   | 'tap'
@@ -91,13 +92,13 @@ class SfxEngine {
   private muted = false;
   private examMode = false;
   private blocked = false;
-  private manifestLoaded = false;
+  private manifestPromise: Promise<SfxSpriteMap> | null = null;
+  private lifecycleBound = false;
 
-  public init(): void {
-    if (this.howl) return;
+  private buildHowl(): Howl | null {
     const base = getBaseUrl();
     try {
-      this.howl = new Howl({
+      return new Howl({
         src: [`${base}assets/sfx/sfx.webm`, `${base}assets/sfx/sfx.mp3`],
         sprite: this.spriteMap,
         volume: this.muted ? 0 : this.volumePercent / 100,
@@ -105,14 +106,65 @@ class SfxEngine {
         html5: false,
       });
     } catch {
-      this.howl = null;
+      return null;
     }
+  }
+
+  /**
+   * Safari iOS (TU-03, 14-TOI-UU-WEB §9): sau khi app quay lại từ nền hoặc ở lần chạm đầu,
+   * AudioContext có thể ở trạng thái 'suspended'/'interrupted' → gọi resume() và giữ audioSession='playback'.
+   */
+  public resumeAudioContext(): void {
+    ensurePlaybackAudioSession();
+    try {
+      const ctx = (Howler as { ctx?: { state?: string; resume?: () => Promise<void> } } | undefined)?.ctx;
+      if (ctx && (ctx.state === 'suspended' || ctx.state === 'interrupted') && typeof ctx.resume === 'function') {
+        void ctx.resume().catch(() => {
+          // Bỏ qua nếu chưa có thao tác chạm
+        });
+      }
+    } catch {
+      // Môi trường không có Web Audio (test node)
+    }
+  }
+
+  public unlock(): void {
+    this.init();
+    this.resumeAudioContext();
+  }
+
+  private bindLifecycleListeners(): void {
+    if (this.lifecycleBound) return;
+    this.lifecycleBound = true;
+    if (typeof document !== 'undefined' && typeof document.addEventListener === 'function') {
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          this.resumeAudioContext();
+        }
+      });
+    }
+    if (typeof window !== 'undefined' && typeof window.addEventListener === 'function') {
+      window.addEventListener('pageshow', () => this.resumeAudioContext());
+      window.addEventListener('touchend', () => this.resumeAudioContext(), { passive: true });
+    }
+  }
+
+  public init(): void {
+    ensurePlaybackAudioSession();
+    this.bindLifecycleListeners();
+    if (this.howl) return;
+    // The first cue must be playable at once, so build with the built-in offsets,
+    // then rebuild if `sfx.json` turns out to differ (X-04).
+    this.howl = this.buildHowl();
     void this.syncManifest();
   }
 
-  public async syncManifest(): Promise<SfxSpriteMap> {
-    if (this.manifestLoaded) return this.spriteMap;
-    this.manifestLoaded = true;
+  public syncManifest(): Promise<SfxSpriteMap> {
+    if (!this.manifestPromise) this.manifestPromise = this.loadManifest();
+    return this.manifestPromise;
+  }
+
+  private async loadManifest(): Promise<SfxSpriteMap> {
     const base = getBaseUrl();
     try {
       if (typeof fetch !== 'function') return this.spriteMap;
@@ -120,7 +172,19 @@ class SfxEngine {
       if (!resp.ok) return this.spriteMap;
       const data = (await resp.json()) as { sprite?: SfxSpriteMap };
       if (data && data.sprite && typeof data.sprite === 'object') {
-        this.spriteMap = { ...DEFAULT_SFX_SPRITE, ...data.sprite };
+        const merged: SfxSpriteMap = { ...DEFAULT_SFX_SPRITE, ...data.sprite };
+        const changed = JSON.stringify(merged) !== JSON.stringify(this.spriteMap);
+        this.spriteMap = merged;
+        // A Howl keeps the sprite map it was constructed with: rebuild it so new offsets take effect.
+        if (changed && this.howl) {
+          const stale = this.howl;
+          this.howl = this.buildHowl();
+          try {
+            stale.unload();
+          } catch {
+            // Ignore: the stale instance is being discarded anyway
+          }
+        }
       }
     } catch {
       // Fallback to built-in DEFAULT_SFX_SPRITE if offline or in unit test

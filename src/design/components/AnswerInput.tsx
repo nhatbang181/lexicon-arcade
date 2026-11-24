@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { motion, useReducedMotion } from 'motion/react';
 import { correctPopVariants, wrongShakeVariants } from '../motion';
-import { KeyHint } from './KeyHint';
 
 export type AnswerInputStatus = 'idle' | 'correct' | 'wrong' | 'partial';
 
@@ -12,6 +11,8 @@ export interface AnswerInputProps
   onSubmit?: () => void;
   status?: AnswerInputStatus;
   wordLimit?: number;
+  /** Ẩn bộ đếm số từ (vd chế độ Exam không hiện gợi ý đếm từ). */
+  hideWordCount?: boolean;
   label?: string;
   helperText?: string;
 }
@@ -28,15 +29,20 @@ export const AnswerInput: React.FC<AnswerInputProps> = ({
   onSubmit,
   status = 'idle',
   wordLimit,
+  hideWordCount = false,
   label,
   helperText,
   placeholder = 'Gõ đáp án của bạn...',
   className = '',
+  id,
   ...rest
 }) => {
+  const autoId = useId();
+  const inputId = id ?? autoId;
   const prefersReduced = useReducedMotion();
   const wordCount = countIeltsWords(value);
-  const overLimit = wordLimit !== undefined && wordCount > wordLimit;
+  const showWordCount = wordLimit !== undefined && !hideWordCount;
+  const overLimit = showWordCount && wordCount > wordLimit;
 
   const borderColor =
     status === 'correct'
@@ -64,16 +70,20 @@ export const AnswerInput: React.FC<AnswerInputProps> = ({
 
   return (
     <div className={`space-y-1.5 ${className}`}>
-      {(label || wordLimit !== undefined) && (
+      {(label || showWordCount) && (
         <div className="flex items-center justify-between text-xs">
           {label ? (
-            <label className="font-medium" style={{ color: 'var(--color-text-dim)' }}>
+            <label
+              htmlFor={inputId}
+              className="font-medium"
+              style={{ color: 'var(--color-text-dim)' }}
+            >
               {label}
             </label>
           ) : (
             <span />
           )}
-          {wordLimit !== undefined && (
+          {showWordCount && (
             <span
               className="tabular-nums font-medium"
               style={{
@@ -99,6 +109,7 @@ export const AnswerInput: React.FC<AnswerInputProps> = ({
         className="relative flex items-center"
       >
         <input
+          id={inputId}
           type="text"
           value={value}
           onChange={(e) => onChange(e.target.value)}
@@ -117,7 +128,19 @@ export const AnswerInput: React.FC<AnswerInputProps> = ({
           {...rest}
         />
         <div className="absolute right-3 pointer-events-none">
-          <KeyHint keyName="↵" />
+          <kbd
+            className="inline-flex items-center justify-center min-w-[24px] h-[24px] px-1.5 text-xs font-medium leading-none rounded border select-none"
+            style={{
+              fontFamily: 'var(--font-mono)',
+              backgroundColor: 'var(--color-surface-2)',
+              borderColor: 'var(--color-border)',
+              color: 'var(--color-text-dim)',
+              boxShadow: '0 1px 0 var(--color-border)',
+            }}
+            aria-label="Phím tắt Enter"
+          >
+            ↵
+          </kbd>
         </div>
       </motion.div>
 

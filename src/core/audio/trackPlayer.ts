@@ -32,6 +32,8 @@ export interface TrackPlayerState {
   activeSegment: SegmentBounds | null;
   simulatedMode: boolean;
   errorMessage: string | null;
+  /** Browser refused to start playback without a user gesture (NotAllowedError). The file itself is fine (L1-10). */
+  autoplayBlocked: boolean;
 }
 
 export interface AudioElementLike {
@@ -43,6 +45,10 @@ export interface AudioElementLike {
   muted: boolean;
   preload: string;
   paused: boolean;
+  /** HTMLMediaElement.readyState (0–4). Optional so test doubles stay small. */
+  readyState?: number;
+  /** HTMLMediaElement.error (non-null after a failed load). */
+  error?: unknown;
   play(): Promise<void> | void;
   pause(): void;
   load(): void;
@@ -68,6 +74,29 @@ export interface TrackPlayerOptions {
   initialRate?: PlaybackRate;
   /** Interval in ms for segment boundary polling & simulated playback. Default: 50. */
   tickIntervalMs?: number;
+  /**
+   * Allow the silent timer-driven "simulated playback" when the MP3 is missing. OFF by default: a listening
+   * session must never run without sound (L1-01). Only dev fixtures and unit tests turn it on.
+   */
+  allowSimulation?: boolean;
+}
+
+export function createIdleTrackState(): TrackPlayerState {
+  return {
+    url: null,
+    status: 'idle',
+    currentTime: 0,
+    duration: 0,
+    rate: 1,
+    volume: 1,
+    muted: false,
+    examLocked: false,
+    examStarted: false,
+    activeSegment: null,
+    simulatedMode: false,
+    errorMessage: null,
+    autoplayBlocked: false,
+  };
 }
 
 export type TimeListener = (currentTime: number, duration: number) => void;
@@ -87,6 +116,26 @@ function isAbsoluteOrSpecialUrl(url: string): boolean {
 
 function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));
+}
+
+interface NavigatorWithAudioSession {
+  audioSession?: { type: string };
+}
+
+/**
+ * Safari iOS 17+ (TU-03, 14-TOI-UU-WEB §9): đặt audioSession.type = 'playback' để âm thanh học
+ * không bị công tắc im lặng tắt tiếng. Cấm dùng 'transient'/'transient-solo' (bug WebKit 264473).
+ */
+export function ensurePlaybackAudioSession(): void {
+  if (typeof navigator === 'undefined') return;
+  try {
+    const nav = navigator as unknown as NavigatorWithAudioSession;
+    if (nav.audioSession && nav.audioSession.type !== 'playback') {
+      nav.audioSession.type = 'playback';
+    }
+  } catch {
+    // Trình duyệt không hỗ trợ hoặc từ chối đổi audioSession
+  }
 }
 
 function defaultAudioFactory(): AudioElementLike {
@@ -112,6 +161,7 @@ export class TrackPlayerController {
   private audio: AudioElementLike | null = null;
   private readonly audioFactory: () => AudioElementLike;
   private readonly tickIntervalMs: number;
+  private readonly allowSimulation: boolean;
 
   private state: TrackPlayerState;
   private timeListeners = new Set<TimeListener>();
@@ -121,11 +171,13 @@ export class TrackPlayerController {
   private simTimer: ReturnType<typeof setInterval> | null = null;
   private lastSimTickMs = 0;
   private preloadedAudio: AudioElementLike | null = null;
+  private preloadedUrl: string | null = null;
   private destroyed = false;
 
   constructor(options: TrackPlayerOptions = {}) {
     this.audioFactory = options.audioFactory ?? defaultAudioFactory;
     this.tickIntervalMs = Math.max(20, options.tickIntervalMs ?? 50);
+    this.allowSimulation = options.allowSimulation === true;
     this.state = {
       url: null,
       status: 'idle',
@@ -139,6 +191,7 @@ export class TrackPlayerController {
       activeSegment: null,
       simulatedMode: false,
       errorMessage: null,
+      autoplayBlocked: false,
     };
   }
 
@@ -189,35 +242,66 @@ export class TrackPlayerController {
       activeSegment: null,
       simulatedMode: false,
       errorMessage: null,
+      autoplayBlocked: false,
     });
 
     try {
-      const audio = this.audioFactory();
+      // X-05: reuse the element that `preload()` already fetched for this exact URL.
+      const preloaded = this.takePreloaded(resolvedUrl);
+      const audio = preloaded ?? this.audioFactory();
       audio.preload = 'auto';
       audio.volume = this.state.volume;
       audio.muted = this.state.muted;
       audio.playbackRate = this.state.rate;
-      audio.src = resolvedUrl;
+      if (!preloaded) audio.src = resolvedUrl;
 
       this.audio = audio;
       this.attachAudioListeners(audio);
-      audio.load();
+      if (preloaded) {
+        this.syncPreloadedState(audio);
+      } else {
+        audio.load();
+      }
     } catch {
-      this.enterAudioMissing('Không thể khởi tạo trình phát audio; chuyển sang chế độ mô phỏng.');
+      this.enterAudioMissing('Không thể khởi tạo trình phát audio.');
     }
   }
 
   public preload(url: string, baseUrl?: string): void {
     if (this.destroyed || !url) return;
     const resolvedUrl = isAbsoluteOrSpecialUrl(url) ? url : resolveAssetUrl(url, baseUrl);
+    if (this.preloadedAudio && this.preloadedUrl === resolvedUrl) return;
     try {
       const next = this.audioFactory();
       next.preload = 'auto';
       next.src = resolvedUrl;
       next.load();
       this.preloadedAudio = next;
+      this.preloadedUrl = resolvedUrl;
     } catch {
       // Preload is best-effort only
+    }
+  }
+
+  /** Hand the preloaded element over to `load()` when the URL matches (X-05); otherwise leave it alone. */
+  private takePreloaded(resolvedUrl: string): AudioElementLike | null {
+    if (!this.preloadedAudio || this.preloadedUrl !== resolvedUrl) return null;
+    const audio = this.preloadedAudio;
+    this.preloadedAudio = null;
+    this.preloadedUrl = null;
+    return audio;
+  }
+
+  /** A reused element may already have fired `loadedmetadata`/`error` before we attached listeners. */
+  private syncPreloadedState(audio: AudioElementLike): void {
+    if (audio.error) {
+      this.enterAudioMissing('Không tải được file audio.');
+      return;
+    }
+    if (typeof audio.readyState === 'number' && audio.readyState >= 1) {
+      const dur = Number.isFinite(audio.duration) && audio.duration > 0 ? audio.duration : this.state.duration;
+      this.updateState({ duration: dur, status: 'ready', simulatedMode: false });
+      this.emitTime();
     }
   }
 
@@ -233,22 +317,33 @@ export class TrackPlayerController {
     });
   }
 
+  public unlock(): void {
+    ensurePlaybackAudioSession();
+  }
+
   public async play(): Promise<void> {
     if (this.destroyed || !this.state.url) return;
+    ensurePlaybackAudioSession();
 
     // Exam mode: strictly single pass. Cannot restart once ended.
     if (this.state.examLocked && this.state.examStarted && this.state.status === 'ended') {
       return;
     }
 
+    // L1-10: exam never starts until the whole track is ready (spec §11, "preload 100%").
+    if (this.state.examLocked && !this.state.examStarted && this.state.status !== 'ready') {
+      return;
+    }
+
     if (this.state.status === 'audio_missing' || this.state.simulatedMode) {
-      this.startSimulatedPlayback();
+      // No file to play: never fake a listening session. The UI shows an error + retry (L1-01).
+      if (this.allowSimulation) this.startSimulatedPlayback();
       return;
     }
 
     if (!this.audio) {
       this.enterAudioMissing('File audio chưa sẵn sàng.');
-      this.startSimulatedPlayback();
+      if (this.allowSimulation) this.startSimulatedPlayback();
       return;
     }
 
@@ -270,15 +365,27 @@ export class TrackPlayerController {
         status: 'playing',
         examStarted: this.state.examLocked ? true : this.state.examStarted,
         errorMessage: null,
+        autoplayBlocked: false,
       });
 
       if (this.state.activeSegment) {
         this.startSegmentWatcher();
       }
-    } catch {
-      // Gracefully fall back to audio_missing simulated mode without noisy console errors
-      this.enterAudioMissing('File MP3 chưa có trên đĩa — đang dùng chế độ mô phỏng.');
-      this.startSimulatedPlayback();
+    } catch (err) {
+      if (this.destroyed) return;
+      const name = (err as { name?: string } | null)?.name;
+      if (name === 'NotAllowedError') {
+        // Autoplay policy, not a missing file: stay playable and let the learner press Play (L1-10).
+        const keep: TrackStatus = this.state.status === 'loading' ? 'loading' : 'ready';
+        this.updateState({ status: keep, autoplayBlocked: true, errorMessage: null, activeSegment: null });
+        return;
+      }
+      if (name === 'AbortError') {
+        // play() interrupted by pause()/load(): nothing is wrong with the file.
+        return;
+      }
+      this.enterAudioMissing('Không phát được file audio này.');
+      if (this.allowSimulation) this.startSimulatedPlayback();
     }
   }
 
@@ -417,6 +524,7 @@ export class TrackPlayerController {
     this.stopTimers();
     this.detachAudio();
     this.preloadedAudio = null;
+    this.preloadedUrl = null;
     this.timeListeners.clear();
     this.stateListeners.clear();
   }
@@ -476,12 +584,13 @@ export class TrackPlayerController {
 
     const onError = () => {
       if (this.destroyed || this.audio !== audio) return;
-      this.enterAudioMissing('Không tìm thấy file MP3 — chuyển sang chế độ đọc kịch bản mô phỏng.');
+      this.enterAudioMissing('Không tải được file audio.');
     };
 
     const pairs: Array<{ type: string; fn: () => void }> = [
       { type: 'loadedmetadata', fn: onLoadedMetadata },
       { type: 'canplay', fn: onCanPlay },
+      { type: 'canplaythrough', fn: onCanPlay },
       { type: 'timeupdate', fn: onTimeUpdate },
       { type: 'ended', fn: onEnded },
       { type: 'error', fn: onError },
@@ -516,6 +625,7 @@ export class TrackPlayerController {
       simulatedMode: true,
       duration: fallbackDuration,
       errorMessage: message,
+      autoplayBlocked: false,
     });
   }
 
