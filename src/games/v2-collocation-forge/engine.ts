@@ -8,8 +8,11 @@ import {
   type SRSCard,
 } from '../../core/srs/fsrsAdapter';
 import type { AttemptItem, ReviewRecord } from '../../core/storage/db';
+import type { ProgressPayload } from '../../core/storage/repos/attemptRepo';
+import type { UserItemInput } from '../../core/storage/repos/userItemRepo';
 import { matchAnswer } from '../../core/text/answerMatch';
 import { normalizeText } from '../../core/text/normalize';
+import { seededRng, shuffleSeeded } from './rng';
 
 // ---------------------------------------------------------------------------
 // Constants & XP Table (docs/games/V2-COLLOCATION-FORGE.md §4 & §5)
@@ -22,6 +25,18 @@ export const V2_XP = {
   FORGE_COMPLETE_BONUS: 40,
   SPRINT_BASE: 10,
 } as const;
+
+/** Bậc ×1/×2/×3 theo combo (5/10 đúng liền), cùng bảng với V1 (V2-3). */
+export function getComboMultiplier(combo: number): 1 | 2 | 3 {
+  if (combo >= 10) return 3;
+  if (combo >= 5) return 2;
+  return 1;
+}
+
+/** Retry "Ôn lại câu sai": tối đa 5 câu (docs/02 §5, G4). */
+export const V2_RETRY_MAX_ITEMS = 5;
+/** Màn xem mẫu hiện 3 cụm đầu của lò; câu hỏi nhận diện dùng các cụm KHÁC (V2-1). */
+export const V2_NUNG_PREVIEW_COUNT = 3;
 
 export const V2_MIN_COLLOCATIONS_PER_FORGE = 6;
 export const V2_MIN_TRAPS_PER_FORGE = 2;
@@ -69,6 +84,8 @@ export interface DapQuestion {
   alternativeExample: string;
   hintText: string;
   hintUsed: boolean;
+  /** Câu sai được chèn lại cuối hàng (V2-6): XP 0, không chấm FSRS lần 2. */
+  isRequeue?: boolean;
 }
 
 export type GapScoreOutcome = 'primary' | 'alt_accepted' | 'l1_trap' | 'wrong';
@@ -98,6 +115,14 @@ export interface ToiCardItem {
 export interface ToiRound {
   roundIndex: number;
   cards: ToiCardItem[];
+  /** Số cụm bẫy trong vòng (1–2). ≥ 2 thì bước `spot` chọn nhiều thẻ rồi "Xác nhận" (V2-4). */
+  trapCount: number;
+  /** Các thẻ đang chọn ở vòng nhiều bẫy. */
+  selectedIndices: number[];
+  /** Thẻ bẫy người học bỏ sót ở vòng nhiều bẫy. */
+  missedTrapIndices: number[];
+  /** Cụm (collocationId) đã chấm FSRS Again trong vòng này: mỗi vòng tối đa 1 review mỗi cụm (V2-8). */
+  reviewedErrIds: string[];
   selectedCardIndex: number | null;
   crackedCardIndex: number | null;
   activeTrapCard: ToiCardItem | null;
@@ -128,6 +153,10 @@ export interface V2MistakeRecord {
   correctAnswer: string;
   note?: string;
   isL1Trap?: boolean;
+  /** Vòng Tôi: cụm bẫy cụ thể đã sai (để dựng lại vòng retry). */
+  trapText?: string;
+  collocationId?: string;
+  stage?: 'dap' | 'toi';
 }
 
 export type V2EngineEvent =
@@ -147,6 +176,9 @@ export type V2EngineEvent =
 
 export interface V2EngineState {
   mode: 'training' | 'sprint';
+  /** Phiên "Ôn lại câu sai": XP 0, không FSRS, không ghi attempt (G4/C3). */
+  isRetry: boolean;
+  seed: string;
   level: number;
   stage: V2Stage;
   startedAt: number;
@@ -177,6 +209,10 @@ export interface V2EngineState {
   sprintLastResult: GapScoreResult | null;
   sprintCorrectCount: number;
   sprintPersonalBestXp: number;
+  /** Thẻ đã chấm FSRS trong sprint này (mỗi thẻ 1 lần, V2-7). */
+  sprintReviewedIds: string[];
+  /** Nội dung thẻ do game tạo (`err:l1col_*`) để ghi `userItems` (G1). */
+  producedItems: Record<string, UserItemInput>;
   // Shared Scoring & SRS
   xp: number;
   combo: number;
@@ -200,11 +236,6 @@ export function makeL1ErrorItemId(collocationId: string): `err:${string}` {
 
 function stripLeadingArticle(text: string): string {
   return text.replace(/^(the|a|an)\s+/i, '').trim();
-}
-
-function hasLeadingArticleInDisplay(display: string): boolean {
-  const trimmed = display.trim();
-  return /^(a|an|the)\s+___/i.test(trimmed) || /^___\s+(a|an|the)\s+/i.test(trimmed);
 }
 
 /**
@@ -486,9 +517,8 @@ export function scoreCollocationGap(
   }
 
   // 2. Check accepted answers in `gap.answers` (ignoring redundant leading article a/an/the)
-  const ignoreLeadingArticle = hasLeadingArticleInDisplay(gap.display) || true;
   const directMatch = matchAnswer(rawInput, gap.answers, {
-    ignoreLeadingArticle,
+    ignoreLeadingArticle: true,
     acceptSpellingVariants: true,
     allowMinorTypo: false,
   });
@@ -549,14 +579,38 @@ export function scoreCollocationGap(
 // Stage Builders (Stage 1 NUNG, Stage 2 DAP, Stage 3 TOI)
 // ---------------------------------------------------------------------------
 
-export function buildNungChoices(forge: HeadwordForge): NungSentenceChoice[] {
+function escapeRegExp(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/**
+ * Câu hỏi nhận diện dùng các cụm KHÁC màn xem mẫu (V2-1): 2 câu đúng + 1 câu bẫy lấy từ các cụm
+ * ngoài `V2_NUNG_PREVIEW_COUNT` cụm đầu. Vị trí câu bẫy xáo theo seed (V2-5) nên không còn "bấm 1+3 là thắng".
+ */
+export function buildNungChoices(forge: HeadwordForge, seed: string = forge.headwordId): NungSentenceChoice[] {
+  const rng = seededRng(`${seed}|nung`);
   const cols = forge.collocations;
-  const c1 = cols[0];
-  const c2 = cols[1] ?? cols[0];
-  const trapSource = cols.find((c) => c.l1Traps.length > 0 && c.id !== c1.id && c.id !== c2.id) ??
-    cols.find((c) => c.l1Traps.length > 0) ??
-    c1;
-  const trap = trapSource.l1Traps[0] ?? {
+  const previewIds = new Set(cols.slice(0, V2_NUNG_PREVIEW_COUNT).map((c) => c.id));
+  const fresh = cols.filter((c) => !previewIds.has(c.id));
+
+  const trapPool = fresh.filter((c) => c.l1Traps.length > 0);
+  const trapCandidates = trapPool.length > 0 ? trapPool : cols.filter((c) => c.l1Traps.length > 0);
+  const trapSource =
+    shuffleSeeded(trapCandidates, rng)[0] ?? cols[cols.length - 1] ?? cols[0];
+
+  const correctPool = [
+    ...shuffleSeeded(
+      fresh.filter((c) => c.id !== trapSource.id),
+      rng,
+    ),
+    ...cols.slice(0, V2_NUNG_PREVIEW_COUNT).filter((c) => c.id !== trapSource.id),
+  ];
+  const c1 = correctPool[0] ?? cols[0];
+  const c2 = correctPool[1] ?? c1;
+
+  const trap = trapSource.l1Traps[
+    Math.floor(rng() * Math.max(1, trapSource.l1Traps.length))
+  ] ?? {
     wrong: `make ${forge.headword}`,
     whyVi: 'Lỗi dịch từng chữ từ tiếng Việt.',
   };
@@ -564,7 +618,7 @@ export function buildNungChoices(forge: HeadwordForge): NungSentenceChoice[] {
   const trapSentence = trapSource.example
     .toLowerCase()
     .includes(trapSource.phrase.toLowerCase())
-    ? trapSource.example.replace(new RegExp(trapSource.phrase, 'i'), trap.wrong)
+    ? trapSource.example.replace(new RegExp(escapeRegExp(trapSource.phrase), 'i'), trap.wrong)
     : `Many candidates mistakenly write "${trap.wrong}" in their academic essays.`;
 
   const rawChoices: Omit<NungSentenceChoice, 'index'>[] = [
@@ -593,7 +647,7 @@ export function buildNungChoices(forge: HeadwordForge): NungSentenceChoice[] {
     },
   ];
 
-  return rawChoices.map((choice, idx) => ({ ...choice, index: idx }));
+  return shuffleSeeded(rawChoices, rng).map((choice, idx) => ({ ...choice, index: idx }));
 }
 
 export function buildDapQuestions(forge: HeadwordForge, level: number): DapQuestion[] {
@@ -620,13 +674,93 @@ export function buildDapQuestions(forge: HeadwordForge, level: number): DapQuest
   });
 }
 
-export function buildToiRounds(forge: HeadwordForge, level: number): ToiRound[] {
-  const allTraps: Array<{ col: CollocationItem; trap: { wrong: string; whyVi: string } }> = [];
+export interface ToiTrapEntry {
+  col: CollocationItem;
+  trap: { wrong: string; whyVi: string };
+}
+
+function collectTraps(forge: HeadwordForge): ToiTrapEntry[] {
+  const allTraps: ToiTrapEntry[] = [];
   for (const col of forge.collocations) {
     for (const trap of col.l1Traps) {
       allTraps.push({ col, trap });
     }
   }
+  return allTraps;
+}
+
+/** Dựng 1 vòng Tôi: 4 thẻ gồm các cụm bẫy + cụm đúng, vị trí xáo theo seed (V2-5). */
+export function buildToiRound(
+  forge: HeadwordForge,
+  trapEntries: readonly ToiTrapEntry[],
+  roundIndex: number,
+  rng: () => number,
+): ToiRound {
+  const usedColIds = new Set(trapEntries.map((e) => e.col.id));
+  const validCols = shuffleSeeded(
+    forge.collocations.filter((c) => !usedColIds.has(c.id)),
+    rng,
+  );
+  const neededValid = Math.max(0, 4 - trapEntries.length);
+
+  const rawCards: Omit<ToiCardItem, 'index'>[] = [];
+  for (const entry of trapEntries) {
+    const gap = entry.col.gaps[0];
+    const acceptedFixes = [
+      entry.col.phrase,
+      ...gap.answers.map((ans) => gap.display.replace('___', ans)),
+      ...gap.answers,
+    ];
+    rawCards.push({
+      collocationId: entry.col.id,
+      text: entry.trap.wrong,
+      meaningVi: entry.col.meaningVi,
+      isTrap: true,
+      correctPhrase: entry.col.phrase,
+      AcceptedFixes: acceptedFixes,
+      whyVi: entry.trap.whyVi,
+    });
+  }
+
+  for (let i = 0; i < neededValid; i++) {
+    const vCol =
+      validCols[i % Math.max(1, validCols.length)] ?? forge.collocations[i % forge.collocations.length];
+    rawCards.push({
+      collocationId: vCol.id,
+      text: vCol.phrase,
+      meaningVi: vCol.meaningVi,
+      isTrap: false,
+      correctPhrase: vCol.phrase,
+      AcceptedFixes: [vCol.phrase],
+    });
+  }
+
+  const shuffled = shuffleSeeded(rawCards, rng);
+  return {
+    roundIndex,
+    cards: shuffled.map((c, idx) => ({ ...c, index: idx })),
+    trapCount: trapEntries.length,
+    selectedIndices: [],
+    missedTrapIndices: [],
+    reviewedErrIds: [],
+    selectedCardIndex: null,
+    crackedCardIndex: null,
+    activeTrapCard: null,
+    spotCorrect: null,
+    fixInput: '',
+    fixCorrect: null,
+    step: 'spot',
+  };
+}
+
+export function buildToiRounds(
+  forge: HeadwordForge,
+  level: number,
+  seed: string = forge.headwordId,
+): ToiRound[] {
+  const rng = seededRng(`${seed}|toi`);
+  const allTraps = shuffleSeeded(collectTraps(forge), rng);
+  if (allTraps.length === 0) return [];
 
   const roundCount = Math.min(3, Math.max(2, Math.min(allTraps.length, 3)));
   const rounds: ToiRound[] = [];
@@ -634,65 +768,14 @@ export function buildToiRounds(forge: HeadwordForge, level: number): ToiRound[] 
   for (let r = 0; r < roundCount; r++) {
     const primaryTrapEntry = allTraps[r % allTraps.length];
     const includeSecondTrap = level >= 4 && allTraps.length >= 2 && r % 2 === 1;
+    // Bẫy thứ hai phải thuộc cụm khác để 4 thẻ không trùng cụm (V2-4).
     const secondTrapEntry = includeSecondTrap
-      ? allTraps[(r + 1) % allTraps.length]
+      ? allTraps.find((e, i) => i !== r % allTraps.length && e.col.id !== primaryTrapEntry.col.id) ??
+        null
       : null;
 
-    const trapEntries =
-      secondTrapEntry && secondTrapEntry.trap.wrong !== primaryTrapEntry.trap.wrong
-        ? [primaryTrapEntry, secondTrapEntry]
-        : [primaryTrapEntry];
-
-    const usedColIds = new Set(trapEntries.map((e) => e.col.id));
-    const validCols = forge.collocations.filter((c) => !usedColIds.has(c.id));
-    const neededValid = 4 - trapEntries.length;
-
-    const rawCards: Omit<ToiCardItem, 'index'>[] = [];
-
-    for (const entry of trapEntries) {
-      const gap = entry.col.gaps[0];
-      const acceptedFixes = [
-        entry.col.phrase,
-        ...gap.answers.map((ans) => gap.display.replace('___', ans)),
-        ...gap.answers,
-      ];
-      rawCards.push({
-        collocationId: entry.col.id,
-        text: entry.trap.wrong,
-        meaningVi: entry.col.meaningVi,
-        isTrap: true,
-        correctPhrase: entry.col.phrase,
-        AcceptedFixes: acceptedFixes,
-        whyVi: entry.trap.whyVi,
-      });
-    }
-
-    for (let i = 0; i < neededValid; i++) {
-      const vCol = validCols[(r + i) % Math.max(1, validCols.length)] ?? forge.collocations[i % forge.collocations.length];
-      rawCards.push({
-        collocationId: vCol.id,
-        text: vCol.phrase,
-        meaningVi: vCol.meaningVi,
-        isTrap: false,
-        correctPhrase: vCol.phrase,
-        AcceptedFixes: [vCol.phrase],
-      });
-    }
-
-    // Deterministic rotation so trap isn't always at index 0
-    const rotated = rawCards.map((_c, idx) => rawCards[(idx + r) % rawCards.length]);
-
-    rounds.push({
-      roundIndex: r,
-      cards: rotated.map((c, idx) => ({ ...c, index: idx })),
-      selectedCardIndex: null,
-      crackedCardIndex: null,
-      activeTrapCard: null,
-      spotCorrect: null,
-      fixInput: '',
-      fixCorrect: null,
-      step: 'spot',
-    });
+    const trapEntries = secondTrapEntry ? [primaryTrapEntry, secondTrapEntry] : [primaryTrapEntry];
+    rounds.push(buildToiRound(forge, trapEntries, r, rng));
   }
 
   return rounds;
@@ -710,6 +793,63 @@ export interface CreateV2SessionOptions {
   existingCards?: readonly SRSCard[];
   sprintPersonalBestXp?: number;
   nowMs?: number;
+  /** Khoá seed cho vị trí câu bẫy/thứ tự thẻ; mặc định `headword|nowMs` nên mỗi phiên khác nhau. */
+  seed?: string;
+}
+
+function makeDapQuestion(col: CollocationItem, forge: HeadwordForge, level: number): DapQuestion {
+  const gap = selectGapForLevel(col, level);
+  const { sentenceWithGap, beforeGap, afterGap } = buildSentenceWithGap(col, gap);
+  return {
+    collocation: col,
+    gap,
+    sentenceWithGap,
+    beforeGap,
+    afterGap,
+    alternativeExample: buildAlternativeExample(col, forge.headword),
+    hintText: formatCollocationHint(gap.primary, level),
+    hintUsed: false,
+  };
+}
+
+/**
+ * Sprint chỉ ôn lại thẻ `col_gap` đã có (V2-7): thẻ đến hạn xáo theo seed lên trước, thẻ chưa đến hạn
+ * theo thứ tự `due`. Chưa có thẻ nào thì dùng các cụm của lò để vẫn chơi được (không lặp cụm trong 1 vòng).
+ */
+export function buildSprintPool(
+  forge: HeadwordForge,
+  allCollocations: readonly CollocationItem[],
+  existingCards: readonly SRSCard[],
+  nowMs: number,
+  rng: () => number,
+): CollocationItem[] {
+  const byId = new Map(allCollocations.map((c) => [c.id as string, c]));
+  const eligible = existingCards
+    .filter((c) => c.face === 'col_gap' && c.unlocked && byId.has(c.itemId))
+    .sort((a, b) => a.due - b.due);
+  const dueNow = shuffleSeeded(
+    eligible.filter((c) => c.due <= nowMs),
+    rng,
+  );
+  const later = eligible.filter((c) => c.due > nowMs);
+  const pool: CollocationItem[] = [];
+  const seen = new Set<string>();
+  for (const card of [...dueNow, ...later]) {
+    const col = byId.get(card.itemId);
+    if (col && !seen.has(col.id)) {
+      seen.add(col.id);
+      pool.push(col);
+    }
+  }
+  if (pool.length < 6) {
+    for (const col of shuffleSeeded(forge.collocations, rng)) {
+      if (!seen.has(col.id)) {
+        seen.add(col.id);
+        pool.push(col);
+      }
+    }
+  }
+  return pool;
 }
 
 export function createV2Session(options: CreateV2SessionOptions): V2EngineState {
@@ -722,37 +862,31 @@ export function createV2Session(options: CreateV2SessionOptions): V2EngineState 
     sprintPersonalBestXp = 0,
     nowMs = Date.now(),
   } = options;
+  const seed = options.seed ?? `${forge.headwordId}|${nowMs}`;
 
   const srsCards: Record<string, SRSCard> = {};
   for (const c of existingCards) {
     srsCards[c.id] = { ...c };
   }
 
-  const nungChoices = buildNungChoices(forge);
+  const nungChoices = buildNungChoices(forge, seed);
   const dapQuestions = buildDapQuestions(forge, level);
-  const toiRounds = buildToiRounds(forge, level);
+  const toiRounds = buildToiRounds(forge, level, seed);
 
-  const sprintSource = allCollocations.length >= 6 ? allCollocations : forge.collocations;
-  const sprintQuestions: DapQuestion[] = sprintSource.map((col) => {
-    const gap = selectGapForLevel(col, level);
-    const { sentenceWithGap, beforeGap, afterGap } = buildSentenceWithGap(col, gap);
-    return {
-      collocation: col,
-      gap,
-      sentenceWithGap,
-      beforeGap,
-      afterGap,
-      alternativeExample: buildAlternativeExample(col, forge.headword),
-      hintText: formatCollocationHint(gap.primary, level),
-      hintUsed: false,
-    };
-  });
+  const sprintQuestions: DapQuestion[] =
+    mode === 'sprint'
+      ? buildSprintPool(forge, allCollocations, existingCards, nowMs, seededRng(`${seed}|sprint`)).map(
+          (col) => makeDapQuestion(col, forge, level),
+        )
+      : [];
 
   const c1 = forge.collocations[0];
   const c2 = forge.collocations[1] ?? forge.collocations[0];
 
   return {
     mode,
+    isRetry: false,
+    seed,
     level,
     stage: mode === 'sprint' ? 'sprint' : 'nung',
     startedAt: nowMs,
@@ -790,6 +924,8 @@ export function createV2Session(options: CreateV2SessionOptions): V2EngineState 
     sprintLastResult: null,
     sprintCorrectCount: 0,
     sprintPersonalBestXp,
+    sprintReviewedIds: [],
+    producedItems: {},
     xp: 0,
     combo: 0,
     maxCombo: 0,
@@ -799,6 +935,59 @@ export function createV2Session(options: CreateV2SessionOptions): V2EngineState 
     attemptItems: [],
     srsCards,
     reviews: [],
+  };
+}
+
+/**
+ * "Ôn lại câu sai" (G4/C3/V2-2): chỉ gồm tối đa 5 câu sai của phiên vừa xong, bỏ Nung và Tự viết.
+ * XP luôn 0, không chấm FSRS, không tạo thẻ lỗi mới và không ghi attempt (người gọi bỏ qua việc lưu).
+ */
+export function createV2RetrySession(
+  prev: V2EngineState,
+  nowMs = Date.now(),
+): V2EngineState {
+  const seed = `${prev.seed}|retry|${nowMs}`;
+  const rng = seededRng(seed);
+  const forge = prev.forge;
+  const colById = new Map(forge.collocations.map((c) => [c.id as string, c]));
+
+  const picked = prev.mistakes.slice(0, V2_RETRY_MAX_ITEMS);
+  const dapCols: CollocationItem[] = [];
+  const trapEntries: ToiTrapEntry[] = [];
+  for (const m of picked) {
+    const col = m.collocationId ? colById.get(m.collocationId) : undefined;
+    if (!col) continue;
+    if (m.stage === 'toi') {
+      const trap = col.l1Traps.find((t) => t.wrong === m.trapText) ?? col.l1Traps[0];
+      if (trap && !trapEntries.some((e) => e.col.id === col.id)) trapEntries.push({ col, trap });
+    } else if (!dapCols.some((c) => c.id === col.id)) {
+      dapCols.push(col);
+    }
+  }
+
+  const dapQuestions = dapCols.map((col) => makeDapQuestion(col, forge, prev.level));
+  const toiRounds = trapEntries.map((entry, i) => buildToiRound(forge, [entry], i, rng));
+  const stage: V2Stage =
+    dapQuestions.length > 0 ? 'dap' : toiRounds.length > 0 ? 'toi' : 'recap';
+
+  return {
+    ...createV2Session({
+      mode: 'training',
+      level: prev.level,
+      forge,
+      existingCards: [],
+      nowMs,
+      seed,
+    }),
+    isRetry: true,
+    stage,
+    endedAt: stage === 'recap' ? nowMs : undefined,
+    nungChoices: [],
+    dapQuestions,
+    toiRounds,
+    totalTrapsTested: toiRounds.length,
+    selfWrite: null,
+    totalQuestions: Math.max(1, dapQuestions.length + toiRounds.length),
   };
 }
 
@@ -935,6 +1124,28 @@ function applySrsReview(
   return { nextCards, nextReviews, cardId };
 }
 
+function errorItemFor(col: CollocationItem, trap: { wrong: string; whyVi: string }): UserItemInput {
+  return {
+    id: makeL1ErrorItemId(col.id),
+    kind: 'collocation',
+    front: trap.wrong,
+    back: col.phrase,
+    noteVi: trap.whyVi,
+    source: 'v2_forge',
+  };
+}
+
+function withProduced(
+  produced: Record<string, UserItemInput>,
+  col: CollocationItem,
+  trap: { wrong: string; whyVi: string } | undefined,
+): Record<string, UserItemInput> {
+  const t = trap ?? col.l1Traps[0];
+  if (!t) return produced;
+  const item = errorItemFor(col, t);
+  return produced[item.id] ? produced : { ...produced, [item.id]: item };
+}
+
 export function submitDapAnswer(
   state: V2EngineState,
   rawInput: string,
@@ -950,49 +1161,67 @@ export function submitDapAnswer(
   }
 
   const scoreRes = scoreCollocationGap(rawInput, currentQ.collocation, currentQ.gap);
+  // Câu chèn lại (V2-6) và phiên retry (G4): không XP, không FSRS, không tính điểm lần 2.
+  const scored = !currentQ.isRequeue && !state.isRetry;
   const colCardId = makeCardId(currentQ.collocation.id, 'col_gap');
   const existingColCard = state.srsCards[colCardId];
 
-  const rating = autoRate({
-    correct: scoreRes.correct,
-    face: 'col_gap',
-    responseTimeMs,
-    hintsUsed: currentQ.hintUsed ? 1 : 0,
-    cardStreak: existingColCard?.streak ?? 0,
-  });
-
-  let { nextCards, nextReviews, cardId } = applySrsReview(
-    state.srsCards,
-    state.reviews,
-    currentQ.collocation.id,
-    'col_gap',
-    rating,
-    scoreRes.correct,
-    currentQ.hintUsed,
-    responseTimeMs,
-    nowMs,
-  );
-
+  let rating: Grade | undefined;
+  let nextCards = state.srsCards;
+  let nextReviews = state.reviews;
+  let cardId: string | undefined;
   let errorCardId: string | undefined;
-  if (scoreRes.outcome === 'l1_trap') {
-    const errItemId = makeL1ErrorItemId(currentQ.collocation.id);
-    const errUpd = applySrsReview(
-      nextCards,
-      nextReviews,
-      errItemId,
-      'err_fix',
-      Rating.Again,
-      false,
-      false,
+  let nextProduced = state.producedItems;
+
+  if (scored) {
+    rating = autoRate({
+      correct: scoreRes.correct,
+      face: 'col_gap',
+      responseTimeMs,
+      hintsUsed: currentQ.hintUsed ? 1 : 0,
+      cardStreak: existingColCard?.streak ?? 0,
+    });
+
+    const upd = applySrsReview(
+      state.srsCards,
+      state.reviews,
+      currentQ.collocation.id,
+      'col_gap',
+      rating,
+      scoreRes.correct,
+      currentQ.hintUsed,
       responseTimeMs,
       nowMs,
     );
-    nextCards = errUpd.nextCards;
-    nextReviews = errUpd.nextReviews;
-    errorCardId = errUpd.cardId;
+    nextCards = upd.nextCards;
+    nextReviews = upd.nextReviews;
+    cardId = upd.cardId;
+
+    if (scoreRes.outcome === 'l1_trap') {
+      const errItemId = makeL1ErrorItemId(currentQ.collocation.id);
+      const errUpd = applySrsReview(
+        nextCards,
+        nextReviews,
+        errItemId,
+        'err_fix',
+        Rating.Again,
+        false,
+        false,
+        responseTimeMs,
+        nowMs,
+      );
+      nextCards = errUpd.nextCards;
+      nextReviews = errUpd.nextReviews;
+      errorCardId = errUpd.cardId;
+      nextProduced = withProduced(
+        nextProduced,
+        currentQ.collocation,
+        scoreRes.matchedTrap,
+      );
+    }
   }
 
-  const xpEarned = scoreRes.correct ? V2_XP.DAP_CORRECT : 0;
+  const xpEarned = scored && scoreRes.correct ? V2_XP.DAP_CORRECT : 0;
   const nextCombo = scoreRes.correct ? state.combo + 1 : 0;
   const nextMaxCombo = Math.max(state.maxCombo, nextCombo);
 
@@ -1002,7 +1231,7 @@ export function submitDapAnswer(
       : state.forgedShelf;
 
   const nextMistakes = [...state.mistakes];
-  if (!scoreRes.correct) {
+  if (scored && !scoreRes.correct) {
     nextMistakes.push({
       id: `${currentQ.collocation.id}_dap`,
       prompt: `${currentQ.gap.display} (${currentQ.collocation.meaningVi})`,
@@ -1013,32 +1242,44 @@ export function submitDapAnswer(
           ? `Collocation kiểu Việt: ${scoreRes.whyVi}`
           : currentQ.collocation.example,
       isL1Trap: scoreRes.outcome === 'l1_trap',
+      collocationId: currentQ.collocation.id,
+      stage: 'dap',
     });
   }
 
-  const nextAttemptItems: AttemptItem[] = [
-    ...state.attemptItems,
-    {
-      itemId: currentQ.collocation.id,
-      correct: scoreRes.correct,
-      responseTimeMs,
-      trapType: scoreRes.outcome === 'l1_trap' ? 'l1_collocation' : undefined,
-    },
-  ];
+  // V2-6: câu Đập sai quay lại 1 lần ở cuối hàng trước khi sang Tôi.
+  const nextQuestions =
+    scored && !scoreRes.correct
+      ? [...state.dapQuestions, { ...currentQ, hintUsed: false, isRequeue: true }]
+      : state.dapQuestions;
+
+  const nextAttemptItems: AttemptItem[] = scored
+    ? [
+        ...state.attemptItems,
+        {
+          itemId: currentQ.collocation.id,
+          correct: scoreRes.correct,
+          responseTimeMs,
+          trapType: scoreRes.outcome === 'l1_trap' ? 'l1_collocation' : undefined,
+        },
+      ]
+    : state.attemptItems;
 
   const nextState: V2EngineState = {
     ...state,
+    dapQuestions: nextQuestions,
     dapLastResult: scoreRes,
     dapAnswered: true,
     forgedShelf: nextForgedShelf,
     xp: state.xp + xpEarned,
     combo: nextCombo,
     maxCombo: nextMaxCombo,
-    correctCount: state.correctCount + (scoreRes.correct ? 1 : 0),
+    correctCount: state.correctCount + (scored && scoreRes.correct ? 1 : 0),
     mistakes: nextMistakes,
     attemptItems: nextAttemptItems,
     srsCards: nextCards,
     reviews: nextReviews,
+    producedItems: nextProduced,
   };
 
   return {
@@ -1058,7 +1299,10 @@ export function submitDapAnswer(
   };
 }
 
-export function nextDapQuestion(state: V2EngineState): {
+export function nextDapQuestion(
+  state: V2EngineState,
+  nowMs = Date.now(),
+): {
   state: V2EngineState;
   events: V2EngineEvent[];
 } {
@@ -1079,6 +1323,13 @@ export function nextDapQuestion(state: V2EngineState): {
     };
   }
 
+  if (state.toiRounds.length === 0) {
+    return {
+      state: { ...state, stage: 'recap', dapLastResult: null, endedAt: nowMs },
+      events: [{ type: 'stage_changed', stage: 'recap' }],
+    };
+  }
+
   return {
     state: {
       ...state,
@@ -1091,6 +1342,55 @@ export function nextDapQuestion(state: V2EngineState): {
 
 // --- Stage 3: TOI (L1 Trap Tempering) ---
 
+/** Ghi 1 review Again cho thẻ lỗi của cụm này, tối đa 1 lần mỗi vòng (V2-8); retry thì bỏ qua. */
+function reviewErrOnce(
+  state: V2EngineState,
+  round: ToiRound,
+  card: ToiCardItem,
+  durationMs: number,
+  nowMs: number,
+): {
+  srsCards: Record<string, SRSCard>;
+  reviews: Array<Omit<ReviewRecord, 'id'>>;
+  producedItems: Record<string, UserItemInput>;
+  reviewedErrIds: string[];
+  errorCardId?: string;
+} {
+  if (state.isRetry || round.reviewedErrIds.includes(card.collocationId)) {
+    return {
+      srsCards: state.srsCards,
+      reviews: state.reviews,
+      producedItems: state.producedItems,
+      reviewedErrIds: round.reviewedErrIds,
+    };
+  }
+  const upd = applySrsReview(
+    state.srsCards,
+    state.reviews,
+    makeL1ErrorItemId(card.collocationId),
+    'err_fix',
+    Rating.Again,
+    false,
+    false,
+    durationMs,
+    nowMs,
+  );
+  const col = state.forge.collocations.find((c) => c.id === card.collocationId);
+  const trap = col?.l1Traps.find((t) => t.wrong === card.text) ?? col?.l1Traps[0];
+  return {
+    srsCards: upd.nextCards,
+    reviews: upd.nextReviews,
+    producedItems: col ? withProduced(state.producedItems, col, trap) : state.producedItems,
+    reviewedErrIds: [...round.reviewedErrIds, card.collocationId],
+    errorCardId: upd.cardId,
+  };
+}
+
+function replaceRound(state: V2EngineState, round: ToiRound): ToiRound[] {
+  return state.toiRounds.map((r, idx) => (idx === state.toiIndex ? round : r));
+}
+
+/** Vòng 1 bẫy: bấm 1 thẻ là chấm luôn. Vòng ≥ 2 bẫy dùng `toggleToiCard` + `confirmToiSpot`. */
 export function selectToiCard(
   state: V2EngineState,
   cardIndex: number,
@@ -1099,6 +1399,7 @@ export function selectToiCard(
   if (state.stage !== 'toi') return { state, events: [] };
   const currentRound = state.toiRounds[state.toiIndex];
   if (!currentRound || currentRound.step !== 'spot') return { state, events: [] };
+  if (currentRound.trapCount >= 2) return toggleToiCard(state, cardIndex);
 
   const clickedCard = currentRound.cards[cardIndex];
   if (!clickedCard) return { state, events: [] };
@@ -1108,54 +1409,123 @@ export function selectToiCard(
     : currentRound.cards.find((c) => c.isTrap) ?? clickedCard;
 
   const spotCorrect = clickedCard.isTrap;
-  const xpEarned = spotCorrect ? V2_XP.TOI_SPOT_CORRECT : 0;
+  const xpEarned = !state.isRetry && spotCorrect ? V2_XP.TOI_SPOT_CORRECT : 0;
   const nextCombo = spotCorrect ? state.combo + 1 : 0;
   const nextMaxCombo = Math.max(state.maxCombo, nextCombo);
 
-  let nextCards = state.srsCards;
-  let nextReviews = state.reviews;
-  let errorCardId: string | undefined;
-
+  let errUpd: ReturnType<typeof reviewErrOnce> | null = null;
   if (!spotCorrect) {
-    const errItemId = makeL1ErrorItemId(actualTrapCard.collocationId);
-    const upd = applySrsReview(
-      nextCards,
-      nextReviews,
-      errItemId,
-      'err_fix',
-      Rating.Again,
-      false,
-      false,
-      3000,
-      nowMs,
-    );
-    nextCards = upd.nextCards;
-    nextReviews = upd.nextReviews;
-    errorCardId = upd.cardId;
+    errUpd = reviewErrOnce(state, currentRound, actualTrapCard, 3000, nowMs);
   }
 
   const updatedRound: ToiRound = {
     ...currentRound,
     selectedCardIndex: cardIndex,
+    selectedIndices: [cardIndex],
     crackedCardIndex: actualTrapCard.index,
     activeTrapCard: actualTrapCard,
     spotCorrect,
+    reviewedErrIds: errUpd?.reviewedErrIds ?? currentRound.reviewedErrIds,
     step: 'type_fix',
   };
-
-  const nextRounds = state.toiRounds.map((r, idx) =>
-    idx === state.toiIndex ? updatedRound : r,
-  );
 
   return {
     state: {
       ...state,
-      toiRounds: nextRounds,
+      toiRounds: replaceRound(state, updatedRound),
       xp: state.xp + xpEarned,
       combo: nextCombo,
       maxCombo: nextMaxCombo,
-      srsCards: nextCards,
-      reviews: nextReviews,
+      srsCards: errUpd?.srsCards ?? state.srsCards,
+      reviews: errUpd?.reviews ?? state.reviews,
+      producedItems: errUpd?.producedItems ?? state.producedItems,
+    },
+    events: [
+      {
+        type: 'answer_scored',
+        stage: 'toi',
+        correct: spotCorrect,
+        outcome: 'toi_spot',
+        xpEarned,
+        errorCardId: errUpd?.errorCardId,
+      },
+    ],
+  };
+}
+
+/** Vòng ≥ 2 bẫy (V2-4): bật/tắt chọn một thẻ, chưa chấm. */
+export function toggleToiCard(
+  state: V2EngineState,
+  cardIndex: number,
+): { state: V2EngineState; events: V2EngineEvent[] } {
+  if (state.stage !== 'toi') return { state, events: [] };
+  const round = state.toiRounds[state.toiIndex];
+  if (!round || round.step !== 'spot' || !round.cards[cardIndex]) return { state, events: [] };
+  const selectedIndices = round.selectedIndices.includes(cardIndex)
+    ? round.selectedIndices.filter((i) => i !== cardIndex)
+    : [...round.selectedIndices, cardIndex];
+  return {
+    state: { ...state, toiRounds: replaceRound(state, { ...round, selectedIndices }) },
+    events: [],
+  };
+}
+
+/**
+ * Xác nhận tập thẻ đã chọn ở vòng nhiều bẫy (V2-4): +10 XP cho mỗi bẫy bắt đúng, bẫy bị sót được đánh dấu
+ * và ghi 1 review Again. Chọn nhầm thẻ đúng thì không cộng và không tính là bắt đủ.
+ */
+export function confirmToiSpot(
+  state: V2EngineState,
+  nowMs = Date.now(),
+): { state: V2EngineState; events: V2EngineEvent[] } {
+  if (state.stage !== 'toi') return { state, events: [] };
+  const round = state.toiRounds[state.toiIndex];
+  if (!round || round.step !== 'spot' || round.trapCount < 2 || round.selectedIndices.length === 0) {
+    return { state, events: [] };
+  }
+
+  const traps = round.cards.filter((c) => c.isTrap);
+  const hits = traps.filter((c) => round.selectedIndices.includes(c.index));
+  const missed = traps.filter((c) => !round.selectedIndices.includes(c.index));
+  const falsePicks = round.selectedIndices.filter((i) => !round.cards[i]?.isTrap);
+  const spotCorrect = missed.length === 0 && falsePicks.length === 0;
+  const xpEarned = state.isRetry ? 0 : hits.length * V2_XP.TOI_SPOT_CORRECT;
+  const nextCombo = spotCorrect ? state.combo + 1 : 0;
+
+  let working = state;
+  let reviewed = round.reviewedErrIds;
+  let errorCardId: string | undefined;
+  for (const card of missed) {
+    const upd = reviewErrOnce(working, { ...round, reviewedErrIds: reviewed }, card, 3000, nowMs);
+    working = {
+      ...working,
+      srsCards: upd.srsCards,
+      reviews: upd.reviews,
+      producedItems: upd.producedItems,
+    };
+    reviewed = upd.reviewedErrIds;
+    errorCardId = upd.errorCardId ?? errorCardId;
+  }
+
+  const activeTrapCard = hits[0] ?? traps[0] ?? null;
+  const updatedRound: ToiRound = {
+    ...round,
+    selectedCardIndex: round.selectedIndices[0] ?? null,
+    missedTrapIndices: missed.map((c) => c.index),
+    crackedCardIndex: activeTrapCard?.index ?? null,
+    activeTrapCard,
+    spotCorrect,
+    reviewedErrIds: reviewed,
+    step: 'type_fix',
+  };
+
+  return {
+    state: {
+      ...working,
+      toiRounds: replaceRound(working, updatedRound),
+      xp: state.xp + xpEarned,
+      combo: nextCombo,
+      maxCombo: Math.max(state.maxCombo, nextCombo),
     },
     events: [
       {
@@ -1189,35 +1559,19 @@ export function submitToiFix(
   });
 
   const fixCorrect = matchRes.matched;
-  const xpEarned = fixCorrect ? V2_XP.TOI_FIX_CORRECT : 0;
+  const xpEarned = !state.isRetry && fixCorrect ? V2_XP.TOI_FIX_CORRECT : 0;
   const nextCombo = fixCorrect ? state.combo + 1 : 0;
   const nextMaxCombo = Math.max(state.maxCombo, nextCombo);
 
-  let nextCards = state.srsCards;
-  let nextReviews = state.reviews;
-  let errorCardId: string | undefined;
-
+  // V2-8: nếu vòng này đã ghi Again cho cụm (bấm sai/bỏ sót) thì không ghi thêm lần nữa.
+  let errUpd: ReturnType<typeof reviewErrOnce> | null = null;
   if (!fixCorrect) {
-    const errItemId = makeL1ErrorItemId(trapCard.collocationId);
-    const upd = applySrsReview(
-      nextCards,
-      nextReviews,
-      errItemId,
-      'err_fix',
-      Rating.Again,
-      false,
-      false,
-      4000,
-      nowMs,
-    );
-    nextCards = upd.nextCards;
-    nextReviews = upd.nextReviews;
-    errorCardId = upd.cardId;
+    errUpd = reviewErrOnce(state, currentRound, trapCard, 4000, nowMs);
   }
 
   const bothCorrect = Boolean(currentRound.spotCorrect && fixCorrect);
   const nextMistakes = [...state.mistakes];
-  if (!bothCorrect) {
+  if (!bothCorrect && !state.isRetry) {
     nextMistakes.push({
       id: `${trapCard.collocationId}_toi_${currentRound.roundIndex}`,
       prompt: `Sửa bẫy kiểu Việt: ~~${trapCard.text}~~`,
@@ -1225,6 +1579,9 @@ export function submitToiFix(
       correctAnswer: trapCard.correctPhrase,
       note: trapCard.whyVi,
       isL1Trap: true,
+      collocationId: trapCard.collocationId,
+      trapText: trapCard.text,
+      stage: 'toi',
     });
   }
 
@@ -1232,33 +1589,34 @@ export function submitToiFix(
     ...currentRound,
     fixInput: typedFix,
     fixCorrect,
+    reviewedErrIds: errUpd?.reviewedErrIds ?? currentRound.reviewedErrIds,
     step: 'feedback',
   };
 
-  const nextRounds = state.toiRounds.map((r, idx) =>
-    idx === state.toiIndex ? updatedRound : r,
-  );
-
+  const scoredNow = !state.isRetry;
   return {
     state: {
       ...state,
-      toiRounds: nextRounds,
+      toiRounds: replaceRound(state, updatedRound),
       xp: state.xp + xpEarned,
       combo: nextCombo,
       maxCombo: nextMaxCombo,
       trapsAvoided: state.trapsAvoided + (bothCorrect ? 1 : 0),
-      correctCount: state.correctCount + (bothCorrect ? 1 : 0),
+      correctCount: state.correctCount + (scoredNow && bothCorrect ? 1 : 0),
       mistakes: nextMistakes,
-      attemptItems: [
-        ...state.attemptItems,
-        {
-          itemId: trapCard.collocationId,
-          correct: bothCorrect,
-          trapType: bothCorrect ? undefined : 'l1_collocation',
-        },
-      ],
-      srsCards: nextCards,
-      reviews: nextReviews,
+      attemptItems: scoredNow
+        ? [
+            ...state.attemptItems,
+            {
+              itemId: trapCard.collocationId,
+              correct: bothCorrect,
+              trapType: bothCorrect ? undefined : 'l1_collocation',
+            },
+          ]
+        : state.attemptItems,
+      srsCards: errUpd?.srsCards ?? state.srsCards,
+      reviews: errUpd?.reviews ?? state.reviews,
+      producedItems: errUpd?.producedItems ?? state.producedItems,
     },
     events: [
       {
@@ -1267,7 +1625,7 @@ export function submitToiFix(
         correct: fixCorrect,
         outcome: 'toi_fix',
         xpEarned,
-        errorCardId,
+        errorCardId: errUpd?.errorCardId,
       },
     ],
   };
@@ -1292,7 +1650,14 @@ export function nextToiRound(
     };
   }
 
-  // All 3 stages complete -> award +40 XP forge completion bonus
+  // Retry: kết thúc không thưởng. Phiên thường: +40 XP khi xong cả lò.
+  if (state.isRetry) {
+    return {
+      state: { ...state, stage: 'recap', endedAt: nowMs },
+      events: [{ type: 'stage_changed', stage: 'recap' }],
+    };
+  }
+
   const totalXp = state.xp + V2_XP.FORGE_COMPLETE_BONUS;
   const nextStage: V2Stage = state.level >= 7 && state.selfWrite ? 'write' : 'recap';
 
@@ -1327,22 +1692,73 @@ export function nextToiRound(
 
 // --- Level 7-10 Self-Write Step (§5) ---
 
+const ARTICLES = new Set(['a', 'an', 'the']);
+
+const IRREGULAR_VERBS: Readonly<Record<string, string>> = {
+  had: 'have',
+  has: 'have',
+  made: 'make',
+  took: 'take',
+  taken: 'take',
+  gave: 'give',
+  given: 'give',
+  did: 'do',
+  does: 'do',
+  done: 'do',
+  went: 'go',
+  gone: 'go',
+  drew: 'draw',
+  drawn: 'draw',
+  brought: 'bring',
+  held: 'hold',
+  kept: 'keep',
+  led: 'lead',
+  paid: 'pay',
+  set: 'set',
+  put: 'put',
+  met: 'meet',
+  ran: 'run',
+};
+
+/** Rút gọn biến hình đơn giản (s/es/ed/ing/d) để "has made" khớp "make", "impacts" khớp "impact". */
+function stemWord(word: string): string {
+  let w = IRREGULAR_VERBS[word.toLowerCase()] ?? word.toLowerCase();
+  if (w.length > 5 && w.endsWith('ing')) w = w.slice(0, -3);
+  else if (w.length > 4 && w.endsWith('ied')) w = `${w.slice(0, -3)}y`;
+  else if (w.length > 4 && w.endsWith('ed')) w = w.slice(0, -2);
+  else if (w.length > 4 && w.endsWith('es')) w = w.slice(0, -2);
+  else if (w.length > 3 && w.endsWith('s')) w = w.slice(0, -1);
+  if (w.length > 3 && w.endsWith('e')) w = w.slice(0, -1);
+  if (w.length > 3 && w[w.length - 1] === w[w.length - 2]) w = w.slice(0, -1);
+  return w;
+}
+
+function contentTokens(text: string): string[] {
+  return normalizeText(text)
+    .split(/\s+/)
+    .filter((t) => t.length > 0 && !ARTICLES.has(t));
+}
+
+/**
+ * Câu tự viết "đã dùng" cụm khi chứa đủ MỌI từ của cụm (bỏ mạo từ) theo đúng thứ tự liền nhau, cho phép
+ * biến hình động từ/số nhiều (V2-10). Chỉ chứa từ gap (`have`, `make`...) thì không đủ.
+ */
 export function detectUsedCollocations(
   sentence: string,
   targets: readonly CollocationItem[],
 ): string[] {
-  const normSentence = normalizeText(sentence);
-  if (!normSentence) return [];
+  const sentenceStems = contentTokens(sentence).map(stemWord);
+  if (sentenceStems.length === 0) return [];
 
   const matched: string[] = [];
   for (const col of targets) {
-    const normPhrase = normalizeText(stripLeadingArticle(col.phrase));
-    const primaryWord = normalizeText(col.gaps[0]?.primary ?? '');
-    if (
-      (normPhrase && normSentence.includes(normPhrase)) ||
-      (primaryWord && normSentence.includes(primaryWord))
-    ) {
-      matched.push(col.phrase);
+    const phraseStems = contentTokens(col.phrase).map(stemWord);
+    if (phraseStems.length === 0) continue;
+    for (let i = 0; i + phraseStems.length <= sentenceStems.length; i++) {
+      if (phraseStems.every((stem, k) => sentenceStems[i + k] === stem)) {
+        matched.push(col.phrase);
+        break;
+      }
     }
   }
   return matched;
@@ -1393,14 +1809,16 @@ export function submitSprintAnswer(
   }
 
   const currentQ =
-    state.sprintQuestions[state.sprintIndex % state.sprintQuestions.length];
+    state.sprintQuestions[state.sprintIndex % Math.max(1, state.sprintQuestions.length)];
   if (!currentQ) return { state, events: [] };
 
   const scoreRes = scoreCollocationGap(rawInput, currentQ.collocation, currentQ.gap);
   const nextCombo = scoreRes.correct ? state.combo + 1 : 0;
   const nextMaxCombo = Math.max(state.maxCombo, nextCombo);
-  // §4: Sprint: 60 giây. Mỗi câu đúng +10 × combo.
-  const xpEarned = scoreRes.correct ? V2_XP.SPRINT_BASE * nextCombo : 0;
+  // §4: mỗi câu đúng +10 × bậc combo (×1/×2/×3, V2-3): tối đa 30 XP/câu, không tăng tuyến tính.
+  const xpEarned = scoreRes.correct
+    ? V2_XP.SPRINT_BASE * Math.min(getComboMultiplier(nextCombo), 3)
+    : 0;
 
   const colCardId = makeCardId(currentQ.collocation.id, 'col_gap');
   const existingCard = state.srsCards[colCardId];
@@ -1411,38 +1829,55 @@ export function submitSprintAnswer(
     cardStreak: existingCard?.streak ?? 0,
   });
 
-  // §8: Sprint chỉ ghi review cho card đã có (như một lượt ôn bình thường)
-  let { nextCards, nextReviews, cardId } = applySrsReview(
-    state.srsCards,
-    state.reviews,
-    currentQ.collocation.id,
-    'col_gap',
-    rating,
-    scoreRes.correct,
-    false,
-    responseTimeMs,
-    nowMs,
-    true, // onlyIfExisting = true
-  );
-
-  let errorCardId: string | undefined;
-  if (scoreRes.outcome === 'l1_trap') {
-    const errItemId = makeL1ErrorItemId(currentQ.collocation.id);
-    const errUpd = applySrsReview(
-      nextCards,
-      nextReviews,
-      errItemId,
-      'err_fix',
-      Rating.Again,
-      false,
+  // §8 + V2-7: mỗi thẻ chỉ chấm FSRS 1 lần trong 1 sprint; lần lặp vẫn tính XP.
+  const alreadyReviewed = state.sprintReviewedIds.includes(colCardId);
+  let nextCards = state.srsCards;
+  let nextReviews = state.reviews;
+  let cardId: string | undefined;
+  let reviewedIds = state.sprintReviewedIds;
+  if (!alreadyReviewed) {
+    const upd = applySrsReview(
+      state.srsCards,
+      state.reviews,
+      currentQ.collocation.id,
+      'col_gap',
+      rating,
+      scoreRes.correct,
       false,
       responseTimeMs,
       nowMs,
-      false,
+      true, // chỉ thẻ đã có
     );
-    nextCards = errUpd.nextCards;
-    nextReviews = errUpd.nextReviews;
-    errorCardId = errUpd.cardId;
+    nextCards = upd.nextCards;
+    nextReviews = upd.nextReviews;
+    cardId = upd.cardId;
+    reviewedIds = [...reviewedIds, colCardId];
+  }
+
+  let errorCardId: string | undefined;
+  let producedItems = state.producedItems;
+  if (scoreRes.outcome === 'l1_trap') {
+    const errItemId = makeL1ErrorItemId(currentQ.collocation.id);
+    const errCardKey = makeCardId(errItemId, 'err_fix');
+    if (!reviewedIds.includes(errCardKey)) {
+      const errUpd = applySrsReview(
+        nextCards,
+        nextReviews,
+        errItemId,
+        'err_fix',
+        Rating.Again,
+        false,
+        false,
+        responseTimeMs,
+        nowMs,
+        false,
+      );
+      nextCards = errUpd.nextCards;
+      nextReviews = errUpd.nextReviews;
+      errorCardId = errUpd.cardId;
+      reviewedIds = [...reviewedIds, errCardKey];
+      producedItems = withProduced(producedItems, currentQ.collocation, scoreRes.matchedTrap);
+    }
   }
 
   const nextTotalXp = state.xp + xpEarned;
@@ -1452,6 +1887,8 @@ export function submitSprintAnswer(
     sprintLastResult: scoreRes,
     sprintCorrectCount: state.sprintCorrectCount + (scoreRes.correct ? 1 : 0),
     sprintPersonalBestXp: Math.max(state.sprintPersonalBestXp, nextTotalXp),
+    sprintReviewedIds: reviewedIds,
+    producedItems,
     xp: nextTotalXp,
     combo: nextCombo,
     maxCombo: nextMaxCombo,
@@ -1509,4 +1946,51 @@ export function formatV2WinStatement(state: V2EngineState): string {
     return `Sprint 60 giây: Gõ đúng ${state.sprintCorrectCount} collocation (Combo tối đa x${state.maxCombo}). Kỷ lục cá nhân: ${state.sprintPersonalBestXp} XP.`;
   }
   return `Rèn xong ${state.forgedShelf.length} collocation quanh ${state.forge.headword}. Bạn tránh được ${state.trapsAvoided}/${state.totalTrapsTested} bẫy kiểu Việt.`;
+}
+
+// ---------------------------------------------------------------------------
+// Lưu tiến độ (G3): ảnh chụp để ghi xuống DB giữa phiên và lúc chốt
+// ---------------------------------------------------------------------------
+
+export interface V2ProgressSnapshot {
+  progress: Omit<ProgressPayload, 'attemptId'>;
+  /** Nội dung thẻ do game tạo, ghi bằng `userItemRepo.upsertWithCard(item, 'err_fix')`. */
+  items: UserItemInput[];
+}
+
+/**
+ * `null` khi phiên chưa có gì đáng ghi hoặc là phiên "Ôn lại câu sai" (không ghi attempt/XP/FSRS).
+ * `reviews` luôn là danh sách đầy đủ chỉ thêm vào cuối nên repo tự ghi phần mới (idempotent).
+ */
+export function buildV2ProgressSnapshot(
+  state: V2EngineState,
+  now: number = Date.now(),
+): V2ProgressSnapshot | null {
+  if (state.isRetry) return null;
+  const hasWork = state.attemptItems.length > 0 || state.reviews.length > 0 || state.xp > 0;
+  if (!hasWork) return null;
+
+  const touched = [...new Set(state.reviews.map((r) => r.cardId))];
+  const updatedCards = touched
+    .map((id) => state.srsCards[id])
+    .filter((c): c is SRSCard => Boolean(c));
+  const sprint = state.mode === 'sprint';
+
+  return {
+    progress: {
+      attempt: {
+        gameId: 'v2',
+        mode: state.mode,
+        startedAt: state.startedAt,
+        endedAt: state.endedAt ?? now,
+        score: state.correctCount,
+        total: Math.max(1, sprint ? state.attemptItems.length : state.totalQuestions),
+        xp: state.xp,
+        items: state.attemptItems,
+      },
+      updatedCards,
+      reviews: state.reviews,
+    },
+    items: Object.values(state.producedItems),
+  };
 }
