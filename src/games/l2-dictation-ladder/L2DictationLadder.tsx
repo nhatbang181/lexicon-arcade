@@ -737,7 +737,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
       <div className="max-w-3xl mx-auto py-8 px-4 space-y-4" data-testid="l2-empty-audio">
         <Button
           variant="ghost"
-          size="sm"
+          size="md"
+          className="min-h-[44px]"
           leftIcon={<ArrowLeft className="w-4 h-4" />}
           onClick={() => onExit()}
         >
@@ -766,7 +767,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
           <div className="flex items-center gap-2.5">
             <Button
               variant="ghost"
-              size="sm"
+              size="md"
+              className="min-h-[44px] whitespace-nowrap"
               leftIcon={<ArrowLeft className="w-4 h-4" />}
               onClick={() => onExit()}
             >
@@ -776,14 +778,21 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
               L2 · Dictation Ladder
             </Pill>
           </div>
-          <Pill tone="neutral">
+          <div className="flex items-center gap-2">
             <span
-              className="inline-block w-2 h-2 rounded-full mr-1.5 motion-safe:animate-pulse"
-              style={{ backgroundColor: 'var(--color-listening)' }}
+              className="inline-flex items-center justify-center w-8 h-8 rounded-full shrink-0 motion-safe:animate-pulse"
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--color-listening) 18%, var(--color-surface))',
+                color: 'var(--color-listening)',
+              }}
               aria-hidden="true"
-            />
-            {pool.length}/{totalInDataset || pool.length} câu có audio thật
-          </Pill>
+            >
+              <Volume2 className="w-4 h-4" />
+            </span>
+            <Pill tone="neutral">
+              {pool.length}/{totalInDataset || pool.length} câu có audio thật
+            </Pill>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
@@ -1125,7 +1134,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
         <div className="flex items-center gap-2">
           <Button
             variant="ghost"
-            size="sm"
+            size="md"
+            className="min-h-[44px]"
             leftIcon={<ArrowLeft className="w-4 h-4" />}
             onClick={() => {
               playerRef.current?.pause();
@@ -1289,7 +1299,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
             <div className="flex flex-wrap items-center justify-center gap-2">
               <Button
                 variant="secondary"
-                size="sm"
+                size="md"
+                className="min-h-[44px]"
                 leftIcon={<Volume2 className="w-4 h-4" />}
                 disabled={slowDisabled || isPlaying}
                 onClick={handlePlaySlowBeforeGrade}
@@ -1475,7 +1486,8 @@ export const L2DictationLadder: React.FC<GameProps> = ({ level: initialLevel, on
               <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
                 <Button
                   variant="secondary"
-                  size="sm"
+                  size="md"
+                  className="min-h-[44px]"
                   leftIcon={isPlaying ? <Square className="w-3.5 h-3.5" /> : <RotateCcw className="w-3.5 h-3.5" />}
                   onClick={handleReplaySlowAfterGrade}
                   data-testid="l2-replay-slow-btn"

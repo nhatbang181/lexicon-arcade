@@ -557,7 +557,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
           <div className="flex items-center gap-3">
             <Button
               variant="ghost"
-              size="sm"
+              size="md"
+              className="min-h-[44px] whitespace-nowrap shrink-0"
               leftIcon={<ArrowLeft className="w-4 h-4" />}
               onClick={() => onExit()}
             >
@@ -620,12 +621,17 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
         {/* Mode explanation & Training level slider */}
         <Card padding="md" className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1">
-            <div className="flex items-center gap-2 text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
+            <div className="flex items-center gap-2.5 text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
               <span
-                className="w-2.5 h-2.5 rounded-full shrink-0 motion-safe:animate-pulse"
-                style={{ backgroundColor: 'var(--color-listening)' }}
+                className="inline-flex items-center justify-center w-8 h-8 rounded-full shrink-0 motion-safe:animate-pulse"
+                style={{
+                  backgroundColor: 'color-mix(in srgb, var(--color-listening) 18%, var(--color-surface))',
+                  color: 'var(--color-listening)',
+                }}
                 aria-hidden="true"
-              />
+              >
+                <Headphones className="w-4 h-4" />
+              </span>
               <span>
                 {selectedMode === 'exam'
                   ? 'Exam Mode: Nghe 1 lần duy nhất · Khóa tua/dừng · Có 30s soát bài · Tính Band Listening'
@@ -806,7 +812,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                   <Button
                     variant="primary"
                     skill={selectedMode === 'exam' ? 'exam' : 'listening'}
-                    size="sm"
+                    size="md"
+                    className="min-h-[44px]"
                     loading={loadingEpisode}
                     leftIcon={<Play className="w-3.5 h-3.5" />}
                     onClick={() => void startEpisode(item)}
@@ -1818,7 +1825,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
             <div className="flex items-center gap-2.5 min-w-0">
               <Button
                 variant="ghost"
-                size="sm"
+                size="md"
+                className="min-h-[44px] whitespace-nowrap"
                 leftIcon={<ArrowLeft className="w-4 h-4" />}
                 onClick={() => {
                   if (session.mode === 'exam' && session.phase !== 'debrief') {
@@ -1859,7 +1867,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                   <Button
                     variant="primary"
                     skill={isExamSurface ? 'exam' : 'listening'}
-                    size="sm"
+                    size="md"
+                    className="min-h-[44px]"
                     disabled={
                       trackState.status === 'audio_missing' ||
                       trackState.simulatedMode ||
@@ -1889,7 +1898,8 @@ export const L1TrapDetector: React.FC<GameProps> = ({ mode: initialMode, level: 
                 <Button
                   variant="primary"
                   skill={isExamSurface ? 'exam' : 'listening'}
-                  size="sm"
+                  size="md"
+                  className="min-h-[44px]"
                   disabled={!submitCheck.allowed}
                   title={submitCheck.reasonVi}
                   onClick={handleRequestSubmit}
