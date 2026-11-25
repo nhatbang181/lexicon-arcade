@@ -405,7 +405,7 @@ export function countIeltsTokens(
   const cleaned = collapseDigitGroups(
     normalizeTypography(input)
       .toLowerCase()
-      .replace(/(\d),(\d{3})/g, '$1$2')
+      .replace(/(\d),(?=\d{3}\b)/g, '$1')
       .replace(/[,;!?"]/g, ' ')
       .replace(/\(([^)]*)\)/g, ' $1 ')
       .replace(/\s+/g, ' ')
@@ -705,7 +705,7 @@ export function canonicalizeIeltsExpression(
   let canonical = outTokens
     .join(' ')
     // "9:00" / "nine o'clock" == "9" (no am/pm): same hour either way
-    .replace(/(?<![\d:])(\d{1,2}):00(?!\d|:|\s*(?:am|pm))/g, '$1');
+    .replace(/(?<![\d:])(\d{1,2}):00(?!\d|:|\s*(?:am|pm)\b)/g, '$1');
 
   // Normalize dates: "14th may" / "14 may" / "14th of may" / "may 14th" / "may 14" -> "14 may"
   const dateDayFirst = canonical.match(/^(\d{1,2})(?:st|nd|rd|th)?\s+(?:of\s+)?([a-z]+)$/);

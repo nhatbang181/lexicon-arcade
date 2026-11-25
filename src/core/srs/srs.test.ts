@@ -19,7 +19,12 @@ import {
   getUnlockableVocabFaces,
   isCardRetired,
 } from './faces';
-import { buildReviewQueue } from './queue';
+import {
+  buildReviewQueue,
+  computeAbsenceDays,
+  computeEffectiveNewCardsLimit,
+  isRecoveryRoundEligible,
+} from './queue';
 
 describe('src/core/srs', () => {
   describe('fsrsAdapter', () => {
@@ -274,6 +279,117 @@ describe('src/core/srs', () => {
       expect(res.stats.backlogWarning).toBe(true);
       expect(res.stats.dueTotal).toBe(210);
       expect(res.queue.length).toBe(120);
+    });
+
+    it('FX-2 (PP-02 / PP-C4 / L-11): van tải thẻ mới giảm bậc khi nhớ 7 ngày < 80% và dừng (=0) khi due > 150', () => {
+      // Bình thường: giữ nguyên 15
+      expect(computeEffectiveNewCardsLimit({ baseLimit: 15, dueCount: 40, retention7d: 0.85 })).toEqual({
+        effectiveLimit: 15,
+        baseLimit: 15,
+        throttled: false,
+        reason: null,
+        reasonVi: null,
+      });
+
+      // Nhớ 7 ngày 75% (< 80%) -> giảm 15 -> 10
+      const step1 = computeEffectiveNewCardsLimit({ baseLimit: 15, dueCount: 40, retention7d: 0.75 });
+      expect(step1.effectiveLimit).toBe(10);
+      expect(step1.throttled).toBe(true);
+      expect(step1.reason).toBe('low_retention');
+      expect(step1.reasonVi).toContain('75%');
+
+      // Nhớ 7 ngày 62% (< 70%) -> giảm 15 -> 5
+      const step2 = computeEffectiveNewCardsLimit({ baseLimit: 15, dueCount: 40, retention7d: 0.62 });
+      expect(step2.effectiveLimit).toBe(5);
+      expect(step2.reason).toBe('low_retention');
+
+      // Due > 150 -> tạm dừng thẻ mới (= 0)
+      const paused = computeEffectiveNewCardsLimit({ baseLimit: 15, dueCount: 151, retention7d: 0.92 });
+      expect(paused.effectiveLimit).toBe(0);
+      expect(paused.throttled).toBe(true);
+      expect(paused.reason).toBe('due_overload');
+      expect(paused.reasonVi).toContain('tạm nghỉ thẻ mới');
+
+      // Kiểm chứng trực tiếp trong buildReviewQueue: 155 thẻ đến hạn + 10 thẻ mới -> 0 thẻ mới
+      const now = new Date('2026-06-01T12:00:00Z');
+      const past = now.getTime() - 2 * 86_400_000;
+      const dueCards: SRSCard[] = Array.from({ length: 155 }, (_, i) => ({
+        ...createNewCard(`vocab:due_${i}`, 'recog', { now: new Date(past) }),
+        state: State.Review,
+        reps: 2,
+        stability: 3,
+        last_review: past - 86_400_000,
+        due: past,
+      }));
+      const newCards: SRSCard[] = Array.from({ length: 10 }, (_, i) =>
+        createNewCard(`vocab:new_${i}`, 'recog', { now }),
+      );
+      const q = buildReviewQueue([...dueCards, ...newCards], { now, newCardsLimit: 15 });
+      expect(q.stats.effectiveNewCardsLimit).toBe(0);
+      expect(q.stats.newCount).toBe(0);
+      expect(q.stats.newCardsThrottleReason).toBe('due_overload');
+      expect(q.stats.newCardsThrottleReasonVi).toBeTruthy();
+    });
+
+    it('FX-2 (PP-02): vòng phục hồi bật khi vắng >= 3 ngày (mốc 04:00) và due > 50, giới hạn <= 50 thẻ', () => {
+      // 02:30 sáng ngày 2026-06-04 theo giờ máy vẫn tính là ngày học 2026-06-03 (mốc 04:00)
+      const beforeRollover = new Date(2026, 5, 4, 2, 30, 0);
+      expect(computeAbsenceDays('2026-06-01', beforeRollover)).toBe(2);
+      const afterRollover = new Date(2026, 5, 4, 5, 0, 0);
+      expect(computeAbsenceDays('2026-06-01', afterRollover)).toBe(3);
+
+      expect(isRecoveryRoundEligible({ absenceDays: 2, dueCount: 80 })).toBe(false);
+      expect(isRecoveryRoundEligible({ absenceDays: 3, dueCount: 50 })).toBe(false);
+      expect(isRecoveryRoundEligible({ absenceDays: 3, dueCount: 51 })).toBe(true);
+
+      const now = new Date('2026-06-04T10:00:00Z');
+      const past = now.getTime() - 4 * 86_400_000;
+      const cards: SRSCard[] = Array.from({ length: 80 }, (_, i) => ({
+        ...createNewCard(`vocab:r_${i}`, 'recog', { now: new Date(past) }),
+        state: State.Review,
+        reps: 2,
+        stability: 3,
+        last_review: past - 86_400_000,
+        due: past,
+      }));
+      const q = buildReviewQueue(cards, { now, absenceDays: 3, sessionLimit: 60 });
+      expect(q.stats.recoveryMode).toBe(true);
+      expect(q.stats.recoveryReasonVi).toBe('Vòng phục hồi · tối đa 50 thẻ');
+      expect(q.queue.length).toBe(50);
+
+      // Chế độ bận (sessionLimit = 10) vẫn tôn trọng giới hạn nhỏ hơn
+      const busyQ = buildReviewQueue(cards, { now, absenceDays: 4, sessionLimit: 10 });
+      expect(busyQ.stats.recoveryMode).toBe(true);
+      expect(busyQ.queue.length).toBe(10);
+    });
+
+    it('FX-2 (L-5 / PP-05): thẻ mới gom theo khối chủ đề, không trộn ngẫu nhiên các chủ đề ở lần học đầu', () => {
+      const now = new Date('2026-06-01T12:00:00Z');
+      // Tạo xen kẽ 3 chủ đề theo thứ tự thời gian: env, edu, tech, env, edu, tech, env, edu, tech
+      const topicMap: Record<string, string> = {};
+      const topics = ['environment', 'education', 'technology'];
+      const newCards: SRSCard[] = Array.from({ length: 9 }, (_, i) => {
+        const id = `vocab:t_${i}`;
+        topicMap[id] = topics[i % 3];
+        return createNewCard(id, 'recog', { now: new Date(now.getTime() + i * 1000) });
+      });
+
+      const res = buildReviewQueue(newCards, {
+        now,
+        newCardsLimit: 15,
+        getNewCardTopic: (c) => topicMap[c.itemId],
+      });
+
+      const seenOrder = res.queue.map((q) => topicMap[q.card.itemId]);
+      // Đếm số lần chuyển chủ đề: 3 chủ đề thành 3 khối liên tục -> đúng 2 lần chuyển
+      let transitions = 0;
+      for (let i = 1; i < seenOrder.length; i++) {
+        if (seenOrder[i] !== seenOrder[i - 1]) transitions += 1;
+      }
+      expect(transitions).toBe(2);
+      expect(seenOrder.slice(0, 3)).toEqual(['environment', 'environment', 'environment']);
+      expect(seenOrder.slice(3, 6)).toEqual(['education', 'education', 'education']);
+      expect(seenOrder.slice(6, 9)).toEqual(['technology', 'technology', 'technology']);
     });
   });
 });
