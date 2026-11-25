@@ -21,9 +21,9 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import type { WritingTask1Prompt, WritingTask2Prompt } from '../../core/content/schemas';
 import { isSprintResult } from '../../core/grading';
 import { playSfx } from '../../core/audio/sfx';
-import { createNewCard } from '../../core/srs/fsrsAdapter';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
-import { cardRepo } from '../../core/storage/repos/cardRepo';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
 import { Button, Card, EmptyState, Pill, Skeleton, Toast } from '../../design/components';
 import { dur, ease, spring } from '../../design/motion';
 import { ChartRenderer, GradingPanel, type GradingPanelGradedPayload } from '../_shared';
@@ -239,8 +239,14 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
 
   const [thesisInput, setThesisInput] = useState('');
   const [selectedChoiceIdx, setSelectedChoiceIdx] = useState<number | null>(null);
+  const [selfCheckConfirmed, setSelfCheckConfirmed] = useState(false);
 
   const savedSessionRef = useRef(false);
+  const savedAttemptIdRef = useRef<number | null>(null);
+  const progressAttemptIdRef = useRef<number | null>(null);
+  const isRetrySessionRef = useRef(false);
+  const sessionCounterRef = useRef(0);
+  const recentCompletedIdsRef = useRef<Set<string>>(new Set());
   const toastTimerRef = useRef<number | null>(null);
 
   const showToast = useCallback((msg: string) => {
@@ -249,16 +255,31 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
     toastTimerRef.current = window.setTimeout(() => setToastMsg(null), 2600);
   }, []);
 
-  // Load initial content indices
+  // Load initial content indices + recent 14-day W2 refs (W2-02)
   useEffect(() => {
     let active = true;
     setLoading(true);
-    Promise.all([loadSprintTask1Index(), loadSprintTask2Prompts(), loadSprintCliches()])
-      .then(([t1, t2, cl]) => {
+    const fourteenDaysAgo = Date.now() - 14 * 24 * 60 * 60 * 1000;
+    Promise.all([
+      loadSprintTask1Index(),
+      loadSprintTask2Prompts(),
+      loadSprintCliches(),
+      attemptRepo.getRecent({ gameId: 'w2', limit: 30 }),
+    ])
+      .then(([t1, t2, cl, recentAttempts]) => {
         if (!active) return;
         setTask1Index(t1);
         setTask2Prompts(t2);
         setCliches(cl);
+        const recentSet = new Set<string>();
+        for (const att of recentAttempts) {
+          if (att.startedAt >= fourteenDaysAgo) {
+            for (const it of att.items) {
+              recentSet.add(it.itemId);
+            }
+          }
+        }
+        recentCompletedIdsRef.current = recentSet;
         setLoadError(null);
       })
       .catch((err) => {
@@ -295,9 +316,10 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
     };
   }, [phase, sprintType, overviewQueue, roundIdx]);
 
-  // Countdown timer during input stage
+  // Countdown timer during input stage (W2-03: wait until Task 1 chart is loaded)
   useEffect(() => {
     if (phase !== 'playing' || roundStage !== 'input') return;
+    if (sprintType === 'overview' && (task1Loading || !activeTask1)) return;
     const id = window.setInterval(() => {
       setRemainingSec((prev) => {
         if (prev <= 1) {
@@ -308,7 +330,7 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
       });
     }, 1000);
     return () => window.clearInterval(id);
-  }, [phase, roundStage, roundIdx]);
+  }, [phase, roundStage, roundIdx, sprintType, task1Loading, activeTask1]);
 
   // Auto-submit when timer hits 0
   useEffect(() => {
@@ -318,15 +340,30 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
     }
   }, [phase, roundStage, remainingSec]);
 
-  // Add clicked key phrase / betterChunk to SRS (W2-WRITING-SPRINTS.md §8)
+  // Add clicked key phrase / betterChunk to SRS with userItem content (W2-06, PP-11)
   const handleAddPhraseToSrs = useCallback(
-    async (phrase: string) => {
+    async (phrase: string, original?: string) => {
       const cleaned = phrase.trim();
       if (!cleaned) return;
       try {
         const itemId = `err:w2_${slugifyId(cleaned)}`;
-        const card = createNewCard(itemId, 'err_fix', { source: 'essay_feedback' });
-        await cardRepo.upsert(card);
+        await userItemRepo.upsertWithCard(
+          {
+            id: itemId,
+            kind: 'error',
+            front: original?.trim() ? original.trim() : `Cụm viết học thuật: ${cleaned}`,
+            back: cleaned,
+            noteVi: original?.trim()
+              ? `Thay "${original.trim()}" bằng "${cleaned}" (W2 Writing Sprints)`
+              : `Cụm mẫu Band 8 từ W2 Writing Sprints`,
+            source: 'w2',
+          },
+          'err_fix',
+          {
+            unlocked: true,
+            cardSource: 'essay_feedback',
+          },
+        );
         setSavedPhrases((prev) => new Set(prev).add(cleaned));
         playSfx('highlight');
         showToast(`Đã lưu "${cleaned}" vào hàng đợi ôn tập SRS`);
@@ -337,17 +374,20 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
     [showToast],
   );
 
-  // Start a sprint session
+  // Start a sprint session (W2-02: seeded selection + exclude recent 14d; PP-C5: retry 0 XP)
   const startSprint = useCallback(
-    (type: SprintType) => {
+    (type: SprintType, options?: { isRetry?: boolean }) => {
       const meta = getSprintMeta(type);
       const duration = getRoundDurationSec(type, level);
       const now = Date.now();
-      const offset = Math.floor(now / 1000) % 12;
+      sessionCounterRef.current += 1;
+      const seed = (now ^ Math.imul(sessionCounterRef.current, 2654435761)) >>> 0;
+      const offset = seed % 12;
 
       setSprintType(type);
       setRoundIdx(0);
       setRoundStage('input');
+      setSelfCheckConfirmed(false);
       setTotalSec(duration);
       setRemainingSec(duration);
       setStreakState({ streak: 0, bestStreak: 0 });
@@ -357,6 +397,9 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
       setClaudeGraded(false);
       setClaudeMissingRefs([]);
       savedSessionRef.current = false;
+      savedAttemptIdRef.current = null;
+      progressAttemptIdRef.current = null;
+      isRetrySessionRef.current = Boolean(options?.isRetry);
 
       // Reset inputs
       setOverviewInput('');
@@ -368,9 +411,19 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
       setSelectedChoiceIdx(null);
 
       if (type === 'overview') {
-        setOverviewQueue(selectOverviewPrompts(task1Index, level, meta.roundsPerSession));
+        setOverviewQueue(
+          selectOverviewPrompts(task1Index, level, meta.roundsPerSession, {
+            seed,
+            excludeIds: recentCompletedIdsRef.current,
+          }),
+        );
       } else if (type === 'idea') {
-        setIdeaQueue(selectIdeaPrompts(task2Prompts, level, meta.roundsPerSession));
+        setIdeaQueue(
+          selectIdeaPrompts(task2Prompts, level, meta.roundsPerSession, {
+            seed,
+            excludeIds: recentCompletedIdsRef.current,
+          }),
+        );
       } else if (type === 'thesis') {
         const rotated = [
           ...task2Prompts.slice(offset % Math.max(1, task2Prompts.length)),
@@ -468,36 +521,80 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
     [roundStage, sprintType, currentClicheDrill, currentUpgradeDrill],
   );
 
-  // Persist finished session to IndexedDB (once per session)
+  const buildAttemptPayload = useCallback(
+    (rounds: readonly CompletedSprintRound[], isClaude: boolean) => {
+      const summary = computeSessionSummary(rounds, isClaude);
+      const endedAt = Date.now();
+      return {
+        gameId: 'w2' as const,
+        mode: 'sprint' as const,
+        startedAt: sessionStartedAt || endedAt - 60_000,
+        endedAt,
+        score: summary.totalStars,
+        total: summary.maxStars,
+        xp: isRetrySessionRef.current ? 0 : summary.totalXp,
+        items: rounds.map((r) => ({
+          itemId: r.ref,
+          correct: r.stars >= 2,
+          durationMs: r.durationSec * 1000,
+          rating: r.stars === 3 ? 4 : r.stars === 2 ? 3 : r.stars === 1 ? 2 : 1,
+        })),
+      };
+    },
+    [sessionStartedAt],
+  );
+
+  // Save in-progress attempt after each round / on Esc exit / pagehide (TU-02, F1)
+  const persistProgress = useCallback(
+    async (rounds: readonly CompletedSprintRound[]) => {
+      if (rounds.length === 0 || savedSessionRef.current) return;
+      try {
+        const res = await attemptRepo.saveProgress({
+          attemptId: progressAttemptIdRef.current ?? undefined,
+          attempt: buildAttemptPayload(rounds, false),
+        });
+        progressAttemptIdRef.current = res.attemptId;
+      } catch {
+        // Non-blocking progress fallback
+      }
+    },
+    [buildAttemptPayload],
+  );
+
+  useEffect(() => {
+    if (phase !== 'playing') return;
+    const unregister = registerProgressSaver(() => persistProgress(completedRounds));
+    const onPageHide = () => {
+      void persistProgress(completedRounds);
+    };
+    window.addEventListener('pagehide', onPageHide);
+    return () => {
+      unregister();
+      window.removeEventListener('pagehide', onPageHide);
+    };
+  }, [phase, completedRounds, persistProgress]);
+
+  // Persist finished session to IndexedDB (once per session, stores attemptId for W2-01)
   const persistSession = useCallback(
     async (rounds: readonly CompletedSprintRound[], isClaude: boolean) => {
       if (savedSessionRef.current || rounds.length === 0) return;
       savedSessionRef.current = true;
-      const summary = computeSessionSummary(rounds, isClaude);
-      const endedAt = Date.now();
+      const attempt = buildAttemptPayload(rounds, isClaude);
       try {
-        await attemptRepo.saveSession({
-          attempt: {
-            gameId: 'w2',
-            mode: 'sprint',
-            startedAt: sessionStartedAt || endedAt - 60_000,
-            endedAt,
-            score: summary.totalStars,
-            total: summary.maxStars,
-            xp: summary.totalXp,
-            items: rounds.map((r) => ({
-              itemId: r.ref,
-              correct: r.stars >= 2,
-              durationMs: r.durationSec * 1000,
-              rating: r.stars === 3 ? 4 : r.stars === 2 ? 3 : r.stars === 1 ? 2 : 1,
-            })),
-          },
-        });
+        const res =
+          progressAttemptIdRef.current !== null
+            ? await attemptRepo.finalize(progressAttemptIdRef.current, { attempt })
+            : await attemptRepo.saveSession({ attempt });
+        savedAttemptIdRef.current = res.attemptId;
+        progressAttemptIdRef.current = null;
+        for (const r of rounds) {
+          recentCompletedIdsRef.current.add(r.ref);
+        }
       } catch {
         // Non-blocking storage fallback
       }
     },
-    [sessionStartedAt],
+    [buildAttemptPayload],
   );
 
   // Advance to next round or recap
@@ -541,7 +638,10 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
         gradedBy: 'auto',
         tipVi: currentThesisScore.tipVi,
       };
-    } else if (sprintType === 'cliche' && currentClicheDrill && currentClicheScore) {
+    } else if (sprintType === 'cliche' && currentClicheDrill) {
+      // W2-07: record 0-star round even when timed out without selection
+      const stars = currentClicheScore?.stars ?? 0;
+      const correct = currentClicheScore?.correct ?? false;
       record = {
         ref: currentClicheDrill.id,
         title: `Cliché: "${currentClicheDrill.entry.phrase}"`,
@@ -549,16 +649,19 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
         responseText:
           selectedChoiceIdx !== null ? currentClicheDrill.options[selectedChoiceIdx] : '(hết giờ)',
         durationSec: spentSec,
-        stars: currentClicheScore.stars,
-        checks: { correct: currentClicheScore.correct },
+        stars,
+        checks: { correct },
         gradedBy: 'auto',
-        tipVi: currentClicheScore.explanationVi,
+        tipVi: currentClicheScore?.explanationVi ?? currentClicheDrill.entry.whyAvoidVi,
         betterChunk: {
           original: currentClicheDrill.entry.phrase,
           better: currentClicheDrill.correctReplacement,
         },
       };
-    } else if (sprintType === 'upgrade' && currentUpgradeDrill && currentUpgradeScore) {
+    } else if (sprintType === 'upgrade' && currentUpgradeDrill) {
+      // W2-07: record 0-star round even when timed out without selection
+      const stars = currentUpgradeScore?.stars ?? 0;
+      const correct = currentUpgradeScore?.correct ?? false;
       record = {
         ref: currentUpgradeDrill.id,
         title:
@@ -567,10 +670,10 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
         responseText:
           selectedChoiceIdx !== null ? currentUpgradeDrill.options[selectedChoiceIdx] : '(hết giờ)',
         durationSec: spentSec,
-        stars: currentUpgradeScore.stars,
-        checks: { correct: currentUpgradeScore.correct },
+        stars,
+        checks: { correct },
         gradedBy: 'auto',
-        tipVi: currentUpgradeScore.explanationVi,
+        tipVi: currentUpgradeScore?.explanationVi ?? currentUpgradeDrill.explanationVi,
         betterChunk: {
           original: currentUpgradeDrill.flawHighlight,
           better: currentUpgradeDrill.keyPhrase,
@@ -591,10 +694,14 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
       return;
     }
 
+    // Save intermediate progress (TU-02)
+    void persistProgress(nextCompleted);
+
     // Move to next round
     const nextDuration = getRoundDurationSec(sprintType, level);
     setRoundIdx((i) => i + 1);
     setRoundStage('input');
+    setSelfCheckConfirmed(false);
     setTotalSec(nextDuration);
     setRemainingSec(nextDuration);
     setOverviewInput('');
@@ -629,25 +736,40 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
     roundIdx,
     totalRounds,
     level,
+    persistProgress,
     persistSession,
   ]);
 
-  // Handle Claude SprintResult paste at recap
+  // Handle Claude SprintResult paste at recap + persist updated stars & XP to IndexedDB (W2-01)
   const handleClaudeGraded = useCallback(
-    (payload: GradingPanelGradedPayload) => {
+    async (payload: GradingPanelGradedPayload) => {
       if (!isSprintResult(payload.parsed.data)) return;
       const outcome = applyClaudeSprintResult(completedRounds, payload.parsed.data);
       setCompletedRounds(outcome.rounds);
       setClaudeGraded(true);
       setClaudeMissingRefs(outcome.missingRefs);
+
+      const updatedAttempt = buildAttemptPayload(outcome.rounds, true);
+      try {
+        if (savedAttemptIdRef.current !== null) {
+          await attemptRepo.finalize(savedAttemptIdRef.current, { attempt: updatedAttempt });
+        } else {
+          const res = await attemptRepo.saveSession({ attempt: updatedAttempt });
+          savedAttemptIdRef.current = res.attemptId;
+        }
+      } catch {
+        // Non-blocking storage fallback
+      }
+
       playSfx('levelUp');
+      const xpNote = isRetrySessionRef.current ? '0 XP (luyện lại)' : `+${CLAUDE_SPRINT_BONUS_XP} XP`;
       showToast(
         outcome.missingRefs.length > 0
-          ? `Claude đã chấm ${outcome.matchedRefs.length} lượt (thiếu ${outcome.missingRefs.length} lượt) · +${CLAUDE_SPRINT_BONUS_XP} XP`
-          : `Claude đã cập nhật ${outcome.matchedRefs.length} lượt · +${CLAUDE_SPRINT_BONUS_XP} XP`,
+          ? `Claude đã chấm ${outcome.matchedRefs.length} lượt (thiếu ${outcome.missingRefs.length} lượt) · ${xpNote}`
+          : `Claude đã cập nhật ${outcome.matchedRefs.length} lượt · ${xpNote}`,
       );
     },
-    [completedRounds, showToast],
+    [completedRounds, buildAttemptPayload, showToast],
   );
 
   // Derived timer bar color
@@ -715,7 +837,8 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
           <div className="flex items-center gap-3 min-w-0">
             <Button
               variant="ghost"
-              size="sm"
+              size="md"
+              className="min-w-[44px] min-h-[44px]"
               onClick={() => onExit()}
               aria-label="Quay lại"
             >
@@ -972,7 +1095,12 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
                       variant="ghost"
                       size="sm"
                       disabled={savedPhrases.has(round.betterChunk.better)}
-                      onClick={() => handleAddPhraseToSrs(round.betterChunk!.better)}
+                      onClick={() =>
+                        void handleAddPhraseToSrs(
+                          round.betterChunk!.better,
+                          round.betterChunk!.original,
+                        )
+                      }
                     >
                       {savedPhrases.has(round.betterChunk.better) ? (
                         <>
@@ -991,7 +1119,11 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
           </div>
 
           <div className="flex flex-wrap items-center gap-2.5 pt-2">
-            <Button variant="primary" skill="writing" onClick={() => startSprint(sprintType)}>
+            <Button
+              variant="primary"
+              skill="writing"
+              onClick={() => startSprint(sprintType, { isRetry: true })}
+            >
               <RotateCcw className="w-4 h-4 mr-1.5" />
               Chơi lại {meta.title}
             </Button>
@@ -1017,9 +1149,9 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
             </div>
             <GradingPanel
               packetInput={packetInput}
-              sampleResponse={sampleClaude}
+              sampleResponse={import.meta.env.DEV ? sampleClaude : undefined}
               skill="writing"
-              onGraded={handleClaudeGraded}
+              onGraded={(payload) => void handleClaudeGraded(payload)}
             />
           </Card>
         )}
@@ -1146,6 +1278,12 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
                       data-testid="w2-overview-input"
                       value={overviewInput}
                       onChange={(e) => setOverviewInput(e.target.value)}
+                      onKeyDown={(e) => {
+                        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter' && roundStage === 'input') {
+                          e.preventDefault();
+                          handleSubmitWritten();
+                        }
+                      }}
                       disabled={roundStage === 'review'}
                       rows={3}
                       placeholder="Overall, ..."
@@ -1206,7 +1344,7 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
                                   <input
                                     type="checkbox"
                                     checked={checked}
-                                    disabled={!currentOverviewScore.canSelfCheck}
+                                    disabled={!currentOverviewScore.canSelfCheck || selfCheckConfirmed}
                                     onChange={(e) => {
                                       const next = { ...overviewChecks, [item.key]: e.target.checked };
                                       setOverviewChecks(next);
@@ -1241,87 +1379,116 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
                           )}
                         </div>
 
-                        {/* Band 8 Model Overviews + Clickable Key Phrases */}
-                        <div
-                          className="rounded-[var(--radius-md)] border p-3.5 space-y-2.5"
-                          style={{
-                            backgroundColor: 'var(--color-surface-2)',
-                            borderColor: 'var(--color-border)',
-                          }}
-                        >
-                          <div className="flex flex-wrap items-center justify-between gap-2">
-                            <span
-                              className="text-xs font-bold uppercase tracking-wide"
-                              style={{ color: 'var(--color-writing)' }}
-                            >
-                              Overview mẫu Band 8 (bấm cụm highlight để lưu SRS)
-                            </span>
-                            <div className="flex items-center gap-1">
-                              {activeTask1.overviewModels.map((_, idx) => (
-                                <button
-                                  key={idx}
-                                  type="button"
-                                  onClick={() => setActiveModelIdx(idx)}
-                                  className="px-2 py-0.5 rounded text-xs font-mono border cursor-pointer"
-                                  style={{
-                                    backgroundColor:
-                                      activeModelIdx === idx
-                                        ? 'var(--color-writing)'
-                                        : 'var(--color-surface)',
-                                    borderColor: 'var(--color-border)',
-                                    color:
-                                      activeModelIdx === idx
-                                        ? 'var(--color-surface)'
-                                        : 'var(--color-text-dim)',
-                                  }}
-                                >
-                                  Mẫu {idx + 1}
-                                </button>
-                              ))}
-                            </div>
-                          </div>
-
-                          <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text)' }}>
-                            {splitByKeyPhrases(
-                              activeTask1.overviewModels[activeModelIdx] ??
-                                activeTask1.overviewModels[0] ??
-                                '',
-                              activeTask1.overviewKeyPhrases ?? ['Overall,', 'In general,', 'while', 'whereas'],
-                            ).map((seg, sIdx) =>
-                              seg.isKeyPhrase && seg.phrase ? (
-                                <button
-                                  key={sIdx}
-                                  type="button"
-                                  onClick={() => handleAddPhraseToSrs(seg.phrase!)}
-                                  title="Bấm để thêm cụm này vào SRS"
-                                  className="inline px-1 py-0.5 mx-0.5 rounded font-semibold underline decoration-dotted cursor-pointer"
-                                  style={{
-                                    backgroundColor: savedPhrases.has(seg.phrase)
-                                      ? 'color-mix(in srgb, var(--color-correct) 22%, transparent)'
-                                      : 'color-mix(in srgb, var(--color-writing) 18%, transparent)',
-                                    color: 'var(--color-text)',
-                                  }}
-                                >
-                                  {seg.text}
-                                </button>
-                              ) : (
-                                <React.Fragment key={sIdx}>{seg.text}</React.Fragment>
-                              ),
-                            )}
-                          </p>
-                        </div>
-
-                        <div className="flex justify-end">
-                          <Button
-                            variant="primary"
-                            skill="writing"
-                            data-testid="w2-next-btn"
-                            onClick={handleNextRound}
+                        {/* W2-04 & PP-03: Lock self-check before revealing Band 8 model */}
+                        {!selfCheckConfirmed ? (
+                          <div
+                            className="rounded-[var(--radius-md)] border p-4 flex flex-wrap items-center justify-between gap-3"
+                            style={{
+                              backgroundColor: 'var(--color-surface-2)',
+                              borderColor: 'var(--color-border)',
+                            }}
                           >
-                            {roundIdx + 1 >= totalRounds ? 'Xem tổng kết' : 'Biểu đồ tiếp theo'}
-                            <ArrowRight className="w-4 h-4 ml-1.5" />
-                          </Button>
-                        </div>
+                            <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                              Tự đánh dấu checklist trước rồi xác nhận để khoá điểm tự chấm và mở Overview mẫu Band 8.
+                            </p>
+                            <Button
+                              variant="primary"
+                              skill="writing"
+                              data-testid="w2-confirm-selfcheck-btn"
+                              onClick={() => {
+                                setSelfCheckConfirmed(true);
+                                playSfx('tap');
+                              }}
+                            >
+                              Xác nhận tự chấm & xem mẫu
+                            </Button>
+                          </div>
+                        ) : (
+                          <>
+                            {/* Band 8 Model Overviews + Clickable Key Phrases */}
+                            <div
+                              data-testid="w2-overview-model"
+                              className="rounded-[var(--radius-md)] border p-3.5 space-y-2.5"
+                              style={{
+                                backgroundColor: 'var(--color-surface-2)',
+                                borderColor: 'var(--color-border)',
+                              }}
+                            >
+                              <div className="flex flex-wrap items-center justify-between gap-2">
+                                <span
+                                  className="text-xs font-bold uppercase tracking-wide"
+                                  style={{ color: 'var(--color-writing)' }}
+                                >
+                                  Overview mẫu Band 8 (bấm cụm highlight để lưu SRS)
+                                </span>
+                                <div className="flex items-center gap-1">
+                                  {activeTask1.overviewModels.map((_, idx) => (
+                                    <button
+                                      key={idx}
+                                      type="button"
+                                      onClick={() => setActiveModelIdx(idx)}
+                                      className="min-h-[44px] px-3 py-1 rounded text-xs font-mono border cursor-pointer"
+                                      style={{
+                                        backgroundColor:
+                                          activeModelIdx === idx
+                                            ? 'var(--color-writing)'
+                                            : 'var(--color-surface)',
+                                        borderColor: 'var(--color-border)',
+                                        color:
+                                          activeModelIdx === idx
+                                            ? 'var(--color-on-accent, var(--color-surface))'
+                                            : 'var(--color-text-dim)',
+                                      }}
+                                    >
+                                      Mẫu {idx + 1}
+                                    </button>
+                                  ))}
+                                </div>
+                              </div>
+
+                              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text)' }}>
+                                {splitByKeyPhrases(
+                                  activeTask1.overviewModels[activeModelIdx] ??
+                                    activeTask1.overviewModels[0] ??
+                                    '',
+                                  activeTask1.overviewKeyPhrases ?? ['Overall,', 'In general,', 'while', 'whereas'],
+                                ).map((seg, sIdx) =>
+                                  seg.isKeyPhrase && seg.phrase ? (
+                                    <button
+                                      key={sIdx}
+                                      type="button"
+                                      onClick={() => void handleAddPhraseToSrs(seg.phrase!)}
+                                      title="Bấm để thêm cụm này vào SRS"
+                                      className="inline px-1.5 py-0.5 mx-0.5 rounded font-semibold underline decoration-dotted cursor-pointer"
+                                      style={{
+                                        backgroundColor: savedPhrases.has(seg.phrase)
+                                          ? 'color-mix(in srgb, var(--color-correct) 22%, transparent)'
+                                          : 'color-mix(in srgb, var(--color-writing) 18%, transparent)',
+                                        color: 'var(--color-text)',
+                                      }}
+                                    >
+                                      {seg.text}
+                                    </button>
+                                  ) : (
+                                    <React.Fragment key={sIdx}>{seg.text}</React.Fragment>
+                                  ),
+                                )}
+                              </p>
+                            </div>
+
+                            <div className="flex justify-end">
+                              <Button
+                                variant="primary"
+                                skill="writing"
+                                data-testid="w2-next-btn"
+                                onClick={handleNextRound}
+                              >
+                                {roundIdx + 1 >= totalRounds ? 'Xem tổng kết' : 'Biểu đồ tiếp theo'}
+                                <ArrowRight className="w-4 h-4 ml-1.5" />
+                              </Button>
+                            </div>
+                          </>
+                        )}
                       </div>
                     )}
                   </Card>
@@ -1470,7 +1637,7 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
                             <input
                               type="checkbox"
                               checked={checked}
-                              disabled={!currentIdeaScore.canSelfCheck}
+                              disabled={!currentIdeaScore.canSelfCheck || selfCheckConfirmed}
                               onChange={(e) => {
                                 const next = { ...ideaChecks, [item.key]: e.target.checked };
                                 setIdeaChecks(next);
@@ -1499,59 +1666,87 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
                     )}
                   </div>
 
-                  {/* Ranked ideaBank */}
-                  <div className="space-y-2">
-                    <div className="text-xs font-bold uppercase tracking-wide" style={{ color: 'var(--color-writing)' }}>
-                      Kho ý mẫu Band 8 (xếp ý gần với bạn lên đầu)
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
-                      {rankedIdeaBank.slice(0, 6).map(({ item, matchedKeywords }, i) => (
-                        <div
-                          key={i}
-                          className="rounded-[var(--radius-sm)] border p-3 space-y-1.5"
-                          style={{
-                            backgroundColor: 'var(--color-surface-2)',
-                            borderColor:
-                              matchedKeywords.length > 0
-                                ? 'var(--color-writing)'
-                                : 'var(--color-border)',
-                          }}
-                        >
-                          <div className="flex items-center justify-between gap-2">
-                            <Pill tone={item.side === 'for' ? 'correct' : 'info'} size="sm">
-                              {item.side}
-                            </Pill>
-                            {matchedKeywords.length > 0 && (
-                              <span
-                                className="text-[11px] font-mono"
-                                style={{ color: 'var(--color-writing)' }}
-                              >
-                                Khớp: {matchedKeywords.slice(0, 3).join(', ')}
-                              </span>
-                            )}
-                          </div>
-                          <p className="text-xs font-semibold" style={{ color: 'var(--color-text)' }}>
-                            {item.idea}
-                          </p>
-                          <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-                            {item.develop}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="flex justify-end">
-                    <Button
-                      variant="primary"
-                      skill="writing"
-                      data-testid="w2-next-btn"
-                      onClick={handleNextRound}
+                  {/* W2-04 & PP-03: Lock self-check before revealing Band 8 Idea Bank */}
+                  {!selfCheckConfirmed ? (
+                    <div
+                      className="rounded-[var(--radius-md)] border p-4 flex flex-wrap items-center justify-between gap-3"
+                      style={{
+                        backgroundColor: 'var(--color-surface-2)',
+                        borderColor: 'var(--color-border)',
+                      }}
                     >
-                      {roundIdx + 1 >= totalRounds ? 'Xem tổng kết' : 'Đề tiếp theo'}
-                      <ArrowRight className="w-4 h-4 ml-1.5" />
-                    </Button>
-                  </div>
+                      <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                        Tự đánh dấu checklist 5 tiêu chí trước rồi xác nhận để khoá điểm tự chấm và xem Kho ý mẫu Band 8.
+                      </p>
+                      <Button
+                        variant="primary"
+                        skill="writing"
+                        data-testid="w2-confirm-selfcheck-btn"
+                        onClick={() => {
+                          setSelfCheckConfirmed(true);
+                          playSfx('tap');
+                        }}
+                      >
+                        Xác nhận tự chấm & xem kho ý mẫu
+                      </Button>
+                    </div>
+                  ) : (
+                    <>
+                      {/* Ranked ideaBank */}
+                      <div className="space-y-2" data-testid="w2-idea-model">
+                        <div className="text-xs font-bold uppercase tracking-wide" style={{ color: 'var(--color-writing)' }}>
+                          Kho ý mẫu Band 8 (xếp ý gần với bạn lên đầu)
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+                          {rankedIdeaBank.slice(0, 6).map(({ item, matchedKeywords }, i) => (
+                            <div
+                              key={i}
+                              className="rounded-[var(--radius-sm)] border p-3 space-y-1.5"
+                              style={{
+                                backgroundColor: 'var(--color-surface-2)',
+                                borderColor:
+                                  matchedKeywords.length > 0
+                                    ? 'var(--color-writing)'
+                                    : 'var(--color-border)',
+                              }}
+                            >
+                              <div className="flex items-center justify-between gap-2">
+                                <Pill tone={item.side === 'for' ? 'correct' : 'info'} size="sm">
+                                  {item.side}
+                                </Pill>
+                                {matchedKeywords.length > 0 && (
+                                  <span
+                                    className="text-xs font-mono"
+                                    style={{ color: 'var(--color-writing)' }}
+                                  >
+                                    Khớp: {matchedKeywords.slice(0, 3).join(', ')}
+                                  </span>
+                                )}
+                              </div>
+                              <p className="text-xs font-semibold" style={{ color: 'var(--color-text)' }}>
+                                {item.idea}
+                              </p>
+                              <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                                {item.develop}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="flex justify-end">
+                        <Button
+                          variant="primary"
+                          skill="writing"
+                          data-testid="w2-next-btn"
+                          onClick={handleNextRound}
+                        >
+                          {roundIdx + 1 >= totalRounds ? 'Xem tổng kết' : 'Đề tiếp theo'}
+                          <ArrowRight className="w-4 h-4 ml-1.5" />
+                        </Button>
+                      </div>
+                    </>
+                  )}
                 </div>
               )}
             </Card>

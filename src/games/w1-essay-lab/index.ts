@@ -1,4 +1,5 @@
 import type { GameDefinition } from '../registry';
+import W1EssayLab from './W1EssayLab';
 
 export const W1_GAME_DEFINITION: GameDefinition = {
   id: 'w1',
@@ -12,9 +13,10 @@ export const W1_GAME_DEFINITION: GameDefinition = {
   estMinutes: [20, 40],
   requires: { ai: true },
   modes: ['training', 'exam'],
-  load: () => import('./W1EssayLab'),
+  load: () => Promise.resolve({ default: W1EssayLab }),
 };
 
 export * from './engine';
 export * from './writingLoader';
-export { default, W1EssayLab } from './W1EssayLab';
+export { W1EssayLab };
+export default W1EssayLab;

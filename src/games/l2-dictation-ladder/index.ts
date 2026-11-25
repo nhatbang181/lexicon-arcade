@@ -1,4 +1,5 @@
 import type { GameDefinition } from '../registry';
+import L2DictationLadder from './L2DictationLadder';
 
 export const L2_GAME_DEFINITION: GameDefinition = {
   id: 'l2',
@@ -12,9 +13,10 @@ export const L2_GAME_DEFINITION: GameDefinition = {
   estMinutes: [6, 12],
   requires: { audio: true },
   modes: ['training'],
-  load: () => import('./L2DictationLadder'),
+  load: () => Promise.resolve({ default: L2DictationLadder }),
 };
 
 export * from './engine';
 export * from './dictationLoader';
-export { default, L2DictationLadder } from './L2DictationLadder';
+export { L2DictationLadder };
+export default L2DictationLadder;

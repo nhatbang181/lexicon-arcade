@@ -30,6 +30,8 @@ export interface TrackPlayerProps {
   activeSegmentLabel?: string | null;
   /** True when MP3 is unavailable and running in simulated transcript timing mode. */
   simulatedMode?: boolean;
+  /** True when browser autoplay policy rejected play() (NotAllowedError); file is valid (L1-10). */
+  autoplayBlocked?: boolean;
   onPlay: () => void;
   onPause: () => void;
   onSeek?: (sec: number) => void;
@@ -54,6 +56,7 @@ export const TrackPlayer: React.FC<TrackPlayerProps> = ({
   disablePause = false,
   activeSegmentLabel = null,
   simulatedMode = false,
+  autoplayBlocked = false,
   onPlay,
   onPause,
   onSeek,
@@ -184,7 +187,7 @@ export const TrackPlayer: React.FC<TrackPlayerProps> = ({
               onChange={(e) => onSeek(Number(e.target.value))}
               aria-label="Thanh tiến trình bài nghe"
               data-testid="track-seek-slider"
-              className="flex-1 h-2 cursor-pointer accent-[var(--color-listening)]"
+              className="flex-1 min-h-[44px] appearance-none bg-transparent cursor-pointer [&::-webkit-slider-runnable-track]:h-2 [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-[var(--color-surface-2)] [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:-mt-1 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[var(--color-listening)]"
             />
           )}
 
@@ -216,7 +219,7 @@ export const TrackPlayer: React.FC<TrackPlayerProps> = ({
                   onClick={() => onRateChange(r)}
                   aria-pressed={active}
                   data-testid={`track-rate-${r}`}
-                  className="min-h-[34px] px-2 rounded-[6px] text-xs font-semibold tabular-nums cursor-pointer transition-colors"
+                  className="min-w-[44px] min-h-[44px] px-2 rounded-[6px] text-xs font-semibold tabular-nums cursor-pointer transition-colors"
                   style={{
                     fontFamily: 'var(--font-mono)',
                     backgroundColor: active ? 'var(--color-listening)' : 'transparent',
@@ -236,7 +239,7 @@ export const TrackPlayer: React.FC<TrackPlayerProps> = ({
             type="button"
             onClick={onToggleMute}
             aria-label={muted ? 'Bật tiếng' : 'Tắt tiếng'}
-            className="inline-flex items-center justify-center min-w-[36px] min-h-[36px] rounded-[var(--radius-sm)] cursor-pointer"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-[var(--radius-sm)] cursor-pointer"
             style={{ color: 'var(--color-text-dim)' }}
           >
             {muted || volume <= 0 ? (
@@ -254,14 +257,14 @@ export const TrackPlayer: React.FC<TrackPlayerProps> = ({
               value={muted ? 0 : volume}
               onChange={(e) => onVolumeChange(Number(e.target.value))}
               aria-label="Âm lượng bài nghe"
-              className="w-16 sm:w-20 h-1.5 cursor-pointer accent-[var(--color-listening)]"
+              className="w-16 sm:w-20 min-h-[44px] appearance-none bg-transparent cursor-pointer [&::-webkit-slider-runnable-track]:h-1.5 [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-[var(--color-surface-2)] [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-3.5 [&::-webkit-slider-thumb]:h-3.5 [&::-webkit-slider-thumb]:-mt-1 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-[var(--color-listening)]"
             />
           )}
         </div>
       </div>
 
-      {/* Active segment pill or audio_missing graceful status */}
-      {(activeSegmentLabel || isAudioMissing) && (
+      {/* Active segment pill, autoplayBlocked prompt, or audio_missing status */}
+      {(activeSegmentLabel || autoplayBlocked || isAudioMissing) && (
         <div className="flex flex-wrap items-center justify-between gap-2 text-xs pt-1 border-t" style={{ borderColor: 'var(--color-border)' }}>
           {activeSegmentLabel ? (
             <span
@@ -272,22 +275,47 @@ export const TrackPlayer: React.FC<TrackPlayerProps> = ({
               <Radio className="w-3.5 h-3.5" />
               Đang phát đoạn: {activeSegmentLabel}
             </span>
+          ) : autoplayBlocked ? (
+            <span
+              className="inline-flex items-center gap-1.5 font-medium"
+              style={{ color: 'var(--color-partial)' }}
+              data-testid="track-autoplay-blocked-banner"
+            >
+              <Radio className="w-3.5 h-3.5" />
+              Trình duyệt chặn tự phát — bấm nút Phát để bắt đầu nghe.
+            </span>
           ) : (
             <span
               className="inline-flex items-center gap-1.5"
-              style={{ color: 'var(--color-text-dim)' }}
+              style={{ color: 'var(--color-wrong)' }}
               data-testid="track-audio-missing-banner"
             >
-              <Radio className="w-3.5 h-3.5" style={{ color: 'var(--color-partial)' }} />
-              Chưa có file MP3 trên máy — đang chạy mô phỏng theo tiến độ kịch bản.
+              <Radio className="w-3.5 h-3.5" />
+              Không tải được file MP3 — không thể bắt đầu bài nghe này.
             </span>
           )}
 
-          {isAudioMissing && onRetryLoad && (
+          {autoplayBlocked && (
+            <button
+              type="button"
+              onClick={onPlay}
+              data-testid="track-autoplay-resume-btn"
+              className="inline-flex items-center gap-1 min-h-[44px] px-3 rounded-[var(--radius-sm)] font-semibold cursor-pointer"
+              style={{
+                backgroundColor: 'var(--color-listening)',
+                color: 'var(--color-bg)',
+              }}
+            >
+              <Play className="w-3.5 h-3.5" />
+              Bấm để phát
+            </button>
+          )}
+
+          {isAudioMissing && !autoplayBlocked && onRetryLoad && (
             <button
               type="button"
               onClick={onRetryLoad}
-              className="inline-flex items-center gap-1 font-medium cursor-pointer hover:underline"
+              className="inline-flex items-center gap-1 min-h-[44px] px-2 font-medium cursor-pointer hover:underline"
               style={{ color: 'var(--color-info)' }}
             >
               <RefreshCw className="w-3 h-3" />

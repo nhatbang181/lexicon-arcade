@@ -1,4 +1,5 @@
 import type { GameDefinition } from '../registry';
+import V2CollocationForge from './V2CollocationForge';
 
 export const V2_GAME_DEFINITION: GameDefinition = {
   id: 'v2',
@@ -11,8 +12,8 @@ export const V2_GAME_DEFINITION: GameDefinition = {
   estMinutes: [6, 10],
   requires: {},
   modes: ['training', 'sprint'],
-  load: () => import('./V2CollocationForge'),
+  load: async () => ({ default: V2CollocationForge }),
 };
 
 export * from './engine';
-export { default } from './V2CollocationForge';
+export default V2CollocationForge;

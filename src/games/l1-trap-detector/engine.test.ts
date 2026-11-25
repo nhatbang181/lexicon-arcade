@@ -9,11 +9,18 @@ import {
   LISTENING_PLACEMENT_QUESTIONS,
   evaluateListeningPlacement,
 } from '../../features/placement/listeningPlacement';
-import { ListeningIndexEntrySchema } from './listeningLoader';
 import {
+  ListeningIndexEntrySchema,
+  loadListeningCatalog,
+  loadListeningEpisode,
+} from './listeningLoader';
+import {
+  buildL1ProgressPayload,
   buildL1SessionSavePayload,
+  buildL1UserItems,
   buildL1WinStatement,
   canSubmitNow,
+  createL1RetrySession,
   createL1Session,
   extractQuestionOptions,
   finishAudioListening,
@@ -552,5 +559,182 @@ describe('L1 Trap Detector fixtures & pure engine', () => {
     });
     expect(missingPlural.correct).toBe(5);
     expect(missingPlural.itemResults.find((r) => r.qid === 'lpl-q2')?.correct).toBe(false);
+  });
+
+  describe('T2-B · L1-01, L1-05, L1-08..L1-15, L1-21, B6 producer & saveProgress', () => {
+    it('L1-01: loadListeningCatalog lọc theo file MP3 tồn tại thật (HEAD 200 audio/mpeg, bỏ 404 và text/html)', async () => {
+      const fakeIndex = [
+        {
+          id: 'lep:p1_001',
+          file: 'data/listening/episodes/p1_001.json',
+          part: 1,
+          reserved: false,
+          title: 'Có audio thật',
+          audioPath: 'audio/listening/p1_001.mp3',
+        },
+        {
+          id: 'lep:p1_002',
+          file: 'data/listening/episodes/p1_002.json',
+          part: 1,
+          reserved: false,
+          title: 'Thiếu 404',
+          audioPath: 'audio/listening/p1_002.mp3',
+        },
+        {
+          id: 'lep:p1_003',
+          file: 'data/listening/episodes/p1_003.json',
+          part: 1,
+          reserved: false,
+          title: 'SPA fallback text/html',
+          audioPath: 'audio/listening/p1_003.mp3',
+        },
+      ];
+      const fetchImpl = (async (url: RequestInfo | URL, init?: RequestInit) => {
+        const s = String(url);
+        if (init?.method === 'HEAD') {
+          if (s.includes('p1_001.mp3')) {
+            return { ok: true, headers: { get: () => 'audio/mpeg' } } as unknown as Response;
+          }
+          if (s.includes('p1_003.mp3')) {
+            return { ok: true, headers: { get: () => 'text/html; charset=utf-8' } } as unknown as Response;
+          }
+          return { ok: false, headers: { get: () => '' } } as unknown as Response;
+        }
+        return { ok: true, json: async () => fakeIndex } as unknown as Response;
+      }) as typeof fetch;
+
+      const items = await loadListeningCatalog({ fetchImpl, baseUrl: '/', bypassCache: true });
+      expect(items.map((x) => x.id)).toEqual(['lep:p1_001']);
+    });
+
+    it('L1-11: loadListeningEpisode ném lỗi khi không tải được, không rơi sang fixture khác', async () => {
+      const fetchImpl = (async () => ({ ok: false, status: 404 }) as unknown as Response) as typeof fetch;
+      await expect(
+        loadListeningEpisode(
+          {
+            id: 'lep:p1_999',
+            part: 1,
+            reserved: false,
+            title: 'Missing',
+            contextEn: '',
+            difficulty: 3,
+            accents: ['uk'],
+            channel: 'normal',
+            durationSec: 180,
+            questionCount: 10,
+            questionTypes: [],
+            hasMap: false,
+            trapCount: 0,
+            file: 'data/listening/episodes/p1_999.json',
+          },
+          { fetchImpl, baseUrl: '/', bypassCache: true },
+        ),
+      ).rejects.toThrow();
+    });
+
+    it('L1-01/SR-89/SR-22: phiên mô phỏng hoặc thiếu audio phát ra 0 bandEvidence và 0 thẻ SRS/userItems', () => {
+      let exam = startListeningPhase(createL1Session(L1_FIXTURE_P1, { mode: 'exam' })).state;
+      exam = setAnswer(exam, 'fp1_q01', 'Bramwell');
+      exam = setAnswer(exam, 'fp1_q02', '84'); // trap
+      exam = submitAndGrade(exam).state;
+
+      const simPayload = buildL1SessionSavePayload(exam, 500_000, { simulatedMode: true });
+      expect(simPayload.bandEvidence).toBeUndefined();
+      expect(simPayload.updatedCards).toEqual([]);
+      expect(buildL1UserItems(exam, { simulatedMode: true })).toEqual([]);
+
+      const missingPayload = buildL1SessionSavePayload(exam, 500_000, { audioMissing: true });
+      expect(missingPayload.bandEvidence).toBeUndefined();
+      expect(missingPayload.updatedCards).toEqual([]);
+    });
+
+    it('L1-08: createL1RetrySession chỉ giữ câu sai, 0 XP kể cả khi gắn nhãn bẫy, 0 band, có retryClipMap', () => {
+      let s = startListeningPhase(createL1Session(L1_FIXTURE_P1, { mode: 'exam' })).state;
+      s = setAnswer(s, 'fp1_q01', 'Bramwell');
+      s = setAnswer(s, 'fp1_q02', '84'); // sai -> trap
+      s = setAnswer(s, 'fp1_q03', 'off-peak');
+      s = setAnswer(s, 'fp1_q04', '13 March'); // sai -> trap
+      s = setAnswer(s, 'fp1_q05', 'pilates');
+      s = setAnswer(s, 'fp1_q06', '38');
+      s = setAnswer(s, 'fp1_q07', 'towels');
+      s = setAnswer(s, 'fp1_q08', 'B');
+      s = setAnswer(s, 'fp1_q09', 'C');
+      s = setAnswer(s, 'fp1_q10', 'C');
+      const graded = submitAndGrade(s).state;
+      expect(graded.correctCount).toBe(8);
+
+      let retry = createL1RetrySession(graded);
+      expect(retry.isRetry).toBe(true);
+      expect(retry.phase).toBe('listening');
+      expect(retry.totalQuestions).toBe(2);
+      expect(retry.config.countsForBand).toBe(false);
+      expect(retry.retryClipMap['fp1_q02']).toBeDefined();
+      expect(retry.retryClipMap['fp1_q04']).toBeDefined();
+
+      // Trả lời đúng 1 câu, sai 1 câu rồi gắn nhãn bẫy đúng -> vẫn 0 XP và 0 band
+      retry = setAnswer(retry, 'fp1_q02', '48');
+      retry = setAnswer(retry, 'fp1_q04', '13 March');
+      let retryGraded = submitAndGrade(retry).state;
+      expect(retryGraded.totalXp).toBe(0);
+      retryGraded = submitTrapLabel(retryGraded, 'fp1_q04', 'self_correction').state;
+      expect(retryGraded.totalXp).toBe(0);
+
+      const retryPayload = buildL1SessionSavePayload(retryGraded, 800_000);
+      expect(retryPayload.attempt.xp).toBe(0);
+      expect(retryPayload.bandEvidence).toBeUndefined();
+    });
+
+    it('L1-09: Exam làm lại cùng episode (alreadyDoneExam=true) không phát bandEvidence', () => {
+      let s = startListeningPhase(
+        createL1Session(L1_FIXTURE_P1, { mode: 'exam', alreadyDoneExam: true }),
+      ).state;
+      s = setAnswer(s, 'fp1_q01', 'Bramwell');
+      s = submitAndGrade(s).state;
+      expect(s.config.countsForBand).toBe(false);
+      const payload = buildL1SessionSavePayload(s, 900_000);
+      expect(payload.bandEvidence).toBeUndefined();
+    });
+
+    it('L1-13: Lv 7–8 khoá tua (allowSeek=false), Lv 1–6 cho tua (allowSeek=true)', () => {
+      expect(getL1DifficultyConfig('training', 6).allowSeek).toBe(true);
+      expect(getL1DifficultyConfig('training', 7).allowSeek).toBe(false);
+      expect(getL1DifficultyConfig('exam', 2).allowSeek).toBe(false);
+    });
+
+    it('L1-15: buildL1WinStatement hiển thị nhãn bẫy tiếng Việt thay vì key thô', () => {
+      let s = startListeningPhase(createL1Session(L1_FIXTURE_P1, { mode: 'training' })).state;
+      s = setAnswer(s, 'fp1_q02', '48');
+      s = submitAndGrade(s).state;
+      const win = buildL1WinStatement(s);
+      expect(win).toContain('Tự sửa lời');
+    });
+
+    it('B6/L1-21: buildL1UserItems tạo ltrap:* có audioClip chính xác, ngăn cách | và không tạo cho no_answer', () => {
+      let s = startListeningPhase(createL1Session(L1_FIXTURE_P1, { mode: 'training' })).state;
+      s = setAnswer(s, 'fp1_q02', '84'); // trap:self_correction
+      s = setAnswer(s, 'fp1_q04', ''); // no_answer -> không tạo ltrap
+      s = submitAndGrade(s).state;
+
+      const drafts = buildL1UserItems(s);
+      const q2 = drafts.find((d) => d.item.id === 'ltrap:fixture_p1_sports_centre_fp1_q02');
+      const q4 = drafts.find((d) => d.item.id === 'ltrap:fixture_p1_sports_centre_fp1_q04');
+      expect(q2).toBeDefined();
+      expect(q2?.cardFace).toBe('ltrap_replay');
+      expect(q2?.item.audioClip?.src).toBe(L1_FIXTURE_P1.audio.path);
+      expect(q2?.item.audioClip!.end).toBeGreaterThan(q2?.item.audioClip!.start ?? 0);
+      expect(q4).toBeUndefined();
+
+      const progress = buildL1ProgressPayload(s, 777_000);
+      expect(progress.attempt.gameId).toBe('l1');
+      expect(progress.attempt.items.length).toBe(10);
+    });
+
+    it('L1-05: chấm tiền £38 khớp với đáp án "38" nhờ promptUnit từ template', () => {
+      let s = startListeningPhase(createL1Session(L1_FIXTURE_P1, { mode: 'training' })).state;
+      s = setAnswer(s, 'fp1_q06', '£38');
+      const graded = submitAndGrade(s).state;
+      const q6 = graded.results.find((r) => r.qid === 'fp1_q06');
+      expect(q6?.correct).toBe(true);
+    });
   });
 });

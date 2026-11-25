@@ -18,14 +18,16 @@ import {
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import type { ReadingPassage } from '../../core/content/schemas';
 import { playSfx } from '../../core/audio/sfx';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import type { SRSCard } from '../../core/srs/fsrsAdapter';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
+import { db } from '../../core/storage/db';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
 import {
   Button,
   Card,
   EmptyState,
   Highlighter,
-  KeyHint,
   Pill,
   RecapScreen,
   Sheet,
@@ -40,21 +42,25 @@ import {
   wrongShakeVariants,
 } from '../../design/motion';
 import type { GameProps } from '../registry';
+import { createProgressSaver } from './progressSaver';
 import {
   HEADING_DISTRACTOR_LABELS_VI,
   addParagraphDuration,
   advanceAfterParagraphGrade,
   assignHeadingChoice,
+  buildR2ProgressSnapshot,
   buildR2WinStatement,
   canSubmitCurrentParagraph,
   canSubmitPassage,
   clearHeadingChoice,
+  createHeadlineRetrySession,
   createHeadlineSession,
   getCurrentTask,
   getUsedHeadingsMap,
   keyToHeadingIndex,
   selectMainIdeaSpan,
   selectParagraphIndex,
+  selectR2Passage,
   submitCurrentParagraph,
   submitEntirePassage,
   type HeadlineSessionState,
@@ -62,10 +68,20 @@ import {
   type R2GradingMode,
 } from './engine';
 import {
+  getR2Kv,
   loadHeadlineCatalog,
   loadHeadlinePassage,
+  setR2Kv,
   type HeadlineCatalogItem,
 } from './readingLoader';
+
+const R2_RECENT_PASSAGES_KV_KEY = 'r2_recent_passages_v1';
+const R2_RECENT_TTL_MS = 14 * 86_400_000;
+
+interface RecentR2Passage {
+  id: string;
+  ts: number;
+}
 
 function isTextInputFocused(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
@@ -97,8 +113,11 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
   );
   const [gradingOverride, setGradingOverride] = useState<R2GradingMode | undefined>(undefined);
   const [session, setSession] = useState<HeadlineSessionState | null>(null);
+  const sessionRef = useRef<HeadlineSessionState | null>(null);
+  sessionRef.current = session;
   const [clickSelectsSentence, setClickSelectsSentence] = useState(true);
   const [mobileBankOpen, setMobileBankOpen] = useState(false);
+  const [passageSheetOpen, setPassageSheetOpen] = useState(false);
 
   // Elapsed seconds on current paragraph
   const [paraElapsedSec, setParaElapsedSec] = useState(0);
@@ -108,19 +127,67 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
 
   const pendingSrsCardsRef = useRef<SRSCard[]>([]);
   const activeParaElRef = useRef<HTMLDivElement | null>(null);
+  const saverRef = useRef(
+    createProgressSaver({
+      saveProgress: (payload) => attemptRepo.saveProgress(payload),
+      finalize: (attemptId, payload) => attemptRepo.finalize(attemptId, payload),
+    }),
+  );
 
-  // 1. Load catalog on mount
+  const persistSnapshot = useCallback((target: HeadlineSessionState | null, final: boolean) => {
+    if (!target) return Promise.resolve();
+    const snap = buildR2ProgressSnapshot(target, pendingSrsCardsRef.current, Date.now());
+    if (!snap) return saverRef.current.persist(null, final);
+    const before =
+      snap.items.length > 0 || (final && snap.bandEvidence && snap.bandEvidence.length > 0)
+        ? async () => {
+            for (const item of snap.items) {
+              await userItemRepo.upsertWithCard(item, 'head_retry', { cardSource: 'user' });
+            }
+            if (final && snap.bandEvidence && snap.bandEvidence.length > 0) {
+              await db.bandSnapshots.bulkAdd(snap.bandEvidence);
+            }
+          }
+        : undefined;
+    return saverRef.current.persist(snap.progress, final, before);
+  }, []);
+
+  // Đăng ký lưu tiến độ cho nút "Lưu và thoát" của PlayScreen (TU-02)
+  useEffect(() => {
+    return registerProgressSaver(() => persistSnapshot(sessionRef.current, false));
+  }, [persistSnapshot]);
+
+  // 1. Load catalog on mount & chọn bài tránh lặp 14 ngày (R2-1)
   useEffect(() => {
     let active = true;
     void (async () => {
-      const items = await loadHeadlineCatalog();
+      const now = Date.now();
+      const [items, recentRaw] = await Promise.all([
+        loadHeadlineCatalog(),
+        getR2Kv<RecentR2Passage[]>(R2_RECENT_PASSAGES_KV_KEY, []),
+      ]);
       if (!active) return;
       setCatalog(items);
       if (items.length > 0) {
-        setSelectedCatalogId(items[0].id);
-        const firstPassage = await loadHeadlinePassage(items[0]);
+        const recentIds = (Array.isArray(recentRaw) ? recentRaw : [])
+          .filter((r) => now - r.ts < R2_RECENT_TTL_MS)
+          .map((r) => r.id);
+        const picked =
+          selectR2Passage(items, {
+            recentIds,
+            seed: `r2:${now}:${Math.random().toString(36).slice(2, 8)}`,
+          }) ?? items[0];
+        setSelectedCatalogId(picked.id);
+        const firstPassage = await loadHeadlinePassage(picked);
         if (!active) return;
         setPassage(firstPassage);
+        const updatedRecent = [
+          ...(Array.isArray(recentRaw) ? recentRaw : []).filter(
+            (r) => r.id !== firstPassage.id && now - r.ts < R2_RECENT_TTL_MS,
+          ),
+          { id: firstPassage.id, ts: now },
+        ];
+        void setR2Kv(R2_RECENT_PASSAGES_KV_KEY, updatedRecent);
       }
       setLoading(false);
     })();
@@ -132,18 +199,19 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
   // 2. Initialize / reset session whenever passage, level, or gradingOverride changes
   useEffect(() => {
     if (!passage) return;
+    saverRef.current.reset();
     pendingSrsCardsRef.current = [];
     setSessionSaved(false);
     setParaElapsedSec(0);
     setRejectedHeadingKey(null);
     setMobileBankOpen(false);
-    setSession(
-      createHeadlineSession(passage, {
-        level,
-        mode: gameMode,
-        gradingModeOverride: gradingOverride,
-      }),
-    );
+    const next = createHeadlineSession(passage, {
+      level,
+      mode: gameMode,
+      gradingModeOverride: gradingOverride,
+    });
+    sessionRef.current = next;
+    setSession(next);
   }, [passage, level, gameMode, gradingOverride]);
 
   const currentTask = session ? getCurrentTask(session) : null;
@@ -175,38 +243,13 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
     }
   }, [currentTask?.paragraphLabel, prefersReduced]);
 
-  // 5. Persist completed session to IndexedDB (attempt + head:<qid>#head_retry SRS cards)
+  // 5. Finalize completed session to IndexedDB (idempotent qua progressSaver + userItems head:*)
   useEffect(() => {
     if (!session || !session.completed || sessionSaved) return;
     setSessionSaved(true);
     playSfx('sessionDone', { examMode: gameMode === 'exam' });
-
-    const editable = session.tasks.filter((t) => !t.isExample);
-    const results = editable
-      .map((t) => session.results[t.paragraphLabel])
-      .filter((r): r is ParagraphGradeResult => Boolean(r));
-    const correctCount = results.filter((r) => r.headingCorrect).length;
-    const endedAt = session.endedAt ?? Date.now();
-
-    void attemptRepo.saveSession({
-      attempt: {
-        gameId: 'r2',
-        mode: gameMode,
-        startedAt: session.startedAt,
-        endedAt,
-        score: correctCount,
-        total: editable.length,
-        xp: session.totalXp,
-        items: results.map((r) => ({
-          itemId: `head:${r.qid}`,
-          correct: r.headingCorrect,
-          responseTimeMs: Math.round(r.durationSec * 1000),
-          trapType: r.distractorType,
-        })),
-      },
-      updatedCards: pendingSrsCardsRef.current,
-    });
-  }, [session, sessionSaved, gameMode]);
+    void persistSnapshot(session, true);
+  }, [session, sessionSaved, gameMode, persistSnapshot]);
 
   const handleSelectCatalogPassage = async (id: string) => {
     const item = catalog.find((c) => c.id === id);
@@ -215,6 +258,15 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
     setLoading(true);
     const loaded = await loadHeadlinePassage(item);
     setPassage(loaded);
+    const now = Date.now();
+    const prevRecent = await getR2Kv<RecentR2Passage[]>(R2_RECENT_PASSAGES_KV_KEY, []);
+    const nextRecent = [
+      ...(Array.isArray(prevRecent) ? prevRecent : []).filter(
+        (r) => r.id !== loaded.id && now - r.ts < R2_RECENT_TTL_MS,
+      ),
+      { id: loaded.id, ts: now },
+    ];
+    void setR2Kv(R2_RECENT_PASSAGES_KV_KEY, nextRecent);
     setLoading(false);
   };
 
@@ -254,6 +306,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
   const handleSubmitParagraph = useCallback(() => {
     if (!session || !canSubmitCurrentParagraph(session)) return;
     const transition = submitCurrentParagraph(session, paraElapsedSec);
+    sessionRef.current = transition.state;
     setSession(transition.state);
     setParaElapsedSec(0);
 
@@ -269,13 +322,15 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
         playSfx('wrong', { examMode: gameMode === 'exam' });
       }
     }
-  }, [session, paraElapsedSec, gameMode]);
+    void persistSnapshot(transition.state, false);
+  }, [session, paraElapsedSec, gameMode, persistSnapshot]);
 
   const handleAdvanceNext = useCallback(() => {
     if (!session) return;
     playSfx('page', { examMode: gameMode === 'exam' });
     const transition = advanceAfterParagraphGrade(session);
     setParaElapsedSec(0);
+    sessionRef.current = transition.state;
     setSession(transition.state);
   }, [session, gameMode]);
 
@@ -292,24 +347,45 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
     const gradedEvt = transition.events.find((e) => e.type === 'passage_graded');
     if (gradedEvt && gradedEvt.type === 'passage_graded') {
       pendingSrsCardsRef.current = [...pendingSrsCardsRef.current, ...gradedEvt.srsCards];
+      // R2-4: phản hồi âm thanh khi nộp cả bài
+      const anyCorrect = gradedEvt.results.some((r) => r.headingCorrect);
+      playSfx(anyCorrect ? 'correct' : 'wrong', { examMode: gameMode === 'exam' });
     }
     setParaElapsedSec(0);
+    sessionRef.current = transition.state;
     setSession(transition.state);
-  }, [session, paraElapsedSec]);
+  }, [session, paraElapsedSec, gameMode]);
 
   const handleRestart = useCallback(() => {
     if (!passage) return;
+    saverRef.current.reset();
     pendingSrsCardsRef.current = [];
     setSessionSaved(false);
     setParaElapsedSec(0);
-    setSession(
-      createHeadlineSession(passage, {
-        level,
-        mode: gameMode,
-        gradingModeOverride: gradingOverride,
-      }),
-    );
+    const fresh = createHeadlineSession(passage, {
+      level,
+      mode: gameMode,
+      gradingModeOverride: gradingOverride,
+    });
+    sessionRef.current = fresh;
+    setSession(fresh);
   }, [passage, level, gameMode, gradingOverride]);
+
+  const handleRetryMistakes = useCallback(() => {
+    const cur = sessionRef.current;
+    if (!cur) return;
+    const retry = createHeadlineRetrySession(cur, Date.now());
+    if (!retry) {
+      handleRestart();
+      return;
+    }
+    saverRef.current.reset();
+    pendingSrsCardsRef.current = [];
+    setSessionSaved(false);
+    setParaElapsedSec(0);
+    sessionRef.current = retry;
+    setSession(retry);
+  }, [handleRestart]);
 
   // 6. Keyboard shortcuts: 1-9 -> i-ix, 0 -> x, Enter -> submit / next
   useEffect(() => {
@@ -426,7 +502,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
           accuracyPercent={accuracyPercent}
           durationSec={durationSec}
           mistakes={mistakes}
-          onRetryMistakes={handleRestart}
+          onRetryMistakes={handleRetryMistakes}
           onGoToday={() =>
             onExit({
               gameId: 'r2',
@@ -604,10 +680,10 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
             type="button"
             disabled={isLockedByOther || isCurrentGraded}
             onClick={() => handleSelectHeading(h.key)}
-            variants={wrongShakeVariants}
+            variants={prefersReduced ? undefined : wrongShakeVariants}
             animate={isRejected ? 'wrong' : 'idle'}
             data-testid={`r2-heading-${h.key}`}
-            className="w-full text-left px-3.5 py-2.5 rounded-[var(--radius-md)] border transition-colors flex items-start gap-3 cursor-pointer disabled:cursor-not-allowed"
+            className="w-full text-left px-3.5 py-2.5 rounded-[var(--radius-md)] border transition-colors flex items-start gap-3 cursor-pointer disabled:cursor-not-allowed min-h-[44px]"
             style={{
               backgroundColor: isSelectedForCurrent
                 ? 'color-mix(in srgb, var(--color-reading) 16%, var(--color-surface-2))'
@@ -629,7 +705,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                 backgroundColor: isSelectedForCurrent
                   ? 'var(--color-reading)'
                   : 'var(--color-surface)',
-                color: isSelectedForCurrent ? '#0B0F1A' : 'var(--color-text)',
+                color: isSelectedForCurrent ? 'var(--color-bg)' : 'var(--color-text)',
                 border: '1px solid var(--color-border)',
               }}
             >
@@ -638,7 +714,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
 
             <div className="min-w-0 flex-1 space-y-1">
               <div
-                className="text-sm font-medium leading-snug"
+                className="text-sm font-medium leading-snug break-words"
                 style={{
                   color: 'var(--color-text)',
                   textDecoration: isLockedByOther ? 'line-through' : 'none',
@@ -648,7 +724,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
               </div>
               {usedByPara && (
                 <div
-                  className="text-[11px] font-semibold"
+                  className="text-xs font-semibold"
                   style={{
                     color: isSelectedForCurrent
                       ? 'var(--color-reading)'
@@ -663,7 +739,17 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
             </div>
 
             {hotkey && !isLockedByOther && (
-              <KeyHint keyName={hotkey} className="shrink-0 hidden sm:inline-flex" />
+              <span
+                className="shrink-0 hidden sm:inline-flex items-center justify-center min-w-[22px] h-[22px] px-1.5 text-xs font-medium rounded border select-none"
+                style={{
+                  fontFamily: 'var(--font-mono)',
+                  backgroundColor: 'var(--color-surface)',
+                  borderColor: 'var(--color-border)',
+                  color: 'var(--color-text-dim)',
+                }}
+              >
+                {hotkey}
+              </span>
             )}
           </motion.button>
         );
@@ -673,38 +759,25 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
 
   return (
     <div
-      className="max-w-7xl mx-auto space-y-4 pb-24 min-[900px]:pb-10"
+      className="max-w-7xl mx-auto px-3 sm:px-4 space-y-4 pb-24 min-[900px]:pb-10 overflow-x-clip"
       data-testid="r2-headline-editor"
     >
-      {/* Top Newsroom Header */}
-      <header
-        className="px-4 py-3 rounded-[var(--radius-lg)] border flex flex-wrap items-center justify-between gap-3"
+      {/* Thanh trạng thái phiên (không lặp nút thoát ✕ của PlayScreen - U3; chống tràn ngang - U7) */}
+      <div
+        className="px-3 sm:px-4 py-3 rounded-[var(--radius-lg)] border flex flex-wrap items-center justify-between gap-2.5 min-w-0"
         style={{
           backgroundColor: 'var(--color-surface)',
           borderColor: 'var(--color-border)',
           boxShadow: 'var(--shadow-card)',
         }}
       >
-        <div className="flex items-center gap-3 min-w-0">
-          <button
-            type="button"
-            onClick={() => onExit()}
-            className="inline-flex items-center justify-center w-9 h-9 rounded-[var(--radius-sm)] border cursor-pointer shrink-0"
-            style={{
-              backgroundColor: 'var(--color-surface-2)',
-              borderColor: 'var(--color-border)',
-              color: 'var(--color-text-dim)',
-            }}
-            aria-label="Thoát Headline Editor"
-          >
-            <X className="w-4 h-4" />
-          </button>
-
-          <div className="min-w-0">
+        <div className="flex items-center gap-2.5 min-w-0 flex-1">
+          <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-2">
               <Pill tone="reading" icon={<Newspaper className="w-3.5 h-3.5" />}>
                 R2 · Headline Editor
               </Pill>
+              {session.isRetry && <Pill tone="neutral">Ôn câu sai · 0 XP</Pill>}
               <span
                 className="text-xs font-semibold tabular-nums"
                 style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
@@ -723,11 +796,11 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2 min-w-0 max-w-full">
           {/* Grading Mode / Level Quick Switcher */}
           {gameMode === 'training' && (
             <div
-              className="inline-flex items-center gap-1 p-1 rounded-[var(--radius-sm)] border text-xs"
+              className="inline-flex flex-wrap items-center gap-1 p-1 rounded-[var(--radius-sm)] border text-xs max-w-full"
               style={{
                 backgroundColor: 'var(--color-surface-2)',
                 borderColor: 'var(--color-border)',
@@ -742,7 +815,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                   setGradingOverride('per_paragraph');
                 }}
                 data-testid="r2-mode-per-paragraph"
-                className="px-2.5 py-1 rounded font-semibold cursor-pointer transition-colors"
+                className="px-2.5 py-2 min-h-[44px] rounded font-semibold cursor-pointer transition-colors"
                 style={{
                   backgroundColor:
                     session.config.gradingMode === 'per_paragraph'
@@ -763,7 +836,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                   setGradingOverride('end_of_passage');
                 }}
                 data-testid="r2-mode-end-passage"
-                className="px-2.5 py-1 rounded font-semibold cursor-pointer transition-colors"
+                className="px-2.5 py-2 min-h-[44px] rounded font-semibold cursor-pointer transition-colors"
                 style={{
                   backgroundColor:
                     session.config.gradingMode === 'end_of_passage'
@@ -780,25 +853,65 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
             </div>
           )}
 
-          {/* Passage selector if catalog has >1 passage */}
+          {/* Passage picker button + Sheet (thay <select> gốc để đạt D10 & U7) */}
           {catalog.length > 1 && (
-            <select
-              aria-label="Chọn bài đọc"
-              value={selectedCatalogId}
-              onChange={(e) => void handleSelectCatalogPassage(e.target.value)}
-              className="px-2.5 py-1.5 rounded-[var(--radius-sm)] border text-xs font-medium"
-              style={{
-                backgroundColor: 'var(--color-surface-2)',
-                borderColor: 'var(--color-border)',
-                color: 'var(--color-text)',
-              }}
-            >
-              {catalog.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.level} · {c.title}
-                </option>
-              ))}
-            </select>
+            <>
+              <button
+                type="button"
+                onClick={() => setPassageSheetOpen(true)}
+                className="w-full sm:w-auto max-w-full min-w-0 min-h-[44px] inline-flex items-center justify-between gap-2 px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                  color: 'var(--color-text)',
+                }}
+              >
+                <span className="sr-only">Chọn bài đọc: </span>
+                <span className="truncate">
+                  {passage.level} · {passage.title}
+                </span>
+                <span className="shrink-0" style={{ color: 'var(--color-text-dim)' }}>
+                  Đổi bài
+                </span>
+              </button>
+              <Sheet
+                open={passageSheetOpen}
+                onClose={() => setPassageSheetOpen(false)}
+                title="Chọn bài đọc R2"
+                subtitle="Chọn bài đọc Matching Headings để luyện tập."
+              >
+                <div className="space-y-2">
+                  {catalog.map((c) => {
+                    const active = c.id === selectedCatalogId;
+                    return (
+                      <button
+                        key={c.id}
+                        type="button"
+                        onClick={() => {
+                          setPassageSheetOpen(false);
+                          void handleSelectCatalogPassage(c.id);
+                        }}
+                        className="w-full text-left min-h-[44px] px-3.5 py-2.5 rounded-[var(--radius-md)] border cursor-pointer transition-colors"
+                        style={{
+                          backgroundColor: active
+                            ? 'color-mix(in srgb, var(--color-reading) 14%, var(--color-surface-2))'
+                            : 'var(--color-surface-2)',
+                          borderColor: active ? 'var(--color-reading)' : 'var(--color-border)',
+                          color: 'var(--color-text)',
+                        }}
+                      >
+                        <div className="text-sm font-semibold">
+                          {c.level} · {c.title}
+                        </div>
+                        <div className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                          {c.paragraphCount} đoạn · {c.wordCount} từ
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              </Sheet>
+            </>
           )}
 
           {/* Skimming Timer */}
@@ -823,7 +936,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
 
           <Pill tone="correct">+{session.totalXp} XP</Pill>
         </div>
-      </header>
+      </div>
 
       {/* Main 2-column Newsroom Layout: Left Bản thảo | Right Kho tít */}
       <div className="min-[900px]:grid min-[900px]:grid-cols-12 min-[900px]:gap-5 items-start">
@@ -858,7 +971,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                 onClick={() => setClickSelectsSentence((v) => !v)}
                 aria-pressed={clickSelectsSentence}
                 data-testid="r2-toggle-sentence-select"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
+                className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
                 style={{
                   backgroundColor: clickSelectsSentence
                     ? 'color-mix(in srgb, var(--color-info) 16%, var(--color-surface))'
@@ -926,7 +1039,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                             ? 'var(--color-reading)'
                             : 'var(--color-surface-2)',
                           borderColor: isActive ? 'var(--color-reading)' : 'var(--color-border)',
-                          color: isActive ? '#0B0F1A' : 'var(--color-text-dim)',
+                          color: isActive ? 'var(--color-bg)' : 'var(--color-text-dim)',
                         }}
                       >
                         {para.label}
@@ -1060,7 +1173,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                 </h2>
               </div>
               <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-                Phím <KeyHint keyName="1–9" /> chọn nhanh
+                Phím 1–9 chọn nhanh
               </span>
             </div>
 
@@ -1135,7 +1248,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
 
                   {!activeResult.headingCorrect && !session.reserved && (
                     <div
-                      className="text-[11px] flex items-center gap-1.5 pt-1"
+                      className="text-xs flex items-center gap-1.5 pt-1"
                       style={{ color: 'var(--color-text-dim)' }}
                     >
                       <Sparkles className="w-3.5 h-3.5" style={{ color: 'var(--color-vocab)' }} />
@@ -1190,12 +1303,12 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
             {session.config.mainIdeaStep !== 'off' && (
               <div className="inline-flex items-center gap-1.5">
                 <span
-                  className="inline-flex items-center justify-center w-5 h-5 rounded-full text-[11px] font-bold"
+                  className="inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold"
                   style={{
                     backgroundColor: activeUserSpan
                       ? 'var(--color-correct)'
                       : 'var(--color-surface-2)',
-                    color: activeUserSpan ? '#0B0F1A' : 'var(--color-text-dim)',
+                    color: activeUserSpan ? 'var(--color-bg)' : 'var(--color-text-dim)',
                     border: '1px solid var(--color-border)',
                   }}
                 >
@@ -1212,12 +1325,12 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
 
             <div className="inline-flex items-center gap-1.5">
               <span
-                className="inline-flex items-center justify-center w-5 h-5 rounded-full text-[11px] font-bold"
+                className="inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold"
                 style={{
                   backgroundColor: activeChosenKey
                     ? 'var(--color-reading)'
                     : 'var(--color-surface-2)',
-                  color: activeChosenKey ? '#0B0F1A' : 'var(--color-text-dim)',
+                  color: activeChosenKey ? 'var(--color-bg)' : 'var(--color-text-dim)',
                   border: '1px solid var(--color-border)',
                 }}
               >
@@ -1237,7 +1350,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
             {/* Narrow screen button to open Kho tít Bottom Sheet */}
             <Button
               variant="secondary"
-              size="sm"
+              size="md"
               className="min-[900px]:hidden"
               leftIcon={<ListChecks className="w-4 h-4" />}
               onClick={() => setMobileBankOpen(true)}
@@ -1251,32 +1364,29 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                 <Button
                   variant="primary"
                   skill="reading"
-                  hotkey="Enter"
                   rightIcon={<ArrowRight className="w-4 h-4" />}
                   onClick={handleAdvanceNext}
                   data-testid="r2-next-paragraph-btn"
                 >
                   {editableTasks.every((t) => session.lockedParagraphs[t.paragraphLabel])
-                    ? 'Xem trang báo hoàn chỉnh'
-                    : 'Đoạn tiếp theo'}
+                    ? 'Xem trang báo hoàn chỉnh (Enter)'
+                    : 'Đoạn tiếp theo (Enter)'}
                 </Button>
               ) : (
                 <Button
                   variant="primary"
                   skill="reading"
-                  hotkey="Enter"
                   disabled={!canSubmitCurrentParagraph(session)}
                   onClick={handleSubmitParagraph}
                   data-testid="r2-place-heading-btn"
                 >
-                  Đặt tít
+                  Đặt tít (Enter)
                 </Button>
               )
             ) : (
               <Button
                 variant="primary"
                 skill="reading"
-                hotkey="Enter"
                 disabled={!canSubmitPassage(session)}
                 onClick={handleSubmitAllPassage}
                 data-testid="r2-submit-passage-btn"

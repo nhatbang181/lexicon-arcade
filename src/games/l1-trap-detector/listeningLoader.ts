@@ -10,7 +10,7 @@ import {
   ListeningQTypeSchema,
   type ListeningEpisode,
 } from '../../core/content/schemas';
-import { L1_FIXTURE_EPISODES } from '../../test/fixtures/l1_fixtures';
+import { filterByAudioFile } from '../../core/audio/audioAvailability';
 
 /**
  * Contract agreed with r-data-listening (board #79) for `public/data/listening/index.json`.
@@ -85,56 +85,77 @@ function fixtureToCatalogItem(ep: ListeningEpisode): EpisodeCatalogItem {
   };
 }
 
+export interface LoadListeningCatalogOptions extends LoadContentOptions {
+  /**
+   * Kiểm file MP3 có tồn tại thật bằng HEAD (mặc định `true` — L1-01, SR-22).
+   * KHÔNG tin trường JSON vì audio được render riêng bởi T3-B.
+   */
+  checkAudioExists?: boolean;
+}
+
+function defaultAudioPathForEntry(entry: ListeningIndexEntry): string {
+  if (entry.audioPath) return entry.audioPath;
+  const slug = entry.id.replace(/^(?:lep|le):/, '');
+  return `audio/listening/${slug}.mp3`;
+}
+
 /**
- * Load available training listening episodes catalog from `public/data/listening/index.json`
- * (filtering out `reserved` exam episodes per [INV-X1]), falling back gracefully to
- * `L1_FIXTURE_EPISODES` when real data files are not yet present on disk.
+ * Load available listening episodes catalog from `public/data/listening/index.json`
+ * (filtering out `reserved` exam episodes per [INV-X1] AND filtering by real MP3 files on disk per L1-01).
+ * Never silently falls back to test fixtures in production (X6).
  */
 export async function loadListeningCatalog(
-  options: LoadContentOptions = {},
+  options: LoadListeningCatalogOptions = {},
 ): Promise<EpisodeCatalogItem[]> {
+  const { checkAudioExists = true, ...loadOpts } = options;
   const silentOpts: LoadContentOptions = {
     isDev: false,
     onError: () => undefined,
-    ...options,
+    ...loadOpts,
   };
 
-  try {
-    const entries = await loadContentArray(
-      'data/listening/index.json',
-      ListeningIndexEntrySchema,
-      silentOpts,
-    );
-    const trainingEntries = filterTrainingPool(entries);
-    if (trainingEntries.length > 0) {
-      return trainingEntries.map((entry) => ({
-        id: entry.id,
-        part: entry.part,
-        reserved: entry.reserved === true,
-        title: entry.title,
-        contextEn: entry.contextEn,
-        difficulty: entry.difficulty,
-        accents: entry.accents,
-        channel: entry.channel,
-        audioPath: entry.audioPath,
-        durationSec: entry.durationSec,
-        questionCount: entry.questionCount,
-        questionTypes: entry.questionTypes,
-        hasMap: entry.hasMap,
-        trapCount: entry.trapCount,
-        file: entry.file,
-      }));
-    }
-  } catch {
-    // Graceful fallback to fixtures when data/listening/index.json is unavailable
+  const entries = await loadContentArray(
+    'data/listening/index.json',
+    ListeningIndexEntrySchema,
+    silentOpts,
+  );
+  const trainingEntries = filterTrainingPool(entries);
+  const catalogItems: EpisodeCatalogItem[] = trainingEntries.map((entry) => ({
+    id: entry.id,
+    part: entry.part,
+    reserved: entry.reserved === true,
+    title: entry.title,
+    contextEn: entry.contextEn,
+    difficulty: entry.difficulty,
+    accents: entry.accents,
+    channel: entry.channel,
+    audioPath: defaultAudioPathForEntry(entry),
+    durationSec: entry.durationSec,
+    questionCount: entry.questionCount,
+    questionTypes: entry.questionTypes,
+    hasMap: entry.hasMap,
+    trapCount: entry.trapCount,
+    file: entry.file,
+  }));
+
+  if (!checkAudioExists) {
+    return catalogItems;
   }
 
-  return L1_FIXTURE_EPISODES.map(fixtureToCatalogItem);
+  return filterByAudioFile(catalogItems, (ep) => ep.audioPath, {
+    fetchImpl: loadOpts.fetchImpl,
+    baseUrl: loadOpts.baseUrl,
+  });
+}
+
+/** Kiểm episode đã có timestamp lời thoại thật (khác 0) hay chưa (L1-01). */
+export function hasRealScriptTimings(episode: ListeningEpisode): boolean {
+  return episode.script.some((line) => line.end > line.start);
 }
 
 /**
  * Load a single full `ListeningEpisode` from a catalog item.
- * Falls back to matching fixture or first fixture if fetch fails.
+ * Never falls back to an unrelated fixture episode (L1-11, X6).
  */
 export async function loadListeningEpisode(
   item: EpisodeCatalogItem,
@@ -143,17 +164,17 @@ export async function loadListeningEpisode(
   if (item.fixtureEpisode) {
     return item.fixtureEpisode;
   }
-  if (item.file) {
-    const silentOpts: LoadContentOptions = {
-      isDev: false,
-      onError: () => undefined,
-      ...options,
-    };
-    try {
-      return await loadContent(item.file, ListeningEpisodeSchema, silentOpts);
-    } catch {
-      // Fallback below
-    }
+  if (!item.file) {
+    throw new Error(`Không tìm thấy đường dẫn dữ liệu cho bài nghe "${item.title}".`);
   }
-  return L1_FIXTURE_EPISODES.find((e) => e.id === item.id) ?? L1_FIXTURE_EPISODES[0];
+  const silentOpts: LoadContentOptions = {
+    isDev: false,
+    onError: () => undefined,
+    ...options,
+  };
+  return loadContent(item.file, ListeningEpisodeSchema, silentOpts);
+}
+
+export function episodeToCatalogItem(ep: ListeningEpisode): EpisodeCatalogItem {
+  return fixtureToCatalogItem(ep);
 }

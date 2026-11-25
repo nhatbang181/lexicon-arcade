@@ -1,4 +1,5 @@
 import type { GameDefinition } from '../registry';
+import V3ParaphraseRadar from './V3ParaphraseRadar';
 
 export const V3_GAME_DEFINITION: GameDefinition = {
   id: 'v3',
@@ -11,8 +12,8 @@ export const V3_GAME_DEFINITION: GameDefinition = {
   estMinutes: [5, 10],
   requires: {},
   modes: ['training', 'sprint'],
-  load: () => import('./V3ParaphraseRadar'),
+  load: async () => ({ default: V3ParaphraseRadar }),
 };
 
 export * from './engine';
-export { default } from './V3ParaphraseRadar';
+export default V3ParaphraseRadar;

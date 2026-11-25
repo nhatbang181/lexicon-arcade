@@ -20,6 +20,10 @@ export function hasProgressSavers(): boolean {
   return savers.size > 0;
 }
 
+export function clearProgressSavers(): void {
+  savers.clear();
+}
+
 export interface RunProgressSaversResult {
   attempted: number;
   failed: number;

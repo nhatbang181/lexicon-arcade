@@ -28,6 +28,7 @@ import {
   buildPromptForCard,
   buildV1WinStatement,
   computeCharDiff,
+  computeRecent7DayRetention,
   computeV1TurnXp,
   continueFromCheckpoint,
   createV1Run,
@@ -695,6 +696,84 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     const diff = computeCharDiff('curiculum', 'curriculum');
     expect(diff.wrongIndices.length).toBeGreaterThan(0);
     expect(diff.firstWrongNotice).toBeDefined();
+  });
+
+  it('22. FX-2: computeRecent7DayRetention & createV1Run áp dụng van tải thẻ mới, vòng phục hồi và khối chủ đề', () => {
+    // 1. Tính tỷ lệ nhớ 7 ngày gần nhất từ attempts
+    const dayMs = 86_400_000;
+    const retention = computeRecent7DayRetention(
+      [
+        { gameId: 'v1', startedAt: FIXED_NOW.getTime() - 2 * dayMs, score: 7, total: 10, status: 'final' },
+        { gameId: 'v1', startedAt: FIXED_NOW.getTime() - 4 * dayMs, score: 8, total: 10, status: 'final' },
+        // Quá 7 ngày -> bỏ qua
+        { gameId: 'v1', startedAt: FIXED_NOW.getTime() - 10 * dayMs, score: 10, total: 10, status: 'final' },
+        // Game khác -> bỏ qua
+        { gameId: 'r1', startedAt: FIXED_NOW.getTime() - 1 * dayMs, score: 0, total: 10, status: 'final' },
+      ],
+      FIXED_NOW,
+    );
+    expect(retention).toBeCloseTo(0.75, 5);
+
+    // 2. Tạo 12 thẻ mới thuộc nhiều chủ đề khác nhau -> createV1Run gom theo khối chủ đề (L-5)
+    const vocabList = V1_FIXTURE_CONTENT.vocab.slice(0, 12);
+    const newCards = vocabList.map((v, i) =>
+      createNewCard(v.id, 'recog', { now: new Date(FIXED_NOW.getTime() + i * 1000), unlocked: true }),
+    );
+    const topicById = new Map<string, string>(vocabList.map((v) => [v.id, v.topics[0]]));
+
+    // Retention 75% (< 80%) -> van giảm 15 -> 10 thẻ mới
+    const throttledRun = createV1Run({
+      cards: newCards,
+      content: V1_FIXTURE_CONTENT,
+      newCardsLimit: 15,
+      retention7d: retention,
+      now: FIXED_NOW,
+    });
+    expect(throttledRun.effectiveNewCardsLimit).toBe(10);
+    expect(throttledRun.nodes.length).toBe(10);
+    expect(throttledRun.newCardsThrottleReason).toBe('low_retention');
+    expect(throttledRun.newCardsThrottleReasonVi).toContain('75%');
+
+    // Kiểm tra các thẻ mới đi theo khối chủ đề liên tục (mỗi chủ đề chỉ xuất hiện trong 1 khối)
+    const seenTopics = new Set<string>();
+    let prevTopic: string | undefined;
+    for (const node of throttledRun.nodes) {
+      const t = topicById.get(node.itemId);
+      if (t !== prevTopic) {
+        expect(seenTopics.has(t ?? '')).toBe(false);
+        if (t) seenTopics.add(t);
+        prevTopic = t;
+      }
+    }
+
+    // 3. Vòng phục hồi: vắng >= 3 ngày và > 50 thẻ đến hạn -> giới hạn <= 50 thẻ + nhãn thân thiện
+    const past = FIXED_NOW.getTime() - 5 * dayMs;
+    const baseVocab = V1_FIXTURE_CONTENT.vocab[0];
+    const syntheticVocab = Array.from({ length: 65 }, (_, idx) => ({
+      ...baseVocab,
+      id: `vocab:rec_${idx}` as const,
+      headword: `word${idx}`,
+      meaningVi: `nghĩa ${idx}`,
+    }));
+    const recoveryContent = { ...V1_FIXTURE_CONTENT, vocab: syntheticVocab };
+    const manyDueCards: SRSCard[] = syntheticVocab.map((v) => ({
+      ...createNewCard(v.id, 'recog', { now: new Date(past), unlocked: true }),
+      state: State.Review,
+      reps: 2,
+      stability: 3,
+      last_review: past - dayMs,
+      due: past,
+    }));
+
+    const recoveryRun = createV1Run({
+      cards: manyDueCards,
+      content: recoveryContent,
+      absenceDays: 4,
+      now: FIXED_NOW,
+    });
+    expect(recoveryRun.recoveryMode).toBe(true);
+    expect(recoveryRun.recoveryReasonVi).toBe('Vòng phục hồi · tối đa 50 thẻ');
+    expect(recoveryRun.nodes.length).toBe(50);
   });
 });
 

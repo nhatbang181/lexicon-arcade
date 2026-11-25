@@ -138,7 +138,7 @@ export const MapView: React.FC<MapViewProps> = ({
           </span>
           {badge && (
             <span
-              className="text-[11px] font-bold px-2 py-0.5 rounded-[var(--radius-sm)] border shrink-0 tabular-nums"
+              className="text-xs font-bold px-2 py-0.5 rounded-[var(--radius-sm)] border shrink-0 tabular-nums"
               style={{
                 fontFamily: 'var(--font-mono)',
                 backgroundColor: 'var(--color-surface)',
@@ -156,17 +156,17 @@ export const MapView: React.FC<MapViewProps> = ({
             type="button"
             onClick={() => setZoom((z) => Math.max(0.85, Number((z - 0.15).toFixed(2))))}
             aria-label="Thu nhỏ bản đồ"
-            className="inline-flex items-center justify-center w-8 h-8 rounded-[var(--radius-sm)] border cursor-pointer"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-[var(--radius-sm)] border cursor-pointer"
             style={{
               backgroundColor: 'var(--color-surface)',
               borderColor: 'var(--color-border)',
               color: 'var(--color-text-dim)',
             }}
           >
-            <ZoomOut className="w-3.5 h-3.5" />
+            <ZoomOut className="w-4 h-4" />
           </button>
           <span
-            className="text-[11px] font-semibold tabular-nums px-1"
+            className="text-xs font-semibold tabular-nums px-1"
             style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
           >
             {Math.round(zoom * 100)}%
@@ -175,28 +175,28 @@ export const MapView: React.FC<MapViewProps> = ({
             type="button"
             onClick={() => setZoom((z) => Math.min(1.6, Number((z + 0.15).toFixed(2))))}
             aria-label="Phóng to bản đồ"
-            className="inline-flex items-center justify-center w-8 h-8 rounded-[var(--radius-sm)] border cursor-pointer"
+            className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-[var(--radius-sm)] border cursor-pointer"
             style={{
               backgroundColor: 'var(--color-surface)',
               borderColor: 'var(--color-border)',
               color: 'var(--color-text-dim)',
             }}
           >
-            <ZoomIn className="w-3.5 h-3.5" />
+            <ZoomIn className="w-4 h-4" />
           </button>
           {zoom !== 1 && (
             <button
               type="button"
               onClick={() => setZoom(1)}
               aria-label="Đặt lại thu phóng"
-              className="inline-flex items-center justify-center w-8 h-8 rounded-[var(--radius-sm)] border cursor-pointer"
+              className="inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-[var(--radius-sm)] border cursor-pointer"
               style={{
                 backgroundColor: 'var(--color-surface)',
                 borderColor: 'var(--color-border)',
                 color: 'var(--color-text-dim)',
               }}
             >
-              <RotateCcw className="w-3.5 h-3.5" />
+              <RotateCcw className="w-4 h-4" />
             </button>
           )}
           </div>
@@ -416,7 +416,7 @@ export const MapView: React.FC<MapViewProps> = ({
                 stroke = 'var(--color-info)';
               }
 
-              const scale = isHovered || isSelected ? 1.16 : 1;
+              const scale = isHovered || isSelected ? 1.12 : 1;
 
               return (
                 <g

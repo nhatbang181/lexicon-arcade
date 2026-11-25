@@ -40,8 +40,21 @@ export interface ListeningScoreResult {
 
 export interface ScoreListeningOptions {
   wordLimit?: WordLimitInput;
-  /** Optional unit already printed next to blank (e.g. "£" or "km"); if user repeats it, still normalize gracefully. */
+  /** Unit already printed next to the blank (e.g. "£", "km", "%"). The user may omit or repeat it (L1-05). */
   promptUnit?: string;
+}
+
+export interface CountTokensOptions {
+  /**
+   * `words_only` limits ("NO MORE THAN TWO WORDS"): spoken number words such as "second", "first",
+   * "twenty-five" are ordinary WORDS; only real digits count as numbers (L1-06).
+   */
+  numberWordsAsWords?: boolean;
+}
+
+export interface CanonicalizeOptions {
+  /** Canonical unit words ("pounds", "dollars", "euros", "percent", "km"…) to drop after a number (L1-05). */
+  dropUnitWords?: readonly string[];
 }
 
 const ONES: Record<string, number> = {
@@ -278,6 +291,100 @@ function parseNumberWords(tokens: string[]): string | null {
   return String(total + current);
 }
 
+/**
+ * Join digit groups of long numbers: "07741 829 360" -> "07741829360", "0121-496-0123" -> "01214960123" (L1-02).
+ * IELTS treats a phone/reference number written in groups as ONE number. Requires ≥ 6 digits in total so that
+ * short sequences like "10 30" or "2024-25" stay untouched.
+ */
+export function collapseDigitGroups(input: string): string {
+  const join = (m: string, sep: RegExp) => {
+    const digits = m.replace(sep, '');
+    return digits.length >= 6 ? digits : m;
+  };
+  return input
+    .replace(/(?<![\d:]|\d\.)\d{2,}(?: \d{2,})+(?![\d:]|\.\d)/g, (m) => join(m, / /g))
+    .replace(/(?<![\d:]|\d\.)\d{2,}(?:-\d{2,}){2,}(?![\d:]|\.\d)/g, (m) => join(m, /-/g));
+}
+
+const HOUR_WORDS: Record<string, number> = {
+  one: 1,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5,
+  six: 6,
+  seven: 7,
+  eight: 8,
+  nine: 9,
+  ten: 10,
+  eleven: 11,
+  twelve: 12,
+};
+
+const MINUTE_TEENS: Record<string, number> = {
+  thirteen: 13,
+  fourteen: 14,
+  fifteen: 15,
+  sixteen: 16,
+  seventeen: 17,
+  eighteen: 18,
+  nineteen: 19,
+};
+
+const MINUTE_TENS: Record<string, number> = { twenty: 20, thirty: 30, forty: 40, fifty: 50 };
+
+function hourValue(tok: string | undefined): number | null {
+  if (!tok) return null;
+  return tok in HOUR_WORDS ? HOUR_WORDS[tok] : null;
+}
+
+function formatClock(hour: number, minute: number): string {
+  return `${hour}:${String(minute).padStart(2, '0')}`;
+}
+
+/**
+ * Parse a spoken clock time starting at `tokens[i]` (L1-04):
+ * "nine thirty" / "nine forty five" / "nine oh five" / "nine o'clock" / "half past nine" /
+ * "quarter past ten" / "quarter to ten" -> "9:30" / "9:45" / "9:05" / "9:00" / "9:30" / "10:15" / "9:45".
+ */
+export function parseSpokenTime(
+  tokens: readonly string[],
+  i: number,
+): { text: string; consumed: number } | null {
+  const t = tokens[i];
+  if (t === 'half' && tokens[i + 1] === 'past') {
+    const h = hourValue(tokens[i + 2]);
+    if (h !== null) return { text: formatClock(h, 30), consumed: 3 };
+  }
+  if (t === 'quarter' && (tokens[i + 1] === 'past' || tokens[i + 1] === 'to')) {
+    const h = hourValue(tokens[i + 2]);
+    if (h !== null) {
+      return tokens[i + 1] === 'past'
+        ? { text: formatClock(h, 15), consumed: 3 }
+        : { text: formatClock(h === 1 ? 12 : h - 1, 45), consumed: 3 };
+    }
+  }
+  const h = hourValue(t);
+  if (h === null) return null;
+  const next = tokens[i + 1];
+  if (next === "o'clock" || next === 'oclock') return { text: formatClock(h, 0), consumed: 2 };
+  if (next === 'oh' && tokens[i + 2] in ONES && ONES[tokens[i + 2]] >= 1 && ONES[tokens[i + 2]] <= 9) {
+    return { text: formatClock(h, ONES[tokens[i + 2]]), consumed: 3 };
+  }
+  if (next !== undefined && next in MINUTE_TEENS) return { text: formatClock(h, MINUTE_TEENS[next]), consumed: 2 };
+  if (next !== undefined && next in MINUTE_TENS) {
+    const unit = tokens[i + 2];
+    if (unit !== undefined && unit in ONES && ONES[unit] >= 1 && ONES[unit] <= 9) {
+      return { text: formatClock(h, MINUTE_TENS[next] + ONES[unit]), consumed: 3 };
+    }
+    return { text: formatClock(h, MINUTE_TENS[next]), consumed: 2 };
+  }
+  return null;
+}
+
+const UNIT_WORD_OF_SYMBOL: Record<string, string> = { '£': 'pounds', $: 'dollars', '€': 'euros', '%': 'percent' };
+const CURRENCY_WORDS = ['pounds', 'dollars', 'euros'] as const;
+
 const NUMERIC_TOKEN_REGEX =
   /^[£$€¥]?\d+(?:[.,:]\d+)*(?:st|nd|rd|th|%|km|m|cm|mm|kg|g|mg|l|ml|hrs?|mins?|secs?|am|pm|a\.m\.|p\.m\.)?$/i;
 
@@ -291,13 +398,19 @@ function isNumericToken(tok: string): boolean {
  * - Digits, currency numbers (£15), percentages (50%), times (9:30), ordinals (14th),
  *   and written number phrases ("fifteen", "two hundred") count as 1 number.
  */
-export function countIeltsTokens(input: string): { wordCount: number; numberCount: number } {
-  const cleaned = normalizeTypography(input)
-    .toLowerCase()
-    .replace(/[,;!?"]/g, ' ')
-    .replace(/\(([^)]*)\)/g, ' $1 ')
-    .replace(/\s+/g, ' ')
-    .trim();
+export function countIeltsTokens(
+  input: string,
+  options: CountTokensOptions = {},
+): { wordCount: number; numberCount: number } {
+  const cleaned = collapseDigitGroups(
+    normalizeTypography(input)
+      .toLowerCase()
+      .replace(/(\d),(?=\d{3}\b)/g, '$1')
+      .replace(/[,;!?"]/g, ' ')
+      .replace(/\(([^)]*)\)/g, ' $1 ')
+      .replace(/\s+/g, ' ')
+      .trim(),
+  );
 
   if (!cleaned) return { wordCount: 0, numberCount: 0 };
 
@@ -331,14 +444,25 @@ export function countIeltsTokens(input: string): { wordCount: number; numberCoun
       continue;
     }
 
+    // Spoken clock time ("nine thirty", "half past nine") is ONE number (L1-04)
+    if (!options.numberWordsAsWords) {
+      const spoken = parseSpokenTime(rawTokens, i);
+      if (spoken) {
+        numberCount++;
+        i += spoken.consumed;
+        continue;
+      }
+    }
+
     // Number word sequence ("fifteen", "twenty-five", "two hundred and fifty", "a hundred")
     if (
-      isNumberWordToken(tok) ||
+      !options.numberWordsAsWords &&
+      (isNumberWordToken(tok) ||
       ((tok === 'a' || tok === 'an') &&
         i + 1 < rawTokens.length &&
         (rawTokens[i + 1] === 'hundred' ||
           rawTokens[i + 1] === 'thousand' ||
-          rawTokens[i + 1] === 'million'))
+          rawTokens[i + 1] === 'million')))
     ) {
       let j = i;
       const seq: string[] = [];
@@ -426,7 +550,10 @@ export function expandOptionalParentheses(answer: string): string[] {
  * Normalize numeric expressions, currencies, units, times, and dates into a canonical form
  * for IELTS equivalence checks.
  */
-export function canonicalizeIeltsExpression(input: string): {
+export function canonicalizeIeltsExpression(
+  input: string,
+  options: CanonicalizeOptions = {},
+): {
   canonical: string;
   usedNumberConversion: boolean;
   usedUnitConversion: boolean;
@@ -455,7 +582,7 @@ export function canonicalizeIeltsExpression(input: string): {
     .replace(/[,;!?"]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-  s = rawNoThousands
+  s = collapseDigitGroups(rawNoThousands)
     .replace(/\ba\.m\.?/g, 'am')
     .replace(/\bp\.m\.?/g, 'pm');
 
@@ -490,6 +617,22 @@ export function canonicalizeIeltsExpression(input: string): {
     });
   if (s !== beforeAttach) usedUnitConversion = true;
 
+  // L1-05: the unit/currency is printed next to the blank, so "£12.50" and "12.50" are the same answer.
+  if (options.dropUnitWords && options.dropUnitWords.length > 0) {
+    const unitAlt = options.dropUnitWords.join('|');
+    const beforeDrop = s;
+    s = s.replace(new RegExp(String.raw`(\d+(?:\.\d+)?)\s*(?:${unitAlt})\b`, 'g'), '$1');
+    if (s !== beforeDrop) usedUnitConversion = true;
+  }
+
+  // L1-03: "9.30" is the time 9:30 even without am/pm (hour ≤ 24, minute < 60, not a money/unit amount).
+  const beforeTime = s;
+  s = s.replace(
+    /(?<![\d.:])(\d{1,2})\.(?!00)(\d{2})(?![\d.])(?!\s*(?:pounds|dollars|euros|percent|km|cm|mm|m|kg|minutes|hours)\b)/g,
+    (m: string, h: string, mi: string) => (Number(h) <= 24 && Number(mi) < 60 ? `${Number(h)}:${mi}` : m),
+  );
+  if (s !== beforeTime) usedNumberConversion = true;
+
   // Strip trailing .00 on numbers (15.00 -> 15)
   const beforeZero = s;
   s = s.replace(/\b(\d+)\.00\b/g, '$1');
@@ -505,6 +648,13 @@ export function canonicalizeIeltsExpression(input: string): {
   let i = 0;
   while (i < rawTokens.length) {
     const tok = rawTokens[i];
+    const spoken = parseSpokenTime(rawTokens, i);
+    if (spoken) {
+      outTokens.push(spoken.text);
+      usedNumberConversion = true;
+      i += spoken.consumed;
+      continue;
+    }
     if (
       isNumberWordToken(tok) ||
       ((tok === 'a' || tok === 'an') &&
@@ -552,7 +702,10 @@ export function canonicalizeIeltsExpression(input: string): {
     i++;
   }
 
-  let canonical = outTokens.join(' ');
+  let canonical = outTokens
+    .join(' ')
+    // "9:00" / "nine o'clock" == "9" (no am/pm): same hour either way
+    .replace(/(?<![\d:])(\d{1,2}):00(?!\d|:|\s*(?:am|pm)\b)/g, '$1');
 
   // Normalize dates: "14th may" / "14 may" / "14th of may" / "may 14th" / "may 14" -> "14 may"
   const dateDayFirst = canonical.match(/^(\d{1,2})(?:st|nd|rd|th)?\s+(?:of\s+)?([a-z]+)$/);
@@ -594,11 +747,21 @@ export function canonicalizeIeltsExpression(input: string): {
 }
 
 function basicNormalize(s: string): string {
-  return normalizeTypography(s)
-    .toLowerCase()
-    .replace(/[.,;!?"]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return collapseDigitGroups(
+    normalizeTypography(s)
+      .toLowerCase()
+      .replace(/[.,;!?"]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim(),
+  );
+}
+
+function unitWordsForPrompt(promptUnit: string | undefined): string[] {
+  const raw = (promptUnit ?? '').trim().toLowerCase();
+  if (!raw) return [];
+  if (raw in UNIT_WORD_OF_SYMBOL) return [UNIT_WORD_OF_SYMBOL[raw]];
+  const word = canonicalizeIeltsExpression(`1 ${raw}`).canonical.split(' ')[1];
+  return word ? [word] : [];
 }
 
 /**
@@ -622,7 +785,10 @@ export function scoreListeningAnswer(
   }
 
   const limit = normalizeWordLimit(options.wordLimit);
-  const { wordCount, numberCount } = countIeltsTokens(trimmed);
+  // L1-06: under "NO MORE THAN N WORDS" (no number allowed) "second floor" is two ordinary words.
+  const { wordCount, numberCount } = countIeltsTokens(trimmed, {
+    numberWordsAsWords: limit?.mode === 'words_only',
+  });
   const withinWordLimit = checkWordLimit(wordCount, numberCount, limit);
 
   if (!withinWordLimit) {
@@ -679,6 +845,25 @@ export function scoreListeningAnswer(
       return {
         correct: true,
         reason,
+        matchedAnswer: item.original,
+        wordCount,
+        numberCount,
+        withinWordLimit: true,
+      };
+    }
+  }
+
+  // 2b. Unit/currency printed next to the blank (L1-05): "£12.50" == "12.50" == "12.50 pounds"
+  const dropUnitWords = options.promptUnit
+    ? unitWordsForPrompt(options.promptUnit)
+    : [...CURRENCY_WORDS];
+  const userNoUnit = canonicalizeIeltsExpression(trimmed, { dropUnitWords });
+  for (const item of expanded) {
+    const accNoUnit = canonicalizeIeltsExpression(item.candidate, { dropUnitWords });
+    if (userNoUnit.canonical === accNoUnit.canonical) {
+      return {
+        correct: true,
+        reason: 'unit_equivalent',
         matchedAnswer: item.original,
         wordCount,
         numberCount,

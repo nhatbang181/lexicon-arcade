@@ -9,16 +9,26 @@ import {
   type SRSCard,
 } from '../../core/srs/fsrsAdapter';
 import type { AttemptItem, ReviewRecord } from '../../core/storage/db';
+import type { ProgressPayload } from '../../core/storage/repos/attemptRepo';
+import { seededRng, shuffleSeeded } from './rng';
 
 // ---------------------------------------------------------------------------
 // Constants & Difficulty Table (docs/games/V3-PARAPHRASE-RADAR.md §4 & §5)
 // ---------------------------------------------------------------------------
 
 export const V3_SESSION_LENGTH = 12;
+export const V3_RETRY_MAX_ITEMS = 5;
 export const V3_BASE_XP = 10;
 export const V3_TARGET_PASS_IOU = 0.5;
 export const V3_TARGET_PARTIAL_IOU = 0.2;
 export const V3_DECOY_HIT_IOU = 0.35;
+
+/** Hệ số combo chung (×1 / ×2 từ 5 đúng liền / ×3 từ 10 đúng liền, V3-7). */
+export function getV3ComboMultiplier(combo: number): 1 | 2 | 3 {
+  if (combo >= 10) return 3;
+  if (combo >= 5) return 2;
+  return 1;
+}
 
 export interface V3DifficultyConfig {
   levelBand: '1-2' | '3-4' | '5-6' | '7-8' | '9-10';
@@ -88,31 +98,65 @@ export function tokenizeContextWithSpans(context: string): ContextToken[] {
   return tokens;
 }
 
-function chunkNeutralSegment(
-  context: string,
-  segStart: number,
-  segEnd: number,
-): CharSpan[] {
-  const slice = context.slice(segStart, segEnd);
-  if (!slice.trim()) return [];
+const CHUNK_BOUNDARY_WORDS = new Set([
+  'of',
+  'in',
+  'on',
+  'to',
+  'for',
+  'with',
+  'by',
+  'from',
+  'at',
+  'into',
+  'that',
+  'which',
+  'who',
+  'where',
+  'when',
+  'while',
+  'although',
+  'because',
+  'since',
+  'however',
+  'and',
+  'or',
+  'but',
+  'than',
+  'as',
+]);
 
-  // Split by strong clause punctuation while preserving offsets
+function chunkTextIndependent(context: string): CharSpan[] {
+  if (!context.trim()) return [];
+
   const clauseRegex = /[^.,;:!?—()]+/g;
   const chunks: CharSpan[] = [];
   let clauseMatch: RegExpExecArray | null;
 
-  while ((clauseMatch = clauseRegex.exec(slice)) !== null) {
+  while ((clauseMatch = clauseRegex.exec(context)) !== null) {
     const rawClause = clauseMatch[0];
-    const clauseOffset = segStart + clauseMatch.index;
+    const clauseOffset = clauseMatch.index;
     const words = tokenizeContextWithSpans(rawClause);
     if (words.length === 0) continue;
 
-    // Group into natural 3-word chunks (avoiding 1-word orphan tail)
-    const chunkSize = 3;
     let i = 0;
     while (i < words.length) {
       const remaining = words.length - i;
-      const take = remaining <= 4 ? remaining : chunkSize;
+      let take: number;
+      if (remaining <= 3) {
+        take = remaining;
+      } else {
+        // Cắt ở ranh giới giới từ / liên từ sau từ thứ 2 (cụm 2 từ), hoặc cụm 3 từ (tránh dư 1 từ cuối)
+        const wordAt2 = words[i + 2].text.toLowerCase();
+        if (CHUNK_BOUNDARY_WORDS.has(wordAt2) && remaining - 2 >= 2) {
+          take = 2;
+        } else if (remaining === 4) {
+          take = 2;
+        } else {
+          take = 3;
+        }
+      }
+
       const first = words[i];
       const last = words[i + take - 1];
       const start = clauseOffset + first.start;
@@ -130,71 +174,15 @@ function chunkNeutralSegment(
 }
 
 /**
- * Partition `item.context` into non-overlapping clickable chunks so that clicking
- * any word expands cleanly to a natural phrase chunk (including target & decoys).
+ * Chia `item.context` thành các cụm từ bấm được ĐỘC LẬP với đáp án (V3-2).
+ * Không neo theo `item.target` hay `item.decoys` để tránh lộ biên đáp án.
  */
 export function buildContextChunks(item: ParaphraseItem): ContextChunk[] {
-  const anchors: Array<{
-    start: number;
-    end: number;
-    text: string;
-    kind: 'target' | 'decoy';
-    decoyIndex?: number;
-  }> = [
-    {
-      start: item.target.start,
-      end: item.target.end,
-      text: item.target.text,
-      kind: 'target' as const,
-    },
-    ...item.decoys.map((d, idx) => ({
-      start: d.start,
-      end: d.end,
-      text: d.text,
-      kind: 'decoy' as const,
-      decoyIndex: idx,
-    })),
-  ].sort((a, b) => a.start - b.start);
-
-  const chunks: ContextChunk[] = [];
-  let cursor = 0;
-
-  for (const anchor of anchors) {
-    if (anchor.start > cursor) {
-      const neutrals = chunkNeutralSegment(item.context, cursor, anchor.start);
-      for (const n of neutrals) {
-        chunks.push({
-          ...n,
-          index: chunks.length,
-          kind: 'neutral',
-        });
-      }
-    }
-    if (anchor.start >= cursor) {
-      chunks.push({
-        start: anchor.start,
-        end: anchor.end,
-        text: item.context.slice(anchor.start, anchor.end),
-        index: chunks.length,
-        kind: anchor.kind,
-        decoyIndex: anchor.decoyIndex,
-      });
-      cursor = Math.max(cursor, anchor.end);
-    }
-  }
-
-  if (cursor < item.context.length) {
-    const tail = chunkNeutralSegment(item.context, cursor, item.context.length);
-    for (const n of tail) {
-      chunks.push({
-        ...n,
-        index: chunks.length,
-        kind: 'neutral',
-      });
-    }
-  }
-
-  return chunks;
+  return chunkTextIndependent(item.context).map((span, index) => ({
+    ...span,
+    index,
+    kind: 'neutral',
+  }));
 }
 
 /**
@@ -242,16 +230,64 @@ export function snapSpanToWords(
 // Session Selection & Speed Multiplier (§4 & §5)
 // ---------------------------------------------------------------------------
 
+export interface SelectParaphraseOptions {
+  seed?: string;
+  existingCards?: readonly SRSCard[];
+  recentIds?: readonly string[];
+  nowMs?: number;
+}
+
 /**
- * Select `count` (default 12) items matching the L1:L2:L3:L4 ratio for `level`.
- * Gracefully fills remaining slots if a bucket has fewer items than requested.
+ * Chọn `count` (mặc định 12) item theo tỉ lệ L1:L2:L3:L4 của `level` (V3-3).
+ * Ưu tiên thẻ `para_match` đến hạn → item chưa gặp trong 24h → fallback, xáo có seed.
  */
 export function selectParaphraseSessionItems(
   allItems: readonly ParaphraseItem[],
   level: number,
   count = V3_SESSION_LENGTH,
+  options: SelectParaphraseOptions = {},
 ): ParaphraseItem[] {
   if (allItems.length === 0 || count <= 0) return [];
+
+  const nowMs = options.nowMs ?? Date.now();
+  const seed = options.seed ?? `v3:${level}:${Math.floor(nowMs / 86_400_000)}`;
+  const rng = seededRng(seed);
+  const recentSet = new Set(options.recentIds ?? []);
+
+  const dueSet = new Set<string>();
+  const seenCardSet = new Set<string>();
+  for (const card of options.existingCards ?? []) {
+    if (card.face !== 'para_match') continue;
+    seenCardSet.add(card.itemId);
+    const dueMs = Number(card.due);
+    if (!Number.isNaN(dueMs) && dueMs <= nowMs) {
+      dueSet.add(card.itemId);
+    }
+  }
+
+  const orderPool = (items: readonly ParaphraseItem[]): ParaphraseItem[] => {
+    const due: ParaphraseItem[] = [];
+    const freshUnseen: ParaphraseItem[] = [];
+    const notRecent: ParaphraseItem[] = [];
+    const recent: ParaphraseItem[] = [];
+    for (const it of items) {
+      if (recentSet.has(it.id)) {
+        recent.push(it);
+      } else if (dueSet.has(it.id)) {
+        due.push(it);
+      } else if (!seenCardSet.has(it.id)) {
+        freshUnseen.push(it);
+      } else {
+        notRecent.push(it);
+      }
+    }
+    return [
+      ...shuffleSeeded(due, rng),
+      ...shuffleSeeded(freshUnseen, rng),
+      ...shuffleSeeded(notRecent, rng),
+      ...shuffleSeeded(recent, rng),
+    ];
+  };
 
   const config = getV3DifficultyConfig(level);
   const totalWeight = config.mix.reduce((sum, w) => sum + w, 0);
@@ -285,7 +321,7 @@ export function selectParaphraseSessionItems(
   for (let lvIdx = 0; lvIdx < 4; lvIdx++) {
     const lv = (lvIdx + 1) as 1 | 2 | 3 | 4;
     const needed = quotas[lvIdx];
-    const pool = buckets[lv];
+    const pool = orderPool(buckets[lv]);
     for (let i = 0; i < needed && i < pool.length; i++) {
       picked.push(pool[i]);
       usedIds.add(pool[i].id);
@@ -294,16 +330,15 @@ export function selectParaphraseSessionItems(
 
   // Backfill from unused items if any bucket was short
   if (picked.length < count) {
-    for (const item of allItems) {
+    const remainingPool = orderPool(allItems.filter((item) => !usedIds.has(item.id)));
+    for (const item of remainingPool) {
       if (picked.length >= count) break;
-      if (!usedIds.has(item.id)) {
-        picked.push(item);
-        usedIds.add(item.id);
-      }
+      picked.push(item);
+      usedIds.add(item.id);
     }
   }
 
-  // Interleave levels deterministically so L4 traps aren't all clustered at the end
+  // Interleave levels so L4 traps aren't all clustered at the end
   const byLevel: ParaphraseItem[][] = [[], [], [], []];
   for (const item of picked) {
     byLevel[item.level - 1].push(item);
@@ -547,6 +582,7 @@ export function scoreParaphraseSelection(
 
 export interface V3MistakeRecord {
   id: string;
+  itemId: string;
   prompt: string;
   userAnswer: string;
   correctAnswer: string;
@@ -568,6 +604,9 @@ export type V3EngineEvent =
 
 export interface V3EngineState {
   mode: 'training' | 'sprint';
+  /** Phiên "Ôn lại câu sai": 0 XP, không FSRS, không ghi attempt (C3). */
+  isRetry: boolean;
+  seed: string;
   level: number;
   stage: 'playing' | 'recap';
   startedAt: number;
@@ -602,6 +641,8 @@ export interface CreateV3SessionOptions {
   level?: number;
   allItems: readonly ParaphraseItem[];
   existingCards?: readonly SRSCard[];
+  recentIds?: readonly string[];
+  seed?: string;
   previousAvgSec?: number | null;
   count?: number;
   nowMs?: number;
@@ -613,13 +654,20 @@ export function createV3Session(options: CreateV3SessionOptions): V3EngineState 
     level = 1,
     allItems,
     existingCards = [],
+    recentIds = [],
     previousAvgSec = null,
     count = V3_SESSION_LENGTH,
     nowMs = Date.now(),
   } = options;
+  const seed = options.seed ?? `v3:${level}:${nowMs}`;
 
   const config = getV3DifficultyConfig(level);
-  const items = selectParaphraseSessionItems(allItems, level, count);
+  const items = selectParaphraseSessionItems(allItems, level, count, {
+    seed,
+    existingCards,
+    recentIds,
+    nowMs,
+  });
   const srsCards: Record<string, SRSCard> = {};
   for (const c of existingCards) {
     srsCards[c.id] = { ...c };
@@ -627,6 +675,8 @@ export function createV3Session(options: CreateV3SessionOptions): V3EngineState 
 
   return {
     mode,
+    isRetry: false,
+    seed,
     level,
     stage: items.length > 0 ? 'playing' : 'recap',
     startedAt: nowMs,
@@ -650,6 +700,55 @@ export function createV3Session(options: CreateV3SessionOptions): V3EngineState 
     mistakes: [],
     attemptItems: [],
     srsCards,
+    reviews: [],
+  };
+}
+
+/**
+ * Phiên "Ôn lại câu sai" (C3): tối đa 5 item sai từ phiên vừa xong, XP 0, không FSRS, không lưu attempt.
+ */
+export function createV3RetrySession(
+  prev: V3EngineState,
+  nowMs = Date.now(),
+): V3EngineState | null {
+  const byId = new Map<string, ParaphraseItem>(prev.items.map((it) => [it.id, it]));
+  const retryItems: ParaphraseItem[] = [];
+  const seen = new Set<string>();
+  for (const m of prev.mistakes) {
+    if (retryItems.length >= V3_RETRY_MAX_ITEMS) break;
+    if (seen.has(m.itemId)) continue;
+    const item = byId.get(m.itemId);
+    if (item) {
+      retryItems.push(item);
+      seen.add(m.itemId);
+    }
+  }
+  if (retryItems.length === 0) return null;
+
+  return {
+    ...prev,
+    isRetry: true,
+    seed: `${prev.seed}|retry|${nowMs}`,
+    stage: 'playing',
+    startedAt: nowMs,
+    endedAt: undefined,
+    items: retryItems,
+    currentIndex: 0,
+    selectedSpan: null,
+    answered: false,
+    lastResult: null,
+    xp: 0,
+    combo: 0,
+    maxCombo: 0,
+    correctCount: 0,
+    partialCount: 0,
+    totalDecoyRounds: retryItems.filter((it) => it.decoys.length > 0).length,
+    decoysAvoided: 0,
+    keywordEchoHits: 0,
+    shouldLogKeywordEchoTag: false,
+    responseTimesMs: [],
+    mistakes: [],
+    attemptItems: [],
     reviews: [],
   };
 }
@@ -702,17 +801,18 @@ export function submitV3Round(
     state.config.timeLimitSec,
   );
 
-  // SRS update for para:*#para_match (§8)
+  const nextCombo = scoreRes.correct ? state.combo + 1 : 0;
+  const nextMaxCombo = Math.max(state.maxCombo, nextCombo);
+  const comboMult = getV3ComboMultiplier(nextCombo);
+  const finalXpEarned = state.isRetry ? 0 : Math.round(scoreRes.xpEarned * comboMult);
+  const finalScoreRes: V3ScoreResult =
+    finalXpEarned === scoreRes.xpEarned
+      ? scoreRes
+      : { ...scoreRes, xpEarned: finalXpEarned };
+
+  // SRS update for para:*#para_match (§8) — bỏ qua ở phiên retry (C3)
   const cardId = makeCardId(item.id, 'para_match');
   const existingCard = state.srsCards[cardId];
-  const baseCard =
-    existingCard ??
-    createNewCard(item.id, 'para_match', {
-      now: new Date(nowMs),
-      unlocked: true,
-      source: 'curriculum',
-    });
-
   let rating: Grade;
   if (scoreRes.outcome === 'partial') {
     rating = Rating.Hard;
@@ -727,29 +827,39 @@ export function submitV3Round(
     });
   }
 
-  const scheduled = scheduleCard(baseCard, rating, new Date(nowMs));
-  const nextCards: Record<string, SRSCard> = {
-    ...state.srsCards,
-    [cardId]: scheduled.card,
-  };
-  const nextReviews: Array<Omit<ReviewRecord, 'id'>> = [
-    ...state.reviews,
-    {
-      cardId,
-      rating,
-      correct: scoreRes.correct,
-      hintUsed: false,
-      durationMs: input.elapsedMs,
-      ts: nowMs,
-      gameId: 'v3',
-      prevState: scheduled.prevState,
-    },
-  ];
+  let nextCards = state.srsCards;
+  let nextReviews = state.reviews;
+  if (!state.isRetry) {
+    const baseCard =
+      existingCard ??
+      createNewCard(item.id, 'para_match', {
+        now: new Date(nowMs),
+        unlocked: true,
+        source: 'curriculum',
+      });
+    const scheduled = scheduleCard(baseCard, rating, new Date(nowMs));
+    nextCards = {
+      ...state.srsCards,
+      [cardId]: scheduled.card,
+    };
+    nextReviews = [
+      ...state.reviews,
+      {
+        cardId,
+        rating,
+        correct: scoreRes.correct,
+        hintUsed: false,
+        durationMs: input.elapsedMs,
+        ts: nowMs,
+        gameId: 'v3',
+        prevState: scheduled.prevState,
+      },
+    ];
+  }
 
-  const nextCombo = scoreRes.correct ? state.combo + 1 : 0;
-  const nextMaxCombo = Math.max(state.maxCombo, nextCombo);
   const isDecoyRound = item.decoys.length > 0;
-  const avoidedDecoy = isDecoyRound && scoreRes.outcome !== 'decoy_hit';
+  // V3-4: chỉ tính né decoy khi người học trả lời đúng (không tính timeout hay trả lời sai)
+  const avoidedDecoy = isDecoyRound && scoreRes.correct;
   const nextKeywordEchoHits =
     state.keywordEchoHits + (scoreRes.outcome === 'decoy_hit' ? 1 : 0);
 
@@ -762,6 +872,7 @@ export function submitV3Round(
       : activeSpan?.text ?? '(Không chọn)';
     nextMistakes.push({
       id: `${item.id}_${state.currentIndex}`,
+      itemId: item.id,
       prompt: `« ${item.questionPhrase} »`,
       userAnswer: userLabel,
       correctAnswer:
@@ -772,22 +883,24 @@ export function submitV3Round(
     });
   }
 
-  const nextAttemptItems: AttemptItem[] = [
-    ...state.attemptItems,
-    {
-      itemId: item.id,
-      correct: scoreRes.correct,
-      responseTimeMs: input.elapsedMs,
-      trapType: scoreRes.trapType,
-    },
-  ];
+  const nextAttemptItems: AttemptItem[] = state.isRetry
+    ? state.attemptItems
+    : [
+        ...state.attemptItems,
+        {
+          itemId: item.id,
+          correct: scoreRes.correct,
+          responseTimeMs: input.elapsedMs,
+          trapType: scoreRes.trapType,
+        },
+      ];
 
   const nextState: V3EngineState = {
     ...state,
     selectedSpan: activeSpan ?? null,
     answered: true,
-    lastResult: scoreRes,
-    xp: state.xp + scoreRes.xpEarned,
+    lastResult: finalScoreRes,
+    xp: state.xp + finalXpEarned,
     combo: nextCombo,
     maxCombo: nextMaxCombo,
     correctCount: state.correctCount + (scoreRes.correct ? 1 : 0),
@@ -810,7 +923,7 @@ export function submitV3Round(
         itemId: item.id,
         outcome: scoreRes.outcome,
         correct: scoreRes.correct,
-        xpEarned: scoreRes.xpEarned,
+        xpEarned: finalXpEarned,
         cardId,
         rating,
         trapType: scoreRes.trapType,
@@ -871,4 +984,36 @@ export function formatV3WinStatement(state: V3EngineState): string {
   const prevPart =
     state.previousAvgSec !== null ? ` (lần trước ${state.previousAvgSec.toFixed(1)}s)` : '';
   return `Bạn né được ${state.decoysAvoided}/${state.totalDecoyRounds} decoy keyword_echo. Thời gian trung bình ${avgSec.toFixed(1)}s${prevPart}.`;
+}
+
+/**
+ * Ảnh chụp tiến độ V3 để lưu từng lượt và khi bấm "Lưu và thoát" (G3/TU-02).
+ * Trả về `null` khi phiên chưa có lượt trả lời hoặc là phiên retry (0 XP, không FSRS).
+ */
+export function buildV3ProgressSnapshot(
+  state: V3EngineState,
+  now = Date.now(),
+): Omit<ProgressPayload, 'attemptId'> | null {
+  if (state.isRetry) return null;
+  if (state.attemptItems.length === 0 && state.reviews.length === 0) return null;
+
+  const touched = [...new Set(state.reviews.map((r) => r.cardId))];
+  const updatedCards = touched
+    .map((id) => state.srsCards[id])
+    .filter((c): c is SRSCard => Boolean(c));
+
+  return {
+    attempt: {
+      gameId: 'v3',
+      mode: state.mode,
+      startedAt: state.startedAt,
+      endedAt: state.endedAt ?? now,
+      score: state.correctCount,
+      total: Math.max(1, state.items.length),
+      xp: state.xp,
+      items: state.attemptItems,
+    },
+    updatedCards,
+    reviews: state.reviews,
+  };
 }

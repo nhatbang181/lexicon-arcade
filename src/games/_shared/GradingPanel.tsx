@@ -6,6 +6,7 @@ import {
   ChevronDown,
   ChevronUp,
   ClipboardCheck,
+  ClipboardPaste,
   Copy,
   Download,
   ExternalLink,
@@ -247,7 +248,7 @@ const CriterionRow: React.FC<CriterionRowProps> = ({
           <button
             type="button"
             onClick={() => setExpanded((v) => !v)}
-            className="inline-flex items-center gap-1.5 text-xs font-medium cursor-pointer"
+            className="inline-flex items-center gap-1.5 min-h-[44px] py-2 text-xs font-medium cursor-pointer"
             style={{ color: 'var(--color-info)' }}
           >
             {expanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
@@ -362,7 +363,9 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
   const [pastedText, setPastedText] = useState('');
   const [parseFailure, setParseFailure] = useState<ParseGradingFailure | null>(null);
   const [graded, setGraded] = useState<GradingPanelGradedPayload | null>(initialGraded);
+  const [pendingMismatch, setPendingMismatch] = useState<GradingPanelGradedPayload | null>(null);
   const [addedSrsKeys, setAddedSrsKeys] = useState<Record<string, boolean>>({});
+  const [lastSavedRaw, setLastSavedRaw] = useState<string | null>(initialGraded?.rawResponse.trim() ?? null);
 
   const pasteInputRef = useRef<HTMLTextAreaElement | null>(null);
   const previewInputRef = useRef<HTMLTextAreaElement | null>(null);
@@ -371,9 +374,11 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
   // Reset state if attemptId changes
   useEffect(() => {
     setGraded(initialGraded);
+    setPendingMismatch(null);
     setParseFailure(null);
     setPastedText('');
     setAddedSrsKeys({});
+    setLastSavedRaw(initialGraded?.rawResponse.trim() ?? null);
   }, [packetInput.attemptId, initialGraded]);
 
   // Auto-focus paste box when returning from Claude tab (docs/games/W1 §10)
@@ -393,7 +398,7 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
     return () => document.removeEventListener('visibilitychange', onVisibility);
   }, [pastedText, graded]);
 
-  const handleCopyPacket = async () => {
+  const handleCopyPacket = async (): Promise<boolean> => {
     const ok = await copyTextToClipboard(packet.markdown);
     if (ok) {
       setCopiedPacket(true);
@@ -402,9 +407,10 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
       setToastMsg({
         tone: 'correct',
         title: 'Đã copy gói chấm!',
-        description: 'Dán vào Claude rồi copy toàn bộ câu trả lời quay lại bước 2.',
+        description: 'Dán vào Claude rồi bấm nút Copy ở cuối câu trả lời quay lại bước 2.',
       });
       window.setTimeout(() => setCopiedPacket(false), 2000);
+      return true;
     } else {
       setShowPreview(true);
       setClipboardFallback(true);
@@ -417,6 +423,15 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
         previewInputRef.current?.focus();
         previewInputRef.current?.select();
       }, 50);
+      return false;
+    }
+  };
+
+  /** Gộp Copy gói + Mở Claude.ai trong 1 chạm (§4.5). */
+  const handleCopyAndOpenClaude = async () => {
+    const ok = await handleCopyPacket();
+    if (ok && typeof window !== 'undefined') {
+      window.open('https://claude.ai/new', '_blank', 'noopener,noreferrer');
     }
   };
 
@@ -429,14 +444,10 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
     });
   };
 
-  const handlePasteSample = () => {
-    if (!sampleResponse) return;
-    setPastedText(sampleResponse);
-    setParseFailure(null);
-  };
-
-  const handleAnalyze = () => {
-    const parsed = parseGradingResponse(pastedText, {
+  const analyzeResponse = (rawInput: string) => {
+    const trimmed = rawInput.trim();
+    if (!trimmed) return;
+    const parsed = parseGradingResponse(rawInput, {
       expectedKind: packetInput.kind,
       expectedAttemptId: packetInput.attemptId,
     });
@@ -444,6 +455,7 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
     if (!parsed.ok) {
       setParseFailure(parsed);
       setGraded(null);
+      setPendingMismatch(null);
       return;
     }
 
@@ -457,11 +469,76 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
     const payload: GradingPanelGradedPayload = {
       parsed,
       postcheck,
-      rawResponse: pastedText,
+      rawResponse: rawInput,
     };
     setParseFailure(null);
     setGraded(payload);
-    onGraded?.(payload);
+
+    // G-01: Chặn tự động lưu khi lệch attemptId, yêu cầu người học xác nhận
+    if (postcheck.attemptIdMismatch) {
+      setPendingMismatch(payload);
+      return;
+    }
+
+    setPendingMismatch(null);
+    // W1-05: Chấm idempotent — không gọi lại onGraded nếu cùng nội dung đã lưu
+    if (lastSavedRaw !== trimmed) {
+      setLastSavedRaw(trimmed);
+      onGraded?.(payload);
+    }
+  };
+
+  const handlePasteSample = () => {
+    if (!import.meta.env.DEV || !sampleResponse) return;
+    setPastedText(sampleResponse);
+    setParseFailure(null);
+    analyzeResponse(sampleResponse);
+  };
+
+  const handleAnalyze = () => {
+    analyzeResponse(pastedText);
+  };
+
+  const handlePasteFromClipboard = async () => {
+    if (typeof navigator === 'undefined' || !navigator.clipboard?.readText) {
+      pasteInputRef.current?.focus();
+      setToastMsg({
+        tone: 'partial',
+        title: 'Trình duyệt chưa hỗ trợ đọc clipboard',
+        description: 'Hãy nhấn Ctrl+V (hoặc giữ để dán) vào ô bên dưới.',
+      });
+      return;
+    }
+    try {
+      const clip = await navigator.clipboard.readText();
+      if (!clip.trim()) {
+        setToastMsg({
+          tone: 'partial',
+          title: 'Clipboard đang trống',
+          description: 'Hãy bấm nút Copy ở cuối câu trả lời của Claude trước.',
+        });
+        return;
+      }
+      setPastedText(clip);
+      analyzeResponse(clip);
+    } catch {
+      pasteInputRef.current?.focus();
+      setToastMsg({
+        tone: 'partial',
+        title: 'Trình duyệt chặn đọc clipboard',
+        description: 'Hãy nhấn Ctrl+V trực tiếp vào ô dán — app sẽ tự phân tích ngay.',
+      });
+    }
+  };
+
+  const handleConfirmMismatch = () => {
+    if (!pendingMismatch) return;
+    const trimmed = pendingMismatch.rawResponse.trim();
+    setPendingMismatch(null);
+    if (lastSavedRaw !== trimmed) {
+      setLastSavedRaw(trimmed);
+      onGraded?.(pendingMismatch);
+    }
   };
 
   const handleCopyRepairPrompt = async () => {
@@ -558,10 +635,19 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
             variant="primary"
             skill={accentSkill}
             leftIcon={copiedPacket ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-            onClick={handleCopyPacket}
+            onClick={() => void handleCopyAndOpenClaude()}
+            data-testid="grading-copy-open-btn"
+          >
+            {copiedPacket ? '✓ Đã copy & mở Claude' : 'Copy gói & Mở Claude'}
+          </Button>
+
+          <Button
+            variant="secondary"
+            leftIcon={copiedPacket ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+            onClick={() => void handleCopyPacket()}
             data-testid="grading-copy-packet-btn"
           >
-            {copiedPacket ? '✓ Đã copy gói chấm' : 'Copy gói chấm'}
+            Copy gói chấm
           </Button>
 
           <Button
@@ -629,33 +715,52 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-2">
           <div>
             <h3 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
-              Bước 2 · Dán toàn bộ câu trả lời của Claude
+              Bước 2 · Dán câu trả lời của Claude
             </h3>
             <p className="text-xs mt-1" style={{ color: 'var(--color-text-dim)' }}>
-              Dán nguyên văn cả phần nhận xét tiếng Việt lẫn khối <code>```json</code> cuối cùng —
-              app sẽ tự tách, kiểm schema và hậu kiểm trích dẫn.
+              Bấm nút <strong>Copy</strong> ở cuối câu trả lời của Claude rồi dán vào đây — app tự
+              tách khối JSON, kiểm schema và phân tích ngay.
             </p>
           </div>
 
-          {sampleResponse && (
+          <div className="flex flex-wrap items-center gap-2">
             <Button
               variant="secondary"
               size="sm"
-              leftIcon={<Wand2 className="w-4 h-4" />}
-              onClick={handlePasteSample}
-              data-testid="grading-paste-sample-btn"
+              leftIcon={<ClipboardPaste className="w-4 h-4" />}
+              onClick={() => void handlePasteFromClipboard()}
+              data-testid="grading-paste-clipboard-btn"
             >
-              Dán kết quả mẫu
+              Dán từ clipboard
             </Button>
-          )}
+            {import.meta.env.DEV && sampleResponse && (
+              <Button
+                variant="secondary"
+                size="sm"
+                leftIcon={<Wand2 className="w-4 h-4" />}
+                onClick={handlePasteSample}
+                data-testid="grading-paste-sample-btn"
+              >
+                Dán kết quả mẫu (DEV)
+              </Button>
+            )}
+          </div>
         </div>
 
         <textarea
           ref={pasteInputRef}
           value={pastedText}
           onChange={(e) => setPastedText(e.target.value)}
+          onPaste={(e) => {
+            const pasted = e.clipboardData?.getData('text') ?? '';
+            if (pasted.length > 200 && pasted.includes('{')) {
+              e.preventDefault();
+              setPastedText(pasted);
+              analyzeResponse(pasted);
+            }
+          }}
           rows={7}
-          placeholder="Dán toàn bộ câu trả lời của Claude vào đây (bao gồm cả khối ```json ... ``` ở cuối)..."
+          placeholder="Dán toàn bộ câu trả lời của Claude vào đây (app tự phân tích ngay khi dán)..."
           aria-label="Ô dán câu trả lời từ Claude"
           data-testid="grading-paste-input"
           className="w-full rounded-[var(--radius-md)] border p-3.5 text-sm leading-relaxed font-mono resize-y"
@@ -668,14 +773,16 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
 
         <div className="flex flex-wrap items-center gap-2.5">
           <Button
-            variant="primary"
+            variant="secondary"
             skill={accentSkill}
             leftIcon={<ClipboardCheck className="w-4 h-4" />}
             onClick={handleAnalyze}
-            disabled={!pastedText.trim()}
+            disabled={!pastedText.trim() || (Boolean(graded) && lastSavedRaw === pastedText.trim() && !pendingMismatch)}
             data-testid="grading-parse-btn"
           >
-            Phân tích & Lưu kết quả
+            {graded && lastSavedRaw === pastedText.trim() && !pendingMismatch
+              ? '✓ Đã phân tích & lưu'
+              : 'Phân tích & Lưu kết quả'}
           </Button>
 
           {pastedText.trim() && (
@@ -686,6 +793,7 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
               onClick={() => {
                 setPastedText('');
                 setParseFailure(null);
+                setPendingMismatch(null);
               }}
             >
               Xoá ô dán
@@ -793,9 +901,17 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
                       Đã phân tích & hậu kiểm
                     </Pill>
                     {!isSprintResult(graded.postcheck.cleanedResult) && (
-                      <Pill tone="neutral">
-                        {confidenceLabelVi(graded.postcheck.cleanedResult.confidence)}
-                      </Pill>
+                      <>
+                        <Pill tone="neutral">
+                          {confidenceLabelVi(graded.postcheck.cleanedResult.confidence)}
+                        </Pill>
+                        <Pill
+                          tone={graded.postcheck.specificFeedbackCount >= 3 ? 'info' : 'partial'}
+                          data-testid="grading-specific-count"
+                        >
+                          {graded.postcheck.specificFeedbackCount} nhận xét cụ thể
+                        </Pill>
+                      </>
                     )}
                     <Pill tone="neutral">{graded.postcheck.appWordCount} từ (app đếm)</Pill>
                   </div>
@@ -812,8 +928,12 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
                       borderColor: 'var(--color-border)',
                     }}
                   >
-                    <p className="text-[11px] font-medium" style={{ color: 'var(--color-text-dim)' }}>
-                      Band ước tính
+                    <p
+                      className="text-xs font-medium"
+                      style={{ color: 'var(--color-text-dim)' }}
+                      data-testid="grading-band-estimate-label"
+                    >
+                      Band ước lượng (AI)
                     </p>
                     <p
                       className="font-mono text-2xl font-extrabold tabular-nums"
@@ -825,6 +945,31 @@ export const GradingPanel: React.FC<GradingPanelProps> = ({
                   </div>
                 )}
               </div>
+
+              {/* G-01: Blocking confirmation when attemptId mismatches */}
+              {pendingMismatch && (
+                <div
+                  className="rounded-[var(--radius-md)] border p-3.5 space-y-2.5"
+                  style={{
+                    backgroundColor: 'color-mix(in srgb, var(--color-wrong) 10%, var(--color-surface))',
+                    borderColor: 'var(--color-wrong)',
+                  }}
+                  data-testid="grading-mismatch-gate"
+                >
+                  <p className="text-xs font-semibold" style={{ color: 'var(--color-text)' }}>
+                    Kết quả chưa được lưu vì mã bài không khớp. Nếu bạn chắc chắn đây là bài đang mở,
+                    bấm xác nhận bên dưới:
+                  </p>
+                  <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={handleConfirmMismatch}
+                    data-testid="grading-confirm-mismatch-btn"
+                  >
+                    Xác nhận đúng bài này & Lưu
+                  </Button>
+                </div>
+              )}
 
               {/* Post-check warnings */}
               {graded.postcheck.warnings.length > 0 && (

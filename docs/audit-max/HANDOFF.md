@@ -71,3 +71,15 @@
 | 8 | `scripts/*.js`, `scripts/*.py` ở gốc `scripts/` | điều phối | X16 chuyển vào `scripts/legacy/` | ngoài danh sách file của T1-C |
 | 9 | `tsconfig.json` | chưa thuộc task nào | X18: bật `noUnusedLocals`, `noUnusedParameters` | không có trong danh sách T1-C |
 | 10 | GitHub repo variables | điều phối / Bang | Đặt biến `RELEASE_GATE=1` (Settings > Variables) **sau T3-B** để CI chạy `validate:data:release` trên master. Hiện: 2 835 lỗi | D3 |
+
+## Từ T2-B (review `REVIEW-T2-B-A.md`, 25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `src/core/scoring/listeningAnswer.ts` (dòng 408, 708) | T4-B (hoặc fixer nhỏ) | Đổi regex `.replace(/(\d),(\d{3}) /g, '$1$2')` (dấu cách thừa) thành `(\d),(?=\d{3}\b)` và `(?:am|pm)\b` ở dòng 708 + thêm unit test cho `"1,500"` / `"10,000"` đơn lẻ ở cuối chuỗi với `maxNumbers=1` | Lỗi NẶNG duy nhất do `rv-t2-b` phát hiện (`L1-02..05`): đáp án chỉ gồm 1 số có dấu phẩy hàng nghìn ở cuối chuỗi có thể bị đếm `numberCount=2` |
+
+## Từ T2-A (25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `src/games/_shared/vocabLoaders.ts` và `src/games/_shared/index.ts` | điều phối / T4-C | Bỏ import tĩnh `v2v3_fixtures` trong `vocabLoaders.ts` (hoặc bỏ `export * from './vocabLoaders'` khỏi `_shared/index.ts`) | V2/V3/R1/R2 không còn import `vocabLoaders.ts` và chunk 4 game này sạch `v2v3_fixtures` + `r1_fixtures`, nhưng `PlacementScreen`, `w1`, `w2` import từ `../_shared` nên Rollup vẫn kéo `v2v3_fixtures` (20.33 KB) vào `dist/assets/`. Ngoài danh sách file độc quyền T2-A |

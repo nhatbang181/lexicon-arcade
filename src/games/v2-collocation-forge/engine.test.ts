@@ -314,7 +314,7 @@ describe('V2 · Collocation Forge Engine', () => {
     expect(recapState.selfWrite?.matchedPhrases.length).toBeGreaterThanOrEqual(1);
   });
 
-  it('12. Sprint Mode (60s): awards +10 * combo XP, tracks personal best, and only updates existing col_gap cards', () => {
+  it('12. Sprint Mode (60s): awards +10 x bậc combo (x1/x2/x3), tracks personal best, and only updates existing col_gap cards', () => {
     const forges = buildHeadwordForges(V2_FIXTURE_COLLOCATIONS, V2_FIXTURE_VOCAB);
     const impactForge = forges.find((f) => f.headword === 'impact')!;
     const firstColId = impactForge.collocations[0].id;
@@ -325,7 +325,7 @@ describe('V2 · Collocation Forge Engine', () => {
       forge: impactForge,
       allCollocations: V2_FIXTURE_COLLOCATIONS,
       existingCards: [existingCard],
-      sprintPersonalBestXp: 25,
+      sprintPersonalBestXp: 15,
     });
 
     expect(state.stage).toBe('sprint');
@@ -337,12 +337,12 @@ describe('V2 · Collocation Forge Engine', () => {
     expect(state.xp).toBe(10);
     expect(state.srsCards[makeCardId(firstColId, 'col_gap')].reps).toBe(1);
 
-    // 2nd correct -> combo 2 -> +20 XP (total 30 XP > personal best 25 XP)
+    // 2nd correct -> combo 2 vẫn ×1 (bậc ×2 từ 5 đúng liền, V2-3) -> total 20 XP > personal best 15 XP
     const q1 = state.sprintQuestions[1];
     state = submitSprintAnswer(state, q1.gap.primary, 2000).state;
     expect(state.combo).toBe(2);
-    expect(state.xp).toBe(30);
-    expect(state.sprintPersonalBestXp).toBe(30);
+    expect(state.xp).toBe(20);
+    expect(state.sprintPersonalBestXp).toBe(20);
     // 2nd card was NOT in existingCards, so Sprint mode must not unlock a new col_gap card
     expect(state.srsCards[makeCardId(q1.collocation.id, 'col_gap')]).toBeUndefined();
 

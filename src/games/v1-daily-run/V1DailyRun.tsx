@@ -31,6 +31,7 @@ import {
   pickVariants,
   questionSlideVariants,
 } from '../../design/motion';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import { playSfx } from '../../core/audio/sfx';
 import { resolveAssetUrl } from '../../core/content/loaders';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
@@ -38,12 +39,14 @@ import { cardRepo } from '../../core/storage/repos/cardRepo';
 import { eventRepo } from '../../core/storage/repos/eventRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
 import type { SRSCard } from '../../core/srs/fsrsAdapter';
+import { computeAbsenceDays } from '../../core/srs/queue';
 import type { GameProps } from '../registry';
 import {
   advanceAfterFeedback,
   applyNodeHint,
   buildV1ProgressPayload,
   computeLastWeekAccuracy,
+  computeRecent7DayRetention,
   continueFromCheckpoint,
   createV1Run,
   finishAtCheckpoint,
@@ -78,6 +81,8 @@ interface RunContext {
   newCardsLimit: number;
   newCardsDoneToday: number;
   lastWeekAccuracy: number | null;
+  retention7d: number | null;
+  absenceDays: number;
 }
 
 const DAY_MS = 86_400_000;
@@ -161,20 +166,25 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       content: V1ContentBundle,
       effectiveLevel: number,
       newCardsLimit: number,
+      lastActiveDay: string | null = null,
     ) => {
       const now = new Date();
       const [extras, doneToday, recentAttempts] = await Promise.all([
-        loadV1Extras(cards, { now, dictations: content.dictations }),
+        loadV1Extras(cards, { now, dictations: content.dictations, vocab: content.vocab }),
         cardRepo.countNewCardsStartedSince(startOfLocalDay(now)).catch(() => 0),
         attemptRepo.getSince(now.getTime() - 2 * 7 * DAY_MS, 'v1').catch(() => []),
       ]);
       const bundle: V1ContentBundle = { ...content, extras };
       const lastWeekAccuracy = computeLastWeekAccuracy(recentAttempts, now);
+      const retention7d = computeRecent7DayRetention(recentAttempts, now);
+      const absenceDays = computeAbsenceDays(lastActiveDay, now);
       contextRef.current = {
         content: bundle,
         newCardsLimit,
         newCardsDoneToday: doneToday,
         lastWeekAccuracy,
+        retention7d,
+        absenceDays,
       };
       const run = createV1Run({
         cards,
@@ -185,6 +195,8 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         newCardsDoneToday: doneToday,
         now,
         lastWeekAccuracy,
+        retention7d,
+        absenceDays,
         startOnMap: true,
       });
       void logMissingItems(run.missingItems);
@@ -220,7 +232,13 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           setLoadState({ kind: 'empty', content });
           return;
         }
-        await startRun(existingCards, content, effectiveLevel, newCardsLimitRef.current);
+        await startRun(
+          existingCards,
+          content,
+          effectiveLevel,
+          newCardsLimitRef.current,
+          profile?.streak?.lastActiveDay ?? null,
+        );
         if (isCurrent()) setLoadState({ kind: 'ready' });
       } catch (err) {
         if (!isCurrent()) return;
@@ -294,17 +312,25 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   useEffect(() => {
     const flush = () => {
       const latest = latestRunRef.current;
-      if (latest && latest.phase !== 'recap' && !saverRef.current.isFinalized()) void persist(latest, false);
+      if (latest && latest.phase !== 'recap' && !saverRef.current.isFinalized()) {
+        return persist(latest, false);
+      }
+      return undefined;
     };
+    const unregisterSaver = registerProgressSaver(() => flush());
     const onVisibility = () => {
-      if (document.visibilityState === 'hidden') flush();
+      if (document.visibilityState === 'hidden') void flush();
     };
-    window.addEventListener('pagehide', flush);
+    const onPageHide = () => {
+      void flush();
+    };
+    window.addEventListener('pagehide', onPageHide);
     document.addEventListener('visibilitychange', onVisibility);
     return () => {
-      window.removeEventListener('pagehide', flush);
+      unregisterSaver();
+      window.removeEventListener('pagehide', onPageHide);
       document.removeEventListener('visibilitychange', onVisibility);
-      flush();
+      void flush();
     };
   }, [persist]);
 
@@ -550,6 +576,8 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         newCardsLimit: ctx?.newCardsLimit ?? newCardsLimitRef.current,
         newCardsDoneToday: ctx?.newCardsDoneToday ?? 0,
         lastWeekAccuracy: ctx?.lastWeekAccuracy ?? null,
+        retention7d: ctx?.retention7d ?? null,
+        absenceDays: ctx?.absenceDays ?? 0,
         startOnMap: runState.phase === 'map_intro',
         now: new Date(),
       });
@@ -719,6 +747,11 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         />
         <Card padding="lg" skillAccent="vocab" className="text-center space-y-4">
           <div className="space-y-1.5">
+            {runState.recoveryMode && runState.recoveryReasonVi && (
+              <div className="flex justify-center" data-testid="v1-recovery-badge">
+                <Pill tone="info">{runState.recoveryReasonVi}</Pill>
+              </div>
+            )}
             <h2 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
               Lượt chạy hôm nay: {runState.nodes.length} thẻ
             </h2>
@@ -726,6 +759,19 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
               {newCount > 0 ? `${newCount} thẻ mới · ` : ''}
               {runState.totalStages} chặng, cuối cùng là Boss 5 thẻ khó nhất.
             </p>
+            {runState.newCardsThrottleReasonVi && (
+              <p
+                data-testid="v1-new-card-valve-notice"
+                className="text-sm rounded-[var(--radius-sm)] border px-3 py-2 inline-block"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                  color: 'var(--color-text)',
+                }}
+              >
+                {runState.newCardsThrottleReasonVi}
+              </p>
+            )}
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Button
@@ -956,6 +1002,10 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
             {runState.isExtraPractice && (
               <Pill tone="info">Ôn thêm (không tính vào lịch ôn)</Pill>
+            )}
+
+            {runState.recoveryMode && runState.recoveryReasonVi && !isBossPhase && (
+              <Pill tone="info">{runState.recoveryReasonVi}</Pill>
             )}
 
             {/* Nút chuyển Chế độ tiêu chuẩn (20 thẻ/chặng) / Chế độ bận (10 thẻ) */}

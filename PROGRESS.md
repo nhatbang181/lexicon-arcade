@@ -1,6 +1,11 @@
 # PROGRESS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## Trạng thái hiện tại: M0 ✅ · M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ 100% -> ĐANG CHẠY M5 · SPEAKING (Đợt 1: r-speech-core ∥ r-data-speaking)
+## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0 ĐẠT) · **Đợt 2 ✅ (M-Đ2 ĐẠT: T2-A, T2-B, T2-C, FX-0, FX-2 đã merge `master`)** · Đang chạy Đợt 3: `r-t3-b` (dữ liệu) + mở `T3-A` (hệ thiết kế/asset/fx)
+- 2026-11-25 09:24 · **Audit-Max Đợt 2 · FX-0/FX-2 ✅ & T2-C ✅ merge `master` (ĐÓNG M-Đ2)**:
+  - `FX-0/FX-2` (`r-fx` Neon Medium + `rv-fx` Claude Sonnet 5.5 ĐẠT 0/0): `listen_spell` lọc MP3 thật (`SR-22`), van tải thẻ mới 15/ngày (giảm khi < 80%, dừng khi > 150), vòng phục hồi ≤ 50 thẻ sau ≥ 3 ngày vắng, từ mới theo khối chủ đề, `registerProgressSaver` V1, vá dứt điểm regex `listeningAnswer.ts` (381/381 đáp án pass).
+  - `T2-C` (`r-t2-c-2` Neon Medium + `rv-t2-c` Argon Medium ĐẠT + fixer `d8c28cf`): W1 autosave/khôi phục/Exam tự nộp/DEV-only mẫu (`TASK2_CLAUDE_RESPONSE` = 0 trong dist), PP-16 nhãn "ước lượng" + chỉ lần chấm đầu, giảm ma sát 3 thao tác ≤ 6, W2 lưu Claude sau Recap/seed/khoá tự chấm trước mẫu, Portfolio xác nhận xoá + `userItems` SRS, `a11y.spec.ts` `play-w1` 2/2 pass.
+- 2026-11-25 08:42 · **Audit-Max Đợt 2 · T2-A ✅ ĐẠT & merge `master`**: `r-t2-a` (Gemini 4 Neon Medium) + `rv-t2-a-2` (Gemini 4 Argon Medium) — V2/V3/R1/R2 hoàn thiện (`saveProgress` + `registerProgressSaver`, retry 0 XP, producer `err:l1col_*`/`tfng:*`/`head:*`, seeded selection + YNNG, Highlighter pointer+keyboard, R2 0 tràn ngang 360/375/390, thay `<select>` bằng Sheet), 4/4 E2E m1/m2 + R1→V1, 56 lượt audit-ui 7 khung 0 CHẶN (0 D3/D4/D5/D7/D10).
+- 2026-11-25 05:16 · **Audit-Max Đợt 2 · T2-B ✅ ĐẠT & merge `master`**: `r-t2-b` (Gemini 4 Neon High) + `rv-t2-b` (Gemini 4 Argon High) — L1/L2 lọc MP3 thật, chuẩn hoá đáp án Listening (381/381 đáp án 0 tự trượt), audio Safari iOS (TU-03), FX-1 chip `↵` 12px, producer `ltrap:*`/`dict:*` + `saveProgress`, 534/534 vitest, 3/3 E2E m3 + L1→V1, 0 CHẶN/0 NẶNG/0 NHẸ audit-ui trên 7 khung × 2 theme. Tạm dừng chờ reset quota Gemini (`09:38` giờ máy = `2026-11-24T23:08:42Z`).
 - 2026-11-20 16:52: Hoàn tất **M0 · Nền móng** (`4b799f5`, `c8d287d`, `e0f13c6`, `rv-m0` PASS 0 lỗi).
 - 2026-11-20 21:48: Hoàn tất **M1 · Từ vựng** (`6e5edcc`, `65a257b`, `7b587f5`, `aa75e72`, `4d18e22`, `de13f7e`, `3db3e29`).
 - 2026-11-20 22:43: Hoàn tất **M2 · Reading** (`c71aeab`, `6161539`, `1659c73`, `1a506fb`).

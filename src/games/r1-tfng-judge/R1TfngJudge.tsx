@@ -39,6 +39,7 @@ import {
   Pill,
   QuestionNav,
   RecapScreen,
+  Sheet,
   Skeleton,
   formatSeconds,
   type QuestionNavItem,
@@ -46,14 +47,19 @@ import {
   type TextSpan,
 } from '../../design/components';
 import { feedbackSlideVariants, reducedRouteVariants } from '../../design/motion';
-import { ExamFrame, PassageView, type PassageMobileTab } from '../_shared';
-import { getGameKv, setGameKv } from '../_shared/vocabLoaders';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
+import { ExamFrame } from '../_shared/ExamFrame';
+import { PassageView, type PassageMobileTab } from '../_shared/PassageView';
 import type { GameProps } from '../registry';
+import { createProgressSaver } from './progressSaver';
 import {
   READING_TRAP_LABELS_VI,
   buildJudgeWinStatement,
+  buildR1JudgeProgressSnapshot,
   canSubmitJudgeVerdict,
   createEmptyConfusionMatrix,
+  createJudgeRetrySession,
   createJudgeSession,
   createParaphraseSrsCard,
   createPassageSession,
@@ -64,6 +70,7 @@ import {
   nextJudgeQuestion,
   selectJudgeEvidence,
   selectPassageQuestion,
+  selectR1Passage,
   setPassageAnswer,
   setPassageEvidence,
   submitJudgeVerdict,
@@ -79,14 +86,18 @@ import {
   type VerdictSlot,
 } from './engine';
 import {
+  getR1Kv,
   loadReadingCatalog,
   loadReadingPassage,
+  setR1Kv,
   type PassageCatalogItem,
 } from './readingLoader';
 
 type R1ActiveMode = 'judge' | 'passage_training' | 'passage_exam';
 
 const CONFUSION_KV_KEY = 'r1_confusion_history_v1';
+const R1_RECENT_PASSAGES_KV_KEY = 'r1_recent_passages_v1';
+const R1_RECENT_TTL_MS = 14 * 86_400_000;
 const CIRCLED_STEPS = ['①', '②', '③', '④', '⑤'] as const;
 const VERDICT_SLOTS: readonly VerdictSlot[] = ['TRUE', 'FALSE', 'NOT GIVEN'];
 const SLOT_SHORT_LABELS: Record<VerdictSlot, string> = {
@@ -94,6 +105,11 @@ const SLOT_SHORT_LABELS: Record<VerdictSlot, string> = {
   FALSE: 'F / N',
   'NOT GIVEN': 'NG',
 };
+
+interface RecentPassageEntry {
+  id: string;
+  ts: number;
+}
 
 interface ConfusionHistoryEntry {
   ts: number;
@@ -446,14 +462,46 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
   );
   const [mobileTab, setMobileTab] = useState<PassageMobileTab>('passage');
   const [clickSelectsSentence, setClickSelectsSentence] = useState(false);
+  const [passageSheetOpen, setPassageSheetOpen] = useState(false);
 
   // Judge mode state
   const [judgeState, setJudgeState] = useState<JudgeSessionState | null>(null);
+  const judgeStateRef = useRef<JudgeSessionState | null>(null);
+  judgeStateRef.current = judgeState;
   const [questionElapsedSec, setQuestionElapsedSec] = useState(0);
   const [gavelHitVerdict, setGavelHitVerdict] = useState<JudgeVerdict | null>(null);
   const [addedParaphraseIds, setAddedParaphraseIds] = useState<Record<string, boolean>>({});
   const [rolling30DayMatrix, setRolling30DayMatrix] = useState<ConfusionMatrix3x3 | null>(null);
   const judgeSavedRef = useRef(false);
+  const judgeSaverRef = useRef(
+    createProgressSaver({
+      saveProgress: (payload) => attemptRepo.saveProgress(payload),
+      finalize: (attemptId, payload) => attemptRepo.finalize(attemptId, payload),
+    }),
+  );
+
+  const persistJudgeSnapshot = useCallback(
+    (target: JudgeSessionState | null, final: boolean) => {
+      if (!target) return Promise.resolve();
+      const snap = buildR1JudgeProgressSnapshot(target, Date.now());
+      if (!snap) return judgeSaverRef.current.persist(null, final);
+      const before =
+        snap.items.length > 0
+          ? async () => {
+              for (const item of snap.items) {
+                await userItemRepo.upsertWithCard(item, 'tfng_retry', { cardSource: 'user' });
+              }
+            }
+          : undefined;
+      return judgeSaverRef.current.persist(snap.progress, final, before);
+    },
+    [],
+  );
+
+  // Đăng ký lưu tiến độ cho nút "Lưu và thoát" của PlayScreen (TU-02)
+  useEffect(() => {
+    return registerProgressSaver(() => persistJudgeSnapshot(judgeStateRef.current, false));
+  }, [persistJudgeSnapshot]);
 
   // Passage mode (training / exam) state
   const [passageState, setPassageState] = useState<PassageSessionState | null>(null);
@@ -462,15 +510,24 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const [reviewFocusQid, setReviewFocusQid] = useState<string | null>(null);
   const passageSavedRef = useRef(false);
 
-  // Load passage catalog once
+  // Load passage catalog once & chọn bài theo level + tránh lặp 14 ngày (R1-1, PP-05)
   useEffect(() => {
     let active = true;
     void (async () => {
-      const items = await loadReadingCatalog();
+      const now = Date.now();
+      const [items, recentRaw] = await Promise.all([
+        loadReadingCatalog(),
+        getR1Kv<RecentPassageEntry[]>(R1_RECENT_PASSAGES_KV_KEY, []),
+      ]);
       if (!active) return;
       setCatalog(items);
-      const preferred =
-        items.find((i) => i.hasJudgeQuestions) ?? items[0] ?? null;
+      const recentIds = (Array.isArray(recentRaw) ? recentRaw : [])
+        .filter((e) => now - e.ts < R1_RECENT_TTL_MS)
+        .map((e) => e.id);
+      const preferred = selectR1Passage(items, level, {
+        recentIds,
+        seed: `r1:${level}:${now}:${Math.random().toString(36).slice(2, 8)}`,
+      });
       if (preferred) {
         setSelectedCatalogId(preferred.id);
       } else {
@@ -480,7 +537,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     return () => {
       active = false;
     };
-  }, []);
+  }, [level]);
 
   // Load selected passage & initialize sessions
   useEffect(() => {
@@ -491,14 +548,51 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     let active = true;
     setLoading(true);
     void (async () => {
-      const loaded = await loadReadingPassage(item);
+      let loaded: ReadingPassage | null = null;
+      try {
+        loaded = await loadReadingPassage(item);
+      } catch {
+        // Khi ngoại tuyến, bài đọc mới chọn có thể chưa có trong cache -> thử lại các bài đã mở gần đây
+        const prevRecent = await getR1Kv<RecentPassageEntry[]>(R1_RECENT_PASSAGES_KV_KEY, []);
+        const fallbackIds = (Array.isArray(prevRecent) ? [...prevRecent] : [])
+          .sort((a, b) => b.ts - a.ts)
+          .map((e) => e.id)
+          .filter((id) => id !== item.id);
+        for (const fallbackId of fallbackIds) {
+          const candidate = catalog.find((c) => c.id === fallbackId);
+          if (!candidate) continue;
+          try {
+            loaded = await loadReadingPassage(candidate);
+            if (loaded) break;
+          } catch {
+            // thử bài tiếp theo trong cache
+          }
+        }
+      }
       if (!active) return;
+      if (!loaded) {
+        setLoading(false);
+        return;
+      }
       setPassage(loaded);
+      judgeSaverRef.current.reset();
       const jSession = createJudgeSession(loaded, { level });
+      judgeStateRef.current = jSession;
       setJudgeState(jSession);
       setQuestionElapsedSec(0);
       setAddedParaphraseIds({});
       judgeSavedRef.current = false;
+
+      // Ghi nhận passage vừa mở vào lịch sử 14 ngày để phiên sau không lặp (R1-1)
+      const now = Date.now();
+      const prevRecent = await getR1Kv<RecentPassageEntry[]>(R1_RECENT_PASSAGES_KV_KEY, []);
+      const nextRecent = [
+        ...(Array.isArray(prevRecent) ? prevRecent : []).filter(
+          (e) => e.id !== loaded.id && now - e.ts < R1_RECENT_TTL_MS,
+        ),
+        { id: loaded.id, ts: now },
+      ];
+      void setR1Kv(R1_RECENT_PASSAGES_KV_KEY, nextRecent);
 
       const pSession = createPassageSession(loaded, {
         mode: activeMode === 'passage_exam' ? 'exam' : 'training',
@@ -529,7 +623,10 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
       setMobileTab('passage');
       setReviewFocusQid(null);
       if (nextMode === 'judge') {
-        setJudgeState(createJudgeSession(passage, { level }));
+        judgeSaverRef.current.reset();
+        const fresh = createJudgeSession(passage, { level });
+        judgeStateRef.current = fresh;
+        setJudgeState(fresh);
         setQuestionElapsedSec(0);
         setAddedParaphraseIds({});
         judgeSavedRef.current = false;
@@ -547,6 +644,21 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     [level, passage, passageRequireEvidence],
   );
 
+  const startJudgeRetry = useCallback(() => {
+    const cur = judgeStateRef.current;
+    if (!cur) return;
+    const retry = createJudgeRetrySession(cur, Date.now());
+    if (!retry) {
+      switchMode('judge');
+      return;
+    }
+    judgeSaverRef.current.reset();
+    judgeSavedRef.current = false;
+    judgeStateRef.current = retry;
+    setJudgeState(retry);
+    setQuestionElapsedSec(0);
+  }, [switchMode]);
+
   // Elapsed question stopwatch for Judge mode
   useEffect(() => {
     if (activeMode !== 'judge' || !judgeState || judgeState.finished || judgeState.lastResult) {
@@ -558,63 +670,36 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     return () => window.clearInterval(id);
   }, [activeMode, judgeState]);
 
-  // Persist Judge session when finished
+  // Finalize Judge session when finished (idempotent qua progressSaver; bỏ qua nếu retry - C3)
   useEffect(() => {
     if (activeMode !== 'judge' || !judgeState?.finished || judgeSavedRef.current) return;
     if (judgeState.results.length === 0) return;
     judgeSavedRef.current = true;
 
     const nowMs = judgeState.finishedAt ?? Date.now();
-    const correctCount = judgeState.results.filter((r) => r.answerCorrect).length;
-    const retryCards = judgeState.results
-      .map((r) => r.retryCard)
-      .filter((c): c is NonNullable<typeof c> => c !== null);
 
     void (async () => {
       try {
-        await attemptRepo.saveSession({
-          attempt: {
-            gameId: 'r1',
-            mode: 'training',
-            startedAt: judgeState.startedAt,
-            endedAt: nowMs,
-            score: correctCount,
-            total: judgeState.results.length,
-            xp: judgeState.totalXp,
-            items: judgeState.results.map((r) => ({
-              itemId: r.qid,
-              correct: r.answerCorrect,
-              responseTimeMs: r.responseTimeMs,
-              trapType: r.trapType,
-            })),
-          },
-          updatedCards: retryCards,
-          bandEvidence: [
-            {
-              skill: 'R',
-              mode: 'training',
-              ts: nowMs,
-              correct: correctCount,
-              total: judgeState.results.length,
-              sourceGameId: 'r1',
-            },
-          ],
-        });
+        await persistJudgeSnapshot(judgeState, true);
 
-        const existingHistory = await getGameKv<ConfusionHistoryEntry[]>(CONFUSION_KV_KEY, []);
-        const cutoff = nowMs - 30 * 86_400_000;
-        const updatedHistory = [
-          ...existingHistory.filter((h) => h.ts >= cutoff),
-          { ts: nowMs, matrix: judgeState.confusionMatrix },
-        ];
-        await setGameKv(CONFUSION_KV_KEY, updatedHistory);
-        setRolling30DayMatrix(build30DayMatrix(updatedHistory, nowMs));
+        if (!judgeState.isRetry) {
+          const existingHistory = await getR1Kv<ConfusionHistoryEntry[]>(CONFUSION_KV_KEY, []);
+          const cutoff = nowMs - 30 * 86_400_000;
+          const updatedHistory = [
+            ...existingHistory.filter((h) => h.ts >= cutoff),
+            { ts: nowMs, matrix: judgeState.confusionMatrix },
+          ];
+          await setR1Kv(CONFUSION_KV_KEY, updatedHistory);
+          setRolling30DayMatrix(build30DayMatrix(updatedHistory, nowMs));
+        } else {
+          setRolling30DayMatrix(judgeState.confusionMatrix);
+        }
       } catch {
         setRolling30DayMatrix(judgeState.confusionMatrix);
       }
       playSfx('sessionDone');
     })();
-  }, [activeMode, judgeState]);
+  }, [activeMode, judgeState, persistJudgeSnapshot]);
 
   // Persist Passage session when submitted
   useEffect(() => {
@@ -692,7 +777,9 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
       window.setTimeout(() => setGavelHitVerdict(null), 160);
 
       const next = submitJudgeVerdict(judgeState, verdict, questionElapsedSec * 1000);
+      judgeStateRef.current = next;
       setJudgeState(next);
+      void persistJudgeSnapshot(next, false);
 
       if (next.lastResult) {
         if (next.lastResult.outcome === 'perfect') {
@@ -704,7 +791,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         }
       }
     },
-    [judgeState, questionElapsedSec],
+    [judgeState, questionElapsedSec, persistJudgeSnapshot],
   );
 
   const handleJudgeNext = useCallback(() => {
@@ -743,13 +830,13 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
       const key = e.key.toLowerCase();
       if (current.groupType === 'tfng') {
-        if (key === 't') handleJudgeVerdict('TRUE');
-        else if (key === 'f') handleJudgeVerdict('FALSE');
-        else if (key === 'n') handleJudgeVerdict('NOT GIVEN');
+        if (key === 't' || key === '1') handleJudgeVerdict('TRUE');
+        else if (key === 'f' || key === '2') handleJudgeVerdict('FALSE');
+        else if (key === 'n' || key === '3') handleJudgeVerdict('NOT GIVEN');
       } else {
-        if (key === 'y') handleJudgeVerdict('YES');
-        else if (key === 'n') handleJudgeVerdict('NO');
-        else if (key === 'g') handleJudgeVerdict('NOT GIVEN');
+        if (key === 'y' || key === '1') handleJudgeVerdict('YES');
+        else if (key === 'n' || key === '2') handleJudgeVerdict('NO');
+        else if (key === 'g' || key === '3') handleJudgeVerdict('NOT GIVEN');
       }
     };
 
@@ -1047,9 +1134,9 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
         borderColor: 'var(--color-border)',
       }}
     >
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex flex-wrap items-center gap-2 min-w-0 max-w-full">
         <div
-          className="inline-flex items-center p-1 rounded-[var(--radius-md)] border gap-1"
+          className="inline-flex flex-wrap items-center p-1 rounded-[var(--radius-md)] border gap-1 max-w-full"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -1063,7 +1150,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             aria-selected={activeMode === 'judge'}
             onClick={() => switchMode('judge')}
             data-testid="r1-mode-judge"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
             style={{
               backgroundColor:
                 activeMode === 'judge' ? 'var(--color-reading)' : 'transparent',
@@ -1080,7 +1167,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             aria-selected={activeMode === 'passage_training'}
             onClick={() => switchMode('passage_training')}
             data-testid="r1-mode-passage-training"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
             style={{
               backgroundColor:
                 activeMode === 'passage_training' ? 'var(--color-reading)' : 'transparent',
@@ -1097,7 +1184,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             aria-selected={false}
             onClick={() => switchMode('passage_exam')}
             data-testid="r1-mode-passage-exam"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
+            className="inline-flex items-center gap-1.5 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-xs font-semibold cursor-pointer transition-colors"
             style={{
               backgroundColor: 'transparent',
               color: 'var(--color-text-dim)',
@@ -1108,25 +1195,64 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           </button>
         </div>
 
-        {/* Passage selector */}
-        <select
-          aria-label="Chọn bài đọc"
-          value={selectedCatalogId}
-          onChange={(e) => setSelectedCatalogId(e.target.value)}
+        {/* Passage picker button + Sheet (thay <select> gốc để đạt D3 44px & D10) */}
+        <button
+          type="button"
+          onClick={() => setPassageSheetOpen(true)}
           data-testid="r1-passage-select"
-          className="min-h-[36px] px-3 py-1.5 rounded-[var(--radius-sm)] border text-xs font-medium max-w-[280px] sm:max-w-[360px]"
+          className="w-full sm:w-auto min-w-0 max-w-full sm:max-w-[340px] inline-flex items-center justify-between gap-2 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
             color: 'var(--color-text)',
           }}
         >
-          {catalog.map((c) => (
-            <option key={c.id} value={c.id}>
-              [{c.level}] {c.title} ({c.questionCount} câu)
-            </option>
-          ))}
-        </select>
+          <span className="sr-only">Chọn bài đọc: </span>
+          <span className="truncate min-w-0">
+            [{passage.level}] {passage.title}
+          </span>
+          <span className="shrink-0" style={{ color: 'var(--color-text-dim)' }}>
+            Đổi bài
+          </span>
+        </button>
+
+        <Sheet
+          open={passageSheetOpen}
+          onClose={() => setPassageSheetOpen(false)}
+          title="Chọn bài đọc R1"
+          subtitle="Chọn một bài đọc IELTS Academic phù hợp."
+        >
+          <div className="space-y-2">
+            {catalog.map((c) => {
+              const active = c.id === selectedCatalogId;
+              return (
+                <button
+                  key={c.id}
+                  type="button"
+                  onClick={() => {
+                    setSelectedCatalogId(c.id);
+                    setPassageSheetOpen(false);
+                  }}
+                  className="w-full text-left min-h-[44px] px-3.5 py-2.5 rounded-[var(--radius-md)] border cursor-pointer transition-colors"
+                  style={{
+                    backgroundColor: active
+                      ? 'color-mix(in srgb, var(--color-reading) 14%, var(--color-surface-2))'
+                      : 'var(--color-surface-2)',
+                    borderColor: active ? 'var(--color-reading)' : 'var(--color-border)',
+                    color: 'var(--color-text)',
+                  }}
+                >
+                  <div className="text-sm font-semibold">
+                    [{c.level}] {c.title}
+                  </div>
+                  <div className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                    {c.questionCount} câu · {c.wordCount} từ
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </Sheet>
       </div>
 
       {/* Live Judge HUD */}
@@ -1414,7 +1540,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             accuracyPercent={accuracyPercent}
             durationSec={durationSec}
             mistakes={mistakes}
-            onRetryMistakes={() => switchMode('judge')}
+            onRetryMistakes={startJudgeRetry}
             onGoToday={() =>
               onExit({
                 gameId: 'r1',
@@ -1548,7 +1674,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                         playSfx('tap');
                       }}
                       data-testid="r1-hint-para-btn"
-                      className="inline-flex items-center gap-1 text-xs font-medium px-2 py-1 rounded border cursor-pointer"
+                      className="inline-flex items-center gap-1.5 min-h-[44px] text-xs font-medium px-3 py-2 rounded border cursor-pointer"
                       style={{
                         backgroundColor: 'var(--color-surface-2)',
                         borderColor: 'var(--color-border)',
@@ -1620,7 +1746,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     }}
                     aria-pressed={judgeState.noDirectInfo}
                     data-testid="r1-no-direct-info-btn"
-                    className="w-full min-h-[42px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-semibold inline-flex items-center justify-center gap-2 cursor-pointer transition-colors"
+                    className="w-full min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-semibold inline-flex items-center justify-center gap-2 cursor-pointer transition-colors"
                     style={{
                       backgroundColor: judgeState.noDirectInfo
                         ? 'color-mix(in srgb, var(--color-partial) 18%, var(--color-surface))'
@@ -1644,7 +1770,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     ② Tuyên án
                   </span>
                   {!evidenceReady && !lastResult && (
-                    <span className="text-[11px]" style={{ color: 'var(--color-text-faint)' }}>
+                    <span className="text-xs" style={{ color: 'var(--color-text-faint)' }}>
                       Hoàn thành bước ① để mở khoá
                     </span>
                   )}
@@ -1784,7 +1910,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                       }}
                     >
                       <div
-                        className="text-[11px] font-sans font-bold not-italic mb-1"
+                        className="text-xs font-sans font-bold not-italic mb-1"
                         style={{ color: 'var(--color-partial)' }}
                       >
                         Vật chứng chuẩn · Đoạn {lastResult.goldEvidence[0].paragraph}
@@ -1875,7 +2001,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
                   {/* Retry card notice */}
                   {lastResult.retryCard && (
-                    <div className="text-[11px] flex items-center gap-1.5" style={{ color: 'var(--color-text-dim)' }}>
+                    <div className="text-xs flex items-center gap-1.5" style={{ color: 'var(--color-text-dim)' }}>
                       <RotateCcw className="w-3 h-3" />
                       <span>
                         Đã tạo thẻ ôn lại <code style={{ fontFamily: 'var(--font-mono)' }}>{lastResult.retryCard.itemId}</code> (tự nghỉ sau 3 lần ôn đúng).
@@ -1887,14 +2013,13 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
                     <Button
                       variant="primary"
                       skill="reading"
-                      hotkey="Enter"
                       rightIcon={<ArrowRight className="w-4 h-4" />}
                       onClick={handleJudgeNext}
                       data-testid="r1-next-question-btn"
                     >
                       {judgeState.currentIndex + 1 === judgeState.items.length
-                        ? 'Xem tổng kết'
-                        : 'Câu tiếp theo'}
+                        ? 'Xem tổng kết (Enter)'
+                        : 'Câu tiếp theo (Enter)'}
                     </Button>
                   </div>
                 </motion.div>

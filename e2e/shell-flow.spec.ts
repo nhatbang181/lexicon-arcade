@@ -65,7 +65,7 @@ test.describe('T1-B · Esc không thoát game khi chưa hỏi (F1)', () => {
   test('1. V3: chọn span rồi Esc chỉ bỏ chọn, vẫn ở màn chơi', async ({ page }) => {
     const errors = trackConsoleErrors(page);
     await gotoApp(page, '#/play/v3');
-    const firstWord = page.locator('.reading-prose span[role="button"]').first();
+    const firstWord = page.locator('.reading-prose span[role="option"]').first();
     await firstWord.click();
     const lock = page.getByRole('button', { name: /Khoá mục tiêu/ });
     await expect(lock).toBeEnabled();
@@ -105,7 +105,16 @@ test.describe('T1-B · Esc không thoát game khi chưa hỏi (F1)', () => {
     await expect(page.getByRole('dialog')).toBeHidden();
     expect(page.url()).toContain('#/play/v3');
 
-    // Chưa game nào đăng ký lưu giữa phiên => nhãn trung thực là "Thoát"
+    // V3 đã đăng ký saver thật (TU-02) => nhãn mặc định là "Lưu và thoát"
+    await page.keyboard.press('Escape');
+    await expect(page.getByTestId('play-exit-confirm')).toHaveText('Lưu và thoát');
+    await page.getByTestId('play-exit-continue').click();
+
+    // Khi game không đăng ký saver => nhãn trung thực là "Thoát"
+    await page.evaluate(async (m) => {
+      const { clearProgressSavers } = await import(/* @vite-ignore */ m);
+      clearProgressSavers();
+    }, MODULE_SAVER);
     await page.keyboard.press('Escape');
     await expect(page.getByTestId('play-exit-confirm')).toHaveText('Thoát');
     await page.getByTestId('play-exit-continue').click();
