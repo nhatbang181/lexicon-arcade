@@ -4,15 +4,19 @@ import {
   Award,
   CheckCircle2,
   Clock,
-  Flame,
-  History,
   Layers,
-  ShieldCheck,
   Snowflake,
   Star,
-  Trophy,
 } from 'lucide-react';
-import { Button, Card, EmptyState, Pill, Skeleton, Toast } from '../../design/components';
+import {
+  Button,
+  Card,
+  EmptyState,
+  Mascot,
+  Pill,
+  Skeleton,
+  Toast,
+} from '../../design/components';
 import { getCardMastery, type MasteryStage } from '../../core/srs/faces';
 import type { SRSCard } from '../../core/srs/fsrsAdapter';
 import {
@@ -62,84 +66,84 @@ interface BadgeTileDef {
 const BADGE_TILES: readonly BadgeTileDef[] = [
   {
     id: 'streak-7',
-    file: 'streak-7.svg',
+    file: 'streak-7.webp',
     titleVi: 'Nhịp 7 ngày',
     requirementVi: 'Chuỗi học 7 ngày liên tiếp',
     check: (c) => c.streakLongest >= 7 || c.unlockedIds.has('streak_7'),
   },
   {
     id: 'streak-30',
-    file: 'streak-30.svg',
+    file: 'streak-30.webp',
     titleVi: 'Thói quen 30 ngày',
     requirementVi: 'Chuỗi học 30 ngày liên tiếp',
     check: (c) => c.streakLongest >= 30 || c.unlockedIds.has('streak_30'),
   },
   {
     id: 'streak-100',
-    file: 'streak-100.svg',
+    file: 'streak-100.webp',
     titleVi: 'Kỷ luật 100 ngày',
     requirementVi: 'Chuỗi học 100 ngày liên tiếp',
     check: (c) => c.streakLongest >= 100,
   },
   {
     id: 'cards-100',
-    file: 'cards-100.svg',
+    file: 'cards-100.webp',
     titleVi: '100 thẻ vững',
-    requirementVi: '100 thẻ đạt Vững trở lên',
+    requirementVi: '100 thẻ đạt Khá vững trở lên',
     check: (c) => c.matureOrMastered >= 100 || c.unlockedIds.has('vocab_100_mature'),
   },
   {
     id: 'cards-500',
-    file: 'cards-500.svg',
+    file: 'cards-500.webp',
     titleVi: '500 thẻ vững',
-    requirementVi: '500 thẻ đạt Vững trở lên',
+    requirementVi: '500 thẻ đạt Khá vững trở lên',
     check: (c) => c.matureOrMastered >= 500,
   },
   {
     id: 'cards-1000',
-    file: 'cards-1000.svg',
+    file: 'cards-1000.webp',
     titleVi: '1.000 thẻ học thuật',
-    requirementVi: '1.000 thẻ đạt Vững trở lên',
+    requirementVi: '1.000 thẻ đạt Khá vững trở lên',
     check: (c) => c.matureOrMastered >= 1000,
   },
   {
     id: 'first-essay',
-    file: 'first-essay.svg',
+    file: 'first-essay.webp',
     titleVi: 'Bài luận đầu tiên',
     requirementVi: 'Hoàn thành 1 bài Writing W1',
     check: (c) => c.essaysCount >= 1 || c.unlockedIds.has('essay_reviser'),
   },
   {
     id: 'first-speaking',
-    file: 'first-speaking.svg',
+    file: 'first-speaking.webp',
     titleVi: 'Phiên nói đầu tiên',
     requirementVi: 'Hoàn thành 1 bản thu Speaking',
     check: (c) => c.recordingsCount >= 1,
   },
   {
     id: 'band-65',
-    file: 'band-65.svg',
+    file: 'band-65.webp',
     titleVi: 'Cột mốc 6.5',
     requirementVi: 'Overall ước lượng ≥ 6.5',
     check: (c) => c.overallBand !== null && c.overallBand >= 6.5,
   },
   {
     id: 'band-70',
-    file: 'band-70.svg',
+    file: 'band-70.webp',
     titleVi: 'Cột mốc 7.0',
     requirementVi: 'Overall ước lượng ≥ 7.0',
     check: (c) => (c.overallBand !== null && c.overallBand >= 7.0) || c.unlockedIds.has('band_7_0'),
   },
   {
     id: 'band-75',
-    file: 'band-75.svg',
+    file: 'band-75.webp',
     titleVi: 'Cột mốc 7.5',
     requirementVi: 'Overall ước lượng ≥ 7.5',
     check: (c) => c.overallBand !== null && c.overallBand >= 7.5,
   },
   {
     id: 'band-80',
-    file: 'band-80.svg',
+    file: 'band-80.webp',
     titleVi: 'Đích đến 8.0',
     requirementVi: 'Overall ước lượng ≥ 8.0 Academic',
     check: (c) => (c.overallBand !== null && c.overallBand >= 8.0) || c.unlockedIds.has('band_8_0'),
@@ -163,6 +167,13 @@ const STRAND_COLORS: Record<StrandId, string> = {
   output: 'var(--color-writing)',
   language: 'var(--color-vocab)',
   fluency: 'var(--color-reading)',
+};
+
+const STRAND_ICONS: Record<StrandId, string> = {
+  input: 'assets/icons/fluent/ui/compass.webp',
+  output: 'assets/icons/fluent/ui/lightbulb.webp',
+  language: 'assets/icons/fluent/ui/bookmark.webp',
+  fluency: 'assets/icons/fluent/ui/clock.webp',
 };
 
 interface StatsPayload {
@@ -313,31 +324,67 @@ export const StatsScreen: React.FC = () => {
         />
       )}
 
-      <div className="flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
-            Thống kê & Tiến độ
-          </h1>
-          <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
-            Theo dõi chuỗi ngày học, cấp độ XP, số từ vững sau 7 ngày, cân bằng 4 mạch và 12 huy hiệu.
-          </p>
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <Pill tone="info" icon={<Star className="w-3.5 h-3.5" />}>
-            Cấp {levelInfo.level}
-          </Pill>
-          <Pill tone="vocab" icon={<Award className="w-3.5 h-3.5" />}>
-            {unlockedBadgesCount} / {BADGE_TILES.length} huy hiệu
-          </Pill>
+      {/* Hero Thống kê (M1 ≥ 15% + M3 Lexi) */}
+      <div
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-4 sm:p-5 min-h-[155px] md:min-h-[205px] flex flex-col justify-between gap-3"
+        style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+          backgroundImage: `linear-gradient(135deg, color-mix(in srgb, var(--color-listening) 12%, transparent), color-mix(in srgb, var(--color-vocab) 10%, transparent)), url(${baseUrl}assets/illustrations/placement.svg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right -12px bottom -12px',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(90deg, var(--color-surface) 0%, color-mix(in srgb, var(--color-surface) 92%, transparent) 70%, color-mix(in srgb, var(--color-surface) 78%, transparent) 100%)',
+          }}
+          aria-hidden="true"
+        />
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="space-y-2 min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <Pill tone="info" icon={<Star className="w-3.5 h-3.5" />}>
+                Cấp {levelInfo.level}
+              </Pill>
+              <Pill tone="vocab" icon={<Award className="w-3.5 h-3.5" />}>
+                {unlockedBadgesCount} / {BADGE_TILES.length} huy hiệu
+              </Pill>
+            </div>
+            <h1 className="text-xl sm:text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
+              Thống kê & Tiến độ
+            </h1>
+            <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              Theo dõi chuỗi ngày học, cấp độ XP, số từ vững sau 7 ngày, cân bằng 4 mạch và 12 huy
+              hiệu.
+            </p>
+          </div>
+          <Mascot
+            state={currentStreak >= 7 ? 'an-mung' : 'co-vu'}
+            size={76}
+            context={{ streakDays: currentStreak }}
+            className="shrink-0"
+          />
         </div>
       </div>
 
-      {/* 4 KPI tổng quan */}
+      {/* 4 KPI tổng quan (mỗi thẻ 1 icon Fluent 3D riêng biệt) */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         <Card padding="md" className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
             <span>Chuỗi hiện tại</span>
-            <Flame className="w-4 h-4" style={{ color: 'var(--color-writing)' }} />
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/rocket.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
           </div>
           <div
             className="text-2xl font-bold tabular-nums"
@@ -354,9 +401,17 @@ export const StatsScreen: React.FC = () => {
         </Card>
 
         <Card padding="md" className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
             <span>Kỷ lục chuỗi</span>
-            <Trophy className="w-4 h-4" style={{ color: 'var(--color-partial)' }} />
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/party.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
           </div>
           <div
             className="text-2xl font-bold tabular-nums"
@@ -372,9 +427,17 @@ export const StatsScreen: React.FC = () => {
         </Card>
 
         <Card padding="md" className="space-y-1.5" data-testid="stats-level-card">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
             <span>Cấp {levelInfo.level} · Tổng XP</span>
-            <Star className="w-4 h-4" style={{ color: 'var(--color-partial)' }} />
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/xp.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
           </div>
           <div
             className="text-2xl font-bold tabular-nums"
@@ -402,9 +465,17 @@ export const StatsScreen: React.FC = () => {
         </Card>
 
         <Card padding="md" className="space-y-1.5" data-testid="stats-mastered-card">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
             <span>Từ vững (≥ 21 ngày)</span>
-            <ShieldCheck className="w-4 h-4" style={{ color: 'var(--color-vocab)' }} />
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/shield.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
           </div>
           <div
             className="text-2xl font-bold tabular-nums"
@@ -423,14 +494,25 @@ export const StatsScreen: React.FC = () => {
       {/* PP-06: Cân bằng 4 mạch học Paul Nation (7 ngày) */}
       <Card padding="lg" className="space-y-4" data-testid="stats-four-strands">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <div>
-            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-              Cân bằng 4 mạch học (7 ngày gần nhất)
-            </h2>
-            <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-              Cân bằng ~25% mỗi mạch giúp tăng tốc độ đọc-nghe và khả năng dùng từ chủ động. Mạch dưới
-              15% sẽ được Hôm nay đề xuất bù.
-            </p>
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/brain.webp`}
+              alt=""
+              width={36}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="w-9 h-9 object-contain shrink-0"
+            />
+            <div>
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                Cân bằng 4 mạch học (7 ngày gần nhất)
+              </h2>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                Cân bằng ~25% mỗi mạch giúp tăng tốc độ đọc-nghe và khả năng dùng từ chủ động. Mạch
+                dưới 15% sẽ được Hôm nay đề xuất bù.
+              </p>
+            </div>
           </div>
           <div className="flex items-center gap-2">
             {activeTurnRatio !== null && (
@@ -455,9 +537,20 @@ export const StatsScreen: React.FC = () => {
                 }}
               >
                 <div className="flex items-center justify-between gap-2 text-xs font-semibold">
-                  <span style={{ color: 'var(--color-text)' }}>{st.labelVi}</span>
+                  <span className="inline-flex items-center gap-2 min-w-0" style={{ color: 'var(--color-text)' }}>
+                    <img
+                      src={`${baseUrl}${STRAND_ICONS[id]}`}
+                      alt=""
+                      width={32}
+                      height={32}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-8 h-8 object-contain shrink-0"
+                    />
+                    <span className="truncate">{st.labelVi}</span>
+                  </span>
                   <span
-                    className="font-bold tabular-nums"
+                    className="font-bold tabular-nums shrink-0"
                     style={{ fontFamily: 'var(--font-mono)', color: STRAND_COLORS[id] }}
                   >
                     {st.pct}%
@@ -475,7 +568,10 @@ export const StatsScreen: React.FC = () => {
                     }}
                   />
                 </div>
-                <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                <div
+                  className="flex items-center justify-between text-xs"
+                  style={{ color: 'var(--color-text-dim)' }}
+                >
                   <span>{st.minutes} phút</span>
                   {st.underrepresented && (
                     <span style={{ color: 'var(--color-partial)' }}>Cần bù</span>
@@ -490,13 +586,25 @@ export const StatsScreen: React.FC = () => {
       {/* Phân bố bậc trí nhớ thẻ ôn */}
       <Card padding="lg" className="space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <div>
-            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-              Phân bố độ vững của thẻ ôn
-            </h2>
-            <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-              Mới → Đang học → Mới quen (&lt;21 ngày) → Khá vững (21–89 ngày) → Rất vững (≥90 ngày)
-            </p>
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/chart.webp`}
+              alt=""
+              width={36}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="w-9 h-9 object-contain shrink-0"
+            />
+            <div>
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                Phân bố độ vững của thẻ ôn
+              </h2>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                Mới → Đang học → Mới quen (&lt;21 ngày) → Khá vững (21–89 ngày) → Rất vững (≥90
+                ngày)
+              </p>
+            </div>
           </div>
           <Pill tone="neutral" icon={<Layers className="w-3.5 h-3.5" />}>
             {totalCards} thẻ
@@ -556,8 +664,16 @@ export const StatsScreen: React.FC = () => {
 
       {/* Danh sách phiên học gần nhất */}
       <Card padding="lg" className="space-y-4">
-        <div className="flex items-center gap-2">
-          <History className="w-5 h-5" style={{ color: 'var(--color-info)' }} />
+        <div className="flex items-center gap-3">
+          <img
+            src={`${baseUrl}assets/icons/fluent/ui/calendar.webp`}
+            alt=""
+            width={36}
+            height={36}
+            loading="lazy"
+            decoding="async"
+            className="w-9 h-9 object-contain shrink-0"
+          />
           <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
             Phiên học gần nhất
           </h2>
@@ -565,6 +681,17 @@ export const StatsScreen: React.FC = () => {
 
         {attempts.length === 0 ? (
           <EmptyState
+            icon={
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/zzz.webp`}
+                alt=""
+                width={44}
+                height={44}
+                loading="lazy"
+                decoding="async"
+                className="w-11 h-11 object-contain"
+              />
+            }
             title="Chưa có phiên học nào được ghi nhận"
             description="Hoàn thành phiên Daily Run (V1), Collocation Forge (V2) hoặc Paraphrase Radar (V3) để thấy lịch sử tiến bộ tại đây."
             action={
@@ -597,7 +724,10 @@ export const StatsScreen: React.FC = () => {
                       <div className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
                         {game?.title ?? a.gameId}
                       </div>
-                      <div className="text-xs flex items-center gap-2" style={{ color: 'var(--color-text-dim)' }}>
+                      <div
+                        className="text-xs flex items-center gap-2"
+                        style={{ color: 'var(--color-text-dim)' }}
+                      >
                         <span>{dateStr}</span>
                         <span>·</span>
                         <span className="inline-flex items-center gap-1">
@@ -624,16 +754,27 @@ export const StatsScreen: React.FC = () => {
         )}
       </Card>
 
-      {/* Lưới 12 huy hiệu */}
+      {/* Lưới 12 huy hiệu Fluent 3D */}
       <Card padding="lg" className="space-y-4">
         <div className="flex items-center justify-between gap-2">
-          <div>
-            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-              Bộ sưu tập 12 Huy hiệu
-            </h2>
-            <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-              Tự động mở khoá theo kỷ luật chuỗi ngày, số thẻ vững, bài viết/nói và cột mốc Band.
-            </p>
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/goal.webp`}
+              alt=""
+              width={36}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="w-9 h-9 object-contain shrink-0"
+            />
+            <div>
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                Bộ sưu tập 12 Huy hiệu
+              </h2>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                Tự động mở khoá theo kỷ luật chuỗi ngày, số thẻ vững, bài viết/nói và cột mốc Band.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -644,7 +785,7 @@ export const StatsScreen: React.FC = () => {
               <div
                 key={badge.id}
                 className={`p-3.5 rounded-[var(--radius-md)] border flex flex-col items-center text-center gap-2 transition-opacity ${
-                  unlocked ? '' : 'opacity-60'
+                  unlocked ? '' : 'opacity-65'
                 }`}
                 style={{
                   backgroundColor: unlocked
@@ -654,14 +795,24 @@ export const StatsScreen: React.FC = () => {
                 }}
               >
                 <img
-                  src={`${baseUrl}assets/icons/badges/${badge.file}`}
+                  src={`${baseUrl}assets/icons/fluent/badges/${badge.file}`}
                   alt={badge.titleVi}
+                  width={48}
+                  height={48}
+                  loading="lazy"
+                  decoding="async"
                   className={`w-12 h-12 object-contain ${unlocked ? '' : 'grayscale'}`}
                 />
                 <div className="space-y-1">
-                  <div className="text-xs font-bold flex items-center justify-center gap-1" style={{ color: 'var(--color-text)' }}>
+                  <div
+                    className="text-xs font-bold flex items-center justify-center gap-1"
+                    style={{ color: 'var(--color-text)' }}
+                  >
                     {unlocked && (
-                      <CheckCircle2 className="w-3.5 h-3.5 shrink-0" style={{ color: 'var(--color-correct)' }} />
+                      <CheckCircle2
+                        className="w-3.5 h-3.5 shrink-0"
+                        style={{ color: 'var(--color-correct)' }}
+                      />
                     )}
                     <span>{badge.titleVi}</span>
                   </div>

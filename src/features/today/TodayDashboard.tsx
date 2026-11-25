@@ -2,21 +2,16 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useLocation } from 'wouter';
 import {
   ArrowRight,
-  Bell,
-  Calendar,
   CalendarPlus,
   CheckCircle2,
   Clock,
-  Compass,
   Flame,
   LayoutGrid,
   Play,
   RefreshCw,
-  ShieldAlert,
   Snowflake,
   Sparkles,
   Star,
-  Trophy,
   Zap,
 } from 'lucide-react';
 import {
@@ -24,11 +19,14 @@ import {
   Button,
   Card,
   EmptyState,
+  LiveCard,
+  Mascot,
   Pill,
   ProgressRing,
   Skeleton,
   Toast,
 } from '../../design/components';
+import { celebrate } from '../../design/fx';
 import { useTheme } from '../../app/providers';
 import {
   buildBusyDayPlan,
@@ -47,7 +45,6 @@ import {
   msUntilNextDay,
   type StreakEvent,
 } from '../../core/gamification/streak';
-import { shouldRemindBackup } from '../../core/storage/backup';
 import { db, type AttemptRecord, type UserProfile } from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { bandRepo } from '../../core/storage/repos/bandRepo';
@@ -67,12 +64,20 @@ const DEFAULT_REMINDER_TIME = '20:00';
 const REMINDER_TIME_KV = 'study_reminder_time';
 const REMINDER_DISMISSED_KV = 'reminder_dismissed_date';
 const BACKUP_DISMISSED_KV = 'backup_reminder_dismissed_date';
+const GOAL_CELEBRATED_KV = 'daily_goal_celebrated_date';
 
 const STRAND_COLORS: Record<StrandId, string> = {
   input: 'var(--color-listening)',
   output: 'var(--color-writing)',
   language: 'var(--color-vocab)',
   fluency: 'var(--color-reading)',
+};
+
+const STRAND_ICONS: Record<StrandId, string> = {
+  input: 'assets/icons/fluent/ui/compass.webp',
+  output: 'assets/icons/fluent/ui/lightbulb.webp',
+  language: 'assets/icons/fluent/ui/bookmark.webp',
+  fluency: 'assets/icons/fluent/ui/clock.webp',
 };
 
 interface TodayPayload {
@@ -103,6 +108,9 @@ export const TodayDashboard: React.FC = () => {
   const [reminderHidden, setReminderHidden] = useState(false);
   const [backupBannerHidden, setBackupBannerHidden] = useState(false);
   const [icsDownloaded, setIcsDownloaded] = useState(false);
+  const celebratedTodayRef = useRef<string | null>(null);
+
+  const baseUrl = import.meta.env.BASE_URL;
 
   const loadTodayData = useCallback(async (): Promise<TodayPayload> => {
     const now = new Date();
@@ -122,7 +130,7 @@ export const TodayDashboard: React.FC = () => {
       reminderTimeRow,
       reminderDismissedRow,
       backupDismissedRow,
-      backupReminder,
+      lastBackupRow,
       pendingStreak,
     ] = await Promise.all([
       profileRepo.getOrCreate(),
@@ -138,9 +146,25 @@ export const TodayDashboard: React.FC = () => {
       db.kv.get(REMINDER_TIME_KV),
       db.kv.get(REMINDER_DISMISSED_KV),
       db.kv.get(BACKUP_DISMISSED_KV),
-      shouldRemindBackup(now),
+      db.kv.get('last_backup_at'),
       attemptRepo.consumePendingStreakEvent(),
     ]);
+
+    const lastBackupAt =
+      typeof lastBackupRow?.value === 'number' && Number.isFinite(lastBackupRow.value)
+        ? lastBackupRow.value
+        : null;
+    const backupDaysSince =
+      lastBackupAt !== null
+        ? Math.max(0, Math.floor((now.getTime() - lastBackupAt) / 86_400_000))
+        : null;
+    const backupReminder = {
+      due:
+        lastBackupAt === null
+          ? recentAttempts.length >= 1 || allCards.length >= 5
+          : (backupDaysSince ?? 0) >= 7,
+      daysSince: backupDaysSince,
+    };
 
     const onboardingDone = obDoneRow?.value === true || profile.placementDoneAt !== null;
     const onboardingSkipped = obSkipRow?.value === true;
@@ -401,10 +425,18 @@ export const TodayDashboard: React.FC = () => {
   const dailyGoalReached = progressPct >= 100 || allTasksDone;
 
   const firstUnfinishedTask = activePlan?.tasks.find((t) => !t.completed && isGameReady(t.gameId));
-  const lastLoadedRef = useRef(todayKey);
+
+  // F9: gọi celebrate() một lần mỗi ngày khi đạt mục tiêu ngày (tự tôn trọng useMotionPref / fxTier)
   useEffect(() => {
-    lastLoadedRef.current = todayKey;
-  }, [todayKey]);
+    if (!dailyGoalReached || celebratedTodayRef.current === todayKey) return;
+    celebratedTodayRef.current = todayKey;
+    void (async () => {
+      const row = await db.kv.get(GOAL_CELEBRATED_KV);
+      if (row?.value === todayKey) return;
+      await db.kv.put({ key: GOAL_CELEBRATED_KV, value: todayKey });
+      void celebrate('dailyGoal');
+    })();
+  }, [dailyGoalReached, todayKey]);
 
   // F12: Enter mở việc đầu chưa xong
   useEffect(() => {
@@ -438,6 +470,10 @@ export const TodayDashboard: React.FC = () => {
     );
   }
 
+  const mascotState = dailyGoalReached
+    ? 'an-mung'
+    : 'co-vu';
+
   return (
     <div className="space-y-5 pb-8">
       {/* F8: Toast khi Streak Freeze tự động cứu chuỗi hoặc nhận thêm lượt bảo vệ */}
@@ -458,6 +494,122 @@ export const TodayDashboard: React.FC = () => {
         />
       )}
 
+      {/* Hero Hôm nay (M1 ≥ 15% diện tích + M3 Lexi + icon màu Fluent 3D) */}
+      <div
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-4 sm:p-5 min-h-[160px] md:min-h-[205px] flex flex-col justify-between gap-3"
+        style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+          backgroundImage: `linear-gradient(135deg, color-mix(in srgb, var(--color-info) 12%, transparent), color-mix(in srgb, var(--color-vocab) 10%, transparent)), url(${baseUrl}assets/illustrations/welcome.svg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right -12px bottom -12px',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(90deg, var(--color-surface) 0%, color-mix(in srgb, var(--color-surface) 92%, transparent) 68%, color-mix(in srgb, var(--color-surface) 78%, transparent) 100%)',
+          }}
+          aria-hidden="true"
+        />
+
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div className="space-y-2 min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <Pill tone="info">Lộ trình 6.0 → 8.0 Academic</Pill>
+              {data?.placementVocabBand !== null && data?.placementVocabBand !== undefined && (
+                <Pill tone="vocab">
+                  Từ vựng đầu vào: Band {data.placementVocabBand.toFixed(1)}
+                </Pill>
+              )}
+            </div>
+            <h1 className="text-xl sm:text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
+              Chào {data?.displayName ?? DEFAULT_DISPLAY_NAME} · Hôm nay học gì?
+            </h1>
+            <Mascot
+              state={mascotState}
+              size={76}
+              context={{
+                streakDays: streakCount,
+                dueCount: data?.dueCardsCount ?? 0,
+                dailyGoalMin: effectiveDailyGoal,
+              }}
+            />
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+            <div
+              className="inline-flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
+              style={{
+                backgroundColor: 'var(--color-surface-2)',
+                borderColor: 'var(--color-border)',
+                fontFamily: 'var(--font-mono)',
+              }}
+              data-testid="today-streak-badge"
+            >
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/freeze.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
+              <Flame className="w-4 h-4 hidden" style={{ color: 'var(--color-writing)' }} />
+              <span>{streakCount} ngày</span>
+              <span
+                className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 rounded"
+                style={{
+                  backgroundColor: 'var(--color-surface)',
+                  color: 'var(--color-listening)',
+                }}
+                title="Lượt đóng băng bảo vệ chuỗi ngày học"
+              >
+                <Snowflake className="w-3.5 h-3.5" />
+                {streakFreezes}
+              </span>
+            </div>
+
+            <div
+              className="inline-flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
+              style={{
+                backgroundColor: 'var(--color-surface-2)',
+                borderColor: 'var(--color-border)',
+                fontFamily: 'var(--font-mono)',
+              }}
+              data-testid="today-xp-badge"
+            >
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/xp.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
+              <Star className="w-4 h-4 hidden" style={{ color: 'var(--color-partial)' }} />
+              <span>{totalXp.toLocaleString('vi-VN')} XP</span>
+              {todayStats.todayXp > 0 && (
+                <span
+                  className="text-xs px-1.5 py-0.5 rounded"
+                  style={{
+                    backgroundColor:
+                      'color-mix(in srgb, var(--color-correct) 16%, var(--color-surface))',
+                    color: 'var(--color-correct)',
+                  }}
+                >
+                  +{todayStats.todayXp}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Banner mời Onboarding nếu chưa thiết lập lần đầu */}
       {!loading && data && !data.onboardingDone && !data.onboardingSkipped && (
         <Card
@@ -466,19 +618,30 @@ export const TodayDashboard: React.FC = () => {
           className="flex flex-col sm:flex-row sm:items-center justify-between gap-4"
           data-testid="today-onboarding-banner"
         >
-          <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <Pill tone="info" icon={<Sparkles className="w-3.5 h-3.5" />}>
-                Thiết lập lần đầu (~90 giây)
-              </Pill>
+          <div className="flex items-start gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/rocket.webp`}
+              alt=""
+              width={40}
+              height={40}
+              loading="lazy"
+              decoding="async"
+              className="w-10 h-10 object-contain shrink-0"
+            />
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <Pill tone="info" icon={<Sparkles className="w-3.5 h-3.5" />}>
+                  Thiết lập lần đầu (~90 giây)
+                </Pill>
+              </div>
+              <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+                Cá nhân hoá lộ trình 6.0 → 8.0 & nạp sẵn thẻ ôn từ vựng
+              </h2>
+              <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                Chọn mục tiêu từng kỹ năng, làm nhanh 15 câu định vị từ vựng để mở kế hoạch học tự
+                động mỗi ngày — hoặc bạn có thể vào thẳng Hub chơi thử.
+              </p>
             </div>
-            <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
-              Cá nhân hoá lộ trình 6.0 → 8.0 & nạp sẵn thẻ ôn từ vựng
-            </h2>
-            <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-              Chọn mục tiêu từng kỹ năng, làm nhanh 15 câu định vị từ vựng để mở kế hoạch học tự
-              động mỗi ngày — hoặc bạn có thể vào thẳng Hub chơi thử.
-            </p>
           </div>
           <div className="flex flex-wrap items-center gap-2 shrink-0">
             <Button
@@ -497,150 +660,83 @@ export const TodayDashboard: React.FC = () => {
         </Card>
       )}
 
-      {/* Thanh chào & thông số nhanh */}
-      <Card padding="md" className="flex flex-wrap items-center justify-between gap-4">
-        <div className="space-y-1 min-w-0">
-          <div className="flex flex-wrap items-center gap-2">
-            <Pill tone="info" icon={<Calendar className="w-3.5 h-3.5" />}>
-              Lộ trình 6.0 → 8.0 Academic
-            </Pill>
-            {data?.placementVocabBand !== null && data?.placementVocabBand !== undefined && (
-              <Pill tone="vocab">
-                Từ vựng đầu vào: Band {data.placementVocabBand.toFixed(1)}
-              </Pill>
-            )}
-          </div>
-          <h1 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
-            Chào {data?.displayName ?? DEFAULT_DISPLAY_NAME} · Hôm nay học gì?
-          </h1>
-          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-            Mỗi phút luyện đúng kỹ năng bài thi chấm. Dữ liệu lưu trên máy, không tốn phí API.
-          </p>
-        </div>
-
-        <div className="flex flex-wrap items-center gap-2.5">
-          <div
-            className="inline-flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
-            style={{
-              backgroundColor: 'var(--color-surface-2)',
-              borderColor: 'var(--color-border)',
-              fontFamily: 'var(--font-mono)',
-            }}
-            data-testid="today-streak-badge"
-          >
-            <Flame className="w-4 h-4" style={{ color: 'var(--color-writing)' }} />
-            <span>{streakCount} ngày</span>
-            <span
-              className="inline-flex items-center gap-1 text-xs px-1.5 py-0.5 rounded"
-              style={{
-                backgroundColor: 'var(--color-surface)',
-                color: 'var(--color-listening)',
-              }}
-              title="Lượt đóng băng bảo vệ chuỗi ngày học"
-            >
-              <Snowflake className="w-3.5 h-3.5" />
-              {streakFreezes}
-            </span>
-          </div>
-
-          <div
-            className="inline-flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
-            style={{
-              backgroundColor: 'var(--color-surface-2)',
-              borderColor: 'var(--color-border)',
-              fontFamily: 'var(--font-mono)',
-            }}
-            data-testid="today-xp-badge"
-          >
-            <Star className="w-4 h-4" style={{ color: 'var(--color-partial)' }} />
-            <span>{totalXp.toLocaleString('vi-VN')} XP</span>
-            {todayStats.todayXp > 0 && (
-              <span
-                className="text-xs px-1.5 py-0.5 rounded"
-                style={{
-                  backgroundColor:
-                    'color-mix(in srgb, var(--color-correct) 16%, var(--color-surface))',
-                  color: 'var(--color-correct)',
-                }}
-              >
-                +{todayStats.todayXp}
-              </span>
-            )}
-          </div>
-        </div>
-      </Card>
-
-      {/* U6: Đưa "Việc tiếp theo" lên ngay đầu trang (ưu tiên iPhone 390/375) */}
+      {/* U6: Đưa "Việc tiếp theo" lên ngay đầu (LiveCard) */}
       {!loading && firstUnfinishedTask && (
-        <Card
-          skillAccent={firstUnfinishedTask.skillGroup}
-          padding="md"
-          className="space-y-3"
-          data-testid="today-next-action"
-        >
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <div className="flex flex-wrap items-center gap-2">
-              <Pill tone={firstUnfinishedTask.skillGroup} icon={<Play className="w-3.5 h-3.5" />}>
-                Việc tiếp theo
-              </Pill>
-              <span
-                className="inline-flex items-center gap-1 text-xs font-semibold tabular-nums"
-                style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
-              >
-                <Clock className="w-3.5 h-3.5" />~{firstUnfinishedTask.estMinutes} phút
-              </span>
+        <LiveCard skill={firstUnfinishedTask.skillGroup} tilt={false}>
+          <div className="space-y-3" data-testid="today-next-action">
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div className="flex flex-wrap items-center gap-2">
+                <img
+                  src={`${baseUrl}assets/icons/fluent/ui/check.webp`}
+                  alt=""
+                  width={36}
+                  height={36}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-9 h-9 object-contain shrink-0"
+                />
+                <Pill tone={firstUnfinishedTask.skillGroup} icon={<Play className="w-3.5 h-3.5" />}>
+                  Việc tiếp theo
+                </Pill>
+                <span
+                  className="inline-flex items-center gap-1 text-xs font-semibold tabular-nums"
+                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+                >
+                  <Clock className="w-3.5 h-3.5" />~{firstUnfinishedTask.estMinutes} phút
+                </span>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                <Button
+                  size="md"
+                  variant={busyMode ? 'primary' : 'ghost'}
+                  skill="info"
+                  onClick={() => void handleToggleBusyMode()}
+                  data-testid="today-busy-toggle"
+                >
+                  {busyMode ? 'Đang ở Ngày bận (~10p)' : 'Ngày bận (~10p)'}
+                </Button>
+                <Button
+                  size="md"
+                  variant="secondary"
+                  leftIcon={<Zap className="w-3.5 h-3.5" />}
+                  onClick={handleStartKeepStreak}
+                  data-testid="today-keep-streak"
+                >
+                  Giữ chuỗi 5 phút
+                </Button>
+              </div>
             </div>
-            <div className="flex flex-wrap items-center gap-2">
-              <Button
-                size="sm"
-                variant={busyMode ? 'primary' : 'ghost'}
-                skill="info"
-                onClick={() => void handleToggleBusyMode()}
-                data-testid="today-busy-toggle"
-              >
-                {busyMode ? 'Đang ở Ngày bận (~10p)' : 'Ngày bận (~10p)'}
-              </Button>
-              <Button
-                size="sm"
-                variant="secondary"
-                leftIcon={<Zap className="w-3.5 h-3.5" />}
-                onClick={handleStartKeepStreak}
-                data-testid="today-keep-streak"
-              >
-                Giữ chuỗi 5 phút
-              </Button>
-            </div>
-          </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div className="space-y-1 min-w-0">
-              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-                {firstUnfinishedTask.title}
-              </h2>
-              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
-                {firstUnfinishedTask.reasonVi}
-              </p>
-            </div>
-            <Button
-              size="lg"
-              variant="primary"
-              skill={firstUnfinishedTask.skillGroup}
-              rightIcon={<Play className="w-4 h-4" />}
-              onClick={() => startTask(firstUnfinishedTask)}
-              className="w-full sm:w-auto shrink-0"
-              data-testid="today-next-start"
-            >
-              Bắt đầu ngay
-              <span
-                className="hidden sm:inline text-xs font-semibold ml-1.5 px-1.5 rounded border"
-                style={{ borderColor: 'currentColor' }}
-                aria-hidden="true"
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div className="space-y-1 min-w-0">
+                <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                  {firstUnfinishedTask.title}
+                </h2>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                  {firstUnfinishedTask.reasonVi}
+                </p>
+              </div>
+              <Button
+                size="lg"
+                variant="primary"
+                skill={firstUnfinishedTask.skillGroup}
+                rightIcon={<Play className="w-4 h-4" />}
+                onClick={() => startTask(firstUnfinishedTask)}
+                className="w-full sm:w-auto shrink-0"
+                data-testid="today-next-start"
               >
-                Enter
-              </span>
-            </Button>
+                Bắt đầu ngay
+                <span
+                  className="hidden sm:inline text-xs font-semibold ml-1.5 px-1.5 rounded border"
+                  style={{ borderColor: 'currentColor' }}
+                  aria-hidden="true"
+                >
+                  Enter
+                </span>
+              </Button>
+            </div>
           </div>
-        </Card>
+        </LiveCard>
       )}
 
       {/* F9: Banner ăn mừng khi đạt mục tiêu ngày */}
@@ -652,17 +748,15 @@ export const TodayDashboard: React.FC = () => {
           data-testid="today-goal-celebration"
         >
           <div className="flex items-start gap-3">
-            <div
-              className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 border"
-              style={{
-                backgroundColor:
-                  'color-mix(in srgb, var(--color-correct) 16%, var(--color-surface-2))',
-                borderColor: 'var(--color-correct)',
-                color: 'var(--color-correct)',
-              }}
-            >
-              <Trophy className="w-5 h-5" />
-            </div>
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/party.webp`}
+              alt=""
+              width={40}
+              height={40}
+              loading="lazy"
+              decoding="async"
+              className="w-10 h-10 object-contain shrink-0"
+            />
             <div className="space-y-0.5">
               <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
                 Hoàn thành mục tiêu ngày hôm nay!
@@ -687,7 +781,15 @@ export const TodayDashboard: React.FC = () => {
           data-testid="today-backup-reminder"
         >
           <div className="flex items-center gap-2.5 text-xs" style={{ color: 'var(--color-text)' }}>
-            <ShieldAlert className="w-4 h-4 shrink-0" style={{ color: 'var(--color-partial)' }} />
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/shield.webp`}
+              alt=""
+              width={36}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="w-9 h-9 object-contain shrink-0"
+            />
             <span>
               {data.backupDaysSince !== null
                 ? `Đã ${data.backupDaysSince} ngày bạn chưa sao lưu dữ liệu học.`
@@ -695,10 +797,10 @@ export const TodayDashboard: React.FC = () => {
             </span>
           </div>
           <div className="flex items-center gap-2 shrink-0">
-            <Button size="sm" variant="secondary" onClick={() => navigate('/settings')}>
+            <Button size="md" variant="secondary" onClick={() => navigate('/settings')}>
               Sao lưu ngay
             </Button>
-            <Button size="sm" variant="ghost" onClick={() => void handleDismissBackupReminder()}>
+            <Button size="md" variant="ghost" onClick={() => void handleDismissBackupReminder()}>
               Để sau
             </Button>
           </div>
@@ -710,15 +812,26 @@ export const TodayDashboard: React.FC = () => {
         {/* Cột trái: Mục tiêu & Danh sách nhiệm vụ hôm nay */}
         <div className="lg:col-span-7 space-y-4">
           <Card padding="md" className="flex items-center justify-between gap-4">
-            <div className="min-w-0">
-              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-                Mục tiêu hôm nay
-              </h2>
-              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-                {data && data.dueCardsCount > 0
-                  ? `Có ${data.dueCardsCount} thẻ đến hạn · Mục tiêu ${effectiveDailyGoal} phút/ngày.`
-                  : `Hoàn thành ${effectiveDailyGoal} phút luyện tập tập trung để giữ nhịp hằng ngày.`}
-              </p>
+            <div className="flex items-center gap-3 min-w-0">
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/goal.webp`}
+                alt=""
+                width={40}
+                height={40}
+                loading="lazy"
+                decoding="async"
+                className="w-10 h-10 object-contain shrink-0"
+              />
+              <div className="min-w-0">
+                <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                  Mục tiêu hôm nay
+                </h2>
+                <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                  {data && data.dueCardsCount > 0
+                    ? `Có ${data.dueCardsCount} thẻ đến hạn · Mục tiêu ${effectiveDailyGoal} phút/ngày.`
+                    : `Hoàn thành ${effectiveDailyGoal} phút luyện tập tập trung để giữ nhịp hằng ngày.`}
+                </p>
+              </div>
             </div>
             <div className="flex items-center gap-3 shrink-0">
               <div className="text-right whitespace-nowrap">
@@ -757,56 +870,69 @@ export const TodayDashboard: React.FC = () => {
                 const isPrimaryNext = firstUnfinishedTask?.id === task.id;
 
                 return (
-                  <Card
-                    key={task.id}
-                    skillAccent={task.skillGroup}
-                    padding="md"
-                    className={`transition-opacity ${task.completed ? 'opacity-75' : ''}`}
-                    data-testid={`today-task-${task.gameId}`}
-                  >
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                      <div className="space-y-1.5 min-w-0">
-                        <div className="flex flex-wrap items-center gap-2">
-                          <span
-                            className="inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold tabular-nums shrink-0"
-                            style={{
-                              fontFamily: 'var(--font-mono)',
-                              backgroundColor: task.completed
-                                ? 'color-mix(in srgb, var(--color-correct) 18%, var(--color-surface-2))'
-                                : 'var(--color-surface-2)',
-                              color: task.completed
-                                ? 'var(--color-correct)'
-                                : 'var(--color-text)',
-                            }}
-                          >
-                            {task.completed ? <CheckCircle2 className="w-4 h-4" /> : idx + 1}
-                          </span>
-                          <Pill tone={task.skillGroup}>
-                            {gameMeta?.code ?? task.gameId.toUpperCase()} ·{' '}
-                            {gameMeta?.skillLabelVi ?? task.skillGroup}
-                          </Pill>
-                          <span
-                            className="inline-flex items-center gap-1 text-xs tabular-nums"
-                            style={{
-                              fontFamily: 'var(--font-mono)',
-                              color: 'var(--color-text-dim)',
-                            }}
-                          >
-                            <Clock className="w-3.5 h-3.5" />~{task.estMinutes}p
-                          </span>
-                          {task.completed && <Pill tone="correct">Hoàn thành</Pill>}
-                          {!ready && <Pill tone="neutral">Sắp có</Pill>}
-                        </div>
+                  <LiveCard key={task.id} skill={task.skillGroup} tilt={false}>
+                    <div
+                      className={`flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-opacity ${
+                        task.completed ? 'opacity-75' : ''
+                      }`}
+                      data-testid={`today-task-${task.gameId}`}
+                    >
+                      <div className="flex items-start gap-3 min-w-0">
+                        <img
+                          src={`${baseUrl}assets/icons/fluent/games/${task.gameId}.webp`}
+                          alt=""
+                          width={40}
+                          height={40}
+                          loading="lazy"
+                          decoding="async"
+                          className="w-10 h-10 object-contain shrink-0 mt-0.5"
+                        />
+                        <div className="space-y-1.5 min-w-0">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span
+                              className="inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold tabular-nums shrink-0"
+                              style={{
+                                fontFamily: 'var(--font-mono)',
+                                backgroundColor: task.completed
+                                  ? 'color-mix(in srgb, var(--color-correct) 18%, var(--color-surface-2))'
+                                  : 'var(--color-surface-2)',
+                                color: task.completed
+                                  ? 'var(--color-correct)'
+                                  : 'var(--color-text)',
+                              }}
+                            >
+                              {task.completed ? <CheckCircle2 className="w-4 h-4" /> : idx + 1}
+                            </span>
+                            <Pill tone={task.skillGroup}>
+                              {gameMeta?.code ?? task.gameId.toUpperCase()} ·{' '}
+                              {gameMeta?.skillLabelVi ?? task.skillGroup}
+                            </Pill>
+                            <span
+                              className="inline-flex items-center gap-1 text-xs tabular-nums"
+                              style={{
+                                fontFamily: 'var(--font-mono)',
+                                color: 'var(--color-text-dim)',
+                              }}
+                            >
+                              <Clock className="w-3.5 h-3.5" />~{task.estMinutes}p
+                            </span>
+                            {task.completed && <Pill tone="correct">Hoàn thành</Pill>}
+                            {!ready && <Pill tone="neutral">Sắp có</Pill>}
+                          </div>
 
-                        <h3
-                          className={`text-base font-bold ${task.completed ? 'line-through' : ''}`}
-                          style={{ color: 'var(--color-text)' }}
-                        >
-                          {task.title}
-                        </h3>
-                        <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
-                          {task.reasonVi}
-                        </p>
+                          <h3
+                            className={`text-base font-bold ${task.completed ? 'line-through' : ''}`}
+                            style={{ color: 'var(--color-text)' }}
+                          >
+                            {task.title}
+                          </h3>
+                          <p
+                            className="text-xs leading-relaxed"
+                            style={{ color: 'var(--color-text-dim)' }}
+                          >
+                            {task.reasonVi}
+                          </p>
+                        </div>
                       </div>
 
                       <div className="flex items-center gap-2 shrink-0">
@@ -831,13 +957,23 @@ export const TodayDashboard: React.FC = () => {
                         </Button>
                       </div>
                     </div>
-                  </Card>
+                  </LiveCard>
                 );
               })}
             </div>
           ) : (
             <EmptyState
-              icon={<Compass className="w-7 h-7" />}
+              icon={
+                <img
+                  src={`${baseUrl}assets/icons/fluent/ui/zzz.webp`}
+                  alt=""
+                  width={44}
+                  height={44}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-11 h-11 object-contain"
+                />
+              }
               title="Chưa có lịch học cá nhân hoá cho hôm nay"
               description="Bạn chưa làm bài định vị đầu vào hoặc chưa bắt đầu phiên học đầu tiên. Hãy định vị nhanh để hệ thống tự xếp 3–4 nhiệm vụ mỗi ngày, hoặc khám phá ngay 12 chế độ luyện tập."
               action={
@@ -870,8 +1006,16 @@ export const TodayDashboard: React.FC = () => {
               className="flex flex-col sm:flex-row sm:items-center justify-between gap-3"
               data-testid="today-reminder-banner"
             >
-              <div className="flex items-start gap-2.5">
-                <Bell className="w-4 h-4 shrink-0 mt-0.5" style={{ color: 'var(--color-info)' }} />
+              <div className="flex items-start gap-3">
+                <img
+                  src={`${baseUrl}assets/icons/fluent/ui/calendar.webp`}
+                  alt=""
+                  width={36}
+                  height={36}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-9 h-9 object-contain shrink-0"
+                />
                 <div className="space-y-0.5">
                   <div className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
                     Nhắc học hằng ngày lúc {data.reminderTime}
@@ -906,13 +1050,24 @@ export const TodayDashboard: React.FC = () => {
           <Card padding="lg" className="space-y-5">
             <div className="space-y-4">
               <div className="flex items-center justify-between gap-2">
-                <div>
-                  <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-                    Band ước lượng
-                  </h2>
-                  <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-                    Cập nhật tự động sau mỗi phiên luyện và thi thử
-                  </p>
+                <div className="flex items-center gap-2.5">
+                  <img
+                    src={`${baseUrl}assets/icons/fluent/ui/chart.webp`}
+                    alt=""
+                    width={36}
+                    height={36}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-9 h-9 object-contain shrink-0"
+                  />
+                  <div>
+                    <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                      Band ước lượng
+                    </h2>
+                    <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                      Cập nhật tự động sau mỗi phiên luyện và thi thử
+                    </p>
+                  </div>
                 </div>
                 <Pill tone="reading">Mục tiêu 8.0</Pill>
               </div>
@@ -991,13 +1146,24 @@ export const TodayDashboard: React.FC = () => {
           {data && (
             <Card padding="md" className="space-y-3" data-testid="today-four-strands">
               <div className="flex items-center justify-between gap-2">
-                <div>
-                  <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
-                    Cân bằng 4 mạch học (7 ngày)
-                  </h2>
-                  <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-                    Mục tiêu ~25% mỗi mạch · mạch dưới 15% sẽ được ưu tiên bù
-                  </p>
+                <div className="flex items-center gap-2.5">
+                  <img
+                    src={`${baseUrl}assets/icons/fluent/ui/brain.webp`}
+                    alt=""
+                    width={36}
+                    height={36}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-9 h-9 object-contain shrink-0"
+                  />
+                  <div>
+                    <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+                      Cân bằng 4 mạch học (7 ngày)
+                    </h2>
+                    <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                      Mục tiêu ~25% mỗi mạch · mạch dưới 15% được ưu tiên bù
+                    </p>
+                  </div>
                 </div>
                 <Pill tone="neutral">{data.fourStrands.totalMinutes}p</Pill>
               </div>
@@ -1016,11 +1182,20 @@ export const TodayDashboard: React.FC = () => {
                       }}
                     >
                       <div className="flex items-center justify-between gap-1 text-xs">
-                        <span className="font-semibold truncate" style={{ color: 'var(--color-text)' }}>
-                          {st.labelVi.split(' (')[0]}
+                        <span className="inline-flex items-center gap-1.5 font-semibold truncate" style={{ color: 'var(--color-text)' }}>
+                          <img
+                            src={`${baseUrl}${STRAND_ICONS[id]}`}
+                            alt=""
+                            width={32}
+                            height={32}
+                            loading="lazy"
+                            decoding="async"
+                            className="w-8 h-8 object-contain shrink-0"
+                          />
+                          <span className="truncate">{st.labelVi.split(' (')[0]}</span>
                         </span>
                         <span
-                          className="font-bold tabular-nums"
+                          className="font-bold tabular-nums shrink-0"
                           style={{ fontFamily: 'var(--font-mono)', color: STRAND_COLORS[id] }}
                         >
                           {st.pct}%

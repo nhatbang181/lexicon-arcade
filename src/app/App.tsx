@@ -15,7 +15,6 @@ import { ThemeProvider, AudioProvider } from './providers';
 import { AppRoutes } from './routes';
 import { useAppHashLocation, useAppHashSearch } from './hashRouter';
 import { useShellStats } from './useShellStats';
-import { requestPersistentStorage } from '../core/storage/backup';
 
 interface NavItem {
   path: string;
@@ -76,8 +75,8 @@ const ShellLayout: React.FC = () => {
       (typeof window.matchMedia === 'function' &&
         window.matchMedia('(display-mode: standalone)').matches) ||
       (navigator as Navigator & { standalone?: boolean }).standalone === true;
-    if (isStandalone) {
-      void requestPersistentStorage();
+    if (isStandalone && typeof navigator !== 'undefined' && navigator.storage?.persist) {
+      void navigator.storage.persist().catch(() => undefined);
     }
   }, []);
 

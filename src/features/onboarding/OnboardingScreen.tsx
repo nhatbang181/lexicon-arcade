@@ -15,7 +15,7 @@ import {
   User,
 } from 'lucide-react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { Button, Card, Pill } from '../../design/components';
+import { Button, Card, Mascot, Pill } from '../../design/components';
 import { questionSlideVariants, reducedRouteVariants } from '../../design/motion';
 import { db } from '../../core/storage/db';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
@@ -304,13 +304,33 @@ export const OnboardingScreen: React.FC = () => {
             exit="exit"
           >
             <Card padding="lg" className="space-y-6">
-              <div className="flex flex-col sm:flex-row items-center gap-6">
-                <img
-                  src={`${baseUrl}assets/illustrations/welcome.svg`}
-                  alt="Chào mừng đến với Lexicon Arcade V3"
-                  className="w-40 h-32 object-contain shrink-0"
+              <div
+                className="relative overflow-hidden rounded-[var(--radius-md)] border p-4 min-h-[170px] flex flex-col sm:flex-row items-center gap-5"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                  backgroundImage: `url(${baseUrl}assets/illustrations/welcome.svg)`,
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'right bottom',
+                  backgroundSize: 'cover',
+                }}
+              >
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background:
+                      'linear-gradient(90deg, var(--color-surface-2) 0%, color-mix(in srgb, var(--color-surface-2) 92%, transparent) 72%, color-mix(in srgb, var(--color-surface-2) 78%, transparent) 100%)',
+                  }}
+                  aria-hidden="true"
                 />
-                <div className="space-y-2 text-center sm:text-left">
+                <div className="relative z-10 shrink-0">
+                  <Mascot
+                    state="co-vu"
+                    size={76}
+                    say="Cùng thiết lập lộ trình 8.0 nhé!"
+                  />
+                </div>
+                <div className="relative z-10 space-y-2 text-center sm:text-left">
                   <Pill tone="info" icon={<Sparkles className="w-3.5 h-3.5" />}>
                     Lexicon Arcade V3 · Lộ trình 8.0
                   </Pill>
@@ -322,6 +342,39 @@ export const OnboardingScreen: React.FC = () => {
                     tháng. Không API tốn phí, dữ liệu lưu ngay trên máy của bạn.
                   </p>
                 </div>
+              </div>
+
+              <div className="grid grid-cols-3 sm:grid-cols-6 gap-2" aria-hidden="true">
+                {[
+                  { file: 'rocket.webp', label: 'Lộ trình' },
+                  { file: 'goal.webp', label: 'Mục tiêu' },
+                  { file: 'brain.webp', label: 'Nhớ lâu' },
+                  { file: 'shield.webp', label: 'An toàn' },
+                  { file: 'calendar.webp', label: 'Đều đặn' },
+                  { file: 'xp.webp', label: 'Tiến bộ' },
+                ].map((ic) => (
+                  <div
+                    key={ic.file}
+                    className="p-2 rounded-[var(--radius-sm)] border flex flex-col items-center gap-1"
+                    style={{
+                      backgroundColor: 'var(--color-surface-2)',
+                      borderColor: 'var(--color-border)',
+                    }}
+                  >
+                    <img
+                      src={`${baseUrl}assets/icons/fluent/ui/${ic.file}`}
+                      alt=""
+                      width={32}
+                      height={32}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-8 h-8 object-contain"
+                    />
+                    <span className="text-xs font-medium" style={{ color: 'var(--color-text-dim)' }}>
+                      {ic.label}
+                    </span>
+                  </div>
+                ))}
               </div>
 
               <div className="space-y-2">
@@ -364,7 +417,15 @@ export const OnboardingScreen: React.FC = () => {
                       className="flex items-center gap-2 text-sm font-semibold"
                       style={{ color: 'var(--color-text)' }}
                     >
-                      <Database className="w-4 h-4" style={{ color: 'var(--color-vocab)' }} />
+                      <img
+                        src={`${baseUrl}assets/icons/fluent/ui/cloud.webp`}
+                        alt=""
+                        width={32}
+                        height={32}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-8 h-8 object-contain shrink-0"
+                      />
                       Đã từng chơi Lexicon Arcade V1/V2?
                     </div>
                     <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>

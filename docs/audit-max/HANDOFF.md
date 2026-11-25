@@ -100,3 +100,9 @@
 | 1 | `src/games/w1-essay-lab/W1EssayLab.tsx` (dòng 1177, 1191, 1231, 1245, 1261, 1275), `src/features/portfolio/PortfolioScreen.tsx` (dòng 539) | T4-C | Đổi `var(--color-on-accent, #0f172a)` thành `var(--color-on-accent)` (token đã khai báo đủ 3 theme trong `src/design/tokens.css`) | D1 (`scripts/qa/hardcoded-colors.mjs` còn 7/8 chỗ do hex fallback cứng ngoài `src/design/**`) |
 | 2 | `src/app/screens/DevComponentsScreen.tsx` (dòng 498) | điều phối / T3-C | Bỏ chuỗi `#3B82F6` trong mô tả text minh hoạ SVG (hoặc ghi "màu chủ đạo token") | D1 (`scripts/qa/hardcoded-colors.mjs` 1 chỗ còn lại ngoài `src/design/**`) |
 | 3 | `vite.config.ts` (`workbox.globIgnores`) | điều phối · **ĐÃ XỬ LÝ (`0bfe9c6`)** | Thêm `'assets/GradingPanel-*.js'`, `'assets/listeningAnswer-*.js'` và các chunk lazy màn phụ vào `globIgnores` + `runtimeCaching` | Precache PWA đã hạ về ~1 313 KiB (< 1 500 KiB) |
+
+## Từ T3-C (25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `src/design/components/LiveCard.tsx` (dòng 133) | T3-A | Lớp bóng sibling `<motion.div className="pointer-events-none absolute inset-0 rounded-[var(--radius-lg)]" />` có `rounded` + `backgroundColor` không có `<img>` bên trong nên `audit-ui.mjs` đếm là `M5` trên mỗi thẻ Hub (6 lần ở 820/1280). Đổi lớp bóng sang `borderRadius: 'var(--radius-lg)'` trong `style` thay vì class `rounded-*` (hoặc đặt bên trong khung thẻ có ảnh) | Khử 100% cảnh báo M5 giả trên thẻ `<LiveCard>` ở Hub |

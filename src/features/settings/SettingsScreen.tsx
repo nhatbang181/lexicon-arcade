@@ -23,6 +23,7 @@ import {
   VolumeX,
 } from 'lucide-react';
 import { Button, Card, Modal, Pill, Toast, type ToastTone } from '../../design/components';
+import { useMotionPref } from '../../design/fx';
 import { useAudio, useTheme, type AppTheme } from '../../app/providers';
 import {
   clearAllUserData,
@@ -71,18 +72,19 @@ export const SettingsScreen: React.FC = () => {
   const { theme, setTheme, targetBands, setTargetBands, dailyGoalMin, setDailyGoalMin } =
     useTheme();
   const { sfxVolume, setSfxVolume, muted, toggleMute } = useAudio();
+  const motionPref = useMotionPref();
 
   const [notice, setNotice] = useState<{ tone: ToastTone; title: string; desc?: string } | null>(
     null,
   );
   const [displayName, setDisplayName] = useState('');
   const [reminderTime, setReminderTime] = useState('20:00');
-  const [prefs, setPrefs] = useState<MotionPrefs>({
-    reducedMotion: false,
-    particlesOff: false,
-    hapticsOff: false,
-    showMascot: true,
-  });
+  const prefs: MotionPrefs = {
+    reducedMotion: motionPref.prefReducedMotion,
+    particlesOff: motionPref.disableParticles,
+    hapticsOff: motionPref.disableHaptic,
+    showMascot: motionPref.showMascot,
+  };
 
   const [storageInfo, setStorageInfo] = useState<StorageUsageInfo | null>(null);
   const [lastBackupAt, setLastBackupAt] = useState<number | null>(null);
@@ -109,28 +111,12 @@ export const SettingsScreen: React.FC = () => {
       reminderRow,
       lastBackupRow,
       reminderStatus,
-      rm1,
-      rm2,
-      p1,
-      p2,
-      h1,
-      h2,
-      m1,
-      m2,
       storage,
     ] = await Promise.all([
       db.kv.get('display_name'),
       db.kv.get('study_reminder_time'),
       db.kv.get(LAST_BACKUP_KV_KEY),
       shouldRemindBackup(),
-      db.kv.get(PREF_KEYS.reducedMotion[0]),
-      db.kv.get(PREF_KEYS.reducedMotion[1]),
-      db.kv.get(PREF_KEYS.particlesOff[0]),
-      db.kv.get(PREF_KEYS.particlesOff[1]),
-      db.kv.get(PREF_KEYS.hapticsOff[0]),
-      db.kv.get(PREF_KEYS.hapticsOff[1]),
-      db.kv.get(PREF_KEYS.showMascot[0]),
-      db.kv.get(PREF_KEYS.showMascot[1]),
       estimateStorageUsage(),
     ]);
 
@@ -141,18 +127,6 @@ export const SettingsScreen: React.FC = () => {
     setLastBackupAt(typeof lastBackupRow?.value === 'number' ? lastBackupRow.value : null);
     setBackupReminderDue(reminderStatus.due);
     setStorageInfo(storage);
-
-    const boolVal = (a: unknown, b: unknown, fallback: boolean) => {
-      if (typeof a === 'boolean') return a;
-      if (typeof b === 'boolean') return b;
-      return fallback;
-    };
-    setPrefs({
-      reducedMotion: boolVal(rm1?.value, rm2?.value, false),
-      particlesOff: boolVal(p1?.value, p2?.value, false),
-      hapticsOff: boolVal(h1?.value, h2?.value, false),
-      showMascot: boolVal(m1?.value, m2?.value, true),
-    });
   };
 
   useEffect(() => {
@@ -175,13 +149,15 @@ export const SettingsScreen: React.FC = () => {
 
   const handleTogglePref = async (key: keyof MotionPrefs) => {
     const nextValue = !prefs[key];
-    setPrefs((prev) => ({ ...prev, [key]: nextValue }));
+    if (key === 'reducedMotion') motionPref.setPref({ prefReducedMotion: nextValue });
+    else if (key === 'particlesOff') motionPref.setPref({ disableParticles: nextValue });
+    else if (key === 'hapticsOff') motionPref.setPref({ disableHaptic: nextValue });
+    else if (key === 'showMascot') motionPref.setPref({ showMascot: nextValue });
     const [k1, k2] = PREF_KEYS[key];
     await db.kv.bulkPut([
       { key: k1, value: nextValue },
       { key: k2, value: nextValue },
     ]);
-    window.dispatchEvent(new CustomEvent('lexicon:prefs-changed', { detail: { key, value: nextValue } }));
   };
 
   const handleSaveReminderTime = async (value: string) => {
@@ -600,7 +576,7 @@ export const SettingsScreen: React.FC = () => {
                     return next;
                   });
                 }}
-                className="w-full min-h-[44px] px-2.5 py-1.5 rounded border text-base font-bold tabular-nums"
+                className="w-full min-h-[44px] px-2.5 py-1.5 rounded border text-base font-bold tabular-nums appearance-none"
                 style={{
                   fontFamily: 'var(--font-mono)',
                   backgroundColor: 'var(--color-surface)',
@@ -663,7 +639,7 @@ export const SettingsScreen: React.FC = () => {
               value={reminderTime}
               onChange={(e) => void handleSaveReminderTime(e.target.value)}
               data-testid="settings-reminder-time"
-              className="min-h-[44px] px-3 rounded-[var(--radius-md)] border text-base font-semibold tabular-nums"
+              className="min-h-[44px] px-3 rounded-[var(--radius-md)] border text-base font-semibold tabular-nums appearance-none"
               style={{
                 fontFamily: 'var(--font-mono)',
                 backgroundColor: 'var(--color-surface-2)',
@@ -715,7 +691,8 @@ export const SettingsScreen: React.FC = () => {
             value={muted ? 0 : sfxVolume}
             onChange={(e) => setSfxVolume(Number(e.target.value))}
             aria-label="Âm lượng SFX"
-            className="flex-1 min-h-[44px] accent-[var(--color-listening)] cursor-pointer"
+            className="flex-1 min-h-[44px] appearance-none rounded-full h-2 cursor-pointer"
+            style={{ backgroundColor: 'var(--color-surface-2)' }}
           />
           <span
             className="w-12 text-right text-sm font-bold tabular-nums"
@@ -1055,7 +1032,8 @@ export const SettingsScreen: React.FC = () => {
                 type="checkbox"
                 checked={keepRecordings}
                 onChange={(e) => setKeepRecordings(e.target.checked)}
-                className="w-5 h-5"
+                className="w-5 h-5 appearance-none rounded border checked:bg-[var(--color-info)]"
+                style={{ borderColor: 'var(--color-border)' }}
               />
               <span>Giữ lại các bản ghi âm Speaking trên máy</span>
             </label>

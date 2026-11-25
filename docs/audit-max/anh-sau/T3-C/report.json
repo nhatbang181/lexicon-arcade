@@ -1,0 +1,1421 @@
+{
+ "at": "2026-11-25T03:50:59.931Z",
+ "base": "http://127.0.0.1:5243/#",
+ "runs": [
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 7,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 2
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      20,
+      502,
+      351,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      20,
+      779,
+      351,
+      234
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 274
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 7,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 2
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      20,
+      502,
+      351,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      20,
+      779,
+      351,
+      234
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 274
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 4,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M2",
+     "msg": "chỉ 4 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 11",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 1
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      19,
+      502,
+      336,
+      256
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 5,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M2",
+     "msg": "chỉ 5 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 11",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 7,
+    "bigPictures": 1,
+    "mascots": [],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 4,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M2",
+     "msg": "chỉ 4 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 11",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 1
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      19,
+      502,
+      336,
+      256
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 5,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M2",
+     "msg": "chỉ 5 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 11",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 7,
+    "bigPictures": 1,
+    "mascots": [],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 15,
+    "colorIcons": 9,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 20,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 358
+     }
+    ],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      28,
+      440,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      422,
+      440,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      28,
+      695,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      422,
+      695,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      28,
+      950,
+      370,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      422,
+      950,
+      370,
+      256
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 364
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 14,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 331
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 15,
+    "colorIcons": 9,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 20,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 367
+     }
+    ],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      28,
+      440,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      422,
+      440,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      28,
+      695,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      422,
+      695,
+      370,
+      234
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      28,
+      950,
+      370,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      422,
+      950,
+      370,
+      256
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 364
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 14,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 331
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 367
+     }
+    ],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      275,
+      372,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      606,
+      372,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      936,
+      372,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      275,
+      649,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      606,
+      649,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      936,
+      649,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 364
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 331
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 367
+     }
+    ],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      275,
+      372,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      606,
+      372,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      936,
+      372,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      275,
+      649,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      606,
+      649,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      936,
+      649,
+      308,
+      256
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "stats",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 364
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "settings",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "onboarding",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 331
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  }
+ ],
+ "total": {
+  "CHAN": 0,
+  "NANG": 38,
+  "NHE": 0
+ },
+ "byCode": {
+  "M5": 30,
+  "M2": 4,
+  "M3": 2,
+  "M4": 2
+ }
+}

@@ -1,25 +1,7 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { useLocation } from 'wouter';
-import {
-  BookA,
-  BookOpenText,
-  Clock,
-  Compass,
-  FileText,
-  Flame,
-  Headphones,
-  Hourglass,
-  Layers,
-  Mic,
-  PenLine,
-  Play,
-  Radar,
-  Scale,
-  Sparkles,
-  Timer as TimerIcon,
-  Zap,
-} from 'lucide-react';
-import { Button, Card, Pill, Sheet, Skeleton } from '../../design/components';
+import { Clock, Compass, FileText, Mic, Play } from 'lucide-react';
+import { Button, LiveCard, Mascot, Pill, Sheet, Skeleton } from '../../design/components';
 import {
   GAME_REGISTRY,
   type GameDefinition,
@@ -44,22 +26,6 @@ const FILTER_TABS: Array<{ id: FilterSkill; label: string }> = [
   { id: 'exam', label: 'Thi thử (1)' },
 ];
 
-/** Icon riêng cho từng chế độ (chờ gắn bộ Fluent 3D ở C5). */
-const GAME_ICON_MAP: Record<GameId, React.ReactNode> = {
-  v1: <Flame className="w-6 h-6" />,
-  v2: <Layers className="w-6 h-6" />,
-  v3: <Radar className="w-6 h-6" />,
-  l1: <Headphones className="w-6 h-6" />,
-  l2: <Sparkles className="w-6 h-6" />,
-  r1: <Scale className="w-6 h-6" />,
-  r2: <BookOpenText className="w-6 h-6" />,
-  w1: <PenLine className="w-6 h-6" />,
-  w2: <Zap className="w-6 h-6" />,
-  s1: <Mic className="w-6 h-6" />,
-  s2: <Hourglass className="w-6 h-6" />,
-  x1: <TimerIcon className="w-6 h-6" />,
-};
-
 const MODE_DESC_VI: Record<'training' | 'exam' | 'sprint', string> = {
   training: 'Có giải thích ngay, bằng chứng bấm được, không áp lực đồng hồ.',
   exam: 'Đúng nhịp phòng thi thật, không gợi ý hay hiệu ứng trong lúc làm.',
@@ -75,6 +41,7 @@ export const HubScreen: React.FC = () => {
   const [, navigate] = useLocation();
   const [selectedSkill, setSelectedSkill] = useState<FilterSkill>('all');
   const [activeGame, setActiveGame] = useState<GameDefinition | null>(null);
+  const baseUrl = import.meta.env.BASE_URL;
 
   const loadHubStats = useCallback(async (): Promise<HubStatsData> => {
     const [profile, recent] = await Promise.all([
@@ -127,29 +94,36 @@ export const HubScreen: React.FC = () => {
     const sessions = hubStats?.sessionsByGame[game.id] ?? 0;
 
     return (
-      <Card
+      <LiveCard
         key={game.id}
-        skillAccent={game.skill}
-        padding="md"
-        interactive
+        skill={game.skill}
         onClick={() => setActiveGame(game)}
-        className={`flex flex-col justify-between gap-4 ${comingSoon ? 'opacity-80' : ''}`}
-        data-testid={`hub-card-${game.id}`}
+        ariaLabel={`${game.code} ${game.title}`}
+        className={comingSoon ? 'opacity-80' : ''}
       >
-        <div className="space-y-3">
-          <div className="flex items-start justify-between gap-3">
-            {/* Slot biểu tượng riêng của game (sẵn sàng gắn Fluent 3D ở C5) */}
-            <div className="flex items-center gap-3 min-w-0">
+        <div
+          className="flex flex-col justify-between gap-4 h-full"
+          data-testid={`hub-card-${game.id}`}
+        >
+          <div className="space-y-3">
+            <div className="flex items-start gap-3">
+              {/* Icon Fluent 3D riêng cho từng game */}
               <div
-                className="w-12 h-12 rounded-[var(--radius-md)] border flex items-center justify-center shrink-0"
+                className="w-14 h-14 rounded-[var(--radius-md)] border flex items-center justify-center shrink-0 p-1.5"
                 style={{
                   backgroundColor: `color-mix(in srgb, var(--color-${game.skill}) 14%, var(--color-surface-2))`,
                   borderColor: `color-mix(in srgb, var(--color-${game.skill}) 35%, var(--color-border))`,
-                  color: `var(--color-${game.skill})`,
                 }}
-                aria-hidden="true"
               >
-                {GAME_ICON_MAP[game.id] ?? <BookA className="w-6 h-6" />}
+                <img
+                  src={`${baseUrl}assets/icons/fluent/games/${game.id}.webp`}
+                  alt=""
+                  width={44}
+                  height={44}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-11 h-11 object-contain"
+                />
               </div>
               <div className="min-w-0 space-y-1">
                 <div className="flex flex-wrap items-center gap-1.5">
@@ -168,67 +142,109 @@ export const HubScreen: React.FC = () => {
                 </span>
               </div>
             </div>
+
+            <div>
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                {game.title}
+              </h2>
+              <p className="text-sm mt-1 leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                {game.subtitleVi}
+              </p>
+            </div>
           </div>
 
-          <div>
-            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-              {game.title}
-            </h2>
-            <p className="text-sm mt-1 leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
-              {game.subtitleVi}
-            </p>
-          </div>
-        </div>
-
-        <div
-          className="pt-3 border-t flex items-center justify-between gap-2"
-          style={{ borderColor: 'var(--color-border)' }}
-        >
-          <div className="flex flex-wrap items-center gap-1.5 min-w-0">
-            {game.requires.ai && (
-              <Pill tone="neutral" icon={<FileText className="w-3.5 h-3.5" />}>
-                Chấm qua Claude
-              </Pill>
-            )}
-            {game.requires.mic && (
-              <Pill tone="neutral" icon={<Mic className="w-3.5 h-3.5" />}>
-                Cần micro
-              </Pill>
-            )}
-            {!game.requires.ai && !game.requires.mic && (
-              <Pill tone="neutral">
-                {sessions > 0
-                  ? `${sessions} phiên đã luyện`
-                  : game.modes.map(modeLabelVi).join(' · ')}
-              </Pill>
-            )}
-          </div>
-
-          <span
-            className="inline-flex items-center gap-1 text-xs font-semibold shrink-0"
-            style={{ color: comingSoon ? 'var(--color-text-dim)' : `var(--color-${game.skill})` }}
+          <div
+            className="pt-3 border-t flex items-center justify-between gap-2"
+            style={{ borderColor: 'var(--color-border)' }}
           >
-            {comingSoon ? 'Xem trước' : game.modes.length > 1 ? 'Chọn chế độ' : 'Vào luyện'}
-            <Play className="w-3.5 h-3.5" />
-          </span>
+            <div className="flex flex-wrap items-center gap-1.5 min-w-0">
+              {game.requires.ai && (
+                <Pill tone="neutral" icon={<FileText className="w-3.5 h-3.5" />}>
+                  Chấm qua Claude
+                </Pill>
+              )}
+              {game.requires.mic && (
+                <Pill tone="neutral" icon={<Mic className="w-3.5 h-3.5" />}>
+                  Cần micro
+                </Pill>
+              )}
+              {!game.requires.ai && !game.requires.mic && (
+                <Pill tone="neutral">
+                  {sessions > 0
+                    ? `${sessions} phiên đã luyện`
+                    : game.modes.map(modeLabelVi).join(' · ')}
+                </Pill>
+              )}
+            </div>
+
+            <span
+              className="inline-flex items-center gap-1 text-xs font-semibold shrink-0"
+              style={{ color: comingSoon ? 'var(--color-text-dim)' : `var(--color-${game.skill})` }}
+            >
+              {comingSoon ? 'Xem trước' : game.modes.length > 1 ? 'Chọn chế độ' : 'Vào luyện'}
+              <Play className="w-3.5 h-3.5" />
+            </span>
+          </div>
         </div>
-      </Card>
+      </LiveCard>
     );
   };
 
   return (
     <div className="space-y-6 pb-8">
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
-            12 Chế độ luyện IELTS 8.0
-          </h1>
-          <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
-            Chia thành 6 nhóm kỹ năng cốt lõi. Chọn một thẻ để xem mô tả và chọn chế độ Luyện hoặc
-            Thi.
-          </p>
+      {/* Hero Hub (M1 ≥ 15% + M3 Lexi + icon màu Fluent 3D) */}
+      <div
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-4 sm:p-5 min-h-[160px] md:min-h-[205px] flex flex-col justify-between gap-3"
+        style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+          backgroundImage: `linear-gradient(135deg, color-mix(in srgb, var(--color-vocab) 12%, transparent), color-mix(in srgb, var(--color-reading) 10%, transparent)), url(${baseUrl}assets/illustrations/goals.svg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right -12px bottom -12px',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(90deg, var(--color-surface) 0%, color-mix(in srgb, var(--color-surface) 92%, transparent) 70%, color-mix(in srgb, var(--color-surface) 78%, transparent) 100%)',
+          }}
+          aria-hidden="true"
+        />
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="space-y-1.5 min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <Pill tone="info">9 sẵn sàng · 3 sắp có</Pill>
+            </div>
+            <h1 className="text-xl sm:text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
+              12 Chế độ luyện IELTS 8.0
+            </h1>
+            <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              Chọn thẻ game để xem mô tả và chọn chế độ Luyện tập hoặc Thi thử.
+            </p>
+            <div className="flex items-center gap-2 pt-1" aria-hidden="true">
+              {['rocket.webp', 'compass.webp', 'brain.webp', 'shield.webp'].map((f) => (
+                <img
+                  key={f}
+                  src={`${baseUrl}assets/icons/fluent/ui/${f}`}
+                  alt=""
+                  width={32}
+                  height={32}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-8 h-8 object-contain"
+                />
+              ))}
+            </div>
+          </div>
+          <Mascot
+            state="co-vu"
+            size={76}
+            say="Chọn một kỹ năng để luyện ngay nhé!"
+            className="shrink-0"
+          />
         </div>
-        <Pill tone="info">9 sẵn sàng · 3 sắp có</Pill>
       </div>
 
       {/* Bộ lọc nhóm kỹ năng */}
@@ -272,11 +288,9 @@ export const HubScreen: React.FC = () => {
       {/* Nhóm 1: Các chế độ đã sẵn sàng (U5, U11) */}
       {!loading && readyGames.length > 0 && (
         <section className="space-y-3" aria-label="Chế độ sẵn sàng luyện">
-          <div className="flex items-center justify-between gap-2">
-            <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
-              Sẵn sàng luyện ({readyGames.length})
-            </h2>
-          </div>
+          <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+            Sẵn sàng luyện ({readyGames.length})
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {readyGames.map((g) => renderGameCard(g, false))}
           </div>
@@ -291,7 +305,7 @@ export const HubScreen: React.FC = () => {
           aria-label="Chế độ sắp có"
           data-testid="hub-coming-soon-section"
         >
-          <div className="flex items-center justify-between gap-2">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-2">
               <Compass className="w-4 h-4" style={{ color: 'var(--color-text-dim)' }} />
               <h2 className="text-base font-bold" style={{ color: 'var(--color-text-dim)' }}>
@@ -343,14 +357,18 @@ export const HubScreen: React.FC = () => {
                       className="p-3.5 rounded-[var(--radius-md)] border flex flex-col justify-between gap-3"
                       style={{
                         backgroundColor: 'var(--color-surface-2)',
-                        borderColor: idx === 0 ? `var(--color-${activeGame.skill})` : 'var(--color-border)',
+                        borderColor:
+                          idx === 0 ? `var(--color-${activeGame.skill})` : 'var(--color-border)',
                       }}
                     >
                       <div className="space-y-1">
                         <div className="text-sm font-bold" style={{ color: 'var(--color-text)' }}>
                           {modeLabelVi(mode)}
                         </div>
-                        <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                        <p
+                          className="text-xs leading-relaxed"
+                          style={{ color: 'var(--color-text-dim)' }}
+                        >
                           {MODE_DESC_VI[mode]}
                         </p>
                       </div>

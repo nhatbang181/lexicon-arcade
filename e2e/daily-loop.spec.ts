@@ -120,6 +120,18 @@ test.describe('T3-C · Vòng lặp ngày, Hub Sheet, Thống kê, Cài đặt & 
     await expect(page.getByTestId('pref-haptics-off')).toHaveAttribute('aria-checked', 'true');
     await expect(page.getByTestId('pref-show-mascot')).toHaveAttribute('aria-checked', 'false');
 
+    // Khi tắt "Hiện nhân vật", sang Hôm nay phải ẩn [data-mascot]
+    await gotoApp(page, '#/');
+    await expect(page.locator('[data-mascot]')).toHaveCount(0);
+
+    // Bật lại "Hiện nhân vật" -> sang Hôm nay phải thấy [data-mascot]
+    await gotoApp(page, '#/settings');
+    await page.getByTestId('pref-show-mascot').click();
+    await expect(page.getByTestId('pref-show-mascot')).toHaveAttribute('aria-checked', 'true');
+    await gotoApp(page, '#/');
+    await expect(page.locator('[data-mascot]').first()).toBeVisible();
+    await gotoApp(page, '#/settings');
+
     // Tạo 1 bản sao lưu hợp lệ bằng exportBackupJson rồi nhập ở chế độ Gộp
     const backupJson = await page.evaluate(
       async ({ mDb, mBackup, mFsrs }) => {
