@@ -1,6 +1,9 @@
 # PROGRESS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0 ĐẠT) · **Đợt 2 ✅ (M-Đ2 ĐẠT: T2-A, T2-B, T2-C, FX-0, FX-2 đã merge `master`)** · Đang chạy Đợt 3: `r-t3-b` (dữ liệu) + mở `T3-A` (hệ thiết kế/asset/fx)
+## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0) · Đợt 2 ✅ (M-Đ2) · **Đợt 3 đang chạy: T3-B ✅ ĐẠT & merge `master` · G1 ✅ ĐẠT** · `r-t3-a` (A3–A4) ∥ `r-t3-c` (C1–C4)
+- 2026-11-25 10:11 · **Audit-Max Đợt 3 · T3-B ✅ ĐẠT & merge `master` + G1 ✅ ĐẠT**:
+  - `T3-B` (`r-t3-b` Neon Medium + `rv-data-d5d8` Claude Sonnet 5.5 ĐẠT): 32/32 listening MP3 + 320/320 D4, 2.207/2.207 vocab MP3, 700/700 dictation MP3 (L1–10), D5 2.069/2.069, D8 732/747, D10 213/231 (94,4% sharesLemma), D14 2 bộ ExamTest, D17 `words.core.json`, `xac_minh.md`, `public/audio` 86,91 MB (< 400 MB), `validate:data` exit 0.
+  - `G1` (`r-t3-a` Neon High): `contrast.mjs` 144/144 (0 lỗi 3 theme), `assets_credits.mjs` 153/153 (0 lỗi), 10 contact sheet duyệt mắt đạt; sang Chặng 2 (A3–A4 merge sớm `fx/LiveCard/Mascot`) song song `T3-C`.
 - 2026-11-25 09:24 · **Audit-Max Đợt 2 · FX-0/FX-2 ✅ & T2-C ✅ merge `master` (ĐÓNG M-Đ2)**:
   - `FX-0/FX-2` (`r-fx` Neon Medium + `rv-fx` Claude Sonnet 5.5 ĐẠT 0/0): `listen_spell` lọc MP3 thật (`SR-22`), van tải thẻ mới 15/ngày (giảm khi < 80%, dừng khi > 150), vòng phục hồi ≤ 50 thẻ sau ≥ 3 ngày vắng, từ mới theo khối chủ đề, `registerProgressSaver` V1, vá dứt điểm regex `listeningAnswer.ts` (381/381 đáp án pass).
   - `T2-C` (`r-t2-c-2` Neon Medium + `rv-t2-c` Argon Medium ĐẠT + fixer `d8c28cf`): W1 autosave/khôi phục/Exam tự nộp/DEV-only mẫu (`TASK2_CLAUDE_RESPONSE` = 0 trong dist), PP-16 nhãn "ước lượng" + chỉ lần chấm đầu, giảm ma sát 3 thao tác ≤ 6, W2 lưu Claude sau Recap/seed/khoá tự chấm trước mẫu, Portfolio xác nhận xoá + `userItems` SRS, `a11y.spec.ts` `play-w1` 2/2 pass.

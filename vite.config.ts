@@ -35,10 +35,10 @@ const cspMeta = (): Plugin => ({
   ],
 });
 
-// Chunk nạp lười: 9 game, Placement, ChartRenderer (W1/W2), kho legacy, fixture test.
+// Chunk nạp lười: 9 game, Placement, màn phụ, ChartRenderer/GradingPanel/Highlighter/MapView/PassageView, kho legacy, fixture test.
 const LAZY_CHUNK_GLOBS = [
   'assets/{v1,v2,v3,r1,r2,l1,l2,w1,w2}-*.js',
-  'assets/{PlacementScreen,ChartRenderer,legacyEntry}-*.{js,css}',
+  'assets/{PlacementScreen,ChartRenderer,GradingPanel,PortfolioScreen,OnboardingScreen,SettingsScreen,StatsScreen,Highlighter,MapView,PassageView,listeningAnswer,legacyEntry}-*.{js,css}',
   'assets/*_fixtures-*.js',
 ];
 export default defineConfig(({ mode }) => ({
@@ -92,13 +92,13 @@ export default defineConfig(({ mode }) => ({
           {
             // Workbox chỉ chép thân hàm vào sw.js nên regex phải nằm trong hàm (biến ngoài → ReferenceError trong SW).
             urlPattern: ({ url }) =>
-              /\/assets\/((v[123]|r[12]|l[12]|w[12])-|PlacementScreen-|ChartRenderer-|legacyEntry-|[a-z0-9]+_fixtures-)/.test(
+              /\/assets\/((v[123]|r[12]|l[12]|w[12])-|PlacementScreen-|ChartRenderer-|GradingPanel-|PortfolioScreen-|OnboardingScreen-|SettingsScreen-|StatsScreen-|Highlighter-|MapView-|PassageView-|listeningAnswer-|legacyEntry-|[a-z0-9]+_fixtures-)/.test(
                 url.pathname,
               ),
             handler: 'CacheFirst',
             options: {
               cacheName: 'lexicon-chunks',
-              expiration: { maxEntries: 60, maxAgeSeconds: 90 * 24 * 60 * 60 },
+              expiration: { maxEntries: 80, maxAgeSeconds: 90 * 24 * 60 * 60 },
               cacheableResponse: { statuses: [0, 200] },
             },
           },
