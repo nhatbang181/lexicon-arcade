@@ -11,3 +11,6 @@ playwright-report/
 out/
 playwright.t1*.config.ts
 dist-e2e
+
+# gói ngữ cảnh sinh ra bởi docs/audit-max/cong-cu/goi-ngu-canh.mjs (tạo lại mỗi lần giao task)
+docs/audit-max/goi/*.md

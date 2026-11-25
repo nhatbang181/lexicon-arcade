@@ -2,6 +2,8 @@
 
 > Thay mọi `<…>`. Port theo `03-CAC-BUOC.md` §3. File độc quyền chép **nguyên văn** từ `TASKS.md` cộng phần AD cấp thêm (đã ghi `DECISIONS.md`).
 > Mọi prompt đều có 4 khối cố định: **Thư mục + port**, **Đọc trước**, **Luật**, **Báo lại ≤ 10 dòng**.
+> **Đọc trước = 1 gói ngữ cảnh** (từ 25/11/2026). Gói do `node docs/audit-max/cong-cu/goi-ngu-canh.mjs <TASK> <builder|reviewer|fixer>` tạo ra (`03-CAC-BUOC.md` §4), chép nguyên văn luật cứng, phạm vi task, mã lỗi được trích, rubric (cho reviewer), bẫy, HANDOFF liên quan. Gói thường 50–75 KB, thay cho danh sách 16–18 file (220–275 KB) trước đây. Không giao task khi script báo lỗi.
+> Tạo agent con **mới** (không fork hội thoại của điều phối). Effort theo bước: `02-KE-HOACH.md` §3.
 
 ## Khối dùng chung (dán vào cuối mọi prompt)
 
@@ -36,19 +38,14 @@ BƯỚC ĐẦU: npm ci.
 PORT: dev server cho audit-ui `npx vite --port <VITE> --strictPort` (nền) rồi `BASE_URL=http://localhost:<VITE> node docs/audit-max/cong-cu/audit-ui.mjs ...`;
       E2E `PW_PORT=<PW> PW_CHANNEL=chrome npx playwright test <spec>`; preview `npx vite preview --port <PREVIEW> --strictPort`.
 
-ĐỌC TRƯỚC (đúng thứ tự):
+ĐỌC TRƯỚC:
   AGENTS.md
-  docs/audit-max/BAN-GIAO-AGENT.md                (toàn cảnh)
-  docs/audit-max/antigravity/04-LUAT-CUNG.md       (luật cứng)
-  docs/audit-max/antigravity/16-GHI-CHU-BAY.md     (bẫy đã gặp)
-  docs/audit-max/antigravity/09-PHUONG-PHAP-HOC.md (mọi task game – sư phạm đứng trên hết)
-  docs/audit-max/antigravity/<10-DATA | 11-ASSET | 12-UI-UX | 13-ANIMATION | 14-TOI-UU-WEB>.md (file mảng của task)
-  docs/audit-max/LUAT.md, 07-QUY-TRINH-KIEM-CHEO.md
-  docs/audit-max/TASKS.md → CHỈ mục <TASK>
-  Mã lỗi được trích: <danh sách mã + file 01…06/phụ lục chứa nó> – đọc đúng dòng.
-  docs/audit-max/HANDOFF.md (mục giao cho chủ file của bạn → làm luôn)
-  docs/audit-max/KIEM-THU.md §2 (dòng liên quan)
+  D:\English\docs\audit-max\goi\<TASK>-builder.md   (GÓI NGỮ CẢNH: luật cứng, phạm vi task, mã lỗi được trích nguyên văn,
+                                                     bảng kiểm, bẫy, HANDOFF liên quan – đọc HẾT gói, đừng đọc lướt)
+  docs/audit-max/HANDOFF.md trong worktree (chỉ khi mới hơn gói; mục giao cho chủ file của bạn → làm luôn)
   Ảnh gốc của màn bị đụng: docs/audit-max/anh-goc/ và anh-goc-loi/
+  KHÔNG đọc nguyên các file luật/kế hoạch khác. Cần tra thêm (mã không có trong gói, nghi ngờ gói thiếu): tìm đúng mã
+  trong file gốc, vd `rg -n "\| J1 \|" docs/audit-max`, rồi đọc đúng dòng/mục đó. Gói thiếu thì ghi vào BAO-CAO mục "Gói thiếu".
 
 FILE ĐỘC QUYỀN: <chép nguyên văn TASKS.md> + docs/audit-max/{KE-HOACH,BAO-CAO}-<TASK>.md, docs/audit-max/anh-sau/<TASK>/**, HANDOFF.md
   <+ file AD cấp thêm (đã ghi DECISIONS.md)>
@@ -65,7 +62,9 @@ CÁCH LÀM:
        node docs/audit-max/cong-cu/audit-ui.mjs --route <routes> --vp 390x844,375x667,820x1180,1280x800 --theme dark,light --out docs/audit-max/anh-sau/<TASK>
        → MỞ XEM mọi ảnh *-loi.png của 390 và 375 bằng mắt (công cụ đọc ảnh). Sửa tới 0 CHẶN, ≤ 2 NẶNG mỗi màn.
        + 1 ảnh sau tương tác (đúng + sai + mở giải thích + Recap) ở 390; + video 3–5 s (Playwright recordVideo) màn chính.
- B4. Ghi docs/audit-max/BAO-CAO-<TASK>.md: mã ✅/⏳ (+lý do), file sửa, số đo trước → sau, chức năng giữ nguyên, mục "Quyết định".
+ B4. Ghi docs/audit-max/BAO-CAO-<TASK>.md (≤ 10 KB, dạng bảng, không viết văn): mã ✅/⏳ (+lý do), file sửa, số đo trước → sau,
+     chức năng giữ nguyên, mục "Quyết định", mục "Gói thiếu" (nếu có).
+ ẢNH: đọc report.json/số đo trước; chỉ MỞ ảnh -loi.png và ảnh 390/375. Ảnh khung khác chỉ mở khi report.json báo lỗi ở khung đó.
 
 <KHỐI DÙNG CHUNG>
 
@@ -83,9 +82,9 @@ PORT: vite <VITE+5>, PW <PW+5>, preview <PREVIEW+5>. Tắt server khi xong.
 
 Chấm dễ là thất bại (dự án anh em builder tự chấm 9,5 khi thực tế ~4); nhưng không bịa lỗi.
 
-ĐỌC: BAN-GIAO-AGENT.md; antigravity/04-LUAT-CUNG.md, 09-PHUONG-PHAP-HOC.md, 16-GHI-CHU-BAY.md, file mảng liên quan;
-     LUAT.md; 07-QUY-TRINH-KIEM-CHEO.md §4–5; TASKS.md mục <TASK>; mã lỗi được trích;
-     KE-HOACH-<TASK>.md, BAO-CAO-<TASK>.md, HANDOFF.md (chỉ để biết họ nói gì – KHÔNG tin số).
+ĐỌC: D:\English\docs\audit-max\goi\<TASK>-reviewer.md (GÓI NGỮ CẢNH – đọc HẾT: luật cứng, phạm vi, mã lỗi nguyên văn, rubric, checklist);
+     KE-HOACH-<TASK>.md, BAO-CAO-<TASK>.md (chỉ để biết họ nói gì – KHÔNG tin số).
+     Gói là SÀN, không phải TRẦN: lỗi ngoài phạm vi gói (mất chức năng, lỗi iPhone, luật khác) vẫn phải ghi. Nghi ngờ thì tra file gốc theo mã.
 
 LÀM:
  1. Tự chạy lại mọi lệnh kiểm của task (tsc, npm test, validate:data, vitest phần task, E2E của task, audit-ui 390/375/820/1280 + 430/1180/1366).
@@ -98,6 +97,7 @@ LÀM:
  5. Bấm thử MỌI chức năng trong KE-HOACH. Mất chức năng = CHẶN.
  6. Ghi REVIEW theo mẫu 07 §4 (phần chấm mù §0 bỏ qua ở Đợt 2): lỗi cụ thể (file:dòng hoặc route/khung/tọa độ, mã luật, mức, cách sửa),
     bảng tiêu chí ĐẠT từng mã lỗi của task (đạt/không + bằng chứng), phán quyết ĐẠT/TRẢ VỀ.
+    REVIEW ≤ 10 KB, dạng bảng; không chép lại luật, không kể lại quá trình.
 
 BÁO LẠI ≤ 10 dòng: phán quyết; mỗi lỗi CHẶN/NẶNG 1 dòng; số đo thật; đường dẫn REVIEW.
 ```
@@ -109,7 +109,11 @@ Bạn là Reviewer <X> (A hoặc B) độc lập cho task <TASK>. Builder: <mode
 THƯ MỤC: D:\English-wt\<TASK>. CHỈ ĐỌC + CHẠY KIỂM. Chỉ tạo docs/audit-max/REVIEW-<TASK>-<X>.md và out/.
 PORT: vite <VITE+5 (A) | VITE+6 (B)>, PW <…>. Tắt server khi xong.
 
+ĐỌC: D:\English\docs\audit-max\goi\<TASK>-reviewer.md (cả 2 reviewer dùng cùng 1 gói). Gói là SÀN, không phải TRẦN.
 Làm theo docs/audit-max/prompt-reviewer.txt, với các bổ sung:
+ - ẢNH: phần chấm mù giữ nguyên (chấm mọi ảnh shuffle-*). Phần soi lỗi: đọc report.json trước, mở ảnh -loi.png + ảnh iPhone;
+   khung khác chỉ mở khi report.json báo lỗi ở đó.
+ - REVIEW ≤ 10 KB, dạng bảng theo mẫu 07 §4; không chép lại luật, không kể lại quá trình.
  - BƯỚC 0 chấm mù TRƯỚC TIÊN: audit-ui --vp 390x844,1280x800 --theme dark,light --fmt jpg --no-loi 1 → tron-anh.mjs → chấm R2,R4,R5,R6
    trên ảnh shuffle-* → rồi mới mở key.json.
  - Khung đo đầy đủ: 390x844, 375x667, 430x932, 820x1180, 1180x820, 1280x800, 1366x768 × dark/light. iPhone là ưu tiên 1:
@@ -137,7 +141,8 @@ B0. Đọc git log, git status, git diff. Rồi `git merge --no-edit master` đ�
     - Dở nhưng đúng hướng → hoàn thiện, commit nhỏ.
     - Hỏng không cứu được → commit nguyên trạng vào nhánh phụ audit-max/<TASK>-dang-do, quay nhánh chính về HEAD cuối, làm lại phần đó;
       ghi BAO-CAO.
-B1. Đọc KE-HOACH-<TASK>.md (đã có) + BAO-CAO nếu có; làm tiếp các bước con chưa xong theo 05-DO-KHO-TASK.md §2.
+B1. Đọc gói D:\English\docs\audit-max\goi\<TASK>-builder.md, KE-HOACH-<TASK>.md (đã có) + BAO-CAO nếu có;
+    làm tiếp các bước con chưa xong (bước con nằm trong gói, mục 05-DO-KHO-TASK).
 Phần còn lại như prompt Builder §1 (Đọc trước, B3 kiểm, B4 báo cáo).
 
 <KHỐI DÙNG CHUNG>
@@ -149,7 +154,7 @@ BÁO LẠI ≤ 10 dòng (ghi rõ phần nào là của agent trước, phần n�
 ```
 Bạn là Fixer vòng <N> cho task <TASK>. THƯ MỤC: D:\English-wt\<TASK>. PORT: như builder.
 Trước tiên: git merge --no-edit master (nếu master đã đi tiếp); xung đột HANDOFF.md/BAO-CAO.md → ghép cả hai.
-ĐỌC: docs/audit-max/prompt-fixer.txt (luật fixer), REVIEW-<TASK>-A.md (+ -B.md), BAO-CAO-<TASK>.md, antigravity/04-LUAT-CUNG.md.
+ĐỌC: D:\English\docs\audit-max\goi\<TASK>-fixer.md (gói: luật cứng, luật fixer, phạm vi task, mã lỗi), REVIEW-<TASK>-A.md (+ -B.md), BAO-CAO-<TASK>.md.
 Sửa ĐÚNG danh sách lỗi theo thứ tự CHẶN → NẶNG → NHẸ, mỗi lỗi có test chứng minh. Không thêm tính năng, không đổi phần được khen.
 Lỗi nằm ở file không thuộc task → HANDOFF.md, không tự sửa. Không đồng ý lỗi → HANDOFF.md "Tranh chấp", vẫn sửa phần còn lại.
 Kiểm: như B3 của builder. Ghi mục "Vòng <N>" trong BAO-CAO: mã lỗi → sửa thế nào → file → số đo sau.

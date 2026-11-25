@@ -13,9 +13,11 @@ BƯỚC 0 – CHẤM MÙ TRƯỚC TIÊN (KIEM-THU.md §3.2):
   CHƯA mở ảnh nào trong out/review-<TASK>-<X>. Chấm R2, R4, R5, R6 (mốc 4/7/10, KIEM-THU §3.1) từng ảnh shuffle-* vào
   PHIEU-CHAM.md, RỒI mới mở key.json. Các tiêu chí còn lại chấm sau khi chơi thật và xem video.
 
-ĐỌC: docs\audit-max\BAN-GIAO-AGENT.md, 00-DOC-TRUOC.md, LUAT.md, 07-QUY-TRINH-KIEM-CHEO.md (§4–5), KIEM-THU.md, TASKS.md (mục <TASK>),
-     các file 01…06 mà mục <TASK> trích mã lỗi, KE-HOACH-<TASK>.md và BAO-CAO-<TASK>.md của builder
-     (chỉ để biết họ nói đã làm gì – KHÔNG tin số liệu trong đó).
+ĐỌC: D:\English\docs\audit-max\goi\<TASK>-reviewer.md – GÓI NGỮ CẢNH do điều phối tạo bằng cong-cu\goi-ngu-canh.mjs, chép NGUYÊN VĂN
+     luật cứng, phạm vi <TASK>, mã lỗi được trích, rubric KIEM-THU §3, checklist §4, mẫu REVIEW 07 §4, chống gian lận 07 §5, bẫy.
+     Đọc HẾT gói. KE-HOACH-<TASK>.md và BAO-CAO-<TASK>.md của builder (chỉ để biết họ nói đã làm gì – KHÔNG tin số liệu trong đó).
+     Gói là SÀN, không phải TRẦN: lỗi ngoài phạm vi gói vẫn phải ghi; nghi ngờ thì tra file gốc theo mã (rg -n "\| J1 \|" docs\audit-max).
+     REVIEW ≤ 10 KB, dạng bảng theo mẫu 07 §4. Ảnh soi lỗi: đọc report.json trước, mở ảnh -loi.png + ảnh iPhone (chấm mù giữ nguyên).
 
 LÀM:
   1. Tự chạy lại: npx tsc --noEmit -p . ; npm test ; npm run validate:data ; lệnh kiểm riêng của <TASK> ;

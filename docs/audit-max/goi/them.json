@@ -1,0 +1,82 @@
+{
+  "_ghi_chu": "Cấu hình cho cong-cu/goi-ngu-canh.mjs. Chỉ điều phối sửa. sections = [file (tính từ docs/audit-max/), số mục hoặc \"*\" cho cả file]. codes = mã luôn lấy thêm. bo_qua = mã không tra (kèm lý do). bo_qua_muc = \"<file>#<mục>\" được phép không tồn tại (kèm lý do).",
+  "all": {
+    "sections": [
+      ["antigravity/04-LUAT-CUNG.md", "*"],
+      ["07-QUY-TRINH-KIEM-CHEO.md", "2"],
+      ["antigravity/09-PHUONG-PHAP-HOC.md", "2"],
+      ["antigravity/16-GHI-CHU-BAY.md", "*"]
+    ]
+  },
+  "builder": {
+    "sections": [
+      ["07-QUY-TRINH-KIEM-CHEO.md", "3"],
+      ["KIEM-THU.md", "2.2"]
+    ]
+  },
+  "reviewer": {
+    "sections": [
+      ["KIEM-THU.md", "3"],
+      ["KIEM-THU.md", "4"],
+      ["07-QUY-TRINH-KIEM-CHEO.md", "4"],
+      ["07-QUY-TRINH-KIEM-CHEO.md", "5"],
+      ["antigravity/09-PHUONG-PHAP-HOC.md", "4"]
+    ],
+    "codes": ["B2", "B5", "D6", "J1", "J3"]
+  },
+  "fixer": {
+    "sections": [
+      ["07-QUY-TRINH-KIEM-CHEO.md", "6"]
+    ],
+    "files": ["prompt-fixer.txt"]
+  },
+  "theo_task": {
+    "T2-": {
+      "sections": [
+        ["antigravity/09-PHUONG-PHAP-HOC.md", "0"],
+        ["antigravity/12-UI-UX.md", "3"]
+      ],
+      "codes": ["*B"]
+    },
+    "T3-A": {
+      "sections": [
+        ["antigravity/11-ASSET.md", "0"],
+        ["antigravity/12-UI-UX.md", "0"],
+        ["antigravity/13-ANIMATION.md", "0"],
+        ["antigravity/13-ANIMATION.md", "3"]
+      ]
+    },
+    "T3-B": {
+      "sections": [
+        ["antigravity/10-DATA.md", "*"]
+      ]
+    },
+    "T3-C": {
+      "sections": [
+        ["antigravity/12-UI-UX.md", "0"],
+        ["antigravity/12-UI-UX.md", "4"]
+      ]
+    },
+    "T4-": {
+      "sections": [
+        ["antigravity/13-ANIMATION.md", "0"],
+        ["antigravity/13-ANIMATION.md", "1"],
+        ["antigravity/13-ANIMATION.md", "3"],
+        ["antigravity/13-ANIMATION.md", "5"],
+        ["antigravity/13-ANIMATION.md", "6"],
+        ["antigravity/12-UI-UX.md", "0"],
+        ["antigravity/12-UI-UX.md", "3"]
+      ],
+      "codes": ["*J", "*B"]
+    }
+  },
+  "bo_qua": {
+    "P0": "mức ưu tiên (P0/P1/P2), không phải mã luật",
+    "P2": "mức ưu tiên",
+    "P3": "mức ưu tiên",
+    "L7": "cấp độ dictation (\"400 dictation L7–10\"), không phải mã lỗi",
+    "M5": "mốc M5 của master plan (Speaking), không phải luật M5 mật độ hình — luật M1–M7 được trích riêng khi task cần",
+    "M6": "mốc M6 của master plan"
+  },
+  "bo_qua_muc": {}
+}

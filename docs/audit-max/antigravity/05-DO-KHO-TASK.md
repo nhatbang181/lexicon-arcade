@@ -3,6 +3,7 @@
 > **Độ khó (1–5):** 1 = việc lặp lại theo mẫu · 3 = nhiều file, cần hiểu luồng dữ liệu · 5 = thiết kế hệ thống, ảnh hưởng mọi màn, dễ sai âm thầm.
 > **Rủi ro (T/V/C):** khả năng làm hỏng thứ khác hoặc sai mà test không bắt được. Thấp / Vừa / Cao.
 > **Tầng model:** xem `02-KE-HOACH.md` §3. Luôn: reviewer khác model với builder, ưu tiên khác hãng.
+> **Effort:** theo bước, không theo task (`02-KE-HOACH.md` §3 "Effort theo bước"). Chữ "high" trong cột Builder dưới đây chỉ áp cho bước viết KE-HOACH và lúc gỡ lỗi khi kẹt; còn lúc thực thi theo kế hoạch thì dùng normal/medium.
 > **Thời gian:** ước lượng giờ máy chạy agent, không tính chờ quota.
 
 ## 1. Bảng tổng

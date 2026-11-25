@@ -61,11 +61,11 @@ Ngoại lệ duy nhất là phần **quy trình vận hành**: cổng chạy li�
 4. `D:\English\DECISIONS.md` (đặc biệt mục D và các dòng ngày 24/11)
 5. File 10–14 chỉ đọc lướt mục §0 "Tóm tắt 10 dòng" để biết giao cho ai
 
-**Agent con (builder, reviewer, fixer)**: đọc đúng danh sách trong prompt mẫu (`06-PROMPT-MAU.md`). Danh sách đó luôn gồm:
-- `BAN-GIAO-AGENT.md`
-- `04-LUAT-CUNG.md` của thư mục này
-- file mảng tương ứng (10–14)
-- `16-GHI-CHU-BAY.md`
+**Agent con (builder, reviewer, fixer)**: đọc **1 gói ngữ cảnh** `docs/audit-max/goi/<TASK>-<vai>.md` (từ 25/11/2026), cộng `AGENTS.md` và file riêng của task (KE-HOACH, BAO-CAO, REVIEW).
+- Điều phối tạo gói bằng `node docs/audit-max/cong-cu/goi-ngu-canh.mjs <TASK> <vai>` trước khi giao (`03-CAC-BUOC.md` §4).
+- Gói chép **nguyên văn** (không tóm tắt): toàn bộ `04-LUAT-CUNG.md`, `16-GHI-CHU-BAY.md`, phạm vi task trong `TASKS.md`, bước con trong `05`, mọi mã lỗi và mục mà task trích, mục mặc định của file mảng (10–14), rubric cho reviewer, HANDOFF liên quan.
+- Mã được trích mà không có trong tài liệu gốc → script dừng, không tạo gói thiếu.
+- Lý do: danh sách đọc cũ là 16–18 file (220–275 KB). Ngữ cảnh dài làm loãng sự chú ý vào tiêu chí của task; luật lặp ở nhiều file với lời hơi khác nhau dễ gây hiểu sai.
 
 ## 4. Vai trò (giữ nguyên `07-QUY-TRINH-KIEM-CHEO.md` §1, thêm chi tiết vận hành)
 

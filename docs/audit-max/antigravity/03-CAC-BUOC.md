@@ -69,9 +69,14 @@ cd /d/English-wt/<task> && npm ci
 - Worktree đã tạo, `npm ci` xong.
 
 **Các bước:**
-1. Chọn model theo `05-DO-KHO-TASK.md`.
-2. Lấy prompt Builder ở `06-PROMPT-MAU.md` §1. Điền: mã task, worktree, port, file độc quyền (chép nguyên văn từ `TASKS.md`), việc chen thêm (`02` §4), file mảng phải đọc (10–14).
-3. Giao, ghi nhật ký `01` §6: "Giao <task> cho <model>, port …".
+1. Chọn model theo `05-DO-KHO-TASK.md`, effort theo bước (`02` §3 "Effort theo bước").
+2. **Tạo gói ngữ cảnh** ở `D:\English` (master mới nhất):
+   `node docs/audit-max/cong-cu/goi-ngu-canh.mjs <TASK> builder`
+   - Lệnh báo `LỖI` (mã được trích không tìm thấy) → sửa tài liệu gốc, hoặc thêm vào `docs/audit-max/goi/them.json` mục `bo_qua` kèm lý do. **Không giao task khi gói lỗi.**
+   - Task cần thêm luật mà script không tự dò ra → thêm mã vào `them.json` (`theo_task`), hoặc thêm `--them-ma A1,B2`.
+   - Gói nằm ở `D:\English\docs\audit-max\goi\<TASK>-builder.md`. Gói không commit; tạo lại mỗi khi master đổi luật hoặc tài liệu.
+3. Lấy prompt Builder ở `06-PROMPT-MAU.md` §1. Điền: mã task, worktree, port, **đường dẫn tuyệt đối tới gói**, việc chen thêm (`02` §4).
+4. Giao, ghi nhật ký `01` §6: "Giao <task> cho <model>, port …, gói <commit>".
 
 **Trong lúc chờ:** không đọc transcript của agent con; chỉ nhận báo cáo cuối. Có thể chuẩn bị worktree và brief cho task kế tiếp.
 
@@ -96,6 +101,7 @@ npx tsc --noEmit -p . && npx vitest run 2>&1 | grep -E "Test Files|Tests "
 
 **Đợt 2:** 1 reviewer, kiểm test + diff + logic + bấm thử chức năng. Prompt `06-PROMPT-MAU.md` §2.
 **Đợt 3–4:** 2 reviewer **song song, độc lập**, khác model với builder; nếu được thì A và B cũng khác hãng nhau. Bắt buộc chấm mù trước. Prompt `06-PROMPT-MAU.md` §3.
+**Trước khi giao:** `node docs/audit-max/cong-cu/goi-ngu-canh.mjs <TASK> reviewer`. Hai reviewer dùng **cùng một gói**, và gói được tạo từ tài liệu gốc, không từ BAO-CAO của builder. Gói reviewer có đủ rubric (`KIEM-THU` §3) và checklist soi ảnh (§4) nguyên văn.
 
 **Tổng hợp:**
 - Lấy **điểm thấp hơn** của 2 reviewer cho từng tiêu chí rubric.
@@ -107,7 +113,7 @@ npx tsc --noEmit -p . && npx vitest run 2>&1 | grep -E "Test Files|Tests "
 - TRẢ VỀ → bước 6.1.
 
 ### 6.1 Fixer
-- Prompt `06-PROMPT-MAU.md` §5. Fixer là builder cũ, hoặc agent mới cùng model với builder.
+- Prompt `06-PROMPT-MAU.md` §5. Fixer là builder cũ, hoặc agent mới cùng model với builder. Agent mới thì tạo gói trước: `node docs/audit-max/cong-cu/goi-ngu-canh.mjs <TASK> fixer`.
 - Thứ tự sửa: CHẶN → NẶNG → NHẸ.
 - Sau fixer, AD tự chạy cổng của task (bước 5).
 - **Qua cổng là dừng, không review vòng hai**. Ngoại lệ: task đợt 3–4 có đổi giao diện, hoặc lỗi gốc là CHẶN. Hai trường hợp này cần 1 reviewer xác nhận lại các lỗi đã sửa (review hẹp, chỉ kiểm danh sách lỗi cũ).

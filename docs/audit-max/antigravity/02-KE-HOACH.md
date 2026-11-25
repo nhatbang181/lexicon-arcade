@@ -106,6 +106,19 @@ Tầng model trong Antigravity (kiểm lại tên đúng trong danh sách model 
 | T4-A V2–R2, T4-B, T4-C | Vừa (high) | Mạnh | Vừa khác hãng |
 | Script, đo, chụp ảnh, dọn dẹp | Rẻ | – | – |
 
+**Effort theo bước** (Bang, 25/11/2026). Bảng trên chọn **model**. Effort chọn theo **bước**, không theo task. Chọn model quan trọng hơn chọn effort.
+
+| Bước | Effort |
+|---|---|
+| Thiết kế flow, chia task, quyết định ở cổng (điều phối) | cao |
+| Builder viết `KE-HOACH-<task>.md` (bước suy nghĩ) | cao |
+| Builder làm theo KE-HOACH; fixer sửa theo danh sách lỗi | **normal / medium** |
+| Kẹt: cùng một lỗi hoặc test đỏ 2 lần | nâng lên cao **cho riêng lần gỡ đó**, gỡ xong hạ lại |
+| Reviewer chấm rubric, phán quyết | medium–cao (chấm là phán đoán; chấm dễ thì cổng vô nghĩa) |
+| Chạy lệnh, chụp ảnh, đo, dọn dẹp | thấp, model rẻ |
+
+Lý do: kế hoạch, luật và gói ngữ cảnh đã viết sẵn. Effort cao lúc thực thi chỉ khiến agent nghĩ lại kế hoạch hoặc thêm việc ngoài phạm vi (trái "không thêm tính năng"), và tốn thời gian. Với Antigravity, "effort" là biến thể model (vd `Gemini 4 Argon (Medium)` so với `(High)`). Nếu builder phải chạy một phiên liền cả KE-HOACH lẫn thực thi thì chọn **medium** và yêu cầu KE-HOACH kỹ.
+
 **Luật quota:**
 - Bể của một hãng còn < 25% thì chỉ chạy 1 worker hãng đó. Còn < 10% thì dừng ở cổng gần nhất, ghi `01-TRANG-THAI.md` §6, chuyển việc sang hãng còn lại (vẫn giữ luật reviewer khác model với builder).
 - Lúc bàn giao, bể Claude trong Antigravity báo 0% tới 27/11. Vì vậy Gemini làm builder, còn reviewer chọn Gemini khác dòng hoặc chờ Claude.
