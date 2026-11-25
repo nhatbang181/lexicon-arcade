@@ -48,3 +48,7 @@
 - 2026-11-25 · T2-B (audit-max Đợt 2) · Giữ `export default` trong `src/games/{l1-trap-detector,l2-dictation-ladder}/index.ts` và đổi `load` sang `Promise.resolve({ default })` vì `registry.ts` dynamic-import trực tiếp module; vẫn tách chunk lazy L1/L2 và hết cảnh báo Rollup (X5).
 - 2026-11-25 · T2-B (audit-max Đợt 2) · Đưa E2E chéo L1 → V1 vào `e2e/m3.spec.ts` và xuất ảnh chụp E2E vào `test-results/m3/` thay vì `e2e/screenshots/m3/` (SR-01, SR-07).
 - 2026-11-25 · T2-B (audit-max Đợt 2) · Trong `AnswerInput.tsx`, render trực tiếp `<kbd>` cỡ 12 px (`text-xs`) thay `<KeyHint>` (11 px thuộc T3-A) để đóng FX-1 không sửa file ngoài quyền.
+- 2026-11-25 · điều phối (audit-max Đợt 2) · `rv-t2-a-2` dùng `Gemini 4 Argon (Medium)` (khác model với builder `Gemini 4 Neon Medium`, hạ effort từ high để tối ưu quota khi Claude 0%). Kết quả: ĐẠT (0 CHẶN, ≤ 1 NẶNG/màn chỉ còn `J9` thuộc Đợt 4, 506/506 vitest, 4/4 E2E m1/m2 gồm R1→V1, 56 lượt audit-ui 7 khung 0 D3/D4/D5/D7/D10).
+- 2026-11-25 · T2-A (audit-max Đợt 2) · Thay `<select>` chọn bài đọc ở R1/R2 bằng nút `min-h-[44px]` + `Sheet` để đạt `D3` (44px), `D10` (bỏ control gốc) và `D5` (0 tràn ngang 375/390).
+- 2026-11-25 · T2-A (audit-max Đợt 2) · Tách loader cục bộ `loader.ts` (V2/V3) và bỏ import tĩnh `r1_fixtures` (R1/R2) để sạch chunk 4 game T2-A; `v2v3_fixtures` ở `_shared/vocabLoaders.ts` ghi HANDOFF vì ngoài file độc quyền.
+- 2026-11-25 · T2-A (audit-max Đợt 2) · Giữ `J9` (1 NẶNG/màn ở V3/R1/R2) thay vì thêm animation giả để tuân thủ `SR-12`; chuyển động nghỉ thuộc Đợt 4 (`T4-A`).

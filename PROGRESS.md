@@ -1,6 +1,7 @@
 # PROGRESS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0 ĐẠT) · Đợt 2 đang chạy: **T2-B ✅ đã merge `master`** · T2-A đang hoàn thiện kiểm cuối · T2-C chờ · T3-B đang dở (tạm dừng do bể Gemini còn 7%, reset 09:38 giờ máy 25/11)
+## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0 ĐẠT) · Đợt 2 đang chạy: **T2-B ✅ & T2-A ✅ đã merge `master`** · T2-C đang chạy · FX-0/FX-2 đang chạy · T3-B đang dở
+- 2026-11-25 08:42 · **Audit-Max Đợt 2 · T2-A ✅ ĐẠT & merge `master`**: `r-t2-a` (Gemini 4 Neon Medium) + `rv-t2-a-2` (Gemini 4 Argon Medium) — V2/V3/R1/R2 hoàn thiện (`saveProgress` + `registerProgressSaver`, retry 0 XP, producer `err:l1col_*`/`tfng:*`/`head:*`, seeded selection + YNNG, Highlighter pointer+keyboard, R2 0 tràn ngang 360/375/390, thay `<select>` bằng Sheet), 4/4 E2E m1/m2 + R1→V1, 56 lượt audit-ui 7 khung 0 CHẶN (0 D3/D4/D5/D7/D10).
 - 2026-11-25 05:16 · **Audit-Max Đợt 2 · T2-B ✅ ĐẠT & merge `master`**: `r-t2-b` (Gemini 4 Neon High) + `rv-t2-b` (Gemini 4 Argon High) — L1/L2 lọc MP3 thật, chuẩn hoá đáp án Listening (381/381 đáp án 0 tự trượt), audio Safari iOS (TU-03), FX-1 chip `↵` 12px, producer `ltrap:*`/`dict:*` + `saveProgress`, 534/534 vitest, 3/3 E2E m3 + L1→V1, 0 CHẶN/0 NẶNG/0 NHẸ audit-ui trên 7 khung × 2 theme. Tạm dừng chờ reset quota Gemini (`09:38` giờ máy = `2026-11-24T23:08:42Z`).
 - 2026-11-20 16:52: Hoàn tất **M0 · Nền móng** (`4b799f5`, `c8d287d`, `e0f13c6`, `rv-m0` PASS 0 lỗi).
 - 2026-11-20 21:48: Hoàn tất **M1 · Từ vựng** (`6e5edcc`, `65a257b`, `7b587f5`, `aa75e72`, `4d18e22`, `de13f7e`, `3db3e29`).
