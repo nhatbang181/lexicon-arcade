@@ -51,7 +51,7 @@ export const AnswerInput: React.FC<AnswerInputProps> = ({
       ? 'var(--color-wrong)'
       : status === 'partial'
       ? 'var(--color-partial)'
-      : 'var(--color-border)';
+      : 'var(--color-border-strong)';
 
   const boxShadow =
     status === 'correct'

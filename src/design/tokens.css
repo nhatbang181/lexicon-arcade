@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  /* Nền & bề mặt (Focus Arcade / Editorial Academic) */
+  /* Nền & bề mặt (Focus Arcade / Editorial Academic · theme tối mặc định) */
   --color-bg: #0B0F1A;
   --color-surface: #121829;
   --color-surface-2: #1A2238;
-  --color-border: #26304A;
+  --color-border: #606E8E;
+  --color-border-strong: #7988A8;
+  --color-border-subtle: #26304A;
   --color-text: #E8ECF5;
   --color-text-dim: #9AA5BE;
-  --color-text-faint: #6B7690;
+  --color-text-faint: #8792AB;
+  --color-on-accent: #0B0F1A;
+  --color-boss-dim: #070A12;
+  --color-backdrop: rgba(5, 8, 16, 0.65);
 
   /* Màu kỹ năng (6 nhóm) */
-  --color-vocab: #8B5CF6;
+  --color-vocab: #A78BFA;
   --color-listening: #06B6D4;
   --color-reading: #10B981;
   --color-writing: #F59E0B;
@@ -24,13 +29,32 @@
   --color-partial: #EAB308;
   --color-info: #3B82F6;
 
-  /* Font families */
+  /* Font families (L-8: giữ Be Vietnam Pro + Source Serif 4 + JetBrains Mono, thêm Baloo 2 cho hiển thị) */
+  --font-display: "Baloo 2", "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
   --font-ui: "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
   --font-reading: "Source Serif 4", Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   --font-ipa: "Segoe UI", "Noto Sans", system-ui, sans-serif;
 
-  /* Spacing (lưới 8px) */
+  /* Thang chữ (02-UI-UX §4 & 12-UI-UX §2; ô nhập ≥ 16px chống auto-zoom iOS) */
+  --text-display: clamp(2.25rem, 1.8rem + 1.5vw, 3rem);
+  --text-h1: clamp(1.5rem, 1.35rem + 0.5vw, 1.75rem);
+  --text-h2: clamp(1.125rem, 1.05rem + 0.25vw, 1.25rem);
+  --text-question: clamp(1.125rem, 1.05rem + 0.25vw, 1.25rem);
+  --text-reading: clamp(1.0625rem, 1rem + 0.2vw, 1.125rem);
+  --text-body: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+  --text-input: 1rem;
+  --text-caption: clamp(0.75rem, 0.72rem + 0.1vw, 0.8125rem);
+
+  --leading-display: 1.1;
+  --leading-h1: 1.25;
+  --leading-h2: 1.3;
+  --leading-question: 1.45;
+  --leading-reading: 1.7;
+  --leading-body: 1.5;
+  --leading-caption: 1.4;
+
+  /* Spacing (lưới 4px · 12-UI-UX §2) */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -40,59 +64,134 @@
   --space-8: 32px;
   --space-10: 40px;
   --space-12: 48px;
+  --space-16: 64px;
+  --space-section: clamp(12px, 2.4vh, 24px);
 
-  /* Bo góc */
+  /* Bo góc (8 / 14 / 22 / 999) */
   --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
   --radius-xl: 24px;
+  --radius-pill: 999px;
 
-  /* Bóng đổ */
+  /* Bóng đổ 3 mức + glow trạng thái */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.24);
   --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
   --shadow-glow-ok: 0 0 0 2px var(--color-correct), 0 0 24px rgba(34, 197, 94, 0.35);
   --shadow-glow-wrong: 0 0 0 2px var(--color-wrong), 0 0 24px rgba(239, 68, 68, 0.25);
   --shadow-glow-info: 0 0 0 2px var(--color-info), 0 0 20px rgba(59, 130, 246, 0.25);
+
+  /* Thời gian & easing (13-ANIMATION §2) */
+  --dur-instant: 80ms;
+  --dur-fast: 160ms;
+  --dur-base: 240ms;
+  --dur-slow: 400ms;
+  --dur-celebrate: 900ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Thang Z-index (12-UI-UX §2) */
+  --z-content: 0;
+  --z-hud: 10;
+  --z-fx: 20;
+  --z-sheet: 30;
+  --z-modal: 40;
+  --z-toast: 50;
 }
 
 [data-theme="dark"] {
   --color-bg: #0B0F1A;
   --color-surface: #121829;
   --color-surface-2: #1A2238;
-  --color-border: #26304A;
+  --color-border: #606E8E;
+  --color-border-strong: #7988A8;
+  --color-border-subtle: #26304A;
   --color-text: #E8ECF5;
   --color-text-dim: #9AA5BE;
-  --color-text-faint: #6B7690;
+  --color-text-faint: #8792AB;
+  --color-on-accent: #0B0F1A;
+  --color-boss-dim: #070A12;
+  --color-backdrop: rgba(5, 8, 16, 0.65);
+
+  --color-vocab: #A78BFA;
+  --color-listening: #06B6D4;
+  --color-reading: #10B981;
+  --color-writing: #F59E0B;
+  --color-speaking: #F43F5E;
+  --color-exam: #94A3B8;
+  --color-correct: #22C55E;
+  --color-wrong: #EF4444;
+  --color-partial: #EAB308;
+  --color-info: #3B82F6;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.24);
   --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
 }
 
 [data-theme="light"] {
   --color-bg: #F7F8FB;
   --color-surface: #FFFFFF;
   --color-surface-2: #F1F3F8;
-  --color-border: #E2E6EF;
+  --color-border: #7B8598;
+  --color-border-strong: #5B657A;
+  --color-border-subtle: #E2E6EF;
   --color-text: #0F172A;
   --color-text-dim: #475569;
-  --color-text-faint: #64748B;
-  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.05), 0 8px 24px rgba(15, 23, 42, 0.06);
+  --color-text-faint: #5B6478;
+  --color-on-accent: #FFFFFF;
+  --color-boss-dim: #E7EBF4;
+  --color-backdrop: rgba(15, 23, 42, 0.5);
+
+  /* Bộ màu kỹ năng & trạng thái AA trên nền sáng (02-UI-UX §3) */
+  --color-vocab: #5B21B6;
+  --color-listening: #155E75;
+  --color-reading: #065F46;
+  --color-writing: #92400E;
+  --color-speaking: #9F1239;
+  --color-exam: #334155;
+  --color-correct: #166534;
+  --color-wrong: #991B1B;
+  --color-partial: #854D0E;
+  --color-info: #1E40AF;
+
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.07);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.12);
 }
 
 [data-theme="exam"],
 [data-mode="exam"] {
-  /* Giao diện thi trên máy: luôn sáng, trung tính */
+  /* Giao diện thi trên máy: luôn sáng, trung tính, đạt AA */
   --color-bg: #FFFFFF;
   --color-surface: #FFFFFF;
   --color-surface-2: #F3F4F6;
-  --color-border: #C9CED6;
+  --color-border: #79818E;
+  --color-border-strong: #525B6B;
+  --color-border-subtle: #C9CED6;
   --color-text: #111111;
   --color-text-dim: #374151;
-  --color-text-faint: #6B7280;
+  --color-text-faint: #59606E;
+  --color-on-accent: #FFFFFF;
+  --color-boss-dim: #E5E7EB;
+  --color-backdrop: rgba(17, 17, 17, 0.5);
+
   --color-vocab: #374151;
   --color-listening: #374151;
   --color-reading: #374151;
   --color-writing: #374151;
   --color-speaking: #374151;
   --color-exam: #374151;
+  --color-correct: #166534;
+  --color-wrong: #991B1B;
+  --color-partial: #854D0E;
+  --color-info: #1E40AF;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 @layer base {
@@ -101,9 +200,19 @@
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: var(--font-ui);
-    line-height: 1.5;
+    line-height: var(--leading-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Chống Safari iOS tự zoom khi focus ô nhập (12-UI-UX §2) */
+  input[type="text"],
+  input[type="search"],
+  input[type="number"],
+  input[type="email"],
+  textarea,
+  select {
+    font-size: var(--text-input);
   }
 
   *:focus-visible {
@@ -112,14 +221,18 @@
   }
 }
 
+.font-display {
+  font-family: var(--font-display);
+}
+
 .ipa {
   font-family: var(--font-ipa);
 }
 
 .reading-prose {
   font-family: var(--font-reading);
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: var(--text-reading);
+  line-height: var(--leading-reading);
   max-width: 68ch;
 }
 

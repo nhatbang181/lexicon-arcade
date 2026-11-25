@@ -83,3 +83,10 @@
 | # | File | Chủ | Cần làm | Vì sao |
 |---|---|---|---|---|
 | 1 | `src/games/_shared/vocabLoaders.ts` và `src/games/_shared/index.ts` | điều phối / T4-C | Bỏ import tĩnh `v2v3_fixtures` trong `vocabLoaders.ts` (hoặc bỏ `export * from './vocabLoaders'` khỏi `_shared/index.ts`) | V2/V3/R1/R2 không còn import `vocabLoaders.ts` và chunk 4 game này sạch `v2v3_fixtures` + `r1_fixtures`, nhưng `PlacementScreen`, `w1`, `w2` import từ `../_shared` nên Rollup vẫn kéo `v2v3_fixtures` (20.33 KB) vào `dist/assets/`. Ngoài danh sách file độc quyền T2-A |
+
+## Từ T3-A (25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `src/games/w1-essay-lab/W1EssayLab.tsx` (dòng 1177, 1191, 1231, 1245, 1261, 1275), `src/features/portfolio/PortfolioScreen.tsx` (dòng 539) | T4-C | Đổi `var(--color-on-accent, #0f172a)` thành `var(--color-on-accent)` (token đã khai báo đủ 3 theme trong `src/design/tokens.css`) | D1 (`scripts/qa/hardcoded-colors.mjs` còn 7/8 chỗ do hex fallback cứng ngoài `src/design/**`) |
+| 2 | `src/app/screens/DevComponentsScreen.tsx` (dòng 498) | điều phối / T3-C | Bỏ chuỗi `#3B82F6` trong mô tả text minh hoạ SVG (hoặc ghi "màu chủ đạo token") | D1 (`scripts/qa/hardcoded-colors.mjs` 1 chỗ còn lại ngoài `src/design/**`) |
