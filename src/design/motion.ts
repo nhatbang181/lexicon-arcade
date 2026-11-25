@@ -1,23 +1,24 @@
 import type { Transition, Variants } from 'motion/react';
 
+/* Token chuyển động theo 13-ANIMATION.md §2 & L-7 */
 export const dur = {
   instant: 0.08,
-  fast: 0.15,
-  base: 0.22,
-  slow: 0.35,
-  celebrate: 0.6,
+  fast: 0.16,
+  base: 0.24,
+  slow: 0.4,
+  celebrate: 0.9,
 } as const;
 
 export const ease = {
-  out: [0.16, 1, 0.3, 1] as [number, number, number, number],
+  out: [0.2, 0.8, 0.2, 1] as [number, number, number, number],
   inOut: [0.65, 0, 0.35, 1] as [number, number, number, number],
   in: [0.4, 0, 1, 1] as [number, number, number, number],
 } as const;
 
 export const spring = {
-  snappy: { type: 'spring', stiffness: 520, damping: 32 } as Transition,
-  soft: { type: 'spring', stiffness: 260, damping: 26 } as Transition,
-  bouncy: { type: 'spring', stiffness: 420, damping: 14 } as Transition,
+  snappy: { type: 'spring', stiffness: 500, damping: 32 } as Transition,
+  soft: { type: 'spring', stiffness: 220, damping: 26 } as Transition,
+  bouncy: { type: 'spring', stiffness: 380, damping: 14 } as Transition,
 } as const;
 
 export const reducedFadeTransition: Transition = {
@@ -61,15 +62,16 @@ export const questionSlideVariants: Variants = {
 export const correctPopVariants: Variants = {
   idle: { scale: 1 },
   correct: {
-    scale: [1, 1.05, 1],
-    transition: { duration: 0.3, ease: ease.out },
+    scale: [1, 1.06, 1],
+    transition: { duration: 0.22, ease: ease.out },
   },
 };
 
 export const wrongShakeVariants: Variants = {
   idle: { x: 0 },
   wrong: {
-    x: [0, -6, 6, -4, 4, 0],
+    /* L-7: lắc thẻ ±6 px ×3 trong 300 ms, không rung màn hình */
+    x: [0, -6, 6, -6, 6, -3, 3, 0],
     transition: { duration: 0.3, ease: ease.inOut },
   },
 };

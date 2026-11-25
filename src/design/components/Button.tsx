@@ -53,7 +53,7 @@ export const Button: React.FC<ButtonProps> = ({
     if (variant === 'primary') {
       return {
         backgroundColor: accent,
-        color: 'var(--color-bg)',
+        color: 'var(--color-on-accent)',
         borderColor: 'transparent',
       };
     }
@@ -67,7 +67,7 @@ export const Button: React.FC<ButtonProps> = ({
     if (variant === 'danger') {
       return {
         backgroundColor: 'var(--color-wrong)',
-        color: 'var(--color-bg)',
+        color: 'var(--color-on-accent)',
         borderColor: 'transparent',
       };
     }

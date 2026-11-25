@@ -74,7 +74,7 @@ export const FeedbackPanel: React.FC<FeedbackPanelProps> = ({
               <button
                 type="button"
                 onClick={onFlagItem}
-                className="inline-flex items-center gap-1 text-xs px-2 py-1 rounded border cursor-pointer"
+                className="inline-flex items-center gap-1.5 min-h-[44px] text-xs px-3 py-1.5 rounded-[var(--radius-sm)] border cursor-pointer shrink-0"
                 style={{
                   backgroundColor: 'var(--color-surface-2)',
                   borderColor: 'var(--color-border)',

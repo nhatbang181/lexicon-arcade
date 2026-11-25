@@ -92,3 +92,11 @@
 | 2 | `src/games/v1-daily-run/V1DailyRun.tsx`, `src/features/placement/placementData.ts` | T4-A / T3-C | Chuyển loader sang tải `public/data/vocab/words.core.json` (521 KB minified) + lazy-load `words.detail.json` khi cần chi tiết | D17: giảm tải đầu từ ~4,0 MB xuống 521 KB; T3-B giữ song song `words.json` nguyên vẹn để không phá loader hiện tại |
 | 3 | `src/core/content/schemas.ts` (dòng 170) | chủ schema / điều phối | Mở rộng `CollocationItemSchema.bandTarget` từ `7 \| 8 \| 9` sang `4 \| 5 \| 6 \| 7 \| 8 \| 9` nếu muốn gộp collocation band 4–6 trực tiếp vào `public/data/vocab/collocations.json` | B7: hiện `collocations.json` có 747 mục hoạt động ở L7–10; schema hiện từ chối `bandTarget < 7` |
 | 4 | `public/data/speaking/part2.json` + `part3.json` + `public/audio/speaking/**` | M5 (trước 01/01/2027) | Bổ sung ≥ 30 cặp thẻ `2027-Q1` kèm bộ Part 3 đối xứng (`INV-S1`) và audio Speaking (`INV-S4`) | D16: hiện có 40 thẻ `2026-Q3` (50% evergreen, hợp lệ tới 31/12/2026); thêm thẻ trước khi M5 render sẽ tăng số lỗi `INV-S4` |
+
+## Từ T3-A (25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `src/games/w1-essay-lab/W1EssayLab.tsx` (dòng 1177, 1191, 1231, 1245, 1261, 1275), `src/features/portfolio/PortfolioScreen.tsx` (dòng 539) | T4-C | Đổi `var(--color-on-accent, #0f172a)` thành `var(--color-on-accent)` (token đã khai báo đủ 3 theme trong `src/design/tokens.css`) | D1 (`scripts/qa/hardcoded-colors.mjs` còn 7/8 chỗ do hex fallback cứng ngoài `src/design/**`) |
+| 2 | `src/app/screens/DevComponentsScreen.tsx` (dòng 498) | điều phối / T3-C | Bỏ chuỗi `#3B82F6` trong mô tả text minh hoạ SVG (hoặc ghi "màu chủ đạo token") | D1 (`scripts/qa/hardcoded-colors.mjs` 1 chỗ còn lại ngoài `src/design/**`) |
+| 3 | `vite.config.ts` (`workbox.globIgnores`) | điều phối · **ĐÃ XỬ LÝ (`0bfe9c6`)** | Thêm `'assets/GradingPanel-*.js'`, `'assets/listeningAnswer-*.js'` và các chunk lazy màn phụ vào `globIgnores` + `runtimeCaching` | Precache PWA đã hạ về ~1 313 KiB (< 1 500 KiB) |

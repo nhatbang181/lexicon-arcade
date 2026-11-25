@@ -49,6 +49,10 @@ test.describe('M3 Listening Games: L1 Trap Detector & L2 Dictation Ladder', () =
     });
 
     // 1. L1 Trap Detector — chỉ hiển thị các bài có file MP3 thật (L1-01)
+    // Giả lập p1_002.mp3 trả HTML SPA-fallback (200 text/html) vì 32/32 MP3 thật đã render đủ ở T3-B
+    await page.route('**/audio/listening/p1_002.mp3', (route) =>
+      route.fulfill({ status: 200, contentType: 'text/html; charset=utf-8', body: '<!doctype html>' }),
+    );
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto('/#/play/l1', { waitUntil: 'networkidle' });
     await expect(page.getByText(/Trap Detector/i).first()).toBeVisible({ timeout: 15_000 });
