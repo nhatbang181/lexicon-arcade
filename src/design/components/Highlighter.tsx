@@ -550,7 +550,7 @@ export const Highlighter: React.FC<HighlighterProps> = ({
                 {seg.text}
                 {examSpanRef?.note && examSpanRef.end === seg.end && (
                   <span
-                    className="inline-flex items-center align-middle ml-1 px-1 py-0.5 rounded text-[11px] font-sans"
+                    className="inline-flex items-center align-middle ml-1 px-1 py-0.5 rounded text-xs font-sans"
                     style={{
                       backgroundColor: 'color-mix(in srgb, var(--color-info) 16%, var(--color-surface))',
                       color: 'var(--color-info)',

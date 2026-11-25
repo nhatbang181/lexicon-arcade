@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useId, useRef } from 'react';
 import { X } from 'lucide-react';
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { spring } from '../motion';
+import { useDialogFocusTrap } from './focusTrap';
 
 export interface SheetProps {
   open: boolean;
@@ -23,15 +24,10 @@ export const Sheet: React.FC<SheetProps> = ({
   footer,
 }) => {
   const prefersReduced = useReducedMotion();
+  const titleId = useId();
+  const panelRef = useRef<HTMLDivElement | null>(null);
 
-  useEffect(() => {
-    if (!open) return;
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, [open, onClose]);
+  useDialogFocusTrap(open, panelRef, onClose);
 
   const initialPos = prefersReduced
     ? { opacity: 0 }
@@ -45,10 +41,11 @@ export const Sheet: React.FC<SheetProps> = ({
     <AnimatePresence>
       {open && (
         <div
-          className="fixed inset-0 z-50 flex"
+          className="fixed inset-0 flex"
+          style={{ zIndex: 'var(--z-sheet)' }}
           role="dialog"
           aria-modal="true"
-          aria-label={title}
+          aria-labelledby={titleId}
         >
           <motion.div
             initial={{ opacity: 0 }}
@@ -56,15 +53,18 @@ export const Sheet: React.FC<SheetProps> = ({
             exit={{ opacity: 0 }}
             transition={{ duration: 0.15 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-xs"
+            className="fixed inset-0 backdrop-blur-xs"
+            style={{ backgroundColor: 'var(--color-backdrop)' }}
           />
 
           <motion.div
+            ref={panelRef}
+            tabIndex={-1}
             initial={initialPos}
             animate={animatePos}
             exit={initialPos}
             transition={prefersReduced ? { duration: 0.1 } : spring.soft}
-            className={`relative z-10 flex flex-col border ${
+            className={`relative z-10 flex flex-col border outline-none ${
               side === 'right'
                 ? 'ml-auto h-full w-full max-w-md border-l'
                 : 'mt-auto w-full max-h-[85vh] rounded-t-[var(--radius-xl)] border-t'
@@ -75,9 +75,16 @@ export const Sheet: React.FC<SheetProps> = ({
               boxShadow: 'var(--shadow-card)',
             }}
           >
-            <div className="flex items-start justify-between gap-4 pb-4 border-b" style={{ borderColor: 'var(--color-border)' }}>
-              <div>
-                <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+            <div
+              className="flex items-start justify-between gap-4 pb-4 border-b"
+              style={{ borderColor: 'var(--color-border)' }}
+            >
+              <div className="min-w-0">
+                <h2
+                  id={titleId}
+                  className="text-lg font-bold"
+                  style={{ color: 'var(--color-text)' }}
+                >
                   {title}
                 </h2>
                 {subtitle && (
@@ -89,7 +96,7 @@ export const Sheet: React.FC<SheetProps> = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="inline-flex items-center justify-center w-9 h-9 rounded-[var(--radius-sm)] border cursor-pointer"
+                className="inline-flex items-center justify-center w-11 h-11 shrink-0 rounded-[var(--radius-sm)] border cursor-pointer"
                 style={{
                   backgroundColor: 'var(--color-surface-2)',
                   borderColor: 'var(--color-border)',
