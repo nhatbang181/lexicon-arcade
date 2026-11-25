@@ -1,6 +1,7 @@
 # PROGRESS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## Trạng thái hiện tại: M0 ✅ · M1 ✅ · M2 ✅ · M3 ✅ · M4 ✅ 100% -> ĐANG CHẠY M5 · SPEAKING (Đợt 1: r-speech-core ∥ r-data-speaking)
+## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0 ĐẠT) · Đợt 2 đang chạy: **T2-B ✅ đã merge `master`** · T2-A đang hoàn thiện kiểm cuối · T2-C chờ · T3-B đang dở (tạm dừng do bể Gemini còn 7%, reset 09:38 giờ máy 25/11)
+- 2026-11-25 05:16 · **Audit-Max Đợt 2 · T2-B ✅ ĐẠT & merge `master`**: `r-t2-b` (Gemini 4 Neon High) + `rv-t2-b` (Gemini 4 Argon High) — L1/L2 lọc MP3 thật, chuẩn hoá đáp án Listening (381/381 đáp án 0 tự trượt), audio Safari iOS (TU-03), FX-1 chip `↵` 12px, producer `ltrap:*`/`dict:*` + `saveProgress`, 534/534 vitest, 3/3 E2E m3 + L1→V1, 0 CHẶN/0 NẶNG/0 NHẸ audit-ui trên 7 khung × 2 theme. Tạm dừng chờ reset quota Gemini (`09:38` giờ máy = `2026-11-24T23:08:42Z`).
 - 2026-11-20 16:52: Hoàn tất **M0 · Nền móng** (`4b799f5`, `c8d287d`, `e0f13c6`, `rv-m0` PASS 0 lỗi).
 - 2026-11-20 21:48: Hoàn tất **M1 · Từ vựng** (`6e5edcc`, `65a257b`, `7b587f5`, `aa75e72`, `4d18e22`, `de13f7e`, `3db3e29`).
 - 2026-11-20 22:43: Hoàn tất **M2 · Reading** (`c71aeab`, `6161539`, `1659c73`, `1a506fb`).

@@ -11,7 +11,7 @@
 | `master` = `origin/master` | `dba7c3a` (+ cập nhật trạng thái mở phiên Antigravity) |
 | CI | Run `45319887592`: `verify (8 bước)` ✅, `audit-ui (không chặn deploy)` ✅, `deploy` ✅ |
 | Production | https://nhatbang181.github.io/lexicon-arcade/ → `<title>Lexicon Arcade V3 · Lộ trình IELTS 8.0</title>` |
-| Đợt 2 | **ĐANG DỞ (tạm dừng 25/11 theo lệnh Bang).** T2-A, T2-B có commit và có file chưa commit; T2-C chưa bắt đầu |
+| Đợt 2 | **ĐANG CHẠY (tạm dừng ở cổng vì bể Gemini còn 7% < 10%, reset `09:38` giờ máy = `2026-11-24T23:08:42Z`).** **T2-B ĐẠT và đã merge `master`** (`rv-t2-b` Argon High: 0 CHẶN, 1 NẶNG, 534/534 test, 381/381 đáp án, 3/3 E2E, 0/0/0 audit-ui 7 khung). **T2-A** đã commit xong 4 game (V2/V3/R1/R2), còn 4 file sửa dở + `anh-sau/T2-A` + chưa viết `BAO-CAO-T2-A.md`. **T2-C** chưa bắt đầu |
 | T3-B (chạy sớm) | **ĐANG DỞ (tạm dừng).** Có 2 checkpoint commit + nhiều file MP3/JSON chưa commit |
 | Đợt 3, 4 | Chưa bắt đầu |
 
@@ -23,8 +23,8 @@
 | `D:\English-wt\T1-A` | `audit-max/T1-A` | `6e47564` | đã merge | – | 5201 / 5211 | **Có thể xoá worktree** (`git worktree remove`), giữ nhánh |
 | `D:\English-wt\T1-B` | `audit-max/T1-B` | `2bdb87b` | đã merge | `playwright.t1b.config.ts` (rác local) | 5202 / 5212 | Có thể xoá worktree |
 | `D:\English-wt\T1-C` | `audit-max/T1-C` | `341ca75` | đã merge | – | 5203 / 5213 | Có thể xoá worktree |
-| `D:\English-wt\T2-A` | `audit-max/T2-A` | `18f648f` | 1: `feat(v2): engine chọn câu…(V2-1..V2-10)` | 7 file (V3, R1, R2, V2) + `KE-HOACH-T2-A.md` | 5221 / 5231 | Builder dừng lúc **đang viết test V2**. V3/R1/R2 mới sửa dở |
-| `D:\English-wt\T2-B` | `audit-max/T2-B` | `20ba737` | 2: kế hoạch (B1) + `fix(listening): chuẩn hoá đáp án … (L1-02..L1-06) … SFX sau manifest (X-04, X-05)` | 2 file ở `src/core/audio` | 5222 / 5232 | Builder dừng lúc **chuẩn bị commit 2 phần core**. L1-01, L1-08..10, L2, producer `userItems` chưa làm |
+| `D:\English-wt\T2-A` | `audit-max/T2-A` | `6116672` | 5 commit (merge master + V2, V3, R1, R2 đủ 4 game) | 4 file sửa dở (`m2.spec.ts`, `R1TfngJudge`, `R2HeadlineEditor`, `V2CollocationForge`) + `anh-sau/T2-A/` | 5221 / 5231 | Đang ở bước chạy kiểm & viết `BAO-CAO-T2-A.md` (tạm dừng do quota < 10%) |
+| `D:\English-wt\T2-B` | `audit-max/T2-B` | `b9d2d58` | **ĐÃ MERGE `master`** (`rv-t2-b` Argon High **ĐẠT**) | `REVIEW-T2-B-A.md` (đã chép sang master) + `out/` | 5222 / 5232 | **XONG.** Có thể xoá worktree sau khi push + CI xanh; giữ nợ 1 NẶNG `listeningAnswer.ts:408,708` trong `HANDOFF.md` |
 | `D:\English-wt\T2-C` | `audit-max/T2-C` | `00e6cb1` | 0 | 0 | 5223 / 5233 (đã giữ chỗ) | Chưa bắt đầu |
 | `D:\English-wt\T3-B` | `audit-max/T3-B` | `aee52c4` | `577b3bf` (300/300 MP3 dictation + 6 episode), `49d70b8` (blind-solve D4: 24/24 Reading, 32/32 Listening), `aee52c4` (merge master) | 71 file: 25 MP3 `public/audio/listening` + 25 JSON episode, 11 file `scripts/data`, 2 file `public/data/vocab`, `scripts/__pycache__` (**không commit**) | – | 31 file trong `public/audio/listening`; `public/audio` = **60,6 MB** (ngưỡng hỏi Bang 400 MB). Builder dừng lúc **đo baseline `validate:data:release`** |
 | `C:\Users\nhatb\.gemini\antigravity\worktrees\…\swarm-r-audio-speaking-*`, `swarm-r-game-s1-*` | `swarm-*` | – | – | – | – | **Việc M5, KHÔNG ĐỤNG** (LUAT A3) |
@@ -86,6 +86,7 @@ Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -in 5199..5240 
 
 ## 6. Nhật ký điều phối (mới nhất ở trên; mỗi dòng ≤ 2 câu)
 
+- 25/11 05:16 · Antigravity (Gemini 4 Neon High) · **T2-B ĐẠT và đã merge `master`** (`rv-t2-b` Argon High: 0 CHẶN, 1 NẶNG `listeningAnswer.ts:408,708` ghi HANDOFF, 534/534 vitest, 381/381 đáp án, 3/3 E2E m3+L1→V1, 0/0/0 audit-ui 7 khung). Tạm dừng điều phối vì bể Gemini còn **7% < 10%** (reset lúc **09:38 giờ máy** = `2026-11-24T23:08:42Z`; Claude 0% tới 27/11); bước kế tiếp khi mở lại: nối `r-t2-a` chốt `BAO-CAO-T2-A` → `rv-t2-a` + bắt đầu `T2-C`.
 - 25/11 · Antigravity (Gemini 4 Neon High) · Mở phiên điều phối: đối chiếu thực tế (`master` = `dba7c3a`, đĩa D trống 37 GB, audio 60,6 MB, 0 port treo, Gemini 28%, Claude 0%). Push docs lên `origin/master` và chạy S1 (nối `T2-A` + `T2-B`, song song tối đa 2 theo quota).
 - 25/11 · Claude · Viết thư mục `antigravity/`. Tạm dừng T2-A, T2-B, T3-B theo lệnh Bang; đã tắt mọi server và process render.
 - 25/11 · Claude · Kiểm G0: đạt (push, CI xanh, title V3). Tạo worktree T2-A/B/C; merge master vào T3-B; giao T2-A, T2-B, T3-B.
