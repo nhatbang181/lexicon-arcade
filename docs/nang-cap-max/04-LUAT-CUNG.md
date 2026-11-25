@@ -38,7 +38,7 @@
 
 ## 9. Điểm dừng hỏi Bang (thêm vào danh sách cũ)
 1. Mua sách/tài liệu (Cambridge 18–21…).
-2. Audio tổng vượt 400 MB.
+2. Audio trong repo/site công khai vượt **400 MB** (phần vượt đi vào gói audio riêng, `10b` §0); gói audio riêng nhập vào iPhone vượt 300 MB một lần.
 3. Tắt site public, đổi repo sang private, đổi cài đặt GitHub.
 4. Đổi nhân vật hoặc phong cách thiết kế đã qua G1.
 5. Dùng dữ liệu NC mà sau này muốn thương mại hoá (hiện phi lợi nhuận nên được dùng).

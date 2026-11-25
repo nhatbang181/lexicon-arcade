@@ -68,7 +68,7 @@ Các thay đổi format lớn lấy **chỉ** từ nguồn chính thức (§1 d�
 | Idea Bank | 12 × 10 | **25 chủ đề × 15 ý** | Có dữ kiện + nguồn |
 
 **Năng lực cần có:**
-- **Audio:** 250 episode × ~2,5 MB ≈ 625 MB, **vượt 400 MB** → phải hỏi Bang. Phương án:
+- **Audio:** 250 episode × ~2,5 MB ≈ 625 MB, **vượt trần 400 MB của site công khai**. Phương án (`10b` §0):
   - opus 32 kbps (nhẹ hơn khoảng 2×);
   - gói audio tải theo unit, không đưa vào build;
   - audio người thật để ở **gói riêng/local**.

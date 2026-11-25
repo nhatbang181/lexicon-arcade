@@ -4,6 +4,37 @@
 > Ràng buộc kỹ thuật duy nhất: repo `nhatbang181/lexicon-arcade` và site GitHub Pages đang **công khai**. Vì vậy tài liệu có bản quyền **không bao giờ** được commit, build hay deploy. Giải pháp: **Gói riêng (`.lexpack`)** build trên máy, nhập thẳng vào IndexedDB của từng thiết bị.
 > AD ghi `DECISIONS.md` mục D: "Chế độ dùng riêng + Gói riêng; tài liệu cá nhân không vào repo/public".
 
+## 0. Quyết định 25/11/2026: **GIỮ SITE CÔNG KHAI + GÓI RIÊNG** (Bang chốt lần cuối)
+
+- App vẫn deploy GitHub Pages công khai, chỉ chứa **dữ liệu mở** (`10`).
+- Đề thật và tài liệu bản quyền chỉ đi qua **gói riêng `.lexpack`** nhập vào thiết bị (§1–§4).
+- **Audio trong repo/site công khai:** giữ trần **400 MB**. GitHub Pages khuyến nghị site ≤ 1 GB, và repo lớn làm CI chậm.
+  - Audio vượt trần (mức max ở `10c` §4, TED, clip người thật): đưa vào **gói audio riêng** nhập vào thiết bị như gói đề, hoặc tải theo unit nếu hợp license.
+- **Chế độ chạy local** (bảng dưới) là **phương án để sau**. Chỉ làm khi Bang yêu cầu lại; khi đó AD ghi `DECISIONS.md`.
+
+### Phương án để sau: chạy local (tham khảo, CHƯA làm)
+
+| Hạng mục | Hiện tại | Nếu chuyển local |
+|---|---|---|
+| Nơi chạy app | GitHub Pages công khai | **Máy PC của Bang**, phục vụ qua mạng riêng tới iPhone/iPad |
+| Truy cập trên iPhone (ưu tiên 1) | URL Pages | **Tailscale** (miễn phí cho cá nhân):<br>1. Cài Tailscale trên PC và iPhone.<br>2. `tailscale serve` cấp HTTPS cho bản build `vite preview` / server tĩnh.<br>3. iPhone mở `https://<tên-máy>.<tailnet>.ts.net` và "Thêm vào MH chính".<br>4. Sau lần tải đầu, app chạy **offline** nhờ PWA.<br>**Dự phòng:** cùng Wi-Fi qua HTTPS tự ký (mkcert). |
+| Repo GitHub | Công khai | **Chuyển private** (Bang tự đổi trong Settings) hoặc giữ công khai nhưng không chứa nội dung bản quyền. CI vẫn chạy kiểm (Actions miễn phí cho repo private trong hạn mức) |
+| Job `deploy` lên Pages | Bật | **Tắt** (sau khi Bang đổi). Giữ `verify` |
+| Audio | Trần 400 MB | Bang đồng ý audio IELTS "nặng quá thì cân nhắc". **Trần mới: 1,5 GB cho toàn bộ audio trên PC**. Trên iPhone chỉ tải gói audio theo unit đang học (≤ 300 MB một lần, xoá được). Mặc định opus 32–48 kbps |
+| Nội dung bản quyền | Không vào repo | **Vẫn không vào repo** (kể cả repo private, để không lẫn với code và không lỡ public lại). Nằm ở `D:\English-private\` + gói `.lexpack` |
+
+**Task NC0-L (chỉ khi chuyển local; hiện KHÔNG nằm trong `02`):**
+1. Script `scripts/local/serve.ps1`: build rồi serve `dist/` (cổng cố định, ví dụ 4300).
+2. Hướng dẫn Tailscale trong `docs/nang-cap-max/LOCAL-SETUP.md`. Bang tự cài và đăng nhập Tailscale, vì đây là tài khoản của Bang.
+3. Kiểm trên iPhone thật: cài PWA, offline, nhập gói mẫu.
+
+Việc đổi repo sang private và tắt Pages là **cài đặt tài khoản của Bang**: agent ghi hướng dẫn, Bang tự bấm.
+
+**Nguồn tài liệu bản quyền:**
+- Agent **không tải, không tìm** bản PDF/audio lậu: không lấy từ repo GitHub hay trang chia sẻ chép đề Cambridge.
+- Cách có đề thật: Bang **mua** sách/ebook chính hãng (Cambridge IELTS Academic 1–21), đặt file vào `D:\English-private\sources\`, chạy build gói.
+- Bộ build đọc được PDF và ảnh chụp trang.
+
 ## 1. Kiến trúc
 
 ```

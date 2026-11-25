@@ -33,6 +33,8 @@
 - **B-30** `kokoro-js` kéo transformers v3 → xung đột với transformers v4 dùng cho ASR. Không dùng TTS trong trình duyệt; render sẵn.
 - **B-31** MeloTTS cài trên Windows dễ vỡ → dùng Docker/WSL. Repo đứng yên từ 2024.
 - **B-32** GPU máy dev là RTX 3050 4 GB → không chạy được model TTS 2B (VoxCPM2). Kokoro/Piper/whisper.cpp chạy tốt.
-- **B-33** Audio mức max vượt 400 MB → hỏi Bang. Dùng opus 32 kbps và gói theo unit.
+- **B-33** Site công khai giữ trần audio 400 MB. Phần vượt đi vào gói audio riêng (≤ 300 MB/lần trên iPhone). Dùng opus 32–48 kbps, gói theo unit.
+- **B-36** (Phương án chạy local để sau) Nếu chuyển local: iPhone truy cập qua Tailscale HTTPS. PWA cần HTTPS → không dùng `http://192.168…`.
+- **B-37** Repo GitHub và tài liệu bản quyền: agent không tải hay tìm bản lậu (PDF Cambridge, repo chép đề). Đề thật chỉ từ nguồn Bang mua hoặc được phép, đặt ở `D:\English-private\`.
 - **B-34** Gói riêng `.lexpack` phải bị chặn ở `.gitignore` **và** ở CI (fail khi thấy). Không đặt thư mục private bên trong repo.
 - **B-35** iOS: nhập gói riêng **sau** khi cài app ra màn hình chính (tab Safari không chia sẻ IndexedDB với app đã cài).
