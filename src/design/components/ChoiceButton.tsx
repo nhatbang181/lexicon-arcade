@@ -1,7 +1,8 @@
 import React from 'react';
 import { Check, X } from 'lucide-react';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
 import { correctPopVariants, wrongShakeVariants } from '../motion';
+import { useFxTier } from '../fx/fxTier';
 
 export type ChoiceState =
   | 'idle'
@@ -15,17 +16,21 @@ export interface ChoiceButtonProps
   indexLabel: string; // e.g. 'A', 'B', '1', '2'
   label: React.ReactNode;
   state?: ChoiceState;
+  examMode?: boolean;
 }
 
 export const ChoiceButton: React.FC<ChoiceButtonProps> = ({
   indexLabel,
   label,
   state = 'idle',
+  examMode = false,
   disabled,
   className = '',
+  style,
   ...rest
 }) => {
-  const prefersReduced = useReducedMotion();
+  const fx = useFxTier({ examMode });
+  const allowAnim = fx.allowShake && (state === 'wrong' || state === 'correct');
 
   const getStyle = (): React.CSSProperties => {
     if (state === 'correct') {
@@ -60,7 +65,7 @@ export const ChoiceButton: React.FC<ChoiceButtonProps> = ({
     }
     return {
       backgroundColor: 'var(--color-surface)',
-      borderColor: 'var(--color-border)',
+      borderColor: disabled ? 'var(--color-border-subtle)' : 'var(--color-border-strong)',
       color: 'var(--color-text)',
     };
   };
@@ -68,14 +73,14 @@ export const ChoiceButton: React.FC<ChoiceButtonProps> = ({
   return (
     <motion.div
       variants={
-        prefersReduced
+        !allowAnim
           ? undefined
           : state === 'wrong'
           ? wrongShakeVariants
           : correctPopVariants
       }
       animate={
-        prefersReduced
+        !allowAnim
           ? undefined
           : state === 'wrong'
           ? 'wrong'
@@ -87,8 +92,9 @@ export const ChoiceButton: React.FC<ChoiceButtonProps> = ({
       <button
         type="button"
         disabled={disabled}
-        className={`w-full min-h-[48px] px-4 py-3 rounded-[var(--radius-md)] border text-left flex items-center justify-between gap-3 transition-colors cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
-        style={getStyle()}
+        data-state={state}
+        className={`design-choice w-full min-h-[48px] px-4 py-3 rounded-[var(--radius-md)] border text-left flex items-center justify-between gap-3 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed ${className}`}
+        style={{ ...getStyle(), ...style }}
         {...rest}
       >
         <div className="flex items-center gap-3 min-w-0">
@@ -107,9 +113,9 @@ export const ChoiceButton: React.FC<ChoiceButtonProps> = ({
         </div>
 
         {state === 'correct' || state === 'reveal-correct' ? (
-          <Check className="w-5 h-5 shrink-0" style={{ color: 'var(--color-correct)' }} />
+          <Check className="w-5 h-5 shrink-0" style={{ color: 'var(--color-correct)' }} aria-hidden="true" />
         ) : state === 'wrong' ? (
-          <X className="w-5 h-5 shrink-0" style={{ color: 'var(--color-wrong)' }} />
+          <X className="w-5 h-5 shrink-0" style={{ color: 'var(--color-wrong)' }} aria-hidden="true" />
         ) : null}
       </button>
     </motion.div>
