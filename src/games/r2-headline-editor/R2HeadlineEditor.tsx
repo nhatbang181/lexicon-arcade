@@ -858,7 +858,6 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
             <>
               <button
                 type="button"
-                aria-label="Chọn bài đọc"
                 onClick={() => setPassageSheetOpen(true)}
                 className="w-full sm:w-auto max-w-full min-w-0 min-h-[44px] inline-flex items-center justify-between gap-2 px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
                 style={{
@@ -867,6 +866,7 @@ export const R2HeadlineEditor: React.FC<GameProps> = ({
                   color: 'var(--color-text)',
                 }}
               >
+                <span className="sr-only">Chọn bài đọc: </span>
                 <span className="truncate">
                   {passage.level} · {passage.title}
                 </span>

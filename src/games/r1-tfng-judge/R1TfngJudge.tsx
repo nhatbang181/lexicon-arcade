@@ -548,8 +548,32 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
     let active = true;
     setLoading(true);
     void (async () => {
-      const loaded = await loadReadingPassage(item);
+      let loaded: ReadingPassage | null = null;
+      try {
+        loaded = await loadReadingPassage(item);
+      } catch {
+        // Khi ngoại tuyến, bài đọc mới chọn có thể chưa có trong cache -> thử lại các bài đã mở gần đây
+        const prevRecent = await getR1Kv<RecentPassageEntry[]>(R1_RECENT_PASSAGES_KV_KEY, []);
+        const fallbackIds = (Array.isArray(prevRecent) ? [...prevRecent] : [])
+          .sort((a, b) => b.ts - a.ts)
+          .map((e) => e.id)
+          .filter((id) => id !== item.id);
+        for (const fallbackId of fallbackIds) {
+          const candidate = catalog.find((c) => c.id === fallbackId);
+          if (!candidate) continue;
+          try {
+            loaded = await loadReadingPassage(candidate);
+            if (loaded) break;
+          } catch {
+            // thử bài tiếp theo trong cache
+          }
+        }
+      }
       if (!active) return;
+      if (!loaded) {
+        setLoading(false);
+        return;
+      }
       setPassage(loaded);
       judgeSaverRef.current.reset();
       const jSession = createJudgeSession(loaded, { level });
@@ -1176,7 +1200,6 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
           type="button"
           onClick={() => setPassageSheetOpen(true)}
           data-testid="r1-passage-select"
-          aria-label="Chọn bài đọc"
           className="w-full sm:w-auto min-w-0 max-w-full sm:max-w-[340px] inline-flex items-center justify-between gap-2 min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
           style={{
             backgroundColor: 'var(--color-surface-2)',
@@ -1184,6 +1207,7 @@ export const R1TfngJudge: React.FC<GameProps> = ({ mode, level, onExit }) => {
             color: 'var(--color-text)',
           }}
         >
+          <span className="sr-only">Chọn bài đọc: </span>
           <span className="truncate min-w-0">
             [{passage.level}] {passage.title}
           </span>
