@@ -1,8 +1,9 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-21T02:54:34.371Z",
+  "builtAt": "2026-11-25T03:10:12.602Z",
   "totals": {
-    "dictation": 300,
+    "examTests": 2,
+    "dictation": 700,
     "listeningEpisodes": 32,
     "listeningTraining": 24,
     "listeningQuestions": 320,
@@ -28,140 +29,144 @@
     "writingTask2": 60
   },
   "files": {
+    "exam/tests.json": {
+      "sha256": "985fd589bd05662bd1e24377b922bfc492a73a29365784085cb920867e6479f9",
+      "count": 2
+    },
     "listening/dictation.json": {
-      "sha256": "5452d2aade16c8e04aa7768fd18018815ccda1946fc40bbc91ce0b244b2ff7c3",
-      "count": 300
+      "sha256": "d3cb82173063ac2c747758063e35668053f53abb9d2d7bb1323ae928af86384d",
+      "count": 700
     },
     "listening/episodes/p1_001.json": {
-      "sha256": "e48dc0d9de38205f9e576b2a10068d9fde235ff3d79e3bba2b385e88656a95d6",
+      "sha256": "873b3bacb9c4708a132e34324de188d835833690880ba5120913c083d2e0f821",
       "count": 1
     },
     "listening/episodes/p1_002.json": {
-      "sha256": "83bb7ea86a40e28f62297984aa33f34d3feaf231c0f90d64486c95dcbec89f8f",
+      "sha256": "67881c2590a9f955db12fa1e966549b8e859023120b961e7618676a66948cfbc",
       "count": 1
     },
     "listening/episodes/p1_003.json": {
-      "sha256": "2e8054eaa2ec8e6c61b5fa6c07677cafb8f0b757b1c245606ba92cab473f15a1",
+      "sha256": "4243cac914aa8dccf6d93fdb133db3e5ef9dfa531dfb03775d5480b25b94869d",
       "count": 1
     },
     "listening/episodes/p1_004.json": {
-      "sha256": "bfd7318db64f48cc800a1f2f312d7cf6064704f335e0599bb908d6dc2f9893cb",
+      "sha256": "ab4d2b787d67baa5ed504616c70162d0233c35a439d924b9f07c7fedf2f0f4cc",
       "count": 1
     },
     "listening/episodes/p1_005.json": {
-      "sha256": "7992c5357b80956b90c6b259d3176f35f644895d34ca17e60545c1f94016f405",
+      "sha256": "f291f4e8d5b106fac25619ae37468908aa22d6b973881cb6bea07c933443fd6d",
       "count": 1
     },
     "listening/episodes/p1_006.json": {
-      "sha256": "265d5dae91e655141ab6095cd6f9e3284b07072e0bd4eff7805ee8a91837ec2c",
+      "sha256": "6a975ec708ee5ef741f02a1b4c68c83e294c5065da5b90f372f4f0a42f06273d",
       "count": 1
     },
     "listening/episodes/p1_res_001.json": {
-      "sha256": "e873ed3dd6c5fdc769d99bed8f4698e28ec3b1bfb8c8766bd0a8bf96c3dd4124",
+      "sha256": "e13210fbade612f02f7f942bbb4efd5aac61cff60aada45bd15d6e01ba3af866",
       "count": 1
     },
     "listening/episodes/p1_res_002.json": {
-      "sha256": "b447cadf1eed4bec2797c31521919cec2414c7d9ec44b1fa48f6e77634189a86",
+      "sha256": "b897c0a5f725ed67b2cea92fb3a1695f9011d4583cb7d3a1a13de3bc8ef7b3d8",
       "count": 1
     },
     "listening/episodes/p2_001.json": {
-      "sha256": "02203647d50dc6c5dd93fbb548c40a6889410c2f9efb63c1b018c3b2f46c354a",
+      "sha256": "71f93ca90914d3cb230b8de1da7abff5e5512c0de4d85fb699f9e4dc88f16713",
       "count": 1
     },
     "listening/episodes/p2_002.json": {
-      "sha256": "e9dd60f04de7b3e20bc55a6d80b53ac3565e3b405bc121e6b7dc9c8f253f43c9",
+      "sha256": "b2bb0a55d84e70c868086e8a3768848e6dd8321bfb8201cf3986264221e51e86",
       "count": 1
     },
     "listening/episodes/p2_003.json": {
-      "sha256": "b39e05355403c2892e517c64508587df7ddd173a7d861a02c411ef8f39d9669d",
+      "sha256": "e32731b55087d0665136679701ab34549adbad59f98f1921fbc39cdbb3e514ad",
       "count": 1
     },
     "listening/episodes/p2_004.json": {
-      "sha256": "459c7b23529c6760e9cff7c2d6febe1225ef728c7b0b2b907e5e8faaf82a5e51",
+      "sha256": "a3e10e664807d25dda43ed4d272f2f50fc8120c51cbef35c72ce5d944e9ed2c5",
       "count": 1
     },
     "listening/episodes/p2_005.json": {
-      "sha256": "3c3a973b0b316e21e9a9fb55db1b7669f2310d30fddc762dc7a2c5e9de981c04",
+      "sha256": "0c8ef3ce3c848d99724a2f7718b216802bf5168a91aefabcb117abaa85698f4a",
       "count": 1
     },
     "listening/episodes/p2_006.json": {
-      "sha256": "14387b878cfe1d75f7f1786bec0d1f12441f2612e5c85dfa324b13152da0051c",
+      "sha256": "417208ed97246ec288dcb5c12bc6abfe00eb69db3fca8f59c78e7da7508766cb",
       "count": 1
     },
     "listening/episodes/p2_res_001.json": {
-      "sha256": "94b4364e74c3e6aafa923cc4443109d14cfe89a1c9644f5cb7bf2a3e3256719b",
+      "sha256": "7020f0ad124435eef061d025a83c7a3f917b751862bdc7567efbfe23b63dea25",
       "count": 1
     },
     "listening/episodes/p2_res_002.json": {
-      "sha256": "06b0aa4c68b3139b81cf36539b78e11bf3dbfa86fcfe311d6c44fa0d1f7a3b4f",
+      "sha256": "c8df22e53c26439017a5c170f5f4d23ec9b7fda06c057a319a626c4cd972ed91",
       "count": 1
     },
     "listening/episodes/p3_001.json": {
-      "sha256": "e13fc5e615c756d02b25f1b0981b6868cbcff4101fbcf851b9d55edede37a398",
+      "sha256": "47e211cfb917e9e1ce11d97c489edb4557480cf2143c965fa0daf0c74dbf7765",
       "count": 1
     },
     "listening/episodes/p3_002.json": {
-      "sha256": "58b36303eb93c7eb9a88818d2b12641c8cb96929289ee849ffe414ff8a4ff673",
+      "sha256": "ef7e8e65e1fb1d5365afa3cf55e50ddc960d9bded9c1e3096dc45e7a3a657b6d",
       "count": 1
     },
     "listening/episodes/p3_003.json": {
-      "sha256": "6b70200230291eeae2954027d23e617699a1a4471d6bca68aec9f2ec298177fa",
+      "sha256": "b76a140c083c1783e3d67ca1c02d9a91312b783465a157e8c463234b5ae32a00",
       "count": 1
     },
     "listening/episodes/p3_004.json": {
-      "sha256": "e13b4438f0435f1d632312173372cf31d89aa72c7ef204140cd12bbdbb6cce87",
+      "sha256": "496e592620379455150b30cee944b36c5f8549a777fe8b487df5a3285e2987b3",
       "count": 1
     },
     "listening/episodes/p3_005.json": {
-      "sha256": "ec5058916c77aa7c2b8c45391b92d8bc8541a8ad29d8c5afb74cdbaad54ea495",
+      "sha256": "3886fa8004c7a409dc7133d2344ecd5f4e7824d2230481e825f33c4d04320df3",
       "count": 1
     },
     "listening/episodes/p3_006.json": {
-      "sha256": "f56184c8f3dd1d03993d49689d88516b476309b5c363113c2457e34079d72f6b",
+      "sha256": "09751d504e575d9052617ea9e792d9e2c4946cdfe4abdeee1f65bab8408f028e",
       "count": 1
     },
     "listening/episodes/p3_res_001.json": {
-      "sha256": "1f8d09ac6f1ca8e9c7f74e3b5b6268621e68d09e0b6e83fd77440103e5594173",
+      "sha256": "2d30e0ca3dbf7ff4f535e8fbef7e67aa888da70c02c6c3c258716e85acee9124",
       "count": 1
     },
     "listening/episodes/p3_res_002.json": {
-      "sha256": "87a711e3de1e9b378ca7605f6d8bdb801d2a639d9771b579dd3fb20f0c842d11",
+      "sha256": "0c281a3cc22f7ae306108a597b4fca07df029ba240ad1b2662f1eeb7fbd7d48e",
       "count": 1
     },
     "listening/episodes/p4_001.json": {
-      "sha256": "63f9a91a934b901023af3a5441f3f12b54f84d85a888600cf981c1d0db018339",
+      "sha256": "e8d954529c08019b4b9180a9b4dbf63250f8f8fa45d5f66a8570ec01449904b0",
       "count": 1
     },
     "listening/episodes/p4_002.json": {
-      "sha256": "a2bc50919bc33ad9fe4a3ccfa20c8a898daf3dc25a50b48d58be7f1fd2d62218",
+      "sha256": "1c48c405204c436ba4a3d53fce6ab15eabcd8123a8cef623e17004760b70d40e",
       "count": 1
     },
     "listening/episodes/p4_003.json": {
-      "sha256": "5ef992668640e6646f406650f1803603fcc9204087fd5675db1dc9ae9eafbb6a",
+      "sha256": "a504e370d1fe24390caa59f5820a017b921c5465ea40b98783c13e719ba1b42d",
       "count": 1
     },
     "listening/episodes/p4_004.json": {
-      "sha256": "1ca226a795af4a17752c63064aecee626b3d42cd8c060f0a6c7c435f8dc3cf6a",
+      "sha256": "633fd6e26dcadf9f4a7c95811a604737e007f5cf818442f0194f9ecd5d481c20",
       "count": 1
     },
     "listening/episodes/p4_005.json": {
-      "sha256": "13fe3c8c2cc30db4803110f1831ba7e7f4c4799cb5430681df4273cd0ffe6684",
+      "sha256": "634f483c5e4ce99135d116da3733d3518363e0f93cca07a0f5d94f8757b92e6d",
       "count": 1
     },
     "listening/episodes/p4_006.json": {
-      "sha256": "ba0ac4f725896d9dd952bcae27f99f5a902eb86a6c713c39a50c2a5a0e68fc2b",
+      "sha256": "7f85904d9ff42b2029a141bd5dd825e34fe9295202b58ed8efed2cd575d2866d",
       "count": 1
     },
     "listening/episodes/p4_res_001.json": {
-      "sha256": "636cbf8fc93c68684ba8155d3799fddf59764129cab34c8dc40f0858e7ef2443",
+      "sha256": "9fd1b53571eeb68638cf8d9b44b17f9ffc0de6150ac9f5c957f858fe20add8a3",
       "count": 1
     },
     "listening/episodes/p4_res_002.json": {
-      "sha256": "55c5bd12104308c05d30c3c702c1d3eaf4f39ba86e37be19a3c2227a38d04578",
+      "sha256": "bfb659c35d11d08f68dafe0d3d7f2c00d0ef7a902c61b660208602204aac7920",
       "count": 1
     },
     "listening/index.json": {
-      "sha256": "a8ca98225917ed9c4aeeb4ecd6218a7e1cfb7ce7c58ca18958b551d4ce701817",
+      "sha256": "a890402f6fbbe11d737a4414c0ef4b941efd9d6aae02931424feb4cc61817b65",
       "count": 32
     },
     "reading/index.json": {
@@ -169,99 +174,99 @@
       "count": 24
     },
     "reading/passages/p1_001.json": {
-      "sha256": "3dc4c7365732874dec21370441783ae4cf704ddebbd0cbc99281125dcac0289d",
+      "sha256": "7de7f577614f081a6d30318d4efae70315f6a1ae289ee5e82fd908fdbb566924",
       "count": 1
     },
     "reading/passages/p1_002.json": {
-      "sha256": "4718165743588d9ac3e761d1ffc6506086dbfeb1ce956e2570fc23276b820676",
+      "sha256": "2a4a373cec66322651a7d7800cf3b6364a3c03dfb7a0d9270eff459f46d9152e",
       "count": 1
     },
     "reading/passages/p1_003.json": {
-      "sha256": "df2fba650f8742d0736608be8a54daf645f02869d28ae7a00995688ec023f1a6",
+      "sha256": "e427840f0cba7647a08f7f5e491d3b371afda57e5f71b2d97e1d9500050d85f5",
       "count": 1
     },
     "reading/passages/p1_004.json": {
-      "sha256": "97ac20495bb58d9edc0b74f6b3125fcf5a19a6196fbf61bff3e030f309ba5205",
+      "sha256": "9ae2634ba7432e019a2f986a2e3859f50529c1fedcaa767ef0baad3a9db7b01a",
       "count": 1
     },
     "reading/passages/p1_005.json": {
-      "sha256": "db9679453643d4d9d019ed44f74d8ae0581cf1d602491926c2a9bf1a966b30ac",
+      "sha256": "d86ad1f69d28b690d61612bb34742700186010b9c9b66df1e78b9d41e7559af2",
       "count": 1
     },
     "reading/passages/p1_006.json": {
-      "sha256": "e005a12d583ba88cda668f96884abf87a5cffd329dd64c5aea9eb5893878d523",
+      "sha256": "543dc1ca0a20fc9ec8f02f8834f1183497e3b257ee0550fecb0c009c37971f73",
       "count": 1
     },
     "reading/passages/p1_res_001.json": {
-      "sha256": "3fca303d8b1d44de5a6f71cf93aeb51f9f5890070481477b5459ad4ce1cd8b46",
+      "sha256": "e59f3e0aa11ee0da3b9c96961785479efd202e2ab322da429c0aa0a59fe8f7a9",
       "count": 1
     },
     "reading/passages/p1_res_002.json": {
-      "sha256": "e8c1366741d70a3c9b10f42e11af26cb0c4bc5d564fd76710839a83ac928080b",
+      "sha256": "f1523ae35f160d3030ed252a4bba9efc434f2871316ae700fc6996cad52f0fe7",
       "count": 1
     },
     "reading/passages/p2_001.json": {
-      "sha256": "08b3bc19388b4ea68551f401409df7a5d2c8965401895507ad08b1f830687f19",
+      "sha256": "8e0aa80ae43beaf7b58cc85902e248b4e7b556e3256d5deadfea62b00cd12c4d",
       "count": 1
     },
     "reading/passages/p2_002.json": {
-      "sha256": "3b3d2a98cbe8d2cb8c41c4727f215b130964c7d3177f7e80c0d2afc3830244cc",
+      "sha256": "badd0c057d74d9dc348598b7a60d28d8dc236d4367017b0e421056a76292573d",
       "count": 1
     },
     "reading/passages/p2_003.json": {
-      "sha256": "35503656e6b3f7b22a63c2b3d45ee9d0ff2461a9ea7cca95c09b42fd45d29bef",
+      "sha256": "9667a8c4ccded68a93ae8a3cf84774130a71849af5cee44dfe953a0656923566",
       "count": 1
     },
     "reading/passages/p2_004.json": {
-      "sha256": "ad30a0c825d90f5e22e5bee9fea4e3e8df062b780c59d3c1c7a4159282bc19ce",
+      "sha256": "d4bd349ca794381fce90c7a1a27d40f22022188ccba888890995cb0caf9f31fb",
       "count": 1
     },
     "reading/passages/p2_005.json": {
-      "sha256": "33998cd0b56e4aa08f1dc574b2f72a0c21981af4c3c16cd36c128826213456d6",
+      "sha256": "1cc2df37cd316a818910b682ca6c9839929c25cf21a3e1350da984b79fae59c8",
       "count": 1
     },
     "reading/passages/p2_006.json": {
-      "sha256": "a976aee76f615b74ea05ddd405b6eaabbbb2e0d7ac682c9e8e18e06fd8596404",
+      "sha256": "9041ca6a35ae6d586ddf510d11c7bb53b52e46458e3637677f501471e2299229",
       "count": 1
     },
     "reading/passages/p2_res_001.json": {
-      "sha256": "32e8fc27b4919f85292ec84a3c081162aa4c07cc6951b9181064d427c1e77521",
+      "sha256": "d669d95c929566884d77254ce117ef26d93646704f4adba3287ef3065da3d4a7",
       "count": 1
     },
     "reading/passages/p2_res_002.json": {
-      "sha256": "a2352c74c27f8f392d60593e7229221b307eca81ea73544a0924a8ba3e6520ac",
+      "sha256": "61a72da1b3063ce1c91cdbf4d81c498a7a3a2453ab61f6a136588bac2e8beddc",
       "count": 1
     },
     "reading/passages/p3_001.json": {
-      "sha256": "3d8599690e83d2132dd07ea1500e7334ad034603e7effe379b82b40ff61fd063",
+      "sha256": "96a5748dbb91185d33565dded1be8717bc0bdf69efdc39a4dd3c7bf8ca46a443",
       "count": 1
     },
     "reading/passages/p3_002.json": {
-      "sha256": "9910111ddcbcece40320b25530b12b61459bd81f5f612c38e0f2b05b20c83853",
+      "sha256": "a7fdfeea38f0f49d41b8c6711777c94bb3ca7b3f2981f393e3b92c7c163e1f2d",
       "count": 1
     },
     "reading/passages/p3_003.json": {
-      "sha256": "5415f6d1fbce3a147bb289b7e1281d1559dcdc27942e0d017516d1489a7486d3",
+      "sha256": "e50ba5902f93830989e8582ef4ca1508878f6ddd20bfb37b5771e7f35fb36a54",
       "count": 1
     },
     "reading/passages/p3_004.json": {
-      "sha256": "06927a41cc71288a3c542e09698bc5268a13fe224b1001936c949bad22999159",
+      "sha256": "08c1dc63494590938dfd6315ff6c1d350a67c4aa5c43af09f82cba6679c959a9",
       "count": 1
     },
     "reading/passages/p3_005.json": {
-      "sha256": "62cdcf6558bb375feab0b26efe5b56e9ad870b3ba2ebf4d28f17800706f09f7d",
+      "sha256": "1c8a278036d258d9ef8e876e31c0de88e6077a3a01a3f1a9db5b69d024aaf514",
       "count": 1
     },
     "reading/passages/p3_006.json": {
-      "sha256": "5a75ce9850062c2cab0d8ee812fee97f8e160b2f848434e99e01f5d42d25b85d",
+      "sha256": "5c09410da047bb60d0091e8e344a0ea4f599347b60481d5d54a56a53b1750384",
       "count": 1
     },
     "reading/passages/p3_res_001.json": {
-      "sha256": "db515815cfafa678438202de7264509bd2171b692e6877001ff187a45876f1cc",
+      "sha256": "0d4d0922654ea47e6b9cc050e9e69e9a1c3af33ce01f1e4322604a9fcb2af2ba",
       "count": 1
     },
     "reading/passages/p3_res_002.json": {
-      "sha256": "07f2c4f5499bb35a99d0a1e133ebcbffea3fd98f773fd0ef2b3dfac7e74f103d",
+      "sha256": "1d4c83bec1423c658db55dfeb7e6c5622ea48f05e28ef9dfaa59dcb4bae6a287",
       "count": 1
     },
     "roadmap.json": {
@@ -289,7 +294,7 @@
       "count": 62
     },
     "vocab/collocations.json": {
-      "sha256": "a4898c79bc81c2efd48f31088950c7b29e9f04e066fc246995ba8bbe68e026be",
+      "sha256": "175e3b38571ee901db9d3ae376d428e3734650d77b0d1c5acd147ae134404a44",
       "count": 762
     },
     "vocab/error_patterns.json": {
@@ -297,15 +302,23 @@
       "count": 230
     },
     "vocab/paraphrases.json": {
-      "sha256": "e5c3c7b061615776dcdf234a3654a0f06751a1d99c91a70bb69e2f538953a9b1",
+      "sha256": "d58694fe22962504d86e428f565ed842c686c03dbb0bfbdeadc133e810d2d696",
       "count": 320
     },
     "vocab/placement_vocab.json": {
       "sha256": "44b6c5346c395be27f931d20c82e1f10031dff338e71107c2a9260c22d5b4db6",
       "count": 150
     },
+    "vocab/words.core.json": {
+      "sha256": "ec623fbba503035d92f91d7cd05e15970356e92f2d2a86d16ad144b3c108dfce",
+      "count": 2207
+    },
+    "vocab/words.detail.json": {
+      "sha256": "423e652e86121c6c7221060b4809312b5ce96e21f4a63e7282f80670b57e185d",
+      "count": 1
+    },
     "vocab/words.json": {
-      "sha256": "5bdf66afde1e1808a7a0cc27156c4fd94acdc02a290e7f86b224b41c6126d837",
+      "sha256": "a4e41070c608037a537db57d1e3f8f59ad5be3d1ce5e436550b34b635822732a",
       "count": 2207
     },
     "writing/cliches.json": {

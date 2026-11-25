@@ -1,0 +1,1881 @@
+[
+ {
+  "id": "vocab:lineage",
+  "headword": "lineage",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "Direct descent from an ancestor, or the continuous historical transmission of an artistic school or cultural tradition.",
+  "meaningVi": "dòng dõi, nguồn gốc truyền thừa văn hóa hoặc huyết thống",
+  "existingExample": "Ceramic villages take immense pride in tracing their glazing techniques through an unbroken artisanal lineage spanning five centuries.",
+  "mustContainOneOf": [
+   "lineage",
+   "lineages"
+  ]
+ },
+ {
+  "id": "vocab:matriarchal",
+  "headword": "matriarchal",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "Relating to a social or cultural system in which lineage, property inheritance, and family authority pass primarily through women.",
+  "meaningVi": "theo chế độ mẫu hệ",
+  "existingExample": "Anthropologists studying matriarchal ethnic communities highlight how female-led inheritance fosters strong household stability.",
+  "mustContainOneOf": [
+   "matriarchal"
+  ]
+ },
+ {
+  "id": "vocab:monumental",
+  "headword": "monumental",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "Great in scale, historical significance, or enduring cultural grandeur, reminiscent of an imposing monument.",
+  "meaningVi": "đồ sộ, mang tầm vóc lịch sử và nghệ thuật lớn lao",
+  "existingExample": "Restoring the monumental stone citadel required master masons trained in centuries-old lime-mortar building techniques.",
+  "mustContainOneOf": [
+   "monumental"
+  ]
+ },
+ {
+  "id": "vocab:mores",
+  "headword": "mores",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "The essential, deeply held moral customs, conventions, and unspoken ethical rules of a particular society or era.",
+  "meaningVi": "tập quán đạo đức, chuẩn mực ứng xử truyền thống",
+  "existingExample": "Nineteenth-century novels offer vivid portraits of how rigid social mores constrained personal ambition and marriage choices.",
+  "mustContainOneOf": [
+   "mores",
+   "moreses"
+  ]
+ },
+ {
+  "id": "vocab:oral_tradition",
+  "headword": "oral tradition",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "The cultural preservation and transmission of histories, epics, laws, and ecological wisdom through spoken storytelling and song.",
+  "meaningVi": "truyền thống truyền miệng",
+  "existingExample": "Indigenous oral tradition has preserved accurate geological memories of ancient tsunamis long before written records existed.",
+  "mustContainOneOf": [
+   "oral tradition",
+   "oral-tradition"
+  ]
+ },
+ {
+  "id": "vocab:patrimony",
+  "headword": "patrimony",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "Valued cultural heritage, historic monuments, and artistic treasures inherited collectively from previous generations.",
+  "meaningVi": "di sản văn hóa và lịch sử kế thừa từ tổ tiên",
+  "existingExample": "Municipal councils have a duty to safeguard architectural patrimony against unchecked commercial real-estate speculation.",
+  "mustContainOneOf": [
+   "patrimony",
+   "patrimonies"
+  ]
+ },
+ {
+  "id": "vocab:patronage",
+  "headword": "patronage",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "Financial sponsorship, institutional backing, or encouragement provided to artists, musicians, and cultural institutions.",
+  "meaningVi": "sự bảo trợ tài chính cho nghệ thuật và văn hóa",
+  "existingExample": "Throughout history, royal and civic patronage enabled composers and painters to complete ambitious works unsuited to quick commercial sale.",
+  "mustContainOneOf": [
+   "patronage",
+   "patronages"
+  ]
+ },
+ {
+  "id": "vocab:polyglot",
+  "headword": "polyglot",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "A person who knows, speaks, and understands several languages with high fluency and cultural nuance.",
+  "meaningVi": "người thông thạo nhiều ngôn ngữ",
+  "existingExample": "Historically, Mediterranean trading ports functioned as cosmopolitan crossroads where merchants operated as fluent polyglots.",
+  "mustContainOneOf": [
+   "polyglot",
+   "polyglots"
+  ]
+ },
+ {
+  "id": "vocab:preservationist",
+  "headword": "preservationist",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "An advocate or specialist dedicated to protecting historic buildings, traditional crafts, and cultural landscapes from demolition or decay.",
+  "meaningVi": "nhà bảo tồn di sản kiến trúc và văn hóa",
+  "existingExample": "Local preservationists successfully campaigned to convert the nineteenth-century railway warehouse into a community gallery.",
+  "mustContainOneOf": [
+   "preservationist",
+   "preservationists"
+  ]
+ },
+ {
+  "id": "vocab:provenance",
+  "headword": "provenance",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "The documented history of origin, ownership, and custody of an artwork, manuscript, or archaeological artefact.",
+  "meaningVi": "nguồn gốc xuất xứ lịch sử của cổ vật hoặc tác phẩm",
+  "existingExample": "Major museums now conduct thorough provenance audits to determine whether colonial-era artefacts should be repatriated.",
+  "mustContainOneOf": [
+   "provenance",
+   "provenances"
+  ]
+ },
+ {
+  "id": "vocab:renaissance",
+  "headword": "renaissance",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "A vibrant revival of artistic, literary, or cultural creativity and renewed public interest in traditional forms.",
+  "meaningVi": "sự phục hưng",
+  "existingExample": "Independent craft studios have sparked a remarkable renaissance in hand-printed textiles and traditional woodblock art.",
+  "mustContainOneOf": [
+   "renaissance",
+   "renaissances"
+  ]
+ },
+ {
+  "id": "vocab:syncretism",
+  "headword": "syncretism",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "The organic blending or reconciliation of different religious beliefs, philosophical traditions, or cultural practices into a cohesive form.",
+  "meaningVi": "sự dung hợp tôn giáo và các truyền thống văn hóa",
+  "existingExample": "Southeast Asian temple festivals frequently showcase deep religious syncretism, intertwining indigenous ancestor rites with Buddhist rituals.",
+  "mustContainOneOf": [
+   "syncretism",
+   "syncretisms"
+  ]
+ },
+ {
+  "id": "vocab:vernacular",
+  "headword": "vernacular",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "The native everyday language spoken by ordinary people of a region, or local architecture built with indigenous materials.",
+  "meaningVi": "ngôn ngữ bản địa thường nhật; phong cách kiến trúc dân gian",
+  "existingExample": "Writing poetry in the local vernacular rather than classical court language broadened literacy across medieval Europe.",
+  "mustContainOneOf": [
+   "vernacular",
+   "vernaculars"
+  ]
+ },
+ {
+  "id": "vocab:zeitgeist",
+  "headword": "zeitgeist",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "The defining intellectual, moral, and cultural climate characteristic of a particular historical era.",
+  "meaningVi": "tinh thần thời đại",
+  "existingExample": "Award-winning documentaries often capture the anxious zeitgeist of a generation grappling with technological disruption.",
+  "mustContainOneOf": [
+   "zeitgeist",
+   "zeitgeists"
+  ]
+ },
+ {
+  "id": "vocab:analyse",
+  "headword": "analyse",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "technology",
+   "science"
+  ],
+  "definitionEn": "to examine something methodically and in detail in order to explain or interpret it.",
+  "meaningVi": "phân tích",
+  "existingExample": "Researchers analysed data from more than 500 schools.",
+  "mustContainOneOf": [
+   "analyse",
+   "analyses",
+   "analysed",
+   "analysing"
+  ]
+ },
+ {
+  "id": "vocab:approach",
+  "headword": "approach",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a particular way of dealing with a problem, task, or subject.",
+  "meaningVi": "cách tiếp cận; tiếp cận",
+  "existingExample": "A more practical approach to teaching maths could reduce anxiety.",
+  "mustContainOneOf": [
+   "approach",
+   "approaches"
+  ]
+ },
+ {
+  "id": "vocab:area",
+  "headword": "area",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a particular subject, field of activity, or geographical region.",
+  "meaningVi": "lĩnh vực; khu vực",
+  "existingExample": "Healthcare is one area where technology has had a huge impact.",
+  "mustContainOneOf": [
+   "area",
+   "areas"
+  ]
+ },
+ {
+  "id": "vocab:assess",
+  "headword": "assess",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to judge or evaluate the quality, value, or impact of something.",
+  "meaningVi": "đánh giá",
+  "existingExample": "It is difficult to assess the long-term impact of social media.",
+  "mustContainOneOf": [
+   "assess",
+   "assesses",
+   "assessed",
+   "assessing"
+  ]
+ },
+ {
+  "id": "vocab:assume",
+  "headword": "assume",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to accept something as true without direct proof or verification.",
+  "meaningVi": "cho rằng, giả định",
+  "existingExample": "Many people wrongly assume that older workers cannot learn new skills.",
+  "mustContainOneOf": [
+   "assume",
+   "assumes",
+   "assumed",
+   "assuming"
+  ]
+ },
+ {
+  "id": "vocab:authority",
+  "headword": "authority",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "environment"
+  ],
+  "definitionEn": "the official power or right to make decisions, enforce rules, or govern.",
+  "meaningVi": "chính quyền; thẩm quyền",
+  "existingExample": "Local authorities should provide more recycling facilities when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "authority",
+   "authorities"
+  ]
+ },
+ {
+  "id": "vocab:available",
+  "headword": "available",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "food"
+  ],
+  "definitionEn": "able to be obtained, used, or accessed readily.",
+  "meaningVi": "có sẵn",
+  "existingExample": "Healthy food should be readily available in schools across global agricultural supply chains and local markets.",
+  "mustContainOneOf": [
+   "available"
+  ]
+ },
+ {
+  "id": "vocab:benefit",
+  "headword": "benefit",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "family",
+   "economy"
+  ],
+  "definitionEn": "an advantage, profit, or positive outcome gained from something.",
+  "meaningVi": "lợi ích; được lợi",
+  "existingExample": "Children benefit greatly from learning a second language early within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "benefits",
+   "benefit"
+  ]
+ },
+ {
+  "id": "vocab:concept",
+  "headword": "concept",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "an abstract idea, general notion, or underlying principle.",
+  "meaningVi": "khái niệm",
+  "existingExample": "The concept of working from home was unusual twenty years ago.",
+  "mustContainOneOf": [
+   "concept",
+   "concepts"
+  ]
+ },
+ {
+  "id": "vocab:consist",
+  "headword": "consist",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to be composed or formed of particular parts or elements.",
+  "meaningVi": "bao gồm",
+  "existingExample": "The course consists of six modules and a final project.",
+  "mustContainOneOf": [
+   "consist",
+   "consists",
+   "consisted",
+   "consisting"
+  ]
+ },
+ {
+  "id": "vocab:constitute",
+  "headword": "constitute",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to be considered as, make up, or form a part of a whole.",
+  "meaningVi": "cấu thành; chiếm (tỉ lệ)",
+  "existingExample": "Young people constitute a large proportion of online shoppers.",
+  "mustContainOneOf": [
+   "constitute",
+   "constitutes",
+   "constituted",
+   "constituting"
+  ]
+ },
+ {
+  "id": "vocab:context",
+  "headword": "context",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the circumstances or setting that form the background for an event or idea.",
+  "meaningVi": "bối cảnh, ngữ cảnh",
+  "existingExample": "Words must be understood in their context.",
+  "mustContainOneOf": [
+   "context",
+   "contexts"
+  ]
+ },
+ {
+  "id": "vocab:contract",
+  "headword": "contract",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a formal written or spoken legal agreement between two or more parties.",
+  "meaningVi": "hợp đồng",
+  "existingExample": "Many young workers are employed on short-term contracts.",
+  "mustContainOneOf": [
+   "contract",
+   "contracts"
+  ]
+ },
+ {
+  "id": "vocab:create",
+  "headword": "create",
+  "pos": [
+   "v"
+  ],
+  "level": 2,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "to bring something new into existence or cause a particular result.",
+  "meaningVi": "tạo ra",
+  "existingExample": "Investment in green energy could create thousands of jobs as nations transition away from carbon-intensive fossil fuels.",
+  "mustContainOneOf": [
+   "create",
+   "creates",
+   "created",
+   "creating"
+  ]
+ },
+ {
+  "id": "vocab:data",
+  "headword": "data",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "urban",
+   "technology"
+  ],
+  "definitionEn": "facts, figures, and statistics collected together for reference or analysis.",
+  "meaningVi": "dữ liệu",
+  "existingExample": "The data suggest that cycling has become more popular in cities.",
+  "mustContainOneOf": [
+   "data",
+   "datas"
+  ]
+ },
+ {
+  "id": "vocab:define",
+  "headword": "define",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "to state or explain the exact meaning, scope, or nature of something.",
+  "meaningVi": "định nghĩa, xác định",
+  "existingExample": "Success can be defined in many different ways when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "define",
+   "defines",
+   "defined",
+   "defining"
+  ]
+ },
+ {
+  "id": "vocab:derive",
+  "headword": "derive",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to obtain something from a specified source or originate from it.",
+  "meaningVi": "bắt nguồn; thu được",
+  "existingExample": "Many modern medicines are derived from plants.",
+  "mustContainOneOf": [
+   "derive",
+   "derives",
+   "derived",
+   "deriving"
+  ]
+ },
+ {
+  "id": "vocab:distribute",
+  "headword": "distribute",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to share out, allocate, or spread resources or goods among recipients.",
+  "meaningVi": "phân phối, phân bổ",
+  "existingExample": "Wealth is not evenly distributed across the country.",
+  "mustContainOneOf": [
+   "distribute",
+   "distributes",
+   "distributed",
+   "distributing"
+  ]
+ },
+ {
+  "id": "vocab:economy",
+  "headword": "economy",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "globalisation",
+   "economy"
+  ],
+  "definitionEn": "the system of production, trade, and consumption of goods and services in a country.",
+  "meaningVi": "nền kinh tế",
+  "existingExample": "Tourism plays a vital role in the local economy across closely interconnected international markets today.",
+  "mustContainOneOf": [
+   "economy",
+   "economies"
+  ]
+ },
+ {
+  "id": "vocab:environment",
+  "headword": "environment",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "psychology"
+  ],
+  "definitionEn": "the natural world or the surrounding conditions in which people, animals, or systems operate.",
+  "meaningVi": "môi trường",
+  "existingExample": "A positive working environment improves staff motivation according to recent behavioural studies of everyday decision-making.",
+  "mustContainOneOf": [
+   "environment",
+   "environments"
+  ]
+ },
+ {
+  "id": "vocab:establish",
+  "headword": "establish",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to set up an organisation or system on a firm basis, or to prove a fact conclusively.",
+  "meaningVi": "thành lập; xác lập",
+  "existingExample": "Researchers have established a clear link between smoking and cancer.",
+  "mustContainOneOf": [
+   "establish",
+   "establishes",
+   "established",
+   "establishing"
+  ]
+ },
+ {
+  "id": "vocab:estimate",
+  "headword": "estimate",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "urban"
+  ],
+  "definitionEn": "to roughly calculate or judge the value, size, or quantity of something.",
+  "meaningVi": "ước tính",
+  "existingExample": "It is estimated that the city's population will double by 2050.",
+  "mustContainOneOf": [
+   "estimate",
+   "estimates",
+   "estimated",
+   "estimating"
+  ]
+ },
+ {
+  "id": "vocab:evident",
+  "headword": "evident",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "government",
+   "transport"
+  ],
+  "definitionEn": "clearly visible, obvious, or easily understood from available facts.",
+  "meaningVi": "rõ ràng, hiển nhiên",
+  "existingExample": "It is evident that the policy has failed to reduce traffic.",
+  "mustContainOneOf": [
+   "evident"
+  ]
+ },
+ {
+  "id": "vocab:export",
+  "headword": "export",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "goods or services sold and sent to another country for trade.",
+  "meaningVi": "xuất khẩu",
+  "existingExample": "Coffee is one of the country's major exports across closely interconnected international markets today.",
+  "mustContainOneOf": [
+   "exports",
+   "export"
+  ]
+ },
+ {
+  "id": "vocab:factor",
+  "headword": "factor",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a circumstance, fact, or influence that contributes to a particular result.",
+  "meaningVi": "yếu tố",
+  "existingExample": "Cost is a key factor when people choose where to study.",
+  "mustContainOneOf": [
+   "factor",
+   "factors"
+  ]
+ },
+ {
+  "id": "vocab:finance",
+  "headword": "finance",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health",
+   "economy"
+  ],
+  "definitionEn": "the management of large amounts of money, especially by governments or corporations.",
+  "meaningVi": "tài chính; cấp vốn",
+  "existingExample": "The new hospital will be financed by local taxes.",
+  "mustContainOneOf": [
+   "financed",
+   "finance",
+   "finances"
+  ]
+ },
+ {
+  "id": "vocab:formula",
+  "headword": "formula",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a standard method, rule, or mathematical expression for achieving a particular result.",
+  "meaningVi": "công thức",
+  "existingExample": "There is no simple formula for a happy life.",
+  "mustContainOneOf": [
+   "formula",
+   "formulas"
+  ]
+ },
+ {
+  "id": "vocab:function",
+  "headword": "function",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the specific purpose, role, or operational activity of a person, system, or object.",
+  "meaningVi": "chức năng; vận hành",
+  "existingExample": "Libraries now function as community centres as well as places to borrow books.",
+  "mustContainOneOf": [
+   "function",
+   "functions"
+  ]
+ },
+ {
+  "id": "vocab:identify",
+  "headword": "identify",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "to recognise, establish, or pinpoint the exact nature or identity of something.",
+  "meaningVi": "xác định, nhận diện",
+  "existingExample": "The first step is to identify the root cause of the problem.",
+  "mustContainOneOf": [
+   "identify",
+   "identifies",
+   "identified",
+   "identifying"
+  ]
+ },
+ {
+  "id": "vocab:indicate",
+  "headword": "indicate",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to point out, suggest, or serve as a sign of a particular trend or fact.",
+  "meaningVi": "cho thấy",
+  "existingExample": "Recent figures indicate a sharp rise in online shopping.",
+  "mustContainOneOf": [
+   "indicate",
+   "indicates",
+   "indicated",
+   "indicating"
+  ]
+ },
+ {
+  "id": "vocab:individual",
+  "headword": "individual",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a single human being considered separately from a group or society.",
+  "meaningVi": "cá nhân; riêng",
+  "existingExample": "Teachers cannot always meet every student's individual needs.",
+  "mustContainOneOf": [
+   "individual",
+   "individuals"
+  ]
+ },
+ {
+  "id": "vocab:interpret",
+  "headword": "interpret",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to explain or determine the meaning and significance of information or actions.",
+  "meaningVi": "diễn giải",
+  "existingExample": "The same results can be interpreted in different ways.",
+  "mustContainOneOf": [
+   "interpret",
+   "interprets",
+   "interpreted",
+   "interpreting"
+  ]
+ },
+ {
+  "id": "vocab:involve",
+  "headword": "involve",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "to include something as a necessary part, condition, or consequence.",
+  "meaningVi": "bao gồm; liên quan",
+  "existingExample": "Parents should be more involved in their children's education within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "involve",
+   "involves",
+   "involved",
+   "involving"
+  ]
+ },
+ {
+  "id": "vocab:issue",
+  "headword": "issue",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "an important topic, concern, or problem open to debate and resolution.",
+  "meaningVi": "vấn đề",
+  "existingExample": "Climate change is one of the most pressing issues of our time.",
+  "mustContainOneOf": [
+   "issue",
+   "issues"
+  ]
+ },
+ {
+  "id": "vocab:labour",
+  "headword": "labour",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "work",
+   "psychology"
+  ],
+  "definitionEn": "physical or mental work, or the collective workforce engaged in economic production.",
+  "meaningVi": "lao động",
+  "existingExample": "Some companies move factories abroad to take advantage of cheap labour.",
+  "mustContainOneOf": [
+   "labour",
+   "labor",
+   "labours",
+   "labors"
+  ]
+ },
+ {
+  "id": "vocab:legal",
+  "headword": "legal",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "permitted by, relating to, or established by the law.",
+  "meaningVi": "hợp pháp; pháp lý",
+  "existingExample": "Wearing a helmet is a legal requirement for cyclists in some countries.",
+  "mustContainOneOf": [
+   "legal"
+  ]
+ },
+ {
+  "id": "vocab:legislation",
+  "headword": "legislation",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "laws considered collectively, or the formal process of making and enacting laws.",
+  "meaningVi": "luật pháp, sự lập pháp",
+  "existingExample": "Governments should introduce legislation to protect gig workers when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "legislation",
+   "legislations"
+  ]
+ },
+ {
+  "id": "vocab:major",
+  "headword": "major",
+  "pos": [
+   "adj"
+  ],
+  "level": 1,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "important, serious, or significant in scale, influence, or extent.",
+  "meaningVi": "chính, lớn",
+  "existingExample": "Social media plays a major role in shaping young people's opinions.",
+  "mustContainOneOf": [
+   "major"
+  ]
+ },
+ {
+  "id": "vocab:method",
+  "headword": "method",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a systematic procedure or established technique for accomplishing something.",
+  "meaningVi": "phương pháp",
+  "existingExample": "Traditional teaching methods are being replaced by interactive learning.",
+  "mustContainOneOf": [
+   "methods",
+   "method"
+  ]
+ },
+ {
+  "id": "vocab:occur",
+  "headword": "occur",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "urban"
+  ],
+  "definitionEn": "to happen, take place, or come into existence.",
+  "meaningVi": "xảy ra",
+  "existingExample": "Most road accidents occur in urban areas in densely populated metropolitan areas worldwide.",
+  "mustContainOneOf": [
+   "occur",
+   "occurs",
+   "occured",
+   "occuring"
+  ]
+ },
+ {
+  "id": "vocab:percentage",
+  "headword": "percentage",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a rate, proportion, or share expressed as a fraction of one hundred.",
+  "meaningVi": "tỷ lệ phần trăm",
+  "existingExample": "The percentage of people working from home rose significantly.",
+  "mustContainOneOf": [
+   "percentage",
+   "percentages"
+  ]
+ },
+ {
+  "id": "vocab:period",
+  "headword": "period",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a specific length or portion of time defined by particular events or characteristics.",
+  "meaningVi": "giai đoạn",
+  "existingExample": "Over the same period, the number of cars doubled.",
+  "mustContainOneOf": [
+   "period",
+   "periods"
+  ]
+ },
+ {
+  "id": "vocab:policy",
+  "headword": "policy",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "government",
+   "environment"
+  ],
+  "definitionEn": "a formal course or principle of action adopted by a government or organisation.",
+  "meaningVi": "chính sách",
+  "existingExample": "The government introduced a policy to reduce plastic waste when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "policy",
+   "policies"
+  ]
+ },
+ {
+  "id": "vocab:principle",
+  "headword": "principle",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "psychology"
+  ],
+  "definitionEn": "a fundamental truth, rule, or moral standard guiding behaviour or reasoning.",
+  "meaningVi": "nguyên tắc",
+  "existingExample": "In principle, everyone agrees that education should be free according to recent behavioural studies of everyday decision-making.",
+  "mustContainOneOf": [
+   "principle",
+   "principles"
+  ]
+ },
+ {
+  "id": "vocab:procedure",
+  "headword": "procedure",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "an established or official sequence of steps followed to complete a task.",
+  "meaningVi": "thủ tục, quy trình",
+  "existingExample": "Hospitals must follow strict procedures to prevent infection.",
+  "mustContainOneOf": [
+   "procedure",
+   "procedures"
+  ]
+ },
+ {
+  "id": "vocab:process",
+  "headword": "process",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "language"
+  ],
+  "definitionEn": "a series of actions or stages directed towards achieving a particular outcome.",
+  "meaningVi": "quá trình; xử lý",
+  "existingExample": "Learning a language is a gradual process among multilingual speakers in academic and workplace settings.",
+  "mustContainOneOf": [
+   "process",
+   "processes"
+  ]
+ },
+ {
+  "id": "vocab:require",
+  "headword": "require",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to need something for a specific purpose or make it officially necessary.",
+  "meaningVi": "đòi hỏi",
+  "existingExample": "Most jobs now require basic computer skills.",
+  "mustContainOneOf": [
+   "require",
+   "requires",
+   "required",
+   "requiring"
+  ]
+ },
+ {
+  "id": "vocab:research",
+  "headword": "research",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "family",
+   "science"
+  ],
+  "definitionEn": "systematic investigation into a subject to establish facts and reach new conclusions.",
+  "meaningVi": "nghiên cứu",
+  "existingExample": "Research suggests that bilingual children are better at switching between tasks.",
+  "mustContainOneOf": [
+   "research",
+   "researches"
+  ]
+ },
+ {
+  "id": "vocab:respond",
+  "headword": "respond",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to reply or react in words or action to a stimulus, question, or situation.",
+  "meaningVi": "phản hồi, ứng phó",
+  "existingExample": "Governments must respond quickly to natural disasters.",
+  "mustContainOneOf": [
+   "respond",
+   "responds",
+   "responded",
+   "responding"
+  ]
+ },
+ {
+  "id": "vocab:role",
+  "headword": "role",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "the function assumed or part played by a person or element in a particular situation.",
+  "meaningVi": "vai trò",
+  "existingExample": "Parents play a key role in children's development within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "role",
+   "roles"
+  ]
+ },
+ {
+  "id": "vocab:section",
+  "headword": "section",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a distinct part or subdivision of a larger whole, document, or population.",
+  "meaningVi": "bộ phận, phần",
+  "existingExample": "A large section of society cannot afford private healthcare.",
+  "mustContainOneOf": [
+   "section",
+   "sections"
+  ]
+ },
+ {
+  "id": "vocab:sector",
+  "headword": "sector",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "a distinct division of an economy, society, or sphere of activity.",
+  "meaningVi": "khu vực, ngành (kinh tế)",
+  "existingExample": "Salaries in the public sector are often lower than in the private sector.",
+  "mustContainOneOf": [
+   "sector",
+   "sectors"
+  ]
+ },
+ {
+  "id": "vocab:significant",
+  "headword": "significant",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "sufficiently great or important to be worthy of attention or to have a notable effect.",
+  "meaningVi": "đáng kể; quan trọng",
+  "existingExample": "There has been a significant increase in obesity among children.",
+  "mustContainOneOf": [
+   "significant"
+  ]
+ },
+ {
+  "id": "vocab:similar",
+  "headword": "similar",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "having a close resemblance in appearance, nature, or characteristics.",
+  "meaningVi": "tương tự",
+  "existingExample": "Sales followed a similar pattern in both years.",
+  "mustContainOneOf": [
+   "similar"
+  ]
+ },
+ {
+  "id": "vocab:source",
+  "headword": "source",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "tourism"
+  ],
+  "definitionEn": "a place, person, or origin from which something comes or can be obtained.",
+  "meaningVi": "nguồn",
+  "existingExample": "Tourism is the main source of income for the island.",
+  "mustContainOneOf": [
+   "source",
+   "sorce",
+   "sources",
+   "sorces"
+  ]
+ },
+ {
+  "id": "vocab:specific",
+  "headword": "specific",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "clearly defined, exact, and relating to a particular case rather than general ones.",
+  "meaningVi": "cụ thể",
+  "existingExample": "Give specific examples to support your argument.",
+  "mustContainOneOf": [
+   "specific"
+  ]
+ },
+ {
+  "id": "vocab:structure",
+  "headword": "structure",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the arrangement of and relations between the parts of something complex.",
+  "meaningVi": "cấu trúc",
+  "existingExample": "A clear structure makes an essay easier to follow.",
+  "mustContainOneOf": [
+   "structure",
+   "structures"
+  ]
+ },
+ {
+  "id": "vocab:vary",
+  "headword": "vary",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to differ in size, amount, degree, or nature from one case to another.",
+  "meaningVi": "khác nhau, dao động",
+  "existingExample": "Prices vary considerably from one region to another.",
+  "mustContainOneOf": [
+   "vary",
+   "varies",
+   "varied",
+   "varying"
+  ]
+ },
+ {
+  "id": "vocab:achieve",
+  "headword": "achieve",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "work"
+  ],
+  "definitionEn": "to successfully reach a desired objective, level, or result through effort.",
+  "meaningVi": "đạt được",
+  "existingExample": "Hard work alone does not guarantee that students will achieve their goals.",
+  "mustContainOneOf": [
+   "achieve",
+   "achieves",
+   "achieved",
+   "achieving"
+  ]
+ },
+ {
+  "id": "vocab:administration",
+  "headword": "administration",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "the process of organising and managing the affairs of an institution or government.",
+  "meaningVi": "sự quản lý; hành chính",
+  "existingExample": "Streamlining public administration would free substantial funds for frontline community services.",
+  "mustContainOneOf": [
+   "administration",
+   "administrations"
+  ]
+ },
+ {
+  "id": "vocab:affect",
+  "headword": "affect",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "environment",
+   "health"
+  ],
+  "definitionEn": "to produce a change in or have an influence on someone or something.",
+  "meaningVi": "ảnh hưởng đến",
+  "existingExample": "Air pollution adversely affects people's health.",
+  "mustContainOneOf": [
+   "affect",
+   "affects",
+   "affected",
+   "affecting"
+  ]
+ },
+ {
+  "id": "vocab:appropriate",
+  "headword": "appropriate",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "suitable, proper, or fitting in the given circumstances.",
+  "meaningVi": "phù hợp",
+  "existingExample": "Not all video games are appropriate for children within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "appropriate"
+  ]
+ },
+ {
+  "id": "vocab:aspect",
+  "headword": "aspect",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a particular part, dimension, or feature of a broader subject or situation.",
+  "meaningVi": "khía cạnh",
+  "existingExample": "Technology has changed almost every aspect of our lives.",
+  "mustContainOneOf": [
+   "aspect",
+   "aspects"
+  ]
+ },
+ {
+  "id": "vocab:assist",
+  "headword": "assist",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to help someone by providing support, resources, or practical aid.",
+  "meaningVi": "hỗ trợ",
+  "existingExample": "Robots can assist nurses with routine tasks.",
+  "mustContainOneOf": [
+   "assist",
+   "assists",
+   "assisted",
+   "assisting"
+  ]
+ },
+ {
+  "id": "vocab:category",
+  "headword": "category",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "a class or division of people or things regarded as sharing particular characteristics.",
+  "meaningVi": "loại, hạng mục",
+  "existingExample": "Household spending falls into three main categories within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "category",
+   "categories"
+  ]
+ },
+ {
+  "id": "vocab:chapter",
+  "headword": "chapter",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "history"
+  ],
+  "definitionEn": "a main division of a book, or a distinctive period in history or someone's life.",
+  "meaningVi": "chương; giai đoạn mới",
+  "existingExample": "Moving abroad can mark a new chapter in a person's life.",
+  "mustContainOneOf": [
+   "chapter",
+   "chapters"
+  ]
+ },
+ {
+  "id": "vocab:commission",
+  "headword": "commission",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "work",
+   "government"
+  ],
+  "definitionEn": "an official group tasked with investigating a matter, or a formal order to produce work.",
+  "meaningVi": "ủy ban; đặt làm, ủy thác",
+  "existingExample": "The government commissioned a report on youth unemployment in today's competitive and rapidly shifting labour market.",
+  "mustContainOneOf": [
+   "commission",
+   "commissions"
+  ]
+ },
+ {
+  "id": "vocab:community",
+  "headword": "community",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a group of people living in the same locality or sharing common interests and values.",
+  "meaningVi": "cộng đồng",
+  "existingExample": "Shared green spaces create a sense of community.",
+  "mustContainOneOf": [
+   "community",
+   "communities"
+  ]
+ },
+ {
+  "id": "vocab:complex",
+  "headword": "complex",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "consisting of many interconnected parts and therefore difficult to analyse or understand.",
+  "meaningVi": "phức tạp",
+  "existingExample": "Climate change is a complex issue with no simple solution.",
+  "mustContainOneOf": [
+   "complex"
+  ]
+ },
+ {
+  "id": "vocab:compute",
+  "headword": "compute",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to reckon or calculate a figure or amount using mathematics or a computer.",
+  "meaningVi": "tính toán",
+  "existingExample": "Modern weather models compute millions of variables every hour.",
+  "mustContainOneOf": [
+   "compute",
+   "computes",
+   "computed",
+   "computing"
+  ]
+ },
+ {
+  "id": "vocab:conclude",
+  "headword": "conclude",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "psychology",
+   "sport"
+  ],
+  "definitionEn": "to arrive at a reasoned judgement or bring something to an end.",
+  "meaningVi": "kết luận",
+  "existingExample": "The study concluded that exercise improves memory according to recent behavioural studies of everyday decision-making.",
+  "mustContainOneOf": [
+   "conclude",
+   "concludes",
+   "concluded",
+   "concluding"
+  ]
+ },
+ {
+  "id": "vocab:conduct",
+  "headword": "conduct",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education",
+   "science"
+  ],
+  "definitionEn": "to organise and carry out an activity, study, or experiment.",
+  "meaningVi": "tiến hành",
+  "existingExample": "The university conducted a survey of 1,000 students.",
+  "mustContainOneOf": [
+   "conduct",
+   "conducts",
+   "conducted",
+   "conducting"
+  ]
+ },
+ {
+  "id": "vocab:construct",
+  "headword": "construct",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to build a physical structure or formulate a coherent argument or theory.",
+  "meaningVi": "xây dựng",
+  "existingExample": "A well-constructed argument uses clear evidence.",
+  "mustContainOneOf": [
+   "construct",
+   "constructs",
+   "constructed",
+   "constructing"
+  ]
+ },
+ {
+  "id": "vocab:consume",
+  "headword": "consume",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "energy",
+   "technology"
+  ],
+  "definitionEn": "to use up a resource, or to eat, drink, or purchase goods and services.",
+  "meaningVi": "tiêu thụ",
+  "existingExample": "Data centres consume huge amounts of electricity as nations transition away from carbon-intensive fossil fuels.",
+  "mustContainOneOf": [
+   "consume",
+   "consumes",
+   "consumed",
+   "consuming"
+  ]
+ },
+ {
+  "id": "vocab:credit",
+  "headword": "credit",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "financial borrowing arrangement, or public acknowledgement for an achievement.",
+  "meaningVi": "tín dụng; sự ghi nhận",
+  "existingExample": "Easy access to credit encourages people to spend more than they earn.",
+  "mustContainOneOf": [
+   "credit",
+   "credits"
+  ]
+ },
+ {
+  "id": "vocab:culture",
+  "headword": "culture",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "work",
+   "health"
+  ],
+  "definitionEn": "the shared ideas, customs, arts, and social behaviour of a particular society.",
+  "meaningVi": "văn hóa",
+  "existingExample": "A long-hours work culture can damage employees' health in today's competitive and rapidly shifting labour market.",
+  "mustContainOneOf": [
+   "culture",
+   "cultures"
+  ]
+ },
+ {
+  "id": "vocab:design",
+  "headword": "design",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "energy",
+   "arts"
+  ],
+  "definitionEn": "a detailed plan or blueprint created to guide the construction or function of something.",
+  "meaningVi": "thiết kế; được thiết kế để",
+  "existingExample": "The scheme is designed to encourage people to save energy.",
+  "mustContainOneOf": [
+   "designed",
+   "design",
+   "designs"
+  ]
+ },
+ {
+  "id": "vocab:distinct",
+  "headword": "distinct",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "recognisably different in nature from something else of a similar type.",
+  "meaningVi": "riêng biệt, rõ rệt",
+  "existingExample": "Each region has its own distinct dialect.",
+  "mustContainOneOf": [
+   "distinct"
+  ]
+ },
+ {
+  "id": "vocab:element",
+  "headword": "element",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "an essential or characteristic part of something abstract or physical.",
+  "meaningVi": "yếu tố, thành phần",
+  "existingExample": "Trust is a key element of any successful team.",
+  "mustContainOneOf": [
+   "element",
+   "elements"
+  ]
+ },
+ {
+  "id": "vocab:equate",
+  "headword": "equate",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to consider one thing to be the same as or equivalent to another.",
+  "meaningVi": "đánh đồng",
+  "existingExample": "Many people equate success with wealth.",
+  "mustContainOneOf": [
+   "equate",
+   "equates",
+   "equated",
+   "equating"
+  ]
+ },
+ {
+  "id": "vocab:evaluate",
+  "headword": "evaluate",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to form an informed judgement about the amount, value, or effectiveness of something.",
+  "meaningVi": "đánh giá",
+  "existingExample": "Schools should evaluate the effectiveness of new teaching methods.",
+  "mustContainOneOf": [
+   "evaluate",
+   "evaluates",
+   "evaluated",
+   "evaluating"
+  ]
+ },
+ {
+  "id": "vocab:feature",
+  "headword": "feature",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a distinctive attribute, quality, or prominent aspect of something.",
+  "meaningVi": "đặc điểm; có đặc điểm",
+  "existingExample": "The most striking feature of the graph is the sharp fall in 2020.",
+  "mustContainOneOf": [
+   "feature",
+   "features"
+  ]
+ },
+ {
+  "id": "vocab:final",
+  "headword": "final",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "coming at the end of a series, process, or period of time.",
+  "meaningVi": "cuối cùng",
+  "existingExample": "In the final stage of the process, the bottles are labelled.",
+  "mustContainOneOf": [
+   "final"
+  ]
+ },
+ {
+  "id": "vocab:focus",
+  "headword": "focus",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the main centre of attention, activity, or interest.",
+  "meaningVi": "trọng tâm; tập trung",
+  "existingExample": "Schools should focus more on practical skills.",
+  "mustContainOneOf": [
+   "focus",
+   "focuses"
+  ]
+ },
+ {
+  "id": "vocab:impact",
+  "headword": "impact",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "tourism"
+  ],
+  "definitionEn": "a marked effect or powerful influence exerted by one thing on another.",
+  "meaningVi": "tác động",
+  "existingExample": "Tourism has a significant impact on the local environment in popular heritage destinations experiencing heavy visitor numbers.",
+  "mustContainOneOf": [
+   "impact",
+   "impacts"
+  ]
+ },
+ {
+  "id": "vocab:injury",
+  "headword": "injury",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "physical harm or damage done to a person's body.",
+  "meaningVi": "chấn thương",
+  "existingExample": "Thousands of people suffer serious injuries in road accidents every year.",
+  "mustContainOneOf": [
+   "injury",
+   "injuries"
+  ]
+ }
+]

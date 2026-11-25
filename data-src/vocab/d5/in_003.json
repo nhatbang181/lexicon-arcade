@@ -1,0 +1,1840 @@
+[
+ {
+  "id": "vocab:coral_bleaching",
+  "headword": "coral bleaching",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "corals turning white because of heat stress.",
+  "meaningVi": "hiện tượng san hô bị tẩy trắng",
+  "existingExample": "Rising sea temperatures cause mass coral bleaching.",
+  "mustContainOneOf": [
+   "coral bleaching",
+   "coral-bleaching"
+  ]
+ },
+ {
+  "id": "vocab:ocean_acidification",
+  "headword": "ocean acidification",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "the falling pH of the oceans as they absorb carbon dioxide.",
+  "meaningVi": "axit hóa đại dương",
+  "existingExample": "Ocean acidification makes it harder for shellfish to build shells.",
+  "mustContainOneOf": [
+   "ocean acidification",
+   "ocean-acidification"
+  ]
+ },
+ {
+  "id": "vocab:food_chain",
+  "headword": "food chain",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a series of organisms in which each is eaten by the next.",
+  "meaningVi": "chuỗi thức ăn",
+  "existingExample": "Microplastics can enter the food chain through fish.",
+  "mustContainOneOf": [
+   "food chain",
+   "food-chain"
+  ]
+ },
+ {
+  "id": "vocab:microplastics",
+  "headword": "microplastics",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "tiny pieces of plastic in the environment.",
+  "meaningVi": "vi nhựa",
+  "existingExample": "Microplastics have been found in drinking water.",
+  "mustContainOneOf": [
+   "microplastics",
+   "microplasticses"
+  ]
+ },
+ {
+  "id": "vocab:e_waste",
+  "headword": "e-waste",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "discarded electronic devices.",
+  "meaningVi": "rác thải điện tử",
+  "existingExample": "Much e-waste is shipped to developing countries.",
+  "mustContainOneOf": [
+   "e-waste",
+   "e-wastes",
+   "e waste"
+  ]
+ },
+ {
+  "id": "vocab:upcycling",
+  "headword": "upcycling",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "turning waste materials into products of higher value.",
+  "meaningVi": "tái chế nâng cấp",
+  "existingExample": "Upcycling turns old furniture into new designs.",
+  "mustContainOneOf": [
+   "upcycling",
+   "upcyclings"
+  ]
+ },
+ {
+  "id": "vocab:circular_economy",
+  "headword": "circular economy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "an economy that reuses and recycles materials to cut waste.",
+  "meaningVi": "kinh tế tuần hoàn",
+  "existingExample": "A circular economy keeps materials in use for as long as possible.",
+  "mustContainOneOf": [
+   "circular economy",
+   "circular-economy"
+  ]
+ },
+ {
+  "id": "vocab:throwaway_culture",
+  "headword": "throwaway culture",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a habit of discarding things rather than reusing or repairing them.",
+  "meaningVi": "văn hóa dùng rồi vứt",
+  "existingExample": "Cheap fashion fuels a throwaway culture.",
+  "mustContainOneOf": [
+   "throwaway culture",
+   "throwaway-culture"
+  ]
+ },
+ {
+  "id": "vocab:fast_fashion",
+  "headword": "fast fashion",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "cheap clothes produced quickly to follow trends.",
+  "meaningVi": "thời trang nhanh",
+  "existingExample": "Fast fashion generates huge amounts of textile waste.",
+  "mustContainOneOf": [
+   "fast fashion",
+   "fast-fashion"
+  ]
+ },
+ {
+  "id": "vocab:greenwashing",
+  "headword": "greenwashing",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "misleading claims that a product is environmentally friendly.",
+  "meaningVi": "tẩy xanh (quảng cáo xanh giả tạo)",
+  "existingExample": "Regulators are cracking down on greenwashing.",
+  "mustContainOneOf": [
+   "greenwashing",
+   "greenwashings"
+  ]
+ },
+ {
+  "id": "vocab:environmentally_conscious",
+  "headword": "environmentally conscious",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "aware of and concerned about the environment.",
+  "meaningVi": "có ý thức bảo vệ môi trường",
+  "existingExample": "Environmentally conscious consumers choose reusable products.",
+  "mustContainOneOf": [
+   "environmentally conscious",
+   "environmentally-conscious"
+  ]
+ },
+ {
+  "id": "vocab:tipping_point",
+  "headword": "tipping point",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the point at which a small change causes a large, irreversible effect.",
+  "meaningVi": "điểm tới hạn (không thể đảo ngược)",
+  "existingExample": "Scientists fear the Amazon rainforest could reach a tipping point.",
+  "mustContainOneOf": [
+   "tipping point",
+   "tipping-point"
+  ]
+ },
+ {
+  "id": "vocab:catastrophic",
+  "headword": "catastrophic",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "causing great damage or suffering.",
+  "meaningVi": "thảm khốc",
+  "existingExample": "Unchecked warming could have catastrophic consequences.",
+  "mustContainOneOf": [
+   "catastrophic"
+  ]
+ },
+ {
+  "id": "vocab:devastate",
+  "headword": "devastate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "to destroy or badly damage something.",
+  "meaningVi": "tàn phá",
+  "existingExample": "The cyclone devastated coastal villages.",
+  "mustContainOneOf": [
+   "devastate",
+   "devastates",
+   "devastated",
+   "devastating"
+  ]
+ },
+ {
+  "id": "vocab:vulnerable",
+  "headword": "vulnerable",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "easily harmed or affected.",
+  "meaningVi": "dễ bị tổn thương",
+  "existingExample": "Small island nations are especially vulnerable to rising seas.",
+  "mustContainOneOf": [
+   "vulnerable"
+  ]
+ },
+ {
+  "id": "vocab:environmental_stewardship",
+  "headword": "environmental stewardship",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "responsible care for the natural environment.",
+  "meaningVi": "trách nhiệm gìn giữ môi trường",
+  "existingExample": "Indigenous communities often practise careful environmental stewardship.",
+  "mustContainOneOf": [
+   "environmental stewardship",
+   "environmental-stewardship"
+  ]
+ },
+ {
+  "id": "vocab:legally_binding",
+  "headword": "legally binding",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "that must be obeyed by law.",
+  "meaningVi": "có hiệu lực ràng buộc pháp lý",
+  "existingExample": "Countries signed a legally binding agreement to cut emissions.",
+  "mustContainOneOf": [
+   "legally binding",
+   "legally-binding"
+  ]
+ },
+ {
+  "id": "vocab:emissions_trading",
+  "headword": "emissions trading",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a system in which companies buy and sell permits to emit greenhouse gases.",
+  "meaningVi": "mua bán hạn ngạch phát thải",
+  "existingExample": "The EU runs an emissions trading scheme for heavy industry.",
+  "mustContainOneOf": [
+   "emissions trading",
+   "emissions-trading"
+  ]
+ },
+ {
+  "id": "vocab:polluter_pays_principle",
+  "headword": "polluter pays principle",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the principle that those who cause pollution should pay for it.",
+  "meaningVi": "nguyên tắc người gây ô nhiễm phải trả tiền",
+  "existingExample": "Under the polluter pays principle, factories fund the clean-up.",
+  "mustContainOneOf": [
+   "polluter pays principle",
+   "polluter-pays-principle"
+  ]
+ },
+ {
+  "id": "vocab:environmental_impact_assessment",
+  "headword": "environmental impact assessment",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a study of how a project will affect the environment.",
+  "meaningVi": "đánh giá tác động môi trường",
+  "existingExample": "Large infrastructure projects require an environmental impact assessment.",
+  "mustContainOneOf": [
+   "environmental impact assessment",
+   "environmental-impact-assessment"
+  ]
+ },
+ {
+  "id": "vocab:conservationist",
+  "headword": "conservationist",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "a person who works to protect nature.",
+  "meaningVi": "nhà bảo tồn",
+  "existingExample": "Conservationists warn that the species could vanish within a decade.",
+  "mustContainOneOf": [
+   "conservationists",
+   "conservationist"
+  ]
+ },
+ {
+  "id": "vocab:eco_tourism",
+  "headword": "eco-tourism",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "tourism that supports conservation and benefits local people.",
+  "meaningVi": "du lịch sinh thái",
+  "existingExample": "Eco-tourism can fund the protection of rainforests.",
+  "mustContainOneOf": [
+   "eco-tourism",
+   "eco-torism",
+   "eco-tourisms",
+   "eco tourism",
+   "eco-torisms",
+   "eco torism"
+  ]
+ },
+ {
+  "id": "vocab:nature_reserve",
+  "headword": "nature reserve",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "an area where wildlife and plants are protected.",
+  "meaningVi": "khu bảo tồn thiên nhiên",
+  "existingExample": "The wetland was declared a nature reserve.",
+  "mustContainOneOf": [
+   "nature reserve",
+   "nature-reserve"
+  ]
+ },
+ {
+  "id": "vocab:invasive_species",
+  "headword": "invasive species",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "a non-native species that spreads and harms local wildlife.",
+  "meaningVi": "loài xâm lấn",
+  "existingExample": "Invasive species can wipe out native plants.",
+  "mustContainOneOf": [
+   "invasive species",
+   "invasive-species"
+  ]
+ },
+ {
+  "id": "vocab:indigenous",
+  "headword": "indigenous",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "originating naturally in a particular place.",
+  "meaningVi": "bản địa",
+  "existingExample": "Indigenous plants are better adapted to local conditions.",
+  "mustContainOneOf": [
+   "indigenous"
+  ]
+ },
+ {
+  "id": "vocab:pesticide",
+  "headword": "pesticide",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a chemical used to kill insects that damage crops.",
+  "meaningVi": "thuốc trừ sâu",
+  "existingExample": "Some pesticides have been linked to declining bee populations.",
+  "mustContainOneOf": [
+   "pesticides",
+   "pesticide"
+  ]
+ },
+ {
+  "id": "vocab:organic_farming",
+  "headword": "organic farming",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "farming without artificial chemicals.",
+  "meaningVi": "nông nghiệp hữu cơ",
+  "existingExample": "Organic farming avoids synthetic pesticides.",
+  "mustContainOneOf": [
+   "organic farming",
+   "organic-farming"
+  ]
+ },
+ {
+  "id": "vocab:monoculture",
+  "headword": "monoculture",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "growing a single crop over a large area.",
+  "meaningVi": "độc canh",
+  "existingExample": "Monocultures make crops vulnerable to disease.",
+  "mustContainOneOf": [
+   "monocultures",
+   "monoculture"
+  ]
+ },
+ {
+  "id": "vocab:replenish",
+  "headword": "replenish",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "to fill something up again.",
+  "meaningVi": "bổ sung, làm đầy lại",
+  "existingExample": "Heavy rains help replenish underground water supplies.",
+  "mustContainOneOf": [
+   "replenish",
+   "replenishes",
+   "replenished",
+   "replenishing"
+  ]
+ },
+ {
+  "id": "vocab:groundwater",
+  "headword": "groundwater",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "water held underground in soil or rock.",
+  "meaningVi": "nước ngầm",
+  "existingExample": "Over-pumping has caused groundwater levels to fall.",
+  "mustContainOneOf": [
+   "groundwater",
+   "groundwaters"
+  ]
+ },
+ {
+  "id": "vocab:harness",
+  "headword": "harness",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "to control and use natural forces.",
+  "meaningVi": "khai thác (nguồn năng lượng)",
+  "existingExample": "Countries are learning to harness the power of the sun.",
+  "mustContainOneOf": [
+   "harness",
+   "harnesses",
+   "harnessed",
+   "harnessing"
+  ]
+ },
+ {
+  "id": "vocab:afforestation",
+  "headword": "afforestation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "planting trees where there was no forest before.",
+  "meaningVi": "trồng rừng mới",
+  "existingExample": "Afforestation schemes can help absorb carbon dioxide.",
+  "mustContainOneOf": [
+   "afforestation",
+   "afforestations"
+  ]
+ },
+ {
+  "id": "vocab:ecologist",
+  "headword": "ecologist",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "a scientist who studies living things and their environment.",
+  "meaningVi": "nhà sinh thái học",
+  "existingExample": "Ecologists study how species interact within ecosystems.",
+  "mustContainOneOf": [
+   "ecologists",
+   "ecologist"
+  ]
+ },
+ {
+  "id": "vocab:urban_heat_island",
+  "headword": "urban heat island",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a city area that is significantly warmer than the countryside around it.",
+  "meaningVi": "đảo nhiệt đô thị",
+  "existingExample": "Dark roads and concrete buildings intensify the urban heat island effect.",
+  "mustContainOneOf": [
+   "urban heat island",
+   "urban-heat-island"
+  ]
+ },
+ {
+  "id": "vocab:counteract",
+  "headword": "counteract",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "to reduce or stop the effect of something by doing something that works against it.",
+  "meaningVi": "chống lại, trung hòa (tác động)",
+  "existingExample": "Regular exercise can help counteract the effects of sitting all day.",
+  "mustContainOneOf": [
+   "counteract",
+   "counteracts",
+   "counteracted",
+   "counteracting"
+  ]
+ },
+ {
+  "id": "vocab:anticipated",
+  "headword": "anticipated",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "expected or predicted to happen.",
+  "meaningVi": "được dự đoán trước",
+  "existingExample": "The cooling effect turned out to be larger than anticipated.",
+  "mustContainOneOf": [
+   "anticipated"
+  ]
+ },
+ {
+  "id": "vocab:transpiration",
+  "headword": "transpiration",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the process by which plants release water vapour through their leaves.",
+  "meaningVi": "sự thoát hơi nước (ở lá cây)",
+  "existingExample": "Trees cool their surroundings partly through transpiration.",
+  "mustContainOneOf": [
+   "transpiration",
+   "transpirations"
+  ]
+ },
+ {
+  "id": "vocab:canopy",
+  "headword": "canopy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the layer of branches and leaves formed by the tops of trees.",
+  "meaningVi": "tán cây",
+  "existingExample": "Neighbourhoods with more canopy cover stay cooler in summer.",
+  "mustContainOneOf": [
+   "canopy",
+   "canopies"
+  ]
+ },
+ {
+  "id": "vocab:escalating",
+  "headword": "escalating",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "increasing rapidly in amount, intensity or seriousness.",
+  "meaningVi": "leo thang, ngày càng tăng",
+  "existingExample": "Escalating housing costs are pushing young families out of city centres.",
+  "mustContainOneOf": [
+   "escalating"
+  ]
+ },
+ {
+  "id": "vocab:offset",
+  "headword": "offset",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "to balance one effect with an opposite one.",
+  "meaningVi": "bù đắp, bù trừ",
+  "existingExample": "Planting forests can only partly offset carbon emissions.",
+  "mustContainOneOf": [
+   "offset",
+   "offsets",
+   "offsetting"
+  ]
+ },
+ {
+  "id": "vocab:ambitious",
+  "headword": "ambitious",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "needing a lot of effort, money or time to succeed.",
+  "meaningVi": "đầy tham vọng, quy mô lớn",
+  "existingExample": "The city launched an ambitious programme to plant a million trees.",
+  "mustContainOneOf": [
+   "ambitious"
+  ]
+ },
+ {
+  "id": "vocab:temperate",
+  "headword": "temperate",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "having a mild climate that is neither very hot nor very cold.",
+  "meaningVi": "ôn đới, ôn hòa",
+  "existingExample": "Trees grow quickly in temperate regions with regular rainfall.",
+  "mustContainOneOf": [
+   "temperate"
+  ]
+ },
+ {
+  "id": "vocab:humid",
+  "headword": "humid",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "containing a lot of water vapour in the air.",
+  "meaningVi": "ẩm, oi",
+  "existingExample": "Hot and humid weather makes physical work exhausting.",
+  "mustContainOneOf": [
+   "humid"
+  ]
+ },
+ {
+  "id": "vocab:eutrophication",
+  "headword": "eutrophication",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "Excessive enrichment of water bodies with nutrients, triggering dense algal blooms that deplete dissolved oxygen.",
+  "meaningVi": "hiện tượng phú dưỡng nguồn nước gây thiếu oxy",
+  "existingExample": "Unchecked agricultural fertiliser runoff has accelerated eutrophication across coastal estuaries, creating vast marine dead zones.",
+  "mustContainOneOf": [
+   "eutrophication",
+   "eutrophications"
+  ]
+ },
+ {
+  "id": "vocab:permafrost",
+  "headword": "permafrost",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "A thick subsurface layer of soil and rock that remains continuously frozen for two or more consecutive years.",
+  "meaningVi": "tầng đất đóng băng vĩnh cửu vùng cực",
+  "existingExample": "Thawing Arctic permafrost threatens to release billions of tonnes of trapped methane, amplifying global warming feedbacks.",
+  "mustContainOneOf": [
+   "permafrost",
+   "permafrosts"
+  ]
+ },
+ {
+  "id": "vocab:carbon_sink",
+  "headword": "carbon sink",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "A natural reservoir such as a forest, peatland, or ocean that absorbs more atmospheric carbon than it emits.",
+  "meaningVi": "bể hấp thụ và lưu trữ carbon tự nhiên",
+  "existingExample": "Preserving old-growth tropical rainforests is vital because they operate as an irreplaceable terrestrial carbon sink.",
+  "mustContainOneOf": [
+   "carbon sink",
+   "carbon-sink"
+  ]
+ },
+ {
+  "id": "vocab:albedo",
+  "headword": "albedo",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "The proportion of incoming solar radiation reflected by a planetary surface, notably high over snow and ice.",
+  "meaningVi": "suất phản chiếu bức xạ mặt trời của bề mặt Trái Đất",
+  "existingExample": "As polar sea ice retreats, lower planetary albedo causes dark ocean water to absorb substantially more solar heat.",
+  "mustContainOneOf": [
+   "albedo",
+   "albedos"
+  ]
+ },
+ {
+  "id": "vocab:aquifer",
+  "headword": "aquifer",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "An underground layer of water-bearing permeable rock or unconsolidated material from which groundwater can be extracted.",
+  "meaningVi": "tầng đá ngầm chứa nước",
+  "existingExample": "Intensive irrigation in semi-arid farming belts is pumping fossil water far faster than each deep aquifer can recharge.",
+  "mustContainOneOf": [
+   "aquifer",
+   "aquifers"
+  ]
+ },
+ {
+  "id": "vocab:watershed",
+  "headword": "watershed",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "An area of land that drains all streams and rainfall to a common river, basin, or coastal outlet.",
+  "meaningVi": "lưu vực thoát nước, vùng đầu nguồn sông",
+  "existingExample": "Restoring native vegetation along the upper watershed significantly reduces downstream flooding and sediment siltation.",
+  "mustContainOneOf": [
+   "watershed",
+   "watersheds"
+  ]
+ },
+ {
+  "id": "vocab:bioremediation",
+  "headword": "bioremediation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The deliberate use of living microorganisms or plants to break down or neutralise hazardous environmental pollutants.",
+  "meaningVi": "xử lý ô nhiễm bằng vi sinh vật và thực vật",
+  "existingExample": "Following offshore oil spills, coastal authorities increasingly deploy bioremediation to degrade persistent hydrocarbons safely.",
+  "mustContainOneOf": [
+   "bioremediation",
+   "bioremediations"
+  ]
+ },
+ {
+  "id": "vocab:agroforestry",
+  "headword": "agroforestry",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "A sustainable land-use system that integrates trees and shrubs with crops or livestock on the same plot.",
+  "meaningVi": "hệ thống canh tác nông lâm kết hợp",
+  "existingExample": "Smallholders adopting agroforestry enjoy more stable harvests while simultaneously curbing topsoil erosion and boosting shade.",
+  "mustContainOneOf": [
+   "agroforestry",
+   "agroforestries"
+  ]
+ },
+ {
+  "id": "vocab:permaculture",
+  "headword": "permaculture",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "An agricultural design philosophy aiming to create self-sustaining ecosystems that mimic natural ecological patterns.",
+  "meaningVi": "nông nghiệp bền vững mô phỏng hệ sinh thái tự nhiên",
+  "existingExample": "Community farms built around permaculture principles minimise synthetic inputs by composting organic waste into fertile mulch.",
+  "mustContainOneOf": [
+   "permaculture",
+   "permacultures"
+  ]
+ },
+ {
+  "id": "vocab:geothermal",
+  "headword": "geothermal",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "Relating to or produced by the internal thermal energy stored beneath the Earth's crust.",
+  "meaningVi": "thuộc về địa nhiệt (nhiệt lượng từ lòng đất)",
+  "existingExample": "Unlike intermittent wind or solar arrays, geothermal power stations can supply steady baseload electricity around the clock.",
+  "mustContainOneOf": [
+   "geothermal"
+  ]
+ },
+ {
+  "id": "vocab:photovoltaic",
+  "headword": "photovoltaic",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "Relating to the direct conversion of light radiation into electrical current using semiconductor materials.",
+  "meaningVi": "thuộc quang điện (chuyển hóa trực tiếp ánh sáng thành điện năng)",
+  "existingExample": "Dramatic price drops in photovoltaic panels have made rooftop solar generation economically viable for middle-income households.",
+  "mustContainOneOf": [
+   "photovoltaic"
+  ]
+ },
+ {
+  "id": "vocab:leachate",
+  "headword": "leachate",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "Contaminated liquid that percolates through solid waste in a landfill and extracts dissolved toxic chemicals.",
+  "meaningVi": "nước rỉ rác chứa chất độc hại từ bãi chôn lấp",
+  "existingExample": "Modern sanitary landfills must install impermeable clay liners to prevent hazardous leachate from seeping into local rivers.",
+  "mustContainOneOf": [
+   "leachate",
+   "leachates"
+  ]
+ },
+ {
+  "id": "vocab:bioaccumulation",
+  "headword": "bioaccumulation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "The gradual build-up of persistent chemical substances, such as mercury or pesticides, within a living organism over time.",
+  "meaningVi": "sự tích tụ sinh học của độc tố trong cơ thể",
+  "existingExample": "Marine biologists warn that the bioaccumulation of heavy metals in apex predatory fish poses serious risks to coastal diets.",
+  "mustContainOneOf": [
+   "bioaccumulation",
+   "bioaccumulations"
+  ]
+ },
+ {
+  "id": "vocab:trophic_cascade",
+  "headword": "trophic cascade",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "Powerful indirect ecological interactions triggered when changes in apex predator populations ripple across lower food-web levels.",
+  "meaningVi": "hiệu ứng dây chuyền qua các bậc dinh dưỡng",
+  "existingExample": "Reintroducing wolves to Yellowstone sparked a remarkable trophic cascade that allowed riverside willow groves to regenerate.",
+  "mustContainOneOf": [
+   "trophic cascade",
+   "trophic-cascade"
+  ]
+ },
+ {
+  "id": "vocab:keystone_species",
+  "headword": "keystone species",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "An organism whose ecological role has a disproportionately large effect on maintaining the stability of its community.",
+  "meaningVi": "loài chủ chốt duy trì cấu trúc toàn bộ hệ sinh thái",
+  "existingExample": "Because sea otters restrain kelp-grazing urchins, losing this keystone species can rapidly collapse an entire underwater forest.",
+  "mustContainOneOf": [
+   "keystone species",
+   "keystone-species"
+  ]
+ },
+ {
+  "id": "vocab:habitat_fragmentation",
+  "headword": "habitat fragmentation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "The division of large, continuous natural environments into smaller, isolated patches due to roads, farming, or construction.",
+  "meaningVi": "sự phân mảnh sinh cảnh tự nhiên",
+  "existingExample": "Motorways cutting through national parks accelerate habitat fragmentation, restricting gene flow among large mammals.",
+  "mustContainOneOf": [
+   "habitat fragmentation",
+   "habitat-fragmentation"
+  ]
+ },
+ {
+  "id": "vocab:ecological_succession",
+  "headword": "ecological succession",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "The gradual, predictable sequence of species composition changes as a biological community develops or recovers after disturbance.",
+  "meaningVi": "quá trình diễn thế sinh thái tự nhiên",
+  "existingExample": "Following a controlled wildfire, ecological succession allows pioneer grasses to stabilise soil before hardwood trees return.",
+  "mustContainOneOf": [
+   "ecological succession",
+   "ecological-succession"
+  ]
+ },
+ {
+  "id": "vocab:carrying_capacity",
+  "headword": "carrying capacity",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The maximum population size or level of resource consumption an environment can sustain indefinitely without degrading.",
+  "meaningVi": "sức chứa sinh thái tối đa của một môi trường",
+  "existingExample": "Unregulated coastal tourism has pushed several Mediterranean islands well beyond their freshwater carrying capacity.",
+  "mustContainOneOf": [
+   "carrying capacity",
+   "carrying-capacity"
+  ]
+ },
+ {
+  "id": "vocab:salinisation",
+  "headword": "salinisation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The accumulation of water-soluble salts in soil or freshwater bodies to levels that impair crop growth and ecosystems.",
+  "meaningVi": "quá trình nhiễm mặn đất đai và nguồn nước ngọt",
+  "existingExample": "Rising sea levels and upstream damming have intensified delta salinisation, threatening rice harvests for millions of farmers.",
+  "mustContainOneOf": [
+   "salinisation",
+   "salinization",
+   "salinisations"
+  ]
+ },
+ {
+  "id": "vocab:aridification",
+  "headword": "aridification",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "A long-term climatic shift toward progressively drier conditions that permanently reduces regional water availability.",
+  "meaningVi": "quá trình khô hạn hóa dài hạn ở quy mô khu vực",
+  "existingExample": "Hydrologists distinguish temporary droughts from structural aridification, which demands lasting redesign of municipal water grids.",
+  "mustContainOneOf": [
+   "aridification",
+   "aridifications"
+  ]
+ },
+ {
+  "id": "vocab:glacial_retreat",
+  "headword": "glacial retreat",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The progressive shrinking of a glacier's terminus when annual ice melt consistently exceeds snowfall accumulation.",
+  "meaningVi": "sự tan lùi và thu hẹp diện tích của sông băng",
+  "existingExample": "Accelerated glacial retreat across the Himalayas jeopardises dry-season drinking water supplies for densely populated river basins.",
+  "mustContainOneOf": [
+   "glacial retreat",
+   "glacial-retreat"
+  ]
+ },
+ {
+  "id": "vocab:thermal_expansion",
+  "headword": "thermal expansion",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The increase in volume of ocean water as it absorbs excess atmospheric heat, contributing directly to sea-level rise.",
+  "meaningVi": "sự giãn nở nhiệt của khối nước đại dương",
+  "existingExample": "Alongside melting polar ice sheets, oceanic thermal expansion accounts for nearly half of observed global sea-level rise.",
+  "mustContainOneOf": [
+   "thermal expansion",
+   "thermal-expansion"
+  ]
+ },
+ {
+  "id": "vocab:climate_mitigation",
+  "headword": "climate mitigation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "Deliberate policies and technologies aimed at reducing greenhouse gas emissions or enhancing carbon removal from the atmosphere.",
+  "meaningVi": "các giải pháp giảm nhẹ biến đổi khí hậu tại nguồn",
+  "existingExample": "Decarbonising heavy industry and electrifying freight fleets remain the twin pillars of credible national climate mitigation.",
+  "mustContainOneOf": [
+   "climate mitigation",
+   "climate-mitigation"
+  ]
+ },
+ {
+  "id": "vocab:climate_resilience",
+  "headword": "climate resilience",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The capacity of communities, infrastructure, and ecosystems to anticipate, absorb, and recover from extreme climate shocks.",
+  "meaningVi": "khả năng chống chịu và phục hồi trước biến đổi khí hậu",
+  "existingExample": "Constructing sponge-city wetlands and flood-proof transit corridors strengthens urban climate resilience against erratic monsoons.",
+  "mustContainOneOf": [
+   "climate resilience",
+   "climate-resilience"
+  ]
+ },
+ {
+  "id": "vocab:environmental_remediation",
+  "headword": "environmental remediation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The removal or neutralisation of pollutants from contaminated soil, groundwater, or industrial sites to restore ecological safety.",
+  "meaningVi": "công tác cải tạo và phục hồi môi trường ô nhiễm",
+  "existingExample": "Before former mining zones can be converted into public parkland, developers must finance rigorous environmental remediation.",
+  "mustContainOneOf": [
+   "environmental remediation",
+   "environmental-remediation"
+  ]
+ },
+ {
+  "id": "vocab:biodiversity_hotspot",
+  "headword": "biodiversity hotspot",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "A biogeographic region that harbours exceptional concentrations of endemic species while facing acute habitat loss.",
+  "meaningVi": "điểm nóng đa dạng sinh học đang bị đe dọa nghiêm trọng",
+  "existingExample": "International conservation grants increasingly prioritise each tropical biodiversity hotspot where logging threatens undocumented flora.",
+  "mustContainOneOf": [
+   "biodiversity hotspot",
+   "biodiversity-hotspot"
+  ]
+ },
+ {
+  "id": "vocab:endemic",
+  "headword": "endemic",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "Native to and exclusively restricted to a specific geographical area or isolated ecosystem.",
+  "meaningVi": "đặc hữu",
+  "existingExample": "Invasive predators pose an existential threat to flightless birds that are endemic to remote oceanic islands.",
+  "mustContainOneOf": [
+   "endemic"
+  ]
+ },
+ {
+  "id": "vocab:arboreal",
+  "headword": "arboreal",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "Living in, inhabiting, or closely associated with trees and forest canopies.",
+  "meaningVi": "thuộc về tán cây hoặc sinh sống chủ yếu trên cây",
+  "existingExample": "Building rope bridges across forest clearings allows endangered arboreal primates to forage safely without descending to roads.",
+  "mustContainOneOf": [
+   "arboreal"
+  ]
+ },
+ {
+  "id": "vocab:pelagic",
+  "headword": "pelagic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "Relating to the open sea water column away from both the shoreline and the ocean floor.",
+  "meaningVi": "thuộc vùng biển khơi xa bờ",
+  "existingExample": "Establishing high-seas marine reserves is essential to safeguard migratory pelagic species from industrial drift-net fleets.",
+  "mustContainOneOf": [
+   "pelagic"
+  ]
+ },
+ {
+  "id": "vocab:desalination",
+  "headword": "desalination",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The industrial process of removing dissolved salts and minerals from seawater to produce potable freshwater.",
+  "meaningVi": "quá trình khử muối biến nước biển thành nước ngọt",
+  "existingExample": "While reverse-osmosis desalination secures drinking supplies in arid coastal states, disposing of hypersaline brine remains controversial.",
+  "mustContainOneOf": [
+   "desalination",
+   "desalinations"
+  ]
+ },
+ {
+  "id": "vocab:silviculture",
+  "headword": "silviculture",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The science and practice of controlling the establishment, growth, composition, and ecological health of forests.",
+  "meaningVi": "lâm sinh học",
+  "existingExample": "Selective-harvest silviculture balances commercial timber demand with the preservation of multi-layered woodland habitats.",
+  "mustContainOneOf": [
+   "silviculture",
+   "silvicultures"
+  ]
+ },
+ {
+  "id": "vocab:carbon_capture",
+  "headword": "carbon capture",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "The technological process of trapping carbon dioxide emissions at industrial sources or directly from ambient air for storage.",
+  "meaningVi": "công nghệ thu giữ khí carbon từ nguồn phát thải",
+  "existingExample": "Energy analysts caution that carbon capture should supplement rapid fossil-fuel phaseouts rather than excuse delayed action.",
+  "mustContainOneOf": [
+   "carbon capture",
+   "carbon-capture"
+  ]
+ },
+ {
+  "id": "vocab:ecological_overshoot",
+  "headword": "ecological overshoot",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "A state in which human demand for natural resources and waste absorption exceeds the biosphere's regenerative capacity.",
+  "meaningVi": "tình trạng tiêu thụ tài nguyên vượt ngưỡng tái tạo sinh thái",
+  "existingExample": "Shifting away from linear extraction is imperative if humanity intends to reverse decades of global ecological overshoot.",
+  "mustContainOneOf": [
+   "ecological overshoot",
+   "ecological-overshoot"
+  ]
+ },
+ {
+  "id": "vocab:extirpate",
+  "headword": "extirpate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "To completely destroy or eliminate a species or population from a particular geographic region.",
+  "meaningVi": "xóa sổ hoàn toàn một loài khỏi một khu vực cụ thể",
+  "existingExample": "Unchecked wetland drainage could extirpate rare amphibian populations from lowland floodplains within a single decade.",
+  "mustContainOneOf": [
+   "extirpate",
+   "extirpates",
+   "extirpated",
+   "extirpating"
+  ]
+ },
+ {
+  "id": "vocab:despoil",
+  "headword": "despoil",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "To strip a landscape or ecosystem of its natural resources, beauty, or ecological integrity through reckless exploitation.",
+  "meaningVi": "tàn phá",
+  "existingExample": "Strict mining moratoriums were enacted to prevent unlicensed corporations from continuing to despoil pristine alpine valleys.",
+  "mustContainOneOf": [
+   "despoil",
+   "despoils",
+   "despoiled",
+   "despoiling"
+  ]
+ },
+ {
+  "id": "vocab:acclimatise",
+  "headword": "acclimatise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "To adapt physiologically or behaviourally to a new climate, altitude, or altered environmental regime.",
+  "meaningVi": "thích nghi dần với điều kiện khí hậu hoặc môi trường mới",
+  "existingExample": "Many cold-water coral reefs simply cannot acclimatise rapidly enough to survive consecutive marine heatwaves.",
+  "mustContainOneOf": [
+   "acclimatise",
+   "acclimatize",
+   "acclimatises",
+   "acclimatised",
+   "acclimatising",
+   "acclimatized"
+  ]
+ },
+ {
+  "id": "vocab:anthropocene",
+  "headword": "anthropocene",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The proposed geological epoch characterised by pervasive human dominance over Earth's climate and biophysical systems.",
+  "meaningVi": "kỷ nguyên Nhân sinh",
+  "existingExample": "Environmental historians argue that surviving the anthropocene requires rethinking economic progress within planetary boundaries.",
+  "mustContainOneOf": [
+   "anthropocene",
+   "anthropocenes"
+  ]
+ },
+ {
+  "id": "vocab:cutting_edge",
+  "headword": "cutting-edge",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the newest and most advanced.",
+  "meaningVi": "tiên tiến nhất",
+  "existingExample": "The hospital has invested in cutting-edge diagnostic equipment.",
+  "mustContainOneOf": [
+   "cutting-edge",
+   "cutting edge"
+  ]
+ },
+ {
+  "id": "vocab:automation",
+  "headword": "automation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the use of machines to do work that was previously done by people.",
+  "meaningVi": "tự động hóa",
+  "existingExample": "Automation may replace many routine factory jobs in the coming decade.",
+  "mustContainOneOf": [
+   "automation",
+   "automations"
+  ]
+ },
+ {
+  "id": "vocab:obsolete",
+  "headword": "obsolete",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "no longer used because something newer exists.",
+  "meaningVi": "lỗi thời",
+  "existingExample": "Smartphones have made many separate devices, such as cameras and maps, almost obsolete.",
+  "mustContainOneOf": [
+   "obsolete"
+  ]
+ },
+ {
+  "id": "vocab:innovation",
+  "headword": "innovation",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a new idea, method or invention.",
+  "meaningVi": "sự đổi mới",
+  "existingExample": "Governments can foster innovation by funding research in universities.",
+  "mustContainOneOf": [
+   "innovation",
+   "innovations"
+  ]
+ },
+ {
+  "id": "vocab:breakthrough",
+  "headword": "breakthrough",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "an important discovery that helps solve a problem.",
+  "meaningVi": "bước đột phá",
+  "existingExample": "The new vaccine was hailed as a major medical breakthrough.",
+  "mustContainOneOf": [
+   "breakthrough",
+   "breakthroughs"
+  ]
+ },
+ {
+  "id": "vocab:digital_divide",
+  "headword": "digital divide",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the gap between people who have access to modern technology and those who do not.",
+  "meaningVi": "khoảng cách số",
+  "existingExample": "Free public Wi-Fi could help bridge the digital divide between rich and poor.",
+  "mustContainOneOf": [
+   "digital divide",
+   "digital-divide"
+  ]
+ },
+ {
+  "id": "vocab:user_friendly",
+  "headword": "user-friendly",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "easy for people to use or understand.",
+  "meaningVi": "dễ sử dụng",
+  "existingExample": "The app's user-friendly design makes it popular among older people.",
+  "mustContainOneOf": [
+   "user-friendly",
+   "user friendly"
+  ]
+ },
+ {
+  "id": "vocab:data_privacy",
+  "headword": "data privacy",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the protection of personal information from being misused.",
+  "meaningVi": "quyền riêng tư dữ liệu",
+  "existingExample": "Many users are worried about how technology companies handle data privacy.",
+  "mustContainOneOf": [
+   "data privacy",
+   "data-privacy"
+  ]
+ },
+ {
+  "id": "vocab:cybercrime",
+  "headword": "cybercrime",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "crime committed using computers or the internet.",
+  "meaningVi": "tội phạm mạng",
+  "existingExample": "Banks are investing heavily to protect customers from cybercrime.",
+  "mustContainOneOf": [
+   "cybercrime",
+   "cybercrimes"
+  ]
+ },
+ {
+  "id": "vocab:screen_time",
+  "headword": "screen time",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "time spent using a phone, computer or television.",
+  "meaningVi": "thời gian dùng màn hình",
+  "existingExample": "Parents are advised to limit children's screen time before bed.",
+  "mustContainOneOf": [
+   "screen time",
+   "screen-time"
+  ]
+ },
+ {
+  "id": "vocab:addictive",
+  "headword": "addictive",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "making you unable to stop doing or using something.",
+  "meaningVi": "gây nghiện",
+  "existingExample": "Many apps are deliberately designed to be addictive.",
+  "mustContainOneOf": [
+   "addictive"
+  ]
+ },
+ {
+  "id": "vocab:surveillance",
+  "headword": "surveillance",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the careful watching of people, especially by the police or government.",
+  "meaningVi": "sự giám sát",
+  "existingExample": "Facial recognition technology has raised fears of mass surveillance.",
+  "mustContainOneOf": [
+   "surveillance",
+   "surveillances"
+  ]
+ },
+ {
+  "id": "vocab:remote_work",
+  "headword": "remote work",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "working from home or from a place outside the office.",
+  "meaningVi": "làm việc từ xa",
+  "existingExample": "Fast internet connections have made remote work possible for millions of people.",
+  "mustContainOneOf": [
+   "remote work",
+   "remote-work"
+  ]
+ },
+ {
+  "id": "vocab:gadget",
+  "headword": "gadget",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a small, useful machine or device.",
+  "meaningVi": "thiết bị nhỏ, đồ công nghệ",
+  "existingExample": "Teenagers often feel pressure to own the latest gadgets.",
+  "mustContainOneOf": [
+   "gadgets",
+   "gadget"
+  ]
+ },
+ {
+  "id": "vocab:upgrade",
+  "headword": "upgrade",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to improve a machine or system by adding newer parts.",
+  "meaningVi": "nâng cấp",
+  "existingExample": "Companies must regularly upgrade their systems to stay secure.",
+  "mustContainOneOf": [
+   "upgrade",
+   "upgrades",
+   "upgraded",
+   "upgrading"
+  ]
+ },
+ {
+  "id": "vocab:dependence",
+  "headword": "dependence",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the state of needing something too much.",
+  "meaningVi": "sự phụ thuộc",
+  "existingExample": "Our growing dependence on smartphones may weaken our memory.",
+  "mustContainOneOf": [
+   "dependence",
+   "dependences"
+  ]
+ },
+ {
+  "id": "vocab:misinformation",
+  "headword": "misinformation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "false or inaccurate information that is spread.",
+  "meaningVi": "thông tin sai lệch",
+  "existingExample": "Social media platforms are under pressure to combat misinformation.",
+  "mustContainOneOf": [
+   "misinformation",
+   "misinformations"
+  ]
+ },
+ {
+  "id": "vocab:algorithm",
+  "headword": "algorithm",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a set of rules that a computer follows to solve a problem.",
+  "meaningVi": "thuật toán",
+  "existingExample": "Recommendation algorithms decide much of what we watch online.",
+  "mustContainOneOf": [
+   "algorithm",
+   "algorithms"
+  ]
+ },
+ {
+  "id": "vocab:connectivity",
+  "headword": "connectivity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the ability to connect to the internet or to other devices.",
+  "meaningVi": "khả năng kết nối",
+  "existingExample": "Rural areas still suffer from poor internet connectivity.",
+  "mustContainOneOf": [
+   "connectivity",
+   "connectivities"
+  ]
+ },
+ {
+  "id": "vocab:revolutionise",
+  "headword": "revolutionise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to change something completely and improve it.",
+  "meaningVi": "cách mạng hóa",
+  "existingExample": "The internet has revolutionised the way people shop and communicate.",
+  "mustContainOneOf": [
+   "revolutionise",
+   "revolutionize",
+   "revolutionises",
+   "revolutionised",
+   "revolutionising",
+   "revolutionized"
+  ]
+ }
+]

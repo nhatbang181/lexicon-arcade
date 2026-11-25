@@ -1,0 +1,1830 @@
+[
+ {
+  "id": "vocab:career_path",
+  "headword": "career path",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "the series of jobs in a person's working life.",
+  "meaningVi": "con đường sự nghiệp",
+  "existingExample": "Few people now follow a single career path.",
+  "mustContainOneOf": [
+   "career path",
+   "career-path"
+  ]
+ },
+ {
+  "id": "vocab:promotion",
+  "headword": "promotion",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "moving to a higher position at work.",
+  "meaningVi": "sự thăng chức",
+  "existingExample": "She gained a promotion after two years.",
+  "mustContainOneOf": [
+   "promotion",
+   "promotions"
+  ]
+ },
+ {
+  "id": "vocab:glass_ceiling",
+  "headword": "glass ceiling",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "an unofficial barrier stopping women or minorities reaching top jobs.",
+  "meaningVi": "trần kính (rào cản vô hình)",
+  "existingExample": "Few women have broken through the glass ceiling in banking.",
+  "mustContainOneOf": [
+   "glass ceiling",
+   "glass-ceiling"
+  ]
+ },
+ {
+  "id": "vocab:gender_pay_gap",
+  "headword": "gender pay gap",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the difference between men's and women's average pay.",
+  "meaningVi": "chênh lệch lương theo giới",
+  "existingExample": "Some governments require large companies to publish their gender pay gap.",
+  "mustContainOneOf": [
+   "gender pay gap",
+   "gender-pay-gap"
+  ]
+ },
+ {
+  "id": "vocab:maternity_leave",
+  "headword": "maternity leave",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "time off work for a mother before and after childbirth.",
+  "meaningVi": "nghỉ thai sản",
+  "existingExample": "Generous maternity leave helps keep women in the workforce.",
+  "mustContainOneOf": [
+   "maternity leave",
+   "maternity-leave"
+  ]
+ },
+ {
+  "id": "vocab:paternity_leave",
+  "headword": "paternity leave",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "time off work for a new father.",
+  "meaningVi": "nghỉ chăm con (dành cho cha)",
+  "existingExample": "More fathers are now taking paternity leave.",
+  "mustContainOneOf": [
+   "paternity leave",
+   "paternity-leave"
+  ]
+ },
+ {
+  "id": "vocab:fringe_benefits",
+  "headword": "fringe benefits",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "extra benefits such as health insurance or a company car.",
+  "meaningVi": "phúc lợi ngoài lương",
+  "existingExample": "Fringe benefits can matter more than salary to some employees.",
+  "mustContainOneOf": [
+   "fringe benefits",
+   "fringe-benefits"
+  ]
+ },
+ {
+  "id": "vocab:pension",
+  "headword": "pension",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "money paid regularly after retirement.",
+  "meaningVi": "lương hưu",
+  "existingExample": "An ageing population puts pressure on state pensions.",
+  "mustContainOneOf": [
+   "pension",
+   "pensions"
+  ]
+ },
+ {
+  "id": "vocab:retirement_age",
+  "headword": "retirement age",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the age at which people stop working.",
+  "meaningVi": "tuổi nghỉ hưu",
+  "existingExample": "Several countries have raised the retirement age.",
+  "mustContainOneOf": [
+   "retirement age",
+   "retirement-age"
+  ]
+ },
+ {
+  "id": "vocab:freelance",
+  "headword": "freelance",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "working for several clients rather than one employer.",
+  "meaningVi": "(làm) tự do",
+  "existingExample": "A growing number of experienced graphic designers choose to work freelance to enjoy greater autonomy over their schedules.",
+  "mustContainOneOf": [
+   "freelance"
+  ]
+ },
+ {
+  "id": "vocab:self_employed",
+  "headword": "self-employed",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "working for yourself rather than for an employer.",
+  "meaningVi": "tự làm chủ",
+  "existingExample": "Self-employed workers usually do not receive sick pay.",
+  "mustContainOneOf": [
+   "self-employed",
+   "self employed"
+  ]
+ },
+ {
+  "id": "vocab:zero_hours_contract",
+  "headword": "zero-hours contract",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a contract with no guaranteed minimum hours.",
+  "meaningVi": "hợp đồng không cam kết giờ làm",
+  "existingExample": "Zero-hours contracts leave workers with unpredictable incomes.",
+  "mustContainOneOf": [
+   "zero-hours contract",
+   "zero-hours-contract",
+   "zero hours contract"
+  ]
+ },
+ {
+  "id": "vocab:job_insecurity",
+  "headword": "job insecurity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "worry about losing your job.",
+  "meaningVi": "sự bất ổn việc làm",
+  "existingExample": "Job insecurity can damage workers' mental health.",
+  "mustContainOneOf": [
+   "job insecurity",
+   "job-insecurity"
+  ]
+ },
+ {
+  "id": "vocab:precarious",
+  "headword": "precarious",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "not secure or stable.",
+  "meaningVi": "bấp bênh",
+  "existingExample": "Many young people are trapped in precarious employment.",
+  "mustContainOneOf": [
+   "precarious"
+  ]
+ },
+ {
+  "id": "vocab:lay_off",
+  "headword": "lay off",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to stop employing someone because there is no work.",
+  "meaningVi": "cho thôi việc",
+  "existingExample": "During a severe recession, struggling manufacturing firms are often forced to lay off hundreds of experienced workers.",
+  "mustContainOneOf": [
+   "lay off",
+   "lay-off"
+  ]
+ },
+ {
+  "id": "vocab:downsizing",
+  "headword": "downsizing",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "reducing the number of employees in an organisation.",
+  "meaningVi": "cắt giảm nhân sự",
+  "existingExample": "Downsizing left the remaining staff overworked.",
+  "mustContainOneOf": [
+   "downsizing",
+   "downsising",
+   "downsizings"
+  ]
+ },
+ {
+  "id": "vocab:workload",
+  "headword": "workload",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the amount of work someone has to do.",
+  "meaningVi": "khối lượng công việc",
+  "existingExample": "Teachers complain of an increasingly heavy workload.",
+  "mustContainOneOf": [
+   "workload",
+   "workloads"
+  ]
+ },
+ {
+  "id": "vocab:overtime",
+  "headword": "overtime",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "time worked beyond normal hours.",
+  "meaningVi": "giờ làm thêm",
+  "existingExample": "Many employees regularly work unpaid overtime.",
+  "mustContainOneOf": [
+   "overtime",
+   "overtimes"
+  ]
+ },
+ {
+  "id": "vocab:presenteeism",
+  "headword": "presenteeism",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "working while ill or staying late only to appear committed.",
+  "meaningVi": "đi làm khi không đủ sức khỏe/hiệu quả",
+  "existingExample": "Presenteeism can spread illness and reduce productivity.",
+  "mustContainOneOf": [
+   "presenteeism",
+   "presenteeisms"
+  ]
+ },
+ {
+  "id": "vocab:employee_engagement",
+  "headword": "employee engagement",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "how committed and enthusiastic staff are.",
+  "meaningVi": "mức độ gắn kết của nhân viên",
+  "existingExample": "Recognition boosts employee engagement.",
+  "mustContainOneOf": [
+   "employee engagement",
+   "employee-engagement"
+  ]
+ },
+ {
+  "id": "vocab:morale",
+  "headword": "morale",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the confidence and enthusiasm of a group.",
+  "meaningVi": "tinh thần làm việc",
+  "existingExample": "Pay cuts severely damaged staff morale.",
+  "mustContainOneOf": [
+   "morale",
+   "morales"
+  ]
+ },
+ {
+  "id": "vocab:staff_turnover",
+  "headword": "staff turnover",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the rate at which employees leave and are replaced.",
+  "meaningVi": "tỷ lệ thay đổi nhân sự",
+  "existingExample": "High staff turnover is costly for employers.",
+  "mustContainOneOf": [
+   "staff turnover",
+   "staff-turnover"
+  ]
+ },
+ {
+  "id": "vocab:work_ethic",
+  "headword": "work ethic",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a belief in the value of hard work.",
+  "meaningVi": "đạo đức làm việc",
+  "existingExample": "Employers value candidates with a strong work ethic.",
+  "mustContainOneOf": [
+   "work ethic",
+   "work-ethic"
+  ]
+ },
+ {
+  "id": "vocab:skills_shortage",
+  "headword": "skills shortage",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a lack of workers with the skills employers need.",
+  "meaningVi": "tình trạng thiếu kỹ năng",
+  "existingExample": "The construction industry faces a severe skills shortage.",
+  "mustContainOneOf": [
+   "skills shortage",
+   "skills-shortage"
+  ]
+ },
+ {
+  "id": "vocab:employee_retention",
+  "headword": "employee retention",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "keeping staff from leaving an organisation.",
+  "meaningVi": "giữ chân nhân viên",
+  "existingExample": "Flexible working improves employee retention.",
+  "mustContainOneOf": [
+   "employee retention",
+   "employee-retention"
+  ]
+ },
+ {
+  "id": "vocab:entrepreneurship",
+  "headword": "entrepreneurship",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the activity of setting up businesses.",
+  "meaningVi": "tinh thần khởi nghiệp",
+  "existingExample": "Tax breaks can encourage entrepreneurship.",
+  "mustContainOneOf": [
+   "entrepreneurship",
+   "entrepreneurships"
+  ]
+ },
+ {
+  "id": "vocab:start_up",
+  "headword": "start-up",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a newly established business.",
+  "meaningVi": "công ty khởi nghiệp",
+  "existingExample": "Most start-ups fail within their first few years.",
+  "mustContainOneOf": [
+   "start-ups",
+   "start-up",
+   "start up"
+  ]
+ },
+ {
+  "id": "vocab:venture_capital",
+  "headword": "venture capital",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "money invested in new businesses with high risk.",
+  "meaningVi": "vốn đầu tư mạo hiểm",
+  "existingExample": "The start-up raised venture capital to expand abroad.",
+  "mustContainOneOf": [
+   "venture capital",
+   "venture-capital"
+  ]
+ },
+ {
+  "id": "vocab:market_share",
+  "headword": "market share",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the percentage of a market a company controls.",
+  "meaningVi": "thị phần",
+  "existingExample": "The brand lost market share to cheaper rivals.",
+  "mustContainOneOf": [
+   "market share",
+   "market-share"
+  ]
+ },
+ {
+  "id": "vocab:competitive_edge",
+  "headword": "competitive edge",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "an advantage over competitors.",
+  "meaningVi": "lợi thế cạnh tranh",
+  "existingExample": "Innovation gives firms a competitive edge.",
+  "mustContainOneOf": [
+   "competitive edge",
+   "competitive-edge"
+  ]
+ },
+ {
+  "id": "vocab:supply_and_demand",
+  "headword": "supply and demand",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the relationship between how much is available and how much is wanted.",
+  "meaningVi": "cung và cầu",
+  "existingExample": "Prices are largely determined by supply and demand.",
+  "mustContainOneOf": [
+   "supply and demand",
+   "supply-and-demand"
+  ]
+ },
+ {
+  "id": "vocab:consumer_spending",
+  "headword": "consumer spending",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "money spent by households on goods and services.",
+  "meaningVi": "chi tiêu tiêu dùng",
+  "existingExample": "Consumer spending fell sharply during the recession.",
+  "mustContainOneOf": [
+   "consumer spending",
+   "consumer-spending"
+  ]
+ },
+ {
+  "id": "vocab:purchasing_power",
+  "headword": "purchasing power",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "how much money can buy.",
+  "meaningVi": "sức mua",
+  "existingExample": "Inflation erodes the purchasing power of savings.",
+  "mustContainOneOf": [
+   "purchasing power",
+   "purchasing-power"
+  ]
+ },
+ {
+  "id": "vocab:living_wage",
+  "headword": "living wage",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "a wage high enough to cover basic living costs.",
+  "meaningVi": "mức lương đủ sống",
+  "existingExample": "Campaigners want all employers to pay a living wage.",
+  "mustContainOneOf": [
+   "living wage",
+   "living-wage"
+  ]
+ },
+ {
+  "id": "vocab:wage_stagnation",
+  "headword": "wage stagnation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "wages not rising over time.",
+  "meaningVi": "lương trì trệ",
+  "existingExample": "Wage stagnation has squeezed middle-income families.",
+  "mustContainOneOf": [
+   "wage stagnation",
+   "wage-stagnation"
+  ]
+ },
+ {
+  "id": "vocab:economic_downturn",
+  "headword": "economic downturn",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a period when economic activity falls.",
+  "meaningVi": "suy giảm kinh tế",
+  "existingExample": "Luxury brands suffer during an economic downturn.",
+  "mustContainOneOf": [
+   "economic downturn",
+   "economic-downturn"
+  ]
+ },
+ {
+  "id": "vocab:boom",
+  "headword": "boom",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a period of rapid economic growth.",
+  "meaningVi": "sự bùng nổ (kinh tế)",
+  "existingExample": "The property boom made housing unaffordable for many.",
+  "mustContainOneOf": [
+   "boom",
+   "booms"
+  ]
+ },
+ {
+  "id": "vocab:austerity",
+  "headword": "austerity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "government cuts in public spending.",
+  "meaningVi": "chính sách thắt lưng buộc bụng",
+  "existingExample": "Austerity measures led to cuts in public services.",
+  "mustContainOneOf": [
+   "austerity",
+   "austerities"
+  ]
+ },
+ {
+  "id": "vocab:fiscal_policy",
+  "headword": "fiscal policy",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "government decisions on taxation and spending.",
+  "meaningVi": "chính sách tài khóa",
+  "existingExample": "Fiscal policy can be used to stimulate the economy.",
+  "mustContainOneOf": [
+   "fiscal policy",
+   "fiscal-policy"
+  ]
+ },
+ {
+  "id": "vocab:stimulus_package",
+  "headword": "stimulus package",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "government spending designed to encourage economic activity.",
+  "meaningVi": "gói kích thích kinh tế",
+  "existingExample": "The government launched a stimulus package to protect jobs.",
+  "mustContainOneOf": [
+   "stimulus package",
+   "stimulus-package"
+  ]
+ },
+ {
+  "id": "vocab:tax_evasion",
+  "headword": "tax evasion",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "illegally avoiding paying taxes.",
+  "meaningVi": "trốn thuế (bất hợp pháp)",
+  "existingExample": "Tax evasion deprives public services of funds.",
+  "mustContainOneOf": [
+   "tax evasion",
+   "tax-evasion"
+  ]
+ },
+ {
+  "id": "vocab:tax_avoidance",
+  "headword": "tax avoidance",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "legally reducing the tax you pay by using loopholes.",
+  "meaningVi": "né thuế (lợi dụng kẽ hở luật)",
+  "existingExample": "Multinationals have been criticised for aggressive tax avoidance.",
+  "mustContainOneOf": [
+   "tax avoidance",
+   "tax-avoidance"
+  ]
+ },
+ {
+  "id": "vocab:progressive_taxation",
+  "headword": "progressive taxation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a system in which higher earners pay a larger percentage.",
+  "meaningVi": "thuế lũy tiến",
+  "existingExample": "Progressive taxation helps reduce inequality.",
+  "mustContainOneOf": [
+   "progressive taxation",
+   "progressive-taxation"
+  ]
+ },
+ {
+  "id": "vocab:welfare_state",
+  "headword": "welfare state",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a system in which the government provides social support.",
+  "meaningVi": "nhà nước phúc lợi",
+  "existingExample": "The welfare state provides healthcare, pensions and benefits.",
+  "mustContainOneOf": [
+   "welfare state",
+   "welfare-state"
+  ]
+ },
+ {
+  "id": "vocab:social_safety_net",
+  "headword": "social safety net",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "government support that prevents people falling into poverty.",
+  "meaningVi": "lưới an sinh xã hội",
+  "existingExample": "Unemployment benefits are part of the social safety net.",
+  "mustContainOneOf": [
+   "social safety net",
+   "social-safety-net"
+  ]
+ },
+ {
+  "id": "vocab:unemployment_benefit",
+  "headword": "unemployment benefit",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "money paid to people who have no job.",
+  "meaningVi": "trợ cấp thất nghiệp",
+  "existingExample": "Some argue that generous unemployment benefits discourage work.",
+  "mustContainOneOf": [
+   "unemployment benefit",
+   "unemployment-benefit"
+  ]
+ },
+ {
+  "id": "vocab:wealth_gap",
+  "headword": "wealth gap",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the difference in wealth between rich and poor.",
+  "meaningVi": "khoảng cách giàu nghèo",
+  "existingExample": "The wealth gap has widened in many countries.",
+  "mustContainOneOf": [
+   "wealth gap",
+   "wealth-gap"
+  ]
+ },
+ {
+  "id": "vocab:trickle_down_economics",
+  "headword": "trickle-down economics",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the theory that benefits for the rich eventually reach everyone.",
+  "meaningVi": "kinh tế học nhỏ giọt",
+  "existingExample": "Critics argue that trickle-down economics rarely helps the poor.",
+  "mustContainOneOf": [
+   "trickle-down economics",
+   "trickle-down-economics",
+   "trickle down economics"
+  ]
+ },
+ {
+  "id": "vocab:free_trade",
+  "headword": "free trade",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "trade between countries without taxes or limits.",
+  "meaningVi": "thương mại tự do",
+  "existingExample": "Free trade agreements have boosted the country's exports.",
+  "mustContainOneOf": [
+   "free trade",
+   "free-trade"
+  ]
+ },
+ {
+  "id": "vocab:protectionism",
+  "headword": "protectionism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "protecting domestic industry by taxing imports.",
+  "meaningVi": "chủ nghĩa bảo hộ mậu dịch",
+  "existingExample": "Protectionism can lead to higher prices for consumers.",
+  "mustContainOneOf": [
+   "protectionism",
+   "protectionisms"
+  ]
+ },
+ {
+  "id": "vocab:tariff",
+  "headword": "tariff",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a tax on imported goods.",
+  "meaningVi": "thuế quan",
+  "existingExample": "The government imposed tariffs on imported steel.",
+  "mustContainOneOf": [
+   "tariffs",
+   "tariff"
+  ]
+ },
+ {
+  "id": "vocab:trade_deficit",
+  "headword": "trade deficit",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a situation where a country imports more than it exports.",
+  "meaningVi": "thâm hụt thương mại",
+  "existingExample": "The country has a large trade deficit with its neighbour.",
+  "mustContainOneOf": [
+   "trade deficit",
+   "trade-deficit"
+  ]
+ },
+ {
+  "id": "vocab:gdp",
+  "headword": "GDP",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the total value of goods and services produced in a country.",
+  "meaningVi": "tổng sản phẩm quốc nội",
+  "existingExample": "GDP per capita is often used to compare living standards.",
+  "mustContainOneOf": [
+   "gdp",
+   "gdps"
+  ]
+ },
+ {
+  "id": "vocab:per_capita",
+  "headword": "per capita",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "for each person.",
+  "meaningVi": "bình quân đầu người",
+  "existingExample": "Income per capita has doubled in two decades.",
+  "mustContainOneOf": [
+   "per capita",
+   "per-capita"
+  ]
+ },
+ {
+  "id": "vocab:emerging_economy",
+  "headword": "emerging economy",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a country experiencing rapid growth and industrialisation.",
+  "meaningVi": "nền kinh tế mới nổi",
+  "existingExample": "As an emerging economy, the country has attracted substantial foreign investment while rapidly modernising its infrastructure.",
+  "mustContainOneOf": [
+   "emerging economy",
+   "emerging-economy"
+  ]
+ },
+ {
+  "id": "vocab:foreign_direct_investment",
+  "headword": "foreign direct investment",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "investment by a foreign company in businesses in another country.",
+  "meaningVi": "đầu tư trực tiếp nước ngoài",
+  "existingExample": "Low labour costs helped attract foreign direct investment.",
+  "mustContainOneOf": [
+   "foreign direct investment",
+   "foreign-direct-investment"
+  ]
+ },
+ {
+  "id": "vocab:manufacturing_sector",
+  "headword": "manufacturing sector",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the part of the economy that makes goods.",
+  "meaningVi": "ngành sản xuất chế tạo",
+  "existingExample": "The manufacturing sector has shrunk in many Western countries.",
+  "mustContainOneOf": [
+   "manufacturing sector",
+   "manufacturing-sector"
+  ]
+ },
+ {
+  "id": "vocab:service_sector",
+  "headword": "service sector",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the part of the economy that provides services.",
+  "meaningVi": "ngành dịch vụ",
+  "existingExample": "Most jobs in wealthy countries are now in the service sector.",
+  "mustContainOneOf": [
+   "service sector",
+   "service-sector"
+  ]
+ },
+ {
+  "id": "vocab:fulfilling",
+  "headword": "fulfilling",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "making you feel satisfied and useful.",
+  "meaningVi": "mang lại sự mãn nguyện",
+  "existingExample": "Many people prefer a fulfilling job to a high salary.",
+  "mustContainOneOf": [
+   "fulfilling"
+  ]
+ },
+ {
+  "id": "vocab:rewarding",
+  "headword": "rewarding",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "giving satisfaction.",
+  "meaningVi": "đáng giá, bổ ích",
+  "existingExample": "Teaching can be an extremely rewarding career.",
+  "mustContainOneOf": [
+   "rewarding"
+  ]
+ },
+ {
+  "id": "vocab:monotonous",
+  "headword": "monotonous",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "boring because it never changes.",
+  "meaningVi": "đơn điệu, nhàm chán",
+  "existingExample": "Automation can take over monotonous tasks.",
+  "mustContainOneOf": [
+   "monotonous"
+  ]
+ },
+ {
+  "id": "vocab:upskill",
+  "headword": "upskill",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to learn new skills for work.",
+  "meaningVi": "nâng cao kỹ năng",
+  "existingExample": "Companies need to upskill workers to use AI tools.",
+  "mustContainOneOf": [
+   "upskill",
+   "upskills",
+   "upskilled",
+   "upskilling"
+  ]
+ },
+ {
+  "id": "vocab:reskill",
+  "headword": "reskill",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "to train people for a different job.",
+  "meaningVi": "đào tạo kỹ năng mới (cho nghề khác)",
+  "existingExample": "Governments should reskill workers displaced by automation.",
+  "mustContainOneOf": [
+   "reskill",
+   "reskills",
+   "reskilled",
+   "reskilling"
+  ]
+ },
+ {
+  "id": "vocab:hybrid_working",
+  "headword": "hybrid working",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "splitting working time between home and the office.",
+  "meaningVi": "làm việc kết hợp (nhà + văn phòng)",
+  "existingExample": "Hybrid working has become the norm in many offices.",
+  "mustContainOneOf": [
+   "hybrid working",
+   "hybrid-working"
+  ]
+ },
+ {
+  "id": "vocab:collective_bargaining",
+  "headword": "collective bargaining",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "negotiations between unions and employers about pay and conditions.",
+  "meaningVi": "thương lượng tập thể",
+  "existingExample": "Unions secure pay rises through collective bargaining.",
+  "mustContainOneOf": [
+   "collective bargaining",
+   "collective-bargaining"
+  ]
+ },
+ {
+  "id": "vocab:trade_union",
+  "headword": "trade union",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "an organisation representing workers' interests.",
+  "meaningVi": "công đoàn",
+  "existingExample": "Trade unions campaign for better working conditions.",
+  "mustContainOneOf": [
+   "trade union",
+   "trade-union"
+  ]
+ },
+ {
+  "id": "vocab:industrial_action",
+  "headword": "industrial action",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "action by workers, such as strikes, to protest.",
+  "meaningVi": "hành động đình công",
+  "existingExample": "Nurses took industrial action over pay.",
+  "mustContainOneOf": [
+   "industrial action",
+   "industrial-action"
+  ]
+ },
+ {
+  "id": "vocab:occupational_hazard",
+  "headword": "occupational hazard",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "a risk that comes with a particular job.",
+  "meaningVi": "rủi ro nghề nghiệp",
+  "existingExample": "Back pain is an occupational hazard for builders.",
+  "mustContainOneOf": [
+   "occupational hazard",
+   "occupational-hazard"
+  ]
+ },
+ {
+  "id": "vocab:redistribute",
+  "headword": "redistribute",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to share something out again, usually more fairly.",
+  "meaningVi": "phân phối lại",
+  "existingExample": "Higher taxes on the rich can be used to redistribute wealth.",
+  "mustContainOneOf": [
+   "redistribute",
+   "redistributes",
+   "redistributed",
+   "redistributing"
+  ]
+ },
+ {
+  "id": "vocab:attrition",
+  "headword": "attrition",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the gradual loss of employees who leave and are not replaced.",
+  "meaningVi": "tỷ lệ nhân viên nghỉ việc",
+  "existingExample": "Better working conditions can reduce staff attrition.",
+  "mustContainOneOf": [
+   "attrition",
+   "attritions"
+  ]
+ },
+ {
+  "id": "vocab:absenteeism",
+  "headword": "absenteeism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "regularly staying away from work or school without good reason.",
+  "meaningVi": "tình trạng nghỉ làm thường xuyên",
+  "existingExample": "Flexible schedules have helped reduce absenteeism.",
+  "mustContainOneOf": [
+   "absenteeism",
+   "absenteeisms"
+  ]
+ },
+ {
+  "id": "vocab:displace",
+  "headword": "displace",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to take the place of someone or something, forcing them out.",
+  "meaningVi": "thay thế, đẩy ra khỏi",
+  "existingExample": "Some workers fear they will be displaced by automation.",
+  "mustContainOneOf": [
+   "displace",
+   "displaces",
+   "displaced",
+   "displacing"
+  ]
+ },
+ {
+  "id": "vocab:materialise",
+  "headword": "materialise",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to happen or appear as expected or predicted.",
+  "meaningVi": "thành hiện thực",
+  "existingExample": "The promised economic benefits never materialised.",
+  "mustContainOneOf": [
+   "materialise",
+   "materialize",
+   "materialises",
+   "materialised",
+   "materialising",
+   "materialized"
+  ]
+ },
+ {
+  "id": "vocab:bias",
+  "headword": "bias",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a tendency that makes results or judgements unfair or inaccurate.",
+  "meaningVi": "sự thiên lệch",
+  "existingExample": "Self-reported data can carry a risk of bias.",
+  "mustContainOneOf": [
+   "bias",
+   "biases"
+  ]
+ },
+ {
+  "id": "vocab:productivity_gains",
+  "headword": "productivity gains",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "increases in how much is produced per worker or per hour.",
+  "meaningVi": "mức tăng năng suất",
+  "existingExample": "New technology often brings productivity gains, but not always higher wages.",
+  "mustContainOneOf": [
+   "productivity gains",
+   "productivity-gains"
+  ]
+ },
+ {
+  "id": "vocab:grapple_with",
+  "headword": "grapple with",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to try hard to deal with a difficult problem.",
+  "meaningVi": "vật lộn với (vấn đề)",
+  "existingExample": "Rapidly growing megacities must grapple with severe shortages of affordable housing.",
+  "mustContainOneOf": [
+   "grapple with",
+   "grapple-with"
+  ]
+ },
+ {
+  "id": "vocab:gauge",
+  "headword": "gauge",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to measure or judge something, especially feelings or results.",
+  "meaningVi": "đánh giá, đo lường",
+  "existingExample": "Surveys are used to gauge public opinion.",
+  "mustContainOneOf": [
+   "gauge",
+   "gauges",
+   "gauged",
+   "gauging"
+  ]
+ },
+ {
+  "id": "vocab:stagflation",
+  "headword": "stagflation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "A persistent economic condition combining sluggish growth, elevated unemployment, and stubbornly high price inflation.",
+  "meaningVi": "tình trạng lạm phát đình trệ",
+  "existingExample": "Central bankers dread prolonged stagflation because raising interest rates cools inflation yet risks deepening job losses.",
+  "mustContainOneOf": [
+   "stagflation",
+   "stagflations"
+  ]
+ },
+ {
+  "id": "vocab:deflation",
+  "headword": "deflation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A sustained decline in the general price level of goods and services, often discouraging spending and investment.",
+  "meaningVi": "giảm phát",
+  "existingExample": "Economists caution that entrenched deflation can paralyse consumption as households postpone major purchases expecting lower prices.",
+  "mustContainOneOf": [
+   "deflationary",
+   "deflation",
+   "deflations"
+  ]
+ },
+ {
+  "id": "vocab:hyperinflation",
+  "headword": "hyperinflation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Rapid, out-of-control escalation of general prices that destroys public confidence in a national currency.",
+  "meaningVi": "siêu lạm phát làm đồng tiền mất giá nghiêm trọng",
+  "existingExample": "Unrestrained money printing during severe fiscal crises has historically triggered hyperinflation, wiping out ordinary citizens' life savings.",
+  "mustContainOneOf": [
+   "hyperinflation",
+   "hyperinflations"
+  ]
+ },
+ {
+  "id": "vocab:monetary_policy",
+  "headword": "monetary policy",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Actions taken by a central bank to regulate money supply, credit conditions, and benchmark interest rates.",
+  "meaningVi": "chính sách tiền tệ do ngân hàng trung ương điều hành",
+  "existingExample": "Tightening monetary policy remains the primary mechanism for cooling overheated housing markets without altering parliamentary tax laws.",
+  "mustContainOneOf": [
+   "monetary policy",
+   "monetary-policy"
+  ]
+ },
+ {
+  "id": "vocab:quantitative_easing",
+  "headword": "quantitative easing",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "An unconventional central-bank policy of purchasing government bonds and financial assets to inject liquidity into a stalled economy.",
+  "meaningVi": "nới lỏng định lượng bơm thanh khoản qua mua trái phiếu",
+  "existingExample": "While quantitative easing stabilised commercial credit after the financial crash, critics argue it disproportionately inflated asset prices.",
+  "mustContainOneOf": [
+   "quantitative easing",
+   "quantitative-easing"
+  ]
+ },
+ {
+  "id": "vocab:sovereign_debt",
+  "headword": "sovereign debt",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The total financial obligations borrowed by a national government through treasury bonds and international creditors.",
+  "meaningVi": "nợ công quốc gia do chính phủ phát hành hoặc bảo lãnh",
+  "existingExample": "Escalating borrowing costs have forced several heavily indebted nations to restructure their sovereign debt under international supervision.",
+  "mustContainOneOf": [
+   "sovereign debt",
+   "sovereign-debt"
+  ]
+ },
+ {
+  "id": "vocab:fiscal_deficit",
+  "headword": "fiscal deficit",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A budgetary shortfall occurring when a government's total annual expenditures exceed its tax and non-tax revenues.",
+  "meaningVi": "thâm hụt ngân sách nhà nước khi chi tiêu vượt nguồn thu",
+  "existingExample": "Sustaining a wide fiscal deficit during periods of strong growth leaves treasuries with limited headroom during future recessions.",
+  "mustContainOneOf": [
+   "fiscal deficit",
+   "fiscal-deficit"
+  ]
+ },
+ {
+  "id": "vocab:budget_surplus",
+  "headword": "budget surplus",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A fiscal state in which public revenues surpass government expenditures over a designated accounting period.",
+  "meaningVi": "thặng dư ngân sách khi nguồn thu vượt tổng chi tiêu công",
+  "existingExample": "Resource-rich countries that channel a temporary budget surplus into sovereign wealth funds better cushion future commodity downturns.",
+  "mustContainOneOf": [
+   "budget surplus",
+   "budget-surplus"
+  ]
+ },
+ {
+  "id": "vocab:liquidity",
+  "headword": "liquidity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The ease and speed with which financial assets can be converted into cash without significantly losing market value.",
+  "meaningVi": "tính thanh khoản (mức độ chuyển đổi nhanh chóng sang tiền mặt)",
+  "existingExample": "Small exporters frequently collapse during sudden credit freezes not from poor products, but from acute short-term liquidity shortages.",
+  "mustContainOneOf": [
+   "liquidity",
+   "liquidities"
+  ]
+ },
+ {
+  "id": "vocab:insolvency",
+  "headword": "insolvency",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A state of financial distress in which a business or individual cannot pay debts as they fall due.",
+  "meaningVi": "tình trạng mất khả năng thanh toán nợ đến hạn",
+  "existingExample": "Reforming corporate insolvency frameworks allows viable struggling firms to reorganise debts rather than liquidate abruptly.",
+  "mustContainOneOf": [
+   "insolvency",
+   "insolvencies"
+  ]
+ },
+ {
+  "id": "vocab:oligopoly",
+  "headword": "oligopoly",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A market structure dominated by a small handful of powerful firms whose pricing decisions strongly influence the entire industry.",
+  "meaningVi": "độc quyền nhóm bị chi phối bởi một vài doanh nghiệp",
+  "existingExample": "Consumer watchdogs warn that the domestic telecommunications oligopoly keeps mobile data tariffs artificially high.",
+  "mustContainOneOf": [
+   "oligopoly",
+   "oligopolies"
+  ]
+ },
+ {
+  "id": "vocab:cartel",
+  "headword": "cartel",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "An association of competing producers that collude to fix prices, restrict output, or divide markets to boost profits.",
+  "meaningVi": "liên minh độc quyền thông đồng ấn định giá bán",
+  "existingExample": "Competition authorities imposed record fines after uncovering a clandestine construction cartel rigging municipal bridge tenders.",
+  "mustContainOneOf": [
+   "cartel",
+   "cartels"
+  ]
+ },
+ {
+  "id": "vocab:antitrust",
+  "headword": "antitrust",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Relating to statutes and regulatory enforcement aimed at curbing monopolistic practices and preserving open market competition.",
+  "meaningVi": "chống độc quyền nhằm bảo vệ cạnh tranh công bằng",
+  "existingExample": "Lawmakers are updating twentieth-century antitrust legislation to scrutinise how digital platforms acquire emerging rivals.",
+  "mustContainOneOf": [
+   "antitrust"
+  ]
+ },
+ {
+  "id": "vocab:deregulation",
+  "headword": "deregulation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The reduction or elimination of government rules and oversight governing a particular commercial industry.",
+  "meaningVi": "quá trình bãi bỏ hoặc nới lỏng các quy định kiểm soát",
+  "existingExample": "While airline deregulation lowered regional ticket fares, unchecked financial deregulation contributed directly to systemic banking fragility.",
+  "mustContainOneOf": [
+   "deregulation",
+   "deregulations"
+  ]
+ },
+ {
+  "id": "vocab:privatisation",
+  "headword": "privatisation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The transfer of state-owned enterprises, utilities, or public assets into private commercial ownership and operation.",
+  "meaningVi": "tư nhân hóa tài sản hoặc doanh nghiệp nhà nước",
+  "existingExample": "Public debate over water-utility privatisation centres on whether profit incentives undermine long-term maintenance of vital pipes.",
+  "mustContainOneOf": [
+   "privatisation",
+   "privatization",
+   "privatisations"
+  ]
+ },
+ {
+  "id": "vocab:nationalisation",
+  "headword": "nationalisation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The process by which a government assumes public ownership and operational control over a previously private industry.",
+  "meaningVi": "quốc hữu hóa chuyển giao ngành kinh tế về nhà nước",
+  "existingExample": "Following repeated rail operator failures, commuter groups campaigned vigorously for the gradual nationalisation of regional train lines.",
+  "mustContainOneOf": [
+   "nationalisation",
+   "nationalization",
+   "nationalisations"
+  ]
+ },
+ {
+  "id": "vocab:comparative_advantage",
+  "headword": "comparative advantage",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "An economy's capacity to produce specific goods or services at a lower opportunity cost than its trading partners.",
+  "meaningVi": "lợi thế so sánh trong sản xuất nhờ chi phí cơ hội thấp",
+  "existingExample": "Classical trade theory maintains that nations prosper mutually when each specialises according to its distinct comparative advantage.",
+  "mustContainOneOf": [
+   "comparative advantage",
+   "comparative-advantage"
+  ]
+ },
+ {
+  "id": "vocab:economies_of_scale",
+  "headword": "economies of scale",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Cost advantages attained by enterprises as production volume expands, spreading fixed expenses across greater output.",
+  "meaningVi": "lợi thế kinh tế theo quy mô giúp giảm chi phí đơn vị",
+  "existingExample": "Massive battery gigafactories achieve formidable economies of scale that have rapidly lowered electric-vehicle sticker prices.",
+  "mustContainOneOf": [
+   "economies of scale",
+   "economies-of-scale"
+  ]
+ },
+ {
+  "id": "vocab:diminishing_returns",
+  "headword": "diminishing returns",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The economic principle that adding successive units of one input eventually yields progressively smaller increments of output.",
+  "meaningVi": "quy luật lợi suất giảm dần khi tăng một yếu tố đầu vào",
+  "existingExample": "Expanding motorway lanes indefinitely soon encounters diminishing returns as induced traffic quickly refills newly added capacity.",
+  "mustContainOneOf": [
+   "diminishing returns",
+   "diminishing-returns"
+  ]
+ },
+ {
+  "id": "vocab:externality",
+  "headword": "externality",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "An unpriced side effect of production or consumption that imposes costs or confers benefits on uninvolved third parties.",
+  "meaningVi": "ngoại ứng kinh tế",
+  "existingExample": "Congestion pricing is designed to internalise the negative externality of urban air pollution caused by private commuter cars.",
+  "mustContainOneOf": [
+   "externality",
+   "externalities"
+  ]
+ },
+ {
+  "id": "vocab:market_failure",
+  "headword": "market failure",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A situation in which unregulated free markets fail to allocate goods, services, or public resources efficiently for society.",
+  "meaningVi": "thất bại thị trường khi cơ chế tự do phân bổ kém hiệu quả",
+  "existingExample": "Underinvestment in preventative vaccines is a textbook market failure that justifies direct public research subsidies.",
+  "mustContainOneOf": [
+   "market failure",
+   "market-failure"
+  ]
+ },
+ {
+  "id": "vocab:moral_hazard",
+  "headword": "moral hazard",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The tendency of an institution or individual to take excessive risks when shielded from bearing the full financial consequences.",
+  "meaningVi": "rủi ro đạo đức",
+  "existingExample": "Unconditional taxpayer bailouts for reckless investment banks create acute moral hazard by rewarding speculative excess.",
+  "mustContainOneOf": [
+   "moral hazard",
+   "moral-hazard"
+  ]
+ },
+ {
+  "id": "vocab:asymmetric_information",
+  "headword": "asymmetric information",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A market condition in which one party to an economic transaction possesses substantially more relevant knowledge than the other.",
+  "meaningVi": "thông tin bất cân xứng giữa các bên tham gia giao dịch",
+  "existingExample": "Mandatory nutritional labels and financial disclosures help reduce asymmetric information between corporations and ordinary consumers.",
+  "mustContainOneOf": [
+   "asymmetric information",
+   "asymmetric-information"
+  ]
+ }
+]

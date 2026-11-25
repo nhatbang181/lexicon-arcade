@@ -1,0 +1,1828 @@
+[
+ {
+  "id": "vocab:curriculum",
+  "headword": "curriculum",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the subjects that are studied in a school, college or course.",
+  "meaningVi": "chương trình giảng dạy",
+  "existingExample": "Many argue that the school curriculum should include practical life skills such as managing money.",
+  "mustContainOneOf": [
+   "curriculum",
+   "curricula",
+   "curriculums"
+  ]
+ },
+ {
+  "id": "vocab:rote_learning",
+  "headword": "rote learning",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "learning by repeating information until you remember it, rather than understanding it.",
+  "meaningVi": "học vẹt",
+  "existingExample": "Exam-driven systems are often criticised for encouraging rote learning at the expense of critical thinking.",
+  "mustContainOneOf": [
+   "rote learning",
+   "rote-learning"
+  ]
+ },
+ {
+  "id": "vocab:tuition_fees",
+  "headword": "tuition fees",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the money paid for being taught, especially at a college or university.",
+  "meaningVi": "học phí",
+  "existingExample": "Some governments have abolished tuition fees in order to widen access to higher education.",
+  "mustContainOneOf": [
+   "tuition fees",
+   "tuition-fees"
+  ]
+ },
+ {
+  "id": "vocab:vocational",
+  "headword": "vocational",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "connected with the skills and knowledge needed for a particular job.",
+  "meaningVi": "(thuộc) dạy nghề, hướng nghiệp",
+  "existingExample": "Vocational courses can equip young people with the skills that employers actually need.",
+  "mustContainOneOf": [
+   "vocational"
+  ]
+ },
+ {
+  "id": "vocab:lifelong_learning",
+  "headword": "lifelong learning",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the process of continuing to learn new skills and knowledge throughout adult life.",
+  "meaningVi": "học tập suốt đời",
+  "existingExample": "Rapid technological change has made lifelong learning essential for most workers.",
+  "mustContainOneOf": [
+   "lifelong learning",
+   "lifelong-learning"
+  ]
+ },
+ {
+  "id": "vocab:compulsory",
+  "headword": "compulsory",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "that must be done because of a rule or law.",
+  "meaningVi": "bắt buộc",
+  "existingExample": "Physical education should remain a compulsory subject in secondary schools.",
+  "mustContainOneOf": [
+   "compulsory"
+  ]
+ },
+ {
+  "id": "vocab:literacy",
+  "headword": "literacy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the ability to read and write.",
+  "meaningVi": "khả năng đọc viết",
+  "existingExample": "Improving adult literacy can transform the economic prospects of rural communities.",
+  "mustContainOneOf": [
+   "literacy",
+   "literacies"
+  ]
+ },
+ {
+  "id": "vocab:academic_performance",
+  "headword": "academic performance",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "how well a student does in their studies.",
+  "meaningVi": "kết quả học tập",
+  "existingExample": "There is growing evidence that sleep has a direct impact on academic performance.",
+  "mustContainOneOf": [
+   "academic performance",
+   "academic-performance"
+  ]
+ },
+ {
+  "id": "vocab:critical_thinking",
+  "headword": "critical thinking",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the ability to analyse information objectively and make a reasoned judgement.",
+  "meaningVi": "tư duy phản biện",
+  "existingExample": "Debate clubs help students develop critical thinking and confidence.",
+  "mustContainOneOf": [
+   "critical thinking",
+   "critical-thinking"
+  ]
+ },
+ {
+  "id": "vocab:extracurricular",
+  "headword": "extracurricular",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "done in addition to the normal course of study.",
+  "meaningVi": "ngoại khóa",
+  "existingExample": "Extracurricular activities such as sport and music teach children teamwork.",
+  "mustContainOneOf": [
+   "extracurricular"
+  ]
+ },
+ {
+  "id": "vocab:discipline",
+  "headword": "discipline",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the practice of training people to obey rules and control their behaviour.",
+  "meaningVi": "kỷ luật",
+  "existingExample": "Teachers often struggle to maintain discipline in overcrowded classrooms.",
+  "mustContainOneOf": [
+   "discipline",
+   "disciplines"
+  ]
+ },
+ {
+  "id": "vocab:tertiary_education",
+  "headword": "tertiary education",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "education at university or college level.",
+  "meaningVi": "giáo dục đại học, sau phổ thông",
+  "existingExample": "Access to tertiary education should depend on ability rather than wealth.",
+  "mustContainOneOf": [
+   "tertiary education",
+   "tertiary-education"
+  ]
+ },
+ {
+  "id": "vocab:scholarship",
+  "headword": "scholarship",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "money given to a student to help pay for their education.",
+  "meaningVi": "học bổng",
+  "existingExample": "She won a full scholarship to study engineering abroad.",
+  "mustContainOneOf": [
+   "scholarship",
+   "scholarships"
+  ]
+ },
+ {
+  "id": "vocab:distance_learning",
+  "headword": "distance learning",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a way of studying from home, usually online, without attending classes in person.",
+  "meaningVi": "học từ xa",
+  "existingExample": "Distance learning gives working adults the flexibility to study at their own pace.",
+  "mustContainOneOf": [
+   "distance learning",
+   "distance-learning"
+  ]
+ },
+ {
+  "id": "vocab:dropout_rate",
+  "headword": "dropout rate",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the percentage of students who leave school or a course before finishing.",
+  "meaningVi": "tỷ lệ bỏ học",
+  "existingExample": "Free school meals have helped to reduce the dropout rate in poorer areas.",
+  "mustContainOneOf": [
+   "dropout rate",
+   "dropout-rate"
+  ]
+ },
+ {
+  "id": "vocab:mixed_ability",
+  "headword": "mixed-ability",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "including students of different levels of ability.",
+  "meaningVi": "(lớp) nhiều trình độ",
+  "existingExample": "Teaching mixed-ability classes requires careful planning.",
+  "mustContainOneOf": [
+   "mixed-ability",
+   "mixed ability"
+  ]
+ },
+ {
+  "id": "vocab:assessment",
+  "headword": "assessment",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the process of judging how well someone has learned something.",
+  "meaningVi": "sự đánh giá",
+  "existingExample": "Continuous assessment may give a fairer picture of a student's ability than a single exam.",
+  "mustContainOneOf": [
+   "assessment",
+   "assessments"
+  ]
+ },
+ {
+  "id": "vocab:pedagogy",
+  "headword": "pedagogy",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the methods and theory of teaching.",
+  "meaningVi": "phương pháp sư phạm",
+  "existingExample": "Many teacher-training programmes now emphasise student-centred pedagogy.",
+  "mustContainOneOf": [
+   "pedagogy",
+   "pedagogies"
+  ]
+ },
+ {
+  "id": "vocab:well_rounded",
+  "headword": "well-rounded",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "having a wide range of skills, interests and experience.",
+  "meaningVi": "phát triển toàn diện",
+  "existingExample": "Schools should aim to produce well-rounded individuals, not just high scorers.",
+  "mustContainOneOf": [
+   "well-rounded",
+   "well rounded"
+  ]
+ },
+ {
+  "id": "vocab:peer_pressure",
+  "headword": "peer pressure",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "influence from people of your own age to behave like them.",
+  "meaningVi": "áp lực đồng trang lứa",
+  "existingExample": "Teenagers often succumb to peer pressure to fit in with their classmates.",
+  "mustContainOneOf": [
+   "peer pressure",
+   "peer-pressure"
+  ]
+ },
+ {
+  "id": "vocab:cram",
+  "headword": "cram",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to study very hard for a short time before an exam.",
+  "meaningVi": "học nhồi",
+  "existingExample": "Students who cram the night before an exam rarely retain the information.",
+  "mustContainOneOf": [
+   "cram",
+   "crams",
+   "cramed",
+   "craming"
+  ]
+ },
+ {
+  "id": "vocab:enrol",
+  "headword": "enrol",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to officially join a course or school.",
+  "meaningVi": "ghi danh, nhập học",
+  "existingExample": "More adults are enrolling on part-time courses to update their skills.",
+  "mustContainOneOf": [
+   "enrol",
+   "enrols",
+   "enroled",
+   "enroling"
+  ]
+ },
+ {
+  "id": "vocab:acquire",
+  "headword": "acquire",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to gain knowledge or a skill.",
+  "meaningVi": "tiếp thu, đạt được",
+  "existingExample": "Young children acquire languages more easily than adults.",
+  "mustContainOneOf": [
+   "acquire",
+   "acquires",
+   "acquired",
+   "acquiring"
+  ]
+ },
+ {
+  "id": "vocab:grasp",
+  "headword": "grasp",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a clear understanding of something; to understand something completely.",
+  "meaningVi": "sự nắm vững; nắm được",
+  "existingExample": "A firm grasp of basic maths is essential for everyday life.",
+  "mustContainOneOf": [
+   "grasp",
+   "grasps"
+  ]
+ },
+ {
+  "id": "vocab:standardised_test",
+  "headword": "standardised test",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a test given and scored in the same way for all students.",
+  "meaningVi": "kỳ thi chuẩn hóa",
+  "existingExample": "Critics argue that standardised tests measure memory rather than intelligence.",
+  "mustContainOneOf": [
+   "standardised tests",
+   "standardised test",
+   "standardised-test"
+  ]
+ },
+ {
+  "id": "vocab:meritocracy",
+  "headword": "meritocracy",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a system in which people succeed because of ability rather than wealth or class.",
+  "meaningVi": "chế độ trọng dụng nhân tài",
+  "existingExample": "Scholarships help make higher education more of a meritocracy.",
+  "mustContainOneOf": [
+   "meritocracy",
+   "meritocracies"
+  ]
+ },
+ {
+  "id": "vocab:inquiry_based_learning",
+  "headword": "inquiry-based learning",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "learning in which students investigate questions themselves.",
+  "meaningVi": "học tập dựa trên khám phá",
+  "existingExample": "Inquiry-based learning encourages pupils to ask their own questions.",
+  "mustContainOneOf": [
+   "inquiry-based learning",
+   "inquiry-based-learning",
+   "inquiry based learning"
+  ]
+ },
+ {
+  "id": "vocab:apprenticeship",
+  "headword": "apprenticeship",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a period of on-the-job training with a skilled worker.",
+  "meaningVi": "chương trình học nghề (vừa học vừa làm)",
+  "existingExample": "Apprenticeships allow young people to earn while they learn.",
+  "mustContainOneOf": [
+   "apprenticeship",
+   "apprenticeships"
+  ]
+ },
+ {
+  "id": "vocab:attainment_gap",
+  "headword": "attainment gap",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the difference in results between groups of students.",
+  "meaningVi": "khoảng cách thành tích học tập",
+  "existingExample": "Tutoring programmes aim to close the attainment gap between rich and poor pupils.",
+  "mustContainOneOf": [
+   "attainment gap",
+   "attainment-gap"
+  ]
+ },
+ {
+  "id": "vocab:disadvantaged_background",
+  "headword": "disadvantaged background",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a family situation with little money or opportunity.",
+  "meaningVi": "hoàn cảnh khó khăn",
+  "existingExample": "Students from disadvantaged backgrounds are less likely to attend university.",
+  "mustContainOneOf": [
+   "disadvantaged backgrounds",
+   "disadvantaged background",
+   "disadvantaged-background"
+  ]
+ },
+ {
+  "id": "vocab:student_loan",
+  "headword": "student loan",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "money borrowed to pay for university study.",
+  "meaningVi": "khoản vay sinh viên",
+  "existingExample": "Many graduates spend years repaying their student loans.",
+  "mustContainOneOf": [
+   "student loan",
+   "student-loan"
+  ]
+ },
+ {
+  "id": "vocab:graduate_employability",
+  "headword": "graduate employability",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the degree to which graduates have the skills employers want.",
+  "meaningVi": "khả năng có việc làm của sinh viên tốt nghiệp",
+  "existingExample": "Work placements can improve graduate employability.",
+  "mustContainOneOf": [
+   "graduate employability",
+   "graduate-employability"
+  ]
+ },
+ {
+  "id": "vocab:hands_on",
+  "headword": "hands-on",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "involving practical experience rather than theory.",
+  "meaningVi": "thực hành trực tiếp",
+  "existingExample": "Science is best taught through hands-on experiments.",
+  "mustContainOneOf": [
+   "hands-on",
+   "hands on"
+  ]
+ },
+ {
+  "id": "vocab:abstract",
+  "headword": "abstract",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "based on ideas rather than real, physical things.",
+  "meaningVi": "trừu tượng",
+  "existingExample": "Young children find abstract concepts such as time difficult.",
+  "mustContainOneOf": [
+   "abstract"
+  ]
+ },
+ {
+  "id": "vocab:learner_autonomy",
+  "headword": "learner autonomy",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "students' ability to take control of their own learning.",
+  "meaningVi": "tính tự chủ của người học",
+  "existingExample": "Online courses demand a high degree of learner autonomy.",
+  "mustContainOneOf": [
+   "learner autonomy",
+   "learner-autonomy"
+  ]
+ },
+ {
+  "id": "vocab:intrinsic_motivation",
+  "headword": "intrinsic motivation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the desire to do something because it is interesting or satisfying in itself.",
+  "meaningVi": "động lực nội tại",
+  "existingExample": "Excessive rewards can undermine intrinsic motivation.",
+  "mustContainOneOf": [
+   "intrinsic motivation",
+   "intrinsic-motivation"
+  ]
+ },
+ {
+  "id": "vocab:extrinsic",
+  "headword": "extrinsic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "coming from outside, such as rewards or punishments.",
+  "meaningVi": "bên ngoài (động lực)",
+  "existingExample": "Prizes are an extrinsic motivator whose effect may not last.",
+  "mustContainOneOf": [
+   "extrinsic"
+  ]
+ },
+ {
+  "id": "vocab:academic_integrity",
+  "headword": "academic integrity",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "honesty in academic work, without cheating or copying.",
+  "meaningVi": "liêm chính học thuật",
+  "existingExample": "AI writing tools pose new challenges to academic integrity.",
+  "mustContainOneOf": [
+   "academic integrity",
+   "academic-integrity"
+  ]
+ },
+ {
+  "id": "vocab:plagiarism",
+  "headword": "plagiarism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "presenting someone else's work as your own.",
+  "meaningVi": "đạo văn",
+  "existingExample": "Universities use software to detect plagiarism.",
+  "mustContainOneOf": [
+   "plagiarism",
+   "plagiarisms"
+  ]
+ },
+ {
+  "id": "vocab:overhaul",
+  "headword": "overhaul",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to change a system completely in order to improve it.",
+  "meaningVi": "cải tổ toàn diện",
+  "existingExample": "The government plans to overhaul the national curriculum.",
+  "mustContainOneOf": [
+   "overhaul",
+   "overhauls",
+   "overhauled",
+   "overhauling"
+  ]
+ },
+ {
+  "id": "vocab:syllabus",
+  "headword": "syllabus",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the list of topics covered in a course.",
+  "meaningVi": "đề cương môn học",
+  "existingExample": "Teachers struggle to cover the entire syllabus before exams.",
+  "mustContainOneOf": [
+   "syllabus",
+   "syllabuses"
+  ]
+ },
+ {
+  "id": "vocab:coursework",
+  "headword": "coursework",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "work done during a course that counts towards the final grade.",
+  "meaningVi": "bài tập tính điểm trong khóa học",
+  "existingExample": "Coursework rewards steady effort rather than exam technique.",
+  "mustContainOneOf": [
+   "coursework",
+   "corsework",
+   "courseworks",
+   "corseworks"
+  ]
+ },
+ {
+  "id": "vocab:rigorous",
+  "headword": "rigorous",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "very careful and demanding high standards.",
+  "meaningVi": "nghiêm ngặt, kỹ lưỡng",
+  "existingExample": "Medical students undergo rigorous training.",
+  "mustContainOneOf": [
+   "rigorous"
+  ]
+ },
+ {
+  "id": "vocab:academically_gifted",
+  "headword": "academically gifted",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "having exceptional intellectual ability.",
+  "meaningVi": "có năng khiếu học tập",
+  "existingExample": "Special programmes can stretch academically gifted pupils.",
+  "mustContainOneOf": [
+   "academically gifted",
+   "academically-gifted"
+  ]
+ },
+ {
+  "id": "vocab:streaming",
+  "headword": "streaming",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "dividing students into classes according to ability.",
+  "meaningVi": "phân lớp theo năng lực",
+  "existingExample": "Critics argue that streaming labels children too early.",
+  "mustContainOneOf": [
+   "streaming",
+   "streamings"
+  ]
+ },
+ {
+  "id": "vocab:teacher_centred",
+  "headword": "teacher-centred",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "where the teacher talks and students mainly listen.",
+  "meaningVi": "lấy giáo viên làm trung tâm",
+  "existingExample": "Teacher-centred lessons can leave students passive.",
+  "mustContainOneOf": [
+   "teacher-centred",
+   "teacher centred"
+  ]
+ },
+ {
+  "id": "vocab:student_centred",
+  "headword": "student-centred",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "focused on students' needs and active participation.",
+  "meaningVi": "lấy người học làm trung tâm",
+  "existingExample": "Student-centred learning encourages discussion and collaboration.",
+  "mustContainOneOf": [
+   "student-centred",
+   "student centred"
+  ]
+ },
+ {
+  "id": "vocab:home_schooling",
+  "headword": "home-schooling",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "educating children at home instead of at school.",
+  "meaningVi": "giáo dục tại nhà",
+  "existingExample": "Some parents opt for home-schooling to tailor lessons to their child.",
+  "mustContainOneOf": [
+   "home-schooling",
+   "home-schoolings",
+   "home schooling"
+  ]
+ },
+ {
+  "id": "vocab:single_sex_school",
+  "headword": "single-sex school",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a school for only boys or only girls.",
+  "meaningVi": "trường chỉ dành cho một giới",
+  "existingExample": "Some studies suggest that girls perform better in single-sex schools.",
+  "mustContainOneOf": [
+   "single-sex school",
+   "single-sex-school",
+   "single sex school"
+  ]
+ },
+ {
+  "id": "vocab:co_educational",
+  "headword": "co-educational",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "teaching boys and girls together.",
+  "meaningVi": "(trường) học chung nam nữ",
+  "existingExample": "Co-educational schools reflect the mixed nature of society.",
+  "mustContainOneOf": [
+   "co-educational",
+   "co educational"
+  ]
+ },
+ {
+  "id": "vocab:private_tuition",
+  "headword": "private tuition",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "extra lessons that families pay for privately.",
+  "meaningVi": "học thêm, dạy kèm",
+  "existingExample": "Private tuition is extremely common in many Asian countries.",
+  "mustContainOneOf": [
+   "private tuition",
+   "private-tuition"
+  ]
+ },
+ {
+  "id": "vocab:exam_oriented",
+  "headword": "exam-oriented",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "focused mainly on passing examinations.",
+  "meaningVi": "nặng về thi cử",
+  "existingExample": "An exam-oriented system may discourage creativity.",
+  "mustContainOneOf": [
+   "exam-oriented",
+   "exam oriented"
+  ]
+ },
+ {
+  "id": "vocab:cognitive_development",
+  "headword": "cognitive development",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the growth of a child's ability to think and understand.",
+  "meaningVi": "sự phát triển nhận thức",
+  "existingExample": "Reading aloud supports young children's cognitive development.",
+  "mustContainOneOf": [
+   "cognitive development",
+   "cognitive-development"
+  ]
+ },
+ {
+  "id": "vocab:early_childhood_education",
+  "headword": "early childhood education",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "education for children before they start primary school.",
+  "meaningVi": "giáo dục mầm non",
+  "existingExample": "Investment in early childhood education yields long-term benefits.",
+  "mustContainOneOf": [
+   "early childhood education",
+   "early-childhood-education"
+  ]
+ },
+ {
+  "id": "vocab:numeracy",
+  "headword": "numeracy",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the ability to understand and work with numbers.",
+  "meaningVi": "năng lực tính toán",
+  "existingExample": "Basic numeracy is essential for managing personal finances.",
+  "mustContainOneOf": [
+   "numeracy",
+   "numeracies"
+  ]
+ },
+ {
+  "id": "vocab:transferable_skills",
+  "headword": "transferable skills",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "skills that are useful in many different jobs.",
+  "meaningVi": "kỹ năng chuyển đổi được",
+  "existingExample": "Team projects build transferable skills such as communication.",
+  "mustContainOneOf": [
+   "transferable skills",
+   "transferable-skills"
+  ]
+ },
+ {
+  "id": "vocab:soft_skills",
+  "headword": "soft skills",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "personal skills such as communication and teamwork.",
+  "meaningVi": "kỹ năng mềm",
+  "existingExample": "Employers complain that many graduates lack soft skills.",
+  "mustContainOneOf": [
+   "soft skills",
+   "soft-skills"
+  ]
+ },
+ {
+  "id": "vocab:interdisciplinary",
+  "headword": "interdisciplinary",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "combining two or more academic subjects.",
+  "meaningVi": "liên ngành",
+  "existingExample": "Climate studies require an interdisciplinary approach.",
+  "mustContainOneOf": [
+   "interdisciplinary"
+  ]
+ },
+ {
+  "id": "vocab:mentor",
+  "headword": "mentor",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "an experienced person who advises a less experienced one.",
+  "meaningVi": "người hướng dẫn; kèm cặp",
+  "existingExample": "Mentoring schemes pair new teachers with experienced colleagues.",
+  "mustContainOneOf": [
+   "mentor",
+   "mentors"
+  ]
+ },
+ {
+  "id": "vocab:aptitude",
+  "headword": "aptitude",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a natural ability to do something.",
+  "meaningVi": "năng khiếu",
+  "existingExample": "She showed an early aptitude for languages.",
+  "mustContainOneOf": [
+   "aptitude",
+   "aptitudes"
+  ]
+ },
+ {
+  "id": "vocab:innate",
+  "headword": "innate",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "existing from birth.",
+  "meaningVi": "bẩm sinh",
+  "existingExample": "Some people believe intelligence is largely innate.",
+  "mustContainOneOf": [
+   "innate"
+  ]
+ },
+ {
+  "id": "vocab:nurture",
+  "headword": "nurture",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to help something develop; the care given to a child.",
+  "meaningVi": "nuôi dưỡng, vun đắp",
+  "existingExample": "Schools should nurture creativity, not merely test it.",
+  "mustContainOneOf": [
+   "nurture",
+   "nurtures"
+  ]
+ },
+ {
+  "id": "vocab:foster",
+  "headword": "foster",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to encourage something to develop.",
+  "meaningVi": "thúc đẩy, khuyến khích phát triển",
+  "existingExample": "Group projects foster cooperation between students.",
+  "mustContainOneOf": [
+   "foster",
+   "fosters",
+   "fostered",
+   "fostering"
+  ]
+ },
+ {
+  "id": "vocab:stifle",
+  "headword": "stifle",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to prevent something from developing.",
+  "meaningVi": "kìm hãm, bóp nghẹt",
+  "existingExample": "Overly strict rules can stifle students' creativity.",
+  "mustContainOneOf": [
+   "stifle",
+   "stifles",
+   "stifled",
+   "stifling"
+  ]
+ },
+ {
+  "id": "vocab:instil",
+  "headword": "instil",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to gradually make someone have a quality or feeling.",
+  "meaningVi": "khắc sâu, truyền dần (giá trị)",
+  "existingExample": "Parents try to instil good habits in their children.",
+  "mustContainOneOf": [
+   "instil",
+   "instils",
+   "instiled",
+   "instiling"
+  ]
+ },
+ {
+  "id": "vocab:impart",
+  "headword": "impart",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to pass on knowledge or skills.",
+  "meaningVi": "truyền đạt (kiến thức)",
+  "existingExample": "A good teacher imparts knowledge in an engaging way.",
+  "mustContainOneOf": [
+   "impart",
+   "imparts",
+   "imparted",
+   "imparting"
+  ]
+ },
+ {
+  "id": "vocab:inquisitive",
+  "headword": "inquisitive",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "eager to learn and ask questions.",
+  "meaningVi": "ham học hỏi, tò mò",
+  "existingExample": "Inquisitive children ask endless questions about the world.",
+  "mustContainOneOf": [
+   "inquisitive"
+  ]
+ },
+ {
+  "id": "vocab:conscientious",
+  "headword": "conscientious",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "careful to do work well and thoroughly.",
+  "meaningVi": "tận tâm, chu đáo",
+  "existingExample": "Conscientious students rarely miss deadlines.",
+  "mustContainOneOf": [
+   "conscientious"
+  ]
+ },
+ {
+  "id": "vocab:diligent",
+  "headword": "diligent",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "showing care and steady effort.",
+  "meaningVi": "chăm chỉ, cần cù",
+  "existingExample": "Diligent revision is more effective than last-minute study.",
+  "mustContainOneOf": [
+   "diligent"
+  ]
+ },
+ {
+  "id": "vocab:underachieve",
+  "headword": "underachieve",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to perform less well than your ability suggests.",
+  "meaningVi": "học dưới khả năng",
+  "existingExample": "Bright pupils may underachieve if they are not challenged.",
+  "mustContainOneOf": [
+   "underachieve",
+   "underachieves",
+   "underachieved",
+   "underachieving"
+  ]
+ },
+ {
+  "id": "vocab:truancy",
+  "headword": "truancy",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "staying away from school without permission.",
+  "meaningVi": "tình trạng trốn học",
+  "existingExample": "Truancy is often linked to problems at home.",
+  "mustContainOneOf": [
+   "truancy",
+   "truancies"
+  ]
+ },
+ {
+  "id": "vocab:expel",
+  "headword": "expel",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to officially make someone leave a school.",
+  "meaningVi": "đuổi học",
+  "existingExample": "He was expelled for repeated bullying.",
+  "mustContainOneOf": [
+   "expel",
+   "expels",
+   "expeled",
+   "expeling"
+  ]
+ },
+ {
+  "id": "vocab:bullying",
+  "headword": "bullying",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "repeatedly hurting or frightening a weaker person.",
+  "meaningVi": "bắt nạt học đường",
+  "existingExample": "Schools must have clear anti-bullying policies.",
+  "mustContainOneOf": [
+   "bullying",
+   "bullyings"
+  ]
+ },
+ {
+  "id": "vocab:school_leaver",
+  "headword": "school leaver",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a young person who has just finished school.",
+  "meaningVi": "học sinh vừa rời ghế phổ thông",
+  "existingExample": "Many school leavers now choose apprenticeships over university.",
+  "mustContainOneOf": [
+   "school leavers",
+   "school leaver",
+   "school-leaver"
+  ]
+ },
+ {
+  "id": "vocab:gap_year",
+  "headword": "gap year",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a year off between school and university.",
+  "meaningVi": "năm nghỉ trước khi vào đại học",
+  "existingExample": "A gap year can help students mature before university.",
+  "mustContainOneOf": [
+   "gap year",
+   "gap-year"
+  ]
+ },
+ {
+  "id": "vocab:postgraduate",
+  "headword": "postgraduate",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "relating to study after a first degree.",
+  "meaningVi": "sau đại học; học viên sau đại học",
+  "existingExample": "Postgraduate degrees are increasingly required for research posts.",
+  "mustContainOneOf": [
+   "postgraduate"
+  ]
+ },
+ {
+  "id": "vocab:undergraduate",
+  "headword": "undergraduate",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a university student studying for a first degree.",
+  "meaningVi": "sinh viên đại học",
+  "existingExample": "Undergraduates often share accommodation in their first year.",
+  "mustContainOneOf": [
+   "undergraduate",
+   "undergraduates"
+  ]
+ },
+ {
+  "id": "vocab:faculty",
+  "headword": "faculty",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a department of a university; its academic staff.",
+  "meaningVi": "khoa; đội ngũ giảng viên",
+  "existingExample": "Faculty members are expected to publish research.",
+  "mustContainOneOf": [
+   "faculty",
+   "faculties"
+  ]
+ },
+ {
+  "id": "vocab:thesis",
+  "headword": "thesis",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a long piece of writing for a degree; a main argument.",
+  "meaningVi": "luận văn; luận điểm",
+  "existingExample": "She is writing her thesis on urban migration.",
+  "mustContainOneOf": [
+   "thesis",
+   "theses"
+  ]
+ },
+ {
+  "id": "vocab:accreditation",
+  "headword": "accreditation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "official approval that a course meets required standards.",
+  "meaningVi": "sự kiểm định, công nhận",
+  "existingExample": "The course has gained international accreditation.",
+  "mustContainOneOf": [
+   "accreditation",
+   "accreditations"
+  ]
+ },
+ {
+  "id": "vocab:prestigious",
+  "headword": "prestigious",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "respected and admired.",
+  "meaningVi": "danh giá",
+  "existingExample": "Graduates of prestigious universities often earn higher salaries.",
+  "mustContainOneOf": [
+   "prestigious"
+  ]
+ },
+ {
+  "id": "vocab:ivory_tower",
+  "headword": "ivory tower",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a situation in which academics are cut off from ordinary life.",
+  "meaningVi": "tháp ngà (xa rời thực tế)",
+  "existingExample": "Universities are sometimes criticised as ivory towers.",
+  "mustContainOneOf": [
+   "ivory towers",
+   "ivory tower",
+   "ivory-tower"
+  ]
+ },
+ {
+  "id": "vocab:educational_attainment",
+  "headword": "educational attainment",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the highest level of education someone has completed.",
+  "meaningVi": "trình độ học vấn đạt được",
+  "existingExample": "Educational attainment strongly predicts lifetime earnings.",
+  "mustContainOneOf": [
+   "educational attainment",
+   "educational-attainment"
+  ]
+ },
+ {
+  "id": "vocab:illiteracy",
+  "headword": "illiteracy",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the inability to read and write.",
+  "meaningVi": "nạn mù chữ",
+  "existingExample": "Adult education programmes aim to eradicate illiteracy.",
+  "mustContainOneOf": [
+   "illiteracy",
+   "illiteracies"
+  ]
+ },
+ {
+  "id": "vocab:blended_learning",
+  "headword": "blended learning",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "combining online study with face-to-face teaching.",
+  "meaningVi": "học kết hợp (trực tuyến + trực tiếp)",
+  "existingExample": "Blended learning combines the flexibility of online study with classroom support.",
+  "mustContainOneOf": [
+   "blended learning",
+   "blended-learning"
+  ]
+ },
+ {
+  "id": "vocab:flipped_classroom",
+  "headword": "flipped classroom",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a model where students study content at home and practise in class.",
+  "meaningVi": "lớp học đảo ngược",
+  "existingExample": "In a flipped classroom, lectures are watched at home.",
+  "mustContainOneOf": [
+   "flipped classroom",
+   "flipped-classroom"
+  ]
+ },
+ {
+  "id": "vocab:mooc",
+  "headword": "MOOC",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a free online course open to anyone (massive open online course).",
+  "meaningVi": "khóa học trực tuyến đại trà",
+  "existingExample": "MOOCs give millions of people access to university-level teaching.",
+  "mustContainOneOf": [
+   "mooc",
+   "moocs"
+  ]
+ },
+ {
+  "id": "vocab:credentials",
+  "headword": "credentials",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "qualifications that show you are suitable for something.",
+  "meaningVi": "bằng cấp, chứng chỉ",
+  "existingExample": "Employers increasingly look beyond academic credentials.",
+  "mustContainOneOf": [
+   "credentials",
+   "credentialses"
+  ]
+ },
+ {
+  "id": "vocab:knowledge_economy",
+  "headword": "knowledge economy",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "an economy based on information and skills rather than manufacturing.",
+  "meaningVi": "nền kinh tế tri thức",
+  "existingExample": "Education is crucial to competing in the knowledge economy.",
+  "mustContainOneOf": [
+   "knowledge economy",
+   "knowledge-economy"
+  ]
+ },
+ {
+  "id": "vocab:equip",
+  "headword": "equip",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to give someone the skills they need.",
+  "meaningVi": "trang bị (kỹ năng)",
+  "existingExample": "Schools should equip students with practical life skills.",
+  "mustContainOneOf": [
+   "equip",
+   "equips",
+   "equiped",
+   "equiping"
+  ]
+ },
+ {
+  "id": "vocab:cultivate",
+  "headword": "cultivate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to develop a skill, quality or interest.",
+  "meaningVi": "trau dồi, vun đắp",
+  "existingExample": "Libraries help children cultivate a love of reading.",
+  "mustContainOneOf": [
+   "cultivate",
+   "cultivates",
+   "cultivated",
+   "cultivating"
+  ]
+ },
+ {
+  "id": "vocab:broaden",
+  "headword": "broaden",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to make something wider or more varied.",
+  "meaningVi": "mở rộng (tầm nhìn)",
+  "existingExample": "Studying abroad broadens students' horizons.",
+  "mustContainOneOf": [
+   "broaden",
+   "broadens",
+   "broadened",
+   "broadening"
+  ]
+ },
+ {
+  "id": "vocab:well_informed",
+  "headword": "well-informed",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "having a lot of knowledge about a subject.",
+  "meaningVi": "hiểu biết rộng",
+  "existingExample": "Education produces well-informed citizens who can judge policies.",
+  "mustContainOneOf": [
+   "well-informed",
+   "well informed"
+  ]
+ },
+ {
+  "id": "vocab:regurgitate",
+  "headword": "regurgitate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to repeat information without understanding it.",
+  "meaningVi": "nhắc lại máy móc (không hiểu)",
+  "existingExample": "Examinations that merely reward students who regurgitate memorised facts fail to assess genuine understanding.",
+  "mustContainOneOf": [
+   "regurgitate",
+   "regurgitates",
+   "regurgitated",
+   "regurgitating"
+  ]
+ },
+ {
+  "id": "vocab:grade_inflation",
+  "headword": "grade inflation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the tendency for grades to rise without a real rise in standards.",
+  "meaningVi": "lạm phát điểm số",
+  "existingExample": "Grade inflation makes it harder for employers to compare candidates.",
+  "mustContainOneOf": [
+   "grade inflation",
+   "grade-inflation"
+  ]
+ },
+ {
+  "id": "vocab:league_table",
+  "headword": "league table",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a list ranking schools or universities by performance.",
+  "meaningVi": "bảng xếp hạng trường",
+  "existingExample": "Schools may focus on exam results to climb league tables.",
+  "mustContainOneOf": [
+   "league tables",
+   "league table",
+   "league-table"
+  ]
+ },
+ {
+  "id": "vocab:pastoral_care",
+  "headword": "pastoral care",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "support for students' personal and emotional well-being.",
+  "meaningVi": "sự chăm sóc tinh thần học sinh",
+  "existingExample": "Good pastoral care helps students cope with stress.",
+  "mustContainOneOf": [
+   "pastoral care",
+   "pastoral-care"
+  ]
+ },
+ {
+  "id": "vocab:special_educational_needs",
+  "headword": "special educational needs",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "learning difficulties or disabilities that require extra support.",
+  "meaningVi": "nhu cầu giáo dục đặc biệt",
+  "existingExample": "Teachers need training to support pupils with special educational needs.",
+  "mustContainOneOf": [
+   "special educational needs",
+   "special-educational-needs"
+  ]
+ },
+ {
+  "id": "vocab:inclusive_education",
+  "headword": "inclusive education",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "teaching students of all abilities and backgrounds together.",
+  "meaningVi": "giáo dục hòa nhập",
+  "existingExample": "Inclusive education allows disabled children to learn alongside their peers.",
+  "mustContainOneOf": [
+   "inclusive education",
+   "inclusive-education"
+  ]
+ },
+ {
+  "id": "vocab:vocational_training",
+  "headword": "vocational training",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "practical training for a particular job.",
+  "meaningVi": "đào tạo nghề",
+  "existingExample": "Vocational training can reduce youth unemployment.",
+  "mustContainOneOf": [
+   "vocational training",
+   "vocational-training"
+  ]
+ }
+]

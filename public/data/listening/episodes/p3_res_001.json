@@ -27,185 +27,185 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Elena, I finished plotting our seven-day rooftop test of the passive solar still. Days one to three hit our target yield, then freshwater output fell by a third on day four.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 10.38
     },
     {
       "lineId": "l02",
       "speakerId": "s2",
       "text": "I saw that dip too. At first I checked the acrylic cover seam for vapour cracks and pulled the weather log for cloud cover.",
-      "start": 0,
-      "end": 0
+      "start": 10.83,
+      "end": 17.96
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "The seals stayed completely airtight and we had unbroken sunshine all week. When I lifted the lid on Friday morning, white salt crystals had crusted across the black wicking cloth, reflecting sunlight instead of absorbing it.",
-      "start": 0,
-      "end": 0
+      "start": 18.41,
+      "end": 30.98
     },
     {
       "lineId": "l04",
       "speakerId": "s2",
       "text": "Ah, salt fouling explains that sharp drop. Speaking of the absorber, I am glad I swapped out our matte-painted metal tray for woven carbon fabric before this run.",
-      "start": 0,
-      "end": 0
+      "start": 31.43,
+      "end": 41.13
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "Wait, was that because the matte paint started peeling in saltwater, or because the physics lab donated the carbon roll for free?",
-      "start": 0,
-      "end": 0
+      "start": 41.58,
+      "end": 47.93
     },
     {
       "lineId": "l06",
       "speakerId": "s2",
       "text": "Neither — the paint held fine and we had to purchase the roll out of our grant. Woven carbon fabric draws seawater upward evenly by capillary action, keeping a paper-thin film that evaporates far faster than a deep basin.",
-      "start": 0,
-      "end": 0
+      "start": 48.38,
+      "end": 61.3
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "Makes total sense. Now, on the condensation side, we still lost droplets dripping straight back into the brine tank before reaching the gutter.",
-      "start": 0,
-      "end": 0
+      "start": 61.75,
+      "end": 69.96
     },
     {
       "lineId": "l08",
       "speakerId": "s2",
       "text": "I remember you suggesting we double the thickness of the top glass sheet or coat the underside with anti-fog detergent.",
-      "start": 0,
-      "end": 0
+      "start": 70.41,
+      "end": 76.24
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "Right, you convinced me thick glass holds too much heat and slows cooling, and detergent residue would contaminate drinking water. Tilting the condensing cover to a steeper thirty-degree angle lets droplets glide cleanly down into the trough.",
-      "start": 0,
-      "end": 0
+      "start": 76.69,
+      "end": 89.85
     },
     {
       "lineId": "l10",
       "speakerId": "s2",
       "text": "Agreed, steeper glass is simple and safe. How are you feeling about our night-time heat-storage layer underneath the tray?",
-      "start": 0,
-      "end": 0
+      "start": 90.3,
+      "end": 97.1
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "Well, switching from heavy gravel beds to sealed copper tubes of paraffin wax solved the portability problem, and none of the tubes leaked a drop.",
-      "start": 0,
-      "end": 0
+      "start": 97.55,
+      "end": 104.73
     },
     {
       "lineId": "l12",
       "speakerId": "s1",
       "text": "What still bothers me is thermal lag: adding extra heat storage gives us an hour of dusk output, yet it noticeably delays how quickly the brine warms up every morning.",
-      "start": 0,
-      "end": 0,
+      "start": 104.98,
+      "end": 113.7,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l13",
       "speakerId": "s2",
       "text": "Good observation, we should quantify that trade-off in the report. Next, for our village deployment section, which design features are genuinely essential if remote coastal communities are going to adopt this unit?",
-      "start": 0,
-      "end": 0
+      "start": 114.5,
+      "end": 126.51
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "Definitely skip motorized dual-axis sun-trackers: sea air corrodes small gears within months. And a smartphone alert app for brine flushing is pointless where cellular coverage is patchy.",
-      "start": 0,
-      "end": 0
+      "start": 126.96,
+      "end": 137.78
     },
     {
       "lineId": "l15",
       "speakerId": "s2",
       "text": "Nor do we need built-in ultraviolet sterilising lamps, because solar distillation already removes bacteria and salts. One thing we absolutely must preserve is using standard gaskets and hoses that villagers can buy at any ordinary hardware shop.",
-      "start": 0,
-      "end": 0
+      "start": 138.23,
+      "end": 152.46
     },
     {
       "lineId": "l16",
       "speakerId": "s1",
       "text": "Yes, locally sourced spare seals keep maintenance realistic. And equally vital is our flat-pack modular frame.",
-      "start": 0,
-      "end": 0
+      "start": 152.91,
+      "end": 160.02
     },
     {
       "lineId": "l17",
       "speakerId": "s2",
       "text": "Right, when the frames stack flat, twenty units fit inside a single pickup truck or coastal fishing boat without shipping damage.",
-      "start": 0,
-      "end": 0,
+      "start": 160.47,
+      "end": 167.66,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l18",
       "speakerId": "s1",
       "text": "Great, spare hardware-shop seals and flat-stacking frames are our two core village priorities. Let us wrap up by recording our final testing verdict on four key prototype components. First, the distillate collection gutter.",
-      "start": 0,
-      "end": 0
+      "start": 168.46,
+      "end": 182.55
     },
     {
       "lineId": "l19",
       "speakerId": "s2",
       "text": "Structurally it caught every drop without leaking, so I almost ticked it as ready. Then our water chemistry check picked up trace aluminium leaching from the coated channel, so it has to be swapped for a food-grade stainless steel version.",
-      "start": 0,
-      "end": 0
+      "start": 183.0,
+      "end": 195.69
     },
     {
       "lineId": "l20",
       "speakerId": "s1",
       "text": "Good catch. Second is the brine flush outlet. We already fitted marine-grade stainless bolts there, so corrosion is zero.",
-      "start": 0,
-      "end": 0
+      "start": 196.14,
+      "end": 204.42
     },
     {
       "lineId": "l21",
       "speakerId": "s2",
       "text": "No rust at all, yet the narrow eight-millimetre outlet choked repeatedly on thick salt sludge during evening drains. We need to fit a noticeably wider drainage valve.",
-      "start": 0,
-      "end": 0
+      "start": 204.87,
+      "end": 214.38
     },
     {
       "lineId": "l22",
       "speakerId": "s1",
       "text": "Noted. Third, the sidewall timber casing. Obviously we would never shade a solar still from afternoon sun, though our thermal camera did spot a real weakness there.",
-      "start": 0,
-      "end": 0
+      "start": 214.83,
+      "end": 225.28
     },
     {
       "lineId": "l23",
       "speakerId": "s2",
       "text": "Yes, heat poured straight out through the thin plywood walls whenever sea breezes picked up. Lining those sides with thicker closed-cell foam insulation will boost internal vapour temperatures.",
-      "start": 0,
-      "end": 0
+      "start": 225.73,
+      "end": 236.03
     },
     {
       "lineId": "l24",
       "speakerId": "s1",
       "text": "Finally, the silicone perimeter gasket. It is already certified food-safe and held an airtight seal across twenty harsh heating and cooling cycles.",
-      "start": 0,
-      "end": 0
+      "start": 236.48,
+      "end": 245.32
     },
     {
       "lineId": "l25",
       "speakerId": "s2",
       "text": "Completely reliable, no redesign required at all. Let us update the engineering log and order those three replacement parts tomorrow.",
-      "start": 0,
-      "end": 0
+      "start": 245.77,
+      "end": 253.48
     }
   ],
   "audio": {
     "path": "audio/listening/p3_res_001.mp3",
-    "durationSec": 315,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 254.3,
+    "sha256": "a1a79d53714afcdcfac8684cb0dc7b01909287543d95ee0137c73244916d2a57",
+    "loudnessLUFS": -15.8
   },
   "questionGroups": [
     {
@@ -242,15 +242,15 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 18.41,
+            "end": 30.98
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 10.83,
+              "end": 17.96,
               "decoy": "acrylic cover seam / cloud cover",
               "explanationVi": "Elena kiểm tra vết nứt nắp nhựa (A) và mây che nắng (B), nhưng Sam bác bỏ cả hai và chỉ ra lớp muối kết tinh phủ kín vải thấm làm phản xạ ánh nắng (C)."
             }
@@ -270,15 +270,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 48.38,
+            "end": 61.3
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 48.38,
+              "end": 61.3,
               "decoy": "Neither — the paint held fine and we had to purchase the roll",
               "explanationVi": "Elena phủ nhận cả việc sơn bị bong (loại B) lẫn được tặng miễn phí (loại C); lý do chọn vải carbon là hiện tượng mao dẫn hút màng nước biển mỏng bốc hơi nhanh hơn (A)."
             }
@@ -298,15 +298,15 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 76.69,
+            "end": 89.85
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 70.41,
+              "end": 76.24,
               "decoy": "double the thickness / anti-fog detergent",
               "explanationVi": "Sam từng đề xuất kính dày gấp đôi (A) và dung dịch chống đọng sương (C) nhưng sau đó đồng ý bỏ cả hai để nâng độ dốc nắp ngưng tụ lên 30 độ (B)."
             }
@@ -326,15 +326,15 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 104.98,
+            "end": 113.7
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l11",
-              "start": 0,
-              "end": 0,
+              "start": 97.55,
+              "end": 104.73,
               "decoy": "gravel beds / none of the tubes leaked",
               "explanationVi": "Họ đã bỏ lớp sỏi nặng (loại B) và ống đồng sáp paraffin không rò rỉ (loại A); nhược điểm khiến Sam băn khoăn là độ trễ nhiệt làm nước biển nóng chậm vào buổi sáng (C)."
             }
@@ -386,15 +386,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 138.23,
+            "end": 152.46
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 126.96,
+              "end": 137.78,
               "decoy": "motorized dual-axis sun-trackers / smartphone alert app / ultraviolet sterilising lamps",
               "explanationVi": "Bộ xoay theo nắng (D) dễ gỉ, ứng dụng điện thoại (B) vô dụng khi sóng yếu và đèn UV (E) thừa thãi; yếu tố cần thiết đầu tiên là gioăng ống tiêu chuẩn dễ mua ở tiệm kim khí địa phương (A)."
             }
@@ -416,15 +416,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 160.47,
+            "end": 167.66
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l17",
-              "start": 0,
-              "end": 0,
+              "start": 160.47,
+              "end": 167.66,
               "decoy": "when the frames stack flat, twenty units fit inside a single pickup truck",
               "explanationVi": "Khung mô-đun xếp phẳng gọn để chở trên xe bán tải hoặc thuyền đánh cá khớp chính xác với lựa chọn C."
             }
@@ -478,15 +478,15 @@
           },
           "evidence": {
             "lineId": "l19",
-            "start": 0,
-            "end": 0
+            "start": 183.0,
+            "end": 195.69
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l19",
-              "start": 0,
-              "end": 0,
+              "start": 183.0,
+              "end": 195.69,
               "decoy": "almost ticked it as ready",
               "explanationVi": "Elena suýt đánh dấu đạt chuẩn không cần sửa (bẫy A), nhưng phát hiện vết nhôm thôi nhiễm nên phải thay bằng vật liệu an toàn thực phẩm (E)."
             }
@@ -506,15 +506,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 204.87,
+            "end": 214.38
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l20",
-              "start": 0,
-              "end": 0,
+              "start": 196.14,
+              "end": 204.42,
               "decoy": "marine-grade stainless bolts",
               "explanationVi": "Ốc chống ăn mòn (B) đã được lắp sẵn nên không gỉ; vấn đề là ống xả hẹp hay nghẹt bùn muối nên cần van xả rộng hơn (C)."
             }
@@ -534,15 +534,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 225.73,
+            "end": 236.03
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l22",
-              "start": 0,
-              "end": 0,
+              "start": 214.83,
+              "end": 225.28,
               "decoy": "shade a solar still from afternoon sun",
               "explanationVi": "Sam bác bỏ ý che nắng (D) và Elena kết luận vách gỗ mỏng thất thoát nhiệt nên cần lót xốp cách nhiệt dày hơn (F)."
             }
@@ -562,8 +562,8 @@
           },
           "evidence": {
             "lineId": "l25",
-            "start": 0,
-            "end": 0
+            "start": 245.77,
+            "end": 253.48
           },
           "traps": []
         }
@@ -576,7 +576,19 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-GB-RyanNeural, s2=en-US-JennyNeural",
+    "voices": {
+      "s1": "en-GB-RyanNeural",
+      "s2": "en-US-JennyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

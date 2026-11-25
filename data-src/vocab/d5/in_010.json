@@ -1,0 +1,1846 @@
+[
+ {
+  "id": "vocab:explicit",
+  "headword": "explicit",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "showing sexual or violent detail; clearly stated.",
+  "meaningVi": "nhạy cảm, lộ liễu; rõ ràng",
+  "existingExample": "Platforms must restrict explicit content for children.",
+  "mustContainOneOf": [
+   "explicit"
+  ]
+ },
+ {
+  "id": "vocab:media_regulation",
+  "headword": "media regulation",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "rules controlling media content.",
+  "meaningVi": "sự quản lý truyền thông",
+  "existingExample": "Media regulation must balance public safety and free speech.",
+  "mustContainOneOf": [
+   "media regulation",
+   "media-regulation"
+  ]
+ },
+ {
+  "id": "vocab:whistleblower",
+  "headword": "whistleblower",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a person who exposes wrongdoing within an organisation.",
+  "meaningVi": "người tố giác sai phạm",
+  "existingExample": "A whistleblower revealed the company's illegal practices.",
+  "mustContainOneOf": [
+   "whistleblowers",
+   "whistleblower"
+  ]
+ },
+ {
+  "id": "vocab:leak",
+  "headword": "leak",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to give secret information to the media.",
+  "meaningVi": "rò rỉ (thông tin)",
+  "existingExample": "Insiders occasionally leak confidential government documents to investigative journalists in the public interest.",
+  "mustContainOneOf": [
+   "leak",
+   "leaks",
+   "leaked",
+   "leaking"
+  ]
+ },
+ {
+  "id": "vocab:scoop",
+  "headword": "scoop",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "an important story published before rivals.",
+  "meaningVi": "tin độc quyền",
+  "existingExample": "The reporter got a scoop on the corruption scandal.",
+  "mustContainOneOf": [
+   "scoop",
+   "scoops"
+  ]
+ },
+ {
+  "id": "vocab:paparazzi",
+  "headword": "paparazzi",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "photographers who follow celebrities.",
+  "meaningVi": "thợ săn ảnh",
+  "existingExample": "Celebrities complain of being hounded by paparazzi.",
+  "mustContainOneOf": [
+   "paparazzi",
+   "paparazzis"
+  ]
+ },
+ {
+  "id": "vocab:intrusive",
+  "headword": "intrusive",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "interfering in an unwelcome way.",
+  "meaningVi": "xâm phạm (đời tư)",
+  "existingExample": "Intrusive journalism can damage people's lives.",
+  "mustContainOneOf": [
+   "intrusive"
+  ]
+ },
+ {
+  "id": "vocab:libel",
+  "headword": "libel",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "publishing false statements that damage someone's reputation.",
+  "meaningVi": "tội phỉ báng (bằng văn bản)",
+  "existingExample": "The actor sued the newspaper for libel.",
+  "mustContainOneOf": [
+   "libel",
+   "libels"
+  ]
+ },
+ {
+  "id": "vocab:defamation",
+  "headword": "defamation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "damaging someone's reputation with false statements.",
+  "meaningVi": "sự bôi nhọ danh dự",
+  "existingExample": "Defamation laws protect people from false accusations.",
+  "mustContainOneOf": [
+   "defamation",
+   "defamations"
+  ]
+ },
+ {
+  "id": "vocab:self_censorship",
+  "headword": "self-censorship",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "avoiding saying things for fear of the consequences.",
+  "meaningVi": "sự tự kiểm duyệt",
+  "existingExample": "Fear of legal action can lead to self-censorship.",
+  "mustContainOneOf": [
+   "self-censorship",
+   "self-censorships",
+   "self censorship"
+  ]
+ },
+ {
+  "id": "vocab:media_bias",
+  "headword": "media bias",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "unfair favouring of one side in reporting.",
+  "meaningVi": "sự thiên lệch của truyền thông",
+  "existingExample": "Viewers on both sides complain of media bias.",
+  "mustContainOneOf": [
+   "media bias",
+   "media-bias"
+  ]
+ },
+ {
+  "id": "vocab:spin",
+  "headword": "spin",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "presenting information in a deliberately favourable way.",
+  "meaningVi": "cách diễn giải có lợi (bẻ lái)",
+  "existingExample": "The government put a positive spin on the figures.",
+  "mustContainOneOf": [
+   "spin",
+   "spins"
+  ]
+ },
+ {
+  "id": "vocab:mouthpiece",
+  "headword": "mouthpiece",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a person or publication that expresses someone else's views.",
+  "meaningVi": "cơ quan phát ngôn (cho ai)",
+  "existingExample": "Critics described the newspaper as a mouthpiece for the government.",
+  "mustContainOneOf": [
+   "mouthpiece",
+   "mouthpieces"
+  ]
+ },
+ {
+  "id": "vocab:broadsheet",
+  "headword": "broadsheet",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a serious newspaper, traditionally printed on large pages.",
+  "meaningVi": "báo chính luận",
+  "existingExample": "Broadsheets focus on politics and economics.",
+  "mustContainOneOf": [
+   "broadsheet",
+   "broadsheets"
+  ]
+ },
+ {
+  "id": "vocab:circulation",
+  "headword": "circulation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the number of copies of a newspaper sold.",
+  "meaningVi": "số lượng phát hành",
+  "existingExample": "Newspaper circulation has fallen sharply.",
+  "mustContainOneOf": [
+   "circulation",
+   "circulations"
+  ]
+ },
+ {
+  "id": "vocab:paywall",
+  "headword": "paywall",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a system that requires payment to read online content.",
+  "meaningVi": "tường phí (phải trả tiền mới đọc)",
+  "existingExample": "Many newspapers have put their articles behind a paywall.",
+  "mustContainOneOf": [
+   "paywall",
+   "paywalls"
+  ]
+ },
+ {
+  "id": "vocab:ad_revenue",
+  "headword": "ad revenue",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "money earned from advertising.",
+  "meaningVi": "doanh thu quảng cáo",
+  "existingExample": "Falling ad revenue has forced newspapers to cut staff.",
+  "mustContainOneOf": [
+   "ad revenue",
+   "ad-revenue"
+  ]
+ },
+ {
+  "id": "vocab:attention_economy",
+  "headword": "attention economy",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a system in which companies compete for people's attention.",
+  "meaningVi": "nền kinh tế sự chú ý",
+  "existingExample": "Social media firms profit from the attention economy.",
+  "mustContainOneOf": [
+   "attention economy",
+   "attention-economy"
+  ]
+ },
+ {
+  "id": "vocab:trending",
+  "headword": "trending",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "currently popular online.",
+  "meaningVi": "đang thịnh hành",
+  "existingExample": "The story was trending worldwide within hours.",
+  "mustContainOneOf": [
+   "trending"
+  ]
+ },
+ {
+  "id": "vocab:engagement",
+  "headword": "engagement",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Active participation, involvement, or sustained interest in an activity, issue, or digital content.",
+  "meaningVi": "mức độ tương tác",
+  "existingExample": "Controversial posts tend to boost engagement.",
+  "mustContainOneOf": [
+   "engagement",
+   "engagements"
+  ]
+ },
+ {
+  "id": "vocab:online_presence",
+  "headword": "online presence",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "how visible a person or business is online.",
+  "meaningVi": "sự hiện diện trực tuyến",
+  "existingExample": "Small businesses need a strong online presence.",
+  "mustContainOneOf": [
+   "online presence",
+   "online-presence"
+  ]
+ },
+ {
+  "id": "vocab:cancel_culture",
+  "headword": "cancel culture",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "publicly rejecting someone over offensive behaviour or remarks.",
+  "meaningVi": "văn hóa tẩy chay",
+  "existingExample": "Cancel culture divides public opinion.",
+  "mustContainOneOf": [
+   "cancel culture",
+   "cancel-culture"
+  ]
+ },
+ {
+  "id": "vocab:public_figure",
+  "headword": "public figure",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a famous person known to the public.",
+  "meaningVi": "người của công chúng",
+  "existingExample": "Public figures face constant media attention.",
+  "mustContainOneOf": [
+   "public figures",
+   "public figure",
+   "public-figure"
+  ]
+ },
+ {
+  "id": "vocab:scrutiny",
+  "headword": "scrutiny",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "careful and critical examination.",
+  "meaningVi": "sự soi xét kỹ lưỡng",
+  "existingExample": "Politicians are under constant media scrutiny.",
+  "mustContainOneOf": [
+   "scrutiny",
+   "scrutinies"
+  ]
+ },
+ {
+  "id": "vocab:infotainment",
+  "headword": "infotainment",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "news presented in an entertaining way.",
+  "meaningVi": "tin tức giải trí hóa",
+  "existingExample": "Critics say infotainment trivialises serious news.",
+  "mustContainOneOf": [
+   "infotainment",
+   "infotainments"
+  ]
+ },
+ {
+  "id": "vocab:trivialise",
+  "headword": "trivialise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to make something seem less important than it is.",
+  "meaningVi": "tầm thường hóa",
+  "existingExample": "Celebrity gossip can trivialise serious news.",
+  "mustContainOneOf": [
+   "trivialise",
+   "trivialize",
+   "trivialises",
+   "trivialised",
+   "trivialising",
+   "trivialized"
+  ]
+ },
+ {
+  "id": "vocab:in_depth",
+  "headword": "in-depth",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "detailed and thorough.",
+  "meaningVi": "chuyên sâu",
+  "existingExample": "Podcasts often offer in-depth analysis of current events.",
+  "mustContainOneOf": [
+   "in-depth",
+   "in depth"
+  ]
+ },
+ {
+  "id": "vocab:round_the_clock",
+  "headword": "round-the-clock",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "happening all day and all night.",
+  "meaningVi": "suốt ngày đêm",
+  "existingExample": "News channels provide round-the-clock coverage.",
+  "mustContainOneOf": [
+   "round-the-clock",
+   "round the clock"
+  ]
+ },
+ {
+  "id": "vocab:breaking_news",
+  "headword": "breaking news",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "news about events that are happening now.",
+  "meaningVi": "tin nóng, tin khẩn",
+  "existingExample": "Breaking news alerts appear instantly on smartphones.",
+  "mustContainOneOf": [
+   "breaking news",
+   "breaking-news"
+  ]
+ },
+ {
+  "id": "vocab:current_affairs",
+  "headword": "current affairs",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "important political and social events.",
+  "meaningVi": "thời sự",
+  "existingExample": "Reading quality newspapers keeps you informed about current affairs.",
+  "mustContainOneOf": [
+   "current affairs",
+   "current-affairs"
+  ]
+ },
+ {
+  "id": "vocab:documentary",
+  "headword": "documentary",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a film or programme about real events.",
+  "meaningVi": "phim tài liệu",
+  "existingExample": "A well-researched investigative documentary can raise widespread public awareness of urgent environmental and social challenges.",
+  "mustContainOneOf": [
+   "documentary",
+   "documentaries"
+  ]
+ },
+ {
+  "id": "vocab:reality_tv",
+  "headword": "reality TV",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "programmes showing real people in unscripted situations.",
+  "meaningVi": "truyền hình thực tế",
+  "existingExample": "Reality TV shows attract huge audiences.",
+  "mustContainOneOf": [
+   "reality tv",
+   "reality-tv"
+  ]
+ },
+ {
+  "id": "vocab:escapism",
+  "headword": "escapism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "activity that helps people forget their problems.",
+  "meaningVi": "sự thoát ly thực tại",
+  "existingExample": "Films offer a form of escapism from daily stress.",
+  "mustContainOneOf": [
+   "escapism",
+   "escapisms"
+  ]
+ },
+ {
+  "id": "vocab:impressionable",
+  "headword": "impressionable",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "easily influenced.",
+  "meaningVi": "dễ bị ảnh hưởng",
+  "existingExample": "Impressionable teenagers may copy dangerous trends.",
+  "mustContainOneOf": [
+   "impressionable"
+  ]
+ },
+ {
+  "id": "vocab:copycat",
+  "headword": "copycat",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "copying another person's actions, especially crimes.",
+  "meaningVi": "(hành vi) bắt chước",
+  "existingExample": "Detailed media coverage may encourage copycat crimes.",
+  "mustContainOneOf": [
+   "copycat"
+  ]
+ },
+ {
+  "id": "vocab:glamorise",
+  "headword": "glamorise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to make something bad seem attractive.",
+  "meaningVi": "tô vẽ hào nhoáng",
+  "existingExample": "Films that glamorise smoking can influence teenagers.",
+  "mustContainOneOf": [
+   "glamorise",
+   "glamorize",
+   "glamorises",
+   "glamorised",
+   "glamorising",
+   "glamorized"
+  ]
+ },
+ {
+  "id": "vocab:censor",
+  "headword": "censor",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to remove parts of content considered unacceptable.",
+  "meaningVi": "kiểm duyệt",
+  "existingExample": "The film was heavily censored before its release.",
+  "mustContainOneOf": [
+   "censor",
+   "censors",
+   "censored",
+   "censoring"
+  ]
+ },
+ {
+  "id": "vocab:airtime",
+  "headword": "airtime",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "time given to a subject on radio or television.",
+  "meaningVi": "thời lượng phát sóng",
+  "existingExample": "Smaller political parties struggle to get airtime.",
+  "mustContainOneOf": [
+   "airtime",
+   "airtimes"
+  ]
+ },
+ {
+  "id": "vocab:target_audience",
+  "headword": "target audience",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the group a product or message is aimed at.",
+  "meaningVi": "đối tượng mục tiêu",
+  "existingExample": "The campaign's target audience is teenagers.",
+  "mustContainOneOf": [
+   "target audience",
+   "target-audience"
+  ]
+ },
+ {
+  "id": "vocab:mass_media",
+  "headword": "mass media",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "media that reach large audiences, such as television and newspapers.",
+  "meaningVi": "truyền thông đại chúng",
+  "existingExample": "The mass media shapes public attitudes.",
+  "mustContainOneOf": [
+   "mass media",
+   "mass-media"
+  ]
+ },
+ {
+  "id": "vocab:podcast",
+  "headword": "podcast",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "an audio programme available online.",
+  "meaningVi": "chương trình podcast",
+  "existingExample": "Podcasts have become a popular source of news.",
+  "mustContainOneOf": [
+   "podcasts",
+   "podcast"
+  ]
+ },
+ {
+  "id": "vocab:misrepresent",
+  "headword": "misrepresent",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to describe something falsely.",
+  "meaningVi": "xuyên tạc",
+  "existingExample": "The article misrepresented the scientist's findings.",
+  "mustContainOneOf": [
+   "misrepresent",
+   "misrepresents",
+   "misrepresented",
+   "misrepresenting"
+  ]
+ },
+ {
+  "id": "vocab:sensationalise",
+  "headword": "sensationalise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to present a story in a way designed to shock.",
+  "meaningVi": "giật gân hóa",
+  "existingExample": "Some papers sensationalise crime to sell more copies.",
+  "mustContainOneOf": [
+   "sensationalise",
+   "sensationalize",
+   "sensationalises",
+   "sensationalised",
+   "sensationalising",
+   "sensationalized"
+  ]
+ },
+ {
+  "id": "vocab:credibility",
+  "headword": "credibility",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the quality of being trusted.",
+  "meaningVi": "sự đáng tin cậy",
+  "existingExample": "Publishing false stories damages a newspaper's credibility.",
+  "mustContainOneOf": [
+   "credibility",
+   "credibilities"
+  ]
+ },
+ {
+  "id": "vocab:news_cycle",
+  "headword": "news cycle",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the period during which stories are reported and replaced.",
+  "meaningVi": "chu kỳ tin tức",
+  "existingExample": "The 24-hour news cycle leaves little time for careful reporting.",
+  "mustContainOneOf": [
+   "news cycle",
+   "news-cycle"
+  ]
+ },
+ {
+  "id": "vocab:media_consumption",
+  "headword": "media consumption",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the amount and type of media people use.",
+  "meaningVi": "mức tiêu thụ truyền thông",
+  "existingExample": "Media consumption has shifted from television to smartphones.",
+  "mustContainOneOf": [
+   "media consumption",
+   "media-consumption"
+  ]
+ },
+ {
+  "id": "vocab:journalistic_ethics",
+  "headword": "journalistic ethics",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the moral principles journalists should follow.",
+  "meaningVi": "đạo đức báo chí",
+  "existingExample": "Paying sources can breach journalistic ethics.",
+  "mustContainOneOf": [
+   "journalistic ethics",
+   "jornalistic ethics",
+   "journalistic-ethics",
+   "jornalistic-ethics"
+  ]
+ },
+ {
+  "id": "vocab:public_service_broadcasting",
+  "headword": "public service broadcasting",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "broadcasting intended to inform and educate rather than make profit.",
+  "meaningVi": "phát thanh truyền hình phục vụ công chúng",
+  "existingExample": "Public service broadcasting provides educational programmes for children.",
+  "mustContainOneOf": [
+   "public service broadcasting",
+   "public-service-broadcasting"
+  ]
+ },
+ {
+  "id": "vocab:digital_media",
+  "headword": "digital media",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "content created and distributed in digital form.",
+  "meaningVi": "truyền thông số",
+  "existingExample": "Digital media has overtaken print as the main source of news.",
+  "mustContainOneOf": [
+   "digital media",
+   "digital-media"
+  ]
+ },
+ {
+  "id": "vocab:advertising_standards",
+  "headword": "advertising standards",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "rules that advertisements must follow.",
+  "meaningVi": "tiêu chuẩn quảng cáo",
+  "existingExample": "The advert was banned for breaching advertising standards.",
+  "mustContainOneOf": [
+   "advertising standards",
+   "advertising-standards"
+  ]
+ },
+ {
+  "id": "vocab:tabloid_journalism",
+  "headword": "tabloid journalism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "reporting focused on scandal and celebrities.",
+  "meaningVi": "báo chí lá cải",
+  "existingExample": "Tabloid journalism often prioritises scandal over substance.",
+  "mustContainOneOf": [
+   "tabloid journalism",
+   "tabloid jornalism",
+   "tabloid-journalism",
+   "tabloid-jornalism"
+  ]
+ },
+ {
+  "id": "vocab:monolith",
+  "headword": "monolith",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "something treated as a single, uniform whole without differences inside it.",
+  "meaningVi": "khối đồng nhất (coi mọi thứ như một)",
+  "existingExample": "Young people should not be treated as a monolith with identical needs.",
+  "mustContainOneOf": [
+   "monolith",
+   "monoliths"
+  ]
+ },
+ {
+  "id": "vocab:multifaceted",
+  "headword": "multifaceted",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "having many different aspects or features.",
+  "meaningVi": "nhiều mặt, đa diện",
+  "existingExample": "Obesity is a multifaceted problem with no single cause.",
+  "mustContainOneOf": [
+   "multifaceted"
+  ]
+ },
+ {
+  "id": "vocab:curb",
+  "headword": "curb",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to control or limit something, especially something harmful.",
+  "meaningVi": "kiềm chế, hạn chế",
+  "existingExample": "New rules aim to curb the use of phones in classrooms.",
+  "mustContainOneOf": [
+   "curb",
+   "curbs",
+   "curbed",
+   "curbing"
+  ]
+ },
+ {
+  "id": "vocab:crowd_out",
+  "headword": "crowd out",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to take the place of something by taking up the time or space it needs.",
+  "meaningVi": "chèn lấn, chiếm chỗ",
+  "existingExample": "Homework can crowd out time for sport and sleep.",
+  "mustContainOneOf": [
+   "crowd out",
+   "crowd-out"
+  ]
+ },
+ {
+  "id": "vocab:one_size_fits_all",
+  "headword": "one-size-fits-all",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "designed to suit everyone, without considering individual differences.",
+  "meaningVi": "một kiểu áp dụng cho tất cả",
+  "existingExample": "A one-size-fits-all approach to education ignores students' different needs.",
+  "mustContainOneOf": [
+   "one-size-fits-all",
+   "one size fits all"
+  ]
+ },
+ {
+  "id": "vocab:mediation",
+  "headword": "mediation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the way adults guide or shape how children use media.",
+  "meaningVi": "sự định hướng, can thiệp (của người lớn)",
+  "existingExample": "Active parental mediation helps children use the internet more safely.",
+  "mustContainOneOf": [
+   "mediation",
+   "mediations"
+  ]
+ },
+ {
+  "id": "vocab:autonomy",
+  "headword": "autonomy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the ability to make your own decisions without being controlled by others.",
+  "meaningVi": "quyền tự chủ",
+  "existingExample": "Giving teenagers some autonomy helps them become responsible adults.",
+  "mustContainOneOf": [
+   "autonomy",
+   "autonomies"
+  ]
+ },
+ {
+  "id": "vocab:diverge",
+  "headword": "diverge",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to move away from a previous path, idea or position.",
+  "meaningVi": "rẽ khác, tách khỏi",
+  "existingExample": "The new policy diverges sharply from earlier guidelines.",
+  "mustContainOneOf": [
+   "diverge",
+   "diverges",
+   "diverged",
+   "diverging"
+  ]
+ },
+ {
+  "id": "vocab:emulate",
+  "headword": "emulate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to copy someone's behaviour, often because you admire them.",
+  "meaningVi": "bắt chước, noi theo",
+  "existingExample": "Children tend to emulate the habits of their parents.",
+  "mustContainOneOf": [
+   "emulate",
+   "emulates",
+   "emulated",
+   "emulating"
+  ]
+ },
+ {
+  "id": "vocab:mounting",
+  "headword": "mounting",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "gradually increasing in amount or degree.",
+  "meaningVi": "ngày càng tăng",
+  "existingExample": "There is mounting evidence that sleep affects academic performance.",
+  "mustContainOneOf": [
+   "mounting"
+  ]
+ },
+ {
+  "id": "vocab:advertorial",
+  "headword": "advertorial",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A paid promotional piece designed to resemble an objective editorial article or independent journalistic report.",
+  "meaningVi": "bài quảng cáo ngụy trang dưới dạng bài báo tin tức",
+  "existingExample": "Readers often struggle to distinguish independent consumer reviews from a subtly labelled advertorial funded by a brand.",
+  "mustContainOneOf": [
+   "advertorial",
+   "advertorials"
+  ]
+ },
+ {
+  "id": "vocab:agenda_setting",
+  "headword": "agenda-setting",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The ability of news media to influence the prominence of public issues by deciding which topics receive sustained coverage.",
+  "meaningVi": "cơ chế định hướng nghị sự công chúng của truyền thông",
+  "existingExample": "Through selective headline placement, major broadcasters exercise considerable agenda-setting power during election campaigns.",
+  "mustContainOneOf": [
+   "agenda-setting",
+   "agenda-settings",
+   "agenda setting"
+  ]
+ },
+ {
+  "id": "vocab:astroturfing",
+  "headword": "astroturfing",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The deceptive practice of disguising a coordinated corporate or political campaign as spontaneous grassroots public support.",
+  "meaningVi": "chiến dịch tạo dư luận giả mạo phong trào quần chúng",
+  "existingExample": "Automated bot networks have made digital astroturfing far cheaper and harder for ordinary social media users to detect.",
+  "mustContainOneOf": [
+   "astroturfing",
+   "astroturfings"
+  ]
+ },
+ {
+  "id": "vocab:bipartisan",
+  "headword": "bipartisan",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Involving the agreement, cooperation, or balanced representation of two opposing political parties or viewpoints.",
+  "meaningVi": "lưỡng đảng, có sự đồng thuận từ hai phe đối lập",
+  "existingExample": "Independent public broadcasters strive to maintain bipartisan scrutiny so that audiences across the political spectrum trust them.",
+  "mustContainOneOf": [
+   "bipartisan"
+  ]
+ },
+ {
+  "id": "vocab:byline",
+  "headword": "byline",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A printed or digital line in a publication identifying the journalist or author responsible for writing an article.",
+  "meaningVi": "dòng ghi tên tác giả bài báo",
+  "existingExample": "Transparent editorial guidelines require a clear byline on investigative pieces so journalists remain accountable for their claims.",
+  "mustContainOneOf": [
+   "byline",
+   "bylines"
+  ]
+ },
+ {
+  "id": "vocab:calumny",
+  "headword": "calumny",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The making of false and malicious statements intended to damage an individual's or institution's public reputation.",
+  "meaningVi": "sự vu khống ác ý, bôi nhọ thanh danh",
+  "existingExample": "Strict defamation statutes exist to deter reckless calumny while still safeguarding legitimate public-interest reporting.",
+  "mustContainOneOf": [
+   "calumny",
+   "calumnies"
+  ]
+ },
+ {
+  "id": "vocab:chronicle",
+  "headword": "chronicle",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To record a series of factual events in an orderly, detailed, and chronological narrative.",
+  "meaningVi": "ghi chép, tường thuật chi tiết theo dòng thời gian",
+  "existingExample": "Long-form podcasts increasingly chronicle complex historical developments that twenty-four-hour news bulletins overlook.",
+  "mustContainOneOf": [
+   "chronicle",
+   "chronicles",
+   "chronicled",
+   "chronicling"
+  ]
+ },
+ {
+  "id": "vocab:conflate",
+  "headword": "conflate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To combine two distinct ideas, facts, or issues into one, often producing confusion or misleading public debate.",
+  "meaningVi": "đánh đồng, gộp lẫn hai khái niệm khác biệt",
+  "existingExample": "Sensationalist commentators frequently conflate correlation with causation when summarising preliminary scientific findings.",
+  "mustContainOneOf": [
+   "conflate",
+   "conflates",
+   "conflated",
+   "conflating"
+  ]
+ },
+ {
+  "id": "vocab:corroborate",
+  "headword": "corroborate",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To confirm or give independent support to a statement, report, or piece of evidence.",
+  "meaningVi": "xác nhận, củng cố tính xác thực của nguồn tin",
+  "existingExample": "Reputable newspapers refuse to publish leaked allegations unless at least two independent sources corroborate the account.",
+  "mustContainOneOf": [
+   "corroborate",
+   "corroborates",
+   "corroborated",
+   "corroborating"
+  ]
+ },
+ {
+  "id": "vocab:curation",
+  "headword": "curation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The deliberate selection, organisation, and presentation of information or media content for a specific audience.",
+  "meaningVi": "sự tuyển chọn, sắp xếp và biên tập nội dung",
+  "existingExample": "Algorithmic curation prioritises emotional engagement over factual accuracy, reshaping how citizens encounter daily news.",
+  "mustContainOneOf": [
+   "curation",
+   "curations"
+  ]
+ },
+ {
+  "id": "vocab:demagogue",
+  "headword": "demagogue",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A political speaker or media figure who gains support by appealing to popular desires and prejudices rather than rational argument.",
+  "meaningVi": "kẻ mị dân, người kích động cảm xúc đám đông",
+  "existingExample": "Unmoderated live-streaming platforms can amplify a charismatic demagogue whose inflammatory claims spread faster than fact-checks.",
+  "mustContainOneOf": [
+   "demagogue",
+   "demagogues"
+  ]
+ },
+ {
+  "id": "vocab:disseminate",
+  "headword": "disseminate",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To spread information, ideas, or knowledge widely across a large audience or multiple communication channels.",
+  "meaningVi": "phát tán, truyền bá thông tin rộng rãi",
+  "existingExample": "Social networking sites allow emergency agencies to disseminate life-saving warnings within seconds of a natural disaster.",
+  "mustContainOneOf": [
+   "disseminate",
+   "disseminates",
+   "disseminated",
+   "disseminating"
+  ]
+ },
+ {
+  "id": "vocab:editorialise",
+  "headword": "editorialise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To express personal opinions or bias within what is presented as a neutral news report.",
+  "meaningVi": "lồng ghép quan điểm chủ quan vào tin tức khách quan",
+  "existingExample": "Viewers increasingly abandon cable networks when anchors editorialise rather than present verified facts impartially.",
+  "mustContainOneOf": [
+   "editorialise",
+   "editorialize",
+   "editorialises",
+   "editorialised",
+   "editorialising",
+   "editorialized"
+  ]
+ },
+ {
+  "id": "vocab:endorsement",
+  "headword": "endorsement",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A public statement of approval or commercial promotion of a product, service, or candidate by a well-known figure.",
+  "meaningVi": "sự chứng thực, bảo chứng quảng bá của người nổi tiếng",
+  "existingExample": "Regulatory authorities now mandate clear disclosure whenever a social media influencer receives payment for an endorsement.",
+  "mustContainOneOf": [
+   "endorsement",
+   "endorsements"
+  ]
+ },
+ {
+  "id": "vocab:fabricate",
+  "headword": "fabricate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To invent false information, quotes, or visual evidence with the deliberate intention of deceiving an audience.",
+  "meaningVi": "bịa đặt, dựng chuyện giả mạo",
+  "existingExample": "Sophisticated audio synthesis tools enable malicious actors to fabricate convincing speeches attributed to public officials.",
+  "mustContainOneOf": [
+   "fabricate",
+   "fabricates",
+   "fabricated",
+   "fabricating"
+  ]
+ },
+ {
+  "id": "vocab:fourth_estate",
+  "headword": "fourth estate",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The press and news media viewed as an independent societal pillar that scrutinises government and corporate power.",
+  "meaningVi": "đệ tứ quyền (báo chí với vai trò giám sát quyền lực)",
+  "existingExample": "Declining print subscriptions have weakened local newsrooms, raising alarms about the erosion of the fourth estate.",
+  "mustContainOneOf": [
+   "fourth estate",
+   "fourth-estate"
+  ]
+ },
+ {
+  "id": "vocab:framing",
+  "headword": "framing",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The way news outlets select language, imagery, and context to shape how audiences interpret an issue or event.",
+  "meaningVi": "cách đóng khung vấn đề, định hướng góc nhìn dư luận",
+  "existingExample": "Media framing of migration as either an economic asset or a security burden profoundly shapes voter attitudes.",
+  "mustContainOneOf": [
+   "framing",
+   "framings"
+  ]
+ },
+ {
+  "id": "vocab:hyperbole",
+  "headword": "hyperbole",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Extravagant exaggeration in language or advertising claims not meant to be taken literally.",
+  "meaningVi": "lối nói cường điệu, phóng đại quá mức",
+  "existingExample": "Experienced consumers learn to look past marketing hyperbole and inspect independent durability tests before purchasing.",
+  "mustContainOneOf": [
+   "hyperbole",
+   "hyperboles"
+  ]
+ },
+ {
+  "id": "vocab:incendiary",
+  "headword": "incendiary",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Designed or likely to provoke intense anger, public outrage, or social conflict.",
+  "meaningVi": "mang tính kích động, dễ châm ngòi xung đột dư luận",
+  "existingExample": "Recommendation engines often reward incendiary commentary because outrage generates far more shares than nuanced analysis.",
+  "mustContainOneOf": [
+   "incendiary"
+  ]
+ },
+ {
+  "id": "vocab:inundate",
+  "headword": "inundate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To overwhelm an audience or channel with an excessive volume of messages, alerts, or media content.",
+  "meaningVi": "làm ngập lụt, tràn ngập thông tin quá tải",
+  "existingExample": "Constant smartphone notifications inundate commuters with trivial updates, eroding their capacity for sustained reading.",
+  "mustContainOneOf": [
+   "inundate",
+   "inundates",
+   "inundated",
+   "inundating"
+  ]
+ },
+ {
+  "id": "vocab:jargon",
+  "headword": "jargon",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Specialised technical vocabulary used by a particular profession that is often obscure to the general public.",
+  "meaningVi": "thuật ngữ chuyên ngành khó hiểu với đại chúng",
+  "existingExample": "Science journalists perform a vital public service by translating dense academic jargon into accessible everyday prose.",
+  "mustContainOneOf": [
+   "jargon",
+   "jargons"
+  ]
+ },
+ {
+  "id": "vocab:muckraking",
+  "headword": "muckraking",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The journalistic practice of searching out and publicly exposing corruption, misconduct, or scandal among powerful figures.",
+  "meaningVi": "báo chí điều tra phanh phui bê bối và tham nhũng",
+  "existingExample": "Fearless muckraking in the early twentieth century prompted landmark consumer protection and labour safety legislation.",
+  "mustContainOneOf": [
+   "muckraking",
+   "muckrakings"
+  ]
+ },
+ {
+  "id": "vocab:narrative",
+  "headword": "narrative",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A structured account or overarching storyline through which media outlets interpret events and convey meaning.",
+  "meaningVi": "mạch tường thuật, câu chuyện dẫn dắt dư luận",
+  "existingExample": "Competing broadcasters frequently construct starkly different narratives around the exact same set of economic statistics.",
+  "mustContainOneOf": [
+   "narrative",
+   "narratives"
+  ]
+ },
+ {
+  "id": "vocab:newsroom",
+  "headword": "newsroom",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The central office or editorial hub of a newspaper, broadcaster, or digital outlet where news is gathered and edited.",
+  "meaningVi": "tòa soạn báo, phòng biên tập tin tức",
+  "existingExample": "Severe budget cuts have shrunk regional newsrooms, leaving many municipal council meetings entirely uncovered.",
+  "mustContainOneOf": [
+   "newsroom",
+   "newsrooms"
+  ]
+ },
+ {
+  "id": "vocab:obfuscate",
+  "headword": "obfuscate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "To deliberately make facts, policies, or statements unclear, convoluted, or difficult to comprehend.",
+  "meaningVi": "làm rối rắm, cố tình gây mơ hồ che giấu sự thật",
+  "existingExample": "Corporate spokespeople occasionally deploy vague euphemisms to obfuscate the scale of customer data leaks.",
+  "mustContainOneOf": [
+   "obfuscate",
+   "obfuscates",
+   "obfuscated",
+   "obfuscating"
+  ]
+ },
+ {
+  "id": "vocab:op_ed",
+  "headword": "op-ed",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A published opinion article written by an external commentator or columnist rather than the newspaper's editorial board.",
+  "meaningVi": "bài bình luận chuyên mục quan điểm cá nhân",
+  "existingExample": "Publishing a thoughtful op-ed in a national broadsheet remains an effective way for scholars to influence policy debates.",
+  "mustContainOneOf": [
+   "op-ed",
+   "op-eds",
+   "op ed"
+  ]
+ },
+ {
+  "id": "vocab:outcry",
+  "headword": "outcry",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A strong, widespread expression of public anger, protest, or disapproval triggered by a controversial event or decision.",
+  "meaningVi": "làn sóng phản đối dữ dội từ công chúng",
+  "existingExample": "The misleading advertising campaign provoked an immediate public outcry, forcing the company to withdraw its commercials.",
+  "mustContainOneOf": [
+   "outcry",
+   "outcries"
+  ]
+ },
+ {
+  "id": "vocab:polemic",
+  "headword": "polemic",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A forceful verbal or written attack challenging a controversial belief, ideology, or public policy.",
+  "meaningVi": "bài luận chiến gay gắt, lời công kích mạnh mẽ",
+  "existingExample": "What began as a scholarly review quickly degenerated into a bitter polemic that alienated moderate readers.",
+  "mustContainOneOf": [
+   "polemic",
+   "polemics"
+  ]
+ },
+ {
+  "id": "vocab:press_release",
+  "headword": "press release",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "An official written statement issued by an organisation to news media to announce an event, policy, or response.",
+  "meaningVi": "thông cáo báo chí chính thức",
+  "existingExample": "Time-pressed journalists are sometimes criticised for republishing corporate press releases without conducting independent verification.",
+  "mustContainOneOf": [
+   "press release",
+   "press-release"
+  ]
+ },
+ {
+  "id": "vocab:pundit",
+  "headword": "pundit",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "An expert or media commentator who frequently offers analysis and opinions on political, economic, or cultural affairs.",
+  "meaningVi": "nhà bình luận, chuyên gia phân tích trên truyền thông",
+  "existingExample": "Evening news panels often rely on the same narrow circle of television pundits rather than consulting frontline practitioners.",
+  "mustContainOneOf": [
+   "pundit",
+   "pundits"
+  ]
+ },
+ {
+  "id": "vocab:retraction",
+  "headword": "retraction",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A formal public withdrawal of a previously published statement, claim, or article found to be inaccurate.",
+  "meaningVi": "thông báo đính chính và rút lại bài viết sai lệch",
+  "existingExample": "Even when a news outlet prints a prominent retraction, the original falsehood often continues circulating on social platforms.",
+  "mustContainOneOf": [
+   "retraction",
+   "retractions"
+  ]
+ },
+ {
+  "id": "vocab:rhetoric",
+  "headword": "rhetoric",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Persuasive or impressive language used in speaking or writing, sometimes criticised for lacking substantive evidence.",
+  "meaningVi": "ngôn từ hùng biện, nghệ thuật diễn đạt thuyết phục",
+  "existingExample": "Media literacy workshops train teenagers to separate persuasive political rhetoric from verifiable budgetary commitments.",
+  "mustContainOneOf": [
+   "rhetoric",
+   "rhetorics"
+  ]
+ },
+ {
+  "id": "vocab:slander",
+  "headword": "slander",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The utterance of a false spoken statement that unjustly damages an individual's personal or professional reputation.",
+  "meaningVi": "hành vi vu khống bằng lời nói",
+  "existingExample": "Live radio hosts must exercise rigorous editorial caution to prevent guest callers from committing actionable slander on air.",
+  "mustContainOneOf": [
+   "slander",
+   "slanders"
+  ]
+ },
+ {
+  "id": "vocab:soundbite",
+  "headword": "soundbite",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A brief, memorable extract from a speech or interview chosen specifically for broadcast news or social media clips.",
+  "meaningVi": "câu trích dẫn ngắn gọn gây chú ý trên sóng truyền hình",
+  "existingExample": "Complex policy debates are frequently trivialised when television coverage reduces nuanced proposals to ten-second soundbites.",
+  "mustContainOneOf": [
+   "soundbite",
+   "soundbites"
+  ]
+ },
+ {
+  "id": "vocab:spin_doctor",
+  "headword": "spin doctor",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "A public relations specialist employed to present events or policies in the most favourable light to the media.",
+  "meaningVi": "chuyên gia định hướng và xoay chuyển dư luận",
+  "existingExample": "Following the disappointing audit, seasoned spin doctors worked overnight to reframe the figures as signs of long-term transition.",
+  "mustContainOneOf": [
+   "spin doctor",
+   "spin-doctor"
+  ]
+ },
+ {
+  "id": "vocab:subliminal",
+  "headword": "subliminal",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Affecting an audience's mind or purchasing behaviour below the threshold of conscious awareness.",
+  "meaningVi": "tác động vào tiềm thức dưới ngưỡng nhận biết",
+  "existingExample": "Broadcasting regulators strictly prohibit subliminal messaging in commercial advertisements aimed at impressionable viewers.",
+  "mustContainOneOf": [
+   "subliminal"
+  ]
+ },
+ {
+  "id": "vocab:syndication",
+  "headword": "syndication",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "The licensing and distribution of articles, columns, or television programmes for simultaneous publication across multiple outlets.",
+  "meaningVi": "sự phân phối bản quyền nội dung cho nhiều kênh phát sóng",
+  "existingExample": "Global syndication enables small regional newspapers to feature international reporting they could never afford to produce alone.",
+  "mustContainOneOf": [
+   "syndication",
+   "syndications"
+  ]
+ },
+ {
+  "id": "vocab:watchdog_journalism",
+  "headword": "watchdog journalism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Reporting that monitors governments, corporations, and public institutions to uncover wrongdoing and ensure accountability.",
+  "meaningVi": "báo chí giám sát quyền lực công",
+  "existingExample": "Sustained investment in watchdog journalism is vital to deter embezzlement in large-scale municipal infrastructure contracts.",
+  "mustContainOneOf": [
+   "watchdog journalism",
+   "watchdog jornalism",
+   "watchdog-journalism",
+   "watchdog-jornalism"
+  ]
+ },
+ {
+  "id": "vocab:yellow_journalism",
+  "headword": "yellow journalism",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "Reporting characterised by crude exaggeration, lurid headlines, and scant factual research intended solely to boost circulation.",
+  "meaningVi": "báo chí lá cải giật gân câu khách",
+  "existingExample": "Critics contend that modern click-driven media outlets have revived the worst excesses of nineteenth-century yellow journalism.",
+  "mustContainOneOf": [
+   "yellow journalism",
+   "yellow jornalism",
+   "yellow-journalism",
+   "yellow-jornalism"
+  ]
+ }
+]

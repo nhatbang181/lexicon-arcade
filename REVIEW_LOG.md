@@ -1,0 +1,11 @@
+﻿
+## 2026-11-25 — rv-data-d5d8 (Claude Sonnet 5.5): kiểm chéo D5 + D8 (Gemini sinh trong T3-B)
+
+**D5 (vocab examples[1])** — 52 lô, 2.069 câu: dry-run cơ học 2.069 pass / 0 reject (độ dài 12–28, có dạng đích, không n-gram khuôn/cụm cấm, không trùng). Áp bằng `72_d5_apply.mjs` (review.date 2026-11-25) → 2.069 applied, 797 đuôi examples[0] cắt. Soi tay 99 câu (mỗi 21 câu, trải toàn 52 lô; vd academic_performance, truancy, emissions_trading, comorbidity, filial_piety, gentrification, entropy, pave_the_way, hamper, subtle…): ngữ pháp/nghĩa/tự nhiên đạt, không meta IELTS/Cambridge, không lỗi mẫu → 0 fix, 0 reject.
+
+**D8 (collocations l1Traps)** — 25 lô, 747 item: viết `scripts/data/73_d8_apply.mjs` (kiểm cơ học 100%: 1–2 bẫy, wrong ≠ cụm đúng/biến thể hợp lệ, whyVi tiếng Việt ≤30 từ, không meta). Đọc tay toàn bộ 738 dòng "wrong" (+ ~60 whyVi/ví dụ đầy đủ). Kết quả: **732 applied**, 15 giữ bẫy cũ (9 whyVi có chữ "IELTS/Band" → meta; 6 mất hết bẫy hợp lệ sau lọc: impact_assess_the_impact_of, solution_a_viable_solution_to, role_a_vital_role_in, education_invest_in_education, prevention_invest_in_prevention, consensus_reach_a_consensus_on). 19 bẫy lẻ bị bỏ vì thực ra là tiếng Anh đúng/vô nghĩa (vd "judge the impact of", "food safety", "invest into education", "get a consensus about", "scare reckless behaviour", "implement reality solutions", "finance literacy", "the capacity of V-ing"). Danh sách tại `DROP_WRONG`. Lỗi mẫu: Gemini hay chế bẫy "nhái" từ lớp cụm cuối (idx 500+) kiểu "reduce the risky of", "fast up innovation" — còn dùng được vì vẫn sai thật; chưa dịch whyVi lại.
+
+**Đồng bộ**: `85_build_words_core.mjs`, `60_build_manifest.mjs` đã chạy; `validate:data` PASS (exit 0); `validate:data:release` chỉ còn INV-S4=841 (speaking M5).
+
+## 2026-11-25 — rv-data-d5d8: kiểm chéo D10 (paraphrase decoys)
+231 lô sinh (8 file); `74_d10_apply.mjs`: 213 applied, 18 reject ("no decoy shares lemma", giữ bản cũ). sharesLemma toàn bộ 302/320 = 94,4%. Soi tay 33 mục (cách 7, trải 8 lô; vd bringing up children, expand rapidly, pollute coastal waters, shelved following public outcry, survived undamaged…): decoy tự nhiên, trùng từ khoá nhưng sai nghĩa, không phải paraphrase đúng (không lộ đáp án), whyVi rõ → 0 fix. Manifest 100/100; `validate:data` PASS; release chỉ còn INV-S4=841.

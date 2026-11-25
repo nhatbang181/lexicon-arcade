@@ -1,0 +1,1852 @@
+[
+ {
+  "id": "vocab:disposable_income",
+  "headword": "disposable income",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The net money available to a household for discretionary spending or saving after income taxes are deducted.",
+  "meaningVi": "thu nhập khả dụng còn lại sau khi trừ thuế",
+  "existingExample": "Escalating mortgage repayments and energy bills have squeezed urban families' disposable income to its lowest level in decades.",
+  "mustContainOneOf": [
+   "disposable income",
+   "disposable-income"
+  ]
+ },
+ {
+  "id": "vocab:regressive_taxation",
+  "headword": "regressive taxation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "A tax structure that takes a larger percentage of income from lower-earning households than from affluent ones.",
+  "meaningVi": "thuế lũy thoái gây gánh nặng tỷ lệ cao hơn cho người nghèo",
+  "existingExample": "Flat value-added levies on basic groceries represent a form of regressive taxation that disproportionately burdens low-wage families.",
+  "mustContainOneOf": [
+   "regressive taxation",
+   "regressive-taxation"
+  ]
+ },
+ {
+  "id": "vocab:capital_flight",
+  "headword": "capital flight",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The rapid large-scale outflow of financial assets and investments from a country due to political or macroeconomic instability.",
+  "meaningVi": "hiện tượng tháo chạy dòng vốn ồ ạt ra khỏi nền kinh tế",
+  "existingExample": "Abrupt policy reversals and currency volatility can spark sudden capital flight, starving domestic industries of essential credit.",
+  "mustContainOneOf": [
+   "capital flight",
+   "capital-flight"
+  ]
+ },
+ {
+  "id": "vocab:fiduciary",
+  "headword": "fiduciary",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Relating to a strict legal and ethical obligation to act solely in the best financial interest of beneficiaries.",
+  "meaningVi": "thuộc nghĩa vụ ủy thác quản lý tài sản trung thực",
+  "existingExample": "Pension fund trustees have a binding fiduciary duty to weigh long-term climate risks alongside quarterly portfolio yields.",
+  "mustContainOneOf": [
+   "fiduciary"
+  ]
+ },
+ {
+  "id": "vocab:microfinance",
+  "headword": "microfinance",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Small-scale banking, credit, and insurance services tailored for low-income entrepreneurs lacking conventional collateral.",
+  "meaningVi": "tài chính vi mô cung cấp vốn vay nhỏ cho hộ gia",
+  "existingExample": "Well-regulated rural microfinance cooperatives have empowered millions of women artisans to expand independent workshops.",
+  "mustContainOneOf": [
+   "microfinance",
+   "microfinances"
+  ]
+ },
+ {
+  "id": "vocab:macroeconomic",
+  "headword": "macroeconomic",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Relating to aggregate economic indicators such as national output, employment trends, trade balances, and price stability.",
+  "meaningVi": "thuộc về kinh tế vĩ mô trên quy mô toàn nền kinh tế",
+  "existingExample": "Credible macroeconomic stability attracts patient long-term infrastructure investors far more effectively than temporary tax holidays.",
+  "mustContainOneOf": [
+   "macroeconomic"
+  ]
+ },
+ {
+  "id": "vocab:cyclical_unemployment",
+  "headword": "cyclical unemployment",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Joblessness resulting directly from temporary downturns in the business cycle when aggregate consumer demand contracts.",
+  "meaningVi": "thất nghiệp chu kỳ khi tổng cầu nền kinh tế suy giảm",
+  "existingExample": "Counter-cyclical public infrastructure works are specifically engineered to absorb workers displaced by cyclical unemployment.",
+  "mustContainOneOf": [
+   "cyclical unemployment",
+   "cyclical-unemployment"
+  ]
+ },
+ {
+  "id": "vocab:structural_unemployment",
+  "headword": "structural unemployment",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Persistent joblessness arising from fundamental shifts in industry composition or automation that leave workers' skills mismatched.",
+  "meaningVi": "thất nghiệp cơ cấu do lệch pha kỹ năng dài hạn",
+  "existingExample": "Unlike temporary downturns, deep structural unemployment in post-industrial towns requires sustained vocational retraining investments.",
+  "mustContainOneOf": [
+   "structural unemployment",
+   "structural-unemployment"
+  ]
+ },
+ {
+  "id": "vocab:informal_economy",
+  "headword": "informal economy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "Economic activity, street commerce, and unregistered employment operating outside formal taxation and labour protections.",
+  "meaningVi": "khu vực kinh tế phi chính thức ngoài hệ thống đăng ký",
+  "existingExample": "Simplifying digital business registration helps bring workers out of the precarious informal economy into contributory pension schemes.",
+  "mustContainOneOf": [
+   "informal economy",
+   "informal-economy"
+  ]
+ },
+ {
+  "id": "vocab:rent_seeking",
+  "headword": "rent-seeking",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The practice of extracting unearned economic wealth through lobbying, monopolies, or regulatory capture without creating new value.",
+  "meaningVi": "hành vi trục lợi đặc quyền mà không tạo thêm giá trị",
+  "existingExample": "Transparent public procurement portals curtail corporate rent-seeking and redirect capital toward genuinely productive innovation.",
+  "mustContainOneOf": [
+   "rent-seeking",
+   "rent-seekings",
+   "rent seeking"
+  ]
+ },
+ {
+  "id": "vocab:price_elasticity",
+  "headword": "price elasticity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A measure of how sensitively consumer demand for a good or service responds to a percentage change in its price.",
+  "meaningVi": "độ co giãn của cầu theo biến động giá cả hàng hóa",
+  "existingExample": "Because essential prescription drugs exhibit very low price elasticity, policymakers often cap charges to protect vulnerable households.",
+  "mustContainOneOf": [
+   "price elasticity",
+   "price-elasticity"
+  ]
+ },
+ {
+  "id": "vocab:solvency",
+  "headword": "solvency",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The long-term financial soundness of an institution, reflecting its capacity to meet all future debt obligations.",
+  "meaningVi": "năng lực thanh toán bền vững các nghĩa vụ nợ dài hạn",
+  "existingExample": "Annual banking stress tests verify capital buffers to guarantee institutional solvency even under severe housing-market shocks.",
+  "mustContainOneOf": [
+   "solvency",
+   "solvencies"
+  ]
+ },
+ {
+  "id": "vocab:creditworthiness",
+  "headword": "creditworthiness",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "An objective assessment of a borrower's reliability and financial capacity to repay loans punctually.",
+  "meaningVi": "mức độ tín nhiệm tài chính và khả năng hoàn trả nợ",
+  "existingExample": "Alternative payment histories from utility bills allow young entrepreneurs without collateral to prove their creditworthiness fairly.",
+  "mustContainOneOf": [
+   "creditworthiness",
+   "creditworthinesses"
+  ]
+ },
+ {
+  "id": "vocab:underwrite",
+  "headword": "underwrite",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "To assume financial risk, guarantee funding, or insure an enterprise or public bond issuance against potential loss.",
+  "meaningVi": "bảo lãnh tài chính",
+  "existingExample": "Development banks frequently underwrite early-stage offshore wind projects to crowd in cautious private institutional investors.",
+  "mustContainOneOf": [
+   "underwrite",
+   "underwrites",
+   "underwrited",
+   "underwriting"
+  ]
+ },
+ {
+  "id": "vocab:amortise",
+  "headword": "amortise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "To gradually write off the initial cost of an asset or repay a loan principal through scheduled instalments over time.",
+  "meaningVi": "phân bổ khấu hao dần chi phí hoặc thanh toán nợ gốc",
+  "existingExample": "Long-term municipal bonds enable cities to amortise high-speed metro construction expenses fairly across multiple beneficiary generations.",
+  "mustContainOneOf": [
+   "amortise",
+   "amortize",
+   "amortises",
+   "amortised",
+   "amortising",
+   "amortized"
+  ]
+ },
+ {
+  "id": "vocab:divest",
+  "headword": "divest",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "To sell off subsidiary business holdings or withdraw financial investments for strategic, ethical, or risk-management reasons.",
+  "meaningVi": "thoái vốn",
+  "existingExample": "Responding to student petitions, several prominent European universities pledged to divest their endowment portfolios from coal producers.",
+  "mustContainOneOf": [
+   "divest",
+   "divests",
+   "divested",
+   "divesting"
+  ]
+ },
+ {
+  "id": "vocab:juvenile_delinquency",
+  "headword": "juvenile delinquency",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "crime committed by young people.",
+  "meaningVi": "phạm pháp ở trẻ vị thành niên",
+  "existingExample": "Youth clubs can play a role in reducing juvenile delinquency.",
+  "mustContainOneOf": [
+   "juvenile delinquency",
+   "juvenile-delinquency"
+  ]
+ },
+ {
+  "id": "vocab:deterrent",
+  "headword": "deterrent",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "something that makes people decide not to do something.",
+  "meaningVi": "biện pháp răn đe",
+  "existingExample": "Many people argue that long prison sentences act as a deterrent to serious crime.",
+  "mustContainOneOf": [
+   "deterrent",
+   "deterrents"
+  ]
+ },
+ {
+  "id": "vocab:reoffend",
+  "headword": "reoffend",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "crime",
+   "globalisation"
+  ],
+  "definitionEn": "to commit a crime again.",
+  "meaningVi": "tái phạm",
+  "existingExample": "Prisoners who learn a trade are less likely to reoffend.",
+  "mustContainOneOf": [
+   "reoffend",
+   "reoffends",
+   "reoffended",
+   "reoffending"
+  ]
+ },
+ {
+  "id": "vocab:law_abiding",
+  "headword": "law-abiding",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "crime",
+   "government"
+  ],
+  "definitionEn": "obeying the law.",
+  "meaningVi": "tuân thủ pháp luật",
+  "existingExample": "Most law-abiding citizens support tougher penalties for violent crime.",
+  "mustContainOneOf": [
+   "law-abiding",
+   "law abiding"
+  ]
+ },
+ {
+  "id": "vocab:capital_punishment",
+  "headword": "capital punishment",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "punishment by death.",
+  "meaningVi": "án tử hình",
+  "existingExample": "Opponents of capital punishment argue that the justice system can make mistakes.",
+  "mustContainOneOf": [
+   "capital punishment",
+   "capital-punishment"
+  ]
+ },
+ {
+  "id": "vocab:community_service",
+  "headword": "community service",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "crime",
+   "work"
+  ],
+  "definitionEn": "unpaid work for the community, given as a punishment.",
+  "meaningVi": "lao động công ích",
+  "existingExample": "Community service may be more useful than prison for minor offenders.",
+  "mustContainOneOf": [
+   "community service",
+   "community-service"
+  ]
+ },
+ {
+  "id": "vocab:offender",
+  "headword": "offender",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "crime",
+   "urban"
+  ],
+  "definitionEn": "a person who has committed a crime.",
+  "meaningVi": "người phạm tội",
+  "existingExample": "Repeat offenders commit a large share of crimes in many cities.",
+  "mustContainOneOf": [
+   "offenders",
+   "offender"
+  ]
+ },
+ {
+  "id": "vocab:social_cohesion",
+  "headword": "social cohesion",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "the bonds that bring people in a society together.",
+  "meaningVi": "sự gắn kết xã hội",
+  "existingExample": "Community festivals can strengthen social cohesion in diverse neighbourhoods when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "social cohesion",
+   "social-cohesion"
+  ]
+ },
+ {
+  "id": "vocab:discrimination",
+  "headword": "discrimination",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "work"
+  ],
+  "definitionEn": "treating a person or group unfairly because of who they are.",
+  "meaningVi": "sự phân biệt đối xử",
+  "existingExample": "Laws alone cannot eliminate discrimination in the workplace in today's competitive and rapidly shifting labour market.",
+  "mustContainOneOf": [
+   "discrimination",
+   "discriminations"
+  ]
+ },
+ {
+  "id": "vocab:marginalised",
+  "headword": "marginalised",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "treated as unimportant and without power.",
+  "meaningVi": "bị gạt ra lề xã hội",
+  "existingExample": "Public libraries offer vital services to marginalised communities when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "marginalised",
+   "marginalized"
+  ]
+ },
+ {
+  "id": "vocab:gender_equality",
+  "headword": "gender equality",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "the state in which men and women have the same rights and opportunities.",
+  "meaningVi": "bình đẳng giới",
+  "existingExample": "Equal pay is a key step towards achieving gender equality.",
+  "mustContainOneOf": [
+   "gender equality",
+   "gender-equality"
+  ]
+ },
+ {
+  "id": "vocab:homelessness",
+  "headword": "homelessness",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "the state of having no home.",
+  "meaningVi": "tình trạng vô gia cư",
+  "existingExample": "Rising rents have contributed to an increase in homelessness when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "homelessness",
+   "homelessnesses"
+  ]
+ },
+ {
+  "id": "vocab:law_enforcement",
+  "headword": "law enforcement",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "crime",
+   "government"
+  ],
+  "definitionEn": "the police and other people who make sure laws are obeyed.",
+  "meaningVi": "thực thi pháp luật",
+  "existingExample": "Law enforcement agencies are using new technology to track criminals.",
+  "mustContainOneOf": [
+   "law enforcement",
+   "law-enforcement"
+  ]
+ },
+ {
+  "id": "vocab:petty_crime",
+  "headword": "petty crime",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "minor crime such as shoplifting or pickpocketing.",
+  "meaningVi": "tội phạm vặt",
+  "existingExample": "Better street lighting has reduced petty crime in the town centre.",
+  "mustContainOneOf": [
+   "petty crime",
+   "petty-crime"
+  ]
+ },
+ {
+  "id": "vocab:sentence",
+  "headword": "sentence",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "the punishment given by a court; to give someone a punishment.",
+  "meaningVi": "bản án; tuyên án",
+  "existingExample": "He was sentenced to five years in prison for fraud.",
+  "mustContainOneOf": [
+   "sentence",
+   "sentences"
+  ]
+ },
+ {
+  "id": "vocab:root_cause",
+  "headword": "root cause",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "the basic reason for a problem.",
+  "meaningVi": "nguyên nhân gốc rễ",
+  "existingExample": "To reduce crime, governments must address its root causes, such as poverty.",
+  "mustContainOneOf": [
+   "root causes",
+   "root cause",
+   "root-cause"
+  ]
+ },
+ {
+  "id": "vocab:social_mobility",
+  "headword": "social mobility",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the ability to move to a different social class.",
+  "meaningVi": "dịch chuyển giai tầng xã hội",
+  "existingExample": "Free university education can improve social mobility.",
+  "mustContainOneOf": [
+   "social mobility",
+   "social-mobility"
+  ]
+ },
+ {
+  "id": "vocab:vandalism",
+  "headword": "vandalism",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "deliberate damage to public or private property.",
+  "meaningVi": "hành vi phá hoại tài sản",
+  "existingExample": "Acts of vandalism cost local councils large sums every year.",
+  "mustContainOneOf": [
+   "vandalism",
+   "vandalisms"
+  ]
+ },
+ {
+  "id": "vocab:victim",
+  "headword": "victim",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "crime",
+   "family"
+  ],
+  "definitionEn": "a person who has been harmed by a crime or accident.",
+  "meaningVi": "nạn nhân",
+  "existingExample": "Elderly people often fall victim to online scams.",
+  "mustContainOneOf": [
+   "victims",
+   "victim"
+  ]
+ },
+ {
+  "id": "vocab:tolerance",
+  "headword": "tolerance",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "psychology"
+  ],
+  "definitionEn": "willingness to accept beliefs or behaviour that differ from your own.",
+  "meaningVi": "sự khoan dung",
+  "existingExample": "Schools should promote tolerance and respect for other cultures according to recent behavioural studies of everyday decision-making.",
+  "mustContainOneOf": [
+   "tolerance",
+   "tolerances"
+  ]
+ },
+ {
+  "id": "vocab:volunteer",
+  "headword": "volunteer",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "to offer to do something without being paid.",
+  "meaningVi": "tình nguyện; tình nguyện viên",
+  "existingExample": "Volunteering helps young people develop empathy and practical skills when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "volunteer",
+   "volunteers",
+   "volunteered",
+   "volunteering"
+  ]
+ },
+ {
+  "id": "vocab:generation_gap",
+  "headword": "generation gap",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "differences in attitudes between older and younger people.",
+  "meaningVi": "khoảng cách thế hệ",
+  "existingExample": "Technology has widened the generation gap in some families within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "generation gap",
+   "generation-gap"
+  ]
+ },
+ {
+  "id": "vocab:crack_down_on",
+  "headword": "crack down on",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 4,
+  "topics": [
+   "crime",
+   "government"
+  ],
+  "definitionEn": "to deal with a problem or crime much more strictly.",
+  "meaningVi": "trấn áp, mạnh tay với",
+  "existingExample": "The government plans to crack down on illegal street racing.",
+  "mustContainOneOf": [
+   "crack down on",
+   "crack-down-on"
+  ]
+ },
+ {
+  "id": "vocab:crime_rate",
+  "headword": "crime rate",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "the number of crimes in an area over time.",
+  "meaningVi": "tỷ lệ tội phạm",
+  "existingExample": "Better street lighting helped lower the crime rate.",
+  "mustContainOneOf": [
+   "crime rate",
+   "crime-rate"
+  ]
+ },
+ {
+  "id": "vocab:white_collar_crime",
+  "headword": "white-collar crime",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "non-violent crime committed by professionals, such as fraud.",
+  "meaningVi": "tội phạm kinh tế",
+  "existingExample": "White-collar crime often receives lighter sentences.",
+  "mustContainOneOf": [
+   "white-collar crime",
+   "white-collar-crime",
+   "white collar crime"
+  ]
+ },
+ {
+  "id": "vocab:fraud",
+  "headword": "fraud",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "crime",
+   "family"
+  ],
+  "definitionEn": "deceiving people to gain money illegally.",
+  "meaningVi": "sự lừa đảo, gian lận",
+  "existingExample": "Online fraud increasingly targets elderly people.",
+  "mustContainOneOf": [
+   "fraud",
+   "frauds"
+  ]
+ },
+ {
+  "id": "vocab:burglary",
+  "headword": "burglary",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "urban"
+  ],
+  "definitionEn": "breaking into a building to steal.",
+  "meaningVi": "trộm đột nhập",
+  "existingExample": "Improved street lighting and neighbourhood watch schemes have significantly reduced residential burglary across urban districts.",
+  "mustContainOneOf": [
+   "burglary",
+   "burglaries"
+  ]
+ },
+ {
+  "id": "vocab:shoplifting",
+  "headword": "shoplifting",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "stealing goods from a shop.",
+  "meaningVi": "trộm cắp trong cửa hàng",
+  "existingExample": "Shoplifting has increased as living costs have risen when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "shoplifting",
+   "shopliftings"
+  ]
+ },
+ {
+  "id": "vocab:drug_trafficking",
+  "headword": "drug trafficking",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "the illegal trade in drugs.",
+  "meaningVi": "buôn bán ma túy",
+  "existingExample": "Drug trafficking fuels violence across borders across closely interconnected international markets today.",
+  "mustContainOneOf": [
+   "drug trafficking",
+   "drug-trafficking"
+  ]
+ },
+ {
+  "id": "vocab:human_trafficking",
+  "headword": "human trafficking",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "work",
+   "globalisation"
+  ],
+  "definitionEn": "illegally moving people for forced labour or exploitation.",
+  "meaningVi": "buôn người",
+  "existingExample": "International cooperation is needed to stop human trafficking in today's competitive and rapidly shifting labour market.",
+  "mustContainOneOf": [
+   "human trafficking",
+   "human-trafficking"
+  ]
+ },
+ {
+  "id": "vocab:corruption",
+  "headword": "corruption",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "psychology"
+  ],
+  "definitionEn": "dishonest behaviour by people in positions of power.",
+  "meaningVi": "tham nhũng",
+  "existingExample": "Corruption undermines public trust in government when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "corruption",
+   "corruptions"
+  ]
+ },
+ {
+  "id": "vocab:bribery",
+  "headword": "bribery",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "offering money to influence someone illegally.",
+  "meaningVi": "hối lộ",
+  "existingExample": "Several officials were jailed for bribery when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "bribery",
+   "briberies"
+  ]
+ },
+ {
+  "id": "vocab:money_laundering",
+  "headword": "money laundering",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "hiding the illegal origin of money.",
+  "meaningVi": "rửa tiền",
+  "existingExample": "Banks must report suspected money laundering when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "money laundering",
+   "money-laundering"
+  ]
+ },
+ {
+  "id": "vocab:organised_crime",
+  "headword": "organised crime",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "crime",
+   "technology"
+  ],
+  "definitionEn": "crime carried out by powerful criminal groups.",
+  "meaningVi": "tội phạm có tổ chức",
+  "existingExample": "Organised crime groups exploit online markets.",
+  "mustContainOneOf": [
+   "organised crime",
+   "organised-crime"
+  ]
+ },
+ {
+  "id": "vocab:offence",
+  "headword": "offence",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "an illegal act.",
+  "meaningVi": "hành vi phạm tội",
+  "existingExample": "Speeding is a minor offence in most countries when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "offence",
+   "offences"
+  ]
+ },
+ {
+  "id": "vocab:convict",
+  "headword": "convict",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "crime",
+   "science"
+  ],
+  "definitionEn": "to officially decide that someone is guilty.",
+  "meaningVi": "kết án",
+  "existingExample": "Prosecutors must present compelling forensic evidence beyond a reasonable doubt to convict a defendant of corporate fraud.",
+  "mustContainOneOf": [
+   "convict",
+   "convicts",
+   "convicted",
+   "convicting"
+  ]
+ },
+ {
+  "id": "vocab:conviction",
+  "headword": "conviction",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "crime",
+   "work"
+  ],
+  "definitionEn": "a court's decision that someone is guilty.",
+  "meaningVi": "bản án (kết tội)",
+  "existingExample": "A criminal conviction can make it hard to find work.",
+  "mustContainOneOf": [
+   "conviction",
+   "convictions"
+  ]
+ },
+ {
+  "id": "vocab:acquit",
+  "headword": "acquit",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "to decide officially that someone is not guilty.",
+  "meaningVi": "tuyên trắng án",
+  "existingExample": "The jury acquitted her of all charges when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "acquit",
+   "acquits",
+   "acquited",
+   "acquiting"
+  ]
+ },
+ {
+  "id": "vocab:custodial_sentence",
+  "headword": "custodial sentence",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "a punishment that involves time in prison.",
+  "meaningVi": "án tù giam",
+  "existingExample": "First-time offenders rarely receive a custodial sentence.",
+  "mustContainOneOf": [
+   "custodial sentence",
+   "custodial-sentence"
+  ]
+ },
+ {
+  "id": "vocab:non_custodial",
+  "headword": "non-custodial",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "not involving prison.",
+  "meaningVi": "không giam giữ",
+  "existingExample": "Non-custodial sentences can reduce prison overcrowding.",
+  "mustContainOneOf": [
+   "non-custodial",
+   "non custodial"
+  ]
+ },
+ {
+  "id": "vocab:incarceration",
+  "headword": "incarceration",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "putting someone in prison.",
+  "meaningVi": "sự giam giữ",
+  "existingExample": "Some countries have very high rates of incarceration.",
+  "mustContainOneOf": [
+   "incarceration",
+   "incarcerations"
+  ]
+ },
+ {
+  "id": "vocab:prison_overcrowding",
+  "headword": "prison overcrowding",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "crime",
+   "space"
+  ],
+  "definitionEn": "too many prisoners for the space available.",
+  "meaningVi": "tình trạng nhà tù quá tải",
+  "existingExample": "Prison overcrowding makes rehabilitation harder.",
+  "mustContainOneOf": [
+   "prison overcrowding",
+   "prison-overcrowding"
+  ]
+ },
+ {
+  "id": "vocab:recidivism",
+  "headword": "recidivism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "the tendency of offenders to commit crimes again.",
+  "meaningVi": "sự tái phạm",
+  "existingExample": "Education in prison can reduce recidivism.",
+  "mustContainOneOf": [
+   "recidivism",
+   "recidivisms"
+  ]
+ },
+ {
+  "id": "vocab:retribution",
+  "headword": "retribution",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "punishment for a crime seen as deserved.",
+  "meaningVi": "sự trừng phạt đích đáng",
+  "existingExample": "Some see prison mainly as retribution rather than rehabilitation.",
+  "mustContainOneOf": [
+   "retribution",
+   "retributions"
+  ]
+ },
+ {
+  "id": "vocab:restorative_justice",
+  "headword": "restorative justice",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "a process in which offenders meet victims to repair harm.",
+  "meaningVi": "công lý phục hồi",
+  "existingExample": "Restorative justice can help victims feel heard.",
+  "mustContainOneOf": [
+   "restorative justice",
+   "restorative-justice"
+  ]
+ },
+ {
+  "id": "vocab:community_policing",
+  "headword": "community policing",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "policing in close partnership with local residents.",
+  "meaningVi": "cảnh sát cộng đồng",
+  "existingExample": "Community policing builds trust between officers and residents when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "community policing",
+   "community-policing"
+  ]
+ },
+ {
+  "id": "vocab:deter",
+  "headword": "deter",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "to discourage someone from doing something.",
+  "meaningVi": "ngăn chặn, răn đe",
+  "existingExample": "Visible CCTV cameras may deter burglars when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "deter",
+   "deters",
+   "detered",
+   "detering"
+  ]
+ },
+ {
+  "id": "vocab:lenient",
+  "headword": "lenient",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "not as strict as expected.",
+  "meaningVi": "khoan hồng, nhẹ tay",
+  "existingExample": "Victims' families criticised the lenient sentence when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "lenient"
+  ]
+ },
+ {
+  "id": "vocab:zero_tolerance",
+  "headword": "zero tolerance",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "a policy of punishing every offence strictly.",
+  "meaningVi": "không khoan nhượng",
+  "existingExample": "Many municipal authorities have adopted a policy of zero tolerance toward public harassment and antisocial behaviour.",
+  "mustContainOneOf": [
+   "zero tolerance",
+   "zero-tolerance"
+  ]
+ },
+ {
+  "id": "vocab:civil_liberties",
+  "headword": "civil liberties",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "language"
+  ],
+  "definitionEn": "basic freedoms such as free speech and privacy.",
+  "meaningVi": "quyền tự do dân sự",
+  "existingExample": "Mass surveillance threatens civil liberties among multilingual speakers in academic and workplace settings.",
+  "mustContainOneOf": [
+   "civil liberties",
+   "civil-liberties"
+  ]
+ },
+ {
+  "id": "vocab:human_rights",
+  "headword": "human rights",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "basic rights belonging to all people.",
+  "meaningVi": "nhân quyền",
+  "existingExample": "The report documented serious human rights abuses when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "human rights",
+   "human-rights"
+  ]
+ },
+ {
+  "id": "vocab:social_exclusion",
+  "headword": "social exclusion",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "work",
+   "economy"
+  ],
+  "definitionEn": "being shut out from normal social and economic life.",
+  "meaningVi": "sự loại trừ xã hội",
+  "existingExample": "Long-term unemployment can lead to social exclusion in today's competitive and rapidly shifting labour market.",
+  "mustContainOneOf": [
+   "social exclusion",
+   "social-exclusion"
+  ]
+ },
+ {
+  "id": "vocab:underprivileged",
+  "headword": "underprivileged",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "having less money and fewer opportunities than others.",
+  "meaningVi": "thiệt thòi",
+  "existingExample": "The charity supports underprivileged children within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "underprivileged"
+  ]
+ },
+ {
+  "id": "vocab:welfare_dependency",
+  "headword": "welfare dependency",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "work",
+   "government"
+  ],
+  "definitionEn": "relying on government benefits for a long time.",
+  "meaningVi": "sự lệ thuộc vào trợ cấp",
+  "existingExample": "Job training aims to reduce welfare dependency in today's competitive and rapidly shifting labour market.",
+  "mustContainOneOf": [
+   "welfare dependency",
+   "welfare-dependency"
+  ]
+ },
+ {
+  "id": "vocab:civic_duty",
+  "headword": "civic duty",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "a responsibility citizens have to society.",
+  "meaningVi": "nghĩa vụ công dân",
+  "existingExample": "Voting is widely seen as a civic duty when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "civic duty",
+   "civic-duty"
+  ]
+ },
+ {
+  "id": "vocab:community_spirit",
+  "headword": "community spirit",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "a feeling of belonging and helping neighbours.",
+  "meaningVi": "tinh thần cộng đồng",
+  "existingExample": "Local festivals foster community spirit when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "community spirit",
+   "community-spirit"
+  ]
+ },
+ {
+  "id": "vocab:altruism",
+  "headword": "altruism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "caring about others without expecting reward.",
+  "meaningVi": "lòng vị tha",
+  "existingExample": "Volunteering is a form of altruism when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "altruism",
+   "altruisms"
+  ]
+ },
+ {
+  "id": "vocab:philanthropy",
+  "headword": "philanthropy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "science"
+  ],
+  "definitionEn": "giving money or time to help others.",
+  "meaningVi": "hoạt động từ thiện",
+  "existingExample": "Philanthropy funds many medical research projects.",
+  "mustContainOneOf": [
+   "philanthropy",
+   "philanthropies"
+  ]
+ },
+ {
+  "id": "vocab:extended_family",
+  "headword": "extended family",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "relatives beyond parents and children.",
+  "meaningVi": "đại gia đình",
+  "existingExample": "Many Vietnamese people live with their extended family within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "extended family",
+   "extended-family"
+  ]
+ },
+ {
+  "id": "vocab:single_parent_family",
+  "headword": "single-parent family",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "family",
+   "economy"
+  ],
+  "definitionEn": "a family with only one parent.",
+  "meaningVi": "gia đình đơn thân",
+  "existingExample": "Raising children in a single-parent family often requires balancing substantial financial and caregiving responsibilities.",
+  "mustContainOneOf": [
+   "single-parent family",
+   "single-parent-family",
+   "single parent family"
+  ]
+ },
+ {
+  "id": "vocab:breadwinner",
+  "headword": "breadwinner",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "the person who earns money for the family.",
+  "meaningVi": "trụ cột kinh tế gia đình",
+  "existingExample": "More women are now the main breadwinner in their household.",
+  "mustContainOneOf": [
+   "breadwinner",
+   "breadwinners"
+  ]
+ },
+ {
+  "id": "vocab:prejudice",
+  "headword": "prejudice",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "an unfair opinion formed without knowledge.",
+  "meaningVi": "định kiến",
+  "existingExample": "Education helps people overcome prejudice when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "prejudice",
+   "prejudices"
+  ]
+ },
+ {
+  "id": "vocab:racism",
+  "headword": "racism",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "unfair treatment because of race.",
+  "meaningVi": "sự phân biệt chủng tộc",
+  "existingExample": "Sports clubs run campaigns to tackle racism.",
+  "mustContainOneOf": [
+   "racism",
+   "racisms"
+  ]
+ },
+ {
+  "id": "vocab:xenophobia",
+  "headword": "xenophobia",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "energy",
+   "economy"
+  ],
+  "definitionEn": "fear or hatred of foreigners.",
+  "meaningVi": "sự bài ngoại",
+  "existingExample": "Economic hardship can fuel xenophobia as nations transition away from carbon-intensive fossil fuels.",
+  "mustContainOneOf": [
+   "xenophobia",
+   "xenophobias"
+  ]
+ },
+ {
+  "id": "vocab:equal_opportunities",
+  "headword": "equal opportunities",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "the same chances for everyone regardless of background.",
+  "meaningVi": "cơ hội bình đẳng",
+  "existingExample": "Employers should promote equal opportunities when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "equal opportunities",
+   "equal-opportunities"
+  ]
+ },
+ {
+  "id": "vocab:affirmative_action",
+  "headword": "affirmative action",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government",
+   "education"
+  ],
+  "definitionEn": "policies that favour disadvantaged groups.",
+  "meaningVi": "chính sách ưu tiên cho nhóm thiệt thòi",
+  "existingExample": "Affirmative action remains controversial in university admissions when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "affirmative action",
+   "affirmative-action"
+  ]
+ },
+ {
+  "id": "vocab:ageism",
+  "headword": "ageism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "work",
+   "health"
+  ],
+  "definitionEn": "unfair treatment because of age.",
+  "meaningVi": "sự phân biệt tuổi tác",
+  "existingExample": "Ageism makes it hard for older people to find work.",
+  "mustContainOneOf": [
+   "ageism",
+   "ageisms"
+  ]
+ },
+ {
+  "id": "vocab:care_home",
+  "headword": "care home",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "a place where elderly people live and are cared for.",
+  "meaningVi": "viện dưỡng lão",
+  "existingExample": "Many elderly people eventually move into care homes within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "care home",
+   "care-home"
+  ]
+ },
+ {
+  "id": "vocab:filial_piety",
+  "headword": "filial piety",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "respect and care for one's parents.",
+  "meaningVi": "đạo hiếu",
+  "existingExample": "Filial piety is a core value in many Asian cultures.",
+  "mustContainOneOf": [
+   "filial piety",
+   "filial-piety"
+  ]
+ },
+ {
+  "id": "vocab:role_model",
+  "headword": "role model",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "a person others want to copy.",
+  "meaningVi": "tấm gương",
+  "existingExample": "Athletes can be positive role models for young people when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "role model",
+   "role-model"
+  ]
+ },
+ {
+  "id": "vocab:antisocial_behaviour",
+  "headword": "antisocial behaviour",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "psychology"
+  ],
+  "definitionEn": "behaviour that disturbs others, such as noise or vandalism.",
+  "meaningVi": "hành vi gây rối trật tự",
+  "existingExample": "Youth clubs can reduce antisocial behaviour according to recent behavioural studies of everyday decision-making.",
+  "mustContainOneOf": [
+   "antisocial behaviour",
+   "antisocial behavior",
+   "antisocial-behaviour",
+   "antisocial-behavior"
+  ]
+ },
+ {
+  "id": "vocab:law_and_order",
+  "headword": "law and order",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "a situation in which laws are obeyed.",
+  "meaningVi": "pháp luật và trật tự",
+  "existingExample": "The government promised to restore law and order when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "law and order",
+   "law-and-order"
+  ]
+ },
+ {
+  "id": "vocab:identity_theft",
+  "headword": "identity theft",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "crime",
+   "culture"
+  ],
+  "definitionEn": "stealing personal information to commit fraud.",
+  "meaningVi": "đánh cắp danh tính",
+  "existingExample": "Weak passwords increase the risk of identity theft.",
+  "mustContainOneOf": [
+   "identity theft",
+   "identity-theft"
+  ]
+ },
+ {
+  "id": "vocab:scam",
+  "headword": "scam",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "a dishonest scheme to obtain money.",
+  "meaningVi": "trò lừa đảo",
+  "existingExample": "Elderly people are often targeted by phone scams within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "scam",
+   "scams"
+  ]
+ },
+ {
+  "id": "vocab:crime_prevention",
+  "headword": "crime prevention",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "measures to stop crime from happening.",
+  "meaningVi": "phòng chống tội phạm",
+  "existingExample": "Street lighting is a simple crime prevention measure.",
+  "mustContainOneOf": [
+   "crime prevention",
+   "crime-prevention"
+  ]
+ },
+ {
+  "id": "vocab:socio_economic",
+  "headword": "socio-economic",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "economy"
+  ],
+  "definitionEn": "involving both social and economic factors.",
+  "meaningVi": "kinh tế – xã hội",
+  "existingExample": "Socio-economic status affects both health and education.",
+  "mustContainOneOf": [
+   "socio-economic",
+   "socio economic"
+  ]
+ },
+ {
+  "id": "vocab:urban_decay",
+  "headword": "urban decay",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "crime",
+   "urban"
+  ],
+  "definitionEn": "the decline of a city area.",
+  "meaningVi": "sự xuống cấp đô thị",
+  "existingExample": "Urban decay is often associated with rising crime.",
+  "mustContainOneOf": [
+   "urban decay",
+   "urban-decay"
+  ]
+ },
+ {
+  "id": "vocab:social_unrest",
+  "headword": "social unrest",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "food"
+  ],
+  "definitionEn": "protests or violence caused by dissatisfaction.",
+  "meaningVi": "bất ổn xã hội",
+  "existingExample": "Rising food prices sparked social unrest across global agricultural supply chains and local markets.",
+  "mustContainOneOf": [
+   "social unrest",
+   "social-unrest"
+  ]
+ },
+ {
+  "id": "vocab:protest",
+  "headword": "protest",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "education"
+  ],
+  "definitionEn": "a public demonstration of disapproval.",
+  "meaningVi": "cuộc biểu tình",
+  "existingExample": "Students staged a peaceful protest against tuition fees when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "protest",
+   "protests"
+  ]
+ },
+ {
+  "id": "vocab:freedom_of_speech",
+  "headword": "freedom of speech",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media",
+   "language"
+  ],
+  "definitionEn": "the right to express opinions without censorship.",
+  "meaningVi": "tự do ngôn luận",
+  "existingExample": "Freedom of speech has limits, such as laws against hate speech.",
+  "mustContainOneOf": [
+   "freedom of speech",
+   "freedom-of-speech"
+  ]
+ },
+ {
+  "id": "vocab:hate_speech",
+  "headword": "hate speech",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "language"
+  ],
+  "definitionEn": "speech that attacks people because of race, religion, etc.",
+  "meaningVi": "ngôn từ thù ghét",
+  "existingExample": "Platforms are under pressure to remove hate speech among multilingual speakers in academic and workplace settings.",
+  "mustContainOneOf": [
+   "hate speech",
+   "hate-speech"
+  ]
+ },
+ {
+  "id": "vocab:polarisation",
+  "headword": "polarisation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "division into sharply opposing groups.",
+  "meaningVi": "sự phân cực",
+  "existingExample": "Social media may increase political polarisation.",
+  "mustContainOneOf": [
+   "polarisation",
+   "polarization",
+   "polarisations"
+  ]
+ },
+ {
+  "id": "vocab:inclusivity",
+  "headword": "inclusivity",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "including people of all kinds.",
+  "meaningVi": "tính hòa nhập",
+  "existingExample": "Many companies promote inclusivity in hiring when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "inclusivity",
+   "inclusivities"
+  ]
+ },
+ {
+  "id": "vocab:empathy",
+  "headword": "empathy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "the ability to understand others' feelings.",
+  "meaningVi": "sự đồng cảm",
+  "existingExample": "Reading fiction can develop empathy when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "empathy",
+   "empathies"
+  ]
+ }
+]

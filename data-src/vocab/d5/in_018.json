@@ -1,0 +1,1935 @@
+[
+ {
+  "id": "vocab:accurate",
+  "headword": "accurate",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "urban",
+   "environment"
+  ],
+  "definitionEn": "Correct in all details and free from factual, quantitative, or methodological error.",
+  "meaningVi": "chính xác, đúng đắn",
+  "existingExample": "Calibrating atmospheric sensors regularly is crucial to obtaining accurate measurements of urban particulate pollution.",
+  "mustContainOneOf": [
+   "accurate"
+  ]
+ },
+ {
+  "id": "vocab:acknowledge",
+  "headword": "acknowledge",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To accept or admit the existence, validity, or significance of a fact, contribution, or limitation.",
+  "meaningVi": "thừa nhận, công nhận",
+  "existingExample": "Policymakers widely acknowledge that technological solutions alone cannot resolve ecological degradation without behavioural change.",
+  "mustContainOneOf": [
+   "acknowledge",
+   "acknowledges",
+   "acknowledged",
+   "acknowledging"
+  ]
+ },
+ {
+  "id": "vocab:aggregate",
+  "headword": "aggregate",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Formed or calculated by the combination of many separate units, items, or quantities into a single whole.",
+  "meaningVi": "tổng hợp, gộp chung",
+  "existingExample": "Fiscal stimulus packages are primarily designed to boost aggregate demand during periods of prolonged economic stagnation.",
+  "mustContainOneOf": [
+   "aggregate"
+  ]
+ },
+ {
+  "id": "vocab:assign",
+  "headword": "assign",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "To allocate a specific task, responsibility, resource, or numerical value to a particular person or category.",
+  "meaningVi": "phân công, chỉ định, gán cho",
+  "existingExample": "In randomised controlled trials, researchers assign participants to treatment or placebo groups solely by chance.",
+  "mustContainOneOf": [
+   "assign",
+   "assigns",
+   "assigned",
+   "assigning"
+  ]
+ },
+ {
+  "id": "vocab:attach",
+  "headword": "attach",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "globalisation",
+   "economy"
+  ],
+  "definitionEn": "To fasten or join one thing to another, or to attribute particular importance or conditions to something.",
+  "meaningVi": "gắn liền, đính kèm; đặt (tầm quan trọng)",
+  "existingExample": "International lending bodies frequently attach stringent governance reforms as conditions to emergency sovereign debt relief.",
+  "mustContainOneOf": [
+   "attach",
+   "attaches",
+   "attached",
+   "attaching"
+  ]
+ },
+ {
+  "id": "vocab:author",
+  "headword": "author",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "food"
+  ],
+  "definitionEn": "A writer of a book, scholarly article, report, or official document, or the originator of a plan or idea.",
+  "meaningVi": "tác giả",
+  "existingExample": "The lead author of the epidemiological report stressed that correlation between diet and longevity does not prove causation.",
+  "mustContainOneOf": [
+   "author",
+   "authors"
+  ]
+ },
+ {
+  "id": "vocab:bond",
+  "headword": "bond",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "science"
+  ],
+  "definitionEn": "A strong force or relationship that unites people or atoms, or a fixed-income certificate issued by a government or corporation.",
+  "meaningVi": "mối gắn kết; trái phiếu; liên kết (hóa học)",
+  "existingExample": "Early childhood attachment theory emphasises how a secure emotional bond with caregivers fosters lifelong social resilience.",
+  "mustContainOneOf": [
+   "bond",
+   "bonds"
+  ]
+ },
+ {
+  "id": "vocab:brief",
+  "headword": "brief",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Of short duration, or expressed concisely in relatively few words without unnecessary detail.",
+  "meaningVi": "ngắn gọn, súc tích",
+  "existingExample": "Every scholarly paper should open with a brief abstract summarising its research question, methodology, and principal findings.",
+  "mustContainOneOf": [
+   "brief"
+  ]
+ },
+ {
+  "id": "vocab:capable",
+  "headword": "capable",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "sport"
+  ],
+  "definitionEn": "Having the ability, fitness, skill, or necessary capacity to perform or achieve a specified task.",
+  "meaningVi": "có khả năng, có năng lực",
+  "existingExample": "Modern machine-learning algorithms are capable of detecting subtle retinal anomalies with accuracy comparable to veteran specialists.",
+  "mustContainOneOf": [
+   "capable"
+  ]
+ },
+ {
+  "id": "vocab:cite",
+  "headword": "cite",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "urban",
+   "transport"
+  ],
+  "definitionEn": "To refer formally to a scholarly source, precedent, or piece of evidence as justification for an argument or statement.",
+  "meaningVi": "trích dẫn, viện dẫn",
+  "existingExample": "Urban sociologists frequently cite Copenhagen as a benchmark for integrating cycling infrastructure into municipal transport planning.",
+  "mustContainOneOf": [
+   "cite",
+   "cites",
+   "cited",
+   "citing"
+  ]
+ },
+ {
+  "id": "vocab:cooperate",
+  "headword": "cooperate",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "work"
+  ],
+  "definitionEn": "To work jointly with others towards a shared objective or comply willingly with an investigation or initiative.",
+  "meaningVi": "hợp tác, phối hợp",
+  "existingExample": "Transboundary river basins can only be managed sustainably when upstream and downstream nations cooperate on water allocation.",
+  "mustContainOneOf": [
+   "cooperate",
+   "cooperates",
+   "cooperated",
+   "cooperating"
+  ]
+ },
+ {
+  "id": "vocab:discriminate",
+  "headword": "discriminate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "To treat groups unfairly based on bias, or to recognise a subtle difference between two things.",
+  "meaningVi": "phân biệt đối xử; phân biệt rõ",
+  "existingExample": "Employment legislation strictly prohibits organisations from using automated screening tools that discriminate against older applicants.",
+  "mustContainOneOf": [
+   "discriminate",
+   "discriminates",
+   "discriminated",
+   "discriminating"
+  ]
+ },
+ {
+  "id": "vocab:display",
+  "headword": "display",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "family",
+   "government"
+  ],
+  "definitionEn": "To show a quality, behaviour, or piece of data clearly, or to exhibit objects in a prominent public setting.",
+  "meaningVi": "thể hiện, biểu lộ; trưng bày",
+  "existingExample": "Children raised in bilingual households often display heightened executive control when switching between complex cognitive tasks.",
+  "mustContainOneOf": [
+   "display",
+   "displays",
+   "displayed",
+   "displaying"
+  ]
+ },
+ {
+  "id": "vocab:diverse",
+  "headword": "diverse",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Showing a great deal of variety and composed of markedly different elements, backgrounds, or viewpoints.",
+  "meaningVi": "đa dạng, phong phú",
+  "existingExample": "Empirical studies consistently demonstrate that cognitively diverse research teams produce more innovative scientific breakthroughs.",
+  "mustContainOneOf": [
+   "diverse"
+  ]
+ },
+ {
+  "id": "vocab:domain",
+  "headword": "domain",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "education"
+  ],
+  "definitionEn": "A specified sphere of academic knowledge, professional activity, or legal authority.",
+  "meaningVi": "lĩnh vực, phạm vi chuyên môn; miền",
+  "existingExample": "Predictive analytics has rapidly expanded beyond finance into the domain of preventative public healthcare.",
+  "mustContainOneOf": [
+   "domain",
+   "domains"
+  ]
+ },
+ {
+  "id": "vocab:edit",
+  "headword": "edit",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To prepare written, audio, or genetic material for publication or use by correcting, condensing, or modifying it.",
+  "meaningVi": "biên tập, chỉnh sửa",
+  "existingExample": "Advances in CRISPR technology allow molecular biologists to edit specific DNA sequences with unprecedented precision.",
+  "mustContainOneOf": [
+   "edit",
+   "edits",
+   "edited",
+   "editing"
+  ]
+ },
+ {
+  "id": "vocab:enhance",
+  "headword": "enhance",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To intensify, increase, or further improve the quality, value, or effectiveness of something.",
+  "meaningVi": "nâng cao, tăng cường, cải thiện",
+  "existingExample": "Targeted vocational apprenticeships can markedly enhance the employability of young adults entering technical trades.",
+  "mustContainOneOf": [
+   "enhance",
+   "enhances",
+   "enhanced",
+   "enhancing"
+  ]
+ },
+ {
+  "id": "vocab:estate",
+  "headword": "estate",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "A large area of land or residential property, or the total assets owned by an individual.",
+  "meaningVi": "bất động sản; điền trang; di sản",
+  "existingExample": "Speculative capital inflows into metropolitan real estate have priced many essential public-sector workers out of city centres.",
+  "mustContainOneOf": [
+   "estate",
+   "estates"
+  ]
+ },
+ {
+  "id": "vocab:exceed",
+  "headword": "exceed",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "urban",
+   "education"
+  ],
+  "definitionEn": "To be greater in number, quantity, or degree than a specified limit, threshold, or expectation.",
+  "meaningVi": "vượt quá, vượt trội",
+  "existingExample": "When urban water extraction rates consistently exceed natural aquifer recharge, municipalities face severe seasonal shortages.",
+  "mustContainOneOf": [
+   "exceed",
+   "exceeds",
+   "exceeded",
+   "exceeding"
+  ]
+ },
+ {
+  "id": "vocab:expert",
+  "headword": "expert",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education",
+   "technology"
+  ],
+  "definitionEn": "A person who possesses comprehensive, authoritative knowledge or specialised skill in a particular academic or technical area.",
+  "meaningVi": "chuyên gia",
+  "existingExample": "The parliamentary inquiry summoned an independent cybersecurity expert to evaluate vulnerabilities in national electoral software.",
+  "mustContainOneOf": [
+   "expert",
+   "experts"
+  ]
+ },
+ {
+  "id": "vocab:federal",
+  "headword": "federal",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "Having or relating to a system of government in which several semi-autonomous states unite under a central authority.",
+  "meaningVi": "thuộc liên bang",
+  "existingExample": "Disagreements frequently arise over how fiscal responsibility for higher education should be divided between federal and state budgets.",
+  "mustContainOneOf": [
+   "federal"
+  ]
+ },
+ {
+  "id": "vocab:fee",
+  "headword": "fee",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "education"
+  ],
+  "definitionEn": "A fixed payment made to a professional person or public institution in exchange for advice, registration, or services.",
+  "meaningVi": "phí, lệ phí, học phí",
+  "existingExample": "Rising university tuition fee levels have prompted fierce debate over whether higher education should remain publicly subsidised.",
+  "mustContainOneOf": [
+   "fee",
+   "fees"
+  ]
+ },
+ {
+  "id": "vocab:flexible",
+  "headword": "flexible",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Able to be easily modified to respond to altered circumstances, or capable of bending without breaking.",
+  "meaningVi": "linh hoạt, mềm dẻo",
+  "existingExample": "Offering flexible working arrangements has enabled many knowledge-intensive firms to improve staff retention and gender diversity.",
+  "mustContainOneOf": [
+   "flexible"
+  ]
+ },
+ {
+  "id": "vocab:gender",
+  "headword": "gender",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "work",
+   "culture"
+  ],
+  "definitionEn": "The socially constructed roles, identities, and attributes associated with being male, female, or non-binary in a given culture.",
+  "meaningVi": "giới, giới tính (xét về mặt xã hội)",
+  "existingExample": "Closing the persistent gender pay gap requires transparent salary auditing alongside affordable national childcare provision.",
+  "mustContainOneOf": [
+   "gender",
+   "genders"
+  ]
+ },
+ {
+  "id": "vocab:ignorant",
+  "headword": "ignorant",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "Lacking knowledge, awareness, or formal information about a particular subject or factual reality.",
+  "meaningVi": "thiếu hiểu biết, không hay biết",
+  "existingExample": "Survey findings indicate that many first-time borrowers remain largely ignorant of how compounding interest affects long-term debt.",
+  "mustContainOneOf": [
+   "ignorant"
+  ]
+ },
+ {
+  "id": "vocab:index",
+  "headword": "index",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "urban",
+   "family"
+  ],
+  "definitionEn": "A statistical measure or composite indicator showing relative change in a price, economic output, or social metric over time.",
+  "meaningVi": "chỉ số; bảng chỉ mục",
+  "existingExample": "Economists track the consumer price index every month to evaluate shifts in household purchasing power across major cities.",
+  "mustContainOneOf": [
+   "index",
+   "indices",
+   "indexes"
+  ]
+ },
+ {
+  "id": "vocab:inhibit",
+  "headword": "inhibit",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "To hinder, restrain, or prevent an action, biological process, or economic development from proceeding freely.",
+  "meaningVi": "ức chế, kìm hãm, cản trở",
+  "existingExample": "Excessive bureaucratic licensing requirements can severely inhibit entrepreneurship among small-scale technology startups.",
+  "mustContainOneOf": [
+   "inhibit",
+   "inhibits",
+   "inhibited",
+   "inhibiting"
+  ]
+ },
+ {
+  "id": "vocab:initiate",
+  "headword": "initiate",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "To cause a process, policy, or formal action to begin.",
+  "meaningVi": "khởi xướng, bắt đầu",
+  "existingExample": "Following consecutive droughts, regional agricultural ministries decided to initiate a joint desalination and irrigation scheme.",
+  "mustContainOneOf": [
+   "initiate",
+   "initiates",
+   "initiated",
+   "initiating"
+  ]
+ },
+ {
+  "id": "vocab:input",
+  "headword": "input",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "education"
+  ],
+  "definitionEn": "Data, energy, or resources fed into a system, or helpful advice contributed to a decision.",
+  "meaningVi": "đầu vào; ý kiến đóng góp",
+  "existingExample": "Designing effective public health campaigns demands sustained input from frontline nurses as well as academic epidemiologists.",
+  "mustContainOneOf": [
+   "input",
+   "inputs"
+  ]
+ },
+ {
+  "id": "vocab:instruct",
+  "headword": "instruct",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education",
+   "transport"
+  ],
+  "definitionEn": "To teach someone a subject or practical skill systematically, or to direct someone formally to carry out a specific action.",
+  "meaningVi": "hướng dẫn, giảng dạy; chỉ thị",
+  "existingExample": "Aviation academies use full-motion simulators to instruct trainee pilots on managing rare in-flight mechanical emergencies.",
+  "mustContainOneOf": [
+   "instruct",
+   "instructs",
+   "instructed",
+   "instructing"
+  ]
+ },
+ {
+  "id": "vocab:intelligence",
+  "headword": "intelligence",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The capacity to acquire and apply knowledge and analytical skills, or the collection of strategic information.",
+  "meaningVi": "trí thông minh, trí tuệ; thông tin tình báo",
+  "existingExample": "Rapid deployment of artificial intelligence in radiology has significantly shortened turnaround times for complex diagnostic scans.",
+  "mustContainOneOf": [
+   "intelligence",
+   "intelligences"
+  ]
+ },
+ {
+  "id": "vocab:interval",
+  "headword": "interval",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "An intervening period of time between two events, or a structured gap separating points in a sequence or measurement.",
+  "meaningVi": "khoảng thời gian, khoảng cách đều",
+  "existingExample": "Oceanographers deploy automated buoys that record salinity and temperature readings at every thirty-minute interval.",
+  "mustContainOneOf": [
+   "interval",
+   "intervals"
+  ]
+ },
+ {
+  "id": "vocab:lecture",
+  "headword": "lecture",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "government",
+   "education"
+  ],
+  "definitionEn": "An educational talk delivered to a university class or public audience on a specialised academic topic.",
+  "meaningVi": "bài giảng (đại học), buổi diễn thuyết",
+  "existingExample": "While a traditional university lecture conveys foundational theory efficiently, interactive seminars cultivate stronger critical reasoning.",
+  "mustContainOneOf": [
+   "lecture",
+   "lectures"
+  ]
+ },
+ {
+  "id": "vocab:migrate",
+  "headword": "migrate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "animals"
+  ],
+  "definitionEn": "To move from one region, country, or habitat to another, either seasonally or permanently, in search of better conditions.",
+  "meaningVi": "di cư, di trú; chuyển đổi hệ thống",
+  "existingExample": "Millions of rural labourers continue to migrate towards coastal industrial hubs in pursuit of higher wages and stable employment.",
+  "mustContainOneOf": [
+   "migrate",
+   "migrates",
+   "migrated",
+   "migrating"
+  ]
+ },
+ {
+  "id": "vocab:minimum",
+  "headword": "minimum",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "work",
+   "education"
+  ],
+  "definitionEn": "Of the smallest or lowest amount, degree, or standard possible, required, or legally permitted.",
+  "meaningVi": "tối thiểu",
+  "existingExample": "Raising the statutory minimum wage can reduce working poverty, though economists debate its impact on youth hiring.",
+  "mustContainOneOf": [
+   "minimum"
+  ]
+ },
+ {
+  "id": "vocab:ministry",
+  "headword": "ministry",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "transport"
+  ],
+  "definitionEn": "A central government department headed by a minister and responsible for a specific area of national administration.",
+  "meaningVi": "bộ (cơ quan chính phủ)",
+  "existingExample": "The transport ministry announced a ten-year funding package to electrify intercity freight corridors across the country.",
+  "mustContainOneOf": [
+   "ministry",
+   "ministries"
+  ]
+ },
+ {
+  "id": "vocab:motive",
+  "headword": "motive",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A reason, underlying desire, or incentive that drives a person or organisation to pursue a particular course of action.",
+  "meaningVi": "động cơ, động lực",
+  "existingExample": "Critics argue that the profit motive alone cannot ensure universal broadband coverage in sparsely populated rural regions.",
+  "mustContainOneOf": [
+   "motive",
+   "motives"
+  ]
+ },
+ {
+  "id": "vocab:neutral",
+  "headword": "neutral",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "psychology",
+   "language"
+  ],
+  "definitionEn": "Not favouring either side in a debate or dispute, or carrying no strong bias.",
+  "meaningVi": "trung lập, không thiên vị",
+  "existingExample": "Survey questions must be phrased in strictly neutral language so respondents are not nudged towards predetermined answers.",
+  "mustContainOneOf": [
+   "neutral"
+  ]
+ },
+ {
+  "id": "vocab:precede",
+  "headword": "precede",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To come or occur earlier in time, sequence, or logical order than another event or element.",
+  "meaningVi": "đi trước, xảy ra trước",
+  "existingExample": "Rigorous environmental impact assessments must precede any formal decision to construct highways through protected wetlands.",
+  "mustContainOneOf": [
+   "precede",
+   "precedes",
+   "preceded",
+   "preceding"
+  ]
+ },
+ {
+  "id": "vocab:presume",
+  "headword": "presume",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To suppose that something is the case on the basis of probability or legal convention, without absolute proof.",
+  "meaningVi": "cho là, giả định (dựa trên xác suất)",
+  "existingExample": "Constitutional legal systems presume every defendant innocent until the prosecution establishes guilt beyond reasonable doubt.",
+  "mustContainOneOf": [
+   "presume",
+   "presumes",
+   "presumed",
+   "presuming"
+  ]
+ },
+ {
+  "id": "vocab:rational",
+  "headword": "rational",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "psychology",
+   "economy"
+  ],
+  "definitionEn": "Based on or in accordance with clear reason, logical analysis, and empirical evidence rather than emotion.",
+  "meaningVi": "hợp lý, duy lý, có lý trí",
+  "existingExample": "Behavioural economics challenges the classical assumption that consumers consistently make purely rational financial decisions.",
+  "mustContainOneOf": [
+   "rational"
+  ]
+ },
+ {
+  "id": "vocab:recover",
+  "headword": "recover",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "environment"
+  ],
+  "definitionEn": "To return to a normal state of health, strength, or economic stability, or to regain possession of something lost.",
+  "meaningVi": "phục hồi, khôi phục; thu hồi",
+  "existingExample": "Degraded coral reef ecosystems can take several decades to recover even after local water pollution is eliminated.",
+  "mustContainOneOf": [
+   "recover",
+   "recovers",
+   "recovered",
+   "recovering"
+  ]
+ },
+ {
+  "id": "vocab:reveal",
+  "headword": "reveal",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "environment",
+   "science"
+  ],
+  "definitionEn": "To make previously unknown, concealed, or unapparent information or empirical patterns clearly known.",
+  "meaningVi": "tiết lộ, cho thấy rõ",
+  "existingExample": "Ice-core samples drilled from Greenland reveal dramatic fluctuations in atmospheric carbon concentrations over millennia.",
+  "mustContainOneOf": [
+   "reveal",
+   "reveals",
+   "revealed",
+   "revealing"
+  ]
+ },
+ {
+  "id": "vocab:scope",
+  "headword": "scope",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "The extent of the area, subject matter, or operational reach that a study, policy, or mandate encompasses.",
+  "meaningVi": "phạm vi, tầm bao quát; dư địa",
+  "existingExample": "Although the dissertation is ambitious in scope, its empirical analysis focuses primarily on municipal governance in three provinces.",
+  "mustContainOneOf": [
+   "scope",
+   "scopes"
+  ]
+ },
+ {
+  "id": "vocab:subsidiary",
+  "headword": "subsidiary",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "Less important than but closely related or supplementary to a primary entity, function, or organisation.",
+  "meaningVi": "phụ trợ, thứ yếu; trực thuộc",
+  "existingExample": "While monetary policy remained the central lever, fiscal incentives played a valuable subsidiary role in stabilising employment.",
+  "mustContainOneOf": [
+   "subsidiary"
+  ]
+ },
+ {
+  "id": "vocab:tape",
+  "headword": "tape",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology",
+   "science"
+  ],
+  "definitionEn": "A narrow strip of magnetic or adhesive material used for recording audio and data or binding objects; figuratively, bureaucratic procedure.",
+  "meaningVi": "băng từ, băng ghi âm; thủ tục rườm rà (red tape)",
+  "existingExample": "National archives are digitising fragile magnetic tape recordings from the 1960s to preserve endangered oral histories.",
+  "mustContainOneOf": [
+   "tape",
+   "tapes"
+  ]
+ },
+ {
+  "id": "vocab:trace",
+  "headword": "trace",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "history"
+  ],
+  "definitionEn": "To find, discover, or follow the origin, course, or historical development of something through careful investigation.",
+  "meaningVi": "truy tìm nguồn gốc, lần theo dấu vết",
+  "existingExample": "Linguists can trace the evolution of modern Indo-European vocabularies back to ancient agrarian communities across Eurasia.",
+  "mustContainOneOf": [
+   "trace",
+   "traces",
+   "traced",
+   "tracing"
+  ]
+ },
+ {
+  "id": "vocab:transform",
+  "headword": "transform",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "To make a thorough, dramatic, and lasting change in the form, structure, nature, or function of something.",
+  "meaningVi": "biến đổi hoàn toàn, chuyển hóa",
+  "existingExample": "Widespread adoption of mobile banking platforms has helped transform financial inclusion across previously unbanked rural communities.",
+  "mustContainOneOf": [
+   "transform",
+   "transforms",
+   "transformed",
+   "transforming"
+  ]
+ },
+ {
+  "id": "vocab:transport",
+  "headword": "transport",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "A system or means of conveying passengers or freight from one location to another.",
+  "meaningVi": "giao thông vận tải, phương tiện vận chuyển",
+  "existingExample": "Subsidising reliable public transport is widely viewed as an equitable way to lower urban greenhouse gas emissions.",
+  "mustContainOneOf": [
+   "transport",
+   "transports"
+  ]
+ },
+ {
+  "id": "vocab:underlie",
+  "headword": "underlie",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To be the fundamental cause, basis, or structural principle supporting a visible phenomenon or pattern.",
+  "meaningVi": "nằm ở nền tảng, là nguyên nhân sâu xa của",
+  "existingExample": "Structural inequalities in early childhood education often underlie persistent disparities in adult earnings across generations.",
+  "mustContainOneOf": [
+   "underlie",
+   "underlies",
+   "underlied",
+   "underliing"
+  ]
+ },
+ {
+  "id": "vocab:utilise",
+  "headword": "utilise",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To make practical, strategic, and effective use of a resource, technology, or opportunity.",
+  "meaningVi": "tận dụng, sử dụng hiệu quả",
+  "existingExample": "Modern smart buildings utilise automated thermal sensors to minimise unnecessary heating and cooling throughout the day.",
+  "mustContainOneOf": [
+   "utilise",
+   "utilize",
+   "utilises",
+   "utilised",
+   "utilising",
+   "utilized"
+  ]
+ },
+ {
+  "id": "vocab:adapt",
+  "headword": "adapt",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To modify or adjust to new conditions, environments, or requirements.",
+  "meaningVi": "thích nghi, điều chỉnh cho phù hợp",
+  "existingExample": "Coastal ecosystems must rapidly adapt to rising sea levels and shifting ocean temperatures.",
+  "mustContainOneOf": [
+   "adapt",
+   "adapts",
+   "adapted",
+   "adapting"
+  ]
+ },
+ {
+  "id": "vocab:adult",
+  "headword": "adult",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A person who has reached full physical, psychological, or legal maturity.",
+  "meaningVi": "người trưởng thành",
+  "existingExample": "Longitudinal studies reveal that every adult benefits cognitively from lifelong formal education.",
+  "mustContainOneOf": [
+   "adult",
+   "adults"
+  ]
+ },
+ {
+  "id": "vocab:advocate",
+  "headword": "advocate",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "To publicly recommend, support, or argue in favour of a particular policy or cause.",
+  "meaningVi": "ủng hộ, biện hộ, cổ vũ",
+  "existingExample": "Many urban planners strongly advocate pedestrian-friendly infrastructure to curb metropolitan air pollution.",
+  "mustContainOneOf": [
+   "advocate",
+   "advocates",
+   "advocated",
+   "advocating"
+  ]
+ },
+ {
+  "id": "vocab:aid",
+  "headword": "aid",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "globalisation",
+   "environment"
+  ],
+  "definitionEn": "Financial, material, or practical assistance provided to a person, institution, or nation in need.",
+  "meaningVi": "viện trợ, sự hỗ trợ",
+  "existingExample": "International humanitarian aid plays a pivotal role in stabilising regions devastated by drought.",
+  "mustContainOneOf": [
+   "aid",
+   "aids"
+  ]
+ },
+ {
+  "id": "vocab:channel",
+  "headword": "channel",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "language"
+  ],
+  "definitionEn": "A medium, pathway, or system through which information, resources, or influence flows.",
+  "meaningVi": "kênh truyền tải, phương tiện truyền thông",
+  "existingExample": "Encrypted messaging has emerged as a primary communication channel for remote corporate teams.",
+  "mustContainOneOf": [
+   "channel",
+   "channels"
+  ]
+ },
+ {
+  "id": "vocab:chemical",
+  "headword": "chemical",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "environment"
+  ],
+  "definitionEn": "Relating to chemistry, or involving the interactions and properties of distinct substances.",
+  "meaningVi": "thuộc về hóa học, hóa chất",
+  "existingExample": "Strict environmental legislation governs the disposal of hazardous chemical waste from industrial plants.",
+  "mustContainOneOf": [
+   "chemical"
+  ]
+ },
+ {
+  "id": "vocab:classic",
+  "headword": "classic",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "animals"
+  ],
+  "definitionEn": "Judged over time to be of the highest quality, or serving as a quintessential example of a category.",
+  "meaningVi": "kinh điển, tiêu biểu, mẫu mực",
+  "existingExample": "The overfishing of shared marine reserves represents a classic illustration of the tragedy of the commons.",
+  "mustContainOneOf": [
+   "classic"
+  ]
+ },
+ {
+  "id": "vocab:comprehensive",
+  "headword": "comprehensive",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "Complete and including all or nearly all relevant elements, aspects, or details.",
+  "meaningVi": "toàn diện, bao quát",
+  "existingExample": "The parliamentary committee published a comprehensive review of national renewable energy targets.",
+  "mustContainOneOf": [
+   "comprehensive"
+  ]
+ },
+ {
+  "id": "vocab:comprise",
+  "headword": "comprise",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To consist of or be made up of specific parts, components, or members.",
+  "meaningVi": "bao gồm, cấu thành từ",
+  "existingExample": "Small and medium-sized enterprises comprise over ninety percent of registered businesses in the region.",
+  "mustContainOneOf": [
+   "comprise",
+   "comprize",
+   "comprises",
+   "comprised",
+   "comprising",
+   "comprized"
+  ]
+ },
+ {
+  "id": "vocab:confirm",
+  "headword": "confirm",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "health",
+   "science"
+  ],
+  "definitionEn": "To establish the truth, validity, or accuracy of something through verifiable evidence.",
+  "meaningVi": "xác nhận, củng cố bằng chứng",
+  "existingExample": "Subsequent clinical trials are required to confirm the preliminary efficacy of the experimental vaccine.",
+  "mustContainOneOf": [
+   "confirm",
+   "confirms",
+   "confirmed",
+   "confirming"
+  ]
+ },
+ {
+  "id": "vocab:contrary",
+  "headword": "contrary",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "government",
+   "technology"
+  ],
+  "definitionEn": "Opposite in nature, direction, opinion, or meaning to something previously stated.",
+  "meaningVi": "trái ngược, đối lập",
+  "existingExample": "Contrary to widespread public assumption, automation often reshapes rather than destroys overall employment.",
+  "mustContainOneOf": [
+   "contrary"
+  ]
+ },
+ {
+  "id": "vocab:convert",
+  "headword": "convert",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "To change the form, character, function, or measurement unit of something into another.",
+  "meaningVi": "chuyển đổi, biến đổi",
+  "existingExample": "Modern photovoltaic cells can convert solar radiation into usable electricity with unprecedented efficiency.",
+  "mustContainOneOf": [
+   "convert",
+   "converts",
+   "converted",
+   "converting"
+  ]
+ },
+ {
+  "id": "vocab:couple",
+  "headword": "couple",
+  "pos": [
+   "v"
+  ],
+  "level": 2,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "To link, combine, or connect two factors, elements, or phenomena together.",
+  "meaningVi": "kết hợp, gắn liền",
+  "existingExample": "Policymakers should couple carbon pricing with targeted subsidies for low-income households.",
+  "mustContainOneOf": [
+   "couple",
+   "couples",
+   "coupled",
+   "coupling"
+  ]
+ },
+ {
+  "id": "vocab:decade",
+  "headword": "decade",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "globalisation",
+   "energy"
+  ],
+  "definitionEn": "A continuous period of ten years, frequently used as a benchmark for historical or statistical trends.",
+  "meaningVi": "thập kỷ (mười năm)",
+  "existingExample": "Global investment in clean energy infrastructure has more than tripled over the past decade.",
+  "mustContainOneOf": [
+   "decade",
+   "decades"
+  ]
+ },
+ {
+  "id": "vocab:definite",
+  "headword": "definite",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Clearly stated, decided, or established without vagueness or uncertainty.",
+  "meaningVi": "rõ ràng, xác định, chắc chắn",
+  "existingExample": "Researchers could not reach a definite conclusion due to the small sample size of the cohort.",
+  "mustContainOneOf": [
+   "definite"
+  ]
+ },
+ {
+  "id": "vocab:deny",
+  "headword": "deny",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "environment",
+   "science"
+  ],
+  "definitionEn": "To refuse to admit the truth of a statement, or to withhold access to a right or resource.",
+  "meaningVi": "phủ nhận, từ chối cung cấp",
+  "existingExample": "Empirical climate records make it impossible to deny the accelerating pace of polar ice melt.",
+  "mustContainOneOf": [
+   "deny",
+   "denies",
+   "denied",
+   "denying"
+  ]
+ },
+ {
+  "id": "vocab:differentiate",
+  "headword": "differentiate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To recognise, ascertain, or establish what makes one entity distinct from another.",
+  "meaningVi": "phân biệt, tạo sự khác biệt",
+  "existingExample": "Diagnostic imaging enables clinicians to differentiate benign tissue growths from malignant tumours.",
+  "mustContainOneOf": [
+   "differentiate",
+   "differentiates",
+   "differentiated",
+   "differentiating"
+  ]
+ },
+ {
+  "id": "vocab:dispose",
+  "headword": "dispose",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "urban",
+   "environment"
+  ],
+  "definitionEn": "To get rid of waste, unwanted materials, or surplus assets in an orderly manner.",
+  "meaningVi": "xử lý, thải bỏ",
+  "existingExample": "Municipal authorities must safely dispose of electronic waste to prevent heavy metals from leaching into groundwater.",
+  "mustContainOneOf": [
+   "dispose",
+   "disposes",
+   "disposed",
+   "disposing"
+  ]
+ },
+ {
+  "id": "vocab:dynamic",
+  "headword": "dynamic",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "work",
+   "economy"
+  ],
+  "definitionEn": "Characterised by constant change, energetic activity, or ongoing systemic interaction.",
+  "meaningVi": "năng động, biến đổi liên tục",
+  "existingExample": "The contemporary labour market is exceptionally dynamic, demanding continuous reskilling from graduates.",
+  "mustContainOneOf": [
+   "dynamic"
+  ]
+ },
+ {
+  "id": "vocab:eliminate",
+  "headword": "eliminate",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To completely remove, eradicate, or put an end to an undesirable condition or factor.",
+  "meaningVi": "loại bỏ hoàn toàn, xóa bỏ",
+  "existingExample": "Coordinated vaccination campaigns have managed to eliminate several once-fatal infectious diseases.",
+  "mustContainOneOf": [
+   "eliminate",
+   "eliminates",
+   "eliminated",
+   "eliminating"
+  ]
+ },
+ {
+  "id": "vocab:extract",
+  "headword": "extract",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To remove, obtain, or draw out a substance, resource, or piece of information using effort or technology.",
+  "meaningVi": "chiết xuất, khai thác, trích xuất",
+  "existingExample": "Advanced mining techniques allow corporations to extract rare earth minerals from deep geological formations.",
+  "mustContainOneOf": [
+   "extract",
+   "extracts",
+   "extracted",
+   "extracting"
+  ]
+ },
+ {
+  "id": "vocab:file",
+  "headword": "file",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "science"
+  ],
+  "definitionEn": "To formally submit an official document, legal claim, or record to an authority, or to archive it systematically.",
+  "meaningVi": "nộp hồ sơ, đệ trình, lưu trữ hồ sơ",
+  "existingExample": "Biotechnology firms routinely file patent applications to safeguard their proprietary research discoveries.",
+  "mustContainOneOf": [
+   "file",
+   "files",
+   "filed",
+   "filing"
+  ]
+ },
+ {
+  "id": "vocab:foundation",
+  "headword": "foundation",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education",
+   "environment"
+  ],
+  "definitionEn": "An underlying basis, core principle, or structural groundwork upon which something is built or developed.",
+  "meaningVi": "nền tảng, cơ sở, quỹ tổ chức",
+  "existingExample": "Universal primary literacy lays the essential foundation for sustainable national economic development.",
+  "mustContainOneOf": [
+   "foundation",
+   "foundations"
+  ]
+ },
+ {
+  "id": "vocab:globe",
+  "headword": "globe",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "The Earth viewed as a single interconnected world or planetary sphere.",
+  "meaningVi": "địa cầu, toàn thế giới",
+  "existingExample": "Supply chain disruptions in a single manufacturing hub can swiftly reverberate across the entire globe.",
+  "mustContainOneOf": [
+   "globe",
+   "globes"
+  ]
+ },
+ {
+  "id": "vocab:grade",
+  "headword": "grade",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education",
+   "health"
+  ],
+  "definitionEn": "A particular level of rank, quality, academic achievement, or standardised classification.",
+  "meaningVi": "cấp bậc, hạng chất lượng, điểm số",
+  "existingExample": "Pharmaceutical manufacturers must rely exclusively on medical grade materials to ensure patient safety.",
+  "mustContainOneOf": [
+   "grade",
+   "grades"
+  ]
+ },
+ {
+  "id": "vocab:guarantee",
+  "headword": "guarantee",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "sport"
+  ],
+  "definitionEn": "To provide a formal assurance or make it certain that a specific outcome or standard will be met.",
+  "meaningVi": "đảm bảo, cam đoan",
+  "existingExample": "Increased public funding alone cannot guarantee higher educational attainment without effective teacher training.",
+  "mustContainOneOf": [
+   "guarantee",
+   "guarantees",
+   "guaranteed",
+   "guaranteeing"
+  ]
+ },
+ {
+  "id": "vocab:hierarchy",
+  "headword": "hierarchy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "A structured system in which individuals, groups, or concepts are ranked according to authority, status, or importance.",
+  "meaningVi": "hệ thống phân cấp, thứ bậc",
+  "existingExample": "Many contemporary technology firms have flattened their corporate hierarchy to accelerate decision-making.",
+  "mustContainOneOf": [
+   "hierarchy",
+   "hierarchies"
+  ]
+ },
+ {
+  "id": "vocab:identical",
+  "headword": "identical",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Exactly the same in every detail, characteristic, or measurable aspect.",
+  "meaningVi": "giống hệt nhau, đồng nhất",
+  "existingExample": "To ensure experimental validity, both groups were tested under identical laboratory conditions.",
+  "mustContainOneOf": [
+   "identical"
+  ]
+ },
+ {
+  "id": "vocab:ideology",
+  "headword": "ideology",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "A coherent system of political, economic, or social beliefs and ideals that shapes policy and behaviour.",
+  "meaningVi": "hệ tư tưởng, ý thức hệ",
+  "existingExample": "Historians examine how dominant political ideology influenced urban architectural styles throughout the twentieth century.",
+  "mustContainOneOf": [
+   "ideology",
+   "ideologies"
+  ]
+ },
+ {
+  "id": "vocab:infer",
+  "headword": "infer",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "science",
+   "history"
+  ],
+  "definitionEn": "To deduce or conclude information from empirical evidence and logical reasoning rather than explicit statements.",
+  "meaningVi": "suy luận, suy ra",
+  "existingExample": "Archaeologists can infer ancient dietary habits by analysing microscopic residues preserved on pottery shards.",
+  "mustContainOneOf": [
+   "infer",
+   "infers",
+   "infered",
+   "infering"
+  ]
+ },
+ {
+  "id": "vocab:innovate",
+  "headword": "innovate",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation",
+   "economy"
+  ],
+  "definitionEn": "To introduce novel ideas, technologies, products, or methods to improve efficiency or solve problems.",
+  "meaningVi": "đổi mới, sáng tạo phương pháp mới",
+  "existingExample": "Fierce global competition compels established industries to continuously innovate or risk market obsolescence.",
+  "mustContainOneOf": [
+   "innovate",
+   "innovates",
+   "innovated",
+   "innovating"
+  ]
+ },
+ {
+  "id": "vocab:insert",
+  "headword": "insert",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "environment",
+   "food"
+  ],
+  "definitionEn": "To place, fit, or introduce an item, clause, or element into another structure or sequence.",
+  "meaningVi": "chèn vào, đưa vào",
+  "existingExample": "Geneticists can now insert targeted DNA sequences into crop genomes to enhance drought resilience.",
+  "mustContainOneOf": [
+   "insert",
+   "inserts",
+   "inserted",
+   "inserting"
+  ]
+ },
+ {
+  "id": "vocab:intervene",
+  "headword": "intervene",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "globalisation",
+   "economy"
+  ],
+  "definitionEn": "To step into a situation, conflict, or market process in order to alter its course or prevent harm.",
+  "meaningVi": "can thiệp",
+  "existingExample": "Central banks occasionally intervene in foreign exchange markets to curb excessive currency volatility.",
+  "mustContainOneOf": [
+   "intervene",
+   "intervenes",
+   "intervened",
+   "intervening"
+  ]
+ },
+ {
+  "id": "vocab:isolate",
+  "headword": "isolate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "To separate a single variable, substance, or group from others for analysis, protection, or containment.",
+  "meaningVi": "cô lập, tách biệt",
+  "existingExample": "Controlled experiments are specifically designed to isolate the causal effect of a single independent variable.",
+  "mustContainOneOf": [
+   "isolate",
+   "isolates",
+   "isolated",
+   "isolating"
+  ]
+ },
+ {
+  "id": "vocab:media",
+  "headword": "media",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "government",
+   "technology"
+  ],
+  "definitionEn": "The collective channels of mass communication, including broadcasting, publishing, and digital platforms.",
+  "meaningVi": "phương tiện truyền thông đại chúng",
+  "existingExample": "Digital media has fundamentally transformed how citizens consume news and engage in civic discourse.",
+  "mustContainOneOf": [
+   "media",
+   "medias"
+  ]
+ },
+ {
+  "id": "vocab:mode",
+  "headword": "mode",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A particular way, manner, or system in which something operates, is expressed, or is accomplished.",
+  "meaningVi": "phương thức, chế độ, hình thức",
+  "existingExample": "High-speed rail has become an increasingly attractive mode of intercity transport for environmentally conscious commuters.",
+  "mustContainOneOf": [
+   "mode",
+   "modes"
+  ]
+ },
+ {
+  "id": "vocab:paradigm",
+  "headword": "paradigm",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A prevailing theoretical framework, set of assumptions, or standard model within an academic discipline.",
+  "meaningVi": "hệ hình, mô hình tư duy chuẩn mực",
+  "existingExample": "The rise of circular economics represents a profound shift away from the traditional linear consumption paradigm.",
+  "mustContainOneOf": [
+   "paradigm",
+   "paradigms"
+  ]
+ },
+ {
+  "id": "vocab:priority",
+  "headword": "priority",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "The condition of being regarded as more urgent or important than competing considerations.",
+  "meaningVi": "sự ưu tiên, vấn đề ưu tiên hàng đầu",
+  "existingExample": "Expanding affordable preventive healthcare should remain a top priority for rapidly ageing societies.",
+  "mustContainOneOf": [
+   "priority",
+   "priorities"
+  ]
+ },
+ {
+  "id": "vocab:prohibit",
+  "headword": "prohibit",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "To formally forbid an action, practice, or substance by law, regulation, or official rule.",
+  "meaningVi": "nghiêm cấm, ngăn cấm bằng luật lệ",
+  "existingExample": "Several European municipalities have enacted regulations to prohibit high-emission diesel vehicles from city centres.",
+  "mustContainOneOf": [
+   "prohibit",
+   "prohibits",
+   "prohibited",
+   "prohibiting"
+  ]
+ },
+ {
+  "id": "vocab:publication",
+  "headword": "publication",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "work",
+   "technology"
+  ],
+  "definitionEn": "The act of making written or scholarly work publicly available, or a printed or digital work itself.",
+  "meaningVi": "ấn phẩm, sự xuất bản công bố",
+  "existingExample": "Rigorous peer review is an essential prerequisite prior to the publication of empirical findings in reputable journals.",
+  "mustContainOneOf": [
+   "publication",
+   "publications"
+  ]
+ },
+ {
+  "id": "vocab:quote",
+  "headword": "quote",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "history",
+   "language"
+  ],
+  "definitionEn": "To repeat or reproduce exact words from a text, speech, or authoritative source with attribution.",
+  "meaningVi": "trích dẫn nguyên văn",
+  "existingExample": "Scholars must accurately quote primary historical manuscripts to substantiate their interpretive arguments.",
+  "mustContainOneOf": [
+   "quote",
+   "quotes",
+   "quoted",
+   "quoting"
+  ]
+ },
+ {
+  "id": "vocab:release",
+  "headword": "release",
+  "pos": [
+   "v"
+  ],
+  "level": 2,
+  "topics": [
+   "globalisation",
+   "government"
+  ],
+  "definitionEn": "To emit a substance into the environment, set free from restraint, or make official information public.",
+  "meaningVi": "phát thải, giải phóng, công bố",
+  "existingExample": "Thawing Arctic permafrost could release vast quantities of trapped methane into the global atmosphere.",
+  "mustContainOneOf": [
+   "release",
+   "releases",
+   "released",
+   "releasing"
+  ]
+ },
+ {
+  "id": "vocab:reverse",
+  "headword": "reverse",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "environment"
+  ],
+  "definitionEn": "To turn a trend, process, or legal decision in the opposite direction to restore a prior state.",
+  "meaningVi": "đảo ngược, lật ngược",
+  "existingExample": "Large-scale reforestation initiatives are urgently needed to reverse decades of tropical biodiversity loss.",
+  "mustContainOneOf": [
+   "reverse",
+   "reverses",
+   "reversed",
+   "reversing"
+  ]
+ },
+ {
+  "id": "vocab:simulate",
+  "headword": "simulate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "technology",
+   "psychology"
+  ],
+  "definitionEn": "To imitate the conditions, behaviour, or operation of a real-world system using models or software.",
+  "meaningVi": "mô phỏng",
+  "existingExample": "Meteorologists employ supercomputers to simulate complex atmospheric patterns and forecast severe storms.",
+  "mustContainOneOf": [
+   "simulate",
+   "simulates",
+   "simulated",
+   "simulating"
+  ]
+ },
+ {
+  "id": "vocab:sole",
+  "headword": "sole",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Being the only one of its kind, with no other person, factor, or entity involved.",
+  "meaningVi": "duy nhất, độc nhất",
+  "existingExample": "Gross domestic product should not serve as the sole metric for evaluating national well-being.",
+  "mustContainOneOf": [
+   "sole"
+  ]
+ },
+ {
+  "id": "vocab:submit",
+  "headword": "submit",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To present a document, proposal, or manuscript formally for assessment, approval, or consideration.",
+  "meaningVi": "nộp, đệ trình (để xem xét)",
+  "existingExample": "Prospective researchers must submit a detailed ethical compliance protocol before recruiting human participants.",
+  "mustContainOneOf": [
+   "submit",
+   "submits",
+   "submited",
+   "submiting"
+  ]
+ },
+ {
+  "id": "vocab:successor",
+  "headword": "successor",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "A person, institution, or system that follows and takes the place of a predecessor.",
+  "meaningVi": "người kế nhiệm, thế hệ tiếp nối",
+  "existingExample": "Each newly elected administration inherits the long-term fiscal obligations established by its predecessor and passed to its successor.",
+  "mustContainOneOf": [
+   "successor",
+   "successors"
+  ]
+ },
+ {
+  "id": "vocab:survive",
+  "headword": "survive",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "globalisation",
+   "psychology"
+  ],
+  "definitionEn": "To continue to live, function, or endure despite severe hardship, competition, or environmental stress.",
+  "meaningVi": "tồn tại, sống sót qua nghịch cảnh",
+  "existingExample": "Many independent brick-and-mortar bookstores struggle to survive amid the dominance of global e-commerce platforms.",
+  "mustContainOneOf": [
+   "survive",
+   "survives",
+   "survived",
+   "surviving"
+  ]
+ },
+ {
+  "id": "vocab:topic",
+  "headword": "topic",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education",
+   "technology"
+  ],
+  "definitionEn": "A specific subject matter dealt with in an academic text, debate, lecture, or investigation.",
+  "meaningVi": "chủ đề, đề tài nghiên cứu",
+  "existingExample": "Algorithmic transparency has become a contentious topic of debate among legal scholars and software engineers.",
+  "mustContainOneOf": [
+   "topic",
+   "topics"
+  ]
+ }
+]

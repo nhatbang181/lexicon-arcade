@@ -12,8 +12,8 @@
 | CI | Run `45523414525`: `verify (8 bước)` ✅, `audit-ui` ✅, `deploy` ✅ |
 | Production | https://nhatbang181.github.io/lexicon-arcade/ → `<title>Lexicon Arcade V3 · Lộ trình IELTS 8.0</title>` |
 | Đợt 2 | **XONG (M-Đ2 ĐẠT).** **T2-B ✅**, **T2-A ✅**, **FX-0/FX-2 ✅**, **T2-C ✅** đều đã qua review khác model (riêng FX-0/FX-2 review khác hãng Claude Sonnet 5.5) và merge vào `master` |
-| T3-B (chạy sớm) | **ĐANG CHẠY Chặng 1 (`r-t3-b`).** Kiểm + commit 25 MP3 dở → đủ 32/32 listening + CREDITS + baseline `validate:data:release` |
-| Đợt 3, 4 | **ĐANG MỞ ĐỢT 3:** chuẩn bị worktree `T3-A` (hệ thiết kế, asset, fx, Mascot, Recap) |
+| T3-B (chạy sớm) | **XONG ✅ ĐẠT & đã merge `master`** (`rv-data-d5d8` Claude Sonnet 5.5 ĐẠT: 32/32 listening, 2.207/2.207 vocab, 700/700 dictation MP3, D5/D8/D10, D14, D17, `public/audio` 86,91 MB, `validate:data` exit 0, `validate:data:release` chỉ còn 841 M5 speaking) |
+| Đợt 3, 4 | **ĐANG CHẠY ĐỢT 3:** **G1 ĐẠT**; `r-t3-a` chạy Chặng 2 (A3–A4 merge sớm `fx/LiveCard/Mascot`); mở **`T3-C`** (bước C1–C4 dữ liệu/logic + P0 PB-05/PB-09) |
 
 ## 2. Worktree và nhánh
 

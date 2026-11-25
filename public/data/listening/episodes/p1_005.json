@@ -27,24 +27,24 @@
       "lineId": "l01",
       "speakerId": "staff",
       "text": "Good morning, Riverside Dental Clinic, Megan speaking. How can I help you today?",
-      "start": 0,
-      "end": 0,
+      "start": 0.0,
+      "end": 5.62,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l02",
       "speakerId": "caller",
       "text": "Hello Megan. I am not registered with your practice yet, and I was hoping to book a new patient check-up.",
-      "start": 0,
-      "end": 0,
+      "start": 6.25,
+      "end": 12.99,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l03",
       "speakerId": "staff",
       "text": "We are definitely accepting new patients this month. Let me get your intake form started. Could I have your full name, please?",
-      "start": 0,
-      "end": 0,
+      "start": 13.62,
+      "end": 22.14,
       "pauseAfter": 0.4
     },
     {
@@ -52,16 +52,16 @@
       "speakerId": "caller",
       "text": "Yes, it is Gareth Whitfield. That is with just one T, so W-H-I-T-F-I-E-L-D.",
       "ttsText": "Yes, it is Gareth Whitfield. That is with just one T, so W, H, I, T, F, I, E, L, D.",
-      "start": 0,
-      "end": 0,
+      "start": 22.77,
+      "end": 32.34,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l05",
       "speakerId": "staff",
       "text": "Whitfield with a single T, got it. And what is your date of birth?",
-      "start": 0,
-      "end": 0,
+      "start": 33.13,
+      "end": 37.71,
       "pauseAfter": 0.4
     },
     {
@@ -69,8 +69,8 @@
       "speakerId": "caller",
       "text": "It is 24 April 1991... oh, hang on, did I just say 24? Sorry, 24 is my brother's birthday! Mine is 23 April 1991.",
       "ttsText": "It is the twenty-fourth of April nineteen ninety-one... oh, hang on, did I just say twenty-fourth? Sorry, twenty-fourth is my brother's birthday! Mine is the twenty-third of April nineteen ninety-one.",
-      "start": 0,
-      "end": 0,
+      "start": 38.34,
+      "end": 51.81,
       "pauseAfter": 0.5
     },
     {
@@ -78,8 +78,8 @@
       "speakerId": "staff",
       "text": "Haha, no problem, 23 April 1991 is entered. Could I also take your street address?",
       "ttsText": "No problem, twenty-third of April nineteen ninety-one is entered. Could I also take your street address?",
-      "start": 0,
-      "end": 0,
+      "start": 52.6,
+      "end": 59.12,
       "pauseAfter": 0.4
     },
     {
@@ -87,56 +87,56 @@
       "speakerId": "caller",
       "text": "Sure, it is 17 Sycamore Close. That is one-seven, not seventy, because people often mishear me over the phone.",
       "ttsText": "Sure, it is seventeen Sycamore Close. That is one seven, not seventy, because people often mishear me over the phone.",
-      "start": 0,
-      "end": 0,
+      "start": 59.75,
+      "end": 67.8,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l09",
       "speakerId": "staff",
       "text": "Seventeen Sycamore Close, crystal clear! Next, a quick medical question: do you have any known allergies, such as latex or aspirin?",
-      "start": 0,
-      "end": 0,
+      "start": 68.59,
+      "end": 78.13,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l10",
       "speakerId": "caller",
       "text": "No trouble with latex or aspirin at all, though I am allergic to penicillin, so please flag that on my chart.",
-      "start": 0,
-      "end": 0,
+      "start": 78.76,
+      "end": 85.25,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l11",
       "speakerId": "staff",
       "text": "I have highlighted penicillin in red on your file. Now, is this just a routine check-up and clean, or do you have a specific issue?",
-      "start": 0,
-      "end": 0,
+      "start": 86.04,
+      "end": 94.38,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l12",
       "speakerId": "caller",
       "text": "Well, I originally meant to call just for a routine clean, actually I bit into a roasted almond yesterday and chipped a back filling, so I would like that looked at first.",
-      "start": 0,
-      "end": 0,
+      "start": 95.01,
+      "end": 104.51,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l13",
       "speakerId": "staff",
       "text": "Ouch, yes, we should definitely check that chipped filling quickly. Usually new adult patients see Dr Evans, though he is away at a conference this week. I can book you in with Dr Patel instead, who handles all our restorative work.",
-      "start": 0,
-      "end": 0,
+      "start": 105.3,
+      "end": 120.96,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l14",
       "speakerId": "caller",
       "text": "Dr Patel sounds great. Could you tell me how much the initial examination costs?",
-      "start": 0,
-      "end": 0,
+      "start": 121.75,
+      "end": 127.47,
       "pauseAfter": 0.4
     },
     {
@@ -144,8 +144,8 @@
       "speakerId": "staff",
       "text": "Our comprehensive package with a full hygienist polish is £95, while the standard new-patient check-up including digital X-rays is £65. Since we need to inspect the filling first, I recommend starting with the £65 exam.",
       "ttsText": "Our comprehensive package with a full hygienist polish is ninety-five pounds, while the standard new-patient check-up including digital X-rays is sixty-five pounds. Since we need to inspect the filling first, I recommend starting with the sixty-five pound exam.",
-      "start": 0,
-      "end": 0,
+      "start": 128.1,
+      "end": 144.19,
       "pauseAfter": 0.5
     },
     {
@@ -153,8 +153,8 @@
       "speakerId": "caller",
       "text": "Yes, let us start with the £65 check-up. When does Dr Patel have an opening?",
       "ttsText": "Yes, let us start with the sixty-five pound check-up. When does Dr Patel have an opening?",
-      "start": 0,
-      "end": 0,
+      "start": 144.98,
+      "end": 151.11,
       "pauseAfter": 0.8
     },
     {
@@ -162,8 +162,8 @@
       "speakerId": "staff",
       "text": "Let me look at her calendar... she has a cancellation tomorrow, Tuesday at 10:15 a.m., or Wednesday afternoon at 2:45 p.m. Thursday at 4:00 p.m. is reserved for urgent follow-ups, I am afraid.",
       "ttsText": "Let me look at her calendar... she has a cancellation tomorrow, Tuesday at ten fifteen a.m., or Wednesday afternoon at two forty-five p.m. Thursday at four p.m. is reserved for urgent follow-ups, I am afraid.",
-      "start": 0,
-      "end": 0,
+      "start": 152.38,
+      "end": 165.33,
       "pauseAfter": 0.4
     },
     {
@@ -171,8 +171,8 @@
       "speakerId": "caller",
       "text": "Um, I have a client call I cannot move on Tuesday morning, so Wednesday at 2:45 p.m. works brilliantly.",
       "ttsText": "Um, I have a client call I cannot move on Tuesday morning, so Wednesday at two forty-five p.m. works brilliantly.",
-      "start": 0,
-      "end": 0,
+      "start": 165.96,
+      "end": 172.84,
       "pauseAfter": 0.5
     },
     {
@@ -180,64 +180,64 @@
       "speakerId": "staff",
       "text": "Locked in for Wednesday at 2:45 p.m. with Dr Patel. Will you be driving to the clinic?",
       "ttsText": "Locked in for Wednesday at two forty-five p.m. with Dr Patel. Will you be driving to the clinic?",
-      "start": 0,
-      "end": 0,
+      "start": 173.63,
+      "end": 180.14,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l20",
       "speakerId": "caller",
       "text": "Yes, I will. Can patients park in your clinic courtyard, or is street parking free after lunch?",
-      "start": 0,
-      "end": 0,
+      "start": 180.77,
+      "end": 187.83,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l21",
       "speakerId": "staff",
       "text": "Actually, our courtyard bays are strictly for staff and emergency access, and the street meters outside charge right through until six in the evening. Your best bet is the multistorey car park just across the footbridge, because we validate tickets at reception for two free hours.",
-      "start": 0,
-      "end": 0,
+      "start": 188.46,
+      "end": 205.99,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l22",
       "speakerId": "caller",
       "text": "Oh, validated parking across the bridge is super helpful. And is there anything I need to bring with me on Wednesday, like a utility bill or my old dental X-rays?",
-      "start": 0,
-      "end": 0,
+      "start": 206.78,
+      "end": 216.92,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l23",
       "speakerId": "staff",
       "text": "No need for a utility bill since you are registering privately, and we request previous X-rays directly from your old clinic by secure email. All we ask you to bring is a written list of any daily medications you currently take.",
-      "start": 0,
-      "end": 0,
+      "start": 217.55,
+      "end": 231.8,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l24",
       "speakerId": "caller",
       "text": "Easy enough, I will jot those down tonight. Thank you so much for your help, Megan.",
-      "start": 0,
-      "end": 0,
+      "start": 232.59,
+      "end": 238.57,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l25",
       "speakerId": "staff",
       "text": "You are very welcome, Gareth. Please arrive ten minutes early to sign the consent form, and we will see you Wednesday!",
-      "start": 0,
-      "end": 0,
+      "start": 239.2,
+      "end": 246.7,
       "pauseAfter": 0.4
     }
   ],
   "audio": {
     "path": "audio/listening/p1_005.mp3",
-    "durationSec": 292,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 248.0,
+    "sha256": "b4e71b7ff0b7ea0a454db3517261ad00c4b2710ca878fe49555128e04c0448ca",
+    "loudnessLUFS": -16.0
   },
   "questionGroups": [
     {
@@ -302,15 +302,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 22.77,
+            "end": 32.34
           },
           "traps": [
             {
               "type": "spelling_out",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 22.77,
+              "end": 32.34,
               "explanationVi": "Người gọi đánh vần W-H-I-T-F-I-E-L-D và nhấn mạnh chỉ có một chữ T."
             }
           ]
@@ -328,15 +328,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 38.34,
+            "end": 51.81
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 38.34,
+              "end": 51.81,
               "decoy": "24 April",
               "explanationVi": "Nói nhầm sang sinh nhật anh trai 24 April rồi sửa lại thành 23 April."
             }
@@ -353,15 +353,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 59.75,
+            "end": 67.8
           },
           "traps": [
             {
               "type": "homophone_minimal_pair",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 59.75,
+              "end": 67.8,
               "decoy": "70",
               "explanationVi": "Dễ nhầm 17 (seventeen) với 70 (seventy), người nói xác nhận là một-bảy."
             }
@@ -378,15 +378,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 78.76,
+            "end": 85.25
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 78.76,
+              "end": 85.25,
               "decoy": "aspirin",
               "explanationVi": "Không dị ứng latex hay aspirin mà chỉ dị ứng với penicillin."
             }
@@ -403,8 +403,8 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 95.01,
+            "end": 104.51
           },
           "traps": []
         },
@@ -419,15 +419,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 105.3,
+            "end": 120.96
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 105.3,
+              "end": 120.96,
               "decoy": "Evans",
               "explanationVi": "Bác sĩ Evans đi hội thảo tuần này nên chuyển sang đặt với bác sĩ Patel."
             }
@@ -445,15 +445,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 128.1,
+            "end": 144.19
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 128.1,
+              "end": 144.19,
               "decoy": "95",
               "explanationVi": "95 bảng là gói kèm đánh bóng răng, còn gói khám tiêu chuẩn là 65 bảng."
             }
@@ -495,15 +495,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 165.96,
+            "end": 172.84
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l17",
-              "start": 0,
-              "end": 0,
+              "start": 152.38,
+              "end": 165.33,
               "decoy": "Tuesday at 10:15 a.m.",
               "explanationVi": "Thứ Ba bận họp khách, thứ Năm đã giữ chỗ, nên chọn chiều thứ Tư lúc 2:45."
             }
@@ -545,15 +545,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 188.46,
+            "end": 205.99
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 188.46,
+              "end": 205.99,
               "decoy": "clinic courtyard",
               "explanationVi": "Sân cho nhân viên, đồng hồ đường thu phí đến 6 giờ; bãi nhiều tầng miễn phí khi đóng dấu."
             }
@@ -595,15 +595,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 217.55,
+            "end": 231.8
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 217.55,
+              "end": 231.8,
               "decoy": "utility bill",
               "explanationVi": "Không cần hóa đơn hay phim X-quang cũ, chỉ cần mang danh sách thuốc đang uống hàng ngày."
             }
@@ -618,7 +618,19 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "staff=en-US-JennyNeural, caller=en-GB-ThomasNeural",
+    "voices": {
+      "staff": "en-US-JennyNeural",
+      "caller": "en-GB-ThomasNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.91,
+    "renderedAt": "2026-11-24"
   }
 }

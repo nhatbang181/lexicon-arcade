@@ -154,7 +154,7 @@
         {
           "qid": "p2_004_q05",
           "number": 5,
-          "prompt": "Technical colleges have already begun expanding intake to replace retiring metrology technicians.",
+          "prompt": "Technical colleges have announced funding to double their metrology training places next year.",
           "answer": {
             "key": "NOT GIVEN"
           },
@@ -167,11 +167,11 @@
             }
           ],
           "trapType": "keyword_echo",
-          "explanationVi": "Đoạn E chỉ nêu kỹ thuật viên đo lường đang nghỉ hưu nhanh hơn tốc độ đào tạo thay thế của các trường kỹ thuật, nhưng không nói các trường đã bắt đầu mở rộng chỉ tiêu hay chưa. Chọn NOT GIVEN.",
+          "explanationVi": "Đoạn E chỉ nói kỹ thuật viên đo lường và lập trình tiện đang nghỉ hưu nhanh hơn tốc độ các trường kỹ thuật đào tạo thay thế. Bài không nhắc gì đến việc các trường công bố kinh phí hay kế hoạch nhân đôi chỉ tiêu. Chọn NOT GIVEN.",
           "steps": [
-            "Tìm cụm 'technical colleges' và 'metrology technicians' ở đoạn E.",
-            "Kiểm tra xem bài có đề cập kế hoạch hay hành động tăng chỉ tiêu tuyển sinh của các trường không.",
-            "Không có thông tin này trong bài nên chọn NOT GIVEN."
+            "Tìm 'technical colleges' và 'metrology technicians' ở đoạn E.",
+            "Kiểm tra xem bài có nói trường nào công bố kinh phí hoặc kế hoạch tăng chỉ tiêu đào tạo không.",
+            "Bài chỉ nói tốc độ thay thế chậm hơn tốc độ nghỉ hưu, không có kế hoạch cụ thể nên chọn NOT GIVEN."
           ]
         },
         {
@@ -546,7 +546,8 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
   }
 }

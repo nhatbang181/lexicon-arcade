@@ -20,157 +20,157 @@
       "lineId": "l01",
       "speakerId": "lec",
       "text": "Welcome everyone. Concrete is the structural backbone of coastal infrastructure worldwide, from storm seawalls and suspension-bridge foundations to deep-water port terminals. Yet salty ocean spray and relentless tidal cycles are remarkably hostile to conventional reinforced concrete, often cutting expected service lives in half. Today we are looking at why civil engineers are turning to living microbiology for a durable solution.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 27.64
     },
     {
       "lineId": "l02",
       "speakerId": "lec",
       "text": "Even carefully mixed concrete inevitably forms microscopic hairline fissures as it cures and flexes under pounding waves. On its own, a sub-millimeter crack poses little danger to the stone paste. The real threat starts when chloride-rich seawater seeps inside and reaches the embedded steel rebar, triggering rapid internal corrosion.",
-      "start": 0,
-      "end": 0
+      "start": 28.02,
+      "end": 48.74
     },
     {
       "lineId": "l03",
       "speakerId": "lec",
       "text": "As the embedded steel rusts inside the beam, the iron oxide expands to several times its original metallic volume, exerting immense outward tensile stress against the surrounding stone.",
-      "start": 0,
-      "end": 0
+      "start": 49.12,
+      "end": 59.52
     },
     {
       "lineId": "l04",
       "speakerId": "lec",
       "text": "That outward force flakes off chunks of outer concrete, exposing even more metal to the ocean spray. Patching coastal structures every decade places enormous strain on municipal maintenance budgets around the world.",
-      "start": 0,
-      "end": 0
+      "start": 59.9,
+      "end": 72.33
     },
     {
       "lineId": "l05",
       "speakerId": "lec",
       "text": "To break this costly cycle of cracking, spalling, and emergency demolition, materials scientists have spent the past two decades perfecting self-healing bio-concrete designed specifically for wet environments.",
-      "start": 0,
-      "end": 0,
+      "start": 72.71,
+      "end": 84.39,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l06",
       "speakerId": "lec",
       "text": "Let's turn now to how engineers embed living microorganisms inside solid stone without killing them during construction.",
-      "start": 0,
-      "end": 0
+      "start": 85.62,
+      "end": 92.21
     },
     {
       "lineId": "l07",
       "speakerId": "lec",
       "text": "Fresh wet cement is fiercely alkaline, far too caustic for ordinary active bacteria to survive. Instead, engineers blend tough, dormant bacterial spores directly into the concrete mix alongside a calcium-based nutrient compound.",
-      "start": 0,
-      "end": 0
+      "start": 92.59,
+      "end": 106.91
     },
     {
       "lineId": "l08",
       "speakerId": "lec",
       "text": "In their dormant state, these specialized alkaliphilic microbes, originally isolated from harsh soda lakes, can sit completely inert inside dry concrete for decades without consuming oxygen, degrading the mortar, or weakening compressive strength.",
-      "start": 0,
-      "end": 0
+      "start": 107.29,
+      "end": 121.11
     },
     {
       "lineId": "l09",
       "speakerId": "lec",
       "text": "Simply dumping raw nutrients and microbes into an industrial mixer risks crushing them or altering the cement setting time. Early lab prototypes tried hollow glass spheres, though those proved too fragile and expensive for bulk pours. Today, commercial mixes typically house the healing agent inside porous clay pellets that shield the payload during vigorous mixing.",
-      "start": 0,
-      "end": 0
+      "start": 121.49,
+      "end": 143.19
     },
     {
       "lineId": "l10",
       "speakerId": "lec",
       "text": "Years later, when wave stress opens a hairline crack right through those pellets, infiltrating water and dissolved oxygen awaken the dormant microbes. As they metabolize the calcium nutrient, they precipitate solid limestone crystals that gradually plug the fissure watertight within three to six weeks.",
-      "start": 0,
-      "end": 0
+      "start": 143.57,
+      "end": 161.1
     },
     {
       "lineId": "l11",
       "speakerId": "lec",
       "text": "Crucially, the mechanism is localized and repeatable. Unused pellets elsewhere in the slab stay asleep until a new fracture intersects them, enabling a single pour to reseal recurring tidal cracks along exposed coastal piers across decades of service.",
-      "start": 0,
-      "end": 0
+      "start": 161.48,
+      "end": 176.6
     },
     {
       "lineId": "l12",
       "speakerId": "lec",
       "text": "Once the crack seals shut and water stops entering, the bacteria return smoothly to dormancy.",
-      "start": 0,
-      "end": 0,
+      "start": 176.98,
+      "end": 182.33,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l13",
       "speakerId": "lec",
       "text": "Moving on to real-world performance and adoption hurdles, let's summarize what full-scale coastal pilot trials have revealed so far.",
-      "start": 0,
-      "end": 0
+      "start": 183.56,
+      "end": 190.69
     },
     {
       "lineId": "l14",
       "speakerId": "lec",
       "text": "First, temperature clearly governs healing speed. Pilot breakwater blocks immersed in frigid northern waters healed markedly more slowly during winter than identical test panels deployed in warmer temperate harbors.",
-      "start": 0,
-      "end": 0
+      "start": 191.07,
+      "end": 203.58
     },
     {
       "lineId": "l15",
       "speakerId": "lec",
       "text": "Second, upfront purchase price remains the primary obstacle to widespread commercial adoption among municipal contractors, with self-healing bio-concrete still costing roughly twice as much per cubic meter as standard marine concrete blends.",
-      "start": 0,
-      "end": 0
+      "start": 203.96,
+      "end": 217.55
     },
     {
       "lineId": "l16",
       "speakerId": "lec",
       "text": "Most of that extra cost comes not from growing the bacteria, which is cheap, but from buying purified laboratory-grade calcium nutrients. To bring prices down, research teams are now substituting processed agricultural waste as an inexpensive alternative food source.",
-      "start": 0,
-      "end": 0
+      "start": 217.93,
+      "end": 234.02
     },
     {
       "lineId": "l17",
       "speakerId": "lec",
       "text": "Engineers also emphasize realistic structural limits so port authorities do not expect miracles. Bio-concrete cannot knit together wide structural splits caused by major earthquakes or heavy ship collisions; bacterial precipitation bridges reliably only across narrow gaps under about one millimeter.",
-      "start": 0,
-      "end": 0
+      "start": 234.4,
+      "end": 252.5
     },
     {
       "lineId": "l18",
       "speakerId": "lec",
       "text": "To keep cracks narrow enough for microbial sealing to succeed, marine designers often blend fine synthetic fibers into the paste to restrain crack width under heavy wave loading.",
-      "start": 0,
-      "end": 0
+      "start": 252.88,
+      "end": 262.38
     },
     {
       "lineId": "l19",
       "speakerId": "lec",
       "text": "Even with higher initial purchase prices, full lifecycle accounting strongly favors bio-concrete for submerged foundations, offshore wind bases, and tidal tunnels where bringing in commercial diving crews and waterproof cofferdams is astronomically expensive and hazardous.",
-      "start": 0,
-      "end": 0
+      "start": 262.76,
+      "end": 277.58
     },
     {
       "lineId": "l20",
       "speakerId": "lec",
       "text": "There is a substantial climate dividend too. Because Portland cement manufacturing is heavily energy-intensive, extending the service life of coastal concrete significantly reduces replacement demand and lowers overall carbon emissions.",
-      "start": 0,
-      "end": 0
+      "start": 277.96,
+      "end": 292.2
     },
     {
       "lineId": "l21",
       "speakerId": "lec",
       "text": "As nutrient expenses fall and national marine building codes formally recognize self-healing mixes, bio-concrete is poised to move from niche pilot panels into standard twenty-first-century coastal engineering. Thank you very much for listening.",
-      "start": 0,
-      "end": 0
+      "start": 292.58,
+      "end": 306.7
     }
   ],
   "audio": {
     "path": "audio/listening/p4_res_002.mp3",
-    "durationSec": 365,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 308.0,
+    "sha256": "e96c5f060f774929367038691bae1b33cc3db580988965389c8f93c8e94fc2f5",
+    "loudnessLUFS": -15.7
   },
   "questionGroups": [
     {
@@ -229,15 +229,15 @@
           },
           "evidence": {
             "lineId": "l02",
-            "start": 0,
-            "end": 0
+            "start": 28.02,
+            "end": 48.74
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 28.02,
+              "end": 48.74,
               "explanationVi": "'accelerates' diễn đạt lại cụm 'triggering rapid' ngay trước 'internal corrosion'."
             }
           ]
@@ -253,15 +253,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 59.9,
+            "end": 72.33
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 59.9,
+              "end": 72.33,
               "explanationVi": "Cần điền danh từ số nhiều 'budgets'."
             }
           ]
@@ -277,15 +277,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 92.59,
+            "end": 106.91
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 92.59,
+              "end": 106.91,
               "decoy": "active bacteria",
               "explanationVi": "Vi khuẩn hoạt động thường không chịu được độ kiềm cao; kỹ sư phải dùng 'spores' (bào tử ngủ đông)."
             }
@@ -302,15 +302,15 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 121.49,
+            "end": 143.19
           },
           "traps": [
             {
               "type": "signpost_skip",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 121.49,
+              "end": 143.19,
               "decoy": "glass spheres",
               "explanationVi": "Giảng viên nhắc mẫu thử cũ dùng 'glass spheres' (dễ vỡ, đắt) trước khi chốt giải pháp thương mại là 'pellets'."
             }
@@ -327,8 +327,8 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 143.57,
+            "end": 161.1
           },
           "traps": []
         },
@@ -343,15 +343,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 161.48,
+            "end": 176.6
           },
           "traps": [
             {
               "type": "homophone_minimal_pair",
               "lineId": "l11",
-              "start": 0,
-              "end": 0,
+              "start": 161.48,
+              "end": 176.6,
               "decoy": "peers",
               "explanationVi": "'piers' (cầu tàu) đồng âm với 'peers' (bạn đồng trang lứa/đồng nghiệp)."
             }
@@ -406,15 +406,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 191.07,
+            "end": 203.58
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 191.07,
+              "end": 203.58,
               "explanationVi": "Cần dạng số nhiều; chấp nhận cả chính tả Mỹ 'harbors' và Anh 'harbours'."
             }
           ]
@@ -430,15 +430,15 @@
           },
           "evidence": {
             "lineId": "l16",
-            "start": 0,
-            "end": 0
+            "start": 217.93,
+            "end": 234.02
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 217.93,
+              "end": 234.02,
               "decoy": "bacteria",
               "explanationVi": "Chi phí không nằm ở nuôi 'bacteria' mà ở dưỡng chất tinh khiết; giải pháp thay thế là phụ phẩm nông nghiệp ('waste')."
             }
@@ -456,15 +456,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 252.88,
+            "end": 262.38
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l18",
-              "start": 0,
-              "end": 0,
+              "start": 252.88,
+              "end": 262.38,
               "explanationVi": "Danh từ số nhiều; chấp nhận cả chính tả Mỹ 'fibers' và Anh 'fibres'."
             }
           ]
@@ -480,15 +480,15 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 277.96,
+            "end": 292.2
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l20",
-              "start": 0,
-              "end": 0,
+              "start": 277.96,
+              "end": 292.2,
               "explanationVi": "'cuts' diễn đạt lại 'lowers overall' ngay trước 'carbon emissions'."
             }
           ]
@@ -502,7 +502,18 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "lec=en-US-GuyNeural",
+    "voices": {
+      "lec": "en-US-GuyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.92,
+    "renderedAt": "2026-11-25"
   }
 }

@@ -1,222 +1,1814 @@
 [
-    {
-        "episodeId":  "lep:p1_001",
-        "answers":  [
-                        {
-                            "qid":  "lep_p1_001_q01",
-                            "number":  1,
-                            "answer":  "Bramwell"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q02",
-                            "number":  2,
-                            "answer":  "48 Alder"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q03",
-                            "number":  3,
-                            "answer":  "07741829360"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q04",
-                            "number":  4,
-                            "answer":  "off-peak"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q05",
-                            "number":  5,
-                            "answer":  "36"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q06",
-                            "number":  6,
-                            "answer":  "12 October"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q07",
-                            "number":  7,
-                            "answer":  "Thursday"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q08",
-                            "number":  8,
-                            "answer":  "9:30"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q09",
-                            "number":  9,
-                            "answer":  "padlock"
-                        },
-                        {
-                            "qid":  "lep_p1_001_q10",
-                            "number":  10,
-                            "answer":  "pilates"
-                        }
-                    ]
-    },
-    {
-        "episodeId":  "lep:p2_001",
-        "answers":  [
-                        {
-                            "qid":  "lep_p2_001_q01",
-                            "number":  1,
-                            "answer":  "B"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q02",
-                            "number":  2,
-                            "answer":  "B"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q03",
-                            "number":  3,
-                            "answer":  "A"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q04",
-                            "number":  4,
-                            "answer":  "C"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q05",
-                            "number":  5,
-                            "answer":  "F"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q06",
-                            "number":  6,
-                            "answer":  "E"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q07",
-                            "number":  7,
-                            "answer":  "G"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q08",
-                            "number":  8,
-                            "answer":  "A"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q09",
-                            "number":  9,
-                            "answer":  "C"
-                        },
-                        {
-                            "qid":  "lep_p2_001_q10",
-                            "number":  10,
-                            "answer":  "D"
-                        }
-                    ]
-    },
-    {
-        "episodeId":  "lep:p3_001",
-        "answers":  [
-                        {
-                            "qid":  "lep_p3_001_q01",
-                            "number":  1,
-                            "answer":  "B"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q02",
-                            "number":  2,
-                            "answer":  "A"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q03",
-                            "number":  3,
-                            "answer":  "C"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q04",
-                            "number":  4,
-                            "answer":  "B"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q05",
-                            "number":  5,
-                            "answer":  "C"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q06",
-                            "number":  6,
-                            "answer":  "C"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q07",
-                            "number":  7,
-                            "answer":  "F"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q08",
-                            "number":  8,
-                            "answer":  "D"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q09",
-                            "number":  9,
-                            "answer":  "A"
-                        },
-                        {
-                            "qid":  "lep_p3_001_q10",
-                            "number":  10,
-                            "answer":  "E"
-                        }
-                    ]
-    },
-    {
-        "episodeId":  "lep:p4_001",
-        "answers":  [
-                        {
-                            "qid":  "lep_p4_001_q01",
-                            "number":  1,
-                            "answer":  "snowmelt"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q02",
-                            "number":  2,
-                            "answer":  "evaporation"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q03",
-                            "number":  3,
-                            "answer":  "gradient"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q04",
-                            "number":  4,
-                            "answer":  "ventilation"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q05",
-                            "number":  5,
-                            "answer":  "terracotta"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q06",
-                            "number":  6,
-                            "answer":  "shares"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q07",
-                            "number":  7,
-                            "answer":  "roots"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q08",
-                            "number":  8,
-                            "answer":  "pumps"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q09",
-                            "number":  9,
-                            "answer":  "labour"
-                        },
-                        {
-                            "qid":  "lep_p4_001_q10",
-                            "number":  10,
-                            "answer":  "orchards"
-                        }
-                    ]
-    }
+  {
+    "episodeId": "lep:p1_001",
+    "answers": [
+      {
+        "qid": "lep_p1_001_q01",
+        "number": 1,
+        "answer": "Bramwell"
+      },
+      {
+        "qid": "lep_p1_001_q02",
+        "number": 2,
+        "answer": "48 Alder"
+      },
+      {
+        "qid": "lep_p1_001_q03",
+        "number": 3,
+        "answer": "07741829360"
+      },
+      {
+        "qid": "lep_p1_001_q04",
+        "number": 4,
+        "answer": "off-peak"
+      },
+      {
+        "qid": "lep_p1_001_q05",
+        "number": 5,
+        "answer": "36"
+      },
+      {
+        "qid": "lep_p1_001_q06",
+        "number": 6,
+        "answer": "12 October"
+      },
+      {
+        "qid": "lep_p1_001_q07",
+        "number": 7,
+        "answer": "Thursday"
+      },
+      {
+        "qid": "lep_p1_001_q08",
+        "number": 8,
+        "answer": "9:30"
+      },
+      {
+        "qid": "lep_p1_001_q09",
+        "number": 9,
+        "answer": "padlock"
+      },
+      {
+        "qid": "lep_p1_001_q10",
+        "number": 10,
+        "answer": "pilates"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_001",
+    "answers": [
+      {
+        "qid": "lep_p2_001_q01",
+        "number": 1,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_001_q02",
+        "number": 2,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_001_q03",
+        "number": 3,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_001_q04",
+        "number": 4,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_001_q05",
+        "number": 5,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p2_001_q06",
+        "number": 6,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p2_001_q07",
+        "number": 7,
+        "answer": "G"
+      },
+      {
+        "qid": "lep_p2_001_q08",
+        "number": 8,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_001_q09",
+        "number": 9,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_001_q10",
+        "number": 10,
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_001",
+    "answers": [
+      {
+        "qid": "lep_p3_001_q01",
+        "number": 1,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_001_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_001_q03",
+        "number": 3,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_001_q04",
+        "number": 4,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_001_q05",
+        "number": 5,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_001_q06",
+        "number": 6,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_001_q07",
+        "number": 7,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p3_001_q08",
+        "number": 8,
+        "answer": "D"
+      },
+      {
+        "qid": "lep_p3_001_q09",
+        "number": 9,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_001_q10",
+        "number": 10,
+        "answer": "E"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_001",
+    "answers": [
+      {
+        "qid": "lep_p4_001_q01",
+        "number": 1,
+        "answer": "snowmelt"
+      },
+      {
+        "qid": "lep_p4_001_q02",
+        "number": 2,
+        "answer": "evaporation"
+      },
+      {
+        "qid": "lep_p4_001_q03",
+        "number": 3,
+        "answer": "gradient"
+      },
+      {
+        "qid": "lep_p4_001_q04",
+        "number": 4,
+        "answer": "ventilation"
+      },
+      {
+        "qid": "lep_p4_001_q05",
+        "number": 5,
+        "answer": "rings"
+      },
+      {
+        "qid": "lep_p4_001_q06",
+        "number": 6,
+        "answer": "shares"
+      },
+      {
+        "qid": "lep_p4_001_q07",
+        "number": 7,
+        "answer": "roots"
+      },
+      {
+        "qid": "lep_p4_001_q08",
+        "number": 8,
+        "answer": "pumps"
+      },
+      {
+        "qid": "lep_p4_001_q09",
+        "number": 9,
+        "answer": "labour"
+      },
+      {
+        "qid": "lep_p4_001_q10",
+        "number": 10,
+        "answer": "orchards"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p1_002",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "lep_p1_002_q01",
+        "number": 1,
+        "answer": "Aldridge"
+      },
+      {
+        "qid": "lep_p1_002_q02",
+        "number": 2,
+        "answer": "Heather"
+      },
+      {
+        "qid": "lep_p1_002_q03",
+        "number": 3,
+        "answer": "19 June"
+      },
+      {
+        "qid": "lep_p1_002_q04",
+        "number": 4,
+        "answer": "6"
+      },
+      {
+        "qid": "lep_p1_002_q05",
+        "number": 5,
+        "answer": "07834 912 055"
+      },
+      {
+        "qid": "lep_p1_002_q06",
+        "number": 6,
+        "answer": "720"
+      },
+      {
+        "qid": "lep_p1_002_q07",
+        "number": 7,
+        "answer": "debit card"
+      },
+      {
+        "qid": "lep_p1_002_q08",
+        "number": 8,
+        "answer": "shed"
+      },
+      {
+        "qid": "lep_p1_002_q09",
+        "number": 9,
+        "answer": "3:30"
+      },
+      {
+        "qid": "lep_p1_002_q10",
+        "number": 10,
+        "answer": "Wednesday"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p1_003",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "lep_p1_003_q01",
+        "number": 1,
+        "answer": "Fenwick"
+      },
+      {
+        "qid": "lep_p1_003_q02",
+        "number": 2,
+        "answer": "Coral Cove"
+      },
+      {
+        "qid": "lep_p1_003_q03",
+        "number": 3,
+        "answer": "0419 638 274"
+      },
+      {
+        "qid": "lep_p1_003_q04",
+        "number": 4,
+        "answer": "intermediate"
+      },
+      {
+        "qid": "lep_p1_003_q05",
+        "number": 5,
+        "answer": "85"
+      },
+      {
+        "qid": "lep_p1_003_q06",
+        "number": 6,
+        "answer": "lighthouse"
+      },
+      {
+        "qid": "lep_p1_003_q07",
+        "number": 7,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p1_003_q08",
+        "number": 8,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p1_003_q09",
+        "number": 9,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p1_003_q10",
+        "number": 10,
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p1_004",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "lep_p1_004_q01",
+        "number": 1,
+        "answer": "Holloway"
+      },
+      {
+        "qid": "lep_p1_004_q02",
+        "number": 2,
+        "answer": "OX4 7PL"
+      },
+      {
+        "qid": "lep_p1_004_q03",
+        "number": 3,
+        "answer": "bookshop"
+      },
+      {
+        "qid": "lep_p1_004_q04",
+        "number": 4,
+        "answer": "storytelling"
+      },
+      {
+        "qid": "lep_p1_004_q05",
+        "number": 5,
+        "answer": "4"
+      },
+      {
+        "qid": "lep_p1_004_q06",
+        "number": 6,
+        "answer": "passport"
+      },
+      {
+        "qid": "lep_p1_004_q07",
+        "number": 7,
+        "answer": "15 November"
+      },
+      {
+        "qid": "lep_p1_004_q08",
+        "number": 8,
+        "answer": "annexe"
+      },
+      {
+        "qid": "lep_p1_004_q09",
+        "number": 9,
+        "answer": "Wednesday"
+      },
+      {
+        "qid": "lep_p1_004_q10",
+        "number": 10,
+        "answer": "parking"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p1_005",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "lep_p1_005_q01",
+        "number": 1,
+        "answer": "Whitfield"
+      },
+      {
+        "qid": "lep_p1_005_q02",
+        "number": 2,
+        "answer": "23 April"
+      },
+      {
+        "qid": "lep_p1_005_q03",
+        "number": 3,
+        "answer": "17 Sycamore"
+      },
+      {
+        "qid": "lep_p1_005_q04",
+        "number": 4,
+        "answer": "penicillin"
+      },
+      {
+        "qid": "lep_p1_005_q05",
+        "number": 5,
+        "answer": "filling"
+      },
+      {
+        "qid": "lep_p1_005_q06",
+        "number": 6,
+        "answer": "Patel"
+      },
+      {
+        "qid": "lep_p1_005_q07",
+        "number": 7,
+        "answer": "65"
+      },
+      {
+        "qid": "lep_p1_005_q08",
+        "number": 8,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p1_005_q09",
+        "number": 9,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p1_005_q10",
+        "number": 10,
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p1_006",
+    "answers": [
+      {
+        "qid": "lep_p1_006_q01",
+        "number": 1,
+        "answer": "Halstead"
+      },
+      {
+        "qid": "lep_p1_006_q02",
+        "number": 2,
+        "answer": "416-555-8392"
+      },
+      {
+        "qid": "lep_p1_006_q03",
+        "number": 3,
+        "answer": "wheel throwing"
+      },
+      {
+        "qid": "lep_p1_006_q04",
+        "number": 4,
+        "answer": "8"
+      },
+      {
+        "qid": "lep_p1_006_q05",
+        "number": 5,
+        "answer": "245"
+      },
+      {
+        "qid": "lep_p1_006_q06",
+        "number": 6,
+        "answer": "apron"
+      },
+      {
+        "qid": "lep_p1_006_q07",
+        "number": 7,
+        "answer": "Tuesday"
+      },
+      {
+        "qid": "lep_p1_006_q08",
+        "number": 8,
+        "answer": "10"
+      },
+      {
+        "qid": "lep_p1_006_q09",
+        "number": 9,
+        "answer": "courtyard"
+      },
+      {
+        "qid": "lep_p1_006_q10",
+        "number": 10,
+        "answer": "14"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p1_res_001",
+    "answers": [
+      {
+        "qid": "lep_p1_res_001_q01",
+        "number": 1,
+        "answer": "Maddox"
+      },
+      {
+        "qid": "lep_p1_res_001_q02",
+        "number": 2,
+        "answer": "11:20"
+      },
+      {
+        "qid": "lep_p1_res_001_q03",
+        "number": 3,
+        "answer": "Cromwell"
+      },
+      {
+        "qid": "lep_p1_res_001_q04",
+        "number": 4,
+        "answer": "42"
+      },
+      {
+        "qid": "lep_p1_res_001_q05",
+        "number": 5,
+        "answer": "navy canvas"
+      },
+      {
+        "qid": "lep_p1_res_001_q06",
+        "number": 6,
+        "answer": "headphones"
+      },
+      {
+        "qid": "lep_p1_res_001_q07",
+        "number": 7,
+        "answer": "MR749B"
+      },
+      {
+        "qid": "lep_p1_res_001_q08",
+        "number": 8,
+        "answer": "6"
+      },
+      {
+        "qid": "lep_p1_res_001_q09",
+        "number": 9,
+        "answer": "8"
+      },
+      {
+        "qid": "lep_p1_res_001_q10",
+        "number": 10,
+        "answer": "30"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p1_res_002",
+    "answers": [
+      {
+        "qid": "lep_p1_res_002_q01",
+        "number": 1,
+        "answer": "Thornton"
+      },
+      {
+        "qid": "lep_p1_res_002_q02",
+        "number": 2,
+        "answer": "63 Millbrook"
+      },
+      {
+        "qid": "lep_p1_res_002_q03",
+        "number": 3,
+        "answer": "South Meadow"
+      },
+      {
+        "qid": "lep_p1_res_002_q04",
+        "number": 4,
+        "answer": "half"
+      },
+      {
+        "qid": "lep_p1_res_002_q05",
+        "number": 5,
+        "answer": "52"
+      },
+      {
+        "qid": "lep_p1_res_002_q06",
+        "number": 6,
+        "answer": "25"
+      },
+      {
+        "qid": "lep_p1_res_002_q07",
+        "number": 7,
+        "answer": "bonfires"
+      },
+      {
+        "qid": "lep_p1_res_002_q08",
+        "number": 8,
+        "answer": "compost"
+      },
+      {
+        "qid": "lep_p1_res_002_q09",
+        "number": 9,
+        "answer": "May"
+      },
+      {
+        "qid": "lep_p1_res_002_q10",
+        "number": 10,
+        "answer": "75"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_002",
+    "answers": [
+      {
+        "qid": "lep_p2_002_q01",
+        "number": 1,
+        "answer": "H"
+      },
+      {
+        "qid": "lep_p2_002_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_002_q03",
+        "number": 3,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_002_q04",
+        "number": 4,
+        "answer": "D"
+      },
+      {
+        "qid": "lep_p2_002_q05",
+        "number": 5,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p2_002_q06",
+        "number": 6,
+        "answer": "G"
+      },
+      {
+        "qid": "lep_p2_002_q07",
+        "number": 7,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_002_q08",
+        "number": 8,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p2_002_q09",
+        "number": 9,
+        "answer": "D"
+      },
+      {
+        "qid": "lep_p2_002_q10",
+        "number": 10,
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_003",
+    "answers": [
+      {
+        "qid": "lep_p2_003_q01",
+        "number": 1,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_003_q02",
+        "number": 2,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_003_q03",
+        "number": 3,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_003_q04",
+        "number": 4,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_003_q05",
+        "number": 5,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p2_003_q06",
+        "number": 6,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p2_003_q07",
+        "number": 7,
+        "answer": "G"
+      },
+      {
+        "qid": "lep_p2_003_q08",
+        "number": 8,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_003_q09",
+        "number": 9,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_003_q10",
+        "number": 10,
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_004",
+    "answers": [
+      {
+        "qid": "lep_p2_004_q01",
+        "number": 1,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_004_q02",
+        "number": 2,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_004_q03",
+        "number": 3,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_004_q04",
+        "number": 4,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_004_q05",
+        "number": 5,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_004_q06",
+        "number": 6,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_004_q07",
+        "number": 7,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p2_004_q08",
+        "number": 8,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_004_q09",
+        "number": 9,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p2_004_q10",
+        "number": 10,
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_005",
+    "answers": [
+      {
+        "qid": "lep_p2_005_q01",
+        "number": 1,
+        "answer": [
+          "B",
+          "D"
+        ]
+      },
+      {
+        "qid": "lep_p2_005_q02",
+        "number": 2,
+        "answer": [
+          "B",
+          "D"
+        ]
+      },
+      {
+        "qid": "lep_p2_005_q03",
+        "number": 3,
+        "answer": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "qid": "lep_p2_005_q04",
+        "number": 4,
+        "answer": [
+          "B",
+          "C"
+        ]
+      },
+      {
+        "qid": "lep_p2_005_q05",
+        "number": 5,
+        "answer": "G"
+      },
+      {
+        "qid": "lep_p2_005_q06",
+        "number": 6,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p2_005_q07",
+        "number": 7,
+        "answer": "H"
+      },
+      {
+        "qid": "lep_p2_005_q08",
+        "number": 8,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_005_q09",
+        "number": 9,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_005_q10",
+        "number": 10,
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_006",
+    "answers": [
+      {
+        "qid": "lep_p2_006_q01",
+        "number": 1,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p2_006_q02",
+        "number": 2,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_006_q03",
+        "number": 3,
+        "answer": "D"
+      },
+      {
+        "qid": "lep_p2_006_q04",
+        "number": 4,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_006_q05",
+        "number": 5,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p2_006_q06",
+        "number": 6,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_006_q07",
+        "number": 7,
+        "answer": "G"
+      },
+      {
+        "qid": "lep_p2_006_q08",
+        "number": 8,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_006_q09",
+        "number": 9,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_006_q10",
+        "number": 10,
+        "answer": "H"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_res_001",
+    "answers": [
+      {
+        "qid": "lep_p2_res_001_q01",
+        "number": 1,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_res_001_q02",
+        "number": 2,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_res_001_q03",
+        "number": 3,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_res_001_q04",
+        "number": 4,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_res_001_q05",
+        "number": 5,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_res_001_q06",
+        "number": 6,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_res_001_q07",
+        "number": 7,
+        "answer": "D"
+      },
+      {
+        "qid": "lep_p2_res_001_q08",
+        "number": 8,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p2_res_001_q09",
+        "number": 9,
+        "answer": "G"
+      },
+      {
+        "qid": "lep_p2_res_001_q10",
+        "number": 10,
+        "answer": "H"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p2_res_002",
+    "answers": [
+      {
+        "qid": "lep_p2_res_002_q01",
+        "number": 1,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_res_002_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_res_002_q03",
+        "number": 3,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_res_002_q04",
+        "number": 4,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_res_002_q05",
+        "number": 5,
+        "answer": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "qid": "lep_p2_res_002_q06",
+        "number": 6,
+        "answer": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "qid": "lep_p2_res_002_q07",
+        "number": 7,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p2_res_002_q08",
+        "number": 8,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p2_res_002_q09",
+        "number": 9,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p2_res_002_q10",
+        "number": 10,
+        "answer": "E"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_002",
+    "answers": [
+      {
+        "qid": "lep_p3_002_q01",
+        "number": 1,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_002_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_002_q03",
+        "number": 3,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_002_q04",
+        "number": 4,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_002_q05",
+        "number": 5,
+        "answer": [
+          "A",
+          "E"
+        ]
+      },
+      {
+        "qid": "lep_p3_002_q06",
+        "number": 6,
+        "answer": [
+          "A",
+          "E"
+        ]
+      },
+      {
+        "qid": "lep_p3_002_q07",
+        "number": 7,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_002_q08",
+        "number": 8,
+        "answer": "D"
+      },
+      {
+        "qid": "lep_p3_002_q09",
+        "number": 9,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_002_q10",
+        "number": 10,
+        "answer": "E"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_003",
+    "answers": [
+      {
+        "qid": "lep_p3_003_q01",
+        "number": 1,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_003_q02",
+        "number": 2,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_003_q03",
+        "number": 3,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_003_q04",
+        "number": 4,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_003_q05",
+        "number": 5,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_003_q06",
+        "number": 6,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p3_003_q07",
+        "number": 7,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p3_003_q08",
+        "number": 8,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_003_q09",
+        "number": 9,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_003_q10",
+        "number": 10,
+        "answer": "G"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_004",
+    "answers": [
+      {
+        "qid": "lep_p3_004_q01",
+        "number": 1,
+        "answer": [
+          "B",
+          "E"
+        ]
+      },
+      {
+        "qid": "lep_p3_004_q02",
+        "number": 2,
+        "answer": [
+          "B",
+          "E"
+        ]
+      },
+      {
+        "qid": "lep_p3_004_q03",
+        "number": 3,
+        "answer": [
+          "A",
+          "E"
+        ]
+      },
+      {
+        "qid": "lep_p3_004_q04",
+        "number": 4,
+        "answer": [
+          "A",
+          "E"
+        ]
+      },
+      {
+        "qid": "lep_p3_004_q05",
+        "number": 5,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p3_004_q06",
+        "number": 6,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p3_004_q07",
+        "number": 7,
+        "answer": "H"
+      },
+      {
+        "qid": "lep_p3_004_q08",
+        "number": 8,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_004_q09",
+        "number": 9,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_004_q10",
+        "number": 10,
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_005",
+    "answers": [
+      {
+        "qid": "lep_p3_005_q01",
+        "number": 1,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_005_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_005_q03",
+        "number": 3,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_005_q04",
+        "number": 4,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_005_q05",
+        "number": 5,
+        "answer": "hydraulic jacks"
+      },
+      {
+        "qid": "lep_p3_005_q06",
+        "number": 6,
+        "answer": "dry ice"
+      },
+      {
+        "qid": "lep_p3_005_q07",
+        "number": 7,
+        "answer": "resistance drill"
+      },
+      {
+        "qid": "lep_p3_005_q08",
+        "number": 8,
+        "answer": "wooden pegs"
+      },
+      {
+        "qid": "lep_p3_005_q09",
+        "number": 9,
+        "answer": "linseed oil"
+      },
+      {
+        "qid": "lep_p3_005_q10",
+        "number": 10,
+        "answer": "strain gauges"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_006",
+    "answers": [
+      {
+        "qid": "lep_p3_006_q01",
+        "number": 1,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_006_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_006_q03",
+        "number": 3,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_006_q04",
+        "number": 4,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_006_q05",
+        "number": 5,
+        "answer": [
+          "A",
+          "D"
+        ]
+      },
+      {
+        "qid": "lep_p3_006_q06",
+        "number": 6,
+        "answer": [
+          "A",
+          "D"
+        ]
+      },
+      {
+        "qid": "lep_p3_006_q07",
+        "number": 7,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_006_q08",
+        "number": 8,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p3_006_q09",
+        "number": 9,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_006_q10",
+        "number": 10,
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_res_001",
+    "answers": [
+      {
+        "qid": "lep_p3_res_001_q01",
+        "number": 1,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_res_001_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_res_001_q03",
+        "number": 3,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_res_001_q04",
+        "number": 4,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_res_001_q05",
+        "number": 5,
+        "answer": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "qid": "lep_p3_res_001_q06",
+        "number": 6,
+        "answer": [
+          "A",
+          "C"
+        ]
+      },
+      {
+        "qid": "lep_p3_res_001_q07",
+        "number": 7,
+        "answer": "E"
+      },
+      {
+        "qid": "lep_p3_res_001_q08",
+        "number": 8,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_res_001_q09",
+        "number": 9,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p3_res_001_q10",
+        "number": 10,
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p3_res_002",
+    "answers": [
+      {
+        "qid": "lep_p3_res_002_q01",
+        "number": 1,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_res_002_q02",
+        "number": 2,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_res_002_q03",
+        "number": 3,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_res_002_q04",
+        "number": 4,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_res_002_q05",
+        "number": 5,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_res_002_q06",
+        "number": 6,
+        "answer": "C"
+      },
+      {
+        "qid": "lep_p3_res_002_q07",
+        "number": 7,
+        "answer": "B"
+      },
+      {
+        "qid": "lep_p3_res_002_q08",
+        "number": 8,
+        "answer": "F"
+      },
+      {
+        "qid": "lep_p3_res_002_q09",
+        "number": 9,
+        "answer": "A"
+      },
+      {
+        "qid": "lep_p3_res_002_q10",
+        "number": 10,
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_002",
+    "answers": [
+      {
+        "qid": "lep_p4_002_q01",
+        "number": 1,
+        "answer": "heat"
+      },
+      {
+        "qid": "lep_p4_002_q02",
+        "number": 2,
+        "answer": "enzyme"
+      },
+      {
+        "qid": "lep_p4_002_q03",
+        "number": 3,
+        "answer": "shadows"
+      },
+      {
+        "qid": "lep_p4_002_q04",
+        "number": 4,
+        "answer": "bacteria"
+      },
+      {
+        "qid": "lep_p4_002_q05",
+        "number": 5,
+        "answer": "prey"
+      },
+      {
+        "qid": "lep_p4_002_q06",
+        "number": 6,
+        "answer": "predators"
+      },
+      {
+        "qid": "lep_p4_002_q07",
+        "number": 7,
+        "answer": "cameras"
+      },
+      {
+        "qid": "lep_p4_002_q08",
+        "number": 8,
+        "answer": "behavior"
+      },
+      {
+        "qid": "lep_p4_002_q09",
+        "number": 9,
+        "answer": "tumor"
+      },
+      {
+        "qid": "lep_p4_002_q10",
+        "number": 10,
+        "answer": "contamination"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_003",
+    "answers": [
+      {
+        "qid": "lep_p4_003_q01",
+        "number": 1,
+        "answer": "funnel"
+      },
+      {
+        "qid": "lep_p4_003_q02",
+        "number": 2,
+        "answer": "friction"
+      },
+      {
+        "qid": "lep_p4_003_q03",
+        "number": 3,
+        "answer": "oscillations"
+      },
+      {
+        "qid": "lep_p4_003_q04",
+        "number": 4,
+        "answer": "sediment"
+      },
+      {
+        "qid": "lep_p4_003_q05",
+        "number": 5,
+        "answer": "mudflats"
+      },
+      {
+        "qid": "lep_p4_003_q06",
+        "number": 6,
+        "answer": "plains"
+      },
+      {
+        "qid": "lep_p4_003_q07",
+        "number": 7,
+        "answer": "crustaceans"
+      },
+      {
+        "qid": "lep_p4_003_q08",
+        "number": 8,
+        "answer": "dredging"
+      },
+      {
+        "qid": "lep_p4_003_q09",
+        "number": 9,
+        "answer": "surfers"
+      },
+      {
+        "qid": "lep_p4_003_q10",
+        "number": 10,
+        "answer": "modelling"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_004",
+    "answers": [
+      {
+        "qid": "lep_p4_004_q01",
+        "number": 1,
+        "answer": "hillsides"
+      },
+      {
+        "qid": "lep_p4_004_q02",
+        "number": 2,
+        "answer": "clothing"
+      },
+      {
+        "qid": "lep_p4_004_q03",
+        "number": 3,
+        "answer": "filter"
+      },
+      {
+        "qid": "lep_p4_004_q04",
+        "number": 4,
+        "answer": "consonants"
+      },
+      {
+        "qid": "lep_p4_004_q05",
+        "number": 5,
+        "answer": "harmonics"
+      },
+      {
+        "qid": "lep_p4_004_q06",
+        "number": 6,
+        "answer": "altar"
+      },
+      {
+        "qid": "lep_p4_004_q07",
+        "number": 7,
+        "answer": "reflection"
+      },
+      {
+        "qid": "lep_p4_004_q08",
+        "number": 8,
+        "answer": "theatre"
+      },
+      {
+        "qid": "lep_p4_004_q09",
+        "number": 9,
+        "answer": "echoes"
+      },
+      {
+        "qid": "lep_p4_004_q10",
+        "number": 10,
+        "answer": "shade"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_005",
+    "answers": [
+      {
+        "qid": "lep_p4_005_q01",
+        "number": 1,
+        "answer": "nitrogen"
+      },
+      {
+        "qid": "lep_p4_005_q02",
+        "number": 2,
+        "answer": "sugars"
+      },
+      {
+        "qid": "lep_p4_005_q03",
+        "number": 3,
+        "answer": "seedlings"
+      },
+      {
+        "qid": "lep_p4_005_q04",
+        "number": 4,
+        "answer": "defences"
+      },
+      {
+        "qid": "lep_p4_005_q05",
+        "number": 5,
+        "answer": "markets"
+      },
+      {
+        "qid": "lep_p4_005_q06",
+        "number": 6,
+        "answer": "fibres"
+      },
+      {
+        "qid": "lep_p4_005_q07",
+        "number": 7,
+        "answer": "sites"
+      },
+      {
+        "qid": "lep_p4_005_q08",
+        "number": 8,
+        "answer": "reservoir"
+      },
+      {
+        "qid": "lep_p4_005_q09",
+        "number": 9,
+        "answer": "storage"
+      },
+      {
+        "qid": "lep_p4_005_q10",
+        "number": 10,
+        "answer": "wildfires"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_006",
+    "answers": [
+      {
+        "qid": "lep_p4_006_q01",
+        "number": 1,
+        "answer": "risk"
+      },
+      {
+        "qid": "lep_p4_006_q02",
+        "number": 2,
+        "answer": "status"
+      },
+      {
+        "qid": "lep_p4_006_q03",
+        "number": 3,
+        "answer": "council"
+      },
+      {
+        "qid": "lep_p4_006_q04",
+        "number": 4,
+        "answer": "stockpiles"
+      },
+      {
+        "qid": "lep_p4_006_q05",
+        "number": 5,
+        "answer": "charts"
+      },
+      {
+        "qid": "lep_p4_006_q06",
+        "number": 6,
+        "answer": "insurance"
+      },
+      {
+        "qid": "lep_p4_006_q07",
+        "number": 7,
+        "answer": "25 percent"
+      },
+      {
+        "qid": "lep_p4_006_q08",
+        "number": 8,
+        "answer": "cuttings"
+      },
+      {
+        "qid": "lep_p4_006_q09",
+        "number": 9,
+        "answer": "14 months"
+      },
+      {
+        "qid": "lep_p4_006_q10",
+        "number": 10,
+        "answer": "harbours"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_res_001",
+    "answers": [
+      {
+        "qid": "lep_p4_res_001_q01",
+        "number": 1,
+        "answer": "bubbles"
+      },
+      {
+        "qid": "lep_p4_res_001_q02",
+        "number": 2,
+        "answer": "isotopes"
+      },
+      {
+        "qid": "lep_p4_res_001_q03",
+        "number": 3,
+        "answer": "bedrock"
+      },
+      {
+        "qid": "lep_p4_res_001_q04",
+        "number": 4,
+        "answer": "fluid"
+      },
+      {
+        "qid": "lep_p4_res_001_q05",
+        "number": 5,
+        "answer": "containers"
+      },
+      {
+        "qid": "lep_p4_res_001_q06",
+        "number": 6,
+        "answer": "dust"
+      },
+      {
+        "qid": "lep_p4_res_001_q07",
+        "number": 7,
+        "answer": "seams"
+      },
+      {
+        "qid": "lep_p4_res_001_q08",
+        "number": 8,
+        "answer": "sulphur"
+      },
+      {
+        "qid": "lep_p4_res_001_q09",
+        "number": 9,
+        "answer": "heat"
+      },
+      {
+        "qid": "lep_p4_res_001_q10",
+        "number": 10,
+        "answer": "sensors"
+      }
+    ]
+  },
+  {
+    "episodeId": "lep:p4_res_002",
+    "answers": [
+      {
+        "qid": "lep_p4_res_002_q01",
+        "number": 1,
+        "answer": "corrosion"
+      },
+      {
+        "qid": "lep_p4_res_002_q02",
+        "number": 2,
+        "answer": "budgets"
+      },
+      {
+        "qid": "lep_p4_res_002_q03",
+        "number": 3,
+        "answer": "spores"
+      },
+      {
+        "qid": "lep_p4_res_002_q04",
+        "number": 4,
+        "answer": "pellets"
+      },
+      {
+        "qid": "lep_p4_res_002_q05",
+        "number": 5,
+        "answer": "limestone"
+      },
+      {
+        "qid": "lep_p4_res_002_q06",
+        "number": 6,
+        "answer": "piers"
+      },
+      {
+        "qid": "lep_p4_res_002_q07",
+        "number": 7,
+        "answer": "harbors"
+      },
+      {
+        "qid": "lep_p4_res_002_q08",
+        "number": 8,
+        "answer": "waste"
+      },
+      {
+        "qid": "lep_p4_res_002_q09",
+        "number": 9,
+        "answer": "fibers"
+      },
+      {
+        "qid": "lep_p4_res_002_q10",
+        "number": 10,
+        "answer": "emissions"
+      }
+    ]
+  }
 ]

@@ -1,0 +1,1280 @@
+[
+ {
+  "id": "vocab:comfortable",
+  "headword": "comfortable",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "providing physical ease and relaxation, or having sufficient financial security.",
+  "meaningVi": "thoải mái, dễ chịu; khá giả",
+  "existingExample": "Ergonomic office furniture creates a comfortable workspace that lowers absenteeism among employees.",
+  "mustContainOneOf": [
+   "comfortable"
+  ]
+ },
+ {
+  "id": "vocab:vegetable",
+  "headword": "vegetable",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "a plant or edible part of a plant consumed as nutritious food.",
+  "meaningVi": "rau củ, thực phẩm thực vật",
+  "existingExample": "Nutritionists recommend increasing daily vegetable consumption to lower chronic disease risks.",
+  "mustContainOneOf": [
+   "vegetables",
+   "vegetable"
+  ]
+ },
+ {
+  "id": "vocab:determine",
+  "headword": "determine",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "science",
+   "food"
+  ],
+  "definitionEn": "to ascertain or establish exactly, typically as a result of research or calculation.",
+  "meaningVi": "xác định, quyết định yếu tố cốt lõi",
+  "existingExample": "Longitudinal studies help scientists determine whether early childhood nutrition affects adult cognition.",
+  "mustContainOneOf": [
+   "determine",
+   "determines",
+   "determined",
+   "determining"
+  ]
+ },
+ {
+  "id": "vocab:record",
+  "headword": "record",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a documented account of facts or events preserved for future reference, or the best performance achieved.",
+  "meaningVi": "hồ sơ lưu trữ; kỷ lục",
+  "existingExample": "Hospitals maintain an electronic medical record for every patient to minimise prescription errors.",
+  "mustContainOneOf": [
+   "record",
+   "records"
+  ]
+ },
+ {
+  "id": "vocab:present",
+  "headword": "present",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "existing or occurring now, or located in a particular place at a given moment.",
+  "meaningVi": "hiện tại, có mặt; trình bày",
+  "existingExample": "Policymakers must balance present economic demands with the ecological needs of future generations.",
+  "mustContainOneOf": [
+   "present"
+  ]
+ },
+ {
+  "id": "vocab:success",
+  "headword": "success",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the accomplishment of a desired aim, objective, or high level of achievement.",
+  "meaningVi": "sự thành công, thành tựu",
+  "existingExample": "Measuring educational success solely through exam scores overlooks creativity and emotional resilience.",
+  "mustContainOneOf": [
+   "success",
+   "successes"
+  ]
+ },
+ {
+  "id": "vocab:increase",
+  "headword": "increase",
+  "pos": [
+   "v"
+  ],
+  "level": 2,
+  "topics": [
+   "urban",
+   "education"
+  ],
+  "definitionEn": "to become or make greater in size, amount, intensity, or degree.",
+  "meaningVi": "tăng lên, gia tăng",
+  "existingExample": "Expanding urban cycling lanes can significantly increase commuter safety and lower emissions.",
+  "mustContainOneOf": [
+   "increase",
+   "increases",
+   "increased",
+   "increasing"
+  ]
+ },
+ {
+  "id": "vocab:decrease",
+  "headword": "decrease",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to become smaller or fewer in size, amount, intensity, or degree.",
+  "meaningVi": "giảm xuống, suy giảm",
+  "existingExample": "Targeted anti-smoking campaigns helped decrease tobacco consumption among teenagers substantially.",
+  "mustContainOneOf": [
+   "decrease",
+   "decreases",
+   "decreased",
+   "decreasing"
+  ]
+ },
+ {
+  "id": "vocab:reduce",
+  "headword": "reduce",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "to make something smaller or less in amount, degree, or severity.",
+  "meaningVi": "cắt giảm, làm giảm bớt",
+  "existingExample": "Investing in energy-efficient public buildings can reduce municipal electricity bills dramatically.",
+  "mustContainOneOf": [
+   "reduce",
+   "reduces",
+   "reduced",
+   "reducing"
+  ]
+ },
+ {
+  "id": "vocab:dangerous",
+  "headword": "dangerous",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "able or likely to cause serious harm, injury, or adverse consequences.",
+  "meaningVi": "nguy hiểm, gây rủi ro nghiêm trọng",
+  "existingExample": "Unregulated disposal of industrial waste creates dangerous contamination in nearby groundwater supplies.",
+  "mustContainOneOf": [
+   "dangerous"
+  ]
+ },
+ {
+  "id": "vocab:difficult",
+  "headword": "difficult",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "economy",
+   "animals"
+  ],
+  "definitionEn": "needing considerable effort, skill, or resilience to accomplish or deal with.",
+  "meaningVi": "khó khăn, đầy thách thức",
+  "existingExample": "Striking a balance between economic development and conservation remains a difficult challenge.",
+  "mustContainOneOf": [
+   "difficult"
+  ]
+ },
+ {
+  "id": "vocab:expensive",
+  "headword": "expensive",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "energy",
+   "economy"
+  ],
+  "definitionEn": "costing a large amount of money or requiring substantial financial expenditure.",
+  "meaningVi": "đắt đỏ, tốn kém chi phí",
+  "existingExample": "Although renewable infrastructure is initially expensive, its operating costs decline rapidly over time.",
+  "mustContainOneOf": [
+   "expensive"
+  ]
+ },
+ {
+  "id": "vocab:problem",
+  "headword": "problem",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "urban",
+   "health"
+  ],
+  "definitionEn": "a matter or situation regarded as unwelcome or harmful and needing to be resolved.",
+  "meaningVi": "vấn đề nan giải, khó khăn",
+  "existingExample": "Traffic congestion has evolved into an acute urban problem affecting both health and productivity.",
+  "mustContainOneOf": [
+   "problem",
+   "problems"
+  ]
+ },
+ {
+  "id": "vocab:advantage",
+  "headword": "advantage",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "work",
+   "globalisation"
+  ],
+  "definitionEn": "a condition or circumstance that puts one in a favourable or superior position.",
+  "meaningVi": "lợi thế, ưu điểm",
+  "existingExample": "Fluency in a second language gives job applicants a decisive competitive advantage worldwide.",
+  "mustContainOneOf": [
+   "advantage",
+   "advantages"
+  ]
+ },
+ {
+  "id": "vocab:disadvantage",
+  "headword": "disadvantage",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "an unfavourable circumstance or condition that reduces the chances of success or effectiveness.",
+  "meaningVi": "bất lợi, nhược điểm",
+  "existingExample": "Lack of high-speed broadband places rural students at a severe educational disadvantage.",
+  "mustContainOneOf": [
+   "disadvantage",
+   "disadvantages"
+  ]
+ },
+ {
+  "id": "vocab:researcher",
+  "headword": "researcher",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education",
+   "science"
+  ],
+  "definitionEn": "a person who carries out systematic academic or scientific investigation.",
+  "meaningVi": "nhà nghiên cứu, học giả",
+  "existingExample": "Every biomedical researcher must adhere to strict ethical protocols during clinical trials.",
+  "mustContainOneOf": [
+   "researcher",
+   "researchers"
+  ]
+ },
+ {
+  "id": "vocab:prove",
+  "headword": "prove",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "technology",
+   "science"
+  ],
+  "definitionEn": "to demonstrate the truth or existence of something through solid evidence or argument.",
+  "meaningVi": "chứng minh, khẳng định bằng chứng cứ",
+  "existingExample": "Long-term empirical data are required to prove a direct causal link between diet and longevity.",
+  "mustContainOneOf": [
+   "prove",
+   "proves",
+   "proved",
+   "proving"
+  ]
+ },
+ {
+  "id": "vocab:prowl",
+  "headword": "prowl",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "urban",
+   "food"
+  ],
+  "definitionEn": "to move about stealthily and quietly, typically in search of prey or opportunity.",
+  "meaningVi": "rình rập, lảng vảng âm thầm",
+  "existingExample": "Urban foxes often prowl through residential neighbourhoods at night in search of discarded food.",
+  "mustContainOneOf": [
+   "prowl",
+   "prowls",
+   "prowled",
+   "prowling"
+  ]
+ },
+ {
+  "id": "vocab:apex",
+  "headword": "apex",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "food",
+   "animals"
+  ],
+  "definitionEn": "the top, highest point, or pinnacle of a hierarchy, system, or structure.",
+  "meaningVi": "đỉnh cao nhất, chóp đỉnh",
+  "existingExample": "Sharks occupy the apex of marine food chains and are vital for maintaining oceanic balance.",
+  "mustContainOneOf": [
+   "apex",
+   "apexes"
+  ]
+ },
+ {
+  "id": "vocab:cleave",
+  "headword": "cleave",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to split or sever cleanly along a natural line, or to adhere closely to a principle.",
+  "meaningVi": "chẻ đôi, phân tách; gắn bó chặt chẽ",
+  "existingExample": "Deep political polarisation can cleave a once cohesive society into hostile ideological camps.",
+  "mustContainOneOf": [
+   "cleave",
+   "cleaves",
+   "cleaved",
+   "cleaving"
+  ]
+ },
+ {
+  "id": "vocab:genus",
+  "headword": "genus",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "family",
+   "animals"
+  ],
+  "definitionEn": "a principal taxonomic category ranking above species and below family in biology.",
+  "meaningVi": "chi sinh học (phân loại loài)",
+  "existingExample": "Botanists discovered a rare alpine plant belonging to a previously unrecorded genus.",
+  "mustContainOneOf": [
+   "genus",
+   "genuses"
+  ]
+ },
+ {
+  "id": "vocab:underused",
+  "headword": "underused",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "urban"
+  ],
+  "definitionEn": "not utilised as fully or frequently as capacity and potential would allow.",
+  "meaningVi": "chưa được khai thác hết công suất",
+  "existingExample": "Many municipal sports centres remain severely underused during weekday working hours.",
+  "mustContainOneOf": [
+   "underused"
+  ]
+ },
+ {
+  "id": "vocab:embrace",
+  "headword": "embrace",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to accept, adopt, or support a new idea, technology, or change willingly and enthusiastically.",
+  "meaningVi": "đón nhận nhiệt tình, nắm bắt",
+  "existingExample": "Forward-thinking universities increasingly embrace digital pedagogy to widen access for remote learners.",
+  "mustContainOneOf": [
+   "embrace",
+   "embraces",
+   "embraced",
+   "embracing"
+  ]
+ },
+ {
+  "id": "vocab:subtle",
+  "headword": "subtle",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "so delicate, understated, or precise as to be difficult to detect or analyse immediately.",
+  "meaningVi": "tinh tế, tinh vi, khó nhận ra ngay",
+  "existingExample": "Modern advertising employs subtle psychological cues to shape consumer preferences unconsciously.",
+  "mustContainOneOf": [
+   "subtle"
+  ]
+ },
+ {
+  "id": "vocab:incorporate",
+  "headword": "incorporate",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "to take in, include, or integrate something as part of a larger whole or system.",
+  "meaningVi": "kết hợp, lồng ghép, sáp nhập",
+  "existingExample": "Architects now incorporate passive solar heating into residential designs to lower energy demand.",
+  "mustContainOneOf": [
+   "incorporate",
+   "incorporates",
+   "incorporated",
+   "incorporating"
+  ]
+ },
+ {
+  "id": "vocab:brisk",
+  "headword": "brisk",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "active, energetic, and moving or occurring at a lively, rapid pace.",
+  "meaningVi": "nhanh nhẹn, sôi nổi, hoạt bát",
+  "existingExample": "Physicians advise older adults to take a brisk thirty-minute walk each morning for heart health.",
+  "mustContainOneOf": [
+   "brisk"
+  ]
+ },
+ {
+  "id": "vocab:spatial",
+  "headword": "spatial",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "relating to or occupying physical space, dimensions, and the relative position of objects.",
+  "meaningVi": "thuộc về không gian, định vị không gian",
+  "existingExample": "Urban planners rely on spatial data analysis to optimise public transit routes across megacities.",
+  "mustContainOneOf": [
+   "spatial"
+  ]
+ },
+ {
+  "id": "vocab:necessitate",
+  "headword": "necessitate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to make a particular action, measure, or response logically or practically necessary.",
+  "meaningVi": "đòi hỏi, làm cho trở nên bắt buộc",
+  "existingExample": "Ageing populations will inevitably necessitate substantial reforms to national pension systems.",
+  "mustContainOneOf": [
+   "necessitate",
+   "necessitates",
+   "necessitated",
+   "necessitating"
+  ]
+ },
+ {
+  "id": "vocab:rampant",
+  "headword": "rampant",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "flourishing or spreading unchecked in an unwelcome, harmful, or excessive manner.",
+  "meaningVi": "lan tràn, hoành hành mất kiểm soát",
+  "existingExample": "Weak regulatory oversight allowed rampant deforestation to devastate vast tracts of tropical rainforest.",
+  "mustContainOneOf": [
+   "rampant"
+  ]
+ },
+ {
+  "id": "vocab:regime",
+  "headword": "regime",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "a system of government or administration, or a prescribed structured system of diet or training.",
+  "meaningVi": "chế độ chính trị; chế độ sinh hoạt nghiêm ngặt",
+  "existingExample": "A strict regulatory regime is indispensable for preventing financial institutions from taking reckless risks.",
+  "mustContainOneOf": [
+   "regime",
+   "regimes"
+  ]
+ },
+ {
+  "id": "vocab:daunting",
+  "headword": "daunting",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "seeming intimidating or difficult to deal with in prospect, causing apprehension.",
+  "meaningVi": "gây nản lòng, đầy thử thách cam go",
+  "existingExample": "Transitioning an entire national power grid to renewables remains a daunting engineering task.",
+  "mustContainOneOf": [
+   "daunting"
+  ]
+ },
+ {
+  "id": "vocab:relentless",
+  "headword": "relentless",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "continuing with unceasing intensity, harshness, or persistence without letting up.",
+  "meaningVi": "không ngừng nghỉ, quyết liệt không khoan nhượng",
+  "existingExample": "The relentless pace of technological disruption compels professionals to pursue lifelong reskilling.",
+  "mustContainOneOf": [
+   "relentless"
+  ]
+ },
+ {
+  "id": "vocab:breakneck",
+  "headword": "breakneck",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "dangerously, extraordinarily, or astonishingly fast in pace or development.",
+  "meaningVi": "nhanh chóng mặt, tốc độ cực nhanh",
+  "existingExample": "Artificial intelligence capabilities have expanded at breakneck speed over the last five years.",
+  "mustContainOneOf": [
+   "breakneck"
+  ]
+ },
+ {
+  "id": "vocab:noteworthy",
+  "headword": "noteworthy",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "work"
+  ],
+  "definitionEn": "sufficiently interesting, significant, or unusual to deserve special attention.",
+  "meaningVi": "đáng chú ý, đáng ghi nhận",
+  "existingExample": "A noteworthy finding of the survey was the sharp rise in remote work among mid-career parents.",
+  "mustContainOneOf": [
+   "noteworthy"
+  ]
+ },
+ {
+  "id": "vocab:considerable",
+  "headword": "considerable",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "transport"
+  ],
+  "definitionEn": "notably large in size, amount, extent, or significance.",
+  "meaningVi": "đáng kể, lớn về quy mô hoặc mức độ",
+  "existingExample": "Modernising ageing railway networks requires considerable public investment over several decades.",
+  "mustContainOneOf": [
+   "considerable"
+  ]
+ },
+ {
+  "id": "vocab:meaningful",
+  "headword": "meaningful",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "having a serious, important, useful, or worthwhile quality and purpose.",
+  "meaningVi": "có ý nghĩa sâu sắc, thiết thực",
+  "existingExample": "International summits must produce meaningful emissions commitments rather than vague declarations.",
+  "mustContainOneOf": [
+   "meaningful"
+  ]
+ },
+ {
+  "id": "vocab:important",
+  "headword": "important",
+  "pos": [
+   "adj"
+  ],
+  "level": 1,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "of great significance, value, or consequence in a particular context.",
+  "meaningVi": "quan trọng, có giá trị lớn",
+  "existingExample": "Early literacy plays an important role in narrowing socioeconomic gaps later in schooling.",
+  "mustContainOneOf": [
+   "important"
+  ]
+ },
+ {
+  "id": "vocab:prominent",
+  "headword": "prominent",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "important, famous, or immediately noticeable and standing out clearly.",
+  "meaningVi": "nổi bật, có vị thế quan trọng",
+  "existingExample": "Climate adaptation now occupies a prominent position on almost every municipal policy agenda.",
+  "mustContainOneOf": [
+   "prominent"
+  ]
+ },
+ {
+  "id": "vocab:vital",
+  "headword": "vital",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "absolutely necessary, indispensable, or essential for survival and success.",
+  "meaningVi": "sống còn, thiết yếu tối quan trọng",
+  "existingExample": "Clean drinking water is vital for reducing infant mortality in developing rural communities.",
+  "mustContainOneOf": [
+   "vital"
+  ]
+ },
+ {
+  "id": "vocab:crucial",
+  "headword": "crucial",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "decisive or critical, especially in determining the success or failure of something.",
+  "meaningVi": "then chốt, mang tính quyết định",
+  "existingExample": "Transparent communication is crucial for maintaining public trust during a public health emergency.",
+  "mustContainOneOf": [
+   "crucial"
+  ]
+ },
+ {
+  "id": "vocab:impactful",
+  "headword": "impactful",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "having a strong, lasting, and noticeable effect on people or outcomes.",
+  "meaningVi": "có sức tác động mạnh mẽ",
+  "existingExample": "Targeted scholarships for first-generation students proved to be the most impactful education reform.",
+  "mustContainOneOf": [
+   "impactful"
+  ]
+ },
+ {
+  "id": "vocab:remarkable",
+  "headword": "remarkable",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "worthy of special attention because of being extraordinary, striking, or unusual.",
+  "meaningVi": "đáng kinh ngạc, xuất sắc nổi bật",
+  "existingExample": "Solar panel manufacturing achieved a remarkable decline in unit costs within a single decade.",
+  "mustContainOneOf": [
+   "remarkable"
+  ]
+ },
+ {
+  "id": "vocab:sprout",
+  "headword": "sprout",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "urban"
+  ],
+  "definitionEn": "to begin to grow shoots or leaves, or to appear suddenly in large numbers.",
+  "meaningVi": "nảy mầm; mọc lên nhanh chóng",
+  "existingExample": "High-rise apartment complexes continue to sprout along suburban rail corridors around major cities.",
+  "mustContainOneOf": [
+   "sprout",
+   "sprouts",
+   "sprouted",
+   "sprouting"
+  ]
+ },
+ {
+  "id": "vocab:integrity",
+  "headword": "integrity",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "the quality of being honest with strong moral principles, or the state of being whole and undivided.",
+  "meaningVi": "sự chính trực, liêm khiết; tính toàn vẹn",
+  "existingExample": "Independent peer review safeguards the scientific integrity of published medical research.",
+  "mustContainOneOf": [
+   "integrity",
+   "integrities"
+  ]
+ },
+ {
+  "id": "vocab:hamper",
+  "headword": "hamper",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation",
+   "transport"
+  ],
+  "definitionEn": "to hinder, obstruct, or impede the progress or smooth movement of something.",
+  "meaningVi": "cản trở, gây trở ngại cho",
+  "existingExample": "Outdated transport infrastructure continues to hamper regional trade across developing provinces.",
+  "mustContainOneOf": [
+   "hamper",
+   "hampers",
+   "hampered",
+   "hampering"
+  ]
+ },
+ {
+  "id": "vocab:unsettling",
+  "headword": "unsettling",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "causing anxiety, uneasiness, or disturbance to one's sense of security.",
+  "meaningVi": "gây bất an, đáng lo ngại",
+  "existingExample": "The rapid spread of convincing deepfake videos raises unsettling questions about digital truth.",
+  "mustContainOneOf": [
+   "unsettling"
+  ]
+ },
+ {
+  "id": "vocab:wheeze",
+  "headword": "wheeze",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "family",
+   "health"
+  ],
+  "definitionEn": "to breathe with a whistling or rattling sound in the chest due to narrowed airways.",
+  "meaningVi": "thở khò khè (triệu chứng hô hấp)",
+  "existingExample": "Chronic exposure to fine particulate smog causes vulnerable children to cough and wheeze frequently.",
+  "mustContainOneOf": [
+   "wheeze",
+   "wheezes",
+   "wheezed",
+   "wheezing"
+  ]
+ },
+ {
+  "id": "vocab:whopping",
+  "headword": "whopping",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation",
+   "environment"
+  ],
+  "definitionEn": "remarkably or extraordinarily large in quantity, cost, or scale.",
+  "meaningVi": "khổng lồ, cực kỳ lớn (con số)",
+  "existingExample": "Global food supply chains waste a whopping one-third of all edible produce each year.",
+  "mustContainOneOf": [
+   "whopping"
+  ]
+ },
+ {
+  "id": "vocab:slender",
+  "headword": "slender",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "gracefully thin in shape, or very small and barely sufficient in amount or likelihood.",
+  "meaningVi": "mảnh mai; mong manh, ít ỏi",
+  "existingExample": "Start-ups often operate on slender profit margins during their first three years of expansion.",
+  "mustContainOneOf": [
+   "slender"
+  ]
+ },
+ {
+  "id": "vocab:insemination",
+  "headword": "insemination",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology",
+   "animals"
+  ],
+  "definitionEn": "the introduction of semen into a female organism for reproduction, often via assisted techniques.",
+  "meaningVi": "sự thụ tinh (sinh học, nông nghiệp)",
+  "existingExample": "Artificial insemination programmes have helped wildlife biologists revive critically endangered mammal populations.",
+  "mustContainOneOf": [
+   "insemination",
+   "inseminations"
+  ]
+ },
+ {
+  "id": "vocab:strut",
+  "headword": "strut",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to walk with a stiff, erect, and ostentatiously proud or confident gait.",
+  "meaningVi": "bước đi vênh váo, nghênh ngang",
+  "existingExample": "Male peacocks strut across open clearings displaying vibrant plumage to attract potential mates.",
+  "mustContainOneOf": [
+   "strut",
+   "struts",
+   "struted",
+   "struting"
+  ]
+ },
+ {
+  "id": "vocab:semi_arid",
+  "headword": "semi-arid",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "environment",
+   "food"
+  ],
+  "definitionEn": "characterised by light annual rainfall and sparse vegetation, transitional between desert and grassland.",
+  "meaningVi": "bán khô hạn (khí hậu)",
+  "existingExample": "Drought-resistant crop varieties are transforming agriculture across vulnerable semi-arid regions.",
+  "mustContainOneOf": [
+   "semi-arid",
+   "semi arid"
+  ]
+ },
+ {
+  "id": "vocab:contender",
+  "headword": "contender",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a person, organisation, or option competing seriously to achieve victory or leadership.",
+  "meaningVi": "ứng cử viên nặng ký, đối thủ cạnh tranh",
+  "existingExample": "Green hydrogen has emerged as a serious contender for decarbonising heavy maritime shipping.",
+  "mustContainOneOf": [
+   "contender",
+   "contenders"
+  ]
+ },
+ {
+  "id": "vocab:electrocution",
+  "headword": "electrocution",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "severe injury or death caused by electric shock passing through the body.",
+  "meaningVi": "sự bị điện giật gây thương vong",
+  "existingExample": "Insulating overhead power lines has dramatically lowered bird electrocution rates along migration routes.",
+  "mustContainOneOf": [
+   "electrocution",
+   "electrocutions"
+  ]
+ },
+ {
+  "id": "vocab:afflict",
+  "headword": "afflict",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "urban",
+   "health"
+  ],
+  "definitionEn": "to cause persistent pain, suffering, distress, or severe problems for someone or something.",
+  "meaningVi": "gây đau khổ, hoành hành tác động xấu đến",
+  "existingExample": "Chronic respiratory illnesses disproportionately afflict residents living near busy urban motorways.",
+  "mustContainOneOf": [
+   "afflict",
+   "afflicts",
+   "afflicted",
+   "afflicting"
+  ]
+ },
+ {
+  "id": "vocab:recurrence",
+  "headword": "recurrence",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "the fact of a negative event, illness, or phenomenon happening again.",
+  "meaningVi": "sự tái phát, sự xảy ra lặp lại",
+  "existingExample": "Strengthening flood defences is essential to prevent the recurrence of devastating coastal inundation.",
+  "mustContainOneOf": [
+   "recurrence",
+   "recurrences"
+  ]
+ },
+ {
+  "id": "vocab:diameter",
+  "headword": "diameter",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a straight line passing from side to side through the centre of a circle or sphere.",
+  "meaningVi": "đường kính",
+  "existingExample": "Modern offshore wind turbines feature rotor blades exceeding two hundred metres in diameter.",
+  "mustContainOneOf": [
+   "diameter",
+   "diameters"
+  ]
+ },
+ {
+  "id": "vocab:intact",
+  "headword": "intact",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "not damaged, impaired, or diminished in any way; remaining complete and whole.",
+  "meaningVi": "nguyên vẹn, không bị hư hại",
+  "existingExample": "Preserving intact old-growth forests is far more effective for carbon storage than planting saplings.",
+  "mustContainOneOf": [
+   "intact"
+  ]
+ },
+ {
+  "id": "vocab:inextricably_linked",
+  "headword": "inextricably linked",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "So closely intertwined and mutually dependent that one factor cannot be separated from or analysed without the other.",
+  "meaningVi": "gắn kết chặt chẽ không thể tách rời",
+  "existingExample": "Public health experts emphasise that childhood nutrition and long-term educational attainment are inextricably linked.",
+  "mustContainOneOf": [
+   "inextricably linked",
+   "inextricably-linked"
+  ]
+ },
+ {
+  "id": "vocab:tantamount_to",
+  "headword": "tantamount to",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Equivalent in seriousness, effect, or moral weight to another typically undesirable act or condition.",
+  "meaningVi": "tương đương với, chẳng khác nào (thường mang nghĩa tiêu cực)",
+  "existingExample": "Ignoring verified safety warnings from site engineers was tantamount to gross negligence in the eyes of the tribunal.",
+  "mustContainOneOf": [
+   "tantamount to",
+   "tantamount-to"
+  ]
+ },
+ {
+  "id": "vocab:double_edged_sword",
+  "headword": "double-edged sword",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government",
+   "technology"
+  ],
+  "definitionEn": "A development, technology, or policy that simultaneously brings substantial benefits and serious adverse consequences.",
+  "meaningVi": "con dao hai lưỡi (vừa lợi vừa hại)",
+  "existingExample": "Generative automation represents a double-edged sword, boosting administrative efficiency while displacing entry-level clerical roles.",
+  "mustContainOneOf": [
+   "double-edged sword",
+   "double-edged-sword",
+   "double edged sword"
+  ]
+ },
+ {
+  "id": "vocab:watershed_moment",
+  "headword": "watershed moment",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "globalisation",
+   "government"
+  ],
+  "definitionEn": "A decisive turning point marking a profound, irreversible shift in history, policy, science, or cultural attitudes.",
+  "meaningVi": "thời khắc bước ngoặt mang tính lịch sử",
+  "existingExample": "The ratification of the global climate accord marked a watershed moment in international environmental diplomacy.",
+  "mustContainOneOf": [
+   "watershed moment",
+   "watershed-moment"
+  ]
+ },
+ {
+  "id": "vocab:vicious_circle",
+  "headword": "vicious circle",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "A self-reinforcing chain of adverse events in which each problem intensifies the next, making escape increasingly difficult.",
+  "meaningVi": "vòng luẩn quẩn tiêu cực tự khuếch đại",
+  "existingExample": "Underfunded public transit triggers declining ridership and falling revenues, trapping municipal operators in a vicious circle.",
+  "mustContainOneOf": [
+   "vicious circle",
+   "vicious-circle"
+  ]
+ },
+ {
+  "id": "vocab:bone_of_contention",
+  "headword": "bone of contention",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A persistent subject or issue over which opposing parties strongly disagree and repeatedly argue.",
+  "meaningVi": "tâm điểm tranh cãi, vấn đề gây bất đồng sâu sắc",
+  "existingExample": "Allocating water rights along transboundary rivers remains a recurring bone of contention between upstream and downstream nations.",
+  "mustContainOneOf": [
+   "bone of contention",
+   "bone-of-contention"
+  ]
+ },
+ {
+  "id": "vocab:bear_the_brunt",
+  "headword": "bear the brunt",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "To endure the worst impact, greatest hardship, or primary burden of an adverse event or policy change.",
+  "meaningVi": "gánh chịu hậu quả hoặc tác động nặng nề nhất",
+  "existingExample": "Low-income coastal households invariably bear the brunt of rising flood insurance premiums and extreme storm surges.",
+  "mustContainOneOf": [
+   "bear the brunt",
+   "bear-the-brunt"
+  ]
+ },
+ {
+  "id": "vocab:pave_the_way",
+  "headword": "pave the way",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation",
+   "technology"
+  ],
+  "definitionEn": "To create the necessary conditions, framework, or groundwork enabling a subsequent breakthrough or reform to occur.",
+  "meaningVi": "mở đường, tạo tiền đề thuận lợi cho bước tiến mới",
+  "existingExample": "Standardised cross-border data rules can pave the way for collaborative medical research across European hospitals.",
+  "mustContainOneOf": [
+   "pave the way",
+   "pave-the-way"
+  ]
+ },
+ {
+  "id": "vocab:shed_light_on",
+  "headword": "shed light on",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 5,
+  "topics": [
+   "family",
+   "economy"
+  ],
+  "definitionEn": "To clarify, explain, or reveal fresh evidence regarding a complex, obscure, or previously misunderstood topic.",
+  "meaningVi": "làm sáng tỏ, soi chiếu bản chất vấn đề",
+  "existingExample": "Longitudinal household surveys shed light on how early childhood reading habits shape adult economic mobility.",
+  "mustContainOneOf": [
+   "shed light on",
+   "shed-light-on"
+  ]
+ },
+ {
+  "id": "vocab:stem_the_tide",
+  "headword": "stem the tide",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To halt, slow down, or reverse the rapid growth of an undesirable trend or widespread crisis.",
+  "meaningVi": "ngăn chặn đà gia tăng, kìm hãm xu hướng tiêu cực",
+  "existingExample": "Targeted rural broadband investment and local grants are helping small towns stem the tide of youth depopulation.",
+  "mustContainOneOf": [
+   "stem the tide",
+   "stem-the-tide"
+  ]
+ },
+ {
+  "id": "vocab:strike_a_balance",
+  "headword": "strike a balance",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To reach a fair, workable compromise between two competing priorities, interests, or extremes.",
+  "meaningVi": "thiết lập sự cân bằng giữa hai yếu tố đối lập",
+  "existingExample": "Regulators must strike a balance between fostering technological innovation and safeguarding citizens' personal privacy.",
+  "mustContainOneOf": [
+   "strike a balance",
+   "strike-a-balance"
+  ]
+ }
+]
