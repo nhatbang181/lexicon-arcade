@@ -21,6 +21,11 @@ import {
   type Grade,
   type SRSCard,
 } from '../../core/srs/fsrsAdapter';
+import type { ProgressPayload } from '../../core/storage/repos/attemptRepo';
+import type { UserItemInput } from '../../core/storage/repos/userItemRepo';
+import { seededRng, shuffleSeeded } from './rng';
+
+export const R1_RETRY_MAX_ITEMS = 5;
 
 // ---------------------------------------------------------------------------
 // Constants & Labels
@@ -94,7 +99,7 @@ export function getR1DifficultyConfig(level: number): R1DifficultyConfig {
       allowedPassageLevels: ['P2', 'P3'],
       glossaryDefaultOn: false,
       allowParagraphHint: false,
-      targetSecPerQuestion: 65,
+      targetSecPerQuestion: clamped >= 8 ? 55 : 65,
       warnOverSec: null,
       mixTfngAndYnng: true,
     };
@@ -108,6 +113,52 @@ export function getR1DifficultyConfig(level: number): R1DifficultyConfig {
     warnOverSec: 90,
     mixTfngAndYnng: true,
   };
+}
+
+export interface R1CatalogCandidate {
+  id: string;
+  level: 'P1' | 'P2' | 'P3';
+  hasJudgeQuestions: boolean;
+  hasTfng?: boolean;
+  hasYnng?: boolean;
+}
+
+export interface SelectR1PassageOptions {
+  recentIds?: readonly string[];
+  seed?: string;
+  /** PP-05: ưu tiên bài có YNNG khi người học đã vững TFNG hoặc ở level ≥ 7. */
+  preferYnng?: boolean;
+}
+
+/**
+ * Chọn passage cho R1 theo `allowedPassageLevels` của `level`, tránh bài chơi trong 14 ngày gần đây
+ * và ưu tiên xen kẽ TFNG↔YNNG khi level ≥ 7 hoặc `preferYnng` bật (R1-1, PP-05).
+ */
+export function selectR1Passage<T extends R1CatalogCandidate>(
+  catalog: readonly T[],
+  level: number,
+  options: SelectR1PassageOptions = {},
+): T | null {
+  const judgePool = catalog.filter((c) => c.hasJudgeQuestions);
+  if (judgePool.length === 0) return catalog[0] ?? null;
+
+  const config = getR1DifficultyConfig(level);
+  const byLevel = judgePool.filter((c) => config.allowedPassageLevels.includes(c.level));
+  const pool = byLevel.length > 0 ? byLevel : judgePool;
+
+  const recentSet = new Set(options.recentIds ?? []);
+  const fresh = pool.filter((c) => !recentSet.has(c.id));
+  const candidates = fresh.length > 0 ? fresh : pool;
+
+  const rng = seededRng(options.seed ?? `r1:${level}:${candidates.length}`);
+  if (config.mixTfngAndYnng || options.preferYnng) {
+    const ynngOnes = candidates.filter((c) => c.hasYnng);
+    if (ynngOnes.length > 0) {
+      return shuffleSeeded(ynngOnes, rng)[0];
+    }
+  }
+
+  return shuffleSeeded(candidates, rng)[0];
 }
 
 // ---------------------------------------------------------------------------
@@ -488,6 +539,8 @@ export interface JudgeAttemptResult {
 
 export interface JudgeSessionState {
   passage: ReadingPassage;
+  /** Phiên "Ôn lại câu sai": 0 XP, không FSRS, không lưu attempt (C3). */
+  isRetry: boolean;
   level: number;
   difficulty: R1DifficultyConfig;
   items: JudgeQuestionEntry[];
@@ -504,6 +557,8 @@ export interface JudgeSessionState {
   startedAt: number;
   finished: boolean;
   finishedAt: number | null;
+  /** Nội dung thẻ `tfng:<qid>` cần ghi xuống `userItems` cho V1 (G1). */
+  producedItems: Record<string, UserItemInput>;
 }
 
 export function extractJudgeQuestions(passage: ReadingPassage): JudgeQuestionEntry[] {
@@ -532,6 +587,7 @@ export function createJudgeSession(
 
   return {
     passage,
+    isRetry: false,
     level: difficulty.level,
     difficulty,
     items,
@@ -548,6 +604,44 @@ export function createJudgeSession(
     startedAt,
     finished: items.length === 0,
     finishedAt: items.length === 0 ? startedAt : null,
+    producedItems: {},
+  };
+}
+
+/** Phiên "Ôn lại câu sai" (C3): tối đa 5 câu sai, 0 XP, 0 FSRS, không ghi attempt. */
+export function createJudgeRetrySession(
+  prev: JudgeSessionState,
+  nowMs: number = Date.now(),
+): JudgeSessionState | null {
+  const wrongQids = new Set(
+    prev.results
+      .filter((r) => !r.answerCorrect || !r.evidenceCheck.passed)
+      .slice(0, R1_RETRY_MAX_ITEMS)
+      .map((r) => r.qid),
+  );
+  const retryItems = prev.items.filter((it) => wrongQids.has(it.question.qid));
+  if (retryItems.length === 0) return null;
+
+  return {
+    passage: prev.passage,
+    isRetry: true,
+    level: prev.level,
+    difficulty: prev.difficulty,
+    items: retryItems,
+    currentIndex: 0,
+    selectedSpan: null,
+    noDirectInfo: false,
+    hintedParagraph: null,
+    hintUsedForCurrent: false,
+    lastResult: null,
+    results: [],
+    confusionMatrix: createEmptyConfusionMatrix(),
+    trapStats: {},
+    totalXp: 0,
+    startedAt: nowMs,
+    finished: false,
+    finishedAt: null,
+    producedItems: {},
   };
 }
 
@@ -695,12 +789,32 @@ export function submitJudgeVerdict(
     diagnosisVi = `Cả định vị lẫn kết luận đều lệch. Hãy tìm từ khoá & paraphrase dẫn về ${paraMention}.`;
   }
 
-  const xpEarned = state.hintUsedForCurrent ? Math.round(baseXp * 0.5) : baseXp;
+  const rawXp = state.hintUsedForCurrent ? Math.round(baseXp * 0.5) : baseXp;
+  const xpEarned = state.isRetry ? 0 : rawXp;
   const paraphraseSuggestions = extractParaphraseSuggestions(
     current.question.steps,
     current.question.qid,
   );
-  const retryCard = createTfngRetryCardIfNeeded(state.passage, current.question, outcome, now);
+  const retryCard = state.isRetry
+    ? null
+    : createTfngRetryCardIfNeeded(state.passage, current.question, outcome, now);
+
+  const nextProducedItems: Record<string, UserItemInput> = { ...state.producedItems };
+  if (retryCard && !state.isRetry) {
+    const tfngItemId = `tfng:${current.question.qid}`;
+    const firstEv = current.question.evidence[0];
+    const evidenceHint = firstEv
+      ? `Đoạn ${firstEv.paragraph}: “${firstEv.quote}”. `
+      : '';
+    nextProducedItems[tfngItemId] = {
+      id: tfngItemId,
+      kind: 'tfng',
+      front: current.question.prompt,
+      back: expectedKey,
+      noteVi: `${evidenceHint}${current.question.explanationVi}`.trim(),
+      source: 'r1',
+    };
+  }
 
   const attemptResult: JudgeAttemptResult = {
     qid: current.question.qid,
@@ -733,6 +847,7 @@ export function submitJudgeVerdict(
     confusionMatrix: recordConfusion(state.confusionMatrix, expectedKey, verdict),
     trapStats: recordTrapStat(state.trapStats, current.question.trapType, !answerCorrect),
     totalXp: state.totalXp + xpEarned,
+    producedItems: nextProducedItems,
   };
 }
 
@@ -762,6 +877,52 @@ export function nextJudgeQuestion(
     noDirectInfo: false,
     hintedParagraph: null,
     hintUsedForCurrent: false,
+  };
+}
+
+export interface R1JudgeProgressSnapshot {
+  progress: Omit<ProgressPayload, 'attemptId'>;
+  /** Nội dung thẻ `tfng:*` để ghi `userItemRepo.upsertWithCard(item, 'tfng_retry')` (G1). */
+  items: UserItemInput[];
+}
+
+/**
+ * Ảnh chụp tiến độ R1 Judge để lưu từng lượt và khi bấm "Lưu và thoát" (G3/TU-02).
+ * Trả về `null` khi chưa có câu nào hoặc là phiên retry.
+ */
+export function buildR1JudgeProgressSnapshot(
+  state: JudgeSessionState,
+  now: number = Date.now(),
+): R1JudgeProgressSnapshot | null {
+  if (state.isRetry || state.results.length === 0) return null;
+
+  const updatedCards = state.results
+    .map((r) => r.retryCard)
+    .filter((c): c is SRSCard => Boolean(c));
+
+  const perfectOrLucky = state.results.filter((r) => r.answerCorrect).length;
+
+  return {
+    progress: {
+      attempt: {
+        gameId: 'r1',
+        mode: 'training',
+        startedAt: state.startedAt,
+        endedAt: state.finishedAt ?? now,
+        score: perfectOrLucky,
+        total: Math.max(1, state.items.length),
+        xp: state.totalXp,
+        items: state.results.map((r) => ({
+          itemId: r.qid,
+          correct: r.answerCorrect && r.evidenceCheck.passed,
+          responseTimeMs: r.responseTimeMs,
+          trapType: r.trapType,
+        })),
+      },
+      updatedCards,
+      reviews: [],
+    },
+    items: Object.values(state.producedItems),
   };
 }
 

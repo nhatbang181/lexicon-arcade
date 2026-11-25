@@ -35,6 +35,8 @@ export interface ExamFrameProps {
 }
 
 const DEFAULT_EXAM_DURATION_SEC = 20 * 60;
+/** Đếm tham chiếu để tránh tắt nhầm examMode khi 2 ExamFrame chồng nhau (S-2). */
+let examModeRefCount = 0;
 
 export const ExamFrame: React.FC<ExamFrameProps> = ({
   title,
@@ -63,11 +65,15 @@ export const ExamFrame: React.FC<ExamFrameProps> = ({
     timeoutFiredRef.current = false;
   }, [durationSec]);
 
-  // Mute non-exam SFX while ExamFrame is active (docs/10-MOTION-AND-SOUND.md §3)
+  // Mute non-exam SFX while ExamFrame is active (docs/10-MOTION-AND-SOUND.md §3, S-2 ref-counted)
   useEffect(() => {
+    examModeRefCount += 1;
     sfxEngine.setExamMode(true);
     return () => {
-      sfxEngine.setExamMode(false);
+      examModeRefCount = Math.max(0, examModeRefCount - 1);
+      if (examModeRefCount === 0) {
+        sfxEngine.setExamMode(false);
+      }
     };
   }, []);
 
@@ -118,7 +124,7 @@ export const ExamFrame: React.FC<ExamFrameProps> = ({
         <div className="min-w-0">
           <div className="flex items-center gap-2">
             <span
-              className="px-2 py-0.5 text-[11px] font-bold uppercase tracking-wider rounded border"
+              className="px-2 py-0.5 text-xs font-bold uppercase tracking-wider rounded border"
               style={{
                 fontFamily: 'var(--font-mono)',
                 backgroundColor: 'var(--color-surface)',
@@ -126,7 +132,7 @@ export const ExamFrame: React.FC<ExamFrameProps> = ({
                 color: 'var(--color-text)',
               }}
             >
-              EXAM MODE
+              CHẾ ĐỘ THI
             </span>
             <h1 className="text-sm sm:text-base font-bold truncate" style={{ color: 'var(--color-text)' }}>
               {title}
@@ -151,7 +157,7 @@ export const ExamFrame: React.FC<ExamFrameProps> = ({
             <Button
               variant="primary"
               skill="exam"
-              size="sm"
+              size="md"
               leftIcon={<CheckCircle2 className="w-4 h-4" />}
               onClick={() => onSubmit('manual')}
               data-testid="exam-submit-btn"
@@ -163,7 +169,7 @@ export const ExamFrame: React.FC<ExamFrameProps> = ({
           {onExit && (
             <Button
               variant="secondary"
-              size="sm"
+              size="md"
               leftIcon={<LogOut className="w-4 h-4" />}
               onClick={onExit}
             >

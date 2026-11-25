@@ -1,4 +1,5 @@
 import type { GameDefinition } from '../registry';
+import R1TfngJudge from './R1TfngJudge';
 
 export const R1_GAME_DEFINITION: GameDefinition = {
   id: 'r1',
@@ -12,9 +13,10 @@ export const R1_GAME_DEFINITION: GameDefinition = {
   estMinutes: [10, 15],
   requires: {},
   modes: ['training', 'exam'],
-  load: () => import('./R1TfngJudge'),
+  load: async () => ({ default: R1TfngJudge }),
 };
 
 export * from './engine';
 export * from './readingLoader';
-export { default, R1TfngJudge } from './R1TfngJudge';
+export { R1TfngJudge };
+export default R1TfngJudge;

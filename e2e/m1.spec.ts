@@ -8,7 +8,7 @@ const VIEWPORTS = [
   { name: '1280', width: 1280, height: 800 },
 ] as const;
 
-const OUT_DIR = path.resolve(process.cwd(), 'e2e/screenshots/m1');
+const OUT_DIR = path.resolve(process.cwd(), 'test-results/m1');
 
 async function captureAllViewports(page: Page, slug: string): Promise<void> {
   for (const vp of VIEWPORTS) {
@@ -116,5 +116,25 @@ test.describe('M1 Full Flow: Onboarding -> Placement -> Today -> V1/V2/V3 -> Sta
     await expect(page.getByTestId('settings-import-backup')).toBeVisible();
 
     expect(consoleErrors).toEqual([]);
+  });
+
+  test('V3 hides Level before locking and supports keyboard listbox selection (V3-1, V3-5)', async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto('/#/play/v3', { waitUntil: 'networkidle' });
+
+    const listbox = page.getByRole('listbox');
+    await expect(listbox).toBeVisible({ timeout: 15_000 });
+
+    // V3-1: trước khi khoá không hiện nhãn Level / Bậc
+    await expect(page.getByText(/^Level \d+$/)).toHaveCount(0);
+    await expect(page.getByText(/^Bậc \d+$/)).toHaveCount(0);
+
+    // V3-5: chọn cụm 3 từ chỉ bằng bàn phím (focus listbox → Shift+ArrowRight ×2)
+    await listbox.focus();
+    await page.keyboard.press('Shift+ArrowRight');
+    await page.keyboard.press('Shift+ArrowRight');
+    await expect(page.getByText(/Đang chọn:/)).toBeVisible();
   });
 });

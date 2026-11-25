@@ -4,9 +4,36 @@ import type {
   ReadingQuestionGroup,
   Span,
 } from '../../core/content/schemas';
+import { accuracyToBand } from '../../core/band/tables';
 import { evaluateEvidence } from '../../core/scoring/evidence';
 import { isCardRetired } from '../../core/srs/faces';
 import { createNewCard, type SRSCard } from '../../core/srs/fsrsAdapter';
+import type { BandSnapshotRecord } from '../../core/storage/db';
+import type { ProgressPayload } from '../../core/storage/repos/attemptRepo';
+import type { UserItemInput } from '../../core/storage/repos/userItemRepo';
+import { seededRng, shuffleSeeded } from './rng';
+
+export const R2_RETRY_MAX_ITEMS = 5;
+
+export interface R2CatalogCandidate {
+  id: string;
+  level: 'P1' | 'P2' | 'P3';
+}
+
+/**
+ * Chọn passage cho R2 tránh bài chơi gần đây (R2-1), xáo có seed.
+ */
+export function selectR2Passage<T extends R2CatalogCandidate>(
+  catalog: readonly T[],
+  options: { recentIds?: readonly string[]; seed?: string } = {},
+): T | null {
+  if (catalog.length === 0) return null;
+  const recentSet = new Set(options.recentIds ?? []);
+  const fresh = catalog.filter((c) => !recentSet.has(c.id));
+  const pool = fresh.length > 0 ? fresh : catalog;
+  const rng = seededRng(options.seed ?? `r2:${pool.length}`);
+  return shuffleSeeded(pool, rng)[0];
+}
 
 // ---------------------------------------------------------------------------
 // Types & Constants (docs/games/R2-HEADLINE-EDITOR.md)
@@ -82,6 +109,8 @@ export interface HeadlineSessionState {
   passageTitle: string;
   passageLevel: 'P1' | 'P2' | 'P3';
   reserved: boolean;
+  /** Phiên "Ôn lại câu sai": 0 XP, 0 FSRS, không lưu attempt (C3). */
+  isRetry: boolean;
   mode: 'training' | 'exam';
   level: number;
   config: R2DifficultyConfig;
@@ -108,6 +137,8 @@ export interface HeadlineSessionState {
   totalXp: number;
   startedAt: number;
   endedAt: number | null;
+  /** Nội dung thẻ `head:<qid>` cần ghi xuống `userItems` cho V1 (G1). */
+  producedItems: Readonly<Record<string, UserItemInput>>;
 }
 
 export type R2EngineEvent =
@@ -557,6 +588,7 @@ export function createHeadlineSession(
     passageTitle: passage.title,
     passageLevel: passage.level,
     reserved: Boolean(passage.reserved),
+    isRetry: false,
     mode,
     level: config.level,
     config,
@@ -574,6 +606,47 @@ export function createHeadlineSession(
     totalXp: 0,
     startedAt: options.nowMs ?? Date.now(),
     endedAt: null,
+    producedItems: {},
+  };
+}
+
+/**
+ * Phiên "Ôn lại câu sai" (C3): tối đa 5 đoạn sai từ phiên vừa xong, 0 XP, 0 FSRS, không ghi attempt.
+ */
+export function createHeadlineRetrySession(
+  prev: HeadlineSessionState,
+  nowMs: number = Date.now(),
+): HeadlineSessionState | null {
+  const wrongLabels = new Set(
+    Object.values(prev.results)
+      .filter((r) => !r.headingCorrect)
+      .slice(0, R2_RETRY_MAX_ITEMS)
+      .map((r) => r.paragraphLabel),
+  );
+  if (wrongLabels.size === 0) return null;
+
+  const retryTasks = prev.tasks.filter((t) => wrongLabels.has(t.paragraphLabel));
+  if (retryTasks.length === 0) return null;
+
+  return {
+    ...prev,
+    isRetry: true,
+    mode: 'training',
+    config: { ...prev.config, gradingMode: 'per_paragraph' },
+    tasks: retryTasks,
+    currentIndex: 0,
+    assignedHeadings: {},
+    lockedParagraphs: {},
+    lockedHeadings: {},
+    userMainIdeaSpans: {},
+    paragraphDurationsSec: {},
+    results: {},
+    lastFeedback: null,
+    completed: false,
+    totalXp: 0,
+    startedAt: nowMs,
+    endedAt: null,
+    producedItems: {},
   };
 }
 
@@ -800,7 +873,7 @@ export function submitCurrentParagraph(
   const userSpan = state.userMainIdeaSpans[task.paragraphLabel] ?? null;
   const totalDur = (state.paragraphDurationsSec[task.paragraphLabel] ?? 0) + Math.max(0, durationSec);
 
-  const result = scoreParagraphHeadline({
+  const rawResult = scoreParagraphHeadline({
     task,
     allTasks: state.tasks,
     chosenHeadingKey: chosenKey,
@@ -808,10 +881,29 @@ export function submitCurrentParagraph(
     durationSec: totalDur,
     targetSecPerParagraph: state.config.targetSecPerParagraph,
   });
+  const result: ParagraphGradeResult = state.isRetry
+    ? { ...rawResult, baseXp: 0, speedBonusXp: 0, totalXp: 0 }
+    : rawResult;
 
-  const srsCard = !result.headingCorrect
-    ? createHeadRetrySrsCard(task.qid, state.reserved, new Date(nowMs)) ?? undefined
-    : undefined;
+  const srsCard =
+    !state.isRetry && !result.headingCorrect
+      ? createHeadRetrySrsCard(task.qid, state.reserved, new Date(nowMs)) ?? undefined
+      : undefined;
+
+  const nextProducedItems: Record<string, UserItemInput> = { ...state.producedItems };
+  if (srsCard && !state.isRetry) {
+    const headId = `head:${task.qid}`;
+    const headingText =
+      state.headings.find((h) => h.key === task.correctHeadingKey)?.text ?? task.correctHeadingKey;
+    nextProducedItems[headId] = {
+      id: headId,
+      kind: 'head',
+      front: task.paragraphText,
+      back: `${task.correctHeadingKey}. ${headingText}`,
+      noteVi: result.feedbackVi,
+      source: 'r2',
+    };
+  }
 
   // Lock the paragraph and lock its TRUE heading so later paragraphs cannot reuse it
   // Also ensure the wrong chosen heading (if wrong) is freed from assignedHeadings
@@ -848,6 +940,7 @@ export function submitCurrentParagraph(
     results: nextResults,
     lastFeedback: result,
     totalXp: nextTotalXp,
+    producedItems: nextProducedItems,
   };
 
   return { state: nextState, events };
@@ -930,6 +1023,7 @@ export function submitEntirePassage(
   const nextLockedParagraphs: Record<string, boolean> = { ...state.lockedParagraphs };
   const nextLockedHeadings: Record<string, string> = { ...state.lockedHeadings };
   const nextAssigned: Record<string, string> = { ...state.assignedHeadings };
+  const nextProducedItems: Record<string, UserItemInput> = { ...state.producedItems };
 
   let totalXp = state.totalXp;
 
@@ -938,7 +1032,7 @@ export function submitEntirePassage(
     const userSpan = state.userMainIdeaSpans[task.paragraphLabel] ?? null;
     const durSec = state.paragraphDurationsSec[task.paragraphLabel] ?? avgFallbackSec;
 
-    const res = scoreParagraphHeadline({
+    const rawRes = scoreParagraphHeadline({
       task,
       allTasks: state.tasks,
       chosenHeadingKey: chosenKey,
@@ -946,6 +1040,9 @@ export function submitEntirePassage(
       durationSec: durSec,
       targetSecPerParagraph: state.config.targetSecPerParagraph,
     });
+    const res: ParagraphGradeResult = state.isRetry
+      ? { ...rawRes, baseXp: 0, speedBonusXp: 0, totalXp: 0 }
+      : rawRes;
 
     resultsList.push(res);
     nextResults[task.paragraphLabel] = res;
@@ -954,9 +1051,23 @@ export function submitEntirePassage(
     nextAssigned[task.paragraphLabel] = task.correctHeadingKey;
     totalXp += res.totalXp;
 
-    if (!res.headingCorrect) {
+    if (!state.isRetry && !res.headingCorrect) {
       const card = createHeadRetrySrsCard(task.qid, state.reserved, new Date(nowMs));
-      if (card) srsCards.push(card);
+      if (card) {
+        srsCards.push(card);
+        const headId = `head:${task.qid}`;
+        const headingText =
+          state.headings.find((h) => h.key === task.correctHeadingKey)?.text ??
+          task.correctHeadingKey;
+        nextProducedItems[headId] = {
+          id: headId,
+          kind: 'head',
+          front: task.paragraphText,
+          back: `${task.correctHeadingKey}. ${headingText}`,
+          noteVi: res.feedbackVi,
+          source: 'r2',
+        };
+      }
     }
   }
 
@@ -972,6 +1083,7 @@ export function submitEntirePassage(
     completed: true,
     totalXp,
     endedAt: nowMs,
+    producedItems: nextProducedItems,
   };
 
   return {
@@ -985,6 +1097,72 @@ export function submitEntirePassage(
         totalCount: editableTasks.length,
       },
     ],
+  };
+}
+
+export interface R2ProgressSnapshot {
+  progress: Omit<ProgressPayload, 'attemptId'>;
+  /** Nội dung thẻ `head:*` cần ghi `userItemRepo.upsertWithCard(item, 'head_retry')` (G1). */
+  items: UserItemInput[];
+  /** Bằng chứng band Reading khi hoàn thành chế độ exam (R2-3). */
+  bandEvidence?: Array<Omit<BandSnapshotRecord, 'id'>>;
+}
+
+/**
+ * Ảnh chụp tiến độ R2 để lưu từng đoạn và khi bấm "Lưu và thoát" (G3/TU-02, R2-3 bandEvidence).
+ * Trả về `null` khi chưa có đoạn nào được chấm hoặc là phiên retry.
+ */
+export function buildR2ProgressSnapshot(
+  state: HeadlineSessionState,
+  pendingSrsCards: readonly SRSCard[] = [],
+  now: number = Date.now(),
+): R2ProgressSnapshot | null {
+  if (state.isRetry) return null;
+  const editable = state.tasks.filter((t) => !t.isExample);
+  const results = editable
+    .map((t) => state.results[t.paragraphLabel])
+    .filter((r): r is ParagraphGradeResult => Boolean(r));
+  if (results.length === 0) return null;
+
+  const correctCount = results.filter((r) => r.headingCorrect).length;
+  const endedAt = state.endedAt ?? now;
+  const accuracy = editable.length > 0 ? correctCount / editable.length : 0;
+
+  return {
+    progress: {
+      attempt: {
+        gameId: 'r2',
+        mode: state.mode,
+        startedAt: state.startedAt,
+        endedAt,
+        score: correctCount,
+        total: Math.max(1, editable.length),
+        xp: state.totalXp,
+        items: results.map((r) => ({
+          itemId: `head:${r.qid}`,
+          correct: r.headingCorrect,
+          responseTimeMs: Math.round(r.durationSec * 1000),
+          trapType: r.distractorType,
+        })),
+      },
+      updatedCards: [...pendingSrsCards],
+      reviews: [],
+    },
+    items: Object.values(state.producedItems),
+    bandEvidence:
+      state.mode === 'exam' && state.completed
+        ? [
+            {
+              skill: 'R',
+              mode: 'exam',
+              ts: endedAt,
+              correct: correctCount,
+              total: editable.length,
+              band: accuracyToBand('R', accuracy),
+              sourceGameId: 'r2',
+            },
+          ]
+        : undefined,
   };
 }
 

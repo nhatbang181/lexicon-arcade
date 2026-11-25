@@ -1,4 +1,5 @@
 import type { GameDefinition } from '../registry';
+import R2HeadlineEditor from './R2HeadlineEditor';
 
 export const R2_GAME_DEFINITION: GameDefinition = {
   id: 'r2',
@@ -11,9 +12,10 @@ export const R2_GAME_DEFINITION: GameDefinition = {
   estMinutes: [10, 15],
   requires: {},
   modes: ['training', 'exam'],
-  load: () => import('./R2HeadlineEditor'),
+  load: async () => ({ default: R2HeadlineEditor }),
 };
 
 export * from './engine';
 export * from './readingLoader';
-export { default, R2HeadlineEditor } from './R2HeadlineEditor';
+export { R2HeadlineEditor };
+export default R2HeadlineEditor;

@@ -108,6 +108,26 @@ export function findSentenceBounds(text: string, offset: number): { start: numbe
   return { start: 0, end: text.length };
 }
 
+/** Tách đoạn văn thành danh sách câu không trùng nhau để điều hướng bằng phím ↑/↓ + Enter (R1-5). */
+export function splitParagraphSentences(text: string): TextSpan[] {
+  const sentences: TextSpan[] = [];
+  let cursor = 0;
+  while (cursor < text.length) {
+    while (cursor < text.length && /\s/.test(text[cursor])) cursor++;
+    if (cursor >= text.length) break;
+    const bounds = findSentenceBounds(text, cursor);
+    const trimmed = trimTextSpan(text, bounds.start, bounds.end);
+    if (trimmed) {
+      const prev = sentences[sentences.length - 1];
+      if (!prev || trimmed.start >= prev.end) {
+        sentences.push(trimmed);
+      }
+    }
+    cursor = Math.max(cursor + 1, bounds.end + 1);
+  }
+  return sentences;
+}
+
 /** Trim leading/trailing whitespace from a character span so quote matches exact non-space text. */
 export function trimTextSpan(text: string, start: number, end: number): TextSpan | null {
   let s = Math.max(0, Math.min(text.length, Math.min(start, end)));
@@ -243,11 +263,15 @@ export const Highlighter: React.FC<HighlighterProps> = ({
   const [pendingExamSpan, setPendingExamSpan] = useState<TextSpan | null>(null);
   const [editingNoteSpanId, setEditingNoteSpanId] = useState<string | null>(null);
   const [noteDraft, setNoteDraft] = useState('');
+  const [focusedSentenceIdx, setFocusedSentenceIdx] = useState<number>(-1);
+  const pointerDownRef = useRef<boolean>(false);
 
   const segments = useMemo(
     () => buildSegments(text, userSpans, answerSpans, examHighlights, glossaryTerms),
     [text, userSpans, answerSpans, examHighlights, glossaryTerms],
   );
+
+  const sentences = useMemo(() => splitParagraphSentences(text), [text]);
 
   // Auto-scroll to revealed yellow answer span
   const answerKey = answerSpans.map((s) => `${s.start}-${s.end}`).join(',');
@@ -279,37 +303,90 @@ export const Highlighter: React.FC<HighlighterProps> = ({
     return trimTextSpan(text, start, end);
   }, [text]);
 
-  const handlePointerFinish = useCallback(() => {
-    if (mode === 'readonly') return;
-    const span = readSelectionSpan();
-    if (span) {
-      if (mode === 'evidence') {
-        onSelectSpan?.(span);
-        window.getSelection()?.removeAllRanges();
-      } else if (mode === 'exam') {
-        setPendingExamSpan(span);
+  const handlePointerFinish = useCallback(
+    (e?: React.SyntheticEvent<HTMLDivElement>) => {
+      pointerDownRef.current = false;
+      if (mode === 'readonly') return;
+      const span = readSelectionSpan();
+      if (span) {
+        if (mode === 'evidence') {
+          onSelectSpan?.(span);
+          window.getSelection()?.removeAllRanges();
+        } else if (mode === 'exam') {
+          setPendingExamSpan(span);
+        }
+        return;
       }
-      return;
-    }
 
-    // If no drag selection and sentence-click mode is active, select the clicked sentence
-    if (mode === 'evidence' && clickSelectsSentence && containerRef.current) {
-      const sel = window.getSelection();
-      if (sel && sel.rangeCount > 0) {
-        const range = sel.getRangeAt(0);
-        if (containerRef.current.contains(range.startContainer)) {
-          const offset = getOffsetFromNode(containerRef.current, range.startContainer, range.startOffset);
-          if (offset !== null) {
-            const bounds = findSentenceBounds(text, offset);
-            const trimmed = trimTextSpan(text, bounds.start, bounds.end);
-            if (trimmed) {
-              onSelectSpan?.(trimmed);
-            }
+      // If no drag selection and sentence-click mode is active, select the clicked/tapped sentence
+      if (mode === 'evidence' && clickSelectsSentence && containerRef.current) {
+        let offset: number | null = null;
+        const sel = window.getSelection();
+        if (sel && sel.rangeCount > 0) {
+          const range = sel.getRangeAt(0);
+          if (containerRef.current.contains(range.startContainer)) {
+            offset = getOffsetFromNode(containerRef.current, range.startContainer, range.startOffset);
+          }
+        }
+        // Fallback cho cảm ứng mobile khi tap không tạo selection range (R1-5)
+        if (offset === null && e?.target instanceof Node) {
+          offset = getOffsetFromNode(containerRef.current, e.target, 0);
+        }
+        if (offset !== null) {
+          const bounds = findSentenceBounds(text, offset);
+          const trimmed = trimTextSpan(text, bounds.start, bounds.end);
+          if (trimmed) {
+            onSelectSpan?.(trimmed);
           }
         }
       }
-    }
-  }, [clickSelectsSentence, mode, onSelectSpan, readSelectionSpan, text]);
+    },
+    [clickSelectsSentence, mode, onSelectSpan, readSelectionSpan, text],
+  );
+
+  // R1-5: lắng nghe selectionchange cho thao tác kéo tay cầm chọn chữ trên iOS/Android
+  useEffect(() => {
+    if (mode === 'readonly' || typeof document === 'undefined') return;
+    let timer: number | undefined;
+    const onSelectionChange = () => {
+      if (pointerDownRef.current) return;
+      window.clearTimeout(timer);
+      timer = window.setTimeout(() => {
+        const span = readSelectionSpan();
+        if (!span) return;
+        if (mode === 'exam') {
+          setPendingExamSpan(span);
+        }
+      }, 180);
+    };
+    document.addEventListener('selectionchange', onSelectionChange);
+    return () => {
+      window.clearTimeout(timer);
+      document.removeEventListener('selectionchange', onSelectionChange);
+    };
+  }, [mode, readSelectionSpan]);
+
+  // R1-5: Điều hướng bàn phím theo câu (↑/↓ di chuyển, Enter/Space để bôi câu đang chọn)
+  const handleContainerKeyDown = useCallback(
+    (e: React.KeyboardEvent<HTMLDivElement>) => {
+      if (mode !== 'evidence' || !clickSelectsSentence || sentences.length === 0) return;
+      if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        setFocusedSentenceIdx((idx) => (idx < 0 ? 0 : Math.min(sentences.length - 1, idx + 1)));
+      } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        setFocusedSentenceIdx((idx) => (idx <= 0 ? 0 : idx - 1));
+      } else if (e.key === 'Enter' || e.key === ' ') {
+        const targetIdx = focusedSentenceIdx >= 0 ? focusedSentenceIdx : 0;
+        const sent = sentences[targetIdx];
+        if (sent) {
+          e.preventDefault();
+          onSelectSpan?.(sent);
+        }
+      }
+    },
+    [clickSelectsSentence, focusedSentenceIdx, mode, onSelectSpan, sentences],
+  );
 
   const handleContextMenu = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
@@ -372,11 +449,24 @@ export const Highlighter: React.FC<HighlighterProps> = ({
     >
       <div
         ref={containerRef}
-        onMouseUp={handlePointerFinish}
+        tabIndex={mode === 'evidence' && clickSelectsSentence ? 0 : undefined}
+        role={mode === 'evidence' && clickSelectsSentence ? 'region' : undefined}
+        aria-label={
+          mode === 'evidence' && clickSelectsSentence
+            ? `Đoạn ${paragraphLabel}: bấm chọn câu hoặc dùng phím mũi tên lên/xuống và Enter để bôi vật chứng`
+            : undefined
+        }
+        onPointerDown={() => {
+          pointerDownRef.current = true;
+        }}
+        onPointerUp={handlePointerFinish}
         onTouchEnd={handlePointerFinish}
-        onKeyUp={handlePointerFinish}
+        onKeyDown={handleContainerKeyDown}
+        onKeyUp={(e) => {
+          if (e.key === 'Shift' || e.shiftKey) handlePointerFinish(e);
+        }}
         onContextMenu={handleContextMenu}
-        className={`reading-prose select-text ${
+        className={`reading-prose select-text rounded-[var(--radius-sm)] focus:outline-none focus-visible:ring-2 ${
           mode === 'evidence' && clickSelectsSentence ? 'cursor-pointer' : 'cursor-text'
         }`}
         style={{
