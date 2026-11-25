@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-25T02:28:58.921Z",
+  "builtAt": "2026-11-25T02:32:51.378Z",
   "totals": {
     "dictation": 300,
     "listeningEpisodes": 32,
@@ -33,131 +33,131 @@
       "count": 300
     },
     "listening/episodes/p1_001.json": {
-      "sha256": "dbfeafa83f97723929001c7964c9f02b2dd4e4564b73a22b851ddaeaa82c3b65",
+      "sha256": "873b3bacb9c4708a132e34324de188d835833690880ba5120913c083d2e0f821",
       "count": 1
     },
     "listening/episodes/p1_002.json": {
-      "sha256": "058bc7ff86686c6e1d7478f986195f14887af3cfe688464a8866c63623142810",
+      "sha256": "67881c2590a9f955db12fa1e966549b8e859023120b961e7618676a66948cfbc",
       "count": 1
     },
     "listening/episodes/p1_003.json": {
-      "sha256": "1b3e5dd50a3db27f2a77185fc7e2dbf96a7fa7c2a60ae78415cf2a442726af51",
+      "sha256": "4243cac914aa8dccf6d93fdb133db3e5ef9dfa531dfb03775d5480b25b94869d",
       "count": 1
     },
     "listening/episodes/p1_004.json": {
-      "sha256": "5c5f4f31028c7811b36e72c7d548730b0cc447c1c01e6abdd3ca479d1414c6ee",
+      "sha256": "ab4d2b787d67baa5ed504616c70162d0233c35a439d924b9f07c7fedf2f0f4cc",
       "count": 1
     },
     "listening/episodes/p1_005.json": {
-      "sha256": "289933948754e643fe121d3a7fc792416491a683c3696cd234693b7fe6019399",
+      "sha256": "f291f4e8d5b106fac25619ae37468908aa22d6b973881cb6bea07c933443fd6d",
       "count": 1
     },
     "listening/episodes/p1_006.json": {
-      "sha256": "7097ee02ad8b0688b330b77af77bc0947d6ccd222f7014bb453ee152bd4f2fbb",
+      "sha256": "6a975ec708ee5ef741f02a1b4c68c83e294c5065da5b90f372f4f0a42f06273d",
       "count": 1
     },
     "listening/episodes/p1_res_001.json": {
-      "sha256": "08dbc27b399da1e8effe97afb1d7c8f8a2d1215105c40fa0cc912b23e8c50ebf",
+      "sha256": "e13210fbade612f02f7f942bbb4efd5aac61cff60aada45bd15d6e01ba3af866",
       "count": 1
     },
     "listening/episodes/p1_res_002.json": {
-      "sha256": "8d58e38c93a222b4057a015eddb78e69bacbaf06bf9c88b36f8d9e0c4918ee78",
+      "sha256": "b897c0a5f725ed67b2cea92fb3a1695f9011d4583cb7d3a1a13de3bc8ef7b3d8",
       "count": 1
     },
     "listening/episodes/p2_001.json": {
-      "sha256": "3c026f2cca7ff29777454f2ef7209fec957432e236a8d12ceb37450a3241ad5b",
+      "sha256": "71f93ca90914d3cb230b8de1da7abff5e5512c0de4d85fb699f9e4dc88f16713",
       "count": 1
     },
     "listening/episodes/p2_002.json": {
-      "sha256": "c98f0728d9fc019bccaa2ddbc9f03a1abee83c6636a80c9098126640d901bfaf",
+      "sha256": "b2bb0a55d84e70c868086e8a3768848e6dd8321bfb8201cf3986264221e51e86",
       "count": 1
     },
     "listening/episodes/p2_003.json": {
-      "sha256": "17a1db1b958c57fd7bf771eef00fac6a5094ed73146adf292c9daee76a2837d9",
+      "sha256": "e32731b55087d0665136679701ab34549adbad59f98f1921fbc39cdbb3e514ad",
       "count": 1
     },
     "listening/episodes/p2_004.json": {
-      "sha256": "1bf22346bc7d7ad6590a5c7c719358379fbf7dbbbde33309d313c94b81fe22d8",
+      "sha256": "a3e10e664807d25dda43ed4d272f2f50fc8120c51cbef35c72ce5d944e9ed2c5",
       "count": 1
     },
     "listening/episodes/p2_005.json": {
-      "sha256": "a1f5b8f0139cc0e245d4980e520380c5856f333c5deae1da646052ea3f5a39fd",
+      "sha256": "0c8ef3ce3c848d99724a2f7718b216802bf5168a91aefabcb117abaa85698f4a",
       "count": 1
     },
     "listening/episodes/p2_006.json": {
-      "sha256": "9df19a75f2f6ff908b59dc7fb176f6cd4236516e1b5f89bc854d9135a1a57316",
+      "sha256": "417208ed97246ec288dcb5c12bc6abfe00eb69db3fca8f59c78e7da7508766cb",
       "count": 1
     },
     "listening/episodes/p2_res_001.json": {
-      "sha256": "7c416c1bb9283ab6bd938c25355ea0251890f4981a3ff069dd995e74c0c7195f",
+      "sha256": "7020f0ad124435eef061d025a83c7a3f917b751862bdc7567efbfe23b63dea25",
       "count": 1
     },
     "listening/episodes/p2_res_002.json": {
-      "sha256": "3642e5bb0d49521ceaec9be674daa784519a6a873404bb20302d8b665e949305",
+      "sha256": "c8df22e53c26439017a5c170f5f4d23ec9b7fda06c057a319a626c4cd972ed91",
       "count": 1
     },
     "listening/episodes/p3_001.json": {
-      "sha256": "c06911e93d4dde0b015dace1d42d378153b5130f303b1d6a29a95b2154547343",
+      "sha256": "47e211cfb917e9e1ce11d97c489edb4557480cf2143c965fa0daf0c74dbf7765",
       "count": 1
     },
     "listening/episodes/p3_002.json": {
-      "sha256": "6164155ae1bc80ec8519848de6baa25a1202c38fcd84c75c960db3299b8221cd",
+      "sha256": "ef7e8e65e1fb1d5365afa3cf55e50ddc960d9bded9c1e3096dc45e7a3a657b6d",
       "count": 1
     },
     "listening/episodes/p3_003.json": {
-      "sha256": "24530c7e7d8745c7b65f0b000d0d2ba31ddb1a46bd43041774049a7c2f50f6ea",
+      "sha256": "b76a140c083c1783e3d67ca1c02d9a91312b783465a157e8c463234b5ae32a00",
       "count": 1
     },
     "listening/episodes/p3_004.json": {
-      "sha256": "be23e158696bdb724d3881b5528d471c36562c40dee5f5d44c0d0c0e16558195",
+      "sha256": "496e592620379455150b30cee944b36c5f8549a777fe8b487df5a3285e2987b3",
       "count": 1
     },
     "listening/episodes/p3_005.json": {
-      "sha256": "2929791f13ed8a512daedff106b529fa6aa219d8caa955da081bc488eae6cd66",
+      "sha256": "3886fa8004c7a409dc7133d2344ecd5f4e7824d2230481e825f33c4d04320df3",
       "count": 1
     },
     "listening/episodes/p3_006.json": {
-      "sha256": "4fd4c6fcc59d39a2c4361846795319b9fc8a487ae347f54b832bbb57c2f6dfe3",
+      "sha256": "09751d504e575d9052617ea9e792d9e2c4946cdfe4abdeee1f65bab8408f028e",
       "count": 1
     },
     "listening/episodes/p3_res_001.json": {
-      "sha256": "181c1d22eba80802f0bb84985bf2a773588f7d0a44dc1950429b450e6ae8ef2c",
+      "sha256": "2d30e0ca3dbf7ff4f535e8fbef7e67aa888da70c02c6c3c258716e85acee9124",
       "count": 1
     },
     "listening/episodes/p3_res_002.json": {
-      "sha256": "ea0f2f003e5ccd168f14524ae8f30ac580fd478ff9534e94f6de9166f5f91383",
+      "sha256": "0c281a3cc22f7ae306108a597b4fca07df029ba240ad1b2662f1eeb7fbd7d48e",
       "count": 1
     },
     "listening/episodes/p4_001.json": {
-      "sha256": "34a070d7290728d6aa38ffd3928930555fb8fbd36844655e3565b6f285df7481",
+      "sha256": "e8d954529c08019b4b9180a9b4dbf63250f8f8fa45d5f66a8570ec01449904b0",
       "count": 1
     },
     "listening/episodes/p4_002.json": {
-      "sha256": "bad712c8176174c16b4f37da4c7539da3a9c51969460a81303326d029262ae17",
+      "sha256": "1c48c405204c436ba4a3d53fce6ab15eabcd8123a8cef623e17004760b70d40e",
       "count": 1
     },
     "listening/episodes/p4_003.json": {
-      "sha256": "1fb698c56ad5b6d68a490b132fe943fb480457532c1ab508582db88a17af3caf",
+      "sha256": "a504e370d1fe24390caa59f5820a017b921c5465ea40b98783c13e719ba1b42d",
       "count": 1
     },
     "listening/episodes/p4_004.json": {
-      "sha256": "e76e241e583d1218bb0b5c697bf9069c99973b8c3121a31b0e43c35bf7ff3eda",
+      "sha256": "633fd6e26dcadf9f4a7c95811a604737e007f5cf818442f0194f9ecd5d481c20",
       "count": 1
     },
     "listening/episodes/p4_005.json": {
-      "sha256": "82c22fa4b85fa2f3fa9f50fb46bac8588cf7a7305159f701f57029bd486c333d",
+      "sha256": "634f483c5e4ce99135d116da3733d3518363e0f93cca07a0f5d94f8757b92e6d",
       "count": 1
     },
     "listening/episodes/p4_006.json": {
-      "sha256": "1eaea690317fbace315bd0dd038359fecf732c3703cd68ab463603aeb332aadb",
+      "sha256": "7f85904d9ff42b2029a141bd5dd825e34fe9295202b58ed8efed2cd575d2866d",
       "count": 1
     },
     "listening/episodes/p4_res_001.json": {
-      "sha256": "892e10788d28b58c6bf9e92bbbec599f7a8b8de3801a0671ee67d5cabd8d6ab4",
+      "sha256": "9fd1b53571eeb68638cf8d9b44b17f9ffc0de6150ac9f5c957f858fe20add8a3",
       "count": 1
     },
     "listening/episodes/p4_res_002.json": {
-      "sha256": "a38fb21d1693dc139123a1ce266cc9b66b14d0f6dcd3b9a54f3756b74794d7c9",
+      "sha256": "bfb659c35d11d08f68dafe0d3d7f2c00d0ef7a902c61b660208602204aac7920",
       "count": 1
     },
     "listening/index.json": {

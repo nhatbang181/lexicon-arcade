@@ -634,7 +634,8 @@
     "license": "edge-tts (personal use)",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
   },
   "audioProvenance": {
