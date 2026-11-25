@@ -11,6 +11,8 @@ export interface FeedbackPanelProps {
   correctAnswer?: string;
   explanation: string;
   evidenceQuote?: string;
+  /** PP-03 / PP-06: gợi ý ngắn "Lần sau để ý gì" khi trả lời sai/gần đúng. */
+  nextTipVi?: string;
   onNext: () => void;
   onFlagItem?: () => void;
   className?: string;
@@ -23,6 +25,7 @@ export const FeedbackPanel: React.FC<FeedbackPanelProps> = ({
   correctAnswer,
   explanation,
   evidenceQuote,
+  nextTipVi,
   onNext,
   onFlagItem,
   className = '',
@@ -122,6 +125,22 @@ export const FeedbackPanel: React.FC<FeedbackPanelProps> = ({
             >
               “{evidenceQuote}”
             </blockquote>
+          )}
+
+          {nextTipVi && (
+            <div
+              className="px-3.5 py-2.5 rounded-[var(--radius-sm)] border text-sm"
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--color-info) 10%, var(--color-surface-2))',
+                borderColor: 'color-mix(in srgb, var(--color-info) 35%, var(--color-border))',
+                color: 'var(--color-text)',
+              }}
+            >
+              <span className="font-semibold" style={{ color: 'var(--color-info)' }}>
+                Lần sau để ý:{' '}
+              </span>
+              <span>{nextTipVi}</span>
+            </div>
           )}
 
           <div className="flex items-center justify-end pt-1">
