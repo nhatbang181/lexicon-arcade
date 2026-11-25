@@ -15,6 +15,7 @@ import {
   type PreviousIssueRef,
   type Task1VisualDataInput,
   type WritingAttemptInput,
+  type WritingCapOptions,
   type WritingCriteriaBands,
   type WritingResult,
 } from '../../core/grading';
@@ -110,6 +111,8 @@ export interface EssayXpInput {
   mode: EssayMode;
   onTime: boolean;
   pasted: boolean;
+  /** True khi viết lại đề đã làm trước đó -> 0 XP (PP-C5). */
+  isRetry?: boolean;
 }
 
 export interface EssayXpBreakdown {
@@ -513,6 +516,8 @@ export function compareRevisionBands(
   v1: WritingCriteriaBands,
   v2: WritingCriteriaBands,
   taskType: WritingTaskType = 'task2',
+  v1CapOptions?: WritingCapOptions,
+  v2CapOptions?: WritingCapOptions,
 ): RevisionComparison {
   const keys: Array<'TR_TA' | 'CC' | 'LR' | 'GRA'> = ['TR_TA', 'CC', 'LR', 'GRA'];
   const labelMap: Record<'TR_TA' | 'CC' | 'LR' | 'GRA', string> = {
@@ -538,8 +543,8 @@ export function compareRevisionBands(
     }
   }
 
-  const overallV1 = computeWritingTaskBand(v1).overallBand;
-  const overallV2 = computeWritingTaskBand(v2).overallBand;
+  const overallV1 = computeWritingTaskBand(v1, v1CapOptions).overallBand;
+  const overallV2 = computeWritingTaskBand(v2, v2CapOptions).overallBand;
   const overallDelta = Number((overallV2 - overallV1).toFixed(1));
 
   const winMessageVi =
@@ -565,12 +570,23 @@ export function compareRevisionBands(
 // ---------------------------------------------------------------------------
 
 export function computeEssayXp(input: EssayXpInput): EssayXpBreakdown {
+  // SR-24 (Exam mode: 0 XP) & PP-C5 (retry: 0 XP)
+  if (input.mode === 'exam' || input.isRetry) {
+    return {
+      submitXp: 0,
+      checklistXp: 0,
+      gradeXp: 0,
+      revisionXp: 0,
+      examBonusXp: 0,
+      totalXp: 0,
+    };
+  }
+
   const submitXp = input.meetsMinimum ? 60 : 25;
   const checklistXp = input.checklistCompleted ? 10 : 0;
   const gradeXp = input.claudeGraded ? 20 : 0;
   const revisionXp = Math.max(0, input.improvedRevisionsCount) * 30;
-  const examBonusXp =
-    input.mode === 'exam' && input.onTime && input.meetsMinimum && !input.pasted ? 40 : 0;
+  const examBonusXp = 0;
 
   return {
     submitXp,

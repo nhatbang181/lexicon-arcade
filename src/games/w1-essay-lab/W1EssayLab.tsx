@@ -8,6 +8,7 @@ import {
   BookOpen,
   Check,
   CheckCircle2,
+  ChevronDown,
   Clock,
   Eye,
   EyeOff,
@@ -31,23 +32,21 @@ import {
   isWritingResult,
   type PreviousIssueRef,
   type SrsFeedbackItem,
+  type WritingCapOptions,
   type WritingCriteriaBands,
   type WritingResult,
 } from '../../core/grading';
-import { createNewCard } from '../../core/srs/fsrsAdapter';
+import { playSfx } from '../../core/audio/sfx';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import type { EssayRecord } from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { bandRepo } from '../../core/storage/repos/bandRepo';
-import { cardRepo } from '../../core/storage/repos/cardRepo';
-import { essayRepo } from '../../core/storage/repos/essayRepo';
+import { essayRepo, type EssayDraftRecord } from '../../core/storage/repos/essayRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
-import { Button, Card, EmptyState, Pill, Skeleton, Toast } from '../../design/components';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
+import { Button, Card, EmptyState, Modal, Pill, Skeleton, Toast } from '../../design/components';
 import { ChartRenderer, GradingPanel, type GradingPanelGradedPayload } from '../_shared';
 import type { GameProps } from '../registry';
-import {
-  TASK1_CLAUDE_RESPONSE,
-  TASK2_CLAUDE_RESPONSE,
-} from '../../test/fixtures/grading';
 import {
   advanceLifecycle,
   buildTask1Checklist,
@@ -118,11 +117,6 @@ function makeSimpleHash(input: string): string {
     hash = (hash * 31 + input.charCodeAt(i)) | 0;
   }
   return Math.abs(hash).toString(36).slice(0, 8);
-}
-
-function adaptSampleResponse(taskType: WritingTaskType, attemptId: string): string {
-  const base = taskType === 'task1' ? TASK1_CLAUDE_RESPONSE : TASK2_CLAUDE_RESPONSE;
-  return base.replace(/"attemptId"\s*:\s*"[^"]+"/, `"attemptId": "${attemptId}"`);
 }
 
 // ---------------------------------------------------------------------------
@@ -324,6 +318,8 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
   const [elapsedSec, setElapsedSec] = useState(0);
   const [timerPaused, setTimerPaused] = useState(false);
   const [lastSavedTime, setLastSavedTime] = useState<string | null>(null);
+  const [pendingDraft, setPendingDraft] = useState<EssayDraftRecord | null>(null);
+  const [showLeaveModal, setShowLeaveModal] = useState(false);
   const [pastedFlag, setPastedFlag] = useState(false);
   const [pasteWarning, setPasteWarning] = useState<string | null>(null);
 
@@ -336,6 +332,8 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
   const [previousIssues, setPreviousIssues] = useState<PreviousIssueRef[]>([]);
   const [revisionComparison, setRevisionComparison] = useState<RevisionComparison | null>(null);
   const [improvedRevisionsCount, setImprovedRevisionsCount] = useState(0);
+  const [forcedShortSubmit, setForcedShortSubmit] = useState(false);
+  const [devSampleResponse, setDevSampleResponse] = useState<string | undefined>(undefined);
 
   // Checklist & Toast
   const [checkedIds, setCheckedIds] = useState<Record<string, boolean>>({});
@@ -343,29 +341,43 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
   const [toastMsg, setToastMsg] = useState<string | null>(null);
 
   const sessionStartRef = useRef<number>(Date.now());
+  const elapsedSecRef = useRef<number>(0);
+  const progressAttemptIdRef = useRef<number | null>(null);
+  const firstGradeRecordedRef = useRef(false);
+  const isRetryPromptRef = useRef(false);
+  const examAutoSubmittedRef = useRef(false);
+  const v1CapOptionsRef = useRef<WritingCapOptions | undefined>(undefined);
+  const activeTask1FileRef = useRef<string | undefined>(undefined);
+
+  // Sync mode when PlayScreen passes mode prop
+  useEffect(() => {
+    setEssayMode(initialMode === 'exam' ? 'exam' : 'training');
+  }, [initialMode]);
 
   const showToast = useCallback((msg: string) => {
     setToastMsg(msg);
   }, []);
 
-  // Load initial data
+  // Load initial data + recoverable draft (W1-01)
   useEffect(() => {
     let cancelled = false;
     async function init() {
       setLoading(true);
       setLoadError(null);
       try {
-        const [t2, t1Idx, clicheList, existingEssays] = await Promise.all([
+        const [t2, t1Idx, clicheList, existingEssays, savedDraft] = await Promise.all([
           loadTask2Prompts(),
           loadTask1Index(),
           loadCliches(),
           essayRepo.list(),
+          essayRepo.loadDraft(),
         ]);
         if (cancelled) return;
         setTask2Prompts(t2);
         setTask1Entries(t1Idx);
         setCliches(clicheList);
         setCompletedPromptIds(new Set(existingEssays.map((e) => e.promptId)));
+        setPendingDraft(savedDraft);
       } catch (err) {
         if (!cancelled) {
           setLoadError(err instanceof Error ? err.message : 'Không tải được dữ liệu Writing.');
@@ -391,18 +403,6 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     return () => window.clearInterval(timer);
   }, [lifecycle.stage, timerPaused, essayMode]);
 
-  // Autosave indicator (debounced local draft timestamp)
-  useEffect(() => {
-    if ((lifecycle.stage !== 'write' && lifecycle.stage !== 'revise') || !essayText.trim()) return;
-    const handle = window.setTimeout(() => {
-      const now = new Date();
-      setLastSavedTime(
-        `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`,
-      );
-    }, 1200);
-    return () => window.clearTimeout(handle);
-  }, [essayText, lifecycle.stage]);
-
   // Derived values
   const wordEval = useMemo(() => evaluateWordCount(taskType, essayText), [taskType, essayText]);
   const timerEval = useMemo(
@@ -410,6 +410,84 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     [taskType, elapsedSec, essayMode],
   );
   const clicheMatches = useMemo(() => scanCliches(essayText, cliches), [essayText, cliches]);
+
+  // Keep latest elapsedSec in ref so autosave debounce isn't reset every 1s tick (W1-01)
+  useEffect(() => {
+    elapsedSecRef.current = elapsedSec;
+  }, [elapsedSec]);
+
+  // Helper: persist draft + in_progress attempt (W1-01, TU-02, F1)
+  const persistDraftNow = useCallback(async () => {
+    if (lifecycle.stage !== 'write' && lifecycle.stage !== 'revise') return;
+    const promptId = taskType === 'task1' ? activeTask1?.id : activeTask2?.id;
+    if (!promptId || !essayText.trim()) return;
+    await essayRepo.saveDraft({
+      taskType,
+      promptId,
+      task1File: activeTask1FileRef.current,
+      mode: essayMode,
+      text: essayText,
+      planNotes,
+      elapsedSec: elapsedSecRef.current,
+      revisionNumber: lifecycle.revisionNumber,
+      v1EssayId,
+    });
+    const now = new Date();
+    setLastSavedTime(
+      `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`,
+    );
+    try {
+      const res = await attemptRepo.saveProgress({
+        attemptId: progressAttemptIdRef.current ?? undefined,
+        attempt: {
+          gameId: 'w1',
+          mode: essayMode,
+          startedAt: sessionStartRef.current,
+          endedAt: Date.now(),
+          score: 0,
+          total: 1,
+          xp: 0,
+          items: [{ itemId: promptId, correct: false }],
+        },
+      });
+      progressAttemptIdRef.current = res.attemptId;
+    } catch {
+      // Non-blocking progress fallback
+    }
+  }, [
+    lifecycle.stage,
+    lifecycle.revisionNumber,
+    taskType,
+    activeTask1,
+    activeTask2,
+    essayMode,
+    essayText,
+    planNotes,
+    v1EssayId,
+  ]);
+
+  // Real debounced autosave into IndexedDB (W1-01)
+  useEffect(() => {
+    if ((lifecycle.stage !== 'write' && lifecycle.stage !== 'revise') || !essayText.trim()) return;
+    const handle = window.setTimeout(() => {
+      void persistDraftNow();
+    }, 1200);
+    return () => window.clearTimeout(handle);
+  }, [essayText, planNotes, lifecycle.stage, persistDraftNow]);
+
+  // Register progress saver for PlayScreen Esc modal + pagehide flush (TU-02, F1)
+  useEffect(() => {
+    if (lifecycle.stage !== 'write' && lifecycle.stage !== 'revise') return;
+    const unregister = registerProgressSaver(() => persistDraftNow());
+    const onPageHide = () => {
+      void persistDraftNow();
+    };
+    window.addEventListener('pagehide', onPageHide);
+    return () => {
+      unregister();
+      window.removeEventListener('pagehide', onPageHide);
+    };
+  }, [lifecycle.stage, persistDraftNow]);
 
   const checklistItems = useMemo(() => {
     if (taskType === 'task1' && activeTask1) {
@@ -461,10 +539,12 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     setTaskType('task2');
     setActiveTask2(prompt);
     setActiveTask1(null);
+    activeTask1FileRef.current = undefined;
     setEssayText('');
     setPlanNotes('');
     setElapsedSec(0);
     setTimerPaused(false);
+    setLastSavedTime(null);
     setPastedFlag(false);
     setPasteWarning(null);
     setSavedEssayId(null);
@@ -474,6 +554,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     setPreviousIssues([]);
     setRevisionComparison(null);
     setImprovedRevisionsCount(0);
+    setForcedShortSubmit(false);
     setCheckedIds({});
     setChecklistAwarded(false);
     setShowModel(false);
@@ -481,8 +562,13 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     setShowPlan(false);
     setAttemptId(`att-${prompt.id.replace(':', '-')}-${Date.now().toString(36)}`);
     sessionStartRef.current = Date.now();
+    progressAttemptIdRef.current = null;
+    firstGradeRecordedRef.current = false;
+    isRetryPromptRef.current = completedPromptIds.has(prompt.id);
+    examAutoSubmittedRef.current = false;
+    v1CapOptionsRef.current = undefined;
     setLifecycle(advanceLifecycle(createInitialLifecycle(), 'start_writing'));
-  }, []);
+  }, [completedPromptIds]);
 
   // Start a Task 1 prompt
   const startTask1 = useCallback(async (entry: Task1IndexEntry) => {
@@ -492,10 +578,12 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
       setTaskType('task1');
       setActiveTask1(fullPrompt);
       setActiveTask2(null);
+      activeTask1FileRef.current = entry.file;
       setEssayText('');
       setPlanNotes('');
       setElapsedSec(0);
       setTimerPaused(false);
+      setLastSavedTime(null);
       setPastedFlag(false);
       setPasteWarning(null);
       setSavedEssayId(null);
@@ -505,6 +593,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
       setPreviousIssues([]);
       setRevisionComparison(null);
       setImprovedRevisionsCount(0);
+      setForcedShortSubmit(false);
       setCheckedIds({});
       setChecklistAwarded(false);
       setShowModel(false);
@@ -512,13 +601,96 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
       setShowPlan(false);
       setAttemptId(`att-${fullPrompt.id.replace(':', '-')}-${Date.now().toString(36)}`);
       sessionStartRef.current = Date.now();
+      progressAttemptIdRef.current = null;
+      firstGradeRecordedRef.current = false;
+      isRetryPromptRef.current = completedPromptIds.has(fullPrompt.id);
+      examAutoSubmittedRef.current = false;
+      v1CapOptionsRef.current = undefined;
       setLifecycle(advanceLifecycle(createInitialLifecycle(), 'start_writing'));
     } catch (err) {
       showToast(err instanceof Error ? err.message : 'Không tải được đề Task 1.');
     } finally {
       setLoadingTask1Detail(false);
     }
+  }, [completedPromptIds, showToast]);
+
+  // Resume saved draft (W1-01)
+  const handleResumeDraft = useCallback(async () => {
+    if (!pendingDraft) return;
+    try {
+      if (pendingDraft.taskType === 'task2') {
+        const prompt = task2Prompts.find((p) => p.id === pendingDraft.promptId);
+        if (!prompt) {
+          showToast('Không tìm thấy đề Task 2 của bản nháp.');
+          return;
+        }
+        setTaskType('task2');
+        setActiveTask2(prompt);
+        setActiveTask1(null);
+        activeTask1FileRef.current = undefined;
+      } else {
+        const entry =
+          task1Entries.find((e) => e.id === pendingDraft.promptId) ??
+          (pendingDraft.task1File
+            ? task1Entries.find((e) => e.file === pendingDraft.task1File)
+            : undefined);
+        const fileToLoad = pendingDraft.task1File ?? entry?.file;
+        if (!fileToLoad) {
+          showToast('Không tìm thấy đề Task 1 của bản nháp.');
+          return;
+        }
+        setLoadingTask1Detail(true);
+        const fullPrompt = await loadTask1Prompt(fileToLoad);
+        setTaskType('task1');
+        setActiveTask1(fullPrompt);
+        setActiveTask2(null);
+        activeTask1FileRef.current = fileToLoad;
+      }
+
+      setEssayMode(pendingDraft.mode);
+      setEssayText(pendingDraft.text);
+      setPlanNotes(pendingDraft.planNotes);
+      setElapsedSec(pendingDraft.elapsedSec);
+      setTimerPaused(false);
+      setPastedFlag(false);
+      setPasteWarning(null);
+      setV1EssayId(pendingDraft.v1EssayId ?? null);
+      setForcedShortSubmit(false);
+      setAttemptId(`att-${pendingDraft.promptId.replace(':', '-')}-${Date.now().toString(36)}`);
+      sessionStartRef.current = Date.now();
+      progressAttemptIdRef.current = null;
+      firstGradeRecordedRef.current = false;
+      isRetryPromptRef.current = completedPromptIds.has(pendingDraft.promptId);
+      examAutoSubmittedRef.current = false;
+      setLifecycle({
+        stage: pendingDraft.revisionNumber > 0 ? 'revise' : 'write',
+        status: 'draft',
+        revisionNumber: pendingDraft.revisionNumber,
+        canReviseAgain: canReviseEssay(pendingDraft.revisionNumber),
+      });
+      setPendingDraft(null);
+      showToast('Đã khôi phục bài nháp đang viết.');
+    } catch (err) {
+      showToast(err instanceof Error ? err.message : 'Không khôi phục được bản nháp.');
+    } finally {
+      setLoadingTask1Detail(false);
+    }
+  }, [pendingDraft, task2Prompts, task1Entries, completedPromptIds, showToast]);
+
+  const handleDiscardDraft = useCallback(async () => {
+    await essayRepo.clearDraft();
+    setPendingDraft(null);
+    showToast('Đã xoá bản nháp cũ.');
   }, [showToast]);
+
+  // Confirm before leaving editor with >20 words (W1-02)
+  const handleRequestBackToSelect = useCallback(() => {
+    if (wordEval.wordCount > 20) {
+      setShowLeaveModal(true);
+      return;
+    }
+    setLifecycle(createInitialLifecycle());
+  }, [wordEval.wordCount]);
 
   const handleStartSuggested = useCallback(() => {
     if (taskType === 'task2') {
@@ -541,12 +713,23 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
   }, []);
 
   // Submit essay (v1 or revision)
-  const handleSubmitEssay = useCallback(async () => {
+  const handleSubmitEssay = useCallback(async (options?: { forced?: boolean }) => {
     const promptId = taskType === 'task1' ? activeTask1?.id : activeTask2?.id;
     if (!promptId) return;
+    if (!options?.forced && !wordEval.canGrade) return;
 
     const now = Date.now();
     const isRevision = lifecycle.revisionNumber > 0;
+    const isForcedShort = Boolean(options?.forced && !wordEval.canGrade);
+    setForcedShortSubmit(isForcedShort);
+
+    const activeAttemptId = isRevision
+      ? `att-${promptId.replace(':', '-')}-r${lifecycle.revisionNumber}-${now.toString(36)}`
+      : attemptId || `att-${promptId.replace(':', '-')}-${now.toString(36)}`;
+    if (isRevision) {
+      setAttemptId(activeAttemptId);
+    }
+
     const record: Omit<EssayRecord, 'id'> = {
       taskType,
       promptId,
@@ -559,13 +742,23 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
 
     try {
       const newId = await essayRepo.save(record);
+      await essayRepo.saveMeta({
+        essayId: newId,
+        attemptId: activeAttemptId,
+        pasted: pastedFlag,
+        mode: essayMode,
+        durationSec: elapsedSec,
+        gradedFirstTime: false,
+      });
+      await essayRepo.clearDraft();
+      setPendingDraft(null);
       setSavedEssayId(newId);
       if (!isRevision) {
         setV1EssayId(newId);
       }
       setCompletedPromptIds((prev) => new Set([...prev, promptId]));
 
-      // Save session XP on initial submit
+      // Finalize session XP on initial submit (Exam = 0 XP, retry = 0 XP)
       if (!isRevision) {
         const xpBreakdown = computeEssayXp({
           meetsMinimum: wordEval.meetsMinimum,
@@ -575,22 +768,36 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
           mode: essayMode,
           onTime: !timerEval.isOvertime,
           pasted: pastedFlag,
+          isRetry: isRetryPromptRef.current,
         });
-        await attemptRepo.saveSession({
-          attempt: {
-            gameId: 'w1',
-            mode: essayMode,
-            startedAt: sessionStartRef.current,
-            endedAt: now,
-            score: wordEval.meetsMinimum ? 1 : 0,
-            total: 1,
-            xp: xpBreakdown.totalXp,
-            items: [{ itemId: promptId, correct: wordEval.meetsMinimum }],
-          },
-        });
-        showToast(`Đã lưu bài viết (+${xpBreakdown.totalXp} XP). Tiếp tục tự chấm & nhờ Claude chấm!`);
+        const sessionAttempt = {
+          gameId: 'w1' as const,
+          mode: essayMode,
+          startedAt: sessionStartRef.current,
+          endedAt: now,
+          score: wordEval.meetsMinimum ? 1 : 0,
+          total: 1,
+          xp: xpBreakdown.totalXp,
+          items: [{ itemId: promptId, correct: wordEval.meetsMinimum }],
+        };
+        if (progressAttemptIdRef.current !== null) {
+          await attemptRepo.finalize(progressAttemptIdRef.current, { attempt: sessionAttempt });
+        } else {
+          await attemptRepo.saveSession({ attempt: sessionAttempt });
+        }
+        progressAttemptIdRef.current = null;
+        if (essayMode === 'exam') {
+          showToast(
+            isForcedShort
+              ? 'Đã hết giờ thi. Bài viết dưới 50 từ đã được lưu.'
+              : 'Đã nộp bài thi. Tiếp tục tự chấm & nhờ Claude chấm.',
+          );
+        } else if (xpBreakdown.totalXp > 0) {
+          showToast(`Đã lưu bài viết (+${xpBreakdown.totalXp} XP). Tiếp tục tự chấm & nhờ Claude chấm!`);
+        } else {
+          showToast('Đã lưu bài viết lại (0 XP). Tiếp tục tự chấm & nhờ Claude chấm!');
+        }
       } else {
-        setAttemptId(`att-${promptId.replace(':', '-')}-r${lifecycle.revisionNumber}-${now.toString(36)}`);
         showToast(`Đã lưu bản sửa v${lifecycle.revisionNumber + 1}. Copy gói chấm lại cho Claude!`);
       }
 
@@ -605,25 +812,41 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     activeTask1,
     activeTask2,
     lifecycle.revisionNumber,
+    attemptId,
     essayText,
     wordEval,
     v1EssayId,
     essayMode,
+    elapsedSec,
     timerEval.isOvertime,
     pastedFlag,
     showToast,
   ]);
 
-  // Checklist completion bonus
+  // Exam mode auto-submit on timeout (W1-03, SR-24)
+  useEffect(() => {
+    if (essayMode !== 'exam') return;
+    if (lifecycle.stage !== 'write' && lifecycle.stage !== 'revise') return;
+    if (timerEval.remainingSec > 0 || examAutoSubmittedRef.current) return;
+    examAutoSubmittedRef.current = true;
+    playSfx('timeup', { examMode: true });
+    void handleSubmitEssay({ forced: true });
+  }, [essayMode, lifecycle.stage, timerEval.remainingSec, handleSubmitEssay]);
+
+  // Checklist completion bonus (Training only, non-retry only: SR-24, PP-C5)
   useEffect(() => {
     if (manualChecklistDone && !checklistAwarded && lifecycle.stage === 'review') {
       setChecklistAwarded(true);
-      void profileRepo.getOrCreate().then((p) =>
-        profileRepo.update({ xp: p.xp + 10 }),
-      );
-      showToast('Hoàn thành checklist tự chấm (+10 XP)!');
+      if (essayMode !== 'exam' && !isRetryPromptRef.current) {
+        void profileRepo.getOrCreate().then((p) =>
+          profileRepo.update({ xp: p.xp + 10 }),
+        );
+        showToast('Hoàn thành checklist tự chấm (+10 XP)!');
+      } else {
+        showToast('Đã hoàn thành checklist tự chấm.');
+      }
     }
-  }, [manualChecklistDone, checklistAwarded, lifecycle.stage, showToast]);
+  }, [manualChecklistDone, checklistAwarded, lifecycle.stage, essayMode, showToast]);
 
   // Build grading packet input for GradingPanel
   const packetInput = useMemo(() => {
@@ -650,12 +873,57 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     lifecycle.revisionNumber,
   ]);
 
-  const sampleResponseForPanel = useMemo(
-    () => adaptSampleResponse(taskType, packetInput.attemptId),
-    [taskType, packetInput.attemptId],
+  // DEV-only sample Claude response (W1-04, SR-73: tree-shaken out of production bundle)
+  useEffect(() => {
+    if (!import.meta.env.DEV) {
+      setDevSampleResponse(undefined);
+      return;
+    }
+    let cancelled = false;
+    void import('../../test/fixtures/grading').then((mod) => {
+      if (cancelled) return;
+      const base = taskType === 'task1' ? mod.TASK1_CLAUDE_RESPONSE : mod.TASK2_CLAUDE_RESPONSE;
+      setDevSampleResponse(
+        base.replace(/"attemptId"\s*:\s*"[^"]+"/, `"attemptId": "${packetInput.attemptId}"`),
+      );
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [taskType, packetInput.attemptId]);
+
+  // Add SRS card + userItem content from GradingPanel feedback (W1-07, PP-11)
+  const upsertWritingSrsItem = useCallback(async (item: SrsFeedbackItem) => {
+    const isError = item.kind === 'error';
+    const prefix = isError ? 'err' : 'col';
+    const face = isError ? 'err_fix' : 'col_gap';
+    const itemId = `${prefix}:user_${makeSimpleHash(item.front + item.back)}`;
+    await userItemRepo.upsertWithCard(
+      {
+        id: itemId,
+        kind: isError ? 'error' : 'collocation',
+        front: item.front,
+        back: item.back,
+        noteVi: item.noteVi ?? (isError ? 'Lỗi Writing từ Claude feedback' : 'Cụm từ học thuật từ bài viết'),
+        source: 'w1',
+      },
+      face,
+      {
+        unlocked: true,
+        cardSource: 'essay_feedback',
+      },
+    );
+  }, []);
+
+  const handleAddSrsItem = useCallback(
+    async (item: SrsFeedbackItem) => {
+      await upsertWritingSrsItem(item);
+      showToast(`Đã thêm "${item.front}" vào hàng đợi ôn tập SRS!`);
+    },
+    [upsertWritingSrsItem, showToast],
   );
 
-  // Handle Claude result pasted & validated in GradingPanel
+  // Handle Claude result pasted & validated in GradingPanel (W1-05, W1-08, G-01..G-03, PP-16)
   const handleGraded = useCallback(
     async (payload: GradingPanelGradedPayload) => {
       const result = payload.postcheck.cleanedResult;
@@ -668,6 +936,12 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
         GRA: result.criteria.GRA.band,
       };
       const overallBand = payload.postcheck.computedOverallBand ?? 6.0;
+      const currentCapOptions: WritingCapOptions = {
+        kind: taskType,
+        wordCount: payload.postcheck.appWordCount,
+        relevance: result.relevance,
+        overviewPresent: result.task1?.overviewPresent ?? true,
+      };
 
       setLatestResult(result);
 
@@ -683,8 +957,16 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
         });
       }
 
-      // Record band evidence unless pasted
-      if (!pastedFlag) {
+      // Record band evidence ONLY on first grading of v1, non-pasted, non-retry, and postcheck allowed (W1-05, PP-16 / SR-89)
+      const canRecordBand =
+        !pastedFlag &&
+        payload.postcheck.allowBandEvidence &&
+        lifecycle.revisionNumber === 0 &&
+        !firstGradeRecordedRef.current &&
+        !isRetryPromptRef.current;
+
+      if (canRecordBand) {
+        firstGradeRecordedRef.current = true;
         await bandRepo.add({
           skill: 'W',
           mode: essayMode === 'exam' ? 'exam' : 'training',
@@ -693,44 +975,70 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
           taskType,
           sourceGameId: 'w1',
         });
-      }
-
-      // Compare v1 vs v2 if this is a revision
-      let bonusXp = 20;
-      if (lifecycle.revisionNumber === 0) {
-        setV1Criteria(criteriaBands);
-      } else if (v1Criteria) {
-        const comp = compareRevisionBands(v1Criteria, criteriaBands, taskType);
-        setRevisionComparison(comp);
-        if (comp.improvedCount > 0) {
-          setImprovedRevisionsCount((c) => c + 1);
-          bonusXp += 30;
+        if (savedEssayId) {
+          await essayRepo.saveMeta({
+            essayId: savedEssayId,
+            attemptId: packetInput.attemptId,
+            pasted: pastedFlag,
+            mode: essayMode,
+            durationSec: elapsedSec,
+            gradedFirstTime: true,
+          });
         }
       }
 
-      const profile = await profileRepo.getOrCreate();
-      await profileRepo.update({ xp: profile.xp + bonusXp });
+      // Auto-add error SRS items into userItems + cards (W1-08, PP-11)
+      const errorItems = result.srsItems.filter((item) => item.kind === 'error');
+      for (const errItem of errorItems) {
+        await upsertWritingSrsItem(errItem);
+      }
+
+      // Compare v1 vs v2 with capOptions (G-03)
+      let bonusXp = essayMode === 'exam' || isRetryPromptRef.current ? 0 : 20;
+      if (lifecycle.revisionNumber === 0) {
+        setV1Criteria(criteriaBands);
+        v1CapOptionsRef.current = currentCapOptions;
+      } else if (v1Criteria) {
+        const comp = compareRevisionBands(
+          v1Criteria,
+          criteriaBands,
+          taskType,
+          v1CapOptionsRef.current,
+          currentCapOptions,
+        );
+        setRevisionComparison(comp);
+        if (comp.improvedCount > 0) {
+          setImprovedRevisionsCount((c) => c + 1);
+          if (essayMode !== 'exam' && !isRetryPromptRef.current) {
+            bonusXp += 30;
+          }
+        }
+      }
+
+      if (bonusXp > 0) {
+        const profile = await profileRepo.getOrCreate();
+        await profileRepo.update({ xp: profile.xp + bonusXp });
+      }
 
       setLifecycle((prev) => advanceLifecycle(prev, 'grade_received'));
-      showToast(`Đã lưu kết quả Band ${overallBand.toFixed(1)} (+${bonusXp} XP)!`);
+      showToast(
+        bonusXp > 0
+          ? `Đã lưu kết quả ước lượng Band ${overallBand.toFixed(1)} (+${bonusXp} XP)!`
+          : `Đã lưu kết quả ước lượng Band ${overallBand.toFixed(1)}.`,
+      );
     },
-    [savedEssayId, pastedFlag, essayMode, taskType, lifecycle.revisionNumber, v1Criteria, showToast],
-  );
-
-  // Add SRS card from GradingPanel feedback
-  const handleAddSrsItem = useCallback(
-    async (item: SrsFeedbackItem) => {
-      const prefix = item.kind === 'error' ? 'err' : 'col';
-      const face = item.kind === 'error' ? 'err_fix' : 'col_gap';
-      const itemId = `${prefix}:user_${makeSimpleHash(item.front + item.back)}`;
-      const card = createNewCard(itemId, face, {
-        unlocked: true,
-        source: 'essay_feedback',
-      });
-      await cardRepo.upsert(card);
-      showToast(`Đã thêm "${item.front}" vào hàng đợi ôn tập SRS!`);
-    },
-    [showToast],
+    [
+      savedEssayId,
+      pastedFlag,
+      essayMode,
+      taskType,
+      lifecycle.revisionNumber,
+      v1Criteria,
+      packetInput.attemptId,
+      elapsedSec,
+      upsertWritingSrsItem,
+      showToast,
+    ],
   );
 
   // Start Revision (v2 / v3)
@@ -799,14 +1107,14 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
               Phòng luyện viết Academic & Chấm Claude
             </h1>
             <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-              Viết dưới áp lực giờ thi, bắt cụm sáo rỗng theo thời gian thực, copy gói chấm cho Claude và sửa bài để thấy Δ band.
+              Viết dưới áp lực giờ thi, bắt cụm sáo rỗng theo thời gian thực, sao chép gói chấm gửi Claude và sửa bài để xem mức tăng điểm.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
             <Button
               variant="secondary"
-              size="sm"
+              size="md"
               leftIcon={<FolderKanban className="w-4 h-4" />}
               onClick={() => navigate('/portfolio')}
             >
@@ -815,7 +1123,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
             <Button
               variant="primary"
               skill="writing"
-              size="sm"
+              size="md"
               leftIcon={<Sparkles className="w-4 h-4" />}
               onClick={handleStartSuggested}
             >
@@ -824,20 +1132,49 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
           </div>
         </div>
 
+        {/* Draft Recovery Banner (W1-01) */}
+        {pendingDraft && (
+          <Card padding="md" className="flex flex-wrap items-center justify-between gap-3">
+            <div className="space-y-1">
+              <div className="flex flex-wrap items-center gap-2">
+                <Pill tone="writing" size="sm">
+                  Nháp chưa nộp
+                </Pill>
+                <span className="text-xs font-mono" style={{ color: 'var(--color-text-dim)' }}>
+                  {pendingDraft.taskType === 'task1' ? 'Task 1' : 'Task 2'} · {pendingDraft.promptId} ·{' '}
+                  {evaluateWordCount(pendingDraft.taskType, pendingDraft.text).wordCount} từ ·{' '}
+                  {formatClock(pendingDraft.elapsedSec)}
+                </span>
+              </div>
+              <p className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
+                Tiếp tục bài đang viết?
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <Button variant="primary" skill="writing" size="sm" onClick={() => void handleResumeDraft()}>
+                Tiếp tục viết
+              </Button>
+              <Button variant="ghost" size="sm" onClick={() => void handleDiscardDraft()}>
+                Xoá nháp
+              </Button>
+            </div>
+          </Card>
+        )}
+
         {/* Task & Mode Switcher */}
         <Card padding="md" className="space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="inline-flex rounded-[var(--radius-md)] p-1 border" style={{ backgroundColor: 'var(--color-surface-2)', borderColor: 'var(--color-border)' }}>
+            <div className="inline-flex flex-wrap rounded-[var(--radius-md)] p-1 border" style={{ backgroundColor: 'var(--color-surface-2)', borderColor: 'var(--color-border)' }}>
               <button
                 type="button"
                 onClick={() => {
                   setTaskType('task2');
                   setTopicFilter('all');
                 }}
-                className="px-4 py-1.5 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
+                className="min-h-[44px] px-4 py-2 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
                 style={{
                   backgroundColor: taskType === 'task2' ? 'var(--color-writing)' : 'transparent',
-                  color: taskType === 'task2' ? '#0B0F1A' : 'var(--color-text-dim)',
+                  color: taskType === 'task2' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                 }}
               >
                 Task 2 · Essay ({task2Prompts.length})
@@ -848,17 +1185,17 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                   setTaskType('task1');
                   setTopicFilter('all');
                 }}
-                className="px-4 py-1.5 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
+                className="min-h-[44px] px-4 py-2 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
                 style={{
                   backgroundColor: taskType === 'task1' ? 'var(--color-writing)' : 'transparent',
-                  color: taskType === 'task1' ? '#0B0F1A' : 'var(--color-text-dim)',
+                  color: taskType === 'task1' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                 }}
               >
                 Task 1 · Visual ({task1Entries.length})
               </button>
             </div>
 
-            <div className="inline-flex items-center gap-2">
+            <div className="inline-flex flex-wrap items-center gap-2">
               <span className="text-xs font-medium" style={{ color: 'var(--color-text-dim)' }}>
                 Chế độ:
               </span>
@@ -867,14 +1204,14 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                   key={m}
                   type="button"
                   onClick={() => setEssayMode(m)}
-                  className="px-3 py-1 rounded-[var(--radius-sm)] text-xs font-semibold border cursor-pointer"
+                  className="min-h-[44px] px-3 py-2 rounded-[var(--radius-sm)] text-xs font-semibold border cursor-pointer"
                   style={{
                     backgroundColor: essayMode === m ? 'var(--color-surface-2)' : 'transparent',
                     borderColor: essayMode === m ? 'var(--color-writing)' : 'var(--color-border)',
                     color: essayMode === m ? 'var(--color-writing)' : 'var(--color-text-dim)',
                   }}
                 >
-                  {m === 'training' ? 'Training (có gợi ý)' : 'Exam (thi thật)'}
+                  {m === 'training' ? 'Luyện tập (có gợi ý)' : 'Thi thử (Exam)'}
                 </button>
               ))}
             </div>
@@ -887,11 +1224,11 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                 <button
                   type="button"
                   onClick={() => setEssayTypeFilter('all')}
-                  className="px-2.5 py-1 rounded-full text-xs font-medium border cursor-pointer"
+                  className="min-h-[44px] px-3 py-2 rounded-full text-xs font-medium border cursor-pointer"
                   style={{
                     backgroundColor: essayTypeFilter === 'all' ? 'var(--color-writing)' : 'var(--color-surface-2)',
                     borderColor: 'var(--color-border)',
-                    color: essayTypeFilter === 'all' ? '#0B0F1A' : 'var(--color-text-dim)',
+                    color: essayTypeFilter === 'all' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                   }}
                 >
                   Tất cả dạng
@@ -901,11 +1238,11 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                     key={et}
                     type="button"
                     onClick={() => setEssayTypeFilter(et)}
-                    className="px-2.5 py-1 rounded-full text-xs font-medium border cursor-pointer"
+                    className="min-h-[44px] px-3 py-2 rounded-full text-xs font-medium border cursor-pointer"
                     style={{
                       backgroundColor: essayTypeFilter === et ? 'var(--color-writing)' : 'var(--color-surface-2)',
                       borderColor: 'var(--color-border)',
-                      color: essayTypeFilter === et ? '#0B0F1A' : 'var(--color-text-dim)',
+                      color: essayTypeFilter === et ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                     }}
                   >
                     {ESSAY_TYPE_LABELS[et]}
@@ -917,11 +1254,11 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                 <button
                   type="button"
                   onClick={() => setChartKindFilter('all')}
-                  className="px-2.5 py-1 rounded-full text-xs font-medium border cursor-pointer"
+                  className="min-h-[44px] px-3 py-2 rounded-full text-xs font-medium border cursor-pointer"
                   style={{
                     backgroundColor: chartKindFilter === 'all' ? 'var(--color-writing)' : 'var(--color-surface-2)',
                     borderColor: 'var(--color-border)',
-                    color: chartKindFilter === 'all' ? '#0B0F1A' : 'var(--color-text-dim)',
+                    color: chartKindFilter === 'all' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                   }}
                 >
                   Tất cả biểu đồ
@@ -931,11 +1268,11 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                     key={ck}
                     type="button"
                     onClick={() => setChartKindFilter(ck)}
-                    className="px-2.5 py-1 rounded-full text-xs font-medium border cursor-pointer"
+                    className="min-h-[44px] px-3 py-2 rounded-full text-xs font-medium border cursor-pointer"
                     style={{
                       backgroundColor: chartKindFilter === ck ? 'var(--color-writing)' : 'var(--color-surface-2)',
                       borderColor: 'var(--color-border)',
-                      color: chartKindFilter === ck ? '#0B0F1A' : 'var(--color-text-dim)',
+                      color: chartKindFilter === ck ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                     }}
                   >
                     {CHART_KIND_LABELS[ck]}
@@ -944,29 +1281,36 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
               </>
             )}
 
-            <div className="ml-auto flex flex-wrap items-center gap-2">
-              <select
-                value={topicFilter}
-                onChange={(e) => setTopicFilter(e.target.value as Topic | 'all')}
-                className="text-xs px-2.5 py-1.5 rounded-[var(--radius-sm)] border"
-                style={{
-                  backgroundColor: 'var(--color-surface-2)',
-                  borderColor: 'var(--color-border)',
-                  color: 'var(--color-text)',
-                }}
-                aria-label="Lọc theo chủ đề"
-              >
-                <option value="all">Mọi chủ đề</option>
-                {availableTopics.map((t) => (
-                  <option key={t} value={t}>
-                    {t}
-                  </option>
-                ))}
-              </select>
+            <div className="w-full sm:w-auto sm:ml-auto flex flex-wrap items-center gap-3">
+              <div className="relative w-full sm:w-auto">
+                <select
+                  value={topicFilter}
+                  onChange={(e) => setTopicFilter(e.target.value as Topic | 'all')}
+                  className="appearance-none min-h-[44px] w-full sm:w-auto text-xs pl-3 pr-9 py-2 rounded-[var(--radius-sm)] border cursor-pointer"
+                  style={{
+                    backgroundColor: 'var(--color-surface-2)',
+                    borderColor: 'var(--color-border)',
+                    color: 'var(--color-text)',
+                  }}
+                  aria-label="Lọc theo chủ đề"
+                >
+                  <option value="all">Mọi chủ đề</option>
+                  {availableTopics.map((t) => (
+                    <option key={t} value={t}>
+                      {t}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown
+                  className="w-4 h-4 pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2"
+                  style={{ color: 'var(--color-text-dim)' }}
+                  aria-hidden="true"
+                />
+              </div>
 
-              <div className="relative">
+              <div className="relative w-full sm:w-auto">
                 <Search
-                  className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2"
+                  className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2"
                   style={{ color: 'var(--color-text-faint)' }}
                 />
                 <input
@@ -974,7 +1318,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Tìm đề..."
-                  className="text-xs pl-8 pr-3 py-1.5 rounded-[var(--radius-sm)] border w-44"
+                  className="min-h-[44px] text-xs pl-9 pr-3 py-2 rounded-[var(--radius-sm)] border w-full sm:w-48"
                   style={{
                     backgroundColor: 'var(--color-surface-2)',
                     borderColor: 'var(--color-border)',
@@ -1036,7 +1380,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                       <Button
                         variant="primary"
                         skill="writing"
-                        size="sm"
+                        size="md"
                         rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
                         onClick={() => startTask2(p)}
                       >
@@ -1093,7 +1437,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                     <Button
                       variant="primary"
                       skill="writing"
-                      size="sm"
+                      size="md"
                       rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
                       onClick={() => void startTask1(entry)}
                     >
@@ -1157,7 +1501,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
               variant="ghost"
               size="sm"
               leftIcon={<ArrowLeft className="w-4 h-4" />}
-              onClick={() => setLifecycle(createInitialLifecycle())}
+              onClick={handleRequestBackToSelect}
             >
               Chọn đề khác
             </Button>
@@ -1184,14 +1528,14 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                 title={timerEval.messageVi ?? undefined}
               >
                 {essayMode === 'exam'
-                  ? formatClock(timerEval.remainingSec)
+                  ? formatClock(Math.max(0, timerEval.remainingSec))
                   : `${formatClock(elapsedSec)} / ${formatClock(timerEval.recommendedSec)}`}
               </span>
               {essayMode === 'training' && (
                 <button
                   type="button"
                   onClick={() => setTimerPaused((p) => !p)}
-                  className="p-1 rounded border cursor-pointer"
+                  className="min-h-[44px] min-w-[44px] flex items-center justify-center rounded border cursor-pointer"
                   style={{
                     backgroundColor: 'var(--color-surface-2)',
                     borderColor: 'var(--color-border)',
@@ -1481,7 +1825,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                           &ldquo;{m.matchedText}&rdquo;
                         </span>
                         {m.count > 1 && (
-                          <span className="text-[11px] font-mono" style={{ color: 'var(--color-text-faint)' }}>
+                          <span className="text-xs font-mono" style={{ color: 'var(--color-text-faint)' }}>
                             ×{m.count}
                           </span>
                         )}
@@ -1490,14 +1834,14 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                         {m.whyAvoidVi}
                       </p>
                       <div className="space-y-1 pt-1">
-                        <span className="text-[11px] font-semibold" style={{ color: 'var(--color-correct)' }}>
+                        <span className="text-xs font-semibold" style={{ color: 'var(--color-correct)' }}>
                           Gợi ý Band 8.0:
                         </span>
                         <div className="flex flex-wrap gap-1">
                           {m.betterAlternatives.map((alt) => (
                             <span
                               key={alt}
-                              className="text-[11px] font-mono px-1.5 py-0.5 rounded border"
+                              className="text-xs font-mono px-1.5 py-0.5 rounded border"
                               style={{
                                 backgroundColor: 'var(--color-surface)',
                                 borderColor: 'var(--color-border)',
@@ -1562,7 +1906,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                             {kf.kind}
                           </Pill>
                           {kf.mustMention && (
-                            <span className="text-[11px] font-semibold" style={{ color: 'var(--color-writing)' }}>
+                            <span className="text-xs font-semibold" style={{ color: 'var(--color-writing)' }}>
                               Bắt buộc
                             </span>
                           )}
@@ -1576,6 +1920,48 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
             )}
           </div>
         </div>
+
+        <Modal
+          open={showLeaveModal}
+          onClose={() => setShowLeaveModal(false)}
+          title="Bỏ bài đang viết?"
+        >
+          <div className="space-y-4">
+            <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              Bạn đã viết {wordEval.wordCount} từ. Bạn có thể lưu nháp để viết tiếp sau hoặc bỏ bài này.
+            </p>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-2 justify-end">
+              <Button variant="ghost" size="sm" onClick={() => setShowLeaveModal(false)}>
+                Tiếp tục viết
+              </Button>
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={async () => {
+                  await persistDraftNow();
+                  const latest = await essayRepo.loadDraft();
+                  setPendingDraft(latest);
+                  setShowLeaveModal(false);
+                  setLifecycle(createInitialLifecycle());
+                }}
+              >
+                Lưu nháp & chọn đề khác
+              </Button>
+              <Button
+                variant="danger"
+                size="sm"
+                onClick={async () => {
+                  await essayRepo.clearDraft();
+                  setPendingDraft(null);
+                  setShowLeaveModal(false);
+                  setLifecycle(createInitialLifecycle());
+                }}
+              >
+                Bỏ bài
+              </Button>
+            </div>
+          </div>
+        </Modal>
 
         {toastMsg && (
           <div className="fixed bottom-4 right-4 z-50 max-w-sm">
@@ -1719,7 +2105,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
           </h3>
           {manualChecklistDone && (
             <Pill tone="correct" size="sm">
-              Đã hoàn thành (+10 XP)
+              {essayMode === 'exam' || isRetryPromptRef.current ? 'Đã hoàn thành' : 'Đã hoàn thành (+10 XP)'}
             </Pill>
           )}
         </div>
@@ -1760,7 +2146,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                 <div className="space-y-0.5">
                   <div style={{ color: 'var(--color-text)' }}>{item.labelVi}</div>
                   {item.detailEn && (
-                    <div className="font-mono text-[11px]" style={{ color: 'var(--color-text-dim)' }}>
+                    <div className="font-mono text-xs" style={{ color: 'var(--color-text-dim)' }}>
                       {item.detailEn}
                     </div>
                   )}
@@ -1772,15 +2158,27 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
       </Card>
 
       {/* Step 2: Claude Grading Panel (0 VND, Copy/Paste) */}
-      <GradingPanel
-        key={packetInput.attemptId}
-        packetInput={packetInput}
-        sourceText={essayText}
-        sampleResponse={sampleResponseForPanel}
-        skill="writing"
-        onGraded={(payload) => void handleGraded(payload)}
-        onAddSrsItem={(item) => void handleAddSrsItem(item)}
-      />
+      {forcedShortSubmit ? (
+        <Card padding="md" className="space-y-2">
+          <h3 className="text-sm font-bold flex items-center gap-2" style={{ color: 'var(--color-partial)' }}>
+            <AlertTriangle className="w-4 h-4" />
+            Đã hết giờ thi · Bài viết dưới 50 từ
+          </h3>
+          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+            Hệ thống đã tự lưu bài viết ({wordEval.wordCount} từ) vào Portfolio nhưng không tạo gói chấm Claude vì chưa đủ 50 từ tối thiểu.
+          </p>
+        </Card>
+      ) : (
+        <GradingPanel
+          key={packetInput.attemptId}
+          packetInput={packetInput}
+          sourceText={essayText}
+          sampleResponse={import.meta.env.DEV ? devSampleResponse : undefined}
+          skill="writing"
+          onGraded={(payload) => void handleGraded(payload)}
+          onAddSrsItem={(item) => void handleAddSrsItem(item)}
+        />
+      )}
 
       {/* Step 3: Band 8.0 Model Essay (Unlocked after submission) */}
       {showModel && (

@@ -276,8 +276,26 @@ describe('W1 Essay Lab pure engine', () => {
     expect(comparison.winMessageVi).toContain('LR 6.0 → 6.5');
   });
 
-  it('computes Essay Lab XP according to W1 §4.3 rules', () => {
-    const fullExam = computeEssayXp({
+  it('computes Essay Lab XP according to Training rules, 0 XP in Exam (SR-24) and retry (PP-C5)', () => {
+    const fullTraining = computeEssayXp({
+      meetsMinimum: true,
+      checklistCompleted: true,
+      claudeGraded: true,
+      improvedRevisionsCount: 1,
+      mode: 'training',
+      onTime: true,
+      pasted: false,
+    });
+    expect(fullTraining).toEqual({
+      submitXp: 60,
+      checklistXp: 10,
+      gradeXp: 20,
+      revisionXp: 30,
+      examBonusXp: 0,
+      totalXp: 120,
+    });
+
+    const examRun = computeEssayXp({
       meetsMinimum: true,
       checklistCompleted: true,
       claudeGraded: true,
@@ -286,26 +304,31 @@ describe('W1 Essay Lab pure engine', () => {
       onTime: true,
       pasted: false,
     });
-    expect(fullExam).toEqual({
-      submitXp: 60,
-      checklistXp: 10,
-      gradeXp: 20,
-      revisionXp: 30,
-      examBonusXp: 40,
-      totalXp: 160,
-    });
+    expect(examRun.totalXp).toBe(0);
 
-    const pastedExam = computeEssayXp({
+    const retryRun = computeEssayXp({
       meetsMinimum: true,
-      checklistCompleted: false,
-      claudeGraded: false,
-      improvedRevisionsCount: 0,
-      mode: 'exam',
+      checklistCompleted: true,
+      claudeGraded: true,
+      improvedRevisionsCount: 1,
+      mode: 'training',
       onTime: true,
-      pasted: true,
+      pasted: false,
+      isRetry: true,
     });
-    expect(pastedExam.examBonusXp).toBe(0);
-    expect(pastedExam.totalXp).toBe(60);
+    expect(retryRun.totalXp).toBe(0);
+  });
+
+  it('applies writing band caps in compareRevisionBands (G-03)', () => {
+    const comp = compareRevisionBands(
+      { TR_TA: 7.5, CC: 7.5, LR: 7.5, GRA: 7.5 },
+      { TR_TA: 7.5, CC: 7.5, LR: 7.5, GRA: 7.5 },
+      'task2',
+      { kind: 'task2', wordCount: 180, relevance: 'on_topic' },
+      { kind: 'task2', wordCount: 270, relevance: 'on_topic' },
+    );
+    expect(comp.overallV1).toBeLessThan(comp.overallV2);
+    expect(comp.overallDelta).toBeGreaterThan(0);
   });
 
   it('computes biasOffset calibration per docs/07 §6 (>=3 stats, >=5 & |diff|>=0.5 suggest offset)', () => {

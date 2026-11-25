@@ -313,6 +313,33 @@ describe('W2 Writing Sprints engine — 2. Idea Sprint', () => {
     const pickedHigh = selectIdeaPrompts([SAMPLE_TASK2_PROMPT, discussionPrompt], 8, 1);
     expect(pickedHigh[0].essayType).toBe('discussion');
   });
+
+  it('produces different queues across sessions using seed and excludeIds (W2-02)', () => {
+    const overviewPool = Array.from({ length: 12 }, (_, idx) => ({
+      id: `w1:${String(idx + 1).padStart(3, '0')}`,
+      kind: (['bar', 'line', 'pie'] as const)[idx % 3],
+    }));
+    const run1 = selectOverviewPrompts(overviewPool, 2, 6, { seed: 101 });
+    const run2 = selectOverviewPrompts(overviewPool, 2, 6, {
+      seed: 202,
+      excludeIds: new Set(run1.map((x) => x.id)),
+    });
+    const overlap = run2.filter((x) => run1.some((y) => y.id === x.id));
+    expect(overlap.length).toBe(0);
+
+    const ideaPool: WritingTask2Prompt[] = Array.from({ length: 8 }, (_, idx) => ({
+      ...SAMPLE_TASK2_PROMPT,
+      id: `w2:${String(idx + 1).padStart(3, '0')}`,
+      essayType: idx % 2 === 0 ? 'opinion' : 'adv_disadv',
+    }));
+    const idea1 = selectIdeaPrompts(ideaPool, 2, 4, { seed: 303 });
+    const idea2 = selectIdeaPrompts(ideaPool, 2, 4, {
+      seed: 404,
+      excludeIds: new Set(idea1.map((x) => x.id)),
+    });
+    const ideaOverlap = idea2.filter((x) => idea1.some((y) => y.id === x.id));
+    expect(ideaOverlap.length).toBe(0);
+  });
 });
 
 describe('W2 Writing Sprints engine — 3. Thesis Sprint', () => {

@@ -160,7 +160,53 @@ describe('grading/postcheck', () => {
 
     expect(report.cleanedResult.criteria.TR_TA.band).toBe(5.5);
     expect(report.warnings.some((w) => w.code === 'UNDER_LENGTH_CAP')).toBe(true);
-    expect(report.warnings.some((w) => w.code === 'ATTEMPT_ID_MISMATCH')).toBe(true);
+    const mismatchWarning = report.warnings.find((w) => w.code === 'ATTEMPT_ID_MISMATCH');
+    expect(mismatchWarning).toBeDefined();
+    expect(mismatchWarning?.blocking).toBe(true);
+    expect(report.attemptIdMismatch).toBe(true);
+    expect(report.hasBlockingWarning).toBe(true);
+    expect(report.allowBandEvidence).toBe(false);
+  });
+
+  it('blocks band evidence when > 50% quotes are hallucinated (G-02)', () => {
+    const parsed = parseGradingResponse(TASK2_CLAUDE_RESPONSE, { expectedKind: 'task2' });
+    expect(parsed.ok).toBe(true);
+    if (!parsed.ok) return;
+
+    const report = postcheckGradingResult(parsed.data, {
+      sourceText:
+        'Completely unrelated essay text discussing marine biology and deep sea coral ecosystems with zero overlap.',
+      expectedAttemptId: TASK2_FIXTURE_ATTEMPT.attemptId,
+    });
+
+    expect(report.quoteAudit.hiddenCount).toBeGreaterThan(report.quoteAudit.totalChecked / 2);
+    expect(report.warnings.some((w) => w.code === 'QUOTE_HALLUCINATION_BLOCK')).toBe(true);
+    expect(report.allowBandEvidence).toBe(false);
+  });
+
+  it('requires >= 3 specific verified feedback comments for band evidence (PP-16 / SR-89)', () => {
+    const parsed = parseGradingResponse(TASK2_CLAUDE_RESPONSE, { expectedKind: 'task2' });
+    expect(parsed.ok).toBe(true);
+    if (!parsed.ok) return;
+
+    const stripped = structuredClone(parsed.data);
+    stripped.criteria.TR_TA.strengths = stripped.criteria.TR_TA.strengths.slice(0, 1);
+    stripped.criteria.TR_TA.issues = [];
+    stripped.criteria.CC.strengths = [];
+    stripped.criteria.CC.issues = [];
+    stripped.criteria.LR.strengths = [];
+    stripped.criteria.LR.issues = [];
+    stripped.criteria.GRA.strengths = [];
+    stripped.criteria.GRA.issues = [];
+
+    const report = postcheckGradingResult(stripped, {
+      sourceText: TASK2_FIXTURE_ATTEMPT.essayText,
+      expectedAttemptId: TASK2_FIXTURE_ATTEMPT.attemptId,
+    });
+
+    expect(report.specificFeedbackCount).toBeLessThan(3);
+    expect(report.warnings.some((w) => w.code === 'INSUFFICIENT_SPECIFIC_FEEDBACK')).toBe(true);
+    expect(report.allowBandEvidence).toBe(false);
   });
 
   it('flags missing sprint item refs and strips unverified betterChunk', () => {
