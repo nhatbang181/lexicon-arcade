@@ -23,7 +23,7 @@ import {
   scheduleCard,
   type SRSCard,
 } from '../../core/srs/fsrsAdapter';
-import { buildReviewQueue } from '../../core/srs/queue';
+import { buildReviewQueue, type NewCardThrottleReason } from '../../core/srs/queue';
 import { isRareMasteredCard } from '../../core/gamification/xp';
 import { levenshteinDistance } from '../../core/text/answerMatch';
 import { normalizeText, normalizeTypography } from '../../core/text/normalize';
@@ -489,6 +489,12 @@ export interface V1RunState {
   content: V1ContentBundle;
   /** Thẻ đáng lẽ vào hàng đợi nhưng không dựng được nội dung (V1-2): bị bỏ, caller ghi `missing_item`. */
   missingItems: Array<{ cardId: string; itemId: string; face: string; reason?: 'missing_audio' }>;
+  /** FX-2 (PP-02 / PP-C4 / L-11): van tải thẻ mới và vòng phục hồi. */
+  effectiveNewCardsLimit: number;
+  newCardsThrottleReason: NewCardThrottleReason;
+  newCardsThrottleReasonVi: string | null;
+  recoveryMode: boolean;
+  recoveryReasonVi: string | null;
 }
 
 export interface CreateV1RunOptions {
@@ -500,6 +506,10 @@ export interface CreateV1RunOptions {
   newCardsDoneToday?: number;
   now?: Date;
   lastWeekAccuracy?: number | null;
+  /** Tỷ lệ nhớ lượt đầu 7 ngày gần nhất trong [0, 1] (van tải thẻ mới PP-C4). */
+  retention7d?: number | null;
+  /** Số ngày vắng theo mốc 04:00 giờ địa phương (vòng phục hồi PP-02). */
+  absenceDays?: number;
   startOnMap?: boolean;
   randomFn?: () => number;
 }
@@ -1597,6 +1607,31 @@ export function computeLastWeekAccuracy(
   return Math.round((score / total) * 100);
 }
 
+/**
+ * Tỷ lệ nhớ lượt đầu 7 ngày gần nhất [now − 7 ngày, now] của V1 trong [0, 1] (FX-2 · PP-C4).
+ * Không có dữ liệu → `null`.
+ */
+export function computeRecent7DayRetention(
+  attempts: ReadonlyArray<
+    Pick<AttemptRecord, 'gameId' | 'startedAt' | 'score' | 'total' | 'status' | 'reviewsSaved'>
+  >,
+  now: Date = new Date(),
+): number | null {
+  const to = now.getTime();
+  const from = to - WEEK_MS;
+  let score = 0;
+  let total = 0;
+  for (const a of attempts) {
+    if (a.gameId !== 'v1') continue;
+    if (a.status === 'in_progress' && (a.reviewsSaved ?? 0) <= 0) continue;
+    if (a.startedAt < from || a.startedAt > to) continue;
+    score += Math.max(0, a.score);
+    total += Math.max(0, a.total);
+  }
+  if (total <= 0) return null;
+  return Math.max(0, Math.min(1, score / total));
+}
+
 // ---------------------------------------------------------------------------
 // Queue Insertion & Scoring Logic
 // ---------------------------------------------------------------------------
@@ -2115,6 +2150,8 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     newCardsDoneToday = 0,
     now = new Date(),
     lastWeekAccuracy = null,
+    retention7d = null,
+    absenceDays = 0,
     startOnMap = false,
     randomFn = Math.random,
   } = options;
@@ -2156,11 +2193,19 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     }
   }
 
+  const vocabTopicById = new Map<string, string>();
+  for (const v of content.vocab) {
+    if (v.topics[0]) vocabTopicById.set(v.id, v.topics[0]);
+  }
+
   const queueResult = buildReviewQueue(renderable, {
     now,
     newCardsLimit,
     newCardsDoneToday,
     sessionLimit,
+    retention7d,
+    absenceDays,
+    getNewCardTopic: (card) => vocabTopicById.get(card.itemId),
   });
 
   let isExtraPractice = mode === 'extra_practice';
@@ -2286,6 +2331,11 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     lastWeekAccuracy,
     content,
     missingItems,
+    effectiveNewCardsLimit: queueResult.stats.effectiveNewCardsLimit,
+    newCardsThrottleReason: queueResult.stats.newCardsThrottleReason,
+    newCardsThrottleReasonVi: queueResult.stats.newCardsThrottleReasonVi,
+    recoveryMode: queueResult.stats.recoveryMode,
+    recoveryReasonVi: queueResult.stats.recoveryReasonVi,
   };
 }
 
