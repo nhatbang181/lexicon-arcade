@@ -2,7 +2,9 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useLocation } from 'wouter';
 import {
   ArrowRight,
+  Bell,
   Calendar,
+  CalendarPlus,
   CheckCircle2,
   Clock,
   Compass,
@@ -10,9 +12,12 @@ import {
   LayoutGrid,
   Play,
   RefreshCw,
+  ShieldAlert,
   Snowflake,
   Sparkles,
   Star,
+  Trophy,
+  Zap,
 } from 'lucide-react';
 import {
   BandMeter,
@@ -22,15 +27,27 @@ import {
   Pill,
   ProgressRing,
   Skeleton,
+  Toast,
 } from '../../design/components';
 import { useTheme } from '../../app/providers';
 import {
+  buildBusyDayPlan,
   buildTodayPlan,
+  computeFourStrands,
+  createKeepStreakTask,
   type DailyPlan,
+  type FourStrandsSummary,
   type GameId,
   type PlannedTask,
+  type StrandId,
 } from '../../core/planner/today';
-import { displayStreakCount, formatDateKey, msUntilNextDay } from '../../core/gamification/streak';
+import {
+  displayStreakCount,
+  formatDateKey,
+  msUntilNextDay,
+  type StreakEvent,
+} from '../../core/gamification/streak';
+import { shouldRemindBackup } from '../../core/storage/backup';
 import { db, type AttemptRecord, type UserProfile } from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { bandRepo } from '../../core/storage/repos/bandRepo';
@@ -39,16 +56,27 @@ import { planRepo } from '../../core/storage/repos/planRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
 import { GAME_REGISTRY, getGameById, isGameReady } from '../../games/registry';
 import { playPath } from '../../app/playTask';
+import { ScreenErrorState } from '../shared/ScreenErrorState';
+import { useAsyncData } from '../shared/useAsyncData';
+import { downloadDailyReminderIcs } from './icsReminder';
 import { ensureReadyTasks, swapToReadyGame } from './readyPlan';
 
 const ALL_GAME_IDS: GameId[] = GAME_REGISTRY.map((g) => g.id);
-
-/** Tên gọi mặc định khi chưa có tên trong hồ sơ (F11). */
 const DEFAULT_DISPLAY_NAME = 'bạn';
+const DEFAULT_REMINDER_TIME = '20:00';
+const REMINDER_TIME_KV = 'study_reminder_time';
+const REMINDER_DISMISSED_KV = 'reminder_dismissed_date';
+const BACKUP_DISMISSED_KV = 'backup_reminder_dismissed_date';
 
-interface TodayDataState {
-  loading: boolean;
-  profile: UserProfile | null;
+const STRAND_COLORS: Record<StrandId, string> = {
+  input: 'var(--color-listening)',
+  output: 'var(--color-writing)',
+  language: 'var(--color-vocab)',
+  fluency: 'var(--color-reading)',
+};
+
+interface TodayPayload {
+  profile: UserProfile;
   displayName: string;
   onboardingDone: boolean;
   onboardingSkipped: boolean;
@@ -57,28 +85,28 @@ interface TodayDataState {
   totalCardsCount: number;
   recentAttempts: AttemptRecord[];
   plan: DailyPlan | null;
+  fourStrands: FourStrandsSummary;
+  reminderTime: string;
+  showReminderBanner: boolean;
+  showBackupReminder: boolean;
+  backupDaysSince: number | null;
+  streakToast: StreakEvent | null;
 }
 
 export const TodayDashboard: React.FC = () => {
   const [, navigate] = useLocation();
   const { targetBands, dailyGoalMin, setTargetBands, setDailyGoalMin } = useTheme();
+  const [todayKey, setTodayKey] = useState(() => formatDateKey(new Date()));
+  const [localPlan, setLocalPlan] = useState<DailyPlan | null>(null);
+  const [busyMode, setBusyMode] = useState(false);
+  const [streakToast, setStreakToast] = useState<StreakEvent | null>(null);
+  const [reminderHidden, setReminderHidden] = useState(false);
+  const [backupBannerHidden, setBackupBannerHidden] = useState(false);
+  const [icsDownloaded, setIcsDownloaded] = useState(false);
 
-  const [state, setState] = useState<TodayDataState>({
-    loading: true,
-    profile: null,
-    displayName: DEFAULT_DISPLAY_NAME,
-    onboardingDone: false,
-    onboardingSkipped: false,
-    placementVocabBand: null,
-    dueCardsCount: 0,
-    totalCardsCount: 0,
-    recentAttempts: [],
-    plan: null,
-  });
-
-  const loadTodayData = useCallback(async () => {
+  const loadTodayData = useCallback(async (): Promise<TodayPayload> => {
     const now = new Date();
-    const todayKey = formatDateKey(now);
+    const key = formatDateKey(now);
 
     const [
       profile,
@@ -91,17 +119,27 @@ export const TodayDashboard: React.FC = () => {
       nameRow,
       vocabBandRow,
       latestBands,
+      reminderTimeRow,
+      reminderDismissedRow,
+      backupDismissedRow,
+      backupReminder,
+      pendingStreak,
     ] = await Promise.all([
       profileRepo.getOrCreate(),
       cardRepo.getDue(now.getTime()),
       cardRepo.getAll(),
-      attemptRepo.getRecent({ limit: 50 }),
-      planRepo.get(todayKey),
+      attemptRepo.getRecent({ limit: 80 }),
+      planRepo.get(key),
       db.kv.get('onboarding_done'),
       db.kv.get('onboarding_skipped'),
       db.kv.get('display_name'),
       db.kv.get('placement_vocab_band'),
       bandRepo.list({ limit: 20 }),
+      db.kv.get(REMINDER_TIME_KV),
+      db.kv.get(REMINDER_DISMISSED_KV),
+      db.kv.get(BACKUP_DISMISSED_KV),
+      shouldRemindBackup(now),
+      attemptRepo.consumePendingStreakEvent(),
     ]);
 
     const onboardingDone = obDoneRow?.value === true || profile.placementDoneAt !== null;
@@ -115,10 +153,21 @@ export const TodayDashboard: React.FC = () => {
         ? vocabBandRow.value
         : latestBands.find((b) => b.sourceGameId === 'v1' && typeof b.band === 'number')?.band ??
           null;
+    const reminderTime =
+      typeof reminderTimeRow?.value === 'string' && /^\d{1,2}:\d{2}$/.test(reminderTimeRow.value)
+        ? reminderTimeRow.value
+        : DEFAULT_REMINDER_TIME;
 
-    // Sync profile preferences into ThemeProvider
     setTargetBands(profile.targetBands);
     setDailyGoalMin(profile.dailyGoalMin);
+
+    const plannerAttempts = recentAttempts.map((a) => ({
+      gameId: a.gameId,
+      startedAt: a.startedAt,
+      endedAt: a.endedAt,
+      mode: a.mode,
+    }));
+    const fourStrands = computeFourStrands(plannerAttempts, now, 7);
 
     const shouldShowPlan =
       onboardingDone || allCards.length > 0 || recentAttempts.length > 0;
@@ -142,18 +191,13 @@ export const TodayDashboard: React.FC = () => {
               },
               dueCardsCount: dueCards.length,
               now,
-              recentAttempts: recentAttempts.map((a) => ({
-                gameId: a.gameId,
-                startedAt: a.startedAt,
-              })),
+              recentAttempts: plannerAttempts,
             });
-      // F12: không bao giờ gợi ý game chưa sẵn sàng (kể cả kế hoạch đã lưu từ bản cũ).
       const basePlan = ensureReadyTasks(rawPlan, ALL_GAME_IDS, isGameReady);
 
-      // Mark tasks completed if there is an attempt for that gameId today
       const completedTodayGames = new Set(
         recentAttempts
-          .filter((a) => formatDateKey(new Date(a.endedAt)) === todayKey)
+          .filter((a) => formatDateKey(new Date(a.endedAt)) === key)
           .map((a) => a.gameId),
       );
 
@@ -168,8 +212,10 @@ export const TodayDashboard: React.FC = () => {
       await planRepo.save(plan);
     }
 
-    setState({
-      loading: false,
+    const showReminderBanner = reminderDismissedRow?.value !== key;
+    const showBackupReminder = backupReminder.due && backupDismissedRow?.value !== key;
+
+    return {
       profile,
       displayName,
       onboardingDone,
@@ -179,25 +225,42 @@ export const TodayDashboard: React.FC = () => {
       totalCardsCount: allCards.length,
       recentAttempts,
       plan,
-    });
+      fourStrands,
+      reminderTime,
+      showReminderBanner,
+      showBackupReminder,
+      backupDaysSince: backupReminder.daysSince,
+      streakToast: pendingStreak,
+    };
   }, [setDailyGoalMin, setTargetBands]);
 
+  const { data, loading, error, reload } = useAsyncData(loadTodayData, [loadTodayData, todayKey]);
+
   useEffect(() => {
-    void loadTodayData();
+    if (data) {
+      setLocalPlan(data.plan);
+      setBusyMode(false);
+      if (data.streakToast) {
+        setStreakToast(data.streakToast);
+      }
+    }
+  }, [data]);
+
+  useEffect(() => {
     const onFocus = () => {
-      void loadTodayData();
+      void reload();
     };
     window.addEventListener('focus', onFocus);
     return () => window.removeEventListener('focus', onFocus);
-  }, [loadTodayData]);
+  }, [reload]);
 
-  // Ngày học đổi lúc 04:00 (F3): hẹn giờ tới mốc kế tiếp, và kiểm lại khi quay lại tab.
-  const [todayKey, setTodayKey] = useState(() => formatDateKey(new Date()));
+  // Ngày học đổi lúc 04:00 (F3)
   useEffect(() => {
-    const sync = () => setTodayKey((prev) => {
-      const next = formatDateKey(new Date());
-      return next === prev ? prev : next;
-    });
+    const sync = () =>
+      setTodayKey((prev) => {
+        const next = formatDateKey(new Date());
+        return next === prev ? prev : next;
+      });
     const timer = window.setTimeout(sync, msUntilNextDay(new Date()) + 500);
     const onVisible = () => {
       if (document.visibilityState === 'visible') sync();
@@ -210,16 +273,12 @@ export const TodayDashboard: React.FC = () => {
       window.removeEventListener('focus', sync);
     };
   }, [todayKey]);
-  // Sang ngày mới: nạp lại kế hoạch/việc đã xong của ngày đó.
-  const lastLoadedKey = useRef(todayKey);
-  useEffect(() => {
-    if (lastLoadedKey.current === todayKey) return;
-    lastLoadedKey.current = todayKey;
-    void loadTodayData();
-  }, [todayKey, loadTodayData]);
+
+  const activePlan = localPlan ?? data?.plan ?? null;
 
   const todayStats = useMemo(() => {
-    const todayAttempts = state.recentAttempts.filter(
+    const attempts = data?.recentAttempts ?? [];
+    const todayAttempts = attempts.filter(
       (a) => formatDateKey(new Date(a.endedAt)) === todayKey,
     );
     const todayXp = todayAttempts.reduce((sum, a) => sum + (a.xp || 0), 0);
@@ -227,19 +286,68 @@ export const TodayDashboard: React.FC = () => {
       (sum, a) => sum + Math.max(1, Math.round((a.endedAt - a.startedAt) / 60_000)),
       0,
     );
-    const completedTaskMin = (state.plan?.tasks ?? [])
+    const completedTaskMin = (activePlan?.tasks ?? [])
       .filter((t) => t.completed)
       .reduce((sum, t) => sum + t.estMinutes, 0);
     const minutesDone = Math.max(attemptMin, completedTaskMin);
     return { todayXp, minutesDone, sessionsToday: todayAttempts.length };
-  }, [state.plan, state.recentAttempts, todayKey]);
+  }, [activePlan, data?.recentAttempts, todayKey]);
 
   const handleSwapTask = async (task: PlannedTask) => {
-    if (!state.plan) return;
-    const updated = swapToReadyGame(state.plan, task, ALL_GAME_IDS, isGameReady);
+    if (!activePlan) return;
+    const updated = swapToReadyGame(activePlan, task, ALL_GAME_IDS, isGameReady);
     if (!updated) return;
     await planRepo.save(updated);
-    setState((prev) => ({ ...prev, plan: updated }));
+    setLocalPlan(updated);
+  };
+
+  const handleToggleBusyMode = async () => {
+    if (!data) return;
+    const nextBusy = !busyMode;
+    setBusyMode(nextBusy);
+    const now = new Date();
+    const plannerAttempts = data.recentAttempts.map((a) => ({
+      gameId: a.gameId,
+      startedAt: a.startedAt,
+      endedAt: a.endedAt,
+      mode: a.mode,
+    }));
+    const raw = nextBusy
+      ? buildBusyDayPlan({
+          profile: {
+            targetBands: data.profile.targetBands,
+            estimatedBands: {
+              L: data.profile.estimatedBands.L,
+              R: data.profile.estimatedBands.R,
+              W: data.profile.estimatedBands.W,
+              S: data.profile.estimatedBands.S,
+            },
+            skillLevels: data.profile.skillLevels,
+            dailyGoalMin: data.profile.dailyGoalMin,
+          },
+          dueCardsCount: data.dueCardsCount,
+          now,
+          recentAttempts: plannerAttempts,
+        })
+      : buildTodayPlan({
+          profile: {
+            targetBands: data.profile.targetBands,
+            estimatedBands: {
+              L: data.profile.estimatedBands.L,
+              R: data.profile.estimatedBands.R,
+              W: data.profile.estimatedBands.W,
+              S: data.profile.estimatedBands.S,
+            },
+            skillLevels: data.profile.skillLevels,
+            dailyGoalMin: data.profile.dailyGoalMin,
+          },
+          dueCardsCount: data.dueCardsCount,
+          now,
+          recentAttempts: plannerAttempts,
+        });
+    const readyPlan = ensureReadyTasks(raw, ALL_GAME_IDS, isGameReady);
+    await planRepo.save(readyPlan);
+    setLocalPlan(readyPlan);
   };
 
   const startTask = useCallback(
@@ -249,9 +357,29 @@ export const TodayDashboard: React.FC = () => {
     [navigate],
   );
 
-  const activeProfile = state.profile;
+  const handleStartKeepStreak = () => {
+    const task = createKeepStreakTask(new Date());
+    startTask(task);
+  };
+
+  const handleDismissReminder = async () => {
+    setReminderHidden(true);
+    await db.kv.put({ key: REMINDER_DISMISSED_KV, value: todayKey });
+  };
+
+  const handleDismissBackupReminder = async () => {
+    setBackupBannerHidden(true);
+    await db.kv.put({ key: BACKUP_DISMISSED_KV, value: todayKey });
+  };
+
+  const handleDownloadIcs = () => {
+    downloadDailyReminderIcs(data?.reminderTime ?? DEFAULT_REMINDER_TIME, effectiveDailyGoal);
+    setIcsDownloaded(true);
+  };
+
+  const activeProfile = data?.profile ?? null;
   const effectiveTargetBands = activeProfile?.targetBands ?? targetBands;
-  const effectiveDailyGoal = activeProfile?.dailyGoalMin ?? dailyGoalMin;
+  const effectiveDailyGoal = busyMode ? 10 : activeProfile?.dailyGoalMin ?? dailyGoalMin;
   const streakCount = activeProfile ? displayStreakCount(activeProfile.streak) : 0;
   const streakFreezes = activeProfile?.streak.freezes ?? 1;
   const totalXp = activeProfile?.xp ?? 0;
@@ -267,10 +395,18 @@ export const TodayDashboard: React.FC = () => {
     100,
     Math.round((todayStats.minutesDone / Math.max(1, effectiveDailyGoal)) * 100),
   );
+  const allTasksDone =
+    Boolean(activePlan && activePlan.tasks.length > 0) &&
+    (activePlan?.tasks.every((t) => t.completed) ?? false);
+  const dailyGoalReached = progressPct >= 100 || allTasksDone;
 
-  const firstUnfinishedTask = state.plan?.tasks.find((t) => !t.completed && isGameReady(t.gameId));
+  const firstUnfinishedTask = activePlan?.tasks.find((t) => !t.completed && isGameReady(t.gameId));
+  const lastLoadedRef = useRef(todayKey);
+  useEffect(() => {
+    lastLoadedRef.current = todayKey;
+  }, [todayKey]);
 
-  // F12: Enter mở việc đầu chưa xong (không chen vào nút, liên kết, ô nhập hay hộp thoại).
+  // F12: Enter mở việc đầu chưa xong
   useEffect(() => {
     if (!firstUnfinishedTask) return;
     const onKeyDown = (e: KeyboardEvent) => {
@@ -291,10 +427,39 @@ export const TodayDashboard: React.FC = () => {
     return () => window.removeEventListener('keydown', onKeyDown);
   }, [firstUnfinishedTask, startTask]);
 
+  if (error) {
+    return (
+      <ScreenErrorState
+        title="Không tải được kế hoạch Hôm nay"
+        error={error}
+        code="ERR-TODAY-LOAD"
+        onRetry={() => void reload()}
+      />
+    );
+  }
+
   return (
-    <div className="space-y-6 pb-8">
+    <div className="space-y-5 pb-8">
+      {/* F8: Toast khi Streak Freeze tự động cứu chuỗi hoặc nhận thêm lượt bảo vệ */}
+      {streakToast && (
+        <Toast
+          tone="info"
+          title={
+            streakToast.freezeUsed
+              ? `Đóng băng đã cứu chuỗi ${streakToast.count} ngày của bạn!`
+              : `Nhận thêm +1 lượt đóng băng chuỗi (hiện có ${streakToast.freezes}/2)`
+          }
+          description={
+            streakToast.freezeUsed
+              ? `Ngày ${streakToast.protectedDate ?? 'hôm qua'} đã được bảo vệ tự động. Còn ${streakToast.freezes} lượt đóng băng.`
+              : 'Học đều mỗi 7 ngày giúp bạn tích thêm lượt bảo vệ chuỗi (tối đa 2).'
+          }
+          onDismiss={() => setStreakToast(null)}
+        />
+      )}
+
       {/* Banner mời Onboarding nếu chưa thiết lập lần đầu */}
-      {!state.loading && !state.onboardingDone && !state.onboardingSkipped && (
+      {!loading && data && !data.onboardingDone && !data.onboardingSkipped && (
         <Card
           skillAccent="info"
           padding="md"
@@ -311,7 +476,7 @@ export const TodayDashboard: React.FC = () => {
               Cá nhân hoá lộ trình 6.0 → 8.0 & nạp sẵn thẻ ôn từ vựng
             </h2>
             <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-              Chọn mục tiêu từng kỹ năng, làm nhanh 15 câu Placement từ vựng để mở kế hoạch học tự
+              Chọn mục tiêu từng kỹ năng, làm nhanh 15 câu định vị từ vựng để mở kế hoạch học tự
               động mỗi ngày — hoặc bạn có thể vào thẳng Hub chơi thử.
             </p>
           </div>
@@ -334,29 +499,28 @@ export const TodayDashboard: React.FC = () => {
 
       {/* Thanh chào & thông số nhanh */}
       <Card padding="md" className="flex flex-wrap items-center justify-between gap-4">
-        <div className="space-y-1">
+        <div className="space-y-1 min-w-0">
           <div className="flex flex-wrap items-center gap-2">
             <Pill tone="info" icon={<Calendar className="w-3.5 h-3.5" />}>
               Lộ trình 6.0 → 8.0 Academic
             </Pill>
-            {state.placementVocabBand !== null && (
+            {data?.placementVocabBand !== null && data?.placementVocabBand !== undefined && (
               <Pill tone="vocab">
-                Từ vựng đầu vào: Band {state.placementVocabBand.toFixed(1)}
+                Từ vựng đầu vào: Band {data.placementVocabBand.toFixed(1)}
               </Pill>
             )}
           </div>
           <h1 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
-            Chào {state.displayName} · Hôm nay học gì?
+            Chào {data?.displayName ?? DEFAULT_DISPLAY_NAME} · Hôm nay học gì?
           </h1>
           <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-            Mỗi phút luyện đúng kỹ năng bài thi chấm. Không tốn tiền: Writing và Speaking được Claude
-            chấm, bạn chỉ cần dán bài vào.
+            Mỗi phút luyện đúng kỹ năng bài thi chấm. Dữ liệu lưu trên máy, không tốn phí API.
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2.5">
           <div
-            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
+            className="inline-flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
             style={{
               backgroundColor: 'var(--color-surface-2)',
               borderColor: 'var(--color-border)',
@@ -372,15 +536,15 @@ export const TodayDashboard: React.FC = () => {
                 backgroundColor: 'var(--color-surface)',
                 color: 'var(--color-listening)',
               }}
-              title="Lượt đóng băng bảo vệ streak"
+              title="Lượt đóng băng bảo vệ chuỗi ngày học"
             >
-              <Snowflake className="w-3 h-3" />
+              <Snowflake className="w-3.5 h-3.5" />
               {streakFreezes}
             </span>
           </div>
 
           <div
-            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
+            className="inline-flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
             style={{
               backgroundColor: 'var(--color-surface-2)',
               borderColor: 'var(--color-border)',
@@ -406,18 +570,153 @@ export const TodayDashboard: React.FC = () => {
         </div>
       </Card>
 
-      {/* Bố cục 2 cột: Kế hoạch hôm nay & Band ước lượng */}
+      {/* U6: Đưa "Việc tiếp theo" lên ngay đầu trang (ưu tiên iPhone 390/375) */}
+      {!loading && firstUnfinishedTask && (
+        <Card
+          skillAccent={firstUnfinishedTask.skillGroup}
+          padding="md"
+          className="space-y-3"
+          data-testid="today-next-action"
+        >
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <Pill tone={firstUnfinishedTask.skillGroup} icon={<Play className="w-3.5 h-3.5" />}>
+                Việc tiếp theo
+              </Pill>
+              <span
+                className="inline-flex items-center gap-1 text-xs font-semibold tabular-nums"
+                style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+              >
+                <Clock className="w-3.5 h-3.5" />~{firstUnfinishedTask.estMinutes} phút
+              </span>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <Button
+                size="sm"
+                variant={busyMode ? 'primary' : 'ghost'}
+                skill="info"
+                onClick={() => void handleToggleBusyMode()}
+                data-testid="today-busy-toggle"
+              >
+                {busyMode ? 'Đang ở Ngày bận (~10p)' : 'Ngày bận (~10p)'}
+              </Button>
+              <Button
+                size="sm"
+                variant="secondary"
+                leftIcon={<Zap className="w-3.5 h-3.5" />}
+                onClick={handleStartKeepStreak}
+                data-testid="today-keep-streak"
+              >
+                Giữ chuỗi 5 phút
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="space-y-1 min-w-0">
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                {firstUnfinishedTask.title}
+              </h2>
+              <p className="text-sm leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                {firstUnfinishedTask.reasonVi}
+              </p>
+            </div>
+            <Button
+              size="lg"
+              variant="primary"
+              skill={firstUnfinishedTask.skillGroup}
+              rightIcon={<Play className="w-4 h-4" />}
+              onClick={() => startTask(firstUnfinishedTask)}
+              className="w-full sm:w-auto shrink-0"
+              data-testid="today-next-start"
+            >
+              Bắt đầu ngay
+              <span
+                className="hidden sm:inline text-xs font-semibold ml-1.5 px-1.5 rounded border"
+                style={{ borderColor: 'currentColor' }}
+                aria-hidden="true"
+              >
+                Enter
+              </span>
+            </Button>
+          </div>
+        </Card>
+      )}
+
+      {/* F9: Banner ăn mừng khi đạt mục tiêu ngày */}
+      {!loading && dailyGoalReached && (
+        <Card
+          skillAccent="reading"
+          padding="md"
+          className="flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+          data-testid="today-goal-celebration"
+        >
+          <div className="flex items-start gap-3">
+            <div
+              className="w-10 h-10 rounded-full flex items-center justify-center shrink-0 border"
+              style={{
+                backgroundColor:
+                  'color-mix(in srgb, var(--color-correct) 16%, var(--color-surface-2))',
+                borderColor: 'var(--color-correct)',
+                color: 'var(--color-correct)',
+              }}
+            >
+              <Trophy className="w-5 h-5" />
+            </div>
+            <div className="space-y-0.5">
+              <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+                Hoàn thành mục tiêu ngày hôm nay!
+              </h2>
+              <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                Bạn đã luyện {todayStats.minutesDone} phút ({todayStats.sessionsToday} phiên · +
+                {todayStats.todayXp} XP). Chuỗi hiện tại: {streakCount} ngày.
+              </p>
+            </div>
+          </div>
+          <Button variant="secondary" onClick={() => navigate('/stats')}>
+            Xem thống kê
+          </Button>
+        </Card>
+      )}
+
+      {/* PB-05: Nhắc sao lưu định kỳ nếu > 7 ngày chưa sao lưu */}
+      {!loading && data?.showBackupReminder && !backupBannerHidden && (
+        <Card
+          padding="sm"
+          className="flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+          data-testid="today-backup-reminder"
+        >
+          <div className="flex items-center gap-2.5 text-xs" style={{ color: 'var(--color-text)' }}>
+            <ShieldAlert className="w-4 h-4 shrink-0" style={{ color: 'var(--color-partial)' }} />
+            <span>
+              {data.backupDaysSince !== null
+                ? `Đã ${data.backupDaysSince} ngày bạn chưa sao lưu dữ liệu học.`
+                : 'Bạn đã có tiến độ học mới — nên xuất 1 bản sao lưu .json để tránh mất dữ liệu trên trình duyệt.'}
+            </span>
+          </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <Button size="sm" variant="secondary" onClick={() => navigate('/settings')}>
+              Sao lưu ngay
+            </Button>
+            <Button size="sm" variant="ghost" onClick={() => void handleDismissBackupReminder()}>
+              Để sau
+            </Button>
+          </div>
+        </Card>
+      )}
+
+      {/* Bố cục 2 cột: Kế hoạch hôm nay & Band ước lượng + 4 mạch */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Cột trái: Mục tiêu & Danh sách nhiệm vụ hôm nay */}
         <div className="lg:col-span-7 space-y-4">
           <Card padding="md" className="flex items-center justify-between gap-4">
-            <div>
+            <div className="min-w-0">
               <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
                 Mục tiêu hôm nay
               </h2>
               <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-                {state.dueCardsCount > 0
-                  ? `Có ${state.dueCardsCount} thẻ SRS đến hạn · Mục tiêu ${effectiveDailyGoal} phút/ngày.`
+                {data && data.dueCardsCount > 0
+                  ? `Có ${data.dueCardsCount} thẻ đến hạn · Mục tiêu ${effectiveDailyGoal} phút/ngày.`
                   : `Hoàn thành ${effectiveDailyGoal} phút luyện tập tập trung để giữ nhịp hằng ngày.`}
               </p>
             </div>
@@ -445,14 +744,14 @@ export const TodayDashboard: React.FC = () => {
             </div>
           </Card>
 
-          {state.loading ? (
+          {loading ? (
             <Card padding="md" className="space-y-3">
               <Skeleton className="h-6 w-1/3" />
               <Skeleton lines={4} />
             </Card>
-          ) : state.plan && state.plan.tasks.length > 0 ? (
+          ) : activePlan && activePlan.tasks.length > 0 ? (
             <div className="space-y-3" data-testid="today-plan-list">
-              {state.plan.tasks.map((task, idx) => {
+              {activePlan.tasks.map((task, idx) => {
                 const gameMeta = getGameById(task.gameId);
                 const ready = isGameReady(task.gameId);
                 const isPrimaryNext = firstUnfinishedTask?.id === task.id;
@@ -495,7 +794,7 @@ export const TodayDashboard: React.FC = () => {
                           >
                             <Clock className="w-3.5 h-3.5" />~{task.estMinutes}p
                           </span>
-                          {task.completed && <Pill tone="correct">Hoàn thành ✅</Pill>}
+                          {task.completed && <Pill tone="correct">Hoàn thành</Pill>}
                           {!ready && <Pill tone="neutral">Sắp có</Pill>}
                         </div>
 
@@ -512,7 +811,7 @@ export const TodayDashboard: React.FC = () => {
 
                       <div className="flex items-center gap-2 shrink-0">
                         <Button
-                          size="sm"
+                          size="md"
                           variant="ghost"
                           leftIcon={<RefreshCw className="w-3.5 h-3.5" />}
                           onClick={() => void handleSwapTask(task)}
@@ -521,7 +820,7 @@ export const TodayDashboard: React.FC = () => {
                           Đổi bài
                         </Button>
                         <Button
-                          size="sm"
+                          size="md"
                           variant={isPrimaryNext ? 'primary' : 'secondary'}
                           skill={task.skillGroup}
                           rightIcon={<Play className="w-3.5 h-3.5" />}
@@ -529,15 +828,6 @@ export const TodayDashboard: React.FC = () => {
                           data-testid={`today-start-${task.gameId}`}
                         >
                           {task.completed ? 'Chơi lại' : 'Bắt đầu'}
-                          {isPrimaryNext && !task.completed && (
-                            <span
-                              className="hidden sm:inline text-xs font-semibold ml-1 px-1.5 rounded border"
-                              style={{ borderColor: 'currentColor' }}
-                              aria-hidden="true"
-                            >
-                              Enter
-                            </span>
-                          )}
                         </Button>
                       </div>
                     </div>
@@ -572,13 +862,50 @@ export const TodayDashboard: React.FC = () => {
               }
             />
           )}
+
+          {/* F13: Nhắc lịch học + xuất .ics (tối đa 1 nhắc/ngày, PP-14) */}
+          {!loading && data?.showReminderBanner && !reminderHidden && (
+            <Card
+              padding="md"
+              className="flex flex-col sm:flex-row sm:items-center justify-between gap-3"
+              data-testid="today-reminder-banner"
+            >
+              <div className="flex items-start gap-2.5">
+                <Bell className="w-4 h-4 shrink-0 mt-0.5" style={{ color: 'var(--color-info)' }} />
+                <div className="space-y-0.5">
+                  <div className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
+                    Nhắc học hằng ngày lúc {data.reminderTime}
+                  </div>
+                  <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                    {icsDownloaded
+                      ? 'Đã tải tệp lịch .ics — mở tệp trên iPhone hoặc máy tính để thêm vào Lịch.'
+                      : 'Tối đa 1 nhắc/ngày. Thêm vào Lịch iPhone/Google để không quên giữ chuỗi.'}
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2 shrink-0">
+                <Button
+                  size="md"
+                  variant="secondary"
+                  leftIcon={<CalendarPlus className="w-4 h-4" />}
+                  onClick={handleDownloadIcs}
+                  data-testid="today-export-ics"
+                >
+                  Thêm vào Lịch (.ics)
+                </Button>
+                <Button size="md" variant="ghost" onClick={() => void handleDismissReminder()}>
+                  Ẩn hôm nay
+                </Button>
+              </div>
+            </Card>
+          )}
         </div>
 
-        {/* Cột phải: Đồng hồ Band ước lượng 4 kỹ năng */}
-        <div className="lg:col-span-5">
-          <Card padding="lg" className="space-y-5 h-full flex flex-col justify-between">
+        {/* Cột phải: Đồng hồ Band ước lượng & 4 mạch học */}
+        <div className="lg:col-span-5 space-y-4">
+          <Card padding="lg" className="space-y-5">
             <div className="space-y-4">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <div>
                   <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
                     Band ước lượng
@@ -622,7 +949,7 @@ export const TodayDashboard: React.FC = () => {
               </div>
             </div>
 
-            <div className="space-y-2.5 mt-6">
+            <div className="space-y-2.5 pt-2">
               <div
                 className="p-3.5 rounded-[var(--radius-md)] border flex items-center justify-between text-xs"
                 style={{
@@ -642,7 +969,7 @@ export const TodayDashboard: React.FC = () => {
                 </strong>
               </div>
 
-              {state.totalCardsCount > 0 && (
+              {data && data.totalCardsCount > 0 && (
                 <div
                   className="px-3.5 py-2.5 rounded-[var(--radius-md)] border flex items-center justify-between text-xs"
                   style={{
@@ -651,16 +978,72 @@ export const TodayDashboard: React.FC = () => {
                     color: 'var(--color-text-dim)',
                   }}
                 >
-                  <span>Kho thẻ SRS đang hoạt động:</span>
-                  <strong
-                    style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-vocab)' }}
-                  >
-                    {state.totalCardsCount} thẻ ({state.dueCardsCount} đến hạn)
+                  <span>Kho thẻ ôn đang hoạt động:</span>
+                  <strong style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-vocab)' }}>
+                    {data.totalCardsCount} thẻ ({data.dueCardsCount} đến hạn)
                   </strong>
                 </div>
               )}
             </div>
           </Card>
+
+          {/* PP-06: Tóm tắt cân bằng 4 mạch học 7 ngày */}
+          {data && (
+            <Card padding="md" className="space-y-3" data-testid="today-four-strands">
+              <div className="flex items-center justify-between gap-2">
+                <div>
+                  <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+                    Cân bằng 4 mạch học (7 ngày)
+                  </h2>
+                  <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                    Mục tiêu ~25% mỗi mạch · mạch dưới 15% sẽ được ưu tiên bù
+                  </p>
+                </div>
+                <Pill tone="neutral">{data.fourStrands.totalMinutes}p</Pill>
+              </div>
+              <div className="grid grid-cols-2 gap-2.5">
+                {(['input', 'output', 'language', 'fluency'] as const).map((id) => {
+                  const st = data.fourStrands.strands[id];
+                  return (
+                    <div
+                      key={id}
+                      className="p-2.5 rounded-[var(--radius-md)] border space-y-1.5"
+                      style={{
+                        backgroundColor: 'var(--color-surface-2)',
+                        borderColor: st.underrepresented
+                          ? 'var(--color-partial)'
+                          : 'var(--color-border)',
+                      }}
+                    >
+                      <div className="flex items-center justify-between gap-1 text-xs">
+                        <span className="font-semibold truncate" style={{ color: 'var(--color-text)' }}>
+                          {st.labelVi.split(' (')[0]}
+                        </span>
+                        <span
+                          className="font-bold tabular-nums"
+                          style={{ fontFamily: 'var(--font-mono)', color: STRAND_COLORS[id] }}
+                        >
+                          {st.pct}%
+                        </span>
+                      </div>
+                      <div
+                        className="h-1.5 w-full rounded-full overflow-hidden"
+                        style={{ backgroundColor: 'var(--color-surface)' }}
+                      >
+                        <div
+                          className="h-full rounded-full"
+                          style={{
+                            width: `${Math.min(100, st.pct)}%`,
+                            backgroundColor: STRAND_COLORS[id],
+                          }}
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </Card>
+          )}
         </div>
       </div>
     </div>
