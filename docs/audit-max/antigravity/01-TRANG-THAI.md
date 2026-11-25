@@ -11,9 +11,9 @@
 | `master` = `origin/master` | `251f039` (T2-B đã merge + push; cập nhật trạng thái tạm dừng local) |
 | CI | Run `45523414525`: `verify (8 bước)` ✅, `audit-ui` ✅, `deploy` ✅ |
 | Production | https://nhatbang181.github.io/lexicon-arcade/ → `<title>Lexicon Arcade V3 · Lộ trình IELTS 8.0</title>` |
-| Đợt 2 | **ĐANG CHẠY.** **T2-B ✅ ĐẠT & merge `master` + CI xanh.** **T2-A ✅ ĐẠT & merge `master`** (`rv-t2-a-2` Argon Medium: 0 CHẶN, ≤ 1 NẶNG/màn chỉ còn J9, 506/506 test, 4/4 E2E m1/m2 + R1→V1, 56 lượt audit-ui 7 khung). **T2-C** đang chạy (`r-t2-c-2`); mở thêm **FX-0 + FX-2** song song (`D:\English-wt\FX-0`) |
-| T3-B (chạy sớm) | **ĐANG DỞ (tạm dừng).** Có 2 checkpoint commit + nhiều file MP3/JSON chưa commit |
-| Đợt 3, 4 | Chưa bắt đầu |
+| Đợt 2 | **XONG (M-Đ2 ĐẠT).** **T2-B ✅**, **T2-A ✅**, **FX-0/FX-2 ✅**, **T2-C ✅** đều đã qua review khác model (riêng FX-0/FX-2 review khác hãng Claude Sonnet 5.5) và merge vào `master` |
+| T3-B (chạy sớm) | **ĐANG CHẠY Chặng 1 (`r-t3-b`).** Kiểm + commit 25 MP3 dở → đủ 32/32 listening + CREDITS + baseline `validate:data:release` |
+| Đợt 3, 4 | **ĐANG MỞ ĐỢT 3:** chuẩn bị worktree `T3-A` (hệ thiết kế, asset, fx, Mascot, Recap) |
 
 ## 2. Worktree và nhánh
 
@@ -25,7 +25,8 @@
 | `D:\English-wt\T1-C` | `audit-max/T1-C` | `341ca75` | đã merge | – | 5203 / 5213 | Có thể xoá worktree |
 | `D:\English-wt\T2-A` | `audit-max/T2-A` | `b6226c6` | **ĐÃ MERGE `master`** (`rv-t2-a-2` Argon Medium **ĐẠT**) | `REVIEW-T2-A-A.md` (đã chép sang master) + `out/` | 5221 / 5231 | **XONG.** Có thể xoá worktree sau khi đóng đợt |
 | `D:\English-wt\T2-B` | `audit-max/T2-B` | `b9d2d58` | **ĐÃ MERGE `master`** (`rv-t2-b` Argon High **ĐẠT**, CI `45523414525` ✅) | `REVIEW-T2-B-A.md` (đã chép sang master) | 5222 / 5232 | **XONG.** Có thể xoá worktree; giữ nợ 1 NẶNG `listeningAnswer.ts:408,708` trong `HANDOFF.md` |
-| `D:\English-wt\T2-C` | `audit-max/T2-C` | `fd9a30c` | 2 (`7f41297` kế hoạch + `fd9a30c` grading/PP-16/G-01..04/W1-04..05) | 3 file sửa dở (`w1-essay-lab/{W1EssayLab.tsx,engine.ts,index.ts}`) | 5223 / 5233 | Nối lại theo `03 §2`: hoàn thiện W1, W2, Portfolio, producer `userItems`, `m4.spec.ts`, `audit-ui` |
+| `D:\English-wt\T2-C` | `audit-max/T2-C` | `d8c28cf` | **ĐÃ MERGE `master`** (`rv-t2-c` Argon Medium **ĐẠT** + fixer D2/D10) | `REVIEW-T2-C-A.md` (đã chép sang master) + `out/` | 5223 / 5233 | **XONG.** Có thể xoá worktree sau khi đóng M-Đ2 |
+| `D:\English-wt\FX-0` | `audit-max/FX-0` | `eec7e1d` | **ĐÃ MERGE `master`** (`rv-fx` Claude Sonnet 5.5 **ĐẠT**) | `REVIEW-FX-0-A.md` (đã chép sang master) + `out/` | 5224 / 5234 | **XONG.** Có thể xoá worktree sau khi đóng M-Đ2 |
 | `D:\English-wt\T3-B` | `audit-max/T3-B` | `aee52c4` | `577b3bf` (300/300 MP3 dictation + 6 episode), `49d70b8` (blind-solve D4: 24/24 Reading, 32/32 Listening), `aee52c4` (merge master) | 71 file: 25 MP3 `public/audio/listening` + 25 JSON episode, 11 file `scripts/data`, 2 file `public/data/vocab`, `scripts/__pycache__` (**không commit**) | – | 31 file trong `public/audio/listening`; `public/audio` = **60,6 MB** (ngưỡng hỏi Bang 400 MB). Builder dừng lúc **đo baseline `validate:data:release`** |
 | `C:\Users\nhatb\.gemini\antigravity\worktrees\…\swarm-r-audio-speaking-*`, `swarm-r-game-s1-*` | `swarm-*` | – | – | – | – | **Việc M5, KHÔNG ĐỤNG** (LUAT A3) |
 
@@ -86,6 +87,7 @@ Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -in 5199..5240 
 
 ## 6. Nhật ký điều phối (mới nhất ở trên; mỗi dòng ≤ 2 câu)
 
+- 25/11 09:24 · Antigravity (Gemini 4 Neon High) · **HOÀN TẤT ĐỢT 2 (M-Đ2):** đã merge **FX-0/FX-2** (`rv-fx` Claude Sonnet 5.5 ĐẠT 0/0) và **T2-C** (`rv-t2-c` Argon Medium ĐẠT + fixer D2/D10) vào `master`; chốt 12 quyết định `07-PLAN-TONG.md` §3 vào `DECISIONS.md`. Đang chạy làn dữ liệu `r-t3-b` (Chặng 1) và chuẩn bị mở `T3-A` (bước A1–A2: token, theme sáng, tải asset, G1).
 - 25/11 08:42 · Antigravity (Gemini 4 Neon High) · **T2-A ✅ ĐẠT và đã merge `master`** (`rv-t2-a-2` Argon Medium: 0 CHẶN, ≤ 1 NẶNG/màn chỉ còn `J9`, 506/506 vitest, 4/4 E2E m1/m2 + R1→V1, 56 lượt audit-ui 7 khung 0 D3/D4/D5/D7/D10). Đã push `master` và mở thêm làn `r-fx` (FX-0 `listen_spell` + FX-2 van tải thẻ mới & vòng phục hồi) song song với `r-t2-c-2`.
 - 25/11 08:16 · Antigravity (Gemini 4 Neon High) · Tạm dừng theo lệnh Bang: đã dừng toàn bộ worker (`r-t2-a`, `rv-t2-a`, `r-t2-c`), 0 process/port treo, Gemini còn 83%. `master` = `251f039` CI xanh (`45523414525`, gồm T2-B); nối lại bằng: giao `rv-t2-a` cho T2-A (`b6226c6`, sạch) + nối `T2-C` (`fd9a30c`, 3 file dở ở `w1-essay-lab`).
 - 25/11 05:16 · Antigravity (Gemini 4 Neon High) · **T2-B ĐẠT và đã merge `master`** (`rv-t2-b` Argon High: 0 CHẶN, 1 NẶNG `listeningAnswer.ts:408,708` ghi HANDOFF, 534/534 vitest, 381/381 đáp án, 3/3 E2E m3+L1→V1, 0/0/0 audit-ui 7 khung). Tạm dừng điều phối vì bể Gemini còn **7% < 10%** (reset lúc **09:38 giờ máy** = `2026-11-24T23:08:42Z`; Claude 0% tới 27/11); bước kế tiếp khi mở lại: nối `r-t2-a` chốt `BAO-CAO-T2-A` → `rv-t2-a` + bắt đầu `T2-C`.
