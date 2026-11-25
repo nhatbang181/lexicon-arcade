@@ -193,10 +193,10 @@ export const HubScreen: React.FC = () => {
   };
 
   return (
-    <div className="space-y-6 pb-8">
+    <div className="space-y-4 sm:space-y-6 pb-8">
       {/* Hero Hub (M1 ≥ 15% + M3 Lexi + icon màu Fluent 3D) */}
       <div
-        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-4 sm:p-5 min-h-[160px] md:min-h-[205px] flex flex-col justify-between gap-3"
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-3.5 sm:p-5 min-h-[140px] md:min-h-[205px] flex flex-col justify-between gap-2.5 sm:gap-3"
         style={{
           backgroundColor: 'var(--color-surface)',
           borderColor: 'var(--color-border)',
@@ -266,7 +266,7 @@ export const HubScreen: React.FC = () => {
 
       {/* Bộ lọc nhóm kỹ năng */}
       <div
-        className="flex flex-wrap items-center gap-2"
+        className="flex flex-wrap items-center gap-1.5 sm:gap-2"
         role="tablist"
         aria-label="Lọc chế độ theo nhóm kỹ năng"
       >
@@ -279,7 +279,7 @@ export const HubScreen: React.FC = () => {
               role="tab"
               aria-selected={active}
               onClick={() => setSelectedSkill(tab.id)}
-              className="px-3.5 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-medium whitespace-nowrap transition-colors cursor-pointer"
+              className="px-2.5 sm:px-3.5 py-1.5 sm:py-2 min-h-[44px] rounded-[var(--radius-md)] border text-xs sm:text-sm font-medium whitespace-nowrap transition-colors cursor-pointer"
               style={{
                 backgroundColor: active
                   ? 'color-mix(in srgb, var(--color-info) 16%, var(--color-surface))'
