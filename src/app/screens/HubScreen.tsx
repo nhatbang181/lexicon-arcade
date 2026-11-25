@@ -98,7 +98,6 @@ export const HubScreen: React.FC = () => {
         key={game.id}
         skill={game.skill}
         onClick={() => setActiveGame(game)}
-        ariaLabel={`${game.code} ${game.title}`}
         className={`h-full ${comingSoon ? 'opacity-80' : ''}`}
       >
         <div

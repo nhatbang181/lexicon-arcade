@@ -12,7 +12,7 @@ const SCREENS = [
   { slug: 'today', hash: '#/', expectedHeading: 'Chào bạn · Hôm nay học gì?' },
   { slug: 'hub', hash: '#/hub', expectedHeading: '12 Chế độ luyện IELTS 8.0' },
   { slug: 'settings', hash: '#/settings', expectedHeading: 'Cài đặt hệ thống' },
-  { slug: 'dev-components', hash: '#/dev/components', expectedHeading: 'Thư viện 17 UI Components chuẩn V3' },
+  { slug: 'dev-components', hash: '#/dev/components', expectedHeading: 'Thư viện component chuẩn V3' },
 ] as const;
 
 const OUT_DIR = path.resolve(process.cwd(), 'e2e/screenshots/m0');

@@ -129,6 +129,17 @@ export const OnboardingScreen: React.FC = () => {
     };
   }, []);
 
+  // Chỉ focus ô nhập tên trên màn rộng (≥ 768px) với preventScroll để iPhone SE 375×667 không bị cuộn mất Hero/Lexi.
+  useEffect(() => {
+    if (step !== 1) return;
+    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
+      const el = document.getElementById('onboarding-display-name');
+      if (el instanceof HTMLInputElement) {
+        el.focus({ preventScroll: true });
+      }
+    }
+  }, [step]);
+
   const handleMigrateLegacy = async () => {
     setMigrating(true);
     try {
