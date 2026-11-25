@@ -53,11 +53,6 @@ const LAZY_CHUNK_GLOBS = [
 ];
 export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/lexicon-arcade/' : '/',
-  server: {
-    fs: {
-      allow: [process.cwd(), realNodeModules],
-    },
-  },
   plugins: [
     fontsourceWoff2Only(),
     cspMeta(),
@@ -144,5 +139,8 @@ export default defineConfig(({ mode }) => ({
     port: 5173,
     // X14: không mở dev server ra LAN. Cần LAN thì `npm run dev -- --host`.
     host: '127.0.0.1',
+    fs: {
+      allow: [process.cwd(), realNodeModules],
+    },
   },
 }));
