@@ -19,7 +19,7 @@ import {
   type ChoiceState,
 } from '../../design/components';
 import { questionSlideVariants, reducedRouteVariants } from '../../design/motion';
-import { PassageView } from '../../games/_shared';
+import { PassageView } from '../../games/_shared/PassageView';
 import { db } from '../../core/storage/db';
 import { bandRepo } from '../../core/storage/repos/bandRepo';
 import { cardRepo } from '../../core/storage/repos/cardRepo';

@@ -40,11 +40,18 @@ export function createDefaultProfile(now = Date.now()): UserProfile {
     placementDoneAt: null,
     examDate: null,
     theme: 'system',
-    sfxVolume: 0.7,
-    musicVolume: 0.25,
+    sfxVolume: 60,
+    musicVolume: 25,
     legacyMigrated: false,
     writingBiasOffset: 0,
   };
+}
+
+/** Chuẩn hoá âm lượng SFX về thang 0..100 (tương thích hồ sơ cũ lưu 0..1). */
+export function normalizeSfxVolume(value: number | undefined | null): number {
+  if (typeof value !== 'number' || !Number.isFinite(value)) return 60;
+  if (value > 0 && value <= 1) return Math.round(value * 100);
+  return Math.max(0, Math.min(100, Math.round(value)));
 }
 
 export const profileRepo = {

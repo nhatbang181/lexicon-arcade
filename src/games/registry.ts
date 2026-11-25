@@ -20,6 +20,16 @@ export interface GameProps {
   mode: string;
   level: number;
   onExit: (result?: unknown) => void;
+  /** Nguồn mở phiên (từ Hôm nay hay Hub, F5). */
+  from?: 'today' | 'hub';
+  /** Việc kế tiếp trong kế hoạch Hôm nay để Recap gợi ý mở thẳng (F5). */
+  nextTask?: {
+    taskId: string;
+    gameId: string;
+    title: string;
+    path: string;
+  } | null;
+  onNextTask?: () => void;
 }
 
 export type GameStatus = 'ready' | 'coming_soon';
@@ -48,7 +58,7 @@ const GAME_METAS: GameMeta[] = [
     skill: 'vocab',
     skillLabelVi: 'Từ vựng',
     title: 'Daily Run',
-    subtitleVi: 'Ôn thẻ đến hạn theo lịch FSRS dưới dạng "chạy màn": tự nhớ ra, gõ ra, nghe ra.',
+    subtitleVi: 'Ôn thẻ đến hạn theo lịch nhắc thông minh dưới dạng "chạy màn": tự nhớ ra, gõ ra, nghe ra.',
     milestone: 'M1',
     estMinutes: [8, 12],
     requires: { audio: true },

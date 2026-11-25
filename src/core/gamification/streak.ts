@@ -17,6 +17,49 @@ export interface StreakUpdateResult {
   broken: boolean;
 }
 
+export type StreakEventKind =
+  | 'started'
+  | 'extended'
+  | 'freeze_used'
+  | 'freeze_earned'
+  | 'broken'
+  | 'unchanged';
+
+export interface StreakEvent {
+  kind: StreakEventKind;
+  count: number;
+  freezes: number;
+  freezeUsed: boolean;
+  freezeEarned: boolean;
+  broken: boolean;
+  protectedDate?: string;
+}
+
+export function toStreakEvent(result: StreakUpdateResult): StreakEvent {
+  let kind: StreakEventKind = 'unchanged';
+  if (result.freezeUsed) {
+    kind = 'freeze_used';
+  } else if (result.freezeEarned) {
+    kind = 'freeze_earned';
+  } else if (result.broken) {
+    kind = 'broken';
+  } else if (result.changed) {
+    kind = result.state.count === 1 ? 'started' : 'extended';
+  }
+  const protectedDate = result.freezeUsed
+    ? result.state.freezeUsedDates[result.state.freezeUsedDates.length - 1]
+    : undefined;
+  return {
+    kind,
+    count: result.state.count,
+    freezes: result.state.freezes,
+    freezeUsed: result.freezeUsed,
+    freezeEarned: result.freezeEarned,
+    broken: result.broken,
+    protectedDate,
+  };
+}
+
 export interface DailyActivityQualification {
   cardsReviewed?: number;
   sessionsCompleted?: number;
