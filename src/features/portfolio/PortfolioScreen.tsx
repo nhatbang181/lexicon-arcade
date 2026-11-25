@@ -12,15 +12,31 @@ import {
   Scale,
   Trash2,
 } from 'lucide-react';
+import {
+  isWritingResult,
+  type GradingPacketInput,
+  type SrsFeedbackItem,
+  type WritingCriteriaBands,
+} from '../../core/grading';
 import { db, type EssayRecord, type UserProfile } from '../../core/storage/db';
 import { bandRepo } from '../../core/storage/repos/bandRepo';
-import { essayRepo } from '../../core/storage/repos/essayRepo';
+import { essayRepo, type EssayMetaRecord } from '../../core/storage/repos/essayRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
-import { Button, Card, EmptyState, Pill, Skeleton, Toast } from '../../design/components';
+import { userItemRepo } from '../../core/storage/repos/userItemRepo';
+import { Button, Card, EmptyState, Modal, Pill, Skeleton, Toast } from '../../design/components';
+import { GradingPanel, type GradingPanelGradedPayload } from '../../games/_shared';
 import {
   applyBiasOffsetToBand,
   computeBiasCalibration,
 } from '../../games/w1-essay-lab/engine';
+
+function makeSimpleHash(input: string): string {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = (hash * 31 + input.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash).toString(36).slice(0, 8);
+}
 
 const BAND_OPTIONS = [
   3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 8.5, 9.0,
@@ -43,6 +59,9 @@ export const PortfolioScreen: React.FC = () => {
 
   const [filter, setFilter] = useState<PortfolioFilter>('all');
   const [expandedId, setExpandedId] = useState<number | null>(null);
+  const [gradingEssayId, setGradingEssayId] = useState<number | null>(null);
+  const [essayMetaMap, setEssayMetaMap] = useState<Record<number, EssayMetaRecord>>({});
+  const [confirmDeleteEssay, setConfirmDeleteEssay] = useState<EssayRecord | null>(null);
   const [editingOfficialId, setEditingOfficialId] = useState<number | null>(null);
   const [officialInput, setOfficialInput] = useState<string>('6.5');
   const [toastMsg, setToastMsg] = useState<string | null>(null);
@@ -55,7 +74,17 @@ export const PortfolioScreen: React.FC = () => {
         profileRepo.getOrCreate(),
         db.kv.get('grading.biasOffset'),
       ]);
+      const metaEntries = await Promise.all(
+        list
+          .filter((e): e is EssayRecord & { id: number } => e.id !== undefined)
+          .map(async (e) => [e.id, await essayRepo.getMeta(e.id)] as const),
+      );
+      const nextMeta: Record<number, EssayMetaRecord> = {};
+      for (const [id, m] of metaEntries) {
+        if (m) nextMeta[id] = m;
+      }
       setEssays(list);
+      setEssayMetaMap(nextMeta);
       setProfile(prof);
       const savedOffset =
         typeof kvBias?.value === 'number'
@@ -158,9 +187,92 @@ export const PortfolioScreen: React.FC = () => {
     [],
   );
 
+  const upsertPortfolioSrsItem = useCallback(async (item: SrsFeedbackItem) => {
+    const isError = item.kind === 'error';
+    const prefix = isError ? 'err' : 'col';
+    const face = isError ? 'err_fix' : 'col_gap';
+    const itemId = `${prefix}:user_${makeSimpleHash(item.front + item.back)}`;
+    await userItemRepo.upsertWithCard(
+      {
+        id: itemId,
+        kind: isError ? 'error' : 'collocation',
+        front: item.front,
+        back: item.back,
+        noteVi: item.noteVi ?? 'Lỗi Writing từ kết quả chấm Claude (Portfolio)',
+        source: 'w1',
+      },
+      face,
+      {
+        unlocked: true,
+        cardSource: 'essay_feedback',
+      },
+    );
+  }, []);
+
+  const handleGradeAwaitingEssay = useCallback(
+    async (essay: EssayRecord, payload: GradingPanelGradedPayload) => {
+      if (!essay.id) return;
+      const result = payload.postcheck.cleanedResult;
+      if (!isWritingResult(result)) return;
+
+      const criteriaBands: WritingCriteriaBands = {
+        TR_TA: result.criteria.TR_TA.band,
+        CC: result.criteria.CC.band,
+        LR: result.criteria.LR.band,
+        GRA: result.criteria.GRA.band,
+      };
+      const overallBand = payload.postcheck.computedOverallBand ?? 6.0;
+      const meta = essayMetaMap[essay.id];
+
+      await essayRepo.update(essay.id, {
+        claudeResult: {
+          overallBand,
+          criteria: criteriaBands,
+          promptVersion: result.promptVersion,
+          rawJson: JSON.stringify(result),
+        },
+      });
+
+      const canRecordBand =
+        !meta?.pasted &&
+        !essay.revisionOfId &&
+        !meta?.gradedFirstTime &&
+        payload.postcheck.allowBandEvidence;
+
+      if (canRecordBand) {
+        await bandRepo.add({
+          skill: 'W',
+          mode: meta?.mode === 'exam' ? 'exam' : 'training',
+          ts: Date.now(),
+          band: overallBand,
+          taskType: essay.taskType,
+          sourceGameId: 'w1',
+        });
+        await essayRepo.saveMeta({
+          essayId: essay.id,
+          attemptId: meta?.attemptId ?? `att-${essay.promptId.replace(':', '-')}-${essay.id}`,
+          pasted: Boolean(meta?.pasted),
+          mode: meta?.mode ?? 'training',
+          durationSec: meta?.durationSec ?? 0,
+          gradedFirstTime: true,
+        });
+      }
+
+      for (const errItem of result.srsItems.filter((it) => it.kind === 'error')) {
+        await upsertPortfolioSrsItem(errItem);
+      }
+
+      setGradingEssayId(null);
+      setToastMsg(`Đã lưu kết quả ước lượng Band ${overallBand.toFixed(1)} cho bài ${essay.promptId}.`);
+      await loadData();
+    },
+    [essayMetaMap, upsertPortfolioSrsItem, loadData],
+  );
+
   const handleDeleteEssay = useCallback(
     async (id: number) => {
       await essayRepo.remove(id);
+      setConfirmDeleteEssay(null);
       setToastMsg('Đã xoá bài viết khỏi Portfolio.');
       await loadData();
     },
@@ -301,7 +413,7 @@ export const PortfolioScreen: React.FC = () => {
               return (
                 <div key={pt.id} className="flex-1 flex flex-col items-center gap-1 min-w-0">
                   <span
-                    className="font-mono text-[11px] font-bold tabular-nums"
+                    className="font-mono text-xs font-bold tabular-nums"
                     style={{ color: 'var(--color-writing)' }}
                   >
                     {pt.adjustedBand.toFixed(1)}
@@ -322,7 +434,7 @@ export const PortfolioScreen: React.FC = () => {
                     }`}
                   />
                   <span
-                    className="text-[10px] font-mono truncate w-full text-center"
+                    className="text-xs font-mono truncate w-full text-center"
                     style={{ color: 'var(--color-text-faint)' }}
                   >
                     {pt.label}
@@ -339,7 +451,7 @@ export const PortfolioScreen: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-sm font-bold flex items-center gap-2" style={{ color: 'var(--color-text)' }}>
             <Scale className="w-4 h-4" style={{ color: 'var(--color-info)' }} />
-            Kiểm chứng độ lệch Claude so với Điểm thật (docs/07 §6)
+            Kiểm chứng độ lệch Claude so với Điểm thật
           </h2>
           <Pill tone={calibration.canShowStats ? 'info' : 'neutral'} size="sm">
             {calibration.sampleCount}/5 mẫu hiệu chỉnh
@@ -420,11 +532,11 @@ export const PortfolioScreen: React.FC = () => {
             key={key}
             type="button"
             onClick={() => setFilter(key)}
-            className="px-3 py-1.5 rounded-full text-xs font-semibold border cursor-pointer"
+            className="min-h-[44px] px-3.5 py-2 rounded-full text-xs font-semibold border cursor-pointer"
             style={{
               backgroundColor: filter === key ? 'var(--color-writing)' : 'var(--color-surface)',
               borderColor: 'var(--color-border)',
-              color: filter === key ? '#0B0F1A' : 'var(--color-text-dim)',
+              color: filter === key ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
             }}
           >
             {label}
@@ -469,7 +581,7 @@ export const PortfolioScreen: React.FC = () => {
                       )}
                       {essay.claudeResult ? (
                         <Pill tone="info" size="sm">
-                          Claude: {essay.claudeResult.overallBand.toFixed(1)}
+                          Ước lượng Claude: {essay.claudeResult.overallBand.toFixed(1)}
                         </Pill>
                       ) : (
                         <Pill tone="partial" size="sm">
@@ -514,6 +626,18 @@ export const PortfolioScreen: React.FC = () => {
                   </div>
 
                   <div className="flex flex-wrap items-center gap-2">
+                    {!essay.claudeResult && essay.id !== undefined && (
+                      <Button
+                        variant="primary"
+                        skill="writing"
+                        size="sm"
+                        onClick={() =>
+                          setGradingEssayId(gradingEssayId === essay.id ? null : essay.id!)
+                        }
+                      >
+                        {gradingEssayId === essay.id ? 'Đóng khung chấm' : 'Chấm với Claude'}
+                      </Button>
+                    )}
                     <Button
                       variant="secondary"
                       size="sm"
@@ -544,8 +668,8 @@ export const PortfolioScreen: React.FC = () => {
                     {essay.id !== undefined && (
                       <button
                         type="button"
-                        onClick={() => void handleDeleteEssay(essay.id!)}
-                        className="p-1.5 rounded-[var(--radius-sm)] border cursor-pointer"
+                        onClick={() => setConfirmDeleteEssay(essay)}
+                        className="min-h-[44px] min-w-[44px] flex items-center justify-center rounded-[var(--radius-sm)] border cursor-pointer"
                         style={{
                           backgroundColor: 'var(--color-surface-2)',
                           borderColor: 'var(--color-border)',
@@ -554,11 +678,35 @@ export const PortfolioScreen: React.FC = () => {
                         aria-label="Xoá bài viết"
                         title="Xoá bài viết"
                       >
-                        <Trash2 className="w-3.5 h-3.5" />
+                        <Trash2 className="w-4 h-4" />
                       </button>
                     )}
                   </div>
                 </div>
+
+                {/* Inline GradingPanel for awaiting_grade essay (W1-06) */}
+                {!essay.claudeResult && essay.id !== undefined && gradingEssayId === essay.id && (() => {
+                  const meta = essayMetaMap[essay.id];
+                  const packetInput: GradingPacketInput = {
+                    kind: essay.taskType,
+                    attemptId:
+                      meta?.attemptId ?? `att-${essay.promptId.replace(':', '-')}-${essay.id}`,
+                    promptText: `Prompt ID: ${essay.promptId}`,
+                    essayText: essay.text,
+                    durationSec: meta?.durationSec ?? 0,
+                    mode: meta?.mode ?? 'training',
+                  };
+                  return (
+                    <GradingPanel
+                      key={packetInput.attemptId}
+                      packetInput={packetInput}
+                      sourceText={essay.text}
+                      skill="writing"
+                      onGraded={(payload) => void handleGradeAwaitingEssay(essay, payload)}
+                      onAddSrsItem={(item) => void upsertPortfolioSrsItem(item)}
+                    />
+                  );
+                })()}
 
                 {/* Inline Official Band Input Form */}
                 {isEditingOfficial && (
@@ -580,7 +728,7 @@ export const PortfolioScreen: React.FC = () => {
                       id={`official-band-${essay.id}`}
                       value={officialInput}
                       onChange={(e) => setOfficialInput(e.target.value)}
-                      className="text-xs font-mono px-2.5 py-1.5 rounded-[var(--radius-sm)] border"
+                      className="min-h-[44px] text-xs font-mono px-3 py-2 rounded-[var(--radius-sm)] border"
                       style={{
                         backgroundColor: 'var(--color-surface)',
                         borderColor: 'var(--color-border)',
@@ -637,6 +785,38 @@ export const PortfolioScreen: React.FC = () => {
           })}
         </div>
       )}
+
+      <Modal
+        open={confirmDeleteEssay !== null}
+        onClose={() => setConfirmDeleteEssay(null)}
+        title="Xoá bài viết này?"
+      >
+        <div className="space-y-4">
+          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+            Bạn có chắc muốn xoá bài{' '}
+            <strong style={{ color: 'var(--color-text)' }}>
+              {confirmDeleteEssay?.promptId}
+            </strong>{' '}
+            ({confirmDeleteEssay?.wordCount ?? 0} từ)? Hành động này không thể hoàn tác.
+          </p>
+          <div className="flex flex-wrap justify-end gap-2">
+            <Button variant="ghost" size="sm" onClick={() => setConfirmDeleteEssay(null)}>
+              Huỷ
+            </Button>
+            <Button
+              variant="danger"
+              size="sm"
+              onClick={() => {
+                if (confirmDeleteEssay?.id !== undefined) {
+                  void handleDeleteEssay(confirmDeleteEssay.id);
+                }
+              }}
+            >
+              Xoá bài
+            </Button>
+          </div>
+        </div>
+      </Modal>
 
       {toastMsg && (
         <div className="fixed bottom-4 right-4 z-50 max-w-sm">

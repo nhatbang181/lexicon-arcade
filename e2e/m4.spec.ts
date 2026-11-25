@@ -8,7 +8,7 @@ const VIEWPORTS = [
   { name: '1280', width: 1280, height: 800 },
 ] as const;
 
-const OUT_DIR = path.resolve(process.cwd(), 'e2e/screenshots/m4');
+const OUT_DIR = path.resolve(process.cwd(), 'test-results/m4');
 
 async function captureAllViewports(page: Page, slug: string): Promise<void> {
   for (const vp of VIEWPORTS) {
@@ -155,7 +155,13 @@ test.describe('M4 Writing: W1 Essay Lab (ChartRenderer + GradingPanel + Portfoli
     await checkboxes.nth(0).check();
     await checkboxes.nth(1).check();
     await checkboxes.nth(2).check();
-    await page.waitForTimeout(350);
+    await page.waitForTimeout(250);
+
+    // W2-04: Band 8 model must stay hidden until learner confirms self-check
+    await expect(page.getByTestId('w2-overview-model')).toHaveCount(0);
+    await page.getByTestId('w2-confirm-selfcheck-btn').click();
+    await expect(page.getByTestId('w2-overview-model')).toBeVisible({ timeout: 5_000 });
+    await expect(checkboxes.nth(0)).toBeDisabled();
 
     await captureAllViewports(page, 'w2');
 
@@ -166,5 +172,55 @@ test.describe('M4 Writing: W1 Essay Lab (ChartRenderer + GradingPanel + Portfoli
     expect(consoleErrors, `Console errors: ${consoleErrors.join('\n')}`).toEqual([]);
     expect(pageErrors, `Page errors: ${pageErrors.join('\n')}`).toEqual([]);
     expect(failedRequests, `Failed network requests: ${failedRequests.join('\n')}`).toEqual([]);
+  });
+
+  test('W1-01 draft recovery after reload and §4.5 grading flow takes <= 6 actions', async ({
+    page,
+  }) => {
+    test.setTimeout(90_000);
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('/#/play/w1', { waitUntil: 'networkidle' });
+    await expect(page.getByText(/Essay Lab/i).first()).toBeVisible({ timeout: 15_000 });
+
+    // Open first Task 2 prompt
+    await page.getByRole('button', { name: /Viết đề này/i }).first().click();
+    const essayBox = page.locator('textarea').last();
+    await expect(essayBox).toBeVisible({ timeout: 10_000 });
+
+    const draftText =
+      'Debate over secondary school curricula increasingly centres on whether computer coding should be compulsory alongside mathematics and languages. While I agree that introductory computational thinking ought to be taught to all pupils during early secondary years, I contend that advanced programming should remain an elective subject. Learning structured problem-solving builds transferable analytical habits and narrows digital literacy gaps across socio-economic groups. However, forcing every teenager to take examined software courses risks crowding out arts, history, and practical crafts in finite timetables. In conclusion, schools should balance foundational digital competence with broad educational choice.';
+    await essayBox.fill(draftText);
+
+    // Wait for real IndexedDB autosave (1.2s debounce)
+    await expect(page.getByText(/Đã lưu nháp lúc/i)).toBeVisible({ timeout: 6_000 });
+
+    // Reload and verify draft recovery banner appears (W1-01)
+    await page.reload({ waitUntil: 'networkidle' });
+    await expect(page.getByText(/Tiếp tục bài đang viết\?/i)).toBeVisible({ timeout: 10_000 });
+    await page.getByRole('button', { name: /Tiếp tục viết/i }).click();
+    await expect(page.locator('textarea').last()).toHaveValue(draftText, { timeout: 10_000 });
+
+    // Count user actions from Submit -> Grading Report (§4.5 <= 6 actions)
+    let actions = 0;
+
+    // Action 1: Submit essay
+    await page.getByRole('button', { name: /Nộp bài & Chấm/i }).click();
+    actions += 1;
+
+    // Action 2: Copy packet (or Copy & Open Claude)
+    const copyBtn = page.getByRole('button', { name: /Copy gói/i }).first();
+    await expect(copyBtn).toBeVisible({ timeout: 10_000 });
+    await copyBtn.click();
+    actions += 1;
+
+    // Action 3: Paste DEV sample (simulates 1-step paste + auto-analyze)
+    const sampleBtn = page.getByTestId('grading-paste-sample-btn');
+    await expect(sampleBtn).toBeVisible({ timeout: 5_000 });
+    await sampleBtn.click();
+    actions += 1;
+
+    // Verify report renders with PP-16 "ước lượng" label
+    await expect(page.getByText(/ước lượng/i).first()).toBeVisible({ timeout: 8_000 });
+    expect(actions).toBeLessThanOrEqual(6);
   });
 });
