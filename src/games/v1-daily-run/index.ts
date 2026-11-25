@@ -17,7 +17,7 @@ export const v1GameDefinition: GameDefinition = {
   estMinutes: [8, 12],
   requires: { audio: true },
   modes: ['training', 'sprint'],
-  load: () => import('./V1DailyRun').then((m) => ({ default: m.V1DailyRun })),
+  load: () => Promise.resolve({ default: V1DailyRun }),
 };
 
 export default V1DailyRun;

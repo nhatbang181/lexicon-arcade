@@ -142,5 +142,25 @@ describe('T2-B · chuẩn hoá đáp án Listening (L1-02..L1-06)', () => {
       expect(res.correct).toBe(false);
       expect(res.reason).toBe('minor_spelling_error');
     });
+
+    it('số có dấu phẩy hàng nghìn đơn lẻ ở cuối chuỗi ("1,500", "10,000", "1,500,000") đếm là 1 số dưới maxNumbers=1', () => {
+      expect(countIeltsTokens('1,500')).toEqual({ wordCount: 0, numberCount: 1 });
+      expect(countIeltsTokens('10,000')).toEqual({ wordCount: 0, numberCount: 1 });
+      expect(countIeltsTokens('1,500,000')).toEqual({ wordCount: 0, numberCount: 1 });
+
+      const r1 = scoreListeningAnswer('1,500', ['1500'], { wordLimit: NUMBER_ONLY });
+      expect(r1.correct).toBe(true);
+      expect(r1.reason).not.toBe('word_limit_exceeded');
+
+      const r2 = scoreListeningAnswer('10,000', ['10,000'], { wordLimit: TWO_AND_NUMBER });
+      expect(r2.correct).toBe(true);
+      expect(r2.reason).not.toBe('word_limit_exceeded');
+    });
+
+    it('"9:00 am" ở cuối chuỗi giữ nguyên giờ kèm am/pm, không bị rút gọn thành "9 am"', () => {
+      expect(canonicalizeIeltsExpression('9:00 am').canonical).toBe('9:00 am');
+      expect(canonicalizeIeltsExpression('9:00 pm').canonical).toBe('9:00 pm');
+      expect(canonicalizeIeltsExpression('9:00').canonical).toBe('9');
+    });
   });
 });

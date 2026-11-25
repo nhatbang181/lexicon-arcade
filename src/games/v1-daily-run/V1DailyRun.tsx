@@ -31,6 +31,7 @@ import {
   pickVariants,
   questionSlideVariants,
 } from '../../design/motion';
+import { registerProgressSaver } from '../../core/adaptive/progressSaver';
 import { playSfx } from '../../core/audio/sfx';
 import { resolveAssetUrl } from '../../core/content/loaders';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
@@ -311,17 +312,25 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   useEffect(() => {
     const flush = () => {
       const latest = latestRunRef.current;
-      if (latest && latest.phase !== 'recap' && !saverRef.current.isFinalized()) void persist(latest, false);
+      if (latest && latest.phase !== 'recap' && !saverRef.current.isFinalized()) {
+        return persist(latest, false);
+      }
+      return undefined;
     };
+    const unregisterSaver = registerProgressSaver(() => flush());
     const onVisibility = () => {
-      if (document.visibilityState === 'hidden') flush();
+      if (document.visibilityState === 'hidden') void flush();
     };
-    window.addEventListener('pagehide', flush);
+    const onPageHide = () => {
+      void flush();
+    };
+    window.addEventListener('pagehide', onPageHide);
     document.addEventListener('visibilitychange', onVisibility);
     return () => {
-      window.removeEventListener('pagehide', flush);
+      unregisterSaver();
+      window.removeEventListener('pagehide', onPageHide);
       document.removeEventListener('visibilitychange', onVisibility);
-      flush();
+      void flush();
     };
   }, [persist]);
 
