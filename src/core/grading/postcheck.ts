@@ -98,6 +98,8 @@ export function verifyQuoteInSource(
 
 export type PostcheckWarningCode =
   | 'QUOTE_NOT_FOUND'
+  | 'QUOTE_HALLUCINATION_BLOCK'
+  | 'INSUFFICIENT_SPECIFIC_FEEDBACK'
   | 'WORD_COUNT_MISMATCH'
   | 'UNDER_LENGTH_CAP'
   | 'OFF_TOPIC_CAP'
@@ -110,6 +112,8 @@ export type PostcheckWarningCode =
 export interface PostcheckWarning {
   code: PostcheckWarningCode;
   severity: 'info' | 'warning' | 'error';
+  /** Khi true (vd ATTEMPT_ID_MISMATCH), UI phải chặn lưu tự động cho tới khi người dùng xác nhận (G-01). */
+  blocking?: boolean;
   messageVi: string;
   details?: Record<string, unknown>;
 }
@@ -156,6 +160,14 @@ export interface PostcheckReport<T extends GradingResult = GradingResult> {
   quoteAudit: QuoteAuditSummary;
   warnings: PostcheckWarning[];
   hasAnomalies: boolean;
+  /** True khi attemptId trong JSON lệch với bài đang mở (G-01). */
+  attemptIdMismatch: boolean;
+  /** True khi có ít nhất 1 cảnh báo chặn lưu tự động. */
+  hasBlockingWarning: boolean;
+  /** Tổng số nhận xét cụ thể (strengths + issues đã xác minh) cho PP-16 / SR-89. */
+  specificFeedbackCount: number;
+  /** True khi đủ điều kiện ghi band evidence (không lệch attemptId, ẩn trích dẫn ≤ 50%, ≥ 3 nhận xét cụ thể). */
+  allowBandEvidence: boolean;
 }
 
 // ---------------------------------------------------------------------------
@@ -263,12 +275,16 @@ export function postcheckGradingResult(
     hiddenQuotes: [],
   };
 
-  // 1. Attempt ID check
-  if (options.expectedAttemptId && result.attemptId !== options.expectedAttemptId) {
+  // 1. Attempt ID check (G-01: blocking until user explicitly confirms)
+  const attemptIdMismatch = Boolean(
+    options.expectedAttemptId && result.attemptId !== options.expectedAttemptId,
+  );
+  if (attemptIdMismatch) {
     warnings.push({
       code: 'ATTEMPT_ID_MISMATCH',
       severity: 'error',
-      messageVi: `Kết quả này có attemptId "${result.attemptId}" khác với bài đang mở ("${options.expectedAttemptId}"). Có thể bạn đã dán nhầm kết quả của bài khác?`,
+      blocking: true,
+      messageVi: `Kết quả này có mã bài "${result.attemptId}" khác với bài đang mở ("${options.expectedAttemptId}"). Có thể bạn đã dán nhầm kết quả của bài khác?`,
       details: { expected: options.expectedAttemptId, actual: result.attemptId },
     });
   }
@@ -495,8 +511,20 @@ export function postcheckGradingResult(
     }
   }
 
-  // 5. Quote hallucination warning
-  if (quoteAudit.hiddenCount > 0) {
+  // 5. Quote hallucination warning (G-02: > 50% hidden quotes blocks band evidence)
+  const highQuoteHallucination =
+    quoteAudit.totalChecked > 0 && quoteAudit.hiddenCount / quoteAudit.totalChecked > 0.5;
+  if (highQuoteHallucination) {
+    warnings.push({
+      code: 'QUOTE_HALLUCINATION_BLOCK',
+      severity: 'error',
+      messageVi: `Hơn 50% trích dẫn không khớp bài làm gốc (${quoteAudit.hiddenCount}/${quoteAudit.totalChecked}). Kết quả này sẽ không được tính vào ước lượng band.`,
+      details: {
+        hiddenCount: quoteAudit.hiddenCount,
+        totalChecked: quoteAudit.totalChecked,
+      },
+    });
+  } else if (quoteAudit.hiddenCount > 0) {
     warnings.push({
       code: 'QUOTE_NOT_FOUND',
       severity: 'warning',
@@ -508,7 +536,50 @@ export function postcheckGradingResult(
     });
   }
 
+  // 6. Specific feedback count (PP-16 / SR-89: require >= 3 specific comments for Writing/Speaking)
+  let specificFeedbackCount = 0;
+  if (isWritingResult(cleanedResult)) {
+    const c = cleanedResult.criteria;
+    specificFeedbackCount =
+      c.TR_TA.strengths.length +
+      c.TR_TA.issues.length +
+      c.CC.strengths.length +
+      c.CC.issues.length +
+      c.LR.strengths.length +
+      c.LR.issues.length +
+      c.GRA.strengths.length +
+      c.GRA.issues.length;
+  } else if (isSpeakingResult(cleanedResult)) {
+    const c = cleanedResult.criteria;
+    specificFeedbackCount =
+      c.FC.strengths.length +
+      c.FC.issues.length +
+      c.LR.strengths.length +
+      c.LR.issues.length +
+      c.GRA.strengths.length +
+      c.GRA.issues.length +
+      c.P.strengths.length +
+      c.P.issues.length;
+  } else if (isSprintResult(cleanedResult)) {
+    specificFeedbackCount = cleanedResult.items.length;
+  }
+
+  const insufficientSpecificFeedback =
+    (isWritingResult(cleanedResult) || isSpeakingResult(cleanedResult)) &&
+    specificFeedbackCount < 3;
+  if (insufficientSpecificFeedback) {
+    warnings.push({
+      code: 'INSUFFICIENT_SPECIFIC_FEEDBACK',
+      severity: 'warning',
+      messageVi: `Chỉ có ${specificFeedbackCount}/3 nhận xét cụ thể khớp bài làm (yêu cầu ≥ 3 nhận xét cụ thể). Điểm ước lượng này không được tính vào band.`,
+      details: { specificFeedbackCount, minRequired: 3 },
+    });
+  }
+
   const hasAnomalies = warnings.some((w) => w.severity === 'warning' || w.severity === 'error');
+  const hasBlockingWarning = warnings.some((w) => Boolean(w.blocking));
+  const allowBandEvidence =
+    !attemptIdMismatch && !highQuoteHallucination && !insufficientSpecificFeedback;
 
   return {
     cleanedResult,
@@ -522,5 +593,9 @@ export function postcheckGradingResult(
     quoteAudit,
     warnings,
     hasAnomalies,
+    attemptIdMismatch,
+    hasBlockingWarning,
+    specificFeedbackCount,
+    allowBandEvidence,
   };
 }

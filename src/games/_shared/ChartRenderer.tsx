@@ -1,4 +1,4 @@
-import React, { useId } from 'react';
+import React, { useId, useState } from 'react';
 import { scaleBand, scaleLinear, scalePoint } from 'd3-scale';
 import { arc as d3Arc, line as d3Line, pie as d3Pie, type PieArcDatum } from 'd3-shape';
 import type { ChartKind, VisualSpec } from '../../core/content/schemas';
@@ -1252,6 +1252,15 @@ const MapComparisonView: React.FC<{
 // Main ChartRenderer Component
 // ---------------------------------------------------------------------------
 
+function buildChartAccessibleSummary(chart: ChartData): string {
+  const unit = chart.unit ? ` (${chart.unit})` : '';
+  const seriesLines = chart.series.map((s) => {
+    const pairs = chart.categories.map((cat, i) => `${cat}: ${s.values[i] ?? '—'}`).join(', ');
+    return `${s.name}: ${pairs}`;
+  });
+  return `${chart.title}${unit}. ${seriesLines.join('. ')}`;
+}
+
 export const ChartRenderer: React.FC<ChartRendererProps> = ({
   visual,
   kind,
@@ -1260,6 +1269,7 @@ export const ChartRenderer: React.FC<ChartRendererProps> = ({
   className = '',
 }) => {
   const uid = sanitizeId(useId());
+  const [showDataTable, setShowDataTable] = useState(false);
   const resolvedKind = resolveVisualKind(visual, kind);
 
   const renderChartPart = (chart: ChartData, forceKind?: 'bar' | 'line' | 'pie') => {
@@ -1334,6 +1344,71 @@ export const ChartRenderer: React.FC<ChartRendererProps> = ({
         </figcaption>
       )}
       {body}
+      {visual.chart && (
+        <div className="mt-3 pt-2 border-t space-y-2" style={{ borderColor: 'var(--color-border)' }}>
+          <p className="sr-only">{buildChartAccessibleSummary(visual.chart)}</p>
+          <button
+            type="button"
+            onClick={() => setShowDataTable((v) => !v)}
+            className="inline-flex items-center min-h-[44px] px-3 py-1.5 rounded-[var(--radius-sm)] border text-xs font-medium cursor-pointer"
+            style={{
+              backgroundColor: 'var(--color-surface-2)',
+              borderColor: 'var(--color-border)',
+              color: 'var(--color-text-dim)',
+            }}
+            data-testid="chart-toggle-table-btn"
+          >
+            {showDataTable ? 'Ẩn bảng số liệu' : 'Xem dạng bảng số liệu'}
+          </button>
+          {showDataTable && (
+            <div className="overflow-x-auto">
+              <table className="w-full text-xs border-collapse">
+                <thead>
+                  <tr>
+                    <th
+                      className="text-left p-2 border"
+                      style={{ borderColor: 'var(--color-border)', color: 'var(--color-text)' }}
+                    >
+                      {visual.chart.xLabel || 'Hạng mục'}
+                    </th>
+                    {visual.chart.series.map((s) => (
+                      <th
+                        key={s.name}
+                        className="text-right p-2 border"
+                        style={{ borderColor: 'var(--color-border)', color: 'var(--color-text)' }}
+                      >
+                        {s.name}
+                        {visual.chart?.unit ? ` (${visual.chart.unit})` : ''}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {visual.chart.categories.map((cat, idx) => (
+                    <tr key={cat}>
+                      <td
+                        className="p-2 border font-medium"
+                        style={{ borderColor: 'var(--color-border)', color: 'var(--color-text)' }}
+                      >
+                        {cat}
+                      </td>
+                      {visual.chart!.series.map((s) => (
+                        <td
+                          key={s.name}
+                          className="p-2 border text-right font-mono tabular-nums"
+                          style={{ borderColor: 'var(--color-border)', color: 'var(--color-text-dim)' }}
+                        >
+                          {s.values[idx] ?? '—'}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </div>
+      )}
     </figure>
   );
 };
