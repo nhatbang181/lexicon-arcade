@@ -20,114 +20,114 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Good evening, everyone, and thank you for joining our members' briefing on the Larkspur Sports Complex renovation. I am Gareth Owen, the operations director. Tonight I will outline the improvements scheduled for four of our existing facilities, and then walk you through the updated floorplan so you know where every relocated room will sit.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 19.96
     },
     {
       "lineId": "l02",
       "speakerId": "s1",
       "text": "Let's begin with the Main Swimming Pool, which always draws the most questions. Several members worried it would stay shut until late autumn for roof repairs, though our roof was actually sealed last year and is completely watertight. Instead, contractors are hanging modern acoustic panels across the vaulted ceiling to absorb the harsh echo during busy school lessons.",
-      "start": 0,
-      "end": 0
+      "start": 20.34,
+      "end": 42.05
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "Next are the Squash Courts. Early drafts proposed splitting one court into smaller meeting rooms, and some people feared our advance booking window might shrink to three days. Neither is happening: demand for squash has climbed sharply, so we are keeping all four courts intact and installing automated card access so their opening hours extend late into the evening until eleven o'clock.",
-      "start": 0,
-      "end": 0
+      "start": 42.43,
+      "end": 65.59
     },
     {
       "lineId": "l04",
       "speakerId": "s1",
       "text": "Third is our Free-Weights Room. Lifters have pointed out that the old hardwood floorboards splinter whenever heavy dumbbells are set down. Over the renovation fortnight, we are ripping out those timber planks and laying thick, shock-absorbing rubber flooring that cushions impact and stops vibration travelling to the corridor below.",
-      "start": 0,
-      "end": 0
+      "start": 65.97,
+      "end": 84.83
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "Fourth is the Old Dance Studio. Because few classes ever needed the entire forty-metre span, we are installing a soundproof folding partition down the centre to divide it into two smaller activity rooms, allowing pilates and mobility sessions to run at the exact same time without disturbing one another.",
-      "start": 0,
-      "end": 0,
+      "start": 85.21,
+      "end": 103.17,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l06",
       "speakerId": "s1",
       "text": "Now, please turn over your leaflet to the updated complex floorplan. Notice that our main access is the East Entrance along Station Avenue on the eastern side of the map. Walking straight west from the East Entrance takes you down the wide Central Concourse towards the Main Swimming Pool on the western side.",
-      "start": 0,
-      "end": 0
+      "start": 104.37,
+      "end": 122.72
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "First, let's locate the New Reception and Juice Bar. Step west through the East Entrance onto the Central Concourse, and it is the very first room immediately on your left, on the southern side of the concourse and directly north of the Members' Car Park.",
-      "start": 0,
-      "end": 0
+      "start": 123.1,
+      "end": 137.72
     },
     {
       "lineId": "l08",
       "speakerId": "s1",
       "text": "Next is our expanded Spin Cycling Studio. As you walk west from the East Entrance, you will pass a bright room immediately on your right, north of the Central Concourse right by the entrance. Do not mark that as the spin studio -- that room has been assigned as our new staff locker room.",
-      "start": 0,
-      "end": 0
+      "start": 138.1,
+      "end": 155.53
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "Instead, carry on west to the central junction and turn right, heading north up the North Wing corridor. The Spin Cycling Studio sits near the northern end of the North Wing, on the eastern side of the corridor.",
-      "start": 0,
-      "end": 0
+      "start": 155.91,
+      "end": 167.88
     },
     {
       "lineId": "l10",
       "speakerId": "s1",
       "text": "Now let's head in the opposite direction down the South Wing corridor to find the Physiotherapy Clinic. You will notice a medium-sized room on the eastern side of the South Wing just south of the Central Concourse, which houses our boiler and water filtration plant.",
-      "start": 0,
-      "end": 0
+      "start": 168.26,
+      "end": 182.88
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "Avoid the plant room and look straight across to the western side of the South Wing corridor. The quiet Physiotherapy Clinic is located there, south of the Central Concourse and well east of the Main Swimming Pool.",
-      "start": 0,
-      "end": 0
+      "start": 183.26,
+      "end": 195.13
     },
     {
       "lineId": "l12",
       "speakerId": "s1",
       "text": "Moving back north of the Central Concourse, our brand-new Climbing Wall Hall occupies the tall bay immediately on the western side of the North Wing corridor, sitting directly opposite the Spin Cycling Studio and well east of the far north-western corner.",
-      "start": 0,
-      "end": 0
+      "start": 195.51,
+      "end": 208.91
     },
     {
       "lineId": "l13",
       "speakerId": "s1",
       "text": "For recovery sessions after training, we have built a warm Hydrotherapy Suite connected to the pool's filtration lines. You will find it tucked into the far north-western corner of the complex, directly north of the Main Swimming Pool.",
-      "start": 0,
-      "end": 0
+      "start": 209.29,
+      "end": 222.49
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "Finally, clubs looking for match nets, lane ropes, and spare mats will use the enlarged Sports Equipment Store. That sits in the far south-western corner of the building, directly south of the Main Swimming Pool.",
-      "start": 0,
-      "end": 0
+      "start": 222.87,
+      "end": 235.43
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "Throughout the works, member dues will be frozen at current rates, and temporary signage will guide you around any closed corridors. Thank you for your patience, and I will now open the floor to questions.",
-      "start": 0,
-      "end": 0
+      "start": 235.81,
+      "end": 247.43
     }
   ],
   "audio": {
     "path": "audio/listening/p2_006.mp3",
-    "durationSec": 300,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 248.7,
+    "sha256": "11ccb84f5cd63d3e77a3a6f5b7954407220f24ff388f485d81d5f9292bf5d696",
+    "loudnessLUFS": -16.2
   },
   "questionGroups": [
     {
@@ -176,15 +176,15 @@
           },
           "evidence": {
             "lineId": "l02",
-            "start": 0,
-            "end": 0
+            "start": 20.34,
+            "end": 42.05
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 20.34,
+              "end": 42.05,
               "decoy": "stay shut until late autumn for roof repairs (A)",
               "explanationVi": "Mái bể bơi đã được chống thấm từ năm ngoái nên không đóng cửa sửa mái (A sai); thay vào đó sẽ lắp tấm tiêu âm giảm tiếng vang trên trần (F)."
             }
@@ -204,15 +204,15 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 42.43,
+            "end": 65.59
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l03",
-              "start": 0,
-              "end": 0,
+              "start": 42.43,
+              "end": 65.59,
               "decoy": "splitting one court / advance booking window might shrink to three days (E)",
               "explanationVi": "Cả ý tưởng chia nhỏ sân lẫn rút ngắn lịch đặt trước xuống 3 ngày (E) đều bị bác bỏ; thay vào đó sân được kéo dài giờ mở cửa đến 11 giờ đêm (B)."
             }
@@ -232,15 +232,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 65.97,
+            "end": 84.83
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 65.97,
+              "end": 84.83,
               "decoy": "ripping out timber planks and laying thick, shock-absorbing rubber flooring",
               "explanationVi": "Thay ván gỗ cũ bằng sàn cao su giảm chấn dày khớp hoàn toàn với phương án D."
             }
@@ -260,8 +260,8 @@
           },
           "evidence": {
             "lineId": "l05",
-            "start": 0,
-            "end": 0
+            "start": 85.21,
+            "end": 103.17
           },
           "traps": []
         }
@@ -466,8 +466,8 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 123.1,
+            "end": 137.72
           },
           "traps": []
         },
@@ -485,15 +485,15 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 155.91,
+            "end": 167.88
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 138.1,
+              "end": 155.53,
               "decoy": "bright room immediately on your right next to East Entrance (D)",
               "explanationVi": "Phòng ngay bên phải sát East Entrance (D) là phòng tủ đồ nhân viên; phòng đạp xe Spin nằm gần đầu bắc hành lang North Wing về phía đông (C)."
             }
@@ -513,15 +513,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 183.26,
+            "end": 195.13
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 168.26,
+              "end": 182.88,
               "decoy": "medium-sized room on the eastern side of South Wing (F)",
               "explanationVi": "Phòng bên phía đông hành lang South Wing (F) là phòng lò hơi và lọc nước; phòng vật lý trị liệu nằm đối diện sang phía tây hành lang South Wing (G)."
             }
@@ -541,8 +541,8 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 195.51,
+            "end": 208.91
           },
           "traps": []
         },
@@ -560,8 +560,8 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 209.29,
+            "end": 222.49
           },
           "traps": []
         },
@@ -579,8 +579,8 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 222.87,
+            "end": 235.43
           },
           "traps": []
         }
@@ -595,5 +595,15 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-GB-ThomasNeural",
+    "voices": {
+      "s1": "en-GB-ThomasNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.94,
+    "renderedAt": "2026-11-24"
   }
 }

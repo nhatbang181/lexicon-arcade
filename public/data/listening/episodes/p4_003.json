@@ -20,158 +20,158 @@
       "lineId": "l01",
       "speakerId": "lec",
       "text": "Good afternoon, everyone. In today's coastal geomorphology seminar, we are looking at one of nature's most dramatic hydraulic reversals: the tidal bore, a distinct wave front that surges upstream against the normal seaward flow of a river. If you have ever watched a quiet estuary suddenly turn around and rush inland with a thunderous roar, you will understand why bores have fascinated geographers for centuries.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 25.94
     },
     {
       "lineId": "l02",
       "speakerId": "lec",
       "text": "Tidal bores are surprisingly rare; fewer than seventy rivers worldwide produce a noticeable bore. They form only where a shallow estuary opens wide to the sea and narrows abruptly inland, acting like a giant funnel that squeezes the incoming tide into an ever-tighter channel.",
-      "start": 0,
-      "end": 0
+      "start": 26.32,
+      "end": 42.72
     },
     {
       "lineId": "l03",
       "speakerId": "lec",
       "text": "In addition to that converging geometry, the coast must experience a substantial tidal range, usually exceeding six metres between low and high water during spring tides, when the gravitational pull of the sun and moon align to lift ocean water unusually high against the continental shelf.",
-      "start": 0,
-      "end": 0
+      "start": 43.1,
+      "end": 59.93
     },
     {
       "lineId": "l04",
       "speakerId": "lec",
       "text": "Spectators watching a steep wall of water charge upriver often blame onshore gales for pushing the wave upright. Yet wind speed plays only a minor part. What actually transforms a smooth rising tide into an abrupt step is riverbed friction, which drags back the shallow leading edge while deeper water behind catches up and piles over the front.",
-      "start": 0,
-      "end": 0
+      "start": 60.31,
+      "end": 81.64
     },
     {
       "lineId": "l05",
       "speakerId": "lec",
       "text": "Once triggered under those exact conditions, a large bore can propagate tens of kilometres inland at speeds matching a fast cyclist, raising the river surface by two or three metres within just a few seconds.",
-      "start": 0,
-      "end": 0,
+      "start": 82.02,
+      "end": 94.37,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l06",
       "speakerId": "lec",
       "text": "Let's turn now to the physical structure of these surges and the intense turbulence they generate beneath the surface.",
-      "start": 0,
-      "end": 0
+      "start": 95.57,
+      "end": 101.41
     },
     {
       "lineId": "l07",
       "speakerId": "lec",
       "text": "Hydrologists divide tidal bores into two main forms depending on the ratio of wave speed to channel depth. Violent breaking bores advance as a roaring, foam-covered roller. In slightly deeper or gentler estuaries, however, you see an undular bore: a smooth primary crest trailed by a neat train of secondary oscillations.",
-      "start": 0,
-      "end": 0
+      "start": 101.79,
+      "end": 122.69
     },
     {
       "lineId": "l08",
       "speakerId": "lec",
       "text": "Even an undular bore that looks deceptively glassy and calm on top conceals powerful velocity shifts underneath. Within moments of the crest passing, near-bed currents flip abruptly from seaward to landward, subjecting rocks, bridge piers, and benthic organisms to sudden shear stress.",
-      "start": 0,
-      "end": 0
+      "start": 123.07,
+      "end": 141.34
     },
     {
       "lineId": "l09",
       "speakerId": "lec",
       "text": "You might expect the most immediate measurable change behind the front to be a sudden jump in salinity, yet brackish seawater actually lags behind the pressure wave. What spikes instantaneously instead is the concentration of suspended sediment, as energetic eddies scour fine clay and silt straight off the riverbed.",
-      "start": 0,
-      "end": 0
+      "start": 141.72,
+      "end": 160.28
     },
     {
       "lineId": "l10",
       "speakerId": "lec",
       "text": "Field instruments anchored in bore channels routinely record turbidity rising tenfold in under a minute after passage.",
-      "start": 0,
-      "end": 0,
+      "start": 160.66,
+      "end": 167.04,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l11",
       "speakerId": "lec",
       "text": "Moving on from hydrodynamics, let's consider how these recurring surges sculpt estuarine landforms and shape local ecosystems.",
-      "start": 0,
-      "end": 0
+      "start": 168.24,
+      "end": 175.95
     },
     {
       "lineId": "l12",
       "speakerId": "lec",
       "text": "Because the violent flood phase lifts far more particles inland than the slower ebb tide can haul back to sea, bore-dominated estuaries show a strong net landward transport. Over decades, this asymmetry builds vast intertidal mudflats along the sheltered margins of the channel.",
-      "start": 0,
-      "end": 0
+      "start": 176.33,
+      "end": 193.03
     },
     {
       "lineId": "l13",
       "speakerId": "lec",
       "text": "During peak spring tides, water spills over natural levees and settles across the surrounding valley floor as the current slackens.",
-      "start": 0,
-      "end": 0
+      "start": 193.41,
+      "end": 200.65
     },
     {
       "lineId": "l14",
       "speakerId": "lec",
       "text": "Centuries of this periodic flooding have deposited rich mineral silt to form broad agricultural plains flanking the lower reaches of many tidal bore rivers.",
-      "start": 0,
-      "end": 0
+      "start": 201.03,
+      "end": 209.86
     },
     {
       "lineId": "l15",
       "speakerId": "lec",
       "text": "Ecologically, the repeated churning of the bed does far more good than harm. By resuspending buried organic nutrients into sunlit upper layers, the bore stimulates microscopic algal growth that feeds dense nursery populations of juvenile crustaceans.",
-      "start": 0,
-      "end": 0
+      "start": 210.24,
+      "end": 225.96
     },
     {
       "lineId": "l16",
       "speakerId": "lec",
       "text": "Wading birds and migratory fish time their feeding runs directly around the bore's passage to exploit this brief burst of biological productivity.",
-      "start": 0,
-      "end": 0,
+      "start": 226.34,
+      "end": 234.52,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l17",
       "speakerId": "lec",
       "text": "Finally, let's look at how human engineering has altered tidal bore rivers over the past two centuries, and how researchers monitor them today.",
-      "start": 0,
-      "end": 0
+      "start": 235.72,
+      "end": 244.06
     },
     {
       "lineId": "l18",
       "speakerId": "lec",
       "text": "Historically, mariners regarded strong bores as a serious hazard capable of capsizing anchored barges. To make estuaries safer for commercial cargo vessels, port authorities deepened navigation channels through intensive dredging, an intervention that reduced bed resistance and permanently extinguished several historic bores.",
-      "start": 0,
-      "end": 0
+      "start": 244.44,
+      "end": 264.48
     },
     {
       "lineId": "l19",
       "speakerId": "lec",
       "text": "Tidal barriers and hydroelectric dams built further upriver have likewise dampened surges by truncating the estuary's natural length.",
-      "start": 0,
-      "end": 0
+      "start": 264.86,
+      "end": 272.22
     },
     {
       "lineId": "l20",
       "speakerId": "lec",
       "text": "Interestingly, public attitudes have shifted dramatically in recent decades. Rather than being viewed merely as a menace to shipping, surviving bores are now celebrated as seasonal spectacles that attract adventurous surfers eager to ride a single continuous wave for kilometres.",
-      "start": 0,
-      "end": 0
+      "start": 272.6,
+      "end": 289.11
     },
     {
       "lineId": "l21",
       "speakerId": "lec",
       "text": "Looking ahead, climate-driven sea-level rise and shifting river discharge will inevitably reshape where and when bores occur. Coastal scientists are therefore combining drone imagery with numerical modelling to predict how estuarine channels will respond over the coming century. Thank you.",
-      "start": 0,
-      "end": 0
+      "start": 289.49,
+      "end": 307.09
     }
   ],
   "audio": {
     "path": "audio/listening/p4_003.mp3",
-    "durationSec": 360,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 308.4,
+    "sha256": "58d95bcfd84fca82368c8ae2190bb0b58e39f9ced66b2673a8f371264a620174",
+    "loudnessLUFS": -15.2
   },
   "questionGroups": [
     {
@@ -250,15 +250,15 @@
           },
           "evidence": {
             "lineId": "l02",
-            "start": 0,
-            "end": 0
+            "start": 26.32,
+            "end": 42.72
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 26.32,
+              "end": 42.72,
               "explanationVi": "'compress incoming tides' diễn đạt lại 'squeezes the incoming tide' ngay sau từ 'funnel'."
             }
           ]
@@ -274,15 +274,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 60.31,
+            "end": 81.64
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 60.31,
+              "end": 81.64,
               "decoy": "wind",
               "explanationVi": "Người nói bác bỏ 'wind speed' (vai trò phụ) và chỉ rõ động lực chính là 'riverbed friction'."
             }
@@ -299,15 +299,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 101.79,
+            "end": 122.69
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 101.79,
+              "end": 122.69,
               "explanationVi": "Cần điền dạng số nhiều 'oscillations' (các dao động phụ theo sau đỉnh sóng)."
             }
           ]
@@ -323,15 +323,15 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 141.72,
+            "end": 160.28
           },
           "traps": [
             {
               "type": "signpost_skip",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 141.72,
+              "end": 160.28,
               "decoy": "salinity",
               "explanationVi": "Giảng viên loại trừ 'salinity' (tăng chậm hơn) trước khi chốt yếu tố tăng tức thì là 'sediment'."
             }
@@ -348,15 +348,15 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 176.33,
+            "end": 193.03
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 176.33,
+              "end": 193.03,
               "explanationVi": "Từ ghép số nhiều 'mudflats' phải giữ nguyên -s."
             }
           ]
@@ -372,15 +372,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 201.03,
+            "end": 209.86
           },
           "traps": [
             {
               "type": "homophone_minimal_pair",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 201.03,
+              "end": 209.86,
               "decoy": "planes",
               "explanationVi": "'plains' (đồng bằng) đồng âm với 'planes' (máy bay/mặt phẳng)."
             }
@@ -397,15 +397,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 210.24,
+            "end": 225.96
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 210.24,
+              "end": 225.96,
               "explanationVi": "Danh từ số nhiều 'crustaceans' khớp với 'populations of'."
             }
           ]
@@ -421,15 +421,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 244.44,
+            "end": 264.48
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l18",
-              "start": 0,
-              "end": 0,
+              "start": 244.44,
+              "end": 264.48,
               "explanationVi": "'vanished' diễn đạt lại 'permanently extinguished' do hoạt động 'dredging'."
             }
           ]
@@ -445,15 +445,15 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 272.6,
+            "end": 289.11
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l20",
-              "start": 0,
-              "end": 0,
+              "start": 272.6,
+              "end": 289.11,
               "decoy": "shipping",
               "explanationVi": "Chuyển ý từ mối nguy cho 'shipping' sang sức hút mới đối với 'surfers'."
             }
@@ -471,15 +471,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 289.49,
+            "end": 307.09
           },
           "traps": [
             {
               "type": "double_letter",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 289.49,
+              "end": 307.09,
               "explanationVi": "Chấp nhận cả chính tả Anh 'modelling' (hai chữ l) và Mỹ 'modeling' (một chữ l)."
             }
           ]
@@ -495,5 +495,15 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "lec=en-NZ-MitchellNeural",
+    "voices": {
+      "lec": "en-NZ-MitchellNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.98,
+    "renderedAt": "2026-11-25"
   }
 }

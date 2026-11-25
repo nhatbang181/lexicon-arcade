@@ -231,8 +231,8 @@
   "audio": {
     "path": "audio/listening/p3_001.mp3",
     "durationSec": 321.8,
-    "sha256": "0d192ed73313c23cedc54107ba8532edf39d0da31dd9dc46aaccca14b4c17486",
-    "loudnessLUFS": -16.6
+    "sha256": "015a46e0a16e5c5beaf8ddf59cb7d8216ff7dcd6d7b4cb5c897974ac207ee216",
+    "loudnessLUFS": -15.5
   },
   "questionGroups": [
     {
@@ -584,5 +584,16 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-GB-LibbyNeural, s2=en-US-GuyNeural",
+    "voices": {
+      "s1": "en-GB-LibbyNeural",
+      "s2": "en-US-GuyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

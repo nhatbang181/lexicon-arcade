@@ -27,199 +27,199 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Hey Gemma, I just finished plotting the six-month tonnage logs from our four apartment composting hubs. Overall diversion rates beat expectations, though there was a steep drop in month two.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 9.9
     },
     {
       "lineId": "l02",
       "speakerId": "s2",
       "text": "Yes, that dip worried the housing association. At first they wondered whether residents had failed to pick up their free kitchen caddies, or got confused by a change in council bin collection days.",
-      "start": 0,
-      "end": 0
+      "start": 10.35,
+      "end": 22.72
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "Actually, ninety percent of flats picked up caddies in week one, and our bays operate on voluntary drop-off rather than fixed collection days.",
-      "start": 0,
-      "end": 0
+      "start": 23.17,
+      "end": 30.37
     },
     {
       "lineId": "l04",
       "speakerId": "s2",
       "text": "What drove residents away in month two was that June heatwave: without enough dry bedding, wet food scraps turned anaerobic and the bays gave off sharp sour odours across the walkways.",
-      "start": 0,
-      "end": 0
+      "start": 30.82,
+      "end": 41.66
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "Right, which is why our volunteer workshops turned things around in month three. Looking back, what part of those sessions actually moved the needle?",
-      "start": 0,
-      "end": 0
+      "start": 42.11,
+      "end": 49.92
     },
     {
       "lineId": "l06",
       "speakerId": "s2",
       "text": "Hardly anyone read the laminated posters listing forbidden foods, and only the four site captains ever bothered using the long probe thermometers.",
-      "start": 0,
-      "end": 0
+      "start": 50.37,
+      "end": 58.86
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "Agreed. Hands-on demonstrations showing tenants how to layer wet kitchen peelings with dry shredded paper fixed the smell almost overnight.",
-      "start": 0,
-      "end": 0
+      "start": 59.31,
+      "end": 66.74
     },
     {
       "lineId": "l08",
       "speakerId": "s2",
       "text": "Now, for phase two, one councillor asked why we do not buy an electric in-vessel composter instead of wooden timber bays.",
-      "start": 0,
-      "end": 0
+      "start": 67.19,
+      "end": 74.78
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "To be fair, modern in-vessel drums handle citrus peels and coffee grounds effortlessly, and lab tests show their finished compost is every bit as rich as timber-bay soil.",
-      "start": 0,
-      "end": 0
+      "start": 75.23,
+      "end": 83.87
     },
     {
       "lineId": "l10",
       "speakerId": "s2",
       "text": "True, quality is not the drawback. Once we priced ongoing electricity bills and annual motor servicing, the running costs blew well past the entire neighbourhood sustainability grant.",
-      "start": 0,
-      "end": 0
+      "start": 84.32,
+      "end": 96.64
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "That settles the hardware debate. Before we look at contamination, did anything catch you off guard in our end-of-trial resident survey?",
-      "start": 0,
-      "end": 0
+      "start": 97.09,
+      "end": 104.14
     },
     {
       "lineId": "l12",
       "speakerId": "s2",
       "text": "Seeing retired tenants log more volunteer hours than university students was fairly predictable, and contrary to our hunch, households with young children actually had the cleanest buckets.",
-      "start": 0,
-      "end": 0
+      "start": 104.59,
+      "end": 115.95
     },
     {
       "lineId": "l13",
       "speakerId": "s2",
       "text": "What genuinely surprised me was motivation: far more respondents valued harvesting free herbs and tomatoes grown in the shared compost than saving money on municipal waste fees.",
-      "start": 0,
-      "end": 0,
+      "start": 116.2,
+      "end": 127.3,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "That is a brilliant finding for the council report. Let us review our sorting audits next, specifically which contaminants stayed stubbornly high right through month six.",
-      "start": 0,
-      "end": 0
+      "start": 128.1,
+      "end": 136.59
     },
     {
       "lineId": "l15",
       "speakerId": "s2",
       "text": "Well, cooked meat and dairy vanished almost completely after our week-three reminder, caretakers intercepted wax-coated produce cartons before they ever reached the bays, and we never saw treated garden timber offcuts in apartment blocks.",
-      "start": 0,
-      "end": 0
+      "start": 137.04,
+      "end": 151.04
     },
     {
       "lineId": "l16",
       "speakerId": "s1",
       "text": "The biggest repeat offender was takeaway coffee cups stamped compostable. Residents naturally tossed them in, not realising bioplastic linings only break down in high-heat industrial plants, never in backyard bays.",
-      "start": 0,
-      "end": 0
+      "start": 151.49,
+      "end": 163.43
     },
     {
       "lineId": "l17",
       "speakerId": "s2",
       "text": "Yes, those half-intact cups clogged our final sieve every single time. And the other item we never managed to eliminate was tiny adhesive fruit stickers.",
-      "start": 0,
-      "end": 0
+      "start": 163.88,
+      "end": 174.36
     },
     {
       "lineId": "l18",
       "speakerId": "s1",
       "text": "Right, those glossy plastic labels peel off banana skins and apples and slip straight through the screening mesh into the finished soil.",
-      "start": 0,
-      "end": 0,
+      "start": 174.81,
+      "end": 181.33,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l19",
       "speakerId": "s2",
       "text": "So bioplastic takeaway cups and adhesive fruit stickers go at the top of our education brief. Finally, let us confirm the single physical upgrade we are recommending for each of the four courtyards. First, Maple Court.",
-      "start": 0,
-      "end": 0
+      "start": 182.13,
+      "end": 197.5
     },
     {
       "lineId": "l20",
       "speakerId": "s1",
       "text": "Maple Court's bays already sit well away from ground-floor windows, so smell complaints were zero. However, field mice burrowed straight up through the soil beneath the open timber slats.",
-      "start": 0,
-      "end": 0
+      "start": 197.95,
+      "end": 207.98
     },
     {
       "lineId": "l21",
       "speakerId": "s2",
       "text": "Definitely line the base of every Maple Court bin with fine steel mesh to block rodents. Next is Cedar Terrace. Their security floodlights are bright enough for evening drop-offs.",
-      "start": 0,
-      "end": 0
+      "start": 208.43,
+      "end": 220.77
     },
     {
       "lineId": "l22",
       "speakerId": "s1",
       "text": "True, lighting is fine there. The snag at Cedar Terrace is language diversity: four primary languages are spoken in that block, so English-only instructions failed. Mounting multilingual picture signs right above each hatch will clear up confusion.",
-      "start": 0,
-      "end": 0
+      "start": 221.22,
+      "end": 235.36
     },
     {
       "lineId": "l23",
       "speakerId": "s2",
       "text": "Great. Third is Birchwood Mews. They already swapped heavy timber lids for lightweight covers during week four.",
-      "start": 0,
-      "end": 0
+      "start": 235.81,
+      "end": 243.99
     },
     {
       "lineId": "l24",
       "speakerId": "s1",
       "text": "Right, lids are sorted. Their headache was autumn rain soaking the open sacks of sawdust and dry leaves, leaving volunteers with soggy bedding. Installing a lockable weatherproof chest for dry carbon material solves that.",
-      "start": 0,
-      "end": 0
+      "start": 244.44,
+      "end": 256.96
     },
     {
       "lineId": "l25",
       "speakerId": "s2",
       "text": "Last one is Rowan Gardens. Because their bays stand on poured concrete slabs, burrowing rodents were never an issue.",
-      "start": 0,
-      "end": 0
+      "start": 257.41,
+      "end": 265.41
     },
     {
       "lineId": "l26",
       "speakerId": "s1",
       "text": "No pests at all, yet sitting two metres outside downstairs bedrooms meant warm steam drifted straight indoors on humid evenings. We should relocate those bays to the far bike-shed corner away from ground-floor windows.",
-      "start": 0,
-      "end": 0
+      "start": 265.86,
+      "end": 277.57
     },
     {
       "lineId": "l27",
       "speakerId": "s2",
       "text": "Clear, practical, and tailored to every courtyard. Let us compile the recommendations table before Monday's meeting.",
-      "start": 0,
-      "end": 0
+      "start": 278.02,
+      "end": 285.86
     }
   ],
   "audio": {
     "path": "audio/listening/p3_006.mp3",
-    "durationSec": 330,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 286.7,
+    "sha256": "35513c6d296e0a202f11c6d93e7e8fd1f5afe000e8aa7d7f843e41f5e41ace2c",
+    "loudnessLUFS": -15.7
   },
   "questionGroups": [
     {
@@ -256,15 +256,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 30.82,
+            "end": 41.66
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 10.35,
+              "end": 22.72,
               "decoy": "free kitchen caddies / council bin collection days",
               "explanationVi": "Hiệp hội nhà ở nghi do cư dân quên lấy thùng bếp (A) hoặc nhầm lịch thu gom (C), nhưng Noah phủ nhận cả hai và Gemma chỉ ra nguyên nhân thật là mùi chua bốc lên trong đợt nắng nóng tháng sáu (B)."
             }
@@ -284,15 +284,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 59.31,
+            "end": 66.74
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 50.37,
+              "end": 58.86,
               "decoy": "laminated posters / probe thermometers",
               "explanationVi": "Hầu như không ai đọc áp phích ép nhựa (loại B) và chỉ đội trưởng dùng nhiệt kế que (loại C); phần thực hành trộn rác ướt với giấy vụn khô mới thực sự hiệu quả (A)."
             }
@@ -312,15 +312,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 84.32,
+            "end": 96.64
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 75.23,
+              "end": 83.87,
               "decoy": "citrus peels and coffee grounds / every bit as rich",
               "explanationVi": "Máy xử lý tốt vỏ cam bã cà phê (loại A) và chất lượng phân tương đương hộc gỗ (loại B); lý do loại là chi phí điện và bảo dưỡng mô-tơ vượt xa ngân sách tài trợ (C)."
             }
@@ -340,15 +340,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 116.2,
+            "end": 127.3
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 104.59,
+              "end": 115.95,
               "decoy": "retired tenants / households with young children",
               "explanationVi": "Người nghỉ hưu góp nhiều giờ là điều dễ đoán (loại A) và gia đình có trẻ nhỏ thực ra phân loại sạch nhất (loại C); điều bất ngờ là cư dân coi trọng rau thơm cà chua chung hơn giảm phí rác (B)."
             }
@@ -400,15 +400,15 @@
           },
           "evidence": {
             "lineId": "l16",
-            "start": 0,
-            "end": 0
+            "start": 151.49,
+            "end": 163.43
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 137.04,
+              "end": 151.04,
               "decoy": "cooked meat and dairy / wax-coated produce cartons / treated garden timber",
               "explanationVi": "Thịt sữa chín (B) biến mất sau tuần ba, thùng sáp (C) bị chặn từ đầu và gỗ xử lý (E) không xuất hiện; chất bẩn dai dẳng đầu tiên là ly mang đi dán nhãn phân hủy sinh học (A)."
             }
@@ -430,8 +430,8 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 163.88,
+            "end": 174.36
           },
           "traps": []
         }
@@ -483,15 +483,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 208.43,
+            "end": 220.77
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l20",
-              "start": 0,
-              "end": 0,
+              "start": 197.95,
+              "end": 207.98,
               "decoy": "away from ground-floor windows",
               "explanationVi": "Maple Court đã đặt xa cửa sổ tầng trệt (loại A); vấn đề chuột đào từ dưới đất cần giải quyết bằng lưới thép mịn lót đáy (B)."
             }
@@ -511,15 +511,15 @@
           },
           "evidence": {
             "lineId": "l22",
-            "start": 0,
-            "end": 0
+            "start": 221.22,
+            "end": 235.36
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 208.43,
+              "end": 220.77,
               "decoy": "security floodlights are bright enough",
               "explanationVi": "Ánh sáng lối đi (D) đã đủ sáng; nơi này có bốn ngôn ngữ chính nên cần gắn bảng hình ảnh đa ngôn ngữ phía trên nắp hộc (F)."
             }
@@ -539,15 +539,15 @@
           },
           "evidence": {
             "lineId": "l24",
-            "start": 0,
-            "end": 0
+            "start": 244.44,
+            "end": 256.96
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 235.81,
+              "end": 243.99,
               "decoy": "swapped heavy timber lids for lightweight covers",
               "explanationVi": "Nắp nhẹ (E) đã được thay xong từ tuần bốn; họ cần rương có khóa chống mưa để cất mùn cưa và lá khô (C)."
             }
@@ -567,15 +567,15 @@
           },
           "evidence": {
             "lineId": "l26",
-            "start": 0,
-            "end": 0
+            "start": 265.86,
+            "end": 277.57
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l25",
-              "start": 0,
-              "end": 0,
+              "start": 257.41,
+              "end": 265.41,
               "decoy": "burrowing rodents were never an issue",
               "explanationVi": "Do đặt trên nền bê tông nên không lo chuột (loại B); hơi ấm bay vào phòng ngủ tầng trệt buộc phải dời hộc ra xa cửa sổ tầng trệt (A)."
             }
@@ -592,5 +592,16 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-CA-LiamNeural, s2=en-GB-LibbyNeural",
+    "voices": {
+      "s1": "en-CA-LiamNeural",
+      "s2": "en-GB-LibbyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

@@ -20,135 +20,135 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Good morning, everyone, and a warm welcome to Alderwood Folk and Craft Village. My name is Harriet Cole, and I am one of the heritage guides here. Before you wander down to the village green, let me share a few facts about how the village came together, today's schedule, and your walking map.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 17.94
     },
     {
       "lineId": "l02",
       "speakerId": "s1",
       "text": "People often imagine that every timber-framed cottage here has stood in Alderwood Valley since the seventeenth century, or else assume we built modern concrete replicas in the 1970s. In reality, we never use concrete copies, and only our stone watermill down by the brook was originally standing on this site.",
-      "start": 0,
-      "end": 0
+      "start": 18.19,
+      "end": 37.97
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "Almost all of the historic cottages were saved from demolition across neighbouring counties: preservation teams carefully dismantled them timber by timber, numbered every beam and brick, and rebuilt them right here on our grounds.",
-      "start": 0,
-      "end": 0
+      "start": 38.22,
+      "end": 51.3
     },
     {
       "lineId": "l04",
       "speakerId": "s1",
       "text": "If you are hoping to see the working flour mill in action, please note that it will only be grinding grain this afternoon from two o'clock. After last night's heavy rainfall, the brook is running nice and full, and the morning school visit we expected actually cancelled because their coach broke down.",
-      "start": 0,
-      "end": 0
+      "start": 51.55,
+      "end": 68.77
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "The reason the mill wheel is still this morning is that our head miller is using the quiet hours to dress the granite millstone -- chiselling fresh grinding grooves into the stone and rebalancing the main shaft.",
-      "start": 0,
-      "end": 0
+      "start": 69.02,
+      "end": 80.0
     },
     {
       "lineId": "l06",
       "speakerId": "s1",
       "text": "Many families also enjoy our horse-drawn wagon rides around the green. There is no need to reserve seats online the day before, and children under eight ride free every day of the week, including weekends. Just keep in mind that we rest our shire horses between twelve-thirty and one-thirty, so the wagon stops running during the lunch hour.",
-      "start": 0,
-      "end": 0
+      "start": 80.25,
+      "end": 101.96
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "While browsing our craft cottages, do remember that our makers are independent artisans who keep their own proceeds rather than donating them to a national charity. Because mobile reception down in the valley is patchy, several workshops such as the potter and the weaver only accept cash.",
-      "start": 0,
-      "end": 0
+      "start": 102.21,
+      "end": 118.99
     },
     {
       "lineId": "l08",
       "speakerId": "s1",
       "text": "If you pick up delicate stoneware bowls or heavy willow baskets early in the day, however, you do not need to carry them around: simply ask the craftsperson to attach a tag, and our porters will hold your parcel safely at the North Gatehouse desk until you are ready to leave.",
-      "start": 0,
-      "end": 0,
+      "start": 119.24,
+      "end": 135.12,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "Now let's unfold your village map. We are standing at the North Gatehouse on the northern edge of the village, just south of Mill Lane. Walking straight south down High Street takes you towards the wide Village Green in the centre, while Alder Brook flows east to west along the southern boundary.",
-      "start": 0,
-      "end": 0
+      "start": 135.92,
+      "end": 153.24
     },
     {
       "lineId": "l10",
       "speakerId": "s1",
       "text": "First, if you fancy a pot of tea before exploring, head down High Street from the North Gatehouse. You will see two cottages facing each other across High Street north of the Village Green. The one on your left, on the eastern side, is our old schoolhouse, which is closed today while thatchers repair the straw roof.",
-      "start": 0,
-      "end": 0
+      "start": 153.49,
+      "end": 173.06
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "The Village Tea Room is directly across High Street on your right, sitting on the western side of High Street just north of the Village Green.",
-      "start": 0,
-      "end": 0
+      "start": 173.31,
+      "end": 181.01
     },
     {
       "lineId": "l12",
       "speakerId": "s1",
       "text": "From the Tea Room, stroll further west into the north-western quadrant of the village, staying south of Mill Lane and well north of Weaver's Lane. There you will find the Basket Weaver's Cottage, with bundles of soaked willow drying outside its door.",
-      "start": 0,
-      "end": 0
+      "start": 181.26,
+      "end": 195.93
     },
     {
       "lineId": "l13",
       "speakerId": "s1",
       "text": "Crossing over to the far north-eastern corner of the map, south of Mill Lane and well north of Orchard Walk, stands our nineteenth-century Print Shop, where you can watch hand-set metal type being inked on an iron press.",
-      "start": 0,
-      "end": 0
+      "start": 196.18,
+      "end": 208.46
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "Next, let's head south of the lanes towards Alder Brook. Follow Weaver's Lane all the way west from the Village Green, then turn south towards the brook. The large building tucked into the far south-western corner, just north of Alder Brook, is our Pottery Kiln Barn.",
-      "start": 0,
-      "end": 0
+      "start": 208.71,
+      "end": 225.81
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "Walking east along the northern bank of Alder Brook from the pottery, you will first pass a smaller barn just south-west of the Village Green. That is our wagon stable where the horses rest at midday, so continue a little further east.",
-      "start": 0,
-      "end": 0
+      "start": 226.06,
+      "end": 239.94
     },
     {
       "lineId": "l16",
       "speakerId": "s1",
       "text": "Right on the northern bank of Alder Brook, directly south of the centre of the Village Green, sits the Woodturner's Workshop, where wooden bowls are shaped on a foot-powered pole lathe.",
-      "start": 0,
-      "end": 0
+      "start": 240.19,
+      "end": 250.14
     },
     {
       "lineId": "l17",
       "speakerId": "s1",
       "text": "Finally, walk east from the Village Green along Orchard Walk towards the eastern edge of the map. Just north of the eastern end of Orchard Walk -- directly north of the Stone Watermill and south of the Print Shop -- you will find our fragrant Apothecary Herb Garden.",
-      "start": 0,
-      "end": 0
+      "start": 250.39,
+      "end": 265.53
     },
     {
       "lineId": "l18",
       "speakerId": "s1",
       "text": "Please keep an eye on the time for our afternoon mill grinding at two o'clock, and do ask any costumed demonstrator if you would like to try a craft tool yourself. Enjoy your day at Alderwood.",
-      "start": 0,
-      "end": 0
+      "start": 265.78,
+      "end": 276.96
     }
   ],
   "audio": {
     "path": "audio/listening/p2_res_001.mp3",
-    "durationSec": 290,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 277.8,
+    "sha256": "df98591e482e6aa3b144b59e0b01fb917f1dc6c88ab2490d54f2d6223f5bfd4e",
+    "loudnessLUFS": -15.7
   },
   "questionGroups": [
     {
@@ -185,15 +185,15 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 38.22,
+            "end": 51.3
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 18.19,
+              "end": 37.97,
               "decoy": "stood in Alderwood Valley / concrete replicas in the 1970s",
               "explanationVi": "Làng không dùng bản sao bê tông (B sai) và chỉ có cối xay nước bằng đá vốn ở sẵn đây (C sai); phần lớn nhà cổ được tháo dỡ từ vùng lân cận rồi dựng lại tại đây (A)."
             }
@@ -213,15 +213,15 @@
           },
           "evidence": {
             "lineId": "l05",
-            "start": 0,
-            "end": 0
+            "start": 69.02,
+            "end": 80.0
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 51.55,
+              "end": 68.77,
               "decoy": "morning school visit actually cancelled / brook is running nice and full",
               "explanationVi": "Đoàn học sinh buổi sáng đã hủy vì hỏng xe (A sai), nước suối cũng rất đầy sau cơn mưa đêm qua (C sai); lý do thật là thợ đang đục rãnh và cân chỉnh cối đá (B)."
             }
@@ -241,15 +241,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 80.25,
+            "end": 101.96
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 80.25,
+              "end": 101.96,
               "decoy": "no need to reserve seats online / free every day including weekends",
               "explanationVi": "Không cần đặt chỗ trước (A sai) và trẻ dưới 8 tuổi miễn phí cả cuối tuần (C sai); xe ngựa tạm dừng từ 12:30 đến 1:30 để ngựa nghỉ trưa (B)."
             }
@@ -269,15 +269,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 119.24,
+            "end": 135.12
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 102.21,
+              "end": 118.99,
               "decoy": "only accept cash / keep their own proceeds rather than donating",
               "explanationVi": "Nhiều xưởng chỉ nhận tiền mặt do sóng yếu (A sai) và nghệ nhân tự giữ doanh thu (C sai); đồ dễ vỡ có thể gửi về quầy North Gatehouse để lấy khi ra về (B)."
             }
@@ -493,15 +493,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 173.31,
+            "end": 181.01
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 153.49,
+              "end": 173.06,
               "decoy": "eastern side of High Street (C)",
               "explanationVi": "Ngôi nhà bên trái hướng đi nam (phía đông High Street, C) là trường học cũ đang lợp lại mái rơm; phòng trà nằm đối diện bên phía tây High Street (B)."
             }
@@ -521,8 +521,8 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 181.26,
+            "end": 195.93
           },
           "traps": []
         },
@@ -540,8 +540,8 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 196.18,
+            "end": 208.46
           },
           "traps": []
         },
@@ -559,8 +559,8 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 208.71,
+            "end": 225.81
           },
           "traps": []
         },
@@ -578,15 +578,15 @@
           },
           "evidence": {
             "lineId": "l16",
-            "start": 0,
-            "end": 0
+            "start": 240.19,
+            "end": 250.14
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 226.06,
+              "end": 239.94,
               "decoy": "smaller barn just south-west of Village Green (F)",
               "explanationVi": "Nhà kho nhỏ phía tây nam Village Green (F) là chuồng ngựa kéo xe; xưởng tiện gỗ nằm ngay phía nam trung tâm Village Green sát bờ Alder Brook (G)."
             }
@@ -606,8 +606,8 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 250.39,
+            "end": 265.53
           },
           "traps": []
         }
@@ -622,5 +622,15 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-GB-MaisieNeural",
+    "voices": {
+      "s1": "en-GB-MaisieNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

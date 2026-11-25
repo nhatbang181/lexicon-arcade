@@ -27,192 +27,192 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Okay Toby, we have ten days before the ethics committee reviews our bilingual memory proposal. Let us lock in who qualifies to take part.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 7.84
     },
     {
       "lineId": "l02",
       "speakerId": "s2",
       "text": "Sure. In my draft I restricted the pool to people who learned both languages before age ten, and who all share the exact same language pair, say English and Spanish.",
-      "start": 0,
-      "end": 0
+      "start": 8.29,
+      "end": 18.09
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "I checked campus numbers and a single language pair would leave us way short of forty volunteers. Plus, recent memory-congruence papers show that current active fluency matters much more than acquiring both tongues before age ten.",
-      "start": 0,
-      "end": 0
+      "start": 18.54,
+      "end": 32.15
     },
     {
       "lineId": "l04",
       "speakerId": "s2",
       "text": "Fair point. Let us drop both the age-ten cutoff and the single-pair rule. What about requiring everyone to have lived in two separate countries?",
-      "start": 0,
-      "end": 0
+      "start": 32.6,
+      "end": 41.33
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "No, plenty of heritage speakers grew up completely bilingual without ever moving abroad. The non-negotiable requirement we must keep is that participants actively use both languages regularly in their daily routines.",
-      "start": 0,
-      "end": 0
+      "start": 41.78,
+      "end": 54.76
     },
     {
       "lineId": "l06",
       "speakerId": "s2",
       "text": "Agreed, active daily usage is essential. And what about excluding anyone with formal training in memory techniques, like memory-palace competitors?",
-      "start": 0,
-      "end": 0
+      "start": 55.21,
+      "end": 63.85
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "Definitely keep that screen. Trained mnemonic strategies override natural language cues and would distort our recall scores.",
-      "start": 0,
-      "end": 0,
+      "start": 64.3,
+      "end": 71.65,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l08",
       "speakerId": "s2",
       "text": "Great, two solid criteria locked in. Now let us look at what our four pilot volunteers taught us about the procedure itself.",
-      "start": 0,
-      "end": 0
+      "start": 72.45,
+      "end": 80.16
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "First, the good news: every session wrapped up in thirty-two minutes, well inside our forty-five-minute consent window, and splitting the two languages across separate days prevented any mental fatigue from code-switching.",
-      "start": 0,
-      "end": 0
+      "start": 80.61,
+      "end": 93.78
     },
     {
       "lineId": "l10",
       "speakerId": "s2",
       "text": "And using pre-recorded neutral audio prompts ensured my accent never nudged anyone toward a particular language. Still, two genuine flaws jumped out immediately.",
-      "start": 0,
-      "end": 0
+      "start": 94.23,
+      "end": 103.6
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "Yes. Abstract cue words like justice or ambition completely backfired: instead of recalling a specific episode, volunteers gave general opinions. We need concrete sensory nouns like harbour or cinnamon.",
-      "start": 0,
-      "end": 0
+      "start": 104.05,
+      "end": 117.6
     },
     {
       "lineId": "l12",
       "speakerId": "s2",
       "text": "Agreed, concrete cues trigger vivid scenes. The other flaw was our warm-up sheet. Remember we handed participants a preview list of the twenty prompts while they signed the consent form?",
-      "start": 0,
-      "end": 0
+      "start": 118.05,
+      "end": 129.4
     },
     {
       "lineId": "l13",
       "speakerId": "s1",
       "text": "Big mistake. Two volunteers admitted they silently translated and rehearsed their favourite stories during those five minutes, which wiped out spontaneous recall. Nobody sees the prompts in advance from now on.",
-      "start": 0,
-      "end": 0,
+      "start": 129.85,
+      "end": 142.53,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l14",
       "speakerId": "s2",
       "text": "Lesson learned. Let us run through our six remaining experimental components and confirm our final decision for each. Starting with the cue-word presentation order.",
-      "start": 0,
-      "end": 0
+      "start": 143.33,
+      "end": 153.57
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "If we keep one fixed sequence across both days, later words suffer from boredom. Our software should randomise the presentation order separately for every participant.",
-      "start": 0,
-      "end": 0
+      "start": 154.02,
+      "end": 164.18
     },
     {
       "lineId": "l16",
       "speakerId": "s2",
       "text": "Done. Next is the emotional vividness rating. I mocked up a quick five-point slider of our own, which felt tidy enough.",
-      "start": 0,
-      "end": 0
+      "start": 164.63,
+      "end": 172.64
     },
     {
       "lineId": "l17",
       "speakerId": "s1",
       "text": "Dr Alverez warned us that markers dislike home-made scales when validated tools already exist. Let us replace your slider with the established published vividness inventory instead.",
-      "start": 0,
-      "end": 0
+      "start": 173.09,
+      "end": 184.05
     },
     {
       "lineId": "l18",
       "speakerId": "s2",
       "text": "Good call, that protects our validity. Third, speech pause duration while people search for a memory. Clicking a handheld stopwatch during the pilot felt hopelessly inconsistent.",
-      "start": 0,
-      "end": 0
+      "start": 184.5,
+      "end": 195.66
     },
     {
       "lineId": "l19",
       "speakerId": "s1",
       "text": "Totally. Let us measure every pause automatically using acoustic editing software after the session so we get millisecond precision without distracting the speaker.",
-      "start": 0,
-      "end": 0
+      "start": 196.11,
+      "end": 206.0
     },
     {
       "lineId": "l20",
       "speakerId": "s2",
       "text": "Smart. Fourth is the twenty-minute vocabulary proficiency test you suggested adding to verify bilingual balance.",
-      "start": 0,
-      "end": 0
+      "start": 206.45,
+      "end": 213.1
     },
     {
       "lineId": "l21",
       "speakerId": "s1",
       "text": "I know I pushed for it last week, but adding twenty minutes would push our total session past the ethics cap, and our language-history form already captures proficiency reliably. Let us drop the vocabulary test completely.",
-      "start": 0,
-      "end": 0
+      "start": 213.55,
+      "end": 226.54
     },
     {
       "lineId": "l22",
       "speakerId": "s2",
       "text": "What a relief, that saves hours of testing. Fifth is coding the transcripts for detail richness. Could we just ask volunteers to rate their own detail level on a quick form?",
-      "start": 0,
-      "end": 0
+      "start": 226.99,
+      "end": 237.74
     },
     {
       "lineId": "l23",
       "speakerId": "s1",
       "text": "Self-ratings are far too subjective for our primary outcome. We need two independent raters scoring anonymised transcripts blind, without knowing whether the memory matched the original event language.",
-      "start": 0,
-      "end": 0
+      "start": 238.19,
+      "end": 249.77
     },
     {
       "lineId": "l24",
       "speakerId": "s2",
       "text": "Right, blind double-coding makes the core metric airtight. Lastly, background stress level: obviously we cannot standardise how stressed students feel across two separate weeks.",
-      "start": 0,
-      "end": 0
+      "start": 250.22,
+      "end": 260.69
     },
     {
       "lineId": "l25",
       "speakerId": "s1",
       "text": "No, we cannot control exam stress, so let us capture it with a brief three-item questionnaire right after the recall block and include it as a statistical covariate.",
-      "start": 0,
-      "end": 0
+      "start": 261.14,
+      "end": 270.69
     },
     {
       "lineId": "l26",
       "speakerId": "s2",
       "text": "Clean, defensible, and realistic. I will update the ethics appendix tonight and send it over for a final proofread.",
-      "start": 0,
-      "end": 0
+      "start": 271.14,
+      "end": 278.09
     }
   ],
   "audio": {
     "path": "audio/listening/p3_004.mp3",
-    "durationSec": 310,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 278.9,
+    "sha256": "77b2fbd51712670e4460f7fa32cc54153b1aa0c49297fbaa5c1b7765f59e9aa5",
+    "loudnessLUFS": -15.9
   },
   "questionGroups": [
     {
@@ -259,15 +259,15 @@
           },
           "evidence": {
             "lineId": "l05",
-            "start": 0,
-            "end": 0
+            "start": 41.78,
+            "end": 54.76
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 8.29,
+              "end": 18.09,
               "decoy": "before age ten / exact same language pair / two separate countries",
               "explanationVi": "Cả ba tiêu chí học trước 10 tuổi (A), cùng cặp ngôn ngữ (C) và sống ở hai nước (D) đều được nêu rồi bị loại bỏ; tiêu chí giữ lại thứ nhất là sử dụng đều đặn cả hai ngôn ngữ hằng ngày (B)."
             }
@@ -289,15 +289,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 64.3,
+            "end": 71.65
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 64.3,
+              "end": 71.65,
               "decoy": "excluding anyone with formal training in memory techniques",
               "explanationVi": "Loại trừ người từng được đào tạo kỹ thuật ghi nhớ khớp với điều kiện 'Having no formal training in memory techniques' (E)."
             }
@@ -349,15 +349,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 104.05,
+            "end": 117.6
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 80.61,
+              "end": 93.78,
               "decoy": "thirty-two minutes / prevented any mental fatigue / neutral audio prompts",
               "explanationVi": "Thời lượng nằm gọn trong giới hạn (loại B), tách ngày nên không mệt (loại C) và âm thanh thu sẵn trung tính (loại D); lỗi thứ nhất là từ gợi ý quá trừu tượng (A)."
             }
@@ -379,15 +379,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 129.85,
+            "end": 142.53
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 129.85,
+              "end": 142.53,
               "decoy": "preview list ... silently translated and rehearsed their favourite stories",
               "explanationVi": "Người tham gia dịch thầm và tập dượt câu chuyện khi nhìn danh sách xem trước khớp chính xác với lựa chọn E."
             }
@@ -449,8 +449,8 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 154.02,
+            "end": 164.18
           },
           "traps": []
         },
@@ -468,15 +468,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 173.09,
+            "end": 184.05
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 164.63,
+              "end": 172.64,
               "decoy": "five-point slider of our own",
               "explanationVi": "Toby định dùng thanh trượt tự chế 5 bậc, nhưng Maya thuyết phục thay bằng thang đo đã công bố có kiểm chứng (E)."
             }
@@ -496,8 +496,8 @@
           },
           "evidence": {
             "lineId": "l19",
-            "start": 0,
-            "end": 0
+            "start": 196.11,
+            "end": 206.0
           },
           "traps": []
         },
@@ -515,15 +515,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 213.55,
+            "end": 226.54
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 213.55,
+              "end": 226.54,
               "decoy": "pushed for it last week",
               "explanationVi": "Tuần trước Maya khăng khăng muốn thêm bài kiểm tra từ vựng 20 phút, nhưng nay đổi ý bỏ hẳn để tránh vượt giới hạn thời gian (C)."
             }
@@ -543,15 +543,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 238.19,
+            "end": 249.77
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l22",
-              "start": 0,
-              "end": 0,
+              "start": 226.99,
+              "end": 237.74,
               "decoy": "rate their own detail level on a quick form",
               "explanationVi": "Toby đề nghị để người tham gia tự chấm qua phiếu ngắn (bẫy D), nhưng Maya gạt đi vì quá chủ quan và chọn hai giám khảo độc lập chấm mù (B)."
             }
@@ -571,15 +571,15 @@
           },
           "evidence": {
             "lineId": "l25",
-            "start": 0,
-            "end": 0
+            "start": 261.14,
+            "end": 270.69
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l24",
-              "start": 0,
-              "end": 0,
+              "start": 250.22,
+              "end": 260.69,
               "decoy": "cannot standardise how stressed students feel",
               "explanationVi": "Toby khẳng định không thể chuẩn hóa mức căng thẳng giữa hai ngày thi (loại A); giải pháp cuối là đo bằng bảng hỏi 3 câu ngay sau phần hồi tưởng (D)."
             }
@@ -596,5 +596,16 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-US-AvaNeural, s2=en-GB-ThomasNeural",
+    "voices": {
+      "s1": "en-US-AvaNeural",
+      "s2": "en-GB-ThomasNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

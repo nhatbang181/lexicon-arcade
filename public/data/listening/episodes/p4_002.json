@@ -20,158 +20,158 @@
       "lineId": "l01",
       "speakerId": "lec",
       "text": "Welcome back, everyone. When we picture ocean ecosystems, most of us think of sunlit coral reefs or kelp forests near the surface. Yet below two hundred meters in the open ocean, sunlight fades rapidly until the water becomes permanently dark, cold, and under crushing pressure. Far from being a barren desert, however, this vast twilight and midnight zone pulses with living light: surveys suggest roughly three-quarters of deep-sea animals produce their own glow through bioluminescence.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 29.21
     },
     {
       "lineId": "l02",
       "speakerId": "lec",
       "text": "To begin with the chemistry, biological light is extraordinarily efficient. Whereas conventional incandescent bulbs waste most of their electrical energy warming their surroundings, bioluminescent cells convert nearly all of their chemical reaction directly into visible light, releasing practically no heat.",
-      "start": 0,
-      "end": 0
+      "start": 30.01,
+      "end": 47.28
     },
     {
       "lineId": "l03",
       "speakerId": "lec",
       "text": "If you look at the color palette of the deep ocean, you immediately notice a strong bias. Almost all marine species emit blue or blue-green wavelengths because those colors penetrate farthest through clear seawater, whereas red wavelengths are absorbed within just a few meters of the surface. In a habitat where every calorie matters, broadcasting in blue gives an organism the greatest range for the smallest metabolic investment.",
-      "start": 0,
-      "end": 0
+      "start": 47.53,
+      "end": 71.32
     },
     {
       "lineId": "l04",
       "speakerId": "lec",
       "text": "At the molecular level, the glow occurs when a light-emitting compound called luciferin combines with dissolved oxygen. However, oxygen and luciferin do not flash on their own; the reaction must be accelerated by a specialized enzyme known as luciferase.",
-      "start": 0,
-      "end": 0
+      "start": 71.57,
+      "end": 86.08
     },
     {
       "lineId": "l05",
       "speakerId": "lec",
       "text": "Because this basic chemical toolkit requires relatively modest genetic machinery, bioluminescence has evolved independently dozens of times across completely unrelated lineages, from bony fish and squid to comb jellies, sea pens, and segmented marine worms.",
-      "start": 0,
-      "end": 0,
+      "start": 86.33,
+      "end": 101.26,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l06",
       "speakerId": "lec",
       "text": "Let's turn now to the ecological functions this living light serves in the dark water column, starting with camouflage.",
-      "start": 0,
-      "end": 0
+      "start": 102.06,
+      "end": 108.08
     },
     {
       "lineId": "l07",
       "speakerId": "lec",
       "text": "At first you might assume glowing in the dark would only attract danger. Yet many mid-water hatchetfish and squid carry downward-facing light organs along their bellies that match the faint daylight filtering from above, effectively erasing their dark shadows from hunters looking upward.",
-      "start": 0,
-      "end": 0
+      "start": 108.33,
+      "end": 123.16
     },
     {
       "lineId": "l08",
       "speakerId": "lec",
       "text": "Turning to hunting strategies, deep-sea anglerfish are famous for dangling a glowing rod above their jaws to lure curious crustaceans within striking distance.",
-      "start": 0,
-      "end": 0
+      "start": 123.96,
+      "end": 132.18
     },
     {
       "lineId": "l09",
       "speakerId": "lec",
       "text": "What is especially fascinating is that the anglerfish does not synthesize the light-making chemicals inside that lure itself. Instead, the fleshy bulb shelters dense colonies of symbiotic bacteria that glow continuously in exchange for nutrients and protection.",
-      "start": 0,
-      "end": 0
+      "start": 132.43,
+      "end": 146.9
     },
     {
       "lineId": "l10",
       "speakerId": "lec",
       "text": "A few deep-sea dragonfish have evolved an even sneakier advantage. Alongside blue organs on their flanks, they possess small patches beneath each eye that emit a rare deep-red beam invisible to nearly every other ocean species.",
-      "start": 0,
-      "end": 0
+      "start": 147.15,
+      "end": 159.6
     },
     {
       "lineId": "l11",
       "speakerId": "lec",
       "text": "Because their own eyes contain unique red-sensitive pigments, dragonfish effectively operate private night-vision spotlights, allowing them to locate unsuspecting prey without giving away their own position.",
-      "start": 0,
-      "end": 0
+      "start": 159.85,
+      "end": 170.24
     },
     {
       "lineId": "l12",
       "speakerId": "lec",
       "text": "Light is equally vital for defense. When grabbed by a fish, certain tiny crustaceans erupt into a dazzling strobe pattern. Marine ecologists call this the burglar-alarm effect: the flash is not meant to injure the attacker directly, but rather to summon much larger predators that might chase away or eat the original assailant.",
-      "start": 0,
-      "end": 0,
+      "start": 170.49,
+      "end": 189.16,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l13",
       "speakerId": "lec",
       "text": "Moving on to research methods, studying deep-sea luminescence poses major technical hurdles for oceanographers.",
-      "start": 0,
-      "end": 0
+      "start": 189.96,
+      "end": 195.85
     },
     {
       "lineId": "l14",
       "speakerId": "lec",
       "text": "For decades, biologists relied on heavy trawl nets that shredded fragile gelatinous animals before they ever reached the deck. Acoustic sonar maps general biomass, of course, but it cannot record visual flashes. Consequently, modern expeditions deploy remotely operated submersibles fitted with ultra-sensitive low-light cameras.",
-      "start": 0,
-      "end": 0
+      "start": 196.1,
+      "end": 215.93
     },
     {
       "lineId": "l15",
       "speakerId": "lec",
       "text": "Even with advanced robotic vehicles and delicate suction samplers, simply illuminating the target can ruin a behavioral observation. Intense white floodlights designed for deep-sea engineering work can temporarily dazzle or even permanently damage eyes exquisitely adapted to pitch darkness.",
-      "start": 0,
-      "end": 0
+      "start": 216.18,
+      "end": 232.34
     },
     {
       "lineId": "l16",
       "speakerId": "lec",
       "text": "To solve this, exploration teams now switch to dim red lamps during approach so they can record organisms without distorting their natural behavior.",
-      "start": 0,
-      "end": 0,
+      "start": 232.59,
+      "end": 240.07,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l17",
       "speakerId": "lec",
       "text": "Finally, let's consider how insights from deep-sea light chemistry are finding remarkably practical uses far away from the ocean floor, particularly in healthcare and environmental science.",
-      "start": 0,
-      "end": 0
+      "start": 240.87,
+      "end": 250.84
     },
     {
       "lineId": "l18",
       "speakerId": "lec",
       "text": "In biomedical laboratories, genes encoding light-emitting enzymes are inserted into specific cells as harmless optical tags. Because living tissue allows faint light to pass through, researchers can track the progression of a tumor inside laboratory models without invasive surgery.",
-      "start": 0,
-      "end": 0
+      "start": 251.09,
+      "end": 266.99
     },
     {
       "lineId": "l19",
       "speakerId": "lec",
       "text": "This non-destructive, real-time imaging accelerates pharmaceutical trials enormously by revealing within hours whether a candidate compound is shrinking abnormal cell clusters or halting their spread to neighboring organs.",
-      "start": 0,
-      "end": 0
+      "start": 267.24,
+      "end": 278.36
     },
     {
       "lineId": "l20",
       "speakerId": "lec",
       "text": "A second growing application lies in environmental testing. Engineered bioluminescent microbes shine steadily in clean samples, yet their brightness drops sharply when exposed to heavy metals or industrial solvents, making them rapid biological indicators of water contamination.",
-      "start": 0,
-      "end": 0
+      "start": 278.61,
+      "end": 294.8
     },
     {
       "lineId": "l21",
       "speakerId": "lec",
       "text": "So what began as an evolutionary survival trick in the ocean's darkest depths has become an indispensable analytical tool for both modern medicine and ecological monitoring. We will leave it there for today, and next week we will examine hydrothermal vent communities.",
-      "start": 0,
-      "end": 0
+      "start": 295.05,
+      "end": 309.77
     }
   ],
   "audio": {
     "path": "audio/listening/p4_002.mp3",
-    "durationSec": 355,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 310.6,
+    "sha256": "4c561ed52978f248f57b4655a9e7f565a7571e04abadb3a488c37721360e0fcd",
+    "loudnessLUFS": -15.7
   },
   "questionGroups": [
     {
@@ -230,8 +230,8 @@
           },
           "evidence": {
             "lineId": "l02",
-            "start": 0,
-            "end": 0
+            "start": 30.01,
+            "end": 47.28
           },
           "traps": []
         },
@@ -246,15 +246,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 71.57,
+            "end": 86.08
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 71.57,
+              "end": 86.08,
               "explanationVi": "'requires... to trigger light' diễn đạt lại 'must be accelerated by a specialized enzyme'."
             }
           ]
@@ -270,15 +270,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 108.33,
+            "end": 123.16
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 108.33,
+              "end": 123.16,
               "explanationVi": "Cần điền danh từ số nhiều 'shadows'; thiếu -s sẽ bị tính sai."
             }
           ]
@@ -294,15 +294,15 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 132.43,
+            "end": 146.9
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 132.43,
+              "end": 146.9,
               "explanationVi": "'host resident' diễn đạt lại 'shelters dense colonies of symbiotic' trước 'bacteria'."
             }
           ]
@@ -318,15 +318,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 159.85,
+            "end": 170.24
           },
           "traps": [
             {
               "type": "homophone_minimal_pair",
               "lineId": "l11",
-              "start": 0,
-              "end": 0,
+              "start": 159.85,
+              "end": 170.24,
               "decoy": "pray",
               "explanationVi": "'prey' (con mồi) đồng âm với động từ 'pray' (cầu nguyện)."
             }
@@ -343,15 +343,15 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 170.49,
+            "end": 189.16
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 170.49,
+              "end": 189.16,
               "decoy": "attacker",
               "explanationVi": "Giảng viên phủ định mục đích làm hại 'attacker' trực tiếp mà là để gọi 'predators' lớn hơn."
             }
@@ -405,15 +405,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 196.1,
+            "end": 215.93
           },
           "traps": [
             {
               "type": "signpost_skip",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 196.1,
+              "end": 215.93,
               "decoy": "sonar",
               "explanationVi": "Giảng viên nhắc lướt 'sonar' (không ghi được ánh sáng) trước khi chốt thiết bị là 'cameras'."
             }
@@ -431,15 +431,15 @@
           },
           "evidence": {
             "lineId": "l16",
-            "start": 0,
-            "end": 0
+            "start": 232.59,
+            "end": 240.07
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 232.59,
+              "end": 240.07,
               "explanationVi": "'disrupt' diễn đạt lại 'distorting'; chấp nhận cả chính tả Mỹ 'behavior' và Anh 'behaviour'."
             }
           ]
@@ -456,15 +456,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 251.09,
+            "end": 266.99
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l18",
-              "start": 0,
-              "end": 0,
+              "start": 251.09,
+              "end": 266.99,
               "explanationVi": "'monitor' diễn đạt lại 'track'; chấp nhận cả chính tả Mỹ 'tumor' và Anh 'tumour'."
             }
           ]
@@ -480,8 +480,8 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 278.61,
+            "end": 294.8
           },
           "traps": []
         }
@@ -496,5 +496,15 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "lec=en-US-JennyNeural",
+    "voices": {
+      "lec": "en-US-JennyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.02,
+    "renderedAt": "2026-11-25"
   }
 }

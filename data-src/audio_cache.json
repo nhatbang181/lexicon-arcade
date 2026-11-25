@@ -6508,5 +6508,329 @@
     "targetWpm": 160.0,
     "duration": 4.92,
     "size": 29756
+  },
+  "c3f5842edaa2a6fdc0b9516e3017af5094f20caf3533555106ac60d4ccd3603c": {
+    "hash": "c3f5842edaa2a6fdc0b9516e3017af5094f20caf3533555106ac60d4ccd3603c",
+    "id": "dict:0264",
+    "text": "The coastal cycling trail stretches for more than forty kilometre markers along the bay.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 160.0,
+    "duration": 5.28,
+    "size": 31916
+  },
+  "f599cf1c17a333e4c97af818cf0e81724b3b03c0a0d9acdfa813d25a2037dfb7": {
+    "hash": "f599cf1c17a333e4c97af818cf0e81724b3b03c0a0d9acdfa813d25a2037dfb7",
+    "id": "dict:0266",
+    "text": "We won't be able to finalise the questionnaire until the ethics panel signs off on our revised consent form.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 7.18,
+    "size": 43292
+  },
+  "4b1554f02ae16456ffcf983cc8d0469adb96c44dd89f13597bca4e96283418eb": {
+    "hash": "4b1554f02ae16456ffcf983cc8d0469adb96c44dd89f13597bca4e96283418eb",
+    "id": "dict:0268",
+    "text": "It's worth noting that next week's seminar hasn't been cancelled, although it's moved to a larger theatre.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "e02fd0cc43d6dbfab29d306afa63534d4147e0aaa4196638983a18fd79d8a5cf": {
+    "hash": "e02fd0cc43d6dbfab29d306afa63534d4147e0aaa4196638983a18fd79d8a5cf",
+    "id": "dict:0269",
+    "text": "We've found that most commuters didn't switch to cycling until separated lanes were built past the junction.",
+    "voice": "en-GB-MaisieNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "465356c69383ad0a83f1445b10d503955c679c3cfa989b67dd8b1345f6b987d6": {
+    "hash": "465356c69383ad0a83f1445b10d503955c679c3cfa989b67dd8b1345f6b987d6",
+    "id": "dict:0270",
+    "text": "There's plenty of compelling evidence that urban trees reduce peak street temperatures by several degrees.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 5.69,
+    "size": 34364
+  },
+  "f2ea0a5b16ccf1f6167c4ace6866c5f9005366543c933db396c32672ffecdb8a": {
+    "hash": "f2ea0a5b16ccf1f6167c4ace6866c5f9005366543c933db396c32672ffecdb8a",
+    "id": "dict:0271",
+    "text": "I wouldn't rely on a single survey when there's such a wide margin of sampling error.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "367d09329d71583215e3f5312e02991b0a85c256ab9ddffa69b57d5a97de2a7b": {
+    "hash": "367d09329d71583215e3f5312e02991b0a85c256ab9ddffa69b57d5a97de2a7b",
+    "id": "dict:0267",
+    "text": "They couldn't replicate the first experiment because the humidity inside the greenhouse wasn't kept constant.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 160.0,
+    "duration": 5.69,
+    "size": 34364
+  },
+  "dc94369a65d1c7602f3e848cc07adf9b9e07ae73714e2c5f2613d051ca879db3": {
+    "hash": "dc94369a65d1c7602f3e848cc07adf9b9e07ae73714e2c5f2613d051ca879db3",
+    "id": "dict:0274",
+    "text": "We shouldn't overlook the maintenance costs, because they'll easily exceed the initial installation fee within five years.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 6.41,
+    "size": 38684
+  },
+  "b20c68bd54e52b8b415552bbf2856aba63c832c5f47bf0b547dac7906edc120f": {
+    "hash": "b20c68bd54e52b8b415552bbf2856aba63c832c5f47bf0b547dac7906edc120f",
+    "id": "dict:0272",
+    "text": "Although the museum's facade looks ancient, it's actually been rebuilt twice since the late nineteenth century.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "38640635a1e3a465717290381878e8fa00720599e58f0c222631b2b8ddcd2b7b": {
+    "hash": "38640635a1e3a465717290381878e8fa00720599e58f0c222631b2b8ddcd2b7b",
+    "id": "dict:0273",
+    "text": "You'd expect older stone bridges to crack first, yet most structural damage starts around steel joints.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "c8a81d4341e832ee0573a19d7410a438aa70052859286fe0440a811096eab213": {
+    "hash": "c8a81d4341e832ee0573a19d7410a438aa70052859286fe0440a811096eab213",
+    "id": "dict:0277",
+    "text": "If the compost pile doesn't reach sixty degrees, weed seeds won't break down during the cycle.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "408b2d7cf7047e7ad30752c75853d7f2c883c5eeb82ba65e568c05979ada1572": {
+    "hash": "408b2d7cf7047e7ad30752c75853d7f2c883c5eeb82ba65e568c05979ada1572",
+    "id": "dict:0275",
+    "text": "What's particularly striking about deep sea fish is that they don't rely on sunlight for navigation.",
+    "voice": "en-GB-MaisieNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "4537ffe2648e4fcccf5ffd531d70424ae51d0c92e32842c37324a696fbe3267f": {
+    "hash": "4537ffe2648e4fcccf5ffd531d70424ae51d0c92e32842c37324a696fbe3267f",
+    "id": "dict:0276",
+    "text": "They'd originally planned to interview fifty residents, but couldn't recruit enough volunteers before the deadline.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 5.66,
+    "size": 34220
+  },
+  "207aec35b50354504211e52d34ba12bfcbdb86901f081ade33550cff78a4b6e9": {
+    "hash": "207aec35b50354504211e52d34ba12bfcbdb86901f081ade33550cff78a4b6e9",
+    "id": "dict:0278",
+    "text": "It isn't clear whether the policy actually lowered emissions, or whether milder winters simply cut heating demand.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 6.41,
+    "size": 38684
+  },
+  "9b8d016e39632af3c457b26aac5c5ada98fa43ec31249eee3abba08914fe63aa": {
+    "hash": "9b8d016e39632af3c457b26aac5c5ada98fa43ec31249eee3abba08914fe63aa",
+    "id": "dict:0281",
+    "text": "You mustn't assume that two variables are causally linked merely because their graphs move in parallel.",
+    "voice": "en-GB-MaisieNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "5c79e7288fab28f56cfc443ebf323551f50b4af867d74dab6f1b865297bb6415": {
+    "hash": "5c79e7288fab28f56cfc443ebf323551f50b4af867d74dab6f1b865297bb6415",
+    "id": "dict:0282",
+    "text": "Once we've sorted the raw transcripts, we'll compare how younger and older speakers pronounce those vowels.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "a17a9940e3a13113f1cd9746bd2d4058122e2609b34bb89d4a025e0762fb2a0b": {
+    "hash": "a17a9940e3a13113f1cd9746bd2d4058122e2609b34bb89d4a025e0762fb2a0b",
+    "id": "dict:0280",
+    "text": "She's argued convincingly that small regional libraries aren't just quiet study spaces, but vital civic hubs.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "2abb9c9ee7d05f0bf681675a469aa528773ce2be71235325659ca6809f0bce2a": {
+    "hash": "2abb9c9ee7d05f0bf681675a469aa528773ce2be71235325659ca6809f0bce2a",
+    "id": "dict:0279",
+    "text": "Last month's audit revealed that nearly a third of the sensors hadn't been calibrated since winter.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "218f9c8ad7fd81124a6a954e397d90265ce06b7d7c8f3241e686fff53e63716c": {
+    "hash": "218f9c8ad7fd81124a6a954e397d90265ce06b7d7c8f3241e686fff53e63716c",
+    "id": "dict:0283",
+    "text": "Although desalination plants don't depend on rainfall, they're still constrained by high electricity costs and brine disposal.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "d40c900cd753edadc15aa1de00f6656184079473dec3b05234b8e88557ed664f": {
+    "hash": "d40c900cd753edadc15aa1de00f6656184079473dec3b05234b8e88557ed664f",
+    "id": "dict:0286",
+    "text": "I'd have thought the limestone steps would wear down faster, yet they've survived centuries of heavy footfall.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "c2ef871d100c9606fc72c677b27a800a3f56649384627ffae4a722aab56daf21": {
+    "hash": "c2ef871d100c9606fc72c677b27a800a3f56649384627ffae4a722aab56daf21",
+    "id": "dict:0284",
+    "text": "Most people don't realise that underground fungal networks transfer carbon between neighbouring trees across an entire forest.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 160.0,
+    "duration": 6.41,
+    "size": 38684
+  },
+  "bf7eea409721125fdb3e6719aa371717881480269e6a326c896eba8052e6f6cc": {
+    "hash": "bf7eea409721125fdb3e6719aa371717881480269e6a326c896eba8052e6f6cc",
+    "id": "dict:0288",
+    "text": "It's easy to underestimate how quickly invasive weeds spread once native ground cover has been disturbed.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "503efd8358695f6ff902c54048d4360b0af9cfcb0889bc9b39f43cc4f9b3afba": {
+    "hash": "503efd8358695f6ff902c54048d4360b0af9cfcb0889bc9b39f43cc4f9b3afba",
+    "id": "dict:0287",
+    "text": "Because the sample size wasn't large enough, we can't draw firm conclusions about long term health effects.",
+    "voice": "en-US-AvaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.41,
+    "size": 38684
+  },
+  "34b79790a5a80183a23af6c017f624eaf2fbc902b00d291c76623aa2ff83c7a0": {
+    "hash": "34b79790a5a80183a23af6c017f624eaf2fbc902b00d291c76623aa2ff83c7a0",
+    "id": "dict:0289",
+    "text": "Next term's fieldwork won't require overnight camping, since we've arranged hostel accommodation near the coastal observatory.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "81433ea73efccac34915ebf3362e9eaffa4344b06ca41c45230be8da67b187b2": {
+    "hash": "81433ea73efccac34915ebf3362e9eaffa4344b06ca41c45230be8da67b187b2",
+    "id": "dict:0290",
+    "text": "They haven't decided which statistical test to run yet, because some questionnaire responses are still incomplete.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "608a584d8f0dbeb3d63517f7a7076a59fc03d6ce21627d9433e7fccdd6803082": {
+    "hash": "608a584d8f0dbeb3d63517f7a7076a59fc03d6ce21627d9433e7fccdd6803082",
+    "id": "dict:0291",
+    "text": "Even though self healing concrete costs more initially, it doesn't need frequent repairs in salty marine air.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "0eb1245d91636be95012dd99d2aec78a8e2019ed25857df1fa51efe5d20a2d81": {
+    "hash": "0eb1245d91636be95012dd99d2aec78a8e2019ed25857df1fa51efe5d20a2d81",
+    "id": "dict:0292",
+    "text": "He'd expected the glacier cores to show uniform layers, yet there's distinct volcanic ash trapped at several depths.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "dba4fe54940568cb17b56114ef983220704cdacaf8017118c84134534669bb0d": {
+    "hash": "dba4fe54940568cb17b56114ef983220704cdacaf8017118c84134534669bb0d",
+    "id": "dict:0285",
+    "text": "The lecturer pointed out that medieval guilds weren't merely trade clubs, as they also regulated apprenticeship standards.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "19e309982bc088b0eeaaf64fdd9ed0ef6661c3815c98ab4ed2986d129332c9e4": {
+    "hash": "19e309982bc088b0eeaaf64fdd9ed0ef6661c3815c98ab4ed2986d129332c9e4",
+    "id": "dict:0296",
+    "text": "They're planning to expand the rooftop beehives next spring, provided that local residents don't object to the proposal.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "faf14bf254ad46fbece2a3f98fb5a6a2befc77300eaca53d64eddbbec7732b8e": {
+    "hash": "faf14bf254ad46fbece2a3f98fb5a6a2befc77300eaca53d64eddbbec7732b8e",
+    "id": "dict:0294",
+    "text": "Although the acoustics aren't ideal in the old hall, we've positioned extra microphones to capture clear dialogue.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "e5657bc5b1c6fa44ddaa8383ec302609f2fe5982122fce0ba1098c0ce0692296": {
+    "hash": "e5657bc5b1c6fa44ddaa8383ec302609f2fe5982122fce0ba1098c0ce0692296",
+    "id": "dict:0295",
+    "text": "You won't notice the subtle shift in pitch unless you're listening closely with studio quality headphones.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "3d54d29c4e6c89ddcf7ba33b73018c62bbde99df30f9fb60748450ebb17e5181": {
+    "hash": "3d54d29c4e6c89ddcf7ba33b73018c62bbde99df30f9fb60748450ebb17e5181",
+    "id": "dict:0293",
+    "text": "We'd better check the tide tables tonight so we don't get cut off on the sandbar tomorrow.",
+    "voice": "en-US-AvaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.43,
+    "size": 38828
+  },
+  "7dd5becbfce89cb7b381608de2e8cf504680f793ce467dde49a041d44c209f51": {
+    "hash": "7dd5becbfce89cb7b381608de2e8cf504680f793ce467dde49a041d44c209f51",
+    "id": "dict:0300",
+    "text": "Most coastal councils can't afford massive sea walls, so they're investing in salt marshes to absorb storm surges.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "1ddd3f25ac5ba74349beb65621313eaa0b70bffab3046e5955f42c1ec66aa4c0": {
+    "hash": "1ddd3f25ac5ba74349beb65621313eaa0b70bffab3046e5955f42c1ec66aa4c0",
+    "id": "dict:0298",
+    "text": "What's been most encouraging isn't just the higher crop yield, but the sharp drop in synthetic fertiliser use.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "58254d457193cd1b0a8fbf55a502bea8b544c0b9626f97ee396bcd9043e55d45": {
+    "hash": "58254d457193cd1b0a8fbf55a502bea8b544c0b9626f97ee396bcd9043e55d45",
+    "id": "dict:0297",
+    "text": "If you haven't backed up your field recordings yet, please copy them onto the shared drive before noon.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 160.0,
+    "duration": 6.82,
+    "size": 41132
+  },
+  "df537bc433291aefd353c9e476a51127940974b173294290a9d2db571e0b12a6": {
+    "hash": "df537bc433291aefd353c9e476a51127940974b173294290a9d2db571e0b12a6",
+    "id": "dict:0299",
+    "text": "I didn't think bilingual children would mix up the two word lists, yet fatigue clearly slowed their recall.",
+    "voice": "en-US-AvaNeural",
+    "targetWpm": 160.0,
+    "duration": 6.79,
+    "size": 40988
   }
 }

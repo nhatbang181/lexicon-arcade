@@ -27,24 +27,24 @@
       "lineId": "l01",
       "speakerId": "clerk",
       "text": "Good afternoon, Meadowbrook Rail Lost Property Office, Sophie speaking. How can I help?",
-      "start": 0,
-      "end": 0,
+      "start": 0.0,
+      "end": 6.63,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l02",
       "speakerId": "caller",
       "text": "Oh, hello Sophie. I am rather annoyed with myself because I left a bag on the overhead rack of my train this morning.",
-      "start": 0,
-      "end": 0,
+      "start": 7.23,
+      "end": 15.12,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l03",
       "speakerId": "clerk",
       "text": "Do not worry, we log items from every arriving service, so there is a good chance it will turn up. Let me open a report for you. Could I take your full name?",
-      "start": 0,
-      "end": 0,
+      "start": 15.72,
+      "end": 26.74,
       "pauseAfter": 0.4
     },
     {
@@ -52,16 +52,16 @@
       "speakerId": "caller",
       "text": "Yes, it is Trevor Maddox. That is M-A-D-D-O-X, double D in the middle.",
       "ttsText": "Yes, it is Trevor Maddox. That is M, A, D, D, O, X, double D in the middle.",
-      "start": 0,
-      "end": 0,
+      "start": 27.34,
+      "end": 35.92,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l05",
       "speakerId": "clerk",
       "text": "Maddox, double D, thank you. Which train service were you travelling on this morning?",
-      "start": 0,
-      "end": 0,
+      "start": 36.67,
+      "end": 42.97,
       "pauseAfter": 0.4
     },
     {
@@ -69,8 +69,8 @@
       "speakerId": "caller",
       "text": "Um, I meant to catch the 10:50 express from Central... oh sorry, my bus was delayed so I missed that one and boarded the 11:20 express instead.",
       "ttsText": "Um, I meant to catch the ten fifty express from Central... oh sorry, my bus was delayed so I missed that one and boarded the eleven twenty express instead.",
-      "start": 0,
-      "end": 0,
+      "start": 43.57,
+      "end": 53.14,
       "pauseAfter": 0.5
     },
     {
@@ -78,24 +78,24 @@
       "speakerId": "clerk",
       "text": "Right, the 11:20 express heading north to Brampton. Did you travel all the way to Brampton?",
       "ttsText": "Right, the eleven twenty express heading north to Brampton. Did you travel all the way to Brampton?",
-      "start": 0,
-      "end": 0,
+      "start": 53.89,
+      "end": 60.89,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l08",
       "speakerId": "caller",
       "text": "No, I got off two stops earlier at Cromwell. I only realised I had forgotten the bag once I walked through the ticket barriers.",
-      "start": 0,
-      "end": 0,
+      "start": 61.49,
+      "end": 70.39,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l09",
       "speakerId": "clerk",
       "text": "Okay, alighted at Cromwell. Do you remember your carriage and seat number so we can alert the cleaners at Brampton?",
-      "start": 0,
-      "end": 0,
+      "start": 71.14,
+      "end": 78.81,
       "pauseAfter": 0.4
     },
     {
@@ -103,8 +103,8 @@
       "speakerId": "caller",
       "text": "Yes, I was in Coach D. My printed ticket says seat 14, though a family asked to sit together around a table, so I swapped with them and moved down to seat 42.",
       "ttsText": "Yes, I was in Coach D. My printed ticket says seat fourteen, though a family asked to sit together around a table, so I swapped with them and moved down to seat forty-two.",
-      "start": 0,
-      "end": 0,
+      "start": 79.41,
+      "end": 90.92,
       "pauseAfter": 0.5
     },
     {
@@ -112,32 +112,32 @@
       "speakerId": "clerk",
       "text": "Very kind of you, and helpful to know! So rack above seat 42 in Coach D. Could you describe the bag for me?",
       "ttsText": "Very kind of you, and helpful to know! So rack above seat forty-two in Coach D. Could you describe the bag for me?",
-      "start": 0,
-      "end": 0,
+      "start": 91.67,
+      "end": 100.32,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l12",
       "speakerId": "caller",
       "text": "Well, I kept my black leather briefcase on my lap, so that is safe. The one I left behind is a medium backpack made of navy canvas with brass zips.",
-      "start": 0,
-      "end": 0,
+      "start": 100.92,
+      "end": 111.42,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l13",
       "speakerId": "clerk",
       "text": "Navy canvas backpack, brass zips. And is there anything valuable inside, like a laptop or a wallet, that helps us verify ownership?",
-      "start": 0,
-      "end": 0,
+      "start": 112.17,
+      "end": 122.04,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l14",
       "speakerId": "caller",
       "text": "Thankfully my laptop and wallet were in my briefcase and coat pocket. Inside the backpack is a sketchbook and a pair of silver wireless headphones in a grey case.",
-      "start": 0,
-      "end": 0,
+      "start": 122.64,
+      "end": 133.2,
       "pauseAfter": 0.5
     },
     {
@@ -145,8 +145,8 @@
       "speakerId": "clerk",
       "text": "Great, wireless headphones and a sketchbook noted. Let me generate your case reference number... that is MR749P... oh, hold on, let me squint at the font again. Sorry, the last letter is B for Bravo, so MR749B.",
       "ttsText": "Great, wireless headphones and a sketchbook noted. Let me generate your case reference number... that is M, R, seven, four, nine, P... oh, hold on, let me squint at the font again. Sorry, the last letter is B for Bravo, so M, R, seven, four, nine, B.",
-      "start": 0,
-      "end": 0,
+      "start": 133.95,
+      "end": 156.08,
       "pauseAfter": 0.8
     },
     {
@@ -154,16 +154,16 @@
       "speakerId": "caller",
       "text": "M-R-seven-four-nine-B, written down. If the cleaners hand it in at Brampton, how does collection work?",
       "ttsText": "M, R, seven, four, nine, B, written down. If the cleaners hand it in at Brampton, how does collection work?",
-      "start": 0,
-      "end": 0,
+      "start": 157.28,
+      "end": 166.9,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l17",
       "speakerId": "clerk",
       "text": "All lost property from that line is brought back to our central office here at Meadowbrook Station by six this evening. Just bring photo ID and your reference code.",
-      "start": 0,
-      "end": 0,
+      "start": 167.5,
+      "end": 178.43,
       "pauseAfter": 0.4
     },
     {
@@ -171,8 +171,8 @@
       "speakerId": "caller",
       "text": "Where exactly is the lost property desk inside Meadowbrook Station? Is it next to the ticket office by platform 2?",
       "ttsText": "Where exactly is the lost property desk inside Meadowbrook Station? Is it next to the ticket office by platform two?",
-      "start": 0,
-      "end": 0,
+      "start": 179.03,
+      "end": 186.88,
       "pauseAfter": 0.4
     },
     {
@@ -180,8 +180,8 @@
       "speakerId": "clerk",
       "text": "No, platform 2 only has ticket sales and travel enquiries. Our lost property counter is down the concourse opposite platform 6.",
       "ttsText": "No, platform two only has ticket sales and travel enquiries. Our lost property counter is down the concourse opposite platform six.",
-      "start": 0,
-      "end": 0,
+      "start": 187.48,
+      "end": 197.63,
       "pauseAfter": 0.5
     },
     {
@@ -189,8 +189,8 @@
       "speakerId": "caller",
       "text": "Opposite platform 6, got it. Is there an administration fee when I pick it up?",
       "ttsText": "Opposite platform six, got it. Is there an administration fee when I pick it up?",
-      "start": 0,
-      "end": 0,
+      "start": 198.38,
+      "end": 204.21,
       "pauseAfter": 0.4
     },
     {
@@ -198,16 +198,16 @@
       "speakerId": "clerk",
       "text": "Yes, small items like umbrellas cost £3, courier delivery is £15, and in-person collection for a standard bag or backpack is £8.",
       "ttsText": "Yes, small items like umbrellas cost three pounds, courier delivery is fifteen pounds, and in-person collection for a standard bag or backpack is eight pounds.",
-      "start": 0,
-      "end": 0,
+      "start": 204.81,
+      "end": 215.56,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l22",
       "speakerId": "caller",
       "text": "Eight pounds in person is completely fair. I am away on a work trip next week, so how long do you hold unclaimed bags?",
-      "start": 0,
-      "end": 0,
+      "start": 216.31,
+      "end": 224.71,
       "pauseAfter": 0.4
     },
     {
@@ -215,32 +215,32 @@
       "speakerId": "clerk",
       "text": "We used to store items for 90 days, though under our updated policy we keep unclaimed bags for 30 days before donating them to local charities.",
       "ttsText": "We used to store items for ninety days, though under our updated policy we keep unclaimed bags for thirty days before donating them to local charities.",
-      "start": 0,
-      "end": 0,
+      "start": 225.31,
+      "end": 234.95,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l24",
       "speakerId": "caller",
       "text": "Thirty days gives me plenty of time. Thank you so much for your help, Sophie.",
-      "start": 0,
-      "end": 0,
+      "start": 235.7,
+      "end": 241.43,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l25",
       "speakerId": "clerk",
       "text": "You are welcome, Trevor. We will phone you as soon as the backpack arrives at our desk!",
-      "start": 0,
-      "end": 0,
+      "start": 242.03,
+      "end": 248.11,
       "pauseAfter": 0.4
     }
   ],
   "audio": {
     "path": "audio/listening/p1_res_001.mp3",
-    "durationSec": 286,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 249.4,
+    "sha256": "99db3f1d56a85c887468e3ea1326a105b4e3d763458a0a1799bb64d88be5c067",
+    "loudnessLUFS": -15.4
   },
   "questionGroups": [
     {
@@ -303,15 +303,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 27.34,
+            "end": 35.92
           },
           "traps": [
             {
               "type": "spelling_out",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 27.34,
+              "end": 35.92,
               "explanationVi": "Người gọi đánh vần họ M-A-D-D-O-X và nhấn mạnh hai chữ D ở giữa."
             }
           ]
@@ -328,15 +328,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 43.57,
+            "end": 53.14
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 43.57,
+              "end": 53.14,
               "decoy": "10:50",
               "explanationVi": "Lỡ chuyến 10:50 do xe buýt trễ nên thực tế đi chuyến tàu nhanh lúc 11:20."
             }
@@ -353,15 +353,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 61.49,
+            "end": 70.39
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 53.89,
+              "end": 60.89,
               "decoy": "Brampton",
               "explanationVi": "Brampton là ga cuối của chuyến tàu, còn hành khách xuống trước hai trạm ở Cromwell."
             }
@@ -379,15 +379,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 79.41,
+            "end": 90.92
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 79.41,
+              "end": 90.92,
               "decoy": "14",
               "explanationVi": "Vé in ghế 14 nhưng đã đổi chỗ cho một gia đình và ngồi ở ghế 42."
             }
@@ -404,15 +404,15 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 100.92,
+            "end": 111.42
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 100.92,
+              "end": 111.42,
               "decoy": "black leather",
               "explanationVi": "Cặp da đen (black leather) vẫn cầm theo, ba lô bỏ quên làm bằng vải bố xanh đậm (navy canvas)."
             }
@@ -429,15 +429,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 122.64,
+            "end": 133.2
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 122.64,
+              "end": 133.2,
               "decoy": "laptop",
               "explanationVi": "Laptop và ví không ở trong ba lô, đồ giá trị bên trong là tai nghe không dây (headphones)."
             }
@@ -454,15 +454,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 133.95,
+            "end": 156.08
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 133.95,
+              "end": 156.08,
               "decoy": "MR749P",
               "explanationVi": "Nhân viên nhìn nhầm chữ cuối là P rồi đính chính lại thành B (B for Bravo)."
             }
@@ -511,15 +511,15 @@
           },
           "evidence": {
             "lineId": "l19",
-            "start": 0,
-            "end": 0
+            "start": 187.48,
+            "end": 197.63
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l19",
-              "start": 0,
-              "end": 0,
+              "start": 187.48,
+              "end": 197.63,
               "decoy": "2",
               "explanationVi": "Sân ga số 2 là quầy bán vé, quầy đồ thất lạc nằm đối diện sân ga số 6."
             }
@@ -537,15 +537,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 204.81,
+            "end": 215.56
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 204.81,
+              "end": 215.56,
               "decoy": "15",
               "explanationVi": "3 bảng cho đồ nhỏ và 15 bảng cho gửi chuyển phát, còn nhận trực tiếp ba lô là 8 bảng."
             }
@@ -563,15 +563,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 225.31,
+            "end": 234.95
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 225.31,
+              "end": 234.95,
               "decoy": "90",
               "explanationVi": "Chính sách cũ lưu giữ 90 ngày nhưng quy định mới rút xuống còn 30 ngày."
             }
@@ -588,5 +588,16 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "clerk=en-GB-SoniaNeural, caller=en-GB-RyanNeural",
+    "voices": {
+      "clerk": "en-GB-SoniaNeural",
+      "caller": "en-GB-RyanNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.87,
+    "renderedAt": "2026-11-24"
   }
 }

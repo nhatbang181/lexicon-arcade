@@ -20,115 +20,115 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Good morning, travellers, and welcome to Portside Ferry Terminal. My name is Derek Halvorsen, and I am the operations officer on duty today. Before boarding begins for our mid-morning crossings, I have a few important updates regarding departure piers, onboard facilities, our waiting lounge, and the four island stops we serve.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 20.32
     },
     {
       "lineId": "l02",
       "speakerId": "s1",
       "text": "First, please pay close attention if you are booked on the ten-fifteen express catamaran to Heron Island. That sailing usually departs from Pier 2, but today it has been reassigned to Pier 4. Although a cruise liner docked at Pier 2 overnight, it sailed out at dawn, and harbour waters inside the breakwater are completely flat and calm.",
-      "start": 0,
-      "end": 0
+      "start": 20.57,
+      "end": 40.87
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "The reason for the pier switch is that marine engineers are load-testing our newly installed hydraulic passenger gangway at Pier 2 all morning, so Pier 4 will handle express departures until noon.",
-      "start": 0,
-      "end": 0
+      "start": 41.12,
+      "end": 51.39
     },
     {
       "lineId": "l04",
       "speakerId": "s1",
       "text": "Next, a quick reminder for cyclists. Ever since April, standard pushbikes travel free of charge with no extra reservation voucher needed at Gate 1, and you wheel your bike straight onto the lower vehicle deck rather than leaving it in the outdoor racks by the ticket hall. However, you must detach any side pannier bags or loose baskets and carry them upstairs into the passenger cabin, because the deck racks sway gently out on the bay.",
-      "start": 0,
-      "end": 0
+      "start": 51.64,
+      "end": 76.35
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "Once aboard, you will notice some pleasant changes in our ferry cafeteria this season. We do not stay open overnight, of course, and although management considered going completely cashless, we decided to keep one cash till open for travellers without cards. The big upgrade is our menu: we partnered with Heron Island growers and bakers, so the galley now serves hot chowders and savoury pies made from fresh island farm produce.",
-      "start": 0,
-      "end": 0
+      "start": 76.6,
+      "end": 102.0
     },
     {
       "lineId": "l06",
       "speakerId": "s1",
       "text": "In case afternoon wind picks up and forces us to cancel a return sailing, here is how refunds work. Please do not line up at the Harbour Master's booth on the pier, as they manage vessel traffic rather than passenger fares, and mainland bus depots cannot process ferry tickets. Instead, simply enter your six-digit booking reference on the Portside Terminal web portal within seven days, and your fare will be refunded automatically.",
-      "start": 0,
-      "end": 0,
+      "start": 102.25,
+      "end": 127.66,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "While you wait for boarding calls, let me clarify which services are currently operating inside the upper waiting lounge, since a few signs are still being updated. First, our coin-operated luggage lockers near Gate 3 were removed last month during security renovations, and the currency exchange bureau beside reception closed permanently last winter.",
-      "start": 0,
-      "end": 0
+      "start": 128.46,
+      "end": 148.56
     },
     {
       "lineId": "l08",
       "speakerId": "s1",
       "text": "Our real-time sea-weather display screens above the gates are also temporarily blank today while technicians install a software patch. On the bright side, complimentary high-speed public Wi-Fi is up and running throughout the waiting lounge with no password needed.",
-      "start": 0,
-      "end": 0
+      "start": 148.81,
+      "end": 163.43
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "Families travelling with infants will also be glad to know that our newly refurbished quiet nursing and baby-changing room is open right beside the first-aid post at the back of the lounge.",
-      "start": 0,
-      "end": 0,
+      "start": 163.68,
+      "end": 172.8,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l10",
       "speakerId": "s1",
       "text": "Finally, if you are still deciding which island to explore today, here is a key practical note about each of our four destinations.",
-      "start": 0,
-      "end": 0
+      "start": 173.6,
+      "end": 180.61
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "Our busiest stop is Heron Island. It is strictly for foot passengers and bicycles, and you do not have to hike the steep headland road unless you want to: a direct electric shuttle bus meets every arriving ferry right at the jetty and runs straight up to the historic lighthouse.",
-      "start": 0,
-      "end": 0
+      "start": 180.86,
+      "end": 195.96
     },
     {
       "lineId": "l12",
       "speakerId": "s1",
       "text": "Second is Cedar Point, across the northern channel. Unlike our other crossings, Cedar Point is served by our roll-on car ferry, meaning it is the only destination where passengers may bring private motor vehicles and campervans aboard.",
-      "start": 0,
-      "end": 0
+      "start": 196.21,
+      "end": 209.57
     },
     {
       "lineId": "l13",
       "speakerId": "s1",
       "text": "Third is Puffin Rock, our wildlife sanctuary islet. There is no landing fee charged when you step ashore, and the coastal path stays open all year, but there are no waste bins anywhere on the rock, so day-trippers are strictly required to pack out all of their own rubbish back onto the ferry.",
-      "start": 0,
-      "end": 0
+      "start": 209.82,
+      "end": 226.37
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "Lastly, if you are heading to quiet Driftwood Bay, keep a very close eye on your watch. While four morning boats run out there, after twelve noon there is only a single return sailing back to Portside at four-fifteen, and anyone who misses it has to arrange a private water taxi.",
-      "start": 0,
-      "end": 0
+      "start": 226.62,
+      "end": 242.63
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "Boarding gates close strictly ten minutes before departure, so please listen for the pier announcements. We wish you a smooth crossing and a memorable day out on the bay.",
-      "start": 0,
-      "end": 0
+      "start": 242.88,
+      "end": 252.21
     }
   ],
   "audio": {
     "path": "audio/listening/p2_res_002.mp3",
-    "durationSec": 295,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 253.1,
+    "sha256": "b7574b3af0a50b59816239566dc277ea3947790a32a65d487e7ad409a6dc0929",
+    "loudnessLUFS": -16.5
   },
   "questionGroups": [
     {
@@ -165,15 +165,15 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 41.12,
+            "end": 51.39
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 20.57,
+              "end": 40.87,
               "decoy": "cruise liner sailed out at dawn / harbour waters are completely flat",
               "explanationVi": "Tàu du lịch đã rời bến lúc bình minh (A sai) và nước trong cảng rất lặng (C sai); nguyên nhân đổi bến là kỹ sư đang thử tải cầu dẫn thủy lực mới ở Pier 2 (B)."
             }
@@ -193,15 +193,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 51.64,
+            "end": 76.35
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 51.64,
+              "end": 76.35,
               "decoy": "no extra reservation voucher needed since April",
               "explanationVi": "Từ tháng Tư xe đạp được miễn phí không cần mua phiếu phụ (B sai), xe dắt thẳng lên boong dưới chứ không khóa ngoài sân (C sai); hành khách phải tháo túi hông mang lên khoang (A)."
             }
@@ -221,15 +221,15 @@
           },
           "evidence": {
             "lineId": "l05",
-            "start": 0,
-            "end": 0
+            "start": 76.6,
+            "end": 102.0
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l05",
-              "start": 0,
-              "end": 0,
+              "start": 76.6,
+              "end": 102.0,
               "decoy": "considered going completely cashless, yet kept one cash till open",
               "explanationVi": "Ban quản lý từng cân nhắc bỏ tiền mặt nhưng vẫn giữ một quầy thu tiền mặt (C sai); điểm mới của mùa này là món nóng nấu từ nông sản địa phương trên đảo (B)."
             }
@@ -249,15 +249,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 102.25,
+            "end": 127.66
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 102.25,
+              "end": 127.66,
               "decoy": "Harbour Master's booth / mainland bus depots cannot process ferry tickets",
               "explanationVi": "Cả trạm cảng vụ (A) lẫn bến xe buýt (B) đều không giải quyết hoàn vé phà; khách nhập mã đặt chỗ lên cổng web của bến trong vòng 7 ngày (C)."
             }
@@ -309,15 +309,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 148.81,
+            "end": 163.43
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 128.46,
+              "end": 148.56,
               "decoy": "luggage lockers removed / currency exchange closed / weather screens temporarily blank",
               "explanationVi": "Tủ khóa hành lý (B) đã dỡ bỏ, quầy đổi tiền (D) đóng vĩnh viễn và màn hình thời tiết (E) đang tạm tắt để cập nhật; chỉ có Wi-Fi miễn phí (A) và phòng chăm sóc em bé (C) đang hoạt động."
             }
@@ -339,8 +339,8 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 163.68,
+            "end": 172.8
           },
           "traps": []
         }
@@ -392,8 +392,8 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 180.86,
+            "end": 195.96
           },
           "traps": []
         },
@@ -411,8 +411,8 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 196.21,
+            "end": 209.57
           },
           "traps": []
         },
@@ -430,15 +430,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 209.82,
+            "end": 226.37
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 209.82,
+              "end": 226.37,
               "decoy": "no landing fee charged (F) / coastal path stays open all year (D)",
               "explanationVi": "Không thu phí lên đảo (F sai) và đường ven biển mở quanh năm (D sai); điểm bắt buộc là tự mang toàn bộ rác trở lại phà (B)."
             }
@@ -458,15 +458,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 226.62,
+            "end": 242.63
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 226.62,
+              "end": 242.63,
               "decoy": "four morning boats vs single return sailing after twelve noon",
               "explanationVi": "Có 4 chuyến đi vào buổi sáng nhưng sau 12 giờ trưa chỉ có duy nhất một chuyến phà quay về lúc 4:15 (E)."
             }
@@ -483,5 +483,15 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-US-ChristopherNeural",
+    "voices": {
+      "s1": "en-US-ChristopherNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

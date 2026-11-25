@@ -34,177 +34,177 @@
       "lineId": "l01",
       "speakerId": "s3",
       "text": "Welcome back, Fiona and Ben. You have already completed twelve interviews with retired Northmoor shipyard workers. I noticed you moved out of the municipal library after session two — why the change of venue?",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 12.49
     },
     {
       "lineId": "l02",
       "speakerId": "s1",
       "text": "The library meeting rooms were actually carpeted and whisper-quiet, and their opening hours suited everyone's schedules.",
-      "start": 0,
-      "end": 0
+      "start": 12.94,
+      "end": 19.37
     },
     {
       "lineId": "l03",
       "speakerId": "s2",
       "text": "Yet sitting across a bare municipal table made people stiff and formal. Once we shifted to interviewees' own sitting rooms, surrounded by framed launch photos and old brass calipers, they relaxed and spoke far more candidly.",
-      "start": 0,
-      "end": 0
+      "start": 19.82,
+      "end": 32.47
     },
     {
       "lineId": "l04",
       "speakerId": "s3",
       "text": "Home environments almost always unlock richer memory cues. Ben, looking back at your own interviewing technique, what early mistake stood out when you played back your first two files?",
-      "start": 0,
-      "end": 0
+      "start": 32.92,
+      "end": 43.18
     },
     {
       "lineId": "l05",
       "speakerId": "s2",
       "text": "Thankfully I remembered every copyright release form and recorded everything in lossless WAV rather than compressed audio. My real blunder was jumping in too quickly whenever an elder paused to think, cutting off memories right before the crucial detail emerged.",
-      "start": 0,
-      "end": 0
+      "start": 43.63,
+      "end": 57.75
     },
     {
       "lineId": "l06",
       "speakerId": "s3",
       "text": "Learning to sit comfortably with five seconds of silence is half of oral history. Fiona, across all twelve transcripts, did any recurring theme genuinely surprise you?",
-      "start": 0,
-      "end": 0
+      "start": 58.2,
+      "end": 67.91
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "Apprentice wages lined up closely with printed union ledgers, and retired female clerical staff were actually eager to discuss the nineteen-eighties yard closures.",
-      "start": 0,
-      "end": 0
+      "start": 68.36,
+      "end": 77.25
     },
     {
       "lineId": "l08",
       "speakerId": "s1",
       "text": "What struck me most was sensory recall: workers struggled to sketch slipway floor plans, yet they described the shipyard's soundscape — riveting hammers, crane bells, foghorns — with astonishing clarity.",
-      "start": 0,
-      "end": 0
+      "start": 77.5,
+      "end": 89.01
     },
     {
       "lineId": "l09",
       "speakerId": "s3",
       "text": "That sonic memory angle could anchor an entire chapter. Now, before publishing excerpts online, Ben asked whether we should tidy up thick regional dialect phrases into standard English.",
-      "start": 0,
-      "end": 0
+      "start": 89.46,
+      "end": 100.67
     },
     {
       "lineId": "l10",
       "speakerId": "s2",
       "text": "Only to make them easier for visiting school groups to read. Does the heritage grant forbid editing punctuation, or is it just too time-consuming?",
-      "start": 0,
-      "end": 0
+      "start": 101.12,
+      "end": 109.37
     },
     {
       "lineId": "l11",
       "speakerId": "s3",
       "text": "Neither — the fund allows light punctuation for readability, and editing time is minor. My objection is methodological: smoothing out coastal dialect strips away occupational identity and destroys genuine linguistic evidence.",
-      "start": 0,
-      "end": 0
+      "start": 109.82,
+      "end": 123.33
     },
     {
       "lineId": "l12",
       "speakerId": "s1",
       "text": "Understood, we keep their exact phrasing intact. One thorny issue left before cataloguing: two retired foremen gave conflicting years for the launch of the cargo ship Halcyon. Should we ask the older foreman to correct his date on tape, or leave the year off our website?",
-      "start": 0,
-      "end": 0
+      "start": 123.78,
+      "end": 140.03
     },
     {
       "lineId": "l13",
       "speakerId": "s3",
       "text": "Never coach a narrator to alter a recollection, and do not hide the discrepancy either. Preserve both oral accounts exactly as spoken, and attach an archival footnote cross-referencing local newspaper launch records.",
-      "start": 0,
-      "end": 0,
+      "start": 140.48,
+      "end": 152.83,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l14",
       "speakerId": "s2",
       "text": "That treats memory respectfully while giving researchers verifiable context. Let us quickly review the five thematic archive folders we are building and flag the main curatorial challenge in each. First, apprentice tool-making stories.",
-      "start": 0,
-      "end": 0
+      "start": 153.63,
+      "end": 167.82
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "Those digital recordings are crystal clear, yet the transcripts are packed with obsolete riveter and caulker jargon that modern listeners will not understand without an explanatory glossary.",
-      "start": 0,
-      "end": 0
+      "start": 168.27,
+      "end": 178.08
     },
     {
       "lineId": "l16",
       "speakerId": "s3",
       "text": "Good, flag jargon there. Second folder: the yard closure protests. Did you run into overlap with the county maritime museum's permanent gallery?",
-      "start": 0,
-      "end": 0
+      "start": 178.53,
+      "end": 188.23
     },
     {
       "lineId": "l17",
       "speakerId": "s2",
       "text": "Not at all — the museum barely touches the industrial disputes. Our real hurdle is consent: several families worry that naming former yard managers might reignite local friction, so they remain hesitant to approve public audio release.",
-      "start": 0,
-      "end": 0
+      "start": 188.68,
+      "end": 202.35
     },
     {
       "lineId": "l18",
       "speakerId": "s3",
       "text": "Offer embargoed access or anonymised transcripts in those cases. Third folder: the canteen and payroll office.",
-      "start": 0,
-      "end": 0
+      "start": 202.8,
+      "end": 210.11
     },
     {
       "lineId": "l19",
       "speakerId": "s1",
       "text": "There is no specialist jargon barrier there, yet our narrator pool is badly skewed: even though women staffed most payroll desks, nearly all the referrals sent by the union club so far have been retired male welders.",
-      "start": 0,
-      "end": 0
+      "start": 210.56,
+      "end": 222.23
     },
     {
       "lineId": "l20",
       "speakerId": "s3",
       "text": "Definitely reach out to local women's guilds to balance gender representation. Fourth, the launch-day family albums.",
-      "start": 0,
-      "end": 0
+      "start": 222.68,
+      "end": 229.7
     },
     {
       "lineId": "l21",
       "speakerId": "s2",
       "text": "Unlike workplace ballads, song copyright is not an issue here. Instead, donors handed over boxes of loose black-and-white snapshots with zero dates, hull numbers, or photographer names attached.",
-      "start": 0,
-      "end": 0
+      "start": 230.15,
+      "end": 241.89
     },
     {
       "lineId": "l22",
       "speakerId": "s3",
       "text": "Missing provenance makes cataloguing slow, so host a community photo-identification afternoon. Lastly, the harbour tugboat crews.",
-      "start": 0,
-      "end": 0
+      "start": 242.34,
+      "end": 250.54
     },
     {
       "lineId": "l23",
       "speakerId": "s1",
       "text": "Their families signed public release forms enthusiastically. The headache is audio restoration: our core interviews came from thirty-year-old magnetic cassettes drowned in heavy tape hiss and engine hum.",
-      "start": 0,
-      "end": 0
+      "start": 250.99,
+      "end": 262.62
     },
     {
       "lineId": "l24",
       "speakerId": "s3",
       "text": "Book two sessions with the university sound-conservation lab for those tapes. You two have mapped this archive with real maturity — send me your updated cataloguing brief next week.",
-      "start": 0,
-      "end": 0
+      "start": 263.07,
+      "end": 273.03
     }
   ],
   "audio": {
     "path": "audio/listening/p3_res_002.mp3",
-    "durationSec": 335,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 273.9,
+    "sha256": "ead37f8bfba597565a428d37c5643e34e721c32c234b61135fcd601d6cb1ee40",
+    "loudnessLUFS": -15.7
   },
   "questionGroups": [
     {
@@ -241,15 +241,15 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 19.82,
+            "end": 32.47
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 12.94,
+              "end": 19.37,
               "decoy": "whisper-quiet / suited everyone's schedules",
               "explanationVi": "Phòng thư viện rất yên tĩnh (loại A) và hợp giờ giấc (loại B); lý do chuyển về nhà riêng là ảnh tàu và dụng cụ cũ giúp nhân chứng thoải mái, cởi mở hơn (C)."
             }
@@ -269,15 +269,15 @@
           },
           "evidence": {
             "lineId": "l05",
-            "start": 0,
-            "end": 0
+            "start": 43.63,
+            "end": 57.75
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l05",
-              "start": 0,
-              "end": 0,
+              "start": 43.63,
+              "end": 57.75,
               "decoy": "copyright release form / lossless WAV",
               "explanationVi": "Ben nhớ đủ phiếu bản quyền (loại B) và thu bằng định dạng WAV không nén (loại C); lỗi thật của anh là chen lời quá nhanh khi cụ ông tạm ngưng suy nghĩ (A)."
             }
@@ -297,15 +297,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 77.5,
+            "end": 89.01
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 68.36,
+              "end": 77.25,
               "decoy": "lined up closely with printed union ledgers / eager to discuss",
               "explanationVi": "Lương khớp sổ công đoàn (loại A) và nữ nhân viên văn phòng rất sẵn sàng chia sẻ (loại C); điều khiến Fiona ngạc nhiên là ký ức sống động về âm thanh xưởng tàu hơn sơ đồ mặt bằng (B)."
             }
@@ -325,15 +325,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 109.82,
+            "end": 123.33
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 101.12,
+              "end": 109.37,
               "decoy": "forbid editing punctuation / too time-consuming",
               "explanationVi": "Dr Chen bác bỏ cả quy định cấm sửa dấu câu (B) lẫn lý do tốn thời gian (A), nhấn mạnh việc xóa phương ngữ làm mất bản sắc nghề nghiệp và bằng chứng ngôn ngữ lịch sử (C)."
             }
@@ -353,15 +353,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 140.48,
+            "end": 152.83
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 123.78,
+              "end": 140.03,
               "decoy": "correct his date on tape / leave the year off",
               "explanationVi": "Fiona đề xuất yêu cầu sửa lại trên băng (B) hoặc giấu năm hạ thủy (C), nhưng Dr Chen bác bỏ cả hai và chốt giữ nguyên hai lời kể kèm chú thích đối chiếu báo địa phương (A)."
             }
@@ -419,15 +419,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 168.27,
+            "end": 178.08
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 168.27,
+              "end": 178.08,
               "decoy": "digital recordings are crystal clear",
               "explanationVi": "Chất lượng ghi âm rất trong trẻo (loại D); khó khăn nằm ở dày đặc thuật ngữ nghề tán đinh, xảm tàu đã mai một (C)."
             }
@@ -447,15 +447,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 188.68,
+            "end": 202.35
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 178.53,
+              "end": 188.23,
               "decoy": "overlap with the county maritime museum",
               "explanationVi": "Dr Chen hỏi có trùng triển lãm bảo tàng (E) không nhưng Ben phủ nhận; rào cản thật là các gia đình ngại cho công bố băng ghi âm vì sợ gây căng thẳng địa phương (B)."
             }
@@ -475,15 +475,15 @@
           },
           "evidence": {
             "lineId": "l19",
-            "start": 0,
-            "end": 0
+            "start": 210.56,
+            "end": 222.23
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l19",
-              "start": 0,
-              "end": 0,
+              "start": 210.56,
+              "end": 222.23,
               "decoy": "narrator pool is badly skewed ... retired male welders",
               "explanationVi": "Danh sách nhân chứng bị lệch hẳn về nam thợ hàn dù phụ nữ làm việc tại phòng lương khớp với 'Uneven gender representation among narrators' (F)."
             }
@@ -503,15 +503,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 230.15,
+            "end": 241.89
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 230.15,
+              "end": 241.89,
               "decoy": "song copyright is not an issue here",
               "explanationVi": "Bản quyền bài hát (G) không liên quan; vấn đề là ảnh đen trắng tặng lại không có ngày tháng, số hiệu tàu hay tên người chụp tức thiếu thông tin nguồn gốc (A)."
             }
@@ -531,15 +531,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 250.99,
+            "end": 262.62
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 250.99,
+              "end": 262.62,
               "decoy": "signed public release forms enthusiastically",
               "explanationVi": "Gia đình ký giấy cho phép công bố rất nhiệt tình (loại B); vấn đề là băng cassette cũ 30 năm bị rè và ồn động cơ nặng (D)."
             }
@@ -556,5 +556,17 @@
       "schema": "pass",
       "verifier": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-GB-SoniaNeural, s2=en-GB-ThomasNeural, s3=en-US-JennyNeural",
+    "voices": {
+      "s1": "en-GB-SoniaNeural",
+      "s2": "en-GB-ThomasNeural",
+      "s3": "en-US-JennyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-25"
   }
 }
