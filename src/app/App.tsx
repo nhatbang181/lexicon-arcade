@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, Router, useLocation } from 'wouter';
 import {
   CalendarCheck2,
@@ -9,6 +9,7 @@ import {
   Flame,
   Star,
   GraduationCap,
+  RefreshCw,
 } from 'lucide-react';
 import { ThemeProvider, AudioProvider } from './providers';
 import { AppRoutes } from './routes';
@@ -59,6 +60,34 @@ const ShellLayout: React.FC = () => {
   const [location] = useLocation();
   const stats = useShellStats();
   const xpText = `${stats.xp.toLocaleString('vi-VN')} XP`;
+  const [swUpdateAvailable, setSwUpdateAvailable] = useState(false);
+
+  // X9: lắng nghe sự kiện có bản Service Worker mới; chỉ hiện toast ngoài /play/* và /exam.
+  useEffect(() => {
+    const onSwUpdate = () => setSwUpdateAvailable(true);
+    window.addEventListener('lexicon:sw-update', onSwUpdate);
+    return () => window.removeEventListener('lexicon:sw-update', onSwUpdate);
+  }, []);
+
+  // PB-09: tự xin quyền lưu trữ bền vững khi mở dưới dạng PWA trên màn hình chính.
+  useEffect(() => {
+    const isStandalone =
+      (typeof window.matchMedia === 'function' &&
+        window.matchMedia('(display-mode: standalone)').matches) ||
+      (navigator as Navigator & { standalone?: boolean }).standalone === true;
+    if (isStandalone && typeof navigator !== 'undefined' && navigator.storage?.persist) {
+      void navigator.storage.persist().catch(() => undefined);
+    }
+  }, []);
+
+  const handleApplySwUpdate = () => {
+    const apply = (window as Window & { __lexiconApplyUpdate?: () => void }).__lexiconApplyUpdate;
+    if (typeof apply === 'function') {
+      apply();
+    } else {
+      window.location.reload();
+    }
+  };
 
   // Ẩn shell khi đang ở trong phiên game hoặc màn legacy
   const isFullscreenRoute =
@@ -235,6 +264,50 @@ const ShellLayout: React.FC = () => {
       {/* Vùng nội dung chính (tối đa 1200px chuẩn 08 §4) */}
       <main className="flex-1 min-w-0 px-4 sm:px-6 lg:px-8 py-6 pb-24 lg:pb-8">
         <div className="max-w-[1200px] mx-auto">
+          {swUpdateAvailable && !isFullscreenRoute && (
+            <div
+              role="status"
+              aria-live="polite"
+              data-testid="sw-update-toast"
+              className="mb-4 px-4 py-3 rounded-[var(--radius-md)] border flex flex-wrap items-center justify-between gap-3"
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--color-info) 12%, var(--color-surface))',
+                borderColor: 'var(--color-info)',
+                color: 'var(--color-text)',
+              }}
+            >
+              <span className="text-sm font-semibold">
+                Có bản mới của Lexicon Arcade. Tải lại để áp dụng?
+              </span>
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handleApplySwUpdate}
+                  data-testid="sw-update-reload"
+                  className="inline-flex items-center gap-1.5 min-h-[44px] px-3.5 py-2 rounded-[var(--radius-md)] text-sm font-semibold cursor-pointer"
+                  style={{
+                    backgroundColor: 'var(--color-info)',
+                    color: 'var(--color-on-accent, var(--color-bg))',
+                  }}
+                >
+                  <RefreshCw className="w-4 h-4" />
+                  Tải lại
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setSwUpdateAvailable(false)}
+                  className="inline-flex items-center min-h-[44px] px-3 py-2 rounded-[var(--radius-md)] border text-sm font-medium cursor-pointer"
+                  style={{
+                    backgroundColor: 'var(--color-surface)',
+                    borderColor: 'var(--color-border)',
+                    color: 'var(--color-text-dim)',
+                  }}
+                >
+                  Để sau
+                </button>
+              </div>
+            </div>
+          )}
           <AppRoutes />
         </div>
       </main>

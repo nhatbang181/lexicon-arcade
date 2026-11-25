@@ -100,3 +100,9 @@
 | 1 | `src/games/w1-essay-lab/W1EssayLab.tsx` (dòng 1177, 1191, 1231, 1245, 1261, 1275), `src/features/portfolio/PortfolioScreen.tsx` (dòng 539) | T4-C | Đổi `var(--color-on-accent, #0f172a)` thành `var(--color-on-accent)` (token đã khai báo đủ 3 theme trong `src/design/tokens.css`) | D1 (`scripts/qa/hardcoded-colors.mjs` còn 7/8 chỗ do hex fallback cứng ngoài `src/design/**`) |
 | 2 | `src/app/screens/DevComponentsScreen.tsx` (dòng 498) | T3-A · **ĐÃ XỬ LÝ (Chặng 3)** | Bỏ chuỗi `#3B82F6` trong mô tả text minh hoạ SVG → ghi "màu chủ đạo token" | D1 (`scripts/qa/hardcoded-colors.mjs` hiện 0 lỗi trong `src/design/**`, `src/content/**` và `DevComponentsScreen.tsx`) |
 | 3 | `vite.config.ts` (`workbox.globIgnores`) | điều phối · **ĐÃ XỬ LÝ (`0bfe9c6`)** + T3-A (`@source not` trong `tokens.css`) | Thêm `'assets/GradingPanel-*.js'`, `'assets/listeningAnswer-*.js'` vào `globIgnores` và loại `legacy/docs/scripts` khỏi Tailwind scan | Precache PWA hạ về 1 311,73 KiB (< 1 500 KiB), CSS chính hạ về 67,77 KB (< 130 KB) |
+
+## Từ T3-C (25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `src/design/components/LiveCard.tsx` (dòng 133) | T3-A · **ĐÃ XỬ LÝ (`619a9e7`)** | Đã thay lớp bóng sibling bằng `.live-card-depth::before` + `h-full` | Khử 100% cảnh báo M5 trên thẻ `<LiveCard>` ở Hub |

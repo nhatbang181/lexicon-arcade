@@ -1,25 +1,52 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useLocation } from 'wouter';
 import {
   Award,
+  CheckCircle2,
   Clock,
-  Flame,
-  History,
   Layers,
   Snowflake,
   Star,
-  Trophy,
 } from 'lucide-react';
-import { Button, Card, EmptyState, Pill, Skeleton } from '../../design/components';
+import {
+  Button,
+  Card,
+  EmptyState,
+  Mascot,
+  Pill,
+  Skeleton,
+  Toast,
+} from '../../design/components';
 import { getCardMastery, type MasteryStage } from '../../core/srs/faces';
 import type { SRSCard } from '../../core/srs/fsrsAdapter';
-import type { AttemptRecord, UserProfile } from '../../core/storage/db';
+import {
+  computeMasteryMetrics,
+  type MasteryMetrics,
+} from '../../core/gamification/mastery';
+import {
+  displayStreakCount,
+  MAX_STREAK_FREEZES,
+  type StreakEvent,
+} from '../../core/gamification/streak';
+import { xpToLevel } from '../../core/gamification/xp';
+import {
+  computeFourStrands,
+  type FourStrandsSummary,
+  type StrandId,
+} from '../../core/planner/today';
+import {
+  db,
+  type AttemptRecord,
+  type UserProfile,
+} from '../../core/storage/db';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { cardRepo } from '../../core/storage/repos/cardRepo';
 import { essayRepo } from '../../core/storage/repos/essayRepo';
 import { profileRepo } from '../../core/storage/repos/profileRepo';
 import { recordingRepo } from '../../core/storage/repos/recordingRepo';
 import { getGameById } from '../../games/registry';
+import { useAsyncData } from '../shared/useAsyncData';
+import { ScreenErrorState } from '../shared/ScreenErrorState';
 
 interface BadgeTileDef {
   id: string;
@@ -39,84 +66,84 @@ interface BadgeTileDef {
 const BADGE_TILES: readonly BadgeTileDef[] = [
   {
     id: 'streak-7',
-    file: 'streak-7.svg',
+    file: 'streak-7.webp',
     titleVi: 'Nhịp 7 ngày',
     requirementVi: 'Chuỗi học 7 ngày liên tiếp',
     check: (c) => c.streakLongest >= 7 || c.unlockedIds.has('streak_7'),
   },
   {
     id: 'streak-30',
-    file: 'streak-30.svg',
+    file: 'streak-30.webp',
     titleVi: 'Thói quen 30 ngày',
     requirementVi: 'Chuỗi học 30 ngày liên tiếp',
     check: (c) => c.streakLongest >= 30 || c.unlockedIds.has('streak_30'),
   },
   {
     id: 'streak-100',
-    file: 'streak-100.svg',
+    file: 'streak-100.webp',
     titleVi: 'Kỷ luật 100 ngày',
     requirementVi: 'Chuỗi học 100 ngày liên tiếp',
     check: (c) => c.streakLongest >= 100,
   },
   {
     id: 'cards-100',
-    file: 'cards-100.svg',
+    file: 'cards-100.webp',
     titleVi: '100 thẻ vững',
-    requirementVi: '100 thẻ đạt Mature/Mastered',
+    requirementVi: '100 thẻ đạt Khá vững trở lên',
     check: (c) => c.matureOrMastered >= 100 || c.unlockedIds.has('vocab_100_mature'),
   },
   {
     id: 'cards-500',
-    file: 'cards-500.svg',
+    file: 'cards-500.webp',
     titleVi: '500 thẻ vững',
-    requirementVi: '500 thẻ đạt Mature/Mastered',
+    requirementVi: '500 thẻ đạt Khá vững trở lên',
     check: (c) => c.matureOrMastered >= 500,
   },
   {
     id: 'cards-1000',
-    file: 'cards-1000.svg',
+    file: 'cards-1000.webp',
     titleVi: '1.000 thẻ học thuật',
-    requirementVi: '1.000 thẻ đạt Mature/Mastered',
+    requirementVi: '1.000 thẻ đạt Khá vững trở lên',
     check: (c) => c.matureOrMastered >= 1000,
   },
   {
     id: 'first-essay',
-    file: 'first-essay.svg',
+    file: 'first-essay.webp',
     titleVi: 'Bài luận đầu tiên',
     requirementVi: 'Hoàn thành 1 bài Writing W1',
     check: (c) => c.essaysCount >= 1 || c.unlockedIds.has('essay_reviser'),
   },
   {
     id: 'first-speaking',
-    file: 'first-speaking.svg',
+    file: 'first-speaking.webp',
     titleVi: 'Phiên nói đầu tiên',
     requirementVi: 'Hoàn thành 1 bản thu Speaking',
     check: (c) => c.recordingsCount >= 1,
   },
   {
     id: 'band-65',
-    file: 'band-65.svg',
+    file: 'band-65.webp',
     titleVi: 'Cột mốc 6.5',
     requirementVi: 'Overall ước lượng ≥ 6.5',
     check: (c) => c.overallBand !== null && c.overallBand >= 6.5,
   },
   {
     id: 'band-70',
-    file: 'band-70.svg',
+    file: 'band-70.webp',
     titleVi: 'Cột mốc 7.0',
     requirementVi: 'Overall ước lượng ≥ 7.0',
     check: (c) => (c.overallBand !== null && c.overallBand >= 7.0) || c.unlockedIds.has('band_7_0'),
   },
   {
     id: 'band-75',
-    file: 'band-75.svg',
+    file: 'band-75.webp',
     titleVi: 'Cột mốc 7.5',
     requirementVi: 'Overall ước lượng ≥ 7.5',
     check: (c) => c.overallBand !== null && c.overallBand >= 7.5,
   },
   {
     id: 'band-80',
-    file: 'band-80.svg',
+    file: 'band-80.webp',
     titleVi: 'Đích đến 8.0',
     requirementVi: 'Overall ước lượng ≥ 8.0 Academic',
     check: (c) => (c.overallBand !== null && c.overallBand >= 8.0) || c.unlockedIds.has('band_8_0'),
@@ -128,46 +155,90 @@ const MASTERY_META: ReadonlyArray<{
   label: string;
   color: string;
 }> = [
-  { stage: 'new', label: 'New', color: 'var(--color-text-faint)' },
-  { stage: 'learning', label: 'Learning', color: 'var(--color-partial)' },
-  { stage: 'young', label: 'Young', color: 'var(--color-listening)' },
-  { stage: 'mature', label: 'Mature', color: 'var(--color-reading)' },
-  { stage: 'mastered', label: 'Mastered', color: 'var(--color-vocab)' },
+  { stage: 'new', label: 'Mới', color: 'var(--color-text-faint)' },
+  { stage: 'learning', label: 'Đang học', color: 'var(--color-partial)' },
+  { stage: 'young', label: 'Mới quen', color: 'var(--color-listening)' },
+  { stage: 'mature', label: 'Khá vững', color: 'var(--color-reading)' },
+  { stage: 'mastered', label: 'Rất vững', color: 'var(--color-vocab)' },
 ];
+
+const STRAND_COLORS: Record<StrandId, string> = {
+  input: 'var(--color-listening)',
+  output: 'var(--color-writing)',
+  language: 'var(--color-vocab)',
+  fluency: 'var(--color-reading)',
+};
+
+const STRAND_ICONS: Record<StrandId, string> = {
+  input: 'assets/icons/fluent/ui/compass.webp',
+  output: 'assets/icons/fluent/ui/lightbulb.webp',
+  language: 'assets/icons/fluent/ui/bookmark.webp',
+  fluency: 'assets/icons/fluent/ui/clock.webp',
+};
+
+interface StatsPayload {
+  profile: UserProfile;
+  cards: SRSCard[];
+  attempts: AttemptRecord[];
+  essaysCount: number;
+  recordingsCount: number;
+  masteryMetrics: MasteryMetrics;
+  fourStrands: FourStrandsSummary;
+  activeTurnRatio: number | null;
+  pendingStreak: StreakEvent | null;
+}
 
 export const StatsScreen: React.FC = () => {
   const [, navigate] = useLocation();
-  const [loading, setLoading] = useState(true);
-  const [profile, setProfile] = useState<UserProfile | null>(null);
-  const [cards, setCards] = useState<SRSCard[]>([]);
-  const [attempts, setAttempts] = useState<AttemptRecord[]>([]);
-  const [essaysCount, setEssaysCount] = useState(0);
-  const [recordingsCount, setRecordingsCount] = useState(0);
-
+  const [streakToast, setStreakToast] = useState<StreakEvent | null>(null);
   const baseUrl = import.meta.env.BASE_URL;
 
-  useEffect(() => {
-    let active = true;
-    void (async () => {
-      const [p, c, a, essays, recordings] = await Promise.all([
+  const loadStats = useCallback(async (): Promise<StatsPayload> => {
+    const now = new Date();
+    const [profile, cards, reviews, allRecentAttempts, essays, recordings, turnSummary, pendingStreak] =
+      await Promise.all([
         profileRepo.getOrCreate(),
         cardRepo.getAll(),
-        attemptRepo.getRecent({ limit: 15 }),
+        db.reviews.toArray(),
+        attemptRepo.getRecent({ limit: 80 }),
         essayRepo.list(),
         recordingRepo.list(),
+        attemptRepo.getTurnKindSummary(now.getTime() - 7 * 86_400_000),
+        attemptRepo.consumePendingStreakEvent(),
       ]);
-      if (!active) return;
-      setProfile(p);
-      setCards(c);
-      setAttempts(a);
-      setEssaysCount(essays.length);
-      setRecordingsCount(recordings.length);
-      setLoading(false);
-    })();
-    return () => {
-      active = false;
+
+    const masteryMetrics = computeMasteryMetrics(cards, reviews);
+    const fourStrands = computeFourStrands(
+      allRecentAttempts.map((a) => ({
+        gameId: a.gameId,
+        startedAt: a.startedAt,
+        endedAt: a.endedAt,
+        mode: a.mode,
+      })),
+      now,
+      7,
+    );
+
+    return {
+      profile,
+      cards,
+      attempts: allRecentAttempts.slice(0, 15),
+      essaysCount: essays.length,
+      recordingsCount: recordings.length,
+      masteryMetrics,
+      fourStrands,
+      activeTurnRatio: turnSummary.activeRatio,
+      pendingStreak,
     };
   }, []);
+
+  const { data, loading, error, reload } = useAsyncData(loadStats, [loadStats]);
+
+  useEffect(() => {
+    if (data?.pendingStreak) {
+      setStreakToast(data.pendingStreak);
+    }
+  }, [data?.pendingStreak]);
 
   const masteryCounts = useMemo(() => {
     const counts: Record<MasteryStage, number> = {
@@ -177,145 +248,388 @@ export const StatsScreen: React.FC = () => {
       mature: 0,
       mastered: 0,
     };
-    for (const card of cards) {
+    for (const card of data?.cards ?? []) {
       counts[getCardMastery(card)] += 1;
     }
     return counts;
-  }, [cards]);
+  }, [data?.cards]);
 
   const badgeContext = useMemo(() => {
-    const unlockedIds = new Set(profile?.badges ?? []);
+    const unlockedIds = new Set(data?.profile.badges ?? []);
     return {
-      streakLongest: Math.max(profile?.streak.count ?? 0, profile?.streak.longest ?? 0),
+      streakLongest: Math.max(
+        data?.profile.streak.count ?? 0,
+        data?.profile.streak.longest ?? 0,
+      ),
       matureOrMastered: masteryCounts.mature + masteryCounts.mastered,
-      essaysCount,
-      recordingsCount,
-      overallBand: profile?.estimatedBands.overall ?? null,
+      essaysCount: data?.essaysCount ?? 0,
+      recordingsCount: data?.recordingsCount ?? 0,
+      overallBand: data?.profile.estimatedBands.overall ?? null,
       unlockedIds,
     };
-  }, [essaysCount, masteryCounts.mastered, masteryCounts.mature, profile, recordingsCount]);
+  }, [data, masteryCounts.mastered, masteryCounts.mature]);
 
-  if (loading) {
+  if (error) {
     return (
-      <div className="space-y-6 pb-8">
-        <Skeleton className="h-9 w-1/3" />
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <Skeleton className="h-24" />
-          <Skeleton className="h-24" />
-          <Skeleton className="h-24" />
-          <Skeleton className="h-24" />
-        </div>
-        <Skeleton lines={5} />
-      </div>
+      <ScreenErrorState
+        title="Không tải được trang Thống kê"
+        error={error}
+        code="ERR-STATS-LOAD"
+        onRetry={() => void reload()}
+      />
     );
   }
 
+  const profile = data?.profile;
+  const cards = data?.cards ?? [];
+  const attempts = data?.attempts ?? [];
+  const masteryMetrics = data?.masteryMetrics;
+  const fourStrands = data?.fourStrands;
+  const activeTurnRatio = data?.activeTurnRatio ?? null;
   const totalCards = cards.length;
+  const levelInfo = xpToLevel(profile?.xp ?? 0);
+  const currentStreak = profile ? displayStreakCount(profile.streak) : 0;
   const unlockedBadgesCount = BADGE_TILES.filter((b) => b.check(badgeContext)).length;
+  const delayedRatePct =
+    masteryMetrics && masteryMetrics.delayedRetention.rate !== null
+      ? Math.round(masteryMetrics.delayedRetention.rate * 100)
+      : null;
+  const mascotSay = data
+    ? `${data.profile.xp.toLocaleString('vi-VN')} XP · ${unlockedBadgesCount}/12 huy hiệu!`
+    : 'Xem tiến độ học nào!';
 
   return (
-    <div className="space-y-6 pb-10">
-      <div className="flex flex-wrap items-end justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
-            Thống kê & Tiến độ
-          </h1>
-          <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
-            Theo dõi chuỗi ngày học, tổng XP, phân bố bậc mastery FSRS và bộ sưu tập 12 huy hiệu.
-          </p>
-        </div>
-        <Pill tone="vocab" icon={<Award className="w-3.5 h-3.5" />}>
-          {unlockedBadgesCount} / {BADGE_TILES.length} huy hiệu
-        </Pill>
-      </div>
+    <div className="space-y-4 sm:space-y-6 pb-10">
+      {streakToast && (
+        <Toast
+          tone="info"
+          title={
+            streakToast.freezeUsed
+              ? `Đóng băng đã cứu chuỗi ${streakToast.count} ngày của bạn!`
+              : `Nhận thêm +1 lượt đóng băng chuỗi (${streakToast.freezes}/${MAX_STREAK_FREEZES})`
+          }
+          description={
+            streakToast.freezeUsed
+              ? `Ngày ${streakToast.protectedDate ?? 'hôm qua'} đã được bảo vệ tự động.`
+              : 'Mỗi 7 ngày học đều sẽ tích thêm 1 lượt bảo vệ chuỗi.'
+          }
+          onDismiss={() => setStreakToast(null)}
+        />
+      )}
 
-      {/* 4 KPI tổng quan */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        <Card padding="md" className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-            <span>Streak hiện tại</span>
-            <Flame className="w-4 h-4" style={{ color: 'var(--color-writing)' }} />
-          </div>
-          <div
-            className="text-2xl font-bold tabular-nums"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
-          >
-            {profile?.streak.count ?? 0} ngày
-          </div>
-          <div className="flex items-center gap-1.5 text-xs" style={{ color: 'var(--color-listening)' }}>
-            <Snowflake className="w-3.5 h-3.5" />
-            <span>{profile?.streak.freezes ?? 1} lượt đóng băng</span>
-          </div>
-        </Card>
-
-        <Card padding="md" className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-            <span>Kỷ lục Streak</span>
-            <Trophy className="w-4 h-4" style={{ color: 'var(--color-partial)' }} />
-          </div>
-          <div
-            className="text-2xl font-bold tabular-nums"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
-          >
-            {Math.max(profile?.streak.count ?? 0, profile?.streak.longest ?? 0)} ngày
-          </div>
-          <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-            Chuỗi dài nhất từng đạt
-          </div>
-        </Card>
-
-        <Card padding="md" className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-            <span>Tổng XP</span>
-            <Star className="w-4 h-4" style={{ color: 'var(--color-partial)' }} />
-          </div>
-          <div
-            className="text-2xl font-bold tabular-nums"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
-          >
-            {(profile?.xp ?? 0).toLocaleString('vi-VN')}
-          </div>
-          <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-            {attempts.length} phiên gần đây
-          </div>
-        </Card>
-
-        <Card padding="md" className="space-y-1.5">
-          <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-            <span>Tổng thẻ SRS</span>
-            <Layers className="w-4 h-4" style={{ color: 'var(--color-vocab)' }} />
-          </div>
-          <div
-            className="text-2xl font-bold tabular-nums"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
-          >
-            {totalCards}
-          </div>
-          <div className="text-xs" style={{ color: 'var(--color-reading)' }}>
-            {masteryCounts.mature + masteryCounts.mastered} thẻ Mature+
-          </div>
-        </Card>
-      </div>
-
-      {/* Phân bố bậc Mastery */}
-      <Card padding="lg" className="space-y-4">
-        <div className="flex items-center justify-between gap-2">
-          <div>
-            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-              Phân bố thẻ theo bậc Mastery (FSRS)
-            </h2>
-            <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-              New → Learning → Young (&lt;21 ngày) → Mature (21–89 ngày) → Mastered (≥90 ngày)
+      {/* Hero Thống kê (render ngay cả khi đang tải KPI để Lexi không bị mount trễ/cắt chữ) */}
+      <div
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-3.5 sm:p-5 min-h-[155px] md:min-h-[205px] flex flex-col justify-between gap-3"
+        style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+          backgroundImage: `linear-gradient(135deg, color-mix(in srgb, var(--color-listening) 12%, transparent), color-mix(in srgb, var(--color-vocab) 10%, transparent)), url(${baseUrl}assets/illustrations/placement.svg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right -12px bottom -12px',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(90deg, var(--color-surface) 0%, color-mix(in srgb, var(--color-surface) 92%, transparent) 70%, color-mix(in srgb, var(--color-surface) 78%, transparent) 100%)',
+          }}
+          aria-hidden="true"
+        />
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="space-y-1.5 min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/check.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
+              <Pill tone="info" icon={<Star className="w-3.5 h-3.5" />}>
+                Cấp {levelInfo.level}
+              </Pill>
+              <Pill tone="vocab" icon={<Award className="w-3.5 h-3.5" />}>
+                {unlockedBadgesCount} / {BADGE_TILES.length} huy hiệu
+              </Pill>
+            </div>
+            <h1 className="text-xl sm:text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
+              Thống kê & Tiến độ
+            </h1>
+            <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              Theo dõi chuỗi ngày học, cấp độ XP, số từ vững sau 7 ngày, cân bằng 4 mạch và 12 huy
+              hiệu.
             </p>
           </div>
-          <Pill tone="neutral">{totalCards} thẻ</Pill>
+          <Mascot
+            state={currentStreak >= 7 ? 'an-mung' : 'co-vu'}
+            size={76}
+            say={mascotSay}
+            className="shrink-0"
+          />
+        </div>
+      </div>
+
+      {loading || !profile || !masteryMetrics || !fourStrands ? (
+        <div className="space-y-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <Skeleton className="h-24" />
+            <Skeleton className="h-24" />
+            <Skeleton className="h-24" />
+            <Skeleton className="h-24" />
+          </div>
+          <Skeleton lines={5} />
+        </div>
+      ) : (
+        <>
+
+      {/* 4 KPI tổng quan (mỗi thẻ 1 icon Fluent 3D riêng biệt) */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <Card padding="md" className="space-y-1.5">
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+            <span>Chuỗi hiện tại</span>
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/rocket.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
+          </div>
+          <div
+            className="text-2xl font-bold tabular-nums"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+          >
+            {currentStreak} ngày
+          </div>
+          <div className="flex items-center gap-1.5 text-xs" style={{ color: 'var(--color-listening)' }}>
+            <Snowflake className="w-3.5 h-3.5 shrink-0" />
+            <span>
+              {profile.streak.freezes}/{MAX_STREAK_FREEZES} đóng băng
+            </span>
+          </div>
+        </Card>
+
+        <Card padding="md" className="space-y-1.5">
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+            <span>Kỷ lục chuỗi</span>
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/party.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
+          </div>
+          <div
+            className="text-2xl font-bold tabular-nums"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+          >
+            {Math.max(profile.streak.count, profile.streak.longest)} ngày
+          </div>
+          <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+            {profile.streak.freezeUsedDates.length > 0
+              ? `Đã cứu ${profile.streak.freezeUsedDates.length} lần`
+              : 'Chuỗi dài nhất từng đạt'}
+          </div>
+        </Card>
+
+        <Card padding="md" className="space-y-1.5" data-testid="stats-level-card">
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+            <span>Cấp {levelInfo.level} · Tổng XP</span>
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/xp.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
+          </div>
+          <div
+            className="text-2xl font-bold tabular-nums"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+          >
+            {profile.xp.toLocaleString('vi-VN')}
+          </div>
+          <div className="space-y-1">
+            <div
+              className="h-1.5 w-full rounded-full overflow-hidden"
+              style={{ backgroundColor: 'var(--color-surface-2)' }}
+            >
+              <div
+                className="h-full rounded-full"
+                style={{
+                  width: `${Math.round(levelInfo.progress * 100)}%`,
+                  backgroundColor: 'var(--color-partial)',
+                }}
+              />
+            </div>
+            <div className="text-xs tabular-nums" style={{ color: 'var(--color-text-dim)' }}>
+              {levelInfo.currentLevelXp}/{levelInfo.nextLevelXp} XP lên cấp {levelInfo.level + 1}
+            </div>
+          </div>
+        </Card>
+
+        <Card padding="md" className="space-y-1.5" data-testid="stats-mastered-card">
+          <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+            <span>Từ vững (≥ 21 ngày)</span>
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/shield.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
+          </div>
+          <div
+            className="text-2xl font-bold tabular-nums"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+          >
+            {masteryMetrics.masteredCount}
+          </div>
+          <div className="text-xs" style={{ color: 'var(--color-reading)' }}>
+            {delayedRatePct !== null
+              ? `Giữ nhớ ≥ 7 ngày: ${delayedRatePct}% (${masteryMetrics.delayedRetention.correct}/${masteryMetrics.delayedRetention.total})`
+              : `${totalCards} thẻ đang theo dõi`}
+          </div>
+        </Card>
+      </div>
+
+      {/* PP-06: Cân bằng 4 mạch học Paul Nation (7 ngày) */}
+      <Card padding="lg" className="space-y-4" data-testid="stats-four-strands">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/brain.webp`}
+              alt=""
+              width={36}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="w-9 h-9 object-contain shrink-0"
+            />
+            <div>
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                Cân bằng 4 mạch học (7 ngày gần nhất)
+              </h2>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                Cân bằng ~25% mỗi mạch giúp tăng tốc độ đọc-nghe và khả năng dùng từ chủ động. Mạch
+                dưới 15% sẽ được Hôm nay đề xuất bù.
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            {activeTurnRatio !== null && (
+              <Pill tone="info">
+                Gợi nhớ/Sản xuất: {Math.round(activeTurnRatio * 100)}%
+              </Pill>
+            )}
+            <Pill tone="neutral">{fourStrands.totalMinutes} phút</Pill>
+          </div>
         </div>
 
-        {/* Thanh stacked bar */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {(['input', 'output', 'language', 'fluency'] as const).map((id) => {
+            const st = fourStrands.strands[id];
+            return (
+              <div
+                key={id}
+                className="p-3.5 rounded-[var(--radius-md)] border space-y-2"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: st.underrepresented ? 'var(--color-partial)' : 'var(--color-border)',
+                }}
+              >
+                <div className="flex items-center justify-between gap-2 text-xs font-semibold">
+                  <span className="inline-flex items-center gap-2 min-w-0" style={{ color: 'var(--color-text)' }}>
+                    <img
+                      src={`${baseUrl}${STRAND_ICONS[id]}`}
+                      alt=""
+                      width={32}
+                      height={32}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-8 h-8 object-contain shrink-0"
+                    />
+                    <span className="truncate">{st.labelVi}</span>
+                  </span>
+                  <span
+                    className="font-bold tabular-nums shrink-0"
+                    style={{ fontFamily: 'var(--font-mono)', color: STRAND_COLORS[id] }}
+                  >
+                    {st.pct}%
+                  </span>
+                </div>
+                <div
+                  className="h-2 w-full rounded-full overflow-hidden"
+                  style={{ backgroundColor: 'var(--color-surface)' }}
+                >
+                  <div
+                    className="h-full rounded-full"
+                    style={{
+                      width: `${Math.min(100, st.pct)}%`,
+                      backgroundColor: STRAND_COLORS[id],
+                    }}
+                  />
+                </div>
+                <div
+                  className="flex items-center justify-between text-xs"
+                  style={{ color: 'var(--color-text-dim)' }}
+                >
+                  <span>{st.minutes} phút</span>
+                  {st.underrepresented && (
+                    <span style={{ color: 'var(--color-partial)' }}>Cần bù</span>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </Card>
+
+      {/* Phân bố bậc trí nhớ thẻ ôn */}
+      <Card padding="lg" className="space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/chart.webp`}
+              alt=""
+              width={36}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="w-9 h-9 object-contain shrink-0"
+            />
+            <div>
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                Phân bố độ vững của thẻ ôn
+              </h2>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                Mới → Đang học → Mới quen (&lt;21 ngày) → Khá vững (21–89 ngày) → Rất vững (≥90
+                ngày)
+              </p>
+            </div>
+          </div>
+          <Pill tone="neutral" icon={<Layers className="w-3.5 h-3.5" />}>
+            {totalCards} thẻ
+          </Pill>
+        </div>
+
         <div
           className="h-4 w-full rounded-full overflow-hidden flex"
           style={{ backgroundColor: 'var(--color-surface-2)' }}
-          aria-label="Phân bố thẻ FSRS"
+          aria-label="Phân bố độ vững thẻ ôn"
         >
           {totalCards > 0 &&
             MASTERY_META.map((m) => {
@@ -365,8 +679,16 @@ export const StatsScreen: React.FC = () => {
 
       {/* Danh sách phiên học gần nhất */}
       <Card padding="lg" className="space-y-4">
-        <div className="flex items-center gap-2">
-          <History className="w-5 h-5" style={{ color: 'var(--color-info)' }} />
+        <div className="flex items-center gap-3">
+          <img
+            src={`${baseUrl}assets/icons/fluent/ui/calendar.webp`}
+            alt=""
+            width={36}
+            height={36}
+            loading="lazy"
+            decoding="async"
+            className="w-9 h-9 object-contain shrink-0"
+          />
           <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
             Phiên học gần nhất
           </h2>
@@ -374,6 +696,17 @@ export const StatsScreen: React.FC = () => {
 
         {attempts.length === 0 ? (
           <EmptyState
+            icon={
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/zzz.webp`}
+                alt=""
+                width={44}
+                height={44}
+                loading="lazy"
+                decoding="async"
+                className="w-11 h-11 object-contain"
+              />
+            }
             title="Chưa có phiên học nào được ghi nhận"
             description="Hoàn thành phiên Daily Run (V1), Collocation Forge (V2) hoặc Paraphrase Radar (V3) để thấy lịch sử tiến bộ tại đây."
             action={
@@ -406,11 +739,14 @@ export const StatsScreen: React.FC = () => {
                       <div className="text-sm font-semibold" style={{ color: 'var(--color-text)' }}>
                         {game?.title ?? a.gameId}
                       </div>
-                      <div className="text-xs flex items-center gap-2" style={{ color: 'var(--color-text-dim)' }}>
+                      <div
+                        className="text-xs flex items-center gap-2"
+                        style={{ color: 'var(--color-text-dim)' }}
+                      >
                         <span>{dateStr}</span>
                         <span>·</span>
                         <span className="inline-flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
+                          <Clock className="w-3.5 h-3.5" />
                           {durationMin}p
                         </span>
                       </div>
@@ -433,16 +769,27 @@ export const StatsScreen: React.FC = () => {
         )}
       </Card>
 
-      {/* Lưới 12 huy hiệu */}
+      {/* Lưới 12 huy hiệu Fluent 3D */}
       <Card padding="lg" className="space-y-4">
         <div className="flex items-center justify-between gap-2">
-          <div>
-            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-              Bộ sưu tập 12 Huy hiệu
-            </h2>
-            <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-              Tự động mở khoá theo kỷ luật streak, số thẻ Mature, bài viết/nói và cột mốc Band.
-            </p>
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/goal.webp`}
+              alt=""
+              width={36}
+              height={36}
+              loading="lazy"
+              decoding="async"
+              className="w-9 h-9 object-contain shrink-0"
+            />
+            <div>
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                Bộ sưu tập 12 Huy hiệu
+              </h2>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                Tự động mở khoá theo kỷ luật chuỗi ngày, số thẻ vững, bài viết/nói và cột mốc Band.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -453,7 +800,7 @@ export const StatsScreen: React.FC = () => {
               <div
                 key={badge.id}
                 className={`p-3.5 rounded-[var(--radius-md)] border flex flex-col items-center text-center gap-2 transition-opacity ${
-                  unlocked ? '' : 'opacity-55'
+                  unlocked ? '' : 'opacity-65'
                 }`}
                 style={{
                   backgroundColor: unlocked
@@ -463,15 +810,28 @@ export const StatsScreen: React.FC = () => {
                 }}
               >
                 <img
-                  src={`${baseUrl}assets/icons/badges/${badge.file}`}
+                  src={`${baseUrl}assets/icons/fluent/badges/${badge.file}`}
                   alt={badge.titleVi}
+                  width={48}
+                  height={48}
+                  loading="lazy"
+                  decoding="async"
                   className={`w-12 h-12 object-contain ${unlocked ? '' : 'grayscale'}`}
                 />
-                <div className="space-y-0.5">
-                  <div className="text-xs font-bold" style={{ color: 'var(--color-text)' }}>
-                    {badge.titleVi}
+                <div className="space-y-1">
+                  <div
+                    className="text-xs font-bold flex items-center justify-center gap-1"
+                    style={{ color: 'var(--color-text)' }}
+                  >
+                    {unlocked && (
+                      <CheckCircle2
+                        className="w-3.5 h-3.5 shrink-0"
+                        style={{ color: 'var(--color-correct)' }}
+                      />
+                    )}
+                    <span>{badge.titleVi}</span>
                   </div>
-                  <div className="text-[11px] leading-snug" style={{ color: 'var(--color-text-dim)' }}>
+                  <div className="text-xs leading-snug" style={{ color: 'var(--color-text-dim)' }}>
                     {badge.requirementVi}
                   </div>
                 </div>
@@ -480,6 +840,8 @@ export const StatsScreen: React.FC = () => {
           })}
         </div>
       </Card>
+        </>
+      )}
     </div>
   );
 };
