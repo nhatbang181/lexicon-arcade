@@ -1221,7 +1221,7 @@ export const V1DailyRun: React.FC<GameProps> = ({
               style={{ color: 'var(--color-text-dim)' }}
             >
               <Award className="w-3.5 h-3.5" style={{ color: 'var(--color-vocab)' }} />
-              <span>Lên Mature/Mastered</span>
+              <span>Từ mới vững</span>
             </div>
             <div
               className="font-display text-2xl font-extrabold tabular-nums"
