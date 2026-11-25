@@ -296,12 +296,38 @@ export function splitByKeyPhrases(
 }
 
 /**
+ * Deterministic seeded shuffle (Mulberry32) so consecutive sessions get varied prompts (W2-02).
+ */
+export function seededShuffle<T>(items: readonly T[], seed: number): T[] {
+  const out = [...items];
+  let s = (seed >>> 0) || 1;
+  const nextRand = () => {
+    s = (s + 0x6d2b79f5) | 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  for (let i = out.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(nextRand() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+export interface SprintSelectionOptions {
+  seed?: number;
+  excludeIds?: ReadonlySet<string>;
+}
+
+/**
  * Filter/select Task 1 prompts by difficulty tier (W2-WRITING-SPRINTS.md §5).
+ * Supports seeded shuffle and excluding recently completed prompt IDs (W2-02).
  */
 export function selectOverviewPrompts<T extends { id: string; kind: ChartKind }>(
   items: readonly T[],
   level: number,
   count: number,
+  options?: SprintSelectionOptions,
 ): T[] {
   const preferredKinds: ChartKind[] =
     level <= 3
@@ -310,9 +336,23 @@ export function selectOverviewPrompts<T extends { id: string; kind: ChartKind }>
         ? ['table', 'mixed']
         : ['process', 'map'];
 
+  const exclude = options?.excludeIds;
   const primary = items.filter((item) => preferredKinds.includes(item.kind));
   const fallback = items.filter((item) => !preferredKinds.includes(item.kind));
-  return [...primary, ...fallback].slice(0, count);
+
+  const orderBucket = (bucket: T[], salt: number): T[] => {
+    const fresh = exclude ? bucket.filter((it) => !exclude.has(it.id)) : bucket;
+    const seen = exclude ? bucket.filter((it) => exclude.has(it.id)) : [];
+    if (options?.seed === undefined) {
+      return [...fresh, ...seen];
+    }
+    return [
+      ...seededShuffle(fresh, options.seed ^ salt),
+      ...seededShuffle(seen, (options.seed ^ salt) + 97),
+    ];
+  };
+
+  return [...orderBucket(primary, 0x9e3779b9), ...orderBucket(fallback, 0x85ebca6b)].slice(0, count);
 }
 
 // ---------------------------------------------------------------------------
@@ -487,6 +527,7 @@ export function selectIdeaPrompts(
   prompts: readonly WritingTask2Prompt[],
   level: number,
   count: number,
+  options?: SprintSelectionOptions,
 ): WritingTask2Prompt[] {
   const preferredTypes: EssayType[] =
     level <= 3
@@ -495,9 +536,23 @@ export function selectIdeaPrompts(
         ? ['problem_solution', 'positive_negative']
         : ['discussion', 'two_part'];
 
+  const exclude = options?.excludeIds;
   const primary = prompts.filter((p) => preferredTypes.includes(p.essayType));
   const fallback = prompts.filter((p) => !preferredTypes.includes(p.essayType));
-  return [...primary, ...fallback].slice(0, count);
+
+  const orderBucket = (bucket: WritingTask2Prompt[], salt: number): WritingTask2Prompt[] => {
+    const fresh = exclude ? bucket.filter((p) => !exclude.has(p.id)) : bucket;
+    const seen = exclude ? bucket.filter((p) => exclude.has(p.id)) : [];
+    if (options?.seed === undefined) {
+      return [...fresh, ...seen];
+    }
+    return [
+      ...seededShuffle(fresh, options.seed ^ salt),
+      ...seededShuffle(seen, (options.seed ^ salt) + 131),
+    ];
+  };
+
+  return [...orderBucket(primary, 0x243f6a88), ...orderBucket(fallback, 0x85a308d3)].slice(0, count);
 }
 
 // ---------------------------------------------------------------------------
