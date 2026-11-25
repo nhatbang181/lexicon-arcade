@@ -536,7 +536,7 @@ export const PortfolioScreen: React.FC = () => {
             style={{
               backgroundColor: filter === key ? 'var(--color-writing)' : 'var(--color-surface)',
               borderColor: 'var(--color-border)',
-              color: filter === key ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
+              color: filter === key ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
             }}
           >
             {label}
@@ -724,23 +724,30 @@ export const PortfolioScreen: React.FC = () => {
                     >
                       Điểm thi thật / giám khảo chấm:
                     </label>
-                    <select
-                      id={`official-band-${essay.id}`}
-                      value={officialInput}
-                      onChange={(e) => setOfficialInput(e.target.value)}
-                      className="min-h-[44px] text-xs font-mono px-3 py-2 rounded-[var(--radius-sm)] border"
-                      style={{
-                        backgroundColor: 'var(--color-surface)',
-                        borderColor: 'var(--color-border)',
-                        color: 'var(--color-text)',
-                      }}
-                    >
-                      {BAND_OPTIONS.map((b) => (
-                        <option key={b} value={b.toFixed(1)}>
-                          Band {b.toFixed(1)}
-                        </option>
-                      ))}
-                    </select>
+                    <div className="relative inline-flex items-center">
+                      <select
+                        id={`official-band-${essay.id}`}
+                        value={officialInput}
+                        onChange={(e) => setOfficialInput(e.target.value)}
+                        className="appearance-none min-h-[44px] text-xs font-mono pl-3 pr-9 py-2 rounded-[var(--radius-sm)] border cursor-pointer"
+                        style={{
+                          backgroundColor: 'var(--color-surface)',
+                          borderColor: 'var(--color-border)',
+                          color: 'var(--color-text)',
+                        }}
+                      >
+                        {BAND_OPTIONS.map((b) => (
+                          <option key={b} value={b.toFixed(1)}>
+                            Band {b.toFixed(1)}
+                          </option>
+                        ))}
+                      </select>
+                      <ChevronDown
+                        className="w-4 h-4 pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2"
+                        style={{ color: 'var(--color-text-dim)' }}
+                        aria-hidden="true"
+                      />
+                    </div>
                     <Button
                       variant="primary"
                       skill="writing"

@@ -8,6 +8,7 @@ import {
   BookOpen,
   Check,
   CheckCircle2,
+  ChevronDown,
   Clock,
   Eye,
   EyeOff,
@@ -1173,7 +1174,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                 className="min-h-[44px] px-4 py-2 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
                 style={{
                   backgroundColor: taskType === 'task2' ? 'var(--color-writing)' : 'transparent',
-                  color: taskType === 'task2' ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
+                  color: taskType === 'task2' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                 }}
               >
                 Task 2 · Essay ({task2Prompts.length})
@@ -1187,7 +1188,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                 className="min-h-[44px] px-4 py-2 rounded-[var(--radius-sm)] text-sm font-semibold cursor-pointer transition-colors"
                 style={{
                   backgroundColor: taskType === 'task1' ? 'var(--color-writing)' : 'transparent',
-                  color: taskType === 'task1' ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
+                  color: taskType === 'task1' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                 }}
               >
                 Task 1 · Visual ({task1Entries.length})
@@ -1227,7 +1228,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                   style={{
                     backgroundColor: essayTypeFilter === 'all' ? 'var(--color-writing)' : 'var(--color-surface-2)',
                     borderColor: 'var(--color-border)',
-                    color: essayTypeFilter === 'all' ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
+                    color: essayTypeFilter === 'all' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                   }}
                 >
                   Tất cả dạng
@@ -1241,7 +1242,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                     style={{
                       backgroundColor: essayTypeFilter === et ? 'var(--color-writing)' : 'var(--color-surface-2)',
                       borderColor: 'var(--color-border)',
-                      color: essayTypeFilter === et ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
+                      color: essayTypeFilter === et ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                     }}
                   >
                     {ESSAY_TYPE_LABELS[et]}
@@ -1257,7 +1258,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                   style={{
                     backgroundColor: chartKindFilter === 'all' ? 'var(--color-writing)' : 'var(--color-surface-2)',
                     borderColor: 'var(--color-border)',
-                    color: chartKindFilter === 'all' ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
+                    color: chartKindFilter === 'all' ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                   }}
                 >
                   Tất cả biểu đồ
@@ -1271,7 +1272,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                     style={{
                       backgroundColor: chartKindFilter === ck ? 'var(--color-writing)' : 'var(--color-surface-2)',
                       borderColor: 'var(--color-border)',
-                      color: chartKindFilter === ck ? 'var(--color-on-accent, var(--color-bg))' : 'var(--color-text-dim)',
+                      color: chartKindFilter === ck ? 'var(--color-on-accent, #0f172a)' : 'var(--color-text-dim)',
                     }}
                   >
                     {CHART_KIND_LABELS[ck]}
@@ -1281,24 +1282,31 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
             )}
 
             <div className="w-full sm:w-auto sm:ml-auto flex flex-wrap items-center gap-3">
-              <select
-                value={topicFilter}
-                onChange={(e) => setTopicFilter(e.target.value as Topic | 'all')}
-                className="min-h-[44px] w-full sm:w-auto text-xs px-3 py-2 rounded-[var(--radius-sm)] border"
-                style={{
-                  backgroundColor: 'var(--color-surface-2)',
-                  borderColor: 'var(--color-border)',
-                  color: 'var(--color-text)',
-                }}
-                aria-label="Lọc theo chủ đề"
-              >
-                <option value="all">Mọi chủ đề</option>
-                {availableTopics.map((t) => (
-                  <option key={t} value={t}>
-                    {t}
-                  </option>
-                ))}
-              </select>
+              <div className="relative w-full sm:w-auto">
+                <select
+                  value={topicFilter}
+                  onChange={(e) => setTopicFilter(e.target.value as Topic | 'all')}
+                  className="appearance-none min-h-[44px] w-full sm:w-auto text-xs pl-3 pr-9 py-2 rounded-[var(--radius-sm)] border cursor-pointer"
+                  style={{
+                    backgroundColor: 'var(--color-surface-2)',
+                    borderColor: 'var(--color-border)',
+                    color: 'var(--color-text)',
+                  }}
+                  aria-label="Lọc theo chủ đề"
+                >
+                  <option value="all">Mọi chủ đề</option>
+                  {availableTopics.map((t) => (
+                    <option key={t} value={t}>
+                      {t}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown
+                  className="w-4 h-4 pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2"
+                  style={{ color: 'var(--color-text-dim)' }}
+                  aria-hidden="true"
+                />
+              </div>
 
               <div className="relative w-full sm:w-auto">
                 <Search
