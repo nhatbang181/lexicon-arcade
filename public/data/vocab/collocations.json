@@ -38,7 +38,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:impact_a_detrimental_impact_on",
@@ -79,7 +80,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:impact_mitigate_the_impact_of",
@@ -120,7 +122,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:impact_assess_the_impact_of",
@@ -161,7 +164,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:impact_leave_a_lasting_impact_on",
@@ -201,7 +205,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:impact_an_negligible_impact_on",
@@ -241,7 +246,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:effect_have_a_detrimental_effect_on",
@@ -281,7 +287,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:effect_a_ripple_effect",
@@ -321,7 +328,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:effect_counteract_the_effects_of",
@@ -361,7 +369,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:effect_a_profound_effect_on",
@@ -401,7 +410,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:effect_come_into_effect",
@@ -440,7 +450,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:effect_a_cumulative_effect_on",
@@ -479,7 +490,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:influence_exert_an_influence_on",
@@ -519,7 +531,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:influence_a_profound_influence_on",
@@ -559,7 +572,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:influence_a_corrupting_influence_on",
@@ -599,7 +613,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:influence_fall_under_the_influence_of",
@@ -638,7 +653,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:influence_undue_influence",
@@ -678,7 +694,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:influence_curb_the_influence_of",
@@ -718,7 +735,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:issue_address_a_pressing_issue",
@@ -758,7 +776,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:issue_a_contentious_issue",
@@ -798,7 +817,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:issue_raise_an_issue",
@@ -838,7 +858,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:issue_an_underlying_issue",
@@ -878,7 +899,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:issue_overlook_the_issue_of",
@@ -918,7 +940,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:issue_a_multifaceted_issue",
@@ -958,7 +981,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:problem_tackle_a_problem",
@@ -998,7 +1022,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:problem_exacerbate_a_problem",
@@ -1038,7 +1063,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:problem_an_acute_problem",
@@ -1078,7 +1104,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:problem_identify_the_root_cause_of_a_problem",
@@ -1118,7 +1145,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:problem_a_chronic_problem",
@@ -1158,7 +1186,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:problem_alleviate_a_problem",
@@ -1198,7 +1227,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:solution_a_viable_solution_to",
@@ -1239,7 +1269,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:solution_a_long_term_solution",
@@ -1280,7 +1311,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:solution_devise_a_solution_to",
@@ -1320,7 +1352,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:solution_a_cost_effective_solution",
@@ -1360,7 +1393,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:solution_a_quick_fix_solution",
@@ -1400,7 +1434,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:solution_a_holistic_solution",
@@ -1440,7 +1475,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:measure_implement_stringent_measures_to",
@@ -1481,7 +1517,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:measure_preventive_measures",
@@ -1521,7 +1558,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:measure_drastic_measures",
@@ -1561,7 +1599,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:measure_take_effective_measures_against",
@@ -1601,7 +1640,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:measure_stopgap_measures",
@@ -1641,7 +1681,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:measure_austerity_measures",
@@ -1681,7 +1722,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:policy_implement_a_policy",
@@ -1722,7 +1764,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:policy_formulate_a_policy",
@@ -1763,7 +1806,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:policy_a_coherent_policy",
@@ -1803,7 +1847,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:policy_reverse_a_policy",
@@ -1843,7 +1888,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:policy_fiscal_policy",
@@ -1883,7 +1929,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:policy_a_short_sighted_policy",
@@ -1923,7 +1970,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:approach_a_holistic_approach_to",
@@ -1963,7 +2011,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:approach_adopt_an_approach",
@@ -2003,7 +2052,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:approach_a_pragmatic_approach_to",
@@ -2043,7 +2093,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:approach_a_one_size_fits_all_approach",
@@ -2083,7 +2134,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:approach_a_proactive_approach_to",
@@ -2123,7 +2175,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:approach_a_multidisciplinary_approach",
@@ -2163,7 +2216,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:factor_a_decisive_factor_in",
@@ -2204,7 +2258,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:factor_a_contributing_factor",
@@ -2244,7 +2299,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:factor_a_determining_factor",
@@ -2284,7 +2340,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:factor_take_key_factors_into_account",
@@ -2323,7 +2380,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:factor_socio_economic_factors",
@@ -2363,7 +2421,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:factor_a_mitigating_factor",
@@ -2402,7 +2461,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:role_play_a_pivotal_role_in",
@@ -2442,7 +2502,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:role_a_vital_role_in",
@@ -2483,7 +2544,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:role_a_supporting_role",
@@ -2523,7 +2585,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:role_undermine_the_role_of",
@@ -2563,7 +2626,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:role_assume_a_leading_role_in",
@@ -2603,7 +2667,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:role_a_catalytic_role_in",
@@ -2642,7 +2707,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:benefit_reap_the_benefits_of",
@@ -2682,7 +2748,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:benefit_tangible_benefits",
@@ -2722,7 +2789,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:benefit_weigh_the_benefits_against_the_drawbacks",
@@ -2761,7 +2829,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:benefit_mutual_benefits",
@@ -2801,7 +2870,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:benefit_outweigh_the_drawbacks",
@@ -2840,7 +2910,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:benefit_far_reaching_benefits",
@@ -2880,7 +2951,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:drawback_a_major_drawback_of",
@@ -2921,7 +2993,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:drawback_an_inherent_drawback",
@@ -2961,7 +3034,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:drawback_overcome_a_drawback",
@@ -3001,7 +3075,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:drawback_outweigh_the_drawbacks_of",
@@ -3040,7 +3115,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:drawback_a_glaring_drawback",
@@ -3080,7 +3156,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:drawback_overlook_the_potential_drawbacks",
@@ -3120,7 +3197,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:risk_pose_a_serious_risk_to",
@@ -3160,7 +3238,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:risk_mitigate_the_risk_of",
@@ -3200,7 +3279,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:risk_run_the_risk_of",
@@ -3239,7 +3319,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:risk_a_calculated_risk",
@@ -3278,7 +3359,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:risk_outweigh_a_risk",
@@ -3317,7 +3399,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:risk_an_unacceptable_risk",
@@ -3357,7 +3440,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:demand_growing_demand_for",
@@ -3398,7 +3482,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:demand_meet_the_demand_for",
@@ -3438,7 +3523,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:demand_unprecedented_demand_for",
@@ -3478,7 +3564,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:demand_curb_demand",
@@ -3518,7 +3605,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:demand_stimulate_demand",
@@ -3558,7 +3646,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:demand_peak_demand",
@@ -3598,7 +3687,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:pressure_place_immense_pressure_on",
@@ -3638,7 +3728,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:pressure_alleviate_the_pressure_on",
@@ -3678,7 +3769,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:pressure_mounting_pressure",
@@ -3719,7 +3811,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:pressure_buckle_under_pressure",
@@ -3759,7 +3852,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:pressure_peer_pressure",
@@ -3799,7 +3893,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:pressure_yield_to_public_pressure",
@@ -3839,7 +3934,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:awareness_raise_public_awareness_of",
@@ -3879,7 +3975,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:awareness_growing_awareness_of",
@@ -3919,7 +4016,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:awareness_foster_awareness_among",
@@ -3959,7 +4057,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:awareness_a_lack_of_awareness",
@@ -3999,7 +4098,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:awareness_environmental_awareness",
@@ -4039,7 +4139,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:awareness_acute_awareness",
@@ -4079,7 +4180,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:attitude_shape_public_attitudes_towards",
@@ -4119,7 +4221,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:attitude_an_ingrained_attitude_towards",
@@ -4159,7 +4262,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:attitude_adopt_a_positive_attitude",
@@ -4199,7 +4303,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:attitude_challenge_prevailing_attitudes",
@@ -4239,7 +4344,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:attitude_a_complacent_attitude",
@@ -4279,7 +4385,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:attitude_a_dismissive_attitude",
@@ -4319,7 +4426,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:behaviour_modify_consumer_behaviour",
@@ -4360,7 +4468,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:behaviour_antisocial_behaviour",
@@ -4400,7 +4509,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:behaviour_sedentary_behaviour",
@@ -4439,7 +4549,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:behaviour_encourage_responsible_behaviour",
@@ -4479,7 +4590,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:behaviour_deter_reckless_behaviour",
@@ -4519,7 +4631,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:behaviour_erratic_behaviour",
@@ -4559,7 +4672,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:development_sustainable_development",
@@ -4599,7 +4713,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:development_hinder_economic_development",
@@ -4640,7 +4755,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:development_spur_regional_development",
@@ -4681,7 +4797,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:development_cognitive_development",
@@ -4721,7 +4838,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:development_unchecked_development",
@@ -4761,7 +4879,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:development_groundbreaking_development",
@@ -4801,7 +4920,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:growth_sustained_economic_growth",
@@ -4841,7 +4961,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:growth_stimulate_growth",
@@ -4882,7 +5003,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:growth_exponential_growth",
@@ -4922,7 +5044,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:growth_stifle_growth",
@@ -4962,7 +5085,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:growth_sluggish_growth",
@@ -5002,7 +5126,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:growth_inclusive_growth",
@@ -5042,7 +5167,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:decline_a_sharp_decline_in",
@@ -5083,7 +5209,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:decline_halt_the_decline_of",
@@ -5124,7 +5251,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:decline_a_steady_decline_in",
@@ -5164,7 +5292,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:decline_experience_a_decline_in",
@@ -5205,7 +5334,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:decline_terminal_decline",
@@ -5245,7 +5375,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:decline_accelerate_the_decline_in",
@@ -5285,7 +5416,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:trend_a_growing_trend_towards",
@@ -5326,7 +5458,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:trend_reverse_a_trend",
@@ -5366,7 +5499,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:trend_a_worrying_trend",
@@ -5406,7 +5540,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:trend_set_a_trend",
@@ -5446,7 +5581,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:trend_an_irreversible_trend",
@@ -5486,7 +5622,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:trend_reflect_current_trends",
@@ -5526,7 +5663,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:access_equitable_access_to",
@@ -5567,7 +5705,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:access_widen_access_to",
@@ -5607,7 +5746,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:access_restrict_access_to",
@@ -5648,7 +5788,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:access_gain_access_to",
@@ -5688,7 +5829,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:access_unfettered_access_to",
@@ -5728,7 +5870,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:access_facilitate_access_to",
@@ -5768,7 +5911,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:opportunity_seize_an_opportunity",
@@ -5808,7 +5952,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:opportunity_equal_opportunities",
@@ -5848,7 +5993,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:opportunity_create_opportunities_for",
@@ -5888,7 +6034,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:opportunity_a_golden_opportunity",
@@ -5929,7 +6076,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:opportunity_squander_a_valuable_opportunity",
@@ -5969,7 +6117,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:opportunity_employment_opportunities",
@@ -6009,7 +6158,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:responsibility_shoulder_responsibility_for",
@@ -6050,7 +6200,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:responsibility_shirk_responsibility",
@@ -6090,7 +6241,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:responsibility_collective_responsibility",
@@ -6130,7 +6282,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:responsibility_a_sense_of_responsibility",
@@ -6169,7 +6322,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:responsibility_civic_responsibility",
@@ -6209,7 +6363,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:responsibility_shift_responsibility_onto",
@@ -6249,7 +6404,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consequence_far_reaching_consequences",
@@ -6289,7 +6445,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consequence_unintended_consequences",
@@ -6329,7 +6486,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consequence_face_the_consequences_of",
@@ -6369,7 +6527,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consequence_catastrophic_consequences",
@@ -6410,7 +6569,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consequence_mitigate_the_consequences_of",
@@ -6450,7 +6610,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:consequence_have_serious_consequences_for",
@@ -6490,7 +6651,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:evidence_compelling_evidence",
@@ -6531,7 +6693,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:evidence_empirical_evidence",
@@ -6572,7 +6735,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:evidence_anecdotal_evidence",
@@ -6612,7 +6776,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:evidence_gather_evidence",
@@ -6653,7 +6818,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:evidence_corroborate_the_evidence",
@@ -6693,7 +6859,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:evidence_mounting_evidence",
@@ -6733,7 +6900,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:research_conduct_research_into",
@@ -6773,7 +6941,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:research_groundbreaking_research",
@@ -6813,7 +6982,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:research_extensive_research",
@@ -6854,7 +7024,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:research_fund_research",
@@ -6894,7 +7065,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:research_longitudinal_research",
@@ -6934,7 +7106,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:research_disseminate_research_findings",
@@ -6974,7 +7147,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:knowledge_acquire_knowledge",
@@ -7014,7 +7188,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:knowledge_impart_knowledge",
@@ -7054,7 +7229,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:knowledge_in_depth_knowledge",
@@ -7095,7 +7271,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:knowledge_practical_knowledge",
@@ -7135,7 +7312,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:knowledge_broaden_one_s_knowledge",
@@ -7175,7 +7353,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:knowledge_knowledge_economy",
@@ -7215,7 +7394,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:skill_acquire_essential_skills",
@@ -7256,7 +7436,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:skill_transferable_skills",
@@ -7296,7 +7477,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:skill_interpersonal_skills",
@@ -7336,7 +7518,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:skill_hone_one_s_skills",
@@ -7376,7 +7559,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:skill_vocational_skills",
@@ -7416,7 +7600,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:skill_skills_shortage",
@@ -7456,7 +7641,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:education_tertiary_education",
@@ -7496,7 +7682,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:education_compulsory_education",
@@ -7535,7 +7722,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:education_vocational_education",
@@ -7575,7 +7763,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:education_a_well_rounded_education",
@@ -7615,7 +7804,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:education_invest_in_education",
@@ -7654,7 +7844,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:education_overhaul_the_education_system",
@@ -7694,7 +7885,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:crime_commit_a_crime",
@@ -7733,7 +7925,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:crime_deter_crime",
@@ -7773,7 +7966,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crime_juvenile_crime",
@@ -7812,7 +8006,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crime_petty_crime",
@@ -7852,7 +8047,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crime_combat_crime",
@@ -7892,7 +8088,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crime_the_crime_rate",
@@ -7932,7 +8129,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:pollution_curb_pollution",
@@ -7973,7 +8171,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:pollution_severe_pollution",
@@ -8013,7 +8212,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:pollution_noise_pollution",
@@ -8054,7 +8254,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:pollution_generate_pollution",
@@ -8094,7 +8295,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:pollution_pollution_levels",
@@ -8134,7 +8336,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:pollution_tackle_pollution_at_its_source",
@@ -8174,7 +8377,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:resource_allocate_resources",
@@ -8214,7 +8418,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:resource_finite_resources",
@@ -8254,7 +8459,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:resource_deplete_natural_resources",
@@ -8294,7 +8500,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:resource_squander_resources",
@@ -8334,7 +8541,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:resource_conserve_resources",
@@ -8374,7 +8582,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:resource_pool_resources",
@@ -8414,7 +8623,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:economy_boost_the_economy",
@@ -8455,7 +8665,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:economy_a_thriving_economy",
@@ -8496,7 +8707,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:economy_a_stagnant_economy",
@@ -8536,7 +8748,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:economy_diversify_the_economy",
@@ -8576,7 +8789,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:economy_a_circular_economy",
@@ -8616,7 +8830,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:economy_cripple_the_economy",
@@ -8656,7 +8871,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:technology_cutting_edge_technology",
@@ -8696,7 +8912,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:technology_harness_technology",
@@ -8736,7 +8953,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:technology_embrace_new_technology",
@@ -8776,7 +8994,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:technology_disruptive_technology",
@@ -8816,7 +9035,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:technology_obsolete_technology",
@@ -8856,7 +9076,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:technology_over_reliance_on_technology",
@@ -8895,7 +9116,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:health_mental_health",
@@ -8935,7 +9157,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:health_jeopardise_one_s_health",
@@ -8976,7 +9199,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:health_public_health",
@@ -9016,7 +9240,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:health_safeguard_public_health",
@@ -9056,7 +9281,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:health_deteriorating_health",
@@ -9096,7 +9322,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:health_detrimental_to_health",
@@ -9136,7 +9363,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curriculum_the_national_curriculum",
@@ -9175,7 +9403,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:curriculum_revise_the_curriculum",
@@ -9215,7 +9444,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curriculum_a_broad_curriculum",
@@ -9254,7 +9484,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curriculum_integrate_coding_into_the_curriculum",
@@ -9293,7 +9524,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:curriculum_an_outdated_curriculum",
@@ -9332,7 +9564,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:curriculum_narrow_the_curriculum",
@@ -9370,7 +9603,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:infrastructure_ageing_infrastructure",
@@ -9410,7 +9644,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:infrastructure_upgrade_infrastructure",
@@ -9450,7 +9685,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:infrastructure_transport_infrastructure",
@@ -9491,7 +9727,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:infrastructure_resilient_infrastructure",
@@ -9531,7 +9768,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:infrastructure_strain_infrastructure",
@@ -9571,7 +9809,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:infrastructure_inadequate_infrastructure",
@@ -9611,7 +9850,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:investment_substantial_investment_in",
@@ -9652,7 +9892,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:investment_attract_foreign_investment",
@@ -9692,7 +9933,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:investment_long_term_investment",
@@ -9732,7 +9974,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:investment_deter_investment",
@@ -9772,7 +10015,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:investment_yield_a_return_on_investment",
@@ -9812,7 +10056,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:investment_channel_investment_into",
@@ -9852,7 +10097,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:funding_allocate_funding_to",
@@ -9892,7 +10138,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:funding_secure_funding",
@@ -9932,7 +10179,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:funding_slash_funding_for",
@@ -9973,7 +10221,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:funding_adequate_funding",
@@ -10013,7 +10262,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:funding_public_funding",
@@ -10054,7 +10304,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:funding_earmarked_funding",
@@ -10094,7 +10345,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:subsidy_grant_subsidies_to",
@@ -10135,7 +10387,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:subsidy_phase_out_fossil_fuel_subsidies",
@@ -10176,7 +10429,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:subsidy_agricultural_subsidies",
@@ -10217,7 +10471,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:subsidy_rely_on_subsidies",
@@ -10256,7 +10511,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:subsidy_generous_subsidies",
@@ -10296,7 +10552,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:subsidy_curtail_subsidies",
@@ -10337,7 +10594,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:regulation_stringent_regulations",
@@ -10377,7 +10635,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:regulation_comply_with_regulations",
@@ -10416,7 +10675,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:regulation_enforce_regulations",
@@ -10456,7 +10716,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:regulation_flout_regulations",
@@ -10496,7 +10757,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:regulation_tighten_regulations",
@@ -10535,7 +10797,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:regulation_relax_regulations",
@@ -10575,7 +10838,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:legislation_enact_legislation",
@@ -10615,7 +10879,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:legislation_draft_legislation",
@@ -10655,7 +10920,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:legislation_sweeping_legislation",
@@ -10695,7 +10961,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:legislation_enforce_legislation",
@@ -10735,7 +11002,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:legislation_amend_existing_legislation",
@@ -10775,7 +11043,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:legislation_tighter_legislation",
@@ -10815,7 +11084,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:poverty_alleviate_poverty",
@@ -10855,7 +11125,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:poverty_eradicate_extreme_poverty",
@@ -10895,7 +11166,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:poverty_abject_poverty",
@@ -10936,7 +11208,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:poverty_the_cycle_of_poverty",
@@ -10975,7 +11248,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:poverty_lift_people_out_of_poverty",
@@ -11014,7 +11288,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:poverty_live_below_the_poverty_line",
@@ -11053,7 +11328,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:inequality_exacerbate_inequality",
@@ -11093,7 +11369,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:inequality_narrow_inequality",
@@ -11134,7 +11411,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:inequality_income_inequality",
@@ -11175,7 +11453,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:inequality_stark_inequality",
@@ -11216,7 +11495,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:inequality_systemic_inequality",
@@ -11256,7 +11536,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:inequality_perpetuate_inequality",
@@ -11296,7 +11577,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:unemployment_youth_unemployment",
@@ -11336,7 +11618,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:unemployment_curb_unemployment",
@@ -11377,7 +11660,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:unemployment_structural_unemployment",
@@ -11417,7 +11701,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:unemployment_the_unemployment_rate",
@@ -11456,7 +11741,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:unemployment_lead_to_unemployment",
@@ -11495,7 +11781,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:unemployment_soaring_unemployment",
@@ -11535,7 +11822,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:productivity_boost_productivity",
@@ -11576,7 +11864,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:productivity_hamper_productivity",
@@ -11617,7 +11906,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:productivity_labour_productivity",
@@ -11657,7 +11947,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:productivity_productivity_gains",
@@ -11696,7 +11987,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:productivity_stagnant_productivity",
@@ -11736,7 +12028,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:productivity_maximise_productivity",
@@ -11775,7 +12068,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:innovation_foster_innovation",
@@ -11816,7 +12110,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:innovation_stifle_innovation",
@@ -11857,7 +12152,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:innovation_technological_innovation",
@@ -11897,7 +12193,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:innovation_a_hub_of_innovation",
@@ -11937,7 +12234,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:innovation_grassroots_innovation",
@@ -11977,7 +12275,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:innovation_embrace_innovation",
@@ -12017,7 +12316,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:efficiency_energy_efficiency",
@@ -12058,7 +12358,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:efficiency_enhance_efficiency",
@@ -12099,7 +12400,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:efficiency_compromise_efficiency",
@@ -12139,7 +12441,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:efficiency_greater_efficiency",
@@ -12180,7 +12483,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:efficiency_efficiency_gains",
@@ -12219,7 +12523,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:efficiency_operate_at_peak_efficiency",
@@ -12259,7 +12564,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:sustainability_environmental_sustainability",
@@ -12299,7 +12605,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:sustainability_promote_sustainability",
@@ -12340,7 +12647,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:sustainability_undermine_sustainability",
@@ -12380,7 +12688,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:sustainability_fiscal_sustainability",
@@ -12420,7 +12729,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:sustainability_prioritise_sustainability",
@@ -12460,7 +12770,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:sustainability_a_commitment_to_sustainability",
@@ -12499,7 +12810,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:biodiversity_biodiversity_loss",
@@ -12539,7 +12851,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:biodiversity_preserve_biodiversity",
@@ -12580,7 +12893,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:biodiversity_threaten_biodiversity",
@@ -12621,7 +12935,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:biodiversity_marine_biodiversity",
@@ -12662,7 +12977,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:biodiversity_restore_biodiversity",
@@ -12702,7 +13018,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:biodiversity_biodiversity_hotspot",
@@ -12741,7 +13058,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:conservation_wildlife_conservation",
@@ -12782,7 +13100,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:conservation_conservation_efforts",
@@ -12822,7 +13141,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:conservation_fund_conservation",
@@ -12862,7 +13182,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:conservation_conservation_programmes",
@@ -12902,7 +13223,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:conservation_conservation_of_energy",
@@ -12941,7 +13263,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:conservation_habitat_conservation",
@@ -12981,7 +13304,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:emission_curb_carbon_emissions",
@@ -13022,7 +13346,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:emission_greenhouse_gas_emissions",
@@ -13062,7 +13387,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:emission_emission_targets",
@@ -13102,7 +13428,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:emission_emission_standards",
@@ -13142,7 +13469,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:emission_offset_emissions",
@@ -13182,7 +13510,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:emission_zero_emissions",
@@ -13222,7 +13551,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:energy_renewable_energy",
@@ -13263,7 +13593,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:energy_harness_energy",
@@ -13303,7 +13634,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:energy_conserve_energy",
@@ -13342,7 +13674,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:energy_energy_consumption",
@@ -13382,7 +13715,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:energy_energy_security",
@@ -13421,7 +13755,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:energy_energy_transition",
@@ -13461,7 +13796,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:climate_combat_climate_change",
@@ -13502,7 +13838,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:climate_harsh_climate",
@@ -13543,7 +13880,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:climate_the_current_economic_climate",
@@ -13583,7 +13921,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:climate_climate_resilience",
@@ -13623,7 +13962,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:climate_climate_crisis",
@@ -13663,7 +14003,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:climate_adapt_to_a_changing_climate",
@@ -13702,7 +14043,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:congestion_alleviate_traffic_congestion",
@@ -13743,7 +14085,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:congestion_severe_congestion",
@@ -13784,7 +14127,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:congestion_a_congestion_charge",
@@ -13824,7 +14168,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:congestion_exacerbate_congestion",
@@ -13864,7 +14209,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:congestion_peak_hour_congestion",
@@ -13904,7 +14250,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:congestion_tackle_congestion",
@@ -13944,7 +14291,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:urbanisation_rapid_urbanisation",
@@ -13985,7 +14333,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:urbanisation_the_pace_of_urbanisation",
@@ -14025,7 +14374,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:urbanisation_manage_urbanisation",
@@ -14065,7 +14415,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:urbanisation_driven_by_urbanisation",
@@ -14105,7 +14456,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:urbanisation_sustainable_urbanisation",
@@ -14145,7 +14497,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:urbanisation_the_consequences_of_urbanisation",
@@ -14185,7 +14538,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:globalisation_the_advent_of_globalisation",
@@ -14225,7 +14579,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:globalisation_benefit_from_globalisation",
@@ -14265,7 +14620,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:globalisation_economic_globalisation",
@@ -14305,7 +14661,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:globalisation_a_backlash_against_globalisation",
@@ -14345,7 +14702,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:globalisation_accelerated_by_globalisation",
@@ -14385,7 +14743,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:globalisation_the_homogenising_effect_of_globalisation",
@@ -14425,7 +14784,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:migration_rural_to_urban_migration",
@@ -14465,7 +14825,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:migration_mass_migration",
@@ -14505,7 +14866,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:migration_stem_migration",
@@ -14546,7 +14908,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:migration_migration_patterns",
@@ -14586,7 +14949,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:migration_skilled_migration",
@@ -14626,7 +14990,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:migration_fuel_migration",
@@ -14667,7 +15032,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:diversity_cultural_diversity",
@@ -14708,7 +15074,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:diversity_embrace_diversity",
@@ -14749,7 +15116,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:diversity_preserve_diversity",
@@ -14789,7 +15157,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:diversity_erode_diversity",
@@ -14829,7 +15198,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:diversity_a_lack_of_diversity",
@@ -14868,7 +15238,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:diversity_rich_diversity",
@@ -14908,7 +15279,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:heritage_cultural_heritage",
@@ -14949,7 +15321,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:heritage_preserve_heritage",
@@ -14989,7 +15362,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:heritage_heritage_sites",
@@ -15029,7 +15403,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:heritage_intangible_heritage",
@@ -15069,7 +15444,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:heritage_erode_cultural_heritage",
@@ -15109,7 +15485,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:heritage_cherish_one_s_heritage",
@@ -15149,7 +15526,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:privacy_invade_one_s_privacy",
@@ -15190,7 +15568,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:privacy_safeguard_user_privacy",
@@ -15230,7 +15609,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:privacy_data_privacy",
@@ -15271,7 +15651,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:privacy_privacy_concerns",
@@ -15311,7 +15692,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:privacy_compromise_privacy",
@@ -15351,7 +15733,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:privacy_a_privacy_breach",
@@ -15391,7 +15774,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:security_job_security",
@@ -15433,7 +15817,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:security_bolster_security",
@@ -15474,7 +15859,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:security_jeopardise_security",
@@ -15515,7 +15901,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:security_food_security",
@@ -15555,7 +15942,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:security_security_measures",
@@ -15595,7 +15983,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:security_a_false_sense_of_security",
@@ -15634,7 +16023,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:misinformation_combat_misinformation",
@@ -15675,7 +16065,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:misinformation_spread_misinformation",
@@ -15716,7 +16107,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:misinformation_rampant_misinformation",
@@ -15757,7 +16149,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:misinformation_the_proliferation_of_misinformation",
@@ -15797,7 +16190,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:misinformation_fall_prey_to_misinformation",
@@ -15836,7 +16230,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:misinformation_debunk_misinformation",
@@ -15876,7 +16271,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:censorship_impose_censorship",
@@ -15916,7 +16312,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:censorship_strict_censorship",
@@ -15957,7 +16354,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:censorship_evade_censorship",
@@ -15997,7 +16395,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:censorship_self_censorship",
@@ -16037,7 +16436,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:censorship_amount_to_censorship",
@@ -16076,7 +16476,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:censorship_lift_censorship",
@@ -16116,7 +16517,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:obesity_childhood_obesity",
@@ -16157,7 +16559,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:obesity_tackle_obesity",
@@ -16198,7 +16601,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:obesity_the_obesity_epidemic",
@@ -16237,7 +16641,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:obesity_contribute_to_obesity",
@@ -16276,7 +16681,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:obesity_obesity_rates",
@@ -16315,7 +16721,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:obesity_fuel_obesity",
@@ -16355,7 +16762,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:nutrition_adequate_nutrition",
@@ -16396,7 +16804,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:nutrition_poor_nutrition",
@@ -16436,7 +16845,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:nutrition_nutrition_standards",
@@ -16476,7 +16886,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:nutrition_nutrition_education",
@@ -16516,7 +16927,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:nutrition_improve_nutrition",
@@ -16556,7 +16968,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:nutrition_nutrition_labelling",
@@ -16596,7 +17009,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:treatment_medical_treatment",
@@ -16637,7 +17051,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:treatment_undergo_treatment",
@@ -16677,7 +17092,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:treatment_equal_treatment",
@@ -16718,7 +17134,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:treatment_respond_to_treatment",
@@ -16757,7 +17174,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:treatment_treatment_options",
@@ -16797,7 +17215,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:treatment_humane_treatment",
@@ -16837,7 +17256,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:prevention_disease_prevention",
@@ -16878,7 +17298,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:prevention_prevention_strategies",
@@ -16917,7 +17338,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:prevention_focus_on_prevention",
@@ -16957,7 +17379,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:prevention_prevention_programmes",
@@ -16996,7 +17419,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:prevention_invest_in_prevention",
@@ -17035,7 +17459,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:prevention_prevention_is_better_than_cure",
@@ -17074,7 +17499,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:well_being_mental_well_being",
@@ -17115,7 +17541,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:well_being_promote_well_being",
@@ -17156,7 +17583,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:well_being_undermine_well_being",
@@ -17197,7 +17625,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:well_being_overall_well_being",
@@ -17237,7 +17666,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:well_being_employee_well_being",
@@ -17277,7 +17707,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:well_being_contribute_to_well_being",
@@ -17316,7 +17747,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:stress_chronic_stress",
@@ -17357,7 +17789,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:stress_alleviate_stress",
@@ -17398,7 +17831,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:stress_cope_with_stress",
@@ -17438,7 +17872,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:stress_trigger_stress",
@@ -17478,7 +17913,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:stress_stress_levels",
@@ -17517,7 +17953,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:stress_work_related_stress",
@@ -17557,7 +17994,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:habit_cultivate_a_habit",
@@ -17598,7 +18036,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:habit_break_a_habit",
@@ -17638,7 +18077,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:habit_ingrained_habits",
@@ -17678,7 +18118,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:habit_sedentary_habits",
@@ -17719,7 +18160,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:habit_lifelong_habits",
@@ -17759,7 +18201,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:habit_curb_bad_habits",
@@ -17799,7 +18242,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:discipline_maintain_discipline",
@@ -17839,7 +18283,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:discipline_strict_discipline",
@@ -17879,7 +18324,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:discipline_self_discipline",
@@ -17919,7 +18365,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:discipline_instil_discipline",
@@ -17959,7 +18406,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:discipline_an_academic_discipline",
@@ -17999,7 +18447,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:discipline_impose_discipline",
@@ -18038,7 +18487,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:standard_raise_living_standards",
@@ -18079,7 +18529,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:standard_meet_strict_standards",
@@ -18120,7 +18571,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:standard_set_standards",
@@ -18160,7 +18612,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:standard_rigorous_standards",
@@ -18201,7 +18654,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:standard_lower_standards",
@@ -18241,7 +18695,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:standard_a_high_standard_of_living",
@@ -18279,7 +18734,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:quality_the_quality_of_life",
@@ -18318,7 +18774,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:quality_enhance_the_quality_of",
@@ -18359,7 +18816,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:quality_compromise_quality",
@@ -18399,7 +18857,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:quality_superior_quality",
@@ -18440,7 +18899,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:quality_air_quality",
@@ -18481,7 +18941,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:quality_quality_assurance",
@@ -18520,7 +18981,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:gap_bridge_the_gap_between",
@@ -18560,7 +19022,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:gap_widen_the_gap_between",
@@ -18600,7 +19063,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:gap_the_wealth_gap",
@@ -18642,7 +19106,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:gap_a_widening_gap",
@@ -18683,7 +19148,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:gap_fill_a_gap_in_the_market",
@@ -18723,7 +19189,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:gap_the_digital_divide",
@@ -18763,7 +19230,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:barrier_overcome_barriers_to",
@@ -18804,7 +19272,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:barrier_language_barriers",
@@ -18845,7 +19314,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:barrier_pose_a_barrier_to",
@@ -18886,7 +19356,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:barrier_insurmountable_barriers",
@@ -18926,7 +19397,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:barrier_lower_barriers",
@@ -18966,7 +19438,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:barrier_barriers_to_entry",
@@ -19005,7 +19478,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:challenge_confront_a_daunting_challenge",
@@ -19046,7 +19520,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:challenge_pose_a_challenge_to",
@@ -19085,7 +19560,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:challenge_a_formidable_challenge",
@@ -19126,7 +19602,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:challenge_rise_to_the_challenge",
@@ -19165,7 +19642,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:challenge_logistical_challenges",
@@ -19206,7 +19684,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:challenge_surmount_a_challenge",
@@ -19246,7 +19725,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:priority_give_top_priority_to",
@@ -19286,7 +19766,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:priority_an_urgent_priority",
@@ -19327,7 +19808,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:priority_reassess_priorities",
@@ -19368,7 +19850,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:priority_competing_priorities",
@@ -19407,7 +19890,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:priority_remain_a_priority",
@@ -19447,7 +19931,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:priority_set_priorities",
@@ -19487,7 +19972,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:incentive_financial_incentives",
@@ -19528,7 +20014,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:incentive_provide_an_incentive_to",
@@ -19568,7 +20055,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:incentive_a_strong_incentive",
@@ -19609,7 +20097,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:incentive_a_perverse_incentive",
@@ -19648,7 +20137,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:incentive_remove_incentives",
@@ -19688,7 +20178,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:incentive_respond_to_incentives",
@@ -19727,7 +20218,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:outcome_educational_outcomes",
@@ -19768,7 +20260,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:outcome_a_favourable_outcome",
@@ -19809,7 +20302,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:outcome_influence_the_outcome_of",
@@ -19850,7 +20344,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:outcome_an_inevitable_outcome",
@@ -19890,7 +20385,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:outcome_achieve_an_outcome",
@@ -19931,7 +20427,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:outcome_equitable_outcomes",
@@ -19971,7 +20468,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consensus_reach_a_consensus_on",
@@ -20012,7 +20510,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:consensus_broad_consensus",
@@ -20053,7 +20552,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consensus_scientific_consensus",
@@ -20093,7 +20593,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consensus_undermine_consensus",
@@ -20133,7 +20634,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consensus_a_lack_of_consensus",
@@ -20172,7 +20674,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:consensus_emerging_consensus",
@@ -20212,7 +20715,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:controversy_spark_controversy",
@@ -20253,7 +20757,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:controversy_fierce_controversy",
@@ -20294,7 +20799,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:controversy_surround_controversy",
@@ -20333,7 +20839,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:controversy_court_controversy",
@@ -20373,7 +20880,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:controversy_bitter_controversy",
@@ -20413,7 +20921,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:controversy_resolve_a_controversy",
@@ -20453,7 +20962,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:strategy_devise_a_strategy",
@@ -20494,7 +21004,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:strategy_a_coherent_strategy",
@@ -20535,7 +21046,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:strategy_an_effective_strategy",
@@ -20576,7 +21088,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:strategy_a_coping_strategy",
@@ -20617,7 +21130,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:strategy_pursue_a_strategy",
@@ -20657,7 +21171,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:strategy_a_two_pronged_strategy",
@@ -20697,7 +21212,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:framework_a_regulatory_framework",
@@ -20738,7 +21254,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:framework_establish_a_framework",
@@ -20779,7 +21296,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:framework_a_conceptual_framework",
@@ -20819,7 +21337,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:framework_a_robust_framework",
@@ -20859,7 +21378,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:framework_operate_within_a_framework",
@@ -20899,7 +21419,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:framework_overhaul_the_existing_framework",
@@ -20939,7 +21460,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:capacity_expand_capacity",
@@ -20980,7 +21502,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:capacity_operate_at_full_capacity",
@@ -21020,7 +21543,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:capacity_productive_capacity",
@@ -21061,7 +21585,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:capacity_exceed_capacity",
@@ -21101,7 +21626,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:capacity_capacity_building",
@@ -21140,7 +21666,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:capacity_the_capacity_to",
@@ -21179,7 +21706,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:potential_realise_one_s_full_potential",
@@ -21220,7 +21748,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:potential_unlock_the_potential_of",
@@ -21260,7 +21789,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:potential_enormous_potential",
@@ -21301,7 +21831,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:potential_have_the_potential_to",
@@ -21341,7 +21872,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:potential_economic_potential",
@@ -21382,7 +21914,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:potential_assess_the_potential_risks",
@@ -21422,7 +21955,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:prospect_career_prospects",
@@ -21462,7 +21996,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:prospect_bleak_prospects",
@@ -21502,7 +22037,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:prospect_bright_prospects",
@@ -21542,7 +22078,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:prospect_face_the_prospect_of",
@@ -21582,7 +22119,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:prospect_boost_prospects_for",
@@ -21622,7 +22160,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:prospect_diminish_the_prospect_of",
@@ -21662,7 +22201,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:crisis_an_acute_crisis",
@@ -21703,7 +22243,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crisis_avert_a_crisis",
@@ -21743,7 +22284,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crisis_trigger_a_crisis",
@@ -21783,7 +22325,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crisis_a_housing_crisis",
@@ -21824,7 +22367,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:crisis_weather_a_crisis",
@@ -21864,7 +22408,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:crisis_crisis_management",
@@ -21904,7 +22449,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:revenue_generate_revenue",
@@ -21944,7 +22490,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:revenue_tax_revenue",
@@ -21985,7 +22532,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:revenue_a_revenue_stream",
@@ -22025,7 +22573,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:revenue_divert_revenue",
@@ -22065,7 +22614,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:revenue_dwindling_revenue",
@@ -22105,7 +22655,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:revenue_erode_revenue",
@@ -22145,7 +22696,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consumption_curb_consumption",
@@ -22186,7 +22738,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consumption_excessive_consumption",
@@ -22226,7 +22779,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:consumption_fuel_consumption",
@@ -22268,7 +22822,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:consumption_conspicuous_consumption",
@@ -22308,7 +22863,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:consumption_consumption_patterns",
@@ -22348,7 +22904,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:consumption_fit_for_human_consumption",
@@ -22387,7 +22944,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:waste_electronic_waste",
@@ -22429,7 +22987,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:waste_minimise_waste",
@@ -22470,7 +23029,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:waste_dispose_of_waste",
@@ -22509,7 +23069,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:waste_waste_management",
@@ -22548,7 +23109,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:waste_generate_waste",
@@ -22587,7 +23149,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:waste_zero_waste",
@@ -22626,7 +23189,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:habitat_habitat_destruction",
@@ -22666,7 +23230,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:habitat_habitat_loss",
@@ -22706,7 +23271,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:habitat_natural_habitat",
@@ -22747,7 +23313,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:habitat_restore_habitats",
@@ -22788,7 +23355,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:habitat_habitat_fragmentation",
@@ -22827,7 +23395,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:habitat_encroach_on_natural_habitats",
@@ -22867,7 +23436,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:ecosystem_a_fragile_ecosystem",
@@ -22908,7 +23478,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:ecosystem_disrupt_an_ecosystem",
@@ -22949,7 +23520,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:ecosystem_marine_ecosystems",
@@ -22990,7 +23562,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:ecosystem_restore_ecosystems",
@@ -23030,7 +23603,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:ecosystem_ecosystem_collapse",
@@ -23069,7 +23643,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:ecosystem_ecosystem_services",
@@ -23108,7 +23683,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:transport_public_transport",
@@ -23149,7 +23725,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:transport_transport_network",
@@ -23189,7 +23766,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:transport_subsidise_public_transport",
@@ -23230,7 +23808,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:transport_transport_modes",
@@ -23269,7 +23848,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:transport_freight_transport",
@@ -23309,7 +23889,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:transport_transport_links",
@@ -23349,7 +23930,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:housing_affordable_housing",
@@ -23390,7 +23972,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:housing_a_housing_shortage",
@@ -23429,7 +24012,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:housing_housing_market",
@@ -23469,7 +24053,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:housing_substandard_housing",
@@ -23509,7 +24094,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:housing_housing_density",
@@ -23549,7 +24135,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:housing_housing_costs",
@@ -23589,7 +24176,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:employment_stable_employment",
@@ -23630,7 +24218,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:employment_employment_prospects",
@@ -23670,7 +24259,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:employment_precarious_employment",
@@ -23711,7 +24301,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:employment_seek_employment",
@@ -23751,7 +24342,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:employment_employment_opportunities",
@@ -23790,7 +24382,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:opportunity_employment_opportunities",
+    "level": 7
   },
   {
     "id": "col:employment_employment_rights",
@@ -23830,7 +24425,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:welfare_social_welfare",
@@ -23871,7 +24467,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:welfare_the_welfare_state",
@@ -23910,7 +24507,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:welfare_welfare_system",
@@ -23950,7 +24548,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:welfare_safeguard_animal_welfare",
@@ -23991,7 +24590,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:welfare_welfare_dependency",
@@ -24030,7 +24630,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:welfare_welfare_spending",
@@ -24070,7 +24671,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:literacy_digital_literacy",
@@ -24111,7 +24713,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:literacy_the_literacy_rate",
@@ -24150,7 +24753,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:literacy_promote_literacy",
@@ -24191,7 +24795,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:literacy_literacy_skills",
@@ -24230,7 +24835,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:literacy_literacy_levels",
@@ -24269,7 +24875,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:literacy_functional_literacy",
@@ -24309,7 +24916,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:address_address_the_root_causes_of",
@@ -24349,7 +24957,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:address_address_public_concerns",
@@ -24390,7 +24999,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:address_address_the_imbalance",
@@ -24431,7 +25041,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:address_address_climate_change_urgently",
@@ -24471,7 +25082,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:address_address_the_needs_of",
@@ -24511,7 +25123,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:address_adequately_address",
@@ -24552,7 +25165,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:tackle_tackle_the_problem_head_on",
@@ -24592,7 +25206,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:tackle_tackle_systemic_inequality",
@@ -24632,7 +25247,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:tackle_tackle_youth_unemployment",
@@ -24672,7 +25288,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:tackle_tackle_plastic_pollution",
@@ -24712,7 +25329,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:tackle_tackle_misinformation",
@@ -24753,7 +25371,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:tackle_tackle_crime_effectively",
@@ -24793,7 +25412,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:reduce_reduce_substantially",
@@ -24834,7 +25454,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:reduce_reduce_reliance_on",
@@ -24873,7 +25494,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:reduce_reduce_waste",
@@ -24914,7 +25536,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:reduce_reduce_the_risk_of",
@@ -24954,7 +25577,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:reduce_reduce_operating_costs",
@@ -24995,7 +25619,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:reduce_reduce_the_carbon_footprint",
@@ -25035,7 +25660,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:increase_increase_dramatically",
@@ -25076,7 +25702,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:increase_increase_access_to",
@@ -25115,7 +25742,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:increase_increase_productivity",
@@ -25156,7 +25784,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:increase_increase_the_likelihood_of",
@@ -25196,7 +25825,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:increase_increase_public_spending",
@@ -25236,7 +25866,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:increase_increase_public_awareness",
@@ -25276,7 +25907,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:raise_raise_concerns",
@@ -25317,7 +25949,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:raise_raise_awareness",
@@ -25357,7 +25990,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:raise_raise_revenue",
@@ -25398,7 +26032,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:raise_raise_the_bar",
@@ -25438,7 +26073,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:raise_raise_living_standards",
@@ -25478,7 +26114,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:standard_raise_living_standards",
+    "level": 7
   },
   {
     "id": "col:raise_raise_the_retirement_age",
@@ -25518,7 +26157,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:pose_pose_a_threat_to",
@@ -25559,7 +26199,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:pose_pose_a_challenge",
@@ -25599,7 +26240,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:pose_pose_a_serious_risk",
@@ -25640,7 +26282,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:pose_pose_ethical_questions",
@@ -25680,7 +26323,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:pose_pose_a_major_obstacle_to",
@@ -25720,7 +26364,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:pose_pose_no_harm",
@@ -25760,7 +26405,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:exert_exert_influence_over",
@@ -25800,7 +26446,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:exert_exert_pressure_on",
@@ -25839,7 +26486,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:exert_exert_a_profound_effect_on",
@@ -25879,7 +26527,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:exert_exert_considerable_effort",
@@ -25919,7 +26568,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:exert_exert_gravitational_pull",
@@ -25959,7 +26609,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:exert_exert_diplomatic_leverage",
@@ -25999,7 +26650,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:alleviate_alleviate_poverty",
@@ -26039,7 +26691,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:poverty_alleviate_poverty",
+    "level": 8
   },
   {
     "id": "col:alleviate_alleviate_traffic_congestion",
@@ -26079,7 +26734,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:congestion_alleviate_traffic_congestion",
+    "level": 8
   },
   {
     "id": "col:alleviate_alleviate_symptoms",
@@ -26120,7 +26778,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:alleviate_alleviate_the_burden_on",
@@ -26160,7 +26819,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:alleviate_alleviate_housing_shortages",
@@ -26200,7 +26860,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:alleviate_alleviate_loneliness",
@@ -26239,7 +26900,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:mitigate_mitigate_the_effects_of",
@@ -26279,7 +26941,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:mitigate_mitigate_risks",
@@ -26320,7 +26983,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:mitigate_mitigate_the_severity_of",
@@ -26360,7 +27024,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:mitigate_mitigate_environmental_damage",
@@ -26400,7 +27065,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:mitigate_mitigate_economic_shock",
@@ -26440,7 +27106,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:mitigate_mitigate_emissions",
@@ -26480,7 +27147,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:foster_foster_innovation",
@@ -26520,7 +27188,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:innovation_foster_innovation",
+    "level": 8
   },
   {
     "id": "col:foster_foster_a_sense_of",
@@ -26560,7 +27231,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:foster_foster_collaboration",
@@ -26601,7 +27273,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:foster_foster_critical_thinking",
@@ -26641,7 +27314,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:foster_foster_social_cohesion",
@@ -26680,7 +27354,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:foster_foster_sustainable_growth",
@@ -26720,7 +27395,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:promote_promote_sustainability",
@@ -26761,7 +27437,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:sustainability_promote_sustainability",
+    "level": 7
   },
   {
     "id": "col:promote_promote_healthy_lifestyles",
@@ -26801,7 +27480,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:promote_promote_social_mobility",
@@ -26841,7 +27521,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:promote_promote_cultural_understanding",
@@ -26881,7 +27562,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:promote_promote_economic_development",
@@ -26921,7 +27603,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:promote_promote_well_being",
@@ -26961,7 +27644,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:well_being_promote_well_being",
+    "level": 7
   },
   {
     "id": "col:enhance_enhance_the_quality_of",
@@ -27001,7 +27687,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:quality_enhance_the_quality_of",
+    "level": 9
   },
   {
     "id": "col:enhance_enhance_productivity",
@@ -27041,7 +27730,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:enhance_enhance_security",
@@ -27081,7 +27771,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:enhance_enhance_the_learning_experience",
@@ -27121,7 +27812,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:enhance_enhance_reputation",
@@ -27161,7 +27853,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:enhance_enhance_collaboration",
@@ -27201,7 +27894,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:undermine_undermine_public_trust",
@@ -27241,7 +27935,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:undermine_undermine_efforts",
@@ -27281,7 +27976,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:undermine_undermine_stability",
@@ -27321,7 +28017,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:undermine_undermine_authority",
@@ -27361,7 +28058,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:undermine_undermine_morale",
@@ -27401,7 +28099,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:undermine_undermine_biodiversity",
@@ -27441,7 +28140,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:exacerbate_exacerbate_inequality",
@@ -27481,7 +28181,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:inequality_exacerbate_inequality",
+    "level": 8
   },
   {
     "id": "col:exacerbate_exacerbate_the_problem",
@@ -27521,7 +28224,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:exacerbate_exacerbate_tensions",
@@ -27561,7 +28265,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:exacerbate_exacerbate_congestion",
@@ -27601,7 +28306,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:congestion_exacerbate_congestion",
+    "level": 8
   },
   {
     "id": "col:exacerbate_exacerbate_mental_health_issues",
@@ -27641,7 +28349,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:exacerbate_exacerbate_climate_change",
@@ -27681,7 +28390,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:acquire_acquire_knowledge",
@@ -27722,7 +28432,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:knowledge_acquire_knowledge",
+    "level": 8
   },
   {
     "id": "col:acquire_acquire_a_language",
@@ -27762,7 +28475,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:acquire_acquire_practical_experience",
@@ -27803,7 +28517,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:acquire_acquire_fluency",
@@ -27843,7 +28558,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:acquire_acquire_new_assets",
@@ -27883,7 +28599,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:acquire_acquire_a_reputation_for",
@@ -27921,7 +28638,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:allocate_allocate_resources_to",
@@ -27962,7 +28680,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:allocate_allocate_sufficient_time",
@@ -28002,7 +28721,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:allocate_allocate_funds_fairly",
@@ -28042,7 +28762,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:allocate_allocate_urban_space",
@@ -28082,7 +28803,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:allocate_allocate_equitably",
@@ -28123,7 +28845,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:allocate_allocate_clear_responsibilities",
@@ -28162,7 +28885,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:implement_implement_reforms",
@@ -28203,7 +28927,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:implement_implement_strict_regulations",
@@ -28243,7 +28968,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:implement_implement_a_ban",
@@ -28284,7 +29010,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:implement_implement_practical_solutions",
@@ -28324,7 +29051,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:implement_effectively_implement",
@@ -28365,7 +29093,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:implement_implement_sweeping_changes",
@@ -28405,7 +29134,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:enforce_enforce_the_law",
@@ -28445,7 +29175,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:enforce_enforce_safety_standards",
@@ -28486,7 +29217,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:enforce_enforce_regulations",
@@ -28527,7 +29259,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:regulation_enforce_regulations",
+    "level": 8
   },
   {
     "id": "col:enforce_strictly_enforce",
@@ -28568,7 +29303,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:enforce_enforce_speed_limits",
@@ -28608,7 +29344,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:enforce_enforce_consumer_protection",
@@ -28648,7 +29385,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curb_curb_emissions",
@@ -28689,7 +29427,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curb_curb_spending",
@@ -28730,7 +29469,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curb_curb_antisocial_behaviour",
@@ -28770,7 +29510,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curb_curb_the_spread_of",
@@ -28811,7 +29552,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:curb_curb_urban_sprawl",
@@ -28851,7 +29593,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:curb_curb_misinformation",
@@ -28891,7 +29634,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:eradicate_eradicate_poverty",
@@ -28932,7 +29676,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:eradicate_eradicate_corruption",
@@ -28972,7 +29717,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:eradicate_eradicate_invasive_species",
@@ -29011,7 +29757,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:eradicate_eradicate_the_root_causes_of",
@@ -29050,7 +29797,8 @@
         "schema": "pass",
         "verifier": "fixed"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:eradicate_eradicate_child_labour",
@@ -29089,7 +29837,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:eradicate_completely_eradicate",
@@ -29130,7 +29879,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:assess_assess_the_impact_of",
@@ -29171,7 +29921,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:impact_assess_the_impact_of",
+    "level": 8
   },
   {
     "id": "col:assess_assess_risks",
@@ -29212,7 +29965,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:assess_accurately_assess",
@@ -29253,7 +30007,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:assess_assess_the_damage",
@@ -29294,7 +30049,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:assess_assess_learning_outcomes",
@@ -29334,7 +30090,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:assess_assess_the_cost_effectiveness",
@@ -29374,7 +30131,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   },
   {
     "id": "col:evaluate_evaluate_the_effectiveness_of",
@@ -29415,7 +30173,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:evaluate_evaluate_evidence",
@@ -29456,7 +30215,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:evaluate_critically_evaluate",
@@ -29497,7 +30257,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:evaluate_evaluate_academic_performance",
@@ -29537,7 +30298,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:evaluate_evaluate_viable_alternatives",
@@ -29577,7 +30339,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:evaluate_evaluate_the_long_term_impact",
@@ -29617,7 +30380,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:stimulate_stimulate_economic_growth",
@@ -29657,7 +30421,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:stimulate_stimulate_demand",
@@ -29698,7 +30463,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:demand_stimulate_demand",
+    "level": 8
   },
   {
     "id": "col:stimulate_stimulate_debate",
@@ -29739,7 +30507,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:stimulate_stimulate_job_creation",
@@ -29778,7 +30547,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:stimulate_stimulate_cognitive_development",
@@ -29818,7 +30588,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:stimulate_stimulate_healthy_competition",
@@ -29857,7 +30628,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:accelerate_accelerate_the_transition_to",
@@ -29897,7 +30669,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:accelerate_accelerate_climate_change",
@@ -29938,7 +30711,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:accelerate_accelerate_innovation",
@@ -29979,7 +30753,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:accelerate_accelerate_the_pace_of",
@@ -30019,7 +30794,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:accelerate_accelerate_adoption",
@@ -30059,7 +30835,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:accelerate_accelerate_rapidly",
@@ -30099,7 +30876,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:overcome_overcome_barriers",
@@ -30140,7 +30918,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 7
   },
   {
     "id": "col:overcome_overcome_resistance",
@@ -30181,7 +30960,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:overcome_overcome_adversity",
@@ -30221,7 +31001,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:overcome_overcome_addiction",
@@ -30262,7 +31043,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:overcome_overcome_technical_limitations",
@@ -30302,7 +31084,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:overcome_overcome_a_shortage",
@@ -30342,7 +31125,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:bridge_bridge_the_digital_divide",
@@ -30383,7 +31167,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:bridge_bridge_the_gap_between",
@@ -30423,7 +31208,10 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "deprecated": true,
+    "aliasOf": "col:gap_bridge_the_gap_between",
+    "level": 9
   },
   {
     "id": "col:bridge_bridge_cultural_differences",
@@ -30463,7 +31251,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:bridge_bridge_the_funding_gap",
@@ -30503,7 +31292,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 9
   },
   {
     "id": "col:bridge_bridge_divisions",
@@ -30542,7 +31332,8 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 8
   },
   {
     "id": "col:bridge_bridge_the_transition",
@@ -30581,6 +31372,7 @@
         "schema": "pass",
         "verifier": "pass"
       }
-    }
+    },
+    "level": 10
   }
 ]
