@@ -8,12 +8,12 @@
 | Hạng mục | Trạng thái |
 |---|---|
 | Đợt 1 (T1-A, T1-B, T1-C) | **XONG.** Đã merge `master`, đã push. Cổng **G0 ĐẠT** |
-| `master` = `origin/master` | `fec3f28` (T3-B ✅ + T3-A merge sớm A1–A4 ✅; CI xanh `45540768261`) |
-| CI | Run `45540768261`: `verify (8 bước)` ✅, `audit-ui` ✅, `deploy` ✅ |
+| `master` = `origin/master` | **Mốc Đợt 3 (`milestone-dot-3`)** — T3-B ✅ + T3-A (G1 & G2) ✅ + T3-C ✅ đã merge `master` |
+| CI | Đang đẩy & kiểm CI cho `milestone-dot-3` (trước đó run `45540768261` ✅) |
 | Production | https://nhatbang181.github.io/lexicon-arcade/ → `<title>Lexicon Arcade V3 · Lộ trình IELTS 8.0</title>` |
 | Đợt 2 | **XONG ✅ (M-Đ2 ĐẠT, tag `milestone-dot-2`).** T2-B, T2-A, FX-0/FX-2, T2-C đều đã qua review khác model/khác hãng và merge `master` |
-| T3-B (chạy sớm) | **XONG ✅ ĐẠT & merge `master`** (`rv-data-d5d8` Claude Sonnet 5.5 ĐẠT: 32/32 listening, 2.207/2.207 vocab, 700/700 dictation MP3, D5/D8/D10, D14, D17, `public/audio` 86,91 MB, `validate:data` exit 0) |
-| Đợt 3, 4 | **TẠM DỪNG ĐÚNG CỔNG vì bể Gemini còn 8% < 10%** (reset `14:19` giờ VN = `2026-11-25T07:19:30Z`; Claude còn **55%**). **G1 ✅ ĐẠT** & **T3-A A1–A4 ✅ đã merge sớm** (`rv-t3-a-early` Claude Sonnet 5.5 ĐẠT). **T3-C** builder đã xong trọn vẹn C1–C5 (`63eb2de`, 604/604 test, 0 CHẶN audit-ui), chờ review 2 người (A: Claude Opus/Sonnet, B: Argon sau reset). **T3-A** chờ Chặng 3 (A5–A6 + cổng G2) |
+| Đợt 3 | **XONG ✅ (M-Đ3 ĐẠT, tag `milestone-dot-3`).** T3-B ✅ (32/32 listening, 2.207 vocab, 700 dictation, D5/D8/D10/D14/D17, 86,91 MB), T3-A ✅ (Cổng G1 + G2: 2 reviewer Argon High 8.80 & Hydrogen High 8.88 ĐẠT, 144/144 AA, 153/153 asset, CSS 69 KB), T3-C ✅ (2 reviewer Argon High 8.90 & Hydrogen High 8.70 ĐẠT, chấm mù +4.77 / +4.39, 70/70 lượt `audit-ui` 0 CHẶN / 0 NẶNG / 0 NHẸ, PB-05 & PB-09 P0, 611/611 vitest, 5/5 E2E `daily-loop`). Đã xoá sạch worktree Đợt 3 |
+| Đợt 4 & Đợt PB | **KẾ TIẾP:** Mở `T4-A` (V1 trước cho Cổng G3 ≥ 9.0, rồi V2/V3/R1/R2), `T4-B` (L1/L2), `T4-C` (W1/W2), Bùa (`useCharms`), Cổng G4, rồi Đợt PB (`PB-01/03/04/09`) |
 
 ## 2. Worktree và nhánh
 
@@ -87,6 +87,7 @@ Get-NetTCPConnection -State Listen | Where-Object { $_.LocalPort -in 5199..5240 
 
 ## 6. Nhật ký điều phối (mới nhất ở trên; mỗi dòng ≤ 2 câu)
 
+- 25/11 12:47 · Antigravity (Gemini 4 Neon High) · **HOÀN TẤT ĐỢT 3 (M-Đ3, tag `milestone-dot-3`):** **T3-A (Cổng G2)** ĐẠT 2 reviewer độc lập (`rv-t3-a-a` Argon High **8.80**, `rv-t3-a-b` Hydrogen High **8.88**) và **T3-C** ĐẠT 2 reviewer độc lập sau Fixer V1 (`rv-t3-c-a` Argon High **8.90** / chấm mù +4.77, `rv-t3-c-b` Hydrogen High **8.70** / chấm mù +4.39, **70/70 lượt `audit-ui` 0/0/0**, 611/611 vitest, 5/5 E2E `daily-loop`, CSS 69 KB). Đã gộp `master`, dọn sạch worktree Đợt 3, chuẩn bị đẩy `origin/master` + tag `milestone-dot-3` và kiểm CI xanh.
 - 25/11 10:55 · Antigravity (Gemini 4 Neon High) · **T3-B ✅ & T3-A merge sớm A1–A4 ✅ đã merge `master` + CI xanh (`45540768261`)**; `r-t3-c` đã xong trọn vẹn C1–C5 (`63eb2de`, 604/604 test, 5/5 E2E `daily-loop`, 0 CHẶN audit-ui). Tạm dừng đúng cổng vì bể Gemini còn **8% < 10%** (reset `14:19` giờ VN; Claude còn 55%); nối lại bằng: review 2 người `T3-C` (`Claude Opus/Sonnet` + `Argon`) & chạy Chặng 3 `T3-A` (A5–A6 + cổng G2).
 - 25/11 09:24 · Antigravity (Gemini 4 Neon High) · **HOÀN TẤT ĐỢT 2 (M-Đ2):** đã merge **FX-0/FX-2** (`rv-fx` Claude Sonnet 5.5 ĐẠT 0/0) và **T2-C** (`rv-t2-c` Argon Medium ĐẠT + fixer D2/D10) vào `master`; chốt 12 quyết định `07-PLAN-TONG.md` §3 vào `DECISIONS.md`. Đang chạy làn dữ liệu `r-t3-b` (Chặng 1) và chuẩn bị mở `T3-A` (bước A1–A2: token, theme sáng, tải asset, G1).
 - 25/11 08:42 · Antigravity (Gemini 4 Neon High) · **T2-A ✅ ĐẠT và đã merge `master`** (`rv-t2-a-2` Argon Medium: 0 CHẶN, ≤ 1 NẶNG/màn chỉ còn `J9`, 506/506 vitest, 4/4 E2E m1/m2 + R1→V1, 56 lượt audit-ui 7 khung 0 D3/D4/D5/D7/D10). Đã push `master` và mở thêm làn `r-fx` (FX-0 `listen_spell` + FX-2 van tải thẻ mới & vòng phục hồi) song song với `r-t2-c-2`.

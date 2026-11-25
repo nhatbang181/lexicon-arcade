@@ -106,3 +106,11 @@
 | # | File | Chủ | Cần làm | Vì sao |
 |---|---|---|---|---|
 | 1 | `src/design/components/LiveCard.tsx` (dòng 133) | T3-A · **ĐÃ XỬ LÝ (`619a9e7`)** | Đã thay lớp bóng sibling bằng `.live-card-depth::before` + `h-full` | Khử 100% cảnh báo M5 trên thẻ `<LiveCard>` ở Hub |
+
+## Từ Review Cổng G2 & T3-C (25/11/2026 — nợ nhỏ cho Đợt 4)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `src/design/components/Pill.tsx:40` & `src/design/components/Sheet.tsx` | T4-A / điều phối | Thêm `shrink-0 whitespace-nowrap` cho `Pill`; nâng z-index `Sheet` cao hơn bottom nav (`z-50` vs `z-40`) | `REVIEW-T3-A-A/B` (pill gãy dòng trên 430px) & `REVIEW-T3-C-B` (bottom nav đè mép Sheet trên mobile) |
+| 2 | `src/app/screens/DevComponentsScreen.tsx:639` & `src/app/providers/AudioProvider.tsx:72` | T4-A / điều phối | Thêm `appearance-none` cho `#dev-sfx-vol`; không ghi đè `sfxVolume=0` khi reload ở trạng thái `muted` | `REVIEW-T3-A-B` (1 NẶNG D10 màn dev + 1 NHẸ) |
+| 3 | `src/features/today/TodayDashboard.tsx` & `src/features/settings/SettingsScreen.tsx` | T4-C / Đợt PB | Rà `variant="primary"` để mỗi màn chỉ có 1 nút chính nổi bật nhất (đổi nút phụ sang `secondary`/`ghost`) | `REVIEW-T3-C-B` (góp ý D6 trên Today khi banner Onboarding hiện và trên Settings) |
