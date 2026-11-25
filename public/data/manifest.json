@@ -1,8 +1,9 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-25T02:32:51.378Z",
+  "builtAt": "2026-11-25T02:53:00.805Z",
   "totals": {
-    "dictation": 300,
+    "examTests": 2,
+    "dictation": 700,
     "listeningEpisodes": 32,
     "listeningTraining": 24,
     "listeningQuestions": 320,
@@ -28,9 +29,13 @@
     "writingTask2": 60
   },
   "files": {
+    "exam/tests.json": {
+      "sha256": "985fd589bd05662bd1e24377b922bfc492a73a29365784085cb920867e6479f9",
+      "count": 2
+    },
     "listening/dictation.json": {
-      "sha256": "0411a0c90e5392d49d197907225db800a6d922daaf9f3f58800fe24258c96a3b",
-      "count": 300
+      "sha256": "d3cb82173063ac2c747758063e35668053f53abb9d2d7bb1323ae928af86384d",
+      "count": 700
     },
     "listening/episodes/p1_001.json": {
       "sha256": "873b3bacb9c4708a132e34324de188d835833690880ba5120913c083d2e0f821",
@@ -304,8 +309,16 @@
       "sha256": "44b6c5346c395be27f931d20c82e1f10031dff338e71107c2a9260c22d5b4db6",
       "count": 150
     },
+    "vocab/words.core.json": {
+      "sha256": "ec623fbba503035d92f91d7cd05e15970356e92f2d2a86d16ad144b3c108dfce",
+      "count": 2207
+    },
+    "vocab/words.detail.json": {
+      "sha256": "9350d00014325c64a000811acdb03817f80a79e54f2c6278c72cb399df6d1548",
+      "count": 1
+    },
     "vocab/words.json": {
-      "sha256": "681ed5307b512dad361568eecda44bcc2bb2a586cf744e767bc3d70f2e630b76",
+      "sha256": "e2021aa6fe09e4febae6d08bc071932ecbc7fa2f7c5e2d14d811469aede67b8d",
       "count": 2207
     },
     "writing/cliches.json": {
