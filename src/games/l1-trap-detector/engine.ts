@@ -13,7 +13,8 @@ import { scoreMCQ } from '../../core/scoring/readingAnswer';
 import { createNewCard, type SRSCard } from '../../core/srs/fsrsAdapter';
 import { accuracyToBand } from '../../core/band/tables';
 import type { AttemptItem, BandSnapshotRecord } from '../../core/storage/db';
-import type { SessionSavePayload } from '../../core/storage/repos/attemptRepo';
+import type { ProgressPayload, SessionSavePayload } from '../../core/storage/repos/attemptRepo';
+import type { UserItemInput } from '../../core/storage/repos/userItemRepo';
 import type { PlaybackRate } from '../../core/audio/trackPlayer';
 
 export type L1Mode = 'training' | 'exam';
@@ -89,6 +90,8 @@ export interface L1DifficultyConfig {
   showSignposts: boolean;
   allowPause: boolean;
   allowRewind: boolean;
+  /** Cho phép tua trên TrackPlayer/Waveform (false ở Exam và Training lv >= 7 — L1-13). */
+  allowSeek: boolean;
   allowRateChange: boolean;
   allowPredictions: boolean;
   examLocked: boolean;
@@ -163,12 +166,22 @@ export interface L1SessionState {
   bonusXp: number;
   debriefXp: number;
   totalXp: number;
+  /** Phiên ôn lại câu sai (L1-08): chỉ câu sai, 0 XP, 0 band. */
+  isRetry: boolean;
+  /** Episode đã làm Exam trước đó (L1-09): lần 2 không tính band. */
+  alreadyDoneExam: boolean;
+  /** Khoảng audio [start, end] (primaryTrapClip ∪ evidence) cho từng câu khi retry (L1-08). */
+  retryClipMap: Record<string, { start: number; end: number }>;
 }
 
 export interface CreateL1SessionOptions {
   mode?: L1Mode;
   level?: number;
   nowMs?: number;
+  isRetry?: boolean;
+  alreadyDoneExam?: boolean;
+  retryClipMap?: Record<string, { start: number; end: number }>;
+  initialPhase?: L1Phase;
 }
 
 export interface L1EngineEvent {
@@ -221,6 +234,7 @@ export function getL1DifficultyConfig(mode: L1Mode, level = 3): L1DifficultyConf
       showSignposts: false,
       allowPause: false,
       allowRewind: false,
+      allowSeek: false,
       allowRateChange: false,
       allowPredictions: false,
       examLocked: true,
@@ -239,6 +253,7 @@ export function getL1DifficultyConfig(mode: L1Mode, level = 3): L1DifficultyConf
       showSignposts: true,
       allowPause: true,
       allowRewind: true,
+      allowSeek: true,
       allowRateChange: true,
       allowPredictions: true,
       examLocked: false,
@@ -255,6 +270,7 @@ export function getL1DifficultyConfig(mode: L1Mode, level = 3): L1DifficultyConf
       showSignposts: true,
       allowPause: true,
       allowRewind: true,
+      allowSeek: true,
       allowRateChange: true,
       allowPredictions: true,
       examLocked: false,
@@ -271,6 +287,7 @@ export function getL1DifficultyConfig(mode: L1Mode, level = 3): L1DifficultyConf
       showSignposts: false,
       allowPause: true,
       allowRewind: true,
+      allowSeek: true,
       allowRateChange: true,
       allowPredictions: true,
       examLocked: false,
@@ -287,6 +304,7 @@ export function getL1DifficultyConfig(mode: L1Mode, level = 3): L1DifficultyConf
       showSignposts: false,
       allowPause: false,
       allowRewind: false,
+      allowSeek: false,
       allowRateChange: true,
       allowPredictions: true,
       examLocked: false,
@@ -303,6 +321,7 @@ export function getL1DifficultyConfig(mode: L1Mode, level = 3): L1DifficultyConf
     showSignposts: false,
     allowPause: false,
     allowRewind: false,
+    allowSeek: false,
     allowRateChange: false,
     allowPredictions: false,
     examLocked: true,
@@ -435,9 +454,25 @@ export function createL1Session(
   episode: ListeningEpisode,
   options: CreateL1SessionOptions = {},
 ): L1SessionState {
-  const mode: L1Mode = options.mode ?? 'training';
+  const isRetry = options.isRetry === true;
+  const alreadyDoneExam = options.alreadyDoneExam === true;
+  const mode: L1Mode = isRetry ? 'training' : (options.mode ?? 'training');
   const level = options.level ?? episode.difficulty;
-  const config = getL1DifficultyConfig(mode, level);
+  const baseConfig = getL1DifficultyConfig(mode, level);
+  const config: L1DifficultyConfig = {
+    ...baseConfig,
+    countsForBand: baseConfig.countsForBand && !isRetry && !alreadyDoneExam,
+    ...(isRetry
+      ? {
+          allowPause: true,
+          allowRewind: true,
+          allowSeek: true,
+          allowRateChange: true,
+          examLocked: false,
+          reviewSec: 0,
+        }
+      : {}),
+  };
   const flat = flattenEpisodeQuestions(episode);
   const startedAt = options.nowMs ?? Date.now();
 
@@ -446,7 +481,7 @@ export function createL1Session(
     mode,
     level: config.level,
     config,
-    phase: 'preview',
+    phase: options.initialPhase ?? 'preview',
     startedAt,
     gradedAt: null,
     endedAt: null,
@@ -462,7 +497,82 @@ export function createL1Session(
     bonusXp: 0,
     debriefXp: 0,
     totalXp: 0,
+    isRetry,
+    alreadyDoneExam,
+    retryClipMap: options.retryClipMap ?? {},
   };
+}
+
+/**
+ * Tạo phiên ôn lại CHỈ gồm các câu sai của phiên trước (L1-08):
+ * - Chỉ giữ câu sai và nhóm chứa chúng (kèm khoảng audio primaryTrapClip ∪ evidence).
+ * - Chế độ luyện, 0 XP, 0 bandEvidence, vào thẳng pha `listening` để nghe từng đoạn.
+ */
+export function createL1RetrySession(
+  previous: L1SessionState,
+  nowMs = Date.now(),
+): L1SessionState {
+  const wrongResults = previous.results.filter((r) => !r.correct);
+  if (wrongResults.length === 0) {
+    return createL1Session(previous.episode, {
+      mode: 'training',
+      level: previous.level,
+      nowMs,
+      isRetry: true,
+      initialPhase: 'listening',
+    });
+  }
+  const wrongQids = new Set(wrongResults.map((r) => r.qid));
+  const retryClipMap: Record<string, { start: number; end: number }> = {};
+  for (const r of wrongResults) {
+    const start = r.primaryTrapClip
+      ? Math.min(r.primaryTrapClip.start, r.evidence.start)
+      : r.evidence.start;
+    const end = r.primaryTrapClip
+      ? Math.max(r.primaryTrapClip.end, r.evidence.end)
+      : r.evidence.end;
+    retryClipMap[r.qid] = { start, end };
+  }
+
+  const filteredGroups: ListeningQuestionGroup[] = [];
+  for (const group of previous.episode.questionGroups) {
+    // Paired mcq_multi cần giữ nguyên cả nhóm nếu có bất kỳ câu nào trong cặp bị sai
+    if (isPairedMcqMultiGroup(group)) {
+      if (group.questions.some((q) => wrongQids.has(q.qid))) {
+        filteredGroups.push(group);
+      }
+      continue;
+    }
+    const keptQuestions = group.questions.filter((q) => wrongQids.has(q.qid));
+    if (keptQuestions.length === 0) continue;
+    const keptQidSet = new Set(keptQuestions.map((q) => q.qid));
+    filteredGroups.push({
+      ...group,
+      questions: keptQuestions,
+      template: group.template
+        ? {
+            ...group.template,
+            rows: group.template.rows.filter(
+              (row) => !row.blankQid || keptQidSet.has(row.blankQid),
+            ),
+          }
+        : undefined,
+    });
+  }
+
+  const filteredEpisode: ListeningEpisode = {
+    ...previous.episode,
+    questionGroups: filteredGroups.length > 0 ? filteredGroups : previous.episode.questionGroups,
+  };
+
+  return createL1Session(filteredEpisode, {
+    mode: 'training',
+    level: previous.level,
+    nowMs,
+    isRetry: true,
+    retryClipMap,
+    initialPhase: 'listening',
+  });
 }
 
 export function setPrediction(
@@ -712,6 +822,27 @@ function matchesTrapDecoy(userAnswer: string, decoy: string, isChoice: boolean):
   return scoreListeningAnswer(cleanUser, [cleanDecoy]).correct;
 }
 
+function extractPromptUnit(
+  group: ListeningQuestionGroup,
+  question: ListeningQuestion,
+): string | undefined {
+  const row = group.template?.rows.find((r) => r.blankQid === question.qid);
+  const sources = [row?.value, row?.suffix, row?.label, question.prompt].filter(
+    (s): s is string => typeof s === 'string' && s.trim().length > 0,
+  );
+  for (const s of sources) {
+    const cur = s.match(/[£$€¥]/);
+    if (cur) return cur[0];
+    const paren = s.match(/\((£|\$|€|%|km|kg|cm|mm|m|miles?|pounds?|dollars?|hours?|mins?|minutes?|am|pm|a\.m\.|p\.m\.)\)/i);
+    if (paren) return paren[1];
+  }
+  return undefined;
+}
+
+function normalizeForSubstring(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
 /**
  * Classify a graded answer into one of the spec's error categories:
  * `none | no_answer | word_limit | spelling | plural | trap:<type> | wrong_content`
@@ -721,6 +852,7 @@ export function classifyListeningError(
   question: ListeningQuestion,
   group: ListeningQuestionGroup,
   scoreResult: { correct: boolean; reason: string },
+  scriptByLineId?: ReadonlyMap<string, string>,
 ): L1ErrorCategory {
   if (scoreResult.correct) return 'none';
   if (!userAnswer.trim() || scoreResult.reason === 'empty') return 'no_answer';
@@ -745,10 +877,16 @@ export function classifyListeningError(
 
   if (scoreResult.reason === 'minor_spelling_error') return 'spelling';
 
-  // 2. If traps exist without explicit decoy text, map to primary trap for metacognition
-  const trapWithoutDecoy = question.traps.find((t) => !t.decoy);
-  if (trapWithoutDecoy) {
-    return `trap:${trapWithoutDecoy.type}`;
+  // 2. L1-12: Chỉ gán trap:<type> khi bẫy không có decoy nhưng đáp án người học xuất hiện trong dòng bẫy
+  const normUser = normalizeForSubstring(userAnswer);
+  if (normUser.length >= 2 && scriptByLineId) {
+    for (const trap of question.traps) {
+      if (trap.decoy) continue;
+      const lineText = scriptByLineId.get(trap.lineId);
+      if (lineText && normalizeForSubstring(lineText).includes(normUser)) {
+        return `trap:${trap.type}`;
+      }
+    }
   }
 
   return 'wrong_content';
@@ -784,7 +922,11 @@ function computeBaseAndBonusXp(
   mode: L1Mode,
   correctCount: number,
   totalQuestions: number,
+  isRetry = false,
 ): { baseXp: number; bonusXp: number } {
+  if (isRetry) {
+    return { baseXp: 0, bonusXp: 0 };
+  }
   if (mode === 'exam') {
     const baseXp = correctCount * 15;
     // L1-TRAP-DETECTOR.md §4.3: Exam +50 if >= 9/10 (or >= 90% on smaller test episodes)
@@ -811,6 +953,7 @@ export function submitAndGrade(
   }
 
   const lineTimings = resolveScriptTimings(state.episode);
+  const scriptByLineId = new Map(state.episode.script.map((l) => [l.lineId, l.text]));
   const results: GradedListeningQuestion[] = [];
 
   for (const group of state.episode.questionGroups) {
@@ -847,7 +990,13 @@ export function submitAndGrade(
           correct: isHit,
           reason: isHit ? 'exact' : assignedUserKey ? 'wrong_answer' : 'empty',
         };
-        const errorCategory = classifyListeningError(assignedUserKey, question, group, scoreLike);
+        const errorCategory = classifyListeningError(
+          assignedUserKey,
+          question,
+          group,
+          scoreLike,
+          scriptByLineId,
+        );
         const primaryTrap = question.traps[0] ?? null;
 
         results.push({
@@ -889,15 +1038,22 @@ export function submitAndGrade(
         const mcqRes = scoreMCQ(userAnswer, expected);
         scoreResult = mcqRes;
       } else {
+        const promptUnit = extractPromptUnit(group, question);
         const listeningRes: ListeningScoreResult = scoreListeningAnswer(
           userAnswer,
           question.answer.accepted,
-          { wordLimit: group.wordLimit ?? group.instructions },
+          { wordLimit: group.wordLimit ?? group.instructions, promptUnit },
         );
         scoreResult = listeningRes;
       }
 
-      const errorCategory = classifyListeningError(userAnswer, question, group, scoreResult);
+      const errorCategory = classifyListeningError(
+        userAnswer,
+        question,
+        group,
+        scoreResult,
+        scriptByLineId,
+      );
       const primaryTrap = question.traps[0] ?? null;
 
       results.push({
@@ -926,8 +1082,13 @@ export function submitAndGrade(
 
   const correctCount = results.filter((r) => r.correct).length;
   const totalQuestions = results.length;
-  const { baseXp, bonusXp } = computeBaseAndBonusXp(state.mode, correctCount, totalQuestions);
-  const totalXp = baseXp + bonusXp + state.debriefXp;
+  const { baseXp, bonusXp } = computeBaseAndBonusXp(
+    state.mode,
+    correctCount,
+    totalQuestions,
+    state.isRetry,
+  );
+  const totalXp = state.isRetry ? 0 : baseXp + bonusXp + state.debriefXp;
 
   const nextState: L1SessionState = {
     ...state,
@@ -980,7 +1141,8 @@ export function submitTrapLabel(
 
   const expected = graded.trapTypes;
   const matched = expected.includes(chosenTrap);
-  const xpAwarded = matched ? 5 : 0;
+  // L1-08: phiên retry không thưởng XP
+  const xpAwarded = !state.isRetry && matched ? 5 : 0;
 
   const nextLabels: Record<string, SelfTrapLabelRecord> = {
     ...state.selfTrapLabels,
@@ -1061,7 +1223,7 @@ export function buildL1WinStatement(state: L1SessionState): string {
     }
     const breakdown = Array.from(byType.entries())
       .slice(0, 3)
-      .map(([t, v]) => `${t} ${v.dodged}/${v.total}`)
+      .map(([t, v]) => `${LISTENING_TRAP_LABELS_VI[t] ?? t} ${v.dodged}/${v.total}`)
       .join(', ');
     return `Bắt được ${trapsDodged}/${trappedQs.length} bẫy (${breakdown}).`;
   }
@@ -1081,17 +1243,138 @@ function stripEpisodePrefix(id: string): string {
   return id.replace(/^(?:lep|le):/, '');
 }
 
+export interface BuildL1SaveOptions {
+  /** Nếu true: phiên thiếu audio hoặc mô phỏng → 0 bandEvidence và 0 thẻ FSRS (L1-01, SR-22, SR-89). */
+  simulatedMode?: boolean;
+  audioMissing?: boolean;
+}
+
+export interface L1UserItemDraft {
+  item: UserItemInput;
+  cardFace: 'ltrap_replay' | 'listen_spell';
+}
+
 /**
- * Build an atomic `SessionSavePayload` for `attemptRepo.saveSession(...)`:
+ * Dựng danh sách `userItems` để producer ghi qua `userItemRepo.upsertWithCard` (B6 / PP-11).
+ * `ltrap:*` chứa đầy đủ `audioClip { src, start, end }` và `|` giữa các đáp án chấp nhận.
+ */
+export function buildL1UserItems(
+  state: L1SessionState,
+  options: BuildL1SaveOptions = {},
+): L1UserItemDraft[] {
+  if (state.episode.reserved === true || options.simulatedMode || options.audioMissing) {
+    return [];
+  }
+  const epSlug = stripEpisodePrefix(state.episode.id);
+  const out: L1UserItemDraft[] = [];
+  const seenIds = new Set<string>();
+
+  for (const r of state.results) {
+    if (r.correct) continue;
+    if (r.errorCategory === 'spelling' || r.errorCategory === 'plural') {
+      const primaryWord = r.acceptedAnswers[0] ?? '';
+      if (!primaryWord) continue;
+      const id = `vocab:${slugifyAnswer(primaryWord)}`;
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
+      out.push({
+        item: {
+          id,
+          kind: 'ltrap',
+          front: `Q${r.number}. ${r.prompt.split('\n')[0]}`,
+          back: r.acceptedAnswers.join(' | '),
+          noteVi: r.explanationVi || r.feedbackVi,
+          audioClip: {
+            src: state.episode.audio.path,
+            start: r.evidence.start,
+            end: r.evidence.end,
+          },
+          source: 'l1',
+        },
+        cardFace: 'listen_spell',
+      });
+    } else if (r.errorCategory.startsWith('trap:')) {
+      const id = `ltrap:${epSlug}_${r.qid}`;
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
+      const clip = r.primaryTrapClip ?? r.evidence;
+      out.push({
+        item: {
+          id,
+          kind: 'ltrap',
+          front: r.prompt.split('\n')[0],
+          back: r.acceptedAnswers.join(' | '),
+          noteVi:
+            r.explanationVi ||
+            r.feedbackVi ||
+            'Nghe lại đoạn bẫy này và chú ý chỗ người nói đổi ý.',
+          audioClip: {
+            src: state.episode.audio.path,
+            start: clip.start,
+            end: clip.end,
+          },
+          source: 'l1',
+        },
+        cardFace: 'ltrap_replay',
+      });
+    }
+  }
+  return out;
+}
+
+/**
+ * Dựng payload lưu giữa phiên cho `attemptRepo.saveProgress` (TU-02 / F1).
+ */
+export function buildL1ProgressPayload(
+  state: L1SessionState,
+  nowMs = Date.now(),
+): ProgressPayload {
+  const flat = flattenEpisodeQuestions(state.episode);
+  const items: AttemptItem[] =
+    state.results.length > 0
+      ? state.results.map((r) => ({
+          itemId: `${state.episode.id}:${r.qid}`,
+          correct: r.correct,
+          trapType: r.errorCategory.startsWith('trap:')
+            ? r.errorCategory.slice(5)
+            : r.primaryTrap ?? undefined,
+        }))
+      : flat
+          .filter(({ question }) => (state.answers[question.qid] ?? '').trim().length > 0)
+          .map(({ question }) => ({
+            itemId: `${state.episode.id}:${question.qid}`,
+            correct: false,
+          }));
+
+  return {
+    attempt: {
+      gameId: 'l1',
+      mode: state.mode,
+      startedAt: state.startedAt,
+      endedAt: nowMs,
+      score: state.correctCount,
+      total: state.totalQuestions,
+      xp: state.isRetry ? 0 : state.totalXp,
+      items,
+    },
+  };
+}
+
+/**
+ * Build an atomic `SessionSavePayload` for `attemptRepo.saveSession(...)` / `attemptRepo.finalize(...)`:
  * - Records `AttemptRecord` (`gameId: 'l1'`)
- * - Emits `bandEvidence` ONLY in Exam mode (Training never moves BandMeter per L1 §4.1)
+ * - Emits `bandEvidence` ONLY in first-pass Exam mode with real audio (L1-01, L1-08, L1-09, SR-89)
  * - Generates FSRS cards for spelling/plural errors (`vocab:<slug>#listen_spell`) and
- *   trap misses (`ltrap:<episodeId>_<qid>#ltrap_replay`), EXCLUDING `reserved` episodes (§8).
+ *   trap misses (`ltrap:<episodeId>_<qid>#ltrap_replay`), EXCLUDING `reserved` episodes (§8) and
+ *   missing/simulated audio (SR-22).
  */
 export function buildL1SessionSavePayload(
   state: L1SessionState,
   endedAtMs = Date.now(),
+  options: BuildL1SaveOptions = {},
 ): SessionSavePayload {
+  const noAudioOrSim = Boolean(options.simulatedMode || options.audioMissing);
+
   const items: AttemptItem[] = state.results.map((r) => ({
     itemId: `${state.episode.id}:${r.qid}`,
     correct: r.correct,
@@ -1104,8 +1387,8 @@ export function buildL1SessionSavePayload(
   const seenCardIds = new Set<string>();
   const nowDate = new Date(endedAtMs);
 
-  // L1-TRAP-DETECTOR.md §8: Reserved exam episodes MUST NOT create SRS cards
-  if (state.episode.reserved !== true) {
+  // L1-TRAP-DETECTOR.md §8 & SR-22: Reserved exam episodes and missing-audio sessions MUST NOT create SRS cards
+  if (state.episode.reserved !== true && !noAudioOrSim) {
     const epSlug = stripEpisodePrefix(state.episode.id);
 
     for (const r of state.results) {
@@ -1125,7 +1408,7 @@ export function buildL1SessionSavePayload(
             updatedCards.push(card);
           }
         }
-      } else if (r.errorCategory.startsWith('trap:') || r.trapTypes.length > 0) {
+      } else if (r.errorCategory.startsWith('trap:')) {
         const itemId = `ltrap:${epSlug}_${r.qid}`;
         const card = createNewCard(itemId, 'ltrap_replay', {
           now: nowDate,
@@ -1141,7 +1424,13 @@ export function buildL1SessionSavePayload(
   }
 
   const bandEvidence: Array<Omit<BandSnapshotRecord, 'id'>> = [];
-  if (state.config.countsForBand && state.totalQuestions > 0) {
+  if (
+    state.config.countsForBand &&
+    !state.isRetry &&
+    !state.alreadyDoneExam &&
+    !noAudioOrSim &&
+    state.totalQuestions > 0
+  ) {
     const acc = state.correctCount / state.totalQuestions;
     bandEvidence.push({
       skill: 'L',
@@ -1162,7 +1451,7 @@ export function buildL1SessionSavePayload(
       endedAt: endedAtMs,
       score: state.correctCount,
       total: state.totalQuestions,
-      xp: state.totalXp,
+      xp: state.isRetry ? 0 : state.totalXp,
       items,
     },
     updatedCards,

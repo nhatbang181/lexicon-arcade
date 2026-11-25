@@ -11,7 +11,8 @@ import {
   type SRSCard,
 } from '../../core/srs/fsrsAdapter';
 import type { AttemptItem, ReviewRecord } from '../../core/storage/db';
-import type { SessionSavePayload } from '../../core/storage/repos/attemptRepo';
+import type { ProgressPayload, SessionSavePayload } from '../../core/storage/repos/attemptRepo';
+import type { UserItemInput } from '../../core/storage/repos/userItemRepo';
 
 export const L2_SESSION_LENGTH = 10;
 export const L2_MIN_LEVEL = 1;
@@ -242,6 +243,8 @@ export interface L2SessionState {
   questionStartedAt: number;
   endedAt: number | null;
   spellingErrorCounts: Record<string, number>;
+  /** Phiên ôn lại câu sai (L2-12): 0 XP, chỉ cập nhật SRS. */
+  isRetry: boolean;
 }
 
 export interface L2SessionSummary {
@@ -399,6 +402,11 @@ function normalizeNumberWords(tokens: string[]): string[] {
  */
 export function normalizeDictationText(raw: string): string {
   let s = normalizeTypography(raw).toLowerCase();
+
+  // L2-04: gộp dấu phẩy phân cách hàng nghìn ("10,000-word" -> "10000-word") và a.m./p.m.
+  s = s.replace(/(\d),(?=\d{3}\b)/g, '$1');
+  s = s.replace(/\ba\.m\.?/g, 'am');
+  s = s.replace(/\bp\.m\.?/g, 'pm');
 
   // Normalize percent forms
   s = s.replace(/(\d+(?:\.\d+)?)\s*%/g, '$1 percent');
@@ -683,30 +691,129 @@ export function gradeDictationSentence(
   };
 }
 
+export interface SelectL2Options {
+  /** Seed ổn định (vd ngày + số phiên) để 2 phiên liên tiếp chọn bộ câu khác nhau (L2-02). */
+  seed?: string;
+  /** Các itemId đã làm trong 7 ngày qua — hạ ưu tiên / tránh lặp nếu pool còn câu mới. */
+  recentItemIds?: ReadonlySet<string> | readonly string[];
+  /** Các itemId của thẻ `dict_full` đang đến hạn — ưu tiên đưa vào đầu phiên. */
+  dueItemIds?: ReadonlySet<string> | readonly string[];
+}
+
+function hashSeed(seed: string): number {
+  let h = 2166136261 >>> 0;
+  for (let i = 0; i < seed.length; i++) {
+    h ^= seed.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
+function createSeededRng(seed: string): () => number {
+  let state = hashSeed(seed) || 1;
+  return () => {
+    state = (state + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(state ^ (state >>> 15), 1 | state);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffleWithRng<T>(items: readonly T[], rng: () => number): T[] {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function toIdSet(input?: ReadonlySet<string> | readonly string[]): ReadonlySet<string> {
+  if (!input) return new Set<string>();
+  return input instanceof Set ? input : new Set(input);
+}
+
 /**
- * Select a 10-item session pool prioritized around the requested level.
+ * Select a 10-item session pool prioritized around the requested level (L2-02):
+ * 1. Due `dict_full` cards prioritized first.
+ * 2. Grouped by distance `|item.level - targetLevel|` (closest first).
+ * 3. Within each distance bucket, fresh items (not attempted in last 7 days) come before recent items.
+ * 4. Shuffled deterministically with `seed` so consecutive sessions get different sentences.
  */
 export function selectL2SessionItems(
   pool: readonly DictationItem[],
   level: number,
   count = L2_SESSION_LENGTH,
+  options: SelectL2Options = {},
 ): DictationItem[] {
   if (pool.length === 0) return [];
   const targetLevel = clampL2Level(level);
-  const sorted = [...pool].sort((a, b) => {
-    const da = Math.abs(a.level - targetLevel);
-    const db = Math.abs(b.level - targetLevel);
-    if (da !== db) return da - db;
-    return a.id.localeCompare(b.id);
-  });
+  const dueSet = toIdSet(options.dueItemIds);
+  const recentSet = toIdSet(options.recentItemIds);
+  const rng = options.seed ? createSeededRng(`${options.seed}|lv${targetLevel}`) : null;
 
-  return sorted.slice(0, Math.min(count, sorted.length));
+  // Nhóm theo khoảng cách level (0, 1, 2, ...)
+  const byDist = new Map<number, DictationItem[]>();
+  for (const item of pool) {
+    const d = Math.abs(item.level - targetLevel);
+    const bucket = byDist.get(d);
+    if (bucket) bucket.push(item);
+    else byDist.set(d, [item]);
+  }
+
+  const orderBucket = (arr: DictationItem[]): DictationItem[] => {
+    const stable = [...arr].sort((a, b) => a.id.localeCompare(b.id));
+    return rng ? shuffleWithRng(stable, rng) : stable;
+  };
+
+  // 1. Thẻ dict_full đến hạn (giữ theo khoảng cách level gần trước)
+  const dueItems = orderBucket(pool.filter((it) => dueSet.has(it.id))).sort(
+    (a, b) => Math.abs(a.level - targetLevel) - Math.abs(b.level - targetLevel),
+  );
+
+  const picked: DictationItem[] = [];
+  const pickedIds = new Set<string>();
+  const addItems = (list: readonly DictationItem[]) => {
+    for (const it of list) {
+      if (picked.length >= count) break;
+      if (pickedIds.has(it.id)) continue;
+      pickedIds.add(it.id);
+      picked.push(it);
+    }
+  };
+
+  addItems(dueItems);
+
+  const distances = Array.from(byDist.keys()).sort((a, b) => a - b);
+  // 2. Ưu tiên câu chưa làm trong 7 ngày gần nhất ở từng bậc khoảng cách
+  for (const d of distances) {
+    const fresh = (byDist.get(d) ?? []).filter((it) => !recentSet.has(it.id) && !pickedIds.has(it.id));
+    addItems(orderBucket(fresh));
+    if (picked.length >= count) break;
+  }
+
+  // 3. Nếu pool ít câu mới hơn `count`, mới bổ sung lại câu đã làm gần đây
+  if (picked.length < count) {
+    for (const d of distances) {
+      const recent = (byDist.get(d) ?? []).filter((it) => recentSet.has(it.id) && !pickedIds.has(it.id));
+      addItems(orderBucket(recent));
+      if (picked.length >= count) break;
+    }
+  }
+
+  return picked;
+}
+
+export interface CreateL2SessionOptions {
+  isRetry?: boolean;
+  initialSpellingCounts?: Record<string, number>;
 }
 
 export function createL2Session(
   items: readonly DictationItem[],
   level: number,
   now = Date.now(),
+  options: CreateL2SessionOptions = {},
 ): L2SessionState {
   const safeLevel = clampL2Level(level);
   const sessionItems = items.slice(0, L2_SESSION_LENGTH);
@@ -725,7 +832,8 @@ export function createL2Session(
     startedAt: now,
     questionStartedAt: now,
     endedAt: null,
-    spellingErrorCounts: {},
+    spellingErrorCounts: { ...(options.initialSpellingCounts ?? {}) },
+    isRetry: options.isRetry === true,
   };
 }
 
@@ -747,7 +855,7 @@ export function startL2Session(
     startedAt: now,
     questionStartedAt: now,
     endedAt: null,
-    spellingErrorCounts: {},
+    spellingErrorCounts: { ...state.spellingErrorCounts },
   };
 }
 
@@ -794,12 +902,14 @@ export function submitCurrentSentence(
   const item = state.items[state.currentIndex];
   if (!item) return state;
 
-  const graded = gradeDictationSentence(item, state.currentInput, {
+  const rawGraded = gradeDictationSentence(item, state.currentInput, {
     level: state.level,
     playsUsed: state.playsUsed,
     slowPlayUsed: state.slowPlayUsed,
     durationMs: Math.max(0, now - state.questionStartedAt),
   });
+  // L2-12: phiên ôn lại câu sai thưởng 0 XP
+  const graded: L2GradedSentence = state.isRetry ? { ...rawGraded, xpEarned: 0 } : rawGraded;
 
   const nextSpellingCounts = { ...state.spellingErrorCounts };
   for (const word of graded.spellingWrongWords) {
@@ -811,7 +921,7 @@ export function submitCurrentSentence(
     phase: 'graded',
     lastGraded: graded,
     results: [...state.results, graded],
-    totalXp: state.totalXp + graded.xpEarned,
+    totalXp: state.isRetry ? 0 : state.totalXp + graded.xpEarned,
     spellingErrorCounts: nextSpellingCounts,
   };
 }
@@ -922,22 +1032,96 @@ export function summarizeL2Session(state: L2SessionState): L2SessionSummary {
   };
 }
 
+export interface L2UserItemDraft {
+  item: UserItemInput;
+  cardFace: 'dict_full';
+}
+
+function estimateDictationDurationSec(item: DictationItem): number {
+  const words = item.text.trim().split(/\s+/).filter(Boolean).length;
+  const wpm = Math.max(90, item.wpm || 140);
+  return Math.max(2.5, Math.round(((words / wpm) * 60 + 0.8) * 10) / 10);
+}
+
 /**
- * Build an atomic SessionSavePayload for attemptRepo.saveSession():
+ * B6 / PP-11: Dựng `userItems` cho thẻ `dict:*` (< 70% hoặc thẻ `dict_full` sẵn có)
+ * kèm `audioClip { src, start, end }` và `|` giữa các đáp án chấp nhận.
+ */
+export function buildL2UserItems(
+  state: L2SessionState,
+  existingCards: ReadonlyMap<string, SRSCard> = new Map(),
+): L2UserItemDraft[] {
+  const itemById = new Map<string, DictationItem>(state.items.map((it) => [it.id, it]));
+  const out: L2UserItemDraft[] = [];
+  const seen = new Set<string>();
+
+  for (const r of state.results) {
+    const cardId = makeCardId(r.itemId, 'dict_full');
+    const shouldPersist =
+      r.effectiveScore < L2_SRS_CREATE_THRESHOLD || existingCards.has(cardId);
+    if (!shouldPersist || seen.has(r.itemId)) continue;
+    const item = itemById.get(r.itemId);
+    if (!item) continue;
+    seen.add(r.itemId);
+
+    const accepted = Array.from(new Set([item.text, ...(item.acceptedVariants ?? [])]));
+    const tips = item.focus.map((f) => f.tipVi).filter(Boolean).slice(0, 2).join(' · ');
+    out.push({
+      item: {
+        id: item.id,
+        kind: 'dict',
+        front: `Nghe và chép lại câu (Bậc ${item.level})`,
+        back: accepted.join(' | '),
+        noteVi: tips || 'Chú ý âm cuối, âm yếu và nối âm trong câu.',
+        audioClip: {
+          src: item.audio,
+          start: 0,
+          end: estimateDictationDurationSec(item),
+        },
+        source: 'l2',
+      },
+      cardFace: 'dict_full',
+    });
+  }
+
+  return out;
+}
+
+/**
+ * Dựng payload lưu giữa phiên cho `attemptRepo.saveProgress` (TU-02 / F1).
+ */
+export function buildL2ProgressPayload(
+  state: L2SessionState,
+  existingCards: ReadonlyMap<string, SRSCard> = new Map(),
+  nowDate: Date = new Date(),
+): ProgressPayload {
+  const full = buildL2SessionSavePayload(state, existingCards, nowDate);
+  return {
+    attempt: full.attempt,
+    updatedCards: full.updatedCards,
+    reviews: full.reviews,
+  };
+}
+
+/**
+ * Build an atomic SessionSavePayload for attemptRepo.saveSession() / attemptRepo.finalize():
  * - Sentences < 70% create/update `dict:*#dict_full` cards (rating: >=95% Good, 80-95% Hard, <80% Again).
  * - Existing `dict:*#dict_full` cards are also updated with their new rating.
  * - Words with >= 2 spelling errors create/update `vocab:<slug>#listen_spell` cards for V1.
+ * - Retry sessions earn 0 XP (L2-12); missing-audio sessions emit 0 cards/reviews (SR-22).
  */
 export function buildL2SessionSavePayload(
   state: L2SessionState,
   existingCards: ReadonlyMap<string, SRSCard> = new Map(),
   nowDate: Date = new Date(),
+  options: { audioMissing?: boolean } = {},
 ): SessionSavePayload {
   const nowMs = nowDate.getTime();
   const endedAt = state.endedAt ?? nowMs;
   const updatedCardsMap = new Map<string, SRSCard>();
   const reviews: Array<Omit<ReviewRecord, 'id'>> = [];
   const attemptItems: AttemptItem[] = [];
+  const skipSrs = options.audioMissing === true;
 
   for (const r of state.results) {
     attemptItems.push({
@@ -945,6 +1129,8 @@ export function buildL2SessionSavePayload(
       correct: r.effectiveScore >= L2_PROMOTION_SCORE_THRESHOLD,
       responseTimeMs: r.durationMs,
     });
+
+    if (skipSrs) continue;
 
     const cardId = makeCardId(r.itemId, 'dict_full');
     const existing = updatedCardsMap.get(cardId) ?? existingCards.get(cardId);
@@ -975,32 +1161,34 @@ export function buildL2SessionSavePayload(
   }
 
   // Words with >= 2 spelling errors -> create/update vocab:<slug>#listen_spell for V1
-  for (const [word, count] of Object.entries(state.spellingErrorCounts)) {
-    if (count < L2_SPELLING_CARD_THRESHOLD) continue;
-    const slug = slugifyWord(word);
-    if (!slug) continue;
-    const vocabItemId = `vocab:${slug}`;
-    const cardId = makeCardId(vocabItemId, 'listen_spell');
-    const existing = updatedCardsMap.get(cardId) ?? existingCards.get(cardId);
-    const baseCard =
-      existing ??
-      createNewCard(vocabItemId, 'listen_spell', {
-        now: nowDate,
-        unlocked: true,
-        source: 'dictation',
+  if (!skipSrs) {
+    for (const [word, count] of Object.entries(state.spellingErrorCounts)) {
+      if (count < L2_SPELLING_CARD_THRESHOLD) continue;
+      const slug = slugifyWord(word);
+      if (!slug) continue;
+      const vocabItemId = `vocab:${slug}`;
+      const cardId = makeCardId(vocabItemId, 'listen_spell');
+      const existing = updatedCardsMap.get(cardId) ?? existingCards.get(cardId);
+      const baseCard =
+        existing ??
+        createNewCard(vocabItemId, 'listen_spell', {
+          now: nowDate,
+          unlocked: true,
+          source: 'dictation',
+        });
+      const scheduled = scheduleCard(baseCard, Rating.Again, nowDate);
+      updatedCardsMap.set(cardId, scheduled.card);
+      reviews.push({
+        cardId,
+        rating: Rating.Again,
+        correct: false,
+        hintUsed: false,
+        durationMs: 0,
+        ts: endedAt,
+        gameId: 'l2',
+        prevState: scheduled.prevState,
       });
-    const scheduled = scheduleCard(baseCard, Rating.Again, nowDate);
-    updatedCardsMap.set(cardId, scheduled.card);
-    reviews.push({
-      cardId,
-      rating: Rating.Again,
-      correct: false,
-      hintUsed: false,
-      durationMs: 0,
-      ts: endedAt,
-      gameId: 'l2',
-      prevState: scheduled.prevState,
-    });
+    }
   }
 
   const highScoreCount = state.results.filter(
@@ -1015,7 +1203,7 @@ export function buildL2SessionSavePayload(
       endedAt,
       score: highScoreCount,
       total: state.results.length,
-      xp: state.totalXp,
+      xp: state.isRetry ? 0 : state.totalXp,
       items: attemptItems,
     },
     updatedCards: Array.from(updatedCardsMap.values()),
