@@ -54,6 +54,29 @@ export const BOSS_CARD_COUNT = 5;
 export const BOSS_MAX_HP = 100;
 export const BOSS_DAMAGE_PER_CARD = 20;
 export const BOSS_DEFEAT_XP = 50;
+export const SESSION_COMPLETE_FIRST_XP = 20;
+export const SESSION_COMPLETE_REPEAT_XP = 5;
+export const THORNY_PATH_CARD_COUNT = 5;
+export const THORNY_PATH_XP_MULT = 1.5;
+export const MAX_COMBO_MULTIPLIER = 2;
+
+export type V1ForkPath = 'safe' | 'thorny';
+export type V1BossModifier = 'no_hints' | 'must_type' | 'listen_only';
+
+export const BOSS_MODIFIER_INFO: Record<V1BossModifier, { labelVi: string; descVi: string }> = {
+  no_hints: {
+    labelVi: 'Không gợi ý',
+    descVi: 'Ẩn nút gợi ý trong suốt chặng Boss.',
+  },
+  must_type: {
+    labelVi: 'Phải gõ',
+    descVi: 'Tự gõ từ tiếng Anh, không dùng trắc nghiệm.',
+  },
+  listen_only: {
+    labelVi: 'Chỉ nghe',
+    descVi: 'Nghe phát âm thật và gõ chính tả 100%.',
+  },
+};
 
 export const V1_FACES = [
   'intro',
@@ -350,6 +373,8 @@ export interface V1RunNode {
   status: 'pending' | 'correct' | 'partial' | 'wrong' | 'seen';
   repaired: boolean;
   fromIntroKnowAlready?: boolean;
+  /** Thẻ thuộc nhánh "Đường gai" thưởng ×1,5 XP (01-GAME §6.3). */
+  isThornyNode?: boolean;
 }
 
 export interface V1FeedbackState {
@@ -362,6 +387,8 @@ export interface V1FeedbackState {
   rating: Grade;
   xpEarned: number;
   explanationVi: string;
+  /** PP-03: gợi ý ngắn "Lần sau để ý gì" cho FeedbackPanel. */
+  nextTipVi?: string;
   exampleEn?: string;
   collocationHighlight?: string;
   vnTrap?: string;
@@ -410,8 +437,14 @@ export type V1EngineEvent =
       totalStages: number;
     }
   | {
+      type: 'fork_chosen';
+      path: V1ForkPath;
+      cardCount: number;
+    }
+  | {
       type: 'boss_started';
       bossCardCount: number;
+      modifier: V1BossModifier;
     }
   | {
       type: 'boss_hit';
@@ -445,6 +478,11 @@ export interface V1RecapSummary {
   matureOrMasteredCount: number;
   tomorrowDueForecast: number;
   totalXp: number;
+  baseXp: number;
+  effectiveComboMultiplier: number;
+  comboBonusXp: number;
+  bossBonusXp: number;
+  sessionCompletionXp: number;
   maxCombo: number;
   bossDefeated: boolean;
   winStatement: string;
@@ -454,6 +492,8 @@ export interface V1RecapSummary {
 export interface V1RunState {
   mode: V1RunMode;
   phase: V1RunPhase;
+  examMode: boolean;
+  completedRunsToday: number;
   skillLevel: number;
   startedAt: number;
   isExtraPractice: boolean;
@@ -467,10 +507,14 @@ export interface V1RunState {
   bossHp: number;
   bossMaxHp: number;
   bossDefeated: boolean;
+  bossModifier: V1BossModifier | null;
+  preferredBossModifier?: V1BossModifier;
   bossCandidateCards: SRSCard[];
+  chosenForkPath: V1ForkPath | null;
   combo: number;
   maxCombo: number;
   totalXp: number;
+  baseXpTotal: number;
   firstAttemptRecordedCardIds: Record<string, boolean>;
   firstAttemptCorrectCount: number;
   firstAttemptTotalCount: number;
@@ -501,6 +545,11 @@ export interface CreateV1RunOptions {
   cards: readonly SRSCard[];
   content: V1ContentBundle;
   mode?: V1RunMode;
+  examMode?: boolean;
+  /** Số phiên V1 đã hoàn thành trong ngày (0 → thưởng hoàn thành +20 XP; ≥ 1 → +5 XP). */
+  completedRunsToday?: number;
+  /** Luật Boss chỉ định (dùng cho test; mặc định chọn ngẫu nhiên theo seed). */
+  bossModifier?: V1BossModifier;
   skillLevel?: number;
   newCardsLimit?: number;
   newCardsDoneToday?: number;
@@ -1026,9 +1075,6 @@ function resolveCollocationPhrases(
       }
     }
   }
-  while (found.length < 2) {
-    found.push(`${vocab.headword} (${vocab.pos[0] ?? 'n'})`);
-  }
   return found.slice(0, 2);
 }
 
@@ -1354,7 +1400,9 @@ export function buildPromptForCard(
   const vocab = idx.vocab.get(itemId);
   if (!vocab) return null;
   const collocations = resolveCollocationPhrases(vocab, content);
-  const example0 = vocab.examples[0];
+  const example0 = vocab.examples[0] ?? {
+    en: `${vocab.headword} (${vocab.pos.join(', ')}) — ${vocab.meaningVi}`,
+  };
 
   if (face === 'intro') {
     return {
@@ -1476,67 +1524,89 @@ export function buildPromptForCard(
 }
 
 // ---------------------------------------------------------------------------
-// XP, Combo, and Win Statement Calculations
+// XP, Combo, and Win Statement Calculations (01-GAME.md §5)
 // ---------------------------------------------------------------------------
 
-export function getComboMultiplier(combo: number): 1 | 2 | 3 {
-  if (combo >= 10) return 3;
-  if (combo >= 5) return 2;
+export function getComboMultiplier(combo: number): 1 | 1.5 | 2 {
+  if (combo >= 10) return 2;
+  if (combo >= 5) return 1.5;
   return 1;
+}
+
+/** Các mặt sản xuất / tự gõ được thưởng gốc 15 XP; mặt nhận diện / gợi nhớ trắc nghiệm gốc 10 XP. */
+export function isProductionFace(face: V1Face): boolean {
+  return (
+    face === 'recall_meaning' ||
+    face === 'recall_cloze' ||
+    face === 'listen_spell' ||
+    face === 'col_gap' ||
+    face === 'err_fix' ||
+    face === 'ltrap_replay' ||
+    face === 'dict_full' ||
+    face === 'err_user'
+  );
 }
 
 export interface V1TurnXpInput {
   rating: Grade;
   combo: number;
+  face?: V1Face;
   isNewCard?: boolean;
   isRare?: boolean;
   isRetry?: boolean;
   isExtraPractice?: boolean;
+  /** Thẻ thuộc nhánh "Đường gai" (×1,5 XP, vẫn có trần). */
+  isThornyPath?: boolean;
+  examMode?: boolean;
 }
 
 /**
- * Compute XP earned for a single V1 turn (docs/games/V1-DAILY-RUN.md §4):
- * - Good = 10, Easy = 12, Hard = 6, Again = 0
- * - New card learned = +5
- * - Combo: x2 (>= 5 consecutive correct), x3 (>= 10 consecutive correct)
- * - Rare card: x3
- * - Retries or Extra Practice: 0 XP
+ * Kinh tế XP thống nhất (01-GAME.md §5):
+ * - Gợi nhớ đúng lượt đầu (recog / para_match / tfng_retry / head_retry): 10 XP × combo (trần ×2)
+ * - Sản xuất / gõ đúng lượt đầu (recall_* / listen_spell / col_gap / err_* / dict_full / ltrap): 15 XP × combo (trần ×2)
+ * - Combo: ×1 (<5), ×1,5 (≥5), ×2 (≥10), trần cứng ×2
+ * - Đường gai (Run Fork): thưởng rủi ro cộng thêm +50% XP gốc (tách biệt với trần combo ×2)
+ * - Retry, Extra Practice, "Đã xem", Exam, Again: 0 XP
  */
 export function computeV1TurnXp(input: V1TurnXpInput): number {
   const {
     rating,
     combo,
-    isNewCard = false,
-    isRare = false,
+    face,
     isRetry = false,
     isExtraPractice = false,
+    isThornyPath = false,
+    examMode = false,
   } = input;
 
-  if (isRetry || isExtraPractice || rating === Rating.Again) {
+  if (examMode || isRetry || isExtraPractice || rating === Rating.Again) {
     return 0;
   }
 
-  let base = 0;
-  switch (rating) {
-    case Rating.Good:
-      base = 10;
-      break;
-    case Rating.Easy:
-      base = 12;
-      break;
-    case Rating.Hard:
-      base = 6;
-      break;
-    default:
-      base = 0;
-      break;
+  const base = face && isProductionFace(face) ? 15 : 10;
+  const comboMult = Math.min(MAX_COMBO_MULTIPLIER, getComboMultiplier(combo));
+  const thornyBonus = isThornyPath ? Math.round(base * (THORNY_PATH_XP_MULT - 1)) : 0;
+
+  return Math.round(base * comboMult) + thornyBonus;
+}
+
+/** Thưởng hoàn thành phiên: +20 XP lần đầu ngày, +5 XP các lần sau trong ngày; 0 ở Exam / Extra Practice. */
+export function computeSessionCompletionXp(options: {
+  completedRunsToday?: number;
+  isExtraPractice?: boolean;
+  examMode?: boolean;
+  firstAttemptTotalCount?: number;
+}): number {
+  if (
+    options.examMode ||
+    options.isExtraPractice ||
+    (options.firstAttemptTotalCount ?? 0) <= 0
+  ) {
+    return 0;
   }
-
-  const comboMult = getComboMultiplier(combo);
-  const rareMult = isRare ? 3 : 1;
-  const newCardBonus = isNewCard ? 5 : 0;
-
-  return base * comboMult * rareMult + newCardBonus;
+  return (options.completedRunsToday ?? 0) === 0
+    ? SESSION_COMPLETE_FIRST_XP
+    : SESSION_COMPLETE_REPEAT_XP;
 }
 
 export interface WinStatementInput {
@@ -2145,6 +2215,9 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     cards,
     content,
     mode = 'standard',
+    examMode = false,
+    completedRunsToday = 0,
+    bossModifier,
     skillLevel = 1,
     newCardsLimit = 15,
     newCardsDoneToday = 0,
@@ -2297,6 +2370,8 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
   return {
     mode: isExtraPractice ? 'extra_practice' : mode,
     phase: startOnMap ? 'map_intro' : 'playing',
+    examMode,
+    completedRunsToday,
     skillLevel,
     startedAt: now.getTime(),
     isExtraPractice,
@@ -2310,10 +2385,14 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
     bossHp: BOSS_MAX_HP,
     bossMaxHp: BOSS_MAX_HP,
     bossDefeated: false,
+    bossModifier: null,
+    preferredBossModifier: bossModifier,
     bossCandidateCards,
+    chosenForkPath: null,
     combo: 0,
     maxCombo: 0,
     totalXp: 0,
+    baseXpTotal: 0,
     firstAttemptRecordedCardIds: {},
     firstAttemptCorrectCount: 0,
     firstAttemptTotalCount: 0,
@@ -2372,6 +2451,9 @@ export function startPlayingFromMap(state: V1RunState): V1RunState {
 export function applyNodeHint(state: V1RunState): V1RunState {
   const active = getActiveNode(state);
   if (!active || state.feedback !== null) return state;
+
+  // Luật Boss "Không gợi ý" (01-GAME §6.3): chặn hoàn toàn nút/phím gợi ý trong pha Boss
+  if (state.phase === 'boss' && state.bossModifier === 'no_hints') return state;
 
   // Chép cả câu: không có chữ nào để gợi ý
   if (active.prompt.face === 'dict_full') return state;
@@ -2658,11 +2740,16 @@ export function submitNodeAnswer(
   const turnXp = computeV1TurnXp({
     rating,
     combo: nextCombo,
+    face: active.face,
     isNewCard: isFirstAttempt && active.isNewCard,
     isRare: active.isRare,
     isRetry: active.isRetry || active.isBossNode,
     isExtraPractice: state.isExtraPractice,
+    isThornyPath: Boolean(active.isThornyNode),
+    examMode: state.examMode,
   });
+  const turnBaseXp =
+    turnXp > 0 ? (isProductionFace(active.face) ? 15 : 10) : 0;
 
   const nextUpdatedCards = { ...state.updatedCards };
   const nextAllCardsSnapshot = { ...state.allCardsSnapshot };
@@ -2837,12 +2924,11 @@ export function submitNodeAnswer(
       });
       if (nextBossHp === 0 && !state.bossDefeated) {
         nextBossDefeated = true;
-        if (!state.isExtraPractice) {
-          nextTotalXp += BOSS_DEFEAT_XP;
-        }
+        const bossBonus = state.isExtraPractice || state.examMode ? 0 : BOSS_DEFEAT_XP;
+        nextTotalXp += bossBonus;
         nextEvents.push({
           type: 'boss_defeated',
-          bonusXp: state.isExtraPractice ? 0 : BOSS_DEFEAT_XP,
+          bonusXp: bossBonus,
         });
       }
     } else {
@@ -2921,13 +3007,14 @@ export function submitNodeAnswer(
     rating,
     xpEarned: turnXp,
     explanationVi: outcome.explanationVi,
+    nextTipVi: buildNextTipVi(active.prompt, outcome),
     exampleEn: outcome.exampleEn,
     collocationHighlight: outcome.collocationHighlight,
     vnTrap: outcome.vnTrap,
     charDiff: outcome.charDiff,
     wrongCharNotice: outcome.wrongCharNotice,
     spellingAnalysis: outcome.spellingAnalysis,
-    autoAdvanceMs: outcome.status === 'correct' ? 1200 : undefined,
+    autoAdvanceMs: outcome.status === 'correct' ? 800 : undefined,
   };
 
   return {
@@ -2939,6 +3026,7 @@ export function submitNodeAnswer(
     combo: nextCombo,
     maxCombo: nextMaxCombo,
     totalXp: nextTotalXp,
+    baseXpTotal: state.baseXpTotal + turnBaseXp,
     firstAttemptRecordedCardIds: nextFirstAttemptRecorded,
     firstAttemptCorrectCount: nextFirstAttemptCorrect,
     firstAttemptTotalCount: nextFirstAttemptTotal,
@@ -2953,6 +3041,42 @@ export function submitNodeAnswer(
     feedback,
     events: nextEvents,
   };
+}
+
+/** PP-03: tạo gợi ý ngắn 1 câu "Lần sau để ý" khi sai hoặc gần đúng. */
+function buildNextTipVi(prompt: V1PromptPayload, outcome: ScoreNodeOutcome): string | undefined {
+  if (outcome.status === 'correct') return undefined;
+  if (outcome.spellingAnalysis?.tipVi) return outcome.spellingAnalysis.tipVi;
+  if (outcome.vnTrap) return outcome.vnTrap;
+  if (outcome.wrongCharNotice) return outcome.wrongCharNotice;
+  switch (prompt.face) {
+    case 'recog':
+      return `Gắn từ "${prompt.headword}" với ngữ cảnh ví dụ thay vì dịch từng chữ rời.`;
+    case 'recall_meaning':
+      return `Nhớ cụm chữ đầu và số chữ cái (${prompt.letterCount}) của "${prompt.headword}".`;
+    case 'recall_cloze':
+      return `Kiểm tra loại từ và thì ngữ pháp của chỗ trống trước khi gõ.`;
+    case 'listen_spell':
+      return `Tách từng âm tiết khi nghe và để ý các chữ đôi hoặc âm câm.`;
+    case 'col_gap':
+      return `Học nguyên cụm "${prompt.phrase}" thay vì ghép từng từ rời.`;
+    case 'para_match':
+      return `So nghĩa cả cụm trong ngữ cảnh câu thay vì chỉ bắt từ giống bề mặt.`;
+    case 'err_fix':
+      return prompt.ruleVi;
+    case 'tfng_retry':
+      return `Đối chiếu từng chi tiết khẳng định trong câu với bằng chứng ở đoạn ${prompt.paragraphLabel}.`;
+    case 'head_retry':
+      return `Tìm ý bao trùm cả đoạn ${prompt.paragraphLabel}, tránh tiêu đề chỉ nói 1 chi tiết nhỏ.`;
+    case 'ltrap_replay':
+      return prompt.trapExplanationVi;
+    case 'dict_full':
+      return prompt.tipsVi[0] ?? 'Nghe lại cụm nối âm và đuôi số nhiều/quá khứ.';
+    case 'err_user':
+      return prompt.noteVi;
+    default:
+      return undefined;
+  }
 }
 
 function getPromptDisplayLabel(prompt: V1PromptPayload): string {
@@ -2985,18 +3109,60 @@ function getPromptDisplayLabel(prompt: V1PromptPayload): string {
   }
 }
 
+/**
+ * Chọn Luật Boss ngẫu nhiên trong 3 luật học thật (`01-GAME §6.3`):
+ * - `no_hints` ("Không gợi ý")
+ * - `must_type` ("Phải gõ")
+ * - `listen_only` ("Chỉ nghe"): CHỈ dùng khi mọi thẻ Boss đều có MP3 thật; thiếu MP3 tự hạ về `no_hints` (SR-22).
+ */
+export function selectBossModifier(
+  candidates: readonly SRSCard[],
+  content: V1ContentBundle,
+  seedKey: string,
+  preferred?: V1BossModifier,
+): V1BossModifier {
+  const idx = getContentIndex(content);
+  const missingAudio = new Set(content.extras?.missingAudio ?? []);
+  const canUseListenOnly =
+    candidates.length > 0 &&
+    candidates.every((card) => {
+      if (!card.itemId.startsWith('vocab:')) return false;
+      const vocab = idx.vocab.get(card.itemId);
+      return Boolean(vocab?.audio?.uk && !missingAudio.has(card.itemId));
+    });
+
+  if (preferred) {
+    if (preferred === 'listen_only' && !canUseListenOnly) return 'no_hints';
+    return preferred;
+  }
+
+  const rng = seededRng(`${seedKey}|boss_modifier`);
+  const pool: readonly V1BossModifier[] = ['no_hints', 'must_type', 'listen_only'];
+  const picked = pool[Math.floor(rng() * pool.length)] ?? 'no_hints';
+  if (picked === 'listen_only' && !canUseListenOnly) return 'no_hints';
+  return picked;
+}
+
 function buildBossNodes(
   candidates: readonly SRSCard[],
   content: V1ContentBundle,
   skillLevel: number,
   totalStages: number,
   seedDay: string,
+  modifier: V1BossModifier,
 ): V1RunNode[] {
   const nodes: V1RunNode[] = [];
   for (const card of candidates) {
     // Boss luôn là gợi nhớ/nhận diện thật, không bao giờ `intro`
-    const bossFace = resolveV1Face(card, content, { allowIntro: false });
+    let bossFace = resolveV1Face(card, content, { allowIntro: false });
     if (!bossFace) continue;
+    if (card.itemId.startsWith('vocab:')) {
+      if (modifier === 'must_type' && bossFace === 'recog') {
+        bossFace = 'recall_meaning';
+      } else if (modifier === 'listen_only') {
+        bossFace = 'listen_spell';
+      }
+    }
     const node = makeNode({
       nodeId: `boss-${nodes.length + 1}-${card.id}`,
       card,
@@ -3017,7 +3183,40 @@ function buildBossNodes(
   return nodes;
 }
 
-function buildRecapSummary(state: V1RunState, now: Date): V1RecapSummary {
+function finalizeRecap(state: V1RunState, now: Date): V1RunState {
+  const sessionCompletionXp = computeSessionCompletionXp({
+    completedRunsToday: state.completedRunsToday,
+    isExtraPractice: state.isExtraPractice,
+    examMode: state.examMode,
+    firstAttemptTotalCount: state.firstAttemptTotalCount,
+  });
+  const totalXp = state.examMode ? 0 : state.totalXp + sessionCompletionXp;
+  const stateWithBonus: V1RunState = {
+    ...state,
+    totalXp,
+  };
+  const recap = buildRecapSummary(stateWithBonus, now, sessionCompletionXp);
+  return {
+    ...stateWithBonus,
+    phase: 'recap',
+    feedback: null,
+    recap,
+    events: [
+      ...stateWithBonus.events,
+      {
+        type: 'run_completed',
+        totalXp: stateWithBonus.totalXp,
+        firstAttemptAccuracy: recap.firstAttemptAccuracy,
+      },
+    ],
+  };
+}
+
+function buildRecapSummary(
+  state: V1RunState,
+  now: Date,
+  sessionCompletionXp = 0,
+): V1RecapSummary {
   const firstAttemptTotal = Math.max(1, state.firstAttemptTotalCount);
   const firstAttemptAccuracy = Math.round(
     (state.firstAttemptCorrectCount / firstAttemptTotal) * 100,
@@ -3042,6 +3241,27 @@ function buildRecapSummary(state: V1RunState, now: Date): V1RecapSummary {
     maxCombo: state.maxCombo,
   });
 
+  const bossBonusXp =
+    state.bossDefeated && !state.isExtraPractice && !state.examMode ? BOSS_DEFEAT_XP : 0;
+  const turnXpTotal = Math.max(0, state.totalXp - bossBonusXp - sessionCompletionXp);
+  const rawTurnBonus = Math.max(0, turnXpTotal - state.baseXpTotal);
+  let effectiveComboMultiplier = 1;
+  let comboBonusXp = 0;
+
+  if (state.baseXpTotal > 0 && rawTurnBonus > 0) {
+    const candidateMult = Number((turnXpTotal / state.baseXpTotal).toFixed(1));
+    if (
+      candidateMult > 1 &&
+      Math.round(state.baseXpTotal * candidateMult) === turnXpTotal
+    ) {
+      effectiveComboMultiplier = candidateMult;
+    } else {
+      comboBonusXp = rawTurnBonus;
+    }
+  } else if (rawTurnBonus > 0) {
+    comboBonusXp = rawTurnBonus;
+  }
+
   return {
     totalCards: state.firstAttemptTotalCount,
     firstAttemptCorrect: state.firstAttemptCorrectCount,
@@ -3050,6 +3270,11 @@ function buildRecapSummary(state: V1RunState, now: Date): V1RecapSummary {
     matureOrMasteredCount,
     tomorrowDueForecast,
     totalXp: state.totalXp,
+    baseXp: state.baseXpTotal,
+    effectiveComboMultiplier,
+    comboBonusXp,
+    bossBonusXp,
+    sessionCompletionXp,
     maxCombo: state.maxCombo,
     bossDefeated: state.bossDefeated,
     winStatement,
@@ -3075,20 +3300,7 @@ export function advanceAfterFeedback(
       clearedState.bossHp <= 0 ||
       nextBossIndex >= clearedState.bossNodes.length
     ) {
-      const recap = buildRecapSummary(clearedState, now);
-      return {
-        ...clearedState,
-        phase: 'recap',
-        recap,
-        events: [
-          ...clearedState.events,
-          {
-            type: 'run_completed',
-            totalXp: clearedState.totalXp,
-            firstAttemptAccuracy: recap.firstAttemptAccuracy,
-          },
-        ],
-      };
+      return finalizeRecap(clearedState, now);
     }
     return {
       ...clearedState,
@@ -3100,47 +3312,46 @@ export function advanceAfterFeedback(
   const nextIndex = clearedState.currentIndex + 1;
   if (nextIndex >= clearedState.nodes.length) {
     // Transition into Boss phase if bossCandidateCards exist
-    const bossNodes =
+    const modifier =
       clearedState.bossCandidateCards.length > 0
+        ? selectBossModifier(
+            clearedState.bossCandidateCards,
+            clearedState.content,
+            `${seedDayOf(clearedState)}|${clearedState.startedAt}`,
+            clearedState.preferredBossModifier,
+          )
+        : null;
+    const bossNodes =
+      modifier !== null && clearedState.bossCandidateCards.length > 0
         ? buildBossNodes(
             clearedState.bossCandidateCards,
             clearedState.content,
             clearedState.skillLevel,
             clearedState.totalStages,
             seedDayOf(clearedState),
+            modifier,
           )
         : [];
-    if (bossNodes.length > 0) {
+    if (bossNodes.length > 0 && modifier !== null) {
       return {
         ...clearedState,
         phase: 'boss',
         bossNodes,
         bossIndex: 0,
         bossHp: BOSS_MAX_HP,
+        bossModifier: modifier,
         events: [
           ...clearedState.events,
           {
             type: 'boss_started',
             bossCardCount: bossNodes.length,
+            modifier,
           },
         ],
       };
     }
 
-    const recap = buildRecapSummary(clearedState, now);
-    return {
-      ...clearedState,
-      phase: 'recap',
-      recap,
-      events: [
-        ...clearedState.events,
-        {
-          type: 'run_completed',
-          totalXp: clearedState.totalXp,
-          firstAttemptAccuracy: recap.firstAttemptAccuracy,
-        },
-      ],
-    };
+    return finalizeRecap(clearedState, now);
   }
 
   const prevStage = clearedState.nodes[clearedState.currentIndex]?.stageIndex ?? 0;
@@ -3170,14 +3381,96 @@ export function advanceAfterFeedback(
 }
 
 /**
- * Continue from a stage checkpoint into the next stage.
+ * Xem trước 5 thẻ retrievability thấp nhất cho nhánh "Đường gai" tại checkpoint (01-GAME §6.3).
  */
-export function continueFromCheckpoint(state: V1RunState): V1RunState {
+export function previewThornyForkCards(state: V1RunState): V1RunNode[] {
+  const remaining = state.nodes.slice(state.currentIndex);
+  const sorted = [...remaining].sort((a, b) => a.retrievability - b.retrievability);
+  const picked: V1RunNode[] = [];
+  const seen = new Set<string>();
+  for (const n of sorted) {
+    if (picked.length >= THORNY_PATH_CARD_COUNT) break;
+    if (seen.has(n.itemId)) continue;
+    seen.add(n.itemId);
+    picked.push(n);
+  }
+  for (const n of sorted) {
+    if (picked.length >= Math.min(THORNY_PATH_CARD_COUNT, remaining.length)) break;
+    if (!picked.some((p) => p.nodeId === n.nodeId)) picked.push(n);
+  }
+  return picked;
+}
+
+/**
+ * Ngã ba run (Run Fork, 01-GAME §6.3) tại Checkpoint:
+ * - `'safe'` ("Đường an toàn", phím Enter): tiếp tục các thẻ đến hạn chuẩn.
+ * - `'thorny'` ("Đường gai", phím →): chọn 5 thẻ retrievability thấp nhất/khó nhất, thưởng ×1,5 XP.
+ */
+export function chooseCheckpointFork(
+  state: V1RunState,
+  path: V1ForkPath,
+): V1RunState {
   if (state.phase !== 'checkpoint') return state;
+
+  if (path === 'safe') {
+    const remainingStageCount = state.nodes
+      .slice(state.currentIndex)
+      .filter((n) => n.stageIndex === state.currentStage).length;
+    return {
+      ...state,
+      phase: 'playing',
+      chosenForkPath: 'safe',
+      events: [
+        ...state.events,
+        {
+          type: 'fork_chosen',
+          path: 'safe',
+          cardCount: remainingStageCount,
+        },
+      ],
+    };
+  }
+
+  // 'thorny': rút 5 thẻ retrievability thấp nhất trong phần còn lại của run làm chặng gai ×1,5 XP
+  const before = state.nodes.slice(0, state.currentIndex);
+  const thornyPicked = previewThornyForkCards(state).map((n, idx) => ({
+    ...n,
+    nodeId: `thorny-${state.currentStage}-${idx + 1}-${n.card.id}`,
+    stageIndex: state.currentStage,
+    isThornyNode: true,
+  }));
+
+  if (thornyPicked.length === 0) {
+    return {
+      ...state,
+      phase: 'playing',
+      chosenForkPath: 'safe',
+    };
+  }
+
+  const nextNodes = [...before, ...thornyPicked];
   return {
     ...state,
     phase: 'playing',
+    nodes: nextNodes,
+    totalStages: state.currentStage + 1,
+    chosenForkPath: 'thorny',
+    events: [
+      ...state.events,
+      {
+        type: 'fork_chosen',
+        path: 'thorny',
+        cardCount: thornyPicked.length,
+      },
+    ],
   };
+}
+
+/**
+ * Continue from a stage checkpoint into the next stage (mặc định "Đường an toàn").
+ */
+export function continueFromCheckpoint(state: V1RunState): V1RunState {
+  return chooseCheckpointFork(state, 'safe');
 }
 
 /**
@@ -3187,20 +3480,41 @@ export function finishAtCheckpoint(
   state: V1RunState,
   now: Date = new Date(),
 ): V1RunState {
-  const recap = buildRecapSummary(state, now);
+  return finalizeRecap(state, now);
+}
+
+/**
+ * Cập nhật `content` của run sau khi nạp lười `words.detail.json` (D17), làm giàu prompt của các
+ * node còn `pending` mà không làm mất tiến độ, combo hay phản hồi hiện tại.
+ */
+export function hydrateRunContent(
+  state: V1RunState,
+  mergedContent: V1ContentBundle,
+): V1RunState {
+  const seedDay = seedDayOf(state);
+  const rebuild = (n: V1RunNode, isActiveWithFeedback: boolean): V1RunNode => {
+    if (n.status !== 'pending' || isActiveWithFeedback) return n;
+    if (!n.itemId.startsWith('vocab:')) return n;
+    const rebuilt = buildPromptForCard(n.itemId, n.face, mergedContent, state.skillLevel, {
+      seedKey: `${n.card.id}|${n.card.reps}|${seedDay}|r${n.retryCount}`,
+    });
+    if (!rebuilt) return n;
+    // Bảo toàn số chữ cái đã lộ nếu người học đã bấm Gợi ý trên node hiện tại
+    const target = getTypedTargetText(rebuilt);
+    const promptWithHints =
+      target && n.revealedLetters > 0 && 'placeholderMask' in rebuilt
+        ? ({ ...rebuilt, placeholderMask: buildPlaceholderMask(target, n.revealedLetters) } as V1PromptPayload)
+        : rebuilt;
+    return { ...n, prompt: promptWithHints };
+  };
+
+  const activeNodeId = getActiveNode(state)?.nodeId;
+  const hasFeedback = state.feedback !== null;
   return {
     ...state,
-    phase: 'recap',
-    feedback: null,
-    recap,
-    events: [
-      ...state.events,
-      {
-        type: 'run_completed',
-        totalXp: state.totalXp,
-        firstAttemptAccuracy: recap.firstAttemptAccuracy,
-      },
-    ],
+    content: mergedContent,
+    nodes: state.nodes.map((n) => rebuild(n, hasFeedback && n.nodeId === activeNodeId)),
+    bossNodes: state.bossNodes.map((n) => rebuild(n, hasFeedback && n.nodeId === activeNodeId)),
   };
 }
 

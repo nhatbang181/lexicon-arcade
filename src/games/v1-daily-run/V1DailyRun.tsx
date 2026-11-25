@@ -12,16 +12,19 @@ import {
   Award,
   Zap,
   BookmarkCheck,
+  RotateCw,
+  Shield,
+  Swords,
 } from 'lucide-react';
-import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import {
   AnswerInput,
   AudioButton,
   Button,
   Card,
-  ChoiceButton,
   EmptyState,
-  FeedbackPanel,
+  LiveCard,
+  Mascot,
   Pill,
   ProgressRing,
   RecapScreen,
@@ -31,8 +34,17 @@ import {
   pickVariants,
   questionSlideVariants,
 } from '../../design/motion';
+import {
+  emit,
+  haptic,
+  numberPop,
+  screenPunch,
+  useFxTier,
+  type FxTierCapabilities,
+} from '../../design/fx';
 import { registerProgressSaver } from '../../core/adaptive/progressSaver';
-import { playSfx } from '../../core/audio/sfx';
+import { formatBandLabel } from '../../core/adaptive/sessionLevel';
+import { computeComboRate, playSfx, sfxEngine } from '../../core/audio/sfx';
 import { resolveAssetUrl } from '../../core/content/loaders';
 import { attemptRepo } from '../../core/storage/repos/attemptRepo';
 import { cardRepo } from '../../core/storage/repos/cardRepo';
@@ -42,33 +54,56 @@ import type { SRSCard } from '../../core/srs/fsrsAdapter';
 import { computeAbsenceDays } from '../../core/srs/queue';
 import type { GameProps } from '../registry';
 import {
+  BOSS_MODIFIER_INFO,
   advanceAfterFeedback,
   applyNodeHint,
   buildV1ProgressPayload,
+  chooseCheckpointFork,
   computeLastWeekAccuracy,
   computeRecent7DayRetention,
-  continueFromCheckpoint,
   createV1Run,
   finishAtCheckpoint,
   getActiveNode,
   getComboMultiplier,
   getRevealedPrefix,
   getTypedTargetText,
+  hydrateRunContent,
   isChoicePrompt,
+  previewThornyForkCards,
   recordNodeAudioPlay,
   refundNodeAudioPlay,
   startPlayingFromMap,
   submitIntroAction,
   submitNodeAnswer,
-  type CharDiffSegment,
   type V1ContentBundle,
+  type V1ForkPath,
   type V1RunMode,
   type V1RunState,
 } from './engine';
-import { loadV1Content, loadV1Extras } from './extras';
+import {
+  hasVocabDetails,
+  loadV1Content,
+  loadV1Extras,
+  loadV1VocabDetails,
+  mergeVocabDetails,
+} from './extras';
 import { createProgressSaver } from './progressSaver';
 import { buildStarterVocabCards } from './starter';
 import { RunMap } from './RunMap';
+import {
+  GameLink,
+  PlaceholderMaskDisplay,
+  ProgressSweepBar,
+  QuoteHighlight,
+  V1ChoiceItem,
+  V1FeedbackSection,
+} from './V1JuiceBits';
+
+function getCheckpointMascotLine(maxCombo: number): string {
+  return maxCombo >= 2
+    ? `Nửa đường rồi — combo dài nhất ${maxCombo}!`
+    : 'Xong Chặng 1 rồi — chọn nhánh tiếp theo nhé!';
+}
 
 type LoadState =
   | { kind: 'loading' }
@@ -80,12 +115,21 @@ interface RunContext {
   content: V1ContentBundle;
   newCardsLimit: number;
   newCardsDoneToday: number;
+  completedRunsToday: number;
   lastWeekAccuracy: number | null;
   retention7d: number | null;
   absenceDays: number;
 }
 
+interface InterstitialBanner {
+  title: string;
+  subtitle: string;
+  mascotState: 'vui' | 'co-vu' | 'an-mung';
+  mascotSay: string;
+}
+
 const DAY_MS = 86_400_000;
+const INTERSTITIAL_MS = 1_200;
 
 function startOfLocalDay(now: Date): number {
   const d = new Date(now);
@@ -115,8 +159,15 @@ async function logMissingItems(items: V1RunState['missingItems']): Promise<void>
   }
 }
 
-export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
-  const prefersReduced = useReducedMotion() ?? false;
+export const V1DailyRun: React.FC<GameProps> = ({
+  mode,
+  level,
+  onExit,
+  nextTask,
+  onNextTask,
+}) => {
+  const isExam = mode === 'exam';
+  const fx = useFxTier({ examMode: isExam });
   const initialRunMode: V1RunMode = mode === 'sprint' ? 'busy' : 'standard';
 
   const [loadState, setLoadState] = useState<LoadState>({ kind: 'loading' });
@@ -130,15 +181,36 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   const [sessionSaved, setSessionSaved] = useState<boolean>(false);
   const [starting, setStarting] = useState<boolean>(false);
 
+  // Juice & UI states
+  const [introFlipped, setIntroFlipped] = useState<boolean>(false);
+  const [progressSweepKey, setProgressSweepKey] = useState<number>(0);
+  const [revealCorrectReady, setRevealCorrectReady] = useState<boolean>(false);
+  const [brokenComboGhost, setBrokenComboGhost] = useState<{ id: number; count: number } | null>(null);
+  const [interstitial, setInterstitial] = useState<InterstitialBanner | null>(null);
+
   const nodeStartedAtRef = useRef<number>(Date.now());
   const audioElRef = useRef<HTMLAudioElement | null>(null);
   const fallbackTimerRef = useRef<number | null>(null);
+  const hitStopTimerRef = useRef<number | null>(null);
+  const revealTimerRef = useRef<number | null>(null);
+  const interstitialTimerRef = useRef<number | null>(null);
   const mountedRef = useRef<boolean>(true);
   const initTokenRef = useRef<number>(0);
   const contextRef = useRef<RunContext | null>(null);
   const newCardsLimitRef = useRef<number>(15);
+  const detailsLoadedRef = useRef<boolean>(false);
+  const prevPhaseRef = useRef<V1RunState['phase'] | null>(null);
 
-  // Lưu tiến độ giữa phiên (G3): hàng đợi ghi tuần tự, mỗi run 1 session riêng (xem progressSaver.ts).
+  const questionCardRef = useRef<HTMLDivElement | null>(null);
+  const bossStageRef = useRef<HTMLDivElement | null>(null);
+  const mobileHudRef = useRef<HTMLDivElement | null>(null);
+  const desktopHudRef = useRef<HTMLDivElement | null>(null);
+  const mobileXpRef = useRef<HTMLSpanElement | null>(null);
+  const desktopXpRef = useRef<HTMLSpanElement | null>(null);
+  const mobileComboRef = useRef<HTMLSpanElement | null>(null);
+  const desktopComboRef = useRef<HTMLSpanElement | null>(null);
+
+  // Lưu tiến độ giữa phiên (G3)
   const saverRef = useRef(
     createProgressSaver({
       saveProgress: (payload) => attemptRepo.saveProgress(payload),
@@ -160,6 +232,55 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     setSessionSaved(false);
   }, []);
 
+  const getVisibleElement = useCallback(
+    (mobileEl: HTMLElement | null, desktopEl: HTMLElement | null): HTMLElement | null => {
+      if (desktopEl) {
+        const r = desktopEl.getBoundingClientRect();
+        if (r.width > 0 && r.height > 0) return desktopEl;
+      }
+      if (mobileEl) {
+        const r = mobileEl.getBoundingClientRect();
+        if (r.width > 0 && r.height > 0) return mobileEl;
+      }
+      return desktopEl ?? mobileEl;
+    },
+    [],
+  );
+
+  // Nạp lười words.detail.json ở nền (D17) CHỈ cho các từ vựng có trong phiên hiện tại (tránh chặn main thread)
+  const ensureVocabDetailsLoaded = useCallback((run: V1RunState) => {
+    if (detailsLoadedRef.current) return;
+    const ctx = contextRef.current;
+    if (!ctx || ctx.content.vocab.length === 0) return;
+    const detailItemIds = Array.from(
+      new Set(
+        run.nodes
+          .filter((n) => n.itemId.startsWith('vocab:'))
+          .map((n) => n.itemId),
+      ),
+    );
+    if (detailItemIds.length === 0) return;
+    if (hasVocabDetails(ctx.content.vocab[0])) {
+      detailsLoadedRef.current = true;
+      return;
+    }
+    detailsLoadedRef.current = true;
+    void loadV1VocabDetails({ itemIds: detailItemIds })
+      .then((detailMap) => {
+        if (!mountedRef.current || !contextRef.current) return;
+        const mergedVocab = mergeVocabDetails(contextRef.current.content.vocab, detailMap);
+        const mergedBundle: V1ContentBundle = {
+          ...contextRef.current.content,
+          vocab: mergedVocab,
+        };
+        contextRef.current = { ...contextRef.current, content: mergedBundle };
+        setRunState((prev) => (prev ? hydrateRunContent(prev, mergedBundle) : prev));
+      })
+      .catch(() => {
+        detailsLoadedRef.current = false;
+      });
+  }, []);
+
   const startRun = useCallback(
     async (
       cards: SRSCard[],
@@ -169,11 +290,15 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       lastActiveDay: string | null = null,
     ) => {
       const now = new Date();
+      const dayStart = startOfLocalDay(now);
       const [extras, doneToday, recentAttempts] = await Promise.all([
         loadV1Extras(cards, { now, dictations: content.dictations, vocab: content.vocab }),
-        cardRepo.countNewCardsStartedSince(startOfLocalDay(now)).catch(() => 0),
+        cardRepo.countNewCardsStartedSince(dayStart).catch(() => 0),
         attemptRepo.getSince(now.getTime() - 2 * 7 * DAY_MS, 'v1').catch(() => []),
       ]);
+      const completedRunsToday = recentAttempts.filter(
+        (a) => a.gameId === 'v1' && a.startedAt >= dayStart && a.status !== 'in_progress',
+      ).length;
       const bundle: V1ContentBundle = { ...content, extras };
       const lastWeekAccuracy = computeLastWeekAccuracy(recentAttempts, now);
       const retention7d = computeRecent7DayRetention(recentAttempts, now);
@@ -182,6 +307,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         content: bundle,
         newCardsLimit,
         newCardsDoneToday: doneToday,
+        completedRunsToday,
         lastWeekAccuracy,
         retention7d,
         absenceDays,
@@ -190,6 +316,8 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         cards,
         content: bundle,
         mode: initialRunMode,
+        examMode: isExam,
+        completedRunsToday,
         skillLevel: effectiveLevel,
         newCardsLimit,
         newCardsDoneToday: doneToday,
@@ -204,14 +332,13 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       resetPersistence();
       setRunState(run);
       nodeStartedAtRef.current = Date.now();
+      ensureVocabDetailsLoaded(run);
     },
-    [initialRunMode, resetPersistence],
+    [ensureVocabDetailsLoaded, initialRunMode, isExam, resetPersistence],
   );
 
-  // Khởi tạo run từ Dexie + nội dung THẬT. DB rỗng → EmptyState, KHÔNG ghi dữ liệu giả (V1-3).
   useEffect(() => {
     mountedRef.current = true;
-    // StrictMode (dev) mount 2 lần: chỉ lần khởi tạo mới nhất được phép dựng run
     const token = ++initTokenRef.current;
     const isCurrent = () => mountedRef.current && token === initTokenRef.current;
 
@@ -252,12 +379,11 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     void initRun();
     return () => {
       mountedRef.current = false;
-      if (fallbackTimerRef.current !== null) {
-        window.clearTimeout(fallbackTimerRef.current);
-      }
-      if (audioElRef.current) {
-        audioElRef.current.pause();
-      }
+      if (fallbackTimerRef.current !== null) window.clearTimeout(fallbackTimerRef.current);
+      if (hitStopTimerRef.current !== null) window.clearTimeout(hitStopTimerRef.current);
+      if (revealTimerRef.current !== null) window.clearTimeout(revealTimerRef.current);
+      if (interstitialTimerRef.current !== null) window.clearTimeout(interstitialTimerRef.current);
+      if (audioElRef.current) audioElRef.current.pause();
     };
   }, [initialRunMode, level, startRun]);
 
@@ -286,8 +412,41 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     [runState],
   );
 
-  // Lưu giữa phiên: debounce 500 ms sau mỗi thay đổi tiến độ, ngay lập tức ở checkpoint (V1-7);
-  // flush khi ẩn tab / đóng trang / thoát màn (Esc, nút ✕).
+  // Interstitial 1,2 s khi bước vào pha Boss (hiện RunMap + Lexi trong data-mascot-ok)
+  useEffect(() => {
+    const phase = runState?.phase ?? null;
+    if (phase === 'boss' && prevPhaseRef.current && prevPhaseRef.current !== 'boss' && !isExam) {
+      const mod = runState?.bossModifier;
+      const modInfo = mod ? BOSS_MODIFIER_INFO[mod] : null;
+      setInterstitial({
+        title: modInfo ? `Pha Boss · Luật: ${modInfo.labelVi}` : 'Pha Boss · 5 thẻ khó nhất',
+        subtitle: modInfo?.descVi ?? 'Hạ 5 thẻ khó nhất của phiên để nhận thưởng Boss.',
+        mascotState: 'co-vu',
+        mascotSay: modInfo
+          ? `Vào Boss rồi! Luật lần này: ${modInfo.labelVi} — bình tĩnh xử từng thẻ nhé!`
+          : 'Tới chặng Boss rồi — tập trung hạ 5 thẻ khó nhất nhé!',
+      });
+      if (interstitialTimerRef.current !== null) window.clearTimeout(interstitialTimerRef.current);
+      interstitialTimerRef.current = window.setTimeout(() => {
+        setInterstitial(null);
+      }, INTERSTITIAL_MS);
+    }
+    prevPhaseRef.current = phase;
+  }, [runState?.phase, runState?.bossModifier, isExam]);
+
+  const showStageInterstitial = useCallback(
+    (banner: InterstitialBanner) => {
+      if (isExam) return;
+      setInterstitial(banner);
+      if (interstitialTimerRef.current !== null) window.clearTimeout(interstitialTimerRef.current);
+      interstitialTimerRef.current = window.setTimeout(() => {
+        setInterstitial(null);
+      }, INTERSTITIAL_MS);
+    },
+    [isExam],
+  );
+
+  // Lưu tiến độ giữa phiên
   useEffect(() => {
     latestRunRef.current = runState;
   }, [runState]);
@@ -334,13 +493,19 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     };
   }, [persist]);
 
-  // Reset input fields whenever the active node changes
+  // Reset input & UI state whenever the active node changes
   useEffect(() => {
     if (!activeNode) return;
     setSelectedChoiceIdx(null);
     setAudioFallbackNotice(null);
     setAudioMissing(false);
+    setIntroFlipped(false);
+    setRevealCorrectReady(false);
     nodeStartedAtRef.current = Date.now();
+    if (revealTimerRef.current !== null) {
+      window.clearTimeout(revealTimerRef.current);
+      revealTimerRef.current = null;
+    }
 
     if (
       activeNode.prompt.face === 'recall_meaning' &&
@@ -354,7 +519,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     }
   }, [activeNode?.nodeId, activeNode?.face]);
 
-  // Play audio from static file (NEVER calling speechSynthesis per AGENTS.md §3)
+  // Play audio from static file (NEVER calling speechSynthesis)
   const playCardAudio = useCallback(
     (
       audioRelativePath?: string,
@@ -377,7 +542,6 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       const reportMissing = () => {
         setAudioPlaying(false);
         if (quotaNodeId) {
-          // Âm thanh không phát được thì không tính lượt nghe
           setRunState((prev) => (prev ? refundNodeAudioPlay(prev, quotaNodeId) : prev));
         }
         if (silent) return;
@@ -394,9 +558,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         setAudioPlaying(true);
         setAudioMissing(true);
         setAudioFallbackNotice('File âm thanh offline đang ở chế độ mô phỏng.');
-        if (fallbackTimerRef.current !== null) {
-          window.clearTimeout(fallbackTimerRef.current);
-        }
+        if (fallbackTimerRef.current !== null) window.clearTimeout(fallbackTimerRef.current);
         fallbackTimerRef.current = window.setTimeout(() => {
           setAudioPlaying(false);
         }, 700);
@@ -404,9 +566,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       }
 
       try {
-        if (audioElRef.current) {
-          audioElRef.current.pause();
-        }
+        if (audioElRef.current) audioElRef.current.pause();
         const url = resolveAssetUrl(audioRelativePath);
         const audio = new Audio(url);
         audioElRef.current = audio;
@@ -415,12 +575,11 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         setAudioMissing(false);
 
         if (clip) {
-          // Phát đúng đoạn [start, end] của file dài (đoạn bẫy Listening)
           audio.addEventListener('loadedmetadata', () => {
             try {
               audio.currentTime = clip.start;
             } catch {
-              // trình duyệt chưa cho tua: phát từ đầu
+              // ignore
             }
           });
           audio.addEventListener('timeupdate', () => {
@@ -431,9 +590,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           });
         }
 
-        audio.onended = () => {
-          setAudioPlaying(false);
-        };
+        audio.onended = () => setAudioPlaying(false);
         audio.onerror = reportMissing;
 
         const playPromise = audio.play();
@@ -447,27 +604,32 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     [runState],
   );
 
-  // Auto-advance after 1.2s on exact 'correct' feedback (docs/games/V1-DAILY-RUN.md §6)
+  // Auto-advance after <= 1.2s on exact 'correct' feedback
   useEffect(() => {
     if (!runState?.feedback || runState.feedback.status !== 'correct') return;
     const delayMs = runState.feedback.autoAdvanceMs ?? 1200;
     const timer = window.setTimeout(() => {
+      playSfx('flip', { examMode: isExam });
+      setProgressSweepKey((k) => k + 1);
       setRunState((prev) => (prev && prev.feedback ? advanceAfterFeedback(prev) : prev));
     }, delayMs);
     return () => window.clearTimeout(timer);
-  }, [runState?.feedback]);
+  }, [runState?.feedback, isExam]);
 
-  // Chốt phiên khi vào Recap (attempt đã lưu dần từ trước → chỉ finalize)
+  // Chốt phiên khi vào Recap
   useEffect(() => {
     if (!runState || runState.phase !== 'recap' || !runState.recap || sessionSaved) {
       return;
     }
     setSessionSaved(true);
-    playSfx('sessionDone');
+    // Nếu RecapScreen không chạy bộ đếm (XP = 0 hoặc reduced-motion), phát sessionDone một lần ở đây
+    if (!isExam && (runState.recap.totalXp <= 0 || !fx.allowE1Slide)) {
+      playSfx('sessionDone', { examMode: isExam });
+    }
     void persist(runState, true);
-  }, [runState, sessionSaved, persist]);
+  }, [runState, sessionSaved, persist, isExam, fx.allowE1Slide]);
 
-  // Thẻ giới thiệu tự phát âm 250 ms sau khi hiện (V1-13). Trình duyệt chặn autoplay thì im lặng.
+  // Thẻ giới thiệu tự phát âm 250 ms sau khi hiện
   useEffect(() => {
     if (!activeNode || activeNode.prompt.face !== 'intro') return;
     const audioUrl = activeNode.prompt.audioUrl;
@@ -475,18 +637,50 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       playCardAudio(audioUrl, false, { silent: true });
     }, 250);
     return () => window.clearTimeout(timer);
-    // chỉ chạy khi chuyển sang thẻ intro mới
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeNode?.nodeId]);
 
   const handleNextAfterFeedback = useCallback(() => {
     if (!runState || !runState.feedback) return;
-    playSfx('flip');
+    playSfx('flip', { examMode: isExam });
+    setProgressSweepKey((k) => k + 1);
     setRunState(advanceAfterFeedback(runState));
-  }, [runState]);
+  }, [runState, isExam]);
+
+  const handleToggleIntroFlip = useCallback(() => {
+    setIntroFlipped((prev) => !prev);
+    playSfx('flip', { examMode: isExam });
+    haptic('tap', { examMode: isExam });
+  }, [isExam]);
+
+  const handleChooseFork = useCallback(
+    (path: V1ForkPath) => {
+      if (!runState || runState.phase !== 'checkpoint') return;
+      playSfx(path === 'thorny' ? 'streak' : 'flip', { examMode: isExam });
+      haptic(path === 'thorny' ? 'streak' : 'tap', { examMode: isExam });
+      const next = chooseCheckpointFork(runState, path);
+      setRunState(next);
+      showStageInterstitial(
+        path === 'thorny'
+          ? {
+              title: 'Nhánh Đường gai · ×1,5 XP',
+              subtitle: '5 thẻ khó nhất đang chờ — giữ chuỗi chính xác để tối đa thưởng!',
+              mascotState: 'co-vu',
+              mascotSay: 'Chọn Đường gai luôn — tập trung 5 thẻ khó nhất lấy ×1,5 XP nhé!',
+            }
+          : {
+              title: `Chặng ${next.currentStage + 1}/${next.totalStages} · Đường an toàn`,
+              subtitle: 'Tiếp tục lộ trình thẻ đến hạn ổn định.',
+              mascotState: 'vui',
+              mascotSay: getCheckpointMascotLine(next.maxCombo),
+            },
+      );
+    },
+    [runState, isExam, showStageInterstitial],
+  );
 
   const handleSubmitAnswer = useCallback(
-    (overrideAnswer?: string) => {
+    (overrideAnswer?: string, origin?: { x: number; y: number }) => {
       if (!runState || !activeNode) return;
       if (runState.feedback) {
         handleNextAfterFeedback();
@@ -494,53 +688,211 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       }
 
       if (activeNode.face === 'intro') {
-        playSfx('flip');
+        playSfx('flip', { examMode: isExam });
         setRunState(submitIntroAction(runState, 'seen'));
         return;
       }
 
-      const answerToScore =
-        overrideAnswer !== undefined ? overrideAnswer : typedAnswer;
+      const answerToScore = overrideAnswer !== undefined ? overrideAnswer : typedAnswer;
       const elapsedMs = Math.max(300, Date.now() - nodeStartedAtRef.current);
 
+      const prevCombo = runState.combo;
       const next = submitNodeAnswer(runState, answerToScore, elapsedMs);
       setRunState(next);
 
-      const latestEvent = next.events[next.events.length - 1];
-      if (next.events.some((e) => e.type === 'boss_defeated') && !runState.bossDefeated) {
-        playSfx('levelUp');
-      } else if (next.feedback?.status === 'correct' || next.feedback?.status === 'partial') {
-        if (next.combo >= 5 && next.combo > runState.combo) {
-          playSfx('combo');
+      const cardEl = questionCardRef.current;
+
+      const bossJustDefeated =
+        next.events.some((e) => e.type === 'boss_defeated') && !runState.bossDefeated;
+      const status = next.feedback?.status;
+
+      if (hitStopTimerRef.current !== null) {
+        window.clearTimeout(hitStopTimerRef.current);
+        hitStopTimerRef.current = null;
+      }
+
+      // Chạy VFX/SFX/layout-read sau paint đầu (setTimeout 0 / 55ms hit-stop) để INP luôn thấp ở CPU ×4
+      const scheduleEffects = (delayMs: number, fn: () => void) => {
+        hitStopTimerRef.current = window.setTimeout(fn, Math.max(0, delayMs));
+      };
+
+      const resolveFxAnchors = () => {
+        const cardRect = cardEl?.getBoundingClientRect();
+        const fxX = origin?.x ?? (cardRect ? cardRect.left + cardRect.width / 2 : window.innerWidth / 2);
+        const fxY = origin?.y ?? (cardRect ? cardRect.top + Math.min(120, cardRect.height / 2) : window.innerHeight / 2);
+        const xpEl = getVisibleElement(mobileXpRef.current, desktopXpRef.current);
+        const xpRect = xpEl?.getBoundingClientRect();
+        const xpTarget = xpRect
+          ? { x: xpRect.left + xpRect.width / 2, y: xpRect.top + xpRect.height / 2 }
+          : undefined;
+        const comboEl = getVisibleElement(mobileComboRef.current, desktopComboRef.current);
+        const comboRect = comboEl?.getBoundingClientRect();
+        const comboX = comboRect ? comboRect.left + comboRect.width / 2 : fxX;
+        const comboY = comboRect ? comboRect.top + comboRect.height / 2 : 70;
+        const hudEl = getVisibleElement(mobileHudRef.current, desktopHudRef.current);
+        return { fxX, fxY, xpTarget, comboX, comboY, hudEl };
+      };
+
+      if (bossJustDefeated) {
+        // Hạ Boss: hit-stop 50ms + screenPunch ≤ 8px/300ms + hạt vỡ khiên + levelUp SFX
+        playSfx('levelUp', { examMode: isExam });
+        haptic('celebrate', { examMode: isExam });
+        setProgressSweepKey((k) => k + 1);
+        screenPunch(bossStageRef.current ?? cardEl, {
+          mode: 'boss',
+          amplitudePx: 8,
+          durationMs: 300,
+          hitStopMs: 50,
+          examMode: isExam,
+        });
+        scheduleEffects(fx.tier === 'full' && !isExam ? 50 : 0, () => {
+          const { fxX, fxY, xpTarget } = resolveFxAnchors();
+          emit('spark', { x: fxX, y: fxY, count: 24, examMode: isExam });
+          emit('star', { x: fxX, y: fxY, count: 12, examMode: isExam });
+          if (!isExam && !runState.isExtraPractice) {
+            numberPop('+50 XP', { x: fxX, y: fxY - 12, to: xpTarget, examMode: isExam });
+          }
+        });
+        return;
+      }
+
+      if (status === 'correct' || status === 'partial') {
+        const xpGain = next.feedback?.xpEarned ?? 0;
+        const hitMilestone =
+          next.combo > prevCombo &&
+          (next.combo === 3 || next.combo === 5 || next.combo === 10);
+
+        setProgressSweepKey((k) => k + 1);
+
+        // Hit-stop 55ms chỉ ở bậc full (13-ANIMATION §4)
+        scheduleEffects(fx.tier === 'full' && !isExam ? 55 : 0, () => {
+          haptic(hitMilestone ? 'streak' : 'correct', { examMode: isExam });
+          if (hitMilestone) {
+            const streakRate = next.combo >= 10 ? 1.25 : next.combo >= 5 ? 1.12 : 1.0;
+            playSfx('streak', { rate: streakRate, examMode: isExam });
+          } else {
+            playSfx('correct', { rate: computeComboRate(next.combo), examMode: isExam });
+          }
+          const { fxX, fxY, xpTarget, comboX, comboY, hudEl } = resolveFxAnchors();
+          if (hitMilestone && hudEl && fx.allowE1Slide && !isExam && typeof hudEl.animate === 'function') {
+            hudEl.animate(
+              [
+                { transform: 'scale(1)' },
+                { transform: 'scale(1.06)' },
+                { transform: 'scale(1)' },
+              ],
+              { duration: 120, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)' },
+            );
+          }
+          if (cardEl && fx.allowE1Slide && !isExam && typeof cardEl.animate === 'function') {
+            cardEl.animate(
+              [
+                { transform: 'scale(1)' },
+                { transform: 'scale(1.04)' },
+                { transform: 'scale(1)' },
+              ],
+              { duration: 220, easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)' },
+            );
+          }
+          emit('spark', { x: fxX, y: fxY, count: 14, examMode: isExam });
+          if (hitMilestone) {
+            const emberCount = next.combo >= 10 ? 24 : next.combo >= 5 ? 14 : 8;
+            emit('ember', { x: comboX, y: comboY, count: emberCount, examMode: isExam });
+          }
+          if (xpGain > 0 && !isExam) {
+            numberPop(`+${xpGain} XP`, {
+              x: fxX,
+              y: fxY - 10,
+              to: xpTarget,
+              examMode: isExam,
+            });
+          }
+          if (
+            activeNode.face !== 'ltrap_replay' &&
+            activeNode.face !== 'dict_full' &&
+            'audioUrl' in activeNode.prompt &&
+            activeNode.prompt.audioUrl
+          ) {
+            playCardAudio(activeNode.prompt.audioUrl, false);
+          }
+        });
+      } else if (status === 'wrong') {
+        // Sau 200ms hiện viền nét đứt quanh đáp án đúng (reduced-motion hiện ngay)
+        if (revealTimerRef.current !== null) window.clearTimeout(revealTimerRef.current);
+        if (fx.allowE1Slide && !isExam) {
+          setRevealCorrectReady(false);
+          revealTimerRef.current = window.setTimeout(() => {
+            setRevealCorrectReady(true);
+          }, 200);
         } else {
-          playSfx('correct');
+          setRevealCorrectReady(true);
         }
-        // Auto-play word pronunciation on correct vocab answer (không phát lại audio vừa nghe)
-        if (
-          activeNode.face !== 'ltrap_replay' &&
-          activeNode.face !== 'dict_full' &&
-          'audioUrl' in activeNode.prompt &&
-          activeNode.prompt.audioUrl
-        ) {
-          playCardAudio(activeNode.prompt.audioUrl, false);
-        }
-      } else if (latestEvent) {
-        playSfx('wrong');
+
+        scheduleEffects(0, () => {
+          // Sai (≥ 3 kênh, CẤM hạt & CẤM rung cả màn hình theo L-7/Kao 2020)
+          playSfx('wrong', { examMode: isExam });
+          haptic('wrong', { examMode: isExam });
+          // Rung ngang ±6px × 3 / 300ms CHỈ trên thẻ câu hỏi
+          screenPunch(cardEl, {
+            mode: 'wrong-card',
+            amplitudePx: 6,
+            durationMs: 300,
+            examMode: isExam,
+          });
+
+          // Thẻ tối nhẹ brightness(.85) 150ms rồi trả lại
+          if (
+            cardEl &&
+            fx.allowE0 &&
+            !isExam &&
+            fx.tier !== 'reduced' &&
+            typeof cardEl.animate === 'function'
+          ) {
+            cardEl.animate(
+              [
+                { filter: 'brightness(1)' },
+                { filter: 'brightness(0.85)' },
+                { filter: 'brightness(1)' },
+              ],
+              { duration: 150, easing: 'ease-out' },
+            );
+          }
+
+          // Vỡ combo (khi đang có chuỗi >= 3): rơi +12px mờ 300ms + 6 hạt smoke, KHÔNG phát tiếng phạt
+          if (prevCombo >= 3 && next.combo === 0) {
+            const { comboX, comboY } = resolveFxAnchors();
+            setBrokenComboGhost({ id: Date.now(), count: prevCombo });
+            emit('smoke', { x: comboX, y: comboY, count: 6, examMode: isExam });
+            window.setTimeout(() => setBrokenComboGhost(null), 320);
+          }
+        });
       }
     },
-    [activeNode, handleNextAfterFeedback, playCardAudio, runState, typedAnswer],
+    [
+      activeNode,
+      fx.allowE0,
+      fx.allowE1Slide,
+      fx.tier,
+      getVisibleElement,
+      handleNextAfterFeedback,
+      isExam,
+      playCardAudio,
+      runState,
+      typedAnswer,
+    ],
   );
 
   const handleHint = useCallback(() => {
     if (!runState || !activeNode || runState.feedback) return;
-    playSfx('tap');
+    if (runState.phase === 'boss' && runState.bossModifier === 'no_hints') return;
+    playSfx('tap', { examMode: isExam });
+    haptic('tap', { examMode: isExam });
     const next = applyNodeHint(runState);
     setRunState(next);
 
     const updated = getActiveNode(next);
     if (!updated) return;
 
-    // Pre-fill revealed prefix into input if user hasn't typed past it
     const targetWord = getTypedTargetText(updated.prompt);
     if (targetWord && updated.face !== 'intro') {
       const prefix = getRevealedPrefix(targetWord, updated.revealedLetters);
@@ -548,17 +900,17 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         setTypedAnswer(prefix);
       }
     }
-  }, [activeNode, runState, typedAnswer]);
+  }, [activeNode, isExam, runState, typedAnswer]);
 
   const handleChoiceSelect = useCallback(
-    (choiceIdx: number) => {
+    (choiceIdx: number, origin?: { x: number; y: number }) => {
       if (!runState || !activeNode || runState.feedback) return;
       if (activeNode.eliminatedChoices.includes(choiceIdx)) return;
       if (!isChoicePrompt(activeNode.prompt)) return;
       const choiceText = activeNode.prompt.choices[choiceIdx];
       if (choiceText === undefined) return;
       setSelectedChoiceIdx(choiceIdx);
-      handleSubmitAnswer(choiceText);
+      handleSubmitAnswer(choiceText, origin);
     },
     [activeNode, handleSubmitAnswer, runState],
   );
@@ -572,6 +924,8 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
         cards: allCards,
         content: runState.content,
         mode: nextMode,
+        examMode: isExam,
+        completedRunsToday: ctx?.completedRunsToday ?? 0,
         skillLevel,
         newCardsLimit: ctx?.newCardsLimit ?? newCardsLimitRef.current,
         newCardsDoneToday: ctx?.newCardsDoneToday ?? 0,
@@ -584,27 +938,40 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
       resetPersistence();
       setRunState(fresh);
     },
-    [resetPersistence, runState, skillLevel],
+    [isExam, resetPersistence, runState, skillLevel],
   );
 
-  // Global keyboard shortcuts: 1-4 for MCQ, H for Hint (outside text input or Alt+H), Enter to advance
+  // Global keyboard shortcuts: 1-4 MCQ, H Hint, Enter advance/safe-fork, ArrowRight thorny-fork, Space finish typewriter
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (!runState || e.defaultPrevented) return;
       const target = e.target as HTMLElement | null;
-      const inTextInput =
-        target?.tagName === 'INPUT' || target?.tagName === 'TEXTAREA';
+      const inTextInput = target?.tagName === 'INPUT' || target?.tagName === 'TEXTAREA';
+
+      if (interstitial && (e.key === 'Enter' || e.key === ' ')) {
+        e.preventDefault();
+        setInterstitial(null);
+        return;
+      }
 
       if (runState.phase === 'map_intro' && e.key === 'Enter') {
         e.preventDefault();
+        playSfx('flip', { examMode: isExam });
         setRunState((prev) => (prev ? startPlayingFromMap(prev) : prev));
         return;
       }
 
-      if (runState.phase === 'checkpoint' && e.key === 'Enter') {
-        e.preventDefault();
-        setRunState((prev) => (prev ? continueFromCheckpoint(prev) : prev));
-        return;
+      if (runState.phase === 'checkpoint') {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          handleChooseFork('safe');
+          return;
+        }
+        if (e.key === 'ArrowRight') {
+          e.preventDefault();
+          handleChooseFork('thorny');
+          return;
+        }
       }
 
       if (runState.feedback && e.key === 'Enter') {
@@ -615,22 +982,21 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
 
       if (!activeNode || runState.feedback) return;
 
-      // Thẻ giới thiệu: Enter = "Đã xem"
       if (activeNode.face === 'intro' && e.key === 'Enter' && !inTextInput) {
         e.preventDefault();
-        playSfx('flip');
+        playSfx('flip', { examMode: isExam });
         setRunState((prev) => (prev ? submitIntroAction(prev, 'seen') : prev));
         return;
       }
 
-      // 1-4 hotkeys for MCQ faces (recog, para_match, tfng_retry, head_retry)
       if (isChoicePrompt(activeNode.prompt) && /^[1-4]$/.test(e.key)) {
         e.preventDefault();
+        playSfx('tap', { examMode: isExam });
+        haptic('tap', { examMode: isExam });
         handleChoiceSelect(Number(e.key) - 1);
         return;
       }
 
-      // 'H' key for Hint when not typing inside a text input (or with Alt+H)
       if (
         (e.key.toLowerCase() === 'h' && !inTextInput) ||
         (e.key.toLowerCase() === 'h' && e.altKey)
@@ -645,8 +1011,11 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   }, [
     activeNode,
     handleChoiceSelect,
+    handleChooseFork,
     handleHint,
     handleNextAfterFeedback,
+    interstitial,
+    isExam,
     runState,
   ]);
 
@@ -668,48 +1037,203 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     );
   }
 
-  // DB rỗng: không ghi dữ liệu giả, mời làm placement hoặc bắt đầu bằng bộ thẻ khởi động thật (V1-3)
   if (loadState.kind === 'empty') {
+    const lobbyFeatures = [
+      {
+        icon: resolveAssetUrl('assets/icons/fluent/ui/rocket.webp'),
+        title: '15 từ B2–C1',
+        sub: 'Học thuật cốt lõi',
+      },
+      {
+        icon: resolveAssetUrl('assets/icons/fluent/ui/xp.webp'),
+        title: 'Ngã ba & Boss',
+        sub: 'Đường gai ×1,5 XP',
+      },
+      {
+        icon: resolveAssetUrl('assets/icons/fluent/ui/brain.webp'),
+        title: 'Ôn nhớ lâu',
+        sub: 'Lịch ôn tự động',
+      },
+    ];
+    const allowLobbyMotion = !isExam && fx.tier !== 'reduced';
+
     return (
-      <div className="max-w-xl mx-auto p-4 sm:p-6">
-        <EmptyState
-          title="Chưa có thẻ nào để ôn"
-          description="Làm bài placement 10 phút để mình chọn đúng từ cho trình độ của bạn, hoặc bắt đầu ngay với 15 từ học thuật thường gặp nhất."
-          icon={
-            <motion.span
-              className="inline-flex"
-              animate={prefersReduced ? undefined : { y: [0, -5, 0] }}
-              transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
-            >
-              <Sparkles className="w-7 h-7" />
-            </motion.span>
+      <div className="max-w-xl mx-auto p-3.5 sm:p-6" data-mascot-ok="true">
+        <style>{`
+          @keyframes v1-lobby-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-4px); }
           }
-          action={
+          .v1-lobby-emblem {
+            animation: v1-lobby-float 2.6s ease-in-out infinite;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .v1-lobby-emblem { animation: none !important; }
+          }
+          [data-reduced-motion="true"] .v1-lobby-emblem {
+            animation: none !important;
+          }
+        `}</style>
+
+        <Card padding="lg" skillAccent="vocab" className="space-y-4 sm:space-y-5">
+          <div className="flex items-start gap-3.5 sm:gap-4">
+            <div
+              className={`w-14 h-14 sm:w-16 sm:h-16 rounded-[var(--radius-lg)] border flex items-center justify-center shrink-0 ${
+                allowLobbyMotion ? 'v1-lobby-emblem' : ''
+              }`}
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--color-vocab) 14%, var(--color-surface-2))',
+                borderColor: 'color-mix(in srgb, var(--color-vocab) 38%, var(--color-border))',
+              }}
+            >
+              <img
+                src={resolveAssetUrl('assets/icons/fluent/games/v1.webp')}
+                alt=""
+                aria-hidden="true"
+                width={48}
+                height={48}
+                loading="eager"
+                decoding="async"
+                className="w-11 h-11 sm:w-12 sm:h-12 object-contain"
+              />
+            </div>
+
+            <div className="min-w-0 space-y-1.5">
+              <Pill tone="vocab">V1 · Daily Run</Pill>
+              <h1
+                className="font-display text-xl sm:text-2xl font-extrabold leading-tight"
+                style={{ color: 'var(--color-text)' }}
+              >
+                Chưa có thẻ nào để ôn
+              </h1>
+              <p className="text-xs sm:text-sm leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                Bắt đầu ngay với 15 từ học thuật thường gặp, hoặc làm bài placement 10 phút để chọn đúng band của bạn.
+              </p>
+            </div>
+          </div>
+
+          {!isExam && (
+            <div className="flex items-center gap-3">
+              <Mascot
+                state="chao"
+                showBubble={false}
+                size={72}
+                examMode={isExam}
+              />
+              <div
+                className="rounded-[var(--radius-md)] border px-3.5 py-2.5 text-xs sm:text-sm font-medium leading-snug"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                  color: 'var(--color-text)',
+                }}
+              >
+                Nạp 15 từ IELTS cốt lõi để bắt đầu lượt chạy đầu tiên nhé!
+              </div>
+            </div>
+          )}
+
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
+            {lobbyFeatures.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-[var(--radius-md)] border px-2 py-2.5 sm:px-3 sm:py-3 text-center space-y-1"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                }}
+              >
+                <img
+                  src={item.icon}
+                  alt=""
+                  aria-hidden="true"
+                  width={28}
+                  height={28}
+                  loading="eager"
+                  decoding="async"
+                  className="w-7 h-7 mx-auto object-contain"
+                />
+                <div className="text-xs font-bold leading-snug" style={{ color: 'var(--color-text)' }}>
+                  {item.title}
+                </div>
+                <div className="text-xs leading-tight hidden sm:block" style={{ color: 'var(--color-text-dim)' }}>
+                  {item.sub}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 pt-1">
             <Button
               variant="primary"
               skill="vocab"
+              className="w-full sm:flex-1 min-h-[48px]"
               loading={starting}
               onClick={() => void handleStartWithStarter()}
               rightIcon={<ArrowRight className="w-4 h-4" />}
             >
               Bắt đầu với 15 từ khởi động
             </Button>
-          }
-          secondaryAction={<GameLink href="#/placement">Làm placement</GameLink>}
-        />
+            <GameLink href="#/placement">Làm placement</GameLink>
+          </div>
+        </Card>
       </div>
     );
   }
 
   if (!runState) {
+    const allowLoadingMotion = !isExam && fx.tier !== 'reduced';
     return (
-      <div className="max-w-3xl mx-auto p-6 text-center" style={{ color: 'var(--color-text-dim)' }}>
-        Đang khởi tạo lộ trình V1 · Daily Run...
+      <div className="max-w-xl mx-auto p-3.5 sm:p-6">
+        <style>{`
+          @keyframes v1-load-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-4px); }
+          }
+          .v1-load-emblem {
+            animation: v1-load-float 2.4s ease-in-out infinite;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .v1-load-emblem { animation: none !important; }
+          }
+          [data-reduced-motion="true"] .v1-load-emblem {
+            animation: none !important;
+          }
+        `}</style>
+        <Card padding="lg" skillAccent="vocab" className="flex items-center gap-4">
+          <div
+            className={`w-14 h-14 rounded-[var(--radius-lg)] border flex items-center justify-center shrink-0 ${
+              allowLoadingMotion ? 'v1-load-emblem' : ''
+            }`}
+            style={{
+              backgroundColor: 'color-mix(in srgb, var(--color-vocab) 14%, var(--color-surface-2))',
+              borderColor: 'color-mix(in srgb, var(--color-vocab) 38%, var(--color-border))',
+            }}
+          >
+            <img
+              src={resolveAssetUrl('assets/icons/fluent/games/v1.webp')}
+              alt=""
+              aria-hidden="true"
+              width={44}
+              height={44}
+              loading="eager"
+              decoding="async"
+              className="w-11 h-11 object-contain"
+            />
+          </div>
+          <div className="space-y-1">
+            <div className="font-display text-base font-bold" style={{ color: 'var(--color-text)' }}>
+              V1 · Daily Run
+            </div>
+            <div className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              Đang chuẩn bị kho thẻ hôm nay...
+            </div>
+          </div>
+        </Card>
       </div>
     );
   }
 
-  // Không có thẻ nào dựng được để ôn hôm nay (đã xong hoặc thẻ thiếu nội dung)
   if (runState.nodes.length === 0) {
     return (
       <div className="max-w-xl mx-auto p-4 sm:p-6">
@@ -731,11 +1255,13 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     );
   }
 
-  // Bản đồ mở đầu run (V1-14): xem trước chặng rồi Enter để bắt đầu
+  const bandChipText = formatBandLabel(skillLevel);
+
+  // 0. Màn bản đồ mở đầu run (V1-14)
   if (runState.phase === 'map_intro') {
     const newCount = runState.nodes.filter((n) => n.isNewCard).length;
     return (
-      <div className="max-w-2xl mx-auto p-4 sm:p-6 space-y-5">
+      <div className="max-w-2xl mx-auto p-4 sm:p-6 space-y-4">
         <RunMap
           nodes={runState.nodes}
           currentIndex={0}
@@ -744,15 +1270,19 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           isBossPhase={false}
           bossHp={runState.bossHp}
           bossDefeated={false}
+          examMode={isExam}
         />
         <Card padding="lg" skillAccent="vocab" className="text-center space-y-4">
           <div className="space-y-1.5">
-            {runState.recoveryMode && runState.recoveryReasonVi && (
-              <div className="flex justify-center" data-testid="v1-recovery-badge">
-                <Pill tone="info">{runState.recoveryReasonVi}</Pill>
-              </div>
-            )}
-            <h2 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <Pill tone="vocab">{bandChipText}</Pill>
+              {runState.recoveryMode && runState.recoveryReasonVi && (
+                <span data-testid="v1-recovery-badge">
+                  <Pill tone="info">{runState.recoveryReasonVi}</Pill>
+                </span>
+              )}
+            </div>
+            <h2 className="font-display text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
               Lượt chạy hôm nay: {runState.nodes.length} thẻ
             </h2>
             <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
@@ -786,7 +1316,11 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
               variant="primary"
               skill="vocab"
               rightIcon={<ArrowRight className="w-4 h-4" />}
-              onClick={() => setRunState(startPlayingFromMap(runState))}
+              onClick={() => {
+                if (!isExam) sfxEngine.unlock();
+                playSfx('flip', { examMode: isExam });
+                setRunState(startPlayingFromMap(runState));
+              }}
             >
               Bắt đầu (Enter)
             </Button>
@@ -799,22 +1333,31 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
   // 1. Màn Recap cuối run
   if (runState.phase === 'recap' && runState.recap) {
     const recap = runState.recap;
-    const durationSec = Math.max(
-      1,
-      Math.round((Date.now() - runState.startedAt) / 1000),
-    );
+    const durationSec = Math.max(1, Math.round((Date.now() - runState.startedAt) / 1000));
 
     return (
-      <div className="max-w-3xl mx-auto p-4 sm:p-6 space-y-5">
-        {/* Các thẻ chỉ số chuyên biệt của V1 Daily Run (V1-DAILY-RUN.md §7) */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="max-w-3xl mx-auto p-3.5 sm:p-6 space-y-4">
+        <RunMap
+          nodes={runState.nodes}
+          currentIndex={runState.nodes.length}
+          stageIndex={Math.max(0, runState.totalStages - 1)}
+          stageSize={runState.stageSize}
+          isBossPhase={false}
+          bossHp={runState.bossHp}
+          bossDefeated={recap.bossDefeated}
+          bossModifier={runState.bossModifier}
+          compact
+          examMode={isExam}
+        />
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3">
           <Card padding="sm" className="text-center space-y-1">
             <div className="text-xs font-medium" style={{ color: 'var(--color-text-dim)' }}>
               Tổng số thẻ
             </div>
             <div
-              className="text-2xl font-extrabold tabular-nums"
-              style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
+              className="font-display text-2xl font-extrabold tabular-nums"
+              style={{ color: 'var(--color-text)' }}
             >
               {recap.totalCards}
             </div>
@@ -825,33 +1368,39 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
               Đúng lượt đầu
             </div>
             <div
-              className="text-2xl font-extrabold tabular-nums"
-              style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-correct)' }}
+              className="font-display text-2xl font-extrabold tabular-nums"
+              style={{ color: 'var(--color-correct)' }}
             >
               {recap.firstAttemptAccuracy}%
             </div>
           </Card>
 
           <Card padding="sm" className="text-center space-y-1">
-            <div className="text-xs font-medium flex items-center justify-center gap-1" style={{ color: 'var(--color-text-dim)' }}>
+            <div
+              className="text-xs font-medium flex items-center justify-center gap-1"
+              style={{ color: 'var(--color-text-dim)' }}
+            >
               <Award className="w-3.5 h-3.5" style={{ color: 'var(--color-vocab)' }} />
-              <span>Lên Mature/Mastered</span>
+              <span>Từ mới vững</span>
             </div>
             <div
-              className="text-2xl font-extrabold tabular-nums"
-              style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-vocab)' }}
+              className="font-display text-2xl font-extrabold tabular-nums"
+              style={{ color: 'var(--color-vocab)' }}
             >
               +{recap.matureOrMasteredCount}
             </div>
           </Card>
 
           <Card padding="sm" className="text-center space-y-1">
-            <div className="text-xs font-medium flex items-center justify-center gap-1" style={{ color: 'var(--color-text-dim)' }}>
+            <div
+              className="text-xs font-medium flex items-center justify-center gap-1"
+              style={{ color: 'var(--color-text-dim)' }}
+            >
               <Calendar className="w-3.5 h-3.5" style={{ color: 'var(--color-info)' }} />
               <span>Dự báo ngày mai</span>
             </div>
             <div
-              className="text-2xl font-extrabold tabular-nums"
+              className="text-sm sm:text-base font-extrabold tabular-nums pt-1"
               style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-info)' }}
             >
               Ngày mai: {recap.tomorrowDueForecast} thẻ
@@ -859,52 +1408,85 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           </Card>
         </div>
 
-        <RecapScreen
-          scoreLabel={`${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)}`}
-          xpEarned={recap.totalXp}
-          winStatement={recap.winStatement}
-          accuracyPercent={recap.firstAttemptAccuracy}
-          durationSec={durationSec}
-          mistakes={recap.mistakes.map((m, idx) => ({
-            id: `${m.itemId}-${idx}`,
-            prompt: m.promptLabel,
-            userAnswer: m.userAnswer,
-            correctAnswer: m.correctAnswer,
-            note: m.noteVi,
-          }))}
-          onRetryMistakes={
-            recap.mistakes.length > 0
-              ? () => {
-                  const mistakeIds = new Set(recap.mistakes.map((m) => m.itemId));
-                  const mistakeCards = Object.values(runState.allCardsSnapshot).filter(
-                    (c) => mistakeIds.has(c.itemId),
-                  );
-                  if (mistakeCards.length > 0) {
-                    resetPersistence();
-                    setRunState(
-                      createV1Run({
-                        cards: mistakeCards.slice(0, 5),
-                        content: runState.content,
-                        mode: 'extra_practice',
-                        skillLevel,
-                        now: new Date(),
-                      }),
-                    );
-                  }
-                }
-              : undefined
+        {(() => {
+          const bonusParts: string[] = [];
+          if (recap.comboBonusXp > 0) {
+            bonusParts.push(`${recap.comboBonusXp} XP chuỗi`);
           }
-          onGoToday={() => onExit(recap)}
-        />
+          if (recap.bossBonusXp > 0) {
+            bonusParts.push(`${recap.bossBonusXp} XP Boss`);
+          }
+          if (recap.sessionCompletionXp > 0) {
+            bonusParts.push(`${recap.sessionCompletionXp} XP phiên`);
+          }
+          const bonusLabel = bonusParts.length > 0 ? bonusParts.join(' · ') : undefined;
+          const recapMascotSay = recap.bossDefeated
+            ? `Đạt ${recap.firstAttemptAccuracy}% lượt đầu và hạ Boss +${recap.bossBonusXp} XP — giữ nhịp này cho ngày mai nhé!`
+            : recap.firstAttemptAccuracy >= 80
+            ? `Đạt ${recap.firstAttemptAccuracy}% lượt đầu (${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)} thẻ) — nhịp nhớ rất chắc!`
+            : `Hoàn thành ${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)} thẻ lượt đầu — mấy từ vấp sẽ quay lại sớm để bạn nhớ hẳn.`;
+
+          return (
+            <RecapScreen
+              scoreLabel={`${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)}`}
+              xpEarned={recap.totalXp}
+              correctCount={recap.firstAttemptCorrect}
+              baseXp={recap.baseXp}
+              comboMultiplier={recap.effectiveComboMultiplier}
+              bonusLabel={bonusLabel}
+              mascotSay={recapMascotSay}
+              winStatement={recap.winStatement}
+              accuracyPercent={recap.firstAttemptAccuracy}
+              durationSec={durationSec}
+              mistakes={recap.mistakes.map((m, idx) => ({
+                id: `${m.itemId}-${idx}`,
+                prompt: m.promptLabel,
+                userAnswer: m.userAnswer,
+                correctAnswer: m.correctAnswer,
+                note: m.noteVi,
+              }))}
+              onRetryMistakes={
+                recap.mistakes.length > 0
+                  ? () => {
+                      const mistakeIds = new Set(recap.mistakes.map((m) => m.itemId));
+                      const mistakeCards = Object.values(runState.allCardsSnapshot).filter((c) =>
+                        mistakeIds.has(c.itemId),
+                      );
+                      if (mistakeCards.length > 0) {
+                        resetPersistence();
+                        setRunState(
+                          createV1Run({
+                            cards: mistakeCards.slice(0, 5),
+                            content: runState.content,
+                            mode: 'extra_practice',
+                            examMode: isExam,
+                            skillLevel,
+                            now: new Date(),
+                          }),
+                        );
+                      }
+                    }
+                  : undefined
+              }
+              nextTask={nextTask}
+              onNextTask={onNextTask}
+              onGoToday={() => onExit(recap)}
+              examMode={isExam}
+              autoCelebrate={true}
+            />
+          );
+        })()}
       </div>
     );
   }
 
-  // 2. Màn Checkpoint giữa các chặng 20 thẻ
+  // 2. Màn Checkpoint giữa chặng — kèm Ngã ba run (Run Fork, 01-GAME §6.3) & Lexi trong data-mascot-ok
   if (runState.phase === 'checkpoint') {
     const completedCards = runState.currentIndex;
+    const thornyPreview = previewThornyForkCards(runState);
+
     return (
-      <div className="max-w-2xl mx-auto p-4 sm:p-6 space-y-6">
+      <div className="max-w-2xl mx-auto p-4 sm:p-6 space-y-4" data-mascot-ok="true">
         <RunMap
           nodes={runState.nodes}
           currentIndex={runState.currentIndex}
@@ -913,46 +1495,94 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
           isBossPhase={false}
           bossHp={runState.bossHp}
           bossDefeated={runState.bossDefeated}
+          examMode={isExam}
         />
 
-        <Card padding="lg" skillAccent="vocab" className="text-center space-y-5">
-          <div className="flex justify-center">
-            <ProgressRing
-              value={completedCards}
-              max={runState.nodes.length}
-              size={72}
-              strokeWidth={6}
-              skill="vocab"
-            />
+        <Card padding="lg" skillAccent="vocab" className="space-y-5">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3.5">
+              <ProgressRing
+                value={completedCards}
+                max={runState.nodes.length}
+                size={64}
+                strokeWidth={6}
+                skill="vocab"
+              />
+              <div className="space-y-1">
+                <Pill tone="vocab" icon={<BookmarkCheck className="w-3.5 h-3.5" />}>
+                  Checkpoint · Xong Chặng {runState.currentStage}/{runState.totalStages}
+                </Pill>
+                <h2 className="font-display text-xl font-bold" style={{ color: 'var(--color-text)' }}>
+                  Đã hoàn thành {completedCards}/{runState.nodes.length} thẻ
+                </h2>
+                <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                  Tiến độ đã được lưu. Chọn nhánh cho chặng kế tiếp hoặc lưu và nghỉ.
+                </p>
+              </div>
+            </div>
+            {!isExam && (
+              <Mascot
+                state="vui"
+                say={getCheckpointMascotLine(runState.maxCombo)}
+                size={84}
+                examMode={isExam}
+              />
+            )}
           </div>
 
-          <div className="space-y-1.5">
-            <Pill tone="vocab" icon={<BookmarkCheck className="w-3.5 h-3.5" />}>
-              Checkpoint · Hoàn thành Chặng {runState.currentStage}/{runState.totalStages}
-            </Pill>
-            <h2 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
-              Đã hoàn thành {completedCards}/{runState.nodes.length} thẻ
-            </h2>
-            <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-              Tiến độ đã được lưu. Bạn có thể đi tiếp sang Chặng{' '}
-              {runState.currentStage + 1} hoặc lưu và nghỉ tại đây.
-            </p>
+          {/* Ngã ba run (Run Fork): Đường an toàn (Enter) vs Đường gai (→) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" data-testid="v1-run-fork">
+            <button
+              type="button"
+              data-testid="v1-fork-safe"
+              onClick={() => handleChooseFork('safe')}
+              className="text-left p-4 rounded-[var(--radius-md)] border cursor-pointer min-h-[44px] space-y-2 transition-colors"
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--color-vocab) 10%, var(--color-surface-2))',
+                borderColor: 'var(--color-vocab)',
+              }}
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="inline-flex items-center gap-1.5 font-bold text-sm" style={{ color: 'var(--color-vocab)' }}>
+                  <Shield className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Đường an toàn</span>
+                </span>
+                <Pill tone="vocab">Enter</Pill>
+              </div>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                Đi tiếp Chặng {runState.currentStage + 1} theo đúng thứ tự thẻ đến hạn chuẩn.
+              </p>
+            </button>
+
+            <button
+              type="button"
+              data-testid="v1-fork-thorny"
+              onClick={() => handleChooseFork('thorny')}
+              className="text-left p-4 rounded-[var(--radius-md)] border cursor-pointer min-h-[44px] space-y-2 transition-colors"
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--color-writing) 12%, var(--color-surface-2))',
+                borderColor: 'var(--color-writing)',
+              }}
+            >
+              <div className="flex items-center justify-between gap-2">
+                <span className="inline-flex items-center gap-1.5 font-bold text-sm" style={{ color: 'var(--color-writing)' }}>
+                  <Swords className="w-4 h-4 shrink-0" aria-hidden="true" />
+                  <span>Đường gai (×1,5 XP)</span>
+                </span>
+                <Pill tone="writing">Phím →</Pill>
+              </div>
+              <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                Thử thách {thornyPreview.length} thẻ khó nhớ nhất còn lại để nhận thưởng ×1,5 XP.
+              </p>
+            </button>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+          <div className="flex items-center justify-center pt-1">
             <Button
               variant="secondary"
               onClick={() => setRunState(finishAtCheckpoint(runState))}
             >
               Lưu & Dừng tại đây
-            </Button>
-            <Button
-              variant="primary"
-              skill="vocab"
-              rightIcon={<ArrowRight className="w-4 h-4" />}
-              onClick={() => setRunState(continueFromCheckpoint(runState))}
-            >
-              Đi tiếp Chặng {runState.currentStage + 1} (Enter)
             </Button>
           </div>
         </Card>
@@ -960,7 +1590,57 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     );
   }
 
-  // 3. Màn chơi chính (Playing / Boss Phase)
+  // 2b. Interstitial 1,2 s chuyển chặng / vào Boss (hiện RunMap + Lexi trong data-mascot-ok)
+  if (interstitial) {
+    return (
+      <div
+        className="max-w-2xl mx-auto p-4 sm:p-6 space-y-4"
+        data-mascot-ok="true"
+        data-testid="v1-interstitial"
+      >
+        <RunMap
+          nodes={runState.nodes}
+          currentIndex={runState.currentIndex}
+          stageIndex={runState.currentStage}
+          stageSize={runState.stageSize}
+          isBossPhase={runState.phase === 'boss'}
+          bossHp={runState.bossHp}
+          bossDefeated={runState.bossDefeated}
+          bossModifier={runState.bossModifier}
+          examMode={isExam}
+        />
+        <Card padding="lg" skillAccent={runState.phase === 'boss' ? 'speaking' : 'vocab'} className="space-y-4 text-center">
+          <div className="flex justify-center">
+            <Mascot
+              state={interstitial.mascotState}
+              say={interstitial.mascotSay}
+              size={96}
+              examMode={isExam}
+            />
+          </div>
+          <div className="space-y-1">
+            <h2 className="font-display text-xl font-bold" style={{ color: 'var(--color-text)' }}>
+              {interstitial.title}
+            </h2>
+            <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              {interstitial.subtitle}
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <Button
+              variant="primary"
+              skill={runState.phase === 'boss' ? 'speaking' : 'vocab'}
+              onClick={() => setInterstitial(null)}
+            >
+              Vào ngay (Enter)
+            </Button>
+          </div>
+        </Card>
+      </div>
+    );
+  }
+
+  // 3. Màn chơi chính (Playing / Boss Phase) — 0 Lexi (J10), HUD mobile <= 20px (B5 / SR-42)
   const isBossPhase = runState.phase === 'boss';
   const comboMult = getComboMultiplier(runState.combo);
   const stageNodes = isBossPhase
@@ -968,31 +1648,122 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     : runState.nodes.filter((n) => n.stageIndex === runState.currentStage);
   const stagePosition = isBossPhase
     ? runState.bossIndex + 1
-    : stageNodes.findIndex((n) => n.nodeId === activeNode?.nodeId) + 1;
+    : Math.max(1, stageNodes.findIndex((n) => n.nodeId === activeNode?.nodeId) + 1);
+  const progressRatio = stageNodes.length > 0 ? stagePosition / stageNodes.length : 0;
+  const bossModInfo =
+    isBossPhase && runState.bossModifier ? BOSS_MODIFIER_INFO[runState.bossModifier] : null;
+  const hintsDisabledByBoss = isBossPhase && runState.bossModifier === 'no_hints';
+
+  const cardBorderColor =
+    runState.feedback?.status === 'wrong'
+      ? 'var(--color-wrong)'
+      : runState.feedback?.status === 'correct'
+      ? 'var(--color-correct)'
+      : isBossPhase
+      ? 'var(--color-wrong)'
+      : undefined;
 
   return (
     <div
+      ref={bossStageRef}
       className="min-h-[calc(100vh-3.5rem)] transition-colors duration-300"
       style={{
-        // Pha Boss: nền tối hơn 10% (docs/games/V1-DAILY-RUN.md §10)
         backgroundColor: isBossPhase
           ? 'var(--color-boss-dim, color-mix(in srgb, var(--color-wrong) 10%, var(--color-bg)))'
           : 'var(--color-bg)',
       }}
     >
-      <div className="max-w-3xl mx-auto p-4 sm:p-6 space-y-4">
-        {/* HUD Header: Chặng, Thanh tiến độ chuỗi chấm (dot), Combo badge 🔥x2, XP, Chế độ bận */}
+      {/* HUD Mobile siêu gọn (≤ 20 px) để thẻ câu hỏi [data-testid="v1-node"] bắt đầu tại top ≤ 80 px */}
+      <div
+        ref={mobileHudRef}
+        data-testid="v1-mobile-hud"
+        className="md:hidden h-5 px-3 flex items-center gap-2"
+        style={{ backgroundColor: 'var(--color-bg)' }}
+      >
+        <ProgressSweepBar
+          progress={progressRatio}
+          sweepKey={progressSweepKey}
+          isBoss={isBossPhase}
+          allowSweep={fx.allowE1Slide && !isExam}
+        />
+        <span
+          className="text-xs font-bold tabular-nums leading-none shrink-0"
+          style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+        >
+          {stagePosition}/{stageNodes.length}
+        </span>
+        {isBossPhase ? (
+          <span
+            className="text-xs font-bold leading-none shrink-0"
+            style={{ color: 'var(--color-wrong)' }}
+          >
+            BOSS {runState.bossHp}%
+          </span>
+        ) : (
+          <span
+            className="text-xs font-semibold leading-none shrink-0"
+            style={{ color: 'var(--color-text-dim)' }}
+          >
+            {bandChipText}
+          </span>
+        )}
+        {runState.combo >= 2 && !isExam && (
+          <motion.span
+            ref={mobileComboRef}
+            key={`m-combo-${runState.combo}`}
+            data-testid="v1-combo-badge"
+            initial={fx.allowE1Slide ? { scale: 1.4 } : false}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.22, ease: [0.2, 0.8, 0.2, 1] }}
+            className="text-xs font-bold tabular-nums leading-none shrink-0"
+            style={{
+              fontFamily: 'var(--font-mono)',
+              color: comboMult > 1 ? 'var(--color-writing)' : 'var(--color-text)',
+            }}
+          >
+            🔥{comboMult > 1 ? `×${comboMult}` : runState.combo}
+          </motion.span>
+        )}
+        {brokenComboGhost && fx.allowE1Slide && !isExam && (
+          <motion.span
+            key={brokenComboGhost.id}
+            aria-hidden="true"
+            initial={{ y: 0, opacity: 1 }}
+            animate={{ y: 12, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="text-xs font-bold leading-none shrink-0"
+            style={{ color: 'var(--color-text-dim)' }}
+          >
+            ×{brokenComboGhost.count}
+          </motion.span>
+        )}
+        {!isExam && (
+          <span
+            ref={mobileXpRef}
+            data-testid="v1-xp-chip"
+            className="text-xs font-bold tabular-nums leading-none shrink-0"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-correct)' }}
+          >
+            +{runState.totalXp} XP
+          </span>
+        )}
+      </div>
+
+      {/* Khung nội dung chính: mobile sát trên; desktop căn giữa 720px + RunMap cột phải 280px */}
+      <div className="max-w-[1040px] mx-auto px-3 pt-0.5 pb-20 md:p-4 lg:p-6 md:space-y-4">
+        {/* HUD Desktop (≥ 768 px) */}
         <div
-          className="rounded-[var(--radius-md)] border px-4 py-2.5 flex flex-wrap items-center justify-between gap-3"
+          ref={desktopHudRef}
+          className="hidden md:flex rounded-[var(--radius-md)] border px-4 py-2.5 flex-wrap items-center justify-between gap-3"
           style={{
             backgroundColor: 'var(--color-surface)',
             borderColor: isBossPhase ? 'var(--color-wrong)' : 'var(--color-border)',
           }}
         >
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2">
             {isBossPhase ? (
               <Pill tone="wrong" icon={<Crown className="w-3.5 h-3.5" />}>
-                Pha Boss · 5 thẻ khó nhất
+                Boss{bossModInfo ? ` · ${bossModInfo.labelVi}` : ''}
               </Pill>
             ) : (
               <Pill tone="vocab">
@@ -1000,24 +1771,23 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
               </Pill>
             )}
 
-            {runState.isExtraPractice && (
-              <Pill tone="info">Ôn thêm (không tính vào lịch ôn)</Pill>
+            <Pill tone="neutral">{bandChipText}</Pill>
+
+            {runState.chosenForkPath === 'thorny' && !isBossPhase && (
+              <Pill tone="writing" icon={<Swords className="w-3.5 h-3.5" />}>
+                Đường gai ×1,5 XP
+              </Pill>
             )}
 
-            {runState.recoveryMode && runState.recoveryReasonVi && !isBossPhase && (
-              <Pill tone="info">{runState.recoveryReasonVi}</Pill>
-            )}
+            {runState.isExtraPractice && <Pill tone="info">Ôn thêm (0 XP)</Pill>}
 
-            {/* Nút chuyển Chế độ tiêu chuẩn (20 thẻ/chặng) / Chế độ bận (10 thẻ) */}
             {!isBossPhase && runState.currentIndex === 0 && !runState.feedback && (
               <button
                 type="button"
                 onClick={() =>
-                  handleSwitchRunMode(
-                    runState.mode === 'busy' ? 'standard' : 'busy',
-                  )
+                  handleSwitchRunMode(runState.mode === 'busy' ? 'standard' : 'busy')
                 }
-                className="text-xs px-3 min-h-11 rounded border cursor-pointer transition-colors"
+                className="text-xs px-3 min-h-[44px] rounded-[var(--radius-sm)] border cursor-pointer transition-colors"
                 style={{
                   backgroundColor: 'var(--color-surface-2)',
                   borderColor: 'var(--color-border)',
@@ -1025,452 +1795,296 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
                 }}
                 title="Đổi quy mô Run"
               >
-                {runState.mode === 'busy'
-                  ? '⚡ Chế độ bận (10 thẻ) · Đổi sang Tiêu chuẩn'
-                  : 'Chế độ bận (10 thẻ)'}
+                {runState.mode === 'busy' ? 'Đổi sang Tiêu chuẩn' : 'Chế độ bận (10 thẻ)'}
               </button>
             )}
           </div>
 
-          {/* Thanh tiến độ chuỗi chấm (dot) — mỗi chấm đổi màu theo kết quả (V1-DAILY-RUN.md §6 & §10) */}
-          <div
-            className="flex items-center gap-1.5"
-            aria-label="Thanh tiến độ chuỗi chấm"
-          >
-            <div className="flex items-center gap-1">
-              {stageNodes.map((n) => {
-                const isCur = n.nodeId === activeNode?.nodeId;
-                const dotColor =
-                  n.status === 'correct'
-                    ? 'var(--color-correct)'
-                    : n.status === 'partial'
-                    ? 'var(--color-partial)'
-                    : n.status === 'wrong'
-                    ? 'var(--color-wrong)'
-                    : n.status === 'seen'
-                    ? 'var(--color-info)'
-                    : isCur
-                    ? 'var(--color-vocab)'
-                    : 'var(--color-border)';
-
-                return (
-                  <span
-                    key={n.nodeId}
-                    className="inline-block rounded-full transition-transform"
-                    style={{
-                      width: isCur ? '10px' : '8px',
-                      height: isCur ? '10px' : '8px',
-                      backgroundColor:
-                        n.status !== 'pending' || isCur
-                          ? dotColor
-                          : 'transparent',
-                      border: `1.5px solid ${dotColor}`,
-                    }}
-                  />
-                );
-              })}
-            </div>
+          <div className="flex items-center gap-2.5 flex-1 max-w-xs">
+            <ProgressSweepBar
+              progress={progressRatio}
+              sweepKey={progressSweepKey}
+              isBoss={isBossPhase}
+              allowSweep={fx.allowE1Slide && !isExam}
+            />
             <span
-              className="text-xs font-bold tabular-nums ml-1"
-              style={{
-                fontFamily: 'var(--font-mono)',
-                color: 'var(--color-text-dim)',
-              }}
+              className="text-xs font-bold tabular-nums shrink-0"
+              style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
             >
-              {Math.max(1, stagePosition)}/{stageNodes.length}
+              {stagePosition}/{stageNodes.length}
             </span>
           </div>
 
-          {/* Combo badge 🔥x2 / 🔥x3 + XP cộng dồn */}
           <div className="flex items-center gap-2.5">
-            {runState.combo >= 2 && (
+            {runState.combo >= 2 && !isExam && (
               <motion.span
-                key={runState.combo}
-                initial={prefersReduced ? false : { scale: 1.25 }}
+                ref={desktopComboRef}
+                key={`d-combo-${runState.combo}`}
+                data-testid="v1-combo-badge-desktop"
+                initial={fx.allowE1Slide ? { scale: 1.4 } : false}
                 animate={{ scale: 1 }}
-                className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold tabular-nums"
+                transition={{ duration: 0.22, ease: [0.2, 0.8, 0.2, 1] }}
+                className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold tabular-nums"
                 style={{
                   fontFamily: 'var(--font-mono)',
                   backgroundColor:
-                    comboMult >= 2
+                    comboMult > 1
                       ? 'color-mix(in srgb, var(--color-writing) 18%, var(--color-surface-2))'
                       : 'var(--color-surface-2)',
-                  color:
-                    comboMult >= 2
-                      ? 'var(--color-writing)'
-                      : 'var(--color-text)',
+                  color: comboMult > 1 ? 'var(--color-writing)' : 'var(--color-text)',
                   border: '1px solid var(--color-border)',
                 }}
               >
-                <Flame className="w-3.5 h-3.5" />
-                <span>
-                  {comboMult > 1 ? `🔥x${comboMult}` : `${runState.combo}`}
-                </span>
+                <Flame className="w-3.5 h-3.5" aria-hidden="true" />
+                <span>{comboMult > 1 ? `×${comboMult} (${runState.combo})` : `${runState.combo}`}</span>
               </motion.span>
             )}
-
-            <span
-              className="text-sm font-bold tabular-nums"
-              style={{
-                fontFamily: 'var(--font-mono)',
-                color: 'var(--color-correct)',
-              }}
-            >
-              +{runState.totalXp} XP
-            </span>
-          </div>
-        </div>
-
-        {/* Bản đồ Run (RunMap) */}
-        <RunMap
-          nodes={runState.nodes}
-          currentIndex={runState.currentIndex}
-          stageIndex={runState.currentStage}
-          stageSize={runState.stageSize}
-          isBossPhase={isBossPhase}
-          bossHp={runState.bossHp}
-          bossDefeated={runState.bossDefeated}
-        />
-
-        {/* Thẻ Node hiện tại */}
-        {activeNode && (
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={activeNode.nodeId}
-              data-testid="v1-node"
-              data-node-id={activeNode.nodeId}
-              data-item-id={activeNode.itemId}
-              data-face={activeNode.face}
-              variants={pickVariants(questionSlideVariants, prefersReduced)}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-            >
-              <Card
-                padding="lg"
-                skillAccent={
-                  isBossPhase
-                    ? 'speaking'
-                    : activeNode.nodeKind === 'listen'
-                    ? 'listening'
-                    : activeNode.nodeKind === 'collocation'
-                    ? 'writing'
-                    : activeNode.nodeKind === 'paraphrase'
-                    ? 'reading'
-                    : activeNode.nodeKind === 'error'
-                    ? 'speaking'
-                    : 'vocab'
-                }
-                className="space-y-5"
-                style={
-                  isBossPhase
-                    ? {
-                        borderColor: 'var(--color-wrong)',
-                        boxShadow: 'var(--shadow-glow-wrong)',
-                      }
-                    : undefined
-                }
+            {brokenComboGhost && fx.allowE1Slide && !isExam && (
+              <motion.span
+                key={`d-ghost-${brokenComboGhost.id}`}
+                aria-hidden="true"
+                initial={{ y: 0, opacity: 1 }}
+                animate={{ y: 12, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="text-xs font-bold tabular-nums"
+                style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
               >
-                {/* Hàng nhãn Face + CEFR + POS + Thẻ hiếm / Làm lại */}
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Pill
-                      tone={
-                        isBossPhase
-                          ? 'wrong'
-                          : activeNode.nodeKind === 'listen'
-                          ? 'listening'
-                          : activeNode.nodeKind === 'collocation'
-                          ? 'writing'
-                          : activeNode.nodeKind === 'paraphrase'
-                          ? 'reading'
-                          : activeNode.nodeKind === 'error'
-                          ? 'speaking'
-                          : 'vocab'
-                      }
-                    >
-                      {getFaceHeaderTitleVi(activeNode.face)}
-                    </Pill>
-
-                    {activeNode.isRetry && (
-                      <Pill tone="partial">Làm lại (đã hạ 1 bậc)</Pill>
-                    )}
-
-                    {activeNode.isRare && (
-                      <Pill tone="vocab" icon={<Sparkles className="w-3.5 h-3.5" />}>
-                        Thẻ hiếm ×3 XP
-                      </Pill>
-                    )}
-                  </div>
-
-                  <div className="flex items-center gap-1.5">
-                    {'cefr' in activeNode.prompt && activeNode.prompt.cefr && (
-                      <Pill tone="info">{activeNode.prompt.cefr}</Pill>
-                    )}
-                    {'pos' in activeNode.prompt &&
-                      activeNode.prompt.pos &&
-                      activeNode.prompt.pos.map((p) => (
-                        <Pill key={p} tone="neutral">
-                          {p}.
-                        </Pill>
-                      ))}
-                  </div>
-                </div>
-
-                {/* Nội dung chi tiết của từng Face (8 loại Face) */}
-                {renderFaceContent({
-                  activeNode,
-                  typedAnswer,
-                  setTypedAnswer,
-                  selectedChoiceIdx,
-                  onChoiceSelect: handleChoiceSelect,
-                  onSubmit: () => handleSubmitAnswer(),
-                  onIntroSeen: () => {
-                    playSfx('flip');
-                    setRunState(submitIntroAction(runState, 'seen'));
-                  },
-                  onIntroKnowAlready: () =>
-                    setRunState(submitIntroAction(runState, 'know_already')),
-                  audioPlaying,
-                  audioFallbackNotice,
-                  onPlayAudio: playCardAudio,
-                  audioMissing,
-                  hasFeedback: Boolean(runState.feedback),
-                  feedbackStatus: runState.feedback?.status,
-                })}
-
-                {/* Thanh hành động dưới cùng: [Gợi ý H] [Không nhớ] [Nộp ↵] */}
-                {activeNode.face !== 'intro' && !runState.feedback && (
-                  <div
-                    className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t"
-                    style={{ borderColor: 'var(--color-border)' }}
-                  >
-                    <div className="flex items-center gap-2">
-                      {activeNode.prompt.face !== 'dict_full' && (
-                        <Button
-                          variant="secondary"
-                          leftIcon={<Lightbulb className="w-4 h-4" />}
-                          onClick={handleHint}
-                        >
-                          Gợi ý (H)
-                        </Button>
-                      )}
-
-                      <Button
-                        variant="ghost"
-                        leftIcon={<HelpCircle className="w-4 h-4" />}
-                        onClick={() => handleSubmitAnswer('')}
-                      >
-                        Không nhớ
-                      </Button>
-                    </div>
-
-                    {!isChoicePrompt(activeNode.prompt) && (
-                      <Button
-                        variant="primary"
-                        size="md"
-                        skill={isBossPhase ? 'speaking' : 'vocab'}
-                        onClick={() => handleSubmitAnswer()}
-                      >
-                        Nộp (Enter)
-                      </Button>
-                    )}
-                  </div>
-                )}
-              </Card>
-            </motion.div>
-          </AnimatePresence>
-        )}
-
-        {/* Feedback tức thì sau mỗi thẻ:
-            - Đúng: chip xanh + 1 collocation nổi lên (tự chuyển sau 1.2s hoặc bấm Enter)
-            - Sai / Partial: hiện đáp án chuẩn, tô đỏ chữ cái sai (diff từng ký tự), câu ví dụ và vnTrap (chờ Enter) */}
-        {runState.feedback && (
-          <div className="space-y-3">
-            {/* Banner bổ sung của V1: Collocation nổi lên khi đúng, hoặc Diff từng ký tự + vnTrap khi sai/partial */}
-            {runState.feedback.status === 'correct' &&
-              runState.feedback.collocationHighlight && (
-                <motion.div
-                  initial={prefersReduced ? false : { opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="rounded-[var(--radius-md)] border px-4 py-3 flex flex-wrap items-center justify-between gap-3"
-                  style={{
-                    backgroundColor:
-                      'color-mix(in srgb, var(--color-correct) 12%, var(--color-surface))',
-                    borderColor: 'var(--color-correct)',
-                  }}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <Pill
-                      tone="correct"
-                      icon={<CheckCircle2 className="w-3.5 h-3.5" />}
-                    >
-                      +{runState.feedback.xpEarned} XP
-                    </Pill>
-                    <span
-                      className="text-sm font-medium"
-                      style={{ color: 'var(--color-text-dim)' }}
-                    >
-                      Collocation đi kèm:
-                    </span>
-                    <strong
-                      className="text-sm font-bold"
-                      style={{
-                        fontFamily: 'var(--font-mono)',
-                        color: 'var(--color-text)',
-                      }}
-                    >
-                      {runState.feedback.collocationHighlight}
-                    </strong>
-                  </div>
-                  <span
-                    className="text-xs"
-                    style={{ color: 'var(--color-text-dim)' }}
-                  >
-                    Tự chuyển sau 1,2 giây hoặc bấm Enter
-                  </span>
-                </motion.div>
-              )}
-
-            {(runState.feedback.status === 'wrong' ||
-              runState.feedback.status === 'partial') &&
-              runState.feedback.charDiff && (
-                <CharDiffBox
-                  segments={runState.feedback.charDiff}
-                  correctAnswer={runState.feedback.correctAnswer}
-                  wrongCharNotice={runState.feedback.wrongCharNotice}
-                  vnTrap={runState.feedback.vnTrap}
-                />
-              )}
-
-            <FeedbackPanel
-              open={true}
-              status={runState.feedback.status}
-              title={
-                runState.feedback.status === 'correct'
-                  ? 'Chính xác!'
-                  : runState.feedback.status === 'partial'
-                  ? 'Gần đúng (Sai 1 ký tự → chấm Hard)'
-                  : isBossPhase
-                  ? 'Chưa chính xác (thẻ sẽ quay lại ở cuối Boss)'
-                  : 'Chưa chính xác (thẻ sẽ quay lại sau 3–5 thẻ)'
-              }
-              correctAnswer={runState.feedback.correctAnswer}
-              explanation={
-                runState.feedback.vnTrap &&
-                !runState.feedback.explanationVi.includes(runState.feedback.vnTrap)
-                  ? `${runState.feedback.explanationVi} · Lưu ý: ${runState.feedback.vnTrap}`
-                  : runState.feedback.explanationVi
-              }
-              evidenceQuote={runState.feedback.exampleEn}
-              onNext={handleNextAfterFeedback}
-            />
+                ×{brokenComboGhost.count}
+              </motion.span>
+            )}
+            {!isExam && (
+              <span
+                ref={desktopXpRef}
+                className="text-sm font-bold tabular-nums"
+                style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-correct)' }}
+              >
+                +{runState.totalXp} XP
+              </span>
+            )}
           </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-// ---------------------------------------------------------------------------
-// Sub-components for rendering character diffs and each of the 8 V1 faces
-// ---------------------------------------------------------------------------
-
-interface CharDiffBoxProps {
-  segments: readonly CharDiffSegment[];
-  correctAnswer: string;
-  wrongCharNotice?: string;
-  vnTrap?: string;
-}
-
-const CharDiffBox: React.FC<CharDiffBoxProps> = ({
-  segments,
-  correctAnswer,
-  wrongCharNotice,
-  vnTrap,
-}) => {
-  return (
-    <div
-      className="rounded-[var(--radius-md)] border p-4 space-y-2.5"
-      style={{
-        backgroundColor: 'var(--color-surface)',
-        borderColor: 'var(--color-wrong)',
-      }}
-      aria-label="So sánh từng ký tự"
-    >
-      <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
-        <span className="font-semibold" style={{ color: 'var(--color-text-dim)' }}>
-          Đối chiếu từng ký tự (ký tự sai tô đỏ):
-        </span>
-        {wrongCharNotice && (
-          <span className="font-medium" style={{ color: 'var(--color-wrong)' }}>
-            {wrongCharNotice}
-          </span>
-        )}
-      </div>
-
-      <div
-        className="flex flex-wrap items-center gap-1 text-base font-bold tracking-wider"
-        style={{ fontFamily: 'var(--font-mono)' }}
-      >
-        {segments.map((seg) => {
-          const isMatch = seg.status === 'match';
-          return (
-            <span
-              key={seg.index}
-              className="inline-flex items-center justify-center min-w-[26px] h-8 px-1.5 rounded border"
-              style={{
-                backgroundColor: isMatch
-                  ? 'color-mix(in srgb, var(--color-correct) 12%, var(--color-surface-2))'
-                  : 'color-mix(in srgb, var(--color-wrong) 22%, var(--color-surface-2))',
-                borderColor: isMatch
-                  ? 'var(--color-correct)'
-                  : 'var(--color-wrong)',
-                color: isMatch ? 'var(--color-correct)' : 'var(--color-wrong)',
-              }}
-              title={
-                isMatch
-                  ? `Đúng: ${seg.char}`
-                  : `Bạn gõ: "${seg.char}" · Đúng: "${seg.expectedChar ?? ''}"`
-              }
-            >
-              {seg.char}
-            </span>
-          );
-        })}
-      </div>
-
-      <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-        Đáp án chuẩn:{' '}
-        <strong
-          style={{
-            fontFamily: 'var(--font-mono)',
-            color: 'var(--color-correct)',
-          }}
-        >
-          {correctAnswer}
-        </strong>
-      </div>
-
-      {vnTrap && (
-        <div
-          className="text-xs px-3 py-2 rounded border flex items-start gap-2"
-          style={{
-            backgroundColor:
-              'color-mix(in srgb, var(--color-partial) 12%, var(--color-surface-2))',
-            borderColor: 'var(--color-partial)',
-            color: 'var(--color-text)',
-          }}
-        >
-          <AlertTriangle
-            className="w-4 h-4 shrink-0 mt-0.5"
-            style={{ color: 'var(--color-partial)' }}
-          />
-          <span>
-            <strong>Bẫy hay gặp:</strong> {vnTrap}
-          </span>
         </div>
-      )}
+
+        {/* Thân 2 cột trên desktop (câu hỏi max-w-[720px] căn giữa + RunMap cột phải 280px) */}
+        <div className="flex flex-col lg:flex-row lg:items-start gap-5">
+          <div className="flex-1 min-w-0 max-w-[720px] w-full mx-auto space-y-3">
+            {activeNode && (
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeNode.nodeId}
+                  ref={questionCardRef}
+                  data-testid="v1-node"
+                  data-node-id={activeNode.nodeId}
+                  data-item-id={activeNode.itemId}
+                  data-face={activeNode.face}
+                  variants={pickVariants(questionSlideVariants, !fx.allowE1Slide)}
+                  initial="initial"
+                  animate="animate"
+                  exit="exit"
+                >
+                  <Card
+                    padding="md"
+                    skillAccent={
+                      isBossPhase
+                        ? 'speaking'
+                        : activeNode.nodeKind === 'listen'
+                        ? 'listening'
+                        : activeNode.nodeKind === 'collocation'
+                        ? 'writing'
+                        : activeNode.nodeKind === 'paraphrase'
+                        ? 'reading'
+                        : activeNode.nodeKind === 'error'
+                        ? 'speaking'
+                        : 'vocab'
+                    }
+                    className="space-y-3 sm:space-y-4"
+                    style={{
+                      ...(cardBorderColor
+                        ? {
+                            borderTopColor: cardBorderColor,
+                            borderRightColor: cardBorderColor,
+                            borderBottomColor: cardBorderColor,
+                          }
+                        : {}),
+                      ...(isBossPhase ? { boxShadow: 'var(--shadow-glow-wrong)' } : {}),
+                    }}
+                  >
+                      {/* Hàng nhãn Face + tín hiệu sống nhẹ ngoài vùng chữ + Luật Boss / CEFR / POS */}
+                      <div className="flex flex-wrap items-center justify-between gap-2">
+                        <div className="flex flex-wrap items-center gap-1.5">
+                          <motion.span
+                            aria-hidden="true"
+                            className="inline-flex w-4 h-4 rounded-full items-center justify-center shrink-0"
+                            style={{
+                              backgroundColor: isBossPhase
+                                ? 'color-mix(in srgb, var(--color-wrong) 22%, transparent)'
+                                : 'color-mix(in srgb, var(--color-vocab) 22%, transparent)',
+                              color: isBossPhase ? 'var(--color-wrong)' : 'var(--color-vocab)',
+                            }}
+                            animate={
+                              fx.allowE2Living && !isExam
+                                ? { scale: [1, 1.08, 1], opacity: [0.8, 1, 0.8] }
+                                : undefined
+                            }
+                            transition={
+                              fx.allowE2Living && !isExam
+                                ? { duration: 2.8, repeat: Infinity, ease: 'easeInOut' }
+                                : undefined
+                            }
+                          >
+                            <Sparkles className="w-3 h-3" />
+                          </motion.span>
+
+                          <Pill
+                            tone={
+                              isBossPhase
+                                ? 'wrong'
+                                : activeNode.nodeKind === 'listen'
+                                ? 'listening'
+                                : activeNode.nodeKind === 'collocation'
+                                ? 'writing'
+                                : activeNode.nodeKind === 'paraphrase'
+                                ? 'reading'
+                                : activeNode.nodeKind === 'error'
+                                ? 'speaking'
+                                : 'vocab'
+                            }
+                          >
+                            {getFaceHeaderTitleVi(activeNode.face)}
+                          </Pill>
+
+                          {bossModInfo && (
+                            <Pill tone="wrong" data-testid="v1-boss-modifier-pill">
+                              Luật Boss: {bossModInfo.labelVi}
+                            </Pill>
+                          )}
+
+                          {activeNode.isThornyNode && !isBossPhase && (
+                            <Pill tone="writing">Đường gai ×1,5</Pill>
+                          )}
+
+                          {activeNode.isRetry && <Pill tone="partial">Làm lại</Pill>}
+                        </div>
+
+                        <div className="flex items-center gap-1.5">
+                          {'cefr' in activeNode.prompt && activeNode.prompt.cefr && (
+                            <Pill tone="info">{activeNode.prompt.cefr}</Pill>
+                          )}
+                          {'pos' in activeNode.prompt &&
+                            activeNode.prompt.pos &&
+                            activeNode.prompt.pos.map((p) => (
+                              <Pill key={p} tone="neutral">
+                                {p}.
+                              </Pill>
+                            ))}
+                        </div>
+                      </div>
+
+                      {/* Nội dung chi tiết của từng Face */}
+                      {renderFaceContent({
+                        activeNode,
+                        typedAnswer,
+                        setTypedAnswer,
+                        selectedChoiceIdx,
+                        onChoiceSelect: handleChoiceSelect,
+                        onSubmit: () => handleSubmitAnswer(),
+                        onIntroSeen: () => {
+                          playSfx('flip', { examMode: isExam });
+                          setRunState(submitIntroAction(runState, 'seen'));
+                        },
+                        onIntroKnowAlready: () => {
+                          playSfx('tap', { examMode: isExam });
+                          setRunState(submitIntroAction(runState, 'know_already'));
+                        },
+                        introFlipped,
+                        onToggleIntroFlip: handleToggleIntroFlip,
+                        audioPlaying,
+                        audioFallbackNotice,
+                        onPlayAudio: playCardAudio,
+                        audioMissing,
+                        hasFeedback: Boolean(runState.feedback),
+                        feedbackStatus: runState.feedback?.status,
+                        revealCorrectReady,
+                        examMode: isExam,
+                        fx,
+                      })}
+
+                      {/* Thanh hành động phụ + Nút chính (trên mobile dính đáy min-h-[52px]) */}
+                      {activeNode.face !== 'intro' && !runState.feedback && (
+                        <div
+                          className="sticky bottom-0 z-10 md:static -mx-3.5 px-3.5 py-2.5 md:mx-0 md:px-0 md:pb-0 md:pt-3 border-t flex flex-wrap items-center justify-between gap-2"
+                          style={{
+                            backgroundColor: 'var(--color-surface)',
+                            borderColor: 'var(--color-border)',
+                            paddingBottom: 'max(0.5rem, env(safe-area-inset-bottom, 0px))',
+                          }}
+                        >
+                          <div className="flex items-center gap-2">
+                            {activeNode.prompt.face !== 'dict_full' && !hintsDisabledByBoss && (
+                              <Button
+                                variant="secondary"
+                                leftIcon={<Lightbulb className="w-4 h-4" />}
+                                onClick={handleHint}
+                              >
+                                Gợi ý (H)
+                              </Button>
+                            )}
+
+                            <Button
+                              variant="ghost"
+                              leftIcon={<HelpCircle className="w-4 h-4" />}
+                              onClick={() => handleSubmitAnswer('')}
+                            >
+                              Không nhớ
+                            </Button>
+                          </div>
+
+                          {!isChoicePrompt(activeNode.prompt) && (
+                            <Button
+                              variant="primary"
+                              size="md"
+                              skill={isBossPhase ? 'speaking' : 'vocab'}
+                              className="min-h-[52px] md:min-h-[44px] flex-1 sm:flex-none"
+                              onClick={() => handleSubmitAnswer()}
+                            >
+                              Nộp (Enter)
+                            </Button>
+                          )}
+                        </div>
+                      )}
+                    </Card>
+                </motion.div>
+              </AnimatePresence>
+            )}
+
+            {/* Phản hồi tức thì sau mỗi thẻ (tách riêng để typewriter 18ms không re-render toàn màn) */}
+            {runState.feedback && (
+              <V1FeedbackSection
+                feedback={runState.feedback}
+                isBossPhase={isBossPhase}
+                examMode={isExam}
+                fx={fx}
+                onNext={handleNextAfterFeedback}
+              />
+            )}
+          </div>
+
+          {/* Cột phải Desktop (≥ 1024px): RunMap thu gọn 280px */}
+          <aside className="hidden lg:block w-[280px] shrink-0 sticky top-4">
+            <RunMap
+              nodes={runState.nodes}
+              currentIndex={runState.currentIndex}
+              stageIndex={runState.currentStage}
+              stageSize={runState.stageSize}
+              isBossPhase={isBossPhase}
+              bossHp={runState.bossHp}
+              bossDefeated={runState.bossDefeated}
+              bossModifier={runState.bossModifier}
+              compact
+              examMode={isExam}
+            />
+          </aside>
+        </div>
+      </div>
     </div>
   );
 };
@@ -1492,7 +2106,7 @@ function getFaceHeaderTitleVi(face: string): string {
     case 'para_match':
       return 'Chọn Paraphrase tương đương (1–4)';
     case 'err_fix':
-      return 'Sửa lỗi ngữ pháp / từ vựng gạch chân';
+      return 'Sửa lỗi gạch chân';
     case 'tfng_retry':
       return 'Reading · True / False / Not Given';
     case 'head_retry':
@@ -1504,7 +2118,7 @@ function getFaceHeaderTitleVi(face: string): string {
     case 'err_user':
       return 'Ôn lỗi của chính bạn';
     default:
-      return 'Ôn tập FSRS';
+      return 'Ôn tập thông minh';
   }
 }
 
@@ -1513,10 +2127,12 @@ interface RenderFaceContentParams {
   typedAnswer: string;
   setTypedAnswer: (val: string) => void;
   selectedChoiceIdx: number | null;
-  onChoiceSelect: (idx: number) => void;
+  onChoiceSelect: (idx: number, origin?: { x: number; y: number }) => void;
   onSubmit: () => void;
   onIntroSeen: () => void;
   onIntroKnowAlready: () => void;
+  introFlipped: boolean;
+  onToggleIntroFlip: () => void;
   audioPlaying: boolean;
   audioFallbackNotice: string | null;
   onPlayAudio: (
@@ -1527,6 +2143,9 @@ interface RenderFaceContentParams {
   audioMissing: boolean;
   hasFeedback: boolean;
   feedbackStatus?: 'correct' | 'partial' | 'wrong';
+  revealCorrectReady: boolean;
+  examMode: boolean;
+  fx: FxTierCapabilities;
 }
 
 function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
@@ -1539,26 +2158,33 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     onSubmit,
     onIntroSeen,
     onIntroKnowAlready,
+    introFlipped,
+    onToggleIntroFlip,
     audioPlaying,
     audioFallbackNotice,
     onPlayAudio,
-    audioMissing,
     hasFeedback,
     feedbackStatus,
+    revealCorrectReady,
+    examMode,
+    fx,
   } = params;
 
   const { prompt } = activeNode;
 
-  // Helper dùng chung cho các mặt chọn đáp án (recog / para_match / tfng_retry / head_retry)
   const renderChoices = (choices: readonly string[], correctIndex: number) => (
-    <div className="grid grid-cols-1 gap-2.5">
+    <div className="grid grid-cols-1 gap-2">
       {choices.map((choice, idx) => {
         const isEliminated = activeNode.eliminatedChoices.includes(idx);
         let choiceState: ChoiceState = 'idle';
 
         if (hasFeedback) {
           if (idx === correctIndex) {
-            choiceState = selectedChoiceIdx === idx ? 'correct' : 'reveal-correct';
+            if (selectedChoiceIdx === idx) {
+              choiceState = 'correct';
+            } else if (feedbackStatus !== 'wrong' || revealCorrectReady) {
+              choiceState = 'reveal-correct';
+            }
           } else if (selectedChoiceIdx === idx) {
             choiceState = 'wrong';
           }
@@ -1567,13 +2193,15 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
         }
 
         return (
-          <ChoiceButton
+          <V1ChoiceItem
             key={idx}
             indexLabel={String(idx + 1)}
             label={isEliminated ? '— Đã loại bằng gợi ý —' : choice}
             state={choiceState}
             disabled={hasFeedback || isEliminated}
-            onClick={() => onChoiceSelect(idx)}
+            examMode={examMode}
+            fx={fx}
+            onSelect={(origin) => onChoiceSelect(idx, origin)}
           />
         );
       })}
@@ -1593,108 +2221,145 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     />
   );
 
-  // 1. Face: intro
+  // 1. Face: intro — Thẻ lật 3D 2 mặt tách biệt bằng LiveCard (SR-45 WebKit-safe)
   if (prompt.face === 'intro') {
-    return (
-      <div className="space-y-5">
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <div>
-            <h2
-              className="text-3xl font-extrabold"
-              style={{ color: 'var(--color-text)' }}
-            >
-              {prompt.headword}
-            </h2>
-            <div
-              className="mt-1 text-base ipa"
-              style={{ color: 'var(--color-text-dim)' }}
-            >
-              {prompt.ipaUk}
-              {prompt.ipaUs && prompt.ipaUs !== prompt.ipaUk
-                ? ` · US ${prompt.ipaUs}`
-                : ''}
+    const backFace = (
+      <div className="h-full flex flex-col justify-between gap-3 overflow-y-auto">
+        <div className="space-y-2.5">
+          <div className="flex items-start justify-between gap-2">
+            <div>
+              <div className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                {prompt.meaningVi}
+              </div>
+              {prompt.definitionEn && (
+                <div className="text-xs leading-relaxed mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                  {prompt.definitionEn}
+                </div>
+              )}
             </div>
+            <Button
+              variant="ghost"
+              size="sm"
+              className="whitespace-nowrap shrink-0"
+              leftIcon={<RotateCw className="w-4 h-4" />}
+              onClick={onToggleIntroFlip}
+            >
+              Mặt trước
+            </Button>
           </div>
 
-          <AudioButton
-            playing={audioPlaying}
-            onToggle={() => onPlayAudio(prompt.audioUrl, false)}
-            label="Nghe phát âm"
-          />
-        </div>
-
-        {audioFallbackNotice && (
-          <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-            {audioFallbackNotice}
-          </p>
-        )}
-
-        <div
-          className="p-4 rounded-[var(--radius-md)] border space-y-1.5"
-          style={{
-            backgroundColor: 'var(--color-surface-2)',
-            borderColor: 'var(--color-border)',
-          }}
-        >
-          <div className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-            {prompt.meaningVi}
-          </div>
-          <div className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-            {prompt.definitionEn}
-          </div>
-        </div>
-
-        {/* 1 ví dụ */}
-        <div className="space-y-1">
-          <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
-            Ví dụ ngữ cảnh IELTS
-          </div>
           <blockquote
-            className="pl-3.5 py-1.5 border-l-2 reading-prose text-base italic"
-            style={{
-              borderColor: 'var(--color-vocab)',
-              color: 'var(--color-text)',
-            }}
+            className="pl-3 py-0.5 border-l-2 text-xs sm:text-sm italic leading-snug"
+            style={{ borderColor: 'var(--color-vocab)', color: 'var(--color-text)' }}
           >
             “{prompt.exampleEn}”
           </blockquote>
-          {prompt.exampleVi && (
-            <p className="text-xs pl-3.5" style={{ color: 'var(--color-text-dim)' }}>
-              {prompt.exampleVi}
+
+          {prompt.collocations.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+              {prompt.collocations.map((col, idx) => (
+                <div
+                  key={idx}
+                  className="px-2.5 py-1.5 rounded-[var(--radius-sm)] border text-xs font-semibold"
+                  style={{
+                    fontFamily: 'var(--font-mono)',
+                    backgroundColor: 'var(--color-surface-2)',
+                    borderColor: 'var(--color-border)',
+                    color: 'var(--color-vocab)',
+                  }}
+                >
+                  • {col}
+                </div>
+              ))}
+            </div>
+          )}
+
+          {prompt.vnTrap && (
+            <p className="text-xs leading-snug" style={{ color: 'var(--color-partial)' }}>
+              💡 {prompt.vnTrap}
             </p>
           )}
         </div>
+      </div>
+    );
 
-        {/* 2 collocations */}
-        <div className="space-y-2">
-          <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
-            2 Collocations chủ lực
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-            {prompt.collocations.map((col, idx) => (
-              <div
-                key={idx}
-                className="px-3.5 py-2.5 rounded-[var(--radius-sm)] border text-sm font-semibold"
-                style={{
-                  fontFamily: 'var(--font-mono)',
-                  backgroundColor: 'var(--color-surface-2)',
-                  borderColor: 'var(--color-border)',
-                  color: 'var(--color-vocab)',
-                }}
-              >
-                • {col}
+    return (
+      <div className="space-y-3.5">
+        <LiveCard
+          skill="vocab"
+          flipped={introFlipped}
+          examMode={examMode}
+          breathing={false}
+          tilt={fx.allowE2Living}
+          backContent={backFace}
+          className="min-h-[348px]"
+        >
+          <div className="min-h-[308px] flex flex-col justify-between gap-4">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <h2 className="font-display text-3xl font-extrabold" style={{ color: 'var(--color-text)' }}>
+                  {prompt.headword}
+                </h2>
+                <div className="mt-1 text-base ipa" style={{ color: 'var(--color-text-dim)' }}>
+                  {prompt.ipaUk}
+                  {prompt.ipaUs && prompt.ipaUs !== prompt.ipaUk ? ` · US ${prompt.ipaUs}` : ''}
+                </div>
               </div>
-            ))}
+
+              <AudioButton
+                playing={audioPlaying}
+                onToggle={() => onPlayAudio(prompt.audioUrl, false)}
+                label="Nghe phát âm"
+              />
+            </div>
+
+            {audioFallbackNotice && (
+              <p className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                {audioFallbackNotice}
+              </p>
+            )}
+
+            <div
+              className="p-3.5 rounded-[var(--radius-md)] border space-y-1"
+              style={{
+                backgroundColor: 'var(--color-surface-2)',
+                borderColor: 'var(--color-border)',
+              }}
+            >
+              <div className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+                {prompt.meaningVi}
+              </div>
+              {prompt.definitionEn && (
+                <div className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                  {prompt.definitionEn}
+                </div>
+              )}
+            </div>
+
+            <div className="flex items-center justify-between gap-2">
+              <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+                {prompt.collocations.length > 0
+                  ? `Lật mặt sau để xem ví dụ & ${prompt.collocations.length} collocation`
+                  : 'Lật mặt sau để xem ví dụ ngữ cảnh'}
+              </span>
+              <Button
+                variant="secondary"
+                size="sm"
+                className="whitespace-nowrap shrink-0"
+                leftIcon={<RotateCw className="w-4 h-4" />}
+                onClick={onToggleIntroFlip}
+                data-testid="v1-intro-flip-btn"
+              >
+                Lật thẻ
+              </Button>
+            </div>
           </div>
-        </div>
+        </LiveCard>
 
-        {prompt.vnTrap && (
-          <p className="text-xs" style={{ color: 'var(--color-partial)' }}>
-            💡 {prompt.vnTrap}
-          </p>
-        )}
-
-        <div className="flex flex-wrap items-center justify-end gap-3 pt-2">
+        <div
+          className="sticky bottom-0 z-10 md:static -mx-3.5 px-3.5 py-2 md:mx-0 md:px-0 md:py-0 flex flex-wrap items-center justify-end gap-2.5"
+          style={{ backgroundColor: 'var(--color-surface)' }}
+        >
           <Button
             variant="secondary"
             leftIcon={<Zap className="w-4 h-4" />}
@@ -1705,6 +2370,7 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           <Button
             variant="primary"
             skill="vocab"
+            className="min-h-[52px] md:min-h-[44px]"
             rightIcon={<ArrowRight className="w-4 h-4" />}
             onClick={onIntroSeen}
           >
@@ -1718,19 +2384,16 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
   // 2. Face: recog
   if (prompt.face === 'recog') {
     return (
-      <div className="space-y-5">
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <div>
+      <div className="space-y-3 sm:space-y-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0">
             <h2
-              className="text-3xl font-extrabold"
+              className="font-display text-2xl sm:text-3xl font-extrabold leading-tight truncate"
               style={{ color: 'var(--color-text)' }}
             >
               {prompt.headword}
             </h2>
-            <div
-              className="mt-1 text-base ipa"
-              style={{ color: 'var(--color-text-dim)' }}
-            >
+            <div className="mt-0.5 text-sm sm:text-base ipa" style={{ color: 'var(--color-text-dim)' }}>
               {prompt.ipaUk}
             </div>
           </div>
@@ -1742,38 +2405,11 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           />
         </div>
 
-        <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+        <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
           Chọn nghĩa tiếng Việt chính xác nhất (phím 1–4):
         </p>
 
-        <div className="grid grid-cols-1 gap-2.5">
-          {prompt.choices.map((choice, idx) => {
-            const isEliminated = activeNode.eliminatedChoices.includes(idx);
-            let choiceState: ChoiceState = 'idle';
-
-            if (hasFeedback) {
-              if (idx === prompt.correctIndex) {
-                choiceState =
-                  selectedChoiceIdx === idx ? 'correct' : 'reveal-correct';
-              } else if (selectedChoiceIdx === idx) {
-                choiceState = 'wrong';
-              }
-            } else if (selectedChoiceIdx === idx) {
-              choiceState = 'selected';
-            }
-
-            return (
-              <ChoiceButton
-                key={idx}
-                indexLabel={String(idx + 1)}
-                label={isEliminated ? '— Đã loại bằng gợi ý —' : choice}
-                state={choiceState}
-                disabled={hasFeedback || isEliminated}
-                onClick={() => onChoiceSelect(idx)}
-              />
-            );
-          })}
-        </div>
+        {renderChoices(prompt.choices, prompt.correctIndex)}
       </div>
     );
   }
@@ -1781,60 +2417,35 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
   // 3. Face: recall_meaning
   if (prompt.face === 'recall_meaning') {
     return (
-      <div className="space-y-4">
-        <div className="space-y-1.5">
-          <div
-            className="text-2xl font-bold"
-            style={{ color: 'var(--color-text)' }}
-          >
+      <div className="space-y-3 sm:space-y-4">
+        <div className="space-y-1">
+          <div className="text-xl sm:text-2xl font-bold leading-snug" style={{ color: 'var(--color-text)' }}>
             “{prompt.meaningVi}”
           </div>
-          <div
-            className="text-base leading-relaxed"
-            style={{ color: 'var(--color-text-dim)' }}
-          >
-            {prompt.definitionEn}
-          </div>
+          {prompt.definitionEn && (
+            <div className="text-sm sm:text-base leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+              {prompt.definitionEn}
+            </div>
+          )}
         </div>
 
-        {/* Khung hiển thị số chữ cái _ _ _ _ (khoảng trắng hiện ·) */}
         <div
-          className="px-4 py-2.5 rounded-[var(--radius-sm)] border flex items-center justify-between gap-3"
+          className="px-3 py-2 rounded-[var(--radius-sm)] border flex items-center justify-between gap-2.5"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
           }}
         >
-          <span
-            className="text-base sm:text-lg font-bold tracking-widest"
-            style={{
-              fontFamily: 'var(--font-mono)',
-              color: 'var(--color-vocab)',
-            }}
-          >
-            {prompt.placeholderMask}
-          </span>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="lg" />
           <span
             className="text-xs font-semibold tabular-nums shrink-0"
-            style={{
-              fontFamily: 'var(--font-mono)',
-              color: 'var(--color-text-dim)',
-            }}
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
           >
             {prompt.letterCount} chữ cái
           </span>
         </div>
 
-        <AnswerInput
-          value={typedAnswer}
-          onChange={setTypedAnswer}
-          onSubmit={onSubmit}
-          placeholder={prompt.placeholderMask}
-          status={hasFeedback ? feedbackStatus ?? 'idle' : 'idle'}
-          disabled={hasFeedback}
-          autoFocus
-          aria-label="Gõ từ tiếng Anh"
-        />
+        {renderTypedInput(prompt.placeholderMask, 'Gõ từ tiếng Anh')}
       </div>
     );
   }
@@ -1842,58 +2453,41 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
   // 4. Face: recall_cloze
   if (prompt.face === 'recall_cloze') {
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <div
-          className="p-4 rounded-[var(--radius-md)] border space-y-2"
+          className="p-3.5 sm:p-4 rounded-[var(--radius-md)] border space-y-1.5"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
           }}
         >
-          <p
-            className="reading-prose text-lg font-medium"
-            style={{ color: 'var(--color-text)' }}
-          >
+          <p className="reading-prose text-base sm:text-lg font-medium" style={{ color: 'var(--color-text)' }}>
             {prompt.clozeSentenceEn}
           </p>
-          <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+          <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
             Nghĩa gốc: <strong>{prompt.meaningVi}</strong>
             {prompt.exampleVi ? ` — (${prompt.exampleVi})` : ''}
           </p>
         </div>
 
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>
-            Gợi ý khung: {prompt.placeholderMask}
-          </span>
-          <span>{prompt.letterCount} chữ cái (chấp nhận mọi dạng từ phù hợp)</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Gợi ý khung:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
 
-        <AnswerInput
-          value={typedAnswer}
-          onChange={setTypedAnswer}
-          onSubmit={onSubmit}
-          placeholder={prompt.placeholderMask}
-          status={hasFeedback ? feedbackStatus ?? 'idle' : 'idle'}
-          disabled={hasFeedback}
-          autoFocus
-          aria-label="Điền từ vào chỗ trống"
-        />
+        {renderTypedInput(prompt.placeholderMask, 'Điền từ vào chỗ trống')}
       </div>
     );
   }
 
   // 5. Face: listen_spell
   if (prompt.face === 'listen_spell') {
-    const remainingPlays = Math.max(
-      0,
-      prompt.maxPlays - activeNode.audioPlaysUsed,
-    );
+    const remainingPlays = Math.max(0, prompt.maxPlays - activeNode.audioPlaysUsed);
 
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <div
-          className="p-5 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-4"
+          className="p-4 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-3"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -1904,8 +2498,7 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
               Nghe và gõ lại chính xác 100% chính tả
             </div>
             <div className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-              Số lượt phát tối đa: {prompt.maxPlays} lần (còn {remainingPlays}/
-              {prompt.maxPlays} lượt)
+              Còn {remainingPlays}/{prompt.maxPlays} lượt nghe
             </div>
             {audioFallbackNotice && (
               <div className="text-xs" style={{ color: 'var(--color-partial)' }}>
@@ -1927,23 +2520,12 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           />
         </div>
 
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>
-            Khung từ: {prompt.placeholderMask}
-          </span>
-          <span>{prompt.letterCount} chữ cái</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Khung từ:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
 
-        <AnswerInput
-          value={typedAnswer}
-          onChange={setTypedAnswer}
-          onSubmit={onSubmit}
-          placeholder={prompt.placeholderMask}
-          status={hasFeedback ? feedbackStatus ?? 'idle' : 'idle'}
-          disabled={hasFeedback}
-          autoFocus
-          aria-label="Gõ chính tả từ vừa nghe"
-        />
+        {renderTypedInput(prompt.placeholderMask, 'Gõ chính tả từ vừa nghe')}
       </div>
     );
   }
@@ -1951,9 +2533,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
   // 6. Face: col_gap
   if (prompt.face === 'col_gap') {
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <div
-          className="p-4 rounded-[var(--radius-md)] border space-y-2"
+          className="p-3.5 sm:p-4 rounded-[var(--radius-md)] border space-y-1.5"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -1969,30 +2551,18 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           </div>
 
           <div
-            className="text-2xl font-extrabold"
-            style={{
-              fontFamily: 'var(--font-mono)',
-              color: 'var(--color-text)',
-            }}
+            className="text-xl sm:text-2xl font-extrabold"
+            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text)' }}
           >
             {prompt.displayGap}
           </div>
 
-          <div className="text-base font-medium" style={{ color: 'var(--color-text-dim)' }}>
+          <div className="text-sm sm:text-base font-medium" style={{ color: 'var(--color-text-dim)' }}>
             Nghĩa: “{prompt.meaningVi}”
           </div>
         </div>
 
-        <AnswerInput
-          value={typedAnswer}
-          onChange={setTypedAnswer}
-          onSubmit={onSubmit}
-          placeholder={prompt.placeholderMask}
-          status={hasFeedback ? feedbackStatus ?? 'idle' : 'idle'}
-          disabled={hasFeedback}
-          autoFocus
-          aria-label="Điền từ còn thiếu trong cụm collocation"
-        />
+        {renderTypedInput(prompt.placeholderMask, 'Điền từ còn thiếu trong cụm collocation')}
       </div>
     );
   }
@@ -2000,9 +2570,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
   // 7. Face: para_match
   if (prompt.face === 'para_match') {
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <div
-          className="p-4 rounded-[var(--radius-md)] border space-y-2"
+          className="p-3.5 sm:p-4 rounded-[var(--radius-md)] border space-y-1.5"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -2011,7 +2581,7 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
             Cụm từ gốc trong câu hỏi
           </div>
-          <div className="text-xl font-bold" style={{ color: 'var(--color-reading)' }}>
+          <div className="text-lg sm:text-xl font-bold" style={{ color: 'var(--color-reading)' }}>
             “{prompt.questionPhrase}”
           </div>
           <p className="text-xs italic reading-prose" style={{ color: 'var(--color-text-dim)' }}>
@@ -2019,58 +2589,31 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           </p>
         </div>
 
-        <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+        <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
           Chọn cụm Paraphrase đồng nghĩa trong bài (phím 1–4):
         </p>
 
-        <div className="grid grid-cols-1 gap-2.5">
-          {prompt.choices.map((choice, idx) => {
-            const isEliminated = activeNode.eliminatedChoices.includes(idx);
-            let choiceState: ChoiceState = 'idle';
-
-            if (hasFeedback) {
-              if (idx === prompt.correctIndex) {
-                choiceState =
-                  selectedChoiceIdx === idx ? 'correct' : 'reveal-correct';
-              } else if (selectedChoiceIdx === idx) {
-                choiceState = 'wrong';
-              }
-            } else if (selectedChoiceIdx === idx) {
-              choiceState = 'selected';
-            }
-
-            return (
-              <ChoiceButton
-                key={idx}
-                indexLabel={String(idx + 1)}
-                label={isEliminated ? '— Đã loại bằng gợi ý —' : choice}
-                state={choiceState}
-                disabled={hasFeedback || isEliminated}
-                onClick={() => onChoiceSelect(idx)}
-              />
-            );
-          })}
-        </div>
+        {renderChoices(prompt.choices, prompt.correctIndex)}
       </div>
     );
   }
 
-  // 8. Face: tfng_retry / head_retry (Reading: câu hỏi + lựa chọn lên trước, đoạn văn cuộn trong khung)
+  // 8. Face: tfng_retry / head_retry
   if (prompt.face === 'tfng_retry' || prompt.face === 'head_retry') {
     const quote = hasFeedback ? prompt.evidenceQuote : undefined;
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         {prompt.face === 'tfng_retry' ? (
           <div className="space-y-1">
             <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
               Phát biểu cần kiểm tra với đoạn {prompt.paragraphLabel}
             </div>
-            <p className="text-lg font-bold leading-snug" style={{ color: 'var(--color-reading)' }}>
+            <p className="text-base sm:text-lg font-bold leading-snug" style={{ color: 'var(--color-reading)' }}>
               “{prompt.statement}”
             </p>
           </div>
         ) : (
-          <p className="text-base font-semibold" style={{ color: 'var(--color-text)' }}>
+          <p className="text-sm sm:text-base font-semibold" style={{ color: 'var(--color-text)' }}>
             Chọn tiêu đề khớp ý chính của đoạn {prompt.paragraphLabel} (phím 1–4):
           </p>
         )}
@@ -2078,7 +2621,7 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
         {renderChoices(prompt.choices, prompt.correctIndex)}
 
         <div
-          className="p-4 rounded-[var(--radius-md)] border space-y-2 max-h-[36vh] overflow-y-auto"
+          className="p-3.5 rounded-[var(--radius-md)] border space-y-1.5 max-h-[32vh] overflow-y-auto"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -2089,7 +2632,7 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           <div className="text-xs font-semibold uppercase tracking-wider" style={{ color: 'var(--color-text-dim)' }}>
             {prompt.passageTitle} · đoạn {prompt.paragraphLabel}
           </div>
-          <p className="reading-prose text-base leading-relaxed" style={{ color: 'var(--color-text)' }}>
+          <p className="reading-prose text-sm sm:text-base leading-relaxed" style={{ color: 'var(--color-text)' }}>
             <QuoteHighlight text={prompt.paragraphText} quote={quote} />
           </p>
         </div>
@@ -2097,12 +2640,12 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     );
   }
 
-  // 9. Face: ltrap_replay (nghe lại đúng đoạn bẫy rồi gõ đáp án)
+  // 9. Face: ltrap_replay
   if (prompt.face === 'ltrap_replay') {
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <div
-          className="p-5 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-4"
+          className="p-4 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-3"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -2129,22 +2672,22 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           />
         </div>
 
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>Khung: {prompt.placeholderMask}</span>
-          <span>{prompt.letterCount} chữ cái</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Khung:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
         {renderTypedInput(prompt.placeholderMask, 'Gõ đáp án nghe được')}
       </div>
     );
   }
 
-  // 10. Face: dict_full (nghe và chép cả câu)
+  // 10. Face: dict_full
   if (prompt.face === 'dict_full') {
     const remainingPlays = Math.max(0, prompt.maxPlays - activeNode.audioPlaysUsed);
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <div
-          className="p-5 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-4"
+          className="p-4 rounded-[var(--radius-md)] border flex flex-col sm:flex-row items-center justify-between gap-3"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -2167,7 +2710,11 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
             playing={audioPlaying}
             disabled={remainingPlays <= 0 && !hasFeedback}
             onToggle={() => onPlayAudio(prompt.audioUrl, true)}
-            label={remainingPlays > 0 ? `Phát câu (${remainingPlays}/${prompt.maxPlays})` : 'Đã hết lượt nghe'}
+            label={
+              remainingPlays > 0
+                ? `Phát câu (${remainingPlays}/${prompt.maxPlays})`
+                : 'Đã hết lượt nghe'
+            }
           />
         </div>
         {renderTypedInput('Gõ lại câu bạn nghe được', 'Chép lại cả câu vừa nghe')}
@@ -2175,12 +2722,12 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
     );
   }
 
-  // 11. Face: err_user (lỗi của chính người học / cụm kiểu Việt / bẫy tự ghi)
+  // 11. Face: err_user
   if (prompt.face === 'err_user') {
     return (
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         <div
-          className="p-4 rounded-[var(--radius-md)] border space-y-2"
+          className="p-3.5 sm:p-4 rounded-[var(--radius-md)] border space-y-2"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
@@ -2201,13 +2748,13 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
               />
             )}
           </div>
-          <p className="reading-prose text-lg leading-relaxed font-medium" style={{ color: 'var(--color-wrong)' }}>
+          <p className="reading-prose text-base sm:text-lg leading-relaxed font-medium" style={{ color: 'var(--color-wrong)' }}>
             {prompt.front}
           </p>
         </div>
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>Khung sửa đúng: {prompt.placeholderMask}</span>
-          <span>{prompt.letterCount} chữ cái</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Khung sửa đúng:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
         {renderTypedInput(prompt.placeholderMask, 'Gõ bản sửa đúng')}
       </div>
@@ -2217,9 +2764,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
   // 12. Face: err_fix
   if (prompt.face !== 'err_fix') return null;
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       <div
-        className="p-4 rounded-[var(--radius-md)] border space-y-2"
+        className="p-3.5 sm:p-4 rounded-[var(--radius-md)] border space-y-2"
         style={{
           backgroundColor: 'var(--color-surface-2)',
           borderColor: 'var(--color-border)',
@@ -2232,17 +2779,13 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           <Pill tone="speaking">Lỗi: {prompt.tag}</Pill>
         </div>
 
-        <p
-          className="reading-prose text-lg leading-relaxed"
-          style={{ color: 'var(--color-text)' }}
-        >
+        <p className="reading-prose text-base sm:text-lg leading-relaxed" style={{ color: 'var(--color-text)' }}>
           <span>{prompt.prefixText}</span>
           <span
             className="font-bold underline decoration-2 px-1 rounded"
             style={{
               textDecorationColor: 'var(--color-wrong)',
-              backgroundColor:
-                'color-mix(in srgb, var(--color-wrong) 18%, transparent)',
+              backgroundColor: 'color-mix(in srgb, var(--color-wrong) 18%, transparent)',
               color: 'var(--color-wrong)',
             }}
           >
@@ -2253,60 +2796,13 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
       </div>
 
       <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-        <span style={{ fontFamily: 'var(--font-mono)' }}>
-          Khung sửa đúng: {prompt.placeholderMask}
-        </span>
+        <span style={{ fontFamily: 'var(--font-mono)' }}>Khung sửa đúng: {prompt.placeholderMask}</span>
         <span>{prompt.letterCount} chữ cái</span>
       </div>
 
-      <AnswerInput
-        value={typedAnswer}
-        onChange={setTypedAnswer}
-        onSubmit={onSubmit}
-        placeholder={prompt.placeholderMask}
-        status={hasFeedback ? feedbackStatus ?? 'idle' : 'idle'}
-        disabled={hasFeedback}
-        autoFocus
-        aria-label="Gõ phần sửa đúng"
-      />
+      {renderTypedInput(prompt.placeholderMask, 'Gõ phần sửa đúng')}
     </div>
   );
 }
-
-const GameLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
-  <a
-    href={href}
-    className="inline-flex items-center justify-center min-h-[44px] px-4 py-2.5 rounded-[var(--radius-md)] border text-sm font-medium"
-    style={{
-      backgroundColor: 'var(--color-surface-2)',
-      color: 'var(--color-text)',
-      borderColor: 'var(--color-border)',
-    }}
-  >
-    {children}
-  </a>
-);
-
-/** Tô bằng chứng trong đoạn văn (chỉ truyền `quote` sau khi đã trả lời để không lộ đáp án). */
-const QuoteHighlight: React.FC<{ text: string; quote?: string }> = ({ text, quote }) => {
-  if (!quote) return <>{text}</>;
-  const at = text.indexOf(quote);
-  if (at < 0) return <>{text}</>;
-  return (
-    <>
-      {text.slice(0, at)}
-      <mark
-        className="rounded px-0.5"
-        style={{
-          backgroundColor: 'color-mix(in srgb, var(--color-correct) 22%, transparent)',
-          color: 'var(--color-text)',
-        }}
-      >
-        {quote}
-      </mark>
-      {text.slice(at + quote.length)}
-    </>
-  );
-};
 
 export default V1DailyRun;

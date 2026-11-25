@@ -20,15 +20,20 @@ import {
 import {
   BOSS_DEFEAT_XP,
   BUSY_RUN_CARDS,
+  SESSION_COMPLETE_FIRST_XP,
+  SESSION_COMPLETE_REPEAT_XP,
   STAGE_SIZE,
+  THORNY_PATH_CARD_COUNT,
   advanceAfterFeedback,
   analyzeSpellingError,
   applyNodeHint,
   buildPlaceholderMask,
   buildPromptForCard,
   buildV1WinStatement,
+  chooseCheckpointFork,
   computeCharDiff,
   computeRecent7DayRetention,
+  computeSessionCompletionXp,
   computeV1TurnXp,
   continueFromCheckpoint,
   createV1Run,
@@ -36,8 +41,12 @@ import {
   finishAtCheckpoint,
   getActiveNode,
   getComboMultiplier,
+  hydrateRunContent,
+  isProductionFace,
+  previewThornyForkCards,
   recordNodeAudioPlay,
   scorePromptAnswer,
+  selectBossModifier,
   submitIntroAction,
   submitNodeAnswer,
   type V1PromptPayload,
@@ -499,37 +508,59 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
 
     expect(state.bossHp).toBe(0);
     expect(state.bossDefeated).toBe(true);
-    expect(state.totalXp).toBe(xpBeforeBossKills + BOSS_DEFEAT_XP);
+    expect(state.totalXp).toBe(xpBeforeBossKills + BOSS_DEFEAT_XP + SESSION_COMPLETE_FIRST_XP);
     expect(state.phase).toBe('recap');
     expect(state.recap?.bossDefeated).toBe(true);
+    expect(state.recap?.bossBonusXp).toBe(BOSS_DEFEAT_XP);
+    expect(state.recap?.sessionCompletionXp).toBe(SESSION_COMPLETE_FIRST_XP);
+    expect(
+      Math.round((state.recap?.baseXp ?? 0) * (state.recap?.effectiveComboMultiplier ?? 1)) +
+        (state.recap?.comboBonusXp ?? 0) +
+        (state.recap?.bossBonusXp ?? 0) +
+        (state.recap?.sessionCompletionXp ?? 0),
+    ).toBe(state.recap?.totalXp);
   });
 
-  it('15. calculates XP & Combo multipliers accurately (Good=10, Easy=12, Hard=6, Again=0, new=+5, combo x2 at >=5, x3 at >=10, rare x3)', () => {
+  it('15. unified XP economy (01-GAME §5): recall 10 XP, production 15 XP, combo ×1/×1.5/×2 cap ×2, session +20/+5, retry/exam 0 XP', () => {
     expect(getComboMultiplier(0)).toBe(1);
     expect(getComboMultiplier(4)).toBe(1);
-    expect(getComboMultiplier(5)).toBe(2);
-    expect(getComboMultiplier(9)).toBe(2);
-    expect(getComboMultiplier(10)).toBe(3);
+    expect(getComboMultiplier(5)).toBe(1.5);
+    expect(getComboMultiplier(9)).toBe(1.5);
+    expect(getComboMultiplier(10)).toBe(2);
+    expect(getComboMultiplier(25)).toBe(2);
 
-    expect(computeV1TurnXp({ rating: Rating.Good, combo: 1 })).toBe(10);
-    expect(computeV1TurnXp({ rating: Rating.Easy, combo: 1 })).toBe(12);
-    expect(computeV1TurnXp({ rating: Rating.Hard, combo: 1 })).toBe(6);
-    expect(computeV1TurnXp({ rating: Rating.Again, combo: 1 })).toBe(0);
+    expect(isProductionFace('recog')).toBe(false);
+    expect(isProductionFace('para_match')).toBe(false);
+    expect(isProductionFace('recall_meaning')).toBe(true);
+    expect(isProductionFace('listen_spell')).toBe(true);
+    expect(isProductionFace('col_gap')).toBe(true);
 
-    // New card bonus (+5)
-    expect(computeV1TurnXp({ rating: Rating.Good, combo: 1, isNewCard: true })).toBe(15);
+    // Gợi nhớ đúng lượt đầu: 10 XP × combo (trần ×2)
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 1, face: 'recog' })).toBe(10);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 5, face: 'recog' })).toBe(15);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 10, face: 'recog' })).toBe(20);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 20, face: 'recog' })).toBe(20);
 
-    // Combo x2 (>=5) and x3 (>=10)
-    expect(computeV1TurnXp({ rating: Rating.Good, combo: 5 })).toBe(20);
-    expect(computeV1TurnXp({ rating: Rating.Easy, combo: 10 })).toBe(36);
+    // Sản xuất / gõ đúng lượt đầu: 15 XP × combo (trần ×2)
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 1, face: 'recall_meaning' })).toBe(15);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 5, face: 'recall_meaning' })).toBe(23);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 10, face: 'recall_meaning' })).toBe(30);
 
-    // Rare card (x3)
-    expect(computeV1TurnXp({ rating: Rating.Good, combo: 1, isRare: true })).toBe(30);
-    expect(computeV1TurnXp({ rating: Rating.Good, combo: 5, isRare: true })).toBe(60);
+    // Đường gai ×1.5 (có trần)
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 1, face: 'recog', isThornyPath: true })).toBe(15);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 10, face: 'recog', isThornyPath: true })).toBe(25);
 
-    // Retry or extra practice -> 0 XP
-    expect(computeV1TurnXp({ rating: Rating.Good, combo: 6, isRetry: true })).toBe(0);
-    expect(computeV1TurnXp({ rating: Rating.Good, combo: 6, isExtraPractice: true })).toBe(0);
+    // Again / Retry / Extra Practice / Exam -> 0 XP
+    expect(computeV1TurnXp({ rating: Rating.Again, combo: 5, face: 'recog' })).toBe(0);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 6, face: 'recog', isRetry: true })).toBe(0);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 6, face: 'recog', isExtraPractice: true })).toBe(0);
+    expect(computeV1TurnXp({ rating: Rating.Good, combo: 10, face: 'recall_meaning', examMode: true })).toBe(0);
+
+    // Thưởng hoàn thành phiên: +20 lần đầu ngày, +5 lần sau, 0 ở Exam / Extra Practice
+    expect(computeSessionCompletionXp({ completedRunsToday: 0, firstAttemptTotalCount: 5 })).toBe(SESSION_COMPLETE_FIRST_XP);
+    expect(computeSessionCompletionXp({ completedRunsToday: 1, firstAttemptTotalCount: 5 })).toBe(SESSION_COMPLETE_REPEAT_XP);
+    expect(computeSessionCompletionXp({ completedRunsToday: 0, firstAttemptTotalCount: 5, examMode: true })).toBe(0);
+    expect(computeSessionCompletionXp({ completedRunsToday: 0, firstAttemptTotalCount: 5, isExtraPractice: true })).toBe(0);
   });
 
   it('16. selects Recap win statement following strict priority order (1. Mature/Mastered > 2. First-attempt accuracy vs last week > 3. Consecutive article fixes)', () => {
@@ -774,6 +805,169 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     expect(recoveryRun.recoveryMode).toBe(true);
     expect(recoveryRun.recoveryReasonVi).toBe('Vòng phục hồi · tối đa 50 thẻ');
     expect(recoveryRun.nodes.length).toBe(50);
+  });
+
+  it('23. Ngã ba run (Run Fork, 01-GAME §6.3): chọn Đường gai lấy 5 thẻ retrievability thấp nhất & thưởng ×1.5 XP', () => {
+    const allCards = buildV1FixtureCards(FIXED_NOW);
+    const standardRun = createV1Run({
+      cards: allCards,
+      content: V1_FIXTURE_CONTENT,
+      mode: 'standard',
+      now: FIXED_NOW,
+    });
+    expect(standardRun.totalStages).toBeGreaterThanOrEqual(2);
+
+    // Hoàn thành thẻ cuối Chặng 1 -> vào checkpoint
+    let atCheckpoint = { ...standardRun, currentIndex: STAGE_SIZE - 1 };
+    const node19 = getActiveNode(atCheckpoint)!;
+    atCheckpoint = submitNodeAnswer(
+      atCheckpoint,
+      getCorrectAnswerForPrompt(node19.prompt),
+      3000,
+      FIXED_NOW,
+    );
+    atCheckpoint = advanceAfterFeedback(atCheckpoint, FIXED_NOW);
+    expect(atCheckpoint.phase).toBe('checkpoint');
+
+    // Xem trước tối đa 5 thẻ khó nhất
+    const preview = previewThornyForkCards(atCheckpoint);
+    expect(preview.length).toBeGreaterThan(0);
+    expect(preview.length).toBeLessThanOrEqual(THORNY_PATH_CARD_COUNT);
+    for (let i = 1; i < preview.length; i++) {
+      expect(preview[i].retrievability).toBeGreaterThanOrEqual(preview[i - 1].retrievability);
+    }
+
+    // Nhánh an toàn giữ nguyên hàng đợi
+    const safeRun = chooseCheckpointFork(atCheckpoint, 'safe');
+    expect(safeRun.phase).toBe('playing');
+    expect(safeRun.chosenForkPath).toBe('safe');
+    expect(safeRun.nodes.length).toBe(atCheckpoint.nodes.length);
+
+    // Nhánh Đường gai rút đúng 5 thẻ khó nhất, cập nhật totalStages và gắn cờ isThornyNode (+50% XP gốc)
+    const thornyRun = chooseCheckpointFork(atCheckpoint, 'thorny');
+    expect(thornyRun.phase).toBe('playing');
+    expect(thornyRun.chosenForkPath).toBe('thorny');
+    expect(thornyRun.totalStages).toBe(atCheckpoint.currentStage + 1);
+    const thornyNodes = thornyRun.nodes.slice(thornyRun.currentIndex);
+    expect(thornyNodes.length).toBe(preview.length);
+    expect(thornyNodes.every((n) => n.isThornyNode === true)).toBe(true);
+    expect(thornyRun.events.some((e) => e.type === 'fork_chosen' && e.path === 'thorny')).toBe(true);
+
+    // Trả lời đúng 1 thẻ Đường gai -> thưởng ×1.5 XP
+    const firstThorny = getActiveNode(thornyRun)!;
+    const baseExpected = isProductionFace(firstThorny.face) ? 15 : 10;
+    const afterThornyAns = submitNodeAnswer(
+      { ...thornyRun, combo: 0 },
+      getCorrectAnswerForPrompt(firstThorny.prompt),
+      2500,
+      FIXED_NOW,
+    );
+    expect(afterThornyAns.feedback?.xpEarned).toBe(Math.round(baseExpected * 1.5));
+  });
+
+  it('24. Luật Boss V1 (01-GAME §6.3 & SR-22): no_hints chặn gợi ý, must_type ép gõ, listen_only kiểm MP3 thật và hạ về no_hints khi thiếu MP3', () => {
+    const vocabCards = [
+      makeDueTestCard('vocab:curriculum', 'recog', 2, 48),
+      makeDueTestCard('vocab:mitigate', 'recog', 2, 44),
+      makeDueTestCard('vocab:disparity', 'recog', 3, 40),
+      makeDueTestCard('vocab:allocate', 'recog', 3, 36),
+      makeDueTestCard('vocab:scrutinise', 'recog', 4, 32),
+    ];
+
+    const enterBoss = (modifier: 'no_hints' | 'must_type' | 'listen_only', missingAudio: string[] = []) => {
+      const content = {
+        ...V1_FIXTURE_CONTENT,
+        extras: { userItems: {}, reading: {}, listening: {}, missingAudio },
+      };
+      let s = createV1Run({
+        cards: vocabCards,
+        content,
+        bossModifier: modifier,
+        now: FIXED_NOW,
+      });
+      s = { ...s, currentIndex: s.nodes.length - 1 };
+      const last = getActiveNode(s)!;
+      s = submitNodeAnswer(s, getCorrectAnswerForPrompt(last.prompt), 2500, FIXED_NOW);
+      return advanceAfterFeedback(s, FIXED_NOW);
+    };
+
+    // 1. no_hints: chặn applyNodeHint trong Boss
+    const bossNoHints = enterBoss('no_hints');
+    expect(bossNoHints.phase).toBe('boss');
+    expect(bossNoHints.bossModifier).toBe('no_hints');
+    const afterHintTry = applyNodeHint(bossNoHints);
+    expect(getActiveNode(afterHintTry)?.hintsUsed).toBe(0);
+    expect(getActiveNode(afterHintTry)?.eliminatedChoices).toHaveLength(0);
+
+    // 2. must_type: chuyển toàn bộ thẻ recog trong Boss sang recall_meaning (phải gõ)
+    const bossMustType = enterBoss('must_type');
+    expect(bossMustType.bossModifier).toBe('must_type');
+    expect(bossMustType.bossNodes.every((n) => n.face === 'recall_meaning')).toBe(true);
+
+    // 3. listen_only có MP3 đủ -> tất cả thẻ Boss là listen_spell
+    const bossListenOk = enterBoss('listen_only', []);
+    expect(bossListenOk.bossModifier).toBe('listen_only');
+    expect(bossListenOk.bossNodes.every((n) => n.face === 'listen_spell')).toBe(true);
+
+    // 4. listen_only nhưng thiếu MP3 thật ở 1 từ -> tự hạ về no_hints (SR-22)
+    expect(
+      selectBossModifier(
+        vocabCards,
+        {
+          ...V1_FIXTURE_CONTENT,
+          extras: { userItems: {}, reading: {}, listening: {}, missingAudio: ['vocab:curriculum'] },
+        },
+        'seed',
+        'listen_only',
+      ),
+    ).toBe('no_hints');
+    const bossListenFallback = enterBoss('listen_only', ['vocab:curriculum']);
+    expect(bossListenFallback.bossModifier).toBe('no_hints');
+    expect(bossListenFallback.bossNodes.some((n) => n.face === 'listen_spell')).toBe(false);
+  });
+
+  it('25. hydrateRunContent làm giàu định nghĩa/ví dụ mà không làm mất tiến độ đang chạy', () => {
+    const card = makeDueTestCard('vocab:curriculum', 'recall_meaning', 4, 24);
+    const bareVocab = V1_FIXTURE_CONTENT.vocab.map((v) => ({
+      ...v,
+      definitionEn: '',
+    }));
+    const run = createV1Run({
+      cards: [card],
+      content: { ...V1_FIXTURE_CONTENT, vocab: bareVocab },
+      now: FIXED_NOW,
+    });
+    const before = getActiveNode(run)!;
+    expect(before.prompt.face === 'recall_meaning' && before.prompt.definitionEn).toBe('');
+
+    const hydrated = hydrateRunContent(run, V1_FIXTURE_CONTENT);
+    const after = getActiveNode(hydrated)!;
+    expect(after.prompt.face === 'recall_meaning' && after.prompt.definitionEn.length).toBeGreaterThan(5);
+    expect(hydrated.currentIndex).toBe(run.currentIndex);
+  });
+
+  it('26. intro không chèn collocation giả dạng "headword (pos)" khi từ chưa có collocation/synonym thật', () => {
+    const bareWord = {
+      ...V1_FIXTURE_VOCAB[0],
+      id: 'vocab:bare_word' as const,
+      headword: 'alleviate',
+      collocationIds: [],
+      synonyms: [],
+    };
+    const bareCard = createNewCard('vocab:bare_word', 'recog', {
+      now: FIXED_NOW,
+      unlocked: true,
+    });
+    const run = createV1Run({
+      cards: [bareCard],
+      content: { ...V1_FIXTURE_CONTENT, vocab: [...V1_FIXTURE_VOCAB, bareWord] },
+      now: FIXED_NOW,
+    });
+    const introNode = run.nodes.find((n) => n.itemId === 'vocab:bare_word');
+    expect(introNode?.prompt.face).toBe('intro');
+    if (introNode && introNode.prompt.face === 'intro') {
+      expect(introNode.prompt.collocations).toEqual([]);
+    }
   });
 });
 
