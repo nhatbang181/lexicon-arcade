@@ -99,7 +99,7 @@ export const HubScreen: React.FC = () => {
         skill={game.skill}
         onClick={() => setActiveGame(game)}
         ariaLabel={`${game.code} ${game.title}`}
-        className={comingSoon ? 'opacity-80' : ''}
+        className={`h-full ${comingSoon ? 'opacity-80' : ''}`}
       >
         <div
           className="flex flex-col justify-between gap-4 h-full"
@@ -147,7 +147,10 @@ export const HubScreen: React.FC = () => {
               <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
                 {game.title}
               </h2>
-              <p className="text-sm mt-1 leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+              <p
+                className="text-sm mt-1 leading-relaxed min-h-[3.75rem] line-clamp-3"
+                style={{ color: 'var(--color-text-dim)' }}
+              >
                 {game.subtitleVi}
               </p>
             </div>
@@ -223,25 +226,40 @@ export const HubScreen: React.FC = () => {
             <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
               Chọn thẻ game để xem mô tả và chọn chế độ Luyện tập hoặc Thi thử.
             </p>
-            <div className="flex items-center gap-2 pt-1" aria-hidden="true">
-              {['rocket.webp', 'compass.webp', 'brain.webp', 'shield.webp'].map((f) => (
-                <img
-                  key={f}
-                  src={`${baseUrl}assets/icons/fluent/ui/${f}`}
-                  alt=""
-                  width={32}
-                  height={32}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-8 h-8 object-contain"
-                />
+            <div className="flex flex-wrap items-center gap-2 pt-1" aria-label="4 nhóm kỹ năng chính">
+              {[
+                { file: 'rocket.webp', label: 'Từ vựng' },
+                { file: 'compass.webp', label: 'Đọc · Nghe' },
+                { file: 'brain.webp', label: 'Viết · Nói' },
+                { file: 'shield.webp', label: 'Thi thử' },
+              ].map((item) => (
+                <span
+                  key={item.file}
+                  className="inline-flex items-center gap-1.5 px-2 py-1 rounded-[var(--radius-sm)] border text-xs font-medium"
+                  style={{
+                    backgroundColor: 'var(--color-surface-2)',
+                    borderColor: 'var(--color-border)',
+                    color: 'var(--color-text)',
+                  }}
+                >
+                  <img
+                    src={`${baseUrl}assets/icons/fluent/ui/${item.file}`}
+                    alt=""
+                    width={32}
+                    height={32}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-8 h-8 object-contain shrink-0"
+                  />
+                  <span>{item.label}</span>
+                </span>
               ))}
             </div>
           </div>
           <Mascot
             state="co-vu"
             size={76}
-            say="Chọn một kỹ năng để luyện ngay nhé!"
+            say="Chọn kỹ năng luyện nhé!"
             className="shrink-0"
           />
         </div>

@@ -475,7 +475,7 @@ export const TodayDashboard: React.FC = () => {
     : 'co-vu';
 
   return (
-    <div className="space-y-5 pb-8">
+    <div className="space-y-3.5 sm:space-y-5 pb-8">
       {/* F8: Toast khi Streak Freeze tự động cứu chuỗi hoặc nhận thêm lượt bảo vệ */}
       {streakToast && (
         <Toast
@@ -496,7 +496,7 @@ export const TodayDashboard: React.FC = () => {
 
       {/* Hero Hôm nay (M1 ≥ 15% diện tích + M3 Lexi + icon màu Fluent 3D) */}
       <div
-        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-4 sm:p-5 min-h-[160px] md:min-h-[205px] flex flex-col justify-between gap-3"
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-3.5 sm:p-5 min-h-[155px] md:min-h-[205px] flex flex-col justify-between gap-3"
         style={{
           backgroundColor: 'var(--color-surface)',
           borderColor: 'var(--color-border)',
@@ -518,6 +518,15 @@ export const TodayDashboard: React.FC = () => {
         <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div className="space-y-2 min-w-0">
             <div className="flex flex-wrap items-center gap-2">
+              <img
+                src={`${baseUrl}assets/icons/fluent/badges/band-80.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
               <Pill tone="info">Lộ trình 6.0 → 8.0 Academic</Pill>
               {data?.placementVocabBand !== null && data?.placementVocabBand !== undefined && (
                 <Pill tone="vocab">
@@ -539,9 +548,29 @@ export const TodayDashboard: React.FC = () => {
             />
           </div>
 
-          <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+          <div className="flex flex-wrap items-center gap-2 shrink-0">
             <div
-              className="inline-flex items-center gap-2 px-3 py-2 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
+              className="inline-flex items-center gap-2 px-3 py-1.5 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
+              style={{
+                backgroundColor: 'var(--color-surface-2)',
+                borderColor: 'var(--color-border)',
+                fontFamily: 'var(--font-mono)',
+              }}
+              data-testid="today-goal-chip"
+            >
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/cloud.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
+              <span>{effectiveDailyGoal}p/ngày</span>
+            </div>
+            <div
+              className="inline-flex items-center gap-2 px-3 py-1.5 min-h-[44px] rounded-[var(--radius-md)] border text-sm font-semibold tabular-nums"
               style={{
                 backgroundColor: 'var(--color-surface-2)',
                 borderColor: 'var(--color-border)',

@@ -2,27 +2,20 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useLocation } from 'wouter';
 import {
   AlertTriangle,
-  Archive,
   ArrowUpRight,
   Bell,
   CalendarPlus,
   Download,
   HardDrive,
-  HeartHandshake,
   MonitorCheck,
   Moon,
-  ShieldCheck,
-  Smartphone,
-  Sparkles,
   Sun,
-  Target,
   Trash2,
   Upload,
-  User,
   Volume2,
   VolumeX,
 } from 'lucide-react';
-import { Button, Card, Modal, Pill, Toast, type ToastTone } from '../../design/components';
+import { Button, Card, Mascot, Modal, Pill, Toast, type ToastTone } from '../../design/components';
 import { useMotionPref } from '../../design/fx';
 import { useAudio, useTheme, type AppTheme } from '../../app/providers';
 import {
@@ -104,6 +97,12 @@ export const SettingsScreen: React.FC = () => {
   const [deleting, setDeleting] = useState(false);
 
   const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const baseUrl = import.meta.env.BASE_URL;
+  const themeLabelVi: Record<AppTheme, string> = {
+    light: 'Sáng',
+    dark: 'Tối',
+    exam: 'Thi máy',
+  };
 
   const refreshMeta = async () => {
     const [
@@ -363,15 +362,58 @@ export const SettingsScreen: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-6 pb-8">
-      <div>
-        <h1 className="text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
-          Cài đặt hệ thống
-        </h1>
-        <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
-          Điều chỉnh hồ sơ, giao diện, chuyển động, giờ nhắc học, sao lưu và cài đặt an toàn trên
-          iPhone.
-        </p>
+    <div className="space-y-5 pb-8">
+      {/* Hero Cài đặt đồng bộ hệ thiết kế T3-A (Lexi + Fluent 3D) */}
+      <div
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-4 sm:p-5 min-h-[155px] flex flex-col justify-between gap-3"
+        style={{
+          backgroundColor: 'var(--color-surface)',
+          borderColor: 'var(--color-border)',
+          backgroundImage: `linear-gradient(135deg, color-mix(in srgb, var(--color-info) 12%, transparent), color-mix(in srgb, var(--color-vocab) 8%, transparent)), url(${baseUrl}assets/illustrations/devices.svg)`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right -12px bottom -12px',
+          backgroundSize: 'cover',
+        }}
+      >
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              'linear-gradient(90deg, var(--color-surface) 0%, color-mix(in srgb, var(--color-surface) 92%, transparent) 72%, color-mix(in srgb, var(--color-surface) 78%, transparent) 100%)',
+          }}
+          aria-hidden="true"
+        />
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="space-y-1.5 min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/check.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
+              <Pill tone="info" className="shrink-0 whitespace-nowrap">
+                Lưu cục bộ trên máy
+              </Pill>
+            </div>
+            <h1 className="text-xl sm:text-2xl font-bold" style={{ color: 'var(--color-text)' }}>
+              Cài đặt hệ thống
+            </h1>
+            <p className="text-xs sm:text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              Điều chỉnh hồ sơ, giao diện, chuyển động, giờ nhắc học, sao lưu và cài đặt an toàn trên
+              iPhone.
+            </p>
+          </div>
+          <Mascot
+            state="chao"
+            size={76}
+            say="Tuỳ chỉnh & sao lưu nhé!"
+            className="shrink-0"
+          />
+        </div>
       </div>
 
       {notice && (
@@ -385,8 +427,16 @@ export const SettingsScreen: React.FC = () => {
 
       {/* 0. Hồ sơ & Tên hiển thị */}
       <Card padding="lg" className="space-y-4">
-        <div className="flex items-center gap-2">
-          <User className="w-5 h-5" style={{ color: 'var(--color-info)' }} />
+        <div className="flex items-center gap-3">
+          <img
+            src={`${baseUrl}assets/icons/fluent/ui/lightbulb.webp`}
+            alt=""
+            width={32}
+            height={32}
+            loading="lazy"
+            decoding="async"
+            className="w-8 h-8 object-contain shrink-0"
+          />
           <div>
             <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
               Hồ sơ người học
@@ -401,7 +451,7 @@ export const SettingsScreen: React.FC = () => {
             type="text"
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}
-            placeholder="Nhập tên của bạn (bỏ trống để gọi là bạn)"
+            placeholder="Tên hiển thị (mặc định: bạn)"
             maxLength={32}
             aria-label="Tên hiển thị của bạn"
             data-testid="settings-display-name"
@@ -424,16 +474,29 @@ export const SettingsScreen: React.FC = () => {
 
       {/* 1. Giao diện */}
       <Card padding="lg" className="space-y-4">
-        <div className="flex items-center justify-between gap-2">
-          <div>
-            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-              Giao diện hiển thị
-            </h2>
-            <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
-              Chuyển đổi tức thì giữa Sáng, Tối và chế độ Thi máy.
-            </p>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-3 min-w-0">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/compass.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
+            <div className="min-w-0">
+              <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+                Giao diện hiển thị
+              </h2>
+              <p className="text-xs mt-0.5" style={{ color: 'var(--color-text-dim)' }}>
+                Chuyển đổi tức thì giữa Sáng, Tối và chế độ Thi máy.
+              </p>
+            </div>
           </div>
-          <Pill tone="info">Đang chọn: {theme.toUpperCase()}</Pill>
+          <Pill tone="info" className="shrink-0 whitespace-nowrap">
+            Đang dùng: {themeLabelVi[theme]}
+          </Pill>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -472,8 +535,16 @@ export const SettingsScreen: React.FC = () => {
 
       {/* 1b. Chuyển động, Hiệu ứng & Nhân vật (khớp T3-A useMotionPref) */}
       <Card padding="lg" className="space-y-4">
-        <div className="flex items-center gap-2">
-          <Sparkles className="w-5 h-5" style={{ color: 'var(--color-vocab)' }} />
+        <div className="flex items-center gap-3">
+          <img
+            src={`${baseUrl}assets/icons/fluent/ui/rocket.webp`}
+            alt=""
+            width={32}
+            height={32}
+            loading="lazy"
+            decoding="async"
+            className="w-8 h-8 object-contain shrink-0"
+          />
           <div>
             <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
               Chuyển động, Hiệu ứng & Nhân vật
@@ -529,8 +600,16 @@ export const SettingsScreen: React.FC = () => {
 
       {/* 2. Mục tiêu Band & Thời lượng & Giờ nhắc học */}
       <Card padding="lg" className="space-y-4">
-        <div className="flex items-center gap-2">
-          <Target className="w-5 h-5" style={{ color: 'var(--color-reading)' }} />
+        <div className="flex items-center gap-3">
+          <img
+            src={`${baseUrl}assets/icons/fluent/ui/goal.webp`}
+            alt=""
+            width={32}
+            height={32}
+            loading="lazy"
+            decoding="async"
+            className="w-8 h-8 object-contain shrink-0"
+          />
           <div>
             <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
               Mục tiêu Band & Lịch nhắc học
@@ -662,11 +741,20 @@ export const SettingsScreen: React.FC = () => {
       {/* 3. Âm thanh SFX */}
       <Card padding="lg" className="space-y-4">
         <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/party.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
             {muted || sfxVolume === 0 ? (
-              <VolumeX className="w-5 h-5" style={{ color: 'var(--color-wrong)' }} />
+              <VolumeX className="w-4 h-4 hidden" style={{ color: 'var(--color-wrong)' }} />
             ) : (
-              <Volume2 className="w-5 h-5" style={{ color: 'var(--color-listening)' }} />
+              <Volume2 className="w-4 h-4 hidden" style={{ color: 'var(--color-listening)' }} />
             )}
             <div>
               <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
@@ -705,8 +793,16 @@ export const SettingsScreen: React.FC = () => {
 
       {/* 4. P0 An toàn iPhone PWA & Dung lượng bộ nhớ (PB-09, L-12, TU-01, F18) */}
       <Card skillAccent="info" padding="lg" className="space-y-4" data-testid="settings-iphone-pwa">
-        <div className="flex items-start gap-2.5">
-          <Smartphone className="w-5 h-5 shrink-0 mt-0.5" style={{ color: 'var(--color-info)' }} />
+        <div className="flex items-start gap-3">
+          <img
+            src={`${baseUrl}assets/icons/fluent/ui/shield.webp`}
+            alt=""
+            width={32}
+            height={32}
+            loading="lazy"
+            decoding="async"
+            className="w-8 h-8 object-contain shrink-0 mt-0.5"
+          />
           <div>
             <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
               Cài ứng dụng trên iPhone & Bảo vệ bộ nhớ
@@ -799,8 +895,16 @@ export const SettingsScreen: React.FC = () => {
       {/* 5. P0 Sao lưu & Khôi phục (Gộp / Thay thế) + Xoá dữ liệu (PB-05, X12, PB-12) */}
       <Card padding="lg" className="space-y-4">
         <div className="flex flex-wrap items-start justify-between gap-2">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="w-5 h-5" style={{ color: 'var(--color-info)' }} />
+          <div className="flex items-center gap-3">
+            <img
+              src={`${baseUrl}assets/icons/fluent/ui/cloud.webp`}
+              alt=""
+              width={32}
+              height={32}
+              loading="lazy"
+              decoding="async"
+              className="w-8 h-8 object-contain shrink-0"
+            />
             <div>
               <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
                 Sao lưu & Khôi phục dữ liệu (IndexedDB)
@@ -1043,8 +1147,16 @@ export const SettingsScreen: React.FC = () => {
 
       {/* 6. Quyền riêng tư & Ghi công (PB-12, PB-13) */}
       <Card padding="lg" className="space-y-3" data-testid="settings-credits">
-        <div className="flex items-center gap-2">
-          <HeartHandshake className="w-5 h-5" style={{ color: 'var(--color-reading)' }} />
+        <div className="flex items-center gap-3">
+          <img
+            src={`${baseUrl}assets/icons/fluent/ui/bookmark.webp`}
+            alt=""
+            width={32}
+            height={32}
+            loading="lazy"
+            decoding="async"
+            className="w-8 h-8 object-contain shrink-0"
+          />
           <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
             Quyền riêng tư & Ghi công
           </h2>
@@ -1082,8 +1194,16 @@ export const SettingsScreen: React.FC = () => {
       <Card skillAccent="vocab" padding="lg" className="space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <Archive className="w-5 h-5" style={{ color: 'var(--color-vocab)' }} />
+            <div className="flex items-center gap-3">
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/calendar.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
               <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
                 Kho lưu trữ V1/V2 (Legacy)
               </h2>

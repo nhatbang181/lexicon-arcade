@@ -305,7 +305,7 @@ export const OnboardingScreen: React.FC = () => {
           >
             <Card padding="lg" className="space-y-6">
               <div
-                className="relative overflow-hidden rounded-[var(--radius-md)] border p-4 min-h-[170px] flex flex-col sm:flex-row items-center gap-5"
+                className="relative overflow-hidden rounded-[var(--radius-md)] border p-4 sm:p-6 min-h-[190px] sm:min-h-[256px] flex flex-col sm:flex-row items-center gap-5"
                 style={{
                   backgroundColor: 'var(--color-surface-2)',
                   borderColor: 'var(--color-border)',
@@ -325,9 +325,9 @@ export const OnboardingScreen: React.FC = () => {
                 />
                 <div className="relative z-10 shrink-0">
                   <Mascot
-                    state="co-vu"
+                    state="chao"
                     size={76}
-                    say="Cùng thiết lập lộ trình 8.0 nhé!"
+                    say="Chào bạn! Bắt đầu nhé!"
                   />
                 </div>
                 <div className="relative z-10 space-y-2 text-center sm:text-left">
@@ -361,13 +361,23 @@ export const OnboardingScreen: React.FC = () => {
                       borderColor: 'var(--color-border)',
                     }}
                   >
-                    <img
+                    <motion.img
                       src={`${baseUrl}assets/icons/fluent/ui/${ic.file}`}
                       alt=""
                       width={32}
                       height={32}
                       loading="lazy"
                       decoding="async"
+                      animate={
+                        !prefersReduced && ic.file === 'rocket.webp'
+                          ? { y: [0, -3, 0] }
+                          : undefined
+                      }
+                      transition={
+                        !prefersReduced && ic.file === 'rocket.webp'
+                          ? { duration: 2.8, repeat: Infinity, ease: 'easeInOut' }
+                          : undefined
+                      }
                       className="w-8 h-8 object-contain"
                     />
                     <span className="text-xs font-medium" style={{ color: 'var(--color-text-dim)' }}>
@@ -391,9 +401,8 @@ export const OnboardingScreen: React.FC = () => {
                   type="text"
                   value={displayName}
                   onChange={(e) => setDisplayName(e.target.value)}
-                  placeholder="Tên của bạn (tuỳ chọn)"
+                  placeholder="Tên hiển thị (mặc định: bạn)"
                   maxLength={32}
-                  autoFocus
                   className="w-full h-11 px-3.5 rounded-[var(--radius-md)] border text-base font-medium"
                   style={{
                     backgroundColor: 'var(--color-surface-2)',

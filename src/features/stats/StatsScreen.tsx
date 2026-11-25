@@ -280,33 +280,26 @@ export const StatsScreen: React.FC = () => {
     );
   }
 
-  if (loading || !data) {
-    return (
-      <div className="space-y-6 pb-8">
-        <Skeleton className="h-9 w-1/3" />
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <Skeleton className="h-24" />
-          <Skeleton className="h-24" />
-          <Skeleton className="h-24" />
-          <Skeleton className="h-24" />
-        </div>
-        <Skeleton lines={5} />
-      </div>
-    );
-  }
-
-  const { profile, cards, attempts, masteryMetrics, fourStrands, activeTurnRatio } = data;
+  const profile = data?.profile;
+  const cards = data?.cards ?? [];
+  const attempts = data?.attempts ?? [];
+  const masteryMetrics = data?.masteryMetrics;
+  const fourStrands = data?.fourStrands;
+  const activeTurnRatio = data?.activeTurnRatio ?? null;
   const totalCards = cards.length;
-  const levelInfo = xpToLevel(profile.xp);
-  const currentStreak = displayStreakCount(profile.streak);
+  const levelInfo = xpToLevel(profile?.xp ?? 0);
+  const currentStreak = profile ? displayStreakCount(profile.streak) : 0;
   const unlockedBadgesCount = BADGE_TILES.filter((b) => b.check(badgeContext)).length;
   const delayedRatePct =
-    masteryMetrics.delayedRetention.rate !== null
+    masteryMetrics && masteryMetrics.delayedRetention.rate !== null
       ? Math.round(masteryMetrics.delayedRetention.rate * 100)
       : null;
+  const mascotSay = data
+    ? `${data.profile.xp.toLocaleString('vi-VN')} XP · ${unlockedBadgesCount}/12 huy hiệu!`
+    : 'Xem tiến độ học nào!';
 
   return (
-    <div className="space-y-6 pb-10">
+    <div className="space-y-4 sm:space-y-6 pb-10">
       {streakToast && (
         <Toast
           tone="info"
@@ -324,9 +317,9 @@ export const StatsScreen: React.FC = () => {
         />
       )}
 
-      {/* Hero Thống kê (M1 ≥ 15% + M3 Lexi) */}
+      {/* Hero Thống kê (render ngay cả khi đang tải KPI để Lexi không bị mount trễ/cắt chữ) */}
       <div
-        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-4 sm:p-5 min-h-[155px] md:min-h-[205px] flex flex-col justify-between gap-3"
+        className="relative overflow-hidden rounded-[var(--radius-lg)] border p-3.5 sm:p-5 min-h-[155px] md:min-h-[205px] flex flex-col justify-between gap-3"
         style={{
           backgroundColor: 'var(--color-surface)',
           borderColor: 'var(--color-border)',
@@ -344,9 +337,18 @@ export const StatsScreen: React.FC = () => {
           }}
           aria-hidden="true"
         />
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div className="space-y-2 min-w-0">
+        <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="space-y-1.5 min-w-0">
             <div className="flex flex-wrap items-center gap-2">
+              <img
+                src={`${baseUrl}assets/icons/fluent/ui/check.webp`}
+                alt=""
+                width={32}
+                height={32}
+                loading="lazy"
+                decoding="async"
+                className="w-8 h-8 object-contain shrink-0"
+              />
               <Pill tone="info" icon={<Star className="w-3.5 h-3.5" />}>
                 Cấp {levelInfo.level}
               </Pill>
@@ -365,11 +367,24 @@ export const StatsScreen: React.FC = () => {
           <Mascot
             state={currentStreak >= 7 ? 'an-mung' : 'co-vu'}
             size={76}
-            context={{ streakDays: currentStreak }}
+            say={mascotSay}
             className="shrink-0"
           />
         </div>
       </div>
+
+      {loading || !profile || !masteryMetrics || !fourStrands ? (
+        <div className="space-y-4">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            <Skeleton className="h-24" />
+            <Skeleton className="h-24" />
+            <Skeleton className="h-24" />
+            <Skeleton className="h-24" />
+          </div>
+          <Skeleton lines={5} />
+        </div>
+      ) : (
+        <>
 
       {/* 4 KPI tổng quan (mỗi thẻ 1 icon Fluent 3D riêng biệt) */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
@@ -825,6 +840,8 @@ export const StatsScreen: React.FC = () => {
           })}
         </div>
       </Card>
+        </>
+      )}
     </div>
   );
 };

@@ -34,6 +34,15 @@
 - Toàn bộ nút, route, testid và luồng cũ liệt kê trong `KE-HOACH-T3-C.md` đều được giữ nguyên (Onboarding 4 bước + Enter, Placement 3 chặng, Today đổi bài/Enter/BandMeter, Hub 7 tab lọc, Stats 4 KPI/lịch sử/12 huy hiệu, Settings 3 theme/Band/thời lượng/SFX/Legacy).
 
 ## 4. Quyết định ghi nhận
-- Không nhập trực tiếp `backup.ts` (có `zod`) trong `App.tsx` và `TodayDashboard.tsx` để giữ chunk khởi động `#/` nhỏ gọn (giảm từ 244.13 KB xuống 213.69 KB gzip).
+- Không nhập trực tiếp `backup.ts` (có `zod`) trong `App.tsx` và `TodayDashboard.tsx` để giữ chunk khởi động `#/` nhỏ gọn (giảm từ 244.13 KB xuống 213.73 KB gzip).
 - Tắt `breathing` trên thẻ "Việc tiếp theo" chứa nút chính ở Hôm nay để tránh làm nút di chuyển khi người dùng bấm (vẫn giữ chuyển động nền qua `<Mascot>`).
 - Ghi `HANDOFF.md` cho T3-A về lớp bóng sibling trong `LiveCard.tsx:133` khiến `audit-ui.mjs` đếm M5 trên các thẻ Hub ở màn lớn.
+
+## 5. Vòng 1 (sửa theo `REVIEW-T3-C-A.md`)
+1. **`OnboardingScreen.tsx` (M1, M3, M4, SR-40):** Bỏ `autoFocus` ở ô nhập tên để không cuộn khuất Hero/Lexi trên iPhone SE `375x667`; đổi `<Mascot state="chao" say="Chào bạn! Bắt đầu nhé!" />`; tăng Hero `min-h-[190px] sm:min-h-[256px]` đạt ≥ 15% ở `1366x768`; thêm chuyển động nhẹ trên icon `rocket.webp` (tôn trọng `prefers-reduced-motion`).
+2. **`TodayDashboard.tsx` & `StatsScreen.tsx` (M2, M3, J10, SR-40):** Co nhẹ padding/spacing mobile (`p-3.5 sm:p-5`), bổ sung icon màu Fluent 3D `32×32` có nghĩa rõ (`band-80.webp`, `cloud.webp` ở Hero Hôm nay; `check.webp` ở Hero Thống kê) để màn đầu `375x667` đạt ≥ 6 icon màu khác nhau; `StatsScreen` render Hero + `<Mascot>` ngay từ đầu với câu thoại ngắn có số thật (`0 XP · 0/12 huy hiệu!`), không bị cắt chữ.
+3. **`HubScreen.tsx` (R5):** Thêm `className="h-full"` cho `<LiveCard>`, `min-h-[3.75rem] line-clamp-3` cho mô tả thẻ để các hàng lưới `≥ 820px` bằng khít chiều cao; biến 4 icon Hero thành 4 chip có nhãn rõ (`Từ vựng`, `Đọc · Nghe`, `Viết · Nói`, `Thi thử`).
+4. **`SettingsScreen.tsx` (D11, chấm mù):** Thêm Hero đồng bộ có `<Mascot state="chao" say="Tuỳ chỉnh & sao lưu nhé!" />` + 10 icon màu Fluent 3D `32×32` riêng biệt cho các đầu mục; rút gọn placeholder ô nhập tên thành `"Tên hiển thị (mặc định: bạn)"`; đổi pill giao diện sang tiếng Việt `"Đang dùng: Tối / Sáng / Thi máy"` với `shrink-0 whitespace-nowrap`.
+5. **Bằng chứng & số đo Vòng 1 (`SR-82`):**
+   - `audit-ui.mjs` đủ **7 khung (`390,375,430,820,1180,1280,1366`) × 2 theme × 5 route (70 lượt):** **`0 CHẶN · 54 NẶNG · 0 NHẸ`** — **0 lỗi NẶNG thuộc T3-C** (toàn bộ 54 `M5` còn lại là từ lớp bóng `LiveCard.tsx:133` của T3-A); đã xoá 8 ảnh `*-onboarding-loi.png` cũ, bổ sung ảnh sau tương tác `390x844-dark-hub-sheet.png` và video `390x844-daily-loop.webm` tại `docs/audit-max/anh-sau/T3-C/`.
+   - `npx tsc --noEmit -p .`: **0 lỗi** · `npm test`: **56/56 file, 604/604 pass** · `e2e/daily-loop.spec.ts`: **5/5 pass** (0 `console.error`) · `size-budget.mjs`: **0 vượt, 0 chuỗi rò** (JS `#/` **213.73 KB gzip**, CSS **129.31 KB**, Lazy max **45.3 KB**, Precache **1 405.91 KiB**).
