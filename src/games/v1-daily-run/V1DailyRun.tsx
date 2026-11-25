@@ -164,7 +164,7 @@ export const V1DailyRun: React.FC<GameProps> = ({ mode, level, onExit }) => {
     ) => {
       const now = new Date();
       const [extras, doneToday, recentAttempts] = await Promise.all([
-        loadV1Extras(cards, { now, dictations: content.dictations }),
+        loadV1Extras(cards, { now, dictations: content.dictations, vocab: content.vocab }),
         cardRepo.countNewCardsStartedSince(startOfLocalDay(now)).catch(() => 0),
         attemptRepo.getSince(now.getTime() - 2 * 7 * DAY_MS, 'v1').catch(() => []),
       ]);

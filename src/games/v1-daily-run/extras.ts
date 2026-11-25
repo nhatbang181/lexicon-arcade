@@ -10,13 +10,14 @@ import {
   type DictationItem,
   type ListeningEpisode,
   type ReadingPassage,
+  type VocabItem,
 } from '../../core/content/schemas';
 import {
   loadContent,
   loadContentArray,
-  resolveAssetUrl,
   type LoadContentOptions,
 } from '../../core/content/loaders';
+import { audioFileExists } from '../../core/audio/audioAvailability';
 import type { SRSCard } from '../../core/srs/fsrsAdapter';
 import { userItemRepo } from '../../core/storage/repos/userItemRepo';
 import type { LexiconV3DB } from '../../core/storage/db';
@@ -28,6 +29,8 @@ import {
   type V1ReadingRef,
 } from './content';
 
+export { audioFileExists };
+
 export interface LoadV1Options {
   fetchImpl?: LoadContentOptions['fetchImpl'];
   baseUrl?: string;
@@ -36,36 +39,8 @@ export interface LoadV1Options {
   now?: Date;
   /** Danh sách câu dictation (để kiểm file audio của thẻ `dict:*`). Không truyền = không kiểm. */
   dictations?: readonly DictationItem[];
-}
-
-const audioExistsCache = new Map<string, Promise<boolean>>();
-
-/**
- * Kiểm file audio có thật không (HEAD). Dev server/SPA trả 200 + HTML cho đường dẫn không tồn tại
- * nên coi `text/html` là "không có". Lỗi mạng (offline) → coi là có: không đủ bằng chứng để bỏ thẻ.
- */
-export function audioFileExists(
-  relativePath: string,
-  options: Pick<LoadV1Options, 'fetchImpl' | 'baseUrl'> = {},
-): Promise<boolean> {
-  const url = resolveAssetUrl(relativePath, options.baseUrl);
-  const key = options.fetchImpl ? `${url}#custom` : url;
-  const cached = !options.fetchImpl ? audioExistsCache.get(key) : undefined;
-  if (cached) return cached;
-  const fetchFn = options.fetchImpl ?? globalThis.fetch;
-  const probe = (async () => {
-    if (typeof fetchFn !== 'function') return true;
-    try {
-      const res = await fetchFn(url, { method: 'HEAD' });
-      if (!res.ok) return false;
-      const type = res.headers?.get?.('content-type') ?? '';
-      return !/text\/html/i.test(type);
-    } catch {
-      return true;
-    }
-  })();
-  if (!options.fetchImpl) audioExistsCache.set(key, probe);
-  return probe;
+  /** Danh sách từ vựng (để kiểm file MP3 thật của thẻ `vocab:*` mặt `listen_spell`, FX-0 / SR-22). */
+  vocab?: readonly VocabItem[];
 }
 
 const silent = { isDev: false, onError: () => undefined };
@@ -216,13 +191,22 @@ export async function loadV1Extras(
     /^(err:|col:|dict:|tfng:|head:|ltrap:)/.test(id);
 
   const itemIds = [...new Set(eligible.map((c) => c.itemId).filter(wantsItem))];
-  if (itemIds.length === 0) return EMPTY_V1_EXTRAS;
+  const vocabListenIds = [
+    ...new Set(
+      eligible
+        .filter((c) => c.itemId.startsWith('vocab:') && c.face === 'listen_spell')
+        .map((c) => c.itemId),
+    ),
+  ];
+  if (itemIds.length === 0 && vocabListenIds.length === 0) return EMPTY_V1_EXTRAS;
 
-  const userItems = await userItemRepo.getMany(itemIds, options.database).catch(() => ({}));
+  const userItems =
+    itemIds.length > 0 ? await userItemRepo.getMany(itemIds, options.database).catch(() => ({})) : {};
   const reading: Record<string, V1ReadingRef> = {};
   const listening: Record<string, V1ListeningRef> = {};
   const missingAudio: string[] = [];
   const dictById = new Map<string, DictationItem>((options.dictations ?? []).map((d) => [d.id, d]));
+  const vocabById = new Map<string, VocabItem>((options.vocab ?? []).map((v) => [v.id, v]));
   const loadOpts = { ...silent, fetchImpl: options.fetchImpl, baseUrl: options.baseUrl };
 
   const passageCache = new Map<string, Promise<ReadingPassage | null>>();
@@ -274,6 +258,20 @@ export async function loadV1Extras(
       }
     }),
   );
+
+  // FX-0 (SR-22, PP-C1): kiểm file MP3 thật cho mọi thẻ từ vựng mặt `listen_spell`
+  if (vocabListenIds.length > 0 && vocabById.size > 0) {
+    await Promise.all(
+      vocabListenIds.map(async (id) => {
+        const vocab = vocabById.get(id);
+        if (!vocab) return;
+        const audioPath = vocab.audio?.uk;
+        if (!audioPath || !(await audioFileExists(audioPath, options))) {
+          missingAudio.push(id);
+        }
+      }),
+    );
+  }
 
   return { userItems, reading, listening, missingAudio };
 }

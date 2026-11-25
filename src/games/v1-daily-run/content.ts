@@ -51,8 +51,9 @@ export interface V1ExtraContent {
   reading: Record<string, V1ReadingRef>;
   listening: Record<string, V1ListeningRef>;
   /**
-   * `itemId` (`ltrap:*`, `dict:*`) đã kiểm và xác nhận KHÔNG có file audio thật: thẻ bị bỏ khỏi run
-   * (log `missing_item` + `reason: 'missing_audio'`), không hiện chữ thay audio, không chấm FSRS.
+   * `itemId` (`vocab:*` mặt `listen_spell`, `ltrap:*`, `dict:*`) đã kiểm bằng `audioAvailability`
+   * và xác nhận KHÔNG có file MP3 thật: thẻ nghe không được dựng/chấm FSRS (`vocab:*` hạ sang
+   * `recall_meaning`, còn `ltrap:*`/`dict:*` bỏ node + log `missing_item` với `reason: 'missing_audio'`).
    */
   missingAudio?: string[];
 }

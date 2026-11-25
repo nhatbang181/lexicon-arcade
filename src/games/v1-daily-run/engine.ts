@@ -901,9 +901,16 @@ export function resolveV1Face(
   const extras = content.extras;
 
   if (id.startsWith('vocab:')) {
-    if (!idx.vocab.has(id)) return null;
+    const vocab = idx.vocab.get(id);
+    if (!vocab) return null;
     if (allowIntro && shouldShowIntro(card)) return 'intro';
-    return vocabFaceFor(card.face);
+    const resolved = vocabFaceFor(card.face);
+    // FX-0 (SR-22, PP-C1): thẻ listen_spell thiếu MP3 thật → chuyển sang gợi nhớ hợp lệ (recall_meaning),
+    // không chấm FSRS trên thẻ nghe không có âm thanh.
+    if (resolved === 'listen_spell' && (!vocab.audio?.uk || extras?.missingAudio?.includes(id))) {
+      return 'recall_meaning';
+    }
+    return resolved;
   }
   if (id.startsWith('col:')) {
     if (idx.col.has(id)) return 'col_gap';
@@ -2126,8 +2133,24 @@ export function createV1Run(options: CreateV1RunOptions): V1RunState {
   const nowMs = now.getTime();
   const renderable: SRSCard[] = [];
   for (const card of cards) {
-    if (resolveV1Face(card, content, { allowIntro: false }) !== null) {
+    const resolved = resolveV1Face(card, content, { allowIntro: false });
+    if (resolved !== null) {
       renderable.push(card);
+      // FX-0: thẻ vocab `listen_spell` thiếu MP3 thật đã được hạ mặt → vẫn ghi `missing_item` (`missing_audio`)
+      if (
+        card.itemId.startsWith('vocab:') &&
+        card.face === 'listen_spell' &&
+        resolved !== 'listen_spell' &&
+        card.unlocked &&
+        (card.state === State.New || card.due <= nowMs)
+      ) {
+        missingItems.push({
+          cardId: card.id,
+          itemId: card.itemId,
+          face: card.face,
+          reason: 'missing_audio',
+        });
+      }
     } else if (card.unlocked && card.face !== 'intro' && (card.state === State.New || card.due <= nowMs)) {
       missingItems.push(missingEntry(card, content));
     }

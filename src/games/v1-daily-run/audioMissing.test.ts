@@ -44,14 +44,15 @@ describe('thẻ nghe không có MP3 thật (G1, L1-01)', () => {
     await db.delete();
   });
 
-  const load = async (cards: SRSCard[]) => {
+  const load = async (cards: SRSCard[], fetchOverride: typeof fetch = fakeFetch) => {
     const content = await loadV1Content({ fetchImpl: fakeFetch, baseUrl: '/' });
     const extras = await loadV1Extras(cards, {
-      fetchImpl: fakeFetch,
+      fetchImpl: fetchOverride,
       baseUrl: '/',
       database: db,
       now: NOW,
       dictations: content.dictations,
+      vocab: content.vocab,
     });
     return { content: { ...content, extras }, extras };
   };
@@ -126,5 +127,64 @@ describe('thẻ nghe không có MP3 thật (G1, L1-01)', () => {
     expect(getActiveNode(refundNodeAudioPlay(played.state, node.nodeId))!.audioPlaysUsed).toBe(0);
     expect(getActiveNode(refundNodeAudioPlay(played.state, 'node-khac'))!.audioPlaysUsed).toBe(1);
     expect(getActiveNode(refundNodeAudioPlay(run, node.nodeId))!.audioPlaysUsed).toBe(0);
+  });
+
+  it('FX-0 (SR-22): vocab listen_spell thiếu MP3 thật → không bao giờ ra listen_spell, hạ sang recall_meaning và log missing_audio', async () => {
+    const baseContent = await loadV1Content({ fetchImpl: fakeFetch, baseUrl: '/' });
+    const firstWord = baseContent.vocab[0];
+    const cards = [dueCard(firstWord.id, 'listen_spell')];
+    // Giả lập mọi file MP3 trả 404 (chưa render)
+    const missingMp3Fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+      if (String(input).endsWith('.mp3')) return new Response('not found', { status: 404 });
+      return fakeFetch(input, init);
+    }) as typeof fetch;
+
+    const { content, extras } = await load(cards, missingMp3Fetch);
+    expect(extras.missingAudio).toContain(firstWord.id);
+    const run = startPlayingFromMap(createV1Run({ cards, content, now: NOW }));
+    expect(run.nodes).toHaveLength(1);
+    expect(run.nodes[0].face).toBe('recall_meaning');
+    expect(run.nodes[0].prompt.face).toBe('recall_meaning');
+    expect(run.nodes.some((n) => n.face === 'listen_spell')).toBe(false);
+    expect(run.missingItems).toEqual([
+      expect.objectContaining({
+        cardId: `${firstWord.id}#listen_spell`,
+        itemId: firstWord.id,
+        face: 'listen_spell',
+        reason: 'missing_audio',
+      }),
+    ]);
+  });
+
+  it('FX-0 (SR-22): vocab listen_spell CÓ MP3 thật → giữ nguyên mặt listen_spell, không log missing_audio', async () => {
+    const baseContent = await loadV1Content({ fetchImpl: fakeFetch, baseUrl: '/' });
+    const firstWord = baseContent.vocab[0];
+    const cards = [dueCard(firstWord.id, 'listen_spell')];
+    const presentMp3Fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+      if (String(input).endsWith('.mp3')) {
+        return new Response('ID3', { status: 200, headers: { 'content-type': 'audio/mpeg' } });
+      }
+      return fakeFetch(input, init);
+    }) as typeof fetch;
+
+    const { content, extras } = await load(cards, presentMp3Fetch);
+    expect(extras.missingAudio).not.toContain(firstWord.id);
+    const run = startPlayingFromMap(createV1Run({ cards, content, now: NOW }));
+    expect(run.nodes).toHaveLength(1);
+    expect(run.nodes[0].face).toBe('listen_spell');
+    expect(run.missingItems).toHaveLength(0);
+  });
+
+  it('FX-0 (SR-22): dict listen_spell thiếu MP3 thật → bỏ node, 0 review, log missing_audio', async () => {
+    const cards = [dueCard('dict:0011', 'listen_spell'), dueCard('dict:0001', 'listen_spell')];
+    const { content, extras } = await load(cards);
+    expect(extras.missingAudio).toEqual(['dict:0011']);
+    const run = createV1Run({ cards, content, now: NOW });
+    expect(run.nodes.map((n) => n.card.itemId)).toEqual(['dict:0001']);
+    expect(run.nodes[0].face).toBe('listen_spell');
+    expect(run.reviews).toHaveLength(0);
+    expect(run.missingItems).toEqual([
+      expect.objectContaining({ itemId: 'dict:0011', face: 'listen_spell', reason: 'missing_audio' }),
+    ]);
   });
 });
