@@ -45,7 +45,7 @@ export const CANONICAL_SFX_CUES: readonly SfxCueMetadata[] = [
   { name: 'levelUp', alias: 'levelup', label: 'levelUp', descriptionVi: 'Lên level / mốc lớn' },
   { name: 'tick', label: 'tick', descriptionVi: 'Đếm ngược 10 giây cuối (40%)' },
   { name: 'countdownEnd', alias: 'timeup', label: 'countdownEnd', descriptionVi: 'Hết giờ làm bài' },
-  { name: 'flip', alias: 'page', label: 'flip', descriptionVi: 'Lật thẻ FSRS, chuyển câu' },
+  { name: 'flip', alias: 'page', label: 'flip', descriptionVi: 'Lật thẻ từ, chuyển câu' },
   { name: 'highlight', alias: 'reveal', label: 'highlight', descriptionVi: 'Highlight bằng chứng / hiện đáp án' },
   { name: 'recordStart', alias: 'record_start', label: 'recordStart', descriptionVi: 'Bắt đầu ghi âm Speaking' },
   { name: 'recordStop', alias: 'record_stop', label: 'recordStop', descriptionVi: 'Dừng ghi âm Speaking' },
@@ -76,8 +76,25 @@ export const DEFAULT_SFX_SPRITE: SfxSpriteMap = {
 
 export interface PlaySfxOptions {
   rate?: number;
+  /** Chuỗi combo hiện tại: tăng +1 bán cung mỗi bậc, tối đa +12 rồi quay về 0 (13-ANIMATION §0). */
+  combo?: number;
+  /** Biến thiên ngẫu nhiên ±4% để âm không lặp máy móc (mặc định bật cho tap/flip/page). */
+  jitter?: boolean;
   examMode?: boolean;
   blockedBySpeechOrTrack?: boolean;
+}
+
+const MAX_CONCURRENT_VOICES = 2;
+const JITTER_CUES = new Set<SfxName>(['tap', 'flip', 'page']);
+
+/**
+ * Tính hệ số cao độ theo combo (13-ANIMATION §0):
+ * tăng 1 bán cung (2^(1/12)) mỗi bậc combo, tối đa +12 bán cung (2.0x) rồi quay về 1.0x.
+ */
+export function computeComboRate(combo: number): number {
+  if (!Number.isFinite(combo) || combo <= 0) return 1;
+  const semitone = Math.floor(combo) % 13;
+  return Number(Math.pow(2, semitone / 12).toFixed(4));
 }
 
 function getBaseUrl(): string {
@@ -94,6 +111,7 @@ class SfxEngine {
   private blocked = false;
   private manifestPromise: Promise<SfxSpriteMap> | null = null;
   private lifecycleBound = false;
+  private activeVoices: Array<{ id: number; endsAt: number }> = [];
 
   private buildHowl(): Howl | null {
     const base = getBaseUrl();
@@ -179,6 +197,7 @@ class SfxEngine {
         if (changed && this.howl) {
           const stale = this.howl;
           this.howl = this.buildHowl();
+          this.activeVoices = [];
           try {
             stale.unload();
           } catch {
@@ -228,6 +247,11 @@ class SfxEngine {
     this.blocked = blocked;
   }
 
+  public getActiveVoiceCount(now = Date.now()): number {
+    this.activeVoices = this.activeVoices.filter((v) => v.endsAt > now);
+    return this.activeVoices.length;
+  }
+
   public play(name: SfxName, options?: PlaySfxOptions): number | null {
     if (this.muted || this.volumePercent <= 0) return null;
     if (this.blocked || options?.blockedBySpeechOrTrack) return null;
@@ -243,13 +267,46 @@ class SfxEngine {
     }
     if (!this.howl) return null;
 
+    const now = Date.now();
+    this.activeVoices = this.activeVoices.filter((v) => v.endsAt > now);
+
+    // LUAT J7 / A9: giới hạn tối đa 2 tiếng chồng đồng thời bằng hàng đợi FIFO
+    while (this.activeVoices.length >= MAX_CONCURRENT_VOICES) {
+      const oldest = this.activeVoices.shift();
+      if (oldest && typeof (this.howl as { stop?: (id?: number) => void }).stop === 'function') {
+        try {
+          (this.howl as { stop: (id?: number) => void }).stop(oldest.id);
+        } catch {
+          // ignore
+        }
+      }
+    }
+
     const cueKey = name in this.spriteMap ? name : 'tap';
+    const baseRate =
+      options?.rate && options.rate > 0
+        ? options.rate
+        : options?.combo && options.combo > 0
+        ? computeComboRate(options.combo)
+        : 1;
+    const useJitter =
+      options?.jitter === true ||
+      (options?.jitter !== false && options?.rate === undefined && options?.combo === undefined && JITTER_CUES.has(name));
+    const jitterFactor = useJitter ? 0.96 + Math.random() * 0.08 : 1;
+    const finalRate = Number(Math.max(0.5, Math.min(2.5, baseRate * jitterFactor)).toFixed(4));
+
     try {
       const soundId = this.howl.play(cueKey);
-      if (options?.rate && options.rate > 0 && typeof soundId === 'number') {
-        this.howl.rate(options.rate, soundId);
+      if (typeof soundId === 'number') {
+        if (finalRate !== 1) {
+          this.howl.rate(finalRate, soundId);
+        }
+        const cueDur = this.spriteMap[cueKey]?.[1] ?? 150;
+        const estMs = Math.max(40, Math.round(cueDur / finalRate));
+        this.activeVoices.push({ id: soundId, endsAt: now + estMs });
+        return soundId;
       }
-      return typeof soundId === 'number' ? soundId : null;
+      return null;
     } catch {
       return null;
     }

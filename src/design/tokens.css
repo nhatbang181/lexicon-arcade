@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source not "../legacy";
+@source not "../../docs";
+@source not "../../scripts";
 
 @theme {
   /* Nền & bề mặt (Focus Arcade / Editorial Academic · theme tối mặc định) */
@@ -6,14 +9,9 @@
   --color-surface: #121829;
   --color-surface-2: #1A2238;
   --color-border: #606E8E;
-  --color-border-strong: #7988A8;
-  --color-border-subtle: #26304A;
   --color-text: #E8ECF5;
   --color-text-dim: #9AA5BE;
   --color-text-faint: #8792AB;
-  --color-on-accent: #0B0F1A;
-  --color-boss-dim: #070A12;
-  --color-backdrop: rgba(5, 8, 16, 0.65);
 
   /* Màu kỹ năng (6 nhóm) */
   --color-vocab: #A78BFA;
@@ -35,6 +33,15 @@
   --font-reading: "Source Serif 4", Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   --font-ipa: "Segoe UI", "Noto Sans", system-ui, sans-serif;
+}
+
+:root {
+  /* Token mở rộng theme tối mặc định (đặt ngoài @theme để không sinh utility Tailwind thừa) */
+  --color-border-strong: #7988A8;
+  --color-border-subtle: #26304A;
+  --color-on-accent: #0B0F1A;
+  --color-boss-dim: #070A12;
+  --color-backdrop: rgba(5, 8, 16, 0.65);
 
   /* Spacing (lưới 4px · 12-UI-UX §2) */
   --space-1: 4px;
@@ -47,6 +54,7 @@
   --space-10: 40px;
   --space-12: 48px;
   --space-16: 64px;
+  --space-section: clamp(12px, 2.4vh, 24px);
 
   /* Bo góc (8 / 14 / 22 / 999) */
   --radius-sm: 8px;
@@ -54,9 +62,7 @@
   --radius-lg: 22px;
   --radius-xl: 24px;
   --radius-pill: 999px;
-}
 
-:root {
   /* Thang chữ (02-UI-UX §4 & 12-UI-UX §2; ô nhập ≥ 16px chống auto-zoom iOS) */
   --text-display: clamp(2.25rem, 1.8rem + 1.5vw, 3rem);
   --text-h1: clamp(1.5rem, 1.35rem + 0.5vw, 1.75rem);
@@ -228,23 +234,42 @@
   font-variant-numeric: tabular-nums;
 }
 
-/* Giảm chuyển động toàn cục (SR-48, 03-ANIMATION §8, A7) */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+/* Trạng thái tương tác chuẩn U14 (hover chỉ con trỏ, active scale .96 / 80ms) */
+.design-btn,
+.design-choice {
+  transition: transform var(--dur-instant) var(--ease-out), background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.design-btn:active:not(:disabled),
+.design-choice:active:not(:disabled) {
+  transform: scale(0.96);
+}
+@media (hover: hover) {
+  .design-btn[data-variant="primary"]:hover:not(:disabled) { background-color: color-mix(in srgb, var(--btn-accent) 88%, var(--color-text)); }
+  .design-btn[data-variant="secondary"]:hover:not(:disabled) { background-color: color-mix(in srgb, var(--color-surface-2) 82%, var(--color-text)); border-color: var(--color-border-strong); }
+  .design-btn[data-variant="ghost"]:hover:not(:disabled) { background-color: var(--color-surface-2); color: var(--color-text); }
+  .design-btn[data-variant="danger"]:hover:not(:disabled) { background-color: color-mix(in srgb, var(--color-wrong) 88%, var(--color-text)); }
+  .design-choice[data-state="idle"]:hover:not(:disabled) { background-color: color-mix(in srgb, var(--color-info) 8%, var(--color-surface)); border-color: var(--color-info); }
 }
 
+/* Lớp bóng tách bằng pseudo-element cho LiveCard (SR-44 transform-only, không tạo div rỗng M5) */
+.live-card-depth { isolation: isolate; }
+.live-card-depth::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-backdrop);
+  opacity: 0.28;
+  transform: translate3d(var(--lc-sx, 0px), var(--lc-sy, 6px), 0) scale(0.98);
+  transition: transform var(--dur-fast) var(--ease-out);
+  pointer-events: none;
+  z-index: -1;
+}
+[data-reduced-motion="true"] .live-card-depth::before { transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .live-card-depth::before { transform: none; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
 [data-reduced-motion="true"] *,
 [data-reduced-motion="true"] *::before,
-[data-reduced-motion="true"] *::after {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-  scroll-behavior: auto !important;
-}
+[data-reduced-motion="true"] *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }

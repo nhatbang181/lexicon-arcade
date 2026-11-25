@@ -1,5 +1,5 @@
 import React from 'react';
-import type { SkillColor } from './Button';
+import { Button, type SkillColor } from './Button';
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   skillAccent?: SkillColor;
@@ -18,6 +18,29 @@ const skillVarMap: Record<SkillColor, string> = {
   info: 'var(--color-info)',
 };
 
+const INTERACTIVE_TAGS = new Set(['button', 'a', 'input', 'select', 'textarea', 'summary']);
+
+function hasNestedInteractive(node: React.ReactNode): boolean {
+  let found = false;
+  React.Children.forEach(node, (child) => {
+    if (found || !React.isValidElement(child)) return;
+    const type = child.type;
+    const props = child.props as Record<string, unknown>;
+    if (typeof type === 'string' && INTERACTIVE_TAGS.has(type)) {
+      found = true;
+      return;
+    }
+    if (type === Button || props.role === 'button' || props.role === 'link' || typeof props.onClick === 'function') {
+      found = true;
+      return;
+    }
+    if (props.children && hasNestedInteractive(props.children as React.ReactNode)) {
+      found = true;
+    }
+  });
+  return found;
+}
+
 export const Card: React.FC<CardProps> = ({
   skillAccent,
   padding = 'md',
@@ -26,6 +49,10 @@ export const Card: React.FC<CardProps> = ({
   className = '',
   style,
   children,
+  onClick,
+  onKeyDown,
+  role,
+  tabIndex,
   ...rest
 }) => {
   const padClass = {
@@ -35,10 +62,28 @@ export const Card: React.FC<CardProps> = ({
     lg: 'p-6',
   }[padding];
 
+  const isClickable = interactive || typeof onClick === 'function';
+  const nestedInteractive = isClickable && hasNestedInteractive(children);
+  const attachButtonRole = isClickable && !nestedInteractive;
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    onKeyDown?.(e);
+    if (e.defaultPrevented || !isClickable || !onClick) return;
+    if (e.target !== e.currentTarget) return;
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onClick(e as unknown as React.MouseEvent<HTMLDivElement>);
+    }
+  };
+
   return (
     <div
+      role={attachButtonRole ? (role ?? 'button') : role}
+      tabIndex={attachButtonRole ? (tabIndex ?? 0) : tabIndex}
+      onClick={onClick}
+      onKeyDown={isClickable ? handleKeyDown : onKeyDown}
       className={`rounded-[var(--radius-lg)] border transition-transform duration-150 ${padClass} ${
-        interactive ? 'cursor-pointer hover:-translate-y-0.5' : ''
+        isClickable ? 'cursor-pointer hover:-translate-y-0.5 active:scale-[0.99]' : ''
       } ${className}`}
       style={{
         backgroundColor: 'var(--color-surface)',

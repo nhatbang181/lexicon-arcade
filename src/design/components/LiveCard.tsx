@@ -1,4 +1,4 @@
-import React, { useId } from 'react';
+import React, { useId, useRef } from 'react';
 import { motion, useMotionValue, useSpring } from 'motion/react';
 import type { SkillColor } from './Button';
 import { dur, spring } from '../motion';
@@ -48,6 +48,7 @@ export const LiveCard: React.FC<LiveCardProps> = ({
   className = '',
 }) => {
   const fx = useFxTier({ examMode });
+  const shellRef = useRef<HTMLDivElement | null>(null);
   const phaseSeed = useId();
   const delaySec = (phaseSeed.charCodeAt(phaseSeed.length - 1) % 8) * 0.2;
 
@@ -55,15 +56,12 @@ export const LiveCard: React.FC<LiveCardProps> = ({
   const canTilt = canLiveMotion && tilt && !flipped;
   const can3DFlip = (fx.tier === 'full' || fx.tier === 'medium') && !examMode;
   const hasBack = backContent !== undefined;
+  const showDepthShadow = !examMode && fx.tier !== 'reduced';
 
   const rawRx = useMotionValue(0);
   const rawRy = useMotionValue(0);
-  const shadowX = useMotionValue(0);
-  const shadowY = useMotionValue(8);
   const rx = useSpring(rawRx, { stiffness: 220, damping: 26 });
   const ry = useSpring(rawRy, { stiffness: 220, damping: 26 });
-  const sx = useSpring(shadowX, { stiffness: 220, damping: 26 });
-  const sy = useSpring(shadowY, { stiffness: 220, damping: 26 });
 
   const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
     if (!canTilt || e.pointerType !== 'mouse') return;
@@ -73,19 +71,23 @@ export const LiveCard: React.FC<LiveCardProps> = ({
     const ny = (e.clientY - rect.top) / rect.height - 0.5;
     rawRx.set(-ny * MAX_TILT_DEG * 2);
     rawRy.set(nx * MAX_TILT_DEG * 2);
-    shadowX.set(-nx * 6);
-    shadowY.set(12 - ny * 4);
+    if (shellRef.current) {
+      shellRef.current.style.setProperty('--lc-sx', `${(-nx * 6).toFixed(1)}px`);
+      shellRef.current.style.setProperty('--lc-sy', `${(11 - ny * 4).toFixed(1)}px`);
+    }
   };
 
   const handlePointerLeave = () => {
     rawRx.set(0);
     rawRy.set(0);
-    shadowX.set(0);
-    shadowY.set(8);
+    if (shellRef.current) {
+      shellRef.current.style.setProperty('--lc-sx', '0px');
+      shellRef.current.style.setProperty('--lc-sy', '6px');
+    }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (!onClick) return;
+    if (!onClick || e.target !== e.currentTarget) return;
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       onClick();
@@ -118,40 +120,25 @@ export const LiveCard: React.FC<LiveCardProps> = ({
       }
     : {};
 
+  const shouldBreathe = canLiveMotion && breathing && !flipped;
+
   return (
     <div
-      className={`relative ${onClick ? 'cursor-pointer' : ''} ${className}`}
-      style={{ perspective: '1000px' }}
+      ref={shellRef}
+      className={`relative ${showDepthShadow ? 'live-card-depth' : ''} ${onClick ? 'cursor-pointer' : ''} ${className}`}
+      style={hasBack && can3DFlip ? { perspective: '1000px' } : undefined}
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
       {...interactiveAttrs}
     >
-      {/* Lớp bóng tách riêng chỉ animate transform (SR-44: không animate box-shadow) */}
-      {!examMode && (
-        <motion.div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 rounded-[var(--radius-lg)]"
-          style={{
-            backgroundColor: 'var(--color-backdrop)',
-            opacity: 0.32,
-            x: canTilt ? sx : 0,
-            y: canTilt ? sy : 6,
-            scale: 0.98,
-          }}
-        />
-      )}
-
-      {/* Khung chính: animate thở / nghiêng / nhấn (scale tối đa ≤ 1.03 trên chữ theo SR-45) */}
+      {/* Khung chính: h-full để mặt thẻ luôn khớp chiều cao lưới, tránh lộ bóng thừa */}
       <motion.div
-        animate={
-          canLiveMotion && breathing && !flipped
-            ? { y: [0, -2, 0], rotate: [-0.35, 0.35, -0.35] }
-            : { y: 0, rotate: 0 }
-        }
+        className="h-full"
+        animate={shouldBreathe ? { y: [0, -2, 0], rotate: [-0.35, 0.35, -0.35] } : undefined}
         transition={
-          canLiveMotion && breathing && !flipped
+          shouldBreathe
             ? { duration: 3.2, delay: delaySec, repeat: Infinity, ease: 'easeInOut' }
-            : spring.soft
+            : undefined
         }
         style={
           canTilt
@@ -166,13 +153,13 @@ export const LiveCard: React.FC<LiveCardProps> = ({
             data-live-card-flipper="3d"
             animate={{ rotateY: flipped ? 180 : 0 }}
             transition={spring.soft}
-            className="relative w-full"
+            className="relative w-full h-full"
             style={{ transformStyle: 'preserve-3d' }}
           >
             <div
               data-face="front"
               aria-hidden={flipped}
-              className="w-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
+              className="w-full h-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
               style={{
                 ...faceStyle,
                 backfaceVisibility: 'hidden',
@@ -183,7 +170,7 @@ export const LiveCard: React.FC<LiveCardProps> = ({
               {edition === 'mastered' && (
                 <div
                   aria-hidden="true"
-                  className="pointer-events-none absolute inset-0 rounded-[var(--radius-lg)]"
+                  className="pointer-events-none absolute inset-0"
                   style={{
                     backgroundImage:
                       'linear-gradient(115deg, transparent 30%, color-mix(in srgb, var(--color-partial) 18%, transparent) 50%, transparent 70%)',
@@ -196,7 +183,7 @@ export const LiveCard: React.FC<LiveCardProps> = ({
             <div
               data-face="back"
               aria-hidden={!flipped}
-              className="absolute inset-0 w-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
+              className="absolute inset-0 w-full h-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
               style={{
                 ...faceStyle,
                 backfaceVisibility: 'hidden',
@@ -211,11 +198,12 @@ export const LiveCard: React.FC<LiveCardProps> = ({
           /* Reduced-motion / bậc Thấp / Exam: crossfade 120 ms, không xoay 3D */
           <div
             data-live-card-flipper="crossfade"
-            className="relative w-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
+            className="relative w-full h-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
             style={faceStyle}
           >
             <motion.div
               key={flipped ? 'back' : 'front'}
+              className="h-full"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.12 }}
@@ -225,13 +213,13 @@ export const LiveCard: React.FC<LiveCardProps> = ({
           </div>
         ) : (
           <div
-            className="relative w-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
+            className="relative w-full h-full rounded-[var(--radius-lg)] border p-5 overflow-hidden"
             style={faceStyle}
           >
             {edition === 'mastered' && (
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 rounded-[var(--radius-lg)]"
+                className="pointer-events-none absolute inset-0"
                 style={{
                   backgroundImage:
                     'linear-gradient(115deg, transparent 30%, color-mix(in srgb, var(--color-partial) 18%, transparent) 50%, transparent 70%)',

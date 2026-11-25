@@ -1,0 +1,172 @@
+{
+ "at": "2026-11-25T05:16:50.655Z",
+ "base": "http://127.0.0.1:5241/#",
+ "runs": [
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "dev/components",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 10,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 1,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  }
+ ],
+ "total": {
+  "CHAN": 0,
+  "NANG": 0,
+  "NHE": 0
+ },
+ "byCode": {}
+}
