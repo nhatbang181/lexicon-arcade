@@ -37,7 +37,7 @@ export const Pill: React.FC<PillProps> = ({
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 font-medium rounded-full border ${sizeClass} ${className}`}
+      className={`inline-flex items-center gap-1.5 font-medium rounded-full border shrink-0 whitespace-nowrap ${sizeClass} ${className}`}
       style={{
         color: tone === 'neutral' ? 'var(--color-text-dim)' : color,
         backgroundColor:

@@ -100,13 +100,13 @@
   --ease-in: cubic-bezier(0.4, 0, 1, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
 
-  /* Thang Z-index (12-UI-UX §2) */
+  /* Thang Z-index (12-UI-UX §2; sheet/modal/toast luôn nằm trên bottom nav z-40) */
   --z-content: 0;
   --z-hud: 10;
   --z-fx: 20;
-  --z-sheet: 30;
-  --z-modal: 40;
-  --z-toast: 50;
+  --z-sheet: 50;
+  --z-modal: 60;
+  --z-toast: 70;
 }
 
 [data-theme="dark"] {

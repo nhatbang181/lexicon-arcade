@@ -674,7 +674,7 @@ export const TodayDashboard: React.FC = () => {
           </div>
           <div className="flex flex-wrap items-center gap-2 shrink-0">
             <Button
-              variant="primary"
+              variant="secondary"
               skill="info"
               rightIcon={<ArrowRight className="w-4 h-4" />}
               onClick={() => navigate('/onboarding')}
