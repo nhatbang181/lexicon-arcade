@@ -1,0 +1,1838 @@
+[
+ {
+  "id": "vocab:didactic",
+  "headword": "didactic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Intended to teach, especially in an overly moralising or rigid teacher-led manner.",
+  "meaningVi": "mang tính giáo huấn, thuyết giảng một chiều",
+  "existingExample": "Modern universities are gradually moving away from purely didactic lectures toward collaborative problem-solving workshops.",
+  "mustContainOneOf": [
+   "didactic"
+  ]
+ },
+ {
+  "id": "vocab:autodidact",
+  "headword": "autodidact",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A self-taught person who acquires advanced knowledge or skills without formal schooling.",
+  "meaningVi": "người tự học không qua đào tạo chính quy",
+  "existingExample": "With open-access repositories proliferating online, a disciplined autodidact can now master complex disciplines independently.",
+  "mustContainOneOf": [
+   "autodidact",
+   "autodidacts"
+  ]
+ },
+ {
+  "id": "vocab:scholastic",
+  "headword": "scholastic",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Relating to schools, academic study, and formal intellectual achievement.",
+  "meaningVi": "thuộc về học thuật, trường lớp",
+  "existingExample": "Excessive emphasis on scholastic rankings often pressures secondary schools into narrowing their arts programmes.",
+  "mustContainOneOf": [
+   "scholastic"
+  ]
+ },
+ {
+  "id": "vocab:erudite",
+  "headword": "erudite",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Having or showing deep, extensive knowledge gained through serious study and reading.",
+  "meaningVi": "uyên bác, thông thái sâu rộng",
+  "existingExample": "The keynote speaker delivered an erudite critique of how standardised testing narrows intellectual exploration.",
+  "mustContainOneOf": [
+   "erudite"
+  ]
+ },
+ {
+  "id": "vocab:matriculate",
+  "headword": "matriculate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To be formally admitted to study at a university or college after meeting entrance criteria.",
+  "meaningVi": "chính thức nhập học vào trường đại học",
+  "existingExample": "Targeted outreach initiatives have enabled far more first-generation students to matriculate at prestigious institutions.",
+  "mustContainOneOf": [
+   "matriculate",
+   "matriculates",
+   "matriculated",
+   "matriculating"
+  ]
+ },
+ {
+  "id": "vocab:co_curricular",
+  "headword": "co-curricular",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Complementing and directly reinforcing the formal academic curriculum rather than remaining separate from it.",
+  "meaningVi": "thuộc hoạt động bổ trợ gắn liền với chương trình học",
+  "existingExample": "Debating societies and laboratory clubs offer valuable co-curricular experiences that sharpen analytical reasoning.",
+  "mustContainOneOf": [
+   "co-curricular",
+   "co curricular"
+  ]
+ },
+ {
+  "id": "vocab:remedial",
+  "headword": "remedial",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Designed to help students who are struggling to reach the expected academic standard.",
+  "meaningVi": "bổ trợ, phụ đạo để khắc phục lỗ hổng kiến thức",
+  "existingExample": "Early diagnostic screening allows schools to provide targeted remedial support before minor literacy gaps widen.",
+  "mustContainOneOf": [
+   "remedial"
+  ]
+ },
+ {
+  "id": "vocab:formative_assessment",
+  "headword": "formative assessment",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Ongoing evaluation during a course used to monitor comprehension and adapt teaching methods accordingly.",
+  "meaningVi": "đánh giá quá trình trong học tập",
+  "existingExample": "Unlike high-stakes final examinations, formative assessment gives teachers timely insight into conceptual misunderstandings.",
+  "mustContainOneOf": [
+   "formative assessment",
+   "formative-assessment"
+  ]
+ },
+ {
+  "id": "vocab:summative_assessment",
+  "headword": "summative assessment",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Formal evaluation conducted at the end of an instructional period to measure overall mastery against benchmarks.",
+  "meaningVi": "đánh giá tổng kết cuối kỳ hoặc cuối khóa",
+  "existingExample": "Critics argue that relying exclusively on summative assessment encourages cramming rather than durable understanding.",
+  "mustContainOneOf": [
+   "summative assessment",
+   "summative-assessment"
+  ]
+ },
+ {
+  "id": "vocab:academic_rigour",
+  "headword": "academic rigour",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "The high standard of thoroughness, intellectual challenge, and precision expected in scholarly work.",
+  "meaningVi": "tính chặt chẽ và chuẩn mực nghiêm ngặt trong học thuật",
+  "existingExample": "Expanding university access must not come at the expense of maintaining academic rigour across degree programmes.",
+  "mustContainOneOf": [
+   "academic rigour",
+   "academic rigor",
+   "academic-rigour",
+   "academic-rigor"
+  ]
+ },
+ {
+  "id": "vocab:metacognition",
+  "headword": "metacognition",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Awareness and deliberate regulation of one's own thinking and learning processes.",
+  "meaningVi": "siêu nhận thức",
+  "existingExample": "Teaching adolescents strategies for metacognition significantly improves their ability to plan essays and self-correct errors.",
+  "mustContainOneOf": [
+   "metacognition",
+   "metacognitions"
+  ]
+ },
+ {
+  "id": "vocab:scaffolding",
+  "headword": "scaffolding",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Temporary instructional support provided by educators and gradually withdrawn as learners gain independence.",
+  "meaningVi": "giàn giáo sư phạm",
+  "existingExample": "Effective scaffolding enables novice writers to construct coherent arguments before tackling complex essays unassisted.",
+  "mustContainOneOf": [
+   "scaffolding",
+   "scaffoldings"
+  ]
+ },
+ {
+  "id": "vocab:differentiated_instruction",
+  "headword": "differentiated instruction",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A teaching framework that tailors content, pacing, and tasks to accommodate diverse student abilities.",
+  "meaningVi": "giảng dạy phân hóa theo năng lực từng học sinh",
+  "existingExample": "In overcrowded classrooms, implementing differentiated instruction remains logistically demanding even for seasoned educators.",
+  "mustContainOneOf": [
+   "differentiated instruction",
+   "differentiated-instruction"
+  ]
+ },
+ {
+  "id": "vocab:experiential_learning",
+  "headword": "experiential learning",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "The process of acquiring knowledge and insight through direct practical involvement and structured reflection.",
+  "meaningVi": "học tập qua trải nghiệm thực tế",
+  "existingExample": "Fieldwork and industry placements exemplify experiential learning by bridging abstract theory with real-world complexity.",
+  "mustContainOneOf": [
+   "experiential learning",
+   "experiential-learning"
+  ]
+ },
+ {
+  "id": "vocab:peer_assisted_learning",
+  "headword": "peer-assisted learning",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "An educational approach in which students actively support and instruct one another to deepen mutual comprehension.",
+  "meaningVi": "học tập tương trợ cùng bạn đồng trang lứa",
+  "existingExample": "Universities increasingly embed peer-assisted learning into first-year modules to reduce attrition and boost confidence.",
+  "mustContainOneOf": [
+   "peer-assisted learning",
+   "peer-assisted-learning",
+   "peer assisted learning"
+  ]
+ },
+ {
+  "id": "vocab:polymath",
+  "headword": "polymath",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "An individual possessing profound expertise across multiple distinct fields of knowledge.",
+  "meaningVi": "nhà bác học tinh thông nhiều lĩnh vực",
+  "existingExample": "Hyper-specialised degree tracks rarely cultivate the breadth of perspective associated with a classical polymath.",
+  "mustContainOneOf": [
+   "polymath",
+   "polymaths"
+  ]
+ },
+ {
+  "id": "vocab:prodigy",
+  "headword": "prodigy",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A young person endowed with exceptional talent or intellect far beyond their age.",
+  "meaningVi": "thần đồng, người có tài năng xuất chúng từ sớm",
+  "existingExample": "Accelerating a mathematical prodigy into university lectures without emotional support can inadvertently cause social alienation.",
+  "mustContainOneOf": [
+   "prodigy",
+   "prodigies"
+  ]
+ },
+ {
+  "id": "vocab:valedictorian",
+  "headword": "valedictorian",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "The highest-ranking graduating student selected to deliver the farewell address at commencement.",
+  "meaningVi": "thủ khoa tốt nghiệp đại diện phát biểu",
+  "existingExample": "Although she graduated as class valedictorian, she stressed that collaborative curiosity mattered more than grades.",
+  "mustContainOneOf": [
+   "valedictorian",
+   "valedictorians"
+  ]
+ },
+ {
+  "id": "vocab:sabbatical",
+  "headword": "sabbatical",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A period of paid leave granted periodically to university academics for research, writing, or travel.",
+  "meaningVi": "kỳ nghỉ phép nghiên cứu của giảng viên đại học",
+  "existingExample": "During her year-long sabbatical, the professor compiled comparative datasets on bilingual primary schools across Europe.",
+  "mustContainOneOf": [
+   "sabbatical",
+   "sabbaticals"
+  ]
+ },
+ {
+  "id": "vocab:tenure",
+  "headword": "tenure",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Permanent academic employment status designed to safeguard scholars' freedom of inquiry and speech.",
+  "meaningVi": "chế độ biên chế học thuật lâu dài cho giảng viên",
+  "existingExample": "Defenders of university tenure contend that job security empowers researchers to pursue unconventional yet vital inquiries.",
+  "mustContainOneOf": [
+   "tenure",
+   "tenures"
+  ]
+ },
+ {
+  "id": "vocab:endowment",
+  "headword": "endowment",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Financial assets donated to an educational institution to generate ongoing income for scholarships and research.",
+  "meaningVi": "quỹ hiến tặng lâu dài cho cơ sở giáo dục",
+  "existingExample": "Elite institutions with multibillion-dollar endowment funds can weather public funding cuts far better than regional colleges.",
+  "mustContainOneOf": [
+   "endowment",
+   "endowments"
+  ]
+ },
+ {
+  "id": "vocab:bursary",
+  "headword": "bursary",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A monetary grant awarded to a student on the basis of financial need to help cover study costs.",
+  "meaningVi": "học bổng hỗ trợ tài chính theo hoàn cảnh",
+  "existingExample": "Without a means-tested bursary, many talented applicants from rural districts would be deterred by living expenses.",
+  "mustContainOneOf": [
+   "bursary",
+   "bursaries"
+  ]
+ },
+ {
+  "id": "vocab:stipend",
+  "headword": "stipend",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A fixed regular allowance paid to postgraduate researchers or fellows to cover basic living expenses.",
+  "meaningVi": "khoản trợ cấp sinh hoạt định kỳ cho nghiên cứu sinh",
+  "existingExample": "Unless doctoral stipend levels keep pace with urban rents, academia risks losing promising scholars to corporate jobs.",
+  "mustContainOneOf": [
+   "stipend",
+   "stipends"
+  ]
+ },
+ {
+  "id": "vocab:alma_mater",
+  "headword": "alma mater",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "The university, college, or school that a person previously attended and graduated from.",
+  "meaningVi": "trường cũ nơi từng theo học và tốt nghiệp",
+  "existingExample": "Successful alumni frequently endow laboratories at their alma mater to expand research opportunities for younger cohorts.",
+  "mustContainOneOf": [
+   "alma mater",
+   "alma-mater"
+  ]
+ },
+ {
+  "id": "vocab:colloquium",
+  "headword": "colloquium",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "An academic seminar or formal gathering where specialists present and debate recent research findings.",
+  "meaningVi": "buổi tọa đàm, hội thảo học thuật chuyên sâu",
+  "existingExample": "Weekly departmental colloquium sessions expose postgraduate students to rigorous questioning from visiting academics.",
+  "mustContainOneOf": [
+   "colloquium",
+   "colloquiums"
+  ]
+ },
+ {
+  "id": "vocab:symposium",
+  "headword": "symposium",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A formal conference at which multiple experts deliver papers and exchange views on a defined subject.",
+  "meaningVi": "hội nghị chuyên đề quy tụ các chuyên gia",
+  "existingExample": "An international education symposium in Helsinki examined how teacher autonomy correlates with student well-being.",
+  "mustContainOneOf": [
+   "symposium",
+   "symposiums"
+  ]
+ },
+ {
+  "id": "vocab:monograph",
+  "headword": "monograph",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A detailed, book-length scholarly study devoted to a single specialised subject.",
+  "meaningVi": "chuyên khảo học thuật sâu về một chủ đề duy nhất",
+  "existingExample": "Her landmark monograph on early literacy reform reshaped teacher-training curricula across three provinces.",
+  "mustContainOneOf": [
+   "monograph",
+   "monographs"
+  ]
+ },
+ {
+  "id": "vocab:compendium",
+  "headword": "compendium",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A concise yet comprehensive collection of detailed information on a particular academic subject.",
+  "meaningVi": "tuyển tập tóm lược toàn diện kiến thức",
+  "existingExample": "The ministry published a digital compendium of evidence-based classroom interventions for secondary educators.",
+  "mustContainOneOf": [
+   "compendium",
+   "compendiums"
+  ]
+ },
+ {
+  "id": "vocab:mnemonic",
+  "headword": "mnemonic",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A structured pattern, acronym, or association used to assist in retaining and recalling information.",
+  "meaningVi": "kỹ thuật hoặc công cụ hỗ trợ ghi nhớ",
+  "existingExample": "While a clever mnemonic helps medical students recall anatomical sequences, conceptual mastery still requires clinical practice.",
+  "mustContainOneOf": [
+   "mnemonic",
+   "mnemonics"
+  ]
+ },
+ {
+  "id": "vocab:cognitive_load",
+  "headword": "cognitive load",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "The total amount of mental effort being exerted in working memory during a learning task.",
+  "meaningVi": "tải trọng nhận thức lên trí nhớ làm việc",
+  "existingExample": "Cluttered multimedia slides increase extraneous cognitive load and hinder students from absorbing core concepts.",
+  "mustContainOneOf": [
+   "cognitive load",
+   "cognitive-load"
+  ]
+ },
+ {
+  "id": "vocab:executive_functioning",
+  "headword": "executive functioning",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Higher-order mental skills including planning, impulse control, working memory, and cognitive flexibility.",
+  "meaningVi": "chức năng điều hành nhận thức",
+  "existingExample": "Early playful interaction strengthens executive functioning, which predicts long-term academic resilience better than memorisation.",
+  "mustContainOneOf": [
+   "executive functioning",
+   "executive-functioning"
+  ]
+ },
+ {
+  "id": "vocab:critical_pedagogy",
+  "headword": "critical pedagogy",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "An educational philosophy encouraging learners to question power structures, assumptions, and social inequities.",
+  "meaningVi": "sư phạm phản biện",
+  "existingExample": "Advocates of critical pedagogy contend that schooling should cultivate active citizens rather than passive test-takers.",
+  "mustContainOneOf": [
+   "critical pedagogy",
+   "critical-pedagogy"
+  ]
+ },
+ {
+  "id": "vocab:vocational_aptitude",
+  "headword": "vocational aptitude",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Natural inclination or suitability for acquiring specific practical or technical occupational skills.",
+  "meaningVi": "năng khiếu hướng nghiệp, khả năng bẩm sinh về nghề nghiệp",
+  "existingExample": "Guidance counsellors should evaluate vocational aptitude alongside exam scores so students can pursue fulfilling trades.",
+  "mustContainOneOf": [
+   "vocational aptitude",
+   "vocational-aptitude"
+  ]
+ },
+ {
+  "id": "vocab:credentialism",
+  "headword": "credentialism",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Excessive reliance on formal academic degrees or certificates as the primary measure of competence.",
+  "meaningVi": "chủ nghĩa sùng bái bằng cấp",
+  "existingExample": "Growing credentialism has forced entry-level applicants to acquire master's degrees for roles that previously required on-the-job training.",
+  "mustContainOneOf": [
+   "credentialism",
+   "credentialisms"
+  ]
+ },
+ {
+  "id": "vocab:intellectual_curiosity",
+  "headword": "intellectual curiosity",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "An intrinsic desire to investigate complex ideas, ask probing questions, and pursue deeper understanding.",
+  "meaningVi": "tinh thần ham hiểu biết và khám phá tri thức",
+  "existingExample": "Rigidly scripted syllabuses often extinguish intellectual curiosity before pupils even reach upper secondary school.",
+  "mustContainOneOf": [
+   "intellectual curiosity",
+   "intellectual-curiosity"
+  ]
+ },
+ {
+  "id": "vocab:epistemic",
+  "headword": "epistemic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Relating to knowledge, its sources, validity, and the degree of justification behind beliefs.",
+  "meaningVi": "thuộc về tri thức luận và bản chất của sự hiểu biết",
+  "existingExample": "University writing courses should foster epistemic humility so students evaluate competing evidence without dogmatism.",
+  "mustContainOneOf": [
+   "epistemic"
+  ]
+ },
+ {
+  "id": "vocab:inculcate",
+  "headword": "inculcate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To instil an attitude, ethical principle, or intellectual habit firmly through persistent instruction.",
+  "meaningVi": "thấm nhuần",
+  "existingExample": "Primary schools play a pivotal role in helping to inculcate civic empathy and disciplined study habits early in life.",
+  "mustContainOneOf": [
+   "inculcate",
+   "inculcates",
+   "inculcated",
+   "inculcating"
+  ]
+ },
+ {
+  "id": "vocab:edify",
+  "headword": "edify",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To instruct or enlighten someone in a way that improves their intellectual or moral understanding.",
+  "meaningVi": "khai sáng, nâng cao trí tuệ và phẩm hạnh",
+  "existingExample": "Publicly funded educational documentaries aim to edify broad audiences rather than merely chase commercial ratings.",
+  "mustContainOneOf": [
+   "edify",
+   "edifies",
+   "edified",
+   "edifying"
+  ]
+ },
+ {
+  "id": "vocab:indoctrinate",
+  "headword": "indoctrinate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "To teach a person or group to accept a set of beliefs uncritically without tolerating dissent.",
+  "meaningVi": "nhồi sọ, áp đặt tư tưởng một chiều không cho phản biện",
+  "existingExample": "Democratic curricula are explicitly designed to educate citizens in critical inquiry rather than indoctrinate them with dogma.",
+  "mustContainOneOf": [
+   "indoctrinate",
+   "indoctrinates",
+   "indoctrinated",
+   "indoctrinating"
+  ]
+ },
+ {
+  "id": "vocab:academic_probation",
+  "headword": "academic probation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A formal warning period during which a student whose grades fall below minimum standards must improve to remain enrolled.",
+  "meaningVi": "tình trạng cảnh cáo học vụ",
+  "existingExample": "Universities that pair academic probation with structured mentoring report markedly higher retention rates.",
+  "mustContainOneOf": [
+   "academic probation",
+   "academic-probation"
+  ]
+ },
+ {
+  "id": "vocab:deforestation",
+  "headword": "deforestation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "the cutting down of large areas of forest.",
+  "meaningVi": "nạn phá rừng",
+  "existingExample": "Large-scale deforestation threatens countless plant and animal species.",
+  "mustContainOneOf": [
+   "deforestation",
+   "deforestations"
+  ]
+ },
+ {
+  "id": "vocab:carbon_footprint",
+  "headword": "carbon footprint",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "the amount of carbon dioxide produced by the activities of a person or organisation.",
+  "meaningVi": "dấu chân carbon (lượng khí thải CO₂)",
+  "existingExample": "Cycling to work is a simple way to reduce your carbon footprint.",
+  "mustContainOneOf": [
+   "carbon footprint",
+   "carbon-footprint"
+  ]
+ },
+ {
+  "id": "vocab:renewable_energy",
+  "headword": "renewable energy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "energy from sources that are naturally replaced, such as wind or sunlight.",
+  "meaningVi": "năng lượng tái tạo",
+  "existingExample": "Governments should offer subsidies to households that switch to renewable energy.",
+  "mustContainOneOf": [
+   "renewable energy",
+   "renewable-energy"
+  ]
+ },
+ {
+  "id": "vocab:fossil_fuels",
+  "headword": "fossil fuels",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "fuels such as coal, oil and gas formed from the remains of ancient organisms.",
+  "meaningVi": "nhiên liệu hóa thạch",
+  "existingExample": "Burning fossil fuels is the main cause of rising greenhouse gas levels.",
+  "mustContainOneOf": [
+   "fossil fuels",
+   "fossil-fuels"
+  ]
+ },
+ {
+  "id": "vocab:biodiversity",
+  "headword": "biodiversity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the variety of plants and animals in a particular place.",
+  "meaningVi": "đa dạng sinh học",
+  "existingExample": "Coral reefs support an extraordinary level of biodiversity.",
+  "mustContainOneOf": [
+   "biodiversity",
+   "biodiversities"
+  ]
+ },
+ {
+  "id": "vocab:endangered_species",
+  "headword": "endangered species",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "a type of animal or plant that may soon disappear completely.",
+  "meaningVi": "loài có nguy cơ tuyệt chủng",
+  "existingExample": "Poaching has pushed many endangered species to the edge of extinction.",
+  "mustContainOneOf": [
+   "endangered species",
+   "endangered-species"
+  ]
+ },
+ {
+  "id": "vocab:emissions",
+  "headword": "emissions",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "gases sent into the air, especially from vehicles and factories.",
+  "meaningVi": "khí thải",
+  "existingExample": "Stricter regulations are needed to curb emissions from heavy industry.",
+  "mustContainOneOf": [
+   "emissions",
+   "emissionses"
+  ]
+ },
+ {
+  "id": "vocab:sustainable",
+  "headword": "sustainable",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "able to continue for a long time without damaging the environment.",
+  "meaningVi": "bền vững",
+  "existingExample": "Sustainable farming protects the soil for future generations.",
+  "mustContainOneOf": [
+   "sustainable"
+  ]
+ },
+ {
+  "id": "vocab:degradation",
+  "headword": "degradation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the process of something being damaged or made worse.",
+  "meaningVi": "sự suy thoái (môi trường)",
+  "existingExample": "Overgrazing has led to severe land degradation in some regions.",
+  "mustContainOneOf": [
+   "degradation",
+   "degradations"
+  ]
+ },
+ {
+  "id": "vocab:mitigate",
+  "headword": "mitigate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "to make something harmful less severe.",
+  "meaningVi": "giảm nhẹ (tác hại)",
+  "existingExample": "Planting trees in cities can help mitigate the effects of heatwaves.",
+  "mustContainOneOf": [
+   "mitigate",
+   "mitigates",
+   "mitigated",
+   "mitigating"
+  ]
+ },
+ {
+  "id": "vocab:landfill",
+  "headword": "landfill",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a place where waste is buried under the ground.",
+  "meaningVi": "bãi chôn lấp rác",
+  "existingExample": "Most plastic packaging ends up in landfill or in the ocean.",
+  "mustContainOneOf": [
+   "landfill",
+   "landfills"
+  ]
+ },
+ {
+  "id": "vocab:single_use_plastics",
+  "headword": "single-use plastics",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "plastic items designed to be thrown away after one use.",
+  "meaningVi": "nhựa dùng một lần",
+  "existingExample": "Several countries have banned single-use plastics such as straws and bags.",
+  "mustContainOneOf": [
+   "single-use plastics",
+   "single-use-plastics",
+   "single use plastics"
+  ]
+ },
+ {
+  "id": "vocab:conservation",
+  "headword": "conservation",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the protection of the natural environment, plants and animals.",
+  "meaningVi": "sự bảo tồn",
+  "existingExample": "Conservation efforts have helped some whale populations recover.",
+  "mustContainOneOf": [
+   "conservation",
+   "conservations"
+  ]
+ },
+ {
+  "id": "vocab:habitat",
+  "headword": "habitat",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "the natural home of an animal or plant.",
+  "meaningVi": "môi trường sống",
+  "existingExample": "Habitat loss is one of the greatest threats to wildlife.",
+  "mustContainOneOf": [
+   "habitat",
+   "habitats"
+  ]
+ },
+ {
+  "id": "vocab:extreme_weather",
+  "headword": "extreme weather",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "very severe weather such as floods, droughts or storms.",
+  "meaningVi": "thời tiết cực đoan",
+  "existingExample": "Extreme weather events are becoming more frequent as the climate warms.",
+  "mustContainOneOf": [
+   "extreme weather",
+   "extreme-weather"
+  ]
+ },
+ {
+  "id": "vocab:drought",
+  "headword": "drought",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a long period with little or no rain.",
+  "meaningVi": "hạn hán",
+  "existingExample": "A prolonged drought can devastate crops and drive up food prices.",
+  "mustContainOneOf": [
+   "drought",
+   "droughts"
+  ]
+ },
+ {
+  "id": "vocab:irreversible",
+  "headword": "irreversible",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "impossible to change back to a previous state.",
+  "meaningVi": "không thể đảo ngược",
+  "existingExample": "Scientists warn that some damage to ecosystems may be irreversible.",
+  "mustContainOneOf": [
+   "irreversible"
+  ]
+ },
+ {
+  "id": "vocab:recycle",
+  "headword": "recycle",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "to treat used materials so that they can be used again.",
+  "meaningVi": "tái chế",
+  "existingExample": "Local councils should make it easier for residents to recycle household waste.",
+  "mustContainOneOf": [
+   "recycle",
+   "recycles",
+   "recycled",
+   "recycling"
+  ]
+ },
+ {
+  "id": "vocab:ecosystem",
+  "headword": "ecosystem",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "all the living things in an area and the way they affect each other.",
+  "meaningVi": "hệ sinh thái",
+  "existingExample": "Introducing a new species can disrupt a fragile ecosystem.",
+  "mustContainOneOf": [
+   "ecosystem",
+   "ecosystems"
+  ]
+ },
+ {
+  "id": "vocab:pollutant",
+  "headword": "pollutant",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a substance that makes air, water or soil dirty or harmful.",
+  "meaningVi": "chất gây ô nhiễm",
+  "existingExample": "Factories must filter pollutants before releasing waste water into rivers.",
+  "mustContainOneOf": [
+   "pollutants",
+   "pollutant"
+  ]
+ },
+ {
+  "id": "vocab:global_warming",
+  "headword": "global warming",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the gradual increase in the temperature of the earth's atmosphere.",
+  "meaningVi": "sự nóng lên toàn cầu",
+  "existingExample": "Tackling global warming requires cooperation between all nations.",
+  "mustContainOneOf": [
+   "global warming",
+   "global-warming"
+  ]
+ },
+ {
+  "id": "vocab:carbon_tax",
+  "headword": "carbon tax",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "a tax on fuels based on how much carbon dioxide they produce.",
+  "meaningVi": "thuế carbon",
+  "existingExample": "A carbon tax would encourage companies to adopt cleaner technologies.",
+  "mustContainOneOf": [
+   "carbon tax",
+   "carbon-tax"
+  ]
+ },
+ {
+  "id": "vocab:depletion",
+  "headword": "depletion",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a reduction in the amount of something until very little remains.",
+  "meaningVi": "sự cạn kiệt",
+  "existingExample": "Overfishing has led to the depletion of fish stocks in many seas.",
+  "mustContainOneOf": [
+   "depletion",
+   "depletions"
+  ]
+ },
+ {
+  "id": "vocab:eco_friendly",
+  "headword": "eco-friendly",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "not harmful to the environment.",
+  "meaningVi": "thân thiện với môi trường",
+  "existingExample": "Consumers are increasingly willing to pay more for eco-friendly products.",
+  "mustContainOneOf": [
+   "eco-friendly",
+   "eco friendly"
+  ]
+ },
+ {
+  "id": "vocab:raise_awareness",
+  "headword": "raise awareness",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "to make more people know about a problem or issue.",
+  "meaningVi": "nâng cao nhận thức",
+  "existingExample": "Social media campaigns can raise awareness of environmental issues among young people.",
+  "mustContainOneOf": [
+   "raise awareness",
+   "raise-awareness"
+  ]
+ },
+ {
+  "id": "vocab:anthropogenic",
+  "headword": "anthropogenic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "caused by human activity.",
+  "meaningVi": "do con người gây ra",
+  "existingExample": "Most scientists agree that recent warming is largely anthropogenic.",
+  "mustContainOneOf": [
+   "anthropogenic"
+  ]
+ },
+ {
+  "id": "vocab:greenhouse_effect",
+  "headword": "greenhouse effect",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "the warming of the earth caused by gases trapping heat in the atmosphere.",
+  "meaningVi": "hiệu ứng nhà kính",
+  "existingExample": "Methane intensifies the greenhouse effect far more than carbon dioxide in the short term.",
+  "mustContainOneOf": [
+   "greenhouse effect",
+   "greenhouse-effect"
+  ]
+ },
+ {
+  "id": "vocab:carbon_neutral",
+  "headword": "carbon neutral",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "producing no net carbon emissions.",
+  "meaningVi": "trung hòa carbon",
+  "existingExample": "The company aims to become carbon neutral by 2035.",
+  "mustContainOneOf": [
+   "carbon neutral",
+   "carbon-neutral"
+  ]
+ },
+ {
+  "id": "vocab:net_zero",
+  "headword": "net zero",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a state in which emissions are balanced by removal from the atmosphere.",
+  "meaningVi": "phát thải ròng bằng không",
+  "existingExample": "Many countries have pledged to reach net zero by 2050.",
+  "mustContainOneOf": [
+   "net zero",
+   "net-zero"
+  ]
+ },
+ {
+  "id": "vocab:decarbonise",
+  "headword": "decarbonise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "to reduce the carbon emissions of an activity or sector.",
+  "meaningVi": "khử carbon",
+  "existingExample": "Electric trains help decarbonise transport.",
+  "mustContainOneOf": [
+   "decarbonise",
+   "decarbonize",
+   "decarbonises",
+   "decarbonised",
+   "decarbonising",
+   "decarbonized"
+  ]
+ },
+ {
+  "id": "vocab:sequester",
+  "headword": "sequester",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "to capture and store carbon so it does not enter the atmosphere.",
+  "meaningVi": "hấp thụ và lưu giữ (carbon)",
+  "existingExample": "Peatlands sequester large amounts of carbon.",
+  "mustContainOneOf": [
+   "sequester",
+   "sequesters",
+   "sequestered",
+   "sequestering"
+  ]
+ },
+ {
+  "id": "vocab:ecological_footprint",
+  "headword": "ecological footprint",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the impact of a person or community on the environment.",
+  "meaningVi": "dấu chân sinh thái",
+  "existingExample": "Eating less meat can reduce your ecological footprint.",
+  "mustContainOneOf": [
+   "ecological footprint",
+   "ecological-footprint"
+  ]
+ },
+ {
+  "id": "vocab:overexploitation",
+  "headword": "overexploitation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "using natural resources faster than they can recover.",
+  "meaningVi": "sự khai thác quá mức",
+  "existingExample": "Overexploitation has driven some fisheries to collapse.",
+  "mustContainOneOf": [
+   "overexploitation",
+   "overexploitations"
+  ]
+ },
+ {
+  "id": "vocab:overfishing",
+  "headword": "overfishing",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "catching so many fish that populations cannot recover.",
+  "meaningVi": "đánh bắt quá mức",
+  "existingExample": "Overfishing threatens the livelihoods of coastal communities.",
+  "mustContainOneOf": [
+   "overfishing",
+   "overfishings"
+  ]
+ },
+ {
+  "id": "vocab:poaching",
+  "headword": "poaching",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "illegally hunting or catching animals.",
+  "meaningVi": "nạn săn trộm",
+  "existingExample": "Rhino poaching is driven by demand for horn.",
+  "mustContainOneOf": [
+   "poaching",
+   "poachings"
+  ]
+ },
+ {
+  "id": "vocab:extinction",
+  "headword": "extinction",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "the death of an entire species.",
+  "meaningVi": "sự tuyệt chủng",
+  "existingExample": "Many amphibians are on the brink of extinction.",
+  "mustContainOneOf": [
+   "extinction",
+   "extinctions"
+  ]
+ },
+ {
+  "id": "vocab:wildlife_corridor",
+  "headword": "wildlife corridor",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "a strip of habitat connecting separate natural areas.",
+  "meaningVi": "hành lang động vật hoang dã",
+  "existingExample": "Wildlife corridors allow animals to move safely between forests.",
+  "mustContainOneOf": [
+   "wildlife corridors",
+   "wildlife corridor",
+   "wildlife-corridor"
+  ]
+ },
+ {
+  "id": "vocab:reforestation",
+  "headword": "reforestation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "replanting trees where forest has been lost.",
+  "meaningVi": "tái trồng rừng",
+  "existingExample": "Reforestation can restore damaged river catchments.",
+  "mustContainOneOf": [
+   "reforestation",
+   "reforestations"
+  ]
+ },
+ {
+  "id": "vocab:desertification",
+  "headword": "desertification",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the process by which fertile land becomes desert.",
+  "meaningVi": "sa mạc hóa",
+  "existingExample": "Overgrazing accelerates desertification.",
+  "mustContainOneOf": [
+   "desertification",
+   "desertifications"
+  ]
+ },
+ {
+  "id": "vocab:soil_erosion",
+  "headword": "soil erosion",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the washing or blowing away of the top layer of soil.",
+  "meaningVi": "xói mòn đất",
+  "existingExample": "Tree roots help prevent soil erosion.",
+  "mustContainOneOf": [
+   "soil erosion",
+   "soil-erosion"
+  ]
+ },
+ {
+  "id": "vocab:water_scarcity",
+  "headword": "water scarcity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a lack of sufficient clean water.",
+  "meaningVi": "khan hiếm nước",
+  "existingExample": "Population growth worsens water scarcity in dry regions.",
+  "mustContainOneOf": [
+   "water scarcity",
+   "water-scarcity"
+  ]
+ },
+ {
+  "id": "vocab:sea_level_rise",
+  "headword": "sea-level rise",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the increase in the average level of the oceans.",
+  "meaningVi": "nước biển dâng",
+  "existingExample": "Low-lying deltas are threatened by sea-level rise.",
+  "mustContainOneOf": [
+   "sea-level rise",
+   "sea-level rize",
+   "sea-level-rise",
+   "sea level rise",
+   "sea-level-rize",
+   "sea level rize"
+  ]
+ },
+ {
+  "id": "vocab:heatwave",
+  "headword": "heatwave",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a period of unusually hot weather.",
+  "meaningVi": "đợt nắng nóng",
+  "existingExample": "Prolonged heatwaves put elderly people at risk.",
+  "mustContainOneOf": [
+   "heatwaves",
+   "heatwave"
+  ]
+ },
+ {
+  "id": "vocab:flash_flood",
+  "headword": "flash flood",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a sudden, severe flood.",
+  "meaningVi": "lũ quét",
+  "existingExample": "Heavy rain triggered flash floods in the mountains.",
+  "mustContainOneOf": [
+   "flash floods",
+   "flash flood",
+   "flash-flood"
+  ]
+ },
+ {
+  "id": "vocab:resilience",
+  "headword": "resilience",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "the ability to recover quickly from difficulties or damage.",
+  "meaningVi": "khả năng chống chịu, phục hồi",
+  "existingExample": "Mangroves increase the resilience of coastlines to storms.",
+  "mustContainOneOf": [
+   "resilience",
+   "resiliences"
+  ]
+ },
+ {
+  "id": "vocab:adaptation",
+  "headword": "adaptation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "changes made to cope with new conditions.",
+  "meaningVi": "sự thích ứng",
+  "existingExample": "Sea walls are one form of climate adaptation.",
+  "mustContainOneOf": [
+   "adaptation",
+   "adaptations"
+  ]
+ },
+ {
+  "id": "vocab:contaminate",
+  "headword": "contaminate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "to make something impure by adding a harmful substance.",
+  "meaningVi": "làm nhiễm bẩn",
+  "existingExample": "Chemicals from farms can contaminate drinking water.",
+  "mustContainOneOf": [
+   "contaminate",
+   "contaminates",
+   "contaminated",
+   "contaminating"
+  ]
+ },
+ {
+  "id": "vocab:toxic",
+  "headword": "toxic",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "containing poisonous substances capable of causing serious harm or death.",
+  "meaningVi": "độc hại",
+  "existingExample": "Illegal dumping of toxic waste harms local communities.",
+  "mustContainOneOf": [
+   "toxic"
+  ]
+ },
+ {
+  "id": "vocab:smog",
+  "headword": "smog",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "air pollution mixed with fog.",
+  "meaningVi": "khói mù ô nhiễm",
+  "existingExample": "Thick smog forced schools in the capital to close.",
+  "mustContainOneOf": [
+   "smog",
+   "smogs"
+  ]
+ },
+ {
+  "id": "vocab:particulate_matter",
+  "headword": "particulate matter",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "tiny particles in the air that damage health.",
+  "meaningVi": "bụi mịn",
+  "existingExample": "High levels of particulate matter damage the lungs.",
+  "mustContainOneOf": [
+   "particulate matter",
+   "particulate-matter"
+  ]
+ },
+ {
+  "id": "vocab:acid_rain",
+  "headword": "acid rain",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "rain made acidic by air pollution.",
+  "meaningVi": "mưa axit",
+  "existingExample": "Acid rain damaged forests across Europe in the 1980s.",
+  "mustContainOneOf": [
+   "acid rain",
+   "acid-rain"
+  ]
+ },
+ {
+  "id": "vocab:ozone_layer",
+  "headword": "ozone layer",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a layer of the atmosphere that blocks harmful ultraviolet rays.",
+  "meaningVi": "tầng ôzôn",
+  "existingExample": "The ban on CFCs has helped the ozone layer recover.",
+  "mustContainOneOf": [
+   "ozone layer",
+   "ozone-layer"
+  ]
+ },
+ {
+  "id": "vocab:biodegradable",
+  "headword": "biodegradable",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "able to break down naturally.",
+  "meaningVi": "phân hủy sinh học được",
+  "existingExample": "Biodegradable packaging reduces plastic pollution.",
+  "mustContainOneOf": [
+   "biodegradable"
+  ]
+ },
+ {
+  "id": "vocab:non_renewable",
+  "headword": "non-renewable",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "that cannot be replaced once used up.",
+  "meaningVi": "không tái tạo được",
+  "existingExample": "Oil and coal are non-renewable resources.",
+  "mustContainOneOf": [
+   "non-renewable",
+   "non renewable"
+  ]
+ },
+ {
+  "id": "vocab:hydroelectric",
+  "headword": "hydroelectric",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "producing electricity from moving water.",
+  "meaningVi": "(thuộc) thủy điện",
+  "existingExample": "Hydroelectric dams can displace local communities.",
+  "mustContainOneOf": [
+   "hydroelectric"
+  ]
+ },
+ {
+  "id": "vocab:nuclear_power",
+  "headword": "nuclear power",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "electricity produced by nuclear reactions.",
+  "meaningVi": "điện hạt nhân",
+  "existingExample": "Nuclear power produces little carbon but creates radioactive waste.",
+  "mustContainOneOf": [
+   "nuclear power",
+   "nuclear-power"
+  ]
+ },
+ {
+  "id": "vocab:energy_efficiency",
+  "headword": "energy efficiency",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment",
+   "energy"
+  ],
+  "definitionEn": "using less energy to perform the same task.",
+  "meaningVi": "hiệu quả năng lượng",
+  "existingExample": "Better insulation improves the energy efficiency of homes.",
+  "mustContainOneOf": [
+   "energy efficiency",
+   "energy-efficiency"
+  ]
+ },
+ {
+  "id": "vocab:green_belt",
+  "headword": "green belt",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "protected land around a city where building is restricted.",
+  "meaningVi": "vành đai xanh",
+  "existingExample": "Building on the green belt is highly controversial.",
+  "mustContainOneOf": [
+   "green belt",
+   "green-belt"
+  ]
+ },
+ {
+  "id": "vocab:wetlands",
+  "headword": "wetlands",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "areas of land covered by shallow water.",
+  "meaningVi": "vùng đất ngập nước",
+  "existingExample": "Wetlands act as natural flood defences.",
+  "mustContainOneOf": [
+   "wetlands",
+   "wetlandses"
+  ]
+ },
+ {
+  "id": "vocab:mangrove",
+  "headword": "mangrove",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "a tree that grows in coastal salt water.",
+  "meaningVi": "cây/rừng ngập mặn",
+  "existingExample": "Mangrove forests protect coastlines from storms.",
+  "mustContainOneOf": [
+   "mangrove",
+   "mangroves"
+  ]
+ }
+]

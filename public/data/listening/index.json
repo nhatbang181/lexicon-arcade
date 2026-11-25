@@ -35,7 +35,7 @@
     ],
     "channel": "phone",
     "audioPath": "audio/listening/p1_002.mp3",
-    "durationSec": 284,
+    "durationSec": 256.0,
     "questionCount": 10,
     "questionTypes": [
       "form_completion",
@@ -148,7 +148,7 @@
     ],
     "channel": "phone",
     "audioPath": "audio/listening/p1_res_001.mp3",
-    "durationSec": 286,
+    "durationSec": 249.4,
     "questionCount": 10,
     "questionTypes": [
       "form_completion",
@@ -171,7 +171,7 @@
     ],
     "channel": "phone",
     "audioPath": "audio/listening/p1_res_002.mp3",
-    "durationSec": 304,
+    "durationSec": 248.1,
     "questionCount": 10,
     "questionTypes": [
       "form_completion",
@@ -193,7 +193,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_001.mp3",
-    "durationSec": 233.9,
+    "durationSec": 248.9,
     "questionCount": 10,
     "questionTypes": [
       "mcq_single",
@@ -215,7 +215,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_002.mp3",
-    "durationSec": 295,
+    "durationSec": 279.9,
     "questionCount": 10,
     "questionTypes": [
       "map_labelling",
@@ -237,7 +237,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_003.mp3",
-    "durationSec": 290,
+    "durationSec": 257.8,
     "questionCount": 10,
     "questionTypes": [
       "mcq_single",
@@ -259,7 +259,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_004.mp3",
-    "durationSec": 295,
+    "durationSec": 254.7,
     "questionCount": 10,
     "questionTypes": [
       "mcq_single",
@@ -281,7 +281,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_005.mp3",
-    "durationSec": 310,
+    "durationSec": 248.3,
     "questionCount": 10,
     "questionTypes": [
       "mcq_multi",
@@ -303,7 +303,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_006.mp3",
-    "durationSec": 300,
+    "durationSec": 248.7,
     "questionCount": 10,
     "questionTypes": [
       "matching",
@@ -325,7 +325,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_res_001.mp3",
-    "durationSec": 290,
+    "durationSec": 277.8,
     "questionCount": 10,
     "questionTypes": [
       "mcq_single",
@@ -347,7 +347,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p2_res_002.mp3",
-    "durationSec": 295,
+    "durationSec": 253.1,
     "questionCount": 10,
     "questionTypes": [
       "mcq_single",
@@ -393,7 +393,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p3_002.mp3",
-    "durationSec": 320,
+    "durationSec": 299.5,
     "questionCount": 10,
     "questionTypes": [
       "mcq_single",
@@ -417,7 +417,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p3_003.mp3",
-    "durationSec": 315,
+    "durationSec": 282.1,
     "questionCount": 10,
     "questionTypes": [
       "mcq_single",
@@ -706,7 +706,7 @@
     ],
     "channel": "normal",
     "audioPath": "audio/listening/p4_res_002.mp3",
-    "durationSec": 365,
+    "durationSec": 308.0,
     "questionCount": 10,
     "questionTypes": [
       "note_completion",

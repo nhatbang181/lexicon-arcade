@@ -1,0 +1,1849 @@
+[
+ {
+  "id": "vocab:deficiency",
+  "headword": "deficiency",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a lack of something that is needed.",
+  "meaningVi": "sự thiếu hụt",
+  "existingExample": "Vitamin D deficiency is common in winter.",
+  "mustContainOneOf": [
+   "deficiency",
+   "deficiencies"
+  ]
+ },
+ {
+  "id": "vocab:binge_drinking",
+  "headword": "binge drinking",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "drinking a large amount of alcohol in a short time.",
+  "meaningVi": "uống rượu quá độ",
+  "existingExample": "Binge drinking is a serious problem among some students.",
+  "mustContainOneOf": [
+   "binge drinking",
+   "binge-drinking"
+  ]
+ },
+ {
+  "id": "vocab:fitness_tracker",
+  "headword": "fitness tracker",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a device that records steps and heart rate.",
+  "meaningVi": "thiết bị theo dõi vận động",
+  "existingExample": "Fitness trackers motivate some people to walk more.",
+  "mustContainOneOf": [
+   "fitness tracker",
+   "fitness-tracker"
+  ]
+ },
+ {
+  "id": "vocab:public_health",
+  "headword": "public health",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the health of the population as a whole.",
+  "meaningVi": "y tế công cộng",
+  "existingExample": "Public health campaigns have reduced smoking rates.",
+  "mustContainOneOf": [
+   "public health",
+   "public-health"
+  ]
+ },
+ {
+  "id": "vocab:health_conscious",
+  "headword": "health-conscious",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "careful about health.",
+  "meaningVi": "quan tâm đến sức khỏe",
+  "existingExample": "Health-conscious consumers are buying more plant-based food.",
+  "mustContainOneOf": [
+   "health-conscious",
+   "health conscious"
+  ]
+ },
+ {
+  "id": "vocab:plant_based",
+  "headword": "plant-based",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "made from or consisting of plants rather than animal products.",
+  "meaningVi": "(chế độ ăn) từ thực vật",
+  "existingExample": "A plant-based diet can lower cholesterol.",
+  "mustContainOneOf": [
+   "plant-based",
+   "plant based"
+  ]
+ },
+ {
+  "id": "vocab:cholesterol",
+  "headword": "cholesterol",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a fatty substance in the blood.",
+  "meaningVi": "mỡ máu (cholesterol)",
+  "existingExample": "High cholesterol increases the risk of heart attacks.",
+  "mustContainOneOf": [
+   "cholesterol",
+   "cholesterols"
+  ]
+ },
+ {
+  "id": "vocab:passive_smoking",
+  "headword": "passive smoking",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "breathing in other people's cigarette smoke.",
+  "meaningVi": "hút thuốc thụ động",
+  "existingExample": "Passive smoking is particularly harmful to children.",
+  "mustContainOneOf": [
+   "passive smoking",
+   "passive-smoking"
+  ]
+ },
+ {
+  "id": "vocab:sugar_tax",
+  "headword": "sugar tax",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "a tax on products containing a lot of sugar.",
+  "meaningVi": "thuế đường",
+  "existingExample": "A sugar tax encouraged manufacturers to reduce sugar in drinks.",
+  "mustContainOneOf": [
+   "sugar tax",
+   "sugar-tax"
+  ]
+ },
+ {
+  "id": "vocab:nanny_state",
+  "headword": "nanny state",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "a government that interferes too much in people's personal choices.",
+  "meaningVi": "nhà nước bảo mẫu (can thiệp quá mức)",
+  "existingExample": "Critics called the sugar tax an example of the nanny state.",
+  "mustContainOneOf": [
+   "nanny state",
+   "nanny-state"
+  ]
+ },
+ {
+  "id": "vocab:personal_responsibility",
+  "headword": "personal responsibility",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "individuals being responsible for their own choices.",
+  "meaningVi": "trách nhiệm cá nhân",
+  "existingExample": "Some argue that health is largely a matter of personal responsibility.",
+  "mustContainOneOf": [
+   "personal responsibility",
+   "personal-responsibility"
+  ]
+ },
+ {
+  "id": "vocab:telemedicine",
+  "headword": "telemedicine",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "providing medical care remotely by video or phone.",
+  "meaningVi": "y tế từ xa",
+  "existingExample": "Telemedicine allows rural patients to consult specialists.",
+  "mustContainOneOf": [
+   "telemedicine",
+   "telemedicines"
+  ]
+ },
+ {
+  "id": "vocab:frontline_workers",
+  "headword": "frontline workers",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "workers in direct contact with the public, such as nurses.",
+  "meaningVi": "nhân viên tuyến đầu",
+  "existingExample": "Frontline workers faced enormous pressure during the pandemic.",
+  "mustContainOneOf": [
+   "frontline workers",
+   "frontline-workers"
+  ]
+ },
+ {
+  "id": "vocab:mortality_rate",
+  "headword": "mortality rate",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the number of deaths in a group over a period.",
+  "meaningVi": "tỷ lệ tử vong",
+  "existingExample": "Infant mortality rates have fallen sharply worldwide.",
+  "mustContainOneOf": [
+   "mortality rate",
+   "mortality-rate"
+  ]
+ },
+ {
+  "id": "vocab:epidemiology",
+  "headword": "epidemiology",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the study of how diseases spread in populations.",
+  "meaningVi": "dịch tễ học",
+  "existingExample": "Epidemiology helps governments predict outbreaks.",
+  "mustContainOneOf": [
+   "epidemiology",
+   "epidemiologies"
+  ]
+ },
+ {
+  "id": "vocab:preventable_disease",
+  "headword": "preventable disease",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "an illness that could be avoided through vaccination or lifestyle.",
+  "meaningVi": "bệnh có thể phòng ngừa",
+  "existingExample": "Millions of children still die from preventable diseases.",
+  "mustContainOneOf": [
+   "preventable diseases",
+   "preventable disease",
+   "preventable-disease"
+  ]
+ },
+ {
+  "id": "vocab:health_outcomes",
+  "headword": "health outcomes",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "changes in health resulting from care or circumstances.",
+  "meaningVi": "kết quả sức khỏe",
+  "existingExample": "Poverty is linked to poorer health outcomes.",
+  "mustContainOneOf": [
+   "health outcomes",
+   "health-outcomes"
+  ]
+ },
+ {
+  "id": "vocab:sedentary_behaviour",
+  "headword": "sedentary behaviour",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "activities involving sitting for long periods.",
+  "meaningVi": "hành vi ít vận động",
+  "existingExample": "Standing desks can reduce sedentary behaviour at work.",
+  "mustContainOneOf": [
+   "sedentary behaviour",
+   "sedentary behavior",
+   "sedentary-behaviour",
+   "sedentary-behavior"
+  ]
+ },
+ {
+  "id": "vocab:burn_calories",
+  "headword": "burn calories",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "to use up energy through physical activity.",
+  "meaningVi": "đốt cháy calo",
+  "existingExample": "Regular brisk walking and cycling help people burn calories more effectively than relying on dietary restriction alone.",
+  "mustContainOneOf": [
+   "burn calories",
+   "burn-calories"
+  ]
+ },
+ {
+  "id": "vocab:tobacco",
+  "headword": "tobacco",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "dried leaves smoked in cigarettes.",
+  "meaningVi": "thuốc lá",
+  "existingExample": "Many countries have banned tobacco advertising.",
+  "mustContainOneOf": [
+   "tobacco",
+   "tobaccos"
+  ]
+ },
+ {
+  "id": "vocab:outpatient",
+  "headword": "outpatient",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a patient who visits hospital without staying overnight.",
+  "meaningVi": "bệnh nhân ngoại trú",
+  "existingExample": "Minor surgery is often done on an outpatient basis.",
+  "mustContainOneOf": [
+   "outpatient",
+   "outpatients"
+  ]
+ },
+ {
+  "id": "vocab:incidence",
+  "headword": "incidence",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the number of new cases of a disease in a population over a period.",
+  "meaningVi": "tỷ lệ mắc (ca mới)",
+  "existingExample": "The incidence of diabetes has risen in many developing countries.",
+  "mustContainOneOf": [
+   "incidence",
+   "incidences"
+  ]
+ },
+ {
+  "id": "vocab:association",
+  "headword": "association",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a statistical link between two things that does not prove one causes the other.",
+  "meaningVi": "mối liên hệ (thống kê)",
+  "existingExample": "Studies show an association between poor sleep and weight gain.",
+  "mustContainOneOf": [
+   "association",
+   "associations"
+  ]
+ },
+ {
+  "id": "vocab:inconsistent",
+  "headword": "inconsistent",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "not agreeing with each other; changing in a way that is not reliable.",
+  "meaningVi": "không nhất quán",
+  "existingExample": "Earlier studies produced inconsistent results.",
+  "mustContainOneOf": [
+   "inconsistent"
+  ]
+ },
+ {
+  "id": "vocab:mask",
+  "headword": "mask",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "to hide something so that it cannot be seen or noticed.",
+  "meaningVi": "che lấp, che giấu",
+  "existingExample": "Average figures can mask large differences between regions.",
+  "mustContainOneOf": [
+   "mask",
+   "masks",
+   "masked",
+   "masking"
+  ]
+ },
+ {
+  "id": "vocab:subset",
+  "headword": "subset",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "a smaller group taken from a larger group.",
+  "meaningVi": "nhóm con",
+  "existingExample": "A subset of participants was asked to keep a food diary.",
+  "mustContainOneOf": [
+   "subset",
+   "subsets"
+  ]
+ },
+ {
+  "id": "vocab:account_for",
+  "headword": "account for",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 2,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "to consider a factor when analysing something; to form a particular amount of.",
+  "meaningVi": "tính đến (yếu tố); chiếm (tỷ lệ)",
+  "existingExample": "Statistical models must account for confounding variables such as age, income, and lifestyle.",
+  "mustContainOneOf": [
+   "account for",
+   "account-for"
+  ]
+ },
+ {
+  "id": "vocab:cause_and_effect",
+  "headword": "cause and effect",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a relationship in which one thing directly makes another happen.",
+  "meaningVi": "quan hệ nhân quả",
+  "existingExample": "Observational studies cannot prove cause and effect.",
+  "mustContainOneOf": [
+   "cause and effect",
+   "cause-and-effect"
+  ]
+ },
+ {
+  "id": "vocab:exercise_caution",
+  "headword": "exercise caution",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "to be careful when making judgements or decisions.",
+  "meaningVi": "thận trọng",
+  "existingExample": "Readers should exercise caution when interpreting headlines about diet.",
+  "mustContainOneOf": [
+   "exercise caution",
+   "exercise-caution"
+  ]
+ },
+ {
+  "id": "vocab:capture",
+  "headword": "capture",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "to record or measure something accurately.",
+  "meaningVi": "ghi nhận, đo được",
+  "existingExample": "A single survey cannot capture the complexity of people's diets.",
+  "mustContainOneOf": [
+   "capture",
+   "captures",
+   "captured",
+   "capturing"
+  ]
+ },
+ {
+  "id": "vocab:reconstituted",
+  "headword": "reconstituted",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "made by putting processed ingredients back together into a new form.",
+  "meaningVi": "được tái chế biến, hoàn nguyên",
+  "existingExample": "Some cheap sausages contain reconstituted meat.",
+  "mustContainOneOf": [
+   "reconstituted"
+  ]
+ },
+ {
+  "id": "vocab:morbidity",
+  "headword": "morbidity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The condition of suffering from a disease or the rate of illness within a defined population.",
+  "meaningVi": "tỷ lệ mắc bệnh hoặc gánh nặng bệnh tật trong cộng đồng",
+  "existingExample": "Improving urban air quality substantially lowers respiratory morbidity among both primary schoolchildren and elderly residents.",
+  "mustContainOneOf": [
+   "morbidity",
+   "morbidities"
+  ]
+ },
+ {
+  "id": "vocab:comorbidity",
+  "headword": "comorbidity",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The simultaneous presence of two or more chronic medical conditions in the same patient.",
+  "meaningVi": "bệnh đồng mắc",
+  "existingExample": "Hospital planners must account for rising comorbidity as ageing populations increasingly manage diabetes alongside heart disease.",
+  "mustContainOneOf": [
+   "comorbidity",
+   "comorbidities"
+  ]
+ },
+ {
+  "id": "vocab:aetiology",
+  "headword": "aetiology",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The medical investigation or set of biological and environmental causes underlying a specific disease.",
+  "meaningVi": "căn nguyên học, tập hợp nguyên nhân gây ra bệnh lý",
+  "existingExample": "Uncovering the multifactorial aetiology of autoimmune disorders has shifted clinical research toward gut and environmental triggers.",
+  "mustContainOneOf": [
+   "aetiology",
+   "aetiologies"
+  ]
+ },
+ {
+  "id": "vocab:pathogen",
+  "headword": "pathogen",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "A biological agent such as a bacterium, virus, or fungus capable of causing infectious disease in a host.",
+  "meaningVi": "tác nhân vi sinh gây bệnh (virus, vi khuẩn, ký sinh trùng)",
+  "existingExample": "Rapid genomic sequencing allows public laboratories to identify an emerging airborne pathogen within days of detection.",
+  "mustContainOneOf": [
+   "pathogen",
+   "pathogens"
+  ]
+ },
+ {
+  "id": "vocab:prophylaxis",
+  "headword": "prophylaxis",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Medical treatment or preventive intervention administered proactively to stop a disease from developing or spreading.",
+  "meaningVi": "biện pháp dự phòng y khoa nhằm ngăn chặn bệnh khởi phát",
+  "existingExample": "Targeted dental prophylaxis in public schools has dramatically cut childhood cavity rates at a fraction of surgical costs.",
+  "mustContainOneOf": [
+   "prophylaxis",
+   "prophylaxises"
+  ]
+ },
+ {
+  "id": "vocab:palliative_care",
+  "headword": "palliative care",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Specialised medical and emotional support focused on relieving pain and distress in patients with serious or incurable illnesses.",
+  "meaningVi": "chăm sóc giảm nhẹ nhằm nâng cao chất lượng sống",
+  "existingExample": "Expanding home-based palliative care enables terminally ill patients to preserve dignity and comfort surrounded by family.",
+  "mustContainOneOf": [
+   "palliative care",
+   "palliative-care"
+  ]
+ },
+ {
+  "id": "vocab:triage",
+  "headword": "triage",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The rapid clinical assessment of patients to determine the urgency of treatment when healthcare resources are stretched.",
+  "meaningVi": "sàng lọc và phân loại mức độ ưu tiên cấp cứu",
+  "existingExample": "Well-trained nursing staff oversee emergency-room triage so life-threatening cardiac cases receive immediate intervention.",
+  "mustContainOneOf": [
+   "triage",
+   "triages"
+  ]
+ },
+ {
+  "id": "vocab:prognosis",
+  "headword": "prognosis",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "A clinician's informed forecast of the likely course, duration, and outcome of a medical condition.",
+  "meaningVi": "tiên lượng y khoa về diễn tiến và khả năng hồi phục",
+  "existingExample": "Routine national screening programmes have transformed the long-term prognosis for several formerly fatal cancers.",
+  "mustContainOneOf": [
+   "prognosis",
+   "prognosises"
+  ]
+ },
+ {
+  "id": "vocab:remission",
+  "headword": "remission",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "A temporary or permanent reduction or disappearance of the signs and symptoms of a serious disease.",
+  "meaningVi": "giai đoạn bệnh thuyên giảm",
+  "existingExample": "Breakthrough targeted therapies have enabled thousands of leukaemia patients to achieve sustained clinical remission.",
+  "mustContainOneOf": [
+   "remission",
+   "remissions"
+  ]
+ },
+ {
+  "id": "vocab:convalescence",
+  "headword": "convalescence",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The gradual period of rest and biological recuperation following serious illness, injury, or major surgery.",
+  "meaningVi": "giai đoạn dưỡng bệnh và phục hồi thể lực sau phẫu thuật",
+  "existingExample": "Statutory paid sick leave ensures working-class patients can complete proper convalescence instead of returning prematurely to strain.",
+  "mustContainOneOf": [
+   "convalescence",
+   "convalescences"
+  ]
+ },
+ {
+  "id": "vocab:asymptomatic",
+  "headword": "asymptomatic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Carrying a disease or infection while showing no noticeable physical signs or clinical symptoms.",
+  "meaningVi": "không có triệu chứng dù đã mang mầm bệnh",
+  "existingExample": "Widespread asymptomatic transmission complicates outbreak containment because infected travellers remain unaware they are contagious.",
+  "mustContainOneOf": [
+   "asymptomatic"
+  ]
+ },
+ {
+  "id": "vocab:zoonotic",
+  "headword": "zoonotic",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Relating to infectious diseases that jump from vertebrate animals to human populations.",
+  "meaningVi": "lây truyền tự nhiên từ động vật sang con người",
+  "existingExample": "Encroachment into tropical wildlife habitats elevates contact with wild reservoirs and heightens zoonotic spillover risks.",
+  "mustContainOneOf": [
+   "zoonotic"
+  ]
+ },
+ {
+  "id": "vocab:iatrogenic",
+  "headword": "iatrogenic",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Unintentionally induced in a patient as an adverse consequence of medical examination, medication, or surgical intervention.",
+  "meaningVi": "phát sinh ngoài ý muốn do quá trình điều trị y khoa",
+  "existingExample": "Electronic prescribing audits have sharply curtailed iatrogenic drug interactions in overburdened regional clinics.",
+  "mustContainOneOf": [
+   "iatrogenic"
+  ]
+ },
+ {
+  "id": "vocab:nosocomial",
+  "headword": "nosocomial",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Originating or acquired inside a hospital or clinical care facility during medical admission.",
+  "meaningVi": "nhiễm khuẩn bệnh viện",
+  "existingExample": "Rigorous ward ventilation and strict hand-hygiene protocols are essential for curbing drug-resistant nosocomial infections.",
+  "mustContainOneOf": [
+   "nosocomial"
+  ]
+ },
+ {
+  "id": "vocab:psychosomatic",
+  "headword": "psychosomatic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "Involving physical illness or bodily symptoms significantly caused or aggravated by mental stress or emotional factors.",
+  "meaningVi": "thuộc tâm thể",
+  "existingExample": "Primary-care physicians increasingly recognise how chronic workplace anxiety manifests through debilitating psychosomatic migraines.",
+  "mustContainOneOf": [
+   "psychosomatic"
+  ]
+ },
+ {
+  "id": "vocab:circadian_rhythm",
+  "headword": "circadian rhythm",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The internal twenty-four-hour biological clock regulating sleep-wake cycles, hormone secretion, and metabolic processes.",
+  "meaningVi": "nhịp sinh học ngày đêm điều phối giấc ngủ và nội tiết",
+  "existingExample": "Prolonged nocturnal blue-light exposure disrupts the human circadian rhythm and elevates long-term cardiometabolic risk.",
+  "mustContainOneOf": [
+   "circadian rhythm",
+   "circadian-rhythm"
+  ]
+ },
+ {
+  "id": "vocab:microbiome",
+  "headword": "microbiome",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "The complex ecological community of trillions of beneficial microorganisms inhabiting the human digestive tract and skin.",
+  "meaningVi": "hệ vi sinh vật cộng sinh trong đường ruột và cơ thể",
+  "existingExample": "Nutritional scientists increasingly link a diverse fibre-rich diet to a resilient gut microbiome that bolsters immune regulation.",
+  "mustContainOneOf": [
+   "microbiome",
+   "microbiomes"
+  ]
+ },
+ {
+  "id": "vocab:epigenetics",
+  "headword": "epigenetics",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health",
+   "food",
+   "psychology"
+  ],
+  "definitionEn": "The study of how environmental exposures and lifestyle choices alter gene activity without changing the underlying DNA sequence.",
+  "meaningVi": "di truyền học biểu sinh",
+  "existingExample": "Findings from epigenetics suggest that early-childhood nutrition and maternal stress leave lasting biochemical marks on adult health.",
+  "mustContainOneOf": [
+   "epigenetics",
+   "epigeneticses"
+  ]
+ },
+ {
+  "id": "vocab:biomarker",
+  "headword": "biomarker",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "A measurable biological molecule, cellular trait, or physiological indicator used to detect disease or track treatment response.",
+  "meaningVi": "dấu ấn sinh học chỉ thị tình trạng sức khỏe/bệnh lý",
+  "existingExample": "Identifying a reliable blood biomarker for early Alzheimer's could allow clinicians to intervene years before memory loss begins.",
+  "mustContainOneOf": [
+   "biomarker",
+   "biomarkers"
+  ]
+ },
+ {
+  "id": "vocab:precision_medicine",
+  "headword": "precision medicine",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "A medical model that customises disease prevention and treatment to an individual's genetic profile, environment, and lifestyle.",
+  "meaningVi": "y học chính xác cá thể hóa theo đặc điểm gen",
+  "existingExample": "Oncologists harness precision medicine to match tumour mutations with targeted drugs, sparing patients ineffective chemotherapy.",
+  "mustContainOneOf": [
+   "precision medicine",
+   "precision-medicine"
+  ]
+ },
+ {
+  "id": "vocab:immunotherapy",
+  "headword": "immunotherapy",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Medical treatment that stimulates, restores, or redirects the body's own immune defences to combat cancer or allergies.",
+  "meaningVi": "liệu pháp miễn dịch chống ung thư và bệnh lý",
+  "existingExample": "Modern checkpoint-inhibitor immunotherapy has extended survival rates for advanced melanoma patients who previously had few options.",
+  "mustContainOneOf": [
+   "immunotherapy",
+   "immunotherapies"
+  ]
+ },
+ {
+  "id": "vocab:pharmacovigilance",
+  "headword": "pharmacovigilance",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The ongoing scientific monitoring, detection, and prevention of adverse drug reactions after medicines enter clinical markets.",
+  "meaningVi": "cảnh giác dược",
+  "existingExample": "Strong national pharmacovigilance registries ensure rare pharmaceutical side effects are flagged swiftly and transparent warnings issued.",
+  "mustContainOneOf": [
+   "pharmacovigilance",
+   "pharmacovigilances"
+  ]
+ },
+ {
+  "id": "vocab:antimicrobial_stewardship",
+  "headword": "antimicrobial stewardship",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Coordinated clinical initiatives to optimise antibiotic prescribing so therapeutic effectiveness is preserved and resistance minimised.",
+  "meaningVi": "quản lý sử dụng kháng sinh hợp lý và có trách nhiệm",
+  "existingExample": "Hospitals implementing strict antimicrobial stewardship have reduced unnecessary broad-spectrum prescriptions without harming patient recovery.",
+  "mustContainOneOf": [
+   "antimicrobial stewardship",
+   "antimicrobial-stewardship"
+  ]
+ },
+ {
+  "id": "vocab:vaccine_hesitancy",
+  "headword": "vaccine hesitancy",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Delay in acceptance or refusal of recommended immunisations despite the availability of safe, accessible vaccination services.",
+  "meaningVi": "tâm lý chần chừ hoặc từ chối tiêm chủng vắc-xin",
+  "existingExample": "Combating vaccine hesitancy demands empathetic dialogue with trusted community doctors rather than dismissive government mandates.",
+  "mustContainOneOf": [
+   "vaccine hesitancy",
+   "vaccine-hesitancy"
+  ]
+ },
+ {
+  "id": "vocab:health_literacy",
+  "headword": "health literacy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "An individual's capacity to obtain, comprehend, and act upon reliable medical guidance to make sound health decisions.",
+  "meaningVi": "năng lực tiếp nhận",
+  "existingExample": "Low health literacy frequently leads elderly patients to misread dosage schedules, driving preventable emergency hospital readmissions.",
+  "mustContainOneOf": [
+   "health literacy",
+   "health-literacy"
+  ]
+ },
+ {
+  "id": "vocab:ultra_processed_food",
+  "headword": "ultra-processed food",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "food",
+   "psychology"
+  ],
+  "definitionEn": "Industrially formulated edible products made mostly from refined extracts, additives, and flavour enhancers with minimal whole ingredients.",
+  "meaningVi": "thực phẩm siêu chế biến công nghiệp giàu phụ gia",
+  "existingExample": "Longitudinal cohort studies associate high daily intake of ultra-processed food with elevated risks of obesity and depression.",
+  "mustContainOneOf": [
+   "ultra-processed food",
+   "ultra-processed-food",
+   "ultra processed food"
+  ]
+ },
+ {
+  "id": "vocab:glycaemic_index",
+  "headword": "glycaemic index",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "A numerical ranking indicating how rapidly a carbohydrate-containing food raises blood glucose levels after consumption.",
+  "meaningVi": "chỉ số đường huyết đo tốc độ tăng đường máu",
+  "existingExample": "Dietitians recommend choosing legumes and whole oats with a low glycaemic index to maintain steady daytime energy levels.",
+  "mustContainOneOf": [
+   "glycaemic index",
+   "glycaemic-index"
+  ]
+ },
+ {
+  "id": "vocab:metabolic_syndrome",
+  "headword": "metabolic syndrome",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "A cluster of co-occurring physiological risk factors—including abdominal obesity, raised blood pressure, and insulin resistance.",
+  "meaningVi": "hội chứng rối loạn chuyển hóa làm tăng nguy cơ tim mạch",
+  "existingExample": "Regular brisk walking and modest dietary fibre increases can reverse early metabolic syndrome before permanent arterial damage occurs.",
+  "mustContainOneOf": [
+   "metabolic syndrome",
+   "metabolic-syndrome"
+  ]
+ },
+ {
+  "id": "vocab:neurodegenerative",
+  "headword": "neurodegenerative",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "Characterised by the progressive structural breakdown and death of nerve cells in the brain or spinal cord.",
+  "meaningVi": "thoái hóa thần kinh tiến triển làm suy giảm tế bào",
+  "existingExample": "Rising global life expectancy has made funding therapies for neurodegenerative illnesses an urgent fiscal and humanitarian priority.",
+  "mustContainOneOf": [
+   "neurodegenerative"
+  ]
+ },
+ {
+  "id": "vocab:cognitive_decline",
+  "headword": "cognitive decline",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "A gradual deterioration in memory, reasoning speed, attention, or executive mental abilities, often linked to ageing.",
+  "meaningVi": "sự suy giảm dần chức năng nhận thức và trí nhớ",
+  "existingExample": "Sustained social engagement, bilingualism, and cardiovascular fitness are consistently associated with slower age-related cognitive decline.",
+  "mustContainOneOf": [
+   "cognitive decline",
+   "cognitive-decline"
+  ]
+ },
+ {
+  "id": "vocab:geriatric",
+  "headword": "geriatric",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Relating to medical care, clinical services, and health conditions specifically affecting older adults.",
+  "meaningVi": "thuộc lão khoa",
+  "existingExample": "Rapidly ageing East Asian societies face acute shortages of trained geriatric specialists and community rehabilitation nurses.",
+  "mustContainOneOf": [
+   "geriatric"
+  ]
+ },
+ {
+  "id": "vocab:paediatric",
+  "headword": "paediatric",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Relating to the specialised branch of medicine dedicated to infants, children, and adolescents.",
+  "meaningVi": "thuộc nhi khoa",
+  "existingExample": "Expanding rural paediatric clinics ensures developmental delays are identified and treated during the most responsive early years.",
+  "mustContainOneOf": [
+   "paediatric"
+  ]
+ },
+ {
+  "id": "vocab:epidemiological_surveillance",
+  "headword": "epidemiological surveillance",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "The systematic, continuous collection and analysis of population health data to detect outbreaks early and guide interventions.",
+  "meaningVi": "hệ thống giám sát dịch tễ học nhằm phát hiện sớm dịch",
+  "existingExample": "Wastewater testing has become an economical pillar of epidemiological surveillance for tracking seasonal respiratory surges.",
+  "mustContainOneOf": [
+   "epidemiological surveillance",
+   "epidemiological-surveillance"
+  ]
+ },
+ {
+  "id": "vocab:debilitating",
+  "headword": "debilitating",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Making a person physically or mentally extremely weak and severely impairing daily functioning.",
+  "meaningVi": "gây suy nhược nặng nề",
+  "existingExample": "Untreated chronic lower-back pain remains one of the most debilitating causes of lost productivity among working adults.",
+  "mustContainOneOf": [
+   "debilitating"
+  ]
+ },
+ {
+  "id": "vocab:metabolise",
+  "headword": "metabolise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "To process nutrients, toxins, or pharmaceutical compounds chemically inside living cells to produce energy or eliminate waste.",
+  "meaningVi": "chuyển hóa chất dinh dưỡng hoặc dược chất trong cơ thể",
+  "existingExample": "Genetic variations explain why different patients metabolise the exact same prescribed dose of blood thinners at markedly different speeds.",
+  "mustContainOneOf": [
+   "metabolise",
+   "metabolize",
+   "metabolises",
+   "metabolised",
+   "metabolising",
+   "metabolized"
+  ]
+ },
+ {
+  "id": "vocab:immunise",
+  "headword": "immunise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "To confer protective immunity against an infectious disease by administering a safe vaccine.",
+  "meaningVi": "tạo miễn dịch phòng bệnh qua tiêm chủng vắc-xin",
+  "existingExample": "Mobile rural clinics have enabled public health ministries to immunise millions of remote infants against measles and polio.",
+  "mustContainOneOf": [
+   "immunise",
+   "immunize",
+   "immunises",
+   "immunised",
+   "immunising",
+   "immunized"
+  ]
+ },
+ {
+  "id": "vocab:inoculate",
+  "headword": "inoculate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "To introduce an antigenic agent into a person or animal to stimulate protective antibodies against a targeted pathogen.",
+  "meaningVi": "chủng ngừa bằng cách đưa kháng nguyên an toàn vào cơ thể",
+  "existingExample": "Coordinated international funding made it possible to inoculate vulnerable healthcare staff swiftly during the winter flu peak.",
+  "mustContainOneOf": [
+   "inoculate",
+   "inoculates",
+   "inoculated",
+   "inoculating"
+  ]
+ },
+ {
+  "id": "vocab:unemployment_rate",
+  "headword": "unemployment rate",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "the percentage of people who want to work but have no job.",
+  "meaningVi": "tỷ lệ thất nghiệp",
+  "existingExample": "The unemployment rate among young graduates has risen sharply.",
+  "mustContainOneOf": [
+   "unemployment rate",
+   "unemployment-rate"
+  ]
+ },
+ {
+  "id": "vocab:job_security",
+  "headword": "job security",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "the likelihood that you will keep your job.",
+  "meaningVi": "sự ổn định công việc",
+  "existingExample": "Many young people value job security more than a high salary.",
+  "mustContainOneOf": [
+   "job security",
+   "job-security"
+  ]
+ },
+ {
+  "id": "vocab:work_life_balance",
+  "headword": "work-life balance",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the balance between time spent working and time for your personal life.",
+  "meaningVi": "cân bằng công việc và cuộc sống",
+  "existingExample": "Flexible hours help employees achieve a better work-life balance.",
+  "mustContainOneOf": [
+   "work-life balance",
+   "work-life-balance",
+   "work life balance"
+  ]
+ },
+ {
+  "id": "vocab:remuneration",
+  "headword": "remuneration",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "money paid for work or a service.",
+  "meaningVi": "thù lao",
+  "existingExample": "Nurses argue that their remuneration does not reflect their responsibilities.",
+  "mustContainOneOf": [
+   "remuneration",
+   "remunerations"
+  ]
+ },
+ {
+  "id": "vocab:productivity",
+  "headword": "productivity",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "the rate at which a worker or company produces goods or results.",
+  "meaningVi": "năng suất",
+  "existingExample": "Some trials suggest that a four-day week can boost productivity.",
+  "mustContainOneOf": [
+   "productivity",
+   "productivities"
+  ]
+ },
+ {
+  "id": "vocab:recession",
+  "headword": "recession",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a period when the economy of a country is doing badly.",
+  "meaningVi": "suy thoái kinh tế",
+  "existingExample": "Many small businesses closed during the recession.",
+  "mustContainOneOf": [
+   "recession",
+   "recessions"
+  ]
+ },
+ {
+  "id": "vocab:entrepreneur",
+  "headword": "entrepreneur",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a person who starts a business and takes financial risks.",
+  "meaningVi": "doanh nhân khởi nghiệp",
+  "existingExample": "Governments can support young entrepreneurs with low-interest loans.",
+  "mustContainOneOf": [
+   "entrepreneur",
+   "entrepreneurs"
+  ]
+ },
+ {
+  "id": "vocab:inflation",
+  "headword": "inflation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a general increase in prices.",
+  "meaningVi": "lạm phát",
+  "existingExample": "Rising inflation has reduced the purchasing power of ordinary families.",
+  "mustContainOneOf": [
+   "inflation",
+   "inflations"
+  ]
+ },
+ {
+  "id": "vocab:consumerism",
+  "headword": "consumerism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the belief that buying more and more goods is good.",
+  "meaningVi": "chủ nghĩa tiêu dùng",
+  "existingExample": "Rampant consumerism encourages people to buy things they do not need.",
+  "mustContainOneOf": [
+   "consumerism",
+   "consumerisms"
+  ]
+ },
+ {
+  "id": "vocab:gig_economy",
+  "headword": "gig economy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "a labour market made up of short-term, freelance jobs.",
+  "meaningVi": "nền kinh tế việc làm tự do",
+  "existingExample": "Workers in the gig economy often lack sick pay and pensions.",
+  "mustContainOneOf": [
+   "gig economy",
+   "gig-economy"
+  ]
+ },
+ {
+  "id": "vocab:income_inequality",
+  "headword": "income inequality",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the unequal distribution of income between people in a society.",
+  "meaningVi": "bất bình đẳng thu nhập",
+  "existingExample": "Progressive taxation is one way to reduce income inequality.",
+  "mustContainOneOf": [
+   "income inequality",
+   "income-inequality"
+  ]
+ },
+ {
+  "id": "vocab:skilled_workers",
+  "headword": "skilled workers",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "workers who have special training or experience.",
+  "meaningVi": "lao động có tay nghề",
+  "existingExample": "There is a severe shortage of skilled workers in the construction industry.",
+  "mustContainOneOf": [
+   "skilled workers",
+   "skilled-workers"
+  ]
+ },
+ {
+  "id": "vocab:job_satisfaction",
+  "headword": "job satisfaction",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "the feeling of pleasure you get from doing your job.",
+  "meaningVi": "sự hài lòng với công việc",
+  "existingExample": "Recognition from managers is a key factor in job satisfaction.",
+  "mustContainOneOf": [
+   "job satisfaction",
+   "job-satisfaction"
+  ]
+ },
+ {
+  "id": "vocab:career_prospects",
+  "headword": "career prospects",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "your chances of success in your future career.",
+  "meaningVi": "triển vọng nghề nghiệp",
+  "existingExample": "Speaking a second language can significantly improve your career prospects.",
+  "mustContainOneOf": [
+   "career prospects",
+   "career-prospects"
+  ]
+ },
+ {
+  "id": "vocab:redundancy",
+  "headword": "redundancy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "losing your job because your employer no longer needs you.",
+  "meaningVi": "sự mất việc do cắt giảm",
+  "existingExample": "Thousands of workers faced redundancy when the factory closed.",
+  "mustContainOneOf": [
+   "redundancy",
+   "redundancies"
+  ]
+ },
+ {
+  "id": "vocab:incentive",
+  "headword": "incentive",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "something that encourages you to do something.",
+  "meaningVi": "sự khuyến khích, ưu đãi",
+  "existingExample": "Tax incentives could encourage companies to hire older workers.",
+  "mustContainOneOf": [
+   "incentives",
+   "incentive"
+  ]
+ },
+ {
+  "id": "vocab:outsource",
+  "headword": "outsource",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to pay another company to do work instead of doing it yourself.",
+  "meaningVi": "thuê ngoài",
+  "existingExample": "Many firms outsource customer service to reduce costs.",
+  "mustContainOneOf": [
+   "outsource",
+   "outsorce",
+   "outsources",
+   "outsourced",
+   "outsourcing",
+   "outsorces"
+  ]
+ },
+ {
+  "id": "vocab:minimum_wage",
+  "headword": "minimum wage",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "the lowest pay that employers are legally allowed to pay.",
+  "meaningVi": "lương tối thiểu",
+  "existingExample": "Raising the minimum wage can lift families out of poverty.",
+  "mustContainOneOf": [
+   "minimum wage",
+   "minimum-wage"
+  ]
+ },
+ {
+  "id": "vocab:workforce",
+  "headword": "workforce",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "all the people who work in a company, industry or country.",
+  "meaningVi": "lực lượng lao động",
+  "existingExample": "A well-educated workforce attracts foreign investment.",
+  "mustContainOneOf": [
+   "workforce",
+   "workforces"
+  ]
+ },
+ {
+  "id": "vocab:economic_growth",
+  "headword": "economic growth",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "an increase in the amount of goods and services a country produces.",
+  "meaningVi": "tăng trưởng kinh tế",
+  "existingExample": "Tourism has been a major driver of economic growth in the region.",
+  "mustContainOneOf": [
+   "economic growth",
+   "economic-growth"
+  ]
+ },
+ {
+  "id": "vocab:lucrative",
+  "headword": "lucrative",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "producing a lot of money.",
+  "meaningVi": "sinh lời cao, béo bở",
+  "existingExample": "Software engineering has become one of the most lucrative careers.",
+  "mustContainOneOf": [
+   "lucrative"
+  ]
+ },
+ {
+  "id": "vocab:burnout",
+  "headword": "burnout",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "extreme tiredness caused by working too hard for too long.",
+  "meaningVi": "sự kiệt sức (vì công việc)",
+  "existingExample": "Long working hours without breaks often lead to burnout.",
+  "mustContainOneOf": [
+   "burnout",
+   "burnouts"
+  ]
+ },
+ {
+  "id": "vocab:flexible_working",
+  "headword": "flexible working",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "an arrangement that lets employees choose their hours or place of work.",
+  "meaningVi": "làm việc linh hoạt",
+  "existingExample": "Offering flexible working helps companies keep talented parents.",
+  "mustContainOneOf": [
+   "flexible working",
+   "flexible-working"
+  ]
+ },
+ {
+  "id": "vocab:poverty",
+  "headword": "poverty",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "the state of being very poor.",
+  "meaningVi": "nghèo đói",
+  "existingExample": "Access to education is one of the most effective ways to lift people out of poverty.",
+  "mustContainOneOf": [
+   "poverty",
+   "poverties"
+  ]
+ },
+ {
+  "id": "vocab:multinational",
+  "headword": "multinational",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a large company that operates in several countries.",
+  "meaningVi": "(công ty) đa quốc gia",
+  "existingExample": "Multinational corporations can bring jobs but may also harm local businesses.",
+  "mustContainOneOf": [
+   "multinational",
+   "multinationals"
+  ]
+ },
+ {
+  "id": "vocab:labour_market",
+  "headword": "labour market",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "the supply of and demand for workers.",
+  "meaningVi": "thị trường lao động",
+  "existingExample": "Graduates face an increasingly competitive labour market.",
+  "mustContainOneOf": [
+   "labour market",
+   "labor market",
+   "labour-market",
+   "labor-market"
+  ]
+ },
+ {
+  "id": "vocab:blue_collar",
+  "headword": "blue-collar",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "relating to manual or industrial work.",
+  "meaningVi": "(công việc) lao động chân tay",
+  "existingExample": "Blue-collar workers were hit hardest by factory closures.",
+  "mustContainOneOf": [
+   "blue-collar",
+   "blue collar"
+  ]
+ },
+ {
+  "id": "vocab:menial",
+  "headword": "menial",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "unskilled and of low status.",
+  "meaningVi": "(việc) đơn giản, lương thấp",
+  "existingExample": "Many migrants take menial jobs despite holding degrees.",
+  "mustContainOneOf": [
+   "menial"
+  ]
+ },
+ {
+  "id": "vocab:vacancy",
+  "headword": "vacancy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "a job that is available.",
+  "meaningVi": "vị trí tuyển dụng",
+  "existingExample": "The company has several vacancies for engineers.",
+  "mustContainOneOf": [
+   "vacancy",
+   "vacancies"
+  ]
+ },
+ {
+  "id": "vocab:recruit",
+  "headword": "recruit",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "to find new people to work for an organisation.",
+  "meaningVi": "tuyển dụng",
+  "existingExample": "Hospitals struggle to recruit experienced nurses.",
+  "mustContainOneOf": [
+   "recruit",
+   "recruits",
+   "recruited",
+   "recruiting"
+  ]
+ },
+ {
+  "id": "vocab:headhunt",
+  "headword": "headhunt",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "to find and persuade someone to leave their job for another.",
+  "meaningVi": "săn nhân tài",
+  "existingExample": "She was headhunted by a rival bank.",
+  "mustContainOneOf": [
+   "headhunt",
+   "headhunts",
+   "headhunted",
+   "headhunting"
+  ]
+ },
+ {
+  "id": "vocab:job_hopping",
+  "headword": "job-hopping",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy",
+   "work"
+  ],
+  "definitionEn": "changing jobs frequently.",
+  "meaningVi": "nhảy việc",
+  "existingExample": "Job-hopping is common among young professionals.",
+  "mustContainOneOf": [
+   "job-hopping",
+   "job-hoppings",
+   "job hopping"
+  ]
+ }
+]

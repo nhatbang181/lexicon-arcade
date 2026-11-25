@@ -1,0 +1,1816 @@
+[
+ {
+  "id": "vocab:tech_savvy",
+  "headword": "tech-savvy",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "knowing a lot about modern technology.",
+  "meaningVi": "rành công nghệ",
+  "existingExample": "Tech-savvy children often teach their parents how to use new apps.",
+  "mustContainOneOf": [
+   "tech-savvy",
+   "tech savvy"
+  ]
+ },
+ {
+  "id": "vocab:cyberbullying",
+  "headword": "cyberbullying",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "using the internet to hurt, threaten or embarrass someone.",
+  "meaningVi": "bắt nạt qua mạng",
+  "existingExample": "Schools need clear policies to tackle cyberbullying.",
+  "mustContainOneOf": [
+   "cyberbullying",
+   "cyberbullyings"
+  ]
+ },
+ {
+  "id": "vocab:drawback",
+  "headword": "drawback",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a disadvantage or problem.",
+  "meaningVi": "nhược điểm",
+  "existingExample": "The main drawback of online shopping is that you cannot try products before buying them.",
+  "mustContainOneOf": [
+   "drawback",
+   "drawbacks"
+  ]
+ },
+ {
+  "id": "vocab:disruptive_technology",
+  "headword": "disruptive technology",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "an innovation that transforms an industry or market.",
+  "meaningVi": "công nghệ đột phá (làm thay đổi cả ngành)",
+  "existingExample": "Streaming was a disruptive technology for the music industry.",
+  "mustContainOneOf": [
+   "disruptive technology",
+   "disruptive-technology"
+  ]
+ },
+ {
+  "id": "vocab:state_of_the_art",
+  "headword": "state-of-the-art",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "using the latest technology.",
+  "meaningVi": "hiện đại bậc nhất",
+  "existingExample": "The laboratory is fitted with state-of-the-art equipment.",
+  "mustContainOneOf": [
+   "state-of-the-art",
+   "state of the art"
+  ]
+ },
+ {
+  "id": "vocab:machine_learning",
+  "headword": "machine learning",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a type of AI in which computers learn from data.",
+  "meaningVi": "học máy",
+  "existingExample": "Machine learning helps banks detect fraudulent transactions.",
+  "mustContainOneOf": [
+   "machine learning",
+   "machine-learning"
+  ]
+ },
+ {
+  "id": "vocab:big_data",
+  "headword": "big data",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "extremely large data sets analysed to reveal patterns.",
+  "meaningVi": "dữ liệu lớn",
+  "existingExample": "Retailers use big data to predict consumers' buying habits.",
+  "mustContainOneOf": [
+   "big data",
+   "big-data"
+  ]
+ },
+ {
+  "id": "vocab:cloud_computing",
+  "headword": "cloud computing",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "storing and processing data on remote servers.",
+  "meaningVi": "điện toán đám mây",
+  "existingExample": "Cloud computing allows small firms to avoid buying expensive servers.",
+  "mustContainOneOf": [
+   "cloud computing",
+   "cloud-computing"
+  ]
+ },
+ {
+  "id": "vocab:cybersecurity",
+  "headword": "cybersecurity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the protection of computer systems from attack.",
+  "meaningVi": "an ninh mạng",
+  "existingExample": "Hospitals must strengthen their cybersecurity.",
+  "mustContainOneOf": [
+   "cybersecurity",
+   "cybersecurities"
+  ]
+ },
+ {
+  "id": "vocab:data_breach",
+  "headword": "data breach",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "an incident in which private data is stolen or exposed.",
+  "meaningVi": "vụ rò rỉ dữ liệu",
+  "existingExample": "A data breach exposed millions of customers' personal details.",
+  "mustContainOneOf": [
+   "data breach",
+   "data-breach"
+  ]
+ },
+ {
+  "id": "vocab:encryption",
+  "headword": "encryption",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "converting data into a code to keep it secure.",
+  "meaningVi": "sự mã hóa",
+  "existingExample": "End-to-end encryption protects private messages.",
+  "mustContainOneOf": [
+   "encryption",
+   "encryptions"
+  ]
+ },
+ {
+  "id": "vocab:digital_footprint",
+  "headword": "digital footprint",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the record of a person's online activity.",
+  "meaningVi": "dấu vết số",
+  "existingExample": "Teenagers should consider the digital footprint they leave online.",
+  "mustContainOneOf": [
+   "digital footprint",
+   "digital-footprint"
+  ]
+ },
+ {
+  "id": "vocab:information_overload",
+  "headword": "information overload",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "receiving more information than one can process.",
+  "meaningVi": "quá tải thông tin",
+  "existingExample": "Constant notifications contribute to information overload.",
+  "mustContainOneOf": [
+   "information overload",
+   "information-overload"
+  ]
+ },
+ {
+  "id": "vocab:attention_span",
+  "headword": "attention span",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the length of time someone can concentrate.",
+  "meaningVi": "khả năng duy trì tập trung",
+  "existingExample": "Some researchers believe short videos are shortening attention spans.",
+  "mustContainOneOf": [
+   "attention span",
+   "attention-span"
+  ]
+ },
+ {
+  "id": "vocab:digital_detox",
+  "headword": "digital detox",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a period without using digital devices.",
+  "meaningVi": "thời gian tạm ngừng thiết bị số",
+  "existingExample": "A weekend digital detox can reduce stress.",
+  "mustContainOneOf": [
+   "digital detox",
+   "digital-detox"
+  ]
+ },
+ {
+  "id": "vocab:technophobe",
+  "headword": "technophobe",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a person who dislikes or fears new technology.",
+  "meaningVi": "người ngại/sợ công nghệ",
+  "existingExample": "Many older people describe themselves as technophobes.",
+  "mustContainOneOf": [
+   "technophobe",
+   "technophobes"
+  ]
+ },
+ {
+  "id": "vocab:early_adopter",
+  "headword": "early adopter",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "someone who uses new technology as soon as it appears.",
+  "meaningVi": "người dùng sớm",
+  "existingExample": "Early adopters often pay high prices for new devices.",
+  "mustContainOneOf": [
+   "early adopters",
+   "early adopter",
+   "early-adopter"
+  ]
+ },
+ {
+  "id": "vocab:wearable_technology",
+  "headword": "wearable technology",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "devices worn on the body, such as smartwatches.",
+  "meaningVi": "công nghệ đeo được",
+  "existingExample": "Wearable technology lets people monitor their heart rate.",
+  "mustContainOneOf": [
+   "wearable technology",
+   "wearable-technology"
+  ]
+ },
+ {
+  "id": "vocab:virtual_reality",
+  "headword": "virtual reality",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a computer-generated three-dimensional environment.",
+  "meaningVi": "thực tế ảo",
+  "existingExample": "Virtual reality is used to train surgeons.",
+  "mustContainOneOf": [
+   "virtual reality",
+   "virtual-reality"
+  ]
+ },
+ {
+  "id": "vocab:augmented_reality",
+  "headword": "augmented reality",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "digital images layered onto the real world.",
+  "meaningVi": "thực tế tăng cường",
+  "existingExample": "Augmented reality apps let shoppers see furniture in their own homes.",
+  "mustContainOneOf": [
+   "augmented reality",
+   "augmented-reality"
+  ]
+ },
+ {
+  "id": "vocab:immersive",
+  "headword": "immersive",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "making you feel completely surrounded by an experience.",
+  "meaningVi": "nhập vai, chân thực",
+  "existingExample": "Museums now offer immersive digital exhibitions.",
+  "mustContainOneOf": [
+   "immersive"
+  ]
+ },
+ {
+  "id": "vocab:user_interface",
+  "headword": "user interface",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the way a person interacts with a computer or app.",
+  "meaningVi": "giao diện người dùng",
+  "existingExample": "A clear user interface makes apps easier for older people.",
+  "mustContainOneOf": [
+   "user interface",
+   "user-interface"
+  ]
+ },
+ {
+  "id": "vocab:intuitive",
+  "headword": "intuitive",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "easy to use without instructions.",
+  "meaningVi": "trực quan, dễ dùng",
+  "existingExample": "Tablets are intuitive enough for young children to use.",
+  "mustContainOneOf": [
+   "intuitive"
+  ]
+ },
+ {
+  "id": "vocab:planned_obsolescence",
+  "headword": "planned obsolescence",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "designing products to stop working or become outdated after a certain time.",
+  "meaningVi": "lỗi thời có chủ đích",
+  "existingExample": "Critics accuse phone manufacturers of planned obsolescence.",
+  "mustContainOneOf": [
+   "planned obsolescence",
+   "planned-obsolescence"
+  ]
+ },
+ {
+  "id": "vocab:technological_advancement",
+  "headword": "technological advancement",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "progress in technology.",
+  "meaningVi": "tiến bộ công nghệ",
+  "existingExample": "Rapid technological advancement has transformed healthcare.",
+  "mustContainOneOf": [
+   "technological advancement",
+   "technological-advancement"
+  ]
+ },
+ {
+  "id": "vocab:digitisation",
+  "headword": "digitisation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "converting information into digital form.",
+  "meaningVi": "sự số hóa",
+  "existingExample": "The digitisation of medical records saves doctors time.",
+  "mustContainOneOf": [
+   "digitisation",
+   "digitization",
+   "digitisations"
+  ]
+ },
+ {
+  "id": "vocab:digital_transformation",
+  "headword": "digital transformation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the use of digital technology to change how organisations operate.",
+  "meaningVi": "chuyển đổi số",
+  "existingExample": "Banks have undergone a rapid digital transformation.",
+  "mustContainOneOf": [
+   "digital transformation",
+   "digital-transformation"
+  ]
+ },
+ {
+  "id": "vocab:e_commerce",
+  "headword": "e-commerce",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "buying and selling goods online.",
+  "meaningVi": "thương mại điện tử",
+  "existingExample": "E-commerce has hit traditional high-street shops hard.",
+  "mustContainOneOf": [
+   "e-commerce",
+   "e-commerces",
+   "e commerce"
+  ]
+ },
+ {
+  "id": "vocab:cashless_society",
+  "headword": "cashless society",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a society in which payments are made electronically.",
+  "meaningVi": "xã hội không tiền mặt",
+  "existingExample": "A cashless society may exclude elderly people.",
+  "mustContainOneOf": [
+   "cashless society",
+   "cashless-society"
+  ]
+ },
+ {
+  "id": "vocab:online_platform",
+  "headword": "online platform",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a website or app that connects users or sellers.",
+  "meaningVi": "nền tảng trực tuyến",
+  "existingExample": "Online platforms allow small businesses to reach global customers.",
+  "mustContainOneOf": [
+   "online platforms",
+   "online platform",
+   "online-platform"
+  ]
+ },
+ {
+  "id": "vocab:tech_giant",
+  "headword": "tech giant",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a very large and powerful technology company.",
+  "meaningVi": "tập đoàn công nghệ khổng lồ",
+  "existingExample": "Governments are trying to regulate the power of tech giants.",
+  "mustContainOneOf": [
+   "tech giants",
+   "tech giant",
+   "tech-giant"
+  ]
+ },
+ {
+  "id": "vocab:monopoly",
+  "headword": "monopoly",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "complete control of a market by one company.",
+  "meaningVi": "sự độc quyền",
+  "existingExample": "Critics argue that some search engines hold a near monopoly.",
+  "mustContainOneOf": [
+   "monopoly",
+   "monopolies"
+  ]
+ },
+ {
+  "id": "vocab:automate",
+  "headword": "automate",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to make a process operate by machine.",
+  "meaningVi": "tự động hóa",
+  "existingExample": "Banks have automated many routine tasks.",
+  "mustContainOneOf": [
+   "automate",
+   "automates",
+   "automated",
+   "automating"
+  ]
+ },
+ {
+  "id": "vocab:robotics",
+  "headword": "robotics",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the science of designing and using robots.",
+  "meaningVi": "ngành người máy",
+  "existingExample": "Advances in robotics are transforming car factories.",
+  "mustContainOneOf": [
+   "robotics",
+   "roboticses"
+  ]
+ },
+ {
+  "id": "vocab:drone",
+  "headword": "drone",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "an aircraft with no pilot, controlled remotely.",
+  "meaningVi": "thiết bị bay không người lái",
+  "existingExample": "Drones are used to deliver medicine to remote villages.",
+  "mustContainOneOf": [
+   "drone",
+   "drones"
+  ]
+ },
+ {
+  "id": "vocab:3d_printing",
+  "headword": "3D printing",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "making solid objects by printing layers of material.",
+  "meaningVi": "công nghệ in 3D",
+  "existingExample": "3D printing can produce custom medical implants.",
+  "mustContainOneOf": [
+   "3d printing",
+   "3d-printing"
+  ]
+ },
+ {
+  "id": "vocab:nanotechnology",
+  "headword": "nanotechnology",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "technology that works with extremely small particles.",
+  "meaningVi": "công nghệ nano",
+  "existingExample": "Nanotechnology could make solar panels more efficient.",
+  "mustContainOneOf": [
+   "nanotechnology",
+   "nanotechnologies"
+  ]
+ },
+ {
+  "id": "vocab:biometric",
+  "headword": "biometric",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "using physical features such as fingerprints for identification.",
+  "meaningVi": "sinh trắc học",
+  "existingExample": "Biometric passports store a digital image of the holder.",
+  "mustContainOneOf": [
+   "biometric"
+  ]
+ },
+ {
+  "id": "vocab:facial_recognition",
+  "headword": "facial recognition",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "technology that identifies people from their faces.",
+  "meaningVi": "nhận diện khuôn mặt",
+  "existingExample": "Facial recognition cameras raise serious privacy concerns.",
+  "mustContainOneOf": [
+   "facial recognition",
+   "facial-recognition"
+  ]
+ },
+ {
+  "id": "vocab:voice_assistant",
+  "headword": "voice assistant",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "software that responds to spoken commands.",
+  "meaningVi": "trợ lý giọng nói",
+  "existingExample": "Voice assistants can help elderly people who live alone.",
+  "mustContainOneOf": [
+   "voice assistant",
+   "voice-assistant"
+  ]
+ },
+ {
+  "id": "vocab:chatbot",
+  "headword": "chatbot",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a computer program that simulates conversation.",
+  "meaningVi": "chatbot, trợ lý trò chuyện tự động",
+  "existingExample": "Many companies use chatbots to answer basic queries.",
+  "mustContainOneOf": [
+   "chatbots",
+   "chatbot"
+  ]
+ },
+ {
+  "id": "vocab:generative_ai",
+  "headword": "generative AI",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "artificial intelligence that creates text, images or music.",
+  "meaningVi": "AI tạo sinh",
+  "existingExample": "Generative AI raises difficult questions about copyright.",
+  "mustContainOneOf": [
+   "generative ai",
+   "generative-ai"
+  ]
+ },
+ {
+  "id": "vocab:algorithmic_bias",
+  "headword": "algorithmic bias",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "unfair outcomes produced by automated systems.",
+  "meaningVi": "thiên lệch thuật toán",
+  "existingExample": "Algorithmic bias can lead to unfair hiring decisions.",
+  "mustContainOneOf": [
+   "algorithmic bias",
+   "algorithmic-bias"
+  ]
+ },
+ {
+  "id": "vocab:human_oversight",
+  "headword": "human oversight",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "people checking and controlling automated decisions.",
+  "meaningVi": "sự giám sát của con người",
+  "existingExample": "Medical AI tools still require human oversight.",
+  "mustContainOneOf": [
+   "human oversight",
+   "human-oversight"
+  ]
+ },
+ {
+  "id": "vocab:data_driven",
+  "headword": "data-driven",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "based on the analysis of data.",
+  "meaningVi": "dựa trên dữ liệu",
+  "existingExample": "Data-driven decisions reduce guesswork in business.",
+  "mustContainOneOf": [
+   "data-driven",
+   "data driven"
+  ]
+ },
+ {
+  "id": "vocab:ethical_dilemma",
+  "headword": "ethical dilemma",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a situation with no clearly right moral choice.",
+  "meaningVi": "tình thế khó xử về đạo đức",
+  "existingExample": "Self-driving cars pose an ethical dilemma in unavoidable accidents.",
+  "mustContainOneOf": [
+   "ethical dilemma",
+   "ethical-dilemma"
+  ]
+ },
+ {
+  "id": "vocab:accountability",
+  "headword": "accountability",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "being responsible for actions and willing to explain them.",
+  "meaningVi": "trách nhiệm giải trình",
+  "existingExample": "There is little accountability for harmful algorithms.",
+  "mustContainOneOf": [
+   "accountability",
+   "accountabilities"
+  ]
+ },
+ {
+  "id": "vocab:outpace",
+  "headword": "outpace",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to develop faster than something else.",
+  "meaningVi": "phát triển nhanh hơn, vượt",
+  "existingExample": "Technology often outpaces the laws that govern it.",
+  "mustContainOneOf": [
+   "outpace",
+   "outpaces",
+   "outpaced",
+   "outpacing"
+  ]
+ },
+ {
+  "id": "vocab:keep_pace_with",
+  "headword": "keep pace with",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to change or progress as quickly as something else.",
+  "meaningVi": "theo kịp",
+  "existingExample": "Schools struggle to keep pace with technological change.",
+  "mustContainOneOf": [
+   "keep pace with",
+   "keep-pace-with"
+  ]
+ },
+ {
+  "id": "vocab:indispensable",
+  "headword": "indispensable",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "absolutely necessary.",
+  "meaningVi": "không thể thiếu",
+  "existingExample": "Smartphones have become indispensable for most people.",
+  "mustContainOneOf": [
+   "indispensable"
+  ]
+ },
+ {
+  "id": "vocab:pervasive",
+  "headword": "pervasive",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "spreading widely through an area or group.",
+  "meaningVi": "lan tỏa khắp nơi",
+  "existingExample": "Technology has a pervasive influence on daily life.",
+  "mustContainOneOf": [
+   "pervasive"
+  ]
+ },
+ {
+  "id": "vocab:sophisticated",
+  "headword": "sophisticated",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "advanced and complex.",
+  "meaningVi": "tinh vi, phức tạp",
+  "existingExample": "Criminals use increasingly sophisticated scams.",
+  "mustContainOneOf": [
+   "sophisticated"
+  ]
+ },
+ {
+  "id": "vocab:malfunction",
+  "headword": "malfunction",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a failure to work properly.",
+  "meaningVi": "sự trục trặc; hoạt động sai",
+  "existingExample": "A software malfunction grounded hundreds of flights.",
+  "mustContainOneOf": [
+   "malfunction",
+   "malfunctions"
+  ]
+ },
+ {
+  "id": "vocab:compatibility",
+  "headword": "compatibility",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the ability of devices or software to work together.",
+  "meaningVi": "tính tương thích",
+  "existingExample": "Compatibility issues prevent some apps from running on older phones.",
+  "mustContainOneOf": [
+   "compatibility",
+   "compatibilities"
+  ]
+ },
+ {
+  "id": "vocab:bandwidth",
+  "headword": "bandwidth",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the amount of data that can be transmitted at once.",
+  "meaningVi": "băng thông",
+  "existingExample": "Video calls require high bandwidth.",
+  "mustContainOneOf": [
+   "bandwidth",
+   "bandwidths"
+  ]
+ },
+ {
+  "id": "vocab:broadband",
+  "headword": "broadband",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a high-speed internet connection.",
+  "meaningVi": "internet băng thông rộng",
+  "existingExample": "Many rural areas still lack high-speed broadband.",
+  "mustContainOneOf": [
+   "broadband",
+   "broadbands"
+  ]
+ },
+ {
+  "id": "vocab:digital_native",
+  "headword": "digital native",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a person who grew up with digital technology.",
+  "meaningVi": "người sinh ra trong thời đại số",
+  "existingExample": "Digital natives adapt quickly to new applications.",
+  "mustContainOneOf": [
+   "digital natives",
+   "digital native",
+   "digital-native"
+  ]
+ },
+ {
+  "id": "vocab:social_isolation",
+  "headword": "social isolation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a lack of contact with other people.",
+  "meaningVi": "sự cô lập xã hội",
+  "existingExample": "Excessive gaming can lead to social isolation.",
+  "mustContainOneOf": [
+   "social isolation",
+   "social-isolation"
+  ]
+ },
+ {
+  "id": "vocab:instant_gratification",
+  "headword": "instant gratification",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "getting pleasure immediately without having to wait.",
+  "meaningVi": "sự thỏa mãn tức thì",
+  "existingExample": "Social media feeds a culture of instant gratification.",
+  "mustContainOneOf": [
+   "instant gratification",
+   "instant-gratification"
+  ]
+ },
+ {
+  "id": "vocab:multitask",
+  "headword": "multitask",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to do several things at the same time.",
+  "meaningVi": "làm nhiều việc cùng lúc",
+  "existingExample": "Research suggests people multitask less effectively than they think.",
+  "mustContainOneOf": [
+   "multitask",
+   "multitasks",
+   "multitasked",
+   "multitasking"
+  ]
+ },
+ {
+  "id": "vocab:computer_literate",
+  "headword": "computer literate",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "able to use computers competently.",
+  "meaningVi": "thành thạo máy tính",
+  "existingExample": "Most office jobs require staff to be computer literate.",
+  "mustContainOneOf": [
+   "computer literate",
+   "computer-literate"
+  ]
+ },
+ {
+  "id": "vocab:telecommunications",
+  "headword": "telecommunications",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "communication over a distance by telephone, internet, etc.",
+  "meaningVi": "viễn thông",
+  "existingExample": "Telecommunications have shrunk the distance between countries.",
+  "mustContainOneOf": [
+   "telecommunications",
+   "telecommunicationses"
+  ]
+ },
+ {
+  "id": "vocab:satellite",
+  "headword": "satellite",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a device sent into space to orbit the earth.",
+  "meaningVi": "vệ tinh",
+  "existingExample": "Satellite imagery helps scientists track deforestation.",
+  "mustContainOneOf": [
+   "satellite",
+   "satellites"
+  ]
+ },
+ {
+  "id": "vocab:patent",
+  "headword": "patent",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a legal right to be the only one to make or sell an invention.",
+  "meaningVi": "bằng sáng chế; cấp bằng sáng chế",
+  "existingExample": "The company holds patents on its battery design.",
+  "mustContainOneOf": [
+   "patent",
+   "patents"
+  ]
+ },
+ {
+  "id": "vocab:intellectual_property",
+  "headword": "intellectual property",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "ideas and inventions protected by law.",
+  "meaningVi": "sở hữu trí tuệ",
+  "existingExample": "Online piracy undermines intellectual property rights.",
+  "mustContainOneOf": [
+   "intellectual property",
+   "intellectual-property"
+  ]
+ },
+ {
+  "id": "vocab:piracy",
+  "headword": "piracy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "illegally copying software, films or music.",
+  "meaningVi": "vi phạm bản quyền",
+  "existingExample": "Online piracy costs the creative industries a great deal of revenue.",
+  "mustContainOneOf": [
+   "piracy",
+   "piracies"
+  ]
+ },
+ {
+  "id": "vocab:open_source",
+  "headword": "open-source",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "software whose code anyone may use and modify freely.",
+  "meaningVi": "mã nguồn mở",
+  "existingExample": "Many universities use open-source software to cut costs.",
+  "mustContainOneOf": [
+   "open-source",
+   "open-sorce",
+   "open source",
+   "open sorce"
+  ]
+ },
+ {
+  "id": "vocab:prototype",
+  "headword": "prototype",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a first model of a new product.",
+  "meaningVi": "nguyên mẫu",
+  "existingExample": "Engineers tested a prototype of the new battery.",
+  "mustContainOneOf": [
+   "prototype",
+   "prototypes"
+  ]
+ },
+ {
+  "id": "vocab:trial_and_error",
+  "headword": "trial and error",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "learning by trying different methods until one works.",
+  "meaningVi": "phương pháp thử và sai",
+  "existingExample": "Many inventions were developed through trial and error.",
+  "mustContainOneOf": [
+   "trial and error",
+   "trial-and-error"
+  ]
+ },
+ {
+  "id": "vocab:commercialise",
+  "headword": "commercialise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to start selling a product for profit.",
+  "meaningVi": "thương mại hóa",
+  "existingExample": "Universities often struggle to commercialise their research.",
+  "mustContainOneOf": [
+   "commercialise",
+   "commercialize",
+   "commercialises",
+   "commercialised",
+   "commercialising",
+   "commercialized"
+  ]
+ },
+ {
+  "id": "vocab:mass_produce",
+  "headword": "mass-produce",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to make goods in large quantities.",
+  "meaningVi": "sản xuất hàng loạt",
+  "existingExample": "Cheap mass-produced goods have changed shopping habits.",
+  "mustContainOneOf": [
+   "mass-produced",
+   "mass-produce",
+   "mass-produces",
+   "mass-producing",
+   "mass produce"
+  ]
+ },
+ {
+  "id": "vocab:unprecedented",
+  "headword": "unprecedented",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "never having happened before.",
+  "meaningVi": "chưa từng có tiền lệ",
+  "existingExample": "Information now spreads at an unprecedented speed.",
+  "mustContainOneOf": [
+   "unprecedented"
+  ]
+ },
+ {
+  "id": "vocab:exponential",
+  "headword": "exponential",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "increasing more and more rapidly.",
+  "meaningVi": "theo cấp số nhân",
+  "existingExample": "Computing power has seen exponential growth.",
+  "mustContainOneOf": [
+   "exponential"
+  ]
+ },
+ {
+  "id": "vocab:privacy_settings",
+  "headword": "privacy settings",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "options that control who can see your data.",
+  "meaningVi": "cài đặt quyền riêng tư",
+  "existingExample": "Users should review their privacy settings regularly.",
+  "mustContainOneOf": [
+   "privacy settings",
+   "privacy-settings"
+  ]
+ },
+ {
+  "id": "vocab:online_anonymity",
+  "headword": "online anonymity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "being unidentified when using the internet.",
+  "meaningVi": "tính ẩn danh trên mạng",
+  "existingExample": "Online anonymity can encourage abusive behaviour.",
+  "mustContainOneOf": [
+   "online anonymity",
+   "online-anonymity"
+  ]
+ },
+ {
+  "id": "vocab:digital_infrastructure",
+  "headword": "digital infrastructure",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the networks and systems that support digital services.",
+  "meaningVi": "hạ tầng số",
+  "existingExample": "Reliable digital infrastructure is vital for remote learning.",
+  "mustContainOneOf": [
+   "digital infrastructure",
+   "digital-infrastructure"
+  ]
+ },
+ {
+  "id": "vocab:speculation",
+  "headword": "speculation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "ideas or guesses about something without firm evidence.",
+  "meaningVi": "sự suy đoán",
+  "existingExample": "There has been much speculation about the future of work.",
+  "mustContainOneOf": [
+   "speculation",
+   "speculations"
+  ]
+ },
+ {
+  "id": "vocab:solid_data",
+  "headword": "solid data",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "reliable information based on careful measurement.",
+  "meaningVi": "dữ liệu đáng tin cậy",
+  "existingExample": "Policy decisions should be based on solid data rather than fear.",
+  "mustContainOneOf": [
+   "solid data",
+   "solid-data"
+  ]
+ },
+ {
+  "id": "vocab:substantial",
+  "headword": "substantial",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "large in size, value or importance.",
+  "meaningVi": "đáng kể, lớn",
+  "existingExample": "The policy had a substantial impact on youth unemployment.",
+  "mustContainOneOf": [
+   "substantial"
+  ]
+ },
+ {
+  "id": "vocab:pessimist",
+  "headword": "pessimist",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a person who expects bad things to happen.",
+  "meaningVi": "người bi quan",
+  "existingExample": "Pessimists argue that robots will take most jobs.",
+  "mustContainOneOf": [
+   "pessimists",
+   "pessimist"
+  ]
+ },
+ {
+  "id": "vocab:widespread",
+  "headword": "widespread",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "happening or existing in many places or among many people.",
+  "meaningVi": "phổ biến, lan rộng",
+  "existingExample": "Smartphone use is widespread among teenagers.",
+  "mustContainOneOf": [
+   "widespread"
+  ]
+ },
+ {
+  "id": "vocab:rarity",
+  "headword": "rarity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "something that does not happen or exist very often.",
+  "meaningVi": "điều hiếm có",
+  "existingExample": "Jobs for life are now something of a rarity.",
+  "mustContainOneOf": [
+   "rarity",
+   "rarities"
+  ]
+ },
+ {
+  "id": "vocab:snapshot",
+  "headword": "snapshot",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "information that shows what a situation is like at one particular time.",
+  "meaningVi": "bức tranh tại một thời điểm",
+  "existingExample": "The census provides a snapshot of the population every ten years.",
+  "mustContainOneOf": [
+   "snapshot",
+   "snapshots"
+  ]
+ },
+ {
+  "id": "vocab:self_selected",
+  "headword": "self-selected",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "chosen by the participants themselves rather than at random, which may bias results.",
+  "meaningVi": "tự chọn tham gia (không ngẫu nhiên)",
+  "existingExample": "Online polls often rely on a self-selected sample.",
+  "mustContainOneOf": [
+   "self-selected",
+   "self selected"
+  ]
+ },
+ {
+  "id": "vocab:render",
+  "headword": "render",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to cause someone or something to be in a particular state.",
+  "meaningVi": "khiến cho (trở nên)",
+  "existingExample": "New technology may render some skills obsolete.",
+  "mustContainOneOf": [
+   "render",
+   "renders",
+   "rendered",
+   "rendering"
+  ]
+ },
+ {
+  "id": "vocab:career_ladder",
+  "headword": "career ladder",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "the series of steps by which you move to more senior jobs.",
+  "meaningVi": "nấc thang sự nghiệp",
+  "existingExample": "Internships help graduates get onto the first rung of the career ladder.",
+  "mustContainOneOf": [
+   "career ladder",
+   "career-ladder"
+  ]
+ },
+ {
+  "id": "vocab:interoperability",
+  "headword": "interoperability",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The capability of distinct computer systems, platforms, or devices to exchange and interpret data seamlessly.",
+  "meaningVi": "khả năng tương tác và liên thông giữa các hệ thống",
+  "existingExample": "Mandating technical interoperability between competing messaging platforms prevents dominant firms from locking users inside closed ecosystems.",
+  "mustContainOneOf": [
+   "interoperability",
+   "interoperabilities"
+  ]
+ },
+ {
+  "id": "vocab:latency",
+  "headword": "latency",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The time delay between initiating a digital instruction or data transmission and receiving the corresponding response.",
+  "meaningVi": "độ trễ truyền dẫn tín hiệu hoặc phản hồi của hệ thống",
+  "existingExample": "Ultra-low network latency is indispensable for remote robotic surgery, where even a split-second lag could endanger patients.",
+  "mustContainOneOf": [
+   "latency",
+   "latencies"
+  ]
+ },
+ {
+  "id": "vocab:scalability",
+  "headword": "scalability",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The capacity of a software architecture or technological system to handle growing workloads efficiently without performance loss.",
+  "meaningVi": "khả năng mở rộng quy mô mà vẫn giữ hiệu năng",
+  "existingExample": "Cloud-native infrastructures provide remarkable scalability, enabling public agencies to absorb sudden surges in online tax filings.",
+  "mustContainOneOf": [
+   "scalability",
+   "scalabilities"
+  ]
+ },
+ {
+  "id": "vocab:cryptography",
+  "headword": "cryptography",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The mathematical science of encoding and decoding information to guarantee secure communication and verify authenticity.",
+  "meaningVi": "mật mã học bảo mật thông tin số",
+  "existingExample": "Advances in post-quantum cryptography are urgently needed to ensure banking networks remain impervious to next-generation decryption.",
+  "mustContainOneOf": [
+   "cryptography",
+   "cryptographies"
+  ]
+ },
+ {
+  "id": "vocab:decentralised",
+  "headword": "decentralised",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Distributed across multiple independent nodes rather than controlled by a single central authority or server.",
+  "meaningVi": "phi tập trung, phân tán quyền kiểm soát trên nhiều nút mạng",
+  "existingExample": "Proponents argue that decentralised digital registries reduce single points of failure and strengthen resilience against cyberattacks.",
+  "mustContainOneOf": [
+   "decentralised",
+   "decentralized"
+  ]
+ },
+ {
+  "id": "vocab:blockchain",
+  "headword": "blockchain",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A cryptographically linked, distributed digital ledger that records transactions transparently across a peer-to-peer network.",
+  "meaningVi": "công nghệ chuỗi khối lưu trữ sổ cái minh bạch bất biến",
+  "existingExample": "Beyond cryptocurrency, supply-chain auditors are trialling blockchain to verify the ethical provenance of exported raw materials.",
+  "mustContainOneOf": [
+   "blockchain",
+   "blockchains"
+  ]
+ },
+ {
+  "id": "vocab:neural_network",
+  "headword": "neural network",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A computational machine-learning architecture composed of interconnected nodes modelled loosely on biological brain pathways.",
+  "meaningVi": "mạng nơ-ron nhân tạo mô phỏng cơ chế học của não bộ",
+  "existingExample": "Trained on millions of satellite photographs, the neural network detected illegal logging clearings with unprecedented accuracy.",
+  "mustContainOneOf": [
+   "neural network",
+   "neural-network"
+  ]
+ },
+ {
+  "id": "vocab:deepfake",
+  "headword": "deepfake",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Synthetic video, audio, or imagery generated by deep learning to convincingly depict events or speech that never occurred.",
+  "meaningVi": "video/âm thanh giả mạo tinh vi tạo bằng AI",
+  "existingExample": "Electoral regulators warn that a convincing deepfake released hours before polling day could severely distort voter trust.",
+  "mustContainOneOf": [
+   "deepfake",
+   "deepfakes"
+  ]
+ },
+ {
+  "id": "vocab:ransomware",
+  "headword": "ransomware",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Malicious software that encrypts an organisation's vital files and demands monetary payment to restore access.",
+  "meaningVi": "mã độc tống tiền khóa dữ liệu hệ thống để đòi chuộc",
+  "existingExample": "A coordinated ransomware intrusion forced several municipal hospitals to revert to paper records for nearly two weeks.",
+  "mustContainOneOf": [
+   "ransomware",
+   "ransomwares"
+  ]
+ },
+ {
+  "id": "vocab:phishing",
+  "headword": "phishing",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The fraudulent practice of sending deceptive electronic messages disguised as reputable institutions to steal credentials.",
+  "meaningVi": "lừa đảo giả mạo nhằm đánh cắp thông tin nhạy cảm",
+  "existingExample": "Even sophisticated corporate firewalls remain vulnerable when employees fall prey to highly personalised spear phishing campaigns.",
+  "mustContainOneOf": [
+   "phishing",
+   "phishings"
+  ]
+ },
+ {
+  "id": "vocab:malware",
+  "headword": "malware",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Any software intentionally crafted to disrupt, damage, spy upon, or gain unauthorised control over computer systems.",
+  "meaningVi": "phần mềm độc hại xâm nhập và phá hoại máy tính",
+  "existingExample": "Routine software patching remains the single most cost-effective defence against intrusive malware targeting public infrastructure.",
+  "mustContainOneOf": [
+   "malware",
+   "malwares"
+  ]
+ },
+ {
+  "id": "vocab:zero_day_vulnerability",
+  "headword": "zero-day vulnerability",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A previously unknown software security flaw that attackers can exploit before developers release a corrective patch.",
+  "meaningVi": "lỗ hổng bảo mật mới phát hiện chưa có bản vá",
+  "existingExample": "National cybersecurity agencies collaborate with ethical hackers to identify any zero-day vulnerability before hostile actors weaponise it.",
+  "mustContainOneOf": [
+   "zero-day vulnerability",
+   "zero-day-vulnerability",
+   "zero day vulnerability"
+  ]
+ },
+ {
+  "id": "vocab:biometric_authentication",
+  "headword": "biometric authentication",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Security verification that confirms an individual's identity using unique biological traits such as fingerprints or iris patterns.",
+  "meaningVi": "xác thực danh tính bằng đặc điểm sinh trắc học",
+  "existingExample": "While biometric authentication streamlines mobile banking logins, compromised physiological data cannot simply be reset like passwords.",
+  "mustContainOneOf": [
+   "biometric authentication",
+   "biometric-authentication"
+  ]
+ },
+ {
+  "id": "vocab:edge_computing",
+  "headword": "edge computing",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A distributed computing paradigm that processes data close to the physical devices generating it rather than in distant data centres.",
+  "meaningVi": "điện toán biên xử lý dữ liệu trực tiếp gần nguồn phát",
+  "existingExample": "Autonomous factory robots rely on edge computing to analyse sensor feeds instantaneously without saturating central bandwidth.",
+  "mustContainOneOf": [
+   "edge computing",
+   "edge-computing"
+  ]
+ }
+]

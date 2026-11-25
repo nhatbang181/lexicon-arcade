@@ -1,0 +1,1878 @@
+[
+ {
+  "id": "vocab:urbanisation",
+  "headword": "urbanisation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the process of more people moving from the countryside to cities.",
+  "meaningVi": "đô thị hóa",
+  "existingExample": "Rapid urbanisation has put pressure on housing and transport.",
+  "mustContainOneOf": [
+   "urbanisation",
+   "urbanization",
+   "urbanisations"
+  ]
+ },
+ {
+  "id": "vocab:traffic_congestion",
+  "headword": "traffic congestion",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a situation in which roads are too full of vehicles.",
+  "meaningVi": "tắc nghẽn giao thông",
+  "existingExample": "Congestion charges have helped reduce traffic congestion in some city centres.",
+  "mustContainOneOf": [
+   "traffic congestion",
+   "traffic-congestion"
+  ]
+ },
+ {
+  "id": "vocab:public_transport",
+  "headword": "public transport",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "buses, trains and other services available to everyone.",
+  "meaningVi": "giao thông công cộng",
+  "existingExample": "Cheap and reliable public transport encourages people to leave their cars at home.",
+  "mustContainOneOf": [
+   "public transport",
+   "public-transport"
+  ]
+ },
+ {
+  "id": "vocab:infrastructure",
+  "headword": "infrastructure",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the basic systems a country needs, such as roads, bridges and power supplies.",
+  "meaningVi": "cơ sở hạ tầng",
+  "existingExample": "Many developing countries need to invest heavily in infrastructure.",
+  "mustContainOneOf": [
+   "infrastructure",
+   "infrastructures"
+  ]
+ },
+ {
+  "id": "vocab:commute",
+  "headword": "commute",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "tourism"
+  ],
+  "definitionEn": "to travel regularly between home and work.",
+  "meaningVi": "đi làm hằng ngày; quãng đường đi làm",
+  "existingExample": "A long daily commute can affect workers' health and productivity.",
+  "mustContainOneOf": [
+   "commute",
+   "commutes",
+   "commuted",
+   "commuting"
+  ]
+ },
+ {
+  "id": "vocab:urban_sprawl",
+  "headword": "urban sprawl",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the uncontrolled spread of a city into the surrounding countryside.",
+  "meaningVi": "đô thị lan rộng tràn lan",
+  "existingExample": "Urban sprawl destroys farmland and increases car dependence.",
+  "mustContainOneOf": [
+   "urban sprawl",
+   "urban-sprawl"
+  ]
+ },
+ {
+  "id": "vocab:overcrowding",
+  "headword": "overcrowding",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the situation of too many people being in one place.",
+  "meaningVi": "tình trạng quá tải người",
+  "existingExample": "Overcrowding in cities can lead to poor living conditions.",
+  "mustContainOneOf": [
+   "overcrowding",
+   "overcrowdings"
+  ]
+ },
+ {
+  "id": "vocab:affordable_housing",
+  "headword": "affordable housing",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "housing that people on average or low incomes can afford.",
+  "meaningVi": "nhà ở vừa túi tiền",
+  "existingExample": "The government has promised to build more affordable housing for young families.",
+  "mustContainOneOf": [
+   "affordable housing",
+   "affordable-housing"
+  ]
+ },
+ {
+  "id": "vocab:pedestrian",
+  "headword": "pedestrian",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a person walking in a street rather than travelling in a vehicle.",
+  "meaningVi": "người đi bộ",
+  "existingExample": "Pedestrian zones make city centres safer and more pleasant.",
+  "mustContainOneOf": [
+   "pedestrian",
+   "pedestrians"
+  ]
+ },
+ {
+  "id": "vocab:high_rise",
+  "headword": "high-rise",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a building with many floors.",
+  "meaningVi": "nhà cao tầng",
+  "existingExample": "High-rise apartments allow more people to live on less land.",
+  "mustContainOneOf": [
+   "high-rise",
+   "high-rize",
+   "high rise",
+   "high rize"
+  ]
+ },
+ {
+  "id": "vocab:green_spaces",
+  "headword": "green spaces",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "areas of grass and trees in a town or city.",
+  "meaningVi": "không gian xanh",
+  "existingExample": "Access to green spaces improves residents' mental health.",
+  "mustContainOneOf": [
+   "green spaces",
+   "green-spaces"
+  ]
+ },
+ {
+  "id": "vocab:cost_of_living",
+  "headword": "cost of living",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the amount of money needed to pay for basic things like food and housing.",
+  "meaningVi": "chi phí sinh hoạt",
+  "existingExample": "The rising cost of living is forcing families to move out of the capital.",
+  "mustContainOneOf": [
+   "cost of living",
+   "cost-of-living"
+  ]
+ },
+ {
+  "id": "vocab:amenities",
+  "headword": "amenities",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "useful facilities such as shops, parks and hospitals.",
+  "meaningVi": "tiện ích (công cộng)",
+  "existingExample": "New housing estates often lack basic amenities such as schools.",
+  "mustContainOneOf": [
+   "amenities",
+   "amenitieses"
+  ]
+ },
+ {
+  "id": "vocab:car_free",
+  "headword": "car-free",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "where cars are not allowed.",
+  "meaningVi": "không có ô tô",
+  "existingExample": "Car-free days encourage people to explore their city on foot or by bike.",
+  "mustContainOneOf": [
+   "car-free",
+   "car free"
+  ]
+ },
+ {
+  "id": "vocab:rural_urban_migration",
+  "headword": "rural-urban migration",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the movement of people from the countryside to towns and cities.",
+  "meaningVi": "di cư từ nông thôn ra thành thị",
+  "existingExample": "Better job opportunities drive rural-urban migration in developing countries.",
+  "mustContainOneOf": [
+   "rural-urban migration",
+   "rural-urban-migration",
+   "rural urban migration"
+  ]
+ },
+ {
+  "id": "vocab:gentrification",
+  "headword": "gentrification",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the process of richer people moving into a poor area and raising prices.",
+  "meaningVi": "sự cải tạo khu nghèo thành khu đắt đỏ",
+  "existingExample": "Gentrification often forces long-term residents out of their neighbourhoods.",
+  "mustContainOneOf": [
+   "gentrification",
+   "gentrifications"
+  ]
+ },
+ {
+  "id": "vocab:cycle_lane",
+  "headword": "cycle lane",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a part of the road reserved for bicycles.",
+  "meaningVi": "làn đường xe đạp",
+  "existingExample": "Dedicated cycle lanes make cycling safer and more popular.",
+  "mustContainOneOf": [
+   "cycle lanes",
+   "cycle lane",
+   "cycle-lane"
+  ]
+ },
+ {
+  "id": "vocab:road_safety",
+  "headword": "road safety",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the prevention of accidents on roads.",
+  "meaningVi": "an toàn giao thông",
+  "existingExample": "Lower speed limits have improved road safety near schools.",
+  "mustContainOneOf": [
+   "road safety",
+   "road-safety"
+  ]
+ },
+ {
+  "id": "vocab:densely_populated",
+  "headword": "densely populated",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "having a lot of people living in a small area.",
+  "meaningVi": "đông dân",
+  "existingExample": "Densely populated cities need efficient public transport systems.",
+  "mustContainOneOf": [
+   "densely populated",
+   "densely-populated"
+  ]
+ },
+ {
+  "id": "vocab:noise_pollution",
+  "headword": "noise pollution",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "harmful or annoying levels of noise.",
+  "meaningVi": "ô nhiễm tiếng ồn",
+  "existingExample": "Living near an airport exposes residents to constant noise pollution.",
+  "mustContainOneOf": [
+   "noise pollution",
+   "noise-pollution"
+  ]
+ },
+ {
+  "id": "vocab:town_planning",
+  "headword": "town planning",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the design and organisation of how towns develop.",
+  "meaningVi": "quy hoạch đô thị",
+  "existingExample": "Poor town planning has led to a lack of parks in many districts.",
+  "mustContainOneOf": [
+   "town planning",
+   "town-planning"
+  ]
+ },
+ {
+  "id": "vocab:heritage_site",
+  "headword": "heritage site",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "tourism"
+  ],
+  "definitionEn": "a place of historical or cultural importance.",
+  "meaningVi": "khu di sản, di tích",
+  "existingExample": "Mass tourism can damage fragile heritage sites.",
+  "mustContainOneOf": [
+   "heritage sites",
+   "heritage site",
+   "heritage-site"
+  ]
+ },
+ {
+  "id": "vocab:congestion_charge",
+  "headword": "congestion charge",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a fee that drivers pay to enter a busy city centre.",
+  "meaningVi": "phí vào khu trung tâm (chống ùn tắc)",
+  "existingExample": "London introduced a congestion charge to reduce traffic in the city centre.",
+  "mustContainOneOf": [
+   "congestion charge",
+   "congestion-charge"
+  ]
+ },
+ {
+  "id": "vocab:self_driving_car",
+  "headword": "self-driving car",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a vehicle that can drive without a human controlling it.",
+  "meaningVi": "xe tự lái",
+  "existingExample": "Self-driving cars could reduce accidents caused by human error.",
+  "mustContainOneOf": [
+   "self-driving cars",
+   "self-driving car",
+   "self-driving-car",
+   "self driving car"
+  ]
+ },
+ {
+  "id": "vocab:liveable",
+  "headword": "liveable",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "pleasant and suitable for living in.",
+  "meaningVi": "đáng sống",
+  "existingExample": "Investment in parks and transport can make cities more liveable.",
+  "mustContainOneOf": [
+   "liveable"
+  ]
+ },
+ {
+  "id": "vocab:metropolis",
+  "headword": "metropolis",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a very large, important city.",
+  "meaningVi": "đô thị lớn",
+  "existingExample": "Ho Chi Minh City has grown into a bustling metropolis.",
+  "mustContainOneOf": [
+   "metropolis",
+   "metropolises"
+  ]
+ },
+ {
+  "id": "vocab:megacity",
+  "headword": "megacity",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a city with more than ten million inhabitants.",
+  "meaningVi": "siêu đô thị",
+  "existingExample": "Rapid rural-to-urban migration is transforming the capital into a sprawling megacity with immense infrastructure demands.",
+  "mustContainOneOf": [
+   "megacity",
+   "megacities"
+  ]
+ },
+ {
+  "id": "vocab:urban_dweller",
+  "headword": "urban dweller",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a person who lives in a city.",
+  "meaningVi": "cư dân đô thị",
+  "existingExample": "Urban dwellers often have limited access to nature.",
+  "mustContainOneOf": [
+   "urban dwellers",
+   "urban dweller",
+   "urban-dweller"
+  ]
+ },
+ {
+  "id": "vocab:suburb",
+  "headword": "suburb",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a residential area outside a city centre.",
+  "meaningVi": "vùng ngoại ô",
+  "existingExample": "Families move to the suburbs for more space.",
+  "mustContainOneOf": [
+   "suburbs",
+   "suburb"
+  ]
+ },
+ {
+  "id": "vocab:commuter_belt",
+  "headword": "commuter belt",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the area around a city where many commuters live.",
+  "meaningVi": "vành đai dân cư đi làm",
+  "existingExample": "House prices have risen across the commuter belt.",
+  "mustContainOneOf": [
+   "commuter belt",
+   "commuter-belt"
+  ]
+ },
+ {
+  "id": "vocab:slum",
+  "headword": "slum",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "an overcrowded, poor area of a city.",
+  "meaningVi": "khu ổ chuột",
+  "existingExample": "Millions of people live in slums without clean water.",
+  "mustContainOneOf": [
+   "slum",
+   "slums"
+  ]
+ },
+ {
+  "id": "vocab:informal_settlement",
+  "headword": "informal settlement",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "housing built without official permission.",
+  "meaningVi": "khu dân cư tự phát",
+  "existingExample": "Informal settlements often lack basic sanitation.",
+  "mustContainOneOf": [
+   "informal settlements",
+   "informal settlement",
+   "informal-settlement"
+  ]
+ },
+ {
+  "id": "vocab:urban_regeneration",
+  "headword": "urban regeneration",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "improving run-down urban areas.",
+  "meaningVi": "tái thiết đô thị",
+  "existingExample": "Urban regeneration transformed the old docks.",
+  "mustContainOneOf": [
+   "urban regeneration",
+   "urban-regeneration"
+  ]
+ },
+ {
+  "id": "vocab:run_down",
+  "headword": "run-down",
+  "pos": [
+   "adj"
+  ],
+  "level": 1,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "in poor condition through neglect.",
+  "meaningVi": "xuống cấp",
+  "existingExample": "Investment revived the run-down neighbourhood.",
+  "mustContainOneOf": [
+   "run-down",
+   "run down"
+  ]
+ },
+ {
+  "id": "vocab:brownfield_site",
+  "headword": "brownfield site",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "land previously used for industry.",
+  "meaningVi": "khu đất công nghiệp cũ (để tái sử dụng)",
+  "existingExample": "Building on brownfield sites protects the countryside.",
+  "mustContainOneOf": [
+   "brownfield sites",
+   "brownfield site",
+   "brownfield-site"
+  ]
+ },
+ {
+  "id": "vocab:zoning",
+  "headword": "zoning",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "dividing land into areas for different uses.",
+  "meaningVi": "phân vùng quy hoạch",
+  "existingExample": "Strict zoning laws limit the supply of new housing.",
+  "mustContainOneOf": [
+   "zoning",
+   "zonings"
+  ]
+ },
+ {
+  "id": "vocab:high_density",
+  "headword": "high-density",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "with many buildings or people in a small area.",
+  "meaningVi": "mật độ cao",
+  "existingExample": "High-density housing makes public transport more viable.",
+  "mustContainOneOf": [
+   "high-density",
+   "high density"
+  ]
+ },
+ {
+  "id": "vocab:housing_shortage",
+  "headword": "housing shortage",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "not enough homes for the population.",
+  "meaningVi": "tình trạng thiếu nhà ở",
+  "existingExample": "Many cities face a serious housing shortage.",
+  "mustContainOneOf": [
+   "housing shortage",
+   "housing-shortage"
+  ]
+ },
+ {
+  "id": "vocab:property_prices",
+  "headword": "property prices",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the cost of buying homes and land.",
+  "meaningVi": "giá bất động sản",
+  "existingExample": "Soaring property prices exclude young buyers.",
+  "mustContainOneOf": [
+   "property prices",
+   "property-prices"
+  ]
+ },
+ {
+  "id": "vocab:first_time_buyer",
+  "headword": "first-time buyer",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "someone buying their first home.",
+  "meaningVi": "người mua nhà lần đầu",
+  "existingExample": "First-time buyers struggle to save for a deposit.",
+  "mustContainOneOf": [
+   "first-time buyers",
+   "first-time buyer",
+   "first-time-buyer",
+   "first time buyer"
+  ]
+ },
+ {
+  "id": "vocab:rent_control",
+  "headword": "rent control",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "government limits on how much rent can rise.",
+  "meaningVi": "kiểm soát giá thuê nhà",
+  "existingExample": "Rent controls protect tenants but may reduce housing supply.",
+  "mustContainOneOf": [
+   "rent controls",
+   "rent control",
+   "rent-control"
+  ]
+ },
+ {
+  "id": "vocab:tenant",
+  "headword": "tenant",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a person who rents property.",
+  "meaningVi": "người thuê nhà",
+  "existingExample": "Tenants complained about rising rents.",
+  "mustContainOneOf": [
+   "tenants",
+   "tenant"
+  ]
+ },
+ {
+  "id": "vocab:landlord",
+  "headword": "landlord",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a person who rents out property.",
+  "meaningVi": "chủ nhà cho thuê",
+  "existingExample": "Some landlords fail to maintain their properties.",
+  "mustContainOneOf": [
+   "landlords",
+   "landlord"
+  ]
+ },
+ {
+  "id": "vocab:homeownership",
+  "headword": "homeownership",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "owning the home you live in.",
+  "meaningVi": "việc sở hữu nhà",
+  "existingExample": "Homeownership is falling among young adults.",
+  "mustContainOneOf": [
+   "homeownership",
+   "homeownerships"
+  ]
+ },
+ {
+  "id": "vocab:skyline",
+  "headword": "skyline",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the outline of buildings against the sky.",
+  "meaningVi": "đường chân trời thành phố",
+  "existingExample": "Skyscrapers dominate the city skyline.",
+  "mustContainOneOf": [
+   "skyline",
+   "skylines"
+  ]
+ },
+ {
+  "id": "vocab:landmark",
+  "headword": "landmark",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a famous building or place.",
+  "meaningVi": "địa danh nổi bật",
+  "existingExample": "The bridge is the city's best-known landmark.",
+  "mustContainOneOf": [
+   "landmark",
+   "landmarks"
+  ]
+ },
+ {
+  "id": "vocab:public_space",
+  "headword": "public space",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "areas open to everyone.",
+  "meaningVi": "không gian công cộng",
+  "existingExample": "Squares and parks provide valuable public space.",
+  "mustContainOneOf": [
+   "public space",
+   "public-space"
+  ]
+ },
+ {
+  "id": "vocab:pedestrianise",
+  "headword": "pedestrianise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "to close a street to traffic.",
+  "meaningVi": "biến thành phố đi bộ",
+  "existingExample": "Municipal authorities plan to pedestrianise the historic district in order to curb air pollution and boost local commerce.",
+  "mustContainOneOf": [
+   "pedestrianise",
+   "pedestrianize",
+   "pedestrianises",
+   "pedestrianised",
+   "pedestrianising",
+   "pedestrianized"
+  ]
+ },
+ {
+  "id": "vocab:walkable",
+  "headword": "walkable",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "easy and pleasant to walk around.",
+  "meaningVi": "thuận tiện đi bộ",
+  "existingExample": "Walkable neighbourhoods encourage healthier lifestyles.",
+  "mustContainOneOf": [
+   "walkable"
+  ]
+ },
+ {
+  "id": "vocab:bike_sharing_scheme",
+  "headword": "bike-sharing scheme",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a system that rents bicycles for short trips.",
+  "meaningVi": "chương trình xe đạp công cộng",
+  "existingExample": "Bike-sharing schemes reduce short car journeys.",
+  "mustContainOneOf": [
+   "bike-sharing scheme",
+   "bike-sharing-scheme",
+   "bike sharing scheme"
+  ]
+ },
+ {
+  "id": "vocab:mass_transit",
+  "headword": "mass transit",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "transport systems carrying large numbers of people, such as metros.",
+  "meaningVi": "vận tải công cộng khối lượng lớn",
+  "existingExample": "Mass transit systems reduce congestion.",
+  "mustContainOneOf": [
+   "mass transit",
+   "mass-transit"
+  ]
+ },
+ {
+  "id": "vocab:metro",
+  "headword": "metro",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "an underground or urban railway.",
+  "meaningVi": "tàu điện đô thị",
+  "existingExample": "Hanoi opened its first metro line in 2021.",
+  "mustContainOneOf": [
+   "metro",
+   "metros"
+  ]
+ },
+ {
+  "id": "vocab:light_rail",
+  "headword": "light rail",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a tram-like urban rail system.",
+  "meaningVi": "đường sắt nhẹ",
+  "existingExample": "Light rail is cheaper to build than an underground system.",
+  "mustContainOneOf": [
+   "light rail",
+   "light-rail"
+  ]
+ },
+ {
+  "id": "vocab:bus_rapid_transit",
+  "headword": "bus rapid transit",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a bus system with dedicated lanes.",
+  "meaningVi": "xe buýt nhanh (BRT)",
+  "existingExample": "Bus rapid transit offers metro-like speed at a lower cost.",
+  "mustContainOneOf": [
+   "bus rapid transit",
+   "bus-rapid-transit"
+  ]
+ },
+ {
+  "id": "vocab:rush_hour",
+  "headword": "rush hour",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "tourism"
+  ],
+  "definitionEn": "the busiest time for travel.",
+  "meaningVi": "giờ cao điểm",
+  "existingExample": "Traffic grinds to a halt during rush hour.",
+  "mustContainOneOf": [
+   "rush hour",
+   "rush-hour"
+  ]
+ },
+ {
+  "id": "vocab:gridlock",
+  "headword": "gridlock",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a traffic jam in which nothing can move.",
+  "meaningVi": "tình trạng kẹt xe toàn bộ",
+  "existingExample": "An accident caused gridlock across the city.",
+  "mustContainOneOf": [
+   "gridlock",
+   "gridlocks"
+  ]
+ },
+ {
+  "id": "vocab:bottleneck",
+  "headword": "bottleneck",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a narrow point that causes delays.",
+  "meaningVi": "điểm nghẽn",
+  "existingExample": "The old bridge is a major traffic bottleneck.",
+  "mustContainOneOf": [
+   "bottleneck",
+   "bottlenecks"
+  ]
+ },
+ {
+  "id": "vocab:car_dependent",
+  "headword": "car-dependent",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "relying heavily on cars.",
+  "meaningVi": "phụ thuộc vào ô tô",
+  "existingExample": "Car-dependent suburbs make life difficult without a car.",
+  "mustContainOneOf": [
+   "car-dependent",
+   "car dependent"
+  ]
+ },
+ {
+  "id": "vocab:car_ownership",
+  "headword": "car ownership",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "having a private car.",
+  "meaningVi": "việc sở hữu ô tô",
+  "existingExample": "Rising car ownership increases congestion.",
+  "mustContainOneOf": [
+   "car ownership",
+   "car-ownership"
+  ]
+ },
+ {
+  "id": "vocab:carpool",
+  "headword": "carpool",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "to share a car journey with others.",
+  "meaningVi": "đi chung xe",
+  "existingExample": "Colleagues carpool to save money and reduce traffic.",
+  "mustContainOneOf": [
+   "carpool",
+   "carpools",
+   "carpooled",
+   "carpooling"
+  ]
+ },
+ {
+  "id": "vocab:ride_hailing",
+  "headword": "ride-hailing",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "booking a car journey through an app.",
+  "meaningVi": "dịch vụ gọi xe công nghệ",
+  "existingExample": "Ride-hailing apps are popular in Southeast Asian cities.",
+  "mustContainOneOf": [
+   "ride-hailing",
+   "ride-hailings",
+   "ride hailing"
+  ]
+ },
+ {
+  "id": "vocab:low_emission_zone",
+  "headword": "low-emission zone",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "an area where polluting vehicles must pay or are banned.",
+  "meaningVi": "vùng hạn chế xe phát thải cao",
+  "existingExample": "Low-emission zones improve urban air quality.",
+  "mustContainOneOf": [
+   "low-emission zone",
+   "low-emission-zone",
+   "low emission zone"
+  ]
+ },
+ {
+  "id": "vocab:fuel_efficient",
+  "headword": "fuel-efficient",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "using relatively little fuel.",
+  "meaningVi": "tiết kiệm nhiên liệu",
+  "existingExample": "Fuel-efficient cars cost less to run.",
+  "mustContainOneOf": [
+   "fuel-efficient",
+   "fuel efficient"
+  ]
+ },
+ {
+  "id": "vocab:electric_vehicle",
+  "headword": "electric vehicle",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a vehicle powered by electricity.",
+  "meaningVi": "xe điện",
+  "existingExample": "More charging points are needed for electric vehicles.",
+  "mustContainOneOf": [
+   "electric vehicles",
+   "electric vehicle",
+   "electric-vehicle"
+  ]
+ },
+ {
+  "id": "vocab:charging_station",
+  "headword": "charging station",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a place where electric vehicles are recharged.",
+  "meaningVi": "trạm sạc",
+  "existingExample": "The city installed hundreds of charging stations.",
+  "mustContainOneOf": [
+   "charging stations",
+   "charging station",
+   "charging-station"
+  ]
+ },
+ {
+  "id": "vocab:toll",
+  "headword": "toll",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a charge for using a road or bridge.",
+  "meaningVi": "phí cầu đường",
+  "existingExample": "Drivers pay a toll to use the new expressway.",
+  "mustContainOneOf": [
+   "toll",
+   "tolls"
+  ]
+ },
+ {
+  "id": "vocab:expressway",
+  "headword": "expressway",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a wide road for fast traffic.",
+  "meaningVi": "đường cao tốc",
+  "existingExample": "A new expressway links the two cities.",
+  "mustContainOneOf": [
+   "expressway",
+   "expressways"
+  ]
+ },
+ {
+  "id": "vocab:flyover",
+  "headword": "flyover",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a bridge carrying one road over another.",
+  "meaningVi": "cầu vượt",
+  "existingExample": "Flyovers were built to ease congestion at major junctions.",
+  "mustContainOneOf": [
+   "flyovers",
+   "flyover"
+  ]
+ },
+ {
+  "id": "vocab:urban_planner",
+  "headword": "urban planner",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a professional who designs how cities develop.",
+  "meaningVi": "nhà quy hoạch đô thị",
+  "existingExample": "Urban planners are designing greener, more compact cities.",
+  "mustContainOneOf": [
+   "urban planners",
+   "urban planner",
+   "urban-planner"
+  ]
+ },
+ {
+  "id": "vocab:smart_city",
+  "headword": "smart city",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a city that uses technology to improve services.",
+  "meaningVi": "thành phố thông minh",
+  "existingExample": "Developing a sustainable smart city requires integrating real-time sensor networks with responsive public transport.",
+  "mustContainOneOf": [
+   "smart city",
+   "smart-city"
+  ]
+ },
+ {
+  "id": "vocab:sanitation",
+  "headword": "sanitation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "systems for clean water and waste removal.",
+  "meaningVi": "hệ thống vệ sinh môi trường",
+  "existingExample": "Poor sanitation spreads disease in slums.",
+  "mustContainOneOf": [
+   "sanitation",
+   "sanitations"
+  ]
+ },
+ {
+  "id": "vocab:waste_management",
+  "headword": "waste management",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "collecting, treating and disposing of waste.",
+  "meaningVi": "quản lý chất thải",
+  "existingExample": "Rapidly growing cities struggle with waste management.",
+  "mustContainOneOf": [
+   "waste management",
+   "waste-management"
+  ]
+ },
+ {
+  "id": "vocab:street_vendor",
+  "headword": "street vendor",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a person selling goods in the street.",
+  "meaningVi": "người bán hàng rong",
+  "existingExample": "Street vendors are part of Hanoi's character.",
+  "mustContainOneOf": [
+   "street vendors",
+   "street vendor",
+   "street-vendor"
+  ]
+ },
+ {
+  "id": "vocab:vibrant",
+  "headword": "vibrant",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "full of energy and life.",
+  "meaningVi": "sôi động",
+  "existingExample": "Hanoi's Old Quarter is a vibrant area.",
+  "mustContainOneOf": [
+   "vibrant"
+  ]
+ },
+ {
+  "id": "vocab:bustling",
+  "headword": "bustling",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "full of busy activity.",
+  "meaningVi": "nhộn nhịp",
+  "existingExample": "The market is bustling from early morning.",
+  "mustContainOneOf": [
+   "bustling"
+  ]
+ },
+ {
+  "id": "vocab:cosmopolitan",
+  "headword": "cosmopolitan",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "containing people from many countries.",
+  "meaningVi": "mang tính quốc tế, đa văn hóa",
+  "existingExample": "London is one of the most cosmopolitan cities in the world.",
+  "mustContainOneOf": [
+   "cosmopolitan"
+  ]
+ },
+ {
+  "id": "vocab:urban_isolation",
+  "headword": "urban isolation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "loneliness experienced by people living in cities.",
+  "meaningVi": "sự cô đơn ở đô thị",
+  "existingExample": "Despite the crowds, many city residents suffer from urban isolation.",
+  "mustContainOneOf": [
+   "urban isolation",
+   "urban-isolation"
+  ]
+ },
+ {
+  "id": "vocab:quality_of_life",
+  "headword": "quality of life",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "how good and comfortable someone's life is.",
+  "meaningVi": "chất lượng cuộc sống",
+  "existingExample": "Green spaces improve residents' quality of life.",
+  "mustContainOneOf": [
+   "quality of life",
+   "quality-of-life"
+  ]
+ },
+ {
+  "id": "vocab:standard_of_living",
+  "headword": "standard of living",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the level of wealth and comfort people have.",
+  "meaningVi": "mức sống",
+  "existingExample": "Cities usually offer a higher standard of living.",
+  "mustContainOneOf": [
+   "standard of living",
+   "standard-of-living"
+  ]
+ },
+ {
+  "id": "vocab:overpopulation",
+  "headword": "overpopulation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "too many people living in an area.",
+  "meaningVi": "tình trạng quá đông dân",
+  "existingExample": "Overpopulation strains housing and water supplies.",
+  "mustContainOneOf": [
+   "overpopulation",
+   "overpopulations"
+  ]
+ },
+ {
+  "id": "vocab:migrant_worker",
+  "headword": "migrant worker",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a person who moves to another place to find work.",
+  "meaningVi": "lao động di cư",
+  "existingExample": "Migrant workers send much of their income home.",
+  "mustContainOneOf": [
+   "migrant workers",
+   "migrant worker",
+   "migrant-worker"
+  ]
+ },
+ {
+  "id": "vocab:strain",
+  "headword": "strain",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "pressure caused by excessive demand.",
+  "meaningVi": "sức ép; gây sức ép",
+  "existingExample": "Rapid growth puts a strain on public services.",
+  "mustContainOneOf": [
+   "strain",
+   "strains"
+  ]
+ },
+ {
+  "id": "vocab:traffic_calming",
+  "headword": "traffic calming",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "measures that slow traffic, such as speed bumps.",
+  "meaningVi": "biện pháp giảm tốc giao thông",
+  "existingExample": "Traffic calming measures make streets safer for children.",
+  "mustContainOneOf": [
+   "traffic calming",
+   "traffic-calming"
+  ]
+ },
+ {
+  "id": "vocab:speed_limit",
+  "headword": "speed limit",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "the maximum legal speed.",
+  "meaningVi": "giới hạn tốc độ",
+  "existingExample": "Lower speed limits reduce serious accidents.",
+  "mustContainOneOf": [
+   "speed limit",
+   "speed-limit"
+  ]
+ },
+ {
+  "id": "vocab:accessibility",
+  "headword": "accessibility",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "how easy a place is to reach or use.",
+  "meaningVi": "khả năng tiếp cận",
+  "existingExample": "Stations should improve accessibility for wheelchair users.",
+  "mustContainOneOf": [
+   "accessibility",
+   "accessibilities"
+  ]
+ },
+ {
+  "id": "vocab:transport_hub",
+  "headword": "transport hub",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a central place where transport routes meet.",
+  "meaningVi": "đầu mối giao thông",
+  "existingExample": "The central station is a major transport hub.",
+  "mustContainOneOf": [
+   "transport hub",
+   "transport-hub"
+  ]
+ },
+ {
+  "id": "vocab:relocate",
+  "headword": "relocate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "to move to a new place.",
+  "meaningVi": "di dời",
+  "existingExample": "Several factories were relocated outside the city.",
+  "mustContainOneOf": [
+   "relocate",
+   "relocates",
+   "relocated",
+   "relocating"
+  ]
+ },
+ {
+  "id": "vocab:displacement",
+  "headword": "displacement",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "forcing people to leave their homes.",
+  "meaningVi": "sự di dời (bắt buộc)",
+  "existingExample": "Large infrastructure projects can cause the displacement of residents.",
+  "mustContainOneOf": [
+   "displacement",
+   "displacements"
+  ]
+ },
+ {
+  "id": "vocab:eviction",
+  "headword": "eviction",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "legally forcing someone to leave their home.",
+  "meaningVi": "sự cưỡng chế ra khỏi nhà",
+  "existingExample": "Rising rents left many families facing eviction.",
+  "mustContainOneOf": [
+   "eviction",
+   "evictions"
+  ]
+ },
+ {
+  "id": "vocab:conservation_area",
+  "headword": "conservation area",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a district protected for its historic character.",
+  "meaningVi": "khu bảo tồn kiến trúc",
+  "existingExample": "The old town was designated a conservation area.",
+  "mustContainOneOf": [
+   "conservation area",
+   "conservation-area"
+  ]
+ },
+ {
+  "id": "vocab:architectural_heritage",
+  "headword": "architectural heritage",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the historic buildings of a place.",
+  "meaningVi": "di sản kiến trúc",
+  "existingExample": "Rapid development threatens the city's architectural heritage.",
+  "mustContainOneOf": [
+   "architectural heritage",
+   "architectural-heritage"
+  ]
+ },
+ {
+  "id": "vocab:concrete_jungle",
+  "headword": "concrete jungle",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "a city area full of buildings with little greenery.",
+  "meaningVi": "rừng bê tông",
+  "existingExample": "Without parks, cities become concrete jungles.",
+  "mustContainOneOf": [
+   "concrete jungle",
+   "concrete-jungle"
+  ]
+ },
+ {
+  "id": "vocab:urban_farming",
+  "headword": "urban farming",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "growing food in cities.",
+  "meaningVi": "nông nghiệp đô thị",
+  "existingExample": "Urban farming makes use of rooftops and vacant land.",
+  "mustContainOneOf": [
+   "urban farming",
+   "urban-farming"
+  ]
+ },
+ {
+  "id": "vocab:rural_exodus",
+  "headword": "rural exodus",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a mass movement of people away from the countryside.",
+  "meaningVi": "làn sóng rời bỏ nông thôn",
+  "existingExample": "A rural exodus has left many villages with only elderly residents.",
+  "mustContainOneOf": [
+   "rural exodus",
+   "rural-exodus"
+  ]
+ },
+ {
+  "id": "vocab:depopulation",
+  "headword": "depopulation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a fall in the number of people in an area.",
+  "meaningVi": "sự suy giảm dân số",
+  "existingExample": "Rural depopulation threatens village schools.",
+  "mustContainOneOf": [
+   "depopulation",
+   "depopulations"
+  ]
+ },
+ {
+  "id": "vocab:public_private_partnership",
+  "headword": "public-private partnership",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a project funded and run jointly by government and private companies.",
+  "meaningVi": "hợp tác công tư",
+  "existingExample": "The new metro line was built through a public-private partnership.",
+  "mustContainOneOf": [
+   "public-private partnership",
+   "public-private-partnership",
+   "public private partnership"
+  ]
+ },
+ {
+  "id": "vocab:urban_planning",
+  "headword": "urban planning",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "the design and organisation of how cities develop.",
+  "meaningVi": "quy hoạch đô thị",
+  "existingExample": "Poor urban planning has led to a lack of parks in many districts.",
+  "mustContainOneOf": [
+   "urban planning",
+   "urban-planning"
+  ]
+ },
+ {
+  "id": "vocab:arterial_road",
+  "headword": "arterial road",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport",
+   "urban",
+   "tourism"
+  ],
+  "definitionEn": "A high-capacity urban road designed to carry large volumes of traffic between city centres, suburbs, and highways.",
+  "meaningVi": "tuyến đường huyết mạch chính của đô thị",
+  "existingExample": "Dedicated bus lanes along every major arterial road significantly reduced morning travel times for outer-suburb commuters.",
+  "mustContainOneOf": [
+   "arterial road",
+   "arterial-road"
+  ]
+ },
+ {
+  "id": "vocab:aviation",
+  "headword": "aviation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "The design, manufacture, operation, and commercial management of aircraft and air transport networks.",
+  "meaningVi": "ngành hàng không",
+  "existingExample": "Decarbonising long-haul aviation remains one of the most formidable technical hurdles facing global transport planners.",
+  "mustContainOneOf": [
+   "aviation",
+   "aviations"
+  ]
+ },
+ {
+  "id": "vocab:ballast",
+  "headword": "ballast",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "Crushed stone laid beneath railway sleepers to distribute load and aid drainage, or heavy material used to stabilise ships.",
+  "meaningVi": "đá dằn đường ray; vật dằn ổn định tàu thủy",
+  "existingExample": "Extreme summer heatwaves can destabilise railway ballast, compelling operators to impose strict speed restrictions.",
+  "mustContainOneOf": [
+   "ballast",
+   "ballasts"
+  ]
+ }
+]

@@ -20,158 +20,158 @@
       "lineId": "l01",
       "speakerId": "lec",
       "text": "Good morning, everyone. Stretching in an unbroken green belt across northern Canada, Scandinavia, and Siberia, the boreal forest forms the largest terrestrial biome on Earth. Above ground it can look remarkably uniform, dominated by just a handful of hardy spruce, pine, and fir species adapted to long subarctic winters. Beneath the spongy mossy floor, however, lies an astonishingly dense, intricate web of symbiotic fungi.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 27.68
     },
     {
       "lineId": "l02",
       "speakerId": "lec",
       "text": "To understand why northern conifers depend so heavily on fungal partners, consider the harshness of boreal soil. Moisture is rarely the limiting factor during the brief thaw; rather, freezing winters and acidic fallen needles slow bacterial decay so severely that trees suffer a chronic shortage of usable nitrogen.",
-      "start": 0,
-      "end": 0
+      "start": 28.1,
+      "end": 46.03
     },
     {
       "lineId": "l03",
       "speakerId": "lec",
       "text": "Conifer roots on their own are relatively thick, coarse, and inefficient at foraging through tightly packed organic litter, especially when essential elements remain locked inside tough plant polymers.",
-      "start": 0,
-      "end": 0
+      "start": 46.45,
+      "end": 56.57
     },
     {
       "lineId": "l04",
       "speakerId": "lec",
       "text": "By wrapping root tips in sheaths of microscopic ectomycorrhizal filaments, fungi expand a tree's effective absorptive surface hundreds of times over. The partnership is strictly reciprocal: in return for scarce soil minerals, the host conifer channels up to a third of its photosynthetic sugars downward to nourish the fungal colony.",
-      "start": 0,
-      "end": 0
+      "start": 56.99,
+      "end": 75.52
     },
     {
       "lineId": "l05",
       "speakerId": "lec",
       "text": "Because a single fungal individual can colonize the roots of dozens of adjacent trees simultaneously, forest stands become physically interconnected underground across remarkably broad patches of woodland.",
-      "start": 0,
-      "end": 0,
+      "start": 75.94,
+      "end": 86.58,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l06",
       "speakerId": "lec",
       "text": "Let's turn now to what actually moves through these common mycorrhizal networks, and how ecologists interpret those flows.",
-      "start": 0,
-      "end": 0
+      "start": 87.91,
+      "end": 94.34
     },
     {
       "lineId": "l07",
       "speakerId": "lec",
       "text": "By exposing mature canopy trees to trace amounts of harmless carbon isotopes, researchers demonstrated that carbon moves rapidly down trunk tissues, across fungal bridges, and into shaded seedlings struggling beneath dense foliage.",
-      "start": 0,
-      "end": 0
+      "start": 94.76,
+      "end": 107.29
     },
     {
       "lineId": "l08",
       "speakerId": "lec",
       "text": "Water and dissolved minerals can likewise shift along subtle pressure gradients during dry midsummer spells, buffering shallow-rooted youngsters when the top layer of forest moss dries out.",
-      "start": 0,
-      "end": 0
+      "start": 107.71,
+      "end": 117.23
     },
     {
       "lineId": "l09",
       "speakerId": "lec",
       "text": "Even more intriguing is biochemical communication. When bark beetles bore into an injured spruce, stress compounds travel through the fungal threads into neighbouring trees, prompting unharmed conifers to synthesize bitter chemical defences before the insects even reach them.",
-      "start": 0,
-      "end": 0
+      "start": 117.65,
+      "end": 132.94
     },
     {
       "lineId": "l10",
       "speakerId": "lec",
       "text": "Yet ecologists caution against painting this network as a selfless forest charity. Detailed measurements reveal that fungi act like shrewd brokers, stockpiling scarce nutrients and trading them preferentially with hosts that pay the highest carbon price, creating competitive underground markets rather than altruistic communes.",
-      "start": 0,
-      "end": 0
+      "start": 133.36,
+      "end": 151.44
     },
     {
       "lineId": "l11",
       "speakerId": "lec",
       "text": "Understanding this tension between cooperation and fungal self-interest has become a central theme in modern plant ecology.",
-      "start": 0,
-      "end": 0,
+      "start": 151.86,
+      "end": 158.41,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l12",
       "speakerId": "lec",
       "text": "Moving on from ecological mechanisms, let's examine why several prominent researchers urge healthy scepticism toward sweeping claims about forest-wide sharing.",
-      "start": 0,
-      "end": 0
+      "start": 159.74,
+      "end": 168.41
     },
     {
       "lineId": "l13",
       "speakerId": "lec",
       "text": "Separating genuine fungal-bridge transport from ordinary passive seepage through damp soil is technically demanding. To isolate the pathway, field teams bury ultra-fine nylon mesh screens that block neighbouring tree roots while allowing slender fungal fibres to grow straight through.",
-      "start": 0,
-      "end": 0
+      "start": 168.83,
+      "end": 184.34
     },
     {
       "lineId": "l14",
       "speakerId": "lec",
       "text": "Even when isotope tracers clearly cross those mesh screens, critics point out that the absolute quantities transferred are often modest compared with what a healthy sapling fixes through its own sunlit needles, and much of the carbon stays inside the fungus itself.",
-      "start": 0,
-      "end": 0
+      "start": 184.76,
+      "end": 198.4
     },
     {
       "lineId": "l15",
       "speakerId": "lec",
       "text": "Furthermore, a large share of the most dramatic survival boosts come from controlled greenhouse pots using sterilized soil. When ecologists try to reproduce those gains across complex wild sites, the results are far more variable, and sometimes connected seedlings perform no better than isolated ones.",
-      "start": 0,
-      "end": 0
+      "start": 198.82,
+      "end": 216.32
     },
     {
       "lineId": "l16",
       "speakerId": "lec",
       "text": "In short, underground links are undeniably real and ecologically significant, yet their net benefit to any individual tree depends heavily on species mix, soil chemistry, and local competition for light.",
-      "start": 0,
-      "end": 0,
+      "start": 216.74,
+      "end": 228.57,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l17",
       "speakerId": "lec",
       "text": "Finally, let's consider what boreal mycorrhizal research means in practical terms for sustainable timber forestry and global climate accounting.",
-      "start": 0,
-      "end": 0
+      "start": 229.9,
+      "end": 237.54
     },
     {
       "lineId": "l18",
       "speakerId": "lec",
       "text": "Traditional industrial clear-cutting strips away the entire canopy at once, exposing soil to heat and starving host-dependent fungi. Applying commercial synthetic fertilizer rarely restores natural fungal diversity. Instead, retention forestry leaves scattered mature legacy trees standing across a cut block to act as a living reservoir that swiftly inoculates newly planted saplings.",
-      "start": 0,
-      "end": 0
+      "start": 237.96,
+      "end": 261.48
     },
     {
       "lineId": "l19",
       "speakerId": "lec",
       "text": "Beyond timber regeneration, these hidden fungal webs also play an unexpectedly large role in regulating Earth's global carbon budget.",
-      "start": 0,
-      "end": 0
+      "start": 261.9,
+      "end": 269.4
     },
     {
       "lineId": "l20",
       "speakerId": "lec",
       "text": "For decades, climate modellers assumed decaying surface needles accounted for almost all boreal soil carbon. Recent molecular profiling overturned that view, showing that slow-decaying dead fungal tissues actually drive more than half of long-term underground storage across northern conifer zones.",
-      "start": 0,
-      "end": 0
+      "start": 269.82,
+      "end": 286.39
     },
     {
       "lineId": "l21",
       "speakerId": "lec",
       "text": "That finding makes northern warming doubly concerning: hotter, drier summers are triggering increasingly intense wildfires that burn deep into the upper organic soil, destroying the very fungal communities that lock carbon away. Protecting boreal resilience therefore means safeguarding both the canopy above and the living network below. Thank you.",
-      "start": 0,
-      "end": 0
+      "start": 286.81,
+      "end": 306.75
     }
   ],
   "audio": {
     "path": "audio/listening/p4_005.mp3",
-    "durationSec": 365,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 308.1,
+    "sha256": "cdaa24da1873fa99c79fbe981dc320991414b968e23ab10b6099c4fe44d11cfb",
+    "loudnessLUFS": -15.5
   },
   "questionGroups": [
     {
@@ -250,15 +250,15 @@
           },
           "evidence": {
             "lineId": "l02",
-            "start": 0,
-            "end": 0
+            "start": 28.1,
+            "end": 46.03
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 28.1,
+              "end": 46.03,
               "decoy": "moisture",
               "explanationVi": "Giảng viên loại trừ 'moisture' (hiếm khi là yếu tố giới hạn) và khẳng định cây thiếu 'nitrogen'."
             }
@@ -275,15 +275,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 56.99,
+            "end": 75.52
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 56.99,
+              "end": 75.52,
               "explanationVi": "Phải điền dạng số nhiều 'sugars' đúng như bài giảng."
             }
           ]
@@ -299,15 +299,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 94.76,
+            "end": 107.29
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 94.76,
+              "end": 107.29,
               "explanationVi": "Danh từ số nhiều 'seedlings' bắt buộc có -s."
             }
           ]
@@ -324,15 +324,15 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 117.65,
+            "end": 132.94
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 117.65,
+              "end": 132.94,
               "explanationVi": "'produce' diễn đạt lại 'synthesize'; chấp nhận cả chính tả Anh 'defences' và Mỹ 'defenses'."
             }
           ]
@@ -348,15 +348,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 133.36,
+            "end": 151.44
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 133.36,
+              "end": 151.44,
               "decoy": "charity",
               "explanationVi": "Bài giảng bác bỏ hình ảnh 'charity' và mô tả cơ chế như những 'markets' cạnh tranh."
             }
@@ -374,15 +374,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 168.83,
+            "end": 184.34
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 168.83,
+              "end": 184.34,
               "explanationVi": "Cần dạng số nhiều 'fibres/fibers' (chấp nhận cả biến thể Anh-Mỹ)."
             }
           ]
@@ -398,15 +398,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 198.82,
+            "end": 216.32
           },
           "traps": [
             {
               "type": "homophone_minimal_pair",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 198.82,
+              "end": 216.32,
               "decoy": "sights",
               "explanationVi": "'sites' (địa điểm thực địa) đồng âm với 'sights' (cảnh quan/tầm nhìn)."
             }
@@ -423,15 +423,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 237.96,
+            "end": 261.48
           },
           "traps": [
             {
               "type": "signpost_skip",
               "lineId": "l18",
-              "start": 0,
-              "end": 0,
+              "start": 237.96,
+              "end": 261.48,
               "decoy": "fertilizer",
               "explanationVi": "Người nói nhắc qua phân bón hóa học ('fertilizer') không hiệu quả trước khi chốt vai trò 'reservoir' của cây trưởng thành."
             }
@@ -448,15 +448,15 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 269.82,
+            "end": 286.39
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l20",
-              "start": 0,
-              "end": 0,
+              "start": 269.82,
+              "end": 286.39,
               "decoy": "needles",
               "explanationVi": "Giả thuyết cũ quy cho lá kim rụng ('needles') đã bị bác bỏ; mô nấm chết quyết định quá trình 'storage'."
             }
@@ -473,15 +473,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 286.81,
+            "end": 306.75
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 286.81,
+              "end": 306.75,
               "explanationVi": "'more severe' diễn đạt lại 'increasingly intense' ngay trước danh từ số nhiều 'wildfires'."
             }
           ]
@@ -495,7 +495,18 @@
     "license": "edge-tts (personal use)",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "lec=en-CA-ClaraNeural",
+    "voices": {
+      "lec": "en-CA-ClaraNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.99,
+    "renderedAt": "2026-11-25"
   }
 }

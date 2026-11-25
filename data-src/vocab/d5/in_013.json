@@ -1,0 +1,1838 @@
+[
+ {
+  "id": "vocab:blue_sky_research",
+  "headword": "blue-sky research",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "research without immediate practical aims.",
+  "meaningVi": "nghiên cứu cơ bản (không nhắm ứng dụng ngay)",
+  "existingExample": "Blue-sky research can produce unexpected benefits.",
+  "mustContainOneOf": [
+   "blue-sky research",
+   "blue-sky-research",
+   "blue sky research"
+  ]
+ },
+ {
+  "id": "vocab:applied_research",
+  "headword": "applied research",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "research aimed at solving practical problems.",
+  "meaningVi": "nghiên cứu ứng dụng",
+  "existingExample": "Applied research turns discoveries into useful products.",
+  "mustContainOneOf": [
+   "applied research",
+   "applied-research"
+  ]
+ },
+ {
+  "id": "vocab:collaborate",
+  "headword": "collaborate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to work together with others.",
+  "meaningVi": "hợp tác",
+  "existingExample": "Scientists increasingly collaborate across borders.",
+  "mustContainOneOf": [
+   "collaborate",
+   "collaborates",
+   "collaborated",
+   "collaborating"
+  ]
+ },
+ {
+  "id": "vocab:research_and_development",
+  "headword": "research and development",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "work to create new products and technology.",
+  "meaningVi": "nghiên cứu và phát triển",
+  "existingExample": "Technology firms spend heavily on research and development.",
+  "mustContainOneOf": [
+   "research and development",
+   "research-and-development"
+  ]
+ },
+ {
+  "id": "vocab:specimen",
+  "headword": "specimen",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "an example of something used for study.",
+  "meaningVi": "mẫu vật",
+  "existingExample": "Researchers collected specimens from the river.",
+  "mustContainOneOf": [
+   "specimens",
+   "specimen"
+  ]
+ },
+ {
+  "id": "vocab:microscope",
+  "headword": "microscope",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "an instrument for viewing very small objects.",
+  "meaningVi": "kính hiển vi",
+  "existingExample": "Bacteria can only be seen under a microscope.",
+  "mustContainOneOf": [
+   "microscope",
+   "microscopes"
+  ]
+ },
+ {
+  "id": "vocab:classify",
+  "headword": "classify",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to arrange things into groups.",
+  "meaningVi": "phân loại",
+  "existingExample": "Scientists classify animals according to their features.",
+  "mustContainOneOf": [
+   "classify",
+   "classifies",
+   "classified",
+   "classifying"
+  ]
+ },
+ {
+  "id": "vocab:evolution",
+  "headword": "evolution",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the gradual development of living things over time.",
+  "meaningVi": "sự tiến hóa",
+  "existingExample": "Evolution explains how species adapt to their environment.",
+  "mustContainOneOf": [
+   "evolution",
+   "evolutions"
+  ]
+ },
+ {
+  "id": "vocab:natural_selection",
+  "headword": "natural selection",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the process by which better-adapted organisms survive and reproduce.",
+  "meaningVi": "chọn lọc tự nhiên",
+  "existingExample": "Natural selection favours traits that aid survival.",
+  "mustContainOneOf": [
+   "natural selection",
+   "natural-selection"
+  ]
+ },
+ {
+  "id": "vocab:mutation",
+  "headword": "mutation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a change in genetic material.",
+  "meaningVi": "đột biến",
+  "existingExample": "Some mutations cause inherited diseases.",
+  "mustContainOneOf": [
+   "mutation",
+   "mutations"
+  ]
+ },
+ {
+  "id": "vocab:organism",
+  "headword": "organism",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a living thing.",
+  "meaningVi": "sinh vật",
+  "existingExample": "Single-celled organisms were the earliest forms of life on Earth.",
+  "mustContainOneOf": [
+   "organisms",
+   "organism"
+  ]
+ },
+ {
+  "id": "vocab:fossil",
+  "headword": "fossil",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the remains of an ancient plant or animal preserved in rock.",
+  "meaningVi": "hóa thạch",
+  "existingExample": "Fossils reveal how ancient species lived.",
+  "mustContainOneOf": [
+   "fossil",
+   "fossils"
+  ]
+ },
+ {
+  "id": "vocab:archaeology",
+  "headword": "archaeology",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the study of past societies through their remains.",
+  "meaningVi": "khảo cổ học",
+  "existingExample": "Archaeology helps us understand ancient cultures.",
+  "mustContainOneOf": [
+   "archaeology",
+   "archaeologies"
+  ]
+ },
+ {
+  "id": "vocab:excavation",
+  "headword": "excavation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "digging in order to find ancient objects.",
+  "meaningVi": "sự khai quật",
+  "existingExample": "Excavations uncovered the remains of an ancient settlement.",
+  "mustContainOneOf": [
+   "excavations",
+   "excavation"
+  ]
+ },
+ {
+  "id": "vocab:artefact",
+  "headword": "artefact",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "an object made by people in the past.",
+  "meaningVi": "hiện vật",
+  "existingExample": "The museum displays artefacts from the Bronze Age.",
+  "mustContainOneOf": [
+   "artefacts",
+   "artefact"
+  ]
+ },
+ {
+  "id": "vocab:carbon_dating",
+  "headword": "carbon dating",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a method of estimating the age of ancient remains.",
+  "meaningVi": "định tuổi bằng carbon phóng xạ",
+  "existingExample": "Carbon dating showed the bones were around 5,000 years old.",
+  "mustContainOneOf": [
+   "carbon dating",
+   "carbon-dating"
+  ]
+ },
+ {
+  "id": "vocab:theoretical_framework",
+  "headword": "theoretical framework",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a set of theories used to guide research.",
+  "meaningVi": "khung lý thuyết",
+  "existingExample": "The study is based on a clear theoretical framework.",
+  "mustContainOneOf": [
+   "theoretical framework",
+   "theoretical-framework"
+  ]
+ },
+ {
+  "id": "vocab:paradigm_shift",
+  "headword": "paradigm shift",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a fundamental change in approach or assumptions.",
+  "meaningVi": "sự thay đổi mô hình tư duy",
+  "existingExample": "The discovery represented a paradigm shift in physics.",
+  "mustContainOneOf": [
+   "paradigm shift",
+   "paradigm-shift"
+  ]
+ },
+ {
+  "id": "vocab:debunk",
+  "headword": "debunk",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to show that a belief or claim is false.",
+  "meaningVi": "vạch trần quan niệm sai",
+  "existingExample": "Scientists have debunked the myth that vaccines cause autism.",
+  "mustContainOneOf": [
+   "debunk",
+   "debunks",
+   "debunked",
+   "debunking"
+  ]
+ },
+ {
+  "id": "vocab:refute",
+  "headword": "refute",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to prove that something is wrong.",
+  "meaningVi": "bác bỏ",
+  "existingExample": "New data refuted the earlier theory.",
+  "mustContainOneOf": [
+   "refute",
+   "refutes",
+   "refuted",
+   "refuting"
+  ]
+ },
+ {
+  "id": "vocab:substantiate",
+  "headword": "substantiate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to provide evidence to support a claim.",
+  "meaningVi": "chứng minh bằng chứng cứ",
+  "existingExample": "The company could not substantiate its health claims.",
+  "mustContainOneOf": [
+   "substantiate",
+   "substantiates",
+   "substantiated",
+   "substantiating"
+  ]
+ },
+ {
+  "id": "vocab:pseudoscience",
+  "headword": "pseudoscience",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "beliefs falsely presented as scientific.",
+  "meaningVi": "ngụy khoa học",
+  "existingExample": "Astrology is widely regarded as pseudoscience.",
+  "mustContainOneOf": [
+   "pseudoscience",
+   "pseudosciences"
+  ]
+ },
+ {
+  "id": "vocab:sceptical",
+  "headword": "sceptical",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "having doubts about a claim.",
+  "meaningVi": "hoài nghi",
+  "existingExample": "Scientists are sceptical of claims that lack evidence.",
+  "mustContainOneOf": [
+   "sceptical"
+  ]
+ },
+ {
+  "id": "vocab:hypothesise",
+  "headword": "hypothesise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to suggest an explanation that can be tested.",
+  "meaningVi": "đặt giả thuyết",
+  "existingExample": "Researchers hypothesised that diet affects sleep quality.",
+  "mustContainOneOf": [
+   "hypothesise",
+   "hypothesize",
+   "hypothesises",
+   "hypothesised",
+   "hypothesising",
+   "hypothesized"
+  ]
+ },
+ {
+  "id": "vocab:measurable",
+  "headword": "measurable",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "able to be measured.",
+  "meaningVi": "đo lường được",
+  "existingExample": "The programme produced measurable improvements in reading.",
+  "mustContainOneOf": [
+   "measurable"
+  ]
+ },
+ {
+  "id": "vocab:frontier",
+  "headword": "frontier",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the limit of knowledge in a field.",
+  "meaningVi": "giới hạn tri thức (biên giới)",
+  "existingExample": "Quantum computing lies at the frontiers of science.",
+  "mustContainOneOf": [
+   "frontiers",
+   "frontier"
+  ]
+ },
+ {
+  "id": "vocab:quantum_computing",
+  "headword": "quantum computing",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "computing based on the principles of quantum physics.",
+  "meaningVi": "điện toán lượng tử",
+  "existingExample": "Quantum computing could solve problems beyond today's computers.",
+  "mustContainOneOf": [
+   "quantum computing",
+   "quantum-computing"
+  ]
+ },
+ {
+  "id": "vocab:ethics_committee",
+  "headword": "ethics committee",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a group that checks whether research is ethical.",
+  "meaningVi": "hội đồng đạo đức",
+  "existingExample": "Experiments on humans need approval from an ethics committee.",
+  "mustContainOneOf": [
+   "ethics committee",
+   "ethics-committee"
+  ]
+ },
+ {
+  "id": "vocab:informed_consent",
+  "headword": "informed consent",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "agreement given with full understanding of the risks.",
+  "meaningVi": "sự đồng ý trên cơ sở hiểu rõ",
+  "existingExample": "Participants must give informed consent before the trial.",
+  "mustContainOneOf": [
+   "informed consent",
+   "informed-consent"
+  ]
+ },
+ {
+  "id": "vocab:tamper_with",
+  "headword": "tamper with",
+  "pos": [
+   "phr_v"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to change something without permission, often harmfully.",
+  "meaningVi": "can thiệp trái phép",
+  "existingExample": "Bioethicists warn that allowing commercial laboratories to tamper with the human genome could have irreversible consequences.",
+  "mustContainOneOf": [
+   "tamper with",
+   "tamper-with"
+  ]
+ },
+ {
+  "id": "vocab:play_god",
+  "headword": "play God",
+  "pos": [
+   "v"
+  ],
+  "level": 2,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to act as if one has unlimited power over life.",
+  "meaningVi": "đóng vai Thượng đế",
+  "existingExample": "Opponents of human cloning argue that researchers should not play God by manipulating embryonic DNA.",
+  "mustContainOneOf": [
+   "play god",
+   "play-god"
+  ]
+ },
+ {
+  "id": "vocab:unintended_consequences",
+  "headword": "unintended consequences",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "results that were not planned or expected.",
+  "meaningVi": "hậu quả ngoài ý muốn",
+  "existingExample": "New technologies can have unintended consequences.",
+  "mustContainOneOf": [
+   "unintended consequences",
+   "unintended-consequences"
+  ]
+ },
+ {
+  "id": "vocab:peer_reviewed_journal",
+  "headword": "peer-reviewed journal",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a publication whose articles are checked by experts before publication.",
+  "meaningVi": "tạp chí khoa học có bình duyệt",
+  "existingExample": "The findings were published in a peer-reviewed journal.",
+  "mustContainOneOf": [
+   "peer-reviewed journal",
+   "peer-reviewed jornal",
+   "peer-reviewed-journal",
+   "peer reviewed journal",
+   "peer-reviewed-jornal",
+   "peer reviewed jornal"
+  ]
+ },
+ {
+  "id": "vocab:scientific_breakthrough",
+  "headword": "scientific breakthrough",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "an important discovery in science.",
+  "meaningVi": "bước đột phá khoa học",
+  "existingExample": "The vaccine was hailed as a major scientific breakthrough.",
+  "mustContainOneOf": [
+   "scientific breakthrough",
+   "scientific-breakthrough"
+  ]
+ },
+ {
+  "id": "vocab:acoustics",
+  "headword": "acoustics",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The branch of physics concerned with the production, transmission, control, and reception of sound waves.",
+  "meaningVi": "âm học; đặc tính truyền âm của không gian",
+  "existingExample": "Advances in architectural acoustics allow modern lecture halls to project speech clearly without electronic amplification.",
+  "mustContainOneOf": [
+   "acoustics",
+   "acousticses"
+  ]
+ },
+ {
+  "id": "vocab:astrophysics",
+  "headword": "astrophysics",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "The branch of astronomy using physics and chemistry to explain the origin and evolution of celestial bodies.",
+  "meaningVi": "vật lý thiên văn",
+  "existingExample": "Deep-space infrared telescopes have revolutionised modern astrophysics by revealing galaxies formed shortly after the Big Bang.",
+  "mustContainOneOf": [
+   "astrophysics",
+   "astrophysicses"
+  ]
+ },
+ {
+  "id": "vocab:axiom",
+  "headword": "axiom",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "A foundational statement or proposition accepted as self-evidently true without requiring further proof within a logical system.",
+  "meaningVi": "tiên đề, nguyên lý cơ bản được thừa nhận hiển nhiên",
+  "existingExample": "Euclidean geometry rests upon a concise set of axioms from which hundreds of mathematical theorems are rigorously deduced.",
+  "mustContainOneOf": [
+   "axiom",
+   "axioms"
+  ]
+ },
+ {
+  "id": "vocab:bioluminescence",
+  "headword": "bioluminescence",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The biochemical emission of visible light by living organisms such as deep-sea fish, fireflies, and marine plankton.",
+  "meaningVi": "hiện tượng phát quang sinh học",
+  "existingExample": "Marine biologists study deep-ocean bioluminescence to understand how predators and prey communicate in total darkness.",
+  "mustContainOneOf": [
+   "bioluminescence",
+   "bioluminescences"
+  ]
+ },
+ {
+  "id": "vocab:catalyst",
+  "headword": "catalyst",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "A substance that accelerates the rate of a chemical reaction without being permanently consumed, or an agent prompting rapid change.",
+  "meaningVi": "chất xúc tác; tác nhân thúc đẩy biến đổi nhanh chóng",
+  "existingExample": "Developing affordable platinum-free catalysts is crucial for making industrial hydrogen production economically viable.",
+  "mustContainOneOf": [
+   "catalyst",
+   "catalysts"
+  ]
+ },
+ {
+  "id": "vocab:celestial",
+  "headword": "celestial",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "Relating to outer space, stars, planets, or astronomical phenomena observed in the sky.",
+  "meaningVi": "thuộc về thiên thể, bầu trời vũ trụ",
+  "existingExample": "Ancient navigators charted vast ocean routes by tracking subtle seasonal shifts in celestial bodies.",
+  "mustContainOneOf": [
+   "celestial"
+  ]
+ },
+ {
+  "id": "vocab:cognition",
+  "headword": "cognition",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The mental processes involved in acquiring, storing, retrieving, and processing knowledge through thought and perception.",
+  "meaningVi": "quá trình nhận thức, hoạt động tư duy trí tuệ",
+  "existingExample": "Functional brain imaging has illuminated how bilingualism strengthens executive cognition across the human lifespan.",
+  "mustContainOneOf": [
+   "cognition",
+   "cognitions"
+  ]
+ },
+ {
+  "id": "vocab:confounding_variable",
+  "headword": "confounding variable",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "An unmeasured extraneous factor that correlates with both the independent and dependent variables, distorting study results.",
+  "meaningVi": "biến nhiễu trong nghiên cứu thực nghiệm",
+  "existingExample": "Without carefully controlling for socioeconomic status as a confounding variable, observational findings can easily mislead researchers.",
+  "mustContainOneOf": [
+   "confounding variable",
+   "confounding-variable"
+  ]
+ },
+ {
+  "id": "vocab:cosmology",
+  "headword": "cosmology",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "The scientific study of the origin, large-scale structure, expansion, and ultimate fate of the universe.",
+  "meaningVi": "vũ trụ học",
+  "existingExample": "Measurements of cosmic microwave background radiation transformed twentieth-century cosmology into a precision empirical discipline.",
+  "mustContainOneOf": [
+   "cosmology",
+   "cosmologies"
+  ]
+ },
+ {
+  "id": "vocab:cryogenics",
+  "headword": "cryogenics",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The production and behaviour of materials, superconducting systems, and biological samples at extremely low temperatures.",
+  "meaningVi": "kỹ thuật nhiệt độ cực thấp, công nghệ làm lạnh sâu",
+  "existingExample": "Advancements in cryogenics are essential for cooling superconducting magnets inside both particle accelerators and medical scanners.",
+  "mustContainOneOf": [
+   "cryogenics",
+   "cryogenicses"
+  ]
+ },
+ {
+  "id": "vocab:deductive",
+  "headword": "deductive",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Characterised by reasoning from general principles or established premises to reach a logically certain specific conclusion.",
+  "meaningVi": "mang tính suy diễn",
+  "existingExample": "Physicists combine deductive mathematical modelling with laboratory experiments to test predictions about subatomic behaviour.",
+  "mustContainOneOf": [
+   "deductive"
+  ]
+ },
+ {
+  "id": "vocab:electromagnetism",
+  "headword": "electromagnetism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The fundamental physical force and branch of physics governing the interaction between electrically charged particles and magnetic fields.",
+  "meaningVi": "điện từ học, hiện tượng tương tác điện từ",
+  "existingExample": "James Clerk Maxwell's equations unified electricity and magnetism into a single theory of electromagnetism that underpins modern telecommunications.",
+  "mustContainOneOf": [
+   "electromagnetism",
+   "electromagnetisms"
+  ]
+ },
+ {
+  "id": "vocab:entropy",
+  "headword": "entropy",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "A thermodynamic measure of disorder or unavailable energy within a closed physical system that naturally increases over time.",
+  "meaningVi": "độ hỗn loạn nhiệt động lực học (entropy)",
+  "existingExample": "According to the second law of thermodynamics, the total entropy of an isolated physical system inevitably rises.",
+  "mustContainOneOf": [
+   "entropy",
+   "entropies"
+  ]
+ },
+ {
+  "id": "vocab:epistemology",
+  "headword": "epistemology",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The philosophical and scientific inquiry into the nature, origin, limits, and validity of human knowledge.",
+  "meaningVi": "nhận thức luận, học thuyết về bản chất tri thức",
+  "existingExample": "Debates in scientific epistemology examine how researchers distinguish justified empirical knowledge from untested conjecture.",
+  "mustContainOneOf": [
+   "epistemology",
+   "epistemologies"
+  ]
+ },
+ {
+  "id": "vocab:equinox",
+  "headword": "equinox",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Either annual point when the sun crosses the equator, creating nearly equal day and night worldwide.",
+  "meaningVi": "điểm phân (xuân phân và thu phân)",
+  "existingExample": "Meteorologists track shifts in atmospheric circulation around the spring equinox to forecast seasonal monsoon patterns.",
+  "mustContainOneOf": [
+   "equinox",
+   "equinoxes"
+  ]
+ },
+ {
+  "id": "vocab:extrapolate",
+  "headword": "extrapolate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "To extend known empirical trends or experimental data to estimate unknown values beyond the observed range.",
+  "meaningVi": "ngoại suy, ước tính mở rộng từ dữ liệu đã biết",
+  "existingExample": "Climate modellers caution that researchers cannot safely extrapolate local glacier melt rates to entire polar ice sheets.",
+  "mustContainOneOf": [
+   "extrapolate",
+   "extrapolates",
+   "extrapolated",
+   "extrapolating"
+  ]
+ },
+ {
+  "id": "vocab:falsifiable",
+  "headword": "falsifiable",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Capable of being proven false through observation, measurement, or repeatable empirical experimentation.",
+  "meaningVi": "có thể kiểm chứng bác bỏ (tiêu chuẩn khoa học)",
+  "existingExample": "Karl Popper famously maintained that a genuinely scientific theory must generate clear, falsifiable predictions.",
+  "mustContainOneOf": [
+   "falsifiable"
+  ]
+ },
+ {
+  "id": "vocab:fission",
+  "headword": "fission",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The splitting of a heavy atomic nucleus into lighter nuclei releasing vast energy, or cellular division in biology.",
+  "meaningVi": "phản ứng phân hạch hạt nhân; sự phân đôi tế bào",
+  "existingExample": "Conventional nuclear power plants harness controlled uranium fission to generate steady low-carbon baseload electricity.",
+  "mustContainOneOf": [
+   "fission",
+   "fissions"
+  ]
+ },
+ {
+  "id": "vocab:fusion",
+  "headword": "fusion",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The process of combining two light atomic nuclei at extreme temperatures to form a heavier nucleus and release immense energy.",
+  "meaningVi": "phản ứng nhiệt hạch, sự hợp nhất hạt nhân",
+  "existingExample": "Sustaining a net-positive nuclear fusion reaction in laboratory tokamaks could eventually provide virtually limitless clean energy.",
+  "mustContainOneOf": [
+   "fusion",
+   "fusions"
+  ]
+ },
+ {
+  "id": "vocab:gravitational",
+  "headword": "gravitational",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Relating to or caused by the universal force of attraction exerted between all bodies possessing mass.",
+  "meaningVi": "thuộc về lực hấp dẫn, trọng lực",
+  "existingExample": "Laser interferometers detected faint gravitational waves emitted by two distant black holes spiralling into collision.",
+  "mustContainOneOf": [
+   "gravitational"
+  ]
+ },
+ {
+  "id": "vocab:heuristic",
+  "headword": "heuristic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Enabling discovery or problem-solving through practical trial, iterative rules of thumb, or exploratory investigation.",
+  "meaningVi": "mang tính khám phá thực nghiệm, định hướng giải quyết vấn đề",
+  "existingExample": "Cognitive scientists investigate how heuristic shortcuts help humans make rapid judgements under conditions of uncertainty.",
+  "mustContainOneOf": [
+   "heuristic"
+  ]
+ },
+ {
+  "id": "vocab:inductive",
+  "headword": "inductive",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Involving reasoning from specific empirical observations and measurements to formulate broader generalisations or theories.",
+  "meaningVi": "mang tính quy nạp",
+  "existingExample": "Charles Darwin relied heavily on inductive reasoning, assembling decades of field specimens before proposing natural selection.",
+  "mustContainOneOf": [
+   "inductive"
+  ]
+ },
+ {
+  "id": "vocab:inertia",
+  "headword": "inertia",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The physical tendency of an object to stay at rest or in steady motion unless acted upon.",
+  "meaningVi": "quán tính vật lý; sức ỳ chống lại sự thay đổi",
+  "existingExample": "Engineers calculating spacecraft trajectories must carefully account for orbital inertia before firing course-correction thrusters.",
+  "mustContainOneOf": [
+   "inertia",
+   "inertias"
+  ]
+ },
+ {
+  "id": "vocab:isotope",
+  "headword": "isotope",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "One of two or more forms of the same chemical element having identical proton counts but different numbers of neutrons.",
+  "meaningVi": "đồng vị hóa học hoặc phóng xạ",
+  "existingExample": "Geologists measure ratios of oxygen isotopes trapped inside Antarctic ice cores to reconstruct prehistoric atmospheric temperatures.",
+  "mustContainOneOf": [
+   "isotope",
+   "isotopes"
+  ]
+ },
+ {
+  "id": "vocab:kinetic",
+  "headword": "kinetic",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "Relating to, resulting from, or possessing physical motion and mechanical movement.",
+  "meaningVi": "thuộc về động năng, liên quan đến chuyển động",
+  "existingExample": "Modern tidal turbines capture the immense kinetic energy of coastal ocean currents to generate predictable renewable power.",
+  "mustContainOneOf": [
+   "kinetic"
+  ]
+ },
+ {
+  "id": "vocab:meta_analysis",
+  "headword": "meta-analysis",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "A quantitative statistical method that pools and evaluates data from multiple independent studies on the same scientific question.",
+  "meaningVi": "phân tích tổng hợp dữ liệu từ nhiều nghiên cứu độc lập",
+  "existingExample": "A comprehensive meta-analysis of forty longitudinal trials confirmed a consistent link between sleep loss and impaired memory.",
+  "mustContainOneOf": [
+   "meta-analysis",
+   "meta-analysises",
+   "meta analysis"
+  ]
+ },
+ {
+  "id": "vocab:nebula",
+  "headword": "nebula",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "A vast interstellar cloud of ionised gas and cosmic dust where new stars frequently coalesce or dying stars disperse.",
+  "meaningVi": "tinh vân (đám mây khí và bụi vũ trụ)",
+  "existingExample": "High-resolution radio telescopes revealed intricate magnetic filaments shaping star formation inside the Orion nebula.",
+  "mustContainOneOf": [
+   "nebula",
+   "nebulas"
+  ]
+ },
+ {
+  "id": "vocab:neuroscience",
+  "headword": "neuroscience",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The multidisciplinary scientific study of the anatomy, physiology, chemistry, and functioning of the brain and nervous system.",
+  "meaningVi": "khoa học thần kinh",
+  "existingExample": "Recent breakthroughs in computational neuroscience are illuminating how neural networks encode complex spatial memories.",
+  "mustContainOneOf": [
+   "neuroscience",
+   "neurosciences"
+  ]
+ },
+ {
+  "id": "vocab:outlier",
+  "headword": "outlier",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "An observation or data point that differs markedly from the rest of a statistical dataset or experimental distribution.",
+  "meaningVi": "giá trị ngoại lai, điểm dữ liệu lệch bất thường",
+  "existingExample": "Statisticians inspect every extreme outlier carefully rather than discarding it automatically, as anomalies sometimes signal novel phenomena.",
+  "mustContainOneOf": [
+   "outlier",
+   "outliers"
+  ]
+ },
+ {
+  "id": "vocab:palaeontology",
+  "headword": "palaeontology",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The scientific study of prehistoric life on Earth through the excavation and analysis of fossilised plants and animals.",
+  "meaningVi": "cổ sinh vật học",
+  "existingExample": "High-resolution CT scanning has transformed palaeontology by allowing scientists to examine delicate fossilised skulls without damaging them.",
+  "mustContainOneOf": [
+   "palaeontology",
+   "palaeontologies"
+  ]
+ },
+ {
+  "id": "vocab:polymer",
+  "headword": "polymer",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "A large molecule composed of many repeating chemical subunits bonded together, found in both natural materials and synthetic plastics.",
+  "meaningVi": "hợp chất cao phân tử (polymer)",
+  "existingExample": "Materials chemists are engineering biodegradable plant-based polymers capable of withstanding high temperatures without leaching toxins.",
+  "mustContainOneOf": [
+   "polymer",
+   "polymers"
+  ]
+ },
+ {
+  "id": "vocab:postulate",
+  "headword": "postulate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "To propose or assume the existence or truth of a theoretical principle as the basis for scientific reasoning or testing.",
+  "meaningVi": "đề xuất giả định khoa học",
+  "existingExample": "Astrophysicists postulate the presence of invisible dark matter to account for the rapid rotational speeds of outer galaxies.",
+  "mustContainOneOf": [
+   "postulate",
+   "postulates",
+   "postulated",
+   "postulating"
+  ]
+ },
+ {
+  "id": "vocab:quantify",
+  "headword": "quantify",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "To measure, calculate, or express the magnitude or frequency of a phenomenon in precise numerical terms.",
+  "meaningVi": "định lượng, đo đạc và biểu thị bằng số liệu",
+  "existingExample": "Satellite telemetry now enables oceanographers to quantify subtle variations in global sea-surface salinity with unprecedented accuracy.",
+  "mustContainOneOf": [
+   "quantify",
+   "quantifies",
+   "quantified",
+   "quantifying"
+  ]
+ },
+ {
+  "id": "vocab:radioactivity",
+  "headword": "radioactivity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The spontaneous emission of ionising particles or high-energy radiation from unstable atomic nuclei undergoing decay.",
+  "meaningVi": "tính phóng xạ, hiện tượng phân rã phóng xạ",
+  "existingExample": "Marie Curie's pioneering investigations into natural radioactivity laid the foundations for both nuclear physics and modern radiotherapy.",
+  "mustContainOneOf": [
+   "radioactivity",
+   "radioactivities"
+  ]
+ },
+ {
+  "id": "vocab:refraction",
+  "headword": "refraction",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The bending of a light or sound wave as it enters a medium of different density.",
+  "meaningVi": "hiện tượng khúc xạ ánh sáng hoặc sóng",
+  "existingExample": "Precision optical lenses exploit controlled light refraction to focus faint starlight onto astronomical imaging sensors.",
+  "mustContainOneOf": [
+   "refraction",
+   "refractions"
+  ]
+ },
+ {
+  "id": "vocab:spectroscopy",
+  "headword": "spectroscopy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The scientific measurement and interpretation of electromagnetic spectra produced when matter absorbs or emits radiation.",
+  "meaningVi": "quang phổ học, phương pháp phân tích quang phổ",
+  "existingExample": "Astronomers employ infrared spectroscopy to determine the exact chemical composition of distant exoplanet atmospheres.",
+  "mustContainOneOf": [
+   "spectroscopy",
+   "spectroscopies"
+  ]
+ },
+ {
+  "id": "vocab:taxonomy",
+  "headword": "taxonomy",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The branch of science concerned with systematically classifying, naming, and organising organisms or concepts into hierarchies.",
+  "meaningVi": "phân loại học (sinh vật học và khoa học)",
+  "existingExample": "DNA sequencing has prompted major revisions in botanical taxonomy, revealing unexpected evolutionary ties between unrelated-looking plants.",
+  "mustContainOneOf": [
+   "taxonomy",
+   "taxonomies"
+  ]
+ },
+ {
+  "id": "vocab:thermodynamics",
+  "headword": "thermodynamics",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The branch of physical science dealing with the relationships between heat, work, temperature, and energy transfer.",
+  "meaningVi": "nhiệt động lực học",
+  "existingExample": "A rigorous grasp of thermodynamics sets the theoretical ceiling on how efficiently any heat engine can convert fuel into motion.",
+  "mustContainOneOf": [
+   "thermodynamics",
+   "thermodynamicses"
+  ]
+ },
+ {
+  "id": "vocab:verifiability",
+  "headword": "verifiability",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "The capacity of a scientific claim, dataset, or experimental outcome to be independently checked and confirmed by other researchers.",
+  "meaningVi": "tính có thể kiểm chứng thực nghiệm",
+  "existingExample": "Open-data repositories enhance the verifiability of published studies by enabling independent teams to audit raw measurements.",
+  "mustContainOneOf": [
+   "verifiability",
+   "verifiabilities"
+  ]
+ },
+ {
+  "id": "vocab:globalisation",
+  "headword": "globalisation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the process by which economies and cultures around the world become connected.",
+  "meaningVi": "toàn cầu hóa",
+  "existingExample": "Globalisation has made foreign products available almost everywhere.",
+  "mustContainOneOf": [
+   "globalisation",
+   "globalization",
+   "globalisations"
+  ]
+ },
+ {
+  "id": "vocab:cultural_identity",
+  "headword": "cultural identity",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the feeling of belonging to a particular culture or group.",
+  "meaningVi": "bản sắc văn hóa",
+  "existingExample": "Learning traditional songs helps children preserve their cultural identity.",
+  "mustContainOneOf": [
+   "cultural identity",
+   "cultural-identity"
+  ]
+ },
+ {
+  "id": "vocab:homogenisation",
+  "headword": "homogenisation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the process of things becoming the same.",
+  "meaningVi": "sự đồng nhất hóa",
+  "existingExample": "Critics fear that globalisation leads to the homogenisation of cultures.",
+  "mustContainOneOf": [
+   "homogenisation",
+   "homogenization",
+   "homogenisations"
+  ]
+ },
+ {
+  "id": "vocab:multicultural",
+  "headword": "multicultural",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "including people of many different cultures.",
+  "meaningVi": "đa văn hóa",
+  "existingExample": "Living in a multicultural city exposes children to different traditions.",
+  "mustContainOneOf": [
+   "multicultural"
+  ]
+ },
+ {
+  "id": "vocab:traditions",
+  "headword": "traditions",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "customs or beliefs passed down from one generation to the next.",
+  "meaningVi": "truyền thống",
+  "existingExample": "Festivals play an important role in keeping local traditions alive.",
+  "mustContainOneOf": [
+   "traditions",
+   "traditionses"
+  ]
+ },
+ {
+  "id": "vocab:assimilate",
+  "headword": "assimilate",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "to become part of a new society and adopt its customs.",
+  "meaningVi": "hòa nhập, đồng hóa",
+  "existingExample": "Immigrants may find it difficult to assimilate into a new culture.",
+  "mustContainOneOf": [
+   "assimilate",
+   "assimilates",
+   "assimilated",
+   "assimilating"
+  ]
+ },
+ {
+  "id": "vocab:cultural_exchange",
+  "headword": "cultural exchange",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the sharing of ideas and customs between countries.",
+  "meaningVi": "giao lưu văn hóa",
+  "existingExample": "Student exchange programmes promote cultural exchange and understanding.",
+  "mustContainOneOf": [
+   "cultural exchange",
+   "cultural-exchange"
+  ]
+ },
+ {
+  "id": "vocab:mass_tourism",
+  "headword": "mass tourism",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "tourism involving very large numbers of people.",
+  "meaningVi": "du lịch đại trà",
+  "existingExample": "Mass tourism can damage the very places that tourists come to see.",
+  "mustContainOneOf": [
+   "mass tourism",
+   "mass torism",
+   "mass-tourism",
+   "mass-torism"
+  ]
+ },
+ {
+  "id": "vocab:authentic",
+  "headword": "authentic",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "real or genuine.",
+  "meaningVi": "chân thực, nguyên bản",
+  "existingExample": "Many travellers look for authentic experiences rather than crowded attractions.",
+  "mustContainOneOf": [
+   "authentic"
+  ]
+ },
+ {
+  "id": "vocab:heritage",
+  "headword": "heritage",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "the history, traditions and buildings that a country has had for many years.",
+  "meaningVi": "di sản",
+  "existingExample": "Governments should fund the protection of the national heritage.",
+  "mustContainOneOf": [
+   "heritage",
+   "heritages"
+  ]
+ },
+ {
+  "id": "vocab:westernisation",
+  "headword": "westernisation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the adoption of Western culture and customs.",
+  "meaningVi": "sự Tây hóa",
+  "existingExample": "The westernisation of diets has contributed to rising obesity in some Asian countries.",
+  "mustContainOneOf": [
+   "westernisation",
+   "westernization",
+   "westernisations"
+  ]
+ },
+ {
+  "id": "vocab:lingua_franca",
+  "headword": "lingua franca",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "a language used for communication between people with different first languages.",
+  "meaningVi": "ngôn ngữ chung",
+  "existingExample": "English has become the lingua franca of international business.",
+  "mustContainOneOf": [
+   "lingua franca",
+   "lingua-franca"
+  ]
+ },
+ {
+  "id": "vocab:endangered_language",
+  "headword": "endangered language",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "a language with very few remaining speakers.",
+  "meaningVi": "ngôn ngữ có nguy cơ biến mất",
+  "existingExample": "Linguists are recording endangered languages before they disappear.",
+  "mustContainOneOf": [
+   "endangered languages",
+   "endangered language",
+   "endangered-language"
+  ]
+ },
+ {
+  "id": "vocab:cross_cultural",
+  "headword": "cross-cultural",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "involving two or more different cultures.",
+  "meaningVi": "giao thoa văn hóa",
+  "existingExample": "Cross-cultural communication skills are valuable in international companies.",
+  "mustContainOneOf": [
+   "cross-cultural",
+   "cross cultural"
+  ]
+ },
+ {
+  "id": "vocab:diversity",
+  "headword": "diversity",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a range of many different types of people or things.",
+  "meaningVi": "sự đa dạng",
+  "existingExample": "Cultural diversity can make a city more creative and dynamic.",
+  "mustContainOneOf": [
+   "diversity",
+   "diversities"
+  ]
+ },
+ {
+  "id": "vocab:stereotype",
+  "headword": "stereotype",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a fixed and oversimplified idea about a group of people.",
+  "meaningVi": "định kiến khuôn mẫu",
+  "existingExample": "Travel can help people challenge stereotypes about other nations.",
+  "mustContainOneOf": [
+   "stereotypes",
+   "stereotype"
+  ]
+ },
+ {
+  "id": "vocab:interconnected",
+  "headword": "interconnected",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "connected with each other.",
+  "meaningVi": "liên kết chặt chẽ với nhau",
+  "existingExample": "In an interconnected world, a crisis in one country can affect many others.",
+  "mustContainOneOf": [
+   "interconnected"
+  ]
+ },
+ {
+  "id": "vocab:local_businesses",
+  "headword": "local businesses",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "small companies owned by people in the area.",
+  "meaningVi": "doanh nghiệp địa phương",
+  "existingExample": "Large international chains can force local businesses to close.",
+  "mustContainOneOf": [
+   "local businesses",
+   "local-businesses"
+  ]
+ },
+ {
+  "id": "vocab:cultural_values",
+  "headword": "cultural values",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "beliefs about what is important in a culture.",
+  "meaningVi": "giá trị văn hóa",
+  "existingExample": "Respect for elders and hospitality remain central cultural values across many Asian societies.",
+  "mustContainOneOf": [
+   "cultural values",
+   "cultural-values"
+  ]
+ },
+ {
+  "id": "vocab:migration",
+  "headword": "migration",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the movement of people from one place or country to another.",
+  "meaningVi": "sự di cư",
+  "existingExample": "International migration has made many cities more diverse.",
+  "mustContainOneOf": [
+   "migration",
+   "migrations"
+  ]
+ },
+ {
+  "id": "vocab:brain_drain",
+  "headword": "brain drain",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the movement of highly skilled people to other countries.",
+  "meaningVi": "chảy máu chất xám",
+  "existingExample": "Low salaries have caused a brain drain of doctors to richer countries.",
+  "mustContainOneOf": [
+   "brain drain",
+   "brain-drain"
+  ]
+ },
+ {
+  "id": "vocab:cuisine",
+  "headword": "cuisine",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a particular style of cooking.",
+  "meaningVi": "ẩm thực",
+  "existingExample": "Fast-food chains have changed local cuisine in many countries.",
+  "mustContainOneOf": [
+   "cuisine",
+   "cuisines"
+  ]
+ },
+ {
+  "id": "vocab:preserve",
+  "headword": "preserve",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "to keep something in its original state.",
+  "meaningVi": "bảo tồn, gìn giữ",
+  "existingExample": "It is vital to preserve historic buildings for future generations.",
+  "mustContainOneOf": [
+   "preserve",
+   "preserves",
+   "preserved",
+   "preserving"
+  ]
+ },
+ {
+  "id": "vocab:integration",
+  "headword": "integration",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "the process of becoming a full part of a group or society.",
+  "meaningVi": "sự hội nhập",
+  "existingExample": "Language classes are key to the integration of newcomers.",
+  "mustContainOneOf": [
+   "integration",
+   "integrations"
+  ]
+ },
+ {
+  "id": "vocab:global_citizen",
+  "headword": "global citizen",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a person who sees themselves as part of the world community.",
+  "meaningVi": "công dân toàn cầu",
+  "existingExample": "Schools should aim to raise global citizens who respect other cultures.",
+  "mustContainOneOf": [
+   "global citizens",
+   "global citizen",
+   "global-citizen"
+  ]
+ },
+ {
+  "id": "vocab:intangible_cultural_heritage",
+  "headword": "intangible cultural heritage",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture",
+   "arts",
+   "history"
+  ],
+  "definitionEn": "traditions, music and skills rather than buildings or objects.",
+  "meaningVi": "di sản văn hóa phi vật thể",
+  "existingExample": "Traditional folk music and oral storytelling are safeguarded by UNESCO as intangible cultural heritage.",
+  "mustContainOneOf": [
+   "intangible cultural heritage",
+   "intangible-cultural-heritage"
+  ]
+ },
+ {
+  "id": "vocab:cultural_erosion",
+  "headword": "cultural erosion",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the gradual loss of a culture's traditions.",
+  "meaningVi": "sự xói mòn văn hóa",
+  "existingExample": "Globalisation may cause cultural erosion in small communities.",
+  "mustContainOneOf": [
+   "cultural erosion",
+   "cultural-erosion"
+  ]
+ }
+]

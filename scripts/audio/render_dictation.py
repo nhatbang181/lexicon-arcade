@@ -40,12 +40,25 @@ from scripts.audio.common import (
     get_cache_hash,
     get_audio_duration,
     resolve_voice,
+    VOICE_POOLS,
     dictation_wpm_to_rate,
     synthesize_edge_tts
 )
 
 DICTATION_JSON = REPO_ROOT / "public" / "data" / "listening" / "dictation.json"
 PUBLIC_DIR = REPO_ROOT / "public"
+
+def pick_dictation_voice(item: dict) -> str:
+    """Deterministic, diversified edge-tts voice per item (accent + gender kept from the item's voice token)."""
+    raw = item.get("voice", "")
+    accent = (item.get("accent") or "uk").lower()
+    if raw.startswith("edge:"):
+        return raw.replace("edge:", "")
+    gender = "f" if raw.startswith(("bf_", "af_")) else "m"
+    pool = VOICE_POOLS.get((accent, gender)) or VOICE_POOLS.get(("uk", gender)) or ["en-GB-SoniaNeural"]
+    n = int(item["id"].split(":")[-1])
+    return pool[n % len(pool)]
+
 
 def select_dictation_items(items: list[dict], all_items: bool = False, count_per_level: int = 10) -> list[dict]:
     """Select items to render: default first 10 per level L1-L6 (60 items), or all 300."""
@@ -131,7 +144,8 @@ async def render_item(
     text = item.get("ttsText") or item.get("text", "")
     voice_raw = item.get("voice", "")
     accent = item.get("accent", "uk")
-    voice = resolve_voice(voice_raw, accent)
+    legacy_voice = resolve_voice(voice_raw, accent)
+    voice = pick_dictation_voice(item)
     wpm = float(item.get("wpm", 130))
     words = len(text.split())
 
@@ -141,12 +155,14 @@ async def render_item(
 
     h = get_cache_hash(text, voice + f"@{wpm:.1f}", speed=1.0)
 
-    # Check cache and destination existence
-    if not force and h in cache and out_p.exists() and out_p.stat().st_size > 1000:
+    # Existing file (rendered earlier, possibly with the legacy single-voice rule) is kept unless --force
+    if not force and out_p.exists() and out_p.stat().st_size > 1000:
+        used = voice if h in cache else legacy_voice
         return {
             "id": item["id"],
             "status": "cached",
-            "duration": cache[h].get("duration", 0),
+            "voice": used,
+            "duration": cache.get(h, {}).get("duration", 0),
             "size": out_p.stat().st_size
         }
 
@@ -175,6 +191,7 @@ async def render_item(
             return {
                 "id": item["id"],
                 "status": "rendered",
+                "voice": voice,
                 "duration": dur,
                 "size": file_size
             }
@@ -213,6 +230,23 @@ async def main_async():
 
     save_cache(cache)
     elapsed = time.time() - t0
+
+    # Stamp audioProvenance (D12) for every item whose MP3 exists
+    by_id = {r["id"]: r for r in results}
+    stamped = 0
+    for item in all_items:
+        r = by_id.get(item["id"])
+        if r and r.get("voice"):
+            item["audioProvenance"] = {
+                "engine": "edge-tts",
+                "voice": r["voice"],
+                "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23",
+            }
+            stamped += 1
+    with open(DICTATION_JSON, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(all_items, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    print(f"Stamped audioProvenance on {stamped} dictation items")
 
     rendered = [r for r in results if r["status"] == "rendered"]
     cached = [r for r in results if r["status"] == "cached"]

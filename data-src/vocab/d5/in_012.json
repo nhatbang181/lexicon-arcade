@@ -1,0 +1,1829 @@
+[
+ {
+  "id": "vocab:byway",
+  "headword": "byway",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A minor, less frequented road or rural track branching off a primary highway or main thoroughfare.",
+  "meaningVi": "tuyến đường nhánh, đường phụ ít xe cộ",
+  "existingExample": "Navigation apps often divert frustrated motorists onto narrow village byways unprepared for heavy commercial traffic.",
+  "mustContainOneOf": [
+   "byway",
+   "byways"
+  ]
+ },
+ {
+  "id": "vocab:carriageway",
+  "headword": "carriageway",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "The section of a road or highway specifically paved and designated for vehicular traffic in one or both directions.",
+  "meaningVi": "làn đường dành cho xe cơ giới lưu thông",
+  "existingExample": "Resurfacing the northbound carriageway overnight minimised disruption for logistics fleets supplying city supermarkets.",
+  "mustContainOneOf": [
+   "carriageway",
+   "carriageways"
+  ]
+ },
+ {
+  "id": "vocab:commuter_rail",
+  "headword": "commuter rail",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "A passenger railway service operating primarily between a metropolitan core and surrounding suburban or regional towns.",
+  "meaningVi": "hệ thống đường sắt ngoại ô phục vụ người đi làm",
+  "existingExample": "Expanding electrified commuter rail networks is essential for curbing private car reliance in rapidly growing satellite cities.",
+  "mustContainOneOf": [
+   "commuter rail",
+   "commuter-rail"
+  ]
+ },
+ {
+  "id": "vocab:concourse",
+  "headword": "concourse",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A large open hall in a railway station or airport where passengers gather, purchase tickets, and transfer between platforms.",
+  "meaningVi": "sảnh lớn trung tâm tại nhà ga hoặc sân bay",
+  "existingExample": "Clear bilingual signage across the station concourse helps international travellers locate connecting platforms effortlessly.",
+  "mustContainOneOf": [
+   "concourse",
+   "concorse",
+   "concourses",
+   "concorses"
+  ]
+ },
+ {
+  "id": "vocab:congested",
+  "headword": "congested",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "So overcrowded with vehicles or passengers that normal movement becomes severely slowed or obstructed.",
+  "meaningVi": "tắc nghẽn, quá tải lưu lượng giao thông",
+  "existingExample": "Widening congested urban motorways rarely solves gridlock permanently because extra lanes tend to induce additional driving.",
+  "mustContainOneOf": [
+   "congested"
+  ]
+ },
+ {
+  "id": "vocab:corridor",
+  "headword": "corridor",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A designated linear route or geographic strip linking major economic hubs via rail, highway, or maritime infrastructure.",
+  "meaningVi": "hành lang giao thông, trục vận tải chiến lược",
+  "existingExample": "Upgrading the coastal freight corridor has slashed delivery times between inland factories and deep-water container ports.",
+  "mustContainOneOf": [
+   "corridor",
+   "corridors"
+  ]
+ },
+ {
+  "id": "vocab:cul_de_sac",
+  "headword": "cul-de-sac",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A residential street or passage closed at one end, often designed to discourage through-traffic.",
+  "meaningVi": "đường cụt trong khu dân cư",
+  "existingExample": "While a quiet cul-de-sac protects children from speeding vehicles, poorly connected layouts can make walking to transit stops circuitous.",
+  "mustContainOneOf": [
+   "cul-de-sac",
+   "cul-de-sacs",
+   "cul de sac"
+  ]
+ },
+ {
+  "id": "vocab:decongest",
+  "headword": "decongest",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "To relieve overcrowding or heavy vehicular build-up on roads, junctions, or transit hubs.",
+  "meaningVi": "giải tỏa ùn tắc, giảm tải lưu lượng giao thông",
+  "existingExample": "Staggered office hours and affordable metro passes were introduced simultaneously to decongest downtown intersections.",
+  "mustContainOneOf": [
+   "decongest",
+   "decongests",
+   "decongested",
+   "decongesting"
+  ]
+ },
+ {
+  "id": "vocab:derailment",
+  "headword": "derailment",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "An incident in which a train or tram leaves its tracks, often causing service disruption or safety hazards.",
+  "meaningVi": "sự cố tàu hỏa trật bánh khỏi đường ray",
+  "existingExample": "Automated ultrasonic track inspections have dramatically lowered the incidence of freight train derailment across the network.",
+  "mustContainOneOf": [
+   "derailment",
+   "derailments"
+  ]
+ },
+ {
+  "id": "vocab:embarkation",
+  "headword": "embarkation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "The process of boarding a ship, aircraft, or long-distance vessel prior to departure.",
+  "meaningVi": "quá trình hành khách lên tàu thủy hoặc máy bay",
+  "existingExample": "Biometric passport gates have streamlined embarkation procedures at major international ferry terminals.",
+  "mustContainOneOf": [
+   "embarkation",
+   "embarkations"
+  ]
+ },
+ {
+  "id": "vocab:fare_evasion",
+  "headword": "fare evasion",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "The unlawful practice of travelling on public transport without purchasing or validating a required ticket.",
+  "meaningVi": "hành vi trốn vé phương tiện giao thông công cộng",
+  "existingExample": "Contactless smart-card barriers have curtailed fare evasion while accelerating passenger flow during peak periods.",
+  "mustContainOneOf": [
+   "fare evasion",
+   "fare-evasion"
+  ]
+ },
+ {
+  "id": "vocab:freight",
+  "headword": "freight",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "Commercial goods transported in bulk by ship, aircraft, train, or heavy road vehicle.",
+  "meaningVi": "hàng hóa vận chuyển đường dài; vận tải hàng hóa",
+  "existingExample": "Shifting long-distance freight from diesel lorries onto electrified railways offers substantial reductions in carbon emissions.",
+  "mustContainOneOf": [
+   "freight",
+   "freights"
+  ]
+ },
+ {
+  "id": "vocab:haulage",
+  "headword": "haulage",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "The commercial transport of heavy goods by road or rail, or the charge levied for such transport.",
+  "meaningVi": "dịch vụ vận tải hàng hóa bằng xe tải hoặc đường sắt",
+  "existingExample": "Acute shortages of licensed drivers have disrupted domestic road haulage and inflated retail distribution costs.",
+  "mustContainOneOf": [
+   "haulage",
+   "haulages"
+  ]
+ },
+ {
+  "id": "vocab:high_speed_rail",
+  "headword": "high-speed rail",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A passenger railway system operating significantly faster than conventional trains, typically exceeding 250 kilometres per hour.",
+  "meaningVi": "hệ thống đường sắt cao tốc",
+  "existingExample": "Investing in intercity high-speed rail has replaced a large share of short-haul domestic flights across Western Europe.",
+  "mustContainOneOf": [
+   "high-speed rail",
+   "high-speed-rail",
+   "high speed rail"
+  ]
+ },
+ {
+  "id": "vocab:interchange",
+  "headword": "interchange",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A major road junction enabling traffic to switch between highways without crossing paths, or a hub connecting transit lines.",
+  "meaningVi": "nút giao thông khác mức; điểm trung chuyển tuyến",
+  "existingExample": "Redesigned metro interchanges now allow passengers to transfer seamlessly between underground lines and regional buses.",
+  "mustContainOneOf": [
+   "interchange",
+   "interchanges"
+  ]
+ },
+ {
+  "id": "vocab:intermodal",
+  "headword": "intermodal",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "Involving the seamless transfer of passengers or standardised cargo containers across two or more modes of transport.",
+  "meaningVi": "vận tải đa phương thức (kết hợp nhiều loại hình)",
+  "existingExample": "Modern intermodal terminals allow shipping containers to move swiftly from cargo vessels directly onto waiting rail wagons.",
+  "mustContainOneOf": [
+   "intermodal"
+  ]
+ },
+ {
+  "id": "vocab:jaywalking",
+  "headword": "jaywalking",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "The act of crossing a street unlawfully or carelessly without using designated pedestrian crossings or obeying traffic signals.",
+  "meaningVi": "hành vi đi bộ băng qua đường sai quy định",
+  "existingExample": "Urban safety advocates argue that installing frequent zebra crossings deters jaywalking far more effectively than issuing fines.",
+  "mustContainOneOf": [
+   "jaywalking",
+   "jaywalkings"
+  ]
+ },
+ {
+  "id": "vocab:last_mile_connectivity",
+  "headword": "last-mile connectivity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "tourism"
+  ],
+  "definitionEn": "The transport links that carry commuters or deliveries between a main transit hub and their final residential or workplace destination.",
+  "meaningVi": "khả năng kết nối giao thông chặng cuối",
+  "existingExample": "Even the fastest metro system struggles to attract suburban drivers if last-mile connectivity remains unreliable.",
+  "mustContainOneOf": [
+   "last-mile connectivity",
+   "last-mile-connectivity",
+   "last mile connectivity"
+  ]
+ },
+ {
+  "id": "vocab:maritime",
+  "headword": "maritime",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "Connected with the sea, seafaring navigation, or commercial shipping and port operations.",
+  "meaningVi": "thuộc về hàng hải, vận tải đường biển",
+  "existingExample": "International maritime trade carries over eighty percent of global merchandise, making port resilience vital to supply stability.",
+  "mustContainOneOf": [
+   "maritime"
+  ]
+ },
+ {
+  "id": "vocab:micromobility",
+  "headword": "micromobility",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "Lightweight, low-speed personal vehicles such as electric bicycles and shared scooters used for short urban journeys.",
+  "meaningVi": "phương tiện di chuyển vi mô quãng ngắn",
+  "existingExample": "Cities embracing shared micromobility must establish clear parking bays so electric scooters do not obstruct pavements.",
+  "mustContainOneOf": [
+   "micromobility",
+   "micromobilities"
+  ]
+ },
+ {
+  "id": "vocab:modal_shift",
+  "headword": "modal shift",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "A deliberate move by commuters or freight from private vehicles to more sustainable public transport.",
+  "meaningVi": "sự chuyển dịch phương thức di chuyển sang công cộng",
+  "existingExample": "Achieving a lasting modal shift toward cycling and rail requires both reliable infrastructure and disincentives for city-centre parking.",
+  "mustContainOneOf": [
+   "modal shift",
+   "modal-shift"
+  ]
+ },
+ {
+  "id": "vocab:motorway",
+  "headword": "motorway",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport",
+   "tourism"
+  ],
+  "definitionEn": "A multi-lane, controlled-access highway engineered for high-speed long-distance vehicular travel without at-grade intersections.",
+  "meaningVi": "đường cao tốc nhiều làn cho xe cơ giới tốc độ cao",
+  "existingExample": "Dynamic speed limits along the orbital motorway have smoothed traffic flow and reduced rear-end collisions.",
+  "mustContainOneOf": [
+   "motorway",
+   "motorways"
+  ]
+ },
+ {
+  "id": "vocab:navigable",
+  "headword": "navigable",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "Deep, wide, and unobstructed enough to allow ships, barges, or ferries to pass safely.",
+  "meaningVi": "có thể lưu thông tàu thuyền (tuyến đường thủy)",
+  "existingExample": "Prolonged droughts have lowered river depths to the point where key European freight channels are barely navigable.",
+  "mustContainOneOf": [
+   "navigable"
+  ]
+ },
+ {
+  "id": "vocab:overpass",
+  "headword": "overpass",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A bridge-like structure carrying one road, railway, or pedestrian path directly above another to eliminate crossing conflicts.",
+  "meaningVi": "cầu vượt đường bộ hoặc đường sắt",
+  "existingExample": "Constructing a dedicated pedestrian overpass beside the busy ring road dramatically enhanced safety for local schoolchildren.",
+  "mustContainOneOf": [
+   "overpass",
+   "overpasses"
+  ]
+ },
+ {
+  "id": "vocab:park_and_ride",
+  "headword": "park-and-ride",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "A suburban car park beside a transit hub allowing commuters to finish journeys by bus or rail.",
+  "meaningVi": "bãi đỗ xe ngoại vi kết hợp trung chuyển công cộng",
+  "existingExample": "Expanding free park-and-ride facilities on the urban fringe has prevented thousands of private vehicles from entering historic streets.",
+  "mustContainOneOf": [
+   "park-and-ride",
+   "park-and-rides",
+   "park and ride"
+  ]
+ },
+ {
+  "id": "vocab:punctuality",
+  "headword": "punctuality",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "The reliability of transport services in departing and arriving strictly according to published timetables.",
+  "meaningVi": "tính đúng giờ của các chuyến tàu xe hoặc hàng không",
+  "existingExample": "Surveys consistently show that commuters rank timetable punctuality above ticket price when deciding whether to abandon private cars.",
+  "mustContainOneOf": [
+   "punctuality",
+   "punctualities"
+  ]
+ },
+ {
+  "id": "vocab:ridership",
+  "headword": "ridership",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "The total number of passengers using a particular public transport service or transit network over a given period.",
+  "meaningVi": "lượng hành khách sử dụng giao thông công cộng",
+  "existingExample": "Following the introduction of integrated mobile ticketing, municipal bus ridership climbed by nearly twenty percent within a year.",
+  "mustContainOneOf": [
+   "ridership",
+   "riderships"
+  ]
+ },
+ {
+  "id": "vocab:ring_road",
+  "headword": "ring road",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "A circular highway encircling a city or town to divert through-traffic away from congested central districts.",
+  "meaningVi": "đường vành đai bao quanh đô thị",
+  "existingExample": "Completing the outer ring road diverted heavy industrial lorries away from residential avenues in the historic core.",
+  "mustContainOneOf": [
+   "ring road",
+   "ring-road"
+  ]
+ },
+ {
+  "id": "vocab:roadworthiness",
+  "headword": "roadworthiness",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "The mechanical condition of a motor vehicle confirming that it meets mandatory safety and emissions standards for public roads.",
+  "meaningVi": "tình trạng đạt chuẩn an toàn kỹ thuật lưu thông của xe",
+  "existingExample": "Annual inspections of vehicle roadworthiness are crucial for reducing fatal collisions caused by worn brakes or faulty tyres.",
+  "mustContainOneOf": [
+   "roadworthiness",
+   "roadworthinesses"
+  ]
+ },
+ {
+  "id": "vocab:rolling_stock",
+  "headword": "rolling stock",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "All wheeled vehicles operating on a railway network, including locomotives, passenger carriages, and freight wagons.",
+  "meaningVi": "đoàn tàu, đầu máy và toa xe đường sắt",
+  "existingExample": "Modernising ageing rolling stock with regenerative braking systems has substantially cut the metropolitan railway's electricity consumption.",
+  "mustContainOneOf": [
+   "rolling stock",
+   "rolling-stock"
+  ]
+ },
+ {
+  "id": "vocab:tailback",
+  "headword": "tailback",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A long stationary or slow-moving queue of vehicles caused by an accident, roadworks, or bottleneck ahead.",
+  "meaningVi": "hàng dài xe cộ kẹt cứng nối đuôi nhau",
+  "existingExample": "A minor breakdown inside the harbour tunnel triggered a five-kilometre tailback that delayed airport coaches for hours.",
+  "mustContainOneOf": [
+   "tailback",
+   "tailbacks"
+  ]
+ },
+ {
+  "id": "vocab:thoroughfare",
+  "headword": "thoroughfare",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "A major public road, avenue, or waterway open at both ends and heavily used for through-traffic.",
+  "meaningVi": "đại lộ, trục đường chính lưu thông tấp nập",
+  "existingExample": "Converting the city's central commercial thoroughfare into a tree-lined pedestrian zone revitalised independent cafés and shops.",
+  "mustContainOneOf": [
+   "thoroughfare",
+   "thoroughfares"
+  ]
+ },
+ {
+  "id": "vocab:traffic_fatality",
+  "headword": "traffic fatality",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A human death resulting directly from a collision or accident on a public road network.",
+  "meaningVi": "ca tử vong do tai nạn giao thông",
+  "existingExample": "Cities adopting Vision Zero street redesigns have achieved dramatic declines in annual traffic fatality rates among cyclists.",
+  "mustContainOneOf": [
+   "traffic fatality",
+   "traffic-fatality"
+  ]
+ },
+ {
+  "id": "vocab:tramway",
+  "headword": "tramway",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "An urban rail track system laid into or alongside public streets for electric passenger trams.",
+  "meaningVi": "tuyến đường xe điện mặt đất trong đô thị",
+  "existingExample": "Reintroducing a modern surface tramway provided mid-sized European cities with high-capacity transit at a fraction of metro costs.",
+  "mustContainOneOf": [
+   "tramway",
+   "tramways"
+  ]
+ },
+ {
+  "id": "vocab:transit_oriented",
+  "headword": "transit-oriented",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "Planned around high-density residential, commercial, and civic spaces within easy walking distance of mass transit hubs.",
+  "meaningVi": "định hướng phát triển đô thị gắn với giao thông công cộng",
+  "existingExample": "Transit-oriented development encourages residents to complete daily errands on foot rather than relying on private automobiles.",
+  "mustContainOneOf": [
+   "transit-oriented",
+   "transit oriented"
+  ]
+ },
+ {
+  "id": "vocab:underpass",
+  "headword": "underpass",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "A subterranean passage allowing vehicles, cyclists, or pedestrians to pass safely beneath a busy road or railway line.",
+  "meaningVi": "hầm chui dành cho xe cộ hoặc người đi bộ",
+  "existingExample": "Well-lit cycling underpasses beneath major roundabouts have removed dangerous conflict points between bicycles and lorries.",
+  "mustContainOneOf": [
+   "underpass",
+   "underpasses"
+  ]
+ },
+ {
+  "id": "vocab:viaduct",
+  "headword": "viaduct",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "transport",
+   "urban"
+  ],
+  "definitionEn": "A long elevated bridge of arches carrying a road or railway across a valley or urban area.",
+  "meaningVi": "cầu cạn nhiều nhịp cho đường sắt hoặc đường bộ",
+  "existingExample": "Engineers constructed an elevated concrete viaduct to carry the high-speed rail line over flood-prone agricultural plains.",
+  "mustContainOneOf": [
+   "viaduct",
+   "viaducts"
+  ]
+ },
+ {
+  "id": "vocab:hypothesis",
+  "headword": "hypothesis",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "an idea suggested as an explanation that has not yet been proved.",
+  "meaningVi": "giả thuyết",
+  "existingExample": "The experiment was designed to test the hypothesis that sleep improves memory.",
+  "mustContainOneOf": [
+   "hypothesis",
+   "hypotheses"
+  ]
+ },
+ {
+  "id": "vocab:empirical",
+  "headword": "empirical",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "based on observation or experiment rather than theory.",
+  "meaningVi": "thực nghiệm",
+  "existingExample": "There is little empirical evidence to support this claim.",
+  "mustContainOneOf": [
+   "empirical"
+  ]
+ },
+ {
+  "id": "vocab:conduct_research",
+  "headword": "conduct research",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to carry out a study.",
+  "meaningVi": "tiến hành nghiên cứu",
+  "existingExample": "Universities rely heavily on public grants to conduct research into preventative treatments for infectious diseases.",
+  "mustContainOneOf": [
+   "conduct research",
+   "conduct-research"
+  ]
+ },
+ {
+  "id": "vocab:findings",
+  "headword": "findings",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "information discovered as the result of research.",
+  "meaningVi": "kết quả nghiên cứu",
+  "existingExample": "The findings suggest a strong link between diet and mood.",
+  "mustContainOneOf": [
+   "findings",
+   "findingses"
+  ]
+ },
+ {
+  "id": "vocab:funding",
+  "headword": "funding",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "money provided for a particular purpose.",
+  "meaningVi": "kinh phí, tài trợ",
+  "existingExample": "Cuts in research funding could slow down medical progress.",
+  "mustContainOneOf": [
+   "funding",
+   "fundings"
+  ]
+ },
+ {
+  "id": "vocab:space_exploration",
+  "headword": "space exploration",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "the investigation of outer space using spacecraft and telescopes.",
+  "meaningVi": "thám hiểm vũ trụ",
+  "existingExample": "Critics argue that money spent on space exploration should be used to solve problems on Earth.",
+  "mustContainOneOf": [
+   "space exploration",
+   "space-exploration"
+  ]
+ },
+ {
+  "id": "vocab:genetic_engineering",
+  "headword": "genetic engineering",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "changing the genes of living things.",
+  "meaningVi": "kỹ thuật di truyền",
+  "existingExample": "Genetic engineering could produce crops that resist drought.",
+  "mustContainOneOf": [
+   "genetic engineering",
+   "genetic-engineering"
+  ]
+ },
+ {
+  "id": "vocab:animal_testing",
+  "headword": "animal testing",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "using animals in experiments to test products or medicines.",
+  "meaningVi": "thử nghiệm trên động vật",
+  "existingExample": "Several countries have banned animal testing for cosmetics.",
+  "mustContainOneOf": [
+   "animal testing",
+   "animal-testing"
+  ]
+ },
+ {
+  "id": "vocab:peer_review",
+  "headword": "peer review",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the evaluation of research by other experts before it is published.",
+  "meaningVi": "bình duyệt (thẩm định đồng cấp)",
+  "existingExample": "Research should undergo peer review before it is published.",
+  "mustContainOneOf": [
+   "peer review",
+   "peer-review"
+  ]
+ },
+ {
+  "id": "vocab:laboratory",
+  "headword": "laboratory",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a room or building used for scientific experiments.",
+  "meaningVi": "phòng thí nghiệm",
+  "existingExample": "The results were confirmed in laboratory tests.",
+  "mustContainOneOf": [
+   "laboratory",
+   "laboratories"
+  ]
+ },
+ {
+  "id": "vocab:data_analysis",
+  "headword": "data analysis",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "examining data to find useful information.",
+  "meaningVi": "phân tích dữ liệu",
+  "existingExample": "Data analysis revealed an unexpected pattern in the results.",
+  "mustContainOneOf": [
+   "data analysis",
+   "data-analysis"
+  ]
+ },
+ {
+  "id": "vocab:correlation",
+  "headword": "correlation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a connection between two things in which one changes as the other does.",
+  "meaningVi": "mối tương quan",
+  "existingExample": "There is a strong correlation between education level and income.",
+  "mustContainOneOf": [
+   "correlation",
+   "correlations"
+  ]
+ },
+ {
+  "id": "vocab:phenomenon",
+  "headword": "phenomenon",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "something that happens or exists, especially something unusual (plural: phenomena).",
+  "meaningVi": "hiện tượng",
+  "existingExample": "Scientists are still trying to explain this phenomenon.",
+  "mustContainOneOf": [
+   "phenomenon",
+   "phenomena"
+  ]
+ },
+ {
+  "id": "vocab:sample",
+  "headword": "sample",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a small group taken from a larger population for testing.",
+  "meaningVi": "mẫu (nghiên cứu)",
+  "existingExample": "The study used a representative sample of 2,000 adults.",
+  "mustContainOneOf": [
+   "sample",
+   "samples"
+  ]
+ },
+ {
+  "id": "vocab:controversial",
+  "headword": "controversial",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "causing a lot of disagreement.",
+  "meaningVi": "gây tranh cãi",
+  "existingExample": "Human cloning remains a highly controversial area of research.",
+  "mustContainOneOf": [
+   "controversial"
+  ]
+ },
+ {
+  "id": "vocab:advance",
+  "headword": "advance",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "progress or development in a field.",
+  "meaningVi": "sự tiến bộ",
+  "existingExample": "Advances in medicine have helped people live longer.",
+  "mustContainOneOf": [
+   "advances",
+   "advance"
+  ]
+ },
+ {
+  "id": "vocab:verify",
+  "headword": "verify",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to check that something is true or correct.",
+  "meaningVi": "xác minh, kiểm chứng",
+  "existingExample": "Other scientists must be able to verify the results independently.",
+  "mustContainOneOf": [
+   "verify",
+   "verifies",
+   "verified",
+   "verifying"
+  ]
+ },
+ {
+  "id": "vocab:experiment",
+  "headword": "experiment",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a scientific test done to discover something.",
+  "meaningVi": "thí nghiệm",
+  "existingExample": "Students carried out an experiment to measure the effect of light on plant growth.",
+  "mustContainOneOf": [
+   "experiment",
+   "experiments"
+  ]
+ },
+ {
+  "id": "vocab:theory",
+  "headword": "theory",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a set of ideas that explain something.",
+  "meaningVi": "lý thuyết, học thuyết",
+  "existingExample": "Darwin put forward the theory of evolution by natural selection.",
+  "mustContainOneOf": [
+   "theory",
+   "theories"
+  ]
+ },
+ {
+  "id": "vocab:cloning",
+  "headword": "cloning",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "creating an identical copy of a plant or animal from its cells.",
+  "meaningVi": "nhân bản vô tính",
+  "existingExample": "Many people oppose human cloning on moral grounds.",
+  "mustContainOneOf": [
+   "cloning",
+   "clonings"
+  ]
+ },
+ {
+  "id": "vocab:undergo",
+  "headword": "undergo",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to experience a process or change.",
+  "meaningVi": "trải qua",
+  "existingExample": "All new drugs must undergo rigorous clinical trials.",
+  "mustContainOneOf": [
+   "undergo",
+   "undergoes",
+   "underwent",
+   "undergone",
+   "undergoing"
+  ]
+ },
+ {
+  "id": "vocab:clinical_trial",
+  "headword": "clinical trial",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a test of a new medicine or treatment on people.",
+  "meaningVi": "thử nghiệm lâm sàng",
+  "existingExample": "Thousands of volunteers took part in clinical trials of the new vaccine.",
+  "mustContainOneOf": [
+   "clinical trials",
+   "clinical trial",
+   "clinical-trial"
+  ]
+ },
+ {
+  "id": "vocab:scientific_literacy",
+  "headword": "scientific literacy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a basic understanding of science and how it works.",
+  "meaningVi": "hiểu biết khoa học",
+  "existingExample": "Improving scientific literacy helps people make better decisions about their health.",
+  "mustContainOneOf": [
+   "scientific literacy",
+   "scientific-literacy"
+  ]
+ },
+ {
+  "id": "vocab:pioneering",
+  "headword": "pioneering",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "introducing new ideas or methods for the first time.",
+  "meaningVi": "tiên phong",
+  "existingExample": "Her pioneering research changed the way doctors treat heart disease.",
+  "mustContainOneOf": [
+   "pioneering"
+  ]
+ },
+ {
+  "id": "vocab:scientific_method",
+  "headword": "scientific method",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the process of observing, forming hypotheses and testing them.",
+  "meaningVi": "phương pháp khoa học",
+  "existingExample": "The scientific method relies on testing ideas through experiments.",
+  "mustContainOneOf": [
+   "scientific method",
+   "scientific-method"
+  ]
+ },
+ {
+  "id": "vocab:control_group",
+  "headword": "control group",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the group in an experiment that does not receive the treatment.",
+  "meaningVi": "nhóm đối chứng",
+  "existingExample": "The results were compared with those of a control group.",
+  "mustContainOneOf": [
+   "control group",
+   "control-group"
+  ]
+ },
+ {
+  "id": "vocab:placebo",
+  "headword": "placebo",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a substance with no active effect, given for comparison.",
+  "meaningVi": "giả dược",
+  "existingExample": "Some patients improve simply because of the placebo effect.",
+  "mustContainOneOf": [
+   "placebo",
+   "placebos"
+  ]
+ },
+ {
+  "id": "vocab:double_blind",
+  "headword": "double-blind",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "describing a trial in which neither researchers nor participants know who receives the treatment.",
+  "meaningVi": "mù đôi (thử nghiệm)",
+  "existingExample": "Double-blind trials reduce the risk of bias.",
+  "mustContainOneOf": [
+   "double-blind",
+   "double blind"
+  ]
+ },
+ {
+  "id": "vocab:randomised_controlled_trial",
+  "headword": "randomised controlled trial",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a study in which participants are randomly assigned to groups.",
+  "meaningVi": "thử nghiệm ngẫu nhiên có đối chứng",
+  "existingExample": "Randomised controlled trials are considered the gold standard in medicine.",
+  "mustContainOneOf": [
+   "randomised controlled trial",
+   "randomised-controlled-trial"
+  ]
+ },
+ {
+  "id": "vocab:variable",
+  "headword": "variable",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a factor that can change in an experiment.",
+  "meaningVi": "biến số",
+  "existingExample": "Researchers tried to control for other variables such as age.",
+  "mustContainOneOf": [
+   "variables",
+   "variable"
+  ]
+ },
+ {
+  "id": "vocab:margin_of_error",
+  "headword": "margin of error",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the amount by which a result may differ from the true value.",
+  "meaningVi": "biên độ sai số",
+  "existingExample": "The difference between the two groups was within the margin of error.",
+  "mustContainOneOf": [
+   "margin of error",
+   "margin-of-error"
+  ]
+ },
+ {
+  "id": "vocab:statistically_significant",
+  "headword": "statistically significant",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "unlikely to have happened by chance.",
+  "meaningVi": "có ý nghĩa thống kê",
+  "existingExample": "The improvement was not statistically significant.",
+  "mustContainOneOf": [
+   "statistically significant",
+   "statistically-significant"
+  ]
+ },
+ {
+  "id": "vocab:anomaly",
+  "headword": "anomaly",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "something different from what is expected.",
+  "meaningVi": "điểm bất thường",
+  "existingExample": "Researchers investigated an anomaly in the data.",
+  "mustContainOneOf": [
+   "anomaly",
+   "anomalies"
+  ]
+ },
+ {
+  "id": "vocab:replicate",
+  "headword": "replicate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to repeat a study and obtain the same results.",
+  "meaningVi": "lặp lại (kết quả nghiên cứu)",
+  "existingExample": "Other teams failed to replicate the original results.",
+  "mustContainOneOf": [
+   "replicate",
+   "replicates",
+   "replicated",
+   "replicating"
+  ]
+ },
+ {
+  "id": "vocab:falsify",
+  "headword": "falsify",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to change data dishonestly.",
+  "meaningVi": "làm giả (dữ liệu)",
+  "existingExample": "The researcher was dismissed for falsifying data.",
+  "mustContainOneOf": [
+   "falsify",
+   "falsifies",
+   "falsified",
+   "falsifying"
+  ]
+ },
+ {
+  "id": "vocab:scientific_consensus",
+  "headword": "scientific consensus",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "general agreement among scientists.",
+  "meaningVi": "sự đồng thuận khoa học",
+  "existingExample": "There is a strong scientific consensus on human-caused climate change.",
+  "mustContainOneOf": [
+   "scientific consensus",
+   "scientific-consensus"
+  ]
+ },
+ {
+  "id": "vocab:groundbreaking",
+  "headword": "groundbreaking",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "introducing new ideas or methods.",
+  "meaningVi": "mang tính đột phá",
+  "existingExample": "Her groundbreaking research transformed cancer treatment.",
+  "mustContainOneOf": [
+   "groundbreaking"
+  ]
+ },
+ {
+  "id": "vocab:milestone",
+  "headword": "milestone",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "an important event in a process of development.",
+  "meaningVi": "cột mốc quan trọng",
+  "existingExample": "Mapping the human genome was a major scientific milestone.",
+  "mustContainOneOf": [
+   "milestone",
+   "milestones"
+  ]
+ },
+ {
+  "id": "vocab:genome",
+  "headword": "genome",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the complete set of genes in an organism.",
+  "meaningVi": "bộ gen",
+  "existingExample": "The human genome was first fully sequenced in the early 2000s.",
+  "mustContainOneOf": [
+   "genome",
+   "genomes"
+  ]
+ },
+ {
+  "id": "vocab:gene_editing",
+  "headword": "gene editing",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "changing DNA in a precise, targeted way.",
+  "meaningVi": "chỉnh sửa gen",
+  "existingExample": "Gene editing could one day cure some inherited diseases.",
+  "mustContainOneOf": [
+   "gene editing",
+   "gene-editing"
+  ]
+ },
+ {
+  "id": "vocab:stem_cell",
+  "headword": "stem cell",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a cell that can develop into other types of cells.",
+  "meaningVi": "tế bào gốc",
+  "existingExample": "Stem cell research offers hope for patients with spinal injuries.",
+  "mustContainOneOf": [
+   "stem cell",
+   "stem-cell"
+  ]
+ },
+ {
+  "id": "vocab:biotechnology",
+  "headword": "biotechnology",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the use of living organisms in technology and industry.",
+  "meaningVi": "công nghệ sinh học",
+  "existingExample": "Biotechnology is used to develop new vaccines.",
+  "mustContainOneOf": [
+   "biotechnology",
+   "biotechnologies"
+  ]
+ },
+ {
+  "id": "vocab:vaccine_development",
+  "headword": "vaccine development",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the process of creating new vaccines.",
+  "meaningVi": "nghiên cứu phát triển vắc-xin",
+  "existingExample": "New techniques have accelerated vaccine development.",
+  "mustContainOneOf": [
+   "vaccine development",
+   "vaccine-development"
+  ]
+ },
+ {
+  "id": "vocab:particle_physics",
+  "headword": "particle physics",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "the study of the smallest components of matter.",
+  "meaningVi": "vật lý hạt",
+  "existingExample": "Particle physics requires enormous and expensive machines.",
+  "mustContainOneOf": [
+   "particle physics",
+   "particle-physics"
+  ]
+ },
+ {
+  "id": "vocab:astronomy",
+  "headword": "astronomy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "the scientific study of stars and planets.",
+  "meaningVi": "thiên văn học",
+  "existingExample": "Space telescopes have transformed astronomy.",
+  "mustContainOneOf": [
+   "astronomy",
+   "astronomies"
+  ]
+ },
+ {
+  "id": "vocab:astronaut",
+  "headword": "astronaut",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "a person trained to travel in space.",
+  "meaningVi": "phi hành gia",
+  "existingExample": "Astronauts must adapt to weightlessness.",
+  "mustContainOneOf": [
+   "astronaut",
+   "astronauts"
+  ]
+ },
+ {
+  "id": "vocab:space_race",
+  "headword": "space race",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "competition between countries or companies in space exploration.",
+  "meaningVi": "cuộc đua vũ trụ",
+  "existingExample": "Private companies have started a new space race.",
+  "mustContainOneOf": [
+   "space race",
+   "space-race"
+  ]
+ },
+ {
+  "id": "vocab:colonise",
+  "headword": "colonise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "to settle in and establish control of a new place.",
+  "meaningVi": "đến định cư (hành tinh khác)",
+  "existingExample": "Some believe humans will one day colonise Mars.",
+  "mustContainOneOf": [
+   "colonise",
+   "colonize",
+   "colonises",
+   "colonised",
+   "colonising",
+   "colonized"
+  ]
+ },
+ {
+  "id": "vocab:orbit",
+  "headword": "orbit",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "science",
+   "space"
+  ],
+  "definitionEn": "the path of an object around a planet or star.",
+  "meaningVi": "quỹ đạo; bay quanh",
+  "existingExample": "The space station orbits the Earth about every ninety minutes.",
+  "mustContainOneOf": [
+   "orbit",
+   "orbits"
+  ]
+ },
+ {
+  "id": "vocab:extraterrestrial",
+  "headword": "extraterrestrial",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "coming from outside the Earth.",
+  "meaningVi": "ngoài Trái Đất",
+  "existingExample": "Scientists continue to search for signs of extraterrestrial life.",
+  "mustContainOneOf": [
+   "extraterrestrial"
+  ]
+ },
+ {
+  "id": "vocab:evidence_based",
+  "headword": "evidence-based",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "based on scientific evidence.",
+  "meaningVi": "dựa trên bằng chứng",
+  "existingExample": "Governments should adopt evidence-based policies.",
+  "mustContainOneOf": [
+   "evidence-based",
+   "evidence based"
+  ]
+ },
+ {
+  "id": "vocab:quantitative",
+  "headword": "quantitative",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "involving measurement of amounts or numbers.",
+  "meaningVi": "định lượng",
+  "existingExample": "Quantitative data can be analysed statistically.",
+  "mustContainOneOf": [
+   "quantitative"
+  ]
+ },
+ {
+  "id": "vocab:qualitative",
+  "headword": "qualitative",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "describing qualities rather than numbers.",
+  "meaningVi": "định tính",
+  "existingExample": "Qualitative research explores people's experiences in depth.",
+  "mustContainOneOf": [
+   "qualitative"
+  ]
+ },
+ {
+  "id": "vocab:longitudinal_study",
+  "headword": "longitudinal study",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a study that follows the same people over many years.",
+  "meaningVi": "nghiên cứu theo dõi dài hạn",
+  "existingExample": "A longitudinal study tracked the children into adulthood.",
+  "mustContainOneOf": [
+   "longitudinal study",
+   "longitudinal-study"
+  ]
+ },
+ {
+  "id": "vocab:cohort",
+  "headword": "cohort",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a group of people studied together.",
+  "meaningVi": "nhóm đối tượng nghiên cứu",
+  "existingExample": "The study followed a cohort of 5,000 adults.",
+  "mustContainOneOf": [
+   "cohort",
+   "cohorts"
+  ]
+ },
+ {
+  "id": "vocab:causal",
+  "headword": "causal",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "involving cause and effect.",
+  "meaningVi": "(thuộc) nhân quả",
+  "existingExample": "Researchers have not yet proved a causal link.",
+  "mustContainOneOf": [
+   "causal"
+  ]
+ },
+ {
+  "id": "vocab:inconclusive",
+  "headword": "inconclusive",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "not leading to a definite result.",
+  "meaningVi": "chưa đủ để kết luận",
+  "existingExample": "The evidence on this question remains inconclusive.",
+  "mustContainOneOf": [
+   "inconclusive"
+  ]
+ },
+ {
+  "id": "vocab:robust",
+  "headword": "robust",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "strong and reliable.",
+  "meaningVi": "vững chắc, đáng tin",
+  "existingExample": "There is robust evidence that exercise improves mood.",
+  "mustContainOneOf": [
+   "robust"
+  ]
+ },
+ {
+  "id": "vocab:flawed",
+  "headword": "flawed",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "containing mistakes or weaknesses.",
+  "meaningVi": "có sai sót",
+  "existingExample": "The study was flawed because the sample was too small.",
+  "mustContainOneOf": [
+   "flawed"
+  ]
+ },
+ {
+  "id": "vocab:conflict_of_interest",
+  "headword": "conflict of interest",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "a situation where personal interests may affect judgement.",
+  "meaningVi": "xung đột lợi ích",
+  "existingExample": "Researchers must declare any conflict of interest.",
+  "mustContainOneOf": [
+   "conflict of interest",
+   "conflict-of-interest"
+  ]
+ },
+ {
+  "id": "vocab:funding_body",
+  "headword": "funding body",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "an organisation that provides money for research.",
+  "meaningVi": "cơ quan tài trợ",
+  "existingExample": "An independent funding body is far more likely to support long-term scientific studies with transparent methodologies.",
+  "mustContainOneOf": [
+   "funding body",
+   "funding-body"
+  ]
+ },
+ {
+  "id": "vocab:research_grant",
+  "headword": "research grant",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "money given to fund a research project.",
+  "meaningVi": "khoản tài trợ nghiên cứu",
+  "existingExample": "She received a research grant to study coral reefs.",
+  "mustContainOneOf": [
+   "research grant",
+   "research-grant"
+  ]
+ },
+ {
+  "id": "vocab:serendipity",
+  "headword": "serendipity",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "science"
+  ],
+  "definitionEn": "finding something valuable by chance.",
+  "meaningVi": "sự tình cờ may mắn",
+  "existingExample": "Penicillin was discovered partly by serendipity.",
+  "mustContainOneOf": [
+   "serendipity",
+   "serendipities"
+  ]
+ }
+]

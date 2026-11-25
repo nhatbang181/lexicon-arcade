@@ -20,158 +20,158 @@
       "lineId": "l01",
       "speakerId": "lec",
       "text": "Good morning, everyone. Weather stations with reliable thermometers have operated for barely a century and a half, which is far too brief to understand Earth's long-term climate swings. Today we are exploring one of palaeoclimatology's most remarkable natural time machines: deep glacial ice cores drilled from the vast ice sheets of Antarctica and Greenland.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 22.16
     },
     {
       "lineId": "l02",
       "speakerId": "lec",
       "text": "Each winter, fresh snow settles over the polar plateau without melting in summer. As successive decades of snowfall pile up, the weight compresses loose crystals into dense granular firn and eventually into solid glacial ice, sealing microscopic bubbles of ancient atmosphere permanently inside.",
-      "start": 0,
-      "end": 0
+      "start": 22.54,
+      "end": 41.32
     },
     {
       "lineId": "l03",
       "speakerId": "lec",
       "text": "When scientists crush a slice of deep core inside a vacuum chamber, they can measure exact carbon dioxide and methane concentrations from hundreds of thousands of years ago directly, rather than relying on indirect biological proxies.",
-      "start": 0,
-      "end": 0
+      "start": 41.7,
+      "end": 55.71
     },
     {
       "lineId": "l04",
       "speakerId": "lec",
       "text": "Temperature reconstruction works differently. Rather than analysing the trapped air pockets, palaeoclimatologists examine the frozen water molecules themselves, measuring subtle shifts in the ratio of heavy to light oxygen isotopes to infer how warm or cold the atmosphere was when the snow originally fell.",
-      "start": 0,
-      "end": 0
+      "start": 56.09,
+      "end": 74.91
     },
     {
       "lineId": "l05",
       "speakerId": "lec",
       "text": "Combining air chemistry with water-molecule chemistry gives researchers a paired record of greenhouse gases and regional temperature over consecutive ice ages.",
-      "start": 0,
-      "end": 0,
+      "start": 75.29,
+      "end": 84.76,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l06",
       "speakerId": "lec",
       "text": "Let's turn now to the fieldwork realities of selecting a drill site and extracting fragile three-kilometre columns of ice.",
-      "start": 0,
-      "end": 0
+      "start": 85.96,
+      "end": 93.39
     },
     {
       "lineId": "l07",
       "speakerId": "lec",
       "text": "Choosing the right location takes years of reconnaissance. Crews certainly monitor wind patterns and snow runway conditions, yet the decisive factor lies hidden miles underground. Teams fly ice-penetrating radar grids across the plateau to map subglacial bedrock, searching for flat interior domes where horizontal ice flow will not fold or scramble the chronological layers.",
-      "start": 0,
-      "end": 0
+      "start": 93.77,
+      "end": 117.78
     },
     {
       "lineId": "l08",
       "speakerId": "lec",
       "text": "Once a drill camp is established, an electromechanical corer lowers down a narrow shaft on a steel cable, retrieving cylinders roughly two metres long on every trip.",
-      "start": 0,
-      "end": 0
+      "start": 118.16,
+      "end": 128.27
     },
     {
       "lineId": "l09",
       "speakerId": "lec",
       "text": "Below a few hundred metres, the enormous weight of the surrounding ice sheet slowly squeezes an open borehole shut. To counteract that crushing pressure and keep the walls from collapsing, engineers keep the shaft filled with a carefully balanced, non-freezing fluid.",
-      "start": 0,
-      "end": 0
+      "start": 128.65,
+      "end": 144.93
     },
     {
       "lineId": "l10",
       "speakerId": "lec",
       "text": "Handling deep ice is equally delicate. Cores hauled up from two kilometres down contain highly compressed air and can shatter spontaneously if cut immediately. Field crews therefore leave fresh cores resting in snow trenches over an entire polar winter to relax internal stress before packing them into refrigerated containers for shipment to cold archives.",
-      "start": 0,
-      "end": 0
+      "start": 145.31,
+      "end": 167.5
     },
     {
       "lineId": "l11",
       "speakerId": "lec",
       "text": "A single deep drilling project commonly requires five or six short summer field seasons to reach the bottom of the sheet.",
-      "start": 0,
-      "end": 0,
+      "start": 167.88,
+      "end": 174.8,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l12",
       "speakerId": "lec",
       "text": "Moving on to laboratory analysis, let's consider the diverse non-gaseous clues preserved inside polar ice alongside air and water.",
-      "start": 0,
-      "end": 0
+      "start": 176.0,
+      "end": 184.55
     },
     {
       "lineId": "l13",
       "speakerId": "lec",
       "text": "Continuous laser scans of melted core water reveal sharp spikes in microscopic wind-blown dust during peak glacial periods, showing that Ice Age continents were far drier and windier than today.",
-      "start": 0,
-      "end": 0
+      "start": 184.93,
+      "end": 196.84
     },
     {
       "lineId": "l14",
       "speakerId": "lec",
       "text": "Equally valuable are faint dark volcanic ash seams visible in the ice. Because a major eruption blankets an entire hemisphere within weeks, those unmistakable horizons act as fixed reference markers that allow laboratories to synchronise timelines across cores drilled thousands of kilometres apart.",
-      "start": 0,
-      "end": 0
+      "start": 197.22,
+      "end": 215.66
     },
     {
       "lineId": "l15",
       "speakerId": "lec",
       "text": "Even when visible ash fails to reach the poles, chemical instruments detect lingering acid peaks rich in sulphur, tracing how stratospheric volcanic aerosols dimmed sunlight and cooled global weather for years afterward.",
-      "start": 0,
-      "end": 0
+      "start": 216.04,
+      "end": 229.18
     },
     {
       "lineId": "l16",
       "speakerId": "lec",
       "text": "In shallower cores from the past two millennia, researchers can even read the signature of ancient Roman metal smelting and the onset of modern coal burning.",
-      "start": 0,
-      "end": 0,
+      "start": 229.56,
+      "end": 238.79,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l17",
       "speakerId": "lec",
       "text": "Finally, let's examine the chronological ceiling of existing ice records and the current international race to recover even older climate archives.",
-      "start": 0,
-      "end": 0
+      "start": 239.99,
+      "end": 248.88
     },
     {
       "lineId": "l18",
       "speakerId": "lec",
       "text": "Continuous polar cores currently extend back around eight hundred thousand years. Extending that record past one and a half million years is surprisingly tricky: the main culprit erasing the oldest basal layers is not atmospheric warming from above, but steady geothermal heat rising from the Earth's crust, which slowly melts the underside of thick ice sheets.",
-      "start": 0,
-      "end": 0
+      "start": 249.26,
+      "end": 271.12
     },
     {
       "lineId": "l19",
       "speakerId": "lec",
       "text": "Finding pockets where the underlying rock is unusually cold and thin ice has stayed frozen solid for over a million years requires unprecedented precision.",
-      "start": 0,
-      "end": 0
+      "start": 271.5,
+      "end": 280.63
     },
     {
       "lineId": "l20",
       "speakerId": "lec",
       "text": "Rather than spending half a decade drilling blind at an uncertain location, teams now test candidate sites with rapid-access probes fitted with optical sensors that measure dust and ice crystal structure straight down the borehole in just a few days.",
-      "start": 0,
-      "end": 0
+      "start": 281.01,
+      "end": 295.16
     },
     {
       "lineId": "l21",
       "speakerId": "lec",
       "text": "Once that million-year-old core is recovered, climatologists hope to solve why Earth's ice-age rhythm abruptly shifted from forty-thousand-year to hundred-thousand-year cycles. Thank you very much.",
-      "start": 0,
-      "end": 0
+      "start": 295.54,
+      "end": 307.67
     }
   ],
   "audio": {
     "path": "audio/listening/p4_res_001.mp3",
-    "durationSec": 365,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 308.9,
+    "sha256": "0df90b461fd16ef689695164b796cc94a234da21a3d8bed3c0687796dc81bb25",
+    "loudnessLUFS": -14.7
   },
   "questionGroups": [
     {
@@ -250,15 +250,15 @@
           },
           "evidence": {
             "lineId": "l02",
-            "start": 0,
-            "end": 0
+            "start": 22.54,
+            "end": 41.32
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 22.54,
+              "end": 41.32,
               "explanationVi": "Cần điền danh từ số nhiều 'bubbles' khớp với ngữ cảnh bọt khí cổ đại."
             }
           ]
@@ -274,15 +274,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 56.09,
+            "end": 74.91
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 56.09,
+              "end": 74.91,
               "decoy": "air pockets",
               "explanationVi": "Giảng viên loại trừ việc phân tích 'air pockets' cho nhiệt độ mà đo tỷ lệ 'isotopes' oxy trong nước đóng băng."
             }
@@ -299,15 +299,15 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 93.77,
+            "end": 117.78
           },
           "traps": [
             {
               "type": "signpost_skip",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 93.77,
+              "end": 117.78,
               "decoy": "wind patterns",
               "explanationVi": "Người nói nhắc qua gió và đường băng trước khi chốt yếu tố quyết định là khảo sát 'bedrock' dưới băng."
             }
@@ -324,15 +324,15 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 128.65,
+            "end": 144.93
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 128.65,
+              "end": 144.93,
               "explanationVi": "'stop walls collapsing' diễn đạt lại 'keep the walls from collapsing' nhờ dung dịch 'fluid'."
             }
           ]
@@ -348,15 +348,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 145.31,
+            "end": 167.5
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 145.31,
+              "end": 167.5,
               "explanationVi": "'chilled' diễn đạt lại 'refrigerated'; bắt buộc dùng số nhiều 'containers'."
             }
           ]
@@ -372,15 +372,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 184.93,
+            "end": 196.84
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 184.93,
+              "end": 196.84,
               "explanationVi": "'High levels' diễn đạt lại cụm 'sharp spikes' ngay trước 'wind-blown dust'."
             }
           ]
@@ -396,15 +396,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 197.22,
+            "end": 215.66
           },
           "traps": [
             {
               "type": "homophone_minimal_pair",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 197.22,
+              "end": 215.66,
               "decoy": "seems",
               "explanationVi": "'seams' (lớp/vỉa tro mỏng) đồng âm với động từ 'seems' (dường như)."
             }
@@ -422,8 +422,8 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 216.04,
+            "end": 229.18
           },
           "traps": []
         },
@@ -438,15 +438,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 249.26,
+            "end": 271.12
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l18",
-              "start": 0,
-              "end": 0,
+              "start": 249.26,
+              "end": 271.12,
               "decoy": "atmospheric warming",
               "explanationVi": "Người nói bác bỏ 'atmospheric warming' từ bên trên và chỉ ra nguyên nhân là 'geothermal heat' từ vỏ Trái Đất."
             }
@@ -463,15 +463,15 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 281.01,
+            "end": 295.16
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l20",
-              "start": 0,
-              "end": 0,
+              "start": 281.01,
+              "end": 295.16,
               "explanationVi": "Danh từ số nhiều 'sensors' bắt buộc có -s."
             }
           ]
@@ -485,7 +485,18 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "lec=en-GB-SoniaNeural",
+    "voices": {
+      "lec": "en-GB-SoniaNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.93,
+    "renderedAt": "2026-11-25"
   }
 }

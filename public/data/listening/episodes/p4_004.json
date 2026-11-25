@@ -20,157 +20,157 @@
       "lineId": "l01",
       "speakerId": "lec",
       "text": "Hello everyone. Anyone who has visited a well-preserved classical stone amphitheatre around the Mediterranean has probably witnessed tour guides dropping a coin or striking a match at the centre of the stage while listeners sixty metres away in the topmost row hear every crisp detail. Without microphones, wires, or electricity, these open-air structures routinely hosted over ten thousand spectators. Today we will unpack the physics behind that extraordinary acoustic performance.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 31.74
     },
     {
       "lineId": "l02",
       "speakerId": "lec",
       "text": "The story begins before a single block of stone was cut, with site selection. Rather than erecting freestanding bowls on exposed flat ground, ancient architects carved their tiered seating into sheltered natural hillsides, which naturally buffered prevailing breezes and cut ambient background noise.",
-      "start": 0,
-      "end": 0
+      "start": 31.99,
+      "end": 50.6
     },
     {
       "lineId": "l03",
       "speakerId": "lec",
       "text": "Just as important was the steep angle of the seating bowl, often rising at thirty to thirty-five degrees above the horizontal, noticeably steeper than most modern stadiums built primarily for visual comfort rather than unamplified speech.",
-      "start": 0,
-      "end": 0
+      "start": 50.85,
+      "end": 64.49
     },
     {
       "lineId": "l04",
       "speakerId": "lec",
       "text": "For a long time, historians assumed those steep steps existed purely so everyone could see over the person in front. Modern acoustic tests show another vital benefit: on shallow slopes, voices skimming across the crowd are absorbed by spectators' heavy clothing, whereas steep tiers preserve an unobstructed aerial path to the back rows.",
-      "start": 0,
-      "end": 0
+      "start": 64.74,
+      "end": 86.15
     },
     {
       "lineId": "l05",
       "speakerId": "lec",
       "text": "Yet geometry and site shelter alone could not explain why faint whispers remained astonishingly intelligible even when thousands of people were breathing, shifting, and rustling programs inside the open bowl.",
-      "start": 0,
-      "end": 0
+      "start": 86.4,
+      "end": 99.0
     },
     {
       "lineId": "l06",
       "speakerId": "lec",
       "text": "Popular guidebooks once credited favourable uphill air currents or hidden subterranean chambers. Controlled impulse measurements ruled out both ideas. Instead, researchers discovered that the regular corrugated rows of limestone benches behave as an acoustic filter, selectively suppressing low-frequency rumble below five hundred hertz.",
-      "start": 0,
-      "end": 0,
+      "start": 99.25,
+      "end": 120.85,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l07",
       "speakerId": "lec",
       "text": "Let's turn now to how this stone filtering interacts with human hearing inside an open-air venue.",
-      "start": 0,
-      "end": 0
+      "start": 121.65,
+      "end": 127.31
     },
     {
       "lineId": "l08",
       "speakerId": "lec",
       "text": "Most outdoor distractions, such as wind rustle and distant crowd murmur, sit in the low-frequency band. While loud vowels give speech its raw power, it is actually high-frequency consonants that allow listeners to distinguish words accurately. By stripping away low-pitched interference, the limestone steps let those delicate speech details ring out cleanly.",
-      "start": 0,
-      "end": 0
+      "start": 127.56,
+      "end": 151.11
     },
     {
       "lineId": "l09",
       "speakerId": "lec",
       "text": "At first, that raises a puzzle: if the stone seats suppress low frequencies, why do deep male voices not sound tinny or artificial from the top row?",
-      "start": 0,
-      "end": 0
+      "start": 151.36,
+      "end": 160.76
     },
     {
       "lineId": "l10",
       "speakerId": "lec",
       "text": "The answer lies in a psychoacoustic phenomenon called virtual pitch. Even when a voice's lowest fundamental tone is attenuated, the human auditory cortex effortlessly reconstructs the missing bass by interpreting the spacing of upper harmonics that still reach the ear.",
-      "start": 0,
-      "end": 0
+      "start": 161.01,
+      "end": 177.8
     },
     {
       "lineId": "l11",
       "speakerId": "lec",
       "text": "Small focal landmarks also contributed to clarity. In the exact middle of the circular orchestra stood a low stone altar; far from being merely ceremonial, its smooth top surface scattered early sound waves upward toward the middle seating tiers.",
-      "start": 0,
-      "end": 0
+      "start": 178.05,
+      "end": 193.64
     },
     {
       "lineId": "l12",
       "speakerId": "lec",
       "text": "Notice how acoustic precision emerged from a partnership between architectural surfaces and the way our brains decode speech.",
-      "start": 0,
-      "end": 0,
+      "start": 193.89,
+      "end": 201.26,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l13",
       "speakerId": "lec",
       "text": "Moving on to the individual architectural components, let's compare four distinct structural features and the specific acoustic role each one played.",
-      "start": 0,
-      "end": 0
+      "start": 202.06,
+      "end": 210.64
     },
     {
       "lineId": "l14",
       "speakerId": "lec",
       "text": "First, consider the circular orchestra floor itself. Whether paved with tightly fitted marble slabs or beaten earth, this hard horizontal disc sat directly in front of the actors, creating an immediate upward reflection that arrived at listeners' ears milliseconds after the direct voice and strengthened perceived loudness.",
-      "start": 0,
-      "end": 0
+      "start": 210.89,
+      "end": 230.39
     },
     {
       "lineId": "l15",
       "speakerId": "lec",
       "text": "Second, rising directly behind the performers stood the tall stage backdrop, known in classical architecture as the skene, initially framed in portable timber panels and later rebuilt as a permanent multi-storey wall of dressed limestone and marble.",
-      "start": 0,
-      "end": 0
+      "start": 230.64,
+      "end": 245.3
     },
     {
       "lineId": "l16",
       "speakerId": "lec",
       "text": "Aside from providing doorways and painted scenery, this vertical facade functioned as a massive acoustic backboard, redirecting forward any vocal energy that would otherwise escape behind the theatre.",
-      "start": 0,
-      "end": 0
+      "start": 245.55,
+      "end": 257.05
     },
     {
       "lineId": "l17",
       "speakerId": "lec",
       "text": "Third, classical architectural treatises describe recessed wall niches positioned strategically beneath certain seating blocks and fitted with tuned hollow vessels cast in bronze or fired clay, known as echeia.",
-      "start": 0,
-      "end": 0
+      "start": 257.3,
+      "end": 270.15
     },
     {
       "lineId": "l18",
       "speakerId": "lec",
       "text": "Although archaeologists still debate how common they were, engineers who built modern replicas found that carefully tuned vessels act as Helmholtz resonators capable of dampening troublesome echoes in more enclosed stone venues.",
-      "start": 0,
-      "end": 0
+      "start": 270.4,
+      "end": 283.35
     },
     {
       "lineId": "l19",
       "speakerId": "lec",
       "text": "Finally, many monumental amphitheatres built during the later classical and imperial periods were crowned along the very top rim of the bowl by a continuous roofed colonnade.",
-      "start": 0,
-      "end": 0
+      "start": 284.15,
+      "end": 294.28
     },
     {
       "lineId": "l20",
       "speakerId": "lec",
       "text": "Beyond offering welcome shade during midday performances, its deep shaded gallery served a practical acoustic function: stray sound waves entering the portico were trapped and dissipated before they could rebound across the bowl.",
-      "start": 0,
-      "end": 0
+      "start": 294.53,
+      "end": 307.4
     },
     {
       "lineId": "l21",
       "speakerId": "lec",
       "text": "Even today, contemporary concert-hall acousticians and urban amphitheatre designers study these ancient stone proportions closely to balance natural vocal clarity and warmth without over-relying on electronic loudspeakers. Thank you all for listening.",
-      "start": 0,
-      "end": 0
+      "start": 307.65,
+      "end": 323.94
     }
   ],
   "audio": {
     "path": "audio/listening/p4_004.mp3",
-    "durationSec": 350,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 324.8,
+    "sha256": "36b0585eb91eadd28c1222c7d6fd24c27e358c37f185f59e76d41b31719d3098",
+    "loudnessLUFS": -15.3
   },
   "questionGroups": [
     {
@@ -229,15 +229,15 @@
           },
           "evidence": {
             "lineId": "l02",
-            "start": 0,
-            "end": 0
+            "start": 31.99,
+            "end": 50.6
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 31.99,
+              "end": 50.6,
               "explanationVi": "Cần điền danh từ số nhiều 'hillsides' để khớp ngữ pháp."
             }
           ]
@@ -253,15 +253,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 64.74,
+            "end": 86.15
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 64.74,
+              "end": 86.15,
               "explanationVi": "'stop voices from being absorbed' tương đương 'preserve an unobstructed aerial path' thay vì bị 'clothing' hấp thụ."
             }
           ]
@@ -277,15 +277,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 99.25,
+            "end": 120.85
           },
           "traps": [
             {
               "type": "signpost_skip",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 99.25,
+              "end": 120.85,
               "decoy": "air currents",
               "explanationVi": "Giảng viên bác bỏ giải thích cũ về 'air currents' và hầm ngầm trước khi nêu cơ chế 'filter'."
             }
@@ -302,15 +302,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 127.56,
+            "end": 151.11
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 127.56,
+              "end": 151.11,
               "decoy": "vowels",
               "explanationVi": "'vowels' chỉ tạo độ to, còn 'consonants' mới giúp người nghe phân biệt từ chính xác."
             }
@@ -327,15 +327,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 161.01,
+            "end": 177.8
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 161.01,
+              "end": 177.8,
               "explanationVi": "Bắt buộc dùng số nhiều 'harmonics' (các họa âm bậc cao)."
             }
           ]
@@ -351,15 +351,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 178.05,
+            "end": 193.64
           },
           "traps": [
             {
               "type": "homophone_minimal_pair",
               "lineId": "l11",
-              "start": 0,
-              "end": 0,
+              "start": 178.05,
+              "end": 193.64,
               "decoy": "alter",
               "explanationVi": "'altar' (bàn thờ đá) đồng âm với động từ 'alter' (thay đổi)."
             }
@@ -413,8 +413,8 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 210.89,
+            "end": 230.39
           },
           "traps": []
         },
@@ -430,15 +430,15 @@
           },
           "evidence": {
             "lineId": "l16",
-            "start": 0,
-            "end": 0
+            "start": 245.55,
+            "end": 257.05
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 245.55,
+              "end": 257.05,
               "explanationVi": "'prevents... escaping' diễn đạt lại 'redirecting forward... would otherwise escape'; chấp nhận cả 'theatre' và 'theater'."
             }
           ]
@@ -454,15 +454,15 @@
           },
           "evidence": {
             "lineId": "l18",
-            "start": 0,
-            "end": 0
+            "start": 270.4,
+            "end": 283.35
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l18",
-              "start": 0,
-              "end": 0,
+              "start": 270.4,
+              "end": 283.35,
               "explanationVi": "Danh từ số nhiều bất quy tắc 'echoes' cần có đuôi -es."
             }
           ]
@@ -478,8 +478,8 @@
           },
           "evidence": {
             "lineId": "l20",
-            "start": 0,
-            "end": 0
+            "start": 294.53,
+            "end": 307.4
           },
           "traps": []
         }
@@ -492,7 +492,18 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "lec=en-GB-LibbyNeural",
+    "voices": {
+      "lec": "en-GB-LibbyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.02,
+    "renderedAt": "2026-11-25"
   }
 }

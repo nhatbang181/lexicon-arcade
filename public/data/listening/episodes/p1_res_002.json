@@ -27,24 +27,24 @@
       "lineId": "l01",
       "speakerId": "officer",
       "text": "Good morning, Greenfield Council Parks and Allotments, Rachel speaking. How may I help?",
-      "start": 0,
-      "end": 0,
+      "start": 0.0,
+      "end": 5.88,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l02",
       "speakerId": "caller",
       "text": "Hello Rachel. I live in Greenfield and I would like to apply for a vegetable plot on one of the council allotment sites.",
-      "start": 0,
-      "end": 0,
+      "start": 6.49,
+      "end": 13.57,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l03",
       "speakerId": "officer",
       "text": "Oh, lovely! Growing your own produce has become hugely popular this year. I can register your application right now. Could I start with your full name?",
-      "start": 0,
-      "end": 0,
+      "start": 14.18,
+      "end": 25.13,
       "pauseAfter": 0.4
     },
     {
@@ -52,16 +52,16 @@
       "speakerId": "caller",
       "text": "Sure, it is Simon Thornton. Let me spell the surname just in case: T-H-O-R-N-T-O-N.",
       "ttsText": "Sure, it is Simon Thornton. Let me spell the surname just in case: T, H, O, R, N, T, O, N.",
-      "start": 0,
-      "end": 0,
+      "start": 25.74,
+      "end": 35.18,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l05",
       "speakerId": "officer",
       "text": "Thornton, got it. Because council plots are reserved for local residents, could you give me your street address?",
-      "start": 0,
-      "end": 0,
+      "start": 35.95,
+      "end": 42.8,
       "pauseAfter": 0.4
     },
     {
@@ -69,72 +69,72 @@
       "speakerId": "caller",
       "text": "Of course, it is 36 Millbrook Road... oh, sorry, 63 Millbrook Road! I always reverse those two digits when I am rushing.",
       "ttsText": "Of course, it is thirty-six Millbrook Road... oh, sorry, sixty-three Millbrook Road! I always reverse those two digits when I am rushing.",
-      "start": 0,
-      "end": 0,
+      "start": 43.41,
+      "end": 52.58,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l07",
       "speakerId": "officer",
       "text": "Sixty-three Millbrook Road, all confirmed inside the town boundary. Now, which of our allotment sites were you hoping for?",
-      "start": 0,
-      "end": 0,
+      "start": 53.35,
+      "end": 61.14,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l08",
       "speakerId": "caller",
       "text": "I walked past North Orchard the other day and loved the fruit trees, though I heard the waiting list there is quite long?",
-      "start": 0,
-      "end": 0,
+      "start": 61.75,
+      "end": 67.52,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l09",
       "speakerId": "officer",
       "text": "Yes, North Orchard has roughly a three-year wait at the moment. Over at South Meadow, however, we just cleared three overgrown plots and have spaces opening next month.",
-      "start": 0,
-      "end": 0,
+      "start": 68.13,
+      "end": 78.96,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l10",
       "speakerId": "caller",
       "text": "Oh, next month beats waiting three years! Please put me down for South Meadow instead.",
-      "start": 0,
-      "end": 0,
+      "start": 79.57,
+      "end": 85.47,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l11",
       "speakerId": "officer",
       "text": "Great choice, South Meadow gets brilliant afternoon sun. Would you like to apply for a full plot or a half plot?",
-      "start": 0,
-      "end": 0,
+      "start": 86.24,
+      "end": 93.43,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l12",
       "speakerId": "caller",
       "text": "Um, I was thinking a full plot... wait, how big is a full plot in square metres?",
-      "start": 0,
-      "end": 0,
+      "start": 94.04,
+      "end": 98.92,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l13",
       "speakerId": "officer",
       "text": "A full plot is around two hundred and fifty square metres, which takes about eight to ten hours of weeding and digging every week.",
-      "start": 0,
-      "end": 0,
+      "start": 99.53,
+      "end": 106.4,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l14",
       "speakerId": "caller",
       "text": "Oh, goodness, I work full time and this is my first garden! Let me start sensibly with a half plot instead.",
-      "start": 0,
-      "end": 0,
+      "start": 107.01,
+      "end": 114.11,
       "pauseAfter": 0.5
     },
     {
@@ -142,16 +142,16 @@
       "speakerId": "officer",
       "text": "Very wise, most beginners prefer a half plot. For fees, a full plot is £94 a year, whereas a half plot is £52 annually, and that already includes the £12 shared water charge.",
       "ttsText": "Very wise, most beginners prefer a half plot. For fees, a full plot is ninety-four pounds a year, whereas a half plot is fifty-two pounds annually, and that already includes the twelve-pound shared water charge.",
-      "start": 0,
-      "end": 0,
+      "start": 114.88,
+      "end": 128.85,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l16",
       "speakerId": "caller",
       "text": "Fifty-two pounds a year including water is a bargain! Is there any deposit for the site gate key?",
-      "start": 0,
-      "end": 0,
+      "start": 129.46,
+      "end": 135.57,
       "pauseAfter": 0.4
     },
     {
@@ -159,8 +159,8 @@
       "speakerId": "officer",
       "text": "Yes, there is a refundable £25 key deposit when you sign your tenancy agreement. If you ever need an extra spare key cut later, that costs £10 non-refundable.",
       "ttsText": "Yes, there is a refundable twenty-five pound key deposit when you sign your tenancy agreement. If you ever need an extra spare key cut later, that costs ten pounds non-refundable.",
-      "start": 0,
-      "end": 0,
+      "start": 136.18,
+      "end": 147.79,
       "pauseAfter": 0.8
     },
     {
@@ -168,56 +168,56 @@
       "speakerId": "caller",
       "text": "Right, £25 refundable deposit. Before we finish, could you tell me a bit about the site rules and facilities at South Meadow?",
       "ttsText": "Right, twenty-five pound refundable deposit. Before we finish, could you tell me a bit about the site rules and facilities at South Meadow?",
-      "start": 0,
-      "end": 0,
+      "start": 149.02,
+      "end": 157.46,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l19",
       "speakerId": "officer",
       "text": "Sure! There are shared dip tanks for filling watering cans every thirty metres. One strict rule to note: because South Meadow backs onto housing, bonfires are completely banned all year round. You will need to compost woody prunings or take them to the recycling centre.",
-      "start": 0,
-      "end": 0,
+      "start": 158.07,
+      "end": 176.31,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l20",
       "speakerId": "caller",
       "text": "No bonfires at all, fair enough. Does the council provide any free soil supplies for tenants?",
-      "start": 0,
-      "end": 0,
+      "start": 177.08,
+      "end": 183.28,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l21",
       "speakerId": "officer",
       "text": "Yes! Local tree surgeons tip free woodchips by the gate in autumn for paths, and every spring the council delivers a large heap of free compost for tenants to dig into their vegetable beds.",
-      "start": 0,
-      "end": 0,
+      "start": 183.89,
+      "end": 196.04,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l22",
       "speakerId": "caller",
       "text": "Free compost in spring will save me a fortune. And how often do you inspect the plots to make sure they are being looked after?",
-      "start": 0,
-      "end": 0,
+      "start": 196.81,
+      "end": 203.94,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l23",
       "speakerId": "officer",
       "text": "We carry out two inspections a year. We used to do the first one in April, though because of late spring frosts we shifted the first inspection to May, with a second check in September.",
-      "start": 0,
-      "end": 0,
+      "start": 204.55,
+      "end": 215.46,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l24",
       "speakerId": "caller",
       "text": "Okay, May and September. How much of the plot actually has to be planted by May?",
-      "start": 0,
-      "end": 0,
+      "start": 216.23,
+      "end": 222.04,
       "pauseAfter": 0.4
     },
     {
@@ -225,32 +225,32 @@
       "speakerId": "officer",
       "text": "Tenants may use up to 25 percent of the area for a small tool shed, seating, or paths, meaning at least 75 percent of the plot must be actively cultivated.",
       "ttsText": "Tenants may use up to twenty-five percent of the area for a small tool shed, seating, or paths, meaning at least seventy-five percent of the plot must be actively cultivated.",
-      "start": 0,
-      "end": 0,
+      "start": 222.65,
+      "end": 232.84,
       "pauseAfter": 0.5
     },
     {
       "lineId": "l26",
       "speakerId": "caller",
       "text": "Seventy-five percent cultivated, got it. Thanks so much for walking me through everything, Rachel.",
-      "start": 0,
-      "end": 0,
+      "start": 233.61,
+      "end": 239.96,
       "pauseAfter": 0.4
     },
     {
       "lineId": "l27",
       "speakerId": "officer",
       "text": "You are very welcome, Simon. I will post your tenancy pack to Millbrook Road this afternoon!",
-      "start": 0,
-      "end": 0,
+      "start": 240.57,
+      "end": 246.77,
       "pauseAfter": 0.4
     }
   ],
   "audio": {
     "path": "audio/listening/p1_res_002.mp3",
-    "durationSec": 304,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 248.1,
+    "sha256": "6f962d393757a816a1eaec381c1f138a65c1e0efc316446796622c4e5fa6422d",
+    "loudnessLUFS": -16.1
   },
   "questionGroups": [
     {
@@ -309,15 +309,15 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 25.74,
+            "end": 35.18
           },
           "traps": [
             {
               "type": "spelling_out",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 25.74,
+              "end": 35.18,
               "explanationVi": "Người gọi đánh vần từng chữ cái họ T-H-O-R-N-T-O-N."
             }
           ]
@@ -333,15 +333,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 43.41,
+            "end": 52.58
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l06",
-              "start": 0,
-              "end": 0,
+              "start": 43.41,
+              "end": 52.58,
               "decoy": "36",
               "explanationVi": "Đọc đảo ngược số nhà thành 36 rồi sửa lại ngay thành 63 Millbrook Road."
             }
@@ -358,15 +358,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 79.57,
+            "end": 85.47
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l08",
-              "start": 0,
-              "end": 0,
+              "start": 61.75,
+              "end": 67.52,
               "decoy": "North Orchard",
               "explanationVi": "Thích North Orchard nhưng danh sách chờ ba năm nên đổi sang South Meadow."
             }
@@ -383,15 +383,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 107.01,
+            "end": 114.11
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 94.04,
+              "end": 98.92,
               "decoy": "full",
               "explanationVi": "Định chọn mảnh lớn (full) nhưng nghe diện tích quá rộng nên đổi sang nửa mảnh (half)."
             }
@@ -409,15 +409,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 114.88,
+            "end": 128.85
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l15",
-              "start": 0,
-              "end": 0,
+              "start": 114.88,
+              "end": 128.85,
               "decoy": "94",
               "explanationVi": "94 bảng là giá mảnh lớn, còn nửa mảnh gồm phí nước là 52 bảng mỗi năm."
             }
@@ -435,15 +435,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 136.18,
+            "end": 147.79
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l17",
-              "start": 0,
-              "end": 0,
+              "start": 136.18,
+              "end": 147.79,
               "decoy": "10",
               "explanationVi": "10 bảng là phí cắt thêm chìa phụ không hoàn lại, tiền cọc chìa chính là 25 bảng."
             }
@@ -498,15 +498,15 @@
           },
           "evidence": {
             "lineId": "l19",
-            "start": 0,
-            "end": 0
+            "start": 158.07,
+            "end": 176.31
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l19",
-              "start": 0,
-              "end": 0,
+              "start": 158.07,
+              "end": 176.31,
               "explanationVi": "Lưu ý dạng số nhiều 'bonfires' (đốt lửa trại) bị cấm hoàn toàn quanh năm."
             }
           ]
@@ -522,15 +522,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 183.89,
+            "end": 196.04
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 183.89,
+              "end": 196.04,
               "decoy": "woodchips",
               "explanationVi": "Dăm gỗ (woodchips) giao vào mùa thu, còn mùa xuân hội đồng giao phân ủ (compost)."
             }
@@ -547,15 +547,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 204.55,
+            "end": 215.46
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 204.55,
+              "end": 215.46,
               "decoy": "April",
               "explanationVi": "Trước đây kiểm tra tháng Tư nhưng do sương giá muộn nên dời sang tháng Năm (May)."
             }
@@ -573,15 +573,15 @@
           },
           "evidence": {
             "lineId": "l25",
-            "start": 0,
-            "end": 0
+            "start": 222.65,
+            "end": 232.84
           },
           "traps": [
             {
               "type": "distractor_number",
               "lineId": "l25",
-              "start": 0,
-              "end": 0,
+              "start": 222.65,
+              "end": 232.84,
               "decoy": "25",
               "explanationVi": "25% tối đa dành cho kho dụng cụ và lối đi, ít nhất 75% diện tích phải trồng trọt."
             }
@@ -596,7 +596,19 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "officer=en-US-AriaNeural, caller=en-GB-RyanNeural",
+    "voices": {
+      "officer": "en-US-AriaNeural",
+      "caller": "en-GB-RyanNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.96,
+    "renderedAt": "2026-11-24"
   }
 }

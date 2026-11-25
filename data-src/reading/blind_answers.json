@@ -1,368 +1,1461 @@
 [
-    {
-        "answers":  [
-                        {
-                            "qid":  "p2_004_q01",
-                            "answer":  "NO"
-                        },
-                        {
-                            "qid":  "p2_004_q02",
-                            "answer":  "YES"
-                        },
-                        {
-                            "qid":  "p2_004_q03",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p2_004_q04",
-                            "answer":  "NO"
-                        },
-                        {
-                            "qid":  "p2_004_q05",
-                            "answer":  "NO"
-                        },
-                        {
-                            "qid":  "p2_004_q06",
-                            "answer":  "YES"
-                        },
-                        {
-                            "qid":  "p2_004_q07",
-                            "answer":  "i"
-                        },
-                        {
-                            "qid":  "p2_004_q08",
-                            "answer":  "ii"
-                        },
-                        {
-                            "qid":  "p2_004_q09",
-                            "answer":  "iii"
-                        },
-                        {
-                            "qid":  "p2_004_q10",
-                            "answer":  "iv"
-                        },
-                        {
-                            "qid":  "p2_004_q11",
-                            "answer":  "v"
-                        },
-                        {
-                            "qid":  "p2_004_q12",
-                            "answer":  "F"
-                        },
-                        {
-                            "qid":  "p2_004_q13",
-                            "answer":  "E"
-                        },
-                        {
-                            "qid":  "p2_004_q14",
-                            "answer":  "D"
-                        }
-                    ],
-        "passageId":  "rp:p2_004"
-    },
-    {
-        "answers":  [
-                        {
-                            "qid":  "p3_001_q01",
-                            "answer":  "NO"
-                        },
-                        {
-                            "qid":  "p3_001_q02",
-                            "answer":  "YES"
-                        },
-                        {
-                            "qid":  "p3_001_q03",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p3_001_q04",
-                            "answer":  "NO"
-                        },
-                        {
-                            "qid":  "p3_001_q05",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p3_001_q06",
-                            "answer":  "YES"
-                        },
-                        {
-                            "qid":  "p3_001_q07",
-                            "answer":  "v"
-                        },
-                        {
-                            "qid":  "p3_001_q08",
-                            "answer":  "vii"
-                        },
-                        {
-                            "qid":  "p3_001_q09",
-                            "answer":  "i"
-                        },
-                        {
-                            "qid":  "p3_001_q10",
-                            "answer":  "ii"
-                        },
-                        {
-                            "qid":  "p3_001_q11",
-                            "answer":  "iv"
-                        },
-                        {
-                            "qid":  "p3_001_q12",
-                            "answer":  "closure"
-                        },
-                        {
-                            "qid":  "p3_001_q13",
-                            "answer":  "intuition"
-                        },
-                        {
-                            "qid":  "p3_001_q14",
-                            "answer":  "hypothesis"
-                        }
-                    ],
-        "passageId":  "rp:p3_001"
-    },
-    {
-        "answers":  [
-                        {
-                            "qid":  "p1_001_q01",
-                            "answer":  "TRUE"
-                        },
-                        {
-                            "qid":  "p1_001_q02",
-                            "answer":  "FALSE"
-                        },
-                        {
-                            "qid":  "p1_001_q03",
-                            "answer":  "TRUE"
-                        },
-                        {
-                            "qid":  "p1_001_q04",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p1_001_q05",
-                            "answer":  "FALSE"
-                        },
-                        {
-                            "qid":  "p1_001_q06",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p1_001_q07",
-                            "answer":  "iii"
-                        },
-                        {
-                            "qid":  "p1_001_q08",
-                            "answer":  "v"
-                        },
-                        {
-                            "qid":  "p1_001_q09",
-                            "answer":  "i"
-                        },
-                        {
-                            "qid":  "p1_001_q10",
-                            "answer":  "ii"
-                        },
-                        {
-                            "qid":  "p1_001_q11",
-                            "answer":  "iv"
-                        },
-                        {
-                            "qid":  "p1_001_q12",
-                            "answer":  "sodium"
-                        },
-                        {
-                            "qid":  "p1_001_q13",
-                            "answer":  "freshness"
-                        },
-                        {
-                            "qid":  "p1_001_q14",
-                            "answer":  "fertilisers"
-                        }
-                    ],
-        "passageId":  "rp:p1_001"
-    },
-    {
-        "answers":  [
-                        {
-                            "qid":  "p3_res_001_q01",
-                            "answer":  "YES"
-                        },
-                        {
-                            "qid":  "p3_res_001_q02",
-                            "answer":  "NO"
-                        },
-                        {
-                            "qid":  "p3_res_001_q03",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p3_res_001_q04",
-                            "answer":  "YES"
-                        },
-                        {
-                            "qid":  "p3_res_001_q05",
-                            "answer":  "NO"
-                        },
-                        {
-                            "qid":  "p3_res_001_q06",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p3_res_001_q07",
-                            "answer":  "iv"
-                        },
-                        {
-                            "qid":  "p3_res_001_q08",
-                            "answer":  "vi"
-                        },
-                        {
-                            "qid":  "p3_res_001_q09",
-                            "answer":  "i"
-                        },
-                        {
-                            "qid":  "p3_res_001_q10",
-                            "answer":  "v"
-                        },
-                        {
-                            "qid":  "p3_res_001_q11",
-                            "answer":  "ii"
-                        },
-                        {
-                            "qid":  "p3_res_001_q12",
-                            "answer":  "minerals"
-                        },
-                        {
-                            "qid":  "p3_res_001_q13",
-                            "answer":  "inventories"
-                        },
-                        {
-                            "qid":  "p3_res_001_q14",
-                            "answer":  "losses"
-                        }
-                    ],
-        "passageId":  "rp:p3_res_001"
-    },
-    {
-        "answers":  [
-                        {
-                            "qid":  "p1_res_001_q01",
-                            "answer":  "TRUE"
-                        },
-                        {
-                            "qid":  "p1_res_001_q02",
-                            "answer":  "FALSE"
-                        },
-                        {
-                            "qid":  "p1_res_001_q03",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p1_res_001_q04",
-                            "answer":  "TRUE"
-                        },
-                        {
-                            "qid":  "p1_res_001_q05",
-                            "answer":  "FALSE"
-                        },
-                        {
-                            "qid":  "p1_res_001_q06",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p1_res_001_q07",
-                            "answer":  "iv"
-                        },
-                        {
-                            "qid":  "p1_res_001_q08",
-                            "answer":  "ii"
-                        },
-                        {
-                            "qid":  "p1_res_001_q09",
-                            "answer":  "vii"
-                        },
-                        {
-                            "qid":  "p1_res_001_q10",
-                            "answer":  "iii"
-                        },
-                        {
-                            "qid":  "p1_res_001_q11",
-                            "answer":  "vi"
-                        },
-                        {
-                            "qid":  "p1_res_001_q12",
-                            "answer":  "2"
-                        },
-                        {
-                            "qid":  "p1_res_001_q13",
-                            "answer":  "evaporation"
-                        },
-                        {
-                            "qid":  "p1_res_001_q14",
-                            "answer":  "40"
-                        }
-                    ],
-        "passageId":  "rp:p1_res_001"
-    },
-    {
-        "answers":  [
-                        {
-                            "qid":  "p2_001_q01",
-                            "answer":  "FALSE"
-                        },
-                        {
-                            "qid":  "p2_001_q02",
-                            "answer":  "TRUE"
-                        },
-                        {
-                            "qid":  "p2_001_q03",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p2_001_q04",
-                            "answer":  "FALSE"
-                        },
-                        {
-                            "qid":  "p2_001_q05",
-                            "answer":  "TRUE"
-                        },
-                        {
-                            "qid":  "p2_001_q06",
-                            "answer":  "NOT GIVEN"
-                        },
-                        {
-                            "qid":  "p2_001_q07",
-                            "answer":  "i"
-                        },
-                        {
-                            "qid":  "p2_001_q08",
-                            "answer":  "ii"
-                        },
-                        {
-                            "qid":  "p2_001_q09",
-                            "answer":  "iii"
-                        },
-                        {
-                            "qid":  "p2_001_q10",
-                            "answer":  "iv"
-                        },
-                        {
-                            "qid":  "p2_001_q11",
-                            "answer":  "v"
-                        },
-                        {
-                            "qid":  "p2_001_q12",
-                            "answer":  "reservoir"
-                        },
-                        {
-                            "qid":  "p2_001_q13",
-                            "answer":  "sediment"
-                        },
-                        {
-                            "qid":  "p2_001_q14",
-                            "answer":  "grit"
-                        }
-                    ],
-        "passageId":  "rp:p2_001"
-    }
+  {
+    "answers": [
+      {
+        "qid": "p2_004_q01",
+        "answer": "NO"
+      },
+      {
+        "qid": "p2_004_q02",
+        "answer": "YES"
+      },
+      {
+        "qid": "p2_004_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_004_q04",
+        "answer": "NO"
+      },
+      {
+        "qid": "p2_004_q05",
+        "answer": "NOT GIVEN",
+        "note": "statement reworded 2026-11-24 (was ambiguous NO vs NOT GIVEN); re-solved"
+      },
+      {
+        "qid": "p2_004_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p2_004_q07",
+        "answer": "i"
+      },
+      {
+        "qid": "p2_004_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p2_004_q09",
+        "answer": "iii"
+      },
+      {
+        "qid": "p2_004_q10",
+        "answer": "iv"
+      },
+      {
+        "qid": "p2_004_q11",
+        "answer": "v"
+      },
+      {
+        "qid": "p2_004_q12",
+        "answer": "F"
+      },
+      {
+        "qid": "p2_004_q13",
+        "answer": "E"
+      },
+      {
+        "qid": "p2_004_q14",
+        "answer": "D"
+      }
+    ],
+    "passageId": "rp:p2_004"
+  },
+  {
+    "answers": [
+      {
+        "qid": "p3_001_q01",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_001_q02",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_001_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_001_q04",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_001_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_001_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_001_q07",
+        "answer": "v"
+      },
+      {
+        "qid": "p3_001_q08",
+        "answer": "vii"
+      },
+      {
+        "qid": "p3_001_q09",
+        "answer": "i"
+      },
+      {
+        "qid": "p3_001_q10",
+        "answer": "ii"
+      },
+      {
+        "qid": "p3_001_q11",
+        "answer": "iv"
+      },
+      {
+        "qid": "p3_001_q12",
+        "answer": "closure"
+      },
+      {
+        "qid": "p3_001_q13",
+        "answer": "intuition"
+      },
+      {
+        "qid": "p3_001_q14",
+        "answer": "hypothesis"
+      }
+    ],
+    "passageId": "rp:p3_001"
+  },
+  {
+    "answers": [
+      {
+        "qid": "p1_001_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_001_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_001_q03",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_001_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_001_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_001_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_001_q07",
+        "answer": "iii"
+      },
+      {
+        "qid": "p1_001_q08",
+        "answer": "v"
+      },
+      {
+        "qid": "p1_001_q09",
+        "answer": "i"
+      },
+      {
+        "qid": "p1_001_q10",
+        "answer": "ii"
+      },
+      {
+        "qid": "p1_001_q11",
+        "answer": "iv"
+      },
+      {
+        "qid": "p1_001_q12",
+        "answer": "sodium"
+      },
+      {
+        "qid": "p1_001_q13",
+        "answer": "freshness"
+      },
+      {
+        "qid": "p1_001_q14",
+        "answer": "fertilisers"
+      }
+    ],
+    "passageId": "rp:p1_001"
+  },
+  {
+    "answers": [
+      {
+        "qid": "p3_res_001_q01",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_res_001_q02",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_res_001_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_res_001_q04",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_res_001_q05",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_res_001_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_res_001_q07",
+        "answer": "iv"
+      },
+      {
+        "qid": "p3_res_001_q08",
+        "answer": "vi"
+      },
+      {
+        "qid": "p3_res_001_q09",
+        "answer": "i"
+      },
+      {
+        "qid": "p3_res_001_q10",
+        "answer": "v"
+      },
+      {
+        "qid": "p3_res_001_q11",
+        "answer": "ii"
+      },
+      {
+        "qid": "p3_res_001_q12",
+        "answer": "minerals"
+      },
+      {
+        "qid": "p3_res_001_q13",
+        "answer": "inventories"
+      },
+      {
+        "qid": "p3_res_001_q14",
+        "answer": "losses"
+      }
+    ],
+    "passageId": "rp:p3_res_001"
+  },
+  {
+    "answers": [
+      {
+        "qid": "p1_res_001_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_res_001_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_res_001_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_res_001_q04",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_res_001_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_res_001_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_res_001_q07",
+        "answer": "iv"
+      },
+      {
+        "qid": "p1_res_001_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p1_res_001_q09",
+        "answer": "vii"
+      },
+      {
+        "qid": "p1_res_001_q10",
+        "answer": "iii"
+      },
+      {
+        "qid": "p1_res_001_q11",
+        "answer": "vi"
+      },
+      {
+        "qid": "p1_res_001_q12",
+        "answer": "2"
+      },
+      {
+        "qid": "p1_res_001_q13",
+        "answer": "evaporation"
+      },
+      {
+        "qid": "p1_res_001_q14",
+        "answer": "40"
+      }
+    ],
+    "passageId": "rp:p1_res_001"
+  },
+  {
+    "answers": [
+      {
+        "qid": "p2_001_q01",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_001_q02",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_001_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_001_q04",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_001_q05",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_001_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_001_q07",
+        "answer": "i"
+      },
+      {
+        "qid": "p2_001_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p2_001_q09",
+        "answer": "iii"
+      },
+      {
+        "qid": "p2_001_q10",
+        "answer": "iv"
+      },
+      {
+        "qid": "p2_001_q11",
+        "answer": "v"
+      },
+      {
+        "qid": "p2_001_q12",
+        "answer": "reservoir"
+      },
+      {
+        "qid": "p2_001_q13",
+        "answer": "sediment"
+      },
+      {
+        "qid": "p2_001_q14",
+        "answer": "grit"
+      }
+    ],
+    "passageId": "rp:p2_001"
+  },
+  {
+    "passageId": "rp:p1_002",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p1_002_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_002_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_002_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_002_q04",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_002_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_002_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_002_q07",
+        "answer": "iii"
+      },
+      {
+        "qid": "p1_002_q08",
+        "answer": "i"
+      },
+      {
+        "qid": "p1_002_q09",
+        "answer": "ii"
+      },
+      {
+        "qid": "p1_002_q10",
+        "answer": "iv"
+      },
+      {
+        "qid": "p1_002_q11",
+        "answer": "v"
+      },
+      {
+        "qid": "p1_002_q12",
+        "answer": "symbols"
+      },
+      {
+        "qid": "p1_002_q13",
+        "answer": "42"
+      },
+      {
+        "qid": "p1_002_q14",
+        "answer": "tallow"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p1_003",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p1_003_q01",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_003_q02",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_003_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_003_q04",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_003_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_003_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_003_q07",
+        "answer": "iv"
+      },
+      {
+        "qid": "p1_003_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p1_003_q09",
+        "answer": "v"
+      },
+      {
+        "qid": "p1_003_q10",
+        "answer": "i"
+      },
+      {
+        "qid": "p1_003_q11",
+        "answer": "iii"
+      },
+      {
+        "qid": "p1_003_q12",
+        "answer": "B"
+      },
+      {
+        "qid": "p1_003_q13",
+        "answer": "C"
+      },
+      {
+        "qid": "p1_003_q14",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p1_004",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p1_004_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_004_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_004_q03",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_004_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_004_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_004_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_004_q07",
+        "answer": "ii"
+      },
+      {
+        "qid": "p1_004_q08",
+        "answer": "v"
+      },
+      {
+        "qid": "p1_004_q09",
+        "answer": "i"
+      },
+      {
+        "qid": "p1_004_q10",
+        "answer": "iii"
+      },
+      {
+        "qid": "p1_004_q11",
+        "answer": "iv"
+      },
+      {
+        "qid": "p1_004_q12",
+        "answer": "D"
+      },
+      {
+        "qid": "p1_004_q13",
+        "answer": "B"
+      },
+      {
+        "qid": "p1_004_q14",
+        "answer": "F"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p1_005",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p1_005_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_005_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_005_q03",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_005_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_005_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_005_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_005_q07",
+        "answer": "iii"
+      },
+      {
+        "qid": "p1_005_q08",
+        "answer": "v"
+      },
+      {
+        "qid": "p1_005_q09",
+        "answer": "i"
+      },
+      {
+        "qid": "p1_005_q10",
+        "answer": "ii"
+      },
+      {
+        "qid": "p1_005_q11",
+        "answer": "iv"
+      },
+      {
+        "qid": "p1_005_q12",
+        "answer": "C"
+      },
+      {
+        "qid": "p1_005_q13",
+        "answer": "D"
+      },
+      {
+        "qid": "p1_005_q14",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p1_006",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p1_006_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_006_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_006_q03",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_006_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_006_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_006_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_006_q07",
+        "answer": "sand"
+      },
+      {
+        "qid": "p1_006_q08",
+        "answer": "rainwater"
+      },
+      {
+        "qid": "p1_006_q09",
+        "answer": "salts"
+      },
+      {
+        "qid": "p1_006_q10",
+        "answer": "cement"
+      },
+      {
+        "qid": "p1_006_q11",
+        "answer": "charcoal ash"
+      },
+      {
+        "qid": "p1_006_q12",
+        "answer": "paper poultices"
+      },
+      {
+        "qid": "p1_006_q13",
+        "answer": "humidity"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p1_res_002",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p1_res_002_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_res_002_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_res_002_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_res_002_q04",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p1_res_002_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p1_res_002_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p1_res_002_q07",
+        "answer": "resin"
+      },
+      {
+        "qid": "p1_res_002_q08",
+        "answer": "iron"
+      },
+      {
+        "qid": "p1_res_002_q09",
+        "answer": "cracks"
+      },
+      {
+        "qid": "p1_res_002_q10",
+        "answer": "cement"
+      },
+      {
+        "qid": "p1_res_002_q11",
+        "answer": "B"
+      },
+      {
+        "qid": "p1_res_002_q12",
+        "answer": "C"
+      },
+      {
+        "qid": "p1_res_002_q13",
+        "answer": "F"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p2_002",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p2_002_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_002_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_002_q03",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_002_q04",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_002_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_002_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_002_q07",
+        "answer": "i"
+      },
+      {
+        "qid": "p2_002_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p2_002_q09",
+        "answer": "iii"
+      },
+      {
+        "qid": "p2_002_q10",
+        "answer": "iv"
+      },
+      {
+        "qid": "p2_002_q11",
+        "answer": "v"
+      },
+      {
+        "qid": "p2_002_q12",
+        "answer": "steel pipes"
+      },
+      {
+        "qid": "p2_002_q13",
+        "answer": "timber kilns"
+      },
+      {
+        "qid": "p2_002_q14",
+        "answer": "soapstone"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p2_003",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p2_003_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_003_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_003_q03",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_003_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_003_q05",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_003_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_003_q07",
+        "answer": "i"
+      },
+      {
+        "qid": "p2_003_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p2_003_q09",
+        "answer": "iii"
+      },
+      {
+        "qid": "p2_003_q10",
+        "answer": "iv"
+      },
+      {
+        "qid": "p2_003_q11",
+        "answer": "v"
+      },
+      {
+        "qid": "p2_003_q12",
+        "answer": "B"
+      },
+      {
+        "qid": "p2_003_q13",
+        "answer": "C"
+      },
+      {
+        "qid": "p2_003_q14",
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p2_005",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p2_005_q01",
+        "answer": "NO"
+      },
+      {
+        "qid": "p2_005_q02",
+        "answer": "YES"
+      },
+      {
+        "qid": "p2_005_q03",
+        "answer": "NO"
+      },
+      {
+        "qid": "p2_005_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_005_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_005_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p2_005_q07",
+        "answer": "i"
+      },
+      {
+        "qid": "p2_005_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p2_005_q09",
+        "answer": "iii"
+      },
+      {
+        "qid": "p2_005_q10",
+        "answer": "iv"
+      },
+      {
+        "qid": "p2_005_q11",
+        "answer": "v"
+      },
+      {
+        "qid": "p2_005_q12",
+        "answer": "B"
+      },
+      {
+        "qid": "p2_005_q13",
+        "answer": "C"
+      },
+      {
+        "qid": "p2_005_q14",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p2_006",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p2_006_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_006_q02",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_006_q03",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_006_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_006_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_006_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_006_q07",
+        "answer": "B"
+      },
+      {
+        "qid": "p2_006_q08",
+        "answer": "C"
+      },
+      {
+        "qid": "p2_006_q09",
+        "answer": "A"
+      },
+      {
+        "qid": "p2_006_q10",
+        "answer": "C"
+      },
+      {
+        "qid": "p2_006_q11",
+        "answer": "C"
+      },
+      {
+        "qid": "p2_006_q12",
+        "answer": "E"
+      },
+      {
+        "qid": "p2_006_q13",
+        "answer": "F"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p2_res_001",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p2_res_001_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_res_001_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_res_001_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_res_001_q04",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_res_001_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_res_001_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_res_001_q07",
+        "answer": "v"
+      },
+      {
+        "qid": "p2_res_001_q08",
+        "answer": "iv"
+      },
+      {
+        "qid": "p2_res_001_q09",
+        "answer": "i"
+      },
+      {
+        "qid": "p2_res_001_q10",
+        "answer": "vi"
+      },
+      {
+        "qid": "p2_res_001_q11",
+        "answer": "ii"
+      },
+      {
+        "qid": "p2_res_001_q12",
+        "answer": "D"
+      },
+      {
+        "qid": "p2_res_001_q13",
+        "answer": "B"
+      },
+      {
+        "qid": "p2_res_001_q14",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p2_res_002",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p2_res_002_q01",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_res_002_q02",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_res_002_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_res_002_q04",
+        "answer": "TRUE"
+      },
+      {
+        "qid": "p2_res_002_q05",
+        "answer": "FALSE"
+      },
+      {
+        "qid": "p2_res_002_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p2_res_002_q07",
+        "answer": "iii"
+      },
+      {
+        "qid": "p2_res_002_q08",
+        "answer": "v"
+      },
+      {
+        "qid": "p2_res_002_q09",
+        "answer": "i"
+      },
+      {
+        "qid": "p2_res_002_q10",
+        "answer": "vi"
+      },
+      {
+        "qid": "p2_res_002_q11",
+        "answer": "ii"
+      },
+      {
+        "qid": "p2_res_002_q12",
+        "answer": "B"
+      },
+      {
+        "qid": "p2_res_002_q13",
+        "answer": "C"
+      },
+      {
+        "qid": "p2_res_002_q14",
+        "answer": "A"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p3_002",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p3_002_q01",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_002_q02",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_002_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_002_q04",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_002_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_002_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_002_q07",
+        "answer": "iv"
+      },
+      {
+        "qid": "p3_002_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p3_002_q09",
+        "answer": "vi"
+      },
+      {
+        "qid": "p3_002_q10",
+        "answer": "vii"
+      },
+      {
+        "qid": "p3_002_q11",
+        "answer": "i"
+      },
+      {
+        "qid": "p3_002_q12",
+        "answer": "local belonging"
+      },
+      {
+        "qid": "p3_002_q13",
+        "answer": "background noise"
+      },
+      {
+        "qid": "p3_002_q14",
+        "answer": "linguistic decay"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p3_003",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p3_003_q01",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_003_q02",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_003_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_003_q04",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_003_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_003_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_003_q07",
+        "answer": "v"
+      },
+      {
+        "qid": "p3_003_q08",
+        "answer": "i"
+      },
+      {
+        "qid": "p3_003_q09",
+        "answer": "vi"
+      },
+      {
+        "qid": "p3_003_q10",
+        "answer": "ii"
+      },
+      {
+        "qid": "p3_003_q11",
+        "answer": "iv"
+      },
+      {
+        "qid": "p3_003_q12",
+        "answer": "B"
+      },
+      {
+        "qid": "p3_003_q13",
+        "answer": "C"
+      },
+      {
+        "qid": "p3_003_q14",
+        "answer": "D"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p3_004",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p3_004_q01",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_004_q02",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_004_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_004_q04",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_004_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_004_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_004_q07",
+        "answer": "v"
+      },
+      {
+        "qid": "p3_004_q08",
+        "answer": "ii"
+      },
+      {
+        "qid": "p3_004_q09",
+        "answer": "vi"
+      },
+      {
+        "qid": "p3_004_q10",
+        "answer": "i"
+      },
+      {
+        "qid": "p3_004_q11",
+        "answer": "iii"
+      },
+      {
+        "qid": "p3_004_q12",
+        "answer": "B"
+      },
+      {
+        "qid": "p3_004_q13",
+        "answer": "D"
+      },
+      {
+        "qid": "p3_004_q14",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p3_005",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p3_005_q01",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_005_q02",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_005_q03",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_005_q04",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_005_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_005_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_005_q07",
+        "answer": "F"
+      },
+      {
+        "qid": "p3_005_q08",
+        "answer": "A"
+      },
+      {
+        "qid": "p3_005_q09",
+        "answer": "D"
+      },
+      {
+        "qid": "p3_005_q10",
+        "answer": "C"
+      },
+      {
+        "qid": "p3_005_q11",
+        "answer": "D"
+      },
+      {
+        "qid": "p3_005_q12",
+        "answer": "A"
+      },
+      {
+        "qid": "p3_005_q13",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p3_006",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p3_006_q01",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_006_q02",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_006_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_006_q04",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_006_q05",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_006_q06",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_006_q07",
+        "answer": "C"
+      },
+      {
+        "qid": "p3_006_q08",
+        "answer": "D"
+      },
+      {
+        "qid": "p3_006_q09",
+        "answer": "B"
+      },
+      {
+        "qid": "p3_006_q10",
+        "answer": "A"
+      },
+      {
+        "qid": "p3_006_q11",
+        "answer": "B"
+      },
+      {
+        "qid": "p3_006_q12",
+        "answer": "A"
+      },
+      {
+        "qid": "p3_006_q13",
+        "answer": "C"
+      }
+    ]
+  },
+  {
+    "passageId": "rp:p3_res_002",
+    "solver": "claude-sonnet-5.5 (blind, 2026-11-24)",
+    "answers": [
+      {
+        "qid": "p3_res_002_q01",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_res_002_q02",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_res_002_q03",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_res_002_q04",
+        "answer": "NO"
+      },
+      {
+        "qid": "p3_res_002_q05",
+        "answer": "YES"
+      },
+      {
+        "qid": "p3_res_002_q06",
+        "answer": "NOT GIVEN"
+      },
+      {
+        "qid": "p3_res_002_q07",
+        "answer": "seismic aftershocks"
+      },
+      {
+        "qid": "p3_res_002_q08",
+        "answer": "supervisory criticism"
+      },
+      {
+        "qid": "p3_res_002_q09",
+        "answer": "patrol hours"
+      },
+      {
+        "qid": "p3_res_002_q10",
+        "answer": "civic boards"
+      },
+      {
+        "qid": "p3_res_002_q11",
+        "answer": "C"
+      },
+      {
+        "qid": "p3_res_002_q12",
+        "answer": "D"
+      },
+      {
+        "qid": "p3_res_002_q13",
+        "answer": "B"
+      }
+    ]
+  }
 ]

@@ -503,7 +503,8 @@
           "prompt": "A larger 2024 installation raised storage density by roughly a quarter by filling the silo with ____________ instead of standard sand.",
           "answer": {
             "accepted": [
-              "crushed soapstone"
+              "crushed soapstone",
+              "soapstone"
             ]
           },
           "evidence": [
@@ -530,7 +531,8 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
   }
 }

@@ -20,128 +20,128 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "Kia ora, everyone, and welcome to Kauri Valley Botanical Gardens. I am Tessa Reid, one of the senior guides here. Because our grounds cover nearly forty hectares of terraced hillside, let's begin with your garden map so you can find the main collections without losing your bearings.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 18.99
     },
     {
       "lineId": "l02",
       "speakerId": "s1",
       "text": "We are currently standing at the West Gate, which opens directly off Valley Road on the western edge of the map. Straight in front of you, running due east towards the Central Lily Pond, is Kauri Avenue, lined with our oldest timber trees.",
-      "start": 0,
-      "end": 0
+      "start": 19.24,
+      "end": 34.14
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "Let's locate the Garden Bookshop first, in case you want a plant guide before setting off. Walk east from the West Gate along Kauri Avenue, and it is the very first building immediately on your right, on the southern side of the avenue closest to the entrance.",
-      "start": 0,
-      "end": 0
+      "start": 34.39,
+      "end": 50.04
     },
     {
       "lineId": "l04",
       "speakerId": "s1",
       "text": "Next, cross Kauri Avenue heading north into the Native Arboretum, which fills the north-western quarter of the gardens. You will pass a low timber building in the south-eastern corner of the arboretum near the avenue, though that is just our volunteers' potting shed.",
-      "start": 0,
-      "end": 0
+      "start": 50.29,
+      "end": 66.45
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "Instead, continue further north-west inside the Native Arboretum towards Valley Road. The Seed Bank Pavilion is the structure standing on the western side of the arboretum, well north of the West Gate.",
-      "start": 0,
-      "end": 0
+      "start": 66.7,
+      "end": 79.67
     },
     {
       "lineId": "l06",
       "speakerId": "s1",
       "text": "Now return to Kauri Avenue and walk east until you reach the Central Lily Pond. From the pond, three paths branch out. Take the North Path heading straight north, and right at its northern end you will reach the Alpine Glasshouse, our coolest climate-controlled display.",
-      "start": 0,
-      "end": 0
+      "start": 79.92,
+      "end": 98.18
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "If you come back down to the Central Lily Pond and head east along Fern Gully Track towards Tui Stream, you will notice two large greenhouses on opposite sides of the track. The Orchid Conservatory sits on your left, on the northern side of Fern Gully Track, west of Tui Stream.",
-      "start": 0,
-      "end": 0
+      "start": 98.43,
+      "end": 116.5
     },
     {
       "lineId": "l08",
       "speakerId": "s1",
       "text": "Directly across the track from the orchids, on the southern side of Fern Gully Track and again just west of Tui Stream, is the Fern Shade House, where misting nozzles keep our tree ferns thriving even on dry afternoons.",
-      "start": 0,
-      "end": 0
+      "start": 116.75,
+      "end": 130.32
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "Finally on the map, let's look south of the Central Lily Pond along South Terrace Walk. Do not walk all the way to the southern tip of that path, as the structure right at the bottom end is our enclosed compost yard and is closed to visitors.",
-      "start": 0,
-      "end": 0
+      "start": 130.57,
+      "end": 145.68
     },
     {
       "lineId": "l10",
       "speakerId": "s1",
       "text": "Instead, turn west off South Terrace Walk into the open south-western quadrant. The Heritage Rose Pergola sits there, roughly midway between the compost yard and the Garden Bookshop, well south of Kauri Avenue and east of the bookshop.",
-      "start": 0,
-      "end": 0,
+      "start": 145.93,
+      "end": 160.99,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "Once you have explored the glasshouses, you might like to try one of our four seasonal walking trails. Let me highlight what makes each trail distinctive this month so you can pick the one that suits your pace.",
-      "start": 0,
-      "end": 0
+      "start": 161.79,
+      "end": 174.94
     },
     {
       "lineId": "l12",
       "speakerId": "s1",
       "text": "First is the Canopy Ridge Walk. In earlier guidebooks it was notorious for slippery clay slopes that demanded heavy hiking boots, which put quite a few families off. Over the winter, however, our rangers laid timber steps and replaced the old crossing with a sturdy wooden suspension footbridge that is now the star attraction of the route.",
-      "start": 0,
-      "end": 0
+      "start": 175.19,
+      "end": 196.78
     },
     {
       "lineId": "l13",
       "speakerId": "s1",
       "text": "Second is the Misty Creek Trail, which winds through dense mossy boulders along the valley floor. It stays fairly level, so you do not need specialist footwear, but do check the status board at the West Gate before starting: whenever heavy rain swells the valley creek, we shut the trail temporarily until the floodwater drops.",
-      "start": 0,
-      "end": 0
+      "start": 197.03,
+      "end": 216.55
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "Third, we have the Terrace Loop around the ornamental lawns. We originally intended to offer complimentary audio headsets from the ticket kiosk for this loop, but our electronics supplier delayed delivery, so those are not ready yet.",
-      "start": 0,
-      "end": 0
+      "start": 216.8,
+      "end": 231.54
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "What does set the Terrace Loop apart is its surface: every single section has been widened and paved with smooth, gentle ramps, making the entire circuit completely accessible for wheelchairs and pushchairs from start to finish.",
-      "start": 0,
-      "end": 0
+      "start": 231.79,
+      "end": 245.34
     },
     {
       "lineId": "l16",
       "speakerId": "s1",
       "text": "Lastly, there is our popular Glow-Worm Walk through the sheltered gully. While the rest of the gardens close their gates at five-thirty, this particular trail remains open after dark until ten o'clock, guided by warm low-level solar pathway lights that protect the insects while letting you see your footing.",
-      "start": 0,
-      "end": 0
+      "start": 245.59,
+      "end": 263.94
     },
     {
       "lineId": "l17",
       "speakerId": "s1",
       "text": "Free drinking water fountains are dotted near the Lily Pond and the West Gate, so please refill your bottles as you go. Enjoy the fragrance of the kauri forest, and do come back to the desk if you have any questions about our native plants.",
-      "start": 0,
-      "end": 0
+      "start": 264.19,
+      "end": 279.09
     }
   ],
   "audio": {
     "path": "audio/listening/p2_002.mp3",
-    "durationSec": 295,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 279.9,
+    "sha256": "27b22bfd0cb80eb7fc0e7f1bafc4976b1b0068a9ce9fb344e8ff0dbc112b4bcc",
+    "loudnessLUFS": -15.5
   },
   "questionGroups": [
     {
@@ -361,8 +361,8 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 34.39,
+            "end": 50.04
           },
           "traps": []
         },
@@ -380,15 +380,15 @@
           },
           "evidence": {
             "lineId": "l05",
-            "start": 0,
-            "end": 0
+            "start": 66.7,
+            "end": 79.67
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l04",
-              "start": 0,
-              "end": 0,
+              "start": 50.29,
+              "end": 66.45,
               "decoy": "south-eastern corner of the arboretum (B)",
               "explanationVi": "Tòa nhà góc đông nam của Arboretum (B) chỉ là lán ươm cây; Seed Bank nằm phía tây của Arboretum gần Valley Road (A)."
             }
@@ -408,8 +408,8 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 79.92,
+            "end": 98.18
           },
           "traps": []
         },
@@ -427,8 +427,8 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 98.43,
+            "end": 116.5
           },
           "traps": []
         },
@@ -446,8 +446,8 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 116.75,
+            "end": 130.32
           },
           "traps": []
         },
@@ -465,15 +465,15 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 145.93,
+            "end": 160.99
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l09",
-              "start": 0,
-              "end": 0,
+              "start": 130.57,
+              "end": 145.68,
               "decoy": "southern tip of South Terrace Walk (F)",
               "explanationVi": "Công trình ở cực nam South Terrace Walk (F) là bãi ủ phân đóng cửa; giàn hoa hồng nằm ở khu vực tây nam (G)."
             }
@@ -527,15 +527,15 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 175.19,
+            "end": 196.78
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 175.19,
+              "end": 196.78,
               "decoy": "slippery clay slopes that demanded heavy hiking boots (A)",
               "explanationVi": "Dốc đất sét trơn cần giày leo núi (A) chỉ là tình trạng cũ trước mùa đông; nay đã lát bậc gỗ và có cầu treo gỗ mới (B)."
             }
@@ -555,15 +555,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 197.03,
+            "end": 216.55
           },
           "traps": [
             {
               "type": "synonym_paraphrase",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 197.03,
+              "end": 216.55,
               "decoy": "heavy rain swells the valley creek, we shut the trail temporarily",
               "explanationVi": "Cách diễn đạt 'swells the valley creek / shut temporarily' đồng nghĩa với 'closes temporarily whenever heavy rain floods the creek' (F)."
             }
@@ -583,15 +583,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 231.79,
+            "end": 245.34
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 216.8,
+              "end": 231.54,
               "decoy": "complimentary audio headsets from the ticket kiosk (E)",
               "explanationVi": "Tai nghe thuyết minh miễn phí (E) bị nhà cung cấp giao trễ nên hiện chưa có; điểm nổi bật thực tế là mặt đường phẳng cho xe lăn và xe đẩy (D)."
             }
@@ -611,15 +611,15 @@
           },
           "evidence": {
             "lineId": "l16",
-            "start": 0,
-            "end": 0
+            "start": 245.59,
+            "end": 263.94
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 245.59,
+              "end": 263.94,
               "decoy": "rest of the gardens close their gates at five-thirty",
               "explanationVi": "Mặc dù phần còn lại của vườn đóng cửa lúc 5:30, riêng tuyến này mở sau khi trời tối đến 10 giờ với đèn năng lượng mặt trời (C)."
             }
@@ -634,7 +634,18 @@
     "license": "edge-tts (personal use)",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-NZ-MollyNeural",
+    "voices": {
+      "s1": "en-NZ-MollyNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

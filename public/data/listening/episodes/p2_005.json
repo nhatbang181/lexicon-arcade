@@ -20,135 +20,135 @@
       "lineId": "l01",
       "speakerId": "s1",
       "text": "G'day everyone, and welcome to Redgum Heritage Farm Park. I am Callum Fraser, the park manager here. Before you head up the track to see the sheepdog trials, I want to tell you about a couple of upgrades we finished this past year, run through our paddock rules, and help you get oriented on the farm map.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 16.71
     },
     {
       "lineId": "l02",
       "speakerId": "s1",
       "text": "If you haven't visited for a while, you might have read about several big projects in our newsletter. Our sealed coach car park is still waiting on shire council approval for next spring, and the proposed indoor riverfront cafe is still only on the drawing board. Also, if the kids are asking about a miniature steam railway, that actually belongs to the tourist park two valleys over, not us.",
-      "start": 0,
-      "end": 0
+      "start": 17.09,
+      "end": 37.92
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "What we did finish installing in May is a full rooftop array of solar panels across the barn, which now supplies all the electricity needed to run our milking shed without relying on diesel generators.",
-      "start": 0,
-      "end": 0
+      "start": 38.3,
+      "end": 48.49
     },
     {
       "lineId": "l04",
       "speakerId": "s1",
       "text": "Our other completed upgrade is right beside the kitchen garden: four huge galvanised rainwater harvesting tanks that capture winter runoff from our shed roofs and gravity-feed water straight into the heirloom vegetable plots.",
-      "start": 0,
-      "end": 0
+      "start": 48.87,
+      "end": 59.85
     },
     {
       "lineId": "l05",
       "speakerId": "s1",
       "text": "Next, a quick word on visiting the livestock paddocks safely. During the wet winter months we handed out blue disposable plastic overshoes at the paddock gate, though we stopped doing that last month once the paths dried out. You are also completely welcome to hop off the tractor trailer and stroll the gravel footpaths on foot, and leaning gently on the timber fence rails is fine.",
-      "start": 0,
-      "end": 0
+      "start": 60.23,
+      "end": 80.23
     },
     {
       "lineId": "l06",
       "speakerId": "s1",
       "text": "However, there are two strict rules we ask everyone to observe. First, please never toss bread crusts or apple cores from your lunchbox to the sheep or goats; you may only feed the animals with the measured grain pellets sold in paper bags at our farm kiosk.",
-      "start": 0,
-      "end": 0
+      "start": 80.61,
+      "end": 94.28
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "Second, when you walk past the sheltered lambing pens, please keep your voices low and avoid shouting or running, because sudden loud noise can startle the new ewes and scatter the lambs.",
-      "start": 0,
-      "end": 0,
+      "start": 94.66,
+      "end": 104.36,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l08",
       "speakerId": "s1",
       "text": "Right, let's take a look at your farm park map. We are standing at the Ticket Barn on the southern edge of the property, just north of Gumtree Lane. Stretching straight north from the Ticket Barn is the main Farm Track, which crosses Orchard Lane right in the middle of the park.",
-      "start": 0,
-      "end": 0
+      "start": 105.56,
+      "end": 120.01
     },
     {
       "lineId": "l09",
       "speakerId": "s1",
       "text": "Let's start with the Farm Produce Shop, where you can buy local honey and homemade jam on your way out. Head north from the Ticket Barn along the Farm Track, and it is the building immediately on your left, on the western side of the track south of Orchard Lane.",
-      "start": 0,
-      "end": 0
+      "start": 120.39,
+      "end": 133.36
     },
     {
       "lineId": "l10",
       "speakerId": "s1",
       "text": "If you want to watch the afternoon dairy demonstration at the Milking Parlour, stay south of Orchard Lane and look further west towards the Tractor Yard in the south-western corner. The Milking Parlour sits directly north of the Tractor Yard and just south of Orchard Lane.",
-      "start": 0,
-      "end": 0
+      "start": 133.74,
+      "end": 147.23
     },
     {
       "lineId": "l11",
       "speakerId": "s1",
       "text": "When you are ready for lunch, head over to the Picnic Shelter. Note that the building sitting out in the far south-eastern corner near Gumtree Lane is our private veterinary clinic, so do not walk all the way over there.",
-      "start": 0,
-      "end": 0
+      "start": 147.61,
+      "end": 158.39
     },
     {
       "lineId": "l12",
       "speakerId": "s1",
       "text": "The covered Picnic Shelter is much closer: south of Orchard Lane and immediately on the right, or eastern side, of the Farm Track, directly opposite the Farm Produce Shop.",
-      "start": 0,
-      "end": 0
+      "start": 158.77,
+      "end": 168.16
     },
     {
       "lineId": "l13",
       "speakerId": "s1",
       "text": "Now let's head north across Orchard Lane into the northern half of the park. Over in the north-west lies the Heritage Orchard, which contains two buildings. The one closer to the Farm Track on the north-eastern side of the orchard is our beekeeping enclosure, which is closed for hive maintenance today.",
-      "start": 0,
-      "end": 0
+      "start": 168.54,
+      "end": 184.38
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "Walk further west through the apple trees to the building in the far north-western side of the Heritage Orchard -- that is our historic Cider Press Shed, where you can taste fresh cloudy apple juice.",
-      "start": 0,
-      "end": 0
+      "start": 184.76,
+      "end": 194.02
     },
     {
       "lineId": "l15",
       "speakerId": "s1",
       "text": "Next is the Shearing Pavilion, where our wool-clipping demonstrations run at eleven-thirty and two-thirty. Follow the Farm Track north past Orchard Lane almost all the way to its northern end. The Shearing Pavilion sits immediately on the eastern side of the Farm Track, directly west of Redgum Dam.",
-      "start": 0,
-      "end": 0
+      "start": 194.4,
+      "end": 211.13
     },
     {
       "lineId": "l16",
       "speakerId": "s1",
       "text": "Finally, don't miss the Blacksmith's Forge, where you can watch horseshoes being shaped over glowing coals. Coming east along Orchard Lane from the central crossroads, you will see two buildings on the northern side of the lane. The far eastern one right underneath Redgum Dam is simply our stacked hay barn.",
-      "start": 0,
-      "end": 0
+      "start": 211.51,
+      "end": 227.79
     },
     {
       "lineId": "l17",
       "speakerId": "s1",
       "text": "The Blacksmith's Forge is the building closer to the Farm Track on the northern side of Orchard Lane, sitting south-west of Redgum Dam and south of the Shearing Pavilion.",
-      "start": 0,
-      "end": 0
+      "start": 228.17,
+      "end": 236.24
     },
     {
       "lineId": "l18",
       "speakerId": "s1",
       "text": "Hand-washing stations with warm water and soap are posted beside every paddock exit, so please give your hands a quick scrub before eating. Have a brilliant day at Redgum Heritage Farm Park.",
-      "start": 0,
-      "end": 0
+      "start": 236.62,
+      "end": 246.99
     }
   ],
   "audio": {
     "path": "audio/listening/p2_005.mp3",
-    "durationSec": 310,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 248.3,
+    "sha256": "43358b339a6457fda1df13f26c6b41e4c46dd82fc501aff6ed30a688765bf3d2",
+    "loudnessLUFS": -15.4
   },
   "questionGroups": [
     {
@@ -195,15 +195,15 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 38.3,
+            "end": 48.49
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 17.09,
+              "end": 37.92,
               "decoy": "sealed coach car park / riverfront cafe / miniature steam railway",
               "explanationVi": "Bãi đậu xe khách (A) đang chờ duyệt, quán cà phê ven sông (C) mới trên bản vẽ, còn tàu hỏa hơi nước (E) thuộc công viên khác; hệ thống pin mặt trời cho khu vắt sữa (B) đã hoàn thành."
             }
@@ -225,8 +225,8 @@
           },
           "evidence": {
             "lineId": "l04",
-            "start": 0,
-            "end": 0
+            "start": 48.87,
+            "end": 59.85
           },
           "traps": []
         }
@@ -276,15 +276,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 80.61,
+            "end": 94.28
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l05",
-              "start": 0,
-              "end": 0,
+              "start": 60.23,
+              "end": 80.23,
               "decoy": "blue disposable plastic overshoes (A)",
               "explanationVi": "Quy định mang bao giày nhựa (A) đã bỏ từ tháng trước khi đường khô ráo; khách cũng được xuống xe đi bộ (D sai) và dựa nhẹ hàng rào (E sai)."
             }
@@ -306,8 +306,8 @@
           },
           "evidence": {
             "lineId": "l07",
-            "start": 0,
-            "end": 0
+            "start": 94.66,
+            "end": 104.36
           },
           "traps": []
         }
@@ -534,8 +534,8 @@
           },
           "evidence": {
             "lineId": "l09",
-            "start": 0,
-            "end": 0
+            "start": 120.39,
+            "end": 133.36
           },
           "traps": []
         },
@@ -553,8 +553,8 @@
           },
           "evidence": {
             "lineId": "l10",
-            "start": 0,
-            "end": 0
+            "start": 133.74,
+            "end": 147.23
           },
           "traps": []
         },
@@ -572,15 +572,15 @@
           },
           "evidence": {
             "lineId": "l12",
-            "start": 0,
-            "end": 0
+            "start": 158.77,
+            "end": 168.16
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l11",
-              "start": 0,
-              "end": 0,
+              "start": 147.61,
+              "end": 158.39,
               "decoy": "far south-eastern corner near Gumtree Lane (I)",
               "explanationVi": "Tòa nhà góc đông nam (I) là phòng khám thú y nội bộ; khu dã ngoại có mái che nằm ngay bên phải Farm Track đối diện cửa hàng nông sản (H)."
             }
@@ -600,15 +600,15 @@
           },
           "evidence": {
             "lineId": "l14",
-            "start": 0,
-            "end": 0
+            "start": 184.76,
+            "end": 194.02
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l13",
-              "start": 0,
-              "end": 0,
+              "start": 168.54,
+              "end": 184.38,
               "decoy": "north-eastern side of the orchard closer to Farm Track (B)",
               "explanationVi": "Khu vực gần Farm Track (B) là trại nuôi ong đang đóng cửa bảo trì; xưởng ép nước táo nằm ở phía tây bắc của Heritage Orchard (A)."
             }
@@ -628,8 +628,8 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 194.4,
+            "end": 211.13
           },
           "traps": []
         },
@@ -647,15 +647,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 228.17,
+            "end": 236.24
           },
           "traps": [
             {
               "type": "map_direction",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 211.51,
+              "end": 227.79,
               "decoy": "far eastern building directly south of Redgum Dam (E)",
               "explanationVi": "Tòa nhà cực đông ngay dưới Redgum Dam (E) chỉ là kho cỏ khô; lò rèn nằm phía bắc Orchard Lane gần Farm Track hơn (D)."
             }
@@ -670,7 +670,18 @@
     "license": "edge-tts (personal use)",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-AU-WilliamNeural",
+    "voices": {
+      "s1": "en-AU-WilliamNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 0.97,
+    "renderedAt": "2026-11-24"
   }
 }

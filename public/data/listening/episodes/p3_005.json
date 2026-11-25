@@ -34,177 +34,177 @@
       "lineId": "l01",
       "speakerId": "s3",
       "text": "Good afternoon, Claire and Ryan. I have gone through your structural assessment of the Millbrook Covered Bridge. Before we check your repair workflow, let us verify the root cause of the decay in the lower oak trusses.",
-      "start": 0,
-      "end": 0
+      "start": 0.0,
+      "end": 12.74
     },
     {
       "lineId": "l02",
       "speakerId": "s2",
       "text": "Before visiting the site, we assumed wood-boring beetles had spread upward from the floorboards, or that winter frost was splitting the outer timbers.",
-      "start": 0,
-      "end": 0
+      "start": 13.19,
+      "end": 20.85
     },
     {
       "lineId": "l03",
       "speakerId": "s1",
       "text": "Actually, the county replaced those floorboards ten years ago so there is zero beetle activity, and frost cracking is superficial. The severe rot sits strictly in hidden pockets where rainwater leaked around corroded iron bolts and stayed trapped inside the oak.",
-      "start": 0,
-      "end": 0
+      "start": 21.3,
+      "end": 37.42
     },
     {
       "lineId": "l04",
       "speakerId": "s3",
       "text": "A textbook moisture trap. Ryan, in your early cost sheet you suggested slipping concealed steel girders beside the weakened oak beams. Why did we rule that out?",
-      "start": 0,
-      "end": 0
+      "start": 37.87,
+      "end": 48.07
     },
     {
       "lineId": "l05",
       "speakerId": "s2",
       "text": "Steel would actually come in well under the county budget, and thermal expansion is easy enough to design around.",
-      "start": 0,
-      "end": 0
+      "start": 48.52,
+      "end": 54.21
     },
     {
       "lineId": "l06",
       "speakerId": "s3",
       "text": "Indeed, cost was never the obstacle. The decisive issue is statutory protection: inserting load-bearing steel frames violates authenticity guidelines and would strip the bridge of its protected architectural listing.",
-      "start": 0,
-      "end": 0
+      "start": 54.66,
+      "end": 67.33
     },
     {
       "lineId": "l07",
       "speakerId": "s1",
       "text": "Which brings us to our terrestrial laser scan. Everyone already knew from ground photos that the roof had lost cedar shingles, and we worried the north stone abutment was sinking into the clay bank.",
-      "start": 0,
-      "end": 0
+      "start": 67.78,
+      "end": 79.84
     },
     {
       "lineId": "l08",
       "speakerId": "s2",
       "text": "Fortunately both stone abutments proved rock solid. What genuinely surprised us in the three-dimensional point cloud was discovering that the central span had twisted slightly sideways over the last century.",
-      "start": 0,
-      "end": 0
+      "start": 80.29,
+      "end": 91.64
     },
     {
       "lineId": "l09",
       "speakerId": "s3",
       "text": "Good thing you scanned it before ordering cut lumber. Now, what must happen immediately before contractors attempt to lift the bridge deck?",
-      "start": 0,
-      "end": 0
+      "start": 92.09,
+      "end": 100.0
     },
     {
       "lineId": "l10",
       "speakerId": "s1",
       "text": "Should we close the walkway to pedestrians right away, or pour concrete collars around the river piers first?",
-      "start": 0,
-      "end": 0
+      "start": 100.45,
+      "end": 106.46
     },
     {
       "lineId": "l11",
       "speakerId": "s3",
       "text": "The council already closed pedestrian access last autumn, and pouring river concrete is unnecessary unless the piers show movement. Your immediate priority is to test load-bearing stress on a scaled laboratory joint so we know our spliced oak can handle jacking forces.",
-      "start": 0,
-      "end": 0,
+      "start": 106.91,
+      "end": 122.5,
       "pauseAfter": 0.8
     },
     {
       "lineId": "l12",
       "speakerId": "s2",
       "text": "Right, laboratory joint testing first. Now let us confirm the six steps on our restoration flow-chart so every term is exact. For step one, site preparation, I initially drew floating barges beneath the span.",
-      "start": 0,
-      "end": 0
+      "start": 123.3,
+      "end": 137.44
     },
     {
       "lineId": "l13",
       "speakerId": "s3",
       "text": "The spring river current is far too swift for barges. Instead, contractors will erect steel cribbing on the banks and install temporary hydraulic jacks beneath the main deck to carry the load safely.",
-      "start": 0,
-      "end": 0
+      "start": 137.89,
+      "end": 149.32
     },
     {
       "lineId": "l14",
       "speakerId": "s1",
       "text": "Got it, hydraulic jacks. Moving to step two, surface cleaning. To strip away flaking paint and damp moss, I wondered about sandblasting or mild chemical solvents.",
-      "start": 0,
-      "end": 0
+      "start": 149.77,
+      "end": 161.87
     },
     {
       "lineId": "l15",
       "speakerId": "s3",
       "text": "Avoid both: sandblasting gouges historic wood grain, and solvents cannot drip into a trout stream. Blasting the timber gently with dry ice lifts grime cleanly and evaporates without leaving any residue.",
-      "start": 0,
-      "end": 0
+      "start": 162.32,
+      "end": 174.93
     },
     {
       "lineId": "l16",
       "speakerId": "s2",
       "text": "Nice solution. For step three, mapping hidden internal rot, we could bore wide core plugs at each intersection.",
-      "start": 0,
-      "end": 0
+      "start": 175.38,
+      "end": 182.55
     },
     {
       "lineId": "l17",
       "speakerId": "s1",
       "text": "Wait, wide cores weaken already stressed joints. Remember the conservation manual recommends using a needle-thin resistance drill to measure decay depth without causing structural harm.",
-      "start": 0,
-      "end": 0
+      "start": 183.0,
+      "end": 194.76
     },
     {
       "lineId": "l18",
       "speakerId": "s3",
       "text": "Spot on, Claire. Once damaged wood is excised, step four is splicing in new seasoned oak. Ryan, how will those angled scarf joints be pinned?",
-      "start": 0,
-      "end": 0
+      "start": 195.21,
+      "end": 205.28
     },
     {
       "lineId": "l19",
       "speakerId": "s2",
       "text": "With galvanised steel bolts — oh, wait, sorry! Metal fasteners created the condensation pockets in the first place. We should pin the spliced oak exclusively with hand-turned wooden pegs for authentic strength.",
-      "start": 0,
-      "end": 0
+      "start": 205.73,
+      "end": 219.09
     },
     {
       "lineId": "l20",
       "speakerId": "s3",
       "text": "Exactly right. That brings us to step five, moisture protection on the exposed lower chords. Claire, what coating did you specify?",
-      "start": 0,
-      "end": 0
+      "start": 219.54,
+      "end": 228.6
     },
     {
       "lineId": "l21",
       "speakerId": "s1",
       "text": "I originally listed clear polyurethane varnish, but synthetic film traps vapour inside old timber. So I switched our specification to natural linseed oil, which repels rain while letting the oak breathe.",
-      "start": 0,
-      "end": 0
+      "start": 229.05,
+      "end": 241.96
     },
     {
       "lineId": "l22",
       "speakerId": "s3",
       "text": "Wise revision. Finally, step six: post-repair monitoring over the first two winters. Ryan suggested monthly visual checks by a surveyor, yet seasonal humidity shifts happen overnight.",
-      "start": 0,
-      "end": 0
+      "start": 242.41,
+      "end": 255.1
     },
     {
       "lineId": "l23",
       "speakerId": "s2",
       "text": "True, sporadic visits miss peak loads. We will attach compact wireless strain gauges along the central chords so our lab can log continuous structural movement remotely.",
-      "start": 0,
-      "end": 0
+      "start": 255.55,
+      "end": 266.02
     },
     {
       "lineId": "l24",
       "speakerId": "s3",
       "text": "That completes a rigorous conservation plan. Finalise your flow-chart and bring the joint drawings to Tuesday's workshop.",
-      "start": 0,
-      "end": 0
+      "start": 266.47,
+      "end": 273.47
     }
   ],
   "audio": {
     "path": "audio/listening/p3_005.mp3",
-    "durationSec": 325,
-    "sha256": "pending",
-    "loudnessLUFS": -16
+    "durationSec": 274.3,
+    "sha256": "6133fcc2ea7205aed5e04cc461cec49968b87f908c0410270b5c3efb18cada61",
+    "loudnessLUFS": -15.3
   },
   "questionGroups": [
     {
@@ -241,15 +241,15 @@
           },
           "evidence": {
             "lineId": "l03",
-            "start": 0,
-            "end": 0
+            "start": 21.3,
+            "end": 37.42
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l02",
-              "start": 0,
-              "end": 0,
+              "start": 13.19,
+              "end": 20.85,
               "decoy": "wood-boring beetles / winter frost",
               "explanationVi": "Ryan nêu hai phỏng đoán ban đầu là mọt gỗ (C) và băng giá (A), nhưng Claire bác bỏ cả hai ngay dòng sau và chỉ ra nguyên nhân thật là nước mưa thấm đọng quanh bu-lông sắt gỉ (B)."
             }
@@ -269,15 +269,15 @@
           },
           "evidence": {
             "lineId": "l06",
-            "start": 0,
-            "end": 0
+            "start": 54.66,
+            "end": 67.33
           },
           "traps": [
             {
               "type": "negation_shift",
               "lineId": "l05",
-              "start": 0,
-              "end": 0,
+              "start": 48.52,
+              "end": 54.21,
               "decoy": "under the county budget / thermal expansion is easy enough",
               "explanationVi": "Thép thực tế rẻ hơn ngân sách (loại B) và dễ xử lý giãn nở nhiệt (loại C); lý do loại bỏ là khung thép chịu lực làm mất chứng nhận di sản kiến trúc (A)."
             }
@@ -297,15 +297,15 @@
           },
           "evidence": {
             "lineId": "l08",
-            "start": 0,
-            "end": 0
+            "start": 80.29,
+            "end": 91.64
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l07",
-              "start": 0,
-              "end": 0,
+              "start": 67.78,
+              "end": 79.84,
               "decoy": "cedar shingles / north stone abutment",
               "explanationVi": "Ngói tuyết tùng bị mất đã biết từ trước (loại B) còn mố đá phía bắc rất vững (loại A); phát hiện bất ngờ là nhịp giữa bị xoắn lệch ngang qua hàng thế kỷ (C)."
             }
@@ -325,15 +325,15 @@
           },
           "evidence": {
             "lineId": "l11",
-            "start": 0,
-            "end": 0
+            "start": 106.91,
+            "end": 122.5
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l10",
-              "start": 0,
-              "end": 0,
+              "start": 100.45,
+              "end": 106.46,
               "decoy": "close the walkway / pour concrete collars",
               "explanationVi": "Cầu đã đóng cửa đi bộ từ mùa thu (loại C) và đổ bê tông trụ sông là chưa cần thiết (loại B); ưu tiên trước mắt là thử tải mối nối mô hình trong phòng thí nghiệm (A)."
             }
@@ -403,15 +403,15 @@
           },
           "evidence": {
             "lineId": "l13",
-            "start": 0,
-            "end": 0
+            "start": 137.89,
+            "end": 149.32
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l12",
-              "start": 0,
-              "end": 0,
+              "start": 123.3,
+              "end": 137.44,
               "decoy": "floating barges",
               "explanationVi": "Ryan ban đầu vẽ sà lan nổi (floating barges), nhưng Giáo sư Marsh bác bỏ do dòng chảy xiết và chọn 'hydraulic jacks' (lưu ý dạng số nhiều)."
             }
@@ -428,15 +428,15 @@
           },
           "evidence": {
             "lineId": "l15",
-            "start": 0,
-            "end": 0
+            "start": 162.32,
+            "end": 174.93
           },
           "traps": [
             {
               "type": "option_mentioned_rejected",
               "lineId": "l14",
-              "start": 0,
-              "end": 0,
+              "start": 149.77,
+              "end": 161.87,
               "decoy": "sandblasting",
               "explanationVi": "Phun cát (sandblasting) làm xước thớ gỗ cổ còn dung môi hóa học gây ô nhiễm suối; giải pháp cuối cùng là phun đá khô ('dry ice')."
             }
@@ -453,15 +453,15 @@
           },
           "evidence": {
             "lineId": "l17",
-            "start": 0,
-            "end": 0
+            "start": 183.0,
+            "end": 194.76
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l16",
-              "start": 0,
-              "end": 0,
+              "start": 175.38,
+              "end": 182.55,
               "decoy": "core plugs",
               "explanationVi": "Ryan đề xuất khoan lõi rộng (core plugs), nhưng Claire ngăn lại vì làm yếu mối nối và thay bằng 'resistance drill'."
             }
@@ -478,15 +478,15 @@
           },
           "evidence": {
             "lineId": "l19",
-            "start": 0,
-            "end": 0
+            "start": 205.73,
+            "end": 219.09
           },
           "traps": [
             {
               "type": "self_correction",
               "lineId": "l19",
-              "start": 0,
-              "end": 0,
+              "start": 205.73,
+              "end": 219.09,
               "decoy": "galvanised steel bolts",
               "explanationVi": "Ryan buột miệng nói bu-lông thép mạ kẽm rồi tự sửa ngay lập tức sang chốt gỗ ('wooden pegs', nhớ âm cuối -s)."
             }
@@ -503,15 +503,15 @@
           },
           "evidence": {
             "lineId": "l21",
-            "start": 0,
-            "end": 0
+            "start": 229.05,
+            "end": 241.96
           },
           "traps": [
             {
               "type": "changed_plan",
               "lineId": "l21",
-              "start": 0,
-              "end": 0,
+              "start": 229.05,
+              "end": 241.96,
               "decoy": "polyurethane varnish",
               "explanationVi": "Claire từng chọn vecni polyurethane nhưng đổi sang dầu hạt lanh tự nhiên ('linseed oil') để gỗ thoáng hơi ẩm."
             }
@@ -528,15 +528,15 @@
           },
           "evidence": {
             "lineId": "l23",
-            "start": 0,
-            "end": 0
+            "start": 255.55,
+            "end": 266.02
           },
           "traps": [
             {
               "type": "plural_singular",
               "lineId": "l23",
-              "start": 0,
-              "end": 0,
+              "start": 255.55,
+              "end": 266.02,
               "decoy": "strain gauge",
               "explanationVi": "Trong đoạn hội thoại dùng số nhiều 'wireless strain gauges' gắn dọc thanh giằng; thiếu '-s' sẽ bị chấm sai."
             }
@@ -551,7 +551,20 @@
     "license": "own",
     "qa": {
       "schema": "pass",
-      "verifier": "pass"
+      "verifier": "pass",
+      "blindSolve": "pass"
     }
+  },
+  "audioProvenance": {
+    "engine": "edge-tts",
+    "voice": "s1=en-GB-MaisieNeural, s2=en-US-ChristopherNeural, s3=en-GB-SoniaNeural",
+    "voices": {
+      "s1": "en-GB-MaisieNeural",
+      "s2": "en-US-ChristopherNeural",
+      "s3": "en-GB-SoniaNeural"
+    },
+    "license": "edge-tts (Microsoft Edge neural voices); owner accepted public deploy 2026-11-23 (DECISIONS D)",
+    "speed": 1.0,
+    "renderedAt": "2026-11-24"
   }
 }

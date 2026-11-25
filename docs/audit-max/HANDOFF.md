@@ -83,3 +83,12 @@
 | # | File | Chủ | Cần làm | Vì sao |
 |---|---|---|---|---|
 | 1 | `src/games/_shared/vocabLoaders.ts` và `src/games/_shared/index.ts` | điều phối / T4-C | Bỏ import tĩnh `v2v3_fixtures` trong `vocabLoaders.ts` (hoặc bỏ `export * from './vocabLoaders'` khỏi `_shared/index.ts`) | V2/V3/R1/R2 không còn import `vocabLoaders.ts` và chunk 4 game này sạch `v2v3_fixtures` + `r1_fixtures`, nhưng `PlacementScreen`, `w1`, `w2` import từ `../_shared` nên Rollup vẫn kéo `v2v3_fixtures` (20.33 KB) vào `dist/assets/`. Ngoài danh sách file độc quyền T2-A |
+
+## Từ T3-B (Chặng 2A, 25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `public/audio/speaking/**` | M5 (Đợt 5 Speaking) | Render 841 file audio Speaking để đóng lỗi `[INV-S4]` trong `npm run validate:data:release` | T3-B bị cấm đụng `public/audio/speaking/**` theo SR-05; mọi cổng audio & blind-solve khác của T3-B (`INV-V4`, `INV-L5`, `INV-L7`, dictation) đã đạt 0 lỗi |
+| 2 | `src/games/v1-daily-run/V1DailyRun.tsx`, `src/features/placement/placementData.ts` | T4-A / T3-C | Chuyển loader sang tải `public/data/vocab/words.core.json` (521 KB minified) + lazy-load `words.detail.json` khi cần chi tiết | D17: giảm tải đầu từ ~4,0 MB xuống 521 KB; T3-B giữ song song `words.json` nguyên vẹn để không phá loader hiện tại |
+| 3 | `src/core/content/schemas.ts` (dòng 170) | chủ schema / điều phối | Mở rộng `CollocationItemSchema.bandTarget` từ `7 \| 8 \| 9` sang `4 \| 5 \| 6 \| 7 \| 8 \| 9` nếu muốn gộp collocation band 4–6 trực tiếp vào `public/data/vocab/collocations.json` | B7: hiện `collocations.json` có 747 mục hoạt động ở L7–10; schema hiện từ chối `bandTarget < 7` |
+| 4 | `public/data/speaking/part2.json` + `part3.json` + `public/audio/speaking/**` | M5 (trước 01/01/2027) | Bổ sung ≥ 30 cặp thẻ `2027-Q1` kèm bộ Part 3 đối xứng (`INV-S1`) và audio Speaking (`INV-S4`) | D16: hiện có 40 thẻ `2026-Q3` (50% evergreen, hợp lệ tới 31/12/2026); thêm thẻ trước khi M5 render sẽ tăng số lỗi `INV-S4` |

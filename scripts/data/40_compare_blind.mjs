@@ -93,17 +93,20 @@ export function compareQuestionAnswer(groupType, goldAnswer, blindRaw) {
 
   if (
     groupType === 'mcq_single' ||
+    groupType === 'matching' ||
+    groupType === 'map_labelling' ||
     groupType === 'matching_info' ||
     groupType === 'matching_features' ||
     groupType === 'sentence_endings'
   ) {
-    const exp = cleanToken(goldAnswer.key).toUpperCase();
+    const rawExp = goldAnswer.key ?? goldAnswer.keys?.[0] ?? goldAnswer.accepted?.[0] ?? '';
+    const exp = cleanToken(rawExp).toUpperCase();
     const got = cleanToken(blindRaw).toUpperCase();
     return { match: got === exp, expected: exp, received: got };
   }
 
   if (groupType === 'mcq_multi') {
-    const expArr = (goldAnswer.keys || []).map((k) => cleanToken(k).toUpperCase()).sort();
+    const expArr = (goldAnswer.keys || goldAnswer.accepted || []).map((k) => cleanToken(k).toUpperCase()).sort();
     const gotArr = (Array.isArray(blindRaw)
       ? blindRaw
       : String(blindRaw)
@@ -120,8 +123,11 @@ export function compareQuestionAnswer(groupType, goldAnswer, blindRaw) {
   // Gap-fill / completion / short_answer
   const accepted = (goldAnswer.accepted || []).map(cleanGap);
   const got = cleanGap(blindRaw);
+  const compactGot = got.replace(/[\s-]+/g, '');
+  const compactAccepted = accepted.map((a) => a.replace(/[\s-]+/g, ''));
+  const isCodeOrNum = /^[a-z0-9]+$/.test(compactGot) && /\d/.test(compactGot);
   return {
-    match: accepted.includes(got),
+    match: accepted.includes(got) || (isCodeOrNum && compactAccepted.includes(compactGot)),
     expected: (goldAnswer.accepted || []).join(' | '),
     received: String(blindRaw).trim(),
   };
@@ -176,11 +182,11 @@ function normalizeSubmissionPayload(payload) {
 
   if (Array.isArray(payload)) {
     for (const entry of payload) {
-      addPassageObj(entry.passageId || entry.id, entry.answers);
+      addPassageObj(entry.passageId || entry.episodeId || entry.id, entry.answers);
     }
   } else if (payload && typeof payload === 'object') {
-    if (payload.passageId || payload.id) {
-      addPassageObj(payload.passageId || payload.id, payload.answers);
+    if (payload.passageId || payload.episodeId || payload.id) {
+      addPassageObj(payload.passageId || payload.episodeId || payload.id, payload.answers);
     } else {
       for (const [pid, ansObj] of Object.entries(payload)) {
         if (ansObj && typeof ansObj === 'object' && 'answers' in ansObj) {
