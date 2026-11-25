@@ -1,19 +1,36 @@
-import React, { useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useLocation } from 'wouter';
 import {
   BookA,
-  Headphones,
   BookOpenText,
-  PenLine,
-  Mic,
-  Timer as TimerIcon,
-  Play,
   Clock,
+  Compass,
   FileText,
+  Flame,
+  Headphones,
+  Hourglass,
+  Layers,
+  Mic,
+  PenLine,
+  Play,
+  Radar,
+  Scale,
+  Sparkles,
+  Timer as TimerIcon,
+  Zap,
 } from 'lucide-react';
-import { Card, Button, Pill } from '../../design/components';
-import { GAME_REGISTRY, type GameSkill } from '../../games/registry';
-import { modeLabelVi } from '../../core/adaptive/sessionLevel';
+import { Button, Card, Pill, Sheet, Skeleton } from '../../design/components';
+import {
+  GAME_REGISTRY,
+  type GameDefinition,
+  type GameId,
+  type GameSkill,
+} from '../../games/registry';
+import { levelToBand, modeLabelVi } from '../../core/adaptive/sessionLevel';
+import { attemptRepo } from '../../core/storage/repos/attemptRepo';
+import { profileRepo } from '../../core/storage/repos/profileRepo';
+import { useAsyncData } from '../../features/shared/useAsyncData';
+import { ScreenErrorState } from '../../features/shared/ScreenErrorState';
 
 type FilterSkill = 'all' | GameSkill;
 
@@ -27,23 +44,177 @@ const FILTER_TABS: Array<{ id: FilterSkill; label: string }> = [
   { id: 'exam', label: 'Thi thử (1)' },
 ];
 
-const skillIconMap: Record<GameSkill, React.ReactNode> = {
-  vocab: <BookA className="w-5 h-5" />,
-  listening: <Headphones className="w-5 h-5" />,
-  reading: <BookOpenText className="w-5 h-5" />,
-  writing: <PenLine className="w-5 h-5" />,
-  speaking: <Mic className="w-5 h-5" />,
-  exam: <TimerIcon className="w-5 h-5" />,
+/** Icon riêng cho từng chế độ (chờ gắn bộ Fluent 3D ở C5). */
+const GAME_ICON_MAP: Record<GameId, React.ReactNode> = {
+  v1: <Flame className="w-6 h-6" />,
+  v2: <Layers className="w-6 h-6" />,
+  v3: <Radar className="w-6 h-6" />,
+  l1: <Headphones className="w-6 h-6" />,
+  l2: <Sparkles className="w-6 h-6" />,
+  r1: <Scale className="w-6 h-6" />,
+  r2: <BookOpenText className="w-6 h-6" />,
+  w1: <PenLine className="w-6 h-6" />,
+  w2: <Zap className="w-6 h-6" />,
+  s1: <Mic className="w-6 h-6" />,
+  s2: <Hourglass className="w-6 h-6" />,
+  x1: <TimerIcon className="w-6 h-6" />,
 };
+
+const MODE_DESC_VI: Record<'training' | 'exam' | 'sprint', string> = {
+  training: 'Có giải thích ngay, bằng chứng bấm được, không áp lực đồng hồ.',
+  exam: 'Đúng nhịp phòng thi thật, không gợi ý hay hiệu ứng trong lúc làm.',
+  sprint: 'Phiên ngắn 5–10 phút tập trung tốc độ và phản xạ.',
+};
+
+interface HubStatsData {
+  skillLevels: Partial<Record<GameId, number>>;
+  sessionsByGame: Partial<Record<GameId, number>>;
+}
 
 export const HubScreen: React.FC = () => {
   const [, navigate] = useLocation();
   const [selectedSkill, setSelectedSkill] = useState<FilterSkill>('all');
+  const [activeGame, setActiveGame] = useState<GameDefinition | null>(null);
 
-  const filteredGames =
-    selectedSkill === 'all'
-      ? GAME_REGISTRY
-      : GAME_REGISTRY.filter((g) => g.skill === selectedSkill);
+  const loadHubStats = useCallback(async (): Promise<HubStatsData> => {
+    const [profile, recent] = await Promise.all([
+      profileRepo.getOrCreate(),
+      attemptRepo.getRecent({ limit: 120 }),
+    ]);
+    const sessionsByGame: Partial<Record<GameId, number>> = {};
+    for (const a of recent) {
+      sessionsByGame[a.gameId] = (sessionsByGame[a.gameId] ?? 0) + 1;
+    }
+    return {
+      skillLevels: profile.skillLevels,
+      sessionsByGame,
+    };
+  }, []);
+
+  const { data: hubStats, loading, error, reload } = useAsyncData(loadHubStats, [loadHubStats]);
+
+  const { readyGames, comingSoonGames } = useMemo(() => {
+    const filtered =
+      selectedSkill === 'all'
+        ? GAME_REGISTRY
+        : GAME_REGISTRY.filter((g) => g.skill === selectedSkill);
+    return {
+      readyGames: filtered.filter((g) => g.status === 'ready'),
+      comingSoonGames: filtered.filter((g) => g.status !== 'ready'),
+    };
+  }, [selectedSkill]);
+
+  const launchGame = (game: GameDefinition, mode: 'training' | 'exam' | 'sprint') => {
+    setActiveGame(null);
+    const query = mode !== 'training' ? `?mode=${encodeURIComponent(mode)}` : '';
+    navigate(`/play/${game.id}${query}`);
+  };
+
+  if (error) {
+    return (
+      <ScreenErrorState
+        title="Không tải được danh sách chế độ"
+        error={error}
+        code="ERR-HUB-LOAD"
+        onRetry={() => void reload()}
+      />
+    );
+  }
+
+  const renderGameCard = (game: GameDefinition, comingSoon = false) => {
+    const level = hubStats?.skillLevels[game.id] ?? 1;
+    const bandEst = levelToBand(level);
+    const sessions = hubStats?.sessionsByGame[game.id] ?? 0;
+
+    return (
+      <Card
+        key={game.id}
+        skillAccent={game.skill}
+        padding="md"
+        interactive
+        onClick={() => setActiveGame(game)}
+        className={`flex flex-col justify-between gap-4 ${comingSoon ? 'opacity-80' : ''}`}
+        data-testid={`hub-card-${game.id}`}
+      >
+        <div className="space-y-3">
+          <div className="flex items-start justify-between gap-3">
+            {/* Slot biểu tượng riêng của game (sẵn sàng gắn Fluent 3D ở C5) */}
+            <div className="flex items-center gap-3 min-w-0">
+              <div
+                className="w-12 h-12 rounded-[var(--radius-md)] border flex items-center justify-center shrink-0"
+                style={{
+                  backgroundColor: `color-mix(in srgb, var(--color-${game.skill}) 14%, var(--color-surface-2))`,
+                  borderColor: `color-mix(in srgb, var(--color-${game.skill}) 35%, var(--color-border))`,
+                  color: `var(--color-${game.skill})`,
+                }}
+                aria-hidden="true"
+              >
+                {GAME_ICON_MAP[game.id] ?? <BookA className="w-6 h-6" />}
+              </div>
+              <div className="min-w-0 space-y-1">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <Pill tone={game.skill}>
+                    {game.code} · {game.skillLabelVi}
+                  </Pill>
+                  {comingSoon && <Pill tone="neutral">Sắp có</Pill>}
+                </div>
+                <span
+                  className="inline-flex items-center gap-1 text-xs tabular-nums"
+                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
+                >
+                  <Clock className="w-3.5 h-3.5" />
+                  {game.estMinutes[0]}–{game.estMinutes[1]} phút
+                  {!comingSoon && ` · Band ≈ ${bandEst.toFixed(1)}`}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
+              {game.title}
+            </h2>
+            <p className="text-sm mt-1 leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+              {game.subtitleVi}
+            </p>
+          </div>
+        </div>
+
+        <div
+          className="pt-3 border-t flex items-center justify-between gap-2"
+          style={{ borderColor: 'var(--color-border)' }}
+        >
+          <div className="flex flex-wrap items-center gap-1.5 min-w-0">
+            {game.requires.ai && (
+              <Pill tone="neutral" icon={<FileText className="w-3.5 h-3.5" />}>
+                Chấm qua Claude
+              </Pill>
+            )}
+            {game.requires.mic && (
+              <Pill tone="neutral" icon={<Mic className="w-3.5 h-3.5" />}>
+                Cần micro
+              </Pill>
+            )}
+            {!game.requires.ai && !game.requires.mic && (
+              <Pill tone="neutral">
+                {sessions > 0
+                  ? `${sessions} phiên đã luyện`
+                  : game.modes.map(modeLabelVi).join(' · ')}
+              </Pill>
+            )}
+          </div>
+
+          <span
+            className="inline-flex items-center gap-1 text-xs font-semibold shrink-0"
+            style={{ color: comingSoon ? 'var(--color-text-dim)' : `var(--color-${game.skill})` }}
+          >
+            {comingSoon ? 'Xem trước' : game.modes.length > 1 ? 'Chọn chế độ' : 'Vào luyện'}
+            <Play className="w-3.5 h-3.5" />
+          </span>
+        </div>
+      </Card>
+    );
+  };
 
   return (
     <div className="space-y-6 pb-8">
@@ -53,10 +224,11 @@ export const HubScreen: React.FC = () => {
             12 Chế độ luyện IELTS 8.0
           </h1>
           <p className="text-sm mt-1" style={{ color: 'var(--color-text-dim)' }}>
-            Chia thành 6 nhóm kỹ năng cốt lõi. Cơ chế chơi chính là hành động tạo ngôn ngữ và bắt bẫy đề thi.
+            Chia thành 6 nhóm kỹ năng cốt lõi. Chọn một thẻ để xem mô tả và chọn chế độ Luyện hoặc
+            Thi.
           </p>
         </div>
-        <Pill tone="info">6 nhóm · 12 chế độ</Pill>
+        <Pill tone="info">9 sẵn sàng · 3 sắp có</Pill>
       </div>
 
       {/* Bộ lọc nhóm kỹ năng */}
@@ -89,83 +261,131 @@ export const HubScreen: React.FC = () => {
         })}
       </div>
 
-      {/* Lưới 12 thẻ chế độ */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-        {filteredGames.map((game) => (
-          <Card
-            key={game.id}
-            skillAccent={game.skill}
-            padding="md"
-            interactive
-            onClick={() => navigate(`/play/${game.id}`)}
-            className="flex flex-col justify-between gap-4"
-            data-testid={`hub-card-${game.id}`}
-          >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <div className="flex items-center gap-2">
-                  <span style={{ color: `var(--color-${game.skill})` }}>
-                    {skillIconMap[game.skill]}
-                  </span>
-                  <Pill tone={game.skill}>
-                    {game.code} · {game.skillLabelVi}
-                  </Pill>
-                </div>
-                <span
-                  className="inline-flex items-center gap-1 text-xs tabular-nums"
-                  style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
-                >
-                  <Clock className="w-3.5 h-3.5" />
-                  {game.estMinutes[0]}–{game.estMinutes[1]}p
-                </span>
-              </div>
+      {loading && (
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <Skeleton className="h-44" />
+          <Skeleton className="h-44" />
+          <Skeleton className="h-44" />
+        </div>
+      )}
 
-              <div>
-                <h2 className="text-lg font-bold" style={{ color: 'var(--color-text)' }}>
-                  {game.title}
-                </h2>
-                <p
-                  className="text-sm mt-1 leading-relaxed"
-                  style={{ color: 'var(--color-text-dim)' }}
-                >
-                  {game.subtitleVi}
+      {/* Nhóm 1: Các chế độ đã sẵn sàng (U5, U11) */}
+      {!loading && readyGames.length > 0 && (
+        <section className="space-y-3" aria-label="Chế độ sẵn sàng luyện">
+          <div className="flex items-center justify-between gap-2">
+            <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
+              Sẵn sàng luyện ({readyGames.length})
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            {readyGames.map((g) => renderGameCard(g, false))}
+          </div>
+        </section>
+      )}
+
+      {/* Nhóm 2: Đẩy "Sắp có" (S1, S2, X1) xuống cuối (U5, U11) */}
+      {!loading && comingSoonGames.length > 0 && (
+        <section
+          className="space-y-3 pt-4 border-t"
+          style={{ borderColor: 'var(--color-border)' }}
+          aria-label="Chế độ sắp có"
+          data-testid="hub-coming-soon-section"
+        >
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <Compass className="w-4 h-4" style={{ color: 'var(--color-text-dim)' }} />
+              <h2 className="text-base font-bold" style={{ color: 'var(--color-text-dim)' }}>
+                Sắp có ({comingSoonGames.length})
+              </h2>
+            </div>
+            <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
+              Speaking & Phòng thi thử đang hoàn thiện
+            </span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            {comingSoonGames.map((g) => renderGameCard(g, true))}
+          </div>
+        </section>
+      )}
+
+      {/* U5: Sheet chọn chế độ Luyện / Thi / Tăng tốc */}
+      <Sheet
+        open={activeGame !== null}
+        onClose={() => setActiveGame(null)}
+        title={activeGame ? `${activeGame.code} · ${activeGame.title}` : ''}
+        subtitle={activeGame?.subtitleVi}
+        side="bottom"
+      >
+        {activeGame && (
+          <div className="space-y-4" data-testid="hub-mode-sheet">
+            <div className="flex flex-wrap items-center gap-2">
+              <Pill tone={activeGame.skill}>{activeGame.skillLabelVi}</Pill>
+              <Pill tone="neutral" icon={<Clock className="w-3.5 h-3.5" />}>
+                {activeGame.estMinutes[0]}–{activeGame.estMinutes[1]} phút
+              </Pill>
+              {activeGame.status === 'ready' && (
+                <Pill tone="info">
+                  Band ≈ {levelToBand(hubStats?.skillLevels[activeGame.id] ?? 1).toFixed(1)}
+                </Pill>
+              )}
+              {activeGame.status !== 'ready' && <Pill tone="neutral">Sắp có</Pill>}
+            </div>
+
+            {activeGame.status === 'ready' ? (
+              <div className="space-y-2.5">
+                <p className="text-xs font-semibold" style={{ color: 'var(--color-text-dim)' }}>
+                  Chọn chế độ bắt đầu:
                 </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {activeGame.modes.map((mode, idx) => (
+                    <div
+                      key={mode}
+                      className="p-3.5 rounded-[var(--radius-md)] border flex flex-col justify-between gap-3"
+                      style={{
+                        backgroundColor: 'var(--color-surface-2)',
+                        borderColor: idx === 0 ? `var(--color-${activeGame.skill})` : 'var(--color-border)',
+                      }}
+                    >
+                      <div className="space-y-1">
+                        <div className="text-sm font-bold" style={{ color: 'var(--color-text)' }}>
+                          {modeLabelVi(mode)}
+                        </div>
+                        <p className="text-xs leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                          {MODE_DESC_VI[mode]}
+                        </p>
+                      </div>
+                      <Button
+                        variant={idx === 0 ? 'primary' : 'secondary'}
+                        skill={activeGame.skill}
+                        rightIcon={<Play className="w-4 h-4" />}
+                        onClick={() => launchGame(activeGame, mode)}
+                        data-testid={`hub-launch-${activeGame.id}-${mode}`}
+                        className="w-full"
+                      >
+                        Bắt đầu · {modeLabelVi(mode)}
+                      </Button>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-
-            <div className="pt-3 border-t flex items-center justify-between gap-2" style={{ borderColor: 'var(--color-border)' }}>
-              <div className="flex flex-wrap items-center gap-1.5">
-                {game.requires.ai && (
-                  <Pill tone="neutral" icon={<FileText className="w-3 h-3" />}>
-                    Chấm qua Claude
-                  </Pill>
-                )}
-                {game.requires.mic && (
-                  <Pill tone="neutral" icon={<Mic className="w-3 h-3" />}>
-                    Cần micro
-                  </Pill>
-                )}
-                {!game.requires.ai && !game.requires.mic && (
-                  <Pill tone="neutral">{game.modes.map(modeLabelVi).join(' · ')}</Pill>
-                )}
+            ) : (
+              <div className="space-y-3">
+                <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+                  Chế độ này đang trong lộ trình phát triển tiếp theo. Bạn có thể xem trước mô tả
+                  hoặc chọn các chế độ đã sẵn sàng ở trên.
+                </p>
+                <Button
+                  variant="secondary"
+                  onClick={() => launchGame(activeGame, activeGame.modes[0] ?? 'training')}
+                  data-testid={`hub-preview-${activeGame.id}`}
+                >
+                  Xem màn giới thiệu
+                </Button>
               </div>
-
-              <Button
-                size="md"
-                variant="secondary"
-                skill={game.skill}
-                rightIcon={<Play className="w-3.5 h-3.5" />}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  navigate(`/play/${game.id}`);
-                }}
-              >
-                Mở
-              </Button>
-            </div>
-          </Card>
-        ))}
-      </div>
+            )}
+          </div>
+        )}
+      </Sheet>
     </div>
   );
 };
