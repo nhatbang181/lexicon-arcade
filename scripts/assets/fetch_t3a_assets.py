@@ -468,7 +468,7 @@ def main() -> None:
         npx_cmd = shutil.which("npx") or shutil.which("npx.cmd")
         if npx_cmd:
             subprocess.run(
-                [npx_cmd, "--yes", "svgo", "--multipass", "-p", "1", "-i", str(out_path), "-o", str(out_path)],
+                [npx_cmd, "--yes", "svgo", "--multipass", "-p", "0", "-i", str(out_path), "-o", str(out_path)],
                 check=False,
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
@@ -531,13 +531,13 @@ def main() -> None:
             raw_bytes = zf.read(member)
             with Image.open(io.BytesIO(raw_bytes)) as im:
                 orig_w, orig_h = im.size
-                rgba = im.convert("RGBA").resize((64, 64), Image.Resampling.LANCZOS)
+                rgba = im.convert("RGBA").resize((48, 48), Image.Resampling.LANCZOS)
                 alpha = rgba.split()[3]
-                # Compact 16-level white+alpha palette PNG (tRNS), visually smooth & ~0.5 KB/file
-                q_img = Image.new("P", (64, 64))
-                q_img.putpalette([255, 255, 255] * 16)
-                trns = bytes(round(i * 255 / 15) for i in range(16))
-                q_img.putdata([min(15, (a + 8) // 17) for a in alpha.get_flattened_data()])
+                # Compact 12-level white+alpha palette PNG (tRNS), crisp at <= 48px canvas particles
+                q_img = Image.new("P", (48, 48))
+                q_img.putpalette([255, 255, 255] * 12)
+                trns = bytes(round(i * 255 / 11) for i in range(12))
+                q_img.putdata([min(11, int(round(a * 11 / 255))) for a in alpha.get_flattened_data()])
             out_path = fx_dir / f"{pid}.png"
             q_img.save(out_path, format="PNG", transparency=trns, optimize=True, compress_level=9)
             size_b = out_path.stat().st_size
@@ -551,9 +551,9 @@ def main() -> None:
                 "giay_phep": "CC0 1.0 Universal",
                 "ngay_tai": TODAY,
                 "sha256": sha256_file(out_path),
-                "chinh_sua": "Resize 512x512 -> 64x64 compact 16-level alpha PNG (optimize=True)",
+                "chinh_sua": "Resize 512x512 -> 48x48 compact 12-level alpha PNG (optimize=True)",
                 "kich_thuoc_goc": f"{orig_w}x{orig_h}",
-                "so_mau": 16,
+                "so_mau": 12,
                 "ti_le_khung": "1/1",
                 "object_fit": "contain",
                 "diem_nhan": "50% 50%",
@@ -580,12 +580,14 @@ def main() -> None:
         opts = FtOptions()
         opts.flavor = "woff2"
         opts.hinting = False
-        opts.layout_features = ["kern", "liga", "ccmp", "mark", "mkmk"]
-        sub = FtSubsetter(options=opts)
         if "latin" in fname:
+            opts.layout_features = ["kern", "liga"]
+            sub = FtSubsetter(options=opts)
             sub.populate(text=ascii_ui)
             chinh_sua_font = "Subset woff2 ASCII printable + UI punctuation (OFL-1.1)"
         else:
+            opts.layout_features = ["kern", "liga", "ccmp", "mark", "mkmk"]
+            sub = FtSubsetter(options=opts)
             sub.populate(text=vi_chars)
             chinh_sua_font = "Subset woff2 134 Vietnamese diacritics (OFL-1.1)"
         sub.subset(font)
