@@ -33,7 +33,7 @@ for (const f of fs.readdirSync(epDir).sort()) {
     for (const s0 of t.match(/[^.!?]+[.!?]+/g) || [t]) {
       const s = s0.trim();
       const n = s.split(/\s+/).length;
-      if (n < 14 || n > 34) continue;
+      if (n < 12 || n > 28) continue;
       if (/^["“]/.test(s) || /\b(let me check|one moment)\b/i.test(s)) continue;
       const key = s.toLowerCase().replace(/[^a-z0-9 ]/g, '');
       if (existing.has(key)) continue;

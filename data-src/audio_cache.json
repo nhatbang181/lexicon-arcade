@@ -23532,5 +23532,4028 @@
     "size": 4988,
     "audio_file": "public/audio/vocab/pave_the_way.uk.mp3",
     "created_at": "2026-11-25T02:42:52.778858Z"
+  },
+  "2232c82bba5a1d94e0de97b4bba9175fb0f1fdd38c092df4e9e8a54046f405eb": {
+    "hash": "2232c82bba5a1d94e0de97b4bba9175fb0f1fdd38c092df4e9e8a54046f405eb",
+    "id": "dict:0302",
+    "text": "Please close wooden gates behind you so our grazing ponies stay in their paddock.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "a0ce0a2086b6782090c4fc8d7a8e6288dc497f9b7b0593a91ac1a9086286e77f": {
+    "hash": "a0ce0a2086b6782090c4fc8d7a8e6288dc497f9b7b0593a91ac1a9086286e77f",
+    "id": "dict:0305",
+    "text": "Wheel throwing is loads of fun once you get the hang of centring the clay.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "dd43042ee6910c467fbef40bd003d0217e891660ecc03f9a4e864cc262e2e2cb": {
+    "hash": "dd43042ee6910c467fbef40bd003d0217e891660ecc03f9a4e864cc262e2e2cb",
+    "id": "dict:0310",
+    "text": "Follow the Farm Track north past Orchard Lane almost all the way to its northern end.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "ee0780da4933f8a62e30ba6cf197e455debaa707ce92417bc6ab8ccf8762da5c": {
+    "hash": "ee0780da4933f8a62e30ba6cf197e455debaa707ce92417bc6ab8ccf8762da5c",
+    "id": "dict:0309",
+    "text": "And could you tell me your postcode so we know which branch is closest to you?",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "b594e10d68e339578912db6b2257b6ea3937cf6ab22a117aac4d784577c8850c": {
+    "hash": "b594e10d68e339578912db6b2257b6ea3937cf6ab22a117aac4d784577c8850c",
+    "id": "dict:0303",
+    "text": "Could I take a UK mobile number where we can reach you once you arrive?",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "2bdce075546057795c0dd391bfff4c1ba23924a34637f90624d5a25e3a6510c5": {
+    "hash": "2bdce075546057795c0dd391bfff4c1ba23924a34637f90624d5a25e3a6510c5",
+    "id": "dict:0307",
+    "text": "I will send your invoice link shortly, and we will see you Tuesday night.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "d0953421b5b142114ad0268d33412ae1b024afef9bde2bb7a6b871398bb3d5de": {
+    "hash": "d0953421b5b142114ad0268d33412ae1b024afef9bde2bb7a6b871398bb3d5de",
+    "id": "dict:0304",
+    "text": "Now return to Kauri Avenue and walk east until you reach the Central Lily Pond.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "05a9313a00c4e33b94c7adf53d028705a802129b2a1b286ef3e5ea4e516f316b": {
+    "hash": "05a9313a00c4e33b94c7adf53d028705a802129b2a1b286ef3e5ea4e516f316b",
+    "id": "dict:0301",
+    "text": "Do I need to buy my own shaping tools or bring a hand towel?",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "58f35c40af74af7c1c98e55d9adaae40d25bfd450b8347476f3e88a807b0e9b5": {
+    "hash": "58f35c40af74af7c1c98e55d9adaae40d25bfd450b8347476f3e88a807b0e9b5",
+    "id": "dict:0308",
+    "text": "The far eastern one right underneath Redgum Dam is simply our stacked hay barn.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "a6b9a0609936c18b337f085bc991a5b917dd80e0e8c109e4b6bf5db63e4f4b3c": {
+    "hash": "a6b9a0609936c18b337f085bc991a5b917dd80e0e8c109e4b6bf5db63e4f4b3c",
+    "id": "dict:0306",
+    "text": "Before we finish, let me run through a few arrival notes for Heather Cottage.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "c670377cf2a2ced9b77a98d01100034726b893d847174a46b7eb0751c3ec3b70": {
+    "hash": "c670377cf2a2ced9b77a98d01100034726b893d847174a46b7eb0751c3ec3b70",
+    "id": "dict:0316",
+    "text": "Can patients park in your clinic courtyard, or is street parking free after lunch?",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "3f6d6fbd76dc46a073be5034f389d0f42ac2a4b0c1dab9e3685bbd5c155bd0cd": {
+    "hash": "3f6d6fbd76dc46a073be5034f389d0f42ac2a4b0c1dab9e3685bbd5c155bd0cd",
+    "id": "dict:0317",
+    "text": "Could I also take a mobile number in case we need to text you about class changes?",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "e79e639c86348ef689e6cb0688883d849b12d8b72766c747f69897665ae7477b": {
+    "hash": "e79e639c86348ef689e6cb0688883d849b12d8b72766c747f69897665ae7477b",
+    "id": "dict:0311",
+    "text": "The Historic Map Room is the large room standing directly west of the Steam Tugboat Hall.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "25b82bfe85581255f2b73c00717208140dc7013fd82f7a798555618ae9d32f5d": {
+    "hash": "25b82bfe85581255f2b73c00717208140dc7013fd82f7a798555618ae9d32f5d",
+    "id": "dict:0320",
+    "text": "I can take your details over the phone right now and get your induction booked in.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "db29aff91d35b677243e41014e7a7eed276aaf49cc00e99f6a34e703dcbcf4a2": {
+    "hash": "db29aff91d35b677243e41014e7a7eed276aaf49cc00e99f6a34e703dcbcf4a2",
+    "id": "dict:0312",
+    "text": "The Milking Parlour sits directly north of the Tractor Yard and just south of Orchard Lane.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "a68265799b955f697aa501ea879b74e9e849828055fca46c1e1f1e7ca4122d89": {
+    "hash": "a68265799b955f697aa501ea879b74e9e849828055fca46c1e1f1e7ca4122d89",
+    "id": "dict:0319",
+    "text": "For the past two years I helped sort donations in a charity bookshop on High Street.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "1093ded40edd0fa3c1c4c0edeb17cce514f50440330a4d7e2c73d9c521609c17": {
+    "hash": "1093ded40edd0fa3c1c4c0edeb17cce514f50440330a4d7e2c73d9c521609c17",
+    "id": "dict:0314",
+    "text": "If you read the printed flyer, you will see it listed for Room 4 upstairs.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "cac20fd90ad329d3b0f8e1483bda7096f99617194249ae00bc5b3c93195dc26e": {
+    "hash": "cac20fd90ad329d3b0f8e1483bda7096f99617194249ae00bc5b3c93195dc26e",
+    "id": "dict:0318",
+    "text": "Finally on the map, let's look south of the Central Lily Pond along South Terrace Walk.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "28fd2ffb9a12b7da2ee269c86e9087a682e524bdc0d51a9627bc3994f8cbdc93": {
+    "hash": "28fd2ffb9a12b7da2ee269c86e9087a682e524bdc0d51a9627bc3994f8cbdc93",
+    "id": "dict:0315",
+    "text": "Normally there is a £15 joining fee too, though we are waiving that this month.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "4579561c9d3346882359f2b611eedcb1f41ba9ac4eb0a7fb2a6c2adf5dc8e14a": {
+    "hash": "4579561c9d3346882359f2b611eedcb1f41ba9ac4eb0a7fb2a6c2adf5dc8e14a",
+    "id": "dict:0313",
+    "text": "You do not need to worry about arriving late because we use a coded key safe.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "40b84a6c12de932ad40dbc38265106876360933dff1de61c6cf0d5917819f60c": {
+    "hash": "40b84a6c12de932ad40dbc38265106876360933dff1de61c6cf0d5917819f60c",
+    "id": "dict:0321",
+    "text": "Let's locate the Garden Bookshop first, in case you want a plant guide before setting off.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "447e5f69cda7c2f9a52fec921e64a4f46adc38498724796c38d44cfe90acd127": {
+    "hash": "447e5f69cda7c2f9a52fec921e64a4f46adc38498724796c38d44cfe90acd127",
+    "id": "dict:0328",
+    "text": "I am visiting my sister up north next week, so I would miss the first seven days.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "7d0b4b9b48c4096fed5c7aaa6916c2aa742b118b02a69b13a4b12f87fbbf6b46": {
+    "hash": "7d0b4b9b48c4096fed5c7aaa6916c2aa742b118b02a69b13a4b12f87fbbf6b46",
+    "id": "dict:0325",
+    "text": "I can book you in with Dr Patel instead, who handles all our restorative work.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "7e9e5a47ba546cb6315244094209a54a48a91f22e1f18edb8280e601a9b0489b": {
+    "hash": "7e9e5a47ba546cb6315244094209a54a48a91f22e1f18edb8280e601a9b0489b",
+    "id": "dict:0326",
+    "text": "oh, Thursday is already full with a waitlist, whereas Tuesday still has two seats open.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "615e19b4f8481e4ebbbbde771b18c6bca7d4e3a596e74c817f92231180b82d58": {
+    "hash": "615e19b4f8481e4ebbbbde771b18c6bca7d4e3a596e74c817f92231180b82d58",
+    "id": "dict:0323",
+    "text": "Walk right past that lab and carry on to the far north-western corner of the museum.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "ee489233466efd320a66586779c0aa462015c84d4484d111cd5a0030e2370a09": {
+    "hash": "ee489233466efd320a66586779c0aa462015c84d4484d111cd5a0030e2370a09",
+    "id": "dict:0324",
+    "text": "And on Tuesday evenings, do we come in through the main shopfront on King Street?",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "a7a31a8d8675c450ffb255a1f27c7500eb3c16eb39ff457cd7a55c29dc5b0add": {
+    "hash": "a7a31a8d8675c450ffb255a1f27c7500eb3c16eb39ff457cd7a55c29dc5b0add",
+    "id": "dict:0322",
+    "text": "Second is the Misty Creek Trail, which winds through dense mossy boulders along the valley floor.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "9e9f402705437eb6f92b5a87e5dd87da83b35f988f1c2d216ec9230a3ce216fe": {
+    "hash": "9e9f402705437eb6f92b5a87e5dd87da83b35f988f1c2d216ec9230a3ce216fe",
+    "id": "dict:0329",
+    "text": "Our centrepiece is the 1898 steam tugboat Sovereign, formerly moored outside on the quay.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 5.16,
+    "size": 31196
+  },
+  "82f80db814b656ca6a0af51d5f24f89a4ee57326cad195e426798a0d68b21d94": {
+    "hash": "82f80db814b656ca6a0af51d5f24f89a4ee57326cad195e426798a0d68b21d94",
+    "id": "dict:0327",
+    "text": "Yes please, especially about getting the keys if our drive from the airport runs late.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "3d8882597afe345cbf91986e6ef9bca3e7397515393729fc21e58c32290deeae": {
+    "hash": "3d8882597afe345cbf91986e6ef9bca3e7397515393729fc21e58c32290deeae",
+    "id": "dict:0334",
+    "text": "Regular visitors will know that our main theatre hall was closed for three weeks last month.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "f3f5a5111c2f3a1ebd966bb7f93d855234ec65e50ee931104ebd8d6fced76227": {
+    "hash": "f3f5a5111c2f3a1ebd966bb7f93d855234ec65e50ee931104ebd8d6fced76227",
+    "id": "dict:0332",
+    "text": "Lifters have pointed out that the old hardwood floorboards splinter whenever heavy dumbbells are set down.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "7cea0e4da6013ecadb17c50aa43c28b80fa988d983b518e07133f28261cd0ca4": {
+    "hash": "7cea0e4da6013ecadb17c50aa43c28b80fa988d983b518e07133f28261cd0ca4",
+    "id": "dict:0330",
+    "text": "Actually I swapped out a punctured tube myself yesterday and my saddle height feels spot on.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "662e2e358be2ebb8c667a6fa7b515afb5923f3823bfd79dba2c5767600540f20": {
+    "hash": "662e2e358be2ebb8c667a6fa7b515afb5923f3823bfd79dba2c5767600540f20",
+    "id": "dict:0337",
+    "text": "For evening workshops, walk down the side alley and enter through the rear courtyard door.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "c14bd76eba98793bc132e4152b92c9462cb62ad62c212e47df40a3b3f64b48d3": {
+    "hash": "c14bd76eba98793bc132e4152b92c9462cb62ad62c212e47df40a3b3f64b48d3",
+    "id": "dict:0339",
+    "text": "However, field mice burrowed straight up through the soil beneath the open timber slats.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "488f1c11200d7428059ef7e4cfaadcb9da2a29dfdd1e29a82ed5b72a9c300ee4": {
+    "hash": "488f1c11200d7428059ef7e4cfaadcb9da2a29dfdd1e29a82ed5b72a9c300ee4",
+    "id": "dict:0335",
+    "text": "Usually new adult patients see Dr Evans, though he is away at a conference this week.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "d7a07231dcee9f32a7cc7e98d2e8ad0cde3049bacfc8f04c04fb53b7be6664ff": {
+    "hash": "d7a07231dcee9f32a7cc7e98d2e8ad0cde3049bacfc8f04c04fb53b7be6664ff",
+    "id": "dict:0331",
+    "text": "Actually the probe checked out fine and every sample went straight into baked glass jars.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "7504792a351ed6579eed8bf4f3bcccc22bce492d76131da49a4e9fb37f2f466d": {
+    "hash": "7504792a351ed6579eed8bf4f3bcccc22bce492d76131da49a4e9fb37f2f466d",
+    "id": "dict:0336",
+    "text": "Actually, those clumps only cover a tiny strip and bees did not mind them.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "f8a0b1df03ad2700363da101957ef5450ad5de2327bc8ed6218d163b9be91413": {
+    "hash": "f8a0b1df03ad2700363da101957ef5450ad5de2327bc8ed6218d163b9be91413",
+    "id": "dict:0333",
+    "text": "Notice that our main access is the East Entrance along Station Avenue on the eastern side of the map.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.96,
+    "size": 41996
+  },
+  "a9b085ce49543cbd896e5b10a53b7c9aede2290bdd7e499d45bd679958ff7952": {
+    "hash": "a9b085ce49543cbd896e5b10a53b7c9aede2290bdd7e499d45bd679958ff7952",
+    "id": "dict:0338",
+    "text": "Friday clashes with my Italian evening class, so Wednesday afternoon would be ideal for me.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "b50f5238d0aae8678c770c7228292112d2b768bdc83defc0936806d9dd83bb6f": {
+    "hash": "b50f5238d0aae8678c770c7228292112d2b768bdc83defc0936806d9dd83bb6f",
+    "id": "dict:0340",
+    "text": "I will email your booking summary and the key code twenty-four hours before you arrive.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "c4f6afcc3d8b3a24ce70f5156344322dcdce8e2a42c0adaa3dbdd459ce4440f2": {
+    "hash": "c4f6afcc3d8b3a24ce70f5156344322dcdce8e2a42c0adaa3dbdd459ce4440f2",
+    "id": "dict:0342",
+    "text": "Visitors often guess this tall brick hall was once a boatyard building timber lifeboats for the rescue crew.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "577c7837d0c7f1d09248dd8286f4447325a5580fa3f377caa94955e0f6a44dc7": {
+    "hash": "577c7837d0c7f1d09248dd8286f4447325a5580fa3f377caa94955e0f6a44dc7",
+    "id": "dict:0345",
+    "text": "Avoid the plant room and look straight across to the western side of the South Wing corridor.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 6.24,
+    "size": 37676
+  },
+  "fc1bde983dd941852964ce8ef3d05b7def6bc7455499b714dccfb00d26664ba0": {
+    "hash": "fc1bde983dd941852964ce8ef3d05b7def6bc7455499b714dccfb00d26664ba0",
+    "id": "dict:0346",
+    "text": "That sits in the far south-western corner of the building, directly south of the Main Swimming Pool.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 6.24,
+    "size": 37676
+  },
+  "7e2f90234ea15082aae1d2d63fdae27f50d39ed538e82775d7392e0f5efc1a2b": {
+    "hash": "7e2f90234ea15082aae1d2d63fdae27f50d39ed538e82775d7392e0f5efc1a2b",
+    "id": "dict:0349",
+    "text": "I will update the ethics appendix tonight and send it over for a final proofread.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "ad2bf3e761b1ff69bcd4e882e7d24b022a2b31b4dc14036c4b4980d95925d14e": {
+    "hash": "ad2bf3e761b1ff69bcd4e882e7d24b022a2b31b4dc14036c4b4980d95925d14e",
+    "id": "dict:0348",
+    "text": "You just need to bring your own small padlock now, or you can buy one at reception.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "d040084e73766c7ef2b0abd620143846963713144c70456b67b289140b4c0d3c": {
+    "hash": "d040084e73766c7ef2b0abd620143846963713144c70456b67b289140b4c0d3c",
+    "id": "dict:0344",
+    "text": "All we ask you to bring is a written list of any daily medications you currently take.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "faedb5a90a1f9a97773a0ab6eb608eb48dca4247b906920388ab0d9395cc6b72": {
+    "hash": "faedb5a90a1f9a97773a0ab6eb608eb48dca4247b906920388ab0d9395cc6b72",
+    "id": "dict:0347",
+    "text": "What you unlock after three rides is a fifteen percent discount card at a local bike shop.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "97d785c042e91ac79f191dc6e503c4aea7e2976561449e9daf73f5a64504a2c0": {
+    "hash": "97d785c042e91ac79f191dc6e503c4aea7e2976561449e9daf73f5a64504a2c0",
+    "id": "dict:0341",
+    "text": "One last thing: I read there is a perk for new members once they complete three club rides?",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "86ac240d52f0074fd24486b4a75e8de8be5e79224bde815f7c5d9d96ea820631": {
+    "hash": "86ac240d52f0074fd24486b4a75e8de8be5e79224bde815f7c5d9d96ea820631",
+    "id": "dict:0343",
+    "text": "Walk west along the West Corridor and look to your right, on the northern side.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 5.47,
+    "size": 33068
+  },
+  "5638460c761f04ca54f7114eb9336b78dd1802941c6df7db93e1145c851860d6": {
+    "hash": "5638460c761f04ca54f7114eb9336b78dd1802941c6df7db93e1145c851860d6",
+    "id": "dict:0350",
+    "text": "It is my back gear cable that keeps slipping on climbs, so I want to adjust that before Sunday.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.96,
+    "size": 41996
+  },
+  "2b203abfc10c6f8dcd500585dd7718735a11f977a46ef56ce590e042fc0a503a": {
+    "hash": "2b203abfc10c6f8dcd500585dd7718735a11f977a46ef56ce590e042fc0a503a",
+    "id": "dict:0353",
+    "text": "Because their bays stand on poured concrete slabs, burrowing rodents were never an issue.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "bc5f1b729e859cfd2890cca9781bb5adb21360d4d30062d976b5dd51e3ebad18": {
+    "hash": "bc5f1b729e859cfd2890cca9781bb5adb21360d4d30062d976b5dd51e3ebad18",
+    "id": "dict:0351",
+    "text": "The Otter Viewing Platform is the structure tucked right beside the eastern bank of Reed Creek.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "c798c1b1f294f071239f85657cd6c5218a53648f9ebb550d56687e8cd2483052": {
+    "hash": "c798c1b1f294f071239f85657cd6c5218a53648f9ebb550d56687e8cd2483052",
+    "id": "dict:0355",
+    "text": "I mocked up a quick five-point slider of our own, which felt tidy enough.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "ea5cd5cdaa5bf26166e2a224950f161dea99bee6f6a8bb39f0cdb4e594e56da6": {
+    "hash": "ea5cd5cdaa5bf26166e2a224950f161dea99bee6f6a8bb39f0cdb4e594e56da6",
+    "id": "dict:0356",
+    "text": "The Shearing Pavilion sits immediately on the eastern side of the Farm Track, directly west of Redgum Dam.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.6,
+    "size": 39836
+  },
+  "f48b3d029fdead570b108abf88aee1b5ffdc44691a7f12f42e1d7b79ac60088b": {
+    "hash": "f48b3d029fdead570b108abf88aee1b5ffdc44691a7f12f42e1d7b79ac60088b",
+    "id": "dict:0354",
+    "text": "Dr Alverez warned us that markers dislike home-made scales when validated tools already exist.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.16,
+    "size": 31196
+  },
+  "25200a2ae35d19c3ac66c52824146aec7009921d55cfbfaed2069880b7175548": {
+    "hash": "25200a2ae35d19c3ac66c52824146aec7009921d55cfbfaed2069880b7175548",
+    "id": "dict:0357",
+    "text": "Because it sits behind a tall brick parapet, wind is barely an issue there at all.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "768ca41c905e8566c5612da29fa50f8860ca21983a9350c21d6bfdaf83cdde9d": {
+    "hash": "768ca41c905e8566c5612da29fa50f8860ca21983a9350c21d6bfdaf83cdde9d",
+    "id": "dict:0360",
+    "text": "Tuesday evening actually works better for my work schedule anyway, so please put me down for Tuesday.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "c7d83492082d28540fb6d3527c9834847e10c3e1fa6a86513d75695e4777e610": {
+    "hash": "c7d83492082d28540fb6d3527c9834847e10c3e1fa6a86513d75695e4777e610",
+    "id": "dict:0352",
+    "text": "We are standing at the Ticket Barn on the southern edge of the property, just north of Gumtree Lane.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 6.96,
+    "size": 41996
+  },
+  "6bd136f05aaf4c60fad84470acee62e9091c5779f96a31ac3e7e677d4f3faef2": {
+    "hash": "6bd136f05aaf4c60fad84470acee62e9091c5779f96a31ac3e7e677d4f3faef2",
+    "id": "dict:0359",
+    "text": "Next is the Shearing Pavilion, where our wool-clipping demonstrations run at eleven-thirty and two-thirty.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 5.16,
+    "size": 31196
+  },
+  "cd021ab67e4fad7f49a2684547a9cac0022f65c744bf3fa817344479cb702292": {
+    "hash": "cd021ab67e4fad7f49a2684547a9cac0022f65c744bf3fa817344479cb702292",
+    "id": "dict:0358",
+    "text": "Let's start with the Farm Produce Shop, where you can buy local honey and homemade jam on your way out.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "f6df02ddab796cd79f68d452f4920e89c81518a25a3e5df400c386cf98e93d9c": {
+    "hash": "f6df02ddab796cd79f68d452f4920e89c81518a25a3e5df400c386cf98e93d9c",
+    "id": "dict:0366",
+    "text": "Now, is this just a routine check-up and clean, or do you have a specific issue?",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "d6bc13675bae6f68862132d034a3b168513a16bfcc50b66ee63a67833c680081": {
+    "hash": "d6bc13675bae6f68862132d034a3b168513a16bfcc50b66ee63a67833c680081",
+    "id": "dict:0362",
+    "text": "When it first opened in 1864, its coal furnaces cast heavy iron anchors and chain links for coastal merchant ships.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "6de13559973e39f345335d632281eba8846980136af13e89979b928957a70b7b": {
+    "hash": "6de13559973e39f345335d632281eba8846980136af13e89979b928957a70b7b",
+    "id": "dict:0361",
+    "text": "What you do get completely free is parking in the staff bays behind the building whenever you are on duty.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "c430a59a35f8081b905b51c3bef1db75115e2ba951c4a3c2dcf7e07f4c2a242e": {
+    "hash": "c430a59a35f8081b905b51c3bef1db75115e2ba951c4a3c2dcf7e07f4c2a242e",
+    "id": "dict:0369",
+    "text": "Volunteers in yellow badges are stationed on every landing to point you to the right studio.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "6962d01d80805a8fa26419669dff7e6025c5e80472fca36ace89bd08f45e18c8": {
+    "hash": "6962d01d80805a8fa26419669dff7e6025c5e80472fca36ace89bd08f45e18c8",
+    "id": "dict:0367",
+    "text": "Thankfully, our sound gear passed inspection with flying colours and the stage timber was completely dry.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "0f13cd65d478f4ec949a733324c5e33221c44cd00054cfabf5d11cbc70130893": {
+    "hash": "0f13cd65d478f4ec949a733324c5e33221c44cd00054cfabf5d11cbc70130893",
+    "id": "dict:0364",
+    "text": "Finally, don't miss the Blacksmith's Forge, where you can watch horseshoes being shaped over glowing coals.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "adac90fc63c23533d783e633f5c25c7ade6e03e563eb83e0e841673fc4c65e1f": {
+    "hash": "adac90fc63c23533d783e633f5c25c7ade6e03e563eb83e0e841673fc4c65e1f",
+    "id": "dict:0363",
+    "text": "Do remember to switch off your camera flash inside the historic map room so bright bursts do not fade the antique ink.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 8.04,
+    "size": 48476
+  },
+  "293ea48d25bfa356987a4cddd938e5f8448b00ba3afc107194790cde6e75bd1d": {
+    "hash": "293ea48d25bfa356987a4cddd938e5f8448b00ba3afc107194790cde6e75bd1d",
+    "id": "dict:0365",
+    "text": "If this is your first visit, you might be surprised to hear how the centre began twelve years ago.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.96,
+    "size": 41996
+  },
+  "57207294aa828966a0f79402b7902d8d7a8334098e5a3f60047e924d2709c04f": {
+    "hash": "57207294aa828966a0f79402b7902d8d7a8334098e5a3f60047e924d2709c04f",
+    "id": "dict:0370",
+    "text": "And the other item we never managed to eliminate was tiny adhesive fruit stickers.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "5eccb911b3096b60b84fd2655e8b3df0aecb2d8a38350c911c991215301981c1": {
+    "hash": "5eccb911b3096b60b84fd2655e8b3df0aecb2d8a38350c911c991215301981c1",
+    "id": "dict:0368",
+    "text": "Those rings of spoil mark vertical access shafts spaced roughly every thirty to fifty metres.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "8047c92525faf21c148e622be045b0e83972487f13597e648cf6c60e7d5008e8": {
+    "hash": "8047c92525faf21c148e622be045b0e83972487f13597e648cf6c60e7d5008e8",
+    "id": "dict:0373",
+    "text": "Instead, simply collect a free numbered pass from the front lobby desk so we can cap each session at twelve wheels.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "0a0ed11e87e8b311933b16a11cdcd7ff1beacb51252c17bc5a99f5c04de15735": {
+    "hash": "0a0ed11e87e8b311933b16a11cdcd7ff1beacb51252c17bc5a99f5c04de15735",
+    "id": "dict:0374",
+    "text": "Ryan suggested monthly visual checks by a surveyor, yet seasonal humidity shifts happen overnight.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.16,
+    "size": 31196
+  },
+  "20e4664ea5870f6e02822a4c7a2031d4d5050f895797c021050306b026b8b3cc": {
+    "hash": "20e4664ea5870f6e02822a4c7a2031d4d5050f895797c021050306b026b8b3cc",
+    "id": "dict:0378",
+    "text": "Do not mark that as the spin studio -- that room has been assigned as our new staff locker room.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "ff1753bb6694f89bee85d45a24ef0491f5709e1dbcd7ffa78178cd391ea5516f": {
+    "hash": "ff1753bb6694f89bee85d45a24ef0491f5709e1dbcd7ffa78178cd391ea5516f",
+    "id": "dict:0377",
+    "text": "Best of all, members receive an online ballot each month to vote on the three films screened the following month.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "6838079ff1e2c2ab78856f844e1131e5a9a675c882af74906ceea51dc7fb279d": {
+    "hash": "6838079ff1e2c2ab78856f844e1131e5a9a675c882af74906ceea51dc7fb279d",
+    "id": "dict:0380",
+    "text": "Nearly everyone who signs up begins by clearing brambles and maintaining the footpaths before joining wildlife counts.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 165.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "107c97fc906c208736d5a1947c16d842f973f9e871559ebca7bb94644afcb862": {
+    "hash": "107c97fc906c208736d5a1947c16d842f973f9e871559ebca7bb94644afcb862",
+    "id": "dict:0371",
+    "text": "Before I move on to the workshops, a quick appeal for our community craft library.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "7ce49f8e15e0f03d0a3f8339d5b0b40538423eafb7b1b8caee9b507ccb4ac578": {
+    "hash": "7ce49f8e15e0f03d0a3f8339d5b0b40538423eafb7b1b8caee9b507ccb4ac578",
+    "id": "dict:0372",
+    "text": "If we keep one fixed sequence across both days, later words suffer from boredom.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.16,
+    "size": 31196
+  },
+  "91026fc32e2109243d04b5ea78c8f25d00123fc04e18e02f9a8cc7d7c7aa4a62": {
+    "hash": "91026fc32e2109243d04b5ea78c8f25d00123fc04e18e02f9a8cc7d7c7aa4a62",
+    "id": "dict:0376",
+    "text": "Those boats were built in the slipway shed next door, and this hall only stored imported rope and timber after 1920.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 165.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "e6dc379f54f043304a02ecd45fd17b2e313a7c0ce1751a3504166b9491351bc8": {
+    "hash": "e6dc379f54f043304a02ecd45fd17b2e313a7c0ce1751a3504166b9491351bc8",
+    "id": "dict:0375",
+    "text": "Their caretaker already set out shallow pebble dishes for drinking water, which worked brilliantly.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "4adfc46b2959be963cef77082747ef8c64a2fdcbca3dd88ceb59681a50982bc5": {
+    "hash": "4adfc46b2959be963cef77082747ef8c64a2fdcbca3dd88ceb59681a50982bc5",
+    "id": "dict:0385",
+    "text": "I already brought plenty of cycling kit from the UK, so I will just take the $85 standard option.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.96,
+    "size": 41996
+  },
+  "149762a34bc038ac19e4f149238fb19d95d9f05b4061d3bee6a974f642430f6a": {
+    "hash": "149762a34bc038ac19e4f149238fb19d95d9f05b4061d3bee6a974f642430f6a",
+    "id": "dict:0382",
+    "text": "Speaking of comparisons, our first pilot survey threw up a result I honestly did not expect.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.86,
+    "size": 35372
+  },
+  "147898c20d2cf67eb499b58a6f3508b631dfeed44ade559b97889cfeb91f00af": {
+    "hash": "147898c20d2cf67eb499b58a6f3508b631dfeed44ade559b97889cfeb91f00af",
+    "id": "dict:0383",
+    "text": "Um, I have a client call I cannot move on Tuesday morning, so Wednesday at 2:45 p.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.24,
+    "size": 37676
+  },
+  "84a2f230f79cd94d713f232c57c2eb0c29538854956a4357acbde26a14df1b1d": {
+    "hash": "84a2f230f79cd94d713f232c57c2eb0c29538854956a4357acbde26a14df1b1d",
+    "id": "dict:0388",
+    "text": "The Orchid Conservatory sits on your left, on the northern side of Fern Gully Track, west of Tui Stream.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.96,
+    "size": 41996
+  },
+  "32376d3e67e06eb291504e8000324c208ec5b2f60bb8420fb95688db349bdc9e": {
+    "hash": "32376d3e67e06eb291504e8000324c208ec5b2f60bb8420fb95688db349bdc9e",
+    "id": "dict:0389",
+    "text": "We need help with shelving returned stock, helping seniors with computers, and running children's storytelling sessions.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "b6a5caba54a0de972ac259fd32c47ec33c06e61c80627f3201b125996ce85aba": {
+    "hash": "b6a5caba54a0de972ac259fd32c47ec33c06e61c80627f3201b125996ce85aba",
+    "id": "dict:0379",
+    "text": "Instead, contractors are hanging modern acoustic panels across the vaulted ceiling to absorb the harsh echo during busy school lessons.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "355ebabcb86944ea5d27e3e4a716278e7f661754da8880542233acf8e3b04ec3": {
+    "hash": "355ebabcb86944ea5d27e3e4a716278e7f661754da8880542233acf8e3b04ec3",
+    "id": "dict:0381",
+    "text": "Our intermediate bunch averages twenty-five to twenty-eight, so that would suit you much better.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.16,
+    "size": 31196
+  },
+  "8604b7e7d86d5e5c332fce01908833412689ee319dba52e32f733ec1c67d86ac": {
+    "hash": "8604b7e7d86d5e5c332fce01908833412689ee319dba52e32f733ec1c67d86ac",
+    "id": "dict:0386",
+    "text": "oh, actually the housekeepers finish early that afternoon, so you can check in from 3:30 p.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "d0155431024d4764e4b0b490604f7a7bb355284f52c1174e9e07748440c50bc4": {
+    "hash": "d0155431024d4764e4b0b490604f7a7bb355284f52c1174e9e07748440c50bc4",
+    "id": "dict:0387",
+    "text": "Rumour had it that a roof leak had warped the wooden stage, or that our mixing desk failed its annual safety check.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 8.06,
+    "size": 48620
+  },
+  "e34b7923116bb7f2cee63c46ad606d2361678c0eb67328c7a8ea30636f75acc8": {
+    "hash": "e34b7923116bb7f2cee63c46ad606d2361678c0eb67328c7a8ea30636f75acc8",
+    "id": "dict:0384",
+    "text": "Could we just ask volunteers to rate their own detail level on a quick form?",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 165.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "e02b91c341b77ff0e1005f2c5928563c154f44bbb431ccfe219b6110ec03d9e4": {
+    "hash": "e02b91c341b77ff0e1005f2c5928563c154f44bbb431ccfe219b6110ec03d9e4",
+    "id": "dict:0390",
+    "text": "And is there anything I need to bring with me on Wednesday, like a utility bill or my old dental X-rays?",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "1db4a72fb35c7eeec54a8d0c19b29c83ad45029d15289260ce7b8c3fcb71cd48": {
+    "hash": "1db4a72fb35c7eeec54a8d0c19b29c83ad45029d15289260ce7b8c3fcb71cd48",
+    "id": "dict:0398",
+    "text": "We are currently standing at the West Gate, which opens directly off Valley Road on the western edge of the map.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 165.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "c605aeeba666985af44717cb0fd6c07b41c839196059cec0b6f0ac881b2331cc": {
+    "hash": "c605aeeba666985af44717cb0fd6c07b41c839196059cec0b6f0ac881b2331cc",
+    "id": "dict:0396",
+    "text": "Since we need to inspect the filling first, I recommend starting with the £65 exam.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 5.5,
+    "size": 33212
+  },
+  "1b30ec1c3c6a3bd8cd26273f78d4650aebc5f69e5a7f13dc69c24ba34ab42447": {
+    "hash": "1b30ec1c3c6a3bd8cd26273f78d4650aebc5f69e5a7f13dc69c24ba34ab42447",
+    "id": "dict:0393",
+    "text": "If you haven't visited for a while, you might have read about several big projects in our newsletter.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 165.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "ce96377a012780debaeb99a18e366ba5d2d1e3952d32c088b972ccfb92c8fea5": {
+    "hash": "ce96377a012780debaeb99a18e366ba5d2d1e3952d32c088b972ccfb92c8fea5",
+    "id": "dict:0392",
+    "text": "I am not registered with your practice yet, and I was hoping to book a new patient check-up.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 6.6,
+    "size": 39836
+  },
+  "4ae63c7106832b066848e8f78600ea4888fb36c94cbda7cd971f7cd0b602baf0": {
+    "hash": "4ae63c7106832b066848e8f78600ea4888fb36c94cbda7cd971f7cd0b602baf0",
+    "id": "dict:0394",
+    "text": "Instead, carry on west to the central junction and turn right, heading north up the North Wing corridor.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 165.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "f3a075084fbc26e5b712e85599e51abc47f86fbdc4dda8e83ddeadcd4d900f2c": {
+    "hash": "f3a075084fbc26e5b712e85599e51abc47f86fbdc4dda8e83ddeadcd4d900f2c",
+    "id": "dict:0391",
+    "text": "Hi everyone, and thank you so much for coming out to Westside Community Arts Centre's annual open day.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "bb98cb405a76d69364e4c994fc2699e1272e04be585959ce2643684c3799f962": {
+    "hash": "bb98cb405a76d69364e4c994fc2699e1272e04be585959ce2643684c3799f962",
+    "id": "dict:0399",
+    "text": "We run yoga on Wednesday evenings, indoor cycling at lunchtime, and pilates right after your Thursday morning slot.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.62,
+    "size": 39980
+  },
+  "afc55360141041794d94598a10aeaaf3d44ee84153e685e0729a8f4e26372ab9": {
+    "hash": "afc55360141041794d94598a10aeaaf3d44ee84153e685e0729a8f4e26372ab9",
+    "id": "dict:0397",
+    "text": "So I switched our specification to natural linseed oil, which repels rain while letting the oak breathe.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 6.24,
+    "size": 37676
+  },
+  "08867bb079458ec15b5a43f3a9068a766fa3430bea2dc989e23d3fbfff32e27f": {
+    "hash": "08867bb079458ec15b5a43f3a9068a766fa3430bea2dc989e23d3fbfff32e27f",
+    "id": "dict:0400",
+    "text": "When grabbed by a fish, certain tiny crustaceans erupt into a dazzling strobe pattern.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 165.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "c05fdf3ae11c3cf687fe26766a7a81e2886be7cceda19da7b4763db060a60549": {
+    "hash": "c05fdf3ae11c3cf687fe26766a7a81e2886be7cceda19da7b4763db060a60549",
+    "id": "dict:0395",
+    "text": "Normally we lend out canvas aprons, though our entire stack is away at the commercial laundry this morning.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 165.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "35aa1df77340be07d921ace41288dfdb6f85371c18826f538ffa613a7031de8a": {
+    "hash": "35aa1df77340be07d921ace41288dfdb6f85371c18826f538ffa613a7031de8a",
+    "id": "dict:0404",
+    "text": "So highway drainage brings the particles in, and tidal trapping behind the breakwater holds them there.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "09023337991fbcea8070958ddbac5449ffe26ac56d83217db427251e167abb78": {
+    "hash": "09023337991fbcea8070958ddbac5449ffe26ac56d83217db427251e167abb78",
+    "id": "dict:0409",
+    "text": "Since relief ink stains cotton permanently, anyone joining that session will need to wear an old shirt or bring their own apron.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 7.58,
+    "size": 45740
+  },
+  "2bd5b24d1db892e19a209715c569969ad75b564b2029f70e4f38e9dbd76c94b0": {
+    "hash": "2bd5b24d1db892e19a209715c569969ad75b564b2029f70e4f38e9dbd76c94b0",
+    "id": "dict:0410",
+    "text": "You also no longer need to carry litter back to the car park, since we installed covered bins by the beach gate.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 7.58,
+    "size": 45740
+  },
+  "ae56286dfc3bbe09e67f1a1def8bfd965f859db945c3528f986a0fb8486569cc": {
+    "hash": "ae56286dfc3bbe09e67f1a1def8bfd965f859db945c3528f986a0fb8486569cc",
+    "id": "dict:0406",
+    "text": "The Spin Cycling Studio sits near the northern end of the North Wing, on the eastern side of the corridor.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "6e91c9b5759385d7597bcc51663144e0e3e768e9ec3f43fdb707eb9c5be76c54": {
+    "hash": "6e91c9b5759385d7597bcc51663144e0e3e768e9ec3f43fdb707eb9c5be76c54",
+    "id": "dict:0408",
+    "text": "Obviously birds favoured sheltered limestone ledges there, just as they did at every other site.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 5.18,
+    "size": 31340
+  },
+  "7574254cf65e50fbdc0a59a4feffdb0e4d86ddc904931246e2837033dab2abf2": {
+    "hash": "7574254cf65e50fbdc0a59a4feffdb0e4d86ddc904931246e2837033dab2abf2",
+    "id": "dict:0403",
+    "text": "Good evening, everyone, and thank you for joining our members' briefing on the Larkspur Sports Complex renovation.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.9,
+    "size": 35660
+  },
+  "adca676fcee78ee1c527345c24107479d8a36c1c86c0a7f1e08892764cda9e1f": {
+    "hash": "adca676fcee78ee1c527345c24107479d8a36c1c86c0a7f1e08892764cda9e1f",
+    "id": "dict:0405",
+    "text": "Someone is bound to ask why we went with passive acoustic loggers instead of thermal-imaging cameras.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "45c77de202a0057965559d193f55b164cdaa07efaded817757913b4287ed7cec": {
+    "hash": "45c77de202a0057965559d193f55b164cdaa07efaded817757913b4287ed7cec",
+    "id": "dict:0401",
+    "text": "You will need to bring your own sturdy boots and waterproof coat, as we only lend work gloves and hand tools.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 7.25,
+    "size": 43724
+  },
+  "c21395cb4c84587716338e27c885292b3f1eb22d7ade8255fa4d91a7ea217add": {
+    "hash": "c21395cb4c84587716338e27c885292b3f1eb22d7ade8255fa4d91a7ea217add",
+    "id": "dict:0407",
+    "text": "Free drinking water fountains are dotted near the Lily Pond and the West Gate, so please refill your bottles as you go.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 7.58,
+    "size": 45740
+  },
+  "cfa4747a01957a1e9aba94437391be4583010f9a02663c43ff8c5a684a09a700": {
+    "hash": "cfa4747a01957a1e9aba94437391be4583010f9a02663c43ff8c5a684a09a700",
+    "id": "dict:0402",
+    "text": "Definitely line the base of every Maple Court bin with fine steel mesh to block rodents.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "92c63d236bbc161c0f641ef0f10e4fbc1f4b8c75949b0b52ece153e57e6640d7": {
+    "hash": "92c63d236bbc161c0f641ef0f10e4fbc1f4b8c75949b0b52ece153e57e6640d7",
+    "id": "dict:0412",
+    "text": "Before we check your repair workflow, let us verify the root cause of the decay in the lower oak trusses.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "633c06ad4af3e689ab199edc5e43a12e2320bb3942c3c1185e5961d06eb54f2f": {
+    "hash": "633c06ad4af3e689ab199edc5e43a12e2320bb3942c3c1185e5961d06eb54f2f",
+    "id": "dict:0416",
+    "text": "No trouble with latex or aspirin at all, though I am allergic to penicillin, so please flag that on my chart.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 7.25,
+    "size": 43724
+  },
+  "a499a6ce3000244872cbaa42189c3353d65f8713c7258b07b1872851a1452644": {
+    "hash": "a499a6ce3000244872cbaa42189c3353d65f8713c7258b07b1872851a1452644",
+    "id": "dict:0415",
+    "text": "I expected bright moonlit nights to bring heavy vocal activity there, yet the colonies went almost silent under clear skies.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.94,
+    "size": 41852
+  },
+  "1e46235fb888f544fea8bef084851f96524cc902ada4cfd20a8b5d95fbff3230": {
+    "hash": "1e46235fb888f544fea8bef084851f96524cc902ada4cfd20a8b5d95fbff3230",
+    "id": "dict:0413",
+    "text": "Coming east along Orchard Lane from the central crossroads, you will see two buildings on the northern side of the lane.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 7.25,
+    "size": 43724
+  },
+  "6243f15b74191026ef3829a46c7041d600d8bb9fd02e85afd34306f4070a7c3f": {
+    "hash": "6243f15b74191026ef3829a46c7041d600d8bb9fd02e85afd34306f4070a7c3f",
+    "id": "dict:0419",
+    "text": "Remember we handed participants a preview list of the twenty prompts while they signed the consent form?",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "2e88f0005fecc0fba155e9b85634ce372c02869c92a767429695a2def094b9d3": {
+    "hash": "2e88f0005fecc0fba155e9b85634ce372c02869c92a767429695a2def094b9d3",
+    "id": "dict:0420",
+    "text": "Ryan, in your early cost sheet you suggested slipping concealed steel girders beside the weakened oak beams.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "9adba65af650717c79f04a12e8a3a87715db2f6082de7d8ef00738ecd5a626d7": {
+    "hash": "9adba65af650717c79f04a12e8a3a87715db2f6082de7d8ef00738ecd5a626d7",
+    "id": "dict:0418",
+    "text": "Overall diversion rates beat expectations, though there was a steep drop in month two.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 4.87,
+    "size": 29468
+  },
+  "ab110f726ca710958c75090d223edf3051f1a9d835530ad10e1979bef784c10a": {
+    "hash": "ab110f726ca710958c75090d223edf3051f1a9d835530ad10e1979bef784c10a",
+    "id": "dict:0414",
+    "text": "I checked campus numbers and a single language pair would leave us way short of forty volunteers.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "39db5b2dcf60e7ff6964e7d2259e2cf228afaac2dae3d2ad90c9bc57500c1f3b": {
+    "hash": "39db5b2dcf60e7ff6964e7d2259e2cf228afaac2dae3d2ad90c9bc57500c1f3b",
+    "id": "dict:0417",
+    "text": "Now, before you use the weights room, every new member completes a forty-minute gym induction with a trainer.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.24,
+    "size": 37676
+  },
+  "2d91806f9cdcb2f299a8e6a10f18a24b8a0467c5bc3b954834065fc9210e4b7b": {
+    "hash": "2d91806f9cdcb2f299a8e6a10f18a24b8a0467c5bc3b954834065fc9210e4b7b",
+    "id": "dict:0411",
+    "text": "Applying a high-pass frequency filter during post-processing stripped out the low rumble cleanly without losing bird calls.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 5.9,
+    "size": 35660
+  },
+  "4714bcfc1175fa073c3ea9d3b5c6673963553b756c1d7e4f02731656157e8f41": {
+    "hash": "4714bcfc1175fa073c3ea9d3b5c6673963553b756c1d7e4f02731656157e8f41",
+    "id": "dict:0422",
+    "text": "Through compact limestone or hard clay, a bare arched passage could stand for centuries.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 4.87,
+    "size": 29468
+  },
+  "fa4934a263f857338df935534ef3c49e920b0902ba55f0f70b635178eb6b273c": {
+    "hash": "fa4934a263f857338df935534ef3c49e920b0902ba55f0f70b635178eb6b273c",
+    "id": "dict:0426",
+    "text": "Hand-washing stations with warm water and soap are posted beside every paddock exit, so please give your hands a quick scrub before eating.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "d9f37c27db187f861aaf68e62c79ab7c9e2a61c0187dc87e2fc6aee3953acde4": {
+    "hash": "d9f37c27db187f861aaf68e62c79ab7c9e2a61c0187dc87e2fc6aee3953acde4",
+    "id": "dict:0421",
+    "text": "Splitting each ten-minute block so we alternate as spotter and recorder solves the fatigue without hurting anything.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "3f0419893ca1463de7f8add0265c05a53e85ab89a73bb2cc75582191e7210747": {
+    "hash": "3f0419893ca1463de7f8add0265c05a53e85ab89a73bb2cc75582191e7210747",
+    "id": "dict:0428",
+    "text": "Now let us confirm the six steps on our restoration flow-chart so every term is exact.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "7eefa33afd163d90822050fc52ea7b9ff702af23de30be5f0567e658059f2b95": {
+    "hash": "7eefa33afd163d90822050fc52ea7b9ff702af23de30be5f0567e658059f2b95",
+    "id": "dict:0425",
+    "text": "From the air, a qanat resembles a line of giant ant hills marching across the desert.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "aa26c53ff2c62404b0985d9cff03db4315a1b29f8498fc193510741b00548817": {
+    "hash": "aa26c53ff2c62404b0985d9cff03db4315a1b29f8498fc193510741b00548817",
+    "id": "dict:0424",
+    "text": "We used to gather by the pier, but because of boardwalk repairs we now meet near the lighthouse at six thirty.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 7.25,
+    "size": 43724
+  },
+  "b5eac8255d6e2c5aeb1138edcce937c0b44a4f5bfe4cb61e4a6135a8ad704197": {
+    "hash": "b5eac8255d6e2c5aeb1138edcce937c0b44a4f5bfe4cb61e4a6135a8ad704197",
+    "id": "dict:0423",
+    "text": "We should pin the spliced oak exclusively with hand-turned wooden pegs for authentic strength.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "05eb7baa523c5e5e96a1879bd7919c8181fd4be3650665386aa186e897011c49": {
+    "hash": "05eb7baa523c5e5e96a1879bd7919c8181fd4be3650665386aa186e897011c49",
+    "id": "dict:0427",
+    "text": "Hey Gemma, I just finished plotting the six-month tonnage logs from our four apartment composting hubs.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "606461bed77af0d2d3d81bed4985bbcf6f93c1f0c9735d1e77a098c49c5c2114": {
+    "hash": "606461bed77af0d2d3d81bed4985bbcf6f93c1f0c9735d1e77a098c49c5c2114",
+    "id": "dict:0429",
+    "text": "oh, hang on, it is an overnight flight, so we actually land and arrive at the cottage on 19 June.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "21d7cfa0f0de7d9be89bc352cfc0340d346e77051b9453a11efd05daef8c92f1": {
+    "hash": "21d7cfa0f0de7d9be89bc352cfc0340d346e77051b9453a11efd05daef8c92f1",
+    "id": "dict:0436",
+    "text": "I initially pencilled in pulling out their ornamental grasses, since non-native tufts rarely offer pollen.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.21,
+    "size": 31484
+  },
+  "1af1b8ee2e4f16d6d36d19e10a58e50ff180729c3122393bd01d46b76c03f82a": {
+    "hash": "1af1b8ee2e4f16d6d36d19e10a58e50ff180729c3122393bd01d46b76c03f82a",
+    "id": "dict:0430",
+    "text": "So bioplastic takeaway cups and adhesive fruit stickers go at the top of our education brief.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "660356ae97420d2d0411bd19dd92258a1963f59dd06daf9d27b0b1e2b234229d": {
+    "hash": "660356ae97420d2d0411bd19dd92258a1963f59dd06daf9d27b0b1e2b234229d",
+    "id": "dict:0433",
+    "text": "To strip away flaking paint and damp moss, I wondered about sandblasting or mild chemical solvents.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "a870ed26e5bd814b3a58a5273a581297abb6cfa18efab69a739c99cc94d2cac6": {
+    "hash": "a870ed26e5bd814b3a58a5273a581297abb6cfa18efab69a739c99cc94d2cac6",
+    "id": "dict:0437",
+    "text": "Last summer it was mounted beside the front porch, though we recently moved it next to the wooden shed at the side of the driveway.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 8.62,
+    "size": 51932
+  },
+  "60f757aa52a8f27b7fe7dc02c9aa7461ad301849e089bea536e1859a3f4c823f": {
+    "hash": "60f757aa52a8f27b7fe7dc02c9aa7461ad301849e089bea536e1859a3f4c823f",
+    "id": "dict:0435",
+    "text": "You will find it tucked into the far north-western corner of the complex, directly north of the Main Swimming Pool.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "896df5ec35ca33a186f35f433d14ab5b7f87cf2c4a0e153bb6e04a0873fe255d": {
+    "hash": "896df5ec35ca33a186f35f433d14ab5b7f87cf2c4a0e153bb6e04a0873fe255d",
+    "id": "dict:0439",
+    "text": "Overall the design looks solid, though I noticed you had to discard the first batch of sediment cores.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "4a73713b8ff7e4d4e1c693e4c2b4e195c359380ba06e22985a55186941c22b00": {
+    "hash": "4a73713b8ff7e4d4e1c693e4c2b4e195c359380ba06e22985a55186941c22b00",
+    "id": "dict:0438",
+    "text": "Moving to the automated call-classifier software: are you still uneasy about trusting its species counts?",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.18,
+    "size": 31340
+  },
+  "3fec381f71cb7e3b479caf2149c42e427120979d39de43a84af55cdf888d5e1a": {
+    "hash": "3fec381f71cb7e3b479caf2149c42e427120979d39de43a84af55cdf888d5e1a",
+    "id": "dict:0431",
+    "text": "Steel would actually come in well under the county budget, and thermal expansion is easy enough to design around.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "3edbd18c18907b0673c3a55580e0f1dc4259ca14852852cbb87c03b523d2b6db": {
+    "hash": "3edbd18c18907b0673c3a55580e0f1dc4259ca14852852cbb87c03b523d2b6db",
+    "id": "dict:0432",
+    "text": "The base rate for six nights is £680, plus there is a £40 pet cleaning fee, bringing the total rental cost to £720.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "487c112c4c72ccee2bf67f51f79e38b538d48c3da69b6554deae0d36b79aa84a": {
+    "hash": "487c112c4c72ccee2bf67f51f79e38b538d48c3da69b6554deae0d36b79aa84a",
+    "id": "dict:0442",
+    "text": "Textbooks once claimed wealthy households bought pepper primarily to disguise the flavour of spoiling meat.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 5.21,
+    "size": 31484
+  },
+  "b1ed31f5dc0569fa7a163e2350a5483781c7c77d57d90d7ef8babfa7f3696537": {
+    "hash": "b1ed31f5dc0569fa7a163e2350a5483781c7c77d57d90d7ef8babfa7f3696537",
+    "id": "dict:0440",
+    "text": "Rumours at the door said the morning slot was already full, which is not true at all -- there are still plenty of benches free.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 8.64,
+    "size": 52076
+  },
+  "d4ec3efef3ce39127f8dc667c8616d5908ebdbfeb74a7ea9016ed8feeb4d302b": {
+    "hash": "d4ec3efef3ce39127f8dc667c8616d5908ebdbfeb74a7ea9016ed8feeb4d302b",
+    "id": "dict:0445",
+    "text": "Why go to the extraordinary effort of tunnelling underground rather than digging an open ditch?",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.18,
+    "size": 31340
+  },
+  "99b0d387ca6bdfd7d15a2b63b49572688366589afd212132c1862becff918b43": {
+    "hash": "99b0d387ca6bdfd7d15a2b63b49572688366589afd212132c1862becff918b43",
+    "id": "dict:0446",
+    "text": "Even an undular bore that looks deceptively glassy and calm on top conceals powerful velocity shifts underneath.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "30a718ad56e2712f951c7d6c0cf5652b365b25fb152b0b2c018308bb1da72ab2": {
+    "hash": "30a718ad56e2712f951c7d6c0cf5652b365b25fb152b0b2c018308bb1da72ab2",
+    "id": "dict:0444",
+    "text": "We should also mention why we had to relocate the microphone housings in week two.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.21,
+    "size": 31484
+  },
+  "0aaad1a45712a668980c20cbbb1741d23fb366d7bba77fcf743a6c1b8ee63669": {
+    "hash": "0aaad1a45712a668980c20cbbb1741d23fb366d7bba77fcf743a6c1b8ee63669",
+    "id": "dict:0443",
+    "text": "The severe rot sits strictly in hidden pockets where rainwater leaked around corroded iron bolts and stayed trapped inside the oak.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 7.25,
+    "size": 43724
+  },
+  "5c79bbc41fbc64e88c21266745ed0942ff062a77f92d183b3d0d7ae46af307f2": {
+    "hash": "5c79bbc41fbc64e88c21266745ed0942ff062a77f92d183b3d0d7ae46af307f2",
+    "id": "dict:0441",
+    "text": "Spectators watching a steep wall of water charge upriver often blame onshore gales for pushing the wave upright.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "7571b70f2a75683efad387558913d487c40b7ba0897dd7f53dac6ceabebf70dd": {
+    "hash": "7571b70f2a75683efad387558913d487c40b7ba0897dd7f53dac6ceabebf70dd",
+    "id": "dict:0448",
+    "text": "First, why did independent traders band together into tight-knit guilds instead of operating solo?",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "aedac12e6d72d4a4e1529577e7dbbc6d3582c1c07b102195c73442232f225b14": {
+    "hash": "aedac12e6d72d4a4e1529577e7dbbc6d3582c1c07b102195c73442232f225b14",
+    "id": "dict:0447",
+    "text": "Finally, clubs looking for match nets, lane ropes, and spare mats will use the enlarged Sports Equipment Store.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.24,
+    "size": 37676
+  },
+  "368aeaf5d187a8d921f84beb791f31ecf1f57c1ebe3a37fc59dc7a877c8389c6": {
+    "hash": "368aeaf5d187a8d921f84beb791f31ecf1f57c1ebe3a37fc59dc7a877c8389c6",
+    "id": "dict:0449",
+    "text": "I was looking at Fern Cottage, since it is right next to the stream, though we are bringing my sister's small terrier with us.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 8.28,
+    "size": 49916
+  },
+  "216b1b4b8809ab234ab0f34391d2c1d46b57c75c03abcd3b353e8f52ea3db188": {
+    "hash": "216b1b4b8809ab234ab0f34391d2c1d46b57c75c03abcd3b353e8f52ea3db188",
+    "id": "dict:0450",
+    "text": "If you look at the color palette of the deep ocean, you immediately notice a strong bias.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "f27a2c5406064df0abc140b82956823bc45f5a1e499df7fc06d5028f4602d1f3": {
+    "hash": "f27a2c5406064df0abc140b82956823bc45f5a1e499df7fc06d5028f4602d1f3",
+    "id": "dict:0434",
+    "text": "We also offer an off-peak membership, which runs from seven until four in the afternoon on weekdays, plus Sunday mornings.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.94,
+    "size": 41852
+  },
+  "b5a40228643290f5f144283995b3974e3e0ab22e444c8c600a205e4c0e64a634": {
+    "hash": "b5a40228643290f5f144283995b3974e3e0ab22e444c8c600a205e4c0e64a634",
+    "id": "dict:0451",
+    "text": "No pests at all, yet sitting two metres outside downstairs bedrooms meant warm steam drifted straight indoors on humid evenings.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.94,
+    "size": 41852
+  },
+  "2bd49129b369b29cc6bc0d69ae27edce51224718b398e74f76610f21c7d93998": {
+    "hash": "2bd49129b369b29cc6bc0d69ae27edce51224718b398e74f76610f21c7d93998",
+    "id": "dict:0454",
+    "text": "Well, I was staying in Brighton for the first fortnight, actually I just moved into a flat in Coral Cove yesterday.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 7.25,
+    "size": 43724
+  },
+  "3473518caf3e22e5053ff4a815b0765a304822d38205c81cfdf49619d1237888": {
+    "hash": "3473518caf3e22e5053ff4a815b0765a304822d38205c81cfdf49619d1237888",
+    "id": "dict:0452",
+    "text": "Tidal bores are surprisingly rare; fewer than seventy rivers worldwide produce a noticeable bore.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 4.85,
+    "size": 29324
+  },
+  "94aa5ffd2fccebfc4afa72509ee659cb09ec2ac1936606127c86fdc6849c3a90": {
+    "hash": "94aa5ffd2fccebfc4afa72509ee659cb09ec2ac1936606127c86fdc6849c3a90",
+    "id": "dict:0453",
+    "text": "We will attach compact wireless strain gauges along the central chords so our lab can log continuous structural movement remotely.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "f88434e4d02651688131fd8ccf918ba8f0344ebd2723d036f19bc237448eedb3": {
+    "hash": "f88434e4d02651688131fd8ccf918ba8f0344ebd2723d036f19bc237448eedb3",
+    "id": "dict:0456",
+    "text": "Benches are provided inside every gallery if you would like a rest, and our gallery stewards are always happy to share extra stories about the ships.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 8.95,
+    "size": 53948
+  },
+  "8be11913e0ef97a4c35e80da02dc08d83c17d1b3c23a68b87d37774d6a5db038": {
+    "hash": "8be11913e0ef97a4c35e80da02dc08d83c17d1b3c23a68b87d37774d6a5db038",
+    "id": "dict:0458",
+    "text": "Now, for density separation in the lab, I see you switched from ordinary sodium chloride brine to sodium iodide.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 6.55,
+    "size": 39548
+  },
+  "68dee57e599c238fe0369360b53b51c6233c9466fbfdeb76a78be8ad83ae4a6d": {
+    "hash": "68dee57e599c238fe0369360b53b51c6233c9466fbfdeb76a78be8ad83ae4a6d",
+    "id": "dict:0457",
+    "text": "Enjoy the fragrance of the kauri forest, and do come back to the desk if you have any questions about our native plants.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 7.92,
+    "size": 47756
+  },
+  "ad2ca02cfd223fe9c56bdee6033c3a6f752cf49c0266e6873981556374bcf46f": {
+    "hash": "ad2ca02cfd223fe9c56bdee6033c3a6f752cf49c0266e6873981556374bcf46f",
+    "id": "dict:0460",
+    "text": "Walking straight west from the East Entrance takes you down the wide Central Concourse towards the Main Swimming Pool on the western side.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "349874ac5cb9badfb20e028fce2a7619d18993cd0b9cd3f0fe1e11af3b098e19": {
+    "hash": "349874ac5cb9badfb20e028fce2a7619d18993cd0b9cd3f0fe1e11af3b098e19",
+    "id": "dict:0461",
+    "text": "Yes, for our safeguarding check you must bring one valid photo ID, such as a driving licence or a passport.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "968a1bf0617051ed14cb5d2a1a6276948dbf9f9c7a131614fde3635364e706e0": {
+    "hash": "968a1bf0617051ed14cb5d2a1a6276948dbf9f9c7a131614fde3635364e706e0",
+    "id": "dict:0459",
+    "text": "Turn left along the West Corridor and you will find it filling the large corner room in the far south-west of the building.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 7.92,
+    "size": 47756
+  },
+  "2b89d312ebc04a8e0db36360d623a0d8f4798734d17d9aa079324f35c7e21387": {
+    "hash": "2b89d312ebc04a8e0db36360d623a0d8f4798734d17d9aa079324f35c7e21387",
+    "id": "dict:0455",
+    "text": "What drags the chapter down is the opening three pages retelling the post-war history of plastic manufacturing.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "14ffdd21bfac6a6cfcb3d484753d5754e111709294520aec58d14df6186f08f6": {
+    "hash": "14ffdd21bfac6a6cfcb3d484753d5754e111709294520aec58d14df6186f08f6",
+    "id": "dict:0462",
+    "text": "Also, if you have brought a tripod, it may only be set up once reception has issued you a written permission slip.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 7.58,
+    "size": 45740
+  },
+  "bcafa55acf4e127a46a170a9a4e730eaafb92f5b1357734effe909b398e9d73d": {
+    "hash": "bcafa55acf4e127a46a170a9a4e730eaafb92f5b1357734effe909b398e9d73d",
+    "id": "dict:0463",
+    "text": "Locally, people guessed we rebuilt it so fishing crews could get deeper boat access, or that officers wanted to raise salt levels in the lagoon.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 8.62,
+    "size": 51932
+  },
+  "b5ed7d020fc4919365badcbec7efc74356f0c0d308006ae0ab0516a426dfcf20": {
+    "hash": "b5ed7d020fc4919365badcbec7efc74356f0c0d308006ae0ab0516a426dfcf20",
+    "id": "dict:0469",
+    "text": "Your best bet is the multistorey car park just across the footbridge, because we validate tickets at reception for two free hours.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 7.58,
+    "size": 45740
+  },
+  "8c9e2080a1024dc98f02dd62fd333d013f125fa01e4c6c4a66f590ccfeac9b8e": {
+    "hash": "8c9e2080a1024dc98f02dd62fd333d013f125fa01e4c6c4a66f590ccfeac9b8e",
+    "id": "dict:0473",
+    "text": "Now, we run two evening courses for beginners: hand-building sculptures, and wheel throwing for functional bowls and mugs.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "aeb26f7fcb558128289af49d085750edfb14bc88dd2db8385fb7076702e306b3": {
+    "hash": "aeb26f7fcb558128289af49d085750edfb14bc88dd2db8385fb7076702e306b3",
+    "id": "dict:0470",
+    "text": "Fourth is the twenty-minute vocabulary proficiency test you suggested adding to verify bilingual balance.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 4.87,
+    "size": 29468
+  },
+  "7aff1935eee693b8b3fcfd507a02b565922980d0d9513dc2a74136939315ce88": {
+    "hash": "7aff1935eee693b8b3fcfd507a02b565922980d0d9513dc2a74136939315ce88",
+    "id": "dict:0465",
+    "text": "Stretching directly north ahead of you is the wide Central Atrium, leading towards the huge Steam Tugboat Hall at the northern end of the museum.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 8.62,
+    "size": 51932
+  },
+  "64ef7b5e19eae8a4b2ad65bab528a4014b7d1a504853e910399bea9016801f4a": {
+    "hash": "64ef7b5e19eae8a4b2ad65bab528a4014b7d1a504853e910399bea9016801f4a",
+    "id": "dict:0472",
+    "text": "Now let's run through five special open-day workshops happening today, so you know what to expect before you sign up at the studio doors.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 8.28,
+    "size": 49916
+  },
+  "87ecfe732a5057d6fcf67fe03d9be03e4d6d40bb81bbd0345fbd07ac38b74302": {
+    "hash": "87ecfe732a5057d6fcf67fe03d9be03e4d6d40bb81bbd0345fbd07ac38b74302",
+    "id": "dict:0468",
+    "text": "You do not have to pay any materials deposit today because our local ceramics supplier is sponsoring all the clay and firing.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 7.61,
+    "size": 45884
+  },
+  "1b8a86908939cb959d1db398e98fda274725e447ce62821dc1aec4fd067998b7": {
+    "hash": "1b8a86908939cb959d1db398e98fda274725e447ce62821dc1aec4fd067998b7",
+    "id": "dict:0467",
+    "text": "Work began with sinking a trial well high up the alluvial fan until miners struck a reliable aquifer.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "23096abbe443569fd6ddf5e170b31a399f381bb1b710dafc9489d952087a25a5": {
+    "hash": "23096abbe443569fd6ddf5e170b31a399f381bb1b710dafc9489d952087a25a5",
+    "id": "dict:0466",
+    "text": "The Saturday hill riders stop at a kiosk in the botanical park, while our Sunday coastal group now goes to a bakery near the marina.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 8.64,
+    "size": 52076
+  },
+  "4982c95d322d26d9c09ceac9f07e344585250753a4d8447145e71ea3436babe9": {
+    "hash": "4982c95d322d26d9c09ceac9f07e344585250753a4d8447145e71ea3436babe9",
+    "id": "dict:0464",
+    "text": "Next, a quick medical question: do you have any known allergies, such as latex or aspirin?",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "b8f9c2310655ffb1a0ee8ab99009ea5271602f208353a7832ebe0b6d7b5024e0": {
+    "hash": "b8f9c2310655ffb1a0ee8ab99009ea5271602f208353a7832ebe0b6d7b5024e0",
+    "id": "dict:0471",
+    "text": "Historically, mariners regarded strong bores as a serious hazard capable of capsizing anchored barges.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 4.87,
+    "size": 29468
+  },
+  "8fb3fe082a5da324702adc7fd12a53530d47047fd8bfefb9f1a54991600dc5fc": {
+    "hash": "8fb3fe082a5da324702adc7fd12a53530d47047fd8bfefb9f1a54991600dc5fc",
+    "id": "dict:0481",
+    "text": "Right, those glossy plastic labels peel off banana skins and apples and slip straight through the screening mesh into the finished soil.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 7.58,
+    "size": 45740
+  },
+  "ee4e5a24066f01f3574ad52a2cdaf830aab5f824eddcbe04334287bf36c08ca5": {
+    "hash": "ee4e5a24066f01f3574ad52a2cdaf830aab5f824eddcbe04334287bf36c08ca5",
+    "id": "dict:0480",
+    "text": "Now let us look at what our four pilot volunteers taught us about the procedure itself.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "d61283e9a6398b95ebee600da1cd588b8d6a9b545283118eadabd1c09dfac2bf": {
+    "hash": "d61283e9a6398b95ebee600da1cd588b8d6a9b545283118eadabd1c09dfac2bf",
+    "id": "dict:0477",
+    "text": "Early drafts proposed splitting one court into smaller meeting rooms, and some people feared our advance booking window might shrink to three days.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "dcd793785627087e27f0bf8d840ef114968ebad3d9e95ae3d3da6dadc5fdb8c3": {
+    "hash": "dcd793785627087e27f0bf8d840ef114968ebad3d9e95ae3d3da6dadc5fdb8c3",
+    "id": "dict:0474",
+    "text": "Understanding this tension between cooperation and fungal self-interest has become a central theme in modern plant ecology.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 175.0,
+    "duration": 5.9,
+    "size": 35660
+  },
+  "efa898f43a1e952246a35fe2ecca88e771852df258838500122b4149df25b2cc": {
+    "hash": "efa898f43a1e952246a35fe2ecca88e771852df258838500122b4149df25b2cc",
+    "id": "dict:0476",
+    "text": "And using pre-recorded neutral audio prompts ensured my accent never nudged anyone toward a particular language.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.57,
+    "size": 33644
+  },
+  "acfb968ee595d716765c1dfaa28f7cd648379e38e1e9872809ebe45384c8cf30": {
+    "hash": "acfb968ee595d716765c1dfaa28f7cd648379e38e1e9872809ebe45384c8cf30",
+    "id": "dict:0478",
+    "text": "I did, until I checked our afternoon logs and saw hoverflies sheltering under those exact leaves during midday heat.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "3bdf0ad30b803b4a7e3870b3b5fb9a8fc7792b87a7f6c67c626631db1bbe2b34": {
+    "hash": "3bdf0ad30b803b4a7e3870b3b5fb9a8fc7792b87a7f6c67c626631db1bbe2b34",
+    "id": "dict:0482",
+    "text": "The Outdoor Classroom is the pavilion just north of the eastern tip of the Cross Trail, directly south of the eastern end of the Tidal Lagoon.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 175.0,
+    "duration": 8.98,
+    "size": 54092
+  },
+  "5592e3cc78f4e77e1698484e8305288b20890d6d7ec677a56ccbcd79e4df7073": {
+    "hash": "5592e3cc78f4e77e1698484e8305288b20890d6d7ec677a56ccbcd79e4df7073",
+    "id": "dict:0475",
+    "text": "Also, if the kids are asking about a miniature steam railway, that actually belongs to the tourist park two valleys over, not us.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "65ed1b1817ec9981c71682b90157e3accc51c35e7867f2f2aeb28910c27ca9aa": {
+    "hash": "65ed1b1817ec9981c71682b90157e3accc51c35e7867f2f2aeb28910c27ca9aa",
+    "id": "dict:0479",
+    "text": "Most outdoor distractions, such as wind rustle and distant crowd murmur, sit in the low-frequency band.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "d84700aa1452a6d5c8a86c26f1a964a92f188a3d1acb53913fbf56cf35d22a57": {
+    "hash": "d84700aa1452a6d5c8a86c26f1a964a92f188a3d1acb53913fbf56cf35d22a57",
+    "id": "dict:0485",
+    "text": "Several members worried it would stay shut until late autumn for roof repairs, though our roof was actually sealed last year and is completely watertight.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 8.62,
+    "size": 51932
+  },
+  "08d382eb97a17aa0c150892356c261ff63c3f775422be3fa0be9507f09ce6def": {
+    "hash": "08d382eb97a17aa0c150892356c261ff63c3f775422be3fa0be9507f09ce6def",
+    "id": "dict:0492",
+    "text": "It certainly is not cheap, and it does nothing to digest plant litter on its own since we still need peroxide for that.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 7.92,
+    "size": 47756
+  },
+  "6c33a6119ffc88a33695641e488a57b17a09b5080fa77b9d75f9de13416d929b": {
+    "hash": "6c33a6119ffc88a33695641e488a57b17a09b5080fa77b9d75f9de13416d929b",
+    "id": "dict:0484",
+    "text": "In earlier guidebooks it was notorious for slippery clay slopes that demanded heavy hiking boots, which put quite a few families off.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 175.0,
+    "duration": 7.58,
+    "size": 45740
+  },
+  "6d917f46863f030a8579a6702b40ecc1679f22a7cb5494b80330238cc907e40d": {
+    "hash": "6d917f46863f030a8579a6702b40ecc1679f22a7cb5494b80330238cc907e40d",
+    "id": "dict:0486",
+    "text": "What the clinic roof really lacks is moisture on that dark gravel, so placing shallow water trays filled with pebbles will help far more.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 8.28,
+    "size": 49916
+  },
+  "3e00c444b998e85758208e0cf82168d41174209e5922503cf3435c12af589728": {
+    "hash": "3e00c444b998e85758208e0cf82168d41174209e5922503cf3435c12af589728",
+    "id": "dict:0489",
+    "text": "Because our grounds cover nearly forty hectares of terraced hillside, let's begin with your garden map so you can find the main collections without losing your bearings.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 175.0,
+    "duration": 9.31,
+    "size": 56108
+  },
+  "bbe24251a5ededaa8e5587165f645e842b5e618a16425e171f1a793d008133a3": {
+    "hash": "bbe24251a5ededaa8e5587165f645e842b5e618a16425e171f1a793d008133a3",
+    "id": "dict:0488",
+    "text": "Actually, the county replaced those floorboards ten years ago so there is zero beetle activity, and frost cracking is superficial.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "d2d6e8295740bcea7301e9456be7e1e2722d3ef8ff3110e58cef07c9c14ec89d": {
+    "hash": "d2d6e8295740bcea7301e9456be7e1e2722d3ef8ff3110e58cef07c9c14ec89d",
+    "id": "dict:0490",
+    "text": "Before you explore our galleries, let me share a bit of the building's history, today's visitor notes, and our ground-floor plan.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 175.0,
+    "duration": 7.25,
+    "size": 43724
+  },
+  "0a64a4443a78d678c4d2193f344fd2098603127c5c8d7d17656f880e28c6259d": {
+    "hash": "0a64a4443a78d678c4d2193f344fd2098603127c5c8d7d17656f880e28c6259d",
+    "id": "dict:0483",
+    "text": "Their headache was autumn rain soaking the open sacks of sawdust and dry leaves, leaving volunteers with soggy bedding.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "956d4fdcca1e7ce7a5b48a470441da3dfdb128ac39933f9838e43caae4e4e710": {
+    "hash": "956d4fdcca1e7ce7a5b48a470441da3dfdb128ac39933f9838e43caae4e4e710",
+    "id": "dict:0487",
+    "text": "Yes, there is a small bakery in the village that shuts on Monday, and a wonderful local farm shop half a mile down the lane.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 8.62,
+    "size": 51932
+  },
+  "2ade027d5feeed5f759282240ee7914a4fe43cc5384fb69e2e6516c3730fd2f4": {
+    "hash": "2ade027d5feeed5f759282240ee7914a4fe43cc5384fb69e2e6516c3730fd2f4",
+    "id": "dict:0497",
+    "text": "The council already closed pedestrian access last autumn, and pouring river concrete is unnecessary unless the piers show movement.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "4bc748ded644b3bc7532b9513cd7d192cae442571812c2233b6aa22fd5f59e46": {
+    "hash": "4bc748ded644b3bc7532b9513cd7d192cae442571812c2233b6aa22fd5f59e46",
+    "id": "dict:0495",
+    "text": "Let us run through our six remaining experimental components and confirm our final decision for each.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "64d1ef462f872d14072af5bf431ae896d53f67dd7c57d331a99a8b686c98475f": {
+    "hash": "64d1ef462f872d14072af5bf431ae896d53f67dd7c57d331a99a8b686c98475f",
+    "id": "dict:0491",
+    "text": "For annual membership, our full package with a club jersey is $110, or standard annual membership without the jersey is $85.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 175.0,
+    "duration": 7.27,
+    "size": 43868
+  },
+  "35fe2cd668366a14ece77912f350d9ee0b83959e4836c940c86649e79eb66192": {
+    "hash": "35fe2cd668366a14ece77912f350d9ee0b83959e4836c940c86649e79eb66192",
+    "id": "dict:0500",
+    "text": "Hydrologists divide tidal bores into two main forms depending on the ratio of wave speed to channel depth.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "08b659b886a28b183b6adabbc313433f50f77509a167f849527355ab06410c31": {
+    "hash": "08b659b886a28b183b6adabbc313433f50f77509a167f849527355ab06410c31",
+    "id": "dict:0494",
+    "text": "Before our seminar presentation on Thursday, let us make sure we explain our technical choices clearly.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 175.0,
+    "duration": 5.54,
+    "size": 33500
+  },
+  "4153937c1a17cfcf512b28b79f4bda7032518fc140e7f925b10e2d72591d5cbf": {
+    "hash": "4153937c1a17cfcf512b28b79f4bda7032518fc140e7f925b10e2d72591d5cbf",
+    "id": "dict:0499",
+    "text": "We will leave it there for today, and next week we will examine hydrothermal vent communities.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.52,
+    "size": 33356
+  },
+  "a4ccac8e4ebcbc52f4a043a6787986528b44bff5405a1e90d8f7997dfccaf390": {
+    "hash": "a4ccac8e4ebcbc52f4a043a6787986528b44bff5405a1e90d8f7997dfccaf390",
+    "id": "dict:0501",
+    "text": "Immediately on your right, on the eastern side of the boardwalk right against the western edge of the Tidal Lagoon, sits the Main Bird Hide.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "023f9733fec1e68997fc89d2113129e5d8ae66c3711d303b82d65577e9c6d541": {
+    "hash": "023f9733fec1e68997fc89d2113129e5d8ae66c3711d303b82d65577e9c6d541",
+    "id": "dict:0496",
+    "text": "Plus, recent memory-congruence papers show that current active fluency matters much more than acquiring both tongues before age ten.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.58,
+    "size": 39692
+  },
+  "ead872fbfd58dff2f6abf90a014dcf8841caa1366465c2e46de03849480cfff6": {
+    "hash": "ead872fbfd58dff2f6abf90a014dcf8841caa1366465c2e46de03849480cfff6",
+    "id": "dict:0493",
+    "text": "We initially logged particles per litre of wet sediment, because measuring volume in the boat was fast.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 5.88,
+    "size": 35516
+  },
+  "15de9a9784df82abbe9118b64834de2a57491d5903a181f30aa4b32a592d775a": {
+    "hash": "15de9a9784df82abbe9118b64834de2a57491d5903a181f30aa4b32a592d775a",
+    "id": "dict:0498",
+    "text": "The quiet Physiotherapy Clinic is located there, south of the Central Concourse and well east of the Main Swimming Pool.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 175.0,
+    "duration": 6.91,
+    "size": 41708
+  },
+  "3c42c9e579d680f1ebe25aebc7277cd6527311e8f071761be83f801d3959bc00": {
+    "hash": "3c42c9e579d680f1ebe25aebc7277cd6527311e8f071761be83f801d3959bc00",
+    "id": "dict:0510",
+    "text": "Looking ahead, climate-driven sea-level rise and shifting river discharge will inevitably reshape where and when bores occur.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 5.45,
+    "size": 32924
+  },
+  "9da0711554ab861318c761afc58aaea4b37f5738abc6f72efea6f9e723b0205a": {
+    "hash": "9da0711554ab861318c761afc58aaea4b37f5738abc6f72efea6f9e723b0205a",
+    "id": "dict:0511",
+    "text": "To understand why northern conifers depend so heavily on fungal partners, consider the harshness of boreal soil.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 5.42,
+    "size": 32780
+  },
+  "83432f5f79a2505201180fb88e65f892edba1c86035134f6e671fedd345781a6": {
+    "hash": "83432f5f79a2505201180fb88e65f892edba1c86035134f6e671fedd345781a6",
+    "id": "dict:0508",
+    "text": "Everyone already knew from ground photos that the roof had lost cedar shingles, and we worried the north stone abutment was sinking into the clay bank.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "372268bfbf7e33a9286eddafbf7e9729a17e3a377051617c6a66b60d05b78c83": {
+    "hash": "372268bfbf7e33a9286eddafbf7e9729a17e3a377051617c6a66b60d05b78c83",
+    "id": "dict:0504",
+    "text": "You will pass a low timber building in the south-eastern corner of the arboretum near the avenue, though that is just our volunteers' potting shed.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "985a06d8d6971c47001120e0ec68bcf43297db64d9c0e28806e2e7f0b9366d62": {
+    "hash": "985a06d8d6971c47001120e0ec68bcf43297db64d9c0e28806e2e7f0b9366d62",
+    "id": "dict:0502",
+    "text": "Once the stream reached the village outlet, access was strictly regulated rather than open to whoever arrived first.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 5.76,
+    "size": 34796
+  },
+  "ea9ce0de998043bbc72d5f828f10c870831e175ed0d2b08d8e06264d6d7c2ed9": {
+    "hash": "ea9ce0de998043bbc72d5f828f10c870831e175ed0d2b08d8e06264d6d7c2ed9",
+    "id": "dict:0505",
+    "text": "You will pass a medium-sized room close to the Central Atrium, which is our glass-walled conservation lab and closed to the public.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.01,
+    "size": 42284
+  },
+  "a3a0a3609f5aa141ab47fe5408cfed558db154a42778fce7eba5ee26addcf83c": {
+    "hash": "a3a0a3609f5aa141ab47fe5408cfed558db154a42778fce7eba5ee26addcf83c",
+    "id": "dict:0506",
+    "text": "You will pass a small timber shed near the north-eastern side of the meadow close to the Main Boardwalk, which is locked for reed-cutting tools.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "1d8b3443d29c7f373e7d14b1c4b8bc9aa72d566182e564e1f215a2351306adc1": {
+    "hash": "1d8b3443d29c7f373e7d14b1c4b8bc9aa72d566182e564e1f215a2351306adc1",
+    "id": "dict:0507",
+    "text": "Detailed coastal charts marking seasonal currents and safe anchorages were locked in guarded strongrooms and handed only to sworn shipmasters.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "f871f0535a2d6907415f05f7314e07f56f4a9f6cb636848a9203f156486f54da": {
+    "hash": "f871f0535a2d6907415f05f7314e07f56f4a9f6cb636848a9203f156486f54da",
+    "id": "dict:0509",
+    "text": "Instead, builders tapped deep gravel aquifers along mountain foothills that are recharged each spring by seasonal snowmelt.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 5.45,
+    "size": 32924
+  },
+  "ed793b2afa7a31318df8473c06b7b375afd9af5c6900dd2de54c75778c5c7f2a": {
+    "hash": "ed793b2afa7a31318df8473c06b7b375afd9af5c6900dd2de54c75778c5c7f2a",
+    "id": "dict:0503",
+    "text": "Our sealed coach car park is still waiting on shire council approval for next spring, and the proposed indoor riverfront cafe is still only on the drawing board.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 8.88,
+    "size": 53516
+  },
+  "2be556c4261681724c1d20860f1589027a7cc807d445895467858f284d07ab87": {
+    "hash": "2be556c4261681724c1d20860f1589027a7cc807d445895467858f284d07ab87",
+    "id": "dict:0517",
+    "text": "Obviously the temperature logger charts stay, and the bed photographs can sit neatly in the appendix.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 5.11,
+    "size": 30908
+  },
+  "4dcb51c78423bc1cfae6bfd7f99353f84f767a82901670a276db0f932211df96": {
+    "hash": "4dcb51c78423bc1cfae6bfd7f99353f84f767a82901670a276db0f932211df96",
+    "id": "dict:0513",
+    "text": "At first glance, permanent agriculture seems impossible on dry upland plains where rivers vanish for most of the year.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "fe5b6868c2c82821cc7914140cb1bb822c3f7cd35c8f004cb551627a27af3343": {
+    "hash": "fe5b6868c2c82821cc7914140cb1bb822c3f7cd35c8f004cb551627a27af3343",
+    "id": "dict:0516",
+    "text": "In scorching, wind-swept climates, surface canals can lose well over half their volume to dry air.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 5.11,
+    "size": 30908
+  },
+  "84fb9b8075e1b075170de9fdff1c5f143a3f65f3b7144f41e64db745de752838": {
+    "hash": "84fb9b8075e1b075170de9fdff1c5f143a3f65f3b7144f41e64db745de752838",
+    "id": "dict:0521",
+    "text": "During the wet winter months we handed out blue disposable plastic overshoes at the paddock gate, though we stopped doing that last month once the paths dried out.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 8.88,
+    "size": 53516
+  },
+  "3945abbd79ae6cf5ec9f50e97d66bccb9dea9adc0562ae9c99d8f2f81dbaeaec": {
+    "hash": "3945abbd79ae6cf5ec9f50e97d66bccb9dea9adc0562ae9c99d8f2f81dbaeaec",
+    "id": "dict:0514",
+    "text": "Hands-on demonstrations showing tenants how to layer wet kitchen peelings with dry shredded paper fixed the smell almost overnight.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "fb1bce201e25c1063c075b6b2a787b9e05b89c48be4d70fe0e95662d12ad6714": {
+    "hash": "fb1bce201e25c1063c075b6b2a787b9e05b89c48be4d70fe0e95662d12ad6714",
+    "id": "dict:0512",
+    "text": "When we inspected the control blanks, we found bright blue synthetic threads shed from our own fleece jackets during coring.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "ac40fd6384309f268116737c2ce7d256b015d3f46fdf2108a83aad0aa8c64242": {
+    "hash": "ac40fd6384309f268116737c2ce7d256b015d3f46fdf2108a83aad0aa8c64242",
+    "id": "dict:0520",
+    "text": "What makes today's class special is that it is taught by guest maker Nadia Kovacs, a visiting glass artist who travelled down from Portland just for our open day.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 9.22,
+    "size": 55532
+  },
+  "a2a3c4ab4b233421961661320e30836489c9f09cbb9028466888f2e9f7fe6315": {
+    "hash": "a2a3c4ab4b233421961661320e30836489c9f09cbb9028466888f2e9f7fe6315",
+    "id": "dict:0518",
+    "text": "The Heritage Rose Pergola sits there, roughly midway between the compost yard and the Garden Bookshop, well south of Kauri Avenue and east of the bookshop.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 8.28,
+    "size": 49916
+  },
+  "d4c65bce24d35dc5c8957302a20a92c3c7632ab6f5f967f89da0cabbe0f34db1": {
+    "hash": "d4c65bce24d35dc5c8957302a20a92c3c7632ab6f5f967f89da0cabbe0f34db1",
+    "id": "dict:0515",
+    "text": "Hardly anyone read the laminated posters listing forbidden foods, and only the four site captains ever bothered using the long probe thermometers.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.03,
+    "size": 42428
+  },
+  "79865b392499ac5233de54d5449f0cf3f167df40abd74ba6b9d150b9ade4a6e2": {
+    "hash": "79865b392499ac5233de54d5449f0cf3f167df40abd74ba6b9d150b9ade4a6e2",
+    "id": "dict:0519",
+    "text": "Tuition is $210, and then there is a mandatory $35 charge that covers your stoneware clay and all kiln firings, so the total comes to $245.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 8.28,
+    "size": 49916
+  },
+  "ae939ed655ea29a72a92f0607caa5b9e12c4789baa9e578b45a8ab9a7372e110": {
+    "hash": "ae939ed655ea29a72a92f0607caa5b9e12c4789baa9e578b45a8ab9a7372e110",
+    "id": "dict:0524",
+    "text": "Note that the building sitting out in the far south-eastern corner near Gumtree Lane is our private veterinary clinic, so do not walk all the way over there.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 8.9,
+    "size": 53660
+  },
+  "183e050e7210e369a4ca5892fa3d07fd7b03267f707c528c79cc69b60b16c1d2": {
+    "hash": "183e050e7210e369a4ca5892fa3d07fd7b03267f707c528c79cc69b60b16c1d2",
+    "id": "dict:0531",
+    "text": "I originally thought hand-building might be easier, though honestly I really want to make coffee mugs and soup bowls, so let me sign up for wheel throwing.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 8.57,
+    "size": 51644
+  },
+  "6a5627aa296cc28b79756c3a60fd72aa375dc143c7db04e4a7a7690350dda762": {
+    "hash": "6a5627aa296cc28b79756c3a60fd72aa375dc143c7db04e4a7a7690350dda762",
+    "id": "dict:0529",
+    "text": "At first I thought strong gusts up there would knock the flower stems flat, and we briefly wondered if the council would charge a roof-access fee.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "ced3d9210cc6c262b60a36d808818db4d876cd99acff5a00716294a1606d1e96": {
+    "hash": "ced3d9210cc6c262b60a36d808818db4d876cd99acff5a00716294a1606d1e96",
+    "id": "dict:0522",
+    "text": "Early economic historians guessed that damp holds and shipboard rodents ruined roughly 50 percent of every spice consignment.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 5.74,
+    "size": 34652
+  },
+  "968f2997bcd2563366a3a1110145c5f02d0eb9f6b160255dd615b74241fe6e4d": {
+    "hash": "968f2997bcd2563366a3a1110145c5f02d0eb9f6b160255dd615b74241fe6e4d",
+    "id": "dict:0526",
+    "text": "Now, for phase two, one councillor asked why we do not buy an electric in-vessel composter instead of wooden timber bays.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.7,
+    "size": 40412
+  },
+  "b310f6cbc9ca85618e5e4b61be4a3fe8dff5998492f64f57c4aade4aad45b3ef": {
+    "hash": "b310f6cbc9ca85618e5e4b61be4a3fe8dff5998492f64f57c4aade4aad45b3ef",
+    "id": "dict:0528",
+    "text": "You are also completely welcome to hop off the tractor trailer and stroll the gravel footpaths on foot, and leaning gently on the timber fence rails is fine.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 8.88,
+    "size": 53516
+  },
+  "0ddb8da56a4b0950220fb9da710e81204b473c6c4044397fd606e22ac3016327": {
+    "hash": "0ddb8da56a4b0950220fb9da710e81204b473c6c4044397fd606e22ac3016327",
+    "id": "dict:0530",
+    "text": "For a long time, historians assumed those steep steps existed purely so everyone could see over the person in front.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "d7c91590043d7b92d68756c6f07bf9a5c8c9892f8fbefa95804fd5733d65d856": {
+    "hash": "d7c91590043d7b92d68756c6f07bf9a5c8c9892f8fbefa95804fd5733d65d856",
+    "id": "dict:0525",
+    "text": "Now, about our counting protocol for the rest of the summer: we still have observer fatigue during those long twenty-minute watches.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.7,
+    "size": 40412
+  },
+  "e343af45fb76e012fc61b7710cb994be62302c6a12a30b8a863e6760bd5f617b": {
+    "hash": "e343af45fb76e012fc61b7710cb994be62302c6a12a30b8a863e6760bd5f617b",
+    "id": "dict:0527",
+    "text": "The one closer to the Farm Track on the north-eastern side of the orchard is our beekeeping enclosure, which is closed for hive maintenance today.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "83e84668b1bf24ed69fde936f4a36bd047cfd7ceffa276d1e94b90146a14953c": {
+    "hash": "83e84668b1bf24ed69fde936f4a36bd047cfd7ceffa276d1e94b90146a14953c",
+    "id": "dict:0523",
+    "text": "I did wonder about switching to yellow pan traps filled with soapy water so we would not miss fast-moving insects, though you seemed hesitant.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 7.63,
+    "size": 46028
+  },
+  "4b99c8d10c56c2fc8c6d6c9012cca65580f1ae6bafe9dd8858869af911ef79d2": {
+    "hash": "4b99c8d10c56c2fc8c6d6c9012cca65580f1ae6bafe9dd8858869af911ef79d2",
+    "id": "dict:0532",
+    "text": "It occupies the matching large corner room in the far north-east, directly east of the Steam Tugboat Hall and north of the East Corridor.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.63,
+    "size": 46028
+  },
+  "0ba872223c3ef17cdb186bd5dce5fe072e8ed11e7e3cecb3f6d83bc8983e9d03": {
+    "hash": "0ba872223c3ef17cdb186bd5dce5fe072e8ed11e7e3cecb3f6d83bc8983e9d03",
+    "id": "dict:0540",
+    "text": "The Blacksmith's Forge is the building closer to the Farm Track on the northern side of Orchard Lane, sitting south-west of Redgum Dam and south of the Shearing Pavilion.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 9.22,
+    "size": 55532
+  },
+  "53b4f57bc54100304ee212a8855057895fdc4f980682b02178b2629b368bf3f0": {
+    "hash": "53b4f57bc54100304ee212a8855057895fdc4f980682b02178b2629b368bf3f0",
+    "id": "dict:0534",
+    "text": "At first we suspected our salinity probe had drifted out of calibration, or that someone had packed the jars in plastic bags instead of foil.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "5139f08eee0d341b5b9124f8f74f4e95223486dd45c8491a4f103573027524bc": {
+    "hash": "5139f08eee0d341b5b9124f8f74f4e95223486dd45c8491a4f103573027524bc",
+    "id": "dict:0536",
+    "text": "Instead, members submitted grievances to an internal merchant council empowered to issue binding settlements within days.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "b113da5781db4e17a13200493b22ba29e2daea7b07046c25afc740ac54c4cdb2": {
+    "hash": "b113da5781db4e17a13200493b22ba29e2daea7b07046c25afc740ac54c4cdb2",
+    "id": "dict:0541",
+    "text": "Their true dual role was hoisting out excavated rock and maintaining steady ventilation for crews working far below ground.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.05,
+    "size": 36524
+  },
+  "6e6adb8b7b40760002c531c7a89ee12706d9daa32e7c65667d1abcc50a52c05a": {
+    "hash": "6e6adb8b7b40760002c531c7a89ee12706d9daa32e7c65667d1abcc50a52c05a",
+    "id": "dict:0533",
+    "text": "What genuinely surprised us in the three-dimensional point cloud was discovering that the central span had twisted slightly sideways over the last century.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "11ce39dc7e4fb7803df47ce4b9b48ea1be9fcb6ebca183be06f28b7d6afc1302": {
+    "hash": "11ce39dc7e4fb7803df47ce4b9b48ea1be9fcb6ebca183be06f28b7d6afc1302",
+    "id": "dict:0538",
+    "text": "Oven-dry every core first and express your figures per kilogram of dry mass instead; otherwise your spatial comparisons will not hold up.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 6.98,
+    "size": 42140
+  },
+  "f619e929b46a96d2546f029785f6a5bc47722b600b4476c70e4b3968fc5fbfc4": {
+    "hash": "f619e929b46a96d2546f029785f6a5bc47722b600b4476c70e4b3968fc5fbfc4",
+    "id": "dict:0537",
+    "text": "Our comprehensive package with a full hygienist polish is £95, while the standard new-patient check-up including digital X-rays is £65.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "f7eb120ff32f4b354f73e7214a21615d8f2a3e1ec0f89693857ed6b9086ab1ef": {
+    "hash": "f7eb120ff32f4b354f73e7214a21615d8f2a3e1ec0f89693857ed6b9086ab1ef",
+    "id": "dict:0539",
+    "text": "Right, let us go through our five active rooftops and confirm the single main management recommendation we are giving each building manager.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 7.01,
+    "size": 42284
+  },
+  "d0d6b94daa6d53520de6f8ee5a56ba7374608ec385dde09da728aa0ac242565e": {
+    "hash": "d0d6b94daa6d53520de6f8ee5a56ba7374608ec385dde09da728aa0ac242565e",
+    "id": "dict:0535",
+    "text": "For decades, biologists relied on heavy trawl nets that shredded fragile gelatinous animals before they ever reached the deck.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "93b7ce1413734df145e76b8553b6f9ace068124b5f2a7969851ade96f3102593": {
+    "hash": "93b7ce1413734df145e76b8553b6f9ace068124b5f2a7969851ade96f3102593",
+    "id": "dict:0542",
+    "text": "Even with advanced robotic vehicles and delicate suction samplers, simply illuminating the target can ruin a behavioral observation.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 5.76,
+    "size": 34796
+  },
+  "50a4c2df418f3de95a7f8e2c36a7a636cd76f2586bfbe965bf5404fda251d5d2": {
+    "hash": "50a4c2df418f3de95a7f8e2c36a7a636cd76f2586bfbe965bf5404fda251d5d2",
+    "id": "dict:0548",
+    "text": "What forced us to pull out was the security clearance for the roof keys, which would not arrive until after the June blossom peak.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.61,
+    "size": 45884
+  },
+  "b47ab9bb435e8b1f587c642516b962a8f23e2420913a66f6395a3ccbd5e48e51": {
+    "hash": "b47ab9bb435e8b1f587c642516b962a8f23e2420913a66f6395a3ccbd5e48e51",
+    "id": "dict:0552",
+    "text": "No need for a utility bill since you are registering privately, and we request previous X-rays directly from your old clinic by secure email.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 7.63,
+    "size": 46028
+  },
+  "4458e0417b0db2a159d7569d3ab7ed808d071badf1699fb030c2be69961e03df": {
+    "hash": "4458e0417b0db2a159d7569d3ab7ed808d071badf1699fb030c2be69961e03df",
+    "id": "dict:0544",
+    "text": "People often assume cameras startle nesting birds or drain solar packs too fast, though modern thermal units are completely silent and run on small panels without trouble.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 8.59,
+    "size": 51788
+  },
+  "495e219044b16e5baab990c5bd58af679b3c5b1132bbc4b9d93da8d9bb363ca4": {
+    "hash": "495e219044b16e5baab990c5bd58af679b3c5b1132bbc4b9d93da8d9bb363ca4",
+    "id": "dict:0547",
+    "text": "Visitors sometimes wander over to the building in the far south-eastern corner near Coast Road, thinking it is the cafe, though that is actually our staff tractor barn.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 8.9,
+    "size": 53660
+  },
+  "991d677569075fbadd00c490cd309c96c8610de79b1e08fc814b956348536970": {
+    "hash": "991d677569075fbadd00c490cd309c96c8610de79b1e08fc814b956348536970",
+    "id": "dict:0549",
+    "text": "At first they wondered whether residents had failed to pick up their free kitchen caddies, or got confused by a change in council bin collection days.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "529bd66cd9c8081a19769e9b18acc2fa35d09f5712a6a1b981a1d64de0c8237c": {
+    "hash": "529bd66cd9c8081a19769e9b18acc2fa35d09f5712a6a1b981a1d64de0c8237c",
+    "id": "dict:0550",
+    "text": "At the molecular level, the glow occurs when a light-emitting compound called luciferin combines with dissolved oxygen.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 5.45,
+    "size": 32924
+  },
+  "7a46059c1d9fc3148c3a36b38cf6e9d94dd4fc594715bf2e5568e3ca05d6f8b8": {
+    "hash": "7a46059c1d9fc3148c3a36b38cf6e9d94dd4fc594715bf2e5568e3ca05d6f8b8",
+    "id": "dict:0543",
+    "text": "Now let us spend our last few minutes on the draft dissertation structure so you know what to revise before Friday.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.7,
+    "size": 40412
+  },
+  "53cdfd11732942fbda2bf10c89ddbd8f094b0b70ab5eb64230eb54b4f732c32b": {
+    "hash": "53cdfd11732942fbda2bf10c89ddbd8f094b0b70ab5eb64230eb54b4f732c32b",
+    "id": "dict:0545",
+    "text": "People often assume these subterranean systems collect desert rainfall, yet rainfall across such plateaus is far too sporadic to sustain towns.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.7,
+    "size": 40412
+  },
+  "51635ce1fd745f29ffeff459b3663994db2846637c25b82890b8de3b1b4b0c92": {
+    "hash": "51635ce1fd745f29ffeff459b3663994db2846637c25b82890b8de3b1b4b0c92",
+    "id": "dict:0551",
+    "text": "Let's turn now to the market mechanisms these guilds employed to protect their monopolies and stabilize returns.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 5.42,
+    "size": 32780
+  },
+  "846dd78ee998379acda567f188293da1cb95db46f39fa70815effdd675bca3c5": {
+    "hash": "846dd78ee998379acda567f188293da1cb95db46f39fa70815effdd675bca3c5",
+    "id": "dict:0546",
+    "text": "The numbers are accurate, but listing every core strictly by the calendar date you collected it forces the reader to jump back and forth.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.63,
+    "size": 46028
+  },
+  "f7e1023b56bf96d6669870225402e9e2e3f14a601f7dcffe3621c97c597a7cce": {
+    "hash": "f7e1023b56bf96d6669870225402e9e2e3f14a601f7dcffe3621c97c597a7cce",
+    "id": "dict:0561",
+    "text": "Furthermore, a large share of the most dramatic survival boosts come from controlled greenhouse pots using sterilized soil.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 5.74,
+    "size": 34652
+  },
+  "ad4a4f1a92666c48cf4e9495650d34feb225934a11817d118bcd8a1d0a82f7ce": {
+    "hash": "ad4a4f1a92666c48cf4e9495650d34feb225934a11817d118bcd8a1d0a82f7ce",
+    "id": "dict:0558",
+    "text": "The problem is those bright floodlights illuminating the bakery sign from dusk till dawn, which completely disrupts nocturnal pollinators.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "6f5c1112756388f590d4d02d511d05e52b32bd2c68bbd9c99752a98b02c2f8a6": {
+    "hash": "6f5c1112756388f590d4d02d511d05e52b32bd2c68bbd9c99752a98b02c2f8a6",
+    "id": "dict:0556",
+    "text": "In the early guild era, a heavy merchant convoy routinely needed up to 36 months to complete a round trip and settle its ledger books.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "fc78a08deee4e30cfa93a977ca7b7cf7c3a87eba303d9c0c1152ec30ee871c40": {
+    "hash": "fc78a08deee4e30cfa93a977ca7b7cf7c3a87eba303d9c0c1152ec30ee871c40",
+    "id": "dict:0560",
+    "text": "For decades, climate modellers assumed decaying surface needles accounted for almost all boreal soil carbon.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 4.8,
+    "size": 29036
+  },
+  "96ce8ef52abb9f1db38dac457964f892cffcf4089a81aa1567bbc06416434113": {
+    "hash": "96ce8ef52abb9f1db38dac457964f892cffcf4089a81aa1567bbc06416434113",
+    "id": "dict:0559",
+    "text": "At first I proposed listening to every single recording taken on full-moon nights, or maybe only checking clips flagged as low-confidence by the software.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.66,
+    "size": 46172
+  },
+  "fea33fc78e09648090b0f9601b6cd59308d8ce985a9042dfe2165c2c00b659e6": {
+    "hash": "fea33fc78e09648090b0f9601b6cd59308d8ce985a9042dfe2165c2c00b659e6",
+    "id": "dict:0553",
+    "text": "We originally intended to offer complimentary audio headsets from the ticket kiosk for this loop, but our electronics supplier delayed delivery, so those are not ready yet.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 8.59,
+    "size": 51788
+  },
+  "bf3c15d9133d8a9f1efb23fa253b33488cbb42b9ad6dc3ee12e7371711e5fab5": {
+    "hash": "bf3c15d9133d8a9f1efb23fa253b33488cbb42b9ad6dc3ee12e7371711e5fab5",
+    "id": "dict:0554",
+    "text": "Before we write up the methodology section for Dr Patel, we need to pin down what actually changed since our initial proposal.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 6.98,
+    "size": 42140
+  },
+  "7443f80b6e8f12d2346c6491fd1275686360471cde9fca6ff0c3545fb65d5ed9": {
+    "hash": "7443f80b6e8f12d2346c6491fd1275686360471cde9fca6ff0c3545fb65d5ed9",
+    "id": "dict:0555",
+    "text": "Beyond timber regeneration, these hidden fungal webs also play an unexpectedly large role in regulating Earth's global carbon budget.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "7a98cb6afdb320d791abf22ca355743da19523f15a0b313bf693120677bb8180": {
+    "hash": "7a98cb6afdb320d791abf22ca355743da19523f15a0b313bf693120677bb8180",
+    "id": "dict:0557",
+    "text": "Let's turn now to the ecological functions this living light serves in the dark water column, starting with camouflage.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "7bf3bf69362b79ff9730d83a8f2ac3c51ebd6ef958d1b779444b40922de870de": {
+    "hash": "7bf3bf69362b79ff9730d83a8f2ac3c51ebd6ef958d1b779444b40922de870de",
+    "id": "dict:0562",
+    "text": "The walks remain completely free of charge, though we ask you to put your name down at reception, and complete beginners are just as welcome as seasoned spotters.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 8.9,
+    "size": 53660
+  },
+  "a1b5e6a20f65ceb44e3835091bfa7a779735046619f866ac0e01de1894756e56": {
+    "hash": "a1b5e6a20f65ceb44e3835091bfa7a779735046619f866ac0e01de1894756e56",
+    "id": "dict:0564",
+    "text": "Yes, and both ideas fell apart quickly: directional mics miss birds flying in from the side, while skipping windy nights skews the attendance data.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.66,
+    "size": 46172
+  },
+  "cf5c267b2cfebb3626f3537a8fab14bf1378ca17e73ffe75e0f4c7bac4ca93b9": {
+    "hash": "cf5c267b2cfebb3626f3537a8fab14bf1378ca17e73ffe75e0f4c7bac4ca93b9",
+    "id": "dict:0566",
+    "text": "I was at first because they added human colour, but looking back they were completely unstructured and we did not obtain formal ethics sign-off for interviews.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "13fadcecca04a8a7bb9bf95b30c04a86d25319cc6f785cbd2d1b4898f5faf619": {
+    "hash": "13fadcecca04a8a7bb9bf95b30c04a86d25319cc6f785cbd2d1b4898f5faf619",
+    "id": "dict:0569",
+    "text": "One more technical point before we discuss your findings: how are you standardising particle concentrations across mud and sand sites?",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "61bc85f72bbcac3b1c5962750c1a3037dc4d2dc717dcedf7a1c395d091623cbd": {
+    "hash": "61bc85f72bbcac3b1c5962750c1a3037dc4d2dc717dcedf7a1c395d091623cbd",
+    "id": "dict:0568",
+    "text": "Moving on to research methods, studying deep-sea luminescence poses major technical hurdles for oceanographers.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 4.49,
+    "size": 27164
+  },
+  "a2e9ea4041f5a1b7af344a502d7a1dd3472cc3730e9234467c80c76b2ad1646f": {
+    "hash": "a2e9ea4041f5a1b7af344a502d7a1dd3472cc3730e9234467c80c76b2ad1646f",
+    "id": "dict:0570",
+    "text": "Right, the actual gap at Canal Mill is seasonal: everything blooms in May and June, then by September the beds are completely barren.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "6ca8d43fe9596b4efc28f25cc02c1bcd2eb016ed0d16543423552adf7355914d": {
+    "hash": "6ca8d43fe9596b4efc28f25cc02c1bcd2eb016ed0d16543423552adf7355914d",
+    "id": "dict:0572",
+    "text": "What kept the hall shut was an engineering crew installing modern quiet ventilation ducts overhead above the auditorium seating so summer performances stay comfortable.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.66,
+    "size": 46172
+  },
+  "ac747a43c6760325f38963ba5aa3bf9b9e78b1ebdf2f4004b75cae6fdc80957b": {
+    "hash": "ac747a43c6760325f38963ba5aa3bf9b9e78b1ebdf2f4004b75cae6fdc80957b",
+    "id": "dict:0565",
+    "text": "As you walk west from the East Entrance, you will pass a bright room immediately on your right, north of the Central Concourse right by the entrance.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 8.57,
+    "size": 51644
+  },
+  "cef52ea686e1a2970fdf182223013b05ad0314d8a9feee6205afdcfd58b6aae8": {
+    "hash": "cef52ea686e1a2970fdf182223013b05ad0314d8a9feee6205afdcfd58b6aae8",
+    "id": "dict:0573",
+    "text": "What we genuinely need more of right now are second-hand domestic sewing machines in working order, because demand for our weekend clothes-mending circles has doubled since January.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 8.59,
+    "size": 51788
+  },
+  "d82369f4d026cefc29920ba042d77fd5243641eadd3933e0125be6d0daa47a79": {
+    "hash": "d82369f4d026cefc29920ba042d77fd5243641eadd3933e0125be6d0daa47a79",
+    "id": "dict:0567",
+    "text": "Instead, contractors will erect steel cribbing on the banks and install temporary hydraulic jacks beneath the main deck to carry the load safely.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 7.3,
+    "size": 44012
+  },
+  "5c8c03179e0fa70b3ccf0acab1815c65fe8148836fc724551018561d6d0e1e70": {
+    "hash": "5c8c03179e0fa70b3ccf0acab1815c65fe8148836fc724551018561d6d0e1e70",
+    "id": "dict:0563",
+    "text": "Walk east from the West Gate along Kauri Avenue, and it is the very first building immediately on your right, on the southern side of the avenue closest to the entrance.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 9.84,
+    "size": 59276
+  },
+  "ae62b29d55c321e47dd05888c9d3f7468d8ecf40e7946740e63a15e60cb874d3": {
+    "hash": "ae62b29d55c321e47dd05888c9d3f7468d8ecf40e7946740e63a15e60cb874d3",
+    "id": "dict:0571",
+    "text": "Two volunteers admitted they silently translated and rehearsed their favourite stories during those five minutes, which wiped out spontaneous recall.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "7723ad12553a064d6aa2236d23f3bf379ff7303cfff4f0497de43423de8d2fa2": {
+    "hash": "7723ad12553a064d6aa2236d23f3bf379ff7303cfff4f0497de43423de8d2fa2",
+    "id": "dict:0580",
+    "text": "Do not walk all the way to the southern tip of that path, as the structure right at the bottom end is our enclosed compost yard and is closed to visitors.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 9.82,
+    "size": 59132
+  },
+  "232126a27f7f1b8f4f4bc92f4022cc2f980e2e3a0b6f0dcb26fea443263c39cc": {
+    "hash": "232126a27f7f1b8f4f4bc92f4022cc2f980e2e3a0b6f0dcb26fea443263c39cc",
+    "id": "dict:0576",
+    "text": "Instead, the fleshy bulb shelters dense colonies of symbiotic bacteria that glow continuously in exchange for nutrients and protection.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "fa1dee65dbc506b40fc095e5eebb28b1a7f55733582b54cb597c939ece34726d": {
+    "hash": "fa1dee65dbc506b40fc095e5eebb28b1a7f55733582b54cb597c939ece34726d",
+    "id": "dict:0577",
+    "text": "Students sometimes think those shafts were dug primarily to draw drinking water along the route, though in fact they were too narrow for public use.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "97335150c64f5a3d79be0749641ac1bfdab03d7d675812ac21e6e63aed009f45": {
+    "hash": "97335150c64f5a3d79be0749641ac1bfdab03d7d675812ac21e6e63aed009f45",
+    "id": "dict:0574",
+    "text": "Without microphones, wires, or electricity, these open-air structures routinely hosted over ten thousand spectators.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 4.49,
+    "size": 27164
+  },
+  "3b91be66d0d5dfc564214a6d60a08ae96448cae51bb0bbdbba02967d8ce571b9": {
+    "hash": "3b91be66d0d5dfc564214a6d60a08ae96448cae51bb0bbdbba02967d8ce571b9",
+    "id": "dict:0579",
+    "text": "By wrapping root tips in sheaths of microscopic ectomycorrhizal filaments, fungi expand a tree's effective absorptive surface hundreds of times over.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.7,
+    "size": 40412
+  },
+  "d4ffbebadbc147fdc6ecfb824bf1e71cabcd1fcd2a363f3f035791bd0220f38d": {
+    "hash": "d4ffbebadbc147fdc6ecfb824bf1e71cabcd1fcd2a363f3f035791bd0220f38d",
+    "id": "dict:0575",
+    "text": "Earlier I worried their night-time security lamps were drawing moths away, but it turns out those lights are already motion-triggered and stay dark most nights.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "5fb0f011d0cdb0a4abba8cdd7ac0fa2113e71bb671e8adbde66f9cb8ae94b2f4": {
+    "hash": "5fb0f011d0cdb0a4abba8cdd7ac0fa2113e71bb671e8adbde66f9cb8ae94b2f4",
+    "id": "dict:0581",
+    "text": "Over decades, this asymmetry builds vast intertidal mudflats along the sheltered margins of the channel.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 4.8,
+    "size": 29036
+  },
+  "7238a420d3f09d82b56c9b1601906de2a56720ccc8869a50fba5e865f84e0c60": {
+    "hash": "7238a420d3f09d82b56c9b1601906de2a56720ccc8869a50fba5e865f84e0c60",
+    "id": "dict:0578",
+    "text": "The covered Picnic Shelter is much closer: south of Orchard Lane and immediately on the right, or eastern side, of the Farm Track, directly opposite the Farm Produce Shop.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 9.22,
+    "size": 55532
+  },
+  "d7a4b767b9a718e29ae75389e60474b96075c8c607a2228f1e004a43d10e5835": {
+    "hash": "d7a4b767b9a718e29ae75389e60474b96075c8c607a2228f1e004a43d10e5835",
+    "id": "dict:0582",
+    "text": "You will notice a medium-sized room on the eastern side of the South Wing just south of the Central Concourse, which houses our boiler and water filtration plant.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 8.88,
+    "size": 53516
+  },
+  "3df663cdb6fa2d4fdf549be23f6717810c770d4afc3e23bbf4cbbdaa4c75309d": {
+    "hash": "3df663cdb6fa2d4fdf549be23f6717810c770d4afc3e23bbf4cbbdaa4c75309d",
+    "id": "dict:0583",
+    "text": "Actually, morning counts beat afternoon ones just as the textbooks predict, and the potted culinary herbs did reasonably well too.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "d051659170f325c227d3ffc79e66c71542b6e25f1bdded65f3e3ba0171a3aa46": {
+    "hash": "d051659170f325c227d3ffc79e66c71542b6e25f1bdded65f3e3ba0171a3aa46",
+    "id": "dict:0586",
+    "text": "Separating genuine fungal-bridge transport from ordinary passive seepage through damp soil is technically demanding.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 4.49,
+    "size": 27164
+  },
+  "a6fa90210ac3c41fde886eb0db26b9c5348e90749b13930790bc5c956308a593": {
+    "hash": "a6fa90210ac3c41fde886eb0db26b9c5348e90749b13930790bc5c956308a593",
+    "id": "dict:0584",
+    "text": "Although prolonged drought is often blamed for drying out historic galleries, hydrological records tell a different story.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 5.45,
+    "size": 32924
+  },
+  "3d2144fbe28fd75c36c41721505d3a5f2fc9678b8ff79fbc26d1a8230ac4faff": {
+    "hash": "3d2144fbe28fd75c36c41721505d3a5f2fc9678b8ff79fbc26d1a8230ac4faff",
+    "id": "dict:0585",
+    "text": "Before visiting the site, we assumed wood-boring beetles had spread upward from the floorboards, or that winter frost was splitting the outer timbers.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 7.34,
+    "size": 44300
+  },
+  "7b9e992c2d81be37935ee54bd29e997a68256744418642e89a184ec57bff6aeb": {
+    "hash": "7b9e992c2d81be37935ee54bd29e997a68256744418642e89a184ec57bff6aeb",
+    "id": "dict:0590",
+    "text": "Second, when you walk past the sheltered lambing pens, please keep your voices low and avoid shouting or running, because sudden loud noise can startle the new ewes and scatter the lambs.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 10.15,
+    "size": 61148
+  },
+  "8cd3c90e58517dba691092f68acc1683e4802219e897ecb1bf574914e5c986fe": {
+    "hash": "8cd3c90e58517dba691092f68acc1683e4802219e897ecb1bf574914e5c986fe",
+    "id": "dict:0588",
+    "text": "In biomedical laboratories, genes encoding light-emitting enzymes are inserted into specific cells as harmless optical tags.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 190.0,
+    "duration": 5.14,
+    "size": 31052
+  },
+  "ef03291156d8cec3e01dfd400de2909061822589bed6fadd2349bd07d1804ec0": {
+    "hash": "ef03291156d8cec3e01dfd400de2909061822589bed6fadd2349bd07d1804ec0",
+    "id": "dict:0591",
+    "text": "Well, lethal trapping on tiny rooftop colonies felt counterproductive, and my earlier idea of strapping fixed cameras to each quadrat failed because the glare blurred the wing markings.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 8.9,
+    "size": 53660
+  },
+  "a8bd3f3c04c35ba34fe8dda12bea0af1f99f95464ee2cd0c593e165f6db41485": {
+    "hash": "a8bd3f3c04c35ba34fe8dda12bea0af1f99f95464ee2cd0c593e165f6db41485",
+    "id": "dict:0589",
+    "text": "Let us measure every pause automatically using acoustic editing software after the session so we get millisecond precision without distracting the speaker.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.01,
+    "size": 42284
+  },
+  "2dbf36698df7231ce470a4ee46f7f786a67c23ca2fcee4ec5060297b0d04fa91": {
+    "hash": "2dbf36698df7231ce470a4ee46f7f786a67c23ca2fcee4ec5060297b0d04fa91",
+    "id": "dict:0587",
+    "text": "Your immediate priority is to test load-bearing stress on a scaled laboratory joint so we know our spliced oak can handle jacking forces.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 7.3,
+    "size": 44012
+  },
+  "58094abbb82a782c2e9bd79c541a13092dc39f176f1f70311044cbfc47b984e2": {
+    "hash": "58094abbb82a782c2e9bd79c541a13092dc39f176f1f70311044cbfc47b984e2",
+    "id": "dict:0593",
+    "text": "Remember the conservation manual recommends using a needle-thin resistance drill to measure decay depth without causing structural harm.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 5.76,
+    "size": 34796
+  },
+  "06debd40db8da87e359b40c2bbb6e2a73ab73d48802a553bc0e3688c3a568620": {
+    "hash": "06debd40db8da87e359b40c2bbb6e2a73ab73d48802a553bc0e3688c3a568620",
+    "id": "dict:0592",
+    "text": "My real worry is accuracy: bleached natural cellulose fibres look almost identical to synthetic threads under ordinary light, so visual counts inflate our totals.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.63,
+    "size": 46028
+  },
+  "939bcd9a428dc2070eccf1c4db7058ccc4684afe5ef0bbdfe8bece9f05984e07": {
+    "hash": "939bcd9a428dc2070eccf1c4db7058ccc4684afe5ef0bbdfe8bece9f05984e07",
+    "id": "dict:0598",
+    "text": "The snag at Cedar Terrace is language diversity: four primary languages are spoken in that block, so English-only instructions failed.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 6.38,
+    "size": 38540
+  },
+  "b938ccd26ab8e4f417b49e66557a867fb6e637d7274c3325fd6a43cdc3872066": {
+    "hash": "b938ccd26ab8e4f417b49e66557a867fb6e637d7274c3325fd6a43cdc3872066",
+    "id": "dict:0600",
+    "text": "Yet below two hundred meters in the open ocean, sunlight fades rapidly until the water becomes permanently dark, cold, and under crushing pressure.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "4dff244598323e0e82040626f6a15600a24a3fd7aab3411e3dff629a5d60b56a": {
+    "hash": "4dff244598323e0e82040626f6a15600a24a3fd7aab3411e3dff629a5d60b56a",
+    "id": "dict:0601",
+    "text": "Finally, let's consider why so many of these centuries-old networks declined in the modern period, and why planners are taking renewed interest in them today.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.39,
+    "size": 44588
+  },
+  "630b8e414121c879bb9cd19cf28f379935baa81a13756ea83096eeb4b56f3b6f": {
+    "hash": "630b8e414121c879bb9cd19cf28f379935baa81a13756ea83096eeb4b56f3b6f",
+    "id": "dict:0595",
+    "text": "By the way, feel free to bring lidded hot drinks or cold snacks from the kiosk into the screening room; we lifted our old food ban when the new wipe-clean seats went in.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 10.49,
+    "size": 63164
+  },
+  "990129144fd4f76b0ba8b627661d6f84a47b0e9e0a1d1f028d4586a764578ce4": {
+    "hash": "990129144fd4f76b0ba8b627661d6f84a47b0e9e0a1d1f028d4586a764578ce4",
+    "id": "dict:0596",
+    "text": "In reality, aristocratic kitchens could easily afford fresh cuts; rare exotic spices were prized overwhelmingly as visible emblems of social status at banquets.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "f808e8a4aae823118436675df8cf023909f1cf14c020a2a6f1a52c1d70ded895": {
+    "hash": "f808e8a4aae823118436675df8cf023909f1cf14c020a2a6f1a52c1d70ded895",
+    "id": "dict:0603",
+    "text": "The genuine surprise at Shearwater Crag was isolating a low rhythmic churring call belonging to a vagrant storm-petrel species almost never logged along this coastline.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 7.39,
+    "size": 44588
+  },
+  "a39e56648b50f53b33d50dfa880a3cddda4b907272dadc34f80b4fd10106da2b": {
+    "hash": "a39e56648b50f53b33d50dfa880a3cddda4b907272dadc34f80b4fd10106da2b",
+    "id": "dict:0602",
+    "text": "Mostly balanced, except for the final page where you speculate that creek microplastics pose an acute clinical risk to local shellfish consumers.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 6.5,
+    "size": 39260
+  },
+  "58054ac10aae5185967fff83ba88aaf398484de45427fb928d1b97b6e11829ed": {
+    "hash": "58054ac10aae5185967fff83ba88aaf398484de45427fb928d1b97b6e11829ed",
+    "id": "dict:0594",
+    "text": "Tidal barriers and hydroelectric dams built further upriver have likewise dampened surges by truncating the estuary's natural length.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 190.0,
+    "duration": 5.76,
+    "size": 34796
+  },
+  "417eeb02937ec732f4c6720ea93495f05d8619f43b428c1790821437e361af9e": {
+    "hash": "417eeb02937ec732f4c6720ea93495f05d8619f43b428c1790821437e361af9e",
+    "id": "dict:0599",
+    "text": "Turning to hunting strategies, deep-sea anglerfish are famous for dangling a glowing rod above their jaws to lure curious crustaceans within striking distance.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 190.0,
+    "duration": 7.34,
+    "size": 44300
+  },
+  "a73acd5f93e954e72500ec130d28efe97aa2030455bf93126b550e72438b7d76": {
+    "hash": "a73acd5f93e954e72500ec130d28efe97aa2030455bf93126b550e72438b7d76",
+    "id": "dict:0597",
+    "text": "Instead, we came back to find curious gulls had pecked every single foam windshield to shreds, so we had to tuck the units beneath overhanging ledges with wire guards.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 9.19,
+    "size": 55388
+  },
+  "9349c5ddcf8510697d781069109e4df949ca27854b4b052cfd7e519178605c9f": {
+    "hash": "9349c5ddcf8510697d781069109e4df949ca27854b4b052cfd7e519178605c9f",
+    "id": "dict:0605",
+    "text": "Wading birds and migratory fish time their feeding runs directly around the bore's passage to exploit this brief burst of biological productivity.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.5,
+    "size": 39260
+  },
+  "0a05e073060eb97e7fa038732be39d3d2e36a39d824785a88370439b7680d4e5": {
+    "hash": "0a05e073060eb97e7fa038732be39d3d2e36a39d824785a88370439b7680d4e5",
+    "id": "dict:0604",
+    "text": "Today we are examining the merchant guilds and chartered syndicates that financed, policed, and governed this extraordinary intercontinental commerce.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 5.62,
+    "size": 33932
+  },
+  "3d0dc1245262125b3562ab28c2502373eee5c34ea171407e6a2f233c392a08df": {
+    "hash": "3d0dc1245262125b3562ab28c2502373eee5c34ea171407e6a2f233c392a08df",
+    "id": "dict:0607",
+    "text": "Well, I originally meant to call just for a routine clean, actually I bit into a roasted almond yesterday and chipped a back filling, so I would like that looked at first.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 9.43,
+    "size": 56828
+  },
+  "5faaac4e9021e96b698a984a8c5117a5953e9d908e3d0610689263e714565db1": {
+    "hash": "5faaac4e9021e96b698a984a8c5117a5953e9d908e3d0610689263e714565db1",
+    "id": "dict:0609",
+    "text": "Let's turn now to what actually moves through these common mycorrhizal networks, and how ecologists interpret those flows.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.33,
+    "size": 32204
+  },
+  "a58b11512b8f59c3dd9f8eb233c40b6db9b63e1039334a72da5a6eca28ae8b76": {
+    "hash": "a58b11512b8f59c3dd9f8eb233c40b6db9b63e1039334a72da5a6eca28ae8b76",
+    "id": "dict:0613",
+    "text": "At the very same time, steady advances in maritime architecture and global navigation were quietly revolutionizing long-haul voyage economics.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 5.64,
+    "size": 34076
+  },
+  "b7c5d0b3011f406357dbe8ca5705f4f93f35956a98b476351ef87e768005c1be": {
+    "hash": "b7c5d0b3011f406357dbe8ca5705f4f93f35956a98b476351ef87e768005c1be",
+    "id": "dict:0612",
+    "text": "Abstract cue words like justice or ambition completely backfired: instead of recalling a specific episode, volunteers gave general opinions.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.64,
+    "size": 34076
+  },
+  "3286e5265095c8c942012db3cae41e6c4909fbc3055c60e482496aadeeea6a94": {
+    "hash": "3286e5265095c8c942012db3cae41e6c4909fbc3055c60e482496aadeeea6a94",
+    "id": "dict:0606",
+    "text": "Walk north from the Main Entrance into the Central Atrium, and it is the room immediately on your left, on the western side of the atrium before you reach the West Corridor.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 9.43,
+    "size": 56828
+  },
+  "1997081b1f1dd1af4e80d45430ed4ee0226c49146556f8cacb3feae1ae2f59e9": {
+    "hash": "1997081b1f1dd1af4e80d45430ed4ee0226c49146556f8cacb3feae1ae2f59e9",
+    "id": "dict:0608",
+    "text": "What spikes instantaneously instead is the concentration of suspended sediment, as energetic eddies scour fine clay and silt straight off the riverbed.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.5,
+    "size": 39260
+  },
+  "ce8364096a6c9db16e70124338cc676827994af2606f080530fe8a4db5549ac5": {
+    "hash": "ce8364096a6c9db16e70124338cc676827994af2606f080530fe8a4db5549ac5",
+    "id": "dict:0610",
+    "text": "Moving to our preliminary patterns, we saw a sharp concentration spike right inside the harbour mouth, and we have been debating what drives it.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.08,
+    "size": 42716
+  },
+  "934f879701d36ef35d60c3796200e5b750cbb3ca7e79c650160ed4c86d93851e": {
+    "hash": "934f879701d36ef35d60c3796200e5b750cbb3ca7e79c650160ed4c86d93851e",
+    "id": "dict:0611",
+    "text": "What caught us off guard was seeing hoverflies outnumber solitary bees nearly two to one on the shallow sedum mats, though earlier guides call sedum roofs mainly bee habitat.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.54,
+    "size": 51500
+  },
+  "8de71bb9ee1c6360fbdf20989d9cb7fac2489ad496d3c92e78f5ee2448c37e3d": {
+    "hash": "8de71bb9ee1c6360fbdf20989d9cb7fac2489ad496d3c92e78f5ee2448c37e3d",
+    "id": "dict:0620",
+    "text": "What really happened last spring was that fierce winter surges undermined the concrete base beneath the gate, so engineers had to reinforce the whole foundation.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 7.37,
+    "size": 44444
+  },
+  "64d5acfa40074516ea43990fa7dd41056375d79d72b223a71c15cfefae66c839": {
+    "hash": "64d5acfa40074516ea43990fa7dd41056375d79d72b223a71c15cfefae66c839",
+    "id": "dict:0622",
+    "text": "I know I pushed for it last week, but adding twenty minutes would push our total session past the ethics cap, and our language-history form already captures proficiency reliably.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.54,
+    "size": 51500
+  },
+  "315c7e5fa2e78dd012cf61c52d38b449522bd4341f47bfb02763f3f666264006": {
+    "hash": "315c7e5fa2e78dd012cf61c52d38b449522bd4341f47bfb02763f3f666264006",
+    "id": "dict:0616",
+    "text": "Where the bore cut across loose sandy strata, however, artisans fitted interlocking terracotta rings along the interior walls so the ceiling would not cave in.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 7.37,
+    "size": 44444
+  },
+  "385ca572c8a5b57443f3bdec481dbc1950a99a5c436f5aa3759536b8b9bd96b1": {
+    "hash": "385ca572c8a5b57443f3bdec481dbc1950a99a5c436f5aa3759536b8b9bd96b1",
+    "id": "dict:0617",
+    "text": "At first, that raises a puzzle: if the stone seats suppress low frequencies, why do deep male voices not sound tinny or artificial from the top row?",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "7970596c44fe5306d3d87b2466e4c70682e849e6f1afb42dbea617b5190ac09a": {
+    "hash": "7970596c44fe5306d3d87b2466e4c70682e849e6f1afb42dbea617b5190ac09a",
+    "id": "dict:0614",
+    "text": "I know Dr Patel never asked us to track wind at every floor, and that old paper claiming small bees refuse to fly above four storeys has been pretty thoroughly debunked.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 9.12,
+    "size": 54956
+  },
+  "78457c8df4b05c7a1a6c2446a5e197915963f5722403456d980dbd7af2887414": {
+    "hash": "78457c8df4b05c7a1a6c2446a5e197915963f5722403456d980dbd7af2887414",
+    "id": "dict:0623",
+    "text": "Please hold off on donating half-empty tins of household wall paint, as fire-storage rules stop us from accepting them, and our bookshelves are already packed with older art history textbooks.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "fabd6bfd202d2ee5cf1659869fe1d09a5c0d944cb0c05bfd7822519fc7e82dd2": {
+    "hash": "fabd6bfd202d2ee5cf1659869fe1d09a5c0d944cb0c05bfd7822519fc7e82dd2",
+    "id": "dict:0621",
+    "text": "Because living tissue allows faint light to pass through, researchers can track the progression of a tumor inside laboratory models without invasive surgery.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "1a96e8ee73d6008d901e6334da40043bb4df76e55c7afbb8c27c66da00ea82dc": {
+    "hash": "1a96e8ee73d6008d901e6334da40043bb4df76e55c7afbb8c27c66da00ea82dc",
+    "id": "dict:0619",
+    "text": "What genuinely surprised me was motivation: far more respondents valued harvesting free herbs and tomatoes grown in the shared compost than saving money on municipal waste fees.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "499bfdd57f132b7112024e0040ff0206be51c56599e0720a5ed0491adee2f96e": {
+    "hash": "499bfdd57f132b7112024e0040ff0206be51c56599e0720a5ed0491adee2f96e",
+    "id": "dict:0615",
+    "text": "Let's turn now to the physical structure of these surges and the intense turbulence they generate beneath the surface.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 5.59,
+    "size": 33788
+  },
+  "224cc675ee64a3075eaac6fe567a55bd4aedaa0e18a7273f110c61a4b3cbd2c7": {
+    "hash": "224cc675ee64a3075eaac6fe567a55bd4aedaa0e18a7273f110c61a4b3cbd2c7",
+    "id": "dict:0618",
+    "text": "Over the renovation fortnight, we are ripping out those timber planks and laying thick, shock-absorbing rubber flooring that cushions impact and stops vibration travelling to the corridor below.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "b9364430784cb6af4a788b7f02db7d667ef85ade1818904daa913e9dd7145689": {
+    "hash": "b9364430784cb6af4a788b7f02db7d667ef85ade1818904daa913e9dd7145689",
+    "id": "dict:0625",
+    "text": "What showed up repeatedly on our sunset recordings was the unmistakable whine of hobbyist drones hovering near the cliffs, triggering twenty-minute bouts of complete colony silence.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.66,
+    "size": 46172
+  },
+  "791763e74fcc3a051acd317b2aa12cebd4050b3a887c23d8a3fba9f9e7e28456": {
+    "hash": "791763e74fcc3a051acd317b2aa12cebd4050b3a887c23d8a3fba9f9e7e28456",
+    "id": "dict:0628",
+    "text": "Instead, retention forestry leaves scattered mature legacy trees standing across a cut block to act as a living reservoir that swiftly inoculates newly planted saplings.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.39,
+    "size": 44588
+  },
+  "594bec5373918bc52d8d80959f5fbea81b2e7d141ce82fd191d7fa57ecc96733": {
+    "hash": "594bec5373918bc52d8d80959f5fbea81b2e7d141ce82fd191d7fa57ecc96733",
+    "id": "dict:0627",
+    "text": "Finally, let's consider what boreal mycorrhizal research means in practical terms for sustainable timber forestry and global climate accounting.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.62,
+    "size": 33932
+  },
+  "ca3240d746f0439eda06e4a41ba0e206649473e8a92622359b8d146e9baed218": {
+    "hash": "ca3240d746f0439eda06e4a41ba0e206649473e8a92622359b8d146e9baed218",
+    "id": "dict:0629",
+    "text": "Recent molecular profiling overturned that view, showing that slow-decaying dead fungal tissues actually drive more than half of long-term underground storage across northern conifer zones.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 7.37,
+    "size": 44444
+  },
+  "c8de9ddee99de8054df40e4969a5f6c9e614c22cb67f30bb2a77718fb0640011": {
+    "hash": "c8de9ddee99de8054df40e4969a5f6c9e614c22cb67f30bb2a77718fb0640011",
+    "id": "dict:0624",
+    "text": "Rather than flooding European auction halls whenever tropical islands produced a bumper harvest, powerful trading houses deliberately burned surplus stockpiles so wholesale prices would never collapse.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "cb4d336478952b56dbf7d3081dd7888ed5b0ec1ea43cd23a20dfb2e3d2c356b0": {
+    "hash": "cb4d336478952b56dbf7d3081dd7888ed5b0ec1ea43cd23a20dfb2e3d2c356b0",
+    "id": "dict:0633",
+    "text": "What is missing is nesting habitat: every square inch is covered in thick bark mulch, so we should advise clearing a couple of dry bare-soil patches for ground-nesting solitary bees.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.83,
+    "size": 53228
+  },
+  "8ecd56d94179110d963fcb467a2f9817dabeac91ecb888fbe01f094577fcd401": {
+    "hash": "8ecd56d94179110d963fcb467a2f9817dabeac91ecb888fbe01f094577fcd401",
+    "id": "dict:0632",
+    "text": "They form only where a shallow estuary opens wide to the sea and narrows abruptly inland, acting like a giant funnel that squeezes the incoming tide into an ever-tighter channel.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 8.83,
+    "size": 53228
+  },
+  "98269ac9cc0615e883dee3c3e156b2f343d7d1e513939fd9861f3ebcb3395578": {
+    "hash": "98269ac9cc0615e883dee3c3e156b2f343d7d1e513939fd9861f3ebcb3395578",
+    "id": "dict:0626",
+    "text": "Before cutting the main conduit, master surveyors had to calculate a remarkably gentle gradient, typically around one metre of drop per kilometre.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.5,
+    "size": 39260
+  },
+  "ed6a33e53aba08d246a46cf65ce680ab0d5d37b0ff9d3a6540c79487109302d3": {
+    "hash": "ed6a33e53aba08d246a46cf65ce680ab0d5d37b0ff9d3a6540c79487109302d3",
+    "id": "dict:0631",
+    "text": "In slightly deeper or gentler estuaries, however, you see an undular bore: a smooth primary crest trailed by a neat train of secondary oscillations.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 7.1,
+    "size": 42860
+  },
+  "0384b98bd94fe331dfeeb2ee8ad73304259a1e58941244414e08629485614eac": {
+    "hash": "0384b98bd94fe331dfeeb2ee8ad73304259a1e58941244414e08629485614eac",
+    "id": "dict:0630",
+    "text": "I am afraid the upper bell-tower viewing gallery is closed until next Thursday for electrical rewiring, and our printed chart catalogue is an optional purchase in the shop rather than part of your entry.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 9.98,
+    "size": 60140
+  },
+  "fe3f5a23ea6e794af723590efc3349bf925c0994b21b57717a52bff6b59853d8": {
+    "hash": "fe3f5a23ea6e794af723590efc3349bf925c0994b21b57717a52bff6b59853d8",
+    "id": "dict:0634",
+    "text": "While younger children have their own paper-craft corner downstairs, this animation workshop is tailored specifically for teenagers and young adults aged fourteen to twenty-two who want to build short clay-figure clips.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 9.14,
+    "size": 55100
+  },
+  "792872e457620a63fdf8274d8839e35fef16ad76647d910304803218acf74184": {
+    "hash": "792872e457620a63fdf8274d8839e35fef16ad76647d910304803218acf74184",
+    "id": "dict:0641",
+    "text": "Almost all marine species emit blue or blue-green wavelengths because those colors penetrate farthest through clear seawater, whereas red wavelengths are absorbed within just a few meters of the surface.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "4435abcf7aaaf2cfb33003d0b3df8b9447f196b460ab39f275e32ddf6878ee27": {
+    "hash": "4435abcf7aaaf2cfb33003d0b3df8b9447f196b460ab39f275e32ddf6878ee27",
+    "id": "dict:0636",
+    "text": "People sometimes assume we were set up to house the city council's sculpture collection because we borrowed three bronzes last autumn, or that we began as an after-school tutoring hub for high-school exams.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 9.72,
+    "size": 58556
+  },
+  "900bcdb381a7e3ab63d0c216503d425cc1447238f460142811778fbebfdef624": {
+    "hash": "900bcdb381a7e3ab63d0c216503d425cc1447238f460142811778fbebfdef624",
+    "id": "dict:0638",
+    "text": "Back at the very beginning, a handful of neighbours simply leased this empty brick printworks to create affordable rehearsal rooms where local bands could practise without upsetting their landlords.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.57,
+    "size": 51644
+  },
+  "246e3534802550da7009fea52e1ef773284f492a158a4f6bccbfe5158a93127f": {
+    "hash": "246e3534802550da7009fea52e1ef773284f492a158a4f6bccbfe5158a93127f",
+    "id": "dict:0643",
+    "text": "It runs smoothly on an ordinary laptop, so computing cost is not an issue, and since we are tracking adult returns we are not trying to pick up faint chicks deep inside burrows.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 9.72,
+    "size": 58556
+  },
+  "e872cd0e9ed070c8d8c5c3c1663a65629d9fc751e7b8daf282ed68ab5dbfdf0d": {
+    "hash": "e872cd0e9ed070c8d8c5c3c1663a65629d9fc751e7b8daf282ed68ab5dbfdf0d",
+    "id": "dict:0644",
+    "text": "You might expect the most immediate measurable change behind the front to be a sudden jump in salinity, yet brackish seawater actually lags behind the pressure wave.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "19d40509c8985229410399ef491e723e5ba8030379765e241988818566762d2b": {
+    "hash": "19d40509c8985229410399ef491e723e5ba8030379765e241988818566762d2b",
+    "id": "dict:0635",
+    "text": "By the late eighteenth century, copper-sheathed, streamlined hulls slashed typical turnaround times to just 14 months, flooding European ports with frequent competing shipments.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 6.82,
+    "size": 41132
+  },
+  "2c5663fcc085e7576778b91d9ad10761788557af5817c5fb68b5cd7ce3f74796": {
+    "hash": "2c5663fcc085e7576778b91d9ad10761788557af5817c5fb68b5cd7ce3f74796",
+    "id": "dict:0639",
+    "text": "What drove residents away in month two was that June heatwave: without enough dry bedding, wet food scraps turned anaerobic and the bays gave off sharp sour odours across the walkways.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 9.14,
+    "size": 55100
+  },
+  "02d7af8bcca1a4743cbdd93d0517bd801f67bb2487b1f98926a5ea84aa4a2f06": {
+    "hash": "02d7af8bcca1a4743cbdd93d0517bd801f67bb2487b1f98926a5ea84aa4a2f06",
+    "id": "dict:0637",
+    "text": "What genuinely worries me is the pre-dawn rush, when dozens of birds vocalise simultaneously; overlapping calls confuse the algorithm and cause it to undercount peak activity.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "83e8af06cd3902d512086bcf8cdc763f84e7fc84ff63d6cb115e899c712364c8": {
+    "hash": "83e8af06cd3902d512086bcf8cdc763f84e7fc84ff63d6cb115e899c712364c8",
+    "id": "dict:0640",
+    "text": "Within moments of the crest passing, near-bed currents flip abruptly from seaward to landward, subjecting rocks, bridge piers, and benthic organisms to sudden shear stress.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.39,
+    "size": 44588
+  },
+  "3d20dda0d7f11bdf9c1a5046d60b61abeb901015415388cd0793510aa03262c4": {
+    "hash": "3d20dda0d7f11bdf9c1a5046d60b61abeb901015415388cd0793510aa03262c4",
+    "id": "dict:0642",
+    "text": "Intense white floodlights designed for deep-sea engineering work can temporarily dazzle or even permanently damage eyes exquisitely adapted to pitch darkness.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "40c61e7a5c75396eae6608525a4e3cdf3d559c5516195a1c713e3eaf80799a0e": {
+    "hash": "40c61e7a5c75396eae6608525a4e3cdf3d559c5516195a1c713e3eaf80799a0e",
+    "id": "dict:0654",
+    "text": "In the exact middle of the circular orchestra stood a low stone altar; far from being merely ceremonial, its smooth top surface scattered early sound waves upward toward the middle seating tiers.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 9.43,
+    "size": 56828
+  },
+  "e91b37a307b5cb7eb89e5cca569f104cbb5e29fd760b8ee8fda5bb452dca1d89": {
+    "hash": "e91b37a307b5cb7eb89e5cca569f104cbb5e29fd760b8ee8fda5bb452dca1d89",
+    "id": "dict:0649",
+    "text": "In a habitat where every calorie matters, broadcasting in blue gives an organism the greatest range for the smallest metabolic investment.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "8365f8a895b34d1710bdccb1a52112bf965d3f53ab793f9b37092fa057dc794c": {
+    "hash": "8365f8a895b34d1710bdccb1a52112bf965d3f53ab793f9b37092fa057dc794c",
+    "id": "dict:0650",
+    "text": "Yet careful audits of surviving customs ledgers show actual transit spoilage averaged much closer to 25 percent, leaving enormous net margins on intact cargo.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 7.08,
+    "size": 42716
+  },
+  "27c4f3abef5f4da2b3c4139f83dd58777038ecfc70332048599e0371ecd514d3": {
+    "hash": "27c4f3abef5f4da2b3c4139f83dd58777038ecfc70332048599e0371ecd514d3",
+    "id": "dict:0648",
+    "text": "Because the violent flood phase lifts far more particles inland than the slower ebb tide can haul back to sea, bore-dominated estuaries show a strong net landward transport.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "62bf0a3c9a6118b1ec49f79da5e1147e990830af54b06d1dd7150b0b8c14e392": {
+    "hash": "62bf0a3c9a6118b1ec49f79da5e1147e990830af54b06d1dd7150b0b8c14e392",
+    "id": "dict:0646",
+    "text": "A reflective vest is optional in summer and a handlebar bell is only recommended if you ride shared paths, whereas front and rear lights are strictly compulsory for every early Sunday start.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 9.43,
+    "size": 56828
+  },
+  "549d547dcbd8c9535f5eea00fe7a54f7d28c5fe9806dab274d493b82e3b494cd": {
+    "hash": "549d547dcbd8c9535f5eea00fe7a54f7d28c5fe9806dab274d493b82e3b494cd",
+    "id": "dict:0651",
+    "text": "Yet many mid-water hatchetfish and squid carry downward-facing light organs along their bellies that match the faint daylight filtering from above, effectively erasing their dark shadows from hunters looking upward.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "7d90cb05c9dcf66ca77ddd31e6b66aca7e294a898b622f13e73e24758e2a4e38": {
+    "hash": "7d90cb05c9dcf66ca77ddd31e6b66aca7e294a898b622f13e73e24758e2a4e38",
+    "id": "dict:0652",
+    "text": "Although our opening night features a restored silent comedy, the club is certainly not restricted to silent classics -- we will show documentaries and international cinema too.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "b13a9ed95242c4972239edbf4c339696f2b04bf46829d71e244bc9009cbb59ff": {
+    "hash": "b13a9ed95242c4972239edbf4c339696f2b04bf46829d71e244bc9009cbb59ff",
+    "id": "dict:0653",
+    "text": "Finally, let's look at how human engineering has altered tidal bore rivers over the past two centuries, and how researchers monitor them today.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "42899001593aeceba8978cf76654cafe2cb3e6aa78445d371435fae074a3b101": {
+    "hash": "42899001593aeceba8978cf76654cafe2cb3e6aa78445d371435fae074a3b101",
+    "id": "dict:0647",
+    "text": "Because every metre was chipped by hand with iron picks and hauled up in leather buckets, completing a major regional line could occupy several generations of specialist tunnellers.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 8.28,
+    "size": 49916
+  },
+  "edae58e3f31e4e3bdfb15ddac8cf3e39829617a8df60a0a18c619081f7a77dd4": {
+    "hash": "edae58e3f31e4e3bdfb15ddac8cf3e39829617a8df60a0a18c619081f7a77dd4",
+    "id": "dict:0645",
+    "text": "Because their own eyes contain unique red-sensitive pigments, dragonfish effectively operate private night-vision spotlights, allowing them to locate unsuspecting prey without giving away their own position.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "ddcaf207599dcc2d1cb9a1b3fa1076606fb0543ae62ce4ba170c59f64d50dad3": {
+    "hash": "ddcaf207599dcc2d1cb9a1b3fa1076606fb0543ae62ce4ba170c59f64d50dad3",
+    "id": "dict:0657",
+    "text": "The partnership is strictly reciprocal: in return for scarce soil minerals, the host conifer channels up to a third of its photosynthetic sugars downward to nourish the fungal colony.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.54,
+    "size": 51500
+  },
+  "2a95e7f8793c5abe872f2a3ab17d2acf17e6080a2114e731cfa915f2f2d2ff24": {
+    "hash": "2a95e7f8793c5abe872f2a3ab17d2acf17e6080a2114e731cfa915f2f2d2ff24",
+    "id": "dict:0655",
+    "text": "Let's turn now to how these remarkable galleries were actually planned and constructed without modern surveying equipment or motorised machinery.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.93,
+    "size": 35804
+  },
+  "2dc5ac7d1b5952c9ae5f761bb45cdb9c33394e4507999e3c3cd3220b4c2809e2": {
+    "hash": "2dc5ac7d1b5952c9ae5f761bb45cdb9c33394e4507999e3c3cd3220b4c2809e2",
+    "id": "dict:0662",
+    "text": "Instead, researchers discovered that the regular corrugated rows of limestone benches behave as an acoustic filter, selectively suppressing low-frequency rumble below five hundred hertz.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.1,
+    "size": 42860
+  },
+  "08c7b2747e07974c29a7a510e8b12307f3135772735b89afbf5da97122b6ee88": {
+    "hash": "08c7b2747e07974c29a7a510e8b12307f3135772735b89afbf5da97122b6ee88",
+    "id": "dict:0661",
+    "text": "Because elevation changes the local microclimate quite noticeably: higher roofs dry out faster and bake harder in direct sun, which alters nectar production even when the plant list is identical.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "74a98c678e24e61b7f218f9c9dd1911efe0ce12143297fbf02409571b859b714": {
+    "hash": "74a98c678e24e61b7f218f9c9dd1911efe0ce12143297fbf02409571b859b714",
+    "id": "dict:0660",
+    "text": "No, we cannot control exam stress, so let us capture it with a brief three-item questionnaire right after the recall block and include it as a statistical covariate.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "ccd9fc976c0c257a796f1e91c5137e175ffade2efd09bdad9b654c29a9bf34f9": {
+    "hash": "ccd9fc976c0c257a796f1e91c5137e175ffade2efd09bdad9b654c29a9bf34f9",
+    "id": "dict:0664",
+    "text": "To solve this, exploration teams now switch to dim red lamps during approach so they can record organisms without distorting their natural behavior.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "f533379d6b22cf7d090746e2c8bc19c9e58cb050ac31b74ca2e43a082649e47f": {
+    "hash": "f533379d6b22cf7d090746e2c8bc19c9e58cb050ac31b74ca2e43a082649e47f",
+    "id": "dict:0658",
+    "text": "This shared stewardship created strong social cohesion, because neglecting even one collapsed section upstream deprived every downstream farmer of water.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.93,
+    "size": 35804
+  },
+  "7b605da73eae3d4b5848875b6bda35995e5f42d57a88de7fd3201739ee08d61a": {
+    "hash": "7b605da73eae3d4b5848875b6bda35995e5f42d57a88de7fd3201739ee08d61a",
+    "id": "dict:0659",
+    "text": "Where local cooperatives have cleaned and stabilized surviving lines, the dependable cool outflow has revived historic orchards that had stood dry for decades.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.82,
+    "size": 41132
+  },
+  "7d1495426cce0fb7fe58350dfa0bd6ace7489f5c1a5cd2d7e38168f0575856ac": {
+    "hash": "7d1495426cce0fb7fe58350dfa0bd6ace7489f5c1a5cd2d7e38168f0575856ac",
+    "id": "dict:0663",
+    "text": "We used to ask volunteers for 6 hours a week, and students sometimes drop down to 2 hours during exams, though our standard minimum commitment is now 4 hours per week.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 9.12,
+    "size": 54956
+  },
+  "48f848c5d98edd9244cf0bc7b9ec11f360a66191dc5b2a4af11399b352994f72": {
+    "hash": "48f848c5d98edd9244cf0bc7b9ec11f360a66191dc5b2a4af11399b352994f72",
+    "id": "dict:0656",
+    "text": "So what began as an evolutionary survival trick in the ocean's darkest depths has become an indispensable analytical tool for both modern medicine and ecological monitoring.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "d758432e404574031ae75f816ba212a948907e21111017c1cbe8a4da0a5c43c4": {
+    "hash": "d758432e404574031ae75f816ba212a948907e21111017c1cbe8a4da0a5c43c4",
+    "id": "dict:0670",
+    "text": "The decisive issue is statutory protection: inserting load-bearing steel frames violates authenticity guidelines and would strip the bridge of its protected architectural listing.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "a6f8212134baa601373a4292a4d7ea7729a3bd012cc7de44dcb9f26fee8befb5": {
+    "hash": "a6f8212134baa601373a4292a4d7ea7729a3bd012cc7de44dcb9f26fee8befb5",
+    "id": "dict:0665",
+    "text": "The real drawback on that exposed west edge is constant crosswind knocking insects off the blooms, so adding low timber windbreaks along the rail is the top priority.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "4651020b75767356813a6592964d2a5eb5d11ab4ce65448b03aa212990068e69": {
+    "hash": "4651020b75767356813a6592964d2a5eb5d11ab4ce65448b03aa212990068e69",
+    "id": "dict:0673",
+    "text": "Moving on to the individual architectural components, let's compare four distinct structural features and the specific acoustic role each one played.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "6cff51b5b324c191991a8fdb558b9ad294752ed287b896babc8f2f75e58da696": {
+    "hash": "6cff51b5b324c191991a8fdb558b9ad294752ed287b896babc8f2f75e58da696",
+    "id": "dict:0672",
+    "text": "Far from being a barren desert, however, this vast twilight and midnight zone pulses with living light: surveys suggest roughly three-quarters of deep-sea animals produce their own glow through bioluminescence.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.83,
+    "size": 53228
+  },
+  "95c64d13ccb5713e3dec14c79abfd3df73ded30d3f5ab990de6d3b87222bedae": {
+    "hash": "95c64d13ccb5713e3dec14c79abfd3df73ded30d3f5ab990de6d3b87222bedae",
+    "id": "dict:0671",
+    "text": "Actual excavation started at the lower outlet and moved gradually uphill toward the mother well, so that any groundwater seepage drained naturally behind the workers rather than flooding the workface.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.83,
+    "size": 53228
+  },
+  "cf134bfebea864fc7e29d06998cc3998761393f9b1bc1d89cd3d85e249ed984b": {
+    "hash": "cf134bfebea864fc7e29d06998cc3998761393f9b1bc1d89cd3d85e249ed984b",
+    "id": "dict:0667",
+    "text": "Finally, many monumental amphitheatres built during the later classical and imperial periods were crowned along the very top rim of the bowl by a continuous roofed colonnade.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "88002390e5efec5a30965de5a5c7a08614d37ec437602d408a6d6894f3df9ff1": {
+    "hash": "88002390e5efec5a30965de5a5c7a08614d37ec437602d408a6d6894f3df9ff1",
+    "id": "dict:0668",
+    "text": "Seeing retired tenants log more volunteer hours than university students was fairly predictable, and contrary to our hunch, households with young children actually had the cleanest buckets.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "ae50c2c73da83d7b97f3a01f70620c0e70eff39f97e7e14bce2b57328001773b": {
+    "hash": "ae50c2c73da83d7b97f3a01f70620c0e70eff39f97e7e14bce2b57328001773b",
+    "id": "dict:0666",
+    "text": "Above ground it can look remarkably uniform, dominated by just a handful of hardy spruce, pine, and fir species adapted to long subarctic winters.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 7.08,
+    "size": 42716
+  },
+  "6d32db9a576da70753cad878c52f394bacd1db6351e3ac96f9b03fdaf742fe27": {
+    "hash": "6d32db9a576da70753cad878c52f394bacd1db6351e3ac96f9b03fdaf742fe27",
+    "id": "dict:0669",
+    "text": "As energy costs rise and aquifers face mounting stress, these zero-fuel gravity aqueducts offer hydrologists a proven blueprint for sustainable desert water management.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "836b503549cb29798a1e3f24b9106490df0b68d5f542a5f174167d03c91372d3": {
+    "hash": "836b503549cb29798a1e3f24b9106490df0b68d5f542a5f174167d03c91372d3",
+    "id": "dict:0677",
+    "text": "To persuade cautious urban savers to fund voyages lasting years, maritime houses developed pooled voyage insurance that automatically reimbursed subscribers whenever a vessel sank or went missing.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "bdcb07b0a2c98746b60e572871442cee2e879c63f18e1e18400927724ec35dc1": {
+    "hash": "bdcb07b0a2c98746b60e572871442cee2e879c63f18e1e18400927724ec35dc1",
+    "id": "dict:0676",
+    "text": "Well, cooked meat and dairy vanished almost completely after our week-three reminder, caretakers intercepted wax-coated produce cartons before they ever reached the bays, and we never saw treated garden timber offcuts in apartment blocks.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 10.01,
+    "size": 60284
+  },
+  "ca2db4e01da8cbe408d77a28361b024c0467c99e1c9763be2f39c4c3fcfca3fc": {
+    "hash": "ca2db4e01da8cbe408d77a28361b024c0467c99e1c9763be2f39c4c3fcfca3fc",
+    "id": "dict:0678",
+    "text": "Unlike a gravity gallery, which automatically stops flowing once aquifer levels dip slightly and thus cannot overdraw its reserve, industrial boreholes continue extracting water until the entire basin is depleted.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 8.83,
+    "size": 53228
+  },
+  "5702c0fd182252c4e994283b3250fe45e5157da00ae2d119df9b990286fa30f2": {
+    "hash": "5702c0fd182252c4e994283b3250fe45e5157da00ae2d119df9b990286fa30f2",
+    "id": "dict:0674",
+    "text": "Finally, let's consider how insights from deep-sea light chemistry are finding remarkably practical uses far away from the ocean floor, particularly in healthcare and environmental science.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "2f86f201e6119489e61d601ed46a3a971dfc3e97379e84ca368ecb646d98fedd": {
+    "hash": "2f86f201e6119489e61d601ed46a3a971dfc3e97379e84ca368ecb646d98fedd",
+    "id": "dict:0682",
+    "text": "Despite strict port searches and harsh penalties, rival colonial botanists eventually smuggled live spice cuttings out of tightly guarded islands and established thriving plantations across the Indian Ocean and the Caribbean.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 9.14,
+    "size": 55100
+  },
+  "2c1c13a2013ed6c7e0c09686272e4823e720b11df933d6010f039e923a7a9d49": {
+    "hash": "2c1c13a2013ed6c7e0c09686272e4823e720b11df933d6010f039e923a7a9d49",
+    "id": "dict:0684",
+    "text": "Even today, contemporary concert-hall acousticians and urban amphitheatre designers study these ancient stone proportions closely to balance natural vocal clarity and warmth without over-relying on electronic loudspeakers.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "5d2f04665513055f05893d55579aabf65ce69173afcc2bd53927688c13ecb433": {
+    "hash": "5d2f04665513055f05893d55579aabf65ce69173afcc2bd53927688c13ecb433",
+    "id": "dict:0681",
+    "text": "When bark beetles bore into an injured spruce, stress compounds travel through the fungal threads into neighbouring trees, prompting unharmed conifers to synthesize bitter chemical defences before the insects even reach them.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 9.43,
+    "size": 56828
+  },
+  "c8907a2ee4741cfb50070a887ee60d08dade426a63a935185d29b0380906aae0": {
+    "hash": "c8907a2ee4741cfb50070a887ee60d08dade426a63a935185d29b0380906aae0",
+    "id": "dict:0675",
+    "text": "Conifer roots on their own are relatively thick, coarse, and inefficient at foraging through tightly packed organic litter, especially when essential elements remain locked inside tough plant polymers.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.28,
+    "size": 49916
+  },
+  "603af5855ebfb03cbcb078a087b63e9816b52def8f2c7d92a3d036fd7fa6c544": {
+    "hash": "603af5855ebfb03cbcb078a087b63e9816b52def8f2c7d92a3d036fd7fa6c544",
+    "id": "dict:0680",
+    "text": "Modern acoustic tests show another vital benefit: on shallow slopes, voices skimming across the crowd are absorbed by spectators' heavy clothing, whereas steep tiers preserve an unobstructed aerial path to the back rows.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 9.72,
+    "size": 58556
+  },
+  "eefe6b6d77f9ad49a2c523e1d2a9116c437c2d1523dfb84463ca5ea7a579b7b7": {
+    "hash": "eefe6b6d77f9ad49a2c523e1d2a9116c437c2d1523dfb84463ca5ea7a579b7b7",
+    "id": "dict:0685",
+    "text": "Today we are examining one of the most resilient hydraulic inventions of the ancient world: gravity-fed underground aqueducts built across arid high plateaus, known regionally as qanats, karez, or foggaras.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "1465286ca62db4023b3abf7902290d2846dfe402da6f16a607f428abcb17c428": {
+    "hash": "1465286ca62db4023b3abf7902290d2846dfe402da6f16a607f428abcb17c428",
+    "id": "dict:0686",
+    "text": "Our other completed upgrade is right beside the kitchen garden: four huge galvanised rainwater harvesting tanks that capture winter runoff from our shed roofs and gravity-feed water straight into the heirloom vegetable plots.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 9.72,
+    "size": 58556
+  },
+  "c4988d00adb68e5fa9775fdc36f82f9cadf663dc4f4a15ac58c81b74007227a1": {
+    "hash": "c4988d00adb68e5fa9775fdc36f82f9cadf663dc4f4a15ac58c81b74007227a1",
+    "id": "dict:0679",
+    "text": "Even when a voice's lowest fundamental tone is attenuated, the human auditory cortex effortlessly reconstructs the missing bass by interpreting the spacing of upper harmonics that still reach the ear.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "fdd4e049239a2dc09c70af22b281238f7b2bc8a5e829f4a4887b59bb595374e8": {
+    "hash": "fdd4e049239a2dc09c70af22b281238f7b2bc8a5e829f4a4887b59bb595374e8",
+    "id": "dict:0687",
+    "text": "Together, strict supply quotas, navigational secrecy, and shared underwriting instruments allowed leading European guilds to dominate intercontinental luxury trade for several lucrative generations.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "efac010d1ac7965426bc31281255121a96a45fcda64bce2b088dd5ed7c9f1d2b": {
+    "hash": "efac010d1ac7965426bc31281255121a96a45fcda64bce2b088dd5ed7c9f1d2b",
+    "id": "dict:0692",
+    "text": "Moving on to the quantitative record and eventual decline of these monopolies, let's examine how margins and logistics shifted between the seventeenth and late eighteenth centuries.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.66,
+    "size": 46172
+  },
+  "0caae49d724e08b0aa13e4e1778f2da76a991d68e00db30c593122eda0d42f23": {
+    "hash": "0caae49d724e08b0aa13e4e1778f2da76a991d68e00db30c593122eda0d42f23",
+    "id": "dict:0689",
+    "text": "Because a single fungal individual can colonize the roots of dozens of adjacent trees simultaneously, forest stands become physically interconnected underground across remarkably broad patches of woodland.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "af37600fb3f4cba9ce6b5344d68b6d97332b4715210e1629a924155929ab37ec": {
+    "hash": "af37600fb3f4cba9ce6b5344d68b6d97332b4715210e1629a924155929ab37ec",
+    "id": "dict:0694",
+    "text": "Faced with shrinking commodity margins, former guild financiers gradually wound down spice monopolies and redirected their accumulated capital into modernising deep-water harbours across northern Europe.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 7.39,
+    "size": 44588
+  },
+  "debea5eba6120c43acd4d9b64cc6762484a4651a8da1897c474d9518081523fd": {
+    "hash": "debea5eba6120c43acd4d9b64cc6762484a4651a8da1897c474d9518081523fd",
+    "id": "dict:0683",
+    "text": "Rather than being viewed merely as a menace to shipping, surviving bores are now celebrated as seasonal spectacles that attract adventurous surfers eager to ride a single continuous wave for kilometres.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 9.14,
+    "size": 55100
+  },
+  "e2fb859077aadaffa7b476a85f9ad3ab8fc6872a15fba3bac781aca01508311c": {
+    "hash": "e2fb859077aadaffa7b476a85f9ad3ab8fc6872a15fba3bac781aca01508311c",
+    "id": "dict:0693",
+    "text": "That finding makes northern warming doubly concerning: hotter, drier summers are triggering increasingly intense wildfires that burn deep into the upper organic soil, destroying the very fungal communities that lock carbon away.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 9.43,
+    "size": 56828
+  },
+  "16ed79712bf3e20b68dd2eb579b55efe436fe826eee7e0864e2b7c3b7396a150": {
+    "hash": "16ed79712bf3e20b68dd2eb579b55efe436fe826eee7e0864e2b7c3b7396a150",
+    "id": "dict:0691",
+    "text": "Detailed measurements reveal that fungi act like shrewd brokers, stockpiling scarce nutrients and trading them preferentially with hosts that pay the highest carbon price, creating competitive underground markets rather than altruistic communes.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 9.43,
+    "size": 56828
+  },
+  "18ed1aa7ddded8ab5bb4338de3a3e24a30bd3e4da035f2bc4e5e5432f123ba19": {
+    "hash": "18ed1aa7ddded8ab5bb4338de3a3e24a30bd3e4da035f2bc4e5e5432f123ba19",
+    "id": "dict:0696",
+    "text": "That institutional cushion transformed speculative, all-or-nothing maritime expeditions into repeatable commercial enterprises that could absorb the occasional lost hull without collapsing the entire port economy.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 7.39,
+    "size": 44588
+  },
+  "35675148e1addc92891d8141d26c26d64585f94a2d8343421b96fbf7c9ea694e": {
+    "hash": "35675148e1addc92891d8141d26c26d64585f94a2d8343421b96fbf7c9ea694e",
+    "id": "dict:0697",
+    "text": "To make estuaries safer for commercial cargo vessels, port authorities deepened navigation channels through intensive dredging, an intervention that reduced bed resistance and permanently extinguished several historic bores.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "a7c47c502ef21c728146f4747533e880fa99d9bbfff56f5bee9d65a4a9aacd15": {
+    "hash": "a7c47c502ef21c728146f4747533e880fa99d9bbfff56f5bee9d65a4a9aacd15",
+    "id": "dict:0695",
+    "text": "Whereas conventional incandescent bulbs waste most of their electrical energy warming their surroundings, bioluminescent cells convert nearly all of their chemical reaction directly into visible light, releasing practically no heat.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "a610bcb41f204a37f69f44f1c2e04795c9021e5b819defde47ad44ee09230ef4": {
+    "hash": "a610bcb41f204a37f69f44f1c2e04795c9021e5b819defde47ad44ee09230ef4",
+    "id": "dict:0690",
+    "text": "When ecologists try to reproduce those gains across complex wild sites, the results are far more variable, and sometimes connected seedlings perform no better than isolated ones.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "edf69493aea0accff07fb7ddba562fd6ebdbd47b520a4cec4a12bdacc46783c1": {
+    "hash": "edf69493aea0accff07fb7ddba562fd6ebdbd47b520a4cec4a12bdacc46783c1",
+    "id": "dict:0688",
+    "text": "In today's coastal geomorphology seminar, we are looking at one of nature's most dramatic hydraulic reversals: the tidal bore, a distinct wave front that surges upstream against the normal seaward flow of a river.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 10.01,
+    "size": 60284
+  },
+  "d1cd87407b90523482c35f0bcf764e3e36f0da975cf050cc0455510ad7459d34": {
+    "hash": "d1cd87407b90523482c35f0bcf764e3e36f0da975cf050cc0455510ad7459d34",
+    "id": "dict:0700",
+    "text": "Ironically, the very commercial institutions built to defend artificial scarcity ended up creating the accounting practices, underwriting networks, and port infrastructure that laid the foundations for modern globalised shipping.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.54,
+    "size": 51500
+  },
+  "d68da37921b5d54c80897f9683c2d966b526242eacf02024a16aa5c7a73535cf": {
+    "hash": "d68da37921b5d54c80897f9683c2d966b526242eacf02024a16aa5c7a73535cf",
+    "id": "dict:0699",
+    "text": "Maintaining commercial exclusivity across ten thousand kilometres of ocean demanded tight information security as well, because even a single leaked itinerary could invite rival fleets into a lucrative island market.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 8.86,
+    "size": 53372
+  },
+  "31d25e121a275a15a2e59133066e33a61554a7a3ce0e003ed86ad7869e2f6812": {
+    "hash": "31d25e121a275a15a2e59133066e33a61554a7a3ce0e003ed86ad7869e2f6812",
+    "id": "dict:0698",
+    "text": "In short, underground links are undeniably real and ecologically significant, yet their net benefit to any individual tree depends heavily on species mix, soil chemistry, and local competition for light.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 8.83,
+    "size": 53228
+  },
+  "99d296b15df9498409a9fdef555bf74315a9b0fbc861142666cd7679d4826659": {
+    "hash": "99d296b15df9498409a9fdef555bf74315a9b0fbc861142666cd7679d4826659",
+    "id": "dict:0590",
+    "text": "Each time the small bowl filled and sank, a single unit of time elapsed, and sluice gates were shifted to the next plot.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.32,
+    "size": 44156
+  },
+  "9f4e8e5ee158d2c6061e3b310382c5104c56f4ab1f7d57eb64ec62d7b67bebd9": {
+    "hash": "9f4e8e5ee158d2c6061e3b310382c5104c56f4ab1f7d57eb64ec62d7b67bebd9",
+    "id": "dict:0597",
+    "text": "Remember you suggested switching to narrow directional shotgun microphones, and I thought about recording solely on flat, calm nights?",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 190.0,
+    "duration": 6.07,
+    "size": 36668
+  },
+  "cebd535199120ff2272f39d6b091c4941e2f18234180e3548ae6cb7337a85216": {
+    "hash": "cebd535199120ff2272f39d6b091c4941e2f18234180e3548ae6cb7337a85216",
+    "id": "dict:0606",
+    "text": "Lastly, background stress level: obviously we cannot standardise how stressed students feel across two separate weeks.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "640c0d464f972396df50cf68fe99dffb17e83216b158a3afcebb6e59895deb9a": {
+    "hash": "640c0d464f972396df50cf68fe99dffb17e83216b158a3afcebb6e59895deb9a",
+    "id": "dict:0540",
+    "text": "Unlike some older museums, we certainly do not ban photos across the building, and handheld phones or compact cameras are welcome in almost every gallery.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 190.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "f88ee6381b793160521422ad5e9c34e5d8893251cb379f719af9d26bd7a3ca93": {
+    "hash": "f88ee6381b793160521422ad5e9c34e5d8893251cb379f719af9d26bd7a3ca93",
+    "id": "dict:0580",
+    "text": "If the floor was too flat, water stagnated; if it was too steep, fast currents scoured away the tunnel bed.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 190.0,
+    "duration": 6.36,
+    "size": 38396
+  },
+  "d2163b84e77c780608c6e4befee1689045709fb23e6ac1aa3a75f3d092a2e625": {
+    "hash": "d2163b84e77c780608c6e4befee1689045709fb23e6ac1aa3a75f3d092a2e625",
+    "id": "dict:0520",
+    "text": "Before we look at individual sites, we also need to trim our draft report because we are already over the word cap.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 190.0,
+    "duration": 7.01,
+    "size": 42284
+  },
+  "037ad20c0016950d633465657509c620fff0faa670672c4199d064f86c840db8": {
+    "hash": "037ad20c0016950d633465657509c620fff0faa670672c4199d064f86c840db8",
+    "id": "dict:0595",
+    "text": "Yet regular salt brine missed heavier polymers like polyester and PVC, whereas sodium iodide floats those denser particles cleanly to the surface.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 7.01,
+    "size": 42284
+  },
+  "54d9d68b0984d2e6f68d895f4bb74dbc5ffe7742bcbc411875e90defefeac17b": {
+    "hash": "54d9d68b0984d2e6f68d895f4bb74dbc5ffe7742bcbc411875e90defefeac17b",
+    "id": "dict:0607",
+    "text": "What is especially fascinating is that the anglerfish does not synthesize the light-making chemicals inside that lure itself.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.33,
+    "size": 32204
+  },
+  "0a5160d3833744fff5c00a4963de3b54a622ccff20b1b70974f2be4966e691d6": {
+    "hash": "0a5160d3833744fff5c00a4963de3b54a622ccff20b1b70974f2be4966e691d6",
+    "id": "dict:0578",
+    "text": "Families held formal, timed water shares that could be inherited, leased, or traded independently of the land itself.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 190.0,
+    "duration": 5.76,
+    "size": 34796
+  },
+  "a44d00ac67067a6508deb7c3491d8c11d555af4e44918b814dcf6105fbd61802": {
+    "hash": "a44d00ac67067a6508deb7c3491d8c11d555af4e44918b814dcf6105fbd61802",
+    "id": "dict:0563",
+    "text": "Notice how acoustic precision emerged from a partnership between architectural surfaces and the way our brains decode speech.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 190.0,
+    "duration": 5.76,
+    "size": 34796
+  },
+  "6046934fb3256635cae0266c6841652df7c904a775b2c6e5645f2152d57d0a89": {
+    "hash": "6046934fb3256635cae0266c6841652df7c904a775b2c6e5645f2152d57d0a89",
+    "id": "dict:0611",
+    "text": "Protecting boreal resilience therefore means safeguarding both the canopy above and the living network below.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 4.46,
+    "size": 27020
+  },
+  "d8299125d090c34e5d3e99b9df824b39016c6fc701abc238dc87193ef2141e97": {
+    "hash": "d8299125d090c34e5d3e99b9df824b39016c6fc701abc238dc87193ef2141e97",
+    "id": "dict:0623",
+    "text": "Moving on from engineering, let's examine how plateau communities governed water distribution and organised long-term upkeep.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 4.75,
+    "size": 28748
+  },
+  "6d624a2c6523d5e9304379eea8db56b8c34c2a2ac69aa2fc966dafa4bb8c7cec": {
+    "hash": "6d624a2c6523d5e9304379eea8db56b8c34c2a2ac69aa2fc966dafa4bb8c7cec",
+    "id": "dict:0622",
+    "text": "Throughout the works, member dues will be frozen at current rates, and temporary signage will guide you around any closed corridors.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "0a56d097cae899128fa6a7924ae047a3579d2bdfd55a766991fac725e06ef705": {
+    "hash": "0a56d097cae899128fa6a7924ae047a3579d2bdfd55a766991fac725e06ef705",
+    "id": "dict:0636",
+    "text": "Actually, ninety percent of flats picked up caddies in week one, and our bays operate on voluntary drop-off rather than fixed collection days.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "9e3e926e59ce06456adacacccd72ad51063bbb3fe5f0ebf7668ced7e6362e9c0": {
+    "hash": "9e3e926e59ce06456adacacccd72ad51063bbb3fe5f0ebf7668ced7e6362e9c0",
+    "id": "dict:0630",
+    "text": "Traditional industrial clear-cutting strips away the entire canopy at once, exposing soil to heat and starving host-dependent fungi.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 5.33,
+    "size": 32204
+  },
+  "eca22b5fe41e272fabe4aac40a56d64d4da7083c39192965ad91ecf83c410d7f": {
+    "hash": "eca22b5fe41e272fabe4aac40a56d64d4da7083c39192965ad91ecf83c410d7f",
+    "id": "dict:0638",
+    "text": "To measure each household's turn accurately, an appointed water keeper floated a perforated copper bowl inside a larger basin.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.62,
+    "size": 33932
+  },
+  "1f49db358bed2a69e76e3649d7fa3813bfc7d11c74509924537e75db8222c4eb": {
+    "hash": "1f49db358bed2a69e76e3649d7fa3813bfc7d11c74509924537e75db8222c4eb",
+    "id": "dict:0614",
+    "text": "Owen mentioned each filter takes nearly an hour to scan, which is tedious, and our microscope lens is actually crisp enough.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "f27de93a69cc4ade29066ccda26a144d15e7f5f8f081524aa15be02d0e55caf1": {
+    "hash": "f27de93a69cc4ade29066ccda26a144d15e7f5f8f081524aa15be02d0e55caf1",
+    "id": "dict:0632",
+    "text": "Centuries of this periodic flooding have deposited rich mineral silt to form broad agricultural plains flanking the lower reaches of many tidal bore rivers.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 7.1,
+    "size": 42860
+  },
+  "3e9158b6b3bd30bc296976130b99d6933dd8356425649a2f104b02048ea672d8": {
+    "hash": "3e9158b6b3bd30bc296976130b99d6933dd8356425649a2f104b02048ea672d8",
+    "id": "dict:0633",
+    "text": "While loud vowels give speech its raw power, it is actually high-frequency consonants that allow listeners to distinguish words accurately.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 5.93,
+    "size": 35804
+  },
+  "3fd1e40e6b357e3a95c2ddc1c25a1472b36644d8d6d2129ec66851eec05f49dd": {
+    "hash": "3fd1e40e6b357e3a95c2ddc1c25a1472b36644d8d6d2129ec66851eec05f49dd",
+    "id": "dict:0634",
+    "text": "Residents naturally tossed them in, not realising bioplastic linings only break down in high-heat industrial plants, never in backyard bays.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 5.93,
+    "size": 35804
+  },
+  "3c291d9939f52da90832f4526216e4774b90328e45b892927a8ff67717fc2781": {
+    "hash": "3c291d9939f52da90832f4526216e4774b90328e45b892927a8ff67717fc2781",
+    "id": "dict:0639",
+    "text": "Finally, let us confirm the single physical upgrade we are recommending for each of the four courtyards.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.04,
+    "size": 30476
+  },
+  "de39c2bb8a7e1fc0e5fa03cffafcd56401114d9b8cea83252cc4ac606b5306dd": {
+    "hash": "de39c2bb8a7e1fc0e5fa03cffafcd56401114d9b8cea83252cc4ac606b5306dd",
+    "id": "dict:0641",
+    "text": "Alongside blue organs on their flanks, they possess small patches beneath each eye that emit a rare deep-red beam invisible to nearly every other ocean species.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "964fb0e46eb4be8c2fe3033f246a7959c018f5666d5b07fc2e07eb0d51e0ed95": {
+    "hash": "964fb0e46eb4be8c2fe3033f246a7959c018f5666d5b07fc2e07eb0d51e0ed95",
+    "id": "dict:0657",
+    "text": "Moving on from hydrodynamics, let's consider how these recurring surges sculpt estuarine landforms and shape local ecosystems.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 5.04,
+    "size": 30476
+  },
+  "048b4ca3269ddb7a040b1fe55ddf70661dc7e01a569cdb5c4449f804a734833d": {
+    "hash": "048b4ca3269ddb7a040b1fe55ddf70661dc7e01a569cdb5c4449f804a734833d",
+    "id": "dict:0654",
+    "text": "While rivals frequently tried to copy hull carpentry or rigging layouts, the most jealously guarded corporate assets were navigational secrets.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 5.93,
+    "size": 35804
+  },
+  "7943d0b268e5e24703a759db7947f9d8d645148ee4e85b8fec19ba9a2701c21c": {
+    "hash": "7943d0b268e5e24703a759db7947f9d8d645148ee4e85b8fec19ba9a2701c21c",
+    "id": "dict:0643",
+    "text": "Stretching in an unbroken green belt across northern Canada, Scandinavia, and Siberia, the boreal forest forms the largest terrestrial biome on Earth.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 6.5,
+    "size": 39260
+  },
+  "6529c4324a1c802c4096d843fbe8a8be7fdc5ec1353e977d9c03a422fd0c4b4e": {
+    "hash": "6529c4324a1c802c4096d843fbe8a8be7fdc5ec1353e977d9c03a422fd0c4b4e",
+    "id": "dict:0646",
+    "text": "I was going to put down beginner just to play it safe, though I usually ride forty kilometres at around twenty-six kilometres an hour back home.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 7.66,
+    "size": 46172
+  },
+  "a0ebdf8af6e797b2d5818379f78a61077cf6bd35d5388dceb26172ed4ed923dc": {
+    "hash": "a0ebdf8af6e797b2d5818379f78a61077cf6bd35d5388dceb26172ed4ed923dc",
+    "id": "dict:0661",
+    "text": "Almost none of those harbour fragments matched marine epoxy paint or twisted polypropylene rope, and we found virtually no household food-wrapper debris either.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 6.79,
+    "size": 40988
+  },
+  "5021cb52512e1c184cbf86f8caf62212673e32d1cb8e2966229c40f997990d43": {
+    "hash": "5021cb52512e1c184cbf86f8caf62212673e32d1cb8e2966229c40f997990d43",
+    "id": "dict:0672",
+    "text": "Keeping the channel buried underground drastically curbs water loss through evaporation, while also protecting the supply from blowing dust and contamination.",
+    "voice": "en-GB-LibbyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "8121a0452a308859a2f85aadb791207e23fcb438cf232e473fb3974297ed91c2": {
+    "hash": "8121a0452a308859a2f85aadb791207e23fcb438cf232e473fb3974297ed91c2",
+    "id": "dict:0676",
+    "text": "Full-moon nights are unusually quiet so that would bias our error estimate, and checking only low-confidence clips ignores false positives the model feels overly sure about.",
+    "voice": "en-US-AriaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "5388f0dec6f2be2a58e7e7c458e3538281e0fa87685441770a2c24ec3aa2668e": {
+    "hash": "5388f0dec6f2be2a58e7e7c458e3538281e0fa87685441770a2c24ec3aa2668e",
+    "id": "dict:0671",
+    "text": "For families with younger visitors, our hands-on Children's Discovery Deck is also on the southern side of the West Corridor, but further west than the cloakroom.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "100de8d605e35b5d959611450affdfd8a15c7e9dfafabe1e29599ed8460f1f00": {
+    "hash": "100de8d605e35b5d959611450affdfd8a15c7e9dfafabe1e29599ed8460f1f00",
+    "id": "dict:0663",
+    "text": "To be fair, modern in-vessel drums handle citrus peels and coffee grounds effortlessly, and lab tests show their finished compost is every bit as rich as timber-bay soil.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "67c2853abc9740c582673598d2c025c0170b19939fb3f5c1e38aa7bbbb09fefa": {
+    "hash": "67c2853abc9740c582673598d2c025c0170b19939fb3f5c1e38aa7bbbb09fefa",
+    "id": "dict:0651",
+    "text": "Once we priced ongoing electricity bills and annual motor servicing, the running costs blew well past the entire neighbourhood sustainability grant.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "130322035d0ccb3decf7f7cd6b62112b3279b508ddda418f82b27b60d9f1d88e": {
+    "hash": "130322035d0ccb3decf7f7cd6b62112b3279b508ddda418f82b27b60d9f1d88e",
+    "id": "dict:0678",
+    "text": "However, oxygen and luciferin do not flash on their own; the reaction must be accelerated by a specialized enzyme known as luciferase.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 6.5,
+    "size": 39260
+  },
+  "67b442cd967b21674bec59ec07a6ce5af3e2de91c41ee65311bdcf7ad50b776c": {
+    "hash": "67b442cd967b21674bec59ec07a6ce5af3e2de91c41ee65311bdcf7ad50b776c",
+    "id": "dict:0686",
+    "text": "By resuspending buried organic nutrients into sunlit upper layers, the bore stimulates microscopic algal growth that feeds dense nursery populations of juvenile crustaceans.",
+    "voice": "en-US-JennyNeural",
+    "targetWpm": 205.0,
+    "duration": 6.82,
+    "size": 41132
+  },
+  "b239822b86bb4dc3896ccc10be5f5ca88413c2e5ca51d3e2f36ae6e82fc86b04": {
+    "hash": "b239822b86bb4dc3896ccc10be5f5ca88413c2e5ca51d3e2f36ae6e82fc86b04",
+    "id": "dict:0679",
+    "text": "To isolate the pathway, field teams bury ultra-fine nylon mesh screens that block neighbouring tree roots while allowing slender fungal fibres to grow straight through.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 7.39,
+    "size": 44588
+  },
+  "333e177a340cda3f28b96e8034d214a3df16bafed46eb55d62d125b57b34a18a": {
+    "hash": "333e177a340cda3f28b96e8034d214a3df16bafed46eb55d62d125b57b34a18a",
+    "id": "dict:0682",
+    "text": "If you have ever watched a quiet estuary suddenly turn around and rush inland with a thunderous roar, you will understand why bores have fascinated geographers for centuries.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "29ccfb1ff1da9310c35acc64727b7b9aa3b160466ae37aac04fb378e8345b2bb": {
+    "hash": "29ccfb1ff1da9310c35acc64727b7b9aa3b160466ae37aac04fb378e8345b2bb",
+    "id": "dict:0680",
+    "text": "However, your standard adult wristband does include entry to our live traditional rope-making demonstration at two o'clock in the outdoor courtyard, with no extra ticket required.",
+    "voice": "en-GB-ThomasNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "68a31b2bb0ae90673082fc61164ce30dce49954f39354685cfbb6f51dfc5817f": {
+    "hash": "68a31b2bb0ae90673082fc61164ce30dce49954f39354685cfbb6f51dfc5817f",
+    "id": "dict:0691",
+    "text": "Right, yet our spectrograms revealed an abrupt drop in seabird vocalisations every evening along the outer channel, lining up to the minute with the high-speed ferry schedule.",
+    "voice": "en-AU-NatashaNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "63f685aa146e61d30b9800971f2e817289e660225613a9437719c8a4a0e37eea": {
+    "hash": "63f685aa146e61d30b9800971f2e817289e660225613a9437719c8a4a0e37eea",
+    "id": "dict:0693",
+    "text": "Aside from providing doorways and painted scenery, this vertical facade functioned as a massive acoustic backboard, redirecting forward any vocal energy that would otherwise escape behind the theatre.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "24292ec6deda7d7401dda67d8176c2f463eb9dad360f65512958ab303425ad73": {
+    "hash": "24292ec6deda7d7401dda67d8176c2f463eb9dad360f65512958ab303425ad73",
+    "id": "dict:0688",
+    "text": "As global supply multiplied and retail prices tumbled steadily decade after decade, pepper, cinnamon, and nutmeg ceased to be aristocratic status trophies and entered ordinary middle-class domestic kitchens.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "b8e6ec03dabb8dc497ddfaae4ee3bc117ad27090af580912982552551a9e5f23": {
+    "hash": "b8e6ec03dabb8dc497ddfaae4ee3bc117ad27090af580912982552551a9e5f23",
+    "id": "dict:0681",
+    "text": "An oceanic voyage to buy pepper, cloves, or cinnamon exposed merchants to monsoons, reefs, and piracy on a scale that could bankrupt any lone family house.",
+    "voice": "en-US-ChristopherNeural",
+    "targetWpm": 205.0,
+    "duration": 7.68,
+    "size": 46316
+  },
+  "ada7850c30d3877baafd705326a170b304bb2995745f08818664d903feadb78f": {
+    "hash": "ada7850c30d3877baafd705326a170b304bb2995745f08818664d903feadb78f",
+    "id": "dict:0683",
+    "text": "However, nowhere do you specify the exact pore diameter of your glass-fibre filters, so a reader cannot tell what minimum particle size you were able to detect.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 7.94,
+    "size": 47900
+  },
+  "38af69ae7dd847bf802f9c5b24ca7e88fcc1cf1bd293d18e968fb421e5c02943": {
+    "hash": "38af69ae7dd847bf802f9c5b24ca7e88fcc1cf1bd293d18e968fb421e5c02943",
+    "id": "dict:0685",
+    "text": "Moving on from ecological mechanisms, let's examine why several prominent researchers urge healthy scepticism toward sweeping claims about forest-wide sharing.",
+    "voice": "en-GB-SoniaNeural",
+    "targetWpm": 205.0,
+    "duration": 5.9,
+    "size": 35660
+  },
+  "75ccbe70ca0335595b6e6cd0bc7b983e57aa47eb08c2d7959e9199fc32641ded": {
+    "hash": "75ccbe70ca0335595b6e6cd0bc7b983e57aa47eb08c2d7959e9199fc32641ded",
+    "id": "dict:0698",
+    "text": "Water and dissolved minerals can likewise shift along subtle pressure gradients during dry midsummer spells, buffering shallow-rooted youngsters when the top layer of forest moss dries out.",
+    "voice": "en-GB-RyanNeural",
+    "targetWpm": 205.0,
+    "duration": 7.97,
+    "size": 48044
+  },
+  "58b448a9c2e5b91dbf2883dfcce27358e41957d20cc0118bd6a013c6e5231326": {
+    "hash": "58b448a9c2e5b91dbf2883dfcce27358e41957d20cc0118bd6a013c6e5231326",
+    "id": "dict:0700",
+    "text": "This non-destructive, real-time imaging accelerates pharmaceutical trials enormously by revealing within hours whether a candidate compound is shrinking abnormal cell clusters or halting their spread to neighboring organs.",
+    "voice": "en-US-GuyNeural",
+    "targetWpm": 205.0,
+    "duration": 8.26,
+    "size": 49772
+  },
+  "17c91e98f79f1884b6127e4d29b63fc79f9522d4c894166976714593390ec402": {
+    "hash": "17c91e98f79f1884b6127e4d29b63fc79f9522d4c894166976714593390ec402",
+    "id": "dict:0695",
+    "text": "Coastal scientists are therefore combining drone imagery with numerical modelling to predict how estuarine channels will respond over the coming century.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 6.22,
+    "size": 37532
+  },
+  "b6b39a61dd162e313d4c3193f439f8da13b64cb4bed9efdba86c66a88585b197": {
+    "hash": "b6b39a61dd162e313d4c3193f439f8da13b64cb4bed9efdba86c66a88585b197",
+    "id": "dict:0699",
+    "text": "Rehabilitating a damaged gallery requires intensive skilled labour, yet younger villagers increasingly move to cities in search of salaried careers, leaving few apprentices to learn traditional tunnelling methods.",
+    "voice": "en-AU-WilliamNeural",
+    "targetWpm": 205.0,
+    "duration": 8.28,
+    "size": 49916
   }
 }

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "xt:set_001",
+    "title": "Đề thi thử 1 (Listening 4 phần + Reading 3 bài)",
+    "listening": [
+      "lep:p1_res_001",
+      "lep:p2_res_001",
+      "lep:p3_res_001",
+      "lep:p4_res_001"
+    ],
+    "reading": [
+      "rp:p1_res_001",
+      "rp:p2_res_001",
+      "rp:p3_res_001"
+    ],
+    "reserved": true
+  },
+  {
+    "id": "xt:set_002",
+    "title": "Đề thi thử 2 (Listening 4 phần + Reading 3 bài)",
+    "listening": [
+      "lep:p1_res_002",
+      "lep:p2_res_002",
+      "lep:p3_res_002",
+      "lep:p4_res_002"
+    ],
+    "reading": [
+      "rp:p1_res_002",
+      "rp:p2_res_002",
+      "rp:p3_res_002"
+    ],
+    "reserved": true
+  }
+]
