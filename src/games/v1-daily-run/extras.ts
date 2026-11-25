@@ -1,12 +1,19 @@
 import { State } from 'ts-fsrs';
+import { z } from 'zod';
 import {
+  CEFRSchema,
   CollocationItemSchema,
   DictationItemSchema,
   ErrorItemSchema,
   ListeningEpisodeSchema,
   ParaphraseItemSchema,
+  PosSchema,
+  ProvenanceSchema,
   ReadingPassageSchema,
+  TopicSchema,
+  VocabExampleSchema,
   VocabItemSchema,
+  VocabListSchema,
   type DictationItem,
   type ListeningEpisode,
   type ReadingPassage,
@@ -15,6 +22,7 @@ import {
 import {
   loadContent,
   loadContentArray,
+  resolveAssetUrl,
   type LoadContentOptions,
 } from '../../core/content/loaders';
 import { audioFileExists } from '../../core/audio/audioAvailability';
@@ -31,6 +39,101 @@ import {
 
 export { audioFileExists };
 
+const VocabCoreItemSchema = z.object({
+  id: z.string().min(7).refine((v): v is `vocab:${string}` => v.startsWith('vocab:')),
+  headword: z.string().min(1),
+  pos: z.array(PosSchema).min(1),
+  ipa: z.object({
+    uk: z.string().min(1),
+    us: z.string().min(1).optional(),
+  }),
+  meaningVi: z.string().min(1),
+  level: z.number().optional(),
+  cefr: CEFRSchema.optional(),
+  topics: z.array(TopicSchema).min(1),
+  audio: z.object({
+    uk: z.string().min(1),
+    us: z.string().min(1).optional(),
+  }),
+});
+
+export type VocabCoreItem = z.infer<typeof VocabCoreItemSchema>;
+
+const VocabDetailEntrySchema = z.object({
+  definitionEn: z.string().min(1),
+  examples: z.array(VocabExampleSchema).min(1),
+  collocationIds: z.array(
+    z.string().min(5).refine((v): v is `col:${string}` => v.startsWith('col:')),
+  ),
+  register: z.enum(['neutral', 'formal', 'informal']).optional(),
+  lists: z.array(VocabListSchema).optional(),
+  family: z.array(z.object({ form: z.string().min(1), pos: z.string().min(1) })).optional(),
+  synonyms: z.array(z.object({ word: z.string().min(1), noteVi: z.string().optional() })).optional(),
+  vnTrap: z.string().optional(),
+  freqZipf: z.number().optional(),
+  syllables: z.string().optional(),
+  provenance: ProvenanceSchema.optional(),
+});
+
+export type VocabDetailEntry = z.infer<typeof VocabDetailEntrySchema>;
+
+function coreToVocabItem(core: VocabCoreItem): VocabItem {
+  return {
+    id: core.id,
+    headword: core.headword,
+    pos: core.pos,
+    ipa: core.ipa,
+    meaningVi: core.meaningVi,
+    definitionEn: '',
+    examples: [
+      { en: `${core.headword} (${core.pos.join(', ')}) — ${core.meaningVi}` },
+      { en: core.headword },
+    ],
+    collocationIds: [],
+    register: 'formal',
+    topics: core.topics,
+    lists: ['AWL1'],
+    cefr: core.cefr,
+    audio: core.audio,
+    provenance: {
+      createdBy: 'import',
+      source: 'words.core.json',
+      license: 'own',
+      qa: { schema: 'pass' },
+    },
+  };
+}
+
+/** Kiểm tra một VocabItem đã được nạp chi tiết từ `words.detail.json` (hoặc `words.json`) chưa. */
+export function hasVocabDetails(item: VocabItem): boolean {
+  return item.definitionEn.length > 0;
+}
+
+/** Gộp chi tiết từ `words.detail.json` vào danh sách `VocabItem` đã nạp từ `words.core.json`. */
+export function mergeVocabDetails(
+  vocab: readonly VocabItem[],
+  details: Readonly<Record<string, VocabDetailEntry>>,
+): VocabItem[] {
+  return vocab.map((item) => {
+    const d = details[item.id];
+    if (!d) return item;
+    return {
+      ...item,
+      definitionEn: d.definitionEn,
+      examples: d.examples.length >= 2 ? d.examples : [...d.examples, item.examples[1] ?? { en: item.headword }],
+      collocationIds: d.collocationIds,
+      register: d.register ?? item.register,
+      lists: d.lists && d.lists.length > 0 ? d.lists : item.lists,
+      family: d.family ?? item.family,
+      synonyms: d.synonyms ?? item.synonyms,
+      vnTrap: d.vnTrap ?? item.vnTrap,
+      freqZipf: d.freqZipf ?? item.freqZipf,
+      syllables: d.syllables ?? item.syllables,
+      provenance: d.provenance ?? item.provenance,
+    };
+  });
+}
+
 export interface LoadV1Options {
   fetchImpl?: LoadContentOptions['fetchImpl'];
   baseUrl?: string;
@@ -46,8 +149,9 @@ export interface LoadV1Options {
 const silent = { isDev: false, onError: () => undefined };
 
 /**
- * Nạp 5 tập nội dung từ vựng THẬT. Không có fallback sang fixture: nếu thiếu/ hỏng thì ném lỗi
- * để màn chơi hiện lỗi rõ ràng thay vì chơi bằng dữ liệu giả (V1-3).
+ * Nạp 5 tập nội dung từ vựng THẬT (D17: ưu tiên `words.core.json` ~521 KB thay vì `words.json` 4,4 MB,
+ * fallback về `words.json` nếu thiếu; chi tiết/ví dụ mở rộng nạp lười qua `loadV1VocabDetails`).
+ * Không có fallback sang fixture (V1-3).
  */
 export async function loadV1Content(options: LoadV1Options = {}): Promise<V1ContentBundle> {
   const base = {
@@ -56,17 +160,78 @@ export async function loadV1Content(options: LoadV1Options = {}): Promise<V1Cont
     baseUrl: options.baseUrl,
     bypassCache: options.bypassCache,
   };
+
+  const loadVocabPrimary = async (): Promise<VocabItem[]> => {
+    try {
+      const core = await loadContentArray('data/vocab/words.core.json', VocabCoreItemSchema, base);
+      if (core.length > 0) {
+        return core.map(coreToVocabItem);
+      }
+    } catch {
+      // Fallback sang words.json nếu môi trường thiếu words.core.json
+    }
+    return loadContentArray('data/vocab/words.json', VocabItemSchema, base);
+  };
+
   const [vocab, collocations, paraphrases, errors, dictations] = await Promise.all([
-    loadContentArray('data/vocab/words.json', VocabItemSchema, base),
+    loadVocabPrimary(),
     loadContentArray('data/vocab/collocations.json', CollocationItemSchema, base),
     loadContentArray('data/vocab/paraphrases.json', ParaphraseItemSchema, base),
     loadContentArray('data/vocab/error_patterns.json', ErrorItemSchema, base),
     loadContentArray('data/listening/dictation.json', DictationItemSchema, base),
   ]);
   if (vocab.length === 0) {
-    throw new Error('Không có dữ liệu từ vựng (data/vocab/words.json rỗng).');
+    throw new Error('Không có dữ liệu từ vựng (data/vocab/words.core.json rỗng).');
   }
   return { vocab, collocations, paraphrases, errors, dictations };
+}
+
+const rawDetailCache = new Map<string, Record<string, unknown>>();
+
+/**
+ * Nạp lười `data/vocab/words.detail.json` khi cần ví dụ, định nghĩa EN, collocations, vnTrap (D17).
+ * Truyền `itemIds` để chỉ parse zod các từ có trong phiên (tránh chặn main thread trên mobile CPU ×4).
+ */
+export async function loadV1VocabDetails(
+  options: Pick<LoadV1Options, 'fetchImpl' | 'baseUrl' | 'bypassCache'> & {
+    itemIds?: readonly string[];
+  } = {},
+): Promise<Record<string, VocabDetailEntry>> {
+  const url = resolveAssetUrl('data/vocab/words.detail.json', options.baseUrl);
+
+  let rawMap = !options.bypassCache ? rawDetailCache.get(url) : undefined;
+  if (!rawMap) {
+    const fetchFn = options.fetchImpl ?? globalThis.fetch;
+    if (typeof fetchFn !== 'function') {
+      throw new Error(`Fetch API is not available to load ${url}`);
+    }
+    const res = await fetchFn(url);
+    if (!res.ok) {
+      throw new Error(`Failed to load content "${url}": HTTP ${res.status}`);
+    }
+    const parsedJson: unknown = await res.json();
+    if (!parsedJson || typeof parsedJson !== 'object' || Array.isArray(parsedJson)) {
+      throw new Error(`Expected object map at "${url}"`);
+    }
+    rawMap = parsedJson as Record<string, unknown>;
+    rawDetailCache.set(url, rawMap);
+  }
+
+  const keys =
+    options.itemIds && options.itemIds.length > 0
+      ? options.itemIds
+      : Object.keys(rawMap);
+
+  const result: Record<string, VocabDetailEntry> = {};
+  for (const id of keys) {
+    const entry = rawMap[id];
+    if (!entry) continue;
+    const parsed = VocabDetailEntrySchema.safeParse(entry);
+    if (parsed.success) {
+      result[id] = parsed.data;
+    }
+  }
+  return result;
 }
 
 function isEligibleNow(card: SRSCard, nowMs: number): boolean {
