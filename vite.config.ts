@@ -1,7 +1,17 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+
+const realNodeModules = (() => {
+  try {
+    return fs.realpathSync(path.resolve(process.cwd(), 'node_modules'));
+  } catch {
+    return path.resolve(process.cwd(), 'node_modules');
+  }
+})();
 
 // X8: fontsource kèm cả bản .woff cho trình duyệt cũ. Chỉ giữ woff2 để dist nhỏ và không có font thừa.
 const fontsourceWoff2Only = (): Plugin => ({
@@ -43,6 +53,11 @@ const LAZY_CHUNK_GLOBS = [
 ];
 export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/lexicon-arcade/' : '/',
+  server: {
+    fs: {
+      allow: [process.cwd(), realNodeModules],
+    },
+  },
   plugins: [
     fontsourceWoff2Only(),
     cspMeta(),

@@ -840,7 +840,7 @@ export const TodayDashboard: React.FC = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* Cột trái: Mục tiêu & Danh sách nhiệm vụ hôm nay */}
         <div className="lg:col-span-7 space-y-4">
-          <Card padding="md" className="flex items-center justify-between gap-4">
+          <Card padding="md" className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3 min-w-0">
               <img
                 src={`${baseUrl}assets/icons/fluent/ui/goal.webp`}
