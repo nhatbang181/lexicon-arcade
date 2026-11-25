@@ -1,6 +1,9 @@
 # PROGRESS.md – Lexicon Arcade V3 "Lộ trình 8.0"
 
-## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0) · Đợt 2 ✅ (M-Đ2) · **Đợt 3 đang chạy: T3-B ✅ ĐẠT & merge `master` · G1 ✅ ĐẠT** · `r-t3-a` (A3–A4) ∥ `r-t3-c` (C1–C4)
+## Trạng thái hiện tại: Audit-Max Đợt 1 ✅ (G0) · Đợt 2 ✅ (M-Đ2) · **Đợt 3: T3-B ✅ · G1 ✅ · T3-A A1–A4 ✅ đã merge `master` (CI xanh `45540768261`) · T3-C builder xong C1–C5 (`63eb2de`, chờ review)** · Tạm dừng do Gemini 8% < 10% (reset 14:19 giờ VN; Claude 55%)
+- 2026-11-25 10:55 · **Audit-Max Đợt 3 · T3-A merge sớm A1–A4 ✅ (`fec3f28`, CI xanh `45540768261`) + T3-C xong C1–C5 (`63eb2de`)**:
+  - `T3-A` A1–A4 (`r-t3-a` Neon High + `rv-t3-a-early` Claude Sonnet 5.5 ĐẠT): tokens AA 3 theme (144/144), 153 asset Fluent 3D + Lexi 8 trạng thái + Kenney particles + unDraw SVG + Baloo 2, `fx/` (`useMotionPref`, `useFxTier`, `screenPunch` L-7, `fxCanvas`, `celebrate`, `haptic`), `Mascot`, `LiveCard` (3D WebKit-safe).
+  - `T3-C` (`r-t3-c` Neon Medium, `D:\English-wt\T3-C` @ `63eb2de`, chờ review 2 người): PB-05 backup Gộp + zod + nhắc > 7 ngày, PB-09 `persist()` + cảnh báo Safari→PWA iPhone, Four Strands, Mastered + 7 ngày probe, streak freeze, toast SW X9, gắn Lexi/LiveCard/Fluent 3D lên 5 màn khung, 604/604 vitest, 5/5 E2E `daily-loop`, 0 CHẶN audit-ui (40 lượt). Tạm dừng ở cổng vì bể Gemini còn 8% (reset 14:19 giờ VN).
 - 2026-11-25 10:11 · **Audit-Max Đợt 3 · T3-B ✅ ĐẠT & merge `master` + G1 ✅ ĐẠT**:
   - `T3-B` (`r-t3-b` Neon Medium + `rv-data-d5d8` Claude Sonnet 5.5 ĐẠT): 32/32 listening MP3 + 320/320 D4, 2.207/2.207 vocab MP3, 700/700 dictation MP3 (L1–10), D5 2.069/2.069, D8 732/747, D10 213/231 (94,4% sharesLemma), D14 2 bộ ExamTest, D17 `words.core.json`, `xac_minh.md`, `public/audio` 86,91 MB (< 400 MB), `validate:data` exit 0.
   - `G1` (`r-t3-a` Neon High): `contrast.mjs` 144/144 (0 lỗi 3 theme), `assets_credits.mjs` 153/153 (0 lỗi), 10 contact sheet duyệt mắt đạt; sang Chặng 2 (A3–A4 merge sớm `fx/LiveCard/Mascot`) song song `T3-C`.
