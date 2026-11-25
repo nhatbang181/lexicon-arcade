@@ -5,7 +5,13 @@ import { Rating, State } from 'ts-fsrs';
 import { LexiconV3DB } from '../../core/storage/db';
 import { cardRepo, userItemRepo } from '../../core/storage/repos';
 import { createNewCard, scheduleCard, type SRSCard } from '../../core/srs/fsrsAdapter';
-import { loadV1Content, loadV1Extras } from './extras';
+import {
+  hasVocabDetails,
+  loadV1Content,
+  loadV1Extras,
+  loadV1VocabDetails,
+  mergeVocabDetails,
+} from './extras';
 import { createV1Run, getActiveNode, startPlayingFromMap } from './engine';
 
 const NOW = new Date('2026-11-20T09:00:00Z');
@@ -39,11 +45,60 @@ describe('loadV1Extras + loadV1Content (dữ liệu thật)', () => {
     await db.delete();
   });
 
-  it('nạp 5 tập từ vựng thật, không rơi về fixture', async () => {
-    const content = await loadV1Content({ fetchImpl: fakeFetch, baseUrl: '/' });
+  it('nạp 5 tập từ vựng thật từ words.core.json (D17), không rơi về fixture', async () => {
+    const requestedUrls: string[] = [];
+    const trackingFetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+      requestedUrls.push(String(input));
+      return fakeFetch(input, init);
+    }) as typeof fetch;
+
+    const content = await loadV1Content({
+      fetchImpl: trackingFetch,
+      baseUrl: '/',
+      bypassCache: true,
+    });
     expect(content.vocab.length).toBeGreaterThan(2000);
     expect(content.collocations.length).toBeGreaterThan(500);
     expect(content.vocab.some((v) => v.id === 'vocab:curriculum')).toBe(true);
+    expect(requestedUrls.some((u) => u.includes('words.core.json'))).toBe(true);
+    expect(requestedUrls.some((u) => u.endsWith('words.json'))).toBe(false);
+    expect(hasVocabDetails(content.vocab[0])).toBe(false);
+
+    // Nạp lười words.detail.json và gộp chi tiết (definitionEn, examples, collocationIds, vnTrap)
+    const details = await loadV1VocabDetails({
+      fetchImpl: trackingFetch,
+      baseUrl: '/',
+      bypassCache: true,
+    });
+    const merged = mergeVocabDetails(content.vocab, details);
+    const curr = merged.find((v) => v.id === 'vocab:curriculum')!;
+    expect(hasVocabDetails(curr)).toBe(true);
+    expect(curr.definitionEn.length).toBeGreaterThan(10);
+    expect(curr.examples.length).toBeGreaterThanOrEqual(2);
+    expect(curr.collocationIds.length).toBeGreaterThan(0);
+    expect(curr.vnTrap).toContain('syllabus');
+  });
+
+  it('fallback sang words.json khi thiếu words.core.json (D17)', async () => {
+    const requestedUrls: string[] = [];
+    const fallbackFetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+      const url = String(input);
+      requestedUrls.push(url);
+      if (url.includes('words.core.json')) {
+        return new Response('not found', { status: 404 });
+      }
+      return fakeFetch(input, init);
+    }) as typeof fetch;
+
+    const content = await loadV1Content({
+      fetchImpl: fallbackFetch,
+      baseUrl: '/',
+      bypassCache: true,
+    });
+    expect(requestedUrls.some((u) => u.includes('words.core.json'))).toBe(true);
+    expect(requestedUrls.some((u) => u.endsWith('words.json'))).toBe(true);
+    expect(content.vocab.length).toBeGreaterThan(2000);
+    expect(hasVocabDetails(content.vocab[0])).toBe(true);
   });
 
   it('thiếu file dữ liệu thì ném lỗi (không dùng fixture ngầm)', async () => {

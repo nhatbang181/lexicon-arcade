@@ -1,0 +1,292 @@
+{
+ "at": "2026-11-25T08:07:25.139Z",
+ "base": "http://127.0.0.1:5261/#",
+ "runs": [
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "430x932",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "430x932",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1180x820",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1180x820",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1366x768",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "1366x768",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  }
+ ],
+ "total": {
+  "CHAN": 0,
+  "NANG": 0,
+  "NHE": 0
+ },
+ "byCode": {}
+}

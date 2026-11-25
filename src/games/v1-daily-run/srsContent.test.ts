@@ -108,7 +108,7 @@ describe('V1-1 · thẻ mới đi qua intro đúng 1 lần rồi tới gợi nh�
     state = submitNodeAnswer(state, prompt.correctAnswer, 4000, NOW);
     expect(state.reviews).toHaveLength(1);
     expect(state.reviews[0].prevState).toBe(State.New);
-    expect(state.totalXp).toBeGreaterThanOrEqual(5 + 10);
+    expect(state.totalXp).toBe(10);
     const learned = state.updatedCards['vocab:ubiquitous#recog'];
     expect(learned.reps).toBe(1);
     expect(learned.introSeenAt).toBe(NOW.getTime());
@@ -453,7 +453,7 @@ describe('V1-8 / V1-9 / V1-10 / V1-11 / V1-12', () => {
     expect(finished.recap?.tomorrowDueForecast).toBe(1);
   });
 
-  it('V1-12: "Đã xem" không còn +5 XP; +5 chỉ đến ở lượt recog đúng đầu tiên của thẻ mới', () => {
+  it('V1-12: "Đã xem" là 0 XP; XP chỉ đến ở lượt recog đúng đầu tiên (10 XP theo 01-GAME §5)', () => {
     const card = createNewCard('vocab:ubiquitous', 'recog', { now: NOW });
     let s = startPlayingFromMap(createV1Run({ cards: [card], content: V1_FIXTURE_CONTENT, now: NOW }));
     s = submitIntroAction(s, 'seen', NOW);
@@ -461,7 +461,7 @@ describe('V1-8 / V1-9 / V1-10 / V1-11 / V1-12', () => {
     const p = getActiveNode(s)!.prompt;
     if (p.face !== 'recog') throw new Error('phải là recog');
     const after = submitNodeAnswer(s, p.correctAnswer, 4000, NOW);
-    expect(after.totalXp).toBe(15);
+    expect(after.totalXp).toBe(10);
   });
 
   it('V1-8: retry chèn sang chặng sau không sinh checkpoint giả (chỉ 1 checkpoint cho 2 chặng)', () => {

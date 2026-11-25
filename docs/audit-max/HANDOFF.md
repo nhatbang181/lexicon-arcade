@@ -114,3 +114,9 @@
 | 1 | `src/design/components/Pill.tsx:40` & `src/design/components/Sheet.tsx` | T4-A / điều phối | Thêm `shrink-0 whitespace-nowrap` cho `Pill`; nâng z-index `Sheet` cao hơn bottom nav (`z-50` vs `z-40`) | `REVIEW-T3-A-A/B` (pill gãy dòng trên 430px) & `REVIEW-T3-C-B` (bottom nav đè mép Sheet trên mobile) |
 | 2 | `src/app/screens/DevComponentsScreen.tsx:639` & `src/app/providers/AudioProvider.tsx:72` | T4-A / điều phối | Thêm `appearance-none` cho `#dev-sfx-vol`; không ghi đè `sfxVolume=0` khi reload ở trạng thái `muted` | `REVIEW-T3-A-B` (1 NẶNG D10 màn dev + 1 NHẸ) |
 | 3 | `src/features/today/TodayDashboard.tsx` & `src/features/settings/SettingsScreen.tsx` | T4-C / Đợt PB | Rà `variant="primary"` để mỗi màn chỉ có 1 nút chính nổi bật nhất (đổi nút phụ sang `secondary`/`ghost`) | `REVIEW-T3-C-B` (góp ý D6 trên Today khi banner Onboarding hiện và trên Settings) |
+
+## Từ T4-A (Chặng 1 · Cổng G3, 25/11/2026)
+
+| # | File | Chủ | Cần làm | Vì sao |
+|---|---|---|---|---|
+| 1 | `vite.config.ts` | điều phối | Thêm `server: { fs: { allow: ['.', '../..', 'D:/English/node_modules'] } }` (hoặc `searchForWorkspaceRoot`) nếu muốn chạy `vite` dev trong worktree nối symlink `node_modules` mà không gặp 403 cho `@fontsource/*.woff2` | Trong worktree `D:\English-wt\*`, Vite 6 trả `403` cho file `.woff2` từ `D:\English\node_modules\@fontsource\*` ở dev server (bản `vite preview` đóng gói vào `dist/assets/` có 0 lỗi) |
