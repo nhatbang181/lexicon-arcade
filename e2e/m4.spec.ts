@@ -180,7 +180,7 @@ test.describe('M4 Writing: W1 Essay Lab (ChartRenderer + GradingPanel + Portfoli
     test.setTimeout(90_000);
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto('/#/play/w1', { waitUntil: 'networkidle' });
-    await expect(page.getByText(/Essay Lab/i).first()).toBeVisible({ timeout: 15_000 });
+    await expect(page.getByRole('heading', { name: /Phòng luyện viết/i })).toBeVisible({ timeout: 15_000 });
 
     // Open first Task 2 prompt
     await page.getByRole('button', { name: /Viết đề này/i }).first().click();

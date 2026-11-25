@@ -1,0 +1,1165 @@
+{
+ "at": "2026-11-25T01:51:09.159Z",
+ "base": "http://localhost:5223/#",
+ "runs": [
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 1,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 5,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D10",
+     "msg": "control gốc <select select-one> chưa bọc",
+     "rect": [
+      37,
+      761,
+      316,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 5,
+    "infiniteAnims": 5,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 2,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 1
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 11",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      32,
+      685,
+      326,
+      163
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 1,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 5,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D10",
+     "msg": "control gốc <select select-one> chưa bọc",
+     "rect": [
+      37,
+      761,
+      316,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 1
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 11",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      32,
+      685,
+      326,
+      163
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 6,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 10",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 4,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 6,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 10",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 1,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D10",
+     "msg": "control gốc <select select-one> chưa bọc",
+     "rect": [
+      448,
+      409,
+      123,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 12",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      325,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      418,
+      325,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      467,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      418,
+      467,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      617,
+      724,
+      96
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      805,
+      724,
+      286
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 1,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D10",
+     "msg": "control gốc <select select-one> chưa bọc",
+     "rect": [
+      448,
+      409,
+      123,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 12",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      325,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      418,
+      325,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      467,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      418,
+      467,
+      354,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      617,
+      724,
+      96
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      48,
+      805,
+      724,
+      286
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 1,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D10",
+     "msg": "control gốc <select select-one> chưa bọc",
+     "rect": [
+      844,
+      337,
+      123,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 12",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      296,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      532,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      768,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      1004,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      296,
+      386,
+      928,
+      96
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      296,
+      574,
+      928,
+      286
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/w1",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 1,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 7,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "D10",
+     "msg": "control gốc <select select-one> chưa bọc",
+     "rect": [
+      844,
+      337,
+      123,
+      44
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "play/w2",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 13,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": []
+   },
+   "violations": [
+    {
+     "code": "J9",
+     "msg": "màn chơi đứng yên hoàn toàn khi chờ người chơi",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "portfolio",
+   "metrics": {
+    "anims": 0,
+    "infiniteAnims": 0,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 12,
+    "colorIcons": 0,
+    "bigPictures": 0,
+    "mascots": [],
+    "textOnlyBoxes": 6
+   },
+   "violations": [
+    {
+     "code": "M1",
+     "msg": "màn đầu không có minh họa/cảnh ≥ 15% khung nhìn",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M2",
+     "msg": "chỉ 0 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 12",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M3",
+     "msg": "màn khung không có nhân vật dẫn đường [data-mascot]",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M4",
+     "msg": "không có vật nào đang chuyển động",
+     "rect": null,
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      296,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      532,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      768,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      1004,
+      236,
+      220,
+      126
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      296,
+      386,
+      928,
+      96
+     ],
+     "sev": "NẶNG"
+    },
+    {
+     "code": "M5",
+     "msg": "hộp chỉ có chữ (không hình/icon màu)",
+     "rect": [
+      296,
+      574,
+      928,
+      286
+     ],
+     "sev": "NẶNG"
+    }
+   ]
+  }
+ ],
+ "total": {
+  "CHAN": 0,
+  "NANG": 79,
+  "NHE": 0
+ },
+ "byCode": {
+  "D10": 6,
+  "J9": 15,
+  "M1": 8,
+  "M2": 8,
+  "M3": 8,
+  "M4": 8,
+  "M5": 26
+ }
+}

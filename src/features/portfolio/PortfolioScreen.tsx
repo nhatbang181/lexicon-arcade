@@ -301,7 +301,7 @@ export const PortfolioScreen: React.FC = () => {
           <div className="flex items-center gap-2">
             <Button
               variant="ghost"
-              size="sm"
+              size="md"
               leftIcon={<ArrowLeft className="w-4 h-4" />}
               onClick={() => navigate('/hub')}
             >
@@ -322,7 +322,7 @@ export const PortfolioScreen: React.FC = () => {
         <Button
           variant="primary"
           skill="writing"
-          size="sm"
+          size="md"
           leftIcon={<PenTool className="w-4 h-4" />}
           onClick={() => navigate('/play/w1')}
         >

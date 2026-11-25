@@ -837,7 +837,8 @@ export const W2WritingSprints: React.FC<GameProps> = ({ level, onExit }) => {
           <div className="flex items-center gap-3 min-w-0">
             <Button
               variant="ghost"
-              size="sm"
+              size="md"
+              className="min-w-[44px] min-h-[44px]"
               onClick={() => onExit()}
               aria-label="Quay lại"
             >

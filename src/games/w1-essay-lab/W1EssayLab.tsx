@@ -340,6 +340,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
   const [toastMsg, setToastMsg] = useState<string | null>(null);
 
   const sessionStartRef = useRef<number>(Date.now());
+  const elapsedSecRef = useRef<number>(0);
   const progressAttemptIdRef = useRef<number | null>(null);
   const firstGradeRecordedRef = useRef(false);
   const isRetryPromptRef = useRef(false);
@@ -409,6 +410,11 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
   );
   const clicheMatches = useMemo(() => scanCliches(essayText, cliches), [essayText, cliches]);
 
+  // Keep latest elapsedSec in ref so autosave debounce isn't reset every 1s tick (W1-01)
+  useEffect(() => {
+    elapsedSecRef.current = elapsedSec;
+  }, [elapsedSec]);
+
   // Helper: persist draft + in_progress attempt (W1-01, TU-02, F1)
   const persistDraftNow = useCallback(async () => {
     if (lifecycle.stage !== 'write' && lifecycle.stage !== 'revise') return;
@@ -421,7 +427,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
       mode: essayMode,
       text: essayText,
       planNotes,
-      elapsedSec,
+      elapsedSec: elapsedSecRef.current,
       revisionNumber: lifecycle.revisionNumber,
       v1EssayId,
     });
@@ -456,7 +462,6 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
     essayMode,
     essayText,
     planNotes,
-    elapsedSec,
     v1EssayId,
   ]);
 
@@ -1101,14 +1106,14 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
               Phòng luyện viết Academic & Chấm Claude
             </h1>
             <p className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
-              Viết dưới áp lực giờ thi, bắt cụm sáo rỗng theo thời gian thực, copy gói chấm cho Claude và sửa bài để thấy Δ band.
+              Viết dưới áp lực giờ thi, bắt cụm sáo rỗng theo thời gian thực, sao chép gói chấm gửi Claude và sửa bài để xem mức tăng điểm.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
             <Button
               variant="secondary"
-              size="sm"
+              size="md"
               leftIcon={<FolderKanban className="w-4 h-4" />}
               onClick={() => navigate('/portfolio')}
             >
@@ -1117,7 +1122,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
             <Button
               variant="primary"
               skill="writing"
-              size="sm"
+              size="md"
               leftIcon={<Sparkles className="w-4 h-4" />}
               onClick={handleStartSuggested}
             >
@@ -1275,11 +1280,11 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
               </>
             )}
 
-            <div className="ml-auto flex flex-wrap items-center gap-2">
+            <div className="w-full sm:w-auto sm:ml-auto flex flex-wrap items-center gap-3">
               <select
                 value={topicFilter}
                 onChange={(e) => setTopicFilter(e.target.value as Topic | 'all')}
-                className="min-h-[44px] text-xs px-3 py-2 rounded-[var(--radius-sm)] border"
+                className="min-h-[44px] w-full sm:w-auto text-xs px-3 py-2 rounded-[var(--radius-sm)] border"
                 style={{
                   backgroundColor: 'var(--color-surface-2)',
                   borderColor: 'var(--color-border)',
@@ -1295,9 +1300,9 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                 ))}
               </select>
 
-              <div className="relative">
+              <div className="relative w-full sm:w-auto">
                 <Search
-                  className="w-3.5 h-3.5 absolute left-2.5 top-1/2 -translate-y-1/2"
+                  className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2"
                   style={{ color: 'var(--color-text-faint)' }}
                 />
                 <input
@@ -1305,7 +1310,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Tìm đề..."
-                  className="text-xs pl-8 pr-3 py-1.5 rounded-[var(--radius-sm)] border w-44"
+                  className="min-h-[44px] text-xs pl-9 pr-3 py-2 rounded-[var(--radius-sm)] border w-full sm:w-48"
                   style={{
                     backgroundColor: 'var(--color-surface-2)',
                     borderColor: 'var(--color-border)',
@@ -1367,7 +1372,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                       <Button
                         variant="primary"
                         skill="writing"
-                        size="sm"
+                        size="md"
                         rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
                         onClick={() => startTask2(p)}
                       >
@@ -1424,7 +1429,7 @@ export const W1EssayLab: React.FC<GameProps> = ({ mode: initialMode, level, onEx
                     <Button
                       variant="primary"
                       skill="writing"
-                      size="sm"
+                      size="md"
                       rightIcon={<ArrowRight className="w-3.5 h-3.5" />}
                       onClick={() => void startTask1(entry)}
                     >
