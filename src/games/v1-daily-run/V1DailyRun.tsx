@@ -92,11 +92,18 @@ import { buildStarterVocabCards } from './starter';
 import { RunMap } from './RunMap';
 import {
   GameLink,
+  PlaceholderMaskDisplay,
   ProgressSweepBar,
   QuoteHighlight,
   V1ChoiceItem,
   V1FeedbackSection,
 } from './V1JuiceBits';
+
+function getCheckpointMascotLine(maxCombo: number): string {
+  return maxCombo >= 2
+    ? `Nửa đường rồi — combo dài nhất ${maxCombo}!`
+    : 'Xong Chặng 1 rồi — chọn nhánh tiếp theo nhé!';
+}
 
 type LoadState =
   | { kind: 'loading' }
@@ -665,7 +672,7 @@ export const V1DailyRun: React.FC<GameProps> = ({
               title: `Chặng ${next.currentStage + 1}/${next.totalStages} · Đường an toàn`,
               subtitle: 'Tiếp tục lộ trình thẻ đến hạn ổn định.',
               mascotState: 'vui',
-              mascotSay: `Nửa đường rồi — combo dài nhất ${next.maxCombo}!`,
+              mascotSay: getCheckpointMascotLine(next.maxCombo),
             },
       );
     },
@@ -1031,45 +1038,198 @@ export const V1DailyRun: React.FC<GameProps> = ({
   }
 
   if (loadState.kind === 'empty') {
+    const lobbyFeatures = [
+      {
+        icon: resolveAssetUrl('assets/icons/fluent/ui/rocket.webp'),
+        title: '15 từ B2–C1',
+        sub: 'Học thuật cốt lõi',
+      },
+      {
+        icon: resolveAssetUrl('assets/icons/fluent/ui/xp.webp'),
+        title: 'Ngã ba & Boss',
+        sub: 'Đường gai ×1,5 XP',
+      },
+      {
+        icon: resolveAssetUrl('assets/icons/fluent/ui/brain.webp'),
+        title: 'Ôn nhớ lâu',
+        sub: 'Lịch ôn tự động',
+      },
+    ];
+    const allowLobbyMotion = !isExam && fx.tier !== 'reduced';
+
     return (
-      <div className="max-w-xl mx-auto p-4 sm:p-6">
-        <EmptyState
-          title="Chưa có thẻ nào để ôn"
-          description="Làm bài placement 10 phút để mình chọn đúng từ cho trình độ của bạn, hoặc bắt đầu ngay với 15 từ học thuật thường gặp nhất."
-          icon={
-            <motion.span
-              className="inline-flex w-7 h-7 items-center justify-center"
-              animate={fx.allowE1Slide && !isExam ? { y: [0, -5, 0] } : undefined}
-              transition={
-                fx.allowE1Slide && !isExam
-                  ? { duration: 2.2, repeat: Infinity, ease: 'easeInOut' }
-                  : undefined
-              }
-            >
-              <Sparkles className="w-7 h-7" />
-            </motion.span>
+      <div className="max-w-xl mx-auto p-3.5 sm:p-6" data-mascot-ok="true">
+        <style>{`
+          @keyframes v1-lobby-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-4px); }
           }
-          action={
+          .v1-lobby-emblem {
+            animation: v1-lobby-float 2.6s ease-in-out infinite;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .v1-lobby-emblem { animation: none !important; }
+          }
+          [data-reduced-motion="true"] .v1-lobby-emblem {
+            animation: none !important;
+          }
+        `}</style>
+
+        <Card padding="lg" skillAccent="vocab" className="space-y-4 sm:space-y-5">
+          <div className="flex items-start gap-3.5 sm:gap-4">
+            <div
+              className={`w-14 h-14 sm:w-16 sm:h-16 rounded-[var(--radius-lg)] border flex items-center justify-center shrink-0 ${
+                allowLobbyMotion ? 'v1-lobby-emblem' : ''
+              }`}
+              style={{
+                backgroundColor: 'color-mix(in srgb, var(--color-vocab) 14%, var(--color-surface-2))',
+                borderColor: 'color-mix(in srgb, var(--color-vocab) 38%, var(--color-border))',
+              }}
+            >
+              <img
+                src={resolveAssetUrl('assets/icons/fluent/games/v1.webp')}
+                alt=""
+                aria-hidden="true"
+                width={48}
+                height={48}
+                loading="eager"
+                decoding="async"
+                className="w-11 h-11 sm:w-12 sm:h-12 object-contain"
+              />
+            </div>
+
+            <div className="min-w-0 space-y-1.5">
+              <Pill tone="vocab">V1 · Daily Run</Pill>
+              <h1
+                className="font-display text-xl sm:text-2xl font-extrabold leading-tight"
+                style={{ color: 'var(--color-text)' }}
+              >
+                Chưa có thẻ nào để ôn
+              </h1>
+              <p className="text-xs sm:text-sm leading-relaxed" style={{ color: 'var(--color-text-dim)' }}>
+                Bắt đầu ngay với 15 từ học thuật thường gặp, hoặc làm bài placement 10 phút để chọn đúng band của bạn.
+              </p>
+            </div>
+          </div>
+
+          {!isExam && (
+            <div className="flex items-center gap-3">
+              <Mascot
+                state="chao"
+                showBubble={false}
+                size={72}
+                examMode={isExam}
+              />
+              <div
+                className="rounded-[var(--radius-md)] border px-3.5 py-2.5 text-xs sm:text-sm font-medium leading-snug"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                  color: 'var(--color-text)',
+                }}
+              >
+                Nạp 15 từ IELTS cốt lõi để bắt đầu lượt chạy đầu tiên nhé!
+              </div>
+            </div>
+          )}
+
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
+            {lobbyFeatures.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-[var(--radius-md)] border px-2 py-2.5 sm:px-3 sm:py-3 text-center space-y-1"
+                style={{
+                  backgroundColor: 'var(--color-surface-2)',
+                  borderColor: 'var(--color-border)',
+                }}
+              >
+                <img
+                  src={item.icon}
+                  alt=""
+                  aria-hidden="true"
+                  width={28}
+                  height={28}
+                  loading="eager"
+                  decoding="async"
+                  className="w-7 h-7 mx-auto object-contain"
+                />
+                <div className="text-xs font-bold leading-snug" style={{ color: 'var(--color-text)' }}>
+                  {item.title}
+                </div>
+                <div className="text-xs leading-tight hidden sm:block" style={{ color: 'var(--color-text-dim)' }}>
+                  {item.sub}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 pt-1">
             <Button
               variant="primary"
               skill="vocab"
+              className="w-full sm:flex-1 min-h-[48px]"
               loading={starting}
               onClick={() => void handleStartWithStarter()}
               rightIcon={<ArrowRight className="w-4 h-4" />}
             >
               Bắt đầu với 15 từ khởi động
             </Button>
-          }
-          secondaryAction={<GameLink href="#/placement">Làm placement</GameLink>}
-        />
+            <GameLink href="#/placement">Làm placement</GameLink>
+          </div>
+        </Card>
       </div>
     );
   }
 
   if (!runState) {
+    const allowLoadingMotion = !isExam && fx.tier !== 'reduced';
     return (
-      <div className="max-w-3xl mx-auto p-6 text-center" style={{ color: 'var(--color-text-dim)' }}>
-        Đang khởi tạo lộ trình V1 · Daily Run...
+      <div className="max-w-xl mx-auto p-3.5 sm:p-6">
+        <style>{`
+          @keyframes v1-load-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-4px); }
+          }
+          .v1-load-emblem {
+            animation: v1-load-float 2.4s ease-in-out infinite;
+          }
+          @media (prefers-reduced-motion: reduce) {
+            .v1-load-emblem { animation: none !important; }
+          }
+          [data-reduced-motion="true"] .v1-load-emblem {
+            animation: none !important;
+          }
+        `}</style>
+        <Card padding="lg" skillAccent="vocab" className="flex items-center gap-4">
+          <div
+            className={`w-14 h-14 rounded-[var(--radius-lg)] border flex items-center justify-center shrink-0 ${
+              allowLoadingMotion ? 'v1-load-emblem' : ''
+            }`}
+            style={{
+              backgroundColor: 'color-mix(in srgb, var(--color-vocab) 14%, var(--color-surface-2))',
+              borderColor: 'color-mix(in srgb, var(--color-vocab) 38%, var(--color-border))',
+            }}
+          >
+            <img
+              src={resolveAssetUrl('assets/icons/fluent/games/v1.webp')}
+              alt=""
+              aria-hidden="true"
+              width={44}
+              height={44}
+              loading="eager"
+              decoding="async"
+              className="w-11 h-11 object-contain"
+            />
+          </div>
+          <div className="space-y-1">
+            <div className="font-display text-base font-bold" style={{ color: 'var(--color-text)' }}>
+              V1 · Daily Run
+            </div>
+            <div className="text-sm" style={{ color: 'var(--color-text-dim)' }}>
+              Đang chuẩn bị kho thẻ hôm nay...
+            </div>
+          </div>
+        </Card>
       </div>
     );
   }
@@ -1248,51 +1408,74 @@ export const V1DailyRun: React.FC<GameProps> = ({
           </Card>
         </div>
 
-        <RecapScreen
-          scoreLabel={`${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)}`}
-          xpEarned={recap.totalXp}
-          correctCount={recap.firstAttemptCorrect}
-          baseXp={recap.baseXp}
-          comboMultiplier={recap.effectiveComboMultiplier}
-          winStatement={recap.winStatement}
-          accuracyPercent={recap.firstAttemptAccuracy}
-          durationSec={durationSec}
-          mistakes={recap.mistakes.map((m, idx) => ({
-            id: `${m.itemId}-${idx}`,
-            prompt: m.promptLabel,
-            userAnswer: m.userAnswer,
-            correctAnswer: m.correctAnswer,
-            note: m.noteVi,
-          }))}
-          onRetryMistakes={
-            recap.mistakes.length > 0
-              ? () => {
-                  const mistakeIds = new Set(recap.mistakes.map((m) => m.itemId));
-                  const mistakeCards = Object.values(runState.allCardsSnapshot).filter((c) =>
-                    mistakeIds.has(c.itemId),
-                  );
-                  if (mistakeCards.length > 0) {
-                    resetPersistence();
-                    setRunState(
-                      createV1Run({
-                        cards: mistakeCards.slice(0, 5),
-                        content: runState.content,
-                        mode: 'extra_practice',
-                        examMode: isExam,
-                        skillLevel,
-                        now: new Date(),
-                      }),
-                    );
-                  }
-                }
-              : undefined
+        {(() => {
+          const bonusParts: string[] = [];
+          if (recap.comboBonusXp > 0) {
+            bonusParts.push(`${recap.comboBonusXp} XP chuỗi`);
           }
-          nextTask={nextTask}
-          onNextTask={onNextTask}
-          onGoToday={() => onExit(recap)}
-          examMode={isExam}
-          autoCelebrate={true}
-        />
+          if (recap.bossBonusXp > 0) {
+            bonusParts.push(`${recap.bossBonusXp} XP Boss`);
+          }
+          if (recap.sessionCompletionXp > 0) {
+            bonusParts.push(`${recap.sessionCompletionXp} XP phiên`);
+          }
+          const bonusLabel = bonusParts.length > 0 ? bonusParts.join(' · ') : undefined;
+          const recapMascotSay = recap.bossDefeated
+            ? `Đạt ${recap.firstAttemptAccuracy}% lượt đầu và hạ Boss +${recap.bossBonusXp} XP — giữ nhịp này cho ngày mai nhé!`
+            : recap.firstAttemptAccuracy >= 80
+            ? `Đạt ${recap.firstAttemptAccuracy}% lượt đầu (${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)} thẻ) — nhịp nhớ rất chắc!`
+            : `Hoàn thành ${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)} thẻ lượt đầu — mấy từ vấp sẽ quay lại sớm để bạn nhớ hẳn.`;
+
+          return (
+            <RecapScreen
+              scoreLabel={`${recap.firstAttemptCorrect}/${Math.max(1, recap.totalCards)}`}
+              xpEarned={recap.totalXp}
+              correctCount={recap.firstAttemptCorrect}
+              baseXp={recap.baseXp}
+              comboMultiplier={recap.effectiveComboMultiplier}
+              bonusLabel={bonusLabel}
+              mascotSay={recapMascotSay}
+              winStatement={recap.winStatement}
+              accuracyPercent={recap.firstAttemptAccuracy}
+              durationSec={durationSec}
+              mistakes={recap.mistakes.map((m, idx) => ({
+                id: `${m.itemId}-${idx}`,
+                prompt: m.promptLabel,
+                userAnswer: m.userAnswer,
+                correctAnswer: m.correctAnswer,
+                note: m.noteVi,
+              }))}
+              onRetryMistakes={
+                recap.mistakes.length > 0
+                  ? () => {
+                      const mistakeIds = new Set(recap.mistakes.map((m) => m.itemId));
+                      const mistakeCards = Object.values(runState.allCardsSnapshot).filter((c) =>
+                        mistakeIds.has(c.itemId),
+                      );
+                      if (mistakeCards.length > 0) {
+                        resetPersistence();
+                        setRunState(
+                          createV1Run({
+                            cards: mistakeCards.slice(0, 5),
+                            content: runState.content,
+                            mode: 'extra_practice',
+                            examMode: isExam,
+                            skillLevel,
+                            now: new Date(),
+                          }),
+                        );
+                      }
+                    }
+                  : undefined
+              }
+              nextTask={nextTask}
+              onNextTask={onNextTask}
+              onGoToday={() => onExit(recap)}
+              examMode={isExam}
+              autoCelebrate={true}
+            />
+          );
+        })()}
       </div>
     );
   }
@@ -1340,7 +1523,7 @@ export const V1DailyRun: React.FC<GameProps> = ({
             {!isExam && (
               <Mascot
                 state="vui"
-                say={`Nửa đường rồi — combo dài nhất ${runState.maxCombo}!`}
+                say={getCheckpointMascotLine(runState.maxCombo)}
                 size={84}
                 examMode={isExam}
               />
@@ -2066,31 +2249,33 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           </div>
 
           <blockquote
-            className="pl-3 py-1 border-l-2 reading-prose text-sm italic"
+            className="pl-3 py-0.5 border-l-2 text-xs sm:text-sm italic leading-snug"
             style={{ borderColor: 'var(--color-vocab)', color: 'var(--color-text)' }}
           >
             “{prompt.exampleEn}”
           </blockquote>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            {prompt.collocations.map((col, idx) => (
-              <div
-                key={idx}
-                className="px-3 py-2 rounded-[var(--radius-sm)] border text-xs font-semibold"
-                style={{
-                  fontFamily: 'var(--font-mono)',
-                  backgroundColor: 'var(--color-surface-2)',
-                  borderColor: 'var(--color-border)',
-                  color: 'var(--color-vocab)',
-                }}
-              >
-                • {col}
-              </div>
-            ))}
-          </div>
+          {prompt.collocations.length > 0 && (
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+              {prompt.collocations.map((col, idx) => (
+                <div
+                  key={idx}
+                  className="px-2.5 py-1.5 rounded-[var(--radius-sm)] border text-xs font-semibold"
+                  style={{
+                    fontFamily: 'var(--font-mono)',
+                    backgroundColor: 'var(--color-surface-2)',
+                    borderColor: 'var(--color-border)',
+                    color: 'var(--color-vocab)',
+                  }}
+                >
+                  • {col}
+                </div>
+              ))}
+            </div>
+          )}
 
           {prompt.vnTrap && (
-            <p className="text-xs" style={{ color: 'var(--color-partial)' }}>
+            <p className="text-xs leading-snug" style={{ color: 'var(--color-partial)' }}>
               💡 {prompt.vnTrap}
             </p>
           )}
@@ -2107,9 +2292,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           breathing={false}
           tilt={fx.allowE2Living}
           backContent={backFace}
-          className="min-h-[260px]"
+          className="min-h-[348px]"
         >
-          <div className="min-h-[220px] flex flex-col justify-between gap-4">
+          <div className="min-h-[308px] flex flex-col justify-between gap-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <h2 className="font-display text-3xl font-extrabold" style={{ color: 'var(--color-text)' }}>
@@ -2153,7 +2338,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
 
             <div className="flex items-center justify-between gap-2">
               <span className="text-xs" style={{ color: 'var(--color-text-dim)' }}>
-                Lật mặt sau để xem ví dụ & 2 collocations
+                {prompt.collocations.length > 0
+                  ? `Lật mặt sau để xem ví dụ & ${prompt.collocations.length} collocation`
+                  : 'Lật mặt sau để xem ví dụ ngữ cảnh'}
               </span>
               <Button
                 variant="secondary"
@@ -2243,18 +2430,13 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
         </div>
 
         <div
-          className="px-3.5 py-2 rounded-[var(--radius-sm)] border flex items-center justify-between gap-3"
+          className="px-3 py-2 rounded-[var(--radius-sm)] border flex items-center justify-between gap-2.5"
           style={{
             backgroundColor: 'var(--color-surface-2)',
             borderColor: 'var(--color-border)',
           }}
         >
-          <span
-            className="text-base sm:text-lg font-bold tracking-widest"
-            style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-vocab)' }}
-          >
-            {prompt.placeholderMask}
-          </span>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="lg" />
           <span
             className="text-xs font-semibold tabular-nums shrink-0"
             style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-text-dim)' }}
@@ -2288,9 +2470,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           </p>
         </div>
 
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>Gợi ý khung: {prompt.placeholderMask}</span>
-          <span>{prompt.letterCount} chữ cái</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Gợi ý khung:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
 
         {renderTypedInput(prompt.placeholderMask, 'Điền từ vào chỗ trống')}
@@ -2338,9 +2520,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           />
         </div>
 
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>Khung từ: {prompt.placeholderMask}</span>
-          <span>{prompt.letterCount} chữ cái</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Khung từ:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
 
         {renderTypedInput(prompt.placeholderMask, 'Gõ chính tả từ vừa nghe')}
@@ -2490,9 +2672,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
           />
         </div>
 
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>Khung: {prompt.placeholderMask}</span>
-          <span>{prompt.letterCount} chữ cái</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Khung:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
         {renderTypedInput(prompt.placeholderMask, 'Gõ đáp án nghe được')}
       </div>
@@ -2570,9 +2752,9 @@ function renderFaceContent(params: RenderFaceContentParams): React.ReactNode {
             {prompt.front}
           </p>
         </div>
-        <div className="flex items-center justify-between text-xs" style={{ color: 'var(--color-text-dim)' }}>
-          <span style={{ fontFamily: 'var(--font-mono)' }}>Khung sửa đúng: {prompt.placeholderMask}</span>
-          <span>{prompt.letterCount} chữ cái</span>
+        <div className="flex items-center justify-between gap-2 text-xs" style={{ color: 'var(--color-text-dim)' }}>
+          <PlaceholderMaskDisplay mask={prompt.placeholderMask} size="sm" prefix="Khung sửa đúng:" />
+          <span className="shrink-0">{prompt.letterCount} chữ cái</span>
         </div>
         {renderTypedInput(prompt.placeholderMask, 'Gõ bản sửa đúng')}
       </div>

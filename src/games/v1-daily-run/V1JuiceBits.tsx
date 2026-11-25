@@ -289,6 +289,46 @@ export const QuoteHighlight: React.FC<{ text: string; quote?: string }> = ({ tex
   );
 };
 
+/**
+ * Hiển thị khung từ gõ (`c _ _ _ _ _ _ _ _ _`) không bị rơi lẻ 1 dấu `_` xuống dòng mới
+ * trên màn nhỏ (375–390px): mỗi từ trong cụm tách theo ` · ` được giữ `whitespace-nowrap`.
+ */
+export const PlaceholderMaskDisplay: React.FC<{
+  mask: string;
+  size?: 'lg' | 'sm';
+  prefix?: string;
+}> = ({ mask, size = 'lg', prefix }) => {
+  const segments = mask.split(' · ');
+  const isLg = size === 'lg';
+  return (
+    <span
+      className={`inline-flex flex-wrap items-center gap-x-2 gap-y-1 min-w-0 max-w-full overflow-x-auto ${
+        isLg
+          ? 'text-sm sm:text-base font-bold tracking-[0.06em] sm:tracking-[0.14em]'
+          : 'text-xs font-semibold tracking-[0.05em] sm:tracking-[0.1em]'
+      }`}
+      style={{
+        fontFamily: 'var(--font-mono)',
+        color: isLg ? 'var(--color-vocab)' : 'var(--color-text-dim)',
+      }}
+    >
+      {prefix && (
+        <span className="font-sans font-normal tracking-normal shrink-0">{prefix}</span>
+      )}
+      {segments.map((seg, idx) => (
+        <React.Fragment key={idx}>
+          {idx > 0 && (
+            <span aria-hidden="true" className="opacity-60">
+              ·
+            </span>
+          )}
+          <span className="whitespace-nowrap">{seg}</span>
+        </React.Fragment>
+      ))}
+    </span>
+  );
+};
+
 const TYPEWRITER_MS = 18;
 
 /**
@@ -302,8 +342,13 @@ export const V1FeedbackSection: React.FC<{
   fx: FxTierCapabilities;
   onNext: () => void;
 }> = ({ feedback, isBossPhase, examMode, fx, onNext }) => {
+  const vnTrapAlreadyInTip =
+    Boolean(feedback.vnTrap) &&
+    Boolean(feedback.nextTipVi && feedback.nextTipVi.includes(feedback.vnTrap!));
   const fullExplanation =
-    feedback.vnTrap && !feedback.explanationVi.includes(feedback.vnTrap)
+    feedback.vnTrap &&
+    !vnTrapAlreadyInTip &&
+    !feedback.explanationVi.includes(feedback.vnTrap)
       ? `${feedback.explanationVi} · Lưu ý: ${feedback.vnTrap}`
       : feedback.explanationVi;
 

@@ -480,6 +480,8 @@ export interface V1RecapSummary {
   totalXp: number;
   baseXp: number;
   effectiveComboMultiplier: number;
+  comboBonusXp: number;
+  bossBonusXp: number;
   sessionCompletionXp: number;
   maxCombo: number;
   bossDefeated: boolean;
@@ -1073,9 +1075,6 @@ function resolveCollocationPhrases(
       }
     }
   }
-  while (found.length < 2) {
-    found.push(`${vocab.headword} (${vocab.pos[0] ?? 'n'})`);
-  }
   return found.slice(0, 2);
 }
 
@@ -1565,8 +1564,8 @@ export interface V1TurnXpInput {
  * Kinh tế XP thống nhất (01-GAME.md §5):
  * - Gợi nhớ đúng lượt đầu (recog / para_match / tfng_retry / head_retry): 10 XP × combo (trần ×2)
  * - Sản xuất / gõ đúng lượt đầu (recall_* / listen_spell / col_gap / err_* / dict_full / ltrap): 15 XP × combo (trần ×2)
- * - Combo: ×1 (<5), ×1,5 (≥5), ×2 (≥10), trần ×2
- * - Đường gai (Run Fork): ×1,5 (tôn trọng trần hợp lý ×2,5)
+ * - Combo: ×1 (<5), ×1,5 (≥5), ×2 (≥10), trần cứng ×2
+ * - Đường gai (Run Fork): thưởng rủi ro cộng thêm +50% XP gốc (tách biệt với trần combo ×2)
  * - Retry, Extra Practice, "Đã xem", Exam, Again: 0 XP
  */
 export function computeV1TurnXp(input: V1TurnXpInput): number {
@@ -1586,11 +1585,9 @@ export function computeV1TurnXp(input: V1TurnXpInput): number {
 
   const base = face && isProductionFace(face) ? 15 : 10;
   const comboMult = Math.min(MAX_COMBO_MULTIPLIER, getComboMultiplier(combo));
-  const effectiveMult = isThornyPath
-    ? Math.min(2.5, comboMult * THORNY_PATH_XP_MULT)
-    : comboMult;
+  const thornyBonus = isThornyPath ? Math.round(base * (THORNY_PATH_XP_MULT - 1)) : 0;
 
-  return Math.round(base * effectiveMult);
+  return Math.round(base * comboMult) + thornyBonus;
 }
 
 /** Thưởng hoàn thành phiên: +20 XP lần đầu ngày, +5 XP các lần sau trong ngày; 0 ở Exam / Extra Practice. */
@@ -3017,7 +3014,7 @@ export function submitNodeAnswer(
     charDiff: outcome.charDiff,
     wrongCharNotice: outcome.wrongCharNotice,
     spellingAnalysis: outcome.spellingAnalysis,
-    autoAdvanceMs: outcome.status === 'correct' ? 900 : undefined,
+    autoAdvanceMs: outcome.status === 'correct' ? 800 : undefined,
   };
 
   return {
@@ -3244,7 +3241,26 @@ function buildRecapSummary(
     maxCombo: state.maxCombo,
   });
 
-  const effectiveComboMultiplier = getComboMultiplier(state.maxCombo);
+  const bossBonusXp =
+    state.bossDefeated && !state.isExtraPractice && !state.examMode ? BOSS_DEFEAT_XP : 0;
+  const turnXpTotal = Math.max(0, state.totalXp - bossBonusXp - sessionCompletionXp);
+  const rawTurnBonus = Math.max(0, turnXpTotal - state.baseXpTotal);
+  let effectiveComboMultiplier = 1;
+  let comboBonusXp = 0;
+
+  if (state.baseXpTotal > 0 && rawTurnBonus > 0) {
+    const candidateMult = Number((turnXpTotal / state.baseXpTotal).toFixed(1));
+    if (
+      candidateMult > 1 &&
+      Math.round(state.baseXpTotal * candidateMult) === turnXpTotal
+    ) {
+      effectiveComboMultiplier = candidateMult;
+    } else {
+      comboBonusXp = rawTurnBonus;
+    }
+  } else if (rawTurnBonus > 0) {
+    comboBonusXp = rawTurnBonus;
+  }
 
   return {
     totalCards: state.firstAttemptTotalCount,
@@ -3256,6 +3272,8 @@ function buildRecapSummary(
     totalXp: state.totalXp,
     baseXp: state.baseXpTotal,
     effectiveComboMultiplier,
+    comboBonusXp,
+    bossBonusXp,
     sessionCompletionXp,
     maxCombo: state.maxCombo,
     bossDefeated: state.bossDefeated,
@@ -3435,7 +3453,7 @@ export function chooseCheckpointFork(
     ...state,
     phase: 'playing',
     nodes: nextNodes,
-    totalStages: Math.max(state.currentStage + 1, state.totalStages),
+    totalStages: state.currentStage + 1,
     chosenForkPath: 'thorny',
     events: [
       ...state.events,

@@ -511,7 +511,14 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     expect(state.totalXp).toBe(xpBeforeBossKills + BOSS_DEFEAT_XP + SESSION_COMPLETE_FIRST_XP);
     expect(state.phase).toBe('recap');
     expect(state.recap?.bossDefeated).toBe(true);
+    expect(state.recap?.bossBonusXp).toBe(BOSS_DEFEAT_XP);
     expect(state.recap?.sessionCompletionXp).toBe(SESSION_COMPLETE_FIRST_XP);
+    expect(
+      Math.round((state.recap?.baseXp ?? 0) * (state.recap?.effectiveComboMultiplier ?? 1)) +
+        (state.recap?.comboBonusXp ?? 0) +
+        (state.recap?.bossBonusXp ?? 0) +
+        (state.recap?.sessionCompletionXp ?? 0),
+    ).toBe(state.recap?.totalXp);
   });
 
   it('15. unified XP economy (01-GAME §5): recall 10 XP, production 15 XP, combo ×1/×1.5/×2 cap ×2, session +20/+5, retry/exam 0 XP', () => {
@@ -836,10 +843,11 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     expect(safeRun.chosenForkPath).toBe('safe');
     expect(safeRun.nodes.length).toBe(atCheckpoint.nodes.length);
 
-    // Nhánh Đường gai rút đúng 5 thẻ khó nhất và gắn cờ isThornyNode (×1.5 XP)
+    // Nhánh Đường gai rút đúng 5 thẻ khó nhất, cập nhật totalStages và gắn cờ isThornyNode (+50% XP gốc)
     const thornyRun = chooseCheckpointFork(atCheckpoint, 'thorny');
     expect(thornyRun.phase).toBe('playing');
     expect(thornyRun.chosenForkPath).toBe('thorny');
+    expect(thornyRun.totalStages).toBe(atCheckpoint.currentStage + 1);
     const thornyNodes = thornyRun.nodes.slice(thornyRun.currentIndex);
     expect(thornyNodes.length).toBe(preview.length);
     expect(thornyNodes.every((n) => n.isThornyNode === true)).toBe(true);
@@ -936,6 +944,30 @@ describe('V1 · Daily Run Engine & Fixtures', () => {
     const after = getActiveNode(hydrated)!;
     expect(after.prompt.face === 'recall_meaning' && after.prompt.definitionEn.length).toBeGreaterThan(5);
     expect(hydrated.currentIndex).toBe(run.currentIndex);
+  });
+
+  it('26. intro không chèn collocation giả dạng "headword (pos)" khi từ chưa có collocation/synonym thật', () => {
+    const bareWord = {
+      ...V1_FIXTURE_VOCAB[0],
+      id: 'vocab:bare_word' as const,
+      headword: 'alleviate',
+      collocationIds: [],
+      synonyms: [],
+    };
+    const bareCard = createNewCard('vocab:bare_word', 'recog', {
+      now: FIXED_NOW,
+      unlocked: true,
+    });
+    const run = createV1Run({
+      cards: [bareCard],
+      content: { ...V1_FIXTURE_CONTENT, vocab: [...V1_FIXTURE_VOCAB, bareWord] },
+      now: FIXED_NOW,
+    });
+    const introNode = run.nodes.find((n) => n.itemId === 'vocab:bare_word');
+    expect(introNode?.prompt.face).toBe('intro');
+    if (introNode && introNode.prompt.face === 'intro') {
+      expect(introNode.prompt.collocations).toEqual([]);
+    }
   });
 });
 

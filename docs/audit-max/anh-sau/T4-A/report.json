@@ -1,10 +1,64 @@
 {
- "at": "2026-11-25T08:07:25.139Z",
+ "at": "2026-11-25T09:07:55.060Z",
  "base": "http://127.0.0.1:5261/#",
  "runs": [
   {
    "vp": "390x844",
    "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 328
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "dark",
    "route": "play/v1",
    "metrics": {
     "anims": 1,
@@ -15,8 +69,8 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
+    "monoIcons": 2,
+    "colorIcons": 1,
     "bigPictures": 0,
     "mascots": []
    },
@@ -25,7 +79,7 @@
   {
    "vp": "390x844",
    "theme": "light",
-   "route": "play/v1",
+   "route": "today",
    "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
@@ -35,17 +89,77 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
+    "monoIcons": 11,
+    "colorIcons": 8,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 328
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 9,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 324
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "390x844",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
     "bigPictures": 0,
-    "mascots": []
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
    },
    "violations": []
   },
   {
    "vp": "375x667",
    "theme": "dark",
-   "route": "play/v1",
+   "route": "today",
    "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
@@ -55,17 +169,84 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
+    "monoIcons": 11,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 313
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 5,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M2",
+     "msg": "chỉ 5 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 8",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "dark",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
     "bigPictures": 0,
-    "mascots": []
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
    },
    "violations": []
   },
   {
    "vp": "375x667",
    "theme": "light",
-   "route": "play/v1",
+   "route": "today",
    "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
@@ -75,10 +256,131 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
+    "monoIcons": 11,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 313
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 8,
+    "colorIcons": 5,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 309
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": [
+    {
+     "code": "M2",
+     "msg": "chỉ 5 icon màu ≥ 32px (cần ≥ 6); icon nét đơn sắc: 8",
+     "rect": null,
+     "sev": "NẶNG"
+    }
+   ]
+  },
+  {
+   "vp": "375x667",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
     "bigPictures": 0,
-    "mascots": []
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "430x932",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 11,
+    "colorIcons": 9,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 368
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "430x932",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 364
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -87,6 +389,32 @@
    "theme": "dark",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "430x932",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -95,10 +423,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 11,
+    "colorIcons": 9,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 368
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "430x932",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 10,
+    "colorIcons": 6,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 364
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -107,6 +469,32 @@
    "theme": "light",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -115,10 +503,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 15,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 18,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -127,6 +549,32 @@
    "theme": "dark",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -135,10 +583,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 15,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "820x1180",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 18,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -147,6 +629,32 @@
    "theme": "light",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "1180x820",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -155,10 +663,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 17,
+    "colorIcons": 10,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1180x820",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 14,
+    "colorIcons": 9,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -167,6 +709,32 @@
    "theme": "dark",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "1180x820",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -175,10 +743,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 17,
+    "colorIcons": 10,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1180x820",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 14,
+    "colorIcons": 9,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -187,6 +789,32 @@
    "theme": "light",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -195,10 +823,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 17,
+    "colorIcons": 10,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -207,6 +869,32 @@
    "theme": "dark",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -215,10 +903,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 17,
+    "colorIcons": 10,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1280x800",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -227,6 +949,32 @@
    "theme": "light",
    "route": "play/v1",
    "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
+    "bigPictures": 0,
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
+   },
+   "violations": []
+  },
+  {
+   "vp": "1366x768",
+   "theme": "dark",
+   "route": "today",
+   "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
     "escapes": 0,
@@ -235,10 +983,44 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
-    "bigPictures": 0,
-    "mascots": []
+    "monoIcons": 18,
+    "colorIcons": 10,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1366x768",
+   "theme": "dark",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
    },
    "violations": []
   },
@@ -247,7 +1029,7 @@
    "theme": "dark",
    "route": "play/v1",
    "metrics": {
-    "anims": 1,
+    "anims": 2,
     "infiniteAnims": 1,
     "escapes": 0,
     "overflowX": 0,
@@ -255,17 +1037,23 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
     "bigPictures": 0,
-    "mascots": []
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
    },
    "violations": []
   },
   {
    "vp": "1366x768",
    "theme": "light",
-   "route": "play/v1",
+   "route": "today",
    "metrics": {
     "anims": 1,
     "infiniteAnims": 1,
@@ -275,18 +1063,80 @@
     "nativeControls": 0,
     "tinyText": 0,
     "jargon": 0,
-    "monoIcons": 4,
-    "colorIcons": 0,
+    "monoIcons": 18,
+    "colorIcons": 10,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 376
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1366x768",
+   "theme": "light",
+   "route": "hub",
+   "metrics": {
+    "anims": 1,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 17,
+    "colorIcons": 11,
+    "bigPictures": 1,
+    "mascots": [
+     {
+      "state": "co-vu",
+      "h": 84,
+      "w": 290
+     }
+    ],
+    "textOnlyBoxes": 0
+   },
+   "violations": []
+  },
+  {
+   "vp": "1366x768",
+   "theme": "light",
+   "route": "play/v1",
+   "metrics": {
+    "anims": 2,
+    "infiniteAnims": 1,
+    "escapes": 0,
+    "overflowX": 0,
+    "smallTargets": 0,
+    "nativeControls": 0,
+    "tinyText": 0,
+    "jargon": 0,
+    "monoIcons": 3,
+    "colorIcons": 2,
     "bigPictures": 0,
-    "mascots": []
+    "mascots": [
+     {
+      "state": "chao",
+      "h": 80,
+      "w": 80
+     }
+    ]
    },
    "violations": []
   }
  ],
  "total": {
   "CHAN": 0,
-  "NANG": 0,
+  "NANG": 2,
   "NHE": 0
  },
- "byCode": {}
+ "byCode": {
+  "M2": 2
+ }
 }
