@@ -74,11 +74,12 @@ export const AudioProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         .then((profile) => {
           if (!profile || typeof profile.sfxVolume !== 'number') return;
           const vol = normalizeVolumeScale(profile.sfxVolume);
-          setSfxVolumeState(vol);
-          sfxEngine.setVolume(vol);
           if (vol === 0) {
             setMutedState(true);
             sfxEngine.setMuted(true);
+          } else {
+            setSfxVolumeState(vol);
+            sfxEngine.setVolume(vol);
           }
         })
         .catch(() => undefined);

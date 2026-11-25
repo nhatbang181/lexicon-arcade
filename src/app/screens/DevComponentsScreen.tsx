@@ -644,7 +644,8 @@ export const DevComponentsScreen: React.FC = () => {
               value={muted ? 0 : sfxVolume}
               onChange={(e) => setSfxVolume(Number(e.target.value))}
               aria-label="Âm lượng SFX"
-              className="w-28 min-h-[44px]"
+              className="w-28 min-h-[44px] appearance-none bg-transparent cursor-pointer"
+              style={{ accentColor: 'var(--color-vocab)' }}
             />
             <Button size="sm" variant="secondary" onClick={toggleMute}>
               {muted ? 'Bật âm' : 'Tắt âm'}
