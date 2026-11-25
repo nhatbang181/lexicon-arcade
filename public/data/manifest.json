@@ -1,6 +1,6 @@
 {
   "version": "3.0.0",
-  "builtAt": "2026-11-25T02:53:00.805Z",
+  "builtAt": "2026-11-25T02:57:17.146Z",
   "totals": {
     "examTests": 2,
     "dictation": 700,
@@ -294,7 +294,7 @@
       "count": 62
     },
     "vocab/collocations.json": {
-      "sha256": "17e44f67d5528c704ef407509ca02a5e9789957dce3fbe4ed8167e428aecc6b9",
+      "sha256": "175e3b38571ee901db9d3ae376d428e3734650d77b0d1c5acd147ae134404a44",
       "count": 762
     },
     "vocab/error_patterns.json": {
@@ -314,11 +314,11 @@
       "count": 2207
     },
     "vocab/words.detail.json": {
-      "sha256": "9350d00014325c64a000811acdb03817f80a79e54f2c6278c72cb399df6d1548",
+      "sha256": "423e652e86121c6c7221060b4809312b5ce96e21f4a63e7282f80670b57e185d",
       "count": 1
     },
     "vocab/words.json": {
-      "sha256": "e2021aa6fe09e4febae6d08bc071932ecbc7fa2f7c5e2d14d811469aede67b8d",
+      "sha256": "a4e41070c608037a537db57d1e3f8f59ad5be3d1ce5e436550b34b635822732a",
       "count": 2207
     },
     "writing/cliches.json": {

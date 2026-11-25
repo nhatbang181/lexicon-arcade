@@ -1,0 +1,1837 @@
+[
+ {
+  "id": "vocab:digital_twin",
+  "headword": "digital twin",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A dynamic virtual replica of a physical object, building, or urban system continuously updated with live sensor data.",
+  "meaningVi": "bản sao số mô phỏng theo thời gian thực một đối tượng",
+  "existingExample": "Civil engineers construct a digital twin of an ageing bridge to simulate extreme wind loads before approving structural repairs.",
+  "mustContainOneOf": [
+   "digital twin",
+   "digital-twin"
+  ]
+ },
+ {
+  "id": "vocab:haptic",
+  "headword": "haptic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Relating to technologies that simulate the sense of touch through controlled forces, vibrations, or physical motion.",
+  "meaningVi": "thuộc xúc giác, tạo cảm giác rung chạm mô phỏng",
+  "existingExample": "Advanced haptic gloves enable trainee surgeons to feel realistic tissue resistance during virtual-reality operating simulations.",
+  "mustContainOneOf": [
+   "haptic"
+  ]
+ },
+ {
+  "id": "vocab:autonomous_systems",
+  "headword": "autonomous systems",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Hardware and software platforms capable of perceiving environments and executing complex tasks with minimal human intervention.",
+  "meaningVi": "hệ thống tự hành có khả năng tự quyết định",
+  "existingExample": "Establishing clear legal liability remains a major obstacle before autonomous systems can safely manage urban airspace.",
+  "mustContainOneOf": [
+   "autonomous systems",
+   "autonomous-systems"
+  ]
+ },
+ {
+  "id": "vocab:predictive_analytics",
+  "headword": "predictive analytics",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The use of statistical algorithms and machine learning on historical datasets to forecast future outcomes or behaviours.",
+  "meaningVi": "phân tích dự báo xu hướng từ dữ liệu lịch sử",
+  "existingExample": "Power utilities apply predictive analytics to anticipate seasonal demand spikes and prevent cascading regional blackouts.",
+  "mustContainOneOf": [
+   "predictive analytics",
+   "predictive-analytics"
+  ]
+ },
+ {
+  "id": "vocab:data_sovereignty",
+  "headword": "data sovereignty",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The legal rule that digital data falls under the privacy laws of the nation where it is collected.",
+  "meaningVi": "chủ quyền dữ liệu thuộc phạm vi pháp lý quốc gia",
+  "existingExample": "Heightened concerns over data sovereignty have prompted several nations to require cloud providers to store citizen records domestically.",
+  "mustContainOneOf": [
+   "data sovereignty",
+   "data-sovereignty"
+  ]
+ },
+ {
+  "id": "vocab:data_anonymisation",
+  "headword": "data anonymisation",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The technical removal or encryption of personally identifiable attributes from datasets so individuals cannot be traced.",
+  "meaningVi": "quy trình ẩn danh hóa dữ liệu nhằm bảo vệ danh tính",
+  "existingExample": "Strict data anonymisation allows university epidemiologists to share hospital records globally without breaching patient confidentiality.",
+  "mustContainOneOf": [
+   "data anonymisation",
+   "data anonymization",
+   "data-anonymisation",
+   "data-anonymization"
+  ]
+ },
+ {
+  "id": "vocab:algorithmic_transparency",
+  "headword": "algorithmic transparency",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Openness regarding the data inputs, logic, and evaluation criteria used by automated decision-making systems.",
+  "meaningVi": "tính minh bạch trong cách thức thuật toán ra quyết định",
+  "existingExample": "Civil liberties advocates insist on algorithmic transparency whenever automated software screens job applicants or credit requests.",
+  "mustContainOneOf": [
+   "algorithmic transparency",
+   "algorithmic-transparency"
+  ]
+ },
+ {
+  "id": "vocab:black_box_model",
+  "headword": "black-box model",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A complex computational system whose internal reasoning process is opaque and difficult for human auditors to interpret.",
+  "meaningVi": "mô hình hộp đen khó giải thích logic xử lý bên trong",
+  "existingExample": "Regulators are understandably reluctant to approve an unaccountable black-box model for high-stakes clinical triage decisions.",
+  "mustContainOneOf": [
+   "black-box model",
+   "black-box-model",
+   "black box model"
+  ]
+ },
+ {
+  "id": "vocab:technocratic",
+  "headword": "technocratic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Characterised by governance or problem-solving driven primarily by technical specialists and engineering efficiency.",
+  "meaningVi": "mang tính kỹ trị",
+  "existingExample": "A purely technocratic vision of smart cities often overlooks grassroots community needs in favour of flashy sensor networks.",
+  "mustContainOneOf": [
+   "technocratic"
+  ]
+ },
+ {
+  "id": "vocab:technological_determinism",
+  "headword": "technological determinism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The theory that technological progress autonomously shapes cultural norms, economic structures, and historical change.",
+  "meaningVi": "thuyết quyết định luận công nghệ",
+  "existingExample": "Sociologists critique simplistic technological determinism by demonstrating how public policy actively steers how innovations are adopted.",
+  "mustContainOneOf": [
+   "technological determinism",
+   "technological-determinism"
+  ]
+ },
+ {
+  "id": "vocab:technological_singularity",
+  "headword": "technological singularity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A hypothetical future point when self-improving artificial intelligence surpasses human intellect, causing unpredictable societal shifts.",
+  "meaningVi": "điểm kỳ dị công nghệ khi AI vượt xa trí tuệ người",
+  "existingExample": "While futurists debate the feasibility of a technological singularity, ethicists urge immediate focus on present-day AI governance.",
+  "mustContainOneOf": [
+   "technological singularity",
+   "technological-singularity"
+  ]
+ },
+ {
+  "id": "vocab:cybernetic",
+  "headword": "cybernetic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Relating to feedback-driven control systems or the functional integration of electronic machinery with biological organisms.",
+  "meaningVi": "thuộc điều khiển học; tích hợp máy móc và sinh học",
+  "existingExample": "Modern cybernetic prosthetics translate subtle nerve impulses into fluid hand movements for upper-limb amputees.",
+  "mustContainOneOf": [
+   "cybernetic"
+  ]
+ },
+ {
+  "id": "vocab:semiconductor",
+  "headword": "semiconductor",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A solid material whose electrical conductivity can be precisely controlled, forming the physical foundation of modern microchips.",
+  "meaningVi": "vật liệu bán dẫn hoặc linh kiện vi mạch cốt lõi",
+  "existingExample": "Global automotive production ground to a halt when pandemic bottlenecks disrupted specialised semiconductor fabrication plants.",
+  "mustContainOneOf": [
+   "semiconductor",
+   "semiconductors"
+  ]
+ },
+ {
+  "id": "vocab:microprocessor",
+  "headword": "microprocessor",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "An integrated electronic circuit containing the core arithmetic and control logic required to execute computer instructions.",
+  "meaningVi": "bộ vi xử lý trung tâm trên một vi mạch tích hợp",
+  "existingExample": "Miniaturising the microprocessor enabled everyday household appliances to monitor energy consumption with minimal power draw.",
+  "mustContainOneOf": [
+   "microprocessor",
+   "microprocessors"
+  ]
+ },
+ {
+  "id": "vocab:proprietary",
+  "headword": "proprietary",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Exclusively owned, controlled, and licensed by a private firm with legal restrictions on external inspection or modification.",
+  "meaningVi": "thuộc quyền sở hữu độc quyền, mã nguồn đóng",
+  "existingExample": "Public schools dependent on proprietary software suites often face steep recurring licensing fees whenever budgets tighten.",
+  "mustContainOneOf": [
+   "proprietary"
+  ]
+ },
+ {
+  "id": "vocab:open_access",
+  "headword": "open-access",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Freely available online to any reader or developer without subscription barriers or restrictive paywalls.",
+  "meaningVi": "truy cập mở, miễn phí sử dụng và chia sẻ rộng rãi",
+  "existingExample": "Releasing satellite climate datasets on an open-access portal accelerated independent flood-mapping efforts across developing regions.",
+  "mustContainOneOf": [
+   "open-access",
+   "open access"
+  ]
+ },
+ {
+  "id": "vocab:legacy_system",
+  "headword": "legacy system",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "An outdated computing platform or software infrastructure that remains in active use because replacing it is costly or risky.",
+  "meaningVi": "hệ thống công nghệ cũ lỗi thời nhưng vẫn đang vận hành",
+  "existingExample": "Migrating national aviation schedules off a decades-old legacy system requires meticulous phased testing to avoid service outages.",
+  "mustContainOneOf": [
+   "legacy system",
+   "legacy-system"
+  ]
+ },
+ {
+  "id": "vocab:ergonomic",
+  "headword": "ergonomic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Engineered to match human physical anatomy and movement patterns, thereby maximising comfort and preventing strain.",
+  "meaningVi": "mang tính công thái học",
+  "existingExample": "Employers investing in ergonomic workstations and adjustable displays witness marked declines in repetitive wrist injuries.",
+  "mustContainOneOf": [
+   "ergonomic"
+  ]
+ },
+ {
+  "id": "vocab:frictionless",
+  "headword": "frictionless",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Operating smoothly without bureaucratic delays, technical obstacles, or cumbersome steps for the end user.",
+  "meaningVi": "liền mạch, mượt mà không gặp trở ngại thao tác",
+  "existingExample": "Contactless transit gates provide a frictionless commuting experience, encouraging motorists to switch to metropolitan rail.",
+  "mustContainOneOf": [
+   "frictionless"
+  ]
+ },
+ {
+  "id": "vocab:gamification",
+  "headword": "gamification",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "The integration of game mechanics such as badges, streaks, and challenges into non-game digital platforms to boost engagement.",
+  "meaningVi": "trò chơi hóa nhằm tăng tương tác và động lực",
+  "existingExample": "Although gamification keeps language-app learners returning daily, behavioural psychologists warn it can encourage superficial habit loops.",
+  "mustContainOneOf": [
+   "gamification",
+   "gamifications"
+  ]
+ },
+ {
+  "id": "vocab:telepresence",
+  "headword": "telepresence",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "High-fidelity audiovisual and robotic technologies that give remote participants the sensation of being physically present elsewhere.",
+  "meaningVi": "công nghệ hiện diện từ xa chân thực như đang có mặt",
+  "existingExample": "Multinational engineering teams increasingly adopt holographic telepresence to curb unnecessary long-haul business flights.",
+  "mustContainOneOf": [
+   "telepresence",
+   "telepresences"
+  ]
+ },
+ {
+  "id": "vocab:synthetic_data",
+  "headword": "synthetic data",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "Artificially generated information mirroring statistical properties of real-world records, used to train AI while protecting privacy.",
+  "meaningVi": "dữ liệu tổng hợp nhân tạo dùng để huấn luyện thuật toán",
+  "existingExample": "Medical software startups increasingly rely on synthetic data to train diagnostic models without exposing sensitive patient histories.",
+  "mustContainOneOf": [
+   "synthetic data",
+   "synthetic-data"
+  ]
+ },
+ {
+  "id": "vocab:democratise",
+  "headword": "democratise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "To make a once-exclusive technology, resource, or creative tool affordable and accessible to the general public.",
+  "meaningVi": "phổ cập hóa",
+  "existingExample": "Low-cost cloud servers and open libraries have helped democratise software engineering for entrepreneurs in emerging markets.",
+  "mustContainOneOf": [
+   "democratise",
+   "democratize",
+   "democratises",
+   "democratised",
+   "democratising",
+   "democratized"
+  ]
+ },
+ {
+  "id": "vocab:obviate",
+  "headword": "obviate",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "To remove or anticipate a difficulty, requirement, or manual step so that it is no longer necessary.",
+  "meaningVi": "loại bỏ hoàn toàn sự cần thiết của một bước/quy trình",
+  "existingExample": "Automated biometric passport gates obviate the need for prolonged manual document checks during peak airport arrivals.",
+  "mustContainOneOf": [
+   "obviate",
+   "obviates",
+   "obviated",
+   "obviating"
+  ]
+ },
+ {
+  "id": "vocab:sedentary_lifestyle",
+  "headword": "sedentary lifestyle",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a way of life that involves a lot of sitting and little exercise.",
+  "meaningVi": "lối sống ít vận động",
+  "existingExample": "Office workers who lead a sedentary lifestyle face a higher risk of heart disease.",
+  "mustContainOneOf": [
+   "sedentary lifestyle",
+   "sedentary-lifestyle"
+  ]
+ },
+ {
+  "id": "vocab:obesity",
+  "headword": "obesity",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "the condition of being very overweight in a way that is dangerous to health.",
+  "meaningVi": "bệnh béo phì",
+  "existingExample": "A tax on sugary drinks could help tackle childhood obesity.",
+  "mustContainOneOf": [
+   "obesity",
+   "obesities"
+  ]
+ },
+ {
+  "id": "vocab:balanced_diet",
+  "headword": "balanced diet",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "a diet that contains the right amounts of different kinds of food.",
+  "meaningVi": "chế độ ăn cân bằng",
+  "existingExample": "Maintaining a balanced diet is more effective than following strict diets.",
+  "mustContainOneOf": [
+   "balanced diet",
+   "balanced-diet"
+  ]
+ },
+ {
+  "id": "vocab:life_expectancy",
+  "headword": "life expectancy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the average number of years a person is expected to live.",
+  "meaningVi": "tuổi thọ trung bình",
+  "existingExample": "Improvements in sanitation have dramatically increased life expectancy.",
+  "mustContainOneOf": [
+   "life expectancy",
+   "life-expectancy"
+  ]
+ },
+ {
+  "id": "vocab:preventive",
+  "headword": "preventive",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "intended to stop something bad from happening.",
+  "meaningVi": "phòng ngừa",
+  "existingExample": "Investing in preventive care is cheaper than treating diseases later.",
+  "mustContainOneOf": [
+   "preventive"
+  ]
+ },
+ {
+  "id": "vocab:chronic",
+  "headword": "chronic",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "lasting for a long time or keeping coming back.",
+  "meaningVi": "mãn tính",
+  "existingExample": "Diabetes is a chronic condition that requires lifelong management.",
+  "mustContainOneOf": [
+   "chronic"
+  ]
+ },
+ {
+  "id": "vocab:epidemic",
+  "headword": "epidemic",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a large number of cases of a disease in a community at the same time.",
+  "meaningVi": "dịch bệnh; sự lan tràn",
+  "existingExample": "Some experts describe smartphone addiction as a modern epidemic.",
+  "mustContainOneOf": [
+   "epidemic",
+   "epidemics"
+  ]
+ },
+ {
+  "id": "vocab:well_being",
+  "headword": "well-being",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "the state of being healthy, comfortable and happy.",
+  "meaningVi": "sức khỏe và hạnh phúc",
+  "existingExample": "Regular exercise improves both physical and mental well-being.",
+  "mustContainOneOf": [
+   "well-being",
+   "well-beings",
+   "well being"
+  ]
+ },
+ {
+  "id": "vocab:mental_health",
+  "headword": "mental health",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "the condition of a person's mind and emotions.",
+  "meaningVi": "sức khỏe tâm thần",
+  "existingExample": "Employers are paying more attention to the mental health of their staff.",
+  "mustContainOneOf": [
+   "mental health",
+   "mental-health"
+  ]
+ },
+ {
+  "id": "vocab:stress_related",
+  "headword": "stress-related",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "caused by stress.",
+  "meaningVi": "liên quan đến căng thẳng",
+  "existingExample": "Stress-related illnesses are a leading cause of absence from work.",
+  "mustContainOneOf": [
+   "stress-related",
+   "stress related"
+  ]
+ },
+ {
+  "id": "vocab:nutrition",
+  "headword": "nutrition",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health",
+   "food",
+   "psychology"
+  ],
+  "definitionEn": "the process of getting the food needed for health and growth.",
+  "meaningVi": "dinh dưỡng",
+  "existingExample": "Poor nutrition in early childhood can affect brain development.",
+  "mustContainOneOf": [
+   "nutrition",
+   "nutritions"
+  ]
+ },
+ {
+  "id": "vocab:junk_food",
+  "headword": "junk food",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "food that is quick and easy to eat but bad for your health.",
+  "meaningVi": "đồ ăn kém dinh dưỡng",
+  "existingExample": "Banning junk food advertising during children's programmes could reduce obesity.",
+  "mustContainOneOf": [
+   "junk food",
+   "junk-food"
+  ]
+ },
+ {
+  "id": "vocab:healthcare_system",
+  "headword": "healthcare system",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the way medical services are organised in a country.",
+  "meaningVi": "hệ thống y tế",
+  "existingExample": "An ageing population puts enormous pressure on the healthcare system.",
+  "mustContainOneOf": [
+   "healthcare system",
+   "healthcare-system"
+  ]
+ },
+ {
+  "id": "vocab:side_effects",
+  "headword": "side effects",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "unwanted effects of a medicine or treatment.",
+  "meaningVi": "tác dụng phụ",
+  "existingExample": "All medicines can cause side effects, so patients should follow their doctor's advice.",
+  "mustContainOneOf": [
+   "side effects",
+   "side-effects"
+  ]
+ },
+ {
+  "id": "vocab:vaccination",
+  "headword": "vaccination",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "giving people a vaccine to protect them against a disease.",
+  "meaningVi": "sự tiêm chủng",
+  "existingExample": "Mass vaccination programmes have eradicated diseases such as smallpox.",
+  "mustContainOneOf": [
+   "vaccination",
+   "vaccinations"
+  ]
+ },
+ {
+  "id": "vocab:hygiene",
+  "headword": "hygiene",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the practice of keeping yourself and your surroundings clean to prevent illness.",
+  "meaningVi": "vệ sinh",
+  "existingExample": "Good hand hygiene is one of the simplest ways to prevent infection.",
+  "mustContainOneOf": [
+   "hygiene",
+   "hygienes"
+  ]
+ },
+ {
+  "id": "vocab:susceptible",
+  "headword": "susceptible",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "easily affected or harmed by something.",
+  "meaningVi": "dễ bị ảnh hưởng, dễ mắc",
+  "existingExample": "Elderly people are more susceptible to infections during the winter.",
+  "mustContainOneOf": [
+   "susceptible"
+  ]
+ },
+ {
+  "id": "vocab:alleviate",
+  "headword": "alleviate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "to make pain or a problem less severe.",
+  "meaningVi": "làm dịu, giảm bớt",
+  "existingExample": "Gentle stretching can alleviate back pain caused by long hours at a desk.",
+  "mustContainOneOf": [
+   "alleviate",
+   "alleviates",
+   "alleviated",
+   "alleviating"
+  ]
+ },
+ {
+  "id": "vocab:diagnose",
+  "headword": "diagnose",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "to identify an illness by examining someone.",
+  "meaningVi": "chẩn đoán",
+  "existingExample": "Early detection makes it easier to diagnose and treat cancer.",
+  "mustContainOneOf": [
+   "diagnose",
+   "diagnoses",
+   "diagnosed",
+   "diagnosing"
+  ]
+ },
+ {
+  "id": "vocab:physical_activity",
+  "headword": "physical activity",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "movement of the body that uses energy, such as walking or sport.",
+  "meaningVi": "hoạt động thể chất",
+  "existingExample": "Health experts recommend at least 150 minutes of moderate physical activity a week for adults.",
+  "mustContainOneOf": [
+   "physical activity",
+   "physical-activity"
+  ]
+ },
+ {
+  "id": "vocab:ageing_population",
+  "headword": "ageing population",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a population in which the proportion of older people is increasing.",
+  "meaningVi": "dân số già hóa",
+  "existingExample": "Japan faces the challenges of a rapidly ageing population.",
+  "mustContainOneOf": [
+   "ageing population",
+   "ageing-population"
+  ]
+ },
+ {
+  "id": "vocab:addiction",
+  "headword": "addiction",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a strong need to keep doing or using something harmful.",
+  "meaningVi": "sự nghiện",
+  "existingExample": "Support groups can help people overcome addiction.",
+  "mustContainOneOf": [
+   "addiction",
+   "addictions"
+  ]
+ },
+ {
+  "id": "vocab:medical_treatment",
+  "headword": "medical treatment",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "care given to cure an illness or injury.",
+  "meaningVi": "điều trị y tế",
+  "existingExample": "In some countries, many people cannot afford to seek medical treatment.",
+  "mustContainOneOf": [
+   "medical treatment",
+   "medical-treatment"
+  ]
+ },
+ {
+  "id": "vocab:outbreak",
+  "headword": "outbreak",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the sudden start of something unpleasant, especially a disease.",
+  "meaningVi": "sự bùng phát",
+  "existingExample": "Health authorities acted quickly to contain the outbreak.",
+  "mustContainOneOf": [
+   "outbreak",
+   "outbreaks"
+  ]
+ },
+ {
+  "id": "vocab:holistic",
+  "headword": "holistic",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "food",
+   "psychology"
+  ],
+  "definitionEn": "dealing with the whole person rather than only the symptoms of an illness.",
+  "meaningVi": "toàn diện, tổng thể",
+  "existingExample": "A holistic approach to health considers diet, sleep and stress as well as medication.",
+  "mustContainOneOf": [
+   "holistic"
+  ]
+ },
+ {
+  "id": "vocab:life_threatening",
+  "headword": "life-threatening",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "likely to cause death.",
+  "meaningVi": "đe dọa tính mạng",
+  "existingExample": "Early diagnosis can stop a condition becoming life-threatening.",
+  "mustContainOneOf": [
+   "life-threatening",
+   "life threatening"
+  ]
+ },
+ {
+  "id": "vocab:terminal_illness",
+  "headword": "terminal illness",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a disease that cannot be cured and will cause death.",
+  "meaningVi": "bệnh giai đoạn cuối",
+  "existingExample": "Hospices care for people with terminal illnesses.",
+  "mustContainOneOf": [
+   "terminal illness",
+   "terminal-illness"
+  ]
+ },
+ {
+  "id": "vocab:contagious",
+  "headword": "contagious",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "spread by direct contact.",
+  "meaningVi": "dễ lây lan",
+  "existingExample": "Highly contagious respiratory viruses can spread rapidly across densely populated cities without timely vaccination.",
+  "mustContainOneOf": [
+   "contagious"
+  ]
+ },
+ {
+  "id": "vocab:pandemic",
+  "headword": "pandemic",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a disease spreading across many countries.",
+  "meaningVi": "đại dịch",
+  "existingExample": "The pandemic exposed weaknesses in health systems.",
+  "mustContainOneOf": [
+   "pandemic",
+   "pandemics"
+  ]
+ },
+ {
+  "id": "vocab:immune_system",
+  "headword": "immune system",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the body's system for fighting infection.",
+  "meaningVi": "hệ miễn dịch",
+  "existingExample": "Lack of sleep can weaken the immune system.",
+  "mustContainOneOf": [
+   "immune system",
+   "immune-system"
+  ]
+ },
+ {
+  "id": "vocab:herd_immunity",
+  "headword": "herd immunity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "protection that arises when most of a population is immune.",
+  "meaningVi": "miễn dịch cộng đồng",
+  "existingExample": "High vaccination rates help achieve herd immunity.",
+  "mustContainOneOf": [
+   "herd immunity",
+   "herd-immunity"
+  ]
+ },
+ {
+  "id": "vocab:antibiotic_resistance",
+  "headword": "antibiotic resistance",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "bacteria no longer responding to antibiotics.",
+  "meaningVi": "tình trạng kháng kháng sinh",
+  "existingExample": "The overuse of antibiotics fuels antibiotic resistance.",
+  "mustContainOneOf": [
+   "antibiotic resistance",
+   "antibiotic-resistance"
+  ]
+ },
+ {
+  "id": "vocab:cardiovascular_disease",
+  "headword": "cardiovascular disease",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "diseases of the heart and blood vessels.",
+  "meaningVi": "bệnh tim mạch",
+  "existingExample": "Smoking greatly increases the risk of cardiovascular disease.",
+  "mustContainOneOf": [
+   "cardiovascular disease",
+   "cardiovascular-disease"
+  ]
+ },
+ {
+  "id": "vocab:diabetes",
+  "headword": "diabetes",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "a disease in which the body cannot control blood sugar.",
+  "meaningVi": "bệnh tiểu đường",
+  "existingExample": "Type 2 diabetes is closely linked to diet and exercise.",
+  "mustContainOneOf": [
+   "diabetes",
+   "diabeteses"
+  ]
+ },
+ {
+  "id": "vocab:hypertension",
+  "headword": "hypertension",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "high blood pressure.",
+  "meaningVi": "tăng huyết áp",
+  "existingExample": "Excessive salt intake can lead to hypertension.",
+  "mustContainOneOf": [
+   "hypertension",
+   "hypertensions"
+  ]
+ },
+ {
+  "id": "vocab:non_communicable_disease",
+  "headword": "non-communicable disease",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a disease that is not spread between people.",
+  "meaningVi": "bệnh không lây nhiễm",
+  "existingExample": "Non-communicable diseases such as cancer are now the leading cause of death worldwide.",
+  "mustContainOneOf": [
+   "non-communicable diseases",
+   "non-communicable disease",
+   "non-communicable-disease",
+   "non communicable disease"
+  ]
+ },
+ {
+  "id": "vocab:malnutrition",
+  "headword": "malnutrition",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "poor health caused by a lack of food or the right nutrients.",
+  "meaningVi": "suy dinh dưỡng",
+  "existingExample": "Malnutrition stunts children's growth.",
+  "mustContainOneOf": [
+   "malnutrition",
+   "malnutritions"
+  ]
+ },
+ {
+  "id": "vocab:undernourished",
+  "headword": "undernourished",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "not getting enough food to be healthy.",
+  "meaningVi": "thiếu dinh dưỡng",
+  "existingExample": "Undernourished children struggle to concentrate at school.",
+  "mustContainOneOf": [
+   "undernourished",
+   "undernorished"
+  ]
+ },
+ {
+  "id": "vocab:calorie_intake",
+  "headword": "calorie intake",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "the amount of energy consumed from food.",
+  "meaningVi": "lượng calo nạp vào",
+  "existingExample": "Reducing calorie intake is key to losing weight.",
+  "mustContainOneOf": [
+   "calorie intake",
+   "calorie-intake"
+  ]
+ },
+ {
+  "id": "vocab:processed_food",
+  "headword": "processed food",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "food changed by industrial methods.",
+  "meaningVi": "thực phẩm chế biến sẵn",
+  "existingExample": "Processed food is often high in salt and sugar.",
+  "mustContainOneOf": [
+   "processed food",
+   "processed-food"
+  ]
+ },
+ {
+  "id": "vocab:portion_size",
+  "headword": "portion size",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "the amount of food served to one person.",
+  "meaningVi": "khẩu phần",
+  "existingExample": "Growing portion sizes contribute to weight gain.",
+  "mustContainOneOf": [
+   "portion sizes",
+   "portion size",
+   "portion sise",
+   "portion-size",
+   "portion-sise"
+  ]
+ },
+ {
+  "id": "vocab:dietary_supplement",
+  "headword": "dietary supplement",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "a pill or product taken to add nutrients to the diet.",
+  "meaningVi": "thực phẩm bổ sung",
+  "existingExample": "Most people with a balanced diet do not need dietary supplements.",
+  "mustContainOneOf": [
+   "dietary supplements",
+   "dietary supplement",
+   "dietary-supplement"
+  ]
+ },
+ {
+  "id": "vocab:physical_inactivity",
+  "headword": "physical inactivity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "not doing enough physical exercise.",
+  "meaningVi": "sự thiếu vận động",
+  "existingExample": "Physical inactivity is a major risk factor for chronic disease.",
+  "mustContainOneOf": [
+   "physical inactivity",
+   "physical-inactivity"
+  ]
+ },
+ {
+  "id": "vocab:aerobic_exercise",
+  "headword": "aerobic exercise",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "exercise that raises the heart rate, such as running.",
+  "meaningVi": "bài tập aerobic",
+  "existingExample": "Aerobic exercise strengthens the heart and lungs.",
+  "mustContainOneOf": [
+   "aerobic exercise",
+   "aerobic exercize",
+   "aerobic-exercise",
+   "aerobic-exercize"
+  ]
+ },
+ {
+  "id": "vocab:fitness_regime",
+  "headword": "fitness regime",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a planned programme of exercise.",
+  "meaningVi": "chế độ luyện tập",
+  "existingExample": "It is difficult to stick to a strict fitness regime.",
+  "mustContainOneOf": [
+   "fitness regime",
+   "fitness-regime"
+  ]
+ },
+ {
+  "id": "vocab:metabolism",
+  "headword": "metabolism",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "the chemical processes that turn food into energy.",
+  "meaningVi": "sự trao đổi chất",
+  "existingExample": "Metabolism tends to slow down with age.",
+  "mustContainOneOf": [
+   "metabolism",
+   "metabolisms"
+  ]
+ },
+ {
+  "id": "vocab:sleep_deprivation",
+  "headword": "sleep deprivation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "not getting enough sleep.",
+  "meaningVi": "tình trạng thiếu ngủ",
+  "existingExample": "Chronic sleep deprivation impairs memory.",
+  "mustContainOneOf": [
+   "sleep deprivation",
+   "sleep-deprivation"
+  ]
+ },
+ {
+  "id": "vocab:insomnia",
+  "headword": "insomnia",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the inability to sleep.",
+  "meaningVi": "chứng mất ngủ",
+  "existingExample": "Using screens before bed can worsen insomnia.",
+  "mustContainOneOf": [
+   "insomnia",
+   "insomnias"
+  ]
+ },
+ {
+  "id": "vocab:anxiety",
+  "headword": "anxiety",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "a feeling of worry or nervousness.",
+  "meaningVi": "sự lo âu",
+  "existingExample": "Exam pressure can trigger anxiety in teenagers.",
+  "mustContainOneOf": [
+   "anxiety",
+   "anxieties"
+  ]
+ },
+ {
+  "id": "vocab:depression",
+  "headword": "depression",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "a mental illness causing deep, lasting sadness.",
+  "meaningVi": "bệnh trầm cảm",
+  "existingExample": "Talking therapies can help people with depression.",
+  "mustContainOneOf": [
+   "depression",
+   "depressions"
+  ]
+ },
+ {
+  "id": "vocab:stigma",
+  "headword": "stigma",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "negative feelings society has about something.",
+  "meaningVi": "sự kỳ thị",
+  "existingExample": "Campaigns aim to reduce the stigma surrounding mental illness.",
+  "mustContainOneOf": [
+   "stigma",
+   "stigmas"
+  ]
+ },
+ {
+  "id": "vocab:counselling",
+  "headword": "counselling",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "professional help with personal or emotional problems.",
+  "meaningVi": "tư vấn tâm lý",
+  "existingExample": "Schools should provide free counselling for students.",
+  "mustContainOneOf": [
+   "counselling",
+   "counsellings"
+  ]
+ },
+ {
+  "id": "vocab:therapy",
+  "headword": "therapy",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "treatment for an illness or psychological problem.",
+  "meaningVi": "liệu pháp điều trị",
+  "existingExample": "Physical therapy helped her recover after the accident.",
+  "mustContainOneOf": [
+   "therapy",
+   "therapies"
+  ]
+ },
+ {
+  "id": "vocab:mindfulness",
+  "headword": "mindfulness",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "psychology"
+  ],
+  "definitionEn": "calmly paying attention to the present moment.",
+  "meaningVi": "chánh niệm",
+  "existingExample": "Mindfulness can reduce stress and improve concentration.",
+  "mustContainOneOf": [
+   "mindfulness",
+   "mindfulnesses"
+  ]
+ },
+ {
+  "id": "vocab:primary_healthcare",
+  "headword": "primary healthcare",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "basic health services such as local doctors.",
+  "meaningVi": "chăm sóc sức khỏe ban đầu",
+  "existingExample": "Rural areas often lack adequate primary healthcare.",
+  "mustContainOneOf": [
+   "primary healthcare",
+   "primary-healthcare"
+  ]
+ },
+ {
+  "id": "vocab:general_practitioner",
+  "headword": "general practitioner",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a doctor who treats general health problems in the community.",
+  "meaningVi": "bác sĩ đa khoa",
+  "existingExample": "Patients may wait weeks to see a general practitioner.",
+  "mustContainOneOf": [
+   "general practitioner",
+   "general-practitioner"
+  ]
+ },
+ {
+  "id": "vocab:waiting_list",
+  "headword": "waiting list",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a list of people waiting for treatment.",
+  "meaningVi": "danh sách chờ",
+  "existingExample": "Long waiting lists push some patients towards private clinics.",
+  "mustContainOneOf": [
+   "waiting lists",
+   "waiting list",
+   "waiting-list"
+  ]
+ },
+ {
+  "id": "vocab:universal_healthcare",
+  "headword": "universal healthcare",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a system that gives everyone access to healthcare.",
+  "meaningVi": "y tế toàn dân",
+  "existingExample": "Universal healthcare is funded through taxation in many countries.",
+  "mustContainOneOf": [
+   "universal healthcare",
+   "universal-healthcare"
+  ]
+ },
+ {
+  "id": "vocab:private_healthcare",
+  "headword": "private healthcare",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "medical care that patients pay for themselves.",
+  "meaningVi": "y tế tư nhân",
+  "existingExample": "Private healthcare can reduce waiting times but excludes poorer people.",
+  "mustContainOneOf": [
+   "private healthcare",
+   "private-healthcare"
+  ]
+ },
+ {
+  "id": "vocab:health_insurance",
+  "headword": "health insurance",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "insurance that pays medical costs.",
+  "meaningVi": "bảo hiểm y tế",
+  "existingExample": "Without health insurance, treatment can be very expensive.",
+  "mustContainOneOf": [
+   "health insurance",
+   "health-insurance"
+  ]
+ },
+ {
+  "id": "vocab:underfunded",
+  "headword": "underfunded",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "not having enough money to operate properly.",
+  "meaningVi": "thiếu kinh phí",
+  "existingExample": "Underfunded hospitals struggle to retain staff.",
+  "mustContainOneOf": [
+   "underfunded"
+  ]
+ },
+ {
+  "id": "vocab:overstretched",
+  "headword": "overstretched",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "having too much work and too few resources.",
+  "meaningVi": "quá tải",
+  "existingExample": "Overstretched nurses are leaving the profession.",
+  "mustContainOneOf": [
+   "overstretched"
+  ]
+ },
+ {
+  "id": "vocab:healthcare_professional",
+  "headword": "healthcare professional",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a trained person who provides medical care.",
+  "meaningVi": "nhân viên y tế",
+  "existingExample": "There is a global shortage of healthcare professionals.",
+  "mustContainOneOf": [
+   "healthcare professionals",
+   "healthcare professional",
+   "healthcare-professional"
+  ]
+ },
+ {
+  "id": "vocab:prescription",
+  "headword": "prescription",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a doctor's written order for medicine.",
+  "meaningVi": "đơn thuốc",
+  "existingExample": "Many antibiotics are only available on prescription.",
+  "mustContainOneOf": [
+   "prescription",
+   "prescriptions"
+  ]
+ },
+ {
+  "id": "vocab:over_the_counter",
+  "headword": "over-the-counter",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "available without a prescription.",
+  "meaningVi": "(thuốc) không cần kê đơn",
+  "existingExample": "Over-the-counter painkillers can be dangerous in large doses.",
+  "mustContainOneOf": [
+   "over-the-counter",
+   "over the counter"
+  ]
+ },
+ {
+  "id": "vocab:self_medicate",
+  "headword": "self-medicate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "to take medicine without a doctor's advice.",
+  "meaningVi": "tự ý dùng thuốc",
+  "existingExample": "People who self-medicate may hide serious illnesses.",
+  "mustContainOneOf": [
+   "self-medicate",
+   "self-medicates",
+   "self-medicated",
+   "self-medicating",
+   "self medicate"
+  ]
+ },
+ {
+  "id": "vocab:symptom",
+  "headword": "symptom",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a sign of illness.",
+  "meaningVi": "triệu chứng",
+  "existingExample": "Many patients ignore early symptoms.",
+  "mustContainOneOf": [
+   "symptoms",
+   "symptom"
+  ]
+ },
+ {
+  "id": "vocab:recovery",
+  "headword": "recovery",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "the process of returning to health.",
+  "meaningVi": "sự hồi phục",
+  "existingExample": "She made a full recovery after surgery.",
+  "mustContainOneOf": [
+   "recovery",
+   "recoveries"
+  ]
+ },
+ {
+  "id": "vocab:organ_donation",
+  "headword": "organ donation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "giving body organs to be transplanted.",
+  "meaningVi": "hiến tạng",
+  "existingExample": "An opt-out system could increase organ donation.",
+  "mustContainOneOf": [
+   "organ donation",
+   "organ-donation"
+  ]
+ },
+ {
+  "id": "vocab:euthanasia",
+  "headword": "euthanasia",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "ending a life to relieve suffering.",
+  "meaningVi": "trợ tử",
+  "existingExample": "Euthanasia remains illegal in most countries.",
+  "mustContainOneOf": [
+   "euthanasia",
+   "euthanasias"
+  ]
+ },
+ {
+  "id": "vocab:longevity",
+  "headword": "longevity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health",
+   "food"
+  ],
+  "definitionEn": "the condition of living for an exceptionally long period of time.",
+  "meaningVi": "tuổi thọ dài",
+  "existingExample": "Diet and strong social ties contribute to longevity.",
+  "mustContainOneOf": [
+   "longevity",
+   "longevities"
+  ]
+ },
+ {
+  "id": "vocab:genetic_predisposition",
+  "headword": "genetic predisposition",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "an inherited tendency to develop a condition.",
+  "meaningVi": "khuynh hướng di truyền",
+  "existingExample": "Some people have a genetic predisposition to heart disease.",
+  "mustContainOneOf": [
+   "genetic predisposition",
+   "genetic-predisposition"
+  ]
+ },
+ {
+  "id": "vocab:hereditary",
+  "headword": "hereditary",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "passed from parents to children.",
+  "meaningVi": "di truyền",
+  "existingExample": "Some forms of deafness are hereditary.",
+  "mustContainOneOf": [
+   "hereditary"
+  ]
+ },
+ {
+  "id": "vocab:detrimental",
+  "headword": "detrimental",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "causing harm.",
+  "meaningVi": "có hại",
+  "existingExample": "Smoking has detrimental effects on almost every organ.",
+  "mustContainOneOf": [
+   "detrimental"
+  ]
+ },
+ {
+  "id": "vocab:wholesome",
+  "headword": "wholesome",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "good for your health.",
+  "meaningVi": "bổ dưỡng, lành mạnh",
+  "existingExample": "Children need wholesome meals to grow properly.",
+  "mustContainOneOf": [
+   "wholesome"
+  ]
+ },
+ {
+  "id": "vocab:nutrient",
+  "headword": "nutrient",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a substance needed for growth and health.",
+  "meaningVi": "chất dinh dưỡng",
+  "existingExample": "Fresh vegetables are rich in essential nutrients.",
+  "mustContainOneOf": [
+   "nutrients",
+   "nutrient"
+  ]
+ }
+]

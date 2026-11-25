@@ -1,0 +1,1843 @@
+[
+ {
+  "id": "vocab:juvenile_court",
+  "headword": "juvenile court",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "a court dealing with young offenders.",
+  "meaningVi": "tòa án vị thành niên",
+  "existingExample": "Young offenders are tried in a juvenile court.",
+  "mustContainOneOf": [
+   "juvenile court",
+   "juvenile cort",
+   "juvenile-court",
+   "juvenile-cort"
+  ]
+ },
+ {
+  "id": "vocab:parole",
+  "headword": "parole",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "early release from prison under supervision.",
+  "meaningVi": "tha tù có điều kiện",
+  "existingExample": "He was released on parole after five years.",
+  "mustContainOneOf": [
+   "parole",
+   "paroles"
+  ]
+ },
+ {
+  "id": "vocab:electronic_tagging",
+  "headword": "electronic tagging",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "using a device to track offenders' movements.",
+  "meaningVi": "đeo thiết bị định vị điện tử",
+  "existingExample": "Electronic tagging allows some offenders to serve sentences at home.",
+  "mustContainOneOf": [
+   "electronic tagging",
+   "electronic-tagging"
+  ]
+ },
+ {
+  "id": "vocab:moral_compass",
+  "headword": "moral compass",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "a person's sense of right and wrong.",
+  "meaningVi": "la bàn đạo đức",
+  "existingExample": "Parents help children develop a moral compass within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "moral compass",
+   "moral-compass"
+  ]
+ },
+ {
+  "id": "vocab:family_breakdown",
+  "headword": "family breakdown",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "family",
+   "psychology"
+  ],
+  "definitionEn": "the separation or collapse of a family.",
+  "meaningVi": "sự đổ vỡ gia đình",
+  "existingExample": "Family breakdown can affect children's behaviour within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "family breakdown",
+   "family-breakdown"
+  ]
+ },
+ {
+  "id": "vocab:domestic_violence",
+  "headword": "domestic violence",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "family"
+  ],
+  "definitionEn": "violence within a family or home.",
+  "meaningVi": "bạo lực gia đình",
+  "existingExample": "Helplines support victims of domestic violence within modern households facing changing social norms.",
+  "mustContainOneOf": [
+   "domestic violence",
+   "domestic-violence"
+  ]
+ },
+ {
+  "id": "vocab:vigilante",
+  "headword": "vigilante",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "crime",
+   "government"
+  ],
+  "definitionEn": "a person who punishes criminals without legal authority.",
+  "meaningVi": "người tự xử thay pháp luật",
+  "existingExample": "Vigilante justice can lead to innocent people being harmed.",
+  "mustContainOneOf": [
+   "vigilante",
+   "vigilantes"
+  ]
+ },
+ {
+  "id": "vocab:delinquent",
+  "headword": "delinquent",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "a young person who commits crimes.",
+  "meaningVi": "(thanh thiếu niên) phạm pháp",
+  "existingExample": "Mentoring programmes help young delinquents change their lives when national authorities design long-term public policies.",
+  "mustContainOneOf": [
+   "delinquents",
+   "delinquent"
+  ]
+ },
+ {
+  "id": "vocab:gang_culture",
+  "headword": "gang culture",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the lifestyle and values of street gangs.",
+  "meaningVi": "văn hóa băng nhóm",
+  "existingExample": "Youth centres can steer teenagers away from gang culture.",
+  "mustContainOneOf": [
+   "gang culture",
+   "gang-culture"
+  ]
+ },
+ {
+  "id": "vocab:alienation",
+  "headword": "alienation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "family",
+   "government"
+  ],
+  "definitionEn": "A persistent feeling of isolation or estrangement from the surrounding community, social institutions, or cultural norms.",
+  "meaningVi": "sự xa lánh, cảm giác bị tách biệt khỏi cộng đồng",
+  "existingExample": "Rapid urbanisation without shared public spaces can deepen social alienation among elderly residents living alone.",
+  "mustContainOneOf": [
+   "alienation",
+   "alienations"
+  ]
+ },
+ {
+  "id": "vocab:anomie",
+  "headword": "anomie",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "A state of social instability resulting from a breakdown of shared moral standards, values, or guiding norms.",
+  "meaningVi": "tình trạng mất chuẩn mực xã hội",
+  "existingExample": "Sociologists warn that abrupt economic upheaval often triggers widespread anomie and erodes trust in civic institutions.",
+  "mustContainOneOf": [
+   "anomie",
+   "anomies"
+  ]
+ },
+ {
+  "id": "vocab:benevolence",
+  "headword": "benevolence",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "The disposition to do good and promote the welfare of others through generosity, compassion, and charitable action.",
+  "meaningVi": "lòng nhân ái, sự khoan dung và thiện chí",
+  "existingExample": "While corporate benevolence can fund vital community initiatives, critics argue it should never replace fair taxation.",
+  "mustContainOneOf": [
+   "benevolence",
+   "benevolences"
+  ]
+ },
+ {
+  "id": "vocab:bigotry",
+  "headword": "bigotry",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Obstinate or unreasonable attachment to a belief or prejudice, especially intolerance toward people of different backgrounds.",
+  "meaningVi": "sự cố chấp, định kiến cực đoan",
+  "existingExample": "Inclusive school curricula play a decisive role in dismantling bigotry before entrenched stereotypes take hold.",
+  "mustContainOneOf": [
+   "bigotry",
+   "bigotries"
+  ]
+ },
+ {
+  "id": "vocab:bureaucracy",
+  "headword": "bureaucracy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "A system of government or administration characterised by rigid rules, hierarchical authority, and excessive procedural complexity.",
+  "meaningVi": "bộ máy quan liêu, hệ thống thủ tục hành chính phức tạp",
+  "existingExample": "Excessive bureaucracy frequently delays emergency welfare assistance for families facing sudden financial hardship.",
+  "mustContainOneOf": [
+   "bureaucracy",
+   "bureaucracies"
+  ]
+ },
+ {
+  "id": "vocab:civic_engagement",
+  "headword": "civic engagement",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Individual and collective actions designed to identify and address issues of public concern within a community.",
+  "meaningVi": "sự tham gia tích cực vào đời sống công dân",
+  "existingExample": "Higher levels of civic engagement among young adults are closely associated with more transparent local governance.",
+  "mustContainOneOf": [
+   "civic engagement",
+   "civic-engagement"
+  ]
+ },
+ {
+  "id": "vocab:civil_disobedience",
+  "headword": "civil disobedience",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "history"
+  ],
+  "definitionEn": "The deliberate, non-violent refusal to obey certain laws or governmental demands as a form of political protest.",
+  "meaningVi": "sự bất tuân dân sự (phản kháng bất bạo động)",
+  "existingExample": "Throughout modern history, peaceful civil disobedience has compelled reluctant legislatures to abolish discriminatory statutes.",
+  "mustContainOneOf": [
+   "civil disobedience",
+   "civil-disobedience"
+  ]
+ },
+ {
+  "id": "vocab:civil_society",
+  "headword": "civil society",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "The aggregate of non-governmental organisations, community groups, and civic associations operating independently of the state.",
+  "meaningVi": "xã hội dân sự",
+  "existingExample": "A vibrant civil society acts as a crucial safeguard against abuses of power and amplifies marginalised voices.",
+  "mustContainOneOf": [
+   "civil society",
+   "civil-society"
+  ]
+ },
+ {
+  "id": "vocab:class_stratification",
+  "headword": "class stratification",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "The hierarchical arrangement of individuals and groups in a society based on wealth, occupation, education, and status.",
+  "meaningVi": "sự phân tầng giai cấp trong xã hội",
+  "existingExample": "Unequal access to prestigious universities reinforces class stratification across successive generations.",
+  "mustContainOneOf": [
+   "class stratification",
+   "class-stratification"
+  ]
+ },
+ {
+  "id": "vocab:clemency",
+  "headword": "clemency",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Mercy or leniency shown by a judicial authority when sentencing an offender or reducing a legal punishment.",
+  "meaningVi": "sự khoan hồng, giảm nhẹ hình phạt",
+  "existingExample": "Human rights advocates petitioned the court for clemency, citing the defendant's youth and demonstrable remorse.",
+  "mustContainOneOf": [
+   "clemency",
+   "clemencies"
+  ]
+ },
+ {
+  "id": "vocab:coercion",
+  "headword": "coercion",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "The practice of persuading or forcing someone to act against their will through threats, intimidation, or institutional pressure.",
+  "meaningVi": "sự cưỡng ép, ép buộc bằng vũ lực hoặc đe dọa",
+  "existingExample": "Legal frameworks must distinguish genuine consent from compliance extracted through financial or psychological coercion.",
+  "mustContainOneOf": [
+   "coercion",
+   "coercions"
+  ]
+ },
+ {
+  "id": "vocab:cohesive",
+  "headword": "cohesive",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Forming a united, well-integrated whole in which members share mutual trust and a sense of belonging.",
+  "meaningVi": "gắn kết chặt chẽ, cố kết bền vững",
+  "existingExample": "Investing in mixed-income neighbourhoods fosters a more cohesive society where diverse groups interact daily.",
+  "mustContainOneOf": [
+   "cohesive"
+  ]
+ },
+ {
+  "id": "vocab:complicity",
+  "headword": "complicity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "work"
+  ],
+  "definitionEn": "Involvement with others in an unlawful, unethical, or socially harmful activity, whether actively or through silence.",
+  "meaningVi": "sự đồng lõa, tiếp tay cho hành vi sai trái",
+  "existingExample": "Investigative inquiries exposed institutional complicity in concealing workplace safety violations for over a decade.",
+  "mustContainOneOf": [
+   "complicity",
+   "complicities"
+  ]
+ },
+ {
+  "id": "vocab:conscription",
+  "headword": "conscription",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Compulsory enlistment of citizens for state service, typically into the armed forces or national civic duties.",
+  "meaningVi": "chế độ nghĩa vụ quân sự bắt buộc",
+  "existingExample": "Proponents of universal conscription argue that shared national service bridges regional and socioeconomic divides.",
+  "mustContainOneOf": [
+   "conscription",
+   "conscriptions"
+  ]
+ },
+ {
+  "id": "vocab:culpability",
+  "headword": "culpability",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Responsibility for a fault, offence, or wrongdoing that warrants legal or moral blame.",
+  "meaningVi": "trách nhiệm pháp lý",
+  "existingExample": "Establishing corporate culpability in environmental disasters remains challenging when decision-making is diffused across subsidiaries.",
+  "mustContainOneOf": [
+   "culpability",
+   "culpabilities"
+  ]
+ },
+ {
+  "id": "vocab:disenfranchised",
+  "headword": "disenfranchised",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "Deprived of political rights, civic representation, or meaningful participation in social and economic life.",
+  "meaningVi": "bị tước quyền công dân, yếu thế và không có tiếng nói",
+  "existingExample": "Grassroots outreach programmes aim to re-engage disenfranchised communities that feel ignored by national policymakers.",
+  "mustContainOneOf": [
+   "disenfranchised",
+   "disenfranchized"
+  ]
+ },
+ {
+  "id": "vocab:egalitarian",
+  "headword": "egalitarian",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "Based on the principle that all people are equal and deserve identical rights, opportunities, and legal treatment.",
+  "meaningVi": "bình đẳng, theo chủ nghĩa bình đẳng xã hội",
+  "existingExample": "Nordic countries are frequently cited as models of egalitarian welfare policy that narrow disparities in life outcomes.",
+  "mustContainOneOf": [
+   "egalitarian"
+  ]
+ },
+ {
+  "id": "vocab:emancipation",
+  "headword": "emancipation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation",
+   "economy"
+  ],
+  "definitionEn": "The process of being set free from legal, social, or political restrictions and achieving full autonomy.",
+  "meaningVi": "sự giải phóng khỏi áp bức hoặc rào cản pháp lý",
+  "existingExample": "Expanded access to higher education proved instrumental in advancing the economic emancipation of women worldwide.",
+  "mustContainOneOf": [
+   "emancipation",
+   "emancipations"
+  ]
+ },
+ {
+  "id": "vocab:entitlement",
+  "headword": "entitlement",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "A legally recognised right to benefits or privileges, or an unwarranted belief that one inherently deserves special treatment.",
+  "meaningVi": "quyền lợi hợp pháp; tâm lý mặc nhiên đòi hỏi đặc quyền",
+  "existingExample": "Policy debates often hinge on balancing universal welfare entitlement with incentives for long-term self-reliance.",
+  "mustContainOneOf": [
+   "entitlement",
+   "entitlements"
+  ]
+ },
+ {
+  "id": "vocab:extradition",
+  "headword": "extradition",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "crime",
+   "government"
+  ],
+  "definitionEn": "The formal legal process by which one jurisdiction surrenders a suspected or convicted criminal to another state.",
+  "meaningVi": "sự dẫn độ tội phạm giữa các quốc gia",
+  "existingExample": "Bilateral extradition treaties are indispensable for prosecuting transnational fraud syndicates operating across borders.",
+  "mustContainOneOf": [
+   "extradition",
+   "extraditions"
+  ]
+ },
+ {
+  "id": "vocab:grassroots",
+  "headword": "grassroots",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "urban",
+   "environment"
+  ],
+  "definitionEn": "Originating from ordinary citizens at the local community level rather than from political elites or central authorities.",
+  "meaningVi": "xuất phát từ cơ sở, từ cộng đồng quần chúng",
+  "existingExample": "Many successful urban recycling schemes began as grassroots initiatives organised by neighbourhood volunteers.",
+  "mustContainOneOf": [
+   "grassroots"
+  ]
+ },
+ {
+  "id": "vocab:impunity",
+  "headword": "impunity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Exemption from punishment or freedom from the injurious legal consequences of an unlawful action.",
+  "meaningVi": "sự miễn trừng phạt, nhởn nhơ ngoài vòng pháp luật",
+  "existingExample": "When corrupt officials operate with impunity, public confidence in the entire judicial system rapidly disintegrates.",
+  "mustContainOneOf": [
+   "impunity",
+   "impunities"
+  ]
+ },
+ {
+  "id": "vocab:indigent",
+  "headword": "indigent",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "crime",
+   "government"
+  ],
+  "definitionEn": "Suffering from extreme poverty and lacking the basic financial means required for subsistence or legal representation.",
+  "meaningVi": "nghèo túng, túng quẫn thiếu thốn cơ bản",
+  "existingExample": "State-funded legal aid guarantees that indigent defendants still receive competent representation in criminal trials.",
+  "mustContainOneOf": [
+   "indigent"
+  ]
+ },
+ {
+  "id": "vocab:inequity",
+  "headword": "inequity",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "crime",
+   "education"
+  ],
+  "definitionEn": "A lack of fairness or justice, particularly systemic disparities in access to resources, rights, or opportunities.",
+  "meaningVi": "sự bất công, bất bình đẳng mang tính hệ thống",
+  "existingExample": "Addressing structural inequity in school funding is essential if governments wish to break cycles of intergenerational poverty.",
+  "mustContainOneOf": [
+   "inequity",
+   "inequities"
+  ]
+ },
+ {
+  "id": "vocab:institutionalised",
+  "headword": "institutionalised",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "psychology",
+   "sport"
+  ],
+  "definitionEn": "Established as a routine, embedded norm or practice within an organisation, legal framework, or social structure.",
+  "meaningVi": "đã được thể chế hóa, ăn sâu vào cơ cấu hệ thống",
+  "existingExample": "Reforming institutionalised bias in recruitment requires auditing hiring algorithms as well as training human managers.",
+  "mustContainOneOf": [
+   "institutionalised",
+   "institutionalized"
+  ]
+ },
+ {
+  "id": "vocab:judicial_independence",
+  "headword": "judicial independence",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "The constitutional principle that courts and judges must be free from improper interference by politicians or private interests.",
+  "meaningVi": "tính độc lập của hệ thống tư pháp",
+  "existingExample": "Without robust judicial independence, minority groups have little protection against arbitrary executive decrees.",
+  "mustContainOneOf": [
+   "judicial independence",
+   "judicial-independence"
+  ]
+ },
+ {
+  "id": "vocab:jurisprudence",
+  "headword": "jurisprudence",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "crime",
+   "government"
+  ],
+  "definitionEn": "The theory, philosophy, and science of law, or a body of legal principles established through judicial decisions.",
+  "meaningVi": "luật học, hệ thống lý luận và án lệ pháp lý",
+  "existingExample": "Emerging disputes over artificial intelligence are forcing scholars to rethink traditional principles of criminal jurisprudence.",
+  "mustContainOneOf": [
+   "jurisprudence",
+   "jurisprudences"
+  ]
+ },
+ {
+  "id": "vocab:litigation",
+  "headword": "litigation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "The formal process of taking legal action and resolving disputes through the court system.",
+  "meaningVi": "sự kiện tụng, tranh tụng trước tòa án",
+  "existingExample": "Protracted civil litigation is often prohibitively expensive, prompting many citizens to turn to mediation instead.",
+  "mustContainOneOf": [
+   "litigation",
+   "litigations"
+  ]
+ },
+ {
+  "id": "vocab:nepotism",
+  "headword": "nepotism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "work",
+   "government"
+  ],
+  "definitionEn": "The practice among those in power of favouring relatives or close friends, especially by awarding them jobs or contracts.",
+  "meaningVi": "chủ nghĩa gia đình trị, sự thiên vị người thân",
+  "existingExample": "Rampant nepotism in public administration undermines meritocracy and drives talented graduates to seek work abroad.",
+  "mustContainOneOf": [
+   "nepotism",
+   "nepotisms"
+  ]
+ },
+ {
+  "id": "vocab:ostracise",
+  "headword": "ostracise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "To deliberately exclude an individual or group from social acceptance, community life, or public participation.",
+  "meaningVi": "tẩy chay, cô lập và ruồng bỏ khỏi cộng đồng",
+  "existingExample": "Communities that ostracise former offenders after release inadvertently heighten the likelihood of reoffending.",
+  "mustContainOneOf": [
+   "ostracise",
+   "ostracize",
+   "ostracises",
+   "ostracised",
+   "ostracising",
+   "ostracized"
+  ]
+ },
+ {
+  "id": "vocab:paternalistic",
+  "headword": "paternalistic",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "Limiting individuals' autonomy or freedom of choice under the pretext of acting for their own protection or well-being.",
+  "meaningVi": "mang tính gia trưởng, áp đặt kiểu bảo hộ bề trên",
+  "existingExample": "Critics dismissed the strict curfew on young adults as an overly paternalistic measure that eroded personal liberty.",
+  "mustContainOneOf": [
+   "paternalistic"
+  ]
+ },
+ {
+  "id": "vocab:perpetrator",
+  "headword": "perpetrator",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "crime"
+  ],
+  "definitionEn": "A person who carries out a harmful, illegal, or morally reprehensible act.",
+  "meaningVi": "thủ phạm, kẻ trực tiếp gây ra hành vi phạm tội",
+  "existingExample": "Restorative justice programmes occasionally bring victims and perpetrators together under strict professional supervision.",
+  "mustContainOneOf": [
+   "perpetrator",
+   "perpetrators"
+  ]
+ },
+ {
+  "id": "vocab:pluralism",
+  "headword": "pluralism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "A social and political condition in which diverse ethnic, religious, and ideological groups coexist peacefully with equal rights.",
+  "meaningVi": "chủ nghĩa đa nguyên xã hội",
+  "existingExample": "Constitutional safeguards are vital to protect democratic pluralism when populist rhetoric threatens minority communities.",
+  "mustContainOneOf": [
+   "pluralism",
+   "pluralisms"
+  ]
+ },
+ {
+  "id": "vocab:reconciliation",
+  "headword": "reconciliation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "The restoration of friendly, cooperative relations between estranged communities or conflicting groups following division.",
+  "meaningVi": "sự hòa giải, hàn gắn quan hệ sau xung đột",
+  "existingExample": "Truth commissions have played an indispensable role in fostering national reconciliation after decades of civil strife.",
+  "mustContainOneOf": [
+   "reconciliation",
+   "reconciliations"
+  ]
+ },
+ {
+  "id": "vocab:redress",
+  "headword": "redress",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Remedy, compensation, or corrective legal action provided to rectify an unfairness, grievance, or systemic wrong.",
+  "meaningVi": "sự khắc phục bất công, bồi thường thỏa đáng",
+  "existingExample": "Consumers harmed by deceptive lending practices must have accessible channels to seek legal redress.",
+  "mustContainOneOf": [
+   "redress",
+   "redresses"
+  ]
+ },
+ {
+  "id": "vocab:repercussion",
+  "headword": "repercussion",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "An unintended, typically adverse consequence arising from a policy decision, event, or social action.",
+  "meaningVi": "hệ lụy, hậu quả nghiêm trọng kéo dài",
+  "existingExample": "Slashing funding for youth community centres can have severe long-term repercussions for neighbourhood safety.",
+  "mustContainOneOf": [
+   "repercussions",
+   "repercussion"
+  ]
+ },
+ {
+  "id": "vocab:scapegoat",
+  "headword": "scapegoat",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "urban",
+   "globalisation"
+  ],
+  "definitionEn": "A person or group unfairly blamed for broader societal problems, economic downturns, or others' failures.",
+  "meaningVi": "vật tế thần, đối tượng bị đổ lỗi oan",
+  "existingExample": "During recessions, migrant workers are frequently turned into a convenient scapegoat for structural housing shortages.",
+  "mustContainOneOf": [
+   "scapegoat",
+   "scapegoats"
+  ]
+ },
+ {
+  "id": "vocab:social_contract",
+  "headword": "social contract",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "An implicit agreement among citizens and the state defining mutual rights, civic obligations, and collective protection.",
+  "meaningVi": "khế ước xã hội",
+  "existingExample": "Stagnant wages and unaffordable housing have prompted younger generations to question whether the social contract still holds.",
+  "mustContainOneOf": [
+   "social contract",
+   "social-contract"
+  ]
+ },
+ {
+  "id": "vocab:solidarity",
+  "headword": "solidarity",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "Unity of feeling, purpose, and mutual support among individuals or groups sharing common interests or challenges.",
+  "meaningVi": "tình đoàn kết, sự đồng lòng tương trợ",
+  "existingExample": "Public health crises often reveal extraordinary neighbourhood solidarity as residents volunteer to assist vulnerable neighbours.",
+  "mustContainOneOf": [
+   "solidarity",
+   "solidarities"
+  ]
+ },
+ {
+  "id": "vocab:subjugation",
+  "headword": "subjugation",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "economy",
+   "history"
+  ],
+  "definitionEn": "The act of bringing a population or social group under strict domination, control, or systemic oppression.",
+  "meaningVi": "sự khuất phục, áp bức và đặt dưới sự thống trị",
+  "existingExample": "Historical records demonstrate how legal disenfranchisement was systematically deployed to enforce economic subjugation.",
+  "mustContainOneOf": [
+   "subjugation",
+   "subjugations"
+  ]
+ },
+ {
+  "id": "vocab:mainstream_media",
+  "headword": "mainstream media",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "large, traditional news organisations.",
+  "meaningVi": "truyền thông chính thống",
+  "existingExample": "Younger audiences increasingly get their news from social media rather than the mainstream media.",
+  "mustContainOneOf": [
+   "mainstream media",
+   "mainstream-media"
+  ]
+ },
+ {
+  "id": "vocab:biased",
+  "headword": "biased",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "unfairly favouring one side or opinion.",
+  "meaningVi": "thiên vị, phiến diện",
+  "existingExample": "Biased reporting can deepen divisions in society.",
+  "mustContainOneOf": [
+   "biased"
+  ]
+ },
+ {
+  "id": "vocab:censorship",
+  "headword": "censorship",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the control of what can be published, broadcast or shown.",
+  "meaningVi": "sự kiểm duyệt",
+  "existingExample": "Internet censorship restricts citizens' access to information.",
+  "mustContainOneOf": [
+   "censorship",
+   "censorships"
+  ]
+ },
+ {
+  "id": "vocab:press_freedom",
+  "headword": "press freedom",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the right of journalists to report without government control.",
+  "meaningVi": "tự do báo chí",
+  "existingExample": "Press freedom is essential for holding governments to account.",
+  "mustContainOneOf": [
+   "press freedom",
+   "press-freedom"
+  ]
+ },
+ {
+  "id": "vocab:sensationalism",
+  "headword": "sensationalism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "presenting news in a way that is meant to shock or excite.",
+  "meaningVi": "lối đưa tin giật gân",
+  "existingExample": "Some newspapers rely on sensationalism to increase sales.",
+  "mustContainOneOf": [
+   "sensationalism",
+   "sensationalisms"
+  ]
+ },
+ {
+  "id": "vocab:invasion_of_privacy",
+  "headword": "invasion of privacy",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "intruding into someone's private life without permission.",
+  "meaningVi": "sự xâm phạm đời tư",
+  "existingExample": "Photographing celebrities' children is a clear invasion of privacy.",
+  "mustContainOneOf": [
+   "invasion of privacy",
+   "invasion-of-privacy"
+  ]
+ },
+ {
+  "id": "vocab:influencer",
+  "headword": "influencer",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a person who uses social media to promote products or ideas.",
+  "meaningVi": "người có ảnh hưởng (trên mạng)",
+  "existingExample": "Influencers can shape the buying habits of millions of young people.",
+  "mustContainOneOf": [
+   "influencers",
+   "influencer"
+  ]
+ },
+ {
+  "id": "vocab:targeted_advertising",
+  "headword": "targeted advertising",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "advertising shown to specific people based on their personal data.",
+  "meaningVi": "quảng cáo nhắm mục tiêu",
+  "existingExample": "Targeted advertising uses personal data to show ads to specific users.",
+  "mustContainOneOf": [
+   "targeted advertising",
+   "targeted advertizing",
+   "targeted-advertising",
+   "targeted-advertizing"
+  ]
+ },
+ {
+  "id": "vocab:go_viral",
+  "headword": "go viral",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to spread quickly and widely on the internet.",
+  "meaningVi": "lan truyền chóng mặt (trên mạng)",
+  "existingExample": "A single post can go viral and reach millions of people within hours.",
+  "mustContainOneOf": [
+   "go viral",
+   "go-viral"
+  ]
+ },
+ {
+  "id": "vocab:coverage",
+  "headword": "coverage",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the reporting of news on television, radio or in newspapers.",
+  "meaningVi": "sự đưa tin",
+  "existingExample": "The election received extensive media coverage.",
+  "mustContainOneOf": [
+   "coverage",
+   "coverages"
+  ]
+ },
+ {
+  "id": "vocab:tabloid",
+  "headword": "tabloid",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a newspaper with short stories, many pictures and celebrity news.",
+  "meaningVi": "báo lá cải",
+  "existingExample": "Tabloid journalism often focuses on scandal rather than serious issues.",
+  "mustContainOneOf": [
+   "tabloid",
+   "tabloids"
+  ]
+ },
+ {
+  "id": "vocab:broadcast",
+  "headword": "broadcast",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to send out a programme on television or radio.",
+  "meaningVi": "phát sóng",
+  "existingExample": "The final was broadcast live to more than a hundred countries.",
+  "mustContainOneOf": [
+   "broadcast",
+   "broadcasts",
+   "broadcasted",
+   "broadcasting"
+  ]
+ },
+ {
+  "id": "vocab:echo_chamber",
+  "headword": "echo chamber",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a situation in which people only hear opinions that match their own.",
+  "meaningVi": "buồng vang (chỉ nghe ý kiến giống mình)",
+  "existingExample": "Social media algorithms can trap users in an echo chamber.",
+  "mustContainOneOf": [
+   "echo chamber",
+   "echo-chamber"
+  ]
+ },
+ {
+  "id": "vocab:objectivity",
+  "headword": "objectivity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the quality of not being influenced by personal feelings.",
+  "meaningVi": "tính khách quan",
+  "existingExample": "Journalistic objectivity is difficult to maintain when reporting on war.",
+  "mustContainOneOf": [
+   "objectivity",
+   "objectivities"
+  ]
+ },
+ {
+  "id": "vocab:celebrity_culture",
+  "headword": "celebrity culture",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "society's strong interest in famous people and their lives.",
+  "meaningVi": "văn hóa sùng bái người nổi tiếng",
+  "existingExample": "Celebrity culture may give young people unrealistic expectations about wealth.",
+  "mustContainOneOf": [
+   "celebrity culture",
+   "celebrity-culture"
+  ]
+ },
+ {
+  "id": "vocab:publicity",
+  "headword": "publicity",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "attention given to someone or something by the media.",
+  "meaningVi": "sự chú ý của công chúng",
+  "existingExample": "The scandal generated a great deal of negative publicity for the company.",
+  "mustContainOneOf": [
+   "publicity",
+   "publicities"
+  ]
+ },
+ {
+  "id": "vocab:readership",
+  "headword": "readership",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the number or type of people who read a newspaper or magazine.",
+  "meaningVi": "lượng độc giả",
+  "existingExample": "Print newspapers have seen a sharp decline in readership.",
+  "mustContainOneOf": [
+   "readership",
+   "readerships"
+  ]
+ },
+ {
+  "id": "vocab:citizen_journalism",
+  "headword": "citizen journalism",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "news reported by ordinary people, often using phones and social media.",
+  "meaningVi": "báo chí công dân",
+  "existingExample": "Citizen journalism allows events to be reported as they happen.",
+  "mustContainOneOf": [
+   "citizen journalism",
+   "citizen jornalism",
+   "citizen-journalism",
+   "citizen-jornalism"
+  ]
+ },
+ {
+  "id": "vocab:manipulate",
+  "headword": "manipulate",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to control or influence people or information unfairly.",
+  "meaningVi": "thao túng",
+  "existingExample": "Edited photos can be used to manipulate public opinion.",
+  "mustContainOneOf": [
+   "manipulate",
+   "manipulates",
+   "manipulated",
+   "manipulating"
+  ]
+ },
+ {
+  "id": "vocab:public_opinion",
+  "headword": "public opinion",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the views held by most people in a society.",
+  "meaningVi": "dư luận",
+  "existingExample": "The media play a powerful role in shaping public opinion.",
+  "mustContainOneOf": [
+   "public opinion",
+   "public-opinion"
+  ]
+ },
+ {
+  "id": "vocab:investigative_journalism",
+  "headword": "investigative journalism",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "reporting that researches hidden facts, often about wrongdoing.",
+  "meaningVi": "báo chí điều tra",
+  "existingExample": "Investigative journalism has exposed corruption at the highest levels of government.",
+  "mustContainOneOf": [
+   "investigative journalism",
+   "investigative jornalism",
+   "investigative-journalism",
+   "investigative-jornalism"
+  ]
+ },
+ {
+  "id": "vocab:subscription",
+  "headword": "subscription",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "money you pay regularly to receive a service.",
+  "meaningVi": "gói đăng ký trả phí",
+  "existingExample": "Many newspapers now rely on digital subscriptions rather than advertising.",
+  "mustContainOneOf": [
+   "subscription",
+   "subscriptions"
+  ]
+ },
+ {
+  "id": "vocab:desensitise",
+  "headword": "desensitise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to make someone less affected by something through repeated exposure.",
+  "meaningVi": "làm chai sạn cảm xúc",
+  "existingExample": "Constant exposure to violent images may desensitise children to violence.",
+  "mustContainOneOf": [
+   "desensitise",
+   "desensitize",
+   "desensitises",
+   "desensitised",
+   "desensitising",
+   "desensitized"
+  ]
+ },
+ {
+  "id": "vocab:reliable_source",
+  "headword": "reliable source",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a source of information that can be trusted.",
+  "meaningVi": "nguồn tin đáng tin cậy",
+  "existingExample": "Students should be taught how to identify reliable sources online.",
+  "mustContainOneOf": [
+   "reliable sources",
+   "reliable source",
+   "reliable sorces",
+   "reliable sorce",
+   "reliable-source",
+   "reliable-sorce"
+  ]
+ },
+ {
+  "id": "vocab:news_outlet",
+  "headword": "news outlet",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "an organisation that publishes news.",
+  "meaningVi": "cơ quan báo chí",
+  "existingExample": "Major news outlets reported the story within minutes.",
+  "mustContainOneOf": [
+   "news outlets",
+   "news outlet",
+   "news-outlet"
+  ]
+ },
+ {
+  "id": "vocab:headline",
+  "headword": "headline",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the title of a news story.",
+  "meaningVi": "tiêu đề (bài báo)",
+  "existingExample": "The scandal hit the headlines last week.",
+  "mustContainOneOf": [
+   "headlines",
+   "headline"
+  ]
+ },
+ {
+  "id": "vocab:clickbait",
+  "headword": "clickbait",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "online content designed mainly to attract clicks.",
+  "meaningVi": "nội dung câu nhấp chuột",
+  "existingExample": "Clickbait headlines often exaggerate the story.",
+  "mustContainOneOf": [
+   "clickbait",
+   "clickbaits"
+  ]
+ },
+ {
+  "id": "vocab:fake_news",
+  "headword": "fake news",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "false stories presented as news.",
+  "meaningVi": "tin giả",
+  "existingExample": "Fake news often spreads faster than corrections.",
+  "mustContainOneOf": [
+   "fake news",
+   "fake-news"
+  ]
+ },
+ {
+  "id": "vocab:disinformation",
+  "headword": "disinformation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "false information spread deliberately to deceive.",
+  "meaningVi": "thông tin sai lệch có chủ đích",
+  "existingExample": "Disinformation campaigns have targeted national elections.",
+  "mustContainOneOf": [
+   "disinformation",
+   "disinformations"
+  ]
+ },
+ {
+  "id": "vocab:propaganda",
+  "headword": "propaganda",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "information used to promote a political cause, often misleading.",
+  "meaningVi": "sự tuyên truyền",
+  "existingExample": "Wartime propaganda shaped public opinion.",
+  "mustContainOneOf": [
+   "propaganda",
+   "propagandas"
+  ]
+ },
+ {
+  "id": "vocab:fact_check",
+  "headword": "fact-check",
+  "pos": [
+   "v"
+  ],
+  "level": 2,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "to check whether claims are true.",
+  "meaningVi": "kiểm chứng thông tin",
+  "existingExample": "Journalists must fact-check stories before publication.",
+  "mustContainOneOf": [
+   "fact-check",
+   "fact-checks",
+   "fact-checked",
+   "fact-checking",
+   "fact check"
+  ]
+ },
+ {
+  "id": "vocab:media_literacy",
+  "headword": "media literacy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the ability to evaluate media critically.",
+  "meaningVi": "năng lực hiểu biết truyền thông",
+  "existingExample": "Schools should teach media literacy to combat fake news.",
+  "mustContainOneOf": [
+   "media literacy",
+   "media-literacy"
+  ]
+ },
+ {
+  "id": "vocab:gatekeeper",
+  "headword": "gatekeeper",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a person or organisation that controls access to information.",
+  "meaningVi": "người gác cổng thông tin",
+  "existingExample": "Editors once acted as gatekeepers of information.",
+  "mustContainOneOf": [
+   "gatekeepers",
+   "gatekeeper"
+  ]
+ },
+ {
+  "id": "vocab:editorial",
+  "headword": "editorial",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "an article giving a newspaper's opinion.",
+  "meaningVi": "bài xã luận; thuộc biên tập",
+  "existingExample": "The newspaper's editorial criticised the new policy.",
+  "mustContainOneOf": [
+   "editorial",
+   "editorials"
+  ]
+ },
+ {
+  "id": "vocab:impartial",
+  "headword": "impartial",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "not favouring one side.",
+  "meaningVi": "không thiên vị",
+  "existingExample": "Public broadcasters are required to remain impartial.",
+  "mustContainOneOf": [
+   "impartial"
+  ]
+ },
+ {
+  "id": "vocab:public_broadcaster",
+  "headword": "public broadcaster",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a broadcaster funded by the public.",
+  "meaningVi": "đài truyền hình/phát thanh công",
+  "existingExample": "Public broadcasters provide news without commercial pressure.",
+  "mustContainOneOf": [
+   "public broadcaster",
+   "public-broadcaster"
+  ]
+ },
+ {
+  "id": "vocab:prime_time",
+  "headword": "prime time",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the time when most people watch television.",
+  "meaningVi": "giờ vàng",
+  "existingExample": "Advertising during prime time is very expensive.",
+  "mustContainOneOf": [
+   "prime time",
+   "prime-time"
+  ]
+ },
+ {
+  "id": "vocab:viewership",
+  "headword": "viewership",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "the number of people watching a programme.",
+  "meaningVi": "lượng khán giả",
+  "existingExample": "Television viewership has fallen among young people.",
+  "mustContainOneOf": [
+   "viewership",
+   "viewerships"
+  ]
+ },
+ {
+  "id": "vocab:streaming_service",
+  "headword": "streaming service",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a platform for watching or listening to content online.",
+  "meaningVi": "dịch vụ phát trực tuyến",
+  "existingExample": "Streaming services have transformed how people watch films.",
+  "mustContainOneOf": [
+   "streaming service",
+   "streaming-service"
+  ]
+ },
+ {
+  "id": "vocab:on_demand",
+  "headword": "on-demand",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "available whenever the user wants it.",
+  "meaningVi": "theo yêu cầu",
+  "existingExample": "On-demand content allows viewers to watch at any time.",
+  "mustContainOneOf": [
+   "on-demand",
+   "on demand"
+  ]
+ },
+ {
+  "id": "vocab:personalised_content",
+  "headword": "personalised content",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "content selected for an individual user.",
+  "meaningVi": "nội dung cá nhân hóa",
+  "existingExample": "Personalised content may limit the range of views people see.",
+  "mustContainOneOf": [
+   "personalised content",
+   "personalised-content"
+  ]
+ },
+ {
+  "id": "vocab:filter_bubble",
+  "headword": "filter bubble",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a situation in which users only see information matching their views.",
+  "meaningVi": "bong bóng lọc thông tin",
+  "existingExample": "Recommendation algorithms can create filter bubbles.",
+  "mustContainOneOf": [
+   "filter bubble",
+   "filter-bubble"
+  ]
+ },
+ {
+  "id": "vocab:user_generated_content",
+  "headword": "user-generated content",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "material created by ordinary users rather than professionals.",
+  "meaningVi": "nội dung do người dùng tạo",
+  "existingExample": "Social platforms rely on user-generated content to attract viewers.",
+  "mustContainOneOf": [
+   "user-generated content",
+   "user-generated-content",
+   "user generated content"
+  ]
+ },
+ {
+  "id": "vocab:content_creator",
+  "headword": "content creator",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a person who makes videos or posts online.",
+  "meaningVi": "nhà sáng tạo nội dung",
+  "existingExample": "Many teenagers aspire to become content creators.",
+  "mustContainOneOf": [
+   "content creator",
+   "content-creator"
+  ]
+ },
+ {
+  "id": "vocab:sponsored_content",
+  "headword": "sponsored content",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "content paid for by an advertiser.",
+  "meaningVi": "nội dung được tài trợ",
+  "existingExample": "Influencers must label sponsored content clearly.",
+  "mustContainOneOf": [
+   "sponsored content",
+   "sponsored-content"
+  ]
+ },
+ {
+  "id": "vocab:product_placement",
+  "headword": "product placement",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "showing brands in films or shows in return for payment.",
+  "meaningVi": "quảng cáo lồng ghép sản phẩm",
+  "existingExample": "Product placement makes advertising less obvious.",
+  "mustContainOneOf": [
+   "product placement",
+   "product-placement"
+  ]
+ },
+ {
+  "id": "vocab:commercial",
+  "headword": "commercial",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "an advertisement on television or radio.",
+  "meaningVi": "đoạn quảng cáo (TV, radio)",
+  "existingExample": "The company spent millions on a television commercial.",
+  "mustContainOneOf": [
+   "commercial",
+   "commercials"
+  ]
+ },
+ {
+  "id": "vocab:persuasive_techniques",
+  "headword": "persuasive techniques",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "methods used to influence people.",
+  "meaningVi": "kỹ thuật thuyết phục",
+  "existingExample": "Children cannot always recognise persuasive techniques in advertisements.",
+  "mustContainOneOf": [
+   "persuasive techniques",
+   "persuasive-techniques"
+  ]
+ },
+ {
+  "id": "vocab:vulnerable_audiences",
+  "headword": "vulnerable audiences",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "people who are easily influenced, such as children.",
+  "meaningVi": "khán giả dễ bị tác động",
+  "existingExample": "Advertising regulations protect vulnerable audiences.",
+  "mustContainOneOf": [
+   "vulnerable audiences",
+   "vulnerable-audiences"
+  ]
+ },
+ {
+  "id": "vocab:age_rating",
+  "headword": "age rating",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "a classification showing the suitable minimum age for content.",
+  "meaningVi": "phân loại độ tuổi",
+  "existingExample": "Parents should check the age rating of video games.",
+  "mustContainOneOf": [
+   "age rating",
+   "age-rating"
+  ]
+ },
+ {
+  "id": "vocab:graphic",
+  "headword": "graphic",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "media"
+  ],
+  "definitionEn": "showing violence or details very clearly.",
+  "meaningVi": "(hình ảnh) trần trụi, rùng rợn",
+  "existingExample": "The documentary contains graphic images of war.",
+  "mustContainOneOf": [
+   "graphic"
+  ]
+ }
+]

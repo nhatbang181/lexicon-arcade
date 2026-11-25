@@ -1,0 +1,1881 @@
+[
+ {
+  "id": "vocab:sphere",
+  "headword": "sphere",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "A particular domain of activity, knowledge, social life, or political influence.",
+  "meaningVi": "lĩnh vực, phạm vi ảnh hưởng; hình cầu",
+  "existingExample": "Artificial intelligence is rapidly permeating every sphere of modern commerce, from logistics to diagnostics.",
+  "mustContainOneOf": [
+   "sphere",
+   "spheres"
+  ]
+ },
+ {
+  "id": "vocab:subordinate",
+  "headword": "subordinate",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Lower in rank, status, authority, or importance relative to another entity.",
+  "meaningVi": "cấp dưới, thứ yếu, phụ thuộc",
+  "existingExample": "Long-term ecological stability should never be treated as subordinate to short-term quarterly profits.",
+  "mustContainOneOf": [
+   "subordinate"
+  ]
+ },
+ {
+  "id": "vocab:supplement",
+  "headword": "supplement",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "To add an extra element or amount to something in order to enhance, strengthen, or complete it.",
+  "meaningVi": "bổ sung, phụ thêm vào để hoàn thiện",
+  "existingExample": "Online interactive tutorials can effectively supplement traditional classroom lectures rather than replace them.",
+  "mustContainOneOf": [
+   "supplement",
+   "supplements",
+   "supplemented",
+   "supplementing"
+  ]
+ },
+ {
+  "id": "vocab:suspend",
+  "headword": "suspend",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "To temporarily stop an activity, right, or service from continuing for a period of time.",
+  "meaningVi": "đình chỉ, tạm dừng, treo (giấy phép, hoạt động)",
+  "existingExample": "Aviation regulators decided to suspend all flights over the region until volcanic ash levels subsided.",
+  "mustContainOneOf": [
+   "suspend",
+   "suspends",
+   "suspended",
+   "suspending"
+  ]
+ },
+ {
+  "id": "vocab:team",
+  "headword": "team",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "urban",
+   "education"
+  ],
+  "definitionEn": "A group of individuals working collaboratively toward a shared professional, academic, or athletic objective.",
+  "meaningVi": "đội ngũ, nhóm chuyên gia phối hợp",
+  "existingExample": "An interdisciplinary team of epidemiologists and urban designers collaborated to evaluate neighbourhood walkability.",
+  "mustContainOneOf": [
+   "team",
+   "teams"
+  ]
+ },
+ {
+  "id": "vocab:temporary",
+  "headword": "temporary",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "Lasting or intended to function only for a limited period rather than permanently.",
+  "meaningVi": "tạm thời, nhất thời, không lâu dài",
+  "existingExample": "Emergency fuel subsidies offer only temporary relief and fail to address underlying energy inefficiency.",
+  "mustContainOneOf": [
+   "temporary"
+  ]
+ },
+ {
+  "id": "vocab:trigger",
+  "headword": "trigger",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "globalisation",
+   "economy"
+  ],
+  "definitionEn": "To cause an event, reaction, or chain of consequences to happen suddenly.",
+  "meaningVi": "kích hoạt, châm ngòi, gây ra phản ứng dây chuyền",
+  "existingExample": "Prolonged droughts in major grain-exporting regions can trigger severe global food price spikes.",
+  "mustContainOneOf": [
+   "trigger",
+   "triggers",
+   "triggered",
+   "triggering"
+  ]
+ },
+ {
+  "id": "vocab:unify",
+  "headword": "unify",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "To bring separate groups, standards, or elements together into a single cohesive whole.",
+  "meaningVi": "thống nhất, hợp nhất thành một thể chung",
+  "existingExample": "International sporting tournaments can temporarily unify diverse populations around a shared sense of pride.",
+  "mustContainOneOf": [
+   "unify",
+   "unifies",
+   "unified",
+   "unifying"
+  ]
+ },
+ {
+  "id": "vocab:violate",
+  "headword": "violate",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "government",
+   "technology"
+  ],
+  "definitionEn": "To break or fail to comply with a law, formal agreement, ethical standard, or fundamental right.",
+  "meaningVi": "vi phạm (luật pháp, quyền riêng tư, chuẩn mực)",
+  "existingExample": "Tech corporations face heavy fines whenever their data-harvesting practices violate national privacy statutes.",
+  "mustContainOneOf": [
+   "violate",
+   "violates",
+   "violated",
+   "violating"
+  ]
+ },
+ {
+  "id": "vocab:vision",
+  "headword": "vision",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "The ability to plan or imagine the future with wisdom, foresight, and clear strategic purpose.",
+  "meaningVi": "tầm nhìn chiến lược, viễn kiến; thị lực",
+  "existingExample": "Transforming car-centric metropolises into sustainable communities requires bold long-term political vision.",
+  "mustContainOneOf": [
+   "vision",
+   "visions"
+  ]
+ },
+ {
+  "id": "vocab:adjacent",
+  "headword": "adjacent",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "Located immediately next to or sharing a common border with something else.",
+  "meaningVi": "liền kề, tiếp giáp, kế cận",
+  "existingExample": "Heavy industrial zones should never be constructed directly adjacent to primary schools or hospitals.",
+  "mustContainOneOf": [
+   "adjacent"
+  ]
+ },
+ {
+  "id": "vocab:assemble",
+  "headword": "assemble",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "government",
+   "science"
+  ],
+  "definitionEn": "To gather people, evidence, or mechanical components together into an organised whole.",
+  "meaningVi": "tập hợp, lắp ráp, thu thập lại",
+  "existingExample": "The parliamentary committee had to assemble experts from across the continent before drafting AI legislation.",
+  "mustContainOneOf": [
+   "assemble",
+   "assembles",
+   "assembled",
+   "assembling"
+  ]
+ },
+ {
+  "id": "vocab:collapse",
+  "headword": "collapse",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "environment",
+   "animals"
+  ],
+  "definitionEn": "To fall down suddenly or fail completely as a structure, system, institution, or ecosystem.",
+  "meaningVi": "sụp đổ, tan rã, suy sụp đột ngột",
+  "existingExample": "Marine biologists warn that regional fisheries could collapse within two decades if illegal trawling persists.",
+  "mustContainOneOf": [
+   "collapse",
+   "collapses",
+   "collapsed",
+   "collapsing"
+  ]
+ },
+ {
+  "id": "vocab:compile",
+  "headword": "compile",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "urban"
+  ],
+  "definitionEn": "To collect and systematically organise information from multiple sources into a report, list, or database.",
+  "meaningVi": "biên soạn, tổng hợp (dữ liệu, báo cáo)",
+  "existingExample": "Researchers took three years to compile a comprehensive longitudinal dataset covering fifty urban districts.",
+  "mustContainOneOf": [
+   "compile",
+   "compiles",
+   "compiled",
+   "compiling"
+  ]
+ },
+ {
+  "id": "vocab:conceive",
+  "headword": "conceive",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "urban",
+   "science"
+  ],
+  "definitionEn": "To form or devise a plan, idea, or theory in the mind, or to imagine something as possible.",
+  "meaningVi": "hình thành ý tưởng, thai nghén; hình dung ra",
+  "existingExample": "Urban architects must conceive innovative housing models that remain affordable without sacrificing liveability.",
+  "mustContainOneOf": [
+   "conceive",
+   "conceives",
+   "conceived",
+   "conceiving"
+  ]
+ },
+ {
+  "id": "vocab:convince",
+  "headword": "convince",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "transport"
+  ],
+  "definitionEn": "To persuade someone firmly to believe a claim or adopt a particular course of action through evidence or argument.",
+  "meaningVi": "thuyết phục hoàn toàn (khiến ai tin hoặc đồng thuận)",
+  "existingExample": "Transparent empirical evidence is essential to convince sceptical motorists to switch to public transit.",
+  "mustContainOneOf": [
+   "convince",
+   "convinces",
+   "convinced",
+   "convincing"
+  ]
+ },
+ {
+  "id": "vocab:depress",
+  "headword": "depress",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "family",
+   "economy"
+  ],
+  "definitionEn": "To reduce the level, value, or activity of an economy or market, or to lower someone's mood.",
+  "meaningVi": "làm suy giảm, kéo tụt (kinh tế, giá trị); gây trầm cảm",
+  "existingExample": "Excessive household debt tends to depress consumer demand and prolong post-recession recovery.",
+  "mustContainOneOf": [
+   "depress",
+   "depresses",
+   "depressed",
+   "depressing"
+  ]
+ },
+ {
+  "id": "vocab:encounter",
+  "headword": "encounter",
+  "pos": [
+   "v"
+  ],
+  "level": 4,
+  "topics": [
+   "family",
+   "education"
+  ],
+  "definitionEn": "To unexpectedly experience or be confronted with a challenge, obstacle, or unfamiliar situation.",
+  "meaningVi": "đối mặt, gặp phải (khó khăn, trở ngại, hiện tượng)",
+  "existingExample": "First-generation university graduates often encounter structural barriers when entering elite corporate professions.",
+  "mustContainOneOf": [
+   "encounter",
+   "encounters",
+   "encountered",
+   "encountering"
+  ]
+ },
+ {
+  "id": "vocab:enormous",
+  "headword": "enormous",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "globalisation",
+   "transport"
+  ],
+  "definitionEn": "Extremely large in scale, amount, impact, or significance.",
+  "meaningVi": "khổng lồ, to lớn, cực kỳ đáng kể",
+  "existingExample": "Decarbonising global aviation presents an enormous engineering challenge that cannot be solved overnight.",
+  "mustContainOneOf": [
+   "enormous"
+  ]
+ },
+ {
+  "id": "vocab:forthcoming",
+  "headword": "forthcoming",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "globalisation",
+   "environment"
+  ],
+  "definitionEn": "About to happen, be published, or become available soon; willing to share information openly.",
+  "meaningVi": "sắp tới, sắp diễn ra; sẵn lòng cung cấp thông tin",
+  "existingExample": "The forthcoming international climate summit will determine binding emission targets for the next decade.",
+  "mustContainOneOf": [
+   "forthcoming"
+  ]
+ },
+ {
+  "id": "vocab:incline",
+  "headword": "incline",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "To feel willing or disposed toward a particular belief, opinion, or course of action.",
+  "meaningVi": "có khuynh hướng, thiên về, nghiêng về",
+  "existingExample": "Recent consumer surveys incline economists to believe that green products require stronger price incentives.",
+  "mustContainOneOf": [
+   "incline",
+   "inclines",
+   "inclined",
+   "inclining"
+  ]
+ },
+ {
+  "id": "vocab:intrinsic",
+  "headword": "intrinsic",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "tourism",
+   "animals"
+  ],
+  "definitionEn": "Belonging naturally and essentially to the core nature of something, independent of external factors.",
+  "meaningVi": "nội tại, bản chất vốn có, tự thân",
+  "existingExample": "Preserving endangered wildlife has intrinsic ecological value beyond its measurable contribution to ecotourism.",
+  "mustContainOneOf": [
+   "intrinsic"
+  ]
+ },
+ {
+  "id": "vocab:invoke",
+  "headword": "invoke",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "government",
+   "environment"
+  ],
+  "definitionEn": "To cite a law, authority, or principle as justification for an action, or to evoke a strong response.",
+  "meaningVi": "viện dẫn (luật, nguyên tắc); khơi gợi",
+  "existingExample": "Several municipalities had to invoke emergency powers to ration drinking water during the historic drought.",
+  "mustContainOneOf": [
+   "invoke",
+   "invokes",
+   "invoked",
+   "invoking"
+  ]
+ },
+ {
+  "id": "vocab:levy",
+  "headword": "levy",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "To impose and officially collect a tax, fee, or financial charge by legal authority.",
+  "meaningVi": "đánh thuế, áp đặt khoản thu bắt buộc",
+  "existingExample": "Several European capitals now levy additional congestion charges on older diesel vehicles entering downtown zones.",
+  "mustContainOneOf": [
+   "levy",
+   "levies",
+   "levied",
+   "levying"
+  ]
+ },
+ {
+  "id": "vocab:odd",
+  "headword": "odd",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "Different from what is expected or usual; not divisible by two, or occasional.",
+  "meaningVi": "khác thường, lẻ, bất thường",
+  "existingExample": "Auditors noticed several odd statistical discrepancies in the corporation's annual carbon-offset disclosures.",
+  "mustContainOneOf": [
+   "odd"
+  ]
+ },
+ {
+  "id": "vocab:ongoing",
+  "headword": "ongoing",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Continuing to exist, develop, or happen without interruption.",
+  "meaningVi": "đang diễn ra, liên tục, kéo dài",
+  "existingExample": "Ongoing investment in teacher professional development is vital to sustain gains in national literacy.",
+  "mustContainOneOf": [
+   "ongoing"
+  ]
+ },
+ {
+  "id": "vocab:panel",
+  "headword": "panel",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "A small group of qualified individuals selected to discuss, advise on, or judge an official matter.",
+  "meaningVi": "hội đồng chuyên gia, ban thẩm định; tấm bảng",
+  "existingExample": "An independent panel of bioethicists was appointed to review clinical protocols for human genome editing.",
+  "mustContainOneOf": [
+   "panel",
+   "panels"
+  ]
+ },
+ {
+  "id": "vocab:persist",
+  "headword": "persist",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "To continue to exist or occur despite opposition, difficulty, or corrective measures.",
+  "meaningVi": "dai dẳng, tiếp diễn; kiên trì bám đuổi",
+  "existingExample": "Despite decades of equal-pay legislation, stark gender disparities still persist in executive leadership.",
+  "mustContainOneOf": [
+   "persist",
+   "persists",
+   "persisted",
+   "persisting"
+  ]
+ },
+ {
+  "id": "vocab:pose",
+  "headword": "pose",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "To present or constitute a problem, threat, danger, or question requiring serious consideration.",
+  "meaningVi": "đặt ra (thách thức, nguy cơ, câu hỏi)",
+  "existingExample": "Unregulated deepfake audio tools pose a serious threat to electoral integrity and public journalism.",
+  "mustContainOneOf": [
+   "pose",
+   "poses",
+   "posed",
+   "posing"
+  ]
+ },
+ {
+  "id": "vocab:reluctant",
+  "headword": "reluctant",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "Unwilling and hesitant to take a particular action or accept a change.",
+  "meaningVi": "miễn cưỡng, do dự, không sẵn lòng",
+  "existingExample": "Small manufacturers are often reluctant to adopt costly green technologies without guaranteed tax credits.",
+  "mustContainOneOf": [
+   "reluctant"
+  ]
+ },
+ {
+  "id": "vocab:so_called",
+  "headword": "so-called",
+  "pos": [
+   "adj"
+  ],
+  "level": 1,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "Commonly named in a certain way, often used to express scepticism about the label's accuracy.",
+  "meaningVi": "cái gọi là (thường hàm ý hoài nghi hoặc mỉa mai)",
+  "existingExample": "Many so-called biodegradable plastics actually require industrial composting facilities to break down safely.",
+  "mustContainOneOf": [
+   "so-called",
+   "so called"
+  ]
+ },
+ {
+  "id": "vocab:straightforward",
+  "headword": "straightforward",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "Uncomplicated, clear, and easy to understand or carry out.",
+  "meaningVi": "đơn giản, rõ ràng, dễ hiểu, trực diện",
+  "existingExample": "Designing a fair carbon pricing system is far less straightforward than proponents initially suggested.",
+  "mustContainOneOf": [
+   "straightforward"
+  ]
+ },
+ {
+  "id": "vocab:allocate",
+  "headword": "allocate",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to distribute resources, funds, or duties for a specific purpose.",
+  "meaningVi": "phân bổ (ngân sách, nguồn lực)",
+  "existingExample": "Governments should allocate more funding to primary education.",
+  "mustContainOneOf": [
+   "allocate",
+   "allocates",
+   "allocated",
+   "allocating"
+  ]
+ },
+ {
+  "id": "vocab:far_reaching",
+  "headword": "far-reaching",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "having important and widely applicable effects or implications.",
+  "meaningVi": "có tầm ảnh hưởng sâu rộng",
+  "existingExample": "This trend is likely to have far-reaching implications for society as a whole.",
+  "mustContainOneOf": [
+   "far-reaching",
+   "far reaching"
+  ]
+ },
+ {
+  "id": "vocab:accommodation",
+  "headword": "accommodation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a room, building, or place in which someone may live or stay.",
+  "meaningVi": "chỗ ở, nơi lưu trú",
+  "existingExample": "Finding affordable student accommodation near university campuses has become increasingly challenging.",
+  "mustContainOneOf": [
+   "accommodation",
+   "accommodations"
+  ]
+ },
+ {
+  "id": "vocab:questionnaire",
+  "headword": "questionnaire",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology",
+   "science"
+  ],
+  "definitionEn": "a set of written questions used for gathering statistical or survey data.",
+  "meaningVi": "bảng câu hỏi khảo sát",
+  "existingExample": "Researchers distributed an anonymous questionnaire to over five hundred local residents.",
+  "mustContainOneOf": [
+   "questionnaire",
+   "questionnaires"
+  ]
+ },
+ {
+  "id": "vocab:assignment",
+  "headword": "assignment",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "work",
+   "education"
+  ],
+  "definitionEn": "a piece of work or task allocated to someone as part of a course or job.",
+  "meaningVi": "bài tập lớn, nhiệm vụ được giao",
+  "existingExample": "University students must submit their written assignment before the Friday deadline.",
+  "mustContainOneOf": [
+   "assignment",
+   "assignments"
+  ]
+ },
+ {
+  "id": "vocab:tutorial",
+  "headword": "tutorial",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a period of intensive tuition given by a university tutor to an individual or small group.",
+  "meaningVi": "buổi học hướng dẫn nhóm nhỏ",
+  "existingExample": "Each weekly tutorial allows undergraduates to discuss complex readings with their lecturer.",
+  "mustContainOneOf": [
+   "tutorial",
+   "tutorials"
+  ]
+ },
+ {
+  "id": "vocab:seminar",
+  "headword": "seminar",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "globalisation",
+   "education"
+  ],
+  "definitionEn": "a conference or university class for discussion and academic training on a specific topic.",
+  "meaningVi": "hội thảo chuyên đề",
+  "existingExample": "Postgraduate scholars presented their preliminary findings at the international seminar.",
+  "mustContainOneOf": [
+   "seminar",
+   "seminars"
+  ]
+ },
+ {
+  "id": "vocab:semester",
+  "headword": "semester",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a half-year term in a school or university academic calendar.",
+  "meaningVi": "học kỳ đại học",
+  "existingExample": "Exchange students typically spend one full semester studying at a partner institution abroad.",
+  "mustContainOneOf": [
+   "semester",
+   "semesters"
+  ]
+ },
+ {
+  "id": "vocab:dissertation",
+  "headword": "dissertation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education",
+   "science"
+  ],
+  "definitionEn": "a long, formal essay on a particular subject written for a university degree.",
+  "meaningVi": "luận văn, luận án học thuật",
+  "existingExample": "She spent an entire year conducting field research for her doctoral dissertation.",
+  "mustContainOneOf": [
+   "dissertation",
+   "dissertations"
+  ]
+ },
+ {
+  "id": "vocab:bibliography",
+  "headword": "bibliography",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "work",
+   "education"
+  ],
+  "definitionEn": "a systematic list of books and scholarly sources referred to in an academic work.",
+  "meaningVi": "danh mục tài liệu tham khảo",
+  "existingExample": "Every academic paper must include an accurate bibliography formatted according to citation rules.",
+  "mustContainOneOf": [
+   "bibliography",
+   "bibliographies"
+  ]
+ },
+ {
+  "id": "vocab:timetable",
+  "headword": "timetable",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a structured schedule showing the times at which classes, trains, or events occur.",
+  "meaningVi": "thời khóa biểu, lịch trình cố định",
+  "existingExample": "A well-balanced school timetable should allocate adequate hours to both arts and sciences.",
+  "mustContainOneOf": [
+   "timetable",
+   "timetables"
+  ]
+ },
+ {
+  "id": "vocab:enrolment",
+  "headword": "enrolment",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "education",
+   "technology"
+  ],
+  "definitionEn": "the action of officially registering as a member of an institution or course.",
+  "meaningVi": "sự đăng ký nhập học, sĩ số ghi danh",
+  "existingExample": "University enrolment in computer science courses has surged dramatically over the past decade.",
+  "mustContainOneOf": [
+   "enrolment",
+   "enrolments"
+  ]
+ },
+ {
+  "id": "vocab:government",
+  "headword": "government",
+  "pos": [
+   "n"
+  ],
+  "level": 1,
+  "topics": [
+   "urban",
+   "government"
+  ],
+  "definitionEn": "the governing body of a nation, state, or community with authority to enact policies.",
+  "meaningVi": "chính phủ, cơ quan cầm quyền",
+  "existingExample": "The central government introduced stricter emissions targets to combat urban air pollution.",
+  "mustContainOneOf": [
+   "government",
+   "governments"
+  ]
+ },
+ {
+  "id": "vocab:museum",
+  "headword": "museum",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "science"
+  ],
+  "definitionEn": "an institution where objects of historical, scientific, or artistic interest are preserved and exhibited.",
+  "meaningVi": "bảo tàng",
+  "existingExample": "Free admission to national museum collections encourages greater public engagement with history.",
+  "mustContainOneOf": [
+   "museum",
+   "museums"
+  ]
+ },
+ {
+  "id": "vocab:cathedral",
+  "headword": "cathedral",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "arts",
+   "history"
+  ],
+  "definitionEn": "the principal church of a diocese, often notable for historic architecture.",
+  "meaningVi": "nhà thờ chính tòa, giáo đường lớn",
+  "existingExample": "Conservationists are restoring the medieval cathedral to preserve its intricate stonework.",
+  "mustContainOneOf": [
+   "cathedral",
+   "cathedrals"
+  ]
+ },
+ {
+  "id": "vocab:harbour",
+  "headword": "harbour",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "urban",
+   "globalisation"
+  ],
+  "definitionEn": "a sheltered coastal area where ships can dock safely for trade or transport.",
+  "meaningVi": "bến cảng, hải cảng",
+  "existingExample": "Modernising the commercial harbour significantly expanded the city's maritime trade capacity.",
+  "mustContainOneOf": [
+   "harbour",
+   "harbor",
+   "harbours",
+   "harbors"
+  ]
+ },
+ {
+  "id": "vocab:theatre",
+  "headword": "theatre",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "government",
+   "arts"
+  ],
+  "definitionEn": "a building designed for dramatic performances, or the art of live stage production.",
+  "meaningVi": "nhà hát, nghệ thuật sân khấu",
+  "existingExample": "Public subsidies help regional theatre companies stage innovative productions for local audiences.",
+  "mustContainOneOf": [
+   "theatre",
+   "theater",
+   "theatres"
+  ]
+ },
+ {
+  "id": "vocab:roundabout",
+  "headword": "roundabout",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a circular road junction at which traffic flows continuously in one direction.",
+  "meaningVi": "vòng xuyến, bùng binh giao thông",
+  "existingExample": "Replacing traffic lights with a modern roundabout reduced peak-hour congestion by thirty percent.",
+  "mustContainOneOf": [
+   "roundabout",
+   "roundabouts"
+  ]
+ },
+ {
+  "id": "vocab:parliament",
+  "headword": "parliament",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "environment"
+  ],
+  "definitionEn": "the highest legislative assembly of a democratic country responsible for enacting laws.",
+  "meaningVi": "quốc hội, nghị viện",
+  "existingExample": "Members of parliament debated the proposed climate legislation for several consecutive days.",
+  "mustContainOneOf": [
+   "parliament",
+   "parliaments"
+  ]
+ },
+ {
+  "id": "vocab:pharmacy",
+  "headword": "pharmacy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "family",
+   "science"
+  ],
+  "definitionEn": "a shop or dispensary where medicinal drugs are prepared and sold, or the science of pharmacology.",
+  "meaningVi": "hiệu thuốc, ngành dược học",
+  "existingExample": "Expanding rural pharmacy services ensures that elderly patients receive timely prescriptions.",
+  "mustContainOneOf": [
+   "pharmacy",
+   "pharmacies"
+  ]
+ },
+ {
+  "id": "vocab:reservation",
+  "headword": "reservation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology",
+   "tourism"
+  ],
+  "definitionEn": "an arrangement made in advance to secure a room, seat, or service, or an expression of doubt.",
+  "meaningVi": "sự đặt chỗ trước; sự dè dặt",
+  "existingExample": "Visitors are advised to make an online reservation well ahead of the peak tourist season.",
+  "mustContainOneOf": [
+   "reservation",
+   "reservations"
+  ]
+ },
+ {
+  "id": "vocab:receipt",
+  "headword": "receipt",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "a written or digital acknowledgement confirming that payment or goods have been received.",
+  "meaningVi": "biên lai, hóa đơn thanh toán",
+  "existingExample": "Consumers should retain their digital receipt in order to claim warranty repairs or refunds.",
+  "mustContainOneOf": [
+   "receipt",
+   "receipts"
+  ]
+ },
+ {
+  "id": "vocab:deposit",
+  "headword": "deposit",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "urban"
+  ],
+  "definitionEn": "a sum of money paid as a first instalment or security, or a natural layer of minerals.",
+  "meaningVi": "tiền đặt cọc; mỏ khoáng sản",
+  "existingExample": "High housing prices make it difficult for young buyers to save enough for a mortgage deposit.",
+  "mustContainOneOf": [
+   "deposit",
+   "deposits"
+  ]
+ },
+ {
+  "id": "vocab:refund",
+  "headword": "refund",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "a repayment of a sum of money to a customer who is dissatisfied or whose service was cancelled.",
+  "meaningVi": "khoản tiền hoàn trả",
+  "existingExample": "Consumer protection laws entitle passengers to a full refund when flights are cancelled without notice.",
+  "mustContainOneOf": [
+   "refund",
+   "refunds"
+  ]
+ },
+ {
+  "id": "vocab:discount",
+  "headword": "discount",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "a deduction from the usual cost of something, often offered to encourage sales.",
+  "meaningVi": "sự giảm giá, chiết khấu",
+  "existingExample": "Offering a substantial discount on annual rail passes encourages commuters to abandon private cars.",
+  "mustContainOneOf": [
+   "discount",
+   "discounts"
+  ]
+ },
+ {
+  "id": "vocab:insurance",
+  "headword": "insurance",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "health",
+   "economy"
+  ],
+  "definitionEn": "a financial arrangement providing guaranteed compensation for specified loss, damage, or illness.",
+  "meaningVi": "bảo hiểm",
+  "existingExample": "Universal health insurance protects low-income households from catastrophic medical expenses.",
+  "mustContainOneOf": [
+   "insurance",
+   "insurances"
+  ]
+ },
+ {
+  "id": "vocab:licence",
+  "headword": "licence",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "an official permit from an authority to own, use, or carry out a regulated activity.",
+  "meaningVi": "giấy phép chính thức",
+  "existingExample": "Every commercial operator must obtain an environmental licence before commencing construction.",
+  "mustContainOneOf": [
+   "licence",
+   "licences"
+  ]
+ },
+ {
+  "id": "vocab:souvenir",
+  "headword": "souvenir",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "economy"
+  ],
+  "definitionEn": "an object purchased or kept as a reminder of a place visited or an event experienced.",
+  "meaningVi": "quà lưu niệm",
+  "existingExample": "Local artisans earn vital revenue by crafting authentic handmade souvenir items for travellers.",
+  "mustContainOneOf": [
+   "souvenir",
+   "souvenirs"
+  ]
+ },
+ {
+  "id": "vocab:brochure",
+  "headword": "brochure",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "technology",
+   "tourism"
+  ],
+  "definitionEn": "a small booklet or pamphlet containing descriptive information about a product or destination.",
+  "meaningVi": "tờ gấp giới thiệu, ấn phẩm quảng bá",
+  "existingExample": "Tourism boards now publish interactive digital versions alongside every printed travel brochure.",
+  "mustContainOneOf": [
+   "brochure",
+   "brochures"
+  ]
+ },
+ {
+  "id": "vocab:itinerary",
+  "headword": "itinerary",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "tourism"
+  ],
+  "definitionEn": "a planned route or detailed schedule of activities for a journey.",
+  "meaningVi": "lịch trình chi tiết (chuyến đi)",
+  "existingExample": "Careful planning of an eco-tourism itinerary helps minimise the environmental impact of travel.",
+  "mustContainOneOf": [
+   "itinerary",
+   "itineraries"
+  ]
+ },
+ {
+  "id": "vocab:luggage",
+  "headword": "luggage",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "suitcases and bags used to pack personal belongings for travelling.",
+  "meaningVi": "hành lý",
+  "existingExample": "Strict airline luggage restrictions have prompted travellers to adopt more minimalist packing habits.",
+  "mustContainOneOf": [
+   "luggage",
+   "luggages"
+  ]
+ },
+ {
+  "id": "vocab:vegetarian",
+  "headword": "vegetarian",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "a person who does not eat meat or fish, especially for moral, health, or environmental reasons.",
+  "meaningVi": "người ăn chay; chế độ ăn chay",
+  "existingExample": "Adopting a vegetarian lifestyle can markedly reduce an individual's greenhouse gas footprint.",
+  "mustContainOneOf": [
+   "vegetarian",
+   "vegetarians"
+  ]
+ },
+ {
+  "id": "vocab:dietary",
+  "headword": "dietary",
+  "pos": [
+   "adj"
+  ],
+  "level": 6,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "relating to the kinds of food habitually consumed by a person or community.",
+  "meaningVi": "thuộc về chế độ ăn uống",
+  "existingExample": "Public health campaigns emphasise balanced dietary habits to curb rising rates of heart disease.",
+  "mustContainOneOf": [
+   "dietary"
+  ]
+ },
+ {
+  "id": "vocab:temperature",
+  "headword": "temperature",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "globalisation",
+   "education"
+  ],
+  "definitionEn": "the degree or intensity of heat present in a substance, environment, or body.",
+  "meaningVi": "nhiệt độ",
+  "existingExample": "Climatologists warn that a two-degree rise in global temperature will destabilise polar ice sheets.",
+  "mustContainOneOf": [
+   "temperature",
+   "temperatures"
+  ]
+ },
+ {
+  "id": "vocab:allergy",
+  "headword": "allergy",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "food"
+  ],
+  "definitionEn": "a damaging immune response by the body to a normally harmless substance such as pollen or food.",
+  "meaningVi": "chứng dị ứng",
+  "existingExample": "Clear ingredient labelling is essential for protecting consumers who suffer from a severe food allergy.",
+  "mustContainOneOf": [
+   "allergy",
+   "allergies"
+  ]
+ },
+ {
+  "id": "vocab:appointment",
+  "headword": "appointment",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "health"
+  ],
+  "definitionEn": "an arrangement to meet someone at a set time, or the act of assigning a person to an official post.",
+  "meaningVi": "cuộc hẹn; sự bổ nhiệm",
+  "existingExample": "Telemedicine platforms allow patients to book a medical appointment without travelling to clinics.",
+  "mustContainOneOf": [
+   "appointment",
+   "appointments"
+  ]
+ },
+ {
+  "id": "vocab:occupation",
+  "headword": "occupation",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "work",
+   "globalisation"
+  ],
+  "definitionEn": "a person's regular profession, trade, or means of earning a living.",
+  "meaningVi": "nghề nghiệp, công việc chuyên môn",
+  "existingExample": "Rapid automation is transforming almost every traditional occupation across manufacturing and finance.",
+  "mustContainOneOf": [
+   "occupation",
+   "occupations"
+  ]
+ },
+ {
+  "id": "vocab:nationality",
+  "headword": "nationality",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "globalisation",
+   "science"
+  ],
+  "definitionEn": "the legal status of belonging to a particular nation by birth or naturalisation.",
+  "meaningVi": "quốc tịch",
+  "existingExample": "International research teams bring together specialists regardless of their background or nationality.",
+  "mustContainOneOf": [
+   "nationality",
+   "nationalities"
+  ]
+ },
+ {
+  "id": "vocab:colleague",
+  "headword": "colleague",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "work",
+   "education"
+  ],
+  "definitionEn": "a person with whom one works in a profession, organisation, or academic department.",
+  "meaningVi": "đồng nghiệp",
+  "existingExample": "Collaborating closely with an experienced colleague accelerates professional development for new graduates.",
+  "mustContainOneOf": [
+   "colleague",
+   "colleagues"
+  ]
+ },
+ {
+  "id": "vocab:receptionist",
+  "headword": "receptionist",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "urban",
+   "work"
+  ],
+  "definitionEn": "an administrative employee who greets visitors and manages enquiries at an organisation's entrance.",
+  "meaningVi": "nhân viên lễ tân",
+  "existingExample": "Digital check-in kiosks are gradually assisting the front-desk receptionist in busy urban hotels.",
+  "mustContainOneOf": [
+   "receptionist",
+   "receptionists"
+  ]
+ },
+ {
+  "id": "vocab:pensioner",
+  "headword": "pensioner",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "government",
+   "economy"
+  ],
+  "definitionEn": "a retired person who receives a regular state or private pension.",
+  "meaningVi": "người hưởng lương hưu",
+  "existingExample": "Rising inflation disproportionately erodes the purchasing power of every fixed-income pensioner.",
+  "mustContainOneOf": [
+   "pensioner",
+   "pensioners"
+  ]
+ },
+ {
+  "id": "vocab:necessary",
+  "headword": "necessary",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "government"
+  ],
+  "definitionEn": "needed in order to achieve a particular result or fulfil an essential requirement.",
+  "meaningVi": "cần thiết, thiết yếu",
+  "existingExample": "Decisive policy intervention is necessary to halt the rapid decline of coastal ecosystems.",
+  "mustContainOneOf": [
+   "necessary"
+  ]
+ },
+ {
+  "id": "vocab:convenient",
+  "headword": "convenient",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "transport",
+   "science"
+  ],
+  "definitionEn": "fitting in well with a person's needs, schedule, and practical circumstances.",
+  "meaningVi": "thuận tiện, tiện lợi",
+  "existingExample": "Contactless transit cards provide a remarkably convenient payment method for daily rail commuters.",
+  "mustContainOneOf": [
+   "convenient"
+  ]
+ },
+ {
+  "id": "vocab:equipment",
+  "headword": "equipment",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "work"
+  ],
+  "definitionEn": "the necessary tools, machinery, or apparatus required for a particular purpose or profession.",
+  "meaningVi": "trang thiết bị, dụng cụ chuyên dụng",
+  "existingExample": "Underfunded rural hospitals frequently struggle to maintain modern diagnostic equipment.",
+  "mustContainOneOf": [
+   "equipment",
+   "equipments"
+  ]
+ },
+ {
+  "id": "vocab:recommend",
+  "headword": "recommend",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "government",
+   "health"
+  ],
+  "definitionEn": "to put forward someone or something as being suitable, beneficial, or advisable.",
+  "meaningVi": "khuyến nghị, đề xuất",
+  "existingExample": "Public health experts strongly recommend at least thirty minutes of moderate daily exercise.",
+  "mustContainOneOf": [
+   "recommend",
+   "recommends",
+   "recommended",
+   "recommending"
+  ]
+ },
+ {
+  "id": "vocab:intermediate",
+  "headword": "intermediate",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "education",
+   "language"
+  ],
+  "definitionEn": "coming between two extremes, stages, or levels of knowledge and proficiency.",
+  "meaningVi": "trung cấp, ở mức trung gian",
+  "existingExample": "Language learners at an intermediate level benefit greatly from reading authentic academic articles.",
+  "mustContainOneOf": [
+   "intermediate"
+  ]
+ },
+ {
+  "id": "vocab:kilometre",
+  "headword": "kilometre",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "transport"
+  ],
+  "definitionEn": "a metric unit of measurement equal to one thousand metres.",
+  "meaningVi": "ki-lô-mét (đơn vị đo khoảng cách)",
+  "existingExample": "High-speed rail networks now transport passengers at over three hundred kilometre speeds per hour.",
+  "mustContainOneOf": [
+   "kilometre",
+   "kilometer",
+   "kilometres"
+  ]
+ },
+ {
+  "id": "vocab:rectangular",
+  "headword": "rectangular",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "energy"
+  ],
+  "definitionEn": "shaped like a rectangle with four straight sides and four right angles.",
+  "meaningVi": "có hình chữ nhật",
+  "existingExample": "The architectural blueprint features a spacious rectangular courtyard surrounded by solar-roofed classrooms.",
+  "mustContainOneOf": [
+   "rectangular"
+  ]
+ },
+ {
+  "id": "vocab:rose_sharply",
+  "headword": "rose sharply",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "increased rapidly and by a substantial margin within a short period.",
+  "meaningVi": "tăng vọt, tăng mạnh đột ngột",
+  "existingExample": "The number of visitors rose sharply from 2 million to 5 million between 2010 and 2015.",
+  "mustContainOneOf": [
+   "rose sharply",
+   "rose-sharply"
+  ]
+ },
+ {
+  "id": "vocab:remained_stable",
+  "headword": "remained stable",
+  "pos": [
+   "v"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "stayed at a consistent level without noticeable upward or downward fluctuation.",
+  "meaningVi": "duy trì ổn định, không biến động",
+  "existingExample": "Sales remained stable at around 400 units for the rest of the period.",
+  "mustContainOneOf": [
+   "remained stable",
+   "remained-stable"
+  ]
+ },
+ {
+  "id": "vocab:peaked_at",
+  "headword": "peaked at",
+  "pos": [
+   "v"
+  ],
+  "level": 7,
+  "topics": [
+   "work"
+  ],
+  "definitionEn": "reached the highest recorded value or point before declining.",
+  "meaningVi": "đạt mức đỉnh điểm ở",
+  "existingExample": "Unemployment peaked at 12% in 2009 before declining steadily in today's competitive and rapidly shifting labour market.",
+  "mustContainOneOf": [
+   "peaked at",
+   "peaked-at"
+  ]
+ },
+ {
+  "id": "vocab:dramatic_fall",
+  "headword": "dramatic fall",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "energy",
+   "economy"
+  ],
+  "definitionEn": "a sudden, substantial, and striking decrease in a measured quantity.",
+  "meaningVi": "sự sụt giảm mạnh mẽ",
+  "existingExample": "There was a dramatic fall in the price of solar panels.",
+  "mustContainOneOf": [
+   "dramatic fall",
+   "dramatic-fall"
+  ]
+ },
+ {
+  "id": "vocab:fluctuate",
+  "headword": "fluctuate",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "to rise and fall irregularly in number, level, or intensity over time.",
+  "meaningVi": "biến động, dao động lên xuống",
+  "existingExample": "Global oil prices tend to fluctuate wildly during periods of geopolitical uncertainty.",
+  "mustContainOneOf": [
+   "fluctuate",
+   "fluctuates",
+   "fluctuated",
+   "fluctuating"
+  ]
+ },
+ {
+  "id": "vocab:reached_a_low_of",
+  "headword": "reached a low of",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "dropped to the lowest recorded level during a given timeframe.",
+  "meaningVi": "chạm mức thấp nhất là",
+  "existingExample": "Car ownership reached a low of 15% in 1990.",
+  "mustContainOneOf": [
+   "reached a low of",
+   "reached-a-low-of"
+  ]
+ },
+ {
+  "id": "vocab:more_than_doubled",
+  "headword": "more than doubled",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "increased to more than twice its original amount or size.",
+  "meaningVi": "tăng hơn gấp đôi",
+  "existingExample": "Exports more than doubled over the period shown.",
+  "mustContainOneOf": [
+   "more than doubled",
+   "more-than-doubled"
+  ]
+ },
+ {
+  "id": "vocab:nearly_tripled",
+  "headword": "nearly tripled",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "environment"
+  ],
+  "definitionEn": "grew to almost three times the initial figure over a given period.",
+  "meaningVi": "tăng gần gấp ba lần",
+  "existingExample": "The amount of waste recycled nearly tripled between 2000 and 2020.",
+  "mustContainOneOf": [
+   "nearly tripled",
+   "nearly-tripled"
+  ]
+ },
+ {
+  "id": "vocab:converge",
+  "headword": "converge",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "globalisation"
+  ],
+  "definitionEn": "to move towards and meet at a common point, value, or conclusion.",
+  "meaningVi": "hội tụ, tiến gần đến cùng một điểm",
+  "existingExample": "Income levels across the two neighbouring regions began to converge rapidly after trade barriers fell.",
+  "mustContainOneOf": [
+   "converge",
+   "converges",
+   "converged",
+   "converging"
+  ]
+ },
+ {
+  "id": "vocab:striking_feature",
+  "headword": "striking feature",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "an immediately noticeable or remarkable characteristic of a dataset or phenomenon.",
+  "meaningVi": "đặc điểm nổi bật đáng chú ý",
+  "existingExample": "Over the period shown, the most striking feature is the rapid growth of online sales.",
+  "mustContainOneOf": [
+   "striking feature",
+   "striking-feature"
+  ]
+ },
+ {
+  "id": "vocab:slightly_higher",
+  "headword": "slightly higher",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "greater in amount, degree, or value by only a small margin.",
+  "meaningVi": "cao hơn một chút, nhỉnh hơn đôi chút",
+  "existingExample": "The figure for men was slightly higher than that for women.",
+  "mustContainOneOf": [
+   "slightly higher",
+   "slightly-higher"
+  ]
+ },
+ {
+  "id": "vocab:vast_majority",
+  "headword": "vast majority",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "almost all of a group, population, or total amount.",
+  "meaningVi": "đại đa số, phần lớn áp đảo",
+  "existingExample": "The vast majority of students (87%) used a laptop.",
+  "mustContainOneOf": [
+   "vast majority",
+   "vast-majority"
+  ]
+ },
+ {
+  "id": "vocab:contrary_to",
+  "headword": "contrary to",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "opposite in nature, direction, or meaning to a stated belief or expectation.",
+  "meaningVi": "trái ngược với",
+  "existingExample": "Contrary to popular belief, older workers are often more productive.",
+  "mustContainOneOf": [
+   "contrary to",
+   "contrary-to"
+  ]
+ },
+ {
+  "id": "vocab:outweigh",
+  "headword": "outweigh",
+  "pos": [
+   "v"
+  ],
+  "level": 8,
+  "topics": [
+   "technology"
+  ],
+  "definitionEn": "to be heavier, greater, or more significant than an opposing factor.",
+  "meaningVi": "lấn át, vượt trội hơn về giá trị",
+  "existingExample": "The advantages of online learning outweigh its drawbacks.",
+  "mustContainOneOf": [
+   "outweigh",
+   "outweighs",
+   "outweighed",
+   "outweighing"
+  ]
+ },
+ {
+  "id": "vocab:case_in_point",
+  "headword": "case in point",
+  "pos": [
+   "n"
+  ],
+  "level": 2,
+  "topics": [
+   "government",
+   "transport"
+  ],
+  "definitionEn": "a clear, concrete instance that directly illustrates or proves a general statement.",
+  "meaningVi": "ví dụ điển hình, minh chứng xác đáng",
+  "existingExample": "A case in point is Singapore, where public transport is cheap and efficient.",
+  "mustContainOneOf": [
+   "case in point",
+   "case-in-point"
+  ]
+ },
+ {
+  "id": "vocab:over_the_moon",
+  "headword": "over the moon",
+  "pos": [
+   "adj"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "extremely delighted, thrilled, or ecstatic about a positive outcome.",
+  "meaningVi": "vô cùng hạnh phúc, phấn khởi tột độ",
+  "existingExample": "I was over the moon when I got the scholarship.",
+  "mustContainOneOf": [
+   "over the moon",
+   "over-the-moon"
+  ]
+ },
+ {
+  "id": "vocab:photograph",
+  "headword": "photograph",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "government",
+   "technology"
+  ],
+  "definitionEn": "a visual image captured by a camera on light-sensitive film or a digital sensor.",
+  "meaningVi": "bức ảnh chụp",
+  "existingExample": "A single documentary photograph can raise more public awareness than pages of dry statistics.",
+  "mustContainOneOf": [
+   "photograph",
+   "photographs"
+  ]
+ },
+ {
+  "id": "vocab:photography",
+  "headword": "photography",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "globalisation",
+   "science"
+  ],
+  "definitionEn": "the art, science, or professional practice of taking and processing photographs.",
+  "meaningVi": "nhiếp ảnh, nghệ thuật chụp ảnh",
+  "existingExample": "Wildlife photography plays an influential role in inspiring global conservation movements.",
+  "mustContainOneOf": [
+   "photography",
+   "photographies"
+  ]
+ },
+ {
+  "id": "vocab:economic",
+  "headword": "economic",
+  "pos": [
+   "adj"
+  ],
+  "level": 2,
+  "topics": [
+   "globalisation",
+   "economy"
+  ],
+  "definitionEn": "relating to economics, trade, industry, or the financial system of a nation.",
+  "meaningVi": "thuộc về kinh tế",
+  "existingExample": "Sustained investment in green infrastructure can stimulate long-term economic growth.",
+  "mustContainOneOf": [
+   "economic"
+  ]
+ },
+ {
+  "id": "vocab:develop",
+  "headword": "develop",
+  "pos": [
+   "v"
+  ],
+  "level": 3,
+  "topics": [
+   "education"
+  ],
+  "definitionEn": "to grow, evolve, or cause something to become more advanced, mature, or elaborate.",
+  "meaningVi": "phát triển, xây dựng và mở rộng",
+  "existingExample": "Primary curricula should help young learners develop critical thinking and problem-solving skills.",
+  "mustContainOneOf": [
+   "develop",
+   "develops",
+   "developed",
+   "developing"
+  ]
+ }
+]

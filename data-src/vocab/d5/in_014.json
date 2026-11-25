@@ -1,0 +1,1835 @@
+[
+ {
+  "id": "vocab:cultural_imperialism",
+  "headword": "cultural imperialism",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the spread of a powerful country's culture at the expense of others.",
+  "meaningVi": "chủ nghĩa đế quốc văn hóa",
+  "existingExample": "Hollywood's global dominance is often linked to cultural imperialism.",
+  "mustContainOneOf": [
+   "cultural imperialism",
+   "cultural-imperialism"
+  ]
+ },
+ {
+  "id": "vocab:soft_power",
+  "headword": "soft power",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "influence gained through culture and values rather than force.",
+  "meaningVi": "quyền lực mềm",
+  "existingExample": "K-pop has greatly boosted South Korea's soft power.",
+  "mustContainOneOf": [
+   "soft power",
+   "soft-power"
+  ]
+ },
+ {
+  "id": "vocab:cultural_appropriation",
+  "headword": "cultural appropriation",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "using elements of another culture without understanding or respect.",
+  "meaningVi": "chiếm dụng văn hóa",
+  "existingExample": "Some fashion brands have been accused of cultural appropriation.",
+  "mustContainOneOf": [
+   "cultural appropriation",
+   "cultural-appropriation"
+  ]
+ },
+ {
+  "id": "vocab:melting_pot",
+  "headword": "melting pot",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a place where many cultures mix together.",
+  "meaningVi": "nơi hòa trộn văn hóa",
+  "existingExample": "New York is often described as a melting pot.",
+  "mustContainOneOf": [
+   "melting pot",
+   "melting-pot"
+  ]
+ },
+ {
+  "id": "vocab:globalised",
+  "headword": "globalised",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "operating or connected worldwide.",
+  "meaningVi": "đã toàn cầu hóa",
+  "existingExample": "In a globalised world, trends spread rapidly.",
+  "mustContainOneOf": [
+   "globalised",
+   "globalized"
+  ]
+ },
+ {
+  "id": "vocab:global_village",
+  "headword": "global village",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the world seen as one community connected by technology.",
+  "meaningVi": "ngôi làng toàn cầu",
+  "existingExample": "The internet has turned the world into a global village.",
+  "mustContainOneOf": [
+   "global village",
+   "global-village"
+  ]
+ },
+ {
+  "id": "vocab:transnational",
+  "headword": "transnational",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "operating across national borders.",
+  "meaningVi": "xuyên quốc gia",
+  "existingExample": "Transnational corporations wield enormous economic power.",
+  "mustContainOneOf": [
+   "transnational"
+  ]
+ },
+ {
+  "id": "vocab:cross_border",
+  "headword": "cross-border",
+  "pos": [
+   "adj"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "involving more than one country.",
+  "meaningVi": "xuyên biên giới",
+  "existingExample": "Cross-border trade has grown rapidly in the region.",
+  "mustContainOneOf": [
+   "cross-border",
+   "cross border"
+  ]
+ },
+ {
+  "id": "vocab:interdependence",
+  "headword": "interdependence",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the state of relying on each other.",
+  "meaningVi": "sự phụ thuộc lẫn nhau",
+  "existingExample": "Global supply chains create economic interdependence.",
+  "mustContainOneOf": [
+   "interdependence",
+   "interdependences"
+  ]
+ },
+ {
+  "id": "vocab:supply_chain",
+  "headword": "supply chain",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the system of producing and delivering goods.",
+  "meaningVi": "chuỗi cung ứng",
+  "existingExample": "The pandemic severely disrupted global supply chains.",
+  "mustContainOneOf": [
+   "supply chains",
+   "supply chain",
+   "supply-chain"
+  ]
+ },
+ {
+  "id": "vocab:homogenise",
+  "headword": "homogenise",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "to make things the same.",
+  "meaningVi": "đồng nhất hóa",
+  "existingExample": "Global chains may homogenise city centres around the world.",
+  "mustContainOneOf": [
+   "homogenise",
+   "homogenize",
+   "homogenises",
+   "homogenised",
+   "homogenising",
+   "homogenized"
+  ]
+ },
+ {
+  "id": "vocab:uniformity",
+  "headword": "uniformity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the state of being the same everywhere.",
+  "meaningVi": "sự đồng nhất",
+  "existingExample": "Critics fear a dull uniformity across the world's cities.",
+  "mustContainOneOf": [
+   "uniformity",
+   "uniformities"
+  ]
+ },
+ {
+  "id": "vocab:local_customs",
+  "headword": "local customs",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "traditional practices of a particular place.",
+  "meaningVi": "phong tục địa phương",
+  "existingExample": "Tourists should respect local customs.",
+  "mustContainOneOf": [
+   "local customs",
+   "local-customs"
+  ]
+ },
+ {
+  "id": "vocab:etiquette",
+  "headword": "etiquette",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "rules of polite behaviour.",
+  "meaningVi": "phép lịch sự, nghi thức",
+  "existingExample": "Business etiquette varies considerably between cultures.",
+  "mustContainOneOf": [
+   "etiquette",
+   "etiquettes"
+  ]
+ },
+ {
+  "id": "vocab:culture_shock",
+  "headword": "culture shock",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "confusion felt when living in an unfamiliar culture.",
+  "meaningVi": "sốc văn hóa",
+  "existingExample": "International students often experience culture shock.",
+  "mustContainOneOf": [
+   "culture shock",
+   "culture-shock"
+  ]
+ },
+ {
+  "id": "vocab:expatriate",
+  "headword": "expatriate",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a person living outside their own country.",
+  "meaningVi": "người sống ở nước ngoài",
+  "existingExample": "Expatriates often form close communities abroad.",
+  "mustContainOneOf": [
+   "expatriate",
+   "expatriates"
+  ]
+ },
+ {
+  "id": "vocab:diaspora",
+  "headword": "diaspora",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "people living away from their homeland.",
+  "meaningVi": "cộng đồng kiều bào",
+  "existingExample": "The Vietnamese diaspora sends substantial remittances home.",
+  "mustContainOneOf": [
+   "diaspora",
+   "diasporas"
+  ]
+ },
+ {
+  "id": "vocab:remittance",
+  "headword": "remittance",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "money sent home by migrants.",
+  "meaningVi": "kiều hối",
+  "existingExample": "Remittances are a major source of income for many families.",
+  "mustContainOneOf": [
+   "remittances",
+   "remittance"
+  ]
+ },
+ {
+  "id": "vocab:immigration",
+  "headword": "immigration",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "coming to live permanently in a foreign country.",
+  "meaningVi": "sự nhập cư",
+  "existingExample": "Immigration policy is often a key election issue.",
+  "mustContainOneOf": [
+   "immigration",
+   "immigrations"
+  ]
+ },
+ {
+  "id": "vocab:emigrate",
+  "headword": "emigrate",
+  "pos": [
+   "v"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "to leave your country to live in another.",
+  "meaningVi": "di cư ra nước ngoài",
+  "existingExample": "Many young professionals emigrate for better pay.",
+  "mustContainOneOf": [
+   "emigrate",
+   "emigrates",
+   "emigrated",
+   "emigrating"
+  ]
+ },
+ {
+  "id": "vocab:asylum_seeker",
+  "headword": "asylum seeker",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a person asking for protection in another country.",
+  "meaningVi": "người xin tị nạn",
+  "existingExample": "Asylum seekers may wait months for a decision.",
+  "mustContainOneOf": [
+   "asylum seekers",
+   "asylum seeker",
+   "asylum-seeker"
+  ]
+ },
+ {
+  "id": "vocab:refugee",
+  "headword": "refugee",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a person forced to leave their country because of danger.",
+  "meaningVi": "người tị nạn",
+  "existingExample": "The war created millions of refugees.",
+  "mustContainOneOf": [
+   "refugee",
+   "refugees"
+  ]
+ },
+ {
+  "id": "vocab:border_control",
+  "headword": "border control",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "checks on people entering a country.",
+  "meaningVi": "kiểm soát biên giới",
+  "existingExample": "Several countries have tightened border controls.",
+  "mustContainOneOf": [
+   "border controls",
+   "border control",
+   "border-control"
+  ]
+ },
+ {
+  "id": "vocab:national_identity",
+  "headword": "national identity",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a sense of belonging to a nation.",
+  "meaningVi": "bản sắc dân tộc",
+  "existingExample": "International sport can strengthen national identity.",
+  "mustContainOneOf": [
+   "national identity",
+   "national-identity"
+  ]
+ },
+ {
+  "id": "vocab:patriotism",
+  "headword": "patriotism",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "love of and devotion to one's country.",
+  "meaningVi": "lòng yêu nước",
+  "existingExample": "National holidays encourage patriotism.",
+  "mustContainOneOf": [
+   "patriotism",
+   "patriotisms"
+  ]
+ },
+ {
+  "id": "vocab:nationalism",
+  "headword": "nationalism",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "strong, sometimes extreme, devotion to one's nation.",
+  "meaningVi": "chủ nghĩa dân tộc",
+  "existingExample": "The rise of nationalism can threaten international cooperation.",
+  "mustContainOneOf": [
+   "nationalism",
+   "nationalisms"
+  ]
+ },
+ {
+  "id": "vocab:bilingual",
+  "headword": "bilingual",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "able to speak two languages fluently.",
+  "meaningVi": "song ngữ",
+  "existingExample": "Bilingual children often find it easier to learn a third language.",
+  "mustContainOneOf": [
+   "bilingual"
+  ]
+ },
+ {
+  "id": "vocab:linguistic_diversity",
+  "headword": "linguistic diversity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "the variety of languages spoken.",
+  "meaningVi": "đa dạng ngôn ngữ",
+  "existingExample": "The dominance of English may threaten linguistic diversity.",
+  "mustContainOneOf": [
+   "linguistic diversity",
+   "linguistic-diversity"
+  ]
+ },
+ {
+  "id": "vocab:mother_tongue",
+  "headword": "mother tongue",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "the first language a person learns.",
+  "meaningVi": "tiếng mẹ đẻ",
+  "existingExample": "Children should have the opportunity to study in their mother tongue.",
+  "mustContainOneOf": [
+   "mother tongue",
+   "mother-tongue"
+  ]
+ },
+ {
+  "id": "vocab:dialect",
+  "headword": "dialect",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "a regional form of a language.",
+  "meaningVi": "phương ngữ",
+  "existingExample": "Each region of Vietnam has its own distinctive dialect.",
+  "mustContainOneOf": [
+   "dialects",
+   "dialect"
+  ]
+ },
+ {
+  "id": "vocab:folklore",
+  "headword": "folklore",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "traditional stories and beliefs of a community.",
+  "meaningVi": "văn hóa dân gian",
+  "existingExample": "Folklore is passed down orally through generations.",
+  "mustContainOneOf": [
+   "folklore",
+   "folklores"
+  ]
+ },
+ {
+  "id": "vocab:craftsmanship",
+  "headword": "craftsmanship",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "skill in making things by hand.",
+  "meaningVi": "tay nghề thủ công",
+  "existingExample": "Bat Trang ceramics demonstrate fine craftsmanship.",
+  "mustContainOneOf": [
+   "craftsmanship",
+   "craftsmanships"
+  ]
+ },
+ {
+  "id": "vocab:artisan",
+  "headword": "artisan",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a skilled craft worker.",
+  "meaningVi": "nghệ nhân",
+  "existingExample": "Tourism provides an income for local artisans.",
+  "mustContainOneOf": [
+   "artisans",
+   "artisan"
+  ]
+ },
+ {
+  "id": "vocab:handicraft",
+  "headword": "handicraft",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "items made skilfully by hand.",
+  "meaningVi": "đồ thủ công mỹ nghệ",
+  "existingExample": "Craft villages sell traditional handicrafts to tourists.",
+  "mustContainOneOf": [
+   "handicrafts",
+   "handicraft"
+  ]
+ },
+ {
+  "id": "vocab:commodification",
+  "headword": "commodification",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "turning something into a product to be sold.",
+  "meaningVi": "sự hàng hóa hóa",
+  "existingExample": "Tourism can lead to the commodification of local traditions.",
+  "mustContainOneOf": [
+   "commodification",
+   "commodifications"
+  ]
+ },
+ {
+  "id": "vocab:commercialised",
+  "headword": "commercialised",
+  "pos": [
+   "adj"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "changed in order to make money.",
+  "meaningVi": "bị thương mại hóa",
+  "existingExample": "Some traditional festivals have become heavily commercialised.",
+  "mustContainOneOf": [
+   "commercialised",
+   "commercialized"
+  ]
+ },
+ {
+  "id": "vocab:overtourism",
+  "headword": "overtourism",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "too many tourists visiting a place.",
+  "meaningVi": "quá tải du lịch",
+  "existingExample": "Venice has struggled with overtourism for years.",
+  "mustContainOneOf": [
+   "overtourism",
+   "overtorism",
+   "overtourisms",
+   "overtorisms"
+  ]
+ },
+ {
+  "id": "vocab:tourist_trap",
+  "headword": "tourist trap",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "an overpriced place aimed mainly at tourists.",
+  "meaningVi": "điểm du lịch chặt chém",
+  "existingExample": "The old town has become something of a tourist trap.",
+  "mustContainOneOf": [
+   "tourist traps",
+   "tourist trap",
+   "torist traps",
+   "torist trap",
+   "tourist-trap",
+   "torist-trap"
+  ]
+ },
+ {
+  "id": "vocab:off_the_beaten_track",
+  "headword": "off the beaten track",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "in a quiet, little-known place.",
+  "meaningVi": "ít người lui tới",
+  "existingExample": "Many travellers prefer villages off the beaten track.",
+  "mustContainOneOf": [
+   "off the beaten track",
+   "off-the-beaten-track"
+  ]
+ },
+ {
+  "id": "vocab:hospitality_industry",
+  "headword": "hospitality industry",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "hotels, restaurants and related tourism services.",
+  "meaningVi": "ngành nhà hàng khách sạn",
+  "existingExample": "The hospitality industry relies heavily on seasonal workers.",
+  "mustContainOneOf": [
+   "hospitality industry",
+   "hospitality-industry"
+  ]
+ },
+ {
+  "id": "vocab:cultural_sensitivity",
+  "headword": "cultural sensitivity",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "awareness of and respect for other cultures.",
+  "meaningVi": "sự nhạy cảm văn hóa",
+  "existingExample": "Diplomats need a high degree of cultural sensitivity.",
+  "mustContainOneOf": [
+   "cultural sensitivity",
+   "cultural-sensitivity"
+  ]
+ },
+ {
+  "id": "vocab:open_minded",
+  "headword": "open-minded",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "willing to consider new ideas.",
+  "meaningVi": "cởi mở",
+  "existingExample": "Travel tends to make people more open-minded.",
+  "mustContainOneOf": [
+   "open-minded",
+   "open minded"
+  ]
+ },
+ {
+  "id": "vocab:worldview",
+  "headword": "worldview",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a person's overall way of understanding the world.",
+  "meaningVi": "thế giới quan",
+  "existingExample": "Living abroad can transform your worldview.",
+  "mustContainOneOf": [
+   "worldview",
+   "worldviews"
+  ]
+ },
+ {
+  "id": "vocab:conformity",
+  "headword": "conformity",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "behaving in the same way as others.",
+  "meaningVi": "sự tuân theo số đông",
+  "existingExample": "Some cultures place a high value on conformity.",
+  "mustContainOneOf": [
+   "conformity",
+   "conformities"
+  ]
+ },
+ {
+  "id": "vocab:collectivism",
+  "headword": "collectivism",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "valuing the group over the individual.",
+  "meaningVi": "chủ nghĩa tập thể",
+  "existingExample": "Many Asian cultures emphasise collectivism.",
+  "mustContainOneOf": [
+   "collectivism",
+   "collectivisms"
+  ]
+ },
+ {
+  "id": "vocab:intergenerational",
+  "headword": "intergenerational",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "involving different generations.",
+  "meaningVi": "giữa các thế hệ",
+  "existingExample": "Intergenerational living remains common in Vietnam.",
+  "mustContainOneOf": [
+   "intergenerational"
+  ]
+ },
+ {
+  "id": "vocab:traditional_values",
+  "headword": "traditional values",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "long-held beliefs of a society.",
+  "meaningVi": "giá trị truyền thống",
+  "existingExample": "Older generations often uphold traditional values.",
+  "mustContainOneOf": [
+   "traditional values",
+   "traditional-values"
+  ]
+ },
+ {
+  "id": "vocab:modernisation",
+  "headword": "modernisation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the process of making something modern.",
+  "meaningVi": "sự hiện đại hóa",
+  "existingExample": "Rapid modernisation has transformed rural life.",
+  "mustContainOneOf": [
+   "modernisation",
+   "modernization",
+   "modernisations"
+  ]
+ },
+ {
+  "id": "vocab:pop_culture",
+  "headword": "pop culture",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "music, films and trends popular with the general public.",
+  "meaningVi": "văn hóa đại chúng",
+  "existingExample": "Global pop culture is dominated by a handful of countries.",
+  "mustContainOneOf": [
+   "pop culture",
+   "pop-culture"
+  ]
+ },
+ {
+  "id": "vocab:fast_food_chain",
+  "headword": "fast-food chain",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a group of fast-food restaurants under one brand.",
+  "meaningVi": "chuỗi đồ ăn nhanh",
+  "existingExample": "International fast-food chains are spreading across Asia.",
+  "mustContainOneOf": [
+   "fast-food chains",
+   "fast-food chain",
+   "fast-food-chain",
+   "fast food chain"
+  ]
+ },
+ {
+  "id": "vocab:culinary",
+  "headword": "culinary",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "connected with cooking.",
+  "meaningVi": "(thuộc) ẩm thực",
+  "existingExample": "Culinary tourism is booming in Vietnam.",
+  "mustContainOneOf": [
+   "culinary"
+  ]
+ },
+ {
+  "id": "vocab:global_brand",
+  "headword": "global brand",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a brand recognised worldwide.",
+  "meaningVi": "thương hiệu toàn cầu",
+  "existingExample": "Global brands can push local businesses out of the market.",
+  "mustContainOneOf": [
+   "global brands",
+   "global brand",
+   "global-brand"
+  ]
+ },
+ {
+  "id": "vocab:consumer_culture",
+  "headword": "consumer culture",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a culture focused on buying goods.",
+  "meaningVi": "văn hóa tiêu dùng",
+  "existingExample": "Consumer culture has spread alongside globalisation.",
+  "mustContainOneOf": [
+   "consumer culture",
+   "consumer-culture"
+  ]
+ },
+ {
+  "id": "vocab:cultural_norm",
+  "headword": "cultural norm",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "accepted standard behaviour within a culture.",
+  "meaningVi": "chuẩn mực văn hóa",
+  "existingExample": "Cultural norms about marriage are changing rapidly.",
+  "mustContainOneOf": [
+   "cultural norms",
+   "cultural norm",
+   "cultural-norm"
+  ]
+ },
+ {
+  "id": "vocab:taboo",
+  "headword": "taboo",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "something forbidden or avoided by social custom.",
+  "meaningVi": "điều cấm kỵ",
+  "existingExample": "Mental health remains a taboo subject in some families.",
+  "mustContainOneOf": [
+   "taboo"
+  ]
+ },
+ {
+  "id": "vocab:rite_of_passage",
+  "headword": "rite of passage",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "an event marking an important stage in life.",
+  "meaningVi": "nghi thức đánh dấu trưởng thành",
+  "existingExample": "Graduation is an important rite of passage for young people.",
+  "mustContainOneOf": [
+   "rite of passage",
+   "rite-of-passage"
+  ]
+ },
+ {
+  "id": "vocab:ancestor_worship",
+  "headword": "ancestor worship",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "honouring dead family members through ritual.",
+  "meaningVi": "thờ cúng tổ tiên",
+  "existingExample": "Ancestor worship is central to Vietnamese family life.",
+  "mustContainOneOf": [
+   "ancestor worship",
+   "ancestor-worship"
+  ]
+ },
+ {
+  "id": "vocab:lunar_new_year",
+  "headword": "Lunar New Year",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the new year according to the lunar calendar.",
+  "meaningVi": "Tết Âm lịch",
+  "existingExample": "Families reunite to celebrate Lunar New Year.",
+  "mustContainOneOf": [
+   "lunar new year",
+   "lunar-new-year"
+  ]
+ },
+ {
+  "id": "vocab:revive",
+  "headword": "revive",
+  "pos": [
+   "v"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "to bring something back into use or popularity.",
+  "meaningVi": "phục hồi, làm sống lại",
+  "existingExample": "Young designers are reviving traditional crafts.",
+  "mustContainOneOf": [
+   "revive",
+   "revives",
+   "revived",
+   "reviving"
+  ]
+ },
+ {
+  "id": "vocab:dying_art",
+  "headword": "dying art",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "a skill that fewer and fewer people practise.",
+  "meaningVi": "nghề/nghệ thuật đang mai một",
+  "existingExample": "Traditional calligraphy risks becoming a dying art.",
+  "mustContainOneOf": [
+   "dying art",
+   "dying-art"
+  ]
+ },
+ {
+  "id": "vocab:repatriation",
+  "headword": "repatriation",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "returning something or someone to their country of origin.",
+  "meaningVi": "sự hoàn trả, hồi hương",
+  "existingExample": "Museums face growing calls for the repatriation of artefacts.",
+  "mustContainOneOf": [
+   "repatriation",
+   "repatriations"
+  ]
+ },
+ {
+  "id": "vocab:international_cooperation",
+  "headword": "international cooperation",
+  "pos": [
+   "n"
+  ],
+  "level": 4,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "countries working together.",
+  "meaningVi": "hợp tác quốc tế",
+  "existingExample": "Climate change requires international cooperation.",
+  "mustContainOneOf": [
+   "international cooperation",
+   "international-cooperation"
+  ]
+ },
+ {
+  "id": "vocab:diplomacy",
+  "headword": "diplomacy",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "managing relations between countries.",
+  "meaningVi": "ngoại giao",
+  "existingExample": "Cultural diplomacy builds goodwill between nations.",
+  "mustContainOneOf": [
+   "diplomacy",
+   "diplomacies"
+  ]
+ },
+ {
+  "id": "vocab:sanctions",
+  "headword": "sanctions",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "penalties imposed on a country to force a change in behaviour.",
+  "meaningVi": "lệnh trừng phạt",
+  "existingExample": "Economic sanctions were imposed on the country.",
+  "mustContainOneOf": [
+   "sanctions",
+   "sanctionses"
+  ]
+ },
+ {
+  "id": "vocab:exploitation",
+  "headword": "exploitation",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "unfairly using people for profit.",
+  "meaningVi": "sự bóc lột",
+  "existingExample": "Critics accuse some brands of the exploitation of factory workers.",
+  "mustContainOneOf": [
+   "exploitation",
+   "exploitations"
+  ]
+ },
+ {
+  "id": "vocab:sweatshop",
+  "headword": "sweatshop",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a factory with very poor conditions and low pay.",
+  "meaningVi": "xưởng bóc lột lao động",
+  "existingExample": "Consumers are boycotting brands linked to sweatshops.",
+  "mustContainOneOf": [
+   "sweatshop",
+   "sweatshops"
+  ]
+ },
+ {
+  "id": "vocab:fair_trade",
+  "headword": "fair trade",
+  "pos": [
+   "n"
+  ],
+  "level": 3,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "trade that pays producers a fair price.",
+  "meaningVi": "thương mại công bằng",
+  "existingExample": "Fair trade schemes guarantee farmers a minimum price.",
+  "mustContainOneOf": [
+   "fair trade",
+   "fair-trade"
+  ]
+ },
+ {
+  "id": "vocab:boycott",
+  "headword": "boycott",
+  "pos": [
+   "n"
+  ],
+  "level": 6,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "to refuse to buy or use something as a protest.",
+  "meaningVi": "tẩy chay",
+  "existingExample": "Activists called for a boycott of the company.",
+  "mustContainOneOf": [
+   "boycott",
+   "boycotts"
+  ]
+ },
+ {
+  "id": "vocab:cultural_export",
+  "headword": "cultural export",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "cultural products sold abroad, such as films or music.",
+  "meaningVi": "sản phẩm xuất khẩu văn hóa",
+  "existingExample": "Anime is one of Japan's biggest cultural exports.",
+  "mustContainOneOf": [
+   "cultural export",
+   "cultural-export"
+  ]
+ },
+ {
+  "id": "vocab:insular",
+  "headword": "insular",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "uninterested in ideas or people from outside.",
+  "meaningVi": "khép kín, hẹp hòi",
+  "existingExample": "Isolated communities can become insular.",
+  "mustContainOneOf": [
+   "insular"
+  ]
+ },
+ {
+  "id": "vocab:parochial",
+  "headword": "parochial",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "only interested in narrow local matters.",
+  "meaningVi": "thiển cận (chỉ quan tâm việc địa phương)",
+  "existingExample": "Travel can challenge parochial attitudes.",
+  "mustContainOneOf": [
+   "parochial"
+  ]
+ },
+ {
+  "id": "vocab:cultural_landscape",
+  "headword": "cultural landscape",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "the overall cultural character of a place.",
+  "meaningVi": "diện mạo văn hóa",
+  "existingExample": "Social media has reshaped the cultural landscape.",
+  "mustContainOneOf": [
+   "cultural landscape",
+   "cultural-landscape"
+  ]
+ },
+ {
+  "id": "vocab:hybrid_culture",
+  "headword": "hybrid culture",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "a culture combining elements of different cultures.",
+  "meaningVi": "văn hóa lai",
+  "existingExample": "Migration often creates hybrid cultures.",
+  "mustContainOneOf": [
+   "hybrid cultures",
+   "hybrid culture",
+   "hybrid-culture"
+  ]
+ },
+ {
+  "id": "vocab:subtitles",
+  "headword": "subtitles",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "translated text shown on screen.",
+  "meaningVi": "phụ đề",
+  "existingExample": "Streaming services offer subtitles in dozens of languages.",
+  "mustContainOneOf": [
+   "subtitles",
+   "subtitleses"
+  ]
+ },
+ {
+  "id": "vocab:acculturation",
+  "headword": "acculturation",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "The gradual cultural and psychological adaptation that occurs when distinct cultural groups come into sustained contact.",
+  "meaningVi": "quá trình tiếp biến văn hóa",
+  "existingExample": "Second-generation migrants frequently navigate complex patterns of acculturation while preserving ancestral languages at home.",
+  "mustContainOneOf": [
+   "acculturation",
+   "acculturations"
+  ]
+ },
+ {
+  "id": "vocab:aesthetic",
+  "headword": "aesthetic",
+  "pos": [
+   "adj"
+  ],
+  "level": 5,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "Concerned with beauty, artistic appreciation, or the philosophical principles governing visual and sensory form.",
+  "meaningVi": "thuộc về thẩm mỹ, giá trị nghệ thuật",
+  "existingExample": "Historic urban districts are often protected not merely for tourism revenue, but for their enduring aesthetic and architectural merit.",
+  "mustContainOneOf": [
+   "aesthetic"
+  ]
+ },
+ {
+  "id": "vocab:allegory",
+  "headword": "allegory",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "A literary, theatrical, or visual narrative in which characters and events symbolise deeper moral, social, or political truths.",
+  "meaningVi": "truyện ngụ ngôn, hình tượng ẩn dụ xuyên suốt tác phẩm",
+  "existingExample": "Classic folk tales often function as a subtle moral allegory warning younger generations against greed and hubris.",
+  "mustContainOneOf": [
+   "allegory",
+   "allegories"
+  ]
+ },
+ {
+  "id": "vocab:antiquity",
+  "headword": "antiquity",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "The ancient past, especially the period of classical civilisations, or an artefact surviving from ancient times.",
+  "meaningVi": "thời cổ đại; cổ vật lịch sử quý giá",
+  "existingExample": "International treaties prohibit the illicit trafficking of any looted antiquity excavated from conflict-affected archaeological zones.",
+  "mustContainOneOf": [
+   "antiquity",
+   "antiquities"
+  ]
+ },
+ {
+  "id": "vocab:archival",
+  "headword": "archival",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "Relating to or preserved within historical archives, rare manuscripts, or permanent documentary collections.",
+  "meaningVi": "thuộc về văn khố, tư liệu lưu trữ lịch sử",
+  "existingExample": "Digitising fragile archival recordings ensures that vanishing regional folk songs remain accessible to future ethnomusicologists.",
+  "mustContainOneOf": [
+   "archival"
+  ]
+ },
+ {
+  "id": "vocab:avant_garde",
+  "headword": "avant-garde",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "Characterised by radically experimental, unorthodox, or innovative ideas and techniques in art, music, cinema, or architecture.",
+  "meaningVi": "tiên phong, cách tân đột phá trong nghệ thuật",
+  "existingExample": "Public arts councils often subsidise avant-garde theatre companies whose experimental productions rarely attract commercial sponsors.",
+  "mustContainOneOf": [
+   "avant-garde",
+   "avant garde"
+  ]
+ },
+ {
+  "id": "vocab:calligraphy",
+  "headword": "calligraphy",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "The decorative visual art of producing expressive, harmonious, and stylised lettering by hand using brush or pen.",
+  "meaningVi": "nghệ thuật thư pháp",
+  "existingExample": "Across East Asia and the Islamic world, master calligraphy has been revered for centuries as a pinnacle of fine art.",
+  "mustContainOneOf": [
+   "calligraphy",
+   "calligraphies"
+  ]
+ },
+ {
+  "id": "vocab:canon",
+  "headword": "canon",
+  "pos": [
+   "n"
+  ],
+  "level": 5,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "The body of literary, musical, or artistic works widely recognised as authoritative, foundational, and of enduring cultural importance.",
+  "meaningVi": "hệ thống tác phẩm kinh điển chuẩn mực",
+  "existingExample": "Contemporary university departments increasingly broaden the literary canon to include voices from previously overlooked regions.",
+  "mustContainOneOf": [
+   "canon",
+   "canons"
+  ]
+ },
+ {
+  "id": "vocab:choreography",
+  "headword": "choreography",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "The creative art of designing, sequencing, and directing physical movements for ballet, folk dance, or stage performances.",
+  "meaningVi": "nghệ thuật biên đạo múa",
+  "existingExample": "Contemporary dance troupes frequently blend indigenous ritual motifs with minimalist modern choreography to captivate global audiences.",
+  "mustContainOneOf": [
+   "choreography",
+   "choreographies"
+  ]
+ },
+ {
+  "id": "vocab:colloquialism",
+  "headword": "colloquialism",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "An informal word, phrase, or expression characteristic of everyday spoken conversation rather than formal literary prose.",
+  "meaningVi": "từ ngữ thông tục, khẩu ngữ đặc trưng địa phương",
+  "existingExample": "Translating regional colloquialisms accurately poses a formidable challenge when adapting contemporary novels for foreign readers.",
+  "mustContainOneOf": [
+   "colloquialism",
+   "colloquialisms"
+  ]
+ },
+ {
+  "id": "vocab:connoisseur",
+  "headword": "connoisseur",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "An informed expert with refined taste and discerning judgement in fine arts, classical music, literature, or gastronomy.",
+  "meaningVi": "người sành sỏi, chuyên gia thẩm định nghệ thuật hoặc ẩm thực",
+  "existingExample": "Even an experienced art connoisseur can occasionally be deceived by a forgery crafted with period-authentic pigments.",
+  "mustContainOneOf": [
+   "connoisseur",
+   "connoisseurs"
+  ]
+ },
+ {
+  "id": "vocab:curator",
+  "headword": "curator",
+  "pos": [
+   "n"
+  ],
+  "level": 7,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "A specialist responsible for acquiring, conserving, researching, and organising exhibitions in a museum, gallery, or archive.",
+  "meaningVi": "giám tuyển, người phụ trách trưng bày bảo tàng",
+  "existingExample": "Museum curators now collaborate closely with indigenous elders to ensure sacred ceremonial objects are displayed respectfully.",
+  "mustContainOneOf": [
+   "curator",
+   "curators"
+  ]
+ },
+ {
+  "id": "vocab:customary",
+  "headword": "customary",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "Established by long-standing cultural tradition, habitual practice, or unwritten community convention.",
+  "meaningVi": "theo phong tục tập quán, thông lệ truyền thống",
+  "existingExample": "In many rural provinces, it remains customary to exchange symbolic gifts with neighbours during the autumn harvest festival.",
+  "mustContainOneOf": [
+   "customary"
+  ]
+ },
+ {
+  "id": "vocab:eclectic",
+  "headword": "eclectic",
+  "pos": [
+   "adj"
+  ],
+  "level": 7,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "Drawing inspiration, ideas, or stylistic elements from a wide and diverse range of cultural sources or eras.",
+  "meaningVi": "chiết trung, pha trộn hài hòa nhiều phong cách",
+  "existingExample": "The port city's eclectic architecture reflects centuries of maritime exchange between European traders and Southeast Asian artisans.",
+  "mustContainOneOf": [
+   "eclectic"
+  ]
+ },
+ {
+  "id": "vocab:ephemeral",
+  "headword": "ephemeral",
+  "pos": [
+   "adj"
+  ],
+  "level": 8,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "Lasting for only a very brief period, standing in sharp contrast to enduring cultural monuments or timeless art.",
+  "meaningVi": "phù du, ngắn ngủi, chóng tàn",
+  "existingExample": "Cultural critics lament that viral social-media trends celebrate ephemeral novelty at the expense of enduring craftsmanship.",
+  "mustContainOneOf": [
+   "ephemeral"
+  ]
+ },
+ {
+  "id": "vocab:ethnocentrism",
+  "headword": "ethnocentrism",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "The tendency to judge other cultures, beliefs, and customs solely by the standards and assumptions of one's own culture.",
+  "meaningVi": "chủ nghĩa vị chủng",
+  "existingExample": "Early anthropological accounts were frequently marred by ethnocentrism, misinterpreting unfamiliar customs as primitive.",
+  "mustContainOneOf": [
+   "ethnocentrism",
+   "ethnocentrisms"
+  ]
+ },
+ {
+  "id": "vocab:ethnography",
+  "headword": "ethnography",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "The systematic, immersive fieldwork study of people's customs, rituals, beliefs, and daily social practices within their own setting.",
+  "meaningVi": "dân tộc học mô tả, nghiên cứu điền dã văn hóa",
+  "existingExample": "Detailed visual ethnography has preserved invaluable records of nomadic herding traditions threatened by climate shifts.",
+  "mustContainOneOf": [
+   "ethnography",
+   "ethnographies"
+  ]
+ },
+ {
+  "id": "vocab:euphemism",
+  "headword": "euphemism",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "A mild, indirect, or polite expression substituted for one considered too harsh, blunt, or culturally taboo.",
+  "meaningVi": "uyển ngữ, lối nói giảm nói tránh tế nhị",
+  "existingExample": "Languages across the globe cultivate elaborate euphemisms surrounding bereavement and ageing to soften emotional distress.",
+  "mustContainOneOf": [
+   "euphemism",
+   "euphemisms"
+  ]
+ },
+ {
+  "id": "vocab:gastronomy",
+  "headword": "gastronomy",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "The practice, study, and cultural appreciation of choosing, cooking, and enjoying distinctive regional food and culinary traditions.",
+  "meaningVi": "nghệ thuật và văn hóa ẩm thực",
+  "existingExample": "Regional gastronomy has become a major driver of sustainable cultural tourism, helping preserve heirloom crop varieties.",
+  "mustContainOneOf": [
+   "gastronomy",
+   "gastronomies"
+  ]
+ },
+ {
+  "id": "vocab:heirloom",
+  "headword": "heirloom",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "A cherished object, textile, or cultural artefact handed down within a family across successive generations.",
+  "meaningVi": "vật gia truyền, bảo vật truyền qua nhiều thế hệ",
+  "existingExample": "Hand-woven silk garments treasured as family heirlooms often embody centuries of regional dyeing and embroidery knowledge.",
+  "mustContainOneOf": [
+   "heirloom",
+   "heirlooms"
+  ]
+ },
+ {
+  "id": "vocab:iconography",
+  "headword": "iconography",
+  "pos": [
+   "n"
+  ],
+  "level": 9,
+  "topics": [
+   "culture",
+   "arts"
+  ],
+  "definitionEn": "The traditional visual images, motifs, and symbolic conventions used to convey meaning in art, architecture, and religion.",
+  "meaningVi": "hình tượng học, hệ thống biểu tượng nghệ thuật và tôn giáo",
+  "existingExample": "Deciphering temple iconography enables art historians to trace how Buddhist artistic styles migrated across the Silk Road.",
+  "mustContainOneOf": [
+   "iconography",
+   "iconographies"
+  ]
+ },
+ {
+  "id": "vocab:idiosyncrasy",
+  "headword": "idiosyncrasy",
+  "pos": [
+   "n"
+  ],
+  "level": 10,
+  "topics": [
+   "culture",
+   "arts",
+   "language"
+  ],
+  "definitionEn": "A distinctive habit, stylistic quirk, or cultural trait peculiar to a specific individual, region, or artistic tradition.",
+  "meaningVi": "nét đặc thù riêng biệt, phong cách độc đáo khó trộn lẫn",
+  "existingExample": "Preserving every regional linguistic idiosyncrasy enriches national literature and resists bland cultural standardisation.",
+  "mustContainOneOf": [
+   "idiosyncrasy",
+   "idiosyncrasies"
+  ]
+ },
+ {
+  "id": "vocab:inscribe",
+  "headword": "inscribe",
+  "pos": [
+   "v"
+  ],
+  "level": 10,
+  "topics": [
+   "culture",
+   "history"
+  ],
+  "definitionEn": "To carve words permanently onto stone or metal, or formally list a site as protected heritage.",
+  "meaningVi": "khắc ghi lên bia đá; ghi danh vào danh sách di sản",
+  "existingExample": "UNESCO voted to inscribe the ancient terraced rice landscapes onto the World Heritage List to safeguard local farming traditions.",
+  "mustContainOneOf": [
+   "inscribe",
+   "inscribes",
+   "inscribed",
+   "inscribing"
+  ]
+ },
+ {
+  "id": "vocab:intercultural",
+  "headword": "intercultural",
+  "pos": [
+   "adj"
+  ],
+  "level": 9,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "Occurring between, connecting, or fostering mutual understanding and exchange across different cultural groups.",
+  "meaningVi": "liên văn hóa, giao lưu đối thoại giữa các nền văn hóa",
+  "existingExample": "University exchange fellowships cultivate intercultural competence that prepares graduates for collaborative international careers.",
+  "mustContainOneOf": [
+   "intercultural"
+  ]
+ },
+ {
+  "id": "vocab:kinship",
+  "headword": "kinship",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture"
+  ],
+  "definitionEn": "Blood relationship, ancestral ties, or culturally recognised bonds of family and mutual obligation.",
+  "meaningVi": "quan hệ huyết thống, mạng lưới thân tộc",
+  "existingExample": "In many agrarian societies, extended kinship networks historically served as the primary system of childcare and elder support.",
+  "mustContainOneOf": [
+   "kinship",
+   "kinships"
+  ]
+ },
+ {
+  "id": "vocab:lexicon",
+  "headword": "lexicon",
+  "pos": [
+   "n"
+  ],
+  "level": 8,
+  "topics": [
+   "culture",
+   "language"
+  ],
+  "definitionEn": "The complete inventory of words and idiomatic expressions belonging to a language, dialect, or cultural domain.",
+  "meaningVi": "kho từ vựng",
+  "existingExample": "Global digital culture has rapidly injected hundreds of English loanwords into the everyday lexicon of younger generations worldwide.",
+  "mustContainOneOf": [
+   "lexicon",
+   "lexicons"
+  ]
+ }
+]

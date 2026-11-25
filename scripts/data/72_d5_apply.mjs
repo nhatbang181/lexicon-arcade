@@ -79,7 +79,7 @@ for (const [id, en] of generated) {
   openers.set(op, (openers.get(op) || 0) + 1);
   w.examples[1].en = en;
   w.rev = (w.rev || 1) + 1;
-  w.review = { by: 'claude-sonnet-5.5', date: '2026-11-24', verdict: 'pass', scope: 'examples[1] viết lại (sinh bởi gemini; kiểm cơ học 100% + soi mẫu 10%)' };
+  w.review = { by: 'claude-sonnet-5.5', date: '2026-11-25', verdict: 'pass', scope: 'examples[1] viết lại (sinh bởi gemini; kiểm cơ học 100% + soi mẫu tay ~100 câu)' };
   used.set(en.toLowerCase(), id);
   applied++;
 }
