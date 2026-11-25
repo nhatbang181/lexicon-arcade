@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { useLocation } from 'wouter';
 import { Clock, Compass, FileText, Mic, Play } from 'lucide-react';
-import { Button, LiveCard, Mascot, Pill, Sheet, Skeleton } from '../../design/components';
+import { Button, LiveCard, Mascot, Pill, Sheet } from '../../design/components';
 import {
   GAME_REGISTRY,
   type GameDefinition,
@@ -58,7 +58,7 @@ export const HubScreen: React.FC = () => {
     };
   }, []);
 
-  const { data: hubStats, loading, error, reload } = useAsyncData(loadHubStats, [loadHubStats]);
+  const { data: hubStats, error, reload } = useAsyncData(loadHubStats, [loadHubStats]);
 
   const { readyGames, comingSoonGames } = useMemo(() => {
     const filtered =
@@ -119,7 +119,7 @@ export const HubScreen: React.FC = () => {
                   alt=""
                   width={44}
                   height={44}
-                  loading="lazy"
+                  loading="eager"
                   decoding="async"
                   className="w-11 h-11 object-contain"
                 />
@@ -246,7 +246,7 @@ export const HubScreen: React.FC = () => {
                     alt=""
                     width={32}
                     height={32}
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     className="w-8 h-8 object-contain shrink-0"
                   />
@@ -266,7 +266,7 @@ export const HubScreen: React.FC = () => {
 
       {/* Bộ lọc nhóm kỹ năng */}
       <div
-        className="flex items-center gap-2 overflow-x-auto pb-1"
+        className="flex flex-wrap items-center gap-2"
         role="tablist"
         aria-label="Lọc chế độ theo nhóm kỹ năng"
       >
@@ -294,16 +294,8 @@ export const HubScreen: React.FC = () => {
         })}
       </div>
 
-      {loading && (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          <Skeleton className="h-44" />
-          <Skeleton className="h-44" />
-          <Skeleton className="h-44" />
-        </div>
-      )}
-
-      {/* Nhóm 1: Các chế độ đã sẵn sàng (U5, U11) */}
-      {!loading && readyGames.length > 0 && (
+      {/* Nhóm 1: Các chế độ đã sẵn sàng (U5, U11) — hiện ngay không chặn bằng skeleton */}
+      {readyGames.length > 0 && (
         <section className="space-y-3" aria-label="Chế độ sẵn sàng luyện">
           <h2 className="text-base font-bold" style={{ color: 'var(--color-text)' }}>
             Sẵn sàng luyện ({readyGames.length})
@@ -315,7 +307,7 @@ export const HubScreen: React.FC = () => {
       )}
 
       {/* Nhóm 2: Đẩy "Sắp có" (S1, S2, X1) xuống cuối (U5, U11) */}
-      {!loading && comingSoonGames.length > 0 && (
+      {comingSoonGames.length > 0 && (
         <section
           className="space-y-3 pt-4 border-t"
           style={{ borderColor: 'var(--color-border)' }}

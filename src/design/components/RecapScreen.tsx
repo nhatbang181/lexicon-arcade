@@ -36,6 +36,8 @@ export interface RecapScreenProps {
   correctCount?: number;
   baseXp?: number;
   comboMultiplier?: number;
+  /** Nhãn thưởng cộng thêm ngoài base × combo (vd "+50 Boss · +20 phiên") để phép tính minh bạch. */
+  bonusLabel?: string;
   mistakes?: RecapMistakeItem[];
   onRetryMistakes?: () => void;
   /** F5 (HANDOFF T1-B #4): nhiệm vụ tiếp theo từ Hôm nay. */
@@ -43,6 +45,8 @@ export interface RecapScreenProps {
   onNextTask?: () => void;
   onGoToday: () => void;
   mascotState?: MascotState;
+  /** Câu thoại riêng của Lexi trên màn Recap (tránh lặp câu mở đầu màn Hôm nay). */
+  mascotSay?: string;
   examMode?: boolean;
   /** Tự bắn confetti 1 lần khi độ chính xác >= 80% (mặc định true). */
   autoCelebrate?: boolean;
@@ -67,12 +71,14 @@ export const RecapScreen: React.FC<RecapScreenProps> = ({
   correctCount,
   baseXp,
   comboMultiplier,
+  bonusLabel,
   mistakes = [],
   onRetryMistakes,
   nextTask,
   onNextTask,
   onGoToday,
   mascotState,
+  mascotSay,
   examMode = false,
   autoCelebrate = true,
   className = '',
@@ -221,11 +227,14 @@ export const RecapScreen: React.FC<RecapScreenProps> = ({
             {/* Lý do đếm điểm kiểu Balatro */}
             {showBreakdown && (
               <div
-                className="flex flex-wrap items-center gap-2 text-xs font-medium tabular-nums"
+                className="flex flex-wrap items-center gap-1.5 text-xs font-medium tabular-nums"
                 style={{ color: 'var(--color-text-dim)' }}
               >
                 {correctCount !== undefined ? (
-                  <span>Đúng {correctCount} câu</span>
+                  <span>
+                    Đúng {correctCount} câu
+                    {baseXp !== undefined && baseXp > 0 ? ` (${baseXp} XP)` : ''}
+                  </span>
                 ) : (
                   <span>Gốc +{resolvedBaseXp} XP</span>
                 )}
@@ -235,6 +244,12 @@ export const RecapScreen: React.FC<RecapScreenProps> = ({
                     <span style={{ color: 'var(--color-writing)' }}>
                       Thưởng chuỗi ×{comboMultiplier.toFixed(1)}
                     </span>
+                  </>
+                )}
+                {bonusLabel && (
+                  <>
+                    <span aria-hidden="true">+</span>
+                    <span style={{ color: 'var(--color-info)' }}>{bonusLabel}</span>
                   </>
                 )}
                 <span aria-hidden="true">=</span>
@@ -290,6 +305,16 @@ export const RecapScreen: React.FC<RecapScreenProps> = ({
         {!examMode && (
           <Mascot
             state={resolvedMascot}
+            say={
+              mascotSay ??
+              (typeof accuracyPercent === 'number'
+                ? accuracyPercent >= 85
+                  ? `Xuất sắc! ${Math.round(accuracyPercent)}% lượt đầu (+${xpEarned} XP)!`
+                  : accuracyPercent >= 50
+                    ? `Xong phiên ${Math.round(accuracyPercent)}% lượt đầu (+${xpEarned} XP), giữ đà nhé!`
+                    : `Đã xong phiên (+${xpEarned} XP) — ôn lại câu sai là bật lên ngay!`
+                : `Hoàn thành phiên luyện (+${xpEarned} XP)!`)
+            }
             context={{ accuracyPct: accuracyPercent }}
             size={88}
             examMode={examMode}
